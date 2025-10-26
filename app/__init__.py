@@ -1,12 +1,13 @@
 import os
 from flask import Flask
-from flask_mysqldb import MySQL
-import pymysql
 
-# Use PyMySQL as a drop-in replacement for MySQLdb
+# Use PyMySQL as MySQLdb
+import pymysql
 pymysql.install_as_MySQLdb()
 
-# Create MySQL instance
+from flask_mysqldb import MySQL
+
+# Create MySQL instance (global)
 mysql = MySQL()
 
 def create_app():
@@ -35,8 +36,8 @@ def create_app():
         print(f"Error importing blueprints: {e}")
         raise
 
-    app.register_blueprint(main_bp)                      # Default routes
-    app.register_blueprint(auth_bp)                      # Auth routes
-    app.register_blueprint(quiz_bp, url_prefix='/quiz')  # Quiz routes
+    app.register_blueprint(main_bp)                     # Default routes
+    app.register_blueprint(auth_bp)                     # Auth routes
+    app.register_blueprint(quiz_bp, url_prefix='/quiz') # Quiz routes
 
     return app
