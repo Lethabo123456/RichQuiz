@@ -1,0 +1,37 @@
+I could use the computer I have connected to the LAN port of the Trendnet router to find out 
+the IP address of the Trendnet router, from the Windows 7 laptop I have connected via 
+Ethernet to one the router's LAN ports: 
+• I click the Windows 7 Start button and in the "Search programs and files" box, type 
+"cmd" and click Enter. This pulls up the command line window. 
+• At the prompt, I type ipconfig and click Enter. This is the result I get: 
+ 
+Figure 3.16 ipconfig results 
+ 
+• The IP address of the router is the Default Gateway address. So, in a browser, I type 
+192.168.10.1 to get into the Trendnet router's management interface. 
+
+Figure 3.17 Trendnet Routers Interface 
+ 
+• You'll also need the username and password to get into the management interface to 
+configure the router. Again, this information is in the router's documentation or can be 
+had by performing a Google search. In general, most routers use Admin, as the user 
+account and either admin, password, or no password (meaning just leave the field 
+empty), as the password, but this can vary router to router. 
+ 
+Many routers will have a setup wizard to walk you through configuration. Use that by all means, 
+but if you want to manually set up the router, start by checking the WAN settings. Most ISP will 
+provide the router the correct network information, so you usually have very little 
+configuration to do on the WAN side in the management interface. If you go into "Internet" or 
+"WAN" screens on the management interface in most routers will be set to "DCHP" and 
+automatically receive the appropriate information needed to connect to the Internet from the 
+ISP's network.
+
+Figure 3.18 Basic router interface  
+ 
+An exception to this may be those who have PPoE connections or those with static IP Internet 
+accounts (maybe for a business). If you have either, or for some reason setting the WAN to 
+DHCP in the management interface is not giving you an Internet connection, you will have to 
+contact the ISP. 
+In the image below, you can see the WAN information for the Trendnet router. The WAN IP 
+address is 192.168.2.9. The LAN address is 192.168.10.1 and what was used to access the 
+management interface in the browser. 

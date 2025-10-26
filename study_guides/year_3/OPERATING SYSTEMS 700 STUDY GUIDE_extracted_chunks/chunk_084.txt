@@ -1,0 +1,27 @@
+2.6. Segmented Memory Allocation 
+ 
+The concept of segmentation is based on the common practice by programmers of structuring 
+their programs in modules, logical groupings of code. With segmented memory allocation, each 
+job is divided into several segments of different sizes, one for each module that contains pieces 
+that perform related functions. A subroutine is an example of one such logical group. Segmented 
+memory allocation was designed to reduce page faults, such as those that result from having a 
+segment’s loop split over two or more pages. Segmented memory allocation is fundamentally 
+different from a paging scheme, which divides the job into several same sized pages each of which 
+often contains pieces from more than one program module. 
+ 
+A second important difference of segmented memory allocation is that its main memory is no 
+longer divided into page frames, because the size of each segment is different, ranging from quite 
+small to large. As with the dynamic partition allocation scheme, memory is allocated in a dynamic 
+manner. 
+ 
+When a program is compiled or assembled, the segments are set up according to the program’s 
+structural modules. Each segment is numbered, and a Segment Map Table (SMT) is generated for 
+each job, it contains the segment numbers, their lengths, access rights, status, and when each is 
+loaded into memory, its location in memory. Figures 2.12 and 2.13 show the same job that’s 
+composed of a main program and two subroutines with its Segment Map Table and main memory 
+allocation. One subroutine calculates the normal pay rate, and a second one calculates the 
+overtime pay or commissions. Notice that the segments need not be located adjacent or even near 
+each other in main memory. The referenced and modified bits are used in segmentation and 
+appear in the SMT even though they are not included in Figure 3.13. 
+ 
+Figure 2.12 

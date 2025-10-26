@@ -1,0 +1,29 @@
+var add_news = document.createTextNode("The latest news 
+goes here."); 
+ 
+The newly created text is then placed in a variable. We have called ours add_news. 
+  
+
+ 
+131 
+ 
+EIGHT | JAVASCRIPT AND HTML ELEMENTS 
+Adding the new text to your new element 
+To add the new text to your newly created HTML element, you can use the 
+appendChild method: 
+newPara.appendChild( add_news ); 
+ 
+Our new element went into the newPara variable. After a dot, type appendChild. In 
+between the round brackets of appendChild type the name of your text node 
+variable. 
+ 
+Next, we need to get that ID we set up in the footer: 
+var getFooter = document.getElementById("footer"); 
+  
+Inserting the new HTML into the BODY 
+Now that we have a new element, and a location where we want to place it, we can 
+insert the new HTML. This is done with insertBefore: 
+document.body.insertBefore(newPara, getFooter); 
+ 
+This time after the document object reference we have body. This obviously 
+references the BODY part of a HTML p

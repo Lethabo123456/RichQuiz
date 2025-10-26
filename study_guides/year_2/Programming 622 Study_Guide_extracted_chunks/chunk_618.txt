@@ -1,0 +1,31 @@
+irst1 or first2 to the next node. Eventually, either first1 or first2 becomes 
+NULL. If first1 becomes NULL, the first sublist is exhausted first, so we attach the remaining nodes of the 
+second sublist at the end of the partially merged list. If first2 becomes NULL, the second sublist is 
+exhausted first, so we attach the remaining nodes of the first sublist at the end of the partially merged 
+list.  
+  
+Following this discussion, we can now write the C++ function, mergeList, to merge the two sorted sublists. 
+The references (that is, addresses) of the first nodes of the sublists are passed as parameters to the 
+function mergeList.  
+  
+template <class Type>  
+nodeType<Type>* unorderedLinkedList<Type>::mergeList  
+(nodeType<Type>* first1,nodeType<Type>* first2)  
+{  
+ 
+nodeType<Type> *lastSmall;    
+  
+//pointer to the last node of the merged list  
+  
+ 
+nodeType<Type> *newHead;   
+  
+//pointer to the merged list  
+  
+ 
+if (first1 == NULL)   
+  
+  
+  
+//the first sublist is empty  
+re

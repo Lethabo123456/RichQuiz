@@ -1,0 +1,48 @@
+3.4 REPETITION 
+There are many other situations in which it is necessary to repeat a set of statements. 
+For example, for each student in a class, the formula for determining the course grade 
+is the same. C++ has three repetition, or looping, structures that let you repeat 
+statements over and over until certain conditions are met. This chapter introduces all 
+three looping (repetition) structures. 
+ 
+3.4.1 while Looping Structure 
+ 
+In C++, while is a reserved word. Of course, the statement can be either a simple 
+or compound statement. The expression acts as a decision maker and is usually 
+a logical expression. The statement is called the body of the loop. Note that the 
+parentheses around the expression are part of the syntax. 
+ 
+The expression provides an entry condition to the loop. If it initially evaluates to 
+true, the statement executes. The loop condition—the expression—is then 
+reevaluated. If it again evaluates to true, the statement executes again. The 
+statement (body of the loop) continues to execute until the expression is no 
+longer true. A loop that continues to execute endlessly is called an infinite loop. 
+To avoid an infinite loop, make sure that the loop’s body contains statement(s) 
+that assure that the entry condition—the expression in the while statement—will 
+eventually be false 
+
+Designing while Loops 
+ 
+The body of a while executes only when the expression, in the while statement, 
+evaluates to true. Typically, the expression checks whether a variable, called the 
+loop control variable (LCV), satisfies certain conditions. 
+ 
+The LCV must be properly initialized before the while loop is encountered, and 
+it should eventually make the expression evaluate to false.  
+
+We do this by updating or assigning a new value to the LCV in the body of the 
+while loop. Therefore, generally while loops are written in the following form: 
+
+//initialize the loop control variable(s)  
+while (expression) //expression tests the LCV  
+{ .  
+   .  
+   . //update the LCV  
+ } 
+ 
+
+In this example, at Line 1, i is initialized to 20, which makes the expression i < 
+20 in the while statement (Line 2) evaluate to false. Because initially the loop 
+entry condition, i < 20, is false, the body of the while loop never executes. Hence, 
+no values are output and the value of i remains 20. This example demonstrates 
+the importance of the value to which the LCV is initialized. 

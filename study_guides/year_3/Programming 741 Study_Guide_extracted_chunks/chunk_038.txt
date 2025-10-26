@@ -1,0 +1,21 @@
+Working with build-in data types 
+ 
+A data type specifies the size and type of variable values. It is important to use the correct 
+data type for the corresponding variable; to avoid errors, to save time and memory, but it will 
+also make your code more maintainable and readable. The numeric types of C#, together with 
+other common types for holding strings, characters, and Boolean values, are collectively 
+known as the primitive data types. The following table lists the most used primitive data types 
+and the range of values that you can store in each: 
+
+Table 1-2 Data Types 
+ 
+Unassigned local variables 
+When you declare a variable, it contains a random value until you assign a value to it. This 
+behavior was a rich source of bugs in C and C++ programs that created a variable and 
+accidentally used it as a source of information before giving it a value.
+
+C# does not allow you to use an unassigned variable. You must assign a value to a variable 
+before you can use it; otherwise, your program will not compile. This requirement is called 
+the definite assignment rule. For example, the following statements generate the compile-
+time error message, “Use of unassigned local variable ‘age’” because the Console.WriteLine 
+statement attempts to display the value of an uninitialized variable: 

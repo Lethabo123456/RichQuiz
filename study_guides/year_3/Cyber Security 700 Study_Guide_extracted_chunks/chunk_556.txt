@@ -1,0 +1,37 @@
+Exploit 
+During the exploit phase, the delivered payload is triggered and takes action on the target system to 
+exploit a vulnerability. This phase is concerned with gaining entry to the system in order to begin the 
+actual attack. This phase can make use of a vulnerability known to the attacker, or the initially 
+delivered payload can search for and discover vulnerabilities that enable continuing and expanding 
+the attack. 
+ 
+A wide variety of attacks are possible at this stage, encompassing all the threat categories discussed 
+in this book (for example, exfiltrating data, modifying data, compromising availability). 
+
+Installation 
+During the installation phase, the attacker installs components that permit permanent control of the 
+target system. The objective is to mount further attacks on the enterprise. At this stage, the attacker 
+can also elevate user privileges of installed malware and install persistent payload. 
+ 
+Command and Control 
+The attacker creates a command-and-control channel in order to continue to operate the internal 
+assets remotely. This step is relatively generic and relevant throughout the attack, not only when 
+malware is installed. Among other actions at this stage, the adversary can take actions to inhibit the 
+effectiveness of the intrusion detection systems or auditing capabilities within organizations. The 
+adversary can adapt behavior in response to surveillance and organizational security measures. 
+Actions 
+ 
+The attacker performs the steps to achieve his or her goals inside the victim’s network—to obtain 
+information, destroy information, or disrupt systems or networks. This can be an elaborate active 
+attack process that takes months and thousands of small steps to achieve. 
+Protection and Response Measures 
+ 
+The following sections describe the steps an organization can take to reduce its vulnerability to each 
+of the phases of the cyber attack kill chain described in the preceding section. 
+Dealing with the Reconnaissance Phase 
+ 
+A number of techniques can be used to detect reconnaissance attempts. For websites, web analytics 
+can detect behavior that is more in line with an attacker than a benign user. For any type of traffic, 
+scanning the source IP addresses for those with known bad reputations is fruitful. Multiple events 
+occurring from the same address in a small time frame may indicate a reconnaissance effort. 
+ 

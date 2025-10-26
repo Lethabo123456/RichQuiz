@@ -1,0 +1,24 @@
+ich they should be returned. Only columns specified in the column list will appear in 
+the query result. The FROM clause is used to specify the table from which the data will be 
+retrieved. It is common for queries to retrieve data from multiple tables that have been joined 
+together. However, first, we will focus on things that can be done with the column list before we 
+move on to the FROM clause options. 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 245-249. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 249-250. 
+
+ 
+96 
+SELECT Statement Options 
+The SELECT query specifies the columns to be retrieved as a column list. The syntax for a basic 
+SELECT query that retrieves data from a table is:  
+SELECT  column-list  
+FROM  
+table-list;  
+The column-list represents one or more attributes, separated by commas. I

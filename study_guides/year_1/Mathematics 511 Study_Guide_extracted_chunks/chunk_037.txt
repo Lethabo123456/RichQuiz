@@ -1,0 +1,34 @@
+1.2.2 System Specifications 
+Translating sentences in natural language (such as English) into logical 
+expressions is an essential part of specifying both hardware and software 
+systems. System and software engineers take requirements in natural 
+language and produce precise and unambiguous specifications that can be 
+used as the basis for system development.  
+Imagine we want to express the specification “The automated reply cannot 
+be sent when the file system is full” using logical connectives. 
+
+Worked Example 
+How can this English sentence be translated into a logical expression? 
+“You can access the Internet from campus only if you are a 
+computer science major or you are not a freshman.” 
+
+Solution: 
+Although it is possible to represent the sentence by a single propositional 
+variable, such as p, this would not be useful when analyzing its meaning 
+or reasoning with it. Instead, we will use propositional variables to 
+represent each sentence part and determine the appropriate logical 
+connectives between them. In particular, we let a, c, and f represent “You 
+can access the Internet from campus,” “You are a computer science 
+major,” and “You are a freshman,” respectively. Noting that “only if” is 
+one way a conditional statement can be expressed, this sentence can be 
+represented as: 
+
+𝑎 → (𝑐 ∨￢𝑓 ). 
+
+One way to translate this is to let 𝑝 denote “The automated reply can be sent” and 𝑞 denote          
+“The file system is full.” Then ¬𝑝 represents “It is not the case that the automated reply can 
+be sent,” which can also be expressed as “The automated reply cannot be sent.” 
+Consequently, our specification can be represented by the conditional statement 𝑞 →¬𝑝. 
+System specifications should be consistent, that is, they should not contain conflicting 
+requirements that could be used to derive a contradiction. When specifications are not 
+consistent, there would be no way to develop a system that satisfies all specifications. 

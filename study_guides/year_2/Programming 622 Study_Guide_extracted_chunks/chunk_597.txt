@@ -1,0 +1,16 @@
+1 ≤ j, k ≤ n, either L* j+ < L*k+ or L* j+ 
+> L[k]. Because each comparison of the keys has two outcomes, the comparison tree is a binary tree.While 
+drawing this figure, we draw each comparison as a circle, called a node. The node is labeled as j:k, 
+representing the comparison of L[j] with L[k]. If L[j] < L[k], follow the left branch; otherwise, follow the 
+right branch. Figure 8-20 shows the comparison tree for a list of length 3. (In Figure 8-20, the rectangle, 
+called leaf, represents the final ordering of the nodes.)  
+  
+  
+FIGURE 8-20 Comparison tree for sorting three items  
+  
+We call the top node in the figure the root node. The straight line that connects the two nodes is called a 
+branch. A sequence of branches from a node, x, to another node, y, is called a path from x to y.  
+  
+Associated with each path from the root to a leaf is a unique permutation of the elements of L. This 
+uniqueness follows because the sort algorithm only moves the data and makes comparisons. 
+Fur

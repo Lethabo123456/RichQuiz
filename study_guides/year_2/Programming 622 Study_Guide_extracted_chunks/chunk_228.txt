@@ -1,0 +1,77 @@
+urrent-> link;  
+}  
+else  
+found = true;  
+ 
+}  
+  
+  
+  
+  
+//end while  
+ 
+if (found)   
+  
+  
+  
+//Case 3; if found, delete the node  
+{ trailCurrent->link = current->link; 
+count--;  
+  
+ 
+if (last == current)   
+  
+//node to be deleted was the  
+//last node  
+ 
+last = trailCurrent;   
+//update the value of last  
+ 
+delete current;   
+  
+//delete the node from the list  
+}  
+else  
+cout << "The item to be deleted is not in "<< "the list." << endl;  
+ 
+}  
+  
+  
+  
+  
+  
+//end else  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end else  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end deleteNode  
+  
+From the definition of the function deleteNode, it can be shown that this function is ofO(n).  
+  
+Table 3-7 gives the time-complexity of the operations of the class unorderedLinkedList.  
+  
+TABLE 3-7: Time-complexity of the operations of the class unorderedLinkedList  
+  
+  
+
+114  
+  
+ 
+3.3.5  Header File of the Unordered Linked List  
+  
+For the sake of completeness, we show how to create the header file that defin

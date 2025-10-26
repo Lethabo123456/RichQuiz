@@ -1,0 +1,42 @@
+Alternative Key Procedure 
+ 
+This procedure uses Android Studio to generate the map activity. You may find this easier—and it is— 
+but if you are planning to create an app for release, you need to know the previous procedure to get 
+a release key. The first step is to add a Google Maps Activity. Click File > New > Google > Google Maps 
+Activity. On the Configure Activity window, accept all the defaults and click Finish. This adds the 
+following: 
+ 
+• Maps Java file 
+• google_maps_api.xml in res/values 
+• activity_maps.xml 
+ 
+Open google_maps_api.xml in the editor. In the grayed-out area (commented out), there is a URL with 
+all the necessary information as URL parameters. Copy this URL to your browser and execute it. Follow 
+the on-screen instructions and press Create at the end. A key will be created, and you can paste it back 
+into the manifest in place of your previous one. You can then delete the items just created. 
+Displaying Your Contacts’ Locations 
+
+Now that you can find your device’s location and display the real-time location on the map, it is time 
+to show your contacts’ locations on the map. The map can be accessed from any of the three other 
+activities through the navigation bar. If the user accesses the map from either the contact list or the 
+settings activities, the map should display all the contacts in the database on the map. If the user 
+accesses the map from the contact activity, the map should display only that contact. Implementing 
+the second display type requires coding the MainActivity to pass the current contact’s ID to the map. 
+ 
+Open MainActivity.java and locate the initMapButton method. This method is modified to pass the 
+contact’s ID with the intent. Modify the code in the onClick method to match Listing 7.13. 
+There is no new code here. The method checks whether the contact has an ID. If not, a message is 
+posted for the user. If there is an ID, that ID is passed to the ContactMapActivity. Switch to 
+ContactMapActivity.java. The first step is to get the data for mapping. This is done by checking for any 
+extras. If there are no extras, all the contacts are retrieved. If there is an extra, just the information 
+for one contact is retrieved. The first step is to create two new variables for the activity. Add the 
+following code after the LocationCallback locationCallback; line: 
+ 
+ArrayList<Contact> contacts = new ArrayList<>(); Contact currentContact = null; 
+ 
+Now add the code to retrieve the contact information after the setContentView line in the onCreate 
+method of the ContactMapActivity. Enter the code in Listing 7.14. 
+ 
+The next step is to place markers on the map in the location of each contact. Markers can be standard 
+pins or custom icons. Add the following code (Listing 7.15) in the onMapReady method after the 
+gMap.setMapType line and before the permission check.

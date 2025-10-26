@@ -1,0 +1,31 @@
+Layer 7: Application Layer  
+
+Describes the interface between two applications, on separate computers  
+Application layer protocols are used by programs that fall into two categories:  
+
+ Provide services to a user, such as a browser and Web server  
+ Utility programs that provide services to the system, such as SNMP that monitor 
+and gather information about network traffic. Payload - data that is passed 
+between applications or utility programs and the OS (Operating Systems) 
+
+Layer 6: Presentation Layer  
+
+This layer helps to understand data representation in one form on a host to the other 
+host and data is reformatted, compressed, and/or encrypted in a way that the receiving 
+application can read. 
+
+Layer 5: Session layer 
+Manages and synchronize the conversation between two different applications.  
+ Transfer of data from source to destination session layer streams of data are marked 
+and are resynchronized properly, so that the ends of the messages are not cut 
+prematurely and data loss is avoided. 
+
+Layer 5: Transport Layer 
+
+Responsible for transporting Application layer payloads from one application to another. 
+Functions such as Multiplexing, Segmenting or Splitting on the data are done by this layer 
+It receives messages from the Session layer above it, converts the message into smaller units 
+and passes it on to the Network layer. 
+Transport layer can be very complex, depending upon the network requirements. 
+Transport layer breaks the message (data) into small units so that they are handled more 
+efficiently by the network layer. 

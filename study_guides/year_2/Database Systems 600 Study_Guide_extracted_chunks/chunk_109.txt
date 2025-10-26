@@ -1,0 +1,18 @@
+scover that the table view of data makes it easy to spot and define entity relationships, 
+thereby greatly simplifying the task of database design. The characteristics of a relational table are 
+summarized in Table 3.1. 
+ 
+Another important characteristic, not mentioned in Table 3.1, is: 
+ 
+Each table must have a primary key. In general terms, the primary key (PK) is an attribute 
+or combination of attributes that uniquely identifies any given row.  
+Keys 
+In the relational model, keys are important because they are used to ensure that each row in a table 
+is uniquely identifiable. They are also used to establish relationships among tables and to ensure 
+the integrity of the data. A key consists of one or more attributes that determine other attributes. 
+Because the primary key plays such an important role in the relational environment, you will 
+
+ 
+42 
+examine the primary key’s properties more carefully. In this section, you also will become 
+acquainted with super-keys, candidate key

@@ -1,0 +1,52 @@
+What does \”yolo\” mean?\ 
+  
+Answer: c 
+  
+118. 
+8. What will be the output of the following PHP code? 
+<?php 
+$str = "Hello world. It's a beautiful day."; 
+print_r (explode(" ",$str)); 
+?> 
+  
+a) Array ( [0] => Hello [0] => world. [0] => It’s [0] => a [0] => beautiful [0] => day. ) 
+b) Array ( [0] => Hello [1] => world. [2] => It’s [3] => a [4] => beautiful [5] => day. ) 
+c) Hello world. It’s a beautiful day. 
+
+d) Array ( [1] => Hello [2] => world. [3] => It’s [4] => a [5] => beautiful [6] => day. ) 
+  
+Answer: b 
+  
+119. 
+What will be the output of the following PHP code? 
+<?php 
+echo strtr("HillaWarld","ia","eo"); 
+?> 
+a) HillaWarld 
+b) Hello World 
+c) ia 
+d) eo 
+  
+Answer: b 
+  
+120. 
+What will be the output of the following PHP code? 
+<?php 
+echo stripos("I love php, I love phptoo!","PHP"); 
+?> 
+a) 3 
+b) 7 
+c) 8 
+d) 10 
+  
+Answer: b 
+ 
+121. 
+1. What will be the output of the following PHP code ? 
+<?php 
+function A1($x) 
+{ 
+switch($x) 
+{ 
+case 1:  
+//this statement is the same as

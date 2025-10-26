@@ -1,0 +1,52 @@
+nt to the last node 
+}  
+  
+  
+  
+  
+  
+  
+//end while  
+}  
+ 
+  
+  
+  
+  
+  
+  
+//end reversePrint  
+  
+ 
+3.5.8  Search the List  
+  
+The function search returns true if searchItem is found in the list; otherwise, it returns false.The search 
+algorithm is exactly the same as the search algorithm for an ordered linked list.  
+  
+template <class Type>  
+bool doublyLinkedList<Type>::search(const Type& searchItem) const  
+{  
+bool found = false;  
+nodeType<Type> *current;     //pointer to traverse the list current = first;  
+while (current != NULL && !found) if 
+(current->info >= searchItem) 
+found = true; else current = 
+current->next;  
+if (found) found = (current->info == searchItem);  //test for equality  
+return found;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end search  
+  
+ 
+3.5.9  First and Last Elements  
+  
+The function front returns the first element of the list and the function back returns the last element of 
+the list. If the list is empty, both functions terminate the program. Their

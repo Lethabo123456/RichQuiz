@@ -1,0 +1,45 @@
+• Multinomial Distribution: A multinomial distribution is another popular type of 
+discrete probability distribution that calculates the outcome of an event having two 
+or more variables. The term multi means more than one. The Binomial distribution is 
+a particular type of multinomial distribution with two possible outcomes - true/false 
+or heads/tails. 
+
+Here is a code example showing the use of Multinomial Distribution –   
+import numpy as np  
+import matplotlib.pyplot as mpl  
+np.random.seed(99)   
+n = 12                      
+pvalue = [0.3, 0.46, 0.22]     
+s = []  
+p = []     
+for size in np.logspace(2, 3):  
+    outcomes = np.random.multinomial(n, pvalue, size=int(size))  
+    prob = sum((outcomes[:,0] == 7) & (outcomes[:,1] == 2) & (outcomes[:,2] == 
+3))/len(outcomes)  
+    p.append(prob)  
+    s.append(int(size))  
+fig1 = mpl.figure()  
+mpl.plot(s, p, 'o-')  
+mpl.plot(s, [0.0248]*len(s), '--r')  
+mpl.grid()  
+mpl.xlim(xmin = 0)  
+mpl.xlabel('Number of Events')  
+mpl.ylabel('Function p(X = K)') 
+Output:  
+
+• Negative Binomial Distribution: It is also a type of discrete probability distribution for 
+random variables having negative binomial events. It is also known as the Pascal 
+distribution, where the random variable tells us the number of repeated trials 
+produced during a specific number of experiments.   
+
+Here is a code example showing the use of Negative Binomial Distribution   
+
+import matplotlib.pyplot as mpl   
+import numpy as np   
+from scipy.stats import nbinom   
+x = np.linspace(0, 6, 70)   
+gr, kr = 0.3, 0.7        
+g = nbinom.ppf(x, gr, kr)   
+s = nbinom.pmf(x, gr, kr)   
+mpl.plot(x, g, "*", x, s, "r--") 
+Output: 

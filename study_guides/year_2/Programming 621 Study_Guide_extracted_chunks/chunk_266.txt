@@ -1,0 +1,31 @@
+is sent to the file; that is, the buffer is emptied. 
+You close files by using the stream function close. For example, assuming the program 
+includes the declarations listed in Steps 2 and 3, the statements for closing the files 
+are: 
+inData.close(); 
+outData.close(); 
+
+256 | P a g e  
+ 
+ 
+In skeleton form, a program that uses file I/O usually takes the following form: 
+ 
+ 
+ 
+Opening a file associates a file stream variable declared in the program with a physical 
+file at the source, such as a flash drive. In the case of an input file, the file must exist 
+before the open statement executes. If the file does not exist, the open statement fails 
+and the input stream enters the fail state. An output file does not have to exist before 
+it is opened; if the output file does not exist, the computer prepares an empty file for 
+output. If the designated output file already exists, by default, the old contents are 
+erased when the file is opened. 
+
+257 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+
+258 | P a g e

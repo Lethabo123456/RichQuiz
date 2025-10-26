@@ -1,0 +1,15 @@
+ing clauses will be covered in this chapter (although not in this 
+order).  
+• SELECT—specifies the attributes to be returned by the query  
+• FROM—specifies the table(s) from which the data will be retrieved  
+• WHERE—filters the rows of data based on provided criteria  
+• GROUP BY—groups the rows of data into collections based on sharing the same values in one 
+or more attributes  
+• HAVING—filters the groups formed in the GROUP BY clause based on provided criteria  
+• ORDER BY—sorts the final query result rows in ascending or descending order based on the 
+values of one or more attributes.  
+For a SELECT query to retrieve data from the database, it will require at least a SELECT column 
+list and a FROM clause. The SELECT column list specifies the relational projection. The column 
+list allows the programmer to specify which columns should be retrieved by the query and the 
+order in which they should be returned. Only columns specified in the column list will appear in 
+the query res

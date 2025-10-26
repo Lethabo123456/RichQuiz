@@ -1,0 +1,21 @@
+Example 2: Trajectory Tracking for a Kinematic Vehicle Model 
+This example illustrates the use of python-control to model, analyse, and design nonlinear control 
+systems. 
+We make use of a simple model for a vehicle navigating in the plane, known as the “bicycle 
+model”. The kinematics of this vehicle can be written in terms of the contact point 
+ and the 
+angle  of the vehicle with respect to the horizontal axis: 
+
+The input  represents the velocity of the vehicle and the input  represents the turning rate. The 
+parameter  is the wheelbase. 
+System DefinitonÁ 
+We define the dynamics of the system that we are going to use for the control design. The 
+dynamics of the system will be of the form 
+ 
+where  is the state vector for the system,  represents the vector of inputs, and  represents 
+the vector of outputs. 
+The python-control package allows definition of input/output systems using 
+the InputOutputSystem class and its various subclasess, including the NonlinearIOSystem class 
+
+that we use here. A NonlinearIOSystem object is created by defining the update law () 
+and the output map (), and then calling the factory function ct.nlsys.

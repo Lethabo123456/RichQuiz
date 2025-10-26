@@ -1,0 +1,33 @@
+igure 6.3 on the next 
+page.  
+  
+As a matter of fact, you can use the return statement without including a value to return:  
+  
+function myFunc() { 
+// (do stuff here) 
+return;  
+}  
+  
+This simply exits the function at that point, and returns control to the calling code. This is useful if 
+you simply want a function to stop what it is doing, without necessarily returning a value.  
+  
+
+82  
+  
+Figure 6.3  
+  
+6.9 Understanding Variable Scope  
+You can create and use variables within a function, just as you can outside functions. For example, 
+the following function creates two string variables, $hello and $world, then concatenates their 
+values and returns the result:  
+  
+function helloWithVariables() {  
+$hello = “Hello, “;  
+$world = “world!”; return 
+$hello . $world;  
+}  
+  
+echo helloWithVariables(); // Displays “Hello, world!”  
+  
+However, the important thing to remember is that any variables created within a function are not 
+accessible outside the function. So in the prece

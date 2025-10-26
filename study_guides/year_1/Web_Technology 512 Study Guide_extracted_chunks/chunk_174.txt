@@ -1,0 +1,34 @@
+y string containing a sequence of N p's  
+p{2,3}  
+It matches any string containing a sequence of two or three p's.  
+p{2, }  
+It matches any string containing a sequence of at least two p's.  
+p$  
+It matches any string with p at the end of it.  
+^p  
+It matches any string with p at the beginning of it.  
+Table 6.16 - Quantifiers 
+ 
+Examples: 
+Following examples will clear your concepts about matching characters. 
+Expression Description 
+[^a-zA-Z]  
+It matches any string not containing any of the characters ranging 
+from a through z and A through Z.  
+p.p  
+It matches any string containing p, followed by any character, in 
+turn followed by another p.  
+^.{2}$  
+It matches any string containing exactly two characters.  
+<b>(.*)</b> It matches any string enclosed within <b> and </b>.  
+p(hp)*  
+It matches any string containing a p followed by zero or more 
+instances of the sequence hp.  
+Table 6.17 
+ 
+6.2.7.3 Literal characters 
+Character 
+Description 
+Alphanumeric Itself 
+\0 
+The NUL c

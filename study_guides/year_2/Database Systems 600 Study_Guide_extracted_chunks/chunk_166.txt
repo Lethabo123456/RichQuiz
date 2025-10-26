@@ -1,0 +1,12 @@
+u can use entity clusters to minimize the number of 
+entities shown in the ERD. An entity cluster is a “virtual” entity type used to represent multiple 
+entities and relationships in the ERD. An entity cluster is formed by combining multiple interrelated 
+entities into a single, abstract entity object. Instead, it is a temporary entity used to represent 
+multiple entities and relationships, with the purpose of simplifying the ERD and thus enhancing its 
+readability. Figure 5.6 illustrates the use of entity clusters based on the Tiny College example used 
+throughout the content of this book.  
+When using entity clusters, the key attributes of the combined entities are no longer available. 
+Without the key attributes, primary key inheritance rules change. In turn, the change in the 
+inheritance rules can have undesirable consequences, such as changes in relationships—from 
+identifying to nonidentifying or vice versa—and the loss of foreign key attributes from some 
+entities. To eliminate

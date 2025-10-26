@@ -1,0 +1,163 @@
+/* ===============================
+   Advanced Machine Learning Quiz Theme
+   =============================== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1b1f3b, #2e3a87, #1b1f3b);
+  font-family: 'Roboto Mono', monospace;
+  color: #f0f8ff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Neon data grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 4px),
+                    repeating-linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(30, 30, 60, 0.95);
+  border-radius: 20px;
+  border: 2px solid #ff66ff;
+  box-shadow: 0 0 40px rgba(255, 102, 255, 0.7), inset 0 0 25px rgba(102, 204, 255, 0.4);
+  position: relative;
+  z-index: 2;
+  animation: pulseGlow 4s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px rgba(255,102,255,0.5), inset 0 0 20px rgba(102,204,255,0.4); }
+  100% { box-shadow: 0 0 50px rgba(255,102,255,0.9), inset 0 0 35px rgba(102,204,255,0.7); }
+}
+
+/* Headings */
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #ff99ff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #ff99ff, 0 0 20px #66ccff;
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { text-shadow: 0 0 5px #ff99ff, 0 0 10px #66ccff; }
+  50% { text-shadow: 0 0 15px #ff66ff, 0 0 30px #66ccff; }
+  100% { text-shadow: 0 0 5px #ff99ff, 0 0 10px #66ccff; }
+}
+
+/* Question container */
+.question-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(50, 50, 90, 0.6);
+  border-left: 5px solid #ff66ff;
+  border-radius: 8px;
+}
+
+#question-text {
+  font-size: 1.2rem;
+  color: #ccfffe;
+  text-shadow: 0 0 6px #66ccff;
+}
+
+/* Options list */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  background: rgba(60, 60, 100, 0.7);
+  border: 1px solid #66ccff;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-label:hover {
+  box-shadow: 0 0 15px #ff66ff, 0 0 25px #66ccff inset;
+  transform: translateY(-2px);
+}
+
+.option-label input[type="radio"] {
+  margin-right: 15px;
+  accent-color: #ff66ff;
+}
+
+.option-text {
+  color: #ccfffe;
+  font-size: 1.1rem;
+  text-shadow: 0 0 4px #66ccff;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #ff66ff, #66ccff, #ff66ff);
+  border: none;
+  border-radius: 15px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 25px rgba(255,102,255,0.7);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #66ffcc, #ff99ff, #66ffcc);
+  color: #fff;
+  box-shadow: 0 0 35px rgba(102,255,204,0.8);
+  transform: translateY(-3px);
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: #ff66ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px #ff66ff, 0 0 20px #66ccff;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  text-shadow: 0 0 20px #ff66ff, 0 0 35px #66ccff;
+}
+
+/* Error message */
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ff4d4d;
+  margin: 12px 0;
+}

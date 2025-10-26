@@ -1,0 +1,30 @@
+8.4 Testing and Fragmentation 
+
+Testing is a critical component of app development. This is especially true for Android because of the 
+wide array of devices that the operating system is installed on. However, it is critical that apps 
+developed on either platform be tested on real devices prior to release. Testing an app is very much 
+like testing any other piece of software in that a comprehensive test plan must be established and 
+followed. Testing should also be performed by individuals outside the development team. 
+A comprehensive test plan should include thorough black box unit testing, including equivalence 
+partitioning, boundary value analysis, and cause-effect graphing. Fortunately, the innate organization 
+of apps into individual screens makes it easy to test each screen as a unit. To use equivalence 
+partitioning in a screen, identify all the possible outcomes of the user interaction with the screen and 
+identify the input or other data that would lead to that outcome. For example, in the ContactActivity 
+screen in the MyContactList app, there would be nine possible outcomes (refer back to Figure 2.5). 
+Each navigation button opens the corresponding screen, the Toggle button enables and disables 
+editing, the Save button saves the contact, the Picture button opens the camera and returns a photo, 
+the Phone buttons open the phone app and dial the correct number, and the Change Birthdate button 
+changes the birthday. Each of these outcomes should be tested in every iteration of the app. 
+In boundary value analysis, the limits for each input should be identified, and each side of the limit 
+should be tested. Again, using the ContactActivity screen as an example, one limit might be that the 
+app shouldn’t store birthdays that are a future date. A test for this limit would enter a date equal to 
+the date the app is being tested and the next day. The today’s date test should be displayed; the next 
+day’s date should result in an error message. Other boundary values for this screen might include 
+entering too many and too few digits for a telephone number. 
+Finally, in cause-effect graphing, each outcome identified in equivalence partitioning is examined to 
+identify the possible paths that could lead to the expected outcome. For example, the Save button on 
+the ContactActivity screen should either save the contact or alert the user to any errors that may have 
+caused the save to fail. Should the contact be saved only if all the inputs on the screen have data, or 
+is some subset acceptable? Will the app save only a name? If a street address is entered, are the city 
+and state required? All possible combinations that lead to either a saved contact or an error message 
+should be tested. 

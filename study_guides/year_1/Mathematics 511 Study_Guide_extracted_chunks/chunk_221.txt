@@ -1,0 +1,28 @@
+4.2.3 Bipartite Graphs 
+Bipartite graphs can be used to model many types of applications that 
+involve matching the elements of one set to elements of another. 
+Job Assignments  
+Suppose that there are m employees in a group and n different jobs that 
+need to be done, where  
+m ≥ n. Each employee is trained to do one or more of these n jobs. We would 
+like to assign an employee to each job. To help with this task, we can use a 
+graph to model employee capabilities. We represent each employee by a 
+vertex and each job by a vertex. For each employee, we include an edge from 
+that employee to all jobs that the employee has been trained to do. Note 
+that the vertex set of this graph can be partitioned into two disjoint sets, the 
+set of employees and the set of jobs, and each edge connects an employee 
+to a job. Consequently, this graph is bipartite, where the bipartition is (E, J ) 
+where E is the set of employees and J is the set of jobs. We now consider two 
+different scenarios. 
+
+First, suppose that a group has four employees: Alvarez, Berkowitz, Chen, 
+and Davis; and suppose that four jobs need to be done to complete Project 
+1: requirements, architecture, implementation, and testing. Suppose that 
+Alvarez has been trained to do requirements and testing; Berkowitz has been 
+trained to do architecture, implementation, and testing; Chen has been trained to 
+do requirements, architecture, and implementation; and Davis has only been 
+trained to do requirements. We model these employee capabilities using the 
+bipartite graph in Figure 4.10. 
+
+Figure 4.10: Modeling the Jobs for Which Employees Have Been Trained. 
+ 

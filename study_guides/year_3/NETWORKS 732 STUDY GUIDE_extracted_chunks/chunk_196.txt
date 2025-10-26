@@ -1,0 +1,39 @@
+Virtual Router Redundancy Protocol (VRRP) & First-Hop Redundancy 
+ 
+In traditional networks, a single router often serves as the default gateway. If it fails, connectivity 
+is lost. First-Hop Redundancy Protocols (FHRPs) solve this by allowing multiple routers to provide 
+a shared virtual gateway, ensuring uninterrupted service. 
+There are three main FHRPs: 
+
+• HSRP (Hot Standby Router Protocol) – Cisco proprietary 
+• VRRP (Virtual Router Redundancy Protocol) – industry standard 
+• GLBP (Gateway Load Balancing Protocol) – Cisco proprietary 
+ 
+This section focuses on HSRP and VRRP, both of which provide gateway redundancy. 
+ 
+HSRP (Hot Standby Router Protocol) 
+ 
+HSRP enables a group of routers to appear as a single virtual router. One router is active, handling 
+traﬃc, while another is standby, ready to take over if the active fails. The routers exchange Hello 
+messages to monitor each other. If the standby router stops receiving these messages, it takes 
+over the active role. 
+Each HSRP group uses a virtual IP and MAC address. The virtual MAC is derived using Cisco’s 
+identiﬁer and the HSRP group number (e.g., 0000.0c07.ac0a for group 10). 
+HSRP is eﬃcient for failover but not cost-eﬀective for load sharing, as only one router handles 
+traﬃc at a time. 
+
+HSRP Timers 
+
+• Hello Timer: Interval for sending Hello messages (default: 3 sec) 
+• Hold Timer: Time standby waits before declaring active as down (default: 10 sec) 
+• Active/Standby Timers: Track state of active/standby routers via received Hellos 
+Timers can be tuned—even down to milliseconds—for faster failover but must be carefully 
+managed to avoid false positives. 
+
+VRRP (Virtual Router Redundancy Protocol) 
+ 
+VRRP is a vendor-neutral alternative to HSRP, functioning in a similar way. A master router handles 
+traﬃc, while backups monitor for failure. It also uses a virtual IP address, and failover occurs 
+automatically if the master fails. 
+Because it is standards-based, VRRP works across diﬀerent vendors' equipment, making it more 
+ﬂexible in multi-vendor environments.

@@ -1,0 +1,58 @@
+5.4.3 Initializing Array Elements 
+It is possible to initialize the contents of an array at the time it is instantiated by providing a 
+list of values delimited by curly brackets ({ } ). C# provides a longer and a shorter syntax: 
+
+int [] myIntArray =new int [ 5] { 2, 4, 6, 8, 10}  
+int [] myIntArray = { 2, 4, 6,8, 10 } 
+There is no practical difference between these two statements, and most programmers 
+will use the shorter syntax because we are, by nature, lazy. 
+
+5.4.4 The params Keyword 
+You can create a method that displays any number of integers to the console by passing in an 
+array of integers and then iterating over the array with a foreach loop. The params keyword 
+allows you to pass in a variable number of parameters without necessarily explicitly creating 
+the array. 
+ 
+In the next example, you create a method, DisplayVals ( ) , which takes a variable number of 
+integer arguments: 
+public void DisplayVals (params int [ ] intVals ) 
+The method itself can treat the array as if an integer array were explicitly created and passed 
+in as a parameter. You are free to iterate over the array as you would over any other array of 
+Integers: 
+foreach (int i in intVals) 
+{ 
+Console.WriteLine("DisplayVals {0}",i); 
+} 
+The calling method, however, need not explicitly create an array; it can simply pass in integers, 
+and the compiler will assemble the parameters into an array for the DisplayVals( ) method: 
+t.DisplayVals ( 5 , 6 , 7 , 8 ) ; 
+Example 4-3 provides the complete source code illustrating the params keyword. 
+ 
+Example 4-3. Using the params keyword 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+
+namespace Values 
+{ 
+public class Tester 
+{ 
+static void Main() 
+{ 
+Tester t = new Tester(); 
+t.DisplayVals(5, 6, 7, 8); 
+int[] explicitArray = new int[5] { 1, 2, 3, 4, 5 }; 
+t.DisplayVals(explicitArray); 
+} 
+public void DisplayVals(params int[] intVals) 
+{ 
+foreach (int i in intVals) 
+{ 
+Console.WriteLine("DisplayVals {0}", i); 
+} 
+} 
+} 
+} 
+Output: 

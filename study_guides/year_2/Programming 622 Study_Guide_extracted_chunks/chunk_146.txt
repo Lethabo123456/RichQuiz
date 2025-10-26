@@ -1,0 +1,53 @@
+ne 21  
+copy(vecList.rbegin() + 2, vecList.rend(), vecList.rbegin());  //Line 22 cout 
+<< "Line 23: After shifting the elements down "  
+ 
+<< "by two positions, vecList:" << endl;   
+  
+//Line 23  
+ 
+copy(vecList.begin(), vecList.end(), screen);    
+  
+//Line 24  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+//Line 25  
+ 
+return 0;   
+  
+  
+  
+  
+  
+  
+//Line 26  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 27  
+  
+Sample Run:  
+Line 11: intArray: 5 6 8 3 40 36 98 29 75  
+Line 15: vecList: 5 6 8 3 40 36 98 29 75  
+Line 19: After shifting the elements one position to the left, intArray:  
+6 8 3 40 36 98 29 75 75  
+Line 23: After shifting the elements down by two positions, vecList: 5 
+6 5 6 8 3 40 36 98  
+  
+2.1.10 Sequence Container: deque  
+  
+This section describes the deque sequence containers. The term deque stands for double-ended queue. 
+Deque containers are implemented as dynamic arrays in such a way that the elements can be inserted at 
+both ends. Thus, a deque can expand in either direction.

@@ -1,0 +1,30 @@
+The next step is to constrain the navigation bar to the bottom of 
+activity_main. Select the LinearLayout (if not already selected), and 
+then click and hold on the bottom circle in the middle of the layout 
+and drag to the bottom of the layout to create the bottom 
+constraint. In the layout figure in the Attributes pane, you should 
+see something similar to Figure 4.4. The constraint you just added 
+has a default value of 8dp from the bottom of the screen. Change 
+this to 0.  Adding the side constraints is  easy from the layout 
+diagram. Click the blue buttons to the left and right of the diagram. 
+Change the values from 8 to 0. Next, change layout_width to 
+match_constraint using the dropdown. The displayed value will be 
+0dp. A width (or height) of 0dp allows the constraints to control 
+the size of the widget. 
+ 
+Figure 4.4 Layout attributes 
+
+The next step is to create a color resource to give the layout the proper background color. To create a 
+color resource, navigate to the values folder in the res folder and double-click the colors.xml file. Add 
+the following line before the </resources> closing tag: 
+<color name=“navbar_background”>#1a1a48</color> 
+This line creates a new color resource. The #1a1a48 is a 
+hexadecimal value that the Android OS will use to display 
+the color we want wherever we want to use that color. 
+
+Your XML should look like Listing 4.1. 
+Close the color resource file by clicking the x to the right of the colors.xml name tab at the top of the 
+editor. Android Studio saves changes as they are made, so there is no need to explicitly save the file. 
+Switch to activity_main.xml. Select Design view, if not already selected. In the Attributes panel, expand 
+All Attributes and find the background attribute. Click the oval to the right to open the Resources 
+window. Select Colors from the top left of the window and then double-click on navbar_background.

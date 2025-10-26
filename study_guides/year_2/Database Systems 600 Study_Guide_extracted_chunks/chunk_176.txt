@@ -1,0 +1,13 @@
+DEPARTMENT are clearly 
+separate and unique entity types that do not belong together in a single entity. If you grouped them 
+together in one entity, what would you name that entity? 
+Design Case 2: Maintaining History of Time-Variant Data 
+Company managers generally realize that good decision making is based on the information 
+generated through the data stored in databases. Such data reflects both current and past events. 
+Company managers use the data stored in databases to answer questions. In other words, the data 
+stored in databases reflects not only current data but also historic data.  
+Normally, data changes are managed by replacing the existing attribute value with the new value, 
+without regard to the previous value. However, in some situations the history of values for a given 
+attribute must be preserved. From a data-modelling point of view, time-variant data refers to data 
+whose values change over time and for which you must keep a history of the data changes. You 
+coul

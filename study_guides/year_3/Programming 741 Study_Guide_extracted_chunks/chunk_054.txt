@@ -1,0 +1,14 @@
+1.6.2 Nested if statements 
+
+It is possible, and not uncommon, to nest if statements to handle complex conditions. For 
+example, suppose you need to write a program to evaluate the temperature, and specifically 
+to return the following types of information: 
+
+• If the temperature is 32 degrees or lower, the program should warn you about ice on 
+the road. 
+• If the temperature is exactly 32 degrees, the program should tell you that there may 
+be ice patches. 
+• If the temperature is higher than 32 degrees, the program should assure you that 
+there is no ice. 
+There are many good ways to write this program. Example 1-8 illustrates one approach, using 
+nested if statements. 

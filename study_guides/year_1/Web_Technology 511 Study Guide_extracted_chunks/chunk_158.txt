@@ -1,0 +1,31 @@
+Reset buttons 
+You can use a reset button to clear all entries in a form and allow users to reenter data. To 
+create a reset button, you assign the value “reset” to the TYPE attribute of the INPUT tag. 
+By default, the reset button has the label “Clear.” You can change this by using the 
+VALUE attribute. 
+ 
+Exhibit 0-19: The submit and reset buttons on the Order page 
+ 
+Here’s how                            Here’s why
+-------------------------------------------------------------------------------------------
+Open the source code
+-------------------------------------------------------------------------------------------
+Place the insertion point as          <!-- Reset button -->
+shown 
+-------------------------------------------------------------------------------------------
+Enter the code                        The value “reset” assigned to the TYPE 
+                                      attribute creates a reset button. When users 
+                                      click the reset button, all the field entries in the
+<INPUT    TYPE=”reset”                form are deleted.
+VALUE=”Clear form”>                                                                       
+-------------------------------------------------------------------------------------------
+Update and close the source code
+-------------------------------------------------------------------------------------------
+Refresh and observe the page          Another button with the label “Clear form”
+                                      appears on the page (see Exhibit 0-19). 
+-------------------------------------------------------------------------------------------
+Enter values in all the fields of the from 
+-------------------------------------------------------------------------------------------
+Click Clear form                      The data in all the fields of the form is reset to
+                                      the original status.
+-------------------------------------------------------------------------------------------

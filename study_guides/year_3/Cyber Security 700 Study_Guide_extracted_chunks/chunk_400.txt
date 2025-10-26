@@ -1,0 +1,31 @@
+Figure 12.1 suggests the principal components of a network management system. Each network node 
+contains a collection of software devoted to the network management task, referred to in the diagram 
+as a network management entity (NME). 
+Each NME performs the following tasks: 
+
+ Collects statistics on communications and network-related activities 
+ Stores statistics locally 
+ Responds to commands from the network control center, including commands to do the 
+following: 
+ Transmit collected statistics to the network control center 
+ Change a parameter (for example, a timer used in a transport protocol) 
+ Provide status information (for example, parameter values, active links) 
+ Generate artificial traffic to perform a test 
+ Sends messages to the NCC when local conditions undergo significant changes 
+
+At least one host in the network is designated as the network control host, or manager. In addition to 
+the NME software, the network control host includes a collection of software called the network 
+management application (NMA). The NMA includes an operator interface to allow an authorized user 
+to manage the network. The NMA responds to user commands by displaying information and/or by 
+issuing commands to NMEs throughout the network. This communication is carried out using an 
+application-level network management protocol that employs the communications architecture in the 
+same fashion as any other distributed application. 
+Every other node in the network that is part of the network management system includes an NME 
+and, for purposes of network management, is referred to as an agent. Agents include end systems 
+that support user applications as well as nodes that provide a communications service, such as front-
+end processors, cluster controllers, bridges, and routers. 
+As depicted in Figure 12.1, the network control host communicates with and controls the NMEs in 
+other systems. For maintaining high availability of the network management function, two or more 
+network control hosts are used. In normal operation, one of the hosts is actively used for control, 
+while the others are idle or simply collecting statistics. If the primary network control host fails, the 
+backup system is used.

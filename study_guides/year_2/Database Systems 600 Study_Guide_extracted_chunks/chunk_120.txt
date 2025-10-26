@@ -1,0 +1,21 @@
+and eliminate 
+homonyms and synonyms. In a database context, the word homonym indicates the use of the same 
+name to label different attributes. To lessen confusion, you should avoid database homonyms; the 
+data dictionary is very useful in this regard. 
+In a database context, a synonym is the opposite of a homonym and indicates the use of different 
+names to describe the same attribute. For example, car and auto refer to the same object. Synonyms 
+must be avoided whenever possible. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Three page 78-87 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Three page 87-89 
+
+ 
+46 
+Relationships within the Relational Database  
+You already know that relationships are classified as one-to-one (1:1), one-to-many (1:M), and 
+many-to-many (M:N or M:M). This section explores those relationships further to

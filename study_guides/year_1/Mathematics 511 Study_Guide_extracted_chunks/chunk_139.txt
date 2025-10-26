@@ -1,0 +1,27 @@
+A Full Adder is a combinational circuit that performs the addition of three 
+bits (two significant bits and previous carry). 
+ It consists of three inputs and two outputs, two inputs are the bits 
+to be added, the third input represents the carry form the previous 
+position. 
+ The full adder is usually a component in a cascade of adders, which 
+add 8, 16, etc, binary numbers. 
+ The output 𝑠 is equal to 1 when only one input is equal to 1 or when 
+all three inputs are equal to 1. 
+ The output 𝑐𝑖+1 has a carry 1 if two or three inputs are equal to 1. 
+ 
+ 
+Table 18: Input and Output for the Full Adder 
+ 
+ 
+Figure 2.5: A Full Adder 
+
+The two outputs of the full adder, the sum bit s and the carry ci+1, are given 
+by the sumof-products expansions 𝑥𝑦𝑐𝑖 +  𝑥𝑦̅ 𝑐̅𝑖 + 𝑥̅𝑦𝑐̅𝑖 + 𝑥̅ 𝑦̅𝑐𝑖 and xyci 
++ xy𝑐𝑖̅ + x𝑦̅ci + 𝑥̅yci , respectively. However, instead of designing the full adder 
+from scratch, we will use half adders to produce the desired output. A full 
+adder circuit using half adders is shown in Figure 2.5. 
+Finally, in 2.6 we show how full and half adders can be used to add the two 
+three-bit integers (x2x1x0)2 and (y2y1y0)2 to produce the sum (s3s2s1s0)2. Note 
+that s3, the highest-order bit in the sum, is given by the carry c2.
+
+Figure 2.6: Adding Two Three-Bit Integers with Full and Half Adders.

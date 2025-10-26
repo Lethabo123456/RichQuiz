@@ -1,0 +1,38 @@
+e, $x + $y is an 
+expression. Here are some more examples of expressions:  
+$x + $y + $z  
+$x - $y  
+$x  
+5 
+True  
+gettype( $test_var )  
+  
+The values and variables that are used with an operator are known as operand. There are several 
+types of operators, these being arithmetic, comparison, bitwise, etc. these operators can be 
+grouped into ten types in PHP as follows:  
+  
+Type  
+Description  
+  
+Arithmetic  
+Perform common arithmetic operations, such as 
+addition, subtraction, multiplication and division.  
+Assignment  
+Assign values to variables.  
+Bitwise  
+Perform operations on individual bits in an 
+integer.  
+Comparison  
+Compare values in Boolean fashion and either 
+True or False is returned as the answer.  
+Error Control  
+Affect error handling.  
+Execution  
+Cause execution of commands as though they 
+were shell commands.  
+Logical  
+Boo;ean operators such as AND, OR and NOR 
+may be used to include or exclude.  
+String  
+There is only one STRING [.] operator and it is 
+use

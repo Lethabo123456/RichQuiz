@@ -1,0 +1,16 @@
+d applications: DataSets and XML support. 
+The ADO.NET framework consolidates all data access functionality under one integrated object 
+model. In this object model, several objects interact with one another to perform specific data 
+manipulations. These objects can be grouped as data providers and consumers. Data provider 
+objects are provided by the database vendors. However, ADO.NET comes with two standard data 
+providers: one for OLE-DB data sources and one for SQL Server. ADO.NET includes a highly 
+optimized data provider for SQL Server. Whatever the data provider is, it must support a set of 
+specific objects to manipulate the data in the data source. Some of those objects are shown in Figure 
+15.6.  
+ 
+The ADO.NET framework is optimized to work in disconnected environments. In a disconnected 
+environment, applications exchange messages in request/reply format. The most common example 
+
+ 
+178 
+of a disconnected system is the Internet. Modern applications rely on the Internet as t

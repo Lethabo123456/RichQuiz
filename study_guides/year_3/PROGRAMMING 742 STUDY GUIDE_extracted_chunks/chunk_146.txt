@@ -1,0 +1,34 @@
+Events are properties of the class publishing the event. The keyword event controls how the event property is accessed by the 
+subscribing classes. The event keyword is designed to maintain the publish/subscribe idiom. 
+Suppose you want to create a Clock class that uses events to notify potential subscribers whenever the local time changes value 
+by one second. Call this event OnSecondChange. Declare the event and its event-handler delegate type as follows: 
+          [attributes] [modifiers] event type member-
+name 
+For example: 
+public event SecondChangeHandler OnSecondChange; 
+This example has no attributes . The modifier can be abstract , new, override, static, virtual, or one of the four 
+access modifiers -- in this case, public. 
+The modifier is followed by the keyword event. 
+The type is the delegate to which you want to associate the event -- in this case, SecondChangeHandler. 
+The member name is the name of the event, in this case OnSecondChange. 
+It is customary to begin events with the word On. Altogether, this 
+declaration states that OnSecondChange is an event that is implemented by a delegate of type Sec-
+ondChangeHandler. 
+
+The declaration for the SecondChangeHandler delegate is: 
+public delegate void SecondChangeHandler( object clock, 
+TimeInfoEventArgs timeInformation 
+This declares the delegate. As stated earlier, by convention an event handler returns void and takes two parameters: the source 
+of the event (in this case clock) and an object derived from EventArgs -- in this case, TimeInfoEventArgs. TimeIn-
+foEventArgs is defined as follows: 
+ 
+ 
+public class TimeInfoEventArgs : EventArgs 
+    { 
+        public TimeInfoEventArgs(int hour, int minute, int second) 
+        { 
+            this.hour = hour; 
+            this.minute = minute; this.second = second; 
+        } 
+public readonly int hour; public readonly int minute; public readonly int second;
+   } 

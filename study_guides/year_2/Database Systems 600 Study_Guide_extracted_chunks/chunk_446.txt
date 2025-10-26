@@ -1,0 +1,21 @@
+atabase middleware actions. 
+
+ 
+180 
+ 
+ 
+Web Server Interfaces 
+Extending web server functionality implies that the web server and the web-to-database middleware 
+will properly communicate with each other. A web server interface defines a standard way to 
+exchange messages with external programs. Currently, there are two well-defined web server 
+interfaces: 
+ 
+Common Gateway Interface (CGI)  
+ 
+Application programming interface (API) 
+The Common Gateway Interface (CGI) uses script files that perform specific functions based on 
+the client’s parameters that are passed to the web server. The script file is a small program 
+containing commands written in a programming language—usually Perl, C#, or Visual Basic. The 
+script file’s contents can be used to connect to the database and to retrieve data from it, using the 
+parameters passed by the web server. Next, the script converts the retrieved data to HTML format 
+and passes the data to the web server, which sends the HTML-formatted page

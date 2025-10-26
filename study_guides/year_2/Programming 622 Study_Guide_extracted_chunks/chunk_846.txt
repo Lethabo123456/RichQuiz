@@ -1,0 +1,33 @@
+{  
+int w = *graphIt; predCount[w]--;  
+if (predCount[w] == 0) queue.addQueue(w);  
+}  
+}//end while  
+  
+//output the vertices in breadth first topological order  
+for (int ind = 0; ind < gSize; ind++) cout << 
+topologicalOrder[ind] << " ";  
+  
+cout << endl;  
+  
+delete [] topologicalOrder;  
+delete [] predCount;  
+ 
+}  
+  
+  
+  
+  
+  
+//bfTopOrder  
+  
+We leave the definition of the constructor as an exercise.   
+  
+10.10 Euler Circuits  
+  
+Let us consider the Kӧnigsberg bridge problem stated at the beginning of the chapter. The problem is to 
+determine whether it is possible to take a walk that crosses each bridge exactly once before returning to 
+the starting point; see Figure 10-1. As remarked earlier, Euler converted this problem into a graph theory 
+problem as follows: Each of the islands A, B, C, and D is considered as a vertex of a graph and the bridges 
+are considered as edges, as shown in Figure 10-2. Now the problem reduces to finding a circuit in the 
+graph of Figur

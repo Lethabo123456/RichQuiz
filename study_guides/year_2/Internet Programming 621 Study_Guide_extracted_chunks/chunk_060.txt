@@ -1,0 +1,16 @@
+stants 
+differ from variables in that their names do not start with the dollar sign, but other than that they 
+can be named in the same way variables are. However, it is good practice to use all-uppercase 
+names for constants. In addition, because constants do no t start with a dollar sign, you should avoid 
+naming your constants using any of PHP’s reserved words, such as statements or function names. 
+For example, do not create a constant called ECHO or SETTYPE. If you do name any constants this 
+way, PHP will get very confused.  
+  
+Constants may only contain scalar values such as Boolean, integer, float, and string (not values such 
+as arrays and objects), can be used from anywhere in your PHP program without regard to variable 
+scope, and are case-sensitive.  
+  
+To define a constant, use the define() function, and include inside the parentheses the name you 
+have chosen for the constant, followed by the value for the constant, as shown here:  
+  
+define( “MY_CONSTANT”, “19” ); //

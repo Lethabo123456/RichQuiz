@@ -1,0 +1,18 @@
+r data may contain digits, the DBMS does not 
+recognize the numeric value of those digits. 
+
+ 
+94 
+SQL Queries 
+At the heart of SQL is the query. In the SQL environment, the word query covers both questions 
+and actions. Most SQL queries are used to answer questions such as these: “What products currently 
+held in inventory are priced over $100, and what is the quantity on hand for each of those products?” 
+etc. However, many SQL queries are used to perform actions such as adding or deleting table rows 
+or changing attribute values within tables. Still other SQL queries create new tables or indexes. For 
+a DBMS, a query is simply a SQL statement that must be executed.  
+By default, most SQL data manipulation commands operate over an entire table (relation), which 
+is why SQL commands are said to be set-oriented commands. A SQL set-oriented command works 
+over a set of rows. The set may include one or more columns and zero or more rows from one or 
+more tables.  
+The Database Model 
+A s

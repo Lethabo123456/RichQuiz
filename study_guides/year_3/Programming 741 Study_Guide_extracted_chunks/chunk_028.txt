@@ -1,0 +1,18 @@
+1.1.5 Namespaces and assemblies 
+A using directive simply brings the items in a namespace into scope and frees you from having 
+to fully qualify the names of classes in your code. Classes are compiled into assemblies. An 
+assembly is a file that usually has the .dll file name extension, although strictly speaking, 
+executable programs with the .exe file name extension are also assemblies. 
+ 
+An assembly can contain many classes. Classes such as System.Console are provided in 
+assemblies that are installed on your computer together with Visual Studio. Class libraries 
+provided with .NET Core and the .NET Framework contains thousands of classes. If they were 
+all held in the same assembly, the assembly would be huge and difficult to maintain. (If 
+Microsoft were to update a single method in a single class, it would have to distribute the 
+entire class library to all developers!) 
+
+For this reason, the class library is split into a number of assemblies, partitioned by the 
+functions they perform or the technology they implement. For example, .NET Core uses a 
+“core" assembly named System.Runtime.dll that contains all the common C# types. Other 
+assemblies contain classes for writing data to the console (such as System.Console), 
+manipulating databases, accessing web services, building GUIs, and so on.

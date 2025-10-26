@@ -1,0 +1,14 @@
+-first search starts at the vertex 0. After visiting all the vertices that 
+can be reached starting at the vertex 0, the depth-first search starts at the next vertex that is not visited. 
+There is a path from the vertex 0 to every other vertex except the vertices 7 and 9. Therefore, when the 
+depth-first search starts at the vertex 0, all the vertices except 7 and 9 are visited before these vertices. 
+After completing the depth-first search that started at the vertex 0, the depth-first search starts at the 
+vertex 7 and then at the vertex 9. Note that there is no path from the vertex 7 to the vertex 9. Therefore, 
+after completing the depth-first search that started at the vertex 7, the depth-first search starts at the 
+vertex 9. The general algorithm to do a depth-first traversal at a given node, v, is as follows:  
+  
+1. mark node v as visited  
+2. visit the node  
+3. for each vertex u adjacent to v if u is not visited start the depth first traversal at u  
+  
+Clearly, this is a recu

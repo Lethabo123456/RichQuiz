@@ -1,0 +1,12 @@
+2.11.1 Types of Parameters 
+The examples using parameters presented thus far used value parameters. C# offers both call 
+by value and call by reference parameters. Call by value is the default type. With call by value, 
+a copy of the original value is made and stored in a separate, different memory location. If 
+the method changes the contents of the variable sent to it, this does not affect the original 
+value stored in the variable from the calling method. The original value is retained when 
+control passes back to the calling method. 
+ 
+When you use the keywords ref and out, call by reference is assumed. With call by reference, 
+you send the address of the argument to the method. You must include either ref or out in 
+both the call and in the method’s heading parameter list. They must match. In other words, 
+you cannot use ref in the heading and out in the call.

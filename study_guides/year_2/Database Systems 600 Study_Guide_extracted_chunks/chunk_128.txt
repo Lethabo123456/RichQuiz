@@ -1,0 +1,11 @@
+you want? Of course not; you use the library’s catalogue, which is indexed by title, 
+topic, and author. The index (in either a manual or computer library catalogue) points you to the 
+book’s location, making retrieval a quick and simple matter. An index is an orderly arrangement 
+used to logically access rows in a table more efficiently.  
+From a conceptual point of view, an index is composed of an index key and a set of pointers. The 
+index key is, in effect, the index’s reference point. More formally, an index is an ordered 
+arrangement of keys and pointers. Each key, points to the location of the data identified by the key.  
+You just learned that an index can be used to retrieve data more efficiently, but indexes can also be 
+used by a DBMS to retrieve data ordered by a specific attribute or attributes. Also, an index key 
+can be composed of one or more attributes. Indexes play an important role in DBMSs for the 
+implementation of primary keys. When you define a table’s primary ke

@@ -1,0 +1,17 @@
+re advance knowledge of the number of items to be stored.   
+However, the collision elements are stored in slots to which other key values map directly, thus the 
+potential for multiple collisions increases as the table becomes full.  This method uses the hash function 
+of the form  
+h(k, i) = (h`(k) + c1i + c2i2) mod m    for i = 0, 1, 2, . . . , m-1        
+  
+where h` is an auxiliary hash function. c1 + c2 ≠ 0 are auxiliary constants.  
+  
+This method works much better than linear probing. Quadratic probing suffers a milder form of clustering, 
+called secondary clustering.  
+  
+7.3.6 Chaining  
+  
+One simple scheme is to chain all collisions in lists attached to the appropriate slot. This allows an 
+unlimited number of collisions to be handled and doesn't require a priori knowledge of how many 
+elements are contained in the collection. The tradeoff is the same as with linked lists versus array 
+implementations of collections: linked list overhead in space and, to a lesser extent, in

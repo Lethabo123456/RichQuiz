@@ -1,0 +1,44 @@
+Starting a New Project 
+
+Android Studio organizes apps into projects that are stored in a folder designated by the developer. 
+The folder contains the application’s code and resources, code libraries used by the application (or 
+references to them), and metadata that is used to keep track of environment information for the 
+workspace.
+
+To begin, run Android Studio. Android Studio will open the project you were working on when you last 
+
+closed the IDE. If no project was open, the IDE displays the Welcome window, which lists a number of 
+quick-start options, including starting a new project, opening an existing project, importing a project 
+from another IDE (e.g., Eclipse), and other update and configuration options. Most IDEs are designed 
+with the idea that developers are going to be working on the same machine each time they work on 
+a project. This can cause problems in the education environment, where students do not have the 
+ability to work on the same machine and/or store their work on the machine they are currently 
+working on. However, moving projects in Android Studio is really just a matter of moving the project 
+folder and opening it on the new machine. 
+ 
+Creating the Project 
+The traditional beginning tutorial for many different languages and development platforms is Hello 
+World. Your first Android app will be a slightly modified Hello World app. In Android Studio, all Android 
+apps are created within a project. To create your first app, you will have to create your first project. 
+Creating a new project requires stepping through a series of windows and making choices to configure 
+your app. To get started, from Android Studio’s Welcome window choose Start a new Android Studio 
+project. The Choose your project window will open. In this window you choose the type of activity 
+you’d like to start with in the app. An Activity is a core component of any Android application. Activities 
+are typically associated with a visible screen. Most of the core functionality of an app is provided by 
+an activity and its associated screen (called a layout). The choices of activity are limited by your choice 
+of minimum SDK. If you had selected an SDK less than 15, a number of layouts would not be available. 
+Select Empty Activity and click Next. We are doing a very basic application and want to demonstrate 
+some basic concepts without Android Studio doing some of the work for us. 
+
+You should see the Configure your project dialog window, as shown in Figure 3.1. Fill out the screen as shown except 
+Save location, which will be unique to your computer. Click the picture of the folder after the 
+location name and choose a location that fits your needs. If this is your own computer, where 
+you will be doing most of your work, you can keep the default location. If not, you may want to 
+change the location to a USB drive. The Name is displayed on the phone’s screen as the name of 
+the app. You can use spaces if you want. 
+
+As you type the name, the Package name and Location will be completed. There are no spaces allowed in these items. 
+The wizard will remove them as you type. Don’t put them back in either of those fields. 
+The Package name is important. For this initial project, you don’t need to change the default. 
+However, if you are building an app for sale, in place of “example” you should put your company name. 
+This name will be used as an identifier in the Play Store to link your apps to the services they use (such as Google Maps).

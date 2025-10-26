@@ -1,0 +1,26 @@
+RE condition   
+   
+A statement may expand to multiple lines. Here is a simple example of a real multi-line SQL 
+statement:   
+   
+SELECT lastName, firstName   
+FROM users   
+WHERE firstName = ‘John’   
+   
+Take a closer look at the FROM and WHERE clauses in the query. The query returns any record from 
+the users table where the value of the firstName field is “ John ” . Assuming there actually is a table 
+called users in the database, the query’s output might look like this:   
+   
+Simpleton John   
+Smith John   
+Thomas John   
+   
+The returned values are known as the result set . You can loop through all the rows in a result set 
+within your PHP script. If your query finds no rows, NULL is returned instead. Other SQL statements 
+such as DELETE or INSERT do not return a result set.   
+   
+4.10 Creating A New Database   
+It is easy to create a new MySQL database. First, fire up the MySQL command-line tool and then 
+open a shell prompt and type [on Windows]:   
+   
+mysql -u root -p

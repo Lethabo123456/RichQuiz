@@ -1,0 +1,19 @@
+h its self-describing characteristic. In effect, the 
+data dictionary resembles an x-ray of the company’s entire data set, and it is a crucial element in 
+data administration.  
+Two main types of data dictionaries exist: integrated and standalone. An integrated (built-in) data 
+dictionary is included with the DBMS. Other DBMSs, especially older types, do not have a built-
+in data dictionary; instead, the DBA may use third-party standalone systems.  
+Data dictionaries can also be classified as active or passive. An active data dictionary is 
+automatically updated by the DBMS with every database access to keep its access information up 
+to date. A passive data dictionary is not updated automatically and usually requires running a 
+batch process. Data dictionary access information is normally used by the DBMS for query 
+optimization. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Sixteen, page 757-761. 
+
+ 
+203 
+Th

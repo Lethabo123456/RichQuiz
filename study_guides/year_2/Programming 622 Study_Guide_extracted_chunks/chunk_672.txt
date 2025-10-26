@@ -1,0 +1,49 @@
+s and easy 
+reference, we give the definition of the node followed by the definition of the class.  
+//*************************************************************  
+// class binaryTreeType  
+// This class specifies the basic operations to implement a binary tree.  
+//*************************************************************  
+//Definition of the node template 
+<class elemType>  
+struct binaryTreeNode  
+{  
+elemType info; binaryTreeNode<elemType> 
+*llink;  
+binaryTreeNode<elemType> *rlink;  
+};  
+  
+//Definition of the class template 
+<class elemType>  
+class binaryTreeType  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+329  
+  
+  
+{  
+public:   
+  
+const 
+binaryTreeType<elemType>& 
+operator=(const 
+binaryTreeType<elemType>&); 
+//Overload the assignment operator.  
+  
+bool isEmpty() const;  
+//Returns true if the binary tree is empty; //otherwise, 
+returns false.  
+  
+void inorderTraversal() const;  
+//Function to do an inorder traversal of the binary tree.  
+  
+void preorderTraversal() const;  
+/

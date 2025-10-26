@@ -1,0 +1,29 @@
+< br/ > 
+”; ? >  
+< /body > 
+< /html >  
+  
+The script’s output is displayed in Figure 6.4, below.  
+  
+  
+ 
+Figure 6.4  
+  
+Notice how the calling code tries to display the values of $hello and $world, but nothing gets 
+displayed. This is because the $hello and $world variables that were created inside the function do 
+not exist outside the function. The scope of $hello and $world is said to be limited to the function 
+that created them; they are said to be local variables .  
+  
+Now at first glance you might think that this is a drawback, because it means you cannot easily 
+access variables within a function from outside the function. In fact, though, this is a good feature, 
+because it means that the names of variables used inside a function do not clash with the names of 
+variables used outside the function.  
+  
+Consider the following example:  
+  
+function describeMyDog() {  
+$color = “brown”;  
+echo “My dog is $color < br/ > ”;  
+}  
+// Define my cat’s color 
+$color = “black”;

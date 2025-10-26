@@ -1,0 +1,20 @@
+As you can probably guess, many different types of CPUs are used as controllers. The trouble with C 
+and C++ (and most other languages) is that they are designed to be compiled for a specific target. 
+Although it is possible to compile a C++ program for just about any type of CPU, to do so requires a 
+full C++ compiler targeted for that CPU. The problem is that compilers are expensive and time-
+consuming to create. An easier— and more cost-efficient—solution was needed. In an attempt to 
+find such a solution, Gosling and others began work on a portable, platform-independent language 
+that could be used to produce code that would run on a variety of CPUs under differing 
+environments. This effort ultimately led to the creation of Java. 
+
+Java’s Lineage    
+Java is related to C++, which is a direct descendent of C. Much of the character of Java is 
+inherited from these two languages. From C, Java derives its syntax. Many of Java’s object-
+oriented features were influenced by C++. In fact, several of Java’s defining characteristics come 
+from—or are responses to—its predecessors. Moreover, the creation of Java was deeply rooted 
+in the process of refinement and adaptation that has been occurring in computer programming 
+languages for the past three decades. 
+
+For these reasons, this section reviews the sequence of events and forces that led up to Java. 
+As you will see, each innovation in language design was driven by the need to solve a 
+fundamental problem that the preceding languages could not solve. Java is no exception.   

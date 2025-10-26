@@ -1,0 +1,25 @@
+4.2.3 Declaring new methods 
+
+One of the hardest tasks in the realm of computer programming is thinking up unique and 
+meaningful names for identifiers. If you’re defining a method for a class and that class is part 
+of an inheritance hierarchy, sooner or later you’ll try to reuse a name that’s already in use by 
+one of the classes further up the hierarchy. Ifa base class and a derived class happen to declare 
+two methods that have the same signature, you will receive a warning when you compile the 
+application. 
+A method in a derived class masks (or hides) a method in a base class that has the same 
+signature. For example, if you compile the following code, the compiler generates a warning 
+message informing you that Horse.Talk hides the inherited method Mammal.Talk: 
+ 
+Example 4-3 declaring new methods 
+class Mammal 
+{ 
+... 
+public void Talk() // assume that all mammals can talk 
+{ 
+... 
+} 
+} 
+class Horse : Mammal 
+{ 
+... 
+public void Talk() // horses talk in a

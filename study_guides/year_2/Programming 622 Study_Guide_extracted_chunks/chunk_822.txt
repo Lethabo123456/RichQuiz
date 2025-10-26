@@ -1,0 +1,32 @@
+le[size];  
+smallestWeight = new double[size];  
+}  
+//Destructor  
+weightedGraphType::~weightedGraphType()  
+{ for (int i = 0; i < gSize; i++) delete 
+[] weights[i]; delete [] 
+weights;  
+delete smallestWeight;  
+}  
+  
+ 
+10.8  Minimum Spanning Tree  
+  
+Consider the graph of Figure 10-14, which represents the airline connections of a company, between 
+seven cities. The number on each edge represents some cost factor of maintaining the connection 
+between cities.  
+  
+  
+FIGURE 10-14 Airline connections between cities and the cost factor of maintaining the connections  
+  
+Due to financial hardship, the company needs to shut down the maximum number of connections and still 
+be able to fly (may be not directly) from one city to another. The graphs of Figure 10-15(a), (b), and  
+(c) show three different solutions.  
+  
+  
+FIGURE 10-15 Possible solutions to the graph of Figure 10-14  
+
+405  
+  
+  
+The total cost factor of maintaining the remaining connections in Figure 10-15(a) is 33, in

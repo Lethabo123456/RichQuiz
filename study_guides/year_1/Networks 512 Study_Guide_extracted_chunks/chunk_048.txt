@@ -1,0 +1,30 @@
+1.7.3.1 Media 
+An important part of designing and installing an Ethernet is selecting the appropriate Ethernet 
+medium. There are four major types of media in use today: Thick wire for 10BASE5 networks; thin 
+coax for 10BASE2 networks; unshielded twisted pair (UTP) for 10BASE-T networks; and fiber optic 
+for 10BASE-FL or Fiber-Optic Inter-Repeater Link (FOIRL) networks. This wide variety of media 
+reflects the evolution of Ethernet and also points to the technology’s flexibility. Thick wire was one 
+of the first cabling systems used in Ethernet, but it was expensive and difficult to use. This evolved 
+to thin coax, which is easier to work with and less expensive. It is important to note that each type 
+of Ethernet, Fast Ethernet, Gigabit Ethernet, 10 Gigabit Ethernet, has its own preferred media 
+types. 
+
+The most popular wiring schemes are 10BASE-T and 100BASE-TX, which use unshielded twisted 
+pair (UTP) cable. This is similar to telephone cable and comes in a variety of grades, with each 
+higher grade offering better performance. Level 5 cable is the highest, most expensive grade, 
+offering support for transmission rates of up to 100 Mbps. Level 4 and level 3 cable are less 
+expensive, but cannot support the same data throughput speeds; level 4 cable can support speeds 
+of up to 20 Mbps; level 3 up to 16 Mbps. The 100BASE-T4 standard allows for support of 100 Mbps 
+Ethernet over level 3 cables, but at the expense of adding another pair of wires (4 pair instead of 
+the 2 pair used for 10BASE-T). For most users, this is an awkward scheme and therefore 100BASE-
+T4 has seen little popularity. Level 2 and level 1 cables are not used in the design of 10BASE-T 
+networks. 
+
+For specialized applications, fiber-optic, or 10BASE-FL, Ethernet segments are popular. Fiber-optic 
+cable is more expensive, but it is invaluable in situations where electronic emissions and 
+environmental hazards are a concern. Fiber-optic cable is often used in inter-building applications 
+to insulate networking equipment from electrical damage caused by lightning. Because it does not 
+conduct electricity, fiber-optic cable can also be useful in areas where heavy electromagnetic 
+interference is present, such as on a factory floor. The Ethernet standard allows for fiber-optic 
+cable segments up to two kilometers long, making fiber-optic Ethernet perfect for connecting 
+nodes and buildings that are otherwise not reachable with copper media. 

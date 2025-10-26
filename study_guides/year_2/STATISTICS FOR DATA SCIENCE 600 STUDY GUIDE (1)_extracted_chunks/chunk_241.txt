@@ -1,0 +1,38 @@
+m of squared 
+residual value.  
+   
+Implementation of the linear regression model in Python 
+  
+# create X and y 
+feature_cols = ['temp']  # a lsit of the predictors  
+X = bikes[feature_cols]  # subsetting our data to only the predictors 
+y = bikes['count'] # our response variable 
+  
+Note how we made an X and a y variable. These represent our predictors and our response 
+variable. Then, we will import our machine learning module, scikit learn, as shown:  
+ 
+# import scikit-learn, our machine learning module  
+from sklearn.linear_model import LinearRegression  
+  
+Finally, we will fit our model to the predictors and the response variable, as follows:  
+  
+linreg = LinearRegression() #instantiate a new model  
+linreg.fit(X, y) #fit the model to our data  
+  
+# print the coefficients  
+print linreg.intercept_ print linreg.coef_ 6.04621295962 # our Beta_0  
+[ 9.17054048] # our beta parameters  
+  
+To interpret:  
+  
+  
+ 
+ 
+ 
+ 
+ 
+
+P a g e  | 144 
+ 
+ 
+6.4.4 Adding more predictors (Multiple

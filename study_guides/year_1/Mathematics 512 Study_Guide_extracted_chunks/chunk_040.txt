@@ -1,0 +1,27 @@
+Derivative Notations 
+
+In addition to the notation above, there are several other notations for 
+expressing the derivative of a function. The most common notations are:  
+
+𝑓′(𝑥) = 𝑦′ = 𝑑𝑦/𝑑𝑥 = 𝑑𝑑𝑥 𝑓(𝑥) 
+
+The notation 𝑑𝑦/𝑑𝑥 is called Leibniz notation. It is the most commonly used 
+notation after the 𝑓′(𝑥) notation.  
+
+4.2 The Derivative function 
+If we find the derivative for the variable 𝑥 rather than a value 𝑎, we obtain a 
+derivative function with respect to 𝑥. With this function, the derivative at any 
+value of 𝑥 can be determined. By replacing 𝑎 with 𝑥 in the limit formula, we can 
+find the derivative function: 𝑓′(𝑥) = limℎ→0 𝑓(𝑥 + ℎ)−𝑓(𝑥)/ℎ
+
+4.3 Differentiable Functions 
+A function is differentiable at 𝑎 if 𝑓′(𝑎) exists. It is differentiable on the open 
+interval (𝑎, 𝑏) if it is differentiable at every number in the interval. 
+If a function is differentiable at 𝑎 then it is also continuous at 𝑎. The 
+contrapositive of this theorem states that if a function is discontinuous at 𝑎 
+then it is not differentiable at 𝑎. A function is not differentiable at 𝑎 if its graph 
+illustrates one of the following cases at 𝑎:  
+Discontinuity 
+A function is not differentiable at 𝑎 if there is any type of discontinuity at 𝑎. 
+This is stated in the contrapositive of the theorem above. The graph below 
+illustrates jump discontinuity.

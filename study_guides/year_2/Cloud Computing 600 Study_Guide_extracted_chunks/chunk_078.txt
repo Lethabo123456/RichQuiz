@@ -1,0 +1,41 @@
+Chapter 5: Parallel processing, Distributed Computing & Storage 
+
+Systems in the Cloud  
+ 
+5.1 Introduction 
+This chapter describes cloud architectural models. parallel processing, distributed computing 
+
+5.2 Workload Distribution Architecture 
+
+IT resources can be horizontally scaled via the addition of one or more identical IT resources, and a 
+load balancer that provides runtime logic capable of evenly distributing the workload among the 
+available IT resources. The resulting workload distribution architecture reduces both IT resource over-
+utilization and under-utilization to an extent dependent upon the sophistication of the load balancing 
+algorithms and runtime logic. 
+  
+Fig 5.1: Distributed Architecture distribution 
+
+As seen above, a redundant copy of Cloud Service A is implemented on Virtual Server B. The load 
+balancer intercepts cloud service consumer requests and directs them to both Virtual Servers A and B 
+to ensure even workload distribution 
+This fundamental architectural model can be applied to any IT resource, with workload distribution 
+commonly carried out in support of distributed virtual servers, cloud storage devices, and cloud 
+services. Load balancing systems applied to specific IT resources usually produce specialized variations 
+of this architecture that incorporate aspects of load balancing 
+
+The following mechanisms can also be part of this cloud architecture: 
+
+• Audit Monitor – When distributing runtime workloads, the type and geographical location of the IT 
+resources that process the data can determine whether monitoring is necessary to fulfill legal and 
+regulatory requirements. 
+• Cloud Usage Monitor – Various monitors can be involved to carry out runtime workload tracking and 
+data processing. 
+• Hypervisor – Workloads between hypervisors and the virtual servers that they host may require 
+distribution. 
+• Logical Network Perimeter – The logical network perimeter isolates cloud consumer network 
+boundaries in relation to how and where workloads are distributed. 
+• Resource Cluster – Clustered IT resources in active/active mode are commonly used to support 
+workload balancing between different cluster nodes. 
+• Resource Replication – This mechanism can generate new instances of virtualized IT resources in 
+response to runtime workload distribution demands. 
+ 

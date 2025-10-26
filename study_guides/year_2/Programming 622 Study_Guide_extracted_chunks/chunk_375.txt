@@ -1,0 +1,64 @@
+k;   
+  
+  
+  
+ 
+cout << "The elements of copyStack: ";  
+ 
+//copy stack into copyStack  
+while (!copyStack.isEmptyStack())     
+{  
+cout << copyStack.top() << " "; 
+copyStack.pop();  
+}  
+cout << endl;  
+ 
+copyStack = stack;  
+//print copyStack  
+testCopyConstructor(stack);    
+  
+//test the copy constructor  
+  
+if (!stack.isEmptyStack()) cout << "The original stack is 
+not empty." << endl  
+<< "The top element of the original stack: "  
+<< copyStack.top() << endl;  
+  
+ 
+dummyStack = stack;    
+  
+  
+//copy stack into dummyStack  
+  
+cout << "The elements of dummyStack: ";  
+  
+ 
+while (!dummyStack.isEmptyStack())   
+//print dummyStack  
+{  
+cout << dummyStack.top() << " ";  
+dummyStack.pop();  
+}  
+  
+cout << endl;  
+  
+return 0;  
+}  
+  
+void testCopyConstructor(stackType<int> otherStack)  
+{  
+
+188  
+  
+if 
+(!otherStack.isEmptyStack()) 
+ 
+cout 
+<< 
+"otherStack is not empty." << endl  
+<< "The top element of otherStack: "  
+<< otherStack.top() << endl;  
+}  
+  
+Sample Run:  
+The e

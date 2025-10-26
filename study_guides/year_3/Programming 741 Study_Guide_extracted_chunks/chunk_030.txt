@@ -1,0 +1,10 @@
+If you want to use a class in an assembly, you must add a reference to that assembly to your 
+project. You can then add using directives to your code that bring the items in namespaces in 
+that assembly into scope and make them accessible in your code. When you use Visual Studio 
+to create an application, the template you select automatically includes references to the 
+appropriate assemblies. To add references for additional assemblies to a .NET Core project, 
+you use the NuGet Package Manager in Visual Studio. You’ll see this in action in later chapters. 
+ 
+There is not necessarily a 1:1 equivalence between an assembly and a namespace. A single 
+assembly can contain classes defined in many namespaces, and a single namespace can span 
+multiple assemblies. This all sounds very confusing at first, but you’ll soon get used to it. 

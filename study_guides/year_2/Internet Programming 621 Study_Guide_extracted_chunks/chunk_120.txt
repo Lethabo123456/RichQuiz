@@ -1,0 +1,26 @@
+pes of Wrath”,  
+“author” = > “John Steinbeck”, 
+“pubYear” = > 1939 );  
+echo ‘ < h2 > $authors: < /h2 > < pre > ’; 
+print_r ( $authors );  
+echo ‘ < /pre > < h2 > $myBook: < /h2 > < pre > 
+’; print_r ( $myBook ); echo “ < /pre > ”;  
+? >  
+< /body >  
+< /html >  
+  
+
+59  
+  
+Figure 5.1  
+  
+You can see that print_r() displays the type of the variable it was passed — Array — followed by a 
+list of all the elements in the array, in the form key => value . The keys (or indices) of the indexed 
+array are 0 through 3, and the keys of the associative array are title, author, and pubYear .  
+  
+By the way, the script wraps < pre > and < /pre > tags around the output from print_r() so that you 
+can see the formatting properly. Without these tags, the output would appear on a single line when 
+viewed in a Web page.  
+  
+You can use print_r() to output pretty much any type of data, not just array variables. For example, 
+you can use it to output the contents of objects. If you ’d rather store t

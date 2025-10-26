@@ -1,0 +1,12 @@
+Table 6.3: Recall, Precision and Accuracy 
+ 
+Accuracy is a subtle indicator and might not be truly useful if taken alone. Accuracy 
+measures the percentage of good predictions—that is, when the feature was positive and was 
+recognized as positive, and when it was negative and was recognized as negative. Imagine 
+now you’re classifying email messages to spot spam emails. Imagine also that the dataset 
+contains 10 percent of messages that are truly spam. The model could deliver an accuracy of 
+90 percent without being able to recognize a single spam message as such! 
+That’s why you need also to look at the recall indicator. The recall indicator measures how 
+good the model is at identifying true positives (i.e., truly spam messages). Note that the 
+denominator of the recall formula contains the sum of true positives and false negatives—
+namely, the total number of positives in the applied dataset. Other indicators that can

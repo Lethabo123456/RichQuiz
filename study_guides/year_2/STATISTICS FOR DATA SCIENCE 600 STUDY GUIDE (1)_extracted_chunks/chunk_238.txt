@@ -1,0 +1,35 @@
+b.pyplot as plt %matplotlib inline 
+url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/ bikeshare.csv' 
+bikes = pd.read_csv(url)  
+bikes.head() 
+  
+ 
+ 
+ 
+ 
+ 
+
+P a g e  | 141 
+ 
+ 
+ 
+We can see that every row represents a single hour of bike usage. In this case, we are 
+interested in predicting count, which represents the total number of bikes rented in the 
+period of that hour. 
+ 
+   
+ 
+Let's, for example, look at a scatter plot between temperature (the temp column) and count, 
+as shown:  
+ 
+bikes.plot(kind='scatter', x='temp', y='count', alpha=0.2) 
+  
+And now, let's use a module, called seaborn, to draw ourselves a line of best fit, as follows: 
+import seaborn as sns #using seaborn to get a line of best fit  
+sns.lmplot(x='temp', y='count', data=bikes, aspect=1.5, scatter_ kws={'alpha':0.2}) 
+
+P a g e  | 142 
+ 
+  
+This line in the graph attempts to visualize and quantify the relationship between temp and 
+count. To make a prediction, we simply find a given temperatu

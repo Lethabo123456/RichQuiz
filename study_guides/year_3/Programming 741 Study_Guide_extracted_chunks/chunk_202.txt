@@ -1,0 +1,22 @@
+With an Array class, you define how many objects the array will hold. I f you try to add more 
+than that, the Array class will throw an exception. With an ArrayList, you do not declare how 
+many objects the ArrayList will hold. The ArrayList has a property, Capacity, which is the 
+number of elements the ArrayList is capable of storing:  
+ 
+public int Capcity { virtual get ; virtual set; } 
+ 
+The default capacity is 16. When you add the 17th element, the capacity is automatically 
+doubled to 32. if you change the for loop to: 
+ 
+for (int i = 0; i<17; i++) 
+
+the output looks like this: 
+ 
+0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 
+75 80 5 6 7 8 9 10 11 12 13 14 15 16 17 18 
+19 20 21 empArray. Capacity: 32 
+
+You can manually set the capacity to any number equal to or greater than the count. If you 
+set it to a number less than the count, the program will throw an exception of type 
+ 
+ArgumentOutOfRangeException. 

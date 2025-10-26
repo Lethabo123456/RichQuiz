@@ -1,0 +1,22 @@
+By De Morgan’s law for propositions, we conclude that 
+￢((x ∈ A) ∧ (x ∈ B)) is true. 
+By the definition of intersection, it follows that ￢(x ∈ A ∩ B). We now use 
+the definition of complement to conclude that x ∈ 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅.  
+This shows that 𝐴 ̅ ∪ 𝐵̅ ⊆ 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅. 
+Because we have shown that each set is a subset of the other, the two 
+sets are equal, and the identity is proved. 
+ 
+Generalized Unions and Intersections 
+Because unions and intersections of sets satisfy associative laws, the sets A 
+∪ B ∪ C and A ∩ B ∩ C are well defined; that is, the meaning of this notation 
+is unambiguous when A, B, and C are sets. That is, we do not have to use 
+parentheses to indicate which operation comes first because  
+A ∪ (B ∪ C) = (A ∪ B) ∪ C and A ∩ (B ∩ C) = (A ∩ B) ∩ C.  
+Note that A ∪ B ∪ C contains those elements that are in at least one of the 
+sets A, B, and C, and that A ∩ B ∩ C contains those elements that are in all of 
+A, B, and C. These combinations of the three sets, A, B, and C, are shown in 
+Figure 2.11. 
+ 
+Figure 2.11: The Union and Intersection of A, B, and C.

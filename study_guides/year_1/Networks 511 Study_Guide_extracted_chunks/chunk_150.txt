@@ -1,0 +1,24 @@
+Computers read and write information—for example, program instructions, routing information, 
+and network addresses—in bits and bytes. When a number is represented in binary form (for 
+example, 01111001), each bit position, or placeholder, in the number represents a specific 
+multiple of 2. Because a byte contains eight bits, it has eight placeholders. When counting 
+placeholders in a byte, you move from right to left. The placeholder farthest to the right is 
+known as the zero position; the one to its left is in the first position, and so on. The placeholder 
+farthest to the left is in the seventh position, as shown in Figure 51. 
+ 
+Figure 51: seventh position 
+ 
+To find the decimal value of a bit, you multiply the 1 or 0 (whichever the bit is set to) by 2x, 
+where x equals the bit’s position. For example, the 1 or 0 in the zero position must be multiplied 
+by 2 to the 0 power, or 20, to determine its value. Any number (other than zero) raised to the 
+power of 0 has a value of 1. Thus, if the zero-position bit is 1, it represents a value of 1 × 20, or 1 
+× 1, which equals 1. If a 0 is in the zero position, its value equals 0 × 20, or 0 × 1, which equals 0. 
+In every position, if a bit is 0, that position represents a decimal number of 0.  
+To convert a byte to a decimal number, determine the value represented by each bit, and then 
+add those values together. If a bit in the byte is 1 (in other words, if it’s “on”), the bit’s 
+numerical equivalent in the coding scheme is added to the total. If a bit is 0, which position has 
+no value and nothing is added to the total. For example, the byte 11111111 equals: 1 × 27 + 1 × 
+26 + 1 × 25 + 1 × 24 + 1 × 23 + 1 × 22 + 1 × 21 + 1 × 20, or 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1. Its 
+decimal equivalent, then, is 255. In another example, the byte 00100100 equals: 0 × 27 + 0 × 26 + 
+1 × 25 + 0 × 24 + 0 × 23 + 1 × 22 + 0 × 21 + 0 × 20, or 0 + 0 + 32 + 0 + 0 + 4 + 0 + 0. Its decimal 
+equivalent, then, is 36.  

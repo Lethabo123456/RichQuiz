@@ -1,0 +1,29 @@
+88 
+ 
+Data updates are less efficient because programs that read and update tables must deal with 
+larger tables.  
+ 
+Indexing is more cumbersome.  
+ 
+Unnormalized tables yield no simple strategies for creating virtual tables known as views.  
+Remember that good design cannot be created in the application programs that use a data- base. 
+Also keep in mind that unnormalized database tables often lead to various data redundancy disasters 
+in production databases, such as the problems examined thus far. In other words, use 
+denormalization cautiously and make sure that you can explain why the unnormalized tables are a 
+better choice in certain situations than their normalized counterparts. 
+ 
+ 
+ 
+ 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six page 224-227. 
+
+ 
+89 
+ 
+Chapter Summary/Review 
+ 
+In this chapter, you have learned: 
+ 
+ 
+Normalization is a technique used to design tables in which data redundancies

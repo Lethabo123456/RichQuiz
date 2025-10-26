@@ -1,0 +1,50 @@
+After you’ve gotten the GPS sensor working, changing or adding a network 
+sensor is very easy. Add the following declaration after the gpsListener 
+
+Copy the code in the startLocationUpdates() method that begins with gpsListener = and ends just 
+before the locationManager.requestLocationUpdates line (this includes the entire onLocationChanged method), 
+and paste it back into the method just before the 
+locationManager.requestLocationUpdates line. You should now have two duplicate gpsListeners. 
+Change the gpsListener variable in the code you just pasted to networkListener and then add another 
+requestLocationUpdates message after the one that is used to request GPS updates: 
+locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,0, 0, networkListener); 
+
+In the onPause method, add the following line to turn off the network listener, below the line that 
+turns off the GPS listener:
+
+locationManager.removeUpdates(networkListener); 
+And that’s all there is to it! The only real change you made was to request updates from the network 
+sensor rather than the GPS sensor. 
+To test this, you must run it on a device. The emulator will not detect network sensor changes. This 
+code will work indoors if you can get a Wi-Fi or cell signal on your device. 
+Often it is desirable to use both sensors, because at times one or the other is not available. Although 
+the network sensor is not as accurate as the GPS, for some applications this may be good enough. 
+However, if you are getting location updates from both sensors, you need some way of determining 
+which to use. The way to do this is to write a method to take the current location and compare it to a 
+new location to determine if it is better. To do this, add another variable to hold a location object to 
+your set of declarations at the beginning of the ContactMapActivity class using this code: 
+
+Location currentBestLocation; 
+
+Now create a new method called isBetterLocation using the code in Listing 7.8. 
+This method is an example of the types of checks that can be done to determine if a new location is 
+better than another 
+location. 
+▪ Lines 2–3 — The first check determines if there is an existing location. If not, the new 
+location is considered better. 
+▪ Lines 6–7 — The second check determines if the new location has better accuracy than the existing location. If so, it is considered 
+better. 
+▪ Lines 9–10—The last check determines how much newer the new location is. Each Location object 
+gets a time stamp when it is created. In this check, if the new location is newer than the old location 
+by more than five minutes, it is considered better, even though it may not be as accurate. This type of 
+check is especially important if you design the app to be used when the device is in motion. 
+This new method should be called in the onLocationChanged method of both sensor listeners to 
+determine whether you want to use the new location. For example, you could add the following code: 
+
+if (isBetterLocation(location)) 
+ { currentBestLocation = location; 
+//display 
+in 
+location in TextViews. 
+} 
+//no else block...if not better, just ignore. 

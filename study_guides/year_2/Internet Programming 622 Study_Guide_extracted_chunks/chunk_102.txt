@@ -1,0 +1,20 @@
+ue returned by getdate(), and then access the month component with $myDate[ “ 
+month “ ].   
+   
+3.4 Retrieving A Filename From A Path   
+It is often very useful to be able to separate a filename from its directory path, and the basename() 
+function does exactly that, taking a complete file path and returning just the filename. For example, 
+the following code assigns index.html to $filename :   
+   
+$filename = basename( “/home/james/docs/index.html” );   
+   
+You can specify a directory path instead, in which case the rightmost directory name is returned. 
+Here’s an example that assigns the value docs to $dir:   
+   
+$dir = basename( “/home/james/docs” );   
+   
+Basically, basename() retrieves the last whole string after the rightmost slash. If you don’t want the 
+filename extension, or suffix, you can strip that off too by supplying the suffix as a second argument 
+to basename(). The following example assigns “ myfile ” to $filename:   
+   
+$filename = basename( “/home/james/docs/my

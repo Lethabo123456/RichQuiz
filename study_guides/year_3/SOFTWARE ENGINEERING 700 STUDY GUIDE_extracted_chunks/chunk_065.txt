@@ -1,0 +1,39 @@
+ossibly, new 
+functionality defined for later increments. 
+ 
+Incremental development has three major advantages over the waterfall model: 
+i. The cost of implementing requirements changes is reduced. The amount of analysis 
+and documentation that has to be redone is significantly less than is required with the 
+waterfall model. 
+ 
+ii. It is easier to get customer feedback on the development work that has been done. 
+Customers can comment on demonstrations of the software and see how much has 
+been implemented. Customers find it difficult to judge progress from software design 
+documents. 
+ 
+iii. Early delivery and deployment of useful software to the customer is possible, even if 
+all of the functionality has not been included. Customers are able to use and gain value 
+from the software earlier than is possible with a waterfall process. 
+ 
+From a management perspective, the incremental approach has two problems: 
+ 
+i. The process is not visible. Managers need regular deliverables to measure progress. If 
+systems are developed quickly, it is not cost effective to produce documents that 
+reflect every version of the system. 
+ii. System structure tends to degrade as new increments are added. Regular change leads 
+to messy code as new functionality is added in whatever way is possible. It becomes 
+increasingly difficult and costly to add new features to a system. To reduce structural 
+degradation and general code messiness, agile methods suggest that you should  
+regularly refactor (improve and restructure) the software. 
+  
+The problems of incremental development become particularly acute for large, complex, long-
+lifetime systems, where different teams develop different parts of the system. Large systems need 
+a stable framework or architecture, and the responsibilities of the different teams working on 
+parts of the system need to be clearly defined with respect to that architecture. This has to be 
+planned in advance rather than developed incrementally. 
+http://software-engineering-book.com/web/incremental-development/ 
+ 
+Incremental development does not mean that you have to deliver each increment to the system 
+customer. You can develop a system incrementally and expose it to customers and other 
+stakeholders for comment, without necessarily delivering it and deploying it in the customer’s 
+environment.

@@ -1,0 +1,50 @@
+🔍 Processing chunk 13/253: chunk_034.txt
+
+=== Generated Prompt ===
+
+Create 20 quiz questions based on the following material.
+Format each question as:
+Q<number>. [question]
+Type: [MCQ / True/False / Short / Fill / Interpretation]
+Options:
+A. [option A]
+B. [option B]
+C. [option C]
+D. [option D]
+Answer: [correct answer]
+Reasoning: [why?]
+Difficulty: [easy, medium, hard]Separate each question with a line of dashes.
+
+v. Embedded Operating Systems These are specialized OS designed for embedded devices with dedicated functionality. Small, efficient, and tailored for specific hardware and applications. Found in devices like IoT gadgets, automotive systems, home appliances, and medical equipment. Often incorporates real-time operating capabilities. Advantages: <unk> Low resource consumption. <unk> Optimized for reliability and performance in specific tasks. Disadvantages: <unk> Limited flexibility; not suitable for general-purpose computing. <unk> Typically, difficult to upgrade or modify.
+=========================
+
+
+=== Raw Model Output ===
+
+20 quiz questions based on the following material. Format each question as: Qnumber>. [question] Type: [MCQ / True/False / Short / Fill / Interpretation] Options: A. [option A] B. [option B] C. [option C] D. [option D] Answer: [correct answer] Reasoning: [why?] Difficulty: [easy, medium, hard]Separate each question with a line of das
+=========================
+
+
+=== Cleaned Output ===
+
+20 quiz questions based on the following material. Format each question as: Qnumber>. [question] Type: [MCQ / True/False / Short / Fill / Interpretation] Options: A. [option A] B. [option B] C. [option C] D. [option D] Answer: [correct answer] Reasoning: [why?] Difficulty: [easy, medium, hard]Separate each question with a line of das
+======================
+
+Parsed Question:
+ {'question_text': '', 'option_a': '', 'option_b': '', 'option_c': '', 'option_d': '', 'correct_option': '', 'reasoning': ''}
+--------------------------------------------------
+✅ Chunk 13 questions parsed.
+
+{
+    "question": "True or False: Embedded OS are becoming more important with the rise of IoT devices.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Rarely",
+      "C. Sometimes",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "IoT expansion relies heavily on embedded operating systems.",
+    "difficulty": "hard"
+  }

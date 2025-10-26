@@ -1,0 +1,13 @@
+The edges connecting two vertices can be assigned a nonnegative real number, called the 
+weight of the edge. If the graph represents a highway structure, the weight can represent the distance 
+between two places or the travel time from one place to another. Such graphs are called weighted graphs.  
+  
+Let G be a weighted graph. Let u and v be two vertices in G, and let P be a path in G from u to v. The weight 
+of the path P is the sum of the weights of all the edges on the path P, which is also called the weight of v 
+from u via P.  
+  
+Let G be a weighted graph representing a highway structure. Suppose that the weight of an edge 
+represents the travel time. For example, to plan monthly business trips, a salesperson wants to find the 
+shortest path (that is, the path with the smallest weight) from her or his city to every other city in the 
+graph. Many such problems exist in which we want to find the shortest path from a given vertex, called 
+the source, to every other vertex in the g

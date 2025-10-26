@@ -1,0 +1,26 @@
+p on finding unique 
+values with pandas 
+ 
+ 
+
+ 
+ 
+ 
+ 
+Ex3-Barchart.py 
+Objective: Create a stacked bar chart from the file ../data/mocksurvey.csv. Note that questions appear 
+in the index (and should be used for the x-axis), while responses appear as column labels. Extra Credit: 
+make a horizontal bar chart! 
+ 
+Ex4-Bubblechart.py 
+Objective: Create a bubble chart that compares three other features from the mpg.csv dataset. 
+Fields include: 'mpg', 'cylinders', 'displacement' 'horsepower', 'weight', 'acceleration', 'model_year', 
+'origin', 'name' 
+Ex5-Boxplot.py 
+Objective: Make a DataFrame sing the Abalone dataset (../data/abalone.csv). Take two 
+independent random samples of different sizes from the 'rings' field. HINT: 
+np.random.choice(df['rings'],10,replace=False) takes 10 random values 
+Use box plots to show that the samples do derive from the same population. 
+Ex6-Histogram.py 
+Objective: Create a histogram that plots the 'length' field from the Abalone dataset 
+(../data/abalone.c

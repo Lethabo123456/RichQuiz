@@ -1,0 +1,50 @@
+As a baseline, we can use our deep learning library to train a (multiclass) logistic regression 
+model, which is just a single linear layer followed by a softmax. This model (in essence) just 
+looks for 10 linear functions such that if the input represents, say, a 5, then the 5th linear 
+function produces the largest output. One pass through our 60,000 training examples should 
+be enough to learn the model: 
+
+random.seed(0) 
+# Logistic regression is just a linear layer followed by softmax 
+model = Linear(784, 10) 
+loss = SoftmaxCrossEntropy() 
+# This optimizer seems to work 
+optimizer = Momentum(learning_rate=0.01, momentum=0.99) 
+# Train on the training data 
+loop(model, train_images, train_labels, loss, optimizer) 
+# Test on the test data (no optimizer means just evaluate) 
+loop(model, test_images, test_labels, loss) 
+This gets about 89% accuracy. Let’s see if we can do better with a deep neural net- work. 
+We’ll use two hidden layers, the first with 30 neurons, and the second with 10 neurons. And 
+we’ll use our Tanh activation: 
+random.seed(0) 
+# Name them so we can turn train on and off 
+dropout1 = Dropout(0.1) 
+dropout2 = Dropout(0.1) 
+model = Sequential([ 
+Linear(784, 30), # Hidden layer 1: size 30 
+dropout1, 
+Tanh(), 
+
+Linear(30, 10), # Hidden layer 2: size 10 
+dropout2, 
+Tanh(), 
+Linear(10, 10) # Output layer: size 10 
+]) 
+And we can just use the same training loop! 
+ 
+optimizer = Momentum(learning_rate=0.01, momentum=0.99) 
+loss = SoftmaxCrossEntropy() 
+# Enable dropout and train (takes > 20 minutes on my laptop!) 
+dropout1.train = dropout2.train = True 
+loop(model, train_images, train_labels, loss, optimizer) 
+
+# Disable dropout and evaluate 
+dropout1.train = dropout2.train = False 
+loop(model, test_images, test_labels, loss) 
+Our deep model gets better than 92% accuracy on the test set, which is a nice improvement 
+from the simple logistic model. The MNIST website describes a variety of models that 
+outperform these. Many of them could be implemented using the machinery we’ve 
+developed so far but would take an extremely long time to train in our lists-as-tensors 
+framework. Some of the best models involve convolutional layers, which are important but 
+unfortunately quite out of scope for an introductory book on data science. 

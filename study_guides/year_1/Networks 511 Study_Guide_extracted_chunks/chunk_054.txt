@@ -1,0 +1,29 @@
+1.4.2 OSI LAYERS PROTOCOLS  
+There are some protocols that operate with these OSI model layers that we are going to discuss. 
+ 
+Advantages of OSI reference model: 
+
+ OSI model distinguishes well between the services, interfaces and protocols. 
+ Protocols of OSI model are very well hidden. 
+ Protocols can be replaced by new protocols as technology changes. 
+ Supports connection oriented services as well as connectionless service. 
+
+Drawbacks of OSI reference model: 
+ Model was devised before the invention of protocols. 
+ Fitting of protocols is tedious task. 
+ It is just used as a reference model. 
+ 
+Figure 15: OSI Protocol structure 
+
+1.5. ENCAPSULATION/DE-CAPSULATION  
+Encapsulation is a process to hide or protect a process from the possibility of outside interference or 
+misuse of the system while simplifying the use of the system itself, also makes one type of network 
+data packets to other data types. Encapsulation occurs when a protocol that is on the lower layer 
+receives data from the protocol that is at a higher layer and put the data into a data format that is 
+understood by the protocol. Access to the internal system so arranged through a set of interfaces. 
+Let’s use a letter example encapsulation process in the process of mail delivery, if a letter would be 
+sent but without the envelope, address and postage. The letter should have an identity in order to 
+get to the destination; if it does not have an identity then the letter will not be able to get to the 
+destination. Envelopes with address and stamp the same as the data encapsulation.
+
+Figure 16: Encapsulation/ Decapsulation 

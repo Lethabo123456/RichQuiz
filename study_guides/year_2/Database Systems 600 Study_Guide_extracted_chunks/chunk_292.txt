@@ -1,0 +1,21 @@
+e 
+P_CODE and P_DESCRIPT:  
+INSERT INTO PRODUCT(P_CODE, P_DESCRIPT) VALUES ('BRT-345','Titanium drill bit'); 
+Inserting Table Rows with a SELECT Subquery 
+Using a subquery with the INSERT command, it is possible to add multiple rows to a table, using 
+another table as the source of the data, at the same time. The syntax is:  
+INSERT INTO  
+target-table-name[(target-column-list)]  
+SELECT   
+source-column-list 
+FROM  
+ 
+source-table-name; 
+Note that the target column list is required if the source column list does not match all of the 
+attribute names and characteristics of the target table (including the order of the columns). 
+For example, assume you already have the PART table and you want to copy data from the 
+P_CODE, P_DESCRIPT, P_PRICE, and V_CODE columns of the PRODUCT table into it. You 
+must specify the target column list in the following INSERT command because the column names 
+of the target table are different: 
+INSERT INTO PART  
+(PART_CODE, PART_DESCRIPT, PART_PRICE, V_COD

@@ -1,0 +1,39 @@
+xis label 
+hovermode ='closest' # handles multiple points landing on the same vertical 
+) 
+ 
+fig = go.Figure(data=data, layout=layout) 
+pyo.plot(fig, filename='scatter2.html') 
+ 
+● scatter2.py plots the same points as scatter1, but adds a Layout layer which includes a title, axis labels, and fixes the 
+hover issue. Notice how we bundled both the data and the layout inside a Figure, and had plotly graph the figure as 
+HTML. 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+There’s a lot you can do in Plotly to customize the appearance of the graph. scatter3.py is the same as scatter2, except 
+we’ve added some style to the marker. We changed its color, size, shape, and added a line around it: 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+import numpy as np 
+ 
+np.random.seed(42) 
+random_x = np.random.randint(1,101,100) 
+random_y = np.random.randint(1,101,100) 
+ 
+data = [go.Scatter( 
+x = random_x, 
+ 
+y = random_y, mode = 
+'markers', 
+ 
+marker = dict(# change the marker style size = 12, 
+ 
+color = 'rgb(

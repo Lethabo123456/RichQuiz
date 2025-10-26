@@ -1,0 +1,31 @@
+3 Motion Planning & Pathfinding  
+ 
+3.1  Introduction 
+The ability to navigate through complex environments is fundamental to autonomous systems, 
+from industrial robots assembling components on factory floors to self-driving cars weaving 
+through urban traffic. At the heart of this capability lies motion planning and pathfinding—a rich 
+field of study that bridges theoretical computer science, robotics, and artificial intelligence. 
+Motion planning addresses the fundamental question: given a starting configuration and a 
+desired goal, how can an agent move through its environment while avoiding obstacles and 
+satisfying various constraints? This deceptively simple problem encompasses a vast landscape of 
+challenges, from the geometric complexities of high-dimensional configuration spaces to the real-
+time computational demands of dynamic environments. 
+The field has evolved significantly since its early foundations in the 1980s, when researchers first 
+formalised the piano mover's problem—determining whether a piano could be moved from one 
+room to another through a series of doorways. Today's motion planning algorithms must handle 
+far more sophisticated scenarios: humanoid robots navigating cluttered homes, surgical robots 
+operating within the confined spaces of the human body, and swarms of drones coordinating 
+their movements through three-dimensional airspace. 
+This chapter explores both the theoretical underpinnings and practical implementations of 
+motion planning systems. We'll examine classical approaches like potential fields and roadmap 
+
+methods, delve into sampling-based algorithms that have revolutionised the field, and investigate 
+how modern machine learning techniques are reshaping our approach to navigation problems. 
+Along the way, we'll discover how concepts from differential geometry, graph theory, and 
+optimisation theory converge to create elegant solutions to some of robotics' most challenging 
+problems. 
+
+Whether you're designing the next generation of autonomous vehicles or simply curious about 
+how robots think about movement, this exploration of motion planning will provide you with the 
+foundational knowledge and contemporary insights needed to understand this dynamic and 
+rapidly evolving field.

@@ -1,0 +1,36 @@
+hy is this interesting? You can tell if a number is odd or 
+even with modulus. All you need to do is divide any number by 2. If there's no 
+remainder then you know the number is even. If there is a remainder then the number 
+is odd. Here is some code to examine: 
+var result = 31 % 2; 
+if (result == 1)  
+{ 
+document.write("Odd number"); 
+} 
+else 
+{ 
+document.write("Even number"); 
+} 
+ 
+Although you have not done IF statements yet, you should be able to figure out what is 
+going on. First we test a number using the modulus operator. We then say IF 31 MOD 2 
+has a value of 1 then write "Odd number", ELSE 
+write "Even number". 
+ 
+3.4 JAVASCRIPT CONDITIONAL STATEMENTS (IF 
+STATEMENTS) 
+ 
+JavaScript is what is known as a sequential 
+programming language. This means that each and 
+ 
+Multimedia Resource 
+ 
+https://www.youtube.com/watc
+h?v=T81E3cSoN5E 
+
+ 
+42 
+ 
+THREE | THREE | JAVASCRIPT PROGRAMMING BASICS 
+every line of code is executed from top to bottom. Quite often, however, you do not 
+wan

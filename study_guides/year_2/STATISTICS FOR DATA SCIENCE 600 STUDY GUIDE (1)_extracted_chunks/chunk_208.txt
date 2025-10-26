@@ -1,0 +1,23 @@
+Under/Normal (that's 31.2% of 500), and we fill in the remaining boxes in the same way. 
+First, check the conditions: 
+ 
+• All the expected counts are greater than 5. 
+• Each observation is independent, and our population is very large (much more than 
+10 times of 500 people). 
+Next, carry out a goodness of fit test. We will set our null and alternative hypotheses: 
+
+P a g e  | 118 
+ 
+• H0: The 2009 BMI distribution is still correct. 
+• Ha: The 2009 BMI distribution is no longer correct (at least one of the proportions is 
+different now). 
+We can calculate our test statistic by hand or use Python: 
+observed = [102, 178, 186, 34] 
+expected = [156, 165.5, 147, 31.5] 
+chi_squared, p_value = stats.chisquare(f_obs=observed, f_exp=expected) 
+print(chi_squared, p_value)  # (30.1817679275599, 1.26374310311106e-06) 
+ 
+Our p-value is lower than .05; therefore, we may reject the null hypothesis in Favor of the fact 
+that the BMI trends today are different from what they were in 2009. 
+ 
+Chi-squ

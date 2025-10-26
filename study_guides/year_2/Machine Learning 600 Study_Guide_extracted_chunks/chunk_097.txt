@@ -1,0 +1,20 @@
+Pattern recognition, and some requires huge 
+amounts of sensor data 
+Medical Monitoring 
+constant updating of many variables, such as heart 
+rate, blood pressure, and so on 
+
+P a g e  | 62 
+ 
+Activation Function. The activation function is the processing that happens after the input is 
+passed into the neuron. The result of this function determines whether the value is passed to 
+the output axon and onto the next neuron in the network. Commonly, the sigmoid function 
+(see Figure 5.10) and the hyperbolic tangent are used as activation functions to calculate the 
+output. The Sigmoid function outputs only one of two values: 0 and 1. 
+ 
+ 
+                               Figure 5.10: Sigmoid Function (Sigmoid because of the S form) 
+ 
+Multilayer Perceptrons. The problem with single-layer perceptrons is that they are linearly 
+separable. The output is either one value or another. Multilayer perceptrons have one or 
+more layers between the input nodes and the eventual output nodes. Middle la

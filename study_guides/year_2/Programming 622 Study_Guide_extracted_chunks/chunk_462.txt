@@ -1,0 +1,127 @@
+k() << endl;   
+//Line 12  
+ 
+intQueue.pop();   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 13  
+cout << "Line 14: After the pop operation, the "<< "front element of intQueue: "  
+ 
+<< intQueue.front() << endl;    
+  
+  
+  
+  
+  
+//Line 14  
+ 
+cout << "Line 15: intQueue elements: ";   
+  
+  
+  
+  
+  
+//Line 15  
+ 
+while (!intQueue.empty())     
+  
+  
+  
+  
+  
+  
+//Line 16  
+ 
+{   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 17  
+ 
+cout << intQueue.front() << " ";   
+  
+  
+  
+  
+  
+//Line 18  
+ 
+intQueue.pop();   
+  
+  
+  
+  
+  
+  
+  
+//Line 19  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 20  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 21  
+ 
+return 0;   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 22  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 23  
+  
+Sample Run:  
+Line 11: The front element of intQueue: 26  
+Line 12: The last element of intQueue: 33  
+Line 14: After the pop operation, the front element of intQueue: 18  
+Line 15: intQueue elements: 18 50 33  
+The preceding output is self-explanatory.

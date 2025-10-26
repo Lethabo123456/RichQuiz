@@ -1,0 +1,27 @@
+rovides three pieces of information to identify the 
+exact nature of the error: 
+ 
+Error message . The same message that the browser would display for the 
+given error 
+ 
+URL . The file in which the error occurred 
+ 
+Line number . The line number in the given URL that caused the error 
+ 
+Here is the example to show how to extract this information 
+ 
+Figure 9.6 – How to extract onerror() information 
+ 
+You can display extracted information in whatever way you think it is better. 
+
+ 
+141 
+ 
+NINE | GLOSSARY OF TERMS 
+Syntax Error: an error in the syntax of a sequence of characters or tokens that is 
+intended to be written in a particular programming language.  
+Exception: an event, which occurs during the execution of a program, that disrupts the 
+normal flow of the program's instructions. 
+Logical Error: a bug in a program that causes it to operate incorrectly, but not to 
+terminate abnormally (or crash). A logic error produces unintended or undesired 
+output or other behaviour, altho

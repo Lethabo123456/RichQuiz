@@ -1,0 +1,64 @@
+: B 
+ 
+80. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+
+IP 621  
+ 
+   if (8 >= 7 || "Tom" == "Rose") { 
+ 
+       echo "Hello World"; 
+ 
+   } 
+ 
+?> 
+ 
+A. Hello World 
+B. Nothing Will Be Displayed 
+ANS: A 
+ 
+81. The PHP If Statement will only execute the code within it’s curly braces if the if condition is FALSE? 
+A. True 
+B. False 
+ANS: B 
+ 
+82. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   if (8 <= 7) { 
+ 
+       echo "Hello World"; 
+ 
+   } 
+ 
+   else { 
+ 
+       echo "Hello YouTube"; 
+ 
+   } 
+ 
+?> 
+ 
+A. Hello World 
+
+IP 621  
+B. Hello YouTube 
+C. Hello World Hello YouTube 
+D. Nothing Will Be Displayed 
+ANS: B 
+ 
+ 
+83. The PHP If Else Statement can execute the code within the if and else segments at the same time? 
+A. True 
+B. False 
+ANS: B 
+ 
+84. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $bookColor = "red"; 
+ 
+   $bookName = "The PHP Basics"; 
+ 
+ 
+   if

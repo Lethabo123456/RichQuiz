@@ -1,0 +1,22 @@
+, say queue, to all those vertices vk so that predCount[k] is 0. (Clearly, queue is 
+not empty because the graph has no cycles.)  
+3. while the queue is not empty  
+3.1 Remove the front element, u, of the queue.  
+3.2 Put u in the next available position, say topologicalOrder[topIndex], and increment topIndex.  
+
+413  
+  
+3.3 For all the immediate successors w of u,  
+3.3.1 Decrement the predecessor count of w by 1.  
+3.3.2 if the predecessor count of w is 0, add w to queue.  
+The graph G3 of Figure 10-7 has no cycles. The vertices of G3 in breadth-first topological ordering are as 
+follows:  
+Breadth First Topological order: 0 9 1 7 2 5 4 6 3 8 10  
+  
+Next, we illustrate the breadth-first topological ordering of the graph G3.  
+  
+After Steps 1 and 2 execute, the arrays predCount, topologicalOrder, and queue are as shown in Figure  
+10-18. (Notice that for simplicity, we show only the elements of the queue.)  
+  
+  
+FIGURE 10-18 Arrays predCount, topologicalOrder, and queue after Ste

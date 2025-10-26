@@ -1,0 +1,15 @@
+we copy list[4] into temp, a temporary 
+memory space—see Figure 8-5(c).  
+  
+Next, we copy list[3] into list[4], and then list[2] into list[3], as shown in Figure 8-5(d). After copying list[3] 
+into list[4] and list[2] into list[3], the list is as shown in Figure 8-5(e). Next we copy temp into list[2]. Figure 
+8-5(f) shows the resulting list.  
+   
+Now list[0]...list[4] is sorted and list[5]...list[7] is unsorted. We repeat this process on the resulting list by 
+moving the first element of the unsorted list into the sorted list in the proper place.  
+  
+From this discussion, we see that during the sorting phase the array containing the list is divided into two 
+sublists, upper and lower. Elements in the upper sublist are sorted; elements in the lower sublist are to 
+be moved to the upper sublist in their proper places one at a time. We use an index—say, 
+firstOutOfOrder—to point to the first element in the lower sublist; that is, firstOutOfOrder gives the index 
+of the first element i

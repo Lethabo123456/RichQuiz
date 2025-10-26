@@ -1,0 +1,15 @@
+n archive and then compresses and encrypts the archive. 
+This enables the APT to hide the contents of the archive from technologies that include deep 
+packet inspection and data loss prevention (DLP) capabilities at the enterprise boundary. 
+ 
+9. Exfiltrate data from victim systems. The APT uses a variety of tools and protocols to 
+surreptitiously transfer data from the target systems. 
+ 
+10. Maintain persistent presence. An APT seeks to attain what its controllers have tasked it to do: 
+maintain access to the target environment. It is not uncommon for the APT to sit undetected 
+in an enterprise network for lengthy periods of time before being activated. 
+ 
+As Figure 15.4 indicates, threat intelligence enables a security team to become aware of a threat well 
+before the point of typical notification, which is often after the real damage is done. Even if an early 
+opportunity is lost, threat intelligence reduces the time it takes to discover that an attack has already 
+succeeded and the

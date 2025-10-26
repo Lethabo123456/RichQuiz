@@ -1,0 +1,192 @@
+In this second iteration, the algorithm still found the best path. 
+Now let’s build this visualizer:  
+
+import pygame 
+from queue import PriorityQueue 
+ 
+# ----- Configuration ----- 
+WIDTH = 500 
+ROWS = 25 
+WIN = pygame.display.set_mode((WIDTH, WIDTH)) 
+pygame.display.set_caption("Simple A* Visualization") 
+ 
+# ----- Colors ----- 
+WHITE = (255, 255, 255) 
+BLACK = (0, 0, 0) 
+GREEN = (0, 255, 0) 
+RED = (255, 0, 0) 
+ORANGE = (255, 165, 0) 
+TURQUOISE = (64, 224, 208) 
+PURPLE = (128, 0, 128) 
+ 
+# ----- Spot Class ----- 
+class Spot: 
+    def __init__(self, row, col, size): 
+        self.row = row 
+        self.col = col 
+        self.size = size 
+        self.color = WHITE 
+        self.neighbors = [] 
+ 
+
+    def pos(self): 
+        return self.row, self.col 
+ 
+    def draw(self, win): 
+        pygame.draw.rect( 
+            win, 
+            self.color, 
+            (self.col * self.size, self.row * self.size, self.size, self.size) 
+        ) 
+ 
+    def update_neighbors(self, grid): 
+        self.neighbors = [ 
+            grid[r][c] 
+            for r, c in [ 
+                (self.row + 1, self.col), 
+                (self.row - 1, self.col), 
+                (self.row, self.col + 1), 
+                (self.row, self.col - 1) 
+            ] 
+            if 0 <= r < ROWS and 0 <= c < ROWS and grid[r][c].color != BLACK 
+        ] 
+ 
+    def __eq__(self, other): 
+        return isinstance(other, Spot) and self.row == other.row and self.col == other.col 
+ 
+    def __hash__(self): 
+        return hash((self.row, self.col)) 
+ 
+
+# ----- Heuristic ----- 
+def h(a, b): 
+    return abs(a[0] - b[0]) + abs(a[1] - b[1]) 
+ 
+# ----- Reconstruct Path ----- 
+def reconstruct(came_from, current): 
+    while current in came_from: 
+        current = came_from[current] 
+        if current.color not in (ORANGE, TURQUOISE): 
+            current.color = PURPLE 
+ 
+# ----- A* Algorithm ----- 
+def astar(draw, grid, start, end): 
+    count = 0 
+    open_set = PriorityQueue() 
+    open_set.put((0, count, start)) 
+    came_from = {} 
+ 
+    g = {spot: float("inf") for row in grid for spot in row} 
+    g[start] = 0 
+ 
+    f = {spot: float("inf") for row in grid for spot in row} 
+    f[start] = h(start.pos(), end.pos()) 
+ 
+    open_set_hash = {start} 
+ 
+    while not open_set.empty(): 
+        current = open_set.get()[2] 
+        open_set_hash.remove(current) 
+
+        if current == end: 
+            reconstruct(came_from, end) 
+            return True 
+ 
+        for neighbor in current.neighbors: 
+            temp_g = g[current] + 1 
+ 
+            if temp_g < g[neighbor]: 
+                came_from[neighbor] = current 
+                g[neighbor] = temp_g 
+                f[neighbor] = temp_g + h(neighbor.pos(), end.pos()) 
+                if neighbor not in open_set_hash: 
+                    count += 1 
+                    open_set.put((f[neighbor], count, neighbor)) 
+                    open_set_hash.add(neighbor) 
+                    if neighbor.color not in (ORANGE, TURQUOISE): 
+                        neighbor.color = GREEN 
+ 
+        draw() 
+        if current != start: 
+            current.color = RED 
+ 
+    return False 
+ 
+# ----- Utility Functions ----- 
+def make_grid(): 
+    return [[Spot(i, j, WIDTH // ROWS) for j in range(ROWS)] for i in range(ROWS)] 
+def draw(win, grid): 
+    win.fill(WHITE) 
+
+    for row in grid: 
+        for row in grid: 
+        for spot in row: 
+            spot.draw(win) 
+    pygame.display.update() 
+ 
+def get_clicked(pos): 
+    gap = WIDTH // ROWS 
+    x, y = pos 
+    return y // gap, x // gap 
+ 
+# ----- Main Loop ----- 
+def main(win): 
+    grid = make_grid() 
+    start = None 
+    end = None 
+    clock = pygame.time.Clock() 
+    run = True 
+ 
+    while run: 
+        clock.tick(60) 
+        draw(win, grid) 
+ 
+        for e in pygame.event.get(): 
+            if e.type == pygame.QUIT: 
+                run = False 
+ 
+            if pygame.mouse.get_pressed()[0]:  # Left click 
+                r, c = get_clicked(pygame.mouse.get_pos()) 
+                spot = grid[r][c] 
+
+                if not start: 
+                    start = spot 
+                    spot.color = ORANGE 
+                elif not end and spot != start: 
+                    end = spot 
+                    spot.color = TURQUOISE 
+                elif spot != end and spot != start: 
+                    spot.color = BLACK 
+ 
+            elif pygame.mouse.get_pressed()[2]:  # Right click 
+                r, c = get_clicked(pygame.mouse.get_pos()) 
+                spot = grid[r][c] 
+                spot.color = WHITE 
+                if spot == start: 
+                    start = None 
+                elif spot == end: 
+                    end = None 
+ 
+            if e.type == pygame.KEYDOWN: 
+                if e.key == pygame.K_SPACE and start and end: 
+                    for row in grid: 
+                        for spot in row: 
+                            spot.update_neighbors(grid) 
+                    astar(lambda: draw(win, grid), grid, start, end) 
+ 
+                if e.key == pygame.K_c: 
+                    grid = make_grid() 
+                    start, end = None, None 
+                    draw(win, grid) 
+
+ 
+    pygame.quit()
+
+# ----- Run Program ----- 
+main(WIN) 
+The controls are as follows:  
+Left mouse-click: starting position, goal and obstacles (first click = starting position, second click 
+= goal)  
+Right mouse-click: clear objects 
+c (Keyboard): clear field  
+spacebar: start

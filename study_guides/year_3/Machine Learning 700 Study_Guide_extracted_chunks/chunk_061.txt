@@ -1,0 +1,28 @@
+2.5 Applications of PCA 
+Applying PCA to the Cancer Dataset for Visualization 
+One of the most common applications of PCA is to visualize high-dimensional datasets. As discussed in 
+Chapter 1, visualizing data with more than two features can be challenging. For the Iris dataset, we could 
+use a pair plot (Figure 1-3 in Chapter 1) to show combinations of two features for a partial view of the 
+data. However, for the Breast Cancer dataset, a pair plot becomes unmanageable because it has 30 
+features, resulting in 420 scatter plots (30 * 14). Analyzing all of these plots in detail would be impossible. 
+A simpler visualization method is to create histograms for each feature, comparing the two classes: 
+benign and malignant cancers. 
+
+Before applying PCA, we scale the data using the StandardScaler to ensure each feature has unit 
+variance. Applying the PCA transformation is as straightforward as any other preprocessing step. We start 
+by creating a PCA object, fitting it to the data to identify the principal components, and then applying the 
+rotation and dimensionality reduction by calling the transform method. By default, PCA rotates (and 
+shifts) the data without reducing its dimensionality. To reduce the dimensionality, we must specify how 
+many components to retain when initializing the PCA object: 
+
+Eigenfaces for feature extraction  
+Another application of PCA that we mentioned earlier is feature extraction. The idea behind feature 
+extraction is that it is possible to find a representation of your data that is better suited to analysis than 
+the raw representation you were given. A great example of an application where feature extraction is 
+helpful is with images. Images are made up of pixels, usually stored as red, green, and blue (RGB) 
+intensities. Objects in images are usually made up of thousands of pixels, and only together are they 
+meaningful. We will give a very simple application of feature extraction on images using PCA, by working 
+with face images from the Labeled Faces in the Wild dataset. This dataset contains face images of 
+celebrities downloaded from the Internet, and it includes faces of politicians, singers, actors, and athletes 
+from the early 2000s. We use gray- scale versions of these images, and scale them down for faster 
+processing.

@@ -1,0 +1,66 @@
+Option             Description 
+-a                 Displays current ARP entries by interrogating the current protocol data. If 
+                   inet_addr is speciﬁed, the IP and physical addresses for only the speciﬁed 
+                   computer are displayed. If more than one network interface uses ARP, entries 
+                   for each ARP table are displayed. 
+-g                 Same as -a. 
+-v                 Displays current ARP entries in verbose mode. All invalid entries and entries 
+                   on the loopback interface will be shown. Inet_addr 
+                   Speciﬁes an Internet address. 
+-N                 Displays the ARP entries for the network interface speciﬁed by if_addr. 
+-d                 Deletes the host speciﬁed by inet_addr. 
+                   inet_addr may be wildcarded with * to delete all hosts. 
+-s                 Adds the host and associates the Internet address inet_addr with the 
+                   physical address eth_addr. The physical address is given as six hexadecimal 
+                   bytes separated by hyphens. The entry is permanent. 
+Eth_addr           Speciﬁes a physical address. 
+If_addr            If present, speciﬁes the Internet address of the interface whose address 
+                   translation table should be modiﬁed. If not present, the ﬁrst applicable interface 
+                   will be used. 
+
+TABLE 5.2 arp options 
+
+To display the entire current ARP table, use the arp command with the –a switch like so to show 
+you the MAC address lookup table: 
+
+Figure 5.18: entire arp output (Lammle, 2022) 
+
+By the way, the –g switch will produce the same result. 
+Note 
+ 
+Now, from this output, you can tell which MAC address is assigned to which IP address. Then, for 
+static assignments, you can tell which workstation has a speciﬁc IP address and if it’s indeed 
+supposed to have that address by examining your network documentation—you do have that 
+record, right? 
+
+For DHCP-assigned addresses, you can begin to uncover problems stemming from multiple nDHCP 
+scopes or servers doling out identical addresses and other common conﬁguration issues. And 
+remember that under normal circumstances, you shouldn’t see IP addresses in the ARP table that 
+aren’t members of the same IP subnet as the interface. 
+If the machine has more than one network card (as may happen in Windows servers and on 
+laptops with both Ethernet and wireless cards), each interface will be listed separately. 
+It’s good to know that in addition to displaying the ARP table, you can use the arp utility to 
+manipulate the table itself. To add static entries to the ARP table, you use the arp command with 
+the –s switch. These static entries will stay in the ARP table until the machine is rebooted. A static 
+entry essentially hardwires a speciﬁc IP address to a speciﬁc MAC address so that when a packet 
+needs to be sent to that IP address, it will automatically be sent to that MAC address. Here’s the 
+syntax: 
+
+arp –s [IP Address] [MAC Address] 
+
+Simply replace the [IP Address] and [MAC Address] sections with the appropriate entries, like so: 
+arp –s 204.153.163.5 00–a0–c0–ab–c3–11 
+
+Now, take a look at your new ARP table by using the arp –a command. You should see something 
+like this: 
+ 
+Internet Address    Physical Address     Type 
+204.153.163.5       00–a0–c0–ab–c3–11    static 
+ 
+Finally, if you want to delete entries from the ARP table, you can either wait until the dynamic 
+entries time out or use the –d switch with the IP address of the static entry you’d like to delete, 
+like this:  arp –d 204.153.163.5 
+Doing so eﬀectively deletes the entry from the ARP table in memory. 
+
+The arp utility doesn’t conﬁrm successful additions or deletions (use arp -a or arp -g for that), but 
+it will give you an error message if you use incorrect syntax.

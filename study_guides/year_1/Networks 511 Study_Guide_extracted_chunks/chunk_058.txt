@@ -1,0 +1,25 @@
+4. Then the packet-packet was passed to the Data Link layer (layer 2) and the packages were 
+arranged and then be wrapped again into the individual frames, one example of this process is to 
+provide the MAC address of destination and source MAC address which is then used that 
+information to make a trailer. 
+
+Because a packet can be delivered via many devices and routers, this is where the role of MAC 
+addresses in packets sent between a router and other routers. Then be transmitted to the media. All 
+the information added by each layer before (as an actual file requests) must fit into a size of 46-1500 
+bytes of data fields in the Ethernet frame. The data link layer is responsible for sending the frame 
+according to the topology used. L2PDU formed in this process. 
+
+5. Finally, the data arrived at the Physical layer (layer 1), information will be taken from the source to 
+the destination. Since the physical layer frame is not known, he would pass that information into the 
+form of bits. The addition of the header does not occur at this layer. The Physical layer is associated 
+with the hardware. Finally, the bits 
+
+They'll be synchronized and then converted into electrical signals in the form of high and low voltage 
+and then transmitted through the media. Example of the cable to the destination, it is in accordance 
+with the characteristics that determine the physical layer of a layer sequence of events in which the 
+bit stream moving through a physical medium. 
+
+At each layer there is LxPDU (Layer N Protocol Data Unit), which is a form of bytes in the header-
+trailer on the data. PDU is the processes on each layer of the OSI model. At each layer is also formed 
+a new formation, the layer 2 PDU including the header and trailer is called the frame formation. In 
+the third layer is called packet (packet). While in layer 4 are called segments (segments). 

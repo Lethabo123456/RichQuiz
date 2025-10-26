@@ -1,0 +1,20 @@
+$area variable. To get the value of the radius squared, the script uses the built-in pow() function, 
+which takes a base number, base , followed by an exponent, exp , and returns base to the power of 
+exp . Finally, the script outputs the results of its calculations, using the string concatenation 
+operator ( . ) to join strings together.  
+  
+2.14 Unit Summary In this chapter you learnt the 
+following concepts:  
+  
+
+34  
+Variables: What they are, how you create them, and how to name them  
+The concept of data types, including the types available in PHP  
+Loose typing in PHP; a feature that gives you a lot of flexibility with variables and values  
+How to test the type of a variable with gettype() , and how to change types with settype() 
+and casting  
+The concepts of operators, operands, and expressions  
+The most common operators used in PHP  
+How to create constants that contain non - changing values  
+  
+With this knowledge, you are ready to move on and explore the next imp

@@ -1,0 +1,33 @@
+te rows, you use the DELETE statement. If you 
+add a   
+WHERE clause, you can choose which row or rows to delete; otherwise all the data in the table are 
+deleted (though the table itself remains). Here is an example:   
+   
+mysql > DELETE FROM fruit WHERE id = 2;   
+Query OK, 1 row affected (0.02 sec)   
+   
+mysql > SELECT * from fruit;   
+   
++----+--------+--------+   
+| id | name | color |   
++----+--------+--------+   
+| 1 | banana | yellow |   
+| 3 | plum | purple |   
++----+--------+--------+   
+2 rows in set (0.00 sec)   
+   
+4.16 Deleting Tables From Databases Using The DROP TABLE Statement   
+To delete a table entirely, use the DROP TABLE statement. Similarly, you can delete an entire 
+database with DROP DATABASE . First, here is how to use DROP TABLE:   
+   
+mysql > SHOW TABLES;   
++----------------------+   
+| Tables_in_mydatabase |   
++----------------------+   
+| fruit |   
++----------------------+   
+1 row in set (0.00 sec)   
+   
+mysql > DROP TABLE fruit;   
+
+71

@@ -1,0 +1,31 @@
+2.1 Boolean Functions 
+Boolean algebra provides the operations and the rules for working with the 
+set {0, 1}. Electronic and optical switches can be studied using this set and 
+the rules of Boolean algebra. The three operations in Boolean algebra that 
+we will use most are complementation, the Boolean sum, and the Boolean 
+product. The complement of an element, denoted with a bar, is defined by 
+0̅  =  1 and 1̅  =  0. The Boolean sum, denoted by + or by 𝑂𝑅, has the 
+following values: 
+1 +  1 =  1,       1 +  0 =  1,        0 +  1 =  1,       0 +  0 =  0. 
+ 
+LEARNING OUTCOMES 
+ 
+1. Demonstrate ability to use, manipulate, and analyse boolean 
+expressions and functions. 
+2.  Demonstrate an understanding of how to use, manipulate, and analyse 
+propositional & predicate logic statements. 
+3.  Demonstrate the ability to construct and analyse simple finite state 
+automata. 
+
+The Boolean product, denoted by ・ or by AND, has the following values: 
+1 ∙ 1 =  1,      1 ∙ 0 =  0,
+0 ∙ 1 =  0,
+0 ∙ 0 =  0. 
+
+When there is no danger of confusion, the symbol ・ can be deleted, just as 
+in writing algebraic products. Unless parentheses are used, the rules of 
+precedence for Boolean operators are: first, all complements are computed, 
+followed by all Boolean products, followed by all Boolean sums.  
+ 
+The operations +, ⋅, and  − are called Boolean sum, Boolean product and 
+complement respectively. This is illustrated in the following example.

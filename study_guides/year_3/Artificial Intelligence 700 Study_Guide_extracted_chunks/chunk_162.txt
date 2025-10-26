@@ -1,0 +1,45 @@
+Evaluating Predicate Expressions: Example 
+Consider the following logical expression in predicate logic: 
+P(x,y) -> (E z)(P(x,z) AND P(z,y)) 
+We can read this as "if P(x,y) then there exists z such that P(x,z) and 
+P(z,y)". (Assume that x and y are universally quantified.) 
+ 
+If we make the domain of P the set of real numbers, assign the values 5.1 
+and 4.2 to the free variables x and y, and interpret P to mean "greater 
+than", then we can evaluate the expression as follows: 
+ 
+P(x,y) = P(5.1,4.2) 
+= 5.1 > 4.2 
+= true 
+
+If we make the domain of P the set of integers, assign the values 5 and 4 to 
+the free variables x and y, and interpret P to mean "greater than", then we 
+can evaluate the expression as follows: 
+ 
+P(x,y) = P(5,4) 
+= 5 > 4 
+= true 
+ 
+(E z) (P(x,z) AND P(z,y)) 
+= (E z)((5 > z) AND (z > 4)) 
+= false 
+ 
+true -> false = false 
+ 
+Summary of evaluation: 
+(1) The truth of many statements with unbound variables is indeterminate: 
+Some statements (e.g. P(x) OR NOT P(x)) may be true regardless of 
+bindings (and others may be false, regardless), but in general we 
+need bindings. 
+ 
+(2) The truth of many statements depends on the interpretation of predicates. 
+Again, some statements may be true or false regardless, but in 
+general we need interpretations. 
+ 
+(3) As we will see below, some statements under some interpretations and 
+proof systems are true but can't be proven.
+ 
+(E z) (P(x,z) AND P(z,y)) 
+= (E z)((5.1 >z) AND (z > 4.2))  
+= true (for z=4.8) 
+true -> true = true 

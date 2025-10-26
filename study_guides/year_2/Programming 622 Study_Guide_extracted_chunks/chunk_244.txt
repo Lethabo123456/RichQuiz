@@ -1,0 +1,50 @@
+pointed to by current.  
+Case 4:   
+The list is not empty, but the item to be deleted is not in the list.  
+  
+After deleting a node, count is decremented by 1. The definition of the function deleteNode is as follows:  
+  
+template <class Type>  
+void orderedLinkedList<Type>::deleteNode(const Type& deleteItem)  
+{  
+nodeType<Type> *current;      
+  
+//pointer to traverse the list 
+nodeType<Type> *trailCurrent;   
+  
+  
+//pointer just before current bool 
+found;  
+  
+ 
+if (first == NULL)   
+  
+  
+  
+  
+//Case 1  
+cout << "Cannot delete from an empty list." << endl;  
+else  
+
+121  
+  
+{  
+current = first;  
+found = false;  
+  
+while (current != NULL && !found)    //search the list if 
+(current->info >= deleteItem) found = true;  
+else  
+{  
+trailCurrent = current;  
+current = current->link;  
+}  
+  
+ 
+if (current == NULL)    
+  
+  
+//Case 4  
+cout << "The item to be deleted is not in the list."<< endl;  
+else if (current->info == deleteItem)   //the item to be  
+//deleted is in the lis

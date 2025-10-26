@@ -1,0 +1,51 @@
+To write a Client Program:  
+Setp 1 : Create the Client Socket Connection.  
+Step 2 : Acquire read and write streams for the socket.  
+Step 3 : Use the streams according to the server.s protocol.   
+Step 4 : Close the streams.  
+Step 5 : Close the socket.  
+  
+import java.io.* import 
+java.net.*;  
+class TCPClient  
+{   
+  public static void main (String args[ ])throws IOException  
+  {  
+Socket socket;  
+BufferedReader in;  
+PrintWriter out; 
+String request;  
+socket = new Socket (“Vandana”, 8001); out = new PrintWriter (new OutputStreamWriter (Socket.getInputStream( )));  
+System.out.println (“Server says :” +in.readLine( ));  
+DataInputStream i = new DataInputStream(System.in);  
+System.out.print (“Client can Request for Date or quit :”);  
+request = i.readLine( ); out.println 
+(request);  
+out.flush( );  
+System.out.println (“server responds:” + in.readLine( )); 
+in.close( ). out.close( ); socket.close( );  
+} } 
+
+2.3.2 Datagram packet  
+The java.net package provides two classes namely, DatagramPacket and DatagramSocket through which 
+you can communicate with remote systems. A UDP Datagram is encapsulated in an instance of the class 
+DatagramPacket. The DatagramPacket object is the container for the data while the DatagramSocket is 
+used to send or receive the datagram packets. The class DatagramPacket defines two constructors which 
+allow you to create datagram packet. The first constructor is used for receiving data over a datagram 
+socket. DatagramPacket (byte buffer[ ], int size) The second constructor is used for transmitting 
+datagrams. This constructor requires the destination machine.s address and port number from the buffer 
+and the size parameters. DatagramPacket (byte buffer, int size, InetAddress destination, int port). Other 
+methods defined in the class DatagramPacket are (Table 2.6).  
+  
+Table 2.6  
+  
+DatagramPacket class does not provide the mechanism of sending and receiving datagrams. The 
+companion class DatagramSocket provides this functionality  
+  
+Table 2.7.  
+  
+2.3.3 Constructor Description  
+DatagramSocket( ) throws - This constructor is used to create a socket at an unused The 
+important methods are shown in Table 12.8.  
+  
+Table 12.8.  

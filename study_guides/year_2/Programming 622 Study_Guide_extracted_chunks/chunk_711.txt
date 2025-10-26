@@ -1,0 +1,39 @@
+ersal at the root node  
+2. v = 0;  
+3. if (current is NULL) the binary tree is empty  
+4. if (current is not NULL)  
+a. push current into stack;  
+b. push 1 into stack;  
+c. current = current->llink;  
+d. while (stack is not empty)  
+if (current is not NULL and v is 0)  
+{  
+
+350  
+  
+push current and 1 into stack;  
+current = current->llink;  
+}  
+else  
+{  
+pop stack into current and v;  
+if (v == 1)  
+{  
+push current and 2 into stack; current 
+= current->rlink;  
+v = 0;  
+}  
+else  
+visit current;  
+}  
+  
+We use two (parallel) stacks: one to save a pointer to a node and another to save the integer value (1 or 
+2) associated with this pointer. We leave it as an exercise for you write the definition of a C++ function to 
+implement the preceding postorder traversal algorithm.  
+  
+ 
+9.6  
+Binary Tree Traversal and Functions as Parameters  
+  
+Suppose that you have stored employee data in a binary search tree, and at the end of the year pay 
+increases or bonuses are to be awarded to

@@ -1,0 +1,16 @@
+ted that we would discuss the 
+implementation of priority queues after describing heapsort. For simplicity, we assume that the priority 
+of the queue elements is assigned using the relational operators.  
+  
+In a heap, the largest element of the list is always the first element of the list. After removing the largest 
+element of the list, the function heapify restores the heap in the list. To ensure that the largest element 
+of the priority queue is always the first element of the queue, we can implement priority queues as heaps. 
+We can write algorithms similar to the ones used in the function heapify to insert an element in the priority 
+queue (addQueue operation), and remove an element from the queue (deleteQueue operation). The next 
+two sections describe these algorithms.  
+  
+8.10.1 Insert An Element In The Priority Queue  
+  
+Assuming the priority queue is implemented as a heap, we perform the following steps:  
+  
+1. Insert the new element in the first available position in the

@@ -1,0 +1,27 @@
+e the following command: 
+ALTER TABLE PRODUCT  
+MODIFY (P_PRICE DECIMAL(9,2)); 
+       Adding a Column 
+You can alter an existing table by adding one or more columns. In the following example, you add     
+the column named P_SALECODE to the PRODUCT table, as follows: 
+ALTER TABLE PRODUCT  
+ADD (P_SALECODE CHAR(1)); 
+When adding a column, be careful not to include the NOT NULL clause for the new column. Doing 
+so will cause an error message; if you add a new column to a table that already has rows, the existing 
+rows will default to a value of null for the new column. 
+       Adding Primary Key, Foreign Key, and Check Constraints 
+When you create a new table based on another table, the new table does not include integrity rules 
+from the old table. In particular, there is no primary key. To define the primary key, foreign key 
+and check constraints for the new PART table, use the following commands:  
+ 
+
+ 
+118 
+Example 1 
+ALTER TABLE  
+PART  
+ADD  
+ 
+ 
+PRIMARY KEY (PART_CODE); 
+Example

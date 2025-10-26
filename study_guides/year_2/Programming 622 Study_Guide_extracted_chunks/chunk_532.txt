@@ -1,0 +1,17 @@
+ist of length n, on average, a binary search 
+makes 2log2n – 3 key comparisons. In the case of an unsuccessful search, it can be shown that for a list of 
+length n, a binary search makes approximately 2log2(n+1) key comparisons.  
+  
+Now that we know how to effectively search an ordered list stored in an array, let us discuss how to insert 
+an item into an ordered list.  
+  
+ 
+7.1.4  Insertion into an Ordered List  
+  
+Suppose that you have an ordered list and want to insert an item in the list. After insertion, the resulting 
+list must also be ordered. Chapter 3 described how to insert an item into an ordered linked list. This section 
+describes how to insert an item into an ordered list stored in an array.  
+  
+To store the item in the ordered list, first we must find the place in the list where the item is to be inserted. 
+Then we slide the list elements one array position down to make room for the item to be inserted, and 
+then we insert the item. Because the list is sorted and sto

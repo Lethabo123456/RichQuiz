@@ -1,0 +1,21 @@
+3.9.2 Spanning Tree Protocol Failure 
+The primary function of the spanning-tree algorithm (STA) is to cut loops that redundant links create 
+in bridge networks. The STP operates at Layer 2 of the Open System Interconnection (OSI) model. By 
+means of bridge protocol data units (BPDUs) that exchange between bridges, the STP elects the 
+ports that eventually forward or block traffic. This protocol can fail in some specific cases, and 
+troubleshooting the resulting situation can be very difficult, which depends on the design of the 
+ 
+network. In this particular area, you perform the most important part of the troubleshooting before 
+the problem occurs. 
+A failure in the STA generally leads to a bridging loop. Most customers that call Cisco Technical 
+Support for spanning tree problems suspect a bug, but a bug is seldom the cause. Even if the 
+software is the problem, a bridging loop in an STP environment still comes from a port that should 
+block, but instead forwards traffic. 
+
+3.9.3 Spanning Tree Convergence 
+Refer to the Spanning Tree Flash animation to see an example that explains how the Spanning Tree 
+initially converges. The example also explains why a blocked port goes into the forwarding mode 
+because of an excessive loss of BPDUs, resulting in STA failure. 
+The rest of this document lists the different situations that can cause the STA to fail. Most of these 
+failures relate to a massive loss of BPDUs. The loss causes blocked ports to transition to forwarding 
+mode. 

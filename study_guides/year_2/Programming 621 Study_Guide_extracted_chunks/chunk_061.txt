@@ -1,0 +1,25 @@
+2.3.3. Input (Read) Statement 
+ 
+When the computer gets the data from the keyboard, the user is said to be acting 
+interactively. Putting data into variables from the standard input device is 
+accomplished via the use of cin and the operator >>. The syntax of cin together with 
+>> is: 
+ 
+This is called an input (read) statement. In C++, >> is called the stream extraction 
+operator. 
+ 
+The C++ program in Example 2-18 illustrates how to read strings and numeric data. 
+The preceding program works as follows: The statements in Lines 6 to 9 declare the 
+variables firstName and lastName of type string, age of type int, and weight of type 
+double. The statement in Lines 10, 11, and 12 is an output statement and tells the user 
+what to do. (Such output statements are called prompt lines.)  
+As shown in the sample run, the input to the program is: 
+ 
+ Sheila Mann 23 120.5 
+ 
+The statement in Line 13 first reads and stores the string Sheila into the variable 
+firstName and then skips the space after Sheila and reads and stores the string Mann 
+into the variable lastName. Next, the statement in Line 14 first skips the blank after 
+Mann and reads and stores 23 into the variable age and then skips the blank after 23  
+and reads and stores 120.5 into the variable weight. The statements in Lines 15, 16, 
+17, and 18 produce the third, fourth, and fifth lines of the sample run. 

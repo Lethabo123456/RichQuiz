@@ -1,0 +1,18 @@
+Ethernet itself is a shared media, so there are rules for sending packets to avoid conflicts and 
+protect data integrity. Nodes on an Ethernet network send packets when they determine the 
+network is not in use. It is possible that two nodes at different locations could try to send data at 
+the same time. When both PCs are transferring a packet to the network at the same time, a 
+collision will result. Both packets are retransmitted, adding to the traffic problem. Minimizing 
+collisions is a crucial element in the design and operation of networks. Increased collisions are 
+often the result of too many users or too much traffic on the network, which results in a great deal 
+of contention for network bandwidth. This can slow the performance of the network from the 
+user’s point of view. Segmenting, where a network is divided into different pieces joined together 
+logically with switches or routers, reduces congestion in an overcrowded network by eliminating 
+the shared collision domain. Collision rates measure the percentage of packets that are collisions. Some collisions are 
+inevitable, with less than 10 percent common in well-running networks. 
+
+The Factors Affecting Network Efficiency 
+ Amount of traffic 
+ Number of nodes 
+ Size of packets 
+ Network diameter 

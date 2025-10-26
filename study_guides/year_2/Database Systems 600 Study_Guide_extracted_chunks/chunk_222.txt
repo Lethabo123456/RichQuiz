@@ -1,0 +1,16 @@
+must be independent of each 
+other.  
+2. No row may contain two or more multivalued facts about an entity. 
+ 
+3.4 De-normalization 
+ 
+It is important to remember that the optimal relational database implementation requires that all 
+tables be at least in 3NF. Furthermore, good database design also considers processing (or 
+reporting) requirements and processing speed. The problem with normalization is that as tables are 
+decomposed to conform to normalization requirements, the number of database tables expands. 
+Joining a large number of tables takes additional input/output (I/O) operations and processing logic, 
+thereby reducing system speed. Most relational database systems can handle joins very efficiently. 
+However, rare and occasional circumstances may allow require degree of denormalization, so 
+processing speed can be increased.  
+Keep in mind that the advantage of higher processing speed must be carefully weighed against the 
+disadvantage of data anomalies. On the other hand, s

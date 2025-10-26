@@ -1,0 +1,39 @@
+4. Call the three methods in the onCreate method. 
+After you have completed coding the navigation bar, you have to code the activity 
+so that it displays the current preference. Create a method called initSettings and refer 
+to the code in Listing 5.1 to get it to properly configure the activity at startup. Be sure to call 
+initSettings(); in onCreate. The initSettings method gets the values stored 
+in SharedPreferences to set the RadioButtons to the value that the user checks. 
+
+▪ Lines 2–5—A string variable is declared, and the value for the field to sort contacts by is retrieved 
+from SharedPreferences. The getSharedPreferences method is used to get the SharedPreferences 
+object because there is no need to have multiple SharedPreferences objects in this app. The 
+SharedPreference file is opened as a private object. The getString method is called on the 
+SharedPreference object to retrieve the string value associated with the sortfield key. If there is no 
+value stored for that key, the default value of contactname is assigned to the variable. The next line  
+does the same thing for the preferred sort order. 
+
+▪ Lines 7–9 — A reference to each radio button in the sort field RadioGroup is assigned to a variable. 
+▪ Lines 10–18 — The value retrieved for the preferred sort field is evaluated to determine which 
+RadioButton should be set as checked. 
+▪ Lines 20–27 — The same operations 
+are performed to set the sort order to the order preferred by the user. 
+The next step is to create a method to store the selected user preference for each 
+option. Two methods are required—one for each RadioGroup. When the user presses a RadioButton in 
+one of the groups, the method determines which RadioButton was pressed and then the value associated 
+with that RadioButton is saved in SharedPreferences. Refer to Listing 5.2 
+for the code for these methods. 
+
+Much of the code in these two methods has already been discussed. The only new code is that used 
+to save the selected preference. Examine the listing to find the getSharedPreferences method. This 
+method gets a reference to the SharedPreferences object using private mode. It then sends the 
+message edit() to the SharedPreferences object to open it for editing. Next, the message putString is 
+sent to the editable SharedPreferences object to save the value. The first parameter in the putString 
+method is the key, and the second is the value to be saved. Finally, the message apply() is sent to the 
+changed SharedPreferences object to make the changes persist. 
+
+Add calls to these methods in the onCreate method and then run and test the Settings activity. You 
+should select a sort field value and a sort order value. Navigate to another activity and then navigate 
+back to the Settings activity. If the values remain as you selected them, the activity is completed. These 
+values stored in the SharedPreferences object are used in next Chapter, “Lists in Android: Navigation 
+and Information Display,” to present a sorted list of contacts for the user. 

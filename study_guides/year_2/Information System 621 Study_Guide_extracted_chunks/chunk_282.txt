@@ -1,0 +1,22 @@
+cluding the 
+following: 
+ Performing common computer hardware functions. 
+ Providing a user interface and input/output management. 
+ Providing a degree of hardware independence. 
+ Managing system memory. 
+ Managing processing tasks. 
+ Sometimes providing networking capability. 
+ Controlling access to system resources. 
+ managing files 
+ 
+ 
+The kernel, as its name suggests, is the heart of the OS and controls its most critical processes. 
+The kernel ties all of the OS components together and regulates other programs. For a really 
+gentle introduction on how to write an operating system, head to the University of Cambridge 
+Computer Laboratory at www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os. The tutorial will 
+show you how to write a simple kernel for the Rasberry Pi computer. 
+ 
+Common Hardware Functions 
+All applications must perform certain hardware-related tasks, such as the following: 
+ Get input from the keyboard or another input device. 
+ Retrieve data from discs.

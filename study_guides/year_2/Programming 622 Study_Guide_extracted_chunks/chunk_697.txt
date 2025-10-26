@@ -1,0 +1,15 @@
+he rlink of the parent of 80—that 
+is, 70—point to the left child of 80. Figure 9-9(c) shows the resulting binary tree.  
+  
+
+343  
+  
+Case 4: Suppose that we want to delete 50 from the binary search tree in Figure 9-8. The node with info 
+50 has a nonempty left subtree and a nonempty right subtree. Here, we first reduce this case to either 
+Case 2 or Case 3 as follows. To be specific, suppose that we reduce it to Case 3—that is, the node to be 
+deleted has no right subtree. For this case, we find the immediate predecessor of 50 in this binary tree, 
+which is 48. This is done by first going to the left child of 50 and then locating the rightmost node of the 
+left subtree of 50. To do so, we follow the rlink of the nodes. Because the binary search tree is finite, we 
+eventually arrive at a node that has no right subtree. Next, we swap the info in the node to be deleted 
+with the info of its immediate predecessor. In this case, we swap 48 with 50. This reduces to the case 
+wherein the no

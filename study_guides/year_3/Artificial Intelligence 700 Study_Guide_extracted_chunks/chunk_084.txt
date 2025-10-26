@@ -1,0 +1,38 @@
+Remarks. 
+1. When you're constructing a truth table, you have to consider all possible 
+assignments of True (T) and False (F) to the component statements. For example, 
+suppose the component statements are P, Q, and R. Each of these statements 
+can be either true or false, so there are 
+possibilities. 
+When you're listing the possibilities, you should assign truth values to the 
+component statements in a systematic way to avoid duplication or omission. The 
+easiest approach is to use lexicographic ordering. Thus, for a compound 
+statement with three components P, Q, and R, I would list the possibilities this 
+way: 
+
+p   q   r
+-----------
+T   T   T
+-----------
+T   T   F
+-----------
+T   F   T
+-----------
+T   F   F
+-----------
+F   T   T
+-----------
+F   T   F
+-----------
+F   F   T
+-----------
+F   F   F
+-----------
+
+2. There are different ways of setting up truth tables. You can, for instance, write 
+the truth values "under" the logical connectives of the compound statement, 
+gradually building up to the column for the "primary" connective. 
+I'll write things out the long way, by constructing columns for each "piece" of the 
+compound statement and gradually building up to the compound statement. 
+ 
+Example. Construct a truth tab

@@ -1,0 +1,38 @@
+Pros 
+• Very secure (depends on cypher, but usually very strong AES) 
+• Completely integrated into Windows (Windows Vista SP1, Windows 7, 
+Windows 8) 
+• Microsoft support 
+• Can bypass most firewalls 
+  
+Cons 
+• Only really works in a Windows only environment 
+• Proprietary standard owned by Microsoft so cannot be independently 
+audited for back doors and suchlike 
+ 
+IKEv2 
+Internet Key Exchange (version 2) is an IPSec based tunnelling protocol that was jointly 
+developed by Microsoft and Cisco, and which is baked into Windows 7 and above. The 
+standard is supported by Cisco and Microsoft devices, and independently developed (and 
+largely compatible) versions of IKE have been developed for Linux (through various open-
+source implementations) and other operating systems. As always, we are wary of anything 
+developed by Microsoft, but if open-source versions are used then there should be no 
+problem. 
+
+Dubbed VPN Connect by Microsoft, IKEv2 is particularly good at automatically re-establishing 
+a VPN connection when users temporarily lose their internet connections (such as when 
+entering or leaving a train tunnel).
+ 
+Mobile users in particular, therefore, benefit the most from using IKEv2, which, because of its 
+support for the Mobility and Multihoming (MOBIKE) protocol, also makes it highly resilient to 
+changing networks. This is great news for cell phone users, for example, who connect their 
+smart phones to a Wi-Fi network while at home, but switch to mobile data use when out and 
+about, or who regularly switch between hotspots. IKEv2 is even more useful to Blackberry 
+users, as it is one of the few VPN protocols supported by Blackberry devices. 
+It is not as ubiquitous as IPSec (it is supported on much fewer platforms), but is IKEv2 is 
+considered at least as good as, if not superior to, L2TP/IPsec in terms of security, performance 
+(speed), stability and the ability to establish (and re-establish) a connection. 
+ 
+IKEv2 is also a very good (secure and fast) protocol, especially for mobile users who may even 
+prefer it to OpenVPN thanks to its improved ability to reconnect when an internet connection 
+is interrupted.

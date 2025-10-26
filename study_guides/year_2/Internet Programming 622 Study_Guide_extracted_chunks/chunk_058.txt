@@ -1,0 +1,28 @@
+lue.   
+Hidden field   
+The field name is sent, along with an empty value.   
+Image field   
+Same behavior as a submit button.   
+Push button   
+Nothing is ever sent.   
+Pull - down menu   
+Impossible to select no option, so a value is always sent.   
+List box    
+Nothing is sent at all.   
+Multi - select box   
+Nothing is sent at all.   
+
+29   
+   
+Text area field   
+The field name is sent, along with an empty value.   
+   
+Why is this important? Well, when nothing is sent at all for a field, PHP does not create an element 
+for the field in the $_POST , $_GET , or $_REQUEST array. So if you attempt to access the element, 
+you will generate a PHP notice along the lines of:   
+   
+PHP Notice: Undefined index: gender in process_registration.php on line 18   
+   
+This notice might appear in your server’s error log, or in the browser window, depending on your 
+error reporting settings. Such notices will not interfere with the running of your script; for example, 
+in the case just shown, al

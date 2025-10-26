@@ -1,0 +1,19 @@
+To set up the emulator, we first must set up an Android Virtual Device (AVD). An 
+AVD is a software replication of one or more types of Android devices. Multiple 
+AVDs with different characteristics may be set up for testing. To set up an AVD, we 
+use the AVD Manager. From the main menu, select Tools > AVD Manager to 
+display the Your Virtual Devices window. Click the Create Virtual Device button, 
+and the Select Hardware window will be displayed (Figure 3.5). 
+ 
+Select whatever phone or tablet type you would like to test your app on and click Next. Depending on 
+which SDKs you have installed, you will see one or more SDKs listed. You can also download more SDKs 
+from this window. Click the SDK that you want your virtual device to emulate. Click Next, and in the 
+next window enter a name for the device (or keep the default). Leave all the other defaults. Click 
+Finish. The AVD will be created (which may take some time) and the Your Virtual Devices window will 
+open, displaying your newly created AVD. Close the window. 
+
+Note 
+If you are running Android Studio on a virtual machine (such as VMWare Fusion), you will not be able 
+to use a virtual device. This is essentially running a virtual machine on a virtual machine, and it won’t 
+work. If that is the case, you will have to test on a real device by attaching the device to a USB 
+connection on your computer.

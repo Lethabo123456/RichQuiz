@@ -1,0 +1,20 @@
+ch naming standards are defined and enforced. Proper 
+documentation is crucial to the successful completion of the design, and adherence to the naming 
+conventions serves database designers well. In fact, a common refrain from users seems to be: “I 
+didn’t know why you made such a fuss over naming conventions, but now that I’m doing this stuff 
+for real, I’ve become a true believer.” 
+Data model verification is one of the last steps in the conceptual design stage, and it is one of the 
+most critical. In this step, the ER model must be verified against the proposed system processes to 
+corroborate that they can be supported by the database model. Verification requires that the model 
+be run through a series of tests against: 
+
+ 
+145 
+ 
+End-user data views All required transactions: SELECT, INSERT, UPDATE, and DELETE 
+operations  
+ 
+ Access rights and security  
+ 
+Business-imposed data requirements and constraints 
+Because real-world database design is generally done by teams, the dat

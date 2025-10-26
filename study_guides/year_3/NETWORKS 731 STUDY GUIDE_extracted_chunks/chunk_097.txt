@@ -1,0 +1,32 @@
+3.5 Packet-Switched WAN Services 
+Telecommunications services provided by Telco’s and long-distance carriers that route packets 
+of data between local area networks (LANs) in diverse geographical locations to form a wide 
+area network (WAN). Packet-switching services are used to connect multiple LANs into a point-
+to multipoint configuration, usually called a multipoint WAN. 
+How It Works 
+ 
+A customer’s local network is typically connected through routers, bridges, frame relay access 
+devices (FRADs), or other devices to a Telco’s central office (CO). These devices either have 
+built in technology for connecting directly to packet-switching services or use intermediary 
+devices located at the customer premises. Packet-switching devices take network frames and 
+“package” them into packets suitable for the type of packet-switching service being used. 
+These services can include frame relay, X.25, Asynchronous Transfer Mode (ATM), or Switched 
+Multimegabit Data Services (SMDS) public or private packet-switched networks. If virtual 
+private network (VPN) technologies are used, the public Internet can also be used as a packet-
+switching service for multipoint WAN connections. 
+ 
+Figure 3.13 Packet Switching services 
+
+Advantages of packet-switching services include the following: 
+Customers are not restricted to a single destination, as with point-to-point connections using 
+leased lines. 
+ 
+Packets can be routed to any destination that supports similar services, so businesses are not 
+tied to a particular carrier or Telco. 
+ 
+Packet-switched networks have low latency and are suitable for hosting dedicated services 
+such as company Web servers if the connection has sufficient bandwidth. 
+ 
+Customers usually pay monthly rates plus additional charges based on bandwidth use, which 
+means that the primary charges are on a per-transaction basis. The less you use the service, 
+the less you pay. 

@@ -1,0 +1,35 @@
+Wide Area Network (WAN) is a computer network covering multiple distance areas, which 
+may spread across the entire world. WANs often connect multiple smaller networks, such as 
+local area networks (LANs) or metro area networks (MANs). The world's most popular WAN is 
+the Internet. Some segments of the Internet are also WANs in themselves. The key difference 
+between WAN and LAN technologies is scalability. WAN must be able to grow as needed to 
+cover multiple cities, even countries and continents. 
+  
+Figure 3.1 WANs Interconnect Users and LANs 
+  
+A set of switches and routers are interconnected to form a Wide Area Network. The switches 
+can be connected in different topologies such as full mesh and half mesh. A wide area network 
+may be privately owned or rented from a service provider, but the term usually connotes the 
+inclusion of public (shared user) networks. 
+
+Both packet switching and circuit switching technologies are used in the WAN. Packet 
+switching allows users to share common carrier resources so that the carrier can make more 
+efficient use of its infrastructure. In a packet switching setup, networks have connections into 
+the carrier's network, and many customers share the carrier's network. The carrier can then 
+create virtual circuits between customers' sites by which packets of data are delivered from 
+one to the other through the network. 
+ 
+Circuit Switching allows data connections to be established when needed and then terminated 
+when communication is complete. This works like a normal telephone line works for voice 
+communication. 
+Integrated Services Digital Network (ISDN) is a good example of circuit switching. When a 
+router has data for a remote site, the switched circuit is initiated with the circuit number of 
+the remote network. 
+
+Virtual private network (VPN) is a technology widely used in a public switched network (PSTN) 
+to provide private and secured WAN for an organization. VPN uses encryption and other 
+techniques to make it appear that the organization has a dedicated network, while making 
+use of the shared infrastructure of the WAN.  
+WAN technologies generally function at the lower three layers of the OSI reference model: 
+the physical layer, the data link layer, and the network layer.
+

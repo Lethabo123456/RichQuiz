@@ -1,0 +1,46 @@
+Command                  Description 
+ls                       Short for list. Displays a directory listing. Very similar to the DIR command 
+                         in MS-DOS. 
+cd                       Short for change directory. Works almost identically to the MS-DOS 
+                         CD command. Use it to change to a diﬀerent directory and navigate the 
+                         server’s directory structure. 
+
+pwd 
+Short for print working directory. Displays the current directory on the 
+server. Useful if you forget where you are when changing to several 
+locations on the server. 
+lcd 
+Short for local change directory. Displays and changes the current 
+Short for local change directory. Displays and changes the current 
+directory on the local machine. Useful when you are downloading a ﬁle 
+and aren’t in the directory where you want to put the ﬁle. 
+
+TABLE 5.8 Common FTP navigation commands
+
+To set the ﬁle type to ASCII, type ascii at the ftp command prompt. ftp will respond by telling you 
+that the ﬁle type has been set to A (ASCII): 
+
+ftp>ascii 
+
+Type set to A 
+To set the ﬁle type to binary, type binary at the ftp command prompt. ftp will respond by telling 
+you that the ﬁle type has been set to I (binary): 
+
+ftp>binary
+ 
+Type set to I 
+To download the ﬁle, just use the get command like this: 
+
+ftp>get lammlepress.exe 
+200 PORT command successful. 
+150 Opening BINARY mode data connection for 'scrsav.exe' 
+(567018 bytes). 
+The ﬁle will start downloading to your hard drive. Unfortunately, with its default settings, the ftp 
+utility doesn’t give you any indication of the progress of the transfer. When the ﬁle has 
+downloaded, the ftp utility will display the following message and return you to the ftp command 
+prompt: 
+226 Transfer complete. 
+567018 bytes received in 116.27 seconds (4.88 Kbytes/sec) 
+You can download multiple ﬁles by using the mget command. Simply type mget, a space, and 
+then something known as a wildcard that speciﬁes the ﬁles you want to get. For example, to 
+download all the text ﬁles in a directory, type mget *.txt.  

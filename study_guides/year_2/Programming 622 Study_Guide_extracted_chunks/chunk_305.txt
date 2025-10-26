@@ -1,0 +1,24 @@
+wing recursive function implements this algorithm:  
+  
+int rFibNum(int a, int b, int n)  
+{ if (n == 1) return a; else if (n == 2) return b; else return 
+rFibNum(a, b, n - 1) + rFibNum(a, b, n - 2);  
+}   
+Let us trace the execution of the following statement:  
+  
+cout << rFibNum(2, 3, 4) << endl;  
+  
+In this statement, the first number is 2, the second number is 3, and we want to determine the 4th 
+Fibonacci number of the sequence. Figure 4-7 traces the execution of the expression rFibNum(2,3,4). The 
+value returned is 8, which is the 4th Fibonacci number of the sequence whose first number is 2 and whose 
+second number is 3.  
+  
+
+154  
+  
+  
+FIGURE 4-7 Execution of rFibNum(2, 3, 4)  
+  
+Figure 4-7 reveals that the execution of the recursive version of the program to calculate a Fibonacci 
+number is not as efficient as the execution of the nonrecursive version, even though the algorithm and 
+the method implementing the algorithm might be simpler. In the recursive version, some valu

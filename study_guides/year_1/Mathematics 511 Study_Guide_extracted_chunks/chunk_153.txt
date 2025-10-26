@@ -1,0 +1,24 @@
+Figure 2.7: A Vain diagram showing that A is a Subset of B 
+
+Showing Two Sets are Equal To show that two sets A and B are equal, show 
+that A ⊆ B and B ⊆ A. 
+ 
+Sets may have other sets as members. For instance, we have the sets: 
+A = {∅, {a}, {b}, {a, b}} and B = {x | x is a subset of the set {a, b}}. 
+Note that these two sets are equal, that is, A = B. Also note that {a} ∈ A, but 
+a ∉ A. 
+
+3.1.4 The Size of a Set 
+Sets are used extensively in counting problems, and for such applications we 
+need to discuss the sizes of sets. 
+Definition 21 
+Let S be a set. If there are exactly n distinct elements in S where n is a 
+nonnegative integer, we say that S is a finite set and that n is the cardinality 
+of S. The cardinality of S is denoted by |S|. 
+ 
+Let A be the set of odd positive integers less than 10. Then |A| = 5. 
+
+Definition 22 
+A set is said to be infinite if it is not finite. 
+ 
+The set of positive integers is infinite.

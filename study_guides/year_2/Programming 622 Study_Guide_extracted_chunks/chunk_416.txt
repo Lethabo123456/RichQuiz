@@ -1,0 +1,18 @@
+ns discussed the data structure stack in detail. Because a stack is an important data 
+structure, the Standard Template Library (STL) provides a class to implement a stack in a program. The 
+name of the class defining a stack is stack; the name of the header file containing the definition of the 
+class stack is stack. The implementation of the class stack provided by the STL is similar to the one 
+described in this chapter. Table 5-3 defines the various operations supported by the stack container class.  
+TABLE 5-3: Operations on a stack object 
+
+211  
+  
+  
+In addition to the operations size, empty, push, top, and pop, the stack container class provides relational 
+operators to compare two stacks. For example, the relational operator == can be used to determine 
+whether two stacks are identical.  
+  
+The program in Example 5-5 illustrates how to use the stack container class.  
+EXAMPLE 5-5  
+//*************************************************************  
+// This program illustrates

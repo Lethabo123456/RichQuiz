@@ -1,0 +1,35 @@
+4.4 Connectivity 
+Introduction 
+Many problems can be modelled with paths formed by traveling along the 
+edges of graphs. For instance, the problem of determining whether a 
+message can be sent between two computers using intermediate links can 
+be studied with a graph model. Problems of efficiently planning routes for 
+mail delivery, garbage pickup, diagnostics in computer networks, and so on 
+can be solved using models that involve paths in graphs. 
+
+4.4.1 Paths 
+Informally, a path is a sequence of edges that begins at a vertex of a graph 
+and travels from vertex to vertex along edges of the graph. As the path 
+travels along its edges, it visits the vertices along this path, that is, the 
+endpoints of these edges. 
+ 
+Definition 62 
+Let n be a nonnegative integer and G an undirected graph. A path of length 
+n from u to v in G is a sequence of n edges e1, . . . , en of G for which there 
+exists a sequence x0 = u, x1, . . . , xn−1, xn = v of vertices such that ei has, for i = 
+1, . . . , n, the endpoints xi−1 and xi . When the graph is simple, we denote this 
+path by its vertex sequence x0, x1, . . . , xn (because listing these vertices 
+uniquely determines the path). The path is a circuit if it begins and ends at 
+the same vertex, that is, if u = v, and has length greater than zero. The path 
+or circuit is said to pass through the vertices x1, x2, . . . , xn−1 or traverse the 
+edges e1, e2, . . . , en. A path or circuit is simple if it does not contain the same 
+edge more than once. 
+ 
+In the simple graph shown in Figure 4.13, a, d, c, f , e is a simple path of length 
+4, because {a, d},{d, c}, {c, f }, and {f, e} are all edges. However, d, e, c, a is 
+not a path, because {e, c} is not an edge. Note that b, c, f , e, b is a circuit of 
+length 4 because {b, c}, {c, f }, {f, e}, and {e, b} are edges, and this path begins 
+and ends at b. The path a, b, e, d, a, b, which is of length 5, is not simple 
+because it contains the edge {a, b} twice. 
+
+Figure 4.13: A Simple Graph 

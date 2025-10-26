@@ -1,0 +1,31 @@
+This program works as follows. The statements in Lines 7 to 12 declare the variables 
+used in the program. The statement in Line 14 prompts the user to enter the number 
+of student volunteers. The statement in Line 15 inputs this number into the variable 
+numOfVolunteers. The statements in Lines 17 and 18 initialize the variables 
+totalNumOfBoxesSold and counter. (The variable counter is the loop control variable.) 
+The while statement in Line 19 checks the value of counter to determine how many 
+students’ data have been read. If counter is less than numOfVolunteers, the while loop 
+proceeds for the next iteration. The statement in Line 21 prompts the user to input the 
+student’s name and the number of boxes sold by the student. The statement in Line 
+22 inputs the student’s name into the variable name and the number of boxes sold by 
+the student into the variable numOfBoxesSold. The statement in Line 24 updates the 
+value of totalNumOfBoxesSold by adding the value of numOfBoxesSold to its current 
+value and the statement in Line 25 increments the value of counter by 1. The statement 
+in Line 27 outputs the total number of boxes sold, the statement in Line 28 prompts 
+the user to input the cost of one box of cookies, and the statement in Line 29 inputs 
+the cost in the variable costOfOneBox.  
+The statement in Line 31 outputs the total money made by selling cookies, and the 
+statements in Lines 32 through 35 output the average number of boxes sold by each 
+volunteer. Note that totalNumOfBoxesSold is initialized to 0 in Line 17 in this program. 
+In Line 22, after reading the number of boxes sold by a student, the program adds it 
+to the sum of all the boxes sold before the current number of boxes sold. 
+
+The first numOfBoxesSold read will be added to zero (because totalNumOfBoxesSold 
+is initialized to 0), giving the correct sum of the first number. To find the average, divide 
+totalNumOfBoxesSold by counter. If counter is 0, then dividing by zero will terminate 
+the program and you will get an error message. Therefore, before dividing 
+totalNumOfBoxesSold by counter, you must check whether or not counter is 0. Notice 
+that in this program, the statement in Line 18 initializes the LCV counter to 0. The 
+expression counter < numOfVolunteers in Line 19 evaluates whether counter is less 
+than numOfVolunteers. The statement in Line 25 updates the value of counter. 
+ 

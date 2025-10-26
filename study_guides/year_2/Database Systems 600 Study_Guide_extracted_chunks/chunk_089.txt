@@ -1,0 +1,11 @@
+igners what a data model is, you will end up with 10 different answers—
+depending on the degree of data abstraction. A database designer starts with an abstract view of the 
+overall data environment and adds details as the design comes closer to implementation. Using levels 
+of abstraction can also be very helpful in integrating multiple (and sometimes conflicting) views of 
+data at different levels of an organization. In the early 1970s, the American National standards 
+institute (ANSI) Standards Planning and Requirements Committee (SPARC) defined a framework 
+for data modelling based on degrees of data abstraction. The resulting ANSI/SPARC architecture 
+defines three levels of data abstraction: external, conceptual, and internal. You can use this 
+framework to better understand database models, as shown in Figure 2.6. In the figure, the 
+ANSI/SPARC framework has been expanded with the addition of a physical model to explicitly 
+address physical-level implementation details of the int

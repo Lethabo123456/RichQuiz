@@ -1,0 +1,61 @@
+ype a program, typos and unintentional syntax errors are likely to occur. 
+Therefore, when you compile a program, the compiler will identify the syntax error. In 
+this section, we show how to identify and fix syntax errors. 
+ 
+(Note that the numbers 1 to 16 on the left side are not part of the program. We have 
+numbered the statements for easy reference.) This program contains syntax errors. 
+When you compile this program, the compiler produces the following errors. (This 
+program is compiled using Microsoft Visual Studio 2015.) 
+ 
+Example_Syntax_Errors.cpp  
+ 
+c:\examplech2_syntax_errors.cpp (9): error C2146: syntax error: missing ';' before 
+identifier 'num' c: examplech2_syntax_errors.cpp (11): error C2065: 'tempNum': 
+undeclared identifier 
+c:\examplech2_syntax_errors.cpp (13): error C2065: 'tempNum': undeclared identifier 
+c:\examplech2_syntax_errors.cpp (13): error C2563: mismatch in formal parameter list 
+c:\examplech2_syntax_errors.cpp (13): error C2568: '<<': unable to resolve function 
+overload   
+c:\examplech2_syntax_errors.cpp 
+(13): 
+note: 
+could be 
+'std::basic_ostream 
+&std::endl;(std::basic_ostream &)' 
+ c:\examplech2_syntax_errors.cpp (15): error C2561: 'main': function must return a 
+value   
+c:\examplech2_syntax_errors.cpp (5): note: see declaration of 'main' 
+ 
+
+This error occurs in Line 11, and it specifies that the identifier tempNum is undeclared. 
+When we look at the code, we find that this identifier has not been declared. So we 
+must declare tempNum as an int variable. 
+ 
+The error: c:\examplech2_syntax_errors.cpp (13): error C2065: 'tempNum': 
+undeclared identifier occurs in Line 13, and it specifies that the identifier tempNum is 
+undeclared. 
+As in the previous error, we must declare tempNum. Note that once we declare 
+tempNum and recompile, this and the previous error will disappear. 
+ 
+The next error is: c:\examplech2_syntax_errors.cpp (13): error C2563: mismatch in 
+formal parameter list This error occurs in Line 13, and it indicates that some formal 
+parameter list is mismatched. For a beginner, this error is somewhat hard to 
+understand.
+
+However, as you practice, you will learn how to interpret and correct syntax errors. 
+This error becomes clear if you look at the next error, part of which is: 
+c:\examplech2_syntax_errors.cpp (13): error C2568: '<<': unable to resolve function 
+overload  
+It tells us that this error has something to do with the operator <<< "Num = " << num 
+<< ", tempNum = " < tempNum << endl 
+Let us look at the last error, which is:  
+
+c:\examplech2_syntax_errors.cpp (15): error C2561: 'main': function must return a 
+value   c:\examplech2_syntax_errors.cpp (5): note: see declaration of 'main' 
+ 
+This error occurs in Line 15. However, at this point, the explanation given, especially 
+for a beginner, is somewhat unclear. However, if you look at the statement return ; in 
+Line 15 and remember the syntax of the function main as well as all the programs 
+given in this book, we find that the number 0 is missing, that is, this statement must be 
+return 0; 
+ 

@@ -1,0 +1,17 @@
+64 
+will be used. Figure 11.4 shows the B-tree and bitmap representations for the CUSTOMER table 
+used in the previous discussion. 
+Current-generation DBMSs are intelligent enough to determine the best type of index to use under 
+certain circumstances, provided that the DBMS has updated data-base statistics. Regardless of 
+which index is chosen, the DBMS determines the best plan to execute a given query. The next 
+section guides you through a simplified example of the type of choices the query optimizer must 
+make. 
+ 
+Optimizer Choices 
+Using Hints to Affect Optimizer Choices 
+Query optimization is the central activity during the parsing phase in query processing. In this 
+phase, the DBMS must choose what indexes to use, how to perform join operations, which table to 
+use first, and so on. Each DBMS has its own algorithms for determining the most efficient way to 
+access the data. The query optimizer can operate in one of two modes: 
+ 
+A rule-based optimizer uses pre-set rules and poi

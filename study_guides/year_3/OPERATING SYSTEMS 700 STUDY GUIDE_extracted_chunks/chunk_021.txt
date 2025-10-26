@@ -1,0 +1,20 @@
+1.2. Operating System Managers 
+
+Regardless of the size or configuration of the system, the four managers, illustrated in Figure 1.1, 
+must, at a minimum, perform the following tasks while collectively keeping the system working 
+smoothly: 
+
+➢ Monitor the system’s resources. 
+➢ Enforce the policies that determine what component gets, what resources, when, and how 
+much. 
+➢ Allocate the resources when appropriate. 
+➢ Deallocate the resources when appropriate.
+
+1.2.1 Memory Management 
+
+The Memory Manager oversees main memory, widely known as RAM (Random Access Memory). 
+The Memory Manager checks the validity of each request for memory space, and if it is a legal 
+request, it allocates a portion of memory that is not already in use. If the memory space becomes 
+fragmented, this manager might use policies established by the operating system’s designers to 
+reallocate memory to make more useable space available for other jobs that are waiting. Finally, 
+when the job or process is finished, the Memory Manager deallocates its allotted memory space. 

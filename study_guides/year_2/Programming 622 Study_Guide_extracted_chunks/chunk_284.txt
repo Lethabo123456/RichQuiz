@@ -1,0 +1,49 @@
+4. What is the output of the following program segment?  
+  
+list<int> intList;  
+ostream_iterator<int> screen(cout, " ");  
+list<int>::iterator listIt; 
+intList.push_back(5); 
+intList.push_front(23); 
+intList.push_front(45); 
+intList.pop_back(); 
+intList.push_back(35); 
+intList.push_front(0); 
+intList.push_back(50); 
+intList.push_front(34);  
+copy(intList.begin(), intList.end(), screen); 
+cout << endl; listIt = intList.begin(); 
+intList.insert(listIt,76);  
+++listIt; ++listIt; 
+intList.insert(listIt,38)
+; intList.pop_back();  
+++listIt; ++listIt; intList.erase(listIt); 
+intList.push_front(2 * intList.back()); 
+intList.push_back(3 * intList.front()); 
+copy(intList.begin(), intList.end(), 
+screen); cout << endl;  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+144  
+  
+ 
+TOPIC 4: RECURSION  
+ 
+LEARNING OUTCOMES  
+After Studying this topic you should be able to:  
+Learn about recursive definitions  
+Explore the base case and the general case of a recursive definition  
+Learn about recursive algorithm

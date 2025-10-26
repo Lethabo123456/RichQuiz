@@ -1,0 +1,15 @@
+n the STUDENT table for any given row in the CLASS table. 
+However, M:N relationships should not be implemented for two good reasons:  
+• 
+The tables create many redundancies which lead to anomalies.  
+• 
+The relational operations become very complex and are likely to lead to system efficiency 
+errors and output errors.  
+Fortunately, the problems inherent in the M:N relationship can easily be avoided by creating a 
+composite entity (also referred to as a bridge entity or an associative entity). Because such a table 
+is used to link the tables that were originally related in an M:N relationship, the composite entity 
+structure includes—as foreign keys—at least the primary keys of the tables that are to be linked. 
+The database designer has two main options when defining a composite table’s primary key: use 
+the combination of those foreign keys or create a new primary key.  
+Remember that each entity in the ERM is represented by a table. Therefore, you can create the 
+composite ENROLL

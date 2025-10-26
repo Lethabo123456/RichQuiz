@@ -1,0 +1,18 @@
+is graph, for example, one might take away the 
+fact that most of the time, the number of customers on any given day will fall between 500 
+and 700. Altogether, histograms are used to visualize the distribution of values that a 
+quantitative variable can take on.  In a histogram, we do not put spaces between bars. 
+ 
+6.2.5 Box Plots 
+Box plots are also used to show a distribution of values. They are created by plotting the five 
+number summary, as follows:  
+• The minimum value.  
+• The first quartile (the number that separates the 25% lowest values from the rest). 
+•  The median. 
+• The third quartile (the number that separates the 25% highest values from the rest). 
+• The maximum value. 
+  
+In Pandas, when we create box plots, the red line denotes the median, the top of the box (or 
+the right if it is horizontal) is the third quartile, and the bottom (left) part of the box is the first 
+quartile. The following is a series of box plots showing the distribution of beer consumption 
+acc

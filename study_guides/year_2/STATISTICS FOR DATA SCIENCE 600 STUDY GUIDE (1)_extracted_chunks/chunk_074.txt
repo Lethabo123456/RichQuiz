@@ -1,0 +1,50 @@
+Exponents 
+Definition: An exponent refers to the number of times a base number is multiplied by itself. 
+It is written as a small number to the right and above the base number. 
+Notation: If a is the base and n is the exponent, we write it as This is read as "a raised to the 
+power of n" or simply "a to the n." 
+
+Logarithms 
+Definition: A logarithm is the inverse operation to exponentiation. It answers the question: 
+to what exponent must we raise a base number to obtain another number? 
+Notation: The logarithm of a number x with base b is written as. It means the power to which 
+the base b must be raised to yield x. 
+
+SET 
+Set theory is a fundamental branch of mathematics that deals with the collection of distinct 
+objects, known as sets. It plays a crucial role in various mathematical disciplines and is 
+particularly essential in data science for manipulating groups of elements. 
+
+Basic Concepts 
+12. Set Definition: 
+o A set is a collection of unique, well-defined objects. 
+o Example: {1, 2, 3} is a set of numbers. In Python, a set can be created using the 
+set () function, which automatically removes duplicate elements. 
+  
+o s = set ([1, 2, 2, 3]) # s becomes {1, 2, 3}  
+13. Set and Dictionary in Python: 
+o Both sets and dictionaries in Python use curly braces {}, but they serve different 
+purposes. 
+▪ Set: Collection of unique elements. 
+▪ Dictionary: Collection of key-value pairs. 
+o Dictionaries do not allow duplicate keys, like how sets do not allow duplicate 
+elements. 
+14. Magnitude of a Set: 
+o The number of elements in a set is its magnitude. 
+o Example: For s = {1, 2, 3}, len(s) == 3. 
+15. Empty Set: 
+o An empty set has no elements, and its magnitude is zero. 
+o Represented by {} or set () in Python. 
+16. Subset and Superset: 
+o If all elements of set A are in set B, A is a subset of B, and B is a superset of A. 
+o A proper subset of B is a subset that is not equal to B. 
+o Example: {1, 2} is a subset of {1, 2, 3}. 
+17. Intersection of Sets: 
+o The intersection of two sets is a set containing elements common to both sets. 
+o Represented by & in Python. 
+o Example: {1, 2} & {2, 3} = {2}. 
+18. Union of Sets: 
+o The union of two sets is a set containing all elements from both sets, without 
+duplicates. 
+o Represented by | in Python. 
+o Example: {1, 2} | {2, 3} = {1, 2, 3}. 

@@ -1,0 +1,27 @@
+ts to the last node of the updated list, // 
+and count is decremented by 1.  
+};  
+  
+//Place the definitions of the functions search, insertNode, //insertFirst, 
+insertLast, and deleteNode here.  
+.  
+.  
+
+115  
+  
+.  
+#endif  
+  
+ 
+3.4  
+Ordered Linked Lists  
+The preceding section described the operations on an unordered linked list. This section deals with 
+ordered linked lists. As noted earlier, we derive the class orderedLinkedList from the class linkedListType 
+and provide the definitions of the abstract functions insertFirst, insertLast, search, and deleteNode to take 
+advantage of the fact that the elements of an ordered linked list are arranged using some ordering criteria. 
+For simplicity, we assume that elements of an ordered linked list are arranged in ascending order.  
+  
+Because the elements of an ordered linked list are in order, we include the function insert to insert an 
+element in an ordered list at the proper place.  
+  
+The following class defines an ordered link

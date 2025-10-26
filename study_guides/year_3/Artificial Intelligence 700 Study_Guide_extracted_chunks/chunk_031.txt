@@ -1,0 +1,19 @@
+Fully observable vs. partially observable. 
+If an agent's sensors give it access to the complete state of the environment at each 
+point in time, then we say that the task environment is fully observable. A task envi- 
+ronment is effectively fully observable if the sensors detect all aspects that are 
+relevant to the choice of action. An environment might be partially observable because 
+of noisy and inaccurate sensors or because parts of the state are simply missing from the 
+sensor data. For example, an agent that has to spot defective parts on an assembly line bases each 
+decision on the current part, regardless of previous decisions; 
+In sequential environments, on the other hand, the current decision could affect all 
+future decisions. Chess and taxi driving are sequential: 
+ 
+Discrete vs. continuous. 
+The discrete/continuous distinction can be applied to the state of the environment, 
+to the way time is handled, and to the percepts and actions of the agent. For example, 
+a discrete-state environment such as a chess game has a finite number of distinct 
+states. Chess also has a discrete set of percepts and actions. Taxi driving is a 
+continuous-state and continuous-time problem: the speed and location of the taxi and 
+of the other vehicles sweep through a range of continuous values and do so smoothly 
+over time. Taxi-driving actions are also continuous (steering angles, etc.). 

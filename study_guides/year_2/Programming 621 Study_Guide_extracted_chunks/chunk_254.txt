@@ -1,0 +1,22 @@
+objects. In order 
+to overload an operator, you must write function(s) (that is, the header and the body) 
+to define what operation the overloaded operator indicates should be performed. The 
+
+242 | P a g e  
+ 
+name of the function that overloads an operator is the reserved word operator followed 
+by the operator to be overloaded. For example, the name of the function to overload 
+the operator >= is: operator>= Operator function: The function that overloads an 
+operator. 
+ 
+Syntax for Operator Functions 
+ 
+The result of an operation is a value. Therefore, the operator function is a value 
+returning function. The syntax of the heading for an operator function is: 
+ 
+ 
+ 
+In C++, operator is a reserved word. Recall that the only built-in operations on classes 
+are assignment (=) and member selection. To use other operators on class objects, 
+they must be explicitly overloaded. Operator overloading provides the same concise 
+expressions for user-defined data types as it does for built-in

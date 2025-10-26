@@ -1,0 +1,18 @@
+2.6.7.2 Localisation and Mapping 
+
+Accurate localisation and mapping are fundamental for autonomous vehicles to understand their 
+position and navigate effectively. Sensor fusion techniques merge information from Global 
+Navigation Satellite Systems (GNSS), cameras, LiDAR, and other sensors to achieve highly accurate 
+positioning and mapping capabilities. 
+
+This multi-sensor approach addresses the limitations that individual sensors might face, such as 
+GNSS inaccuracy in urban canyons or LiDAR performance in adverse weather conditions, thereby 
+ensuring reliable navigation. 
+
+2.6.7.3 Obstacle Detection and Avoidance 
+The ability to detect and avoid obstacles is critical for the safety of autonomous vehicles. Sensor 
+fusion enables the combination of visual data from cameras, distance measurements from LiDAR, 
+and radar signals to identify potential hazards accurately. This comprehensive detection capability 
+allows AVs to initiate appropriate avoidance manoeuvres, such as braking or steering 
+adjustments, to prevent collisions. The integration of sensor data significantly enhances the 
+vehicle's ability to respond to dynamic changes in its environment. 

@@ -1,0 +1,25 @@
+Unlike classes, structs do not support inheritance. They implicitly derive from object (as do all 
+types in C#, including the built-in types) but cannot inherit from any other class or struct. 
+Structs are also implicitly sealed (that is, no class or struct can derive from a struct). Like 
+classes, however, structs can implement multiple interfaces. Additional differences include 
+the following: 
+
+1.6.2 No destructor or custom default constructor 
+Structs cannot have destructors, nor can they have a custom parameterless (default) con-
+structor. If you do not supply a constructor, your struct will in effect be provided with a default 
+constructor that will zero all the data members or set them to default values appropriate to 
+their type (see Table 1-2). If you supply any constructor, you must initialize all the fields in the 
+struct. 
+
+1.6.3 No initialization 
+You cannot initialize an instance field in a struct. Thus, it is illegal to write: 
+private int xVal = 50; private int 
+yVal = 100;
+
+though that would have been fine had this been a class.
+Structs are designed to be simple and lightweight. While private member data promotes data 
+hiding and encapsulation, some programmers feel it is overkill for structs. They make the 
+member data public, thus simplifying the implementation of the struct. Other programmers 
+feel that properties provide a clean and simple interface, and that good programming practice 
+demands data hiding even with simple lightweight objects. Whichever you choose is a matter 
+of design philosophy; the language supports either approach.

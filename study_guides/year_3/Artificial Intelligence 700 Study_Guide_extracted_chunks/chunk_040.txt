@@ -1,0 +1,30 @@
+Components of Expert Systems 
+ 
+Figure 2.1: Expert System(Boucher, 2020) 
+ 
+Basic Concept of an Expert System Function 
+The expert system consists of two major components: knowledge base and inference 
+engine. 
+
+Knowledge base contains the domain knowledge which is used by the inference 
+engine to draw conclusions. The inference engine is the generic control mechanism 
+that applies the axiomatic knowledge to the task-specific data to arrive at some 
+conclusion. When a user supplies facts or relevant information of query to the expert 
+system he receives advice or expertise in response. That is given the facts it uses the 
+inference engine which in turn uses the knowledge base to infer the solution.
+
+Characteristics of Expert Systems 
+High performance: They should perform at the level of a human expert. 
+Adequate response time: They should have the ability to respond in a reasonable 
+amount of time. Time is crucial especially for real time systems. 
+Reliability: They must be reliable and should not crash. 
+Understandable: They should not be a black box instead it should be able explain the 
+steps of the reasoning process. It should justify its conclusions in the same way a 
+human expert explains why he arrived at particular conclusion.
+
+Shell 
+A shell is a special purpose tool designed based on the requirements of particular 
+applications. User should supply the knowledge base to the shell. Example for the shell 
+is EMYCIN (Empty MYCIN) shell. Shell manages the input and output. It processes the 
+information given by the user, relates it to the concepts contained in the knowledge 
+base, and provides solution for a particular problem. 

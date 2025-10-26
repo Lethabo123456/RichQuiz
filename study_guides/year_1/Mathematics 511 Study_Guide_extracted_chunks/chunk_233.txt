@@ -1,0 +1,28 @@
+Worked Example
+Use an adjacency matrix to represent the graph shown below. 
+ 
+Solution: 
+We order the vertices as a, b, c, d. The matrix representing this graph is: 
+
+4.3.3 Incidence Matrices 
+Another common way to represent graphs is to use incidence matrices. Let 
+G = (V ,E) be an undirected graph. Suppose that v1, v2, . . . , vn are the vertices 
+and e1, e2, . . . , em are the edges of G. Then the incidence matrix with respect 
+to this ordering of V and E is the n × m matrix M = [mij ], where: 
+
+Worked Example 
+Represent the graph shown below with an incidence matrix. 
+ 
+Solution: 
+The incidence matrix is: 
+ 
+4.3.4 Isomorphism of Graphs 
+We often need to know whether it is possible to draw two graphs in the same 
+way. That is, do the graphs have the same structure when we ignore the 
+identities of their vertices? For instance, in chemistry, graphs are used to 
+model chemical compounds. 
+Different compounds can have the same molecular formula but can differ in 
+structure. Such compounds can be represented by graphs that cannot be 
+drawn in the same way. The graphs representing previously known 
+compounds can be used to determine whether a supposedly new compound 
+has been studied before. 

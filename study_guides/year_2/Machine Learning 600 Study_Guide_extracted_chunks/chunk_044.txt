@@ -1,0 +1,15 @@
+t 
+data would be fine, but as the volumes grow and the demands from stakeholders get more 
+complex, we need to start looking at alternative tools. Embulk is an open source bulk loading 
+tool. It provides a number of plugins to read, write, and transform data.  For example, if you 
+wanted to read a directory of CSV files, transform them to JSON, and write them to AWS S3, 
+that can be done with Embulk with a single configuration file. If you are using the OpenJDK, 
+then it uses version 8 without any issues. 
+ 
+2.8 Summary 
+This Chapter has discussed the planning of any ML project and outlined a few techniques for 
+acquiring data, whether that be via page scraping, using Google Sheets to import table data, 
+or using scripting languages to clean up files. If an API is available, then it makes sense to 
+maximize the potential gains from it whenever you can. When the volumes of data start to 
+build, then it's worth using tools designed for the job instead of crafting your own. The open 
+sour

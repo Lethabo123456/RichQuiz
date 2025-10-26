@@ -1,0 +1,27 @@
+f the queue. Prior to this operation, the queue 
+must exist and must not be empty.  
+ back—Returns the last element of the queue. Prior to this operation, the queue must exist and 
+must not be empty.  
+ addQueue—Adds a new element to the rear of the queue. Prior to this operation, the queue must 
+exist and must not be full.  
+ deleteQueue—Removes the front element from the queue. Prior to this operation, the queue must 
+exist and must not be empty.  
+  
+As in the case of a stack, a queue can be stored in an array or in a linked structure. We will consider both 
+implementations. Because elements are added at one end and removed from the other end, we need two 
+pointers to keep track of the front and rear of the queue, called queueFront and queueRear.  
+  
+The 
+following 
+abstract 
+class 
+queueADT 
+defines 
+these 
+operations 
+as 
+an 
+ADT: 
+//*************************************************************  
+// This class specifies the basic operations on a queue.  
+//***********************

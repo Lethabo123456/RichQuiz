@@ -1,0 +1,50 @@
+5.2.1  Using the Thread class 
+ 
+The Thread class can be found in the System.Threading namespace. This class enables you to create new 
+treads, manage their priority, and get their status.  
+The Thread 
+needs. However, when using the Thread class you have control over all configuration options. You can, 
+for example, specify the priority of your thread, tell Windows that your thread is long running, or config-
+ure other advanced options. 
+
+Example 5-1  
+shows an example of using the Thread class to run a method on another thread. The Console class syn-
+chronizes the use of the output stream for you so you can write to it from multiple threads. Synchroniza-
+tion r program at the same time. 
+
+In the case of a console application, this means that no two threads can write data to the 
+screen at the exact same time. If one thread is working with the output stream, other threads will have 
+  
+EXAMPLE 5-1 Creating a thread with the Thread class solution 
+ 
+using System;
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading; 
+ 
+   namespace thre 
+{ 
+    public static class Program 
+    { 
+        public static void ThreadMethod() 
+        { 
+            for (int i = 0; i < 10; i++) 
+            { 
+                Console.WriteLine("ThreadProc: {0}", i); 
+                Thread.Sleep(0); 
+            } 
+        } 
+        public static void Main() 
+        { 
+            Thread t = new Thread(new ThreadStart(ThreadMethod)); 
+            t.Start(); 
+            for (int i = 0; i < 4; i++) 
+            { 
+                Console.WriteLine("Main thread: Do some work."); 
+                Thread.Sleep(0); 
+            } 
+            t.Join(); 
+        } 
+    } 
+}

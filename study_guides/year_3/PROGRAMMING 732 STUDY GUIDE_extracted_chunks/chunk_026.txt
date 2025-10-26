@@ -1,0 +1,23 @@
+1.2.15 FlowLayout  
+FlowLayout is the default layout manager. This is the layout manager that the preceding examples have 
+used. FlowLayout implements a simple layout style, which is similar to how words flow in text editor. 
+Components are laid out from the upper-left corner, left to right and top to bottom. When no more 
+components fit on a line, the next one appears on the next line. A small space is left between each 
+component, above and below, as well as left and right. Here are the constructors for  
+  
+FlowLayout.  
+FlowLayout( )  
+FlowLayout(int how)  
+FlowLayout(int how, int horz, int vert)  
+  
+The first form creates the default layout, which centers components and leaves five pixels of space 
+between each component. The second form lets you specify how each line is aligned. Valid values for how 
+are follows:  
+  
+FlowLayout.LEFT  
+FlowLayout.CENTER  
+FlowLayout.RIGHT
+
+These values specify left, center, and right alignment, respectively. The third form allows you to specify 
+the horizontal and vertical space left between components in horz nad vert, respectively.Here is a version 
+of the CheckboxDemo applet shown earlier in this unit, modified so that it used left-aligned flow layout.

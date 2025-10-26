@@ -1,0 +1,40 @@
+Comparing and Evaluating Clustering Algorithms 
+One of the challenges in applying clustering algorithms is that it is very hard to assess how well an 
+algorithm worked, and to compare outcomes between different algo- rithms. After talking about the 
+algorithms behind k-means, agglomerative clustering, and DBSCAN, we will now compare them on some 
+real-world datasets. 
+
+Evaluating clustering with ground truth 
+
+There are metrics that can be used to assess the outcome of a clustering algorithm relative to a ground 
+truth clustering, the most important ones being the adjusted rand index (ARI) and normalized mutual 
+information (NMI), which both provide a quanti- tative measure between 0 and 1. Here, we compare the 
+k-means, agglomerative clustering, and DBSCAN algorithms using ARI. We also include what it looks like 
+when we randomly assign points to two clusters for comparison: 
+ 
+The adjusted rand index provides intuitive results, with a random cluster assignment having a score of 0 
+and DBSCAN (which recovers the desired clustering perfectly) having a score of 1. 
+A common mistake when evaluating clustering in this way is to use accuracy_score instead of 
+adjusted_rand_score, normalized_mutual_info_score, or some other clustering metric. The problem in 
+using accuracy is that it requires the assigned clus- ter labels to exactly match the ground truth. However, 
+the cluster labels themselves are meaningless—the only thing that matters is which points are in the 
+same cluster: 
+
+Evaluating clustering without ground truth Although we have just shown one way to evaluate clustering 
+algorithms, in practice, there is a big problem with using measures like ARI. When applying clustering 
+algo- rithms, there is usually no ground truth to which to compare the results. If we knew the right 
+clustering of the data, we could use this information to build a supervised model like a classifier. 
+Therefore, using metrics like ARI and NMI usually only helps in developing algorithms, not in assessing 
+success in an application. There are scoring metrics for clustering that don’t require ground truth, like 
+the sil- houette coefficient. However, these often don’t work well in practice. The silhouette score 
+computes the compactness of a cluster, where higher is better, with a perfect score of 1. While compact 
+clusters are good, compactness doesn’t allow for complex shapes. Here is an example comparing the 
+outcome of k-means, agglomerative clustering, and DBSCAN on the two-moons dataset using the 
+silhouette score: 
+ 
+As observed, k-means achieves the highest silhouette score, even though we may prefer the results 
+produced by DBSCAN. A more effective approach for evaluating clusters is to use robustness-based 
+clustering metrics. These metrics involve running an algorithm after adding noise to the data or using 
+different parameter settings and comparing the results. The idea is that if many algorithm configurations 
+and variations in the data produce the same outcome, the result is likely reliable. Unfortunately, this 
+approach is not available in scikit-learn as of this writing. 

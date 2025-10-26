@@ -1,0 +1,89 @@
+4.6 Installation of Remote Access Links 
+Installation Instructions and Setup Remote Access 
+Step 1 – On PC1 you will need to disable Remote Desktop Service 
+Control Panel > System and Security > Administrative Tools > Services  
+ 
+Figure 4.10 
+✓ Double-Click “Services” 
+✓ Step 2 – Open “Remote Access Connection Manager” 
+ 
+Figure 4.11 
+ 
+✓ Step 3 – Click on “Stop” and select “Disabled” in “Start-up type” 
+ 
+Figure 4.12 
+
+✓ Click “Apply” 
+✓ Step 4 – Make sure the “Service status:” is “Stopped” 
+ 
+Figure 4.13 
+  
+✓ Click “OK” 
+ 
+Installation of Remote Desktop Viewer: 
+Step 5 – Open the D-View_DCS-250 Folder to locate “RemoteDesktopViewer” 
+ 
+Figure 4.14 
+  
+✓ Step 6 – Double-click on “setup” 
+
+Figure 4.15 
+ 
+✓ Step 7 – Click on “Run” 
+ 
+Figure 4.16 
+ 
+✓ Step 8 – Click “Next”  
+ 
+Figure 4.17 
+  
+✓ Step 9 – Select “I accept the terms of the license agreement” to continue 
+ 
+Figure 4.18 
+✓ Click “Next” 
+✓ Step 10 – Installation completed 
+ 
+Figure 4.19 
+ 
+✓ Click “Finish” 
+✓ Start Network Service: 
+✓ Step 11 – On PC1 - Open “Main Console” 
+✓ Step 12 – Login and click on the “Spanner Icon” then “Network Service” 
+
+Figure 4.21 
+ 
+✓ Step 13 – Select “Remote Desktop” and you should notice by default the “Server Status: 
+Stopped”  
+✓ Click on “Start” 
+ 
+Figure 4.22 
+
+✓ You will notice the service is running now 
+ 
+Figure 4.23 
+✓ Click on “OK” 
+✓ Step 14 – You should also notice that the Remote Desktop Icon seen (as below) 
+  
+Figure 4.24 
+ 
+✓ Establish Remote Desktop from PC2: 
+✓ Step 15 – Go to PC2 and open “D-Link Remote Desktop Viewer” 
+ 
+Figure 4.25 
+ 
+✓ Step 16 – Configure the settings for “Remote Desktop Viewer” 
+ 
+Figure 4.26 
+ 
+✓ Server: 192.168.1.124 (IP of where DCS-250 resides) in our example PC1 
+✓ Port: 5140 (Default) 
+✓ Password: This is the password for DCS-250 
+✓ Click “OK” 
+✓ Step 17 – Connection established on PC2 
+✓ Step 18 – To ensure “Remote Desktop Server” service always runs on start up, you will 
+need to enable this service in “Setting” 
+✓ Click on the Spanner Icon > System Setting > Setting > General 
+ 
+Figure 4.27 
+ 
+✓ Select “Remote Desktop Server” then click “OK” 

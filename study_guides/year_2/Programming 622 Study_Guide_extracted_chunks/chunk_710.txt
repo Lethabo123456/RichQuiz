@@ -1,0 +1,14 @@
+must indicate to the node whether the left and 
+right subtrees have been visited. After visiting the left subtree of a node and before visiting the node, 
+wemust visit its right subtree. Therefore, after returning from a left subtree, we must tell the node that 
+the right subtree needs to be visited, and after visiting the right subtree we must tell the node that it can 
+now be visited. To do this, other than saving a pointer to the node (to get back to the right subtree and to 
+the node itself), we also save an integer value of 1 before moving to the left subtree and an integer value 
+of 2 before moving to the right subtree. Whenever the stack is popped, the integer value associated with 
+that pointer is popped as well. This integer value tells whether the left and right subtrees of a node have 
+been visited. The general algorithm is as follows:  
+  
+1. current = root; //start the traversal at the root node  
+2. v = 0;  
+3. if (current is NULL) the binary tree is empty  
+4. if (curre

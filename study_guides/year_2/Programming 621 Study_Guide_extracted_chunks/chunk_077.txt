@@ -1,0 +1,45 @@
+Comparing if…else Statements with a Series of if Statements 
+Consider the following C++ program segments, both of which accomplish the same 
+task program segment with if Statements only 
+
+Program segment (a) is written as a sequence of if. 
+. .else statements; 
+program segment (b) is written as a series of if statements. 
+
+Both program 
+segments accomplish the same thing. If month is 3, then both program segments 
+output March. If month is 1, then in program segment (a), the expression in the if 
+statement in Line 1 evaluates to true. The statement (in Line 2) associated with this if 
+then executes; the rest of the structure, which is the else of this if statement, is skipped; 
+and the remaining if statements are not evaluated. In program segment (b), the 
+computer has to evaluate the expression in each if statement because there is no else 
+statement. As a consequence, program segment (b) executes more slowly than does 
+program segment (a). In a sequence of if. . .else statements, such as (a), if more than 
+one condition is true, only the statements associated with the first true condition will 
+be executed. On the other hand, in a series of if statements, such as (b), if more than 
+one condition evaluates to true, statements associated with each true condition will 
+execute. 
+ 
+
+Short-Circuit Evaluation (of a logical expression): 
+A process in which the computer evaluates a logical expression from left to right and 
+stops as soon as the final value of the expression is known. 
+
+Conditional Operator (?) 
+Certain if. . .else statements can be written in a more concise way by using C++’s 
+conditional operator. The conditional operator, written as ?:, is a ternary operator, 
+which means that it takes three arguments. The syntax for using the conditional 
+operator is: 
+ 
+This type of expression is called a conditional expression. The conditional expression 
+is evaluated as follows: If expression1 evaluates to a nonzero integer (that is, to true), 
+the result of the conditional expression is expression2. Otherwise, the result of the 
+conditional expression is expression3 
+
+Consider the following statements:  
+if (a >= b)  
+max = a; 
+ else  
+max = b; 
+ You can use the conditional operator to simplify the writing of this if. . .else 
+statement as follows: max = (a >= b) ? a : b; 

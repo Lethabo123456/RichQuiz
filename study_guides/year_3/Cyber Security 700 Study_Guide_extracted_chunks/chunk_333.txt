@@ -1,0 +1,38 @@
+Selecting and Reviewing Impact Levels 
+The second step of the security categorization process according to SP 800-60 is to assign security 
+impact levels for the identified information types. The worksheet in Figure 3.4 and the asset register 
+in Figure 3.5 examples of ways to document this process. 
+As an example, in the information and technology management group, SP 800-60 lists system and 
+network monitoring as an information type, with the following suggested classification: 
+{(confidentiality, Moderate), (integrity, Moderate), (availability, Low)} 
+The third step of the security categorization process according to SP 800-60 is simply to review the 
+provisional impact levels, allowing a range of managers and information owners to contribute to the 
+process.
+
+Assigning Security Categories 
+The final step of the security categorization process according to SP 800-60 is to assign a security 
+classification for each information type. If the scheme suggested in SP 800-60 is used, the overall 
+classification of an information type corresponds to its assessed impact, which is the highest of the 
+confidentiality, integrity, and availability impacts. Otherwise, the impact information needs to be 
+mapped into a classification scheme. 
+ 
+An important consideration is the naming of each classification level. The name should make sense in 
+the context of the classification scheme’s application. Classifying information types and properly 
+naming them provide people who deal with information with a concise indication of how to handle 
+and protect that information.
+
+Information Labeling 
+A label needs to be associated with each instance of an information type so that its classification is 
+clearly and unambiguously known. Methods are needed to ensure that a label is not separated from 
+the information and that the content of the label is secure from unauthorized modification. The 
+organization, for convenience and efficiency, may choose not to label non-confidential information. 
+For physical information types, some sort of physical label needs to be attached. This could be a 
+readable label or bar code that adheres to the medium. In some cases, a radio-frequency identification 
+(RFID) tag, which provides other security functionality, may be attached to the information medium. 
+For information stored in electronic form, a number of techniques could be used, including using 
+electronic watermarking, labeling headers and footers, embedding labels in metadata (such as 
+document properties), and using filename conventions. Digital signatures can be used in electronic 
+communications. 
+radio-frequency identification (RFID) 
+A data collection technology that uses electronic tags attached to items to allow the items to be 
+identified and tracked with a remote system. The tag consists of an RFID chip attached to an antenna.

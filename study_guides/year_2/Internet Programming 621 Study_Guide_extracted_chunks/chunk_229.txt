@@ -1,0 +1,69 @@
+age() 
+c) get_memory_usage() 
+d) get_memory_peak_usage() 
+ 
+Answer: c 
+ 
+34. Which of the following PHP functions can be used for generating unique id’s? 
+a) uniqueid() 
+b) id() 
+c) md5() 
+d) mdid() 
+ 
+Answer: a 
+ 
+ 
+ 
+ 
+
+35. Which one of the following functions can be used to compress a string? 
+a) zip_compress() 
+b) zip() 
+c) compress() 
+d) gzcompress() 
+ 
+Answer: d 
+36. What will be the output of the following PHP code? 
+1. 
+<?php 
+2. 
+    echo "chr(52)"; 
+3. 
+    ?> 
+ 
+a) 1 
+b) 2 
+c) 3 
+d) 4 
+ 
+Answer: d 
+ 
+37. What will be the output of the following PHP code? 
+<?php 
+echo ord ("hi"); 
+?> 
+a) 106 
+b) 103 
+c) 104 
+d) 209 
+ 
+Answer: c 
+ 
+38. What will be the output of the following PHP code? 
+<?php 
+$str = "Hello World" 
+echo wordwrap($str,5,"<br>\n");     
+?> 
+a) Hello World 
+b) HelloWorld 
+c) Hello world 
+d) World 
+Answer: b 
+
+39. What will be the output of the following PHP code? 
+<?php 
+echo ucwords("i love my country"); 
+?> 
+a) I love my country 
+b) i love my Country 
+c) I love

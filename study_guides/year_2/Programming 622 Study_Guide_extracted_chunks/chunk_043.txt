@@ -1,0 +1,37 @@
+tal distance travelled:  
+  
+1 + 1 + . . . + 1 + n = 2n   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+(1-1)  
+  
+If the packages are delivered using the second method, the distance travelled is:  
+  
+2 . (1 + 2 + 3 + . . . + n) = 2 . (n (n + 1)/2) = n2 + n   
+  
+  
+  
+  
+  
+  
+(1-2)  
+  
+In Equation (1-1), we say that the distance travelled is a function of n. Let us consider Equation (1-2). In 
+this equation, for large values of n, we will find that the term consisting of n2 will become the dominant 
+term and the term containing n will be negligible. In this case, we say that the distance travelled is a 
+function of n2. Table 1-1 evaluates Equations (1-1) and (1-2) for certain values of n. (The table also shows 
+the value of n2.)  
+  
+TABLE 1-1: Various values of n, 2n, n2, and n2 + n  
+  
+  
+While analysing a particular algorithm, we usually count the number of operations performed by the 
+algorithm. We focus on the number of operations, not on the actual computer time to execute the 
+algorithm. Thi

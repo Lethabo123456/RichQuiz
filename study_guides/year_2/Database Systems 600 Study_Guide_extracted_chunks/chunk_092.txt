@@ -1,0 +1,18 @@
+ternal views (entities, relationships, constraints, and 
+processes) into a single global view of the data in the enterprise, as shown in Figure 2.8. Also known 
+as a conceptual schema, it is the basis for the identification and high-level description of the main 
+data objects (avoiding any database model-specific details). 
+ 
+
+ 
+33 
+The most widely used conceptual model is the ER model. With the ERD being used to graphically 
+represent the conceptual schema. The conceptual model yields some important advantages. First, it 
+provides a bird’s- eye (macro level) view of the data environment that is relatively easy to 
+understand.  
+Second, the conceptual model is independent of both software and hardware. Therefore, changes in 
+either the hardware or the DBMS software will have no effect on the database design at the 
+conceptual level. Generally, the term logical design refers to the task of creating a conceptual data 
+model that could be implemented in any DBMS. 
+The Internal Model 
+The

@@ -1,0 +1,38 @@
+THREE|DELEGATES AND EVENTS 
+ 
+3.1 Introduction 
+In programming, you are often faced with situations where you need to execute a particular action, but you 
+don't know in advance which method, or even which object, you'll want to call upon to execute that action. For 
+example, a button might know that it must notify some object when it is pushed, but it might not know which 
+object or objects need to be notified. Rather than wiring the button to a particular object, you will connect the 
+button to a delegate and then resolve that delegate to a particular method when the program executes. 
+In the early, dark, and primitive days of computing, a program would begin execution and then proceed through 
+its steps until it completed. If the user was involved, the interaction was strictly controlled and limited to filling in 
+fields. 
+
+Today's Graphical User Interface (GUI) programming model requires a different approach, known as event-
+driven programming. A modern program presents the user interface and waits for the user to take an ac-
+tion. The user might take many different actions, such as choosing among menu selections, pushing buttons, up-
+dating text fields, clicking icons, and so forth. Each action causes an event to be raised. Other events can be raised 
+without direct user action, such as events that correspond to timer ticks of the internal clock, email being received, 
+file-copy operations completing, etc. 
+
+An event is the encapsulation of the idea that "something happened" to which the program must respond. 
+Events and delegates are tightly coupled concepts because flexible event handling requires that the response to 
+the event be dispatched to the appropriate event handler. An event handler is typically implemented in C# as a 
+delegate. 
+Delegates are also used as callbacks so that one class can say to another "do this work and when you're done, let 
+me know. Delegates can also be used to specify methods that will only become known at runtime.
+
+3.2 Delegates 
+In C#, delegates are first-class objects, fully supported by the language. Technically, a delegate is a reference type 
+used to encapsulate a method with a specific signature and return type. You can encapsulate any matching 
+method in that delegate.  
+A delegate is created with the delegate keyword, followed by a return type and the signature of the methods 
+that can be delegated to it, as in the following: 
+public delegate int WhichIsFirst(object obj1, object obj2); 
+This declaration defines a delegate named  WhichIsFirst, which will encapsulate any method that takes 
+two obj ects as parameters and returns an int. 
+Once the delegate is defined, you can encapsulate a member method with that delegate by instantiating the del-
+egate, i.e., passing in a method that matches the return type and signature.
+

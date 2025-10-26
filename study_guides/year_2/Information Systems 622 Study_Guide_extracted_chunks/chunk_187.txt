@@ -1,0 +1,18 @@
+expert 
+system searches for rules that contain a reference to product demand. For example, ‘IF product 
+demand is over 15000 units, THEN check the demand for competing products’. As a result of 
+this process, the expert system might use information on the demand for competitive products. 
+Next, after searching additional rules, the expert system might use information on personal 
+income or national inflation rates. This process continues until the expert system can reach a 
+conclusion using the data supplied by the user and the rules that apply in the knowledge base.  
+
+  
+ 
+ 
+81  
+The Explanation Facility   
+An important part of an expert system is the explanation facility, which allows a user or 
+decision maker to understand how the expert system arrived at certain conclusions or results. 
+A medical expert system, for example, might reach the conclusion that a patient has a defective 
+heart valve given certain symptoms and the results of tests on the patient. The explanation 
+facili

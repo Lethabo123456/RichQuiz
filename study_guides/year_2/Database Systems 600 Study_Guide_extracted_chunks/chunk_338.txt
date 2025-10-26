@@ -1,0 +1,14 @@
+- ware, 
+programming exemptions, transactions, or external factors. Table 9.1 summarizes the most common 
+sources of database failure. 
+Depending on the type and extent of the failure, the recovery process ranges from a minor short-
+term inconvenience to a major long-term rebuild. Regardless of the extent of the required recovery 
+process, recovery is not possible without a usable backup. 
+ 
+Database recovery generally follows a predictable scenario. First, the type and extent of the required 
+recovery are determined. If the entire database needs to be recovered to a consistent state, the 
+recovery uses the most recent backup copy of the database in a known consistent state. The backup 
+copy is then rolled forward to restore all subsequent transactions by using the transaction log 
+information. If the database needs to be recovered but the committed portion of the database is still 
+usable, the recovery process uses the transaction log to “undo” all of the transactions that were not 
+c

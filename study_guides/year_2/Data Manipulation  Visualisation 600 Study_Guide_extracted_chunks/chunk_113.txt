@@ -1,0 +1,25 @@
+pyo.plot(fig, filename='line2.html') 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+● To grab a file from a neighboring directory we use pd.read_csv('../data/filename.csv') 
+● We pass in the argument index_col=0 to avoid having pandas add a numerical index to our data. This 
+is described in more detail in the section Data Manipulation with Pandas. 
+● Similar to basic2.py, we use a list comprehension to extract traces from the DataFrame. 
+● An interesting thing about this plot is that the populations of Maine and New Hampshire are nearly equivalent, 
+and you don't see this until you hover over the red line. If you click on New Hampshire in the legend, Maine’s orange 
+line is revealed. 
+ 
+6.3.3 Bar Charts 
+Bar Charts plot different categories along the x-axis, and numerical values along the y-axis. Categories are compared 
+by looking at the height of each bar. For this reason, it’s important that the y-axis always start at zero, to avoid any 
+visual misrepresentations. 
+This section starts with a very simple,

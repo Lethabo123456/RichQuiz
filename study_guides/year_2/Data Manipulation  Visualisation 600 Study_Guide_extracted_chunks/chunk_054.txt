@@ -1,0 +1,22 @@
+3.5 Sorting Along Rows or Columns 
+A useful feature of NumPy’s sorting algorithms is the ability to sort along specific 
+rows or columns of a multidimensional array using the axis argument. 
+ 
+3.6 Computation on NumPy Arrays 
+3.6.1 Element-wise Operations: 
+Element-wise operations in NumPy refer to operations that are applied individually to each element in an array. These 
+operations allow you to perform mathematical operations, functions, or comparisons on each pair of corresponding 
+elements in two or more arrays, without the need for explicit loops. Element-wise operations take advantage of the 
+ability of NumPy to broadcast arrays of different shapes when necessary. Broadcasting is discussed in 3.7. 
+
+3.6.2 Aggregation Functions 
+Aggregate functions in NumPy are functions that perform a computation over the entire array or along a specified 
+axis. These functions allow you to summarize or aggregate information from the elements of an array. Some common 
+aggregate functions in NumPy include sum, mean, minimum, maximum, standard deviation, and variance. 
+
+3.6.3 Statistical Functions 
+Statistical functions in NumPy are functions that provide insights into the statistical properties of an array. They allow 
+you to compute various statistical measures such as mean, median, standard deviation, variance, and percentiles. 
+These functions are essential for analyzing data and understanding the distribution of values within an array. 
+ 
+3.6.4 Arithmetic operations  

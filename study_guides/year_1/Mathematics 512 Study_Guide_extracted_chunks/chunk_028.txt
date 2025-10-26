@@ -1,0 +1,27 @@
+3.3 Infinite Limits 
+If a function is defined on either side of a, but the limit as 𝑥 approaches 𝑎 is 
+infinity or negative infinity, then the function has an infinite limit. The graph 
+of the function will have a vertical asymptote at a. A curve 𝑦 = 𝑓(𝑥) will have 
+a vertical asymptote at      𝑥 = 𝑎 if any of the following conditions hold:  
+ 
+𝐥𝐢𝐦𝒙→𝒂∓𝒇(𝒙) = ∞  𝐥𝐢𝐦𝒙→𝒂− 𝒇(𝒙) =  ∞   𝐥𝐢𝐦𝒙→𝒂 𝒇(𝒙) = ∞     
+𝐥𝐢𝐦𝒙→𝒂∓𝒇(𝒙) = −∞  𝐥𝐢𝐦𝒙→𝒂− 𝒇(𝒙) = −∞    𝐥𝐢𝐦𝒙→𝒂 𝒇(𝒙) = −∞     
+ 
+ 
+Figure 3.3 
+
+When dealing with rational functions, there will always be a vertical asymptote 
+at values of x that make the denominator equal to 0.  
+This is due to the fact that the function is undefined at points where the 
+denominator is 0. However, you must still show that one of the conditions 
+above holds true to prove that there is a vertical asymptote at that point.
+
+To find the vertical asymptotes of the function 𝑦= cot 𝑥, we can rewrite    
+cot 𝑥 = cos𝑥 / 𝑠𝑖𝑛𝑥. The function will be undefined for values of 𝑥 where sin 𝑥 = 0. 
+The graph of sin 𝑥 intercepts the 𝑥 axis at 𝑥 = 0, 𝜋, 2 𝜋, … = k 𝜋, for any integers 
+of k. So the graph of 𝑦= cot 𝑥 will have a vertical asymptote at every 𝑥 = k 𝜋 
+For the graph of 𝑦= cot 𝑥, we can see that for every 𝑎 = k 𝜋, lim𝑎→𝑎−cot 𝑥 = - ∞ 
+and lim𝑎→𝑎+ cot 𝑥 = ∞. Since these conditions hold, we know that there is an 
+infinite limit, and thus a vertical asymptote, at every 𝑎 = k 𝜋 
+
+Figure 3.4

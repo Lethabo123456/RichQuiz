@@ -1,0 +1,24 @@
+1.13.1 Device Servers Defined 
+A device server is “a specialized network-based hardware device designed to perform a single or 
+specialized set of functions with client access independent of any operating system or proprietary 
+protocol.” Device servers allow independence from proprietary protocols and the ability to meet a 
+number of different functions. The RAID controller application discussed above is just one of many 
+applications where device servers can be used to put any device or “machine” on the network. 
+PCs have been used to network serial devices with some success.  This, however, required the 
+product with the serial port to have software able to run on the PC, and then have that application 
+software allow the PC’s networking software to access the application. This task equaled the 
+problems of putting Ethernet on the serial device itself so it wasn’t a satisfactory solution. 
+
+To be successful, a device server must provide a simple solution for networking a device and allow 
+access to that device as if it were locally available through its serial port. Additionally, the device 
+server should provide for the multitude of connection possibilities that a device may require on 
+both the serial and network sides of a connection. Should the device be connected all the time to 
+a specific host or PC? Are there multiple hosts or network devices that may want or need to 
+connect to the newly-networked serial device? Are there specific requirements for an application  
+which requires the serial device to reject a connection from the network under certain 
+circumstances? The bottom line is a server must have both the flexibility to service a multitude of 
+application requirements and be able to meet all the demands of those applications. 
+Capitalizing on Lantronix Device Server Expertise and Proven Solutions 
+Lantronix is at the forefront of M2M communication technology.The company is 
+highly focused on enabling the networking of devices previously not on 
+the network so they can be accessed and managed remotely. 

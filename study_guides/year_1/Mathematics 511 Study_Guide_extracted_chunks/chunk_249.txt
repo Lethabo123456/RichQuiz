@@ -1,0 +1,23 @@
+Several types of problems involving weighted graphs arise frequently. 
+Determining a path of least length between two vertices in a network is one 
+such problem. To be more specific, let the length of a path in a weighted 
+graph be the sum of the weights of the edges of this path. (The reader should 
+note that this use of the term length is different from the use of length to 
+denote the number of edges in a path in a graph without weights.) The 
+question is: What is a shortest path, that is, a path of least length, between 
+two given vertices? For instance, in the airline system represented by the 
+weighted graph shown in Figure 4.20, what is a shortest path in air distance 
+between Boston and Los Angeles? What combinations of flights has the 
+smallest total flight time (that is, total time in the air, not including time 
+between flights) between Boston and Los Angeles? What is the cheapest fare 
+between these two cities? In the computer network shown in Figure 4.20, 
+what is a least expensive set of telephone lines needed to connect the 
+computers in San Francisco with those in New York? Which set of telephone 
+lines gives a fastest response time for communications between San 
+Francisco and New York? Which set of lines has a shortest overall distance? 
+Another important problem involving weighted graphs asks for a circuit of 
+shortest total length that visits every vertex of a complete graph exactly 
+once. This is the famous traveling salesperson problem, which asks for an 
+order in which a salesperson should visit each of the cities on his route 
+exactly once so that he travels the minimum total distance. We will discuss 
+the traveling salesperson problem later in this section. 

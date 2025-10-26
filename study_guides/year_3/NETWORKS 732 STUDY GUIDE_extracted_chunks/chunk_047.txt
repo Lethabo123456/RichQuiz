@@ -1,0 +1,22 @@
+Verify Physical Layer Connectivity 
+
+The Physical Layer (Layer 1 of the OSI model) accounts for over half of all network issues. This 
+layer includes cabling, connectors, NICs, and signal transmission. Faults here are often simple 
+but can lead to intermittent or total connectivity loss. 
+ 
+Common Symptoms of Physical Layer Problems: 
+ 
+• Inconsistent or no connection to the network 
+• Intermittent performance drops 
+• Inability to access speciﬁc servers or services 
+
+Possible Physical Causes: 
+ 
+• Cable segments exceeding IEEE standards (e.g., Ethernet > 100m) 
+• EMI or cross talk disrupting signals 
+• Faulty terminations or loose connectors 
+• Damaged or bent cables 
+• Failing NICs or transceivers 
+ 
+Note: While software errors generally don’t indicate physical problems, they sometimes do. 
+For instance, database access errors may stem from a faulty connection to the database server.

@@ -1,0 +1,25 @@
+Even vertical scrolling should be limited. Lists are obvious choices for vertical 
+scrolling, but other types of interface elements should be limited. In addition, when scrolling, you must 
+also fix certain elements so that the user can perform needed operations without scrolling back 
+through the entire contents of the screen. 
+
+The obvious answer to the limited screen size is to carefully plan the user’s interaction with your app. 
+Screens should focus on one, or a very limited and coherent, set of tasks that the user can or would 
+want to do. Navigation should be planned and designed so that it is obvious to the user how to proceed 
+to the next task. If a task requires multiple steps, those steps should be designed as distinct screens, 
+and the user should be guided through the screens needed to complete the whole task. 
+Although screen size is a nontrivial design issue, the fact that by default a screen’s orientation can 
+change as the user turns the device also presents design issues. When the user turns the device from 
+vertical to horizontal orientation, the layout or view reorganizes to that orientation. 
+
+This significantly changes the amount of vertical and horizontal real estate for your interface. 
+Interface elements that were obvious to the user in the vertical orientation may become inaccessible in the horizontal 
+orientation. Again, this can be a very frustrating experience for your user, unless you carefully plan for 
+the layout in both orientations and thoroughly test it as well. Scrolling can be implemented to alleviate 
+some of the problems associated with orientation change. However, simply adding scrolling may not 
+solve the user experience issues. If you cannot make it work in an alternative orientation, as a last 
+resort you can code the app to work in only one orientation. The solutions to these screen size and orientation 
+issues are planning and design. What does the user 
+want to do with your app? What can your user do with your app? What are the logical steps needed 
+to accomplish those tasks, given the device limitations? These are the types of questions you must 
+answer to design a successful app.

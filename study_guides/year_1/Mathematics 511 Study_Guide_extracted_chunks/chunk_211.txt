@@ -1,0 +1,29 @@
+A computer network may contain multiple links between data centers, as 
+shown in Figure 4.1. To model such networks we need graphs that have more 
+than one edge connecting the same pair of vertices. Graphs that may have 
+multiple edges connecting the same vertices are called multigraphs. When 
+there are m different edges associated to the same unordered pair of 
+vertices {u, v}, we also say that {u, v} is an edge of multiplicity m
+different copies of an edge {u, v}. 
+ 
+Figure 4.2: A Computer Network with Multiple Links between Data Centers. 
+ 
+Sometimes a communications link connects a data center with itself, perhaps 
+a feedback loop for diagnostic purposes. Such a network is illustrated in 
+Figure 4.3. To model this network we need to include edges that connect a 
+vertex to itself. Such edges are called loops, and sometimes we may even 
+have more than one loop at a vertex. Graphs that may include loops, and 
+possibly multiple edges connecting the same pair of vertices or a vertex to 
+itself, are sometimes called pseudographs. 
+ 
+Figure 4.3: A Computer Network with Diagnostic Links. 
+ 
+So far the graphs we have introduced are undirected graphs. Their edges are 
+also said to be undirected. However, to construct a graph model, we may 
+find it necessary to assign directions to the edges of a graph. For example, in 
+a computer network, some links may operate in only one direction (such 
+links are called single duplex lines). This may be the case if there is a large 
+amount of traffic sent to some data centers, with little or no traffic going in 
+the opposite direction. Such a network is shown in Figure 4.4. 
+To model such a computer network we use a directed graph. Each edge of a 
+directed graph is associated to an ordered pair.

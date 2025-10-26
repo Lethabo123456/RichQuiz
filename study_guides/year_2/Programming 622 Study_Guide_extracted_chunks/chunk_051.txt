@@ -1,0 +1,19 @@
+op a notation that is useful in describing the behavior of the algorithm, 
+which gives us the most useful information about the algorithm. First, we define the term asymptotic.  
+  
+Let f be a function of n. By the term asymptotic, we mean the study of the function f as n becomes larger 
+and larger without bound.  
+  
+Consider the functions g(n) = n2 and f(n) = n2 + 4n + 20. Clearly, the function g does not contain any linear 
+term, that is, the coefficient of n in g is zero. Consider Table 1-4.  
+  
+  
+  
+  
+TABLE 1-4: Growth rate of n2 and n2 + 4n + 20  
+  
+  
+Clearly, as n becomes larger and larger the term 4n + 20 in f(n) becomes insignificant, and the term n2 
+becomes the dominant term. For large values of n, we can predict the behavior of f(n) by looking at the 
+behavior of g(n). In algorithm analysis, if the complexity of a function can be described by the complexity 
+of a quadratic function without the linear term, we say that the function is of O(n2), called Big-O of n2.

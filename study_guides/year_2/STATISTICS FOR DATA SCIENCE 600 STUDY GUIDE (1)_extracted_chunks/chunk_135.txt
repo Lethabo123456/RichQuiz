@@ -1,0 +1,36 @@
+The results of our A/B test 
+We can quickly drum up some descriptive statistics. We can say that the website 
+conversion rates for the two websites are as follows: 
+
+• Conversion for website A:  
+• Conversion for website B: 
+ 
+Not much difference, but different, nonetheless. Even though B has the higher conversion 
+rate, can we really say that the version B significantly converts better? Not yet. To test the 
+statistical significance of such a result, a hypothesis test should be used. These tests will be 
+covered in depth in the next chapter, where we will revisit this exact same example and 
+finish it using the proper statistical test. 
+Sampling data 
+Remember how statistics are the result of measuring a sample of a population. Well, we 
+should talk about two very common ways to decide who gets the honour of being in the 
+sample that we measure. We will discuss the main type of sampling, called random sampling, 
+which is the most common way to decide our sample sizes and our sample members. 
+Probability sampling 
+Probability sampling is a way of sampling from a population, in which every person has a 
+known probability of being chosen but that number might be a different probability than 
+another user. The simplest (and probably the most common) probability sampling method is 
+random sampling. 
+
+Random sampling 
+Suppose that we are running an A/B test, and we need to figure out who will be in group A 
+and who will be in group B. There are the following three suggestions from your data team: 
+• Separate users based on location: Users on the west coast are placed in group A, 
+while users on the east coast are placed in group B 
+• Separate users based on the time of day they visit the site: Users who visit between 
+7 p.m. and 4 a.m. get site A, while the rest are placed in group B 
+• Make it completely random: Every new user has a 50/50 chance of being placed in 
+either group 
+ 
+The first two are valid options for choosing samples and are simple to implement, 
+but they both have one fundamental flaw: they are both at risk of introducing a 
+sampling bias. 

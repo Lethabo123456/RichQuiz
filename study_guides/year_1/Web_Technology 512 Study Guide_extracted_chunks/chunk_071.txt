@@ -1,0 +1,34 @@
+osing you wanted to test a variable to 
+see what value it holds. But you also want to do further tests on it. You can do this kind 
+of thing: 
+if ( x > 1)  
+{ 
+ 
+if ( x == 2)  
+{ 
+} 
+else if (x == 3 )  
+{ 
+} 
+} 
+In the code above, we have first testing if the variable x is greater than 1. But we want 
+to narrow it down even further. If it is indeed greater than 1 then a nested if … else 
+statement gets executed. This further scrutinises the x variable. 
+  
+3.5 JAVASCRIPT COMPARISON OPERATORS 
+ 
+
+ 
+47 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+The IF statements you have used so far test a condition for true or false. They have 
+used the double equal sign (==). But there are other operators you can use besides the 
+double equal sign. These are known as comparison operators. Here are some more of 
+them. Remember, all these evaluate to either true or false. 
+!=   Is not equal to 
+>    Greater Than 
+<    Less Than 
+>=    Greater Than or equal to 
+<=    Less Than or equal to 
+===    Is exactl

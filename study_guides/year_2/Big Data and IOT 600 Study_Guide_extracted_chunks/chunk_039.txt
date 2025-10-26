@@ -1,0 +1,49 @@
+Additionally, securing privileged user access must be a top priority for enterprises. Certain 
+users must be given access to highly sensitive data in certain business processes, but avoiding 
+potential misuse of data can be tricky. Securing privileged user access requires well-defined 
+security policies and controls that permit access to data and systems required by specific 
+employee roles while preventing privileged user access to sensitive data where access is not 
+necessary – a practice commonly referred to as the “principle of least privilege.” It is critically 
+important to provide a system in which encrypted authentication/validation verifies that 
+users are who they say they are, and determine who can see what. 
+
+From Big Data adoption arises one question: How can you leverage big data’s potential 
+while effectively mitigating big data security risks? 
+(Digital Guardian, 2017) 
+
+Since Big Data implementations distribute their processing jobs across many systems for 
+faster analysis, due to their large volumes, this means a lot more systems where security 
+issues can crop up. 
+Non-relational data stores like NoSQL, which are used in Big Data systems, usually lack 
+security. 
+In Big Data architecture, the data which is usually stored in the cloud, is also typically stored 
+on multiple tiers, depending on business needs for performance. For example, high-priority 
+“hot” data will usually be stored on flash media for faster performance. Hence securing 
+storage will mean creating a tier-conscious security strategy. 
+Security solutions that draw logs from endpoints will need to validate the authenticity of 
+those endpoints. 
+
+Real-time security tools generate a large amount of information; the key is finding a way to 
+ignore the false alarms, so human talent can be focused on the true breaches. 
+Data mining solutions should ensure that they are secured against not just external threats, 
+but insiders, who abuse network privileges, to obtain sensitive information. 
+Security Technologies/Approaches in Big Data 
+Granular auditing can help determine when missed attacks have occurred, what the 
+consequences were, and what should be done to improve matters in the future. This in itself 
+is a lot of data, and must be enabled and protected to be useful in addressing big data security 
+issues. 
+
+Data provenance primarily concerns metadata (data about data), which can be extremely 
+helpful in determining where data came from, who accessed it, or what was done with it. 
+Usually, this kind of data should be analysed with exceptional speed to minimize the time in 
+which a breach is active. Privileged users engaged in this type of activity must be thoroughly 
+vetted and closely monitored to ensure they do not become their own big data security issues. 
+Encryption tools need to secure data in-transit and data at-rest, and more importantly, these 
+needs to be achieved across massive data volumes. Furthermore, encryption needs to operate 
+on many different types of data, both user and machine-generated. Encryption tools also need 
+to work with different analytics toolsets and their output data, and on common big data storage 
+formats including relational database management systems (RDBMS), non-relational 
+databases like NoSQL, and specialized file systems such as Hadoop Distributed File System 
+(HDFS). Encrypted data is useless to external entities, such as hackers, if they do not have the 
+key to unlock it. Moreover, encrypting data means that both at input and output, information is 
+completely protected. 

@@ -1,0 +1,19 @@
+h is the value sent to the server if that option is 
+selected. If you do not include a value attribute, the text between the <option> ... </option> 
+tags is sent instead:   
+   
+               <label for=”pullDownMenu”>A pull-down menu</label>   
+                      <select name=”pullDownMenu” id=”pullDownMenu” size=”1”>   
+                            <option value=”option1”>Option 1</option>   
+                            <option value=”option2”>Option 2</option>   
+                            <option value=”option3”>Option 3</option>   
+                     </select>   
+   
+• 
+A list box — This works just like a pull-down menu, except that it displays several options at 
+once. To turn a pull-down menu into a list box, change the size attribute from 1 to the 
+number of options to display at once:   
+   
+               <label for=”listBox”>A list box</label>   
+               <select name=”listBox” id=”listBox” size=”3”>   
+                        <option value=”option1”>Option 1</op

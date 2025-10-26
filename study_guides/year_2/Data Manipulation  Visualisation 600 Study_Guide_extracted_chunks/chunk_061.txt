@@ -1,0 +1,51 @@
+4.1 Line Plots  
+Matplotlib is well-suited for creating basic line plots to visualize trends and patterns in data. It provides a simple 
+interface to plot one-dimensional data. The image below shows the basic steps to plot a line graph, which includes 
+importing matplotlib, defining data, creating a line chart using plt.plot. Specify the x-axis (years), y-axis (gdp), line 
+color (color='green'), marker style (marker='o' for circles), and line style (linestyle='solid' for a solid line). Enhance 
+the chart by adding a title using plt.title() and labeling the y-axis with plt.ylabel(). Finally, use plt.show() to display 
+the completed line chart. By following these steps, you can create a line plot using Matplotlib and customize it 
+according to your data and visualization preferences. 
+
+4.2 Bar Charts 
+A bar chart is a suitable representation when the objective is to illustrate the variation of a particular quantity 
+across a discrete set of items. The image below shows step by step process of creating a bar graph using the 
+Matplotlib library. Begin by importing the pyplot module from Matplotlib. Specify the data for the bar chart, where 
+movies represent the titles of the movies, and num_oscars corresponds to the number of Academy Awards each 
+movie received. Utilize plt.bar() to generate the bar chart, setting the left x-coordinates as range(len(movies)) and 
+the heights as num_oscars. Enhance the chart by including a title using plt.title() and labeling the y-axis with 
+plt.ylabel(). Label the x-axis with movie names at the centers of the bars using plt.xticks(). Finally, use plt.show() to 
+present the completed bar chart. 
+
+4.3 Scatter Plots 
+A scatterplot is the right choice for visualizing the relationship between two paired sets of data. The image below 
+shows the relationship between the number of friends your users have and the number of minutes they spend on 
+the site every day. Begin by importing the pyplot module from Matplotlib. Specify the data for the scatter plot, 
+where friends represent the number of friends, minutes represent the daily minutes spent on the site, and labels 
+provide labels for each point. Utilize plt.scatter() to generate the scatter plot using the provided data. Iterate 
+through the data points and use plt.annotate() to label each point with the corresponding label, slightly offsetting 
+the labels for better visibility. Enhance the plot by including a title and labeling the x and y axes. Finally, use 
+plt.show() to present the completed scatter plot. 
+
+4.4 Customizing Plots with Titles, Labels, Colours, and Styles 
+Matplotlib provides a powerful and flexible environment for creating diverse and visually appealing plots in data 
+science and visualization tasks. This capability is particularly valuable when dealing with complex datasets and the 
+need for detailed, comparative visualizations. 
+
+4.4.1 Titles 
+The plt.title() function is used to add a title to the plot. 
+
+4.4.2 Labels  
+Labels for the x-axis and y-axis are added using plt.xlabel() and plt.ylabel() functions, respectively.  
+ 
+4.4.3 Colours 
+The colour parameter in plotting functions allows you to specify the colour of the plot. 
+ 
+4.4.4 Styles 
+The line style and marker parameters help customize the style of lines and markers in the plot. 
+ 
+4.4.5 Linespace 
+ 
+4.5 Multiple Subplots for Complex Visualizations 
+Matplotlib enables the creation of multiple subplots within a single figure, facilitating the comparison of various 
+visualizations side by side. The plt.subplot() function is used for this purpose. 

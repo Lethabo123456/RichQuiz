@@ -1,0 +1,23 @@
+Example – World alcohol consumption data 
+The World Health Organization released a dataset describing the average drinking habits of people in 
+countries across the world. We will use Python and the data exploration tool, Pandas, in order to gain 
+a better look: 
+ 
+Code Extract 2.1 
+import pandas as pd 
+ 
+# read in the CSV file from a URL 
+drinks= 
+pd.read_csv('https://raw.githubusercontent.com/sinanuozdemir/principles_of_data_sci
+ence/master/data/chapter_2/drinks.csv') 
+ 
+# examine the data's first five rows 
+drinks.head()# print the first 5 rows 
+ 
+Explanation 
+The code extract has done the following: 
+• Imported pandas, which will be referred to as pd in the future 
+• Read in a CSV (comma separated value) file as a variable called drinks 
+• Called a method, head, that reveals the first five rows of the dataset 
+ 
+The drinks.csv file generated: 

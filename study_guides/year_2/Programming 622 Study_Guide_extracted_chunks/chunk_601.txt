@@ -1,0 +1,23 @@
+he upperSublist. The elements in the 
+lowerSublist are smaller than the pivot, and the elements in the upperSublist are greater than the pivot. 
+For example, consider the list in Figure 8-21.  
+  
+  
+FIGURE 8-21 list before the partition  
+  
+There are several ways to determine the pivot. However, the pivot is chosen so that, it is hoped, the 
+lowerSublist and upperSublist are of nearly equal size. For illustration purposes, let us choose the middle 
+element of the list as the pivot. The partition procedure that we describe partitions this list using the pivot 
+as the middle element, in our case 50, as shown in Figure 8-22.  
+  
+  
+FIGURE 8-22 list after the partition  
+  
+
+298  
+  
+From Figure 8-22, it follows that after partitioning list into lowerSublist and upperSublist, the pivot is in 
+the right place. Thus, after sorting lowerSublist and upperSublist, combining the two sorted sublists is 
+trivial.  
+  
+The partition algorithm is as follows: (We assume that pivot is chosen as the

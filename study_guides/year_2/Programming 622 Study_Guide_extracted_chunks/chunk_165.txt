@@ -1,0 +1,25 @@
+tput iterators are used to output data to an output stream.  
+28. A forward iterator can refer to the same element in the same collection and process the same element 
+more than once.  
+29. Bidirectional iterators are forward iterators that can also iterate backwards over the elements.  
+30. Bidirectional iterators can be used with containers of type list, set, multiset, map, and multimap.  
+31. Random access iterators are bidirectional iterators that can randomly process the elements of a 
+container.  
+32. Random access iterators can be used with containers of type vector, deque, string, and arrays.  
+  
+  
+
+79  
+  
+ 
+ 
+Exercises  
+  
+1. What are the three main components of the STL?  
+  
+2. What is the difference between an STL container and an STL iterator?  
+  
+3. Write a statement that declares a vector object that can store 50 decimal numbers.  
+  
+4. Write a statement that declares and stores the elements of the following array into a vector object:  
+ char vowels[5] = {'a', 'e'

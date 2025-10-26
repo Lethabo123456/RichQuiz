@@ -1,0 +1,25 @@
+st[0]. The second time through the loop, we locate the smallest element in 
+list[1]...list[length-1] and swap this smallest element with list[1], and so on. This process continues until 
+the length of the unsorted list is 1. (Note that a list of length 1 is sorted.) It, therefore, follows that to 
+implement selection sort, we need to implement Steps 1 and 2.  
+  
+Given the starting index, first, and the ending index, last, of the list, the following C++ function returns the 
+index of the smallest element in list[first]...list[last]:  
+  
+template <class elemType>  
+int arrayListType<elemType>::minLocation(int first, int last)  
+{  
+int minIndex;  
+  
+minIndex = first;  
+for (int loc = first + 1; loc <= last; loc++) if( 
+list[loc] < list[minIndex]) 
+minIndex = loc;  
+return minIndex;  
+} //end minLocation  
+  
+Given the locations in the list of the elements to be swapped, the following C++ function, swap, swaps 
+those elements:  
+  
+template <class elemType>  
+void arrayListType<elemTyp

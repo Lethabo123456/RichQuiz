@@ -1,0 +1,11 @@
+whose values change over time and for which you must keep a history of the data changes. You 
+could argue that all data in a database is subject to change over time and is therefore time variant. 
+However, some attribute values, such as your date of birth or your Social Security number, are not 
+time variant. On the other hand, attributes such as your student GPA or your bank account balance 
+are subject to change over time. Sometimes the data changes are externally originated and event 
+driven, such as a product price change. On other occasions, changes are based on well-defined 
+schedules, such as the daily stock quote “open” and “close” values. The storage of time-variant data 
+requires changes in the data model; the type of change depends on the nature of the data. Some, 
+time-variant data is equivalent to having a multivalued attribute in your entity. To model this type 
+of time-variant data, you must create a new entity in a 1:M relationship with the original entity. 
+This new

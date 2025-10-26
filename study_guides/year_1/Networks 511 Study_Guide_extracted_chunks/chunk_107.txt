@@ -1,0 +1,26 @@
+2.6 Ethernet Frames 
+Ethernet Frame DEST MAC SOURCE MAC ET PAYLOAD 46-1500 BYTES Ethernet Frame consists of: 6 
+Byte: Destination MAC address 6 Byte: Source MAC addresses 2 Byte: Ethertype 46 - 1500 Bytes 
+Payload. There are other Ethernet frame formats but they are the minority. 
+MAC Addresses MAC address (also known as hardware address or physical address) is a 6 byte 
+address assigned by the IEEE Standards Association and is unique for every Ethernet device ever 
+manufactured. The first three bytes are the OUI (Organizationally Unique Identifier) the second 
+three bytes is a unique identifier assigned by the vendor. Thus OUI Card Specific ID. 
+MAC Address MAC Address of Ethernet NIC 
+ 
+
+Figure 33: Identifying the MAC address 
+
+Figure 34: OUI 
+The above diagram shows the OUI of a few companies but the above. 
+Below is a NIC card showing the MAC address on the white strap of paper. 
+
+Figure 35: NIC Card 
+There are other ethernet over other standards like IEEE 1905.1-2013. 
+Further reading:  Network+ Study Guide by Todd Lammle 3rd Edition on, pp. 105- 116.  
+Special MAC Addresses Broadcast: A MAC with all bits set FF FF FF FF FF FF is a BROADCAST. It is 
+received by all devices on the Ethernet segment Multicast: A MAC address with the least significant 
+bit of the most significant byte set is a MULTICAST address. 01 00 00 00 00 00 00 Note: Ethernet 
+frames are always displayed from most significant to least significant. In actual transmission, each 
+byte is transmitted from least significant bit to most significant bit. Some RFCs reference this as “first 
+bit transmitted”.  

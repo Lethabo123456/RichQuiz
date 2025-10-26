@@ -1,0 +1,26 @@
+This argument is valid because its form is valid. Note that whenever we replace 𝑝 
+and 𝑞 by propositions where 𝑝 → 𝑞 and 𝑝 are both true, then 𝑞 must also be true. 
+What happens when we replace 𝑝 and 𝑞 in this argument form by 
+propositions where not both 𝑝 and 𝑝 → 𝑞 are true? For example, suppose 
+that 𝑝 represents “You have access to the network” and 𝑞 represents “You 
+can change your grade” and that p is true, but 𝑝 → 𝑞 is false. The argument 
+we obtain by substituting these values of 𝑝 and 𝑞 into the argument form is: 
+
+“𝐼𝑓 𝑦𝑜𝑢 ℎ𝑎𝑣𝑒 𝑎𝑐𝑐𝑒𝑠𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑛𝑒𝑡𝑤𝑜𝑟𝑘, 𝑡ℎ𝑒𝑛 𝑦𝑜𝑢 𝑐𝑎𝑛 𝑐ℎ𝑎𝑛𝑔𝑒 𝑦𝑜𝑢𝑟 𝑔𝑟𝑎𝑑𝑒. ” 
+“𝑌𝑜𝑢 ℎ𝑎𝑣𝑒 𝑎𝑐𝑐𝑒𝑠𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑛𝑒𝑡𝑤𝑜𝑟𝑘. ” 
+ 
+∴ “𝑌𝑜𝑢 𝑐𝑎𝑛 𝑐ℎ𝑎𝑛𝑔𝑒 𝑦𝑜𝑢𝑟 𝑔𝑟𝑎𝑑𝑒. ” 
+The argument we obtained is a valid argument, but because one of the 
+premises, namely the first premise, is false, we cannot conclude that the 
+conclusion is true. (Most likely, this conclusion is false.) 
+In our discussion, to analyze an argument, we replaced propositions by 
+propositional variables. This changed an argument to an argument form. We 
+saw that the validity of an argument follows from the validity of the form of
+
+We do not need to use truth tables or the shorter truth table technique in order 
+to asses the validity of arguments in propositional form. Instead, we can show the validity 
+of an argument by deriving its conclusion from its premises using argument forms 
+that are known to be valid.  
+
+the argument. We summarize the terminology used to discuss the validity of 
+arguments with our definition of the key notions.

@@ -1,0 +1,35 @@
+4.1.21 The HEAD Method  
+The HTTP HEAD method is very similar to the HTTP GET method. The request looks exactly the same as 
+the GET request (except the word HEAD is used instead of GET), but the server only returns the header 
+information.   
+HEAD is often used to check the following:   
+
+• The last-modified date of a document on the server for caching purposes   
+• The size of a document before downloading (so the browser can present progress information)   
+• The server type, allowing the client to customize requests for that server   
+• The type of the requested document, so the client can be sure it supports it   
+
+Note that HEAD, like GET, is expected to be safe and idempotent.
+
+4.1.22 The POST Method  
+An HTTP POST request allows a client to send data to the server. This can be used for several purposes, 
+such as   
+• Posting information to a newsgroup   
+• Adding entries to a web site's guest book   
+• Passing more information than a GET request allows   
+  
+Pay special attention to the third bullet above. The HTTP GET request passes all its arguments as part of 
+the URL. Many web servers have a limit to how much data they can accept as part of the URL. The POST 
+method passes all of its parameter data in an input stream, removing this limit.  A typical POST request 
+might be as follows:   
+  
+POST /servlet/MyServlet HTTP/1.1 User-Agent: Mozilla/4.0 (compatible;    MSIE 4.01;    
+Windows NT) Host: www.magelang.com Accept: image/gif, image/x-xbitmap,  image/jpeg, 
+image/pjpeg, */ Content-type: application/x-www-form-urlencoded Content-length: 39  
+  
+  name=Scott&company=MageLang%20Institute  
+  
+Note the blank line--this signals the end of the POST request header and the beginning of the extended 
+information.   
+Unlike the GET method, POST is not expected to be safe nor idempotent; it can perform modifications to 
+data, and it is not required to be repeatable.  

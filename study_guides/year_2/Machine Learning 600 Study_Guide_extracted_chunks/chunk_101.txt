@@ -1,0 +1,13 @@
+an issue with the likes of gender, where the common output 
+would be Male = 0 and Female = 1, for example. Raw text wouldn't be suitable, so it will either 
+need to be tidied up, hashed to numeric values, or removed from the test data. As with all 
+data strategies, it's a case of thinking about what's important and what data you can live 
+without. 
+As more variables increase in your data for classification, you will come across the 
+phenomenon called “the curse of dimensionality.” This is when added variables increase the 
+total volume of training data required to get reasonable results and insight. So, when you are 
+thinking of adding another variable, make sure you have enough training data to cover 
+eventualities across all the other variables. Although neural networks are pretty tolerant to 
+noisy data, it's worth trying to ensure that there aren't large outliers that could potentially 
+cause issues with the results. Either find and remove the wayward digits or turn them into 
+miss

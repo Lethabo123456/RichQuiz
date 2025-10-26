@@ -1,0 +1,15 @@
+(minimal) spanning tree of G is a spanning tree with 
+the minimum weight.  
+  
+There are two well-known algorithms, Prim’s algorithm and Kruskal’s algorithm, for finding a minimum 
+spanning tree of a graph. This section discusses Prim’s algorithm to find a minimum spanning tree.   
+  
+Prim’s algorithm builds the tree iteratively by adding edges until a minimum spanning tree is obtained. 
+We start with a designated vertex, which we call the source vertex. At each iteration, a new edge that 
+does not form a cycle is added to the tree.  
+  
+Let G be a weighted graph such that V(G) = {v0, v1,. . .,vn-1}, where n, the number of vertices, is nonnegative. 
+Let v0 be the source vertex. Let T be the partially built tree. Initially V(T) contains the source vertex and 
+E(T) is empty. At the next iteration, a new vertex that is not in V(T) is added to V(T), such that an edge 
+exists from a vertex in T to the new vertex so that the corresponding edge has the smallest weight. The 
+corresponding edg

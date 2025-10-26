@@ -1,0 +1,24 @@
+4.6 Shortest-Path Problems 
+Introduction 
+Many problems can be modelled using graphs with weights assigned to their 
+edges. As an illustration, consider how an airline system can be modelled. 
+We set up the basic graph model by representing cities by vertices and flights 
+by edges. Problems involving distances can be modelled by assigning 
+distances between cities to the edges. Problems involving flight time can be 
+modelled by assigning flight times to edges. Problems involving fares can be 
+modelled by assigning fares to the edges. Figure 4.19 displays three different 
+assignments of weights to the edges of a graph representing distances, flight 
+times, and fares, respectively.
+
+
+Figure 4.19: Weighted Graphs Modelling an Airline System. 
+ 
+ 
+Graphs that have a number assigned to each edge are called weighted 
+graphs. Weighted graphs are used to model computer networks. 
+Communications costs (such as the monthly cost of leasing a telephone line), 
+the response times of the computers over these lines, or the distance 
+between computers, can all be studied using weighted graphs. Figure 4.20 
+displays weighted graphs that represent three ways to assign weights to the 
+edges of a graph of a computer network, corresponding to distance, 
+response time, and cost.

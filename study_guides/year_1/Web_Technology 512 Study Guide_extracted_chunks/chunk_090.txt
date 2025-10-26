@@ -1,0 +1,39 @@
+BR>"); 
+ 
+When you run then code you should see the following in the browser: 
+ 
+
+ 
+56 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+Figure 3.9 
+By the end, the, answer is 55. Wewent 10 times round the loop, adding up each time 
+round. 
+  
+Exercise 3.7 
+Use a for loop to print out the numbers from 1 to 20. 
+ 
+Exercise 3.8 
+Use a for loop to print out the odd numbers from 1 to 20. (You'll need Modulus for 
+this. And an IF Statement.)Your for loop should look like this: 
+for ( start_value; start_value < end_value; start_value++ 
+)  
+{ 
+if ( )  
+{ 
+document.write("answer= " + start_value + "<BR>"); 
+} 
+} 
+ 
+Obviously, you will need something between the round brackets of your IF Statement.  
+  
+3.10.2 Common end values 
+ 
+Another common end value for loops is to get the length of something, the length of a 
+string of text, for example, or the length of an array (you will learn about arrays in a 
+later section). In the code below, notice how we're using length: 
+ 
+var start_value = 1; 
+var s

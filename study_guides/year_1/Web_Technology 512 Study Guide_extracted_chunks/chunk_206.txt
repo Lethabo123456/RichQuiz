@@ -1,0 +1,52 @@
+ter the document object reference we have body. This obviously 
+references the BODY part of a HTML page. After a dot, we have the insertBefore 
+method: 
+insertBefore( newPara, getFooter ) 
+ 
+We have two arguments here, separated by a comma. The first argument is the 
+new HTML element itself. The second argument is a location for the new element. 
+ 
+The whole of the latestnews function, then, is this: 
+ 
+Figure 8.3 
+Try it out by creating a file called news.js. Save it in the same location as your web 
+page. Place the JavaScript function above in this new file. 
+ 
+When the button in the footer is clicked the web page will look like this: 
+ 
+
+ 
+132 
+ 
+EIGHT | JAVASCRIPT AND HTML ELEMENTS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IDEA 
+ 
+Since javascript is case sensitive 
+the keywords must be written 
+with proper capitalisation. 
+
+ 
+133 
+ 
+EIGHT | GLOSSARY OF TERMS 
+HTML element: an individual component of an HTML document or web page, once this 
+has been parsed into the Document Object Mod

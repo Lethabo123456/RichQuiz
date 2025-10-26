@@ -1,0 +1,25 @@
+ments  
+As well as accessing array values, you can also change values using the same techniques. It is 
+helpful to think of an array element as if it were a variable in its own right; you can create, read, 
+and write its value at will. For example, the following code changes the value of the third element 
+in an indexed array from “ Tolkien ” to “ Melville “ :  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” ); 
+$authors[2] = “Melville”;  
+  
+What if you wanted to add a fifth author? You can just create a new element with an index of 4, as 
+follows:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$authors[4] = “Orwell”;  
+  
+There’s an even easier way to add a new element to an array — simply use square brackets with no 
+index:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” ); 
+$authors[] = “Orwell”;  
+  
+  
+  
+When you do this, PHP knows that you want to add a new element to the end of the array, and it 
+automatically assigns

@@ -1,0 +1,12 @@
+k relationship, also known as a non-identifying 
+relationship, exists if the primary key of the related entity does not contain a primary key component 
+of the parent entity. By default, relationships are established by having the primary key of the parent 
+entity appear as a foreign key (FK) on the related entity (also known as the child entity).  
+Figure 4.8 shows how the Crow’s Foot notation depicts a weak relationship by placing a dashed 
+relationship line between the entities. The tables shown below the ERD illustrate how such a 
+relationship is implemented.  
+Strong (Identifying) Relationships A strong (identifying) relationship exists when the primary 
+key of the related entity contains a primary key component of the parent entity. The Crow’s Foot 
+notation depicts the strong (identifying) relationship with a solid line between the entities. 
+In summary, whether the relationship between COURSE and CLASS is strong or weak depends on 
+how the CLASS entity’s primary key is defined.

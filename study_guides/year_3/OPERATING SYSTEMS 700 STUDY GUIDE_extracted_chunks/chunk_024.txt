@@ -1,0 +1,27 @@
+1.2.3 The Device Management 
+The Device Manager is responsible for connecting with every device that is available on the 
+system, and for choosing the most efficient way to allocate each of these printers, ports, disk 
+drives, and more, based on the device scheduling policies selected by the designers of the 
+operating system. 
+Good device management requires that this part of the operating system uniquely identify each 
+device, start its operation when appropriate, monitor its progress, and, finally, deallocate the 
+device to make the operating system available to the next waiting process. 
+
+1.2.4 File Management 
+The File Manager keeps track of every file in the system, including data files, program files, 
+utilities, compilers, applications, and so on. By following the access policies determined by the 
+system designers, the File Manager enforces restrictions on who has access to which files. The 
+File Manager also controls the range of actions that each user is allowed to perform on the files 
+after they access them. For example, one user might have read-only access to a critical database, 
+while the systems administrator might hold read-and-write access with the authority to create 
+and delete files in the same database. 
+
+Access control is a key part of good file management and 
+is tightly coupled with system security software. When the File Manager allocates space on a 
+secondary storage device, such as a hard drive, flash drive, archival device, and so on, it must do 
+so knowing the technical requirements of that device. For example, if it needs to store an archival 
+copy of a large file, it needs to know if the device stores it more efficiently as one large block or 
+in several smaller pieces that are linked through an index. This information is also necessary for 
+the file to be correctly retrieved later. Later, if this large file must be modified after it has been 
+stored, the File Manager must be capable of making those modifications as accurately and 
+efficiently as possible.

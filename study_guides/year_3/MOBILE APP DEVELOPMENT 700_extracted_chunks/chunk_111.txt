@@ -1,0 +1,36 @@
+Interpreting the XML 
+ 
+Although the tabs in the Manifest editor can be used to create a basic configuration of the manifest, 
+the ability to read and manipulate XML is a critical skill for the Android app developer. Modifying a 
+manifest to make your app capable of more advanced behaviors is common, and most online help 
+documentation for doing so, either from the Android Developer site or developer forums, is provided 
+in XML. To get started, take a look at the manifest components in the AndroidManifest.xml file (Listing 
+3.1). 
+The manifest contains a number of XML elements. Those elements and their attributes define basic 
+operational aspects of your app. Refer to the numbers in Listing 3.1 to see the complete code 
+associated with each element explanation below. 
+
+▪ Lines 3–4—The <manifest> component is the root element. The attributes associated with this 
+element define the application package and potentially other attributes of the application, such as the 
+version name or installation location preference. 
+▪ Lines 6–12—The <application> element has both attributes and child elements that configure how 
+the app works. Application attributes in this manifest define the app icon, label, and theme. Note that 
+the attribute android:label displays Hello World with a greenish tint. (Note: This color may vary 
+depending on your device parameters.) Hover your cursor over it, and the string resource file entry 
+that has the value “Hello World” will be displayed. The entire application attribute may be highlighted 
+in yellow. Hovering over the yellow displays a pop-up message that the app is not indexable by Google 
+Search. Being indexable is not required for an app. 
+▪ Line 14—Each activity in an app must have an entry in the <application> element. In our manifest, 
+there is one activity: the one created when we created the project. Its attributes identify the Java class 
+file for the activity and the display name of the activity. Currently, that name is the same as the app’s 
+name. 
+▪ The <activity> element tells the operating system that an activity has permission to run in your 
+application. All activities used in an app must be defined in the manifest. If they are not, the app will 
+crash when the user navigates to that activity. In this element, the Java source file for the activity and 
+the activity’s title are identified. 
+▪ Line 15—A child element of the <activity> element, the <intent-filter> element, defines what the 
+Android OS should do with this activity. Not all activities will have an intent-filter. Specifically, activities 
+that you want users to launch when they are using the app do not need intent-filters. However, for 
+this app you want this activity to be displayed when the user runs it. 
+▪ Line 16—Therefore, the <action> tag identifies the activity as the main or first activity to run. 
+▪ Line 17—The <category> tag tells the OS to use the app launcher to start this activity.

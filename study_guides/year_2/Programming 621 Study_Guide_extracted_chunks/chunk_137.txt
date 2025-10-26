@@ -1,0 +1,36 @@
+takes the form of an output statement. For example, the following statements output 
+the numbers stored in list. 
+for (i = 0; i < 100; i++)          //Line 1  
+           cout << list[i] << " "; //Line 2  
+cout << endl 
+ 
+ 
+ 
+ 
+ 
+ 
+
+128 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+Array Index Out of Bounds 
+
+129 | P a g e  
+ 
+Consider the following declaration:  
+double num[10]; 
+ int i;  
+The component num[i] is valid, that is, i is a valid index if i = 0, 1, 2, 3, 4, 5, 6, 
+7, 8, or 9.  
+The index—say, index—of an array is in bounds if index is between 0 and 
+ARRAY_ SIZE - 1, that is, 0 <= index <= ARRAY_SIZE - 1. If index is negative 
+or index is greater than ARRAY_SIZE - 1, then we say that the index is out of 
+bounds.  
+Unfortunately, C++ does not check whether the index value is within range—that is, 
+between 0 and ARRAY_SIZE - 1. If the index goes out of bounds and the program 
+tries to access the component specified by the index, then whatever memory location 
+is indicated by the index that locat

@@ -1,0 +1,14 @@
+deletions, power outages, and other causes. Data backup and recovery 
+procedures create a safety valve, ensuring the availability of consistent data. Typically, database 
+vendors encourage the use of fault-tolerant components such as uninterruptible power supply (UPS) 
+units, RAID storage devices, clustered servers, and data replication technologies to ensure the 
+continuous operation of the database in case of a hardware failure. Even with these components, 
+backup and restore functions constitute a very important part of daily database operations. Some 
+DBMSs provide functions that allow the database administrator to schedule automatic database 
+backups to permanent storage devices such as disks, DVDs, tapes, and online storage. Database 
+backups can be performed at different levels: 
+ 
+A full backup, or dump, of the entire database. In this case, all database objects are backed up 
+in their entirety.  
+ 
+ A differential backup of the database, in which only the objects that have b

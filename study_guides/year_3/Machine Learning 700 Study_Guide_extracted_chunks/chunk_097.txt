@@ -1,0 +1,40 @@
+Common Classification Algorithms 
+ 
+4.2  Logistic Regression 
+Logistic Regression is a linear classification algorithm that predicts the probability of a data point 
+belonging to a particular class. It is commonly used for binary classification problems (e.g., fraud 
+detection, disease diagnosis).  According to Brown et al. (2020), Logistic Regression remains a strong 
+baseline method for classification tasks, especially in medical and financial applications where 
+interpretability is crucial. 
+
+The logistic (sigmoid) function is given by: 
+ 
+Spam Detection Example 
+
+import pandas as pd 
+import numpy as np 
+from sklearn.model_selection import train_test_split 
+from sklearn.linear_model import LogisticRegression 
+from sklearn.metrics import accuracy_score 
+ 
+# Generate sample data 
+np.random.seed(42) 
+
+X = np.random.rand(100, 2)  # Two features 
+y = (X[:, 0] + X[:, 1] > 1).astype(int)  # Labels: 1 if sum > 1, else 0 
+ 
+# Split data 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) 
+ 
+# Train logistic regression model 
+model = LogisticRegression() 
+model.fit(X_train, y_train) 
+ 
+# Predictions and accuracy 
+y_pred = model.predict(X_test) 
+accuracy = accuracy_score(y_test, y_pred) 
+print(f"Model Accuracy: {accuracy:.2f}") 
+  
+Output: 
+Model Accuracy: 0.85 
+The model achieves 85% accuracy in classifying the data into two classes. 

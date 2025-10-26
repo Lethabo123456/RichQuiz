@@ -1,0 +1,18 @@
+5.2.3 Bandwidth Speed Testers 
+Users of a network often complain about the speed of the network. Network “speed” is in some 
+ways a personal perception because some people have more patience than others. To determine 
+when a network slowdown is real as opposed to perceived, you need to measure the throughput. 
+That’s what throughput testers are used for. These devices, typically software based, work much 
+like a protocol analyzer in that they measure the traﬃc seen on the network and can also classify 
+the types of traﬃc that are eating up your bandwidth (which is probably what you really need to 
+know). Figure 5.2 shows one version of this software by TamoSoft. 
+ 
+This software is installed on a server and on a client. In the ﬁgure above, the software measures 
+traﬃc between the client and a server. It shows the throughput for traﬃc in real time and in this 
+shot is breaking that traﬃc up by unicast (TCP) and broadcast (UDP) types and by direction. There 
+is IPerf, an open-source software tool that measures network throughput and is very handy for 
+testing and creating baselines for your network. The software runs as a server on one end and a 
+client on the other. IPerf can run on both Linux and Windows operating systems. It is highly 
+customizable, allowing you to specify if you want to use TCP or UDP and the port numbers and 
+packet size to use. After the test is run, reports are generated that give you throughput, the 
+parameters used, and a timestamp.

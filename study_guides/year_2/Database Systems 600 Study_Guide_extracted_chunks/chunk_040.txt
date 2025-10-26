@@ -1,0 +1,19 @@
+delete John T. Okon’s agent data. Clearly, this is not desirable.  
+On a positive note, however, this book will help you develop the skills needed to design and model 
+a successful database that avoids the problems listed in this section. 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter One, page 18-21.
+
+ 
+16 
+Database Systems 
+The problems inherent in file systems make using a database system very desirable. The database 
+system consists of logically related data stored in a single logical data repository. “Logical” because 
+the data repository appears to be a single unit to the end user, even though data might be physically 
+distributed among multiple storage facilities and locations. The database’s DBMS, shown in Figure 
+1.10, provides numerous advantages over file system management, by making it possible to 
+eliminate most of the file system’s problems. Better yet, the current generation of DBMS software 
+s

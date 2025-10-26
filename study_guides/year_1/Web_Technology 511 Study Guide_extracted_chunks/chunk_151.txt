@@ -1,0 +1,16 @@
+9.4 RADIO BUTTONS 
+You can create radio buttons to allow users to select only one of several options. Each radio 
+button is a part of a group. This makes it easier for users to view all the available 
+options. For instance, while ordering products, users can choose to pay by using only one 
+type of card. These options can be part of the payment group. 
+To create a group of radio buttons, you give several INPUT tags of the radio type 
+the same value for the NAME attribute. You can assign a value to a radio button by using 
+the VALUE attribute. For instance, to provide 
+the options “AMEX“ and “VISA” as radio buttons, you would use the following code: 
+<INPUT TYPE="radio" NAME="Payment" VALUE="Amex">AMEX 
+<INPUT TYPE="radio" NAME="Payment" VALUE="Visa">VISA 
+The value “Payment” assigned to the NAME attribute of both of the INPUT tags 
+indicates that the radio buttons belong to the same group. Users can select only one 
+of these options. Only the selected value is sent to the database. 
+
+Exhibit 0-17: The radio buttons on the Order page

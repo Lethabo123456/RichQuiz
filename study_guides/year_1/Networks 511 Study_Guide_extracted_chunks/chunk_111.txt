@@ -1,0 +1,29 @@
+These computers are all connected to the Hub (Repeater) but how are they communicating? They
+use a MAC address also known as the hardware address that is burned in the Network card of all the
+computers. To talk to each other they use Name Resolution (Hostname to IP resolution) done by
+(DNS) Domain Name service is the task of converting domain names to their corresponding IP 
+address. If the two computers (Hosts) are in the same LAN Vicky can just do Broadcasting to Diana 
+without the use of a DNS that’s Microsoft Windows.  
+
+An example of a Name resolution process for the Vicky and Diana Hosts output are as follows: 
+
+Time            Source              Destination           Protocol           Infor 
+53.892794       192.168.0.1         192.168.0.255         NBNS               Name query NB Vicky<00> 
+ 
+The way the operating system resolves the domain name is based upon its configuration. 
+
+2.7 TROUBLESHOOTING TOOLS  
+Transmission Control Protocol/ Internet Protocol (TCP/IP) version 4 is mostly used in networks so to 
+test IP connectivity and verify IPv6 networks and TCP/IP utilities for windows.  
+In the Network+ troubleshooting model, there are eight steps you must follow:  
+
+1. Establish symptoms.  
+2. Identify the affected area.  
+3. Establish what has changed.  
+4. Select the most probable cause.  
+5. Implement a solution.  
+6. Test the result.  
+7. Recognize the potential effects of the solution.  
+8. Document the solution.  
+
+

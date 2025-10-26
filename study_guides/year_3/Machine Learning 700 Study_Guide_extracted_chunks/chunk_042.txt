@@ -1,0 +1,17 @@
+Chapter Two: Data Preprocessing and Feature Engineering  
+ 
+2.1  Understanding Datasets 
+Before applying machine learning (ML) algorithms, it is crucial to understand the nature of the data 
+being used. The success of an ML model depends on the quality, structure, and type of data available. 
+Datasets can generally be classified into two broad categories: structured and unstructured data. 
+Handling these different types of data requires specific techniques and tools to ensure accurate 
+analysis and meaningful predictions. 
+
+Structured Data 
+
+Structured data refers to information that is highly organized and stored in a well-defined format, 
+such as tables in relational databases, spreadsheets, or structured text files (CSV, JSON, XML). In 
+structured datasets, each row represents an observation (data instance), and each column 
+corresponds to a specific attribute (feature). The structured nature of this data makes it easy to 
+process using database management systems (DBMS), SQL queries, and data manipulation tools such 
+as Pandas in Python. Fig 2.1 below is an example of a structured database.

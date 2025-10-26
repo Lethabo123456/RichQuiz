@@ -1,0 +1,34 @@
+Type<Type>::begin()  
+{  
+linkedListIterator<Type> temp(first); return 
+temp;  
+}  
+  
+template <class Type>  
+linkedListIterator<Type> linkedListType<Type>::end()  
+{ 
+linkedListIterator<Type> temp(NULL); return 
+temp;  
+}  
+  
+From the definitions of the functions length, front, back, begin, and end, it follows easily that each of these 
+functions are of O(1).  
+  
+3.2.12 Copy the List  
+  
+The function copyList makes an identical copy of a linked list. Therefore, we traverse the list to be copied 
+starting at the first node. Corresponding to each node in the original list, we do the following:  
+1. Create a node and call it newNode.  
+2. Copy the info of the node (in the original list) into newNode.  
+3. Insert newNode at the end of the list being created.  
+  
+The definition of the function copyList is as follows:  
+  
+template <class Type> void 
+linkedListType<Type>::copyList (const 
+linkedListType<Type>& otherList)  
+{  
+nodeType<Type> *newNode;   
+ 
+  
+//pointer to create a node

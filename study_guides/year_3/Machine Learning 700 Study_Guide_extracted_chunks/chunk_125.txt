@@ -1,0 +1,26 @@
+5.4 Hierarchical Clustering 
+
+Unlike k-Means, Hierarchical Clustering creates a tree-like structure (dendrogram) representing nested 
+clusters. Hierarchical clustering is effective for datasets with unknown numbers of clusters, unlike k-
+Means which requires pre-defining k. 
+
+Types of Hierarchical Clustering 
+
+Agglomerative (Bottom-Up) – Each data point starts as its own cluster, and clusters merge iteratively. 
+Divisive (Top-Down) – The entire dataset starts as a single cluster and splits iteratively. 
+
+Hierarchical Clustering on Customer Data 
+
+from scipy.cluster.hierarchy import dendrogram, linkage 
+import seaborn as sns 
+# Compute linkage matrix 
+linkage_matrix = linkage(df_scaled, method='ward') 
+# Plot dendrogram 
+plt.figure(figsize=(10, 5)) 
+dendrogram(linkage_matrix, labels=df.index, leaf_rotation=90) 
+plt.title('Hierarchical Clustering Dendrogram') 
+plt.xlabel('Customer Index') 
+plt.ylabel('Distance') 
+plt.show() 
+ 
+Expected Output 

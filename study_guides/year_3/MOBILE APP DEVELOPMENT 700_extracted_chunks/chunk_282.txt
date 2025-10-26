@@ -1,0 +1,47 @@
+Notice that the RadioButtons are listed vertically, one on top of another. If you want to list them 
+horizontally, you need to change the orientation attribute to horizontal. You would also need to 
+ensure that the layout_width attribute of the RadioButtons are set to wrap_content: 
+ 
+<RadioGroup android:id=“@+id/rdbGp1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:orientation=“horizontal” > 
+ 
+<RadioButton android:id=“@+id/rdb1” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” 
+android:text=“Option 1” /> 
+ 
+<RadioButton android:id=“@+id/rdb2” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” 
+android:text=“Option 2” /> 
+ 
+</RadioGroup> 
+ 
+Figure 4-3 shows the RadioButtons displayed  horizontally.'
+
+The ToogleButton displays a rectangular button 
+that users can toggle on and off by clicking: 
+ 
+<ToggleButton android:id=“@+id/toggle1” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” /> 
+ 
+One thing that has been consistent throughout this example is that each view has the id attribute set 
+to a particular value, such as in the case of the Button: 
+ 
+<Button android:id=“@+id/btnSave” 
+Figure 4-3 
+
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“@string/save” /> 
+ 
+The id attribute is an identifier for a view so that it may later be retrieved using the View.findViewById() 
+or Activity.findViewById() methods. 
+ 
+Exploring Views Programmatically  
+ 
+So far, only the XML layout has been explored. The following code snippet demonstrate how to 
+programmatically control the views.  

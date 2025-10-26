@@ -1,0 +1,12 @@
+um cardinality is 0. 
+Mandatory participation means that one entity occurrence requires a corresponding entity 
+occurrence in a relationship. If no optionality symbol is depicted with the entity, the entity is 
+assumed to exist in a mandatory relationship with the related entity. If the mandatory participation 
+is depicted graphically, it is typically shown as a small hash mark across the relationship line, 
+similar to the Crow’s Foot depiction of a connectivity of 1. The existence of a mandatory 
+relationship indicates that the minimum cardinality is at least 1 for the mandatory entity. 
+Because relationship participation is an important component of database design, it is important 
+that you clearly understand the distinction between mandatory and optional participation in 
+relationships. Otherwise, you might develop designs in which awkward and unnecessary temporary 
+rows (entity instances) must be created just to accommodate the creation of required entities. It is 
+also important

@@ -1,0 +1,86 @@
+Like the previous example, this application reads the file line by line into a string. However, because you 
+know this is a file containing comma-separated text values, you handle it differently. Not only that, you 
+actually store the values you read in a data structure. 
+ 
+First, you need to look at some of the comma-separated data itself: 
+ProductID,Name,Price 
+1,Spiky Pung,1000 
+The first line holds the names of the columns of data; subsequent lines hold the data. Thus, your proce-
+dure is to obtain the column names from the first line of the file and then retrieve the data in the re-
+maining lines. The GetData() method is declared as static, so you can call this method without creating 
+an instance of your class. This method returns a List<Dictionary<string, string>> object that you create 
+and then populate with data from the comma-separated text file. It also returns a List<string> object 
+containing the header names. The following lines initialize these objects: 
+ 
+List<Dictionary<string, string>> data = new List<Dictionary<string, string>>(); 
+columns = new List<string>(); 
+ 
+columns contains the column names from the first row of the comma-separated text file, and data holds 
+the values on subsequent rows. 
+ 
+You start by creating a FileStream object and then construct a StreamReader around that, as you did in 
+earlier examples. Then you can read the first line of the file and create an array of strings from that one 
+string: 
+ 
+line = sr.ReadLine(); 
+stringArray = line.Split(charArray); 
+ 
+The Split() method shown in Chapter 5 accepts a character array 
+ in this case, consist
+,
+that stringArray will hold the array of strings formed from splitting line 
+,
+you are currently reading from the first line of the file, and this line holds the names of the columns of 
+data, you need to loop through each string in stringArray and add it to columns: 
+ 
+Now that you have the names of the columns for your data, you can read in the data. The code for this is 
+essentially the same as that for the earlier StreamRead example, except for the presence of the code 
+required to add Dictionary<string, string> objects to data: 
+for (int x = 0; x <= stringArray.GetUpperBound(0); x++) 
+                { 
+                    columns.Add(stringArray[x]); 
+                } 
+
+For each line in the file, you create a new Dictionary<string, string> object and fill it with a row of data. 
+Each entry in this collection has a key corresponding to a column name, and a value that is the value of 
+the column for that row. The keys are extracted from the columns object you created earlier, and the 
+values come from the string array obtained using Split() for the line of text extracted from the data file. 
+ 
+StreamReader and return your data. The 
+code in the Main() method obtains the data from the GetData() method in variables called myData and 
+columns, and displays this information to the console. First, the name of each column is displayed: 
+
+The -20 part of the formatting string {0,-20} ensures that the name you display is left-aligned in a column 
+of 20 characters 
+ this helps to format the display. 
+Finally, you loop through each Dictionary<string, string> object in the myData collection and display 
+the values in that row, once again using the formatting string to format your output: 
+ 
+ 
+            line = sr.ReadLine();
+                while (line != null) 
+                { 
+                    // Split row of data into string array 
+                    stringArray = line.Split(charArray); 
+                    Dictionary<string, string> dataRow = new Dictionary<string, string>(); 
+                    for (int x = 0; x <= stringArray.GetUpperBound(0); x++) 
+                    { 
+                        dataRow.Add(columns[x], stringArray[x]); 
+                    } 
+                    data.Add(dataRow); 
+                    line = sr.ReadLine(); 
+                } 
+foreach (string column in columns) 
+            { 
+                Console.Write("{0,-20}", column); 
+            } 
+            Console.WriteLine(); 
+ 
+                 
+         
+         foreach (string column in columns) 
+                { 
+                    Console.Write("{0,-20}", row[column]); 
+                } 
+                Console.WriteLine(); 
+}

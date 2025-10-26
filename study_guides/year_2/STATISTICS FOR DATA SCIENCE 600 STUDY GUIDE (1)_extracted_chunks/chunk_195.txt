@@ -1,0 +1,16 @@
+rom the engineering department) 
+• Instead of using a mu of 60 as before, I used 55 to simulate the fact that the 
+engineering department's break behaviour isn't the same as the company's behaviour. 
+It is easy to see that there seems to be a difference (of over 5 minutes) between the 
+engineering department and the company. We usually don't have the entire population and 
+the population parameters at our disposal, but I have them simulated to see the example 
+work. So, even though we (the omniscient readers) can see a difference, we will assume that 
+we know nothing of these population parameters and, instead, rely on a statistical test to 
+ascertain these differences. 
+ 
+ 
+5.4.3 Example of a One-Sample t-Test 
+Our objective here is to ascertain whether there is a difference between the overall 
+population's (company employees) break times and break times of employees in the 
+engineering department. Let us now conduct a t-test at a 95% confidence level to find a 
+difference (or not!).

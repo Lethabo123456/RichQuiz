@@ -1,0 +1,44 @@
+//insert newNode after last  
+last = newNode;   
+  
+//make last point to the actual  
+//last node in the list  
+}  
+count++;   
+  
+  
+//increment count  
+}  
+ 
+ 
+  
+  
+  
+//end insertLast  
+  
+From the definitions of the functions insertFirst and insertLast, it follows that each of these functions is of 
+O(1).  
+  
+  
+  
+  
+  
+ 
+3.3.4  Delete a Node  
+  
+Next, we discuss the implementation of the member function deleteNode, which deletes a node from the 
+list with a given info. We need to consider the following cases:  
+The list is empty.  
+The node is nonempty and the node to be deleted is the first node.  
+The node is nonempty and the node to be deleted is not the first node, it is somewhere in the list.  
+ The node to be deleted is not in the list.  
+  
+  
+  
+  
+  
+
+111  
+  
+If list is empty, we can simply print a message indicating that the list is empty. If list is not empty, we 
+search the list for the node with the given info and, if such a node is found, we delete this node.

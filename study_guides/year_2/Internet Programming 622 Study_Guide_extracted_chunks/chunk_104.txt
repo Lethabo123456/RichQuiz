@@ -1,0 +1,22 @@
+be just a filename ( “ data.txt “ ), in which case PHP will look for the file in the 
+current directory, or it can be a relative ( ” ./data.txt “ ) or absolute ( “ /myfiles/data.txt “ ) path to a 
+file. You can even specify a file on a remote Web or FTP server, as these examples show:   
+   
+$handle = fopen( “http://www.example.com/index.html”, “r” );   
+$handle = fopen( “ftp://ftp.example.com/pub/index.txt”, “r” );   
+   
+A remote file can only be opened for reading — you cannot write to the file.   
+   
+The second argument to fopen() tells PHP how you ’ re going to use the file. It can take one of the 
+following string values:   
+   
+Value   
+Description   
+r   
+Open the file for reading only. The file pointer is placed at the beginning of the file.   
+r+   
+Open the file for reading and writing. The file pointer is placed at the beginning of the 
+file.   
+w   
+Open the file for writing only. Any existing content will be lost. If the file does not exist, 
+PHP attempts to create it.

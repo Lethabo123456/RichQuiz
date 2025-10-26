@@ -1,0 +1,17 @@
+label for=”passwordField”>A password field</label>   
+               <input type=”password” name=”passwordField” id=”passwordField” value=”” />   
+   
+• 
+A checkbox field — This is a simple toggle; it can be either on or off. The value attribute 
+should contain the value that will be sent to the server when the checkbox is selected (if the 
+checkbox is not selected, nothing is sent):   
+   
+               <label for=”checkboxField”>A checkbox field</label>   
+               <input type=”checkbox” name=”checkboxField” id=”checkboxField” value=”yes” />   
+   
+• 
+Two radio button fields — Radio buttons tend to be placed into groups of at least two 
+buttons. All buttons in a group have the same name attribute. Only one button can be 
+selected per group. As with checkboxes, use the value attribute to store the value that is 
+sent to the server if the button is selected. Note that the value attribute is mandatory for 
+checkboxes and radio buttons, and optional for other field types:

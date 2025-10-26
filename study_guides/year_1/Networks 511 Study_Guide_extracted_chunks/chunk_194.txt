@@ -1,0 +1,25 @@
+4.2 Implementing a Network Infrastructure  
+The setup and cabling of most of the big organisations are the same due to the TIA 
+(Telecommunication Industrial Association) standards and its former mother company EAI 
+(Electronic Industries Alliance).  
+The architecture for commercial buildings is called structured Cabling from the TIA/EIA-568 
+Commercial Building Wiring Standard it doesn’t care where the cable is from. This structured 
+principle applies from the cabling media, transmission technology or networking speed. It 
+starts from the Demarc and ends at the user’s work station. Demarc (Short for 
+Demarcation) is the device at the point where a telecommunications service providers 
+network ends (public switched telephone network) and the organisational network starts.  
+
+It is only describing the good way of the network cable installation maximising performance 
+and minimising maintenance.  
+However the structured cabling is based on a hierarchical design and assumes a network is 
+based on the star topology. 
+Below is the type of a Demarc; 
+ 
+Figure 61: example of a Demarc 
+ 
+4.3 Devices for Structured Cabling  
+The benefits of these standards include: 
+ Consistency of design and installation; 
+ Conformance to physical and transmission line requirements; 
+ A basis for examining a proposed system expansion and other changes; and 
+ Uniform documentation. 

@@ -1,0 +1,32 @@
+Figure 2: A combinational circuit 
+ 
+Given a circuit built from the basic logic gates and the inputs to the circuit, 
+we determine the output by tracing through the circuit. 
+To determine the output for the combinatorial circuit in Figure 2, we display 
+the output of each logic gate in the circuit. We see that the AND gate takes 
+input of 𝑝 and￢𝑞, the output of the inverter with input 𝑞, and 
+produces    𝑝 ∧￢𝑞. Next, we note that the OR gate takes input 𝑝 ∧￢𝑞 
+and￢𝑟, the output of the inverter with input 𝑟, and produces the final 
+output (𝑝 ∧￢𝑞) ∨￢𝑟. 
+Suppose that we have a formula for the output of a digital circuit in terms of 
+negations, disjunctions, and conjunctions. Then, we can systematically build 
+a digital circuit with the desired output, as illustrated in the next example. 
+ 
+ 
+Worked Example 
+Build a digital circuit that produces the output: 
+ (𝑝 ∨￢𝑟) ∧ (￢𝑝 ∨ (𝑞 ∨￢𝑟)) when given input bits 𝑝, 𝑞, and 𝑟.
+ 
+Solution: 
+To construct the desired circuit, we build separate circuits for 𝑝 ∨￢𝑟 
+and for ￢𝑝 ∨(𝑞 ∨￢𝑟) and combine them using an AND gate. To 
+construct a circuit for 𝑝 ∨￢𝑟, we use an inverter to produce ￢𝑟 from 
+the input 𝑟. Then, we use an OR gate to combine 𝑝 and￢𝑟. To build a 
+circuit for ￢𝑝 ∨ (𝑞 ∨￢𝑟), we first use an inverter to obtain￢𝑟. Then 
+we use an OR gate with inputs q and ￢𝑟 to obtain 𝑞 ∨￢𝑟. Finally, we 
+use another inverter and an OR gate to get ￢𝑝 ∨ (𝑞 ∨￢𝑟) from the 
+inputs 𝑝 and 𝑞 ∨￢𝑟. To complete the construction, we employ a final 
+AND gate, with inputs 𝑝 ∨￢𝑟 and ￢𝑝 ∨(𝑞 ∨￢𝑟). The resulting circuit 
+is displayed in Figure 3. 
+
+Figure 3: The circuit for (p ∨￢r) ∧ (￢p ∨ (q ∨￢r)). 

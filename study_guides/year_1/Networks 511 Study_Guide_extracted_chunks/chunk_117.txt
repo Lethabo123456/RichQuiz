@@ -1,0 +1,27 @@
+2.7.3 Throughput Testers 
+People complain about the speed of the network and some don’t complain but to check whether the 
+slowdown is real as opposed to perceived you need to measure throughput with the tester. 
+Check the diagram below showing results of a throughput tester: 
+ 
+Figure 37: Throughput software by TamoSoft  
+Remember, When installing it should be installed on both the client and the server to measure the 
+traffic between the client and a server. It shows throughput for traffic in real time and in this short is 
+breaking that traffic up by unicast (TCP) and broadcast (UDP) types and by direction. 
+
+2.7.4 Connectivity Software 
+Remote desktop (Windows Products) can let you access your machine to perform troubleshooting 
+this is an example of connectivity software. There are other commercial tools like LogMeIn.com, 
+GoToMyPC, and TeamViewer, etc.  The figure below shows the session window for LogMeIn.com. 
+There are advantages of this software obviously you can do whatever you want to do when they are 
+doing it wrongly.  
+
+Figure 38: LogMeIn.com 
+Traceroute  
+Latency is the delay a message takes to travel form the source to destination. It travels 
+faster but it uses time let’s see how distance affects the RTT (Round Trip Time). 
+ 
+Open a command prompt and run tracert on a web site whose server is on a different 
+continent from you.  E.g. tracert www.mediacollege.com  
+ 
+When running on Ubuntu Platform install traceroute utility and use it. Installing use 
+this command: sudo apt-get install traceroute 

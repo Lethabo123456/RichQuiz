@@ -1,0 +1,19 @@
+One advantage to using external disk drives is that they are simple to use. Also, they provide 
+faster data transfer rates than optical media or tape backups. However, on most networks, 
+backing up data to a fixed disk elsewhere on the network, as explained in the next section, is 
+faster. 
+ 
+Network Backups Instead of saving data to a removable disk or media, you might choose to 
+save data to another place on the network. For example, you could copy all the user data 
+from your organization’s mail server to a different server on the network. If you choose this 
+option, be certain to back up data to a different disk than where it was originally stored 
+because if the original disk fails, you will lose both the original data and its backup. (Although 
+disk locations on workstations are typically obvious, on a network they might not be.) If your 
+organization operates a WAN, it’s best to back up data to disks at another location. 
+
+That way, if one location suffers an outage or catastrophe, the data will remain safe at the other location 
+on the WAN. A sophisticated network backup solution would use software to automate and 
+manage backups and save data to a SAN or NAS storage device. Most NOSs provide utilities 
+for automating and managing network backups. If your organization does not have a WAN or 
+a high-end storage solution, you might consider online backups. An online backup, or cloud 
+backup, saves data across the Internet to another company’s storage array.

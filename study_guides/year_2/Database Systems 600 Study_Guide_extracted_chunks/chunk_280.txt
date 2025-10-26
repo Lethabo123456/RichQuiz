@@ -1,0 +1,20 @@
+be made. 
+When it is crucial to have the data available, the NOT NULL specification will not allow 
+the end user to leave the attribute empty (with no data entry at all).  
+ 
+The UNIQUE specification creates a unique index on the respective attribute. Use it to 
+avoid having duplicated values in a column.  
+ 
+The primary key attributes contain both a NOT NULL and UNIQUE specification, which 
+enforce the entity integrity requirements.  
+ 
+The entire table definition is enclosed in parentheses. A comma is used to separate each 
+table element definition (attributes, primary key, and foreign key). 
+ 
+The ON UPDATE CASCADE specification ensures that if you make a change in any 
+VENDOR’s V_CODE that change is automatically applied to all foreign key references 
+throughout the system to ensure that referential integrity is maintained. That restriction 
+makes it impossible for a V_CODE value to exist in the PRODUCT table if it points to a 
+non-existent VENDOR table V_CODE value. 
+ 
+An RD

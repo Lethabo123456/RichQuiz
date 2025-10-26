@@ -1,0 +1,30 @@
+the queue, first we 
+advance queueRear to the next array position and then add the element to the position that queueRear 
+is pointing to. To delete an element from the queue, first we retrieve the element that queueFront is 
+pointing to and then advance queueFront to the next element of the queue. Thus, queueFront changes 
+after each deleteQueue operation and queueRear changes after each addQueue operation.  
+  
+Let us see what happens when queueFront changes after a deleteQueue operation and queueRear 
+changes after an addQueue operation. Assume that the array to hold the queue elements is of size 100.  
+  
+Initially, the queue is empty. After the operation:  
+  
+addQueue(Queue,'A');  
+  
+the array is as shown in Figure 6-1.  
+
+220  
+  
+  
+FIGURE 6-1 Queue after the first addQueue operation  
+  
+After two more addQueue operations:  
+  
+addQueue(Queue,'B'); addQueue(Queue,'C');  
+  
+the array is as shown in Figure 6-2.  
+  
+  
+FIGURE 6-2 Queue after two more addQueue operations  
+  
+N

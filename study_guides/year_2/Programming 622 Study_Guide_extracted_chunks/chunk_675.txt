@@ -1,0 +1,20 @@
+int max(int x, int y) const; //Returns 
+the larger of x and y.  
+  
+int nodeCount(binaryTreeNode<elemType> *p) const; //Function 
+to return the number of nodes in the binary  
+//tree to which p points  
+  
+int leavesCount(binaryTreeNode<elemType> *p) const; 
+//Function to return the number of leaves in the binary //tree 
+to which p points  
+};  
+  
+Notice that the definition of the class binaryTreeType contains the statement to overload the assignment 
+operator, copy constructor, and destructor. This is because the class binaryTreeType contains pointer data 
+members. Recall that for classes with pointer data members, the three things that we must do are 
+explicitly overload the assignment operator, include the copy constructor, and include the destructor.   
+  
+The definition of the class binaryTreeType contains several member functions that are private members 
+of the class. These functions are used to implement the public member functions of the class and the user 
+need not know th

@@ -1,0 +1,20 @@
+ents:  
+  
+$myString = “I say, nay, nay, and thrice nay!”; echo substr_count( 
+$myString, “nay”, 9 ) . “ < br / > ”; // Displays ‘2’ echo substr_count( 
+$myString, “nay”, 9, 6 ) . “ < br / > ”; // Displays ‘1’  
+  
+4.10 Translating Characters With strtr()  
+A fairly common requirement — especially with Web programming — is to be able to replace certain 
+characters in a string with certain other characters. For example, you might want to make a string “ 
+URL  
+friendly ” by replacing spaces with + (plus) symbols and apostrophes with - (hyphen) symbols. This is 
+where strtr() comes in. This function takes three arguments: the string to work on, a string 
+containing a list of characters to translate, and a string containing the characters to use instead. The 
+function then returns a translated copy of the string. So you could write a simple script to make a “ 
+URL  
+friendly ” string as follows:  
+  
+$myString = “Here’s a little string”; 
+// Displays “Here-s+a+little+string”  
+echo strtr(

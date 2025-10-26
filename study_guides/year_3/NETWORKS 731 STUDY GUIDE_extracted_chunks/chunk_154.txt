@@ -1,0 +1,43 @@
+ESP is identified in the New IP header with an IP protocol ID of 50. 
+The packet diagram below illustrates IPsec Tunnel mode with AH header: 
+ 
+Figure 4.6 IPSec Tunnel mode with AH header  
+ 
+The AH can be applied alone or together with the ESP, when IPsec is in tunnel mode. AH’s job 
+is to protect the entire packet. The AH does not protect all of the fields in the New IP Header 
+because some change in transit, and the sender cannot predict how they might change. The 
+AH protects everything that does not change in transit. AH is identified in the New IP header 
+with an IP protocol ID of 51. 
+
+IPSEC TRANSPORT MODE 
+IPsec Transport mode is used for end-to-end communications, for example, for 
+communication between a client and a server or between a workstation and a gateway (if the 
+gateway is being treated as a host). A good example would be an encrypted Telnet or Remote 
+Desktop session from a workstation to a server. 
+ 
+Figure 4.7 IPSec Transport mode  
+
+Transport mode provides the protection of our data, also known as IP Payload, and consists 
+of TCP/UDP header + Data, through an AH or ESP header. The payload is encapsulated by the 
+IPsec headers and trailers. The original IP headers remain intact, except that the IP protocol 
+field is changed to ESP (50) or AH (51), and the original protocol value is saved in the IPsec 
+trailer to be restored when the packet is decrypted. 
+IPsec transport mode is usually used when another tunnelling protocol (like GRE) is used to 
+first encapsulate the IP data packet, then IPsec is used to protect the GRE tunnel packets. IPsec 
+protects the GRE tunnel traffic in transport mode. The packet diagram below illustrates IPsec 
+Transport mode with ESP header: 
+
+Notice that the original IP Header is moved to the front. Placing the sender’s IP header at the 
+front (with minor changes to the protocol ID), proves that transport mode does not provide 
+protection or encryption to the original IP header and ESP is identified in the New IP header 
+with an IP protocol ID of 50. 
+ 
+Figure 4.9 Transport mode with AH header 
+
+The AH can be applied alone or together with the ESP when IPsec is in transport mode. AH’s 
+job is to protect the entire packet, however, IPsec in transport mode does not create a new IP 
+header in front of the packet but places a copy of the original with some minor changes to the 
+protocol ID therefore not providing essential protection to the details contained in the IP 
+header (Source IP, destination IP etc.). AH is identified in the New IP header with an IP 
+protocol ID of 51. In both ESP and AH cases with IPsec Transport mode, the IP header is 
+exposed. 

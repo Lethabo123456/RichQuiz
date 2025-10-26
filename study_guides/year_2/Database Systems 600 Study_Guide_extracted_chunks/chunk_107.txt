@@ -1,0 +1,13 @@
+Data 
+In Chapter 1.1, Database Systems, you learned that a database stores and manages both data and 
+metadata. You also learned that the DBMS manages and controls access to the data and the database 
+structure. The relational data model allows the designer to focus on the logical representation of the 
+data and its relationships, rather than on the physical storage details and it enables you to view data 
+logically rather than physically.  
+The practical significance of taking the logical view is that it serves as a reminder of the simple file 
+concept of data storage. Although the use of a table, quite unlike that of a file, has the advantages 
+of structural and data independence, a table does resemble a file from a conceptual point of view. 
+Because the table plays such a prominent role in the relational model, it deserves a closer look. 
+Therefore, our discussion begins by exploring the details of table structure and contents. 
+Tables and Their Characteristics 
+The logical view of

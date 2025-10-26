@@ -1,0 +1,45 @@
+// Test for primes.   
+   
+class FindPrime {   
+   
+public static void main(String args[]) { 
+int num;   
+boolean isPrime = true; 
+num = 14;   
+for(int i=2; i <= num/2; i++) 
+{ 
+  if((num % i) == 0) 
+      { 
+         isPrime = false;   
+         break;   
+      }   
+}   
+if(isPrime) System.out.println("Prime");   
+else 
+System.out.println("Not Prime");   
+}   
+}
+
+Using the Comma    
+There will be times when you will want to include more than one statement in the initialization and 
+iteration portions of the for loop. For example, consider the loop in the following program:    
+
+class Sample {  
+
+public static void main(String args[])  
+{ 
+  int a, b; b = 4;  for(a=1; a<b; a++) {   
+  System.out.println("a = " + a);  
+  System.out.println("b = " +  b); 
+  b--;   
+  
+}   
+}   
+}
+   
+As you can see, the loop is controlled by the interaction of two variables. Since the loop  is governed 
+by two variables, it would be useful if both could be included in the for statement, itself, instead of 
+b being handled manually. Fortunately, Java provides a way to accomplish this. To allow two or more 
+variables to control a for loop, Java permits you to include multiple statements in both the 
+initialization and iteration portions of the for. Each statement is separated from the next by a 
+comma.

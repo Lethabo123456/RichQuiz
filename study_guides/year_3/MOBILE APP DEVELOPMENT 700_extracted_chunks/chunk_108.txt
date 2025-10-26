@@ -1,0 +1,23 @@
+Each is associated with images of a different size to match the 
+size recommendations for different screen resolutions. Android uses PNG files 
+(portable network graphics) for its images. The drawable folder can also contain XML files 
+that use XML to create images. The drawable will have two XML files in it: one to describe how to display 
+the background of the launch image (i.e., the icon the user taps to run your app) and the other for the 
+foreground of the image. 
+
+Next, expand the mipmap folder by clicking the disclosure button. The mipmap folder holds your app’s 
+launch and screen icon. You should see two folders for the two different types of launch icons (Figure 
+3.4). Each will have a (6) after it, indicating there are six items with the same name in it. Expand one 
+of these folders and you will find six PNG files with the same name but a different resolution noted 
+after the name. These are the differently sized icons for different screen sizes. The icon in this folder 
+is currently the default app icon. You may change this by deleting the existing PNG files and adding 
+your own. When your app is installed on a device, Android automatically uses the image appropriate 
+for the device it is installed on by selecting it from the correct folder. 
+  
+Next, examine the layout folder. This folder holds all the layouts for the user interface of your app. 
+There is one file in the folder for the MainActivity that was created when your project was created. 
+The final set of folders is that of the values folders. Click the disclosure button to the left of the values 
+folder. Three XML files will be displayed: colors.xml, strings.xml, and styles.xml. Other values files may 
+be added later (see below). The values files hold configuration data for an Android app. Android uses 
+this information to limit the hard coding of potentially changeable data. For example, the dimens.xml 
+file could hold a value for screen title size that could be reused on each layout in the app. 

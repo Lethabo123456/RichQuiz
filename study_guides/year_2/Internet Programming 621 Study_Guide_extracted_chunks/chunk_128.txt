@@ -1,0 +1,23 @@
+know the keys of the array in 
+advance you are going to find it hard to access its elements!  
+  
+Fortunately, PHP provides you with a suite of arra-access functions that you can use to step through 
+each element in an array, regardless of how the elements are indexed. When you create an array, 
+PHP remembers the order that the elements were created in, and maintains an internal pointer to 
+
+62  
+the elements in the array. This pointer initially points to the first element that was created, but you 
+can move the pointer forward and backward through the array at will.  
+  
+To manipulate the pointer and access the elements that it points to, use the following functions:  
+  
+Function  
+Description  
+current()  
+Returns the value of the current element pointed to by the pointer, without changing 
+the pointer position.  
+key()  
+Returns the index of the current element pointed to by the pointer, without changing 
+the pointer position.  
+next()  
+Moves the pointer forward to the next elemen

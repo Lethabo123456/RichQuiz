@@ -1,0 +1,44 @@
+6.1.3 Reinforcement Learning in Robotics 
+Reinforcement Learning (RL) offers a powerful framework for training autonomous robotic agents 
+to learn optimal behaviour by interacting with their environments. Unlike supervised learning, 
+which depends on labelled datasets, RL enables agents to learn from trial and error, progressively 
+improving their decision-making through experience and reward-based feedback. This is 
+especially critical in robotics, where agents must operate under uncertainty, adapt to dynamic 
+environments, and balance competing objectives such as task success, energy efficiency, and 
+safety.
+
+This section covers two essential algorithms in reinforcement learning: 
+• Q-learning – a tabular, model-free, off-policy learning algorithm 
+• Deep Q-Networks (DQN) – an extension of Q-learning that leverages deep neural 
+networks for scalability in high-dimensional state spaces 
+Both are pivotal for enabling robots to make intelligent, autonomous decisions. 
+
+6.1.3.1 
+Q-Learning: Tabular, Model-Free Reinforcement Learning 
+Q-learning is a foundational algorithm in reinforcement learning, first introduced by Watkins 
+(1989) and rigorously analyzed by Sutton and Barto in Reinforcement Learning: An Introduction 
+(2018). It is a model-free, off-policy algorithm, meaning it does not require a model of the 
+environment and learns the optimal policy independently of the actions taken during exploration. 
+The Q-learning algorithm learns an action-value function Q(s,a), which estimates the expected 
+cumulative reward of taking action a in state s, and thereafter following the optimal policy. 
+Q-Learning Update Rule: 
+
+At each time step, the agent: 
+• Observes the current state s 
+• Selects an action a 
+• Receives a reward r 
+• Transitions to a new state s′ 
+
+It then updates its Q-value using: 
+ 
+Use in Robotic Control 
+In robotic applications, Q-learning can be applied to: 
+• Grid-based navigation: Robot learns to reach a target while avoiding obstacles 
+• Battery management: Learn when to recharge based on predicted energy costs 
+• Policy optimization: Learn delivery or movement policies that optimize task efficiency 
+
+Example: 
+Campus Delivery Robot — Battery-Aware Movement 
+Objective: 
+The robot must learn when to recharge and when to continue delivering, based on its current 
+battery level and delivery urgency.

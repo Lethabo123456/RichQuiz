@@ -1,0 +1,15 @@
+an algebra course, you probably learned how to find the factorial of a nonnegative integer. For example, 
+the factorial of 5, written 5!, is 5 x 4 x 3 x 2 x 1 = 120. Similarly, 4! = 4 x 3 x 2 x 1 = 24. Also, factorial of 0 is 
+defined to be 0! = 1. Note that 5! = 5 x 4 x 3 x 2 x 1 = 5 x (4 x 3 x 2 x 1) = 5 x 4!. In general, if n is a 
+nonnegative, the factorial of n, written as n! can be defined as follows:  
+  
+0! = 1           (Equation 4-1) n! = n x (n - 1)! if n > 0        (Equation 4-2)  
+  
+In this definition, 0! is defined to be 1, and if n is an integer greater than 0, first we find (n - 1)! and then 
+multiply it by n. To find (n - 1)!, we apply the definition again. If (n - 1) > 0, then we use Equation 4-2; 
+otherwise, we use Equation 4-1. Thus, for an integer n greater than 0, n! is obtained by first finding (n - 
+1)! and then multiplying (n - 1)! by n.  
+  
+Let us apply this definition to find 3!. Here n = 3. Because n > 0, we use Equation 4-2 to obtain:  
+  
+3! = 3 x 2!

@@ -1,0 +1,22 @@
+Single agent vs. multi-agent. 
+An agent solving a crossword puzzle by itself is clearly in a single-agent environment, 
+whereas an agent playing chess is in a two-agent environment. 
+ 
+As one might expect, the hardest case is partially observable, stochastic, sequential, 
+dynamic, continuous, and multi-agent. 
+
+Figure 1.4 Examples of task environments and their characteristics. 
+ 
+Agent programs 
+The agent programs all have the same skeleton: they take the current percept as input 
+from the sensors and return an action to the actuatom6 Notice the difference 
+between the agent program, which takes the current percept as input, and the agent 
+function, which takes the entire percept history. The agent program takes just the 
+current percept as input because nothing more is available from the environment; if 
+the agent's actions depend on the entire percept sequence, the agent will have to 
+remember the percepts. 
+ 
+Function TABLE-DRIVEN_AGENT(percept) returns an action 
+ 
+static: percepts, a sequence initially empty 
+table: a table of actions, indexed by percept sequence 

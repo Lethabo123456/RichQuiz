@@ -1,0 +1,70 @@
+cho "Hello World"; 
+ 
+       default: 
+ 
+           echo "Hello Channel"; 
+ 
+           break; 
+ 
+   } 
+ 
+?> 
+ 
+A. Hello World 
+B. Hello Channel 
+C. Hello WorldHello Channel 
+D. Nothing Will Be Displayed 
+ANS: C 
+ 
+90. What is missing from case 2 in the switch statement below? 
+
+IP 621  
+<?php 
+ 
+   $variable = 1; 
+ 
+   switch ($variable) { 
+ 
+       case 1: 
+ 
+           echo "Hello World"; 
+ 
+           break; 
+ 
+       case 2: 
+ 
+           echo "Hello Tom"; 
+ 
+       default: 
+ 
+           echo "Hello Robert"; 
+ 
+           break; 
+ 
+   } 
+ 
+?> 
+ 
+A. break: 
+B. break() 
+C. break; 
+D. None of the above 
+ANS: C 
+91. A while loop will continue to execute a segment of code until its condition evaluates to false? 
+A. True 
+B. False 
+ANS: A 
+ 
+92. A while loop is preferred when having to carry out a repetitive operation? 
+
+IP 621  
+A. True 
+B. False 
+ANS: A 
+ 
+93. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $counter = 1; 
+ 
+   while ($counter

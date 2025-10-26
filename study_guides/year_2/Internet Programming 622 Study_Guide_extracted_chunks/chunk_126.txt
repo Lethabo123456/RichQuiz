@@ -1,0 +1,25 @@
+ves you three functions that let you work with 
+the file   
+pointer:   
+
+54   
+   
+• 
+fseek() — Repositions the file pointer to a specified point in the file   
+• 
+rewind() — Moves the file pointer to the start of the file   
+• 
+ftell() — Returns the current position of the file pointer   
+To use fseek(), pass the handle of the open file, and an integer offset. The file pointer moves to the 
+specified number of characters from the start of the file (use zero to move the pointer to the first 
+character). For example, the following code moves the pointer to the eighth character in the file 
+(that is, seven characters after the first character) and displays the next five characters from that 
+point:   
+   
+// hello_world.txt contains the characters “Hello, world!”   
+$handle = fopen( “hello_world.txt”, “r” ); fseek(  
+$handle, 7 );  echo fread( $handle, 5 ); // Displays 
+“world” fclose(  
+$handle );   
+   
+To specify how the offset is calculated, you can add a third optional argument cont

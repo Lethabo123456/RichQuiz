@@ -1,0 +1,12 @@
+ency rules. 
+       Conversion to Second Normal Form (2NF) 
+Conversion to 2NF occurs only when the 1NF has a composite primary key. If the 1NF has a single-
+attribute primary key, then the table is automatically in 2NF. The 1NF-to-2NF conversion is simple. 
+Starting with the 1NF format displayed in Figure 6.3, you take the following steps:  
+Step 1: Make New Tables to Eliminate Partial Dependencies For each component of the 
+primary key that acts as a determinant in a partial dependency, create a new table with a copy of 
+that component as the primary key. While these components are placed in the new tables, it is 
+important that they also remain in the original table as well. The determinants must remain in the 
+original table because they will be the foreign keys for the relationships needed to relate these new 
+tables to the original table. To construct the revised dependency diagram, write each key component 
+on a separate line and then write the original (composite) key on the las

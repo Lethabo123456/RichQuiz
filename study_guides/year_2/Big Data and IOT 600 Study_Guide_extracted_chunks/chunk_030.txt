@@ -1,0 +1,46 @@
+Chapter 3: Big Data Storage and Security 
+ 
+3.1 Big Data Storage 
+Big data storage is a storage infrastructure designed specifically to store, manage and retrieve 
+very large amounts of data and enables real-time data analytics. Big data storage enables the 
+storage and sorting of big data in such a way that it can easily be accessed, used and processed 
+by both applications and services working on big data.  
+Companies apply big data analytics to get greater intelligence from metadata. In most cases, 
+big data storage uses low-cost hard disk drives, or hybrids mixing disk and flash storage. 
+Although a specific volume size or capacity is not formally defined, big data storage usually 
+refers to volumes that grow exponentially to terabyte or petabyte scale. Thus, big data 
+storage is also able to flexibly scale as required. 
+A big data storage system clusters a large number of commodity servers attached to high-
+capacity disk to support analytic software written to crunch vast quantities of data. The 
+system relies on massively parallel processing databases to analyse data ingested from a 
+variety of sources. 
+
+Interesting facts about HADOOP: 
+#1 Can be easily controlled 
+#2 Debugs simply 
+#3 Analyzes high scale data 
+#4 Combines voluminous Data 
+#5 Transfers Data to HDFS form 
+ #6 Data Compression in HDFS 
+# 7 Transformation in Hadoop 
+
+HADOOP 
+The data itself in big data is unstructured because it typically comes from various sources, 
+which means mostly file-based and object storage is required. The Apache Hadoop 
+Distributed File System (HDFS) is the most prevalent analytics engine for big data, and is 
+typically combined with some features of a NoSQL database. 
+ 
+Figure 11: Hadoop Services  
+(Source: Beyond Corner, 2018)
+ 
+Hadoop is open source software written in the Java programming language. HDFS spreads the 
+data analytics across hundreds or even thousands of server nodes without impacting on 
+performance. Through its MapReduce component (as depicted in Figure 11 above), Hadoop 
+distributes processing thus acting as a safeguard against catastrophic failure. The multiple 
+nodes serve as a platform for data analysis at a network's edge. When a query arrives, 
+MapReduce executes processing directly on the storage node on which the data resides. Once 
+analysis is completed, MapReduce gathers the collective results from each server and 
+“reduces” them to present a single cohesive response. 
+
+Figure 12: Hadoop Architecture  
+(Source: Beyond Corner, 2018) 

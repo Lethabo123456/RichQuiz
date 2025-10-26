@@ -1,0 +1,19 @@
+for 
+creating and using indexes: 
+ 
+Create indexes for each single attribute used in a WHERE, HAVING, ORDER BY, or GROUP 
+BY clause.  
+ 
+Do not use indexes in small tables or tables with low sparsity.  
+ 
+Declare primary and foreign keys so the optimizer can use the indexes in join operations. 
+ 
+Declare indexes in join columns other than PK or FK. 
+You cannot always use an index to improve performance. It is so, because, in some DBMSs, indexes 
+are ignored when you use functions in the table attributes. However, major data-bases such as 
+Oracle, SQL Server, and DB2 now support function-based indexes. A function-based index is an 
+index based on a specific SQL function or expression.  
+How many indexes should you create? It’s worth repeating that you should not create an index for 
+every column in a table as it will slow down data manipulation operations.. Furthermore, some 
+query optimizers will choose only one index to be the driving index for a query, even if your query 
+uses co

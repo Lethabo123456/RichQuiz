@@ -1,0 +1,34 @@
+Using the netstat utility 
+Often, one of the things that are required to be figured out is the current state of the active network 
+connections on a host. This is very important information to find for a variety of reasons. For 
+example, when verifying the status of a listening port on a host or to check and see what remote 
+hosts are connected to a local host on a specific port? It is also possible to use the netstat utility to
+determine which services on a host that is associated with specific active ports. Figure below shows 
+an example of the netstat utility being used to display the currently active ports on a Linux machine.  
+
+Figure 46: netsat utility 
+
+2.8 MODULATION TECHNIQUES 
+ 
+Data relies on digital transmission 
+Network connection may handle only analog signals 
+Modem 
+
+ Accomplishes this translation 
+ Modulator/demodulator 
+ Data modulation 
+ Technology modifying analog signals into digital signals and vice versa 
+ Make analog signals suitable for carrying data over a communication path 
+
+2.8.1 A Modem 
+When in the communications environment a modem is a combination of two networking 
+devices: a modulator and a demodulator (modem for short). These devices perform 
+modulation and demodulation algorithms concurrently, to convert a signal from analog-to-
+digital and digital-to-analog, enabling data transmission to and from various computing 
+resources. Below is a modem picture. 
+
+Figure 47: Modem 
+
+ 
+
+

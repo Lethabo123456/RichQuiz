@@ -1,0 +1,33 @@
+TOPIC FOUR | GRAPHS  
+ 
+Introduction 
+Graphs are discrete structures consisting of vertices and edges that connect 
+these vertices. There are different kinds of graphs, depending on whether 
+edges have directions, whether multiple edges can connect the same pair of 
+vertices, and whether loops are allowed. Problems in almost every 
+conceivable discipline can be solved using graph models. 
+This topic will introduce the basic concepts of graph theory and present 
+many different graph models. To solve the wide variety of problems that can 
+be studied using graphs, we will introduce many different graph algorithms. 
+We will also study the complexity of these algorithms. 
+
+4.1. Graphs and Graph Models 
+Definition 54 
+A graph 𝐺 = (𝑉 , 𝐸) consists of V , a nonempty set of vertices (or nodes) 
+and E, a set of edges. Each edge has either one or two vertices associated 
+with it, called its endpoints. An edge is said to connect its endpoints. 
+ 
+Remark: The set of vertices V of a graph G may be infinite. A graph with an 
+infinite vertex set or an infinite number of edges is called an infinite graph, 
+and in comparison, a graph with a finite vertex set and a finite edge set is 
+called a finite graph.  
+
+
+LEARNING OUTCOMES 
+ 
+1. Demonstrate specialist knowledge and show the ability to model 
+and solve real-world problems using graphs both quantitatively 
+and qualitatively. 
+2. Demonstrate the ability to solve discrete mathematics problems 
+that involve: computing permutations and combinations of a set, 
+fundamental enumeration principles, and graph theory. 

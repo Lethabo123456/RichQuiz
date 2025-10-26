@@ -1,0 +1,12 @@
+h queen in the ith row. For example, the solution in Figure 4-11 can be represented as the 8-tuple 
+(4,6,8,2,7,1,3,5). That is, the first queen is placed in the first row and fourth column, the second queen is 
+placed in the second row and sixth column, and so on. Clearly, each xi is an integer such that 1 ≤ xi ≤ 8.  
+  
+Let us again consider the 8-tuple (x1, x2, x3, x4, x5, x6, x7, x8), where xi is an integer such that 1 ≤ xi ≤ 8. 
+Because each xi has 8 choices, there are 88 such tuples, and so possibly 88 solutions. However, because no 
+two queens can be placed in the same row, no two elements of the 8-tuple (x1, x2, x3, x4, x5, x6, x7, x8) are 
+the same. From this, it follows that the number of 8-tuples possibly representing solutions are 8!.   
+  
+The solution that we develop can, in fact, be applied to any number of queens. Therefore, to illustrate the 
+backtracking technique, we consider the 4-queens puzzle. That is, you are given a 4 by 4 square board 
+(see Figure 4-12) and you

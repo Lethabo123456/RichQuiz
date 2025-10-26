@@ -1,0 +1,35 @@
+Next to calling Wait on a single Task, you can also use the method WaitAll to wait for multiple Tasks to 
+finish before continuing execution. example 5-12 shows how to use this. 
+ 
+using System;
+using System.Threading.Tasks; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        public static void Main() 
+        { 
+            Task<Int32[]> parent = Task.Run(() => 
+            { 
+                var results = new Int32[3]; 
+                TaskFactory tf = new TaskFactory(TaskCreationOptions.AttachedToParent, 
+                TaskContinuationOptions.ExecuteSynchronously); 
+                tf.StartNew(() => results[0] = 0); 
+                tf.StartNew(() => results[1] = 1); 
+                tf.StartNew(() => results[2] = 2); 
+                return results; 
+            }); 
+            var finalTask = parent.ContinueWith( 
+            parentTask => 
+            { 
+                foreach (int i in parentTask.Result) 
+                    Console.WriteLine(i); 
+            }); 
+            finalTask.Wait(); 
+        } 
+    } 
+} 
+ 
+In this case, all three Tasks are executed simultaneously, and the whole run takes approximately 
+1000ms instead of 2000. Next to WaitAll, you also have a WhenAll method that you can use to schedule 
+a continuation method after all Tasks have finished. 

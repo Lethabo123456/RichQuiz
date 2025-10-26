@@ -1,0 +1,11 @@
+sepower and low mpg, and also displays a trend 
+toward higher horsepower with greater numbers of cylinders (note that displacement is not factored here). 
+● We added text to each marker to show the name of the vehicle on hover. 
+● We added hovermode='closest' to the Layout - otherwise, only the bottom-most marker is described if several 
+markers appear on the same vertical x-value. 
+● It is worth noting that bubble charts and scatter plots suffer a potential limitation, should more than one data 
+point land on the same spot. A bubble may be a shade darker, but it’s hard to tell that that multiple data points could 
+be obscured. This limitation is addressed in the Dash section Selected Data, select2.py file, showing the “density” of 
+similar looking scatter plots. 
+● bubble2.py is just like bubble1, except we show how to add multiple fields to the hover text. Since one of the 
+fields was numeric (model_year), we first added a column to the DataFrame converting it to text, then another c

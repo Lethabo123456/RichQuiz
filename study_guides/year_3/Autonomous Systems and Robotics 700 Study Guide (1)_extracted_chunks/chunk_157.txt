@@ -1,0 +1,34 @@
+Installation 
+The python-control package may be installed using pip, conda or the standard distutils/setuptools 
+mechanisms. 
+To install using pip: 
+pip install slycot # optional 
+pip install control 
+For users with the Anaconda distribution of Python, the following commands can be used: 
+conda install numpy scipy matplotlib # if not yet installed 
+conda install -c python-control -c cyclus slycot control
+
+The code below will import the control toolbox either from your local installation or via pip. We 
+use the prefix ct to access control toolbox commands: 
+# Import the packages needed for the examples included in this notebook 
+import numpy as np 
+import matplotlib.pyplot as plt 
+# Import the python-control package 
+try: 
+    import control as ct 
+
+    print("python-control", ct.__version__) 
+except ImportError: 
+    print("python-control package not found. Please install it using:") 
+    print("pip install control") 
+    print("or in Spyder's IPython console: !pip install control") 
+    # Optionally, you can try to install it programmatically: 
+    import subprocess 
+    import sys 
+    try: 
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "control"]) 
+        import control as ct 
+        print("Successfully installed and imported python-control", ct.__version__) 
+    except Exception as e: 
+        print(f"Failed to install python-control: {e}") 
+        print("Please install manually using: pip install control") 

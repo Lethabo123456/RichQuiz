@@ -1,0 +1,14 @@
+d, all that was required was to recursively go through the remaining attributes in 
+the set. ID3 uses the method of information gain—the measure of difference in entropy 
+before and after an attribute is split—to decide on the root node (the node with the highest 
+information gain). ID3 suffered from over-fitting on training data, and the algorithm was 
+
+P a g e  | 39 
+ 
+better suited to smaller trees than large ones. The ID3 algorithm is used less these days in 
+favour of the C4.5 algorithm, which is outlined next. 
+C4.5. It's also based on the information gain method, but it enables the trees to be used for 
+classification. This is a widely used algorithm in that many users run in Weka with the open 
+source Java version of C4.5, the J48 algorithm. There are notable improvements in C4.5 over 
+the original ID3 algorithm. With the ability to work on continuous attributes, the C4.5 method 
+will calculate a threshold point for the split to occur. For example, with a list of values like th

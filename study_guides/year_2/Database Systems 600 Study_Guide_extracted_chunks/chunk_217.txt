@@ -1,0 +1,21 @@
+etimes useful. In this section, you will learn about a special case of 3NF, known as 
+Boyce-Codd normal form, and about fourth normal form (4NF). 
+The Boyce-Codd Normal Form 
+A table is in Boyce-Codd normal form (BCNF) when every determinant in the table is a candidate 
+key. Clearly, when a table contains only one candidate key, the 3NF and the BCNF are equivalent. 
+In other words, BCNF can be violated only when the table contains more than one candidate key. 
+Remember, however, that multiple candidate keys are always possible, and normalization rules 
+focus on candidate keys, not just the primary key. Consider the table structure shown in Figure 6.7. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six, page 213-217. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six page 217-218 
+
+ 
+86 
+The CLASS table has two candidate keys:  
+• CLASS_

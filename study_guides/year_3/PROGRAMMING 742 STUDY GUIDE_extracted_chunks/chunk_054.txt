@@ -1,0 +1,25 @@
+2.1.2 Calling Base Class Constructors 
+In Example 2-1, the new class ListBox derives from Window and has its own constructor, which 
+takes three parameters. The Li s tBox constructor invokes the constructor of its parent by plac-
+ing a colon (:) after the parameter list and then invoking the base class with the keyword base: 
+public ListBox( int theTop, int theLeft, string theContents): 
+
+base (theTop, theLeft) // call base constructor 
+Because classes cannot inherit constructors, a derived class must implement its own construc-
+tor and can only make use of the constructor of its base class by calling it explicitly. 
+Also notice in Example 2-1 that ListBox implements a new version of DrawWindow ( ): 
+public new void DrawWindow( ) 
+The keyword new indicates that the programmer is intentionally creating a new version of this 
+method in the derived class. 
+If the base class has an accessible default constructor, the derived constructor is not required 
+to invoke the base constructor explicitly; instead, the default constructor is called implicitly. 
+However, if the base class does not have a default constructor, every derived constructor 
+must explicitly invoke one of the base class constructors using the base keyword. 
+ 
+As discussed , if you do not declare a constructor of any kind, the com-
+piler will create a default constructor for you. Whether you write it 
+yourself or you use the one provided "by default" by the compiler, a 
+default constructor is one that takes no parameters. Note, however, 
+that once you do create a constructor of any kind (with or without 
+parameters) the compiler does not create a default constructor for 
+you. 

@@ -1,0 +1,25 @@
+Redundancy in your network offers the advantage of reducing the risk of lost functionality, 
+and potentially lost profits, from a network fault. As you might guess, however, the main 
+disadvantage of redundancy is its cost. If you subscribed to two different service providers for 
+two T1 links in the Legend PayNTime example, you would probably double your monthly 
+leasing costs of approximately R2000. Multiply that amount times 12 months and then times 
+the number of clients for which you need to provide redundancy, and the extra layers of 
+protection quickly become expensive. Redundancy is like a homeowner’s insurance policy: 
+You might never need to use it, but if you don’t get it, the cost when you do need it can be 
+much higher than your premiums. As a general rule, you should invest in connection 
+redundancies where they are absolutely necessary. 
+
+Now suppose that Legend PayNTime provides services not only to the oil company, but also 
+to a temporary agency in the PMB area. Both links are critical because both companies need 
+their payroll processed each week. To address concerns of capacity and scalability, the 
+company might want to consider partnering with an ISP and establishing secure VPNs with its 
+clients. With a VPN, Legend PayNTime could shift the costs of redundancy and network design 
+to the service provider and concentrate on the task it does best—processing payroll. 
+
+Figure 2.2 illustrates this type of arrangement. 
+
+Legend PayNTime -> Internet <- Oil Company 
+
+Achieving the utmost fault tolerance requires more than redundant connections, however it 
+also requires eliminating single points of failure in every piece of hardware from source to 
+destination.

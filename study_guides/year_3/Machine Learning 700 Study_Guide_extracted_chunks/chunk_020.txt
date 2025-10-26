@@ -1,0 +1,15 @@
+Examples include: 
+✓ Classification: Predicting whether an email is spam or not. 
+✓ Regression: Predicting house prices based on location and size. 
+
+Classification can be either binary (distinguishing between two classes) or multiclass (distinguishing 
+between more than two classes). For instance, binary classification involves tasks like identifying 
+spam versus non-spam emails, where the question is "Is this email spam?" The iris classification is a 
+multiclass problem, as is predicting a website’s language based on its text. 
+Regression tasks, on the other hand, involve predicting a continuous value, such as a real number. 
+An example of regression is predicting a person’s annual income based on factors like education, age, 
+and location. The predicted value is a continuous number that can vary within a range. Another 
+example is forecasting the yield of a corn farm based on previous yields and weather conditions. A 
+simple way to distinguish between classification and regression is to consider whether the possible 
+outcomes are continuous. In regression, the output is continuous (e.g., annual income), while in 
+classification, the outputs are discrete (e.g., identifying the language of a website). 

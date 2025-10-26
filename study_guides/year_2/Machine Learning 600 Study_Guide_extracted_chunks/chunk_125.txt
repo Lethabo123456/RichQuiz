@@ -1,0 +1,22 @@
+ner relationships between data. In the literature, this situation 
+is known as overfitting. (See Figure 6.8.)  
+ 
+ 
+           Figure 6.8: Comparison between overfitting, underfitting and balanced features 
+ 
+6.9.1 Classification and Confusion Matrix 
+Considerations about bias and variance work well when the predictions you expect from the 
+model are about a feature based on a continuous range of values. What if, instead, yours is a 
+problem of classification and all you need is to determine the category a given record belongs 
+
+P a g e  | 79 
+ 
+to? In this case, you evaluate the precision of the model through a different tool—
+the confusion matrix. Let’s see how it works in a simple scenario like the binary classification. 
+In this case, you expect the model to make a binary prediction: true or false. Overall, there 
+are four possibilities: 
+ 
+The model rightly classifies the feature as positive, and it’s a true positive (TP) 
+scenario. 
+ 
+The model wrongly classifies the feature as

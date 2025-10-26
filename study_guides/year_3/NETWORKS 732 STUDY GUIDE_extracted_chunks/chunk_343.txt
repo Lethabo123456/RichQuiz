@@ -1,0 +1,31 @@
+6.13 Troubleshooting Wi-Fi Network 
+
+Many applications can scan for wireless signals over a certain geographical range and discover all 
+the access points and wireless nodes transmitting in the area. This is useful for determining 
+whether an access point is functioning properly, whether it is positioned correctly so that all the 
+nodes it serves are within its range, whether nodes and access points are communicating over 
+the proper channels within a frequency band, and whether wireless signals are present that 
+shouldn’t be. 
+
+Here are two tools you need in your toolkit: 
+
+• Spectrum analyzer: A device that can assess the quality of a wireless signal by scanning a band 
+of frequencies for signals and noise. A spectrum analysis is useful, for example, to ascertain where 
+interference is greatest. 
+• Wi-Fi analyzer: Software that can evaluate Wi-Fi network availability as well as help optimize 
+Wi-Fi signal settings or help identify Wi-Fi security threats. Identifying the wireless channels being 
+used nearby helps you optimize wireless channel utilization in your vicinity. 
+Software tools that can perform wireless network assessment are often available for free and 
+might be provided by the access point’s manufacturer. Following is a list of speciﬁc capabilities 
+common to wireless network testing tools: 
+• Identify transmitting APs, nodes, and the channels over which they are communicating 
+• Measure signal strength from and determine the range of an AP 
+• Indicate the eﬀects of attenuation, signal loss, and noise 
+• Interpret signal strength information to rate potential AP locations 
+• Ensure proper association and reassociation when moving between APs 
+• Capture and interpret traﬃc exchanged between APs and nodes 
+• Measure throughput and assess data transmission errors 
+• Analyze the characteristics of each channel within a frequency band to indicate the clearest 
+channels 
+
+Figure 6.15 Wireless Analyzer (West, 2002) 

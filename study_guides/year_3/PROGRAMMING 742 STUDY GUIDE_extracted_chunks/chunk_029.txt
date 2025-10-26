@@ -1,0 +1,18 @@
+1.5 Passing Parameters 
+By default, value types are passed into methods by value (see Section 2.1.2, earlier in this 
+chapter). This means that when a value object is passed to a method, a temporary copy of the 
+object is created within that method. Once the method completes, the copy is discarded. Alt-
+hough passing by value is the normal case, there are times when you will want to pass value 
+objects by reference. C# provides the ref parameter modifier for passing value objects into a 
+method by reference and the out modifier for those cases in which you want to pass in a ref 
+variable without first initializing it. C# also supports the params modifier, which allows a 
+method to accept a variable number of parameters.
+
+1.5.1 Passing by Reference 
+Methods can return only a single value (though that value can be a collection of values). Let's 
+return to the Time class and add a GetTime ( ) method, which returns the hour, minutes, and 
+seconds. 
+
+Because we cannot return three values, perhaps we can pass in three parameters, let the 
+method modify the parameters, and examine the result in the calling method. Example 2-7 
+shows a first attempt at this. 

@@ -1,0 +1,19 @@
+an ordered linked list, first we search the list to see whether the item to be 
+deleted is in the list. The function to implement this operation is the same as the delete operation on 
+general linked lists. Here, because the list is sorted, we can somewhat improve the algorithm for ordered 
+linked lists.  
+  
+As in the case of insertNode, we search the list with two pointers, current and trailCurrent. Similar to the 
+operation insertNode, several cases arise:  
+  
+Case 1:   
+The list is initially empty.We have an error. We cannot delete from an empty list.  
+Case 2:   
+The item to be deleted is contained in the first node of the list. We must adjust the head 
+pointer of the list—that is, first.  
+Case 3:   
+The item to be deleted is somewhere in the list. In this case, current points to the node 
+containing the item to be deleted, and trailCurrent points to the node just before the node 
+pointed to by current.  
+Case 4:   
+The list is not empty, but the item to be deleted is not in th

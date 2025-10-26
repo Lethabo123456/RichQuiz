@@ -1,0 +1,18 @@
+iable is declared, and its type is tested with 
+gettype() . Then, four different types of data are assigned to the variable, and the variable’s type is 
+retested with gettype() each time:  
+  
+$test_var; // Declares the $test_var variable without initializing it 
+echo gettype( $test_var ) . “ < br / > ”; // Displays “NULL”  
+$test_var = 15;  
+echo gettype( $test_var ) . “ < br / > ”; // Displays “integer”  
+$test_var = 8.23;  
+echo gettype( $test_var ) . “ < br / > ”; // Displays “double”  
+$test_var = “Hello, world!”;  
+echo gettype( $test_var ) . “ < br / > ”; // Displays “string”  
+  
+The $test_var variable initially has a type of null, because it has been created but not initialized  
+(assigned a value). After setting $test_var to the value 15, its type changes to integer. Setting  
+$test_var to 8.23 changes its type to double (which in PHP means the same as float, because all 
+PHP floating - point numbers are double - precision). Finally, setting $test_var to “ Hello, world! ” 
+al

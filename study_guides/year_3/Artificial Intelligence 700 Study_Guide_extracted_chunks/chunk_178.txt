@@ -1,0 +1,37 @@
+Here is the sequence of steps the Prolog proof system would go through given 
+A=5 and B=10: 
+ 
+?-gcd(5,10,D) 
+(5>10) 
+gcd(10,5,D) 
+(10>5) 
+(5>0) R=0 
+gcd(5,0,D) 
+D=5 
+ 
+What can we specify with Horn clauses? Ignoring quantifiers for the moment, 
+consider a statement in CNF. Since everything in the Prolog database is assumed to 
+be true, we'll be set if we can come up with a 
+Horn clause for each clause of the CNF expression. 
+ 
+Consider a single clause. Some of its terms are negated; others are plain. 
+In general, x1 | x2 | ... | xN | ~y1 | ~y2 | ... | ~yM 
+== (x1 | x2 | ... | xN) <- (y1 & y2 & ... & yM). 
+If there is a single plain term and no negated terms, we have a Prolog fact. 
+As a Horn clause, this is x1 <- true. 
+If we have a single plain term and a bunch of negated terms, we have a 
+Prolog rule.
+
+If we have zero plain terms we have a goal. If we choose to write this as 
+false <- y1 & y2 & ... & yM 
+then we can add it to our database and attempt to find a proof via 
+contradiction. 
+If we have more than one plain term we're stuck: we can't express our 
+CNF clause as a Horn clause. 
+ 
+In summary: we can express a CNF clause as a Horn clause iff it has 
+exactly one plain term. 
+ 
+Now what about quantifiers: recall that free variables that appear in the head of a rule 
+are universally quantified; free variables that appear only in the body are existentially 
+quantified. If we need different quantifiers, again we're stuck.

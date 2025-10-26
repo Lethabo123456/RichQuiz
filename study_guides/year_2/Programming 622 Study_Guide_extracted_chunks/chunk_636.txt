@@ -1,0 +1,33 @@
+ee to further  
+//restore the heap  
+}   
+  
+  
+  
+  
+  
+  
+//end else  
+}  
+ 
+  
+  
+  
+  
+  
+  
+//end while  
+
+314  
+  
+  
+The swap statement at the line marked Line swap** swaps the parent with the larger child. Because a 
+swap statement makes three item assignments to swap the contents of two variables, each time through 
+the loop three item assignments are made. The while loop moves the parent node to a place in the tree 
+so that the resulting subtree with the root node list[low] is in a heap. We can easily reduce the number of 
+assignments each time through the loop from three to one by first storing the root node in a temporary 
+location, say temp. Then each time through the loop, the larger child is compared with temp. If the larger 
+child is larger than temp, we move the larger child to the root node of the subtree under consideration.  
+  
+Next, we describe the function heapify, which restores the heap in a subtree by making one item 
+assignment each time through the loop. The

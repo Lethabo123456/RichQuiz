@@ -1,0 +1,18 @@
+is assigned to the edges in T, T is called a weighted tree.  
+28. If T is a weighted tree, the weight of T, denoted by W(T), is the sum of the weights of all the edges in  
+T.  
+29. A tree T is called a spanning tree of graph G if T is a subgraph of G such that V(T) = V(G)—that is, if all 
+the vertices of G are in T.  
+30. Let G be a graph and V(G) = {v1, v2, . . ., vn}, where n ≥ 0. A topological ordering of V(G) is a linear 
+ordering vi1, vi2, . . ., vin of the vertices such that if vij is a predecessor of vik, j ≠ k, 1 ≤ j, k ≤ n, then vij 
+precedes vik, that is, j < k in this linear ordering.  
+31. A circuit is a path of nonzero length from a vertex u to u with no repeated edges.  
+32. A circuit in a graph that includes all the edges of the graph is called an Euler circuit.  
+33. A graph G is said to be Eulerian if either G is a trivial graph or G has an Euler circuit.  
+  
+Exercises  
+  
+Use the graph in Figure 10-27 for Exercises 1 through 4.  
+  
+  
+FIGURE 10-27 Graph for Exerc

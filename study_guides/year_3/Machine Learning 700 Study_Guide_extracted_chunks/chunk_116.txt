@@ -1,0 +1,49 @@
+Now, we train a LinearSVC classifier on the dataset: 
+ 
+We see that the shape of the coef_ is (3, 2), meaning that each row of coef_ contains the coefficient 
+vector for one of the three classes and each column holds the coefficient value for a specific feature 
+(there are two in this dataset). The intercept_ is now a one-dimensional array, storing the intercepts for 
+each class. Let’s visualize the lines given by the three binary classifiers: 
+
+You can see that all the points belonging to class 0 in the training data are above the line corresponding 
+to class 0, which means they are on the “class 0” side of this binary classifier. The points in class 0 are 
+above the line corresponding to class 2, which means they are classified as “rest” by the binary classifier 
+for class 2. The points belonging to class 0 are to the left of the line corresponding to class 1, which means 
+the binary classifier for class 1 also classifies them as “rest.” Therefore, any point in this area will be 
+classified as class 0 by the final classifier (the result of the classification confidence formula for classifier 
+0 is greater than zero, while it is smaller than zero for the other two classes). But what about the triangle 
+in the middle of the plot? All three binary classifiers classify points there as “rest.” Which class would a 
+point be assigned to? The answer is the one with the highest value for the classification formula: the 
+class of the closest line. 
+
+4.4.1 Strengths, Weaknesses, and Parameters 
+
+The main parameter in linear models is the regularization parameter, which is called alpha in regression 
+models and C in LinearSVC and LogisticRegression. Higher values of alpha or smaller values of C result in 
+simpler models. Tuning these parameters is especially important for regression models, and it’s common 
+to search for them on a logarithmic scale. Additionally, you must decide between using L1 or L2 
+regularization. If you believe that only a few features are truly significant, L1 regularization is preferable. 
+Otherwise, L2 regularization is usually the default. L1 regularization is also helpful for interpretability, as 
+it selects only a few important features, making it easier to explain how those features affect the 
+predictions. 
+
+Linear models are fast to train and predict, and they scale well to large datasets. They also handle sparse 
+data well. For datasets with hundreds of thousands or millions of samples, the solver='sag' option in 
+LogisticRegression and Ridge can be more efficient. Other scalable options 
+include SGDClassifier and SGDRegressor, which offer even more efficient versions of the linear models 
+discussed. One advantage of linear models is that they are easy to understand, as they rely on simple formulas for 
+both regression and classification. However, the interpretation of the coefficients can sometimes be 
+unclear, especially when features are highly correlated, which can make the coefficients difficult to 
+interpret. 
+Linear models tend to perform well when the number of features significantly exceeds the number of 
+samples. They are often used with very large datasets because training more complex models may not 
+be practical. However, for lower-dimensional datasets, other models might provide better generalization 
+performance.
+
+4.4.2  Evaluation Metrics for Classification 
+Key Metrics: 
+✓ Accuracy: Overall correctness of predictions. 
+✓ Precision: TPTP+FP\frac{TP}{TP + FP}TP+FPTP – Focuses on false positives. 
+✓ Recall: TPTP+FN\frac{TP}{TP + FN}TP+FNTP – Focuses on false negatives. 
+✓ F1-score: Harmonic mean of precision and recall. 
+✓ ROC Curve: Evaluates the tradeoff between sensitivity and specificity. 

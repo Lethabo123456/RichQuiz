@@ -1,0 +1,81 @@
+Adding a Method to the Box Class 
+   
+Although it is perfectly fine to create a class that contains only data, it rarely happens. Most of the 
+time you will use methods to access the instance variables defined by the class. In fact, methods 
+define the interface to most classes. This allows the class implementor to hide the specific layout of 
+internal data structures behind cleaner method abstractions. In addition to defining methods that 
+provide access to data, you can also define methods that are used internally by the class itself. Let’s 
+begin by adding a method to the Box class. It may have occurred to you while looking at the 
+preceding programs that the computation of a box’s volume was something that was best handled 
+by the Box class rather than the BoxDemo class. After all, since the volume of a box is dependent 
+upon the size of the box, it makes sense to have the Box class compute it. To do this, you must add 
+a method to Box, as shown here:   
+   
+// This program includes a method inside the 
+box  class. class Box { double width; double height;    
+ 
+double depth;   
+// display volume of a box 
+void volume() {   
+System.out.print("Volume is ");   
+System.out.println(width * height * depth);   
+}      
+}   
+   
+class BoxDemo3 {   
+public static void main(String args[]) { Box 
+mybox1 = new Box();   
+   
+Box mybox2 = new Box();   
+// assign values to mybox1's instance  
+variables mybox1.width = 10; mybox1.height  
+= 20;   
+   
+mybox1.depth = 15;   
+/* assign different values to 
+mybox2's instance variables */ 
+mybox2.width = 3; mybox2.height  
+=   
+6; mybox2.depth = 9;   
+   
+// display volume of first 
+box mybox1.volume();  // 
+display volume of second  
+box mybox2.volume();   
+}   
+}   
+   
+This program generates the following output, which is the same as the previous version.   
+
+Volume is 3000.0   
+Volume is 162.0   
+ 
+ 
+   
+Look closely at the following two lines of code:    
+mybox1.volume(); 
+mybox2.volume();   
+   
+The first line here invokes the volume( ) method on mybox1. That is, it calls volume( ) relative to the 
+mybox1 object, using the object’s name followed by the dot operator. Thus, the call to 
+mybox1.volume( ) displays the volume of the box defined by mybox1, and the call to 
+mybox2.volume( ) displays the volume of the box defined by mybox2. Each time volume( ) is invoked, 
+it displays the volume for the specified box. If you are unfamiliar with the concept of calling a 
+method, the following discussion will help clear things up. When   
+mybox1.volume( ) is executed, the Java run-time system transfers control to the code defined  
+inside volume( ). After the statements inside volume( ) have executed, control is returned to the 
+calling routine, and execution resumes with the line of code following the call. In the most general 
+sense, a method is Java’s way of implementing subroutines. 
+ 
+There is something very important to notice inside the volume( ) method: the instance variables 
+width, height, and depth are referred to directly, without preceding them with an object name or 
+the dot operator. When a method uses an instance variable that is defined by its class, it does so 
+directly, without explicit reference to an object and without use of the dot operator. This is easy to 
+understand if you think about it. A method is always invoked relative to some object of its class. 
+Once this invocation has occurred, the object is known. Thus, within a method, there is no need to 
+specify the object a second time. This means that width, height, and depth inside volume( ) implicitly 
+refer to the copies of those variables found in the object that invokes volume( ). Let’s review: When 
+an instance variable is accessed by code that is not part of the class in which that instance variable 
+is defined, it must be done through an object, by use of the dot operator. However, when an instance 
+variable is accessed by code that is part of the same class as the instance variable, that variable can 
+be referred to directly. The same thing applies to methods.

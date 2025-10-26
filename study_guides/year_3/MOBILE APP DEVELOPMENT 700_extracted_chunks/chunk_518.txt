@@ -1,0 +1,35 @@
+Android Play Store Distribution 
+
+The Google Play Store does not provide any copy protection for your app. Instead, Google provides a 
+Licensing Library, which allows developers to add copy protection to their apps. The Licensing Library 
+needs to be added to the workspace just like the Google Play Services library was added (Chapter, 
+
+“Maps and Location in Android”). After the library is added, search the developer site for detailed 
+instructions for adding licensing to your app. When you add licensing to an app, each time the user 
+opens the app, the Play Store is queried to determine whether the user bought the app. If the user 
+did not buy the app, the developer can have the app close or take whatever action is deemed 
+appropriate. If you do not use licensing, your app can be copied to other devices quite easily. 
+After you have added licensing (if you want to), the app needs to be compiled into a signed Android 
+application package (APK) file. Prior to compiling the app, you need to go through the code and 
+remove any logging operations, all debug breakpoints, and address as many of the warnings identified 
+by Android Studio as you think necessary. To create a signed APK (which is required by the Play Store), 
+you need to set a private key. Fortunately, you can create your private key while completing the 
+process to generate a signed APK. 
+
+1. Click Build > Generate Signed Bundle/APK. . . . If you do not have a release key, you can create 
+one here. If you do, you must select it here (Figure 16.1). Select APK and click Next. 
+2. The Generate Signed Bundle or APK window will open (Figure 16.2). Click the Create new… 
+button. The New Key Store window will open (Figure 16.3). Enter a name and password for the 
+key store being generated. You can have multiple keys within one key store. The Key Alias is how 
+you get back to this specific key. You can use the same key for all your apps or change keys for 
+different apps. The alias also requires a password. Select the number of years you want this key 
+to be valid. Finally, fill in any company information you want and click OK. 
+ 
+3. The New Key Store window closes and the Generate Signed Bundle or APK window is again 
+displayed, filled in with the key information (Figure 16.4). 
+4. Click Next. By default, the generated APK is saved in the same location as the project (Figure 16.5). 
+Use the folder button if you wish to change this. Next, select the Build Variant (debut or release), 
+depending on what you are going to do with the app. Choose a signature version. V2 is the newer and 
+improved signature, which protects the full APK. However, if you previously built an app with V1, it 
+may not build with V2. Click Finish. The signed APK can be created and stored in the specified location. 
+This APK will be uploaded to the Play Store during the publishing process. 

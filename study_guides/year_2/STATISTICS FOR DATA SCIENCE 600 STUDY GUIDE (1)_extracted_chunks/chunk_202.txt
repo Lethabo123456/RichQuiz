@@ -1,0 +1,15 @@
+nature of the value. Suppose our p-value came out to 
+.04. It means that 4% of the time, our data just randomly happened to appear this way and is 
+not significant in any way. 4% is not that small of a percent! For this reason, many people are 
+switching to different statistical tests. However, that does not mean that p-values are useless. 
+It merely means that we must be careful and aware of what the number is telling us. 
+ 
+There are many other types of t-tests, including one-tailed tests (mentioned before) and 
+paired tests as well as two sample t-tests (both not mentioned yet). These procedures can be 
+readily found in statistics literature; however, we should look at something very important—
+what happens when we get it wrong. 
+ 
+Type I and Type II Errors 
+We've mentioned both the type I and type II errors in a previous chapter about probability in 
+the examples of a binary classifier, but they also apply to hypothesis tests. 
+• Type I Error: A type I error occurs if we reject the

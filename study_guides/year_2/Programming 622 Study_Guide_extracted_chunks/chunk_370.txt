@@ -1,0 +1,29 @@
+therStack into this stack  
+for (int j = 0; j < stackTop; j++)  
+list[j] = otherStack.list[j];  
+ 
+}   
+  
+  
+  
+  
+  
+//end copyStack  
+  
+ 
+5.2.8  Constructor and Destructor  
+  
+The functions to implement the constructor and the destructor are straightforward. The constructor with 
+parameters sets the stack size to the size specified by the user, sets stackTop to 0, and creates an 
+appropriate array in which to store the stack elements. If the user does not specify the size of the array in 
+which to store the stack elements, the constructor uses the default value, which is 100, to create an array 
+of size 100. The destructor simply deallocates the memory occupied by the array (that is, the stack) and 
+sets stackTop to 0. The definitions of the constructor and destructor are as follows:  
+  
+template <class Type>  
+stackType<Type>::stackType(int stackSize)  
+{  
+if (stackSize <= 0)  
+{  
+cout << "Size of the array to hold the stack must "<< "be positive." << endl; 
+cout << "Creating

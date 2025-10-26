@@ -1,0 +1,20 @@
+What Polymorphism Is. 
+8. Implement a Virtual Method. 
+9. Override a Virtual Method. 
+10.Use Polymorphism in a Program. 
+11.Understand the Purpose of Interfaces. 
+12.Define an Interface. 
+13.Use an Interface. 
+14.Implement Interface Inheritance. 
+
+2.1.1 Implementing Inheritance 
+In C#, you create a derived class by adding a colon after the name of the derived class, fol-
+lowed by the name of the base class: 
+public class ListBox : Window 
+This code declares a new class, ListBox, that derives from Window. You can read the colon as 
+"derives from." 
+The derived class inherits all the members of the base class, both member variables and meth-
+ods. The derived class is free to implement its own version of a base class method. It does so 
+by marking the new method with the keyword new. (The new keyword is also discussed in 
+Section 2.2.2, later in this chapter.) This indicates that the derived class has intentionally hid-
+den and replaced the base class method, as used in Example 2-1.

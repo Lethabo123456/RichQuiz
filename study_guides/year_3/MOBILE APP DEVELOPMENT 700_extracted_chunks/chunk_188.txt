@@ -1,0 +1,29 @@
+Add  an  EditText  for the user to enter the contact name. Scroll to the Text folder in 
+the Palette and drag a plain EditText to the right of the TextView in the Design view. 
+Next, drag the EditText to below the TextView. Again, since the layout is 
+wrapping content, you cannot directly drop it below the TextView or it will not be in the ScrollView. 
+You must first drop it in the layout, and then you can drag it below. The layout will expand. 
+Once you have correctly positioned the EditText below the TextView within the ConstraintLayout, 
+use the Attributes panel to set the top and left constraints (note that the top constraint will 
+automatically connect to the nearest widget above it, which is the TextView). Then, set the top margin to 8dp and the left margin to 16dp. Give it the id 
+editName. Switch to the XML and refer to Listing 4.3 to configure the remaining EditText attributes. 
+Modify the XML as shown. Note that you have worked with many of these attributes already. 
+However, a few require additional explanation: 
+
+▪ Line 8—The ems attribute tells Android how big the EditText should be. The unit ems is the number 
+of capital Ms that could fit into the widget. It often takes some experimentation with the number to 
+get the widget to size the way you’d like it. 
+▪ Line 9—The inputType attribute tells Android what type of keyboard to display and how to format 
+the data as it’s entered. The value textPersonName tells Android to display an alpha keyboard and to 
+capitalize each word as it’s entered. 
+▪ Line 10—The hint attribute tells Android to display text in the EditText 
+that is in the background so that the user can type over it without deleting 
+it. Your XML may have a line with the text attribute set to Name. Delete 
+that and add the hint line. 
+▪ Line 11—The imeOptions=“actionNext” attribute/value pair tells Android to 
+show  a  Next  button  on  the  soft keyboard.  When  the  user  presses 
+that button, focus will move to the next EditText. This is how tabbing is 
+implemented in Android apps. 
+▪ Line 14—The final item in the XML <requestFocus /> is not an attribute. It is a tag to tell Android to 
+put the cursor in this widget when the layout is displayed. You should have only one of these in a single 
+layout file.

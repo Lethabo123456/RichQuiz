@@ -1,0 +1,16 @@
+Step 1: Install Required Libraries 
+pip install numpy pandas scikit-learn matplotlib 
+ 
+Step 2: Load and Explore Data 
+import pandas as pd 
+# Load sample dataset 
+df 
+= 
+pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-
+data/master/iris.csv") 
+# Display basic statistics 
+print(df.describe()) 
+ 
+Step 3: Train a Simple Model 
+from sklearn.model_selection import train_test_split 
+from sklearn.linear_model import LogisticRegression 

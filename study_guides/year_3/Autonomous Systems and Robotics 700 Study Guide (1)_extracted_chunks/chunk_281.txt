@@ -1,0 +1,31 @@
+5.3.2 Raft Consensus Algorithm 
+The Raft consensus algorithm represents a more practical approach to distributed consensus that 
+prioritises simplicity, understandability, and ease of implementation while providing strong 
+consistency guarantees for most real-world scenarios. Raft was specifically designed to address 
+the complexity issues that made earlier consensus algorithms like Paxos difficult to understand 
+and implement correctly, making it particularly attractive for robotic applications where 
+development teams need reliable consensus mechanisms without excessive implementation 
+complexity. 
+
+Raft divides the consensus problem into three separable subproblems: leader election, log 
+replication, and safety. This decomposition creates a clear architectural framework where one 
+agent acts as a designated leader responsible for coordinating decisions and managing the 
+consistency of shared state, while follower agents implement the leader's decisions and 
+participate in leader election when necessary. This approach naturally maps to many robotic 
+coordination scenarios where hierarchical organisation can simplify complex multi-agent 
+behaviours. 
+The leader election component of Raft ensures that the system can automatically recover from 
+leader failures by selecting a new leader through a randomised election process that prevents 
+split votes and ensures rapid convergence to a single leader. In robotic swarms, this mechanism 
+enables automatic reconfiguration when the coordinating robot experiences hardware failure, 
+battery depletion, or communication loss, ensuring that the swarm can continue operating 
+effectively without human intervention. 
+Log replication in Raft provides the mechanism for distributing decisions and state updates from 
+the leader to all followers, ensuring that all agents maintain consistent copies of shared 
+information. This replication process includes sophisticated safety mechanisms that prevent data 
+loss and ensure that committed decisions cannot be reversed, even during leader transitions or 
+network partitions. 
+ 
+Recommended Diagram Sources for Raft Algorithm: 
+ 
+Raft Algorithm 

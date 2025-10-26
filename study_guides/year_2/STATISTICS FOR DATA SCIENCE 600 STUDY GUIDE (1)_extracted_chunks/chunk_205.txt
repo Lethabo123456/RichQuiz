@@ -1,0 +1,18 @@
+be used to 
+see if users of your website show similar characteristics to average Internet users. 
+As we are working with categorical data, we must be careful because categories like "male", 
+"female," or "other" don't have any mathematical meaning. Therefore, we must consider 
+counts of the variables rather than the actual variables themselves. 
+In general, we use the chi-square goodness of fit test in the following cases: 
+• We want to analyse one categorical variable from one population. 
+• We want to determine if a variable fits a specified or expected distribution. 
+In a chi-square test, we compare what is observed to what we expect. 
+ 
+Assumptions of the Chi-square Goodness of Fit Test 
+ 
+There are two usual assumptions of this test, as follows: 
+• All the expected counts are at least 5. 
+• Individual observations are independent, and the population should be at least 10 
+times as large as the sample (10n < N). 
+ 
+The second assumption should look familiar to the t-test; however,

@@ -1,0 +1,31 @@
+decrement operations 
+on pointer variables: 
+ 
+int *p;  
+double *q;  
+char *chPtr;  
+studentType *stdPtr;                   //studentType is as defined before 
+ 
+Recall that the size of the memory allocated for an int variable is 4 bytes, a double 
+variable is 8 bytes, and a char variable is 1 byte. The memory allocated for a 
+variable of type studentType is then 40 bytes. 
+ The statement  
+p++; or p = p + 1; 
+ 
+ncrements the value of p by 4 bytes because p is a pointer of type int. 
+ 
+Similarly, the statements  
+ q++; 
+ chPtr++; 
+
+165 | P a g e  
+ 
+increment the value of q by 8 bytes and the value of chPtr by 1 byte, respectively.  
+The statement  
+stdPtr++;  
+increments the value of stdPtr by 40 bytes. 
+ 
+The increment operator increments the value of a pointer variable by the size of the 
+data type or structure to which it is pointing. Similarly, the decrement operator 
+decrements the value of a pointer variable by the size of the data type or structure to 
+which it is pointing.

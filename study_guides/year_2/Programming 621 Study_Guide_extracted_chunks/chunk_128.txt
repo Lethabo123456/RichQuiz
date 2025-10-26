@@ -1,0 +1,23 @@
+on 
+functionXYZ:  
+void functionXYZ()  
+void functionXYZ(int x, double y)  
+void functionXYZ(double one, int y)  
+void functionXYZ(int x, double y, char ch) 
+ 
+ 
+ 
+1. Functions, also called modules, are like miniature programs. 
+2. The C++ system provides the standard (predefined) functions. 
+3. There are two types of user-defined functions: value-returning functions and 
+void functions. 
+4. Expressions, variables, or constant values used in a function call are called 
+actual parameters. 
+5. A value-returning function returns a value. Therefore, a value-returning function 
+is used (called) in either an expression or an output statement or as a parameter 
+in a function call. 
+6. A function can have more than one return statement. However, whenever a 
+return statement executes in a function, the remaining statements are skipped 
+and the function exits. 
+7. A value parameter receives a copy of its corresponding actual parameter 
+8. reference parameter receives the address (memory location

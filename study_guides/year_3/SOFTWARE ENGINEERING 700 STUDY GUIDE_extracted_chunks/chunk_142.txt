@@ -1,0 +1,32 @@
+4.4.1 Requirement Elicitation Techniques  
+Requirements elicitation involves meeting with stakeholders of different kinds to discover 
+information about the proposed system. You may supplement this information with knowledge 
+of existing systems and their usage and information from documents of various kinds. You need 
+to spend time understanding how people work, what they produce, how they use other systems, 
+and how they may need to change to accommodate a new system. 
+ 
+There are two fundamental approaches to requirements elicitation: 
+ 
+• Interviewing, where you talk to people about what they do.  
+• Observation or ethnography, where you watch people doing their job to see what artifacts 
+they use, how they use them, and so on. 
+ 
+You should use a mix of interviewing and observation to collect information and, from that, you 
+derive the requirements, which are then the basis for further discussions. 
+ 
+4.5 Requirements Specification 
+Requirements specification is the process of writing down the user and system requirements in a 
+requirements document. Ideally, the user and system requirements should be clear, 
+unambiguous, easy to understand, complete, and consistent. In practice, this is almost impossible 
+to achieve. Stakeholders interpret the requirements in different ways, and there are often 
+inherent conflicts and inconsistencies in the requirements. User requirements are almost always 
+written in natural language supplemented by appropriate diagrams and tables in the 
+requirements document. System requirements may also be written in natural language, but other 
+notations based on forms, graphical, or mathematical system models can also be used.  
+The user requirements for a system should describe the functional and nonfunctional 
+requirements so that they are understandable by system users who don’t have detailed technical 
+knowledge. Ideally, they should specify only the external behavior of the system. The 
+requirements document should not include details of the system architecture or design. 
+Consequently, if you are writing user requirements, you should not use soft-ware jargon, 
+structured notations, or formal notations. You should write user requirements in natural 
+language, with simple tables, forms, and intuitive diagrams 

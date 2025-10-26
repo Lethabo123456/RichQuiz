@@ -1,0 +1,39 @@
+5.2.3 Plotting Univariante Histograms 
+Perhaps the most common approach to visualizing a distribution is the histogram. This is the default approach in 
+displot(), which uses the same underlying code as histplot(). A histogram is a bar plot where the axis representing 
+the data variable is divided into a set of discrete bins and the count of observations falling within each bin is shown 
+using the height of the corresponding bar. 
+ 
+This plot immediately affords a few insights about the flipper_length_mm variable. For instance, we can see that 
+the most common flipper length is about 195 mm, but the distribution appears bimodal, so this one number does 
+not represent the data well. 
+ 
+Choosing the bin size 
+ 
+The size of the bins is an important parameter, and using the wrong bin size can mislead by obscuring important 
+features of the data or by creating apparent features out of random variability. By default, displot()/histplot() 
+choose a default bin size based on the variance of the data and the number of observations. But you should not be 
+over-reliant on such automatic approaches, because they depend on particular assumptions about the structure of 
+your data. It is always advisable to check that your impressions of the distribution are consistent across different bin 
+sizes. To choose the size directly, set the binwidth parameter.
+
+In other circumstances, it may make more sense to specify the number of bins, rather than their size. 
+
+Conditioning on other variables 
+ 
+Once you understand the distribution of a variable, the next step is often to ask whether features of that distribution 
+differ across other variables in the dataset. For example, what accounts for the bimodal distribution of flipper lengths 
+that we saw above? displot() and histplot() provide support for conditional subsetting via the hue semantic. Assigning 
+a variable to hue will draw a separate histogram for each of its unique values and distinguish them by color. 
+Another option is “dodge” the bars, which moves them horizontally and reduces their width. This ensures that there 
+are no overlaps and that the bars remain comparable in terms of height. But it only works well when the categorical 
+variable has a small number of levels. 
+ 
+Kernel density estimation 
+ 
+A histogram aims to approximate the underlying probability density function that generated the data by binning and 
+counting observations. Kernel density estimation (KDE) presents a different solution to the same problem. Rather 
+than using discrete bins, a KDE plot smooths the observations with a Gaussian kernel, producing a continuous density 
+estimate 
+
+ 

@@ -1,0 +1,20 @@
+and four positions on the Y-axis (vertical).  
+The center point of our cluster is currently at (1, 6), and the object is located at 3, 1 (see Figure 
+4.4). The distance is 3-1=2 on the vertical side and 6-1=5 on the horizontal axis. Using 
+Pythagoras’s theorem, the squared distance is:  
+ 
+
+P a g e  | 45 
+ 
+ 
+                                                                                          Figure 4.4: Cluster Centroid 
+ 
+4.4 Cross Validation 
+By splitting the dataset into separate partitions, you can apply the analysis on the dataset and 
+then on the remaining partitions. By averaging the results of the sum of squares, you can 
+determine the number of clusters to use. 
+4.4.1 Silhouette Method 
+Peter J. Rousseeuw first described the silhouette method in 1986. It is a method for suggesting 
+a way of validating where the objects lay within a cluster. For any object, you can calculate 
+how similar an object is with another object within the same cluster.  
+By calculating the avera

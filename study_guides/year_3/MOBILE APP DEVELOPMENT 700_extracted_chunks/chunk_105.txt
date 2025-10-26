@@ -1,0 +1,33 @@
+2.2 Components of the IDE 
+ 
+Editor Panel 
+Many of the items in the IDE will be explained on a “need-to-know” basis. For now, we will examine 
+just a few. The right section is the Editor. Much of the development work is done here, including the 
+user interface (UI) design and writing code. It should currently be displaying the code file for the 
+MainActivity. It will also display a tab for the layout file associated with the Main Activity. Click on the 
+activity_main.xml tab. This will display the XML that creates the activity’s interface. You can switch 
+between graphical layout and the XML code that generates the layout with the tabs below the layout. 
+One tab, labeled Design, shows the interface as the user would see it (on the left) and the blueprint 
+view of the layout (on the right). The blueprint view shows the relative position and sizes of the items  
+in the display. The other tab, labeled Text, shows the XML that generates the visual interface. Click on 
+the Design tab to see the display. It should look like Figure 3.3. Note: If the properties window on the 
+right-hand side is not displayed, click on Hello World in the Design view or Blueprint view. 
+ 
+Project Panel 
+
+The left side of the IDE shows the Project window. The Project window displays the structure of the 
+Android app and is used to move between different components of the app. Many of these items will 
+be generated for you, and you will work with many of the others as you create your app. The java 
+folder will contain all the Java code files for the app. Each file typically represents one class. Click the 
+disclosure button to the left of the java folder and its subfolders until you see MainActivity.java (which 
+may already be displayed). This is where the code to create the activity’s functionality is written. 
+Double-click the MainActivity.java file. The file contents are displayed in the editor with some Java 
+code listed (again, this may already be displayed). This code is explained later. 
+  
+Resource Folders 
+Next, look for the res folder in the Project window. This folder contains a number of subfolders that 
+all contain a different kind of resource file needed for 
+your Android app. One very important note about 
+resource files: There are no capital letters allowed in the 
+file names! The drawable folders are for images. There 
+can be multiple subfolders in drawable.

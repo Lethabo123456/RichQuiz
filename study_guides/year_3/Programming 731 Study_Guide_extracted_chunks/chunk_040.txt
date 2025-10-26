@@ -1,0 +1,19 @@
+The power of encapsulated code is that everyone knows how to access it and thus can use it 
+regardless of the implementation details—and without fear of unexpected side effects. In Java the 
+basis of encapsulation is the class. Although the class will be examined in great detail later in this 
+book, the following brief discussion will be helpful now. A class defines the structure and behavior 
+(data and code) that will be shared by a set of objects. Each object of a given class contains the 
+structure and behavior defined by the class, as if it were stamped out by a mold in the shape of the 
+class. For this reason, objects are sometimes referred to as instances of a class. Thus, a class is a 
+logical construct; an object has physical reality. When you create a class, you will specify the code 
+and data that constitute that class. Collectively, these elements are called members of the class. 
+Specifically, the data defined by the class are referred to as member variables or instance variables.  
+ 
+The code that operates on that data is referred to as member methods or just methods. (If you are 
+familiar with C/C++, it may help to know that what a Java programmer calls a method, a C/C++ 
+programmer calls a function.) In properly written Java programs, the methods define how the 
+member variables can be used. This means that the behavior and interface of a class are defined by 
+the methods that operate on its instance data. Since the purpose of a class is to encapsulate 
+complexity, there are mechanisms for hiding the complexity of the implementation inside the class. 
+Each method or variable in a class may be marked private or public. The public interface of a class 
+represents everything that external users of the class need to know or may know. 

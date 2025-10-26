@@ -1,0 +1,23 @@
+Using python to determine the PID control parameters 
+# Import the packages needed for the examples included in this notebook 
+
+import numpy as np 
+import matplotlib.pyplot as plt 
+# Import the python-control package 
+import control as ct 
+# Define the parameters for the system 
+
+m, c, k = 1, 0.1, 2 
+# Create a linear system 
+A = np.array([ 
+    [0, 0, 1, 0], 
+    [0, 0, 0, 1], 
+    [-2*k/m, k/m, -c/m, 0], 
+    [k/m, -2*k/m, 0, -c/m] 
+]) 
+B = np.array([[0], [0], [0], [k/m]]) 
+C = np.array([[1, 0, 0, 0], [0, 1, 0, 0]]) 
+D = 0 
+sys = ct.ss(A, B, C, D, outputs=['q1', 'q2'], name="coupled spring mass") 
+print(sys) 
+output 

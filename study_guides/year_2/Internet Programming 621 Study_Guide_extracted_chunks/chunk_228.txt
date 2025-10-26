@@ -1,0 +1,56 @@
+hello 
+d) helloblablablabla 
+ 
+Answer: c 
+ 
+29. A function in PHP which starts with __ (double underscore) is know as.. 
+a) Magic Function 
+b) Inbuilt Function 
+c) Default Function 
+d) User Defined Function 
+View Answer 
+Answer: a 
+ 
+30. What will be the output of the following PHP code? 
+<?php 
+function foo($msg) 
+{ 
+echo "$msg"; 
+} 
+$var1 = "foo"; 
+$var1("will this work"); 
+?> 
+a) Error. 
+b) $msg 
+c) 0 
+
+d) will this work 
+ 
+Answer: d 
+ 
+31. Which one of the following PHP functions can be used to build a function that accepts any 
+number of arguments? 
+a) func_get_argv() 
+b) func_get_argc() 
+c) get_argv() 
+d) get_argc() 
+ 
+Answer: b 
+ 
+32. Which one of the following PHP functions can be used to find files? 
+a) glob() 
+b) file() 
+c) fold() 
+d) get_file() 
+ 
+Answer: a 
+ 
+33. Which of the following PHP functions can be used to get the current memory usage? 
+a) get_usage() 
+b) get_peak_usage() 
+c) get_memory_usage() 
+d) get_memory_peak_usage() 
+ 
+Answer: c 
+ 
+34. Which of the following

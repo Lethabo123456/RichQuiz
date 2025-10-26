@@ -1,0 +1,24 @@
+The first panel is an unscaled two-dimensional dataset, with the training set shown as circles and the test 
+set shown as triangles. The second panel is the same data but scaled using the MinMaxScaler. Here, we 
+
+called fit on the training set, and then called transform on the training and test sets. You can see that the 
+dataset in the second panel looks identical to the first; only the ticks on the axes have changed. Now all 
+the features are between 0 and 1. You can also see that the minimum and maximum feature values for 
+the test data (the triangles) are not 0 and 1. The third panel shows what would happen if we scaled the 
+training set and test set separately. In this case, the minimum and maximum feature values for both the 
+training and the test set are 0 and 1. But now the dataset looks different. The test points moved 
+incongruously to the training set, as they were scaled differently. We changed the arrangement of the 
+data in an arbitrary way. Clearly this is not what we want to do. As another way to think about this, 
+imagine your test set is a single point. There is no way to scale a single point correctly, to fulfill the 
+minimum and maximum requirements of the MinMaxScaler. But the size of your test set should not 
+change your processing. 
+The Effect of Preprocessing on Supervised Learning Now let’s go back to the cancer dataset and see the 
+effect of using the MinMaxScaler on learning the SVC (this is a different way of doing the same scaling 
+we did in Chapter 2). First, let’s fit the SVC on the original data again for comparison: 
+ 
+As we saw before, the effect of scaling the data is quite significant. Even though scaling the data doesn’t 
+involve any complicated math, it is good practice to use the scaling mechanisms provided by scikit-learn 
+instead of reimplementing them yourself, as it’s easy to make mistakes even in these simple 
+computations. You can also easily replace one preprocessing algorithm with another by changing the 
+class you use, as all of the preprocessing classes have the same interface, consisting of the fit and 
+transform methods: 

@@ -1,0 +1,32 @@
+Log and Report 
+When a vulnerability scan is completed, the organization should log the results so that personnel can 
+verify the activity of the regular vulnerability scanning tools. 
+An organization should rank discovered vulnerabilities, such as attaching a score to each vulnerability 
+that reflects the following: 
+
+ The skill required to exploit the vulnerability 
+ The availability of the exploit to potential attackers 
+ The privilege gained upon successful exploitation 
+ The risk and impact of this vulnerability if exploitation is successful 
+
+The resulting vulnerability scoring and metrics provide a valuable guide in the remediation process. 
+The reporting process includes keeping track of the number and risk levels of vulnerabilities discovered 
+over time and the effectiveness of remediation efforts in removing vulnerabilities. 
+With respect to logging, The CIS Critical Security Controls for Effective Cyber Defense [CIS18] 
+recommends that event logs be correlated with information from vulnerability scans. This has three 
+objectives. First, verify that the activity of the regular vulnerability scanning tools is itself logged. 
+Second, correlate attack detection events with prior vulnerability scanning results to determine 
+whether the given exploit was used against a target known to be vulnerable. Third, monitor the scan 
+logs to ensure that this activity is limited to the time frames of legitimate scans. This latter objective 
+is important both because the enterprise wants to avoid conflict with other activities, such as routine 
+maintenance, and because vulnerability scanning itself is a form of attack that must be detected. 
+
+Remediate Vulnerabilities 
+An organization should deploy automated patch management tools and software update tools for 
+operating system and software/applications on all systems for which such tools are available and safe. 
+It should apply patches to all systems—even systems that are properly air-gapped (that is, physically 
+not accessible from the Internet). 
+NIST SP 800-40, Guide to Enterprise Patch Management Technologies, provides a very detailed list of 
+recommendations for patch management. This chapter provides a brief summary of those 
+recommendations, which are grouped into three categories: performing patch management, patch 
+management technologies, and patch management metrics. 

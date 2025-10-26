@@ -1,0 +1,29 @@
+cout << "The average is: " << average << endl;   
+  
+//Line 14  
+  
+This algorithm has five operations (Lines 1 through 4) before the while loop. Similarly, there are nine or 
+eight operations after the while loop, depending on whether Line 11 or Line 13 executes.  
+  
+Line 5 has one operation, and four operations within the while loop (Lines 6 through 8). Thus, Lines 5 
+through 8 have five operations. If the while loop executes 10 times, these five operations execute 10 
+times. One extra operation is also executed at Line 5 to terminate the loop. Therefore, the number of 
+operations executed is 51 from Lines 5 through 8.  
+  
+If the while loop executes 10 times, the total number of operations executed is:  
+  
+10 . 5 + 1 + 5 + 9 or 10 . 5 + 1 + 5 + 8  
+  
+that is,  
+  
+10 . 5 + 15 or 10 . 5 + 14  
+  
+We can generalize it to the case when the while loop executes n times. If the while loop executes n times, 
+the number of operations executed is:  
+  
+5n + 15 or 5n + 14  
+  
+
+22  
+  
+I

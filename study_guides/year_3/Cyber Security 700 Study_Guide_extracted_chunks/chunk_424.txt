@@ -1,0 +1,34 @@
+Application-Level Gateway 
+An application-level gateway, also called an application proxy, acts as a relay of application-level traffic 
+refer to Figure 12.4d). The user contacts the gateway by using a TCP/IP application, such as Telnet or 
+FTP, and the gateway asks the user for the name of the remote host to be accessed. When the user 
+responds and provides a valid user ID and authentication information, the gateway contacts the 
+application on the remote host and relays TCP segments containing the application data between the 
+two endpoints. If the gateway does not implement the proxy code for a specific application, the service 
+is not supported and is not forwarded across the firewall. Further, the gateway can be configured to 
+support only specific features of an application that the network administrator considers acceptable, 
+while denying all other features. 
+
+Application-level gateways are more secure than packet filters. Rather than try to deal with the 
+numerous possible combinations that are allowed and forbidden at the TCP and IP levels, the 
+application-level gateway only needs to scrutinize a few allowable applications. In addition, it is easy 
+to log and audit all incoming traffic at the application level. 
+A prime disadvantage of this type of gateway is the additional processing overhead on each 
+connection. In effect, there are two spliced connections between the end users, and the gateway, 
+which is at the splice point, must examine and forward all traffic in both directions. 
+ 
+Circuit-Level Gateway 
+A fourth type of firewall is the circuit-level gateway, or circuit-level proxy (refer to Figure 12.4e). This 
+is either a standalone system or a specialized function performed by an application-level gateway for 
+certain applications. As with an application gateway, a circuit-level gateway does not permit an end-
+to-end TCP connection; rather, the gateway sets up two TCP connections, one between itself and a 
+TCP user on an inner host and one between itself and a TCP user on an outside host. Once the two 
+connections are established, the gateway typically relays TCP segments from one connection to the 
+other without examining the contents. The security function consists of determining which 
+connections are allowed. 
+
+A typical use of circuit-level gateways is a situation in which the system administrator trusts the 
+internal users. The gateway is configured to support application-level or proxy service on inbound 
+connections and circuit-level functions for outbound connections. In this configuration, the gateway 
+incurs the processing overhead of examining incoming application data for forbidden functions but 
+does not incur that overhead on outgoing data.

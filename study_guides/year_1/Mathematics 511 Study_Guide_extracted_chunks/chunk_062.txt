@@ -1,0 +1,33 @@
+Definition 1 
+The universal quantification of 𝑃(𝑥) is the statement: 
+“𝑃(𝑥) for all values of 𝑥 in the domain.” 
+
+The notation ∀𝑥𝑃(𝑥) denotes the universal quantification of 𝑃(𝑥). Here ∀ is 
+called the universal quantifier. We read ∀𝑥𝑃(𝑥) as “for all 𝑥𝑃(𝑥)” or “for 
+every 𝑥𝑃(𝑥). ” An element for which 𝑃(𝑥) is false is called a counterexample 
+of ∀𝑥𝑃(𝑥). 
+The meaning of the universal quantifier is summarized in the first row of 
+Table 12.  
+
+Table 12: Quantifiers 
+
+
+Remark: Generally, an implicit assumption is made that all domains of 
+discourse for quantifiers are nonempty. Note that if the domain is empty, 
+then ∀𝑥𝑃(𝑥) is true for any propositional function 𝑃(𝑥) because there are 
+no elements x in the domain for which 𝑃(𝑥) is false. 
+Besides “for all” and “for every,” universal quantification can be expressed 
+in many other ways, including “all of,” “for each,” “given any,” “for 
+arbitrary,” “for each,” and “for any.” 
+
+Remark: It is best to avoid using “for any 𝑥” because it is often ambiguous as 
+to whether “any” means “every” or “some.” In some cases, “any” is 
+unambiguous, such as when it is used in negatives, for example, “there is not 
+any reason to avoid studying.” 
+A statement ∀𝑥𝑃(𝑥) is false, where 𝑃(𝑥) is a propositional function, if and 
+only if 𝑃(𝑥) is not always true when 𝑥 is in the domain. One way to show 
+that 𝑃(𝑥) is not always true when 𝑥 is in the domain is to find a 
+counterexample to the statement ∀𝑥𝑃(𝑥). Note that a single 
+counterexample is all we need to establish that ∀𝑥𝑃(𝑥) is false. The example 
+below illustrates how counter examples are used. 
+ 

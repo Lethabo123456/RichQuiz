@@ -1,0 +1,20 @@
+when the class object goes out of scope.  
+  
+1.4.12 Structs  
+  
+Structs are a special type of classes. By default, all members of a class are private, whereas by default all 
+members of a struct are public. In C++, you define structs by using the reserved word struct. If all members 
+of a class are public, C++ programmers prefer to use a struct to group the members, as we will do in this 
+book. A struct is defined just like a class.  
+  
+ 
+1.5  
+Data Abstraction, Classes, and Abstract Data Types  
+  
+For the car that we drive, most of us want to know how to start the car and drive it. Most people are not 
+concerned with the complexity of how the engine works. By separating the design details of a car’s engine 
+from its use, the manufacturer helps the driver focus on how to drive the car. Our daily life has other 
+similar examples. For the most part, we are concerned only with how to use certain items, rather than 
+with how they work.  
+  
+Separating the design details (that is, how t

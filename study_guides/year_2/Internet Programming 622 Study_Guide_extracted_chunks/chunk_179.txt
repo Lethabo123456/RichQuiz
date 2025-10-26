@@ -1,0 +1,24 @@
+n failed: “ . $e->getMessage();   
+                             }   
+                             $sql = “SELECT * FROM fruit”;   
+                             echo “<ul>”;                              
+try {   
+                                    $rows = $conn->query( $sql );                                     foreach 
+( $rows as $row ) {   
+                                    echo “<li>A “ . $row[“name”] . “ is “ . $row[“color”] . “</li>”;   
+                                    }   
+                                
+                         } catch ( PDOException $e ) {   
+                                    echo “Query failed: “ . $e->getMessage();   
+                        }   
+                        echo “</ul>”;   
+                       $conn = null;   
+            ?>   
+        </body>   
+</html>   
+   
+   
+Figure 4.1   
+   
+Here is how it all comes together …. After displaying an XHTML page header, the script sets up the 
+DSN, username, and password for connecting to the MyS

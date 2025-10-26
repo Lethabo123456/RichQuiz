@@ -1,0 +1,28 @@
+n the outer join classification? 
+ 
+3. Explain the difference between an ORDER BY clause and a GROUP BY clause. 
+ 
+4. What is a subquery, and what are its basic characteristics? 
+ 
+5. What type of integrity is enforced when a primary key is declared? 
+ 
+6. Explain when an ALTER TABLE command might be needed. 
+ 
+7. What is the purpose of a CHECK constraint? 
+ 
+8. What is a view? Write its syntax. 
+ 
+ 
+Problems  
+ 
+9. Suppose a PRODUCT table contains two attributes, PROD_CODE and VEND_ 
+CODE. Those two attributes have values of ABC, 125, DEF, 124, GHI, 124, 
+and JKL, 123, respectively. The VENDOR table contains a single attribute, 
+VEND_CODE, with values 123, 124, 125, and 126, respectively. (The 
+VEND_CODE attribute in the PRODUCT table is a foreign key to the 
+VEND_CODE in the VENDOR table.) Given that information, what would be 
+the query output for:  
+ 
+a. A UNION query based on the two tables?  
+b. A UNION ALL query based on the two tables?  
+c. An INTERSECT query based on the two t

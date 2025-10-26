@@ -1,0 +1,24 @@
+int the value of the 
+expression.  
+  
+To make the input easier to read, we assume that the postfix expressions are in the following form:  
+  
+#6 #3 + #2 * =  
+  
+The symbol # precedes each number in the expression. If the symbol scanned is #, the next input is a 
+number (that is, an operand). If the symbol scanned is not #, it is either an operator (might be illegal) or 
+an equal sign (indicating the end of the expression). Furthermore, we assume that each expression 
+contains only the +, -, *, and / operators.  
+
+202  
+  
+  
+This program outputs the entire postfix expression together with the answer. If the expression has an 
+error, the expression is discarded. In this case, the program outputs the expression together with an 
+appropriate error message. Because an expression might contain an error, we must clear the stack before 
+processing the next expression. Also, the stack must be initialized; that is, the stack must be empty.  
+  
+ 
+5.4.1  Main Algorithm  
+  
+Pursuant to the pr

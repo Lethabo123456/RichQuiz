@@ -1,0 +1,28 @@
+l  
+<< "The top element of otherStack: "  
+<< otherStack.top() << endl;  
+}  
+  
+Sample Run:  
+The elements of copyStack: 38 45 23 otherStack 
+is not empty.  
+The top element of otherStack: 38 The 
+original stack is not empty.  
+The top element of the original stack: 38  
+The elements of dummyStack: 38 45 23  
+  
+It is recommended that you do a walk-through of this program.  
+  
+ 
+5.3  
+Linked Implementation of Stacks  
+  
+Because an array size is fixed, in the array (linear) representation of a stack, only a fixed number of 
+elements can be pushed onto the stack. If in a program the number of elements to be pushed exceeds the 
+size of the array, the program might terminate in an error. We must overcome this problem.  
+  
+We have seen that by using pointer variables we can dynamically allocate and deallocate memory, and by 
+using linked lists we can dynamically organize data (such as an ordered list). Next, we will use these 
+concepts to implement a stack dynamically.  
+  
+Recall that

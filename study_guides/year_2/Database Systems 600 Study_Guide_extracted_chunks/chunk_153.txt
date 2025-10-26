@@ -1,0 +1,24 @@
+s. 
+You must also define the connectivity and cardinality for the just-discovered relations based on the 
+business rules. However, to avoid crowding the diagram, the cardinalities are not shown. Figure 
+4.35 shows the Crow’s Foot ERD for Tiny College. Note that this is an implementation-ready 
+model, so it shows the ENROLL composite entity. 
+ 
+Although we focus on Crow’s Foot notation to develop our diagram, UML notation is also popular 
+for conceptual and implementation modelling. Figure 4.37 shows the implementation-ready UML 
+class diagram for Tiny College (note that the ENROLL composite entity is shown in this class 
+diagram).  
+
+ 
+60 
+ 
+ 
+ 
+ 
+Database Design Challenges: Conflicting Goals 
+Database designers must often make design compromises that are triggered by conflicting goals, 
+such as adherence to:  
+ 
+Design standards. The database design must conform to design standards. Such standards 
+guide you in developing logical structures that minimize data redundancies, thereby 
+m

@@ -1,0 +1,20 @@
+MPLOYEE supertype would have the subtype discriminator attributes and values shown in Table 
+5.1. 
+ 
+Completeness Constraint 
+The completeness constraint specifies whether each entity supertype occurrence must also be a 
+member of at least one subtype. The completeness constraint can be partial or total. Partial 
+completeness means that not every supertype occurrence is a member of a subtype; some supertype 
+occurrences may not be members of any subtype. Total completeness means that every supertype 
+occurrence must be a member of at least one subtype. 
+Given the disjoint and overlapping subtypes and completeness constraints, it is possible to have the 
+specialization hierarchy constraint scenarios shown in Table 5.2. 
+ 
+ 
+Specialization and Generalization 
+You can use various approaches to develop entity supertypes and subtypes. For example, you can 
+first identify a regular entity and then identify all entity subtypes based on their distinguishing 
+
+ 
+65 
+characteristics. You can als

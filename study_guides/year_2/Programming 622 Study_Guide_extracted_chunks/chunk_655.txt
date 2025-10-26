@@ -1,0 +1,21 @@
+or example, when we draw an arrow from 
+the node to the left child, we end the arrow with three lines. That is, three lines at the end of an arrow 
+indicate that the subtree is empty.  
+  
+The diagram in Figure 9-1 is an example of a binary tree. The root node of this binary tree is A. The left 
+subtree of the root node, which we denoted by LA, is the set LA = {B, D, E, G} and the right subtree of the 
+root node, which we denote by RA, is the set RA = {C, F, H}. The root node of the left subtree of A—that is, 
+the root node of LA—is node B. The root node of RA is C, and so on. Clearly, LA and RA are binary trees. 
+Because three lines at the end of an arrow mean that the subtree is empty, it follows that the left subtree 
+of D is empty.  
+  
+  
+FIGURE 9-1 Binary tree  
+  
+In Figure 9-1, the left child of A is B and the right child of A is C. Similarly, for node F, the left child is H and 
+node F has no right child.  
+  
+Example 9-1 shows nonempty binary trees.  
+  
+EXAMPLE 9-1  
+Figure

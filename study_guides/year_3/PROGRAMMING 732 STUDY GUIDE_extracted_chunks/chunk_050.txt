@@ -1,0 +1,32 @@
+2.1.5 Domain naming services  
+The Internet wouldn’t be a very friendly place to navigate if everyone had to refer to their addresses as 
+numbers. Just as the four numbers of an IP address describe a network hierarchy from left to right, the 
+name of an Internet address, called its domain name, describes a machine’s location in a name space from 
+right to left. For example, www.yahoo.com is in the com domain (commercial sites), it is called Yahoo 
+(company name) and www is the name of the specific computer. www corresponds to rightmost number 
+in the equivalent IP address.  
+  
+2.1.6 Networking classes and interfaces  
+The classes contained in the java.net package are listed here  
+  
+2.2  INET ADDRESS CLASS  
+  
+As you know, when you want to establish a connection between two machines across the Internet or any 
+other kind of network, addresses are fundamental. The InetAddress class is used to convert the Domain 
+Name (or textual Internet address) of an Internet address into an object which represents the address. 
+The InetAddress class doesn’t have any constructors but it has three factory methods that can be used to 
+create instances of the InetAddress class. It is noted that according to Object Oriented Program, the term 
+factory applies to a class that can construct instances of that class without invoking constructors. The 
+instance of the class is constructed through static methods built into the class.  
+  
+2.2.1 Methods (Factory /Instance) of Inet Address Class The 
+following are the factory methods of InetAddress Class.  
+  
+static InetAddress getLocalHost( ) throws UnknownHostException.  
+static InetAddressgetByName (String hostname) throws UnknownHostException static 
+InetAddress [ ] getAllByName (String hostname)thrown UnknownHostException  
+  
+The getLocalHost() method returns the InetAddress object that represents the local host. The getByName 
+(String hostname) method takes the hostname as a parameterand returns the InetAddress object. The 
+getAllByName (String hostname) method returns an array of InetAddress objects that includes all the 
+addresses that a particular name (passed as a parameter to themethod) resolves to. 

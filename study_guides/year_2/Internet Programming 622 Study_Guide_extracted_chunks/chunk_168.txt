@@ -1,0 +1,45 @@
++----------------------+   
+1 row in set (0.00 sec)   
+   
+mysql > DROP TABLE fruit;   
+
+71   
+   
+Query OK, 0 rows affected (0.25 sec)   
+   
+mysql > SHOW TABLES;   
+Empty set (0.00 sec)   
+   
+   
+DROP DATABASE works in a similar fashion:   
+   
+mysql > SHOW DATABASES;   
+   
++--------------------+   
+| Database |   
++--------------------+   
+| information_schema |   
+| mydatabase |   
+| mysql |   
++--------------------+   
+3 rows in set (0.40 sec)   
+   
+mysql > DROP DATABASE mydatabase;   
+Query OK, 0 rows affected (0.14 sec)   
+   
+mysql > SHOW DATABASES;   
+   
++--------------------+   
+| Database |   
++--------------------+   
+| information_schema |   
+| mysql |   
++--------------------+   
+2 rows in set (0.00 sec)   
+   
+Be careful with statements such as DELETE and DROP, because you cannot undo the deletion process. 
+Make sure you back up your MySQL databases regularly, and before carrying out any operation that 
+could potentially wipe a lot of data.   
+   
+   
+Reading/Activi

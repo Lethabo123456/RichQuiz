@@ -1,0 +1,23 @@
+Common Applications in Robotics: 
+1. Clustering: Grouping similar environments or objects 
+2. Dimensionality Reduction: Simplifying complex sensor data 
+3. Anomaly Detection: Identifying unusual situations 
+4. Feature Learning: Discovering important patterns in raw data 
+
+Strengths: 
+• Works with readily available sensor data 
+• No expensive labeling process 
+• Discovers patterns humans might miss 
+ 
+Limitations: 
+• No direct feedback on correctness 
+• Difficult to evaluate performance 
+• May find patterns that aren't useful
+ 
+While unsupervised learning helps robots understand their environment by finding patterns, it 
+doesn't tell them what to do. This is where we need a different approach: 
+The Gap:
+ 
+• Supervised Learning: "This is a kitchen" ✓ 
+• Unsupervised Learning: "These rooms are similar" ✓ 
+• Missing: "What actions should I take in each situation?"

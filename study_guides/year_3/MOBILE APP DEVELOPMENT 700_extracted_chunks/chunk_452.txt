@@ -1,0 +1,50 @@
+6.4 Using Sensors to Create a Compass 
+  
+The Android OS supports a number of types of sensors. Generally, the sensors are motion, 
+environmental, or position sensors. Motion sensors detect how the device is moving, environmental 
+sensors capture various measures of the device’s ambient environment (e.g., the light level), and 
+position sensors capture information that can be used to determine the physical position of the device. 
+Not all devices have all the sensors that the OS supports. This fact has implications for how you code 
+access to the sensors. 
+
+Accessing sensor information is not particularly important for the MyContactList app. 
+However, understanding how these are accessed could be important for future apps you develop. 
+In the case of the MyContactList app, you will use sensors to create a simple 
+compass to show users what direction they are headed when they have the contact 
+map displayed. Creating a graphical compass display is beyond the scope of this book, 
+so you will simply add a TextView to the ContactMapActivity toolbar to display the direction in text 
+(N, S, E, and W). 
+
+The first step is to add the TextView used to display the direction. Open activity_main_map.xml and 
+enter the TextView using the code in Listing 8.3. 
+To calculate the device heading, you need to capture information from two sensors: the 
+accelerometer and the magnetometer. The accelerometer reports device acceleration in three 
+dimensions. The magnetometer reports the geomagnetic field in three dimensions. The math behind 
+the heading calculation using these measures is beyond the scope of this book. Fortunately, the 
+Android SDK again does much of the work for you. However, implementing a compass using these 
+sensors requires a bit more work than monitoring the battery. 
+Open ContactMapActivity.java and declare four variables where you declared the GoogleMap variable 
+(just after the class declaration). Use the following code: 
+
+SensorManager sensorManager; 
+Sensor accelerometer; 
+Sensor magnetometer; 
+TextView textDirection; 
+ 
+Monitoring sensors requires a SensorManager object and Sensor objects for each sensor used. Next, 
+add the code in Listing 8.4 to the onCreate method of the activity. 
+
+This code gets the references to the sensors and registers them to activate a SensorEventListener object when they 
+report changes. The SensorEventListener has yet to be coded, so the references to 
+mySensorEventListener will show as an error. 
+▪ Lines 1–3—SensorManager is a system service, so you get a reference to it rather than instantiate 
+it. The SensorManager is used to get references to the two sensors used to measure the heading. 
+▪ Lines 5–9—As previously noted, not all devices have all sensors. Therefore you test whether the 
+sensor is available so that the lack of a sensor on a device does not cause the app to crash. If the 
+sensors are present, the SensorManager associates each with the same event listener and passes a 
+parameter, indicating how frequently sensor events should be processed. 
+▪ Line 11—If sensors are not available, the user is informed with a Toast. 
+The next step is to implement the SensorEventListener, which is the class that handles the actual 
+events from the sensors and takes action on them. Code this event just as you would a method. It 
+should be within the class body but not within any other method. Refer to Listing 8.5 to implement 
+the listener. 

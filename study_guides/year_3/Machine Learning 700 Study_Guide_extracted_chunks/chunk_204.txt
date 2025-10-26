@@ -1,0 +1,35 @@
+For low settings of eps, all points are labeled as noise. For eps=7, we get many noise points and many 
+smaller clusters. For eps=9 we still get many noise points, but we get one big cluster and some smaller 
+clusters. Starting from eps=11, we get only one large cluster and noise. What is interesting to note is that 
+there is never more than one large cluster. At most, there is one large cluster containing most of the 
+points, and some smaller clusters. This indicates that there are not two or three different kinds of face 
+images in the data that are very distinct, but rather that all images are more or less equally similar to (or 
+dissimilar from) the rest. The results for eps=7 look most interesting, with many small clusters. We can 
+investigate this clustering in more detail by visualizing all of the points in each of the 13 small clusters: 
+
+Some of the clusters correspond to people with very distinct faces (within this dataset), such as Sharon 
+or Koizumi. Within each cluster, the orientation of the face is also quite fixed, as well as the facial 
+expression. Some of the clusters contain faces of multiple people, but they share a similar orientation 
+and expression. This concludes our analysis of the DBSCAN algorithm applied to the faces dataset. As you 
+can see, we are doing a manual analysis here, different from the much more automatic search approach 
+we could use for supervised learning based on R 2 score or accuracy. Let’s move on to applying k-means 
+and agglomerative clustering. Analyzing the faces dataset with k-means. We saw that it was not possible 
+to create more than one big cluster using DBSCAN. Agglomerative clustering and k-means are much more 
+likely to create clusters of even size, but we do need to set a target number of clusters. We could set the 
+number of clusters to the known number of people in the dataset, though it is very unlikely that an 
+unsupervised clustering algorithm will recover them. Instead, we can start with a low number of clusters, 
+like 10, which might allow us to analyze each of the clusters:
+
+As you can see, k-means clustering partitioned the data into relatively similarly sized clusters from 64 to 
+386. This is quite different from the result of DBSCAN. We can further analyze the outcome of k-means 
+by visualizing the cluster centers. As we clustered in the representation produced by PCA, we need to 
+rotate the cluster centers back into the original space to visualize them, using pca.inverse_transform: 
+ 
+The cluster centers found by k-means are very smooth versions of faces. This is not very surprising, given 
+that each center is an average of 64 to 386 face images. Working with a reduced PCA representation adds 
+to the smoothness of the images (compared to the faces reconstructed using 100 PCA dimensions). The 
+clustering seems to pick up on different orientations of the face, different expressions (the third cluster 
+center seems to show a smiling face), and the presence of shirt collars (see the second-to-last cluster 
+center). For a more detailed view, we show for each cluster center the five most typical images in the 
+cluster (the images assigned to the cluster that are closest to the cluster center) and the five most atypical 
+images in the cluster (the images assigned to the cluster that are furthest from the cluster center): 

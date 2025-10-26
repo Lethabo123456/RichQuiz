@@ -1,0 +1,25 @@
+n the array. This function, like 
+most of the others described in this section, does not require you to specify a file handle. All you need 
+to do is pass in the filename of the file to read. The function automatically opens, reads, and, once it is 
+done, closes the file.   
+   
+You can optionally specify some useful flags as the second parameter to file() :   
+   
+Flag   
+Description    
+FILE_USE_INCLUDE_PATH   
+Look for the file in the include path (see Chapter 20 for more on 
+include paths)   
+FILE_IGNORE_NEW_LINES   
+Remove newline characters from the end of each line in the array   
+FILE_SKIP_EMPTY_LINES   
+Ignore empty lines in the file   
+   
+   
+As with other flags in PHP you can combine any of these flags with the bitwise OR operator. For 
+example, the following code looks for a file in the include path and, when found, reads the file, 
+ignoring any empty lines in the file:   
+   
+$lines = file( “myfile.txt”, FILE_USE_INCLUDE_PATH | FILE_SKIP_EMPTY_LINES );   
+   
+As with fope

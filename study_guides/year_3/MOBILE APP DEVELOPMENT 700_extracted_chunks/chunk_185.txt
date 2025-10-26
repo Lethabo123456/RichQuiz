@@ -1,0 +1,31 @@
+▪ Line 2—Your ScrollView may not have an id. If it does not, either type the XML as seen here or go 
+back to Design view and add it through the Attributes panel. 
+▪ Lines 3–6—The layout_width and layout_height attributes are changed to 0dp to match the 
+constraints you added in the Attributes panel. The height is left as wrap_content to allow the 
+ScrollView to expand or contract based on its contents and the device size. The top and bottom margin 
+attributes are set to 8dp because we left the default distance when we clicked the left and right 
+constrain buttons on the layout diagram. 
+▪ Lines 7–10—These are the constraints we created when we clicked on the four buttons in the 
+Layout diagram. Notice how the edges of the widget we are constraining are constrained to the 
+opposite edge of the widget to which we are constraining. 
+For example, the layout_constraintBottom_toTopOf constrains the bottom of the ScrollView to the top of the 
+navigation bar. 
+▪ Lines 12–16—By default, the ScrollView has no contents. ScrollViews can have only one widget as 
+their content. However, if that widget is some type of layout, more widgets can be added as long as 
+they are within that layout. This is the XML we added when we deleted the LinearLayout and added 
+the ConstraintLayout in the Component Tree. 
+After making the changes to the XML, switch back to Design view. The basic structure of the data input 
+screen is complete. The next step is to add the widgets that the user can interact with to save contact 
+information. 
+
+Drag a TextView onto the ScrollView. You might have trouble with this. The ScrollView is set to be the 
+area between the toolbar and  the navigation  bar. However, you cannot place a widget in  the 
+ScrollView because it already has its one widget, the ConstraintLayout. If you drop it on the screen, it 
+will show up in the Component Tree below ScrollView rather than indented within it. Because 
+ConstraintLayout’s height is set to wrap_content, its area on Design view is just a line (as it doesn’t 
+wrap around any content). Click on the ConstraintLayout within the ScrollView in the Component Tree. 
+Notice the thin line representing the layout in the Design view. To embed the TextView in the 
+ConstraintLayout, drag the TextView to the ConstraintLayout in the ScrollView in the Component Tree 
+area instead. With the TextView selected, modify the TextView’s attributes in the Attributes panel. 
+Set its ID to textContact and ensure it is constrained to the top and left of its parent, has left and top 
+margins of 16dp, and displays Contact: as its text. 

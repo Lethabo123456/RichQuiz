@@ -1,0 +1,24 @@
+s even more 
+powerful and useful. The basic idea of a loop is to run the same block of code again and again, until a 
+certain condition is met. As with decisions, that condition must take the form of an expression. If the 
+expression evaluates to true, the loop continues running. If the expression evaluates to false, the 
+loop exits, and execution continues on the first line following the loop’s code block. You look at three 
+main types of loops in this chapter:  
+while loops  
+do...while loops  
+for loops  
+  
+  
+  
+3.6 The While Statement  
+The simplest type of loop to understand uses the while statement. A while construct looks very 
+similar to an if construct:  
+  
+while ( expression ) {  
+// Run this code  
+}  
+// More code here  
+  
+The expression inside the parentheses is tested; if it evaluates to true, the code block inside the 
+braces is run. Then the expression is tested again; if it is still true, the code block is run again, and so 
+on. However, if at any point the expr

@@ -1,0 +1,31 @@
+5.2.4 Port Scanners 
+
+A port scanner is a software tool designed to search for a host for open ports. Those of us 
+administering our networks use port scanners to ensure their security, but bad guys use them to 
+ﬁnd a network’s vulnerabilities and compromise them. To port scan means to scan for TCP and 
+UDP open ports on a single target host either to legitimately connect to and use its services for 
+business and/or personal reasons or to ﬁnd and connect to those ports and subsequently attack 
+the host and steal or manipulate it for nefarious reasons. 
+
+In contrast there is port sweeping, meaning scanning multiple hosts on a network for a speciﬁc 
+listening to TCP or UDP port, like SQL. (SQL injection attacks are super common today.) This just 
+happens to be a favorite approach used by hackers when trying to invade your network. They 
+port sweep in a broad manner, and then, if they ﬁnd something—in this case, SQL—they can port 
+scan a particular host they’ve discovered with the desired service available to exploit and get 
+what they’re after. This is why it’s a really good idea to turn oﬀ any unused services on your servers 
+and routers and to run only the minimum services required on every host machine in your 
+nenetwork. Do yourself a big favor and make sure this is in your security policy. 
+ 
+5.2.5 NetFlow Analyzers 
+The NetFlow protocol allows for the viewing and analysis of application-level traﬃc across an 
+interface. NetFlow is a step above SNMP in that it looks at the actual conversations taking place 
+on your network and based on that information, allows you to gain deep visibility of what traﬃc 
+is moving across your network. NetFlow collects information on each unique traﬃc ﬂow into and 
+out of a network device interfaces. NetFlow collects source and destination addresses, application 
+information, and quality of service (QoS) data and is very helpful in troubleshooting causes of 
+networking problems. A ﬂow exporter is a network device such as a router that monitors traﬃc 
+ﬂowing in and out of an interface and exports not the complete packet but a summary of its 
+contents to a ﬂow collector. A ﬂow collector is a server on the network that receives the ﬂows 
+from multiple exporters and consolidates the NetFlow data in a centralized storage location. A 
+NetFlow application then analyzes the data and creates reports, charts, graphs, and sometimes 
+analytics on the information received.

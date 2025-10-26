@@ -1,0 +1,15 @@
+to note that the database designer doesn’t get to make up the degree, cardinality 
+and optionality herself. These are dictated to her by what are known as the enterprise rules, 
+which the designer must uncover by, usually, interviewing staff. An example of the enterprise 
+rules describing the customer– order relationship is as follows: 
+ 
+ Each order must be placed by one and only one customer. 
+ 
+ Each customer can place many orders, but some won’t have placed any orders. 
+ 
+Enterprise rules are specific to the firm. For example, consider the relationship between 
+employee and car, which a firm wants to store so it can manage its parking spaces. One 
+employee can own as many cars as he can afford, so does that mean this relationship is one to 
+many? Not necessarily. If the firm has decided that it is only going to store information on one 
+car for each of its employees, then the relationship is one to one regardless of how many cars 
+each actually owns. The relationship will probab

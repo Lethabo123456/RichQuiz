@@ -1,0 +1,17 @@
+1.2. Java Applications 
+   
+Java can be used to create two types of programs: applications and applets. But Java applets are 
+deprecated. An application is a program that runs on your computer, under the operating system of 
+that computer. That is, an application created by Java is more or less like one created using C or C++. 
+When used to create applications, Java is not much different from any other computer language.    
+   
+Java’s Magic: The Bytecode    
+ 
+The key that allows Java to solve both the security and the portability problems just described is 
+that the output of a Java compiler is not executable code. Rather, it is bytecode. Bytecode is a highly 
+optimized set of instructions designed to be executed by the Java runtime system, which is called 
+the Java Virtual Machine (JVM). That is, in its standard form, the JVM is an interpreter for bytecode. 
+This may come as a bit of a surprise. As you know, C++ is compiled to executable code. In fact, most 
+modern languages are designed to be compiled, not interpreted—mostly because of performance 
+concerns. However, the fact that a Java program is executed by the JVM helps solve the major 
+problems associated with downloading programs over the Internet. Here is why. 

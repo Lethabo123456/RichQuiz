@@ -1,0 +1,34 @@
+You can use the dropdown button to select a new size, or you can click 
+the oval to the right of the dropdown button to create your own named dimension resource. Click on 
+the oval. The Resources window is displayed. All the resources created when the project was created 
+are listed. Click the Add new resource dropdown on the upper right of the window and select New 
+Dimension Value … (which may be the only choice). In the window that opens, enter 
+message_text_size as the Resource name and 24sp as the Resource value. Click OK until you have 
+closed these two windows. The size of Hello World should be increased. If you examine the res folder 
+in the Project panel at the left of the IDE, you should now have a dimens.xml file. Open the dimens.xml 
+file to see the dimension you created. 
+
+Valid dimensions for Android include px (pixels), in (inches), mm (millimeters), pt (points), dp/dip 
+(density-independent pixels), and sp (scale-independent pixels). It is generally recommended that dp 
+be used for most dimensions and sp be used for specifying font sizes. These two units of measure are 
+relative to screen density. They help keep your UI consistent among different devices. The reason that 
+the sp unit is recommended for fonts is because it also scales to the user’s preference in font size. 
+Close the dimens.xml file and click back to the activity_main.xml tab. Switch from Design view to the 
+Text view and examine the XML changes to the TextView element. 
+
+Switch back to the Design view, and locate the TextView widget in the Common folder in the Palette. 
+Click and drag it to the layout, position it somewhere below the Hello World TextView, and drop it. 
+Notice the round circles on all four sides of the TextView. These circles are used to position the widget 
+relative to other widgets. Before you do that, switch to Text view and examine the new TextView’s 
+XML. Notice that it has two attributes for the absoluteX and Y positions. These are design time 
+positions. You should also notice that the TextView is underlined in red. Hover over the TextView, and 
+you will see a pop-up message that says that the TextView will position itself at 0, 0 (the top left of the 
+screen) at runtime if you don’t change the constraints. Switch back to the Design view. You will find 
+that positioning is easier if you zoom in. At the top right of the Design panel are – and + buttons for 
+zooming in and out. Zoom so only the new and old TextViews are visible on the screen. Click and hold 
+the top circle of the new TextView. Start dragging toward the Hello World TextView. You should see a 
+green arrow. Drag the arrowhead to the bottom circle on the Hello World TextView and release. The 
+new TextView will move up and show a dimension of 8 between the two TextViews; 8dp is the default 
+distance between widgets. Next, click on the left circle and drag the arrowhead to the left side of the 
+screen. Again, the widget will move to 8dp from the edge. Click the Text view (Listing 3.4). A number 
+of changes have been made to the XML (and some of your dimensions may be different).

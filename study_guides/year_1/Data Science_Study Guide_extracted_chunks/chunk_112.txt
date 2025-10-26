@@ -1,0 +1,35 @@
+See how both the red circles include the intersection of A and B? So, when we add them, we need to 
+subtract just one of them to account for this, leaving us with our formula. 
+ 
+Recall that we wanted the number of people who either had cancer or had a positive test result? If A 
+is the event that someone has cancer, and B is that the test result was positive, we have: 
+ 
+P(A or B) = P(A) + P(B) – P(A and B) = .25 + .30 - .2 = .35 
+ 
+This was calculated before visually in the diagram. 
+
+Mutual exclusivity 
+We say that two events are mutually exclusive if they cannot occur at the same time. This means that 
+A∩B= 0 just that the intersection of the events is the empty set. When this happens, P(A∩B) = P(A 
+and B) = 0. 
+ 
+If two events are mutually exclusive, then: 
+P(A  B) = P(A or B)= P(A) + P(B) − P(A ∩ B) = P(A) + P(B) 
+ 
+This makes the addition rule much easier. Some examples of mutually exclusive events include the 
+following: 
+• A customer seeing your site for the first time on both Twitter and Facebook 
+• Today is Saturday and today is Wednesday 
+• I failed Econ 101 and I passed Econ 101 
+ 
+The Multiplication rule 
+The multiplication rule is used to calculate the probability of and events. To calculate P(A ∩ B) = 
+P(A and B), we use the following formula: 
+ 
+P(A ∩ B) = P(A and B) = P(A) · P(B|A) 
+ 
+Why do we use B|A instead of B? This is because it is possible that B depends on A. If this is the case, 
+then just multiplying P(A) and P(B) does not give us the whole picture. In our cancer trial example, 
+let's find P(A and B). To do this, let's redefine A to be the event that the trial is positive and B to 
+be the person having cancer (because it doesn't matter what we call the events). The equation will be 
+as follows: 

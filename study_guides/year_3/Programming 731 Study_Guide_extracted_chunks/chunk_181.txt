@@ -1,0 +1,81 @@
+As you can see, the Stack class defines two data items and three methods. The stack of integers is 
+held by the array stck. This array is indexed by the variable tos, which always contains the index of 
+the top of the stack. The Stack( ) constructor initializes tos to –1, which indicates an empty stack. 
+The method push( ) puts an item on the stack. To retrieve an item, call pop( ). Since access to the 
+stack is through push( ) and pop( ), the fact that the stack is held in an array is actually not relevant 
+to using the stack. For example, the stack could be held in a more complicated data structure, such 
+as a linked list, yet the interface defined by push( ) and pop( ) would remain the same. The class 
+TestStack, shown here, demonstrates the Stack class. It creates two integer stacks, pushes some 
+values onto each, and then pops them off. 
+
+A Closer Look at Argument Passing    
+ 
+In general, there are two ways that a computer language can pass an argument to a subroutine. 
+The first way is call-by-value. This method copies the value of an argument into the formal 
+parameter of the subroutine. Therefore, changes made to the parameter  of the subroutine have 
+no effect on the argument. The second way an argument can be passed is call-by-reference. In this 
+method, a reference to an argument (not the value of the argument) is passed to the parameter. 
+Inside the subroutine, this reference is used to access the actual argument specified in the call. 
+This means that changes made to the parameter will affect the argument used to call the 
+subroutine. As you will see, Java uses both approaches, depending upon what is passed. 
+ In Java, when you pass a simple type to a method, it is passed by value. Thus, what occurs to the 
+parameter that receives the argument has no effect outside the method. For example, consider 
+the parameter that receives the argument has no effect outside the method. For example, consider 
+the following program:   
+   
+// Simple types are passed by  
+value. class Test {   
+void meth(int i, int j)   
+{ i *= 2; j 
+/= 2;   
+   
+}   
+}   
+   
+class CallByValue {  public static void 
+main(String args[]) {  Test ob = new 
+Test(); int a = 15, b = 20;   
+System.out.println("a and b before call: " 
++ a + " " + b); ob.meth(a, b);   
+System.out.println("a and b after call: " + 
+a + " " + b);   
+}   
+}   
+
+The output from this program is shown here:    
+a and b before call: 15 20  
+a and b after call: 15 20   
+
+// Objects are passed by   
+ 
+reference. class Test {   
+int a, b; Test(int   
+i, int j) { a = i;   
+   
+b = j;   
+}   
+   
+// pass an object void  
+meth(Test o) { o.a *=  
+2;   
+o.b /= 2;   
+}   
+}   
+class CallByRef {  public static void 
+main(String args[]) {   
+Test ob = new Test(15, 20);   
+System.out.println("ob.a and ob.b before call: " 
++ ob.a + " " + ob.b); ob.meth(ob);   
+System.out.println("ob.a and ob.b after call: " + 
+ob.a + " " + ob.b);   
+}   
+}   
+This program generates the following output:    
+   
+ob.a and ob.b before call: 15 20   
+ob.a and ob.b after call: 30 10 
+
+As you can see, in this case, the actions inside meth( ) have affected the object used as an argument. 
+As a point of interest, when an object reference is passed to a method, the reference itself is passed 
+by use of call-by-value. However, since the value being passed refers to an object, the copy of that 
+value will still refer to the same object that its corresponding argument does. 

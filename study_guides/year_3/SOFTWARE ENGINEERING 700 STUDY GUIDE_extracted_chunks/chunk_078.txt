@@ -1,0 +1,23 @@
+Figure 2.5 shows four activities that may be part of the design process for information systems: 
+ 
+i. Architectural design, where you identify the overall structure of the system, the 
+principal components (sometimes called subsystems or modules), their relation-
+ships, and how they are distributed. 
+ 
+ii. Database design, where you design the system data structures and how these are 
+to be represented in a database. Again, the work here depends on whether an 
+existing database is to be reused or a new database is to be created. 
+ 
+iii. Interface design, where you define the interfaces between system components. 
+This interface specification must be unambiguous. With a precise interface, a 
+component may be used by other components without them having to know how 
+it is implemented. Once interface specifications are agreed, the components can 
+be separately designed and developed. 
+
+iv. Component selection and design, where you search for reusable components and, 
+if no suitable components are available, design new software components. The 
+design at this stage may be a simple component description with the 
+implementation details left to the programmer. Alternatively, it may be a list of 
+changes to be made to a reusable component or a detailed design model 
+expressed in the UML. The design model may then be used to automatically 
+generate an implementation. 

@@ -1,0 +1,49 @@
+(queueSize <= 0)  
+
+227  
+  
+{  
+cout << "Size of the array to hold the queue must "<< "be positive." << endl; cout 
+<< "Creating an array of size 100." << endl;  
+maxQueueSize = 100;  
+}  
+else  
+maxQueueSize = queueSize;    
+ 
+//set maxQueueSize to queueSize  
+queueFront = 0;   
+  
+  
+  
+ 
+//initialize queueFront  
+queueRear = maxQueueSize - 1;   
+ count 
+= 0;  
+ 
+//initialize queueRear  
+list = new Type[maxQueueSize];   
+  
+ 
+//create the array to  
+//hold the queue elements  
+}   
+ 
+  
+  
+  
+  
+  
+ 
+//end constructor  
+  
+The array to store the queue elements is created dynamically. Therefore, when the queue object goes out 
+of scope, the destructor simply deallocates the memory occupied by the array that stores the queue 
+elements. The definition of the function to implement the destructor is as follows:  
+  
+template <class Type>  
+queueType<Type>::~queueType()  
+{ delete [] list;  
+}  
+  
+The implementation of the copy constructor and overloading the assignment operator are lef

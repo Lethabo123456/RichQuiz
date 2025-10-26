@@ -1,0 +1,21 @@
+1.8.3.3 Hubs/Repeaters 
+Hubs/repeaters are used to connect together two or more Ethernet segments of any type of 
+medium. In larger designs, signal quality begins to deteriorate as segments exceed their maximum 
+length. Hubs provide the signal amplification required to allow a segment to be extended a greater 
+distance. A hub repeats any incoming signal to all ports. 
+ 
+Ethernet hubs are necessary in star topologies such as 10BASE-T. A multi-port twisted pair hub 
+allows several point-to-point segments to be joined into one network. One end of the point-to-
+point link is attached to the hub and the other is attached to the computer. If the hub is attached 
+to a backbone, then all computers at the end of the twisted pair segments can communicate with 
+all the hosts on the backbone. 
+
+The number and type of hubs in any one-collision domain is limited 
+by the Ethernet rules. These repeater rules are discussed in more detail later. 
+A very important fact to note about hubs is that they only allow users to share Ethernet. A 
+network of hubs/repeaters is termed a “shared Ethernet,” meaning that all members of the 
+network are contending for transmission of data onto a single network (collision domain). A 
+hub/repeater propagates all electrical signals including the invalid ones. Therefore, if a collision or 
+electrical interference occurs on one segment, repeaters make it appear on all others as well. This 
+means that individual members of a shared network will only get a percentage of the available 
+network bandwidth. 

@@ -1,0 +1,21 @@
+que index” and “not null” constraints. 
+ 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Five page 176-180. 
+
+ 
+68 
+Design Cases: Learning Flexible Database Design 
+Data modelling and database design require skills that are acquired through experience. In turn, 
+experience is acquired through practice—regular and frequent repetition, applying the concepts 
+learned to specific and different design problems. This section presents four special design cases 
+that highlight the importance of flexible designs, proper identification of primary keys, and 
+placement of foreign keys. 
+Design Case 1: Implementing 1:1 Relationships 
+Foreign keys work with primary keys to properly implement relationships in the relational model. 
+The basic rule is very simple: put the primary key of the “one” side (the parent entity) on the “many” 
+side (the dependent entity) as a foreign key. However, where do you place the foreign key

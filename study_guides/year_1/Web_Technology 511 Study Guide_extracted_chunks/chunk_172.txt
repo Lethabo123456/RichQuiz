@@ -1,0 +1,55 @@
+Navigation list for the Curbside Thai website 
+ 
+                                         
+Advanced website layouts: Responsive Website Layout with HTML and CSS 
+Most present day websites and blogs consist of a header, footer, navbar, perhaps another 
+sidebar, and let's not forget, the main content area. Something like this: 
+ 
+Code for the above web page  
+ 
+<!DOCTYPE html> 
+<title>Advanced html</title> 
+<style> 
+body {  
+  display: grid; 
+  grid-template-areas:  
+    "header header header" 
+    "nav article ads" 
+    "footer footer footer"; 
+  grid-template-rows: 60px 1fr 60px; 
+  grid-template-columns: 20% 1fr 15%; 
+  grid-gap: 10px; 
+  height: 100vh; 
+
+Page | 134
+ 
+  margin: 0; 
+  } 
+#pageHeader { 
+  grid-area: header; 
+} 
+#pageFooter { 
+  grid-area: footer; 
+} 
+#mainArticle {  
+  grid-area: article;       
+  } 
+#mainNav {  
+  grid-area: nav;  
+  } 
+#siteAds {  
+  grid-area: ads;  
+  } 
+header, footer, article, nav, div { 
+  padding: 20px; 
+  background: #11EE1E ; 
+} 
+</style> 
+<body> 
+  <header id="pageHeader">Header</header> 
+  <article id="mainArticle">Article</article> 
+  <nav id="mainNav">Nav</nav> 
+  <div id="siteAds">Ads</div> 
+  <footer id="pageFooter">Footer</footer> 
+</body> 
+

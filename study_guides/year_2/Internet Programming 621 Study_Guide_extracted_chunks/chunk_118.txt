@@ -1,0 +1,27 @@
+square bracket syntax:  
+  
+// Creating an associative array using the array() construct  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”, 
+“pubYear” = > 1939 );  
+  
+  
+  
+  
+// Creating the same array using [] syntax  
+$myBook = array();  
+$myBook[“title”] = “The Grapes of Wrath”;  
+$myBook[“author”] = “John Steinbeck”;  
+$myBook[“pubYear”] = 1939;  
+  
+Changing elements of associative arrays works in a similar fashion to indexed arrays:  
+  
+$myBook[“title”] = “East of Eden”;  
+$myBook[“pubYear”] = 1952;  
+
+58  
+5.5 Outputting An Entire Array With print_r()  
+Arrays can get quite complex, as you see later, so often you will find that you want to inspect an 
+array to see what it contains. You cannot just print an array with print() or echo(), like you can with 
+regular variables, because these functions can work with only one value at a time. However, PHP 
+does give you a function called print_r() that you can use to output the contents of an arr

@@ -1,0 +1,30 @@
+mperature in Celsius. 
+
+P a g e  | 145 
+ 
+•  humidity: Relative humidity. 
+•  windspeed: Wind speed. 
+•  casual: Number of non-registered user rentals initiated. 
+•  registered: Number of registered user rentals initiated. 
+•  count: Number of total rentals  
+  
+Now let us develop our linear regression model. As before we will first create a list holding 
+the features we wish to look at, create our features and our response datasets (X and y) and 
+then fit our linear regression. Once we fit our regression model, we will look at the model's 
+coefficients to see how our features are interacting with our response:  
+  
+# create a list of features feature_cols = ['temp', 'season', 'weather', 'humidity']  
+# create X and y  
+X = bikes[feature_cols]  
+y = bikes['count']  
+  
+# instantiate and fit  
+  
+linreg = LinearRegression()  
+linreg.fit(X, y) # pair the feature names with the coefficients zip(feature_cols, linreg.coef_)  
+  
+  
+This gives us:  
+[('temp', 
+7.8648249924774403), 
+('season'

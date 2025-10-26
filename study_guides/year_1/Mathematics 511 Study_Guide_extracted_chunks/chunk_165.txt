@@ -1,0 +1,25 @@
+Worked Example 
+Let A = {0, 2, 4, 6, 8}, B = {0, 1, 2, 3, 4}, and C = {0, 3, 6, 9}. 
+What are A ∪ B ∪ C and A ∩ B ∩ C? 
+Solution: 
+The set A ∪ B ∪ C contains those elements in at least one of A, B, and C. 
+Hence, 
+A ∪ B ∪ C = {0, 1, 2, 3, 4, 6, 8, 9}. 
+The set A ∩ B ∩ C contains those elements in all three of A, B, and C. 
+Thus, 
+A ∩ B ∩ C = {0}.  
+ 
+3.3 Functions 
+In many instances we assign to each element of a set a particular element of 
+a second set (which may be the same as the first). For example, suppose that 
+each student in a discrete mathematics class is assigned a letter grade from 
+the set {A,B,C,D, F}. And suppose that the grades are A for Adams, C for Chou, 
+B for Goodfriend, A for Rodriguez, and F for Stevens. This assignment of 
+grades is illustrated in Figure 2.11. 
+This assignment is an example of a function. The concept of a function is 
+extremely important in mathematics and computer science. For example, in 
+discrete mathematics functions are used in the definition of such discrete 
+structures as sequences and strings. Functions are also used to represent 
+how long it takes a computer to solve problems of a given size. Many 
+computer programs and subroutines are designed to calculate values of 
+functions.  

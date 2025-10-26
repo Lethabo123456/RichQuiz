@@ -1,0 +1,15 @@
+iii. Real-Time Operating Systems (RTOS) 
+
+RTOS ensures immediate processing and response to inputs, crucial for time-sensitive 
+applications. Processes tasks within strict time constraints (e.g., milliseconds or microseconds). 
+Divided into Hard Real-Time Systems (strict deadlines) and Soft Real-Time Systems (fewer rigid 
+deadlines). Found in critical systems like medical devices, industrial automation, and robotics. 
+
+Advantages: 
+➢ Ensures high reliability and predictability. 
+➢ Optimal for environments where timing is critical.
+
+Disadvantages: 
+ 
+➢ Limited multitasking; prioritizes real-time tasks. 
+➢ Complex design and higher cost. 

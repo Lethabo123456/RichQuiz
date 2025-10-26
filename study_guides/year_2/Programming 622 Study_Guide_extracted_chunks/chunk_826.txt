@@ -1,0 +1,38 @@
+n T to the new vertex so that the corresponding edge has the smallest weight. The 
+corresponding edge is added to E(T).  
+  
+The general form of Prim’s algorithm is as follows. (Let n be the number of vertices in G.)  
+  
+1. Set V(T) = {source}  
+2. Set E(T) = empty  
+
+406  
+  
+3. for i = 1 to n  
+3.1. minWeight = infinity;  
+3.2. for j = 1 to n  
+if vj is in V(T) for k = 1 to n  if vk is not in T and weight[vj, vk] 
+< minWeight  
+{  
+endVertex = vk; edge 
+= (vj, vk);  
+minWeight = weight[vj, vk];  
+}  
+3.3. V(T) = V(T)  
+ {endVertex};  
+3.4. E(T) = E(T)  {edge};  
+  
+Let us illustrate Prim’s algorithm using the graph G of Figure 10-16 (which is same as the graph of Figure  
+10-14).  
+  
+  
+FIGURE 10-16 Weighted graph G  
+  
+Let N denote the set of vertices of G that are not in T. Suppose that the source vertex is 0. Figure 10-17 
+shows how Prim’s algorithm works.  
+
+407  
+  
+  
+FIGURE 10-17 Graph G, V(T), E(T), and N after Steps 1 and 2 execute  
+After Steps 1 and 2 execute, V(T), E(T

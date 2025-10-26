@@ -1,0 +1,24 @@
+5.2.8 IP Scanner 
+
+It is often very helpful to know what is running on a server or networking device. Scanners can 
+tell you what IP addresses are active and what they are “listening for.” All IP applications have an 
+associated port number that is open for incoming connections, such as port 80 for HTTP and 443 
+for HTTPS. An IP scanner can be run on your local computer and will scan for open ports on each 
+IP host. However, be very careful doing this on live production networks because security 
+appliances such as Intrusion and ﬁrewall systems may generate an alarm when they detect scans 
+as it may be an indication of ﬁngerprinting on your network by hackers. 
+Scanners can be used for network mapping by listing all the active IP addresses in each subnet 
+and what applications are running on them. There are many commercial and open-source 
+scanners available on the market. Many have advanced features such as listing bugs and 
+vulnerabilities of a scanned device and providing information on remediation. 
+
+5.3 Command line tool and use 
+Most of us are running Transmission Control Protocol/Internet Protocol (TCP/IP) version 4 on our 
+networks these days, so we absolutely need a way to test IP connectivity. But we also need to be 
+able to test and verify IPv6 networks. The reason for this is that even though Microsoft makes 
+most client platforms, a lot of the commands used to test IP connectivity are really platform 
+independent, and most of the platforms can now use both IPv4 and IPv6. Even so, keep in mind 
+that the Network+ exam focuses on the basic concepts of the function and use of the TCP/IP 
+utilities that come with Windows. You can use several utilities, both command line and GUI, to 
+verify TCP/IP function on Windows workstations, and most of them are listed in the beginning of 
+this chapter. 

@@ -1,0 +1,24 @@
+the solution and its associated data flow. However, DFDs do not show you who performs the 
+work nor do they show you any alternative paths through the process. 
+You are currently modelling the new functionality associated with requesting and performing 
+research studies at Palmer Divide Vineyards. You choose to use data flow to model the basic 
+capabilities that will be found in the solution. 
+• 
+SH1: Users will perform research studies. 
+• 
+S1: The system will calculate elapsed study time. 
+• 
+SH2: Users will customize the contents of their research studies. 
+• 
+S2: The system will allow creation of custom data queries. 
+• 
+S3: The user will analyze the customer query results. 
+You draw two models using both the Gane-Sarson and Yourdon notations just for 
+comparison’s sake (Figure 1.2). You decide to show the models to the project team to see 
+whether they have a preference between them. 
+ 
+Figure 1.2 GANE- SARSON AND YOURDON MODELS FOR PALMER DIVIDE   
+ 
+ 
+ 
+Because your project is

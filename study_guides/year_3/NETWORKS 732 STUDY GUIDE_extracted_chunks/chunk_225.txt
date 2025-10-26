@@ -1,0 +1,35 @@
+To release your current DHCP TCP/IP information, you must elevate your command prompt or 
+you’ll get this warning: 
+ 
+Figure 5.8: ipconﬁg release output (Lammle, 2022) 
+ 
+Should this happen to you, left-click in the search box in the lower-left menu bar, then type in 
+command prompt, right-click on the command prompt icon, and choose Run As Administrator. 
+(Of course, you’ll have to enter your name and password to do this if you are using Windows 10. 
+But we love Windows 10, right? Okay, maybe not always.) Figure 5.9 shows how I did this. Once 
+your command prompt has been duly elevated, you can use the ipconﬁg /release command and 
+then the ipconﬁg /renew command to get new TCP/IP information for your host. 
+ 
+Figure 5.9: Elevating your command prompt (Lammle, 2022)
+
+5.3.2.2 ifconﬁg Utility 
+There is a utility in Linux/Unix/Mac that will give you information similar to what ipconﬁg shows. 
+It’s called ifconﬁg (short for interface conﬁguration). Although ipconﬁg and ifconﬁg show similar 
+information, there are major diﬀerences between these two utilities. The ipconﬁg utility is mainly 
+used to view the TCP/IP conﬁguration for a computer. You can use ifconﬁg to do the same thing, 
+but ifconﬁg can also be used to conﬁgure a protocol or a particular network interface. The general 
+syntax of the ifconﬁg command is as follows: 
+ 
+Figure 5.10: ifconﬁg command syntax (Lammle, 2022) 
+ 
+The interface parameter equals the Unix name of the interface, such as eth0. If the optional 
+address parameter is speciﬁed, the ifconﬁg command sets the IP address for the interface to the 
+address you’ve speciﬁed. When the ifconﬁg command is used by itself with no parameters, all 
+conﬁgured interfaces will be reported on. But if only the interface name is speciﬁed, you’ll get 
+output that looks like this: 
+ 
+Figure 5.11: ifconﬁg command syntax (Lammle, 2022) 
+ 
+Looking at this, we can see that the eth0 interface is a 10 Mbps Ethernet interface. The interface’s 
+MAC and IP address information is displayed in this output as well. And, although not shown in 
+the output, the ifconﬁg tool can show you the DNS information conﬁgured on the host. 

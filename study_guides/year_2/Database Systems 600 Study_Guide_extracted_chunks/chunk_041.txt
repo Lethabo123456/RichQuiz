@@ -1,0 +1,15 @@
+eliminate most of the file system’s problems. Better yet, the current generation of DBMS software 
+stores not only the data structures but also the relationships between those structures in a central 
+location and takes care of defining, storing, and managing all required access paths to those 
+components. Remember, the DBMS is just one of several crucial components of a database system.  
+ 
+However, it takes more than a DBMS to make a database system function. In the sections that follow, 
+you’ll learn what a database system is, what its components are, and how the DBMS fits into the 
+picture. 
+ 
+The Database System Environment 
+The term database system refers to an organization of components that define and regulate the 
+collection, storage, management, and use of data within a database environment. From a general 
+management point of view, the database system is composed of the five major parts, namely: 
+• 
+Hardware. The system’s physical devices, including computers, storage device

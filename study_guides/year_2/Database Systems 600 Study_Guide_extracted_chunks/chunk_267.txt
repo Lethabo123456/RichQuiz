@@ -1,0 +1,27 @@
+INE_UNITS) FROM LINE); 
+In both queries, you needed to get information that was not unknown, and you used a subquery to 
+generate the required information, which could then be used as input for the originating query. 
+There are key characteristics that you should remember for subqueries:  
+ 
+A subquery is a query (SELECT statement) inside another query.  
+ 
+A subquery is normally expressed inside parentheses.  
+ 
+The first query in the SQL statement is known as the outer query 
+ 
+The query inside the SQL statement is known as the inner query.  
+ 
+The inner query is executed first.  
+ 
+The output of an inner query is used as the input for the outer query.  
+ 
+The entire SQL statement is sometimes referred to as a nested query. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 281-290. 
+
+ 
+108 
+The subquery is always on the right side of a comparison or assigning expression. Also, a 
+subquery can

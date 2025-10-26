@@ -1,0 +1,43 @@
+3.5.1 Decision Trees 
+Decision trees are popular for both classification and regression tasks. They work by learning a 
+sequence of if/else questions that guide the decision-making process. These questions are like those 
+asked in a game of 20 Questions. For example, if you need to distinguish between bears, hawks, 
+penguins, and dolphins, you might begin by asking if the animal has feathers, which would narrow 
+down the options to two possibilities. If the answer is "yes," you could further ask if the animal can 
+fly, helping you differentiate between hawks and penguins. If the answer is "no" (indicating the 
+animal does not have feathers), you’d still need another question to distinguish between dolphins 
+and bears, such as whether the animal has fins. 
+This decision-making process can be visually represented. 
+ 
+In this example, each node in the decision tree represents either a question or a terminal (leaf) node, 
+which holds the final answer. The edges connect the answers to the next question that needs to be 
+asked based on the current answer. 
+In machine learning terms, we have developed a model to classify four different animal types (hawks, 
+penguins, dolphins, and bears) using three features: "has feathers," "can fly," and "has fins." Rather 
+than manually creating these models, we can employ supervised learning to learn them directly from 
+data. 
+
+Building Decision Trees 
+Now, let's go through the process of constructing a decision tree for a 2D classification dataset. The 
+dataset, named two_moons, consists of two half-moon shapes, with each class containing 75 data 
+points. 
+Building a decision tree involves figuring out the sequence of if/else questions that will lead to the 
+correct classification in the most efficient manner. In machine learning, these questions are referred 
+to as tests (not to be confused with the test set, which is used to assess the model's ability to 
+generalize). While data typically is not structured with simple binary yes/no features like in the 
+animal example, it's usually represented with continuous features. The tests for continuous data are 
+framed as "Is feature i greater than value a?" 
+
+Controlling the Complexity of Decision Trees 
+When constructing a decision tree, if it grows until all leaves are pure (i.e., until every leaf node 
+perfectly classifies the training data), the resulting model tends to be too complex and is at risk of 
+overfitting. A pure leaf indicates that the tree has achieved perfect accuracy on the training set, 
+where each data point in a leaf correctly predicts the majority class. This overfitting is visible on the 
+left side of the figure, where regions of class 1 are located within areas that should belong to class 0. 
+On the far right, a narrow band predicted as class 0 around a point from class 0 appears unnatural, 
+influenced by outlier points far from the main cluster in that class. 
+To avoid overfitting, two main strategies are commonly employed: halting the tree-building process 
+early (pre-pruning) or building the tree fully and then pruning away nodes that contribute little value 
+(post-pruning). Pre-pruning methods involve limiting the tree’s maximum depth, restricting the 
+number of leaves, or enforcing a minimum number of data points required in a node before it can 
+be split further. 

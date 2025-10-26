@@ -1,0 +1,30 @@
+In the following section, the IBM DB2 system catalogue tables are the basis for several 
+examples of how a data dictionary is used to derive information:  
+ 
+SYSTABLES stores one row for each table or view.  
+ 
+SYSCOLUMNS stores one row for each column of each table or view.  
+ 
+SYSTABAUTH stores one row for each authorization given to a user for a table or view in a 
+database. 
+Examples of Data Dictionary Usage  
+Example 1 
+List the names and creation dates of all tables created by the user JONESVI in the current 
+database 
+SELECT NAME, CTIME  
+FROM SYSTABLES 
+WHERE CREATOR = ‘JONESVI’;  
+Example 2 
+List the names of the columns for all tables created by JONESVI in the current database.  
+SELECT NAME 
+FROM SYSCOLUMNS  
+WHERE TBCREATOR = ‘JONESVI’;  
+
+ 
+204 
+Example 3 
+List the names of all users who have some type of authority over the INVENTORY table. 
+SELECT DISTINCT GRANTEE  
+FROM SYSTABAUTH 
+WHERE TTNAME = ‘INVENTORY’; 
+As you can see in the preceding examples, the data dictio

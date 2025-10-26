@@ -1,0 +1,27 @@
+atement 2 creates a 
+node and stores the address of this node in newNode. Statement 3 stores 15 in the info field of newNode, 
+and statement 4 stores NULL in the link field of newNode. (See Figure 3-14.)  
+  
+  
+FIGURE 3-14 List and newNode with info 15  
+  
+Because first is not NULL, we execute statements 6a and 6b. Figure 3-15 shows the resulting list.  
+  
+ 
+  
+  
+FIGURE 3-15 List after inserting newNode at the end  
+  
+We now repeat statements 1 through 6b three more times. Figure 3-16 shows the resulting list.  
+  
+  
+FIGURE 3-16 List after inserting 8, 24, and 34  
+  
+  
+We can put the previous statements in a loop, and execute the loop until certain conditions are met, to 
+build the linked list. We can, in fact, write a C++ function to build a linked list.  
+  
+Suppose that we read a list of integers ending with -999. The following function, buildListForward, builds 
+a linked list (in a forward manner) and returns the pointer of the built list:  
+  
+nodeType* buildListForward()

@@ -1,0 +1,65 @@
+To start the ftp utility, enter ftp at a command prompt. The result is an ftp command prompt: 
+
+C:\Users\tlammle>ftp 
+
+ftp> 
+
+in a large-scale denial of service attack). Upon further examination, I noticed that this activity 
+would start shortly after bootup. 
+I tried running netstat after bootup and noticed that the ﬁrst outbound connection was to TCP 
+port 6667, some Internet Relay Chat (IRC) server I’d never heard of—I didn’t even have an IRC 
+client on my machine at the time. The worm was particularly nasty to try to get rid of while active, 
+so I turned oﬀ port 6667 on my ﬁrewall. That prevented the initial connection to the IRC server 
+and, as I found out later, nicely prevented the worm from getting its instructions from the IRC 
+server. I was then able to simply remap without netstat. Even my antivirus program missed it. 
+From this prompt, you can open a connection to an FTP server and upload and download ﬁles as 
+well as change the way FTP operates. To display a list of all the commands you can use at the ftp 
+command prompt, type help or ? and press Enter. To get help on a speciﬁc command, type help, 
+a space, and then the name of the command. Here is some output from the help command: 
+
+ftp>
+help 
+Commands may abbreviated. Commands are: 
+! 
+delete 
+literal 
+prompt 
+send 
+? 
+debug 
+ls 
+put 
+status 
+append 
+dir 
+mdelete 
+pwd 
+trace 
+ascii 
+disconnect 
+mdir 
+quit 
+type 
+bell 
+get 
+mget 
+quote 
+user 
+binary 
+glob 
+mkdir 
+recv 
+verbose 
+bye 
+hash 
+mls 
+remotehelp 
+cd 
+help 
+mput 
+rename 
+close 
+lcd 
+open 
+rmdir 
+ftp>

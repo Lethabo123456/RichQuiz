@@ -1,0 +1,15 @@
+ements: 13 75 28 35  
+Line 17: List Elements: 26 150 56 70  
+Line 22: List Elements: 26 150 56 70  
+Line 30: List Elements: 26 150 88 56 70  
+  
+The statement in Line 6 declares a vector container (or vector for short), intList, of type int. The statements 
+in Lines 7 through 10 use the operation push_back to insert four numbers—13, 75, 28, and 35—into 
+intList. The statements in Lines 12 and 13 use the for loop and the array subscripting operator [] to output 
+the elements of intList. In the output, see the line marked Line 11, which contains the output of Lines 11 
+through 14 of the program. The statements in Lines 15 and 16 use a for loop to double the value of each 
+element of intList; the statements in Lines 18 and 19 output the elements of intList. In the output, see the 
+line marked Line 17, which contains the output of Lines 17 through 20 of the program.  
+  
+The statement in Line 21 declares listIt to be a vector iterator that processes any vector container whose 
+elements are

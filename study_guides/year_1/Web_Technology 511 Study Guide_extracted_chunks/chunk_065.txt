@@ -1,0 +1,22 @@
+4.6 ALIGNMENT 
+You align a heading to enhance the appearance of a page and make it look different 
+from the rest of the text on the page. CSS allows you to align any element anywhere 
+within a Web page. 
+By default, all Web page content appears on the left on the page. You can use the 
+ALIGN attribute with various tags to force text to appear in the center or on the right. 
+This attribute will align headings or paragraphs. For example, you might want to align 
+the heading to the center of the page. The syntax for using the ALIGN attribute to do 
+this is: 
+
+<H1 ALIGN=Center>PCTBC student Web Page</H1> 
+The ALIGN attribute used within the H1 tag centers the heading on the page. You can 
+use this attribute within the P tag to align a paragraph. 
+ 
+ Indenting text on a page
+You might want to indent the text on both left and right margins of a page to make 
+some text stand out from the rest of the page. You do this by using the <blockquote> 
+tag. This tag also supports the global attributes in HTML. The syntax for using the 
+<blockquote> tag is: 
+<blockquote> Desired text </blockquote> 
+ 
+Exhibit 0-4: The page with the heading centered and text indented 

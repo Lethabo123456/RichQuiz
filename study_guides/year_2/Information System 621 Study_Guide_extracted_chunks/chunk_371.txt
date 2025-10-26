@@ -1,0 +1,11 @@
+computer desk. The first field in the table, Order_Number, is the order table’s 
+primary key. Then there are details of what the order is, description, price and colour. The last 
+field on the right-hand side is the Customer_Number. This creates the relationship between an 
+order and a customer – customer 13 has ordered the computer desk. To find out who customer 
+13 is, look back at Figure 5.1, find 13 in the Customer_Number field, and we see it is Desmond 
+Paton. We also find the delivery address – the desk is being shipped to South Africa. The 
+customer number in the order table is known as a foreign key. An important concept when 
+setting up relationships is ‘referential integrity’. What this means is that you cannot have an 
+instance of a foreign key before it exists as an instance of a primary key. Using the office 
+furniture database as an example, if the database has enforced referential integrity (which it 
+should) it means you can’t have an order for Customer_Number 15 unles

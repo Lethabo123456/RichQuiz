@@ -1,0 +1,25 @@
+ordered list). Next, we will use these 
+concepts to implement a stack dynamically.  
+  
+Recall that in the linear representation of a stack, the value of stackTop indicates the number of elements 
+in the stack, and the value of stackTop - 1 points to the top item in the stack. With the help of stackTop, 
+we can do several things: Find the top element, check whether the stack is empty, and so on.  
+  
+Similar to the linear representation, in a linked representation stackTop is used to locate the top element 
+in the stack. However, there is a slight difference. In the former case, stackTop gives the index of the array. 
+In the latter case, stackTop gives the address (memory location) of the top element of the stack.  
+  
+The 
+following 
+class 
+implements 
+the 
+functions 
+of 
+the 
+abstract 
+class 
+stackADT: 
+//*************************************************************  
+// This class specifies the basic operation on a stack as a linked list.  
+//****************************************

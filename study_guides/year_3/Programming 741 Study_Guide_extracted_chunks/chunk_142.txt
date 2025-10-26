@@ -1,0 +1,35 @@
+4.3.1 USING THE OVERRIDE KEYWORD 
+The override keyword allows a method to provide a new implementation of a method 
+inherited from a base class. When you override a method, the signature of the methods must 
+match. To override a base method, the base method must be defined as virtual, abstract, or 
+override. The example above illustrate the method signature of the virtual method in the base 
+class and the overridden method in the child class 
+ 
+In C#, the "virtual" keyword is used to mark a method, property, indexer, or event in a base 
+class as eligible to be overridden by derived (child) classes, allowing for polymorphism here 
+the most specific implementation of the method is called at runtime based on the object's 
+actual type; essentially, it provides a default behavior that can be customized in inheriting 
+classes using the "override" keyword.  
+ 
+4.4 Abstract Classes 
+Every subclass of Window should implement its own DrawWindow ( ) method but nothing 
+requires that it do so. To require subclasses to implement a method of their base, you need 
+to designate that method as abstract. An abstract method has no implementation. It creates 
+a method name and signature that must be implemented in all derived classes. Furthermore, 
+making one or more methods of any class abstract has the side effect of making the class 
+abstract.  
+ 
+Abstract classes establish a base for derived classes, but it is not legal to instantiate an object 
+of an abstract class. Once you declare a method to be abstract, you prohibit the creation of 
+any instances of that class. Thus, if you were to designate DrawWindow ( ) as abstract in the 
+Window class, you could derive from Window, but you could not create any Window objects. 
+Each derived class would have to implement DrawWindow ( ). If the derived class failed 
+to implement the abstract method, that class would also be abstract, and again no instances 
+would be possible. Designating a method as abstract is accomplished by placing the keyword 
+abstract at the beginning of the method definition, as follows: 
+abstract public void DrawWindow( ); 
+(Because the method can have no implementation, there are no braces; only a semicolon.) If 
+one or more methods are abstract, the class definition must also be marked abstract, as in 
+the following: 
+ 
+abstract public class Window 

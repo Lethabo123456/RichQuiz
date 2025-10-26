@@ -1,0 +1,24 @@
+1).   
+  
+The key comparisons are made by the function minLocation. For a list of length k, the function minLocation 
+makes k - 1 key comparisons. Also, the function minLocation is executed n - 1 times (by the function 
+selectionSort). The first time, the function minLocation finds the index of the smallest key item in the 
+entire list and so makes n - 1 comparisons. The second time, the function minLocation finds the index of 
+the smallest element in the sublist of length n - 1 and so makes n - 2 comparisons, and so on. Hence the 
+number of key comparisons is as follows:  
+  
+  
+Thus, it follows that if n = 1000, the number of key comparisons the selection sort makes is 
+1/2(10002) - 1/2(1000) = 499500 ≈ 500000.  
+  
+
+287  
+  
+  
+ 
+8.3  
+Insertion Sort: Array-Based Lists  
+  
+The previous section described and analyzed the selection sort algorithm. It was shown that if n = 1000, 
+the number of key comparisons is approximately 500,000, which is quite high. This section describes the 
+s

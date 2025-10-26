@@ -1,0 +1,23 @@
+be included in the program. The following 
+statement accomplishes this task: #include 
+ 
+Step 2 
+Requires you to declare file stream variables. Consider the following statements: 
+ifstream inData; 
+ofstream outData; 
+
+255 | P a g e  
+ 
+ 
+Step 3 
+Requires you to associate file stream variables with the I/O sources. This step is called 
+opening the files. The stream member function open is used to open files. 
+Suppose you include the declaration from Step 2 in a program. Further suppose that 
+the input data is stored in a file called prog.dat. The following statements associate 
+inData with prog.dat and outData with prog.out. That is, the file prog.dat is opened for 
+inputting data, and the file prog.out is opened for outputting data. 
+inData.open("prog.dat");                                   //open the input file; Line 1  
+outData.open("prog.out");                                //open the output file; Line 2 
+ 
+Step 4  
+You use the file stream variables with >>, <> or << with file str

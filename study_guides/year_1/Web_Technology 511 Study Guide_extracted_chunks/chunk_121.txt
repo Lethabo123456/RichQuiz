@@ -1,0 +1,27 @@
+Types of Style Sheets 
+ 
+There are three types of CSS which are given below:  
+  
+1. Inline CSS 
+2. Internal or Embedded CSS 
+3. External CSS 
+ 
+Inline CSS: Inline CSS contains the CSS property in the body section attached with element is 
+known as inline CSS. This kind of style is specified within an HTML tag using the style 
+attribute. 
+
+Example of Inline Css
+
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Inline CSS</title>
+     </head>
+
+     <body>
+          <p style="color:#11A4EE; font-size:50px;
+                  font-style:italic; text-align:center;">
+              I Love CSS
+          </P>
+     </body>
+</html>

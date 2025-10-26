@@ -1,0 +1,25 @@
+PHP knows that you want to add a new element to the end of the array, and it 
+automatically assigns the next available index — in this case, 4 — to the element. In fact, you can 
+create an array from scratch simply by creating its elements using the square bracket syntax. The 
+following three examples all produce exactly the same array:  
+  
+// Creating an array using the array() construct  
+$authors1 = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+  
+// Creating the same array using [] and numeric indices  
+$authors2[0] = “Steinbeck”;  
+$authors2[1] = “Kafka”;  
+
+57  
+$authors2[2] = “Tolkien”;  
+$authors2[3] = “Dickens”;  
+  
+// Creating the same array using the empty [] syntax  
+$authors3[] = “Steinbeck”;  
+$authors3[] = “Kafka”;  
+$authors3[] = “Tolkien”; 
+$authors3[] = “Dickens”;  
+  
+However, just as with regular variables, you should make sure your arrays are initialized properly 
+first.  
+In the second and third examples, if the $authors2 or $authors3 array variables al

@@ -1,0 +1,28 @@
+1.15.10 Switch Buffer Limitations 
+As packets are processed in the switch, they are held in buffers. If the destination segment is 
+congested, the switch holds on to the packet as it waits for bandwidth to become available on the 
+crowded segment. Buffers that are full present a problem. So some analysis of the buffer sizes and 
+strategies for handling overflows is of interest for the technically inclined network designer. 
+In real world networks, crowded segments cause many problems, so their impact on switch 
+consideration is not important for most users, since networks should be designed to eliminate 
+crowded, congested segments. There are two strategies for handling full buffers. One is 
+“backpressure flow control” which sends packets back upstream to the source nodes of packets 
+that find a full buffer. This compares to the strategy of simply dropping the packet, and relying on 
+the integrity features in networks to retransmit automatically. One solution spreads the problem 
+in one segment to other segments, propagating the problem. The other solution causes 
+retransmissions, and that resulting increase in load is not optimal. Neither strategy solves the 
+problem, so switch vendors use large buffers and advise network managers to design switched 
+network topologies to eliminate the source of the problem – congested segments. 
+
+1.15.11 Layer 3 Switching 
+A hybrid device is the latest improvement in internetworking technology. Combining the packet 
+handling of routers and the speed of switching, these multilayer switches operate on both layers 2 
+and layer 3 of the OSI network model. The performance of this class of switch is aimed at the core 
+of large enterprise networks. Sometimes called routing switches or IP switches, multilayer 
+switches look for common traffic flows, and switch these flows on the hardware layer for speed. 
+For traffic outside the normal flows, the multilayer switch uses routing functions. This keeps the 
+higher overhead routing functions only where it is needed, and strives for the best handling 
+strategy for each network packet. 
+Many vendors are working on high end multilayer switches, and the technology is definitely a 
+“work in process”. As networking technology evolves, multilayer switches are likely to replace 
+routers in most large networks. 

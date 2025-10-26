@@ -1,0 +1,35 @@
+*****************************************
+****** class serverType  
+{  
+public:  
+serverType(); //Default 
+constructor  
+//Sets the values of the instance variables to their default //values.  
+//Postcondition: currentCustomer is initialized by its 
+// default constructor; status = "free"; and the // 
+transaction time is initialized to 0.  
+  
+bool isFree() const;  
+//Function to determine if the server is free. 
+//Postcondition: Returns true if the server is free, // 
+otherwise returns false.  
+  
+void setBusy();  
+//Function to set the status of the server to busy.  
+//Postcondition: status = "busy";  
+  
+void setFree();  
+//Function to set the status of the server to "free."  
+//Postcondition: status = "free";  
+  
+void setTransactionTime(int t);  
+
+241  
+  
+//Function to set the transaction time according to the //parameter 
+t.  
+//Postcondition: transactionTime = t;  
+  
+void setTransactionTime();  
+//Function to set the transaction time according to //the 
+transaction time of the

@@ -1,0 +1,36 @@
+ar . “ < br / > ”; // Displays “8.23” 
+echo (int) $test_var . “ < br / > ”; // Displays “8” echo 
+(float) $test_var . “ < br / > ”; // Displays “8.23” echo 
+(boolean) $test_var . “ < br / > ”; // Displays “1”  
+  
+Here is a full list of casts that you can perform in PHP:  
+  
+Function  
+Description  
+(int) value or (integer) value  
+Returns value cast to an integer  
+(float) value  
+Returns value cast to a float  
+(string) value  
+Returns value cast to a string  
+(bool) value or (Boolean) value  
+Returns value cast to boolean  
+(array) value  
+Returns value cast to an array  
+(object) value  
+Returns value cast to an object  
+  
+You can also cast a value to an integer, floating point or a string using three of PHP’s special 
+functions: intval(), floatval() and strval().  
+  
+Function  
+Description  
+Intval(value)  
+Returns value cast to an integer  
+Floatval(value)  
+Returns value cast to a float  
+strval(value)  
+Returns value cast to a string  
+  
+  
+Think Point: Take particular note

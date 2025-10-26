@@ -1,0 +1,33 @@
+2.9 Writing Your Own Class Methods 
+There are many classes containing member methods that make up the .NET FCL. You should 
+explore and make use of them whenever possible. However, for specific tasks relating to 
+building your unique applications, it is often necessary for you to write methods of your own. 
+The syntax for defining a method follows. The square brackets used with the modifier indicate 
+an optional entry. 
+ 
+As noted previously, the returnType specifies what kind of information is returned when the 
+body of the method is finished executing. This can be the name of any predefined or user-
+defined type, such as int or double. The returnType can also be replaced with the keyword 
+void. void is used to indicate that no value is being returned. Notice that there is only room 
+for one returnType per method. Thus, a method can return at most only one value type under 
+its name. User-defined methods in C# can be classified into two categories: 
+• Methods that do not return a value, called void methods 
+• Methods that do return a value, called value-returning methods
+
+2.10 Void Methods 
+void methods are the simplest to write. No return statement is needed in the body of the 
+method. The keyword void is used for the return type in the heading. Example 3-13 illustrates 
+a nonvalue-returning method. This one does not expect any data to be sent into it. No 
+parameters are included inside the parentheses. The keyword static is included so that the 
+methods can be called without instantiating an object of the method’s class. To call these 
+nonvalue-returning methods, simply enter the method’s identifier followed by a set of 
+parentheses. If the method has parameters, the call will include actual arguments inside the 
+
+[modifier(s)] returnType MethodName(parameterList) 
+{ 
+// body of method - consisting of executable statements 
+} 
+
+parentheses. 
+ 
+Example 3-13 Void Methods

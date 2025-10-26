@@ -1,0 +1,22 @@
+To reduce variance, we can:
+ 
+• Simplify the model (e.g., reduce polynomial degree). 
+• Increase the amount of training data. 
+• Use regularization techniques such as L1/L2 penalties to constrain the model complexity. 
+A well-balanced machine learning model must optimize both bias a to achieve low total error. This 
+balance is crucial when designing models for real-world applications, where both prediction accuracy 
+and generalization are important. 
+
+1.7  Feature Engineering 
+Feature engineering is a fundamental step in the machine learning process, as raw data is often not 
+in a suitable format for direct analysis.  
+
+Feature extraction  
+Feature extraction involves transforming raw data into numerical representations that machine 
+learning models can process effectively. This transformation is particularly important when working 
+with unstructured data such as text or images. For instance, in text data, words and phrases can be 
+converted into numerical vectors using techniques such as word embeddings, which capture 
+semantic relationships between words. Similarly, in image data, meaningful features such as pixel 
+intensities, edges, or texture patterns can be extracted to facilitate classification tasks. Feature 
+extraction ensures that raw data is transformed into a structured format that enhances the learning 
+process of machine learning algorithms. 

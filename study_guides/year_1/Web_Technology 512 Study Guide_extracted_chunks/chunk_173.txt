@@ -1,0 +1,30 @@
+[A-Z]  
+It matches any character from uppercase A through uppercase Z.  
+[a-Z]  
+It matches any character from lowercase a through uppercase Z.  
+Table 6.15 – Brackets 
+ 
+The ranges shown in Table 6.15above are general; you could also use the range [0-3] 
+to match any decimal digit ranging from 0 through 3, or the range [b-v] to match any 
+lowercase character ranging from b through v. 
+ 
+6.2.7.2 Quantifiers 
+The frequency or position of bracketed character sequences and single characters can 
+be denoted by a special character where eachspecial character has a specific 
+connotation. The +, *, ?, and $ flags all follow a character sequence. 
+
+ 
+108 
+ 
+SIX | JAVASCRIPT OBJECTS 
+Expression Description 
+p+  
+It matches any string containing at least one p.  
+p*  
+It matches any string containing zero or more p's.  
+p?  
+It matches any string containing one or more p's.  
+p{N}  
+It matches any string containing a sequence of N p's  
+p{2,3}  
+It matches any string containing a sequence of tw

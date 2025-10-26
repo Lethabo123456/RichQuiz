@@ -1,0 +1,27 @@
+EIGHT |  CSS STYLES AND COLORS 
+ 
+LEARNING OUTCOMES 
+1. Create inline and embedded styles 
+2. Create and use linked style sheets 
+3. Use the cascading order of styles 
+ 
+Introducing CSS 
+One of the important principles discussed in the previous tutorial was that HTML does not 
+define how a document should be displayed; it only defines the document’s structure and 
+content. The appearance of the page is determined by one or more style sheets written in the 
+Cascading Style Sheets (CSS) language.  Starting with this tutorial, you’ll learn how to write your 
+own CSS style sheets. 
+ 
+The CSS specifications are maintained by the same World Wide Web Consortium (W3C) that 
+defines the standards for HTML. As with HTML, the CSS language has gone through several 
+versions, the latest of which is CSS Version 3, more commonly known as CSS3. CSS3 is not based 
+on a single specification but rather is built upon several modules, where each module is focused 
+on a separate design topic. At the time of this 
+Writing, there were over 50 CSS3 modules with each module experiencing a different level of 
+browser support. The W3C continues to expand the scope of the language, which means that 
+many new design features are still at the stage where few, if any, browsers support them. 
+ 
+In these tutorials, you’ll focus mostly on CSS features that have near-universal support among 
+current browsers. However, you’ll also examine workarounds to support older browsers and 
+study ways to accommodate the difference between browsers in how they implement CSS 
+designs. 

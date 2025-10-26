@@ -1,0 +1,15 @@
+t is, f(n) gives 
+the number of comparisons done by the search algorithm. Suppose that, on a particular computer, it takes 
+c units of computer time to execute one operation. Thus, the computer time it would take to execute f(n) 
+operations is cf(n). Clearly, the constant c depends on the speed of the computer and, therefore, varies 
+from computer to computer. However, f(n), the number of basic operations, is the same on each 
+computer. If we know how the function f(n) grows as the size of the problem grows, we can determine 
+the efficiency of the algorithm. Consider Table 1-2.  
+  
+TABLE 1-2: Growth rates of various functions  
+  
+  
+Table 1-2 shows how certain functions grow as the parameter n, that is, the problem size, grows. Suppose 
+that the problem size is doubled. From Table 1-2, it follows that if the number of basic operations is a 
+function of f(n) = n2, the number of basic operations is quadrupled. If the number of basic operations is a 
+function of f(n) = 2n, the number of

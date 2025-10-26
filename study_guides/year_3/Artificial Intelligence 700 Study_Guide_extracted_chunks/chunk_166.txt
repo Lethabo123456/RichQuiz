@@ -1,0 +1,33 @@
+Proofs in Predicate Logic 
+A proof in predicate logic has much the same form as a proof in 
+propositional logic. 
+ 
+We begin with a set of axioms (or hypotheses) A1..An, and using the rules of 
+inference, we construct a sequence of expressions that follow from those 
+axioms. 
+ 
+We can use the rules of inference from propositional logic as inference 
+rules in predicate logic, including modus ponens, DeMorgan's laws, and the 
+substitution of equals. 
+ 
+We require that each hypothesis and line in the proof be a closed expression 
+(ie, there are no free variables whose scope extends beyond a line in the 
+proof). 
+ 
+Implication, entailment, and proof 
+ 
+It's important to distinguish among three related concepts: 
+ 
+A -> B 
+"A implies B". This is a logical statement. It may be true or false. 
+ 
+A =| B 
+"A entails B". This is a "meta-statement" about truth. 
+B is true whenever A is true; more precisely, B is true in all 
+models in which A is true. If we know that A =| B then we know that 
+A -> B is a tautology. 
+ 
+A -| B 
+"B can be proven from A". This is a weaker meta-statement. It says 
+that under some given set of proof rules and interpretations for 
+predicates, if we are given A as premise we can derive B.

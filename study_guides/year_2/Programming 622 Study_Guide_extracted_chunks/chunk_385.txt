@@ -1,0 +1,51 @@
+//end push  
+  
+We do not need to check whether the stack is full before we push an element onto the stack because in 
+this implementation, logically, the stack is never full.  
+
+193  
+  
+  
+ 
+5.3.5  Return the Top Element  
+  
+The operation to return the top element of the stack is quite straightforward. Its definition is as follows:  
+  
+template <class Type>  
+Type linkedStackType<Type>::top() const  
+{  
+ 
+assert(stackTop != NULL);   
+//if stack is empty, terminate the program  
+ 
+return stackTop->info;   
+//return the top element  
+ 
+}  
+  
+  
+  
+  
+//end top  
+  
+  
+  
+ 
+5.3.6  Pop  
+  
+Now we consider the pop operation, which removes the top element of the stack. Consider the stack 
+shown in Figure 5-13.  
+  
+  
+FIGURE 5-13 Stack before the pop operation  
+  
+Figure 5-14 shows the pop operation.  
+  
+  
+FIGURE 5-14 Pop operation  
+  
+
+194  
+  
+As shown in Figure 5-14, first we make a pointer temp point to the top of the stack.Next we make stackTop 
+point to the next element o

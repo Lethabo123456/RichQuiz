@@ -1,0 +1,29 @@
+an XHTML 1.0 Strict 
+Web page:  
+  
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”> 
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>  
+  
+Next, the head element of the Web page gives the page a title — “Hello” — and links to a style sheet 
+file, common.css:  
+<head>  
+<title>Hello</title>  
+<link rel=”stylesheet” type=”text/css” href=”common.css” /> 
+</head>  
+  
+  
+  
+Finally, the body element includes an h1 (top-level heading) element containing the output from the 
+PHP code — echo “Hello, world!”; — and the page is then finished with a closing html tag:  
+  
+<body>  
+<h1><?php echo “Hello, world!”; ?></h1>  
+</body> 
+</html>  
+  
+Note that you don’t need to have the <?php and ?> tags on separate lines. In this case, the tags and 
+enclosed PHP code are all part of a single line.  
+  
+Meanwhile, the common.css style sheet file contains selectors to style some common HTML 
+elements — including the h1 (

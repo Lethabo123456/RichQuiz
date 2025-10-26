@@ -1,0 +1,63 @@
+Now all you need are some objects to sort. You'll create two absurdly simple classes: Student 
+and Dog. Assign Student objects a name at creation: 
+
+public class Student 
+{ 
+public Student (string name) 
+{ 
+this .name = name; 
+} 
+The Student class requires two methods, one to override ToString( ) and the other to be 
+encapsulated as the delegated method. Student must override ToString( ) so that the 
+ToString( ) method in Pair, which invokes 
+ToString( ) on the contained objects, will work properly; the implementation does nothing 
+more than return the student's name (which is already a string object): 
+public override string ToString( ) 
+{ 
+return name; 
+} 
+It must also implement a method to which Pai r . Sort ( ) can delegate the responsibility of 
+determining which of two objects comes first: 
+return (String.Compare(s1.name, s2.name) < 0 ? comparison. 
+theFirstComesFirst :comparison.theSecondComesFirst) ; 
+String. Compare( ) is a .NET Framework method on the String class that compares two strings 
+and returns less than zero if the first is smaller, greater than zero if the second is smaller, and 
+zero if they are the same.  
+ 
+Notice that the logic here returns the FirstComesFirst only if the first string is smaller; if they 
+are the same or the second is larger, this method returns theSecondComesFirst.  
+Notice that the WhichStudentComesFirst ( ) method takes two objects as parameters and 
+returns a comparison. This qualifies it to be a Pair .WhichIsFirst delegated method, whose 
+signature and return value it matches.  
+ 
+The second class is Dog. For our purposes, Dog objects will be sorted by weight, lighter dogs 
+before heavier. Here's the complete declaration of Dog: 
+
+Notice that the Dog class also overrides ToString and implements a static method with the 
+correct signature for the delegate. Notice also that the Dog and Student delegate methods do 
+not have the same name. They do not need to have the same name, as they will be assigned 
+to the delegate dynamically at runtime. Example 6-1 is the complete program, which 
+illustrates how the delegate methods are invoked.
+
+public class Dog 
+{ 
+public Dog(int weight) 
+{ 
+this.weight = weight; 
+} 
+// dogs are ordered by weight 
+public static comparison WhichDogComesFirst(Object o1, 
+Object o2) 
+{ 
+Dog d1 = (Dog)o1; 
+Dog d2 = (Dog)o2; 
+return d1.weight > d2.weight ? 
+comparison.theSecondComesFirst : 
+comparison.theFirstComesFirst; 
+} 
+public override string ToString() 
+{ 
+return weight.ToString(); 
+} 
+private int weight; 
+}

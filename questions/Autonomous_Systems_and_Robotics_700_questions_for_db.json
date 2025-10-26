@@ -1,0 +1,4162 @@
+[
+  {
+    "question": "MCQ: What is robotics primarily concerned with?",
+    "type": "MCQ",
+    "options": [
+      "A. Creating, designing, and using robots",
+      "B. Only programming computers",
+      "C. Developing software applications",
+      "D. Building mechanical toys"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robotics involves creating physical machines equipped with sensors and intelligent software to perform tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: A Roomba cleaning your house is considered a robot.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in labs",
+      "D. Only if humanoid"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Roombas are real-world machines programmed to perform tasks autonomously, which qualifies them as robots.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Give an example of robots performing tasks in daily life.",
+    "type": "Short",
+    "options": [
+      "A. Drones performing aerial tricks",
+      "B. Writing emails automatically",
+      "C. Using a smartphone app",
+      "D. Watching videos online"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Drones performing tasks autonomously in the sky demonstrate robots in action.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Automated systems operate with ______ human intervention.",
+    "type": "Fill",
+    "options": [
+      "A. Minimal",
+      "B. Constant",
+      "C. No access to",
+      "D. Full"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automated systems are designed to perform tasks efficiently with minimal human oversight.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: How do advanced robots differ from automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. They have a higher degree of autonomy and can make real-time decisions",
+      "B. They require constant programming for every task",
+      "C. They are purely mechanical and lack software",
+      "D. They are only used in industrial factories"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Advanced robots can adapt to changing environments and make decisions, unlike typical automated systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Automated systems cannot execute any tasks without human instructions.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in factories",
+      "D. Only in software"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automated systems can execute tasks independently but often need human oversight for complex operations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What components do robots typically include?",
+    "type": "MCQ",
+    "options": [
+      "A. Sensors, actuators, and intelligent software",
+      "B. Only mechanical arms",
+      "C. Only a computer screen",
+      "D. Only motors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robots are equipped with sensors and software to interact with their environment and perform tasks autonomously.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why are robotics and automated systems considered distinct fields?",
+    "type": "Interpretation",
+    "options": [
+      "A. Robotics involves higher autonomy, while automated systems follow predefined instructions",
+      "B. Robotics is only about software",
+      "C. Automated systems require no technology",
+      "D. Robotics uses only mechanical components"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The distinction lies in the level of autonomy and decision-making capabilities between robots and automated systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Why are robots called tech wizards in the passage?",
+    "type": "MCQ",
+    "options": [
+      "A. Because they perform tasks autonomously like magic",
+      "B. Because they can cast spells",
+      "C. Because they need constant supervision",
+      "D. Because they are toys"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robots autonomously perform tasks, which is likened to having magical abilities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What is one reason a contact drone or Roomba is classified as a robot?",
+    "type": "Short",
+    "options": [
+      "A. It is programmed to do tasks autonomously",
+      "B. It connects to the internet",
+      "C. It has a touchscreen",
+      "D. It can make phone calls"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous task execution is a key characteristic of robots.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Robots can adapt to changing environments and make ______ decisions.",
+    "type": "Fill",
+    "options": [
+      "A. Real-time",
+      "B. Manual",
+      "C. Fixed",
+      "D. Delayed"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Advanced robots possess autonomy to make decisions in real time.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of these is NOT considered a robot according to the passage?",
+    "type": "MCQ",
+    "options": [
+      "A. Regular smartphone app",
+      "B. Roomba vacuum",
+      "C. Aerial drone",
+      "D. Humanoid robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Smartphone apps alone do not include physical components to perform autonomous tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Advanced robots require no human guidance at all.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only when connected to the internet",
+      "D. Only in simulations"
+    ],
+    "correct_answer": "B",
+    "reasoning": "While highly autonomous, advanced robots may still need human oversight for certain tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: What is the main advantage of automated systems?",
+    "type": "Interpretation",
+    "options": [
+      "A. Efficiently carrying out specific tasks with minimal human intervention",
+      "B. Making autonomous decisions in real time",
+      "C. Exploring unknown environments",
+      "D. Learning new tasks without programming"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automated systems optimize specific tasks while reducing the need for human input.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: How does the passage describe the difference between robots and automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Robots have higher autonomy, automated systems rely more on predefined instructions",
+      "B. Robots are mechanical only, automated systems are digital only",
+      "C. Robots are toys, automated systems are industrial",
+      "D. Robots can’t perform tasks autonomously"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomy and decision-making capability is the main differentiator highlighted in the passage.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: What field involves combining computers and machines to perform autonomous tasks?",
+    "type": "Short",
+    "options": [
+      "A. Robotics",
+      "B. Software Engineering",
+      "C. Mechanical Design",
+      "D. Networking"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robotics is defined as creating machines that can act autonomously or with minimal human help.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Automated systems are designed to operate efficiently and ______.",
+    "type": "Fill",
+    "options": [
+      "A. Reliably",
+      "B. Slowly",
+      "C. Unpredictably",
+      "D. Only manually"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automated systems aim to execute tasks efficiently and reliably with minimal errors.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What example demonstrates a complex humanoid robot?",
+    "type": "MCQ",
+    "options": [
+      "A. Boston Dynamics Atlas robot",
+      "B. Smartphone app",
+      "C. Automated conveyor belt",
+      "D. Roomba vacuum"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Atlas is a humanoid robot capable of complex movements and decision-making.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: The primary goal of robotics and automated systems is to increase efficiency and productivity.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for entertainment",
+      "D. Only in manufacturing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Both fields aim to improve efficiency, although they differ in autonomy levels.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why does the passage refer to robotics as a 'tech dance'?",
+    "type": "Interpretation",
+    "options": [
+      "A. It illustrates the interaction between computers and machines",
+      "B. Because robots perform ballet",
+      "C. Because robotics is unpredictable",
+      "D. To emphasize robotics is purely mechanical"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The metaphor 'tech dance' highlights the coordinated functioning of software and hardware in robots.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which type of robot is designed to resemble a human being in appearance and behaviour?",
+    "type": "MCQ",
+    "options": [
+      "A. Humanoid Robot",
+      "B. Cobot",
+      "C. Domestic Robot",
+      "D. Hospital Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Humanoid robots are created to mimic human appearance and actions for tasks in R&D, customer service, and entertainment.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Cobots are designed to work safely alongside humans.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in research labs",
+      "D. Only in factories"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cobots include sensors and safety mechanisms to interact safely with humans in various environments.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name a common task performed by domestic robots.",
+    "type": "Short",
+    "options": [
+      "A. Cleaning floors",
+      "B. Assisting in surgery",
+      "C. Manufacturing components",
+      "D. Supervising other robots"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Domestic robots are designed for household tasks like cleaning, cooking, and laundry.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Hospital robots can assist with surgery, deliver medication, and transport ______.",
+    "type": "Fill",
+    "options": [
+      "A. Patients",
+      "B. Household items",
+      "C. Industrial parts",
+      "D. Office documents"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hospital robots are used in healthcare settings to improve patient care and efficiency.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What is the main role of cobots in industry?",
+    "type": "MCQ",
+    "options": [
+      "A. To work safely alongside humans",
+      "B. To replace all human workers",
+      "C. To explore outer space",
+      "D. To cook and clean at home"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cobots are specifically designed for collaborative work with humans, emphasizing safety and efficiency.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Humanoid robots are mostly used for heavy industrial tasks.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in domestic settings",
+      "D. Only in hospitals"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Humanoid robots are commonly used in research, customer service, and entertainment, not primarily for heavy industry.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why are domestic robots becoming increasingly popular?",
+    "type": "Interpretation",
+    "options": [
+      "A. They save people time and energy by performing household tasks",
+      "B. They can perform complex industrial automation",
+      "C. They explore new planets autonomously",
+      "D. They are used only for educational purposes"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Domestic robots assist with household chores, reducing human effort and saving time.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which type of robot is most likely used in research and customer service?",
+    "type": "MCQ",
+    "options": [
+      "A. Humanoid Robot",
+      "B. Domestic Robot",
+      "C. Hospital Robot",
+      "D. Cobot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Humanoid robots mimic humans and are often applied in R&D and service roles.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Provide an example of a task a hospital robot might perform.",
+    "type": "Short",
+    "options": [
+      "A. Delivering medication",
+      "B. Vacuuming the house",
+      "C. Performing customer service",
+      "D. Manufacturing electronic parts"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hospital robots can transport and deliver medications to patients efficiently.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Cobots are equipped with sensors and safety features that prevent them from ______ humans.",
+    "type": "Fill",
+    "options": [
+      "A. Harming",
+      "B. Assisting",
+      "C. Observing",
+      "D. Following"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Safety features in cobots prevent accidental harm to humans during collaborative tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which robot type can perform household chores like cleaning, cooking, and laundry?",
+    "type": "MCQ",
+    "options": [
+      "A. Domestic Robot",
+      "B. Humanoid Robot",
+      "C. Cobot",
+      "D. Hospital Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Domestic robots are designed to perform daily household tasks to assist humans.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Hospital robots are limited to transporting patients only.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for cleaning",
+      "D. Only for surveillance"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Hospital robots also assist with surgery, deliver medication, and other healthcare tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why are cobots considered safe to work alongside humans?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because they have sensors and safety mechanisms",
+      "B. Because they avoid humans completely",
+      "C. Because they operate only in simulations",
+      "D. Because they are fully human-controlled"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Safety is ensured by sensors that detect humans and prevent collisions or harm.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which type of robot would you likely find assisting surgeons in an operating room?",
+    "type": "MCQ",
+    "options": [
+      "A. Hospital Robot",
+      "B. Domestic Robot",
+      "C. Cobot",
+      "D. Humanoid Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hospital robots perform tasks like assisting surgeries and transporting patients in medical environments.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: What is a unique feature of a humanoid robot?",
+    "type": "Short",
+    "options": [
+      "A. Resembling humans in appearance and behavior",
+      "B. Only performing repetitive factory tasks",
+      "C. Operating without sensors",
+      "D. Limited to household chores"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Humanoid robots are designed to mimic human form and behavior for interaction and service tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Domestic robots help humans by performing tasks that are typically ______ and time-consuming.",
+    "type": "Fill",
+    "options": [
+      "A. Mundane",
+      "B. Dangerous",
+      "C. Innovative",
+      "D. Industrial"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Domestic robots perform repetitive household chores, freeing humans from mundane tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What common characteristic is shared by all robots mentioned in the passage?",
+    "type": "MCQ",
+    "options": [
+      "A. They are designed to perform specific tasks autonomously or with minimal guidance",
+      "B. They are all humanoid in appearance",
+      "C. They require constant human supervision",
+      "D. They cannot operate indoors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "All robot types aim to perform tasks efficiently, sometimes autonomously, while reducing human effort.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Cobots are mainly used for household chores.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in hospitals",
+      "D. Only in labs"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Cobots are designed to work collaboratively in industrial and healthcare environments, not for household chores.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why are hospital robots considered beneficial in medical settings?",
+    "type": "Interpretation",
+    "options": [
+      "A. They improve patient care and reduce the risk of infection",
+      "B. They replace human surgeons completely",
+      "C. They are mainly for entertainment",
+      "D. They only operate medical software"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hospital robots enhance care by assisting staff, delivering medication, and handling patients safely.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which aspect differentiates robots from automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Robots possess higher autonomy and can make real-time decisions",
+      "B. Robots always operate with full human supervision",
+      "C. Automated systems are humanoid in appearance",
+      "D. Automated systems can perform tasks without predefined instructions"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robots have greater autonomy and decision-making capabilities, allowing adaptation to changing environments, whereas automated systems often rely on predefined instructions.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which robot has a series of joints allowing movement in multiple directions?",
+    "type": "MCQ",
+    "options": [
+      "A. Articulated Robot",
+      "B. Cartesian Coordinate Robot",
+      "C. Industrial Robot",
+      "D. Medical Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Articulated robots use joints to achieve complex multi-directional movement, commonly used in manufacturing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Cartesian coordinate robots move along X, Y, and Z axes.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only X and Y",
+      "D. Only Z axis"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cartesian robots are defined by their movement along three orthogonal axes, suitable for assembly and packaging.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name a task that an industrial robot typically performs.",
+    "type": "Short",
+    "options": [
+      "A. Welding",
+      "B. Performing surgery",
+      "C. Entertaining guests",
+      "D. Delivery of items"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Industrial robots are designed for repetitive manufacturing tasks such as welding, painting, and assembly.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Medical robots can assist with surgery, administer medication, and provide ______.",
+    "type": "Fill",
+    "options": [
+      "A. Rehabilitation therapy",
+      "B. Welding",
+      "C. Packaging",
+      "D. Entertainment"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Medical robots help patients recover by providing therapy in addition to performing surgical and medication tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Autonomous mobile robots are primarily designed to:",
+    "type": "MCQ",
+    "options": [
+      "A. Move around the environment without human intervention",
+      "B. Entertain people at home",
+      "C. Perform repetitive industrial tasks",
+      "D. Operate surgical instruments"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous mobile robots navigate and perform tasks independently, useful for delivery, security, and exploration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Disaster response robots are mainly used for entertainment purposes.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in hospitals",
+      "D. Only in industry"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Disaster response robots are used to search for survivors, assess damage, and assist victims during emergencies.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why are entertainment robots important in theme parks or museums?",
+    "type": "Interpretation",
+    "options": [
+      "A. They provide interactive and engaging experiences",
+      "B. They perform manufacturing tasks",
+      "C. They assist with surgery",
+      "D. They navigate autonomously in industrial environments"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Entertainment robots are designed to engage and amuse people in recreational or educational settings.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which robot is suitable for performing repetitive tasks like welding and painting?",
+    "type": "MCQ",
+    "options": [
+      "A. Industrial Robot",
+      "B. Autonomous Mobile Robot",
+      "C. Disaster Response Robot",
+      "D. Entertainment Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Industrial robots excel at repetitive manufacturing tasks due to their precision and reliability.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Provide an example of an application for an autonomous mobile robot.",
+    "type": "Short",
+    "options": [
+      "A. Delivery",
+      "B. Painting",
+      "C. Entertaining guests",
+      "D. Administering medication"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous mobile robots can transport items or perform deliveries without human control.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Articulated robots are often used in ______ due to their complex movement capabilities.",
+    "type": "Fill",
+    "options": [
+      "A. Manufacturing",
+      "B. Home cleaning",
+      "C. Theme parks",
+      "D. Hospitals"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Articulated robots’ joints allow them to perform precise and complex tasks in manufacturing environments.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which robot would be used to assess damage and search for survivors after an earthquake?",
+    "type": "MCQ",
+    "options": [
+      "A. Disaster Response Robot",
+      "B. Medical Robot",
+      "C. Industrial Robot",
+      "D. Entertainment Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Disaster response robots are specifically designed for emergency and rescue operations.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Cartesian coordinate robots are ideal for assembly and packaging tasks.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for surgery",
+      "D. Only for entertainment"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cartesian robots’ precise linear movements along X, Y, and Z axes make them suitable for assembly and packaging.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: What is the key advantage of medical robots in healthcare?",
+    "type": "Interpretation",
+    "options": [
+      "A. They perform precise tasks such as surgery and therapy",
+      "B. They entertain patients",
+      "C. They deliver industrial parts",
+      "D. They navigate factories autonomously"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Medical robots enhance healthcare by performing precise and potentially life-saving operations.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which robot is designed primarily for amusement and interaction?",
+    "type": "MCQ",
+    "options": [
+      "A. Entertainment Robot",
+      "B. Cartesian Coordinate Robot",
+      "C. Industrial Robot",
+      "D. Disaster Response Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Entertainment robots are used to engage people in fun or educational activities in settings like theme parks or museums.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name a robot type that can function without human intervention in its environment.",
+    "type": "Short",
+    "options": [
+      "A. Autonomous Mobile Robot",
+      "B. Articulated Robot",
+      "C. Medical Robot",
+      "D. Industrial Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous mobile robots navigate and perform tasks independently, making them highly versatile.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Cartesian coordinate robots move along the X, Y, and ______ axes.",
+    "type": "Fill",
+    "options": [
+      "A. Z",
+      "B. W",
+      "C. A",
+      "D. Q"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cartesian robots operate on three orthogonal axes: X, Y, and Z for precision tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which robot is primarily used for healthcare tasks like surgery and rehabilitation?",
+    "type": "MCQ",
+    "options": [
+      "A. Medical Robot",
+      "B. Industrial Robot",
+      "C. Disaster Response Robot",
+      "D. Entertainment Robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Medical robots are designed for healthcare applications to assist with surgery, therapy, and medication.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Disaster response robots can assist during natural disasters by assessing damage.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only indoors",
+      "D. Only in entertainment"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Disaster response robots are deployed in emergencies to search, rescue, and evaluate damage safely.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why are articulated robots favored in complex manufacturing tasks?",
+    "type": "Interpretation",
+    "options": [
+      "A. Their joints allow flexible and precise movements",
+      "B. They entertain factory workers",
+      "C. They perform household chores",
+      "D. They only move in straight lines"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Articulated robots’ multi-joint structure enables them to handle complex manufacturing tasks efficiently.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which type of robot would be most suitable for coordinating multiple complex tasks in a dynamic disaster environment?",
+    "type": "MCQ",
+    "options": [
+      "A. Entertainment Robot",
+      "B. Industrial Robot",
+      "C. Disaster Response Robot",
+      "D. Cartesian Coordinate Robot"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Disaster response robots are designed to handle unpredictable environments, search for survivors, assess damage, and coordinate multiple emergency tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which component acts as the 'eyes' and 'ears' of a robot?",
+    "type": "MCQ",
+    "options": [
+      "A. Sensors",
+      "B. Actuators",
+      "C. Controllers",
+      "D. Power supply"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Sensors gather information about the environment, similar to human senses.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Actuators are responsible for a robot's movement.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for sensors",
+      "D. Only for power"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Actuators convert energy into motion to drive the robot’s mechanical parts.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which sensor type allows robots to see and capture visual information?",
+    "type": "MCQ",
+    "options": [
+      "A. Vision Sensor",
+      "B. Proximity Sensor",
+      "C. Force Sensor",
+      "D. Range Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Vision sensors like cameras allow robots to perceive their surroundings visually.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Proximity sensors help robots avoid ______.",
+    "type": "Fill",
+    "options": [
+      "A. Collisions",
+      "B. Power loss",
+      "C. Incorrect commands",
+      "D. Software errors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Proximity sensors detect nearby objects to prevent collisions during navigation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name a sensor that provides distance measurements for robots.",
+    "type": "Short",
+    "options": [
+      "A. Vision Sensor",
+      "B. Ultrasonic/Range Sensor",
+      "C. Force Sensor",
+      "D. Temperature Sensor"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Range sensors like ultrasonic and lidar help robots estimate distances accurately.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Force sensors are used to:",
+    "type": "MCQ",
+    "options": [
+      "A. Measure the applied force for precise interaction",
+      "B. Detect nearby objects",
+      "C. Capture visual data",
+      "D. Provide power to the robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Force sensors measure physical forces allowing delicate or precise handling of objects.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: All robots must have both sensors and actuators to function.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only sensors are needed",
+      "D. Only actuators are needed"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Sensors gather information while actuators perform actions based on that information.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a primary type of sensor in robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Controller",
+      "B. Vision Sensor",
+      "C. Proximity Sensor",
+      "D. Force Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Controllers manage robot actions but are not sensors themselves.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why are sensors critical for autonomous mobile robots?",
+    "type": "Interpretation",
+    "options": [
+      "A. They allow the robot to perceive its environment and navigate safely",
+      "B. They provide entertainment",
+      "C. They supply energy",
+      "D. They only control joint movement"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Without sensors, autonomous robots cannot detect obstacles or map their surroundings.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Cameras and vision sensors allow robots to ______ their environment.",
+    "type": "Fill",
+    "options": [
+      "A. See and understand",
+      "B. Move randomly",
+      "C. Apply force",
+      "D. Recharge"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Visual sensors provide crucial environmental perception for decision-making.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which component converts electrical energy into physical motion?",
+    "type": "MCQ",
+    "options": [
+      "A. Actuator",
+      "B. Sensor",
+      "C. Processor",
+      "D. Power supply"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Actuators drive movement, enabling the robot to interact with its environment.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Range sensors include ultrasonic and lidar technologies.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only vision sensors",
+      "D. Only force sensors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ultrasonic and lidar sensors measure distances accurately, crucial for navigation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which sensor type helps robots interact gently with objects?",
+    "type": "MCQ",
+    "options": [
+      "A. Force Sensor",
+      "B. Proximity Sensor",
+      "C. Vision Sensor",
+      "D. Range Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Force sensors measure the applied force, allowing controlled and delicate interactions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Identify a sensor used to avoid collisions.",
+    "type": "Short",
+    "options": [
+      "A. Proximity Sensor",
+      "B. Vision Sensor",
+      "C. Force Sensor",
+      "D. Lidar Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Proximity sensors detect objects nearby to prevent collisions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: How do sensors and actuators work together in a robot?",
+    "type": "Interpretation",
+    "options": [
+      "A. Sensors provide data; actuators perform actions",
+      "B. Actuators provide data; sensors perform actions",
+      "C. Sensors recharge batteries; actuators navigate",
+      "D. They work independently without interaction"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Sensors gather environmental data and actuators act upon that information to perform tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Ultrasonic sensors are a type of ______ sensor.",
+    "type": "Fill",
+    "options": [
+      "A. Range",
+      "B. Vision",
+      "C. Force",
+      "D. Power"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ultrasonic sensors provide distance measurements, classifying them as range sensors.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which component is essential for robots to sense their surroundings?",
+    "type": "MCQ",
+    "options": [
+      "A. Sensors",
+      "B. Actuators",
+      "C. Power supply",
+      "D. Frame"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Without sensors, robots cannot perceive their environment to make informed decisions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Vision sensors can replace force sensors in precise manipulation tasks.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for distance measurement",
+      "D. Only for entertainment robots"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Force sensors are needed for measuring applied force, which vision sensors cannot do.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which sensor type measures distances and helps in mapping the environment?",
+    "type": "MCQ",
+    "options": [
+      "A. Range Sensor",
+      "B. Vision Sensor",
+      "C. Force Sensor",
+      "D. Proximity Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Range sensors like lidar and ultrasonic provide distance data for navigation and mapping.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why is it important for a robot to have both vision and range sensors?",
+    "type": "Interpretation",
+    "options": [
+      "A. Vision sensors help see objects; range sensors measure distance for safe navigation",
+      "B. Vision sensors measure force; range sensors control movement",
+      "C. Both are only used for entertainment",
+      "D. Only one is necessary, not both"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Combining visual and distance data allows robots to perceive and navigate their environment effectively.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: What is the main function of actuators in a robot?",
+    "type": "MCQ",
+    "options": [
+      "A. Convert energy into motion",
+      "B. Process sensor data",
+      "C. Store user preferences",
+      "D. Provide visual feedback"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Actuators are the 'muscles' of robots, driving motion by converting energy into movement.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Electric motors are commonly used actuators for smooth and controlled movement.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for sensors",
+      "D. Only for hydraulic systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Electric motors provide precise and smooth motion, making them widely used in robotics.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which type of actuator uses compressed air to generate force?",
+    "type": "MCQ",
+    "options": [
+      "A. Pneumatic Actuator",
+      "B. Electric Motor",
+      "C. Hydraulic Actuator",
+      "D. Servo Motor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Pneumatic actuators utilize compressed air to produce mechanical force.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which actuator type is known for high power density and precision using pressurised fluid?",
+    "type": "MCQ",
+    "options": [
+      "A. Hydraulic Actuator",
+      "B. Electric Motor",
+      "C. Pneumatic Actuator",
+      "D. Stepper Motor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hydraulic actuators use pressurised fluid to achieve high force and precise movements.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The ______ system of a robot acts as its brain.",
+    "type": "Fill",
+    "options": [
+      "A. Control",
+      "B. Sensor",
+      "C. Power",
+      "D. Actuator"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The control system interprets sensor data and sends commands to actuators, coordinating the robot’s actions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name the component responsible for executing instructions and processing sensor data.",
+    "type": "Short",
+    "options": [
+      "A. Microcontroller/Microprocessor",
+      "B. Electric Motor",
+      "C. Hydraulic Pump",
+      "D. Vision Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Microcontrollers or microprocessors are the central processing units that execute instructions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: The control system allows a robot to communicate with other devices and sensors.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only actuators communicate",
+      "D. Only software is needed"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Communication interfaces enable data exchange between the robot’s control system and other devices.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Software in a robot's control system is responsible for:",
+    "type": "MCQ",
+    "options": [
+      "A. Providing algorithms and control logic",
+      "B. Generating mechanical force",
+      "C. Detecting objects visually",
+      "D. Charging batteries"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software provides algorithms and control logic governing robot behavior.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which actuator type is most suitable for industrial robots requiring high power?",
+    "type": "MCQ",
+    "options": [
+      "A. Hydraulic Actuator",
+      "B. Electric Motor",
+      "C. Pneumatic Actuator",
+      "D. Piezoelectric Actuator"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hydraulic actuators deliver high power density needed for industrial tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: ______ actuators are widely used for precise and smooth robotic movements.",
+    "type": "Fill",
+    "options": [
+      "A. Electric Motor",
+      "B. Hydraulic",
+      "C. Pneumatic",
+      "D. Stepper"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Electric motors provide controlled movement suitable for precision tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name a component that converts electrical energy into mechanical motion.",
+    "type": "Short",
+    "options": [
+      "A. Actuator",
+      "B. Sensor",
+      "C. Microcontroller",
+      "D. Communication Interface"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Actuators transform electrical or other energy forms into motion.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why is the control system considered the brain of the robot?",
+    "type": "Interpretation",
+    "options": [
+      "A. It processes sensor data and controls actuators",
+      "B. It provides power to motors",
+      "C. It measures distance",
+      "D. It senses temperature"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The control system interprets inputs and commands actuators, coordinating the robot’s behavior.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Pneumatic actuators are commonly preferred for:",
+    "type": "MCQ",
+    "options": [
+      "A. High-speed, moderate-force industrial applications",
+      "B. Processing sensor data",
+      "C. Communication between devices",
+      "D. Vision processing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Pneumatic actuators provide fast, moderately powerful movements in industrial contexts.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT part of the control system?",
+    "type": "MCQ",
+    "options": [
+      "A. Hydraulic Pump",
+      "B. Microcontroller",
+      "C. Software",
+      "D. Communication Interface"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hydraulic pumps are actuators, not part of the robot’s control system.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Microcontrollers can execute instructions and process data from sensors.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only software executes instructions",
+      "D. Only actuators process data"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Microcontrollers are central to executing instructions and processing sensor inputs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Communication interfaces in robots allow data exchange with ______.",
+    "type": "Fill",
+    "options": [
+      "A. Other devices and sensors",
+      "B. Batteries only",
+      "C. Actuators only",
+      "D. Electric motors only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Communication interfaces ensure connectivity and coordination with devices and sensors.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: The primary role of software in a robot is to:",
+    "type": "MCQ",
+    "options": [
+      "A. Govern robot behavior using algorithms",
+      "B. Provide hydraulic power",
+      "C. Control air flow in pneumatics",
+      "D. Capture images"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software provides control logic and algorithms guiding the robot’s operations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: How do actuators and control systems interact?",
+    "type": "Interpretation",
+    "options": [
+      "A. The control system sends commands to actuators to perform actions",
+      "B. Actuators send commands to the control system",
+      "C. They function independently",
+      "D. Actuators only provide data"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Control systems coordinate and command actuators to execute the robot’s tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which actuator is preferred when high precision and power are required in manufacturing?",
+    "type": "MCQ",
+    "options": [
+      "A. Hydraulic Actuator",
+      "B. Pneumatic Actuator",
+      "C. Electric Motor",
+      "D. Servo Motor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hydraulic actuators offer the precision and force density needed for manufacturing tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: All actuators work using electricity only.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only electric motors work",
+      "D. Only hydraulic actuators use electricity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Actuators can be electric, pneumatic, or hydraulic, depending on the application.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What is the primary function of a robot's power supply?",
+    "type": "MCQ",
+    "options": [
+      "A. Provide energy to the robot components",
+      "B. Process sensor data",
+      "C. Actuate robot joints",
+      "D. Communicate with external devices"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The power supply fuels the robot by converting electrical energy into appropriate voltage and current levels.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Batteries are mainly used in mobile robots where external power sources are unavailable.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for industrial robots",
+      "D. Only for sensors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries provide portable power for mobile applications.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: AC/DC converters in robots are used to:",
+    "type": "MCQ",
+    "options": [
+      "A. Convert alternating current to direct current",
+      "B. Store energy",
+      "C. Control actuators",
+      "D. Process sensor inputs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AC/DC converters transform AC from the wall to DC suitable for robot components.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which device regulates voltage levels to ensure optimal robot operation?",
+    "type": "MCQ",
+    "options": [
+      "A. Power Transformer",
+      "B. Battery",
+      "C. Microcontroller",
+      "D. Electric Motor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Power transformers adjust voltage so that the robot receives the correct levels for safe operation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The ______ provides portable power for mobile robots.",
+    "type": "Fill",
+    "options": [
+      "A. Battery",
+      "B. AC/DC Converter",
+      "C. Transformer",
+      "D. Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries supply energy where external sources aren't available.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name the component that converts AC from a wall outlet into DC suitable for robots.",
+    "type": "Short",
+    "options": [
+      "A. AC/DC Converter",
+      "B. Battery",
+      "C. Transformer",
+      "D. Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AC/DC converters ensure the correct current type for robot operation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Power transformers are unnecessary if the battery voltage matches the robot components.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for mobile robots",
+      "D. Only for industrial robots"
+    ],
+    "correct_answer": "A",
+    "reasoning": "If the battery provides the correct voltage, transformers may not be required.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which energy source allows robots to operate without being tethered to an outlet?",
+    "type": "MCQ",
+    "options": [
+      "A. Battery",
+      "B. AC/DC Converter",
+      "C. Transformer",
+      "D. Solar panel"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries provide untethered, portable energy.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why is a power supply crucial for a robot's functioning?",
+    "type": "Interpretation",
+    "options": [
+      "A. It ensures the robot receives proper energy to operate components",
+      "B. It controls robot movements",
+      "C. It processes sensor data",
+      "D. It stores programs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Without an appropriate power supply, robot components cannot function reliably.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: AC/DC converters are critical for robots because:",
+    "type": "MCQ",
+    "options": [
+      "A. They provide DC from AC mains",
+      "B. They actuate robot arms",
+      "C. They sense distance",
+      "D. They store energy"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Converting AC to DC ensures the robot receives usable power.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The ______ transforms voltage to optimal levels for safe robot operation.",
+    "type": "Fill",
+    "options": [
+      "A. Power Transformer",
+      "B. Battery",
+      "C. Actuator",
+      "D. Sensor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Transformers regulate voltage for proper and safe functionality.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name a portable energy source used in robots when external power is unavailable.",
+    "type": "Short",
+    "options": [
+      "A. Battery",
+      "B. AC/DC Converter",
+      "C. Transformer",
+      "D. Capacitor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries are portable and allow untethered operation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which component is responsible for regulating voltage to match robot requirements?",
+    "type": "MCQ",
+    "options": [
+      "A. Power Transformer",
+      "B. Battery",
+      "C. Microcontroller",
+      "D. Actuator"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Transformers ensure correct voltage for each component to function properly.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Batteries can be used as a backup power supply for robots in case of external power failure.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for industrial robots",
+      "D. Only for sensors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries provide backup energy ensuring continuous operation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which component converts AC mains electricity into DC suitable for robot electronics?",
+    "type": "MCQ",
+    "options": [
+      "A. AC/DC Converter",
+      "B. Battery",
+      "C. Power Transformer",
+      "D. Motor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AC/DC converters provide the correct current type for robot components.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: How does the combination of batteries, converters, and transformers ensure efficient robot operation?",
+    "type": "Interpretation",
+    "options": [
+      "A. They collectively supply, convert, and regulate power for all robot components",
+      "B. They process data from sensors",
+      "C. They control actuators directly",
+      "D. They store user programs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Each component of the power supply system ensures the robot receives correct and reliable energy.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Mobile robots often rely on ______ for energy when tethering is not possible.",
+    "type": "Fill",
+    "options": [
+      "A. Batteries",
+      "B. AC mains",
+      "C. Transformers",
+      "D. Solar panels"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries allow mobile robots to operate without a fixed power source.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Why are power transformers important in robotic systems?",
+    "type": "MCQ",
+    "options": [
+      "A. They ensure the correct voltage levels for safe operation",
+      "B. They store energy",
+      "C. They control actuators",
+      "D. They process sensor data"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Transformers adjust voltage so all components function safely and optimally.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: All robots can operate directly from AC mains without AC/DC conversion.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only industrial robots can",
+      "D. Only humanoid robots can"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Most robots require DC for electronics; AC/DC converters are needed to convert AC from mains.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which power source is most suitable for autonomous outdoor robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Battery",
+      "B. AC mains",
+      "C. Transformer",
+      "D. Power relay"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batteries allow untethered operation in outdoor environments.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What was the primary purpose of the Antikythera mechanism?",
+    "type": "MCQ",
+    "options": [
+      "A. Predict astronomical events",
+      "B. Serve as a military weapon",
+      "C. Act as a humanoid robot",
+      "D. Measure distances on Earth"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The Antikythera mechanism was a gear-driven device designed by the Greeks to predict astronomical events.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Ancient Chinese and Egyptian automatons were created solely for industrial work.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only Egyptian automatons were for industry",
+      "D. Only Chinese automatons were for industry"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ancient automatons were mainly for entertainment or ritual purposes, performing repetitive mechanical tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Leonardo da Vinci's mechanical knight in the 15th century was an example of:",
+    "type": "MCQ",
+    "options": [
+      "A. Early humanoid automaton",
+      "B. Industrial machine",
+      "C. Hydraulic actuator",
+      "D. Modern robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Da Vinci's mechanical knight was an early humanoid automaton designed for demonstration and entertainment.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name one major technological advancement during the Industrial Revolution that contributed to automation.",
+    "type": "Short",
+    "options": [
+      "A. Spinning jenny",
+      "B. Antikythera mechanism",
+      "C. Mechanical knight",
+      "D. Hydraulic actuator"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The spinning jenny was an industrial machine that increased manufacturing efficiency, marking early automation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What was a key outcome of the Industrial Revolution related to labor?",
+    "type": "MCQ",
+    "options": [
+      "A. Reduced reliance on human labor",
+      "B. Increased dependence on manual labor",
+      "C. Elimination of machines",
+      "D. Shift to purely digital automation"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automation during the Industrial Revolution reduced dependence on human labor for repetitive tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Early automatons performed repetitive tasks through ______ systems.",
+    "type": "Fill",
+    "options": [
+      "A. Mechanical",
+      "B. Electrical",
+      "C. Hydraulic",
+      "D. Pneumatic"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Pre-industrial automatons relied on mechanical systems to perform repetitive actions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which era marked the beginning of modern automation in manufacturing?",
+    "type": "MCQ",
+    "options": [
+      "A. Industrial Revolution",
+      "B. Pre-Industrial Era",
+      "C. Renaissance",
+      "D. Digital Era"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The Industrial Revolution introduced mechanical systems that performed tasks previously done by humans.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: The Antikythera mechanism can be considered a modern robot.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only if motorized",
+      "D. Only if humanoid"
+    ],
+    "correct_answer": "A",
+    "reasoning": "While automated, it was a mechanical device, not a robot in the modern sense.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why are early mechanical devices like the Antikythera mechanism considered precursors to robotics?",
+    "type": "Interpretation",
+    "options": [
+      "A. They automated complex tasks using mechanical systems",
+      "B. They used electric motors",
+      "C. They performed AI computations",
+      "D. They were autonomous humanoids"
+    ],
+    "correct_answer": "A",
+    "reasoning": "These devices showcased early automation, a foundational concept for robotics.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: The main purpose of Leonardo da Vinci's mechanical knight was to:",
+    "type": "MCQ",
+    "options": [
+      "A. Demonstrate humanoid automation",
+      "B. Produce textiles",
+      "C. Serve as a calculator",
+      "D. Lift heavy objects"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Da Vinci's mechanical knight illustrated human-like movements mechanically.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The spinning jenny was an example of an ______ machine.",
+    "type": "Fill",
+    "options": [
+      "A. Industrial",
+      "B. Automaton",
+      "C. Entertainment",
+      "D. Medical"
+    ],
+    "correct_answer": "A",
+    "reasoning": "It mechanized textile production, exemplifying industrial automation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Identify a mechanical device from ancient China or Egypt used for repetitive tasks.",
+    "type": "Short",
+    "options": [
+      "A. Automaton",
+      "B. Spinning jenny",
+      "C. Mechanical knight",
+      "D. Antikythera mechanism"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ancient automata were designed to perform repeated tasks for rituals or entertainment.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What is a key similarity between the Antikythera mechanism and modern robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Automate specific tasks",
+      "B. Operate using electric motors",
+      "C. Have AI-based decision making",
+      "D. Can move autonomously"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Both automate tasks, although modern robots are more complex and capable.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: The Industrial Revolution only impacted mechanical automation and not labor productivity.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in Europe",
+      "D. Only in Asia"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automation improved efficiency and reduced reliance on human labor.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Early automatons in ancient civilizations were primarily powered by:",
+    "type": "MCQ",
+    "options": [
+      "A. Mechanical systems",
+      "B. Electricity",
+      "C. Hydraulics",
+      "D. Pneumatics"
+    ],
+    "correct_answer": "A",
+    "reasoning": "These devices used gears, weights, and mechanical energy to function.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: How did the Industrial Revolution pave the way for modern robotics?",
+    "type": "Interpretation",
+    "options": [
+      "A. By showing that machines could perform tasks previously done by humans",
+      "B. By creating AI algorithms",
+      "C. By inventing humanoid robots",
+      "D. By using computers for automation"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Industrial machines demonstrated automation principles foundational to robotics.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Pre-industrial automatons often served purposes of ______ or ritual.",
+    "type": "Fill",
+    "options": [
+      "A. Entertainment",
+      "B. Manufacturing",
+      "C. Scientific calculations",
+      "D. Exploration"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ancient automatons were mainly used for amusement or ceremonial tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: The Antikythera mechanism is an example of a:",
+    "type": "MCQ",
+    "options": [
+      "A. Gear-driven mechanical device",
+      "B. Steam-powered engine",
+      "C. Pneumatic actuator",
+      "D. Modern AI robot"
+    ],
+    "correct_answer": "A",
+    "reasoning": "It utilized gears to calculate and predict astronomical events.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Industrial Revolution machines like the spinning jenny completely eliminated human labor.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in textile industries",
+      "D. Only in Europe"
+    ],
+    "correct_answer": "A",
+    "reasoning": "These machines reduced but did not entirely eliminate human labor.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which ancient device is known for predicting astronomical events using mechanical gears?",
+    "type": "MCQ",
+    "options": [
+      "A. Antikythera mechanism",
+      "B. Spinning jenny",
+      "C. Mechanical knight",
+      "D. Automaton"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The Antikythera mechanism was a Greek gear-based device for astronomical prediction.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Who invented Unimate, the first industrial robot?",
+    "type": "MCQ",
+    "options": [
+      "A. George Devol",
+      "B. Leonardo da Vinci",
+      "C. Nikola Tesla",
+      "D. Alan Turing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "George Devol invented Unimate in 1954, revolutionizing industrial automation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Unimate was installed at a General Motors plant in 1961.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only tested in lab",
+      "D. Installed in 1954"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Unimate was deployed in GM plants to perform hazardous tasks with precision.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Modern robotics was heavily influenced by advances in:",
+    "type": "MCQ",
+    "options": [
+      "A. Electronics and computing",
+      "B. Steam power",
+      "C. Hydraulic systems",
+      "D. Textile machinery"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Post-war robotics benefited from electronics and computing for control and automation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name one milestone field that explored interactions between humans and machines in modern robotics.",
+    "type": "Short",
+    "options": [
+      "A. Cybernetics",
+      "B. Mechanization",
+      "C. Automata",
+      "D. Thermodynamics"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cybernetics studied human-machine interactions leading to advanced control systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a characteristic of modern robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Microprocessors",
+      "B. Advanced sensors and AI",
+      "C. Manual assembly lines only",
+      "D. Collaborative robots"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Modern robotics incorporates technology, not solely manual operations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Collaborative robots are also known as ______.",
+    "type": "Fill",
+    "options": [
+      "A. Cobots",
+      "B. Automatons",
+      "C. Androids",
+      "D. Unimates"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Collaborative robots, or cobots, work alongside humans in industrial settings.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: In which sectors did modern robotics expand after the 20th century?",
+    "type": "MCQ",
+    "options": [
+      "A. Healthcare, space, agriculture",
+      "B. Only manufacturing",
+      "C. Textile industry only",
+      "D. Mechanical workshops"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robotics extended into multiple domains including healthcare, space exploration, and agriculture.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Unimate was used to perform hazardous tasks more precisely than humans.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in experiments",
+      "D. Only for assembly instruction"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Industrial robots like Unimate improved precision and safety for dangerous tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why was the introduction of microprocessors important in modern robotics?",
+    "type": "Interpretation",
+    "options": [
+      "A. Enabled complex computation and control",
+      "B. Powered steam engines",
+      "C. Reduced mechanical wear",
+      "D. Increased hydraulic pressure"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Microprocessors allowed sophisticated decision-making and control in robots.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which decade saw the deployment of Unimate in industrial settings?",
+    "type": "MCQ",
+    "options": [
+      "A. 1960s",
+      "B. 1950s",
+      "C. 1970s",
+      "D. 1980s"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Unimate was installed at GM in 1961, marking early industrial robot deployment.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The field of ______ focuses on interactions between humans and machines.",
+    "type": "Fill",
+    "options": [
+      "A. Cybernetics",
+      "B. Robotics",
+      "C. Automata",
+      "D. Mechanics"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cybernetics studies human-machine interaction and control systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Identify one task modern robots perform that was hazardous for human workers.",
+    "type": "Short",
+    "options": [
+      "A. Assembly line welding",
+      "B. Playing chess",
+      "C. Writing scripts",
+      "D. Painting artwork"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Industrial robots handled tasks like welding which are dangerous for humans.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is an example of a milestone in modern robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Unimate",
+      "B. Spinning jenny",
+      "C. Antikythera mechanism",
+      "D. Da Vinci's knight"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Unimate is recognized as the first industrial robot, a key modern robotics milestone.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Advanced sensors and AI are components of modern robotics.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only sensors, no AI",
+      "D. Only AI, no sensors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Modern robotics relies on advanced sensors and AI to perform intelligent tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Cybernetics influenced modern robotics by:",
+    "type": "MCQ",
+    "options": [
+      "A. Designing systems that mimic biological processes",
+      "B. Replacing all industrial workers",
+      "C. Eliminating the need for control systems",
+      "D. Using only mechanical automation"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cybernetics provided the theoretical basis for human-machine interaction and control.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Modern industrial robots can be found in ______, space exploration, and agriculture.",
+    "type": "Fill",
+    "options": [
+      "A. Healthcare",
+      "B. Ancient factories",
+      "C. Only textile industries",
+      "D. Only military labs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robotics has expanded into diverse domains including healthcare, space, and agriculture.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name the first industrial robot installed at General Motors.",
+    "type": "Short",
+    "options": [
+      "A. Unimate",
+      "B. Cobot",
+      "C. Automaton",
+      "D. Da Vinci's knight"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Unimate was the first industrial robot deployed in GM plants for manufacturing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why are collaborative robots (cobots) significant in modern industry?",
+    "type": "Interpretation",
+    "options": [
+      "A. They work alongside humans to enhance productivity and safety",
+      "B. They replace all human workers",
+      "C. They operate only in space",
+      "D. They function without sensors or AI"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Cobots are designed to collaborate with humans, improving efficiency and reducing risk.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: What major technology helped robots perform more sophisticated control in the late 20th century?",
+    "type": "MCQ",
+    "options": [
+      "A. Microprocessors",
+      "B. Steam engines",
+      "C. Pulley systems",
+      "D. Gear mechanisms"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Microprocessors allowed robots to process sensor data and execute precise control commands.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Modern robotics began after World War II.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in the 19th century",
+      "D. Only in ancient Greece"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The post-war era saw the birth of modern robotics with electronics and computing advances.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What is a key benefit of integrating AI into robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Robots can learn, adapt, and make decisions autonomously",
+      "B. Robots require manual programming for every task",
+      "C. Robots only perform simple repetitive actions",
+      "D. Robots cannot interact with humans"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI enables robots to adapt, learn from their environment, and make autonomous decisions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: AI-powered robots can navigate complex environments without human intervention.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in laboratory settings",
+      "D. Only with remote control"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous AI robots like Keyper can plan routes, avoid obstacles, and operate independently.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: In which industry is an AI-powered robot like Keyper primarily used?",
+    "type": "MCQ",
+    "options": [
+      "A. Industrial inspections and maintenance",
+      "B. Entertainment and gaming",
+      "C. Agriculture only",
+      "D. Textile manufacturing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Keyper is designed to autonomously conduct inspections and maintenance in industrial environments.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name one safety advantage of AI-powered robots in industrial environments.",
+    "type": "Short",
+    "options": [
+      "A. Reduces human exposure to hazardous tasks",
+      "B. Slows down production lines",
+      "C. Eliminates the need for sensors",
+      "D. Requires constant human supervision"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI robots reduce human risk by performing tasks in dangerous environments autonomously.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following capabilities is enhanced by AI in robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Obstacle avoidance and anomaly detection",
+      "B. Only simple repetitive motion",
+      "C. Manual tool operation",
+      "D. Steam engine control"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI allows robots to detect hazards, navigate around obstacles, and recognize anomalies efficiently.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: AI in robotics enables robots to ______ and make autonomous decisions.",
+    "type": "Fill",
+    "options": [
+      "A. Learn",
+      "B. Sleep",
+      "C. Remain static",
+      "D. Forget tasks"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Learning is a core AI function that allows robots to adapt and improve performance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What does Keyper detect during its inspection rounds?",
+    "type": "MCQ",
+    "options": [
+      "A. Equipment malfunctions and safety hazards",
+      "B. Only temperature readings",
+      "C. Only mechanical movements",
+      "D. Only operator errors"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI allows Keyper to identify anomalies such as malfunctions, temperature spikes, and hazards.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: AI-powered robots still need humans to manually navigate every step.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in laboratories",
+      "D. Only during testing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI enables autonomous navigation without constant human input.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: How does AI improve operational efficiency in robotics?",
+    "type": "Interpretation",
+    "options": [
+      "A. By allowing robots to perform tasks autonomously and detect anomalies quickly",
+      "B. By slowing down task execution",
+      "C. By requiring human supervision at all times",
+      "D. By only performing repetitive motions"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous decision-making reduces human intervention and optimizes task execution.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a task AI-powered robots perform?",
+    "type": "MCQ",
+    "options": [
+      "A. Performing routine maintenance rounds autonomously",
+      "B. Predicting astronomical events",
+      "C. Avoiding obstacles",
+      "D. Triggering alerts for anomalies"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Predicting astronomical events is unrelated to AI-powered industrial robotics.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: AI-powered robots interact with humans in ______ and navigate complex environments.",
+    "type": "Fill",
+    "options": [
+      "A. Natural language",
+      "B. Binary code only",
+      "C. Morse code",
+      "D. Hand signals only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Natural language processing allows AI robots to communicate and interact effectively.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Give an example of an AI-powered robot used in industry.",
+    "type": "Short",
+    "options": [
+      "A. Keyper",
+      "B. Spinning Jenny",
+      "C. Unimate",
+      "D. Antikythera mechanism"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Keyper is an AI-enabled industrial robot conducting autonomous inspections and maintenance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What does AI enable in robots that pre-programmed systems cannot?",
+    "type": "MCQ",
+    "options": [
+      "A. Learning, adapting, and making decisions autonomously",
+      "B. Repeating fixed tasks",
+      "C. Only following a script",
+      "D. Ignoring environmental feedback"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI gives robots the ability to adapt and make autonomous decisions based on the environment.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: AI integration in robotics has no impact on workplace safety.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only reduces efficiency",
+      "D. Only increases cost"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI reduces human exposure to dangerous tasks, improving safety.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What type of anomalies can Keyper detect?",
+    "type": "MCQ",
+    "options": [
+      "A. Equipment malfunctions, temperature spikes, and safety hazards",
+      "B. Only human errors",
+      "C. Only vibrations",
+      "D. Only color changes"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Keyper's AI enables detection of multiple types of anomalies autonomously.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why is autonomous navigation critical for AI robots in industrial settings?",
+    "type": "Interpretation",
+    "options": [
+      "A. It allows robots to operate efficiently without constant human supervision",
+      "B. It limits robots to fixed paths",
+      "C. It increases human workload",
+      "D. It is unnecessary in modern factories"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomy in navigation increases efficiency and reduces need for manual oversight.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: AI allows robots to determine the ______ routes for inspection tasks.",
+    "type": "Fill",
+    "options": [
+      "A. Quickest",
+      "B. Random",
+      "C. Manual",
+      "D. Longest"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI algorithms calculate optimal paths to improve efficiency.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name one function of AI-powered robots in customer service.",
+    "type": "Short",
+    "options": [
+      "A. Interacting with humans using natural language",
+      "B. Operating only machinery",
+      "C. Performing welding tasks",
+      "D. Cleaning mechanical parts"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI robots can communicate naturally with humans in customer-facing roles.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is a direct outcome of AI in robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Increased operational efficiency and safety",
+      "B. Decreased performance due to learning",
+      "C. Requires humans for every decision",
+      "D. Reduced automation capabilities"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI improves efficiency and reduces human exposure to hazardous tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: AI-powered robots cannot trigger alerts for anomalies.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in simulation",
+      "D. Only with human input"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI enables robots to detect anomalies and autonomously trigger alerts in real-time.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What is the primary role of software in modern industrial robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Acts as the robot's mind and soul, controlling behavior",
+      "B. Provides physical strength for movement",
+      "C. Manufactures robot hardware components",
+      "D. Replaces human operators completely"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software governs robot behavior, enabling complex, autonomous actions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Versatile operating systems in robots are always standard and never customized.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in educational robots",
+      "D. Only for simulation purposes"
+    ],
+    "correct_answer": "A",
+    "reasoning": "OS platforms are often customized or proprietary depending on the robot's application.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which programming approach is used for rapid prototyping in robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. High-level languages",
+      "B. Low-level assembly",
+      "C. Machine code only",
+      "D. Morse code scripting"
+    ],
+    "correct_answer": "A",
+    "reasoning": "High-level languages allow developers to quickly prototype and test robotic programs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What bridges the gap between human operators and robotic systems?",
+    "type": "Short",
+    "options": [
+      "A. User interfaces",
+      "B. Hydraulic actuators",
+      "C. Power transformers",
+      "D. Batteries"
+    ],
+    "correct_answer": "A",
+    "reasoning": "UIs enable intuitive programming, monitoring, and control of robots.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Why is thoughtful interface design crucial for robotic systems?",
+    "type": "MCQ",
+    "options": [
+      "A. It optimizes operations and enhances productivity",
+      "B. It reduces robot hardware costs",
+      "C. It eliminates the need for software",
+      "D. It powers the robot's motors directly"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Well-designed interfaces maximize efficiency and usability for operators.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Software allows robots to perform ______ and execute programmed instructions autonomously.",
+    "type": "Fill",
+    "options": [
+      "A. Complex tasks",
+      "B. Only simple movements",
+      "C. Hardware assembly",
+      "D. Power distribution"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robotic software enables execution of complex instructions beyond simple motions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Low-level programming languages in robotics are primarily used for:",
+    "type": "MCQ",
+    "options": [
+      "A. Precise control of hardware components",
+      "B. Human communication",
+      "C. Predictive maintenance",
+      "D. Entertainment robots"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Low-level languages provide precise control over actuators and sensors.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Without software, robots would function effectively as mechanical devices.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in simple tasks",
+      "D. Only with human guidance"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software is essential for complex behavior and autonomy; without it, robots are limited to simple movements.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: How do versatile operating systems enhance robotic integration?",
+    "type": "Interpretation",
+    "options": [
+      "A. By providing a stable foundation for hardware and software communication",
+      "B. By increasing mechanical strength",
+      "C. By eliminating the need for programming",
+      "D. By reducing power consumption only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "OS platforms ensure smooth communication between sensors, actuators, and software.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following is a core component for developing and deploying robotic applications?",
+    "type": "MCQ",
+    "options": [
+      "A. Versatile operating systems",
+      "B. Hydraulic actuators",
+      "C. Pneumatic sensors",
+      "D. AC/DC converters"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The OS provides a stable foundation for software deployment and robotic integration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Programming languages in robotics empower developers to create ______ tailored to industrial needs.",
+    "type": "Fill",
+    "options": [
+      "A. Sophisticated robotic programs",
+      "B. Power transformers",
+      "C. Simple mechanical devices",
+      "D. Only hardware designs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Programming enables developers to define complex behaviors specific to industrial tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Give one advantage of high-level programming languages in robotics.",
+    "type": "Short",
+    "options": [
+      "A. Rapid prototyping and development",
+      "B. Precise actuator control only",
+      "C. Eliminates hardware needs",
+      "D. Replaces user interfaces"
+    ],
+    "correct_answer": "A",
+    "reasoning": "High-level languages allow quick testing and iteration of robotic programs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What role do user interfaces play in industrial robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Provide intuitive programming, monitoring, and control",
+      "B. Supply electrical power",
+      "C. Replace software entirely",
+      "D. Manufacture mechanical components"
+    ],
+    "correct_answer": "A",
+    "reasoning": "UIs bridge the human-robot interaction, allowing operators to efficiently control robots.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Software is optional for modern robotic functionality.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only for small robots",
+      "D. Only in simulation"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software is crucial for controlling robotic behavior and enabling autonomous tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why is software considered the 'mind and soul' of robots?",
+    "type": "Interpretation",
+    "options": [
+      "A. It governs behavior and enables autonomous decision-making",
+      "B. It provides physical power for movement",
+      "C. It replaces mechanical actuators",
+      "D. It supplies electrical energy"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software controls decision-making, logic, and task execution, similar to a mind in a human.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which factor is critical for optimizing operations on the factory floor?",
+    "type": "MCQ",
+    "options": [
+      "A. Well-designed user interfaces",
+      "B. Higher battery capacity",
+      "C. Only mechanical strength",
+      "D. Manual override switches"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Intuitive UIs allow operators to monitor and control robots efficiently, enhancing productivity.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Robust software enables robots to execute tasks ______ and reliably.",
+    "type": "Fill",
+    "options": [
+      "A. Autonomously",
+      "B. Manually only",
+      "C. Randomly",
+      "D. Ineffectively"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Autonomous execution is possible because software directs robot actions precisely.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name one core foundation for robotic software deployment.",
+    "type": "Short",
+    "options": [
+      "A. Versatile operating systems",
+      "B. Hydraulic actuators",
+      "C. Pneumatic compressors",
+      "D. Mechanical gears"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The OS ensures integration and stable deployment of robotic software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What is the relationship between hardware and software in robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Hardware provides movement; software controls behavior and logic",
+      "B. Hardware replaces software",
+      "C. Software powers actuators directly",
+      "D. Hardware is unnecessary"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Hardware executes physical actions, while software defines and directs those actions.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: How does the integration of AI enhance the future capabilities of robots?",
+    "type": "Interpretation",
+    "options": [
+      "A. By allowing robots to learn, adapt, and make autonomous decisions",
+      "B. By providing extra physical power to actuators",
+      "C. By replacing the need for operating systems",
+      "D. By solely increasing battery life"
+    ],
+    "correct_answer": "A",
+    "reasoning": "AI enables robots to go beyond pre-programmed tasks, improving adaptability, decision-making, and autonomous operations across complex environments.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following best describes manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Processes driven entirely by human effort",
+      "B. Fully dependent on automated infrastructure",
+      "C. Systems where decisions are algorithm-based",
+      "D. Tasks executed exclusively by machines"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Manual systems rely on human effort with minimal technological reliance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Manual systems avoid high costs associated with deploying advanced technology.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Depends on scale",
+      "D. Only in agriculture"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Manual systems require fewer resources, making them cost-effective in low-resource environments.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: One of the biggest advantages of manual systems is their _______.",
+    "type": "Fill",
+    "options": [
+      "A. Speed",
+      "B. Flexibility",
+      "C. Automation",
+      "D. Efficiency"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Flexibility allows humans to adapt to unforeseen circumstances better than machines.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which disadvantage is most associated with manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. High infrastructure costs",
+      "B. Fatigue and human errors",
+      "C. Lack of adaptability",
+      "D. Reduced creativity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Human operators are prone to fatigue and mistakes, reducing efficiency.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Consider a craft workshop producing custom handmade furniture. Which type of system does this represent?",
+    "type": "Interpretation",
+    "options": [
+      "A. Fully automated system",
+      "B. Manual system",
+      "C. Semi-automated system",
+      "D. Robotics-based production"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Craft production relies on human skill and customization, fitting manual systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is a key limitation of manual systems in high-volume manufacturing?",
+    "type": "MCQ",
+    "options": [
+      "A. Cost efficiency",
+      "B. Slower processes and inconsistency",
+      "C. Ability to adapt to changes",
+      "D. Creativity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Manual systems cannot match the speed and precision needed for mass production.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Manual systems are especially suited for which type of context?",
+    "type": "MCQ",
+    "options": [
+      "A. Large-scale industrial production",
+      "B. Low-resource environments",
+      "C. Space exploration",
+      "D. Automated financial markets"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They work well where advanced infrastructure is unavailable or unnecessary.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which factor makes manual systems slower compared to automation?",
+    "type": "Short",
+    "options": [
+      "A. Machines lack sensors",
+      "B. Human effort in repetitive tasks",
+      "C. Dependence on microprocessors",
+      "D. Network connectivity issues"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Human-driven repetitive work reduces speed and efficiency compared to machines.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In manual bookkeeping, which disadvantage is most significant?",
+    "type": "MCQ",
+    "options": [
+      "A. Higher costs",
+      "B. Variability and errors",
+      "C. Lack of creativity",
+      "D. Inflexibility"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Human errors and inconsistency are common issues in manual records.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following domains benefits least from manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Craft production",
+      "B. Small-scale farming",
+      "C. High-volume electronics manufacturing",
+      "D. Custom art creation"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Electronics manufacturing requires speed and precision beyond manual capacity.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Human ______ can compromise efficiency and consistency in manual systems.",
+    "type": "Fill",
+    "options": [
+      "A. Creativity",
+      "B. Fatigue",
+      "C. Training",
+      "D. Motivation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Fatigue leads to mistakes and slows down processes.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A farmer prefers using traditional hand tools instead of modern machines. What advantage is he prioritizing?",
+    "type": "Interpretation",
+    "options": [
+      "A. Speed",
+      "B. Flexibility and adaptability",
+      "C. Precision",
+      "D. Automation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Manual tools allow flexibility and problem-solving in changing field conditions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a disadvantage of manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Slower processes",
+      "B. Fatigue and variability",
+      "C. High infrastructure costs",
+      "D. Errors in repetitive work"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Manual systems are cost-efficient but slower and more error-prone.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Manual systems are best categorized as:",
+    "type": "MCQ",
+    "options": [
+      "A. Machine-driven operations",
+      "B. Human-centric processes",
+      "C. Cybernetic-based systems",
+      "D. Fully autonomous workflows"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They rely mainly on human effort for decision-making and execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of these best contrasts manual vs automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Manual is slower, automated is faster",
+      "B. Manual is costly, automated is free",
+      "C. Manual lacks adaptability, automated adapts better",
+      "D. Manual requires microprocessors, automated does not"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automation outpaces manual systems in speed, though manual offers flexibility.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Manual systems are inherently superior in environments demanding precision.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Depends on the operator",
+      "D. Only in art-related fields"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Precision-demanding environments favor automated systems over manual ones.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which limitation explains why manual systems cannot meet industrial mass-production demands?",
+    "type": "Short",
+    "options": [
+      "A. Lack of creativity",
+      "B. Human fatigue and inconsistency",
+      "C. High maintenance costs",
+      "D. Reduced adaptability"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Human fatigue slows repetitive high-volume tasks, making automation essential.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: In a high-risk chemical plant, why would manual systems be avoided?",
+    "type": "Interpretation",
+    "options": [
+      "A. Humans cannot make decisions",
+      "B. Safety risks and inefficiency",
+      "C. Cost efficiency is too high",
+      "D. Machines lack adaptability"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automation reduces exposure to dangerous environments, improving safety.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Manual systems thrive where advanced technological ______ is unavailable.",
+    "type": "Fill",
+    "options": [
+      "A. Infrastructure",
+      "B. Energy",
+      "C. Robotics",
+      "D. AI"
+    ],
+    "correct_answer": "A",
+    "reasoning": "They are commonly used in low-resource settings without infrastructure.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which factor makes manual systems valuable in creative industries?",
+    "type": "MCQ",
+    "options": [
+      "A. Precision",
+      "B. Flexibility and human problem-solving",
+      "C. High speed",
+      "D. Infrastructure independence"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Creative industries benefit from adaptability and unique human judgment.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is a defining characteristic of fully automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Complete reliance on manual labor",
+      "B. Ability to function autonomously with minimal human input",
+      "C. Flexibility through human judgment",
+      "D. Lack of scalability in operations"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Fully automated systems operate independently with minimal human intervention, unlike manual systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Fully automated systems eliminate the possibility of human error in processes.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. Depends on context"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Since decisions are guided by algorithms, human error is minimized though system-level errors may still occur.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A major drawback of fully automated systems is their high initial ______.",
+    "type": "Fill",
+    "options": [
+      "A. Speed",
+      "B. Flexibility",
+      "C. Cost",
+      "D. Precision"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The cost of development, deployment, and maintenance is a major barrier for automation adoption.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which industry is cited as an example where algorithmic trading systems operate autonomously?",
+    "type": "MCQ",
+    "options": [
+      "A. Healthcare",
+      "B. Finance",
+      "C. Manufacturing",
+      "D. Transportation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Algorithmic trading in finance uses automation to execute trades faster than humans.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Consider the example below and identify what kind of automation is described.\n```A vehicle navigates complex roads, makes real-time decisions, and avoids obstacles using sensors and AI.```",
+    "type": "Interpretation",
+    "options": [
+      "A. Manual system",
+      "B. Semi-automated system",
+      "C. Fully automated system",
+      "D. Non-automated system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Self-driving cars are prime examples of fully automated systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT an advantage of fully automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Consistent output without fatigue",
+      "B. Reduced human error",
+      "C. Low setup and maintenance costs",
+      "D. High scalability"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Initial investment and maintenance are high, unlike manual systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which principle underlies the use of robotics and AI in smart factories under Industry 4.0?",
+    "type": "MCQ",
+    "options": [
+      "A. Centralized manual oversight",
+      "B. Industry 4.0 integration",
+      "C. Human decision-making",
+      "D. Randomized automation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Industry 4.0 emphasizes full integration of automation and AI in smart factories.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Fully automated systems cannot raise ethical or safety concerns.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True in manufacturing only",
+      "D. Only true in transportation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They can indeed raise ethical and safety concerns, particularly in healthcare or transportation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name one real-world example of a fully automated system mentioned in the text.",
+    "type": "Short",
+    "options": [
+      "A. Tesla’s self-driving cars",
+      "B. Traditional farming",
+      "C. Manual bookkeeping",
+      "D. Handcrafted production"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Tesla’s self-driving vehicles are explicitly cited as examples of fully automated systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which feature allows fully automated systems to operate continuously without fatigue?",
+    "type": "MCQ",
+    "options": [
+      "A. Human supervision",
+      "B. Algorithmic decision-making",
+      "C. Machine learning",
+      "D. Robotic endurance"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Machines are capable of working 24/7 without fatigue unlike humans.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Failures or unexpected behaviors in autonomous systems can have ______ consequences.",
+    "type": "Fill",
+    "options": [
+      "A. Minimal",
+      "B. Catastrophic",
+      "C. Irrelevant",
+      "D. Minor"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Failures in autonomous cars, for example, can cause catastrophic accidents.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following best describes a key advantage of fully automated systems in large-scale industries?",
+    "type": "MCQ",
+    "options": [
+      "A. Lower workforce morale",
+      "B. Enhanced scalability",
+      "C. Reduced flexibility",
+      "D. Increased dependency on human labor"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automation allows industries to scale without proportionally increasing costs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Consider the description below.\n```A company replaces human operators with AI-driven machines that operate 24/7 without human oversight.``` Which challenge might arise from this transition?",
+    "type": "Interpretation",
+    "options": [
+      "A. Increased flexibility",
+      "B. Job displacement",
+      "C. Decreased initial costs",
+      "D. Higher creativity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automation often raises job displacement concerns due to reduced human involvement.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following industries uses fully automated systems for real-time decision-making?",
+    "type": "MCQ",
+    "options": [
+      "A. Transportation",
+      "B. Craft production",
+      "C. Manual bookkeeping",
+      "D. Traditional farming"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Transportation, e.g., self-driving cars, is a key field for fully automated systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Smart factories rely primarily on manual oversight to achieve productivity.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Only in certain cases"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Smart factories rely on robotics and AI, not manual oversight, for optimization.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Identify one challenge of transitioning to fully automated systems.",
+    "type": "Short",
+    "options": [
+      "A. Job displacement",
+      "B. Flexibility improvements",
+      "C. Elimination of safety concerns",
+      "D. Reduced ethical dilemmas"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Automation raises concerns of unemployment and job displacement.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following highlights an ethical concern in automated healthcare systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Reduced patient safety if system fails",
+      "B. Lower system costs",
+      "C. Faster decision-making",
+      "D. More consistent care"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ethical issues in healthcare automation revolve around patient safety risks during failures.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: One key limitation of fully automated systems is the need for substantial ______ for deployment and maintenance.",
+    "type": "Fill",
+    "options": [
+      "A. Supervision",
+      "B. Training",
+      "C. Investment",
+      "D. Creativity"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The initial cost of automation is one of the biggest barriers.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Based on the text, what makes algorithmic trading systems advantageous over human traders?",
+    "type": "Interpretation",
+    "options": [
+      "A. Ability to operate slower for accuracy",
+      "B. Human intuition",
+      "C. Faster response to market changes",
+      "D. Elimination of ethical issues"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Algorithms process data and execute trades faster than humans, giving a competitive edge.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is a major risk of failures in fully automated systems such as autonomous vehicles?",
+    "type": "MCQ",
+    "options": [
+      "A. Slight inconvenience",
+      "B. Catastrophic consequences",
+      "C. Improved scalability",
+      "D. Increased efficiency"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Unexpected failures in autonomous cars can result in catastrophic accidents.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which feature distinguishes fully automated systems from manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Complete human control",
+      "B. Shared control with human oversight",
+      "C. Minimal technology involvement",
+      "D. Full machine-controlled operation"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Fully automated systems rely on full machine-controlled operations, unlike manual or semi-automated ones.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Manual systems are best described as:",
+    "type": "MCQ",
+    "options": [
+      "A. Dependent on cutting-edge robotics",
+      "B. Entirely human-driven processes",
+      "C. Fully autonomous with no human input",
+      "D. Systems combining automation and human oversight"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Manual systems depend on human control and effort for all processes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Semi-automated systems always remove the need for human oversight.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. None of the above"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Semi-automated systems involve shared control between humans and machines, so human oversight is still needed.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Fully automated systems offer high _______ and efficiency.",
+    "type": "Fill",
+    "options": [
+      "A. Cost",
+      "B. Precision",
+      "C. Human error",
+      "D. Creativity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automation excels in precision and efficiency compared to manual systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a disadvantage of manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. High cost of implementation",
+      "B. Error-prone and time-consuming",
+      "C. Overdependence on machines",
+      "D. Lack of adaptability"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Manual systems are flexible but often slow and error-prone due to human limitations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Consider the following description:\n```\nSystem X involves cruise control and diagnostic tools. It combines automation with human supervision.\n```\nWhich category best fits System X?",
+    "type": "Interpretation",
+    "options": [
+      "A. Manual system",
+      "B. Semi-automated system",
+      "C. Fully automated system",
+      "D. None of the above"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Cruise control and diagnostic tools fall under semi-automated systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which advantage applies most to fully automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Adaptability to unique situations",
+      "B. Efficiency with human oversight",
+      "C. High precision and efficiency",
+      "D. Low training needs"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Fully automated systems are designed for precision and consistent efficiency.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Semi-automated systems often require:",
+    "type": "MCQ",
+    "options": [
+      "A. Zero training needs",
+      "B. Human-machine shared control",
+      "C. Minimal technology use",
+      "D. Fully independent operation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Semi-automated systems balance human oversight with machine assistance.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following examples represents a fully automated system?",
+    "type": "MCQ",
+    "options": [
+      "A. Paper-based accounting",
+      "B. Diagnostic tools in hospitals",
+      "C. Autonomous vehicles",
+      "D. Manual bookkeeping"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Autonomous vehicles are fully machine-driven, requiring no continuous human input.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Fully automated systems never involve ethical concerns.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Depends on application",
+      "D. Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Fully automated systems can involve ethical issues, particularly in healthcare and safety-critical fields.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpret the following:\n```\nA company wants to balance human ingenuity with advanced automation, keeping costs manageable while ensuring adaptability.\n```\nWhich strategy is being described?",
+    "type": "Interpretation",
+    "options": [
+      "A. Fully automated adoption",
+      "B. Gradual integration of automation",
+      "C. Complete manual operation",
+      "D. Outsourcing tasks"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The description matches gradual integration, where both manual and automated strengths are balanced.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which disadvantage is most associated with semi-automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Error-prone manual input",
+      "B. High cost and ethical concerns",
+      "C. Training needs and potential delays",
+      "D. Limited adaptability"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Semi-automated systems require training and may still cause delays if coordination fails.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Manual systems are highly _______ to unique and unforeseen situations.",
+    "type": "Fill",
+    "options": [
+      "A. Expensive",
+      "B. Adaptable",
+      "C. Automated",
+      "D. Inefficient"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Human-driven flexibility allows manual systems to adapt quickly.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Manual systems are least suitable for which type of environment?",
+    "type": "MCQ",
+    "options": [
+      "A. Craft production",
+      "B. Traditional farming",
+      "C. High-volume manufacturing",
+      "D. Small-scale bookkeeping"
+    ],
+    "correct_answer": "C",
+    "reasoning": "High-volume manufacturing requires efficiency and precision beyond human-only systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the MOST significant cost factor of fully automated systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Hiring human operators",
+      "B. Initial investment in technology",
+      "C. Fatigue-related errors",
+      "D. Limited adaptability"
+    ],
+    "correct_answer": "B",
+    "reasoning": "High setup and maintenance costs are the biggest challenges for fully automated systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation:\n```\nAn industry wants 24/7 consistent output with no fatigue or human error. Which system is ideal?\n```",
+    "type": "Interpretation",
+    "options": [
+      "A. Manual",
+      "B. Semi-automated",
+      "C. Fully automated",
+      "D. Hybrid outsourcing"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Only fully automated systems ensure fatigue-free, consistent operation around the clock.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is NOT an advantage of manual systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Adaptability",
+      "B. Low operational cost",
+      "C. Human creativity",
+      "D. High precision"
+    ],
+    "correct_answer": "D",
+    "reasoning": "High precision is a feature of automated, not manual, systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Fully automated systems raise concerns about job _______.",
+    "type": "Fill",
+    "options": [
+      "A. Creation",
+      "B. Displacement",
+      "C. Training",
+      "D. Satisfaction"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automation often displaces human workers, creating employment concerns.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Semi-automated systems eliminate the need for both training and oversight.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. Depends on system type"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Semi-automated systems still need oversight and training to function effectively.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which approach is often best for balancing cost, adaptability, and technological advancement?",
+    "type": "MCQ",
+    "options": [
+      "A. Pure manual systems",
+      "B. Gradual integration of automation",
+      "C. Outsourcing fully",
+      "D. Relying only on robotics"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Gradual integration allows organizations to balance adaptability and efficiency while controlling costs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who created the famous 'Automatic Duck' automaton in the 18th century?",
+    "type": "MCQ",
+    "options": [
+      "A. Nikola Tesla",
+      "B. Jacques de Vaucanson",
+      "C. Charles Babbage",
+      "D. Isaac Newton"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Jacques de Vaucanson was the French inventor credited with designing the Automatic Duck automaton.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The 'Automatic Duck' was described as being impossible to distinguish from:",
+    "type": "MCQ",
+    "options": [
+      "A. A clockwork toy",
+      "B. A real living duck",
+      "C. A mechanical bird",
+      "D. A human puppet"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The claim emphasized its lifelike nature, making it indistinguishable from a real duck.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: The Automatic Duck could simulate digestion of seeds it swallowed.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Not Mentioned",
+      "D. Partially True"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The description highlighted processes like swallowing and simulated digestion, even if partly theatrical.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Robotics involves the design, construction, and ______ of robots.",
+    "type": "Fill",
+    "options": [
+      "A. Evaluation",
+      "B. Operation",
+      "C. Transformation",
+      "D. Translation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Robotics is defined as design, construction, and operation of robots.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT mentioned as a component of robotics?",
+    "type": "MCQ",
+    "options": [
+      "A. Sensors",
+      "B. Actuators",
+      "C. Artificial Intelligence",
+      "D. Steam Engines"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Robotics focuses on sensors, actuators, and AI, not historical steam engines.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What was the main philosophical question raised by the Automatic Duck?",
+    "type": "Short",
+    "options": [
+      "A. Could machines truly be alive?",
+      "B. What are the prerequisites to make a machine indistinguishable from life?",
+      "C. Should machines replace humans?",
+      "D. Is automation ethical?"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The gedankenexperiment focused on the conditions needed for indistinguishability between machine and life.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: The Automatic Duck quacked, waddled, and splashed. What does this suggest about the design philosophy?",
+    "type": "Interpretation",
+    "options": [
+      "A. Focus on mechanical precision",
+      "B. Emphasis on lifelike imitation",
+      "C. Purely functional efficiency",
+      "D. Abstract artistic symbolism"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The automaton was built to mimic life as closely as possible, not just function mechanically.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In robotics, actuators are best described as:",
+    "type": "MCQ",
+    "options": [
+      "A. Devices that sense environment",
+      "B. Components that execute movement",
+      "C. Software controlling logic",
+      "D. Energy storage systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Actuators are physical components that carry out movement based on control signals.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which aspect of the Automatic Duck remains historically debated?",
+    "type": "MCQ",
+    "options": [
+      "A. Whether it could actually quack",
+      "B. Accuracy of its digestion mechanism",
+      "C. Who funded its creation",
+      "D. If it could walk independently"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Historians debate whether the digestion process described was genuine or staged.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Robotics always replaces human labor rather than augmenting it.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Depends on context",
+      "D. Not mentioned"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Robotics can both replace and augment human tasks, depending on context.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The Automatic Duck experiment is often framed as a ______.",
+    "type": "Fill",
+    "options": [
+      "A. Scientific proof",
+      "B. Thought experiment",
+      "C. Practical invention",
+      "D. Mechanical accident"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text frames it as a gedankenexperiment (thought experiment).",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Why was the Automatic Duck significant in the history of automation?",
+    "type": "MCQ",
+    "options": [
+      "A. It was the first AI system",
+      "B. It blurred the line between life and machine",
+      "C. It replaced human farmers",
+      "D. It was mass-produced"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Its lifelike imitation challenged ideas of what machines could represent.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: What does the fascination with the duck tell us about 18th-century society?",
+    "type": "Interpretation",
+    "options": [
+      "A. Interest in industrial efficiency",
+      "B. Curiosity about artificial life",
+      "C. Decline of manual craftsmanship",
+      "D. Rise of democratic politics"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The fascination reflected an obsession with machines that imitated life.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which feature made the duck most convincing as a lifelike automaton?",
+    "type": "MCQ",
+    "options": [
+      "A. Ability to simulate digestion",
+      "B. Use of gold plating",
+      "C. Mechanical ticking sounds",
+      "D. Hidden operator"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The digestion simulation gave it a biological illusion unlike other toys.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: The Automatic Duck was indistinguishable from a living duck because it was powered by real biological processes.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Partially True",
+      "D. Not mentioned"
+    ],
+    "correct_answer": "B",
+    "reasoning": "It only simulated digestion and movement mechanically, not through real biology.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: In modern robotics, what parallels can be drawn with Vaucanson's duck?",
+    "type": "Short",
+    "options": [
+      "A. Use of decorative engineering",
+      "B. Lifelike humanoid robots and AI companions",
+      "C. Purely industrial automation",
+      "D. Mechanical calculators"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Humanoid robots today share the same goal of appearing lifelike.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: If a robot is 'impossible to distinguish from life,' what philosophical issue does this raise?",
+    "type": "Interpretation",
+    "options": [
+      "A. Identity of creators",
+      "B. Boundary between living and artificial",
+      "C. Economic efficiency",
+      "D. Historical preservation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "It challenges our definitions of what it means to be 'alive'.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which component in robotics parallels the duck's quacking and waddling?",
+    "type": "MCQ",
+    "options": [
+      "A. Sensors",
+      "B. Actuators",
+      "C. AI algorithms",
+      "D. Ethical guidelines"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Actuators translate control into lifelike motion or sound, similar to the duck’s movements.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What does the Automatic Duck illustrate about human perception of machines?",
+    "type": "MCQ",
+    "options": [
+      "A. People are indifferent to machine mimicry",
+      "B. Humans are easily convinced by lifelike illusions",
+      "C. Machines were not trusted in the 18th century",
+      "D. Only functional performance mattered"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The duck’s illusion of life shows how humans attribute life to convincing machines.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Robotics often uses ______ to interpret environmental data for decision-making.",
+    "type": "Fill",
+    "options": [
+      "A. Actuators",
+      "B. Sensors",
+      "C. Gears",
+      "D. Valves"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Sensors provide the data necessary for robots to adapt to their environment.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the primary role of sensors in the context of the automatic duck thought experiment?",
+    "type": "MCQ",
+    "options": [
+      "A. To simulate quacking sounds",
+      "B. To perceive and detect environmental inputs",
+      "C. To store information for later retrieval",
+      "D. To control power consumption"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Sensors allow the duck to interact with the environment, such as detecting seeds with cameras or lidar.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: An automatic duck with actuators for beak, legs, and wings would be able to mimic essential duck behaviors.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Cannot be determined"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Actuators allow the duck to perform actions like walking, eating, and splashing, making it similar to a real duck.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: An automatic duck equipped with ______ enables it to perceive seeds in its surroundings.",
+    "type": "Fill",
+    "options": [
+      "A. A power generator",
+      "B. A digital camera",
+      "C. A sound amplifier",
+      "D. A wireless antenna"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The digital camera is used as a visual sensor to detect seeds.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT a minimal requirement for an automatic duck to be indistinguishable from a real duck?",
+    "type": "MCQ",
+    "options": [
+      "A. Sensors",
+      "B. Actuators",
+      "C. Functional behaviors",
+      "D. Emotional intelligence"
+    ],
+    "correct_answer": "D",
+    "reasoning": "While sensors, actuators, and functions are necessary, emotional intelligence is not required for the illusion of a duck.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: If the automatic duck perfectly mimics a living duck’s actions and responses, what philosophical concept does it illustrate?",
+    "type": "Interpretation",
+    "options": [
+      "A. Functional equivalence",
+      "B. Biological realism",
+      "C. Ethical engineering",
+      "D. Mechanical reductionism"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The thought experiment highlights the idea of functional equivalence: the artificial system being indistinguishable from the real.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which sensor is most suitable for navigation and detecting distance in the automatic duck?",
+    "type": "MCQ",
+    "options": [
+      "A. Thermometer",
+      "B. Lidar",
+      "C. Microphone",
+      "D. Compass"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Lidar allows measurement of distances and environment mapping, aiding navigation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Question: Why is the automatic duck still considered an engineering artifact, not a real duck?",
+    "type": "Short",
+    "options": [
+      "A. Because it lacks life",
+      "B. Because it is built by humans",
+      "C. Because it cannot reproduce biologically",
+      "D. Because it requires maintenance"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Despite perfect mimicry, the duck is not alive—it is only an artifact of engineering.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What key role do actuators play in the automatic duck?",
+    "type": "MCQ",
+    "options": [
+      "A. Provide energy to sensors",
+      "B. Enable movement and interaction with the physical world",
+      "C. Store and process digital information",
+      "D. Manage fuel and resource efficiency"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Actuators such as wings and legs provide physical interaction with the real world.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Functional equivalence means that an artificial system and a real system perform in an indistinguishable way.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. Cannot be evaluated"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Functional equivalence is the key idea: behaviorally indistinguishable systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: By definition, an ideal automatic duck cannot be ______ from a real duck.",
+    "type": "Fill",
+    "options": [
+      "A. Distinguished",
+      "B. Programmed",
+      "C. Manufactured",
+      "D. Powered"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The experiment assumes that the automatic duck is indistinguishable from a real one.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these actions is explicitly mentioned as necessary for the automatic duck to mimic real behavior?",
+    "type": "MCQ",
+    "options": [
+      "A. Swimming in circles",
+      "B. Quacking and waddling",
+      "C. Sleeping with eyes closed",
+      "D. Nest building"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text describes waddling, quacking, and splashing as key behaviors.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: What does the automatic duck thought experiment suggest about the boundary between living beings and machines?",
+    "type": "Interpretation",
+    "options": [
+      "A. It challenges the distinction between life and imitation",
+      "B. It highlights the superiority of machines",
+      "C. It proves humans are easily deceived",
+      "D. It shows that machines cannot ever match biology"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The experiment questions whether perfect imitation blurs the concept of life.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following best describes the purpose of GPS in the automatic duck?",
+    "type": "MCQ",
+    "options": [
+      "A. To locate food",
+      "B. To determine positioning and navigation",
+      "C. To generate energy",
+      "D. To analyze quacking sounds"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GPS provides navigation and positioning capabilities.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Without actuators, the automatic duck would still be able to physically interact with the environment.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only with sensors",
+      "D. Only with AI"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Actuators are necessary for any physical interaction, such as walking or picking up food.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short: What minimal functional behaviors must the automatic duck perform to achieve realism?",
+    "type": "Short",
+    "options": [
+      "A. Flying and hunting",
+      "B. Waddling, quacking, and splashing",
+      "C. Nest building and hatching",
+      "D. Migration and flocking"
+    ],
+    "correct_answer": "B",
+    "reasoning": "These actions are the listed key requirements for realism in the scenario.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which element allows the duck to analyze its environment visually?",
+    "type": "MCQ",
+    "options": [
+      "A. Digital camera",
+      "B. GPS antenna",
+      "C. Lidar sensor",
+      "D. Actuator motor"
+    ],
+    "correct_answer": "A",
+    "reasoning": "A digital camera provides visual perception for tasks like identifying seeds.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why does the automatic duck remain classified as a 'thing' despite its perfect mimicry?",
+    "type": "Interpretation",
+    "options": [
+      "A. It lacks consciousness and biological life",
+      "B. It cannot fly long distances",
+      "C. It requires electricity",
+      "D. It is not recognized scientifically"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Even if behaviorally indistinguishable, it is still engineered and non-living.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The thought experiment describes the automatic duck as a piece of human ______.",
+    "type": "Fill",
+    "options": [
+      "A. Engineering art",
+      "B. Biological imitation",
+      "C. Ethical dilemma",
+      "D. Artificial culture"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The duck is seen as an art form of human engineering.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which advanced sensor is mentioned as part of the automatic duck’s system?",
+    "type": "MCQ",
+    "options": [
+      "A. Radar",
+      "B. Thermostat",
+      "C. Barometer",
+      "D. Seismograph"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Radar sensors are listed among the examples of its technology.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: An automatic duck with complete mimicry of functions would still be biologically classified as a duck.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Depends on perception",
+      "D. Undetermined"
+    ],
+    "correct_answer": "B",
+    "reasoning": "It would remain a machine, not a biological organism.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which robot is specifically designed for crop harvesting with minimal waste?",
+    "type": "MCQ",
+    "options": [
+      "A. Agrobot",
+      "B. ecoRobotix",
+      "C. Cobots",
+      "D. AGVs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Agrobot is used in precision farming to harvest crops efficiently using AI and machine vision.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: ecoRobotix is used for livestock monitoring.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "reasoning": "ecoRobotix is an autonomous robot used for weed control, not livestock monitoring.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: ________ robots help analyze soil conditions to optimize planting decisions.",
+    "type": "Fill",
+    "options": [
+      "A. Harvesting",
+      "B. Soil analysis",
+      "C. Cobots",
+      "D. Painting"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Soil analysis robots are equipped with sensors to check soil conditions and optimize planting.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following describes a key advantage of precision farming robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Improved emotional support for workers",
+      "B. Higher crop yields with reduced waste",
+      "C. Minimally invasive surgeries",
+      "D. Directly replacing all human farmers"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Precision farming robots improve crop yield while minimizing waste.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A robot identifies weeds and removes them without herbicides. Which robot is being described?",
+    "type": "Interpretation",
+    "options": [
+      "A. Agrobot",
+      "B. ecoRobotix",
+      "C. Cobots",
+      "D. AGVs"
+    ],
+    "correct_answer": "B",
+    "reasoning": "ecoRobotix is designed for autonomous weed control without using herbicides.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of robot supports humans in industrial assembly lines?",
+    "type": "MCQ",
+    "options": [
+      "A. Cobots",
+      "B. AGVs",
+      "C. 3D printing robots",
+      "D. Painting robots"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Collaborative robots (cobots) work alongside humans in manufacturing assembly lines.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: 3D printing robots are primarily used in automotive and aerospace industries.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Cannot be determined"
+    ],
+    "correct_answer": "A",
+    "reasoning": "3D printing robots are widely applied in automotive and aerospace industries for additive manufacturing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name one major benefit of robotic painting systems in automotive industries.",
+    "type": "Short",
+    "options": [
+      "A. Uniform paint application",
+      "B. Cost-free production",
+      "C. Complete elimination of human labor",
+      "D. Faster livestock monitoring"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Painting robots ensure a uniform and consistent paint finish in the automotive industry.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which robots are primarily responsible for inspecting products for defects in manufacturing?",
+    "type": "MCQ",
+    "options": [
+      "A. Quality control robots",
+      "B. Cobots",
+      "C. AGVs",
+      "D. Soil analysis robots"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Robots with AI and sensors are used for quality control and defect inspection.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: ________ transport materials across factories in logistics operations.",
+    "type": "Fill",
+    "options": [
+      "A. Cobots",
+      "B. AGVs",
+      "C. ecoRobotix",
+      "D. Painting robots"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Automated Guided Vehicles (AGVs) transport materials within factories.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A strawberry-picking robot avoids damaging delicate crops. What advantage does this represent?",
+    "type": "Interpretation",
+    "options": [
+      "A. Improved livestock monitoring",
+      "B. Precision in harvesting delicate crops",
+      "C. Elimination of pesticides",
+      "D. Automated transport in factories"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Harvesting robots are designed to handle delicate crops without damage.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is a benefit of manufacturing robots?",
+    "type": "MCQ",
+    "options": [
+      "A. Increased workplace hazards",
+      "B. Reduced operational costs and consistent quality",
+      "C. Eliminating the need for all workers",
+      "D. Guaranteed immortality of machines"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Robots reduce costs, improve consistency, and enhance safety.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Soil analysis robots directly replace human surgeons.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Soil analysis robots are agricultural tools, unrelated to surgery.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What is one environmental benefit of using precision farming robots?",
+    "type": "Short",
+    "options": [
+      "A. Improved livestock monitoring",
+      "B. Reduced herbicide and pesticide use",
+      "C. Faster logistics in factories",
+      "D. Uniform automotive painting"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Robots like ecoRobotix minimize the use of chemicals, reducing environmental impact.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which category of robots is specifically designed to ensure worker safety in hazardous tasks?",
+    "type": "MCQ",
+    "options": [
+      "A. Assembly line robots",
+      "B. Quality control robots",
+      "C. AGVs",
+      "D. Painting robots"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Assembly line and collaborative robots help automate hazardous tasks, improving safety.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The use of ________ robots in agriculture supports higher crop yields with optimized farming practices.",
+    "type": "Fill",
+    "options": [
+      "A. Surgical",
+      "B. Precision farming",
+      "C. Painting",
+      "D. Telepresence"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Precision farming robots like Agrobot improve yield and reduce waste.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: If a factory introduces AGVs, which immediate advantage can be expected?",
+    "type": "Interpretation",
+    "options": [
+      "A. Uniform paint quality",
+      "B. Faster material transport across the plant",
+      "C. Reduced pesticide use",
+      "D. Improved livestock monitoring"
+    ],
+    "correct_answer": "B",
+    "reasoning": "AGVs automate logistics by transporting materials efficiently.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of robot supports additive manufacturing in the automotive industry?",
+    "type": "MCQ",
+    "options": [
+      "A. Painting robots",
+      "B. 3D printing robots",
+      "C. AGVs",
+      "D. Cobots"
+    ],
+    "correct_answer": "B",
+    "reasoning": "3D printing robots are applied in automotive industries for additive manufacturing.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Cobots always replace human workers completely.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Cobots are collaborative robots designed to work alongside, not replace, humans.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What benefit do robots bring to farming communities in terms of labor?",
+    "type": "Short",
+    "options": [
+      "A. Complete removal of farming labor",
+      "B. Labor cost savings and increased productivity",
+      "C. Guaranteed elimination of pests",
+      "D. Improved aerospace manufacturing"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Robots reduce labor dependency and costs, increasing productivity.",
+    "difficulty": "hard"
+  }
+]

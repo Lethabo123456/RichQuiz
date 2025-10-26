@@ -1,0 +1,45 @@
+Databases 
+Android supports the use of SQLite databases. SQLite is a fully functional relational database 
+management system (RDBMS) that can integrate into any host application. It does not have to run in 
+an independent server process. A relational database system allows the developer to give meaning to 
+the data stored within it by separating the data into tables (e.g., a customer table and an order table). 
+Each table will hold data pertinent for each instance of whatever is stored in the table (e.g., data for 
+each customer). SQLite also provides capabilities for retrieval and manipulation of the stored data 
+through the use of queries written in Structured Query Language (SQL). Almost any type of data can 
+be stored and manipulated using an SQLite database, although some data types have more limited 
+support than other RDBMSs. 
+ 
+ 
+Data stored in an SQLite database is private to the app and will persist as long as the app is installed 
+on the device. An app may create and use multiple databases, and each database can have many 
+tables, making data storage via SQLite both extensive and flexible. Databases are the workhorse data 
+storage of many apps, and many types of data are stored in databases. 
+Using Preferences 
+ 
+ 
+SharedPreferences are an easy way to store bits of information that need to persist over the life cycle 
+of an app. There are two main modes for accessing SharedPreferences: getSharedPreferences(“String 
+preference name”, integer mode) and getPreferences(integer mode). The getSharedPreferences 
+mode is used when you want to have more than one set of preferences for an app or you want the 
+preferences available to any Activity in the app. Each set is given a name that is used as the key to 
+access that particular set of preferences. If you need a set of preferences only for a single Activity, 
+then you can use the getPreferences method. With each of these methods, you need to set an access 
+mode. Using 0 (zero) makes the preferences private to the app. Preferences may also be given a mode 
+that makes them readable or writeable from outside the app. However, this is discouraged because it 
+opens potential security holes. Data is stored by using a method appropriate to the value being saved 
+(e.g., putBoolean or putInt) and supplying a string that will be the key for future access to that value. 
+Likewise, data is retrieved from the object using the string key with the appropriate get method (e.g., 
+getBoolean or getInt). 
+
+Android versus iOS: Data Persistence 
+Android and iOS offer essentially the same three types of data persistence mechanisms discussed in 
+this chapter. The functionality provided by SharedPreferences in Android is provided by the 
+UserDefaults object in iOS. File input and output is also provided in iOS. Finally, iOS also implements 
+SQLite databases in a very similar manner to Android. However, most iOS apps will instead use a 
+storage solution called Core Data that offers an object-oriented approach to storing data, 
+implemented on top of a SQLite database. Although in all cases the code has different commands 
+because the programming languages are different, the functionality is the same. So while porting data 
+persistence between platforms requires some work, the concepts are easily replicated. 
+In the MyContactList app, some settings are set in the ContactSettingsActivity and stored using 
+SharedPreferences. This activity is developed so that you can learn how to use SharedPreferences. To 
+do so, the layout is first coded, and then the Java file is edited.

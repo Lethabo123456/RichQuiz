@@ -1,0 +1,27 @@
+raph is 
+odd degree. This graph has no circuit and so has no circuit that contains all the edges.  
+  
+
+417  
+  
+  
+FIGURE 10-23 A graph with all vertices of odd degree  
+  
+Next consider the connected graph G of Figure 10-24 such that every vertex has even degree.  
+  
+  
+FIGURE 10-24 A graph with all vertices of even degree  
+  
+The graph of Figure 10-24 has an Euler circuit. For example, (0, e1, 1, e2, 2, e3, 3, e4, 5, e5, 1, e6, 3, e7, 4, e8, 
+0) is an Euler circuit in the graph of Figure 10-24.  
+  
+The following theorems give necessary and sufficient conditions for a connected graph to have an Euler 
+circuit.  
+  
+Theorem 10-2: If a connected graph G is Eulerian, then every vertex of G has even degree.  
+  
+Theorem 10-3: Let G be a connected graph such that every vertex of G is of even degree. Then G has an 
+Euler circuit.  
+  
+We can effectively use this theorem to determine whether a connected graph G has an Euler circuit by 
+checking whether all of its vertices are of even deg

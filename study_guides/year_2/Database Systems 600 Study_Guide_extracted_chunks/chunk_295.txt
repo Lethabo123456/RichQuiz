@@ -1,0 +1,29 @@
+CODE values 
+‘2232/QWE’ and ‘2232/QTY’, you use:  
+UPDATE   
+PRODUCT 
+SET  
+ 
+P_SALECODE = '1' 
+WHERE   
+P_CODE IN ('2232/QWE', '2232/QTY'); 
+Deleting Table Rows 
+It is easy to delete a table row using the Delete statement. The syntax is:  
+DELETE FROM table-name  
+
+ 
+121 
+[WHERE condition-list];  
+For example, if you want to delete the product you added earlier whose code (P_CODE) is BRT-
+345, use the following command:  
+DELETE FROM  PRODUCT  
+WHERE   
+P_CODE = 'BRT-345'; 
+Note that deletion is not limited to a primary key match; any attribute may be use. Likewise with 
+updating. 
+Restoring Table Contents 
+If you have not yet used the COMMIT command to store the changes permanently in the database, 
+you can restore the database to its previous condition with the ROLLBACK command. 
+ROLLBACK undoes any changes since the last COMMIT command and brings all of the data back 
+to the values that existed before the changes were made. To restore the data to its “pre-change” 
+condition, type:

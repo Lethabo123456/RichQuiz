@@ -1,0 +1,26 @@
+Scikit-learn offers three linkage methods: 
+• Ward: The default option, Ward merges clusters in such a way that the increase in the overall 
+variance within all clusters is minimized. This typically results in clusters of similar size. 
+• Average: This method merges clusters with the smallest average distance between all points in 
+the two clusters. 
+• Complete: Also known as maximum linkage, this criterion merges clusters based on the smallest 
+maximum distance between any two points in the clusters. 
+Ward is suitable for most datasets, and will be used in the examples here. However, if the clusters have 
+significantly different sizes, such as when one cluster is much larger than the others, average or complete 
+linkage may produce better results. 
+The following plot demonstrates the process of agglomerative clustering applied to a two-dimensional 
+dataset, where the goal is to identify three clusters. 
+
+Initially, each point is its own cluster. Then, in each step, the two clusters that are closest are merged. In 
+the first four steps, two single-point clusters are picked and these are joined into two-point clusters. In 
+step 5, one of the two-point clusters is extended to a third point, and so on. In step 9, there are only 
+three clusters remain- ing. As we specified that we are looking for three clusters, the algorithm then 
+stops. Let’s have a look at how agglomerative clustering performs on the simple threecluster data we 
+used here. Because of the way the algorithm works, agglomerative clustering cannot make predictions 
+for new data points. Therefore, Agglomerative Clustering has no predict method. To build the model and 
+get the cluster member- ships on the training set, use the fit_predict method instead. 
+
+As expected, the algorithm recovers the clustering perfectly. While the scikit-learn implementation of 
+agglomerative clustering requires you to specify the number of clusters you want the algorithm to find, 
+agglomerative clustering methods provide some help with choosing the right number, which we will 
+discuss next. 

@@ -1,0 +1,25 @@
+1.4 Device Differences 
+Android devices (phones and tablets) and iOS phones and tablets each have a unique set of hardware 
+and software capabilities that make the way each user interacts with the device different and unique. 
+Again, to fully capture the device’s capabilities and not degrade the user experience, you must design 
+for those unique characteristics. Remember, users can and will do things you are not expecting. Even 
+if it makes no sense to you, they will do it! If the app crashes or loses important data because of 
+something they did, it does not matter—it is your fault. Plan accordingly. 
+ 
+Android 
+Android devices originally used four hardware buttons (see Figure 2.4) to support the user’s use of the 
+device. These buttons were the Menu button, the Home button, the Back button, and the Search 
+button. The user could press any of these buttons at any time during use of the app, which would 
+affect the functioning of your app. The Home and Back buttons worked independently of your code, whereas 
+It’s Your Fault! 
+
+I (Michael) have an app that uses GPS data to map certain points. Against my better judgment, I was 
+asked to allow the manual entry of GPS coordinates for the app. One user contacted me about why 
+his app was always crashing when he tried to display the map. We went back and forth on potential 
+fixes. (He really liked the app and wanted to use it. Most users would just delete your app.) I could not 
+figure it out, so I finally asked him to send me his data. It turns out that he wasn’t entering GPS 
+coordinates; he just entered information about the location. I assumed that my users would know to 
+enter the exact GPS coordinates, not just the location name without exact coordinates. I had to add 
+an error message to the manual location entry to handle the situation. You never know what a user is 
+going to do!the Menu and Search buttons provided functionality only if your app was specifically coded to use  
+these buttons. 

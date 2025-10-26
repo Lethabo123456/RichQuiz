@@ -1,0 +1,23 @@
+G OUTCOMES  
+After Studying this topic you should be able to:  
+Learn about graphs  
+Become familiar with the basic terminology of graph theory  
+Discover how to represent graphs in computer memory  
+Examine and implement various graph traversal algorithms  
+Learn how to implement a shortest path algorithm  
+Examine and implement the minimum spanning tree algorithm  
+Explore topological sort  
+Learn how to find Euler circuits in a graph  
+  
+In previous chapters, you learned various ways to represent and manipulate data. This chapter discusses 
+how to implement and manipulate graphs, which have numerous applications in computer science.  
+  
+ 
+10.1  Introduction  
+In 1736, the following problem was posed. In the town of Kӧnigsberg (now called Kaliningrad), the river 
+Pregel (Pregolya) flows around the island Kneiphof and then divides into two. See Figure 10-1.  
+  
+  
+FIGURE 10-1 The Kӧnigsberg bridge problem  
+  
+The river has four land areas (A, B, C, D), as shown in the figure. Thes

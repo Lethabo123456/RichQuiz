@@ -1,0 +1,16 @@
+elationships are bidirectional; 
+that is, they go both ways.  
+To properly identify the relationship type, you should generally ask two questions:  
+• 
+How many instances of B are related to one instance of A?  
+• 
+How many instances of A are related to one instance of B?  
+You will have many opportunities to determine the relationships between entities as you proceed 
+through this course, and soon the process will become second nature. 
+Naming Conventions 
+During the translation of business rules to data model components, you identify entities, attributes, 
+relationships, and constraints. This identification process includes naming the object in a way that 
+makes it unique and distinguishable from other objects in the problem domain. Therefore, it is 
+important to pay special attention to how you name the objects you are discovering.  
+Entity names should be descriptive of the objects in the business environment and use terminology 
+that is familiar to the users. An attribute name sho

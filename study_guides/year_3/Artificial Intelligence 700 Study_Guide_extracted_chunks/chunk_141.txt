@@ -1,0 +1,27 @@
+A relation (remember the first unit this semester?) is one way to represent a 
+predicate. Use the relation name P as the predicate name; 
+If P has three columns, then P(a,b,c) is true if there is a tuple with fields a, b, and c. 
+ 
+1. . Translate the following axioms into predicate calculus 
+1. Mary is a lawyer 
+2. Ann is a computer scientist 
+3. Ann is rich 
+4. Lawyers are rich 
+5. Computer scientists are smart 
+6. Lawyers have nice cars 
+7. Smart, rich people have nice cars 
+ 
+1. lawyer(mary) 
+2. computer_scientist(ann) 
+3. rich(ann) 
+4. lawyer(X) → rich(X) 
+5. computer_scientist(X) → smart(X) 
+6. lawyer(X) → nice_car(X) 
+7. smart(X)  rich(X) → nice_car(X) 
+b. Unifications and inferences necessary to prove Ann has a nice car 
+. unify 2 with left side of 5 to conclude 
+8: smart(ann) 
+unify 3 and 8 with left side of 7 to conclude  
+9: nice_car(ann) 
+c. The corresponding and/or graph. 
+

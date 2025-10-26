@@ -1,0 +1,47 @@
+FIVE| Threads and Synchronization 
+ 
+5.1 Introduction 
+ 
+Applications are becoming more and more complex as user expectations rise. To fully take advantage 
+of multicore systems and stay responsive, you need to create applications that use multiple threads, 
+often called parallelism.  
+The .NET Framework and the C# language offer a lot of options that you can use to create multi-
+threaded applications 
+ 
+ 
+5.2  Understanding threads 
+ 
+Imagine that your computer has only one central processing unit (CPU) that is capable of executing 
+only one operation at a time. Now, imagine what would happen if the CPU has to work hard to exe-
+cute a task that takes a long time. 
+While this operation runs, all other operations would be paused. This means that the whole machine 
+would freeze and appear unresponsive to the user. Things get even worse when that long-running op-
+eration contains a bug so it never ends. Because the rest of the machine is unusable, the only thing 
+you can do is restart the machine. 
+
+To answer this problem, the concept of a thread is used. In current versions of Windows, each applica-
+tion runs in its own process. A process isolates an application from other applications by giving it its own 
+virtual memory ence each other. Each process runs in its own thread. A thread is something like a virtualized CPU. 
+
+If an application crashes or hits an infinite Threads are typically created when you want a program 
+to do two things at once Windows must manage all of the threads to ensure they can do their work. These management tasks do 
+come with an overhead. Each thread is allowed by Windows to execute for a certain time period. After 
+this period ends, the thread is paused and Windows switches to another thread. This is called   context 
+switching. 
+
+In practice, this means that Windows has to do some work to make it happen. The current thread is us-
+ing a certain area of memory; it uses CPU registers and other state data, and Windows has to make sure 
+that the whole context of the thread is saved and restored on each switch. 
+But although there are certain performance hits, using threads does ensure that each process gets its 
+time to execute without having to wait until all other operations finish. This improves the responsive-
+ness of the system and gives the illusion that one CPU can execute multiple tasks at a time. This way you 
+can create an application that uses parallelism, meaning that it can execute multiple threads on differ-
+ent CPUs in parallel.
+ 
+Almost any device that you buy today has a CPU with multiple cores, which is similar to having multiple 
+CPUs. Some servers not only have multicore CPUs but they also have more than one CPU. To make use 
+of all these cores, you need multiple threads. Windows ensures that those threads are distributed over 
+your available cores. This way you can perform multiple tasks at once and improve scalability. 
+Because of the associated overhead, you should carefully determine whether you need multithreading. 
+But if you want to use threads for scalability or responsiveness, C# and .NET Framework offer you a lot 
+of possibilities. 

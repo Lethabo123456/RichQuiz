@@ -1,0 +1,102 @@
+Message Systems (Kafka & ZeroMQ) 
+Kafka Publish-Subscribe Pattern 
+File: C:\distributed_systems\2_messaging\kafka_producer.py 
+#!/usr/bin/env python3 
+""" 
+Kafka Producer - Sends messages to topics 
+Demonstrates publish-subscribe messaging pattern 
+""" 
+import json 
+import time 
+import random 
+from kafka import KafkaProducer 
+from kafka.errors import NoBrokersAvailable 
+ 
+class SmartKafkaProducer: 
+    def __init__(self, bootstrap_servers=['localhost:9092']): 
+        """Initialize Kafka producer with error handling""" 
+        try: 
+            self.producer = KafkaProducer( 
+                bootstrap_servers=bootstrap_servers, 
+                value_serializer=lambda v: json.dumps(v).encode('utf-8'), 
+                key_serializer=lambda k: k.encode('utf-8') if k else None 
+            ) 
+            print(" Connected to Kafka broker") 
+        except NoBrokersAvailable: 
+            print(" Kafka broker not available - running in simulation mode") 
+            self.producer = None 
+ 
+
+    def send_sensor_data(self, sensor_id: str, topic: str = 'sensor_data'): 
+        """Send simulated sensor data""" 
+        data = { 
+            'sensor_id': sensor_id, 
+            'temperature': round(random.uniform(20, 30), 2), 
+            'humidity': round(random.uniform(30, 70), 2), 
+            'timestamp': time.time(), 
+            'location': f'Building_{random.randint(1, 5)}' 
+        } 
+         
+        if self.producer: 
+            try: 
+                future = self.producer.send(topic, key=sensor_id, value=data) 
+                future.get(timeout=10) 
+                print(f" Sent: {data}") 
+            except Exception as e: 
+                print(f" Failed to send: {e}") 
+        else: 
+            print(f" [SIMULATION] Would send: {data}") 
+ 
+    def send_user_activity(self, user_id: str, topic: str = 'user_activity'): 
+        """Send simulated user activity""" 
+
+        activities = ['login', 'logout', 'page_view', 'purchase', 'search'] 
+         
+        data = { 
+            'user_id': user_id, 
+            'activity': random.choice(activities), 
+            'timestamp': time.time(), 
+            'session_id': f'session_{random.randint(1000, 9999)}' 
+        } 
+         
+        if self.producer: 
+            try: 
+                self.producer.send(topic, key=user_id, value=data) 
+                print(f" User Activity: {data}") 
+            except Exception as e: 
+                print(f" Failed to send: {e}") 
+        else: 
+            print(f" [SIMULATION] User Activity: {data}") 
+ 
+    def close(self): 
+        """Close producer connection""" 
+        if self.producer: 
+            self.producer.close() 
+
+ 
+def main(): 
+    print(" Starting Kafka Producer Demo") 
+    print("=" * 40) 
+     
+    producer = SmartKafkaProducer() 
+     
+    try: 
+        # Send different types of messages 
+        for i in range(20): 
+            # Send sensor data 
+            producer.send_sensor_data(f'sensor_{i % 3 + 1}') 
+             
+            # Send user activity 
+            producer.send_user_activity(f'user_{random.randint(100, 999)}') 
+             
+            time.sleep(2) 
+             
+    except KeyboardInterrupt: 
+        print("\n Stopping producer...") 
+    finally: 
+        producer.close() 
+
+ 
+if __name__ == '__main__': 
+    main() 
+ 

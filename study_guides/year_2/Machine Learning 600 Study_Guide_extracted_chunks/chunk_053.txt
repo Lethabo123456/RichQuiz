@@ -1,0 +1,16 @@
+eturns a double primitive array. 
+Median: To find the middle number of the dataset, you use the median. Finding the median number 
+involves listing the dataset in ascending order and finding the middle number. If the total number of 
+values in the dataset is odd, then the middle number is going to be a value from the dataset. On the 
+other hand, if the dataset has an even set of values, then the average of the middle two numbers of 
+the dataset is used. Using the DescriptionStatistics class, the getPercentile method will give the 
+median from a collection. You will have to iterate the collection and add the double value to the 
+instance of the class with the addValue method. 
+
+P a g e  | 28 
+ 
+Range: The range of the dataset is calculated by taking the minimum value of the set from 
+the maximum value. So, for example, the dataset looks like this: 
+                                            
+ 
+Interquartile Range: As already discussed, if a dataset has outliers, the arithmetic mean wil

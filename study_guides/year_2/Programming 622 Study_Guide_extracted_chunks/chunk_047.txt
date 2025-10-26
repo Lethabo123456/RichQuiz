@@ -1,0 +1,20 @@
+oop executes n times, 
+the number of operations executed is:  
+  
+5n + 15 or 5n + 14  
+  
+
+22  
+  
+In these expressions, for very large values of n, the term 5n becomes the dominating term and the terms 
+15 and 14 become negligible.  
+  
+Usually, in an algorithm, certain operations are dominant. For example, in the preceding algorithm, to add 
+numbers, the dominant operation is in Line 6. Similarly, in a search algorithm, because the search item is 
+compared with the items in the list, the dominant operations would be comparison, that is, the relational 
+operation. Therefore, in the case of a search algorithm, we count the number of comparisons. For another 
+example, suppose that we write a program to multiply matrices. The multiplication of matrices involves 
+addition and multiplication. Because multiplication takes more computer time to execute, to analyse a 
+matrix multiplication algorithm, we count the number of multiplications.  
+  
+In addition to developing algorithms, we also pr

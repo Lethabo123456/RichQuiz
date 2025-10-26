@@ -1,0 +1,36 @@
+Populating the MainActivity Screen 
+ 
+You’ve learned how to get a list to respond to the selection of a contact 
+in the list by opening the MainActivity and passing a contact’s 
+ID value to it. The next step is to get the MainActivity to use that ID to 
+retrieve the contact’s data and display it. Open the ContactDataSource.java 
+file and add a method to retrieve a specific contact based on the 
+contact’s ID. Use the code in Listing 6.9 to create the method. This code
+is essentially the same as thegetContacts method, except that it
+returns a single contact rather thanan ArrayList of all the contacts.
+
+The pattern should look very familiar. In this method, there is no loop because only one contact is
+returned. Also, a Contact object is the return value rather than an ArrayList. There are three other
+notable differences: 
+
+▪ Line 1—The method has a parameter in its signature. The parameter is an integer that holds the 
+ID of the contact to be retrieved. 
+▪ Line 3—The SQL query has a WHERE clause that is passed by the value of the parameter 
+so that only the contact with that ID value is returned to the cursor. 
+▪ Lines 6–21—The cursor moves to the first record returned. If a contact is found, the 
+Contact object is populated. If no contact was retrieved, the moveToFirst method will be 
+false and the contact will not be populated. Next, to populate the MainActivity, you will 
+need to add a new method to MainActivity, called initContact, to retrieve the contact and 
+populate the layout with the values of the retrieved contact. The onCreate method is 
+modified to get the passed ID and call the method to retrieve and display the contact. Use the code in Listing 6.10 to create the new method. 
+Again, this code should be familiar by now. It is similar to the methods used to set the MainActivity 
+for editing or viewing. 
+
+▪ Lines 3–11—The contact is retrieved and assigned to the Activity’s currentContact variable. 
+▪ Lines 13–21—A reference to all the widgets in the layout is established so that the contact’s data 
+may be displayed in them.
+▪ Lines 23–30—The widgets are set to display the values in the retrieved contact. 
+▪ Lines 31–32—The display of the contact’s birthday requires a little more work. The time value 
+retrieved for the birthday is converted to millis and then converted to a string value. The DateFormat 
+object’s format method uses this value to create a string representation of the date in the given format 
+("MM/dd/yyyy"). 

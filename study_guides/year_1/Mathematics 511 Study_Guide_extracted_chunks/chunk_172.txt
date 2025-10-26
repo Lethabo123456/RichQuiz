@@ -1,0 +1,39 @@
+Worked Example 
+Determine whether the function f from {a, b, c, d} to {1, 2, 3, 4, 5}  
+with f (a) = 4, f (b) = 5, f (c) = 1, and f (d) = 3 is one-to-one. 
+Solution: 
+The function f is one-to-one because f takes on different values at the 
+four elements of its domain.
+
+Definition 29 
+A function f from A to B is called onto, or a surjection, if and only if for every 
+element b ∈ B there is an element a ∈ A with f (a) = b.A function f is called 
+surjective if it is onto. 
+ 
+A function f is onto if ∀y∃x(f (x) = y), where the domain for x is the domain 
+of the function and the domain for y is the codomain of the function. 
+Because all three elements of the codomain are images of elements in the 
+domain, we see hat f is onto. This is illustrated in Figure 4. Note that if the 
+codomain were {1, 2, 3, 4}, then  f would not be onto.
+
+Figure 2.14: An Onto Function.
+
+Definition 30 
+The function f is a one-to-one correspondence, or a bijection, if it is both one-
+to-one and onto. We also say that such a function is bijective. 
+
+Let f be the function from 
+{a, b, c, d} to {1, 2, 3} 
+defined by f (a) = 3, f (b) = 
+2, f (c) = 1, and f (d) = 3. Is f 
+an onto function? 
+Worked Example 
+Let f be the function from {a, b, c, d} to {1, 2, 3, 4} with f (a) = 4, f (b) = 2, f 
+(c) = 1, and f (d) = 3. Is f a bijection? 
+ 
+Solution: 
+The function f is one-to-one and onto. It is one-to-one because no two 
+values in the domain are assigned the same function value. It is onto 
+because all four elements of the codomain are images of elements in the 
+domain. Hence, f is a bijection. 
+ 

@@ -1,0 +1,29 @@
+rom an empty stack, the resulting condition is called an underflow. Error 
+checking for an underflow can be handled in different ways. One way is as shown previously. Or, we can 
+check for an underflow before calling the function pop, as shown next (assuming stack is an object of type 
+stackType).  
+  
+
+184  
+  
+if (!stack.isEmptyStack()) stack.pop();  
+ 
+5.2.7  Copy Stack  
+  
+The function copyStack makes a copy of a stack. The stack to be copied is passed as a parameter to the 
+function copyStack. We will, in fact, use this function to implement the copy constructor and overload the 
+assignment operator. The definition of this function is as follows:  
+  
+template <class Type>  
+void stackType<Type>::copyStack(const stackType<Type>& otherStack)  
+{  
+delete [] list;  
+maxStackSize = otherStack.maxStackSize; stackTop 
+= otherStack.stackTop;  
+  
+list = new Type[maxStackSize];  
+//copy otherStack into this stack  
+for (int j = 0; j < stackTop; j++)  
+list[j] = otherStack.list[j];  
+ 
+}

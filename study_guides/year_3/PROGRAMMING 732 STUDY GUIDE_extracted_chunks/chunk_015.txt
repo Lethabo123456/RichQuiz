@@ -1,0 +1,20 @@
+1.2.7 Radio Buttons  
+Radio buttons are supported by the JradioButton class. This is a concrete implementation of 
+AbstractButton. Its constructors are as follows:  
+  
+JRadioButton (Icon i)  
+JRadioButton (Icon i, Boolean state)  
+JRadioButton (string s)  
+JRadioButton (string s, Boolean state)  
+JRadioButton (string s, Icon i)  
+JRadioButton (String s, Icon i, boolean state)  
+  
+Where I is the icon for the button, the text is specified by s. If state is true, the button is initially selected. 
+Otherwise, it is not. The ButtonGroup class is instantiated to create a button group. Its default constructor 
+is involved for this purpose. The method used to add elements to the button group is:  
+
+Void add(AbstractButton ab)  
+  
+Where ab is a reference to the button to be added to the group.Radio button presses generate action 
+events that are handled by actionPerformed (). The getActionCommand ( ) method gets the text that is 
+associated with a radio button and uses it to set the text field. 

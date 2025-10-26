@@ -1,0 +1,33 @@
+= searchItem) found = true; 
+else current = current->link;  
+if (found) found = (current->info == searchItem);  //test for equality  
+return found;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end search  
+
+117  
+  
+  
+As in the case of the search function of the class unorderedLinkedList, the search function of the class 
+orderedLinkedList is also of O(n).  
+  
+ 
+3.4.2  Insert a Node  
+  
+To insert an item in an ordered linked list, we first find the place where the new item is supposed to go, 
+then we insert the item in the list. To find the place for the new item in the list, as before, we search the 
+list. Here we use two pointers, current and trailCurrent, to search the list. The pointer current points to 
+the node whose info is being compared with the itemto be inserted, and trailCurrent points to the node 
+just before current. Because the list is in order, the search algorithm is the same as before. The following 
+cases arise:  
+  
+Case 1:   
+The list is initially empty. The node containing t

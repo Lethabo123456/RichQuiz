@@ -1,0 +1,13 @@
+HP ’s echo() statement takes a string of text — in this case, “Hello, world!” — and sends it as part 
+of the Web page to the browser. The browser then displays the “ Hello, world! ” text to the visitor. 
+Notice the semicolon (;) at the end of the line; this tells PHP that you have reached the end of the 
+current statement, and it should look for a new statement (or the end of the PHP code) to follow. 
+echo() does not have to be a given string of text; it can display anything that can be displayed, such 
+as numbers or the results of expressions. An alternative to echo() is the print() statement, which 
+works in exactly the same way except that it also returns a value (true). Generally speaking, you can 
+use print() instead of echo() in your code if you prefer.  
+  
+The final line of your simple script tells the PHP engine that it has reached the end of the 
+current section of PHP code, and that the following lines (if any) contain plain HTML again: ? >  
+  
+1.5 Embedding PHP within HTML

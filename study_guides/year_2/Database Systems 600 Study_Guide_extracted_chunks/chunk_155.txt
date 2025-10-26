@@ -1,0 +1,12 @@
+es within the design. Therefore, 
+the database may have to sacrifice some of its “clean” design structures and high 
+transaction speed to ensure maximum information generation.  
+A design that meets all logical requirements and design conventions is an important goal. 
+However, if this perfect design fails to meet the customer’s transaction speed and information 
+requirements, the designer will not have done a proper job from the end user’s point of view.  
+Compromises are a fact of life in the real world of database design. Even while focusing on the 
+entities, attributes, relationships, and constraints, the designer should begin thinking about end-
+user requirements such as performance, security, shared access, and data integrity. The designer 
+must consider processing requirements and verify that all update, retrieval, and deletion options 
+are available. Finally, a design is of little value unless the end product can deliver all specified 
+query and reporting requirements. You will

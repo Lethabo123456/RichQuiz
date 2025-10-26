@@ -1,0 +1,32 @@
+2.6.1 System and Event Logs 
+Operating systems can detect and record nearly every significant system event or condition. 
+These records are stored in logs, which provide a detailed account of system activity. For 
+example, if your computer attempts to obtain an IP address from a DHCP server and doesn’t 
+receive a response, that failure can be logged. Similarly, when a firewall blocks a host’s attempt 
+to connect to a protected network device, a log entry can be created to record the denial. Each 
+operating system logs different types of events by default. However, network administrators 
+can customize logging settings to capture specific events of interest. For instance, a systems 
+engineer may wish to log an alert when the relative humidity in a data center exceeds 60%. If 
+the appropriate monitoring hardware is in place, this condition can be detected and logged 
+automatically. On Windows-based systems, these records are stored in event logs, which can be 
+viewed using the built-in Event Viewer application. Figure 2.7 shows an example of an event log 
+captured on a Windows 7 workstation. 
+ 
+Fig 2-7 Example of an event log 
+ 
+For Linux and UNIX systems, event logging is handled through the syslog system. Syslog is a 
+standardized protocol used for generating, storing, and managing event messages. It outlines: 
+• How events are detected and reported 
+• The format and content of event messages 
+• Roles for participating systems in the logging process 
+ 
+In a syslog setup, the device that detects and reports the event is called the generator, while 
+the system that receives and stores these messages is known as the collector. Syslog also 
+defines severity levels, ranging from: 
+
+0 – Emergency (system unusable) 
+7 – Debugging (low-level informational messages) 
+ 
+On most modern Linux systems, syslog messages are saved in files located in the /var/log/ 
+directory, with general system activity often recorded in /var/log/messages. 
+ 

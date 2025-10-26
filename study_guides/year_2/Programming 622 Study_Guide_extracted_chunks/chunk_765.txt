@@ -1,0 +1,22 @@
+ist[0] = 
+median; tempRoot->children[0] = root; tempRoot-
+>children[1] = rightChild; root = tempRoot;  
+
+376  
+  
+}  
+} //insert  
+  
+The function insertBTree recursively inserts an item into a B-tree. After inserting an item, it returns true if 
+the height of the tree is to be increased. If the root node is to be split, this function splits the root node, 
+sets isTaller to true, and sends the median key, median, and a pointer, rightChild, of the right child of 
+median to the function insert. The function insert adjusts the root of the B-tree. This function has five 
+parameters: current—a pointer to the B-tree in which to insert an item, insertItem—item to be inserted 
+in the B-tree, median—to return the median key, rightChild—pointer to the right child of median, and 
+isTaller—to indicate if the height of a B-tree is to be increased. In pseudocode, the algorithm is as follows:  
+  
+  
+if (current is NULL)  
+{  
+Either the B-tree is empty or the search ends at an empty subtree.  
+Set m

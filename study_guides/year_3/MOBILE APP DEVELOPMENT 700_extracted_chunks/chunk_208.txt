@@ -1,0 +1,25 @@
+This pattern is always used with custom dialogs. Each dialog needs a listener interface and associated 
+method, a constructor, an onCreateView method, and a call to the listener method. The call to the 
+listener method does not necessarily have to be in its own method, as it is here. Finally, the dialog 
+must be dismissed at the end of every code path in the DialogFragment. 
+Before the dialog can be tested, the code to present it and use its results must be implemented in the 
+activity that uses it. In this case, it is the MainActivity. Switch to or open the MainActivity.java class. 
+The following steps must be done in the exact order listed here or potential problems may occur. 
+
+1. Locate the class declaration and verify that it extends AppCompatActivity: publicclass 
+MainActivity extends AppCompatActivity. If it does not, change it to do so. 
+2. If the AppCompatActivity is red and a whole bunch of other errors show up in the code, place 
+your cursor in AppCompatActivity and press Alt + Enter; then select Import Class. This will import 
+the AppCompatActivity class from the android.support.v4.app library, which is a set of code that 
+provides objects to make some features in newer Android operating systems work in older 
+versions. 
+3. Add the words implements SaveDateListener after AppCompatActivity, so that the class 
+declaration is public class MainActivity extends AppCompatActivity implements SaveDateListener {. 
+4. The whole line will be highlighted in red. Click anywhere on the line and wait for a red light bulb 
+to display at the beginning of the line. Select the disclosure button on the light bulb to get to 
+the menu. In the menu, select Implement methods. Select didFinishDatePickerDialog (which 
+may already be selected) in the dialog window that opens up. Click OK. When an activity 
+implements a listener, it must implement the methods associated with the listener so that the 
+results may be used in the activity.
+5. Scroll down to the bottom of the MainActivity.java file. You should find the following code. If 
+not, delete your changes and repeat the previous steps.

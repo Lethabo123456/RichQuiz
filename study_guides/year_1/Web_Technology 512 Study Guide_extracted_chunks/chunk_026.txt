@@ -1,0 +1,22 @@
+t need any SCRIPT tags in 
+the external file. That is because they are already included in the HTML code. When 
+the browser parsers the HTML it sees the SRC attribute and then includes all your 
+JavaScript at that point. 
+ 
+When your code gets too long and unwieldy, placing it in an external file helps you to 
+control it more. Plus, if you need to make changes to the JavaScript you will only need 
+to amend one file, instead of making changes to the HEAD section of lots of HTML 
+files. 
+ 
+Exercise 2.1 
+Move your alert message to an external file. Make sure you get the file referencing 
+part right after the SRC attribute, otherwise your code would not run properly. 
+ 
+2.4 THE BROWSER OBJECT MODEL  
+ 
+All browsers are split into different parts (objects) 
+that can be accessed using JavaScript. Collectively, 
+these parts are known as the Browser Object 
+Model, or the BOM. At the very top of this 
+browser hierarchy is the Window object. This 
+represents the entire browser, with its toolbars

@@ -1,0 +1,18 @@
+ts the size of the search list by half. 
+(For example, see Figures 7-2 and 7-3.) Because 1024 = 210, the while loop will have, at most, 11 iterations 
+to determine whether x is in L. Because every iteration of the while loop makes two item (key) 
+comparisons, that is, x is compared twice with the elements of L, the binary search will make, at most, 22 
+comparisons to determine whether x is in L. On the other hand, recall that a sequential search on average 
+will make 512 comparisons to determine whether x is in L.  
+  
+To better understand how fast binary search is compared with sequential search, suppose that L is of size 
+1048576. Because 1048576 = 220, it follows that the while loop in a binary search will have at most 21 
+iterations to determine whether an element is in L. Every iteration of the while loop makes two key (that 
+is, item) comparisons. Therefore, to determine whether an element is in L, a binary search makes at most 
+42 item comparisons.  
+  
+ 
+
+263  
+  
+Note that 40

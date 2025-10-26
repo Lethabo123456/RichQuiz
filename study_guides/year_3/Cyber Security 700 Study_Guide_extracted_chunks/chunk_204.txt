@@ -1,0 +1,30 @@
+FIPS 199, Standards for Security Categorization of Federal Information and Information Systems, 
+provides a number of examples of qualitative impact assessment. For example, say that a law 
+enforcement organization managing extremely sensitive investigative information determines that 
+the potential impact from a loss of confidentiality is high, the potential impact from a loss of integrity 
+is moderate, and the potential impact from a loss of availability is moderate. The resulting security 
+category, SC, of this information type is expressed as: 
+
+SC investigative information = {(confidentiality, HIGH), (integrity, MODERATE), (availability, 
+MODERATE)}.
+ 
+Similarly, ranges of probability are assigned to qualitative likelihood categories. SP 800-100, 
+Information Security Handbook: A Guide for Managers, suggests the following categories: 
+    Low: ≤0.1 
+    Medium: 0.1 to 0.5 
+    High: 0.5 to 1.0 
+
+Another possible categorization is based on an estimate of the number of times per year an event 
+occurs: 
+    Low: <1 time per year 
+    Medium: 1 to 11 times per year 
+    High: >12 times per year 
+ 
+With these categories in mind, Figure 3.6 illustrates the use of 
+matrices to determine risk. The vulnerability to a particular threat is a function of 
+the capability, or strength, of the threat and the resistance strength 
+of a system or an asset to that particular threat. Then,
+the likelihood of an adverse security event causing a particular threat is a 
+function of the frequency, or likelihood, of the threat occurring and the vulnerability to that threat. 
+Impact is determined as a function of asset class and the exposure to loss that a particular threat 
+could cause. For example, assets can be classified in terms of the business impact of a loss.

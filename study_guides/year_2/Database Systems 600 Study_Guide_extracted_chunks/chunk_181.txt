@@ -1,0 +1,16 @@
+Summary/Review 
+ 
+In this chapter, you learned: 
+ 
+ Tables are the basic building blocks of a relational database. A grouping of related entities, 
+known as an entity set, is stored in a table.  
+ Keys are central to the use of relational tables. A key can be classified as a super-key, a 
+candidate key, a primary key, a secondary key, or a foreign key.  
+ Each table row must have a primary key. The primary key is an attribute or combination of 
+attributes that uniquely identifies all remaining attributes found in any given row.  
+ Although tables are independent, they can be linked by common attributes. Thus, the 
+primary key of one table can appear as the foreign key in another table to which it is linked.  
+ The relational model supports several relational algebra functions, including SELECT, 
+PROJECT, JOIN, INTERSECT, UNION, DIFFERENCE, PRODUCT, and DIVIDE. 
+Understanding the basic mathematical forms of these functions gives a broader 
+understanding of the data manipulation op

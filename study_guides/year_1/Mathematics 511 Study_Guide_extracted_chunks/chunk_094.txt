@@ -1,0 +1,24 @@
+1.5.3 Using Rules of Inference to Build Arguments 
+When there are many premises, several rules of inference are often needed 
+to show that an argument is valid. This is illustrated by the previous 
+examples, where the steps of arguments are displayed on separate lines, 
+with the reason for each step explicitly stated. These examples also show 
+how arguments in English can be analysed using rules of inference.
+
+Worked Example 
+Show that the premises “It is not sunny this afternoon and it is colder 
+than yesterday,” “We will go swimming only if it is sunny,” “If we do not 
+go swimming, then we will take a canoe trip,” and “If we take a canoe 
+trip, then we will be home by sunset” lead to the conclusion “We will be 
+home by sunset.” 
+Solution: 
+Let 𝑝 be the proposition “It is sunny this afternoon,” 𝑞 the proposition “It  
+is colder than yesterday,” 𝑟 the proposition “We will go swimming,” 𝑠 the 
+proposition “We will take a canoe trip,” and 𝑡 the proposition “We will be 
+ home by sunset.” Then the premises become 
+ ￢𝑝 ∧ 𝑞, 𝑟 → 𝑝, ￢𝑟 → 𝑠, and 𝑠 → 𝑡 .  
+
+The conclusion is simply 𝑡 . We need to give a valid argument with 
+premises ￢𝑝 ∧ 𝑞, 𝑟 → 𝑝, ￢𝑟 → 𝑠, and 𝑠 → 𝑡 and conclusion. We 
+construct an argument to show that our premises lead to the desired 
+conclusion as follows. 

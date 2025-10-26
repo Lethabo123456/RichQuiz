@@ -1,0 +1,35 @@
+class unorderedLinkedList. (Note that the functions divideList, merge, and recMergeSort can be 
+included as private members of the class unorderedLinkedList because these functions are used only to 
+implement the function mergeSort.) The function mergeSort calls the function recMergeSort and passes 
+first to this function. It also sets last to point to the last node of the list. The definition of the function 
+mergeSort is as follows:  
+  
+template<class Type>  
+void unorderedLinkedList<Type>::mergeSort()  
+{  
+recMergeSort(first);  
+  
+if (first == NULL) 
+last = NULL; else  
+{  
+last = first;  
+while (last->link != NULL) last 
+= last->link;  
+}  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end mergeSort  
+  
+We leave it as an exercise for you to write a program to test mergesort.   
+  
+ 
+8.8.3  Analysis: Mergesort  
+  
+Suppose that L is a list of n elements, where n> 0. Suppose that n is a power of 2, that is, n = 2m  for some 
+nonnegative integer m, so that we can divide the list into two sublists,

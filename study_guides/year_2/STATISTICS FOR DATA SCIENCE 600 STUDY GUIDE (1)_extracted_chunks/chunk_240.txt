@@ -1,0 +1,25 @@
+an clearly see that there is no perfect line between these dots! The model 
+will then find the best fit line possible. How? We can draw infinite lines between the data 
+points, but what makes a line the best? Consider the following diagram: 
+  
+                                                
+ 
+  
+In our model, we are given the x and the y, and the model learns the Beta coefficients, also 
+known as model coefficients:  
+• The black dots are the observed values of x and y.  
+• The blue line is our line of best fit.  
+
+P a g e  | 143 
+ 
+• The red lines between the dots and the line are called the residuals; they are the 
+distances between the observed values and the line. 
+•  They are how wrong the line is. 
+  
+Each data point has a residual, or a distance to the line of best fit. The sum of squared residuals 
+is the summation of each residual squared. The best fit line has the smallest sum of squared 
+residual value.  
+   
+Implementation of the linear regression model in Python 
+  
+# cr

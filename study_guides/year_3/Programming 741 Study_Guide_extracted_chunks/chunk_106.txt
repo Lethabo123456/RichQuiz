@@ -1,0 +1,46 @@
+4.2 Access modifiers 
+ 
+All types and type members have an accessibility level. The accessibility level controls whether 
+they can be used from other code in your assembly or other assemblies. an assembly is 
+a .dll or .exe created by compiling one or more .cs files in a single compilation. Use the 
+following access modifiers to specify the accessibility of a type or member when you declare 
+it: 
+
+• public: Code in any assembly can access this type or member. The accessibility level 
+of the containing type controls the accessibility level of public members of the type. 
+• private: Only code declared in the same class or struct can access this member. 
+
+Note
+Don’t confuse the terms class and object. A class is the definition of a type. An object is an instance 
+of that type created when the program runs. Several different objects can be instances of the same 
+class. 
+  
+Note
+The var keyword in C# is a type inference feature that tells the compiler to determine the type of a 
+variable based on the value assigned to it: 
+
+• protected: Only code in the same class or in a derived class can access this type or 
+member. 
+• internal: Only code in the same assembly can access this type or member. 
+• protected internal: Only code in the same assembly or in a derived class in another 
+assembly can access this type or member. 
+• private protected: Only code in the same assembly and in the same class or a derived 
+class can access the type or member.
+
+In C#, the default access modifier for top-level classes and structs (not nested within other 
+classes) is "internal"; meaning if you don't explicitly specify an access modifier, members will 
+be accessible only within the same assembly. Normally, the data members are defined to have 
+a private access. This enables the class to protect the data and allow access to the data only 
+through the class member methods or properties. 
+ 
+Example 3-3 Access Modifiers 
+public class Student 
+{ 
+private string studentNumber; 
+protected internal string studentLastName; 
+private protected string studentFirstName; 
+int score1; 
+public int score2; 
+protected int score3; 
+internal string major; 
+}

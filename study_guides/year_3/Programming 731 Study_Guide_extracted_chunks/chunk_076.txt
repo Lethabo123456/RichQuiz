@@ -1,0 +1,7 @@
+The Scope and Lifetime of Variables    
+So far, all of the variables used have been declared at the start of the main( ) method.However, Java 
+allows variables to be declared within any block. As explained in lesson 2, a block is begun with an 
+opening curly brace and ended by a closing curly brace. A block defines a scope. Thus, each time   
+you start a new block, you are creating a new scope. As you probably know from your previous 
+programming experience, a scope determines what objects are visible to other parts of your 
+program. It also determinesthe lifetime of those objects.

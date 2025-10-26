@@ -1,0 +1,35 @@
+Star 
+ 
+Star topology, sometimes called a hub or centralized topology, is a traditional approach to 
+interconnecting devices in which all transmitted data must pass through a central controller 
+when going from sender to a receiver. For example, as shown in Figure 6.1, host 1 can communicate 
+with host 5 directly via the central controller. 
+ 
+Figure 6.1 
+ 
+Figure 6.1 shows a Star topology. Hosts are connected to each other through a central controller, 
+which assumes all responsibility for routing messages to the appropriate host. Data flow between the 
+hosts and the central controller is represented by dotted lines. Direct host-to-host communication is 
+not permitted. 
+Star topology permits easy routing because the central station knows the path to all other sites. Also, 
+because there is a central control point, access to the network can be controlled easily, and 
+priority status can be given to selected sites. However, this centralization of control requires that the 
+central site be reliable and able to handle all network traffic, no matter how heavy. 
+ 
+Ring 
+ 
+In the ring topology, all sites are connected to each other in a closed loop, with the first site connected 
+to the last. As shown in Figure 6.2, for example, Host 1 can communicate with Host 5 by way of 
+Hosts 2, 3, and 4. A ring network can connect to other networks via the bridge or gateway, depending 
+on the protocol used by each network. The protocol is the specific set of rules used to control 
+the flow of messages through the network. If the other network has the same protocol, then a 
+bridge is used to connect the networks. If the other network has a different  
+protocol, a gateway is used. 
+ 
+Figure 6.2 
+ 
+Figure 6.2 shows a double loop computer network using a ring topology. Packets of data flow in both 
+directions. 
+Although ring topologies share the disadvantage that every node must be functional for the network 
+to perform properly, rings can be designed that allow failed nodes to be bypassed critical 
+consideration for network stability. 

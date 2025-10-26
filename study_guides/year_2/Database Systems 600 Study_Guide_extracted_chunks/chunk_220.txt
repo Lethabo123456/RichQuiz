@@ -1,0 +1,13 @@
+ught by only one staff member.  
+Fourth Normal Form (4NF) 
+You might encounter poorly designed databases, or you might be asked to convert spreadsheets into 
+a database format in which multiple multivalued attributes exist.  
+There is a problem with the tables in Figure 6.11. The attributes ORG_CODE and ASSIGN_NUM 
+each may have many different values. In normalization terminology, this situation is referred to as 
+a multivalued dependency, which occurs when one key determines multiple values of two other 
+attributes and those attributes are independent of each other.  
+The presence of a multivalued dependency means that if table versions 1 and 2 are implemented, 
+the tables are likely to contain quite a few null values; in fact, the tables do not even have a viable 
+candidate key. Such a condition is not desirable, especially when there are thousands of employees, 
+many of whom may have multiple job assignments and many service activities. Version 3 at least 
+has a PK, but it is compos

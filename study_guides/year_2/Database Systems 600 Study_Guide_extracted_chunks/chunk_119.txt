@@ -1,0 +1,11 @@
+ystem catalogue can be described as a detailed system data dictionary that describes all 
+objects within the database, including data about table names, table’s creator and creation date, 
+number of columns in each table, data type corresponding to each column, index filenames, index 
+creators, authorized users, and access privileges. 
+Current relational database software generally provides only a system catalogue, from which the 
+designer’s data dictionary information may be derived. The system catalogue is a system-created 
+database whose tables store the user/designer-created database characteristics and contents. 
+Therefore, the system catalogue tables can be queried just like any user/ designer-created table.  
+In effect, the system catalogue automatically produces database documentation. As new tables are 
+added to the database, that documentation also allows the RDBMS to check for and eliminate 
+homonyms and synonyms. In a database context, the word homonym indicates the use of

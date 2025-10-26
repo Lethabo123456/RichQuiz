@@ -1,0 +1,16 @@
+being able to predict a value from historical data is a worthwhile skill to have at your disposal. 
+Simple linear regression plots an independent variable (the predictor) against a dependent 
+variable (criterion variable).  
+
+P a g e  | 29 
+ 
+A good example uses the two commonly used temperature scales, Fahrenheit and Celsius, 
+because there's a relationship between the two. It's illustrated with the following regression 
+equation: 
+𝐹𝑎ℎ𝑟𝑒𝑛ℎ𝑒𝑖𝑡= 1.8𝑥+ 32 
+Say we have a temperature reading of 28 Celsius. To find the Fahrenheit reading, we multiply 
+28 by 1.8 and add 32. The answer is 82.4f. You can generate your own linear regression 
+calculations easily either by using a spreadsheet or by using a library. In this example, we're 
+going to use the comma-separated value and generate a simple linear regression by using an 
+application. The data is comprised of two sets of scores from a competition (see Figure 3.1). 
+With the scores of the first judge, is it possible to reliably predict the

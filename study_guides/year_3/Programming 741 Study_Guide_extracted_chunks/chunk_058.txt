@@ -1,0 +1,23 @@
+1.7 Iteration Statements 
+C# provides an extensive suite of iteration statements, including for, while and do while loops, 
+as well as foreach loops. In addition, C# supports the goto, break, continue, and return jump 
+statements. 
+ 
+1.7.1 The goto statement 
+The goto statement is the seed from which all other iteration statements have been 
+germinated. Unfortunately, it is a semolina seed, producer of spaghetti code and endless 
+confusion. Most experienced programmers properly shun the goto statement, but in the 
+interest of completeness, here's how you use it: 
+
+1. Create a label. 
+2. goto that label. 
+The label is an identifier followed by a colon. The goto command is typically tied to a 
+condition, as illustrated in Example 1-10. 
+ 
+Example 1-10 Goto Statement 
+ 
+If you were to try to draw the flow of control in a program that makes extensive use of goto 
+statements, the resulting morass of intersecting and overlapping lines looks like a plate of 
+spaghetti; hence the term "spaghetti code." It was this phenomenon that led to the creation 
+of alternatives, such as the while loop. Many programmers feel that using goto in anything 
+other than a trivial example creates confusion and difficult-to-maintain code. 

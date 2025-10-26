@@ -1,0 +1,27 @@
+array is as shown in Figure 6-2.  
+  
+  
+FIGURE 6-2 Queue after two more addQueue operations  
+  
+Now consider the deleteQueue operation:  
+ deleteQueue();  
+  
+After this operation, the array containing the queue is as shown in Figure 6-3.  
+  
+  
+FIGURE 6-3 Queue after the deleteQueue operation  
+  
+Will this queue design work? Suppose A stands for adding (that is, addQueue) an element to the queue, 
+and D stands for deleting (that is, deleteQueue) an element from the queue. Consider the following 
+sequence of operations:  
+  
+AAADADADADADADADA...  
+  
+This sequence of operations would eventually set the index queueRear to point to the last array position, 
+giving the impression that the queue is full. However, the queue has only two or three elements and the 
+front of the array is empty. (See Figure 6-4.)  
+  
+  
+FIGURE 6-4 Queue after the sequence of operations AAADADADADADA...  
+  
+One solution to this problem is that when the queue overflows to the rear (that is, queueRear point

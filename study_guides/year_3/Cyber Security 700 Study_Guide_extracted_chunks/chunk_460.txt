@@ -1,0 +1,43 @@
+5.6 Electronic Communications 
+ 
+Often the focus of enterprise security is protecting stored information and server facilities, as well as 
+client/server communication from the wide variety of threats on the landscape. It is important not to 
+overlook security related to electronic communications that may not involve server or database access 
+but that is between individuals. This section looks at four types of electronic communications that 
+need to be protected.
+
+Email 
+
+It is useful to have a basic grasp of the Internet mail architecture, as 
+defined in RFC 5598, Internet Mail Architecture. At its most fundamental level, the Internet 
+mail architecture consists of a user world, in the form of message user 
+agents (MUAs), and a transfer world, in the form of the Message Handling System (MHS), which is 
+composed of message transfer agents (MTAs). The MHS accepts a message from one user and 
+delivers it to one or more other users, creating a virtual MUA-to-MUA exchange environment. This 
+architecture involves three types of interoperability. One is directly between users: 
+Messages must be formatted by the MUA on behalf of the message author so that the message are 
+displayed to the message recipient by the destination MUA. There are also interoperability requirements 
+between the MUA and the MHS—first when a message is posted from an MUA to the MHS and later when it is delivered from the MHS to the 
+destination MUA. Interoperability is required among the MTA components along the transfer path 
+through the MHS.
+
+The key components include the following: 
+ Message user agent (MUA): The MUA operates on behalf of user actors and user applications. 
+It is their representative within the email service. Typically, this function is housed in the user’s 
+computer and is referred to as a client email program or a local network email server. The 
+author MUA formats a message and performs initial submission into the MHS via a MSA. The 
+recipient MUA processes received mail for storage and/or display to the recipient user.
+ Mail submission agent (MSA): The MSA accepts the message submitted by an MUA and 
+enforces the policies of the hosting domain and the requirements of Internet standards. This 
+function is either located together with the MUA or as a separate functional model. In the 
+latter case, Simple Mail Transfer Protocol (SMTP) is used between the MUA and the MSA. 
+ Message transfer agent (MTA): The MTA relays mail for one application-level hop. It is like a 
+packet switch or an IP router in that its job is to make routing assessments and to move the 
+message closer to the recipients. Relaying is performed by a sequence of MTAs until the 
+message reaches a destination MDA. An MTA also adds trace information to the message 
+header. SMTP is used between MTAs and between an MTA and an MSA or MDA. 
+ Mail delivery agent (MDA): The MDA is responsible for transferring the message from the MHS 
+to the MS, using SMTP. 
+ Message store (MS): The MUA employs a long-term MS, located on a remote server or on the 
+same machine as the MUA. Typically, an MS retrieves messages from a remote MS using POP 
+(Post Office Protocol) or IMAP (Internet Message Access Protocol).

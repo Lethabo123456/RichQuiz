@@ -1,0 +1,34 @@
+So the 
+function addQueue is as follows:  
+  
+template <class Type>  
+void queueType<Type>::addQueue(const Type& newElement)  
+{  
+if (!isFullQueue())  
+{  
+queueRear = (queueRear + 1) % maxQueueSize; //use the  
+//mod operator to advance queueRear  
+//because the array is circular count++;  
+list[queueRear] = newElement;  
+}  
+else cout << "Cannot add to a full queue." << endl;  
+} //end addQueue  
+  
+ 
+6.2.6  Delete Queue  
+  
+To implement the deleteQueue operation, we access the index queueFront. Because queueFront points 
+to the array position containing the first element of the queue, to remove the first queue element, we 
+decrement count by 1 and advance queueFront to the next queue element. So the function deleteQueue 
+is as follows:  
+  
+template <class Type>  
+void queueType<Type>::deleteQueue()  
+{  
+if (!isEmptyQueue())  
+{ count--;  
+queueFront = (queueFront + 1) % maxQueueSize; //use the  
+//mod operator to advance queueFront  
+//because the array is circular  
+}  
+else c

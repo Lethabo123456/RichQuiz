@@ -1,0 +1,20 @@
+rmat( 1234567.89, 1 ); // Displays “1,234,567.9”  
+  
+Finally, you can change the characters used for the decimal point and thousands separator by 
+passing two more optional arguments. For example, the following code formats the number using 
+the French convention of a comma for the decimal point and a space for the thousands separator:  
+  
+echo number_format( 1234567.89, 2, “,”, “ “ ); // Displays “1 234 567,89”  
+  
+You can pass empty strings for either of these two parameters, so you can format a number with no 
+thousands separators if you like:  
+  
+echo number_format( 1234567.89, 2, “.”, “” ); // Displays “1234567.89”  
+  
+  
+  
+4.14 Unit Summary  
+In this unit you explored strings in PHP, and looked at some of the functions that you can use to 
+manipulate strings. You learned how to create string literals within your PHP code by using single 
+and double quotation marks as well as the heredoc and nowdoc syntaxes. You also learnt how to 
+find the length of a string, as well as cou

@@ -1,0 +1,39 @@
+7.9. Security Management 
+Windows operating systems provide an object-based security model. That is, a security object can 
+represent any resource in the system: a file, device, process, program, or user. This allows system 
+administrators to give precise security access to specific objects in the system while allowing them 
+to monitor and record how objects are used. 
+One of the most important tasks for those managing Windows operating systems is the need for 
+aggressive patch management to combat the many viruses and worms that target these systems. 
+Updates can be scheduled using the Windows Update option, as shown in Figure 7.6. 
+ 
+Security Concerns 
+ 
+Because Windows is so widely used, it is a favorite target for system intruders. Therefore, Windows 
+operating systems include several important security features. The first is a secure logon facility that 
+requires users to identify themselves by entering a unique logon identifier and a password before 
+they are allowed access to the system. To move access control beyond the keyboard, biometric 
+identification is available on some systems, as well as built-in options for creating and using 
+graphic passwords. 
+
+Figure 7.6 
+
+To protect data at the data structure level, such as in registers, which are released by users when a 
+thread or process is completed, a memory protection system thoroughly erases all remaining content 
+before the structure is allocated to the next user. 
+
+Device access is also carefully managed. Discretionary access control allows an administrator to 
+determine who can access each resource and what they can do to it. In addition, it allows auditing 
+capabilities so that administrators can detect and record important security-related events, or any 
+attempt to create, access, or delete system resources. 
+
+A second layer of security deals with file access security. At this level, the administrator can create a 
+file and establish various combinations of individuals to have access to it because the operating 
+system makes distinctions between owners and groups. The creator of a file is its owner. The owner 
+can designate a set of users as belonging to a group and allow all the members of the group to have 
+access to that file. Conversely, the owner could prevent some of the members from accessing that 
+file. In addition to determining the users who are permitted to access a file, administrators can decide 
+what type of operations each user is allowed to perform on a file. For example, one may have read- 
+only access, while another may have read-and-write privileges. As a final measure, the operating 
+system gives the administrator auditing capabilities that automatically keep track of who uses files 
+and how the files are used. 

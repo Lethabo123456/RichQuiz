@@ -1,0 +1,22 @@
+One advantage of a packet filtering firewall is its simplicity. Also, packet filters typically are transparent 
+to users and are very fast. However, packet filters have the following weaknesses: 
+
+ Because packet filtering firewalls do not examine upper-layer data, they cannot prevent 
+attacks that employ application-specific vulnerabilities or functions. For example, if a packet 
+filtering firewall cannot block specific application commands and if a packet filtering firewall 
+allows a given application, all functions available within that application are permitted. 
+ Because of the limited information available to the firewall, the logging functionality present 
+in packet filtering firewalls is limited. Packet filter logs normally contain the same information 
+used to make access control decisions (source address, destination address, and traffic type). 
+ Most packet filtering firewalls do not support advanced user authentication schemes. Once 
+again, this limitation is mostly due to the lack of upper-layer functionality in the firewall. 
+ Packet filtering firewalls are generally vulnerable to attacks and exploits that take advantage 
+of problems within the TCP/IP specification and protocol stack, such as network layer address 
+spoofing. Many packet filtering firewalls cannot detect a network packet in which the OSI 
+Layer 3 addressing information was altered. Spoofing attacks are generally employed by 
+intruders to bypass the security controls implemented in a firewall platform. 
+ Finally, due to the small number of variables used in access control decisions, packet filtering 
+firewalls are susceptible to security breaches caused by improper configurations. In other 
+words, it is easy to accidentally configure a packet filtering firewall to allow traffic types, 
+sources, and destinations that should be denied based on an organization’s information 
+security policy. 

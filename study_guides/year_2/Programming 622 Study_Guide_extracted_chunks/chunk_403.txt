@@ -1,0 +1,85 @@
+expression. The definition of 
+this function is as follows:  
+  
+void evaluateExpression(ifstream& inpF, ofstream& outF, stackType<double>& 
+stack,  
+char& ch, bool& isExpOk)  
+{  
+double num;  
+outF << ch;  
+  
+while (ch != '=')  
+{  
+switch (ch)  
+{  
+case '#':  
+inpF >> num; outF 
+<< num << " ";  
+if (!stack.isFullStack()) 
+stack.push(num); else  
+{  
+cout << "Stack overflow. "<< "Program terminates!" << endl;  
+ 
+exit(0);   
+  
+  
+//terminate the program  
+}  
+break; default:  
+evaluateOpr(outF, stack, ch, isExpOk);  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end switch  
+ 
+if (isExpOk)     
+  
+  
+  
+  
+//if no error  
+{ inpF >> ch; outF 
+<< ch; if 
+(ch != '#')  
+outF << " ";  
+}  
+else discardExp(inpF, outF, ch);  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end while (!= '=')  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//end evaluateExpression  
+  
+Note that the funtion exit terminates the program.  
+  
+
+204  
+  
+ 
+ 
+ 
+ 
+5.4.3  Function evaluateOpr  
+  
+This function (if possible) evaluates an expression. Two operands

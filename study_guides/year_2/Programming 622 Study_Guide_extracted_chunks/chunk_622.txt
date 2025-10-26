@@ -1,0 +1,10 @@
+that is, n = 2m  for some 
+nonnegative integer m, so that we can divide the list into two sublists, each of size n / 2 = 2m / 2 = 2m-1. 
+Moreover, each sublist can also be divided into two sublists of the same size. Each call to the function 
+recMergeSort makes two recursive calls to the function recMergeSort and each call divides the sublist into 
+two sublists of the same size. Suppose that m = 3, that is, n = 23 = 8. So the length of the original list is 8. 
+The first call to the function recMergeSort divides the original list into two sublists, each of size 4. The first 
+call then makes two recursive calls to the function recMergeSort. Each of these recursive calls divides each 
+sublist, of size 4, into two sublists, each of size 2. We now have 4 sublists, each of size 2. The next set of 
+recursive calls divides each sublist, of size 2, into sublists of size 1. So we now have 8 sublists, each of size 
+1. It follows that the exponent 3 in 23 indicates the level of the recursion, as s

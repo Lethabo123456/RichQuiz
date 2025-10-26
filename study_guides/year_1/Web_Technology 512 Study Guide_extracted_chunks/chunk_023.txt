@@ -1,0 +1,28 @@
+ox 
+A prompt box is used when you want some input from the user. The code for a Prompt 
+box is this: 
+prompt("Favourite Colour?", "Red") 
+ 
+The prompt box has two parts between the round brackets. The first part is the 
+heading, while the second part is some default text. Figure 2.7 below shows what they 
+look like in a browser: 
+ 
+ 
+Figure 2.7 – Prompt box 
+A user can enter some text in the text box. When the OK button is clicked you can get 
+at the text the user entered and do something with it. You will see how to do this in 
+the IF Statements section. 
+ 
+For both confirm and prompt boxes lowercase letters are used. 
+ 
+2.3 JAVASCRIPT TAG PLACEMENT  
+ 
+In JavaScript, SCRIPT tags can be inserted into three places: in between the two BODY 
+tags, in between the two HEAD tags, and as a link to an external file, also in the HEAD 
+section. Some advocate putting the SCRIPT tags in the BODY section, right at the end 
+as shown in Figure 2.8 below: 
+
+ 
+19 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BRO

@@ -1,0 +1,21 @@
+wind-chill factor. Figure 9.4 shows how to use expertsystem rules in 
+determining whether a person should receive a mortgage loan from a bank. These rules can be 
+placed in almost any standard program language discussed using ‘IF-THEN’ statements or into 
+special expert systems shells, dis- cussed later in the chapter. In general, as the number of rules 
+that an expert system knows increases, the precision of the expert system also increases.  
+
+  
+ 
+ 
+80  
+ ■ Cases. An expert system can use cases in developing a solution to a current problem or 
+situation. This process involves (1) finding cases stored in the knowledge base that are similar 
+to the problem or situation at hand, and (2) modifying the solutions to the cases to fit or 
+accommodate the current problem or situation.  
+Figure 3.4 Rules for a Credit Application   
+  
+  
+  
+The Inference Engine  
+ The overall purpose of an inference engine is to seek information and relationships from the 
+knowledge base and to provide answer

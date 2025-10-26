@@ -1,0 +1,66 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks;
+ 
+namespace Values 
+{ 
+public class Time 
+{ 
+    // public accessor methods 
+    public void DisplayCurrentTime( ) 
+    { 
+       Console.WriteLine ("{0} /{1} /{2} {2} :{4} :{5} ", Month, Date, Year, Hour, Minute, Second); 
+       Console.ReadLine(); 
+    } 
+     // constructors 
+     public Time (System.DateTime dt) { 
+ 
+          Year = dt . Year;  
+          Month = dt .Month; 
+          Date =   dt. Day; 
+          Hour =   dt . Hour; 
+          Minute = dt.Minute; 
+          Second = dt. Second; 
+   
+     } 
+     public Time (int Year, int Month, int Date, int Hour, int Minute, int Second) { 
+     
+              this.Year =  Year; 
+              this.Month = Month; 
+              this.Date =  Date; 
+              this.Hour =   Hour; 
+              this.Minute = Minute; 
+              this.Second =  Second; 
+    } 
+// private member variables private int Year; 
+      private int Month; 
+      private int Year; 
+      private int Date; 
+      private int Hour; 
+      private int Minute; 
+      private int Second; 
+ } 
+ public class Tester{ 
+ 
+  static void Main( ){ 
+ 
+      DateTime currentTime = System.DateTime.Now; 
+      Time t = new Time(currentTime); t. DisplayCurrentTime ( ); 
+      Time t2 = new Time(2005,11,18,11,02,20); t2 . DisplayCurrentTime ( ); 
+    } 
+  } 
+} 
+
+As you can see, the Time class in Example 1-9 has two constructors. If a function's signature 
+consisted only of the function name, the compiler would not know which constructors to call 
+when constructing t 1 and t2. However, because the signature includes the function argument 
+types, the compiler is able to match the constructor call for t1 with the constructor whose 
+signature requires a DateTime object. Likewise, the compiler is able to associate the t2 con-
+structor call with the constructor method whose signature specifies six integer arguments. 
+When you overload a method, you must change the signature (i.e., the name, number, or 
+type of the parameters). You are free, as well, to change the return type, but this is optional. 
+Changing only the return type does not overload the method, and creating two methods with 
+the same signature but differing return types will generate a compile error. This is illustrated 
+in Example 1-10:

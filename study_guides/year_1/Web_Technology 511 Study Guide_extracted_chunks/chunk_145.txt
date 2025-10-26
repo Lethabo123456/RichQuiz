@@ -1,0 +1,28 @@
+The following table lists the values and functions that you can assign to the TYPE 
+attribute. 
+
+Value           Description
+--------------------------------------------------------------------------------
+Button          Defines a clickable button (mostly used with a JavaScript to 
+                activate a script) 
+--------------------------------------------------------------------------------
+Checkbox        Defines a checkbox 
+--------------------------------------------------------------------------------
+Color           Defines a color picker 
+--------------------------------------------------------------------------------
+Date            Defines a date control (year, month and day (no time)) 
+-----------------------------------------------------------------------------------
+Email           Defines a field for an e-mail address 
+-----------------------------------------------------------------------------------
+Text            Default. Defines a single-line text field (default width is 20 
+                characters) 
+-----------------------------------------------------------------------------------
+submit          Defines a submit button 
+-----------------------------------------------------------------------------------
+Reset           Defines a reset button (resets all form values to default values)
+----------------------------------------------------------------------------------- 
+Radio           Defines a radio button 
+-----------------------------------------------------------------------------------
+Password        Defines a password field (characters are masked) 
+-----------------------------------------------------------------------------------
+

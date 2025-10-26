@@ -1,0 +1,14 @@
+name at the top of the table to identify it; this is known as the field 
+name or column name .   
+   
+4.8 Using Indexes And Keys   
+Inexperienced database designers sometimes complain about their database engines being slow — a 
+problem that is often explained by the lack of an index . An index is a separate sorted list of the 
+values in a particular column (or columns) in a table. Indexes are also often called keys; the two 
+words are largely interchangeable. You can optionally add indexes for one or more columns at the 
+time you create the table, or at any time after the table is created.   
+   
+To explain why indexing a table has a dramatic effect on database performance, first consider a table 
+without indexes. Such a table is similar to a plain text file in that the database engine must search it 
+sequentially. Rows in a relational database are not inserted in any particular order; the server inserts 
+them in an arbitrary manner. To make sure it finds all entries matching the info

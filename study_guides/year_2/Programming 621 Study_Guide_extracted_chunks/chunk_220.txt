@@ -1,0 +1,17 @@
+is derived 
+from the class rectangleType, and it is a public inheritance. Therefore, all public 
+members of the class rectangleType are public members of the class boxType. The 
+class boxType also overrides (redefines) the functions print and area. 
+ 
+In general, while writing the definitions of the member functions of a derived class to 
+specify a call to a public member function of the base class, we do the following: ? If 
+the derived class overrides a public member function of the base class, then to specify 
+a call to that public member function of the base class, you use the name of the base 
+class, followed by the scope resolution operator, ::, followed by the function name with 
+the appropriate parameter list. For example, to call the function area of the class 
+rectangleType the statement is: rectangleType::area(). 
+ 
+To call the member function print of rectangleType in the definition of the member 
+function print of boxType, we must use the following statement:  
+
+202 | P a

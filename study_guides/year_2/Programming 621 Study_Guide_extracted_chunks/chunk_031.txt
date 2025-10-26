@@ -1,0 +1,30 @@
+1.5 PROCESSING A C++ PROGRAM 
+ 
+To execute on a computer, these C++ instructions first need to be translated into 
+machine language. A program called a compiler translates instructions written in high-
+level languages into machine code.  
+Compiler: A program that translates instructions written in a high-level language into 
+the equivalent machine language. 
+ 
+Consider the following C++ program:  
+#include <iostream> 
+ using namespace std;  
+int main() 
+ { 
+ cout << "My first C++ program." << endl; 
+ return 0;   
+} 
+ 
+At this point, you need not be too concerned with the details of this program. However, 
+if you run (execute) this program, it will display the following line on the screen:  
+ 
+My first C++ program 
+ 
+Recall that a computer can understand only machine language. Therefore, in order to 
+run this program successfully, the code must first be translated into machine language. 
+In this section, we review the steps required to execute programs written in C++ 
+ 
+The following steps, as shown in Figure 1-2, are necessary to process a C++ program. 
+
+The following steps, as shown in Figure 1-2, are necessary to process a 
+C++ program. 

@@ -1,0 +1,31 @@
+Major NOS Functions 
+ 
+An important NOS function is to let users transfer files from one computer to another. In this case, 
+each system controls and manages its own file system. For example, the Internet allows the use of 
+the file transfer protocol (FTP). With FTP, students in a UNIX programming class can copy a data file 
+from a campus computer to their laptops. To do this, each student begins by issuing something like 
+the following command to create the FTP connection: 
+ftp unixs.cis.pitt.edu 
+ 
+This opens the FTP program, which then asks the student for a login name and password. Once 
+this information has been verified by the UNIX operating system, each student is granted permission 
+to copy the file from the host computer. 
+get filename.ext 
+ 
+In this example, filename.ext is the absolute filename and extension of the required data file. That 
+means the user must know exactly where the file is in which directory and subdirectory the file is 
+stored. This is because the file location is not necessarily transparent to the user. 
+ 
+DO/S Development 
+ 
+Because a DO/S manages the entire group of resources within the network in a global fashion, 
+resources are allocated based on negotiation and compromise among equally important peer sites in 
+the distributed system. One advantage of this type of system is its ability to support file copying, 
+electronic mail, and remote printing, without requiring the user to install special server software on 
+local machines. See Figure 6.10 for a Windows menu that allows the user to identify valid network 
+connections. 
+ 
+Figure 6.10 
+ 
+Figure 6.10 Using a Windows 10 operating system, the user can personalize available network 
+communications by using the Settings menu. 

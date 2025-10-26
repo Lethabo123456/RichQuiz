@@ -1,0 +1,20 @@
+Here’s an example that sorts a list of authors alphabetically in ascending order, and then in 
+descending order:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+// Displays “Array ( [0] = > Dickens [1] = > Kafka [2] = > Steinbeck [3] = > Tolkien )” 
+sort( $authors );  
+print_r( $authors );  
+  
+// Displays “Array ( [0] = > Tolkien [1] = > Steinbeck [2] = > Kafka [3] = > Dickens )” 
+rsort( $authors );  
+print_r( $authors );  
+  
+5.14 Sorting Associative Arrays With asort() and arsort()  
+Take another look at the previous sort() and rsort() code examples. Notice how the values in the 
+sorted arrays have different keys from the values in the original array. For example, “ Steinbeck ” 
+has an index of 0 in the original array, 2 in the second array, and 1 in the third array. The sort() and 
+rsort() functions are said to have reindexed the original array.  
+  
+For indexed arrays, this is usually what you want to happen: you need the elements to appear in 
+the correct o

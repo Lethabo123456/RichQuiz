@@ -1,0 +1,25 @@
+1.8 Python Implementation 
+Sorting Data: Sorting the results helps in easily identifying the median. 
+Using NumPy for Calculations: NumPy. Mean and NumPy. Median functions are used to 
+calculate the mean and median, respectively. However, as discussed, the mean may not be 
+the best measure for ordinal data. 
+  
+EXAMPLE 
+Imagine you have conducted a survey among your employees asking "how happy 
+are you to be working here on a scale from 1-5", and your results are as follows: 
+5, 4, 3, 4, 5, 3, 2, 5, 3, 2, 1, 4, 5, 3, 4, 4, 5, 4, 2, 1, 4, 5, 4,3, 2, 4, 4, 5, 4, 3, 2, 1 
+Let's use Python to find the median of this data. It is worth noting that most people 
+would argue that the mean of these scores would work just fine. The reason that 
+the mean would not be as mathematically viable is because if we subtract/add two 
+scores, say a score of four minus a score of two, the difference of two does not really mean 
+anything. If addition/subtraction among the scores doesn't make sense, the mean won't make 
+sense either. 
+import numpy 
+results = [5, 4, 3, 4, 5, 3, 2, 5, 3, 2, 1, 4, 5, 3, 4, 4, 5, 4, 2, 1, 4, 5, 4, 3, 2, 4, 4, 5, 4, 3, 2, 1] 
+sorted_results = sorted(results) 
+print sorted_results 
+''' 
+[1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5] 
+''' 
+print numpy.mean(results) # == 3.4375 
+print numpy.median(results) # == 4. 

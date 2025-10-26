@@ -1,0 +1,36 @@
+Get Coordinates from the Map 
+ 
+Return to activity_contact_map.xml and delete all the widgets you put in the layout except the navbar. 
+Be sure to leave the root ConstraintLayout. 
+
+Next, add a MapFragment. The MapFragment is not available in the Palette, so it 
+must be added through XML. Switch to Text view and refer to Listing 7.10 to do this. 
+Android versus iOS: 
+
+Maps Setting up your app project and development environment for using maps is significantly more difficult 
+in Android than it is in Xcode. In Xcode, in contrast to what you’ve seen in this chapter, all you need 
+to do is include the MapKit Framework in the project and you are ready to go. However, you will be 
+using Apple Maps rather than Google Maps. 
+
+Using maps in either Android or iOS has its own unique challenges. Some things are easier in Android, 
+such as zooming in on the map or adding annotations to the markers put on a map. Other things are 
+easier in Xcode, such as interacting with the map with the code. 
+
+The map object is not coded as a standard widget. Rather, a fragment is added to the layout with the 
+standard set of attributes for size and positioning. The fragment has to be told what type of object it 
+is. That is the reason for the class attribute. In this case, you use the SupportMapFragment to make 
+the map object compatible with the earlier versions of Android targeted in this app. Once the XML is 
+added, switch back to Design view and click on the map in the Component Tree. The map fragment 
+will cover the whole layout. Grab the lower-right solid-blue square on the fragment and drag up and 
+to the left so that the fragment is above the navigation bar. Set the top, right, and left constraints of 
+the fragment to the parent with a margin of 0dp. Drag the bottom constraint of the fragment to the 
+top constraint of the navigation bar. (Note: You may have to zoom the display to do this accurately.) 
+
+Set its margin to 0 also. Finally, set the layout_width and layout_height attributes to match_constraint. 
+The map doesn’t display in Design view—just the positioning of the fragment. To see a map, you have 
+to write code. Open ContactMapActivity.java. Delete the LocationManager, LocationListener, and 
+Location variables. This will cause a bunch of errors. We will correct them as we modify the code to 
+work with maps. Modify the class declaration and onCreate method to match Listing 7.11. Import any 
+required classes. 
+
+ 

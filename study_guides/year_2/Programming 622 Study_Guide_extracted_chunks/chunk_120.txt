@@ -1,0 +1,28 @@
+e array is large. However, inserting an item at the 
+end is fast.  
+  
+The name of the class that implements the vector container is vector. (Recall that containers are class 
+templates.) The name of the header file containing the class vector is vector. Thus, to use a vector 
+container in a program, the program must include the following statement:  
+  
+#include <vector>  
+  
+Furthermore, to define an object of type vector, we must specify the type of the object because the class 
+vector is a class template. For example, the statement   
+  
+vector<int> intList;  
+  
+declares intList to be a vector and the component type to be int. Similarly, the statement  
+  
+vector<string> stringList;  
+declares stringList to be a vector container and the component type to be string.  
+ 
+2.1.1  Container Types  
+
+54  
+  
+  
+2.1.3.1 Declaring Vector Objects  
+  
+The class vector contains several constructors, including the default constructor. Therefore, a vector 
+container can be declared and initia

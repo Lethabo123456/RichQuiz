@@ -1,0 +1,27 @@
+2.2 Documentation 
+The way you format and store your documentation can vary, but to adequately manage your 
+network, you should at least record the following: 
+
+● Physical topology—Which types of LAN and WAN topologies does your network use: bus, star, 
+ring, hybrid, mesh, or a combination of these? Which type of backbone does your network use— 
+collapsed, distributed, parallel, serial, or a combination of these? Which type and grade of cabling 
+does your network use? What types of cables are used and where are they located? 
+● Access method—Does your network use Ethernet (802.3), Wi-Fi (802.11), WiMAX (802.16), 
+cellular, satellite, or a mix of transmission methods? What transmission speed(s) does it provide? 
+Is it switched? 
+● Protocols—Which protocols are used by servers, nodes, and connectivity devices? 
+● Devices—How many of the following devices are connected to your network—switches, 
+routers, gateways, firewalls, access points, servers, UPSs, printers, backup devices, and clients? 
+Where are they located? Are they physical or virtual? If physical, what are their model numbers 
+and vendors? 
+● Operating systems—Which network and desktop operating systems appear on the network? 
+Which versions of these operating systems are used by each device? Which type and version of 
+operating systems are used by connectivity devices such as routers? 
+● Applications—Which applications are used by clients and servers? Where do you store the 
+applications? From where do they run? 
+● Configurations—What versions of operating systems and applications does each workstation, 
+server, and connectivity device run? How are these programs configured? How is hardware 
+configured? The collection, storage, and assessment of such information belongs to a category 
+of network management known as configuration management. Ideally, you would rely on 
+configuration management software to gather and store the information in a database, where 
+those who need it can easily access and analyze the data

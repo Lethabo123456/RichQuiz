@@ -1,0 +1,35 @@
+The describe function will give us some quick stats about the column whose name we enter into the 
+quotation marks. Note how Pandas automatically recognized that business_id was a qualitative 
+column and gave us stats that make sense. When describe is called on a qualitative column, we will 
+always get the following four items (Sinan, 2016):
+ 
+• count: How many values are filled in 
+• unique: How many unique values are filled in 
+• top: The name of the most common item in the dataset 
+• freq: How often the most common item appears in the dataset 
+ 
+Explanation: For the business_id column, we have a count of 10000. Don't be fooled though! This 
+does not mean that we have 10,000 businesses being reviewed here. It just means that of the 10,000 
+rows of reviews, the business_id column is filled in all 10,000 times. The next qualifier, unique, 
+tells us that we have 4174 unique businesses being reviewed in this dataset. The most reviewed 
+business is business JokKtdXU7zXHcr20Lrk29A, which was reviewed 37 times. 
+ 
+Try this now for the another column such as review_id (You could use your own column) 
+yelp_raw_data['review_id'].describe() 
+ 
+Record your results and try to understand them as discussed. 
+ 
+Filtering in Pandas 
+Filtering rows based on particular criteria is quite easy in Pandas. In a Dataframe, if we wish to filter 
+out rows based on some search criteria, we will need to go row by row and check whether or not a 
+row satisfies that particular condition. Pandas handles this by passing in a Series of Trues and Falses 
+(Booleans). Try the following code to achieve this: 
+ 
+duplicate_text = yelp_raw_data['text'].describe()['top'] 
+ 
+Explanation: This code snippet is finding the most frequently used piece of text in the 'text' column of a 
+dataframe called yelp_raw_data. The value stored in duplicate_text is the most frequently used piece 
+of text in the 'text' column. 
+ 
+ 
+text_is_the_duplicate = yelp_raw_data['text'] == duplicate_text 

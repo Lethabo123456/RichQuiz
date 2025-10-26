@@ -1,0 +1,35 @@
+Pros 
+• Client built-in to just about all platforms 
+• Very easy to set up 
+• Fast 
+Cons 
+• Not at all secure (the vulnerable MS CHAPv2 authentication is still the 
+most common in use) 
+• Definitely compromised by the NSA 
+
+L2TP and L2TP/IPsec 
+Layer 2 Tunnel Protocol is a VPN protocol that on its own does not provide any encryption or 
+confidentiality to traffic that passes through it. For this reason, it is usually implemented with 
+the IPsec encryption suite to provide security and privacy. 
+L2TP/IPsec is built-in to all modern operating systems and VPN capable devices, and easy and 
+quick to set up as PPTP. 
+ 
+Problems can arise however, because the L2TP VPN protocol uses UDP port 500, which is more 
+easily blocked by NAT firewalls, and may therefore require advanced configuration (port 
+forwarding) when used behind a firewall (this is unlike SSL which can use TCP port 443 to make 
+it indistinguishable from normal HTTPS traffic). 
+ 
+IPsec encryption has no major known vulnerabilities, and if properly implemented may still be 
+secure. L2TP/IPsec encapsulates data twice which slows things down, but this is offset by the 
+fact that encryption/decryption occurs in the kernel and L2TP/IPsec allows multi-threading 
+(which OpenVPN does not.) The result is that L2TP/IPsec is theoretically faster than OpenVPN.
+
+Pros 
+• Usually considered very secure 
+• Easy to set up 
+• Available on all modern platforms  
+• Faster than OpenVPN 
+Cons 
+• May be compromised by the NSA (unproven) 
+• Likely deliberately weakened by the NSA (unproven) 
+• Can struggle with restrictive firewalls 

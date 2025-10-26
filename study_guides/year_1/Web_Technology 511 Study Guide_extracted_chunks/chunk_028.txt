@@ -1,0 +1,28 @@
+Despite its limitations, HTML is ideal for the Web because it is an open, non- 
+proprietary, cross-platform compatible language. All of the markup tags are included 
+with every document and usually can be viewed through your browser. Once you are 
+familiar with the HTML syntax, you will find that one of the best ways to learn new 
+coding techniques is to find a Web page you like and view the source code. 
+ 
+Separating style from structure 
+Style elements, such as <FONT>, were introduced by browser developers to help HTML 
+authors bypass the design limitations of HTML. Designers and writers who are accustomed 
+to working with today’s full-featured word processing programs want the same ability to 
+manipulate and position objects precisely on a Web page as they have on the printed page. 
+This is not what HTML was designed to do, however. HTML, like SGML, is intended to 
+represent document structure, not style. Style information should be 
+separate from the structural markup information. 
+
+This separation of style and structure has been accomplished by the W3C (World Wide Web 
+Consortium), which wrote a specification for a Web style language in 1996. The style 
+language, named Cascading Style Sheets (CSS), allows authors to create style rules for 
+elements and express them externally in a document known as a style sheet. CSS rules 
+are easy to create and very powerful. For example, assume that you want all of 
+your <H1> headings to appear green and centered everywhere on your Web site. CSS will 
+be covered in Topic 8 (Style Sheets) 
+
+This mixing of structure and style and the subsequent varied support of different style 
+elements in different browsers threaten to undermine the entire foundation of the Web and 
+to render it useless as HTML becomes fractured by proprietary elements. But that 
+changed, today most web browsers now support CSS, allowing web pages design 
+today to have different designs and layouts. 

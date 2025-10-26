@@ -1,0 +1,13 @@
+be executed and 
+any necessary data into the processor. 
+■ Step 2: Decode instruction. The instruction is decoded and passed to the appropriate processor 
+execution unit. Each execution unit plays a different role. The arithmetic/ logic unit performs 
+all arithmetic operations; the floating-point unit deals with no integer operations; the load/store 
+unit manages the instructions that read or write to memory; the branch processing unit predicts 
+the outcome of a branch instruction in an attempt to reduce disruptions in the flow of 
+instructions and data into the processor; the memory-management unit translates an application’s 
+addresses into physical memory addresses; and the vector-processing unit handles vector-based 
+instructions that accelerate graphics operations. 
+■ Step 3: Execute instruction. The hardware element, now freshly fed with an instruction and 
+data, carries out the instruction. This process could involve making an arithmetic computation, 
+logical comparison, bit sh

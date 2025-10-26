@@ -1,0 +1,25 @@
+Users may use Seaborn's load dataset method to load the iris dataset into a Pandas DataFrame. The correlation 
+matrix of the variables is then calculated using the Pandas data frame's corr method and saved in a variable 
+called corr_matrix. We use Seaborn's heatmap method to produce the 
+heatmap. 
+ 
+We pass the correlation matrix corr_matrix and set the cmap argument to "coolwarm" to use various colours 
+to denote positive and negative correlations to the function. Lastly, we use the pyplot module from 
+matplotlib's show method to display the heatmap. 
+ 
+# Required libraries  
+import seaborn as sns 
+import matplotlib.pyplot as plt 
+  
+# Load the iris dataset into a Pandas dataframe 
+iris_data = sns.load_dataset('iris') 
+  
+# Creating the correlation matrix of the iris dataset 
+iris_corr_matrix = iris_data.corr() 
+print(iris_corr_matrix) 
+  
+# Create the heatmap using the `heatmap` function of Seaborn 
+sns.heatmap(iris_corr_matrix, cmap='coolwarm', annot=True) 
+  
+# Display the heatmap using the `show` method of the `pyplot` module from matplotlib. 
+plt.show() 

@@ -1,0 +1,27 @@
+7.3  Training Large Language Models 
+
+Training LLMs requires vast computational resources. The training process consists of: 
+1. Pre-training – The model learns general linguistic patterns using massive datasets through self-
+supervised learning. 
+2. Fine-tuning – The model is refined on specific datasets for targeted applications such as legal 
+document analysis or medical diagnosis. 
+3. Instruction Tuning – LLMs like GPT-4 are fine-tuned using human-annotated instruction-
+following data to improve their ability to follow complex prompts.
+
+7.4 Implementing LLMs  
+Hugging Face’s transformers library simplifies working with pre-trained LLMs. Below is an example of 
+using GPT-3 for text generation: 
+ 
+from transformers import pipeline 
+# Load GPT-3 model for text generation 
+generator = pipeline("text-generation", model="gpt2") 
+
+# Generate text 
+text = generator("The future of artificial intelligence is", max_length=50) 
+print(text) 
+ 
+Output  
+[{'generated_text': 'The future of artificial intelligence is in its infancy, but a growing number of 
+researchers are trying to bring those improvements to the Internet.\n\nMany projects are using AI 
+systems to solve complex algorithmic problems of the past, like computer vision and neural networks'}] 
+This script demonstrates how to generate text using an LLM with minimal setup. 

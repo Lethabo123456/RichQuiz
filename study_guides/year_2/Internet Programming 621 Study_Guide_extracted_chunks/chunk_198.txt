@@ -1,0 +1,65 @@
+. delimited by <<< identifier 
+D. All of above 
+ANS: B 
+ 
+32. Which data types are treated as arrays 
+A.  Integer 
+B.  Float 
+C.  String 
+D.  Booleans 
+ANS: C 
+ 
+33. When defining identifier in PHP you should remember that 
+A.  Identifiers are case sensitive. So $result is different than $Result 
+B.  Identifiers can be any length 
+C.  Both of above 
+D.  None of above 
+ANS: C 
+ 
+
+IP 621  
+34. Identify the invalid identifier 
+A. my_function 
+B. size 
+C. _some word 
+D.  This&that 
+ANS: D 
+ 
+35. The left associative dot operator (.) is used in PHP for 
+A. multiplication 
+B. concatenation 
+C. separate object and its member 
+D. delimeter 
+ANS: B 
+ 
+36. Which of following are compound data types? 
+A.  Array 
+B.  Objects 
+C.  Both of the above 
+D.  None of the above 
+ANS: C 
+ 
+37. What will be the output of the following PHP code ? 
+ 
+<?php 
+$x = 10; 
+$y = 20; 
+if ($x > $y + $y != 3) 
+    
+ 
+ 
+ print "hi" ; 
+
+IP 621  
+else 
+    
+ 
+ 
+ print "how are u"; 
+?> 
+ 
+ 
+A. how are u 
+B. hi 
+C. Error 
+D

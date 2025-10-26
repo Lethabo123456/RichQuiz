@@ -1,0 +1,31 @@
+6.7 Loss and Optimization 
+Here we’ll want to experiment with different loss functions, so (as usual) we’ll introduce a new 
+Loss abstraction that encapsulates both the loss computation and the gradient computation: 
+class Loss: 
+
+def loss(self, predicted: Tensor, actual: Tensor) -> float: 
+"""How good are our predictions? (Larger numbers are worse.)""" 
+raise NotImplementedError 
+ 
+def gradient(self, predicted: Tensor, actual: Tensor) -> Tensor: 
+"""How does the loss change as the predictions 
+change?""" raise NotImplementedError 
+We’ve already worked many times with the loss that’s the sum of the squared errors, so we 
+should have an easy time implementing that. The only trick is that we’ll need to use 
+tensor_combine: 
+class SSE(Loss): 
+"""Loss function that computes the sum of the squared errors.""" 
+def loss(self, predicted: Tensor, actual: Tensor) -> float: # 
+Compute the tensor of squared differences 
+squared_errors = tensor_combine( 
+lambda predicted, actual: (predicted - actual) ** 2, predicted, 
+actual) 
+
+# And just add them up 
+return tensor_sum(squared_errors) 
+def gradient(self, predicted: Tensor, actual: Tensor) -> Tensor: 
+return tensor_combine( 
+lambda predicted, actual: 2 * (predicted - actual), 
+predicted, actual) 
+The last piece to figure out is gradient descent. This can be computed as:  
+theta = gradient_step(theta, grad, -learning_rate) 

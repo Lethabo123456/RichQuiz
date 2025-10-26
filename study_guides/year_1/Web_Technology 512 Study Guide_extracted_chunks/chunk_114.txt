@@ -1,0 +1,27 @@
+ookiesEnabled variable. 
+ 
+The code for the secondFunction just uses an IF statement to check if cookiesEnabled 
+is true or false. It then returns a string value. We could even simplify our code like 
+this: 
+ 
+Figure 4.5 – Function that returns a value 
+This time, we have gotten rid of the alertString variable. Instead, we have two uses of 
+return: one for the if part and one for the else part. The return keyword is like a 
+"stop" message to JavaScript. After it executes a return line it bails out of the function. 
+Any code after it would not get executed. 
+ 
+You can pass more than one value over to your functions. In the code below, we have 
+set up secondFunction to have two arguments between the round brackets: 
+ 
+
+ 
+72 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+ 
+Figure 4.6 – Function with multiple arguments 
+Note that the two arguments are separated by commas. When we want to call this 
+function we can use both arguments: 
+ 
+Figure 4.7 –Calling a function with multiple arguments 
+We are passi

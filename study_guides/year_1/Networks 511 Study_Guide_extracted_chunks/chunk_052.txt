@@ -1,0 +1,23 @@
+Layer 4: Transport Layer 
+
+This layer provides end to end data delivery among hosts.  
+This layer takes data from the above layer and breaks it into smaller units called 
+Segments and then gives it to the Network layer for transmission. 
+
+Layer 3: Network Layer 
+
+This layer helps to move messages from one node to another and defines the path 
+which the packets will follow or be routed to reach the destination. 
+
+Layer 2: Data Link Layer  
+
+This layer takes the raw transmission data (signal, pulses etc.) from the Physical Layer 
+and makes Data Frames, and sends that to the upper layer and vice versa.  
+This layer also checks any transmission errors and sorts it out accordingly. 
+
+Layer 1: Physical Layer 
+
+This layer deals with hardware technology and actual communication mechanism such 
+as signaling, voltage, and cable type and wave length. 
+It converts the digital/analog bits into electrical signal or optical signals.  
+Data encoding is also done in this l

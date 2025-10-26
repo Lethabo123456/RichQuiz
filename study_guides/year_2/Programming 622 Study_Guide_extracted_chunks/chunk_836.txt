@@ -1,0 +1,15 @@
+nce in which they can take the courses so that 
+before taking a course they take all its prerequisite courses and fulfill the graduation requirements on 
+time. In this section, we describe an algorithm that can be used to output the vertices of a directed graph 
+in such a sequence. Let us first introduce some terminology.  
+  
+Let G be a directed graph and V(G) = {v1, v2, . . ., vn}, where n ≥ 0. A topological ordering of V(G) is a linear 
+ordering vi1, vi2, . . ., vin of the vertices such that, if vij is a predecessor of vik, j ≠ k, 1 ≤ j ≤ n, 1 ≤ k ≤ n, then 
+vij precedes vik, that is, j < k in this linear ordering.  
+  
+In this section, we describe an algorithm, topological order, which outputs the vertices of a directed graph 
+in topological order. We assume that the graph has no cycles. We leave it as an exercise for you to modify 
+the algorithm for the graphs that have cycles.  
+  
+Because the graph has no cycles, the following is true:  
+There exists a vertex v in G such that v

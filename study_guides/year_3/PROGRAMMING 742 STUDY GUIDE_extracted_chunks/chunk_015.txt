@@ -1,0 +1,49 @@
+Example 1-3. Declaring a constructor 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+  namespace Values 
+{ 
+    public class Time 
+    { 
+        // public accessor methods 
+        public void DisplayCurrentTime() 
+        { 
+            Console.WriteLine("{0} /{1} /{2} {3} :{4} :{5} ", 
+Month Date Year Hour Minute Second);
+
+Output: 
+
+
+In this example, the constructor takes a DateTime object and initializes all the member vari-
+ables based on values in that object. When the constructor finishes, the Time object exists 
+and the values have been initialized. When DisplayCurrentTime ( ) is called in Main ( ), the 
+values are displayed. 
+        public Time(DateTime dt) 
+        { 
+            Year = dt.Year; 
+            Month = dt.Month;  
+            Date = dt.Day; 
+            Hour = dt.Hour; 
+            Minute = dt.Minute; 
+            Second = dt.Second; 
+        } 
+        // private member variables 
+        int Year;  
+        int Month; 
+        int Date;  
+        int Hour;  
+        int Minute; 
+        int Second; 
+    } 
+    public class Tester 
+    { 
+        static void Main() 
+        { 
+            Time t = new Time(DateTime.Now); 
+            t.DisplayCurrentTime(); 
+        }  
+     } 
+ }

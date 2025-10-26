@@ -1,0 +1,20 @@
+database access. 
+ODBC allows any Windows application to access relational data sources, using SQL via a standard 
+application programming interface (API).  
+As programming languages evolved, ODBC did not provide significant functionality beyond the 
+ability to execute SQL to manipulate relational-style data. To counter-act that, Microsoft developed 
+two other data access interfaces: 
+ 
+Data Access Objects (DAO) is an object-oriented API used to access desktop databases. 
+ 
+Remote Data Objects (RDO) is a higher-level, object-oriented application interface used to 
+access remote database servers.  
+The basic ODBC architecture has three main components:  
+ 
+A high-level ODBC API through which application programs access ODBC functionality  
+ 
+A driver manager that is managing all database connections  
+ 
+An ODBC driver that communicates directly to the DBMS  
+Defining a data source is the first step in using ODBC. To define a data source, you must create a 
+data source name (DSN) f

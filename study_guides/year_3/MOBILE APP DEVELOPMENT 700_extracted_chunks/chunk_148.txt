@@ -1,0 +1,24 @@
+Adding Code 
+Our app has only one function—to display the name entered into the EditText when the Display button 
+is pressed. Enter the code in Listing 3.6 before the last curly bracket in the activity Java file. 
+This code does the work and illustrates a number of important concepts in Android development. 
+
+▪ Line 1—This line declares a new method in the MainActivity class. The method is only useable by 
+this class (private) and does not return any value (void). The method signature is initDisplayButton(). 
+The signature, or name, of the method is completely up to you. However, you should name it to give 
+some idea what it does. 
+▪ Line 2—Associate the code with the button on the layout. This line of code declares a variable of 
+type Button that can hold a reference to a button and then gets the button reference using the command findViewById. All  widgets on  
+a  layout are  subclasses of the  View class.  The method 
+findViewById gets a reference to a widget on a layout so it can be used 
+by the code. Button is underlined in red after you type it in. This is 
+because the code for the button class is not automatically available in the 
+class. You have to import it. Fortunately, this is easy. Click on and 
+then hover your cursor over the underlined word, and a message will display asking 
+if you want to import. Once you get the message, press Alt + Enter to import. Do this 
+for any other items underlined in red. You will get two options for onClickListener. Choose the 
+View.OnClickListener option. 
+▪ Line 3—Set the button’s listener. There are a number of different listeners for widgets, which gives 
+great flexibility when coding app behavior. For this button, we use an onClickListener. The code 
+creates a new instance of the listener and then adds a method (public void onClick(View view)) to be 
+executed when the button is clicked.

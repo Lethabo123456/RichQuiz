@@ -1,0 +1,44 @@
+5.3 Thread pools 
+When working directly with the Thread class, you create a new thread each time, and the thread dies 
+resources.  
+A thread pool is created to reuse those threads, similar to the way a database connection pooling works. 
+Instead of letting a thread die, you send it back to the pool where it can be reused whenever a request 
+comes in. 
+When you work with a thread pool from .NET, you queue a work item that is then picked up by an avail-
+able thread from the pool. Listing 5-7 shows how this is done. 
+ 
+Example 5-7  Queuing some work to the thread pool 
+ 
+using System; 
+using System.Threading; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        public static void Main() 
+        { 
+            ThreadPool.QueueUserWorkItem((s) => 
+            { 
+                Console.WriteLine("Working on a thread from threadpool"); 
+            }); 
+            Console.ReadLine(); 
+        } 
+    } 
+} 
+
+Because the thread pool limits the available number of threads, you do get a lesser degree of parallelism 
+than using the regular Thread class. But the thread pool also has many advantages.  
+ 
+Take, for example, a web server that serves incoming requests. All those requests come in at an un-
+known time and frequency. The thread pool ensures that each request gets added to the queue and that 
+amount of requests. If you span threads manually, you can easily bring down your server if you get a lot 
+of requests. Each request has unique characteristics in the work they need to do. What the thread pool 
+does is map this work onto the threads available in the system. Of course, you can still get so many re-
+quests that you run out of threads. Requests then start to queue up and this leads to your web server 
+becoming unresponsive.  
+ 
+The thread pool automatically manages the amount of threads it needs to keep around. When it is first 
+created, it starts out empty. As a request comes in, it creates additional threads to handle those re-
+quests. As long as it can finish an operation before a new one comes in, no new threads have to be cre-
+ated. If new threads are no longer in use after some time, the thread pool can kill those threads so they 
+no longer use any resources 

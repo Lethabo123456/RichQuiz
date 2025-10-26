@@ -1,0 +1,14 @@
+(21225',Bryson, Inc.','Smithson','615','223-3234','TN','Y');  
+INSERT INTO VENDOR  
+VALUES (21226',Superloo, Inc.','Flushing','904','215-8995','FL','N'); 
+Inserting Rows with Null Attributes In the previous example you entered rows in which all of the 
+attribute values are specified. But what do you do if, for example, a product does not have a vendor 
+or if you do not yet know the vendor code? In those cases, you would want to leave the vendor code 
+null. To enter a null, use the following syntax:  
+INSERT INTO PRODUCT  
+VALUES ('BRT-345','Titanium drill bit','18-Oct-17', 75, 10, 4.50, 0.06, NULL); 
+Alternatively, to the syntax above, if more than one attribute is optional, you can indicate only the 
+attributes that require values in the INSERT statement and omit the optional attributes. For the 
+purpose of this example, assume that the only required attributes for the PRODUCT table are 
+P_CODE and P_DESCRIPT:  
+INSERT INTO PRODUCT(P_CODE, P_DESCRIPT) VALUES ('BRT-345','Titanium dril

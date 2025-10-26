@@ -1,0 +1,16 @@
+3.1.2 Switches: Traffic Isolation 
+• Switch breaks subnet into LAN segments 
+• Switch filters packets 
+– Frame only forwarded to the necessary segments 
+– Segments can support separate transmissions 
+ 
+Figure 55: Switch and Bridge 
+
+3.2 Multilayer switch  
+Traditionally, switches are the network devices that forward data packets based on the Layer 2 
+information like media access control (MAC) addresses. Routers forward packets based on IP 
+addresses. The router strips off the old Layer 2 header, slaps on the new one and queues the packet 
+for transmission. 
+As multilayer switching technology developed, higher level functions were also added such as the 
+ability to look deep inside packets for information that could aid in the packet-forwarding process.
+Thus, multilayer switches became devices that examine Layer 2 through Layer 7.

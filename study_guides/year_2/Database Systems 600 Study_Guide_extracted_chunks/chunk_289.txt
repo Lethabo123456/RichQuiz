@@ -1,0 +1,37 @@
+g commands:  
+ 
+
+ 
+118 
+Example 1 
+ALTER TABLE  
+PART  
+ADD  
+ 
+ 
+PRIMARY KEY (PART_CODE); 
+Example 2 
+ALTER TABLE  
+PART  
+ADD  
+ 
+FOREIGN KEY (V_CODE) REFERENCES VENDOR; 
+Example 3 
+ALTER TABLE  
+PART  
+ADD  
+ 
+CHECK (PART_PRICE >= 0); 
+Note that these alterations can be made at once in a single command. 
+Dropping a Column 
+Occasionally, you might want to modify a table by deleting a column. Suppose that you want to 
+delete the V_ORDER attribute from the VENDOR table. You would use the following command:  
+ALTER TABLE VENDOR 
+DROP COLUMN V_ORDER;  
+Again, some RDBMSs impose restrictions on attribute deletion. 
+Deleting a Table from the Database 
+A table can be deleted from the database using the DROP TABLE command. For example, you 
+can delete the PART table you just created with the following command:  
+DROP TABLE PART;  
+You can drop a table only if it is not the “one” side of any relationship. The order in which multiple 
+tables must be dropped is influenced by the foreign key con

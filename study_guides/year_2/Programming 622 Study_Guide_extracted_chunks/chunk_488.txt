@@ -1,0 +1,27 @@
+fied by serverID is set to  
+// "busy", to serve the customer specified by cCustomer.  
+  
+void updateServers(ostream& outFile); //Function 
+to update the status of a server.  
+//Postcondition: The transaction time of each busy server  
+// is decremented by one unit. If the transaction time of  
+// a busy server is reduced to zero, the server is set to  
+// "free". Moreover, if the actual parameter corresponding  
+// to outFile is cout, a message indicating which customer  
+// has been served is printed on the screen, together with the 
+// customer's departing time. Otherwise, the output is sent // 
+to a file specified by the user.  
+  
+private:  
+int numOfServers;  
+serverType *servers;  
+};   
+Figure 6-13 shows the UML diagram of the class serverListType.  
+  
+  
+FIGURE 6-13 UML diagram of the class serverListType  
+  
+Following are the definitions of the member functions of the class serverListType. The definitions of the 
+constructor and destructor are straightforward.  
+  
+serverL

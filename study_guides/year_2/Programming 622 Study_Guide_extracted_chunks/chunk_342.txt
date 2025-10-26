@@ -1,0 +1,32 @@
+8 0 0  
+0 3 0 0 0 6 1 0 5  
+  
+Next we write the definition of the function solveSudoku.  
+  
+The function solveSudoku uses recursion and backtracking to find a solution, if one exists, of the partially 
+filled sudoku grid. The general algorithm is as follows:  
+  
+1. Find the position of the first empty slot in the partially filled grid. If the grid has no empty slots, 
+return true and print the solution.  
+2. Suppose the variables row and col specify the position of the empty grid position.  
+  
+for (int digit = 1; digit <= 9; digit++)  
+{  
+if (grid[row][col] <> digit)  
+{ grid[row][col] = digit; recursively fill the updated grid; if the 
+grid is filled successfully, return true, otherwise remove 
+the assigned digit from grid[row][col] and try another 
+digit.  
+}  
+If all the digits have been tried and nothing worked, return false.  
+  
+The definition of the function is as follows:  
+
+171  
+  
+  
+bool sudoku::solveSudoku()  
+{  
+int row, col;  
+  
+if (findEmptyGridSlot(row, col))

@@ -1,0 +1,28 @@
+2. Non-Preemptive Priority Scheduling: 
+ 
+Once a process starts execution, it cannot be interrupted until it completes. 
+Lower-priority processes must wait until the CPU becomes available. 
+Priorities can also be determined by the Processor Manager based on characteristics intrinsic to the 
+jobs such as: 
+
+➢ Memory requirements. Jobs requiring large amounts of memory could be allocated lower 
+priorities than those requesting small amounts of memory, or vice versa. 
+➢ Number and type of peripheral devices. Jobs requiring many peripheral devices could be 
+allocated lower priorities than those requesting fewer devices. 
+➢ Total CPU time. Jobs having a long CPU cycle, or estimated run time, could begiven lower 
+priorities than those having a brief estimated run time. 
+➢ Amount of time already spent in the system. This is the total amount of elapsed time since the 
+job was accepted for processing. Some systems increase the priority of jobs that have been in 
+the system for an unusually long time to expedite their exit. This is known as aging.
+
+3.6.4 Shortest Remaining Time (SRT) 
+Shortest Remaining Time (SRT) is a preemptive version of the Shortest Job Next (SJN) scheduling 
+algorithm. In SRT, the CPU is allocated to the process that has the smallest remaining burst time. 
+This means that if a new process arrives with a burst time smaller than the remaining time of the 
+current process, the CPU is preempted and given to the new process. 
+
+3.6.5 Round Robin (RR) Scheduling 
+Round Robin (RR) is a preemptive CPU scheduling algorithm designed to handle time-sharing 
+systems. Each process is assigned a fixed time quantum or time slice. The CPU cycles through all 
+processes in the ready queue, executing each for a maximum of one-time quantum at a time. If a 
+process does not complete during its time quantum, it is moved to the end of the queue. 

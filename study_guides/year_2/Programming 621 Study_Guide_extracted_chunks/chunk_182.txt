@@ -1,0 +1,26 @@
+re the data 
+type prevents the function from modifying the array. 
+6. The sequential search algorithm searches a list for a given item, starting 
+with the first element in the list. It continues to compare the search item 
+with the other elements in the list until either the item is found or the list 
+has no more elements left to be compared with the search item. 
+7. Selection sort sorts the list by finding the smallest (or equivalently largest) 
+element in the list and moving it to the beginning (or end) of the list. 
+8. For a list of length n, selection sort makes exactly 
+  key 
+comparisons and 3(n - 1) item assignments. 
+9. In a two-dimensional array, the elements are arranged in a table form. 
+ 
+ 
+ 
+ 
+ 
+1. Write a C++ function, smallestIndex, that takes as parameters an int 
+array and its size and returns the index of the first occurrence of the 
+smallest element in the array. Also, write a program to test your 
+function. 
+ 
+
+168 | P a g e  
+ 
+2. Write a C++ function, lastLargestI

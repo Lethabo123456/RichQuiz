@@ -1,0 +1,16 @@
+doubly linked list  
+Discover how to use the STL container list  
+Learn about linked lists with header and trailer nodes  
+Become aware of circular linked lists  
+  
+  
+You have already seen how data is organized and processed sequentially using an array, called a sequential 
+list. You have performed several operations on sequential lists, such as sorting, inserting, deleting, and 
+searching. You also found that if data is not sorted, searching for an item in the list can be very time 
+consuming, especially with large lists. Once the data is sorted, you can use a binary search and improve 
+the search algorithm. However, in this case, insertion and deletion become time consuming, especially 
+with large lists because these operations require data movement. Also, because the array size must be 
+fixed during execution, new items can be added only if there is room. Thus, there are limitations when 
+you organize data in an array.  
+  
+This chapter helps you to overcome some of these problems

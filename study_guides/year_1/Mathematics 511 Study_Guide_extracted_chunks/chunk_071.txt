@@ -1,0 +1,39 @@
+1.4.6 Logical Equivalences Involving Quantifiers 
+Definition 13 
+Statements involving predicates and quantifiers are logically equivalent if 
+and only if they have the same truth value no matter which predicates are 
+substituted into these statements and which domain of discourse is used for 
+the variables in these propositional functions. We use the notation 𝑆 ≡ 𝑇 
+to indicate that two statements 𝑆 𝑎𝑛𝑑 𝑇 involving predicates and quantifiers 
+are logically equivalent.
+
+Worked Example 
+Show that ∀𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) and ∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥) are logically 
+equivalent (where the same domain is used throughout). This logical 
+equivalence shows that we can distribute a universal quantifier over a 
+conjunction. Furthermore, we can also distribute an existential quantifier 
+over a disjunction. However, we cannot distribute a universal quantifier 
+over a disjunction, nor can we distribute an existential quantifier over a 
+conjunction. 
+
+Solution: 
+To show that these statements are logically equivalent, we must show 
+that they always take the same truth value, no matter what the 
+predicates 𝑃 𝑎𝑛𝑑 𝑄 are, and no matter which domain of discourse is 
+used. Suppose we have particular predicates 𝑃 𝑎𝑛𝑑 𝑄, with a common 
+domain. We can show that ∀𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) and ∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥) 
+are logically equivalent by doing two things. First, we show that if 
+∀𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) is true, then ∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥) is true. Second, we 
+show that if ∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥) is true, then ∀𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) is true. 
+So, suppose that ∀𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) is true. This means that if a is in the 
+domain, then 𝑃(𝑎) ∧ 𝑄(𝑎) is true. Hence, 𝑃(𝑎) is true and 𝑄(𝑎) is true. 
+Because 𝑃(𝑎) is true and 𝑄(𝑎) is true for every element in the domain, 
+we can conclude that ∀𝑥𝑃(𝑥) and ∀𝑥𝑄(𝑥) are both true. This means that 
+∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥) is true. 
+Next, suppose that ∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥) is true. It follows that ∀𝑥𝑃(𝑥) is 
+true and ∀𝑥𝑄(𝑥) is true. Hence, if 𝑎 is in the domain, then 𝑃(𝑎) is true 
+and 𝑄(𝑎) is true [because 𝑃(𝑥) and 𝑄(𝑥) are both true for all elements 
+in the domain, there is no conflict using the same value of a here].   
+It follows that for all 𝑎, 𝑃(𝑎) ∧ 𝑄(𝑎) is true. It follows that ∀𝑥(𝑃(𝑥) ∧
+ 𝑄(𝑥)) is true. We can now conclude that: 
+∀𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) ≡ ∀𝑥𝑃(𝑥) ∧ ∀𝑥𝑄(𝑥). 

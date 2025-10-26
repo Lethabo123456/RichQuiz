@@ -1,0 +1,22 @@
+list[largerIndex], then swap list[a] with list[largerIndex]; 
+otherwise, the subtree with root node list[a] is already in a heap.  
+  
+Suppose that list[a] < list[largerIndex] and we swap the elements list[a] with list[largerIndex]. After making 
+this swap, the subtree with root node list[largerIndex] might not be in a heap. If this is the case, then we 
+repeat Steps 1 and 2 at the subtree with root node list[largerIndex] and continue this process until either 
+the heap in the subtrees is restored or we arrive at an empty subtree. This step is implemented using a 
+loop, which will be described when we write the algorithm.  
+  
+Consider the list in Figure 8-43. Let us call this list.  
+ 
+  
+FIGURE 8-43 Array list  
+  
+Figure 8-44 shows the complete binary tree corresponding to the list in Figure 8-43.  
+  
+  
+FIGURE 8-44 Complete binary tree corresponding to the list in Figure 8-43  
+  
+To facilitate this discussion, when we say node 56, we mean the node with info 56.  
+  
+This list ha

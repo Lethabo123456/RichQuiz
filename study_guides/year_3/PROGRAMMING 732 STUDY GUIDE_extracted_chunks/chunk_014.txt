@@ -1,0 +1,27 @@
+1.2.5 JButton Class  
+The JButton class provides the functionality of a push button. It allows an icon, a string or both to be 
+associated with the push button. Its constructors are:  
+  
+JButton(Icon i)  
+JButton(String s)  
+JButton (String s, Icon i)  
+  
+Where s and I are the string and icon used for the button.
+
+1.2.6 CheckBoxes  
+A concrete implementation of AbstractButton is the JcheckBox class. It provides the functionality of a 
+check box. Its constructors are:  
+  
+JCheckBox (Icon i)  
+JCheckBox (Icon i, Boolean state)  
+JCheckBox (string s)  
+JCheckBox (string s, Boolean state)  
+JCheckBox (string s, icon i)  
+JCheckBox (string s, Icon i, Boolean state) 
+
+Where i is the icon for the button, s specifies the text. If state is true, the text box is initially selected. 
+Otherwise, it is not. To change the state of the checkbox, the following method is used:  
+  
+Void setselected (Boolean state)  
+  
+Where, state is true if the checkbox should be checked.

@@ -1,0 +1,45 @@
+4.2.8 Security control   
+Security controls are countermeasures used to prevent or respond to security threats and to reduce 
+or avoid risk. Details on how to use security countermeasures are typically outlined in the security 
+policy, which contains a set of rules and practices specifying how to implement a system, service, or 
+security plan for maximum protection of sensitive and critical IT resources. 
+ 
+4.2.9 Security policies   
+A security policy contains a set of security rules and regulations. Security policies will further define 
+how these rules and regulations are implemented and enforced. For example, the positioning and 
+usage of security controls and mechanisms can be determined by security policies. 
+ 
+4.2.10 Threat Agent    
+A threat agent is an entity that poses a threat because it is capable of carrying out an attack.  
+ 
+4.2.11 Trusted Attacker 
+A trusted attacker shares IT resources in the same cloud environment as the cloud consumer and 
+attempts to exploit legitimate credentials to target cloud providers and the cloud tenants with whom 
+they share IT resources 
+
+Cloud Security Threats   
+Cloud security threats can originate either internally or externally, from humans or software programs. 
+Common examples of cloud security threats and vulnerability in a cloud-based environment are 
+discussed below;  
+  
+4.3.1 Traffic Eavesdropping  
+This occurs when data being transferred to or within a cloud is passively intercepted by a malicious 
+service agent for illegitimate information gathering purposes. The aim of this attack is to directly 
+compromise the confidentiality of the data; and sometimes the confidentiality of the relationship 
+between the cloud consumer and cloud provider   
+
+Fig 4.1: Traffic eavesdropping  
+ 
+4.3.2 Denial of Service    
+This occurs when IT resources are being overloaded to the extent that they cannot function properly.  
+This form of attack is commonly launched in one of the following ways: 
+
+ The workload on cloud services is artificially increased with imitation messages or repeated 
+communication requests. 
+ The network is overloaded with traffic to reduce its responsiveness and cripple its 
+performance. 
+ Multiple cloud service requests are sent, each of which is designed to consume excessive 
+memory and processing resources. 
+Successful DoS attacks produce server degradation and/or failure.  
+
+Fig 4.2: Denial of service attack 

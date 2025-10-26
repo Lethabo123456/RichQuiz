@@ -1,0 +1,35 @@
+Code the Activity 
+Before you can test your modified adapter, you need to change the ContactListActivity code to retrieve 
+contact objects rather than contact names, set the ListView to use the custom adapter, and code the 
+onItemClick method to pass the selected contact’s ID to MainActivity. The first two changes require 
+changing only one line of code each. Switch to the ContactListActivity.java file. Follow these steps to 
+code the activity to retrieve contact objects rather than just a list of names: 
+
+1. Delete the names ArrayList variable and add a new declaration to hold contact objects: 
+ArrayList<Contact> contacts; 
+2. Initialize the contacts variable inside the try clause, just after the ds.open() statement: 
+contacts = ds.getContacts(); 
+3. Modify the ContactAdapter instantiation of use contacts rather than names: 
+ContactAdapter contactAdapter = new ContactAdapter(contacts); 
+4. Finally, modify the onItemClickListner’s onClick method to pass the contact ID. Find the onClick 
+method in the variable declaration. Modify the code to match Listing 6.8. 
+All this method has to do is get the selected contact from the contacts ArrayList, get the required data 
+from it, and pass the data to the MainActivity. 
+▪ Line 5—Create a variable named contactID and retrieve the contact from the ArrayList using the 
+position value. The position value is the index of the item tapped in the list, and it matches the index 
+of the contact in the ArrayList that is displayed in that list item. 
+▪ Line 7—Place the contact ID in the Bundle that is passed to the MainActivity. A Bundle is an object 
+used in Android to pass data between Activities. The method putExtra(key, value) is used to put 
+primitive data types in the Bundle in the Intent so that they are accessible by the activity receiving the 
+intent. This set of key-value pairs of data is collectively known as “extras.” 
+
+Save all your changes and test the adapter on the emulator. If you have properly coded 
+these objects, your ContactListActivity in the emulator should look similar 
+to Figure 6.4.
+
+5.4 Completing the ContactList Activity 
+There are a few things left to complete the ContactListActivity. These 
+things include modifying MainActivity to use the contact ID passed to it, 
+adding and activating the Add Contact and Delete buttons, sorting the 
+list using user preferences, and making the app open to the list rather 
+than a blank contact. 

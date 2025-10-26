@@ -1,0 +1,22 @@
+he first line is just two paragraph tags with the 
+text "First Name" between them. The P tag also 
+has an ID. We will use this ID in our JavaScript. 
+ 
+The next two lines are the tags for a text box and a 
+button. The Text box also has an ID. When the 
+button is clicked, it calls the validate function 
+between the two SCRIPT tags in the HEAD section: 
+onClick = "validate()" 
+ 
+The first line of code for the validate function is 
+this: 
+var textbox_value = document.getElementById("Name").value; 
+ 
+We are setting up a variable called textbox_value here. Into this variable we want to 
+store the value from the text box. This is done via the getElementById property of the 
+document object (you will learn about getElementById in later section). Between its 
+round brackets we have the ID from the text box. After a dot, we have value. This is 
+enough to get the VALUE attribute from the text box. 
+ 
+We want to test what is in this text box so have set up an IF … ELSE statement. The IF 
+part is

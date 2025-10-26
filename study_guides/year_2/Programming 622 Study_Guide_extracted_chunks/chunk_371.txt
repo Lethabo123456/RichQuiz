@@ -1,0 +1,62 @@
+cout << "Size of the array to hold the stack must "<< "be positive." << endl; 
+cout << "Creating an array of size 100." << endl; maxStackSize = 100;  
+}  
+else  
+maxStackSize = stackSize;   
+  
+ 
+//set the stack size to  
+//the value specified by  
+//the parameter stackSize  
+stackTop = 0;    
+  
+  
+  
+ 
+//set stackTop to 0  
+list = new Type[maxStackSize];   
+  
+ 
+//create the array to  
+//hold the stack elements  
+
+185  
+  
+}  
+  
+  
+  
+  
+  
+  
+ 
+template <class Type>  
+stackType<Type>::~stackType() //destructor  
+{  
+ 
+//end constructor  
+delete [] list;    
+  
+  
+  
+ 
+//deallocate the memory occupied 
+//by the array  
+}  
+  
+  
+  
+  
+  
+  
+ 
+//end destructor  
+  
+ 
+5.2.9  Copy Constructor  
+  
+The copy constructor is called when a stack object is passed as a (value) parameter to a function. It copies 
+the values of the member variables of the actual parameter into the corresponding member variables of 
+the formal parameter. Its definition is as follows:  
+  
+template <class Type

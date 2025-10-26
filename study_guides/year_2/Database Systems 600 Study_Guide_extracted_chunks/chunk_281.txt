@@ -1,0 +1,17 @@
+e to exist in the PRODUCT table if it points to a 
+non-existent VENDOR table V_CODE value. 
+ 
+An RDBMS automatically enforces referential integrity for foreign keys. That is, you 
+cannot have an invalid entry in the foreign key column; at the same time, you cannot delete 
+a vendor row as long as a product row references that vendor.  
+ 
+The command sequence ends with a semicolon.  
+SQL Constraints 
+You learned that adherence to rules for entity integrity and referential integrity is crucial in a 
+relational database environment. Fortunately, most SQL implementations support both integrity 
+rules. Entity integrity is enforced automatically when the primary key is specified in the CREATE 
+TABLE command sequence. 
+In the PRODUCT table’s CREATE TABLE sequence, note that referential integrity has been 
+enforced by specifying the following in the PRODUCT table:  
+FOREIGN KEY (V_CODE) REFERENCES VENDOR ON UPDATE CASCADE  
+In general, ANSI SQL permits the use of ON DELETE and ON UPDATE claus

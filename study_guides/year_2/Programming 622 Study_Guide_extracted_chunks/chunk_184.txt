@@ -1,0 +1,67 @@
+int 
+num;  
+  
+Suppose that first points to the first node in the list. Initially, the list is empty, so both first and last are 
+NULL. Thus, we must have the statements  
+  
+first = NULL;  
+last = NULL;  
+  
+to initialize first and last to NULL.  
+  
+Next, consider the following statements:  
+  
+1 
+cin >> num;     
+  
+  
+  
+//read and store a number in num  
+2 
+newNode = new nodeType;      
+//allocate memory of type nodeType  
+//and store the address of the  
+//allocated memory in newNode 3  
+ newNode->info = num;   
+  
+  
+//copy the value of num into the  
+//info field of newNode  
+4 
+newNode->link = NULL;   
+  
+  
+//initialize the link field of  
+//newNode to NULL  
+5 
+if (first == NULL)   
+  
+  
+  
+//if first is NULL, the list is empty;  
+//make first and last point to newNode  
+{  
+ 
+5a   
+  
+first = newNode;  
+ 
+5b   
+  
+last = newNode;  
+}  
+6 
+else     
+  
+  
+  
+  
+//list is not empty  
+{  
+6a   
+  
+last->link = newNode;   
+  
+//insert newNode at the end of the list 6b  
+  
+la

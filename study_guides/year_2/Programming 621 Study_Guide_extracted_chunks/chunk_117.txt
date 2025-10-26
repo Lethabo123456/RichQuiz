@@ -1,0 +1,18 @@
+is placed before the function larger, the identifier larger 
+will be undefined when the function main is compiled. To work around this problem of 
+undeclared identifiers, we place function prototypes before any function definition 
+(including the definition of main). 
+ 
+The function prototype is not a definition. It gives the program the name of the function, 
+the number and data types of the parameters, and the data type of the returned value: 
+just enough information to let C++ use the function. It is also a promise that the full 
+definition will appear later in the program. If you neglect to write the definition of the 
+function, the program may compile, but it will not execute. 
+ 
+Function Prototype: The function heading, terminated by a semicolon, ;, without the 
+body of the function. 
+The general syntax of the function prototype of a value-returning function is: 
+ 
+(Note that the function prototype ends with a semicolon.) 
+For the function larger, the prototype is:  
+double large

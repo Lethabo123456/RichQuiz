@@ -1,0 +1,34 @@
+Assigning User Interfaces to Activities 
+ 
+A new Activity starts with a temptingly empty screen onto which you place your UI. To do so, 
+call setContentView, passing in the View instance, or layout resource, to display. Because empty 
+screens aren’t particularly inspiring, you will almost always use setContentView to assign an Activity’s 
+UI when overriding its onCreate handler. The setContentView method accepts either a layout’s 
+resource ID or a single View instance. This lets you defi ne your UI either in code or using the preferred 
+technique of external layout resources. 
+ 
+@Override 
+public void onCreate(Bundle savedInstanceState) { 
+super.onCreate(savedInstanceState); 
+setContentView(R.layout.main); 
+} 
+
+Using layout resources decouples your presentation layer from the application logic, providing the 
+fl exibility to change the presentation without changing code. This makes it possible to specify different 
+layouts optimized for different hardware confi gurations, even changing them at run time based 
+on hardware changes (such as screen orientation changes). 
+You can obtain a reference to each of the Views within a layout using the findViewById method: 
+ 
+TextView myTextView = (TextView)findViewById(R.id.myTextView); 
+ 
+If you prefer the more traditional approach, you can construct the UI in code: 
+ 
+@Override 
+public void onCreate(Bundle savedInstanceState) { 
+super.onCreate(savedInstanceState); 
+ 
+        TextView myTextView = new TextView(this); 
+        setContentView(myTextView); 
+ 
+        myTextView.setText(“Hello, Android”); 
+} 

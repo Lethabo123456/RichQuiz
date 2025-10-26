@@ -1,0 +1,23 @@
+Case 1 
+
+The denominator is a product of distinct linear factors (no factor is repeated 
+or a constant multiple of another). 
+For example, ∫3𝑥+6/𝑥**2+5𝑥+4  𝑑𝑥. Since the degree of the numerator is less than 
+the degree of the denominator we don't need to divide. The denominator 
+can be factored as follows: 𝑥2 + 5𝑥+ 4 = (𝑥+ 1)(𝑥+ 4).  
+
+Since the denominator has distinct linear factors we can write the rational 
+fraction as the sum of two or more partial fractions as follows: 
+
+3𝑥+6/(𝑥+1)(𝑥+4) = 𝐴/𝑥+1 + 𝐵/𝑥+4  
+
+By multiplying both sides by (𝑥+ 1)(𝑥+ 4) we have:
+ 
+3𝑥+ 6 = 𝐴(𝑥+1)(𝑥+4)/𝑥+1 + 𝐵(𝑥+1)(𝑥+4)/𝑥+4
+      = 𝐴(𝑥+ 4) + 𝐵(𝑥+ 1) 
+      = 𝐴𝑥+ 4𝐴+ 𝐵𝑥+ 𝐵 
+      = (𝐴+ 𝐵)𝑥+ 4𝐴+ 𝐵
+
+
+From this equation we can match terms of the same degree to determine the 
+coefficients by solving the following system of equations: 

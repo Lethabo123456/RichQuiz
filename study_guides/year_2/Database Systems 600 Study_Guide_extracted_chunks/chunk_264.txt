@@ -1,0 +1,38 @@
+into smaller collections quickly and easily using the GROUP 
+BY clause within the SELECT statement. The aggregate functions will then summarize the data 
+within each smaller collection. The syntax is:  
+SELECT   
+column-list 
+FROM  
+ 
+table-list 
+[WHERE   
+condition-list]  
+[GROUP BY  
+column-list]  
+[ORDER BY 
+ column-list [ASC | DESC]];  
+What if instead of seeing the price across all products, the users wanted to see the average price of 
+the products provided by each vendor? The following query will answer that question.  
+SELECT   
+V_CODE, AVG(P_PRICE) AS AVGPRICE 
+FROM  
+ 
+PRODUCT  
+GROUP BY  
+V_CODE; 
+Having Clause 
+Aggregate functions are very powerful and are used frequently in reporting. However, restricting 
+data based on an aggregate value is slightly more complicated and can require the use of a 
+HAVING clause. The syntax for a HAVING clause is:  
+SELECT   
+column-list 
+FROM  
+ 
+table-list 
+[WHERE   
+condition-list]  
+[GROUP BY 
+column-list]  
+[HAVING   
+condition-list]

@@ -1,0 +1,31 @@
+1.3 Exploring Datasets with Pandas 
+Data exploration is a crucial step in data analysis that helps you understand the dataset you are working with. Some 
+main data exploration methods include filtering and sorting the data. For this topic, we will use the dataset named 
+"Data Breaches - Business Services 2005-2017" 
+(https://query.data.world/s/ylky6rnenwuv5xoaojoc6bekm37c2g?dws=00000).  
+ 
+Read_csv() and head() 
+The pd.read_csv() method reads and stores the data in a DataFrame called df. If we want to check if the dataset has 
+been successfully loaded, we can use the head() method to extract the first five rows in our DataFrame. When we 
+print the first five rows of df, each row will be numbered starting from 0. Depending on the IDE being used, you may 
+see all the columns displayed or only a selected few, with the rest represented by '…'. The final line of the output 
+shows us the number of rows being displayed and the total number of columns df.  
+
+info() 
+We can use the info() method to learn more about the information stored within df. The first part of the output will 
+show the number of rows and columns in df. Next, we will be presented with a table containing each column's name, 
+the number of non-null values, and the data type. We will also see the amount of memory that this DataFrame uses 
+up. 
+
+describe() 
+The describe() method provides us with the total number of values, the unique values, the value that appears the 
+most, and the frequency for each column.  
+
+Filter 
+We can filter data by selecting a column and providing a condition on which the data should be filtered. In our 
+example, we want the columns in which the type of breach was caused by hacking. NB: remember that we use ‘==’ to 
+check for equality.  
+
+Sort 
+The values in our dataset can be sorted using the sort_values() method. We specify the column whose values should 
+be used to sort the list using the ‘by’ keyword.  

@@ -1,0 +1,14 @@
+ntegrity and Security Measures 
+Once the physical organization of the tables, indexes, and views are defined, the database is ready 
+for the end users. However, before users can access the data in the database, they must be properly 
+authenticated. In this step of physical design, two tasks must be addressed: 
+ 
+Define user and security groups and roles. User management is more a function of database 
+administration than database design. However, as a designer you must know the different types 
+of users and groups of users to properly enforce database security. Most DBMS 
+implementations support the use of database roles. A database role is a set of database privileges 
+that could be assigned as a unit to a user or group. For example, you could define an Advisor 
+role that has Read access to the schedule view 
+ 
+Assign security controls. The DBMS also allows administrators to assign specific access rights 
+for database objects to a user or group of users. For example, you could assig

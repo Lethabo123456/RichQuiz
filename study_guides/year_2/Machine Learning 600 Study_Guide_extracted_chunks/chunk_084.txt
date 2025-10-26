@@ -1,0 +1,13 @@
+sting which pages might be of interest 
+to the user is commonplace to keep a website more compelling and “sticky.” For this type of 
+mining, you require a mechanism for knowing which user is looking at which pages; the user 
+could be identified by a user session, a cookie ID, or a previous user login where sites require 
+users to log in to see the information. If you have access to your website log files, then there 
+is opportunity for you to mine the information. Many companies use the likes of Google 
+Analytics as it saves them mining logs themselves, but it's worthwhile doing your own analysis 
+if you can. 
+The basic log file, for example, has information against which you could run some basic 
+association rules learning. Looking at the Apache Common Log Format (CLF), you can see the 
+IP address of the request and the file it was trying to access. By extracting the URL and the IP 
+address, the association rules could eventually suggest related content on your site that 
+would be of

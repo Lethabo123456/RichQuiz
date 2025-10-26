@@ -1,0 +1,27 @@
+1.15 Network Switching 
+Switches can be a valuable asset to networking. Overall, they can increase the capacity and speed 
+of your network. However, switching should not be seen as a cure-all for network issues. Before 
+incorporating network switching, you must first ask yourself two important questions: First, how 
+can you tell if your network will benefit from switching? Second, how do you add switches to your 
+network design to provide the most benefit?
+
+This tutorial is written to answer these questions. Along the way, we’ll describe how switches 
+work, and how they can both harm and benefit your networking strategy. We’ll also discuss 
+different network types, so you can profile your network and gauge the potential benefit of 
+network switching for your environment. 
+
+1.15.1 What is a Switch? 
+Switches occupy the same place in the network as hubs. Unlike hubs, switches examine each 
+packet and process it accordingly rather than simply repeating the signal to all ports. Switches map 
+the Ethernet addresses of the nodes residing on each network segment and then allow only the 
+necessary traffic to pass through the switch. When a packet is received by the switch, the switch 
+examines the destination and source hardware addresses and compares them to a table of 
+network segments and addresses. If the segments are the same, the packet is dropped or 
+“filtered”; if the segments are different, then the packet is “forwarded” to the proper segment. 
+Additionally, switches prevent bad or misaligned packets from spreading by not forwarding them. 
+Filtering packets and regenerating forwarded packets enables switching technology to split a 
+network into separate collision domains. The regeneration of packets allows for greater distances 
+and more nodes to be used in the total network design, and dramatically lowers the overall 
+collision rates. In switched networks, each segment is an independent collision domain. This also 
+allows for parallelism, meaning up to one-half of the computers connected to a switch can send 
+data at the same time. In shared networks all nodes reside in a single shared collision domain.

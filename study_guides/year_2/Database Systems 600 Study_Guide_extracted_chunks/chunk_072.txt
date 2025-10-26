@@ -1,0 +1,17 @@
+entations to model database 
+components.  
+The ER model is based on the following components:  
+ 
+Entity. Earlier in this chapter, an entity was defined as anything about which data will be 
+collected and stored. An entity is represented in the ERD by a rectangle, also known as an 
+entity box. The name of the entity, a noun, is written in the centre of (ER) model (ERM) the 
+rectangle. The entity name is generally written in capital letters and in singular form. 
+Usually, when applying the ERD to the relational model, an entity is mapped to a relational 
+table. Each row in the relational table is known as an entity instance or entity occurrence in 
+the ER model. A collection of like entities is known as an entity set. Technically speaking, 
+the ERD (1:1, 1:M, and M:N) depicts entity sets. 
+ 
+Each entity consists of a set of attributes that describes characteristics of the entity.  
+ 
+Relationships. Relationships describe associations among data. Most relationships describe 
+associati

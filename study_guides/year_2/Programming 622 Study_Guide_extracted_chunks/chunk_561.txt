@@ -1,0 +1,31 @@
+eys hash to the same slot, creating a list of length n.  
+
+279  
+  
+ The Division Method  
+Map a key k into one of m slots by taking the remainder of k divided by m. That is, the hash function is 
+h(k) = k mod m.   
+Example:  
+    If table size m = 12                 
+key k = 100  
+    than  
+        h(100) = 100 mod 12  
+                   = 4  
+    
+Poor choices of m  m should not be a power of 2, since if m = 2p, then h(k) is just the p lowest-order bits 
+of k. So, 2p may be a poor choice, because permuting the characters of k does not change value.   
+    
+Good m choice of m   
+A prime not too close to an exact of 2.    
+The Multiplication Method  
+Two step process  
+Step 1: Multiply the key k by a constant 0< A < 1 and extract the fraction part of kA.  Step 
+2: Multiply kA by m and take the floor of the result.   
+  
+The hash function using multiplication method is:   
+  
+h(k) = ëm(kA mod 1)û    
+  
+where "kA mod 1" means the fractional part of kA, that is, kA -  ëkAû.  
+  
+Advant

@@ -1,0 +1,40 @@
+ion insertIntoAVL also uses a reference bool parameter, isTaller, to indicate to the parent 
+whether the subtree grew in height or not.  
+  
+template <class elemT>  
+void insertIntoAVL(AVLNode<elemT>* &root, AVLNode<elemT> *newNode, bool& isTaller)  
+{  
+if (root == NULL)  
+{  
+root = newNode; isTaller 
+= true;  
+}  
+else if (root->info == newNode->info) cerr << "No 
+duplicates are allowed." << endl; else if (root->info > 
+newNode->info) //newItem goes in //the left subtree  
+{  
+insertIntoAVL(root->llink, 
+newNode, 
+isTaller); 
+if 
+(isTaller) //after insertion, the subtree grew in height  
+switch (root->bfactor)  
+{  
+case -1:  
+balanceFromLeft(root)
+; isTaller = false; break; case 0: 
+root->bfactor = -1; isTaller = 
+true; break;  case 1: root-
+>bfactor = 0;  
+isTaller = false;  
+}//end switch  
+}//end if  
+else  
+{  
+insertIntoAVL(root->rlink, newNode, isTaller); if 
+(isTaller) //after insertion, the subtree grew in  
+//height switch 
+(root->bfactor)  
+{ case -1: root-
+>bfacto
+r = 0;

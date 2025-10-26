@@ -1,0 +1,21 @@
+1.6.3 Switch statements: an alternative to nested ifs 
+Nested if statements are hard to read, hard to get right, and hard to debug. When you have 
+a complex set of choices to make, the switch statement is a more powerful alternative. The 
+logic of a switch statement is "pick a matching value and act accordingly." 
+ 
+switch (expression) 
+{ 
+case constant-expression 
+: statement 
+jump-statement 
+[d f
+l
+ 
+As you can see, like an if statement, the expression is put in parentheses in the head of the 
+switch statement. Each case statement then requires a constant expression; that is, a literal 
+or symbolic constant or an enumeration. 
+ 
+If a case is matched, the statement (or block of statements) associated with that case is 
+executed. This must be followed by a jump statement. Typically, the jump statement is break, 
+which transfers execution out of the switch. An alternative is a goto statement, typically used 
+to jump into another case, as illustrated in Example 1-9 

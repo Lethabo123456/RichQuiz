@@ -1,0 +1,20 @@
+ical storage 
+properties. For example, performance can be affected by characteristics of the storage media, such 
+as seek time, sector and block (page) size, buffer pool size, and the number of disk platters and 
+read/write heads. In addition, factors such as the creation of an index can have a considerable effect 
+on the relational database’s performance—that is, data access speed and efficiency. In summary, 
+physical design performance measurement deals with fine-tuning the DBMS and queries to ensure 
+that they will meet end-user performance requirements. 
+ 
+ 
+5.7 Design Strategies 
+ 
+There are two classical approaches to database design:  
+ 
+Top-down design starts by identifying the data sets and then defines the data elements for each 
+of those sets. This process involves the identification of different entity types and the definition 
+of each entity’s attributes.  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Ch

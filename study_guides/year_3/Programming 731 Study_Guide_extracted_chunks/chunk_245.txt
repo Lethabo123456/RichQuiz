@@ -1,0 +1,27 @@
+CHAPTER SIX: EXCEPTIONS HANDLING AND FILES   
+ 
+6.1 Learning about the Exceptions   
+An exception is an unexpected or error condition. The programs you write can generate many types 
+of potential exceptions. As examples:   
+• A program might issue a command to read a file from a disk, but the file does not exist there.   
+• A program might attempt to write data to a disk, but the disk is full or unformatted.   
+• A program might ask for user input, but the user enters an invalid data type.   
+• A program might attempt to divide a value by 0.   
+• A program might try to access an array with a subscript that is too large or too mall. 
+
+These errors are called exceptions because, presumably, they are not usual occurrences; they are 
+“exceptional.” Exception handling is the name for the objectoriented techniques that manage or 
+resolve such errors. Unplanned exceptions that occur during a program’s execution are also called 
+runtime exceptions, in contrast with syntax errors that are discovered during program compilation.   
+   
+In Java, all exceptions are represented by classes. All exception classes are derived from a class called 
+Throwable. Thus, when an exception occurs in a program, an object of some type of exception class 
+is generated. There are two direct subclasses of Throwable:   
+Exception and Error. Exceptions of type Error are related to errors that occur in the Java Virtual 
+Machine itself, and not in your program. These types of exceptions are beyond your control, and 
+your program will not usually deal with them. Thus, these types of exceptions are not described 
+here.    
+Errors that result from program activity are represented by subclasses of Exception. For example, 
+divide-by-zero, array boundary, and file errors fall into this category. In general, your program should 
+handle exceptions of these types. An important subclass of Exception is RuntimeException, which is 
+used to represent various common types of run-time errors. 

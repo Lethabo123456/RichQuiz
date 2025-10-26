@@ -1,0 +1,49 @@
+eport 
+the error. switch (ch)  
+{  
+case '+': //add the operands: op1 + 
+op2 stack.push(op1 + op2); 
+break;  
+  
+case '-': //subtract the operands: op1 - op2 
+stack.push(op1 - op2); break; case '*': 
+//multiply the operands: op1 * op2 
+stack.push(op1 * op2); break; case '/': //If 
+(op2 != 0), op1 / op2 stack.push(op1 / 
+op2); break; otherwise operation is illegal  
+{  
+output an appropriate message;  
+set expressionOk to false  
+}  
+} //end switch  
+}  
+
+205  
+  
+  
+Following this pseudocode, the definition of the function evaluateOpr is as follows:  
+  
+void evaluateOpr(ofstream& out, stackType<double>& stack, char& ch, bool& isExpOk)  
+{  
+double op1, op2;  
+if (stack.isEmptyStack())  
+{  
+out << " (Not enough operands)";  
+isExpOk = false;  
+}  
+else  
+{  
+op2 = stack.top(); stack.pop();  
+if (stack.isEmptyStack())  
+{  
+out << " (Not enough operands)";  
+isExpOk = false;  
+}  
+else  
+{  
+op1 = stack.top(); stack.pop();  
+switch (ch)  
+{  
+case '+':  
+stack.push(op1 + op2); 
+break;

@@ -1,0 +1,20 @@
+n the client side and DBMS performance-tuning practices on the 
+server side. However, before you start learning about the tuning processes, you must first learn 
+more about the DBMS architectural components and processes, and how those processes interact 
+to respond to end-users’ requests.  
+ 
+DBMS Architecture 
+The architecture of a DBMS is represented by the processes and structures (in memory and 
+permanent storage) used to manage a database. Such processes collaborate with one another to 
+perform specific functions. Figure 11.1 illustrates the basic DBMS architecture. 
+ 
+ 
+ 
+Database Query Optimization Modes 
+Most of the algorithms proposed for query optimization are based on two principles:  
+ 
+The selection of the optimum execution order to achieve the fastest execution time  
+ 
+The selection of sites to be accessed to minimize communication costs 
+Within those two principles, a query optimization algorithm can be evaluated on the basis of its 
+operation mode or the timing of i

@@ -1,0 +1,27 @@
+NION  
+SELECT  CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE 
+FROM  
+CUSTOMER_2; 
+The UNION statement can be used to unite more than just two queries. For example, assume that 
+you have four union-compatible queries named T1, T2, T3, and T4. With the UNION statement, 
+you can combine the output of all four queries into a single result set. The SQL statement will be 
+similar to this:  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 302-311. 
+
+ 
+110 
+SELECT  column-list FROM T1  
+UNION  
+SELECT  column-list FROM T2  
+UNION  
+SELECT  column-list FROM T3  
+UNION  
+SELECT  column-list FROM T4; 
+UNION ALL 
+If SaleCo’s management wants to know how many customers are on both the CUSTOMER and 
+CUSTOMER_2 lists, a UNION ALL query can be used to produce a relation that retains the 
+duplicate rows. The syntax is the same as that of the UNION query, where the UNION is replaced 
+by the UNION ALL claus

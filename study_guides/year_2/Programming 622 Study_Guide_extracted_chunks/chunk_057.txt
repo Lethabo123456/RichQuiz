@@ -1,0 +1,20 @@
+sent the hours, 
+one to represent the minutes, and one to represent the seconds. We also want to perform the following 
+operations on the time:  
+  
+1. Set the time.  
+2. Return the time.  
+3. Print the time.  
+4. Increment the time by one second.  
+5. Increment the time by one minute.  
+6. Increment the time by one hour.  
+7. Compare two times for equality.  
+  
+From this discussion, it is clear that the class clockType has 10 members: three data members and seven 
+function members.  
+  
+Some members of the class clockType will be private; others will be public. Deciding which member to 
+make private and which to make public depends on the nature of the member. The general rule is that 
+any member that needs to be accessed outside the class is declared public; any member that should not 
+be accessed directly by the user should be declared private. For example, the user should be able to set 
+the time and print the time. Therefore, the members that set the time and print the time shoul

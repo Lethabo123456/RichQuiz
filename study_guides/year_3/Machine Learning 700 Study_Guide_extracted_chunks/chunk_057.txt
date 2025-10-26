@@ -1,0 +1,54 @@
+2.4.3 Choosing the Right Number of Principal Components 
+A key challenge in PCA is determining how many principal components to retain. The explained variance 
+ratio helps in making this decision by indicating the proportion of total variance captured by each 
+component. 
+
+Explained Variance Ratio 
+The sum of all eigenvalues represents the total variance in the dataset. Each principal component’s 
+eigenvalue represents the fraction of total variance it explains. The cumulative explained variance helps 
+determine how many components are necessary to retain meaningful information. 
+Selecting the Optimal Number of Components
+ 
+1. Scree Plot Method 
+✓ A scree plot displays the explained variance ratio for each principal component. 
+✓ The "elbow point" in the plot indicates the optimal number of components. 
+2. Variance Threshold Approach 
+✓ Retain enough components to explain at least 90-95% of the variance. 
+✓ Example: If the first three components explain 92% of the variance, the rest can be 
+discarded. 
+3. Cross-Validation 
+✓ Test different numbers of components and evaluate model performance to determine the 
+best balance between accuracy and complexity. 
+
+Fig 2.4 illustrates the effect of PCA on a synthetic two-dimensional dataset. The first plot (top left) shows 
+the original data points, colored to distinguish between them. The algorithm proceeds by first finding the 
+direction of maximum variance, labeled “Component 1.” This is the direction (or vector) in the data that 
+contains most of the information, or in other words, the direction along which the features are most 
+correlated with each other. Then, the algorithm finds the direction that contains the most information 
+while being orthogonal (at a right angle) to the first direction. In two dimensions, there is only one 
+
+possible orientation that is at a right angle, but in higher-dimensional spaces there would be (infinitely) 
+many orthogonal directions. Although the two components are drawn as arrows, it doesn’t really matter 
+where the head and the tail are; we could have drawn the first component from the center up to 140 the 
+top left instead of down to the bottom right. The directions found using this process are called principal 
+components, as they are the main directions of variance in the data. In general, there are as many 
+principal components as original features. 
+ 
+Fig 2.4 The effect of PCA on a synthetic two-dimensional dataset 
+
+The second plot (top right) shows the same dataset but with a rotation applied, such that the first 
+principal component aligns with the x-axis and the second principal component aligns with the y-axis. 
+Before this rotation, the data had the mean subtracted to center it around zero. After the rotation, the 
+two axes become uncorrelated, meaning the correlation matrix of the data in this new configuration has 
+zeros off the diagonal. 
+
+PCA can be used for dimensionality reduction by retaining only a subset of the 
+principal components. In this case, we could keep just the first principal component, as shown in the
+third panel (bottom left), which reduces the data from two dimensions to one. It’s important to note that 
+instead of keeping just one of the original features, we’ve identified and preserved the most important 
+direction (from top left to bottom right in the first panel) — the first principal component. Finally, by 
+reversing the rotation and adding the mean back to the data, we get the last panel. 
+
+The points are now back in the original feature space, but only the information from the first principal component is 
+preserved. This transformation is often used to remove noise or to visualize the retained information 
+through the principal components.

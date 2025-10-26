@@ -1,0 +1,15 @@
+rogressively breaking up the relation (table) into a set of new relations (tables) 
+based on the identified dependencies. 
+Two types of functional dependencies that are of special interest in normalization are partial 
+dependencies and transitive dependencies. A partial dependency exists when there is a functional 
+dependence in which the determinant is only part of the primary key. For example, if (A, B)  (C, 
+
+ 
+81 
+D), B  C, and (A, B) is the primary key, then the functional dependence B  C is a partial 
+dependency because only part of the primary key (B) is needed to determine the value of C.  
+A transitive dependency exists when there are functional dependencies such that X Y, Y  Z, 
+and X is the primary key. In that case, the dependency X  Z is a transitive dependency because 
+X determines the value of Z via Y. An effective way to identify transitive dependencies is: they 
+occur only when a functional dependence exists among nonprime attributes. To address the 
+problems rel

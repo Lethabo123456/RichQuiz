@@ -1,0 +1,31 @@
+The navigation bar Element 
+The <nav> element defines a block of navigation links, either within the current 
+document or to other documents. Note, that not all links in the HTML document can be 
+placed inside the <nav> element; it can only include major navigation blocks. 
+ 
+The article Element 
+The <article> element is used to define an independent, self-contained content 
+(articles, blog posts, comments, etc.). The content of the element has its meaning, and 
+it is easily differentiated from the rest of the webpage content. 
+ 
+The aside Element 
+Describes content aside from the page content. 
+ 
+The footer Element 
+Often a footer will contain copyright information, lists of related links, author 
+information, and similar information that you normally think of as coming at the end of 
+a block of content; however, much like aside and header, a footer element is not 
+defined in terms of its position on the page, so it does not have to appear at the end of 
+a section, or at the bottom of a page. Most likely it will, but this is not required.      
+    
+Using Sectioning Elements 
+The first task in designing the page body is to identify the page’s major topics. A page 
+typically has a header, one or more articles that are the chief focus of the page, and a 
+footer that provides contact information for the author or company. HTML marks these 
+major topical areas using the sectioning elements. 
+ 
+HTML Sectioning Elements
+
+For example, a news blog page might contain several major topics. To identify these areas, the 
+HTML code for the blog might include the following elements to mark off the page’s header, 
+navigation list, article, aside, and footer.  

@@ -1,0 +1,22 @@
+ Business reference model (BRM): Describes an organization through a taxonomy of common 
+mission and support service areas. The BRM provides guidance in defining functions and 
+services in various mission sectors of the enterprise and is linked to the business services 
+domain. An example of a BRM artifact for this domain is a use-case narrative and diagram that 
+describes a set of possible sequences of interactions between systems and users in a particular 
+environment and related to a particular goal. 
+
+ Data reference model (DRM): Facilitates discovery of existing data holdings residing in silos 
+and enables understanding the meaning of the data, how to access it, and how to leverage it 
+to support performance results. The DRM is linked to the data and information domain. An 
+example of a DRM artifact for this domain is a data dictionary, which is a centralized repository 
+of information about data such as name, type, range of values, source, and authorization for 
+access for each data element in the organization’s files and databases.
+
+ Application reference model (ARM): Categorizes the system- and application-related 
+standards and technologies that support the delivery of service capabilities. The ARM provides 
+guidance in developing a uniform scheme for documenting system, components, and 
+interfaces and for managing application portfolios. It is linked to the enabling applications 
+domain. An example of an ARM artifact for this domain is a system/application evolution 
+diagram. This artifact documents the planned incremental steps toward migrating a suite of 
+systems and/or applications to a more efficient suite, or toward evolving a current system or 
+application to a future implementation. 

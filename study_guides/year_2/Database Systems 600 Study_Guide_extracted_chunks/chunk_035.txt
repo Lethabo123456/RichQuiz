@@ -1,0 +1,14 @@
+risks. In terms of spreadsheet data, while many spreadsheet 
+programs provide rudimentary security options, they are not always used, and even when they 
+are, they are insufficient for robust data sharing among users.  
+• 
+Extensive programming. Making changes to an existing file structure can be difficult in a file 
+system environment. Modifications are likely to produce errors (bugs), and additional time is 
+spent using a debugging process to find those errors. Those limitations, in turn, lead to problems 
+of structural and data dependence. 
+Structural and Data Dependence 
+A file system exhibits structural dependence, which means that access to a file is dependent on its 
+structure. For example, adding a customer date-of-birth field to a CUSTOMER file would require 
+the four steps described in the previous section resulting in the need for the file system programs to 
+be modified to conform to the new file structure. Thus, the file system application programs exhibit 
+structural depe

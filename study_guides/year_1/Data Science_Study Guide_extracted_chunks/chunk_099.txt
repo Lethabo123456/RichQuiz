@@ -1,0 +1,30 @@
+Let's now pretend that our universe involves a research study on humans, and the A event is people 
+in that study who have cancer. If our study has 100 people and A has 25 people, the probability of A 
+or P(A) is 25/100. The maximum probability of any event is 1. This can be understood as the red circle 
+grows so large that it is the size of the universe (the larger circle). 
+ 
+The most basic examples (I promise they will get more interesting) are coin flips. Let's say we have 
+two coins and we want the probability that we will roll two heads. We can very easily count the 
+number of ways two coins could end up being two heads. There's only one! Both coins have to be 
+heads. But how many options are there? It could either be two heads, two tails, or a heads/tails 
+combination (Sinan, 2016). 
+ 
+First, let's define A. It is the event in which two heads occur. The number of ways that A can occur is 
+1. The sample space of the experiment is {HH, HT, TH, TT}, where each two letter word indicates the 
+outcome of the first and second coin simultaneously. The size of the sample space is four. So, P (getting 
+two heads) = 1/4. Let's refer to a quick visual table to prove it. The following table denotes the options 
+for coin 1 as the columns and the options for coin 2 as the rows. In each cell, there is either a True or 
+a False. A True value indicates that it satisfies the condition (both heads) and False indicates otherwise. 
+ 
+ 
+5.3 Bayesian versus Frequentist 
+The previous example was almost too easy. In practice, we can barely ever truly count the number of 
+ways something can happen. For example, let's say that we want to know the probability of a random 
+person smoking cigarettes at least once a day. If we wanted to approach this problem using the 
+classical way (the previous formula), we would need to figure out how many different ways a person 
+is a smoker—someone who smokes at least once a day—which is not possible! 
+ 
+When faced with such a problem, two main schools of thought are considered when it comes to 
+calculating probabilities in practice: The Frequentist approach and the Bayesian approach. This 
+chapter will focus heavily on the Frequentist approach while the subsequent chapter will dive into the 
+Bayesian analysis. 

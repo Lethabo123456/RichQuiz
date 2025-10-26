@@ -1,0 +1,27 @@
+7.2.1 Maintenance Prediction
+   
+Maintenance prediction is concerned with trying to assess the changes that may be required in a 
+software system and with identifying those parts of the system that are likely to be the most 
+expensive to change.  
+If you understand this, you can design the software components that are most likely to change to 
+make them more adaptable. You can also invest effort in improving those components to reduce 
+their lifetime maintenance costs. By predicting changes, you can also assess the overall 
+maintenance costs for a system in a given time period and so set a budget for maintaining the 
+software.  
+Predicting the number of change requests for a system requires an understanding of the 
+relationship between the system and its external environment. Some systems have a very 
+complex relationship with their external environment, and changes to that environment 
+inevitably result in changes to the system. To evaluate the relationships between a system and its 
+environment, you should look at: 
+ 
+• The number and complexity of system interfaces The larger the number of inter-faces and 
+the more complex these interfaces, the more likely it is that interface changes will be 
+required as new requirements are proposed. 
+• The number of inherently volatile system requirements As I discussed in Chapter 4, 
+requirements that reflect organizational policies and procedures are likely to be more 
+volatile than requirements that are based on stable domain characteristics. 
+• The business processes in which the system is used As business processes evolve, they 
+generate system change requests. As a system is integrated with more and more business 
+processes, there are increased demands for changes. 
+
+Figure 7.1: Maintenance prediction 

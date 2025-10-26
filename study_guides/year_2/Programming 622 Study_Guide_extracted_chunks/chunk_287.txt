@@ -1,0 +1,28 @@
+definition to find 3!. Here n = 3. Because n > 0, we use Equation 4-2 to obtain:  
+  
+3! = 3 x 2!  
+  
+Next, we find 2! Here n = 2. Because n > 0, we use Equation 4-2 to obtain:  
+  
+2! = 2 x 1!  
+  
+Now to find 1!, we again use Equation 4-2 because n = 1 > 0. Thus:  
+  
+1! = 1 x 0!  
+  
+  
+  
+  
+  
+  
+
+145  
+  
+Finally, we use Equation 4-1 to find 0!, which is 1. Substituting 0! into 1! gives 1! = 1. This 
+gives 2! = 2 x 1! = 2 x 1 = 2, which in turn gives 3! = 3 x 2! = 3 x 2 = 6.  
+  
+The solution in Equation 4-1 is direct—that is, the right side of the equation contains no factorial notation. 
+The solution in Equation 4-2 is given in terms of a smaller version of itself. The definition of the factorial 
+given in Equations 4-1 and 4-2 is called a recursive definition. Equation 4-1 is called the base case (that is, 
+the case for which the solution is obtained directly); Equation 4-2 is called the general case. Recursive 
+definition: A definition in which something is defined in terms

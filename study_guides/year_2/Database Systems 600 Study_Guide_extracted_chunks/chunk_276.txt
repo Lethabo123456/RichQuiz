@@ -1,0 +1,19 @@
+MS before you can 
+start creating tables. Authentication is the process the DBMS uses to verify that only registered 
+users access the database. To be authenticated, you must log on to the RDBMS using a user ID and 
+a password created by the database administrator. In an enterprise RDBMS, every user ID is 
+associated with a database schema. 
+The Database Schema 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 311-315. 
+
+ 
+112 
+In the SQL environment, a schema is a logical group of database objects—such as tables and 
+indexes—that are related to each other. Usually, the schema belongs to a single user or application. 
+A single database can hold multiple schemas that belong to different users or applications. Schemas 
+are useful in that they group tables by owner (or function) and enforce a first level of security by 
+allowing each user to see only the tables that belong to that user.  
+ANSI SQL standar

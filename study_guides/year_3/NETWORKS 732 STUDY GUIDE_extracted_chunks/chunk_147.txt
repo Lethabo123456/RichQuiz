@@ -1,0 +1,44 @@
+3.6 Defense in Depth 
+A defense-in-depth strategy refers to the practice of using multiple layers of security between 
+data and the resources on which it resides, as well as possible threats. A threat is any action or 
+event that could negatively impact an organization’s system, data, or operations. Threats fall into 
+two primary categories: internal and external. Internal threats originate within the local network. 
+While these users often have legitimate access, they may misuse it intentionally or accidentally, 
+posing a significant risk because they are already inside the firewall. External threats come from 
+outside the firewall. These are typically hackers of all abilities. Hence, it is crucial to understand 
+the vulnerability and threat before designing the defense. 
+ 
+A vulnerability is a weakness in software, hardware, systems, or processes that can be exploited 
+by a threat actor. Organizations regularly perform vulnerability assessments to continuously 
+identify and address these weaknesses before they can be exploited. To prioritize remediation, 
+the security teams use the Common Vulnerability Scoring System (CVSS). CVSS ranks 
+vulnerabilities by severity and impact. These scores feed into the CVE database, managed by 
+MITRE, to help security teams track and address known vulnerabilities. Moreover, the 
+vulnerabilities with the highest severity are those targeted by a zero-day attack. A zero-day attack 
+is an exploit that occurs against vulnerabilities that have not yet been publicly disclosed or 
+patched. This attack carries the highest risk until a solution is developed. An exploit occurs when 
+a threat actor successfully leverages a vulnerability to launch an attack. 
+The concept of least privilege plays a pivotal role in minimizing the impact of threats and 
+vulnerabilities. This concept states that users should be given access only to the resources needed 
+to do their job, limiting potential damage if a user is compromised. More so, the Role-Based 
+Access Control (RBAC) complements least privilege as it organizes permissions based on job roles 
+(Lammle, 2015). 
+
+Additionally, zero trust assumes no user, device, or network traﬃc should be 
+trusted by default, even if it originates inside the organization. Conﬁguration under this zero trust 
+denies all requests by default, only allowing traﬃc and actions that have been speciﬁcally 
+authorized. This approach signiﬁcantly enhances their ability to protect critical data and systems, 
+ensuring the core objectives of conﬁdentiality, integrity, and availability remain secured. The first 
+layer of a good defense-in-depth strategy is appropriate access control strategies. The different 
+defense in depth strategies are discussed in the sub-sections below:
+
+3.6.1 Network segmentation 
+Maintaining network security becomes more manageable by dividing the network into segments 
+and carefully controlling access between them. (Lammle, 2015). This segmentation can be 
+implemented at various layers of the OSI model, from layer 1 to layer 3. This can be achieved at 
+layer 1 by separating devices into diﬀerent networks. At layer 2, by creating VLANs and using port 
+security on switches, which helps prevent unwanted connections between devices on the same 
+switch, and allows grouping users into virtual networks regardless of location and layer 3 
+segmentation is handled by conﬁguring access control lists (ACLs) on routers or ﬁrewalls. These 
+ACLs control traﬃc between subnets or VLANs, further enhancing security by strictly managing 
+which systems can communicate.

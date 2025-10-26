@@ -1,0 +1,31 @@
+1.4.2.2 The Existential Quantifier 
+Many mathematical statements assert that there is an element with a 
+certain property. Such statements are expressed using existential 
+quantification. With existential quantification, we form a proposition that is 
+true if and only if 𝑃(𝑥) is true for at least one value of 𝑥 in the domain. 
+ 
+Definition 12 
+The existential quantification of 𝑃(𝑥) is the proposition 
+“There exists an element 𝑥 in the domain such that 𝑃(𝑥).” 
+We use the notation ∃𝑥𝑃(𝑥) for the existential quantification of 𝑃(𝑥). Here 
+∃ is called the existential quantifier. 
+ 
+A domain must always be specified when a statement ∃𝑥𝑃(𝑥) is used. 
+Furthermore, the meaning of ∃𝑥𝑃(𝑥) changes when the domain changes. 
+Without specifying the domain, the statement ∃𝑥𝑃(𝑥) has no meaning. 
+Besides the phrase “there exists,” we can also express existential 
+quantification in many other ways, such as by using the words “for some,” 
+“for at least one,” or “there is.” The existential quantification ∃𝑥𝑃(𝑥) is read 
+as: 
+
+“There is an 𝑥 such that 𝑃(𝑥), ” 
+“There is at least one 𝑥 such that 𝑃(𝑥), ” 
+or 
+“For some 𝑥𝑃(𝑥).” 
+
+Worked Example 
+Let 𝑃(𝑥) denote the statement “𝑥 >  3. ” What is the truth value of the 
+quantification ∃𝑥𝑃(𝑥), where the domain consists of all real numbers? 
+Solution: 
+Because “𝑥 >  3” is sometimes true—for instance, when x = 4—the 
+existential quantification of 𝑃(𝑥), which is ∃𝑥𝑃(𝑥), is true. 

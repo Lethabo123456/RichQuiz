@@ -1,0 +1,20 @@
+is in a 1:M relationship with the parent entities and is composed of the 
+primary key attributes of each parent entity. Furthermore, the associative entity can have additional 
+attributes of its own, as shown by the ENROLL associative entity in Figure 4.23. When using the 
+Crow’s Foot notation, the associative entity is identified as a strong (identifying) relationship, as 
+indicated by the solid relationship lines between the parents and the associative entity. 
+
+ 
+58 
+ 
+ 
+Note that the composite ENROLL entity in Figure 4.23 is existence-dependent on the other two 
+entities; the composition of the ENROLL entity is based on the primary keys of the entities that are 
+connected by the composite entity.  
+Implementing the small database shown in Figure 4.23 requires that you define the relationships 
+clearly. Specifically, you must know the “1” and the “M” sides of each relationship, and you must 
+know whether the relationships are mandatory or optional.  
+ 
+ 
+Developing an ER Diagram 
+Th

@@ -1,0 +1,21 @@
+6.8 Working with the audio Element 
+Audio clips are embedded within a web page using the following audio element. 
+ 
+ 
+Where url specifies the source of the audio file and attributes define how the audio clip should 
+be handled by the browser. Figure 8-2 describes some of the attributes associated with HTML 
+audio and video elements. 
+ 
+For example, the following tag loads audio from the cp_overture.mp3 file and displays 
+the media player controls, which allows the user to interact with the audio clip from 
+within the web page: 
+ 
+If you don’t include a controls attribute, the audio clip is embedded within the page but 
+without the browser’s native media player. This can be used to create a soundtrack that 
+automatically starts and plays in the background. The following tag uses the cp_overture.mp3 
+file as background music, automatically starting when the page is loaded and looping back to 
+the beginning when the clip is finished: 
+ 
+Adding background sounds to a web page is generally discouraged 
+ 
+Audio formats in HTML 

@@ -1,0 +1,19 @@
+nversion, non-string values, such as 
+integers and floats, are converted to strings at the time they’re concatenated:  
+  
+$tempF = 451;  
+// Displays “ Books catch fire at 232.777777778 degrees C. ” echo 
+“Books catch fire at “ . ( (5/9) * ($tempF - 32) ) . “ degrees C.”;  
+  
+In fact, there is one other string operator — the combined assignment operator .= — which was 
+mentioned earlier in the chapter. It is useful when you want to join a new string onto the end of an 
+existing string variable. For example, the following two lines of code both do the same thing — they 
+change the string variable $x by adding the string variable $y to the end of it:  
+  
+$x = $x . $y; 
+$x .= $y;  
+  
+2.13 Constants  
+You can also define value-containers called constants in PHP. The values of constants, as their name 
+implies, can never be changed. Constants can be defined only once in a PHP program. Constants 
+differ from variables in that their names do not start with the dollar sign, but other than

@@ -1,0 +1,19 @@
+the popular databases that you are likely to come across, and how they differ 
+Examine the idea of relational databases   
+
+62   
+   
+Find out how to configure MySQL, a database system that is freely available and widely used with 
+PHP   
+   
+4.1 Databease Architecture   
+Before you get going, you need to settle on a particular database with which to experiment, and that 
+means first deciding on the type of database architecture you are going to use. Broadly speaking, you 
+have two main options: embedded and client-server. Let us take a brief look at both.   
+   
+4.2 Embedded Databases   
+An embedded database engine, as its name implies, sits inside the application that uses it (PHP in 
+this case). Therefore it always runs — and stores its data — on the same machine as the host 
+application.   
+The database is not networked, and only one program can connect to it at any given time. Moreover, 
+the database canno t be shared between different machines because each one would simply end up

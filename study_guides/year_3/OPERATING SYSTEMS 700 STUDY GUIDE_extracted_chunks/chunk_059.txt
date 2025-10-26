@@ -1,0 +1,19 @@
+Figure 2.5 
+ 
+In figure 2.5 above, Job 1 in this example, each page frame can hold 100 bytes. This job, at 
+350 bytes long, is divided among four-page frames. The resulting internal fragmentation 
+(wasted space) is Main Memory associated with Page 3; Page 3 loaded into Page Frame 11. 
+
+Figure 2.5 uses arrows and lines to show how a job’s pages fit into page frames in memory, 
+
+but the Memory Manager uses tables to keep track of them. There are essentially three 
+tables that perform this function: Job Table, Page Map Table, and Memory Map Table. 
+Although different operating systems may have different names for them, the tables provide the 
+same service regardless of the names they are given. All three tables reside in the part of 
+main memory that is reserved for the operating system. 
+ 
+As shown in Table 3.1, the Job Table (JT) contains two values for each active job: the size of 
+the job (shown on the left), and the memory location where its Page Map Table is stored (on 
+the right). For example, the first job has a size of 400 and is at location 3096 within memory. 
+The Job Table is a dynamic list that grows as jobs are loaded into the system, and shrinks, as 
+shown in (b) in Table 3.1, as they are completed later.

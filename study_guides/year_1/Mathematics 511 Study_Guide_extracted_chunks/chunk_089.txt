@@ -1,0 +1,32 @@
+1.5.2 Rules of Inference for Propositional Logic 
+We can always use a truth table to show that an argument form is valid. We 
+do this by showing that whenever the premises are true, the conclusion must 
+also be true. However, this can be a tedious approach. For example, when 
+an argument form involves 10 different propositional variables, to use a 
+truth table to show this argument form is valid requires 210 = 1024 different 
+rows. Fortunately, we do not have to resort to truth tables. Instead, we can 
+first establish the validity of some relatively simple argument forms, called 
+rules of inference. These rules of inference can be used as building blocks to 
+construct more complicated valid argument forms. We will now introduce 
+the most important rules of inference in propositional logic. 
+The tautology (𝑝 ∧ (𝑝 → 𝑞)) → 𝑞 is the basis of the rule of inference 
+called modus ponens, or the law of detachment. (Modus ponens is Latin for 
+mode that affirms.) This tautology leads to the following valid argument 
+form, which we have already seen in our initial discussion about arguments 
+(where, as before, the symbol ∴ denotes “therefore”): 
+
+
+ 
+Using this notation, the hypotheses are written in a column, followed by a 
+horizontal bar, followed by a line that begins with the therefore symbol and 
+ends with the conclusion. In particular, modus ponens tells us that if a 
+conditional statement and the hypothesis of this conditional statement are 
+both true, then the conclusion must also be true. Example below illustrates 
+the use of modus ponens. 
+Suppose that the conditional statement “If it snows today, then we   will go 
+skiing” and its hypothesis, “It is snowing today,” are true. Then, by modus 
+ponens, it follows that the conclusion of the conditional statement, “We will 
+go skiing,” is true.
+
+As we mentioned earlier, a valid argument can lead to an incorrect 
+conclusion if one or more of its premises is false. 

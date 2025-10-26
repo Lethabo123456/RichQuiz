@@ -1,0 +1,47 @@
+</LinearLayout> 
+The TextView view is used to display text to the user. This is the most basic view and one that you 
+will frequently use when you develop Android applications. If you need to allow users to edit the text 
+displayed, you should use the subclass of TextView, EditText, which is discussed in the next section. 
+ 
+Button, ImageButton, EditText, CheckBox, ToggleButtion, RadioButton, and RadioGroup Views 
+ 
+Exploring Views in XML 
+Besides the TextView view, which you will likely use the most often, there are some other basic 
+views that you will find yourself frequently using: 
+ 
+• Button — Represents a push-button widget. 
+• ImageButton — Similar to the Button view, except that it also displays an image. 
+• EditText — A subclass of the TextView view that allows users to edit its text content. 
+• CheckBox — A special type of button that has two states: checked or unchecked. 
+• RadioGroup and RadioButton — The RadioButton has two states: either checked or 
+unchecked. A RadioGroup is used to group together one or more RadioButton views, 
+thereby allowing only one RadioButton to be checked within the RadioGroup. 
+• ToggleButton — Displays checked/unchecked states using a light indicator. 
+
+The following code snippet demonstrates how you these views would be put into action in an 
+application: 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<LinearLayout xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:layout_width=“fill_parent” 
+android:layout_height=“fill_parent” 
+android:orientation=“vertical” > 
+ 
+<Button android:id=“@+id/btnSave” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“save” /> 
+ 
+<Button android:id=“@+id/btnOpen” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” 
+android:text=“Open” /> 
+ 
+<ImageButton android:id=“@+id/btnImg1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:src=“@drawable/ic_launcher” /> 
+
+Note  
+In some other platforms, the TextView is commonly known as the label view. Its sole purpose is to 
+display text on the screen. 

@@ -1,0 +1,15 @@
+ta is 
+retrieved from the data files and placed in the DBMS’s data cache. All transaction management 
+commands are processed during the parsing and execution phases of query processing. 
+ 
+SQL Fetching Phase 
+After the parsing and execution phases are completed, all rows that match the specified condition(s) 
+are retrieved, sorted, grouped, and aggregated (if required). During the fetching phase, the rows of 
+the resulting query result set are returned to the client. In this stage, the database server coordinates 
+the movement of the result set rows from the server cache to the client cache.  
+ 
+Query Processing Bottlenecks 
+As you have seen, the execution of a query requires the DBMS to break down the query into a series 
+of interdependent I/O operations to be executed in a collaborative manner. The more complex a 
+query is, the more complex the operations are, which means that bottlenecks are more likely.  
+A query processing bottleneck is a delay introduced in the processing of an I

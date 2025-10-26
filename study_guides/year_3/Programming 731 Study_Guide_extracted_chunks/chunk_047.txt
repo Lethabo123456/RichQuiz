@@ -1,0 +1,25 @@
+Extending the dog analogy, a dog’s sense of smell is polymorphic. If the dog smells a cat, it will bark 
+and run after it. If the dog smells its food, it will salivate and run to its bowl. The same sense of smell 
+is at work in both situations.   
+  
+The difference is what is being smelled, that is, the type of data being operated upon by the dog’s 
+nose! This same general concept can be implemented in Java as it applies to methods within a Java 
+program.
+
+1.5 A First Sample Program  
+   
+Now that the basic object-oriented underpinning of Java has been discussed, let’s look at some 
+actual Java programs. Let’s start by compiling and running the short sample program shown here. 
+As you will see, this involves a little more work than you might imagine.   
+   
+/*   
+   
+This is a simple Java program.   
+Call this file "Example.java".   
+*/  
+class  Example {   
+// Your program begins with a call to main().  
+public static void main(String args[])   
+{   
+System.out.println("This is a simple Java program.");   
+}  } 

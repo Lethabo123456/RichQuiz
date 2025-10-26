@@ -1,0 +1,15 @@
+bjects: 
+ 
+Consumers are objects (applications or processes) that request and use data.  
+ 
+Providers are objects that manage the connection with a data source and provide data to the 
+consumers. Providers are divided into two categories: data providers and service providers. 
+As a common practice, many vendors provide OLE-DB objects to augment their ODBC support, 
+effectively creating a shared object layer on top of their existing database connectivity (ODBC or 
+native) through which applications can interact. The OLE-DB objects expose functionality about 
+the database. 
+Additionally, the objects implement specific tasks, such as establishing a connection, executing a 
+query, invoking a stored procedure, defining a transaction, or invoking an OLAP function. By using 
+OLE-DB objects, the database vendor can choose what functionality to implement in a modular 
+way, instead of being forced to include all the functionality all the time.  
+OLE-DB provides additional capabilities for the

@@ -1,0 +1,20 @@
+1.1.5 Windows  
+The Window class creates top-level windows. A top level window is not contained within any other object; 
+it sits directly on the desktop. Generally, you won’t create Window objects directly. Instead, you will use 
+a subclass of Window called Frame, described next.  
+  
+1.1.6 Frame  
+Frame encapsulates what is commonly thought of as a .window. It is a subclass of Window and has a title 
+bar, menu bar, borders, and resizing corners. If you create a Frame object from within an applet, it will 
+contain a warning message, such as .Java Applet Window,. to the user that an applet window has been 
+created. This message warns users that the window they see was started by an applet and not by software 
+running on their computer. (An applet that could masquerade as a hostbased application could be used 
+to obtained passwords and other sensitive information without the user’s knowledge). When a Frame 
+window is created by a program rather than an applet, a normal window is created.
+
+1.1.7 Canvas  
+Although it is not part of the hierarchy for applet or frame windows, there is one other type of window 
+that you will find valuable: Canvas. Canvas encapsulates a blank window upon which you can draw. Refer 
+to Fig 1.1  
+  
+Figure 1.1 - The Class Hierarchy for Panel and Frame  

@@ -1,0 +1,45 @@
+The Modulus Operator   
+The modulus operator, %, returns the remainder of a division operation. It can be applied to floating-
+point types as well as integer types. (This differs from C/C++, in which the % can only be applied to 
+integer types.) The following example program demonstrates the %:   
+   
+// Demonstrate the %  operator. 
+class Modulus {   
+public static void main(String args[ ])   
+{ int x = 42;   
+double y = 42.25;   
+System.out.println("x mod 10 = " + x % 10);   
+System.out.println("y mod 10 = " + y % 10);   
+}   
+}   
+ When you run this program you will get the following output:   
+x mod 10 = 2  
+y mod 10 = 2.25   
+   
+Arithmetic Assignment Operators   
+Java provides special operators that can be used to combine an arithmetic operation with an 
+assignment. As you probably know, statements like the following are quite common in 
+programming:   a = a + 4;   
+   
+In Java, you can rewrite this statement as shown here:   
+a += 4;   
+   
+This version uses the += assignment operator. Both statements perform the same action:   
+they increase the value of a by 4. Here is another example, a = a % 2;   
+which can be expressed as a  %= 2;   
+   
+2.3. Increment and Decrement Operators   
+     
+The ++ and the – – are Java’s increment and decrement operators. They were introduced in Chapter 2. 
+Here they will be discussed in detail. As you will see, they have some special properties that make 
+them quite interesting. Let’s begin by reviewing precisely what the increment and decrement 
+operators do. The increment operator increases its operand by one. The decrement operator 
+decreases its operand by one. For example, this statement:    
+ 
+x = x + 1; can be rewritten like this by use of the  
+increment operator:    x++;   
+
+Similarly, this statement:    
+x = x - 1;   
+is equivalent to   
+x--;

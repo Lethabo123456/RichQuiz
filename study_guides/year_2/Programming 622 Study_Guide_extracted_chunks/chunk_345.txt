@@ -1,0 +1,23 @@
+nt, which is 
+the previous call. The current (recursive) call must execute completely before control goes back to 
+the previous call. The execution in the previous call begins from the point immediately following 
+the recursive call.  
+  
+  
+  
+
+172  
+  
+14. A function is called directly recursive if it calls itself.  
+15. A function that calls another function and eventually results in the original function call is said to be 
+indirectly recursive.  
+16. A recursive function in which the last statement executed is the recursive call is called a tail recursive 
+function.  
+17. 
+To design a recursive function, you must do the following:  
+Understand the problem requirements.  
+Determine the limiting conditions. For example, for a list the limiting condition is the number of 
+elements in the list.  
+Identify the base cases and provide a direct solution to each base case.  
+Identify the general cases and provide a solution to each general case in terms of smaller versions 
+of itself.

@@ -1,0 +1,27 @@
+rflow and a collision occur at the same 
+time.  
+  
+When choosing a hash function, the main objectives are to:  
+Choose a hash function that is easy to compute. Minimize 
+the number of collisions.  
+  
+Next, we consider some examples of hash functions.  
+  
+Suppose that HTSize denotes the size of the hash table, that is, the size of the array holding the hash table. 
+We assume that the bucket size is 1. Thus, each bucket can hold one item and, therefore, overflow and 
+collision occur simultaneously.  
+  
+ 
+7.3.1  Hash Functions: Some Examples  
+  
+Several hash functions are described in the literature. Here we describe some of the commonly used hash 
+functions.  
+  
+  
+  
+
+269  
+  
+Mid-Square: In this method, the hash function, h, is computed by squaring the identifier, and then using 
+the appropriate number of bits from the middle of the square to obtain the bucket address. Because the 
+middle bits of a square usually depend on all the characters, it is expected that different keys wi

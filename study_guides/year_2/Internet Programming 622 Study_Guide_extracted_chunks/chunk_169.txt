@@ -1,0 +1,21 @@
+ore carrying out any operation that 
+could potentially wipe a lot of data.   
+   
+   
+Reading/Activity: You are encouraged to go through your prescribed book from page 203 to 
+226, the internet and/or any other comparable source, and perform some research pertaining to 
+updating the database using the DELETE statement. In this section we have used the DROP TABLE 
+Statement to delete tables from the database   
+   
+   
+
+72   
+   
+4.17 Connecting To MySQL From PHP   
+So far we have covered the theory behind relational databases and worked directly with MySQL 
+thorough the mysql command-line tool. Now it is time to get your PHP scripts talking to MySQL. At 
+the time of writing, PHP provides you with two main ways to connect to MySQL databases:   
+• 
+mysqli (MySQL improved) — This extension is specifically tied to MySQL, and provides the 
+most complete access to MySQL from PHP. It features both procedural (function-oriented)  
+and object-oriented interfaces. Because it has quite a large se

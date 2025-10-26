@@ -1,0 +1,26 @@
+5.3.4 sAddress Resolution Protocol 
+
+The Address Resolution Protocol (ARP) is part of the TCP/IP protocol stack. It’s used to translate 
+TCP/IP addresses to MAC addresses using broadcasts. When a machine running TCP/IP wants to 
+know which machine on an Ethernet network is using a certain IP address, it will send an ARP 
+broadcast that says, in eﬀect, “Hey . . . exactly who is IP address xxx.xxx.xxx.xxx?” The machine 
+that owns the speciﬁc address will respond with its own MAC address, supplying the answer. The 
+machine that made the inquiry will respond by adding the newly gained information to its own 
+ARP table. In addition to the normal usage, the ARP designation refers to a utility in Windows that 
+you can use to manipulate and view the local workstation’s ARP table. 
+
+The Windows ARP Table 
+The ARP table in Windows includes a list of TCP/IP addresses and their associated physical (MAC) 
+addresses. This table is cached in memory so that Windows doesn’t have to perform ARP lookups 
+for frequently accessed TCP/IP addresses like those of servers and default gateways. Each entry 
+contains an IP address and a MAC address plus a value for TTL that determines how long each 
+entry will remain in the ARP table. Remember that the ARP table contains two kinds of entries: 
+• Dynamic 
+• Static 
+Dynamic ARP table entries are created whenever the Windows TCP/IP stack performs an ARP 
+lookup, but the MAC address isn’t found in the ARP table. When the MAC address of the 
+requested IP address is ﬁnally found, or resolved, that information is then added into the ARP 
+table as a dynamic entry. Whenever a request to send a packet to the host is sent to the Data Link 
+layer, the ARP cache is checked ﬁrst before an ARP broadcast is sent out. Remember, the ARP 
+request is broadcast on the local segment—it does not go through a router. 
+ 

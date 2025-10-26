@@ -1,0 +1,29 @@
+VPN Network Protocols 
+There are three main network protocols for use with VPN tunnels. These protocols are 
+generally incompatible with each other.  
+ 
+They include the following: 
+IPSec - A set of protocols developed by the IETF to support secure exchange of packets at the 
+IP layer. IPsec has been deployed widely to implement VPNs. IPsec supports two encryption 
+modes: Transport and Tunnel. 
+PPTP - The Point-to-Point Tunnelling Protocol is a technology for creating VPNs, developed 
+jointly by Microsoft, U.S. Robotics and several remote access vendor companies, known 
+collectively as the PPTP Forum. 
+L2TP - Layer Two (2) Tunnelling Protocol is an extension to the PPP protocol that enables ISPs 
+to operate Virtual Private Networks (VPNs). 
+ 
+Types of VPN Services: Consumer and Corporate 
+Consumers use a private VPN service, also known as a VPN tunnel, to protect their online 
+activity and identity. By using an anonymous VPN service, a user's Internet traffic and data 
+remain encrypted, which prevents eavesdroppers from sniffing Internet activity. A VPN service 
+is especially useful when accessing public Wi-Fi hotspots because the public wireless services 
+might not be secure. In addition to public Wi-Fi security, a private VPN service also provides 
+consumers with uncensored Internet access and can help prevent data theft and unblock 
+websites. Companies and organizations will typically use a VPN to communicate confidentially 
+over a public network and to send voice, video or data. It is also an excellent option for remote 
+workers and organizations with global offices and partners to share data in a private manner. 
+One of the most common types of VPNs used by businesses is called a virtual private dial-up 
+network (VPDN). A VPDN is a user-to-LAN connection, where remote users need to connect 
+to the company LAN. Another type of VPN is commonly called a site-to-site VPN. Here the 
+company would invest in dedicated hardware to connect multiple sites to their LAN though a 
+public network, usually the Internet. 

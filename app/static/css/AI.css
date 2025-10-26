@@ -1,0 +1,156 @@
+/* AI.css - Artificial Intelligence Themed */
+
+/* Import futuristic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top left, #0d0d0d, #1a1a1a, #111111);
+    color: #00fff7;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 0, 255, 0.3);
+    backdrop-filter: blur(12px);
+    border: 2px solid #00fff7;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
+    margin-bottom: 2rem;
+}
+
+/* Question container */
+.question-container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 15px #00fff7, 0 0 25px #ff00ff;
+}
+
+.question-container p {
+    font-weight: 600;
+    color: #00fff7;
+}
+
+/* Options */
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 1rem;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #00fff7;
+}
+
+.option-label:hover {
+    background: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 10px #00fff7, 0 0 15px #ff00ff;
+}
+
+.option-label input[type="radio"] {
+    margin-right: 1rem;
+    accent-color: #ff00ff;
+}
+
+.option-text {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Submit button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, #00fff7, #ff00ff);
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #ff00ff;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00fff7, 0 0 50px #ff00ff;
+}
+
+/* Back link */
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #00fff7;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
+}
+
+/* Error messages */
+.error-message {
+    color: #ff4d4d;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Code block styling */
+pre, code {
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffeb3b;
+    padding: 0.5rem;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .question-container {
+        padding: 1rem;
+    }
+}

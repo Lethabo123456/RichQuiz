@@ -1,0 +1,26 @@
+y)  
+found = true;  
+else hIndex = (hIndex + 1) % HTSize;  
+
+271  
+  
+if (found) cerr << "Duplicate items are not allowed." << 
+endl; else  
+HT[hIndex] = newItem;  
+  
+From the definition of linear probing, we see that linear probing is easy to implement. However, linear 
+probing causes clustering; that is, more and more new keys would likely be hashed to the array slots that 
+are already occupied. For example, consider the hash table of size 20, as shown in Figure 7-5.  
+  
+  
+FIGURE 7-5 Hash table of size 20  
+  
+Initially, all the array positions are available. Because all the array positions are available, the probability 
+of any position being probed is (1/20). Suppose that after storing some of the items, the hash table is as 
+shown in Figure 7-6.  
+ 
+  
+FIGURE 7-6 Hash table of size 20 with certain positions occupied  
+  
+In Figure 7-6, a cross indicates that this array slot is occupied. Slot 9 will be occupied next if, for the next 
+key, the hash address is 6, 7, 8, or 9. Thus,

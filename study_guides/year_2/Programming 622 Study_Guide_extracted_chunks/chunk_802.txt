@@ -1,0 +1,27 @@
+aversed.  
+  
+The two most common graph traversal algorithms are the depth-first traversal and breadth-first traversal, 
+which are described next. For simplicity, we assume that when a vertex is visited, its index is output. 
+Moreover, each vertex is visited only once. We use the bool array visited to keep track of the visited 
+vertices.  
+  
+  
+  
+10.6.1 Depth-First Traversal  
+  
+The depth-first traversal is similar to the preorder traversal of a binary tree. The general algorithm is as 
+follows: for each vertex, v, in the graph if v is not visited start the depth first traversal at v  
+
+395  
+  
+  
+Consider the graph G3 of Figure 10-4. It is shown here again as Figure 10-7 for easy reference.  
+  
+  
+FIGURE 10-7 Directed graph G3  
+  
+The depth-first ordering of the vertices of graph G3 in Figure 10-7 is as follows:  
+0 1 2 4 3 5 6 8 10 7 9  
+  
+For the graph of Figure 10-7, the depth-first search starts at the vertex 0. After visiting all the vertices that 
+can be reached starting

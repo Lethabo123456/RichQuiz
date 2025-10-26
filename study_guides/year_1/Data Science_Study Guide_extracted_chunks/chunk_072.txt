@@ -1,0 +1,38 @@
+4.4.1 Supervised Learning 
+Supervised learning is a type of machine learning where an algorithm is trained on a labelled dataset 
+that includes both input variables (features) and output variables (labels). The algorithm learns to map 
+the input variables to the correct output variable by identifying patterns and relationships within the 
+data. The goal of supervised learning is to accurately predict the labels of new, unseen data. Common 
+supervised learning algorithms include linear regression, logistic regression, decision trees, and 
+artificial neural networks. Supervised learning is commonly used in applications such as image 
+classification, speech recognition, and prediction modelling. Supervised machine learning models are 
+often called predictive analytics models, named for their ability to predict the future based on the 
+past. 
+ 
+Specifically, supervised learning works using parts of the data to predict another part. First, we must 
+separate data into two parts, as follows (Sinan, 2016): 
+ 
+• The predictors, which are the columns that will be used to make our prediction. These are 
+sometimes called features, inputs, variables, and independent variables. 
+• The response, which is the column that we wish to predict. This is sometimes called outcome, 
+label, target, and dependent variable. 
+ 
+Example – Heart attack prediction 
+Suppose we wish to predict if someone will have a heart attack within a year. To predict this, we are 
+given that person's cholesterol, blood pressure, height, their smoking habits, and perhaps more. From 
+this data, we must ascertain the likelihood of a heart attack. Suppose, to make this prediction, we look 
+at the previous patients and their medical history. As these are previous patients, we know not only 
+their predictors (cholesterol, blood pressure, and so on), but we also know if they actually had a heart 
+attack (because it already happened!).
+
+The hope here is that a patient will walk in tomorrow and our model will be able to identify whether 
+or not the patient is at risk for a heart attack based on her/his conditions (just like a doctor would!). 
+As the model sees more and more labelled data, it adjusts itself in order to match the correct labels 
+given to us. We can use different metrics (explained later in this chapter) to pinpoint exactly how well 
+our supervised machine learning model is doing and how it can better adjust itself. 
+ 
+One of the biggest drawbacks of supervised machine learning is that we need this labelled data, which 
+can be very difficult to get a hold of. Suppose we wish to predict heart attacks, we might need 
+thousands of patients along with all of their filled in medical information and years' worth of follow-
+up records for each person, which could be a nightmare to obtain. In short, supervised models use 
+historical labelled data in order to make predictions about the future (Sinan, 2016). 

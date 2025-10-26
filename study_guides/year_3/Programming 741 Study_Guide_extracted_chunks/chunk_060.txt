@@ -1,0 +1,37 @@
+Example 1-11. Using a while loop 
+ 
+The code in Example 1-11 produces results identical to the code in Example 1-10, but the logic 
+is a bit clearer. The while statement is nicely self-contained, and it reads like an English 
+sentence: "while i is less than 10, print this message and increment i." Notice that the while 
+loop tests the value of i before entering the loop. This ensures that the loop will not run if the 
+condition tested is false; thus, if i is initialized to 11, the loop will never run. 
+
+1.7.3 The do ... while loop 
+There are times when a while loop might not serve your purpose. In certain situations, you 
+might want to reverse the semantics from "run while this is true" to the subtly different "do 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int i = 0; 
+while (i < 10) 
+OUTPUT 
+
+this while this condition remains true." In other words, take the action, and then, after the 
+action is completed, check the condition. For this you will use the do. . . while loop. 
+Syntax: do {statement} while (expression) 
+
+An expression is any statement that returns a value. An example of the do. . . while loop is 
+shown in Example 1-12. 
+
+Example 1-12. The do...while loop 
+ 
+Here i is initialized to 11 and the while test fails, but only after the body of the loop has run 
+once. 

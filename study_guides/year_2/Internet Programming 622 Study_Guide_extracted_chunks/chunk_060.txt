@@ -1,0 +1,18 @@
+Fields. This is not a very large discussion topic, so you should be done and dusted with it in under 
+one hour.   
+   
+   
+1.6 Generating Web Forms With PHP   
+So far, the forms you have created have been embedded in static HTML pages. However, because 
+PHP  scripts can contain and output HTML, it is perfectly possible to combine both the form and the 
+form  
+handler in a single PHP file. Doing this gives you a couple of advantages. First, if the users have not 
+filled   
+in the form correctly, you can redisplay the form to them so they can correct the errors. Second, 
+because the form is created from within a PHP script, you can dynamically set various parts of the 
+form at the time the script is run, adding a lot of power and flexibility to your forms.   
+   
+As with generating any HTML markup, you can use two common approaches to generate a form 
+within   
+PHP: you can use echo or print statements to write out the markup for the form, or you can separate 
+the PHP code from the form

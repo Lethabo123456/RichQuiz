@@ -1,0 +1,21 @@
+Object-Oriented    
+ 
+Although influenced by its predecessors, Java was not designed to be source-code compatible with 
+any other language. This allowed the Java team the freedom to design  with a blank slate. One 
+outcome of this was a clean, usable, pragmatic approach to objects. Borrowing liberally from many 
+seminal object-software environments of the last few decades, Java manages to strike a balance  
+between the purist’s “everything is an object” paradigm and the pragmatist’s “stay out of my way” 
+model. The object model in Java is simple and easy to extend, while simple types, such as integers, 
+are kept as highperformance nonobjects.
+
+Robust    
+ 
+The multiplatformed environment of the Web places extraordinary demands on a program, because 
+the program must execute reliably in a variety of systems. Thus, the ability to create robust programs 
+was given a high priority in the design of Java. To gain reliability, Java restricts you in a few key areas, 
+to force you to find your mistakes early in program development. At the same time, Java frees you 
+from having to worry about many of the most common causes of programming errors. Because Java 
+is a strictly typed language, it checks your code at compile time. However, it also checks your code 
+at run time. In fact, many hardto-track-down bugs that often turn up in hard-to-reproduce run-time 
+situations are simply impossible to create in Java. Knowing that what you have written will behave 
+in a predictable way under diverse conditions is a key feature of Java.   

@@ -1,0 +1,111 @@
+Example 5-6 declares a list box control (ListBoxTest ), which contains a simple array 
+
+(myStrings) and a simple indexer for accessing its contents. 
+Example 5-6. Using a simple indexer 
+using System; 
+using System.Collections.Generic; 
+usingSystem.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+// a simplified ListBox control 
+public class ListBoxTest 
+{ 
+// initialize the list box with strings 
+public ListBoxTest(params string[] initialStrings) 
+{ 
+// allocate space for the strings 
+strings = new String[256]; 
+// copy the strings passed in to the constructor 
+foreach (string s in initialStrings) 
+{ 
+strings[ctr++] = s; 
+} 
+} 
+// add a single string to the end of the list box 
+public void Add(string theString) 
+{ 
+if (ctr >= strings.Length) 
+{ 
+// handle bad index 
+} 
+else 
+strings[ctr++] = theString; 
+} 
+// allow array-like access 
+public string this[int index] 
+{ 
+get 
+{ 
+if (index < 0 || index >= strings.Length) 
+{ 
+// handle bad index 
+} 
+return strings[index]; 
+} 
+set 
+{ 
+// add only through the add method 
+if (index >= ctr ) 
+{ 
+// handle error 
+} 
+else 
+strings[index] = value; 
+} 
+} 
+public int GetNumEntries( ) 
+{ 
+return ctr; 
+} 
+private string[] strings; 
+private int ctr = 0; 
+} 
+public class Tester 
+{ 
+static void Main( ) 
+{ 
+// create a new list box and initialize 
+ListBoxTest lbt = 
+new ListBoxTest("Hello", "World"); 
+// add a few strings 
+lbt.Add("Who"); 
+lbt.Add("Is"); 
+lbt.Add("John"); 
+lbt.Add("Galt"); 
+// test the access 
+string subst = "Universe"; 
+lbt[1] = subst; 
+// access all the strings 
+for (int i = 0; i < lbt.GetNumEntries(); i++) 
+{ 
+Console.WriteLine("lbt[{0}]: {1}", i, lbt[i]); 
+} 
+} 
+} 
+} 
+OUTPUT: 
+ 
+To keep Example 5-6 simple, strip the list box control down to the few features we care about. 
+The listing ignores everything having to do with being a user control and focuses only on the 
+list of strings the list box maintains and methods for manipulating them. In a real application, 
+of course, these are a small fraction of the total methods of a list box, whose principal job is 
+to display the strings and enable user choice. 
+
+The first thing to notice is the two private members 
+ 
+private string [ ] strings ; 
+private int ctr = 0; 
+ 
+In this program, the list box maintains a simple array of strings: s t r ings . Again, in a real list 
+box you might use a more complex and dynamic container, such as a hash table (described 
+later in this chapter). The member variable c t r will keep track of how many strings have been 
+added to this array. 
+ 
+Initialize the array in the constructor with the statement: 
+strings = new String [256 ] ; 
+The remainder of the constructor adds the parameters to the array. Again, for simplicity, 
+simply add new strings to the array in the order received 
+The Add ( ) method of ListBoxTest does nothing more than append a new string to the internal 
+array.

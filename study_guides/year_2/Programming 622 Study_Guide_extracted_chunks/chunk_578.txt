@@ -1,0 +1,21 @@
+mber of key comparisons is approximately 500,000, which is quite high. This section describes the 
+sorting algorithm called insertion sort, which tries to improve—that is, reduce—the number of key 
+comparisons.  
+  
+Insertion sort sorts the list by moving each element to its proper place. Consider the list given in Figure 8-
+4.  
+  
+FIGURE 8-4 list  
+  
+The length of the list is 8. In this list, the elements list[0], list[1], list[2], and list[3] are in order. That is, 
+list[0]...list[3] is sorted, as shown in Figure 8-5(a).  
+  
+  
+FIGURE 8-5 list elements while moving list[4] to its proper place  
+  
+Next, we consider the element list[4], the first element of the unsorted list. Because list[4] < list[3], we 
+need to move the element list[4] to its proper location. It follows that element list[4] should be moved to 
+list[2], as shown in Figure 8-5(b). To move list[4] into list[2], first we copy list[4] into temp, a temporary 
+memory space—see Figure 8-5(c).  
+  
+Next, we copy list[3]

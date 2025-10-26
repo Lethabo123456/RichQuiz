@@ -1,0 +1,41 @@
+TOPIC 2  
+ 
+2.1 BASICS OF NETWORKING  
+  
+When two or more computers want to communicate with each other to share data or resources then the 
+communications among them can be done through networking.  
+  
+2.1.1 Overview of socket  
+A Socket is a handle to a communication link with another application over the network. In other words a 
+socket is a software interface that connects an application to the network. Sockets are often used in 
+client/server applications. A centralized service waits for various remote machines to request specific 
+resources, handling each request as it arrives. In order that clients know how to communicate with the 
+server, standard application protocols are assigned well known ports. 
+
+2.1.2 Overview of Client / Server  
+You might be aware of the term Client/Server mentioned in the context of networking. A client is an entity 
+that relies on another entity to accomplish some task. A server is an entity whose sole purpose is to serve 
+clients by providing them with some kind of well-defined services such as searching a database or 
+accepting mail messages. The interaction between client and server is just like the interaction between a 
+lamp and an electrical socket. The power grid of the house is the server and the lamp is the power client. 
+The server is a permanently available resource whereas the client is free to unplug after it has been served. 
+The notion of a socket allows a single computer to serve many different clients at once, as well as serving 
+many different types of information. This is managed by the introduction of a port, which is a numbered 
+socket on a particular machine. A server process can listen to a port number, although each session is 
+unique. A session process must be multithreaded to manage multiple client connections.  
+  
+2.1.3 Reserved Sockets  
+TCP/IP has 65,536 different TCP ports (or sockets) to which every machine can talk.  
+  
+Table 2.1 defines the standard TCP ports as follows:  
+   
+Table 2.1  
+  
+2.1.4 Proxy server  
+A proxy server speaks the client side of a protocol to another server. This is often required when clients 
+have certain restrictions on which servers they can connect to. Thus a client would connect to a proxy 
+server which did not have such restrictions and the proxy server would in turn communicate for the client. 
+A proxy server has the additional ability to filter certain requests or cache the results of those requests for 
+future use. A caching proxy HTTP server can help reduce the bandwidth demands on a local network’s 
+connection to the Internet. 
+  

@@ -1,0 +1,34 @@
+Figure 3.19 Router information 
+ 
+Now that the Internet connection is up and active and you have the LAN network information, 
+the next step is to set up the wireless connection. Many newer wireless routers are shipping 
+with the wireless networks already set up and will have the SSID (the name of the wireless 
+network; two names if it's a dual-band router: one for the 2.4GHz signal and one for 5GHz) and 
+the passphrase for accessing the wireless network pre-configured. 
+ 
+To manually set up the wireless network, go into the wireless network settings within the 
+router's management interface. In the Trendnet router, this is found under the "Basic" and 
+then "Wireless" menu options: 
+ 
+Figure 3.20 Wireless network settings  
+ 
+To manually configure, give the wireless network a name, called the SSID. You need to name 
+both the 2.5 GHz and 5 GHz wireless networks for dual-band routers. I will usually name the 
+2.4 GHz something like "LinksysWiFi" and the 5GHz SSID, "LinksysWiFi_5GHz" for example. You 
+want to select security. The security level (also called security mode or encryption mode) 
+should be set to WPA2 except in rare cases of compatibility issues. The security settings are 
+usually on the same where you name the wireless network. 
+ 
+To complete wireless setup, select the 802.11mode. You can usually leave whatever the default 
+settings are. I usually make the wireless mode at 2.4 GHz a mixed mode network, so that older 
+devices that can't support 802.11n can connect to it. I also typically make 5 GHz an 802.11n-
+only mode, because I save it for connecting newer 802.11n devices that support 5GHz and can 
+take advantage of the 5GHz band's throughput. Settings such as channel width and wireless 
+channel are best left at the defaults.
+
+That's all there is to the basic setup of a wireless router. Of course, Wi-Fi routers have other 
+features that can enhance a home network. Some have USB ports for connecting external 
+drives to share data or to connect printers; many have Quality-of-Service (QoS) settings to 
+enhance video streaming making Skype calls. Now that you have the basics of setting up a 
+wireless router down, here are a links to tweaking routers to optimize a home or small business 
+network 

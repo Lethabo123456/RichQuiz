@@ -1,0 +1,16 @@
+e options price section of a disc to get the 
+information for the user. This is the physical access path (PAP). 
+ 
+Two or more people or programs attempting to access the same record in the same database at 
+the same time can cause a problem. For example, an inventory control program might attempt 
+to reduce the inventory level for a product by ten units because ten units were just shipped to a 
+customer. At the same time, a purchasing program might attempt to increase the inventory level 
+for the same product by 200 units because more inventory was just received. Without proper 
+database control, one of the inventory updates might not be correctly made, resulting in an 
+inaccurate inventory level for the product. Concurrency control can be used to avoid this 
+potential problem. One approach is to lock out all other application programs from access to a 
+record if the record is being updated or used by another program. 
+ 
+Manipulating Data and Generating Reports 
+ 
+After a DBMS has bee

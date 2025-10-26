@@ -1,0 +1,30 @@
+her at the beginning or the end because a linked link is not 
+a random access data structure.  
+e. The head pointer of a linked list cannot be used to traverse the list.  
+  
+Consider the linked list shown in Figure 3-35. Assume that the nodes are in the usual info-link form. Use 
+this list to answer Exercises 2 through 7. If necessary, declare additional variables. (Assume that list, p, s, 
+A, and B are pointers of type nodeType.)  
+  
+
+140  
+  
+  
+FIGURE 3-35 Linked list for Exercises 2–7  
+  
+2. What is the output of each of the following C++ statements? a. 
+cout << list->info;  
+b. cout << A->info;  
+c. cout << B->link->info;  
+d. cout << list->link->link->info  
+  
+3. What is the value of each of the following relational expressions? a. 
+list->info >= 18  
+b. list->link == A  
+c. A->link->info == 16  
+d. B->link == NULL  
+e. list->info == 18  
+  
+4. Mark each of the following statements as valid or invalid. If a statement is invalid, explain why. a. 
+A = B;  
+b. list->link = A->li

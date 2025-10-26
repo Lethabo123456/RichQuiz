@@ -1,0 +1,32 @@
+iOS App Store Distribution 
+
+The Apple App Store provides strong controls over illegal copying of your app. As a developer, unlike 
+in Android, you don’t have to worry about setting up any licensing. However, the built-in copy 
+protection requires other additional work to get your app published. The first step is to set up your 
+Distribution Certificate and Distribution Provisioning Profile. The next step is to set up an entry for 
+your app in iTunes Connect (https://itunesconnect.apple.com). You will have to use your developer ID 
+to sign in. iTunes Connect is the website that is used to manage many aspects of your app, including 
+seeing reports on how the app is performing. 
+
+In iTunes Connect, you provide information about the app, pricing, and screenshots prior to being able 
+to upload the app. To start, click Manage Your Apps in the console. In this section, you can add iOS or 
+Mac OS X apps, depending on your developer license. Click Add New App. If you have a Mac Developer 
+account, you will be asked to select either iOS App or Mac OS X app. Select iOS app. 
+The App Information screen requires selecting the default language of the app, entering the app name, 
+entering a SKU number, and selecting the Bundle ID. The SKU number is a unique number used to 
+identify your app. A standard approach is to concatenate the year of publication, the number of the 
+app in your stock, and the version number. For example, your first app could be 201700010001. For 
+Bundle ID, it is best to select Xcode iOS Wildcard AppID and then enter the app name in Bundle ID 
+Suffix. The Bundle ID Suffix must match the name that is entered as the last part of the Bundle 
+Identifier in the Project Summary in Xcode. For the MyContactList app, the Bundle ID you used was 
+com.pearson.MyContactList. The Bundle ID Suffix is MyContactList for this app. When it’s complete, 
+click the Continue button. 
+
+The next section is too detailed to go through in depth here. In this section, you provide an app 
+description, screenshots, icon, rating and categorization, and specific review information, much like 
+you did for your Android app. Once it is complete and you click the Save button, you will get a summary 
+screen for the app. The app status should be listed as Prepare for Upload. Click View Details below the 
+app icon, and then click Ready to Upload Binary at the top right of the next screen. You will be asked 
+to verify that your app is compliant with export laws if it contains any cryptography. Choose the 
+answer that fits your app and click Save, and then Continue. Your app status is now Waiting for Upload. 
+Open your app in Xcode to complete the process. 

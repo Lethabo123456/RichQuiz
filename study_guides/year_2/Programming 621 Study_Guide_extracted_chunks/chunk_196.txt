@@ -1,0 +1,19 @@
+he 
+dot, . (period), is an operator called the member access operator. 
+ 
+ 
+
+177 | P a g e  
+ 
+ 
+In the first statement, myClock.setTime(5, 2, 30);, the member function setTime is 
+executed. The values 5, 2, and 30 are passed as parameters to the function setTime, 
+and the function uses these values to set the values of the three member variables hr, 
+min, and sec of myClock to 5, 2, and 30, respectively. Similarly, the second statement 
+executes the member function printTime and outputs the contents of the three member 
+variables of myClock. In the third statement, the values of the variables x, y, and z are 
+used to set the values of the three member variables of yourClock. In the fourth 
+statement, the member function equalTime executes and compares the three member 
+variables of myClock to the corresponding member variables of yourClock. Because 
+in this statement equalTime is a member of the object myClock, it has direct access 
+to the three member variables of myClock. So it need

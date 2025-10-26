@@ -1,0 +1,17 @@
+, and we will refer to it as a transitive dependency. The dependencies 
+you have just examined can also be depicted with the help of the diagram shown in Figure 6.3. 
+
+ 
+82 
+Because such a diagram depicts all dependencies found within a given table structure, it is known 
+as a dependency diagram.  
+As you examine Figure 6.3, note the following features of a dependency diagram:  
+1. The primary key attributes are bold, underlined, and in a different colour.  
+2. The arrows above the attributes indicate all desirable dependencies—that is, dependencies 
+based on the primary key. In this case, note that the entity’s attributes are dependent on the 
+combination of PROJ_NUM and EMP_NUM.  
+3. The arrows below the dependency diagram indicate less desirable dependencies. Two types of 
+such dependencies exist:  
+a. Partial dependencies. A dependency based on only a part of a composite primary key 
+is a partial dependency.  
+b. Transitive dependencies. A transitive dependency exists when a functi

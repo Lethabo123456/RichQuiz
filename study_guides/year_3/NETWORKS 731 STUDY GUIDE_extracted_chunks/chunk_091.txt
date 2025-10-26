@@ -1,0 +1,42 @@
+Figure 3.7 WAN Devices 
+ 
+WAN Switch 
+A WAN switch is a multiport internetworking device used in carrier networks. These devices 
+typically switch such traffic as Frame Relay, X.25, and SMDS, and operate at the data link layer 
+of the OSI reference model. Two Routers at Remote Ends of a WAN Can Be Connected by WAN 
+Switches illustrates two routers at remote ends of a WAN that are connected by WAN switches. 
+ 
+Figure 3.8 Two Routers at Remote Ends of a WAN Can Be Connected by WAN Switches 
+
+Access Server 
+An access server acts as a concentration point for dial-in and dial-out connections. An Access 
+Server Concentrates Dial-Out Connections into a WAN illustrates an access server 
+concentrating dial out connections into a WAN. 
+ 
+Figure 3.9 An Access Server Concentrates Dial-Out Connections into a WAN 
+
+Modem 
+A modem is a device that interprets digital and analog signals, enabling data to be transmitted 
+over voice-grade telephone lines. At the source, digital signals are converted to a form suitable 
+for transmission over analog communication facilities. At the destination, these analog signals 
+are returned to their digital form. A Modem Connection through a WAN Handles Analog and 
+Digital Signals illustrates a simple modem-to-modem connection through a WAN. 
+  
+Figure 3.10 Modem Connection through a WAN Handles Analog and Digital Signals 
+ 
+CSU/DSU 
+A channel service unit/digital service unit (CSU/DSU) is a digital-interface device used to 
+connect a router to a digital circuit like a T1. The CSU/DSU also provides signal timing for 
+communication between these devices. The CSU/DSU Stands between the Switch and the 
+Terminal illustrates the placement of the CSU/DSU in a WAN implementation. 
+ 
+Figure 3.11 The CSU/DSU Stands between the Switch and the Terminal
+
+ISDN Terminal Adapter 
+An ISDN terminal adapter is a device used to connect ISDN Basic Rate Interface (BRI) 
+connections to other interfaces, such as EIA/TIA-232 on a router. A terminal adapter is 
+essentially an ISDN modem, although it is called a terminal adapter because it does not actually 
+convert analog to digital signals. The Terminal Adapter Connects the ISDN Terminal Adapter to 
+Other Interfaces illustrates the placement of the terminal adapter in an ISDN environment. 
+ 
+Figure 3.12 The Terminal Adapter Connects the ISDN Terminal Adapter to Other Interfaces

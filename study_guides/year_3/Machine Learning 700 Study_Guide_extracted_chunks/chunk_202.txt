@@ -1,0 +1,31 @@
+Comparing algorithms on the faces dataset Let’s apply the k-means, DBSCAN, and agglomerative 
+clustering algorithms to the Labeled Faces in the Wild dataset, and see if any of them find interesting 
+structure. We will use the eigenface representation of the data, as produced by PCA(whiten=True), with 
+100 components: 
+ 
+We saw earlier that this is a more semantic representation of the face images than the raw pixels. It will 
+also make computation faster. A good exercise would be for you to run the following experiments on the 
+original data, without PCA, and see if you find similar clusters. 
+Analyzing the faces dataset with DBSCAN. We will start by applying DBSCAN, which we just discussed: 
+We see that all the returned labels are –1, so all of the data was labeled as “noise” by DBSCAN. There are 
+two things we can change to help this: we can make eps higher, to expand the neighborhood of each 
+point, and set min_samples lower, to consider smaller groups of points as clusters. Let’s try changing 
+min_samples first: 
+ 
+Even when considering groups of three points, everything is labeled as noise. So, we need to increase 
+eps: 
+ 
+Using a much larger eps of 15, we get only a single cluster and noise points. We can use this result to find 
+out what the “noise” looks like compared to the rest of the data. To understand better what’s happening, 
+let’s look at how many points are noise, and how many points are inside the cluster: 
+ 
+Comparing these images to the random sample of face images, we can guess why they were labeled as 
+noise: the fifth image in the first row shows a per- son drinking from a glass, there are images of people 
+wearing hats, and in the last image there’s a hand in front of the person’s face. The other images contain 
+odd angles or crops that are too close or too wide. This kind of analysis—trying to find “the odd one 
+out”—is called outlier detection. If this was a real application, we might try to do a better job of cropping 
+images, to get more homogeneous data. There is little we can do about people in photos sometimes 
+wearing hats, drinking, or holding something in front of their faces, but it’s good to know that these are 
+issues in the data that any algorithm we might apply needs to handle. If we want to find more interesting 
+clusters than just one large one, we need to set eps smaller, somewhere between 15 and 0.5 (the default). 
+Let’s have a look at what different values of eps result in:

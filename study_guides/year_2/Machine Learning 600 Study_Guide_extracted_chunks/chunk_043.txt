@@ -1,0 +1,19 @@
+Figure 2.4: Copy and paste data into an excel spreadsheet 
+ 
+2.6.2 Using an API 
+An API is a set of routines supplied by a system or a website that lets you request and receive 
+data or talk to a system directly. Most of the time you will have some sort of authority to talk 
+to the service; this might be a token key or username and password combination, for example. 
+Some APIs are public and don't require any sign-up, but those are rarer now because suppliers 
+like to know who's calling, see what data you're taking, and know how often you're taking it. 
+
+P a g e  | 21 
+ 
+The website OpenWeather (https://openweathermap.org) has a full suite of APIs to retrieve 
+weather information. 
+ 
+2.7 Data Migration 
+Acquiring data is one part of the equation; migrating and transforming, it will also be 
+requested at some point. For some jobs, writing a small program or script to import/export 
+data would be fine, but as the volumes grow and the demands from stakeholders get more 
+complex,

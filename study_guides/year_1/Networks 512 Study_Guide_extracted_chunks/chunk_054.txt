@@ -1,0 +1,15 @@
+1.8.4 Ethernet Products 
+The standards and technology just discussed will help define the specific products that network 
+managers use to build Ethernet networks. The following presents the key products needed to 
+build an Ethernet LAN. 
+
+1.8.4.1 Transceivers 
+Transceivers are also referred to as Medium Access Units (MAUs). They are used to connect nodes 
+to the various Ethernet media. Most computers and network interface cards contain a built-in 
+10BASE-T or 10BASE2 transceiver which allows them to be connected directly to Ethernet without 
+the need for an external transceiver. Many Ethernet devices provide an attachment unit interface (AUI) connector to allow the user to 
+connect to any type of medium via an external transceiver. The AUI connector consists of a 15-pin 
+D-shell type connector, female on the computer side, male on the transceiver side. 
+For Fast Ethernet networks, a new interface called the MII (Media Independent Interface) was 
+developed to offer a flexible way to support 100 Mbps connections. The MII is a popular way to 
+connect 100BASE-FX links to copper-based Fast Ethernet devices.

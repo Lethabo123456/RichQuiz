@@ -1,0 +1,34 @@
+Type(string n = "", string b = ""); 
+ private:  
+string breed;  
+} 
+ 
+Note that we need to declare a virtual function only in the base class. 
+ 
+The definition of the dogType member function print is the same as before. 
+Because we have placed a virtual function declaration in the base class, a base 
+class object can use the derived class’s definition. For example, if we execute the 
+previous program with these modifications, the output is as follows: 
+ 
+ 
+ 
+ 
+This output shows that for the statement in Line 11, the print function of dogType is 
+executed (see the last two lines of the output). 
+ 
+Before closing this section, we discuss another issue related to virtual functions. 
+ 
+
+231 | P a g e  
+ 
+Suppose that the definition of the class petType is as before, and the definition of the 
+class dogType is modified slightly as follows: 
+ 
+class dogType: public petType 
+{ 
+ public: 
+ void print() const; 
+ void setBreed(string b = "");  
+dogType(string n = "", string b = ""); 
+ 
+private:

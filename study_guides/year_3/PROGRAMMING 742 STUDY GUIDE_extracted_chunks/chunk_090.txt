@@ -1,0 +1,64 @@
+The Tester program creates a new Document object and then casts it to the various interfaces. 
+When the object is cast to ILoggedCompressible, you can use the interface to call methods on 
+Icompressible because ILoggedCompressible extends (and thus subsumes) the methods from 
+the base interface: 
+ 
+ILoggedCompressible ilcDoc = doc as ILoggedCompressible; 
+    if (ilcDoc != null) 
+     { 
+      ilcDoc.LogSavedBytes( ); 
+      ilcDoc.Compress( ); 
+     // ilcDoc.Read( ); 
+  } 
+ 
+You cannot call Read( ), however, because that is a method of IStorable, an unrelated inter-
+face. And if you uncomment out the call to Read( ), you will receive a compiler error. 
+ 
+If you cast to IStorableCompressible (which combines the extended interface with the 
+Storable interface), you can then call methods of IStorableCompressible, 
+Icompressible, and IStorable: 
+ 
+IStorableCompressible isc = doc as IStorableCompressible 
+     if (isc != null) 
+      { 
+             isc.LogOriginalSize( ); // IStorableCompressible 
+             isc.LogSavedBytes( ); // ILoggedCompressible 
+              isc.Compress( ); // ICompressible 
+              isc.Read( ); // IStorable 
+       } 
+ 
+2.6.3  You can access the members of the IStorable interface as if they were members of the Docu-
+ment class: 
+
+Document doc = new Document("Test Document"); 
+doc.status = -1;
+     doc.Read( ); 
+You can also create an instance of the interface by casting the document to the interface type, 
+and then use that interface to access the methods: 
+IStorable isDoc = (IStorable) doc; 
+    isDoc.status = 0; 
+    isDoc.Read( ); 
+ 
+In this case, in Main( ) you know that Document is in fact an IStorable, so you can take 
+advantage of that knowledge. 
+ 
+As stated earlier, you cannot instantiate an interface 
+directly. That is, you cannot say:
+IStorable isDoc = new IStorable( );
+You can, however, create an instance of the imple-
+menting class, as in the following:
+Document doc = new Document("Test Document");
+You can then create an instance of the interface by 
+casting the implementing object to the interface type,
+which in this case is IStorable:
+IStorable isDoc = (IStorable) doc;
+You can combine these steps by writing:
+IStorable isDoc = (IStorable) new Document("Test 
+Document"); 
+
+In general, it is a better design decision to access the interface methods through an interface 
+reference. Thus, it is better to use isDoc.Read( ), than doc.Read( ), in the previous 
+example. Access through an interface allows you to treat the interface polymorphically. In 
+other words, you can have two or more classes implement the interface, and then by accessing 
+these classes only through the interface, you can ignore their real runtime type and treat them 
+interchangeably.

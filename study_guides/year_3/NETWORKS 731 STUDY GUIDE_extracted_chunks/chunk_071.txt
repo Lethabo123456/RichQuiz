@@ -1,0 +1,25 @@
+When planning your backup strategy, you can choose from several standard backup rotation 
+schemes. The most popular of these schemes, called Grandfather-Father-Son, uses daily (son), 
+weekly (father), and monthly (grandfather) backup sets. 
+
+Figure 2.8 The Grandfather-Father-Son backup rotation scheme 
+© Cengage Learning 2023 
+ 
+Disaster Recovery Planning 
+A disaster recovery plan accounts for the worst-case scenarios, from a far-reaching hurricane 
+to a military or terrorist attack. It should identify a disaster recovery team (with an appointed 
+coordinator) and provide contingency plans for restoring or replacing computer systems, 
+power, telephone systems, and paper-based files. 
+ 
+● Contact names, phone and pager numbers for emergency coordinators who will 
+execute the disaster recovery response in case of disaster, as well as roles and 
+responsibilities of other staff. 
+● Details on which data and servers are being backed up, how frequently backups 
+occur, where backups are kept (off-site), and most important, how backed-up data can 
+be recovered in full. 
+● Details on network topology, redundancy, and agreements with national service 
+carriers, in case local or regional vendors fall prey to the same disaster. 
+● Regular strategies for testing the disaster recovery plan. 
+● A plan for managing the crisis, including regular communications with employees 
+and customers. Consider the possibility that regular communications modes (such as 
+phone lines) might be unavailable.

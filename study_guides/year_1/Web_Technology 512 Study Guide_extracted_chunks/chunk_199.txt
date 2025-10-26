@@ -1,0 +1,28 @@
+k the box the error message should disappear. 
+ 
+
+ 
+125 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+7.7 VALIDATING THE HTML FORM 
+ 
+The only thing left to do is to return to the validate function. After all the other four 
+functions have been executed, the four variables will either be true or false. We only 
+want to send the form if all four variables are true. If they are not then the user has 
+made an error and we need to keep them on the same page. Here is the rest of the 
+code for the validate function: 
+ 
+ 
+Figure 7.15 – Form Validation 
+ 
+The new part is the IF … ELSE statement. It uses the AND operator (&&) three times. 
+IF all four variables are true we have this line: 
+document.frmOne.submit(); 
+ 
+You only need the word submit with a pair of round brackets on the end. This is 
+enough to send the form to whatever you have for the ACTION attribute for the 
+FORM tag. 
+ 
+If you do not want to send the form the only thing you need to do is to set the return 
+value to false.

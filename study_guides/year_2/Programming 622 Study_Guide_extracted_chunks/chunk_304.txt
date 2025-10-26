@@ -1,0 +1,23 @@
+function, rFibNum, to determine the desired Fibonacci number. The 
+function rFibNum takes as parameters three numbers representing the first two numbers of the Fibonacci 
+sequence and a number n, the desired nth Fibonacci number. The function rFibNum returns the nth 
+Fibonacci number in the sequence.  
+  
+Recall that the third Fibonacci number is the sum of the first two Fibonacci numbers. The fourth Fibonacci 
+number in a sequence is the sum of the second and third Fibonacci numbers. Therefore, to calculate the 
+fourth Fibonacci number, we add the second Fibonacci number and the third Fibonacci number (which is 
+itself the sum of the first two Fibonacci numbers). The following recursive algorithm calculates the nth 
+Fibonacci number, where a denotes the first Fibonacci number, b the second Fibonacci number, and n the 
+nth Fibonacci number:  
+  
+  
+  
+  
+ 
+(Equation  
+4-3)  
+  
+The following recursive function implements this algorithm:  
+  
+int rFibNum(int a, int b, int n)  
+{ if (n =

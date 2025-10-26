@@ -1,0 +1,26 @@
+testing.html file is inside the folder. If you get a Connection 
+Refused error, the Apache Web server is not running (or it is running on a different port). Check that 
+you have started the Web server and that it is configured correctly (again, the documentation that 
+came with the package should help here).  
+  
+Testing PHP  
+Now that you know Apache is working correctly, it is time to make sure PHP is installed and working. 
+This is where you get to write your very first PHP script!  
+  
+Open your text editor again, and create a new file with the following contents:  
+  
+  
+  
+< ?php phpinfo();  
+? >  
+  
+  
+  
+Save this file as testing.php in the same folder as your testing.html file — that is to say, the 
+document root folder. Now type the following into your Web browser ’s address bar (adjusting the 
+HTTP port number if necessary):  
+  
+http://localhost/testing.php  
+  
+Press Enter and you should see a page similar to Figure 5 appear. (If you ’ ve installed PHP 5.3 you 
+will, of c

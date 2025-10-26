@@ -1,0 +1,19 @@
+ology, a 
+class variable is called a class object or class instance. To help you become familiar 
+with this terminology, from now on we will use the term class object, or simply object, 
+for a class variable. 
+The syntax for declaring a class object is the same as that for declaring any other 
+variable. The following statements declare two objects of type clockType: clockType 
+myClock; clockType yourClock; 
+ 
+Each object has 10 members: seven member functions and three member variables. 
+Each object has separate memory allocated for hr, min, and sec. 
+ 
+In actuality, memory is allocated only for the member variables of each class object. 
+The C++ compiler generates only one physical copy of a member function of a class, 
+and each class object executes the same copy of the member function. Therefore, 
+
+176 | P a g e  
+ 
+whenever we draw the figure of a class object, we will show only the member variables. 
+As an example, Figure below shows the objects myClock and yourClock with values

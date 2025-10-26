@@ -1,0 +1,49 @@
+We will now discuss those utilities mentioned:
+
+5.3.1 traceroute 
+For starters, let’s pose these questions: 
+ 
+• Where do all those packets really go when we send them over the Internet? 
+• And how do all the packets get to their destinations? 
+ 
+Well, we can use the TCP/IP traceroute (tracert with Windows) command-line utility to help us 
+answer both questions because its output will show us every router interface a TCP/IP packet 
+passes through on the way to its destination. Traceroute (trace for short) displays the path a 
+packet takes to get to a remote device in all its glory by using something we call IP packet time to 
+live (TTL) time-outs and Internet Control Message Protocol (ICMP) error messages. And it’s also a 
+handy tool for troubleshooting internetwork because we can use it to ﬁgure out which router 
+along a path through that internetwork happens to be causing a network failure when a certain 
+destination machine or network is, or suddenly becomes, unreachable. 
+To use tracert, at a Windows command prompt, type tracert, a space, and the Domain Name 
+Service (DNS) name or IP address of the host machine to which you want to ﬁnd the route. The 
+tracert utility will respond with a list of all the DNS names and IP addresses of the routers that 
+the packet is passing through on its way. Plus, tracert uses TTL to indicate the time it takes for 
+each attempt. 
+
+Following is the tracert output from my workstation in Cape town Western cape, to my 
+Lammle.com server in Pretoria, Gauteng: 
+
+Figure 5.3: Tracert output (Lammle, 2022, p.834) 
+
+Were you able to see that the packet bounces through several routers before arriving at its 
+destination? Good! This utility is useful if you are having problems reaching a web server on the 
+Internet and you want to know if a wide area network (WAN) link is down or if the server just isn’t 
+responding. What this means to you is that, basically, wherever the trace stops is a great place to 
+start troubleshooting. No worries here, though—the previous output shows that every router is 
+up and responding. Last, notice the ms in the output. This is the latency of each hop, meaning the 
+delay. Tracert (or traceroute) is a great troubleshooting tool you can use to ﬁnd out where your 
+network bottlenecks are. 
+
+If you use traceroute or tracert and receive an asterisk, this indicates that the attempt to reach 
+that router took longer than the default time-out value. This is very good to know because it can 
+mean that either the router is extremely busy, or a particular link is slow. Another reason for 
+getting an asterisk could be that the administrator has disabled ICMP on the router that the 
+packet is trying to hop through. Why would someone want to do that? For security reasons, that’s 
+why. It happens to be a typical strategic move done on the routers that interface with the ISP to 
+conceal their actual location so bad guys can’t hack into them and therefore into your 
+internetwork. It’s a good idea, and I highly recommend doing it. 
+In addition to traceroute and tracert, you can use pathping, which is a lot like traceroute: 
+ 
+Figure 5.4: Pathping output (Lammle, 2022) 
+
+This provides a nice feedback at the end of the output.

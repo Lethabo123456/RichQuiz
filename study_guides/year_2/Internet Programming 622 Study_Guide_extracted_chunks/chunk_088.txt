@@ -1,0 +1,27 @@
+urious, the session_id() function returns 
+the current session ID. To end a session, call session_destroy(). This removes the data store for the 
+current session, but it does not remove the cookie from the browser cache. This means that, on 
+subsequent visits to sessions-enabled pages, the user will have the same session ID they had before 
+the call to session_destroy(), but none of the data.   
+   
+The example below shows the code from our first example above rewritten to use sessions instead 
+of manually setting cookies.   
+   
+Setting Preferences With Sessions (prefs_session.php)   
+   
+<html>   
+<head><title>Preferences Set</title></head>   
+<body>   
+<?php   
+      session_start();       $colors 
+= array(   
+
+40   
+   
+              'black' => "#000000",   
+              'white' => "#ffffff",   
+              'red' => "#ff0000",   
+             'blue' => "#0000ff"   
+       );     
+       $backgroundName = $_POST['background'];   
+      $foregroundName = $_POST['foreground'];

@@ -1,0 +1,23 @@
+t checks to an age range. First we set a variable called age to a value of 24. 
+We then use an IF statement to see what is in the variable. Between the round 
+brackets we have this: 
+age>= 18 && age <= 30 
+ 
+This reads, "IF age is greater than or equal to 18 AND age is less than or equal to 30". If 
+both those things are true then the whole statement becomes true, and the first 
+document.write gets executed. If just one of them is false then the whole statement 
+becomes false. To illustrate that, change the age variable from 24 to 14. Save the 
+change and refresh the page in your browser. You should find that the else part gets 
+executed. 
+ 
+Exercise 
+Add an ELSE IF part to your code. Make this ELSE IF part check the age ranges 13 to 17. 
+ 
+3.8 THE NOT OPERATOR 
+ 
+You saw above the shorthand way to check for true values: 
+if ( cookies_enabled && javascript_enabled )  
+{ 
+ 
+This saves you having to type cookies_enabled == true. You can do this because by 
+default JavaScript will check y

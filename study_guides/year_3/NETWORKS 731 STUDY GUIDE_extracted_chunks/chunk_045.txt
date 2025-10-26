@@ -1,0 +1,15 @@
+2.4 Servers 
+
+As with other devices, you can make servers more fault tolerant by supplying them with 
+redundant components. Critical servers often contain redundant NICs, processors, and hard 
+disks. These redundant components provide assurance that if one item fails, the entire system 
+won’t fail. At the same time, redundant NICs and processors enable load balancing. For 
+example, a server with two 1-Gbps NICs might receive and transmit traffic at a rate of 460 
+Mbps during a busy time of the day. With additional software provided by either the NIC 
+manufacturer or a third party, the redundant NICs can work in tandem to distribute the load, 
+ensuring that approximately half the data travels through the first NIC and half through the 
+second. This approach improves response time for users accessing the server. If one NIC fails, 
+the other NIC automatically assumes full responsibility for receiving and transmitting all data 
+to and from the server. Although load balancing does not technically fall under the category 
+of fault tolerance, it helps justify the purchase of redundant components that do contribute 
+to fault tolerance.

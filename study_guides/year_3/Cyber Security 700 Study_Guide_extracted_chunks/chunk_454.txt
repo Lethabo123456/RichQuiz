@@ -1,0 +1,21 @@
+Firewalls 
+The security management of firewalls requires a clearly defined firewall policy that is compatible with 
+an overall security policy and a plan for the implementation and operation of the organization’s 
+firewalls. The following subsections examine these two topics. 
+ 
+Firewall Policy 
+National Institute of Standards and Technology (NIST) SP 800-41, Guidelines on Firewalls and Firewall 
+Policy, defines a firewall policy as a description of how an organization’s firewalls should handle 
+inbound and outbound network traffic for specific IP addresses and address ranges, protocols, 
+applications, and content types, based on the organization’s information security policies. SP 800-41 
+makes the following recommendations with respect to setting firewall policies: 
+
+ Base an organization’s firewall policy on a comprehensive risk analysis. 
+ Base firewall policies on blocking all inbound and outbound traffic, with exceptions made for 
+desired traffic. 
+ Take into account the source and destination of the traffic in addition to the content. 
+ By default, block many types of IPv4 traffic, such as traffic with invalid or private addresses. 
+ Have policies for handling incoming and outgoing IPv6 traffic. 
+ Determine which applications in the organization send traffic into or out of its network and 
+
+make firewall policies to block traffic for other applications.

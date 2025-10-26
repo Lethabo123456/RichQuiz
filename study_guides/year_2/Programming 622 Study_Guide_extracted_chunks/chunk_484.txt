@@ -1,0 +1,41 @@
+::serverType()  
+{ status = "free";  
+transactionTime = 0;  
+}  
+  
+bool serverType::isFree() const  
+{ return (status == "free");  
+}  
+  
+void serverType::setBusy()  
+{ status = "busy";  
+}  
+  
+void serverType::setFree()  
+{ status = "free";  
+}  
+  
+void serverType::setTransactionTime(int t)  
+{ transactionTime = t;  
+}  
+  
+void serverType::setTransactionTime()  
+{ int time;  
+time = currentCustomer.getTransactionTime(); transactionTime 
+= time;  
+}  
+  
+
+243  
+  
+void serverType::decreaseTransactionTime()  
+{  
+transactionTime--;  
+}  
+  
+We leave the definitions of the functions getRemainingTransactionTime, setCurrentCustomer, 
+getCurrentCustomerNumber, getCurrentCustomerArrivalTime, getCurrentCustomerWaitingTime, and 
+getCurrentCustomerTransactionTime as an exercise for you.  
+  
+Because we are designing a simulation program that can be used in a variety of applications, we need to 
+design two more classes: a class to create and process a list of servers and a class to create a

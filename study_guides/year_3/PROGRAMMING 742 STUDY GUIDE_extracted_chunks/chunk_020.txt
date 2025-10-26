@@ -1,0 +1,21 @@
+1.2.3 Copy Constructors 
+A copy constructor creates a new object by copying variables from an existing object of the 
+same type. For example, you might want to pass a Time object to a Time constructor so that 
+the new Time object has the same values as the old one. 
+C# does not provide a copy constructor, so if you want one you must provide it yourself. Such 
+a constructor copies the elements from the original object into the new one: 
+
+public Time (Time existingTimeObject) { 
+Year = existingTimeObject.Year; 
+Month = existingTimeObject.Month; Date = 
+existingTimeObject.Date; 
+Hour = existingTimeObject.Hour; Minute = 
+existingTimeObject.Minute; Second = ex-
+istingTimeObject.Second; 
+} 
+
+A copy constructor is invoked by instantiating an object of type Time and passing it the name 
+of the Time object to be copied: 
+Time t2 = new Time(t2); 
+Here an existingTimeObject (t2) is passed as a parameter to the copy constructor which will 
+create a new Time object (t2). 

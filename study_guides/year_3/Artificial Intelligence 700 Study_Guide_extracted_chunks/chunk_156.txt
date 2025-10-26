@@ -1,0 +1,39 @@
+Evaluating Predicates 
+There are two ways to evaluate the truth of a predicate P(x,y): 
+ 
+* Assign a real-world interpretation to P (such as addition, subtraction, 
+or equivalence) and a domain for P (ie, the possible values for the 
+arguments) and compute the function P(x,y) under that interpretation. 
+ 
+o If we assign the interpretation "equivalence" to P, and let the 
+domain for P be the set of integers, then we can evaluate P(1,2) 
+by asking is 1 equivalent to 2 (false). 
+o If we assign the interpretation "less than" to P, and let the 
+domain for P be the set of integers, then we can evaluate P(1,2) 
+by asking is 1 less than 2 (true). 
+o If we assign the interpretation "brother" to P, and let the domain 
+
+for P be all students on campus, then we can evaluate 
+P(Adam,Barney) by asking whether or not Adam and Barney are 
+brothers. 
+ 
+* Consult a relational database containing pairs of values for x and y 
+and the corresponding value of P(x,y). 
+ 
+o If the interpretation for P is "grade in CSC173" and the domain of 
+x is all students on campus, and the domain of y is the set of 
+possible grades, then we can evaluate P(Rosemary,"A") by looking 
+up Rosemary's grade in the grade file for 173. 
+ 
+o If we assign the interpretation "has a better overall record" to P, 
+and let the domain of P be the set of professional football teams, 
+then we can evaluate P(Buffalo, Miami) by looking up their 
+respective records in a football database. 
+ 
+Note that the relation approach is limited to finite domains, or at 
+least finite sets of arguments for which the predicate is true. The 
+real world interpretation approach can have an unbounded number of 
+sets of arguments for which the predicate is true. This tradeoff 
+has implications for systems such as Prolog. Numbers are 
+special-cased in Prolog, but for everything else the system suffers 
+from what is called the "closed world" problem. 

@@ -1,0 +1,16 @@
+ch 
+customer is served by which server, the server also stores the information of the customer being served. 
+Thus, three member variables are associated with a server: the status, the transactionTime, and the 
+currentCustomer. Some of the basic operations that must be performed on a server are as follows: Check 
+whether the server is free; set the server as free; set the server as busy; set the transaction time (that is, 
+how long it takes to serve the customer); return the remaining transaction time (to determine whether 
+the server should be set to free); if the server is busy after each time unit, decrement the transaction time 
+by one time unit; and so on. The following class, serverType, implements the server as an ADT:  
+//************************************************************  
+// class serverType  
+// This class specifies the members to implement a server. 
+//******************************************************
+****** class serverType  
+{  
+public:  
+serverType(); //De

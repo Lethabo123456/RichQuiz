@@ -1,0 +1,27 @@
+f (current is NULL)  
+{  
+Either the B-tree is empty or the search ends at an empty subtree.  
+Set median to insertItem  
+Set rightChild to NULL  
+Set isTaller to true  
+}  
+else  
+{  
+Call function searchNode to search the current node  
+  
+if insertItem is in the node output 
+an error message else  
+{  
+call the function insertBTree with appropriate parameters 
+if isTaller is true if current node is not full insert item into 
+current node else call the function splitNode to split the 
+node  
+}  
+}  
+  
+We leave it as an exercise for you to write the definition of the function insertBTree.  
+  
+The function insertNode inserts an item in the node. Because the keys in the node are in order, the 
+algorithm to insert a new item is similar to the insertAt function. The function has four parameters: 
+current—a pointer to the node in which to insert the new item, insertItem—the item to be inserted, 
+rightChild—a pointer to the right subtree of the item to be inserted, and insertPosition—the

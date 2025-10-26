@@ -1,0 +1,60 @@
+Code the Activity 
+After the layout is complete, open ContactListActivity.java. Add code to make the navigation buttons 
+work. Be sure to disable the List button (see “Code the Page’s Behavior” in previous Chapter). Next, 
+verify the class declaration line of code so that it extends AppCompatActivity and then enter the code  
+in Listing 6.3 in the onCreate method after the calls to the button initialization methods. 
+ 
+Most of the code in Listing 6.3 should be familiar. The first six lines create a new ContactDataSource 
+object, open the database, retrieve the contact names using the method you created, and close the 
+database. Lines 8–12 set up the RecyclerView to display the data. First a reference to the widget is 
+created using findViewById. The next line creates an instance of the LayoutManager used to display 
+the individual items. In this case, we use a LinearLayoutManager to display a vertical scrolling list. This 
+LayoutManager is then associated with the RecyclerView. Line 9 instantiates the ContactAdapter 
+object you coded, passing it the ArrayList of contact names. Finally, this adapter is associated with the 
+RecyclerView. 
+
+The final new line is in the catch statement. A Toast displays a message on 
+the device screen for a brief time and then goes away. The method makeText 
+configures the message. The first parameter indicates where the message 
+should display. In this case, we want it in the current activity (this). The 
+second sets the message, and the third indicates how long the message 
+should display. Finally, .show() displays the message. 
+
+Run the app in the emulator and tap the List button in the navigation bar. 
+Your display should look like Figure 6.2. If you have no data entered, the 
+screen will be blank. Hit the Back button and enter a contact. Then tap the 
+List button again. Your initial display of the list may include contacts you 
+previously entered while testing the app in previous chapters. 
+A list of data is much more useful if it allows the user to do something with the data. In time, you will 
+make the tap of a contact in the list open the MainActivity with that user’s data displayed. After the 
+following code is entered, the tap of a contact just opens the MainActivity. Getting RecyclerView to 
+respond to an item click is more complicated than it was in the legacy ListView widget. It requires 
+setting up the Adapter and ViewHolder to respond to a click. Since we want the selection of an item 
+from the list to be responded to by the activity that has the RecyclerView (in this case, 
+ContactListActivity), we have to set up that response in ContactListActivity and pass it to 
+ContactAdapter and ContactViewHolder so they can execute it. We will first modify ContactAdapter 
+to accept an OnClickListener. Open ContactAdapter.java and add the code required to make it look 
+like Listing 6.4. 
+                                                                       98 
+While there are only a few lines added, they require explanation: 
+▪ Line 3—This line declares a private variable to hold the OnClickListener object passed from the 
+activity. 
+▪ Lines 11–12—The first line sets a tag so that we can identify which item was clicked. The second 
+line sets the ViewHolder’s OnClickListener to the listener passed from the activity. 
+▪ Lines 25–27—This code sets up an adapter method so that we can pass the listener from the 
+activity to the adapter.
+
+The next step is to create the listener in the activity and pass it to the adapter. The listener will be 
+created as a private variable for the ContactListActivity class. Put the code in Listing 6.5 after the class 
+declaration but before the onCreate method in ContactListActivity.java. 
+
+The code declares a variable of type View.OnClickListener and then instantiates a new 
+View.OnClickListener. The onClick method of the listener first gets a reference to the ViewHolder that 
+produced the click using the tag setup in the adapter. It then uses the ViewHolder to get the position 
+of the ViewHolder in the list. This position will later be used to get the corresponding Contact object 
+in the data set so we can pass the ID to MainActivity for editing of the selected contact. For now, we 
+just start MainActivity. Test your app to ensure that tapping any contact in the list opens MainActivity. 
+ 
+That’s all you need to code a simple list. Simple lists are useful for basic information display. To make 
+a more interesting list that works exactly as you need for your app, you must modify the adapter and 
+list item layout. 

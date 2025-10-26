@@ -1,0 +1,33 @@
+(); 
+alert( retVal ); 
+} 
+ 
+This is the important line: 
+var retVal = secondFunction(); 
+ 
+We still have the function call. But this time it is on 
+the right hand side of an equal sign. A single equal 
+sign is the assignment operator, remember. So 
+we're assigning a value to the variable on the left 
+of the equal sign. The value we are assigning is 
+whatever we get back from the function called 
+secondFunction.So bear that in mind: if you want 
+to return a value from a function, assign it to a variable on the left of an equal sign. 
+ 
+After we get the value back from the function, we can do other things with it. In our 
+simple example, we are just displaying the value in an alert box. 
+ 
+4.2.3 Function Arguments in JavaScript 
+ 
+ 
+WEB RESOURCE 
+ 
+http://www.w3schools.com/j
+s/js_functions.asp 
+
+ 
+70 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+You can pass values over to your functions. These values are called arguments, and 
+they go between the round brackets of the function. If you have more than

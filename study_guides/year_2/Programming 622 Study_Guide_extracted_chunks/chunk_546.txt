@@ -1,0 +1,37 @@
+ortion of the array is full, we 
+can continue the search in the top portion of the array. This can be easily accomplished by using the mod 
+
+270  
+  
+operator. That is, starting at t, we check the array locations t, (t + 1) % HTSize, (t + 2) % HTSize, . . ., (t + j) 
+% HTSize. This is called the probe sequence.  
+  
+The next array slot is given by  
+  
+(h(X) + j) % HTSize  
+  
+where j is the jth probe.  
+  
+EXAMPLE 7-4  
+  
+Consider the students’ IDs and the hash function given in Example 7-3. Then we know that    
+  
+  
+Using the linear probing, the array position where each student’s data is stored is:   
+   
+As before, suppose HT[b] ← a means ‘‘store the data of the student with ID a into HT[b+.’’ Then  
+  
+  
+  
+The following C++ code implements linear probing:  
+  
+hIndex = hashFunction(insertKey);  
+found = false;  
+while (HT[hIndex] != emptyKey && !found) if 
+(HT[hIndex].key == key)  
+found = true;  
+else hIndex = (hIndex + 1) % HTSize;  
+
+271  
+  
+if (found) cerr << "Duplicate

@@ -1,0 +1,29 @@
+Unsupervised learning has the key benefit of not requiring labelled data, making it significantly 
+simpler to get data that supports unsupervised learning models. Obviously, this has the disadvantage 
+that we lose any predictive ability, because without the response variable, our model would be 
+entirely impractical at generating any sort of predictions. 
+
+Figure 4.4 – Example of a Cluster Analysis 
+
+A major disadvantage is that it is difficult to ascertain how well we are doing. In a regression or 
+classification problem, we can easily tell how well our models are predicting by comparing our models' 
+answers to the actual answers. For example, if our supervised model predicts rain and it is sunny 
+outside, the model was incorrect. If our supervised model predicts the price will go up by 1 Rand and 
+it goes up by 99 cents, our model was very close! In supervised modelling, this concept is foreign 
+because we have no answer to compare our models to. Unsupervised models are simply suggesting 
+differences and similarities, which then requires a human's interpretation (Sinan, 2016).
+
+4.4.3 Reinforcement learning 
+In reinforcement learning, algorithms get to choose an action in an environment and then are 
+rewarded (positively or negatively) for choosing this action. The algorithm then adjusts itself and 
+modifies its strategy in order to accomplish some goal, which is usually to get more rewards (Sinan, 
+2016). 
+ 
+This type of machine learning is very popular in AI-assisted game play as agents (the AI) are allowed 
+to explore a virtual world and collect rewards and learn the best navigation techniques. This model is 
+also popular in robotics, especially in the field of self-automated machinery, including cars: 
+ 
+ 
+Figure 4.5 – Unsupervised Learning Model 
+
+Figure 4.6 – Reinforcement Learning 

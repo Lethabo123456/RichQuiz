@@ -1,0 +1,48 @@
+Break and Continue Statements 
+
+The break statement, when executed in a switch structure, provides an 
+immediate exit from the switch structure. Similarly, you can use the break 
+statement in while, for, and do. . .while loops to immediately exit from the loop 
+structure. The break statement is typically used for two purposes:  
+ To exit early from a loop.  
+ To skip the remainder of the switch structure. 
+After the break statement executes, the program continues to execute with the 
+first statement after the structure. The use of a break statement in a loop can 
+eliminate the use of certain (flag) variables. 
+ 
+This while loop is supposed to find the sum of a set of positive numbers. If the data 
+set contains a negative number, the loop terminates with an appropriate error 
+message. This while loop uses the flag variable isNegative to signal the presence of 
+a negative number. The variable isNegative is initialized to false before the while loop. 
+Before adding num to sum, a check is made to see if num is negative. If num is 
+negative, an error message appears on the screen and isNegative is set to true. In the 
+next iteration, when the expression in the while statement is evaluated, it evaluates to false because 
+!isNegative is false. (Note that because isNegative is true, !isNegative is false.) 
+ 
+The continue statement is used in while, for, and do. . .while structures. When the 
+continue statement is executed in a loop, it skips the remaining statements in the loop 
+and proceeds with the next iteration of the loop. In a while and do. . .while structure, 
+the expression (that is, the loop-continue test) is evaluated immediately after the 
+continue statement. In a for structure, the update statement is executed after the 
+continue statement, and then the loop condition (that is, the loop-continue test) 
+executes. If the previous program segment encounters a negative number, the while 
+loop terminates. If you want to discard the negative number and read the next number 
+rather than terminate the loop, replace the break statement with the continue 
+statement. 
+
+It was stated earlier that all three loops have their place in C++ and that one loop can 
+often replace another. The execution of a continue statement, however, is where the 
+while and do. . .while structures differ from the for structure. When the continue 
+statement is executed in a while or a do. . .while loop, the update statement may not 
+execute. In a for structure, the update statement always executes. 
+
+Nested Control Structures 
+In this section, we give examples that illustrate how to use nested loops to 
+achieve useful results and process data. 
+
+Suppose you want to create the following pattern:  
+* 
+** 
+*** 
+**** 
+***** 

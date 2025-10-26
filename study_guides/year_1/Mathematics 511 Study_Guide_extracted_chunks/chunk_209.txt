@@ -1,0 +1,30 @@
+Now suppose that a network is made up of data centers and communication 
+links between computers. We can represent the location of each data center 
+by a point and each communications 
+link by a line segment, as shown in Figure 4.1. 
+
+Figure 4.1: A Computer Network 
+
+This computer network can be modeled using a graph in which the vertices 
+of the graph represent the data centers and the edges represent 
+communication links. In general, we visualize graphs by using points to 
+represent vertices and line segments, possibly curved, to represent edges, 
+where the endpoints of a line segment representing an edge are the points 
+representing the endpoints of the edge. When we draw a graph, we 
+generally try to draw edges so that they do not cross. However, this is not 
+necessary because any depiction using points to represent vertices and any 
+form of connection between vertices can be used. Indeed, there are some 
+graphs that cannot be drawn in the plane without edges crossing. The key 
+point is that the way we draw a graph is arbitrary, as long as the correct 
+connections between vertices are depicted. Note that each edge of the graph 
+representing this computer network connects two different vertices. That 
+is, no edge connects a vertex to itself. Furthermore, no two different 
+edges connect the same pair of vertices. A graph in which each edge connects 
+two different vertices and where no two edges connect the same pair of vertices 
+is called a simple graph. Note that in a simple graph, 
+each edge is associated to an unordered pair of vertices, and no other edge 
+is associated to this same edge. Consequently, when there is an edge of a 
+simple graph associated to {u, v}, we can also say, without possible 
+confusion, that {u, v} is an edge of the graph. 
+
+

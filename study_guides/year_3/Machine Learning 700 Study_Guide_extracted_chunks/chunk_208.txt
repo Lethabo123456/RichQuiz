@@ -1,0 +1,27 @@
+Analyzing the faces dataset with agglomerative clustering. Now, let’s look at the results of agglomerative 
+clustering: 
+ 
+Agglomerative clustering also produces relatively equally sized clusters, with cluster sizes between 26 
+and 623. These are more uneven than those produced by k-means, but much more even than the ones 
+produced by DBSCAN. We can compute the ARI to measure whether the two partitions of the data given 
+by agglomerative clustering and k-means are similar: 
+ 
+An ARI of only 0.13 means that the two clusterings labels_agg and labels_km have little in common. This 
+is not very surprising, given the fact that points further away from the cluster centers seem to have little 
+in common for k-means. Next, we might want to plot the dendrogram. We’ll limit the depth of the tree 
+in the plot, as branching down to the individual 2,063 data points would result in an unreadably dense 
+plot: 
+
+Creating 10 clusters, we cut across the tree at the very top, where there are 10 vertical lines. In the 
+dendrogram for the toy data, you could see by the length of the branches that two or three clusters might 
+capture the data appropriately. For the faces data, there doesn’t seem to be a very natural cutoff point. 
+There are some branches that represent more distinct groups, but there doesn’t appear to be a particular 
+number of clusters that is a good fit. This is not surprising, given the results of DBSCAN, which tried to 
+cluster all points together. Let’s visualize the 10 clusters, as we did for k-means earlier. Note that there is 
+no notion of cluster center in agglomerative clustering (though we could compute the mean), and we 
+simply show the first couple of points in each cluster. We show the number of points in each cluster to 
+the left of the first image: 
+
+While some of the clusters seem to have a semantic theme, many of them are too large to be actually 
+homogeneous. To get more homogeneous clusters, we can run the algorithm again, this time with 40 
+clusters, and pick out some of the clusters that are particularly interesting: 

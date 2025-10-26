@@ -1,0 +1,17 @@
+ctured Query Language (SQL), you will learn how SQL 
+commands can be used to accomplish relational algebra operations. 
+Formal Definitions and Terminology 
+As previously explained, it is common to use the terms relation and table interchangeably. However, 
+since the mathematical terms need to be precise, we will use the more specific term relation when 
+discussing the formal definitions of the various relational algebra operators. One important aspect 
+of using the specific term relation is that it acknowledges the distinction between the relation and 
+the relation variable, or relvar, for short. A relation is the data that we see in our tables. A relvar is 
+a variable that holds a relation. To conveniently maintain this distinction in formulas, an unspecified 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Three page 72-76 
+
+ 
+45 
+relation is often assigned a lowercase letter (e.g., “r”), while the relvar is as

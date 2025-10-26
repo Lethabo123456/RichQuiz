@@ -1,0 +1,14 @@
+, and sec of otherClock have the values 14, 25, and 54, respectively. In other 
+words, when the body of the function equalTime executes, the value of otherClock.hr is 14, the value of 
+otherClock.min is 25, and the value of otherClock.sec is 54. The function equalTime is a member of 
+myClock. When the function equalTime executes, the variables hr, min, and sec in the body of the function 
+equalTime are the instance variables of the variable myClock. Therefore, the member hr of myClock is 
+compared with otherClock.hr, the member min of myClock is compared with otherClock.min, and the 
+member sec of myClock is compared with otherClock.sec.  
+  
+Once again, from the definition of the function equalTime, it is clear why this function has only one 
+parameter.  
+  
+Let us again look at the definition of the function equalTime. Notice that within the definition of this 
+function, the object otherClock accesses the instance variables hr, min, and sec. However, these instance 
+variables are pri

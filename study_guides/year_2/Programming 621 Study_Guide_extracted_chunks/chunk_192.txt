@@ -1,0 +1,19 @@
+e, 
+getTime, 
+printTime, 
+incrementSeconds, 
+incrementMinutes, 
+incrementHours, and equalTime—are public and can be directly accessed 
+outside the class. They can also directly access the member variables (hr, min, 
+and sec). In other words, when we write the definitions of these functions, we 
+do not pass these member variables as parameters to the member functions. 
+ In the function equalTime, the formal parameter is a constant reference 
+parameter. That is, in a call to the function equalTime, the formal parameter 
+receives the address of the actual parameter, but the formal parameter cannot 
+modify the value of the actual parameter. You could have declared the formal 
+parameter as a value parameter, but that would require the formal parameter 
+to copy the value of the actual parameter, which could result in poor 
+performance.  
+ The word const at the end of the member functions getTime, printTime, and 
+equalTime specifies that these functions cannot modify the member variables 
+o

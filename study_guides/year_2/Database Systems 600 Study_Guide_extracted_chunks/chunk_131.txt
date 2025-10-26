@@ -1,0 +1,14 @@
+and implementation modelling. 
+Entities 
+An entity in the ERM corresponds to a table—not to a row—in the relational environment. The 
+ERM refers to a table row as an entity instance or entity occurrence. In the Chen, Crow’s Foot, and 
+UML notations, an entity is represented by a rectangle that contains the entity’s name. The entity 
+name, a noun, is usually written in all capital letters. 
+Attributes 
+Attributes are characteristics of entities. In the Crow’s Foot notation, the attributes are written in 
+the attribute box below the entity rectangle. (See Figure 4.1.)  
+Required and Optional Attributes A required attribute is an attribute that must have a value; in 
+other words, it cannot be left empty. As shown in Figure 4.1, the two boldfaced attributes in the 
+Crow’s Foot notation indicate that data entry will be required. An optional attribute is an attribute 
+that does not require a value; therefore, it can be left empty. 
+Domains Attributes have a domain. A domain is the set of pos

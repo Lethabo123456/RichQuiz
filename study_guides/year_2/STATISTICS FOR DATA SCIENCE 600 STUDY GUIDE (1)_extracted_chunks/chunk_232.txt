@@ -1,0 +1,18 @@
+a g e  | 135 
+ 
+way to identify relationships between variables and, at the same time, quantify them and 
+categorize their strength 
+  
+Now, the following line of code that shows us the correlation between these two variables:       
+ df.corr() # -0.824  
+  
+Recall that a correlation, if close to -1, implies a strong negative correlation, while a 
+correlation close to +1 implies a strong positive correlation. This number helps support the 
+hypothesis because a correlation coefficient close to -1 implies not only a negative 
+correlation, but a strong one at that. Again, we can see this via a scatter plot between the two 
+variables. So, both our visual and our numbers are aligned with each other. This is an 
+important concept that should be true when communicating results.  
+Correlation simply quantifies the degree to which variables change together, whereas 
+causation is the idea that one variable determines the value of another.  
+  
+It is very often the case that two variables might b

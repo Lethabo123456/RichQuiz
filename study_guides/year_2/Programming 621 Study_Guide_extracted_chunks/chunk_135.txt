@@ -1,0 +1,26 @@
+is any expression whose value is a nonnegative 
+integer. The index value specifies the position of the component in the array. In C++, 
+[] is an operator called the array subscripting operator. Moreover, in C++, the array 
+index starts at 0. 
+ 
+Consider the following statement: int list[10]; This statement declares an array list of 
+10 components. The components are list[0], list[1], . . ., list[9]. In other words, we have 
+declared 10 variables 
+ 
+The assignment statement:  
+list[5] = 34; stores 34 in list[5], which is the sixth component of the array list 
+ 
+ 
+ 
+ 
+ 
+
+127 | P a g e  
+ 
+Processing One-Dimensional Arrays 
+ 
+Some of the basic operations performed on a one-dimensional array are initializing, 
+inputting data, outputting data stored in an array, and finding the largest and/or 
+smallest element. Moreover, if the data is numeric, some other basic operations are 
+finding the sum and average of the elements of the array. Each of these operations 
+requires the ability to step th

@@ -1,0 +1,54 @@
+follows:  
+  
+template <class Type>  
+void linkedStackType<Type>::copyStack(const linkedStackType<Type>& otherStack)  
+{  
+nodeType<Type> *newNode, *current, *last;  
+if (stackTop != NULL)    
+  
+  
+initializeStack(); if 
+(otherStack.stackTop == NULL) 
+stackTop = NULL;  
+else  
+{  
+ 
+//if stack is nonempty, make it empty  
+current = otherStack.stackTop;   
+ 
+//set current to point  
+//to the stack to be copied  
+//copy the stackTop element of the stack  
+stackTop = new nodeType<Type>;    
+//create the node  
+stackTop->info = current->info;   
+ 
+//copy the info  
+stackTop->link = NULL;   
+  
+ 
+//set the link field to NULL  
+last = stackTop;   
+  
+  
+ 
+//set last to point to the node  
+current = current->link;   
+  
+ 
+//set current to point to the  
+//next node  
+//copy the remaining stack  
+while (current != NULL)  
+{  
+newNode = new 
+nodeType<Type>; newNode->info 
+= current->info; newNode->link = 
+NULL; last->link = newNode;  
+
+195  
+  
+last = newNode;  
+current = current->link;  
+ 
+}

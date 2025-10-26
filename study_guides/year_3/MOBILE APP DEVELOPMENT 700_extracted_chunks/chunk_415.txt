@@ -1,0 +1,24 @@
+You can now delete the initGetLocationButton() and isBetterLocation() methods. You won’t need 
+them because the GoogleMap class provides all the functionality needed to get the GPS coordinates 
+of a location in real time. Remember to also remove the call to initGetLocationButton() in onCreate(). 
+ 
+You can test this code on your device or emulator. However, there is a chance that you will get an 
+error when you click Run. At some point, an app has too many methods for standard packaging. To 
+solve this problem, you need to add another library dependency. Select File > Project Structure. Refer 
+to the instructions for adding a library dependency earlier in the chapter (Figures 7.2 and 7.3), but this 
+time type multidex into the search and select com.android.support:multidex. Next, you have to modify 
+the Gradle build to use the library to handle larger apps. In the Project panel to the left, expand Gradle 
+Scripts and double-click on build.gradle (module: app). Add the following line at the end of the 
+defaultConfig section (before the } that closes the section): 
+ 
+multiDexEnabled true 
+ 
+When you enter coordinates for the emulator and click the button that is displayed, the map will zoom 
+to that location. If you test it on your device, it will zoom to your current location and Toasts will begin 
+ 
+showing your GPS coordinates. If you do not get an actual map—only a gray area where the map is 
+supposed to be and no errors or crashes—then there is likely a problem with the key you created. Go 
+back to the API Console and check that the SHA1 key you entered exactly matches the key from the 
+signing report and that the name space exactly equals the name space of the app (e.g., 
+com.example.mycontactlist). If there are no errors and it still does not work, consult the “Alternative 
+Key Procedure” in the box to the left.

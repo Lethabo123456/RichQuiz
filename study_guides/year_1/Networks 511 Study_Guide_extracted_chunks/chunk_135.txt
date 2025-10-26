@@ -1,0 +1,24 @@
+Using the nbtstat command 
+Displays NetBIOS over TCP/IP (NetBT) configuration and allows management of the NetBIOS name 
+cache. 
+Nbtstat is designed to help troubleshoot NetBIOS name resolution problems. When a network is 
+functioning normally, NetBIOS over TCP/IP (NetBT) resolves NetBIOS names to IP addresses. It does 
+this through several options for NetBIOS name resolution, including local cache lookup, WINS server 
+query, broadcast, LMHOSTS lookup, Hosts lookup, and DNS server query. 
+The nbtstat command removes and corrects preloaded entries using a number of case-sensitive 
+switches. The nbtstat - a < name > command performs a NetBIOS adapter status command on the 
+computer name specified by < name> . The adapter status command returns the local NetBIOS name 
+table for that computer as well as the MAC address of the adapter card. The nbtstat -A < IP 
+address > command performs the same function using a target IP address rather than a name. 
+The nbtstat - c option shows the contents of the NetBIOS name cache, which contains NetBIOS 
+name-to-IP address mappings. 
+nbtstat -n displays the names that have been registered locally on the system by NetBIOS 
+applications such as the server and redirector. 
+The nbtstat -r command displays the count of all NetBIOS names resolved by broadcast and by 
+querying a WINS server. The nbtstat -R command purges the name cache and reloads all #PRE 
+entries from the LMHOSTS file. #PRE entries are the LMHOSTS name entries that are preloaded into 
+the cache.  
+Nbtstat -RR sends name release packets to the WINS server and starts a refresh, thus re-registering 
+all names with the name server without having to reboot. This is a new option in Windows NT 4.0 
+with Service Pack 4 as well as in Windows 2000. 
+You can use nbtstat -S to list the current NetBIOS sessions and their status, including statistics. 

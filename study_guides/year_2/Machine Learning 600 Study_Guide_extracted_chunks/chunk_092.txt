@@ -1,0 +1,13 @@
+𝑥+ 𝑏𝑦+ 𝑐) 
+The values for a, b, and c are the values that define the line; these values are ones that you 
+choose, and you'll need to tweak them along the way until you get a good fit (clear 
+separation). What you are interested in, though, is the result; you want a function that returns 
++1 if the result of the function is positive, signifying the point is in one category, and returns -
+1 when the point is in the other category. The function's resulting value (+1 or -1) must be 
+correct for every point that you're trying to classify. Don't forget that you have a training file 
+with the correctly classified data so that you can judge the function's correctness; this 
+approach is a supervised method of learning. This step has to be done to figure out where the 
+line fits. Points that are further away from the line show more confidence that they belong to 
+a specific class (see Figure 5.5). 
+ 
+                                                                                     Figure 5.5

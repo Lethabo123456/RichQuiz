@@ -1,0 +1,29 @@
+le names between the 
+parentheses, as follows:  
+  
+function myFunc( $oneParameter, $anotherParameter ) { 
+// (do stuff here)  
+}  
+  
+You can include as many parameter variables as you like. For each parameter you specify, a 
+corresponding argument needs to be passed to the function when it is called. The arguments passed 
+to the function are then placed in these parameter variables. Here is an example:  
+  
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” >  
+< head >  
+< title > Saying hello with style < /title >  
+< link rel=”stylesheet” type=”text/css” href=”common.css” / >  
+< /head >  
+< body >  
+< h1 > Saying hello with style < /h1 >  
+< ?php   
+  function helloWithStyle( $font, $size ) {   echo “ < p style=\”font-family: $font; font-size: 
+{$size}em;\” > Hello, world! < /p  
+> ”;  
+ 
+  
+}  
+  
+ helloWithStyle( “Helvetica”, 2 );  helloWithStyle(

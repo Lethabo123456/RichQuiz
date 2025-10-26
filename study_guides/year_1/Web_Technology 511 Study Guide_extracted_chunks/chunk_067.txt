@@ -1,0 +1,40 @@
+Attributes of a horizontal rule 
+You can format a horizontal rule to make it wider, thicker, or appear in a different 
+color by using several attributes of the HR The following table lists the 
+attributes of the HR tag.  
+
+Attribute           Description 
+----------------------------------------------------------------------------------
+WIDTH               Allows you to specify the length of the horizontal rule as 
+                    a percentage of the width of the browser window. For 
+                    example, you decrease the horizontal rule to 90% of the 
+                    width of the browser window by using the following code: 
+                    
+                    <HR WIDTH=90%> 
+----------------------------------------------------------------------------------
+COLOR               Allows you to specify the color of the horizontal rule. 
+                    You make the horizontal rule appear blue by using the 
+                    following code: 
+
+                    <HR COLOR=Blue> 
+----------------------------------------------------------------------------------
+NOSHADE             Though the word NOSHADE implies no shading, this 
+                    attribute functions in an opposite way. You make the 
+                    horizontal rule appear shaded by using the following 
+                    code: 
+
+                    <HR NOSHADE> 
+----------------------------------------------------------------------------------
+ALIGN               Allows you to align the horizontal rule to the left, right, 
+                    or center of a page. By default, the horizontal rule is 
+                    aligned to the center of a page. You align the horizontal 
+                    rule to the left of a page by using the following code: 
+
+                    <HR ALIGN=Left> 
+-----------------------------------------------------------------------------------
+SIZE                Allows you to specify the thickness of the horizontal 
+                    rule. You set the thickness of the horizontal rule to 5 
+                    pixels by using the following code: 
+
+                    <HR SIZE=5>
+-----------------------------------------------------------------------------------

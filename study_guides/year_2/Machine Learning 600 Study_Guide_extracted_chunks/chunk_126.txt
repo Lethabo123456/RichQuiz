@@ -1,0 +1,24 @@
+s positive, and it’s a true positive (TP) 
+scenario. 
+ 
+The model wrongly classifies the feature as positive, but it’s a false positive (FP) 
+scenario. 
+ 
+The model wrongly classifies the feature as negative, but it’s a false negative (FN) 
+scenario. 
+ 
+The model rightly classifies the feature as negative, and it’s a true negative (TN) 
+scenario. 
+You can represent the results as a 2×2 confusion matrix (see Table 6.2). Starting from here, 
+you generate indicators to estimate the precision of the model. 
+                                                                                 Table 6.2: Confusion matrix 
+                                            
+ 
+The rows of the matrix contain predictions, whereas the columns contain actual values. From 
+here, you can generate three key performance indicators: accuracy, recall, and precision. 
+(See Table 6.3.) 
+ 
+
+P a g e  | 80 
+ 
+                                                                          Table 6.3: Recall, Precision and Ac

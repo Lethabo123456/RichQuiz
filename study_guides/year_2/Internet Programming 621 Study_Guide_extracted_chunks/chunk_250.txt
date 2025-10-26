@@ -1,0 +1,83 @@
+rror. 
+d) I am a Error 
+  
+Answer: c 
+  
+94. What will be the output of the following PHP code? 
+<?php 
+$op2 = "blabla"; 
+function foo($op1) 
+{ 
+echo $op1; 
+echo $op2; 
+} 
+foo("hello"); 
+?> 
+  
+a) helloblabla 
+b) Error 
+c) hello 
+d) helloblablablabla 
+  
+Answer: c 
+  
+95. What will be the output of the following PHP code? 
+1. 
+<?php 
+2. 
+        function foo($msg) 
+3. 
+        { 
+4. 
+            echo "$msg"; 
+5. 
+        } 
+6. 
+        $var1 = "foo"; 
+
+7. 
+        $var1("will this work"); 
+8. 
+    ?> 
+a) Error. 
+b) $msg 
+c) 0 
+d) will this work 
+  
+Answer: d 
+  
+96. What will be the output of the following PHP code? 
+1. 
+<?php 
+2. 
+       echo "chr(52)"; 
+3. 
+    ?> 
+a) 1 
+b) 2 
+c) 3 
+d) 4 
+  
+97. What will be the output of the following PHP code? 
+<?php 
+echo ord ("hi"); 
+?> 
+a) 106 
+b) 103 
+c) 104 
+d) 209 
+  
+Answer: c 
+  
+98. What will be the output of the following PHP code? 
+<?php 
+echo(atan(0.50)); 
+?> 
+  
+a) 0.11845976421345 
+b) 0.23568451142521 
+c) 0.46364760900081 
+d) 1 
+  
+
+A

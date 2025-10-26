@@ -1,0 +1,45 @@
+complexity of the operations of the class stackType on a stack with n 
+elements  
+  
+  
+EXAMPLE 5-1  
+Before we give a programming example, let us first write a simple program that uses the class stackType 
+and tests some of the stack operations. Among others, we will test the assignment operator and the copy 
+constructor. 
+The 
+program 
+and 
+its 
+output 
+are 
+as 
+follows: 
+//*************************************************************  
+// This program tests various operations of a stack.  
+//*************************************************************  
+#include <iostream> 
+#include "myStack.h" 
+using namespace std;  
+
+187  
+  
+void testCopyConstructor(stackType<int> otherStack); int 
+main()  
+{  
+stackType<int> stack(50);  
+ 
+stackType<int> copyStack(50);  
+stackType<int> 
+dummyStack(100); 
+stack.initializeStack(); 
+stack.push(23); stack.push(45); 
+stack.push(38);  
+copyStack = stack;   
+  
+  
+  
+ 
+cout << "The elements of copyStack: ";  
+ 
+//copy stack into copyStack  
+while (!co

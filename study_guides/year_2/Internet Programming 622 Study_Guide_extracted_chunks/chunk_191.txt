@@ -1,0 +1,21 @@
+Testing PHP   
+Now that you know Apache is working correctly, it is time to make sure PHP is installed and working. 
+This is where you get to write your very first PHP script!   
+   
+Open your text editor again, and create a new file with the following contents:   
+   
+   
+< ?php phpinfo();   
+? >   
+   
+   
+Save this file as testing.php in the same folder as your testing.html file — that is to say, the 
+document root folder. Now type the following into your Web browser ’s address bar (adjusting the 
+HTTP port number if necessary):   
+   
+http://localhost/testing.php   
+   
+Press Enter and you should see a page similar to Figure 5 appear. (If you ’ ve installed PHP 5.3 you 
+will, of course, see references to version 5.3 in your page, rather than version 5.2.) This is the result 
+of running the phpinfo() function, a built-in PHP function that displays information about the version 
+of PHP that ’ s installed. This means that you have successfully installed both Apache and PHP.

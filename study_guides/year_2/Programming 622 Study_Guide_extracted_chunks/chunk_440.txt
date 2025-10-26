@@ -1,0 +1,30 @@
+peration on a queue as an array.  
+//************************************************************* template 
+<class Type>  
+class queueType: public queueADT<Type>  
+{ public:  
+const queueType<Type>& operator=(const queueType<Type>&); //Overload 
+the assignment operator.  
+  
+bool isEmptyQueue() const;  
+//Function to determine whether the queue is empty. 
+//Postcondition: Returns true if the queue is empty, 
+// otherwise returns false.  
+  
+bool isFullQueue() const;  
+//Function to determine whether the queue is full. 
+//Postcondition: Returns true if the queue is full, // 
+otherwise returns false.  
+  
+void initializeQueue();  
+//Function to initialize the queue to an empty state.  
+//Postcondition: The queue is empty.  
+  
+Type front() const;  
+//Function to return the first element of the queue. //Precondition: 
+The queue exists and is not empty.  
+//Postcondition: If the queue is empty, the program 
+// terminates; otherwise, the first element of the // 
+queue is returned.  
+  
+Typ

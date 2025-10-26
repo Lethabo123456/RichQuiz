@@ -1,0 +1,25 @@
+4.1.4 Path Names and Relative Paths 
+ 
+When specifying a path name in .NET code, you can use either absolute or relative path names. An abso-
+lute path name explicitly specifies a file or directory from a known location 
+ such as the C: drive. An 
+example of this would be C:\Work\LogFile.txt 
+ this path defines exactly where the file is, with no ambi-
+guity. 
+ 
+Relative path names are relative to a starting location. By using relative path names, no drive or known 
+location needs to be specified. You saw this earlier, where the current working directory was the start-
+ing point, which is the default behavior for relative path names. For example, if your application is run-
+ning in the C:\Development\FileDemo directory and uses the relative path LogFile.txt, the file references  
+would be C:\Development\FileDemo\LogFile.txt. 
+.. string is used. Thus, in 
+the same application, the path ..\Log.txt points to the file C:\Development\Log.txt. 
+ 
+As shown earlier, the working directory is initially set to the directory in which your application is run-
+ning. When you are developing with VS or VCE, this means the application is several directories beneath 
+the project folder you created. It is usually located in ProjectName\bin\Debug. To access a file in the 
+root folder of the project, then, you have to move up two directories with ..\..\. You will see this happen 
+often throughout the chapter. Should you need to, you can determine the working directory by using 
+ 
+Directory.GetCurrentDirectory(), or you can set it to a new path by using 
+Directory.SetCurrentDirectory(). 

@@ -1,0 +1,33 @@
+4.5 Sealed Class 
+The obverse side of the design coin from abstract is sealed. Although an abstract class is 
+intended to be derived from and to provide a template for its subclasses to follow, a sealed 
+class does not allow classes to derive from it at all. Placed before the class declaration, the 
+sealed keyword precludes derivation. Classes are most often marked sealed to prevent 
+accidental inheritance. If the declaration of Window in Example 4-7 is changed from abstract 
+to sealed (eliminating the abstract keyword from the DrawWindow ( ) declaration as well), 
+the program will fail to compile. If you try to build this project, the compiler will return the 
+following error message: 
+'ListBox' cannot inherit from sealed class 'Window' 
+among many other complaints (such as that you cannot create a new protected member in a 
+sealed class). 
+
+4.6 Interfaces 
+You can think of an interface as a class that is totally abstract. Interfaces contain no 
+implementation details for any of their members; all their members are considered abstract. 
+Even more of a contract is required to use an interface than was required for the abstract 
+method. By implementing the interface, the class agrees to define details for all of the 
+interface’s methods. 
+ 
+One advantage of using interfaces is the fact that a class can implement any number of 
+interfaces. But, you can only inherit from one class, abstract, or nonabstract. An interface may 
+even implement multiple interfaces itself. The syntax for defining an interface is as follows: 
+[modifier] interface InterfaceIdentifier 
+{ 
+// Members - no access modifiers are used. 
+} 
+The members of an interface can be methods, properties, or events. No implementation 
+details are provided by the interface for any of its members. The definition of the interface 
+simply specifies a signature for the members that must be supplied by classes implementing 
+it. Interfaces are usually named using an uppercase I as the first character, such as 
+IComparable, ISearchable, or IPayable. 
+ 

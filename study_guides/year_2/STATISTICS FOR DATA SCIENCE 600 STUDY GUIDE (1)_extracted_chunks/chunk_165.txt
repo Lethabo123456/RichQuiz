@@ -1,0 +1,54 @@
+4.5 The Empirical rule 
+ 
+Recall that a normal distribution is defined as having a specific probability distribution that 
+resembles a bell curve. In statistics, we love it when our data behaves normally. For example, 
+if we have data that resembles a normal distribution, like so: 
+The Empirical rule states that we can expect a certain amount of data to live between sets of 
+standard deviations. Specifically, the Empirical rule states for data that is distributed 
+normally: 
+
+• about 68% of the data fall within 1 standard deviation 
+• about 95% of the data fall within 2 standard deviations 
+• about 99.7% of the data fall within 3 standard deviations  
+For example, let's see if our Facebook friends' data holds up to this. Let's use our Dataframe 
+to find the percentage of people that fall within 1, 2, and 3 standard deviations of the mean, 
+as shown: 
+ 
+# finding the percentage of people within one standard deviation of the mean 
+ 
+within_1_std = df_scaled[(df_scaled['friends_scaled'] <= 1) & (df_ 
+scaled['friends_scaled'] >= -1)].shape[0] 
+within_1_std / float(df_scaled.shape[0]) # 0.75 
+ 
+# finding the percentage of people within two standard deviations of the mean 
+ 
+within_2_std = df_scaled[(df_scaled['friends_scaled'] <= 2) & (df_ scaled['friends_scaled'] 
+>= -2)].shape[0] within_2_std / float(df_scaled.shape[0]) # 0.916 
+ 
+# finding the percentage of people within three standard deviations of the mean 
+
+within_3_std = df_scaled[(df_scaled['friends_scaled'] <= 3) & (df_ scaled['friends_scaled'] 
+>= -3)].shape[0] within_3_std / float(df_scaled.shape[0]) # 1.0 
+
+We can see that our data does seem to follow the Empirical rule. About 75% of the people 
+are within a single standard deviation of the mean. About 92% of the people are within 
+two standard deviations, and all of them are within three standard deviations. 
+
+
+Example – exam scores 
+Let's say that we're measuring the scores of an exam and the scores generally have a bell-
+shaped normal distribution. The average of the exam was 84% and the standard deviation 
+was 6%. We can say, with approximate certainty, that: 
+
+• About 68% of the class scored between 78% and 90% because 78 is 6 units below 84, 
+and 90 is 6 units above 84 
+• If we were asked what percentage of the class scored between 72 and 96%, we 
+would notice that 72 is 2 standard deviations below the mean, and 96 is 2 standard 
+deviations above the mean, so, the Empirical rule tells us that about 95% of the class 
+scored in that range. 
+ 
+However, not all data is normally distributed, so, we can't always use the Empirical 
+rule. We have another theorem that helps us analyse any kind of distribution. In the 
+next chapter, we will go in depth about when we can assume the normal 
+distribution. This is because many statistical tests and hypotheses require the 
+underlying data to come from a normally distributed population.

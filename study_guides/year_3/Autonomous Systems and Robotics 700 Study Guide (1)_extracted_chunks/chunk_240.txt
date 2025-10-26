@@ -1,0 +1,61 @@
+gRPC Communication 
+gRPC Service Definition 
+File: C:\distributed_systems\3_grpc\robot_service.proto 
+// Robot Service Definition for gRPC 
+syntax = "proto3"; 
+ 
+package robot; 
+ 
+// Service definition 
+
+service RobotController { 
+    // Unary call - single request, single response 
+    rpc GetRobotStatus(RobotRequest) returns (RobotStatus); 
+     
+    // Server streaming - single request, stream of responses 
+    rpc MonitorRobot(RobotRequest) returns (stream RobotStatus); 
+     
+    // Client streaming - stream of requests, single response 
+    rpc SendCommands(stream RobotCommand) returns (CommandResult); 
+     
+    // Bidirectional streaming - stream of requests and responses 
+    rpc RobotChat(stream ChatMessage) returns (stream ChatMessage); 
+} 
+ 
+// Message definitions 
+message RobotRequest { 
+    string robot_id = 1; 
+    string request_type = 2; 
+} 
+ 
+message RobotStatus { 
+    string robot_id = 1; 
+
+    string status = 2; 
+    double battery_level = 3; 
+    Position position = 4; 
+    int64 timestamp = 5; 
+} 
+ 
+message Position { 
+    double x = 1; 
+    double y = 2; 
+    double z = 3; 
+} 
+ 
+message RobotCommand { 
+    string robot_id = 1; 
+    string command = 2; 
+    map<string, string> parameters = 3; 
+} 
+message CommandResult { 
+    bool success = 1; 
+    string message = 2; 
+    int32 commands_processed = 3; 
+} 
+
+message ChatMessage { 
+    string robot_id = 1; 
+    string message = 2; 
+    int64 timestamp = 3; 
+}

@@ -1,0 +1,25 @@
+he 
+compiler generates the code for intList, it replaces the word elemType with int in the 
+definition of the class listType.  
+ 
+The template parameter in the definitions of the member functions (for example, 
+elemType in the definition of insert) of the class listType is also replaced by int. 
+ 
+ 
+.    
+ 
+ 
+Header file and Implementation of a Class Template    
+ 
+
+226 | P a g e  
+ 
+Until now, we have placed the definition of the class (in the header file) and the 
+definitions of the member functions (in the implementation file) in separate files. The 
+object code was generated from the implementation file and linked with the user code. 
+However, this mechanism of separating the class definition and the definitions of the 
+member functions does not work with class templates.  
+ 
+Passing parameters to a function has an effect at run time, whereas passing a 
+parameter to a class template has an effect at compile time. Because the actual 
+parameter to a class is specified in the user cod

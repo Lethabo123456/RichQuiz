@@ -1,0 +1,22 @@
+We have six different columns that we are working with in this example: 
+
+• country: Qualitative 
+• beer_servings: Quantitative 
+• spirit_servings: Quantitative 
+• wine_servings: Quantitative 
+• total_litres_of_pure_alcohol: Quantitative 
+• continent: Qualitative 
+
+Let's look at the qualitative column continent. We can use Pandas to get some basic summary 
+statistics about this non-numerical characteristic. The describe () method is being used here, 
+which first identifies whether the column is likely quantitative or qualitative and then gives 
+basic information about the column. This is shown as follows: 
+drinks['continent']. describe () >> count 193 >> unique 5 >> top AF >> freq 53 
+It reveals that the WHO has gathered data about five unique continents, the most frequent 
+being AF (Africa), which occurred 53 times in the 193 observations. 
+If we look at one of the quantitative columns and call the same method, we can see the 
+difference in output, as shown: 
+drinks['beer_servings']. describe() >> mean 106.160622 >> min 0.000000 >> max 376.000000 
+Now we can look at the mean (average) beer serving per-person per-country (106.2 servings) 
+as well as the lowest beer serving, zero, and the highest beer serving recorded, 376 (that's 
+more than a beer a day 

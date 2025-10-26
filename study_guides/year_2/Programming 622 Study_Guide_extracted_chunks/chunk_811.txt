@@ -1,0 +1,21 @@
+nt to find the shortest path from a given vertex, called 
+the source, to every other vertex in the graph.  
+  
+This section describes the shortest path algorithm, also called a greedy algorithm, developed by Dijkstra.  
+  
+
+399  
+  
+Let G be a graph with n vertices, where n ≥ 0. Let V(G) = {v1, v2, . . ., vn}.  Let W be a two-dimensional n x n 
+matrix such that  
+  
+  
+The input to the program is the graph and the weight matrix associated with the graph. To make inputting 
+the data easier, we extend the definition of the class graphType (using inheritance), and add the function 
+createWeightedGraph to create the graph and the weight matrix associated with the graph. Let us call 
+this class weightedGraphType. The functions to implement the shortest path algorithm will also be added 
+to this class.  
+//***************************************************************  
+// class weightedGraphType  
+// This class specifies the operations to find the weight of the  
+// shortest path from a gi

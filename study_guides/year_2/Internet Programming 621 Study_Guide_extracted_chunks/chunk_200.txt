@@ -1,0 +1,63 @@
+ill be the output of the following PHP code ? 
+<?php 
+    # echo "Hello world"; 
+    echo "# Hello world";  
+?> 
+A. # Hello world 
+B. Hello world# Hello world 
+C. Hello world 
+D. Error 
+ANS: A 
+ 
+42. What will be the output of the following PHP code ? 
+<?php 
+/* 
+echo "Hello world"; 
+*/ 
+?> 
+A. Hello world 
+
+IP 621  
+B. Nothing 
+C. error 
+D.   /* 
+     Hello world 
+    */ 
+ANS: B 
+43. What will be the output of the following PHP code? 
+<?php 
+$color = "red"; 
+$color = "green"; 
+echo "$color"; 
+?> 
+A. red 
+B. green 
+C. red green 
+D. error 
+ANS: B 
+ 
+44. What will be the output of the following PHP code? 
+<?php 
+$i = 0; $j = 1; $k = 2; 
+print !(($i + $k) < ($j - $k)); 
+?> 
+A. 1 
+B. true 
+
+IP 621  
+C. false 
+D. 0 
+ANS: A 
+ 
+ 
+45. What will be the output of the following PHP code? 
+<?php 
+    define("GREETING", "PHP is a scripting language", true); 
+        echo GREETING; 
+        echo "<br>" 
+        echo GREETING; 
+?> 
+A. PHP is a scripting language 
+B. GREETING 
+     GREEtING 
+C. GREETI

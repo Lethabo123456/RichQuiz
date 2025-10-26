@@ -1,0 +1,28 @@
+set (0.00 sec)   
+   
+Do no t forget to type a semicolon at the end of a command or statement before pressing Enter.   
+   
+You can see that this system has three databases. information_schema and mysql are databases 
+connected with the operation of MySQL itself, and mydatabase is the database you just created.   
+   
+4.11 Creating A Table   
+As you know, tables are where you actually store your data. To start with, you will create a very 
+simple table, fruit , containing three fields: id (the primary key), name (the name of the fruit), and 
+color (the fruit’s color). The first thing to do is select the database you just created. Once you have 
+selected a database, any database - manipulation commands you enter work on that database. Type 
+the following:   
+   
+   
+   
+USE mydatabase;   
+   
+Press Enter, and you should see:   
+   
+Database changed   
+   
+mysql >   
+   
+Now create your table. Type the following at the mysql > prompt:   
+   
+mysql > CREATE TABLE fruit (   
+- > id SMALLI

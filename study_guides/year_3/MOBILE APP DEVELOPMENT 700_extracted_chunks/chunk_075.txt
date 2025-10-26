@@ -1,0 +1,20 @@
+Hardware Issues 
+
+A very cool aspect of mobile computing is the set of hardware components available on the device. 
+Many devices have the capability to locate the device within a few meters using the GPS, have sensors 
+that can capture device orientation, have lights that can be turned on and off, have cameras, and have 
+other hardware components that allow the device to interact with the environment. Access to these 
+components can make for fun and useful apps. However, employing them within your app is not 
+without potential problems. The battery issue was discussed in the previous section, and this is always 
+a concern when using hardware devices. However, each component has its own set of issues that, 
+when used poorly, can make an app less desirable. 
+
+The first issue to be aware of is the availability of the component. Different manufacturers make 
+Android devices, and some include devices that others do not. iOS devices are generally more 
+homogeneous, but differences still exist. Because of this, it is  very important to consider how 
+important the component is to the primary functionality of your app. If it is only tangential, you may 
+want to consider not using it, because its use will often prevent the app from being loaded onto the 
+device. At best, the absence of the hardware component on the user’s phone or tablet will cause 
+frustration with your app. Another concern is situational availability. For example, for a device to get 
+a GPS signal, the device has to be able to obtain the satellite signal required for operation. If the user 
+is indoors, the GPS may not work. 

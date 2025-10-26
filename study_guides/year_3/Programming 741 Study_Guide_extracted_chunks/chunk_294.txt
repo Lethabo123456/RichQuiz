@@ -1,0 +1,57 @@
+This makes use of a static method of the Thread class from the System. The call to Sleep ( ) 
+prevents the loop from running so tightly that little else on the computer gets done. 
+After sleeping for 10 milliseconds, the method checks the current time: 
+
+System.DateTime dt = System.DateTime.Now; 
+About every 100 times it checks, the second will have incremented. The method notices that 
+change and notifies its subscribers. To do so, it first creates a new TimeInfoEventArgs 
+object: 
+if (dt.Second != second) 
+{ 
+// create the TimeInfoEventArgs object 
+// to pass to the subscriber 
+TimeInfoEventArgs timeInformation = 
+new TimeInfoEventArgs (dt.Hour,dt.Minute,dt.Second); 
+It then notifies the subscribers by firing the OnSecondChange 
+event: 
+// if anyone has subscribed, notify them if (OnSecondChange != 
+null) 
+{ 
+OnSecondChange (this, timeInformation); 
+} 
+} 
+
+If an event has no subscribers registered, it will evaluate to null . The test above checks that 
+the value is not null , ensuring that there are subscribers before calling OnSecondChange. 
+You will remember that OnSecondChange takes two arguments: the source of the event 
+and the object derived from EventArgs. In the snippet, you see that the clock's this 
+reference is passed because the clock is the source of the event. The second parameter is 
+the TimeInfoEventArgs object. timeInformation is created on the line above. 
+Raising the event will invoke whatever methods have been registered with the Clock class 
+through the delegate. We examine this in a moment. Once the event is raised, update the 
+state of the Clock class:  
+this.minute = dt.Minute; 
+this.hour = dt.Hour; 
+All that is left is to create classes that can subscribe to this event. You'll create two. Your first 
+will be the DisplayClock class. The job of DisplayClock is not to keep track of time, but 
+rather to display the current time to the console. The example simplifies this class down to 
+two methods. The first is a helper method named Subscribe. Subscribe's job is to subscribe 
+to the clock's On- 
+SecondChange event. The second method is the event handler TimeHasChanged: 
+public class DisplayClock 
+{ 
+public void Subscribe(Clock theClock) 
+{ 
+theClock.OnSecondChange += new 
+Clock.SecondChangeHandler(TimeHasChanged); 
+} 
+public void TimeHasChanged( 
+object theClock, TimeInfoEventArgs ti) 
+{ 
+Console.WriteLine("Current Time: { 0} :{ 1} :{ 2} ", 
+ti.hour.ToString(), 
+ti.minute.ToString(), 
+ti.second.ToString()); 
+When the first method, Subscribe, is invoked, it creates a new SecondChangeHandler 
+delegate, passing in its event-handler method TimeHasChanged. It then registers that 
+delegate with the OnSecondChange event of Clock.

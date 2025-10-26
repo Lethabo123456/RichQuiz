@@ -1,0 +1,30 @@
+ion 
+ 
+9.2.2 The Throw Statement 
+You can use throw statement to raise your built-in exceptions or your customized 
+exceptions. Later these exceptions can be captured and you can take an 
+appropriate action. 
+ 
+Following is the example showing usage of throw statement. 
+ 
+Figure 9.4 –Try…Catch…Throw Block to handle Exception 
+You can raise an exception in one function using a string, integer, Boolean or an 
+
+ 
+140 
+ 
+NINE | JAVASCRIPT ERROR AND EXCEPTION HANDLING 
+object and then you can capture that exception either in the same function as we 
+did above, or in other function using try...catch block. 
+ 
+9.2.3 The onerror() method 
+The onerror() event handler was the first feature to facilitate error handling for 
+JavaScript. The error event is fired on the window object whenever an exception 
+occurs on the page. Example: 
+ 
+Figure 9.5 – The onerror() Method 
+ 
+The onerror event handler provides three pieces of information to identify the 
+exact nature of the error: 
+ 
+Error message .

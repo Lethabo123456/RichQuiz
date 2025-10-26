@@ -1,0 +1,19 @@
+1.6  The Bias-Variance Tradeoff 
+The bias-variance tradeoff is a fundamental concept that helps explain the balance between model 
+complexity and generalization. It describes two types of errors that a machine learning model can 
+make. 
+
+Bias 
+The error introduced when a model is too simplistic to capture the underlying structure of the data. 
+High-bias models (e.g., linear regression with very few features) tend to underfit the data, leading to 
+systematically incorrect predictions. 
+
+Variance 
+The error due to the model being too sensitive to small fluctuations in the training data. High-
+variance models (e.g., deep neural networks with too many parameters) tend to overfit, capturing 
+noise rather than meaningful patterns. 
+
+Impact of Bias and Variance on Model Performance 
+If a model has high bias, it performs poorly even on the training data, indicating underfitting. One 
+way to address this is by adding more features or using a more complex model. Conversely, if a model 
+has high variance, it performs well on training data but poorly on unseen data, indicating overfitting.

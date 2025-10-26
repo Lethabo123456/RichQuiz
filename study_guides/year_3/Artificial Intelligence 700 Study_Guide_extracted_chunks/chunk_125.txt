@@ -1,0 +1,38 @@
+This point can be further refined. Turing's description of computability in the 1950 
+paper was all based on the finite capabilities of real, finite machines, illustrated by an 
+account of the Manchester computer as it then stood. His claim was that the 
+simulation of thought did not even require the full scope of computable functions, 
+only that infinitesimal fraction of them which could be run using only a finite amount 
+of 'tape'. (As a technical point, Turing's description did not even mention the 'tape'. 
+This is because a finite tape can be absorbed into the instruction table of a Turing 
+machine, which in turn he identified with the store of a computer such as the 
+Manchester computer. This resulted in him rather confusingly describing the full 
+gamut of computable processes as requiring an 'infinite store.' This is, however, just 
+the unlimited supply of tape as prescribed in 1936, not an infinite instruction table.) 
+He specified a necessary storage capacity of 109 bits, which of course is far surpassed 
+by modern personal computers.
+
+A fortiori, there is no suggestion in this paper of anything beyond the scope of 
+computability. There were three areas of Turing's discussion where mathematics 
+beyond the computable was raised, but in each case the thrust of Turing's argument 
+was that computable operations would suffice. One of these was the Gödel argument, 
+actually rather more weakly addressed in this than in his earlier papers, but still 
+concluding that it had no force. The second lay in Turing's discussion of 'the continuity 
+of the nervous system.' He claimed that the brain's basis in continuous matter, rather 
+than being a discrete machine, was again no argument against the computability of 
+thought: a discrete system could approximate a continuous one as closely as desired. 
+The third was the concept of randomness, which Turing introduced without any 
+serious definition. His illustration used 'the digits of π' as a random sequence, and this 
+is par excellence a computable input. 
+ 
+In fact Turing's exposition also runs through two stages, reflecting what has been 
+suggested above as his '1936' and '1941' stages of development. First the concept of 
+computable functions, thought of as planned instructions (p. 438), and then followed 
+the finite discrete state machine picture (p. 440). However, as he argued, these 
+differently pictured machines could alike be implemented on a universal machine, the 
+computer. This same two-part structure came into his final constructive proposals for 
+the development of machine intelligence. Turing imagined rule-based programming 
+(rather like expert systems as later developed), but also the 'child machine' learning 
+for itself. Turing concluded by recommending that 'both approaches should be tried': 
+he never suggested a rigid dichotomy between top-down and bottom-up approaches, 
+which was later to divide Artificial Intelligence research so deeply.

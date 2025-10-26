@@ -1,0 +1,22 @@
+device.  
+  
+ 
+2.1.9  ostream Iterator and Function copy  
+  
+One way to output the contents of a container is to use a for loop and the function begin to initialize the 
+for loop control variable, and to use the function end to set the limit. Alternatively, the function copy can 
+be used to output the elements of a container. In this case, an iterator of type ostream specifies the 
+destination (ostream iterators are discussed in detail later in this chapter). When we create an iterator of 
+type ostream, we also specify the type of element the iterator will output.  
+  
+The following statement illustrates how to create an ostream iterator of type int:  
+  
+ 
+ostream_iterator<int> screen(cout, " ");   
+  
+//Line A  
+  
+  
+This statement creates screen to be an ostream iterator with the element type int. The iterator screen has 
+two arguments: the object cout and a space. Thus, the iterator screen is initialized using the object cout, 
+and when this iterator outputs the elements they ar

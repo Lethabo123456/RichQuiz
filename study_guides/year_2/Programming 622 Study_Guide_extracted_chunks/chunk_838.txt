@@ -1,0 +1,25 @@
+he class that includes the functions to implement the topological ordering algorithm.  
+//***************************************************************  
+// class topologicalOrderType  
+// This class specifies the operations to find a topological ordering of a graph.  
+//**************************************************************** class 
+topologicalOrderType: public graphType  
+{ public:  
+void bfTopOrder();  
+//Function to perform breadth first topological ordering of //a 
+graph.  
+//Postcondition: The vertices are output in a breadth first //topological 
+order.  
+  
+topologicalOrderType(int size = 0);  
+//Constructor  
+//Postcondition: gSize = 0; maxSize = size;  
+// graph is an array of pointers to linked lists.  
+};   
+Next, we discuss how to implement the function bfTopOrder.  
+  
+  
+10.9.1 Breadth-First Topological Ordering  
+  
+Recall that the breadth-first traversal algorithm is similar to traversing a binary tree level-by-level, and so 
+the root node (which has no predec

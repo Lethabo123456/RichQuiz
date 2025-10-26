@@ -1,0 +1,14 @@
+(see Figure 6.8) because BCNF requires that every determinant in 
+the table be a candidate key. 
+To convert the table structure in Figure 6.8 into table structures that are in 3NF and in BCNF, first 
+change the primary key to A + C. This change is appropriate because the dependency C  B means 
+that C is effectively a superset of B. At this point, the table is in 1NF because it contains a partial 
+dependency, C  B. Next, follow the standard decomposition procedures to produce the results 
+shown in Figure 6.9. To see how this procedure can be applied to an actual problem, examine the 
+sample data in Table 6.5. Table 6.5 reflects the following conditions:  
+1. Each CLASS_CODE identifies a class uniquely. This condition illustrates the case in which 
+a course might generate many classes.  
+2. A student can take many classes.  
+3. A staff member can teach many classes, but each class is taught by only one staff member.  
+Fourth Normal Form (4NF) 
+You might encounter poorly designed datab

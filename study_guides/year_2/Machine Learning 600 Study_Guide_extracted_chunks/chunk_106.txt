@@ -1,0 +1,18 @@
+presentations from Transformers (BERT). 
+ 
+6.2 Stopwords 
+It's worth pausing for a moment to consider stopwords. In most cases, there are common 
+words that you want to remove so as not to get in the way of analysis. For a list of common 
+stopwords, this list is a good starting point. 
+                         
+ 
+You may find that a list of common stopwords is not enough. The domain that you work in 
+may have common words that, while not commonly used words generally, are distorting the 
+results of your analysis. At this point, you have a decision to make: either append your 
+domain-level words to the same stopword file or have a separate file of domain-specific 
+words. With the use of the Java Collections API, there is the option to use the Stream API to 
+convert a string to an ArrayList. Using the removeAll method, the stopwords can be passed 
+in. The resulting string is the content with the stop words removed. 
+ 
+6.3 Stemming 
+Though not essential, it can be useful to stem phrases d

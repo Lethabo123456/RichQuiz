@@ -1,0 +1,34 @@
+Worked Example 
+What are the degrees and what are the neighborhoods of the vertices in 
+the graphs G and H displayed below. 
+ 
+Solution:  
+In G, deg(a) = 2, deg(b) = deg(c) = deg(f ) = 4, deg(d ) = 1, deg(e) = 3, and 
+deg(g) = 0.  
+The neighborhoods of these vertices are N(a) = {b, f }, N(b) = {a, c, e, f }, 
+N(c) = {b, d, e, f }, N(d) = {c}, N(e) = {b, c, f }, N(f ) = {a, b, c, e}, and N(g) = 
+∅. In H, deg(a) = 4, deg(b) = deg(e) = 6, deg(c) = 1, and deg(d ) = 5. 
+The neighborhoods of these vertices are N(a) = {b, d, e}, N(b) = {a, b, c, d, 
+e}, N(c) = {b}, N(d) = {a, b, e}, and N(e) = {a, b, d}. 
+
+A vertex of degree zero is called isolated. It follows that an isolated vertex is 
+not adjacent to any vertex. Vertex g in graph G in the example above is 
+isolated. A vertex is pendant if and only if it has degree one. Consequently, a 
+pendant vertex is adjacent to exactly one other vertex. Vertex d in graph G 
+in example above is pendant. 
+ 
+Theorem  
+The Handshaking Theorem: Let G = (V ,E) be an undirected graph with m 
+edges. Then 
+ 
+2𝑚 = ∑𝑣∈𝐴 deg (𝑣).
+ 
+(Note that this applies even if multiple edges and loops are present.) 
+ 
+Imagine we want to know how many edges are there in a graph with 10 
+vertices each of degree six.
+Because the sum of the degrees of the vertices is 6⋅10 = 60, it follows that 
+2m = 60 where m is the number of edges. Therefore, m = 30. 
+ 
+Theorem  
+An undirected graph has an even number of vertices of odd degree. 

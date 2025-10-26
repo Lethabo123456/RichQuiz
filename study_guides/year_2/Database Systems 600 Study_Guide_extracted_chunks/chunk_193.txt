@@ -1,0 +1,79 @@
+hip. 
+ 
+d) Identify the mandatory and optional dependencies for the relationships. 
+ 
+e) Resolve all M:N relationships. 
+ 
+ 
+ 
+ 
+
+ 
+77 
+Chapter 3: Normalization 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ LEARNING OUTCOMES 
+After reading this Section of the guide, the learner should be able to:  
+ 
+ 
+Explain normalization and its role in the database design process 
+ 
+ 
+Identify and describe each of the normal forms: 1NF, 2NF, 3NF, BCNF 
+and 4NF 
+ 
+ 
+Explain how normal forms can be transformed from lower normal 
+forms to higher normal forms  
+ 
+ 
+Apply normalization rules to evaluate and correct table structures 
+ 
+ 
+Identify situations that require de-normalization to generate 
+information efficiently  
+ 
+ 
+Use a data-modelling checklist to check that the ERDs meets a set of 
+minimum requirements 
+ 
+ 
+
+ 
+78 
+3.1 Database Tables and Normalization 
+ 
+Having good relational database software is not enough to avoid the data redundancy discussed in 
+Chapter 1,

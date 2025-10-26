@@ -1,0 +1,39 @@
+Pair programming leads to a deep knowledge of a program, as both programmers have to 
+understand the program in detail to continue development. This depth of knowledge is 
+sometimes difficult to achieve in other inspection processes, and so pair programming can find 
+bugs that sometimes would not be discovered in formal inspections. 
+However, the two people involved cannot be as objective as an external inspection team in as 
+much as they are examining their own work. Potential problems are: 
+
+• Mutual misunderstandings: Both members of a pair may make the same mistake in 
+understanding the system requirements. Discussions may reinforce these errors. 
+• Pair reputation: Pairs may be reluctant to look for errors because they do not want to slow 
+down the progress of the project. 
+• Working relationships: The pair’s ability to discover defects is likely to be com-promised 
+by their close 
+ 
+The informal approach to quality management adopted in agile methods is particularly 
+effective for software product development where the company developing the software also 
+controls its specification. There is no need to deliver quality reports to an external customer, 
+nor is there any need to integrate with other quality management teams.  
+
+However, when a large system is being developed for an external customer, agile approaches 
+to quality management with minimal documentation may be impractical:  
+
+• If the customer is a large company, it may have its own quality management processes 
+and may expect the software development company to report on progress in a way 
+that is compatible with these processes. Therefore, the development team may have 
+to produce a formal quality plan and quality reports as required by the customer. 
+ 
+• Where several geographically distributed teams are involved in development, perhaps 
+from different companies, then informal communications may be impractical. 
+Different companies may have different approaches to quality management, and you 
+may have to agree to produce some formal documentation. 
+• For long-lifetime systems, the team involved in development will change over time. If 
+there is no documentation, new team members may find it impossible to understand 
+why development decisions have been made. 
+
+Consequently, the informal approach to quality management in agile methods may have to be 
+adapted so that some quality documentation and processes are introduced. Generally, this 
+approach is integrated with the iterative development process. Instead of developing software, 
+one of the sprints or iterations should focus on producing essential software documentation.

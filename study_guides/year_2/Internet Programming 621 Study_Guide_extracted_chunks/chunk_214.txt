@@ -1,0 +1,63 @@
+e 
+ANS: D 
+ 
+ 
+100. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $counter = 1; 
+ 
+   do { 
+ 
+       $counter++; 
+ 
+   } while ($counter < 0);  
+ 
+   echo "Counter is: $counter"; 
+ 
+?> 
+ 
+A. Counter is: 4 
+B. Counter is: 5 
+C. Counter is: 2 
+D. None of the above 
+ANS: C 
+ 
+101. A for loop contains an initializing expression, a condition statement expression, and an increment 
+expression? 
+
+IP 621  
+A. True 
+B. False 
+ANS: A 
+ 
+ 
+ 
+102. A for loop will check the condition statement before executing the segment of code between the 
+curly braces? 
+A. True 
+B. False 
+ANS: A 
+ 
+103. What will be displayed in a browser when the following PHP code is executed? 
+<?php 
+ 
+   for ($counter = 20; $counter < 10; $counter++){ 
+ 
+       echo "Hello Robert "; 
+ 
+   }  
+ 
+   echo "Counter is: $counter"; 
+ 
+?> 
+ 
+A. Hello Robert 
+B. Counter is: 20 
+C. Hello Robert Counter is: 22 
+D. Hello Robert Hello Robert Counter is: 22 
+ANS: B 
+ 
+
+IP 621  
+104. What will

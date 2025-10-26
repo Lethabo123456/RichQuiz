@@ -1,0 +1,24 @@
+hich only rows that meet a given criterion are selected. An outer join 
+returns the matching rows as well as the rows with unmatched attribute values for one table 
+or both tables to be joined. 
+ 
+ 
+A natural join returns all rows with matching values in the matching columns and eliminates 
+duplicate columns. This style of query is used when the tables share a common attribute with 
+a common name. 
+  
+ 
+Joins may use keywords such as USING and ON. If the USING clause is used, the query 
+will return only the rows with matching values in the column indicated in the USING clause; 
+that column must exist in both tables. If the ON clause is used, the query will return only the 
+rows that meet the specified join condition. 
+  
+ 
+The ORDER BY clause is used to sort the output of a SELECT statement.  
+ 
+ 
+The WHERE clause can be used with the SELECT, UPDATE, and DELETE statements to 
+restrict the rows affected by the DDL command.  
+ 
+ 
+Aggregate functions (COUNT, MIN, MAX, and AVG) are sp

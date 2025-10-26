@@ -1,0 +1,13 @@
+binary search tree in Figure 9-8. We search the binary 
+tree and arrive at the node containing 45. Because this node is a leaf and is the left child of its parent, we 
+can simply set the llink of the parent node to NULL and deallocate the memory occupied by this node. 
+After deleting this node, Figure 9-9(a) shows the resulting binary search tree.  
+  
+Case 2: Suppose that we want to delete 30 from the binary search tree in Figure 9-8. In this case, the node 
+to be deleted has no left subtree. Because 30 is the left child of its parent node, we make the llink of the 
+parent node point to the right child of 30 and then deallocate the memory occupied by 30. Figure 9-9(b) 
+shows the resulting binary tree.   
+  
+Case 3: Suppose that we want to delete 80 from the binary search tree of Figure 9-8. The node containing 
+80 has no right child and is the right child of its parent. Thus, we make the rlink of the parent of 80—that 
+is, 70—point to the left child of 80. Figure 9-9(c) shows the res

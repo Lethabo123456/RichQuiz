@@ -1,0 +1,29 @@
+art Servers.  
+8. To test if the setting worked, reload the testing.php script in your browser and look for the 
+date.timezone entry. It should now show the time zone that you set in Step 5, as should the 
+Default timezone entry further up the page. All done! If you cannot (or do not want to) edit 
+your php.ini file, you have other ways to set your time zone: Create an .htaccess file in the 
+document root folder of your Web site(s) and add a directive to the file to set your 
+time zone: php_value date.timezone Africa/Johannesburg.  Alternatively, toward the 
+start of each PHP script that you create, add a line similar to this:  
+date_default_timezone_set( Africa/Johannesburg”);.  
+  
+
+IP 621  
+PHP Questions 
+1. PHP stands for  
+A. Hypertext preprocessor  
+B. Hypertext processor  
+C. HTML preprocessor 
+D. HTML processor 
+ANS: A 
+ 
+2. PHP scripts are used in  
+A. Server-side scripting  
+B. Command-line scripting  
+C. Client-side GUI applications  
+D. All of these above 
+ 
+ANS: A 
+ 
+3. PH

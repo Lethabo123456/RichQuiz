@@ -1,0 +1,12 @@
+6.5 BACKGROUNDS 
+Proper use of background colors and images adds contrast to enhance the 
+appearance of text and graphics on a page. They can be used to provide a distinct look 
+to a Web site, which makes it easily identifiable to users.
+ 
+ BACKGROUND COLORS 
+You add a background color to a page by using the bgcolor attribute of the <body> 
+tag. To set the background color of a page to red, use the following code: 
+<body bgcolor=”red”> 
+The bgcolor is supported in HTML5 and the recommended way of adding background 
+color is to use CSS: 
+<body style=”background-color:red”> 

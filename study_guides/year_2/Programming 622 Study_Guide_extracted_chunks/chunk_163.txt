@@ -1,0 +1,13 @@
+pop_back, erase, and clear.  
+13. An iterator to a vector container is declared using the typedef iterator, which is declared as a public 
+member of the class vector.  
+14. Member functions common to all containers are the default constructor, constructors with 
+parameters, the copy constructor, the destructor, empty, size, max_size, swap, begin, end, rbegin, 
+rend, insert, erase, clear, and the relational operator functions.  
+15. The member function begin returns an iterator to the first element into the container.  
+16. The member function end returns an iterator to the last element into the container.  
+17. In addition to the member functions listed in 14, the other member functions common to all sequence 
+containers are insert, push_back, pop_back, erase, clear, and resize. 18. The copy algorithm is used to 
+copy the elements in a given range to another place.  
+19. The function copy, using an ostream iterator, can also be used to output the elements of a container.  
+20. When we

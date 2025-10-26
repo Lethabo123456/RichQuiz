@@ -1,0 +1,44 @@
+Hierarchical clustering and dendrograms 
+Agglomerative clustering produces what is known as a hierarchical clustering. The clustering proceeds 
+iteratively, and every point makes a journey from being a single point cluster to belonging to some final 
+cluster. Each intermediate step provides a clustering of the data (with a different number of clusters). It 
+is sometimes helpful to look at all possible clusterings jointly. The next example shows an overlay of all 
+the possible clusterings shown before, providing some insight into how each cluster breaks up into 
+smaller clusters: 
+ 
+While this visualization provides a very detailed view of the hierarchical clustering, it relies on the two-
+dimensional nature of the data and therefore cannot be used on datasets that have more than two 
+features. There is, however, another tool to visualize hierarchical clustering, called a dendrogram, that 
+can handle multidimensional datasets. 
+Unfortunately, scikit-learn currently does not have the functionality to draw dendrograms. However, you 
+can generate them easily using SciPy. The SciPy clustering algorithms have a slightly different interface to 
+the scikit-learn clustering algorithms. SciPy provides a function that takes a data array X and computes a 
+linkage array, which encodes hierarchical cluster similarities. We can then feed this linkage array into the 
+scipy dendrogram function to plot the dendrogram: 
+
+The dendrogram illustrates the data points as numbered from 0 to 11 at the bottom. A tree structure is 
+then created with these points, each representing individual clusters, and new parent nodes are added 
+as pairs of clusters are merged. Starting from the bottom and moving upward, the first merger involves 
+points 1 and 4. Next, points 6 and 9 form a cluster, and this merging continues. At the top level, there are 
+two main branches: one includes points 11, 0, 5, 10, 7, 6, and 9, while the other consists of points 1, 4, 
+3, 2, and 8. These two branches represent the two largest clusters on the left side of the plot. 
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is another powerful clustering 
+algorithm. Its key advantages are that it does not require specifying the number of clusters beforehand, 
+it can identify clusters with complex shapes, and it can detect outliers or points that don't belong to any 
+cluster. Although DBSCAN is slower than both agglomerative clustering and k-means, it can still handle 
+relatively large datasets. 
+
+DBSCAN operates by identifying dense regions in the feature space, where many data points are located 
+close to each other. These dense regions are considered potential clusters, separated by areas that are 
+relatively sparse. Points within a dense region are termed core samples (or core points). Two key 
+parameters control DBSCAN: min_samples and eps. If there are at least min_samples points within a 
+distance of eps from a given point, it is labeled as a core sample. 
+
+The algorithm starts by selecting an arbitrary point and finds all points within a distance of eps. If fewer 
+than min_samples points are found within this radius, the point is marked as noise, meaning it does not 
+belong to any cluster. If more than min_samples points are within eps, the point is labeled as a core 
+sample and assigned to a new cluster. The algorithm then visits all neighboring points within eps. If those 
+neighbors haven't been assigned a cluster, they are given the same cluster label. If any of the neighbors 
+are core samples, their neighbors are recursively visited, and the cluster grows until there are no more 
+core samples within eps. The process repeats with an unvisited point, and the algorithm continues until 
+all points have been processed.

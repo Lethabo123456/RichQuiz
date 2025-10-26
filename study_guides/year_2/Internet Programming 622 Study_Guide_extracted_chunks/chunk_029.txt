@@ -1,0 +1,15 @@
+type=”checkbox” name=”checkboxField” id=”checkboxField”                                                
+value=”yes” />   
+                                  <label for=”radioButtonField1”>A radio button field</label>   
+                                  <input type=”radio” name=”radioButtonField” id=”radioButtonField1”                                               
+value=”radio1” />   
+                                 <label for=”radioButtonField2”>Another radio button</label>   
+
+18   
+   
+                                <input type=”radio” name=”radioButtonField” id=”radioButtonField2”                                              
+value=”radio2” />   
+                                <label for=”submitButton”>A submit button</label>   
+                               <input type=”submit” name=”submitButton” id=”submitButton”                                             
+value=”Submit Form” />   
+                                  <label for=”resetButton”>A reset button</label>

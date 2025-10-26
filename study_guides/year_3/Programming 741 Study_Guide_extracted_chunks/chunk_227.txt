@@ -1,0 +1,62 @@
+6.2.4 Unwinding the call stack 
+Examine the output of Example 6-2 carefully. You see the code enter Main ( ) , Func( ) , Func2( 
+) , and the try block. You never see it exit the try block, though it does exit Func2( ) , Func1( ) 
+, and Main( ) . What happened? When the exception is thrown, execution halts immediately 
+and is handed to the catch block. It never returns to the original code path. It never gets to 
+the line that prints the exit statement for the try block. The catch block handles the error, and 
+then execution falls through to the code following catch. Without catch the call stack unwinds, 
+but with c a t c h it does not unwind as a result of the exception. The exception is now handled; 
+there are no more problems, and the program continues. This becomes a bit clearer if you 
+move the try/catch blocks up to Func1( ), as shown in Example 6-3  
+
+Example 6-3. Catch in a calling function 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Test 
+{ 
+public static void Main() 
+{ 
+Console.WriteLine("Enter Main..."); 
+Test t = new Test(); 
+t.Func1(); 
+Console.WriteLine("Exit Main..."); 
+} 
+public void Func1() 
+{ 
+Console.WriteLine("Enter Func1..."); 
+try 
+{ 
+Console.WriteLine("Entering try block..."); 
+Func2(); 
+Console.WriteLine("Exiting try block..."); 
+} 
+catch 
+{ 
+Console.WriteLine( 
+"Exception caught and handled."); 
+} 
+Console.WriteLine("Exit Func1..."); 
+} 
+public void Func2() 
+{ 
+Console.WriteLine("Enter Func2..."); 
+//throw new System.Exception(); 
+Console.WriteLine("Exit Func2..."); 
+} 
+} 
+} 
+OUPUT: 
+
+This time the exception is not handled in Func2 ( ) ; it is handled in Fun c1 ( ) When Func2 ( ) 
+is called, it prints the Enter statement and then throws an exception. Execution halts and the 
+runtime looks for a handler, but there isn't one. The stack unwinds, and the runtime finds a 
+handler in Func1 ( ) . The catch statement is called, and execution resumes immediately 
+following the c a t c h statement, printing the Exit statement for Func1 ( ) and then for Main ( 
+) .Make sure you are comfortable with why the Exiting Try Block statement and the Exit Func2 
+statement are not printed. This is a classic case where putting the code into a debugger and 
+then stepping through it can make things very clear.

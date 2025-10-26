@@ -1,0 +1,20 @@
+The modified field, noting whether the page has been changed, is used to save time when 
+pages are removed from main memory and returned to secondary storage. If the contents 
+of the page haven’t been modified, then the page doesn’t need to be rewritten to secondary 
+storage. Theoriginal, the one that is already there, is correct. 
+The referenced field notes any recent activity and is used to determine which pages show 
+the mostprocessing activity and which are relatively inactive. This information is in main 
+memory, and which is used by several page-swapping policy schemes to determine which 
+pages should remain should be swapped out when the system needs to make room for other 
+pages being requested. 
+
+The last field shows the page frame number for that page. 
+ 
+For example, in Figure 3.5 the number of total job pages is 15, and the number of total page 
+framesavailable to jobs is 12. The operating system occupies the first four of the 16-page 
+frames in main memory. 
+Assuming the processing status illustrated in Figure 3.5, what happens when Job 4 requests 
+thatPage 3 be brought into memory, given that there are no empty page frames available? 
+To move into a new page, one of the resident pages must be swapped back into secondary 
+storage. Specifically, this includes copying the resident page to the disk (if it was modified) 
+and writing the new page into the newly available page frame.

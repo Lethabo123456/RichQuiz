@@ -1,0 +1,51 @@
+DBMS with many tables and indexes? 
+ 
+Problems 7−9 are based on the following query: 
+ 
+ 
+ 
+7. What is the likely data sparsity of the EMP_DOB column? 
+ 
+8. Should you create an index on EMP_DOB? Why or why not? 
+ 
+9. What type of database I/O operations will likely be used by the query?  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Review Questions (MCQ) 
+ 
+1. Which of the following statements is correct? 
+ 
+a. Avoid less row count SQL statements that can cause a table lock 
+b. A blocking lock occurs when one lock causes another process to wait 
+in a holding queue 
+c. Lock is a done by database when any connection access a different 
+piece of data concurrently 
+d. None of the above 
+ 
+2. ______________ allow concurrent transactions to read (SELECT) a 
+resource. 
+
+ 
+172 
+ 
+a. Update locks 
+b. Shared locks 
+c. Exclusive Locks 
+d. All of the above 
+ 
+3. ____________ rolls back a user-specified transaction to the beginning of the 
+transaction. 
+ 
+a. ROLLBACK 
+b. ROLLBACK WORK 
+c. SAVE TRANSACTION 
+d. COMMIT 
+ 
+4

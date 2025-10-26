@@ -1,0 +1,17 @@
+f key comparisons in the worst case to sort L, then W(n) = O(n log2n).  
+  
+Let A(n) denote the number of key comparisons in the average case. In the average case, during the merge 
+process one of the sublists will exhaust before the other list. From this, it follows that on average merging 
+of two sorted sublists of combined size n, the number of comparisons will be less than n - 1. On average, 
+it can be shown that the number of comparisons for mergesort is given by the following equation: If n is 
+a power of 2, A(n) = n log2n - 1.25n = O(n log2n). This is also a good approximation when n is not a power 
+of 2.  
+  
+ 
+8.9  
+Heapsort: Array-Based Lists  
+  
+In an earlier section, we described the quicksort algorithm for contiguous lists, that is, array-based lists. 
+We remarked that, on average, quicksort is of the order O(nlog2n). However, in the worst case, quicksort 
+is of the order O(n2). This section describes another algorithm, the heapsort, for array-based lists. This 
+algorithm

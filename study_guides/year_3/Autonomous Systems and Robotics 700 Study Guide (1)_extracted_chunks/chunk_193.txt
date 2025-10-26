@@ -1,0 +1,62 @@
+import rclpy 
+from rclpy.node import Node 
+from std_msgs.msg import String 
+import threading 
+ 
+class RobotRemote(Node): 
+    def __init__(self): 
+        super().__init__('robot_remote') 
+         
+        # Send commands to robot 
+        self.command_publisher = self.create_publisher(String, 'user_command', 10) 
+         
+        print(" Robot Remote Control Started!") 
+        print("Commands: start, stop, turn, quit") 
+        print("-" * 40) 
+ 
+    def send_command(self, command): 
+        """Send command to robot""" 
+        msg = String() 
+
+        msg.data = command 
+        self.command_publisher.publish(msg) 
+        print(f" Sent: {command}") 
+ 
+def user_input_thread(remote): 
+    """Handle user input in separate thread""" 
+    while True: 
+        try: 
+            user_input = input("Enter command: ").strip().lower() 
+             
+            if user_input == "quit": 
+                print(" Goodbye!") 
+                break 
+            elif user_input in ["start", "stop", "turn"]: 
+                remote.send_command(user_input) 
+            else: 
+                print(" Unknown command. Use: start, stop, turn, quit") 
+                 
+        except EOFError: 
+            break 
+ 
+ 
+
+def main(): 
+    rclpy.init() 
+    remote = RobotRemote() 
+     
+    # Start user input in separate thread so ROS can still work 
+    input_thread = threading.Thread(target=user_input_thread, args=(remote,)) 
+    input_thread.daemon = True 
+    input_thread.start() 
+     
+    try: 
+        rclpy.spin(remote) 
+    except KeyboardInterrupt: 
+        print("\n Remote stopped!") 
+    finally: 
+        remote.destroy_node() 
+        rclpy.shutdown() 
+ 
+if __name__ == '__main__': 
+    main()

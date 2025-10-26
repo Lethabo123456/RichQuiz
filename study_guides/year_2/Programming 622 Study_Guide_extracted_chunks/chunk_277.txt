@@ -1,0 +1,13 @@
+sequential.  
+8. The first (or head) pointer of a linked list is always fixed, pointing to the first node in the list.  
+9. To traverse a linked list, the program must use a pointer different than the head pointer of the list, 
+initialized to the first node in the list.  
+10. In a doubly linked list, every node has two links: one points to the next node, and one points to the 
+previous node.  
+11. A doubly linked list can be traversed in either direction.  
+12. In a doubly linked list, item insertion and deletion requires the adjustment of two pointers in a node.  
+13. The name of the class containing the definition of the class list is list.  
+14. In addition to the operations that are common to sequence containers (see Chapter 2), the other 
+operations that can be used to manipulate the elements in a list container are assign, push_front, 
+pop_front, front, back, remove, remove_if, unique, splice, sort, merge, and reverse.  
+15. A linked list with header and trailer nodes simplifies

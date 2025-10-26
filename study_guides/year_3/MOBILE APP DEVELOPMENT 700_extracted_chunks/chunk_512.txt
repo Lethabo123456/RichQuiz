@@ -1,0 +1,34 @@
+For iOS, you can supply screenshots at the highest resolution your app supports, taking differences in 
+user interface into account. For instance, if your app supports split screen on iPhone 11 or 11 Pro Max, 
+you may need to provide a separate screenshot at that resolution in addition to lower-resolution 
+images for the iPhone SE. The exact dimensions of the screenshots also depend on a number of 
+factors, such as whether the app shows status bars.
+
+If you are targeting tablets, you also will need to provide screenshots. You can provide up to eight 
+screenshots for each targeted Android device and up to four screenshots for each targeted iOS device. 
+For iOS apps, you also have to supply a launch image that matches the resolution for the devices on 
+which the app will run. The launch image is displayed while the app is loading and is intended to help 
+give the impression that the app is launching quickly. It should thus include a blank screen of what the 
+first screen in the app would look like. The launch screen can be set up as a storyboard inside Xcode— 
+in fact, the default project types include a default LaunchScreen.storyboard for this exact purpose. 
+Using the storyboard, you can create an actual user interface for the launch image, or you can use a 
+static graphic image. 
+
+In addition to preparing screenshots, you should also prepare a description of your app. This narrative 
+is presented to potential customers, so you should be as clear as possible in describing exactly what 
+the app is designed to do and why it is advantageous for the customer to buy the app. For iOS apps, 
+you will also have to provide a description of any specific conditions or requirements that the tester 
+will need to know to adequately review your app. 
+Other considerations prior to beginning the publication process include determining what price you 
+want to charge for the app. In Android, you enter this price. In iOS, you will be prompted to select 
+from a set of pricing tiers. You should also determine what general category best describes the app 
+(e.g., game, sports, tool, and so on) because you will have to indicate this during the publishing 
+process. Finally, you will need to determine in which countries your app should be made available. 
+And if your app is truly international, you should also consider adding internationalization support to 
+the app, including translation, support for different currencies, number formatting, units of 
+measurements, and so on. 
+After you have completed the previous steps, you are ready to publish. Although there are many 
+similarities, each store has its own process and requirements. Additionally, these processes change 
+frequently. You should study the specific description of the procedure in the developer documentation 
+for each platform. To gain access to these resources for iOS, go to http://developer.apple.com. To 
+access Android resources, go to http://developer.android.com/distribute. 

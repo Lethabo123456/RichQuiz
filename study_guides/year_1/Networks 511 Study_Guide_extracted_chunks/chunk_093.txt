@@ -1,0 +1,27 @@
+Figure 24: Collision 
+From the diagram above we have a hub network. Host A is trying to communicate with host B. Host A 
+“senses” the wire and decides to send packets. But, in the same time, host C sends its packets to host D 
+and the collision occurs. The sending devices (host A and host C) detect the collision and resend the 
+packet after a random period of time for 15 tries and time out. 
+When a collision happens on Ethernet LAN; 
+
+A Jam signal will inform all the devices to stop sending because there is a collision. 
+By default the collision invokes a random back off algorithm  
+All the devices on that network segment will wait for the timer to lapse and start sending again 
+All hosts have the same priority to transmit after the expiry of the timer  
+These are the effects of having a CSMA/CD network that has sustained a substantial collision; 
+Delay  
+Low throughput 
+Congestion 
+ 
+2.2.4 Broadband /Baseband 
+We can send signals in two ways for Analog and digital by Broadband and Baseband. 
+Broadband is commonly used in homes using same medium and for all our analog voice and digital 
+data using same cable. 
+Baseband is used by LANs. This is where Ethernet uses one digital signal at a time also requiring the 
+available bandwidth. There is a possibility of collisions if all hosts send multiple signals at a time even 
+on wireless, except of those using analog signaling.
+   
+ Baseband transmission 
+o Digital signals that are carried on a single channel 
+o Requires exclusive use of wire’s capacity 

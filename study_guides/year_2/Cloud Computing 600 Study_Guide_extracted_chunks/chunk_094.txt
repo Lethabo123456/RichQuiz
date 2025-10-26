@@ -1,0 +1,40 @@
+5.9 Distributed Computing 
+It is a model in which components of a software system are shared among multiple computers to 
+improve efficiency and performance. In distributed computing, multiple computer systems work on a 
+single problem. The ultimate of goal of distributed computing is to maximise performance by 
+connecting users and IT resources in a cost-effective, transparent and reliable manner. It also ensures 
+fault tolerance and enable resource accessibility in the event that one component fails.  
+A distributed system allows resource-sharing including software by systems connected to their 
+network. Examples of distributed systems/ applications of distributed computing are internet, airline 
+reservation system, electronic banking, telecommunication networks, etc.  
+ 
+5.9.1 Benefits of Distributed Computing 
+The benefits of distributing computing are discussed below;  
+Scalability  
+Distributed systems are inherently scalable. A user can add another machine to handle the increasing 
+workload instead of having to update a single system over and over again. 
+Fault tolerance and redundancy 
+Distributed systems are more fault-tolerance than single machines. A business running a cluster of a 
+machine across two data centres means its applications would work even if one data centre goes 
+offline. 
+Improved efficiency 
+Distributed systems allow breaking complex problems into smaller pieces and have multiple work on 
+them in parallel which can help cut down on the time needed to solve those problems.  
+Cost effectiveness 
+They are much more cost-effective compared to very large centralised systems. A distributed system 
+made up of many mini-computers can be more cost-effective than a mainframe machine. 
+
+Reliability – high fault tolerance 
+A system crash on one server does not affect others. 
+Other benefits of distributed computing are; 
+ Flexibility  
+ Resource sharing  
+ High performance 
+
+Some disadvantages of a distributed computing are listed below;  
+ Some messages can be lost in the network system  
+ Security concern 
+ Overloading 
+ Higher initial cost 
+ Network reliance 
+ Complexity  

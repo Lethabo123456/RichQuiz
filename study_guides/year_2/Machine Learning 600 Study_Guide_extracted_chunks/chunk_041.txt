@@ -1,0 +1,19 @@
+ML projects, you'll spend a large portion of your time on 
+getting the data into the right shape so it can be processed. It is a dark art of ML that consist 
+of Extracting, Transforming, and Loading (ETL) data. Processing scrapped data requires a few 
+steps to get it from the usual messy state it's in to something usable: 
+ Figure out the source of data. 
+ Figure out the data extraction process. 
+ Make it in a readable format for the machine. 
+ Make sure the variable values are workable. 
+ Figure out where to store it. 
+ 
+2.6.1 Copy and Paste 
+Data can be extracted from a web page or a series of web pages, and they tend to be a mess, 
+but some are better than others. A first attempt would be to copy and paste the data from 
+the page and then figure a way out to remove the HTML tags. There are, however, easier 
+ways. Let's look at an example. Suppose we have been tasked with extracting airport data. 
+
+P a g e  | 19 
+ 
+We would like to see the busiest airports in the United Kingdom.

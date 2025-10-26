@@ -1,0 +1,18 @@
+Suppose that num1, num2, and num3 are int variables and the following statements are 
+executed in sequence.  
+
+ 1. num1 = 18;  
+ 2. num1 = num1 + 27;  
+ 3. num2 = num1;  
+ 4. num3 = num2 / 5; 
+ 5. num3 = num3 / 4;  
+
+The following table shows the values of the variables after the execution of each statement. 
+(A ? indicates that the value is unknown. The orange color in a box shows that the value of 
+that variable is changed. 
+
+Thus, after the execution of the statement in Line 5, num1 = 45, num2 = 45, and num3 
+= 2. 
+Tracing values through a sequence, called a walk-through, is a valuable tool to learn 
+and practice. Try it in the sequence above.  
+ 

@@ -1,0 +1,17 @@
+ted entity is weak. 
+Such a relationship means that both conditions have been met for the weak entity definition—the 
+related entity is existence-dependent, and the PK of the related entity contains a PK component of 
+the parent entity. Remember that the weak entity inherits part of its primary key from its strong 
+counterpart.  
+Keep in mind that the database designer usually determines whether an entity can be described as 
+weak based on the business rules. An examination of Figure 4.8 might cause you to conclude that 
+CLASS is a weak entity to COURSE. After all, it seems clear that a CLASS cannot exist without a 
+COURSE, so there is existence dependence. The second weak entity requirement has not been met; 
+therefore, by definition, the CLASS entity in Figure 4.8 may not be classified as weak.  
+
+ 
+55 
+ 
+On the other hand, if the CLASS entity’s primary key had been defined as a composite key 
+composed of the combination CRS_CODE and CLASS_SECTION, CLASS could be represented 
+by: CLA

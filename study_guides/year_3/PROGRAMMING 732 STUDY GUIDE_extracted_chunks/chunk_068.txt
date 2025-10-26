@@ -1,0 +1,14 @@
+3.1.1 THE JDBC-ODBC BRIDGE Connectivity  
+The JDBC-ODBC Bridge is a JDBC driver that provides translation of JDBC calls to ODBC operations. There 
+are a number of DBMSs that support ODBC. When a company the size of Microsoft creates a standard for 
+database access, there are sure to be vendors that follow; in fact, there are more than 50 different ODBC 
+drivers available. As mentioned earlier in this unit, both JDBC and ODBC are based on the X/Open CLI, so 
+the translation between JDBC and ODBC is relatively straightforward. ODBC is a client-side set of libraries 
+and a driver that is specific to the client’s operating system and, in some cases, machine architecture. 
+From the developer’s perspective, using a JDBC-ODBC bridge driver is an easy choice. Applications will still 
+speak directly to the JDBC interface classes, so it is exactly the same as using any other JDBC driver; 
+however, the implementation of a JDBC-ODBC bridge requires that the developer be aware of what is 
+required to run the application. Because ODBC calls are made using binary C calls, the client must have a 
+local copy of the ODBC driver, the ODBC driver manager, and the client-side libraries. The JDBC-ODBC 
+bridge is not the best choice for portability or performance, although it may be an acceptable and simple 
+driver when developing test systems and prototypes.

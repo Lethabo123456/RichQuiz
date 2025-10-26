@@ -1,0 +1,126 @@
+Open Command Prompt as Administrator 
+ 
+# Navigate to our project 
+cd C:\robot_project 
+ 
+# Set up ROS2 environment (do this every time you open a new terminal) 
+call C:\dev\ros2_humble\setup.bat 
+ 
+Step 3: Create Your First Robot Program 
+Create the Main Robot File 
+Create file: C:\robot_project\src\simple_robot.py 
+ 
+#!/usr/bin/env python3 
+""" 
+Simple Robot Controller - Beginner Friendly 
+This robot moves forward and turns when it hits something 
+""" 
+ 
+import rclpy 
+from rclpy.node import Node 
+from geometry_msgs.msg import Twist 
+from std_msgs.msg import String 
+
+import time 
+ 
+class SimpleRobot(Node): 
+    def __init__(self): 
+        super().__init__('simple_robot') 
+         
+        # This sends movement commands to the robot 
+        self.move_publisher = self.create_publisher(Twist, 'robot_movement', 10) 
+         
+        # This sends status messages 
+        self.status_publisher = self.create_publisher(String, 'robot_status', 10) 
+         
+        # This receives commands from user 
+        self.command_subscriber = self.create_subscription( 
+            String, 'user_command', self.handle_user_command, 10 
+        ) 
+         
+        # Timer to make robot do something every 0.5 seconds 
+        self.timer = self.create_timer(0.5, self.robot_brain) 
+         
+        # Robot's memory 
+        self.robot_state = "MOVING_FORWARD" 
+
+        self.turn_counter = 0 
+         
+        print(" Simple Robot Started!") 
+        print("States: MOVING_FORWARD, TURNING, STOPPED") 
+ 
+    def robot_brain(self): 
+        """This is the robot's brain - decides what to do""" 
+         
+        # Create movement message 
+        move_msg = Twist() 
+         
+        if self.robot_state == "MOVING_FORWARD": 
+            # Move forward 
+            move_msg.linear.x = 0.5  # Forward speed 
+            move_msg.angular.z = 0.0  # No turning 
+             
+            # Sometimes randomly decide to turn (simulating obstacle) 
+            import random 
+            if random.random() < 0.1:  # 10% chance 
+                self.robot_state = "TURNING" 
+                self.turn_counter = 0 
+                 
+
+        elif self.robot_state == "TURNING": 
+            # Turn in place 
+            move_msg.linear.x = 0.0   # No forward movement 
+            move_msg.angular.z = 0.8  # Turn speed 
+             
+            self.turn_counter += 1 
+            if self.turn_counter > 4:  # Turn for 2 seconds (4 * 0.5s) 
+                self.robot_state = "MOVING_FORWARD" 
+                 
+        else:  # STOPPED 
+            move_msg.linear.x = 0.0 
+            move_msg.angular.z = 0.0 
+         
+        # Send movement command 
+        self.move_publisher.publish(move_msg) 
+         
+        # Send status update 
+        status_msg = String() 
+        status_msg.data = f"Robot is: {self.robot_state}" 
+        self.status_publisher.publish(status_msg) 
+         
+        print(f" Robot state: {self.robot_state}") 
+
+    def handle_user_command(self, msg): 
+        """Handle commands from the user""" 
+        command = msg.data.upper() 
+        print(f" Received command: {command}") 
+         
+        if command == "STOP": 
+            self.robot_state = "STOPPED" 
+        elif command == "START": 
+            self.robot_state = "MOVING_FORWARD" 
+        elif command == "TURN": 
+            self.robot_state = "TURNING" 
+            self.turn_counter = 0 
+ 
+def main(): 
+    rclpy.init() 
+    robot = SimpleRobot() 
+     
+    try: 
+        rclpy.spin(robot) 
+    except KeyboardInterrupt: 
+        print("\n Robot stopped!") 
+    finally: 
+
+        robot.destroy_node() 
+        rclpy.shutdown() 
+ 
+if __name__ == '__main__': 
+    main() 
+Create Robot Monitor 
+Create file: C:\robot_project\src\robot_monitor.py 
+#!/usr/bin/env python3 
+""" 
+Robot Monitor - Shows what the robot is doing 
+""" 

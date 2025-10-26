@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #0f0f1a, #121229);
+  border: 2px solid #0ff; /* neon cyan border */
+  border-radius: 20px;
+  padding: 32px 40px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2), 0 0 60px rgba(0, 128, 255, 0.15);
+  font-family: 'Inter', sans-serif;
+  color: #cceeff;
+  user-select: none;
+}
+
+/* Heading */
+.card > h2 {
+  color: #00eaff;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+/* Themes container */
+.summary {
+  margin-top: 20px;
+}
+
+/* Grid layout for responsive theme blocks */
+ul.themes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Individual theme card */
+.theme-card {
+  background: rgba(0, 100, 180, 0.08);
+  border: 1px solid #00eaff55;
+  border-radius: 18px;
+  padding: 24px 22px;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.15);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(8px);
+  cursor: default;
+  user-select: text;
+}
+
+/* Hover effect */
+.theme-card:hover {
+  background: rgba(0, 200, 255, 0.15);
+  box-shadow: 0 8px 28px rgba(0, 200, 255, 0.3);
+  transform: translateY(-6px);
+  color: #ffffff;
+}
+
+/* Theme heading */
+.theme-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #00eaff;
+  text-shadow: 0 0 8px #00ffffcc;
+}
+
+/* Theme description */
+.theme-card p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #cceeffcc;
+}
+
+/* Button container */
+.buttons {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Button styles */
+.button {
+  background-color: #00eaff;
+  color: #001f33;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 255, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+/* Button hover */
+.button:hover {
+  background-color: #33f6ff;
+  box-shadow: 0 8px 28px rgba(0, 255, 255, 0.6);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .card {
+    padding: 28px 20px;
+  }
+  .theme-card h3 {
+    font-size: 1.1rem;
+  }
+  .theme-card p {
+    font-size: 1rem;
+  }
+  .buttons {
+    gap: 16px;
+  }
+  .button {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+}

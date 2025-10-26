@@ -1,0 +1,28 @@
+s and stores the elements of the following array into a vector object:  
+ char vowels[5] = {'a', 'e', 'i', 'o', 'u'};  
+  
+  
+5. Write a statement to declare screen to be an ostream_iterator initialized to the standard output device 
+that outputs the elements of an int vector object.  
+  
+6. Consider the following statements:  
+ vector<int> intVector;  
+  
+Suppose that intVector = {5, 7, 9, 11, 13}. Moreover, suppose that screen is an ostream_iterator initialized 
+to the standard output device to output the elements of an int vector object. What is the effect of the 
+following statement?  
+  
+copy(vecList.begin(), vecList.end(), screen);  
+  
+7. What is the output of the following program segment?  
+  
+vector<int> vecList(5);  
+  
+for (int j = 0; j < 5; j++) vecList[j] 
+= 2 * j;  
+for (int j = 0; j < 5; j++) cout << 
+vecList[j] << " ";  
+cout << endl;  
+  
+8. What is the output of the following program segment? (Assume that screen is an ostream_iterator 
+initialized to the standard out

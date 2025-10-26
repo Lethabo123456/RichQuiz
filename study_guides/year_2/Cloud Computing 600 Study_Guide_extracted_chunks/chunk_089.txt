@@ -1,0 +1,34 @@
+5.8 Cloud Storage Device   
+
+The cloud storage device mechanism represents storage devices that are designed specifically for 
+cloud-based provisioning. Instances of these devices can be virtualized. Cloud storage devices are 
+commonly able to provide fixed-increment capacity allocation in support of the pay-per-use 
+mechanism, and they can be exposed for remote access via cloud storage services. 
+Security, integrity and confidentiality of data are primary concern related to cloud storage, and this 
+becomes more prone to being compromised when entrusted to external cloud providers and other 
+third parties.  There can also be legal and regulatory implications that result from relocating data 
+across geographical or national boundaries 
+ 
+5.8.1 Cloud Storage Levels  
+Cloud storage device mechanisms provide common logical units of data storage, such as: 
+Files– Collections of data are grouped into files that are located in folders. 
+Blocks - The lowest level of storage and the closest to the hardware, a block is the smallest unit of 
+data that is still individually accessible. 
+Datasets – Sets of data are organized into a table-based, delimited, or record format. 
+Objects – Data and its associated metadata are organized as Web-based resources. 
+Each of these data storage levels is commonly associated with a certain type of technical interface 
+which corresponds to a particular type of cloud storage device and cloud storage service used to 
+expose its API 
+
+Fig 5.4: Cloud storage
+ 
+As seen in fig 5.4 above, different cloud service consumers utilize different technologies to interface 
+with virtualized cloud storage devices 
+Network storage interfaces 
+It includes storage devices in compliance with industry standard protocols, such as SCSI for storage 
+blocks and the server message block (SMB), common Internet file system (CIFS), and network file 
+system (NFS) for file and network storage. File storage entails storing individual data in separate files 
+that can be different sizes and formats and organized into folders and subfolders. Original files are 
+often replaced by the new files that are created when data has been modified. 
+When a cloud storage device mechanism is based on this type of interface, its data searching and 
+extraction performance will tend to be sub-optimal.  

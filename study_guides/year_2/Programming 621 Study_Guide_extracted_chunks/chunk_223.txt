@@ -1,0 +1,23 @@
+} 
+The member function volume of the class boxType determines the volume of a box. 
+To determine the volume of a box, you multiply the length, width, and height of the box 
+or multiply the area of the base of the box by its height. 
+ 
+Let us write the definition of the member function volume by using the second 
+alternative. To do this, you can use the member function area of the class 
+rectangleType to determine the area of the base. Because the class boxType 
+overrides the member function area, to specify a call to the member function area of 
+the class rectangleType, we use the name of the base class and the scope resolution 
+operator, as shown in the following definition: 
+double boxType::volume() const  
+{ 
+ return rectangleType::area() * height;  
+} 
+ 
+
+204 | P a g e  
+ 
+Constructors of Derived and Base Classes 
+ 
+A derived class can have its own private member variables, so a derived class can 
+explicitly include its own constructors to initialize them. When we declare a deriv

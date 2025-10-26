@@ -1,0 +1,37 @@
+1.5.6 Rules of Inference for Quantified Statements 
+We have discussed rules of inference for propositions. We will now describe 
+some important rules of inference for statements involving quantifiers. 
+These rules of inference are used extensively in mathematical arguments, 
+often without being explicitly mentioned.  
+Universal instantiation is the rule of inference used to conclude that 𝑃(𝑐) is 
+true, where 𝑐 is a particular member of the domain, given the premise 
+∀𝑥𝑃(𝑥). Universal instantiation is used when we conclude from the 
+statement “All women are wise” that “Lisa is wise,” where Lisa is a member 
+of the domain of all women.  
+Universal generalization is the rule of inference that states that ∀𝑥𝑃(𝑥) is 
+true, given the premise that 𝑃(𝑐) is true for all elements c in the domain. 
+Universal generalization is used when we show that ∀𝑥𝑃(𝑥) is true by taking 
+an arbitrary element 𝑐 from the domain and showing that 𝑃(𝑐) is true. The 
+element 𝑐 that we select must be an arbitrary, and not a specific, element of 
+the domain.  
+
+
+That is, when we assert from ∀𝑥𝑃(𝑥) the existence of an element 𝑐 in the 
+domain, we have no control over 𝑐 and cannot make any other assumptions 
+about 𝑐 other than it comes from the domain. Universal generalization is 
+used implicitly in many proofs in mathematics and is seldom mentioned 
+explicitly. However, the error of adding unwarranted assumptions about the 
+arbitrary element 𝑐 when universal generalization is used is all too common 
+in incorrect reasoning. 
+Existential instantiation is the rule that allows us to conclude that there is an 
+element 𝑐 in the domain for which 𝑃(𝑐) is true if we know that ∃𝑥𝑃(𝑥) is 
+true. We cannot select an arbitrary value of 𝑐 here, but rather it must be a 𝑐 
+for which 𝑃(𝑐) is true. Usually we have no knowledge of what 𝑐 is, only that it exists. Because it exists, we may give it a name (𝑐) and continue our 
+argument. 
+Existential generalization is the rule of inference that is used to conclude that 
+∃𝑥𝑃(𝑥) is true when a particular element 𝑐 with 𝑃(𝑐) true is known. That is, 
+if we know one element 𝑐 in the domain for which 𝑃(𝑐) is true, then we 
+know that ∃𝑥𝑃(𝑥) is true. We summarize these rules of inference in Table 
+14 below. 
+ 
+Table 14: Rules of Inference for Quantified Statements 

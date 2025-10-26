@@ -1,0 +1,32 @@
+—the function setDimension. 
+ 
+ 
+ 
+ 
+The definition of the function getHeight is:  
+double boxType::getHeight() const  
+{  
+
+203 | P a g e  
+ 
+return height; 
+ } 
+ 
+The member function area of the class boxType determines the surface area of a box. 
+To determine the surface area of a box, we need to access the length and width of the 
+box, which are declared as private members of the class rectangleType. Therefore, 
+we use the member functions getLength and getWidth of the class rectangleType to 
+retrieve the length and width, respectively. Because the class boxType does not 
+contain any member functions that have the names getLength or getWidth, we can 
+call these member functions of the class rectangleType without coupling them to the 
+name of the base class. 
+ 
+double boxType::area() const 
+ {  
+return 2 * (getLength() * getWidth() 
+  
++ getLength() * height  
++ getWidth() * height); 
+ } 
+The member function volume of the class boxType determines the volume of a box. 
+To determine t

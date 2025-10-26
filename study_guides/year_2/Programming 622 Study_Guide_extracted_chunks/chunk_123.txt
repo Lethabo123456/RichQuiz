@@ -1,0 +1,36 @@
+vector container of size 5 and the element 
+type is int.  
+ vector<int> intList(5);  
+  
+You can use a loop, such as the following, to store elements into intList:  
+ for (int j = 0; j < 5; j++) 
+intList[j] = j;  
+  
+Similarly, you can use a for loop to output the elements of intList.  
+  
+The class vector provides various operations to process the elements of a vector container. Suppose that 
+vecList is a container of type vector. Item insertion and deletion in vecList can be accomplished using the 
+operations given in Table 2-3. These operations are implemented as member functions of the class vector 
+and are shown in bold. Table 2-3 also shows how these operations are used.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+
+56  
+  
+TABLE 2-3: Various operations on a vector container  
+   
+The function push_back is quite useful. This function is used to add an element at the end of a container. 
+The container intList of size 5 was declared in Example 2-2. You might think that you can only

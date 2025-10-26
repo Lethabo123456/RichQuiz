@@ -1,0 +1,31 @@
+6.5.1 Requirement based Testing  
+A general principle of good requirements engineering practice is that requirements should be 
+testable. That is, the requirement should be written so that a test can be designed for that 
+requirement. A tester can then check that the requirement has been satisfied. Requirements-
+based testing, therefore, is a systematic approach to test-case design where you consider each 
+requirement and derive a set of tests for it. Requirements-based testing is validation rather than 
+defect testing—you are trying to demonstrate that the system has properly implemented its 
+requirements. 
+ 
+6.5.2 Scenario Testing  
+Scenario testing is an approach to release testing whereby you devise typical scenarios of use and 
+use these scenarios to develop test cases for the system. A scenario is a story that describes one 
+way in which the system might be used. Scenarios should be realistic, and real system users should 
+be able to relate to them. If you have used scenarios or user stories as part of the requirements 
+engineering process (described in Chapter 4), then you may be able to reuse them as testing 
+scenarios. In a short paper on scenario testing, Kaner (Kaner 2003) suggests that a scenario test 
+should be a narrative story that is credible and fairly complex. It should motivate stakeholders; 
+that is, they should relate to the scenario and believe that it is important that the system passes 
+the test. He also suggests that it should be easy to evaluate. If there are problems with the system, 
+then the release testing team should recognize them. 
+
+6.5.3 Performance Testing  
+Once a system has been completely integrated, it is possible to test for emergent properties, such 
+as performance and reliability. Performance tests have to be designed to ensure that the system 
+can process its intended load. This usually involves running a series of tests where you increase 
+the load until the system performance becomes unacceptable. 
+ 
+As with other types of testing, performance testing is concerned both with demonstrating that 
+the system meets its requirements and discovering problems and defects in the system. To test 
+whether performance requirements are being achieved, you may have to construct an 
+operational profile. 

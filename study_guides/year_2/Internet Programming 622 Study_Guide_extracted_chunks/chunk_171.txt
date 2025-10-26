@@ -1,0 +1,17 @@
+topic of religious debate among PHP developers, 
+which goes to show that both approaches have their strengths and weaknesses. This guide uses PDO, 
+mainly because it is easier and quicker to learn, but once you have learned PDO you should find that 
+you can transfer your skills to mysqli if needed.   
+   
+If you have installed PHP and MySQL using Synaptic on Ubuntu, WampServer on Windows, or MAMP 
+on the Mac, you should find that both the mysqli and PDO extensions are already installed.   
+   
+4.18 Making A Connection   
+To make a connection to a MySQL database in your PHP script, all you need to do is create a new  
+PDO object. When you create the object, you pass in three arguments: the DSN, which describes the 
+database to connect to; the username of the user you want to connect as; and the user’s password. 
+The returned PDO object serves as your script’s connection to the database:   
+   
+$conn = new PDO( $dsn, $username, $password );   
+   
+A DSN , or Database Source Name, is sim

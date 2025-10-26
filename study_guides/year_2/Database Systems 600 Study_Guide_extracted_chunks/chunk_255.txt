@@ -1,0 +1,26 @@
+SELECT is an incredibly 
+powerful tool that enables you to transform data into information.  
+Selecting Rows with Conditional Restrictions 
+You can select partial table contents by placing restrictions on the rows to be included in the output. 
+Use the WHERE clause to add conditional restrictions to the SELECT statement that limit the rows 
+returned by the query. The following syntax enables you to specify which rows to select:  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 266-269. 
+
+ 
+102 
+SELECT   
+column-list 
+FROM  
+ 
+table-list 
+[WHERE   
+condition-list]  
+[ORDER BY  
+column-list [ASC | DESC];  
+The SELECT statement retrieves all rows that match the specified condition(s)—also known as the 
+conditional criteria—you specified in the WHERE clause. The condition-list in the WHERE clause 
+of the SELECT statement is represented by one or more conditional expressions, separated by 
+logical operato

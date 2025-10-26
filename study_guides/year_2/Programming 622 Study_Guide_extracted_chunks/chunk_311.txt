@@ -1,0 +1,26 @@
+needle 2 to needle 3. To move the remaining 62 disks, we use a similar procedure. This discussion 
+translates into the following recursive algorithm given in pseudocode.  
+  
+Suppose that needle 1 contains n disks, where n ≥ 1.  
+1. Move the top n - 1 disks from needle 1 to needle 2, using needle 3 as the intermediate needle.  
+
+157  
+  
+2. Move disk number n from needle 1 to needle 3.  
+3. Move the top n - 1 disks from needle 2 to needle 3, using needle 1 as the intermediate needle.  
+  
+This recursive algorithm translates into the following C++ function:  
+  
+void moveDisks(int count, int needle1, int needle3, int needle2)  
+{  
+if (count > 0)  
+{  
+moveDisks(count - 1, needle1, needle2, needle3);  
+cout << "Move disk " << count << " from " << needle1<< " to " << needle3 << "." << endl; 
+moveDisks(count - 1, needle2, needle3, needle1);  
+}  
+}  
+  
+4.2.4.1 Tower Of Hanoi: Analysis  
+  
+Let us determine how long it would take to move all 64 disks from needle 1 to needle 3. If needle

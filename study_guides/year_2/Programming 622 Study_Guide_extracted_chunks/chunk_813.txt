@@ -1,0 +1,32 @@
+aph.  
+//Postcondition: The weight of the shortest path from vertex // 
+to every other vertex in the graph is printed.  
+  
+weightedGraphType(int size = 0);  
+//Constructor  
+//Postcondition: gSize = 0; maxSize = size; // 
+graph is an array of pointers to linked lists.  
+// weights is a two-dimensional array to store the weights // 
+of the edges.  
+// smallestWeight is an array to store the smallest weight // 
+from source to vertices.  
+  
+~weightedGraphType();  
+
+400  
+  
+//Destructor  
+//The storage occupied by the vertices and the arrays //weights 
+and smallestWeight is deallocated.  
+  
+protected:  
+double **weights;   
+  
+//pointer to create weight matrix double 
+*smallestWeight;   
+//pointer to create the array to store  
+//the smallest weight from source to vertices  
+};  
+  
+We leave the UML class diagram of the class weightedGraphType and the inheritance hierarchy as an 
+exercise. The definition of the function createWeightedGraph is also left as an exercise for you. Next, we

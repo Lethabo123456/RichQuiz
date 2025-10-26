@@ -1,0 +1,16 @@
+Saving and Loading Models 
+These models take a long time to train, so it would be nice if we could save them so that we 
+don’t have to train them every time. Luckily, we can use the json module to easily serialize 
+model weights to a file. 
+For saving, we can use Layer.params to collect the weights, stick them in a list, and use 
+json.dump to save that list to a file: 
+
+import json 
+ 
+def save_weights(model: Layer, filename: str) -> None: 
+weights = list(model.params()) 
+with open(filename, 'w') as f: 
+json.dump(weights, f) 
+
+Loading the weights back is only a little more work. We just use json.load to get the list of 
+weights back from the file and slice assignment to set the weights of our model. 

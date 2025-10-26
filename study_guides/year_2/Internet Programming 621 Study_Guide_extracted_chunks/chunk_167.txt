@@ -1,0 +1,29 @@
+se things.  
+  
+To get your function to return a value, you use — you guessed it — PHP’s return statement:  
+  
+  
+  
+  
+function myFunc() { 
+// (do stuff here)  
+return value;  
+}  
+  
+value can be any expression, so you can use a literal value (such as 1 or false ), a variable name (such 
+as $result ), or a more complex expression (for example, $x * 3 / 7 ).  
+When the PHP engine encounters the return statement, it immediately exits the function and 
+returns value back to the code that called the function, which can then use the value as required. 
+The following example script shows how to define and use a function that returns a value:  
+  
+
+81  
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” >  
+< head >  
+< title > Normal and bold text < /title >  
+< link rel=”stylesheet” type=”text/css” href=”common.css” / > 
+< /head >  
+< body >  
+< h1 > Normal

@@ -1,0 +1,28 @@
+row, and so on. 
+ 
+In the case of a one-dimensional array, when declaring it as a formal parameter, we 
+usually omit the size of the array.  
+Because C++ stores two-dimensional arrays in row order form, to compute the 
+address of a component correctly, the compiler must know where one row ends and 
+the next row begins. Thus, when declaring a twodimensional array as a formal 
+parameter, you can omit the size of the first dimension, but not the second; that is, you 
+must specify the number of columns. 
+
+150 | P a g e  
+ 
+ 
+Suppose we have the following declaration: 
+ const int NUMBER_OF_ROWS = 6;  
+const int NUMBER_OF_COLUMNS = 5; 
+ Consider the following definition of the function printMatrix:  
+ 
+void printMatrix(int matrix[][NUMBER_OF_COLUMNS], int noOfRows) 
+ {  
+for (int row = 0; row < noOfRows; row++)  
+{  
+for (int col = 0; col < NUMBER_OF_COLUMNS; col++) cout << setw(5)      
+<< matrix[row][col] << " ";  
+cout << endl; 
+ } 
+ } 
+This function takes as a parameter a two-dimensional

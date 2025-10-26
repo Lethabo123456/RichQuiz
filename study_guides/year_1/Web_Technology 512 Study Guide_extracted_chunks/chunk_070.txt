@@ -1,0 +1,34 @@
+cutes only if first condition is false and second 
+condition is true.*/ 
+} 
+else if ( third_condition_to_test )  
+{ 
+/* executes only if first condition is false, second 
+condition is true and third condition is true */. 
+
+ 
+46 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+} 
+else 
+{ 
+ 
+ //executes if all the above conditions are false 
+} 
+ 
+And here is an example of else if for you to try out: 
+ 
+Figure 3.6 – If …else if statements 
+ 
+The first line now assigns a value of "Jenny" to the first_name variable. You should be 
+able to guess what gets executed.  
+ 
+Exercise 3.4 
+Change Jenny to "Kenny", then "Benny", then "Lenny" just to check what gets printed 
+out. Now change "Benny" to "benny" (lowercase for the first letter). What do you think 
+will print out? Is JavaScript case sensitive here, or not case sensitive? 
+  
+3.4.4 Nested If Statements 
+You can nest one or more IF statements. Supposing you wanted to test a variable to 
+see what value it holds. But you also want to do further tes

@@ -1,0 +1,19 @@
+le about the 
+length of their breaks. To do this, let's take a random sample of 100 employees out of the 
+9,000 employees we simulated, as shown: 
+sample_breaks = np.random.choice(a=breaks, size=100)  # taking a sample of 100 employees 
+breaks.mean() - sample_breaks.mean()  # difference between means is 4.09 minutes, not bad! 
+ 
+This is extremely interesting because, with only about 1% of our population (100 out of 9,000), 
+we were able to get within 4 minutes of our population parameter and get a very accurate 
+estimate of our population mean. Not bad! 
+
+P a g e  | 104 
+ 
+Here, we calculated a point estimate for the mean, but we can also do this for proportion 
+parameters. By proportion, I am referring to a ratio of two quantitative values. Let's suppose 
+that in a company of 10,000 people, our employees are 20% white, 10% black, 10% Hispanic, 
+30% Asian, and 30% identify as other. We will take a sample of 1,000 employees and see if 
+their race proportions are similar. 
+ 
+employee_rac

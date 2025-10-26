@@ -1,0 +1,13 @@
+t require many movements.  
+  
+We can reduce the number of item movements in insertion sort by modifying it. The modified insertion 
+sort that we present next was introduced in 1959 by D. E. Shell and is known as the Shellsort algorithm. 
+This sort is also known as diminishing-increment sort.  
+  
+In Shellsort, the elements of the list are viewed as sublists at a particular distance. Each sublist is sorted, 
+so that elements that are far apart move closer to their final position. For example, suppose that you have 
+a list of 15 elements, as shown in Figure 8-19. First we view the list as 7 sublists, that is, we sort the 
+elements at a distance of 7. Note that several elements have moved closer to their final position. For 
+example, 2, 19, and 60 are closer to their final position. In the next iteration, we sort the elements at a 
+distance of 4, as shown in Figure 8-19(b). Finally, we sort the elements at a distance of 1, that is, the entire 
+list is sorted. Figure 8-19(c) shows the ele

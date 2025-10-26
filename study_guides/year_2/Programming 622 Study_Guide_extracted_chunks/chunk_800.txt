@@ -1,0 +1,78 @@
+jacentVertex); infile 
+>> adjacentVertex;  
+ 
+}   
+  
+  
+  
+  
+//end while  
+ 
+}   
+  
+  
+  
+  
+  
+// end for  
+  
+infile.close();  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end createGraph  
+  
+The function clearGraph empties the graph by deallocating the storage occupied by each linked list and 
+then setting the number of vertices to 0.  
+  
+void graphType::clearGraph()  
+{ for (int index = 0; index < gSize; index++) 
+graph[index].destroyList(); gSize = 0;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end clearGraph  
+The definition of the function printGraph is given next:  
+  
+
+394  
+  
+void graphType::printGraph() const  
+{ for (int index = 0; index < gSize; index++)  
+{ cout << index << " "; 
+graph[index].print()
+;  
+cout << endl;  
+}  
+cout << endl;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end printGraph  
+  
+The definitions of the constructor and the destructor are as follows:  
+  
+//Constructor  
+graphType::graphType(int size)  
+{  
+maxSize = size; gSize 
+= 0;  
+graph = new unorderedLinkedList<int>[size];  
+}  
+  
+//De

@@ -1,0 +1,13 @@
+ets must be very precise. Each design group creates a 
+conceptual data model corresponding to the subset being modelled. Each conceptual model is then 
+verified individually against the user views, processes, and constraints for each of the modules. 
+After the verification process has been completed, all modules are integrated into one conceptual 
+model. Because the data dictionary describes the characteristics of all objects within the conceptual 
+data model, it plays a vital role in the integration process. After the subsets have been aggregated 
+into a larger conceptual model, the lead designer must verify that it still can support all of the 
+required transactions. Keep in mind that the aggregation process requires the designer to create a 
+single model in which various aggregation problems must be addressed.  
+ 
+Synonyms and homonyms. Various departments might know the same object by different 
+names (synonyms), or they might use the same name to address different objects 
+(homon

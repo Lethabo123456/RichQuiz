@@ -1,0 +1,52 @@
+Example Proof using Substitution 
+
+Prove son(Barney,Adam) 
+1. male(Adam) 
+Fact 1 
+2. male(Barney) 
+Fact 2 
+3. parent(Adam,Barney) 
+Fact 9 
+4. parent(y,x) AND male(x) -> son(x,y) 
+Rule 1  
+5. parent(Adam,Barney) AND male(Barney)  L2,L3 
+6. parent(Adam,Barney) AND male(Barney) 
+-> son(Barney,Adam) 
+L5, L4, sub. 
+7. son(Barney,Adam) 
+L5, L6, m.p. 
+ 
+Note that we selected the facts and the rule that would help us prove 
+son(Barney,Adam). 
+ 
+* There's only one rule that allows us to infer the son relationship, so we included 
+that rule. 
+* We need facts about the parent relationship that include reference to Adam and 
+Barney. 
+* We need facts about the male relationship that include (possibly) Adam and 
+Barney. 
+
+Example Proof with Quantifiers 
+
+Prove brother(Barney,Beth): 
+ 
+1. male(Barney) 
+Fact 2 
+2. parent(Adam,Barney) 
+Fact 9 
+3. parent(Adam,Beth) 
+Fact 11 
+4. male(x) AND (E z)(parent(z,x) AND 
+parent(z,y)) -> brother(x,y) 
+Rule 3 
+5. male(Barney) AND 
+(E z)(parent(z,Barney) AND 
+parent(z,Beth)) 
+-> brother(Barney,Beth) 
+L4, sub. 
+6. male(Barney) AND 
+parent(Adam,Barney) AND 
+parent(Adam,Beth) 
+L1, L2, L3 
+7. brother(Barney,Beth) 
+L5, L6, m.p.

@@ -1,0 +1,14 @@
+the server inserts 
+them in an arbitrary manner. To make sure it finds all entries matching the information you want, 
+the engine must scan the whole table, which is slow and inefficient, particularly if there are only a 
+few matches.   
+Now consider an indexed table. Instead of moving straight to the table, the engine can scan the 
+index for items that match your requirements. Because the index is a sorted list, this scan can be 
+performed very quickly. The index guides the engine to the relevant matches in the database table, 
+and a full table scan is not necessary.   
+   
+A primary key is a special index that is used to ID records and to relate tables one to another, 
+providing the relational database model. Each related table should have one (and only one) primary 
+key. You can also create an index or primary key based on combinations of fields, rather than just a 
+single field. For a key to be formed in this way, the combination of values across the indexed fields 
+must be unique.

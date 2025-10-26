@@ -1,0 +1,32 @@
+2.4.1.5 RGBA Image 
+RGBA images are colored RGB images with an extra channel known as “alpha” that depicts the 
+opacity of the RGB image. Opacity ranges from a value of 0% to 100% and is essentially a “see-
+through” property. Opacity in physics depicts the amount of light that passes through an object. 
+For instance, cellophane paper is transparent (100% opacity), frosted glass is translucent, and 
+wood is opaque. The alpha channel in RGBA images tries to mimic this property.  An example of 
+this is shown below. 
+ 
+2.4.2 Image Processing Techniques 
+Image processing can be used to improve the quality of an image, remove undesired objects from 
+an image, or even create new images from scratch. For example, image processing can be used 
+to remove the background from an image of a person, leaving only the subject in the foreground. 
+Image processing is a vast and complex field, with many different algorithms and techniques that 
+can be used to achieve different results. In this section, we will focus on some of the most 
+common image processing tasks and how they are performed. 
+
+2.4.2.1 Image Enhancement 
+One of the most common image processing tasks is image enhancement or improving the quality 
+of an image. It has crucial applications in Computer Vision tasks, Remote Sensing, and 
+surveillance. One common approach is adjusting the image's contrast and brightness.  
+Contrast is the difference in brightness between the lightest and darkest areas of an image. By 
+increasing the contrast, the overall brightness of an image can be increased, making it easier to 
+see. Brightness is the overall lightness or darkness of an image. By increasing the brightness, an 
+image can be made lighter, making it easier to see. Both contrast and brightness can be adjusted 
+automatically by most image editing software, or they can be adjusted manually. 
+However, adjusting the contrast and brightness of an image is our elementary operation. 
+Sometimes an image with perfect contrast and brightness, when upscaled, becomes blurry due 
+to lower pixel per square inch (pixel density).  
+
+To address this issue, a relatively new and much more advanced concept of Image Super-
+Resolution is used, wherein a high-resolution image is obtained from its low-resolution 
+counterpart(s). Deep Learning techniques are popularly used to accomplish this.

@@ -1,0 +1,24 @@
+1.9 Variables   
+ 
+The variable is the basic unit of storage in a Java program. A variable is defined by the combination of 
+an identifier, a type, and an optional initializer. In addition, all variables have a scope, which defines 
+their visibility, and a lifetime. These elements are examined next.    
+
+Declaring a Variable    
+ 
+In Java, all variables must be declared before they can be used. The basic form of a variable 
+declaration is shown here:   
+ type identifier [ = value][, identifier [= value] ...] ;   
+   
+The type is one of Java’s atomic types, or the name of a class or interface. (Class and interface types 
+are discussed later in Part I of this book.) The identifier is the name of the variable. You can initialize 
+the variable by specifying an equal sign and a value. Keep in mind that the initialization expression 
+must result in a value of the same (or compatible) type as that specified for the variable. To declare 
+more than one variable of the specified type, use a comma-separated list.Here are several examples 
+of variable declarations of various types. Note that some include an initialization.   
+   
+int a, b, c; // declares three ints, a, b, and c.  int 
+d = 3, e, f = 5; // declares three more ints, 
+initializing // d and f. byte z = 22; // initializes z.  
+double pi = 3.14159; // declares an approximation 
+of pi. char x = 'x'; // the variable x has the value 'x'.

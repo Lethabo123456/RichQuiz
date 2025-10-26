@@ -1,0 +1,39 @@
+se operators let you manipulate these bits directly, as shown in the following table. Each 
+example includes both decimal values and their binary equivalents, so you can see how the bits are 
+altered:  
+  
+Operator  
+Description  
+Example  
+& (AND)  
+Only bits set in both values are set 
+in the result  
+14 & 3 = 2  
+00001110 & 00000011 = 00000010  
+| (OR)  
+Bits set in either value are set in 
+the result  
+14 | 3 = 15  
+00001110 | 00000011 = 00001111  
+^ (XOR)  
+Bits set in either value (but not 
+both) are set in the result  
+14 ^ 3 = 13  
+00001110 | 00000011 = 00001101  
+~ (NOT)  
+Bits set in the value are not set 
+in the result, and vice versa  
+~14 = - 15  
+~00000000000000000000000000001110  
+=  
+11111111111111111111111111110001  
+< < (Shift Left)  
+Shifts all bits in the first value a 
+number of places to the left 
+(specified by the second value)  
+3 < < 2 = 12  
+00000011 < < 2 = 00001100  
+> > (Shift Right)  
+Shifts all bits in the first value a 
+number of places to the right 
+(sp

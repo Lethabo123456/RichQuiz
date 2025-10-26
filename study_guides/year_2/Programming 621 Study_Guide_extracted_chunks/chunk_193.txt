@@ -1,0 +1,26 @@
+Time, printTime, and 
+equalTime specifies that these functions cannot modify the member variables 
+of a variable of type clockType. 
+ 
+ 
+ 
+ 
+Unified Modelling Language Class Diagrams 
+A class and its members can be described graphically using a notation known as the 
+Unified Modeling Language (UML) notation. 
+
+175 | P a g e  
+ 
+ 
+ 
+The top box contains the name of the class. The middle box contains the member 
+variables and their data types. The last box contains the member function name, 
+parameter list, and the return type of the function. A + (plus) sign in front of a member 
+name indicates that the member is a public member; a - (minus) sign indicates that 
+the member is a private member. The symbol # before the member name indicates 
+that the member is a protected member. 
+ 
+Variable (Object) Declaration 
+Once a class is defined, you can declare variables of that type. In C++ terminology, a 
+class variable is called a class object or class instance. To help you become familiar 
+wi

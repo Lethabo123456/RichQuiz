@@ -1,0 +1,63 @@
+a 
+  
+125. 
+What will be the output of the following PHP code ? 
+<?php 
+function TV($string) 
+{ 
+echo "my favourite TV show is ".$string; 
+function b() 
+{ 
+echo " I am here to spoil this code"; 
+} 
+} 
+function b() 
+{ 
+echo " I am here to spoil this code"; 
+} 
+b(); 
+TV("Sherlock"); 
+?> 
+a) I am here to spoil this code 
+b) Error 
+c) my favourite TV show isI am here to spoil this code 
+d) None Of The Above 
+  
+Answer: b 
+  
+126. 
+What will be the output of the following PHP code ? 
+<?php 
+function TV($string) 
+
+{ 
+echo "my favourite TV show is ".$string; 
+function b() 
+{ 
+echo " I am here to spoil this code"; 
+} 
+} 
+a("Sherlock"); 
+b(); 
+?> 
+a) I am here to spoil this code 
+b) Error 
+c) my favourite TV show is SherlockI am here ro spoil this code 
+d) None of the above 
+  
+Answer: c 
+  
+127. 
+What will be the output of the following PHP code ? 
+<?php 
+function calc($num1, $num2) 
+{ 
+$total = $num1 * $num2;  
+} 
+$result = calc(42, 0); 
+echo $result;     
+?> 
+a) Error 
+b) 0 
+c) 42 
+d) 84

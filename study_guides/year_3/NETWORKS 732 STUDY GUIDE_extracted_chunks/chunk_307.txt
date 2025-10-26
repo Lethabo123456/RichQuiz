@@ -1,0 +1,23 @@
+6.4 Channel Management 
+A band used by a wireless device is deﬁned by its overall frequency range. To allow multiple 
+devices to share the same band, the band is subdivided into channels, and channels are further 
+subdivided into narrowband channels. Most wireless devices implement one of two technologies 
+to take advantage of the frequencies within its band to avoid interference: 
+
+• FHSS (frequency hopping spread spectrum): A short burst of data is transmitted on a 
+particular frequency within the band, and the next burst goes to the next frequency in the 
+sequence. Frequency hopping can happen hundreds of times a second. FHSS is cheaper 
+to implement than DSSS and performs better than DSSS in crowded, indoor 
+environments. 
+• DSSS (direct sequence spread spectrum): Data streams are divided and encoded into 
+small chunks, called chips, which are spread over all available frequencies within one of 
+three wide channels, all at the same time. The process of dividing and encoding the data 
+is called chipping, and the spreading ratio used to transform the data is called the chipping 
+code, which is unique to each device. DSSS uses the available bandwidth more eﬃciently 
+than FHSS and tends to have a higher throughput 
+
+Even with the frequency spread of FHSS or DSSS to avoid interference, collisions can still happen. 
+Each technology has a procedure to follow when it senses a collision. For example, when a 
+Bluetooth device senses a collision with a Wi-Fi channel, it backs oﬀ using the frequencies in that 
+Wi-Fi channel for a short time, giving Wi-Fi the opportunity to ﬁnish its transmission. Wi-Fi devices 
+use a “listen before transmit” strategy to ﬁnd a silent channel.

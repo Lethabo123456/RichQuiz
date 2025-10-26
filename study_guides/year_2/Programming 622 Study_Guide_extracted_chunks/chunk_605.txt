@@ -1,0 +1,27 @@
+-27 List after moving 11 into lowerSublist  
+  
+Now consider the list in Figure 8-28.  
+  
+  
+FIGURE 8-28 List before moving 58 into a sublist  
+  
+For the list in Figure 8-28, list[index] is 58, which is greater than the pivot. Therefore, list[index] is to be 
+moved in upperSublist. This is accomplished by leaving 58 at its position and increasing the size of 
+upperSublist, by one, to the next array position. After moving 58 into upperSublist, the list is as shown in 
+Figure 8-29.  
+  
+  
+FIGURE 8-29 List after moving 58 into upperSublist  
+  
+
+300  
+  
+After moving the elements that are less than the pivot into lowerSublist and elements that are greater 
+than the pivot into upperSublist (that is, after completely executing Step 2), the resulting list is as shown 
+in Figure 8-30.  
+  
+  
+FIGURE 8-30 List elements after arranging into lowerSublist and upperSublist  
+  
+Next, we execute Step 3 and move 52, the pivot, to the proper position in the list. This is accomplished by 
+swapping

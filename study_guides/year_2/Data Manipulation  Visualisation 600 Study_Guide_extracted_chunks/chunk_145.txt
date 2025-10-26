@@ -1,0 +1,20 @@
+e referenced in the style properties added 
+to each component. Run python layout2.py in the terminal and you should see this page: 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In this example, we modified the inline styles of the html.Div and html.H1 components with the style 
+property. html.H1('Hello Dash', style={'textAlign':'center', 'color':'#7FDFF'}) is rendered in the Dash 
+application as <h1 style="text-align:center; color:#7FDFF">Hello Dash</h1>. 
+There are a few important differences between the dash_html_components and the HTML attributes: 
+1. The style property in HTML is a semicolon-separated string. In Dash, you can just supply a dictionary. 
+2. The keys in the style dictionary are camelCased. So, instead of text-align, it's textAlign. 
+3. The HTML class attribute is className in Dash. We’ll see this in upcoming examples. 
+4. The children of an HTML tag are specified through the children keyword argument. 
+By convention, this is always the first argument and so it is often omitted. 
+html.H1(children='

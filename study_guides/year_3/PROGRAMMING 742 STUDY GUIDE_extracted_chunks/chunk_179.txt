@@ -1,0 +1,68 @@
+4.2 Reading Data 
+ 
+Reading data using the FileStream class is not as easy as using the StreamReader class, which you will 
+FileStream class deals exclusively with raw bytes. Work-
+ing in raw bytes makes the FileStream class useful for any kind of data file, not just text files. By reading 
+byte data, the FileStream object can be used to read files such as images or sound files. The cost of this 
+flexibility is that you cannot use a FileStream to read data directly into a string as you can with the 
+StreamReader class. However, several conversion classes make it fairly easy to convert byte arrays into 
+character arrays, and vice versa. 
+ 
+The FileStream.Read() method is the primary means to access data from a file that a FileStream object 
+points to. This method reads the data from a file and then writes this data into a byte array. There are 
+three parameters, the first being a byte array passed in to accept data from the FileStream object. The 
+second parameter is the position in the byte array to begin writing data to 
+ this is normally zero, to 
+begin writing data from the file at the beginning of the array. The last parameter specifies how many 
+bytes to read from the file. 
+ 
+The following Try It Out demonstrates reading data from a random access file. The file you will read 
+from is actually the class file you create for the example. 
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.IO; 
+namespace FileW 
+{ 
+    class Program 
+    { 
+        static void Main(string[] args) 
+        { 
+            byte[] byData = new byte[200]; 
+            char[] charData = new Char[200]; 
+            try 
+            { 
+  FileStream aFile = new FileStream("../../Program.cs", File-
+Mode.Open); 
+                aFile.Seek(113, SeekOrigin.Begin); 
+                aFile.Read(byData, 0, 200); 
+            } 
+            catch (IOException e) 
+            { 
+       Console.WriteLine("An IO exception has been thrown!"); 
+                Console.WriteLine(e.ToString()); 
+                Console.ReadKey(); 
+                return; 
+            } 
+            Decoder d = Encoding.UTF8.GetDecoder(); 
+            d.GetChars(byData, 0, byData.Length, charData, 0); 
+            Console.WriteLine(charData); 
+Console ReadKey();
+
+This application opens its own .cs file to read from. It does so by navigating two directories up the file 
+structure with the .. string in the following line: 
+ 
+FileStream aFile = new FileStream("../../Program.cs", FileMode.Open); 
+ 
+The two lines that implement the actual seeking and reading from a specific point in the file are as fol-
+lows: 
+ 
+aFile.Seek(112, SeekOrigin.Begin); 
+aFile.Read(byData, 0, 200); 
+ 
+The first line moves the file pointer to byte number 112 in the file. This is the n of namespace in the Pro-
+gram.cs file; the 112 characters preceding it are the using directives. The second line reads the next 200 
+bytes into the byte array byData. 

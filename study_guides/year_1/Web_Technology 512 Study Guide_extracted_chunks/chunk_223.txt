@@ -1,0 +1,33 @@
+is the example to get the cookies set in previous section. 
+ 
+Figure 10.3 – How to Read a Cookie 
+ 
+ 
+WEB RESOURCE 
+ 
+https://www.youtube.com/watch?
+v=m9Ay7EFLggU 
+
+ 
+147 
+ 
+TEN | JAVASCRIPT AND COOKES 
+Here length is a method of Array class which returns the length of an array. This will 
+produce the following result:  
+ 
+Figure 10.4 – Reading Cookies 
+Now press the button "Get Cookie" to see the cookies which you have set in 
+previous section. There may be some other cookies already set on your machine. So 
+above code will show you all the cookies set at your machine. 
+ 
+10.1.4 Setting the Cookies Expiration Date 
+You can extend the life of a cookie beyond the current browser session by setting 
+an expiration date and saving the expiration date within the cookie. This can be 
+done by setting the expires attribute to a date and time. 
+ 
+Example: 
+The following example illustrates how to set cookie expiration date after 1 Month: 
+ 
+Figure 10.5 - Setting cookie expiration date 
+ 
+10.1.

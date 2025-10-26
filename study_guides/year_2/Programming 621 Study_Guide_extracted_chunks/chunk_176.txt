@@ -1,0 +1,23 @@
+e previous section, the statements  
+delete p;  
+delete [] name;  
+delete str; 
+deallocate the memory spaces that the pointers p, name, and str point to. 
+Suppose p and name are pointer variables, as declared previously. Notice that an 
+expression such as 
+delete p; 
+or  
+delete [] name; 
+only marks the memory spaces that these pointer variables point to as deallocated.  
+Depending on the particular operating system, after these statements execute, these 
+pointer variables may still contain the addresses of the deallocated memory spaces. 
+In this case, we say that these pointers are dangling. 
+ 
+Therefore, if later you access the memory spaces via these pointers without properly 
+initializing them, depending on the particular system, either the program will access a 
+wrong memory space, which may result in corrupting data now stored in those spaces, 
+or the program may terminate with an error message. One way to avoid this pitfall is 
+
+164 | P a g e  
+ 
+to set these pointers to nullptr

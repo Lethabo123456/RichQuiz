@@ -1,0 +1,16 @@
+attributes. Therefore, it’s very likely that new attributes may be added to 
+tables, or that entire new tables may be added to the logical model. For each identified table (old 
+and new), you must ensure that all attributes are fully dependent on the identified primary key and 
+that the tables are in at least third normal form (3NF).  
+
+ 
+149 
+As indicated throughout this section, database design is an iterative process. Activities such as 
+normalization take place at different stages in the design process. Each time you reiterate a step, the 
+model is further refined and better documented. New attributes may be created and assigned to the 
+proper entities. Functional dependencies among determinant and dependent attributes are evaluated 
+and data anomalies are prevented via normalization. 
+Validate Logical Model Integrity Constraints 
+The translation of the conceptual model into a logical model also requires definition of the attribute 
+domains and appropriate constraints.  
+All the d

@@ -1,0 +1,20 @@
+Bar Charts, Box Plots, Histograms and Distplots help visualize “univariate 
+distributions” - that is, the frequency of only one variable across a range of values or categories. 
+Heatmaps provide a “multivariate” plot by adding a third dimension - color - to the marker. This is 
+somewhat similar to changing the size of the marker in our bubble plots. 
+For these examples we take temperature data for the same one-week period in 2010 from three 
+US weather stations: Santa Barbara, California, Yuma, Arizona, and Sitka, Alaska. The raw data was 
+obtained 
+from 
+the 
+U.S. Climate 
+Reference 
+Network 
+(USCRN) 
+website, 
+specifically 
+https://www1.ncdc.noaa.gov/pub/data/uscrn/products/hourly02/2010/ . 
+From this we whittled down the data to three columns (date, time, avg temp), added a column for 
+“day”, and removed all but one week’s worth of recordings (June 1st - 7th). The resulting files are 
+SantaBarbaraCA.csv, YumaAZ.csv and SitkaAK.csv. 
+For starters, let’s create basic heatmaps for each

@@ -1,0 +1,27 @@
+In this code, a check is made to see whether the file Data.txt exists. Note that no directory information is 
+specified here, meaning that the current working directory is the only location examined. This directory 
+is the one containing the application that 
+ later, in 
+ Most of the FileInfo methods mirror the File methods in 
+ matter which technique you use, although the following criteria 
+may help you to decide which is more appropriate: 
+ 
+NOTE  Because you will be working with strings representing the path of a file 
+throughout this chapter, which means a lot of \ characters in your strings, remember 
+that you can precede a string value with @, which means that the string will be inter-
+preted literally. Thus, \ will be interpreted as \, and not as an escape character. With-
+out the @ prefix, you would need to use \\ instead of \ to avoid having this character 
+ stick to the @ prefix for 
+your strings. 
+
+It makes sense to use methods on the static File class if you are only making a single method 
+call the pro-cess of instantiating a new object and then calling the method.  
+ 
+If your application is performing several operations on a file, then it makes more sense to instan-
+tiate a FileInfo object and use its methods
+this saves time because the object will already be 
+referencing the correct file on the file system, whereas the static class has to find it every time. 
+The FileInfo class also exposes properties relating to the underlying file, some of which can be 
+manipulated to update the file. Many of these properties are inherited from FileSystemInfo, and 
+thus apply to both the File and Directory classes. The properties of FileSystemInfo are shown in 
+the following table: 

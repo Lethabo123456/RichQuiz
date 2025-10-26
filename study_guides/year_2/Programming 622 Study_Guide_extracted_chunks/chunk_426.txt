@@ -1,0 +1,13 @@
+ved next and that when a new customer arrives, he or 
+she stands at the end of the queue. That is, a queue is a First In First Out data structure.  
+  
+Queues have numerous applications in computer science. Whenever a system is modelled on the First In 
+First Out principle, queues are used. At the end of this section, we will discuss one of the most widely used 
+applications of queues, computer simulation. First, however, we need to develop the tools necessary to 
+implement a queue. The next few sections discuss how to design classes to implement queues as an ADT.  
+  
+A queue is a set of elements of the same type in which the elements are added at one end, called the back 
+or rear, and deleted from the other end, called the front. For example, consider a line of customers in a 
+bank, wherein the customers are waiting to withdraw/deposit money or to conduct some other business. 
+Each new customer gets in the line at the rear. Whenever a teller is ready for a new customer, the 
+customer

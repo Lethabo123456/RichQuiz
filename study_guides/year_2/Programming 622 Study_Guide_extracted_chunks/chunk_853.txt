@@ -1,0 +1,15 @@
+ry vertex of H is a vertex of G and every 
+edge in H is an edge in G.  
+5. Two vertices u and v in an undirected graph are called adjacent if there is an edge from one to the 
+other.  
+6. An edge incident on a single vertex is called a loop.  
+7. In an undirected graph, if two edges e1 and e2 are associated with the same pair of vertices {u, v}, then 
+e1 and e2 are called parallel edges.  
+8. A graph is called a simple graph if it has no loops and no parallel edges.  
+9. Let e = (u, v) be an edge in an undirected graph G. The edge e is said to be incident on the vertices u 
+and v.  
+10. A path from a vertex u to a vertex v is a sequence of vertices u1, u2, . . ., un such that u = u1, un = v, and 
+(ui, ui+ 1) is an edge for all i = 1, 2, . . ., n - 1.  
+11. The vertices u and v are called connected if there is a path from u to v.  
+12. A simple path is a path in which all the vertices, except possibly the first and last vertices, are distinct.  
+13. A cycle in G is a simple path in whic

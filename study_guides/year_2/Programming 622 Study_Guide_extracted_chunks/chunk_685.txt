@@ -1,0 +1,18 @@
+right subtree of the root node. Therefore, if 58 is in the binary tree, it must be in the left subtree 
+of the root node. We follow the left pointer of the root node and go to the node with info 50.We now 
+apply the same criteria at this node. Because 58 > 50, wemust follow the right pointer of this node and go 
+to the node with info 58. At this node we find item 58.  
+  
+This example shows that every time we move down to a child, we eliminate one of the subtrees of the 
+node from our search. If the binary tree is nicely constructed, the search is very similar to the binary search 
+on arrays.  
+  
+The binary tree given in Figure 9-7 is a special type of binary tree, called a binary search tree. (In the 
+following definition, by the term key of the node we mean the key of the data item that uniquely identifies 
+the item.)  
+  
+Definition: A binary search tree, T, is either empty or the following is true:  
+i. 
+T has a special node called the root node.  
+ii. 
+T has two sets of nodes, LT

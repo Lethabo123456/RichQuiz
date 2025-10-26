@@ -1,0 +1,26 @@
+mportant role in DBMSs for the 
+implementation of primary keys. When you define a table’s primary key, the DBMS automatically 
+creates a unique index on the primary key column(s) you declared.  
+In a unique index, as its name implies, the index key can have only one pointer value (row) 
+associated with it. A table can have many indexes, but each index is associated with only one table. 
+The index key can have multiple attributes (a composite index).  
+ 
+ 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Three page 97-99 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Three page 99-100
+
+ 
+51 
+2.2 Entity Relationship (ER) Modelling 
+ 
+The Entity Relationship (ER) Model 
+Recall from Chapter 2, Data Models, and Chapter 3, The Relational Database Model, that the entity 
+relationship model (ERM) forms the basis of an ERD. The ERD represents t

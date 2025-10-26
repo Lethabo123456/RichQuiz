@@ -1,0 +1,23 @@
+with list[3], to obtain the tree as 
+given in Figure 8-46(a).  
+  
+  
+FIGURE 8-46 Binary tree while building heap at list[1]  
+  
+However, after swapping list[1] with list[3], the subtree with the root node list[3], that is, 60, is no longer 
+a heap. Thus, we must restore the heap in this subtree. To do this, we apply Step 3 and find the larger 
+child of 60 and swap it with 60. We then obtain the binary tree as given in Figure 8-46(b).  
+  
+Once again, the subtree with the root node list[1], that is, 92, is in a heap (see Figure 8-46(b)).  
+  
+Finally, we consider the tree with the root node list[0], that is, 15. We repeat the previous three steps to 
+obtain the binary tree as given in Figure 8-47(a).  
+  
+
+313  
+  
+  
+FIGURE 8-47 Binary tree while building heap at list[0]  
+  
+We see that the subtree with the root node list[1], that is, 15, is no longer in a heap. So we must apply 
+Step 3 to restore the heap in this subtree. (This requires us to repeat Steps 1 and 2 at the subtree wit

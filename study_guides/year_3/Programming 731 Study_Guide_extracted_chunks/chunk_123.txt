@@ -1,0 +1,55 @@
+3.3.2 HIERARCHY OF ARRAYLIST CLASS IN JAVA   
+ArrayList class implements List interface and List interface extends Collection interface.   
+  
+Figure 3.2. Hierarchy of Array list Class in Java  
+   
+Arraylist in Java declaration   
+This is how you can declare an ArrayList of String type:   
+ArrayList<String> list=new ArrayList<>();    
+This is how you can declare an ArrayList of Integer type:   
+ArrayList<Integer> list=new ArrayList<>();   
+   
+Adding elements to Arraylist in java   
+Adding Element in ArrayList at specified position: 
+
+You can add elements to an ArrayList by using add() method. This method has couple of variations, 
+which you can use based on the requirement.
+
+For example: If you want to add the element at the end of the List then you can simply call the add() 
+method like this: 
+  
+arrList.add("Chris"); //This will add "Chris" at the end of   
+
+List   
+To add the element at the specified location in ArrayList, you can specify the index in the add() 
+method like this:   
+   
+arrList.add(3, " Chris"); //This will add "Chris" at the fourth position  Let’s write 
+the complete code:   
+   
+import java.util.*;   class JavaExample{     
+   public static void main(String args[]){     
+    ArrayList<String> arrList=new ArrayList<String>();      
+    arrList.add("Chris");     
+   arrList.add("Tim");   
+    arrList.add("Lucy");    
+    arrList.add("Percy");  
+    arrList.add("Angela");     
+   arrList.add("Tom");   
+     
+      //displaying elements   
+      System.out.println(arrList);   
+     
+      //Adding " Chris" at the fourth position       
+      arrList.add(3, " Chris");   
+     
+      //displaying elements   
+      System.out.println(arrList);   
+   }     
+}   
+   
+Output:   
+   
+[Chris, Tim, Lucy, Percy, Angela, Tom]   
+[Chris, Tim, Lucy, Chris, Percy, Angela, Tom]   
+Note: Since the index starts with 0, index 3 would represent fourth position not 3. 

@@ -1,0 +1,29 @@
+yment[1] is the second button, and so on. If the IF statement detects 
+that any one of these buttons has a value of checked it puts that value into the 
+payment variable: 
+payment = document.frmOne.payment[i].value; 
+ 
+We can then break out of the loop because we know that the user has selected a 
+radio button. The IF statement after the loop checks what is inside the variable called 
+payment. It does exactly the same thing as the email check box. The only difference is 
+that it places an error message besides the radio buttons rather than besides the text 
+box. 
+ 
+Test it out. Click your submit button without selecting a radio button. You should see 
+this: 
+ 
+Figure 7.10 – No radio button selected 
+ 
+Now select a payment option. Click the button again and the error message will 
+disappear. 
+ 
+7.5 DROPDOWN LISTS 
+ 
+The code to check the dropdown list is more or less the same as for radio buttons. 
+Here it is: 
+
+ 
+124 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+Figure 7.11 – Dropdown list Val

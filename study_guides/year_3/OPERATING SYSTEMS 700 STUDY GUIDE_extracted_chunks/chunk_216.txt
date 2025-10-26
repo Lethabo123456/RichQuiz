@@ -1,0 +1,36 @@
+Kernel Level 
+ 
+The kernel level, illustrated in Figure 6.12, provides the basic mechanisms for building the operating 
+system by creating, managing, scheduling, synchronizing, and deleting objects; and it does so 
+dynamically. For example, when an object is created, it is assigned all the resources needed for its 
+operation and is given control until the task is completed. Then the object returns control to the 
+kernel, which selects the next object to be executed. 
+The kernel also has ultimate responsibility for the network’s capability lists. Each site has both 
+a capability manager that maintains the capability list for its objects, and a directory, which lists the 
+location for all capabilities in the system. This directory guides local requests for capabilities to 
+the sites on which they are located. 
+For example, if a process requests access to a region in memory, the capability manager first 
+determines whether the requesting process has been previously granted rights. 
+ 
+Figure 6.12 
+ 
+Figure 6.12 shows a Linux operating system, the kernel level is logically positioned between the 
+computer hardware and the shell. User requests for hardware interaction move from the application 
+to the shell, to the kernel, and then to the hardware control level. 
+If so, then it can proceed. If not, it processes the request for access rights. When the requester has 
+access rights, the capability manager grants the requester access to the named object, in this case, 
+the region in memory. If the named object is at a remote site, the local capability manager directs 
+the requester, using a new address computation and message, to the remote capability manager. 
+The kernel is also responsible for process synchronization mechanisms and communication support. 
+Typically, synchronization is implemented as some form of shared variable, such as the WAIT 
+and SIGNAL codes discussed in Chapter 6. Communication among distributed objects can be in the 
+form of shared data objects, message objects, or control interactions. Most systems provide 
+different communication primitives to their objects, which are either synchronous (the sender and 
+receiver are linked and ready to send and receive;) or asynchronous (there is some shareable 
+area such as a mailbox, queue, or stack to which the communicated information is sent). In some 
+cases, the receiver periodically checks to see if anyone has sent anything. In other cases, the 
+communicated information arrives at the receiver’s workstation without any effort on the part of 
+the receiver, it just waits. There can also be a combination of these. An example of this 
+communication model might have a mechanism that signals the receiver whenever communication 
+arrives at the sharing area, so that the information can be fetched whenever it is convenient. The 
+advantage of this system is that it eliminates unnecessary checking when no messages are waiting.

@@ -1,0 +1,22 @@
+le t-Tests 
+The one-sample t-test is a statistical test used to determine whether a quantitative 
+(numerical) data sample differs significantly from another dataset (the population or another 
+sample). Suppose in our previous employee break time example, we look, specifically, at the 
+engineering department's break times, as shown: 
+ 
+long_breaks_in_engineering = stats.poisson.rvs(loc=10, mu=55, size=100) 
+short_breaks_in_engineering = stats.poisson.rvs(loc=10, mu=15, size=300) 
+engineering_breaks = np.concatenate((long_breaks_in_engineering, 
+short_breaks_in_engineering)) 
+  
+print(breaks.mean())  # 39.99 
+print(engineering_breaks.mean())  # 34.825 
+
+P a g e  | 112 
+ 
+ 
+Note that I took the same approach as making the original break times, but with the following 
+two differences: 
+• I took a smaller sample from the Poisson distribution (to simulate that we took a 
+sample of 400 people from the engineering department) 
+• Instead of using a mu of 60 as before, I used 55 to simulate the

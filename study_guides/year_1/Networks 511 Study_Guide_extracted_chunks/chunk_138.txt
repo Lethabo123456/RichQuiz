@@ -1,0 +1,25 @@
+The Nbtstat switches are listed in Table below; 
+
+Nbtstat Switches 
+Switch           Name                   Function 
+-a < name >      adapter status         Returns the NetBIOS name table and MAC address of the 
+                                        address card for the computer name specified. 
+-A <             IP Adapter status      Lists the same information as -a when given the target's IP address. 
+address > 
+-c               cache                  Lists the contents of the NetBIOS name cache. 
+
+[ Number ]       Interval               Typing a numerical value tells Nbtstat to redisplay selected statistics 
+                                        each interval seconds, pausing between each display. Press Ctrl+C to stop redisplaying statistics. 
+
+-n               names                  Displays the names registered locally by NetBIOS applications such as the server and redirector. 
+-r               resolved               Displays a count of all names resolved by broadcast or WINS server. 
+-R               Reload                 Purges the name cache and reloads all #PRE entries from LMHOSTS. 
+-RR              ReleaseRefresh         Releases and reregisters all names with the name
+-s               sessions               Lists the NetBIOS sessions table converting destination IP addresses to computer NetBIOS names. 
+-S               Sessions               Lists the current NetBIOS sessions and their status, with the IP address. 
+/?               Help                   Displays this list.
+
+determine which services on a host that is associated with specific active ports. Figure below shows 
+an example of the netstat utility being used to display the currently active ports on a Linux machine.
+
+Figure 46: netsat utility 

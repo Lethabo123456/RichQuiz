@@ -1,0 +1,49 @@
+Consider the following:   
+// 
+Method  
+overriding. 
+ class A {   
+   
+int i, j;  
+     //constructor 
+A(int a, int  
+ { i = a; 
+ j = b;   
+}   
+// display i and j 
+void show() {   
+System.out.println("i and j: " + i + " " + j);   
+}   
+}   
+   
+class B extends A {   
+   
+int k;   
+B(int a, int b, int c)  
+{ super(a, b);  
+  
+k = c;   
+   
+}   
+// display k – this overrides show() in A 
+ void show() {  
+System.out.println("k:  " + k);   
+}   
+}   
+class Override {  
+public static void main(String args[]) 
+{   B subOb = new B(1, 2, 3);  
+subOb.show();  
+// this calls show() in B   
+}   
+}   
+   
+The output produced by this program is shown here:    
+   
+k: 3   
+
+When show( ) is invoked on an object of type B, the version of show( ) defined within B is used. That 
+is, the version of show( ) inside B overrides the version declared in A. If you wish to access the 
+superclass version of an overridden function, you can do so by using super. For example, in this 
+version of B, the superclass version of show( ) is invoked within the subclass’ version. This allows all 
+instance variables to be displayed.  

@@ -1,0 +1,42 @@
+As seen, the distance between the nodes with bidirectional search is inf. This implies there’s an 
+infinite number of ways to move from node A – F using bidirectional search.  
+ 
+The performance comparison is as follows: 
+ 
+The optimised implementation of the algorithm compares both the single-target and bidirectional 
+implementations of the algorithm. As expected, the single-target search performs better than the 
+bidirectional search on a small grid; however, as soon as the grid expands, the bidirectional search 
+performs better. This can be useful even in real-life situations where the goal is to find the shortest 
+path (distance) between two objects.  
+
+3.4  A* Algorithm 
+A* (pronounced "A-star") is an informed search algorithm widely used in pathfinding and graph 
+traversal, especially in fields like artificial intelligence, robotics, and game development. It 
+efficiently finds the shortest path from a start node to a goal node by combining the advantages 
+of Dijkstra’s algorithm and greedy best-first search. At its core, A* uses a cost function to prioritize 
+which paths to explore. The algorithm maintains an open list of nodes to explore, always selecting 
+the node with the lowest f-score 𝑓(𝑛) first. For each node 𝑛 it calculates: 
+𝑓(𝑛) = 𝑔(𝑛) + ℎ(𝑛) 
+Where: 
+𝑔(𝑛): the actual cost of the path from the start node to 𝑛 
+
+ℎ(𝑛): the estimated cost (heuristic) from node 𝑛 to the goal 
+The function 𝑓(𝑛) (sometimes referred to as f-score) represents the total estimated cost of the 
+cheapest solutions that goes through node 𝑛. A* choose to expand the node with the lowest 𝑓(𝑛) 
+value (lowest total estimated cost). A* is guaranteed to find the optimal path (a path with the 
+least cost) and therefore its optimal only if the heuristic function ℎ(𝑛) never overestimates the 
+true cost to reach the goal. Because it focuses on optimality, this means a solution will be found 
+if it exists provided the branching factor is infinite and each step has a minimum cost. Since it 
+leverages Dijkstra’s algorithm, A* typically explores fewer nodes, making it more efficient, 
+however that is dependent on the quality of heuristics. This means, a well-designed heuristic can 
+drastically reduce the number of nodes the algorithm needs to evaluate. The most common 
+heuristics are:  
+
+• Manhattan Distance (used in grid-based maps where movement is restricted to horizontal 
+and vertical directions), 
+• Euclidean Distance (used when diagonal movement is allowed), 
+• Domain-specific heuristics tailored to the problem at hand. 
+This means that A* usage is suitable when the following conditions are true: 
+• You have a specific goal and good heuristic  
+• Optimality is important  
+• Graph is not too large for memory constraints 

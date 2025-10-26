@@ -1,0 +1,21 @@
+= 
+4. Because list[4] < list[3], the element list[4], which is 12, needs to be moved to its proper location. As 
+before:  
+  
+temp = list[firstOutOfOrder] = 12  
+location = firstOutOfOrder = 4  
+  
+First, we copy list[3] into list[4] and decrement location by 1. Then we copy list[2] into list[3] and again 
+decrement location by 1. Now the value of location is 2. At this point, the list is as shown in Figure 88(b).  
+  
+Next, because list[1] < temp, the do...while loop terminates. At this point, location is 2, so we copy temp 
+into list[2]. That is, list[2] = temp = 12. Figure 8-8(c) shows the resulting list.  
+  
+Suppose that we have the list given in Figure 8-9.  
+  
+  
+FIGURE 8-9 First out-of-order element is at position 5  
+  
+Here list[0]...list[4], or the elements list[0], list[1], list[2], list[3], and list[4], are in order. Now 
+firstOutOfOrder = 5. Because list[5] > list[4], the if statement evaluates to false. So the body of the if 
+statement does not execute and the next iter

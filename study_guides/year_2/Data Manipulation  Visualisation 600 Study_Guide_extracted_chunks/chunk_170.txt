@@ -1,0 +1,28 @@
+ould just as easily pass df.columns wherever features is used. 
+● Nothing new has happened in the layout section. Inside a Div we set our two dropdown 
+components, followed by our Graph. 
+● Notice, though, that app.callback now has two Input parameters, one for each dropdown. 
+● Other than two inputs, however, the returning update is relatively straightforward. We set up a 
+Scatter plot with our x- and y-axes. 
+ 
+Run the script, open a browser to http://127.0.0.1:8050/ and you should see: 
+
+ 
+ 
+ 
+ 
+ 
+ 
+You can change either dropdown entry and immediately the x-axis and y-axis features change! As a 
+quick formatting choice, what if we wanted our features to appear capitalized? Even though our 
+dataset column name is “displacement”, how do we make “Displacement” appear on our graph both 
+in the dropdown list and the axis title? This is actually a quick fix: 
+ 
+app.layout = html.Div([ 
+ 
+html.Div([ 
+html.Div([ 
+dcc.Dropdown( 
+id='xaxis', 
+ 
+options=[{'label': i.title(), 'value': i} for i

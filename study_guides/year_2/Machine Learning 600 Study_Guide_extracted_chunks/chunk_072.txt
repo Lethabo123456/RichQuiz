@@ -1,0 +1,25 @@
+Table 4.1: Original table 
+                                                               
+ 
+ 
+The entropy calculation looks as follows: 
+                                      
+ 
+ 
+4.2.1 Information Gain Computation 
+When you know the gain before (0.97095) and after (0.5884) the split in the attribute, you 
+can calculate the information gain. With the attribute to see if the customer has a credit 
+account, your calculation will be the following: 
+
+P a g e  | 42 
+ 
+                                   
+ 
+ 
+4.3 Clustering 
+ 
+Do not confuse ML clustering with clusters of machines in a networking sense. If you search 
+for all the definitions of clustering out there, you get “organizing a group of objects that share 
+similar characteristics.” It is classed as an unsupervised learning method, which means there 
+is no prior training data from which to learn. In Figure 4.2 you can see there are three distinct 
+groupings of data; each one of those groups is a cluster. The main aim i

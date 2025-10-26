@@ -1,0 +1,18 @@
+l > xh, we say that x is left high. In this case, xl = xh + 1.  
+2. If xl = xh, we say that x is equal high.  
+3. If xh > xl, we say that x is right high. In this case, xh = xl + 1.  
+Definition: The balance factor of x, written bf(x), is defined by bf(x) = xh - xl.  
+  
+Let x be a node in the AVL tree T. Then,  
+  
+1. If x is left high, bf(x) = -1.  
+2. If x is equal high, bf(x) = 0.  
+3. If x is right high, bf(x) = 1.  
+  
+Definition: Let x be a node in a binary tree. We say that the node x violates the balance criteria if | xh - xl| 
+> 1, that is, the heights of the left and right subtrees of x differ by more than 1.  
+  
+From the preceding discussion, it follows that in addition to the data and pointers to the left and right 
+subtrees, one more thing is associated with each node x in the AVL tree T, which is the balance factor of 
+x. Thus, every node must keep track of its balance factor. To make the algorithms efficient, we store the 
+balance factor of each node in the node itself

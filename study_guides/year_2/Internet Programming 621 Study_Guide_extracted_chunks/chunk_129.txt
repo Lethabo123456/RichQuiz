@@ -1,0 +1,20 @@
+ter, without changing 
+the pointer position.  
+next()  
+Moves the pointer forward to the next element, and returns that element’s value.  
+prev()  
+Moves the pointer backward to the previous element, and returns that element’s 
+value.  
+end()  
+Moves the pointer to the last element in the array, and returns that element’s value.  
+reset()  
+Moves the pointer to the first element in the array, and returns that element’s value.  
+  
+Each of these functions takes just one argument — the array — and returns the required element’s 
+value or index, or false if an element couldn’t be found (for example, if you use next() when the 
+pointer is at the end of the array, or you use current() on an empty array).Here ’ s an example script 
+that uses each of these functions. You can see the result in Figure 5.2.  
+  
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” >

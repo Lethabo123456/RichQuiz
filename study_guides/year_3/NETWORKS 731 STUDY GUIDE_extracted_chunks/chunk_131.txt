@@ -1,0 +1,46 @@
+4.3 SSL, VPN, IKEv2 and PPTP 
+
+We will start with a rundown of the major differences between the different VPN protocols 
+and how they affect you, before looking in more detail at the key concepts involved in 
+cryptography, and how the NSA’s assault on encryption standards affects VPN users. 
+ 
+PPTP 
+Point-to-Point Tunnelling Protocol was developed by a consortium founded by Microsoft for 
+creating VPN over dialup networks, and as such has long been the standard protocol for 
+internal business VPN. It is a VPN protocol only and relies on various authentication methods 
+to provide security (with MS-CHAP v2 being the most common). Available as standard on just 
+about every VPN capable platform and device, and thus being easy to set up without the need 
+to install additional software, it remains a popular choice both for businesses and VPN 
+providers. The PPTP VPN protocol also has the advantage of requiring a low computational 
+overhead to implement. 
+ 
+Figure 4.2 PPTP  
+
+PPTP (Point-to-Point Tunneling Protocol) is a Layer 2 protocol developed by Microsoft that 
+expands on PPP by encapsulating it so that any type of PPP data can traverse the Internet 
+masked as an IP transmission. PPTP supports the encryption, authentication, and access 
+services provided by RRAS. Users can either dial directly into an RRAS access server that’s part 
+of the VPN, or they can dial into their ISP’s remote access server first, then connect to a VPN. 
+ 
+Either way, data is transmitted from the client to the VPN using PPTP. Windows, UNIX, Linux, 
+and Macintosh clients are all capable of connecting to a VPN using PPTP. PPTP is easy to install 
+and is available at no extra cost with Microsoft networking services. However, it provides less-
+stringent security than other tunneling protocols. Another VPN tunneling protocol is L2TP 
+(Layer 2 Tunneling Protocol), based on technology developed by Cisco and standardized by 
+the IETF. It encapsulates PPP data in a similar manner to PPTP but differs in a few keyways. 
+Unlike PPTP, L2TP is a standard accepted and used by multiple different vendors, so it can 
+connect a VPN that uses a mix of equipment types—for example, a Juniper router, a Cisco 
+router, and a Netgear router. Also, L2TP can connect two routers, a router and a remote access 
+server, or a client and a remote access server. 
+ 
+However, although now usually only found using 128-bit encryption keys, in the years since it 
+was first bundled with Windows 95 OSR2 back in 1999, a number of security vulnerabilities 
+have come to light, the most serious of which is the possibility of un-encapsulated MS-CHAP 
+v2 Authentication. Using this exploit, PPTP has been cracked within 2 days, and although 
+Microsoft has patched the flaw (through the use of PEAP authentication), it has itself issued a 
+recommendation that VPN users should use L2TP/IPsec or SSTP instead. Knowing that the 
+PPTP VPN protocol was insecure anyway, it came as no surprise to anybody that the NSA 
+almost certainly decrypts PPTP encrypted communications as standard. Perhaps more 
+worrying is that the NSA has (or is in the process of) almost certainly decrypted the vast 
+amounts of older data it has stored, which was encrypted back when even security experts 
+considered PPTP to be secure.

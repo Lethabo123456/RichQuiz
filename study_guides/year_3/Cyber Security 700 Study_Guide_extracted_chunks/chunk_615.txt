@@ -1,0 +1,32 @@
+Security Audit and Alarms Model 
+
+X.816 has developed a model that shows the elements of the security auditing function and their 
+relationships to security alarms (see Figure 18.1). 
+
+The key elements of this model are as follows: 
+
+ Event discriminator: This logic embedded in the software of the system monitors system 
+activity and detects security-related events that it was configured to detect. 
+ Audit recorder: For each detected event, the event discriminator transmits the information 
+to an audit recorder. The model depicts this transmission in the form of a message. The 
+audit could also be done by recording the event in a shared memory area. 
+ Alarm processor: Some of the events detected by the event discriminator are defined to be 
+alarm events. For such events, an alarm is issued to an alarm processor. The alarm processor 
+takes some action based on the alarm. This action is itself an auditable event and so is 
+transmitted to the audit recorder. 
+ Security audit trail: The audit recorder creates a formatted record of each event and stores it 
+in the security audit trail. 
+ Audit analyzer: The security audit trail is available to the audit analyzer, which, based on a 
+pattern of activity, may define a new auditable event that is sent to the audit recorder and 
+may generate an alarm. 
+ Audit archiver: This software module periodically extracts records from the audit trail to 
+create a permanent archive of auditable events. 
+ Archives: The audit archives are a permanent store of security-related events on this system. 
+ Audit provider: The audit provider is an application and/or user interface to the audit trail. 
+ Audit trail examiner: The audit trail examiner is an application or a user who examines the 
+audit trail and the audit archives for historical trends, for computer forensic purposes, and for 
+other analyses. 
+ Security reports: The audit trail examiner prepares human-readable security reports. 
+As shown, the auditing process begins with the detection of security-related events, which may in turn 
+be determined to be security incidents that produce alarms. Refer to Figure 15.3 in Chapter, “Threat 
+and Incident Management,” for details of this process. 

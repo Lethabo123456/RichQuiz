@@ -1,0 +1,22 @@
+Using the comma, the preceding   for loop can be more efficiently coded as shown here:   
+
+// Using the comma.   
+class Comma {   
+public static void main(String args[])   
+   
+{ 
+int a, b;   
+for(a=1, b=4; a<b; a++, b--) {  
+System.out.println("a = " + a);   
+System.out.println("b = " + b);   
+}   
+}   
+}   
+
+In this example, the initialization portion sets the values of both a and b. The two commaseparated 
+statements in the iteration portion are executed each time the loop repeats. The program generates 
+the following output: 
+   
+a = 1 b = 4   
+a = 2 b = 3   
+   

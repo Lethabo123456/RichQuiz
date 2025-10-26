@@ -1,0 +1,15 @@
+n-based algorithms, a binary search achieves the lower 
+bound. However, a binary search requires the data to be specially organized, that is, the data must be 
+sorted. The search algorithm that we now describe, called hashing, also requires the data to be specially 
+organized.  
+  
+In hashing, the data is organized with the help of a table, called the hash table, denoted by HT, and the 
+hash table is stored in an array. To determine whether a particular item with a key, say X, is in the table, 
+we apply a function h, called the hash function, to the key X; that is, we compute h(X), read as h of X. The 
+function h is typically an arithmetic function and h(X) gives the address of the item in the hash table. 
+Suppose that the size of the hash table, HT, is m. Then 0 ≤ h(X) < m. Thus, to determine whether the item 
+
+266  
+  
+with key X is in the table, we look at the entry HT[h(X)] in the hash table. Because the address of an item 
+is computed with the help of a function, it follows that t

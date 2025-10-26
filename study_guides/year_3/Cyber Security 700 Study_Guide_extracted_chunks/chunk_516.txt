@@ -1,0 +1,24 @@
+Patch Management Metrics 
+
+As with other aspects of security, management needs metrics to evaluate the use of patch 
+management. SP 800-40 gives the following examples of possible implementation measures: 
+ What percentage of the organization’s desktops and laptops are being covered by the 
+enterprise patch management technologies? 
+ What percentage of the organization’s servers have their applications automatically 
+inventoried by the enterprise patch management technologies? 
+SP 800-40 gives the following examples of possible effectiveness/efficiency measures: 
+ How often are hosts checked for missing updates? 
+ How often are asset inventories for host applications updated? 
+ What is the minimum/average/maximum time to apply patches to X% of hosts? 
+ What percentage of the organization’s desktops and laptops are patched within X days of 
+patch release? Y days? Z days? (In this case, X, Y, and Z are different values, such as 10, 20, 
+and 30.) 
+ On average, what percentage of hosts are fully patched at any given time? What percentage 
+of high impact moderate impact, and low impact hosts are fully patched?? 
+ What percentage of patches are applied fully automatically, versus partially automatically, 
+versus manually? 
+
+SP 800-40 gives the following examples of possible impact measures: 
+ What cost savings has the organization achieved through its patch management processes? 
+ What percentage of the organization’s information system budget is devoted to patch 
+management?

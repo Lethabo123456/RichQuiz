@@ -1,0 +1,21 @@
+ne”, explained as follows:  
+• 
+The end-user interfaces. Basically, the interface allows the end user to interact with the data 
+(by automatically generating SQL code). 
+• 
+A collection of tables stored in the database. In a relational database, all data is perceived to 
+be stored in tables.  
+• 
+SQL engine. Largely hidden from the end user, the SQL engine executes all queries, or data 
+requests. Hence, SQL is said to be a declarative language that tells what must be done but not 
+how.  
+
+ 
+25 
+Because the RDBMS performs some tasks behind the scenes, it is not necessary to focus on the 
+physical aspects of the database. Instead, the following chapters concentrate on the logical portion 
+of the relational database and its design.  
+The Entity Relationship Model 
+The conceptual simplicity of relational database technology triggered the demand for RDBMSs. This 
+and other factors, have thus created the need for more effective database design tools.  
+Complex design activities require conce

@@ -1,0 +1,30 @@
+inition of the node template 
+<class Type>  
+struct nodeType  
+{  
+Type info;  
+nodeType<Type> *link;  
+};  
+  
+ 
+3.2.2  Member Variables of the class linkedListType  
+  
+To maintain a linked list, we use two pointers—first and last. The pointer first points to the first node in 
+the list, and last points to the last node in the list. We also keep a count of the number of nodes in the list. 
+Therefore, the class linkedListType has three instance variables, as follows:  
+ protected:  
+ 
+int count;   
+  
+  
+//variable to store the number of elements in the list  
+nodeType<Type> *first;   
+//pointer to the first node of the list nodeType<Type> 
+*last;   //pointer to the last node of the list  
+  
+ 
+3.2.3  Linked List Iterators  
+  
+One of the basic operations performed on a list is to process each node of the list. This requires the list to 
+be traversed starting at the first node. Moreover, a specific application requires each node to be processed 
+in a very specific way. A common techni

@@ -1,0 +1,38 @@
+Techniques to Consider 
+Business Rules Analysis This technique can be used to trace business rules to the requirements 
+that the business rules support. The technique also works in a different direction, tracing 
+business rules that support requirements. 
+Functional Decomposition Break down solution scope into smaller components for 
+requirements allocation. Requirements allocation assigns requirements to be implemented by 
+a specific solution component or components. Functional decomposition is also used to trace 
+high-level components to lower-level components.  
+
+Process Modelling Process models visually show the future state process. These models allow 
+the business analyst to trace requirements to that future state process.  
+Scope Modelling Scope models visually depict the scope and allow the business analyst to 
+trace requirements to the area of the scope that the requirement supports. 
+Business analysts select which techniques they will apply as part of tracing requirements. There 
+is no need to use all of these techniques, so choose wisely. Let’s take a look at the outputs result 
+from applying your selected techniques to this task. 
+
+Produce the Traced Requirements  
+
+Traced requirements have clearly defined relationships to the other requirements and designs 
+within the solution scope. Traceable requirements are used by the business analyst to identify 
+the effects on other requirements of a requirements change or of a planned implementation. 
+Once the relevant stakeholders approve the requirements or designs, they are used as inputs to 
+another task in the Requirements Life Cycle Management knowledge area, defining the design 
+options. Table 4.3 summarizes these outputs. 
+ 
+Business analysts have the primary responsibility for creating and managing requirements 
+traceability for their projects, particularly during requirements development activities. The 
+project managers are also part of this effort, as they use traceable requirements to support the 
+project-level change management activities. Several business analysis stakeholders also have 
+a need for traceable requirements, including the following:
+ 
+ Customers  
+ Domain subject matter experts (SMEs) 
+ End users  
+ Implementation SMEs Operational support  
+ Sponsor Suppliers  
+ Testers 

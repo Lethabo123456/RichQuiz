@@ -1,0 +1,19 @@
+is a simple graph such that if u and v are two vertices in T, there is a unique path from u to 
+v. A tree in which a particular vertex is designated as a root is called a rooted tree. If a weight is assigned 
+to the edges in T, T is called a weighted tree. If T is a weighted tree, the weight of T, denoted by W(T), is 
+the sum of the weights of all the edges in T.  
+  
+A tree T is called a spanning tree of graph G if T is a subgraph of G such that V(T) = V(G), that is, all the 
+vertices of G are in T.  
+  
+Suppose G denotes the graph of Figure 10-14. Then the graphs of Figure 10-15 show three spanning trees 
+of G. Let us note the following theorem.  
+  
+Theorem 10-1: A graph G has a spanning tree if and only if G is connected.  
+  
+From this theorem, it follows that to determine a spanning tree of a graph, the graph must be connected.  
+  
+Definition: Let G be a weighted graph. A minimum (minimal) spanning tree of G is a spanning tree with 
+the minimum weight.  
+  
+There are two well-k

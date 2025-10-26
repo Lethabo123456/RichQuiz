@@ -1,0 +1,23 @@
+Definition 61  
+The simple graphs G1 = (V1,E1) and G2 = (V2,E2) are isomorphic if there exists 
+a one-to-one and onto function f from V1 to V2 with the property that a and 
+b are adjacent in G1 if and only if f (a) and f (b) are adjacent in G2, for all a 
+and b in V1. Such a function f is called an isomorphism. Two simple graphs 
+that are not isomorphic are called nonisomorphic. 
+ 
+In other words, when two simple graphs are isomorphic, there is a one-to-
+one correspondence between vertices of the two graphs that preserves the 
+adjacency relationship. Isomorphism of simple graphs is an equivalence 
+relation. 
+
+Worked Example 
+Show that the graphs G = (V ,E) and H = (W, F), displayed below, are 
+isomorphic. 
+ 
+Solution: 
+The function f with f (u1) = v1, f (u2) = v4, f (u3) = v3, and f (u4) = v2 is a one-
+to-one correspondence between V and W. To see that this 
+correspondence preserves adjacency, note that adjacent vertices in G 
+are u1 and u2, u1 and u3, u2 and u4, and u3 and u4, and each of the pairs f 
+(u1) = v1 and f (u2) = v4, f (u1) = v1 and f (u3) = v3, f (u2) = v4 and f (u4) = v2, 
+and f (u3) = v3 and f (u4) = v2 consists of two adjacent vertices in H. 

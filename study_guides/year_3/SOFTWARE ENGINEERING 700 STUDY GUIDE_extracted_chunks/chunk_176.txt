@@ -1,0 +1,35 @@
+5.2.3 Design Models  
+ 
+Design or system models show the objects or object classes in a system. They also show the 
+associations and relationships between these entities. These models are the bridge between the 
+system requirements and the implementation of a system. They have to be abstract so that 
+unnecessary detail doesn’t hide the relationships between them and the system requirements.  
+ 
+However, they also have to include enough detail for programmers to make implementation 
+decisions. The level of detail that you need in a design model depends on the design process used. 
+Where there are close links between requirements engineers, designers and programmers, then 
+abstract models may be all that are required. Specific design decisions may be made as the system 
+is implemented, with problems resolved through informal discussions. Similarly, if agile 
+development is used, outline design models on a whiteboard may be all that is required. 
+ 
+However, if a plan-based development process is used, you may need more detailed models. 
+When the links between requirements engineers, designers, and programmers are indirect (e.g., 
+where a system is being designed in one part of an organization but implemented elsewhere), 
+then precise design descriptions are needed for communication. Detailed models, derived from 
+the high-level abstract models, are used so that all team members have a common understanding 
+of the design. An important step in the design process, therefore, is to decide on the design 
+models that you need and the level of detail required in these models. This depends on the type 
+of system that is being developed. A sequential data-processing system is quite different from an 
+embedded real-time system, so you need to use different types of design models. 
+
+When you use the UML to develop a design, you should develop two kinds of design model: 
+ 
+• Structural models, which describe the static structure of the system using object classes 
+and their relationships. Important relationships that may be documented at this stage are 
+generalization (inheritance) relationships, uses/used-by relationships, and composition 
+relationships. 
+• Dynamic models, which describe the dynamic structure of the system and show the 
+expected runtime interactions between the system objects. Interactions that may be 
+documented include the sequence of service requests made by objects and the state 
+changes triggered by these object interactions. 
+ 

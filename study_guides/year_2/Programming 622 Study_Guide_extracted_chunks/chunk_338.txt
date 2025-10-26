@@ -1,0 +1,13 @@
+e entire grid with numbers 1 to 9 such that each number appears exactly once in 
+each row, each column, and each 3 x 3 smaller grid. For example, the solution to the sudoku problem in 
+Figure 4-17(a) is shown in Figure 4-17(c).  
+  
+Next, we describe, a simple recursive backtracking algorithm to find the solution to the sudoku problem 
+in Figure 4-17(a).  
+  
+Starting at the first row, we find the first empty grid slot. For example, in Figure 4-17(a), the first empty 
+grid slot is in the second row and second column. Next we find the first number, between 1 and 9, that 
+can be placed in this slot. (Note that before placing a number in an empty slot, we must check that the 
+number does not appear in the row, column, and the 3 x 3 grid containing the slot.) For example, in Figure 
+4-17(a), the first number that can be placed in the second row and second column is 5; see Figure 4-17(b). 
+After placing a number in the first empty slot, we find the next empty slot and try to place a number

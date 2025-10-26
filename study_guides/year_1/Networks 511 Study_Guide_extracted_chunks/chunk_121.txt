@@ -1,0 +1,26 @@
+1 is the internet gateway on the network this traceroute was done from (an ADSL modem in this 
+case) 
+2 is the ISP the origin computer is connected to (xtra.co.nz) 
+3 is also in the xtra network 
+4 timed out 
+5 - 9 are all routers on the global-gateway.net.nz network (the domain that is the internet gateway 
+out of New Zealand) 
+10 - 14 are all gnaps.net in the USA (a telecom supplier in the USA) 
+15 - 17 are on the nac network (Net Access Corporation, an ISP in the New York area) 
+18 is a router on the network mediacollege.com is hosted on 
+and finally, line  
+19 is the computer mediacollege.com is hosted on (sol.yourhost.co.nz) 
+Each of the 3 columns are a response from that router, and how long it took (each hop is tested 3 
+times). For example, in line 2, the first try took 240ms (240 milliseconds), the second took 421 ms,
+and the third to took 70ms. 
+
+You will notice that line 4 'timed out', that is, there was no response from the router, so another one 
+was tried (202.50.245.197) which was successful. 
+You will also notice that the time it took quadrupled while passing through the global-gateway 
+network. 
+This is extremely useful when trying to find out why a website is unreachable, as you will be able to 
+see where the connection fails. If you have a website hosted somewhere, it would be a good idea to 
+do a traceroute to it when it is working, so that when it fails, you can do another traceroute to it 
+(which will probably time out if the website is unreachable) and compare them. Be aware though, 
+that it will probably take a different route each time, but the networks it passes through will 
+generally be very similar.  

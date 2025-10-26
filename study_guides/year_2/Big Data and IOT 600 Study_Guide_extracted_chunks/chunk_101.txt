@@ -1,0 +1,31 @@
+Data governance 
+
+Establish and enforce policies within your organization for how employees access and use the 
+data in your systems. Designated individuals in your IT department, in collaboration with your 
+privacy officers and the owners of each data source, will grant and revoke access to restricted 
+data tables using named or role-based authorization policies and will enforce these policies 
+with security protocols, often keeping usage logs to verify legitimate data usage. If you are in 
+a regulated industry, you will be subject to more stringent requirements, where data 
+scientists working with production systems may need to navigate a half dozen layers of 
+security to get to the source data. In this case, you’ll want to choose an enterprise big data 
+product with features developed for high standards of security and compliance. 
+Adding a big data repository to your IT stack may make it more difficult to control access to, 
+usage of and eventual removal of personal information. In traditional data stores, data is kept 
+in a structured format and each data point can be assessed for sensitivity and assigned 
+appropriate access rights. Within big data repositories, data is often kept in unstructured 
+format (‘schema on read’ rather than ‘schema on write’), so it is not immediately evident 
+what sensitive data is present. 
+You may need to comply with right to be forgotten or right to erasure laws, particularly within 
+Europe, in which case you must delete certain personal data on request. With big data stores, 
+particularly the prevalent ‘data lakes’ of yet-to-be-processed data, it’s harder to know where 
+personal data is stored in your systems. 
+GDPR will limit your use of data from European customers, requiring express consent for 
+many business applications. This will limit the efforts of your data scientists, and you’ll also 
+be accountable under ‘right to explanation’ laws for algorithms that impact customers, such 
+as calculations of insurance risk or credit score. You will likely need to introduce new access 
+controls and audit trails for data scientists to ensure compliance with GDPR. 
+
+A full discussion of GDPR is beyond the scope of this book, and we’ve barely touched on the 
+myriad other regulations in Europe and around the world. Also (quick disclaimer) I’m not a 
+lawyer. Connect with privacy experts knowledgeable in the laws of the jurisdictions in which 
+you operate. 

@@ -1,0 +1,27 @@
+lows:  
+  
+$myString = “Here’s a little string”; 
+// Displays “Here-s+a+little+string”  
+echo strtr( $myString, “ ‘”, “+-” ) . “ < br/ > ”;  
+  
+strtr() is especially useful if you need to translate a string from one character set to another, 
+because you can easily map hundreds of characters to their equivalents in the new character set just 
+by passing a couple of strings.  
+  
+4.11 Dealing With Upper And Lowercase  
+Most Western character sets have a concept of upper- and lowercase letters. PHP lets you convert 
+strings between upper - and lowercase in a variety of ways  
+  
+To convert a string to all lowercase, use strtolower() . This function takes a string to convert, and 
+returns a converted copy of the string:  
+  
+  
+  
+  
+$myString = “Hello, world!”; echo strtolower( 
+$myString ); // Displays ‘hello, world!’  
+  
+Similarly, you can use strtoupper() to convert a string to all uppercase:  
+  
+$myString = “Hello, world!”; echo strtoupper( $myString ); 
+// Displays ‘HELLO, WORLD!

@@ -1,0 +1,72 @@
+/Line 10  
+
+286  
+  
+{            //Line 11 list.insert(num);         //Line 12 cin >> num;          //Line 13  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 14  
+  
+cout << "Line 15: The list before sorting:" << endl;      //Line 15 list.print();           //Line 16 
+cout << endl;           //Line 17  
+  
+ 
+list.selectionSort();     
+  
+  
+  
+  
+  
+  
+  
+//Line 18  
+  
+cout << "Line 19: The list after sorting:" << endl;      //Line 19 list.print();           //Line 20 cout 
+<< endl;           //Line 21  
+  
+ 
+return 0;   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 22  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 23  
+  
+Sample Run: In this sample run, the user input is shaded.  
+Line 8: Enter numbers ending with -999 
+34 67 23 12 78 56 36 79 5 32 66 -999 
+Line 15: The list before sorting: 34 67 
+23 12 78 56 36 79 5 32 66 Line 19: The 
+list after sorting:  
+5 12 23 32 34 36 56 66 67 78 79  
+  
+For the most part, the preceding output is self-explanatory. Notice that the statement in Line 12 ca

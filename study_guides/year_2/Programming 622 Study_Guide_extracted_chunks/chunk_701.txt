@@ -1,0 +1,29 @@
+adjust p  
+p->llink = current->llink; else 
+trailCurrent->rlink = current->llink; delete 
+current;  
+}//end else  
+}//end deleteFromTree  
+  
+Next, we describe the function deleteNode. The function deleteNode first searches the binary search tree 
+to find the node containing the item to be deleted. The item to be deleted, deleteItem, is passed as a 
+parameter to the function. If the node containing deleteItem is found in the binary search tree, the 
+function deleteNode calls the function deleteFromTree to delete the node. The definition of the function 
+deleteNode is given next.  
+  
+template <class elemType>  
+void bSearchTreeType<elemType>::deleteNode(const elemType& deleteItem)  
+{  
+binaryTreeNode<elemType> *current; //pointer to traverse the tree 
+binaryTreeNode<elemType> *trailCurrent; //pointer behind current 
+bool found = false;  
+  
+
+345  
+  
+if (root == NULL) cout << "Cannot delete from the empty 
+tree." << endl; else  
+{ current = root;  
+trailCurrent = root;  
+  
+while (cu

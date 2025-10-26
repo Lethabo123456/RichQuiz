@@ -1,0 +1,24 @@
+e syntax is the same as that of the UNION query, where the UNION is replaced 
+by the UNION ALL clause. 
+INTERSECT 
+the INTERSECT statement can be used to combine rows from two queries, returning only the 
+rows that appear in both sets. The syntax for the INTERSECT statement is:  
+query INTERSECT query 
+The INTERSECT statement can be used to generate additional useful customer information. For 
+example, the following query returns the customer codes for all customers who are in area code 
+615 and who have made purchases. (If a customer has made a purchase, there must be an invoice 
+record for that customer.)  
+SELECT  CUS_CODE  
+FROM  
+CUSTOMER  
+WHERE  
+CUS_AREACODE = ‘615’ 
+INTERSECT  
+SELECT  DISTINCT CUS_CODE  
+FROM  
+INVOICE; 
+EXCEPT (MINUS) 
+The EXCEPT statement in SQL combines rows from two queries and returns only the rows that 
+appear in the first set but not in the second. The syntax for the EXCEPT statement in MS SQL 
+Server and the MINUS statement in Oracle is:  
+query EXCEP

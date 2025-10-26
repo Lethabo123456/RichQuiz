@@ -1,0 +1,16 @@
+43 and further cement your grasp on the subject matter presented in this chapter. Pay particular 
+attention to more built-in PHP functions that showcase hw arrays are harnessed to programming 
+solutions in PHP.  
+  
+
+66  
+5.9 Working With Multi-Dimensional Arrays  
+So far, all the arrays you’ve worked with in this chapter have contained simple values, such as 
+strings and integers. However, arrays can get a lot more powerful than this. As mentioned earlier in 
+this unit, PHP arrays can store values of any type. This includes resources, objects, and, more 
+importantly, other arrays. This ability of arrays to store other arrays in their elements allows you to 
+create multidimensional arrays (also known as nested arrays because they comprise one or more 
+arrays nested inside another). An array that contains other arrays is a two-dimensional array. If 
+those arrays also contain arrays, then the top-level array is a thre-dimensional array, and so on.  
+  
+The following script creates a simp

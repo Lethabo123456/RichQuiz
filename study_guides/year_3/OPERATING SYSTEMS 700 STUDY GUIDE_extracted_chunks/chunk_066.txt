@@ -1,0 +1,39 @@
+Table 2.4: Page Map Table for Job 1 in Figure 3.1. 
+ 
+Let us say we are looking for an instruction with a displacement of 76 on Page 2, assuming a 
+pagesize and page frame size of 100. To find its exact location in memory, the operating 
+system (or thehardware) conceptually must perform the following four steps. 
+
+STEP 1 Do the arithmetic computation just described to determine the page number and 
+displacement of the requested byte: 276/100 5 2 with a remainder of 76. 
+
+• The page number equals the integer resulting from the division of the job space 
+address by thepage size: 2 
+• Displacement equals the remainder from the page number division: 76. 
+ 
+STEP 2 Refer to this job’s PMT (shown in Table 3.2) and find out which page frame contains 
+Page 2.PAGE 2 is in PAGE FRAME 5. 
+
+STEP 3 Get the address of the beginning of the page frame by multiplying the page frame 
+number (5)by the page frame size (100). 
+ 
+ 
+ADDRESS_PAGE-FRAME = NUMBER_PAGE-FRAME * SIZE_PAGE-FRAME ADDRESS_PAGE-FRAME 
+= 5 *100 = 500 
+ 
+STEP 4 Now add the displacement (calculated in Step 1) to the starting address of the page 
+frame tocompute the precise location of the instruction in the memory: 
+
+INSTR_ADDRESS_IN_MEMORY = ADDRESS_PAGE-FRAME + DISPLACEMENT 
+INSTR_ADDRESS_IN_MEMORY = 500 + 76 = 576 
+
+The result of these calculations tells us exactly where (location 576) the requested byte (Byte 
+276) isin main memory. 
+ 
+Demand Paging Memory Allocation 
+Demand paging introduces the concept of loading only a part of the program into memory 
+for processing. It was the first widely used scheme that removed the restriction of having to 
+have the entire job in memory from the beginning to the end of its processing. With demand 
+paging, jobs are still divided into equally sized pages, which initially reside in secondary 
+storage. When the job beginsto run, its pages are brought into memory only as they are 
+needed, and if they are never needed, they are never loaded.

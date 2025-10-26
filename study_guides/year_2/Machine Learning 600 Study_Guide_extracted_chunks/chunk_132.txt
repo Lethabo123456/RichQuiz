@@ -1,0 +1,13 @@
+n the third and first quartile). In this way, 
+the distance between values in the scaled feature is reduced, and the relevance of 
+outliers is reduced as their values are shifted closer to the median value. In doing so, 
+though, the distribution of values in the feature is altered, and the range of values for 
+the feature is larger than what you can obtain with the MinMax scaler. It is worth 
+noting that some algorithms prefer flattened outliers and others suffer with large 
+ranges. For example, regression algorithms work better with smaller ranges.  
+Standardization 
+Standardization is another algorithm that is sometimes classified as a scaler. The 
+standardization process aims at building a feature where the mean is equal to 0 and variance 
+is equal to 1. Again, the reason for standardization is making the operation of some algorithms 
+easier. For each value in the feature, the standard scaler works by subtracting the mean of 
+the feature and dividing the resulting value by the stand

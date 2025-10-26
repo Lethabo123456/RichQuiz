@@ -1,0 +1,36 @@
+3.6.5 Honeypot 
+Honeypots are systems strategically conﬁgured to be attractive to hackers and to lure them into 
+spending enough time attacking them while information is gathered about the attack. Their 
+ultimate purpose is to divert attention from valuable resources and to gather as much information 
+about an attack as possible. A tarpit is a type of honeypot designed to provide a very slow 
+connection to the hacker so that the attack takes enough time to be properly analyzed. 
+
+3.7 Authentication Methods 
+In today’s interconnected world, protecting digital resources begins with ensuring that only 
+authorized users gain access, known as authentication. The subsections follow and explore the 
+various authentication techniques.
+
+3.7.1 Multifactor 
+Multifactor authentication is designed to enhance security in the authentication process by 
+verifying multiple characteristics of a user before granting access to a resource. Moreover, they 
+can be identiﬁed through a password, biometrics, a smart card, location, and behavioral patterns. 
+Two-factor authentication is when two of the above factors are being tested, while multifactor 
+authentication is when more than two of the above factors are being tested. 
+3.7.2 Authentication, Authorization, and Accounting (AAA) 
+Modern network security relies on more than just strong passwords; it requires a structured 
+approach to managing who can access resources, what they’re allowed to do, and how their 
+activities are tracked. The AAA are conceptual models commonly implemented in RADIUS and 
+TACACS+. 
+
+RADIUS is an authentication and accounting service that’s used for verifying users over various 
+types of links, including dial-up. Many ISPs use a RADIUS server to store the usernames and 
+passwords of their clients in a central spot through which connections are conﬁgured to pass 
+authentication requests. RADIUS servers are client-server-based authentication and encryption 
+services that maintain user proﬁles in a central database. 
+More so, the Terminal Access Controller Access-Control System Plus (TACACS+) protocol is also an 
+AAA method. Like RADIUS, it is capable of performing authentication on behalf of multiple 
+wireless APs, RAS servers, or even LAN switches that are 802.1X-capable. 
+RADIUS combines user authentication and authorization into one proﬁle; however, TACACS+ 
+separates the two. TACACS+ utilizes connection-based TCP, but RADIUS uses UDP instead. 
+ 
+Figure 3.9: Tacacs+

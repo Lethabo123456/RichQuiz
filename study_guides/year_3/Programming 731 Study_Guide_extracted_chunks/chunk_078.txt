@@ -1,0 +1,26 @@
+CHAPTER TWO: OPERATORS AND CONTROL STATEMENTS   
+
+Java provides a rich operator environment. Most of its operators can be divided into the following 
+four groups: arithmetic, bitwise, relational, and logical. Java also defines some additional operators 
+that handle certain special situations.   
+  
+2.1 Arithmetic Operators   
+Arithmetic operators are used in mathematical expressions in the same way that they are used 
+in algebra. The following table lists the arithmetic operators:    
+  
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+% (Modulus)
+++ (Increment)
+-- (Decrement)
+
+2.2 The Basic Arithmetic Operators   
+   
+The basic arithmetic operations—addition, subtraction, multiplication, and division all behave as 
+you would expect for all numeric types. The minus operator also has a unary form which negates its 
+single operand. Remember that when the division operator is applied to an integer type, there will 
+be no fractional component attached to the result. The following simple example program 
+demonstrates the arithmetic operators. It also illustrates the difference between floating-point 
+division and integer division.

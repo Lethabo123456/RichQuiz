@@ -1,0 +1,22 @@
+he previous memory 
+space at location 1500 is now inaccessible. In addition, the memory space 1500 
+remains as marked allocated. In other words, it cannot be freed or reallocated. This is 
+
+163 | P a g e  
+ 
+called memory leak. That is, there is an unused memory space that cannot be 
+allocated. 
+ 
+Imagine what would happen if you executed statements, such as Line 3, a few 
+thousand or a few million times. There would be a good amount of memory leak. 
+The program might then run out of memory spaces for data manipulation, which would 
+result in an abnormal termination of the program. The question at hand is how to avoid 
+memory leak. When a dynamic variable is no longer needed, it can be destroyed; that 
+is, its memory can be deallocated. The C++ operator delete is used to destroy dynamic 
+variables. The syntax to use the operator delete has two forms: 
+ 
+Thus, given the declarations of the previous section, the statements  
+delete p;  
+delete [] name;  
+delete str; 
+deallocate the memor

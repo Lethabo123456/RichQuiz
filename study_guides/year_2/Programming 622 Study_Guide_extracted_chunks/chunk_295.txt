@@ -1,0 +1,17 @@
+ent with list[a]. That is, the largest element in list[a]...list[b] 
+is given by:  
+  
+maximum(list[a], largest(list[a + 1]...list[b]))  
+  
+Let us apply this formula to find the largest element in the list shown in Figure 4-2. This list has six 
+elements, given by list[0]...list[5]. Now the largest element in list is given by:  
+ maximum(list[0], largest(list[1]...list[5]))  
+  
+That is, the largest element in list is the maximum of list[0] and the largest element in list[1]...list[5]. To 
+find the largest element in list[1]...list[5], we use the same formula again because the length of this list is 
+greater than 1. The largest element in list[1]...list[5] is then:  
+ maximum(list[1], largest(list[2]...list[5]))  
+  
+and so on. We see that every time we use the previous formula to find the largest element in a sublist, 
+the length of the sublist in the next call is reduced by one. Eventually, the sublist is of length 1, in which 
+case the sublist contains only one element, which is th

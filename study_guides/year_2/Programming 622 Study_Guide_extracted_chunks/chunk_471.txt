@@ -1,0 +1,13 @@
+shier is a server. We will call the object receiving the service the customer, and the service 
+time — the time it takes to serve a customer—the transaction time.  
+  
+Because a queuing system consists of servers and a queue of waiting objects, we will model a system that 
+consists of a list of servers and a waiting queue holding the customers to be served. The customer at the 
+front of the queue waits for the next available server. When a server becomes free, the customer at the 
+front of the queue moves to the free server to be served.  
+  
+When the first customer arrives, all servers are free and the customer moves to the first server. When the 
+next customer arrives, if a server is available, the customer immediately moves to the available server; 
+otherwise, the customer waits in the queue. To model a queuing system, we need to know the number 
+of servers, the expected arrival time of a customer, the time between the arrivals of customers, and the 
+number of events affecting the s

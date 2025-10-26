@@ -1,0 +1,21 @@
+2.7.2 Protocol analyser  
+Sometimes called Network Monitors or Sniffers used to capture packets as they cross the network.  
+There are commercial Sniffers like Wireshark and OmniPeek that can capture any packet because of 
+its NIC configuration that can capture any packet that it sees.  
+Protocol Analysers are used to determine the type of traffic in a network and depending on the 
+product and the bells and whistles contained therein, through using the port numbers, protocols etc.  
+DHCP has its packets as follows; 
+ DHCP Discover 
+ DHCP Offer 
+ DHCP Request 
+ DHCP ACK 
+ 
+Through executing ipconfig/release and ipconfig/renew commands when the analyser is on the 
+client four packets below will be seen in the analyser’s capture file. See the example of a DHCP 
+process in the below capture;
+
+Figure 36: DHCP Capture 
+Examining clearly the capture were the DHCP DISCOVER packets with no DHCPOFFER packets, it 
+shows the DHCP server is not receiving the DHCPDISCOVER packets On the DHCPOFFER packets 
+shows the DHCP server is out of addresses. The point will be the tool is used to troubleshoot the 
+issue.  

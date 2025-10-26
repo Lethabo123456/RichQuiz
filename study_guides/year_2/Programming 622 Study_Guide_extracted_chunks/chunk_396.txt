@@ -1,0 +1,24 @@
+r and early computer scientist Charles L. Hamblin proposed a scheme 
+in which the operators follow the operands (postfix operators), resulting in the Reverse Polish notation. 
+This has the advantage that the operators appear in the order required for computation.  
+  
+For example, the expression:  
+ a + b * c  
+
+200  
+  
+  
+in a postfix expression is:  
+ a b c * +  
+  
+The following example shows various infix expressions and their equivalent postfix expressions.  
+  
+EXAMPLE 5-4  
+  
+Shortly after Lukasiewicz’s discovery, it was realized that postfix notation had important applications in 
+computer science. In fact, many compilers use stacks to first translate infix expressions into some form of 
+postfix notation and then translate this postfix expression into machine code. Postfix expressions can be 
+evaluated using the following algorithm:  
+  
+Scan the expression from left to right. When an operator is found, back up to get the required number of 
+operands, perform the operation, a

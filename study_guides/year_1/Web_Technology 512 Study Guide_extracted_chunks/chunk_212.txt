@@ -1,0 +1,40 @@
+ock is executed. The optional finally 
+block executes unconditionally after try/catch. 
+ 
+Examples: 
+Here is one example where we are trying to 
+call a non-existing function this is causing an 
+exception raise. Let us see how it behaves 
+without with try...catch: 
+ 
+THINK POINT 
+ 
+What are the benefits of using 
+the try and catch  block when 
+using javascript? 
+
+ 
+138 
+ 
+NINE | JAVASCRIPT ERROR AND EXCEPTION HANDLING 
+ 
+Figure 9.1 – Exception 
+ 
+Now let us try to catch this exception using try...catch and display a user friendly 
+message. You can also suppress this message, if you want to hide this error from a 
+user. 
+ 
+Figure 9.2 –Try…Catch Block to handle Exception 
+ 
+You can use finally block which will always execute unconditionally after try/catch.  
+Here is an example: 
+
+ 
+139 
+ 
+NINE | JAVASCRIPT ERROR AND EXCEPTION HANDLING 
+ 
+Figure 9.3 –Try…Catch…Finally Block to handle Exception 
+ 
+9.2.2 The Throw Statement 
+You can use throw statement to raise your built-in exceptions or y

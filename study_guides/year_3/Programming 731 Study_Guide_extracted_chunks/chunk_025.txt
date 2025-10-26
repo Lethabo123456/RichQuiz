@@ -1,0 +1,15 @@
+Translating a Java program into bytecode helps makes it much easier to run a program in a wide 
+variety of environments. The reason is straightforward: only the JVM needs to be implemented for 
+each platform. Once the run-time package exists for a given system, any Java program can run on it. 
+Remember, although the details of the JVM will differ from platform to platform, all interpret the 
+same Java bytecode. If a Java program were compiled to native code, then different versions of the 
+same program would have to exist for each type of CPU connected to the Internet. This is, of course, 
+not a feasible solution. Thus, the interpretation of bytecode is the easiest way to create truly 
+portable programs. The fact that a Java program is interpreted also helps to make it secure. Because 
+the execution of every Java program is under the control of the JVM, the JVM can contain the 
+program and prevent it from generating side effects outside of the system.  
+ 
+As you will see, safety is also enhanced by certain restrictions that exist in the Java language. When 
+a program is interpreted, it generally runs substantially slower than it would run if compiled to 
+executable code. However, with Java, the differential between the two is not so great. The use of 
+bytecode enables the Java run-time system to execute programs much faster than you might expect. 

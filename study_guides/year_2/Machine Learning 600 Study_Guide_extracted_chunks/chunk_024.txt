@@ -1,0 +1,19 @@
+ocess data, classify and predict - 
+www.cs.waikato.ac.nz/ml/weka/downloading.html 
+KafKa 
+Use for streaming data 
+Spark & Hadoop 
+Use for processing Big Data - https://spark.apache.org. 
+DeepLearning4J 
+It can scale with Big Data - https://deeplearning4j.org. 
+ 
+ 
+1.5 Data Repositories 
+Where can one get data? There are  different answers to this question. Nevertheless, the 
+correct answer will be based on the learning experience of the ML algorithm. Generally, data 
+comes in all sizes and formats. More often the dataset is in a comma-separated variable (CSV) 
+format, or XML and JSON format. One must have a question in mind that he/ she is attempting 
+to answer using a specific dataset (this is a good start). For example, one would like to predict 
+a student performance based on the module he/ she registered for.  
+The dataset of previous students with their modules and marks should be provided and the 
+ML algorithms will be trained on this dataset to predict current student’s performa

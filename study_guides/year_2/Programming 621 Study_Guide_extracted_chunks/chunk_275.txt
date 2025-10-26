@@ -1,0 +1,33 @@
+xceptions are thrown by these functions, we do not include any 
+throw statement in the try block. 
+ 
+ 
+ 
+ 
+ 
+
+267 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In this program, the statement in Line 13 uses the function substr to determine 
+a substring in the string object sentence. The length of the string sentence is 26. 
+Because the starting position of the substring is 8, which is less than 26, no 
+exception is thrown. However, in the statement in Line 15, the starting position 
+of the substring is 28, which is greater than 26 (the length of sentence). 
+Therefore, the function substr throws an out_of_range exception, which is 
+caught and processed by the catch block in Line 20. Notice that in the statement 
+in Line 22, the object re uses the function what to return the error message, 
+invalid string position. 
+
+268 | P a g e  
+ 
+ 
+ 
+1. An exception is an occurrence of an undesirable situation that can be 
+detected during program execution. 
+2. The try/catch block is used to handle exceptions within a

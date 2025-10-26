@@ -1,0 +1,30 @@
+The STRIDE Threat Model 
+
+STRIDE is a threat classification system developed by Microsoft that is a useful way of categorizing 
+attacks that arise from deliberate actions [HERN06]. It involves the following categories: 
+ Spoofing identity: An example of identity spoofing is illegally accessing and then using another 
+user’s authentication information, such as username and password. Security controls to 
+counter such threats are in the area of authentication. 
+ Tampering with data: Data tampering involves the malicious modification of data. Examples 
+include unauthorized changes made to persistent data, such as that held in a database, and 
+alteration of data as it flows between two computers over an open network, such as the 
+Internet. Relevant security controls are in the area of integrity. 
+ Repudiation: Repudiation threats are associated with users who deny performing an action 
+without other parties having any way to prove otherwise (for example, a user performing an 
+illegal operation in a system that lacks the ability to trace the prohibited operations). Relevant 
+security controls are in the area of non-repudiation, which refers to the ability of a system to 
+counter repudiation threats. For example, a user who purchases an item might have to sign 
+for the item upon receipt. The vendor can then use the signed receipt as evidence that the 
+user received the package. 
+ Information disclosure: Information disclosure threats involve the exposure of information to 
+individuals who are not supposed to have access to it (for example, the ability of users to read 
+a file that they were not granted access to or the ability of an intruder to read data in transit 
+between two computers). Relevant security controls are in the area of confidentiality. 
+ Denial of service: Denial-of-service (DoS) attacks deny service to valid users—for example, by 
+making a web server temporarily unavailable or unusable. Relevant security controls are in 
+the area of availability. 
+ Elevation of privilege: In this type of threat, an unprivileged user gains privileged access and 
+thereby has sufficient access to compromise or destroy the entire system. Elevation of 
+privilege threats include situations in which an attacker has effectively penetrated all system 
+defenses and become part of the trusted system itself—a dangerous situation indeed. 
+Relevant security controls are in the area of authorization. 

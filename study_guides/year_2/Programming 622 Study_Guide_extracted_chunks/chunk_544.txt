@@ -1,0 +1,26 @@
+j++) sum = sum + 
+static_cast<int>(insertKey[j]);  
+return (sum % HTSize);  
+ 
+}   
+  
+  
+  
+// end hashFunction  
+  
+ 
+7.3.2  Collision Resolution  
+  
+As noted previously, the hash function that we choose not only should be easy to compute, but it is most 
+desirable that the number of collisions is minimized. However, in reality, collisions are unavoidable 
+because usually a hash function always maps a larger domain onto a smaller range. Thus, in hashing, we 
+must include algorithms to handle collisions. Collision resolution techniques are classified into two 
+categories: open addressing (also called closed hashing), and chaining (also called open hashing). In open 
+addressing, the data is stored within the hash table. In chaining, the data is organized in linked lists and 
+the hash table is an array of pointers to the linked lists. First we discuss collision resolution by open 
+addressing.  
+  
+ 
+7.3.3  Open Addressing  
+  
+As described previously, in open addressing, the data is s

@@ -1,0 +1,11 @@
+ch algorithms: sequential and binary. In a binary 
+search, the data must be sorted; in a sequential search, the data does not need to be in any particular 
+order. We also analyzed both these algorithms and showed that a sequential search is of order n, and a 
+binary search is of order log2n, where n is the length of the list. The obvious question is: Can we construct 
+a search algorithm that is of order less than log2n? Recall that both search algorithms, sequential and 
+binary, are comparisonbased algorithms. We obtained a lower bound on comparisonbased search 
+algorithms, which shows that comparison-based search algorithms are at least of order log2n. Therefore, 
+if we want to construct a search algorithm that is of order less than log2n, it cannot be comparison based. 
+This section describes an algorithm that, on average, is of order 1.  
+The previous section showed that for comparison-based algorithms, a binary search achieves the lower 
+bound. However, a binary search requires the

@@ -1,0 +1,18 @@
+Fast Ethernet            Copper     Fiber 
+No Repeaters             100m       412m*
+One Class I Repeater     200m       272m 
+One Class II Repeater    200m       272m
+Two Class II Repeaters   205m       228m
+
+Figure 1- 6: characteristics of Fast Ethernet repeater Combination 
+
+
+* Full Duplex Mode 2 km 
+
+When conditions require greater distances or an increase in the number of nodes/repeaters, then 
+a bridge, router or switch can be used to connect multiple networks together. These devices join 
+two or more separate networks, allowing network design criteria to be restored. Switches allow 
+network designers to build large networks that function well. The reduction in costs of bridges and 
+switches reduces the impact of repeater rules on network design. 
+Each network connected via one of these devices is referred to as a separate collision domain in 
+the overall network. 

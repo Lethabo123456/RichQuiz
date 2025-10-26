@@ -1,0 +1,12 @@
+ipulation for you to provide 
+persistent variables that are accessible from different pages and across multiple visits to the site.  
+Sessions allow you to easily create multipage forms (such as shopping carts), save user 
+authentication information from page to page, and store persistent user preferences on a site.   
+   
+Each first-time visitor is issued a unique session ID. By default, the session ID is stored in a cookie 
+called PHPSESSID. If the user’s browser does not support cookies or has cookies turned off, the 
+session ID is propagated in URLs within the website. Every session has a data store associated with it. 
+You can register variables to be loaded from the data store when each page starts and saved back to 
+the data store when the page ends. Registered variables persist between pages, and changes to 
+variables made on one page are visible from others. For example, an “add this to your shopping cart” 
+link can take the user to a page that adds an item to a registered arr

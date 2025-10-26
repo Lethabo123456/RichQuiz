@@ -1,0 +1,37 @@
+4.5 IPsec 
+IPSec’s protocol objective is to provide security services for IP packets such as encrypting 
+sensitive data, authentication, and protection against replay and data confidentiality. 
+As outlined in our IPSec protocol article, Encapsulating Security Payload (ESP) and 
+Authentication. 
+Header (AH) are the two IPSec security protocols used to provide these security services. 
+Analysing the ESP and AH protocols is out of this article’s scope, however you can turn to our 
+IPSec article where you’ll find an in-depth analysis and packet diagrams to help make the 
+concept clear.
+
+UNDERSTANDING IPSEC MODES –TUNNEL MODE & TRANSPORT MODE 
+IPSec can be configured to operate in two different modes, Tunnel and Transport mode. Use 
+of each mode depends on the requirements and implementation of IPSec. 
+ 
+IPSEC MODE TUNNEL 
+IPSec tunnel mode is the default mode. With tunnel mode, the entire original IP packet is 
+protected by IPSec. This means IPSec wraps the original packet, encrypts it, adds a new IP 
+header and sends it to the other side of the VPN tunnel (IPSec peer). Tunnel mode is most 
+commonly used between gateways (Cisco routers or ASA firewalls), or at an end-station to a 
+gateway, the gateway acting as a proxy for the hosts behind it. 
+Tunnel mode is used to encrypt traffic between secure IPSec Gateways, for example two Cisco 
+routers connected over the Internet via IPSec VPN. Configuration and setup of this topology 
+is extensively covered in our Site-to-Site IPSec VPN article. 
+
+Figure 4.4 IPSec Tunnelling Mode  
+ 
+Another example of tunnel mode is an IPsec tunnel between a Cisco VPN Client and an IPSec 
+Gateway (e.g. ASA5510 or PIX Firewall). The client connects to the IPsec Gateway. Traffic from 
+the client is encrypted, encapsulated inside a new IP packet and sent to the other end. Once 
+decrypted by the firewall appliance, the client’s original IP packet is sent to the local network. 
+In tunnel mode, an IPsec header (AH or ESP header) is inserted between the IP header and 
+the upper layer protocol. Between AH and ESP, ESP is most commonly used in IPSec VPN 
+Tunnel configuration. 
+The packet diagram below illustrates IPsec Tunnel mode with ESP header: 
+ 
+ 
+Figure 4.5 IPSec Tunnel Mode with ESP header  

@@ -1,0 +1,41 @@
+ii. Firewalls 
+ 
+Network assaults can include compromised Web servers, email servers, circumvented 
+firewalls, and FTP sites accessed by unauthorized users. A firewall is hardware and/or software 
+designed to protect a system by disguising its IP address from outsiders who do not have 
+authorization to access it or ask for information about it. A firewall sits between the Internet 
+and the network and blocks curious inquiries and potentially dangerous intrusions from 
+outside the system. 
+ 
+The typical tasks of the firewall are to: 
+ 
+• log activities that access the Internet. 
+• maintain access control based on the senders’ or receivers’ IP addresses. 
+• maintain access control based on the services that are requested. 
+• hide the internal network from unauthorized users requesting network information. 
+• verify that virus protection is installed and being enforced. 
+• perform authentication based on the source of a request from the Internet.
+
+iii. Authentication Protocols 
+ 
+Network authentication software performs verification that the individual who is trying to access a 
+protected system is authorized to do so. One popular authentication tool was Kerberos, a network 
+authentication protocol developed as part of the Athena Project at Massachusetts Institute of 
+Technology (MIT) to answer the need for password encryption to improve network security. 
+Kerberos was designed to provide strong authentication for client/server applications and was 
+named after the three-headed dog of Greek mythology that guarded the gates of Hades. 
+
+iv. Encryption 
+ 
+The most extreme protection for sensitive data is encryption, putting it into a secret code. Total 
+network encryption, also called communications encryption, is the most extreme form, all 
+communications with the system are encrypted. The system then decrypts them for processing. To 
+communicate with another system, the data is encrypted, transmitted, decrypted, and processed. 
+How encryption works: 
+ 
+A good way to learn about cryptography is to first understand the role of a public key and a private 
+key. The private key is a pair of two prime numbers (usually with 75 or more digits each) chosen by 
+the person who wants to receive a private message. The two prime numbers are multiplied together, 
+forming a third number with 150 or more digits. The person who creates this private key is the only 
+one who knows which two prime numbers were used to create this number, which is known as 
+the public key. 

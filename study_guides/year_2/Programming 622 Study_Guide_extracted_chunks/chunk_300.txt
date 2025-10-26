@@ -1,0 +1,26 @@
+ot print the info of the second 
+node until we have printed the tail of the second node, and so on. Every time we consider the tail of a 
+
+151  
+  
+node, we reduce the size of the list by 1. Eventually, the size of the list is reduced to zero, in which case 
+the recursion stops.  
+  
+ 
+Base Case:   
+List is empty: no action  
+General Case:  List is nonempty  
+1. Print the tail  
+2. Print the element  
+  
+Let us write this algorithm. (Suppose that current is a pointer to a linked list.)  
+  
+if (current != NULL)  
+{ reversePrint(current->link); //print the tail cout << 
+current->info << endl; //print the node  
+}  
+  
+Here, we do not see the base case; it is hidden. The list is printed only if the pointer, current, to the list is 
+not NULL. Also, inside the if statement the recursive call is on the tail of the list. Because eventually the 
+tail of a list will be empty, the if statement in the next call fails and the recursion stops. Also, note that 
+statements (for example, printing the

@@ -1,0 +1,44 @@
+3.2 Further Explanation and Examples 
+A statement in sentential logic is built from simple statements using the logical 
+connectives ~ , ^ , -> , and <->. I'll construct tables which show how the 
+truth or falsity of a statement built with these connective depends on the truth 
+or falsity of its components.
+ 
+Here's the table for negation: 
+ 
+p   ~p
+-------
+T   F
+-------
+F   T
+-------
+ 
+This table is easy to understand. If P is true, its negation is false. If P is false, 
+then ~P is {\it true}. 
+ 
+p ^ q should be true when both P and Q are true, and false otherwise:
+
+p   q   p ^ q
+---------------
+T   T   T
+---------------
+T   F   F
+---------------
+F   T   F
+---------------
+F   F   F
+---------------
+
+p v q is true if either P is true or Q is true (or both). It's only false if both P and 
+Q are false.
+
+p   q   p v q
+--------------
+T   T   T
+--------------
+T   F   T
+--------------
+F   T   T
+--------------
+F   F   F
+--------------

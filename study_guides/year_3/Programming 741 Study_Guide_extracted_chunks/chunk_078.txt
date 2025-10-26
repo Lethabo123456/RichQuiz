@@ -1,0 +1,25 @@
+2.3 Declaring a method 
+The syntax for declaring a C# method is as follows: 
+Syntax: returnType methodName( parameterList ) 
+{ 
+// method body statements go here 
+} 
+The following is a description of the elements that make up a declaration: 
+The returnType is the name of a type and specifies the kind of information the method returns 
+as a result of its processing. This can be any type, such as int or string. If you’re writing a 
+method that does not return a value, you must use the keyword void in place of the return 
+type. 
+ 
+The methodName is the name used to call the method. Method names follow the same 
+identifier rules as variable names. For example, addValues is a valid method name, whereas 
+add$Values is not. For now, you should follow the camelCase convention for method names—
+for example, displayCustomer. 
+ 
+The parameterList is optional and describes the types and names of the information that you 
+can pass into a method for it to process. You write the parameters between opening and 
+closing parentheses, ( ), as though you’re declaring variables, with the name of the type 
+followed by the name of the parameter. If the method you’re writing has two or more 
+parameters, you must separate them with commas.  
+ 
+The method body statements are the lines of code that run when the method is called. They 
+are enclosed between opening and closing braces, { }.

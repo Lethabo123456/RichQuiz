@@ -1,0 +1,20 @@
+ces of words and are often used in natural language processing (NLP). 
+                     
+ 
+The previous line has 15 words, so it's a 15-gram. If this is split into more sensible two- or 
+three-word n-grams, it may be possible to predict the next word groupings based on the n-
+gram sequences. A two-gram sequence of the sentence would look something like this: 
+                        
+ 
+And so on. Interestingly, there are two 2-gram sequences of (you are) with two following 
+word patterns, the worthy and the word family. The three-word n-gram sequence would look 
+like this: 
+                   
+ 
+Having n-gram sequences of words can be used against algorithms such as Term 
+Frequency/Inverse Document Frequency. Each sequence in the n-gram can then be used as a 
+term. Sometimes this will give more meaningful scorings than single words; it also means that 
+we are scoring within the context of the corpus text. 
+ 
+6.5 TF/IDF 
+One useful technique is to find out how important a word or ph

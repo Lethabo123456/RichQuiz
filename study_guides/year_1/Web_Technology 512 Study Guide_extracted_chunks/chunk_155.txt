@@ -1,0 +1,35 @@
+to add properties and methods 
+to an object. 
+Table 6.8 – The Array Object Properties 
+ 
+6.2.4.2 Array Methods 
+Here is a list of each method and its description. 
+Method 
+Description 
+concat()  
+Returns a new array comprised of this array joined with other 
+array(s) and/or value(s). 
+every() 
+Returns true if every element in this array satisfies the provided 
+testing function. 
+
+ 
+98 
+ 
+SIX | JAVASCRIPT OBJECTS 
+filter() 
+Creates a new array with all of the elements of this array for 
+which the provided filtering function returns true. 
+forEach()  
+Calls a function for each element in the array. 
+indexOf() 
+Returns the first (least) index of an element within the array 
+equal to the specified value, or -1 if none is found. 
+join() 
+Joins all elements of an array into a string. 
+lastIndexOf()  
+Returns the last (greatest) index of an element within the array 
+equal to the specified value, or -1 if none is found. 
+map() 
+Creates a new array with the results of calling a provided 
+functi

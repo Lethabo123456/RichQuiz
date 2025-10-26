@@ -1,0 +1,16 @@
+If a user reports no network access: 
+ 
+• Verify wireless NIC functionality and antenna. 
+• Test loopback (ping 127.0.0.1) to rule out NIC failure. 
+• Check if the client associated with the access point. 
+• If all checks pass, explore IP and DHCP settings. 
+ 
+In one example, a user was unknowingly connected to a rogue DHCP server, which led to an 
+invalid IP conﬁguration. Updating the client’s DHCP settings restored access. 
+
+Narrowing the Possibilities 
+ 
+Formulating a theory means selecting the most probable cause from several. The more data 
+you collect—from error messages, connectivity tests, and user interviews—the better your 
+chances of narrowing it down. Even if several theories exist, the next step is to test them 
+methodically.

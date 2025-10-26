@@ -1,0 +1,19 @@
+query optimization techniques mentioned below are designed to make the optimizer’s 
+work easier. The following common practices are used to write efficient conditional expressions in 
+SQL code. 
+ 
+Use simple columns or literals as operands in a conditional expression—avoid the use of 
+conditional expressions with functions whenever possible. Comparing the contents of a single 
+column to a literal is faster than comparing to expressions.  
+ 
+Numeric field comparisons are faster than character, date, and NULL comparisons. In general, 
+the CPU handles numeric comparisons (integer and decimal) faster.  
+ 
+Equality comparisons are generally faster than inequality comparisons.  
+ 
+Whenever possible, transform conditional expressions to use literals.  
+ 
+When using multiple conditional expressions, write the equality conditions first.  
+ 
+If you use multiple AND conditions, write the condition most likely to be false first. If you use 
+this technique, the DBMS will stop evaluating the r

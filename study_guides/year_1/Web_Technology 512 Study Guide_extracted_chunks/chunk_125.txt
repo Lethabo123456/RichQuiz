@@ -1,0 +1,20 @@
+ascript"> 
+var postcode = "sr2 4jh"; 
+var new_postcode = postcode.toUpperCase(); 
+document.write( new_postcode ); 
+</SCRIPT> 
+ 
+The first line sets up a variable called postcode. Imagine you have got this value from a 
+text box on a form. You want to make sure that the letters are all uppercase. You can 
+convert them by using toUpperCase (note the capital letters "U" and "C"). But look at 
+how it's done: 
+var new_postcode = postcode.toUpperCase(); 
+ 
+To the right of the equal sign you type the variable you want to convert. After a dot 
+you type the method name, toUpperCase, followed by a pair of empty round brackets. 
+End the line in the usual way with a semicolon. 
+ 
+Another thing to notice here is that we have a new variable to the left of the equal 
+sign. The newly converted value will be placed in the variable we have called 
+new_postcode. The reason that we are storing the converted value into a new variable 
+is because in JavaScript strings are immutable. This means that you cann

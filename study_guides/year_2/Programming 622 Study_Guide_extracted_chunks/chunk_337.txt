@@ -1,0 +1,22 @@
+ss for various board 
+sizes.  
+  
+ 
+4.5  
+Recursion, Backtracking, and Sudoku  
+  
+In the previous section, we used recursion and backtracking to solve the 8-queens problem. In this section, 
+we introduce the well-known sudoku problem, which can be solved using recursion and backtracking. This 
+problem involves filling numbers 1 to 9 in a partially filled, 9 x 9 grid with constraints described in this 
+section. Figure 4-17(a) shows a partially filled grid.  
+  
+  
+FIGURE 4-17 Sudoku problem and its solution  
+  
+The sudoku grid is a 9 x 9 grid consisting of nine rows, nine columns, and nine 3 x 3 smaller grids. In Figure 
+4-17, the nine 3 x 3 smaller grids are separated by darker horizontal and vertical lines. The first 3 x 3 
+smaller grid is in rows 1 to 3 and columns 1 to 3, the second 3 x 3 smaller grid is in rows 1 to 3 and columns 
+4 to 6, and so on.  
+  
+The objective is to fill the entire grid with numbers 1 to 9 such that each number appears exactly once in 
+each row, each colu

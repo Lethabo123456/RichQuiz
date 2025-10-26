@@ -1,0 +1,34 @@
+3.5.3 Zero–One Matrices 
+A matrix all of whose entries are either 0 or 1 is called a zero–one matrix. 
+Zero–one matrices are often used to represent discrete structures. 
+Algorithms using these structures are based on Boolean arithmetic with 
+zero–one matrices. This arithmetic is based on the Boolean operations ∧ and 
+∨, which operate on pairs of bits, defined by: 
+ 
+ 
+Definition 46 
+Let A = [aij ] and B = [bij ] be m × n zero–one matrices. Then the join of A and 
+B is the zero–one matrix with (i, j )th entry aij ∨ bij . The join of A and B is 
+denoted by A ∨ B. The meet of A and B is the zero–one matrix with (i, j )th 
+entry aij ∧ bij . The meet of A and B is denoted by A ∧ B.
+
+Worked Example 
+Find the join and meet of the zero–one matrices 
+ 
+ 
+Solution: We find that the join of A and B is 
+ 
+ 
+The meet of A and B is 
+
+Definition 47 
+Let A = [aij ] be an m × k zero–one matrix and B = [bij ] be a k × n zero–one 
+matrix. Then the Boolean product of A and B, denoted by A⨀B, is the m × n 
+matrix with (i, j )th entry cij where 
+𝑐𝑖𝑗 = (𝑎𝑖1 ∧ 𝑏1𝑗 ) ∨ (𝑎𝑖2  ∧ 𝑏2𝑗 ) ∨ ・ ・ ・ ∨ (𝑎𝑖𝑘 ∧ 𝑏𝑘𝑗 ). 
+ 
+Note that the Boolean product of A and B is obtained in an analogous way 
+to the ordinary product of these matrices, but with addition replaced with 
+the operation ∨and with multiplication replaced with the operation ∧. We 
+give an example of the Boolean products of matrices. To find the 
+Boolean product of A and B, where The Boolean product A⨀B is given by: 

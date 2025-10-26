@@ -1,0 +1,16 @@
+1.2.10 Scroll Panes  
+A scroll pane is a component that presents a rectangular area in which a component may be viewed. 
+Horizontal and/or vertical scroll bars may be provided if necessary. JscrollPane class implements scroll 
+Panes in swing, which extents Jcomponent. Its constructors are:  
+ 
+JScrollPane (Component comp)  
+JScrollPane (int vsb, int hsb)  
+JScrollPane (Component comp, int vsb, int hsb)  
+  
+Where comp is the component to be added to the scroll pane, vsb and hsb are int constants that define 
+when vertical and horizontal scroll bars for this scroll pane are shown. These constants are defined by the 
+ScrollPaneConstants interface. The steps that you should follow to use a scroll pane in an applet:  
+  
+(a) Creat a Jcomponent object.  
+(b) Creat a JScrollPane object.  
+(c) Add the scroll pane to the content pane of the applet. 

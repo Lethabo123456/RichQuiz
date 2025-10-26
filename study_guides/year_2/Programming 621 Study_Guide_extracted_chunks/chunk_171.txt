@@ -1,0 +1,20 @@
+. nullptr has a 
+special value type that can be converted to any pointer type. The following statement 
+declares p to be a pointer of type int and it also initializes it to the null pointer: int *p = 
+nullptr; 
+ 
+ 
+Dynamic Variables 
+
+160 | P a g e  
+ 
+ 
+In the previous sections, you learned how to declare pointer variables, how to store 
+the address of a variable into a pointer variable of the same type as the variable, and 
+how to manipulate data using pointers. However, you learned how to use pointers to 
+manipulate data only into memory spaces that were created using other variables. In 
+other words, the pointers manipulated data into already existing memory spaces. But 
+you could have accessed these memory spaces through the variables that were used 
+to create them. So what is the benefit of using pointers? In this section, you will learn 
+about the power behind pointers. In particular, you will learn how to allocate and 
+deallocate memory during program execution using pointers.

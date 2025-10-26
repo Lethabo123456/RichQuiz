@@ -1,0 +1,16 @@
+The purpose of twisted pairs is to minimize cross-talk to and from other wires. A twisted pair 
+is two wires wound together. Signals are sent down the wires such that when one wire in the 
+pair becomes positive the other wire becomes negative by the same amount. Neighbouring 
+wires close to this pair will be affected by cross-talk equal to the sum of the two signals. So, if 
+this sum is zero (or nearly zero) then the effects of cross-talk are eliminated. This makes the 
+signals sent down a cable cleaner because most electrical noise entering into and/or radiating 
+from the cable can be removed 
+
+Conventional tests such as continuity, resistance, and insulation tests will not sufficiently find 
+all errors associated with twisted pairs. One type of error undetectable by conventional test 
+methods is called a split pair. A split pair error occurs when one wire from each of two different 
+pairs gets swapped identically on both ends of the cable. The result is a cable that will pass a 
+standard continuity test, but will have serious cross-talk problems, and will most likely not 
+perform adequately at specified data rates. 
+ 
+Figure 1.10 Correct and Wrong Split Pair 

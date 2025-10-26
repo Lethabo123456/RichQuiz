@@ -1,0 +1,17 @@
+sh table. Because the address of an item 
+is computed with the help of a function, it follows that the items are stored in no particular order.  
+  
+Before continuing with this discussion, let us consider the following questions:  
+ How do we choose a hash function?  
+How do we organize the data with the help of the hash table?  
+  
+First, we discuss how to organize the data in the hash table.  
+  
+There are two ways that data is organized with the help of the hash table. In the first approach, the data 
+is stored within the hash table, that is, in an array. In the second approach, the data is stored in linked lists 
+and the hash table is an array of pointers to those linked lists. Each approach has its own advantages and 
+disadvantages, and we discuss both approaches in detail. However, first we introduce some more 
+terminology that is used in this section.  
+  
+The hash table HT is, usually, divided into, say b buckets HT[0], HT[1], . . ., HT[b – 1]. Each bucket is capable 
+of holdin

@@ -1,0 +1,27 @@
+get a bit more complicated. Consider the following 
+situation:  
+  
+$favoriteAnimal = “cat”;  
+echo “My favorite animals are $favoriteAnimals”;  
+  
+This code is ambiguous; should PHP insert the value of the $favoriteAnimal variable followed by an 
+“s” character? Or should it insert the value of the (non-existent) $favoriteAnimals variable? In fact, 
+PHP attempts to do the latter, resulting in:  
+
+46  
+  
+My favorite animals are  
+  
+Fortunately, you can get around this problem using curly brackets, as follows:  
+  
+$favoriteAnimal = “cat”; echo “My favorite 
+animals are {$favoriteAnimal}s”;  
+  
+This produces the expected result:  
+My favorite animals are cats You can also place the opening curly bracket after the $ 
+symbol, which has the same effect:  
+  
+echo “My favorite animals are ${favoriteAnimal}s”;  
+  
+The important thing is that you can use the curly brackets to distinguish the variable name from the 
+rest of the string. You can use this curly bracket syntax to insert more c

@@ -1,0 +1,13 @@
+set. Look at the page produced by the testing.php 
+script you just created, and find the date.timezone entry (it will probably be around halfway 
+down the page). If the Master Value column contains no value or an incorrect time zone, you 
+need to set your time zone, so proceed to Step 2. However, if the column contains the 
+correct time zone for your server (such as Africa/johannesburg), PHP ’s time zone is already 
+set correctly and you can skip the remainder of these steps.   
+2. Look for the Loaded Configuration File entry toward the top of the testing.php page. This is the 
+path to the php.ini file that is used to configure your PHP engine.   
+3. Open this file in a text editor, such as Notepad. You may need root (administrator) access to 
+edit this file. If you do not have administrator access, ask your server administrator to set the 
+time zone for you.   
+4. Search for the following line in the file: ;date.timezone =   
+If for some reason this line is not in your php.ini file,

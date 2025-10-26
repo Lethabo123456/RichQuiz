@@ -1,0 +1,120 @@
+The client code would normally have an interactive user-interface component, but you simulate that 
+by choosing the effects, adding them to the array, and then calling ProcessImage, as shown in Exam-
+ple 3-2. 
+ 
+Example 3-2. Using an array of delegates 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace Examples 
+{ 
+    // the image which we'll manipulate 
+    public class Image 
+    { 
+        public Image() 
+        { 
+            Console.WriteLine("An image created"); 
+        } 
+    } 
+    public class ImageProcessor 
+    { 
+        // declare the delegate 
+        public delegate void DoEffect(); 
+        // create various static delegates tied to member methods 
+        public DoEffect BlurEffect = 
+        new DoEffect(Blur); 
+        public DoEffect SharpenEffect = 
+        new DoEffect(Sharpen); 
+        public DoEffect FilterEffect = 
+        new DoEffect(Filter); 
+        public DoEffect RotateEffect = 
+        new DoEffect(Rotate); 
+        // the constructor initializes the image and the array 
+        public ImageProcessor(Image image) 
+        { 
+            this.image = image; 
+            arrayOfEffects = new DoEffect[10]; 
+        } 
+        // in a production environment we'd use a more 
+        // flexible collection. 
+        public void AddToEffects(DoEffect theEffect) 
+        { 
+            if (numEffectsRegistered >= 10) 
+            { 
+                throw new Exception( 
+                "Too many members in array"); 
+            } 
+            arrayOfEffects[numEffectsRegistered++] 
+            = theEffect; 
+        } 
+        // the image processing methods... 
+        public static void Blur() 
+        { 
+            Console.WriteLine("Blurring image"); 
+        } 
+        public static void Filter() 
+        { 
+            Console.WriteLine("Filtering image"); 
+        } 
+ 
+        public static void Sharpen() 
+{
+            Console.WriteLine("Sharpening image"); 
+        } 
+        public static void Rotate() 
+        { 
+            Console.WriteLine("Rotating image"); 
+        } 
+        public void ProcessImages() 
+        { 
+            for (int i = 0; i < numEffectsRegistered; i++) 
+            { 
+                arrayOfEffects[i](); 
+            } 
+        } 
+        // private member variables... 
+        private DoEffect[] arrayOfEffects; 
+        private Image image; 
+        private int numEffectsRegistered = 0; 
+    } 
+    // test driver 
+    public class Test 
+    { 
+        public static void Main() 
+        { 
+            Image theImage = new Image(); 
+            // no ui to keep things simple, just pick the 
+            // methods to invoke, add them in the required 
+            // order, and then call on the image processor to 
+            // run them in the order added. 
+            ImageProcessor theProc = 
+            new ImageProcessor(theImage); 
+            theProc.AddToEffects(theProc.BlurEffect); 
+            theProc.AddToEffects(theProc.FilterEffect); 
+            theProc.AddToEffects(theProc.RotateEffect); 
+            theProc.AddToEffects(theProc.SharpenEffect); 
+            theProc.ProcessImages(); 
+        } 
+    } 
+} 
+ 
+OUTPUT: 
+ 
+An Image created
+Blurring image
+Filtering image
+Rotating image
+Sharpening image
+Press any key to continue ...
+ 
+In the Test class of Example 3-2, the ImageProcessor is instantiated and effects are added. If the user chooses to blur the 
+image before filtering it, it is a simple matter to add the delegates to the array in the appropriate order. Similarly, any given operation 
+can be repeated as often as the user desires, just by adding more delegates to the collection. 
+You can imagine displaying the order of operations in a list box that might allow the user to reorder the methods, moving them 
+up and down the list at will. As the operations are reordered, you need only change their sort order in the collection. You might 
+even decide to capture the order of operations to a database and then load them dynamically, instantiating delegates as dictated 
+by the records you've stored in the database. 
+Delegates provide the flexibility to determine dynamically which methods will be called, in what order, and how often.

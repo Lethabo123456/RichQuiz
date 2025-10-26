@@ -1,0 +1,17 @@
+processForm();   
+                         } else {   
+                                   displayForm( array() );   
+                        }   
+                        function validateField( $fieldName, $missingFields ) {                                         
+if ( in_array( $fieldName, $missingFields ) ) {                                                   echo 
+‘ class=”error”’;   
+                                      }   
+                       }   
+                      function setValue( $fieldName ) {                                    if 
+( isset( $_POST[$fieldName] ) ) {   
+                                            echo $_POST[$fieldName];   
+                                  }   
+                    }   
+                   function setChecked( $fieldName, $fieldValue ) {   
+                               if ( isset( $_POST[$fieldName] ) and $_POST[$fieldName] == $fieldValue ) {                                             
+echo ‘ checked=”checked”’;

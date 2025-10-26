@@ -1,0 +1,28 @@
+ights[i] = 
+new double[size];  
+  
+edges = new int[size];  
+  
+edgeWeights = new double[size];  
+}  
+  
+//Destructor  
+msTreeType::~msTreeType()  
+{ for (int i = 0; i < gSize; i++)  
+delete [] weights[i];  
+  
+delete [] weights; delete 
+[] edges;  
+delete edgeWeights;  
+}  
+  
+ 
+10.9  Topological Order  
+  
+In college, before taking a particular course, students, usually, must take all its prerequisite courses, if any. 
+For example, before taking the Programming II course, the student must take the Programming I course. 
+However, certain courses can be taken independent of each other. The courses within a department can 
+be represented as a directed graph. A directed edge from, say vertex u to vertex v means the course 
+represented by the vertex u is a prerequisite of the course represented by the vertex v. It would be helpful 
+for the students to know, before starting a major, the sequence in which they can take the courses so that 
+before taking a course they take all its prerequisit

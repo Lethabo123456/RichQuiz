@@ -1,0 +1,35 @@
+2.7.5 Domain Names 
+To facilitate different organizations and their desires to have scalable, customizable naming scheme 
+in which to operate, the InterNIC has created and maintains a hierarchical namespace called 
+the Domain Name System (DNS). DNS is a naming scheme that looks similar to the directory 
+structure for files on a disk. However, instead of tracing a file from the root directory through 
+subdirectories to its final location and its file name, a host name is traced from its final location 
+through its parent domains back up to the root. The unique name of the host, representing its 
+position in the hierarchy, is called its Fully Qualified Domain Name (FQDN). The top-level domain 
+namespace is shown in Figure 1.11 with example second-level and subdomains. 
+
+Figure 42: Domain Name System 
+
+The domain namespace consists of: 
+ The root domain, representing the root of the namespace and indicated with a "" (null). 
+ Top-level domains, those directly below the root, indicating a type of organization. On the 
+
+Internet, the InterNIC is responsible for the maintenance of top-level domain names. Table 
+below has a partial list of the Internet's top-level domain names. 
+ 
+Domain Name        Meaning 
+COM                Commercial organization 
+EDU                Educational institution 
+GOV                Government institution 
+MIL                Military group 
+NET                Major network support center 
+ORG                Organization other than those above 
+INT                International organization 
+< country/         Each country/region (geographic scheme) 
+region code > 
+
+Figure 43: Internet Top-Level Domain Names 
+
+Second-level domains, below the top level domains, identifying a specific organization within 
+its top-level domain. On the Internet, the InterNIC is responsible for the maintenance of 
+second-level domain names and ensuring their uniqueness. 

@@ -1,0 +1,57 @@
+Case Study 2: 
+
+The Challenge 
+An autonomous delivery robot operating on a university campus must deliver packages efficiently 
+while managing limited battery capacity. The robot faces multiple path choices between 
+locations, each with different energy costs.
+
+Real-World Constraints 
+• Battery Capacity: 500Wh (typical for delivery robots) 
+• Operating Range: 15-20km on full charge 
+
+• Payload: 0-20kg affects energy consumption 
+• Terrain: Mixed surfaces (concrete, asphalt, grass, gravel) 
+• Weather: Rain/wind significantly impact energy use 
+
+System Architecture 
+ 
+Simple code showing how the robot utilises a regression model to predict energy usage for a 
+particular delivery trip. 
+
+import joblib 
+import pandas as pd 
+ 
+# Load the trained model 
+model = joblib.load("energy_predictor_model.joblib") 
+ 
+# Get user input 
+print("  Predict Energy Consumption for Delivery Route\n") 
+
+distance_km = float(input("Enter route distance (km): ")) 
+payload_kg = float(input("Enter payload weight (kg): ")) 
+ 
+terrain = input("Enter terrain type (concrete/asphalt/gravel/grass): ").lower() 
+while terrain not in ['concrete', 'asphalt', 'gravel', 'grass']: 
+    terrain = input("  Invalid. Enter one of (concrete/asphalt/gravel/grass): ").lower() 
+ 
+weather = input("Enter weather condition (clear/windy/rainy): ").lower() 
+while weather not in ['clear', 'windy', 'rainy']: 
+    weather = input("  Invalid. Enter one of (clear/windy/rainy): ").lower() 
+ 
+# Format input into a DataFrame 
+new_input = pd.DataFrame([{ 
+    "distance_km": distance_km, 
+    "payload_kg": payload_kg, 
+    "terrain": terrain, 
+    "weather": weather 
+}]) 
+ 
+# Predict energy consumption 
+predicted_energy = model.predict(new_input)[0] 
+
+print(f"\n  Estimated energy needed: {predicted_energy:.1f} Wh") 
+OUTPUT: 
+ 
+
+The robot utilised the trained model loaded using joblib, the robot was able to discern the best 
+route possible to conserve energy. 

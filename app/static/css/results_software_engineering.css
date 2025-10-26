@@ -1,0 +1,179 @@
+/* results_software_engineering.css - Software Engineering Themed */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Roboto Mono', sans-serif;
+  background: linear-gradient(145deg, #0a2342, #163a5f, #1f4e7a);
+  color: #f0f0f0;
+}
+
+.card {
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(10, 15, 35, 0.95);
+  border-radius: 22px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+  border-left: 10px solid #ffd700;
+  border-right: 10px solid #ffd700;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #ffd700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  margin-bottom: 2rem;
+}
+
+.score {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1effd0;
+}
+
+.progress-container {
+  background: #1e2a4b;
+  border-radius: 10px;
+  height: 25px;
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #ffd700, #ffea00);
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 1.2s ease-in-out;
+}
+
+.result {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.8rem;
+}
+
+.time {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ffd700;
+}
+
+.adaptive-feedback {
+  background: rgba(20, 30, 50, 0.7);
+  border-left: 5px solid #1effd0;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.adaptive-feedback h3 {
+  margin-top: 0;
+  color: #ffd700;
+}
+
+.adaptive-feedback ul {
+  padding-left: 1.5rem;
+}
+
+.summary {
+  margin-bottom: 2rem;
+}
+
+.qa {
+  background: rgba(25, 35, 55, 0.6);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border-left: 6px solid #1e90ff;
+}
+
+.qa.correct {
+  border-left-color: #32cd32;
+}
+
+.qa.incorrect {
+  border-left-color: #ff4c4c;
+}
+
+.question-text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #f1f1f1;
+}
+
+.reasoning {
+  background: #12203b;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.reasoning pre {
+  background: #0d1a2b;
+  padding: 0.6rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  color: #1effd0;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  background: #ffd700;
+  color: #0a2342;
+  font-weight: bold;
+  padding: 0.85rem 1.6rem;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #ffea00;
+  transform: scale(1.05);
+}
+
+/* Code blocks inside summary */
+.summary pre {
+  background: #0b1a2b;
+  color: #1effd0;
+  padding: 0.7rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+}

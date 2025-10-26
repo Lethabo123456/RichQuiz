@@ -1,0 +1,43 @@
+When the user presses the button, the button gets a reference to the system’s location manager and 
+instantiates a location listener to get the GPS coordinates and accuracy from a location object each 
+time the sensor detects a location change. Note that location can change even if the device does not 
+move. The sensor will provide a location as soon as it can and then as it zeroes in on the exact location. 
+Every time accuracy gets better or worse, new GPS coordinates are produced, and this is reported as 
+a location change. 
+
+▪ Lines 2–3—A reference to the LocationManager object is assigned  to the locationManager 
+variable. The getSystemService method is sent to the activity’s context with a parameter that tells the 
+context that you want the location service manager. In Android, the context of any code is the parent 
+object or method it is placed in.  The current  context of the code entered in  this listing  is  an 
+onClickListener. The method getBaseContext is used to get the root context—in this case, an Activity— 
+because an Activity context is required to get the system service. 
+▪ Lines 4–12—A new LocationListener is instantiated and assigned to the gpsListener variable. A 
+LocationListener requires the implementation of four methods. 
+
+However, only the onLocationChanged method is needed for the 
+purpose of reporting location. When a location change 
+is detected, it is reported to this method as a location object. 
+The text of the TextViews is set by getting the appropriate value 
+from the location object. Note the use of the String.valueOf method to convert 
+these values into strings. They are reported as double or float data types, which are not compatible 
+with the setText method of the TextView.
+
+▪ Lines 14–16—These three methods are required by the LocationListener in addition to the 
+onLocationChanged method. They are generally used to alert the app that the sensor status has 
+changed. You can use these methods to alert the user to a change in the app’s behavior or ability to 
+perform a task. In this simple example, you can leave them blank, as shown here. 
+▪ Lines 19–20—The LocationManager is sent the message requestLocationUpdates to begin 
+listening for location changes. The parameters in this message tell the LocationManager to listen to 
+the GPS sensor with no minimum time between updates and no minimum distance between locations 
+and report those changes to the LocationListener assigned to the gpsListener variable. The minimum 
+time and distance parameters are set to zero for demonstration purposes. These values should be set 
+based on how much you expect the device to move during the app’s use. Setting values higher than 
+zero can help conserve the battery. This is especially true of the time value. The minimum time is set 
+in milliseconds (2*60*1,000 = 120,000, or 2 minutes). Minimum distance is set in meters. 
+▪ Lines 22–25—A Toast is displayed if there is an error. A Toast is an object that displays a short 
+message for a limited period of time on the user’s display. The Toast method, makeText, requires a 
+context, a message, and a period of time to display the message (LENGTH_SHORT and LENGTH_LONG 
+are the only options). The show method displays the message. 
+The line locationManager.requestLocationUpdates will be underlined in red if the target SDK for your 
+project is greater than 22. This is due to the new permissions model mentioned earlier. We will correct 
+this shortly. 

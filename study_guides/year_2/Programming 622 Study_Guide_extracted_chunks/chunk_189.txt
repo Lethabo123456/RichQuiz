@@ -1,0 +1,54 @@
+;  
+ 
+  
+  
+  
+//store the data in newNode  
+ 
+newNode->link = first;   
+  
+  
+  
+//put newNode at the beginning  
+//of the list  
+ 
+first = newNode;   
+  
+  
+  
+  
+//update the head pointer of  
+//the list, that is, first  
+ 
+cin >> num;     
+  
+  
+  
+  
+//read the next number  
+}  
+return first;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//end buildListBackward  
+  
+ 
+3.2  
+Linked List as an ADT  
+  
+The previous sections taught you the basic properties of linked lists and how to construct and manipulate 
+linked lists. Because a linked list is a very important data structure, rather than discuss specific lists such 
+as a list of integers or a list of strings, this section discusses linked lists as an abstract data type (ADT). 
+Using templates, this section gives a generic definition of linked lists, which is then used in the next section 
+and later in this book. The programming example at the end of this chapter also uses this generic definition 
+of linked lists.  
+  
+The basic operations on l

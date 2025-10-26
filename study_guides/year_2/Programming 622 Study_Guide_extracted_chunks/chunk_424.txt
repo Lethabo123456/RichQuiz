@@ -1,0 +1,43 @@
+();  
+  
+linkedStackType<int> tempStack;  
+  
+tempStack = myStack;  
+  
+while (!tempStack.isEmptyStack())  
+{  
+cout << tempStack.top() << " "; tempStack.pop();  
+}  
+  
+cout << endl;  
+  
+cout << myStack.top() << endl;  
+  
+10. Write the definition of the function template printListReverse that uses a stack to print a linked list in 
+reverse order. Assume that this function is a member of the class linkedListType, designed in Chapter 
+3.  
+  
+11. Write the definition of the function template second that takes as a parameter a stack object and 
+returns the second element of the stack. The original stack remains unchanged.  
+  
+12. Draw the UML class diagram of the class linkedStackType.  
+  
+13. Write the definition of the function template clear that takes as a parameter a stack object of the type 
+stack (STL class) and removes all the elements from the stack.  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+217  
+  
+TOPIC 6: QUEUES  
+  
+LEARNING OUTCOMES  
+After Studying this topic you should be able to:  
+L

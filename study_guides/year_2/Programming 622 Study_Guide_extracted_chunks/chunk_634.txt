@@ -1,0 +1,14 @@
+3 to restore the heap in this subtree. (This requires us to repeat Steps 1 and 2 at the subtree with 
+root node list[1].) We swap list[1] with the larger child, which is list[3] (that is, 70). We then get the binary 
+tree of Figure 8-47(b).  
+  
+The subtree with the root node list[3] = 15 is not in a heap, and so we must restore the heap in this subtree. 
+To do so, we apply Steps 1 and 2 at the subtree with root node list[3]. We swap list[3] with the larger 
+child, which is list[7] (that is, 60). Figure 8-47(c) shows the resulting binary tree.  
+  
+The resulting binary tree in Figure 8-47(c) is in a heap, and so the list corresponding to this complete binary 
+tree is in a heap.  
+  
+Thus, in general, starting at the lowest level from right to left, we look at a subtree and convert the subtree 
+into a heap as follows: If the root node of the subtree is smaller than the larger child, we swap the root 
+node with the larger child. After swapping the root node with the larger child, we mus

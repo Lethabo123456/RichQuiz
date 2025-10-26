@@ -1,0 +1,36 @@
+Go back to the Common folder in the Palette, drag a button to the layout, and center it below the 
+EditText. Create left and right constraints to either side of the screen to center the button. Create a 
+top constraint to the EditText. 
+
+Switch to  the Text view for the layout. Locate the EditText element. Change the default id to 
+“@+id/editTextName” so that we have some understanding what data that widget is handling. There 
+are two new attributes. The first is android:ems. This attribute sets the displayed size of the layout to 
+10 ems. Ems is a size measurement equal to the number of capital Ms that would fit into the control. 
+Note: All these attributes can be changed in the Properties section of the Editor on the right-hand 
+side, but it is important to develop an understanding of the XML, so we have you do it in the code. 
+The second new attribute is android:inputType. This attribute tells Android how you want text handled 
+Note 
+Although Android Studio is a very powerful and useful tool in Android development, the need to make 
+all items in the UI relative makes designing a layout difficult. 
+
+We recommend that you use the Design 
+view to get the UI approximately correct and then fine-tune in the XML. 
+as it’s entered and the type of keyboard to display when the user 
+is entering data. It is currently set to textPersonName, which will 
+capitalize the first letter of each word entered into the EditText. 
+Note that the text attribute has Name in it, which will display 
+“Name” in the EditText. 
+
+If you need to have a default value in the 
+EditText, then setting this attribute makes sense. However, it will 
+require the user to delete “Name” before they can type their own 
+name. A better solution is to use a hint that tells the user what to 
+enter but is not actually a value in the EditText. Delete the line 
+android:text=“Name” and enter android:hint=“enter your name” 
+in its place. Switch to Design view. Note that the button is out of place. Since 
+you changed the name of the EditText, the 
+layout_constraintTop_toBottomOf attribute of the button no 
+longer knows its position. Switch back to Text view, locate the 
+Button     XML,     and     change     the     layout_constraintTop_toBottomOf     attribute     value     to 
+@+id/editTextName. Next, change the id to “@+id/buttonDisplay”. Finally, change the text attribute 
+to “Display”. Switch to the Design view to see the changes.

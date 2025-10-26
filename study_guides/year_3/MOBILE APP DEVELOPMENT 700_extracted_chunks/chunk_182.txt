@@ -1,0 +1,27 @@
+Create the Data Entry Form 
+The data entry portion of the MainActivity allows users to enter 
+information on their contacts. The data entry form primarily 
+relies on the EditText and TextView widgets that were introduced in the Hello World app. New concepts introduced 
+include configuring the EditTexts to limit and format the input, 
+movement (tabbing) through the data entry widgets, using a custom pop-up window to enter the birthday with a 
+CalendarView widget, and using a ScrollView to expand the available screen real estate. 
+
+Open the activity_main.xml file (if it is not already open) and     
+switch to Design view. Scroll to the Containers folder in the Palette. Drag a ScrollView to the middle 
+of the Design or Blueprint views anywhere between the toolbar and the navigation bar. Alternatively, 
+you can drag it to the Component Tree below the navbar and toolbar (Figure 4.7). If the Component 
+Tree is not displayed below the Palette, it is likely minimized and can be opened by selecting it in the 
+vertical bar directly to the left of the Palette. 
+
+Figure 4.7 Component Tree with ScrollView added 
+ 
+Click on all four buttons in the Layout diagram. Change the left and right values to 0. Leave the top 
+and bottom at 8. Change layout_width and layout_height to match_constraint in the Attributes panel. 
+The values will then change to 0dp. Next, turn your attention to the Component Tree. Notice that 
+the ScrollView has a LinearLayout embedded beneath it. By default, the ScrollView has no contents. 
+ScrollViews can have only one widget as their content. However, if that widget is some type of 
+layout, more widgets can be added as long as they are within that layout. Since a LinearLayout 
+allows  very   limited  control  of where our widgets are placed, we will change it to a ConstraintLayout 
+to get that control. Click on the LinearLayout in the Component Tree and delete it with the delete key. Next, locate a ConstraintLayout 
+in the Layouts folder of the Palette and drag it to the same location of the LinearLayout. 
+Switch to Text view and examine the XML associated with the ScrollView (Listing 4.2).

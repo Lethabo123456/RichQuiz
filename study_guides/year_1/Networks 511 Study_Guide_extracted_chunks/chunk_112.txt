@@ -1,0 +1,26 @@
+Step 1: Establish Symptoms  
+Obviously, if you can’t identify a problem, you can’t begin to solve it. Typically, you need to ask some 
+questions to begin to clarify exactly what is happening. In our example, we should ask the user the 
+
+following:  
+ Which part of the Internet can’t you access?  
+ A particular website?  
+ A particular address?  
+ Any website?  
+ Can you use your web browser?  
+The user cannot access the corporate intranet or get to any sites on the Internet. User can use web 
+browser to access the corporate FTP site, which he has bookmarked (by IP address 10.0.0.2). We 
+can, therefore, rule out the web browser as the source of the problem. 
+
+Step 2: Identify the Affected Area  
+Computers and networks are fickle; they can work fine for months, suddenly malfunction horribly, 
+and then continue to work fine for several more months, never again exhibiting that particular 
+problem. And that’s why it’s important to be able to reproduce the problem and identify the 
+affected area. Identifying the affected area narrows down what you have to troubleshoot. One of 
+your goals is to make problems easier to troubleshoot and, thus, get users working again as soon as 
+possible. 
+Step 3: Establish What Has Changed  
+If you can reproduce the problem, your next step is to attempt to determine what has changed. 
+Drawing on your knowledge of networking, you might ask yourself and your user questions such as 
+the following:  
+Were you ever able to do this?  

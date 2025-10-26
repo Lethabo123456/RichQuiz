@@ -1,0 +1,18 @@
+1. In the Code and Text Editor window displaying the Program.cs file, place the cursor in the 
+Main method, immediately after the curly brace ({) on the line below the static void 
+Main(string[] args); statement. Press Enter to create a new line. 
+
+2. On the new line, type the word Console. The Console class is provided by the assemblies 
+referenced by your application. This class contains several methods for displaying messages 
+in the console window and reading input from the keyboard, not just the WriteLine method. 
+ 
+As you type the letter C at the start of the word Console, an IntelliSense list appears. This list 
+contains all the C# keywords and data types that are valid in this context. You can either 
+continue typing or scroll through the list and double-click the Console item with the mouse. 
+Alternatively, after you’ve typed Cons, the IntelliSense list automatically homes in on the 
+Console item, and you can press the Tab or Enter key to select it. 
+ 
+Figure 1.3 
+The Solution Explorer pane appears on the right side of the IDE, adjacent to the Code and Text 
+Editor window. Solution Explorer displays the names of the files associated with the project, 
+among other items. 

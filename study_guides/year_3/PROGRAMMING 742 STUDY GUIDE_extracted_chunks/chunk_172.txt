@@ -1,0 +1,29 @@
+4.1.5 The FileStream Object 
+ 
+The FileStream object represents a stream pointing to a file on a disk or a network path. While the class 
+does expose methods for reading and writing bytes from and to the files, most often you will use a 
+StreamReader or StreamWriter 
+FileStream class operates 
+on bytes and byte arrays, whereas the Stream classes operate on character data. Character data is eas-
+ier to work with, but certain operations, such as random file access (access to data at some point in the 
+middle of a file), can only be performed by a FileStream 
+chapter. 
+ 
+There are several ways to create a FileStream object. The constructor has many different overloads, but 
+the simplest takes just two arguments: the filename and a FileMode enumeration value:  
+ 
+FileStream aFile = new FileStream(filename, FileMode.<Member>); 
+ 
+ 
+The FileMode enumeration has several members that specify how the file is opened or cre
+see the possibilities shortly. Another commonly used constructer is as follows: 
+ 
+FileStream aFile = new FileStream(filename, FileMode.<Member>, FileAccess.<Member>); 
+
+The third parameter is a member of the FileAccess enumeration and is a way of specifying the purpose 
+of the stream. The members of the FileAccess enumeration are shown in the following table: 
+ 
+MEMBER                  DESCRIPTION 
+Read                    Opens the file for reading only 
+Write                   Opens the file for writing only 
+ReadWrite               Opens the file for reading or writing 

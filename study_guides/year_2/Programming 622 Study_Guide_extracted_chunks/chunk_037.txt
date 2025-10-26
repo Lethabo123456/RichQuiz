@@ -1,0 +1,14 @@
+ed test cases, in an attempt to find 
+problems.  
+  
+A test case consists of a set of inputs, user actions, or other initial conditions, and the expected output. 
+Because a test case can be repeated several times, it must be properly documented. Typically a program 
+manipulates a large set of data. It is, therefore, impractical (although possible) to create test cases for all 
+possible inputs. For example, suppose that a program manipulates integers. Clearly, it is not possible to 
+create a test case for each integer. You can categorize test cases into separate categories, called 
+equivalence categories. An equivalence category is a set of input values that are likely to produce the 
+same output. For example, suppose that you have a function that takes an integer as input and returns 
+true if the integer is nonnegative, and false otherwise. In this case, you can form two equivalence 
+categories—one consisting of negative numbers and the other consisting of nonnegative numbers.  
+  
+The

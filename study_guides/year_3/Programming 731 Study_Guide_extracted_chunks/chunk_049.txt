@@ -1,0 +1,18 @@
+Entering the Program    
+
+For most computer languages, the name of the file that holds the source code to a program is 
+arbitrary. However, this is not the case with Java. The first thing that you must learn about Java is 
+that the name you give to a source file is very important. For this example, the name of the source 
+file should be Example.java. Let’s see why. In Java, a source file is officially called a compilation unit. 
+It is a text file that contains one or more class definitions. The Java compiler requires that a source 
+file use the .java filename extension. Notice that the file extension is four characters long. As you 
+might guess, your operating system must be capable of supporting long filenames. This means that 
+DOS and Windows 3.1 are not capable of supporting Java. However, Windows 95/98 and Windows 
+NT/2000/XP work just fine.  
+
+As you can see by looking at the program, the name of the class defined by the program is also 
+Example. This is not a coincidence. In Java, all code must reside inside a class. By convention, the 
+name of that class should match the name of the file that holds the program. You should also make 
+sure that the capitalization of the filename matches the class name. The reason for this is that Java 
+is case-sensitive. At this point, the convention that filenames correspond to class names may seem 
+arbitrary. However, this convention makes it easier to maintain and organize your programs.   

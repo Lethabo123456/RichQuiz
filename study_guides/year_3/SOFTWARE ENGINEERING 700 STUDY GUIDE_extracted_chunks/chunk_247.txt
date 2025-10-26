@@ -1,0 +1,45 @@
+8.5 Plan-driven approach   
+Plan-driven or plan-based development is an approach to software engineering where the 
+development process is planned in detail. A project plan is created that records the work to be 
+done, who will do it, the development schedule, and the work products. Managers use the plan 
+to support project decision making and as a way of measuring progress. Plan-driven development 
+is based on engineering project management techniques and can be thought of as the 
+“traditional” way of managing large software development projects.  
+ 
+Agile development involves a different planning process, where decisions are delayed. The 
+problem with plan-driven development is that early decisions have to be revised because of 
+changes to the environments in which the software is developed and used. Delaying planning 
+decisions avoids unnecessary rework. However, the arguments in favor of a plan-driven approach 
+are that early planning allows organizational issues (availability of staff, other projects, etc.) to be 
+taken into account. Potential problems and dependencies are discovered before the project 
+starts, rather than once the project is underway.  
+ 
+In hindsight, the best approach to project planning involves a sensible mixture of plan-based and 
+agile development. The balance depends on the type of project and skills of the people who are 
+available. At one extreme, large security and safety-critical systems require extensive up-front 
+analysis and may have to be certified before they are put into use. These systems should be mostly 
+plan-driven. At the other extreme, small to medium-size information systems, to be used in a 
+rapidly changing competitive environment, should be mostly agile. Where several companies are 
+involved in a development project, a plan-driven approach is normally used to coordinate the 
+work across each development site. 
+
+8.6 Project Scheduling  
+Project scheduling is the process of deciding how the work in a project will be organized as 
+separate tasks, and when and how these tasks will be executed. You estimate the calendar time 
+needed to complete each task and the effort required, and you suggest who will work on the tasks 
+that have been identified. You also have to estimate the hardware and software resources that 
+are needed to complete each task.  
+ 
+For example, if you are developing an embedded system, you have to estimate the time that you 
+need on specialized hardware and the costs of running a system simulator. In terms of the 
+planning stages that I introduced in the introduction of this chapter, an initial project schedule is 
+usually created during the project startup phase.  
+ 
+This schedule is then refined and modified during development planning. Both plan-based and 
+agile processes need an initial project schedule, although less detail is included in an agile project 
+plan. This initial schedule is used to plan how people will be allocated to projects and to check 
+the progress of the project against its contractual commitments. In traditional development 
+processes, the complete schedule is initially developed and then modified as the project 
+progresses. In agile processes, there has to be an overall schedule that identifies when the major 
+phases of the project will be completed. An iterative approach to scheduling is then used to plan 
+each phase. 

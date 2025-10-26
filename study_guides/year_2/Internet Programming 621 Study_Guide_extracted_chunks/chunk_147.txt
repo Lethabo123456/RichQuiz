@@ -1,0 +1,18 @@
+you to another important concept: arrays. These are special variables that 
+can store more than one value, and you will find that you use them all the time in your PHP scripts. 
+First you delved into the anatomy of arrays, and learned the concepts of indexed and associative 
+arrays.  
+
+72  
+Then you learned how to create arrays in PHP, and access array elements using both square 
+brackets and array_slice() . Along the way you learned about a very useful PHP function, print_r() , 
+that you can use to output entire arrays.  
+  
+You also discovered that every PHP array has an internal pointer that references its elements, and 
+you  
+learnt how to use this pointer to move through the elements in an array using current() , key(), 
+next(), prev( ), end(), and reset(). You also used the handy foreach looping construct to loop through 
+elements in an array.  
+  
+Arrays get really powerful when you start nesting them to produce multidimensional arrays. You 
+studied how to create such arrays, a

@@ -1,0 +1,32 @@
+inheritance and reduce software development complexity.  
+ 
+Each derived class, in turn, can become a base class for a future derived class. 
+Inheritance can be either single inheritance or multiple inheritance. In single 
+inheritance, the derived class is derived from a single base class; in multiple 
+inheritance, the derived class is derived from more than one base class. This chapter 
+concentrates on single inheritance. 
+ 
+ 
+ 
+Inheritance can be viewed as a treelike, or hierarchical, structure wherein a base class 
+is shown with its derived classes. Consider the tree diagram shown in Figure above. 
+In this diagram, shape is the base class. The classes circle and rectangle are derived 
+from shape, and the class square is derived from rectangle. Every circle and every 
+rectangle is a shape. Every square is a rectangle. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The general syntax of a derived class is: 
+ 
+
+197 | P a g e  
+ 
+ 
+in which memberAccessSpecifier is public, protected, or private. When no 
+memberAc

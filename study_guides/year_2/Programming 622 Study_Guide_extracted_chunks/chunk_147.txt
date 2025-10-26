@@ -1,0 +1,23 @@
+way that the elements can be inserted at 
+both ends. Thus, a deque can expand in either direction. Elements can also be inserted in the middle. 
+Inserting elements at the beginning or at the end is fast; inserting elements in the middle, however, is 
+time consuming because the elements in the queue need to be shifted.  
+  
+The name of the class defining the deque containers is deque. The definition of the class deque, and the 
+functions to implement the various operations on a deque object, are also contained in the header file 
+deque. Therefore, to use a deque container in a program, the program must include the following 
+statement:  
+
+69  
+  
+  
+#include <deque>  
+  
+The class deque contains several constructors. Thus, a deque object can be initialized in various ways when 
+it is declared, as described in Table 2-7.  
+  
+  
+TABLE 2-7: Various ways to declare a deque object  
+  
+  
+In addition to the operations that are common to all containers (see Table 2-6), Table 2-8 describes t

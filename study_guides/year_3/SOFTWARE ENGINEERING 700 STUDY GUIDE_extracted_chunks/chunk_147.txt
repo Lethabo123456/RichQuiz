@@ -1,0 +1,42 @@
+4.7 The Software Requirement Document 
+
+The software requirements document (sometimes called the software requirements specification 
+or SRS) is an official statement of what the system developers should implement. It may include 
+both the user requirements for a system and a detailed specification of the system requirements. 
+Sometimes the user and system requirements are integrated into a single description. In other 
+cases, the user requirements are described in an introductory chapter in the system requirements 
+specification.  
+
+Requirements documents are essential when systems are outsourced for development, when 
+different teams develop different parts of the system, and when a detailed analysis of the 
+requirements is mandatory. In other circumstances, such as software product or business system 
+development, a detailed requirements document may not be needed. Agile methods argue that 
+requirements change so rapidly that a requirements document is out of date as soon as it is 
+written, so the effort is largely wasted. Rather than a formal document, agile approaches often 
+collect user requirements incrementally and write these on cards or whiteboards as short user 
+stories. The user then prioritizes these stories for implementation in the next increment of the 
+system.  
+For business systems where requirements are unstable, this approach is a good one. However, it 
+is still useful to write a short supporting document that defines the business and dependability 
+requirements for the system; it is easy to forget the requirements that apply to the system as a 
+whole when focusing on the functional requirements for the next system release. The 
+requirements document has a diverse set of users, ranging from the senior management of the 
+organization that is paying for the system to the engineers responsible for developing the 
+software.  
+
+The Figure below shows possible users of the document and how they use it.. 
+Figure 4.7: Users of a Requirements document (Sommerville,  I.  2021)   
+The diversity of possible users means that the requirements document has to be a compromise. 
+It has to describe the requirements for customers, define the requirements in precise detail for 
+developers and testers, as well as include information about future system evolution. Information 
+on anticipated changes helps system designers to avoid restrictive design decisions and 
+maintenance engineers to adapt the system to new requirements. 
+
+The level of detail that you should include in a requirements document depends on the type of 
+system that is being developed and the development process used. Critical systems need detailed 
+requirements because safety and security have to be analyzed in detail to find possible 
+requirements errors. When the system is to be developed by a separate company (e.g., through 
+outsourcing), the system specifications need to be detailed and precise. If an in-house, iterative 
+development process is used, the requirements document can be less detailed. Details can be 
+added to the requirements and ambiguities resolved during development of the system. 
+ 

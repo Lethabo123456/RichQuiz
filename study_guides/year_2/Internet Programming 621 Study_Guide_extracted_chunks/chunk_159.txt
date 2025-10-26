@@ -1,0 +1,21 @@
+nd line. 
+The example above is fairly trivial, but it shows how the concept works. Here is a slightly more 
+complex example:  
+  
+$trigFunctions = array( “sin”, “cos”, “tan” );  
+$degrees = 30;  
+foreach ( $trigFunctions as $trigFunction ) {  
+echo “$trigFunction($degrees) = “ . $trigFunction( deg2rad( $degrees ) ) . “ < br/ > ”;  
+}  
+  
+This code creates an array of three built - in function names — “ sin ” , “ cos ”, and “ tan “ — and 
+sets up a $degrees variable. It then loops through the array. For each element, it calls the function 
+whose name is stored in the element, passing in the value of $degrees converted to radians (using 
+PHP ’ s built - in deg2rad() function), and displays the result. Here ’ s the output from the code:  
+  
+sin(30) = 0.5 cos(30) = 
+0.866025403784  
+tan(30) = 0.57735026919  
+  
+In the real world, variable function calling is often used to dynamically select a function to 
+execute on the fly, depending on, for example, user input or other external factors

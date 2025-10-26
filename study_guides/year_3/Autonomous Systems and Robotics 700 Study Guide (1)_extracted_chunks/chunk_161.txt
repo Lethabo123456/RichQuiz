@@ -1,0 +1,41 @@
+Initial responseÁ 
+The initial_response function can be used to compute the response of the system with no input, 
+but starting from a given initial condition. This function returns a response object, which can be 
+used for plotting. 
+Add the following lines of code to your program 
+response = ct.initial_response(sys, X0=[1, 0, 0, 0]) 
+cplt = response.plot() 
+plt.show() 
+output 
+ 
+You can also use the response object to get direct access to the states and outputs as follows: 
+# Plot the outputs of the system on the same graph, in different colors 
+t = response.time 
+
+x = response.states 
+plt.plot(t, x[0], 'b', t, x[1], 'r') 
+plt.legend(['$x_1$', '$x_2$']) 
+plt.xlim(0, 50) 
+plt.ylabel('States') 
+plt.xlabel('Time [s]') 
+plt.title("Initial response from $x_1 = 1$, $x_2 = 0$"); 
+
+
+
+Step response 
+Similar to initial_response, you can also generate a step response for a linear system using 
+the step_response function, which returns a time response object. We can analyze the properties 
+of the step response using the stepinfo command: 
+cplt = ct.step_response(sys).plot() 
+step_info = ct.step_info(sys) 
+print("Input 0, output 0 rise time = ", 
+      step_info[0][0]['RiseTime'], "seconds\n") 
+# Plot the inputs on top of the outputs 
+cplt = stepresp.plot(plot_inputs='overlay') 
+plt.show() 
+# Look at the "shape" of the step response 
+print(f"{stepresp.time.shape=}") 
+print(f"{stepresp.inputs.shape=}") 
+print(f"{stepresp.states.shape=}") 
+print(f"{stepresp.outputs.shape=}") 
+output

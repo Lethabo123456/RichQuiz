@@ -1,0 +1,26 @@
+3.2 Activities, Layouts, and Intents 
+The primary structural components for an Android app are Activities and Layouts. These components 
+work together to present a display with which the user can interact. Intents are objects that are used 
+to switch between activities in an app. All three objects are used as the basis for the structure of your 
+app. Understanding the role and responsibilities of these objects is very important in the effective 
+development of an Android app. 
+
+The Activity Class 
+The Activity class is designed to handle a single task that the user can perform. Activities almost always 
+have a visible component that allows the user to interact with the activity to perform the task. The 
+Activity class is not directly instantiated in an Android app. Rather, it is subclassed for every activity 
+that the user needs to perform in the app. 
+
+These subclasses are stored as .java files in the app project’s 
+java folder. This allows developers to inherit all the functionality of the Activity class and add their 
+own unique functionality through Java code. One of the most important inherited functions of the 
+Activity class is the capability to respond to life-cycle events such as onCreate and onPause. 
+The Activity class has a number of important subclasses. Only two of these subclasses are used in this 
+book. The first of these is AppCompatActivity. 
+
+This activity is a subclass of FragmentActivity, which is 
+a subclass of Activity. Fragments allow the developer to include multiple tasks or panes within a single 
+activity. The AppCompatActivity allows for the implementation of fragments and makes this 
+functionality and others compatible with earlier versions of the Android operating system. Since we 
+are making our app available on Android version 15 and later, we will need to use this as the super 
+class of all our activities.

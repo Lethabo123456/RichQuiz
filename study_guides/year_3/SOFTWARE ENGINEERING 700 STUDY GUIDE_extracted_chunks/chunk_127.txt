@@ -1,0 +1,29 @@
+4.2.1 Functional Requirements   
+The functional requirements for a system describe what the system should do. These 
+requirements depend on the type of software being developed, the expected users of the 
+software, and the general approach taken by the organization when writing requirements. When 
+expressed as user requirements, functional requirements should be written in natural language 
+so that system users and managers can understand them.  
+Functional system requirements expand the user requirements and are written for system 
+developers. They should describe the system functions, their inputs and outputs, and exceptions 
+in detail. Functional system requirements vary from general requirements covering what the 
+system should do to very specific requirements reflecting local ways of working or an 
+organization’s existing systems. 
+
+For example, here are examples of functional requirements for the Mentcare system, used to 
+maintain information about patients receiving treatment for mental health problems: 
+• A user shall be able to search the appointments lists for all clinics.  
+• The system shall generate each day, for each clinic, a list of patients who are expected to 
+attend appointments that day. 
+• Each staff member using the system shall be uniquely identified by his or her eight-digit 
+employee number 
+
+These user requirements define specific functionality that should be included in the system. 
+Functional requirements, as the name suggests, have traditionally focused on what the system 
+should do. However, if an organization decides that an existing off-the-shelf system software 
+product can meet its needs, then there is very little point in developing a detailed functional 
+specification. In such cases, the focus should be on the development of information requirements 
+that specify the information needed for people to do their work. Information requirements 
+specify the information needed and how it is to be delivered and organized. Therefore, an 
+information requirement for the Mentcare system might specify what information is to be 
+included in the list of patients expected for appointments that day

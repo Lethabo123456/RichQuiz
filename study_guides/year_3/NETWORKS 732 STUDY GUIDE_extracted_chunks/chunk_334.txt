@@ -1,0 +1,47 @@
+6.11 Other Security Conﬁgurations 
+Some additional security options you might want to enable on your wireless network include the 
+following: 
+
+• AP and antenna placement: It might seem like a simple thing but it’s important to think 
+about where you place your AP in your home or business area. Placing the AP near an 
+outside wall might result in a weak signal on the far side of your building but leave a strong 
+signal vulnerable to attack from someone parked nearby. Positioning the AP in the center 
+of its intended range increases the strength of the signal for approved users while 
+reducing the likelihood that anyone outside of that area can get a strong enough signal to 
+connect to the network. Also, some APs have antennas that can be positioned to 
+optimize signal reach. Consider what antenna placement will give the best signal where 
+you want it and reduce the strength of the signal outside your building or other intended 
+range. Similarly, experiment with various power levels to determine the needed 
+transmission power to reach your intended range while not overly extending your range outside 
+the area you manage. 
+• Geofencing: This more sophisticated security technique detects a Wi-Fi client’s 
+geographical position and activates resources or access according to that location. For 
+example, a shopping mall or store might use geofencing to oﬀer customers Internet access 
+and targeted marketing information (such as coupons) while not making these resources 
+available to people outside a deﬁned area. Deploying a mesh network of APs makes it 
+possible to track a Wi-Fi client device physical movement throughout the network. 
+• Guest network: Many establishments and homeowners, for that matter create an isolated 
+guest network through their Wi-Fi router/access point. The guest network has a separate 
+SSID and passphrase and can be managed with diﬀerent rules or time restrictions. This is a 
+smart security precaution, as it gives guests access to Internet service through an open 
+network without opening the doors to the entire LAN on that router. Parents, also, might 
+want to give their children use of an SSID with more limited network access to enforce 
+household rules regarding Internet use. 
+• Wireless client isolation: This technique is like a guest network but simpler. Wireless client 
+isolation allows a wireless client onto the network but imposes ﬁrewall rules to restrict that 
+client’s ability to communicate with only the default gateway, not other devices on the 
+network. Like with a guest network, wireless clients can communicate with the Internet but 
+have no access to other network resources. 
+• Captive portal: If you do provide a guest network, either at home or at a business, be sure to 
+set up a captive portal. This is the ﬁrst page a new client sees in the browser when 
+connecting to the guest network, and it usually requires the user to agree to a set of terms and 
+conditions before gaining further access to the guest network. 
+The captive portal should remind users of the following details: 
+o They are connecting to a network that does not provide user authentication or data 
+encryption. This means data is not secure when transmitted over this connection. 
+o They should be careful about what data they transmit, even over email, while using the 
+guest network. 
+o They should take extra care to avoid engaging in any illegal activity through the network 
+connection, as that activity could be traced back to your public IP address. 
+
+Figure 6.14 Adjust a network connection’s security settings (West, 2002) 

@@ -1,0 +1,16 @@
+e management 
+is also important for database performance tuning. Performance tuning relates to the activities 
+that make the database perform more efficiently in terms of storage and access speed.  
+• 
+Data transformation and presentation. The DBMS transforms entered data to conform to 
+required data structures. That is, the DBMS formats the physically retrieved data to make it 
+conform to the user’s logical expectations.  
+• 
+Security management. The DBMS creates a security system that enforces user security and data 
+privacy. Security rules determine which users can access the database, which data items each 
+user can access, and which data operations (read, add, delete, or modify) the user can perform. 
+This is especially important in multiuser database systems.  
+• 
+Multiuser access control. To provide data integrity and data consistency, the DBMS uses 
+sophisticated algorithms to ensure that multiple users can access the database concurrently 
+without compromising its integrity.

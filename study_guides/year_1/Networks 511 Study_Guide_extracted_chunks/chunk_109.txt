@@ -1,0 +1,14 @@
+2.6.1 Ethertype: The two bytes after the source MAC in Ethernet II are the Ethertype Identifies the 
+type of frame: 0800 is IP 0806 is ARP 8137 is Novell IPX 8100 is VLAN 802.3 Ethernet uses these two 
+bytes as a length field How does a device know which field is referred to? 
+
+2.6.2 Data (Payload): Following the 14 bytes of Ethernet header will be between 46 and 1500 
+bytes of payload. This will give a minimum Ethernet frame of 60 bytes and a maximum of 1514 bytes 
+14 bytes header + 46 bytes payload = 60 14 bytes header + 1500 bytes payload = 1514 
+
+2.6.3 PDU Encapsulation 
+The “payload” portion of the Ethernet frame usually contains the protocol information from higher 
+layer PDUs such as IP and TCP. Details are in Topic two, Semester 1 Learner guide.  
+Basic Concepts: To address a particular network node you must have the hardware MAC address  If 
+the destination MAC isn't right, it doesn't get there  All higher level protocols sent over Ethernet are 
+encapsulated in an Ethernet frame.

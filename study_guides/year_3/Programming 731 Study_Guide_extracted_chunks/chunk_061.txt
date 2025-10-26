@@ -1,0 +1,24 @@
+When you run this program, you will see the following output: This is 
+
+num: 100   
+The value of num * 2 is 200    
+Let’s take a close look at why this output is generated. The first new line in the program is shown 
+
+here:    
+int num; // this declares a variable called num   
+This line declares an integer variable called num. Java (like most other languages) requires that 
+variables be declared before they are used.   
+   
+Following is the general form of a variable declaration:   
+   
+type var-name;   
+   
+Here, type specifies the type of variable being declared, and var-name is the name of the variable. 
+If you want to declare more than one variable of the specified type, you may use a comma-
+separated list of variable names. 
+
+Java defines several data types, including integer, character, and floating-point. The keyword int 
+specifies an integer type. In the program, the line:   num = 100; // this assigns num the value 100   
+assigns to num the value 100. In Java, the assignment operator is a single equal sign.   
+The next line of code outputs the value of  num preceded by the string “This is num:”.   
+  

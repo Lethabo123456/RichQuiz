@@ -1,0 +1,20 @@
+Non-unicast Packets The number of packets that weren’t directly sent from one workstation to 
+another. For example, a broadcast packet is a non-unicast packet. The number of non-unicast 
+packets should be smaller than the number of unicast packets. If the number of non-unicast 
+packets is as high as or higher than that of unicast packets, too many broadcast packets are being 
+sent over your network. Find the source of these packets and make any necessary adjustments 
+to optimize performance. 
+
+Discards The number of packets that were discarded by the NIC during either transmission or 
+reception because they weren’t assembled correctly. 
+Errors The number of errors that occurred during transmission or reception. (These numbers may 
+indicate problems with the network card.) 
+Unknown Protocols The number of received packets that the Windows networking stack couldn’t 
+interpret. This statistic only shows up in the Received column because if the computer sent them, 
+they wouldn’t be unknown, right? 
+
+Unfortunately, statistics don’t mean much unless they can be colored with time information. For 
+example, if the Errors row shows 71 errors, is that a problem? It might be if the computer has 
+been on for only a few minutes. But 71 errors could be par for the course if the computer has 
+been operating for several days. Unfortunately, the netstat utility doesn’t have a way of indicating 
+how much time has elapsed for these statistics. 

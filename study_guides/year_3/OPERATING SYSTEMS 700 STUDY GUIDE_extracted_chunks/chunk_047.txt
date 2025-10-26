@@ -1,0 +1,43 @@
+Figure 2.2 below reflects First-Fit Allocation, where books are placed in the first available space 
+leading to poor utilization and larger gaps.  
+ 
+Figure 2.2 
+ 
+The bookshelf in figure 2.1 uses the best-fit allocation with books stacked on shelves according 
+to their height, that is all the tall books and no short books, are grouped together on shelves that 
+can accommodate them. The bookshelf in figure 2.2 is a first-fit allocation, where some tall books 
+share space with small books. 
+ 
+If the lists are organized by size, you are optimizing your shelf space, as books arrive, you will be 
+able to put them in the spaces that fit them best. This is a best-fit allocation. If a paperback is 
+returned, you will place it on a shelf with the other paperbacks or at least with other small books. 
+Similarly, oversized books will be shelved with other large books. Your lists make it easy to find 
+the smallest available empty space where the book can fit. The disadvantage of this system is 
+that you are wasting time looking for the best space. Your other customers must wait for you to 
+put each book away, so you will not be able to process as many customers as you could with the 
+other kind of list. 
+
+In the second case, a list organized by shelf location, you are optimizing the time it takes you to 
+put books back onto the shelves by using a first-fit scheme. This system ignores the size of the 
+book that you are trying to put away. If the same paperback book arrives you can quickly find it 
+an empty space. In fact, any nearby empty space will suffice if it is large enough and if it is close 
+to your desk. In this case, you are optimizing the time it takes you to shelve the books. This is the 
+fast method of shelving books and if speed is important, it is the better of the two alternatives. 
+However, it is not a good choice if your shelf space is limited, or if many large books are returned, 
+because large books must wait for the large spaces. If all your large spaces are filled with small 
+ 
+books, the customers returning large books must wait until a suitable space becomes available. 
+Eventually you will need time to rearrange the books and compact your collection. 
+Figure 2.3 shows how a large job can have problems with a first-fit memory allocation list. Jobs 1, 
+2, and 4 can enter the system and begin execution. Job 3 must wait even though there would be 
+more than enough room to accommodate it if all the fragments of memory were added together. 
+First-fit offers fast allocation, but it is not always efficient. On the other hand, the same job list 
+using a best-fit scheme would use memory more efficiently, as shown in Figure 2.4. In this case, 
+a best-fit scheme would yield better memory utilization. 
+ 
+Figure 2.3 
+ 
+Using a first-fit allocation, Job 1 claims the first available space. Job 2 then claims the first partition 
+large enough to accommodate it, but by doing so it takes the last block large enough to 
+accommodate Job 3. Therefore, Job 3 (indicated by the asterisk) must wait until a large block 
+becomes available, even though there is 75K of unused memory space (internal fragmentation). 

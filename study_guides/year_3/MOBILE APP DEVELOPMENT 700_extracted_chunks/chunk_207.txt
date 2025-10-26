@@ -1,0 +1,40 @@
+Code the DatePicker Dialog 
+The DatePicker dialog is a window that opens when the user presses the Change button. A custom 
+dialog requires both a layout, which you have already created, and a class that contains the code that 
+gives the dialog its behavior. Using a custom dialog in an activity also requires changes to the activity 
+code. The following describes how to code the DatePickerDialog class and make changes to the 
+MainActivity to display and use the dialog. 
+The first task is to create a new class to hold the custom dialog code. Right-click 
+com.example.mycontactlist in the java folder and select New > Java Class from the pop-up menu. Enter 
+DatePickerDialog for the Name and click OK. The new class opens with a limited amount of code. 
+Replace all that code except the first line (package com.example.mycontactlist) with the code in Listing 
+4.10. 
+
+A significant number of important concepts for Android app development are introduced in this code. 
+Fortunately, dialog coding follows the same pattern, so after you understand the components, you 
+can apply them whenever you need your app to show a dialog window. 
+
+▪ Line 11—The declaration of the class includes the keywords extends DialogFragment. This makes  
+the DatePickerDialog class a subclass of the DialogFragment, which in turn is a subclass of the 
+Fragment class discussed earlier in this chapter. All custom dialogs in an Android app should be created 
+in this way.
+▪ Line 13—A class variable is declared to hold the selected date. 
+▪ Lines 15–17—A listener must be created with the DialogFragment. This is how the dialog 
+communicates the user’s actions on the dialog back to the activity that displayed the dialog. The 
+listener must have a method to report the results of the dialog. The activity will have to implement 
+the listener to handle the user actions. 
+▪ Lines 19–21—A constructor for the class is required. It almost always is empty. 
+▪ Lines 24–26—The OnCreateView method is the workhorse of the class. It creates the View from 
+the resources in the layout file associated with it by the line inflater.inflate(…). The method also gets 
+references to the widgets on the layout and sets up listeners for the widgets in the layout so that they 
+can respond to user action. 
+▪ Line 29—The selectedDate Calendar object is instantiated. By default, it is set to the current date. 
+▪ Lines 31–38—A listener is set up to capture the selected date anytime the user changes the date. 
+Calendar objects are used to hold dates and times. This object stores a time/date as a number of 
+milliseconds (millis) from January 1, 1970. A new calendar object is created and is set to the selected 
+date. The calendar object internally calculates the millis. 
+▪ Lines 40–46—A button-click listener is set up on the Save button. When the user clicks the OK 
+button, it sends the last selected date to the saveItem method to report the selection to the main 
+activity. 
+▪ Lines 58–63—The saveItem method gets a reference to the listener and calls its method to report 
+the results of the dialog.

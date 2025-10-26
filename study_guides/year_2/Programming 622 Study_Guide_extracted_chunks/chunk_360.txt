@@ -1,0 +1,13 @@
+lement of the stack in the second 
+array slot, and so on. The top of the stack is the index of the last element added to the stack.  
+  
+In this implementation of a stack, stack elements are stored in an array, and an array is a random access 
+data structure; that is, you can directly access any element of the array. However, by definition, a stack is 
+a data structure in which the elements are accessed (popped or pushed) at only one end—that is, a Last 
+In First Out data structure. Thus, a stack element is accessed only through the top, not through the bottom 
+or middle. This feature of a stack is extremely important and must be recognized in the beginning.  
+  
+To keep track of the top position of the array, we can simply declare another variable, called stackTop.  
+  
+The following class, stackType, implements the functions of the abstract class stackADT. By using a pointer, 
+we can dynamically allocate arrays, so we will leave it for the user to specify the size of the array (that

@@ -1,0 +1,14 @@
+it 93 have been served. When 
+the server becomes free at time unit 97, the customer arriving at time unit 93 starts the transaction. 
+Because the transaction of the customer arriving at time unit 93 starts at time unit 97 and it takes 5 
+minutes to complete a transaction, when the simulation loop ends, the customer arriving at time unit 93 
+is still at the server. Moreover, customers arriving at time units 96 and 100 are in the queue. For simplicity, 
+we assume that when the simulation loop ends, the customers at the servers are considered served. The 
+general algorithm for this function is as follows:  
+1. Declare and initialize the variables such as the simulation parameters, customer number, clock, 
+total and average waiting times, number of customers arrived, number of customers served, 
+number of customers left in the waiting queue, number of customers left with the servers, 
+waitingCustomersQueue, and a list of servers.  
+2. The main loop is as follows:  
+  
+for (clock = 1; clock

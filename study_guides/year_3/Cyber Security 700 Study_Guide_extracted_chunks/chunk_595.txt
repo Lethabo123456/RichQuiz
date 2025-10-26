@@ -1,0 +1,21 @@
+A security policy should include a section related to contingency plans for security incidents that 
+require emergency fixes. It should include the following: 
+ 
+ Procedures for determining that an emergency fix is required 
+ Emergency contact information 
+ A summary of methods to be used related to hardware 
+ A summary of methods to be used related to software 
+ Procedures for approving emergency fixes and for logging the incident 
+ Procedures for revoking any emergency access required for the fix 
+ Procedures for documenting the incident, reviewing the response, and removing the fix 
+ A list of assets and resources that are most important to protect, with relative priorities 
+assigned 
+ 
+A key aspect of responding to an emergency incident is that one or more individuals must have the 
+authority to make fixes. Security officers must order emergency actions to protect information assets 
+and override administrator privileges and roles to allow emergency access. A good security practice is 
+to share system administrator access privileges with someone other than the system administrator, if 
+for no other reason than to have emergency system access if the administrator is unavailable. But, 
+having said this, such total access also requires total accountability and must be limited to the fewest 
+number of staff necessary to keep the system secure because each person with total system access 
+has the ability to override any and all security features. 

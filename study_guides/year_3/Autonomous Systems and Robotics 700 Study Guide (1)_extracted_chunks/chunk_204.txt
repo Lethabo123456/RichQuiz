@@ -1,0 +1,34 @@
+Message Passing Protocols(Simons, 2018) 
+
+Activities 
+
+Distributed Systems  
+
+How to build systems where multiple computers work together: 
+• Consensus Algorithms (Raft) - How computers agree on decisions 
+• Message Systems (Kafka, ZeroMQ) - How computers talk to each other 
+• Network Communication (gRPC, TCP/IP) - The foundation of internet communication 
+• ROS2 DDS - Advanced robot communication systems 
+Prerequisites & Setup (Windows) 
+• Install Required Software
+# 1. Install Python 3.10+ from python.org 
+# 2. Install Node.js from nodejs.org (for web visualizations) 
+# 3. Install Git from git-scm.com
+
+# Create our project folder 
+
+mkdir C:\distributed_systems 
+cd C:\distributed_systems 
+ 
+Consensus Algorithms (Raft) 
+Understanding Raft Consensus 
+
+What is Consensus?  
+
+Imagine 5 friends trying to decide where to eat dinner via group chat. Even if some friends don't 
+respond or their messages get lost, they need to agree on ONE restaurant. That's consensus in 
+distributed systems! 
+Create Raft Implementation 
+File: C:\distributed_systems\1_consensus\raft_node.py
+
+#!/usr/bin/env python3

@@ -1,0 +1,27 @@
+# Create a linear regression model 
+model = LinearRegression() 
+ 
+# Fit the model to the data 
+model.fit(hours_studied, exam_scores) 
+ 
+# Make predictions for new data points 
+new_hours = np.array([11, 12, 13]).reshape(-1, 1) 
+predicted_scores = model.predict(new_hours) 
+ 
+# Print the coefficients (slope and intercept) 
+print("Coefficient (slope):", model.coef_[0]) 
+print("Intercept:", model.intercept_) 
+ 
+# Plot the data and the regression line 
+plt.scatter(hours_studied, exam_scores, label="Data Points") 
+plt.plot(hours_studied, model.predict(hours_studied), color='red', 
+label="Regression Line") 
+plt.scatter(new_hours, predicted_scores, color='green', label="Predictions") 
+plt.xlabel("Hours Studied") 
+plt.ylabel("Exam Score") 
+plt.legend() 
+plt.show() 
+  
+Output: 
+Coefficient (slope): 7.242424242424245 
+Intercept: 45.66666666666665 

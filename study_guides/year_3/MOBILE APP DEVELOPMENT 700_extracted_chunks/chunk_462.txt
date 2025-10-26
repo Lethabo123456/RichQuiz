@@ -1,0 +1,31 @@
+Using the phone requires starting the phone app. As you have seen before, all apps are made up of 
+activities, and to start an activity, you use an intent: 
+ 
+Line 2—A new intent is instantiated with the parameter Intent.ACTION_CALL, which tells Android 
+that you want to use the phone to make a call. 
+
+6.5.4 Line 3—The telephone number to be called is passed to the intent as a uniform resource 
+identifier (URI). A URI is similar to a uniform resource locator (URL), except that a URL identifies 
+a location on the World Wide Web, whereas a URI can be used to identify a local resource. 
+Remember to call the phone call initialization method in the onCreate method. 
+This is all that’s needed to make a phone call through an app! If you run the app now, when editing is 
+turned on, the call function works. However, when you are in viewing mode, it does not. This is 
+because you disabled the EditTexts in viewing mode to avoid making any accidental changes to the 
+user’s information. To correct this, you need to modify the setForEditing method in MainActivity.java. 
+An EditText has to be enabled to allow it to respond to a long-click event. This means that you cannot 
+ever disable them. Delete the setEnabled lines of code associated with the editPhone and editCell 
+variables. The problem with doing this is that now the phone number will be editable, even in viewing 
+mode. To correct this problem, you need to set the inputType of the EditText to null when in viewing 
+mode, and set it back to accepting phone numbers when in editing mode. To do this, modify the if 
+(enabled) block of code to include the following in the true block: 
+
+editPhone.setInputType(InputType.TYPE_CLASS_PHONE); 
+editCell.setInputType(InputType.TYPE_CLASS_PHONE);  
+ 
+Add the following to the false block (the else block): 
+editPhone.setInputType(InputType.TYPE_NULL); 
+editCell.setInputType(InputType.TYPE_NULL); 
+ 
+Your app can now call your contacts by pressing and holding on a phone number. Run the app. If you 
+run the app in the emulator, the emulator will pretend to call a number, but running it on an Android 
+device will actually make the call. 

@@ -1,0 +1,24 @@
+Watermarking the background image 
+ 
+Here’s how                            Here’s why
+----------------------------------------------------------------------------------------
+In the browser, verify that the page is open 
+----------------------------------------------------------------------------------------
+Scroll down to the end of the         Notice that the background image also scrolls
+page                                  with the text.
+----------------------------------------------------------------------------------------
+Open the source code                  You'll edit the code to fix the background image. 
+----------------------------------------------------------------------------------------
+Edit the BODY tag to read:            To watermark the background. 
+<BODY BGCOLOR=Cornsilk 
+BACKGROUND="Back.gif" 
+BGPROPERTIES=FIXED> 
+----------------------------------------------------------------------------------------
+Update and close the source code 
+----------------------------------------------------------------------------------------
+Refresh the page 
+----------------------------------------------------------------------------------------
+Scroll up to the beginning of         Notice that now only the text scrolls and the
+the page                              background image remains fixed. 
+----------------------------------------------------------------------------------------
+

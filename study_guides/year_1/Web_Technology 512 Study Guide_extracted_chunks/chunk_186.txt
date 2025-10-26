@@ -1,0 +1,23 @@
+e a SPAN tag. The SPAN tags have a CSS colour and an ID. We will be using these 
+SPAN tags to display error messages. 
+ 
+The Submit button has an onClick event. This event will activate a function that we 
+have called validate. 
+Our rather messy form, then, looks like this in a browser: 
+ 
+Figure 7.2 – HTML Form 
+7.1.1 The Validate Function 
+The only thing our JavaScript will be doing is checking to see if users have filled out the 
+form correctly. The strategy we will take is this: 
+ 
+Set up four functions, one for each form element 
+ 
+Return a value of true or false from these functions. A value of true will mean 
+everything is OK, while a value of false will mean an error has been detected. 
+ 
+The true or false values returned from the functions will be checked in an IF 
+Statement. If all the values are true it means all form elements have been filled in 
+correctly. So we can go ahead and send the form. If just one of them is false then the 
+form will not be sent. 
+ 
+So add a fun

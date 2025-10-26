@@ -1,0 +1,15 @@
+e. A relational database is defined as a series of related 
+tables, stored together with a mini- mum of duplication to achieve a consistent and controlled 
+pool of data. 
+ 
+So a relational database is made up of a number of tables. In loose terms, each table stores the 
+data about someone or something of interest to the firm. This someone or something is known 
+as an entity. (We will see later that some- times the data about one entity is stored in two or 
+more tables, and sometimes the data about two or more entities are stored in one table.) For 
+example, a small business selling office furniture might have a customer table to store all the 
+data about their customers, a supplier table to store information about suppliers and an order 
+table that records all the orders that are placed by its customers. In this example, there are three 
+entities – customer, order and supplier. 
+ 
+The rows in a table collect together all the data about one specific entity. For example, in the 
+customer

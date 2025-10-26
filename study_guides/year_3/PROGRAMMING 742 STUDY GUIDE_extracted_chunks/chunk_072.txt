@@ -1,0 +1,70 @@
+Table 2-1. The methods of Object 
+ 
+METHOD               WHAT IT DOES 
+-------------------------------------------------------------------------------------------------
+Equals()             Evaluates whether two objects are equivalent. 
+-------------------------------------------------------------------------------------------------
+GetHashCode()        Allows objects to provide their own hash function for use in collections.
+------------------------------------------------------------------------------------------------- 
+GetType()            Provides access to the object 
+-------------------------------------------------------------------------------------------------
+ToString()           Provides a string representation of the ob-ject 
+-------------------------------------------------------------------------------------------------
+Finalize( )          Cleans up non memory resources; imple-mented by a destructor 
+-------------------------------------------------------------------------------------------------
+MemberwiseClone( )   Creates copies of the object; should never be implemented by your type 
+-------------------------------------------------------------------------------------------------
+ReferenceEquals( )   Evaluates whether two objects refer to the same instance
+-------------------------------------------------------------------------------------------------
+
+Example 2-4 illustrates the use of the ToString ( ) method inherited from Obj ect, as well as the 
+fact that primitive datatypes such as int can be treated as if they inherit from Obj e ct. 
+Example 2-4. Inheriting from Object 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+    public class SomeClass 
+    { 
+        public SomeClass(int val) 
+        { 
+            value = val; 
+        } 
+ 
+        public override string ToString() 
+{
+            return value.ToString(); 
+ 
+        } 
+        private int value; 
+ 
+        public class Tester 
+        { 
+            static void Main() 
+            { 
+                int i = 5; 
+                Console.WriteLine("The value of i is: { 0} ", i.ToString()); 
+ 
+                SomeClass s = new SomeClass(7); 
+ 
+                Console.WriteLine("The value of i is: { 0} ", s.ToString()); 
+            } 
+        } 
+    } 
+} 
+  
+Output: 
+ 
+The documentation for Object.ToString ( ) reveals its signature: 
+public virtual string ToString( ); 
+It is a public virtual method that returns a string and that takes no parameters. All the built-in 
+types, such as int, derive from Obj ect and so can invoke Obj ect's methods. 
+Example 2-4 overrides the virtual function for SomeClass, which is the usual case, so that the 
+class' ToString ( ) method will return a meaningful value. If you comment out the overridden 
+function, the base method will be invoked, which will change the output to: 
+The value of s is SomeClass 
+Thus, the default behavior is to return a string with the name of the class itself. 

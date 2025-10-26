@@ -1,0 +1,30 @@
+Information Handling 
+Information handling refers to processing, storing, communicating, or otherwise handling information 
+consistent with its classification. 
+ISO 27002 lists the following relevant considerations: 
+
+ Access restrictions supporting the protection requirements for each level of classification 
+ Maintenance of a formal record of the authorized recipients of assets 
+ Protection of temporary or permanent copies of information to a level consistent with the 
+protection of the original information 
+ Storage of IT assets in accordance with manufacturers’ specifications 
+ Clear marking of all copies of media for the attention of the authorized recipient 
+Wherever possible, use automated tools to enforce the proper handling of information based on its 
+classification level. These can be special-purpose tools for the following: 
+ Labeling information easily, correctly, and consistently 
+ Binding classification details to information (for example, using metadata, XML attributes, or 
+similar techniques) 
+ Communicating their protection requirements effectively 
+
+An organization can also take advantage of broader information management tools, such as a 
+document management system (DMS) or a records management system (RMS); these are discussed 
+in Section 6.3. 
+The automated tools should facilitate integration with other security tools, such as encryption and 
+digital signature modules and data loss prevention (DLP) packages.
+
+data loss prevention (DLP) 
+A set of technologies and inspection techniques used to classify information content contained within 
+an object—such as a file, an email, a packet, an application, or a data store—while at rest (in storage), 
+in use (during an operation), or in transit (across a network). DLP tools also have the ability to 
+dynamically apply a policy—such as log, report, classify, relocate, tag, and encrypt—and/or apply 
+enterprise data rights management protections.

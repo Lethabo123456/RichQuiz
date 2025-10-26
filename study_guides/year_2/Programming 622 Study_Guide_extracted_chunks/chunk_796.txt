@@ -1,0 +1,33 @@
+aph is empty; // 
+otherwise, returns false.  
+  
+void createGraph(); //Function 
+to create a graph.  
+//Postcondition: The graph is created using the // 
+adjacency list representation.  
+  
+void clearGraph(); //Function 
+to clear graph.  
+//Postcondition: The memory occupied by each vertex // 
+is deallocated.  
+  
+void printGraph() const;  
+//Function to print graph.  
+//Postcondition: The graph is printed.  
+  
+void depthFirstTraversal();  
+//Function to perform the depth first traversal of //the 
+entire graph.  
+//Postcondition: The vertices of the graph are printed // 
+using the depth first traversal algorithm.  
+  
+void dftAtVertex(int vertex);  
+//Function to perform the depth first traversal of  
+//the graph at a node specified by the parameter vertex. 
+//Postcondition: Starting at vertex, the vertices are // 
+printed using the depth first traversal algorithm.  
+  
+void breadthFirstTraversal();  
+//Function to perform the breadth first traversal of //the 
+entire graph.  
+//Postco

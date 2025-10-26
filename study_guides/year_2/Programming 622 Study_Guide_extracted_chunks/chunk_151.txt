@@ -1,0 +1,99 @@
+31  
+ 
+deque<int>::iterator deqIt;    
+  
+  
+  
+  
+  
+  
+//Line 32  
+ 
+deqIt = intDeq.begin();   
+  
+  
+  
+  
+  
+  
+  
+//Line 33  
+ 
+++deqIt;   
+  
+  
+//deqIt points to the second element   
+  
+//Line 34  
+ 
+intDeq.insert(deqIt, 444);   
+  
+  
+  
+  
+  
+  
+  
+//Line 35  
+ 
+cout << "Line 36: After inserting 444, intDeq: ";  
+  
+  
+  
+  
+ //Line 36  
+ 
+copy(intDeq.begin(), intDeq.end(), screen);    
+  
+  
+  
+  
+//Line 37  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 38  
+ 
+return 0;   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 39  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 40  
+  
+  
+Sample Run:  
+Line 14: intDeq: 13 75 28 35  
+Line 19: After adding two more elements, one at the front  
+and one at the back, intDeq: 0 13 75 28 35 100  
+Line 24: After removing the first two elements, intDeq: 75 28 35 100  
+Line 29: After removing the last two elements, intDeq = 75 28 Line 
+36: After inserting 444, intDeq: 75 444 28  
+  
+The statement in Line 8 declares a deque container intDeq of type i

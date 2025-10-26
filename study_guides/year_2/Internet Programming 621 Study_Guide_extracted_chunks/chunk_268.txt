@@ -1,0 +1,99 @@
+16 
+b) 16 
+4 
+60 
+1.6666666666667 
+4 
+c) 4 
+16 
+4 
+60 
+1.6666666666667 
+d) 1.6666666666667 
+4 
+16 
+4 
+
+60 
+  
+Answer: b 
+ 
+151. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 5; 
+$y = 10; 
+$z = "$x + $y"; 
+echo "$z"; 
+?> 
+a) 15 
+b) 10 + 5 
+c) $z 
+d) $x + $y 
+  
+Answer: b 
+  
+152. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 4; 
+$y = 3; 
+$z = 1; 
+echo "$x = $x + $y + $z"; 
+?> 
+a) 4 = 4 + 3 + 1 
+b) 8 
+c) 8 = 4 + 3 +1 
+d) Error 
+  
+Answer: a 
+  
+153. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 4; 
+$y = 3 
+$z = 1; 
+$z = $z + $x + $y; 
+
+echo "$z"; 
+?> 
+a) $z 
+b) 15 
+c) 8 
+d) 1 
+  
+Answer: c 
+  
+154. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 3.3; 
+$y = 2; 
+echo $x % $y; 
+?> 
+  
+a) 0 
+b) 1 
+c) 2 
+d) Error 
+  
+Answer: b 
+  
+155. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 10; 
+$y = 4; 
+$z = 3; 
+echo $x % $y % $z; 
+?> 
+a) 0 
+b) 1 
+c) 2 
+d) Error 
+  
+Answer: c 
+  
+156. 
+What will be the o

@@ -1,0 +1,27 @@
+initialized; that is, the stack must be empty.  
+  
+ 
+5.4.1  Main Algorithm  
+  
+Pursuant to the previous discussion, the main algorithm in pseudocode is as follows:  
+  
+Read the first character while 
+not the end of input data  
+{  
+a. initialize the stack  
+b. process the expression  
+c. output result  
+d. get the next expression  
+}  
+  
+To simplify the complexity of the function main, we write four functions— evaluateExpression, 
+evaluateOpr, discardExp, and printResult. The function evaluateExpression, if possible, evaluates the 
+expression and leaves the result in the stack. If the postfix expression is error free, the function printResult 
+outputs the result. The function evaluateOpr evaluates an operator, and the function discardExp discards 
+the current expression if there is any error in the expression.  
+  
+ 
+5.4.2  Function evaluateExpression  
+  
+The function evaluateExpression evaluates each postfix expression. Each expression ends with the symbol 
+=. The general algori

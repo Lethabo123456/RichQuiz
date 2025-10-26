@@ -1,0 +1,11 @@
+nts of a given problem domain. This design is descriptive and narrative in form. In other 
+words, it is generally composed of a graphical representation as well as textual descriptions of the 
+main data elements, relationships, and constraints. In this stage, data modelling is used to create an 
+abstract database structure that rep-resents real-world objects in the most realistic way possible. 
+The conceptual model must embody a clear understanding of the business and its functional areas. 
+At this level of abstraction, the type of hardware and database model to be used might not have 
+been identified yet. Therefore, the design must be software-and hardware-independent so that the 
+system can be set up within any platform chosen later. 
+Keep in mind the following minimal data rule: All that is needed is there, and all that is there is 
+needed. In other words, make sure that all data needed is in the model and that all data in the model 
+is needed. All data elements required by the data

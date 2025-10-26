@@ -1,0 +1,57 @@
+6 
+c) 5 + 10 = 15 
+7 + 13 = 20 
+2 + 4 = 6 
+d) 5 + 10 = 20 
+7 + 13 = 6 
+2 + 4 = 15 
+  
+Answer: d 
+  
+105. 
+What will be the output of the following PHP code? 
+<?php 
+function addFive($num) 
+
+{ 
+$num += 5; 
+} 
+function addSix(&$num) 
+{ 
+$num += 6; 
+} 
+$orignum = 10; 
+addFive( &$orignum ); 
+echo "Original Value is $orignum<br />"; 
+addSix( $orignum ); 
+echo "Original Value is $orignum<br />"; 
+?> 
+a) Original Value is 15 
+Original Value is 21 
+b) Original Value is 15 
+Original Value is 21 
+c) Original Value is 15 
+Original Value is 15 
+d) None Of The Above  
+Answer: b 
+  
+106. 
+What will be the output of the following PHP code? 
+<?php 
+function addFunction($num1, $num2) 
+{ 
+$sum = $num1 + $num2; 
+return $sum; 
+} 
+$return_value = addFunction(10, 20); 
+echo "Returned value from the function : $return_value" 
+?> 
+a) Returned value from the function : $return_value 
+b) Error 
+c) Returned value from the function : 30 
+d) Returned value from the function :  
+Answer: c 
+
+  
+107. 
+What will be th

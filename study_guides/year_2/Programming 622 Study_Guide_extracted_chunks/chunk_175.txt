@@ -1,0 +1,29 @@
+follows:  
+  
+nodeType *head;  
+  
+ 
+FIGURE 3-4 Linked list with four nodes  
+  
+ 
+3.1.1  Linked Lists: Some Properties  
+  
+To better understand the concept of a linked list and a node, some important properties of linked lists are 
+described next.  
+  
+Consider the linked list in Figure 3-4.  
+  
+
+85  
+  
+This linked list has four nodes. The address of the first node is stored in the pointer head. Each node has 
+two components: info, to store the info, and link, to store the address of the next node. For simplicity, we 
+assume that info is of type int.  
+  
+Suppose that the first node is at location 2000, the second node is at location 2800, the third node is at 
+location 1500, and the fourth node is at location 3600. Table 3-1 shows the values of head and some other 
+nodes in the list shown in Figure 3-4.  
+  
+TABLE 3-1: Values of head and some of the nodes of the linked list in Figure 3-4  
+   
+Suppose that current is a pointer of the same type as the pointer head. Then the stateme

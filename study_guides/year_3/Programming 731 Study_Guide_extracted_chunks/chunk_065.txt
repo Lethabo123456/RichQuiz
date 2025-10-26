@@ -1,0 +1,23 @@
+1.8. Primitive Data Types 
+   
+Integer Numbers    
+ 
+Java defines four integer types: byte, short, int, and long. All of these are signed, positive and 
+negative values. Java does not support unsigned, positive-only integers. Many other computer 
+languages, including C/C++, support both signed and unsigned integers. However, Java’s designers 
+felt that unsigned integers were unnecessary. Specifically, they felt that the concept of unsigned was 
+used mostly to specify the behavior of the high-order bit, which defined the sign of an int when 
+expressed as a number. 
+
+As you will see in Chapter 4, Java manages the meaning of the high-order bit differently, by adding 
+a special “unsigned right shift” operator. Thus, the need for an unsigned integer type was eliminated. 
+The width of an integer type should not be thought of as the amount of storage itconsumes, but rather 
+as the behavior it defines for variables and expressions of that type. The Java run-time environment 
+is free to use whatever size it wants, as long as the types behave as you declared them. In fact, at 
+least one implementation stores bytes and shorts as 32-bit (rather than 8- and 16-bit) values to 
+improve performance, because that is the word size of most computers currently in use. The 
+width and ranges of these integer types vary widely, as shown in this table: Name Width Range   
+
+long 64 –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807   
+ int 32 –2,147,483,648 to 2,147,483,647 short 16 –32,768 to 32,767 byte 8 – 128 
+to 127 

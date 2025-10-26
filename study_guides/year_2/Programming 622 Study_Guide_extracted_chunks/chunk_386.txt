@@ -1,0 +1,40 @@
+make a pointer temp point to the top of the stack.Next we make stackTop 
+point to the next element of the stack, which will become the top element of the stack. Finally, we delete 
+temp. The definition of the function pop is as follows:  
+  
+template <class Type>  
+void linkedStackType<Type>::pop()  
+{  
+nodeType<Type> *temp;   
+  
+  
+//pointer to deallocate memory if 
+(stackTop != NULL)  
+{  
+ 
+temp = stackTop;   
+  
+  
+//set temp to point to the top node  
+stackTop = stackTop->link;   //advance stackTop to the next node delete temp;     
+//delete the top node  
+}  
+else cout << "Cannot remove from an empty stack." << endl;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end pop  
+  
+ 
+5.3.7  Copy Stack  
+  
+The function copyStack makes an identical copy of a stack. Its definition is similar to the definition of 
+copyList for linked lists, given in Chapter 3. The definition of the function copyStack is as follows:  
+  
+template <class Type>  
+void linkedStackType<Type>::copyStack(const linkedStackType<Ty

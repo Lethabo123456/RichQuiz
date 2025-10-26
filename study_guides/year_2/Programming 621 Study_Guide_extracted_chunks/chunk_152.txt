@@ -1,0 +1,24 @@
+y indices. Consider the following 
+statements:  
+const int NUMBER_OF_ROWS = 6;  
+const int NUMBER_OF_COLUMNS = 5;  
+enum carType {GM, FORD, TOYOTA, BMW, NISSAN, VOLVO};  
+enum colorType {RED, BROWN, BLACK, WHITE, GRAY};  
+int inStock[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS]; 
+ 
+These statements define the carType and colorType enumeration types and define 
+inStock as a two-dimensional array of six rows and five columns. 
+Suppose that each row in inStock corresponds to a car type, and each column in 
+inStock corresponds to a color type. That is, the first row corresponds to the car type 
+GM, the second row corresponds to the car type FORD, and so on. Similarly, the first 
+column corresponds to the color type RED, the second column corresponds to the 
+color type BROWN, and so on 
+ 
+Processing Two-Dimensional Arrays 
+
+145 | P a g e  
+ 
+A two-dimensional array can be processed in four ways:  
+1. Process a single element.  
+2. Process the entire array.  
+3. Process a particular row of the array,

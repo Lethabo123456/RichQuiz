@@ -1,0 +1,27 @@
+urrent->info < firstOutOfOrder->info)  
+{ trailCurrent = current;  
+current = current->link;  
+}  
+  
+if (current != firstOutOfOrder)  
+{  
+lastInOrder->link = firstOutOfOrder->link; firstOutOfOrder->link 
+= current;  
+trailCurrent->link = firstOutOfOrder;  
+}  
+else lastInOrder = lastInOrder->link;  
+}  
+} //end while  
+} //end linkedInsertionSort  
+  
+We leave it as exercise for you to write a program to test insertion sort. See Programming Exercises 2 and 
+3 at the end of this chapter.  
+  
+ 
+8.4.1  Analysis: Insertion Sort  
+  
+Suppose that the list is of length n. If the list is sorted, the number of comparisons is (n – 1) and the number 
+of item assignments is 0. This is the best case. (See Exercise 15 at the end of this chapter.) Now suppose 
+that the list is sorted, but in the reverse order. In this case, it can be checked that the number of 
+comparisons is (1/2)(n2 – n) and the number of item assignments is (1/2)(n2 +3n) – 2. This is the worst 
+case. (See Exercise 14 at the en

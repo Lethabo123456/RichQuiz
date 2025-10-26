@@ -1,0 +1,15 @@
+The modulus operator (%) to return remainders 
+
+To find the remainder in integer division, use the modulus operator (%). For example, the 
+statement 17% 4 returns 1 (the remainder after integer division). The modulus operator turns 
+out to be more useful than you might at first imagine. When you perform modulus n on a 
+number that is a multiple of n, the result is zero. Thus 80%10 = 0 because 80 is an even 
+multiple of 10. This fact allows you to set up loops in which you take an action every nth time 
+through the loop, by testing a counter to see if %n is equal to zero. This strategy comes in 
+handy in the use of the for loop, as described earlier in this chapter. 
+ 
+Increment and Decrement Operators 
+A common requirement is to add a value to a variable, subtract a value from a variable, or 
+otherwise change the mathematical value, and then to assign that new value back to the same 
+variable. You might even want to assign the result to another variable altogether. The 
+following two sections discuss these cases respectively. 

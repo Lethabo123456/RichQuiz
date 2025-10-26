@@ -1,0 +1,23 @@
+The structure given below is used in the algorithm. G will be the graph as G(V,E) 
+with set of vertex V and set of edges E. 
+ 
+p[v]-The parent or predecessor of vertex 
+d[v]-the number of edges on the path from s to v. 
+Data structure used for breadth-first search is queue, Q (FIFO), to store gray 
+vertices. 
+color[v]- This array will keep the status of vertex as white, grey or black 
+
+The following algorithm for BFS takes input graph G(V,E) where V is set of vertex 
+and E is the set of edges. Graph is represented by adjacency list i.e Adj[]. Start 
+vertex is s in V. 
+
+Complexity Analysis 
+ 
+In this algorithm, the first for loop executes at most O(V) times. 
+While loop executes at most O(V) times as every vertex v in V is enqueued only 
+once in the Queue Q. Every vertex is enqueued once and dequeued once so 
+queuing will take at most O(V) time. 
+ 
+Inside while loop, there is for loop which will execute at most O(E) times as it will 
+be at most the sum of degree of adjacency for all vertex v in the vertex set V. 
+Which can be written as Σ |Adj(v)|=O(E) vsV

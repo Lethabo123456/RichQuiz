@@ -1,0 +1,32 @@
+ns “ all fields. ” ) You can also specify just the field or fields you want to retrieve:   
+mysql > SELECT name, color from fruit;   
+   
++-----------+--------+   
+| name | color     |   
++-----------+--------+   
+| banana | yellow |   
+| tangerine | orange |   
+| plum      | purple|   
++-----------+--------+   
+3 rows in set (0.00 sec)   
+   
+To retrieve a selected row or rows, you need to introduce a WHERE clause at the end of the SELECT 
+statement. A WHERE clause filters the results according to the condition in the clause. You can use 
+practically any expression in a WHERE condition. Here are some simple WHERE clauses in action:   
+   
+mysql > SELECT * from fruit WHERE name = ‘banana’;   
+   
+
+69   
+   
++----+--------+--------+   
+| id | name | color |   
++----+--------+--------+   
+| 1 | banana | yellow |   
++----+--------+--------+   
+1 row in set (0.08 sec)   
+   
+mysql > SELECT * from fruit WHERE id > = 2;   
++----+-----------+--------+   
+| id | name | color |   
++----+-------

@@ -1,0 +1,21 @@
+the array slots hi(X), 1 ≤ hi(X) ≤ s are examined.  
+  
+7.3.3.4 Quadratic Probing  
+  
+Suppose that an item with key X is hashed at t, that is, h(X) = t and 0 ≤ t ≤ HTSize – 1. Further suppose that 
+position t is already occupied. In quadratic probing, starting at position t, we linearly search the array at 
+locations (t + 1)% HTSize, (t + 22 ) % HTSize = (t + 4) % HTSize, (t + 32) % HTSize = (t + 9) % HTSize, . . ., (t + 
+i2) % HTSize. That is, the probe sequence is: t, (t + 1) % HTSize (t + 22 ) % HTSize, (t + 32) % HTSize, . . ., (t + 
+i2) % HTSize.  
+  
+EXAMPLE 7-6  
+  
+  
+  
+Although quadratic probing reduces primary clustering, we do not know if it probes all the positions in the 
+table. In fact, it does not probe all the positions in the table. However, when HTSize is a prime, quadratic 
+probing probes about half the table before repeating the probe sequence. Let us prove this observation.  
+  
+Suppose that HTSize is a prime and for 0 ≤ i < j ≤ HTSize,  
+  
+(t + i2)%HTSize = (t

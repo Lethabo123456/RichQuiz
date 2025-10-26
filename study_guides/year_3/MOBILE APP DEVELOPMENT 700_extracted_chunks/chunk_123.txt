@@ -1,0 +1,26 @@
+2.5 Coding Interface & App Behavior 
+ 
+Coding the Interface 
+As mentioned earlier, the user interface for any Android app is created through the use of a layout 
+file. A layout file is an XML file that contains the XML used to create the objects and controls with 
+which the user can interface. The first step in coding the Hello World app is to modify the layout so 
+that it has some controls that the user can interact with. Your modifications will be simple. You will 
+make the app take a name entered by the user and display Hello followed by the entered name after 
+a button click (e.g., Hello Jane). 
+
+Double-click the activity_main.xml file in the layout folder of the Project window to begin work coding 
+the interface. If it is already open in the editor, click the activity_main.xml tab at the top of the editor. 
+If the Design view is displayed, click the Text tab at the bottom of the editor. The XML code that creates 
+the user interface is displayed with two elements in it. The root element is a ConstraintLayout. A 
+ConstraintLayout allows the user interface to be designed by placing controls specify their position 
+relative to other controls or the parent screen. Because Android devices have so many screen sizes 
+and resolutions, it is often best to design the UI components as relative to one another, rather than 
+
+Note 
+I like to start my development with one of the smaller devices because I find it easier to scale up when 
+developing the user interface than to scale down. Also, I like to pick a lower API for the device for 
+similar reasons. Later, you can create different AVDs to test different device configurations. 
+
+designing them as a fixed position. Because the ConstraintLayout is the root, it encompasses the whole 
+screen. You must have only one layout root in an Android layout file. All other items are the children 
+of this root element. 

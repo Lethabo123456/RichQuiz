@@ -1,0 +1,24 @@
+The Minimum API Level dropdown allows you to select the oldest version of Android on which your  
+app will be able to run. A suggested minimum Android SDK is displayed. SDK stands for Software 
+Development Kit, and it is a set of tools and code libraries used to write software for a specific 
+platform. Each release of the Android OS is associated with an SDK so that programmers can write 
+code for that platform. An application programming interface (API) is a set of routines that allow a 
+program (app) to access the resources of the operating system to provide functionality to the user. 
+The minimum required SDK determines what phones and other Android devices will be able to install 
+your app. (Phones and tablets using Android operating systems earlier than this selection will not even 
+see your app in the Play Store.) This selection will also determine the features you can program into 
+your app. 
+
+The recommended minimum is the default: IceCreamSandwich API 15. An app that has this 
+minimum will be accessible to 100% of the devices “in the wild.” This means that devices 
+running the minimum up to the current version. Leave This project will support instant 
+apps unchecked. Instant apps allow potential users to try your app from the Play Store 
+without installing it on the device. Instant apps requires API 21 or higher, so by choosing API 15 
+we cannot use them. Use androidx.*artifacts is checked and not changeable. (Note: This may 
+be unchecked and changeable, depending on your configuration of Android Studio, installed libraries, and SDKs.) Androidx artifacts are support 
+libraries that replace the current Support Library used in Android development to make the app 
+backward compatible to API levels earlier than the most recent (API 28 at the time of this writing). 
+Click Finish, and your project will load and be ready to work on. Android Studio will create the 
+project (this may take some time). When finished, you should see something like 
+Figure 3.2. You may have to click on the Project tab on the left side of Android Studio and drill 
+down into the app folder and double-click on the MainActivity.

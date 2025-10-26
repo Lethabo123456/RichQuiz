@@ -1,0 +1,31 @@
+b) Array ( [1] => Array ( [1] => Volvo [2] => BMW ) [2] => Array ( [1] => Toyota [2] => Honda ) [3] 
+=> Array ( [1] => Mercedes [2] => Opel ) ) 
+c) c) Array ( [0] => Array ( [0] => Volvo [1] => Volvo ) [1] => Array ( [0] => BMW [1] => BMW ) [2] 
+=> Array ( [0] => Toyota [1] => Toyota ) ) 
+d) Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] 
+=> Array ( [0] => Mercedes [1] => Opel ) ) 
+  
+Answer: d 
+ 
+ 
+
+74. What will be the output of the following PHP code? 
+<?php 
+$fname = array("Peter", "Ben", "Joe"); 
+$age = array("35", "37", "43"); 
+$c = array_combine($fname, $age); 
+print_r($c); 
+?>  
+a) Array ( Peter Ben Joe ) 
+b) Array ( [Peter] => 35 [Ben] => 37 [Joe] => 43 ) 
+c) Array ( 35 37 43 ) 
+d) Array ( “[Peter] => 35” “[Ben] => 37” “[Joe] => 43” ) 
+  
+Answer: b 
+  
+75. What will be the output of the following PHP code? 
+<?php 
+$a = array("A", "Cat", "Dog", "A", "Dog"); 
+print_r(array_count_values($a)); 
+?> 
+a) Array ( [A] => 2 [Cat] => 1 [D

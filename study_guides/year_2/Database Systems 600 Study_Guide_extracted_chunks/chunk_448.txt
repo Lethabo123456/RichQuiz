@@ -1,0 +1,15 @@
+t. Instead, the same API serves all requests. Another advantage is 
+that an API can use a shared connection to the database instead of creating a new one every time, 
+as is the case with CGI scripts. 
+Although APIs are more efficient in handling requests, they have some disadvantages. Because the 
+APIs share the same memory space as the web server, an API error can bring down the web server. 
+Another disadvantage is that APIs are specific to the web server and to the operating system. 
+Regardless of the type of web server interface used, the web-to-database middle-ware program must 
+be able to connect with the database. That connection can be accomplished in one of two ways: 
+ 
+Use the native SQL access middleware provided by the vendor.  
+ 
+Use the services of general database connectivity standards. 
+The Web Browser 
+The web browser is software such as Microsoft Internet Explorer, Microsoft Edge, Google Chrome, 
+Apple Safari, or Mozilla Firefox that lets end users navigate the web

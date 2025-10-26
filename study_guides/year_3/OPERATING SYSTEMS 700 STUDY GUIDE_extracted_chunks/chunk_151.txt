@@ -1,0 +1,54 @@
+4.3. Communication Among Devices 
+
+The Device Manager relies on several auxiliary features to keep running efficiently under the 
+demanding conditions of a busy computer system, and there are three requirements it must fulfil: 
+
+➢ It needs to know which components are busy and which are free. 
+➢ It must be able to accommodate the requests that come in during heavy I/O traffic. 
+➢ It must accommodate the disparity of speeds between the CPU and the I/O devices. 
+ 
+The first is solved by structuring the interaction between units. The last two problems are handled 
+by queuing requests and buffering records. 
+ 
+As we mentioned previously, each unit in the I/O subsystem can finish its operation independently 
+from the others. For example, after a device has begun writing a record, and before it has 
+completed the task, the connection between the device and its control unit can be cut off so 
+that the control unit can initiate another I/O task with another device. Meanwhile, at the other 
+end of the system, the CPU is free to process data while I/O is being performed, which allows for 
+concurrent processing and I/O. 
+ 
+The success of the operation depends on the system’s ability to know when a device has completed 
+an operation. This is done with a hardware flag that must be tested by the CPU. Made up of 
+three bits, the flag resides in the Channel Status Word (CSW), which is in a predefined location in 
+main memory that contains information indicating the status of the channel. Each bit represents 
+one of the components of the I/O subsystem, one each for the channel, control unit, and device. 
+Each bit is changed from 0 to 1 to indicate that the unit has changed from free to busy. Each 
+component has access to the flag, which can be tested before proceeding with the next I/O 
+operation to ensure that the entire path is free. There are two common ways to perform this 
+test, polling and using interruptions. 
+ 
+For example, the CPU periodically tests the channel status bit (in the CSW). If the channel is 
+still busy, the CPU performs some other processing tasks until the test shows that the channel 
+is free; then the channel performs the I/O operation. The major disadvantage with this scheme 
+is determining how often the flag should be polled. If polling is done too frequently, the CPU 
+wastes time testing the flag just to find out that the channel is still busy. On the other hand, if 
+polling is done too seldom, the channel could sit idle for long periods of time. 
+ 
+The use of interrupts is a more efficient way to test the flag. Instead of the CPU testing the 
+flag, a hardware mechanism does the test as part of every machine instruction executed by 
+the CPU. If the channel is busy, the flag is set so that execution of the current sequence of 
+instructions is automatically interrupted, and control is transferred to the interrupted handler. The 
+interrupt handler is part of the operating system and resides in a predefined location in memory. 
+ 
+The interrupt handler’s job is to determine the best course of action based on the current situation. 
+Because it is not unusual for more than one unit to have caused the I/O interruption, the interrupt 
+handler must find out which unit sent the signal, analyze its status, restart it when appropriate 
+with the next operation, and, finally, return control to the interrupted process. 
+ 
+Some sophisticated systems are equipped with hardware that can distinguish between several 
+types of interruption. These interrupts are ordered by priority, and each one can transfer control 
+to a corresponding location in memory. The memory locations are ranked in order, according to 
+the same priorities as the interruptions. Therefore, if the CPU is executing the interrupt-handler 
+routine associated with a given priority, the hardware automatically intercepts all interruptions at 
+the same, or at lower priorities. This multiple-priority interrupt system helps improve resource 
+utilization because each interrupt is handled according to its relative importance. 

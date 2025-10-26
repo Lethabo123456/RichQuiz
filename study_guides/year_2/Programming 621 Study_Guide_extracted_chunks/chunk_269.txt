@@ -1,0 +1,30 @@
+whether divisor is zero. 
+ 
+ 
+ 
+
+261 | P a g e  
+ 
+ 
+ 
+ 
+In Sample Run 1, the value of divisor is nonzero, so no exception occurs. The 
+program calculates and outputs the quotient and terminates normally. 
+ 
+In Sample Run 2, the value entered for divisor is 0. In Line 12, the program 
+checks whether divisor is 0. Because divisor is 0,  
+try/catch Block 
+ 
+
+262 | P a g e  
+ 
+The statements that may generate an exception are placed in a try block. The try block 
+also contains statements that should not be executed if an exception occurs. The try 
+block is followed by one or more catch blocks. A catch block specifies the type of 
+exception it can catch and contains an exception handler. 
+The general syntax of the try/catch block is: 
+ 
+ 
+Suppose there is a statement that can generate an exception, for example, division by 
+0. Usually, before executing such a statement, we check whether certain conditions 
+are met. For example, before performing the division, we check whether the divisor

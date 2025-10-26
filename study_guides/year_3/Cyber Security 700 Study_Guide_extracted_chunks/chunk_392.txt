@@ -1,0 +1,44 @@
+To satisfy requirements, configuration management generally includes functions to do the following: 
+ Set the parameters that control the routine operation of the system 
+ Associate names with managed objects and sets of managed objects 
+ Initialize and close down managed objects 
+ Collect information on demand about the current condition of the system 
+ Obtain announcements of significant changes in the condition of the system 
+ Change the configuration of the system
+
+Performance Management 
+Modern data communications networks are composed of many and varied components, which must 
+intercommunicate and share data and resources. In some cases, it is critical to the effectiveness of an 
+application that the communication over the network be within certain performance limits. 
+Performance management of a computer network comprises two broad functional categories: 
+monitoring and controlling. Monitoring is the function that tracks activities on the network. The 
+controlling function enables performance management to make adjustments to improve network 
+performance. Some of the performance issues of concern to a network manager are as follows: 
+
+ What is the level of capacity utilization? 
+ Is there excessive traffic? 
+ Has throughput been reduced to unacceptable levels? 
+ Are there bottlenecks? 
+ Is response time increasing?
+
+To deal with these concerns, a network manager must focus on some initial set of resources to be 
+monitored to assess performance levels. This includes associating appropriate metrics and values with 
+relevant network resources as indicators of different levels of performance. For example, what count 
+of retransmissions on a transport connection is considered to be a performance problem requiring 
+attention? Performance management, therefore, must monitor many resources to provide 
+information in determining network operating level. By collecting this information, analyzing it, and 
+then using the resultant analysis as feedback to the prescribed set of values, a network manager 
+becomes more and more adept at recognizing situations that indicate present or impending 
+performance degradation. 
+
+Before using a network for a particular application, a user may want to know such things as the 
+average and worst-case response times and the reliability of network services. Thus, performance 
+must be known in sufficient detail to respond to specific user queries. End users expect network 
+services to be managed in such a way as to afford their applications consistently good response time. 
+Network managers need performance statistics to help them plan, manage, and maintain large 
+networks. Performance statistics are used to recognize potential bottlenecks before they cause 
+problems to end users. They also enable network managers to take appropriate corrective action. This 
+action either takes the form of changing routing tables to balance or redistribute traffic load during 
+times of peak use or when a bottleneck is identified by a rapidly growing load in one area. Over the 
+long term, capacity planning based on such performance information indicates the proper decisions 
+to make, for example, with regard to expansion of lines in that area.

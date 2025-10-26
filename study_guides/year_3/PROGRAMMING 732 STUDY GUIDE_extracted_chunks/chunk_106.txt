@@ -1,0 +1,39 @@
+4.1.11 Using Java Web Server  
+Sun's Java Web Server (JWS) is a full featured product. For servlet developers, a nice feature is its ability 
+to detect when a servlet has been updated. It detects when new class files have been copied to the 
+appropriate servlet directory and, if necessary, automatically reloads any running servlets.   
+The JWS can be installed as a service under Windows NT. While this makes it convenient for running a 
+production server, it is not recommended for servlet development work. Under Windows 95, there are 
+no OS services, so the command line start-up is your only option. To run JWS from the 
+c:\JavaWebServer1.1\bin directory, type in the httpd command. This starts the server in a console 
+window. No further display is shown in the console unless a servlet executes a System.out.println() 
+statement.  Servlets are installed by moving them to the c:\JavaWebServer1.1\servlets directory. As 
+mentioned, JWS detects when servlets have been added to this directory. Although you can use the JWS 
+management applet to tailor the servlet installation, this is generally not advised except for production 
+server installations.  To shut down the JWS, press <Control>+C in the command window. The server prints 
+a message to the console when it has finished shutting down.   
+  
+4.1.12 Servlet API  
+The Java Servlet API defines the interface between servlets and servers. This API is packaged as a standard 
+extension to the JDK under javax:   
+• Package javax.servlet   
+• Package javax.servlet.http   
+The API provides support in four categories:   
+• Servlet life cycle management   
+• Access to servlet context   
+• Utility classes   
+• HTTP-specific support classes   
+
+4.1.13 The Servlet Life Cycle  
+Servlets run on the web server platform as part of the same process as the web server itself. The web 
+server is responsible for initializing, invoking, and destroying each servlet instance. A web server 
+communicates with a servlet through a simple interface, javax.servlet.Servlet. This interface consists of 
+three main methods:   
+ init()   service()   destroy()   
+and two ancillary methods:   
+ getServletConfig()   
+getServletInfo()   
+
+You may notice a similarity between this interface and that of Java applets. This is by design! Servlets are 
+to web servers what applets are to web browsers.An applet runs in a web browser, performing actions it 
+requests through a specific interface. A servlet does the same, running in the web server.

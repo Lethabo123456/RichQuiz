@@ -1,0 +1,19 @@
+sic mathematical forms of these functions gives a broader 
+understanding of the data manipulation options.  
+ A relational database performs much of the data manipulation work behind the scenes.  
+ Once you know the basics of relational databases, you can concentrate on design. Good 
+design begins by identifying appropriate entities and their attributes and then the 
+relationships among the entities.  
+ 
+The ERM uses ERDs to represent the conceptual database as viewed by the end user. The 
+ERM’s main components are entities, relationships, and attributes.  
+ 
+Connectivity describes the relationship classification (1:1, 1:M, or M:N). Cardinality 
+expresses the specific number of entity occurrences associated with an occurrence of a 
+related entity.  
+ 
+In the ERM, an M:N relationship is valid at the conceptual level. However, when 
+implementing the ERM in a relational database, the M:N relationship must be mapped to a 
+set of 1:M relationships through a composite entity.  
+ 
+ERDs

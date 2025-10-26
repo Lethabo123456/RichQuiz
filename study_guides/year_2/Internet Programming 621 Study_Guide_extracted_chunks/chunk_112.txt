@@ -1,0 +1,17 @@
+ee both terms used 
+interchangeably in this book and elsewhere.  
+  
+5.2 Creating Arrays  
+Powerful though they are, arrays in PHP are easy to create. The simplest way to create a new array 
+variable is to use PHP’s built-in array() construct. This takes a list of values and creates an array 
+containing those values, which you can then assign to a variable:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+  
+In this line of code, an array of four elements is created, with each element containing a string value. 
+The array is then assigned to the variable $authors . You can now access any of the array elements via 
+the single variable name, $authors , as you see in a moment.  
+  
+This array is an indexed array, which means that each of the array elements is accessed via its own 
+numeric index, starting at zero. In this case, the “Steinbeck ” element has an index of 0 , “ Kafka ” 
+has an index of 1 , “ Tolkien ” has an index of 2 , and “ Dickens ” has an index of 3

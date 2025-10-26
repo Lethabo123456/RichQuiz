@@ -1,0 +1,39 @@
+example 4.4   defining the system input/output parameters. 
+Open loop simulation 
+After these operations, the vehicle object references the nonlinear model for the system. This 
+system can be simulated to compute a trajectory for the system. Here we command a velocity of 
+10 m/s and turn the wheel back and forth at one Hertz. 
+# Define the time interval that we want to use for the simualation 
+timepts = np.linspace(0, 10, 1000) 
+# Define the inputs 
+U = [ 
+
+    10 * np.ones_like(timepts),          # velocity 
+    0.1 * np.sin(timepts * 2*np.pi)      # steering angle 
+] 
+# Simulate the system dynamics, starting from the origin 
+response = ct.input_output_response(vehicle, timepts, U, 0) 
+time, outputs, inputs = response.time, response.outputs, response.inputs 
+We can plot the results using standard matplotlib commands: 
+# Create a figure to plot the results 
+fig, ax = plt.subplots(2, 1) 
+# Plot the results in the xy plane 
+ax[0].plot(outputs[0], outputs[1]) 
+ax[0].set_xlabel("$x$ [m]") 
+ax[0].set_ylabel("$y$ [m]") 
+# Plot the inputs 
+ax[1].plot(timepts, U[0]) 
+ax[1].set_ylim(0, 12) 
+ax[1].set_xlabel("Time $t$ [s]") 
+ax[1].set_ylabel("Velocity $v$ [m/s]") 
+ax[1].yaxis.label.set_color('blue') 
+rightax = ax[1].twinx()       # Create an axis in the right 
+rightax.plot(timepts, U[1], color='red') 
+rightax.set_ylim(None, 0.5) 
+
+rightax.set_ylabel(r"Steering angle $\phi$ [rad]") 
+rightax.yaxis.label.set_color('red') 
+fig.tight_layout() 
+plt.show() 
+ 
+output

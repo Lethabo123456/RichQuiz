@@ -1,0 +1,76 @@
+Program 1:  
+import java.net.*;  
+class uptecdemoInetAddress1  
+{  
+  public static void main (String args[ ]) throws UnknownHostException  
+  {  
+InetAddress idr;  
+idr = InetAddress.getLocalHost( );  
+System.out.println (idr);  
+  }  
+}  
+The output produced by the program will be different from the one givenbelow :  
+tr 7comph/132 . 147 . 168 . 17 
+
+Program 2:  
+The following program displays the name and address of the machinewhose host name is given by the 
+user.  
+import java.io.*; import 
+java.net.*; class 
+DemoInetAddress2  
+{ public static void main (String args[ ])throws          
+UnknownHostException, IOException  
+{  
+  InetAddress adr;  
+  String host;  
+  BufferedReader str = new BufferedReader  
+  (new InputStreamReader (System.in));  
+  System.out.print (“Enter the Machines | hostname:”);   
+host = str.readLine( );  
+  adr = InetAddress.getByName (host);  
+  System.out.println (adr);  
+}  
+}  
+BufferedReader and InputStreamReader are defined in the java.io package. The BufferedReader class 
+includes methods which allow you to read text lines from a character InputStream. Since the standard 
+input  (System.in) is a byte stream, the Input StreamReader class converts the byte stream of the standard 
+input, System.in, into a character stream.The method readLine( ) allows you to read text lines from an 
+input stream. The output produced by this program is as follows (the output will vary according to the 
+input):  
+Enter the Machine.s host name : Machine1 Machine1/130. 130. 15. 24 Enter the Machine.s host 
+name : Uptec Uptec / 130. 130. 15. 25  
+  
+InetAddress class also defines some non static methods which can be used on objects returned by the 
+factory methods (Table 2.2).  
+  
+Table 2.2 
+
+2.2.2 Methods Purpose  
+String getHostName() Returns the string representation of the host name associated with the 
+InetAddressObject. byte[ ] getAddress() Returns an array of four bytes representing the numeric address 
+of the host.This array of bytes cannot be printed directly by caching them to int. They have to be copied 
+into an array of integers while ANDing with 255 to undo sign-extending. String toString( ) Returns a string 
+that consists of the host name and the IP Address, For example Uptec/130.130.15.25. This function can 
+be overridden. boolean equals(/InetAddress addr) Returns true if the invoking object has the same 
+Internet address as addr. Let us see an example which demonstrates the usage of the getAddress( ) 
+method and overriding of the toString( ) method to display the Internet address.  
+   
+Program 3:  
+import java.net.*; class 
+Uptec  
+{  
+  static InetAddress adr;  
+  byte[ ] numaddr;   
+byte[ ] numadr;   String 
+Addrmsg;  
+  Uptec( ) throws UnknownHostException  
+  { adr = InetAddress.getLocalHost( ); 
+numadr = adr.getAddress( ); 
+Addrmsg = adr.getHostName( ) +”/”;  
+  }  
+  public String toString( )  
+  { for (int i = 0; i < numadr.length; i++) 
+Addrmsg + = (Numadr[i] & 255) +”.”;  
+return “The local machine|’s address is :” +Addrmsg;   
+}  
+}

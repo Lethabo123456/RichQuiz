@@ -1,0 +1,16 @@
+them off. Furthermore, the cookie 
+specification says that no cookie can exceed 4 KB in size, only 20 cookies are allowed per domain, 
+and a total of 300 cookies can be stored on the client side. Some browsers may have higher limits, 
+
+39   
+   
+but you cannot rely on that. Finally, you have no control over when browsers actually expire 
+cookies—if they are at capacity and need to add a new cookie, they may discard a cookie that has 
+not yet expired. You should also be careful of setting cookies to expire quickly. Expiration times rely 
+on the client’s clock being as accurate as yours. Many people do not have their system clocks set 
+accurately, so you cannot rely on rapid expirations. Despite these limitations, cookies are very useful 
+for retaining information through repeated visits by a browser.   
+   
+2.2 Sessions   
+PHP has built-in support for sessions, handling all the cookie manipulation for you to provide 
+persistent variables that are accessible from different pages and acro

@@ -1,0 +1,13 @@
+Examples of Swapping for Testing: 
+ 
+• Swap the user’s network cable to check for physical wear or failure. 
+• Change the patch port or data jack. 
+• Swap NICs between devices or install a new one (ensuring compatibility). 
+• In some cases, replace a switch or router if an entire segment is aﬀected, though this 
+may involve more downtime and conﬁguration work. 
+
+To avoid service interruptions altogether, redundancy can be built into the network. For 
+example, a server with dual NICs allows automatic failover without downtime—a more robust 
+solution than hot-swapping components (Dean, 2013, pp. 614–615). 
+Note: Always ensure the replacement component has the same speciﬁcations as the original 
+to avoid incompatibility or hardware damage. 

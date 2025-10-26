@@ -1,0 +1,19 @@
+t of intQueue: 18  
+Line 15: intQueue elements: 18 50 33  
+The preceding output is self-explanatory. The details are left as an exercise for you.  
+  
+ 
+6.5  
+Priority Queues  
+  
+The preceding sections describe how to implement a queue in a program. The use of a queue structure 
+ensures that the items are processed in the order they are received. For example, in a banking 
+environment, the customers who arrive first are served first. However, there are certain situations when 
+
+235  
+  
+this First In First Out rule needs to be relaxed somewhat. In a hospital environment, patients are, usually, 
+seen in the order they arrive. Therefore, you could use a queue to ensure that the patients are seen in the 
+order they arrive. However, if a patient arrives with severe or life-threatening symptoms, they are treated 
+first. In other words, these patients take priority over the patients who can wait to be seen, such as those 
+awaiting their routine annual checkup. For another example, in a shar

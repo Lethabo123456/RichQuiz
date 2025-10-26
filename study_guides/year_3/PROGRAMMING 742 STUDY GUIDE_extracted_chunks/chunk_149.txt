@@ -1,0 +1,29 @@
+The TimeInfoEventArgs object will have information about the current hour, minute, and second. It defines a constructor 
+and three public, read-only integer variables. 
+In addition to a delegate and an event, a Clock has  three member variables: hour, minute, and second, as well as a 
+
+single method, Run ( ): 
+ 
+  public void Run( ) 
+{ 
+for (;;) 
+{ 
+// sleep 10 milliseconds Thread. Sleep (10); 
+// get the current time 
+System.DateTime dt = System.DateTime.Now; 
+// if the second has changed 
+// notify the subscribers 
+if (dt.Second != second) 
+{ 
+// create the TimeInfoEventArgs object 
+// to pass to the subscriber 
+TimeInfoEventArgs timeInformation = 
+new TimeInfoEventArgs (dt.Hour,dt.Minute,dt.Second); 
+// if anyone has subscribed, notify them if (OnSec-ondChange != null) 
+{ 
+OnSecondChange (this, timeInformation); 
+} 
+} 
+// update the state 
+this.second = dt.Second; this.minute = dt.Minute; this.hour = dt.Hour; 
+}

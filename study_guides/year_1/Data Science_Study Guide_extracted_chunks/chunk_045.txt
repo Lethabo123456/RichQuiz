@@ -1,0 +1,36 @@
+Code Extract 2.3 
+
+import numpy 
+temps = [31, 32, 32, 31, 28, 29, 31, 38, 32, 31, 30, 29, 30, 31, 26] 
+print numpy.mean(temps)    # == 30.73 
+print numpy.median(temps)  # == 31.0 
+
+Example 3 (Interval Level): Standard deviation is the most common measure of variation of data at 
+the interval level and beyond. The standard deviation can be thought of as the "average distance a 
+data point is at from the mean". In this example we determine the Standard deviation of the 
+temperature dataset used in previous example: 
+ 
+Code Extract 2.4 
+import numpy 
+temps = [31, 32, 32, 31, 28, 29, 31, 38, 32, 31, 30, 29, 30, 31, 26]
+
+mean = numpy.mean(temps)    # == 30.73 
+squared_differences = [] 
+# empty list of squared differences 
+ 
+for temperature in temps: 
+    difference = temperature - mean
+
+# how far is the point from the mean 
+    squared_difference = difference**2              
+    # square the difference 
+    squared_differences.append(squared_difference)  
+    # add it to our list 
+average_squared_difference = numpy.mean(squared_differences)  
+ 
+# This number is also called the "Variance" 
+standard_deviation = numpy.sqrt(average_squared_difference)    
+# We did it! 
+print standard_deviation  # == 2.5157 
+
+Ensure you understand the rationale of these codes and practice them. 

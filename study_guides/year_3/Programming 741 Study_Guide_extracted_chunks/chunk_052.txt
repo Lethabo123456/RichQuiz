@@ -1,0 +1,13 @@
+If statements may contain an optional else statement. The else statement is executed 
+only if the expression in the head of the if statement evaluates false: 
+ 
+if (expression) statement1 
+[else 
+statement2] 
+
+This is the kind of description of the if statement you are likely to find in your compiler 
+documentation. It shows you that the if statement takes a Boolean expression (an expression 
+that evaluates true or false) in parentheses, and executes statement 1 if the expression 
+evaluates true. Note that statement 1 can actually be a block of statements within braces. 
+You can also see that the else statement is optional, as it is enclosed in square brackets. 
+Although this gives you the syntax of an if statement, an illustration will make its use clear.

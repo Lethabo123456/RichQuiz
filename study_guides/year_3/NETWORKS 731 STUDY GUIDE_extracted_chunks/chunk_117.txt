@@ -1,0 +1,43 @@
+If you’re running copper cables to get to this wide area network, you can certainly have 
+examples of interference, especially inside of a building where we have so much electrical 
+equipment and other devices that can cause RF interference. And if you’re communicating over 
+a non-terrestrial link for your wide area network that means that you are leaving the earth and 
+going up to a satellite in space and being bounced back down again. And that process takes 
+time to get up to the satellite and back down to the remote site. And then, of course, the 
+response has to go back up to space and back down to you again. 
+
+So, if you’re working with an application that does not handle latency very well, then you 
+probably don’t want to put it over a non-terrestrial link. If the wide area network connection is 
+working the way it should, you could still have problems with the configuration of the protocols 
+that are going over that wide area network. A good example of this is split horizon. This is a 
+configuration you would set in the dynamic routing protocols that you’re using across this wide 
+area network link. This is ideally designed to prevent any type of routing loop on the network. 
+ 
+On a dynamically routed network, a router is going to advertise all of the routes that it knows 
+to all of the other routers that are directly connected to it. These routes are going to be set 
+periodically and you’re going to constantly make sure that everybody’s aware of all the routes 
+that your router happens to know about. With split horizon, the router determines what routes 
+have been learned over a particular interface, and it chooses not to advertise those routes back 
+out to that location. That location already knows about the routes, and you’re able to conserve 
+wide area network bandwidth by not sending a duplicate of those routes to a location that 
+already knows that those routes exist. 
+ 
+Another important configuration concern is with our domain name system servers. These DNS 
+servers are there so we can reference devices by their name rather than having to memorize 
+an IP address for every single device on the network. Well, of course, that’s a very important 
+process. It’s one of the first things that happens when you’re trying to communicate to another 
+device is to resolve the IP address from the name that you’re providing, and it’s these DNS 
+servers that provide that for us. 
+
+If a DNS server stops responding to us then we’re no longer able to resolve the IP address and 
+therefore, cannot communicate to that other device. If the DNS server slows down, you may 
+try to begin a communication, but it takes a number of seconds to finally resolve the IP address, 
+and then the process can continue. And that slight delay can slow things up for everyone. The 
+idea in most environments is that you would have multiple DNS servers, and you would be able 
+to share the load and maintain the uptime across multiple DNS devices. 
+ 
+On your router and wide area network devices themselves, we also have to be very aware of 
+how they’re configured for WAN speeds and make sure that they match on both sides of the 
+connection and of course the routing table in our wide area network routers is very important 
+since that determines how we’re going to transfer information from one side of the network 
+to the other.

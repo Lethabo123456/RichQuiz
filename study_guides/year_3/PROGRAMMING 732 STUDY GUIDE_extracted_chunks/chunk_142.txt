@@ -1,0 +1,53 @@
+4.2.1 Maintaining Session Information  
+A session is a continuous connection from the same browser over a fixed period of time. (This time is 
+usually configurable from the web server. For the JWS, the default is 30 minutes.) Through the implicit 
+use of browser cookies, HTTP servlets allow you to maintain session information with the HttpSession 
+class. The HttpServletRequest provides the current session with the getSession(boolean) method. If the 
+boolean parameter is true, a new session will be created when a new session is detected. This is, normally, 
+the desired behavior. In the event the parameter is false, then the method returns null if a new session is 
+detected.   
+  
+   
+public void doGet (HttpServletRequest 
+request,        HttpServletResponse response)        
+throws ServletException, IOException {  
+      HttpSession session = request.getSession(true);  
+ 
+      //  
+...  
+Once you have access to an HttpSession, you can maintain a collection of key-value-paired information, 
+for storing any sort of session-specific data. You automatically have access to the creation time of the 
+session with getCreationTime() and the last accessed time with getLastAccessedTime(), which describes 
+the time the last servlet request was sent for this session.   
+To store session-specific information, you use the putValue(key, value) method. To retrieve the 
+information, you ask the session with getValue(key). The following example demonstrates this, by 
+continually summing up the integer value of the Addend parameter. In the event the value is not an 
+integer, the number of errors are also counted.   
+  private static final String SUM_KEY = "session.sum";   
+private static final String ERROR_KEY = "session.errors";   
+Integer sum = (Integer) session.getValue(SUM_KEY);   int 
+ival = 0;   if (sum != null)   
+  {  
+    ival = sum.intValue();  
+  }   
+try   
+  {  
+    String addendString = 
+request.getParameter("Addend");     int addend = 
+Integer.parseInt (addendString);     sum = new 
+Integer(ival + addend);     session.putValue (SUM_KEY, 
+sum);  
+  }   
+  catch (NumberFormatException e)   
+  {  
+    Integer errorCount = (Integer)session.getValue(ERROR_KEY);     
+if (errorCount == null)   
+   {       errorCount = new 
+Integer(1);  
+    }     
+else   
+   {       errorCount = new 
+Integer(errorCount.intValue()+1);  
+    }  
+    session.putValue (ERROR_KEY, errorCount);       
+}

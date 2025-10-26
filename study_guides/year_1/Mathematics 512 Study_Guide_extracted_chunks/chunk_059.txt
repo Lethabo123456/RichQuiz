@@ -1,0 +1,41 @@
+5.4 The Total Change Theorem 
+The total change theorem is an adaptation of the second part of the 
+Fundamental Theorem of Calculus. The Total Change Theorem states that the 
+integral of a rate of change is equal to the total change. 
+If we know that the function 𝑓(𝑥) is the derivative of some function 𝐹(𝑥), then 
+the definite integral of 𝑓(𝑥) from a to b is equal to the change in the function 
+𝐹(𝑥) from 𝑎 to 𝑏. 
+
+5.5 The Substitution Rule 
+Suppose that we have an integral such as ∫4𝑥**3 √𝑥**4 + 7 𝑑𝑥 and with our 
+current knowledge of integration, we can't find the general equation of this 
+indefinite integral. There are no anti-differentiation formulas for this type of 
+integral. However, from our knowledge of differentiation, specifically the 
+chain rule, we know that 4x3 is the derivative of the function within the 
+square root, 𝑥**4 + 7. We must also account for the chain rule when we are 
+performing integration. To do this, we use the substitution rule. 
+The Substitution Rule states: if 𝑢 = 𝑔(𝑥) is a differentiable function and 𝑓 is 
+continuous on the range of 𝑔, then ∫𝑓(𝑔(𝑥))𝑔′(𝑥) 𝑑𝑥 = ∫𝑓(𝑢) 𝑑𝑢 
+
+From our previous example, if we let 𝑢 = (𝑥**4 + 7), then 𝑑𝑢 =  4𝑥**3 𝑑𝑥. 
+If we substitute these values into the integral, we get an integral 
+that can be solved using the antidifferentiation formulas: 
+∫4𝑥**3√𝑥**4 + 7 𝑑𝑥= ∫√𝑢 𝑑𝑢 = 2/3 𝑢**3/2 + 𝐶  
+
+However, this answer is still in terms of 𝑢. We must substitute 𝑢 = (𝑥4 + 7) 
+into the resulting function, so that it is a function of 𝑥, rather than 𝑢. 
+
+2/3 𝑢**3/2 + 𝐶 = 2/3(𝑥**4 + 7)**3/2 + 𝐶 = 2/3√(𝑥4 + 7)**3 + 𝐶
+ 
+The substitution rule also applies to definite integrals. The Substitution Rule 
+for Definite Integrals states: If f is continuous on the range of 𝑢 =  𝑔(𝑥) and 
+𝑔′(𝑥) is continuous on [𝑎, 𝑏], then ∫𝑏𝑎 𝑓(𝑔(𝑥))𝑔′(𝑥) 𝑑𝑥 = ∫𝑔(𝑏)𝑔(𝑎) 𝑓(𝑢) 𝑑𝑢
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

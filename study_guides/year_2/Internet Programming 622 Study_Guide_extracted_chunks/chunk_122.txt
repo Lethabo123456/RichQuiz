@@ -1,0 +1,19 @@
+$lines = file( “myfile.txt”, FILE_USE_INCLUDE_PATH | FILE_SKIP_EMPTY_LINES );   
+   
+As with fopen(), you can also use file() to fetch files on a remote host:   
+   
+$lines = file( “http://www.example.com/index.html” ); foreach ( 
+$lines as $line ) echo $line . “ < br / > ”;   
+   
+A related function is file_get_contents() . This does a similar job to file(), but it returns the file 
+contents as a single string, rather than an array of lines. The end-of-line characters are included in 
+the string:   
+   
+$fileContents = file_get_contents( “myfile.txt” );   
+   
+If there was a problem reading the file, file_get_contents() returns false .   
+   
+You can pass the FILE_USE_INCLUDE_PATH flag (described earlier) as the second argument to 
+file_get_contents(). You can also optionally pass in an offset and/or a length parameter to determine 
+where you want the file reading to start, and how many characters you want to read. For example, 
+the following code reads 23 characters from myfile.tx

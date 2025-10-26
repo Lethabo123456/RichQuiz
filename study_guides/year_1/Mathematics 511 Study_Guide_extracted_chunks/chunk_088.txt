@@ -1,0 +1,16 @@
+Definition 14 
+An argument in propositional logic is a sequence of propositions. All but the 
+final proposition in the argument are called premises and the final 
+proposition is called the conclusion. An argument is valid if the truth of all its 
+premises implies that the conclusion is true. 
+ 
+An argument form in propositional logic is a sequence of compound 
+propositions involving propositional variables. An argument form is valid no 
+matter which particular propositions are substituted for the propositional 
+variables in its premises, the conclusion is true if the premises are all true. 
+From the definition of a valid argument form we see that the argument form 
+with premises 𝑝1, 𝑝2, . . . , 𝑝𝑛 and conclusion 𝑞 is valid, when (𝑝1 ∧ 𝑝2 ∧ · · ·
+ ∧𝑝𝑛) → 𝑞 is a tautology. The key to showing that an argument in 
+propositional logic is valid is to show that its argument form is valid. 
+Consequently, we would like techniques to show that argument forms are 
+valid. We will now develop methods for accomplishing this task.

@@ -1,0 +1,33 @@
+Values of the vertical-align property 
+Aligning Text Horizontally and Vertically 
+Text can be aligned horizontally or vertically within an element. To align the text horizontally, 
+use the following text-align property  
+  
+text-align: alignment; 
+ 
+where alignment is left, right, center, or justify (align the text with both the left and the right 
+margins). 
+To vertically align the text within each line, use the vertical-align property vertical-align: 
+alignment; 
+ 
+Style rule for the body footer 
+ 
+body > footer address {
+   background-color: rgb(222, 128, 60);
+   color: white;
+   color: rgba(255, 255, 255, 0.7);
+   font: normal small-caps bold 0.9em/3em
+         Quicksand, Verdana, Geneva, sans-serif;
+   text-align: center;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

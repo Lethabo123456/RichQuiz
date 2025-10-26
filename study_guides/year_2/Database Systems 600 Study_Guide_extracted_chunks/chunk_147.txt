@@ -1,0 +1,13 @@
+ances) must be created just to accommodate the creation of required entities. It is 
+also important to understand that the semantics of a problem might determine the type of 
+participation in a relationship.  
+Relationship Degree 
+A relationship degree indicates the number of entities or participants associated with a relationship. 
+A unary relationship exists when an association is maintained within a single entity. A binary 
+relationship exists when two entities are associated. A ternary relationship exists when three 
+entities are associated. Although higher degrees exist, they are rare and are not specifically named. 
+(For example, an association of four entities is described simply as a four-degree relationship.) 
+Figure 4.15 shows these types of relationship degrees. 
+Recursive Relationships 
+As you just learned, a recursive relationship is one in which a relationship can exist between 
+occurrences of the same entity set. (Naturally, such a condition is found within a unary relat

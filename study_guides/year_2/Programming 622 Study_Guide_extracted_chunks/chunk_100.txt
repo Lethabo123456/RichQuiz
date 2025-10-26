@@ -1,0 +1,25 @@
+list of verbs for the 
+cylinder problem description—write, input, calculate, and print—the possible operations for a cylinder 
+object are input, calculate, and print.  
+  
+For the cylinderType class, the dimensions represent the data. The center of the base, radius of the base, 
+and height of the cylinder are the characteristics of the dimensions. You can input data to the object either 
+by a constructor or by a function.  
+  
+The verb calculate applies to determining the volume and the surface area. From this, you can deduce the 
+operations: cylinderVolume and cylinderSurfaceArea. Similarly, the verb print applies to the display of the 
+volume and the surface area on an output device.  
+  
+  
+  
+  
+
+46  
+  
+Identifying classes via the nouns and verbs from the descriptions to the problem is not the only technique 
+possible. There are several other OOD techniques in the literature. However, this technique is sufficient 
+for the programming exercises in this book.  
+  
+Key Terms   
+  
+1.

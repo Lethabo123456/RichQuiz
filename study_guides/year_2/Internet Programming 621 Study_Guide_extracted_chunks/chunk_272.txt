@@ -1,0 +1,93 @@
+170. 
+What will be the output of the following PHP code ? 
+<?php 
+$hello = "Hello World"; 
+$bye = "Bye"; 
+echo $hello;"$bye"; 
+?> 
+a) Hello World 
+b) Bye 
+c) Hello worldBye 
+d) Error 
+  
+Answer: a 
+ 
+171. 
+What will be the output of the following PHP code ? 
+<?php 
+$x; 
+echo "$x"; 
+?> 
+a) 0 
+b) 1 
+c) Nothing 
+d) Error 
+  
+Answer: c 
+172. 
+ What will be the output of the following PHP code ? 
+<?php 
+$x = 5; 
+{ 
+$x = 10; 
+echo "$x"; 
+} 
+echo "$x"; 
+?> 
+a) 1010 
+b) 105 
+c) 510 
+d) error 
+Answer: a 
+
+  
+173. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 5; 
+{ 
+echo "$x"; 
+} 
+?> 
+a) 0 
+b) 5 
+c) Nothing 
+d) Error 
+  
+Answer: b 
+  
+174. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 5; 
+function fun() 
+{ 
+echo "$x"; 
+} 
+fun(); 
+?> 
+  
+a) 0 
+b) 5 
+c) Nothing 
+d) Error 
+  
+Answer: c 
+  
+175. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 5; 
+function fun() 
+{ 
+
+$x = 10; 
+echo "$x"; 
+} 
+fun(); 
+echo "$x"; 
+?> 
+a) 0 
+b) 105 
+c) 510 
+d)

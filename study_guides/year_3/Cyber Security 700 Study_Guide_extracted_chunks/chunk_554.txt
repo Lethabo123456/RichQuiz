@@ -1,0 +1,28 @@
+SP 800-30 lists the following types of attack tools: 
+ 
+ Phishing attacks 
+ Spear phishing attacks 
+spear phishing: Phishing that is targeted against a group, a company, or individuals within a 
+company. 
+ Attacks specifically based on deployed information technology environment 
+ Counterfeit/spoof website 
+ Counterfeit certificates 
+ 
+Delivery 
+During the delivery phase, the attacker sends the malicious payload to the victim by one of many 
+intrusion methods. Possible methods of delivery include email, web traffic, instant messaging, and File 
+Transfer Protocol (FTP). The payload can also be placed on removable media (for example, flash drives) 
+and social engineering techniques can be used to persuade an employee to install the malware from 
+the media to the enterprise’s information systems. SP 800-30 lists a number of other delivery 
+techniques, including the following:
+
+ Insert malware into common freeware, shareware, or commercial IT products. This technique 
+does not target a specific organization but is a way to find targets of opportunity. 
+ Insert malware into organizational information systems and information system components 
+(for example, commercial information technology products), specifically targeted to the 
+hardware, software, and firmware used by organizations (based on knowledge gained via 
+reconnaissance). 
+ Replace critical information system components with modified or corrupted components. This 
+is done through the supply chain, a subverted insider, or some combination thereof. 
+ Place individuals in privileged positions within organizations who are willing and able to carry 
+out actions to cause harm to organizational missions/business functions.

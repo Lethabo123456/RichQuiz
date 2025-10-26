@@ -1,0 +1,38 @@
+purpose of the COMMIT and ROLLBACK commands is to ensure database update integrity in 
+transaction management. 
+Updating Table Rows 
+Use the UPDATE command to modify data in a table. The syntax for this command is as follows:  
+UPDATE   
+table-name 
+SET  
+ 
+column-name = expression [, column-name = expression] 
+[WHERE   
+condition-list];  
+For example, if you want to change P_INDATE from December 13, 2017, to January 18, 2018, in 
+the second row of the PRODUCT table, use the primary key (13-Q2/P2) to locate the correct row. 
+Therefore, type:  
+UPDATE   
+PRODUCT 
+SET  
+ 
+P_INDATE = '18-JAN-2018' 
+WHERE   
+P_CODE = '13-Q2/P2'; 
+If you want to add 10 percent to the price for all products that have current prices below $50, you 
+can use:  
+UPDATE   
+PRODUCT 
+SET  
+ 
+P_PRICE = P_PRICE * 1.10 
+WHERE   
+P_PRICE < 50.00; 
+Another example, if you want to enter the P_SALECODE value ‘1’ for the P_CODE values 
+‘2232/QWE’ and ‘2232/QTY’, you use:  
+UPDATE   
+PRODUCT 
+SET  
+ 
+P_SALECODE = '1' 
+WHER

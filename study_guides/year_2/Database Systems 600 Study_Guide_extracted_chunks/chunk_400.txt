@@ -1,0 +1,18 @@
+cess operation. In the manual 
+statistical generation mode, the statistics must be updated periodically through a user-selected 
+utility such as IBM’s RUNSTAT com-mand, which is used by DB2 DBMSs.  
+ 
+A rule-based query optimization algorithm is based on a set of user-defined rules to determine 
+the best query access strategy. The rules are entered by the end user or database administrator, 
+and they are typically general in nature. 
+Because database statistics play a crucial role in query optimization, this topic is explored in more 
+detail in the next section. 
+ 
+ 
+6.2 Query Processing and Optimization  
+ 
+What happens at the DBMS server end when the client’s SQL statement is received? In simple 
+terms, the DBMS processes a query in three phases: parsing, execution and fetching. 
+SQL Parsing Phase 
+The optimization process includes breaking down—parsing—the query into smaller units and 
+transforming the original SQL query into a slightly different version of the original SQL code, b

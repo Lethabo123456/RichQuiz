@@ -1,0 +1,24 @@
+5.1 Definite Integrals 
+The formal definition of a definite integral is stated in terms of the limit of a 
+Riemann sum. Riemann sums are covered in the calculus lectures and in the 
+textbook. For simplicity's sake, we will use a more informal definition for a 
+definite integral. We will introduce the definite integral defined in terms of 
+area.Let 𝑓(𝑥) be a continuous function on the interval [𝑎, 𝑏]. Consider the area 
+bounded by the curve, the 𝑥-axis and the lines 𝑥= 𝑎 and 𝑥 = 𝑏. The area of the 
+region that lies above the  𝑥-axis should be treated as a positive (+) value, while 
+the area of the region that lies below the x-axis should be treated as a negative 
+(-) value. 
+
+Figure 5.1 illustrates this concept. 
+
+The positive area, above the 𝑥-axis, is shaded green and 
+labelled "+", while the negative area, below the 𝑥-axis, 
+is shaded red and labelled "-". The integral of the function 
+𝑓(𝑥) from 𝑎 to 𝑏 is equal to the sum of the individual areas bounded by the function,
+ 
+the x-axis and the lines x = a and 𝑥= 𝑏.     
+  
+This integral is denoted by ∫𝑏𝑎 𝑓(𝑥)𝑑𝑥, where 𝑓(𝑥) is called the integrand, 𝑎 is 
+the lower limit and 𝑏 is the upper limit. This type of integral is called a definite 
+integral. When evaluated, a definite integral results in a real number. It is 
+independent of the choice of sample points (𝑥, 𝑓(𝑥)).

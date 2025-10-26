@@ -1,0 +1,11 @@
+void myMethod(int p1); 
+void myMethod(int p1, int p2); void 
+myMethod(int p1, string s1); 
+
+A class can have any number of methods, as long as each one's signature differs from that of 
+all the others. 
+
+Example 1-9 illustrates our Time class with two constructors, one which takes a DateTime 
+object, and the other which takes six integers. 
+
+Example 1-9. Overloading the constructor 

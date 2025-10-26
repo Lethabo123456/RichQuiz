@@ -1,0 +1,46 @@
+Using Scikit we can predict for a temp of 20 degrees 
+linreg.predict(20) 
+# 189.4570 
+ 
+This means that 190 bikes will likely be rented if the temperature is 20 degrees. Try the following code 
+that takes includes another feature (weather conditions) to the mix: 
+ 
+# create a list of features 
+feature_cols = ['temp', 'season', 'weather', 'humidity'] 
+# create X and y 
+X = bikes[feature_cols] 
+y = bikes['count'] 
+ 
+# instantiate and fit 
+linreg = LinearRegression() 
+linreg.fit(X, y) 
+ 
+# pair the feature names with the coefficients 
+zip(feature_cols, linreg.coef_) 
+ 
+Output: 
+[('temp', 7.8648249924774403), 
+ ('season', 22.538757532466754), 
+ ('weather', 6.6703020359238048), 
+ ('humidity', -3.1188733823964974)] 
+
+This means that: 
+• 1 unit increase in temperature is associated with a rental increase of 7.86 bikes 
+• 1 unit increase in season is associated with a rental increase of 22.5 bikes 
+• 
+1 unit increase in weather is associated with a rental increase of 6.67 bikes 
+• 
+1 unit increase in humidity is associated with a rental decrease of 3.12 bikes 
+ 
+Plot the results: 
+ 
+feature_cols = ['temp', 'season', 'weather', 'humidity'] 
+# multiple scatter plots 
+sns.pairplot(bikes, x_vars=feature_cols, y_vars='count', kind='reg') 
+ 
+Output 
+
+
+
+In terms of the scope of this module you are not required to learn Regression Metrics and Logistic 
+Regression. 

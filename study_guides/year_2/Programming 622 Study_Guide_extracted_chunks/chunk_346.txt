@@ -1,0 +1,76 @@
+eral cases and provide a solution to each general case in terms of smaller versions 
+of itself.  
+  
+Exercises  
+  
+1. Mark the following statements as true or false.  
+a. Every recursive definition must have one or more base cases.  
+b. Every recursive function must have one or more base cases.  
+c. The general case stops the recursion.  
+d. In the general case, the solution to the problem is obtained directly.  
+e. A recursive function always returns a value.  
+  
+2. What is a base case?  
+  
+3. What is a recursive case?  
+  
+4. What is direct recursion?  
+  
+5. What is indirect recursion?  
+  
+6. What is tail recursion?  
+  
+7. Consider the following recursive function:  
+ 
+int mystery(int number)   
+  
+  
+  
+  
+  
+//Line 1  
+{   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 2 if 
+(number == 0)   
+  
+  
+  
+  
+  
+//Line 3 
+return number;   
+  
+  
+  
+  
+//Line 4 else    
+ 
+  
+  
+  
+  
+  
+  
+//Line 5 
+return(number + mystery(number - 1));   
+  
+//Line 6  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 7

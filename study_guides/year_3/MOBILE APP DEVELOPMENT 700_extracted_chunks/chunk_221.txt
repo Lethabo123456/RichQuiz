@@ -1,0 +1,40 @@
+Create the Settings Layout 
+Open the activity_contact_settings.xml file. If you have not already done so, add the navigation 
+buttons to the layout. Do this by opening the activity_main.xml file and copying the LinearLayout xml 
+with  the  +id  set  to  navbar  to  the  activity_contact_settings  xml.  Be  sure  to  include  the  end 
+</LinearLayout> tag. While in the XML view, delete any of the XML not associated with the root 
+ConstraintLayout and the navbar (there may not be anything). Switch to Design view to verify that the 
+navigation bar is visible and in the correct position. There should be no whitespace around the 
+navigation bar and no other widgets on the screen.
+
+Use the following steps in Design view to create the layout: 
+1. Drag a TextView from the Common folder to the layout and position it near the top. Use the 
+Attributes panel to constrain the left side and top to the parent. Use 16dp as the margin. Change 
+the text attribute from TextView to Sort Contacts By:. 
+2. Drag a RadioGroup from the Buttons folder and position it below the TextView. Use the 
+Attributes panel to constrain the left side to the parent with a margin of 32dp. The next step is 
+to constrain the top to the bottom of the TextView using Design view. To do this, you will likely 
+have to zoom way in so that you can accurately drag the constraint from the top of the 
+RadioGroup to the bottom of the TextView. Use a top margin of 8dp. In the Attributes panel, 
+give it an id of radioGroupSortBy. 
+3. Now drag three RadioButtons from the Buttons folder and place them in the RadioGroup. 
+Position them one above the other. You may have to do this in the Component Tree because 
+the RadioGroup is too small on the Design view to accurately place the buttons inside it. 
+However, once you have one button in the group, it gets easier to use the Design view for this. 
+4. Change the names and ids of the RadioButtons by clicking on the top RadioButton and setting 
+id to radioName and text to Name in the Attributes panel. Repeat for the second and third 
+RadioButton using radioCity/City and radioBirthday/Birthday for id and text, respectively. 
+5. Drag a TextView from the Common folder to the layout and position it below the RadioGroup. 
+Use the Attributes panel to constrain the left side to the parent using 16dp as the margin. In 
+Design view, constrain the top to the bottom of the RadioGroup using a margin of 16dp. Change the text 
+attribute from TextView to Sort Order:. 
+6. Drag a RadioGroup from the Buttons folder and 
+position it below the new TextView. Use the Attributes panel to constrain the left side to the parent with a 
+margin of 32dp. Constrain the top to the bottom of the TextView using Design view. Use a top margin of 8dp. 
+In the Attributes panel, give it an id of radioGroupSortOrder. 
+7. Now drag two RadioButtons from the Buttons folder and place them in the RadioGroup. Position them one 
+above the other. 
+8. Change the ids and names of the RadioButtons as you did above using radioAscending/Ascending for the top 
+button and radioDescending/Descending for the second button. 
+
+Your finished layout should look like Figure 5.1.

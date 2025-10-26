@@ -1,0 +1,56 @@
+example we’ll use the mpg.csv dataset to show two input components - both dropdowns - will let 
+us set the x-axis and y-axis features from our dataset. 
+Create a file called callback3.py and add the following: 
+ 
+ 
+import dash 
+ 
+import dash_core_components as dcc 
+import dash_html_components as html 
+from dash.dependencies import Input, Output 
+ 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+app = dash.Dash() 
+ 
+df = pd.read_csv('../data/mpg.csv') 
+ 
+features = df.columns 
+ 
+app.layout = html.Div([ 
+ 
+html.Div([ 
+html.Div([ 
+dcc.Dropdown( 
+id='xaxis', 
+
+ 
+ 
+ 
+ 
+ 
+options=[{'label': i, 'value': i} for i in features], 
+value='displacement' 
+) 
+ 
+], 
+style={'width': '48%', 'display': 'inline-block'}), 
+ 
+html.Div([ 
+dcc.Dropdown( 
+ 
+id='yaxis', 
+ 
+options=[{'label': i, 'value': i} for i in features], 
+value='acceleration' 
+ 
+) 
+],style={'width': '48%', 'float': 'right', 'display': 'inline-block'}) 
+]), 
+ 
+dcc.Graph(id='feature-graphic') 
+ 
+], style={'padding':10}) 
+ 
+@app.callba

@@ -1,0 +1,33 @@
+Creating a New Fragment 
+ 
+Extend the Fragment class to create a new Fragment, (optionally) defi ning the UI and implementing 
+the functionality it encapsulates. 
+In most circumstances you’ll want to assign a UI to your Fragment. It is possible to create a 
+Fragment that doesn’t include a UI but instead provides background behavior for an Activity. This is 
+explored in more detail later in this chapter. 
+If your Fragment does require a UI, override the onCreateView handler to infl ate and return the 
+required View hierarchy 
+ 
+The following code snippet shows how a Fragment UI would be inflated. 
+ 
+import android.app.Fragment; 
+import android.os.Bundle; 
+import android.view.LayoutInflater; 
+import android.view.View; 
+import android.view.ViewGroup; 
+public class MySkeletonFragment extends Fragment { 
+@Override 
+public View onCreateView(LayoutInflater inflater, 
+ViewGroup container,Bundle savedInstanceState) { 
+ 
+// Create, or inflate the Fragment’s UI, and return it. 
+// If this Fragment has no UI then return null. 
+return inflater.inflate(R.layout.my_fragment, container, false); 
+} 
+} 
+ 
+You can create a layout in code using layout View Groups; however, as with Activities, the preferred 
+way to design Fragment UI layouts is by infl ating an XML resource. 
+Unlike Activities, Fragments don’t need to be registered in your manifest. This is because Fragments 
+can exist only when embedded into an Activity, with their lifecycles dependent on that of the 
+Activity to which they’ve been added 

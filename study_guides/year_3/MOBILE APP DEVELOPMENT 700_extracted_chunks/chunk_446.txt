@@ -1,0 +1,62 @@
+6.3 Monitoring the Battery 
+
+Typically all versions of the Android OS have some sort of battery-level monitoring display so that the 
+user knows when to recharge the device. However, just because the battery level is displayed to the 
+user doesn’t mean that the user will pay attention and plug in the phone or tablet when needed. To 
+avoid complications from the device shutting down during app execution, you may need to monitor 
+the battery within the app so that the app can take necessary precautions if the level gets too low.  
+You may also require the user to have the device plugged in to external power to carry out certain 
+operations that might require a significant power drain. 
+
+Monitoring the battery is not crucial to the MyContactList app. However, learning how to do so is 
+useful for understanding one approach used in Android to interact with device hardware. The Android 
+OS has an object that monitors important measures of battery health. Some of these measures include 
+battery temperature, voltage, charge level, and many others. To examine all available measures, 
+review the BatteryManager class on the Android Developer site (search for “android 
+batterymanager”). The BatteryManager produces a broadcast every few seconds that includes the 
+current reading on these measures. To monitor the battery, the app has to listen for these broadcasts 
+and respond to the measures that are important to the app. 
+
+To demonstrate monitoring the battery, you will put a small TextView in the toolbar of the Contact 
+List activity to display the current battery level as a percentage. Begin by adding the TextView to the 
+activity_main_list.xml layout file. Use the code in Listing 8.1. 
+Be sure to add this between the toolbar constraintLayout’s 
+
+start and end tags. Alternatively, you could do this in Design 
+view and set the attributes there. When complete, your toolbar should look like Figure 8.1. 
+The next step is to add code to listen for and respond to the battery manager’s broadcasts. To do so, 
+you have to instantiate a BroadcastReceiver object that will capture and respond to the broadcast. A 
+BroadcastReceiver is an object that can receive intents sent by other activities both within and outside 
+the app. Generally, you set up a BroadcastReceiver to respond only to specific types of broadcasts. 
+The code in the BroadcastReceiver typically uses the data from the broadcast intent to perform some 
+action. The final step is to tell the activity to listen for broadcasts from the BatteryManager using 
+the broadcast receiver you defined. Enter the code in Listing 
+8.2 in the onCreate method of the ContactListActivity class. 
+
+Not much code is needed to implement battery monitoring, because the objects provided with the Android SDK 
+do most of the work. However, much of the code is new and needs some explanation: 
+ 
+▪ Line 1—A BroadcastReceiver variable is declared and instantiated with a new BroadcastReceiver. 
+This object receives Intents and has the code used to respond to the Intent. An Intent is broadcast 
+from other apps or objects executing on the device. 
+▪ Line 4—The Intent concerning battery status sent by the OS contains information about the battery 
+as Extras. This line gets the extra associated with the battery’s current charge level. Although the value 
+is retrieved as an integer, it is assigned to a double variable so that it can be used as a double later. 
+▪ Line 5—The extra associated with the scale used for measuring the charge is retrieved and assigned 
+to a double variable. Capturing the scale is important because different devices may use different 
+scales for measuring the charge.
+▪ Line 6—The percentage of battery charge left is calculated by dividing the level by the scale. If 
+these two variables were not defined as doubles, this calculation would produce incorrect results 
+because a divide operation needs to produce a double value. The result of the calculation is a number 
+between 0 and 1, which is multiplied by 100 to get a percentage. The floor function is applied to take 
+on the integer value of the result. 
+▪ Line 12—A new IntentFilter variable is declared and assigned a new IntentFilter. An IntentFilter 
+listens for Intents that have been broadcast by the system and only lets through the ones the 
+developer is looking for. In this case, the filter looks for Battery Status changed intent. This is required 
+because a BroadcastReceiver can respond to any intent. However, you want it to respond only to 
+Intents sent by the battery. 
+▪ Line 13—The BroadcastReceiver is registered, which means that the app is told to listen for battery 
+status intents and handle them with the BroadcastReceiver defined in the activity. 
+Run the app. Open the emulator control you used to change the GPS coordinates (via the ellipse at 
+the bottom of the emulator control panel) and click the battery tab on the left side. Use the slider to 
+change the battery level. You should see the battery level TextView change correspondingly. 

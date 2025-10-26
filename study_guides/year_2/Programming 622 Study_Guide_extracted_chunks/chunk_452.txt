@@ -1,0 +1,36 @@
+hapter.)  
+  
+Next, we write the definitions of the functions of the class linkedQueueType.  
+  
+ 
+6.3.1  Empty and Full Queue  
+  
+The queue is empty if queueFront is NULL. Memory to store the queue elements is allocated dynamically. 
+Therefore, the queue is never full and so the function to implement the isFullQueue operation returns the 
+value false. (The queue is full only if the program runs out of memory.)  
+  
+template <class Type>  
+bool linkedQueueType<Type>::isEmptyQueue() const  
+{  
+return(queueFront == NULL);  
+} //end  
+  
+template <class Type>  
+bool linkedQueueType<Type>::isFullQueue() const  
+{ return false;  
+} //end isFullQueue  
+  
+Note that in reality, in the linked implementation of queues, the function isFullQueue does not apply 
+because logically the queue is never full. However, you must provide its definition because it is included 
+as an abstract function in the parent class queueADT.  
+  
+
+230  
+  
+ 
+ 
+ 
+ 
+6.3.2  Initialize Queue  
+  
+The operation initializ

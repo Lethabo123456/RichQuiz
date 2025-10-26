@@ -1,0 +1,55 @@
+Magnetic Disk Storage 
+Magnetic disk drives, such as computer hard drives (and the floppy disk drives of yester- year), 
+usually feature read/write heads that float over each surface of each disk. Disk drives can have 
+a single platter, or a stack of magnetic platters, called a disk pack. Figure 4.5 shows a typical 
+disk pack, several platters stacked on a common central spindle, separated by enough space to 
+allow the read/write heads to move between each pair of disks. 
+ 
+Figure 4.5 
+ 
+Figure 4.5 A disk pack is a stack of magnetic platters. The read/write heads move on each 
+surface, and all the heads are moved in unison by the arm.  
+ 
+As shown in Figure 4.5, each platter has two surfaces for recording (top and bottom), and 
+each surface is formatted with a specific number of concentric tracks where the data is recorded. 
+The precise number of tracks can vary widely, but typically there are a thousand or more on a high- 
+capacity hard disk. Each track on each surface is numbered with the outermost circle as Track 0 
+and the highest-numbered track in the center. 
+
+The arm, shown in Figure 4.6, moves two read/write heads between each pair of surfaces: one for 
+the surface above it and one for the surface below, as well as one for the uppermost surface 
+and another for the lowermost surface. The arm moves all the heads in unison, so if one head 
+is on Track 36, then all the heads are on Track 36, even if there are many platters, in other 
+words, they are all positioned on the same track but over their respective surfaces, 
+
+thus, creating a virtual cylinder. 
+
+Figure 4.6 
+ 
+sFigure 4.6 A typical hard drive from a PC showing the arm that floats over the surface of the 
+disk. © Courtesy Seagate Technology. 
+ 
+This raises some interesting questions: Is it more efficient to write a series of records on surface 
+one, and then, when that surface is full, to continue writing on surface two, and then on 
+surface three, and so on? Or is it better to fill up every outside track of every surface before moving 
+the heads inward to the next track position to continue writing? 
+ 
+It is slower to fill a disk pack surface-by-surface than it is to fill it up track-by-track, this leads us to 
+a valuable concept. If we fill in Track 0 of all the surfaces, we have got a virtual cylinder of data. 
+There are as many cylinders as there are tracks, and the cylinders are as tall as the disk pack. You 
+could visualize the cylinders as a series of smaller and smaller soup cans, each nested inside the 
+larger ones. 
+ 
+To access any given record, the system needs three things: its cylinder number, so that the arm 
+can move the read/write heads to it, its surface number, so that the proper read/write head 
+is activated, and its sector number. A typical disk is shown in Figure 4.7. 
+
+Figure 4.7 
+ 
+Figure 4.7 shows a magnetic disk, the sectors are of different sizes: bigger at the rim and smaller 
+at the center. The disk spins at a constant angular velocity (CAV) to compensate for this difference. 
+ 
+One clarification: We’ve used the term surface in this discussion because it makes the concepts 
+easier to understand. However, conventional literature generally uses the term track to identify 
+both the surface and the concentric track. Therefore, our use of surface and track coincides 
+with the term track or head used in some other texts.

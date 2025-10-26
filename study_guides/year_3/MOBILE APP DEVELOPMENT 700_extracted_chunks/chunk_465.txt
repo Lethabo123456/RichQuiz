@@ -1,0 +1,45 @@
+6.6 Using the Camera 
+
+Many Android devices have a camera, which can be used independently by the user or integrated into 
+an app. You can integrate it into an app by calling the camera API to start the camera, so that the user 
+can take a picture using the camera app provided by Android and then return the picture to the app. 
+You can also do it in a more sophisticated manner in which the camera’s API, and thus functionality, 
+is integrated right in the app. The former approach is similar to the way the phone functionality was 
+used in the previous section. The latter is much more sophisticated and requires creating an activity 
+and layout designed to provide the camera functionality desired in the app. This approach is beyond 
+the scope of this book. 
+
+The camera will be used in the MyContactList app to capture a photo of the contact so that it can be 
+displayed with the contact’s data. To begin, there must show the image on the MainActivity’s layout. 
+To do this, you add an ImageButton to the layout. You use the button functionality of the ImageButton 
+to access the camera. An ImageButton must have an image associated with it, so the first step is to 
+import the photoicon.png file (available with the resources provided with this book) into the 
+drawable-hdpi folder. Copy the photoicon.png file and paste it into the res > drawable folder. Click OK 
+on the window that opens. Next, open activity_main.xml and drag an ImageButton to the ScrollView 
+to the right of the EditText for entering the contact’s name. Select the photoicon you just copied as 
+the image. Add a constraint from the right of the ImageButton to the right side of the ScrollView 
+(parent). Use a margin of 8dp. Next, add a constraint from the top of the ImageButton to the top of 
+the TextView that says Contact: with a margin of 0dp. Set the id to imageContact. The XML (Text view) 
+should look like Listing 8.10.
+
+Modify the attributes of the editName EditText so it does not overrun the ImageButton by adding the 
+following attribute/value pair to the XML of that EditText: 
+ 
+app:layout_constraintEnd_toStartOf="@+id/imageContact" 
+The camera is outside the app, so the app needs permission to use it. As always, this is granted by 
+entering a permission in the app’s manifest. Enter the following permission after the other 
+permissions already in the manifest: 
+<uses-permission android:name="android.permission.CAMERA" /> 
+ 
+The permission to use the camera is also considered dangerous, so we will have to code the app to 
+handle permissions in newer Android OSs. Open MainActivity.java to code the camera use. This 
+requires initializing the ImageButton to listen for an onClick event, writing code to have the onClick 
+method check for permission to use the camera, writing a method to start the camera, and writing 
+code to listen for the camera response to get the picture after it has been taken. Code the ImageButton 
+initialization with the code in Listing 8.11. Again, remember to call the method in the activity’s 
+onCreate method.
+
+Find the setForEditing method and add this code to enable and disable the picture button with the 
+rest of the widgets in the layout: 
+ImageButton picture = findViewById(R.id.imageContact); 
+picture.setEnabled(enabled);

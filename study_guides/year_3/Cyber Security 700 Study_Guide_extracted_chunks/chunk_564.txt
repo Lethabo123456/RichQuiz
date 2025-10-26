@@ -1,0 +1,34 @@
+Non-Malware Attacks 
+ 
+An increasingly important category of cyber attacks is referred to as non-malware attacks. The chief 
+characteristic of a non-malware attack is that it does not involve downloading any malicious files or 
+code onto target devices. Rather, the attacker uses existing software on target machines, whitelisted 
+applications, and authorized protocols to carry out malicious activities. Non-malware attacks can 
+appear at several points along the cyber kill chain. Among the most common types of non-malware 
+attacks are the following: 
+ 
+ Remote logins 
+ Windows Management Instrumentation (WMI)–based attacks: Windows Management 
+Instrumentation (WMI )- A protocol to pull system metadata from Microsoft Windows devices, 
+most notably operating system and software version data. 
+ PowerShell-based attacks: PowerShell - A scripting language and related facilities that 
+provides rich access to Window systems, including access to security settings. 
+ Attacks leveraging Office macros 
+ 
+When dealing with security events other than malware, the difficulty of automating the process of 
+responding is significantly greater. When antivirus software or other incident monitoring software 
+encounters malware, the malware can be automatically removed or isolated for further analysis. But 
+an intrusion or another indicator of compromise may require both automated tools for recognition 
+and human involvement for response. The article “Restoring Machine Learning’s Good Name in 
+Cybersecurity” [CHES17] gives the following example: For a typical scenario in a medium-to-large 
+company, the security analyst’s procedure for confronting a potential breach consists of the following: 
+ 
+ Identify a security event. 
+ Try to identify the attack intent based on the event name and description (which is rarely 
+satisfactory, as the event name is usually too generic and the description too vague to 
+accurately represent the intent). 
+ Search for and collect relevant, potentially useful data from third-party threat centers, 
+security blogs, intelligence reports, and similar sources. 
+ Begin analyzing data. 
+ Determine event intent and possible impact on the organization, based on associated threat 
+information.

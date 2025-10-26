@@ -1,0 +1,19 @@
+of the test then tells us 
+whether we should believe the hypothesis or reject it for an alternative one. 
+ 
+You can think of the hypothesis tests' framework to determine whether the observed sample 
+data deviates from what was to be expected from the population itself. Now this sounds like 
+a difficult task but, luckily, Python comes to the rescue and includes built-in libraries to 
+conduct these tests easily. 
+ 
+A hypothesis test generally looks at two opposing hypotheses about a population. We call 
+them the null hypothesis and the alternative hypothesis. The null hypothesis is the statement 
+being tested and is the default correct answer; it is our starting point and our original 
+
+P a g e  | 110 
+ 
+hypothesis. The alternative hypothesis is the statement that opposes the null hypothesis. Our 
+test will tell us which hypothesis we should trust and which we should reject. 
+ 
+Based on sample data from a population, a hypothesis test determines whether to reject the 
+null hypothesis. W

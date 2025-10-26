@@ -1,0 +1,29 @@
+t the class linkedListType is an abstract 
+class and does not implement all the operations. However, the class unorderedLinkedList is derived from 
+the the class linkedListType and provides the definitions of the abstract functions of the class 
+linkedListType. Therefore, we can derive the class linkedStackType from the class unorderedLinkedList.   
+  
+Next, we define the class linkedStackType that is derived from the class unorderedLinkedList. The 
+definitions of the functions to implement the stack operations are also given.  
+  
+#include <iostream>  
+#include 
+"unorderedLinkedList.h" using 
+namespace std; template <class 
+Type>  
+class linkedStackType: public unorderedLinkedList<Type>  
+{ public:  
+void initializeStack(); bool 
+isEmptyStack() const; bool 
+isFullStack() const;  
+void push(const Type& newItem);  
+Type top() const;  
+void pop();  
+};  
+  
+template <class Type>  
+void linkedStackType<Type>::initializeStack()  
+{ unorderedLinkedList<Type>::initializeList();  
+}  
+  
+temp

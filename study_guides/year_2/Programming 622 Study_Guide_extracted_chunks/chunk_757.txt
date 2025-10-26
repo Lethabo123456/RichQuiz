@@ -1,0 +1,19 @@
+protected:  
+bTreeNode<recType, bTreeOrder> *root;  
+};  
+  
+ 
+9.8.1  Search  
+  
+The function search searches the binary search tree for a given item. If the item is found in the binary 
+search tree, it returns true; otherwise, it returns false. The search must start at the root node. Because, 
+usually, there is more than one item in a node, we must search the array containing the data. Therefore, 
+in addition to the function search, we also write the function searchNode that searches a node 
+sequentially. If item is found, the function searchNode returns true and the location in the array where 
+item is found. If item is not in the node, the function returns false and location points to either the first 
+item that is larger than the search item or one past the last item in the node. The definitions of these 
+functions are as follows:   
+  
+template <class recType, int bTreeOrder> void 
+bTree<recType, bTreeOrder>::searchNode  
+(bTreeNode<recType, bTreeOrder> *current, const recTyp

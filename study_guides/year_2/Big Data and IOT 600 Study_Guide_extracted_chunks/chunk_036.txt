@@ -1,0 +1,39 @@
+Figure 13: Big Data Storage Architecture 
+(Source Rouse, 2017) 
+For example, as summarised in Figure 13 above, an enterprise resource planning systems 
+might be attached to a dedicated storage area network (SAN). Meanwhile, the clustered 
+network-attached storage (NAS) supports transactional databases and corporate sales data, 
+while a private cloud handles on-premises archiving. 
+It's not uncommon for larger organizations to have multiple SAN and NAS environments that 
+support discrete workloads. Each enterprise storage silo may contain pieces of data that 
+pertain to your big data project. 
+
+Big data can bring an organization a competitive advantage from large-scale statistical 
+analysis of the data or its metadata. In a big data environment, the analytics mostly operate 
+on a defined set of data, using a series of data mining-based predictive modelling forecasts to 
+gauge customer behaviours or the likelihood of future events. 
+
+3.2 Big Data Security  
+Big Data security is the processing of guarding data and analytics processes, irrespective of 
+where it is housed, from any vulnerabilities that could compromise 
+their confidentiality (Taylor, 2017). Concerns surrounding the storage, 
+management, transmission, mining, and analysing of data are also a key 
+concern with Big Data (Digital Guardian, 2017). 
+
+Security Risks in Big Data 
+ 
+These security issues related to Big Data are briefly discussed 
+below: 
+Since Big Data relies heavily on the cloud, many enterprises fear the sense of loss of control 
+over data that comes with utilizing cloud storage providers and third-party data management 
+and analytics solutions. The impact of this is significant, as many regulations hold enterprises 
+accountable for the security of data that may not be in their direct control. 
+Furthermore third-party applications of unknown lineage, can easily introduce risks into 
+enterprise networks when their security measures are not equivalent to the same standards 
+as established enterprise protocols and data governance policies of the enterprise. 
+ 
+Devices introduce yet another layer of big data security concerns, with workers embracing 
+mobility and taking advantage of the cloud to work anywhere, at any time. With BYOD, a 
+multitude of devices may be used to connect to the enterprise network and handle data at 
+any time, so effective big data security for business must address endpoint security with this 
+in mind. 

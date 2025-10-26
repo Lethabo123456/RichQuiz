@@ -1,0 +1,49 @@
+4.1.17 Servlet Context During a Service Request  
+Each service request can contain information in the form of name/value parameter pairs, as a 
+ServletInputStream, or a BufferedReader. This information is available from the ServletRequest object 
+that is passed to the service() method.   
+The following code shows how to get service-time information:   
+     BufferedReader reader;  
+  String param1;   String 
+param2;   public void 
+service 
+(       
+ServletRequest  req,  
+      ServletResponse res) {  
+  
+    reader = req.getReader();     param1 
+= req.getParameter("First");     param2 
+= req.getParameter("Second");   }  
+There are additional pieces of information available to the servlet through ServletRequest. These are 
+shown in the following table.   
+getAttribute()  
+Returns value of a named attribute for this request.  
+getContentLength()  
+Size of request, if known.  
+getContentType()  
+Returns MIME type of the request message body.  
+getInputStream()  
+Returns an InputStream for reading binary data from the body of the request 
+message.  
+getParameterNames()  Returns an array of strings with the names of all parameters.  
+getParameterValues()  Returns an array of strings for a specific parameter name.  
+getProtocol()  
+Returns the protocol and version for the request as a string of the form 
+<protocol>/<major version>.<minor version>.  
+getReader()  
+Returns a BufferedReader to get the text from the body of the request message.  
+getRealPath()  
+Returns actual path for a specified virtual path.  
+getRemoteAddr()  
+IP address of the client machine sending this request.  
+getRemoteHost()  
+Host name of the client machine that sent this request.  
+getScheme()  
+Returns the scheme used in the URL for this request (for example, https, http, 
+ftp, etc.).  
+getServerName() 
+Name of the host server that received this request.  
+getServerPort()  
+Returns the port number used to receive this request.  
+  
+The following Magercise shows you how to extract parameters from a service request.   

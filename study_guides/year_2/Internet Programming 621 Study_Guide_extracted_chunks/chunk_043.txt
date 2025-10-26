@@ -1,0 +1,31 @@
+By doing this, anyone reading your code knows exactly what value 
+the variable holds at the time it ’ s created. (If you do not initialize a variable in PHP, it is given the 
+default value of null.)  
+  
+Here is an example of declaring and initializing a variable:  
+$my_first_variable = 3;  
+  
+This creates the variable called $my_first_variable , and uses the = operator to assign it a value of 3.  
+  
+  
+  
+  
+  
+  
+  
+
+26  
+Looking back at the addition example earlier, the following script creates two variables, initializes 
+them  
+with the values 5 and 6 , then outputs their sum ( 11 ):  
+$x = 5; $y = 
+6; echo $x + 
+$y;  
+  
+  
+Think Point: Because of the flexibility of PHP which allows you to use variables at any point  
+of the script without having explicitly declared them prior, consider as a programmer, what dangers 
+there are, if any that could be hidden I this flexibility.  
+  
+2.4 Understanding Data Types  
+All data stored in PHP variables fall into one of eight basic categor

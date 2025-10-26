@@ -1,0 +1,22 @@
+the name of the directory 
+you want to work with, as follows:   
+   
+   
+$dir = dir( “/home/james/docs” );   
+   
+The Directory object provides two properties: handle and path. These refer to the directory handle 
+and the path to the directory, respectively:   
+   
+echo $dir- > handle . “ < br / > ”; // Displays the directory handle echo $dir- 
+> path . “ < br / > ”; // Displays “/home/james/docs”   
+   
+You can use the handle property with other directory functions such as readdir() , rewinddir() , and 
+closedir() , just as if you were using a regular directory handle.   
+   
+The Directory object supports three methods — read(), rewind(), and close() — which are 
+functionally equivalent to readdir(), rewinddir(), and closedir(), respectively. For example, you can 
+rewrite the dir_list.php script from earlier in the unit using a Directory object:   
+   
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”   
+             “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >   
+< h

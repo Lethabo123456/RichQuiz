@@ -1,0 +1,24 @@
+Color addition in the RGB color model 
+  
+Varying the intensity of the three primary colors extends the palette to other colors. Orange, 
+for example, is created from a high intensity of red, a moderate intensity of green, and a total 
+absence of blue. CSS represents these intensities mathematically as a set of numbers called an 
+RGB triplet, which has the format 
+rgbred, green, blue) 
+where red, green, and blue are the intensities of the red, green, and blue components of the 
+color. Intensities range from 0 (absence of color) to 255 (maximum intensity); thus, the color 
+white has the value rgb(255, 255, 255), indicating that red, green, and blue are mixed equally 
+at the highest intensity, and orange is represented by rgb(255, 165, 0). RGB triplets can 
+describe 2563 (16.7 million) possible colors, which is a greater number of colors than the 
+
+human eye can distinguish. 
+ 
+Setting Text and Background Colors 
+Now that you’ve studied how CSS works with colors, you can start applying color to some of 
+the elements displayed on the Tri and Succeed Sports website. CSS supports the following 
+styles to define both the text and background color for each element on your page 
+ 
+Where color is either a color value or a color name.  
+We want to use an HSL color value (27, 72%, 72%) to set the background of the document to 
+orange and she would like the text of the home page to appear in a 
+medium gray color on an ivory. 

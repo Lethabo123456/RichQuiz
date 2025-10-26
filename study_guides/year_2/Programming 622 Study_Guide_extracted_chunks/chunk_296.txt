@@ -1,0 +1,24 @@
+ually, the sublist is of length 1, in which 
+case the sublist contains only one element, which is the largest element in the sublist. From this point 
+onward, we backtrack through the recursive calls. This discussion translates into the following recursive 
+algorithm, which is presented in pseudocode:  
+  
+ 
+Base Case:   
+The size of the list is 1  
+The only element in the list is the largest element  
+  
+General Case: The size of the list is greater than 1  
+To find the largest element in list[a]...list[b]  
+1. Find the largest element in list[a + 1]...list[b] and call it max 
+2. Compare the elements list[a] and max if (list[a] >= max) 
+the largest element in list[a]...list[b] is list[a]  
+otherwise the largest element in list[a]...list[b] is 
+max  
+  
+This algorithm translates into the following C++ function to find the largest element in an array:  
+  
+int largest(const int list[], int lowerIndex, int upperIndex)  
+{  
+int max;  
+if (lowerIndex == upperIndex) //size of the sublist i

@@ -1,0 +1,31 @@
+// the new list, last points to the last node of the new 
+// list, and count is decremented by 1; otherwise an // 
+appropriate message is printed.  
+  
+doublyLinkedList();  
+//default constructor  
+//Initializes the list to an empty state.  
+//Postcondition: first = NULL; last = NULL; count = 0;  
+  
+doublyLinkedList(const doublyLinkedList<Type>& otherList);  
+//copy constructor  
+  
+~doublyLinkedList();  
+//destructor  
+//Postcondition: The list object is destroyed.  
+  
+protected:  
+int count;  
+nodeType<Type> *first;   //pointer to the first node 
+nodeType<Type> *last;   //pointer to the last node private:  
+void copyList(const doublyLinkedList<Type>& otherList); //Function 
+to make a copy of otherList.  
+
+127  
+  
+//Postcondition: A copy of otherList is created and assigned  
+// to this list.  
+};  
+We leave the UML class diagram of the class doublyLinkedList as an exercise for you.  
+  
+The functions to implement the operations of a doubly linked list are similar to the ones dis

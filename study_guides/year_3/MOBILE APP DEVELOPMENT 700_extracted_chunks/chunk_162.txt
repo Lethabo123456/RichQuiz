@@ -1,0 +1,28 @@
+Layout 
+A layout is the visual component of a user interface in Android. The layout is not a class but rather an 
+XML file that is used to tell the operating system what visual objects are to be displayed, how those 
+objects are configured, and where those objects should be displayed on the screen. The XML in the 
+file does use objects. The objects that make up an Android interface are referred to as widgets. 
+Widgets are subclasses of the View class. Android widgets include widgets to define where other 
+widgets are displayed (e.g., RelativeLayout), to directly interact with the user (e.g., RadioButton), and 
+to provide some type of navigation within the interfaces (e.g., ScrollView). Developing an 
+understanding of how to describe the layout in the XML is a critically important task for the new 
+Android developer. 
+
+Layouts can also be defined at runtime by instantiating the widgets that make up an interface and 
+configuring them as needed. This can be very useful in some cases. However, designing the interface 
+is more difficult because you cannot see the layout until you run the app. You will be designing your 
+interface in this book with XML, rather than at runtime. 
+
+Intents 
+ 
+An intent is an object that is used to describe an operation to be performed. 
+Intents are the primary way in which the developer starts new activities within the 
+app. This is how you will use them in the app you develop for this book. However, 
+intents can also be used to communicate between activities. An intent is essentially 
+a message that defines an action to be taken and the data that the action is to be 
+performed on. Intents can be used to start activities or broadcast both within and outside the 
+app to provide instructions and data to other activities. 
+
+Activities, layouts, and intents are important components of an Android app. You will use all of them 
+in almost every app you develop. Figure 4.1 provides a graphical relationship between these objects. 

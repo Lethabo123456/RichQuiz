@@ -1,0 +1,40 @@
+2.7 Policies, Procedures, and Regulations 
+Consider the scenario in which you are the network administrator for a substantial enterprise 
+network, overseeing a team of eight technicians responsible for routine installations, upgrades, 
+and troubleshooting. It is imperative that you and your technicians reach a consensus on policies 
+regarding the addition of new users; failure to do so may result in certain users having insufficient 
+access restrictions or inconsistencies in the standard naming convention for logon IDs.  
+ 
+The former issue could lead to security vulnerabilities, while the latter may complicate future 
+user management. Adherence to established rules aids in mitigating chaos, confusion, and 
+potential downtime for both you and the users. Previous chapters of this book have elaborated 
+on the policies, procedures, and regulations conducive to effective network management. 
+These are summarized as follows: 
+● Media installation and management—This includes designing the physical layout of a cable or 
+wireless infrastructure, adhering to best practices for cable management, evaluating the 
+performance of cable or wireless infrastructure, and meticulously documenting cable layouts. 
+● Network addressing policies—This encompasses selecting and implementing an addressing 
+scheme, ascertaining the utilization and limitations of subnets, integrating the addressing of an 
+internal network with that of an external network, and configuring gateways for Network Address 
+Translation (NAT). 
+● Security-related policies—These involve establishing password protocols, restricting access to 
+physical spaces such as data centers, limiting access to shared network resources, imposing 
+restrictions on the types of files permissible for storage on networked computers, monitoring for 
+malware, and conducting regular security audits. 
+● Troubleshooting procedures—This entails adopting a systematic approach for resolving 
+network issues and documenting resolutions. 
+● Backup and disaster recovery procedures—This includes formulating a method and schedule
+
+for creating backups, regularly assessing the efficacy of backups, appointing a disaster recovery 
+team and delineating roles, as well as selecting and testing a disaster recovery strategy. 
+Beyond internal policies, a network manager must also account for state and federal regulations 
+that might influence her responsibilities. In the United States, the Communications Assistance 
+for Law Enforcement Act (CALEA), a federal regulation, mandates that telecommunications 
+carriers and equipment manufacturers furnish surveillance capabilities. CALEA was enacted by 
+Congress in 1994 in response to FBI concerns that digital communication networks could 
+potentially bypass conventional wiretapping techniques. To illustrate, a phone call conducted via 
+VoIP over a private WAN is not as readily interceptable as one made through the Public Switched 
+Telephone Network (PSTN). Consequently, if employed by an Internet Service Provider (ISP), for 
+instance, it is essential that your switches and routers facilitate electronic surveillance and that 
+your team is prepared to grant access to such devices to authorities upon the presentation of a 
+warrant. 

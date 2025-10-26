@@ -1,0 +1,70 @@
+When you use multiple catch statements, it is important to remember that exception subclasses 
+must come before any of their superclasses. This is because a catch statement that uses a superclass 
+will catch exceptions of that type plus any of its subclasses. Thus, a subclass would never be reached 
+if it came after its superclass. Further, in Java, unreachable code is an error. For example, consider 
+the following program:   
+   
+/* This program contains an error.   
+A subclass must come before its superclass in  
+a series of catch statements. If not, 
+unreachable code will be created and a 
+compile-time error will result.   
+*/   
+   
+class SuperSubCatch {  public static 
+void main(String args[])  
+{ try { int a = 0;   
+   
+int b = 42 / a;   
+}  catch(Exception 
+e) {   
+System.out.println("Generic Exception catch.");   
+   
+}   
+/* This catch is never reached because   
+ArithmeticException 
+is 
+a 
+subclass 
+of 
+Exception. 
+*/ 
+catch(ArithmeticException  
+e)  
+{  
+//  
+ERROR  - 
+unreachable   
+System.out.println("This  
+is  
+never reached.");
+}   
+   
+}   
+   
+}   
+
+
+If you try to compile this program, you will receive an error message stating that the second catch 
+statement is unreachable because the exception has already been caught.   
+Since ArithmeticException is a subclass of Exception, the first catch statement will handle all 
+Exception-based errors, including ArithmeticException. This means that the second catch statement 
+will never execute. To fix the problem, reverse the order of the catch statements.   
+   
+Throw    
+So far, you have only been catching exceptions that are thrown by the Java run-time system. 
+However, it is possible for your program to throw an exception explicitly, using the throw statement. 
+The general form of throw is shown here:   
+   
+throw   ThrowableInstance;   
+Here, ThrowableInstance must be an object of type Throwable or a subclass of   
+Throwable. Simple types, such as int or char, as well as non-Throwable classes, such as String    
+and Object, cannot be used as exceptions. There are two ways you can obtain a Throwable object: 
+using a parameter into a catch clause, or creating one with the new operator.The flow of execution 
+stops immediately after the throw statement; any subsequent statements are not executed. The 
+nearest enclosing try block is inspected to see if it has a catch statement that matches the type 
+of the exception. If it does find a match, control is transferred to that statement. If not, then 
+the next enclosing try statement is inspected, and so on. If no matching catch is found, then 
+the default exception handler halts the program and prints the stack trace. Here is a sample 
+program that creates and throws an exception. The handler that catches the exception 
+rethrows it to the outer handler. 

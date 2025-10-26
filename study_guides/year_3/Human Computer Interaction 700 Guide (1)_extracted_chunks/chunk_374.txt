@@ -1,0 +1,23 @@
+Design patterns are a distilled representation of common practices, but one of the challenges with 
+common practices is that they are not always effective. Design approaches that embody poor practices 
+are known as anti-patterns. A classic example of an anti-pattern is "click here," also referred to as mystery 
+navigation. This is problematic because it fails to indicate to the user what action will result from clicking 
+the link, leading to poor interaction design. 
+
+Despite significant improvements in interaction design and user experience since the first edition of this 
+book in 2002, anti-patterns persist. This is partly because technology evolves rapidly, and design solutions 
+that work well on one platform may not be as effective on others. Furthermore, as patterns are used more 
+widely, a better understanding of their advantages and drawbacks emerges, and sometimes patterns are 
+applied in unintended ways. A prime example is the hamburger menu, originally designed for contextual 
+menus but repurposed to save screen space. 
+
+Another important concept in design patterns is dark patterns. While not inherently poor design, dark 
+patterns are intentionally crafted to deceive users, prioritizing organizational benefits over user value. 
+Some dark patterns are accidental, and once identified, they can be quickly corrected. However, when a 
+UX designer intentionally leverages knowledge of human behavior to implement misleading functionality 
+that harms the user experience, that is considered a dark pattern. Research by Linda Di Geronimo et al. 
+(2020), which analyzed 240 mobile apps with 589 users, found that popular apps often employ at least 
+seven types of deceptive interfaces. Examples include preselected options, small close buttons on ads, or 
+
+double negatives in selection text, all of which manipulate the user into making choices that may not align 
+with their best interests. 

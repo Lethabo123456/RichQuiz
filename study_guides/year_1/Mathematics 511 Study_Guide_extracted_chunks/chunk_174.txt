@@ -1,0 +1,29 @@
+3.3.2 Inverse Functions and Compositions of Functions 
+Now consider a one-to-one correspondence f from the set A to the set B. 
+Because f is an onto function, every element of B is the image of some 
+element in A. Furthermore, because f is also a one-to-one function, every 
+element of B is the image of a unique element of A. Consequently, we can 
+define a new function from B to A that reverses the correspondence given 
+by f. 
+
+Definition 31 
+Let f be a one-to-one correspondence from the set A to the set B. The inverse 
+function of f is the function that assigns to an element b belonging to B the 
+unique element a in A such that f (a) = b. The inverse function of f is denoted 
+by f−1. Hence, f−1(b) = a when f (a) = b. 
+ 
+If a function f is not a one-to-one correspondence, we cannot define an 
+inverse function of f . When f is not a one-to-one correspondence, either it 
+is not one-to-one or it is not onto. If f is not one-to-one, some element b in 
+the codomain is the image of more than one element in the domain. If f is 
+not onto, for some element b in the codomain, no element a in the domain 
+exists for which f (a) = b. Consequently, if f is not a one-to-one 
+correspondence, we cannot assign to each element b in the codomain a 
+unique element a in the domain such that f (a) = b (because for some b there 
+is either more than one such a or no such a). A one-to-one correspondence 
+is called invertible because we can define an inverse of this function. A 
+function is not invertible if it is not a one-to-one correspondence, because 
+the inverse of such a function does not exist. 
+
+Figure 2.15: The Function f−1 Is the Inverse of Function f. 
+ 

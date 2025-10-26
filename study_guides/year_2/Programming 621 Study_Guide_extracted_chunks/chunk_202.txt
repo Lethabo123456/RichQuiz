@@ -1,0 +1,27 @@
+scope 
+resolution operator, :: (double colon). In the function definition’s heading, the name 
+of the function is the name of the class, followed by the scope resolution operator, 
+void clockType::setTime(int hours, int minutes, int seconds)  
+{ 
+          if (0 <= hours && hours < 24) 
+                    hr = hours;  
+         else 
+                    hr = 0;  
+
+180 | P a g e  
+ 
+       if (0 <= minutes && minutes < 60)  
+              min = minutes;  
+       else  
+            min = 0;  
+     if (0 <= seconds && seconds < 60)  
+           sec = seconds;  
+          else  
+         sec = 0;  
+} 
+ 
+Note that the definition of the function setTime checks for the valid values of hours, 
+minutes, and seconds. If these values are out of range, the member variables hr, min, 
+and sec are initialized to 0. Let us now explain how the member function setTime 
+works when accessed by an object of type clockType. The member function setTime 
+is a void function and has three parameters. Therefore

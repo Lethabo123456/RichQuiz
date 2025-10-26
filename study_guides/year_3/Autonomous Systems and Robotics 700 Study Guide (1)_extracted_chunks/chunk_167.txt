@@ -1,0 +1,34 @@
+import control as ct 
+ #Define the update rule for the system, f(x, u) 
+# States: x, y, theta (postion and angle of the center of mass) 
+# Inputs: v (forward velocity), delta (steering angle) 
+def vehicle_update(t, x, u, params): 
+    # Get the parameters for the model 
+    a = params.get('refoffset', 1.5)# offset to vehicle reference point 
+    b = params.get('wheelbase', 3.)         # vehicle wheelbase 
+    maxsteer = params.get('maxsteer', 0.5)  # max steering angle (rad) 
+ 
+    # Saturate the steering input 
+    delta = np.clip(u[1], -maxsteer, maxsteer) 
+    alpha = np.arctan2(a * np.tan(delta), b) 
+ 
+    # Return the derivative of the state 
+    return np.array([ 
+        u[0] * np.cos(x[2] + alpha),    # xdot = cos(theta + alpha) v 
+        u[0] * np.sin(x[2] + alpha),    # ydot = sin(theta + alpha)  
+        (u[0] / a) * np.sin(alpha)    # thdot = v sin(alpha) / a 
+    ]) 
+
+# Define the readout map for the system, h(x, u) 
+# Outputs: x, y (planar position of the center of mass) 
+def vehicle_output(t, x, u, params): 
+    return x 
+ 
+# Default vehicle parameters (including nominal velocity) 
+vehicle_params={'refoffset': 1.5, 'wheelbase': 3, 'velocity': 15, 
+                'maxsteer': 0.5} 
+ 
+# Define the vehicle steering dynamics as an input/output system 
+vehicle = ct.nlsys( 
+    vehicle_update, vehicle_output, states=3, name='vehicle', 
+    inputs=['v', 'delta'], outputs=['x', 'y', 'theta'], params=vehicle_params)

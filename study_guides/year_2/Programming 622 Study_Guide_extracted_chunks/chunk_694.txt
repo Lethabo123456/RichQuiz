@@ -1,0 +1,32 @@
+not allowed."<< insertItem << endl; 
+return;  
+}  
+else if (current->info > insertItem) current 
+= current->llink;  
+else current = current->rlink;  
+}//end while  
+  
+if (trailCurrent->info > insertItem) 
+trailCurrent->llink = newNode; else 
+trailCurrent->rlink = newNode;  
+}  
+}//end insert  
+  
+ 
+9.3.3  Delete  
+  
+As before, first we search the binary search tree to find the node to be deleted. To help you better 
+understand the delete operation, before describing the function to delete an item from the binary search 
+tree, let us consider the binary search tree given in Figure 9-8.  
+  
+
+341  
+  
+  
+FIGURE 9-8 Binary search tree before deleting a node  
+  
+After deleting the desired item (if it exists in the binary search tree), the resulting tree must be a binary 
+search tree. The delete operation has four cases, as follows:  
+  
+Case 1: The node to be deleted has no left and right subtrees; that is, the node to be deleted is a leaf. For 
+example, the node with info 45 is a leaf

@@ -1,0 +1,19 @@
+d in a Birth Date field. 
+ Check digit 
+ 
+A check digit is a number(s) or character(s) that is appended to or inserted in a primary key 
+value. A check digit often confirms the accuracy of a primary key value. Bank account, credit 
+card, and other identification numbers often include one or more check digits. 
+ Other Checks  
+DBMSs that include the hyperlink and attachment data types can perform validity checks on data 
+entered in those fields. Hyperlink entries (web addresses and email addresses) can be tested to ensure 
+that the address follows the correct format. Similarly, an attachment entry can be validated by 
+confirming that the file exists. 
+ 
+.1 
+FILE PROCESSING VERSUS DATABASES 
+ 
+In the past, many organizations exclusively used file processing systems to store and manage 
+data. In a typical, file processing system, each department or area within an organization has 
+its own set of files. The records in one file may not relate to the records in any other file.  
+Many of th

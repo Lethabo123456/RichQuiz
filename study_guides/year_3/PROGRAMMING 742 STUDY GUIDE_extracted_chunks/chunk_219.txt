@@ -1,0 +1,92 @@
+In this case, the thread is initialized with a lambda expression (which in turn is just a shorthand version 
+of a delegate). The thread keeps running until stopped becomes true. After that, the t.Join method 
+causes the console application to wait till the thread finishes execution. 
+A thread has its own call stack that stores all the methods that are executed. Local variables are stored 
+on the call stack and are private to the thread. 
+
+ThreadStatic 
+attribute, each thread gets its own copy of a field (see example 5-5). 
+With the ThreadStaticAttribute applied, the maximum value of _field becomes 10. If you remove it, you 
+can see that both threads access the same value and it becomes 20. 
+If you want to use local data in a thread and initialize it for each thread, you can use the ThreadLocal<T> 
+class. This class takes a delegate to a method that initializes the value. example 5-3 shows. 
+
+using System;
+using System.Threading; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        [ThreadStatic] 
+        public static int _field; 
+        public static void Main() 
+        { 
+            new Thread(() => 
+            { 
+                for (int x = 0; x < 10; x++) 
+                { 
+                    _field++; 
+                    Console.WriteLine("Thread A: {0}", _field); 
+                } 
+            }).Start(); 
+            new Thread(() => 
+            { 
+ 
+                for (int x = 0; x < 10; x++) 
+                { 
+                    _field++; 
+                    Console.WriteLine("Thread B: {0}", _field); 
+                } 
+            }).Start(); 
+            Console.ReadKey(); 
+        } 
+    } 
+} 
+
+Solution: 
+ 
+using System;
+using System.Threading; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        public static ThreadLocal<int> _field = 
+        new ThreadLocal<int>(() => 
+        { 
+            return Thread.CurrentThread.ManagedThreadId; 
+        }); 
+        public static void Main() 
+        { 
+            new Thread(() => 
+            { 
+                for (int x = 0; x < _field.Value; x++) 
+                { 
+                    Console.WriteLine("Thread A: {0}", x); 
+                } 
+            }).Start(); 
+            new Thread(() => 
+            { 
+                for (int x = 0; x < _field.Value; x++) 
+                { 
+                    Console.WriteLine("Thread B: {0}", x); 
+ 
+                } 
+            }).Start(); 
+            Console.ReadKey(); 
+        } 
+    } 
+} 
+
+Here you see another feature of the .NET Framework. You can use the Thread.CurrentThread class to ask 
+execution context. This 
+property gives you access t
+current culture (a CultureInfo associated with 
+the current thread that is used to format dates, times, numbers, currency values, the sorting order of 
+text, casing conventions, and string comparisons), principal (representing the current security context), 
+priority (a value to indicate how the thread should be scheduled by the operating system), and other 
+info. 
+ 
+the new thread. This way the new thread has the same privileges as the parent thread. 
+behavior by using the ExecutionContext.SuppressFlow method. 
+ 

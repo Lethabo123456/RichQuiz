@@ -1,0 +1,32 @@
+nction testCopy:" << endl; while 
+(!OStack.isEmptyStack())  
+{  
+cout << OStack.top() << endl; OStack.pop();  
+}  
+}  
+  
+Sample Run:  
+After the assignment operator, newStack: 27  
+43  
+
+198  
+  
+34  
+Testing the copy constructor.  
+Stack in the function testCopy:  
+27  
+43  
+34  
+After the copy constructor, otherStack:  
+27  
+43  
+34  
+  
+5.3.10 Stack as Derived from the class unorderedLinkedList  
+  
+If we compare the push function of the stack with the insertFirst function discussed for general lists in 
+Chapter 3, we see that the algorithms to implement these operations are similar. A comparison of other 
+functions, such as initializeStack and nitializeList, isEmptyList and isEmptyStack, and so on, suggests that 
+the class linkedStackType can be derived from the class linkedListType. Moreover, the functions pop and 
+isFullStack can be implemented as in the previous section. Note that the class linkedListType is an abstract 
+class and does not implement all the operations. However,

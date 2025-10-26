@@ -1,0 +1,167 @@
+/* ================================
+   Networks 731-732 — Technical Theme
+   Extravagant, Futuristic, Network-Inspired
+=================================== */
+
+body.module-style-sam700,
+body[class*="networks-731-732"] {
+  font-family: "Share Tech Mono", "Orbitron", monospace;
+  background: radial-gradient(circle at center, #0a0f1f 0%, #000 100%);
+  color: #e0f7ff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(10, 20, 40, 0.85);
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.6),
+              0 0 60px rgba(0, 150, 255, 0.3);
+  padding: 3rem;
+  max-width: 900px;
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Futuristic network “grid overlay” */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #00f0ff, #ff00ff, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Question styling */
+.question-container {
+  background: rgba(0, 15, 30, 0.8);
+  border-left: 5px solid #00f0ff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.question-container strong {
+  color: #ff00ff;
+  font-weight: 600;
+}
+
+/* Options list with glowing hover */
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  
+  .option-label {
+    display: flex;
+    align-items: center;
+    background: rgba(15, 25, 45, 0.95);
+    border: 1px solid #00f0ff;
+    border-radius: 12px;
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .option-label:hover {
+    background: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 15px #00f0ff;
+  }
+  
+  .option-label input[type="radio"] {
+    accent-color: #ff00ff;
+    margin-right: 1rem;
+    transform: scale(1.2);
+  }
+  
+  .option-text {
+    flex: 1;
+    color: #eafcff;       /* Bright cyan-white for readability */
+    font-weight: 500;     /* Slightly bold for clarity */
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 4px rgba(0, 240, 255, 0.6); /* Glow for emphasis */
+  }
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #00f0ff, #ff00ff);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  padding: 0.9rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1.5rem;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.8);
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Back link styled as network node */
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.back-link::before {
+  content: "◉";
+  margin-right: 8px;
+  color: #ff00ff;
+}
+
+.back-link:hover {
+  color: #ff00ff;
+}
+
+/* Code blocks (Prism) adaptation */
+pre code {
+  background: #0d0d1a !important;
+  border: 1px solid #00f0ff !important;
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.4);
+}

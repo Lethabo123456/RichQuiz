@@ -1,0 +1,45 @@
+ype>& otherQueue);  
+//Copy constructor  
+  
+~queueType();  
+//Destructor  
+  
+private:  
+int maxQueueSize;   
+ 
+//variable to store the maximum queue size  
+int count;   
+  
+ 
+//variable to store the number of  
+elements in the queue 
+int queueFront;   
+ 
+//variable to point to the first element of the queue  
+int queueRear;   
+ 
+//variable to point to the last element of the queue  
+Type *list;   
+  
+ 
+//pointer to the array that holds the queue elements  
+};  
+  
+We leave the UML diagram of the class queueType as an exercise for you. (See Exercise 15 at the end of 
+this chapter.)  
+  
+Next, we consider the implementation of the queue operations.  
+  
+ 
+6.2.1  Empty Queue and Full Queue  
+  
+As discussed earlier, the queue is empty if count == 0, and the queue is full if count == maxQueueSize. So 
+the functions to implement these operations are as follows:  
+  
+template <class Type>  
+bool queueType<Type>::isEmptyQueue() const  
+{  
+return (count == 0);  
+} //end isEmptyQueue  
+  
+te

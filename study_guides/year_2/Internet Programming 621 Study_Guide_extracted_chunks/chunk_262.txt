@@ -1,0 +1,76 @@
+unction addition() 
+{ 
+$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y']; 
+} 
+addition(); 
+echo $z; 
+?> 
+a) 100 
+b) error 
+c) 75 
+d) 25 
+  
+Answer: a 
+  
+132. 
+What will be the output of the following PHP code ? 
+<?php 
+function 2myfunc() 
+{ 
+echo "Hello World"; 
+} 
+2myfunc(); 
+?> 
+a) Hello World 
+b) No Output 
+c) ERROR 
+d) None of the above 
+
+  
+Answer: c 
+  
+133. 
+What will be the output of the following PHP code ? 
+<?php 
+function _func() 
+{ 
+echo "Hello World"; 
+} 
+_func(); 
+?> 
+a) Hello World 
+b) No Output 
+c) ERROR 
+d) None of the above 
+ Answer: a 
+  
+134. 
+What will be the output of the following PHP code ? 
+<?php 
+function test($int) 
+{ 
+if ($int == 1) 
+echo "This Works"; 
+if ($int == 2) 
+echo "This Too Seems To Work"; 
+} 
+test(1); 
+TEST(2); 
+?> 
+a) This Works 
+b) This Too Seems To Work 
+c) This WorksThis Too Seems To Work 
+d) ERROR 
+  
+Answer: c 
+  
+135. 
+What will be the output of the following PHP code ? 
+<?php 
+
+function mine($num) 
+{ 
+$num = 2 + $num; 
+echo $num; 
+} 
+mine(3);

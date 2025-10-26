@@ -1,0 +1,32 @@
+The purpose of security management is to support the application of security policies by means of 
+functions that include the following:
+
+ The creation, deletion, and control of security services and mechanisms 
+ The distribution of security-related information 
+ The reporting of security-related events 
+
+Network Management Systems 
+A large network cannot be put together and managed by human effort alone. The complexity of such 
+a system dictates the use of automated network management tools. The urgency of the need for such 
+tools is increased, and the difficulty of supplying such tools is also increased, if the network includes 
+equipment from multiple vendors. Moreover, the increasing decentralization of network services, as 
+exemplified by the increasing importance of workstations and client/server computing, makes 
+coherent and coordinated network management increasingly difficult. In such complex information 
+systems, many significant network assets are dispersed far from network management personnel. 
+ 
+Components of a Network Management System 
+A network management system is a collection of tools for network monitoring and control that is 
+integrated in the following senses: 
+ A single operator interface with a powerful but user-friendly set of commands for performing 
+most or all network management tasks 
+ A minimal amount of separate equipment, as most of the hardware and software required for 
+network management is incorporated into the existing user equipment 
+A network management system consists of incremental hardware and software additions 
+implemented among existing network components. The software used in accomplishing the network 
+management tasks resides in the host computers and communications processors (for example, 
+front-end processors, terminal cluster controllers, switches, routers). A network management 
+system is designed to view the entire network as a unified architecture, with addresses and labels 
+assigned to each point and the specific attributes of each element and link known to the system. 
+The active elements of the network provide regular feedback of status information to the 
+network control center. In this context, the term element refers to network devices and end 
+systems attached to the network.

@@ -1,0 +1,19 @@
+post can send much larger amounts of form data.   
+   
+Once you have created your basic form element, you can fill it with various elements to create the 
+fields   
+and other controls within your form (as well as other HTML elements such as headings, paragraphs,  
+and tables, as you desire.   
+   
+1.2 Creating An HTML Form   
+In this example, we create a Web form that contains a variety of form fields. Not only will you learn 
+how to create the various types of form fields, but you can see how the fields look and work in your 
+Web browser. Save the following file as web_form.html in your document root folder, then open it in 
+your browser to see the form:   
+   
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”   
+                      “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>   
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>   
+         <head>   
+                    <title>An HTML Form</title>   
+                    <link rel=”stylesheet” type=”t

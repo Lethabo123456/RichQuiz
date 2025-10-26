@@ -1,0 +1,21 @@
+s Section of the guide, the learner should be able to:  
+ 
+ Understand how to work with ML datasets 
+ Understand Datasets conversion in ML 
+ Understand the basic of statistics 
+ Understand Linear Regression in ML 
+ Understand the concept of randomness & prediction in ML 
+
+P a g e  | 26 
+ 
+Using the BufferedReader and FileReader objects, a stream is created to read in the file. After 
+iterating each line, it converts the value to an integer and adds it to the list. Notice the use of 
+the Double object to call the parseDouble method.  It's the same method as used by the 
+Clojure program. Assuming the resulting functions have been stored in a new object, then it's 
+ready for use to get some summary statistics.  
+ 
+3.1.2 Basic statistics 
+This section covered the basic of statistics: the sum, minimum and maximum, mean, mode, 
+median, range, variance, and standard deviation: 
+Minimum & Maximum values: Finding the minimum and maximum values of a list of numbers, while 
+not seemingly gro

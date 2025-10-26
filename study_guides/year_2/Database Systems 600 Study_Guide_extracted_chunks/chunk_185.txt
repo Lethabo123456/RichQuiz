@@ -1,0 +1,27 @@
+is no natural key that makes a suitable primary 
+key, when the primary key is a composite primary key with multiple data types, or when the 
+primary key is too long to be usable.  
+ 
+In a 1:1 relationship, place the PK of the mandatory entity as a foreign key in the optional 
+entity, as an FK in the entity that causes the fewest nulls, or as an FK where the role is 
+played.  
+ 
+Time-variant data refers to data whose values change over time and require that you keep a 
+history of data changes. To maintain the history of time-variant data, you must create an 
+entity that contains the new value, the date of change, and any other time-relevant data.  
+ 
+A fan trap occurs when you have one entity in two 1:M relationships to other entities, and 
+there is an association among the other entities that is not expressed in the model. Redundant 
+relationships occur when there are multiple relationship paths between related entities.  
+ 
+ 
+ 
+ 
+
+ 
+73 
+ 
+  
+Review Questions  
+ 
+1. What is the diff

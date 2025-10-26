@@ -1,0 +1,17 @@
+omponent specified by the index, then whatever memory location 
+is indicated by the index that location is accessed. This situation can result in altering 
+or accessing the data of a memory location that you never intended to modify or 
+access, or in trying to access protected memory that causes the program to instantly 
+halt. Consequently, several strange things can happen if the index goes out of bounds 
+during execution. It is solely the programmer’s responsibility to make sure that the 
+index is within bounds. 
+Consider the following statement:  
+int list[10]; 
+A loop such as the following can set the index of list out of bounds: 
+ for (int i = 0; i <= 10; i++)  
+          list[i] = 0;  
+When i becomes 10, the loop test condition i <= 10 evaluates to true and the body of 
+the loop executes, which results in storing 0 in list[10]. Logically, list[10] does not exist 
+ 
+Arrays as Parameters to Functions 
+By reference only: In C++, arrays are passed by reference only. Because arrays ar

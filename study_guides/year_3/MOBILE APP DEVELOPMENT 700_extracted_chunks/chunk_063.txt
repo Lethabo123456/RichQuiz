@@ -1,0 +1,19 @@
+The view life cycle (see Figure 2.3) begins 
+after the application has finished loading or the user goes to a 
+different page in the app. After the view is loaded into memory, the 
+viewDidLoad method executes. This method is executed only once 
+if the view stays in memory. You should write code in this method to set the initial state of the view. 
+After the view has loaded into memory, just before the view is visible to the user, the viewWillAppear method is executed. 
+Code in this method should be used to load any data into the views that will be visible to the user and turn on 
+services that the user needs to interact with the app. This method executes every time the view 
+reappears on the device. Just like in Android, if an app is interrupted, or the user doesn’t interact with the device for a period 
+of time, or the user moves to another view in the app, the view is pushed into the background. 
+
+Just before this happens, the viewWillDisappear method is executed. Code in this method should turn off 
+services and take steps to save the user’s data. If the user doesn’t interact with the view for a period 
+of time while it is in the background, iOS may reclaim its resources. Just before the view is released 
+from memory, the viewDidUnload method is executed. This is the developer’s last chance to preserve 
+important data used in the view. Understanding and properly coding the app to take advantage of the methods 
+associated with the life cycle are important to ensuring a good user experience with your app. 
+Take the time to understand these life cycles, and your app development experience will be significantly less 
+frustrating!

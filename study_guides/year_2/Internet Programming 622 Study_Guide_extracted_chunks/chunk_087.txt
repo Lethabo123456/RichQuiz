@@ -1,0 +1,16 @@
+this to your shopping cart” 
+link can take the user to a page that adds an item to a registered array of items in the cart. This 
+registered array can then be used on another page to display the contents of the cart.   
+   
+Sessions are started automatically when a script begins running. A new session ID is generated if 
+necessary, possibly creating a cookie to be sent to the browser, and loads any persistent variables 
+from the store. You can register a variable with the session by passing the name of the variable to 
+the $_SESSION[] array. For example, here is a basic hit counter:   
+   
+session_start();   
+$_SESSION['hits'] = $_SESSION['hits'] + 1;   
+echo "This page has been viewed {$_SESSION['hits']} times.";   
+   
+The session_start() function loads registered variables into the associative array $_SESSION. The keys 
+are the variables’ names (e.g., $_SESSION['hits']). If you are curious, the session_id() function returns 
+the current session ID. To end a session, call session_de

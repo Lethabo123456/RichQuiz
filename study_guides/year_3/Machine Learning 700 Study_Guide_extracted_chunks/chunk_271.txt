@@ -1,0 +1,38 @@
+7.5  Advanced Techniques in LLMs 
+7.5.1  Prompt Engineering 
+Prompt engineering is the practice of crafting input prompts to optimize model output.  
+Example 
+prompt = "Summarize the following article in three sentences:\n\n" + full_article_text 
+summary = generator(prompt, max_length=100) 
+ 
+7.5.2  Retrieval-Augmented Generation (RAG) 
+RAG enhances LLM performance by integrating external knowledge retrieval, reducing hallucination 
+risks. 
+
+7.6  Evaluating LLM Performance 
+Evaluating LLMs involves benchmarking using standard NLP metrics: 
+✓ Perplexity (PPL) – Measures model uncertainty in text prediction. 
+✓ BLEU and ROUGE – Compare generated text with reference outputs for translation and 
+summarization tasks. 
+✓ GLUE and SuperGLUE – NLP benchmarks for model performance across multiple tasks.
+
+from transformers import pipeline 
+ 
+# Load an evaluation pipeline 
+
+eval_pipeline = pipeline("summarization") 
+ 
+# Evaluate model output 
+generated_summary = eval_pipeline("A long paragraph of text...", max_length=50) 
+print(generated_summary) 
+
+7.7 Ethical Considerations and Bias in LLMs 
+Despite their capabilities, LLMs present ethical challenges: 
+✓ Bias and Fairness – Models may perpetuate societal biases present in training data. 
+✓ Misinformation – LLMs can generate plausible but false information. 
+✓ Data Privacy – Sensitive user data may be unintentionally memorized. 
+✓ Environmental Impact – Training LLMs consumes significant energy. 
+Mitigation Strategies: 
+✓ Fairness-aware training (e.g., using debiasing algorithms). 
+✓ Human-in-the-loop oversight for model outputs. 
+✓ Implementing explainability techniques to understand model decisions.

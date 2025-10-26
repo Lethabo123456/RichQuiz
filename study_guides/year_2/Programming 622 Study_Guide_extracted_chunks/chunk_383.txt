@@ -1,0 +1,48 @@
+>:: initializeStack()  
+{  
+ 
+nodeType<Type> *temp;   
+  
+//pointer to delete the node  
+ 
+while (stackTop != NULL)   
+  
+//while there are elements in the stack  
+ 
+{  
+  
+temp = stackTop;   
+  
+//set temp to point to the current node 
+stackTop = stackTop->link;   //advance stackTop to the next node delete 
+temp;    
+  
+//deallocate memory occupied by temp  
+}  
+ 
+}   
+  
+  
+  
+  
+  
+//end initializeStack  
+  
+Next, we consider the push, top, and pop operations. From Figure 5-10(b), it is clear that the newElement 
+will be added (in the case of push) at the beginning of the linked list pointed to by stackTop. In the case 
+of pop, the node pointed to by stackTop will be removed. In both cases, the value of the pointer stackTop 
+is updated. The operation top returns the info of the node to which stackTop is pointing.  
+  
+  
+ 
+5.3.4  Push  
+  
+
+192  
+  
+Consider the stack shown in Figure 5-11.  
+  
+  
+FIGURE 5-11 Stack before the push operation  
+  
+Figure 5-12 shows the steps of the pu

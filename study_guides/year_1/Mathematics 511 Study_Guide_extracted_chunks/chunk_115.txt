@@ -1,0 +1,28 @@
+Worked Example 
+Prove that if 𝑛 is an integer and 3𝑛 +  2 is odd, then 𝑛 is odd. 
+Solution: 
+We first attempt a direct proof. To construct a direct proof, we first 
+assume that 3𝑛 +  2 is an odd integer. This means that 3𝑛 +  2 =  2𝑘 +
+ 1 for some integer 𝑘. Can we use this fact to show that 𝑛 is odd? We see 
+that 3𝑛 +  1 =  2𝑘, but there does not seem to be any direct way to 
+conclude that n is odd. Because our attempt at a direct proof failed, we 
+next try a proof by contraposition. 
+The first step in a proof by contraposition is to assume that the conclusion 
+of the conditional statement “If 3𝑛 +  2 is odd, then 𝑛 is odd” is false; 
+namely, assume that 𝑛 is even. Then, by the definition of an even integer, 
+𝑛 =  2𝑘 for some integer 𝑘. Substituting 2𝑘 for 𝑛, we find that 3𝑛 +
+ 2 =  3(2𝑘) +  2 =  6𝑘 +  2 =  2(3𝑘 +  1). This tells us that 3𝑛 +  2 
+is even (because it is a multiple of 2), and therefore not odd. This is the 
+negation of the premise of the theorem. Because the negation of the 
+conclusion of the conditional statement implies that the hypothesis is 
+false, the original conditional statement is true. Our proof by 
+contraposition succeeded; we have proved the theorem “If 3𝑛 +  2 is 
+odd, then 𝑛 is odd.” 
+
+The obvious next step is to add 𝑟 =  𝑝/𝑞 and 𝑠 =  𝑡/𝑢, to obtain 
+ 
+Because 𝑞 ≠ 0 and 𝑢 ≠ 0, it follows that 𝑞𝑢 ≠ 0. Consequently, we have 
+expressed  𝑟 +  𝑠  as the ratio of two integers, 𝑝𝑢 +  𝑞𝑡 and 𝑞𝑢, where 
+𝑞𝑢 ≠ 0. This means that  𝑟 +  𝑠 is rational. We have proved that the sum 
+of two rational numbers is rational; our  attempt to find a direct proof 
+succeeded. 

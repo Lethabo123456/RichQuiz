@@ -1,0 +1,46 @@
+te array elements to form a 
+single delimited string? 
+a) explode() 
+b) implode() 
+c) concat() 
+d) concatenate() 
+ 
+Answer: b 
+ 
+18. Which one of the following functions finds the last occurrence of a string, returning its 
+numerical position? 
+a) strlastpos() 
+b) strpos() 
+c) strlast() 
+d) strrpos() 
+ 
+Answer: d 
+ 
+19. What will be the output of the following PHP code? 
+<?php 
+$author = "nachiketh@example.com"; 
+$author = str_replace("a","@",$author); 
+echo "Contact the author of this article at $author."; 
+?> 
+a) Contact the author of this article at nachiketh@ex@mple.com 
+b) Cont@ct the @uthor of this @rticle @t n@chiketh@ex@mple.com 
+c) Contact the author of this article at n@chiketh@ex@mple.com 
+d) Error 
+
+ 
+Answer: c 
+ 
+20. What will be the output of the following PHP code? 
+<?php 
+$url = "nachiketh@example.com"; 
+echo ltrim(strstr($url, "@"),"@"); 
+?> 
+a) nachiketh@example.com 
+b) nachiketh 
+c) nachiketh@ 
+d) example.com 
+ 
+Answer: d 
+ 
+Topic: 5 
+21. Which one of the following i

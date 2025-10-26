@@ -1,0 +1,48 @@
+CHAPTER 4: Virtual Networks and Remote Access (Remote Desktop 
+Connection) 
+ 
+4.1 Accessing Remote services using RAS 
+Remote Access Services (RAS) refers to any combination of hardware and software which 
+allows you to connect from your computer at home or a remote location to your corporate 
+network and work as if you are connected directly to the corporate network.  
+Corporate users can connect to the corporate network using direct Dial-up network or through 
+Virtual Private Network (VPN), where a low-cost intermediate network (such as the Internet) 
+to connect to the corporate network. Microsoft Routing and Remote Access Services is an 
+example for Remote Access Services (RAS). 
+ 
+Dial-up networking is a Remote Access connection when a remote access client makes a no 
+permanent, dial-up connection to a physical port on a Remote Access server by using the 
+service of a third-party telecom service provider using analog phone or ISDN connection. 
+
+Virtual Private Networking (VPN) is a logical, indirect connection between the Virtual Private 
+Networking (VPN) client and the Virtual Private Networking (VPN) server over a low-cost 
+public network such as the Internet. A Virtual Private Networking (VPN) client uses Virtual 
+Private Networking (VPN) protocols called tunnelling protocols to make a virtual call to a 
+virtual port on a Virtual Private Networking (VPN) server. 
+
+4.2 VPN (Virtual Private Networks) 
+  
+Figure 4.1 VPN connection  
+ 
+VPN is short for virtual private network and is pronounced as separate letters. A virtual private 
+network (VPN) is a network that is constructed using public wires — usually the Internet — to 
+connect to a private network, such as a company's internal network. There are a number of 
+systems that enable you to create networks using the Internet as the medium for transporting 
+data. It secures the private network as these systems use encryption and other security 
+mechanisms to ensure that only authorized users can access the network and that the data 
+cannot be intercepted. 
+
+VPN - virtual private network 
+
+VPN Privacy and Security 
+A VPN is designed to provide a secure, encrypted tunnel in which to transmit the data between 
+the remote user and the company network. The information transmitted between the two 
+locations via the encrypted tunnel cannot be read by anyone else because the system contains 
+several elements to secure both the company's private network and the outside network 
+through which the remote user connects through. 
+ 
+The first step to security is usually a firewall between the client and the host server, requiring 
+the remote user to establish an authenticated connection with the firewall. Encryption is also 
+an important component of a secure VPN. Encryption works by having all data sent from one 
+computer encrypted in such a way that only the computer it is sending to can decrypt the 
+data. 

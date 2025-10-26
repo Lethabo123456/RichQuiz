@@ -1,0 +1,29 @@
+<textarea name=”textAreaField” id=”textAreaField” rows=”4”                      
+cols=”50”></textarea>   
+            </div>   
+        </form>   
+    </body>   
+</html>   
+   
+Figure 1.1 below shows what the form looks like. (In this figure an asterisk image was used for the 
+image field; you will of course need to use an image of your own.) Try clicking each control to see 
+how it functions.   
+   
+
+19   
+   
+   
+   
+   
+   
+Figure 1.1   
+   
+Putting it all together: this XHTML Web page contains the most common types of form controls you 
+ae likely to come across. First, the form itself is created:   
+   
+<form action=”” method=”get”>   
+   
+Notice that the form is created with the get method. This means that the form field names and 
+values will be sent to the server in the URL. We will introduce the get method shortly. Meanwhile, 
+the empty action attribute tells the browser to send the form back to the same page   
+(web_form.html). In a real-world form this attribute wo

@@ -1,0 +1,13 @@
+ociated with 
+executing a recursive function, both in terms of memory space and execution time. Therefore, a recursive 
+function executes more slowly than its iterative counterpart. On slower computers, especially those with 
+limited memory space, the (relatively slow) execution of a recursive function is noticeable. Clearly, a 
+recursive function is less efficient than a corresponding iterative function in terms of execution time and 
+memory usage.  
+  
+Efficiency is not determined solely by execution time and memory usage. Chances are that you have never 
+been concerned with either execution time or memory usage as you have been writing C++ programs. 
+Efficient use of a programmer’s time also is an important consideration. Chances are that you have 
+considered carefully what you can do to minimize the time required to produce C++ programs. Often this 
+is entirely appropriate. As a professional programmer, your time typically is far more expensive than the 
+cost of the computer you us

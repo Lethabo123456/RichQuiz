@@ -1,0 +1,15 @@
+1.2.8 Combo Boxes  
+Swing provides a combo box through the JcomboBox class, which extends Jcomponent. Normally one 
+entry is displayed by a combobox. However, a drop-down list can also be displayed by a combo box that 
+allows a user to select a different entry. Users can also type his selection into the text field. JcomboBox.s 
+constructors are:  
+  
+JcomboBox ( )  
+JcomboBox (Vector v)  
+  
+Where v is a vector that initializes the combo box. Items can be added to the list of choices via the addItem 
+( ) method, whose signature is shown here:  
+  
+Vid addItem(Object obj)  
+  
+Where obj is the object to be added to the combo box.

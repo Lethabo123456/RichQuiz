@@ -1,0 +1,20 @@
+sidered accessed if its contents are read   
+• 
+filectime() — Returns the time at which the file was last changed as a UNIX timestamp. A file 
+is considered changed if it is created or written, or when its permissions have been changed   
+• 
+filemtime() — Returns the time at which the file was last modified as a UNIX timestamp. The 
+file is considered modified if it is created or has its contents changed   
+ 
+  
+     
+A UNIX timestamp is an integer value indicating the number of seconds between the UNIX epoch 
+(midnight on January 1, 1970) and the specified time and date.   
+   
+The getdate() function is very useful when working with UNIX timestamps. It returns an associative 
+array containing the date information present in a timestamp. The array includes such values as the 
+year, the month, the day of the month, and so on. For example, you can set a variable such as 
+$myDate to the value returned by getdate(), and then access the month component with $myDate[ “ 
+month “ ].   
+   
+3.4

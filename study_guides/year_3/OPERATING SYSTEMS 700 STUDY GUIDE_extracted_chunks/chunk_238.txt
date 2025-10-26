@@ -1,0 +1,55 @@
+Sniffers and Spoofing 
+ 
+If sensitive data is sent over a network or the Internet in cleartext, without encryption, it becomes 
+vulnerable at numerous sites across the network. Packet sniffers, also called sniffers, are 
+programs that reside on computers attached to the network. They peruse data packets as they 
+pass by, examine each one for specific information, and log copies of interesting packets for 
+more detailed examination. Sniffing is particularly problematic in wireless networks. Anyone with 
+a wireless device can detect a wireless network that’s within range. If the network is passing cleartext 
+packets, it is quite easy to intercept, read, modify, and resend them. The information sought ranges 
+from passwords, Social Security numbers, and credit card numbers to industrial secrets and marketing 
+information. This vulnerability is a fundamental shortcoming of cleartext transmission over the 
+Internet. 
+Wireless security is a special area of system security that is too vast to cover here. Readers are 
+encouraged to pursue the subject in current literature for the latest research, tools, and best 
+practices. 
+Spoofing is a security threat that relies on cleartext transmission, whereby the assail- ant falsifies the 
+IP addresses of an Internet server by changing the address recorded in packets it sends over the 
+Internet. This technique is useful when unauthorized users want to disguise themselves as friendly 
+sites. For example, to guard confidential information on an internal network (intranet), some Web 
+servers allow access only to users from certain sites; however, by spoofing the IP address, the server 
+could inadvertently admit unauthorized users. 
+
+Password Management 
+ 
+The most basic techniques used to protect hardware and software investments are good passwords 
+and careful user training, but this is not as simple as it might appear. Many users forget their 
+passwords, rarely change them, often share them, and consider them bothersome. 
+ 
+Password Construction 
+ 
+If they are constructed correctly, passwords can be one of the easiest and most effective 
+protection schemes to implement. A good password is unusual, memorable to the user, not obvious, 
+and changed often. Ideally, the password should be a combination of characters and 
+numbers, something that is easy for the user to remember but difficult for someone else to guess. 
+Ideally, the password is committed to memory, not written down, and not included in a script file 
+to log on to a network. 
+There are several reliable techniques for generating a good password: 
+ 
+• Use a minimum of eight characters, including numbers and symbols. 
+• Create a misspelled word or join bits of phrases into a word that’s easy to remember. 
+• Following a certain pattern on the keyboard, generate new passwords easily by starting your 
+sequence with a different letter each time. 
+• Create acronyms from memorable sentences. 
+• If the operating system differentiates between uppercase and lowercase characters, as UNIX, 
+Linux and Android do, users should take advantage of this feature by using both in the password. 
+• Avoid words that appear in any dictionary. 
+
+Typical Password Attacks 
+ 
+A dictionary attack is the term used to describe a method of breaking encrypted pass- words. Its 
+requirements are simple: a copy of the encrypted password file and the algorithm used to 
+encrypt the passwords. With these two tools, the intruder runs a software program that takes every 
+word in the dictionary, runs it through the password encryption algorithm, and compares the 
+encrypted result to the encrypted passwords contained in the file. If both encrypted versions match, 
+then the intruder knows which dictionary word was used as a legitimate password. 

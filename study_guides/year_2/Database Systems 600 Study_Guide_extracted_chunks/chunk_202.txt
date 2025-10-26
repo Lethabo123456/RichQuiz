@@ -1,0 +1,13 @@
+cur only when a functional dependence exists among nonprime attributes. To address the 
+problems related to transitive dependencies, changes to the table structure are made based on the 
+functional dependence that signals the transitive dependency’s existence. Therefore, to simplify the 
+description of normalization, from this point forward the signalling dependency will be called the 
+transitive dependency. 
+Conversion to First Normal Form (1NF) 
+Because the relational model views data as part of a table or a collection of tables in which all key 
+values must be identified, the data depicted in Figure 6.1 might not be stored as shown. Note that 
+Figure 6.1 contains what is known as repeating groups. A repeating group derives its name from 
+the fact that a group of multiple entries of the same or multiple types can exist for any single key 
+attribute occurrence.  
+Normalizing the table structure will reduce the data redundancies. Normalisation starts with a 
+simple three-step procedure

@@ -1,0 +1,39 @@
+This code is used to associate the ImageButton named imageButtonList on the activity_main layout 
+with the code that is executed when it is pressed. 
+ 
+▪ Line 2—A variable to hold an ImageButton is declared, and findViewById gets the widget named 
+imageButtonList. FindViewById returns the widget as a generic object, so it must be cast 
+(ImageButton) to an ImageButton before it can be assigned to the variable. 
+▪ Line 3—A listener is added to the ImageButton. A listener makes a widget able to respond to 
+different events. In this case, the listener makes the ImageButton able to respond to the user pressing 
+it. 
+▪ Line 5—An Intent variable is declared and a new Intent is created and assigned to it. The intent 
+constructor requires a reference to its current activity (MainActivity.this) and to know what activity it 
+should start (ContactListActivity.class). 
+▪ Line 6—An intent flag is set to alert the operating system to not make multiple copies of the same  
+activity. 
+ 
+The completed method name initListButton() is grayed out. This indicates that the method is never 
+used. To use it, enter initListButton(); after the setContentView(R.layout.activity_main) line of code in 
+the onCreate method at the beginning of the file. This code calls the button initiation code at creation 
+of the activity, so that it is ready for use when the user sees the layout. The method name should turn 
+black. Complete the navigation bar code by copying the preceding code for each of the two remaining 
+ImageButtons, and make the following changes for the first new method: 
+initListButton() to initMapButton()  
+R.id.imageButtonList to R.id.imageButtonMap  
+ContactListActivity.class to ContactMapActivity.class 
+ 
+Similar changes should be made to the second new method: 
+initListButton() to initSettingsButton() 
+R.id.imageButtonList to R.id.imageButtonSettings  
+ContactListActivity.class to ContactSettingsActivity.class 
+ 
+Be sure to call the new methods in the onCreate method. The navigation bar is now ready for testing. 
+Run the app on the emulator and test that each button opens the correct activity. Because the 
+navigation bar is not currently coded for these activities, you will have to use the Back button to return 
+to the MainActivity. However, you can add the three methods to each of those activities at this time 
+if you wish. Just copy the code for the buttons from MainActivity.java to the other Activities. When 
+you do, you will get error messages that MainActivity is not an enclosing class. Replace MainActivity 
+with the name of the class you are working in. We do not include a button in the navigation bar for 
+MainActivity. Accessing that activity will be done through the working of the app. This is implemented 
+in later chapters. 

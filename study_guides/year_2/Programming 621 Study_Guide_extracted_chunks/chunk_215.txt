@@ -1,0 +1,21 @@
+array of that class’s objects, the class 
+should have the default constructor. The default constructor is typically used to 
+initialize each (array) class object. For example, if you declare an array of 100 class 
+objects, then it is impractical (if not impossible) to specify different constructors for 
+each component. 
+ 
+Suppose that you have 100 employees who are paid on an hourly basis, and you need 
+to keep track of their arrival and departure times. You can declare two arrays— 
+arrivalTimeEmp and departureTimeEmp—of 100 components each, wherein each 
+component is an object of type clockType 
+ 
+Consider the following statement:  
+clockType arrivalTimeEmp[100];                //Line 1  
+ 
+The statement in Line 1 creates the array of objects arrivalTimeEmp[0], 
+arrivalTimeEmp[1], ..., arrivalTimeEmp[99], as shown in Figure below. 
+ 
+ 
+ 
+You can now use the functions of the class clockType to manipulate the time for each 
+employee. For example, the following statement sets the arriva

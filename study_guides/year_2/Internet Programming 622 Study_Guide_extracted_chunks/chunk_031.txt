@@ -1,0 +1,12 @@
+src=”asterisk.gif” width=”23” height=”23” />                                 
+<label for=”pushButton”>A push button</label>   
+                               <input type=”button” name=”pushButton” id=”pushButton”                                              
+value=”Click Me” />   
+                               <label for=”pullDownMenu”>A pull-down menu</label>   
+                              <select name=”pullDownMenu” id=”pullDownMenu” size=”1”>   
+                                           <option value=”option1”>Option 1</option>   
+                                          <option value=”option2”>Option 2</option>   
+                                           <option value=”option3”>Option 3</option>                               </select>   
+                               <label for=”listBox”>A list box</label>   
+                              <select name=”listBox” id=”listBox” size=”3”>   
+                                       <option value=”option1”>Option 1</option>

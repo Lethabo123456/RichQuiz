@@ -1,0 +1,49 @@
+4.7 Troubleshooting WAN issues 
+WAN connections can have signal problems, routing protocol issues, and other challenges. In 
+this video, you’ll learn about troubleshooting interface issues, latency problems, routing table 
+issues, and more. On your local area network, you have complete control over the physical 
+plant. 
+ 
+When trying to isolate a trouble ticket, these are some must-have items on the checklist: 
+
+• Is the server that is hosting the application healthy and performing well? 
+• Is the problem isolated to a user or group at a particular location, or is it affecting all 
+users there? If an affected user sits at an unaffected user's desktop, does the problem 
+follow him or her? (Very rare!) 
+• Are users in multiple locations -- or just one location -- affected? 
+• Are other applications affected or just one? 
+• If there is a local service to test (file sharing in a workgroup, etc.), is that fast or slow? 
+• Does monitoring software show any WAN or LAN usage spikes that correspond to 
+trouble times? 
+• And always, the Meta question: Has anything changed recently in the infrastructure 
+between app and user, including user PC (was it re-imaged)? 
+• Is there a NIC malfunction on a PC in question? 
+• Is spyware/malware choking a machine's performance? This tends to hit one machine 
+but not others, so it can help isolate the cause of a performance issue. 
+• Is malware/zombie machine flooding a local network segment, WAN link, or Internet 
+connection? A well-configured network will contain the damage as much as possible. 
+• Is there a malfunction in edge switch or intermediate distribution switch? This can 
+cause problems with a group, floor, or building. 
+• Is the bandwidth shaper misconfigured, or is it putting too low a priority on critical  
+traffic? 
+• Is there a legitimate WAN problem? Is there congestion from legitimate use of an 
+application? Is it time (or past time) to upgrade circuits? 
+• Are security measures placing traffic in quarantine when they should not? 
+• Is someone sending unusually large chunks of data when you don't have QoS set 
+properly to deal with it? 
+• Do you need bandwidth-optimization to address latency of real-time traffic?
+
+If someone is having a problem with a bad cable, you simply swap the cable out or you re crimp 
+the ends and you’re up and running again. But the wide area network cables are completely 
+outside of your control. The WAN provider is responsible for keeping the wide area network 
+up and running, and very often construction or other things in your environment might break 
+the link between you and that remote wide area network location. 
+
+If you feel that there is some type of hardware problem, the wide area network provider can 
+loopback one of the connections, usually at the interface inside of your environment, and they 
+can test to see what the experience is like sending traffic to your location and having it loopback 
+to the provider. They can then see if they’re receiving the same information back and 
+determine if that line is working well or not. Then you can start troubleshooting even further 
+to determine is the problem with an interface inside of our building or cables between the wide 
+area network point of presence and our equipment inside of our location? 
+ 

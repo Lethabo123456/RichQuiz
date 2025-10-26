@@ -1,0 +1,57 @@
+Example 5-5. Initializing a multidimensional array 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Tester 
+{ 
+static void Main() 
+{ 
+const int rows = 4; 
+const int columns = 3; 
+// imply a 4x3 array 
+int[,] rectangularArray = 
+{ 
+{0,1,2}, {3,4,5}, {6,7,8}, {9,10,11} 
+}; 
+for (int i = 0; i < rows; i++) 
+{ 
+for (int j = 0; j < columns; j++) 
+{ 
+Console.WriteLine("rectangularArray[{0},{1}] = {2}", 
+i, j, rectangularArray[i, j]); 
+} 
+} 
+} 
+} 
+} 
+
+OUTPUT: 
+ 
+ 
+The preceding example is very similar to Example 5-4, but this time you imply the exact 
+dimensions of the array by how you initialize it: 
+int [ , ] rectangularArray= { { 0, 1, 2} ,{3, 4, 5} , {6, 7, 8} 
+, { 9, 10, 11} 
+Assigning values in four bracketed lists, each consisting of three elements, implies a 4 x 3 
+array. 
+Had you written this as: 
+int[ ,] rectangularArray{{0,1,2,3} , { 4,5 ,6, 7 } , {8,9,10,11} 
+}; 
+you would instead have implied a 3 x 4 array. 
+ 
+You can see that the C# compiler understands the implications of your clustering, as it is able 
+to access the objects with the appropriate offsets, as illustrated in the output. 
+ 
+ You might guess that this is a 12-element array, and that you can just as easily access an 
+element at rectangularArray[ 0, 3] as at rectangularArray[ 1, 0] , but if you try you will run 
+right into an exception: 
+Exception occurred: System. IndexOutOfRangeException: 
+Index was outside the bounds of the array.at Programming_CSharp.Tester.Main( ) 
+incsharp\programming csharp\listing0703 .cs : l ine 23 
+
+C# arrays are smart and they keep track of their bounds. When you imply a 4 x 3 array, you 
+must treat it as such.

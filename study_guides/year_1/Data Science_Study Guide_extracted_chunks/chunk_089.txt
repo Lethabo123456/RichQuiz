@@ -1,0 +1,49 @@
+Let's take a look at some data before we go in-depth. This dataset is publically available and attempts 
+to predict the number of bikes needed on a particular day for a bike sharing program. 
+ 
+Code Extract 
+# read the data and set the datetime as the index 
+# taken from Kaggle: https://www.kaggle.com/c/bike-sharing-demand/data 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+%matplotlib inline 
+url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/bikeshare.csv' 
+bikes = pd.read_csv(url) 
+bikes.head() 
+ 
+ 
+Here we can see that every row represents a single hour of bike usage. In this case, we are interested 
+in predicting count, which represents the total number of bikes rented in the period of that hour. 
+ 
+Let's, for example, look at a scatter plot between temperature (the temp column) and count. 
+ 
+bikes.plot(kind='scatter', x='temp', y='count', alpha=0.2) 
+ 
+Output: 
+
+And now, let's use a module, called seaborn, to draw ourselves a line of best fit, as follows: 
+ 
+import seaborn as sns #using seaborn to get a line of best fit 
+sns.lmplot(x='temp', y='count', data=bikes, aspect=1.5, scatter_kws={'alpha':0.2}) 
+ 
+Output: 
+ 
+ 
+
+The line in the graph tries to visualize and quantify the relationship between temp and count. To make 
+a prediction, we simply find a given temperature, and then see where the line would predict the count. 
+For example, if the temperature is 20 Degrees Celsius, then our line would predict that about 200 bikes 
+will be rented. If the temperature is above 40 degrees, then more than 400 bikes will be required. It 
+appears that as temp goes up, our count also goes up. Let's see if our correlation value, which 
+quantifies a linear relationship between variables, also matches this notion, demonstrated in the code: 
+ 
+bikes[['count', 'temp']].corr() 
+Output # 0.3944 
+ 
+There is a (weak) positive correlation between the two variables! Now, let's go back to the form of the 
+linear regression: 
+ 
+Our model will attempt to draw a perfect line between all the dots in the preceding graph, but of 
+course, we can clearly see that there is no perfect line between these dots! The model will then find 
+the best fit line possible. How? We can draw infinite lines between the data points, but what makes a 
+line the best? 

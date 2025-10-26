@@ -1,0 +1,23 @@
+PHP script:  
+  
+echo 2 + 2;  
+  
+As you might imagine, this code outputs the number 4 when it is run. This is all well and good; 
+however, if you wanted to print the value of, say, 5 + 6 instead, you would have to write another PHP 
+script as follows:  
+  
+echo 5 + 6;  
+  
+This is where variables come into play. By using variables instead of numbers (absolute values) in 
+your script, you make the script much more useful and flexible:  
+  
+echo $x + $y;  
+  
+You now have a general-purpose script. You can set the variables $x and $y to any two values you 
+want, either at some other place in your code, or as a result of input from the user through the 
+keyboard. Then, when you run the preceding line of code, the script outputs the sum of those two 
+values. Re- run the script with different values for $x and $y , and you get a different result.  
+  
+2.2 Naming Variables  
+A variable consists of two parts: the variable’s name and the variable’s value. Because you will be 
+using variables i

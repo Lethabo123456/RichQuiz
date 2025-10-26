@@ -1,0 +1,44 @@
+t. 
+By convention, this is always the first argument and so it is often omitted. 
+html.H1(children='Hello Dash') is the same as html.H1('Hello Dash'). 
+That’s it! You’ve just created your first dashboard! Up next, we’ll convert a simple Plotly plot to Dash. 
+6.4.3 Converting Simple Plotly Plot to Dashboard with Dash 
+For this exercise we’ll go back to our scatter3.py script. This involved a scatter plot of 100 random data 
+points. 
+We’ll seed the random number generator so that everyone sees the same result. 
+Open a new file, and name it plotly1.py. Enter the following code: 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+import dash 
+import dash_core_components as dcc 
+import dash_html_components as html 
+import plotly.graph_objs as go 
+ 
+import numpy as np 
+ 
+app = dash.Dash() 
+ 
+np.random.seed(42) 
+ 
+random_x = np.random.randint(1,101,100) 
+random_y = np.random.randint(1,101,100) 
+ 
+app.layout = html.Div([ 
+dcc.Graph( 
+id='scatter3', 
+figure={ 
+'data': [ 
+go.Scatter( 
+x = random_x, 
+ 
+y = 
+random_y, 
+mode = 
+'ma

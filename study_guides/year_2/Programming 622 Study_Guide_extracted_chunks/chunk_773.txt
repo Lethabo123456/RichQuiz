@@ -1,0 +1,22 @@
+0.  
+  
+
+380  
+  
+  
+FIGURE 9-33 Deletion of 70 from the B-tree  
+  
+The node containing 70 is not a leaf. So we swap 70 with its immediate predecessor, which is 68; see 
+Figure 9-33(b). After deleting 70 from the leaf, because the leaf does not have the minimum number of 
+keys, it is combined with its adjacent sibling; see Figure 9-33(c). However, this process does not leave the 
+minimum number of keys in the parent node, which is 90. So we combine this node with its left sibling 
+and their parent, which in this case is the root node; see Figure 9-33(d). Note that the deletion of 70 
+resulted in reducing the height of the B-tree.  
+  
+We leave it as an exercise for you to develop the necessary algorithms to delete a record from a B-tree.  
+  
+Key Terms  
+  
+1. A binary tree is either empty or it has a special node called the root node. If the tree is nonempty, the 
+root node has two sets of nodes, called the left and right subtrees, such that the left and right subtrees 
+are also bina

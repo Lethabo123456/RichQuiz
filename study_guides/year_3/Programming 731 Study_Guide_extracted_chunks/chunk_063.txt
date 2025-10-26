@@ -1,0 +1,13 @@
+System.out.println("This is num: " + num); 
+  
+In this statement, the plus sign causes the value of num to be appended to the string that precedes 
+it, and then the resulting string is output. (Actually, num is first converted from an integer into its 
+string equivalent and then concatenated with the string that precedes it. 
+This process is described in detail later in this book.) This approach can be generalized. Using the + 
+operator, you can string together as many items as you want within a single println( )  statement.   
+
+The next line of code assigns num the value of num times 2. Like most other languages, Java uses 
+the * operator to indicate multiplication. After this line executes, num will contain the value 
+200.Here are the next two lines in the program:  System.out.print("The value of num * 2 is ");   
+   
+System.out.println(num);   

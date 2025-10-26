@@ -1,0 +1,27 @@
+3.4 Defining and using a class 
+In C#, you use the class keyword to define a new class. The data and methods of the class 
+occur in the body of the class between a pair of braces. The complete syntax is as follows: 
+ 
+[attributes] [access-modifiers] class identifier {class body} 
+ 
+Following is a C# class called Circle that contains one method (to calculate the circle’s area) 
+and one piece of data (the circle’s radius): 
+Example 3-1 Class definition 
+class Circle 
+{ 
+int radius; // variable declaration 
+double Area() // method definition 
+{ 
+return Math.PI * radius * radius;  // expression 
+} 
+} 
+Example 3.1  is a program that defines the Circle class and uses it to create objects. The 
+program constructs three circle objects with radius 1, 25, and 125 and displays the radius and 
+area of each of the three circles. It then changes the radius of the second object to 100 and 
+displays its new radius and area. 
+ 
+The body of a class contains ordinary methods (such as Area) and fields (such as radius). Recall 
+that variables in a class are called fields. Chapter 1, “Working with variables, operators, and 
+expressions,” showed how to declare variables, and Chapter 2, “Using methods and applying 
+scope,” demonstrated how to write methods, so there’s almost no new syntax here. When a 
+variable is declared directly in a class, it is often referred to as a field (or attribute).

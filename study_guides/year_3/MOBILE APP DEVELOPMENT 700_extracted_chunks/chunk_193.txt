@@ -1,0 +1,35 @@
+The solution implemented in XML provided earlier is to constrain the cell phone TextView to the end 
+of the home phone EditText and then position the start of the cell phone EditText to the start of the 
+cell phone TextView. That way, as the EditTexts change size, the cell phone label will always be directly 
+above the cell phone input. One other item of note in these widgets is the maxLength attribute of the 
+EditTexts. Note that they are set at 14 rather than 10, which is the number of digits in a US phone 
+number. The maxLength of input is the total length, including formatting and spaces. When formatting 
+is added to the phone number, the input length becomes greater than 10. For example, a phone 
+number formatted as (111) 222-4444 would be 14 characters long. When completed, your layout 
+should look like Figure 4.10. 
+
+The final elements of the contact activity layout are the email and birthdate inputs. You need a 
+TextView and an EditText for the email input, and two TextViews and a button for the birthday input. 
+One of the birthday TextViews will be used to display the birth date, and the Button will be used to 
+open a pop-up window. Configure these widgets as identified in Tables 4.3 and 4.4. 
+The    Change   Birthday   button   uses   several   new attributes. The button should be anchored to the right 
+side of the screen so that its position doesn’t change as the birthday value changes. To do this, you use the 
+layout_constraintEnd_toEndOf=“parent” 
+attribute/value pair, and to make it have a margin from the screen, you use the layout_marginRight=“60dp” and 
+layout_marginEnd=“60dp”  attribute/value  pairs. The birthday widgets are all on one line. To make this work, 
+the two TextViews are the same marginTop from the same widget. However, the button is aligned to the right 
+of the screen with the attribute previously discussed. 
+
+To make it line up with other widgets, a new attribute, 
+layout_constraintBaseline_toBaselineOf, is used. This aligns the center of the button with the bottom 
+of the widget to which it refers. Because a button is bigger than the other widgets, aligning it bottom 
+to bottom would make it tall enough on the screen to cover a portion of the email EditText. 
+Test this yourself by executing the app on the emulator before you add the padding attribute. You can 
+select the same device as you did in the previous chapter. When the layout is displayed on the 
+emulator, click and hold on any whitespace in the layout and drag to the top of the emulator screen. 
+Try it again after you add the padding. 
+
+When the layout is complete, verify that it looks like Figure 4.11. 
+Congratulations! You have completed your first real layout in Android. However, there is one more 
+layout task to complete before you write the code to make the layout do something: creating a layout 
+for the birthday selection dialog box. 

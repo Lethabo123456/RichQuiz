@@ -1,0 +1,30 @@
+Chapter 6 
+Python Libraries for Data Analysis 
+ 
+ 
+Learning Outcomes:  
+After reading this section of the guide, the student should be able to: 
+• Demonstrate an understanding of the key concepts of Pandas, Matplotlib and Numpy 
+• Able to apply Python codes to implement Pandas, Matplotlib and Numpy 
+ 
+6.1 Introduction to Matplotlib 
+Matplotlib is an open-source data visualization library that was originally inspired by MATLAB's 
+plotting capabilities. It allows users to create various types of plots, such as line plots, scatter plots, 
+bar plots, histograms, pie charts, 3D plots, and more. Matplotlib provides both a simple procedural 
+interface (similar to MATLAB) and an object-oriented interface for creating plots. 
+ 
+Key Concepts in Matplotlib: 
+a) Figure: A Figure in Matplotlib is the top-level container that holds all plot elements. It 
+represents the entire window or page where one or more plots can be drawn. A figure can 
+contain multiple subplots. 
+b) Axes: An Axes is the actual plot area within a Figure. It includes the data space, ticks, labels, 
+and other plot elements. Within a figure, you can have one or more Axes, arranged in a grid-
+like structure. 
+c) Subplot: Subplots are used to create multiple plots within a single figure. They allow you to 
+organize multiple plots in rows and columns. The subplot() function or add_subplot() 
+method is used to create subplots. 
+d) Plotting Functions: Matplotlib provides various functions for creating different types of 
+plots. For example, plot() for line plots, scatter() for scatter plots, bar() for bar plots, hist() 
+for histograms, etc. 
+e) Customization: Matplotlib allows you to customize almost every aspect of your plots, 
+including colours, markers, line styles, labels, titles, legends, and more. 

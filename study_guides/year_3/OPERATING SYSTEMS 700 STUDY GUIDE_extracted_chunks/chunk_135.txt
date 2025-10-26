@@ -1,0 +1,52 @@
+4.2. Management of I/O Requests 
+Although many users may think of an I/O request as an elementary machine action, the Device 
+Manager divides the task into three parts with each one handled by a specific software 
+component of the device management subsystem. The I/O traffic controller watches the status of 
+all devices, control units, and channels. The I/O scheduler implements the policies that determine 
+the allocation of, and access to, the devices, control units, and channels. The I/O device handler 
+performs the actual transfer of data and processes the device interrupts. 
+ 
+The I/O traffic controller monitors the status of every device, control unit, and channel. It 
+is a job that becomes more complex as the number of units in the I/O sub-system increases, 
+and as the number of paths between these units increases. The traffic controller has three 
+main tasks to perform for each I/O request: (1) it must determine if there is at least one 
+path to a device of the requested type available; (2) if there is more than one path 
+available, it must determine which to select; and (3) if the paths are all busy, it must determine 
+when one will become available. To do all this, the traffic controller maintains a database 
+containing the status and connections for each unit in the I/O subsystem, grouped into 
+Channel Control Blocks, Control Unit Control Blocks, and Device Control Blocks, as illustrated 
+in Figure 4.2. 
+ 
+Figure 4 . 2 
+ 
+Figure 4.2 Each control block contains the information it needs to manage the channels, 
+control units, and devices in the I/O subsystem. 
+ 
+To choose a free path to satisfy an I/O request, the traffic controller traces backward from 
+the control block of the requested device through the control units to the channels. If a path 
+is not available, a common occurrence under heavy load conditions, the process is linked to 
+the queues kept in the control blocks of the requested device, control unit, and channel. This 
+creates multiple wait queues with one queue per path. Later, when a path becomes available, the 
+traffic controller selects the first PCB from the queue for that path. 
+ 
+The I/O scheduler performs a job analogous to the one performed by the Process Scheduler 
+described in Chapter 3 on Processor Management, that is, it allocates the devices, control units, 
+and channels. Under heavy loads, when the number of requests is greater than the number of 
+available paths, the I/O scheduler must decide which request to satisfy first. Many of the 
+criteria and objectives discussed in Chapter 3 also apply here. In many systems, the major 
+difference between I/O scheduling and process scheduling is that I/O requests are not preempted. 
+Once the channel program has started, it is allowed to continue to completion even though 
+I/O requests with higher priorities may have entered the queue. This is feasible because channel 
+programs are relatively short, 50 to 100 ms. Other systems sub-divide an I/O request into several 
+stages and allow pre-emption of the I/O request at any one of these stages. 
+ 
+Some systems allow the I/O scheduler to give preferential treatment to I/O requests from 
+high- priority programs. In that case, if a process has a high priority, then its I/O requests would 
+also have high priority and would be satisfied before other I/O requests with lower priorities. The 
+I/O scheduler must synchronize its work with the traffic controller to make sure that a path 
+is available to satisfy the selected I/O requests. 
+ 
+The I/O device handler processes the I/O interrupts, handles error conditions, and provides 
+detailed scheduling algorithms, which are extremely device dependent. Each type of I/O device 
+has its own device handler algorithm. Later in this chapter, we explore several algorithms for hard 
+disk drives. 

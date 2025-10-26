@@ -1,0 +1,33 @@
+Simple Risk Analysis Worksheet 
+ 
+A simple approach to risk assessment is to use a risk analysis worksheet, which is a table with one row 
+for each potential threat/vulnerability pair [GADS06]. This worksheet, prepared by the risk assessment 
+team, contains the following columns:
+ 
+ Security issue: A brief statement of each security issue or area of concern. There should be 
+one row for each threat/vulnerability pair (as well as compliance issues, described 
+subsequently). 
+ Likelihood: Estimated likelihood for an occurrence of this threat/vulnerability pair. The 
+estimate should be based on the team’s judgment of the value of the affected assets and the 
+magnitude of the exposure, using the matrices in Figures 3.6a and 3.6b. 
+ Impact: Estimated impact for this threat/vulnerability pair. The estimate should be based on 
+the team’s judgment of the affected assets value of the magnitude of the exposure, using the 
+matrix in Figure 3.6c. 
+ Risk level: Risk level, based on the matrix in Figure 3.6d. 
+ Recommended security controls: Specific security control(s) that the team is recommending 
+to address this particular issue. 
+ Control priorities: Relative priority of each recommended control. 
+ Comments: Any other information that is considered relevant to the security risk management 
+decision-making process for this particular security issue. 
+
+Compliance issues can be documented on the same worksheet. Compliance requirements include 
+those imposed by the organization’s security policy, government regulations, and applicable 
+accreditation standards. Compliance should be rated as follows: 
+
+0 = not implemented 
+1 = partially implemented 
+2 = implemented but not yet documented 
+3 = implemented and documented 
+
+For compliance issues, the Likelihood and Impact fields are irrelevant. An issue with a compliance 
+score of less than 3 should be included in the worksheet with a risk level of high. 

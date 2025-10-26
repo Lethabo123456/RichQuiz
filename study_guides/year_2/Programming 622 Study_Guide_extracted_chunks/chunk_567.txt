@@ -1,0 +1,17 @@
+not assume that the data is 
+in any particular order; however, as noted, this search does not work efficiently for large lists. By contrast, 
+a binary search is very fast for array-based lists, but it requires the data to be in order. Because a binary 
+search requires the data to be in order and its performance is good for array-based lists, this chapter 
+focuses on sorting algorithms.  
+  
+ 
+8.1  
+Sorting Algorithms  
+  
+There are several sorting algorithms in the literature. In this chapter, we discuss some of the most 
+commonly used sorting algorithms. To compare the performance of these algorithms, we also provide the 
+analysis of these algorithms. These sorting algorithms can be applied to either array-based lists or linked 
+lists.We will specify whether the algorithm being developed is for array-based lists or linked lists.  
+  
+The functions implementing these sorting algorithms are included as public members of the related class. 
+(For example, for an array-based list, these a

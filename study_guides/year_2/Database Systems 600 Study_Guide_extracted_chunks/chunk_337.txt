@@ -1,0 +1,20 @@
+n their entirety.  
+ 
+ A differential backup of the database, in which only the objects that have been updated or 
+modified since the last full backup are backed up.   
+
+ 
+139 
+ 
+A transaction log backup, which backs up only the transaction log operations that are not 
+reflected in a previous backup copy of the database. In this case, no other database objects are 
+backed up. (For a complete explanation of the transaction log, see Chapter 10, Transaction 
+Management and Concurrency Control.) 
+ 
+The database backup is stored in a secure place, usually in a different building from the database 
+itself, and is protected against dangers such as fire, theft, flood, and other potential calamities. The 
+main purpose of the backup is to guarantee database restoration following a hardware or software 
+failure. 
+ 
+Failures that plague databases and systems are generally induced by software, hard- ware, 
+programming exemptions, transactions, or external factors. Table 9.1 summarizes the most co

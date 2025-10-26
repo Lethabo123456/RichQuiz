@@ -1,0 +1,15 @@
+rived class can 
+explicitly include its own constructors to initialize them. When we declare a derived 
+class object, this object inherits the members of the base class, but the derived class 
+object cannot directly access the private (data) members of the base class. The same 
+is true for the member functions of a derived class. That is, the member functions of a 
+derived class cannot directly access the private members of the base class. 
+ 
+As a consequence, the constructors of a derived class can (directly) initialize only the 
+(public data) members inherited from the base class of the derived class. Thus, when 
+a derived class object is declared, it must also trigger the execution of one of the base 
+class’s constructors. Furthermore, this triggering of the base class’s constructor is 
+specified in the heading of the definition of a derived class constructor.  
+ 
+First, let us write the definition of the default constructor of the class boxType. Recall 
+that, if a class contains a

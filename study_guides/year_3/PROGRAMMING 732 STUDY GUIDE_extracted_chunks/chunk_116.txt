@@ -1,0 +1,35 @@
+4.1.16 Server Context Information  
+Server context information is available at any time through the ServletContext object. A servlet can obtain 
+this object by calling the getServletContext() method on the ServletConfig object. Remember that this was 
+passed to the servlet during the initialization phase. A well written init() method saves the reference in a 
+private variable.   
+The ServletContext interface defines several methods. These are outlined below.   
+getAttribute()  
+An extensible way to get information about a server via attribute name/value pairs. 
+This is server specific.  
+getMimeType()  
+Returns the MIME type of a given file.  
+This method translates a relative or virtual path to a new path relative to the 
+server's  
+getRealPath()  
+HTML documentation root location.  
+getServerInfo()  
+Returns the name and version of the network service under which the servlet is 
+running.  
+getServlet()   
+Returns a Servlet object of a given name. Useful when you want to access the 
+services of other servlets.  
+getServletNames()  Returns an enumeration of servlet names available in the current namespace.  
+log()  
+Writes information to a servlet log file. The log file name and format are server 
+specific.  
+The following example code shows how a servlet uses the host server to write a message to a servlet log 
+when it initializes:   
+  
+  private ServletConfig config;   public 
+void init(ServletConfig config) {     // 
+Store config in an instance variable  
+    this.config = config;  
+    ServletContext sc = config.getServletContext();     
+sc.log( "Started OK!" );  
+  }  

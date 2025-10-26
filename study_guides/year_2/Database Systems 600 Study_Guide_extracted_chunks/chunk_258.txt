@@ -1,0 +1,25 @@
+ows in which the inventory stock dates occur on or after January 20, 2018, may 
+look like this:  
+SELECT  P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE 
+FROM  
+PRODUCT 
+WHERE  
+P_INDATE >= '20-Jan-2018'; 
+The date value format is dependent on the RDMBS that the programmer is using. For example, in 
+MySQL, the expected date format is yyyy-mm-dd, so the WHERE clause would be written as: 
+WHERE  
+P_INDATE >= '2018-01-20' 
+Logical Operators: AND, OR, and NOT 
+SQL allows you to include multiple conditions in a query through logical operators. The logical 
+operators are AND, OR, and NOT. For example, if you want a list of the table contents for either 
+the V_CODE = 21344 or the V_CODE = 24288, you can use the OR logical operator, as in the 
+following command sequence:  
+SELECT  P_DESCRIPT, P_QOH, P_PRICE, V_CODE 
+FROM  
+PRODUCT 
+WHERE  
+V_CODE = 21344  
+OR  
+V_CODE = 24288; 
+The logical operator AND has the same SQL syntax requirement as OR. Furthermore, you can 
+combine the logical OR with th

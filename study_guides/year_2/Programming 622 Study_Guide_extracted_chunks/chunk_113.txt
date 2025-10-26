@@ -1,0 +1,25 @@
+iii. CC three(3.5, 8);  
+b. Write the definition of the constructor in Line 1 so that the private data members are initialized to 0.  
+c. Write the definition of the constructor in Line 2 so that the private data member u is initialized 
+according to the value of the parameter, and the private data member v is initialized to 0.  
+d. Write the definition of the constructors in Lines 3 and 4 so that the private data members are initialized 
+according to the values of the parameters.  
+  
+17. Given the definition of the class clockType with constructors (as described in this chapter), what is the 
+output of the following C++ code?  
+
+51  
+  
+  
+clockType clock1; clockType 
+clock2(23, 13, 75); 
+clock1.printTime(); cout << 
+endl; clock2.printTime(); 
+cout << endl;  
+clock1.setTime(6, 59, 
+39); clock1.printTime(); 
+cout << endl;  
+clock1.incrementMinutes();  
+clock1.printTime(); cout << endl; clock1.setTime(0, 13, 0); if 
+(clock1.equalTime(clock2)) cout << "Clock1 time is the same as 
+clock2

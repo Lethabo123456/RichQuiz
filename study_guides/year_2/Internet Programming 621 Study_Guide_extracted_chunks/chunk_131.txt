@@ -1,0 +1,29 @@
+is: “ . end( $authors 
+) . “. < /p > ”; echo “ < p > The previous element is: “ . prev( $authors ) . 
+“. < /p > ”; ? >  
+< /body > 
+< /html >  
+
+63  
+  
+  
+  
+Figure 5.2  
+  
+Notice how using these functions moves the array pointer forward and backward through the array 
+(the notable exceptions being current() and key() , which simply return the current value or key 
+without moving the pointer). Referring back to the sparse array example in the previous section on 
+the count() function, you now know how to retrieve the last element of the array without needing 
+to know how it’s indexed:  
+  
+  
+  
+  
+// Create a sparse indexed array  
+$authors = array( 0 = > “Steinbeck”, 1 = > “Kafka”, 2= > “Tolkien”, 47 = >  
+“Dickens” ); echo end( $authors ); // 
+Displays “Dickens”  
+  
+These functions are very useful, but there ’ s a slight problem with them. Each function returns false 
+if an element could not be retrieved. This is all very well, but what if one or more of the elements in 
+your arr

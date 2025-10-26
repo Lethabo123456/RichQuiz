@@ -1,0 +1,29 @@
+onding actual parameter, which is num2. The other two formal parameters are 
+value parameters, so they copy the values of their corresponding actual parameters. 
+Just before the statement in Line 22 executes, the variables are as shown in Figure 
+below 
+
+110 | P a g e  
+ 
+ 
+ 
+ 
+The following shows how the variables are manipulated after each statement from 
+Lines 22 to 25 executes. 
+ 
+The statement in Line 26 produces the following output: 
+Line 26: Inside funOne: a = 11, b = 30, v = B, and one = 10 
+ 
+
+111 | P a g e  
+ 
+After the statement in Line 26 executes, control goes back to Line 14 in main and the 
+memory allocated for the variables of function funOne is deallocated. Figure below 
+shows the values of the variables of the function main 
+ 
+The following shows how the variables are manipulated after each statement from 
+Lines 30 to 32 executes 
+ 
+Line 33 produces the following output: 
+Line 33: Inside funTwo: x = 31, y = 50, and w = G 
+After the statement in Line 33 executes, cont

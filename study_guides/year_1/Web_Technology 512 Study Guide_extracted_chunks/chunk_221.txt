@@ -1,0 +1,32 @@
+t 
+web page. 
+ 
+10.1.2 Storing Cookies 
+The simplest way to create a cookie is to assign a string value to the 
+document.cookie object, which looks like this: 
+ 
+Syntax: 
+document.cookie = "key1=value1; key2=value2; 
+expires=date"; 
+ 
+Here expires attribute is option. If you provide this attribute with a valid date or 
+time then cookie will expire at the given date or time and after that cookies' value 
+will not be accessible. Cookie values may not include semicolons, commas, or 
+whitespace. For this reason, you may want to use the JavaScript escape() function 
+to encode the value before storing it in the cookie. If you do this, you will also have 
+to use the corresponding unescape() function when you read the cookie value. 
+ 
+Example: 
+Following is the example to set a customer name in input cookie. 
+ 
+ 
+KEY POINT 
+Cookies are small pieces of 
+information in text format 
+that are downloaded to 
+your computer when you 
+visit many Web sites. 
+Figure 10.1 – How to Set a Cookie 
+
+ 
+146

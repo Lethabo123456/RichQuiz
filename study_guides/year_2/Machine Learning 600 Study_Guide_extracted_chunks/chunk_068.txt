@@ -1,0 +1,16 @@
+will calculate a threshold point for the split to occur. For example, with a list of values like the 
+following: 
+ 
+C4.5 has the ability to work despite missing attribute values. The missing values are marked 
+with a question mark (?). The gain and entropy calculations are simply skipped when there is 
+no data available. 
+CHAID: The CHAID (Chi-squared Automatic Interaction Detection) technique was developed 
+by Gordon V. Kass in 1980. The main use of it was within marketing, but it was also used within 
+medical and psychiatric research. 
+MARS. For numerical data, it might be worth investigating the MARS (multivariate adaptive 
+regression splines) algorithm. You might see this as an open source alternative called “Earth,” 
+as MARS is trademarked by Salford Systems. 
+ 
+4.1.4 The intuition behind Decision Trees 
+Every tree is comprised of nodes. Each node is associated with one of the input variables. The 
+edges coming from that node are the total possible values of that node. A leaf rep

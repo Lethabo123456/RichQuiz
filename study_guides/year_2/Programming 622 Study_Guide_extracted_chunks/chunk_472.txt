@@ -1,0 +1,16 @@
+of a customer, the time between the arrivals of customers, and the 
+number of events affecting the system.  
+  
+
+237  
+  
+Let us again consider the movie theater system. The performance of the system depends on how many 
+servers are available, how long it takes to serve a customer, and how often a customer arrives. If it takes 
+too long to serve a customer and customers arrive frequently, then more servers are needed. This system 
+can be modeled as a time-driven simulation. In a time-driven simulation, the clock is implemented as a 
+counter and the passage of, say, 1 minute can be implemented by incrementing the counter by 1. The 
+simulation is run for a fixed amount of time. If the simulation needs to be run for 100 minutes, the counter 
+starts at 1 and goes up to 100, which can be implemented by using a loop.  
+  
+For the simulation described in this section, we want to determine the average wait time for a customer. 
+To calculate the average wait time for a customer, we need to add

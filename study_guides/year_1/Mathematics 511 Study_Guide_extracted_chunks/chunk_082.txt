@@ -1,0 +1,30 @@
+1.5 Rules of Inference 
+
+Introduction 
+Later in this section we will study proofs. Proofs in mathematics are valid 
+arguments that establish the truth of mathematical statements. By an 
+argument, we mean a sequence of statements that end with a conclusion. 
+By valid, we mean that the conclusion, or final statement of the argument, 
+must follow from the truth of the preceding statements, or premises, of the 
+argument. That is, an argument is valid if and only if it is impossible for all 
+the premises to be true and the conclusion to be false. To deduce new 
+statements from statements we already have, we use rules of inference 
+which are templates for constructing valid arguments. Rules of inference are 
+our basic tools for establishing the truth of statements. 
+Before we study mathematical proofs, we will look at arguments that involve 
+only compound propositions. We will define what it means for an argument 
+involving compound propositions to be valid. Then we will introduce a 
+collection of rules of inference in propositional logic. These rules of inference 
+are among the most important ingredients in producing valid arguments. 
+After we illustrate how rules of inference are used to produce valid 
+arguments, we will describe some common forms of incorrect reasoning, 
+called fallacies, which lead to invalid arguments. 
+After studying rules of inference in propositional logic, we will introduce 
+rules of inference for quantified statements. We will describe how these 
+rules of inference can be used to produce valid arguments. These rules of 
+inference for statements involving existential and universal quantifiers play 
+an important role in proofs in computer science and mathematics, although 
+they are often used without being explicitly mentioned. 
+Finally, we will show how rules of inference for propositions and for 
+quantified statements can be combined. These combinations of rule of 
+inference are often used together in complicated arguments. 

@@ -1,0 +1,19 @@
+less than 10% of the population (which would be 900 people). 
+3. Choose a significance level (usually called alpha or α). 
+
+P a g e  | 114 
+ 
+o We will choose a 95% significance level, which means that our alpha would be 
+1 - .95 = .05. 
+4. Collect the data. 
+o Done! This was generated through the two Poisson distributions. 
+5. Decide whether to reject or fail to reject the null hypothesis. 
+o As mentioned before, this step varies based on the test used. For a one sample 
+t-test, we must calculate two numbers: the test statistic and our p-value. 
+Luckily, we can do this in one line in Python. 
+o A test statistic is a value that is derived from sample data during a type of 
+hypothesis test. They are used to determine whether to reject the null 
+hypothesis. The test statistic is used to compare the observed data with what 
+is expected under the null hypothesis. The test statistic is used in conjunction 
+with the p-value. 
+o The p-value is the probability that the observed data occurred t

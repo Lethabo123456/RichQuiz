@@ -1,0 +1,14 @@
+In some cases, local municipalities are now requesting that they get visual proof of a security 
+breach before they will send authorities. Device server technology provides the user with a host of 
+options for how such data can be handled. One option is to have an open data pipe on a security 
+camera – this allows all data to be viewed as it comes across from the camera. The device server 
+can be configured so that immediately upon power-up the serial port attached to the camera will 
+be connected to a dedicated host system. 
+
+Another option is to have the camera transmit only when it has data to send. By configuring the 
+device server to automatically connect to a particular site when a character first hits the buffer, 
+data will be transmitted only when it is available. 
+One last option is available when using the IP protocol – a device server can be configured to 
+transmit data from one serial device to multiple IP addresses for various recording or archival 
+concerns. Lantronix device server technology gives the user many options for tuning the device to 
+meet the specific needs of their application.

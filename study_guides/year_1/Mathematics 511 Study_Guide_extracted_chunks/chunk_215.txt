@@ -1,0 +1,32 @@
+For some models we may need a graph where some edges are undirected, 
+while others are directed. A graph with both directed and undirected edges 
+is called a mixed graph. For example, a mixed graph might be used to model 
+a computer network containing links that operate in both directions and 
+other links that operate only in one direction.  
+The terminology for the various types of graphs is summarized in Table 
+4.1.We will sometimes use the term graph as a general term to describe 
+graphs with directed or undirected edges (or both), with or without loops, 
+and with or without multiple edges. At other times, when the context is 
+clear, we will use the term graph to refer only to undirected graphs. 
+ 
+Table 4.1: Graph Terminology 
+
+4.2 Graph Terminology and Special Types of Graphs 
+In this section we will introduce several important families of graphs often used as 
+examples and in models. Several important applications will be described where 
+these special types of graphs arise. 
+
+4.2.1 Basic Terminology 
+Definition 56 
+Two vertices u and v in an undirected graph G are called adjacent                        
+(or neighbors) in G if u and v are endpoints of an edge e of G. Such an edge e 
+is called incident with the vertices u and v and e is said to connect u and v. 
+ 
+The set of all neighbors of a vertex v of G = (V ,E), denoted by N(v), is called 
+the neighbourhood of v. If A is a subset of V , we denote by N(A) the set of 
+all vertices in G that are adjacent to at least one vertex in A. 
+So, N(A) = ⋃𝑣∈𝐴𝑁(𝑣).
+ 
+The degree of a vertex in an undirected graph is the number of edges incident 
+with it, except that a loop at a vertex contributes twice to the degree of that 
+vertex. The degree of the vertex v is denoted by deg(v).

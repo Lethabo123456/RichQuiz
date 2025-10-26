@@ -1,0 +1,18 @@
+adsheet. This might be because 
+there's so much data to process, for example. When using Java, the Apache Commons Math 
+library has an implementation of simple linear regression. The process is straightforward. The 
+first step is to load the text file and add each comma pair into a collection. 
+
+P a g e  | 32 
+ 
+ Using the addData method, the double values for both scores are passed in; the string to 
+primitive double data type conversion happens during this step.  
+ 
+3.4 Randomness 
+It's not always essential for you to have data at hand to do any work. Random numbers can 
+bring up some interesting experiments and code. In this section, we're going to look at two 
+aspects of using random numbers. First we'll look at finding Pi using some basic math and 
+Monte Carlo methods; second we'll look at random walks.  
+Using Random numbers to find Pi value. The Monte Carlo method is the concept of emulating 
+a random process. When the process is repeated many times, it will give rise to the 
+ap

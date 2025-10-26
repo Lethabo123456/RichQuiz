@@ -1,0 +1,48 @@
+Armed with the ability to compute gradients, we can now train neural networks. Let’s try to learn the 
+XOR network we previously designed by hand. We’ll start by generating the training data and initializing 
+our neural network with random weights: 
+
+import random 
+random.seed(0) 
+# training data 
+xs = [[0., 0], [0., 1], [1., 0], [1., 1]] 
+ys = [[0.], [1.], [1.], [0.]] 
+
+# start with random weights 
+network = [ # hidden layer: 2 inputs -> 2 outputs 
+[[random.random() for _ in range(2 + 1)], # 1st hidden neuron 
+[random.random() for _ in range(2 + 1)]], # 2nd hidden 
+neuron # output layer: 2 inputs -> 1 output 
+[[random.random() for _ in range(2 + 1)]] # 1st output neuron 
+] 
+As usual, we can train it using gradient descent. One difference from our previous 
+examples is that here we have several parameter vectors, each with its own 
+gradient, which means we’ll have to call gradient_step for each of them. 
+from scratch.gradient_descent import gradient_step 
+import tqdm 
+ 
+learning_rate = 1.0 
+for epoch in tqdm.trange(20000, desc="neural net for xor"): 
+for x, y in zip(xs, ys): 
+gradients = sqerror_gradients(network, x, y) 
+# Take a gradient step for each neuron in each layer 
+network = [[gradient_step(neuron, grad, -learning_rate) 
+
+for neuron, grad in zip(layer, layer_grad)] 
+for layer, layer_grad in zip(network, gradients)] 
+# check that it learned XOR 
+assert feed_forward(network, [0, 0])[-1][0] < 0.01 
+assert feed_forward(network, [0, 1])[-1][0] > 0.99 
+assert feed_forward(network, [1, 0])[-1][0] > 0.99 
+assert feed_forward(network, [1, 1])[-1][0] < 0.01 
+For me the resulting network has weights that look like: 
+[ 
+# hidden layer 
+[[7, 7, -3], 
+# computes OR 
+[5, 5, -8]], 
+# computes AND # 
+output layer 
+[[11, -12, -5]] # computes "first but not second" 
+] 
+which is conceptually pretty like our previous bespoke network. 

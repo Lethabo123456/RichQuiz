@@ -1,0 +1,28 @@
+nsactionTime();  
+//Function to set the transaction time according to //the 
+transaction time of the current customer.  
+//Postcondition:  
+// transactionTime = currentCustomer.transactionTime;  
+  
+int getRemainingTransactionTime() const; //Function 
+to return the remaining transaction time.  
+//Postcondition: The value of transactionTime is returned.  
+  
+void decreaseTransactionTime();  
+//Function to decrease the transactionTime by 1 unit.  
+//Postcondition: transactionTime--;  
+  
+void setCurrentCustomer(customerType cCustomer); 
+//Function to set the info of the current customer 
+//according to the parameter cCustomer.  
+//Postcondition: currentCustomer = cCustomer;  
+  
+int getCurrentCustomerNumber() const;  
+//Function to return the customer number of the current //customer.  
+//Postcondition: The value of customerNumber of the // 
+current customer is returned.  
+  
+int getCurrentCustomerArrivalTime() const; 
+//Function to return the arrival time of the current 
+//customer.  
+/

@@ -1,0 +1,20 @@
+nd algorithm design technique called backtracking. Let us 
+consider the following 8-queens puzzle: Place 8 queens on a chess-board (8 by 8 square board) so that no 
+two queens can attack each other. For any two queens to be nonattacking, they cannot be in the same 
+row, same column, or same diagonals. Figure 4-11 gives one possible solution to the 8-queens puzzle.  
+
+162  
+  
+  
+FIGURE 4-11 A solution to the 8-queens puzzle  
+  
+In 1850, the 8-queens puzzle was considered by the great C. F. Gauss, who was unable to obtain a 
+complete solution. The term backtrack was first coined by D. H. Lehmer in 1950. In 1960, R. J. Walker gave 
+an algorithmic account of backtracking. A general description of backtracking with a variety of applications 
+was presented by S. Golomb and L. Baumert.  
+  
+ 
+4.4.1  Backtracking  
+  
+The backtracking algorithm attempts to find solutions to a problem by constructing partial solutions and 
+making sure that any partial solution does not violate the problem req

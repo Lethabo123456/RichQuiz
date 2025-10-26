@@ -1,0 +1,38 @@
+Observations about Prolog Rules 
+* The implication is from right to left! 
+* The scope of a variable is the clause in which it appears.  
+* Variables whose first appearance is on the left hand side of the clause 
+have 
+implicit universal quantifiers. 
+* Variables whose first appearance is on the right hand side of the 
+clause have implicit existential quantifiers. 
+ 
+Executing a Prolog Program 
+ 
+To run a Prolog program the user must ask a question (goal) by stating a theorem 
+(asserting a predicate) which the Prolog interpreter tries to prove.  
+If the predicate contains variables, the interpreter prints the values of the variables 
+used to make the predicate true. 
+The interpreter uses backward chaining to prove a goal. It begins with the thing it is 
+trying to prove, and works backwards looking for things that would imply it, until it 
+gets to facts.
+
+Example: Greatest Common Divisor 
+ 
+Using Euclid's algorithm, we can compute the GCD of two positive integers in 
+Prolog as follows: 
+ 
+/* Prolog program to compute GCD */ 
+gcd(A, 0, A). 
+gcd(A, A, A). 
+gcd(A, B, D) :- (A>B),(B>0), R is A mod B, gcd(B,R,D). 
+gcd(A, B, D) :- (A<B), gcd(B,A,D). 
+ 
+The first two rules are the base case to terminate the recursive definition. 
+The second rule ensures that the first argument is the larger of the two and that the 
+second argument is a positive integer, computes the remainder of A/B into R, and 
+recursively matches (finds) the gcd of the smaller argument and R. 
+ 
+The third rule reorders the arguments so the larger argument is first. 
+Prolog attempts to match the rules in order, and clauses are evaluated left to right. If 
+any clause fails (ie, if A is not greater than B in rule 2), then the rule fails.

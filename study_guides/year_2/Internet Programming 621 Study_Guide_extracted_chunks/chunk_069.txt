@@ -1,0 +1,17 @@
+expression evaluates to false , the code between the braces is skipped. That ’ s really all there is 
+to it. It is worth pointing out that any code following the closing brace is always run, regardless of 
+the result of the test. So in the preceding example, if expression evaluates to true , both the ‘Run 
+this code’ and ‘More code here’ lines are executed; if expression evaluates to false , ‘Run this code’ 
+is skipped but  
+‘More code here’ is still run.  
+  
+Here is a simple real-world example:  
+$widgets = 23; if ( 
+$widgets == 23 ) {  
+echo “We have exactly 23 widgets in stock!”;  
+}  
+  
+The first line of the script creates a variable, $widgets , and sets its value to 23 . Then an if statement 
+uses the == operator to check if the value stored in $widgets does indeed equal 23 . If it does — and it  
+should — then the expression evaluates to true and the script displays the message: “ We have 
+exactly 23 widgets in stock! ” If $widgets does not hold the value 23 , the code between

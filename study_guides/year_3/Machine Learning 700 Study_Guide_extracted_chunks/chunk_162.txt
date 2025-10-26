@@ -1,0 +1,47 @@
+Different Types of Preprocessing 
+
+The first plot above shows a synthetic two-class classification dataset with two features. The first feature, 
+represented along the x-axis, ranges from 10 to 15, while the second feature, shown along the y-axis, 
+ranges from approximately 1 to 9. The subsequent four plots demonstrate four different methods for 
+transforming the data to create more standardized ranges. The StandardScaler in scikit-learn 
+standardizes each feature by adjusting its mean to 0 and its variance to 1, ensuring that all features are 
+on the same scale. However, this method does not control the specific minimum and maximum values 
+of the features. The RobustScaler functions similarly to the StandardScaler but uses the median and 
+quartiles instead of the mean and variance. This makes the RobustScaler less sensitive to outliers (data 
+points that are significantly different from the rest), which could otherwise affect scaling methods based 
+on the mean and variance. The MinMaxScaler shifts and scales the data so that all feature values fall 
+
+between 0 and 1. In the case of this two-dimensional dataset, the transformation ensures all data points 
+are within a rectangle bounded by 0 and 1 on both axes. Lastly, the Normalizer scales the data differently: 
+it adjusts each data point so that the length of its feature vector (its Euclidean norm) equals 1. This 
+normalization essentially projects the data points onto a unit circle (or sphere in higher dimensions), with 
+each point scaled by the inverse of its length. This technique is typically used when only the direction (or 
+angle) of the data matters, rather than its magnitude. 
+
+Applying Data Transformations 
+
+After reviewing the different types of transformations, let's apply them using scikit-learn. We'll use the 
+cancer dataset from Chapter 2 for this demonstration. Preprocessing steps like scaling are generally 
+performed before applying a supervised machine learning algorithm. For instance, if we want to use a 
+kernel SVM (SVC) on the cancer dataset, we might first apply the MinMaxScaler to preprocess the data. 
+To do this, we would start by loading the dataset and splitting it into training and test sets. This separation 
+is important because it allows us to assess the performance of the supervised model on unseen data 
+after completing the preprocessing steps. 
+The transformed data has the same shape as the original data—the features are simply shifted and 
+scaled. You can see that all of the features are now between 0 and 1, as desired. To apply the SVM to the 
+scaled data, we also need to transform the test set. This is again done by calling the transform method, 
+this time on X_test: 
+ 
+The transformed data has the same shape as the original data—the features are simply shifted and 
+scaled. You can see that all of the features are now between 0 and 1, as desired. To apply the SVM to the 
+scaled data, we also need to transform the test set. This is again done by calling the transform method, 
+this time on X_test: 
+ 
+Maybe somewhat surprisingly, you can see that for the test set, after scaling, the mini- mum and 
+maximum are not 0 and 1. Some of the features are even outside the 0–1 range! The explanation is that 
+the MinMaxScaler (and all the other scalers) always applies exactly the same transformation to the 
+training and the test set. This means the transform method always subtracts the training set minimum 
+and divides by the training set range, which might be different from the minimum and range for the test 
+set. Scaling Training and Test Data the Same Way It is important to apply exactly the same transformation 
+to the training set and the test set for the supervised model to work on the test set. The following 
+example illustrates what would happen if we were to use the minimum and range of the test set instead: 

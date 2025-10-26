@@ -1,0 +1,14 @@
+ing Concepts 
+ 
+One of the main functions of a database system is to provide timely answers to end users. End users 
+interact with the DBMS through queries to generate information, using the following sequence: 
+ 1. The end-user (client-end) application generates a query.  
+ 2. The query is sent to the DBMS (server end). 
+ 3. The DBMS (server end) executes the query. 
+ 4. The DBMS sends the resulting data set to the end-user (client-end) application.  
+End users expect their queries to return results as quickly as possible. Good database performance 
+is hard to evaluate but it is easier to identify bad database performance than good database 
+performance—all it takes is end-user complaints about slow query results. Regardless of end-user 
+perceptions, the goal of database performance is to execute queries as fast as possible. Therefore, 
+database performance must be closely monitored and regularly tuned. Database performance tuning 
+refers to a set of activities and procedures designed

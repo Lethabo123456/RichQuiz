@@ -1,0 +1,14 @@
+uppose that the 
+rotation occurs at node, say x. If it is a left rotation, certain nodes from the right subtree of x move to 
+its left subtree; the root of the right subtree of x becomes the new root of the reconstructed subtree.  
+
+382  
+  
+Similarly, if it is a right rotation at x, certain nodes from the left subtree of x move to its right subtree; the 
+root of the left subtree of x becomes the new root of the reconstructed subtree.  
+24. A B-tree of order m is an m-way search tree that is either empty, or has the following properties: (1) 
+All leaves are on the same level; (2) All internal nodes except the root have at most m (nonempty) 
+children and at least  children. (Note that  denotes the ceiling of m/2.); (3) The root has at least 2 
+children if it is not a leaf, and at most m children.  
+25. To insert an item into a B-tree, search the tree to see if the record is already in the tree. If the record 
+is already in the tree, output an error messsage. If the record is not in the

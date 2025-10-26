@@ -1,0 +1,31 @@
+The Institute for Electrical and Electronic Engineers (IEEE) developed the 802.11 specification for 
+wireless LAN technology. 802.11 specifies over-the-air interface between a wireless client and a 
+base station, or between two wireless clients. WLAN 802.11 standards also have security protocols 
+that were developed to provide the same level of security as that of a wired LAN. 
+The first of these protocols is Wired Equivalent Privacy (WEP). WEP provides security by 
+encrypting data sent over radio waves from end point to end point. 
+The second WLAN security protocol is Wi-Fi Protected Access (WPA). WPA was developed as an 
+upgrade to the security features of WEP. It works with existing products that are WEP-enabled but 
+provides two key improvements: improved data encryption through the temporal key integrity 
+protocol (TKIP) which scrambles the keys using a hashing algorithm. It has means for integrity-
+checking to ensure that keys have not been tampered with. WPA also provides user 
+authentication with the extensible authentication protocol (EAP). 
+  
+ 
+1.5 Wireless Protocols 
+Specification     Data Rate                   Modulation Scheme       Security 
+802.11            1 or 2 Mbps in the 2.4      FHSS, DSSS              WEP and WPA 
+                  GHz band
+
+802.11a           54 Mbps in the 5 GHz        OFDM                    WEP and WPA
+                  band 
+ 
+802.11b/High      11 Mbps (with a fallback    DSSS with CCK           WEP and WPA 
+Rate/Wi-Fi        to 5.5, 2, and 1 Mbps) in 
+                  the 2.4 GHz band
+
+802.11g/Wi-Fi     54 Mbps in the 2.4 GHz      OFDM when above         WEP and WPA 
+                  band                        20Mbps, DSSS with CCK 
+                                              when below 20Mbps
+    
+Table 1- 1: Wireless Protocols 

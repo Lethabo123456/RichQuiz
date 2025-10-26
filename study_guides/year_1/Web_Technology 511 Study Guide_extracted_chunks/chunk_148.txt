@@ -1,0 +1,31 @@
+Exhibit 0-15: The Order page with a text box and a text area 
+
+Adding a text area 
+ 
+Here’s how                       Here’s why
+---------------------------------------------------------------------------------
+Open the source code
+---------------------------------------------------------------------------------
+Place the insertion point as     <!--- Text area -->
+shown 
+---------------------------------------------------------------------------------
+Enter the code
+---------------------------------------------------------------------------------
+<BR>Address:                     The TEXTAREA tag is used to create a multiple
+<BR><TEXTAREA    ROWS=3          line text box. The ROWS and COLS attributes
+COLS=30>Enter your address       specify the number of rows and columns of text 
+      here</TEXTAREA>            that users can see on a page in the text
+                                 field. Here, the number of rows is 3 and the
+                                 number of columns is 30. 
+---------------------------------------------------------------------------------
+Update and close the source code 
+---------------------------------------------------------------------------------
+Refresh and observe the page     A text area with the label “Address:” appears on 
+                                 the page. It contains the text that you entered
+                                 within the TEXTAREA tag (see   Exhibit 0-15).
+---------------------------------------------------------------------------------
+In the text area, enter your     If the address exceeds the specified number of
+address                          rows, the scroll bars of the text area are 
+                                 activated. 
+---------------------------------------------------------------------------------
+ 

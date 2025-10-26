@@ -1,0 +1,20 @@
+closedir( $handle );   
+The readdir() function expects a directory handle for an opened directory, and returns the filename 
+of the next entry in the directory:   
+   
+$filename = readdir( $handle );   
+   
+Each directory contains a list of entries for each of the files and subdirectories inside it, as well as 
+entries for . (representing the directory) and .. (the parent of the directory). PHP maintains an 
+internal pointer referring to the next entry in the list, just as a file pointer points to the position in a 
+file where the next file operation should occur.   
+   
+
+56   
+   
+Here is how to set up a loop to get all the files and folders inside a specified directory. Save the 
+following script as dir_list.php in your document root folder. Now change the $dirPath variable in the 
+file so that it contains the path to a real directory on your Web server. Open the script’s URL in your 
+Web browser to test it.   
+   
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”

@@ -1,0 +1,18 @@
+arge as the sample (10n < N). 
+ 
+The second assumption should look familiar to the t-test; however, the first assumption 
+should look foreign. Expected counts are something we haven't talked about yet but are 
+
+P a g e  | 117 
+ 
+about to! When formulating our null and alternative hypotheses for this test, we consider a 
+default distribution of categorical variables. For example, if we have a die and we are testing 
+whether the outcomes are coming from a fair die, our hypothesis might look as follows: 
+ 
+• H0: The specified distribution of the categorical variable is correct. p1 = 1/6, p2 = 1/6, 
+p3 = 1/6, p4 = 1/6, p5 = 1/6, p6 = 1/6. 
+• Ha: The specified distribution of the categorical variable is not correct. At least one of 
+the pi values is not correct. 
+In the t-test, we used our test statistic (the t value) to find our p-value. In a chi-square test, 
+our test statistic is, well, chi-square. Test Statistic: χ2 = Σ (Oi - Ei) ^2 / Ei over k categories. 
+Degrees of Freedom = k − 1. A

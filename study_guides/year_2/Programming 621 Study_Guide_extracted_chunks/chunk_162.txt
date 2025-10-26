@@ -1,0 +1,36 @@
+n each row: 
+ 
+void largestInRows(int matrix[][NUMBER_OF_COLUMNS], int noOfRows)  
+{ 
+ int largest; 
+      //Largest element in each row 
+ for (int row = 0; row < noOfRows; row++)  
+         {  
+        largest = matrix[row][0]; //Assume that the first element //of the row is the largest    
+for (int col = 1; col < NUMBER_OF_COLUMNS; col++) 
+        if (largest < matrix[row][col])  
+         largest = matrix[row][col]; cout << "The largest element of row " << (row + 1) << 
+" = " << largest << endl;  
+    } 
+} 
+Likewise, you can write a function to find the sum of the elements of each column, 
+read the data into a two-dimensional array, find the largest and/or smallest element in 
+each row or column, and so on 
+Example below shows how the functions printMatrix, sumRows, and largestInRows 
+are used in a program. 
+ 
+ 
+ 
+ 
+ 
+
+152 | P a g e  
+ 
+ 
+ 
+ 
+
+153 | P a g e  
+ 
+In this program, the statement in Line 11 declares and initializes board to be a two 
+dimensional array of six rows and fiv

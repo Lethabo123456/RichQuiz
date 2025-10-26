@@ -1,0 +1,12 @@
+4 Chapter Four: Supervised learning - Classification Algorithms 
+ 
+4.1 Classification 
+Classification is a type of supervised learning where the goal is to predict a categorical outcome based 
+on input features. Unlike regression, which predicts continuous values, classification models categorize 
+inputs into discrete labels. According to Zhang & Wang (2021), classification algorithms are widely used 
+in automated decision-making, fraud detection, and medical diagnostics, proving their significance in 
+real-world applications. 
+ 
+Mathematically, classification aims to learn a function  
+f:X→Y, where 𝑋 is the feature set and 𝑌 is a categorical label. The decision boundary of a classification 
+model separates different categories in the feature space. 

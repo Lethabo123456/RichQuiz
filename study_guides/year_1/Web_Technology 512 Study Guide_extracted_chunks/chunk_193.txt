@@ -1,0 +1,30 @@
+ime to a blank string. 
+The return value is then true. 
+You can try your script out now. Do not type anything in the email text box. Just click 
+the submit button. You should see this: 
+ 
+Figure 7.8 – Form with error message 
+ 
+Now type something in the text box. Click the submit button again and the red error 
+message should go away. 
+ 
+7.4 RADIO BUTTONS 
+ 
+Checking radio buttons on a form is a little trickier. You have to loop through each 
+button, testing for a value of checked, which means it was selected. Only one radio 
+button in a group can be selected, so if you find a value of checked you can break out 
+of the loop. 
+ 
+
+ 
+122 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+If no radio button was checked then you can return a value of false. If any one of 
+them is checked then you can return a value of true. Here is the code for your radio 
+button function: 
+ 
+ 
+Figure 7.9 –Radio buttons Validation 
+ 
+First we set up a variable called payment and set it to be a blank string. This will ho

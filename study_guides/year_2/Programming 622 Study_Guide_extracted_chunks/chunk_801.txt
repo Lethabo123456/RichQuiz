@@ -1,0 +1,26 @@
+size)  
+{  
+maxSize = size; gSize 
+= 0;  
+graph = new unorderedLinkedList<int>[size];  
+}  
+  
+//Destructor  
+graphType::~graphType()  
+{ clearGraph();  
+}  
+  
+ 
+10.6  Graph Traversals  
+  
+Processing a graph requires the ability to traverse the graph. This section discusses the graph traversal 
+algorithms.  
+  
+Traversing a graph is similar to traversing a binary tree, except that traversing a graph is a bit more 
+complicated. Now a binary tree has no cycles and starting at the root node we can traverse the entire 
+tree. On the other hand, a graph might have cycles and we might not be able to traverse the entire graph 
+from a single vertex (for example, if the graph is not connected). Therefore, we must keep track of the 
+vertices that have been visited. We must also traverse the graph from each vertex (that has not been 
+visited) of the graph. This ensures that the entire graph is traversed.  
+  
+The two most common graph traversal algorithms are the depth-first traversal and bread

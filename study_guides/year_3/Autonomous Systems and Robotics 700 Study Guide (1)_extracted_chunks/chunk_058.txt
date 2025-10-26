@@ -1,0 +1,28 @@
+2.2.8 Simulation of 2D LIDAR 
+
+To simulate a 2D LIDAR (Light Detection and Ranging) system in Python, we need to model a 
+sensor that emits rays in a 2D plane and detects intersections with obstacles, generating a point 
+cloud of detected points. The simulation involves defining the LIDAR’s properties (e.g., position, 
+range, angular resolution), casting rays in various directions, checking for intersections with 
+geometric obstacles (e.g., lines, rectangles), and computing the coordinates of intersection points 
+to form a point cloud. Below are detailed notes on implementing this simulation, including the 
+mathematical foundation, algorithm design, and a complete Python code example using Pygame 
+for visualisation (as it’s well-suited for 2D graphics and compatible with Pyodide for browser-
+based execution). 
+ 
+2.2.8.1 Conceptual Overview 
+LIDAR Simulation: A 2D LIDAR emits rays from a fixed position at specified angles within a field of 
+view (FOV). Each ray travels until it hits an obstacle or reaches its maximum range. The 
+intersection points (or max range if no hit) form a point cloud. 
+Key Components:  
+- LIDAR Properties:  
+▪ Position: The (x, y) coordinates of the LIDAR sensor in the 2D plane. 
+▪ Maximum Range: The farthest distance a ray can travel (e.g., 500 pixels). 
+▪ Field of View (FOV): The angular span of ray casting (e.g., 180°). 
+▪ Angular Resolution: The angle increment between consecutive rays (e.g., 1°). 
+- Obstacles: Represented as geometric shapes (e.g., line segments for walls, rectangles for 
+objects). 
+- Ray Casting: For each angle in the FOV, compute the ray’s path and find the closest 
+intersection with any obstacle. 
+- Point Cloud: A set of (x, y) coordinates representing the points where rays intersect obstacles 
+or terminate at max range. 

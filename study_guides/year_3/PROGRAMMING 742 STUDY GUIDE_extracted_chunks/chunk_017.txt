@@ -1,0 +1,44 @@
+1.2.2 Initializers 
+It is possible to initialize the values of member variables in an initializer, instead of having to 
+do so in every constructor. Create an initializer by assigning an initial value to a class member: 
+private int Second = 20; // initializer 
+Assume that the semantics of our Time object are such that no matter what time is set, the 
+seconds are always initialized to 20. We might rewrite our Time class to use an initializer so 
+that no matter which constructor is called, the value of Second is always initialized, either 
+explicitly by the constructor or implicitly by the initializer, as shown in Example 2-4. 
+            Minute = dt.Minute; 
+            Second = dt.Second; 
+
+Example 1-4. Using an initializer 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace Values 
+{ 
+    public class Time 
+    { 
+        // public accessor methods 
+        public void DisplayCurrentTime() 
+        { 
+       DateTime now = System.DateTime.Now;  
+       Console.WriteLine("\nDebug\t: {0} /{1} /{2} {3} :{4} :{5} ", 
+        now.Month, now.Date, now.Year, now.Hour, now.Minute, now.Second); 
+      Console.WriteLine("Time\t: {0} /{1} /{2} {3} :{4} :{5} ", Month, Date, Year, Hour, 
+Minute,    Second); 
+            Console.ReadLine(); 
+        } 
+ 
+ 
+        // constructors 
+        public Time(DateTime dt) 
+        { 
+ 
+            Year = dt.Year; 
+            Month = dt.Month; 
+            Date = dt.Day; 
+            Hour = dt.Hour; 
+ 
+Output:

@@ -1,0 +1,55 @@
+7.3.2 Events and Delegates 
+Events in C# are implemented with delegates. The publishing class defines a delegate that 
+the subscribing classes must implement. When the event is raised, the subscribing class's 
+methods are invoked through the delegate. A method that handles an event is called an 
+event handler . You can declare your event handlers as you would any other delegate. By 
+convention, event handlers in the .NET Framework return void and take two parameters. 
+The first parameter is the source of the event; that is, the publishing object. The second 
+parameter is an object derived from EventArgs. It is recommended that your event handlers 
+follow this design pattern. 
+ 
+EventArgs is the base class for all event data. Other than its constructor, the EventArgs class 
+inherits all its methods from Object, though it does add a public static field empty, which  
+represents an event with no state (to allow for the efficient use of events with no state). The 
+EventArgs derived class contains information about the event.  
+ 
+Events are properties of the class publishing the event. The keyword event controls how the 
+event property is accessed by the subscribing classes. The event keyword is designed to 
+maintain the publish/subscribe idiom. 
+Suppose you want to create a Clock class that uses events to notify potential subscribers 
+whenever the local time changes value by one second. Call this event OnSecondChange. 
+Declare the event and its event-handler delegate type as follows: 
+[ attributes ] [modifiers] event type member-name 
+For example: 
+public event SecondChangeHandler OnSecondChange; 
+This example has no attributes . The modifier can be abstract , new, override, static , virtual, 
+or one of the four access modifiers -- in this case, public. The modifier is followed by the 
+keyword event. The type is the delegate to which you want to associate the event  in this 
+case, secondChangeHandler. 
+ 
+The member name is the name of the event, in this case OnSecondChange. It is customary 
+to begin events with the word On. Altogether, this declaration states that OnSecondChange 
+is an event that is implemented by a delegate of type SecondChangeHandler. 
+ 
+The declaration for the SecondChangeHandler delegate is: 
+public delegate void SecondChangeHandler(object 
+clock,TimeInfoEventArgs timeInformation) 
+This declares the delegate. As stated earlier, by convention an event handler returns void 
+and takes two parameters: the source of the event (in this case clock) and an object derived 
+from EventArgs  in this case, TimeInfoEventArgs. TimeInfoEventArgs is defined as follows: 
+public class TimeInfoEventArgs : EventArgs 
+{ 
+public TimeInfoEventArgs(int hour, int minute, int second) 
+{ 
+this.hour = hour; 
+this.minute = minute; this.second = second; 
+} 
+public readonly int hour; public readonly int minute; public 
+readonly int 
+second; 
+} 
+ 
+The TimeInfoEventArgs object will have information about the current hour, minute, and 
+second. It defines a constructor and three public, read-only integer variables. In addition to 
+a delegate and an event, a Clock has three member variables: hour, minute, and second, 
+as well as a single method, Run ( ): 

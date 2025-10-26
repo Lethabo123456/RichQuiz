@@ -1,0 +1,22 @@
+e needed for each and a note of who can access each and who updates 
+each. Figure 5.8 shows a typical data dictionary entry. 
+ 
+ 
+A data dictionary helps achieve the advantages of the database approach in these ways: 
+ 
+ Reduced data redundancy: By providing standard definitions of all data, it is less 
+likely that the same data item will be stored in different places under different 
+names.For example, a data dictionary reduces the likelihood that the same part number 
+would be stored as two different items, such as PT_NO and PARTNO. 
+ 
+ 
+ 
+150 
+144 
+
+ Increased data reliability: A data dictionary and the database approach reduce the 
+chance that data will be destroyed or lost. In addition, it is more difficult for 
+unauthorized people to gain access to sensitive data and information. 
+ Assists program development: With a data dictionary, programmers know what data 
+is stored and what data type each field is. This information is valuable when writing 
+programs that make use of the

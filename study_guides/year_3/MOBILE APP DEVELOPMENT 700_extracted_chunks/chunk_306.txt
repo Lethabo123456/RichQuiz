@@ -1,0 +1,45 @@
+In this example, when the Frame Layout is added to a parent, it will become redundant. A better 
+alternative is to use the Merge tag: 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<merge 
+xmlns:android=“http://schemas.android.com/apk/res/android”> 
+<ImageView 
+
+android:id=“@+id/myImageView” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent” 
+android:src=“@drawable/myimage” 
+/> 
+<TextView 
+android:src=“@drawable/myimage” 
+/> 
+<TextView 
+android:id=“@+id/myTextView” 
+android:layout_width=“match_parent” 
+android:layout_height=“wrap_content” 
+android:text=“@string/hello” 
+android:gravity=“center_horizontal” 
+android:layout_gravity=“bottom” 
+/> 
+</merge> 
+
+When a layout containing a merge tag is added to another layout, the merge node is removed and its 
+child Views are added directly to the new parent. 
+The merge tag is particularly useful in conjunction with the include tag, which is used to insert the 
+contents of one layout into another: 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<LinearLayout 
+xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:orientation=“vertical” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent”> 
+<include android:id=“@+id/my_action_bar” 
+layout=“@layout/actionbar”/> 
+<include android:id=“@+id/my_image_text_layout” 
+layout=“@layout/image_text_layout”/> 
+</LinearLayout> 
+ 
+Combining the merge and include tags enables you to create flexible, reusable layout definitions that 
+don’t create deeply nested layout hierarchies. 

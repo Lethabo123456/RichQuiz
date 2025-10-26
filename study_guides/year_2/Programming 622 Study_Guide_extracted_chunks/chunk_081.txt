@@ -1,0 +1,14 @@
+ue.  
+  
+Suppose that a class has several instance variables requiring a large amount of memory to store data, and 
+you need to pass a variable by value. The corresponding formal parameter then receives a copy of the 
+data of the variable. That is, the compiler must allocate memory for the formal parameter, so as to copy 
+the value of the instance variables of the actual parameter. This operation might require, in addition to a 
+large amount of storage space, a considerable amount of computer time to copy the value of the actual 
+parameter into the formal parameter.  
+  
+On the other hand, if a variable is passed by reference, the formal parameter receives only the address of 
+the actual parameter. Therefore, an efficient way to pass a variable as a parameter is by reference. If a 
+variable is passed by reference, then when the formal parameter changes, the actual parameter also 
+changes. Sometimes, however, you do not want the function to be able to change the values of the 
+instance

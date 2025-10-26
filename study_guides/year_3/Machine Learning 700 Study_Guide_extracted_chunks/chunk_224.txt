@@ -1,0 +1,23 @@
+If both inputs are 1, the calculation equals 2 + 2 – 3 = 1, and the output is 1. If only one of the inputs 
+is 1, the calculation equals 2 + 0 – 3 = –1, and the output is 0. And if both of the inputs are 0, the 
+calculation equals –3, and the output is 0. 
+Using similar reasoning, we could build an OR gate with: 
+or_weights = [2., 2] 
+or_bias = -1. 
+
+assert perceptron_output(or_weights, or_bias, [1, 1]) == 1 
+assert perceptron_output(or_weights, or_bias, [0, 1]) == 1 
+assert perceptron_output(or_weights, or_bias, [1, 0]) == 1 
+assert perceptron_output(or_weights, or_bias, [0, 0]) == 0 
+ 
+We could also build a NOT gate (which has one input and converts 1 to 0 and 0 to 1) with: 
+not_weights = [-2.] 
+not_bias = 1. 
+assert perceptron_output(not_weights, not_bias, [0]) == 1 
+assert perceptron_output(not_weights, not_bias, [1]) == 0 
+
+However, there are some problems that simply can’t be solved by a single perceptron. For example, 
+no matter how hard you try, you cannot use a perceptron to build an XOR gate that outputs 1 if 
+exactly one of its inputs is 1 and 0 otherwise. This is where we start needing more complicated neural 
+networks. Of course, you don’t need to approximate a neuron to build a logic gate: 
+and_gate = min or_gate = max xor_gate = lambda x, y: 0 if x == y else 1 

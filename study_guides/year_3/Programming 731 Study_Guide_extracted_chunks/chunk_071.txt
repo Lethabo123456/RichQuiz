@@ -1,0 +1,23 @@
+// Compute the area of a   
+ 
+circle. class Area {   
+public static void main(String args[])   
+{ double pi, r, a; r = 10.8; // 
+radius of circle pi = 3.1416; // 
+pi, approximately   
+    
+a = pi * r * r; // compute area   
+System.out.println("Area of circle is " + a);   
+}   
+}   
+   
+Characters    
+In Java, the data type used to store characters is char. However, C/C++ programmers beware: char 
+in Java is not the same as char in C or C++. In C/C++, char is an integer type that is 8 bits wide. This 
+is not the case in Java. Instead, Java uses Unicode to represent characters. Unicode defines a fully 
+international character set that can represent all of the characters found in all human languages. It 
+is a unification of dozens of character sets, such as Latin, Greek, Arabic, Cyrillic, Hebrew, Katakana, 
+Hangul, and many more. For this purpose, it requires 16 bits. Thus, in Java char is a 16-bit type. The 
+range of a char is 0 to 65,536. There are no negative chars.  
+The standard set of characters known as ASCII still ranges from 0 to 127 as always, and the extended 
+8-bit character set, ISOLatin-1, ranges from 0 to 255.

@@ -1,0 +1,18 @@
+✓ True Positive (TP): The model correctly predicts a positive case (e.g., detecting spam 
+correctly). 
+✓ False Positive (FP): The model incorrectly predicts a positive case when it is actually negative 
+(Type I error). 
+✓ False Negative (FN): The model incorrectly predicts a negative case when it is actually positive 
+(Type II error). 
+✓ True Negative (TN): The model correctly predicts a negative case. 
+ 
+A model's performance is measured using multiple metrics: 
+
+✓ Precision: The proportion of correctly predicted positive cases among all predicted positive 
+cases. 
+✓ Recall: The proportion of actual positive cases that were correctly predicted. 
+✓ F1 Score: The harmonic mean of precision and recall, balancing both measures. 
+The tradeoff between precision and recall is crucial when designing machine learning models. For 
+example, in medical diagnosis, a model with high recall (capturing most positive cases) may be 
+preferred to minimize false negatives, whereas in spam detection, a model with high precision 
+(minimizing false positives) might be more important  

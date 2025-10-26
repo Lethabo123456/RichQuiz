@@ -1,0 +1,22 @@
+3.1.7 Truth Sets and Quantifiers 
+We will now tie together concepts from set theory and from predicate logic. 
+Given a predicate P, and a domain D, we define the truth set of P to be the 
+set of elements x in D for which P(x) is true. The truth set of P(x) is denoted 
+by {x ∈ D | P(x)}. 
+
+The truth set of Q, {x ∈ Z | x2 = 2}, is the set of integers for which x2 = 2. This 
+is the empty set because there are no integers x for which x2 = 2. The truth 
+set of R, {x ∈ Z | |x| = x}, is   the set of integers for which |x| = x. Because 
+|x| = x if and only if x ≥ 0, it follows that the  truth set of R is N, the set of 
+nonnegative integers. 
+Note that ∀xP(x) is true over the domain U if and only if the truth set of P is 
+the set U. Likewise, ∃xP(x) is true over the domain U if and only if the truth 
+set of P is nonempty. 
+ 
+Worked Example 
+What do the statements ∀𝑥∈𝑹 (𝑥2  ≥ 0) and ∃𝑥∈𝒁 (𝑥2  =  1) 
+mean? 
+Solution: 
+The statement ∀𝑥∈𝑹(𝑥2  ≥ 0) states that for every real number x, x2 
+≥ 0. This statement can be expressed as “The square of every real 
+number is nonnegative.” This is a true statement. 

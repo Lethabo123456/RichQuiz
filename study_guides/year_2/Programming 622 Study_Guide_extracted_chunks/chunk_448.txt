@@ -1,0 +1,18 @@
+}  
+  
+The implementation of the copy constructor and overloading the assignment operator are left as exercises 
+for you. (The definitions of these functions are similar to those discussed for array-based lists and stacks.)  
+  
+ 
+6.3  
+Linked Implementation of Queues  
+  
+Because the size of the array to store the queue elements is fixed, only a finite number of queue elements 
+can be stored in the array. Also, the array implementation of the queue requires the array to be treated 
+in a special way together with the values of the indices queueFront and queueRear. The linked 
+implementation of a queue simplifies many of the special cases of the array implementation and, because 
+the memory to store a queue element is allocated dynamically, the queue is never full. This section 
+discusses the linked implementation of a queue.  
+  
+Because elements are added at one end, queueRear, and removed from the other end, queueFront, we 
+need to know the front of the queue and the rear of the q

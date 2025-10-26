@@ -1,0 +1,23 @@
+Some of the attacks made on packet filtering firewalls and the appropriate countermeasures are as 
+follows: 
+
+ IP address spoofing: The intruder transmits packets from the outside with a source IP address 
+field containing an address of an internal host. The attacker hopes that the use of a spoofed 
+address allows penetration of systems that employ simple source address security, in which 
+packets from specific trusted internal hosts are accepted. The countermeasure is to discard 
+packets with an inside source address if the packet arrives on an external interface. In fact, 
+this countermeasure is often implemented at the router external to the firewall. 
+ Source routing attacks: The source station specifies the route for a packet to take as it crosses 
+the Internet, in the hopes that this bypasses security measures that do not analyze the source 
+routing information. The countermeasure is to discard all packets that use this option. 
+ Tiny fragment attacks: The intruder uses the IP fragmentation option to create extremely 
+small fragments and force the TCP header information into a separate packet fragment. This 
+attack is designed to circumvent filtering rules that depend on TCP header information. 
+
+Typically, a packet filter makes a filtering decision on the first fragment of a packet. All 
+subsequent fragments of that packet are filtered out solely because they are part of the packet 
+whose first fragment was rejected. The attacker hopes that the filtering firewall examines only 
+the first fragment and that the remaining fragments are passed through. A tiny fragment 
+attack is defeated by enforcing a rule that the first fragment of a packet must contain a 
+predefined minimum amount of the transport header. If the first fragment is rejected, the 
+filter remembers the packet and discards all subsequent fragments.

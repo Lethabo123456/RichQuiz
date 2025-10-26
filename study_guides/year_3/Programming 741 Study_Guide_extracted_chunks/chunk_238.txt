@@ -1,0 +1,45 @@
+In the output, the stack trace lists the methods in the reverse order in which they were called; 
+that is, it shows that the error occurred in DoDivide ( ) , which was called  by TestFunc ( ) . 
+When methods are deeply nested, the stack trace can help you understand the order of 
+method calls. In this example, rather than simply throwing a DivideByZeroException you 
+create a new instance of the exception: 
+DivideByZeroException e = new DivideByZeroException ( ) ; 
+ 
+You do not pass in a custom message, and so the default message will be printed:  
+DivideByZeroException! Msg : Attempted to divide by zero. 
+You can modify this line of code to pass in a default message: 
+new DivideByZeroException(" You tried to divide by zero which 
+is not meaningful" ) ; 
+In this case, the output message will reflect the custom message: 
+DivideByZeroException! Msg :You tried to divide by zero which 
+is not meaningful 
+Before throwing the exception, set the HelpLink property: 
+e.HelpLink = " " ; 
+When this exception is caught, the program prints the message and the Help Link : 
+catch (System. DivideByZeroException e)  
+{ 
+Console.WriteLine("\nDivideByZeroException! 
+Msg: 
+{0} 
+", 
+e.Message); 
+Console.WriteLine("\nHelpLink: {0} ", e.HelpLink); } 
+
+This allows you to provide useful information to the user. In addition, it prints the StackTrace 
+by getting the StackTrace property of the exception object: 
+Console.WriteLine("\nHere's a stack trace: 
+{ 
+0}\n", 
+e.StackTrace); 
+The output of this call reflects a full StackTrace leading to the moment the exception was 
+thrown: 
+ 
+Custom Exceptions 
+The intrinsic exception types the CLR provides, coupled with the custom messages shown in 
+the previous example, will often be all you need to provide extensive information to a catch 
+block when an exception is thrown. There will be times, however, when you want to provide 
+more extensive information or need special capabilities in your exception. 
+ 
+It is a trivial matter to create your own custom exception class; the only restriction is that it 
+must derive (directly or indirectly) from System.ApplicationException. Example 6-7 illustrates 
+the creation of a custom exception. 

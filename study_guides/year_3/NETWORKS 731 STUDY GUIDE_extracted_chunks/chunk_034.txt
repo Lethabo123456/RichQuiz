@@ -1,0 +1,15 @@
+CHAPTER 2: NETWORK DESIGN 
+ 
+2.1 Introduction to Network Design  
+The key to fault tolerance in network design is supplying multiple paths that data can use to 
+travel from any one point to another. Therefore, if one connection or component fails, data 
+can be rerouted over an alternate path, this is referred to as network redundancy.  
+ 
+The following sections describe examples of fault tolerance in network design. Topology on a 
+LAN star topology and a parallel backbone provide the greatest fault tolerance to the network. 
+However, on a WAN a full-mesh topology offers the best fault tolerance. A partial-mesh 
+topology offers some redundancy but is not as fault tolerant as a full-mesh WAN because it 
+offers fewer alternate routes for data Figure 2.1 depicts a full-mesh WAN between four 
+locations. Another highly fault-tolerant network is one based on SONET technology, which 
+relies on a dual, fiber-optic ring for its transmission. Since it uses two fiber rings for every 
+connection, a SONET network can easily recover from a fault in one of its links.

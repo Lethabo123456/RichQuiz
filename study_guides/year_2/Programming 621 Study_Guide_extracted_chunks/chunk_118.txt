@@ -1,0 +1,29 @@
+unction prototype ends with a semicolon.) 
+For the function larger, the prototype is:  
+double larger(double x, double y);                                  //function prototype 
+ 
+ 
+
+100 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+101 | P a g e  
+ 
+ 
+Void Functions 
+In this section, you will explore user-defined functions in general and, in particular, 
+those C++ functions that do not have a data type, called void functions. 
+ 
+Void functions and value-returning functions have similar structures. Both have a 
+heading and a body. Like value-returning functions, you can place user-defined void 
+functions either before or after the function main. However, the program execution 
+always begins with the first statement in the function main. If you place a user-defined 
+void function after the function main, you should place the function prototype before 
+the function main. A void function does not have a data type. Therefore, 
+functionType— that is, the return type—in the heading part and the return statemen

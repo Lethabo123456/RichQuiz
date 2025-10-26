@@ -1,0 +1,28 @@
+USING getElementById IN JAVASCRIPT 
+ 
+The document method getElementById is used to manipulate particular HTML 
+elements on your page. As its name suggests, though, the HTML element needs an ID 
+attached to it. As an example, take a look at this segment of a web page: 
+ 
+ 
+Figure 7.3- Simple HTML Form 
+So we have a textbox and a button. When the button is clicked, we want to make sure 
+that the textbox has been filled in. If it is still blank then we do not want to send the 
+form anywhere. We can keep the user on the same page and colour the textbox, say, 
+red. This will offer a visual clue that the textbox needs to be filled in. Here is what the 
+textbox will look like if it is left blank and the button is clicked: 
+ 
+ 
+Figure 7.4 – Change textbox background color 
+ 
+The code for all this makes use of getElementById. Here it is: 
+ 
+
+ 
+119 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+ 
+Figure 7.5 - getElementById 
+ 
+In the BODY section of the HTML we have a textbox and a button. But notice th

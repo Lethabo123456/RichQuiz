@@ -1,0 +1,23 @@
+Various binary trees with three nodes  
+  
+As you can see from the preceding examples, every node in a binary tree has at most two children. Thus, 
+every node, other than storing its own information, must keep track of its left subtree and right subtree. 
+This implies that every node has two pointers, llink and rlink. The pointer llink points to the root node of 
+the left subtree; the pointer rlink points to the root node of the right subtree.  
+  
+The following struct defines the node of a binary tree:  
+template <class elemType>  
+struct binaryTreeNode  
+{  
+elemType info; binaryTreeNode<elemType> 
+*llink;  
+binaryTreeNode<elemType> *rlink;  
+};  
+  
+From the definition of the node, it is clear that for each 
+node, The data is stored in info.  
+A pointer to the left child is stored in llink.  
+A pointer to the right child is stored in rlink.  
+  
+Furthermore, a pointer to the root node of the binary tree is stored outside the binary tree in a pointer 
+variable, usually called the ro

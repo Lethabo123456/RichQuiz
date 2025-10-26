@@ -1,0 +1,13 @@
+ans we would be trying to squeeze more 
+than one piece of information into one cell in the database, in this case the fact that customer 
+10 has three orders. We also have a null (blank space) because customers 12 and 14 haven’t 
+placed any orders. Posting the customer number into the order table (look back at Figure 5.2) 
+solves both those problems. Basically, the null isn’t too big a problem, but a relational database 
+cannot cope with a repeating group. Trying to implement the relationship by posting order 
+number into the customer table simply won’t work.  
+ 
+A full discussion of resolving relationships is beyond the scope of this book. However, there 
+only are six types of binary relationship. Figure 5.5 gives one example of each and explains 
+how to implement it. Note that the figure illustrates the most ‘elegant’ way to resolve each 
+relation- ship, not necessarily the most efficient in terms of access time. A company with a lot 
+of data would implement its database for speed ra

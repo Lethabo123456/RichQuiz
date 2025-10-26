@@ -1,0 +1,26 @@
+Testing Logical Connectivity Theories 
+ 
+Logical problems—relating to software conﬁgurations, protocols, and permissions—require a 
+diﬀerent approach. Sometimes, testing a logical theory directly solves the problem, such as 
+when updating a NIC driver resolves connectivity issues. 
+
+Methods for Testing Logical Issues: 
+• Review switch conﬁgurations to conﬁrm VLAN membership. 
+• Check user permissions on servers. 
+• Verify NIC settings:
+o Protocols (TCP/IPv4, TCP/IPv6) 
+o Gateway, DHCP server, DNS server details 
+
+• Examine routing tables for invalid static routes. 
+• Audit ﬁrewall rules or router access lists for blocked traﬃc. 
+
+• Use tools like: 
+ 
+o ping – to test host reachability 
+o netstat – to view open ports and network connections 
+o route – to examine the routing table 
+o traceroute – to trace packet paths and identify routing issues 
+ 
+• Validate wireless client settings (SSID, passphrase, channel, network type) 
+Advanced tools such as protocol analysers and network monitoring software can also help 
+identify misconﬁgurations or conﬂicts by observing real-time traﬃc. 

@@ -1,0 +1,15 @@
+escribed quicksort and stated that the average-case behaviour of quicksort 
+is O(nlog2n). However, the worst-case behavior of quicksort is O(n2). This section describes a sorting 
+algorithm whose behavior is always O(nlog2n).  
+  
+Like quicksort, mergesort uses the divide-and-conquer technique to sort a list. Mergesort also partitions 
+the list into two sublists, sorts the sublists, and then combines the sorted sublists into one sorted list. This 
+section describes mergesort for linked list-based lists.  
+  
+We leave it for you to develop mergesort for array-based lists, which can be done by using the techniques 
+described for linked lists.  
+  
+Mergesort and quicksort differ in how they partition the list. As discussed earlier, quicksort first selects an 
+element in the list, called pivot, and then partitions the list so that the elements in one sublist are less 
+than pivot and the elements in the other sublist are greater than or equal to pivot. By contrast, mergesort 
+divides the li

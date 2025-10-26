@@ -1,0 +1,43 @@
+The number of comparisons required to determine whether x is in T is one more than the number of 
+comparisons required to insert x in T. Furthermore, the number of comparisons required to insert x in T 
+is the same as the number of comparisons made in the unsuccessful search, reflecting that x is not in T. 
+From this, it follows that  
+ 
+     
+  
+  
+  
+  
+(Equation 9-1)  
+It is also known that  
+ 
+   
+  
+  
+  
+  
+  
+  
+  
+(Equation 9-2)  
+  
+Solving Equations (9-1) and (9-2), it can be shown that U(n) ≈ 2.77log2n and S(n) ≈ 1.39log2n.  
+  
+We can now formulate the following result.  
+  
+Theorem: Let T be a binary search tree with n nodes, where n> 0. The average number of nodes visited in 
+a search of T is approximately 1.39log2n = O(log2n) and the number of key comparisons is approximately 
+2.77 log2n = O(log2n).  
+  
+  
+  
+ 
+9.5  
+Nonrecursive Binary Tree Traversal Algorithms  
+  
+The previous sections described how to do the following:  
+  
+
+347  
+  
+Traverse a binary tree using the

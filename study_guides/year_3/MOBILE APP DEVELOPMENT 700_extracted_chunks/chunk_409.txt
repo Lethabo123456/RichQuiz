@@ -1,0 +1,28 @@
+Note 
+Google Maps v2 often does not work well with the emulator. You must set up a new AVD that uses 
+Google APIs as its target and select to use Hardware graphics in the Emulation options section. Using 
+the latest version of the SDK is also helpful. However, you may still get a blank screen. There are a 
+number of workarounds to be found on the internet, but we have not gotten any of these to solve the 
+problem. If you get a blank screen with the emulator, you will have to test some of this chapter’s code 
+on a real device. The instructions for running on a real device were included earlier in this chapter (see 
+“Get Coordinates from the GPS Sensor”). 
+
+This code uses a GoogleMap object, which is displayed in the fragment on the layout. The GoogleMap 
+class in conjunction with the FusedLocationProviderClient provides the functionality needed to get the 
+GPS coordinates of a location in real time. 
+ 
+▪ Lines 1–2—The class implements an interface that allows it to work with the map. The 
+OnMapReadyCallback interface is used to notify the activity that the map has been downloaded and 
+is ready to be used. This line will be underlined as an error until you implement the required methods 
+for the interface. The easiest way to do this is to click on the reddish light bulb at the beginning of the 
+line and select Implement methods. 
+▪ Line 15—A reference to the FusedLocationProviderClient is assigned 
+to the fusedLocationProviderClient variable so that these system services are available to the 
+ContactMapActivity. 
+▪ Line 17–18—A reference to the map fragment in the layout is assigned to the mapFragment 
+variable. Note the use of SupportMapFragment. As mentioned earlier, this is used to make the map 
+compatible with earlier versions of the Android Operating System. The SupportMapFragment class 
+has to be imported. Normally, this is routine—just hover over the underlined class and select import 
+from the pop-up menu. However, in earlier versions of Android Studio, the menu often did not find 
+this class. In this case, the import statement must be added manually. To do this, expand the import 
+section above the class declaration and type in this statement:

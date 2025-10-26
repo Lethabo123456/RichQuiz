@@ -1,0 +1,19 @@
+Sample output looks like this: 
+
+C:\>nbtstat -S 
+Local Area Connection: 
+Node IpAddress: [172.16.0.142] Scope Id: [] 
+NetBIOS Connection Table 
+Local Name State In/Out Remote Host Input Output 
+------------------------------------------------------------------ 
+TESTPC1 <00> Connected Out 172.16.210.25 6MB 5MB 
+TESTPC1 <00> Connected Out 172.16.3.1 108KB 116KB 
+TESTPC1 <00> Connected Out 172.16.3.20 299KB 19KB 
+TESTPC1 <00> Connected Out 172.16.3.4 324KB 19KB 
+TESTPC1 <03> Listening 
+
+ 
+Finally, nbtstat -s provides a similar set of session listings, but provides the remote computer names, 
+rather than their IP addresses. 
+Note 
+The options for the Nbtstat command are case sensitive. 

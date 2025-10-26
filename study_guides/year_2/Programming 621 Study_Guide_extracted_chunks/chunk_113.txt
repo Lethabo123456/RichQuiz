@@ -1,0 +1,22 @@
+not have a return type. These functions do 
+not use a return statement to return a value. 
+ 
+Value-Returning Functions 
+ 
+The previous section introduced some predefined C++ functions such as pow, abs, 
+islower, and toupper. These are examples of value-returning functions. To use these 
+functions in your programs, you must know the name of the header file that contains 
+the functions’ specification. You need to include this header file in your program using 
+the include statement and know the following item: 
+1. The name of the function 
+2. The parameters, if any 
+3. The data type of each parameter 
+4. The data type of the value computed (that is, the value returned) by the function, 
+called the type of the function. 
+5. The code required to accomplish the task 
+ 
+The syntax of a value-returning function is: 
+ 
+in which statements are usually declaration statements and/or executable statements. 
+In this syntax, functionType is the type of the value that the function returns. The 
+funct

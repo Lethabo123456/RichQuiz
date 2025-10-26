@@ -1,0 +1,20 @@
+lockType myClock;  
+  
+declares myClock to be an object of type clockType. In this case, the default constructor executes and the 
+instance variables of myClock are initialized to 0.  
+  
+The general syntax for declaring a class object that invokes a constructor with a parameter is  
+  
+  
+where each of argument1, argument2, and so on is either a variable or an expression. Note the following:  
+ The number of arguments and their type should match the formal parameters (in the order given) 
+of one of the constructors.  
+ If the type of the arguments does not match the formal parameters of any constructor (in the order 
+given), C++ uses type conversion and looks for the best match. For example, an integer value might 
+be converted to a floating-point value with a zero decimal part. Any ambiguity will result in a 
+compile-time error.  
+  
+Consider the following statement:  
+ clockType myClock(5, 12, 40);  
+  
+This statement declares the object myClock of type clockType. Here, we are passi

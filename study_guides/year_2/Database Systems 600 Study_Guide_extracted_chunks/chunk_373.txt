@@ -1,0 +1,21 @@
+nd data access 
+characteristics of the database to ensure its integrity, security, and performance. This is the last 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Nine, page 468-471. 
+
+ 
+150 
+stage in the database design process. The storage characteristics are a function of the types of 
+devices supported by the hardware, the type of data access methods supported by the system, and 
+the DBMS. Physical design can become a very technical job that affects not only the accessibility 
+of the data in the storage device(s) but the performance of the system. The physical design stage 
+consists of the steps in Table 9.8 
+ 
+The following sections cover these steps in more detail. 
+Define Data Storage Organisation  
+Before you can define data storage organization, you must determine the volume of data to be 
+managed and the data usage patterns.  
+ 
+Knowing the data volume will help you determine how much storage space

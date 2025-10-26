@@ -1,0 +1,18 @@
+ters to Functions 
+By reference only: In C++, arrays are passed by reference only. Because arrays are 
+passed by reference only, you do not use the symbol & when declaring an array as a 
+formal parameter. When declaring a one-dimensional array as a formal parameter, the 
+size of the array is usually omitted. If you specify the size of a one-dimensional array 
+when it is declared as a formal parameter, the size is ignored by the compiler. 
+
+130 | P a g e  
+ 
+ 
+ 
+Sometimes, the number of elements in the array might be less than the size of the 
+array. For example, the number of elements in an array storing student data might 
+increase or decrease as students drop or add courses. In such situations, we want to 
+process only the components of the array that hold actual data. To write a function to 
+process such arrays, in addition to declaring an array as a formal parameter, we 
+declare another formal parameter specifying the number of elements in the array, as 
+in the following function:

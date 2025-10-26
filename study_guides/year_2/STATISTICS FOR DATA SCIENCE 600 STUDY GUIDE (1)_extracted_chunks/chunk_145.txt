@@ -1,0 +1,23 @@
+It's basically a way to see how spread out the data is. There is a general formula to calculate 
+the standard deviation, which is as follows: 
+ 
+Before you freak out, let's break it down. For each value in the sample, we will take that value, 
+subtract the arithmetic mean from it, square the difference, and, once we've added up every 
+single point this way, we will divide the entire thing by n, the number of points in the sample. 
+Finally, we take a square root of everything.
+
+Without going into an in-depth analysis of the formula, think about it this way: it's basically 
+derived from the distance formula. Essentially, what the standard deviation is calculating is a 
+sort of average distance of how far the data values are from the arithmetic mean. 
+If you take a closer look at the formula, you will see that it makes sense: 
+
+• By taking, you are finding the literal difference between the value and the mean of 
+the sample. 
+• By squaring the result, we are putting a greater penalty on outliers because 
+squaring a large error only makes it much larger. 
+• By dividing by the number of items in the sample, we are taking (literally) the 
+average squared distance between each point and the mean. 
+• By taking the square root of the answer, we are putting the number in terms that 
+we can understand. For example, by squaring the number of friends minus the 
+mean, we changed our units to friend's square, which makes no sense. Taking the 
+square root puts our units back to just "friends". 

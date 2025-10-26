@@ -1,0 +1,30 @@
+Assigning Object Reference Variables    
+ 
+Object reference variables act differently than you might expect when an assignment takes place. 
+For example, what do you think the following fragment does?   
+  
+Box b1 = new Box();   
+Box b2 = b1; 
+  
+You might think that b2 is being assigned a reference to a copy of the object referred to by b1. That 
+is, you might think that b1 and b2 refer to separate and distinct objects. However, this would be 
+wrong. Instead, after this fragment executes, b1 and b2 will both refer to the same object. The 
+assignment of b1 to b2 did not allocate any memory or copy any part of the original object. It simply 
+makes b2 refer to the same object as does b1. Thus, any changes made to the object through b2 
+will affect the object to which b1 is referring, since they are the same object. This situation is 
+depicted here:    
+     
+Figure 4.2   
+    
+Although b1 and b2 both refer to the same object, they are not linked in any other way. For example, 
+a subsequent assignment to b1 will simply unhook b1 from the original object without affecting the 
+object or affecting b2. For example:   
+   
+Box b1 = new Box();   
+Box b2 = b1;   
+// ...   
+b1 = null;   
+Here, b1 has been set to null, but b2 still points to the original object.   
+   
+Note: When you assign one object reference variable to another object reference variable, you are 
+not creating a copy of the object, you are only making a copy of the reference.  

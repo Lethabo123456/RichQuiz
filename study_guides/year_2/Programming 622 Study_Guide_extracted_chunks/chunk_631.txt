@@ -1,0 +1,20 @@
+To facilitate this discussion, when we say node 56, we mean the node with info 56.  
+  
+This list has 11 elements, so the length of the list is 11. To convert the array into a heap, we start at the 
+list element n/2 - 1 = 11/2 – 1 = 5 – 1 = 4, which is the fifth element of the list.  
+  
+Now list[4] = 56. The children of list[4] are list[4 * 2 + 1] and list[4 * 2 + 2], that is, list[9] and list[10]. In the 
+previous list, both list[9] and list[10] exist.  
+  
+  
+To convert the tree with root node list[4], we perform the previous hree steps:  
+
+312  
+  
+1. Find the larger of list[9] and list[10], that is, the largest child of list[4]. In this case, list[10] is larger 
+than list[9].  
+2. Compare the larger child with the parent node. If the larger child is larger than the parent, swap 
+the larger child with the parent. Because list[4] < list[10], we swap list[4] with list[10].  
+3. Because list[10] does not have a subtree, Step 3 does not execute.   
+  
+Figure 8-45(a) shows the resulting

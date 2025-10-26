@@ -1,0 +1,48 @@
+Chapter Four: Requirements Engineering  
+  
+4.1 Introduction to Requirement Engineering  
+The requirements for a system are the descriptions of the services that a system should provide 
+and the constraints on its operation. These requirements reflect the needs of customers for a 
+system that serves a certain purpose such as controlling a device, placing an order, or finding 
+information. The process of finding out, analyzing, documenting and checking these services and 
+constraints is called requirements engineering (RE). 
+Some of the problems that arise during the requirements engineering process are a result of 
+failing to make a clear separation between these different levels of description. We distinguish 
+between them by using the term user requirements to mean the high-level abstract requirements 
+and system requirements to mean the detailed description of what the system should do. User 
+requirements and system requirements may be defined as follows;  
+
+• User requirements are statements, in a natural language plus diagrams, of what ser-vices 
+the system is expected to provide to system users and the constraints under which it must 
+operate. The user requirements may vary from broad statements of the system features 
+required to detailed, precise descriptions of the system functionality. 
+• System requirements are more detailed descriptions of the software system’s functions, 
+services, and operational constraints. The system requirements document (sometimes 
+called a functional specification) should define exactly what is to be implemented. It may 
+be part of the contract between the system buyer and the software developers. 
+Different kinds of requirement are needed to communicate information about a system to 
+different types of reader. 
+
+The figure below illustrates the distinction between user and system requirements. This example 
+from the mental health care patient information system (Mentcare) shows how a user 
+requirement may be expanded into several system requirements. You can see from the Figure  
+that the user requirement is quite general. The system requirements provide more specific 
+information about the services and functions of the system that is to be implemented 
+ 
+Figure 4.1: User and Systems Requirements (Sommerville,  I.  2021)   
+
+You need to write requirements at different levels of detail because different types of readers use 
+them in different ways. 
+
+The Figure below shows the types of readers of the user and system requirements. The readers 
+of the user requirements are not usually concerned with how the system will be implemented 
+and may be managers who are not interested in the detailed facilities of the system. The readers 
+of the system requirements need to know more precisely what the system will do because they 
+are concerned with how it will support the business processes or because they are involved in 
+the system implementation. The different types of document readers shown in the Figure below 
+are examples of system stakeholders. As well as users, many other people have some kind of 
+interest in the system. System stakeholders include anyone who is affected by the system in some 
+way and so anyone who has a legitimate interest in it. Stakeholders range from end-users of a 
+system through managers to external stakeholders such as regulators, who certify the 
+acceptability of the system.
+ 

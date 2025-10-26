@@ -1,0 +1,15 @@
+computer memory, access a particular piece of data, and write algorithms to 
+manipulate the data.  
+  
+For example, if all the data items are of the same type and we have some idea of the number of data 
+items, we could use an array to store the data. We can then use an index to access a particular component 
+of the array. Using a loop and the array index, we can step through the elements of the array. Algorithms, 
+such as those for initializing the array, sorting, and searching, are used to manipulate the data stored in 
+an array. On the other hand, if we do not want to worry about the size of the data, we can use a linked 
+list, to process it. If the data needs to be processed in a Last In First Out (LIFO) manner, we can use a stack. 
+Similarly, if the data needs to be processed in a First In First Out (FIFO) manner, we can use a queue.  
+  
+The STL is equipped with these features to effectively manipulate data. More formally, the STL has three 
+main components:  
+  
+• Containers

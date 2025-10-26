@@ -1,0 +1,27 @@
+5.3  Consensus Algorithms in Distributed Robotics 
+
+Consensus algorithms form the mathematical and computational backbone of reliable multi-
+agent systems, enabling distributed robots to reach agreement on shared information, 
+coordinated decisions, and system states despite the inherent challenges of distributed 
+computing environments. These algorithms are essential for maintaining coherent collective 
+behaviour when individual agents may experience communication delays, hardware failures, or 
+conflicting sensor readings that could otherwise lead to system fragmentation or inconsistent 
+behaviour. 
+
+The fundamental challenge addressed by consensus algorithms stems from the distributed nature 
+of multi-agent systems, where individual robots must make decisions based on incomplete local 
+information while contributing to globally coherent system behaviour. Unlike centralised systems 
+where a single controller can maintain perfect knowledge of system state, distributed robotic 
+agent systems, enabling distributed robots to reach agreement on shared information, 
+coordinated decisions, and system states despite the inherent challenges of distributed 
+computing environments. These algorithms are essential for maintaining coherent collective 
+behaviour when individual agents may experience communication delays, hardware failures, or 
+conflicting sensor readings that could otherwise lead to system fragmentation or inconsistent 
+behaviour. 
+
+The fundamental challenge addressed by consensus algorithms stems from the distributed nature 
+of multi-agent systems, where individual robots must make decisions based on incomplete local 
+information while contributing to globally coherent system behaviour. Unlike centralised systems 
+where a single controller can maintain perfect knowledge of system state, distributed robotic 
+systems must cope with the reality that no single agent has complete information about the entire 
+system at any given moment.

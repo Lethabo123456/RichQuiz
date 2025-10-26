@@ -1,0 +1,30 @@
+lementation of queues), which 
+returns the number of elements in the queue.  
+  
+Write the definition of the function template to implement this operation.  
+ 
+14. Draw the UML diagram of the class queueADT.  
+  
+15. Draw the UML diagram of the class queueType.  
+  
+16. Draw the UML diagram of the class linkedQueueType.  
+  
+
+256  
+  
+   
+TOPIC 7: SEARCHING AND HASHING ALGORITHMS  
+  
+LEARNING OUTCOMES  
+After Studying this topic you should be able to:  
+Learn the various search algorithms  
+Explore how to implement the sequential and binary search algorithms  
+Discover how the sequential and binary search algorithms perform  
+Become aware of the lower bound on comparison-based search algorithms Learn 
+about hashing  
+  
+Chapter 3 described how to organize data using linked lists. The most important operation performed on 
+a list is the search algorithm. Using the search algorithm, you can do the following:  
+  
+Determine whether a particular item is in the list.  
+If the data is speci

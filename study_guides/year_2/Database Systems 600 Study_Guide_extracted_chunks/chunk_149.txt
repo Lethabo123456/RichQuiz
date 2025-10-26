@@ -1,0 +1,12 @@
+egrity are very similar because they are both implemented through constraints on 
+the same set of attributes. This similarity often leads to confusion when the concepts are applied 
+within the limited structure of a unary relationship.  
+Referential integrity requires that the values in the foreign key correspond to values in the primary 
+key. In one direction, participation considers whether the foreign key can contain a null.  
+Associative (Composite) Entities 
+M:N relationships are a valid construct at the conceptual level, and therefore are found frequently 
+during the ER modelling process. However, implementing the M:N relationship, particularly in the 
+relational model, requires the use of an additional entity. The ER model uses the associative entity 
+to represent an M:N relationship between two or more entities. This associative entity, also called 
+a composite or bridge entity, is in a 1:M relationship with the parent entities and is composed of the 
+primary key attributes of

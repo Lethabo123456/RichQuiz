@@ -1,0 +1,27 @@
+value into a new variable 
+is because in JavaScript strings are immutable. This means that you cannot actually 
+change any characters in a string. What JavaScript does instead is to create an entirely 
+ 
+Multimedia Resource 
+ 
+http://www.w3schools.com/js/js_st
+rings.asp 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+80 
+ 
+FIVE | JAVASCRIPT STRING MANIPULATION 
+new string for you, leaving the original untouched. As an example, add another 
+document.write to the end of your code, as well as a BR tag to the first one: 
+document.write(new_postcode + "<BR>"); 
+document.write( postcode ); 
+ 
+When you run your script in a web browser new_postcode will be SR2 4JH while 
+postcode will be sr2 4jh. The original postcode variable has been left untouched. 
+However, you can do this: 
+var postcode = "sr2 4jh"; 
+postcode = postcode.toUpperCase(); 
+ 
+But be aware that you are creating a new string to the right of the equal sign and 
+storing it back into the postcode varia

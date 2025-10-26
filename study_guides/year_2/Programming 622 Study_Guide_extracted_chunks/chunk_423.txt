@@ -1,0 +1,52 @@
+nkedStackType<int> numStack(50);  
+  
+8. What is the output of the following program?  
+#include <iostream>  
+#include <string> #include 
+"myStack.h" using 
+namespace std;  
+void mystery(stackType<int>& s, stackType<int>& t); int 
+main()  
+{  
+int list[] = {5, 10, 15, 20, 25};  
+  
+stackType<int> s1; stackType<int> 
+s2;  
+  
+for (int i = 0; i < 5; i++)  
+s1.push(list[i]);  
+  
+mystery(s1, s2);  
+  
+while (!s2.isEmptyStack())  
+{ cout << s2.top() << " "; 
+s2.pop();  
+}  
+cout << endl;  
+}  
+  
+void mystery(stackType<int>& s, stackType<int>& t)  
+{  
+while (!s.isEmptyStack())  
+{  
+
+216  
+  
+t.push(2 * s.top());  
+s.pop();  
+}  
+}   
+9. What is the output of the following program segment?  
+linkedStackType<int> myStack; 
+myStack.push(10); 
+myStack.push(20); 
+myStack.pop();  
+cout << myStack.top() << endl; myStack.push(25);  
+myStack.push(2 * myStack.top()); myStack.push(-10);  
+myStack.pop();  
+  
+linkedStackType<int> tempStack;  
+  
+tempStack = myStack;  
+  
+while (!tempStack.isEmptySta

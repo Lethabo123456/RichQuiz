@@ -1,0 +1,28 @@
+on is as follows:  
+  
+int serverListType::getNumberOfBusyServers() const  
+{ int busyServers = 0;  
+for (int i = 0; i < numOfServers; i++) if 
+(!servers[i].isFree()) 
+busyServers++;  
+return busyServers;  
+}  
+  
+The function setServerBusy sets a server to busy. This function is overloaded. The serverID of the server 
+that is set to busy is passed as a parameter to this function. One function sets the server’s transaction 
+time according to the parameter tTime; the other function sets it by using the transaction time stored in 
+the object cCustomer. The transaction time is later needed to determine the average waiting time. The 
+definitions of these functions are as follows:  
+  
+void serverListType::setServerBusy(int serverID, customerType cCustomer, int tTime)  
+{  
+servers[serverID].setBusy(); 
+servers[serverID].setTransactionTime(tTime); 
+servers[serverID].setCurrentCustomer(cCustomer);  
+}  
+  
+void serverListType::setServerBusy(int serverID, customerType cCustomer)  
+
+246  
+  
+{

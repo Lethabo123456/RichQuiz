@@ -1,0 +1,35 @@
+the 
+user is ready. 
+
+ 
+27 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+2.6 DOCUMENT OBJECT MODEL - THE DOM 
+ 
+The Document is another Window object you can manipulate. It is quite a powerful 
+object as it refers to just about all the elements you can have on a web page (forms, 
+links, images, text, HTML code, etc). This means that you can use JavaScript to get at 
+HTML elements, amend them, and add new ones.  
+ 
+One really useful document method is write. We will take a look at that now. 
+ 
+2.6.1 document.write 
+The document's write method can be used to insert 
+text onto your web page (this text can actually be 
+HTML elements). Try this as an example: 
+ 
+Create a new HTML web page from your 
+template 
+ 
+Save it with the name write_method.html 
+ 
+Add the following H1 heading to the HTML: 
+<H1>The document.write method</H1> 
+ 
+Put two SCRIPT tags in the BODY section of the HTML 
+ 
+Between the two SCRIPT tags, add the following: 
+document.write( window.screen.height ); 
+ 
+(Notice t

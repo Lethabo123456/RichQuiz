@@ -1,0 +1,28 @@
+The eth0 interface is a 10Mbps Ethernet interface. The MAC and IP address information is displayed 
+in this output as well. The result above didn’t show the output for DNS information but this ifconfig 
+for the tool can.  
+Ping Utility  
+The most commonly used network tool is the ping utility. This utility is used to provide a basic 
+connectivity test between the requesting host and a destination host. This is done by using the Internet 
+Control Message Protocol (ICMP) which has the ability to send an echo packet to a destination host and a 
+mechanism to listen for a response from this host. Simply stated, if the requesting host receives a 
+response from the destination host, this host is reachable. This utility is commonly used to provide a basic 
+picture of where a specific networking problem may exist. For example, if an Internet connection is down 
+at an office, the ping utility can be used to figure out whether the problem exists within the office or 
+within the network of the Internet provider. Below shows an example of the ping utility to select; 
+ 
+Below shows an example of the ping utility is used to obtain the reachability status of the locally 
+connected router. 
+ 
+Figure 40: Pimg Utility 
+ 
+Using ARP Utility  
+Windows 2000 TCP/IP allows an application to communicate over a network with another computer 
+by using either an IP address, a host name, or a NetBIOS name. However, regardless of which 
+naming convention is used, the destination must ultimately be resolved to a hardware address 
+(media access control (MAC) address) for shared access media such as Ethernet and Token Ring. 
+The Address Resolution Protocol (ARP) allows a host to find the MAC address of a node with an IP 
+address on the same physical network, when given the node's IP address. To make ARP efficient, 
+each computer caches IP-to-MAC address mappings to eliminate repetitive ARP broadcast requests. 
+The Arp tool allows a user to view and modify ARP table entries on the local computer. 
+The arp command is useful for viewing the ARP cache and resolving address resolution problems. 

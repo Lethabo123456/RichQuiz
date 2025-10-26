@@ -1,0 +1,34 @@
+ut << ch;  
+}  
+ 
+}   
+  
+  
+//end discardExp  
+  
+  
+  
+ 
+5.4.5  Function printResult  
+  
+If the postfix expression contains no errors, the function printResult prints the result; otherwise, it outputs 
+an appropriate message. The result of the expression is in the stack and the output is sent to a file. 
+Therefore, this function must have access to the stack and the output file. Suppose that no errors were 
+encountered by the method evaluateExpression. If the stack has only one element, the expression is error 
+free and the top element of the stack is printed. If either the stack is empty or it has more than one 
+element, there is an error in the postfix expression. In this case, this method outputs an appropriate error 
+message. The definition of this method is as follows:  
+  
+void printResult(ofstream& outF, stackType<double>& stack, bool isExpOk)  
+{ double result;  
+ 
+if (isExpOk)     
+  
+  
+  
+  
+  
+//if no error, print the result  
+{  
+if (!stack.isEmptyStack())  
+{ result =

@@ -1,0 +1,28 @@
+The next step is to configure the ImageButtons. Turn your attention to the Component Tree panel. 
+Notice that the ImageButtons all have a yellow triangle after them. These indicate there is a warning 
+about the buttons. Hover over the triangle to get the warning message. The warning message is that 
+the contentDescription attribute is missing a value. The contentDescription attribute is used to 
+describe what the image is for vision impaired users. We will use the Attributes panel to correct this 
+and give the buttons a unique id. Select the ImageButton with the list picture displayed. Scroll to the 
+top of the Attibutes pane and enter imageButtonList as the id. Next, look in Common Attributes for 
+the contentDescription attribute. Enter the following as the description: Button to display a list of 
+contacts. 
+
+Next select the map button, enter imageButtonMap for the id, and provide an appropriate 
+content description. Repeat for the settings button using imageButtonSettings as the id. Note that the 
+warnings have not gone away in the Component Tree. If you hover over them, you will see that the 
+warning has changed. Now the warning is that the description is hard coded rather than a string 
+resource. Click on one of the warnings and a new pane will open below the Component Tree. Scroll 
+down this pane until you find the Fix button. Click it and the Extract Resource window will open. You 
+can modify what it has extracted or just click OK. Voilà—the warning goes away! Repeat this process 
+for the other warnings. If you open the strings.xml file in res > values, you can see the resources you 
+just created.
+
+When the navigation bar is properly configured, you can copy it into each of the other three layouts. 
+Note that it is possible to set up the navigation bar as its own layout that can be included rather than 
+copied. This is a way to reuse code and make the app more maintainable. However, since this is more 
+advanced than this book, we \will not do it here. 
+
+Refer to 
+https://developer.android.com/training/improving-layouts/reusing-layouts.html if you’d like to learn 
+how to do this.

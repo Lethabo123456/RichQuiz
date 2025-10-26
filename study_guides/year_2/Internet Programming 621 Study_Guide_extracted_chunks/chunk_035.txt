@@ -1,0 +1,36 @@
+ict.dtd”>  
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>  
+<head>  
+<title>Hello</title>  
+<link rel=”stylesheet” type=”text/css” href=”common.css” /> 
+</head>  
+<body>  
+<h1>  
+<?php  
+$currentTime = date( “g:i:s a” );  
+echo “Hello, world! The current time is $currentTime”; 
+?>  
+</h1>  
+</body>  
+</html>  
+  
+  
+Save the script as hello_with_time.php and open its URL in your browser to run it. You ’ ll see 
+something along the lines of Figure 1.2.  
+  
+  
+  
+ 
+Figure 1.2  
+  
+
+22  
+If, after running this script you see a warning message saying that it is not safe to rely on system time, it is a 
+sign that you need to adjust your time zoe settings as we did I the first section of this Guide. Please refer to the 
+said section and take corrective action.  
+The majority of the code is exactly the same as before. The only difference is the PHP code itself:  
+  
+< ?php  
+$currentTime = date( “g:i:s a” );  
+echo “Hello, world! The current time is $currentTime”; 
+? >

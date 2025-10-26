@@ -1,0 +1,51 @@
+Figure 5.26: Sample output of the nbtstat –S command (Lammle, 2022) 
+ 
+Here you can see the NetBIOS name being displayed along with its hex ID and the status of each 
+session. An entry in the In/Out column determines whether the connection has been initiated 
+from the computer on which you’re running nbtstat (outbound) or whether another computer 
+has initiated the connection (inbound). The numbers in the Input and Output columns indicate in 
+bytes the amount of data transferred between the stations. 
+
+The –s Switch 
+As with the –A and –a switches, the lowercase –s switch is similar to its uppercase sibling. The 
+nbtstat –s command produces the same output as nbtstat –S except that it will also attempt to 
+resolve remote-host IP addresses into hostnames. Figure 5.27 shows sample output from the 
+nbtstat –s command. 
+
+Figure 5.27: Sample output of the nbtstat –s command (Lammle, 2022) 
+Note the similarities between Figure 5.26 and Figure 5.27. 
+As with the netstat command, with the nbtstat command you can place a number for an interval 
+at the end to direct it to deploy once every so many seconds until you press Ctrl+C. 
+ 
+5.3.11 netstat Utility 
+Using netstat is a great way to check out the inbound and outbound TCP/IP connections on your 
+machine. You can also use it to view packet statistics like how many packets have been sent and 
+received, the number of errors, and so on. When used without any options, netstat produces 
+output similar to the following, which shows all the outbound TCP/IP connections. This utility is a 
+great tool to use to determine the status of outbound web connections. Take a look: 
+If the address of either your computer or the destination computer can be found in the hosts ﬁle 
+on your computer, the destination computer’s name, rather than the IP address, will show up in 
+either the Local Address or Foreign Address column. 
+
+Note 
+ 
+Figure 5.28: netstat output (Lammle, 2022) 
+ 
+The Proto column lists the protocol being used. You can see that I’m connected to my Exchange 
+server and an FTP server and that I have some HTTP sessions open; by the way, all of them use 
+TCP at the Transport layer. The Local Address column lists the source address and the source port 
+(source socket). The Foreign Address column lists the address of the destination machine (the 
+hostname if it’s been resolved). If the destination port is known, it will show up as the well-known 
+port. In the previous output, you see http instead of port 80 and ftp instead of port 21. The State 
+column indicates the status of each connection. This column shows statistics only for TCP 
+connections because User Datagram Protocol (UDP) establishes no virtual circuit to the remote 
+device. Usually, this column indicates ESTABLISHED when a TCP connection between your 
+computer and the destination computer has been established. All sessions eventually time out 
+and then close, and you can see that I have all of these listed in my netstat output. 
+ 
+The output of the netstat utility depends on the switch. By using the netstat /? command, we can 
+see the options available to us. 
+
+C:\Users\tlammle>netstat /? 
+All of the netstat switch options are listed in Table 5.7. 
+ 

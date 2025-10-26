@@ -1,0 +1,18 @@
+s more 
+obvious. Fortunately, any program that can be written recursively also can be written iteratively.  
+  
+As a general rule, if you think an iterative solution is at least as obvious and easy to construct as a recursive 
+solution, choose the iterative solution. On the other hand, if the recursive solution is more obvious and 
+easier to construct, such as the solution to the Towers of Hanoi problem, choose the recursive solution.  
+  
+If you question the existence of problems for which a recursive solution is more obvious and easier to 
+construct than an iterative solution, attempt to solve the Towers of Hanoi problem without using 
+recursion. You’ll quickly gain an increased appreciation for recursion. The ability to write recursive 
+solutions is an important programming skill.   
+  
+ 
+4.4  
+Recursion and Backtracking: 8-Queens Puzzle  
+  
+This section describes a problem-solving and algorithm design technique called backtracking. Let us 
+consider the following 8-queens puzzle: P

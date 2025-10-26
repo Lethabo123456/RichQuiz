@@ -1,0 +1,31 @@
+Choosing the smoothing bandwidth 
+ 
+Much like with the bin size in the histogram, the ability of the KDE to accurately represent the data depends on the 
+choice of smoothing bandwidth. An over-smoothed estimate might erase meaningful features, but an under-
+smoothed estimate can obscure the true shape within random noise. The easiest way to check the robustness of the 
+estimate is to adjust the default bandwidth. 
+ 
+Conditioning on other variables 
+ 
+As with histograms, if you assign a hue variable, a separate density estimate will be computed for each level of that 
+variable. 
+
+Plotting joint and marginal distributions 
+ 
+The first is jointplot(), which augments a bivariate relational or distribution plot with the marginal distributions 
+of the two variables. By default, jointplot() represents the bivariate distribution using scatterplot() and the 
+marginal distributions using histplot(). 
+ 
+Similar to displot(), setting a different kind="kde" in jointplot() will change both the joint and marginal plots 
+the use kdeplot(). 
+ 
+Jointplot() is a convenient interface to the JointGrid class, which offeres more flexibility when used directly. 
+ 
+Plotting many distributions 
+
+The pairplot() function offers a similar blend of joint and marginal distributions. Rather than focusing on a single 
+relationship, however, pairplot() uses a “small-multiple” approach to visualize the univariate distribution of all 
+variables in a dataset along with all of their pairwise relationships. 
+  
+As with jointplot()/JointGrid, using the underlying PairGrid directly will afford more flexibility with only a bit 
+more typing.

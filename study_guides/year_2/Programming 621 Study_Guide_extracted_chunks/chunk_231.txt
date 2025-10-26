@@ -1,0 +1,41 @@
+cessed. How do we ensure that when p is destroyed, the dynamic 
+memory created by p is also destroyed? Suppose that objectOne is as shown in Figure 
+below. 
+ 
+ 
+Therefore, we can put the necessary code in the destructor to ensure that when 
+objectOne goes out of scope, the memory created by the pointer p is deallocated. For 
+example, the definition of the destructor for the class ptrMemberVarType is: 
+ 
+ptrMemberVarType::~ptrMemberVarType()  
+{ 
+
+212 | P a g e  
+ 
+ delete [] p; 
+ } 
+ 
+Of course, you must include the destructor as a member of the class in its definition. 
+Let us extend the definition of the class ptrMemberVarType by including the destructor. 
+Moreover, the remainder of this section assumes that the definition of the destructor 
+is as given previously—that is, the destructor deallocates the memory space pointed 
+to by p. 
+ 
+class ptrMemberVarType  
+{ 
+ public:  
+~ptrMemberVarType(); 
+ . . . 
+   private: 
+ int x; 
+ int lenP; 
+ int *p;  
+}; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Inline Functions

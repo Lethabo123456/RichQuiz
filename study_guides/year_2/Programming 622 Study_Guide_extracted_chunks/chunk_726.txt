@@ -1,0 +1,14 @@
+deleting) a node from an AVL tree, the resulting binary tree must be an AVL 
+tree. Next, we describe these operations.  
+  
+ 
+9.7.1  Insertion  
+  
+To insert an item in an AVL tree, first we search the tree and find the place where the new item is to be 
+inserted. Because an AVL tree is a binary search tree, to find the place for the new item we can search the 
+AVL tree using a search algorithm similar to the search algorithm designed for binary search trees. If the 
+item to be inserted is already in the tree, the search ends at a nonempty subtree. Because duplicates are 
+not allowed, in this case we can output an appropriate error message. Suppose that the item to be 
+inserted is not in the AVL tree. Then, the search ends at an empty subtree and we insert the item in that 
+subtree. After inserting the new item in the tree, the resulting tree might not be an AVL tree. Thus, we 
+must restore the tree’s balance criteria. This is accomplished by traveling the same path, back to the root

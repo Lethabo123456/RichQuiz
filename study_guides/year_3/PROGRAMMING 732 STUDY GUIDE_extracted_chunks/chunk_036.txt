@@ -1,0 +1,30 @@
+//Demonstrate CardLayout 
+import java.awt.*; import 
+java.awt.event.*; import 
+java.applet.*;  
+/*  
+<applet code = “CardLayoutDemo” width = 300 height 
+= 100>  
+<applet> */  
+public class CardLayoutDemo extends Applet implements 
+ActionListener, MouseListener {  
+CheckBox Win98, WinNT, solaris, mac;  
+Panel osCards;  
+CardLayout cardLO;  
+Button Win, Other;  
+Public void init () {  
+Win = new Button(“Windows”); 
+Other = new Button(“Other”); 
+add(win); add(other);  
+cardLO = new CardLayout(); osCards 
+= new Panel();  
+osCards.SetLayout(CardLO); //set panel layout to 
+card layout  
+Win98 = new Checkbox (“Windows = 98”, null, true);  
+WinNT = new Checkbox (“Windows NT/2000”);  
+Solaris = new Checkbox(“Solaris”);  
+Mac = new Checkbox(“MacOS”); //add 
+Windows check boxes to a panel  
+panel winPan = new Panel();  
+WinPan.add(Win98);  
+WinPan.add(winNT);  

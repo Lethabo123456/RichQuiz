@@ -1,0 +1,12 @@
+1, 5), (2, 4), (4, 3), (5, 6), (6, 8),  
+(7, 3), (7, 8), (8, 10), (9, 4), (9, 7), (9, 10)}  
+  
+Let G be an undirected graph. Let u and v be two vertices in G. Then u and v are called adjacent if there is 
+an edge from one to the other; that is, (u, v)  E. An edge incident on a single vertex is called a loop. If two 
+edges, e1 and e2, are associated with the same pair of vertices {u, v}, then e1 and e2 are called parallel 
+edges. A graph is called a simple graph if it has no loops and no parallel edges. Let e = (u, v) be an edge in 
+G. We then say that edge e is incident on the vertices u and v. The degree of u, written deg(u) or d(u), is 
+the number of edges incident with u. We make the convention that each loop on a vertex u contributes 2 
+to the degree of u. u is called an even (odd) degree vertex if the degree of u is even (odd). There is a path 
+from u to v if there is a sequence of vertices u1, u2, . . ., un such that u = u1, un = v and (ui, ui+1) is an edge 
+for all i = 1, 2, .

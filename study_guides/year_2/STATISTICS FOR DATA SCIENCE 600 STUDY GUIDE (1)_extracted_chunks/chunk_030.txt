@@ -1,0 +1,48 @@
+The trick is to create value by extracting the right information from both internal and external 
+data sources. That is what the science of data and art of business analytics needs to learn to 
+extract from larger and larger sets of unstructured data. 
+Quantitative vs Qualitative Data 
+Primary data is the data acquired by the researcher to address the problem at hand, which is 
+classified as qualitative data and quantitative data. Qualitative data is a data concerned with 
+descriptions, which can be observed but cannot be computed. 
+On the contrary, quantitative data is the one that focuses on numbers and mathematical 
+calculations and can be calculated and computed. 
+These data types are used in several fields like marketing, sociology, business, public health 
+and so on. 
+  
+Example – world alcohol consumption data 
+The World Health Organization released a dataset describing the average drinking habits of 
+people in countries across the world. We will use Python and the data exploration tool, 
+Pandas, to gain a better look: 
+
+import pandas as pd 
+# Read in the CSV file from a URL 
+drinks = pd.read_csv('https://raw.githubusercontent.com/sinanuozdemir/ 
+principles_of_data_science/master/data/chapter_2/drinks.csv') 
+# Examine the data's first five rows 
+drinks.head() # print the first 5 rows 
+
+These three lines have done the following: 
+• Imported pandas, which will be referred to as pd in the future 
+• Read in a CSV (comma separated value) file as a variable called drinks 
+• Called a method, head, that reveals the first five rows of the dataset  
+• country: Qualitative 
+• beer_servings: Quantitative 
+• spirit_servings: Quantitative 
+• wine_servings: Quantitative 
+• total_litres_of_pure_alcohol: Quantitative 
+• continent: Qualitative 
+
+Let's look at the qualitative column continent. We can use Pandas to get some basic summary 
+statistics about this non-numerical characteristic. The describe () method is being used here, 
+which first identifies whether the column is likely quantitative or qualitative and then gives 
+basic information about the column. This is shown as follows: 
+drinks['continent']. describe () >> count 193 >> unique 5 >> top AF >> freq 53 
+It reveals that the WHO has gathered data about five unique continents, the most frequent 
+being AF (Africa), which occurred 53 times in the 193 observations. 
+If we look at one of the quantitative columns and call the same method, we can see the 
+difference in output, as shown: 
+drinks ['beer servings']. describe() >> mean 106.160622 >> min 0.000000 >> max 376.000000 
+Now we can look at the mean (average) beer serving per-person per-country (106.2 servings) 
+as well as the lowest beer serving, zero, and the highest beer serving recorded, 376 (that's 
+more than a beer a day 

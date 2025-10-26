@@ -1,0 +1,30 @@
+Vertical Tangent Line 
+A function is not differentiable at 𝑎 if its graph has a vertical tangent line at 𝑎. 
+The tangent line to the curve becomes steeper as 𝑥 approaches 𝑎 until it 
+becomes a vertical line. Since the slope of a vertical line is undefined, the 
+function is not differentiable in this case. 
+ 
+Corner 
+A function is not differentiable at a if its graph has a corner or kink at a. As x 
+approaches the corner from the left- and right-hand sides, the function 
+approaches two distinct tangent lines. Since the function does not approach 
+the same tangent line at the corner from the left- and right-hand sides, the 
+function is not differentiable at that point. The graph to the right illustrates a 
+corner in a graph.
+
+4.4 Differentiation 
+Taking limits to find the derivative of a function can be very tedious and 
+complicated. The formulas listed below will make differentiating much easier. 
+Each formula is expressed in the regular notation as well as Leibniz notation. 
+Constant Rule If 𝑓 is a constant function, where 𝑓(𝑥) = 𝑐, then
+  
+(𝑐)′ = 0   or  𝑑/𝑑𝑥 (𝑐) = 0 
+
+Power Rule 
+If 𝑓 is a power function, where 𝑓(𝑥)  = 𝑥𝑛 and 𝑛 is a real number, then, 
+𝑓′(𝑥) = 𝑛𝑥𝑛−1  or 𝑑/𝑑𝑥 (𝑥𝑛) = 𝑛𝑥𝑛−1 
+
+Constant Multiple Rule 
+If 𝑓 is a differentiable function and c is a constant, then, 
+[𝑐𝑓(𝑥)]′ = 𝑐𝑓′(𝑥)  or  𝑑/𝑑𝑥 𝑐𝑓(𝑥) = 𝑐 𝑑/𝑑𝑥𝑓(𝑥)
+

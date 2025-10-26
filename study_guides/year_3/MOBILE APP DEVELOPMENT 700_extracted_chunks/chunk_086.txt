@@ -1,0 +1,26 @@
+The hardware/virtual buttons provided by Android devices either have an effect on your app or can 
+be used to extend the functionality of your app. In either case, it is important to plan for the effect of 
+these buttons when designing your app. 
+ 
+iOS 
+The primary hardware button of concern on iOS devices is the Home button. This button immediately 
+moves any app presently running to the background. The viewWillDisappear(), applicationWillResignActive(), and applicationDidEnterBackground() 
+methods will all be called. Plan your app so that this action will not cause problems. 
+Both Android and iOS have a button that puts the device to sleep or reboots it. This action also must 
+be handled. Fortunately, the same methods that put the app in the background for other actions are 
+executed, so typically no additional programming is required to prepare for this. 
+
+1.5 Introducing Your First App 
+
+To learn both Android and iOS design and development, you will build the same app on each platform. 
+Building the same app on both platforms is useful for understanding differences and similarities 
+between the platforms. The app you will build is called MyContactList. Building a contact list app is a 
+good way to learn mobile development for two reasons: First, its purpose and function are generally 
+understood, so a significant part of any application development effort (understanding the functional 
+requirements) does not need to be explained. Second, a contact list app requires utilizing many basic 
+and advanced features of mobile development; therefore it is very useful in providing a context for 
+learning these concepts. 
+
+The MyContactList app consists of four different screens. Each screen is used to illustrate basic app 
+development concepts you will use in almost any subsequent app you develop. In addition, you’ll learn 
+how to navigate between screens in an app. 

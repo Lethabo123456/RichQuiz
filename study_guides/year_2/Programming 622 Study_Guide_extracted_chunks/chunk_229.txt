@@ -1,0 +1,23 @@
+ered Linked List  
+  
+For the sake of completeness, we show how to create the header file that defines the class 
+unorderedListType and the operations on such lists. (We assume that the definition of the class 
+linkedListType and the definitions of the functions to implement the operations are in the header file 
+linkedList.h.)  
+  
+#ifndef H_UnorderedLinkedList  
+#define H_UnorderedLinkedList  
+//***********************************************************  
+// This class specifies the members to implement the 
+basic // properties of an unordered linked list. This class is 
+// derived from the class linkedListType.  
+//***********************************************************  
+#include "linkedList.h" using 
+namespace std; template 
+<class Type>  
+class unorderedLinkedList: public linkedListType<Type>  
+{ public:  
+bool search(const Type& searchItem) const;  
+//Function to determine whether searchItem is in the list. 
+//Postcondition: Returns true if searchItem is in the list, // 
+ot

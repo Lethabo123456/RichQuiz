@@ -1,0 +1,20 @@
+able to:   
+   
+• 
+Demonstrate their understanding of saving state in PHP in order to write powerful and 
+persistent web applications that can remember session information between page views.   
+• 
+Create cookies, read cookies and delete cookies.   
+• 
+Understand PHP’s session-handling functionalities enabling them to create, sustain and 
+destroy sessions as needed.   
+   
+   
+Because of the fact that HTTP is a stateless protocol, most of the PHP scripts you created in previous 
+chapters are very much one-shot affairs. Each time they run, they start with a “ clean slate ” of 
+variables and other data. This is because each request that a browser makes to a Web server is 
+independent of any previous requests. When a Web server receives a request to run a PHP script, it 
+loads the script into its memory, runs it, then removes all trace of it from memory.   
+   
+However, most of the Web applications you use today have a need to store data between browser 
+requests. For example, a shopping

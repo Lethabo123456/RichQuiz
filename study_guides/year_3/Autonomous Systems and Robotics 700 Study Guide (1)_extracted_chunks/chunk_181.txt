@@ -1,0 +1,28 @@
+5.1.1 Agent-based Software Architecture Design 
+The architectural design of these agents follows established software engineering principles 
+adapted for distributed autonomous systems. Agent-based software architecture design 
+emphasizes modularity, encapsulation, and clear interfaces that enable individual agents to 
+operate independently while maintaining the ability to interact seamlessly with other system 
+
+components. This architectural approach typically implements a layered structure where low-
+level reactive behaviours handle immediate sensor-motor coordination, intermediate 
+deliberative layers manage goal-directed planning and decision-making, and high-level social 
+layers handle communication and coordination with other agents. 
+In practical robotic implementations, particularly those utilizing the Robot Operating System 
+(ROS), agents are typically structured as collections of interconnected nodes that communicate 
+through well-defined interfaces. Each ROS node represents a specific functional component of 
+the agent, such as sensor processing, motion planning, or communication management, creating 
+a modular architecture that facilitates development, testing, and maintenance. This node-based 
+architecture enables agents to be composed from reusable components while maintaining the 
+flexibility to customize behaviour for specific applications or environmental conditions. 
+Agent Architecture Diagram:
+
+Agentic AI Architecture(Matthews, 2018) 
+The environment represents the shared operational space where all agents exist and interact, 
+serving as both the medium through which agents perceive information and the canvas upon 
+
+which they execute their actions. This environment can be physical, such as a warehouse floor 
+where multiple robots navigate and perform tasks, or virtual, such as a simulation space where 
+software agents process data and make decisions. The environment is not merely a passive 
+backdrop but an active component that influences agent behaviour through its dynamic 
+properties, constraints, and feedback mechanisms.

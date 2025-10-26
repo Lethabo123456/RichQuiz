@@ -1,0 +1,20 @@
+1.4.1 Predicates 
+Statements involving variables, such as 
+“𝑥 >  3, ” “𝑥 =  𝑦 +  3, ” “𝑥 +  𝑦 =  𝑧, ” 
+and 
+“computer 𝑥 is under attack by an intruder,” 
+and 
+“computer 𝑥 is functioning properly,” 
+
+are often found in mathematical assertions, in computer programs, and in 
+system specifications. These statements are neither true nor false when the 
+values of the variables are not specified. In this section, we will discuss the 
+ways that propositions can be produced from such statements. The 
+statement “𝑥 is greater than 3” has two parts. The first part, the variable 𝑥, 
+is the subject of the statement. The second part—the predicate, “is greater 
+than 3”—refers to a property that the subject of the statement can have.We 
+can denote the statement “𝑥 is greater than 3” by 𝑃(𝑥), where P denotes 
+the predicate “is greater than 3” and 𝑥 is the variable. The statement 𝑃(𝑥) 
+is also said to be the value of the propositional function P at 𝑥. Once a value 
+has been assigned to the variable 𝑥, the statement 𝑃(𝑥) becomes a 
+proposition and has a truth value. Consider the following examples. 

@@ -1,0 +1,20 @@
+he output file; Line 2 
+ 
+Step 4  
+You use the file stream variables with >>, <> or << with file stream variables is exactly 
+the same as the syntax for using cin and cout. Instead of using cin and cout, however, 
+you use the file stream variable names that were declared. For example, the 
+statement: 
+ 
+inData >> payRate; 
+reads the data from the file prog.dat and stores it in the variable payRate. The 
+statement: 
+outData << "The paycheck is: $" << pay << endl; 
+stores the output—The paycheck is: $565.78—in the file prog.out. This statement 
+assumes that the pay was calculated as 56 
+ 
+Once the I/O is complete, Step 5 requires closing the files. Closing a file means that 
+the file stream variables are disassociated from the storage area and are freed. Once 
+these variables are freed, they can be reused for other file I/O. Moreover, closing an 
+output file ensures that the entire output is sent to the file; that is, the buffer is emptied. 
+You close files by using the stream function c

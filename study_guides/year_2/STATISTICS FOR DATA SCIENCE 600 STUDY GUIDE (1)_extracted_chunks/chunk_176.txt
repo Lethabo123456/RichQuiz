@@ -1,0 +1,12 @@
+We see how we have two humps. On the left, we have our larger hump of people who take 
+about a 15-minute break, and on the right, we have a smaller hump of people who take longer 
+breaks. Later, we will investigate this graph further. 
+We can find the total average break length by running the following code: 
+breaks.mean()  # 39.99 minutes is our parameter. 
+Our average company break length is about 40 minutes. Remember that our population is the 
+entire company's employee size of 9,000 people, and our parameter is 40 minutes. In the real 
+world, our goal would be to estimate the population parameter because we would not have 
+the resources to ask every single employee in a survey their average break length for many 
+reasons. Instead, we will use a point estimate. 
+To make our point, we want to simulate a world where we ask 100 random people about the 
+length of their breaks. To do this, let's take a random sample of 100 employees out of

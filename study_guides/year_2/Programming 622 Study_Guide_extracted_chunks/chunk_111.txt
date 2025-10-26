@@ -1,0 +1,44 @@
+on. for (int i = 1; i <= n; i++) for (int j = 1; j 
+<= n; j++) for (int k = 1; k <= n; k++)  
+cout << i + j + k;  
+  
+14. Find the syntax errors in the definitions of the following classes: a. class AA  
+{ public: void print(); int 
+sum();  
+AA(); int 
+AA(int, int); private: 
+int x; int y;  
+};  
+  
+b. class BB  
+{ int one ; int two; 
+public: bool equal(); 
+print(); BB(int, int);  
+}  
+  
+c. class CC  
+{ public; void set(int, int); void 
+print(); CC(); CC(int, 
+int); bool CC(int, int); 
+private: int u;  
+
+50  
+  
+int v;  
+};   
+15. Consider the following declarations: class 
+xClass  
+{ public: void func(); void print() 
+const; xClass (); xClass (int, 
+double); private:  
+int u;  
+double w;  
+};  
+  
+xClass x;  
+  
+a. How many members does class xClass have?  
+b. How many private members does class xClass have?  
+c. How many constructors does class xClass have?  
+d. Write the definition of the member function func so that u is set to 10 and w is set to 15.3.  
+e. Write the definition of

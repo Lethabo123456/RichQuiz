@@ -1,0 +1,35 @@
+The truth table for p NOR q (also written as p ↓ q, Xpq, or p ⊥ q) is as follows:
+
+Logical NOR 
+p   q   p ↓ q
+-------------- 
+T   T   F 
+--------------
+T   F   F 
+--------------
+F   T   F 
+--------------
+F   F   T  
+--------------
+
+The negation of a disjunction ¬(p ∨ q), and the conjunction of negations 
+(¬p) ∧ (¬q) can be tabulated as follows: 
+ 
+p   q   p ∨ q   ¬(p ∨ q)   ¬p   ¬q   (¬p) ∧ (¬q)
+--------------------------------------------------- 
+T   T   T       F          F    F     F
+--------------------------------------------------- 
+T   F   T       F          F    T     F 
+---------------------------------------------------
+F   T   T       F          T    F     F 
+---------------------------------------------------
+F   F   F       T          T    T     T
+---------------------------------------------------
+ 
+Inspection of the tabular derivations for NAND and NOR, under each assignment 
+of logical values to the functional arguments p and q, produces the identical 
+patterns of functional values for ¬(p ∧ q) as for (¬p) ∨ (¬q), and for ¬(p ∨ q) as for 
+(¬p) ∧ (¬q). Thus the first and second expressions in each pair are logically 
+equivalent, and may be substituted for each other in all contexts that pertain 
+solely to their logical values. 
+This equivalence is one of De Morgan's laws.

@@ -1,0 +1,26 @@
+6.5 Release Testing  
+Release testing is the process of testing a particular release of a system that is intended for use 
+outside of the development team. Normally, the system release is for customers and users. In a 
+complex project, however, the release could be for other teams that are developing related 
+systems. For software products, the release could be for product management who then prepare 
+it for sale. 
+ 
+There are two important distinctions between release testing and system testing during the 
+development process: 
+
+• The system development team should not be responsible for release testing. 
+• Release testing is a process of validation checking to ensure that a system meets its 
+requirements and is good enough for use by system customers. System testing by the 
+development team should focus on discovering bugs in the system. 
+ 
+The primary goal of the release testing process is to convince the supplier of the system that it is 
+good enough for use. If so, it can be released as a product or delivered to the customer. Release 
+testing, therefore, has to show that the system delivers its specified functionality, performance, 
+and dependability, and that it does not fail during normal use. 
+ 
+Release testing is usually a black-box testing process whereby tests are derived from the system 
+specification. The system is treated as a black box whose behavior can only be determined by 
+studying its inputs and the related outputs. Another name for this is functional testing, so-called 
+because the tester is only concerned with functionality and not the implementation of the 
+software. 
+ 

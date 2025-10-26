@@ -1,0 +1,24 @@
+);   
+rewind( $handle );   
+   
+The ftell() function takes a file handle and returns the current offset (in characters) of the 
+corresponding file pointer from the start of the file. For example:   
+   
+$offset = ftell( $handle );   
+   
+As you saw earlier, the fpassthru() function outputs file data from the current file position onward. If 
+you have already read data from an open file but want to output the file’s entire contents, call 
+rewind() first.   
+   
+   
+3.14 Copying, Renaming And Deleting Files   
+PHP also lets you copy, rename, and delete files. The functions to perform these operations are 
+copy(), rename() , and unlink() , respectively.   
+   
+
+55   
+   
+The copy() function takes two string arguments: the first argument is the path to the file to copy,  
+and the second argument is the path to copy it to. It returns true if the file was successfully copied, 
+or false if there was a problem copying the file. The following example copies the source file 
+copyme.txt to the de

@@ -1,0 +1,16 @@
+s massive data stores of multiple formats in cost-effective 
+ways. Some of the most speed, fault-tolerant frequently used Big Data technologies are:  
+ 
+Hadoop is a Java-based, open-source, high-speed, fault-tolerant distributed storage and 
+computational framework which uses low-cost hardware to create clusters of thousands of 
+computer nodes to store and process data.  
+ 
+Hadoop Distributed File System (HDFS) is a highly distributed, fault-tolerant file storage 
+system designed to manage large amounts of data at high speeds. In order to achieve high 
+throughput, HDFS uses the write-once, read many model. This means that once the data is 
+written, it cannot be modified.  
+ 
+MapReduce is an open-source application programming interface (API) that provides fast 
+data analytics services. MapReduce distributes the processing of the data among thousands 
+of nodes in parallel. MapReduce works with structured and non-structured data. Although 
+MapReduce itself is viewed as fairly limited

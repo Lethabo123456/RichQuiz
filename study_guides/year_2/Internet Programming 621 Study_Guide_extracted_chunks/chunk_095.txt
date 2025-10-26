@@ -1,0 +1,20 @@
+world!”;  
+echo strstr( $myString, “wor” ) . “ < br / > ”; // Displays ‘world!’  
+echo ( strstr( $myString, “xyz” ) ? “Yes” : “No” ) . “ < br / > ”; // Displays ‘No’  
+  
+As of PHP 5.3, you can also pass an optional third Boolean argument. The default value is false . If 
+you  
+pass in a value of true , strstr() instead returns the portion from the start of the string to 
+the character before the found text:  
+  
+$myString = “Hello, world!”; echo strstr( $myString, 
+“wor”, true ); // Displays ‘Hello, ‘  
+  
+4.8 Locating text with strpos() And strrpos()  
+To find out exactly where a string of text occurs within another string, use strpos() . This function 
+takes the same two parameters as strstr() : the string to search, and the search text to look for. If 
+the text is found, strpos() returns the index of the first character of the text within the string. If it is 
+not found, strpos() returns false :  
+  
+$myString = “Hello, world!”;  
+echo strpos( $myString, “wor” ); // Displays ‘7’

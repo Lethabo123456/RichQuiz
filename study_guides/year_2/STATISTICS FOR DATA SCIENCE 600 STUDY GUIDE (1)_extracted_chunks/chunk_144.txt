@@ -1,0 +1,38 @@
+Measures of variation 
+ 
+Measures of centre are used to quantify the middle of the data, but now we will explore ways 
+of measuring how "spread out" the data we collect is. This is a useful way to identify if our 
+data has many outliers lurking inside. Let's start with an example. 
+Consider that we take a random sample of 24 of our friends on Facebook and wrote down 
+how many friends that they had on Facebook. Here's the list: 
+friends = [109, 1017, 1127, 418, 625, 957, 89, 950, 946, 797, 981, 125, 455, 731, 1640, 
+485, 1309, 472, 1132, 1773, 906, 531, 742, 621] np.mean(friends) == 789.1 
+The average of this list is just over 789. So, we could say that according to this sample, the 
+average Facebook friend has 789 friends. But what about the person who only has 89 
+friends or the person who has over 1,600 friends? In fact, not a lot of these numbers are 
+that close to 789. Well, how about we use the median, as shown, because the median 
+generally is not as affected by outliers: np.median(friends) == 769.5 
+The median is 769.5, which is close to the mean. Hmm, good thought, but still, it doesn't really 
+account for how drastically different a lot of these data points are to one another. This is what 
+statisticians call measuring the variation of data. Let's start by introducing the most basic 
+measure of variation: the range. The range is simply the maximum value minus the minimum 
+value, as illustrated: 
+
+np.max(friends) – np.min(friends) == 1684 
+
+The range tells us how far away the two most extreme values are. Now, typically, the range 
+isn't widely used but it does have its use in application. Sometimes we wish to just know how 
+spread apart the outliers are. This is most useful in scientific measurements or safety 
+measurements. 
+
+Suppose a car company wants to measure how long it takes for an air bag to deploy. Knowing 
+the average of that time is nice, but they also really want to know how spread apart the 
+slowest time is versus the fastest time. This literally could be the difference between life and 
+death. 
+Shifting back to the Facebook example, 1,684 is our range, but I'm not quite sure it's saying 
+too much about our data. Now, let's look at the most used measure of variation, the standard 
+deviation. 
+I'm sure many of you have heard this term thrown around a lot and it might even incite a 
+degree of fear, but what does it really mean? In essence, standard deviation, denoted by s 
+when we are working with a sample of a population, measures how much data values deviate 
+from the arithmetic mean. 

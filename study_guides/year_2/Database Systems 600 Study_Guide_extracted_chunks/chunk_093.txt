@@ -1,0 +1,14 @@
+f creating a conceptual data 
+model that could be implemented in any DBMS. 
+The Internal Model 
+The internal model is the representation of the database as “seen” by the DBMS, it maps the 
+conceptual model to the DBMS. An internal schema depicts a specific representation of an internal 
+model, using the database constructs supported by the chosen database.  
+Because this course focuses on the relational model, a relational database was chosen to implement 
+the internal model. Therefore, the internal schema should map the conceptual model to the relational 
+model constructs. In particular, the entities in the conceptual model are mapped to tables in the 
+relational model. Likewise, because a relational database has been selected, the internal schema is 
+expressed using SQL, the phase that matches standard language for relational databases. A simplified 
+version of the internal model for Tiny College is shown in Figure 2.9. 
+ 
+Contrary to the hierarchical and network models the relationa

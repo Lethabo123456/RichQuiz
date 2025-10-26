@@ -1,0 +1,53 @@
+overed in the chapter.   
+   
+ Mini-Project Self-Assessment Exercise   
+   
+A directory may hold subdirectories as well as files. Create a script that traverses a directory 
+hierarchy and lists all the files and subdirectories under a given directory — including subdirectories 
+of subdirectories, and so on.   
+   
+HINT: This is one instance where you need to apply the technique of Recursion as you have learnt 
+early on. Include a recursive function, which behaves as follows:   
+1. 
+Read the entries in the current directory.   
+2. 
+If the next entry is a file, display its name.   
+3. 
+If the next entry is a subdirectory, display its name, then call the function recursively to read 
+the entries inside it.   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+61   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+4. DATABASES AND STRUCTURED QUERY LANGUAGE  [SQL]   
+   
+Section Outcomes   
+At the end of this section of the syllabus, the learner should be able to:

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ module_name }} ({{ module_code }}) Quiz</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+  {% set css_map = {
+    1: 'programming_python',
+    2: 'information_system_511-512',
+    3: 'web_technology',
+    4: 'networks_511-512',
+    5: 'mathematics_511-512',
+    6: 'data_science',
+    7: 'information_system_621-622',
+    8: 'programming_c++',
+    9: 'database_systems',
+    10: 'cloud_computing',
+    11: 'internet_programming_php',
+    12: 'data_manipulation',
+    13: 'business_analysis',
+    14: 'computer_architecture',
+    15: 'stats_for_ds',
+    16: 'server_technology',
+    17: 'matchine_learning_600',
+    18: 'big_data_IOT',
+    19: 'software_engineering',
+    20: 'programming_java',
+    21: 'cyber_security',
+    22: 'machine_learning_700',
+    23: 'MAD',
+    24: 'AI',
+    25: 'HCI',
+    26: 'ASR_700',
+    27: 'programming_C#',
+    28: 'networks_731-732',
+    29: 'operating_system_700',
+    30: 'ISM_731-732'
+  } %}
+  {% if module_id in css_map %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/' ~ css_map[module_id] ~ '.css') }}">
+  {% endif %}
+</head>
+
+<body class="module-style-{{ module_code|lower|replace('/', '')|replace(' ', '-') }}">
+  <div class="container">
+    <h2>{{ module_name }} ({{ module_code }}) Quiz</h2>
+
+    <form method="POST" action="{{ url_for('quiz.quiz_question') }}" id="quiz-form">
+      <div class="question-container">
+        <p><strong>Question {{ current_index }} of {{ total }}</strong></p>
+        <div id="question-text">
+          {{ question.text | safe if question.text else "⚠ No question text available." }}
+        </div>
+      </div>
+
+      <ul class="options-list">
+        {% for label, option_text in question.options.items() %}
+          {% if option_text %}
+          <li>
+            <label class="option-label">
+              <input
+                type="radio"
+                name="option"
+                value="{{ label }}"
+                {% if request.method == 'POST' and request.form.get('option') == label %}checked{% endif %}
+                required
+              />
+              <span class="option-text">{{ option_text|safe }}</span>
+            </label>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <!-- Hidden metadata inputs for backend -->
+      <input type="hidden" name="question_id" value="{{ question.id }}">
+      <input type="hidden" name="question_text" value="{{ question.text }}">
+      <input type="hidden" name="options_json" value="{{ question.options | tojson }}">
+      <input type="hidden" name="module_id" value="{{ module_id }}">
+      <input type="hidden" name="difficulty" value="{{ question.difficulty }}">
+      <input type="hidden" name="time_taken" id="time_taken">
+
+      {% if error %}
+        <p class="error-message">{{ error }}</p>
+      {% endif %}
+
+      <button type="submit" class="submit-btn">
+        {% if current_index == total %}
+          Submit Quiz
+        {% else %}
+          Next Question
+        {% endif %}
+      </button>
+    </form>
+
+    <a href="{{ url_for('main.index') }}" class="back-link">← Back to Dashboard</a>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      function formatCodeBlocks(element) {
+        const rawHTML = element.innerHTML;
+        const formatted = rawHTML.replace(/```([\s\S]*?)```/g, (match, code) => {
+          const escaped = code
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;");
+          return `<pre><code class="language-python">${escaped}</code></pre>`;
+        });
+        element.innerHTML = formatted;
+        Prism.highlightAllUnder(element);
+      }
+
+      const questionText = document.getElementById("question-text");
+      if (questionText) formatCodeBlocks(questionText);
+
+      const optionTexts = document.querySelectorAll(".option-text");
+      optionTexts.forEach(el => formatCodeBlocks(el));
+    });
+
+    if (!sessionStorage.getItem("quizStartTime")) {
+      sessionStorage.setItem("quizStartTime", Date.now());
+    }
+
+    document.getElementById("quiz-form").addEventListener("submit", function () {
+      const currentTime = Date.now();
+      const quizStart = parseInt(sessionStorage.getItem("quizStartTime")) || currentTime;
+      const timeTaken = Math.floor((currentTime - quizStart) / 1000);
+      document.getElementById("time_taken").value = timeTaken;
+    });
+  </script>
+</body>
+</html>

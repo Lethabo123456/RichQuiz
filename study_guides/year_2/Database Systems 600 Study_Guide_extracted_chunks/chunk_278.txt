@@ -1,0 +1,38 @@
+Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eight, page 360-366. 
+
+ 
+113 
+Creating Table Structures 
+Once the database has been created and the appropriate data types for each attribute have been 
+determined, it is time to create the actual database tables. Recall that when implementing the 
+database design, every entity becomes a table, and the attributes of each entity become the columns 
+in that table. 
+Now you are ready to implement the PRODUCT and VENDOR table structures with the help of 
+SQL, using the CREATE TABLE syntax shown next.  
+CREATE TABLE table-name ( 
+column1 
+ 
+data type 
+[constraint] [, 
+column2 
+ 
+data type 
+[constraint] [, 
+PRIMARY KEY 
+(column1 
+[, column2])] [, 
+FOREIGN KEY 
+(column1 
+[, column2]) REFERENCES table-name] [, 
+CONSTRAINT 
+constraint]); 
+The following examples that create VENDOR and PRODUCT tables, illustrate the CREATE 
+TABLE command.  
+Example 1 
+CREATE TABLE VENDOR ( 
+V_CODE  
+INTEGER 
+ 
+NOT NULL 
+UNIQU

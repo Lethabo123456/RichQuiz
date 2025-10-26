@@ -1,0 +1,18 @@
+1.6 Introduction to Proofs 
+
+Introduction 
+In this section we introduce the notion of a proof and describe methods for 
+constructing proofs. A proof is a valid argument that establishes the truth of 
+a mathematical statement. A proof can use the hypotheses of the theorem, 
+if any, axioms assumed to be true, and previously proven theorems. Using 
+these ingredients and rules of inference, the final step of the proof 
+establishes the truth of the statement being proved.  
+
+In our discussion we move from formal proofs of theorems toward more informal proofs. In practice, 
+the proofs of theorems designed for human consumption are almost always informal proofs, 
+where more than one rule of inference may be used in each 
+step, where steps may be skipped, where the axioms being assumed 
+and the rules of inference used are not explicitly stated. Informal proofs can 
+often explain to humans why theorems are true, while computers are 
+perfectly happy producing formal proofs using automated reasoning 
+systems. 

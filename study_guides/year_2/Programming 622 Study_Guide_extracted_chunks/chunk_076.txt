@@ -1,0 +1,35 @@
+ol clockType::equalTime(const clockType& otherClock) const  
+{  
+return (hr == otherClock.hr && 
+min == otherClock.min  
+&& sec == otherClock.sec);  
+}   
+Let us see how the member function equalTime works.  
+  
+Suppose that myClock and yourClock are objects of type clockType, as declared previously. Further 
+suppose that we have myClock and yourClock, as shown in Figure 1-7.  
+  
+  
+FIGURE 1-7 Objects myClock and yourClock  
+  
+Consider the following statement:  
+  
+if (myClock.equalTime(yourClock))  
+.  
+
+36  
+  
+.  
+.  
+In the expression  
+ myClock.equalTime(yourClock)  
+  
+the object myClock accesses the member function equalTime. Because otherClock is a reference 
+parameter, the address of the actual parameter yourClock is passed to the formal parameter otherClock, 
+as shown in Figure 1-8.  
+  
+  
+FIGURE 1-8 Object myClock and parameter otherClock  
+  
+The instance variables hr, min, and sec of otherClock have the values 14, 25, and 54, respectively. In other 
+words, when the body

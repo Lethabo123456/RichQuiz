@@ -1,0 +1,18 @@
+how to manipulate data in a two-dimensional array 
+• Learn about the pointer data type and pointer variables 
+• Explore how to declare and manipulate pointer variables 
+• Learn about the address of the operator and the dereferencing operator
+ 
+5.1 INTRODUCTION     
+Recall that prior to the ANSI/ISO C++ language standard, the Standard C++ library did 
+not provide a string data type. Compiler vendors often supplied their own programmer-
+defined string type, and the syntax and semantics of string operations often varied 
+from vendor to vendor. The data type string is a programmer-defined type and is not 
+part of the C++ language; the C++ standard library supplies it. Before using the data 
+type string, the program must include the header file string, as follows 
+ 
+#include <string> 
+Recall that in C++, a string is a sequence of zero or more characters, and strings are 
+enclosed in double quotation marks.  
+The statement:  
+string name = "William Jacob"; declares name to be a string variab

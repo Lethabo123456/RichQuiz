@@ -1,0 +1,15 @@
+1.2.4 Using identifiers 
+Identifiers are the names that you use to identify the elements in your programs, such as 
+namespaces, classes, methods, and variables. (You’ll learn about variables shortly.) In C#, you 
+must adhere to the following syntax rules when choosing identifiers:  
+
+• You can use only letters (uppercase and lowercase), digits, and underscore characters. 
+• An identifier must start with a letter or an underscore. Names can contain letters, 
+digits and the underscore character (_) 
+• Names should start with a lowercase letter, and cannot contain whitespace 
+• Reserved words (like C# keywords, such as int or double) cannot be used as names 
+ 
+For example, result, _score, footballTeam, and plan9 are all valid identifiers, whereas result%, 
+footballTeam$, and 9plan are not. C# is a case-sensitive language. For example, footballTeam 
+and FootballTeam are two different identifiers. Identifiers can be short names (like x and y) 
+or more descriptive names (age, sum, totalVolume). 

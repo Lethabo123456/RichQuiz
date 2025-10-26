@@ -1,0 +1,20 @@
+ent as headers in the response, setcookie() must be 
+called  before any of the body of the document is sent. The parameters of setcookie() are:   
+• 
+name: A unique name for a particular cookie. You can have multiple cookies with different 
+names and attributes. The name must not contain whitespace or semicolons.   
+   
+• 
+value: The arbitrary string value attached to this cookie. The original Netscape specification 
+limited the total size of a cookie (including name, expiration date, and other information) to 
+
+37   
+   
+4 KB, so while there’s no specific limit on the size of a cookie value, it probably cannot be 
+much larger than 3.5 KB.   
+   
+• 
+expire: The expiration date for this cookie. If no expiration date is specified, the browser 
+saves the cookie in memory and not on disk. When the browser exits, the cookie disappears. 
+The expiration date is specified as the number of seconds since midnight, January 1, 1970 
+(GMT). For example, pass time() + 60 * 60 * 2 to expire the cooki

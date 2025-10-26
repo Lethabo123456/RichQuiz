@@ -1,0 +1,26 @@
+6.8 Access Method 
+You’ve learned that the data link layer, speciﬁcally the MAC sublayer, is responsible for appending 
+physical addresses to a data frame and for governing multiple nodes’ access to a single medium. 
+Like 802.3 (Ethernet), 802.11 appends 48-bit physical addresses to a frame to identify its source 
+and destination. 
+
+The use of the same physical addressing scheme allows 802.11 networks to easily blend with 
+other IEEE 802 networks, including Ethernet (802.3) networks. However, 802.11 networks use a 
+diﬀerent access method than Ethernet networks do. Wireless devices are not designed to 
+transmit and receive simultaneously and so cannot prevent collisions. Instead, 802.11 standards 
+specify the use of CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) procedures 
+to access a shared medium. Compared with CSMA/CD (Carrier Sense Multiple Access with 
+Collision Detection), CSMA/CA minimizes the potential for collisions, but cannot detect the 
+occurrence of a collision and so cannot take steps to recover from the collisions that do occur.
+
+random amount of time and then sends its transmission. 
+• If the source does detect activity, it waits a brief period before checking the channel again. 
+ 
+Step 2: The destination node receives the transmission and, after verifying its accuracy, issues an 
+ACK (acknowledgment) packet to the source. 
+• If the source receives this acknowledgment, it assumes the transmission was properly 
+completed. 
+• Interference or other transmissions on the network could impede this exchange. If, after 
+transmitting a message, the source node fails to receive acknowledgment from the 
+destination node, it assumes its transmission did not arrive properly, and it begins the 
+CSMA/CA process anew.

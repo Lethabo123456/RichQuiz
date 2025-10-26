@@ -1,0 +1,23 @@
+the first node in the list. As you know, a 
+sequential search is good only for very small lists because the average search length of a sequential search 
+is half the size of the list.  
+  
+ 
+9.1  
+Binary Trees  
+  
+This chapter discusses how to dynamically organize data so that item insertion, deletion, and lookups are 
+more efficient.  
+  
+We first introduce some definitions to facilitate our discussion.  
+  
+Definition: A binary tree, T, is either empty or such that  
+  
+i. T has a special node called the root node.  
+ii. T has two sets of nodes, LT and RT, called the left subtree and right subtree of T, respectively.  
+iii. LT and RT are binary trees.  
+  
+A binary tree can be shown pictorially. Suppose that T is a binary tree with a root node A. Let LA denote 
+the left subtree of A and RA denote the right subtree of A. Now LA and RA are binary trees. Suppose that B 
+is the root node of LA and C is the root node of RA. B is called the left child of A; C is called the right child 
+of

@@ -1,0 +1,30 @@
+3.2 Types of Packet-Switching Networks 
+Packet switching is a WAN technology in which users share common carrier resources. 
+Because this allows the carrier to make more efficient use of its infrastructure, the cost to the 
+customer is generally much better than with point-to-point lines. In a packet switching setup, 
+networks have connections into the carrier's network, and many customers share the carrier's 
+network. The carrier can then create virtual circuits between customers' sites by which 
+packets of data are delivered from one to the other through the network. The section of the 
+carrier's network that is shared is often referred to as a cloud. 
+Some examples of packet-switching networks include Asynchronous Transfer Mode (ATM), 
+Frame Relay, Switched Multimegabit Data Services (SMDS), and X.25 Packets across a Carrier 
+Network shows an example packet-switched circuit. 
+The virtual connections between customer sites are often referred to as a virtual circuit. 
+ 
+ATM: A dedicated-connection switching technology that organizes digital data into 53-byte 
+cell units. Individually, a cell is processed asynchronously relative to other related cells and is 
+queued before being multiplexed over the transmission path. Speeds on ATM networks can 
+reach 10 Gbps.
+
+How it works Imagine a "universal" machine—one that can take in any materials, whether 
+they are delivered sporadically or in a constant stream and turn those materials into lookalike 
+packages. That's basically how ATM works at the intake end. It takes in streams of data, voice, 
+video…whatever…and packages the contents in uniform 53-byte cells. At the output end, ATM 
+sends its cells out onto a WAN in a steady stream for delivery. 
+That all seems simple enough, but now take a look at the "magic" of ATM in a little more 
+technical detail. To begin with, remember that ATM is designed to satisfy the need to deliver 
+multimedia. Well, multimedia covers a number of different types of information that have 
+different characteristics and are handled differently, both by the devices that work with them 
+and by higher-level networking protocols. Yet, in order to make use of ATM, something must 
+interface with the different devices and must package their different types of data. ATM 
+breaks data streams into fixed size cells and delivers them over a WAN.

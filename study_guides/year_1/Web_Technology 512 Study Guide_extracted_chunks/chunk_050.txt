@@ -1,0 +1,22 @@
+name. You do not actually need a space to the left 
+and right of the equal symbol, but it helps to make your code more readable. 
+ 
+Save your work and load your web page in a browser. You should find the following 
+written to your page: 
+42 
+true 
+Lungelo 
+ 
+So what just happened? Well, we stored three values in three variables. We retrieved 
+these values by just using the variable names. For example, if you had the code alert( 
+number1) the alert box would display the value 42, which we stored in the variable we 
+called number1. In other words, to get at the value itself, you just use the variable 
+name. 
+ 
+You can use concatenation with variable names. For example, you can do this: 
+document.write( "The variable has a value of: " + number1 
++ "<BR>"); 
+ 
+Here, we have combined the text "The variable has a value of: " with the variable 
+name number1. We did the combining (concatenation) with the plus symbol ( +). Try it 
+yourself. Amend your document.write code so that it looks like

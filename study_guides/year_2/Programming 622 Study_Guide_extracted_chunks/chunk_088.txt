@@ -1,0 +1,26 @@
+d the data member sec of clock3 is initialized to 0. 
+The data member hr of clock4 is initialized to 7, the data member min of clock4 is initialized to 34, and the 
+data member sec of clock4 is initialized to 18.  
+  
+  
+  
+  
+
+40  
+  
+Using these conventions, we can say that a constructor that has no parameters, or has all default 
+parameters, is called the default constructor.  
+  
+1.4.11 Destructors  
+  
+Like constructors, destructors are also functions. Moreover, like constructors, a destructor does not have 
+a type. That is, it is neither a value-returning function nor a void function. However, a class can have only 
+one destructor, and the destructor has no parameters. The name of a destructor is the tilde character (~), 
+followed by the name of the class. For example, the name of the destructor for the class clockType is:  
+~clockType();  
+  
+The destructor automatically executes when the class object goes out of scope.  
+  
+1.4.12 Structs  
+  
+Structs are a special type of clas

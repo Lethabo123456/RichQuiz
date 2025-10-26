@@ -1,0 +1,24 @@
+3.4 Virtualization Approach  
+Some approach in the implementation of virtualization are described below; 
+ 
+Full virtualization 
+Full virtualization uses a special kind of software called hypervisor. The hypervisor interacts directly 
+with the physical server’s hardware resources (such as CPU and storage space), and acts as a platform 
+for the virtual server’s OS. It helps to keep each virtual server completely independent and unaware 
+of the other virtual servers running on the physical machine. Each guest server or the virtual machine 
+is able to run its own OS.  Example is VirtualBox. A disadvantage of this virtualization is that overall 
+system performance may be affected due to binary translation.  
+  
+Para virtualization 
+In para virtualization, virtual machines do not simulate the underlying hardware, and this uses a 
+special API that a modified guest OS must use. Also, partial simulation of the underlying hardware 
+infrastructure is achieved. The guest OS is aware that it is running in a virtualized environment. 
+Hypercalls are used for direct communication between guest OS and the hypervisor. An advantage of 
+this approach is that it improves the overall system performance by eliminating the overhead of binary 
+translation, while a disadvantage could be that a modification of the guest OS is required. 
+
+Hardware-Assisted virtualization  
+In hardware-assisted virtualization, hardware products supporting the virtualization are used. 
+Hardware vendors like Intel and AMD have developed processors supporting the virtualization 
+through the hardware extension. An advantage of this approach is that it eliminates the overhead of 
+binary translation and paravirtualization, while a disadvantage is the lack of support from all vendors 

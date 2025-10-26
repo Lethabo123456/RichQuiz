@@ -1,0 +1,38 @@
+• Geometric Distribution: The geometric probability distribution is one of the crucial 
+types of continuous distributions that determine the probability of any event having 
+likelihood ‘p’ and will happen (occur) after 'n' number of Bernoulli trials. Here 'n' is a 
+discrete random variable. In this distribution, the experiment goes on until we 
+encounter either a success or a failure. The experiment does not depend on the 
+number of trials. 
+
+Here is a code example showing the use of Geometric Distribution –   
+ 
+• Poisson Distribution: Poisson distribution is one of the popular types of discrete 
+distribution that shows how many times an event has the possibility of occurrence in 
+a specific set of time. We can obtain this by limiting the Bernoulli distribution from 0 
+to infinity. Data analysts often use the Poisson distributions to comprehend 
+independent events occurring at a steady rate in a given time interval. 
+Here is a code example showing the use of Poisson Distribution   
+from scipy.stats import poisson 
+import seaborn as sb 
+import numpy as np 
+import matplotlib.pyplot as plt 
+def poissonDist(): 
+    plt.figure(figsize=(10, 10)) 
+    data_binom = poisson.rvs(mu=3, size=5000)  
+    ax = sb.histplot(data_binom, kde=False, color='g',  
+                     bins=np.arange(data_binom.min(), data_binom.max() + 1)) 
+    sb.kdeplot(data_binom, color='y', lw=4, label='KDE', ax=ax)    
+    ax.set(xlabel='Poisson Distribution', ylabel='Data Frequency') 
+    plt.show() 
+poissonDist()
+ax.set(xlabel='Poisson Distribution', ylabel='Data Frequency') 
+    plt.show() 
+poissonDist() 
+Output: 
+
+• Multinomial Distribution: A multinomial distribution is another popular type of 
+discrete probability distribution that calculates the outcome of an event having two 
+or more variables. The term multi means more than one. The Binomial distribution is 
+a particular type of multinomial distribution with two possible outcomes - true/false 
+or heads/tails. 

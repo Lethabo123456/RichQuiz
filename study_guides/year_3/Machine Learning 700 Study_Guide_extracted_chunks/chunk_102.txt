@@ -1,0 +1,34 @@
+Imagine a hobbyist botanist who wants to identify the species of iris flowers she has found. She has 
+recorded measurements for each iris, including the length and width of both the petals and the sepals, 
+all in centimeters. Additionally, she has measurements for some irises that have already been identified 
+by an expert botanist as belonging to the species setosa, versicolor, or virginica. For these, she is certain 
+of the species. Let's assume these are the only species the botanist will encounter in the wild. Our 
+objective is to develop a machine learning model that can learn from the known iris measurements so 
+that it can predict the species of new irises. We aim to build a machine learning model that can predict 
+the species of an iris based on new measurements. We can now begin building the machine learning 
+model. We will use a k-nearest neighbors (KNN) classifier, which is simple to understand. The process of 
+building this model mainly involves storing the training set. To predict the label for a new data point, the 
+algorithm identifies the training point that is closest to the new one and assigns its label to the new point. 
+The "k" in k-nearest neighbors means that, rather than just using the closest neighbor, we can take into 
+account a set number of closest neighbors (for example, three or five). The prediction is then based on 
+the majority class of these neighbors. We will discuss this in more detail, but for now, we will consider 
+just one neighbor. In scikit-learn, machine learning models are implemented in classes known as 
+Estimator classes. The K-nearest neighbors classification algorithm is provided by the 
+KNeighborsClassifier class in the neighbors module. To use the model, we need to create an instance of 
+this class and configure its parameters. The most crucial parameter for KNeighborsClassifier is the 
+number of neighbors, which we will set to 1. 
+The knn object encapsulates the algorithm that will be used to build the model from the training data, 
+as well the algorithm to make predictions on new data points. It will also hold the information that the 
+algorithm has extracted from the training data. In the case of KNeighborsClassifier, it will just store the 
+training set. 
+ 
+The fit method returns the KNN object itself and modifies it in place, providing a string representation of 
+the classifier. This representation displays the parameters used to create the model. Most of these 
+parameters are set to their default values, but it also includes n_neighbors=1, which is the value we 
+specified. While scikit-learn models have many parameters, the majority are related to optimization or 
+specialized use cases, so you don’t need to worry about the other parameters shown in the output. 
+Printing a scikit-learn model can produce lengthy strings, but don’t be discouraged by this. We will go 
+over all the key parameters. From here on, we won’t display the output of fit since it doesn’t provide any 
+new information. 
+Note that we made the measurements of this single flower into a row in a two-dimensional NumPy array, 
+as scikit-learn always expects two-dimensional arrays for the data. 

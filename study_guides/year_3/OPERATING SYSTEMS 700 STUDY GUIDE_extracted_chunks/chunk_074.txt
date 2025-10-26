@@ -1,0 +1,24 @@
+2.4. Page Replacement Policies and Concepts 
+ 
+As we just learned, the policy that selects the page to be removed, the page replacement 
+policy, iscrucial to the efficiency of the system, and the algorithm to do that must be carefully 
+selected. 
+Several such algorithms exist, and it is a subject that enjoys a great deal of theoretical 
+attention and research. Two of the most well-known algorithms are first-in first-out, and 
+least recently used. The first-in first-out (FIFO) policy assumes that the best page to remove 
+is the one that has been in memory the longest. The least recently used (LRU) policy chooses 
+the page least recentlyaccessed to be swapped out. 
+
+To illustrate the difference between FIFO and LRU, let us imagine a dresser drawer filled with 
+your favorite sweaters. The drawer is full, but that did not stop you from buying a new 
+sweater. Now you must put it away. Obviously, it will not fit in your sweater drawer unless 
+you take something out, but which sweater should you move to the storage closet? Your 
+decision will be based on a “sweaterremoval policy.” 
+
+You could take out your oldest sweater (i.e., the one that was first-in), figuring that you 
+probably will not use it again, hoping you will not discover in the following days that it is 
+your most used, mosttreasured possession. Or you could remove the sweater that you have 
+not worn recently and has been idle for the longest amount of time (i.e., the one that was 
+least recently used). It is readily identifiable because it is at the bottom of the drawer. But 
+just because it has not been used recently does not mean that a once-a-year occasion will 
+not demand its appearance soon!

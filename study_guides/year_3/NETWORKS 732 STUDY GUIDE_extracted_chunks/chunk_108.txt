@@ -1,0 +1,30 @@
+2.4.2 Congestion Control 
+Flow control is responsible for regulating the number of frames sent between a single sender and 
+receiver, whereas congestion control oversees the overall traffic volume across the network. 
+Consider a switch or router's viewpoint when assessing network performance: Are there too 
+many devices sending messages simultaneously? Is one host monopolizing network resources by 
+transmitting excessive data? Such issues can overwhelm the network. When congestion occurs, 
+messages may become corrupted or dropped, leading devices to resend frames to compensate. 
+This reaction generates additional traffic, worsening the congestion. Congestion control 
+strategies aim to prevent congestion (known as open-loop congestion control) and alleviate it 
+afterward (known as closed-loop congestion control). Open-loop tactics include these policies:
+ 
+• Retransmission policy—Retransmission timers help mitigate congestion intensified by devices 
+attempting to resend lost packets either too promptly or too frequently. 
+• Window policy—Senders may be required to use the selective repeat sliding window method 
+to minimize the frames needing retransmission when errors occur. 
+• Acknowledgment policy—Receivers might send a single ACK message for multiple frames, 
+reducing acknowledgment traffic. 
+• Discarding policy—Less critical frames are discarded to ensure vital traffic persists through 
+congestion. 
+• Admission policy—Routers and switches can temporarily deny new traffic to prevent or ease 
+congestion rather than allowing it onto the network. The closed-loop approach involves: 
+• Implicit signaling—A sender identifies congestion after multiple missed acknowledgments. 
+• Explicit signaling—A congested device modifies data packets to alert the sender (backward 
+signaling) or receiver (forward signaling) of congestion. 
+• Choke packet—A congested router generates a choke packet to inform the traffic source of 
+congestion, prompting it to slow its transmission rate. 
+• Backpressure—A node downstream ceases to accept traffic, transferring congestion pressure 
+upstream. This method is applicable to specific congestion scenarios. While congestion control 
+governs traffic entry onto the network, other techniques allow nuanced traffic management once 
+it’s in transit, where QoS plays a role, as discussed next.

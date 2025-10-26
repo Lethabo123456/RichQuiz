@@ -1,0 +1,15 @@
+3.3 The purpose of encapsulation 
+Encapsulation is an important principle when defining classes. The idea is that a program that 
+uses a class should not have to account for how that class actually works internally; the 
+program simply creates an instance of a class and calls the methods of that class. As long as 
+those methods do what they are designed to do, the program doesn’t need to know how they 
+are implemented. For example, when you call the Console.WriteLine method, you don’t want 
+to be bothered with all the intricate details of how the Console class physically arranges for 
+data to be written to the screen. A class might need to maintain all sorts of internal state 
+information to perform its various methods. This additional state information and activity is 
+hidden from the program that’s using the class. Therefore, encapsulation is sometimes 
+referred to as information hiding. Encapsulation actually has two purposes: 
+
+• To combine methods and data within a class—in other words, to support classification 
+• To control the accessibility of the methods and data—in other words, to control the 
+use of the class

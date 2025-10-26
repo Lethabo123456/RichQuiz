@@ -1,0 +1,20 @@
+row is looked at by itself, it can be seen to be just a one-
+dimensional array. A column seen by itself is also a one-dimensional array. Therefore, 
+when processing a particular row or column of a two-dimensional array, we use 
+algorithms similar to those that process one-dimensional arrays. 
+ 
+
+146 | P a g e  
+ 
+Suppose that we want to process row number 5 of matrix (that is, the sixth row of 
+matrix). The elements of row number 5 of matrix are: 
+ matrix[5][0], matrix[5][1], matrix[5][2], matrix[5][3], matrix[5][4], and matrix[5][5] 
+We see that in these components, the first index (the row position) is fixed at 5. The 
+second index (the column position) ranges from 0 to 5. Therefore, we can use the 
+following for loop to process row number 5:  
+for (col = 0; col < NUMBER_OF_COLUMNS; col++)  
+          process matrix[5][col] 
+Clearly, this for loop is equivalent to the following for loop:  
+row = 5; 
+ for (col = 0; col < NUMBER_OF_COLUMNS; col++)  
+          process matrix[row][col]

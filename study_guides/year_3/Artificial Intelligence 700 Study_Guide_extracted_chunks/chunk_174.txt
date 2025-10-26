@@ -1,0 +1,38 @@
+Prolog has three kinds of statements, corresponding to the structure of the 
+Horn clause used. 
+ 
+* A fact is a clause with an empty right hand side.  
+* A question (or goal) is a clause with an empty left hand side. 
+* A rule is a clause with terms on both sides. 
+ 
+Terms 
+There are three kinds of terms in Prolog: 
+ 
+* A constant is an atom or a number. An atom is a quoted character string  or a 
+string of letters, digits, and underscores that starts with a lower-case letter. A number 
+resembles the real or integer constants  used in most programming languages. 
+* A variable is a string of letters, digits, and underscores that starts with an upper- 
+case letter. There are no type declarations; types are discovered implicitly by the 
+interpreter. 
+* A structure represents an atomic proposition of predicate calculus, and has the 
+form "atom(parameter list)". 
+
+Facts and Rules 
+The Prolog environment maintains a set of facts and rules in its database. 
+ 
+* Facts are axioms; relations between terms that are assumed to be true. 
+* Rules are theorems that allow new inferences to be made. 
+Example facts: 
+male(adam). 
+female(anne). 
+parent(adam,barney). 
+ 
+Example rules: 
+ 
+son(X,Y) :- parent(Y,X) , male(X) 
+daughter(X,Y) :- parent(Y,X) , female(X) 
+ 
+The first rule is read as follows: for all X and Y, X is the son of Y if there exists X and Y 
+such that Y is the parent of X and X is male.  
+The second rule is read as follows: for all X and Y, X is the daughter of Y 
+if there exists X and Y such that Y is the parent of X and X is female.

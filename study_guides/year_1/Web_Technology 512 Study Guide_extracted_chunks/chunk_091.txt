@@ -1,0 +1,32 @@
+a 
+later section). In the code below, notice how we're using length: 
+ 
+var start_value = 1; 
+var some_string = "ABCDEFGH"; 
+for ( start_value; start_value < some_string.length; 
+start_value++ )  
+{ 
+} 
+ 
+
+ 
+57 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+The length method is available to all strings and tells you how many characters a string 
+of text has. We are looping round while the start value is less than the length of the 
+some_string. As soon as the start value goes above the length of the string the loop 
+will end.But we'll explain the end value for loops whenever we meet them, so try not 
+to worry about them too much. 
+ 
+3.10.3 Javascript While Loops 
+ 
+While loops (lowercase "w") are another programming tool you can add to your 
+armoury. Here is the syntax of a while loop: 
+while ( condition_to_test )  
+{ 
+//code to be executed over and over again comes here 
+} 
+ 
+Instead of the word "for" this time type while. After a space, you type a pair of round 
+brackets. Inside of the r

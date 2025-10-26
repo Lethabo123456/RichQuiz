@@ -1,0 +1,20 @@
+ameter, but 
+otherClock cannot modify the contents of the actual parameter. 
+For example, after the following statement executes, the value of myClock will not be 
+altered:  
+ 
+testTime(myClock); 
+
+179 | P a g e  
+ 
+ 
+Recall that if a formal parameter is a value parameter, within the function definition, 
+you can change the value of the formal parameter. That is, you can use an assignment 
+statement to change the value of the formal parameter (which, of course, would have 
+no effect on the actual parameter). However, if a formal parameter is a constant 
+reference parameter, you cannot use an assignment statement to change its value 
+within the function, nor can you use any other function to change its value. Therefore, 
+within the definition of the function testTime, you cannot alter the value of otherClock. 
+. For example, the following would be illegal in the definition of the function testTime: 
+otherClock.setTime(5, 34, 56);                 //illegal 
+otherClock = dClock;

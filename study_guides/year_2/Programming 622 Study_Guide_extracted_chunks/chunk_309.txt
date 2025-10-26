@@ -1,0 +1,18 @@
+the third needle. Figure 4-8 shows the Tower of Hanoi problem with three disks.  
+  
+  
+FIGURE 4-8 Tower of Hanoi problem with three disks  
+  
+
+156  
+  
+As before, we think in terms of recursion. Let us first consider the case when the first needle contains only 
+one disk. In this case, the disk can be moved directly from needle 1 to needle 3. So let us consider the case 
+when the first needle contains only two disks. In this case, first we move the first disk from needle 1 to 
+needle 2, and then we move the second disk from needle 1 to needle 3. Finally, we move the first disk 
+from needle 2 to needle 3. Next, we consider the case when the first needle contains three disks, and then 
+generalize this to the case of 64 disks (in fact, to an arbitrary number of disks).  
+  
+Suppose that needle 1 contains three disks. To move disk number 3 to needle 3, the top two disks must 
+first be moved to needle 2. Disk number 3 can then be moved from needle 1 to needle 3. To move the top 
+two disk

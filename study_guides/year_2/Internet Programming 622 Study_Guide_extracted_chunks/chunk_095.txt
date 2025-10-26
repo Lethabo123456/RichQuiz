@@ -1,0 +1,22 @@
+tially large amounts of data to the server each time a page is 
+viewed.    
+• 
+You explored PHP ’ s built-in session-handling functionality, including session_start() , the 
+$_SESSION superglobal, session_write_close() , and session_destroy() .    
+   
+Now that you know how to save state it means that you can store application data and other 
+information in files on the server’s hard drive, further expanding the capabilities of your Web 
+applications.   
+   
+Before proceeding to the next unit, take a look at the following two exercises, which test your 
+knowledge of cookie and session handling in PHP.    
+   
+ Mini-Project Self-Assessment Exercise   
+   
+1 
+Write a script that uses cookies to remember how long ago a visitor first visited the page. 
+Display this value in the page, in minutes and seconds.   
+   
+2 
+Write a script that uses sessions to store data entered into a form, so users can come back to 
+the form at another time and continue where they left off. Remember to erase th

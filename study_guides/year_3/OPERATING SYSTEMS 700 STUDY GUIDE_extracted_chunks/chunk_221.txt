@@ -1,0 +1,49 @@
+Concurrency Control 
+ 
+Concurrency control techniques give the system the ability to perform concurrent reads and 
+writes, if the results of these actions do not jeopardize the contents of the database. This means that 
+the results of all concurrent transactions are the same as if the transactions had been executed 
+one at a time, in some arbitrary serial order, thereby providing the serial execution view on a 
+database. The concurrency control mechanism keeps the database in a consistent state as the 
+transactions are processed. 
+ 
+Data Redundancy 
+ 
+Data redundancy also has beneficial aspects from a disaster recovery standpoint because, if one site 
+fails, operations can be restarted at another site with the same resources. Later, the failed site 
+can be reinstated by copying all the files that have been updated since the failure. The disadvantage 
+of redundant data is the task of always keeping multiple copies of the same file up to date. Every time 
+a file is updated, every other copy of the file must be updated in an identical way, and the 
+update must be performed in strict adherence to the system’s reliability standards. 
+ 
+Location Transparency and Distributed Directory 
+ 
+Location transparency means that users do not need to be concerned with the physical location of 
+their files. This is the essence of cloud computing. Instead, users deal with the network as a single 
+system. Location transparency is provided by mechanisms and directories, which map logical data 
+items to physical locations. The mechanisms usually use information about data, which are stored at 
+all sites in the form of directories. 
+
+Deadlock Resolution or Recovery 
+ 
+Deadlock detection, prevention, avoidance, and recovery are all strategies used by a distributed 
+system. 
+➢ To detect circular wait’s, the system uses direct resource graphs and looks for cycles. 
+➢ To prevent circular waits, the system tries to delay the start of a transaction until it has all the 
+resources it will request during its execution. 
+➢ To avoid circular waits, the system tries to allow execution only when it knows that the 
+transaction can run to completion. 
+➢ To recover from a deadlock caused by circular waits, the system selects the best victim, 
+one that can be restarted without much difficulty, and one that, when terminated, will free 
+enough resources so that the others can finish. Then the system kills the victim, forces that 
+process to restart from the beginning, and reallocates its resources to other waiting processes.
+
+Query Processing 
+ 
+Query processing is the function of processing requests for information. Query processing techniques 
+try to increase the effectiveness of global query execution sequences, local site processing sequences, 
+and device processing sequences. All of these relate directly to the network’s global process 
+scheduling problem. Therefore, to ensure consistency of the entire system’s scheduling scheme, the 
+query processing strategy must be an integral part of the processing scheduling strategy. 
+ 
+  

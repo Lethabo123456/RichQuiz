@@ -1,0 +1,26 @@
+t a function to 
+execute on the fly, depending on, for example, user input or other external factors. You can also 
+use it to write code that calls user-created callback functions or event handler functions.  
+  
+6.5 Writing Your Own Functions  
+So far you have learned that functions are useful beasts that let you encapsulate and reuse code, 
+and you have explored how to call functions in PHP. Here is where the fun really begins, as you get 
+to create your own functions. Defining a function is really easy — just use the following syntax:  
+  
+function myFunc() {  
+// (do stuff here)  
+}  
+  
+In other words, you write the word function, followed by the name of the function you want to 
+create, followed by parentheses. Next, put your function’s code between curly brackets ( {} ). Here ’ 
+s a trivial example:  
+  
+function hello() { echo “Hello, 
+world! < br/ > ”;  
+}  
+// Displays “Hello, world!” 
+hello();  
+  
+  
+  
+As you can see, this script defines a function, hello(), that simply di

@@ -1,0 +1,38 @@
+The first-fit allocation assumes that the memory manager keeps two lists (one for free memory 
+blocks and one for busy memory blocks). The operation consists of a simple loop that compares 
+the size of each job to the size of each memory block until a block is found that is large enough 
+to fit the job. Then the job is stored into that block of memory, and the manager fetches the next 
+job from the entry queue. If the entire list is searched in vain, then the job is placed into a waiting 
+queue. The Memory Manager then fetches the next job and repeats the process. 
+ 
+Figure 2.4 
+ 
+Job 1 is allocated to the closest- fitting free partition, as are Job2 and Job3. Job4 is allocated to 
+the only available partition although it is not the best-fitting one. In this scheme, all four jobs are 
+served without waiting. Note that the memory list is ordered according to memory size. This 
+scheme uses memory more efficiently, but it is slower to implement. 
+ 
+In Table 2.1 below a request for a block of 200 spaces has just been given to the Memory 
+Manager. The spaces may be words, bytes, or any other unit the system handles. Using the first- 
+fit scheme and starting from the top of the list, the manager locates the first block of memory 
+large enough to accommodate the job, which is at location 6785. The job is then loaded, starting 
+at location 6785 and occupying the next 200 spaces. The next step is to adjust the free list to 
+indicate that the block of free memory now starts at location 6985 and that it contains only 400 
+spaces. 
+
+Table 2.1 
+ 
+Table 2.1 above illustrate two snapshots of memory with the status of each memory block before 
+and after 200 spaces are allocated at address 6785, using the first-fit algorithm. 
+ 
+The best-fit algorithm is slightly more complex because the goal is to find the smallest memory 
+block into which the job will fit. One of the problems with this is that the entire table must be 
+searched before an allocation can be made, because the memory blocks are physically stored in 
+sequence according to their location in the memory, and not by memory block sizes. The system 
+could execute an algorithm to continuously rearrange the list in ascending order by memory block 
+size, but that would add more overhead and might not be an efficient use of processing time in 
+the long run. 
+ 
+The best-fit algorithm is illustrated showing only the list of free memory blocks. Table 2.2 shows 
+the free list before and after the best-fit block has been allocated to the same request presented 
+in Table 2.1.

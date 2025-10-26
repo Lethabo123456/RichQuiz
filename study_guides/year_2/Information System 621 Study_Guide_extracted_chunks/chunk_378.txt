@@ -1,0 +1,15 @@
+tionship is one to one regardless of how many cars 
+each actually owns. The relationship will probably be optional on one side because not every 
+employee will own a car, but every car in the database will be owned by an employee. 
+ 
+Identify Attributes 
+The third stage is to identify all the attributes that are going to be stored for each entity. An 
+attribute should be the smallest sensible piece of data that is to be stored. For example, customer 
+name is probably a bad attribute – customer first name and surname would be better (some 
+databases also include title and initial as separate attributes). Why is this? It is so that first name 
+and surname can be accessed separately. For example, if you wanted to start a letter to a 
+customer, ‘Dear John’, you would be unable to do this if you had stored the name as ‘John 
+Smith’. In this case, the letter would have to read ‘Dear John Smith’. As before, attributes can 
+be identified by interviewing staff. 
+Resolve Relationships 
+The custo

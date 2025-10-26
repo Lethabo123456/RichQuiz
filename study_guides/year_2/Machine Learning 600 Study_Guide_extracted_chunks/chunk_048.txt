@@ -1,0 +1,40 @@
+ree 
+d) Four 
+ 
+
+P a g e  | 25 
+ 
+Chapter 3: Statistics, Randomness and Linear Regression in ML 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+After acquiring and cleaning our data, it's now time to focus our attention on some numbers. 
+As an introduction, it is a good idea to revisit some statistics and how they can be used. In 
+addition, this chapter will cover standard deviation, Bayesian techniques, forms of linear 
+regression, and the power of random numbers.  
+ 
+3.1 Working with ML datasets 
+You can download ML datasets from the GitHub repository and your first task is to convert 
+the contents of each line of the text file and convert them to an integer type that your 
+program can understand.  
+ 
+3.1.1 Using Java to load ML datasets 
+The process is identical to the Clojure process, though in the Java language it's a little more 
+involved in terms of code.  
+   
+LEARNING OUTCOMES 
+After reading this Section of the guide, the learner should be able to:  
+ 
+ Understand how to work with ML datasets

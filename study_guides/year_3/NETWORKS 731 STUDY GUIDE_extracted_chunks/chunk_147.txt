@@ -1,0 +1,41 @@
+
+Remote Desktop from a Windows Computer 
+1. Click the Start button. 
+2. Click Run… 
+3. Type “mstsc” and press the Enter key. 
+4. Next to Computer: type in the IP address of your server 
+5. Click Connect. 
+6. If all goes well, you will see the Windows login prompt. 
+ 
+Remote Desktop from a Linux Computer with RDesktop 
+1. Open a command shell using xterm 
+2. Type ‘rdesktop’ at the command prompt to see if you have rdesktop installed 
+3. If rdesktop is installed, then proceed. Otherwise, you will need to install the rdesktop 
+package 
+for your flavor of Linux. 
+4. Type ‘rdesktop’ followed by your server’s IP address. Then press Enter. 
+o Example: 
+$ rdesktop 72.52.246.40 
+5. If all goes well, you will see the Windows login prompt. 
+ 
+ 
+Remote Desktop from Mac OS X 
+1. Using Microsoft Remote Desktop (Mac OS X versions 10.9 and later): 
+• Install Microsoft Remote Desktop from the Mac App Store. 
+• Click the New button or use the shortcut Command + N to set up a connection
+
+Figure 4.3 Microsoft Remote Desktop 
+ 
+• PC name: You can use your server’s IP address or its hostname (if the 
+hostname has an appropriate DNS record and resolves). 
+•  Username: To access the admin account, use “Administrator”. 
+•  Password: Enter the Administrator password. 
+•  Configure full-screen and multi-monitor settings to your preference 
+
+✓ Once you’ve filled in the appropriate settings, close the Edit Remote Desktops window. 
+✓ Select your connection under My Desktops and press the Start button in the menu to 
+connect (or simply press the return key on your keyboard). 
+✓ If your server uses a self-signed SSL certificate, a message will be displayed as Remote 
+Desktop is negotiating credentials. You can either press Continue to proceed with the 
+connection or, to permanently store the certificate and connect directly in the future, click 
+Show Certificate and then check the box next to Always trust … before clicking Continue to proceed.

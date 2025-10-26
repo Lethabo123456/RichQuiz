@@ -1,0 +1,20 @@
+ed is in the model and that all data in the model 
+is needed. All data elements required by the database transactions must be defined in the model, 
+and all data elements defined in the model must be used by at least one database transaction.  
+However, as you apply the minimal data rule, avoid excessive short-term bias. Focus not only on 
+the immediate data needs of the business but on future data needs. Thus, the database design must 
+leave room for future modifications and additions, ensuring that the business’s investment in 
+information resources will endure. The conceptual design has four steps, which are listed in Table 
+9.2. 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Nine, page 445-457. 
+
+ 
+142 
+Data Analysis and Requirements 
+The first step in conceptual design is to discover the characteristics of the data elements. An 
+effective database is an information factory that produces key ingredients

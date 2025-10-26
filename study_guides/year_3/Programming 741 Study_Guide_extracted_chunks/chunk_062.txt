@@ -1,0 +1,29 @@
+1.7.4 The for loop 
+A careful examination of the while loop in Example 1-11 reveals a pattern often seen in 
+iterative statements: initialize a variable (i = 0), test the variable (i < 10), execute a series of 
+statements, and increment the variable (i++). The for loop allows you to combine all these 
+steps in a single loop statement: 
+Syntax: for ([ initializers] ; [ expression] ; [ iterators] ) {statement} 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int i = 11; 
+do 
+{ 
+//repeat: // the label 
+Console.WriteLine("i: {0} ", i); 
+i++; 
+//if (i < 10) 
+//goto repeat; // the dastardly deed return 0; 
+} while (i < 10) 
+Console.ReadLine(); 
+}}} 

@@ -1,0 +1,25 @@
+iner intList is initialized using the elements of the array intArray. That is, intList = {2,4,6,8,10}.  
+  
+Now that we know how to declare a vector sequence container, let us now discuss how to manipulate 
+data stored in a vector container. To do so, we must know the following basic operations:  
+• Item insertion  
+• Item deletion  
+• Stepping through the elements of a vector container  
+  
+
+55  
+  
+The elements in a vector container can be accessed directly by using the operations given in Table 2-2.  
+4  
+TABLE 2-2: Operations to access the elements of a vector container  
+   
+From Table 2-2, it follows that that the elements in a vector can be processed just as they can in an array. 
+(Recall that in C++, arrays start at location 0. Similarly, the first element in a vector container is at location 
+0.)  
+  
+EXAMPLE 2-2  
+Consider the following statement, which declares intList to be a vector container of size 5 and the element 
+type is int.  
+ vector<int> intList(5);  
+  
+You can us

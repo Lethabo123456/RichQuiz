@@ -1,0 +1,26 @@
+3.3 SOURCE CODE OF A WEB PAGE 
+You can create a simple HTML document by using three basic tags—HTML, HEAD, and 
+BODY. These tags together are called the document structure elements of an HTML 
+document. Here’s what they do: 
+
+ HTML: This tag indicates that the document contains HTML code. The syntax, or 
+structure, for using this tag is: 
+
+<HTML> is the starting tag and </HTML> is the ending tag. Without these tags the 
+browser will misinterpret the document as a text file. An HTML document is divided 
+into two sections—head and body. 
+
+ HEAD: The head section of an HTML document starts with the <HEAD> tag and ends 
+with the </HEAD> tag. You can specify the title of the page in this section by using the 
+TITLE tag (title). The syntax for using the HEAD and TITLE tags is: 
+
+<head>
+    <title>PCTBC Web Pages</title>
+</head>
+<body>
+
+The TITLE tag marks the enclosed text as the title of the page. This title appears on 
+the title bar of the browser as shown in Error! Reference source not found.2. 
+ BODY: The body section starts with the <BODY> tag and ends with the </BODY> tag. 
+This section contains the text that appears in the browser window and also contains 
+other tags in the HTML document. The syntax for using the BODY tag is: 

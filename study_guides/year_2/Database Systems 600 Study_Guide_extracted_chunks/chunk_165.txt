@@ -1,0 +1,18 @@
+then identify all entity subtypes based on their distinguishing 
+
+ 
+65 
+characteristics. You can also start by identifying multiple entity types and then later extract the 
+common characteristics of those entities to create a higher-level supertype entity. Specialization 
+is the top-down process of identifying lower-level, more specific entity subtypes from a higher-
+level entity supertype. Specialization is based on grouping the unique characteristics and 
+relationships of the subtypes 
+Generalization is the bottom-up process of identifying a higher-level, more generic entity 
+supertype from lower-level entity subtypes. Generalization is based on grouping the common 
+characteristics and relationships of the subtypes.  
+ 
+ 
+Entity Clustering  
+In the case that in the process of developing an ER diagram, hundreds of entities and relationships 
+that overcrowd the diagram are discovered, you can use entity clusters to minimize the number of 
+entities shown in the ERD. An entity cluster is

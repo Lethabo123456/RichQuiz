@@ -1,0 +1,34 @@
+3.3 Technology-based attacks(threats) 
+Technology-based attacks exploit vulnerabilities in software and the communication protocols 
+that the systems rely on. This is in contrast to attacks that target environmental or human 
+weaknesses 
+
+3.3.1 Denial-of-Service (DoS) 
+A DoS is a network security attack in which the hacker makes the system or data unavailable to 
+legitimate users by ﬂooding the server with fake traﬃc. Today, DoS attacks are commonly 
+launched against a major organization’s intranet and websites. Furthermore, DoS attacks are 
+launched in various types, namely protocol-based attacks, volumetric-based attacks, and 
+application-layer attacks. 
+
+The Volume-based attack aims to overwhelm the bandwidth of the target with a large amount of 
+traﬃc. One example of this type of DoS is the ampliﬁed attack that exploits misconﬁgured servers 
+to send ampliﬁed traﬃc to the victim. 
+Meanwhile, the protocol-based attack exploits vulnerabilities in layer 3 and 4 protocols. A Smurf 
+attack sends ICMP requests to a network’s broadcast address with the victim’s spoofed IP, so all 
+hosts reply to the victim. Another attack of the same type is the Ping of Death, which sends 
+malformed or oversized ping packets that may crash or freeze the target system. Lastly, the SYN 
+ﬂood exploits the TCP handshake by sending many SYN requests without completing the 
+handshake. 
+ 
+Figure 3.2: DoS Attack 
+ 
+Figure 3.3: SYN Flood 
+
+Additionally, the application layer targets applications or services that often require lower 
+bandwidth but cause high impact (GeeksforGeeks, 2025). HTTP ﬂood is an example of an 
+application-layer attack. Sending a large number of seemingly legitimate HTTP requests with the 
+goal of overwhelming and depleting the server’s resources. Lastly, Distributed Denial of Service 
+(DDoS) is a type of DOS attack where multiple systems, which are Trojan-infected, target a 
+particular system, causing a DoS attack.
+
+Figure 3.4 DDoS Attack

@@ -1,0 +1,49 @@
+llows that each of these 
+functions is of O(1).  
+  
+ 
+3.2.5  Destroy the List  
+  
+The function destroyList deallocates the memory occupied by each node. We traverse the list starting 
+from the first node and deallocate the memory by calling the operator delete. We need a temporary 
+pointer to deallocate the memory. Once the entire list is destroyed, we must set the pointers first and last 
+to NULL and count to 0.  
+  
+template <class Type>  
+void linkedListType<Type>::destroyList()  
+{  
+nodeType<Type> *temp;   
+ 
+ 
+//pointer to deallocate the memory  
+//occupied by the node  
+while (first != NULL)    
+{  
+ 
+ 
+//while there are nodes in the list  
+
+102  
+  
+temp = first;    
+ 
+ 
+//set temp to the current node  
+first = first->link;   
+ 
+ 
+//advance first to the next node  
+delete temp;    
+}  
+ 
+ 
+//deallocate the memory occupied by temp 
+last = NULL;     
+  
+ 
+ 
+//initialize last to NULL; first has already  
+//been set to NULL by the while loop  
+count = 0;  
+}  
+If the list has n i

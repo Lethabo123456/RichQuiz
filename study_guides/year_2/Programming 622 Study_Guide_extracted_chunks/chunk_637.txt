@@ -1,0 +1,55 @@
+which restores the heap in a subtree by making one item 
+assignment each time through the loop. The index of the root node of the list and the index of the last 
+element of the list are passed as parameters to this function.  
+  
+template<class elemType>  
+void arrayListType<elemType>::heapify(int low, int high)  
+{  
+int largeIndex;  
+  
+ 
+elemType temp = list[low];     
+  
+  
+//copy the root node of the subtree  
+  
+ 
+largeIndex = 2 * low + 1;   
+  
+  
+  
+//index of the left child  
+  
+while (largeIndex <= high)  
+{ if (largeIndex < high) if (list[largeIndex] < list[largeIndex + 1]) largeIndex = 
+largeIndex + 1;  //index of the largest child  
+  
+if (temp > list[largeIndex])    break; 
+else  
+{  
+ 
+//subtree is already in a heap  
+list[low] = list[largeIndex];   
+ 
+//move the larger child to the root  
+low = largeIndex;   
+  
+largeIndex = 2 * low + 1;  
+}  
+ 
+//go to the subtree to restore the heap  
+}  
+ 
+ 
+  
+  
+  
+  
+ 
+//end while  
+list[low] = temp;   
+  
+  
+  
+ 
+//insert temp i

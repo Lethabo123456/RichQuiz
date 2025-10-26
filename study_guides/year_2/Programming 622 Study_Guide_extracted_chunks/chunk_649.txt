@@ -1,0 +1,29 @@
+s chapter. Use pivot as the middle element of the 
+list.  
+  
+a. Give the resulting list after one call to the partition procedure.  
+b. Give the resulting list after two calls to the partition procedure.  
+  
+11. Assume the following list of keys: 18, 40, 16, 82, 64, 67, 57, 50, 37, 47, 72, 14, 17, 27, 35  
+  
+This list is to be sorted using quicksort as discussed in this chapter. Use pivot as the median of the first, 
+last, and middle elements of the list.  
+  
+
+319  
+  
+a. What is the pivot?  
+b. Give the resulting list after one call to the partition procedure.  
+  
+  
+12. 
+Using the function buildHeap as given in this chapter, convert the following array into a heap. 
+Show the final form of the array.  
+  
+47, 78, 81, 52, 50, 82, 58, 42, 65, 80, 92, 53, 63, 87, 95, 59, 34, 37, 7, 20  
+  
+13. 
+Suppose that the following list was created by the function buildHeap during the heap creation 
+phase of heapsort.  
+  
+100, 85, 94, 47, 72, 82, 76, 30, 20, 60, 65, 50, 45, 17, 35, 14, 28, 5

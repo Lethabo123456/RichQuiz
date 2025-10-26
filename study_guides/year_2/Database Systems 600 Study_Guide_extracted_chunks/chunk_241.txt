@@ -1,0 +1,16 @@
+ist  
+FROM  
+table-list;  
+The column-list represents one or more attributes, separated by commas. If the programmer wants 
+all the columns to be returned, then the asterisk (*) wildcard can be used. A wildcard character is 
+a symbol that can be used as a general substitute for other characters or commands. This wildcard 
+means “all columns.” For example, the following query would return all the data from the 
+PRODUCT table. 
+SELECT * FROM PRODUCT; 
+In this query, the column list indicates that all columns (and by default all of the rows) should be 
+returned. The FROM clause specifies that the data from the PRODUCT table is to be used. To limit 
+the rows being returned, relational selection (or restriction) must be used. The column list allows 
+the programmer to specify which columns should be returned, as shown in the next query. 
+SELECT P_CODE, P_DESCRIPT, P_PRICE, P_QOH  
+FROM PRODUCT; 
+This query specifies that the data should come from the PRODUCT table, and that only the product

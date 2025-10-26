@@ -1,0 +1,13 @@
+ystem, chances are you 
+will need to check email addresses at lots of different points in your code. Without  
+functions, you ’d have to copy and paste the same chunk of code again and again. However, 
+if you wrap your validation code inside a function, you can just call that function each time 
+you need to check an email address  
+They make it easier to eliminate errors — This is related to the previous point. If you have 
+copied and pasted the same block of code twenty times throughout your script, and you 
+later find that code contained an error, you ’ ll need to track down and fix all twenty errors. 
+If your code was inside a function, you’d only need to fix the bug in a single place  
+Functions can be reused in other scripts — Because a function is cleanly separated from 
+the rest of the script, it is easy to reuse the same function in other scripts and applications  
+Functions help you break down a big project — Writing a big Web application can be 
+intimidating. By splitting

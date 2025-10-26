@@ -1,0 +1,26 @@
+ize; //use the  
+//mod operator to advance queueFront  
+//because the array is circular  
+}  
+else cout << "Cannot remove from an empty queue" << endl; } 
+//end deleteQueue  
+  
+ 
+6.2.7  Constructors and Destructors  
+  
+To complete the implementation of the queue operations, we next consider the implementation of the 
+constructor and the destructor. The constructor gets the maxQueueSize from the user, sets the variable 
+maxQueueSize to the value specified by the user, and creates an array of size maxQueueSize. If the user 
+does not specify the queue size, the constructor uses the default value, which is 100, to create an array of 
+size 100. The constructor also initializes queueFront and queueRear to indicate that the queue is empty. 
+The definition of the function to implement the constructor is as follows:  
+  
+template <class Type>  
+queueType<Type>::queueType(int queueSize)  
+{  
+if (queueSize <= 0)  
+
+227  
+  
+{  
+cout << "Size of the array to hold the queue must "<< "be positive

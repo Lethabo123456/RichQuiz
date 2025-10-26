@@ -1,0 +1,46 @@
+5.2.2 Architectural Design 
+
+Once the interactions between the software system and the system’s environment have been 
+defined, you use this information as a basis for designing the system archi-tecture. Of course, you 
+need to combine this knowledge with your general knowl-edge of the principles of architectural 
+design and with more detailed domain knowledge. You identify the major components that make 
+up the system and their interactions. You may then design the system organization using an 
+architectural pattern such as a layered or client–server model. 
+The high-level architectural design for the weather station software is shown in Figure 5.2 below.  
+The weather station is composed of independent subsystems that communicate by broadcasting 
+messages on a common infrastructure, shown as Communication link in the Figure . Each 
+subsystem listens for messages on that infrastructure and picks up the messages that are 
+intended for them. This “listener model” is a commonly used architec-tural style for distributed 
+systems. 
+
+Figure 5.2: Architecture of Data collection system (Sommerville,  I.  2021)   
+ 
+Figure 5.2 above shows the architecture of the data collection subsystem, which is included in 
+Figure 5.1. The Transmitter and Receiver objects are concerned with managing communications, 
+and the WeatherData object encapsulates the information that is collected from the 
+instruments and transmitted to the weather information system. 
+
+5.2.3 Object Class Identification  
+By this stage in the design process, you should have some ideas about the essential objects in the 
+system that you are designing. As your understanding of the design develops, you refine these 
+ideas about the system objects. The use case description helps to identify objects and operations 
+in the system.  
+ 
+From the description of the Report weather use case, it is obvious that you will need to implement 
+objects representing the instruments that collect weather data and an object representing the 
+summary of the weather data. You also usually need a high-level system object or objects that 
+encapsulate the system interactions defined in the use cases. With these objects in mind, you can 
+start to identify the general object classes in the system. As object-oriented design evolved in the 
+1980s, various ways of identifying object classes in object-oriented systems were suggested: 
+ 
+• Use a grammatical analysis of a natural language description of the system to be 
+constructed. Objects and attributes are nouns; operations or services are verbs (Abbott 
+1983). 
+• Use tangible entities (things) in the application domain such as aircraft, roles such as 
+manager, events such as request, interactions such as meetings, locations such as offices, 
+organizational units such as companies, and so on (Wirfs-Brock, Wilkerson, and Weiner 
+1990). 
+• Use a scenario-based analysis where various scenarios of system use are identified and 
+analyzed in turn. As each scenario is analyzed, the team responsible for the analysis must 
+identify the required objects, attributes, and operations (Beck and Cunningham 1989). 
+ 

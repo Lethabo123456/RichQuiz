@@ -1,0 +1,20 @@
+the end, whereas the function buildListBackward inserts the new item at the 
+beginning. To accommodate both operations, we will write two functions: insertFirst to insert the new 
+item at the beginning of the list and insertLast to insert the new item at the end of the list. Also, to make 
+the algorithms more efficient, we will use two pointers in the list: first, which points to the first node in 
+the list, and last, which points to the last node in the list.  
+  
+ 
+3.2.1  Structure of Linked List Nodes  
+  
+Recall that each node of a linked list must store the data as well as the address for the next node in the 
+list (except the last node of the list). Therefore, the node has two instance variables. To simplify operations 
+such as insert and delete, we define the class to implement the node of a linked list as a struct. The 
+definition of the struct nodeType is as follows:  
+  
+//Definition of the node template 
+<class Type>  
+struct nodeType  
+{  
+Type info;  
+nodeType<Type> *link

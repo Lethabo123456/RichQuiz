@@ -1,0 +1,53 @@
+!= NULL)  
+{  
+newNode = new nodeType<Type>;  //create a node newNode->info 
+= current->info;  //copy the info  
+newNode->link = NULL;   
+ 
+//set the link of newNode to NULL  
+last->link = newNode;   
+ 
+//attach newNode after last  
+last = newNode;   
+  
+ 
+//make last point to the actual last 
+//node  
+current = current->link;   
+ 
+//make current point to the  
+//next node  
+}  
+ 
+  
+  
+  
+ 
+//end while  
+}  
+ 
+ 
+  
+  
+  
+ 
+//end else  
+}  
+ 
+ 
+ 
+  
+  
+  
+ 
+//end copyList  
+  
+The function copyList contains a while loop. The number of times the while loop executes depends on the 
+number of items in the list. If the list contains n items, the while loop executes n times. Therefore, the 
+function copyList is of O(n).  
+  
+3.2.13 Destructor  
+  
+The destructor deallocates the memory occupied by the nodes of a list when the class object goes out of 
+scope. Because memory is allocated dynamically, resetting the pointers first and last does not deallocate 
+the memory occupied by the nodes i

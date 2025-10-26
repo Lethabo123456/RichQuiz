@@ -1,0 +1,39 @@
+es the data stored in its own 
+memory space.  
+ 
+
+106 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This program works as follows. The execution begins at the function main. The 
+statement in Line 6 declares and initializes the int variable number. The statement in 
+Line 7 outputs the value of number before calling the function funcValueParam; the 
+statement in Line 8 calls the function funcValueParam. The value of the variable 
+number is then passed to the formal parameter num. Control now transfers to the 
+function funcValueParam. The statement in Line 14 outputs the value of num before 
+changing its value. The statement in Line 15 changes the value of num to 15; the 
+
+107 | P a g e  
+ 
+statement in Line 16 outputs the value of num. After this statement executes, the 
+function funcValueParam exits and control goes back to the function main 
+ 
+The statement in Line 9 outputs the value of number after calling the function 
+funcValueParam. The sample run shows that the value of numb

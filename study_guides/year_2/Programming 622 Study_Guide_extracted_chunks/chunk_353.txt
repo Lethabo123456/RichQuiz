@@ -1,0 +1,23 @@
+teria, the second tray in a stack of trays can be 
+removed only if the first tray has been removed. For another example, to get to your favorite computer 
+science book, which is underneath your math and history books, you must first remove the math and 
+history books. After removing these books, the computer science book becomes the top book—that is, 
+the top element of the stack. Figure 5-1 shows some examples of stacks.  
+  
+FIGURE 5-1 Various examples of stacks  
+  
+  
+  
+  
+  
+  
+
+176  
+  
+The elements at the bottom of the stack have been in the stack the longest. The top element of the stack 
+is the last element added to the stack. Because the elements are added and removed from one end (that 
+is, the top), it follows that the item that is added last will be removed first. For this reason, a stack is also 
+called a Last In First Out (LIFO) data structure.  
+  
+Stack: A data structure in which the elements are added and removed from one end only; a Last In First 
+Out (LIFO) data st

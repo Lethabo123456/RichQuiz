@@ -1,0 +1,26 @@
+at vertex, the vertices are // 
+printed using the depth first traversal algorithm.  
+};  
+  
+We leave the UML class diagram of the class graphType as an exercise.  
+  
+The definitions of the functions of the class graphType are discussed next.  
+  
+A graph is empty if the number of vertices is 0—that is, if gSize is 0. Therefore, the definition of the function 
+isEmpty is as follows:  
+  
+bool graphType::isEmpty() const  
+{ return (gSize == 0);  
+}  
+  
+The definition of the function createGraph depends on how the data is input into the program. For 
+illustration purposes, we assume that the data to the program is input from a file. The user is prompted 
+for the input file. The data in the file appears in the following form:  
+  
+5  
+0 2 4 ... -999 1 
+3 6 8 ... -999  
+...  
+  
+The first line of input specifies the number of vertices in the graph. The first entry in the remaining lines 
+specifies the vertex, and all of the remaining entries in the line (except the last) specify the ver

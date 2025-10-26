@@ -1,0 +1,45 @@
+Head Section 
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 5 Layout</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+Body Section 
+<body>
+
+<div class="wrap">
+   <div class="header">
+   </div><!-- .header -->
+   <div class="content">
+   </div><!-- .content -->
+   <div class="sidebar">
+   </div><!-- .sidebar -->
+   <div class="clear"></div>
+   <div class="footer">
+   </div><!-- .footer -->
+</div><!-- .footer -->
+</div><!-- .wrap -->
+</body>
+</html>
+    
+CSS 
+Before styling each section, you will need to know measurements such as the width and 
+height of each section. These measurements will obviously differ from design to design. I use 
+the “Ruler” tool in Adobe Photoshop to get the measurements by clicking and dragging from 
+one point to another. Measurements for this basic layout can be seen in the design picture 
+above. You can download the attached blank PSD design as well. 
+ 
+.wrap {
+    width:980px;
+    margin:0 auto;
+}
+
+As prominent by the name “.wrap”, this is called wrapping DIV which contains all other DIVs. 
+You can obviously assign any other name such as a wrapper, container, or main_div, etc. but I 
+prefer to call it .wrap appears clean and short. We have given a width of 980 pixel wide and 
+added top/bottom margin as 0 and right /left margin as auto. That auto margin on both sides 
+makes our website centered aligned horizontally. 
+
+body { margin:0; padding:0; }

@@ -1,0 +1,38 @@
+empty  
+{  
+6a   
+  
+last->link = newNode;   
+  
+//insert newNode at the end of the list 6b  
+  
+last = newNode;   
+  
+  
+//set last so that it points to the  
+//actual last node in the list  
+}  
+  
+Let us now execute these statements. Initially, both first and last are NULL. Therefore, we have the list as 
+shown in Figure 3-11.  
+  
+  
+FIGURE 3-11 Empty list  
+  
+
+92  
+  
+After statement 1 executes, num is 2. Statement 2 creates a node and stores the address of that node in 
+newNode. Statement 3 stores 2 in the info field of newNode, and statement 4 stores NULL in the link field 
+of newNode. (See Figure 3-12.)  
+  
+  
+FIGURE 3-12 newNode with info 2  
+  
+Because first is NULL, we execute statements 5a and 5b. Figure 3-13 shows the resulting list.  
+  
+  
+FIGURE 3-13 List after inserting newNode in it  
+  
+We now repeat statements 1 through 6b. After statement 1 executes, num is 15. Statement 2 creates a 
+node and stores the address of this node in newNode. Statement 3 stores 15 in t

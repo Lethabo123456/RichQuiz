@@ -1,0 +1,23 @@
+Imagine we want to find AB given A and B as shown below. 
+  
+Because A is a 4 × 3 matrix and B is a 3 × 2 matrix, the product AB is defined 
+and is a 4 × 2 matrix. To find the elements of AB, the corresponding elements 
+of the rows of A and the columns of B are first multiplied and then these 
+products are added. For instance, the element in the (3, 1)th position of AB 
+is the sum of the products of the corresponding elements of the third row of 
+A and the first column of B; namely, 3 ・ 2 + 1 ・ 1 + 0 ・ 3 =7. When all the 
+elements of AB are computed, we see that: 
+ 
+Matrix multiplication is not commutative. That is, if A and B are two matrices, 
+it is not necessarily true that AB and BA are the same. In fact, it may be that 
+only one of these two products is defined. For instance, if A is 2 × 3 and B is 
+3 × 4, then AB is defined and is 2 × 4; however, BA is not defined, because it 
+is impossible to multiply a 3 × 4 matrix and a 2 × 3 matrix. In general, suppose 
+that A is an m × n matrix and B is an r × s matrix. Then AB is defined only 
+when n = r and BA is defined only when s = m. Moreover, even when AB and 
+BA are both defined, they will not be the same size unless m = n = r = s. Hence, 
+if both AB and BA are defined and are the same size, then both A and B must 
+be square and of the same size. 
+
+Furthermore, even with A and B both n × n matrices, AB and BA are not 
+necessarily equal, as the example below demonstrates. 

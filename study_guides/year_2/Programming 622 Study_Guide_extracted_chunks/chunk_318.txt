@@ -1,0 +1,14 @@
+erative control structures use a looping structure, such as while, for, or do... while, 
+to repeat a set of statements.  
+  
+This chapter began by designing a recursive method to find the factorial of a nonnegative integer. Using 
+an iterative control structure, we can easily write an algorithm to find the factorial of a nonnegative 
+integer. Given our familiarity with iterative techniques, the iterative solution will seem simpler than the 
+recursive solution. The only reason we gave a recursive solution to the factorial problem was to illustrate 
+how recursion works using a simple example.  
+  
+In this chapter, we also used recursion to determine the largest element in a list, determining a  
+Fibonacci number. Using an iterative control structure, we can also write an algorithm to find the largest 
+number in an array. Similarly, an algorithm that uses an iterative control structure can be designed to find 
+the Fibonacci number.  
+The obvious question becomes, which approach is better?

@@ -1,0 +1,29 @@
+info in the node, we follow llink to go to the left subtree; otherwise, we follow rlink to go to the right 
+subtree. We repeat this process for the next node. If the search item is in the binary search tree, our 
+search ends at the node containing the search item; otherwise, the search ends at an empty subtree. Thus, 
+the general algorithm is as follows:  
+  
+  
+  
+  
+if root is NULL  
+Cannot search an empty tree, returns false. else  
+{ current = root;  
+while (current is not NULL and not found) if (current->info 
+is the same as the search item) set found to true; 
+else if(current->info is greater than the search 
+item) follow the llink of current else follow the rlink 
+of current  
+}  
+  
+This pseudocode algorithm translates into the following C++ function:  
+  
+template <class elemType> bool 
+bSearchTreeType<elemType>::  
+search(const elemType& searchItem) const  
+{  
+binaryTreeNode<elemType> *current;  
+bool found = false;  
+  
+if (root == NULL) cerr << "Cannot search the empty 
+tr

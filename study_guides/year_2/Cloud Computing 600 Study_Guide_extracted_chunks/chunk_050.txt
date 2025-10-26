@@ -1,0 +1,42 @@
+Chapter 3: Virtualization  
+ 
+3.1 Virtualization Technology  
+Virtualization is a technique to share single physical instance of an application or resource among 
+multiple organisations or tenants (customers). It does so by assigning a logical name to a physical 
+resource and providing a pointer to that physical resource on demand.  Most types of IT resources can 
+be virtualized.  
+ 
+Fig 3.1: Virtualized cloud model  
+
+The concept of creating a virtual machine or server over an existing operating system and hardware is 
+called Hardware virtualization. Virtual machines provide an environment that is logically separated 
+from the underlying hardware. The machine on which the virtual machine is created is referred to as 
+Host machine, while the virtual machine is called the guest machine.  This virtual machine is managed 
+by a software or firmware called “Hypervisor”.  Hypervisor is the software or firmware that manages 
+the virtual machine. The hypervisor acts as a virtual machine manager. They help run multiple OS 
+concurrently on a physical system sharing its hardware, hence, it allows multiple OS to share a single 
+hardware host. The most important function of virtualization is the capability of running multiple OS 
+and applications on a single computer or server.  
+
+The first step in creating a new virtual server or machine through virtualization software is the 
+allocation of physical IT resources, followed by the installation of an operating system. Virtual servers 
+use their own guest operating systems, which are independent of the operating system in which they 
+were created. 
+
+3.2 Benefits of Virtualization 
+
+ Efficient resource utilization 
+ Lower costs and extended life of the technology 
+ Increased return on investments (ROI) for both the service providers and the consumers 
+ Promotes green IT by reducing energy wastage  
+ Dynamic data centre 
+ Improve disaster recovery 
+ Eases administration
+
+
+3.3 Disadvantages of Virtualization 
+ High cost of implementation 
+ Scalability issues 
+ Requires high-end and powerful infrastructure 
+ Security risks  
+ Requires specialised skills set 

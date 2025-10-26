@@ -1,0 +1,31 @@
+1.2.2 Labels and Icons  
+Icons are encapsulated by the Image Icon class in swings, which paints and icon from an lmage. Its two 
+constructors are as follows:  
+  
+Image Icon (string filename)  
+Image Icon (URL url)  
+ 
+The first form of constructor uses the image in the file named filename and the second form of constructor 
+uses the image in the resource identified by url. The Icon interface that declares the methods 
+implemented by the Image Icon class are as follows:  
+  
+(a) int get Icon Height ( ) : Returns the icon.s height in pixels.  
+(b) int get Icon Width ( ) : Returns the width of the icon in pixels.  
+(c) Void paint Icon (component comp, Graphics g, int x, int y):  
+
+Paints the icon at position x, y on the graphics context g·Comp provides the additional information about 
+the paint operation. Instances of the Jlabel class, which extends Jcomponent are the swing labels. It can 
+display text and/or an icon. Some of its constructors are as follows:  
+  
+Jlabel(Icon i)  
+Label (String s)  
+Jlabel (sring s, Icon i, int align)  
+  
+Here s and I are the text and icon used for the label. The align attribute is LEFT, RIGHT, CENTRE, LEADING 
+or TRAILING. Swing constants interface defines these constants. To read icon and label associated with 
+the label, following methods are used:  
+  
+Icon getIcon( )  
+String getText ( )  
+Void setIcon (Icon i)  
+Void setText (String s) 

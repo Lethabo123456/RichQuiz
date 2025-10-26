@@ -1,0 +1,30 @@
+Figure 2.10 
+ 
+Figure 2.10 Using a FIFO policy, this page trace analysis shows how each page requested is 
+swapped into the two available page frames. When the program is ready to be processed, all 
+four pages are in secondary storage. When the program calls a page that is not already in 
+memory, a page interrupt is issued, as shown by the gray boxes and asterisks. 
+
+2.5. The significance of the working set 
+ 
+One innovation that improved the performance of demand paging schemes was the concept of 
+the working set, which is the collection of pages residing in memory that can be accessed 
+directly without incurring a page fault. Typically, a job’s working set changes as the job moves 
+through the system: one working set could be used to initialize the job, another could work 
+through repeated calculations, another might interact with output devices, and a final set could 
+close the job. 
+
+For example, when a user requests an execution of a program, the first page is loaded into 
+memory and execution continues as more pages are loaded: those containing variable 
+declarations, others containing instructions, others containing data, and so on. After a while, 
+most programs reach a stable state, and processing continue smoothly with very few additional 
+page faults. At this point, one of the job’s working sets is in memory, and the program will not 
+generate many page faults until it gets to another phase requiring a different set of pages to do 
+the work, a different working set. An example of working sets in Windows is shown in Figure 
+2.11. An example of working sets in Windows is shown in Figure 2.11. 
+ 
+Figure 2.11 
+ 
+Figure 2.11 shows a screen of a user who opened the Resource Monitor and clicked on the 
+Memory tab to see the working set for each open application. This image was captured from the 
+Windows 10 operating system.

@@ -1,0 +1,45 @@
+import numpy as np 
+import pandas as pd 
+
+import matplotlib.pyplot as plt 
+from sklearn.decomposition import PCA 
+from sklearn.preprocessing import StandardScaler 
+ 
+# Generate a synthetic dataset with two highly correlated features 
+np.random.seed(42) 
+X = np.random.rand(100, 1) * 10  # Generate random values for X 
+Y = X * 2 + np.random.normal(0, 1, (100, 1))  # Y is a linear function of X with noise 
+ 
+# Create a DataFrame 
+df = pd.DataFrame(np.hstack((X, Y)), columns=["Feature X", "Feature Y"]) 
+ 
+# Standardizing the data (important for PCA) 
+scaler = StandardScaler() 
+df_scaled = scaler.fit_transform(df) 
+ 
+# Apply PCA 
+pca = PCA(n_components=2)  # Keep both components for visualization 
+df_pca = pca.fit_transform(df_scaled) 
+ 
+# Scatter plot of original features 
+plt.figure(figsize=(12, 5)) 
+ 
+plt.subplot(1, 2, 1) 
+plt.scatter(df["Feature X"], df["Feature Y"], color="blue", alpha=0.5) 
+plt.title("Before PCA: Original Features") 
+plt.xlabel("Feature X") 
+plt.ylabel("Feature Y") 
+plt.grid() 
+ 
+# Scatter plot along principal components 
+plt.subplot(1, 2, 2) 
+plt.scatter(df_pca[:, 0], df_pca[:, 1], color="red", alpha=0.5) 
+plt.title("After PCA: Transformed Features") 
+plt.xlabel("Principal Component 1") 
+plt.ylabel("Principal Component 2") 
+plt.grid() 
+ 
+plt.show() 
+# Display explained variance ratio 
+explained_variance = pca.explained_variance_ratio_ 
+explained_variance 

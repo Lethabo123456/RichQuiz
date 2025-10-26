@@ -1,0 +1,22 @@
+So far, we've not instantiated any instances of that class; that is, we haven't created any Tester 
+objects. What is the difference between a class and an instance of that class? To answer that 
+question, start with the distinction between the type int and a variable of type int. Thus, while 
+you would write:
+ 
+int myInteger = 5; 
+you would not write: 
+int = 5; 
+
+You can't assign a value to a type; instead, you assign the value to an object of that type (in this 
+case, a variable of type int). 
+When you declare a new class, you define the properties of all objects of that class, as well as 
+their behaviors. For example, if you are creating a windowing environment, you might want to 
+create screen widgets, more commonly known as controls in Windows programming, to simplify 
+user interaction with your application. 
+
+One control of interest might be a list box, which is very 
+useful for presenting a list of choices to the user and enabling the user to select from the list. 
+Object-oriented programming allows you to create a new type, ListBox, which encapsulates 
+these characteristics and capabilities. Such a class might have member variables named 
+height, width, location, and text_color, and member methods named sort( ), add( ), remove 
+( ), etc.

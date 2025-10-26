@@ -1,0 +1,25 @@
+This statement is true if 𝑝 and 𝑞 are either both true and both false, that 
+is, if you buy a ticket and can take the flight or if you do not buy a ticket 
+and you cannot take the flight. It is false when 𝑝 and 𝑞 have opposite 
+truth values, that is, when you do not buy a ticket, but you can take the 
+flight (such as when you get a free trip) and when you buy a ticket but 
+you cannot take the flight (such as when the airline bumps you). 
+
+ 
+Table 7: Truth table of (𝒑 ∨¬𝒒) → (𝒑 ∧ 𝒒) 
+ 
+ 
+1.1.6 Precedence of Logical Operators 
+We can construct compound propositions using the negation operator and 
+the logical operators defined so far. We will generally use parentheses to 
+specify the order in which logical operators in a compound proposition are 
+to be applied. For instance, (𝑝 ∨ 𝑞) ∧ (¬𝑟) is the conjunction of 𝑝 ∨ 𝑞 and 
+¬𝑟. However, to reduce the number of parentheses, we specify that the 
+negation operator is applied before all other logical operators. This means that 
+¬𝑝 ∧ 𝑞 is the conjunction of¬𝑝 and 𝑞, namely, (¬𝑝) ∧ 𝑞, not the negation of 
+the conjunction of 𝑝 and 𝑞, namely ¬(𝑝 ∧ 𝑞).  
+
+Another general rule of precedence is that the conjunction operator takes 
+precedence over the disjunction operator, so that 𝑝 ∧ 𝑞 ∨ 𝑟 means (𝑝 ∧ 𝑞) ∨ 𝑟 
+rather than 𝑝 ∧ (𝑞 ∨ 𝑟). Because this rule may be difficult to remember, we will continue to use 
+parentheses so that the order of the disjunction and conjunction operators is clear. 

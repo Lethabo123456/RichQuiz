@@ -1,0 +1,28 @@
+of operations on the data. 
+Following these conventions, we can define the clockType ADT as follows:  
+  
+dataTypeName clockType  
+  
+domain  
+Each clockType value is a time of day in the form of hours, minutes, 
+and seconds.  
+  
+operations  
+Set the time.  
+Return the time.  
+Print the time.  
+Increment the time by one second. Increment 
+the time by one minute.  
+Increment the time by one hour.  
+Compare the two times to see whether they are equal.  
+  
+To implement an ADT, you must represent the data and write algorithms to perform the operations.  
+  
+The previous section used classes to group data and functions together. Furthermore, our definition of a 
+class consisted only of the specifications of the operations; functions to implement the operations were 
+written separately. Thus, we see that classes are a convenient way to implement an ADT. In fact, in C++, 
+classes were specifically designed to handle ADTs.  
+EXAMPLE 1-11  
+EXAMPLE 1-11  
+  
+A list is defined as a set of valu

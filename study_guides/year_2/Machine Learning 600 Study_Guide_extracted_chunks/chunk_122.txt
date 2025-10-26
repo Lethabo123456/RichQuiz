@@ -1,0 +1,14 @@
+orks do not show the specific 
+features until the later layers; this means that most of the generic training happens up front.  
+There are two possible processes we can use to make use of what's already out there. With 
+something like a CNN, we can make use of the classifier layer and replace it with the version 
+of the classifier we want to use. This means we are not replicating huge amounts of training 
+where the heavy work is happening, meaning the convolution, normalization, pooling, and 
+activation steps. If you are in a situation where you find yourself with a small training dataset 
+or a dataset that you know is similar to features that were present in the originally trained 
+model, then applying transfer learning will save you development and training time. Where 
+possible, always reuse. 
+ 
+6.9 Assessing the performance of ML algorithms 
+To evaluate the performance of a ML model, you have to carefully consider the noise 
+embedded in the data that you consider to train the model

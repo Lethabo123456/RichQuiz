@@ -1,0 +1,60 @@
+ext($fruits)); 
+?> 
+a) orangebanana 
+b) appleorange 
+c) orangeorange 
+d) appleapple 
+ 
+Answer: a 
+ 
+48. Which function can be used to move the pointer to the previous array position? 
+a) last() 
+b) before() 
+c) prev() 
+d) previous() 
+ 
+Answer: c 
+ 
+49. What will be the output of the following PHP code? 
+<?php 
+$fruits = array ("apple", "orange", array ("pear", "mango"), 
+"banana"); 
+echo (count($fruits, 1)); 
+?> 
+a) 3 
+b) 4 
+c) 5 
+d) 6 
+Answer: d 
+ 
+
+50. Which function returns an array consisting of associative key/value pairs? 
+a) count() 
+b) array_count() 
+c) array_count_values() 
+d) count_values() 
+ 
+Answer: c 
+ 
+51. What will be the output of the following PHP code? 
+<?php 
+$fruits = array ("mango", "apple", "pear", "peach"); 
+$fruits = array_flip($fruits); 
+echo ($fruits[0]); 
+?> 
+a) mango 
+b) Error 
+c) peach 
+d) 0 
+ 
+Answer: b 
+ 
+52. Which of the functions is used to sort an array in descending order? 
+a) sort() 
+b) asort() 
+c) rsort() 
+d) dsort() 
+ 
+Answer: c 
+ 
+53. What will be

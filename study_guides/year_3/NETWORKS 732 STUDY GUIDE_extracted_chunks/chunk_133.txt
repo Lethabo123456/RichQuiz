@@ -1,0 +1,31 @@
+Chapter Three: Security Concepts 
+
+3.1 Introduction to Security Concepts 
+In the ﬁeld of information security, the foundation for understanding, evaluating, and mitigating 
+security risks is built on three elements collectively known as the CIA triad. The CIA triad includes 
+Conﬁdentiality, Integrity, and Availability. More so, almost every security breach or vulnerability 
+can be traced back to a compromise of at least one of these core elements (Lammle, 2015). The 
+CIA triad plays a critical role in guiding the development and evaluation of security strategies, 
+policies, and controls. 
+
+3.2 CIA Triad 
+Conﬁdentiality prevents the disclosure of data or information to unauthorized entities. The 
+organization must determine the sensitivity level of the data prior to implementing access 
+controls. Data classiﬁed with a higher sensitivity level should be protected with stricter access 
+controls. A variety of cyber threats can compromise the conﬁdentiality element, including Man- 
+in-the-Middle, eavesdropping, and unauthorized attackers (GeeksforGeeks, 2025). This element 
+is maintained through encryption, identiﬁcation, authentication, and authorization. 
+Integrity refers to the accuracy and consistency of data throughout its lifecycle. It is the assurance 
+that information has not been tampered with or altered and remains trustworthy. Cyber threats 
+like malware, man-in-the-middle, and insider threats can be detrimental to the integrity of the 
+data (GeeksforGeeks, 2025). Integrity in the information can be preserved through checksums, 
+version control, and digital signatures 
+
+Availability ensures information and resources are accessible to authorized users when needed. 
+If data or systems are unavailable, it leads to downtime, aﬀecting productivity and potentially 
+causing signiﬁcant ﬁnancial losses (Fortinet, 2025). A denial-of-service (DoS) and distributed 
+denial-of-service (DDoS) attacks are one of the many existing threats that jeopardize the 
+availability element (Lammle, 2015). Technologies such as RAID or redundant sites provide fault 
+tolerance to improve availability.  
+ 
+Figure 3.1: CIA Triad

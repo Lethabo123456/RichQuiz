@@ -1,0 +1,80 @@
+6.2.3 Multi-Modal Fusion Network 
+
+Example: 
+Real-world robots often receive diverse, noisy, and incomplete data from different sensors. Deep 
+learning allows us to fuse this data in a neural network that learns how to extract and combine 
+features from each sensor. 
+We’ll now build a Multi-Modal Fusion Network in PyTorch that takes inputs from: 
+• Camera (e.g., an RGB image → CNN) 
+• LIDAR (e.g., 1D distance array → FC layer) 
+• Ultrasonic (short-range reading → FC layer) 
+• IMU (accelerometer + gyroscope → FC or RNN) 
+
+The network outputs a navigation decision, such as: 
+• 0 = stop 
+• 1 = go forward 
+• 2 = turn left 
+• 3 = turn right
+
+import torch 
+import torch.nn as nn 
+import torch.nn.functional as F 
+ 
+class MultiModalFusionNet(nn.Module): 
+    def __init__(self, num_actions=4): 
+        super(MultiModalFusionNet, self).__init__() 
+
+ 
+        # CAMERA: CNN branch 
+        self.cnn_branch = nn.Sequential( 
+            nn.Conv2d(3, 16, kernel_size=5, stride=2), 
+            nn.ReLU(), 
+            nn.Conv2d(16, 32, kernel_size=3, stride=2), 
+            nn.ReLU(), 
+            nn.Flatten() 
+        ) 
+ 
+        # Compute CNN output shape after dummy input 
+        dummy_img = torch.zeros(1, 3, 64, 64) 
+        cnn_out_size = self.cnn_branch(dummy_img).shape[1] 
+ 
+        # LIDAR: simple 1D depth readings 
+        self.lidar_branch = nn.Sequential( 
+            nn.Linear(64, 32),  # Assuming 64 distance points 
+            nn.ReLU() 
+        ) 
+ 
+        # Ultrasonic: scalar or small vector input 
+        self.ultrasonic_branch = nn.Sequential( 
+
+            nn.Linear(4, 16),  # e.g., 4 directions 
+            nn.ReLU() 
+        ) 
+ 
+        # IMU: 6-axis (accel + gyro) vector 
+        self.imu_branch = nn.Sequential( 
+            nn.Linear(6, 16), 
+            nn.ReLU() 
+        ) 
+ 
+        # Fusion and classification 
+        fusion_input_size = cnn_out_size + 32 + 16 + 16 
+        self.fusion = nn.Sequential( 
+            nn.Linear(fusion_input_size, 128), 
+            nn.ReLU(), 
+            nn.Linear(128, num_actions) 
+        ) 
+ 
+    def forward(self, camera_img, lidar, ultrasonic, imu): 
+        cam_features = self.cnn_branch(camera_img) 
+        lidar_features = self.lidar_branch(lidar) 
+        us_features = self.ultrasonic_branch(ultrasonic) 
+
+        imu_features = self.imu_branch(imu) 
+ 
+        # Concatenate all features 
+        fused = torch.cat([cam_features, lidar_features, us_features, imu_features], dim=1) 
+ 
+        # Final decision 
+        out = self.fusion(fused) 
+        return F.softmax(out, dim=1)

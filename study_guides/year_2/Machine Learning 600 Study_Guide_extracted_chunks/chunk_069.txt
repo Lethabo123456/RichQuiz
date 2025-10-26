@@ -1,0 +1,17 @@
+t variables. The 
+edges coming from that node are the total possible values of that node. A leaf represents the 
+value based on the values given from the input variable in the path running from the root 
+node to the leaf (see Figure 4.1).  
+
+P a g e  | 40 
+ 
+ 
+                                                                                Figure 4.1: Decision Trees 
+ 
+Decision trees always start with a root node and end on a leaf. Notice that the trees don't 
+converge at any point; they split their way out as the nodes are processed. Figure 4.1 shows 
+a decision tree that classifies a loan decision. The root node is “Age” and has two branches 
+that come from it, whether the customer is younger or older than 55. The age of the client 
+determines what happens next. If the person is younger than 55, then the tree prompts you 
+to find out if he or she is a student. If the client is older than 55, then you are prompted to 
+check his or her credit rating. With this type of ML, you are using

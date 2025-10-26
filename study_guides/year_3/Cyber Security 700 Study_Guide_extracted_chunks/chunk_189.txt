@@ -1,0 +1,24 @@
+National Vulnerability Database and Common Vulnerability Scoring System 
+
+In the area of technical vulnerabilities, it is possible to be more precise and exhaustive. An outstanding 
+resource is the NIST National Vulnerability Database (NVD) and the related Common Vulnerability 
+Scoring System (CVSS) [FIRS15], described in NISTIR 7946, CVSS Implementation Guidance. The NVD 
+is a comprehensive list of known technical vulnerabilities in systems, hardware, and software. The 
+CVSS provides an open framework for communicating the characteristics of vulnerabilities. The CVSS 
+defines a vulnerability as a bug, a flaw, a weakness, or an exposure of an application, a system device, 
+or a service that could lead to a failure of confidentiality, integrity, or availability. The CVSS model 
+attempts to ensure repeatable and accurate measurement while enabling users to view the underlying 
+vulnerability characteristics used to generate numeric scores. The CVSS provides a common 
+measurement system for industries, organizations, and governments requiring accurate and 
+consistent vulnerability exploit and impact scores. 
+
+It is worthwhile to gain an understanding of the CVSS in order to understand the wide range of 
+vulnerabilities that affect systems. In addition, the systematic scheme for evaluating vulnerabilities in 
+the CVSS is useful in guiding the development of a similar systematic approach to other vulnerabilities 
+such as those related to organizational issues, policies and procedures, and physical infrastructure. 
+CVSS is widely accepted and used. For example, the Payment Card Industry Data Security Standard 
+(PCI DSS) standard recommends use of CVSS. 
+
+NIST National Vulnerability Database https://nvd.nist.gov 
+
+Figure 3.4 provides an example of one of the vulnerability entries in the NVD. 

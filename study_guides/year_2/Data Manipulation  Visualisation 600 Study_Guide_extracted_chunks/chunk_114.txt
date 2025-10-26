@@ -1,0 +1,36 @@
+ays start at zero, to avoid any 
+visual misrepresentations. 
+This section starts with a very simple, monochromatic bar chart showing the number of medals won by countries in 
+the 2018 Winter Olympics in PyeongChang, South Korea. 
+We added a .csv file to the ../data folder called 2018WinterOlympics.csv, and we plot the data with bar1.py: 
+ 
+ 
+import plotly.offline as pyo 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+df = pd.read_csv('../data/2018WinterOlympics.csv') 
+ 
+data = [go.Bar( 
+ 
+
+ 
+ 
+ 
+ 
+x=df['NOC'], # NOC stands for National Olympic Committee y=df['Total'] 
+)] 
+ 
+layout = go.Layout( 
+title='2018 Winter Olympic Medals by Country' 
+) 
+fig = go.Figure(data=data, layout=layout) 
+pyo.plot(fig, filename='bar1.html') 
+ 
+ 
+ 
+● 
+Note that Country names fall under the NOC column - NOC stands for National Olympic Committee. 
+● 
+We should mention that OAR stands for “Olympic Athletes from Russia”. Russia was banned from these Olympic 
+games, but some athletes were invited to com

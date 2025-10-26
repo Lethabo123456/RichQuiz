@@ -1,0 +1,17 @@
+, a specific application requires each node to be processed 
+in a very specific way. A common technique to accomplish this is to provide an iterator. So what is an 
+iterator? An iterator is an object that produces each element of a container, such as a linked list, one 
+element at a time. The two most common operations on iterators are ++ (the increment operator) and * 
+(the dereferencing operator). The increment operator advances the iterator to the next node in the list 
+while the dereferencing operator returns the info of the current node.  
+  
+
+96  
+  
+Note that an iterator is an object. So we need to define a class, which we will call linkedListIterator, to 
+create iterators to objects of the class linkedListType. The iterator class would have one member variable 
+pointing to (the current) node.  
+  
+//***********************************************************  
+//This class specifies the members to implement an iterator to a linked list.  
+//*************************************

@@ -1,0 +1,16 @@
+Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Nine, page 471-471. 
+
+ 
+152 
+ 
+Bottom-up design first identifies the data elements (items) and then groups them together in 
+data sets. In other words, it first defines attributes, and then groups them to form entities.  
+The two approaches are illustrated in Figure 9.14. Selecting a primary emphasis on top-down or 
+bottom-up procedures often depends on the scope of the problem or on personal preferences. 
+Although the two methodologies are complementary rather than mutually exclusive, a primary 
+emphasis on a bottom-up approach may be more productive for small databases with few entities, 
+attributes, relations, and transactions. For situations in which the number, variety, and complexity 
+of entities, relations, and transactions is overwhelming, a primarily top-down approach may be 
+easier. Most companies have standards for systems development and database design already in 
+pla

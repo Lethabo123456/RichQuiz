@@ -1,0 +1,29 @@
+at any variables created within a function are not 
+accessible outside the function. So in the preceding example, the variables $hello and $world that 
+are defined inside the function are not available to the calling code. The next example demonstrates 
+this:   
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” >  
+< head >  
+< title > Understanding variable scope < /title >  
+< link rel=”stylesheet” type=”text/css” href=”common.css” / > 
+< /head >  
+< body >  
+< h1 > Understanding variable scope < /h1 >  
+< ?php function 
+helloWithVariables() {  
+$hello = “Hello, “; 
+$world = “world!”;  
+return $hello . $world;  
+}  
+echo helloWithVariables() . “ < br/ > ”; echo 
+“The value of \$hello is: ‘$hello’ < br/ > ”; 
+
+83  
+echo “The value of \$world is: ‘$world’ < br/ > 
+”; ? >  
+< /body > 
+< /html >  
+  
+The script’s output is displayed in Figure 6.4, below.

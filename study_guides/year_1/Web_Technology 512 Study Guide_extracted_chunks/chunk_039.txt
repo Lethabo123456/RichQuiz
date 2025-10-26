@@ -1,0 +1,33 @@
+etween the two SCRIPT tags, add the following: 
+document.write( window.screen.height ); 
+ 
+(Notice the semicolon at the end of the line. We will use them to separate each line of 
+code from now on.) 
+ 
+Your new HTML page and JavaScript code should look like Figure 2.17 below: 
+ 
+Figure 2.17 – The write method 
+Save your work and open up the web page in a browser. You should see this: 
+ 
+ 
+WEB RESOURCE 
+ 
+http://www.w3schools.com/js
+/js_htmldom.asp 
+
+ 
+28 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+Figure 2.18 
+ 
+Instead of an alert box, we are now writing the screen height directly to the web page. 
+(Your screen height may well be different.) 
+ 
+Now cut the JavaScript from the BODY section and paste it into the HEAD section of 
+the HTML. Save your work and refresh the page in your browser. You should see this: 
+ 
+ 
+Figure 2.19 
+The reason the screen height is now at the top is that the code in the HEAD section 
+gets executed first. But the browser does not wait until the whole page loa

@@ -1,0 +1,46 @@
+When a class hierarchy is created, in what order are the constructors for the classes that make up 
+the hierarchy called? For example, given a subclass called B and a superclass called A, is A’s 
+constructor called before B’s, or vice versa? The answer is that in a class hierarchy, constructors are 
+called in order of derivation, from superclass to subclass.Further, since super( ) must be the first 
+statement executed in a subclass’ constructor,this order is the same whether or not super( ) is used. 
+If super( ) is not used, then the default or parameterless constructor of each superclass will be 
+executed. The following program illustrates when constructors are executed:   
+   
+// Demonstrate when constructors are called.   
+// Create a super class.  
+ class A {   
+A() {   
+System.out.println("Inside A's constructor.");   
+}   
+}   
+   
+// Create a subclass by extending class A.  
+class B extends A {   
+B() {   
+System.out.println("Inside B's constructor.");   
+}   
+}   
+   
+// Create another subclass by extending B.  
+class C extends B {   
+C() {   
+System.out.println("Inside C's constructor.");   
+}   
+}   
+class CallingCons {   
+             public static void main(String args[ ]) {   
+   
+C c = new C();   
+}   
+}   
+   
+The output from this program is shown here:  Inside A’s constructor   
+Inside B’s constructor   
+Inside C’s constructor   
+   
+As you can see, the constructors are called in order of derivation. If you think about it, it makes sense 
+that constructors are executed in order of derivation. Because a superclass has no knowledge of any 
+subclass, any initialization it needs to perform is separate from and possibly prerequisite to any 
+initialization performed by the subclass. Therefore, it must be executed first.    
+
+   

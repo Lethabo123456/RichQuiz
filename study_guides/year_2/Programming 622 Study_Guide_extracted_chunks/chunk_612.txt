@@ -1,0 +1,29 @@
+he sorting work is done in merging the sorted 
+sublists.  
+  
+The general algorithm for mergesort is as follows:  
+  
+if the list is of a size greater than 1  
+{  
+1. Divide the list into two sublists.  
+2. Mergesort the first sublist.  
+3. Mergesort the second sublist.  
+4. Merge the first sublist and the second sublist.  
+}  
+  
+As remarked previously, after dividing the list into two sublists—the first sublist and the second sublist— 
+these two sublists are sorted using mergesort. In other words, we use recursion to implement mergesort.  
+  
+We next describe the necessary algorithm to:  
+ Divide the list into two sublists of nearly equal size.  
+Mergesort both sublists.  
+Merge the sorted sublists.  
+  
+ 
+8.8.1  Divide  
+  
+Because data is stored in a linked list, we do not know the length of the list. Furthermore, a linked list is 
+not a random access data structure. Therefore, to divide the list into two sublists, we need to find the 
+middle node of the list.  
+  
+Consider the lis

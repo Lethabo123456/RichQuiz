@@ -1,0 +1,10 @@
+lly. To display images stored on the 
+hard drive requires a conversion to base64. For this we defined a conversion function named 
+“encode_image” and then used it inside our callback function. 
+● For our Output, ‘display-image’ is the component ID, and ‘src’ is the component_property we’re 
+affecting. 
+● We used pandas to obtain the name of our image file from the dataset using conditional selection. 
+Note that the table only includes the filename, not the PATH. For this we set our own path variable 
+inside the callback function. This way, we can modify our script to fit any other file structure. 
+● As of this writing, html.Img takes a height= argument, but not an alt= for providing alternate text 
+in the event an image can’t be retrieved.

@@ -1,0 +1,18 @@
+lumn and to 
+facilitate data lookups. You also know that the DBMS automatically creates a unique index for 
+the primary key of each table. You will learn in Chapter 11 about the various types of index 
+organization. In this step, you identify all required indexes and determine the best type of 
+organization to use based on the data usage patterns and performance requirements.  
+ 
+Identify the views and the type of views to be used on each table. As you learned in Chapter 8, 
+a view is useful to limit access to data based on user or transaction needs. Views can also be 
+used to simplify processing and end-user data access. In this step the designer must ensure that 
+all views can be implemented and that they provide only the required data. The designer must 
+also become familiar with the types of views supported by the DBMS and how they could help 
+meet system goals.  
+ 
+
+ 
+151 
+Define Integrity and Security Measures 
+Once the physical organization of the tables, indexes, and views are

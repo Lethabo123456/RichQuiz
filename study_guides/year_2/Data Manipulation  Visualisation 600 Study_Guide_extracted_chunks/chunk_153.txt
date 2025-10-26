@@ -1,0 +1,31 @@
+nput components. By harnessing 
+the power of callbacks, developers can create highly responsive and interactive web applications that cater to 
+the evolving needs of users. 
+In addition to its components, Dash emphasizes the importance of layout and state management. Dash 
+Layout, constructed using a combination of Dash HTML and Core Components, dictates the visual 
+arrangement of components within the application. Meanwhile, Dash State management, facilitated by 
+dcc.Store and dash.dependencies.State, enables the persistence of user state across callbacks, ensuring a 
+seamless and intuitive user experience. 
+Create a file called CoreComponents.py and add the following code. 
+Keep this file handy - you may want to add components to it that you find useful! 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+CoreComponents.py 
+import dash 
+import dash_core_components as dcc 
+import dash_html_components as html 
+ 
+app = dash.Dash() 
+ 
+app.layout = html.Div([ 
+ 
+# DROPDOWN https://dash.plot.ly/dash-core-components/dro

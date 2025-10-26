@@ -1,0 +1,38 @@
+4.4 Optimizing Layouts 
+Inflating layouts is an expensive process; each additional nested layout and included View directly 
+impacts on the performance and responsiveness of your application. To keep your applications smooth 
+and responsive, it’s important to keep your layouts as simple as possible and to avoid inflating entirely 
+new layouts for relatively small UI changes. 
+ 
+Watch out for Redundant Layout Containers  
+ 
+A Linear Layout within a Frame Layout, both of which are set to MATCH_PARENT, does nothing but 
+add extra time to inflate. Look for redundant layouts, particularly if you’ve been making significant 
+changes to an existing layout or are adding child layouts to an existing layout.  
+ 
+Layouts can be arbitrarily nested, so it’s easy to create complex, deeply nested hierarchies. Although 
+there is no hard limit, it’s good practice to restrict nesting to fewer than 10 levels. One common 
+example of unnecessary nesting is a Frame Layout used to create the single root node required for a 
+layout, as shown in the following snippet: 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<FrameLayout 
+xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent”> 
+<ImageView 
+android:id=“@+id/myImageView” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent” 
+android:src=“@drawable/myimage” 
+/> 
+<TextView 
+android:id=“@+id/myTextView” 
+android:layout_width=“match_parent” 
+android:layout_height=“wrap_content” 
+android:text=“@string/hello” 
+android:gravity=“center_horizontal” 
+android:layout_gravity=“bottom” 
+/> 
+</FrameLayout> 
+ 

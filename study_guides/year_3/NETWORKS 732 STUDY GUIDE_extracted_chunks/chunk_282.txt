@@ -1,0 +1,47 @@
+Third-party applications are available that provide a GUI interface for FTP, which is easier to use 
+than a command line. 
+
+Starting FTP and Logging In to an FTP Server 
+Of the two FTP ﬁle operations (download and upload), the ability to download ﬁles is deﬁnitely 
+the more crucial for you to have down as a network technician or sys admin. The reason it’s so 
+important for you to master is that network and client operating system drivers and patches are 
+located on FTP servers all over the Internet. 
+
+First, start the ftp utility as demonstrated earlier, and then follow these steps: 
+
+1. At the ftp command prompt, type open, a space, and the name of the FTP server, 
+like this: 
+
+C:\Users\tlammle>ftp 
+
+Page 149 of 202 
+ 
+ftp>
+open ftp.lammle.com 
+Connected to ftp.lammle.com. 
+220----------Welcome to Pure-FTPd [TLS] ---------- 
+220-You are user number 1 of 50 allowed. 
+220-Local time is now 11:45. Server port: 21. 
+220-IPv6 connections are also welcome on this server. 
+220 You will be disconnected after 15 minutes of inactivity. 
+User (ftp.lammle.com:(none)):enter 
+230 Anonymous user logged in 
+ftp> 
+As shown here, if the FTP server is available and running, you’ll receive a response welcoming you 
+to the server and asking you for a username. Right now, I just have Anonymous as the username 
+(enabled by default on the FTP server), which means that anyone can log in to it. (By the way, 
+don’t bother trying this on my server because I disabled it for obvious reasons as soon as I ﬁnished 
+writing this section.) 
+You can also start an FTP session by typing ftp, a space, and the address of the FTP server (for 
+example, ftp ftp.globalnettraining.com). This allows you to start the ftp utility and open a 
+connection in one step. Here’s an example: 
+C:\Users\tlammle>ftp ftp.globalnettraining.com 
+Connected to ftp.globalnettraining.com. 
+220 Microsoft FTP Service 
+User (ftp.globalnettraining.com:(none)):todd 
+331 Password required for todd. 
+Password:not shown when typed 
+230 User todd logged in. 
+ftp>quit 
+2. Enter a valid username, and press Enter. 
+3. Enter your password, and press Enter. (The password won’t show up when you type it.) 

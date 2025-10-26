@@ -1,0 +1,31 @@
+cluttered with 
+exception-handling code, which can make understanding and maintaining the 
+program difficult. This can distract the programmer from ensuring that the program 
+functions correctly. 
+ 
+ 
+
+260 | P a g e  
+ 
+ 
+In Sample Run 1, the value of divisor is nonzero, so no exception occurs. The 
+program calculates and outputs the quotient and terminates normally. In Sample 
+Run 2, the value entered for divisor is 0. The statement in Line 12 divides dividend 
+by the divisor. 
+However, the program does not check whether divisor is 0 before dividing dividend 
+by divisor. So the program crashes with an error message shown. Notice that the 
+error message is platform independent, that is, IDE dependent. Some IDEs might 
+not give this error message and might simply hang. 
+ 
+Next, consider Example below. This is the same program as in Example above, except 
+that in Line 8, the program checks whether divisor is zero. 
+ 
+ 
+ 
+
+261 | P a g e  
+ 
+ 
+ 
+ 
+In Sample Run 1, the value of divisor is n

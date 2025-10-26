@@ -1,0 +1,22 @@
+Figure 2.1 Full-mesh WAN 
+ 
+Mesh topologies and SONET rings are good choices for highly available enterprise networks. 
+But what about connections to the Internet or data backup connections? You might need to 
+establish more than one of these links. 
+ 
+As an example, imagine that you work for a data services firm called Legend PayNTime that 
+processes payroll for a large oil company in the Durban area. Every day, you receive updated 
+payroll information over a T1 link from your client, and every Thursday you compile this 
+information and then issue 2000 electronic funds transfer requests to the oil company’s bank. 
+What would happen if the T1 link between Legend PayNTime and the oil company suffered 
+damage in a flood and became unusable on a Thursday morning? How would you ensure that 
+the employees received their pay? If no redundant link to the oil company existed, you would 
+probably need to gather and input the data into your system at least partially by hand. Even 
+then, chances are that you wouldn’t process the electronic funds transfers in time. 
+ 
+In this type of situation, you would want a redundant connection between Legend PayNTime 
+and the oil company’s site. You might contract with two different service carriers to ensure 
+that a problem with one carrier won’t bring both connections down. Alternatively, you might 
+arrange with one service carrier to provide two different routes. However you provide 
+redundancy in your network topology, you should make sure that the critical data transactions 
+can follow more than one possible path from source to target.

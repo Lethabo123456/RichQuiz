@@ -1,0 +1,21 @@
+his topic you should be able to:  
+Learn about stacks  
+Examine various stack operations  
+Learn how to implement a stack as an array  
+Learn how to implement a stack as a linked list  
+Discover stack applications  
+Learn how to use a stack to remove recursion  
+  
+This chapter discusses a very useful data structure called a stack. It has numerous applications in computer 
+science.  
+  
+ 
+5.1  
+Stacks  
+  
+Suppose that you have a program with several functions. To be specific, suppose that you have the 
+functions A, B, C, and D in your program. Now suppose that function A calls function B, function B calls 
+function C, and function C calls function D. When function D terminates, control goes back to function C; 
+when function C terminates, control goes back to function B; and when function B terminates, control 
+goes back to function A. During program execution, how do you think the computer keeps track of the 
+function calls? What about recursive functions? How does the computer keep

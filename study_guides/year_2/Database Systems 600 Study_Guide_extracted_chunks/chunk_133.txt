@@ -1,0 +1,14 @@
+ey composed of more than one attribute.  
+Composite and Simple Attributes. Attributes are classified as simple or composite. A composite 
+attribute, not to be confused with a composite key, is an attribute that can be further subdivided to 
+yield additional attributes. A simple attribute is an attribute that cannot be subdivided. To facilitate 
+detailed queries, it is wise to change composite attributes into a series of simple attributes.  
+
+ 
+52 
+Single-Valued Attributes A single-valued attribute is an attribute that can have only a single value. 
+For example, a person can have only one ID number, and a manufactured part can have only one 
+serial number. Keep in mind that a single-valued attribute is not necessarily a simple attribute.  
+Multivalued Attributes Multivalued attributes are attributes that can have many values. For 
+instance, a person may have several college degrees. In the Chen ERM, multivalued attributes are 
+shown by a double line connecting the attribute to the entit

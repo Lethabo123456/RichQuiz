@@ -1,0 +1,24 @@
+4 Topic 4: Inheritance, Polymorphism & Interface 
+ 
+4.1 Introduction  
+The previous chapter demonstrates how to create new types by declaring classes. The current 
+chapter explores the relationship among objects in the real world and how to model these 
+relationships in your code. This chapter focuses on specialization, which is implemented in C# 
+through inheritance. This chapter also explains how instances of more specialized classes can 
+be treated as if they were instances of more general classes, a process known as 
+polymorphism. This chapter ends with a consideration of sealed classes, which cannot be 
+specialized, as well as abstract classes, which exist only to be specialized, and a discussion of 
+the root of all classes, the class Object. 
+
+4.2 Inheritance 
+In C#, the specialization relationship is typically implemented using inheritance. This is not the 
+only way to implement specialization, but it is the most common and most natural way to 
+implement this relationship. Saying that ListBox inherits from (or derives from) Window 
+indicates that it specializes Window. Window is referred to as the base class, and ListBox is 
+referred to as the derived class. That is, ListBox derives its characteristics and behaviors from 
+Window and then specializes to its own particular needs. 
+ 
+Inheritance allows you to create a general class and then define specialized classes that have 
+access to the members of the general class. These new specialized classes can extend 
+functionality by adding their own new unique data and behaviors. Inheritance is associated 
+with an “is a” relationship. A specialized class “is a” form of the general class. 

@@ -1,0 +1,25 @@
+*p is 78; after the statement *p = 24; 
+executes, the value of *p is 24.. 
+ 
+ 
+
+157 | P a g e  
+ 
+ 
+ 
+
+158 | P a g e  
+ 
+ 
+Line 22: Value stored in radius: 4.90 The preceding program works as follows. The 
+statement in Line 7 declares radius to be a variable of type double and the statement 
+in Line 8 declares radiusPtr to be a pointer variable of type double. The statement in 
+Line 10 stores 2.5 in radius and the statement in Line 11 stores the address of radius 
+in radiusPtr. The statement in Line 12 outputs the radius and area of the circle using 
+the value stored in the memory location radius.  
+ 
+The statement in Line 13 outputs the radius and area of the circle using the value 
+stored in the memory location to which radiusPtr is pointing. Note that the output of 
+the statements in Lines 12 and 13 is the same because radiusPtr points to radius. 
+Next, the statement in Line 14 prompts the user to input the radius and the statement 
+in Line 15 stores the radius in the memory locatio

@@ -1,0 +1,12 @@
+ata Model Basic Building Blocks 
+The basic building blocks of all data models are entities, attributes, relationships, and constraints. 
+An entity is a person, place, thing, or event about which data will be collected and stored. An entity 
+represents a type of object in the real world, and each entity occurrence is unique and distinct. For 
+example, a CUSTOMER entity would have many distinguishable customer occurrences, such as 
+John Smith, Pedro Dinamita, and Tom Strickland. Entities may be physical objects and may also be 
+abstractions.  
+An attribute is a characteristic of an entity. For example, a CUSTOMER entity would be described 
+by attributes such as customer last name, customer first name, customer phone number, customer 
+address, and customer credit limit. Attributes are the equivalent of fields in file systems.  
+A relationship describes an association among entities. For example, a relationship exists between 
+customers and agents that can be described as follows: an agent

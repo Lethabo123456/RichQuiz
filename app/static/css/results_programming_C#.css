@@ -1,0 +1,178 @@
+/* ==========================================
+   C# Quiz Results - Extravagant Theme
+   ========================================== */
+
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #2e004f);
+    color: #f3f3f3;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  /* Card Container */
+  .card {
+    background: rgba(30, 0, 60, 0.9);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(81, 43, 212, 0.9),
+                0 0 50px rgba(0, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Header */
+  .card h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #00FFFF;
+    text-shadow: 0 0 10px #68217A, 0 0 20px rgba(0, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Score Section */
+  .score {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FFD700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1.2rem 0;
+    height: 22px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.6);
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #512BD4, #00FFFF);
+    transition: width 1s ease-in-out;
+  }
+  
+  /* Result Message */
+  .result {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    text-shadow: 0 0 6px rgba(0, 255, 255, 0.7);
+  }
+  
+  /* Time Taken */
+  .time {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Adaptive Feedback */
+  .adaptive-feedback {
+    background: rgba(20, 20, 40, 0.8);
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border-left: 5px solid #FFD700;
+    box-shadow: inset 0 0 10px rgba(81, 43, 212, 0.6);
+  }
+  
+  .adaptive-feedback h3 {
+    color: #FFD700;
+    text-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+    margin-bottom: 1rem;
+  }
+  
+  .adaptive-feedback ul {
+    padding-left: 1.2rem;
+  }
+  
+  .adaptive-feedback li {
+    margin-bottom: 0.6rem;
+    color: #e0e0e0;
+  }
+  
+  /* Summary Section */
+  .summary h3 {
+    color: #00FFFF;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 6px rgba(0, 255, 255, 0.7);
+  }
+  
+  .qa {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background: rgba(40, 0, 80, 0.7);
+    box-shadow: inset 0 0 8px rgba(81, 43, 212, 0.5);
+  }
+  
+  .qa.correct {
+    border-left: 6px solid #00FF99;
+    background: rgba(0, 255, 153, 0.1);
+  }
+  
+  .qa.incorrect {
+    border-left: 6px solid #FF4D4D;
+    background: rgba(255, 77, 77, 0.1);
+  }
+  
+  .reasoning {
+    background: rgba(10, 10, 30, 0.8);
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-top: 0.6rem;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+  }
+  
+  .reasoning strong {
+    color: #FFD700;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #68217A, #00FFFF);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7),
+                0 0 20px rgba(81, 43, 212, 0.7);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background: linear-gradient(90deg, #00FFFF, #FFD700);
+    color: #000;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 1),
+                0 0 35px rgba(0, 255, 255, 1);
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

@@ -1,0 +1,20 @@
+The negation of a conjunction: ¬(p ∧ q), and the disjunction of negations: 
+(¬p) ∨ (¬q) can be tabulated as follows: 
+ 
+p   q   p ∧ q   ¬(p ∧ q)  ¬p   ¬q   (¬p) ∨ (¬q) 
+-------------------------------------------------
+T   T   T       F         F    F     F 
+-------------------------------------------------
+T   F   F       T         F    T     T 
+-------------------------------------------------
+F   T   F       T         T    F     T 
+-------------------------------------------------
+F   F   F       T         T    T     T 
+-------------------------------------------------
+ 
+Logical NOR 
+The logical NOR is an operation on two logical values, typically the values of 
+two propositions, that produces a value of trueif both of its operands are false. 
+In other words, it produces a value of false if at least one of its operands is true. 
+↓ is also known as the Peirce arrow after its inventor, Charles Sanders Peirce, 
+and is a Sole sufficient operator.

@@ -1,0 +1,32 @@
+Ordinal level columns 
+As far as ordinal columns go, we are looking at date and stars. For each of these columns, let's look at 
+what the describe method returns (Sinan, 2016): 
+ 
+yelp_raw_data['stars'].describe() 
+output: 
+# count    10000.000000 
+# mean         3.777500 
+# std          1.214636 
+# min          1.000000 
+# 25%          3.000000 
+# 50%          4.000000 
+# 75%          5.000000 
+# max          5.000000 
+ 
+yelp_raw_data['stars'].value_counts() 
+Output 
+# 4    3526 
+# 5    3337 
+# 3    1461 
+# 2     927 
+# 1     749 
+ 
+The value_counts method will return the distribution of values for any column. In this case, we see 
+that the star rating 4 is the most common, with 3526 values, followed closely by the rating 5. We can 
+also plot this data to get a nice visual. First, let's sort by star rating, and then use the prebuilt plot 
+method to make a bar chart. Try out the following codes which employs Matplotlib: 
+ 
+import datetime 
+dates = yelp_raw_data['stars'].value_counts() 
+dates.sort() 
+dates.plot(kind='bar') 

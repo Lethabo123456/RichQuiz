@@ -1,0 +1,28 @@
+3.3  THE DRIVERMANAGER CLASS:  
+  
+The DriverManager Class is actually a utility class used to manage JDBC drivers. The class provides methods 
+to obtain a connection through a driver, register and deregister drivers, set up logging, and set login 
+timeouts for database access. The important DriveManager methods are listed below. Because they are 
+static, they may be referenced through the interface. SQL Exception is thrown if there is trouble with the 
+remote database.  
+  
+a)  Public Static Synchronized Connection getConnection (String  url, properties info)    throws 
+SQLException.  
+Attempts to return a reference to an object implemented from the Connection interface. The method 
+sweeps through a vector of stored Driver classes, passing the URL string and Properties object info to each 
+in turn. The first Driver class that returns a Connection is used, info are a reference to a Properties 
+container object of tags/value pairs typically username/password. The method allows several attempts to 
+make an authorized connection for each driver in the vector.  
+ 
+b) Public static synchronized Connection getConnection (String url) throws SQLException  
+Calls getConnection (url, info) with an empty Properties object (info). Public static synchronized 
+Connection getConnection (String url, String user, String password) Connectivity throws SQLException. 
+Creates a Properties object (info), stores the user and password strings into it, and then calls 
+getConnection (url, info).  
+  
+c) Public static synchronized void registerDriver (java.sql.Driver driver) throws SQLException 
+Stores the instance of the Driver interface implementation into a vector of drivers, along with an 
+instance of securityContext, which identifies where the driver came from.  
+  
+d) Public static void setLogWriter (java.io.PrintWriter out)  
+Sets a private static java.io.PrintWriter reference to the PrintWriter object passed to the method.

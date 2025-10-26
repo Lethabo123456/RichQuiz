@@ -1,0 +1,23 @@
+the Main Activity. You will also see how sorting can be implemented based on the settings screen. 
+To make this work properly, you will explore a new life-cycle method, onResume, that runs whenever 
+an activity becomes active. 
+ 
+ 
+5.2 Lists, Adapters, ViewHolders, and LayoutManagers 
+Four components are required for any list implementation in Android: a RecyclerView widget, an 
+Adapter, a ViewHolder, and a LayoutManager. The RecyclerView widget is an object that can display 
+a vertical list of items that can be scrolled through. In earlier versions of Android, lists were 
+implemented with the ListView widget. RecyclerView is a more powerful widget and is recommended 
+ 
+ 
+ 
+LEARNING OUTCOMES 
+After reading this Section of the guide, the learner should be able to: 
+ 
+•
+Implement the ubiquitous list. Lists are an effective way to organize and
+present data in the limited “real estate” of a mobile app. 
+•
+Demonstrating how to code lists, retrieving and deleting data from the 
+database. 
+•

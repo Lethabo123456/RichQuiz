@@ -1,0 +1,18 @@
+3.2 Paths
+Path planning is the process of determining a feasible route for a robot or autonomous agent to
+move from a start point to a goal point while avoiding obstacles. It is a critical task in robotics,
+autonomous vehicles, and navigation systems, ensuring safe, efficient, and collision-free
+movement in complex environments. 
+
+Path planning involves two main challenges: 
+• Feasibility: Finding a path that does not intersect with obstacles. 
+• Optimality: Finding the best path according to criteria like shortest distance, minimum 
+time, energy efficiency, or smoothness. 
+
+We mainly have graph-based search algorithms and sampling-based algorithms. For this module, 
+we will primarily focus on graph-based search algorithms such as A* (A-Star, sometimes written 
+as A\*) and Dijkstra’s Algorithm. Before applying these algorithms, the search environment needs 
+to first be discretized into graph form. Thereafter, it is treated as normal mathematical graph 
+composed of nodes (vertices) and edges. The nodes represent positions or states and the edges 
+represent possible connections between the nodes and is associated with “cost” (in the form of 
+distance, time or energy).

@@ -1,0 +1,94 @@
+Create Webots Controller 
+Create file: C:\robot_project\src\simple_webots_robot.py 
+#!/usr/bin/env python3 
+""" 
+Simple Webots Robot Controller 
+Connects our ROS2 robot to Webots simulation 
+""" 
+ 
+import rclpy 
+from rclpy.node import Node 
+from geometry_msgs.msg import Twist 
+from std_msgs.msg import String 
+ 
+# Webots controller imports 
+from controller import Robot 
+class WebotsRobotController(Node): 
+    def __init__(self): 
+        # Initialize Webots 
+        self.robot = Robot() 
+        self.timestep = int(self.robot.getBasicTimeStep()) 
+         
+        # Get motors 
+        self.left_motor = self.robot.getDevice('left_motor') 
+        self.right_motor = self.robot.getDevice('right_motor') 
+         
+        # Set motors to velocity control 
+        self.left_motor.setPosition(float('inf')) 
+        self.right_motor.setPosition(float('inf')) 
+        self.left_motor.setVelocity(0.0) 
+        self.right_motor.setVelocity(0.0) 
+         
+        # Initialize ROS2 
+        super().__init__('webots_robot_controller') 
+         
+        # Listen for movement commands 
+
+        self.movement_subscriber = self.create_subscription( 
+            Twist, 'robot_movement', self.move_robot, 10 
+        ) 
+         
+        # Send robot info 
+        self.info_publisher = self.create_publisher(String, 'webots_info', 10) 
+         
+        # Timer to send info 
+        self.info_timer = self.create_timer(1.0, self.send_info) 
+         
+        print(" Webots Robot Controller Started!") 
+ 
+    def move_robot(self, msg): 
+        """Convert ROS movement to Webots motor commands""" 
+        linear_speed = msg.linear.x 
+        angular_speed = msg.angular.z 
+         
+        # Convert to wheel speeds (simple differential drive) 
+        wheel_separation = 0.2  # distance between wheels 
+        wheel_radius = 0.04     # wheel radius 
+         
+        # Calculate wheel speeds 
+
+        left_speed = (linear_speed - angular_speed * wheel_separation / 2.0) / wheel_radius 
+        right_speed = (linear_speed + angular_speed * wheel_separation / 2.0) / wheel_radius 
+        # Set motor velocities 
+        self.left_motor.setVelocity(left_speed) 
+        self.right_motor.setVelocity(right_speed) 
+         
+        print(f" Moving: Linear={linear_speed:.2f}, Angular={angular_speed:.2f}") 
+ 
+    def send_info(self): 
+        """Send robot information""" 
+        msg = String() 
+        msg.data = "Webots robot is running!" 
+        self.info_publisher.publish(msg) 
+ 
+    def step(self): 
+        """Step the simulation""" 
+        return self.robot.step(self.timestep) != -1 
+ 
+def main(): 
+    rclpy.init() 
+    controller = WebotsRobotController() 
+     
+
+    # Main loop 
+    while rclpy.ok() and controller.step(): 
+        rclpy.spin_once(controller, timeout_sec=0) 
+     
+    controller.destroy_node() 
+    rclpy.spin_once(controller, timeout_sec=0) 
+     
+    controller.destroy_node() 
+    rclpy.shutdown() 
+ 
+if __name__ == '__main__': 
+    main()

@@ -1,0 +1,26 @@
+2.5.1 Traffic Shaping 
+When a network experiences high volumes of traffic, users benefit from bandwidth management 
+techniques such as traffic shaping. Also known as packet shaping, traffic shaping involves 
+controlling specific aspects of data packets, streams, or connections to regulate the type and 
+amount of traffic moving across a network or interface at any given time. The main objective is 
+to prioritize critical traffic for timely delivery while enhancing overall network performance. 
+Traffic shaping may include: 
+
+• Buffering (delaying less-critical traffic) 
+• Prioritizing more important traffic 
+• Limiting the volume of traffic entering or leaving an interface within a set time frame 
+• Restricting the instantaneous data transfer rate (throughput) on an interface 
+ 
+The last two methods fall under a subset of traffic shaping known as traffic policing, which differs 
+in that it discards excess traffic instead of delaying it. For instance, an Internet Service Provider 
+(ISP) may set a maximum bandwidth limit for a customer to prevent them from using more than 
+their allocated share of the Wide Area Network (WAN). This practice helps the ISP forecast the 
+capacity it needs to lease from upstream providers and reduces costs by not having to plan for 
+all customers using full bandwidth simultaneously—a scenario that's unlikely. Some ISPs allow 
+users to select their maximum daily data volume or peak throughput rate, with pricing based on 
+the chosen limits. More advanced forms of traffic policing adapt in real-time to current network 
+conditions. For example, an ISP might temporarily allow customers to exceed their normal limits 
+during periods of low network usage. Figure 2-5 demonstrates the difference in traffic flow on an 
+unrestricted interface versus one managed through traffic policing. 
+ 
+Figure 2- 5 Traffic shaping

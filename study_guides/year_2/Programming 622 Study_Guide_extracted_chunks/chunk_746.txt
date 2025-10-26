@@ -1,0 +1,27 @@
+be reconstructed at node 
+30.  
+  
+
+367  
+  
+Next, we insert 15; see Figure 9-23(g). The insertion of node 15 does not require any part of the tree to 
+be reconstructed. We need to only adjust the balance factor of nodes 20, 30, and 50.  
+  
+Next, we insert 28; see Figure 9-23(h). The insertion of node 28 also does not require any part of the tree 
+to be reconstructed. We need only to adjust the balance factor of node 20.  
+  
+Next, we insert 25. The insertion of 25 requires a double rotation at node 30. Figure 9-23(i) shows both 
+rotations in sequence. In Figure 9-23(i), the tree is first rotated left at node 20 and then right at node 30.  
+  
+The following function creates a node, stores the info in the node, and calls the function insertIntoAVL to 
+insert the new node in the AVL tree:  
+  
+template <class elemT>  
+void insert(const elemT &newItem)  
+{  
+bool isTaller = false;  
+AVLNode<elemT> *newNode;  
+  
+newNode = new AVLNode<elemT>; 
+newNode->info = newItem; newNode-
+>bfactor =

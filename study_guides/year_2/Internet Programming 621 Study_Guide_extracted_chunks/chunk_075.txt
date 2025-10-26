@@ -1,0 +1,23 @@
+ion used in all of 
+the tests.  
+PHP provides a more elegant way to run these types of tests: the switch statement. With this 
+statement, you include the expression to test only once, then provide a range of values to test it 
+against, with corresponding code blocks to run if the values match. Here is the preceding 
+example rewritten using switch :  
+  
+switch ( $userAction ) { case 
+“open”: // Open the file break; 
+case “save”: // Save the file 
+break; case “close”: // Close the 
+file break; case “logout”: // Log 
+the user out break; default: 
+
+39  
+print “Please choose an 
+option”;  
+}  
+  
+As you can see, although the second example has more lines of code, it is a cleaner approach and 
+easier to maintain. Here is how it works. The first line features the switch statement, and includes 
+the condition to test — in this case, the value of the $userAction variable — in parentheses. Then, a 
+series of case statements test the expression against various values: ”open” , ” save” , and so o

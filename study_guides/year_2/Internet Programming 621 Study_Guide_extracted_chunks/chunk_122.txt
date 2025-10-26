@@ -1,0 +1,18 @@
+o extract. The function returns a new array containing copies of the elements you 
+extracted (it does not touch the original array). For example:  
+  
+
+60  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$authorsSlice = array_slice( $authors, 1, 2 ); // 
+Displays “Array ( [0] = > Kafka [1] = > Tolkien )” 
+print_r( $authorsSlice );  
+  
+This example extracts the second and third elements from the $authors array and stores the 
+resulting array in a new variable, $authorsSlice . The code then uses print_r() to display the slice. 
+Note that array_slice() does no t preserve the keys of the original elements, but instead re-indexes 
+the elements in the new array, starting from zero. So whereas “ Kafka ” has an index of 1 in the 
+$authors array, it has an index of 0 in the $authorsSlice array.  
+  
+In case you are wondering, yes you can use array_slice() with associative arrays. Although 
+associative arrays do not have numeric indices, PHP does remember the order of the ele

@@ -1,0 +1,28 @@
+Figure 1- 14: Network Efficiency Measuring 
+
+Network Efficiency 
+ Average to peak load deviation 
+ Collision Rate 
+ Utilization Rate 
+
+Utilization rate is another widely accessible statistic about the health of a network. This statistic is 
+available in Novell’s console monitor and WindowsNT performance monitor as well as any 
+optional LAN analysis software. Utilization in an average network above 35 percent indicates 
+potential problems. This 35 percent utilization is near optimum, but some networks experience 
+higher or lower utilization optimums due to factors such as packet size and peak load deviation. 
+A switch is said to work at “wire speed” if it has enough processing power to handle full Ethernet 
+speed at minimum packet sizes. Most switches on the market are well ahead of network traffic 
+capabilities supporting the full “wire speed” of Ethernet, 14,480 pps (packets per second), and 
+Fast Ethernet, 148,800 pps. 
+
+1.15.3 Routers 
+Routers work in a manner similar to switches and bridges in that they filter out network traffic. 
+Rather than doing so by packet addresses, they filter by specific protocol. Routers were born out 
+of the necessity for dividing networks logically instead of physically. An IP router can divide a 
+network into various subnets so that only traffic destined for particular IP addresses can pass 
+between segments. Routers recalculate the checksum, and rewrite the MAC header of every 
+packet. The price paid for this type of intelligent forwarding and filtering is usually calculated in 
+terms of latency, or the delay that a packet experiences inside the router. Such filtering takes 
+more time than that exercised in a switch or bridge which only looks at the Ethernet address. In 
+more complex networks network efficiency can be improved. An additional benefit of routers is 
+their automatic filtering of broadcasts, but overall they are complicated to setup. 

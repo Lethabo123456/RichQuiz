@@ -1,0 +1,30 @@
+s an object. JavaScript provides a 
+special constructor function called Object() to build the object. The return value of the 
+Object() constructor is assigned to a variable. 
+ 
+The variable contains a reference to the new object. The properties assigned to the 
+object are not variables and are not defined with the var keyword. 
+ 
+Example 1: 
+This example demonstrates how to create an object: 
+ 
+Figure 6.1 – How to create an object 
+ 
+
+ 
+90 
+ 
+SIX | JAVASCRIPT OBJECTS 
+Example 2: 
+This example demonstrates how to create an object with a User-Defined Function. 
+Here this keyword is used to refer to the object that has been passed to a function: 
+ 
+Figure 6.2 – How to create an object with user defined functions 
+ 
+6.1.4 Defining Methods for an Object 
+The previous examples demonstrate how the constructor creates the object and 
+assigns properties. But we need to complete the definition of an object by assigning 
+methods to it. 
+ 
+Example: 
+Here is a simple example to show how to add a f

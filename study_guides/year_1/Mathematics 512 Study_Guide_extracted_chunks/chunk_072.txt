@@ -1,0 +1,33 @@
+Case 3 
+The denominator contains irreducible quadratic factors, none of which are 
+repeated. 
+When reducing such functions to partial fractions if there is a term in the 
+denominator of the form 𝑎𝑥2  +  𝑏𝑥 +  𝑐, where 𝑏2 − 4𝑎𝑐 <  0, then the 
+numerator for that partial fraction will be of the form 𝐴𝑥 +  𝐵. 
+ 
+For example,  
+ 
+Since the degree of the numerator is less than the degree of the denominator 
+we do not have to divide first. 
+Since 𝑥3 + 4𝑥 = 𝑥(𝑥2 + 4) can't be factored any further we have: 
+ 
+Multiplying both sides by 𝑥(𝑥2 + 4), we have: 
+ 
+From this equation we can match terms of the same degree to determine the 
+coefficients by solving the following system of equations: 
+
+Case 4 
+The denominator contains a repeated irreducible quadratic factor. 
+Functions of this form are the same as those in case 3 only there is a term in 
+the denominator that is repeated or is a constant multiple of another. 
+ 
+For example,  
+ 
+If we were to expand the denominator we would see that its degree is 
+greater than the degree of the numerator so we do not have to divide 
+first.  
+Since the function cannot be factored any further we have: 
+ 
+Multiplying both sides by (𝑥 + 1)(𝑥2 + 4)2, we have: 
+From this equation we can match terms of the same degree to determine the 
+coefficients by solving the following system of equations:

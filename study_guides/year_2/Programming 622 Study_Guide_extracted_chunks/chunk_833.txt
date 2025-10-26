@@ -1,0 +1,59 @@
+t;  
+  
+source = sVertex;  
+  
+bool *mstv;  
+mstv = new bool[gSize];  
+  
+for (int j = 0; j < gSize; j++)  
+{ mstv[j] = false; edges[j] 
+= source;  
+edgeWeights[j] = weights[source][j];  
+}  
+  
+mstv[source] = true;  
+edgeWeights[source] = 0;  
+
+410  
+  
+  
+for (int i = 0; i < gSize - 1; i++)  
+{  
+minWeight = DBL_MAX;  
+  
+for (int j = 0; j < gSize; j++) if 
+(mstv[j])  
+for (int k = 0; k < gSize; k++) if (!mstv[k] && 
+weights[j][k] < minWeight)  
+{  
+endVertex = k; startVertex 
+= j;  
+minWeight = weights[j][k];  
+}  
+  
+mstv[endVertex] = true; edges[endVertex] 
+= startVertex;  
+edgeWeights[endVertex] = minWeight;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end for  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end minimumSpanning  
+  
+The definition of the function minimumSpanning contains three nested for loops. Therefore, in the worst 
+case, Prim’s algorithm given in this section is of the order O(n3). It is possible to design Prim’s algorithm 
+so that it is of the order O(n2); Programming Exercise 5 at the end

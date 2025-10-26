@@ -1,0 +1,27 @@
+of a free server; when a customer gets ready to do business and a server is available, 
+set the server to busy; when the simulation ends, some of the servers might still be busy, so return the 
+number of busy servers; after each time unit, reduce the transactionTime of each busy server by one time 
+unit; and if the transactionTime of a server becomes zero, set the server to free. The following class, 
+serverListType, 
+implements 
+the 
+list 
+of 
+servers 
+as 
+an 
+ADT: 
+//************************************************************  
+// class serverListType  
+// This class specifies the members to implement a list of servers.  
+//************************************************************ class 
+serverListType  
+{ public: serverListType(int num = 1);  
+//Constructor to initialize a list of servers  
+//Postcondition: numOfServers = num  
+// A list of servers, specified by num, is created and // 
+each server is initialized to "free".  
+  
+~serverListType();  
+//Destructor  
+//Postconditio

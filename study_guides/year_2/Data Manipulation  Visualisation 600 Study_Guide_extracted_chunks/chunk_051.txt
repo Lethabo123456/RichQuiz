@@ -1,0 +1,25 @@
+3.4.2 Reshape an Array 
+The numpy.reshape() function is used to modify the shape of an array without changing its data. It takes the desired 
+shape as an argument and returns a new array with the specified shape. This is particularly useful when you want to 
+change the dimensions of an array while preserving the order of its elements. 
+ 
+3.4.3 Concatenation of Arrays 
+The numpy.concatenate() function is used to join two or more arrays along a specified axis. It takes a tuple or list of 
+arrays as its first argument and the axis along which the arrays will be joined as the second argument. The second 
+argument is optional. 
+ 
+3.4.4 Splitting of Arrays 
+The numpy.split() function divides an array into multiple sub-arrays along a specified axis. It takes the array to be 
+split and a list of indices indicating the split points. 
+ 
+3.4.5 Transpose the array 
+The numpy.transpose() function permutes the dimensions of an array. It effectively swaps the rows and columns of 
+a 2D array as shown below. 
+
+3.4.6 Flatten a multi-dimensional array to a 1D array 
+The numpy.flatten() function is used to convert a multi-dimensional array into a 1D array by flattening it in row-major 
+order, as shown below. 
+ 
+3.4.7 Fast Sorting in NumPy  
+The np.sort and np.argsort functions allows you to perform fast sorting operations on NumPy arrays. np.sort returns 
+a sorted copy of the input array whilst argsort returns the indices of the sorted elements.

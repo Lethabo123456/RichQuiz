@@ -1,0 +1,17 @@
+int of the class rectangleType is 
+executed. In the statement in Line 5, the function print associated with the class 
+boxType is executed. Recall that, if a derived class overrides a member function of the 
+base class, the redefinition applies only to the objects of the derived class. Thus, the 
+output of the statement in Line 3 is (as defined in the class rectangleType): 
+ 
+Length = 5.0; Width = 3.0 
+ 
+The output of the statement in Line 5 is (as defined in the class boxType):  
+Length = 6.0; Width = 5.0; Height = 4.0 
+ 
+When the object myBox enters its scope, the constructors of both the classes 
+rectangleType and boxType execute. Note that the constructors of a base class are 
+not inherited by a derived class. So if a base class contains private data members, 
+only base class constructors can construct the base class data members, including 
+the base class part of a derived class. In this case, derived class constructors can only 
+construct the additional members specified in its d

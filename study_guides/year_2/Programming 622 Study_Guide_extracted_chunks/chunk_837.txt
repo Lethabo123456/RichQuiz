@@ -1,0 +1,20 @@
+Because the graph has no cycles, the following is true:  
+There exists a vertex v in G such that v has no successor.  
+There exists a vertex u in G such that u has no predecessor.  
+  
+  
+  
+
+412  
+  
+Suppose that the array topologicalOrder (of size n, the number of vertices) is used to store the vertices of 
+G in topological order. Thus, if a vertex, say u, is a successor of the vertex v and topologicalOrder[j] = v 
+and topologicalOrder[k] = u, then j < k.  
+The topological sort algorithm can be implemented either using the depth-first traversal or the 
+breadthfirst traversal. This section discusses how to implement topological ordering using the breadth-
+first traversal.   
+  
+We extend the definition of the class graphType (using inheritance) to implement the breadth-first 
+topological ordering algorithm. Let us call this class topologicalOrderType. Next, we give the definition of 
+the class that includes the functions to implement the topological ordering algorithm.  
+//**********

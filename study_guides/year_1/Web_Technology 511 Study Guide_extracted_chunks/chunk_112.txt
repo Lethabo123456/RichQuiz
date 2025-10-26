@@ -1,0 +1,24 @@
+7.3 TABLE HEADINGS 
+Table headings provide information about the data in the table. You can use the <th> 
+tag to add headings in a table. The <th> tag defines the cell; you do not have to use 
+the <td> tag. 
+For example: 
+The text enclosed within the <th> tag appears bold and centered. This helps to 
+identify the text as a heading of a column. 
+ 
+Exhibit 0-8: The use of the <th> tag to create a table heading 
+ 
+7.4 SPANNING A CELL 
+Spanning cells across rows and columns allows you to display grouped information in 
+a table. The COLSPAN or ROWSPAN attribute is used with the <td> tag to determine 
+the number of columns or rows you want to span. To span a cell across three columns, 
+use the following code: 
+
+<table border width="50%"
+<tr>
+<th colspan="4">Class register</th>
+</tr>
+ 
+You can also span a cell across two or more rows by using the ROWSPAN attribute. 
+ 
+Exhibit 0-9: The use of the COLSPAN attribute 

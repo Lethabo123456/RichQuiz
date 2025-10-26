@@ -1,0 +1,50 @@
+ml.Div([ 
+html.Div([ 
+dcc.Dropdown( 
+id='xaxis', 
+ 
+options=[{'label': i.title(), 'value': i} for i in features], 
+value='displacement' 
+ 
+ 
+html.Div([ 
+ 
+dcc.Dropdown( 
+id='yaxis', 
+
+ 
+ 
+ 
+ 
+ 
+options=[{'label': i.title(), 'value': i} for i in features], 
+value='acceleration' 
+) 
+ 
+def update_graph(xaxis_name, yaxis_name): 
+ 
+'layout': go.Layout( 
+xaxis={'title': xaxis_name.title()}, 
+ 
+yaxis={'title': yaxis_name.title()}, 
+margin={'l': 40, 'b': 40, 't': 10, 'r': 0}, 
+hovermode='closest' 
+ 
+ 
+ 
+ 
+Which results in a graph like this: 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+For another example of multiple inputs, visit the Dash documentation at 
+https://dash.plot.ly/getting-started-part-2. This shows not only dropdown lists but also radio 
+buttons and a slider used as simultaneous input choices on the same graph. 
+     6.4.8 Multiple Outputs 
+Each Dash callback function can only update a single Output property. In the above examples we 
+show how to pass multiple inputs inside an Input list parameter. To update

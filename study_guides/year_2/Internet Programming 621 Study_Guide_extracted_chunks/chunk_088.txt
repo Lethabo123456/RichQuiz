@@ -1,0 +1,34 @@
+SCII 10)  
+\r  
+A carriage return character (ASCII 13)  
+\t  
+A horizontal tab character (ASCII 9)  
+\v  
+A vertical tab character (ASCII 11)  
+\f  
+A form feed character (ASCII 12)  
+\\  
+A backslash (as opposed to the start of an escape sequence)  
+\$  
+A $ symbol (as opposed to the start of a variable name)  
+\”  
+A double quote (as opposed to the double quote marking the end of a 
+string)  
+  
+  
+  
+By the way, it is easy to specify multi-line strings in PHP. To do this, just insert newlines into 
+the string literal between the quotation marks:  
+  
+$myString = “  
+I stay too long; but here my Father comes:  
+A double blessing is a double grace;  
+Occasion smiles vpon a second leaue  
+“;   
+4.2 More Complex expressions Within Strings  
+Though you can insert a variable’s value in a double-quoted string simply by including the variable’s 
+name (preceded by a $ symbol), at times things get a bit more complicated. Consider the following 
+situation:  
+  
+$favoriteAnimal = “cat”;  
+echo

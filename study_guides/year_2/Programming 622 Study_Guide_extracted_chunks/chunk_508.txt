@@ -1,0 +1,48 @@
+ly.  
+6. If the queue is nonempty, the function front returns the front element of the queue and the function 
+back returns the last element in the queue.  
+7. Queues are restricted versions of arrays and linked lists.  
+  
+Exercises  
+  
+1. Consider the following statements:  
+  
+queueType<int> queue;  
+int x, y;  
+  
+Show what is output by the following segment of code:  
+  
+x = 4; y 
+= 5;  
+queue.addQueue(x); 
+queue.addQueue(y); x = 
+queue.front(); 
+queue.deleteQueue(); 
+queue.addQueue(x + 5); 
+queue.addQueue(16); 
+queue.addQueue(x);  
+queue.addQueue(y - 3);  
+  
+cout << "Queue Elements: ";  
+while (!queue.isEmptyQueue())  
+{  
+
+253  
+  
+cout << queue.front() << " ";  
+queue.deleteQueue();  
+}  
+cout << endl;  
+  
+2. Consider the following statements:  
+  
+stackType<int> stack;  
+queueType<int> queue;  
+int x;  
+  
+Suppose the input is:  
+15 28 14 22 64 35 19 32 7 11 13 30 -999  
+Show what is written by the following segment of 
+code: stack.push(0); 
+queue.addQueue(0);  
+cin >> x; w

@@ -1,0 +1,24 @@
+t[location - 1] > temp);  
+  
+list[location] = temp;  
+}  
+} //end insertionSort  
+  
+ 
+8.4  
+Insertion Sort: Linked List-Based Lists  
+  
+Insertion sort can also be applied to linked lists. Therefore, this section describes insertion sort for linked 
+lists. Consider the linked list shown in Figure 8-10.  
+  
+  
+FIGURE 8-10 Linked list  
+  
+In Figure 8-10, first is a pointer to the first node of the linked list.  
+  
+If the list is stored in an array, we can traverse the list in either direction using an index variable. However, 
+if the list is stored in a linked list, we can traverse the list in only one direction starting at the first node 
+because the links are only in one direction, as shown in Figure 8-10. Therefore, in the case of a linked list, 
+to find the location of the node to be inserted, we do the following. Suppose that firstOutOfOrder is a 
+pointer to the node that is to be moved to its proper location, and lastInOrder is a pointer to the last node 
+of the sorted portion

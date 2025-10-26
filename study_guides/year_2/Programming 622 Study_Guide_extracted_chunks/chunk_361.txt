@@ -1,0 +1,21 @@
+ynamically allocate arrays, so we will leave it for the user to specify the size of the array (that is, 
+the stack size). We assume that the default stack size is 100. Because the class stackType has a pointer 
+member variable (the pointer to the array to store the stack elements), we must overload the assignment 
+operator and include the copy constructor and destructor. Moreover, we give a generic definition of the 
+stack. Depending on the specific application, we can pass the stack element type when we declare a stack 
+object.  
+//*************************************************************  
+// This class specifies the basic operation on a stack as an array. 
+//******************************************************
+******* template <class Type>  
+
+179  
+  
+class stackType: public stackADT<Type>  
+{  
+public:   
+const stackType<Type>& operator=(const stackType<Type>&); //Overload 
+the assignment operator.  
+  
+void initializeStack();  
+//Function to initialize the stack to an empty

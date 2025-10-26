@@ -1,0 +1,26 @@
+re creating a new string to the right of the equal sign and 
+storing it back into the postcode variable. 
+ 
+Exercise 5.1 
+Change the postcode variable to SR2 4JH on the first line of your code. Now use 
+toLowerCase to convert it. 
+ 
+5.2 JAVASCRIPT STRINGS - INDEXOF 
+ 
+The indexOf method tells you if a string of text 
+contains a particular character, the @ sign in an 
+email address for example. It would not check 
+every occurrence of the character, but just the 
+first one. If the character cannot be found then 
+IndexOf returns a value of -1 (minus 1). If the 
+character is found then the value returned is the 
+position in the string (6th character, for example). 
+ 
+To test out indexOf (capital letter "O"), change your code to this (or create a new web 
+page): 
+var email = "meme@meme.com"; 
+var at_sign = email.indexOf('@'); 
+document.write( at_sign ); 
+ 
+This code sets up a variable to hold an email address. We want to check if the email 
+address contains an @ sign. indexOf is used like t

@@ -1,0 +1,28 @@
+3.6 DHCP  
+What Is DHCP? 
+3.6.1 Applies To: Windows Server 2008 
+Dynamic Host Configuration Protocol (DHCP) is a client/server protocol that automatically provides 
+an Internet Protocol (IP) host with its IP address and other related configuration information such as 
+the subnet mask and default gateway. RFCs 2131 and 2132 define DHCP as an Internet Engineering Task Force (IETF) standard based on Bootstrap Protocol (BOOTP), a protocol with which DHCP shares 
+many implementation details. DHCP allows hosts to obtain required TCP/IP configuration 
+information from a DHCP server. 
+Windows Server® 2008 includes the DHCP Server service, which is an optional networking 
+component. All Windows-based clients include the DHCP client as part of TCP/IP, including 
+Windows Vista®, the Windows Server®°2003 operating system, the Windows® XP Professional 
+operating system, Microsoft Windows®°2000 Professional operating system, Microsoft 
+Windows°NT® Workstation°4.0 operating system, Microsoft Windows® Millennium Edition operating 
+system, and the Microsoft Windows®°98 operating system. 
+
+3.6.2 Why use DHCP? 
+Every device on a TCP/IP-based network must have a unique unicast IP address to access the 
+network and its resources. Without DHCP, IP addresses for new computers or computers that are 
+moved from one subnet to another must be configured manually; IP addresses for computers that 
+are removed from the network must be manually reclaimed. 
+With DHCP, this entire process is automated and managed centrally. The DHCP server maintains a 
+pool of IP addresses and leases an address to any DHCP-enabled client when it starts up on the 
+network. Because the IP addresses are dynamic (leased) rather than static (permanently assigned), 
+addresses no longer in use are automatically returned to the pool for reallocation. 
+The network administrator establishes DHCP servers that maintain TCP/IP configuration information 
+and provide address configuration to DHCP-enabled clients in the form of a lease offer. The DHCP 
+server stores the configuration information in a database that includes:
+

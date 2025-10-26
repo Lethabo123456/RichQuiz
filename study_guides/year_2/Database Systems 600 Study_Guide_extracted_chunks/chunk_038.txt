@@ -1,0 +1,14 @@
+rs) are made in several different files or recur frequently in one or more files. 
+• 
+Data integrity problems. It is possible to enter a non-existent sales agent’s name and phone 
+number into the CUSTOMER file, but customers are not likely to be impressed if the insurance 
+agency supplies the name and phone number of an agent who does not exist.  
+ 
+Data Anomalies 
+The dictionary defines anomaly as “an abnormality.” Ideally, a field value change should be made 
+in only a single place. Data redundancy, however, fosters an abnormal condition by forcing field 
+value changes in many different locations. If agent Leah F. Hahn, stored in a CUSTOMER file, 
+decides to get married and move, the agent’s name, address, and phone number are likely to change, 
+and you could be faced with the prospect of making hundreds of corrections as any change in any 
+field value must be correctly made in many places to maintain data integrity. A data anomaly 
+develops when not all the required changes in the r

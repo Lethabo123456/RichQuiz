@@ -1,0 +1,33 @@
+rators are just to the left of the Z key. Hold down a SHIFT key 
+first.) Change your IF statement to this: 
+if ( cookies_enabled || javascript_enabled )  
+{ 
+ 
+The whole line now reads "IF cookies_enabled equals true OR javascript_enabled 
+equals true".  
+ 
+Set cookies_enabledto false on the first line of your code. Save your changes and 
+rerun your script. You should find that, again, the first document.write will be printed. 
+Set both variables to false and the else part will be executed. 
+ 
+So with the OR operators just one part of the IF needs to evaluate to true and the 
+whole statement will be true. 
+ 
+Let's have one more example just to clear things. Change your script to this: 
+var age = 24; 
+if ( age >= 18 && age <= 30 )  
+
+ 
+51 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+{ 
+document.write("Between 18 and 30"); 
+} 
+else 
+{ 
+document.write("Not Between 18 and 30"); 
+} 
+ 
+This script checks to an age range. First we set a variable called age to a value of 24. 
+We then use an IF st

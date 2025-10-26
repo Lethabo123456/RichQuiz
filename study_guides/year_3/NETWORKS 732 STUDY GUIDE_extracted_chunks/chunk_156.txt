@@ -1,0 +1,39 @@
+3.7.5 Single Sign On 
+Single sign-on (SSO), when the user logs into the domain, the domain controller issues them an 
+access token. This access token contains a list of all the resources, namely folders, drives, 
+websites, and databases, to which they should have access. This mitigates users having to 
+remember multiple passwords, which may lead them to do unsafe security practices. 
+
+3.7.6 LDAP 
+A directory service is a database designed to centralize data management regarding network 
+subjects and objects. A typical directory contains a hierarchy that includes users, groups, systems, 
+servers, client workstations, and so on. Because the directory service contains data about users 
+and other network entities, it can be used by many applications that require access to that 
+information. A common directory service standard is Lightweight Directory Access Protocol 
+(LDAP), which is based on the earlier standard X.500.
+
+3.7.7 Kerberos 
+Kerberos, created at MIT, isn’t just a protocol; it’s an entire security system that establishes a 
+user’s identity when they ﬁrst log on to a system that’s running it. It employs strong encryption 
+for all transactions and communication. Kerberos works by issuing tickets to users who log in. This 
+synchronicity is a bit complicated to set up, although in Microsoft servers and domains, the 
+process is automatic, requiring only access to a recognized time server (which Microsoft also 
+operates). The real negative hits happen if you have only one Kerberos authentication server—if 
+it goes down, no one can log into the network. When running Kerberos, having redundant servers 
+is vital. You should also know that because all users’ secret keys are stored in one centralized 
+database, if that’s compromised, you have a security tsunami on your hands. Luckily, these keys 
+are stored in an encrypted state. Figure 16.3 shows Kerberos in action. 
+
+3.7.8 Local Authentication 
+When users authenticate to their computer, the authentication can be either to a domain or to 
+the local machine. When local authentication is performed, the user’s local account and password 
+are veriﬁed with the local user database 
+
+3.7.9 802.1X 
+802.1X is a network access control that deﬁnes a standard for centralized, port-based 
+authentication. It operates with Supplicant, authenticator, and authentication servers. The 
+supplicant is the device trying to connect to the network, while the authenticator is the network 
+device that allows the connection, and the authentication server is the system that validates user 
+credentials. 
+ 
+Figure 3.10: 802.1X 

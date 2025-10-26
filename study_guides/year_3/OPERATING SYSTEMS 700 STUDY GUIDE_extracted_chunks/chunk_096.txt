@@ -1,0 +1,29 @@
+Chapter Three: Processor Management 
+ 
+3.1. Process Management 
+The Processor Manager oversees allocating the Central Processing Unit (CPU) to execute 
+instructions for incoming tasks. This chapter focuses on how an operating system's Processor 
+Manager achieves this in single-CPU systems, though the same principles apply to multi-CPU setups, 
+where a higher-level scheduler coordinates multiple CPUs. 
+ 
+In a simple system with one user, one CPU, and no network connection, the processor is active only 
+when executing the user's tasks or system software. However, in more complex environments, such 
+as multiprogramming systems with many users or multiple processes competing for CPU time, the 
+processor must be allocated efficiently and fairly among processes, which is a challenging task. 
+ 
+3.2. Definitions 
+Program: An inactive unit, such as a stored file, consisting of multiple processes. For this discussion, 
+a program or job refers to a unit of work submitted by the user. 
+Process: An active entity requiring resources like a processor and registers to execute. A process, 
+also called a task, is a single instance of a program in execution. 
+
+Thread: A smaller, independent unit created by a process that can be scheduled and executed 
+separately. A process can have multiple threads, which handle resource use more efficiently. 
+Threads are quicker to manage than processes due to their simplicity. 
+Multithreading: A technique where a process manages multiple threads to improve 
+responsiveness, resource sharing, and efficiency. For example, web browsers use multithreading 
+for tasks like retrieving images and sending emails simultaneously. 
+Multiprogramming: The practice of allocating a processor to multiple jobs or processes for a 
+specific time. It ensures processes can resume smoothly after deallocation. 
+Context Switch: The procedure of saving the current state of a process so it can resume later. This 
+allows the CPU to handle higher-priority tasks during an interrupt.

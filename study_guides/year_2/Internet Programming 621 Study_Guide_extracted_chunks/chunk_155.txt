@@ -1,0 +1,23 @@
+elp you break down a big project — Writing a big Web application can be 
+intimidating. By splitting your code into functions, you can break down a complex 
+application into a series of simpler parts that are relatively easy to build. (This also makes it 
+easier to read and maintain your code, as well as add more functionality later if needed)  
+  
+6.3 Calling Functions  
+If you have worked through the previous units you have already called quite a few of PHP’s built-in 
+functions. To call a function, you write the function name, followed by an opening and a closing 
+parenthesis:  
+  
+functionName()  
+  
+If you need to pass arguments to the function, place them between the parentheses, 
+separating each argument by commas:  
+  
+functionName( argument )  
+functionName( argument1, argument2 )  
+  
+If a function returns a value, you can assign the value to a variable:  
+  
+$returnVal = functionName( argument );  
+  
+You can also pass the return value directly to another function, such as pr

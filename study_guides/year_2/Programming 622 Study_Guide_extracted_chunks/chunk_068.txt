@@ -1,0 +1,28 @@
+ck(5, 12, 40);  
+  
+This statement declares the object myClock of type clockType. Here, we are passing three values of type 
+int, which matches the type of the formal parameters of the constructor with a parameter. Therefore, the 
+constructor with parameters of the class clockType executes and the three instance variables of the object 
+myClock are set to 5, 12, and 40.  
+  
+Consider the following statements that declare two objects of type clockType:  
+  
+  
+  
+
+32  
+  
+clockType myClock(8, 12, 30); clockType 
+yourClock(12, 35, 45);  
+  
+Each object has 10 members: seven member functions and three instance variables. Each object has 
+separate memory allocated for hr, min, and sec.  
+  
+In actuality, memory is allocated only for the instance variables of each class object. The C++ compiler 
+generates only one physical copy of a member function of a class, and each class object executes the same 
+copy of the member function.  
+  
+ 
+1.4.4  Accessing Class Members  
+  
+Once an object of a

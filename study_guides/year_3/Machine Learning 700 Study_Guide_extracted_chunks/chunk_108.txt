@@ -1,0 +1,70 @@
+4.4  Support Vector Machines (SVM) 
+SVM finds the optimal hyperplane that maximizes the margin between different classes. It uses support 
+vectors, the data points closest to the decision boundary, to define the margin. SVMs are particularly 
+powerful in high-dimensional spaces and are widely used in text classification and image recognition. 
+For linearly separable data, the hyperplane is given by: 
+
+wX+b=0 
+
+For non-linearly separable data, SVM uses the kernel trick (e.g., RBF kernel) to transform data into a 
+higher-dimensional space. 
+Python Implementation: Classifying Digits 
+from sklearn import datasets 
+from sklearn.svm import SVC 
+from sklearn.model_selection import train_test_split 
+from sklearn.metrics import accuracy_score 
+ 
+# Load digits dataset 
+digits = datasets.load_digits() 
+X, y = digits.data, digits.target 
+ 
+# Split data 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) 
+ 
+# Train SVM model 
+svm_model = SVC(kernel='rbf') 
+svm_model.fit(X_train, y_train) 
+ 
+# Predict and evaluate 
+y_pred = svm_model.predict(X_test) 
+
+accuracy = accuracy_score(y_test, y_pred) 
+print(f"SVM Model Accuracy: {accuracy:.2f}") 
+Output: 
+
+SVM Model Accuracy: 0.98 
+
+SVM achieves 98% accuracy on digit classification. 
+We can apply both Logistic Regression and LinearSVC models to the forge dataset and visualize the 
+decision boundary.
+
+In this figure, the first feature of the forge dataset is plotted on the x-axis, and the second feature is 
+plotted on the y-axis, as in the previous example. The decision boundaries for both LinearSVC and 
+LogisticRegression are shown as straight lines, dividing the area classified as class 1 (above the line) from 
+the area classified as class 0 (below the line). This means any new data point above the black line will be 
+classified as class 1 by the respective classifier, while any point below the black line will be classified as 
+class 0. 
+
+Both models produce similar decision boundaries, though they misclassify two points. By default, both 
+models use L2 regularization, similar to how Ridge regression applies regularization. 
+For both LogisticRegression and LinearSVC, the trade-off between model complexity and regularization 
+strength is controlled by the parameter C. Higher values of C result in less regularization, meaning the 
+models try to fit the training data as accurately as possible. In contrast, lower values of C encourage the 
+models to find coefficient vectors (w) that are closer to zero, thus imposing more regularization. 
+An interesting characteristic of the C parameter is how it influences the model's focus. Lower values of C 
+lead the algorithms to focus on adjusting to the majority of data points, while higher values of C make 
+the models prioritize correctly classifying each individual data point. 
+
+On the left side, a very small value of C results in a model with strong regularization. Most of the class 0 
+points are at the top, and most of the class 1 points are at the bottom. The highly regularized model 
+chooses a nearly horizontal decision boundary, misclassifying two points. In the middle plot, with a 
+slightly higher C value, the model places more focus on the two misclassified samples, causing the 
+decision boundary to tilt. On the far right, with a very high C value, the model tilts the decision boundary 
+significantly, correctly classifying all class 0 points. However, one class 1 point remains misclassified, as 
+it's not possible to separate all points in this dataset using a straight line. This model, which attempts to 
+correctly classify every point, may not capture the overall structure of the data well, indicating it is likely 
+overfitting. 
+Similar to regression models, linear models for classification can seem restrictive in low-dimensional 
+spaces, as they only allow for decision boundaries that are straight lines or planes. However, in higher-
+dimensional spaces, linear classification models become much more powerful, and the risk of overfitting 
+increases as more features are added. 

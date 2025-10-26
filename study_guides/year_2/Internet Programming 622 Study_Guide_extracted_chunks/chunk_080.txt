@@ -1,0 +1,19 @@
+s since midnight, January 1, 1970 
+(GMT). For example, pass time() + 60 * 60 * 2 to expire the cookie in two hours’ time.   
+   
+• 
+path: The browser will return the cookie only for URLs below this path. The default is the 
+directory in which the current page resides. For example, if /store/front/cart.php sets a 
+cookie and does not specify a path, the cookie will be sent back to the server for all pages 
+whose URL path starts with /store/front/.   
+   
+• 
+Domain: The browser will return the cookie only for URLs within this domain. The default is 
+the server hostname.   
+   
+• 
+secure: The browser will transmit the cookie only over https connections. The default is 
+false, meaning that it is OK to send the cookie over insecure connections.   
+When a browser sends a cookie back to the server, you can access that cookie through the $_COOKIE 
+array. The key is the cookie name, and the value is the cookie’s value field. For instance, the 
+following code at the top of a page keeps track of

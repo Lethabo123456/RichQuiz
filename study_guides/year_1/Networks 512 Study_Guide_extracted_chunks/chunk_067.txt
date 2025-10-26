@@ -1,0 +1,23 @@
+1.10 Network Design Criteria 
+
+Ethernets and Fast Ethernets have design rules that must be followed in order to function 
+correctly. The maximum number of nodes, number of repeaters and maximum segment distances 
+are defined by the electrical and mechanical design properties of each type of Ethernet media. 
+A network using repeaters, for instance, functions with the timing constraints of Ethernet. 
+Although electrical signals on the Ethernet media travel near the speed of light, it still takes a finite 
+amount of time for the signal to travel from one end of a large Ethernet to another. The Ethernet 
+standard assumes it will take roughly 50 microseconds for a signal to reach its destination. 
+Ethernet is subject to the “5-4-3” rule of repeater placement: the network can only have five 
+segments connected; it can only use four repeaters; and of the five segments, only three can have 
+users attached to them; the other two must be inter-repeater links. 
+
+If the design of the network violates these repeater and placement rules, then timing guidelines 
+will not be met and the sending station will resend that packet. This can lead to lost packets and 
+excessive resent packets, which can slow network performance and create trouble for 
+applications. New Ethernet standards (Fast Ethernet, GigE, and 10 GigE) have modified repeater 
+rules, since the minimum packet size takes less time to transmit than regular Ethernet. The length 
+of the network links allows for a fewer number of repeaters. In Fast Ethernet networks, there are 
+two classes of repeaters. Class I repeaters have a latency of 0.7 microseconds or less and are 
+limited to one repeater per network. Class II repeaters have a latency of 0.46 microseconds or less 
+and are limited to two repeaters per network. The following are the distance (diameter) 
+characteristics for these types of Fast Ethernet repeater combinations: 

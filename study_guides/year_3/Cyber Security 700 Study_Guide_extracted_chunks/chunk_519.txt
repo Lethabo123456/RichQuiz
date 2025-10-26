@@ -1,0 +1,23 @@
+In a certification authority workstation, for example, a list of security events 
+can include the following: 
+
+ Logging an operator into or out of the system 
+ Performing a cryptographic operation, such as signing a digital certificate or certificate 
+revocation list 
+ Performing a cryptographic card operation (creation, insertion, removal, or backup) 
+ Performing a digital certificate life cycle operation (rekey, renewal, revocation, or update) 
+ Posting a digital certificate to an X.500 directory 
+ Receiving a key compromise notification 
+ Receiving an improper certification request 
+ Detecting an alarm condition reported by a cryptographic module 
+ Failing a built-in hardware self-test or a software system integrity check 
+Only the final four events in this list are security incidents. This section and the following one address 
+issues related to security events. Sections 15.6 and 15.7 discuss the management of security incidents.
+
+Security Event Logging Objective 
+The objectives of security event logging are to help identify threats that may lead to an information 
+security incident, maintain the integrity of important security-related information, and support 
+forensic investigations. Effective logging enables an enterprise to review events, interactions, and 
+changes that are relevant to security. With a record of events such as anomalies, unauthorized access 
+attempts, and excessive resource usage, an enterprise can perform an analysis to determine the 
+cause. 

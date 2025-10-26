@@ -1,0 +1,20 @@
+orderTraversal of treeRoot to traverse the 
+binary search tree treeRoot. The parameter to the function inorderTraversal, in Line 18, is the function 
+print (defined at Line 27). Because the function print outputs the value of its argument, the statement in 
+Line 18 outputs the data of the nodes of the binary search tree treeNode. The statement in Line 19 outputs 
+the height of the binary search tree.  
+  
+The statement in Line 21 uses the member function inorderTraversal to traverse the binary search tree 
+treeRoot. In Line 21, the actual parameter of the function inorderTraversal is the function update (defined 
+at Line 31). The function update doubles the value of its argument. Therefore, the statement in Line 21 
+updates the data of each node of the binary search tree by doubling the value. The statements in Lines 23 
+and 24 output the nodes and the height of the binary search tree.  
+  
+ 
+9.7  
+AVL (Height-Balanced) Trees  
+  
+
+354  
+  
+In the previous sections, you learned how to

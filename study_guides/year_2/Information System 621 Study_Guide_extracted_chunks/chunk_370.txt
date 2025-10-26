@@ -1,0 +1,27 @@
+, and that is the job of the customer number, which is the primary key. Every table should 
+have a primary key field used to identify individual records, and also to create relationships 
+between tables, something we will examine next. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+143 
+137 
+
+The advantages and disadvantages of using a relational database to store data are listed in Table 
+5.1.  
+ 
+138 
+
+Relationships Between Tables 
+ 
+Consider the customer table (Figure 5.1) and the order table (Figure 5.2) in the office furniture 
+seller’s database. It should be obvious that there is a relationship between these two – the firm 
+needs to know which orders have been placed by which customer, otherwise they wouldn’t 
+know where to ship the goods or who to charge for them. How this relationship is created in a 
+database is shown in Figure 5.2, which shows the order table. The fourth record in the table is 
+an order for a computer desk. The first field in the table, Order_Number, is the order table’s 
+primary key. Then

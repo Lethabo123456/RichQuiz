@@ -1,0 +1,22 @@
+The SensorEventListener code is relatively involved, even without needing to understand the math 
+involved.
+
+▪ Line 3—A SensorEventListener requires the implementation of two events, onAccuracyChanged 
+and onSensorChanged. To calculate a heading, you don’t need accuracy, so its method block is empty. 
+▪ Lines 5–6—Sensor readings are returned as a float array. Two variables to hold the response from 
+each sensor are declared. 
+▪ Lines 8–12—The onSensorEvent first determines which sensor triggered the event and then 
+captures the values it provided. 
+▪ Lines 13–17—If there are values available for both sensors, the SensorManager is asked for two 
+rotational matrices used for orientation calculation. Discussion of the rotational matrices is beyond 
+the scope of this book. 
+▪ Lines 18–20—If the matrices are successfully calculated, the SensorManager is asked to calculate 
+the orientation of the device. Orientation is measured in three dimensions. 
+▪ Line 22—The first orientation measure is the value used to calculate the heading. It is reported in 
+radians, so these are changed to degrees. 
+▪ Line 23—Convert the heading reported to eliminate negative numbers. 
+▪ Lines 24–28—Use degree heading to get text description. These are done in 90-degree increments. 
+You could add more code to get finer gradations of direction, such as NW or SE. 
+Test the app on a device. You’ll need to move the device around to get different readings. Some 
+emulators provide the ability to change direction of the device but not all do. Open the same control 
+panel as above and look for Directional pad. 

@@ -1,0 +1,16 @@
+1.2.5 Logic Circuits 
+Propositional logic can be applied to the design of computer hardware. A 
+logic circuit (or digital circuit) receives input signals 𝑝1, 𝑝2, . . . , 𝑝𝑛, each a bit 
+[either 0 (off) or 1 (on)], and produces output signals 𝑠1, 𝑠2, . . . , 𝑠𝑛, each a bit. 
+In this section we will restrict our attention to logic circuits with a single 
+output signal; in general, digital circuits may have multiple outputs. 
+Complicated digital circuits can be constructed from three basic circuits, 
+called gates, shown in Figure 1. 
+
+Figure 1: Basic logic gates 
+The inverter, or NOT gate, takes an input bit p, and produces as output￢𝑝. 
+The OR gate takes two input signals p and q, each a bit, and produces as 
+output the signal 𝑝 ∨ 𝑞. Finally, the AND gate takes two input signals p and 
+q, each a bit, and produces as output the signal 𝑝 ∧ 𝑞.We use combinations 
+of these three basic gates to build more complicated circuits, such as that 
+shown in Figure 2. 

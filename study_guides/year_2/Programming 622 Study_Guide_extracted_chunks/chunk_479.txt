@@ -1,0 +1,38 @@
+ustomerType(int cN, int arrvTime, int wTime, int tTime)  
+{  
+setCustomerInfo(cN, arrvTime, wTime, tTime);  
+}  
+  
+The function getWaitingTime returns the current waiting time. The definition of the function 
+getWaitingTime is as follows:  
+  
+int customerType::getWaitingTime() const  
+{  
+return waitingTime;  
+}  
+  
+The function incrementWaitingTime increments the value of waitingTime. Its definition is as follows:  
+  
+
+240  
+  
+void customerType::incrementWaitingTime()  
+{  
+waitingTime++;  
+}  
+  
+The  
+definitions  
+of  
+the  
+functions  
+setWaitingTime,  
+getArrivalTime, 
+ getTransactionTime,  and getCustomerNumber are left as an exercise for you.  
+  
+ 
+6.6.3  Server  
+  
+At any given time unit, the server is either busy serving a customer or is free.We use a string variable to 
+set the status of the server. Every server has a timer and because the program might need to know which 
+customer is served by which server, the server also stores the information of the customer being

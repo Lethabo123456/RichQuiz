@@ -1,0 +1,24 @@
+6.2 ALIGN TEXT AROUND IMAGES 
+When you add an image to a page, by default the text around the image appears at the 
+bottom of the image. You can align the text around an image so that it appears at the top, 
+bottom, or center of the image. Exhibit 0-6 displays text aligned to the center of an image. 
+Exhibit 0-6: The text aligned to the center of an image 
+To align the text around an image you use the align attribute of the <img> tag. Top, Middle, 
+and Bottom are the possible values for the align attribute. 
+To align text to the top of the image img1.png, use the following code: 
+<img src="img1.png" align=”Top” alt=”image 1”> 
+ 
+6.3 GRAPHICS AS HYPERLINKS 
+Graphics can also be used as hyperlinks. To make a graphic a hyperlink, use the <a> tag as 
+you would use it for making text a hyperlink. To make img1.png a hyperlink to images.html, 
+use the following code: 
+<a href="images.html"><img src="img1.png" alt=”image 1”></a> 
+Text aligned to the 
+center of the image 
+
+Link Borders 
+When using an image as a hyperlink, a blue border is displayed around an image. By 
+default, most web browsers will display a border around graphic links indicating the 
+link color. To remove this border or want to make it bigger, you can use the border 
+attribute in your <img> tag. The following code uses border attribute: 
+<a href="images.html"><img src="img1.png" border=”1” alt=”image 1”></a> 

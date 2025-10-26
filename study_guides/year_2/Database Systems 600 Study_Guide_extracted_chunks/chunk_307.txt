@@ -1,0 +1,15 @@
+Wind. In the database, Twist in the 
+Wind would be one MOVIE, and each copy would be a VIDEO. A rental transaction (RENTAL) 
+involves one or more videos being rented to a member (MEM-BERSHIP). A video can be rented 
+many times over its lifetime; therefore, there is an M:N relationship between RENTAL and VIDEO. 
+DETAILRENTAL is the bridge table to resolve this relationship. The complete ERD is provided in 
+Figure P8.47. 
+ 
+Answer the following questions:  
+1. Write the SQL code to create the table structures for the entities shown in Figure P8.47. The 
+structures should contain the attributes specified in the ERD. Use data types that are 
+appropriate for the data that will need to be stored in each attribute. Enforce primary key 
+and foreign key constraints as indicated by the ERD. 
+2. The following table provides a very small portion of the data that will be kept in the 
+database. The data needs to be inserted into the appropriate table for testing purposes. Write 
+the INSERT commands

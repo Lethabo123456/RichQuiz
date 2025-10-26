@@ -1,0 +1,15 @@
+er of the object myClock, it has direct access 
+to the three member variables of myClock. So it needs one more object, which in this 
+case is yourClock, to compare. In essence, equalTime needs two objects to compare. 
+The object to which it is dotted, myClock, is one and the argument, yourClock, is the 
+other. This explains why the function equalTime has only one parameter. The objects 
+myClock and yourClock can access only public members of the class clockType. Thus, 
+the following statements are illegal because hr and min are declared as private 
+members of the class clockType and, therefore, cannot be accessed by the objects 
+myClock and yourClock: 
+myClock.hr = 10;                                         //illegal  
+myClock.min = yourClock.min;                   //illegal 
+ 
+Reference Parameters and Class Objects (Variables) 
+Recall that when a variable is passed by value, the formal parameter copies the value 
+of the actual parameter. That is, memory space to copy the value of the

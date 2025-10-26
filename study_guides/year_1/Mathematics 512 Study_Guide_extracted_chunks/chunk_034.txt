@@ -1,0 +1,21 @@
+3.6 Continuity and Discontinuity 
+A function 𝑓 is continuous at a number 𝑎 if: 
+ 𝑎 is in the domain of 𝑓, so that 𝑓(𝑎) is defined 
+ lim𝑥→𝑎 𝑓(𝑥) exists 
+ lim𝑥→𝑎 𝑓(𝑥) = 𝑓(𝑎) 
+
+When proving that a function is continuous, you may only show that the limit 
+of 𝑓(𝑥) as 𝑥 approaches 𝑎 is equal to 𝑓(𝑎). This property implies that 𝑓(𝑎) is 
+defined and that the limit exists. 
+A function is continuous on an interval if it is continuous at every number that falls 
+within that interval. Continuous functions have the following properties for simple 
+operations. If functions 𝑓 and 𝑔 are continuous at 𝑎, and 𝑐 is a constant, then the 
+following functions will also be continuous at 𝑎: 
+
+𝑓+ 𝑔      𝑓−𝑔                  𝑐𝑓 
+𝑓𝑔        𝑓𝑔 if 𝑔(𝑎) ≠0 
+
+A function is discontinuous at 𝑎 if it is defined near 𝑎 but not continuous at 𝑎. 
+To prove that a function is discontinuous, we must show which of the 
+requirements of continuous functions that it fails to hold for. There are several 
+different types of discontinuity, which are listed below.   

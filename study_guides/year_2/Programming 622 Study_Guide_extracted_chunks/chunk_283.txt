@@ -1,0 +1,38 @@
+st<int> list; 
+unorderedLinkedList<int> 
+copyList; int num; cin >> num; 
+while (num != -999)  
+{  
+if (num % 5 == 0 || num % 5 == 3) 
+list.insertFirst(num); else 
+list.insertLast(num);  
+cin >> num;  
+} list.print(); 
+cout << 
+endl;  
+copyList = list; 
+copyList.deleteNode(78); 
+copyList.deleteNode(35); 
+cout << "Copy List = "; 
+copyList.print(); cout << endl;  
+11. Draw the UML diagram of the class doublyLinkedList as discussed in this chapter.  
+  
+12. Suppose that intList is a list container and  
+intList = {3, 23, 23, 43, 56, 11, 11, 23, 25}  
+  
+Show intList after the following statement executes: intList.unique();  
+
+143  
+  
+  
+13. Suppose that intList1 and intList2 are list containers and  
+intList1 = {3, 58, 78, 85, 6, 15, 93, 98, 25} intList2 
+= {5, 24, 16, 11, 60, 9}  
+  
+Show intList1 after the following statement executes:  
+intList1.splice(intList1.begin(), intList2);  
+  
+14. What is the output of the following program segment?  
+  
+list<int> intList;  
+ostream_iterator<i

@@ -1,0 +1,24 @@
+2.4.1.3 Grayscale Image 
+
+Grayscale or 8-bit images are composed of 256 unique colours, where a pixel intensity of 0 
+represents the black colour and a pixel intensity of 255 represents the white colour. All the other 
+254 values in between are the different shades of grey. An example of an RGB image converted 
+to its grayscale version is shown below. Notice that the shape of the histogram remains the same 
+for the RGB and grayscale images. 
+ 
+2.4.1.4 
+RGB Colour Image 
+The images we are used to in the modern world are RGB or colored images, which are 16-bit 
+matrices to computers. That is, 65,536 different colours are possible for each pixel. “RGB” 
+represents the Red, Green, and Blue “channels” of an image. 
+Up until now, we had images with only one channel. That is, two coordinates could have defined 
+the location of any value of a matrix. Now, three equal-sized matrices (called channels), each 
+having values ranging from 0 to 255, are stacked on top of each other, and thus we require three 
+unique coordinates to specify the value of a matrix element. 
+
+Thus, a pixel in an RGB image will be of colour black when the pixel value is (0, 0, 0) and white 
+when it is (255, 255, 255). Any combination of numbers in between gives rise to all the different 
+colours existing in nature. For example, (255, 0, 0) is the colour red (since only the red channel is 
+activated for this pixel). Similarly, (0, 255, 0) is green and (0, 0, 255) is blue. 
+An example of an RGB image split into its channel components is shown below. Notice that the 
+shapes of the histograms for each of the channels are different.

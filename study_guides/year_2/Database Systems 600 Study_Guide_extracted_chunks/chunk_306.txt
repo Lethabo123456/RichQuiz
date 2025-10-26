@@ -1,0 +1,35 @@
+tion 
+c. An SQL query will not work if there are no indexes on the relations 
+d. None of these 
+ 
+6. Which of the following is a legal expression in SQL? 
+a. SELECT NULL FROM EMPLOYEE; 
+b. SELECT NAME FROM EMPLOYEE; 
+c. SELECT NAME FROM EMPLOYEE WHERE SALARY = NULL; 
+d. All of the above 
+ 
+7. The result of the UNION of T1 and T2 is a relation that includes  
+a. All the tuples of T1 
+b. All the tuples of T2 
+c. All the tuples of T1 and T2 
+d. All the tuples of T1 and T2 which have common columns 
+ 
+8. Which of the following is a comparison operator in SQL 
+a. = 
+b. LIKE 
+c. BETWEEN 
+d. All of the above 
+ 
+ 
+
+ 
+128 
+ 
+ 
+Case Studies / Projects 
+Case Study 4.1  
+ 
+EliteVideo is a start-up company providing concierge DVD kiosk service in upscale 
+neighbourhoods. EliteVideo can own several copies (VIDEO) of each movie (MOVIE). For 
+example, a kiosk may have 10 copies of the movie Twist in the Wind. In the database, Twist in the 
+Wind would be one MOVIE, and each copy would be a VIDEO. A ren

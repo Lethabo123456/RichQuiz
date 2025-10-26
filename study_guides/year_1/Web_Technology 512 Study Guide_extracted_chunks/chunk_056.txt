@@ -1,0 +1,24 @@
+cise 3.2 
+Change the minus symbol into the symbol for multiplication, an asterisk symbol (*). 
+Save your change and refresh the page in your browser. What total do you get now? 
+ 
+Exercise 3.3 
+Change the plus symbol into the symbol for division. Save your change and refresh the 
+page in your browser. What is the new total? 
+ 
+You can use normal numbers with the mathematical operators. In the code below, we 
+are adding up two numbers and storing the result in a variable: 
+var result;  
+result = 12 + 24; 
+document.write( result ); 
+ 
+JavaScript will add up the numbers on the right of the equal sign. When it has finished 
+adding, it will store the result in the variable on the left of the equal sign. 
+ 
+3.2.1 Storing JavaScript Objects in Variables 
+In the previous section we used an alert message and document.write with the 
+various objects. For example: 
+alert ( window.innerWidth ); 
+ 
+But you can store these values in variables as well. If you want to store the innerWidth 
+value, for

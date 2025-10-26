@@ -1,0 +1,41 @@
+Incident Detection 
+  
+Sections 15.2 and 15.3 discuss event logging and management in some detail. As part of the incident 
+response life cycle, security incidents must be detected from among the numerous security events 
+logged and recorded. 
+ 
+Key aspects of incident detection include the following: 
+ 
+ All IT personnel and users need to be trained and comfortable regarding procedures for 
+reporting failures, weaknesses, and suspected incidents; methods to recognize and detect 
+problems with security protections; and how to escalate reporting appropriately. 
+ Technical controls must be implemented for the automated detection of security incidents 
+from event logs, coupled with reporting that is as near real time as possible. Key technical 
+tools include IDSs and continuously monitoring antivirus software. 
+ Situational awareness information needs to be collected from internal and external data 
+sources, including local system and network traffic and activity logs; news feeds concerning 
+ongoing political, social, or economic activities that might impact incident activity; and 
+external feeds on incident trends, new attack vectors, current attack indicators, and new 
+mitigation strategies and technologies. 
+ Digital evidence needs to be gathered and stored securely, and its secure preservation must 
+be continually monitored in case the evidence is required for legal prosecution or internal 
+disciplinary action. 
+
+Analysis 
+ 
+Once an incident is detected, it is appropriate to move immediately to the next phase of the life cycle, 
+which deals with removing the threat and recovery from any damage. Most enterprises choose to do 
+a more in-depth analysis at this point. Typical actions include the following: 
+ 
+ Determine the magnitude of the impact. Consider the number of users affected or the number 
+of devices or the segments of the network. 
+ Assess the severity. What is the sensitivity of the data involved? What is the criticality of the 
+service, or system, or application? What is the potential for damage or liability? 
+ Assess the urgency of the event. Is it an active problem, a threat, or an event-in-progress? 
+Was the problem discovered after the fact? Is the intrusion dormant or completed? Does this 
+involve use of an account rather than a system? Does this involve the safety or privacy of 
+individuals? 
+ 
+The analysis also needs to determine whether immediate action is needed to remove the vulnerability 
+or to block the action that enabled the incident to occur. Such analysis may also be part of the post-
+incident activity phase.

@@ -1,0 +1,25 @@
+t on the DBMS, methods of accessing files, and 
+types of hardware storage devices supported by the operating system. When you can change the 
+physical model without affecting the internal model, you have physical independence. Therefore, a 
+change in storage devices or methods and even a change in operating system will not affect the 
+internal model. The levels of data abstraction are summarized in Table 2.4. 
+ 
+ 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Two, page 61-63 
+
+ 
+35 
+ 
+Chapter Summary/Review 
+ 
+ In this chapter, you learned that data consists of raw facts. Information is the result of 
+processing data to reveal its meaning. 
+ Data is usually stored in a database. To implement a database and to manage its contents, 
+you need a database management system (DBMS). 
+ Database design defines the database structure. A well-designed database facilitates data 
+management and generates accurate and

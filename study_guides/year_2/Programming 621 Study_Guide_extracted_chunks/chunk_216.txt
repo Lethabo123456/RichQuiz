@@ -1,0 +1,41 @@
+Type to manipulate the time for each 
+employee. For example, the following statement sets the arrival time, that is, hr, min, 
+and sec, of the 50th employee to 8, 5, and 10, respectively see Figure below 
+arrivalTimeEmp[49].setTime(8, 5, 10);                                        //Line 2 
+ 
+
+195 | P a g e  
+ 
+ 
+ 
+To output the arrival time of each employee, you can use a loop, such as the following:  
+ 
+for (int j = 0; j < 100; j++)                                               //Line 3 
+ { 
+         cout 
+<< 
+"Employee 
+" 
+<< 
+(j 
++ 
+1) 
+<< 
+" 
+arrival 
+time: 
+"; 
+arrivalTimeEmp[j].printTime();                           //Line 4  
+cout << endl;  
+} 
+ 
+The statement in Line 4 outputs the arrival time of an employee in the form hr:min:sec.  
+ 
+To keep track of the departure time of each employee, you can use the array 
+departureTimeEmp.  
+ 
+Similarly, you can use arrays to manage a list of names or other objects. 
+ 
+ 
+Destructors 
+Like constructors, destructors are also functions. Mor

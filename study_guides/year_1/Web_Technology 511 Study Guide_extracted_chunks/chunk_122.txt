@@ -1,0 +1,37 @@
+Internal or Embedded CSS: This can be used when a single HTML document must be styled 
+uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is 
+embedded within the HTML file. 
+ 
+External CSS: External CSS contains separate CSS file which contains only style property with 
+the help of tag attributes (For example class, id, heading, etc). CSS property written in a 
+separate file with .css extension and should be linked to the HTML document using link tag. 
+This means that for each element, style can be set only once and that will be applied across 
+web pages.
+ 
+Example  
+Index.html (please note for external stlye method to work both index.html and style.css 
+should be in the same folder)
+
+<ink rel="styesheet" type="text/css" href="style.css">. You should include this CSS file under 
+the <head> 
+As shown below  
+ 
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+ Style.css 
+h1 {
+ background-color:#ff6347;
+ color:blue;
+}
+
+h5 {
+ color: Tomato;
+}
+
+p {
+text-align: center;
+}
+
+ 

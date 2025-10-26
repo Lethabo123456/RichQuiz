@@ -1,0 +1,48 @@
+5.3.2 ipconﬁg, ifconﬁg, and ip 
+
+The utilities known as ipconﬁg (in Windows) and ifconﬁg/ip (in Unix/Linux/Mac) will display the 
+current conﬁguration of TCP/IP on a given workstation—including the current IP address, DNS 
+conﬁguration, conﬁguration, and default gateway. In the following sections, I will show you how 
+to use both. 
+If you are running traceroute and see repeating addresses and TTL time-outs, you probably have 
+a routing loop. 
+
+Note 
+In addition to traceroute and tracert, which show the path of an IPv4 packet, you can use tracert 
+-6 for a Windows trace, traceroute6 for MAC and Linux/Unix, and traceroute -6 for Cisco routers 
+to trace an IPv6 packet through an internetwork. 
+
+5.3.2.1 ipconﬁg Utility 
+
+With the new Mac, Windows 10, and Windows Server 2019 operating systems, you can now see 
+the IPv6 conﬁguration because IPv6 is enabled by default. The output of the ipconﬁg command 
+provides the basic routed protocol information on your machine. From a DOS prompt, type 
+ipconﬁg, and you’ll see something like this: 
+ 
+Figure 5.5: ipconﬁg output (Lammle, 2022) 
+ 
+Wow, there sure are a lot of options in this output compared to the output for earlier versions of 
+Windows! First, what’s up with all these interfaces showing? I only have two—one Ethernet and 
+one wireless. You can see that my Ethernet adapter shows up ﬁrst, and it has an IP address, a 
+mask, and a default gateway plus an IPv6 address and a DNS suﬃx. The next conﬁgured interface 
+is the wireless local area network (LAN) adapter, which has an IP address, a mask, a default 
+gateway, an IPv6 address, and the IPv6 default gateway as well. This IPv6 default gateway address 
+is simply my router advertising that it runs IPv6 and saying, “I am the way out of the local LAN!” 
+Just in case the ipconﬁg command doesn’t provide enough information for you, try the ipconﬁg 
+/all command—talk about details. Here’s the beginning of that output: 
+ 
+Figure 5.6: ipconﬁg output for all part 1 (Lammle, 2022)  
+ 
+Figure 5.7: ipconﬁg output for all part 2 (Lammle, 2022) 
+ 
+As you can see, it’s more of the same—a whole lot more. The most important thing I want you to 
+notice is that I’ve received the hardware information about each interface, including the Media 
+Access Control (MAC) address. Also signiﬁcant is that I can see the Dynamic Host Conﬁguration 
+Protocol (DHCP) lease times and DNS addresses now. But why stop here? There are two more 
+valuable options you need to use with the ipconﬁg command. They are /release and /renew. 
+When you change networks, you need to get the IP address of that subnet and/or virtual LAN 
+(VLAN). Windows 10 works most of the time without doing anything, but sometimes I do have to 
+renew the IP conﬁguration when changing networks. But that’s easy—just type ipconﬁg /renew 
+from a command prompt, and if you’re connected to a DHCP server that’s available, you’ll then 
+magically receive an IP address. Now, if it still doesn’t work, you’ll need to release and renew your 
+TCP/IP settings. 

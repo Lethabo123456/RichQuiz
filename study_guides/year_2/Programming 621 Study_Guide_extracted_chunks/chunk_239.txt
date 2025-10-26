@@ -1,0 +1,28 @@
+nly 
+the basic operations on a list. To derive a specific list from this list and to add or rewrite 
+the operations, we declare the array containing the list elements and the length of the 
+list as protected.  
+Next, we describe a specific list. Suppose that you want to create a list to process 
+integer data. The statement  
+ 
+listType <int>intList;                                                                 //Line 1 
+ 
+declares intList to be an object of listType. The protected member list is an array of 
+100 components, with each component being of type int. Similarly, the statement 
+ 
+listType<int> stringList;                                                       //Line 2 
+ 
+declares stringList to be an object of listType. The protected member list is an array 
+of 100 components, with each component being of type newString. 
+ 
+ 
+In the statements in Lines 1 and 2, listType<int> and listType<newString> are referred 
+to 
+as 
+template 
+instantiations 
+or 
+instantiations 
+of 
+the 
+c

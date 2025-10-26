@@ -1,0 +1,16 @@
+of xh - xl.  
+18. Let x be a node in the AVL tree T.  
+a. If xl > xh, we say the x is left high. In this case, xl = xh + 1.  
+b. If xl = xh, we say the x is equal high.  
+c. If xh > xl, we say the x is right high. In this case, xh = xl + 1.  
+19. The balance factor of x, written bf(x), is defined as bf(x) = xh -xl.  
+20. Let x be a node in the AVL tree T. Then,  
+a. If x is left high, bf(x) =  -1.  
+b. If x is equal high, bf(x) = 0.  
+c. If x is right high, bf(x) = 1.  
+21. Let x be a node in a binary tree. We say that node x violates the balance criteria if |xh - xl| > 1, that is, 
+the heights of the left and right subtrees of x differ by more than 1.  
+22. Every node x in the AVL tree T, in addition to the data and pointers to the left and right subtrees, must 
+keep track of its balance factor.  
+23. In an AVL tree, there are two types of rotations: left rotation and right rotation. Suppose that the 
+rotation occurs at node, say x. If it is a left rotation, certain nodes from the ri

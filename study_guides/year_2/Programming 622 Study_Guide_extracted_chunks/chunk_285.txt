@@ -1,0 +1,19 @@
+plore the base case and the general case of a recursive definition  
+Learn about recursive algorithm  
+Learn about recursive functions  
+Explore how to use recursive functions to implement recursive algorithms  
+  
+In previous chapters, to devise solutions to problems we used the most common technique, called 
+iteration. For certain problems, however, using the iterative technique to obtain the solution is quite 
+complicated. This chapter introduces another problemsolving technique, called recursion, and provides 
+several examples demonstrating how recursion works.  
+  
+ 
+4.1  
+Recursive Definitions  
+  
+The process of solving a problem by reducing it to smaller versions of itself is called recursion. Recursion 
+is a very powerful way to solve certain problems for which the solution would otherwise be very 
+complicated. Let us consider a problem that is familiar to most everyone.  
+  
+In an algebra course, you probably learned how to find the factorial of a nonnegative integer. For exa

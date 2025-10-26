@@ -1,0 +1,31 @@
+Firewall, as shown in Figure 1. If you want to allow other computers 
+on your network to access the Web server, click Unblock. If you are only going to access the 
+Web server from a browser on the same computer, you can click Keep Blocking to improve 
+security.   
+   
+            
+   
+             Figure 1   
+   
+4. Enter default mail settings. During the configuration process you ’ ll also be asked to enter a 
+default mail server and email address for PHP to use (Figure 2); you can accept the defaults 
+for now.   
+          
+
+80   
+   
+             
+   
+              Figure 2   
+   
+5. Once the setup wizard has completed, you should see a WampServer icon in your taskbar; 
+click this icon to display the WampServer menu (Figure 3). Choose the Start All Services 
+option to fire p the Apache and MySQL servers.   
+   
+   
+          
+   
+          Figure 3   
+   
+6. To test that the Web server is running correctly, choose the Localhost option from the 
+WampServer menu. If all has gone accor

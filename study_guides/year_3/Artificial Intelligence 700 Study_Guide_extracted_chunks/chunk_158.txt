@@ -1,0 +1,54 @@
+Tautologies 
+A tautology in propositional logic is a statement that is true 
+regardless of the truth assignment of propositions. 
+A tautology in predicate logic is a statement that is true regardless of 
+the interpretation of predicates, and regardless of the bindings chosen 
+for any globally unbound variables. 
+ 
+We can combine these statements to say, in general, a logical tautology 
+is a statement that is true regardless of *model*. In propositional 
+logic a model is a truth assignment for propositions. In predicate 
+logic a model is an interpretation for predicates and a binding for any 
+globally unbound variables. 
+ 
+Evaluating Predicates: Example 
+Consider the following family history to be relations (or facts) in a family 
+tree database: 
+ 
+male(Adam) 
+ female(Ann) 
+male(Barney) 
+  female(Beth) 
+male(Bob) 
+female(Barb) 
+male(Carl) 
+female(Carol) 
+male(Chet) 
+female(Chris) 
+ 
+parent(Adam,Barney)  parent(Ann,Barney) 
+parent(Adam,Beth) 
+ parent(Ann,Beth) 
+parent(Adam,Bob) 
+parent(Ann,Bob) 
+parent(Adam,Barb) 
+ 
+parent(Barney,Carl) 
+parent(Carol,Carl) 
+parent(Carol,Chet)
+
+To find the name of Barney's father, we can assert the following to be true: 
+parent(x,Barney) AND male(x) -> father(x,Barney) 
+This assertion states that if x is a parent of Barney, and x is male, then x 
+is the father of Barney. 
+ 
+Note that we haven't defined a father relation in our database; asserting 
+the above expression to be true is the only definition of "father" we need. 
+ 
+We know this expression evaluates to true (since we asserted it) regardless 
+of the value of x. We can assign a constant value to x (someone's name), 
+producing ground atomic formulae, which we can evaluate as true or false. 
+ 
+When we substitute Adam for x, we find parent(Adam,Barney) and male(Adam) 
+are true, so father(Adam,Barney) must be true as well (since the whole 
+expression must be true).

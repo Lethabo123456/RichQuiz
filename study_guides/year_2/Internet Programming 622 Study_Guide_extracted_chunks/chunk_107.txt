@@ -1,0 +1,15 @@
+e appropriate end-of-line characters for the platform on which you are running. (The 
+PHP  constant PHP_EOL is handy for this; it stores the end-of-line character(s) applicable to the 
+operating  
+system that PHP is running on.)   
+   
+By default, if you specify a filename that isn’t a relative or absolute path (such as “ data.txt “ ), PHP 
+just looks in the current (script) directory for the file. However, you can optionally pass the value 
+true as a third argument to fopen() , in which case PHP will also search the include path for the file.   
+   
+Find out more about include paths in Chapter 20.   
+   
+If there was a problem opening the file, fopen() returns false rather than a file handle resource. 
+Operations on files and directories are prone to errors, so you should always allow for things to go 
+wrong when using them. It is good practice to use some form of error-checking procedure so that if 
+an error occurs (perhaps you do not have necessary privileges to access the file, or

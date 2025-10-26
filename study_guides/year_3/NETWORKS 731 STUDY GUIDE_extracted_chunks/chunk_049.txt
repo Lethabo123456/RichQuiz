@@ -1,0 +1,26 @@
+One advantage to mirroring is that the servers involved can stand side by side or be positioned 
+in different locations—in two different buildings of a company’s headquarters, or possibly 
+even on opposite sides of a continent. One potential disadvantage to mirroring, however, is 
+the time it takes for a mirrored server to assume the functionality of the failed server. This 
+delay could last 15 to 90 seconds. Obviously, this downtime makes mirroring imperfect. When 
+a server fails, users lose network service, and any data in transit at the moment of the failure 
+is susceptible to corruption. Another disadvantage to mirroring is its toll on the network as 
+data is copied between sites. Although server mirroring software can be expensive, the 
+hardware costs of mirroring also mount because you must devote an entire server to simply 
+acting as a “tape recorder” for all data in case the other server fails. Depending on the 
+potential cost of losing a server’s functionality for any period of time, however, the expense 
+involved may be justifiable 
+ 
+Clustering  
+Clustering is a fault-tolerance technique that links multiple servers together to act as a single 
+server. In this configuration, clustered servers share processing duties and appear as a single 
+server to users. If one server in the cluster fails, the other servers in the cluster automatically 
+take over its data transaction and storage responsibilities. Because multiple servers can 
+perform services independently of other servers, as well as ensure fault tolerance, clustering 
+is more cost effective than mirroring for large networks. imagine that you and several 
+colleagues (who are not exactly like you) are simultaneously giving separate talks in different 
+rooms in the same conference center. All of your colleagues are constantly aware of your 
+lecture, and vice versa. If you should faint during your lecture, one of your colleagues can 
+immediately jump into your spot and pick up where you left off, without the audience ever 
+noticing. At the same time, your colleague must continue to present his own lecture, which 
+means that he must split his time between these two tasks.  

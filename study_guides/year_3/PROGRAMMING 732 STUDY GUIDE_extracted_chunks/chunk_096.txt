@@ -1,0 +1,43 @@
+4.1.1 Architectural Roles for Servlets  
+Because of their power and flexibility, servlets can play a significant role in a system architecture. They 
+can perform the application processing assigned to the middle tier, act as a proxy for a client, and even 
+augment the features of the middle tier by adding support for new protocols or other features. A middle 
+tier acts as the application server in so called three-tier client/server systems, positioning itself between 
+a lightweight client like a web browser and a data source.   
+  
+4.1.2 Middle-Tier Process  
+In many systems a middle tier serves as a link between clients and back-end services. By using a middle 
+tier a lot of processing can be off-loaded from both clients (making them lighter and faster) and servers 
+(allowing them to focus on their mission).   
+One advantage of middle tier processing is simply connection management. A set of servlets could handle 
+connections with hundreds of clients, if not thousands, while recycling a pool of expensive connections to 
+database servers.  
+ 
+Other middle tier roles include:   
+
+• Business rule enforcement   
+• Transaction management   
+• Mapping clients to a redundant set of servers   
+• Supporting different types of clients such as pure HTML and Java capable clients   
+  
+4.1.3 Proxy Servers  
+When used to support applets, servlets can act as their proxies. This can be important because Java 
+security allows applets only to make connections back to the server from which they were loaded. If an 
+applet needs to connect to a database server located on a different machine, a servlet can make this 
+connection on behalf of the applet.   
+  
+4.1.4 Protocol Support  
+The Servlet API provides a tight link between a server and servlets. This allows servlets to add new protocol 
+support to a server. (You will see how HTTP support is provided for you in the API packages.) Essentially, 
+any protocol that follows a request/response computing model can be implemented by a servlet. This 
+could include: 
+  
+• SMTP   
+• POP   
+• FTP  
+ 
+Servlet support is currently available in several web servers, and will probably start appearing in other 
+types of application servers in the near future. You will use a web server to host the servlets in this class 
+and only deal with the HTTP protocol. Because HTTP is one of the most common protocols, and because 
+HTML can provide such a rich presentation of information, servlets probably contribute the most to 
+building HTTP based systems.   

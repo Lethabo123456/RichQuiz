@@ -1,0 +1,14 @@
+queues.  
+2. The three main components of the STL are containers, iterators, and algorithms.  
+3. STL containers are class templates.  
+4. Iterators are used to step through the elements of a container.  
+5. Algorithms are used to manipulate the elements in a container.  
+6. The main categories of containers are sequence containers, associative containers, and container 
+adapters.  
+7. The three predefined sequence containers are vector, deque, and list.  
+8. A vector container stores and manages its objects in a dynamic array.  
+9. Because an array is a random access data structure, elements of a vector can be accessed randomly.  
+10. The name of the class that implements the vector container is vector.  
+11. Item insertion in a vector container is accomplished by using the operations insert and push_back.  
+12. Item deletion in a vector container is accomplished by using the operations pop_back, erase, and clear.  
+13. An iterator to a vector container is declared using the typedef i

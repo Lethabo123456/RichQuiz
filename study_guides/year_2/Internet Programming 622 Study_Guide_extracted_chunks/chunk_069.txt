@@ -1,0 +1,28 @@
+omments?</label>   
+<textarea name=”comments” id=”comments” rows=”4” cols=”50”><?php setValue( “comments” 
+) ?></textarea>   
+<div style=”clear: both;”>   
+<input type=”submit” name=”submitButton” id=”submitButton” value=  ”Send 
+Details” />   
+<input type=”reset” name=”resetButton” id=”resetButton” value=”Reset  
+Form” style=”margin-right: 20px;” />   
+</div>   
+</div>   
+</form>   
+<?php   
+}   
+function displayThanks() {   
+?>   
+<h1>Thank You</h1>   
+<p>Thank you, your application has been received.</p>   
+<?php   
+}   
+?>   
+</body>   
+</html>   
+   
+Now browse the script’s URL in your Web browser. You will see a blank registration form. Try 
+submitting an empty form by clicking Send Details. You should see an error message, with the 
+missing required fields highlighted. If you fill in some values and resubmit, the script keeps checking 
+to see if you have filled in the required fields. If not, it redisplays the form, including any data you  
+have already entered, and highlights t

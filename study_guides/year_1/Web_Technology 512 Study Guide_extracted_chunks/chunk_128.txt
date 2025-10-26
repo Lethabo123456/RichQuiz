@@ -1,0 +1,26 @@
+an email address. We want to check if the email 
+address contains an @ sign. indexOf is used like this: 
+var at_sign = email.indexOf('@'); 
+ 
+Again, you start on the right of an equal sign, and with the variable you want to check. 
+After a dot, you type IndexOf. In between the round brackets of indexOf you need to 
+type the character or characters you are checking for. The character or characters 
+need to go between quotation marks. (You can check for more than one character, 
+.com, for example. In which case the number returned will be for the first character of 
+your string.) 
+ 
+ 
+Research 
+ 
+Why would you use the indexOf 
+method? 
+
+ 
+81 
+ 
+FIVE | JAVASCRIPT STRING MANIPULATION 
+If you run the script above, you will find that JavaScript returns a value of 4. You might 
+think that the @ sign in our email address is at position 5. However, JavaScript starts 
+the count from 0, which is why the answer is 4. 
+ 
+Now delete the @ sign from the email address on the first line of the code. R

@@ -1,0 +1,21 @@
+A static entry can be added to an ARP file by issuing the arp -s < IP address > < MAC address > 
+command. However, adding such static ARP cache entries must be used with caution as it is easy to 
+enter the wrong MAC address for an IP address. 
+
+Detecting Duplicate IP Addresses Using ARP 
+When starting up, Windows performs a gratuitous ARP to detect any duplication with its own IP 
+address. While this detects most cases of duplicate IP addresses, in a few situations two TCP/IP hosts 
+(either Microsoft or non-Microsoft) on the same network can be configured for the same IP address. 
+The MAC and IP address mapping is done by the ARP module, which uses the first ARP response it 
+receives. Therefore, the impostor computer's reply sometimes comes back before the intended 
+computer's reply. 
+These problems are difficult to isolate and track down. Use the arp -a command to display the 
+mappings in the ARP cache. If you know the Ethernet address for the remote computer you wish to 
+use, you can easily determine whether the two match. If not, use the arp -d command to delete the 
+entry, then use Ping with the same address (forcing an ARP), and check the Ethernet address in the 
+cache again by using arp -a. 
+If both computers are on the same network, you will eventually get a response from the imposter 
+computer. If not, you might have to capture the traffic from the impostor host with Network 
+Monitor to determine the owner or location of the system. For more information about Network 
+Monitor, see "Monitoring Network Performance" in the Server Operations Guide. 
+ 

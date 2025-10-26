@@ -1,0 +1,35 @@
+5.2. Definitions 
+
+1. Field is a group of related bytes that can be identified by the user with a name, type, and size. 
+2. Record is a group of related fields. 
+3. File is a group of related records that contains information to be used by specific application 
+programs to generate reports. 
+4. Database is a group of related files that are connected at various levels to offer flexible access to 
+the data stored in it. 
+5. Program files contain instructions and data files contain data; however, as far as storage is 
+concerned, the File Manager treats them both the same way. 
+6. Directories (also known as folders) are special files that contain listings of filenames and their 
+attributes. 
+ 
+Figure 5.1 
+ 
+Figure 5.1 above shows a structured representation of records and fields in a database table.
+
+5.3. Interacting with the File Manager 
+The File Manager responds to specific proprietary commands to perform necessary actions. Some of 
+the most common commands are OPEN, DELETE, RENAME, and COPY. In addition to these examples, 
+the File Manager extrapolates other system-specific actions from the instructions it receives. For 
+example, although there is no explicit command to create a new file, this is what happens the first time 
+a user gives the command to “save” a new file, one that has not been saved previously. Therefore, this 
+is interpreted as a CREATE command. 
+
+If the File Manager is required to provide detailed instructions for each system device, how to start it, 
+get it to the correct place where the desired record is located, and when to stop, then the program is  
+considered device dependent. More commonly, if this information is already available, usually in a 
+device driver, then the program is considered device independent. 
+Therefore, to access a file, the user does not need to know its exact physical location on the disk pack 
+(such as the cylinder, surface, and sector), the medium in which it is stored (archival tape, magnetic 
+disk, optical disc, or flash storage), or network specifics. This is fortunate, because file access can be a 
+complex process. Each logical command is broken down into a sequence of signals that trigger the step- 
+by-step actions performed by the device and supervise the progress of the operation by testing the 
+device’s status.  

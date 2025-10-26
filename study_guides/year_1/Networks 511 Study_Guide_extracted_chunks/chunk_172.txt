@@ -1,0 +1,22 @@
+3.5 Hubs and Bridges  
+Physical Layer devices: essentially repeaters operating at bit levels: repeat received bits on 
+one interface to all other interfaces 
+Hubs can be arranged in a hierarchy (or multi-tier design), with backbone hub at its top 
+
+Example of a Hub below: 
+ 
+Each connected LAN referred to as LAN segment. Hubs do not isolate collision domains: node may 
+collide with any node residing at any segment in LAN  
+
+Hub Advantages: 
+ simple, inexpensive device 
+ Multi-tier provides graceful degradation: portions of the LAN continue to operate if 
+one hub malfunctions 
+ extends maximum distance between node pairs (100m per Hub) 
+
+Hub limitations 
+single collision domain results in no increase in max throughput 
+ multi-tier throughput same as single segment throughput 
+individual LAN restrictions pose limits on number of nodes in same collision domain and on 
+total allowed geographical coverage  
+ Cannot connect different Ethernet types (e.g., 10BaseT and 100baseT) why? 

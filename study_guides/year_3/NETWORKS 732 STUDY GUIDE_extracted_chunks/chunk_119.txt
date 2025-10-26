@@ -1,0 +1,30 @@
+2.6 Network Management Systems
+ 
+To effectively manage both faults and performance, organizations frequently implement 
+comprehensive network management systems. There are numerous such tools available, all 
+adopting a similar framework whereby one or more network management consoles—be it a 
+server or a workstation based on the network's scale—routinely gather data from several 
+network-connected devices through a method known as polling. Each monitored device hosts a 
+network management agent, an application tasked with gathering operational data and 
+supplying it to the management software on the console. To minimize impact on device 
+performance during data collection, agents are designed to use minimal processing power. 
+Managed devices can include several manageable elements, such as a processor, memory, hard 
+disk, NIC, or other metrics such as performance or utilization. For instance, on a server, an agent 
+might record the number of connected users or the percentage of processor usage at any 
+moment. 
+
+The details of managed devices and their data are catalogued in a MIB (Management Information 
+Base). Agents transmit data about managed devices using various Application layer protocols, 
+with SNMP (Simple Network Management Protocol) primarily employed on modern networks. 
+As part of the TCP/IP protocol suite, SNMP usually operates over UDP on port 161, though it can 
+be configured for TCP. SNMP has three versions: v1, v2, and v3. Introduced in 1988, SNMPv1, the 
+original version, is seldom used due to its limited capabilities. SNMPv2 enhanced SNMPv1 by 
+offering better performance and modest security improvements. SNMPv3, on the other hand, 
+builds upon SNMPv2, incorporating authentication, validation, and encryption for packet 
+exchanges between managed devices and the network console, thus making it the most secure 
+variant. Nevertheless, certain administrators are reluctant to transition to SNMPv3 because of its 
+more intricate configuration processes, leaving SNMPv2 in widespread use. Network 
+management applications are compatible with multiple SNMP versions, though some devices are 
+restricted to supporting only one version. 
+ 
+Figure 2.6. Network Management System 

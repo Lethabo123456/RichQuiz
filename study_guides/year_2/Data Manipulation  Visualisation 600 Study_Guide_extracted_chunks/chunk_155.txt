@@ -1,0 +1,40 @@
+ty', 'value': 'NYC'}, 
+{'label': 'Montréal', 'value': 'MTL'}, 
+{'label': 'San Francisco', 'value': 'SF'} 
+], 
+value='MTL' 
+) 
+], style={'width': '50%'}) 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server() 
+ 
+● We put the Slider inside an html paragraph html.P() to prevent the radio buttons beneath it from 
+overwriting the slider marks. 
+Run this script and you should see the following: 
+ 
+ 
+ 
+Here we have shown only three built-in components: 
+● Dropdown 
+● Slider 
+● Radio Items 
+Many others are available, such as: 
+● RangeSlider 
+● Input 
+● Textarea 
+
+ 
+ 
+ 
+ 
+● Checklist (horizontal and vertical checkboxes) 
+● DatePickerSingle 
+● DatePickerRange 
+These components don’t really do anything until we involve Dash’s interactive features, like callbacks. 
+Before we get there, let’s investigate the Markdown component (a shortcut for writing HTML text), and 
+Dash’s Help() method. 
+Markdown 
+While Dash exposes HTML through the dash_html_components library, it can be tedious to write your 
+copy i

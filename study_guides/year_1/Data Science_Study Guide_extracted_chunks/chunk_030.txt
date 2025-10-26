@@ -1,0 +1,41 @@
+Figure 1.2 – Data Science 
+ 
+Code Extract – Part 1 
+import requests                
+# used to grab data from the web 
+ 
+from BeautifulSoup import BeautifulSoup    
+# used to parse HTML 
+ 
+from sklearn.feature_extraction.text import CountVectorizer 
+# used to count number of words and phrases (we will be using this module a lot) 
+ 
+Explanation 
+The code extract imports three libraries (or packages) that are commonly used for web scraping and 
+data analysis. The "requests" library is used for grabbing data from the web. The 
+"Beautifulsoup" library is used for parsing HTML documents in order to find specific information. 
+Finally, the "CountVectorizer" library from "sklearn" is used for counting the number of words 
+and phrases in a given dataset. This library is used for various types of data analysis such as text 
+classification. 
+ 
+Code Extract – Part 2 
+texts = [] 
+# hold our job descriptions in this list 
+ 
+for index in range(0,1000,10): # go through 100 pages of indeed 
+ 
+  page = 'indeed.com/jobs?q=data+scientist&start='+str(index) 
+  # identify the url of the job listings 
+ 
+  web_result = requests.get(page).text 
+  # use requests to actually visit the url 
+ 
+  soup  BeautifulSoup(web_result) 
+  # parse the html of the resulting page 
+ 
+  for listing in soup.findAll('span', {'class':'summary'}: 
+    # for each listing on the page 
+ 
+    texts.append(listing.text) 
+ # append the text of the listing to our list 
+ 

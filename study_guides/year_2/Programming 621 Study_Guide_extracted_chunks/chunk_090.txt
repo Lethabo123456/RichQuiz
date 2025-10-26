@@ -1,0 +1,41 @@
+3.4.3 Sentinel Controlled while Loops 
+You do not always know how many pieces of data (or entries) need to be read, but 
+you may know that the last entry is a special value, called a sentinel, that will tell the 
+loop to stop. In this case, you must read the first item before the while statement so 
+the test expression will have a valid value to test. If this item does not equal the 
+sentinel, the body of the while statement executes. The while loop continues to 
+execute as long as the program has not read the sentinel. Such a while loop is called 
+a sentinel-controlled while loop.
+
+In this case, a while loop might look like the following: 
+cin >> variable;                    //initialize the loop control variable  
+while (variable !5 sentinel)      //test the loop control variable  
+{ .  
+   .   
+    cin >> variable; //update the loop control variable .  
+   .  
+ }  
+
+The program computes and outputs the total number of boxes of cookies sold, the 
+total money made, and the average number of boxes sold by each student. However, 
+the program assumes that the programmer knows the exact number of volunteers. 
+Now suppose that the programmer does not know the exact number of volunteers. 
+
+Once again, assume that the data is in the following form: student’s name followed by 
+a space and the number of boxes sold by the student. Because we do not know the 
+exact number of volunteers, we assume that reading a value of -1 for name will mark 
+the end of the data, since it is a highly unlikely name to run into. 
+
+This program works as follows. The statements in Lines 8 to 12 declare the variables 
+used in the program. The statement in Line 14 prompts the user to enter the data 
+ending with -1. The statements in Lines 15 and 16 initialize the variables 
+totalNumOfBoxesSold and numOfVolunteers. The statement in Line 17 reads the first 
+name and stores it in name. The while statement in Line 18 checks whether name is 
+not equal to SENTINEL. (The variable name is the loop control variable.) If name is 
+not equal to SENTINEL, the body of the while loop executes. The statement in Line 
+20 reads and stores the number of boxes sold by the student in the variable 
+numOfBoxesSold and the statement in Line 21 updates the value of 
+totalNumOfBoxesSold by adding numOfBoxesSold to it. The statement in Line 22 
+increments the value of numOfVolunteers by 1, and the statement in Line 23 reads 
+and stores the next name into name. The statements in Lines 20 through 23 repeat 
+until the program reads the SENTINEL. 

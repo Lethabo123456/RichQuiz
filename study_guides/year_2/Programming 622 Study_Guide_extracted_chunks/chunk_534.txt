@@ -1,0 +1,42 @@
+is already in this list   
+output an appropriate message else use the function 
+insertAt to insert the item in the list.  
+  
+The following function, insertOrd, implements this algorithm.  
+  
+template <class elemType>  
+void orderedArrayListType<elemType>::insertOrd(const elemType& item)  
+{ int first = 0; int last = 
+length - 1; int mid; 
+bool found = false;  
+if (length == 0) //the list is empty  
+{  
+list[0] = item;  
+
+264  
+  
+length++;  
+}  
+else if (length == maxSize) cerr << "Cannot insert into 
+a full list." << endl; else  
+{  
+while (first <= last && !found)  
+{ mid = (first + last) / 2; if 
+(list[mid] == item) 
+found = true; else if 
+(list[mid] > item) last = 
+mid - 1; else  
+first = mid + 1;  
+}//end while if (found) cerr << "The insert item is 
+already in the list. "  
+<< "Duplicates are not allowed." << endl;  
+else  
+{  
+if (list[mid] < item) 
+mid++; 
+insertAt(mid, item);  
+}  
+}  
+}//end insertOrd  
+  
+Similarly, you can write a function to remove an element from an ord

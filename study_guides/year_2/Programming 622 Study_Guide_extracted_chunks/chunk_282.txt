@@ -1,0 +1,47 @@
+ype; 
+ptr->info = 30; ptr-
+>link = list;  
+list = ptr;  
+ptr = new nodeType; 
+ptr->info = 42; ptr-
+>link = list->link; list-
+>link = ptr;  
+ptr = List;  
+while (ptr != NULL)  
+{  
+cout << ptr->info << endl;  
+ptr = ptr->link;  
+
+142  
+  
+}  
+  
+9. Consider the following C++ statements. (The class unorderedLinkedList is as defined in this chapter.)  
+  
+unorderedLinkedList<int> list;  
+list.insertFirst(15); 
+list.insertLast(28); 
+list.insertFirst(30); 
+list.insertFirst(2); 
+list.insertLast(45); 
+list.insertFirst(38); 
+list.insertLast(25); 
+list.deleteNode(30); 
+list.insertFirst(18); 
+list.deleteNode(28); 
+list.deleteNode(12); 
+list.print();  
+  
+What is the output of this program segment?  
+  
+10. Suppose the input is:  
+18 30 4 32 45 36 78 19 48 75 -999  
+  
+What is the output of the following C++ code? (The class unorderedLinkedList is as defined in this chapter.)  
+  
+unorderedLinkedList<int> list; 
+unorderedLinkedList<int> 
+copyList; int num; cin >> num; 
+while (num != -999)  
+{  
+i

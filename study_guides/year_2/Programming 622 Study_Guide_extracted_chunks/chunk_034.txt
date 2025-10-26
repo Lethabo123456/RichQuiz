@@ -1,0 +1,19 @@
+ue of inches must be nonnegative.  
+//Postcondition: If the value of inches is < 0, the 
+function // terminates; otherwise, the function returns 
+the // equivalent length in centimeters. double 
+inchesToCentimeters(double inches)  
+{ assert(inches >= 0);  
+return 2.54 * inches;  
+}  
+  
+However, if the assert statement fails, the entire program will terminate, which might be appropriate if 
+the remainder of the program depends on the execution of the function. On the other hand, the user can 
+check the value returned by the function, determine if the returned value is appropriate, and proceed 
+accordingly. To use the assert function, you need to include the header file cassert in your program.  
+  
+As you can see, the same function can be implemented differently by different programmers. Because the 
+user of a function need not be concerned with the details of the function, the preconditions and 
+postconditions are specified with the function prototype.  
+  
+That is, the user is given

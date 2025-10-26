@@ -1,0 +1,23 @@
+Topic 3: C# Objects and classes 
+ 
+3.1 Introduction 
+Topic 1 discusses the myriad primitive types built into the C# language, such as int, long, and 
+char. The heart and soul of C#, however, is the ability to create new, complex, programmer-
+defined types that map cleanly to the objects that make up the problem you are trying to 
+solve. 
+ 
+It is this ability to create new types that characterize an object-oriented language. Specify new 
+types in C# by declaring and defining classes. Instances of a class are called objects. objects 
+are created in memory when your program executes. 
+ 
+The huge advantage of classes in object-oriented programming is that they encapsulate the 
+characteristics and capabilities of an entity in a single, self-contained and self-sustaining unit 
+of code. When you want to sort the contents of an instance of a Windows list box control, for 
+example, tell the list box to sort itself. How it does so is of no concern; that it does so is all you 
+need to know. Encapsulation, along with Polymorphism and inheritance is one of three 
+cardinal principles of object-oriented programming. 
+ 
+This chapter explains the C# language features that are used to specify new classes. The 
+elements of a class, its behaviors and properties are known collectively as its class members. 
+This chapter will show how methods are used to define the behaviors of the class, and how 
+the state of the class is maintained in member variables (often called fields).

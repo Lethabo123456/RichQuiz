@@ -1,0 +1,33 @@
+5.6 Integrals of Symmetric Functions 
+If 𝑓(𝑥) is continuous on [−𝑎, 𝑎] and 𝑓 is an even function, then 
+∫𝑎−𝑎 𝑓(𝑥) 𝑑𝑥 = 2∫𝑎0 𝑓(𝑥)𝑑𝑥 and if  𝑓(𝑥) is continuous on [−𝑎, 𝑎] and 𝑓 is an 
+odd function, then ∫𝑎−𝑎 𝑓(𝑥) 𝑑𝑥 = 0. 
+
+These properties of integrals of symmetric functions are very helpful when 
+solving integration problems. Some of the more challenging problems can be 
+solved quite simply by using this property. 
+ 
+5.7 Integration by Parts 
+Suppose that we have an integral such as ∫𝑥 𝑐𝑜𝑠𝑥 𝑑𝑥, similar to integrals 
+solved using the substitution method; there are no general equations for this 
+indefinite integral. However there do not appear to be any clear substitutions 
+that could be made to simplify this integral. This brings us to an integration 
+technique known as integration by parts, which will call upon our knowledge 
+of the Product Rule for differentiation. 
+
+The Product Rule states: If 𝑓 and 𝑔 are differentiable functions, then 
+ [𝑓(𝑥)𝑔(𝑥)]′ = 𝑓(𝑥)𝑔′(𝑥) + 𝑔(𝑥)𝑓′(𝑥), 
+by taking the indefinite integral of both sides of the equation we have: 
+ ∫ [𝑓(𝑥)𝑔(𝑥)]′ 𝑑𝑥= ∫ [𝑓(𝑥)𝑔′(𝑥) + 𝑔(𝑥)𝑓′(𝑥)] 𝑑𝑥 
+and we can rearrange this equation as: 
+ ∫𝑓(𝑥)𝑔′(𝑥)𝑑𝑥= 𝑓(𝑥)𝑔(𝑥) − ∫ 𝑔(𝑥)𝑓′(𝑥)𝑑𝑥 
+To make it easier to remember it is commonly written in the following 
+notation: 
+ Let 𝑢= 𝑓(𝑥) and 𝑣= 𝑔(𝑥). Then the differentiable are 𝑑𝑢= 𝑓′(𝑥) 𝑑𝑥 and 
+𝑑𝑣= 𝑔′(𝑥) 𝑑𝑥, so by the substitution rule, the formula for integration by parts 
+becomes:
+
+∫𝑢 𝑑𝑣= 𝑢𝑣−∫ 𝑣 𝑑𝑢 
+From our previous example, if we let 𝑢= 𝑥 and 𝑑𝑣= 𝑐𝑜𝑠𝑥, then 𝑑𝑢= 𝑑𝑥 and 
+𝑣= 𝑠𝑖𝑛𝑥. If we substitute these values into the formula we have:  
+∫𝑥 𝑐𝑜𝑠𝑥 𝑑𝑥= 𝑥 𝑠𝑖𝑛𝑥− ∫𝑠𝑖𝑛𝑥 𝑑𝑥= 𝑠𝑖𝑛𝑥+ 𝑐𝑜𝑠𝑥+ 𝐶

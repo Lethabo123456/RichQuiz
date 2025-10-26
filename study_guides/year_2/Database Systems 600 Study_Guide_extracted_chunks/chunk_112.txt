@@ -1,0 +1,12 @@
+herefore, keys are determinants in functional dependencies. Several different types of 
+keys are used in the relational model, and you need to be familiar with them. A composite key is a 
+key that is composed of more than one attribute. An attribute that is a part of a key is called a key 
+attribute.  
+A super-key is a key that can uniquely identify any row in the table. In other words, a super-key 
+functionally determines every attribute in the row. Furthermore, a composite that contains a super-
+key is also a super-key. However, it is worth noting that not all keys are super-keys. 
+One specific type of super-key is called a candidate key. A candidate key is a minimal super-key—
+that is, a super-key without any unnecessary attributes. A candidate key is based on a full functional 
+dependency. A table can have many different candidate keys. Candidate keys are so called because 
+they are the eligible options from which the designer will choose when selecting the primary key. 
+The primar

@@ -1,0 +1,26 @@
+Worked Example 
+1. Let 𝑃(𝑥) denote the statement “𝑥 >  3.” What are the truth values of 
+𝑃(4) and 𝑃(2)? 
+ 
+Solution: 
+We obtain the statement 𝑃(4) by setting 𝑥 =  4 in the statement “𝑥 >
+ 3. ” Hence, 𝑃(4), which is the statement “4 >  3, ” is true. However, 
+𝑃(2), which is the statement “2 >  3, ” is false. 
+
+2. Let 𝐴(𝑥) denote the statement “Computer 𝑥 is under attack by an 
+intruder.” Suppose that of the computers on campus, only CS2 and 
+MATH1 are currently under attack by intruders. What are truth values of 
+𝐴(𝐶𝑆1), 𝐴(𝐶𝑆2), and 𝐴(𝑀𝐴𝑇𝐻1)? 
+
+Solution: 
+We obtain the statement 𝐴(𝐶𝑆1) by setting 𝑥 =  𝐶𝑆1 in the statement 
+“Computer 𝑥 is under attack by an intruder.” Because CS1 is not on the 
+list of computers currently under attack, we conclude that 𝐴(𝐶𝑆1) is 
+false. Similarly, because CS2 and MATH1 are on the list of computers 
+under attack, we know that 𝐴(𝐶𝑆2) and 𝐴(𝑀𝐴𝑇𝐻1) are true. 
+
+We can also have statements that involve more than one variable. For 
+instance, consider the statement “𝑥 =  𝑦 +  3. ” We can denote this 
+statement by 𝑄(𝑥, 𝑦), where 𝑥 and 𝑦 are variables and 𝑄 is the predicate. 
+When values are assigned to the variables 𝑥 and 𝑦, the statement 𝑄(𝑥, 𝑦) 
+has a truth value.

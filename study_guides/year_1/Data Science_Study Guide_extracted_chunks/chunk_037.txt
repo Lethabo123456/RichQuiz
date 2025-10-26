@@ -1,0 +1,27 @@
+Structured data is usually easier to work with and analyse as opposed to unstructured data. Most 
+statistical and machine learning models were built using structured data and cannot function on the 
+unreliable interpretation of unstructured data. So why even talk about unstructured data? Because it 
+is so common! Most estimates place unstructured data as 80-90% of the world's data. This data exists 
+in various forms such as tweets, e-mails, literature, and server logs. While data scientists may prefer 
+structured data, they must be able to deal with the world's massive amounts of unstructured data. To 
+prepare unstructured data for data analysis, we employ a pre-analysis technique called preprocessing. 
+The next chapter will deal with preprocessing in great detail; for now, we will consider the part of 
+preprocessing wherein we attempt to apply transformations to convert unstructured data into a 
+structured counterpart (Sinan, 2016). 
+ 
+2.3 Quantitative versus qualitative data 
+In the scientific field when prompted as to the type of data, it generally implies whether the data is 
+quantitative or qualitative. These two data types can be defined as follows: 
+ 
+• Quantitative data: This data can be described as numbers, and basic mathematical 
+procedures, including addition, are possible on the set. It represents quantities or amounts 
+and is typically collected through standardized methods such as surveys, experiments, or 
+direct measurements (Chohan, 2019). 
+ 
+• Qualitative data: This data cannot be described using numbers and basic mathematics. This 
+data is generally thought of as being described using "natural" categories and language. In 
+other words, it is more descriptive information that describes the qualifies or characteristics 
+of an entity rather than being measured in numbers. It is collected through methods such as 
+interviews, observations, or open-ended surveys and provides a deeper understanding of the 
+underlying reasons, opinions, behaviours, or emotions of individuals or groups (Chohan, 
+2019). 

@@ -1,0 +1,51 @@
+In Python, we can use the following formula: 
+
+sum(x) # == 15 
+For example, the formula for calculating the mean of a series of numbers is quite 
+common. If we have a vector (x) of length n, the mean of the vector can be calculated 
+as follows: 
+ 
+Proportional Concepts 
+Definition: 
+• Proportionality is a mathematical concept where two quantities maintain a constant 
+ratio. The lowercase alpha symbol (α) is often used to denote proportionality. 
+Types of Proportionalities: 
+
+7. Direct Proportionality: 
+o Definition: Two variables are directly proportional if they increase or decrease 
+together at the same rate. 
+o Notation: y∝x or y=kx, where k is the constant of proportionality. 
+o Example: If a car travels at a constant speed, the distance traveled is directly 
+proportional to the time spent traveling. If the car moves at 50 km/h, in 2 
+hours, it will cover 100 km (50 km/h * 2 h). 
+
+8. Inverse Proportionality: 
+o Definition: Two variables are inversely proportional if one increases while the 
+other decreases at the same rate. 
+o Notation: y ∝ x or y=xk . 
+o Example: The time taken to complete a task is inversely proportional to the 
+number of people working on it. If 2 workers take 5 hours to complete a task, 
+10 workers would take only 1 hour (assuming efficiency remains constant). 
+Real-World Examples: 
+• Direct Proportionality: 
+o Company Sales and Customers: If the number of customers doubles, sales also 
+double, assuming each customer buys a similar amount (Sales ∝Customers). 
+• Inverse Proportionality: 
+o Gas Prices and Oil Availability: As the availability of oil decreases, gas prices 
+increase (Gas Prices ∝ 1/Oil Availability). 
+
+2. Dot Product 
+Definition: 
+• The dot product is a mathematical operation that takes two equal-length sequences 
+of numbers (usually coordinate vectors) and returns a single number. 
+• Given two vectors’ Properties: 
+
+9. Commutative: A⋅B=B⋅A. 
+10. Distributive: A⋅(B+C)=A⋅B+A⋅C. 
+11. Scalar Multiplication: c(A⋅B)=(cA)⋅B=A⋅(cB) for any scalar c. 
+Applications: 
+• Calculating the angle between two vectors. 
+• Determining if vectors are orthogonal (perpendicular). 
+Example: 
+• Consider vectors =[1,3,−5]A=[1,3,−5] and =[4,−2,−1]B=[4,−2,−1]. 
+• Their dot product is 1×4+3×(−2)+(−5)×(−1)=4−6+5=31×4+3×(−2)+(−5)×(−1)=4−6+5=3. 

@@ -1,0 +1,19 @@
+ssignment of access rights 
+may restrict operations (CREATE, UPDATE, DELETE, and so on) on predetermined objects 
+such as databases, tables, views, queries, and reports.  
+
+ 
+138 
+ 
+Audit trails are usually provided by the DBMS to check for access violations. Although the 
+audit trail is an after-the-fact device, its mere existence can discourage unauthorized use. 
+ 
+ Data encryption can render data useless to unauthorized users who might have violated some 
+of the database security layers.  
+ 
+Diskless workstations allow end users to access the database without being able to download 
+the information from their workstations. 
+Fine-tune the Database Database performance can be difficult to evaluate because there are no 
+standards for measuring it, but it is typically one of the most important factors in database 
+implementation. Different systems will place different requirements on the database. Systems that 
+support rapid transactions will require the database to be implemented so

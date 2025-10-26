@@ -1,0 +1,33 @@
+5.1.2 Seaborn High Level Functions 
+ 
+Most of your interactions with seaborn will happen through a set of plotting functions. 
+The seaborn namespace is flat; all of the functionality is accessible at the top level. But the code itself is 
+hierarchically structured, with modules of functions that achieve similar visualization goals through different 
+means. Most of the docs are structured around these modules: you’ll encounter names like “relational”, 
+“distributional”, and “categorical”. 
+ 
+For example, the distributions module defines functions that specialize in representing the distribution of 
+datapoints. This includes familiar methods like the histogram 
+ 
+Output 
+
+Along with similar, but perhaps less familiar, options such as kernel density estimation: 
+  
+5.1.3 Figure- level Vs Axes-level Functions 
+In addition to the different modules, there is a cross-cutting classification of seaborn functions as “axes-level” 
+or “figure-level”.
+ 
+The examples above are axes-levelfunctions.Theyplot data onto 
+a single matplotlib.pyplot.Axes object, which is the return value of the function. 
+In contrast, figure-level functions interface with matplotlib through a seaborn object, usually a FacetGrid, that 
+manages the figure. Each module has a single figure-level function, which offers a unitary interface to its various 
+axes-level functions. 
+
+For example, displot() is the figure-level function for the distributions module. Its default behavior is to draw a 
+histogram, using the same code as histplot() behind the scenes. 
+ 
+To draw a kernel density plot instead, using the same code as kdeplot(), select it using the kind parameter: 
+
+You’ll notice that the figure-level plots look mostly like their axes-level counterparts, but there are a few 
+differences. Notably, the legend is placed outside the plot. They also have a slightly different shape (more on 
+that shortly). 

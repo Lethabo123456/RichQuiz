@@ -1,0 +1,42 @@
+t. 
+  
+2.5.1 Window Events 
+When we opened a new window above, we did so from a hyperlink between the two 
+BODY tags. The hyperlink text was this: 
+<a href="#" onClick="eAdd()">Link Text Here</A> 
+ 
+The onClick part is something called an event. Lots of other objects between the 
+two BODY tags can use the onClick event. For example, a button on a form, check 
+boxes, drop-down lists, images - in fact, just about anything between the BODY tags. 
+But the idea is to call some JavaScript code into action when the event takes place. 
+ 
+There are lots of window events you can use. You can probably guess what most of 
+them are used for. 
+ onChange 
+ onClose 
+ onKeydown 
+ onKeypress 
+ onKeyup 
+ onLoad 
+ onMousedown 
+ onMousemove 
+ onMouseout 
+ onMouseover 
+ onMouseup 
+ onScroll 
+ onSelect 
+ onSubmit 
+ onUnload 
+ 
+ 
+IDEA 
+ 
+Windows events can be used to 
+activate JavaScript whenever the 
+user is ready. 
+
+ 
+27 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+2.6 DOCUMENT OBJECT MODEL -

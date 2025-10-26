@@ -1,0 +1,15 @@
+he data usage patterns.  
+ 
+Knowing the data volume will help you determine how much storage space to reserve for the 
+database. To do this, the designer follows a process similar to the one used during ER model 
+verification. For each table, identify all possible transactions, their frequency, and volume. For 
+each transaction, you determine the amount of data to be added or deleted from the database. 
+This information will help you determine the amount of data to be stored in the related table.  
+ 
+Conversely, knowing how frequently new data is inserted, updated, and retrieved will help the 
+designer determine the data usage patterns. Usage patterns are critical, particularly in 
+distributed database design. For example, are there any weekly batch uploads or monthly 
+aggregation reports to be generated? How frequently is new data added to the system? Equipped 
+with the two previous pieces of information, the designer must: 
+ 
+Determine the location and physical storage organizatio

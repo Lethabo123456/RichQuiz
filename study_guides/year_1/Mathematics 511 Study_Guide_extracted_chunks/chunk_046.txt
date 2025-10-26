@@ -1,0 +1,22 @@
+1.3 Propositional Equivalences 
+Introduction 
+An important type of step used in a mathematical argument is the 
+replacement of a statement with another statement with the same truth 
+value. Because of this, methods that produce propositions with the same 
+truth value as a given compound proposition are used extensively in the 
+construction of mathematical arguments. Note that we will use the term 
+“compound proposition” to refer to an expression formed from 
+propositional variables using logical operators, such as 𝑝 ∧ 𝑞. 
+
+Definition 8 
+A compound proposition that is always true, no matter what the truth values 
+of the propositional variables that occur in it, is called a tautology.                         
+A compound proposition that is always false is called a contradiction. A 
+compound proposition that is neither a tautology nor a contradiction is 
+called a contingency. 
+We can construct examples of tautologies and contradictions using just one 
+propositional variable. Consider the truth tables of 𝑝 ∨￢𝑝 and 𝑝 ∧￢𝑝, 
+shown in Table 10. Because 𝑝 ∨￢𝑝 is always true, it is a tautology. Because 
+𝑝 ∧￢𝑝 is always false, it is a contradiction. 
+
+Table 10: Example of Tautology and Contradiction 

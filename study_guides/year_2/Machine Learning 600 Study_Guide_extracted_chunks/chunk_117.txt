@@ -1,0 +1,21 @@
+trix 
+ 
+By passing the filter over the image, the filter multiplies its own values with the values of the 
+values on the input image. For example, if the filter was in the top-left position of the image, 
+the filter calculation would look like this: 
+
+P a g e  | 75 
+ 
+                                           
+ 
+This is the receptive field—the output value of the CNN. The filter would move one step to 
+the right and repeat the process until the entire image was covered. Note that the filter is 
+overlapping the previous filter calculation; eventually you will end up with CNN output values 
+for each step the filter has made (see Figure 6.6). 
+  
+ 
+                                                                              Figure 6.6:  CNN output values 
+ 
+The filter values can be set in such a way that if we are looking for vertical features, then the 
+vertical aspect of the filter could be set to 1, for example (see Figure 6.7). Or if looking for 
+horizontal features, the filter coul

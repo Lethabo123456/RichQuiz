@@ -1,0 +1,32 @@
+Example 4.1: verifying and installing the control toolbox if not available 
+
+Example 4.2: Open Loop Analysis of a Coupled Mass Spring System 
+Consider the spring mass system above: 
+We wish to analyse the time and frequency response of this system using a variety of Python-
+control functions for linear systems analysis. 
+System dynamics 
+The dynamics of the system can be written as 
+ 
+or in state space form: 
+ 
+The PID control formula for robotics using ABCD notation is: 
+u(t) = Kp·e(t) + Ki·∫e(t)dt + Kd·de(t)/dt 
+Where the ABCD parameters are: 
+
+• A = Kp (Proportional gain) 
+• B = Ki (Integral gain) 
+• C = Kd (Derivative gain) 
+• D = 0 (Direct feedthrough, typically zero in PID control) 
+
+In state-space representation for a PID controller: 
+State equation: ẋ(t) = Ax(t) + Bu(t) Output equation: y(t) = Cx(t) + Du(t) 
+
+For a discrete-time PID implementation commonly used in robotics: 
+u[k] = A·e[k] + B·∑e[i] + C·(e[k] - e[k-1]) 
+Where: 
+• e[k] is the error at time step k 
+• u[k] is the control output at time step k 
+• A, B, C are the tunable PID gains 
+• D represents any direct feedthrough (usually 0) 
+This formulation allows for systematic tuning and analysis of the PID controller's stability and 
+performance in robotic systems.

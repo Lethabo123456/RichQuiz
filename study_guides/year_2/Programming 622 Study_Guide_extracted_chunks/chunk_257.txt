@@ -1,0 +1,42 @@
+3.5.1  Default Constructor  
+  
+The default constructor initializes the doubly linked list to an empty state. It sets first and last to NULL and 
+count to 0.  
+  
+template <class Type>  
+doublyLinkedList<Type>::doublyLinkedList()  
+{ first= NULL; last = 
+NULL;  
+count = 0;  
+}  
+  
+ 
+3.5.2  isEmptyList  
+  
+This operation returns true if the list is empty; otherwise, it returns false. The list is empty if the pointer 
+first is NULL.  
+  
+template <class Type>  
+bool doublyLinkedList<Type>::isEmptyList() const  
+{ return (first == NULL);  
+}  
+  
+ 
+3.5.3  Destroy the List  
+  
+This operation deletes all the nodes in the list, leaving the list in an empty state.We traverse the list 
+starting at the first node and then delete each node. Furthermore, count is set to 0.  
+  
+template <class Type>  
+void doublyLinkedList<Type>::destroy()  
+{  
+nodeType<Type> *temp; //pointer to delete the node while 
+(first != NULL)  
+
+128  
+  
+{ temp = first; first = 
+first->next;  
+delete temp;  
+}  
+last

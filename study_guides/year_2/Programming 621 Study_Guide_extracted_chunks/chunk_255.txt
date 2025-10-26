@@ -1,0 +1,20 @@
+rloading provides the same concise 
+expressions for user-defined data types as it does for built-in data types. 
+ 
+Overloading an Operator: Rules 
+ 
+1. When overloading an operator, keep the following in mind: 
+2. You cannot change the precedence of an operator. 
+3. The associativity cannot be changed. (For example, the associativity of the 
+arithmetic operator addition is from left to right, and it cannot be changed.)  
+4. Default parameters cannot be used with an overloaded operator. 
+5. You cannot change the number of parameters an operator takes.  
+6. You cannot create new operators. Only existing operators can be overloaded. 
+7. The meaning of how an operator works with built-in types, such as int, remains 
+the same. That is, you cannot redefine how operators work with built-in data 
+types. 
+8. Operators can be overloaded either for objects of the user-defined types, or for 
+a combination of objects of the user-defined type and objects of the built-in type 
+ 
+
+243 | P a g e

@@ -1,0 +1,25 @@
+e of the binary tree is stored outside the binary tree in a pointer 
+variable, usually called the root, of type binaryTreeNode. Thus, in general, a binary tree looks like the 
+diagram in Figure 9-4.  
+  
+  
+  
+  
+
+323  
+  
+FIGURE 9-4 Binary tree  
+For simplicity, we will continue to draw binary trees as before. That is, we use circles to represent nodes, 
+and left and right arrows to represent links. As before, three lines at the end of an arrow mean that the 
+subtree is empty.  
+  
+Before we leave this section, let us define a few more terms.  
+  
+A node in the binary tree is called a leaf if it has no left and right children. Let U and V be two nodes in the 
+binary tree T. U is called a parent of V if there is a branch from U to V. A path from a node X to a node Y 
+in the binary tree is a sequence of nodes X0, X1, . . . , Xn such that  
+  
+  
+  
+Because the branches go only from a parent to its children, from the previous discussion it is clear that in 
+a binary tree, there is a uniq

@@ -1,0 +1,28 @@
+3.1.5 Power Sets 
+Many problems involve testing all combinations of elements of a set to see 
+if they satisfy some property. To consider all such combinations of elements 
+of a set S, we build a new set that has as its members all the subsets of S. 
+Definition 23 
+Given a set S, the power set of S is the set of all subsets of the set S. The 
+power set of S is denoted by 𝑃(𝑆). 
+ 
+Note that the empty set and the set itself are members of this set of subsets. 
+ 
+Worked Example 
+What is the power set of the set {0, 1, 2}? 
+Solution: 
+The power set P({0, 1, 2}) is the set of all subsets of {0, 1, 2}. Hence, 
+ P({0, 1, 2}) = {∅, {0}, {1}, {2}, {0, 1}, {0, 2}, {1, 2}, {0, 1, 2}}. 
+ 
+3.1.6 Using Set Notation with Quantifiers 
+Sometimes we restrict the domain of a quantified statement explicitly by 
+making use of a particular notation. For example, ∀𝑥∈𝑆(𝑃(𝑥)) denotes the 
+universal quantification of P(x) over all elements in the set S. In other words, 
+∀𝑥∈𝑆(𝑃(𝑥)) is shorthand for ∀𝑥(𝑥 ∈ 𝑆 → 𝑃(𝑥)). Similarly, ∃𝑥∈
+𝑆(𝑃(𝑥)) denotes the existential quantification of P(x) over all elements in S. 
+That is, ∃𝑥∈𝑆(𝑃(𝑥)) is shorthand for ∃𝑥(𝑥 ∈ 𝑆 ∧ 𝑃(𝑥)). 
+ 
+The statement ∃𝑥∈𝒁(𝑥2  =  1) states that there exists an integer x such 
+that 𝑥2 = 1. This statement can be expressed as “There is an integer whose 
+square is 1.” This is also a true statement because 𝑥 = 1 is such an integer 
+(as is −1). 

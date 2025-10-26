@@ -1,0 +1,96 @@
+All the compiler knows is that it has three Window objects and that you've called DrawWindow( ) on each. 
+If you had not marked DrawWindow as virtual, Window's DrawWindow ( ) method 
+would be called three times. However, because you did mark DrawWindow ( ) as virtual and 
+because the derived classes override that method, when you call DrawWindow ( ) on the array, 
+the compiler determines the runtime type of the actual objects (a Window, a ListBox and a 
+Button) and calls the right method on each. This is the essence of polymorphism. The com-
+plete code for this example is shown in Example 2-2. 
+
+Example 2-2. Using virtual methods 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+
+namespace Values 
+{ 
+    public class Window{ 
+ 
+// constructor takes two integers to 
+// fix location on the console 
+   public Window(int top, int left){ 
+ 
+     this.top = top; 
+     this.left = left; 
+     } 
+// simulates drawing the window 
+   public virtual void DrawWindow( ){ 
+ 
+     Console.WriteLine("Window: drawing Window at {0} , {1} ",top, left); 
+    } 
+// these members are protected and thus visible // to derived class methods. We'll examine 
+this // later in the chapter 
+        protected int top; 
+        protected int left; 
+   } 
+// ListBox derives from Window 
+      public class ListBox : Window{ 
+ 
+// constructor adds a parameter 
+          public ListBox(int top, int left, string contents) 
+              : base(top, left) 
+          { { // call base constructor  
+              listBoxContents = contents; 
+          } 
+   // an overridden version (note keyword) because in the 
+   // derived method we change the behavior 
+   public override void DrawWindow( ){ 
+    base.DrawWindow( ); // invoke the base method 
+    Console.WriteLine ("Writing string to the listbox: {0}", listBoxContents); 
+    } 
+ 
+     private string listBoxContents; // new member variable  
+       
+    } 
+    public class Button : Window{ 
+    public Button(int top,int left):base(top, left){ } 
+    // an overridden version (note keyword) because in the 
+    // derived method we change the behavior 
+     
+    public override void DrawWindow( ){ 
+ 
+      Console.WriteLine("Drawing a button at {0}, {1}\n",top, left); 
+   }  
+  } 
+     
+    public class Tester{ 
+      static void Main( ){ 
+       Window win = new Window(1,2); 
+    ListBox lb = new ListBox(2,4,"Stand alone list box"); Button b = new Button(5,6); 
+    win. DrawWindow ( ); 
+    lb.DrawWindow( ); 
+    b.DrawWindow( ); 
+   Window[] winArray = new Window[ 2]; winArray[ 0] = new Window(1,2); 
+    
+winArray[ 1] = new ListBox(2,4,"List box in array"); 
+    winArray[ 2] = new Button (5,6); 
+    for (int i = 0;i < 2; i++) { 
+       winArray[ i]. DrawWindow ( ); 
+     } 
+   } 
+ } 
+} 
+  
+Output: 
+ 
+Note that throughout this example, we've marked the new overridden methods with the 
+keyword override: 
+public override void DrawWindow( ) 
+C++ programmers take note: you must explicitly mark the declaration of any 
+method that overrides a virtual method with the keyword Override 
+ 
+The compiler now knows to use the overridden method when treating these objects polymor-
+phically. The compiler is responsible for tracking the real type of the object and for handling 
+the "late binding" so that it is ListBox. DrawWindow ( ) that is called when the Window 
+reference really points to a ListBox object.

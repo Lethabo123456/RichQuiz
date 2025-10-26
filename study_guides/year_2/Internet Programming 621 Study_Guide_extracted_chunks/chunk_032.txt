@@ -1,0 +1,23 @@
+ght: normal; margin: 30px 0 12px; color: #666; 
+font-size: 1.2em; } h4 { font-weight: bold; margin: 25px 0 12px; color: #666; 
+font-size: 1.0em; } h5 { font-weight: bold; margin: 25px 0 12px; color: #666; 
+font-size: 0.9em; }  
+  
+/* Forms */  
+label { display: block; float: left; clear: both; text-align: right;  
+margin: 0.6em 5px 0 0; width: 40%; }  
+input, select, textarea { float: right; margin: 1em 0 0 0; width: 57%; } 
+input { border: 1px solid #666; }  
+input[type=radio], input[type=checkbox], input[type=submit], 
+input[type=reset], input[type=button], input[type=image] { width: auto; }  
+  
+  
+1.6 How It Works  
+In the example above, the PHP code itself is exactly the same — echo “Hello, world!” — but by 
+surrounding the PHP with HTML markup, you’ve created a well-formed HTML page styled with CSS.  
+  
+First, a DOCTYPE and the opening html tag are used to declare that the page is an XHTML 1.0 Strict 
+Web page:  
+  
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“htt

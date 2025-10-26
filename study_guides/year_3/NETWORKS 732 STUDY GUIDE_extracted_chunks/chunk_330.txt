@@ -1,0 +1,34 @@
+6.10 Wi-ﬁ Network Security 
+
+Organizations use one or more of the 802.11 protocol standards on their WLANs. By default, the 
+802.11 standard does not by itself oﬀer any security. The client only needs to know the access 
+point’s SSID, which many access points broadcast. Network administrators may prevent their 
+access points from broadcasting the SSIDs, making them harder to detect. However, this does not 
+provide true security. 
+Two solutions to this problem are authentication and encryption: 
+• Authentication: Allows a wireless client to log on to the network, either by providing the correct 
+password for the SSID or by providing user credentials that might be processed by an 
+authentication server. The authentication process can be somewhat strengthened with MAC 
+ﬁltering, or MAC address ﬁltering, which prevents the AP from authenticating any device whose 
+MAC address is not listed by the network administrator. (MAC ﬁltering can also be instituted on a 
+switch.) But it can be time consuming to maintain a current list of all approved MAC addresses, 
+and, as you’ve seen, MAC addresses are easily impersonated.
+
+• Encryption algorithms: Scramble data transmitted over the airwaves into a format that cannot 
+easily be interpreted if the signal is intercepted. The purpose of encryption is to keep information 
+private. Many forms of wireless encryption exist, with some being more secure than others. 
+  
+WPA (Wi-Fi Protected Access) 
+
+A signiﬁcant disadvantage to WEP is that it uses the same network key for all clients and the key 
+is static, which means it won’t change without manual intervention. Due to this inherent 
+insecurity, a replacement security technology was developed, called WPA (Wi-Fi Protected 
+Access), which dynamically assigns every transmission its own key. 802.11i incorporates an 
+encryption key generation and management scheme known as TKIP (Temporal Key Integrity - 
+Protocol), pronounced tee-kip, to improve security for legacy WEP-based devices. TKIP 
+accomplished three signiﬁcant improvements: 
+• Message integrity uses a message integrity code, called Michael, that ensures incoming packets 
+are, in fact, coming from their declared source. This is also called packet authentication. 
+• Key distribution assigns every transmission its own key. 
+• Encryption Includes encryption originally provided by RC4 (Rivest Cipher 4), a now insecure 
+encryption cipher that is still widely used.  

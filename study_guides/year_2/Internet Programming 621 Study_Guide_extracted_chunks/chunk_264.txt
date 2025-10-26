@@ -1,0 +1,57 @@
+ollowing PHP code ? 
+ <pre lang="php" line="1" cssfile="hk1_style"> 
+ <?php 
+     function multi($num) 
+     { 
+         if ($num == 3) 
+             echo "I Wonder"; 
+         if ($num == 7) 
+             echo "Which One"; 
+         if ($num == 8) 
+             echo "Is The"; 
+         if ($num == 19) 
+             echo "Correct Answer"; 
+     } 
+     $can = stripos("I love php, I love phptoo!","PHP"); 
+     multi($can); 
+  
+?> 
+
+a) I Wonder 
+b) Which One 
+c) Is The 
+d) Correct Answer 
+  
+Answer: b 
+  
+140. 
+What will be the output of the following PHP code ? 
+a) You Do Not Talk About Fight Club 
+b) You Do Not Talk About Kill Bill 
+c) You Do Not Talk About Pulp Fiction 
+d) None of the above 
+  
+Answer:a 
+  
+141. 
+What will be the output of the following PHP code ? 
+<?php 
+function colour() 
+{  
+$colors = array("red", "green", "blue", "yellow");  
+foreach ($colors as $value) 
+{ 
+echo "$value <br>"; 
+} 
+} 
+colour(); 
+?> 
+a) red 
+green 
+blue 
+yellow 
+b) green 
+blue 
+yellow 
+red 
+c) red

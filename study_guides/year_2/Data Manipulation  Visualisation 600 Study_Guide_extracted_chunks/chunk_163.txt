@@ -1,0 +1,21 @@
+pdate any of those properties 
+through a callback function. Frequently we'll update the children of an html component to display new text 
+or the figure of a dcc.Graph component to display new data, but we could also update the style of a 
+component or even the available options of a dcc.Dropdown component! 
+Connecting two components with callbacks 
+The next example comes from the Dash online tutorial, and it’s fairly complex. It introduces some layout 
+features we haven’t seen before, like a logarithmic x-axis. The goal is to have an interactive Slider update a 
+Graph on the same page. We will use a Dash dataset available online at 
+https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv 
+ 
+Create a file called callback2.py and add the following code: 
+ 
+ 
+import dash_html_components as html 
+ 
+from dash.dependencies import Input, Output import 
+plotly.graph_objs as go import pandas as pd 
+ 
+df = pd.read_csv('../data/gapminderDataFiveYear.csv') 
+ 
+app = dash

@@ -1,0 +1,43 @@
+es the following function do?  
+  
+void mystery(queueType<int>& q)  
+{  
+stackType<int> s; while 
+(!q.isEmptyQueue())  
+{  
+s.push(q.front());  
+q.deleteQueue();  
+}  
+while (!s.isEmptyStack())  
+{  
+q.addQueue(2 * s.top());  
+s.pop();  
+}  
+}  
+  
+4. What is the effect of the following statements? If a statement is invalid, explain why it is invalid. The 
+classes queueADT, queueType, and linkedQueueType are as defined in this chapter. a. queueADT<int> 
+newQueue;  
+b. queueType <double> sales(-10);  
+c. queueType <string> names;  
+d. linkedQueueType <int> numQueue(50);  
+  
+5. What is the output of the following program segment?  
+  
+linkedQueueType<int> queue; 
+queue.addQueue(10); 
+queue.addQueue(20); cout << 
+queue.front() << endl; 
+queue.deleteQueue();  
+queue.addQueue(2 * queue.back()); 
+queue.addQueue(queue.front()); 
+queue.addQueue(5);  
+queue.addQueue(queue.back() - 2);  
+  
+linkedQueueType<int> tempQueue;  
+  
+tempQueue = queue;  
+  
+while (!tempQueue.isEmptyQueue())  
+{  
+cout

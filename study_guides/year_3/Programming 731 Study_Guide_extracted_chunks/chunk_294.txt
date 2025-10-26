@@ -1,0 +1,17 @@
+Miscellaneous Utility Classes 
+The package also includes various utility classes for different purposes: 
+• Random: An instance of this class is used to generate a stream of pseudorandom numbers.  
+• Scanner: A simple text scanner that can parse primitive types and strings using regular 
+expressions. 
+• Timer: A facility for threads to schedule tasks for future execution in a background thread. 
+• UUID: A class that represents an immutable universally unique identifier (UUID) 
+ 
+The ResourceBundle, ListResourceBundle, and PropertyResourceBundle classes aid in the 
+internationalization of large programs with many locale-specific resources. These classes are not 
+examined here. 
+PropertyPermission, which allows you to grant a read/write permission to a system property, is also 
+beyond the scope of this book. EventObject, EventListener, and EventListenerProxy.   
+   
+Theremaining classes and interfaces are examined in detail. Because java.util is quite large, its 
+description is broken into two chapters. This chapter examines those members of java.util that 
+relate to collections of objects. Discuss the other classes and interfaces.   

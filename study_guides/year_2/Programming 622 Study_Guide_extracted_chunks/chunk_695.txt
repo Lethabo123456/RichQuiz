@@ -1,0 +1,23 @@
+t subtrees; that is, the node to be deleted is a leaf. For 
+example, the node with info 45 is a leaf.  
+  
+Case 2: The node to be deleted has no left subtree; that is, the left subtree is empty, but it has a nonempty 
+right subtree. For example, the left subtree of node with info 40 is empty and its right subtree is nonempty.  
+  
+Case 3: The node to be deleted has no right subtree; that is, the right subtree is empty, but it has a 
+nonempty left subtree. For example, the left subtree of node with info 80 is empty and its right subtree is 
+nonempty.  
+  
+Case 4: The node to be deleted has nonempty left and right subtrees. For example, the left and the right 
+subtrees of node with info 50 are nonempty.  
+  
+Figure 9-9 illustrates these four cases.  
+  
+
+342  
+  
+  
+FIGURE 9-9 The binary tree of Figure 9-8 after deleting various items  
+  
+Case 1: Suppose that we want to delete 45 from the binary search tree in Figure 9-8. We search the binary 
+tree and arrive at the node containing 45.

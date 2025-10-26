@@ -1,0 +1,37 @@
+Gradle Scripts 
+
+Now turn your attention back to the Project window. Below the app portion is a section labeled Gradle 
+Scripts. Click the disclosure button to display the files (if they are not already displayed). Gradle is the 
+build system Android Studio uses to compile and package apps. The items listed here include files that 
+have settings for the app and files that have instructions for building the app. For now, we will just 
+examine one of these. Double-click on build.gradle (Module:app). The script file will be displayed in 
+the editor, and you should see something like Listing 3.2. If the version numbers in your app are lower 
+than those in Listing 3.2, you either do not have the latest version of Android Studio or the latest SDKs 
+for Android. To update the SDKs, select Tools > SDK Manager. Make sure the SDK Platforms tab is 
+selected. A list of SDKs will be displayed. Select the newest (top of the list) at a minimum and click OK. 
+Click the defaults as they come up to download and install the SDKs.  This 
+will take awhile. When complete, change your version in the Gradle 
+script to the highest one you downloaded. 
+
+To update Android Studio and other associated tools, click Help > Check for Updates. Click Update 
+if any are found. 
+ 
+changing and why. The Gradle build file contains a number of important elements. Please 
+note that modifying elements of the Gradle file can cause significant problems. Be sure of what you are 
+ 
+▪ Line 4—The compileSdkVersion tells the Gradle system what version of Android should be used to 
+compile the code into an app. By default, the latest version of the Android SDK installed on your 
+development machine should be identified here. 
+▪ Lines 6–12—The defaultConfig element has attributes that provide information about the specific 
+version of the app that is being compiled. All of these except applicationId can, and should, change in 
+newer versions of your app. Both the minimum and target SDKs will change as new versions of Android 
+are released. After the initial project creation, you will have to change these manually by opening the 
+build script in the editor as you need to release new versions to your users. 
+▪ Note the versionCode and versionName elements. Version code is an integer value. It is used to 
+indicate that there is a new version of the app available. Increasing the value enables the Play Store 
+to notify users of the app that a new version is available. It also controls the install of the upgrade so 
+that no user data is lost during an upgrade. The Version Name is the displayed version of your app. 
+Beyond that, it is nonfunctioning. However, it is good practice to have a consistent approach to 
+changing this so that you know what version of the app is at issue when communicating with users 
+about their problems with the app. The testInstrumentationRunner is used in testing code that needs 
+to access the Android API. The default configuration for these tests is AndroidJUnitRunner.

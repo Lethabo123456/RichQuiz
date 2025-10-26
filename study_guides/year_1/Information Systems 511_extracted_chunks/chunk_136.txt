@@ -1,0 +1,26 @@
+s the process of swapping items  
+between memory and storage  
+ 
+
+88  
+    
+     
+ 
+ 
+5.2.7 COORDINATING TASKS 
+ 
+The operating systems determine the order in which tasks are processed. A task, or job, is an 
+operation the processor manages. Tasks include receiving data from the input device, processing 
+instructions, sending information to an  output device, and transferring items from storage to 
+memory and from memory to storage. 
+ 
+While waiting for devices to  become idle, the operating system places items in buffers. A buffer 
+is a segment of memory or storage in which items are placed while waiting to be transferred  from 
+an input device or to an output device. An operating system commonly uses buffers with printed 
+documents. This process is called spooling, sends documents to be printed to a buffer instead of 
+sending them immediately to the  printer. 
+ 
+ 
+5.2.8  CONFIGURING DEVICES 
+ 
+A  driver, short for device driver is a small program that tells the operating system how t

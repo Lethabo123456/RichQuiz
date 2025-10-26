@@ -1,0 +1,49 @@
+, char& ch, bool& isExpOk); void 
+evaluateOpr(ofstream& out, stackType<double>& stack, 
+char& ch, bool& isExpOk);  
+void discardExp(ifstream& in, ofstream& out, char& ch);  
+void printResult(ofstream& outF, stackType<double>& stack, bool isExpOk); int 
+main()  
+{  
+bool expressionOk;  
+char ch;  
+stackType<double> stack(100);  
+ifstream infile;  
+ofstream outfile;  
+  
+infile.open("RpnData.txt");  
+  
+if (!infile)  
+{  
+cout << "Cannot open the input file. "<< "Program terminates!" << endl; return 
+1;  
+}  
+  
+outfile.open("RpnOutput.txt");  
+  
+outfile << fixed << showpoint;  
+outfile << setprecision(2);  
+  
+infile >> ch; while 
+(infile)  
+ 
+{  
+  
+stack.initializeStack();  
+expressionOk = true; outfile 
+<< ch;  
+  
+evaluateExpression(infile, outfile, stack, ch,expressionOk); printResult(outfile, 
+stack, expressionOk);  
+infile >> ch; //begin processing the next expression  
+} //end while  
+  
+infile.close();  
+outfile.close();  
+  
+return 0;  
+} //end main  
+
+208  
+  
+//Place the de

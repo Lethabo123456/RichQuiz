@@ -1,0 +1,13 @@
+ike Web servers serve pages to Web browsers). In principle it can field requests from 
+just about anywhere with a network connection and a suitable client program. That said, there is no 
+reason why you cannot run both server and client on the same machine; in fact this is a very 
+common setup. This is the kind of database you are more likely to find in a large company, where 
+large quantities of data need to be shared among many people, where access may be needed from 
+all sorts of different locations, and where having a single centralized data store makes important jobs 
+like administration and backup relatively straightforward. Any applications that need to access the 
+database use specialized, lightweight client programs to communicate with the server.   
+   
+4.4 Database Models   
+As well as the architecture of the database system, it is worth thinking about the database model 
+that you want to use. The model dictates how the data is stored and accessed. Many different 
+database m

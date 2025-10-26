@@ -1,0 +1,23 @@
+get from one 
+to the other is by incrementing the start_value variable. 
+ 
+
+ 
+55 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+Now have a look at what is in the curly brackets of the loop: 
+answer = answer + start_value; 
+ 
+This is the whole point of having a loop - to run some code over and over again. 
+ 
+We want to add up the numbers 1 to 10. So, again, do the calculation to the right of 
+the equal sign first. JavaScript will look at whatever value is currently held in the 
+answer variable. The first time round the loop this will be zero. (It is zero because we 
+set it that way at the top of the code.) Add 1 to zero to get an answer of 1. This is then 
+stored in the variable to the left of the equal sign. This is the answer variable again. 
+The answer variable will have its contents erased and the new value (1) placed inside 
+of it. 
+ 
+Now, because we are incrementing the start_value variable each time round the 
+loop, its value keeps changing. So the second time round the loop the value

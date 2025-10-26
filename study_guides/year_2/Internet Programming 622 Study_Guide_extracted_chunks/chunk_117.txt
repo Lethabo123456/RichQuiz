@@ -1,0 +1,23 @@
+ossibly a newline) echo feof( $handle ) . “ < br / > ”; // Displays “1” (true) fclose( $handle ); 
+feof() is useful with fread() or fgetc() in a while loop when you don ’ t know how long the file 
+is:   
+   
+// hello_world.txt contains the characters “Hello, world!”   
+$handle = fopen( “hello_world.txt”, “r” );   
+$text = “”;   
+while ( !feof( $handle ) ) {   
+$text .= fread( $handle, 3 ); // Read 3 chars at a time   
+}   
+echo $text . “ < br / > ”; // Displays “Hello, world!” fclose(  
+$handle );   
+   
+
+51   
+   
+3.11 Reading One Line At A Time   
+Often it is useful to read text from a file one line at a time. A line is a nice manageable chunk of text 
+to process or display. For example, data files and configuration files often contain one chunk of 
+information per line, such as a data record or a configuration setting.   
+   
+To read a line of text from an open file, call the fgets() function, passing in the file handle. The 
+function reads from the current file pointer to the end o

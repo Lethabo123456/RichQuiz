@@ -1,0 +1,69 @@
+6.2 Throwing and Catching Exceptions 
+ 
+In C#, you can throw only objects of type System Exception, or objects derived from that type. 
+The CLR System namespace includes a number of exception types that can be used by your 
+program. These exception types include ArgumentNullException, InvalidCastException , and 
+OverflowException, as well as many others. 
+ 
+6.2.1 The throw Statement 
+
+To signal an abnormal condition in a C# class, you throw an exception. To do this, use the 
+keyword t h row. This line of code creates a new instance of System. Exception and then 
+throws it: 
+ 
+throw new Sytem. Exception ( ) ; 
+Throwing an exception immediately halts execution while the CLR searches for an exception 
+handler. if an exception handler cannot be found in the current method, the runtime unwinds 
+the stack, popping up through the calling methods until a handler is found. if the runtime 
+returns all the way through Main ( ) without finding a handler, it terminates the program. 
+Example 6-1 illustrates. 
+
+Example 6-1. Throwing an exception 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Test 
+{ 
+public static void Main() 
+{ 
+Console.WriteLine("Enter Main..."); 
+Test t = new Test(); 
+t.Func1(); 
+Console.WriteLine("Exit Main..."); 
+} 
+public void Func1() 
+{ 
+Console.WriteLine("Enter Func1..."); 
+Func2(); 
+Console.WriteLine("Exit Func1..."); 
+} 
+public void Func2() 
+{ 
+Console.WriteLine("Enter Func2..."); 
+throw new System.Exception(); 
+Console.WriteLine("Exit Func2..."); 
+} 
+} 
+} 
+Output: 
+ 
+ 
+This simple example writes to the console as it enters and exits each method. Main ( ) creates 
+an instance of type Test and call Fun c1 ( ) . After printing out the Ent er Fun c1 message, 
+Func1( ) immediately calls Func2 ( ) .Func2 ( ) prints out the first message and throws an object 
+of type System. Exception . 
+ 
+Execution immediately stops, and the CLR looks to see if there is a handler in Func2 ( ) . There 
+is not, and so the runtime unwinds the stack (never printing the exit statement) to Func1( ) . 
+Again, there is no handler, and the runtime unwinds the stack back to Ma in ( ) . With no 
+exception handler there, the default handler is called, which prints the error message. 
+ 
+6.2.2 The catch Statement 
+In C#, an exception handler is called a catch block and is created with the catch keyword. 
+In Example 6-2, the throw statement is executed within a t r y block, and a catch block is used 
+to announce that the error has been handled. 

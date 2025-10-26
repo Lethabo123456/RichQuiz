@@ -1,0 +1,22 @@
+ty provided by these 
+interfaces is oriented toward accessing relational data sources, the use of the interfaces was limited 
+with other data source types. With the advent of object-oriented programming languages, it has 
+become more important to provide access to other nonrelational data sources. 
+ 
+OLE-DB and ADO 
+ 
+
+ 
+176 
+ODBC, DAO, and RDO do not provide support for nonrelational data. To answer that need and to 
+simplify data connectivity, Microsoft developed Object Linking and Embedding for Database 
+(OLE-DB). Based on Microsoft’s Component Object Model (COM), OLE-DB is database 
+middleware that adds object-oriented functionality for access to relational and nonrelational data.  
+ 
+OLE-DB is composed of a series of COM objects that provide low-level database connectivity for 
+applications. The OLE-DB model is better understood when you divide its functionality into two 
+types of objects: 
+ 
+Consumers are objects (applications or processes) that request and use data.  
+ 
+Provid

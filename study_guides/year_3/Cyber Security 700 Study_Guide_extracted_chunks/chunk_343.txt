@@ -1,0 +1,23 @@
+Figure 6.3, from NISTIR 8062, An Introduction to Privacy Engineering and Risk Management in Federal Systems, shows 
+a non-proportional representation of the relationship between the privacy and security domains. While some 
+privacy concerns arise from unauthorized activity, privacy concerns also can arise from authorized 
+processing of information about individuals. Recognizing the boundaries and overlap between privacy 
+and security is key to determining when existing security risk models and security-focused guidance 
+may be applied to address privacy concerns—and where there are gaps that need to be filled in order 
+to achieve an engineering approach to privacy. For instance, existing information security guidance 
+does not address the consequences of a poor consent mechanism for use of PII, the purpose of 
+transparency, what PII is being collected, or which changes in use of PII are permitted as long as 
+authorized personnel are conducting the activity. Given these material distinctions in the disciplines, it 
+should be clear that agencies cannot effectively manage privacy solely on the basis of managing 
+security. 
+
+Information collection is not necessarily harmful but can in some cases constitute a privacy threat. 
+Two types of threat actions can occur: 
+
+ Surveillance: This is the watching, listening to, or recording of an individual’s activities. It can 
+be problematic and a violation of the right to privacy, especially if the target doesn’t know 
+about the surveillance. 
+ Interrogation: Interrogation is the pressuring of individuals to divulge information. For 
+example, if certain fields in a form or in an online registration process are required in order to 
+proceed, the individual is compelled, or at least pressured, to divulge information that he or 
+she may prefer not to give.

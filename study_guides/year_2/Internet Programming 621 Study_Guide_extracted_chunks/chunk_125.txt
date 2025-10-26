@@ -1,0 +1,26 @@
+Grapes of Wrath”,  
+“author” = > “John Steinbeck”,  
+
+61  
+“pubYear” = > 1939 ); echo count( $authors ) . “ < 
+br/ > ”; // Displays “4” echo count( $myBook ) . “ 
+< br/ > ”; // Displays “3”  
+  
+You might want to use count() to retrieve the last element of an indexed array:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$lastIndex = count( $authors ) - 1; echo 
+$authors[$lastIndex]; // Displays “Dickens”  
+  
+This works, but be careful. Just because an indexed array has, say, four elements, it does not 
+necessarily mean that the last element has an index of 3! Consider the following (somewhat 
+contrived) example:  
+  
+// Create a sparse indexed array  
+$authors = array( 0 = > “Steinbeck”, 1 = > “Kafka”, 2= > “Tolkien”, 47 = > 
+“Dickens” );  
+$lastIndex = count( $authors ) - 1; echo $authors[$lastIndex]; // 
+Generates an “Undefined offset” notice  
+  
+Although this array has numeric keys, which in one sense makes it an indexed array, the keys are not 
+consecutiv

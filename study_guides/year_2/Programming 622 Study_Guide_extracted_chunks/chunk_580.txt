@@ -1,0 +1,29 @@
+first element in the lower sublist; that is, firstOutOfOrder gives the index 
+of the first element in the unsorted portion of the array. Initially, firstOutOfOrder is initialized to 1.  
+  
+This discussion translates into the following pseudoalgorithm:  
+
+288  
+  
+for (firstOutOfOrder = 1; firstOutOfOrder < length; firstOutOfOrder++) if 
+(list[firstOutOfOrder] is less than list[firstOutOfOrder - 1])  
+{  
+copy list[firstOutOfOrder] into temp  
+  
+initialize location to firstOutOfOrder do  
+{  
+a. move list[location - 1] one array slot down  
+b. decrement location by 1 to consider the next 
+element sorted of the portion of the array  
+}  
+while (location > 0 && the element in the upper list at location 
+- 1 is greater than temp)  
+}  
+copy temp into list[location]  
+  
+The length of this list is 8; that is, length = 8. We initialize firstOutOfOrder to 1 (see Figure 8-6).  
+  
+  
+FIGURE 8-6 firstOutOfOrder = 1  
+  
+Now list[firstOutOfOrder] = 7, list[firstOutOfOrder - 1] = 13 and 7 < 13,

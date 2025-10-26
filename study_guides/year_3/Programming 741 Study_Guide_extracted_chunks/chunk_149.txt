@@ -1,0 +1,52 @@
+4.6.1 Use of Interfaces 
+Interfaces can be used in C# to achieve a number of different goals, including:  
+• Abstraction: Interfaces can be used to abstract away the implementation details of a 
+class or struct. This can make code more modular and easier to understand. 
+• Multiple inheritance: C# does not support multiple inheritance of classes, but it does 
+support multiple inheritance of interfaces. This allows a class to inherit the 
+functionality of multiple different interfaces. 
+• Plug-and-play: Interfaces can be used to create a “plug-and-play” architecture. This 
+means that different classes or structs can be easily swapped in and out, as long as 
+they implement the same interfaces. 
+
+4.6.2 Implementing the Interface 
+A class or a Struct can implement one or more interfaces using colon :. On implementing an 
+interface, you must override all the members of an interface. 
+
+class ClassName : InterfaceName 
+{ 
+ 
+} 
+ 
+Example 4-8 implementing interface 
+// Interface 
+interface IAnimal  
+{ 
+ void animalSound();// interface method (does not have a body) 
+} 
+// Pig "implements" the IAnimal interface 
+
+class Pig : IAnimal  
+{ 
+  public void animalSound()  
+  { 
+    // The body of animalSound() is provided here 
+    Console.WriteLine("The pig says: wee wee"); 
+  } 
+} 
+class Program  
+{ 
+  static void Main(string[] args)  
+  { 
+    Pig myPig = new Pig();  // Create a Pig object 
+    myPig.animalSound(); 
+  } 
+} 
+ 
+Like abstract classes, interfaces cannot be used to create objects (in the example above, it is 
+not possible to create an "IAnimal" object in the Program class) 
+Interface methods do not have a body - the body is provided by the "implement" class. On 
+implementation of an interface, you must override all of its methods. Interfaces can contain 
+properties and methods, but not fields/variables. Interface members are by 
+default abstract and public. An interface cannot contain a constructor (as it cannot be used 
+to create objects)

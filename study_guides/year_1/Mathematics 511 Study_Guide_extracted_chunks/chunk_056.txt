@@ -1,0 +1,29 @@
+1.4 Predicates and Quantifiers 
+Introduction 
+Propositional logic, studied previously, cannot adequately express the 
+meaning of all statements in mathematics and in natural language. For 
+example, suppose that we know that: 
+“Every computer connected to the university network is functioning 
+properly.” 
+No rules of propositional logic allow us to conclude the truth of the 
+statement: 
+“MATH3 is functioning properly,” 
+Where MATH3 is one of the computers connected to the university network. 
+Likewise, we cannot use the rules of propositional logic to conclude from the 
+statement: 
+“CS2 is under attack by an intruder,” 
+Where CS2 is a computer on the university network that is under attack by an 
+intruder.” 
+
+In this section we will introduce a more powerful type of logic called predicate 
+logic. We will see how predicate logic can be used to express the meaning of a wide 
+range of statements in mathematics and computer science in ways that permit us to 
+reason and explore relationships between objects. To understand predicate logic, we 
+first need to introduce the concept of a predicate. Afterward, we will introduce the 
+notion of quantifiers, which enable us to reason with statements that assert that a 
+certain property holds for all objects of a certain type and with statements 
+that assert the existence of an object with a particular property. Predicate logic deals with 
+the combination of predicates using the propositional operators we have already studied. It also adds one more 
+interesting element, the "quantifiers". It is a proposition whose truth value 
+depends on the value of one or more variables. For example, “ n is a perfect 
+squre” is a predicate whose truth depends on the value of n.

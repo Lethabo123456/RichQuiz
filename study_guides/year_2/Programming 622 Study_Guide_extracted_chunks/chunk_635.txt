@@ -1,0 +1,53 @@
+wap the root 
+node with the larger child. After swapping the root node with the larger child, we must restore the heap 
+in the subtree whose root node was swapped.  
+  
+Suppose low contains the index of the root node of the subtree and high contains the index of the last 
+item in the list. The heap is to be restored in the subtree rooted at list[low]. The preceding discussion 
+translates into the following C++ algorithm:  
+  
+int largeIndex = 2 * low + 1;    
+  
+  
+  
+ 
+while (largeIndex <= high)  
+//index of the left child  
+{  
+if ( largeIndex < high) if (list[largeIndex] < 
+list[largeIndex + 1])  
+largeIndex = largeIndex + 1;    
+//index of the larger child  
+if (list[low] > list[largeIndex])    
+  
+ break; 
+else  
+{  
+//the subtree is already in a heap 
+swap(list[low], list[largeIndex]);   
+  
+//Line swap**  
+low = largeIndex;   
+  
+  
+  
+largeIndex = 2 * low + 1;  
+//go to the subtree to further  
+//restore the heap  
+}   
+  
+  
+  
+  
+  
+  
+//end else  
+}  
+ 
+  
+  
+  
+  
+  
+  
+//e

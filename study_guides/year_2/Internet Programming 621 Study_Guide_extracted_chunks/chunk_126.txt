@@ -1,0 +1,11 @@
+s array has numeric keys, which in one sense makes it an indexed array, the keys are not 
+consecutive. You could also think of the array as an associative array with numeric keys! As 
+mentioned at the start of the chapter, PHP does not distinguish internally between indexed and 
+associative arrays, hence it is possible to create indexed arrays with non-consecutive numeric 
+indices. Although the  
+$authors array’s highest index is 47; the array contains four elements, not 48. (These types of arrays 
+are often called sparse arrays.) So when the script tries to access the last element (“Dickens “ ) using 
+lastIndex — which is set to 3, or one less than the return value of count() — PHP generates an 
+“undefined offset ” notice, and the echo() statement prints an empty string. Having said all this, 
+provided you know that an indexed array contains consecutively numbered indices, you can assume 
+that, for example, the 30th element in the array will always have an index of 29. If you are in d

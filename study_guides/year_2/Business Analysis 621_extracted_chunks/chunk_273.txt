@@ -1,0 +1,60 @@
+4.5 How This Applies to Your Projects 
+In this chapter, you stepped through tasks that help you to manage changing requirements 
+across the requirements life cycle. One of the biggest challenges that you encounter on your 
+projects is managing changing requirements. Sometimes it takes no more than five minutes 
+after requirements sign-off to start hearing the inevitable changes creeping back into what was 
+just approved. This can be caused by a number of factors. 
+
+ Increased level of interaction and information sharing both within and between systems  
+ Lack of requirements traceability yielding poor understanding of requirements 
+dependencies  
+ Changes in business plans and objectives that create a high-level focus shift and impact 
+your existing requirements  
+ Changes in technology, law, policies, regulations, or directives 
+ Boundary conditions and constraints that move, causing your requirements to change 
+as well  
+ Customers and users who change their minds about what they need  
+ Developers who add their own special twists, creating undocumented features that 
+come back to haunt us 
+
+Configuration management (CM) is the key to managing changing requirements. Effective 
+issue and change management is possible only if it is supported by CM. Configuration 
+management is a technical and administrative activity focusing on creating, maintaining, and 
+controlling change to the solution and its components (a configuration) throughout that 
+solution’s life cycle. 
+All organizations should have a configuration management strategy for their projects. The 
+strategy can be developed on a project-by-project basis or be applied to all projects that the 
+organization undertakes. The configuration management strategy identifies how, and by whom, 
+the project’s products will be controlled and protected. It answers these questions: 
+How and where will the project’s products be stored? 
+What storage and retrieval security will be put in place? 
+How will the products and the various versions and variants of these products be identified? 
+How will changes to products be controlled? Where does responsibility for configuration 
+management lie? 
+A configuration management strategy is typically derived from a number of information 
+sources, including any corporate configuration management, quality management, or 
+information management systems and strategies. Typically, the strategy is based on either the 
+user’s or the supplier’s quality management systems and is targeted to support meeting the 
+customer’s quality expectations. The specific needs of the solution and the environment where 
+it is being developed also plays a part in this strategy, as does the project management team 
+structure with its identified configuration management roles and responsibilities. 
+To control and protect your solution and its assets, use a configuration management strategy 
+focusing on the solution and the solution components of your project. This is the best way to 
+provide a framework ensuring that your solution deliverables are identified, tracked, and 
+protected. The five generic steps are illustrated in Figure 4.7: Plan, Identify, Control, Account, 
+Verify. Let’s take a quick look at each step. 
+
+Plan Configuration management planning defines how you will address storage, retrieval, 
+security, version control, and change control for the solution deliverables. The timing for these 
+activities should also be defined. 
+Identify Identification encompasses specifying and identifying all components of the final 
+product. This is where you would create unique identifiers and records for each solution 
+component. 
+Control Configuration control invokes the ability to approve and baseline deliverables. 
+Changes to approved products can be made only by following the formal change procedure for 
+the solution. 
+Account Status accounting is the recording and reporting of all current and historical data 
+concerning each deliverable or configuration. 
+Verify The project’s configuration management system should provide you with the ability to 
+audit actual deliverables against information recorded about those deliverables in the system, 
+such as current status. 

@@ -1,0 +1,167 @@
+/* results_data_science_themes.css */
+
+/* General container styling with dark glass effect + subtle floating bars */
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(12, 32, 48, 0.85);
+  border-radius: 24px;
+  padding: 36px 48px;
+  box-shadow:
+    0 0 20px 4px rgba(2, 176, 255, 0.6),
+    0 14px 30px rgba(2, 176, 255, 0.15);
+  font-family: 'Poppins', sans-serif;
+  color: #c0d8ff;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* Floating vertical colored bars on left for subtle data viz vibe */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -55px;
+  width: 14px;
+  height: 200px;
+  background: linear-gradient(180deg, #00f260, #0575e6);
+  border-radius: 8px;
+  box-shadow:
+    45px 0 #00b7ffcc,
+    90px 0 #00d1b2cc,
+    135px 0 #005792cc;
+  opacity: 0.12;
+  animation: floatBars 7s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes floatBars {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(15px); }
+}
+
+/* Main heading */
+.card > h2 {
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-bottom: 28px;
+  text-align: center;
+  color: #00c3ff;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px #00d1b2aa;
+}
+
+/* Themes list container */
+.summary {
+  margin-top: 28px;
+}
+
+/* Responsive grid for theme cards */
+ul.themes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* Each theme card styled as minimal data card */
+.theme-card {
+  background: rgba(0, 195, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px 24px;
+  box-shadow: 0 6px 20px rgba(0, 195, 255, 0.12);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+  user-select: text;
+  border-left: 10px solid #00d1b2;
+  color: #c0d8ff;
+}
+
+/* Hover effect */
+.theme-card:hover {
+  background: #00d1b2;
+  box-shadow: 0 12px 36px rgba(0, 209, 178, 0.45);
+  transform: translateY(-5px);
+  color: #001f30;
+}
+
+/* Theme title */
+.theme-card h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #00f2fe;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Theme description */
+.theme-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #c0d8ffcc;
+}
+
+/* Buttons container */
+.buttons {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+/* Buttons styling */
+.button {
+  background: linear-gradient(90deg, #00c3ff 0%, #00d1b2 100%);
+  color: #001f30;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 40px;
+  box-shadow: 0 12px 30px rgba(0, 195, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+/* Button hover */
+.button:hover {
+  background: linear-gradient(90deg, #00d1b2 0%, #00c3ff 100%);
+  box-shadow: 0 18px 48px rgba(0, 242, 254, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .card {
+    margin: 30px 16px;
+    padding: 28px 24px;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .theme-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .theme-card p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    gap: 18px;
+  }
+
+  .button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}

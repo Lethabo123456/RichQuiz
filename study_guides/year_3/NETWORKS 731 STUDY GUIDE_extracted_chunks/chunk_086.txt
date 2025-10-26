@@ -1,0 +1,37 @@
+3.3 Circuit Switching 
+Switched circuits allow data connections that can be initiated when needed and terminated 
+when communication is complete. This works much like a normal telephone line works for 
+voice communication. Integrated Services Digital Network (ISDN) is a good example of circuit 
+switching. When a router has data for a remote site, the switched circuit is initiated with the 
+circuit number of the remote network. In the case of ISDN circuits, the device actually places 
+a call to the telephone number of the remote ISDN circuit. When the two networks are 
+connected and authenticated, they can transfer data. When the data transmission is 
+complete, the call can be terminated. Circuit-Switched WAN Undergoes a Process Similar to 
+That Used for a Telephone Call illustrates an example of this type of circuit. 
+ 
+Figure 3.6 A Circuit-Switched WAN Undergoes a Process Similar to That Used for a Telephone 
+Call 
+ 
+IP can also be considered as a WAN technology in the packet switching environment. 
+ 
+WAN Virtual Circuits 
+A virtual circuit is a logical circuit created within a shared network between two network 
+devices. Two types of virtual circuits exist: switched virtual circuits (SVCs) and permanent 
+devices. Two types of virtual circuits exist: switched virtual circuits (SVCs) and permanent 
+virtual circuits (PVCs). 
+ 
+SVCs are virtual circuits that are dynamically established on demand and terminated when 
+transmission is complete. Communication over an SVC consists of three phases: circuit 
+establishment, data transfer, and circuit termination. The establishment phase involves 
+creating the virtual circuit between the source and destination devices. Data transfer involves 
+transmitting data between the devices over the virtual circuit, and the circuit termination phase 
+involves tearing down the virtual circuit between the source and destination devices. SVCs are 
+used in situations in which data transmission between devices is sporadic, largely because SVCs 
+increase bandwidth used due to the circuit establishment and termination phases, but they 
+decrease the cost associated with constant virtual circuit availability.
+
+PVC is a permanently established virtual circuit that consists of one mode: data transfer. PVCs 
+are used in situations in which data transfer between devices is constant. PVCs decrease the 
+bandwidth use associated with the establishment and termination of virtual circuits, but they 
+increase costs due to constant virtual circuit availability. PVCs are generally configured by the 
+service provider when an order is placed for service.

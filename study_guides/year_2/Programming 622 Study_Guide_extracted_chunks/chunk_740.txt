@@ -1,0 +1,72 @@
+Node<elemT> *p;  
+AVLNode<elemT> *w;  
+  
+ 
+p = root->llink;   
+  
+  
+  
+  
+//p points to the left subtree of root  
+  
+switch (p->bfactor)  
+{ case -1: root->bfactor = 0; p->bfactor = 0; rotateToRight(root); 
+break; case 0: cerr << "Error: Cannot balance from the left." 
+<< endl; break; case 1:  
+w = p->rlink;  
+switch (w->bfactor)    
+  
+{ case -1: root->bfactor = 1; p-
+>bfactor = 0; break;  
+case 0: root->bfactor = 
+0; p->bfactor = 0; 
+break;  
+case 1: root->bfactor = 
+0; p->bfactor = -
+1;  
+//adjust the balance factors  
+
+363  
+  
+}  
+  
+  
+  
+  
+w->bfactor = 0; 
+rotateToLeft(p); root->llink 
+= p; rotateToRight(root);  
+//end switch  
+}  
+ 
+  
+  
+  
+  
+  
+//end switch;  
+}  
+ 
+ 
+  
+  
+  
+  
+  
+//end balanceFromLeft  
+  
+For the sake of completeness, we also give the definition of the function balanceFromRight:  
+  
+template <class elemT>  
+void balanceFromRight(AVLNode<elemT>* &root)  
+{  
+AVLNode<elemT> *p;  
+AVLNode<elemT> *w;  
+  
+ 
+p = root->rlink;   
+  
+  
+  
+  
+//p points to

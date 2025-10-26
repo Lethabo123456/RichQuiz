@@ -1,0 +1,38 @@
+2.8 Methods in the Math Class 
+The Math class has a number of predefined static methods you will find helpful. The Math 
+class, such as the Console class, is located in the System namespace. This class provides 
+constants and methods for trigonometric, logarithmic, and other common mathematical 
+functions. The Pow( ) method that you saw previously is a member of the Math class. You 
+learned that the first argument to the Pow( ) method is the base, the number to be raised. 
+The second argument is the exponent, or the specified power value. Table 2-1 identifies, 
+describes, and gives examples of the more commonly used methods from the Math class. The 
+signature and the return type are included in the third column.
+
+Table 2-1  Math class methods 
+
+Method              Description                                     Example 
+----------------------------------------------------------------------------------------------------------------
+Abs()               Returns absolute value                          Math.Abs(-5) // 5
+---------------------------------------------------------------------------------------------------------------- 
+Ceiling()           Rounds up to nearest integer                    Math.Ceiling(3.2) // 4 
+----------------------------------------------------------------------------------------------------------------
+Floor()             Rounds down to nearest integer                  Math.Floor(3.8) // 3 
+----------------------------------------------------------------------------------------------------------------
+Round()             Rounds to nearest integer or decimal places     Math.Round(3.7) // 4 
+----------------------------------------------------------------------------------------------------------------
+Max()               Returns larger of two numbers                   Math.Max(5, 10) // 10 
+----------------------------------------------------------------------------------------------------------------
+Min()               Returns smaller of two numbers                  Math.Min(5, 10) // 5 
+----------------------------------------------------------------------------------------------------------------
+Pow()               Raises number to specified power                Math.Pow(2, 3) // 8 
+----------------------------------------------------------------------------------------------------------------
+Sqrt()              Returns square root                             Math.Sqrt(16) // 4 
+----------------------------------------------------------------------------------------------------------------
+Sin(), cos(), Tan() Basic trigonometric functions                   Math.Sin(Math.PI) 
+----------------------------------------------------------------------------------------------------------------
+Log()               Returns natural logarithm                       Math.Log(10) // 2.30... 
+----------------------------------------------------------------------------------------------------------------
+Exp ()              Returns e raised to the specified power. e is   Math.Exp(2) returns the value 7.3890560
+                    defined as a constant in the Math class. 
+                    It has a value of 2.7182818
+----------------------------------------------------------------------------------------------------------------

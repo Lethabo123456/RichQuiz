@@ -1,0 +1,50 @@
+Reading Data  
+The ReadLine() method is not the only way you can access data in a file. The StreamReader class has 
+many methods for reading data.  
+ 
+The simplest of the reading methods is Read(). It returns the next character from the stream as a posi-
+tive integer value or a -1 if it has reached the end. This value can be converted into a character by using 
+the Convert utility class. In the preceding example, the main parts of the program could be rewritten as 
+follows: 
+ 
+ 
+           line = sr.ReadLine(); 
+                // Read data in line by line. 
+                while (line != null) 
+                { 
+                    Console.WriteLine(line); 
+                    line = sr.ReadLine(); 
+                } 
+               
+A very convenient method to use with smaller files is the ReadToEnd() method. It reads the entire file 
+and returns it as a string. In this case, the earlier application could be simplified to the following: 
+ 
+While this may seem easy and convenient, be careful. By reading all the data into a string object, you are 
+forcing the data in the file to exist in memory. Depending on the size of the data file, this can be prohibi-
+tive. If the data file is extremely large, then it is better to leave the data in the file and access it with the 
+methods of the StreamReader. 
+ 
+Another way to deal with large files, which is new to .NET 4, is to use the static File.ReadLines() method. 
+There are, in fact, several static methods of File that you can use to simplify reading and writing file 
+data, but this one is particularly interesting in that it returns an IEnumerable<string> collection. You can 
+iterate through the strings in this collection to read the file one line at a time. Using 
+this method, you can rewrite the previous example as follows:
+
+StreamReader sr = new StreamReader(aFile);
+                int nChar; 
+                nChar = sr.Read(); 
+                while (nChar != -1) 
+                { 
+                    Console.Write(Convert.ToChar(nChar)); 
+                    nChar = sr.Read(); 
+                } 
+                sr.Close(); 
+StreamReader sr = new StreamReader(aFile);
+                line = sr.ReadToEnd(); 
+                Console.WriteLine(line); 
+                sr.Close(); 
+foreach (string alternativeLine in File.ReadLines("Log.txt")) 
+                    Console.WriteLine(alternativeLine); 
+
+There are, as you can see, several different ways in .NET to achieve the same result 
+namely, reading data from a file. Choose the technique that suits

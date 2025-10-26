@@ -1,0 +1,37 @@
+Chapter 8: Publishing Apps 
+  
+8.1 Introduction 
+Creating an app can be a fun and challenging exercise, but for most developers, this is not enough. 
+The finished app has to be available for someone to use to complete the process. Apps are made 
+available to their audience by publishing them. The manner of publication is dependent on the target 
+audience and the platform. The two primary audiences are typically the employees of an organization 
+for which the app was developed or the public. Many aspects of publishing are the same for both 
+audiences. However, some important differences exist that the developer needs to be aware of. 
+Likewise, publishing Android versus iOS apps can be very similar, but with some significant differences. 
+One of the most important differences from publishing traditional desktop software is that the means 
+of publishing mobile apps are much more restricted. For consumer apps, there are gatekeepers in the 
+form of app stores that you will have to interact with to distribute your app. In this chapter, you learn 
+the basics of publishing apps for both consumer and enterprise audiences in both platforms.
+
+8.2 App Distribution through the App/Play Stores 
+Both Apple and Google provide a marketplace where developers can sell their apps. To publish an app 
+in either of these stores, a developer must configure the app and conform to the requirements 
+established by their sponsors. A significant amount of the work required to publish the app should be 
+done during development. Both Google and Apple have requirements and guidelines for apps that 
+should be incorporated during development. You should read through these guidelines prior to 
+development so that you are not doing a lot of rework just to get the app published. Apple is especially 
+meticulous about these rules. Every app is reviewed before it is published, and if your app does not 
+conform, it will be rejected. The guidelines for Apple’s app review are available at 
+
+https://developer.apple.com/app-store/review/guidelines, and Google’s are at 
+
+https://play.google.com/about/developer-content-policy. Google may publish an application  that 
+does not meet its store requirements, but it will remove the app from the store later if it finds that 
+the app violates its rules. 
+
+When you are confident that your app meets the publication requirements of the marketplace you 
+are targeting, the process of publishing requires several steps in either marketplace and is greatly 
+facilitated by preparing prior to beginning the process. The preparation is similar for both stores. You 
+will need to prepare an icon for your app. Android requires an app icon sized to 512 × 512 pixels, 
+whereas iOS requires the icon to be 1,024 × 1,024 pixels. Both platforms require at least one 
+screenshot of your app.

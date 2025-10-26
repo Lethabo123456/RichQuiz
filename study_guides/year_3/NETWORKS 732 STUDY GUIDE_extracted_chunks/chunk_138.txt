@@ -1,0 +1,36 @@
+3.3.2 Man-in-the-middle 
+A man-in-the-middle (MitM) attack is a type of cyber-attack in which the attacker secretly 
+intercepts and manipulates messages between two parties who believe they are communicating 
+directly with each other. MitM cyber-attacks pose a serious threat to online security because they 
+give the attacker the ability to capture and manipulate sensitive personal information, such as 
+login credentials, account details, or credit card numbers in real-time (Lammle, 2015). 
+ 
+Figure 3.5: MitM attack 
+ 
+3.3.3 DNS Poisoning 
+DNS spooﬁng or DNS cache poisoning is an attack in which altered DNS records are used to 
+redirect users or data to a fraudulent website or link that is camouﬂaged as the actual destination 
+(Imperva, 2025). DNS clients send requests for name to IP address resolution (called queries) to 
+a DNS server. The search for the IP address that goes with a computer or domain name usually 
+starts with a local DNS server that is not authoritative for the DNS domain in which the requested 
+computer or website resides. When this occurs, the local DNS server makes a request that the 
+DNS server does hold the record in question. After the local DNS server receives the answer, it 
+returns it to the local DNS client. After this, the local DNS server maintains that record in its DNS 
+cache for a period called the time to live (TTL), which is usually an hour but can vary. 
+ 
+Figure 3.6: DNS Poisoning 
+
+3.3.4 VLAN Hopping 
+VLANs, or virtual LANs, are layer 2 subdivisions of the ports in a single switch. A VLAN may also 
+span multiple switches. When devices are segregated into VLANs, access control lists (ACLs) can 
+be used in a router to control access between VLANs in the same way as it is done between real 
+LANs. When VLANs span switches, the connection between the switches is called a trunk link, and 
+it carries the traﬃc of multiple VLANs. Trunk links are also used for the connection from the switch 
+to the router. A VLAN hopping attack results in traﬃc from one VLAN being sent to the wrong 
+VLAN. Normally, this is prevented by the trunking protocol, which places a VLAN tag in the packet 
+to identify the VLAN to which the traﬃc belongs. 
+The attacker can circumvent this by a process called double tagging, which is placing a fake VLAN 
+tag into the packet along with the real tag. When the frame goes through multiple switches, the 
+real tag is taken oﬀ by the switch 
+ 
+Figure 3.7: VLAN Spooﬁng

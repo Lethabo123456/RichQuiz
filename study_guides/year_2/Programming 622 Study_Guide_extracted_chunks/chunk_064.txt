@@ -1,0 +1,36 @@
+e position.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+30  
+  
+ Constructors execute automatically when a class object enters its scope. Because they have no 
+types, they cannot be called like other functions.  
+ Which constructor executes depends on the types of values passed to the class object when the 
+class object is declared.  
+  
+Let us extend the definition of the class clockType by including two constructors:  
+  
+class clockType  
+{ public:  
+//Place the function prototypes of the functions setTime, //getTime, 
+printTime, incrementSeconds, incrementMinutes, 
+//incrementHours, and equalTime as described earlier, here.  
+  
+clockType(int hours, int minutes, int seconds);  
+//Constructor with parameters  
+//The time is set according to the parameters.  
+//Postconditions: hr = hours; min = minutes; sec = seconds  
+// The constructor checks whether the values of hours, 
+// minutes, and seconds are valid. If a value is invalid, // 
+the default value 0 is assigned.  
+  
+clockType();  
+//Default

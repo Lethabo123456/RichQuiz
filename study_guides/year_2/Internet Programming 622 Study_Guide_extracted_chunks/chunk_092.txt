@@ -1,0 +1,19 @@
+e forgotten when a user leaves the site, such as which page the user is on, can be 
+left up to PHP’s built-in sessions. Any state that should persist between user visits, such as a unique 
+user ID, can be stored in a cookie. With the user’s ID, you can retrieve the user’s more permanent state, 
+such as display preferences, mailing address, and so on, from a permanent store,  
+such as a database. The example below allows the user to select text and background colors and store 
+those values in a cookie. Any visits to the page within the next week send the color values in the 
+cookie.   
+   
+Saving State Across Visits (save_state.php)   
+   
+<?php   
+          if($_POST['bgcolor']) {                   setcookie('bgcolor', 
+$_POST['bgcolor'], time() + (60 * 60 * 24 * 7));   
+         }   
+         if (isset($_COOKIE['bgcolor'])) {   
+                 $backgroundName = $_COOKIE['bgcolor'];   
+        }   
+        else if (isset($_POST['bgcolor'])) {   
+                  $backgroundName = $_

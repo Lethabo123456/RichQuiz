@@ -1,0 +1,29 @@
+orward. When an object of type binaryTreeType goes out 
+of scope, the destructor deallocates the memory occupied by the nodes of the binary tree. The definition 
+of the destructor uses the function destroy to accomplish this task.  
+  
+//destructor  
+template <class elemType>  
+binaryTreeType<elemType>::~binaryTreeType()  
+{ destroy(root);  
+}  
+  
+Next, we discuss the function to overload the assignment operator. To assign the value of one binary tree 
+to another binary tree, we make an identical copy of the binary tree to be assigned by using the function 
+copyTree. The definition of the function to overload the assignment operator is as follows:  
+  
+  
+//overloading the assignment operator template 
+<class elemType>  
+const binaryTreeType<elemType>& binaryTreeType<elemType>::operator= (const 
+binaryTreeType<elemType>& otherTree)  
+{ if (this != &otherTree) //avoid self-copy  
+{  
+
+335  
+  
+ 
+if (root != NULL)   
+//if the binary tree is not empty,  
+//destroy the binary tree  
+destr

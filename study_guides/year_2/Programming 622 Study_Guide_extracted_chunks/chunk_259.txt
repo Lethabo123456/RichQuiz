@@ -1,0 +1,78 @@
+e <class Type>  
+void doublyLinkedList<Type>::print() const  
+{  
+nodeType<Type> *current;    
+  
+//pointer to traverse the list  
+current = first;   
+  
+  
+  
+while (current != NULL)  
+{  
+//set current to point to the first node  
+cout << current->info << " ";   
+current = current->next;  
+//output info  
+}  
+  
+  
+  
+  
+  
+//end while  
+}  
+ 
+  
+  
+  
+  
+  
+//end print  
+  
+  
+
+129  
+  
+  
+  
+  
+ 
+3.5.7  Reverse Print the List  
+  
+This function outputs the info contained in each node in reverse order. We traverse the list in reverse 
+order starting from the last node. Its definition is as follows:  
+  
+template <class Type>  
+void doublyLinkedList<Type>::reversePrint() const  
+{  
+nodeType<Type> *current;    
+  
+  
+//pointer to traverse the list  
+current = last;    
+  
+  
+  
+while (current != NULL)  
+{ cout << current->info << " "; 
+current = current->back;  
+  
+//set current to point to the last node 
+}  
+  
+  
+  
+  
+  
+  
+//end while  
+}  
+ 
+  
+  
+  
+  
+  
+  
+//end reversePrint

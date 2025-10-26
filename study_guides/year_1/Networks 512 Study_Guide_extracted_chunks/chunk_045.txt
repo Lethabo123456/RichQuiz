@@ -1,0 +1,24 @@
+Layer 4: Transport 
+Complete data transfer is ensured as information is transferred transparently between systems in 
+this layer. The transport layer also assures appropriate flow control and end-to-end error recovery. 
+
+Layer 3: Network 
+Using switching and routing technologies, this layer is responsible for creating virtual circuits to 
+transmit information from node to node. Other functions include routing, forwarding, addressing, 
+internet working, error and congestion control, and packet sequencing. 
+
+Layer 2: Data Link 
+Information in data packets are encoded and decoded into bits within this layer. Errors from the 
+physical layer flow control and frame synchronization are corrected here utilizing transmission 
+protocol knowledge and management. This layer consists of two sub layers: the Media Access 
+Control (MAC) layer, which controls the way networked computers gain access to data and 
+transmit it, and the Logical Link Control (LLC) layer, which controls frame synchronization, flow 
+control and error checking. 
+
+
+Layer 1: Physical 
+This layer enables hardware to send and receive data over a carrier such as cabling, a card or other 
+physical means. It conveys the bitstream through the network at the electrical and mechanical 
+level. Fast Ethernet, RS232, and ATM are all protocols with physical layer components. 
+This order is then reversed as information is received, so that the physical layer is the first and 
+application layer is the final layer that information passes through. 

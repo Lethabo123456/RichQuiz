@@ -1,0 +1,44 @@
+VoIP Processing 
+In a VoIP system, when a called party responds, a logical connection is established between the two 
+parties (or more parties, for a conference call), and voice data can be exchanged in both directions. 
+
+Figure 12.10 illustrates the basic flow of voice data in one direction in a VoIP system. On the sending side, 
+the analog voice signal is first converted into a digital bit stream and then segmented into packets. The 
+packetization is performed, typically, by RTP. This protocol includes mechanisms for labeling the packets 
+so that they can be reassembled in the proper order at the receiving end, plus a buffering function to smooth 
+out reception and deliver the voice data in a continuous flow. The RTP packets are then transmitted 
+across the Internet or a private intranet using User Datagram Protocol (UDP) and IP. 
+At the receiving end, the process is reversed. The packet payloads are reassembled by RTP and put into 
+the proper order. The data are then decompressed, and the digitized voice is processed by a digital-to-
+analog converter to produce analog signals for the receiver’s telephone or headset speaker. 
+ 
+VoIP Context 
+Ultimately, VoIP using IP-based networks may replace the public circuit-switched networks in use today. But for the 
+foreseeable future, VoIP must coexist with the existing telephony infrastructure. Figure 12.11 shows some of the key 
+elements involved in the coexistence of these older and newer 
+technologies. The deployment of the VoIP infrastructure is accompanied by 
+a variety of end-user products, including the following: 
+
+ Traditional telephone handset: These corded or cordless units function much like traditional 
+telephones but are VoIP capable. They typically have many additional features, making use of a screen, and 
+providing capabilities similar to those of smartphones. 
+ Conferencing units: These provide the same basic service as conventional conference calling 
+phone systems and also allow users to coordinate other data communications services, such 
+as text, graphics, video, and whiteboarding. 
+ Mobile units: Smartphones and other cellphones with VoIP capability can tie directly into a 
+VoIP network without needing to go through any kind of gateway system. 
+ Softphone: The term softphone refers to software operating on a PC that implements VoIP. 
+Typically, the PC is configured with a headset or with a telephone that makes use of a USB 
+connection to the PC.
+
+A wide variety of infrastructure equipment has been developed to support VoIP. There are two 
+noteworthy types: 
+
+ IP PBX: The IP PBX is designed to support digital and analog phones and connect to IP-based 
+networks using VoIP, as well as provide a connection to the public switched telephone 
+network using traditional technology, if needed. 
+ Media gateway: The media gateway connects different physical networks in order to provide 
+end-to-end connectivity. An important type of media gateway connects a VoIP network to a 
+circuit-switched telephone network, providing the necessary conversion and signaling. 
+The VoIP environment continues to evolve, and a large number of products are being developed for 
+providers, businesses, and residential/personal users. 

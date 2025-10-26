@@ -1,0 +1,25 @@
+to start the search. 
+Here ’ s an example:  
+  
+$myString = “Hello, world!”; echo strpos( $myString, “o” 
+) . “ < br/ > ”; // Displays ‘4’ echo strpos( $myString, “o”, 
+5 ) . “ < br/ > ”; // Displays ‘8’  
+  
+You can use this third argument, combined with the fact that strpos() returns the position of the 
+matched text, to repeatedly find all occurrences of the search text within the string — for example:  
+  
+$myString = “Hello, world!”;  
+$pos = 0; while ( ( $pos = strpos( $myString, “l”, $pos ) ) 
+!== false ) { echo “The letter ‘l’ was found at position: 
+$pos < br/ > ”;  
+$pos++;  
+}   
+This code produces the output shown in Figure 4.1.  
+  
+ 
+Figure 4.1  
+  
+4.9 Finding The Number Of occurrences With substr_count()  
+Occasionally you might need to know how many times some text occurs within a string. For example, 
+if you were writing a simple search engine, you could search a string of text for a keyword to see how 
+relevant the text is for that keyword; the more occurrences of t

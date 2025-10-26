@@ -1,0 +1,48 @@
+8.9.2 Program Inspection 
+Program inspections are peer reviews where team members collaborate to find bugs in the 
+program that is being developed. Inspections may be part of the software verification and 
+validation processes. They complement testing as they do not require the program to be 
+executed. Incomplete versions of the system can be verified, and representations such as UML 
+models can be checked. Program tests may be reviewed. Test reviews often find problems with 
+tests and so improve their effectiveness in detecting program bugs. 
+ 
+Program inspections involve team members from different backgrounds who make a careful, line-
+by-line review of the program source code. They look for defects and problems and describe them 
+at an inspection meeting. Defects may be logical errors, anomalies in the code that might indicate 
+an erroneous condition or features that have been omitted from the code. The review team 
+examines the design models or the program code in detail and highlights anomalies and problems 
+for repair. 
+ 
+During an inspection, a checklist of common programming errors is often used to focus the search 
+for bugs. This checklist may be based on examples from books or from knowledge of defects that 
+are common in a particular application domain. You use different checklists for different 
+programming languages because each language has its own characteristic errors. Humphrey 
+(Humphrey, 1989), in a comprehensive discussion of inspections, gives a number of examples of 
+inspection checklists. Possible checks that might be made during the inspection process are 
+shown in 
+
+8.10 Quality management and Agile Development 
+  
+Agile methods of software engineering focus on the development of code. They minimize 
+documentation and processes that are not directly concerned with code development and 
+emphasize the importance of informal communications among team members rather than 
+communications based on project documents. Quality, in agile development, means code quality 
+and practices such as refactoring, and test-driven development are used to ensure that high 
+quality code is produced. Quality management in agile development is informal rather than 
+document-based. It relies on establishing a quality culture, where all team members feel 
+responsible for soft-ware quality and take actions to ensure that quality is maintained. The agile 
+community is fundamentally opposed to what it sees as the bureaucratic overhead of standards 
+based approaches and quality processes as embodied in ISO 9001. Companies that use agile 
+development methods are rarely concerned with ISO 9001 certification. In agile development, 
+quality management is based on shared good practice rather than formal documentation. 
+Agile processes rarely use formal inspection or review processes. In Scrum, the development 
+team meets after each iteration to discuss quality issues and problems. The team may decide on 
+changes to the way they work to avoid any quality problems that have emerged. A collective 
+decision may be made to focus on refactoring and quality improvement during a sprint rather 
+than the addition of new system functionality. 
+ 
+Code reviews may be the responsibility of individuals (check before check-in) or may rely on the 
+use of pair programming.  Pair programming is an approach in which two people are responsible 
+for code development and work together to achieve it. Code developed by an individual is 
+therefore constantly being examined and reviewed by another team member. Two people look 
+at every line of code and check it before it is accepted. 

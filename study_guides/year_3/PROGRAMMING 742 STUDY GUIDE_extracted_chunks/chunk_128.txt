@@ -1,0 +1,24 @@
+3.2.4 Setting Order of Execution with Arrays of Delegates 
+Delegates can help you create a system in which the user can dynamically decide on the order 
+of operations. Suppose you have an image processing system in which an image can be manipulated in a number of well-de-
+fined ways, such as blurring, sharpening, rotating, 
+filtering, and so forth. Assume, as well, that the order in which these effects are applied to the image is important. The user wishes 
+to choose from a menu of effects, applying all that he 
+likes, and then telling the image processor to run the effects, one after the other in the order that he has specified. 
+You can create delegates for each operation and add them to an ordered collection, such as an 
+array, in the order you'd like them to execute. Once all the delegates are created and added to the collection, simply iterate over 
+the array, invoking each delegated method in turn. 
+Begin by creating a class Image to represent the image that will be processed by the ImageProcessor: 
+ 
+public class Image 
+    { 
+        public Image() 
+        { 
+            Console.WriteLine("An image created"); 
+        } 
+    } 
+You can imagine that this stands in for a .gif or .jpeg file or other image. 
+The  ImageProcessor then declares a delegate. You can of course define your delegate to return any type and take any 
+parameters you like. For this example you'll define the delegate to encapsulate any method that returns void and takes no 
+arguments: 
+public delegate void DoEffect( ); 

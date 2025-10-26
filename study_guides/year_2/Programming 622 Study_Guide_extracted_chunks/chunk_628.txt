@@ -1,0 +1,22 @@
+(if it exists) element of the list, which is at position 2k in the list. Note that Figure 842 clearly 
+shows that the list in Figure 8-41 is in a heap. Also note that in Figure 8-42, the elements 20, 10, 35, 15, 
+62, 58, and 30 are called leaves as they have no children.  
+  
+As remarked earlier, to demonstrate the heapsort algorithm, we will draw the complete binary tree 
+corresponding to a list. Note that even though we will draw a complete binary tree to illustrate heapsort, 
+the data gets manipulated in an array. We now describe heapsort.  
+  
+The first step in heapsort is to convert the list into a heap, called buildHeap. After we convert the array 
+into a heap, the sorting phase begins.  
+  
+  
+ 
+8.9.1  Build Heap  
+  
+This section describes the build heap algorithm.  
+
+311  
+  
+  
+The general algorithm is as follows: Suppose length denotes the length of the list. Let index = length / 2 – 
+1. Then list[index] is the last element in the list which is not a leaf; that is, this ele

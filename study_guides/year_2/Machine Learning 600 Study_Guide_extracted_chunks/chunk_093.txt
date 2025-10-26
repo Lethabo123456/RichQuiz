@@ -1,0 +1,24 @@
+. 
+ 
+                                                                                     Figure 5.5: SVM Max margin Hyperplane 
+ 
+
+P a g e  | 58 
+ 
+The objects that lie on the edge hyperplanes are the support vectors (see Figure 5.6): 
+ 
+                                                      Figure 5.6: Support Vectors 
+ 
+Non Linear classification. In an ideal world, the objects would lie on one side of the hyperplane 
+or the other. Life, unfortunately, is rarely like that. Instead, you see objects straying from the 
+hyperplane (see Figure 5.7). 
+
+P a g e  | 59 
+ 
+ 
+                                                       Figure 5.7: Objects do not go where you want them to go 
+ 
+By applying the kernel function (sometimes referred to as the “kernel trick”), you can apply 
+an algorithm to fit the hyperplane's maximum margin in a feature space. The method is similar 
+to the dot products discussed in the linear methods, but this replaces the dot product with a 
+kernel function. With a radia

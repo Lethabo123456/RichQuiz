@@ -1,0 +1,30 @@
+ents in the other sublist are greater than or equal to pivot. By contrast, mergesort 
+divides the list into two sublists of nearly equal size. For example, consider the list whose elements are as 
+follows:  
+ list: 35 28 18 45 62 48 30 38  
+  
+Mergesort partitions this list into two sublists as follows:  
+  
+first sublist: 35 28 18 45  
+second sublist: 62 48 30 38  
+  
+The two sublists are sorted using the same algorithm (that is, mergesort) used on the original list. Suppose 
+that we have sorted the two sublists. That is, suppose that the lists are now as follows:  
+  
+first sublist: 18 28 35 45 second 
+sublist: 30 38 48 62  
+  
+Next, mergesort combines, that is, merges, the two sorted sublists into one sorted list.  
+  
+Figure 8-32 further illustrates the mergesort process.  
+
+303  
+  
+  
+  
+FIGURE 8-32 Mergesort algorithm  
+  
+From Figure 8-32, it is clear that in mergesort, most of the sorting work is done in merging the sorted 
+sublists.  
+  
+The general algorithm for mergesort is

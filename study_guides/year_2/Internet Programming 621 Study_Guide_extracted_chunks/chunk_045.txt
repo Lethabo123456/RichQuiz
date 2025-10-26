@@ -1,0 +1,28 @@
+ins names, values etc., 
+mapped to values.  
+Object  
+A type that may contain properties and 
+methods.  
+  
+Finally, PHP supports two special data types, so called because they don’t contain scalar or 
+compound data as such, but have a specific meaning:  
+  
+Special Data Type  
+Description  
+Resource  
+Contains a reference to an external resource, 
+such as a file or a database.  
+
+27  
+Null  
+May contain Null as a value, meaning that the 
+variable does not explicitly contain any value.  
+  
+  
+  
+2.5 Loose Typing In PHP  
+PHP is known as a loosely-typed language. This means that it is not particularly fussy about the type 
+of data stored in a variable. It converts a variable’s data type automatically, depending on the 
+context in which the variable is used. For example, you can initialize a variable with an integer value; 
+add a float value to it, thereby turning it into a float; then join it onto a string value to produce a 
+longer string. In contrast, many other languages, such as Ja

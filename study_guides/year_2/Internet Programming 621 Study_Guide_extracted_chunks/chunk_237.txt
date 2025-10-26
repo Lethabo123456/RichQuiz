@@ -1,0 +1,27 @@
+=> 21 [RON] => 23 [MALFOY] => 21 ) 
+c) Array ( [HARRY] => 21 [RON] => 23 ) 
+d) Array ( [Harry] => 21 [Ron] => 23 ) 
+ 
+Answer:c 
+62. What will be the output of the following PHP code ? 
+<?php 
+$a1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow"); 
+$result = array_flip($a1); 
+print_r($result); 
+?> 
+a) Array ( [red] => red [green] => green [blue] => blue [yellow] => yellow ) 
+b) Array ( [a] => a [b] => b [c] => c [d] => d ) 
+c) Array ( [red] => a [green] => b [blue] => c [yellow] => d ) 
+d) Array ( [a] => red [b] => green [c] => blue [d] => yellow ) 
+Answer:c 
+
+63. What will be the output of the following PHP code ? 
+<?php 
+$a1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow"); 
+$a2 = array("e" => "red","f" => "green", "g" => "blue"); 
+$result = array_intersect($a1, $a2); 
+print_r($result); 
+?> 
+a) Array ( [a] => red [b] => green [c] => blue ) 
+b) Array ( [a] => red [b] => green [c] => blue [d] => yellow ) 
+c) Array ( [e] => red [f] => green [g] =>

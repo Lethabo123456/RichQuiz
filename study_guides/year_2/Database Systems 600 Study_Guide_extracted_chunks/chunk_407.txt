@@ -1,0 +1,22 @@
+le to identify when an index is necessary.  
+Most DBMSs implement indexes using one of the following data structures:  
+ 
+Hash index. A hash index is based on an ordered list of hash values, created using a hash 
+algorithm from a key column.  
+ 
+B-tree index. The B-tree index is an ordered data structure organized as an upside-down tree.  
+ 
+Bitmap index. A bitmap index uses a bit array (0s and 1s) to represent the existence of a value 
+or condition.  
+Using the preceding index characteristics, a database designer can determine the best type of index 
+to use. Because the REGION_CODE column contains only a few different values that repeat a 
+relatively large number of times compared to the total number of rows in the table, a bitmap index 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eleven, page 522-526 
+
+ 
+164 
+will be used. Figure 11.4 shows the B-tree and bitmap representations for the CUSTOMER table 
+us

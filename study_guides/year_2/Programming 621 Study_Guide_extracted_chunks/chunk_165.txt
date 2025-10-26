@@ -1,0 +1,29 @@
+asterisk symbol (*) between the 
+data type and the variable name. The general syntax to declare a pointer variable is: 
+ 
+As an example, consider the following statements:  
+int *p;  
+char *ch; 
+In these statements, both p and ch are pointer variables. The content of p (when 
+properly assigned) points to a memory location of type int, and the content of ch points 
+to a memory location of type char. So, p is a pointer variable of type int, and ch is a 
+pointer variable of type char. 
+Before discussing how pointers work, let us make the following observations. 
+The statement:  
+int *p;  
+is equivalent to the statement: 
+ int* p; 
+ which is equivalent to the statement:  
+int * p; 
+Thus, the character * can appear anywhere between the data type name and the 
+variable name 
+ 
+Address of Operator (&) 
+In C++, the ampersand, &, called the address of operator, is a unary operator that 
+returns the address of its operand. For example, given the statements: 
+int x; 
+
+155 | P a g e  
+ 
+  
+int *p;

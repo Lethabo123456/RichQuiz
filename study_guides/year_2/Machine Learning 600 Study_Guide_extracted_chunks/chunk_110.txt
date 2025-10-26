@@ -1,0 +1,12 @@
+t just limited to text; you can use this method on pretty 
+much anything where patterns of associations would occur; this might be personality scorings in a 
+social network or what kind of music you are into. The Word2Vec algorithm is based on vectors, 
+called neural word embeddings, representing a word with numbers. Word2Vec trains words against 
+other words in the input text.  
+This is done in one of two ways, either using a continuous bag of words (CBOW), which is a context of 
+words to predict a target word, or using skip grams, which takes a word and predicts a context of 
+words. Words are read in the vector one at a time and then scanned within a certain range of words; 
+these skip-grams are an n-gram with items dropped. During the training, the vector contains the 
+context of each word and the similarity against other words in the vector space. The next job is to 
+tokenize the strings. 
+Basic Sentiment Analysis (SA). There is always a lot of interest around SA, especially with t

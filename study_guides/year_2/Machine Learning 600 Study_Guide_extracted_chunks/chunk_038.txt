@@ -1,0 +1,18 @@
+Table 2.2: Length checks  
+      
+ 
+ 
+Range Checks: Range or reasonableness checks are used with numeric or date ranges. Age ranges are 
+the main talking point here. Until there are advances in scientific medicine to prolong life, you can 
+make a fairly good assumption that the upper lifespan of someone is about 120. You can even play it 
+safe and extend the upper range to 150; anyone who is older than that is lying or just trying to put a 
+false value in to trip up the system (see Table 2.3). 
+ 
+                                                                                 Table 2.3: Range Checks 
+                                
+ 
+ 
+Format Checks: When you know that certain data must follow a given format, then it's always good 
+to check it. Regular expression knowledge is a big advantage here if you know it. E-mail addresses can 
+be used and abused in web forms and database tables, so it's always a good idea to validate what you 
+can at t

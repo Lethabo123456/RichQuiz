@@ -1,0 +1,16 @@
+used to configure your PHP engine.  
+3. Open this file in a text editor, such as Notepad. You may need root (administrator) access to 
+edit this file. If you do not have administrator access, ask your server administrator to set the 
+time zone for you.  
+4. Search for the following line in the file: ;date.timezone =  
+If for some reason this line is not in your php.ini file, simply add it yourself.  
+5. Remove the semicolon from the start of the line, and add your server’s time zone after the 
+equals sign at the end of the line. You can find your time zone in the list at  http://www.php 
+
+94  
+.net/timezones . For example, if your server resides anywhere in South Africa, you should 
+change the line to: date.timezone = Africa/Johannesburg  
+6. Save the file and quit your text editor.  
+7. Restart Apache. On Windows choose Restart All Services from the WampServer icon menu; 
+followed by Start Servers.  
+8. To test if the setting worked, reload the testing.php script in your browser and l

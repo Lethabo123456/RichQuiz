@@ -1,0 +1,51 @@
+The description should briefly describe the inputs, methodology and outputs of the MVP, the 
+criteria for evaluating the MVP, and the resources required to complete the MVP (typically 
+this is only the staff time required, but it might entail additional computing costs and/or third-
+party resources). Utilizing cloud resources should eliminate the need for hardware purchases 
+for an MVP, and trial software licenses should substitute for licensing costs at this stage. 
+Feed this MVP into whichever project management framework you use in your company (e.g. 
+scrum or Kanban). Evaluate the results of the MVP to determine the next steps for that 
+analytics project. You may move the project through several phases before you finally deploy 
+it. These phases might include: 
+ several iterations on the MVP to converge on the desired result; 
+ further manual application with limited scope; 
+ documented and repeatable application; 
+ deployed and governed application; and 
+ deployed, governed and optimized application 
+ with each successive stage requiring incremental budgeting of time, resources and 
+technology. 
+It’s very important to keep in mind that analytic applications are often a form of Research & 
+Development (R&D). Not all good ideas will work. Sometimes this is due to insufficient or 
+poor-quality data, sometimes there is simply too much noise in the data, or the process that 
+we are examining does not lend itself to standard models. This is why it’s so important to start 
+with MVPs, to fail fast, to keep in close contact with business experts and to find projects that 
+produce quick wins. We’ll talk more about this in the next chapter when we talk about agile 
+analytics.
+
+4.3 Analytics, algorithms and machine learning 
+Four types of analytics 
+It’s quite possible that your biggest initial wins will be from very basic applications of analytics. 
+Analytics can be extremely complex, but it can also be very simple, and the most basic of 
+applications are sometimes the most valuable. The preliminary tasks of collecting and 
+merging data from multiple sources, cleaning the data and summarizing the results in a 
+well-designed table or graph can produce substantial business value, eliminating fatal 
+misconceptions and clearly highlighting performance metrics, costs, trends and opportunities. 
+Gartner has developed a useful framework for classifying application areas of analytics 
+(shown below). Their Analytics Ascendancy Model Figure divides analytic efforts into four 
+categories: descriptive, diagnostic, predictive and prescriptive. I find this model to be quite 
+useful in discussing analytics. 
+ 
+Models, algorithms and black boxes 
+As you move into more advanced analytics, you’ll need to choose analytic models. Models are 
+sets of formulas that approximately describe events and interactions around us. We apply 
+models using algorithms, which are sequences of actions that we instruct a computer to 
+follow, like a recipe. As you employ an analytic model to solve your business problem (such 
+as predicting customer churn or recommending a product), you’ll need to follow three steps: 
+1. Design the model; 
+2. Fit the model to the data (also known as ‘training’ or ‘calibrating’ the model); and 
+3. Deploy the model. 
+
+Artificial intelligence and machine learning  
+Analytic software   
+Programming languages  
+Analytic tools Agile analytics 

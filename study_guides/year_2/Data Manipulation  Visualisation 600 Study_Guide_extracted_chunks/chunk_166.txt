@@ -1,0 +1,18 @@
+roperty of the Dropdown is the input of the app and the output of 
+the app is the "figure" property of the Graph. Whenever the value of the Dropdown changes, 
+Dash calls the callback function update_figure with the new value. The function filters the 
+DataFrame with this new value, constructs a figure object, and returns it to the Dash application. 
+ 
+There are a few nice patterns in this example: 
+● We're using the Pandas library for importing and filtering datasets in memory. 
+● We load our DataFrame at the start of the app: df = pd.read_csv('...'). This DataFrame df is in 
+the global state of the app and can be read inside the callback functions. 
+● Loading data into memory can be expensive. By loading querying data at the start of the app 
+instead of inside the callback functions, we ensure that this operation is only done when the app 
+
+ 
+ 
+ 
+ 
+server starts. When a user visits the app or interacts with the app, that data (the df) is already in 
+memory. If possible, expensive init

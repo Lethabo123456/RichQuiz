@@ -1,0 +1,156 @@
+/* AI.css - Artificial Intelligence Themed Extravagant Styling */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #000000, #0f2027, #203a43, #2c5364);
+    color: #00fffc;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    background: rgba(10, 10, 30, 0.85);
+    border-radius: 30px;
+    padding: 2.5rem;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.5), 0 0 80px rgba(255, 0, 255, 0.4);
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: #00fff7;
+    text-shadow: 0 0 15px #00fff7, 0 0 30px #ff00ff;
+    margin-bottom: 2rem;
+}
+
+/* Question Container */
+.question-container {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.2);
+}
+
+.question-container p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Options List */
+.options-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 255, 255, 0.1);
+    border: 2px solid #00fff7;
+    border-radius: 15px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-label:hover {
+    background: rgba(255, 0, 255, 0.1);
+    border-color: #ff00ff;
+    transform: scale(1.02);
+}
+
+.option-label input[type="radio"] {
+    margin-right: 1rem;
+    accent-color: #00fff7;
+}
+
+.option-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, #00fff7, #ff00ff);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00fff7, 0 0 40px #ff00ff;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00fff7, 0 0 60px #ff00ff;
+}
+
+/* Back Link */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: #00fff7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ff00ff;
+}
+
+/* Code Blocks for AI reasoning or snippets */
+pre, code {
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.5rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    color: #ffeb3b;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2), 0 0 25px rgba(255, 0, 255, 0.2);
+}
+
+/* Error Messages */
+.error-message {
+    color: #ff4d4d;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}

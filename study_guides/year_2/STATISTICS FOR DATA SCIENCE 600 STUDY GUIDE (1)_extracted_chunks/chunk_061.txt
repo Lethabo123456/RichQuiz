@@ -1,0 +1,26 @@
+Chapter 2: Basic Mathematics   
+
+2.1 Introduction 
+ 
+In this chapter, we will go over the basics of the following topics: 
+• Basic symbols/terminology 
+• Logarithms/exponents 
+• The set theory 
+• Calculus 
+• Matrix (linear) algebra. 
+
+Vectors and matrices 
+A vector is defined as an object with both magnitude and direction. This definition, however, 
+is a bit complicated for our use. For our purpose, a vector is simply a 1-dimensional array 
+representing a series of numbers. Put in another way, a vector is a list of numbers. 
+It is generally represented using an arrow or bold font, as shown: 
+Vectors are broken into components, which are individual members of the vector. We use 
+index notations to denote the element that we are referring to, as illustrated: 
+ 
+In Python, we can represent arrays in many ways. We could simply use a Python list to 
+represent the preceding array: 
+x = [3, 6, 8] 
+• Vectors represent a series of elements. 
+• In Python, NumPy arrays are a powerful way to represent vectors due to their utility 
+in vector operations.
+  

@@ -1,0 +1,27 @@
+s 
+increase (meaning that we are approaching winter). This is not what we were expecting.  
+
+P a g e  | 146 
+ 
+  
+Let's look at the individual scatter plots between each predictor and the response, as 
+illustrated:  
+ 
+  feature_cols = ['temp', 'season', 'weather', 'humidity']  
+# multiple scatter plots  
+sns.pairplot(bikes, x_vars=feature_cols, y_vars='count', kind='reg') 
+  
+ 
+                            
+ 
+Note how the weather line is trending downwards, which is the opposite of what the last 
+linear model was suggesting. Now, we must worry about which of these predictors are helping 
+us make the prediction, and which ones are just noise. To do so, we are going to need some 
+more advanced metrics.   What are those metrics/techniques 
+ 
+6.5 Verbal Communication 
+Verbal communication is crucial when presenting data results, especially to an audience of 
+data scientists, executives, or at conferences. The key areas to focus on during a verbal 
+presentation include: 
+  
+1. Professional

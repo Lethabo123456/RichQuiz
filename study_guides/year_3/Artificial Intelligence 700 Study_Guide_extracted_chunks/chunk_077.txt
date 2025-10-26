@@ -1,0 +1,46 @@
+Logical implication 
+
+Logical implication or the material conditional are both associated with 
+an operation on two logical values, typically the values of two propositions, that 
+produces a value of false just in the singular case the first operand is true and 
+the second operand is false. 
+ 
+The truth table associated with the material conditional if p then q (symbolized 
+as p → q) and the logical implication p implies q (symbolized as p ⇒ q, or Cpq) is 
+as follows: 
+ 
+Logical Implication 
+p     q     p → q 
+--------------------
+T     T     T 
+--------------------
+T     F     F 
+--------------------
+F     T     T 
+--------------------
+F     F     T 
+--------------------
+
+It may also be useful to note that p → q is equivalent to ¬p ∨ q.  
+ 
+Logical equality 
+Logical equality (also known as biconditional) is an operation on two logical 
+values, typically the values of two propositions, that produces a value of true if 
+both operands are false or both operands are true. 
+
+The truth table for p XNOR q (also written as p ↔ q, Epq, p = q, or p ≡ q) is as 
+follows: 
+Logical Equality 
+p    q    p ≡ q 
+-----------------
+T    T    T 
+-----------------
+T    F    F 
+-----------------
+F    T    F 
+-----------------
+F    F    T 
+-----------------
+
+So p EQ q is true if p and q have the same truth value (both true or both false), 
+and false if they have different truth values.

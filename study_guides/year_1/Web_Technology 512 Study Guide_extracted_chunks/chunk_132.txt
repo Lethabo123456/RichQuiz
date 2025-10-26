@@ -1,0 +1,23 @@
+l address. 
+ 
+You can start grabbing character from the end of string by typing a negative number. 
+Hence -4 means grab 4 characters from the end of the string. Here is an example: 
+var email = "meme@meme.com"; 
+var ending = email.substr( -4 ); 
+document.write(ending); 
+ 
+This grabs the last 4 characters from the email address, which are .com. 
+ 
+A popular use for substr is to cycle through all the letters in a string. In JavaScript code 
+previously we checked for an @ sign. But what if the user enters more than one @ 
+sign, in an attempt to deceive us? If we use indexOf it will only tell us the position of 
+the first occurrence of the @ sign. It will stop when it finds just one. By using a loop, an 
+IF statement, and substr, you can go through all the letters of the email address, 
+counting how many @ signs there are. Take a look at this code: 
+var at_sign = "@meme@meme@.com@"; 
+var counter = 0; 
+var i; 
+for ( i=0; i < at_sign.length; i++ )  
+{ 
+var char = at_sign.substr( i, 1 ); 
+if

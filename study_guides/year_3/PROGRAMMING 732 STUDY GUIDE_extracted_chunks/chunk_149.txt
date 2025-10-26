@@ -1,0 +1,46 @@
+4.3.1 Security Issues  
+As with Java applets, Java servlets have security issues to worry about, too.   
+  
+a) The Servlet Sandbox  
+A servlet can originate from several sources. A webmaster may have written it; a user may have written 
+it; it may have been bought as part of a third-party package or downloaded from another web site.  Based 
+on the source of the servlet, a certain level of trust should be associated with that servlet. Some web 
+servers provide a means to associate different levels of trust with different servlets. This concept is similar 
+to how web browsers control applets, and is known as "sandboxing".   
+A servlet sandbox is an area where servlets are given restricted authority on the server. They may not 
+have access to the file system or network, or they may have been granted a more trusted status. It is up 
+to the web server administrator to decide which servlets are granted this status. Note that a fully trusted 
+servlet has full access to the server's file system and networking capabilities. It could even perform a 
+System.exit(), stopping the web server...   
+  
+b) Access Control Lists (ACLs)  
+Many web servers allow you to restrict access to certain web pages and servlets via access control lists 
+(ACLs). An ACL is a list of users who are allowed to perform a specific function in the server. The list 
+specifies:   
+• What kind of access is allowed   
+• What object the access applies to   
+• Which users are granted access   
+
+Each web server has its own means of specifying an ACL, but in general, a list of users is registered on the 
+server, and those user names are used in an ACL. Some servers also allow you to add users to logical 
+groups, so you can grant access to a group of users without specifying all of them explicitly in the ACL.    
+ACLs are extremely important, as some servlets can present or modify sensitive data and should be tightly 
+controlled, while others only present public knowledge and do not need to be controlled.   
+  
+c) Threading Issues  
+A web server can call a servlet's service() method for several requests at once. This brings up the issue of 
+thread safety in servlets.  But first consider what you do not need to worry about: a servlet's init() method. 
+The init() method will only be called once for the duration of the time that a servlet is loaded. The web 
+server calls init() when loading, and will not call it again unless the servlet has been unloaded and reloaded. 
+In addition, the service() method or destroy() method will not be called until the init() method has 
+completed its processing.   
+  
+Things get more interesting when you consider the service() method. The service() method can be called 
+by the web server for multiple clients at the same time. (With the JSDK 2.0, you can tag a servlet with the 
+SingleThreadModel interface. This results in each call to service() being handled serially. Shared resources, 
+such as files and databases, can still have concurrency issues to handle.)   
+If your service() method uses outside resources, such as instance data from the servlet object, files, or 
+databases, you need to carefully examine what might happen if multiple calls are made to service() at the 
+same time. For example, suppose you had defined a counter in your servlet class that keeps track of how 
+many service() method invocations are currently running:   
+  private int counter = 0;  

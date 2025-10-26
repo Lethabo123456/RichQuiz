@@ -1,0 +1,41 @@
+4, 1, 2], 'type': 'bar', 'name': 'SF'}, 
+ 
+{'x': [1, 2, 3], 'y': [2, 4, 5], 'type': 'bar', 'name': u'Montréal'}, 
+], 
+'layout': { 
+ 
+'title': 'Dash Data Visualization' 
+
+ 
+ 
+ 
+ 
+} 
+} 
+) 
+]) 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server() 
+ 
+$ python layout1.py 
+...Running on http://127.0.0.1:8050/ (Press CTRL+C to quit) 
+and visit http://127.0.0.1:8050/ in your web browser. You should see a page that looks like this: 
+ 
+ 
+ 
+Note: the interactive portions only appear when your cursor hovers over a bar. 
+TROUBLESHOOTING: Some text editors do not properly encode utf. If you receive an error message that 
+states 
+File "app.py",  
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xe9 in position 5: invalid continuation byte 
+the problem is likely with the extended Unicode character in u'Montréal'. Change this to a regular e instead. 
+Save the file and try running it again as shown above. 
+
+ 
+ 
+ 
+ 
+The steps we took in this quick example are as follows: 
+1. # -*- coding: utf-8

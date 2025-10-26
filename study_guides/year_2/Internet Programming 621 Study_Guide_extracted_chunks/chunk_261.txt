@@ -1,0 +1,81 @@
+$num1 * $num2;  
+} 
+$result = calc(42, 0); 
+echo $result;     
+?> 
+a) Error 
+b) 0 
+c) 42 
+d) 84 
+  
+Answer: a 
+  
+128. 
+What will be the output of the following PHP code ? 
+<?php 
+function calc($num1, $num2) 
+{ 
+$total = $num1 * $num2; 
+
+return $total;  
+} 
+$result = calc(42, 0); 
+echo $result;     
+?> 
+  
+a) Error 
+b) 0 
+c) 42 
+d) 84 
+  
+Answer: b 
+  
+129. 
+9. What will be the output of the following PHP code ? 
+<?php 
+$var = 10; 
+function one() 
+{ 
+echo $var; 
+} 
+one(); 
+?> 
+a) Error 
+b) 10 
+c) No Output 
+d) None of the above 
+  
+Answer: c 
+  
+130. 
+10. What will be the output of the following PHP code ? 
+<?php 
+function mine($m) 
+{ 
+if ($m < 0) 
+echo "less than 0"; 
+if ($ >= 0) 
+echo "Not True"; 
+} 
+
+mine(0); 
+?> 
+a) Less Than 0 
+b) Not True 
+c) No Output 
+d) None of the above 
+  
+Answer: b 
+ 
+131. 
+1. What will be the output of the following PHP code ? 
+<?php 
+$x = 75; 
+$y = 25;  
+function addition() 
+{ 
+$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y']; 
+} 
+addition(); 
+echo $z; 
+?>

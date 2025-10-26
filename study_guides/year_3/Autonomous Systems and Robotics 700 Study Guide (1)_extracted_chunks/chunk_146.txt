@@ -1,0 +1,46 @@
+4 Control Systems for Software-Based Robots  
+ 
+4.1  Introduction 
+When we think of robots, we think of them as manipulators, such as in manufacturing facilities 
+where they are fixed to a location or robots that are moving about. Robots that move around in 
+the environment are called mobile robots 
+A software robot (often called a "bot" or "software bot") is an automated computer program 
+designed to perform specific tasks, simulate human behavior, or interact with digital systems 
+without direct human intervention.
+ 
+Control systems are the backbone of software-based robots, providing the computational 
+framework that enables autonomous behavior, decision-making, and interaction with the 
+environment. These systems bridge the gap between high-level objectives and low-level actuator 
+commands, creating the intelligence that transforms mechanical hardware into capable robotic 
+agents.   
+The control system includes data processing, control algorithms, logic analysis, and other 
+processing activities which enable the robot to perform as designed. Based on the different 
+requirements, more sophisticated robots have more sophisticated control systems.  The control 
+system involves all three aspects of the sense, think, and act loop during execution. First, the 
+perception system provides information about the environment, the robot itself, and the 
+relationship between the robot and the environment. Based on the information from the sensors 
+and the robot’s objectives, the cognition and control system must then decide on how to act and 
+what to do to achieve its objectives. The appropriate commands are then sent to the actuators, 
+which move the mechanical structure. The control system coordinates all the input data and plans 
+the robot’s motion towards the desired goal. 
+
+Various control techniques have been proposed and are being researched. The control strategies 
+of mobile robots can be divided into open-loop and closed-loop feedback strategies. When it 
+comes to open-loop control, human operators are involved in sending instructions. The robot 
+relays information to the operator only to perform as instructed. An example of such a system is 
+piloting a drone using a drone controller. The robot’s success in achieving its mission is essentially 
+dependent on your piloting skills—the controller simply relays your “intent” to the drone. Most 
+of the time, control commands such as velocities or torques are calculated beforehand, based on 
+the knowledge of the initial and end position (“Goal pose”) of the robot. However, this strategy 
+cannot compensate for disturbances and model errors (“Error”). 
+
+On the other hand, closed-loop control strategies could provide the required compensation since 
+the inputs are functions of the actual state of the system and not only of the initial and endpoints. 
+Therefore, disturbances and errors causing deviations from the predicted state are compensated 
+by real-time sensor data (“Feedback”) (Fig 4.1). Formally, we could define a feedback controller 
+as enabling a robot to reach and maintain the desired state (called a set point) by repeatedly 
+comparing its current state with the desired goal state. Here, feedback refers to the information 
+that is literally “fed back” into the system’s controller. When a system is operating at the desired 
+state, it is said to be operating at the steady state. 
+ 
+Fig.4.1 A typical closed-loop feedback controller 

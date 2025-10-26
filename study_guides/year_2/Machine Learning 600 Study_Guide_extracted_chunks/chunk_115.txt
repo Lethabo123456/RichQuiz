@@ -1,0 +1,18 @@
+n pixels.  
+ 
+6.7 Convolutional Neural Network (CNN) 
+CNN was introduced into the ML word in 1998 where Yann LeCun, Leon Bottou, Yoshua 
+Bengio, and Patrick Haffer published a paper outlining their work on a neural network called 
+LeNet-5. As is tradition, the paper was using the MNIST number recognition dataset for both 
+training and evaluation. There are two parts to the CNN; the first is feature extraction, and 
+the second is classification. Let's break these two elements down and examine them further. 
+ 
+
+P a g e  | 74 
+ 
+6.7.1 Feature Extraction 
+The feature extraction element is the core part of the CNN algorithm. A convolution is a 
+mathematical and integral function that will express the amount of overlap from one function 
+to another. These features could be elements of handwriting such as vertical or horizontal 
+lines. If it were a car, it could be a wheel, a window, or a bumper. The convolution doesn't 
+know what these things actually are; it's just noticing them in a numeri

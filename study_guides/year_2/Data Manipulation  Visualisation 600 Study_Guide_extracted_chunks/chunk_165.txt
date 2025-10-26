@@ -1,0 +1,41 @@
+nt['lifeExp'], 
+text=df_by_continent['country'], 
+ 
+mode='markers', 
+opacity=0.7, 
+marker={'size': 15}, 
+name=continent_name 
+)) 
+ 
+return { 
+ 
+'data': traces, 
+'layout': go.Layout( 
+xaxis={'type': 'log', 'title': 'GDP Per Capita'}, 
+ 
+yaxis={'title': 'Life Expectancy'}, 
+hovermode='closest' 
+) 
+} 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server() 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Run the script, open a browser to http://127.0.0.1:8050/ and you should see: 
+ 
+You can hover over any data point to reveal its Country, Continent and axis data. More importantly, 
+you can use the dropdown to change the displayed graph! 
+Concerning style: 
+Before we discuss the connectivity, let’s look at some of the style choices made: 
+● the x-axis is logarithmic, becoming denser as values increase 
+● we use the pandas .unique() method to extract the years for the dropdown 
+Concerning connectivity: 
+In this example, the "value" property of the Dropdown is the input of the app and the output of 
+the app is the "figure" property

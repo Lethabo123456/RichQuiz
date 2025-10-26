@@ -1,0 +1,64 @@
+specifies the vertex, and all of the remaining entries in the line (except the last) specify the vertices that 
+are adjacent to the vertex. Each line ends with the number –999.  
+  
+Using these conventions, the definition of the function createGraph is as follows:  
+
+393  
+  
+  
+void graphType::createGraph()  
+{  
+ifstream infile;  
+char fileName[50];  
+  
+int vertex;  
+int adjacentVertex;  
+  
+ 
+if (gSize != 0)    
+  
+  
+  
+//if the graph is not empty, make it empty  
+clearGraph();  
+  
+cout << "Enter input file name: "; 
+cin >> fileName; cout << endl;  
+  
+infile.open(fileName);  
+  
+if (!infile)  
+{  
+cout << "Cannot open input file." << endl; return;  
+}  
+  
+ 
+infile >> gSize;   
+  
+  
+  
+//get the number of vertices  
+  
+for (int index = 0; index < gSize; index++)  
+{ infile >> vertex;  
+infile >> adjacentVertex;  
+  
+while (adjacentVertex != -999)  
+{  
+graph[vertex].insertLast(adjacentVertex); infile 
+>> adjacentVertex;  
+ 
+}   
+  
+  
+  
+  
+//end while  
+ 
+}   
+  
+  
+  
+  
+  
+/

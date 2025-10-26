@@ -1,0 +1,13 @@
+e applied, and the aim is to get the value of the 
+error function to a minimum value. You need something that is continuous and differentiable. 
+With the bias option implemented in the Sigmoid function, each run of the network refines 
+the output and the error function. This leads to a better-trained network and more reliable 
+answers. 
+Back propagation. Within the multilayer perceptron is the concept of back propagation, short 
+for the “backward propagation of errors.” Back propagation calculates the gradients and 
+maps the correct inputs to the correct outputs. There are two steps to back propagation: the 
+propagation phase and the updating of the weight. This would occur for all the neurons in the 
+network. Propagation happens, and the training is input through the network and generates 
+the activations of the output. It then backward propagates the output activations and 
+generates deltas of all the output and hidden layers of the network based on the target of the 
+training patter

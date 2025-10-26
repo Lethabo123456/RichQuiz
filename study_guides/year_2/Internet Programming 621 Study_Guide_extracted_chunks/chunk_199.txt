@@ -1,0 +1,88 @@
+print "hi" ; 
+
+IP 621  
+else 
+    
+ 
+ 
+ print "how are u"; 
+?> 
+ 
+ 
+A. how are u 
+B. hi 
+C. Error 
+D. No output 
+ANS: B 
+ 
+38. What will be the output of the following PHP code? 
+<?php 
+$x = 1; 
+if ($x == 2) 
+    
+ 
+ 
+ print "hi" ; 
+else if($x = 2) 
+    print $x; 
+else 
+    
+ 
+ 
+ print "how are u"; 
+?> 
+A. error 
+B. 2 
+C. hi 
+D. how are u 
+ANS: B 
+ 
+
+IP 621  
+39. What will be the output of the following PHP code? 
+<?php 
+$a = 100; 
+if ($a > 10) 
+     
+ 
+ 
+printf("M.S. Dhoni"); 
+else if ($a > 20) 
+     
+ 
+ 
+printf("M.E.K Hussey"); 
+else if($a > 30) 
+     
+ 
+ 
+printf("A.B. de villiers"); 
+?> 
+ 
+A.  M.S.Dhoni 
+B.  M.E.K.Hussey 
+C.  M.S.Dhoni 
+      M.E.K.Hussey 
+      A.B.de villiers 
+D. no output 
+ANS: A 
+ 
+40. What will be the output of the following PHP code ? 
+<?php 
+"Hello World" 
+?> 
+A. Error 
+B. Hello World 
+
+IP 621  
+C. Nothing 
+D. Missing semicolon error 
+ANS: C 
+ 
+ 
+ 
+ 
+41. What will be the output of the following PHP code ? 
+<?php 
+    # echo "Hello world"; 
+    echo "# Hello w

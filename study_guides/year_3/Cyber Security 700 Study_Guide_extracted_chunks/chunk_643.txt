@@ -1,0 +1,32 @@
+SP 800-55, Performance Measurement Guide for Information Security, lists a number of candidate 
+metrics that organizations can tailor, expand, or use as models for developing other metrics (see Table 
+18.3). The recommended metrics focus on the SP 800-53 security controls. In essence, the metrics 
+measure the effectiveness of the implementation of the security controls. 
+There is one metric for each system control. For each metric, SP 800-55 provides detailed guidance in 
+a number of categories. For example, for the maintenance metric, these are the category values: 
+
+ Goal: Strategic Goal: Accelerate the development and use of an electronic information 
+infrastructure. Information Security Goal: Perform periodic and timely maintenance on 
+organizational information systems and provide effective controls on the tools, techniques, 
+mechanisms, and personnel used to conduct information system maintenance. 
+ Measure: Percentage (%) of system components that undergo maintenance in accordance 
+with formal maintenance schedules. 
+ Measure Type: Effectiveness/Efficiency 
+ Formula: (Number of system components that undergo maintenance according to formal 
+maintenance schedules/total number of system components) × 100. 
+ Target: This should be a high percentage defined by the organization. 
+ Implementation Evidence: (1) Does the system have a formal maintenance schedule? (2) How 
+many components are contained within the system? (3) How many components underwent 
+maintenance in accordance with the formal maintenance schedule? 
+ Frequency: Collection Frequency: Organization-defined (example: quarterly); Reporting 
+Frequency: Organization-defined (example: annually) 
+ Responsible Parties: Information Owner: Organization-defined (example: System Owner); 
+Information Collector: Organization-defined (for example, system administrator); Information 
+Customer: Chief information officer (CIO), information system security officer (ISSO), senior 
+agency information security officer (SAISO) (for example, chief information security officer 
+[CISO]) 
+ Data Source: Maintenance schedule, maintenance logs 
+ Reporting Format: Pie chart comparing the percentage of system components receiving 
+maintenance in accordance with the formal maintenance schedule versus the percentage of 
+system components not receiving maintenance in accordance with the formal maintenance 
+schedule over the specified period 

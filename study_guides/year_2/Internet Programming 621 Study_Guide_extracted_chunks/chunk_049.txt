@@ -1,0 +1,15 @@
+is best to use gettype() only when you want to debug a script to pinpoint a bug that might be 
+related to data types. Use the specific type testing functions if you simply want to ensure a variable 
+is of the right type; for example, it is a good idea to test that an argument passed to a function is of 
+the expected type before you use it within the function. This helps to make your code more robust 
+and secure.  
+  
+2.7 Changing A Variable’s Data Type  
+Earlier, you learned how to change a variable’s type by assigning different values to the variable. 
+However, you can use PHP’s settype() function to change the type of a variable while preserving the 
+variable’s value as much as possible. To use settype(), pass in the name of the variable you want to 
+alter, followed by the type to change the variable to (in quotation marks). Here’s some example 
+code that converts a variable to various different types using settype() :  
+  
+$test_var = 8.23;  
+echo $test_var . “ < br / > ”; // Displa

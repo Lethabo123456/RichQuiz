@@ -1,0 +1,24 @@
+.5 - getElementById 
+ 
+In the BODY section of the HTML we have a textbox and a button. But notice the 
+highlighted ID for the textbox: 
+ID="textbox_1" 
+ 
+So we have attached an ID to this HTML element. We then use this ID with the 
+following:  
+if ( document.getElementById("textbox_1").value=='' )  
+{ 
+} 
+ 
+The getElementById method needs a pair of round brackets. In between these round 
+brackets you type the ID you are trying to access. The ID needs to be surrounded by 
+quote marks, single or double. Textboxes have a VALUE attribute. You can get at this 
+value by adding it after the round brackets (type a dot first, though). We then have 
+two equal symbols. To specify a blank value in the text box, we have two single quote 
+marks (we could have used doubles, though). 
+ 
+One thing to be aware of for getElementById is that the "d" of "Id" is lowercase but 
+the "I" is uppercase. So it's not "ID" but "Id". Get that bit wrong and your code won't 
+work. 
+ 
+To change the textbox red, our cod

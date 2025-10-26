@@ -1,0 +1,30 @@
+together through concatenation: 
+document.write( hours +":" + minutes + ":" + seconds + 
+"<BR>"); 
+ 
+If you want ordinals at the end of your month day then you will have to write your own 
+function. (An ordinal is the st, nd, rd, or th at the end of the number, like 1st, 2nd 3rd, 
+4th.) The function below returns the ordinal for a month day: 
+ 
+
+ 
+102 
+ 
+SIX | JAVASCRIPT OBJECTS 
+ 
+Figure 6.8 
+ 
+Here, we have used a switch statement. In English, for the numbers 1 to 31, there are 
+only 7 endings that are not "th". The switch statement tests what is in the variable 
+called day. It returns the ending corresponding to the number, or a default of "th". 
+ 
+To call this function you could then do this: 
+document.write( day_of_month + ordinal( day_of_month ) ); 
+  
+6.2.5.2 Date Properties 
+Here is a list of each property and their description. 
+Property 
+Description 
+constructor Specifies the function that creates an object's prototype. 
+prototype 
+The prototype property allows you to add pro

@@ -1,0 +1,25 @@
+Hover over each of these to find the one that says Step Over. This advances the execution by one line. 
+Click this button and watch the code step line by line until you reach the 
+
+currentContact.setContactID(newId) line. Note that if your code doesn’t follow this path, you’ve done 
+something wrong and need to examine the code to ensure that it matches the code in the previous 
+listings. Locate the Variables portion of the Debug window (see Figure 5.4). 
+In the Variables section, find the newId variable and verify that its value is greater than –1. This number 
+may be significantly higher than –1 if you have run the app several times already. If it is not greater 
+than –1, review your code. Now step the code one more line and inspect the currentContact variable. 
+You may have to expand currentContact to see its attributes. If you cannot find currentContact in the 
+variables list, expand the variable named this, which represents the whole activity, so it will have all 
+the activity variables in it. Expand it until you find currentContact. Check to see that the contact ID 
+attribute is the same as the newId value. If it is, you have successfully created an activity that can save 
+data to a database! The debugger can be stopped by clicking the Stop button. The Stop button is the one with the 
+red square as an icon on the left side of the Debug window. You can resume execution of the 
+code (not step by step) by clicking the Resume Program button. This button is the green 
+triangle also on the left side of the Debug window. Resuming the program will cause it to run normally 
+until it hits another breakpoint. 
+
+An alternative to stepping through the code with the debugger is to use logging. With this approach, 
+you place Log statements in your code in places where you’d like to know the value of variables or 
+that the method was executed. When your code executes, these statements will be written to LogCat 
+(see the discussion of Log statements and LogCat in the “Create the Database Helper Class” section 
+earlier in this chapter). This is a useful approach if you have to run through a significant amount of 
+code to get to the code you are interested in.

@@ -1,0 +1,31 @@
+5. Conduct enterprise reconnaissance. After establishing persistent access to the target 
+environment, the APT typically attempts to find the servers or storage facilities holding the 
+targeted information. In most cases, the reconnaissance uses the tools available on the 
+compromised computers. In some cases, the APT uploads scanning tools to search for specific 
+types of systems (for example, identity and access management, authentication, virtual 
+private networks [VPNs], database or email servers). 
+ 
+6. Move laterally to new systems. Part of enterprise reconnaissance necessarily includes moving 
+laterally to new systems to explore their contents and understand the new parts of the 
+enterprise accessed from the new systems. The APT can directly install command-and-control 
+software on new systems to expand persistent access to the environment. 
+ 
+7. Escalate privileges. As the attackers conduct reconnaissance and move around the network 
+using the compromised credentials of their first few targets, they inevitably seek to escalate 
+from local user to local administrator to higher levels of privilege in the environment so that 
+they are not constrained to any specific part of the environment. In enterprises where access 
+to information is tightly controlled, compromising all the credentials in the environment 
+allows the attackers to masquerade as anyone in the environment and access any resource 
+they desire. 
+ 
+8. Gather and encrypt data of interest. Having found the data of interest to the attackers, the 
+APT generally gathers the data into an archive and then compresses and encrypts the archive. 
+This enables the APT to hide the contents of organizational information 
+
+ Perform surveillance of targeted organizations over time to examine and assess organizations 
+and ascertain points of vulnerability 
+ Perform malware-directed internal reconnaissance 
+
+Weaponization 
+At this stage, an attacker prepares an attack payload and crafts a tool to deliver the attack, using the 
+gathered information. This step happens at the attacker side, without contact with the victim.

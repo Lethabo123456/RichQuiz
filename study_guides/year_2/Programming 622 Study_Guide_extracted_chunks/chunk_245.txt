@@ -1,0 +1,64 @@
+list."<< endl;  
+else if (current->info == deleteItem)   //the item to be  
+//deleted is in the list  
+{  
+ 
+if (first == current)   
+  
+//Case 2  
+{  
+first = first->link;  
+  
+if (first == NULL) last 
+= NULL;  
+  
+delete current;  
+}  
+ 
+else     
+  
+  
+//Case 3  
+{  
+trailCurrent->link = current->link;  
+  
+if (current == last) last = 
+trailCurrent;  
+delete current;  
+}  
+count--;  
+}  
+ 
+else     
+  
+  
+  
+//Case 4  
+cout << "The item to be deleted is not in the "<< "list." << endl;  
+}  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end deleteNode  
+  
+From the definition of the function deleteNode, it can be shown that this function is of O(n).  
+  
+Table 3-8 gives the time-complexity of the operations of the class orderedLinkedList.  
+  
+TABLE 3-8: Time-complexity of the operations of the class orderedLinkedList  
+
+122  
+  
+  
+  
+ 
+3.4.5  Header File of the Ordered Linked List  
+  
+For the sake of completeness, we show how to create the header file that defines the class 
+orderedListType and t

@@ -1,0 +1,38 @@
+6.5. Memory Management 
+For each node, the Memory Manager uses a kernel with a paging algorithm to track the amount 
+of memory that is available. The algorithm is based on the goals of the local system, but the policies 
+and mechanisms that are used at the local sites are driven by the requirements of the global 
+system. To accommodate both local and global needs, memory allocation and de-allocation 
+depend on scheduling and resource-sharing schemes that optimize the resources of the entire 
+network. 
+The Memory Manager works the same way as it does for a stand-alone operating system, but it 
+is extended to accept requests for memory from both local and global sources. On a local level, 
+the Memory Manager allocates pages based on the local policy. On a global level, it receives requests 
+from the Process Manager to provide memory for new, or expanding, client or server processes. The 
+Memory Manager also uses local resources to perform garbage collection in memory, perform 
+compaction, decide which are the most and least active processes, and determine which processes 
+to preempt to provide space for others. 
+To control the demand, the Memory Manager handles requests from the Process Manager to allocate 
+and deallocate space based on the network’s usage patterns. In a distributed environment, the 
+combined memory for the entire network is made up of several sub-pools (one for each processor), 
+and the Memory Manager has a subcomponent that exists on each processor. 
+When an application tries to access a page that’s not in memory, a page fault occurs, and the Memory
+Manager automatically brings that page into memory. If the page is changed while in memory, the
+Memory Manager writes the changed page back to the file when it is time to swap the page out of
+memory.
+
+Before allocating space, the Memory Manager examines the total free memory table. If the request
+can be filled, the memory is allocated, and the table is modified to show the location of the allocated
+space. The Memory Manager also manages virtual memory. Specifically, it allocates and de-allocates virtual
+memory, reads and writes to virtual memory, swaps virtual pages to disk, gets information about
+virtual pages, locks virtual pages in memory, and protects the pages that need to be protected.
+
+Pages are protected using hardware or low-level memory management software in each site’s kernel.
+This protection is summoned as pages are loaded into memory. Several typical protection checks are
+performed on the pages, as shown in Table 6.3.
+
+Table 6.3 
+ 
+Table 6.3 shows typical protection checks that are performed on pages, as they are loaded into 
+memory. The last three controls shown in this table are needed to make sure processes do not write 
+to pages that should be read-only. 

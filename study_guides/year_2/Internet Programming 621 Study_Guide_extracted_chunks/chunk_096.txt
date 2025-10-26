@@ -1,0 +1,28 @@
+turns false :  
+  
+$myString = “Hello, world!”;  
+echo strpos( $myString, “wor” ); // Displays ‘7’ 
+echo strpos( $myString, “xyz” ); // Displays ‘’ (false)  
+  
+There is a gotcha when the searched text occurs at the start of the string. In this case, strpos() 
+returns 0  
+(the index of the first character of the found text), but it is easy to mistake this for a return value 
+of false if you are not careful. For example, the following code will incorrectly display “Not found” 
+:  
+  
+$myString = “Hello, world!”; if ( !strpos( 
+$myString, “Hel” ) ) echo “Not found”;  
+  
+
+49  
+  
+  
+So you need to test explicitly for a false return value, if that is what you are checking for. 
+The following code works correctly:  
+$myString = “Hello, world!”; if ( strpos( $myString, “Hel” ) 
+=== false ) echo “Not found”;  
+  
+strpos() can take an optional third argument: an index position within the string to start the search. 
+Here ’ s an example:  
+  
+$myString = “Hello, world!”; echo strpos( $myString

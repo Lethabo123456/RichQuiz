@@ -1,0 +1,37 @@
+Dataframes are two-dimensional in nature, meaning that they are organized in a row/column 
+structure just as a spreadsheet is. The main benefits of using Dataframes over, say, a spreadsheet 
+software would be that a Dataframe can handle much larger data than most common spreadsheet 
+software. If you are familiar with the R language, you might recognize the word Dataframe (Sinan, 
+2016). 
+ 
+As most of the data that we will deal with is organized, Dataframes are likely the most used object 
+in pandas, second only to the Series object. 
+ 
+Series 
+The Series object is simply a Dataframe, but only with one dimension. Essentially, it is a list of data 
+points. Each column of a Dataframe is considered to be a Series object.  The first thing we need to 
+do is grab a single column from our Dataframe; we generally use what is known as bracket notation. 
+The following is an example: (Once again, you must practice these scripts on your own csv file.) 
+ 
+yelp_raw_data['business_id'] # grabs a single column of the Dataframe 
+ 
+Now we use the type function to determine if it is a Series: 
+ type(yelp_raw_data['business_id']) 
+Output # pandas.core.series.Series 
+ 
+Exploration tips for qualitative data 
+Using these two Pandas objects, let's start performing some preliminary data exploration. For 
+qualitative data, we will specifically look at the nominal and ordinal levels. 
+ 
+Nominal level columns 
+As we are at the nominal level, let's recall that at this level, data is qualitative and is described purely 
+by name. In this dataset, this refers to the business_id, review_id, text, type, and 
+user_id. Let's use Pandas in order to investigate. Execute the following: 
+ 
+ yelp_raw_data['business_id'].describe() 
+Output:  # count 10000  
+  
+ # unique 4174  
+ # top JokKtdXU7zXHcr20Lrk29A  
+  
+ # freq 37

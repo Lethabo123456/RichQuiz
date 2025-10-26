@@ -1,0 +1,39 @@
+Topic 6: HANDLING EXCEPTION 
+ 
+6.1 Introduction 
+C#, like many object-oriented languages, handles errors and abnormal conditions with 
+exceptions. An exception is an object that encapsulates information about an unusual 
+program occurrence. 
+ 
+It is important to distinguish between bugs, errors, and exceptions. A bug is a programmer 
+mistake that should be fixed before the code is shipped. Exceptions are not a protection 
+against bugs. Although a bug might cause an exception to be thrown, you should not rely on 
+exceptions to handle your bugs. Rather, you should fix the bug. 
+ 
+An error is caused by user action. For example, the user might enter a number where a letter 
+is expected. Once again, an error might cause an exception, but you can prevent that by 
+catching errors with validation code. Whenever possible, errors should be anticipated and 
+prevented. 
+ 
+Even if you remove all bugs and anticipate all user errors, you will still run into predictable but 
+unpreventable problems, such as running out of memory or attempting to open a file that no 
+longer exists. You cannot prevent exceptions, but you can handle them so that they do not 
+bring down your program. 
+When your program encounters an exceptional circumstance, such as running out of memory, 
+it throws (or "raises") an exception. When an exception is thrown, execution of the current 
+function halts and the stack is unwound until an appropriate exception handler is found. 
+ 
+This means that if the currently running function does not handle the exception, the current 
+function will terminate and the calling function will get a chance to handle the exception. if 
+none of the calling functions handles it, the exception will ultimately be handled by the CLR, 
+which will abruptly terminate your program. 
+ 
+An exception handler is a block of code designed to handle the exception you've thrown. 
+Exception handlers are implemented as catch statements. Ideally, if the exception is caught 
+and handled, the program can fix the problem and continue. Even i f your program can't 
+continue, by catching the exception you have an opportunity to print a meaningful error 
+message and terminate gracefully. 
+ 
+If there is code in your function that must run regardless of whether an exception is 
+encountered (e.g., to release resources you've allocated), you can place that code in a finally 
+block, where it is certain to run, even in the presence of exceptions.  

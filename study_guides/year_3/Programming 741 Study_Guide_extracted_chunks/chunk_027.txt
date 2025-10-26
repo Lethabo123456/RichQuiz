@@ -1,0 +1,22 @@
+It’s good practice to define all your classes in namespaces, and the Visual Studio 2022 
+environment follows this recommendation by using the name of your project as the top-level 
+namespace. The libraries provided with .NET Core and the .NET Framework also adhere to 
+this practice, every class lives within a namespace. You’ve seen this approach in action 
+already. The Console class lives in the System namespace, and its full name is actually 
+System.Console. Indeed, in the first application you created at the start of this chapter, you 
+used this fully qualified name to refer to the Console class. Of course, if you had to write the 
+full name of a class every time you used it, the situation would be no better than such as 
+SystemConsole. Fortunately, you can solve this problem with a using directive in your 
+programs. If you return to the TestHello program in Visual Studio 2022 and look at the file 
+Program.cs in the Code and Text Editor window, you’ll notice the following line at the top of 
+the file: 
+ 
+using System; 
+ 
+This line is a using directive. A using directive brings a namespace into scope, enabling an 
+application to use the items defined in the namespace. In the subsequent code in the same 
+file, you no longer need to explicitly qualify objects in the System namespace. The System 
+namespace contains classes that are used so often that Visual Studio 2022 automatically adds 
+this using directive every time you create a new console project. When you create other types 
+of projects, you may see additional namespaces referenced. You can add more using 
+directives to the top of a source file if you need to reference other namespaces.

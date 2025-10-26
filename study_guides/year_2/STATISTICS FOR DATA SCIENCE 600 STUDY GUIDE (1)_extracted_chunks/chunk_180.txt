@@ -1,0 +1,19 @@
+will need to utilize what is known as a sampling distribution, which is a 
+distribution of point estimates of several samples of the same size. Our procedure for creating 
+a sampling distribution will be the following: 
+• Take 500 different samples of the break times of size 100 each. 
+• Take a histogram of these 500 different point estimates (revealing their distribution). 
+The number of elements in the sample (100) was arbitrary, but large enough to be a 
+representative sample of the population. The number of samples I took (500) was also 
+arbitrary, but large enough to ensure that our data would converge to a normal distribution. 
+ 
+point_estimates = [] 
+for x in range(500):  # Generate 500 samples 
+    sample = np.random.choice(a=breaks, size=100)  # take a sample of 100 points 
+    point_estimates.append(sample.mean())  # add the sample mean to our list of point 
+estimates 
+pd.DataFrame(point_estimates).hist()  # look at the distribution of our sample means 
+ 
+ 
+
+P a g e  | 106

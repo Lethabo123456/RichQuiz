@@ -1,0 +1,14 @@
+1.3 Types of Machine Learning 
+There exists a myriad of ML algorithms, but the selection choice will rely on the type of outputs 
+required for the system. ML algorithms are stratified into two categories: unsupervised and 
+supervised learning algorithms.
+ 
+1.3.1 Supervised Learning 
+In supervised learning, the model is trained using labeled data, meaning that each input is associated 
+with an output. The goal is to learn a mapping function from input to output. Supervised learning 
+works with a set of labelled features (input-output) named training dataset. Every observation in the 
+training dataset must have an input and output object. The supervised ML algorithm will use this 
+training set to predict or classify unknown features during the testing phase and observations that 
+were not considered or included in the training dataset will be classified as unknown instances.  
+
+Figure 1.2: Supervised learning 

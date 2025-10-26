@@ -1,0 +1,20 @@
+about the Standard Template Library (STL)  
+Become familiar with the three basic components of the STL—containers, iterators, and 
+algorithms  
+Explore how vector and deque containers are used to manipulate data in a program Discover 
+the use of iterators  
+  
+C++ is equipped with a Standard Template Library (STL). Among other things, the STL provides class 
+templates to process lists (contiguous or linked), stacks, and queues. This chapter discusses some of the 
+STL’s important features, and shows how to use certain tools provided by the STL in a program.   
+  
+In the ensuing chapters, you will learn how to develop your own code to implement and manipulate data, 
+as well as how to use professionally written code.  
+  
+ 
+2.1  
+Components of the STL  
+  
+The main objective of a program is to manipulate data and generate results. Achieving this goal requires 
+the ability to store data into computer memory, access a particular piece of data, and write algorithms to 
+manipulate the data.

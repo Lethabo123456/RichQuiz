@@ -1,0 +1,30 @@
+Chapter Five 
+Introduction to Probability 
+ 
+Learning Outcomes:  
+After reading this section of the guide, the student should be able to: 
+• Demonstrate an understanding of the key concepts of Data Probability. 
+• Understand the difference between Bayesian and Frequentist 
+• Understanding compound events 
+• Ability to apply Python commands to perform data probability tasks 
+ 
+5.1 Introduction  
+Probability is a fundamental concept in data science that quantifies the likelihood of events occurring. 
+In the context of data analysis, probability helps us understand uncertainty and make informed 
+decisions. It provides a framework for reasoning about uncertain events based on available data. 
+Probability theory involves mathematical tools and principles that assign numeric values, ranging from 
+0 to 1, to events. A probability of 0 indicates the event will not occur, while a probability of 1 implies 
+the event is certain to occur. The concept of probability is used to describe both simple events, such 
+as the outcome of a coin toss, as well as complex events, such as the occurrence of certain patterns in 
+a dataset (Chohan, 2019). 
+ 
+In the context of data science, probability is used to model random variables and processes, allowing 
+us to make predictions and infer information about the underlying data generating mechanisms. It 
+provides a basis for statistical inference, hypothesis testing, and decision-making. Understanding 
+probability enables data scientists to build robust models, generate reliable predictions, and quantify 
+uncertainty in their analyses. In this chapter, we will look at the following topics: 
+ 
+• What is probability? 
+• The differences between the Frequentist approach and the Bayesian approach 
+• How to visualize probability 
+• How to utilize the rules of probability? 

@@ -1,0 +1,21 @@
+, delete an item from the list, and copy the list.  
+  
+We leave it as an exercise for you to design a class to implement a linked list with header and trailer nodes.   
+  
+ 
+3.8  
+Circular Linked Lists  
+  
+A linked list in which the last node points to the first node is called a circular linked list. Figure 3-34 shows 
+various circular linked lists.  
+  
+  
+FIGURE 3-34 Circular linked lists  
+  
+In a circular linked list with more than one node, as in Figure 3-34(c), it is convenient to make the pointer 
+first point to the last node of the list. Then by using first you can access both the first and the last node of 
+the list. For example, first points to the last node and first->link points to the first node.  
+  
+As before, the usual operations on a circular list are as follows: Initialize the list (to an empty state), 
+determine if the list is empty, destroy the list, print the list, find the length of the list, search the list for a 
+given item, insert an item in the list, delete

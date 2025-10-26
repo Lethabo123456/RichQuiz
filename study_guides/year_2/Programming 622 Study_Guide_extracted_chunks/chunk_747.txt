@@ -1,0 +1,29 @@
+de<elemT> *newNode;  
+  
+newNode = new AVLNode<elemT>; 
+newNode->info = newItem; newNode-
+>bfactor = 0; newNode->llink = NULL;  
+newNode->rlink = NULL;  
+  
+insertIntoAVL(root, newNode, isTaller);  
+}  
+  
+We leave it as an exercise for you to design the class to implement AVL trees as an ADT. (Notice that 
+because the structure of the node of an AVL tree is different from the structure of the node of a binary 
+tree discussed in the beginning of this chapter, you cannot use inheritance to derive the class to 
+implement AVL trees from the class binaryTreeType.)  
+  
+ 
+9.7.3  Deletion from AVL Trees  
+  
+To delete an item from an AVL tree, first we find the node containing the item to be deleted. The following 
+four cases arise:  
+  
+Case 1:   
+The node to be deleted is a leaf.  
+Case 2:   
+The node to be deleted has no right child, that is, its right subtree is empty.  
+Case 3:   
+The node to be deleted has no left child, that is, its left subtree is empty.  
+Case 4:   
+The node to be d

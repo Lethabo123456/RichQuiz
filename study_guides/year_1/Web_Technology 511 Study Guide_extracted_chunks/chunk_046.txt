@@ -1,0 +1,21 @@
+3.2 TAGS IN HTML 
+You can create Web pages by using Hypertext Markup Language (HTML). HTML is 
+a set of codes, or tags, inserted in a file intended for display on the World Wide 
+Web. The codes tell the Web browser how to display a Web page's words and 
+images for the user. An HTML document is a plain text file that contains HTML 
+code. The name of the file has the extension, .html. You can use a simple text 
+editor, such as Notepad, to create an HTML document. You can use HTML tags to create 
+the structure of a Web page. Each tag consists of the tag name 
+surrounded by angular brackets, as shown here: 
+
+<tag_name> for example:  <html> 
+
+Some tags, such as the TITLE tag, work in pairs with a starting tag and an ending tag. 
+<TITLE> is the starting tag and has </TITLE> as the corresponding 
+ending tag. The ending tag is identical to the starting tag except that it contains a 
+forward slash (/) before the name of the tag. Tags that have a starting and a 
+corresponding ending tag are called containers. Tags that don’t appear in pairs are 
+called empty containers. For example, <HR>, the HR tag, is an empty container that 
+inserts a horizontal line on the page. With the HTML versions that keep on changing, 
+the most recent HTML version comes with a set of tags which can be used and 
+effective when using that HTML version. 

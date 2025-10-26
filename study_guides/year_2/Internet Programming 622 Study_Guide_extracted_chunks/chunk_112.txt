@@ -1,0 +1,21 @@
+e the fgetc() function. fgetc() takes a single argument — a file handle 
+— and returns just one character from the file it points to; it returns false when it reaches the end of 
+the file:   
+   
+$one_char = fgetc( $handle );   
+   
+However, fgetc() is slow when working with large files. It is faster to read a bunch of characters at 
+once using fread() , or one of the other file-reading functions mentioned in this chapter.   
+   
+You can use the fwrite() function to write data to a file. It requires two arguments: a file handle and a 
+string to write to the file. The function writes the contents of the string to the file, returning the 
+number of characters written (or false if there is an error). For example:   
+   
+$handle = fopen( “data.txt”, “w” );   
+
+49   
+   
+fwrite( $handle, “ABCxyz” );   
+   
+The first line opens the file data.txt for writing, which erases any existing data in the file. (If the file 
+does not exist, PHP attempts to create it.) The second line writes the charac

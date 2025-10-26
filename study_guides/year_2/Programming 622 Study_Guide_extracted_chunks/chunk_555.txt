@@ -1,0 +1,15 @@
+ssume that after inserting R, another item, R’, was inserted in HT, and the home position 
+
+276  
+  
+of R and R’ is the same. The probe sequence of R is contained in the probe sequence of R’ because R’ was 
+inserted in the hash table after R. Suppose that we delete R simply by marking the array slot containing R 
+as empty. If this array position stays empty, then while searching for R’ and following its probe sequence, 
+the search terminates at this empty array position. This gives the impression that R’ is not in the table, 
+which, of course, is incorrect. The item R cannot be deleted simply by marking its position as empty from 
+the hash table.  
+  
+One way to solve this problem is to create a special key to be stored in the key of the items to be deleted. 
+The special key in any slot indicates that this array slot is available for a new item to be inserted. However, 
+during the search, the search should not terminate at this location. This, unfortunately, makes the deletion 
+algorit

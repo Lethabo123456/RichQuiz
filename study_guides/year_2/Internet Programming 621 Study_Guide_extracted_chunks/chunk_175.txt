@@ -1,0 +1,24 @@
+t declares the $myGlobal variable as global, and 
+gives it a value. Then the hello() function is called. It too declares $myGlobal to be global, which 
+means it can now access its value — previously set by setup() — and display it. By the way, you can 
+also declare more than one global variable at once on the same line — just separate the variables 
+using commas:  
+  
+function myFunction() { global 
+$oneGlobal, $anotherGlobal;  
+}  
+  
+Finally, you can also access global variables using the $GLOBALS array. This array is a special type of 
+variable called a superglobal , which means you can access it from anywhere without using the 
+global statement. It contains a list of all global variables, with the variable names stored in its keys 
+and the variables’ values stored in its values. Here is an example that uses $GLOBALS :  
+  
+$myGlobal = “Hello there!”;  
+  
+function hello() { echo 
+$GLOBALS[“myGlobal”] . “ < br/ > ”;  
+}  
+  
+hello(); // Displays “Hello there!”  
+  
+The hello() funct

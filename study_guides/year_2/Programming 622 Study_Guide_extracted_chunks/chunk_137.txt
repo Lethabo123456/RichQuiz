@@ -1,0 +1,17 @@
+nts of a vector container. The STL provides a convenient 
+way to output the elements of a container with the help of the function copy. The function copy is 
+provided as a part of the generic algorithms of the STL and can be used with any container type as well as 
+arrays. Because we frequently need to output the elements of a container, before continuing with our 
+discussion of containers, let us describe this function.  
+
+65  
+  
+  
+The function copy does more than output the elements of a container. In general, it allows us to copy the 
+elements from one place to another. For example, to output the elements of a vector or to copy the 
+elements of a vector into another vector, we can use the function copy. The prototype of the function 
+template copy is as follows:  
+template <class inputIterator, class outputIterator> outputItr copy(inputIterator 
+first1, inputIterator last, outputIterator first2);  
+  
+The parameter first1 specifies the position from which to begin copying the elem

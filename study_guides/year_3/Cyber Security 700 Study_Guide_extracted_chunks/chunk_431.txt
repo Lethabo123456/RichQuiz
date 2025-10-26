@@ -1,0 +1,51 @@
+The Modern IT Perimeter 
+Traditionally, the enterprise network perimeter was defined by the physical interface between 
+network devices, such as routers, and external networks, such as the Internet and private WANs. For 
+today’s enterprise, the perimeter is better defined by each node on the network and not the network 
+itself. Key elements that break traditional network perimeter security are the following: 
+ 
+ Wireless access points (APs): Wi-Fi APs that are either unknowingly or maliciously deployed 
+inside the enterprise network enable mobile devices on the premises or near the premises to 
+gain access to resources on the enterprise network. 
+An IBM red paper [BUEC09] suggests that the following elements should comprise network perimeter 
+defense in a wireless environment: 
+ The ability to globally enforce host-based security software deployed to the mobile systems 
+known to access the enterprise network 
+ Scanning for, discovering, and blocking unknown devices 
+ Monitoring traffic patterns, communications, and transmitted data to discover how the 
+enterprise network is being used and to uncover unwanted or threatening traffic from mobile 
+devices
+
+5.4 Virtual Private Networks and IP Security 
+ 
+This section introduces the concept of virtual private networks and examines IPsec, a common security 
+mechanism used with VPNs. 
+ 
+Virtual Private Networks 
+A virtual private network (VPN) is a private network that is configured within a public network (a 
+carrier’s network or the Internet) in order to take advantage of the economies of scale and 
+management facilities of large networks. VPNs are widely used by enterprises to create wide area 
+networks that span large geographic areas, to provide site-to-site connections to branch offices, and 
+to allow mobile users to dial up their company LANs. From the point of view of the provider, the pubic 
+network facility is shared by many customers, and the traffic of each customer is segregated from 
+other traffic. Traffic designated as VPN traffic can only go from a VPN source to a destination in the 
+same VPN. It is often the case that encryption and authentication facilities are provided for the VPN. 
+In today’s distributed computing environment, the VPN offers an attractive solution to network 
+managers. In essence, a VPN consists of a set of computers that interconnect by means of a relatively 
+insecure network and that make use of encryption and special protocols to provide security. At each 
+corporate site, workstations, servers, and databases are linked by one or more LANs. The LANs are 
+under the control of the network manager and are configured and tuned for cost-effective 
+performance. The Internet or some other public network is used to interconnect sites, providing a cost 
+savings over the use of a private network and offloading the WAN management task to the public 
+network provider. That same public network provides an access path for telecommuters and other 
+mobile employees to log on to corporate systems from remote sites. 
+ 
+But the manager faces a fundamental requirement: security. Use of a public network exposes 
+corporate traffic to eavesdropping and provides an entry point for unauthorized users. To counter this 
+problem, the manager can choose from a variety of encryption and authentication packages and 
+products. Proprietary solutions raise a number of problems. First, how secure is the solution? If 
+proprietary encryption or authentication schemes are used, there may be little reassurance in the 
+technical literature about the level of security provided. Second is the question of compatibility. No 
+manager wants to be limited in the choice of workstations, servers, routers, firewalls, and so on by a 
+need for compatibility with the security facility. This is the motivation for the IPsec set of Internet 
+standards.

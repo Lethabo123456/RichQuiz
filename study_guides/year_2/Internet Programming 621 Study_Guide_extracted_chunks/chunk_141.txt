@@ -1,0 +1,35 @@
+ies”,  
+“author” => “Charles Dickens”,  
+“pubYear” => 1859  
+),  
+);  
+$bookNum = 0; foreach ( 
+$myBooks as $book ) {  
+
+69  
+$bookNum++;  
+echo “<h2>Book 
+#$bookNum:</h2>”; echo “<dl>”; 
+foreach ( $book as $key => $value ) {  
+echo “<dt>$key</dt><dd>$value</dd>”;  
+}  
+echo “</dl>”;  
+}  
+?>  
+</body>  
+</html>  
+  
+  
+ 
+Figure 5.5  
+  
+5.12 Sorting Arrays  
+One powerful feature of arrays in most languages is that you can sort the elements in any order you 
+like. For example, if you’ve just read 100 book titles from a text file into an array, you can sort the 
+titles  
+alphabetically before you display them. Or you might create a multidimensional array containing 
+customer information, then sort the array by number of purchases to see who your most loyal 
+customers are. When it comes to sorting arrays, PHP provides no less than twelve functions that you 
+can use to sort an array. The more common ones are:  
+sort() and rsort() – – For sorting indexed arrays  
+asort() and arsort() – –

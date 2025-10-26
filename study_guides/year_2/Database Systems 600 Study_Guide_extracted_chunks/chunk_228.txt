@@ -1,0 +1,45 @@
+ 
+The data-modelling checklist provides a way for the designer to check that the ERD meets 
+a set of minimum requirements. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+90 
+ 
+  
+Review Questions  
+ 
+1. What is normalization? 
+ 
+2. When is a table in 2NF? 
+ 
+3. When is a table in BCNF? 
+ 
+4. What is a partial dependency? With what normal form is it associated? 
+ 
+5. Define and discuss the concept of transitive dependency. 
+ 
+6. What is a surrogate key, and when should you use one? 
+ 
+Problems  
+ 
+7. What three data anomalies are likely to be the result of data redundancy? How 
+can such anomalies be eliminated? 
+ 
+8. Using the descriptions of the attributes given in the figure, convert the ERD 
+shown in Figure P6.2 into a dependency diagram that is in at least 3NF. 
+ 
+ 
+ 
+9. Using the INVOICE table structure shown in Table P6.3, do the following: 
+ 
+ 
+ 
+a. Write the relational schema, draw its dependency diagram, and identify 
+all dependencies, including all partial and transitive dependencies. You 
+can assume th

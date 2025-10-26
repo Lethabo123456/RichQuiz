@@ -1,0 +1,53 @@
+TOPIC 4  
+__________________________________________________________________  
+  
+4. SERVLETS    
+__________________________________________________________________  
+  
+INTRODUCTION  
+One of the most essential technologies in J2EE is Servlets. Servlets provide the best mechanism for J2EE 
+applications to provide a web interface. This chapter about the essential concepts of developing servlets. 
+In 1993, messages sent is Hypertext Transfer Protocol (HTTP) format used by web servers were only a 
+minute portion of the traffic on the Internet. HTTP.S tremendous functionality led a rapid expansion in 
+both the number and capabilities of web server. Essentiality, it is web HTTP that made the world wide 
+web possible. Originally, a basic web server simply returned a text page when it got correctly formatted 
+request message; however it did not take the programmer long to discover that good things were possible 
+if some extra functionality was added, such an forms and graphics and capabilities. The Common Gateway 
+Interface (CGI) standard enables the user of a web browser to submit data from a web page to a sewer 
+for further processing programming with Java servlets and Java server pages builds on this universal 
+standard and makes it easier to me. To understand how this works, you must understand how a web 
+server processes. HTTP servlet Application programming Interface (API). 
+
+4.1 SERVLETS  
+  
+A servlet is a Java component that can be plugged into a Java-enabled web server to provide custom 
+services. These services can include:   
+• New features   
+• Runtime changes to content   
+• Runtime changes to presentation   
+• New standard protocols (such as FTP)   
+• New custom protocols   
+
+Servlets are designed to work within a request/response processing model. In a request/response model, 
+a client sends a request message to a server and the server responds by sending back a reply message. 
+Requests can come in the form of an   
+• HTTP  
+• URL,  
+• FTP,  
+• URL,  
+or a custom protocol.
+
+The request and the corresponding response reflect the state of the client and the server at the time of 
+the request. Normally, the state of the client/server connection cannot be maintained across different 
+request/response pairs. However, session information is maintainable with servlets through means to be 
+described later. The Java Servlet API includes several Java interfaces and fully defines the link between a 
+hosting server and servlets. The Servlet API is defined as an extension to the standard JDK. JDK extensions 
+are packaged under javax--the root of the Java extension library tree. The Java Servlet API contains the 
+following packages:   Package javax.servlet   
+• Package javax.servlet.http   
+Servlets are a powerful addition to the Java environment. They are fast, safe, reliable, and 100% pure Java. 
+Because servlets plug into an existing server, they leverage a lot of existing code and technology. The 
+server handles the network connections, protocol negotiation, class loading, and more; all of this work 
+does not need to be replicated! And, because servlets are located at the middle tier, they are positioned 
+to add a lot of value and flexibility to a system. In this course you will learn about the Servlet API and you 
+will get a brief tour of the types of features servlets can implement.

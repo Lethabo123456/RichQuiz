@@ -1,0 +1,24 @@
+1.5 Test the Theory to Determine Cause 
+ 
+After establishing a theory regarding the root cause of a network issue, the next step is to test 
+that theory. In some cases, this phase also yields the solution, especially if the issue is 
+straightforward—like plugging in a disconnected cable. More complex scenarios require 
+targeted testing of both physical and logical components (Dean, 2013, p. 612). 
+Testing Physical Layer Theories 
+ 
+Physical layer issues are often simple yet prevalent. If a theory points to a hardware fault, 
+individual components should be examined or tested to verify functionality. Several practical 
+methods are available: 
+
+Ways to Test Physical Connectivity: 
+
+• Use cable testers to evaluate data transmission quality.  
+• Inspect LED status lights on interfaces for link and activity indicators. 
+• Ensure NICs, SFPs, and GBICs are securely installed. 
+• Measure cable distances to conﬁrm they fall within maximum IEEE limits. 
+• Utilize a wireless analyser to verify that clients are within range of an access point. 
+• Trace cabling from end-to-end between nodes and switches. 
+
+Component swapping is a fast, often eﬀective troubleshooting method. Replacing a suspect 
+cable, patch port, or even a NIC with a known-good component can either conﬁrm or rule out 
+a hardware failure. 

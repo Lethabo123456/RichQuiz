@@ -1,0 +1,19 @@
+ers: 1  
+Average transaction time: 5  
+Average arrival time difference between customers: 4  
+Total waiting time: 269  
+Number of customers that completed a transaction: 17  
+Number of customers left in the servers: 1  
+The number of customers left in queue: 3  
+Average waiting time: 12.81  
+************** END SIMULATION *************  
+ Key Terms  
+  
+1. A queue is a data structure in which the items are added at one end and removed from the other end.  
+2. A queue is a First In First Out (FIFO) data structure.  
+3. The basic operations on a queue are as follows: Add an item to the queue, remove an item from the 
+queue, retrieve the first and last element of the queue, initialize the queue, check whether the queue 
+is empty, and check whether the queue is full.  
+4. A queue can be implemented as an array or a linked list.  
+5. The middle elements of a queue should not be accessed directly.  
+6. If the queue is nonempty, the function front returns the front element of the queue and the

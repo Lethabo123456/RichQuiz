@@ -1,0 +1,40 @@
+SantaBarbaraCA.csv, YumaAZ.csv and SitkaAK.csv. 
+For starters, let’s create basic heatmaps for each dataset (these are, heat2.py and heat3.py) and 
+accept plotly’s default parameters. Note that temperatures are given in degrees Celsius. 
+heat1.py creates a heatmap from SantaBarbaraCA.csv: 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+df = pd.read_csv('../data/2010SantaBarbaraCA.csv') 
+ 
+data = [go.Heatmap( 
+x=df['DAY'], 
+y=df['LST_TIME'], 
+z=df['T_HR_AVG'].values.tolist(), 
+colorscale='Jet' 
+)] 
+layout = go.Layout( 
+title='Hourly Temperatures, June 1-7, 2010 in<br>\ 
+Santa Barbara, CA USA' 
+) 
+fig = go.Figure(data=data, layout=layout) 
+pyo.plot(fig, filename='Santa_Barbara.html') 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+heat2.py and heat3.py create similar heatmaps from YumaAZ.csv and SitkaAK.csv respectively: 
+ 
+ 
+Although all three heatmaps appear fairly similar (warm during the day, cold at night), the temperature 
+ranges are quite different for each one. 
+Fo

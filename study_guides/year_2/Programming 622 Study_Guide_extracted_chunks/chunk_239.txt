@@ -1,0 +1,16 @@
+to insert 25 in this list. Clearly, 25 goes between 17 
+and 27, which would require the link of the node with info 17 to be changed. After inserting 
+25, the resulting list is as shown in Figure 3-26.  
+  
+  
+FIGURE 3-26 list after inserting 25 in the list in Figure 5-24  
+  
+From case 3, it follows that we must first traverse the list to find the place where the new item is to be 
+inserted. It also follows that we should traverse the list with two pointers— say, current and trailCurrent. 
+The pointer current is used to traverse the list and compare the info of the node in the list with the item 
+to be inserted. The pointer trailCurrent points to the node just before current. For example, in case 3b, 
+when the search stops, trailCurrent points to node 17 and current points to node 27. The item is inserted 
+after trailCurrent. In case 3a, after searching the list to find the place for 65, trailCurrent points to node 
+54 and current is NULL.  
+  
+The definition of the function insert is

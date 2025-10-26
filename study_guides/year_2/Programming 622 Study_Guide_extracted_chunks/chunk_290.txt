@@ -1,0 +1,16 @@
+elf. 
+Every call to a recursive function—that is, every recursive call—has its own code and its own set 
+of parameters and local variables.  
+ After completing a particular recursive call, control goes back to the calling environment, which is 
+the previous call. The current (recursive) call must execute completely before control goes back to 
+the previous call. The execution in the previous call begins from the point immediately following 
+the recursive call.   
+  
+ 
+4.1.1  Direct and Indirect Recursion  
+  
+A function is called directly recursive if it calls itself. A function that calls another function and eventually 
+results in the original function call is said to be indirectly recursive. For example, if a function A calls a 
+function B and function B calls function A, then function A is indirectly recursive. Indirect recursion can be 
+several layers deep. For example, suppose that function A calls function B, function B calls function C, 
+function C calls function D, and functio

@@ -1,0 +1,39 @@
+ns are given next.  
+  
+template <class elemType>  
+void preorder(binaryTreeNode<elemType> *p) const  
+{  
+if (p != NULL)  
+{ cout << p->info << " "; 
+preorder(p->llink);  
+preorder(p->rlink);  
+}  
+}  
+  
+template <class elemType>  
+void postorder(binaryTreeNode<elemType> *p) const  
+{  
+if (p != NULL)  
+
+328  
+  
+{ postorder(p->llink); 
+postorder(p-
+>rlink);  
+cout << p->info << " ";  
+}  
+}  
+  
+ 
+9.2.4  Implementing Binary Trees  
+  
+The previous sections described various operations that can be performed on a binary tree, as well as the 
+functions to implement these operations. This section describes binary trees as an abstract data type 
+(ADT). Before designing the class to implement a binary tree as an ADT, let us list various operations that 
+are typically performed on a binary tree:  
+  
+Determine whether the binary tree is empty.  
+Search the binary tree for a particular item.  
+Insert an item in the binary tree.  
+Delete an item from the binary tree.  
+Find the height of the

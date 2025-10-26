@@ -1,0 +1,25 @@
+1.1.2 Working with Swing  
+As mentioned earlier, swing is a large system, and it has many features that you will want to explore on 
+your own. For example, Swing provides toolbars, tooltips, and progress bars. Also, swing components can 
+provide a pluggable look and feel, which means that it easy to substituteanother appearance and 
+behaviour for an element. This can be done dynamically. You may design your own look and feel. Frankly, 
+the swing approach to GUI components might replace the AWT classes sometime in the future, so 
+familiarizing yourself with it now is a good idea. 
+
+1.1.3 Swing Basic Containers  
+The Container class is a subclass of component. It has additional methods that allow other component 
+objects to be nested within it. Other Container objects can be stored inside a container. This makes for a 
+multileveled containment system. A container is responsible for laying out any components that it 
+contains. 
+
+1.1.4 Panel  
+The Panel class is a concrete subclass of Container. It doesn’t add any new methods; it simply implements 
+Container. A Panel may be thought of as a recursively nestable, concrete screen component. Panel is the 
+superclass for Applet. When screen output is directed to an applet, it is drawn on the surface of Panel 
+object. In essence, a Panel is a window that does not contain a title bar, menu bar, or border. This is why 
+you don’t see these items when an applet is run inside a browser. When you run an applet using an applet 
+viewer, the applet viewer provides the title and border. Other components can be added to a Panel object 
+by its add( ) method (inherited from Container). Once these components have been added, you can 
+position and resize them manually using the setLocation( ), setSize( ), or setBounds( ) methods defined by 
+component. 
+

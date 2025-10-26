@@ -1,0 +1,26 @@
+roperly 
+first.  
+In the second and third examples, if the $authors2 or $authors3 array variables already existed and 
+contained other elements, the final arrays might end up containing more than just the four 
+elements you assigned.  
+  
+If in doubt, always initialize your array variables when you first create them, even if you are not 
+creating any array elements at that point. You can do this easily by using the array() construct with 
+an empty list:  
+  
+$authors = array();  
+  
+This creates an array with no elements (an empty array). You can then go ahead and add elements 
+later:  
+  
+$authors[] = “Steinbeck”;  
+$authors[] = “Kafka”;  
+$authors[] = “Tolkien”; 
+$authors[] = “Dickens”;  
+  
+You can also add and change elements of associative arrays using square bracket syntax. Here an 
+associative array is populated in two ways: first using the array() construct, and second using the 
+square bracket syntax:  
+  
+// Creating an associative array using the array() construct  
+$myBook

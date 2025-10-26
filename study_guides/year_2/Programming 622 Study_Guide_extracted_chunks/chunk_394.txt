@@ -1,0 +1,46 @@
+kedStackType<Type>::initializeStack()  
+{ unorderedLinkedList<Type>::initializeList();  
+}  
+  
+template <class Type>  
+bool linkedStackType<Type>::isEmptyStack() const  
+{  
+
+199  
+  
+return unorderedLinkedList<Type>::isEmptyList();  
+}  
+  
+template <class Type>  
+bool linkedStackType<Type>::isFullStack() const  
+{ return false;  
+}  
+  
+template <class Type>  
+void linkedStackType<Type>::push(const Type& newElement)  
+{  
+unorderedLinkedList<Type>::insertFirst(newElement);  
+}  
+  
+template <class Type>  
+Type linkedStackType<Type>::top() const  
+{  
+return unorderedLinkedList<Type>::front();  
+}  
+  
+template <class Type>  
+void linkedStackType<Type>::pop()  
+{  
+nodeType<Type> *temp;  
+  
+temp = first;  
+first = first->link; delete 
+temp;  
+}  
+  
+ 
+5.4  
+Application of Stacks: Postfix Expressions Calculator  
+  
+The usual notation for writing arithmetic expressions (the notation we learned in elementary school) is 
+called infix notation, in which the operator is written between t

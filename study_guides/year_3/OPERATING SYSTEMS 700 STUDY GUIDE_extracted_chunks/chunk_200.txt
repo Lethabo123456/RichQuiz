@@ -1,0 +1,49 @@
+6.4. NOS Development 
+
+A NOS typically runs on a computer called a server, and the NOS performs services for network 
+computers, called clients. Although computers can assume the role of clients most or all the time, any 
+given computer can assume the role of server (or client), depending on the requirements of the 
+network. Client and server are not hardware- specific terms but are, instead, role-specific terms. 
+Many networks operating systems are true operating systems that include the four management 
+functions: memory management, process scheduling, file management, and device management 
+(including disk and I/O operations). In addition, they have a network management function with 
+a responsibility for network communications, protocols, and so on. In NOS, the network management 
+functions come into play only when the system needs to use the network. At all other times, 
+the Network Manager is dormant, and the operating system operates as if it is a stand-alone 
+system. 
+
+Although NOS can run applications as well as other operating systems, its focus is on sharing resources 
+instead of running programs. For example, a single-user operating system, such as early versions 
+of Windows, focuses on the user’s ability to run applications. On the other hand, network operating 
+systems focus on the user’s ability to share resources available on a server, including applications and 
+data, as well as expensive shared resources. 
+In the following pages we describe some of the features commonly found in a network operating 
+system, without focusing on anyone. The best NOS choice depends on many factors, including the 
+applications to be run on the server, the technical support required, the user’s level of training, and 
+the compatibility of the hardware with other networking systems. 
+
+Important NOS Features 
+ 
+Most network operating systems provide standard local area network technologies and client desktop 
+operating systems. Most networks are heterogeneous, that is, they support computers running a 
+wide variety of operating systems. A single network might include devices running Windows, the 
+Macintosh operating system (UNIX), and Linux. For NOS to serve as the networking glue, it must 
+provide strong support for every operating system in the larger information network, sustaining as 
+many current standards as necessary. Therefore, it must have robust architecture 
+that adapts easily to new technologies. 
+
+At a minimum, NOS should preserve the user’s expectations for a desktop system. That means 
+that the network’s resources should appear as simple extensions of that user’s existing system. 
+For example, on a Windows computer, a network drive should appear as just another hard disk 
+but with a different volume name and a different drive letter. On a Macintosh computer, the network 
+drive should appear as an icon for a volume on the desktop. And on a Linux or UNIX system, the drive 
+should appear as a mountable file system. 
+
+NOS is designed to operate a wide range of third-party software applications and hardware devices, 
+including hard disk drives, optical disc drives, USB devices, and network interface cards. A NOS 
+also supports software for multiuser network applications, such as electronic messaging, as well 
+as networking expansions such as new protocol stacks. 
+Finally, the NOS must blend efficiency with security. Its constant goal is to provide network clients 
+with quick and easy access to the network’s data and resources without compromising network 
+security. 
+ 

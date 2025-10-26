@@ -1,0 +1,15 @@
+other search algorithms.  
+  
+Suppose that L is list of length n. We want to determine the number of key comparisons made by the 
+sequential search when the L is searched for a given item.  
+  
+If the search item is not in the list, we then compare the search item with every element in the list, making 
+n comparisons. This is an unsuccessful case.  
+  
+Suppose that the search item is in the list. Then the number of key comparisons depends on where in the 
+list the search item is located. If the search item is the first element of L, we make only one key 
+comparison. This is the best case. On the other hand, if the search item is the last element in the list, the 
+algorithm makes n comparisons. This is the worst case. The best and worst cases are not likely to occur 
+every time we apply the sequential search on L, so it would be more helpful if we could determine the 
+average behavior of the algorithm. That is, we need to determine the average number of key comparisons 
+the sequential

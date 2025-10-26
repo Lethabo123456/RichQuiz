@@ -1,0 +1,26 @@
+g a string variable is as simple as assigning a literal string value to a 
+new variable name:  
+  
+$myString = ‘hello‘;  
+  
+In this example, the string literal ( hello ) is enclosed in single quotation marks ( ‘ ). You can also use 
+double quotation marks ( “ ), as follows:  
+  
+$myString = “hello”;  
+  
+Single and double quotation marks work in different ways. If you enclose a string in single quotation 
+marks, PHP uses the string exactly as typed. However, double quotation marks give you a couple of 
+extra features:  
+  
+Any variable names within the string are parsed and replaced with the variable’s value. You can 
+include special characters in the string by escaping them. Here are some examples to make these 
+differences clear:  
+  
+  
+  
+$myString = ‘world’; echo “Hello, $myString! < br/ > ”; // 
+Displays “Hello, world!” echo ‘Hello, $myString! < br/ > ’; // 
+
+45  
+Displays “Hello, $myString!” echo “ < pre > Hi\tthere! < /pre > 
+”; // Displays “Hi there!” echo ‘ < pre > Hi\tthere

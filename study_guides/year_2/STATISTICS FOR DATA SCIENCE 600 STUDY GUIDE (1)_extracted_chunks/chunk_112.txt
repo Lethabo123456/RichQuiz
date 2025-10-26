@@ -1,0 +1,65 @@
+3.8.1 Types of Probability Distributions 
+ 
+1. Discrete Probability Distributions 
+These distributions model the probabilities of random variables that can have discrete 
+values as outcomes. For example, the possible values for the random variable X that 
+represents the number of heads that can occur when a coin is tossed twice are the set 
+{0, 1, 2} and not any value from 0 to 2 like 0.1 or 1.6. 
+Examples: Bernoulli, Binomial, Negative Binomial, Hypergeometric, etc., 
+
+2. Continuous Probability Distributions 
+These distributions model the probabilities of random variables that can have any possible 
+outcome. For example, the possible values for the random variable X that represents 
+weights of citizens in a town which can have any value like 34.5, 47.7, etc., 
+Examples: Normal, Student’s T, Chi-square, Exponential, etc., 
+ 
+Table 1: Discrete vs Continuous Distribution 
+ 
+Types of Probability Distribution explained 
+Normal Distribution: It is also known as Gaussian distribution. It is one of the simplest 
+types of continuous distribution. This probability distribution is symmetrical around 
+its mean value. It also shows that data at proximity of the mean is frequently 
+occurring, compared to data that is away from it. Here, mean = 0, variance = finite 
+value. 
+
+Here, you can see 0 at the center is the Normal Distribution for different mean and variance 
+values. Here is a code example showing the use of Normal Distribution: 
+from scipy.stats import norm 
+import matplotlib.pyplot as plt 
+import numpy as np 
+  
+def normalDist() -> None: 
+    fig, ax = plt.subplots(1, 1) 
+    mean, var, skew, kurt = norm.stats(moments='mvsk') 
+    x = np.linspace(norm.ppf(0.01), norm.ppf(0.99), 100) 
+     
+    ax.plot(x, norm.pdf(x), 'r-', lw=5, alpha=0.6, label='norm pdf') 
+    ax.plot(x, norm.cdf(x), 'b-', lw=5, alpha=0.6, label='norm cdf') 
+     
+    vals = norm.ppf([0.001, 0.5, 0.999]) 
+    np.allclose([0.001, 0.5, 0.999], norm.cdf(vals)) 
+     
+    r = norm.rvs(size=1000) 
+    ax.hist(r, density=True, histtype='stepfilled', alpha=0.2) 
+     
+    ax.legend(loc='best', frameon=False) 
+    plt.show() 
+  
+normalDist() 
+
+Output: 
+
+ample showing the use of Normal Distribution: 
+from scipy.stats import norm 
+import matplotlib.pyplot as plt 
+import numpy as np 
+  
+def normalDist() -> None: 
+    fig, ax = plt.subplots(1, 1) 
+    mean, var, skew, kurt = norm.stats(moments='mvsk') 
+    x = np.linspace(norm.ppf(0.01), norm.ppf(0.99), 100) 
+     
+
+Bernoulli Distribution: It is the simplest type of probability distribution. It is a particular case 
+of Binomial distribution, where n=1. It means a binomial distribution takes 'n' number of trials, 
+where n > 1 whereas, the Bernoulli distribution takes only a single trial.   

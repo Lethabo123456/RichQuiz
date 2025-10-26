@@ -1,0 +1,24 @@
+tains a list of all the field names and values sent by a form using the get method   
+$_POST    
+   
+Contains a list of all the field names and values sent by a form using the post method   
+$_REQUEST    
+   
+Contains the values of both the $_GET and $_POST arrays combined, along with the values of 
+the $_COOKIE superglobal array   
+   
+Each of these three superglobal arrays contains the field names from the sent form as array keys, 
+with the field values themselves as array values. For example, say you created a form using the get 
+method, and that form contained the following control:   
+   
+< input type=”text ” name=”emailAddress” value=”” / >   
+   
+You could then access the value that the user entered into that form field using either the $_GET or 
+the   
+$_REQUEST superglobal:   
+   
+$email = $_GET[“emailAddress”];   
+$email = $_REQUEST[“emailAddress”];   
+   
+We try out a simple form handler example in which we create a simple user registration form, then 
+write a form handler s

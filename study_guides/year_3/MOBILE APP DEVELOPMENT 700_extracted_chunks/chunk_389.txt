@@ -1,0 +1,22 @@
+Do this before the closing curly brace of the class. Add the code in Listing 7.5 at the beginning of the 
+new method. Next, move all the code entered into the button-click event (Listing 7.3) into the new 
+method. 
+ 
+This new code is essentially one long if statement that checks if the device 
+is running SDK 23 or higher and location permission has not been 
+explicitly granted. If both conditions are true, the code is exited and the 
+app will not be able to access the devices location. Note that after you 
+add this code, the locationManager.removeUpdates line is no longer underlined in red. The next step 
+is to put code in the initGetLocationButton() method to ask for permission to access the device’s 
+location. Enter the code in Listing 7.6 in the now-empty onClick method. 
+When the user presses the button, the app starts location updates if the device is running an SDK less 
+than 23 or determines if permission has been granted. If permission has not been granted, it asks for 
+permission. The function of this code is explained as follows:
+ 
+▪ Line 2—The operating system SDK is checked. If it is less than 23, the app 
+starts the code to find the device’s location. 
+▪ Lines 3–5—If the device is running an operating system greater than 22, this 
+line checks if permission has been previously granted. If it has, the app starts the 
+code to find the device’s location. 
+ 
+request is made that just asks for the desired permission.

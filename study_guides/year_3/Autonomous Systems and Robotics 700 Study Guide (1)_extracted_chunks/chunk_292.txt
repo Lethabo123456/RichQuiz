@@ -1,0 +1,45 @@
+5.5  Distributed Task Allocation and Scheduling 
+
+Distributed task allocation and scheduling represent fundamental challenges in multi-agent 
+robotics that involve efficiently assigning tasks to agents and coordinating their execution to 
+optimize system-wide performance metrics while respecting individual agent capabilities, 
+resource constraints, and temporal dependencies. These problems become increasingly complex 
+as the number of agents and tasks grows, requiring sophisticated algorithms that can balance 
+computational efficiency with solution quality while maintaining robustness to dynamic changes 
+in system conditions. 
+
+The distributed nature of these algorithms is essential for scalability and fault tolerance, as 
+centralized approaches quickly become computationally intractable and create single points of 
+failure that can compromise entire missions. Distributed solutions enable agents to make 
+allocation decisions based on local information and limited communication, creating systems that 
+can adapt rapidly to changing conditions and continue operating effectively even when individual 
+agents fail or communication channels are disrupted.
+
+5.5.1 Market-Based Task Allocation 
+Market-based approaches to task allocation treat tasks as commodities in an economic 
+marketplace where agents act as both buyers and sellers, using auction mechanisms and 
+competitive bidding to achieve efficient resource allocation through market forces rather than 
+centralized optimization. These approaches leverage well-established economic principles to 
+create distributed allocation mechanisms that can handle complex multi-agent scenarios with 
+competing objectives and resource constraints. 
+
+The fundamental principle underlying market-based allocation is that agents with the greatest 
+comparative advantage for particular tasks will naturally emerge as the winners in competitive 
+bidding processes, leading to efficient overall system performance without requiring global 
+optimisation or complete information sharing. This approach is particularly attractive for robotic 
+applications because it mirrors the distributed decision-making processes that humans use in 
+complex coordination scenarios. 
+
+Auction protocols form the core mechanism of market-based allocation systems, providing 
+structured processes for task announcement, bid submission, winner determination, and contract 
+execution. Single-item auctions handle the allocation of individual tasks to agents, while 
+combinatorial auctions enable agents to bid on packages of related tasks that may be more 
+efficiently executed together. Multi-round auctions allow for iterative bidding processes that can 
+converge to high-quality solutions even when agents have incomplete initial information about 
+task requirements or system conditions. 
+
+Contract net protocols represent a classic implementation of market-based allocation where task 
+managers announce tasks with specifications and requirements, potential contractors submit bids 
+based on their capabilities and availability, and contracts are awarded to the most suitable 
+bidders. This approach naturally handles dynamic task environments where new tasks appear 
+continuously and agent capabilities or availability change over time.

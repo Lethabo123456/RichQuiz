@@ -1,0 +1,18 @@
+arbitrary but, trust me, there is a reason for all of them. 
+However, again for simplicity, I will use prebuilt Python modules, as shown, to calculate our 
+confidence interval and then, demonstrate its value: 
+ 
+sample_size = 100  # the size of the sample we wish to take 
+sample = np.random.choice(a=breaks, size=sample_size)  # a sample of sample_size taken 
+from the 9,000 breaks population from before 
+sample_mean = sample.mean()  # the sample mean of the break lengths sample 
+sample_stdev = sample.std()  # sample standard deviation 
+sigma = sample_stdev / math.sqrt(sample_size)  # population standard deviation estimate 
+stats.t.interval(alpha=0.95, df=sample_size-1, loc=sample_mean, scale=sigma)  # (36.36, 
+45.44) 
+ 
+To reiterate, this range of values (from 36.36 to 45.44) represents a confidence interval for 
+the average break time with a 95% confidence. We already know that our population 
+parameter is 39.99 and note that the interval includes the population mean of 39.99. 
+
+P a g

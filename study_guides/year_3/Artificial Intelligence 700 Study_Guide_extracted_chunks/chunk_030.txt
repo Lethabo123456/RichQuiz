@@ -1,0 +1,29 @@
+
+Agent Type    Performance Measure  Environments   Actuators     Sensors
+----------------------------------------------------------------------------------
+Taxi driver   Safe: fast, legal,   Roads, other   Steering,     Cameras,
+              comfortable          traffic,       accelerator,  sonar,  
+              trip,                pedestrians,   brake,        Speedometer,
+              maximize             customers      Signal,horn,  GPS, 
+              profits                             display       Odometer,
+                                                                engine 
+                                                                sensors,
+                                                                keyboards, 
+                                                                accelerometer 
+----------------------------------------------------------------------------------
+Figure 1.2 PEAS description of the task environment for an automated 
+taxi. 
+----------------------------------------------------------------------------------
+ 
+ 
+Figure 1.3 Examples of Agent types and their PEAS descriptions. 
+ 
+Properties of task environments 
+
+• Fully observable vs. partially observable 
+• Deterministic vs. stochastic 
+• Episodic vs. sequential 
+• Static vs. dynamic 
+• Discrete vs. continuous 
+• Single agent vs. multi-agent 
+ 

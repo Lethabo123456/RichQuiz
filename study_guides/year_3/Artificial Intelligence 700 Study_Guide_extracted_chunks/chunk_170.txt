@@ -1,0 +1,27 @@
+Example Database of Facts and Rules 
+Facts 
+1. male(Adam) 
+2. male(Barney) 
+3. male(Bob) 
+4. male(Carl) 
+5. female(Ann) 
+6. female(Beth) 
+7. female(Barb) 
+8. female(Carol) 
+9. parent(Adam,Barney) 
+10. parent(Ann,Barney) 
+11. parent(Adam,Beth) 
+12. parent(Ann,Beth) 
+13. parent(Adam,Bob) 
+14. parent(Ann,Bob) 
+15. parent(Adam,Barb) 
+16. parent(Barney,Carl) 
+17. parent(Carol,Carl) 
+ 
+Rules 
+1. parent(y,x) AND male(x) -> son(x,y) 
+2. parent(y,x) AND female(x) -> daughter(x,y) 
+3. male(x) AND (E z)(parent(z,x) AND parent(z,y)) -> brother(x,y) 
+4. female(x) AND (E z)(parent(z,x) AND parent(z,y)) -> sister(x,y) 
+5. male(x) AND (E y)(parent(x,y) AND parent(y,z)) -> grandfather(x,z) 
+6. female(x) AND (E y)(parent(x,y) AND parent(y,z)) -> grandmother(x,z)

@@ -1,0 +1,15 @@
+n in Figure 5-3(a).  
+  
+  
+FIGURE 5-3 Stack operations  
+  
+We then push box B onto the stack. After this push operation, the stack is as shown in Figure 5-3(b). Next, 
+we push box C onto the stack. After this push operation, the stack is as shown in Figure 5-3(c).  
+Next, we look at the top element of the stack. After this operation, the stack is unchanged and shown in 
+Figure 5-3(d). We then push box D onto the stack. After this push operation, the stack is as shown in Figure 
+5-3(e). Next, we pop the stack. After the pop operation, the stack is as shown in Figure 5-3(f).  
+  
+An element can be removed from the stack only if there is something in the stack, and an element can be 
+added to the stack only if there is room. The two operations that immediately follow from push, top, and 
+pop are isFullStack (checks whether the stack is full) and isEmptyStack (checks whether the stack is empty). 
+Because a stack keeps changing as we add and remove elements, the stack must be empty before

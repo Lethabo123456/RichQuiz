@@ -1,0 +1,24 @@
+—The ability to combine data and operations in a single unit  
+Inheritance—The ability to create new (data) types from existing (data) types  
+Polymorphism—The ability to use the same expression to denote different operations  
+  
+In C++, encapsulation is accomplished via the use of data types called classes. How classes are 
+implemented in C++ is described later in this chapter. Chapter 2 discusses inheritance and polymorphism.  
+  
+  
+  
+  
+
+16  
+  
+In object-oriented design, you decide what classes you need and their relevant data members and 
+member functions. You then describe how classes interact with each other.  
+  
+ 
+1.2.3  Implementation  
+  
+In the implementation phase, you write and compile programming code to implement the classes and 
+functions that were discovered in the design phase.   
+  
+This book uses the OOD technique (in conjunction with structured programming) to solve a particular 
+problem. It contains many case studies—called Programming Examples—to solve real-w

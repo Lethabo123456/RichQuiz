@@ -1,0 +1,21 @@
+nts of a file without needing to open it   
+• 
+fseek() — Moves the file pointer to a specific location within an open file   
+• 
+ftell() — Returns the position of the file pointer   
+• 
+rewind() — Moves the file pointer to the start of the file   
+As you can see, PHP gives you many different ways to read and write to files, so you can always find 
+a function to suit your needs.   
+   
+3.9 Reading And Writing Strings Of Characters   
+The fread() function can be used to read a string of characters from a file. It takes two arguments: a 
+file handle and the number of characters to read. The function reads the specified number of 
+characters (or less if the end of the file is reached) and returns them as a string. For example:   
+   
+$handle = fopen( “data.txt”, “r” );   
+$data = fread( $handle, 10 );   
+   
+This code reads the first ten characters from data.txt and assigns them to $data as a string.    
+   
+When working with binary files a character is always one byte long, so ten charact

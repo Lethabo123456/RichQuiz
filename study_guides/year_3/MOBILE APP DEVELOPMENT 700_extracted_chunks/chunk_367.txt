@@ -1,0 +1,42 @@
+5.5 Maps and Location in Android 
+Smartphones and tablets are mobile computing devices. Both parts of that description (mobile and 
+computing) are why location and maps are important components of many apps. Useful computation 
+can be performed based on the device location. That location can change much faster than the 
+location of a traditional computing device. This enables the app to very quickly change its behavior as 
+it moves to different locations. Knowing how to capture and display location information can help you 
+build powerful apps. This chapter describes how to take advantage of location information within your 
+app. Location sensors can be accessed and used directly through the Android SDK. However, maps 
+require more work. This chapter also teaches you how to set up your Android Studio environment to 
+work with maps. 
+
+Location Sensors, Maps, and Fragments 
+This section begins with an overview of sensors, maps, and fragments. Sensors are hardware built into 
+the mobile device to allow an app to capture environmental data. Maps are used to display data that 
+can be enhanced by a visual representation of its location. Finally, fragments are a newer approach to 
+coding Android Activities. Fragments are a part of an Activity that represents a distinct behavior or 
+task. 
+
+Location Sensors 
+Android devices typically have two location sensors. One sensor (network sensor) is based on the cell 
+towers and/or the Wi-Fi access points to which your device is connected. This sensor provides the 
+approximate location of the device. The other sensor is based on a built-in global position system (GPS) 
+receiver. This sensor can provide position information accurate to within a few meters, depending on 
+conditions. However, the GPS sensor is much slower in acquiring its position information than the 
+network sensor and doesn’t work well indoors. In addition, not all devices have a GPS sensor. 
+Location information is accessed within an app through the use of the LocationManager object. A 
+LocationManager is not directly instantiated. It exists as an Android system service and is accessed 
+through the method getSystemService. The LocationManager object can request updates from either 
+or both sensors. To get the updates, an app has to instantiate a LocationListener, which implements 
+
+the method onLocationChanged. Whenever the sensor reports a location change, that change is 
+captured by the LocationListener, which is passed to a Location object, and the onLocationChanged 
+method is executed. A Location object contains information on the new location, including GPS 
+coordinates and altitude, which sensor provided the location, a measure of the accuracy of the 
+coordinate estimate (usually in meters), as well as other information. The onLocationChanged method 
+uses this object to perform operations based on the code the developer provided in the method. To 
+begin receiving location information from the sensors, the LocationManager requests the updates 
+from a specific provider and tells it what LocationListener to use to handle the updates. When the 
+LocationManager requests updates from the GPS, the GPS is activated. However, the GPS must also 
+be enabled by the user to be activated. If it has not been enabled, the code cannot turn it on. As a 
+developer, you should test whether the GPS is enabled and inform the user if it is not.
+ 

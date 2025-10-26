@@ -1,0 +1,28 @@
+Let us illustrate this algorithm on the list shown in Figure 8-12. We consider several cases.  
+  
+  
+FIGURE 8-12 Linked list and pointers lastInOrder and firstOutOfOrder  
+  
+  
+Case 1: Because firstOutOfOrder->info is less than first->info, the node firstOutOfOrder is to be moved 
+before first. So we adjust the necessary links, and Figure 8-13 shows the resulting list.  
+  
+  
+FIGURE 8-13 Linked list after moving the node with info 8 to the beginning  
+  
+Case 2: Consider the list shown in Figure 8-14.  
+  
+  
+
+292  
+  
+FIGURE 8-14 Linked list and pointers lastInOrder and firstOutOfOrder  
+  
+Because firstOutOfOrder->info is greater than first->info, we search the list to find the place where 
+firstOutOfOrder is to be moved. As explained previously, we use the pointers trailCurrent and current to 
+traverse the list. For this list, these pointers end up at the nodes as shown in Figure 8-15.  
+  
+  
+FIGURE 8-15 Linked list and pointers trailCurrent and current  
+  
+Because current i

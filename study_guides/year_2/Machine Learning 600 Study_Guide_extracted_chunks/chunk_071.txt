@@ -1,0 +1,14 @@
+ere might be subtle differences in the 
+way things are done. 
+ 
+4.2 Entropy Computation 
+Entropy is a measure of uncertainty and is measured in bits and comes as a number between 
+zero and 1 (entropy bits are not the same bits as used in computing terminology). Basically, 
+you are looking for the unpredictability in a random variable. There are two entropy types to 
+work out; the first is entropy on a single attribute, and the second is entropy for two 
+attributes. With this example, we will use the Had Credit Account as our target attribute for 
+our working example. By the end of the exercise, we will know the next node to use in the 
+decision tree. The single attribute for the Has Credit Account attribute has two outcomes (Yes 
+or No). (See Table 4.1.) 
+                                                           
+                                                                                        Table 4.1: Original table

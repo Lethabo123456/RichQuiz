@@ -1,0 +1,53 @@
+IndexOf(Object, Int32, Int32)                  Searches for the specified Object and returns the zero-
+                                               based index of the first occurrence within the range of 
+                                               elements in the ArrayList that starts at the specified index 
+                                               and contains the specified number of elements. 
+Insert(Int32, Object)                          Inserts an element into the ArrayList at the specified 
+                                               index. 
+InsertRange(Int32, ICollection)                Inserts the elements of a collection into the ArrayList at 
+                                               the specified index. 
+LastIndexOf(Object)                            Searches for the specified Object and returns the zero-
+                                               based index of the last occurrence within the entire 
+                                               ArrayList. 
+LastIndexOf(Object, Int32)                     Searches for the specified Object and returns the zero-
+                                               based index of the last occurrence within the range of 
+                                               elements in the ArrayList that extends from the first 
+                                               element to the specified index. 
+LastIndexOf(Object, Int32, Int32)              Searches for the specified Object and returns the zero-
+                                               based index of the last occurrence within the range of 
+                                               elements in the ArrayList that contains the specified 
+                                               number of elements and ends at the specified index. 
+MemberwiseClone()                              Creates a shallow copy of the current Object. 
+ReadOnly(ArrayList)                            Returns a read-only ArrayList wrapper. 
+ReadOnly(IList)                                Returns a read-only IList wrapper. 
+Remove(Object)                                 Removes the first occurrence of a specific object from the 
+                                               ArrayList. 
+RemoveAt(Int32)                                Removes the element at the specified index of the 
+                                               ArrayList. 
+RemoveRange(Int32, Int32)                      Removes a range of elements from the ArrayList. 
+Repeat(Object, Int32)                          Returns an ArrayList whose elements are copies of the 
+                                               specified value. 
+Reverse()                                      Reverses the order of the elements in the entire ArrayList. 
+Reverse(Int32, Int32)                          Reverses the order of the elements in the specified range. 
+SetRange(Int32, ICollection)                   Copies the elements of a collection over a range of 
+                                               elements in the ArrayList. 
+Sort()                                         Sorts the elements in the entire ArrayList. 
+Sort(IComparer)                                Sorts the elements in the entire ArrayList using the 
+                                               specified comparer. 
+Sort(Int32, Int32, IComparer)                  Sorts the elements in a range of elements in ArrayList 
+                                               using the specified comparer. 
+Synchronized(ArrayList)                        Returns an ArrayList wrapper that is synchronized (thread 
+                                               safe). 
+Synchronized(IList)                            Returns an IList wrapper that is synchronized (thread 
+                                               safe). 
+ToArray()                                      Copies the elements of the ArrayList to a new Object 
+                                               array. 
+ToArray(Type)                                  Copies the elements of the ArrayList to a new array of the 
+                                               specified element type. 
+ToString()                                     Returns a string that represents the current object. 
+TrimToSize()                                   Sets the capacity to the actual number of elements in the 
+                                               ArrayList. 
+ 
+When you create an ArrayList , you do not define how many objects it will contain. Add to the 
+ArrayList using the Add ( ) method, and the list takes care of its own internal bookkeeping, as 
+illustrated in Example 5-12. 

@@ -1,0 +1,44 @@
+The setContentView method accepts a single View instance; as a result, you use layouts to add 
+multiple controls to your Activity. 
+ 
+If you’re using Fragments to encapsulate portions of your Activity’s UI, the View inflated within 
+your Activity’s onCreate handler will be a layout that describes the relative position of each of your 
+Fragments (or their containers). The UI used for each Fragment is defined in its own layout and inflated 
+within the Fragment itself, as described later in this chapter. 
+ 
+Note that once a Fragment has been inflated into an Activity, the Views it contains become part of 
+that Activity’s View hierarchy. As a result, you can find any of its child Views from within the parent 
+Activity, using findViewById as described previously. 
+ 
+Introducing Layouts 
+ 
+Layout Managers (or simply layouts) are extensions of the ViewGroup class and are used to position 
+child Views within your UI. Layouts can be nested, letting you create arbitrarily complex UIs using 
+a combination of layouts. 
+ 
+The Android SDK includes several layout classes. You can use these, modify them, or create your own 
+to construct the UI for your Views, Fragments, and Activities. It’s up to you to select and use the right 
+combination of layouts to make your UI aesthetically pleasing, easy to use, and efficient to display. The 
+following list includes some of the most commonly used layout classes available in the Android SDK: 
+ 
+• FrameLayout — The simplest of the Layout Managers, the Frame Layout pins each child view 
+within its frame. The default position is the top-left corner, though you can use the gravity 
+attribute to alter its location. Adding multiple children stacks each new child on top of the one 
+before, with each new View potentially obscuring the previous ones. 
+• LinearLayout — A Linear Layout aligns each child View in either a vertical or a horizontal line. 
+A vertical layout has a column of Views, whereas a horizontal layout has a row of Views. The 
+Linear Layout supports a weight attribute for each child View that can control the relative size 
+of each child View within the available space. 
+• RelativeLayout — One of the most flexible of the native layouts, the Relative Layout  
+lets you defi ne the positions of each child View relative to the others and to the screen 
+boundaries. 
+• GridLayout — Introduced in Android 4.0 (API level 14), the Grid Layout uses a rectangular grid 
+of infinitely thin lines to lay out Views in a series of rows and columns. The Grid Layout 
+is incredibly flexible and can be used to greatly simplify layouts and reduce or eliminate the 
+complex nesting often required to construct UIs using the layouts described above. It’s good 
+practice to use the Layout Editor to construct your Grid Layouts rather than relying on tweaking 
+the XML manually. 
+ 
+Each of these layouts is designed to scale to suit the host device’s screen size by avoiding the use of 
+absolute positions or predetermined pixel values. This makes them particularly useful when designing 
+applications that work well on a diverse set of Android hardware. 

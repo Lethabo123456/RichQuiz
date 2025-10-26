@@ -1,0 +1,18 @@
+and you should see a page similar to Figure 5 appear. (If you ’ ve installed PHP 5.3 you 
+will, of course, see references to version 5.3 in your page, rather than version 5.2.) This is the result 
+of running the phpinfo() function, a built-in PHP function that displays information about the version 
+of PHP that ’ s installed. This means that you have successfully installed both Apache and PHP. 
+Congratulations!  
+  
+
+93  
+ 
+Figure 5  
+  
+Setting Your Time zone  
+Before leaving the topic of installation and testing, there is one more thing you need to do, and that 
+is configure your PHP installation to use the correct time zone. For older versions of PHP, setting the 
+time zone was less important; if you did not specify the time zone, the PHP engine would attempt to 
+work it out by querying the server it was running on. However, this process was somewhat unreliable 
+and is no longer recommended. Therefore, as of PHP 5.3, the engine complains with a warning 
+message if you try to use any

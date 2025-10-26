@@ -1,0 +1,21 @@
+A table that is not in 3NF may be split into new tables until all the tables meet the 3NF 
+requirements.  
+ 
+ 
+Normalization is an important part—but only a part—of the design process. As entities and 
+attributes are defined during the ER modelling process, subject each entity (set) to 
+normalization checks and form new entities (sets) as required.  
+ 
+ 
+A table in 3NF might contain multivalued dependencies that produce either numerous null 
+values or redundant data. Therefore, it might be necessary to convert a 3NF table to the 
+fourth normal form (4NF) by splitting the table to remove the multivalued dependencies. 
+Thus, a table is in 4NF when it is in 3NF and contains no multivalued dependencies.  
+ 
+ 
+Tables are sometimes de-normalized to yield less I/O in order to increase processing speed. 
+In the design of production databases, use de-normalization sparingly and cautiously.  
+ 
+ 
+The data-modelling checklist provides a way for the designer to check that the ERD meets 
+a se

@@ -1,0 +1,21 @@
+Figure 4.8 
+
+In figure 4 . 8 , as a disk rotates, Record 1 may be near the read/write head, ready to be 
+scanned, as seen in (a), in the farthest position, just past the head, as in (c), or somewhere in 
+between, which is the average case, as in (b). 
+How long will it take to access a record? If one complete revolution takes 16.8 ms, then the average 
+rotational delay, as shown in Figure 4.8(b), is 8.4 ms. The data-transfer time varies from device 
+to device but let us say the value is 0.00094 ms per byte, the size of the record dictates this value. 
+These are traditional values. The chapter exercises offer an opportunity to explore current rates. 
+For example, Table 4.1 shows the resulting access times if it takes 0.094 ms (almost 0.1 ms) to 
+transfer a record with 100 bytes. 
+ 
+Table 4.1 
+
+Data recorded on fixed head drives may or may not be blocked at the discretion of the application 
+programmer. Blocking is not used to save space because there are no IRGs between records. 
+Instead, blocking is used to save time. 
+ 
+To illustrate the advantages of blocking the records, let us use the same values shown in Table 
+4.1 for a record containing 100 bytes and blocks containing 10 records. If we were to read 10 
+records individually, we would multiply the access time for a single record by 10: 

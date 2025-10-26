@@ -1,0 +1,35 @@
+a) The init() Method  
+When a servlet is first loaded, its init() method is invoked. This allows the servlet to per form any setup 
+processing such as opening files or establishing connections to their servers. If a servlet has been 
+permanently installed in a server, it loads when the server starts to run. Otherwise, the server activates a 
+servlet when it receives the first client request for the services provided by the servlet. The init() method 
+is guaranteed to finish before any other calls are made to the servlet--such as a call to the service() 
+method. Note that init() will only be called once; it will not be called again unless the servlet has been 
+unloaded and then reloaded by the server.  The init() method takes one argument, a reference to a 
+ServletConfig object which provides initialization arguments for the servlet. This object has a method 
+getServletContext() that returns a ServletContext object containing information about the servlet's 
+environment (see the discussion on Servlet Initialization Context below).   
+  
+b)  The service() Method  
+The service() method is the heart of the servlet. Each request message from a client results in a single call 
+to the servlet's service() method. The service() method reads the request and produces the response 
+message from its two parameters:   
+A ServletRequest object with data from the client. The data consists of name/value pairs of parameters 
+and an InputStream. Several methods are provided that return the client's parameter information. The 
+InputStream from the client can be obtained via the getInputStream() method. This method returns a 
+ServletInputStream, which can be used to get additional data from the client. If you are interested in 
+processing character-level data instead of byte-level data, you can get a BufferedReader instead with 
+getReader().   
+A ServletResponse represents the servlet's reply back to the client. When preparing a response, the 
+method setContentType() is called first to set the MIME type of the reply. Next, the method 
+getOutputStream() or getWriter() can be used to obtain a ServletOutputStream or PrintWriter, 
+respectively, to send data back to the client.   
+As you can see, there are two ways for a client to send information to a servlet. The first is to send 
+parameter values and the second is to send information via the InputStream (or Reader). Parameter values 
+can be embedded into a URL. How this is done is discussed below. How the parameter values are read by 
+the servlet is discussed later.   
+The service() method's job is conceptually simple--it creates a response for each client request sent to it 
+from the host server. However, it is important to realize that there can be multiple service requests being 
+processed at once. If your service method requires any outside resources, such as files, databases, or some 
+external data, you must ensure that resource access is thread-safe. Making your servlets thread-safe is 
+discussed in a later section of this course. 

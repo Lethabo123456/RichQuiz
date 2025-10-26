@@ -1,0 +1,36 @@
+to our graph. 
+• 
+You may also notice that when you move the cursor across the graph, information is displayed about points on 
+the graph. However, if more than one point occurs on the same vertical, you’ll see that only one of the points 
+has data displayed! Fortunately, this can be fixed by adding another parameter inside the layout. 
+ 
+Make a duplicate of scatter1.py and name it scatter2.py. Add the following code (shown in bold): 
+ 
+import plotly.offline as pyo 
+import plotly.graph_objs as go 
+import numpy as np 
+np.random.seed(42) 
+
+ 
+ 
+ 
+ 
+random_x = np.random.randint(1,101,100) 
+random_y = np.random.randint(1,101,100) 
+data = [go.Scatter( 
+ 
+x = random_x, 
+ 
+y = random_y, mode = 
+'markers', 
+)] 
+layout = go.Layout( 
+ 
+title = 'Random Data Scatterplot', # Graph title 
+ 
+xaxis = dict(title = 'Some random x-values'), # x-axis label yaxis = dict(title = 'Some 
+random y-values'), # y-axis label 
+hovermode ='closest' # handles multiple points landing on the same vertical 
+) 
+ 
+fig = g

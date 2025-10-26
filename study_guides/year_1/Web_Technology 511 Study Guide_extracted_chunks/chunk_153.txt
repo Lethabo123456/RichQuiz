@@ -1,0 +1,20 @@
+9.5 CHECK BOXES 
+You can use check boxes if you want users to select more than one option from a 
+given set of options. This is similar to creating radio buttons, but users can select more 
+than one option. 
+The following table lists the attributes that you can use with the INPUT tag when the 
+value assigned to the TYPE attribute is “checkbox.” 
+ 
+Attribute    Description 
+-----------------------------------------------------------------------------
+NAME         Specifies the name of the group of the check box. 
+-----------------------------------------------------------------------------
+VALUE        Specifies the value that is sent to the database when the check 
+             box is checked. 
+-----------------------------------------------------------------------------
+CHECKED      Indicates that the check box is checked by default. 
+-----------------------------------------------------------------------------
+ 
+Exhibit 0-18: The check boxes on the Order page 
+ 
+Here’s

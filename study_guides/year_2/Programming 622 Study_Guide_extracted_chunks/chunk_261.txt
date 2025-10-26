@@ -1,0 +1,35 @@
+ns the last element of 
+the list. If the list is empty, both functions terminate the program. Their definitions are as follows:  
+  
+template <class Type>  
+Type doublyLinkedList<Type>::front() const  
+{ assert(first != NULL);  
+
+130  
+  
+return first->info;  
+}  
+template <class Type>  
+Type doublyLinkedList<Type>::back() const  
+{ assert(last != NULL);  
+return last->info;  
+}  
+  
+3.5.10 Insert a Node  
+  
+Because we are inserting an item in a doubly linked list, the insertion of a node in the list requires the 
+adjustment of two pointers in certain nodes. As before, we find the place where the new item is supposed 
+to be inserted, create the node, store the new item, and adjust the link fields of the new node and other 
+particular nodes in the list.  
+  
+There are four cases:  
+Case 1:   
+Insertion in an empty list  
+Case 2:   
+Insertion at the beginning of a nonempty list 
+Case 3:   
+Insertion at the end of a nonempty list  
+Case 4:   
+Insertion somewhere in a nonempty list  
+  
+B

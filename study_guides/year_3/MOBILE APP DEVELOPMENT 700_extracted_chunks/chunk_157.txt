@@ -1,0 +1,27 @@
+Chapter 3: Navigation, Interface Design and Persistent Data  
+ 
+3.1 Introduction 
+App development for mobile devices is both similar to and different from development for other 
+platforms. Navigation within an app has these similarities and differences (as discussed in previous 
+Chapter, “App Design Issues and Considerations”). Different functionality is provided on different 
+screens (windows in a traditional environment), and the app designer has to both provide the capacity 
+to switch between those screens and make it easy and relatively obvious for users to do so when they 
+want or need to access the functionality provided by those screens. Likewise, screen design is both 
+similar to and different from the traditional user interface design. In a traditional environment, a 
+window design is made up of a set of visible objects that give the user the ability to accomplish some 
+component of the overall task. This is the same in the mobile environment. However, the objects 
+available for design differ in both form and function, the amount of screen real estate available is 
+much more limited, and often the amount of real estate available changes among devices that can use 
+your app. 
+
+This chapter introduces you to many of the principles and components of interface design 
+and navigation in the Android platform. To fully explore these concepts, the chapter guides you 
+through the development of MyContactList navigation and the development of the Contact interface. 
+The capability to have data that the app uses or relies on to continue to be available regardless of 
+changes to the app’s state as it moves through the app life cycle is vital to the user experience with 
+the app—and for the app itself to be a useful tool. For this to occur, the data needs to persist through 
+these life-cycle changes. Android provides several ways in which the developer can make data persist. 
+This chapter introduces you to three of these data persistence approaches. A significant amount of 
+time will be spent on understanding and using the SQLite database system incorporated with Android, 
+but the chapter also discusses storing data in files and demonstrates how to store individual pieces of 
+data in an object that persists across an app’s life cycle.

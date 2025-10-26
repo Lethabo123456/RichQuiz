@@ -1,0 +1,19 @@
+the eligible options from which the designer will choose when selecting the primary key. 
+The primary key is the candidate key chosen to be the primary means by which the rows of the table 
+are uniquely identified. Entity integrity is the condition in which each row (entity instance) in the 
+table has its own unique identity. To ensure entity integrity, the primary key has two requirements: 
+(1) all of the values in the primary key must be unique and (2) no key attribute in the primary key 
+can contain a null. 
+A null is the absence of any data value, and it is never allowed in any part of the primary key. As a 
+rule, nulls should be avoided as much as reasonably possible. In fact, an abundance of nulls is often 
+a sign of a poor design. Also, nulls should be avoided in the database because their meaning is not 
+always identifiable. For example, a null could represent any of the following:  
+ 
+An unknown attribute value.  
+ 
+A known, but missing, attribute value  
+
+ 
+43 
+ 
+A “not ap

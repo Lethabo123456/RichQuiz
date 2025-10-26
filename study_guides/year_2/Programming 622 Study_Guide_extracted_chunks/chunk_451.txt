@@ -1,0 +1,37 @@
+d addQueue(const Type& queueElement);  
+//Function to add queueElement to the queue.  
+//Precondition: The queue exists and is not full.  
+//Postcondition: The queue is changed and queueElement is // 
+added to the queue.  
+  
+void deleteQueue();  
+
+229  
+  
+//Function to remove the first element of the queue.  
+//Precondition: The queue exists and is not empty.  
+//Postcondition: The queue is changed and the first element // 
+is removed from the queue.  
+  
+linkedQueueType(); //Default 
+constructor  
+  
+linkedQueueType(const linkedQueueType<Type>& otherQueue); //Copy 
+constructor  
+  
+~linkedQueueType();  
+//Destructor  
+  
+private:  
+nodeType<Type> *queueFront;   
+//pointer to the front of the queue nodeType<Type> 
+*queueRear;   //pointer to the rear of the queue  
+};  
+  
+The UML diagram of the class linkedQueueType is left as an exercise for you. (See Exercise 16 at the end 
+of this chapter.)  
+  
+Next, we write the definitions of the functions of the class linkedQueueType.  
+  
+ 
+6

@@ -1,0 +1,23 @@
+So you get more precision with the treble equal sign than you do with the double. Try 
+not to worry too much about it, though: we will use the double equal sign unless we 
+really need the treble one. 
+  
+3.6 THE TERNARY OPERATORS 
+ 
+If you want a quick IF statement then you can use something called a ternary 
+expression. This uses a question mark ( ? ) and a colon ( : ). The syntax is this: 
+var result = condition_to_test ? "TRUE": "FALSE"; 
+ 
+Here is a coding example: 
+var over_eighteen = true; 
+var result = over_eighteen ? "Truth": "False"; 
+document.write(result); 
+ 
+First we set a value for the variable over_eighteen. This condition is tested before the 
+question mark. If it is true, the text before the colon gets placed in the result variable. 
+If it's false the text after the colon will be placed in the variable. 
+ 
+3.7 JAVASCRIPT LOGICAL OPERATORS 
+ 
+Operators you will want to use with your IF Statements are the logical ones. The 
+logical operators give you more options for you

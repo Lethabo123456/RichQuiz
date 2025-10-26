@@ -1,0 +1,46 @@
+t pandas as pd 
+ 
+df = pd.read_csv('../data/mpg.csv') 
+ 
+data = [go.Histogram( 
+
+ 
+ 
+ 
+ 
+x=df['mpg'], 
+xbins=dict(start=8,end=50,size=1), 
+)] 
+ 
+layout = go.Layout( 
+ 
+title="Miles per Gallon Frequencies of<br>\ 1970's Era Vehicles" 
+) 
+fig = go.Figure(data=data, layout=layout) 
+ 
+pyo.plot(fig, filename='narrow_histogram.html') 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+● After comparing all three plots, it looks like plotly’s default settings were a good choice for this dataset! 
+Our next example shows how to overlay two histograms, assign an opacity value, and compare two sets of data 
+The data we’ll use comes from a Cardiac Arrhythmia Database at 
+https://archive.ics.uci.edu/ml/datasets/arrhythmia 
+We’ve stripped all but three columns and selected 420 records. The columns are ‘Age’, ‘Sex’ and ‘Height’. 
+For ‘Sex’, 0=male and 1=female, and height is measured in centimeters. 
+ 
+Create a file called hist4.py and add the following code: 
+ 
+ 
+
+ 
+ 
+ 
+ 
+import plotly.offline as pyo 
+import plotly.graph_objs as go 
+im

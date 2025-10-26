@@ -1,0 +1,221 @@
+/* =========================
+   data_manipulation.css
+   Data Manipulation & Visualization Themed Quiz
+   ========================= */
+
+/* =========================
+   Fonts & Imports
+   ========================= */
+   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+   body {
+       margin: 0;
+       padding: 0;
+       font-family: 'Raleway', sans-serif;
+       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+       color: #ffffff;
+       overflow-x: hidden;
+   }
+   
+   /* =========================
+      Animated Data Background
+      ========================= */
+   body::before {
+       content: '';
+       position: fixed;
+       top: 0; left: 0;
+       width: 100vw;
+       height: 100vh;
+       background: repeating-linear-gradient(
+           45deg,
+           rgba(255,255,255,0.05),
+           rgba(255,255,255,0.05) 2px,
+           transparent 2px,
+           transparent 20px
+       );
+       z-index: -1;
+       animation: moveBackground 30s linear infinite;
+   }
+   
+   @keyframes moveBackground {
+       0% { background-position: 0 0; }
+       100% { background-position: 200px 200px; }
+   }
+   
+   /* =========================
+      Container Card
+      ========================= */
+   .container {
+       max-width: 900px;
+       margin: 50px auto;
+       padding: 40px 50px;
+       background: rgba(20, 35, 55, 0.85);
+       border-radius: 25px;
+       box-shadow: 0 0 50px rgba(0, 255, 200, 0.5), inset 0 0 20px rgba(0, 255, 200, 0.2);
+       border-left: 6px solid #00ffc3;
+       border-right: 6px solid #00ffc3;
+       position: relative;
+   }
+   
+   /* =========================
+      Headings
+      ========================= */
+   h2 {
+       font-family: 'Roboto Mono', monospace;
+       font-size: 2.8rem;
+       text-align: center;
+       color: #00ffc3;
+       text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffb5;
+       margin-bottom: 2rem;
+   }
+   
+   /* =========================
+      Question Styling
+      ========================= */
+   .question-container p {
+       font-weight: 700;
+       font-size: 1.3rem;
+       margin-bottom: 10px;
+       color: #a0ffe7;
+   }
+   
+   #question-text {
+       background: rgba(0, 255, 200, 0.05);
+       padding: 15px 20px;
+       border-radius: 15px;
+       margin-bottom: 1.5rem;
+       font-weight: 500;
+       color: #e0fff7;
+   }
+   
+   /* =========================
+      Options
+      ========================= */
+   .options-list {
+       list-style: none;
+       padding: 0;
+       margin: 0 0 1.5rem 0;
+   }
+   
+   .option-label {
+       display: flex;
+       align-items: center;
+       padding: 15px 18px;
+       margin-bottom: 12px;
+       background: rgba(0, 255, 200, 0.1);
+       border-radius: 15px;
+       cursor: pointer;
+       transition: all 0.3s ease, box-shadow 0.4s ease-in-out;
+       font-weight: 500;
+       position: relative;
+       overflow: hidden;
+   }
+   
+   .option-label:hover {
+       background: rgba(0, 255, 200, 0.25);
+       transform: translateX(5px);
+       box-shadow: 0 0 25px rgba(0, 255, 200, 0.5), 0 0 50px rgba(0, 255, 200, 0.3) inset;
+   }
+   
+   /* Hide default radio */
+   .option-label input[type="radio"] {
+       display: none;
+   }
+   
+   /* Option Text Styling */
+   .option-text {
+       flex: 1;
+       color: #d0fff7;
+       transition: all 0.3s ease;
+       z-index: 1;
+   }
+   
+   /* Checked Option Glow & Pulse */
+   .option-label input[type="radio"]:checked + .option-text {
+       background: rgba(0, 255, 200, 0.25);
+       border-radius: 12px;
+       box-shadow: 0 0 30px rgba(0, 255, 200, 0.7), 0 0 60px rgba(0, 200, 255, 0.4) inset;
+       color: #00fff7;
+       font-weight: 700;
+       position: relative;
+   }
+   
+   .option-label input[type="radio"]:checked + .option-text::after {
+       content: '';
+       position: absolute;
+       top: -5px; left: -5px;
+       width: calc(100% + 10px);
+       height: calc(100% + 10px);
+       border-radius: 12px;
+       box-shadow: 0 0 40px rgba(0, 255, 200, 0.5), 0 0 60px rgba(0, 200, 255, 0.3) inset;
+       animation: pulseGlow 1.5s infinite alternate;
+       z-index: 0;
+   }
+   
+   @keyframes pulseGlow {
+       0% { box-shadow: 0 0 30px rgba(0, 255, 200, 0.4), 0 0 50px rgba(0, 200, 255, 0.2) inset; }
+       100% { box-shadow: 0 0 50px rgba(0, 255, 200, 0.7), 0 0 80px rgba(0, 200, 255, 0.4) inset; }
+   }
+   
+   /* =========================
+      Submit Button
+      ========================= */
+   .submit-btn {
+       display: block;
+       width: 100%;
+       padding: 12px 20px;
+       border: none;
+       border-radius: 15px;
+       background: linear-gradient(90deg, #00ffc3, #00f0ff);
+       color: #0f2027;
+       font-weight: 700;
+       font-size: 1.1rem;
+       cursor: pointer;
+       box-shadow: 0 5px 15px rgba(0, 255, 200, 0.5);
+       transition: all 0.3s ease;
+   }
+   
+   .submit-btn:hover {
+       background: linear-gradient(90deg, #00f0ff, #00ffc3);
+       transform: scale(1.05);
+       box-shadow: 0 0 30px rgba(0, 255, 200, 0.7);
+   }
+   
+   /* =========================
+      Back Link
+      ========================= */
+   .back-link {
+       display: inline-block;
+       margin-top: 25px;
+       color: #00ffc3;
+       font-weight: 600;
+       text-decoration: none;
+       transition: all 0.3s ease;
+   }
+   
+   .back-link:hover {
+       color: #00f0ff;
+       text-shadow: 0 0 10px #00ffc3;
+   }
+   
+   /* =========================
+      Code Blocks (Prism)
+      ========================= */
+   pre[class*="language-"] {
+       background: rgba(0, 255, 200, 0.05) !important;
+       color: #00f0ff !important;
+       padding: 15px !important;
+       border-radius: 12px !important;
+       overflow-x: auto !important;
+       box-shadow: inset 0 0 10px rgba(0, 255, 200, 0.3);
+   }
+   
+   /* =========================
+      Responsive Design
+      ========================= */
+   @media (max-width: 768px) {
+       .container { padding: 30px 20px; }
+       h2 { font-size: 2rem; }
+       .submit-btn { font-size: 1rem; }
+   }
+   

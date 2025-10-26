@@ -1,0 +1,62 @@
+if (first1 == NULL)   
+  
+ first2 
+= NULL;  
+ 
+//list is empty  
+
+305  
+  
+else if (first1->link == NULL)   first2 
+= NULL;  
+else  
+{ middle = first1; current = 
+first1->link;  
+ 
+//list has only one node  
+if (current != NULL)     
+ 
+//list has more than two nodes  
+current = current->link; while 
+(current != NULL)  
+{  
+middle = middle->link; current 
+= current->link; if (current != 
+NULL) current = current->link;  
+}   
+  
+  
+  
+ 
+//end while  
+first2 = middle->link;    
+ 
+//first2 points to the first 
+//node of the second sublist  
+middle->link = NULL;    
+ 
+//set the link of the last node  
+//of the first sublist to NULL  
+}   
+ 
+  
+  
+  
+ 
+//end else  
+}   
+ 
+ 
+  
+  
+  
+ 
+//end divideList  
+  
+Now that we know how to divide a list into two sublists of nearly equal size, next we focus on merging the 
+sorted sublists. Recall that, in mergesort, most of the sorting work is done in merging the sorted sublists.  
+  
+ 
+8.8.2  Merge  
+  
+Once the sublists are sorted, the next step in m

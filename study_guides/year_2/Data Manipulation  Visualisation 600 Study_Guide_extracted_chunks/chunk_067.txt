@@ -1,0 +1,40 @@
+Chapter 5: Data Visualisation with Seaborn 
+ 
+5.1 Introduction to Seaborn 
+Data Visualization is a technique allowing Data Scientists to transform raw data into graphs and charts. Such 
+illustrations facilitate the reading and understanding of data, which is why Data visualization is very useful. 
+There are many “no-code” tools to create data visualizations: Tableau, Power BI, and ChartBlocks… however, as an 
+alternative, it is also possible to opt for the Python language. 
+  
+This requires programming skills but offers complete freedom. Using Python, it is possible to manipulate, transform 
+and create data visualizations. Many data scientists are turning to this solution. 
+One of the reasons why Python is the best choice for is its vast ecosystem of libraries. There are many Python 
+libraries for manipulating data: numpy, pandas, matplotlib, and TensorFlow. 
+While Matplotlib is very popular for creating data visualizations, it can be complex to use. 
+Seaborn is a library for creating statistical graphs in Python. It is based on Matplotlib and integrates with Pandas’ 
+structures.This library is as powerful as Matplotlib but brings simplicity and new features. It allows us to quickly 
+explore and understand data. Entire data frames can be captured, and the internal functions for semantic mapping 
+and statistical aggregation allow the data to be converted into graphical visualizations. 
+ 
+All the complexity of Matplotlib is abstracted by Seaborn. However, it is possible to create graphs that meet all your 
+needs and requirements.The Seaborn library offers several major advantages. It provides different types of 
+visualizations. Its syntax is reduced and it offers very attractive default themes.It is an ideal tool for statistical 
+visualization. It is used to summarize data in visualizations and data distribution. 
+ 
+In addition, Seaborn is better integrated than Matplotlib for working with Pandas data frames. It is an extension 
+of Matplotlib to create beautiful graphs using Python through a more direct set of methods.Seaborn provides 
+different styles and default color palettes to create more attractive graphics. The different types of 
+visualizations allow you to highlight the relationships between data. These can be numerical variables or 
+groups, classes, or divisions. 
+  
+Relational graphs are used to understand the relationships between two variables, while categorical graphs 
+are used to visualize variables categorized by category. 
+  
+Distribution graphs are used to examine univariate or bivariate distributions. Regression graphs add a visual 
+guide to highlight patterns in a data set for exploratory analyses. 
+  
+Seaborn helps you explore and understand your data. Its plotting functions operate on dataframes and arrays 
+containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation 
+to produce informative plots. Its dataset-oriented, declarative API lets you focus on what the different 
+elements of your plots mean, rather than on the details of how to draw the graphs. 
+ 

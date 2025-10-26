@@ -1,0 +1,35 @@
+4.4 Governance and legal compliance 
+You have three primary concerns for securing and governing your data: 
+1. Proper collection and safeguarding of personal data. 
+2. Internal governance of your own data. 
+3. Complying with local laws and law enforcement in each jurisdiction in which you 
+operate. 
+This last one can be a huge headache for multinationals, particularly in Europe, where the 
+General Data Protection Regulation, effective May 2018, carries with it fines for violations of 
+up to 4 per cent of global turnover or 20 million euros (whichever is larger). The EU will hold 
+accountable even companies headquartered outside of Europe if they collect or process data 
+of sufficient numbers of EU residents. 
+Regardless of legal risk, you risk reputational damage if society perceives you as handling 
+personal data inappropriately. 
+
+Personal data 
+When we talk about personal data, we often use the term personally identifiable information 
+(PII), which, in broad terms, is data that is unique to an individual. A passport or driver’s 
+license number is PII, but a person’s age, ethnicity or medical condition is not. There is no 
+clear definition of PII. The IP address of the browser used to visit a website is considered PII 
+in some but not all legal jurisdictions. 
+There is increased awareness that identities can be determined from non-PII data using data 
+science techniques, and hence we speak of ‘quasi-identifiers’, which are not PII but can be 
+made to function like PII. You’ll need to safeguard these as well, as we’ll see in the Netflix 
+example below. 
+
+Identify all PII and quasi-identifiers that you process and store. Establish internal policies for 
+monitoring and controlling access to them. Your control over this data will facilitate 
+compliance with current and future government regulations, as well as some third-party 
+services which will refuse to process PII. 
+PII becomes sensitive when it is linked to private information. For example, a database with 
+the names and addresses of town residents is full of PII but is usually public data. A database 
+of medical conditions (not PII) must be protected when the database can be linked to PII. 
+Jurisdictions differ in their laws governing what personal data must be protected (health 
+records, ethnicity, religion, etc.). These laws are often rooted in historic events within each 
+region. 

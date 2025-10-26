@@ -1,0 +1,21 @@
+th the stop words removed. 
+ 
+6.3 Stemming 
+Though not essential, it can be useful to stem phrases down to their root form. Word 
+derivations are common, and for some analysis converting all those different forms to a root 
+word can be useful. If we look at the word like, for example, you may come across instances 
+in your corpus of likes, likely, liked, and liking. When a stemming function is applied, then 
+you'd return with the root of the word, like. Care must be given with stemming text as there 
+is a risk of over stemming, where the text is cut back to a root that actually may have two 
+different meanings and your analysis will then miss out on the context. The Apache OpenNLP 
+
+P a g e  | 69 
+ 
+project (https://opennlp.apache.org) provides a number of stemming applications for your 
+text. It also offers language detection, tagging, and other tools. 
+ 
+6.4 N-grams 
+N-grams are sequences of words and are often used in natural language processing (NLP). 
+                     
+ 
+The p

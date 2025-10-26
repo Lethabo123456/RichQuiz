@@ -1,0 +1,36 @@
+3.5. Compound events 
+ 
+Sometimes, we need to deal with two or more events. These are called compound 
+events. A compound event is any event that combines two or more simple events. 
+When this happens, we need some special notation. 
+ 
+Given events A and B: 
+• The probability that A and B occur is P (A ∩ B) = P (A and B) 
+• The probability that either A or B occurs is P (A ᴜ B) = P (A or B) 
+Understanding why we use set notation for these compound events is very 
+important. Remember how we represented events in a universe using circles earlier? 
+Let's say that our Universe is 100 people who showed up for an experiment, in 
+which a new test for cancer is being developed: 
+
+In the preceding diagram, the red circle, A, represents 25 people who have 
+cancer. Using the relative frequency approach, we can say that P(A) = number of 
+people with cancer/number of people in study, that is, 25/100 = ¼ = .25. This means 
+that there is a 25% chance that someone has cancer. 
+Let's introduce a second event, called B, as shown, which contains people for whom 
+the test was positive (it claimed that they had cancer). Let's say that this is for 30 
+people. So, P(B) = 30/100 = 3/10 = .3. This means that there is a 30% chance that the 
+test said positive for any given person: 
+ 
+These are two separate events, but they interact with each other. Namely, they might 
+intersect or have people in common, as shown here: 
+
+Anyone in the space that both A and B occupy, otherwise known as A intersect B or 
+A ∩ B, are people for whom the test claimed they were positive for cancer (A) and 
+they do have cancer. Let's say that's 20 people. The test said positive for 20 
+people, that is, they have cancer, as shown here: 
+ 
+This means that P (A and B) = 20/100 = 1/5 = .2 = 20%. 
+If we want to say that someone has cancer, or the test came back positive. This would 
+be the total sum (or union) of the two events, namely, the sum of 5, 20, and 10, which 
+is 35. So, 35/100 people either have cancer or had a positive test outcome. That 
+means, P (A or B) = 35/100 = .35 = 35%.

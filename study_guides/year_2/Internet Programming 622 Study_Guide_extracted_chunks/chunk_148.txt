@@ -1,0 +1,17 @@
+you want to use. The model dictates how the data is stored and accessed. Many different 
+database models are used today, but in this section you look at two common ones: the simple 
+database model and the relational database model.   
+   
+4.5 Simple Databases   
+Simple database engines are, as the name implies, just about the simplest type of database to work 
+with. Essentially, the simple model is similar to an associative array of data. Each item of data is 
+referenced by a single key. It is not possible to define any relationships between the data in the 
+database. For smaller applications there can often be advantages to using a simple database model. 
+For example, if all you need to do is look up data based on keys, simple databases are lightning fast.    
+   
+
+63   
+   
+4.6 Relational Databases   
+Relational databases offer more power and flexibility than simple databases, and for this reason they  
+tend to be a more popular choice. They are also known as RDBMSs (Relational Data

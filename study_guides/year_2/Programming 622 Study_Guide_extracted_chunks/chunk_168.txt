@@ -1,0 +1,40 @@
+o the standard output device to output elements of type int.)  
+  
+int list[5] = {2,4,6,8,10};  
+vector<int> vecList(7);  
+  
+copy(list, list + 5, vecList.begin());  
+  
+vecList.push_back(12);  
+  
+copy(vecList.begin(), vecList.end(), screen); cout 
+<< endl;  
+  
+11. What is the output of the following program segment? (Assume that screen is an ostream_iterator 
+initialized to the standard output device to output elements of type double.)  
+  
+vector<double> sales(3);  
+  
+sales[0] = 50.00; sales[1] 
+= 75.00;  
+sales[2] = 100.00;  
+  
+sales.resize(5);  
+  
+sales[3] = 200.00;  
+sales[4] = 95.00;  
+  
+copy(sales.begin(), sales.end(), screen); cout 
+<< endl;  
+  
+
+81  
+  
+12. What is the output of the following program segment? (Assume that screen is an ostream_iterator 
+initialized to the standard output device that outputs elements of type int.)  
+  
+vector<int> intVector; vector<int>::iterator 
+vecIt; intVector.push_back(15); 
+intVector.push_back(2); 
+intVector.push_back(10); 
+intVecto

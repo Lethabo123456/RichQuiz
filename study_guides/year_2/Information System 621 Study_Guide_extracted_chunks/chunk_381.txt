@@ -1,0 +1,54 @@
+ent in terms of access time. A company with a lot 
+of data would implement its database for speed rather than elegance. (What this means in 
+practice is that its database might have some nulls in the foreign keys or store some information 
+twice.) 
+What you should end up with after you resolve each relationship is a list of tables along with 
+all primary and foreign keys identified, such as that shown in Figure 5.6. This could then be 
+implemented using a DBMS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+142 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+143 
+
+ 
+5.2 Database Management Systems 
+ 
+How do we actually create, implement, use and update a database? The answer is found in the 
+DBMS. A DBMS is a group of programs used as an interface between a database and 
+application programs or between a database and the user. The capabilities and types of database 
+systems, however, vary, but generally they provide the following. 
+ 
+Creating and Modifying the Database 
+ 
+Schemas or designs are entered into the D

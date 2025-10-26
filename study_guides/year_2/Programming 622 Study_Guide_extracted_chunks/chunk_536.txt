@@ -1,0 +1,22 @@
+the object are still in 
+order. We leave the details of these functions as an exercise for you. Furthermore, you can also override 
+the function seqSearch so that while performing a sequential search on an ordered list, it takes into 
+account that the elements are in order. We leave the details of this function also as an exercise.  
+  
+Table 7-4 summarizes the algorithm analysis of the search algorithms discussed earlier.  
+  
+TABLE 7-4 Number of comparisons for a list of length n  
+
+265  
+  
+  
+  
+ 
+7.2  
+Lower Bound on Comparison-Based Search Algorithms  
+  
+Sequential and binary search algorithms search the list by comparing the target element with the list 
+elements. For this reason, these algorithms are called comparison-based search algorithms. Earlier 
+sections of this chapter showed that a sequential search is of the order n, and a binary search is of the 
+order log2n, where n is the size of the list. The obvious question is: Can we devise a search algorithm that 
+has an orde

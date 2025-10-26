@@ -1,0 +1,13 @@
+st. 
+These cases needed to be handled separately. As a result, the insertion and deletion algorithms were not 
+as simple and straightforward as we would like.One way to simplify these algorithms is to never insert an 
+item before the first or last item and to never delete the first node. Next we discuss how to accomplish 
+this.  
+  
+Suppose the nodes of a list are in order; that is, they are arranged with respect to a given key. Suppose it 
+is possible for us to determine what the smallest and largest keys are in the given data set. In this case, 
+we can set up a node, called the header, at the beginning of the list containing a value smaller than the 
+smallest value in the data set. Similarly, we can set up a node, called the trailer, at the end of the list 
+containing a value larger than the largest value in the data set. These two nodes, header and trailer, serve 
+merely to simplify the insertion and deletion algorithms and are not part of the actual list. The actual list 
+is betwee

@@ -1,0 +1,34 @@
+In the function 
+heading, the type of the formal parameters x and y is Type, which will be specified by 
+the type of the actual parameters when the function is called.  
+ 
+ 
+The statement cout << larger(5, 6) << endl; 
+ 
+is a call to the function template larger. Because 5 and 6 are of type int, the data 
+type int is substituted for Type, and the compiler generates the appropriate code. 
+
+228 | P a g e  
+ 
+Note that the function template larger will work only for those data types for 
+which the operator >= has been defined. If we omit the body of the function in 
+the function template definition, the function template, as usual, is the prototype. 
+ 
+ 
+The following program uses the function template larger to determine the larger 
+of the two items. 
+ 
+ 
+ 
+ 
+
+229 | P a g e  
+ 
+ 
+ 
+ 
+Virtual Functions 
+ 
+So, during program execution, how does C++ correct this problem of making the call 
+to the appropriate function? C++ corrects this problem by providing the mechanism of 
+virtual function

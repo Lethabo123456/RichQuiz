@@ -1,0 +1,35 @@
+5.4 Using the async and await 
+As you have seen, long-running CPU-bound tasks can be handed to another thread by using the Task ob-
+bound, things go a little differently.  
+When your application is executing an I/O operation on the primary application thread, Windows no-
+tices that your thread is waiting for the I/O operation to complete. Maybe you are accessing some file 
+on disk or over the network, and this could take some time. 
+ 
+new threads being created if requests come in. 
+ 
+using System;
+using System.Linq; 
+using System.Threading; 
+using System.Threading.Tasks; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        public static void Main() 
+        { 
+            Task<int>[] tasks = new Task<int>[3]; 
+            tasks[0] = Task.Run(() => { Thread.Sleep(2000); return 1; }); 
+            tasks[1] = Task.Run(() => { Thread.Sleep(1000); return 2; }); 
+            tasks[2] = Task.Run(() => { Thread.Sleep(3000); return 3; }); 
+            while (tasks.Length > 0) 
+            { 
+                int i = Task.WaitAny(tasks); 
+                Task<int> completedTask = tasks[i]; 
+                Console.WriteLine(completedTask.Result); 
+                var temp = tasks.ToList(); 
+                temp.RemoveAt(i); 
+                tasks = temp.ToArray(); 
+            } 
+        } 
+    } 
+} 

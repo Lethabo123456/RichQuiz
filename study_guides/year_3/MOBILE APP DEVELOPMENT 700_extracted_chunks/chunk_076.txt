@@ -1,0 +1,23 @@
+A second issue to be aware of is time delays. To access a hardware component, you must use the 
+component’s application program interface (API). The component may take some time to turn on and 
+respond with the information you need. If this delay is significant, it may affect the user experience in 
+such a way that your app is viewed negatively. For example, the GPS system takes time to acquire 
+enough satellite signals to accurately locate your device. This could take more than a minute. Stopping 
+app function until this happens should be avoided, if possible. If the user is left waiting for the device 
+to respond, the screen may time out. This issue may be encountered even if you did everything 
+properly and turned off the services when the app is about to be sent to the background and then 
+turned them on again when the user reopens the app. However, if the activation of the device takes 
+time, your app will end up hanging every time it returns from the background. This vicious circle will 
+not please the user. The proper solution to this particular problem is to use a separate execution 
+
+It’s My Fault! 
+Early on in my app development efforts, I (Michael) created an app that used GPS data to map certain 
+points. This app was made available in the Android Play Store, but to try to expand the availability of 
+the app, I submitted it to the Amazon App Store. Unlike Android, Amazon reviews the apps submitted 
+to them before they make them available. They rejected it because it didn’t work! I couldn’t believe 
+it. It always worked for me. However, they were testing it indoors where it never got a GPS reading, 
+and therefore nothing worked. My design didn’t account for this possibility, and the entire 
+functionality was dependent on getting a GPS reading. Realizing that much of the app’s functionality 
+did not require the GPS, I redesigned it to handle the situation and Amazon eventually accepted it. 
+However, if this happened to a user, you might not get a second chance—or worse, the user might 
+write a scathing review of your app. 

@@ -1,0 +1,14 @@
+A constant must be initialized when it is declared, and once initialized it cannot be altered. 
+For example: 
+
+const int FreezingPoint = 32; 
+
+In this declaration, 32 is a literal constant and FreezingPoint is a symbolic constant of type int. 
+
+Example 1-4 illustrates the use of symbolic constants. 
+Example 1-4 symbolic Constants 
+ 
+These constants serve the same purpose of always using the literal values 32 and 212 for the 
+freezing and boiling points of water in expressions that require them, but because these 
+constants have names they convey far more meaning. Also, if you decide to switch this 
+program to Celsius, you can reinitialize these constants. 

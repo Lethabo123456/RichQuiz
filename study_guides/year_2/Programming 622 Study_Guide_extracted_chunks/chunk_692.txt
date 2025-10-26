@@ -1,0 +1,24 @@
+parent of current. Because duplicate items are not allowed, our 
+search must end at an empty subtree. We can then use the pointer trailCurrent to insert the new item at 
+the proper place. The item to be inserted, insertItem, is passed as a parameter to the function insert. The 
+general algorithm is as follows:  
+  
+a. Create a new node and copy insertItem into the new node. Also set llink and rlink of the new node 
+to NULL.  
+b. if the root is NULL, the tree is empty so make root point to the new node.  
+else  
+{ current = root;  
+while (current is not NULL) //search the binary tree  
+{ trailCurrent = current;  
+if (current->info is the same as the insertItem)  
+Error: Cannot insert duplicate exit  
+else if(current->info > insertItem)  
+Follow llink of current else  
+Follow rlink of current  
+}  
+  
+//insert the new node in the binary tree  
+  
+if (trailCurrent->info > insertItem) make the new node 
+the left child of trailCurrent  
+else make the new node the right child of trailCurrent

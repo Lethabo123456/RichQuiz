@@ -1,0 +1,17 @@
+5.3 SENDING E-MAIL FROM A PAGE 
+Many Web sites allow users to send an e-mail 
+message to them with questions or feedback about 
+the Web site. Some offer the option to place an 
+order for products via e-mail. HTML can be used to 
+create hyperlinks that activate the e-mail 
+application on the user’s computer to send 
+messages. 
+ 
+Mailto link 
+When you click a mailto link, an e-mail application is activated that allows you to send e- 
+mail. You use the href attribute to specify a mailto address. To create a mailto link that 
+allows users to send e-mail to contactus@pctbc.co.za, use the following code: 
+<a href="mailto:contactus@pctbc.co.za">Contact Us</a> 
+When users click the hyperlink “Contact Us,” the e-mail application on their computer is 
+activated allowing them to enter the message and send the e-mail. 
+ 

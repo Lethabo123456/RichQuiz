@@ -1,0 +1,20 @@
+kA mod 1)û    
+  
+where "kA mod 1" means the fractional part of kA, that is, kA -  ëkAû.  
+  
+Advantage of this method is that the value of m is not critical and can be implemented on most computers.  
+  
+A reasonable value of constant A is   
+» (sqrt5 - 1) /2   
+ Universal Hashing  
+Open Addressing  
+This is another way to deal with collisions.  
+In this technique all elements are stored in the hash table itself. That is, each table entry contains either 
+an element or NIL. When searching for element (or empty slot), we systematically examine slots until we 
+found an element (or empty slot). There are no lists and no elements stored outside the table. That implies 
+that table can completely "fill up"; the load factor α can never exceed 1.Advantage of this technique is 
+
+280  
+  
+that it avoids pointers (pointers need space too). Instead of chasing pointers, we compute the sequence 
+of slots to be examined. To perform insertion, we successively examine or probe, the hash table until we

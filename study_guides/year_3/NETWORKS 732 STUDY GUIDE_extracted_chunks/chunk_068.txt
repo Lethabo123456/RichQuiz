@@ -1,0 +1,15 @@
+Delayed Conﬁrmation and Long-Term Observation 
+ 
+Certain ﬁxes require extended observation to verify full success. For example, resolving a 
+server overload issue might involve adding processors and enabling symmetric 
+multiprocessing. However, unless the same volume of database queries is generated— 
+perhaps days or weeks later—it will be diﬃcult to conﬁrm whether the additional resources 
+resolved the slowdown. As such, performance issues often demand long-term monitoring to 
+verify their resolution. 
+
+Another illustrative case involves performance optimization. Suppose users across the LAN 
+experienced sluggish ﬁle access over the past month. You replaced the existing server with 
+one that has enhanced CPU power, more memory, and dual NICs. After deployment, you 
+would need to conﬁrm that all users can now access ﬁles faster and more reliably—potentially 
+seeing an 80% improvement in speed. This outcome would validate both your diagnosis and 
+solution. 

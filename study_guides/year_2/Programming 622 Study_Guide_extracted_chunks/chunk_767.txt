@@ -1,0 +1,27 @@
+rted, 
+rightChild—a pointer to the right subtree of the item to be inserted, and insertPosition—the position in 
+the array where to insert the item. The definition of this function is as follows:  
+  
+template <class recType, int bTreeOrder> void 
+bTree<recType, bTreeOrder>::insertNode  
+(bTreeNode<recType, bTreeOrder> *current,const recType& insertItem,  
+bTreeNode<recType, bTreeOrder>* &rightChild,int insertPosition)  
+{  
+int index;  
+  
+for (index = current->recCount; index > insertPosition;index--)  
+
+377  
+  
+{ current->list[index] = current->list[index - 1];  
+current->children[index + 1] = current->children[index];  
+}  
+  
+current->list[index] = insertItem; current->children[index 
++ 1] = rightChild;  
+current->recCount++;  
+} //end insertNode  
+  
+The function splitNode splits a node into two nodes and inserts the new item in the relevant node. It 
+returns the median key and a pointer to the second half of the node. The parameter current points to the 
+node to be split, inser

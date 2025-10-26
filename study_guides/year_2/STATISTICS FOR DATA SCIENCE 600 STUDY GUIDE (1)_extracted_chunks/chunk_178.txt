@@ -1,0 +1,31 @@
+ill take a sample of 1,000 employees and see if 
+their race proportions are similar. 
+ 
+employee_races 
+= 
+(["white"]*2000) 
++ 
+(["black"]*1000) 
++ 
+(["hispanic"]*1000) 
++ 
+(["asian"]*3000) + (["other"]*3000) 
+demo_sample = random.sample(employee_races, 1000)  # Sample 1000 values 
+for race in set(demo_sample): 
+    print(race + " proportion estimate:", demo_sample.count(race)/1000.) 
+ 
+The output obtained would be as follows: 
+• hispanic proportion estimate: 0.103 
+• white proportion estimate: 0.192 
+• other proportion estimate: 0.288 
+• black proportion estimate: 0.1 
+• asian proportion estimate: 0.317 
+ 
+ 
+We can see that the race proportion estimates are very close to the underlying population's 
+proportions. For example, we got 10.3% for Hispanic in our sample and the population 
+proportion for Hispanic was 10%. 
+ 
+5.3 Sampling Distributions  
+In Chapter 4, Basic Statistics, we mentioned how much we love when data follows the normal 
+distribution. One of the reasons for this is th

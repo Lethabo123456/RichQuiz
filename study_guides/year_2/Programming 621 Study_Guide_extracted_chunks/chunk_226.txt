@@ -1,0 +1,27 @@
+by the name 
+of the constructor of the base class with its parameters in the heading of the definition 
+
+205 | P a g e  
+ 
+of the constructor of the derived class. In effect, we “tack on” the base class constructor 
+to the derived class constructor via a colon. The derived class constructor gets all of 
+the parameters needed for itself and the base class constructor, then passes on the 
+base class parameters to its constructor. 
+ 
+Consider the following definition of the constructor with parameters of the class 
+boxType: 
+ 
+boxType::boxType(double l, double w, double h) : rectangleType(l, w) 
+ {  
+if (h >= 0)  
+height = h;  
+else  
+height = 0;  
+} 
+ 
+In this definition, we specify the constructor of rectangleType with two parameters. 
+When this constructor of boxType executes, it triggers the execution of the constructor 
+of the class rectangleType with two parameters of type double. 
+ 
+Consider the following statements: 
+rectangleType myRectangle(5.0, 3.0);                      //Line

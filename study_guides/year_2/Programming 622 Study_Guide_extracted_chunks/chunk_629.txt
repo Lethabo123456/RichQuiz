@@ -1,0 +1,15 @@
+th / 2 – 
+1. Then list[index] is the last element in the list which is not a leaf; that is, this element has at least one 
+child. Thus, elements list[index + 1]...list[length – 1] are leaves.  
+  
+First, we convert the subtree with the root node list[index] into a heap. Note that this subtree has at most 
+three nodes. We then convert the subtree with the root node list[index - 1] into a heap, and so on.  
+  
+To convert a subtree into a heap, we perform the following steps: Suppose that list[a] is the root node of 
+the subtree, list[b] is the left child, and list[c], if it exists, is the right child of list[a].  
+  
+Compare list[b] with list[c] to determine the larger child. If list[c] does not exist, then list[b] is the larger 
+child. Suppose that largerIndex indicates the larger child. (Notice that, largerIndex is either b or c.)  
+  
+Compare list[a] with list[largerIndex]. If list[a] < list[largerIndex], then swap list[a] with list[largerIndex]; 
+otherwise, the subtree with root node

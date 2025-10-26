@@ -1,0 +1,41 @@
+Remote Maintenance 
+
+Remote maintenance refers to maintenance activities conducted by individuals who are external to 
+an information system’s security perimeter. Remote maintenance is a convenience to the enterprise; 
+in some environments it is a necessity, as an Internet of Things (IoT) deployment or an industrial 
+control system. The principal security objective in this area is to prevent unauthorized access to critical 
+systems and networks through the misuse of remote maintenance facilities. 
+The U.S. Department of Homeland Security has compiled a list of requirements for remote 
+maintenance of industrial control system [DHS11], but this list has general applicability to IT systems 
+as well. The requirements for an organization are as follows: 
+
+ Authorize, monitor, and control remotely executed maintenance and diagnostic activities. 
+ Allow the use of remote maintenance and diagnostic tools only as consistent with 
+organizational policy and documented in the security plan for the system. 
+ Maintain records for remote maintenance and diagnostic activities. 
+ Terminate all sessions and remote connections when remote maintenance is completed. 
+ If password-based authentication is used to accomplish remote maintenance, change 
+passwords following each remote maintenance session. 
+ Audit remote maintenance and diagnostic sessions and ensure that designated organizational 
+personnel review the maintenance records of the remote sessions. 
+ Document the installation and use of remote maintenance and diagnostic links. 
+ Require that remote maintenance or diagnostic services be performed from a system that 
+implements a level of security at least as high as that implemented on the system being 
+serviced or remove the component to be serviced from the system and, prior to remote 
+maintenance or diagnostic services, sanitize the component (for example, clearing of set 
+points, embedded network addresses and embedded security validation information). After 
+the service is performed and the component is returned to the facility, the organization should 
+check or reinstall the authorized firmware code as specified by the configuration management 
+plan and reset all authorized embedded configuration settings. Do this before reconnecting 
+the component to the system to remove potentially malicious software that was added via 
+“new” firmware. 
+ Require that remote maintenance sessions be protected by a strong authenticator tightly 
+bound to the user. 
+ Require that maintenance personnel notify the system administrator when remote 
+maintenance is planned (that is, date/time). 
+ Require that a designated organizational official with specific security/system knowledge 
+approve the remote maintenance. 
+ Implement cryptographic mechanisms to protect the integrity and confidentiality of remote 
+maintenance and diagnostic communications. 
+ Employ remote disconnect verification at the termination of remote maintenance and 
+diagnostic sessions.

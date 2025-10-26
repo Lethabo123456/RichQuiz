@@ -1,0 +1,52 @@
+Let us summarize the number of times a statement will execute in the algorithm 
+for BFS. 
+
+Line no.   No. of times statement will execute   Cost 
+----------------------------------------------------------
+1          V                                     O(V)
+---------------------------------------------------------- 
+2          V-1 
+----------------------------------------------------------
+3          V-1 
+----------------------------------------------------------
+4          V-1                                   O(1) 
+----------------------------------------------------------
+5          1 
+----------------------------------------------------------
+6          1 
+----------------------------------------------------------
+7          1 
+----------------------------------------------------------
+8          1 
+----------------------------------------------------------
+9          1 
+----------------------------------------------------------
+10         V+1                                   O(V) 
+----------------------------------------------------------
+11         V 
+----------------------------------------------------------
+12         V+E+1                                 O(V+E) 
+----------------------------------------------------------
+13         V+E 
+----------------------------------------------------------
+14         V 
+----------------------------------------------------------
+15         V 
+----------------------------------------------------------
+16         V 
+----------------------------------------------------------
+17         V 
+----------------------------------------------------------
+18         V 
+----------------------------------------------------------
+ 
+Thus overall complexity of BFS will be V + V + E, i.e. O(V+E)  
+ 
+Let us take up an example to see how exploration of vertex takes place by 
+Breadth First Search algorithm. 
+
+In this algorithm sequence of vertex visited or explored may vary. The final 
+sequence of vertex visited is dependent on adjacency list. But the array d[] will 
+have same number irrespective of order of vertices in adjacency list. In the above 
+diagram distance is shown along the vertex. According to adjacency list drawn in 
+the diagram, exploration sequence of vertex by BFS algorithm is 1,2,3,4,5.

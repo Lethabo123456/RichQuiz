@@ -1,0 +1,16 @@
+Scikit-learn 
+
+Scikit-learn is arguably the most popular Python library for machine learning. It includes all the 
+models we've implemented and many others that we haven't. In real-world applications, you 
+wouldn't build a decision tree or optimization algorithm from scratch; instead, you'd rely on scikit-
+learn to handle the heavy lifting. Its documentation is filled with examples showcasing its capabilities 
+and providing a deeper understanding of machine learning. Familiarize yourself with essential Python libraries for ML. 
+The goal of this exercise is to familiarize yourself with fundamental Python libraries used in machine 
+learning, such as NumPy, Pandas, Scikit-learn, and Matplotlib. First, install these libraries using pip 
+install NumPy pandas scikit-learn matplotlib. Next, load and explore a sample dataset using Pandas 
+by reading the famous Iris dataset from a URL and displaying basic statistical summaries with 
+df.describe(). Then, train a simple machine learning model using Scikit-learn’s Logistic Regression. 
+The dataset is split into training and testing sets with train_test_split(), and the model is trained using 
+the fit() function. Finally, the accuracy of the model is evaluated on the test set using the score() 
+method. This exercise provides a hands-on introduction to essential steps in machine learning: data 
+loading, exploration, model training, and evaluation. 

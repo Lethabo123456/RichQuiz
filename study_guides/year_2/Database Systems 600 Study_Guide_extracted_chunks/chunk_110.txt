@@ -1,0 +1,13 @@
+ies more carefully. In this section, you also will become 
+acquainted with super-keys, candidate keys, and secondary keys. 
+Dependencies 
+The role of a key is based on the concept of determination. Determination is the state in which 
+knowing the value of one attribute makes it possible to determine the value of another. 
+Determination in a database environment, is normally based on the relationships among the 
+attributes.  
+A specific terminology and notation are used to describe relationships based on determination. The 
+relationship is called functional dependence, which means that the value of one or more attributes 
+determines the value of one or more other attributes. In this functional dependency, the attribute 
+whose value determines another is called the determinant or the key. The attribute whose value is 
+determined by the other attribute is called the dependent. Using this terminology, it would be correct 
+to say that in a Student table, STU_NUM is the determinant and STU_L

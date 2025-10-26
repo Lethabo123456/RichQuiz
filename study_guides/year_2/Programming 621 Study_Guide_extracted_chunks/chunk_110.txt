@@ -1,0 +1,29 @@
+double and has only 
+one parameter. 
+ 
+The floor function, floor(x), calculates the largest whole number that is less than or 
+equal to x. For example, floor(48.79) is 48.0. The function floor is of type double and 
+has only one parameter 
+ 
+ 
+To use predefined functions in a program, you must include the header file that 
+contains the function’s specification via the include statement. 
+ 
+ 
+ 
+
+92 | P a g e  
+ 
+ 
+ 
+
+93 | P a g e  
+ 
+ 
+This program works as follows. The statements in Lines 1 to 4 include the header files 
+that are necessary to use the functions used in the program. The statements in Lines 
+8 to 10 declare the variables used in the program. The statement in Line 11 sets the 
+output of decimal numbers in fixed decimal format with two decimal places. The 
+statement in Line 12 uses the function islower to determine and output whether ch is 
+a lowercase letter. The statement in Line 13 uses the function toupper to output the 
+uppercase letter that corresponds to 'a', which

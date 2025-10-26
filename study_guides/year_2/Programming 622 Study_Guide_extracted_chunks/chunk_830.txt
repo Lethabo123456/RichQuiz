@@ -1,0 +1,19 @@
+17(g), the dotted lines show a minimum spanning tree of G of weight 25.  
+  
+Before we give the definition of the function to implement Prim’s algorithm, let us first define a spanning 
+tree as an ADT.  
+  
+Let mstv be a bool array such that mstv[j] is true if the vertex vi is in T, and false otherwise. Let edges be 
+an array such that edges[j] = k, if there is an edge connecting vertices vj and vk. Suppose that the edge (vi, 
+vj) is in the minimum spanning tree. Let edgeWeights be an array such that edgeWeights[j] is the weight 
+of the edge (vi, vj).  
+Using these conventions, the following class defines a spanning tree as an ADT:  
+//*****************************************************************  
+// class msTreeType  
+// This class specifies the operations to find a minimum spanning tree in a graph. 
+//***************************************************************** 
+class msTreeType: public graphType  
+{  
+public:  
+void createSpanningGraph();  
+//Function to create the graph a

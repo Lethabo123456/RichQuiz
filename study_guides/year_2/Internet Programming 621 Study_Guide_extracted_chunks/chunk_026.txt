@@ -1,0 +1,17 @@
+uns, and when it’s finished it usually sends an HTML page to the Web browser, 
+which the visitor then sees on their screen.  
+  
+1.2 The php.ini File  
+In older versions of PHP, it would not have been a major issue not to set the time zone in your PHP 
+main configuration file, which is the php.ini file. But in higher versions of PHP, it is mandatory to set 
+the time zone because not doing so will render time and date related functions of your programs 
+dysfunctional. This is only one of the many configuration instances for which the php.ini file is used.  
+  
+The php.ini file is used to specify the upper limit in terms of the size of files that a user may upload 
+to the server. The upload file size may be limited to, say, 8MB or 16MB or 32MB as the case may be, 
+and once this limit is et, if a user tries to upload onto the server any file which is larger than the 
+specified limit, the server will cancel the operation and generate an appropriate message for the 
+user.  
+
+18  
+Many setti

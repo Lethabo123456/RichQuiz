@@ -1,0 +1,40 @@
+execution of the following statement:  
+  
+decToBin(13, 2);  
+  
+where num is 13 and base is 2.  
+  
+
+159  
+  
+  
+FIGURE 4-10 Execution of decToBin(13, 2)  
+  
+Because the if statement in call 5 fails, this call does not print anything. The first output is produced by 
+call 4, which prints 1; the second output is produced by call 3, which prints 1; the third output is produced 
+by call 2, which prints 0; and the fourth output is produced by call 1, which prints 1. Thus, the output of 
+the statement:  
+  
+decToBin(13, 2);  
+ is:  
+  
+1101  
+  
+The following C++ program tests the function decToBin:  
+//****************************************************** // 
+Program: Decimal to binary  
+// This program uses recursion to find the binary // 
+representation of a nonnegative integer.  
+//******************************************************  
+#include <iostream> using 
+namespace std; void 
+decToBin(int num, int base); int 
+main()  
+{  
+
+160  
+  
+int decimalNum; 
+int base; base = 
+2;  
+cou

@@ -1,0 +1,24 @@
+5.9 Trigonometric Substitution 
+
+Sometimes trigonometric substitutions are very effective even when at first it 
+may not be so clear why such a substitution be made. For example, when 
+finding the area of a circle or an ellipse you may have to find an integral of the 
+form ∫√𝑎2 − 𝑥2 𝑑𝑥 , where 𝑎 > 0. 
+It is difficult to make a substitution where the new variable is a function of the 
+old one, (for example, had we made the substitution 𝑢 = 𝑎2 - 𝑥2, then 
+ 𝑑𝑢= −2𝑥𝑑𝑥, and we are unable to cancel out the -2𝑥.) So we must consider 
+a change in variables where the old variable is a function of the new one. This 
+is where trigonometric identities are put to use. Suppose we change the 
+variable from 𝑥 to 
+by making the substitution 𝑥 = a sin θ. Then using the trig 
+identity sin2x + cos2x = 1 we can simplify the integral by eliminating the root 
+sign: √𝑎2 − 𝑥2 = √𝑎2 −𝑎2𝑠𝑖𝑛2𝜃 = √𝑎2(1 −𝑠𝑖𝑛2𝜃= √𝑎2𝑐𝑜𝑠2𝜃 = 𝑎|cos 𝜃| 
+
+By changing x to a function with a different variable we are essentially using 
+the Substitution Rule in reverse. If 𝑥= 𝑔(𝑡) then by restricting the 
+boundaries on g we can assure that 𝑔 has an inverse function; that is, 𝑔 is 
+one-to-one. In the example above we would require to assure has an inverse 
+function. 
+If we look at the Substitution Rule and replace u with x and x with t, we 
+obtain ∫𝑓(𝑥)𝑑𝑥= ∫𝑓(𝑔(𝑡)𝑔′(𝑡)𝑑𝑡. 
+This is known as the "inverse substitution".

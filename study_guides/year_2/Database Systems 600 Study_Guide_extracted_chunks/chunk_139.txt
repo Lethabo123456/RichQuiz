@@ -1,0 +1,13 @@
+which means that the PROFESSOR table’s primary key value occurs at 
+least once and no more than four times as foreign key values in the CLASS table.  
+Connectivities and cardinalities are established by concise statements known as business rules, 
+which were introduced in Chapter 1.2. Such rules, derived from a precise and detailed description 
+of an organization’s data environment, also establish the ERM’s entities, attributes, relationships, 
+connectivities, cardinalities, and constraints. Because business rules define the ERM’s components, 
+making sure that all appropriate business rules are identified is an important part of a database 
+designer’s job. 
+Existence Dependence 
+An entity is said to be existence-dependent if it can exist in the database only when it is associated 
+with another related entity occurrence. In implementation terms, an entity is existence-dependent if 
+it has a mandatory foreign key—that is, a foreign key attribute that cannot be null.  
+If an entity can e

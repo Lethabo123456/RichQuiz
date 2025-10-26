@@ -1,0 +1,45 @@
+Create the Dialog Layout 
+Although Android provides a DatePickerDialog class that provides the functionality needed, you are 
+going to create the dialog from scratch to learn how to create and use custom dialogs in an app. The 
+birthday selection date dialog is relatively simple. It displays a CalendarView widget, which allows the 
+user to select a specific date, and Cancel and OK buttons. Refer to Figure 4.12 to see the final layout. 
+Begin by adding a new XML layout file to the project. 
+
+1. Right-click the Layout folder in the Project window and select New > XML > Layout XML file from 
+the pop-up menu. 
+2. Enter select_date as the file name of this new layout. Leave all other defaults. 
+3. Click OK, and the new layout will open in the editor and select_date.xml will be displayed in the 
+ 
+layout folder of the Project window. 
+Switch the layout to Design view (if not already there). With the new LinearLayout selected, go to the 
+Attributes panel and change the orientation attribute to vertical. Locate the Widgets folder in the 
+Palette and drag a CalendarView to the screen. Next, drag a LinearLayout (horizontal) to the screen 
+and place it below the CalendarView. Now drag two buttons from the Palette and place them in the 
+LinearLayout (horizontal). Select the main LinearLayout in the Component Tree and change the 
+layout_height attribute to wrap_content in the Attributes panel. The buttons should appear side by 
+side, with the text BUTTON below the CalendarView. The rest of the configuration will be done with 
+XML. However, before editing the layout, we need a new color, so open the colors.xml file and add 
+the following line: 
+
+<color name=“dialog_button_color”>#26C6DA</color> 
+Switch back to select_date.xml and switch to TextView to edit the XML. Modify the LinearLayout and 
+button code to match Listing 4.6. This XML introduces some new items. The addition of these items ensures that the 
+layout conforms to design guidelines for dialogs specified by Android. These items are explained as follows: 
+
+▪ Lines 1–6—The orientation=“vertical” attribute tells Android to layout widgets 
+stacked on top of one another rather than side by side. The gravity=“end” attribute 
+tells Android to position the widgets within the LinearLayout horizontally on the right 
+side of the screen. This is the Android recommended position for buttons on a 
+dialog. 
+▪ Lines 8–11—The calendar widget. 
+▪ Lines 13–17—The second LinearLayout lays out widgets side by side.   
+The style=“?android:attr/borderlessButtonStyle” removes borders from the widget. The layout_weight 
+attribute  is  used  for  relative  sizing  of  widgets within a LinearLayout. Giving them both a weight of 1 makes them 
+equal size. 
+▪ Lines 19–36—Android design guidelines specify that the affirmative button, or the button that continues the task, 
+should be the rightmost, so it is last in the LinearLayout XML. 
+The discontinue or cancel button should be immediately to 
+the left of the continue button, so its XML comes before the 
+continue button code. The textColor attribute sets the text color of the button to the color you created in the colors.xml file. 
+Once you have completed these changes, switch to Design view. Your display should look like Figure 
+4.12.

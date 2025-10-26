@@ -1,0 +1,28 @@
+            try 
+            { 
+                FileStream aFile = new 
+FileStream("../../Program.cs", FileMode.Open); 
+                aFile.Seek(113, SeekOrigin.Begin); 
+                aFile.Read(byData, 0, 200); 
+            } 
+            catch (IOException e) 
+            { 
+ Console.WriteLine("An IO exception has been thrown!"); 
+                Console.WriteLine(e.ToString()); 
+                Console.ReadKey(); 
+                return; 
+            }
+
+Almost all operations involving file I/O can throw an exception of type IOException. All production code 
+should contain error handling, especially when dealing with the file system. The examples in this chapter 
+all include a basic form of error handling. 
+ 
+ 
+Once you have the byte array from the file, you need to convert it into a character array so that you can 
+display it to the console. To do this, use the Decoder class from the System.Text namespace. This class is 
+designed to convert raw bytes into more useful items, such as characters: 
+ 
+These lines create a Decoder object based on the UTF-8 encoding schema, which is the Unicode encod-
+ing schema. Then the GetChars() method is called, which takes an array of bytes and converts it to an 
+array of characters. After that has been done, the character array can be written to the console. 
+

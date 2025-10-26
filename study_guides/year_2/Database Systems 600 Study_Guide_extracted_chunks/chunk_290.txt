@@ -1,0 +1,24 @@
+lationship. The order in which multiple 
+tables must be dropped is influenced by the foreign key constraints. You should drop tables from 
+the “many” side first, and then drop the table on the “one” side. 
+ 
+Data Manipulation Commands 
+In this section, you will learn how to use the basic SQL data manipulation commands INSERT, 
+UPDATE, and DELETE, and the transaction management commands COMMIT and ROLLBACK. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eight, page 375-378. 
+
+ 
+119 
+Adding Table Rows 
+SQL requires the use of the insert command to enter data into a table. The INSERT command’s 
+basic syntax looks like this:  
+INSERT INTO table-name VALUES (value1, value2, ..., value-n) 
+Given the VENDOR table structure defined earlier you would enter the first two data rows as 
+follows:  
+INSERT INTO VENDOR  
+VALUES (21225',Bryson, Inc.','Smithson','615','223-3234','TN','Y');  
+INSERT INTO VENDOR  
+VALUES (21226',

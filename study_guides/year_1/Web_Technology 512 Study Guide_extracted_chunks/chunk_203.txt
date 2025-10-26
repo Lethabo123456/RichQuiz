@@ -1,0 +1,31 @@
+latest news comments to a web page. The news 
+changes all the time. So we want a quick and easy way to update the news on the 
+page. We can do it with an external JavaScript file that references an ID in the 
+BODY of the HTML. 
+ 
+The code should look like this: 
+ 
+Figure 8.1 
+The first thing to notice when you access the code is the SCRIPT tags in the head 
+section: 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+130 
+ 
+EIGHT | JAVASCRIPT AND HTML ELEMENTS 
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" 
+src="news.js"></SCRIPT> 
+ 
+This is pointing to an external JavaScript file called news.js. We will get to that in a 
+moment. 
+The important part in the BODY of the HTML is this part: 
+<FOOTER ID="footer"> 
+ 
+This sets up an ID called footer. When the button below it is clicked, it will call a 
+function with the name latestnews. We will create this function in our JavaScript 
+file.  
+ 
+Before the button is clicked, the web page looks like this: 
+ 
+Fig

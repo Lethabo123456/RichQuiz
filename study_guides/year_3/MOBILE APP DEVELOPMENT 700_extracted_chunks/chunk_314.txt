@@ -1,0 +1,28 @@
+The Fragment Lifecycle 
+ 
+The lifecycle events of a Fragment mirror those of its parent Activity; however, after the containing 
+Activity is in its active — resumed — state adding or removing a Fragment will affect its lifecycle 
+independently. 
+Fragments include a series of event handlers that mirror those in the Activity class. They are triggered 
+as the Fragment is created, started, resumed, paused, stopped, and destroyed. Fragments also 
+include a number of additional callbacks that signal binding and unbinding the Fragment from its 
+parent Activity, creation (and destruction) of the Fragment’s View hierarchy, and the completion of 
+the creation of the parent Activity. 
+ 
+ 
+Figure 4-4 
+ 
+Fragment-Specific Lifecycle Events 
+ 
+Most of the Fragment lifecycle events correspond to their equivalents in the Activity class, which 
+were covered in detail in Chapter 3. Those that remain are specifi c to Fragments and the way in 
+which they’re inserted into their parent Activity. 
+ 
+Attaching and Detaching Fragments from the Parent Activity 
+The full lifetime of your Fragment begins when it’s bound to its parent Activity and ends when it’s 
+been detached. These events are represented by the calls to onAttach and onDetach, respectively. 
+As with any handler called after a Fragment/Activity has become paused, it’s possible that onDetach 
+will not be called if the parent Activity’s process is terminated without completing its full lifecycle. 
+The onAttach event is triggered before the Fragment’s UI has been created, before the Fragment 
+itself or its parent Activity have fi nished their initialization. Typically, the onAttach event is used to 
+gain a reference to the parent Activity in preparation for further initialization tasks.

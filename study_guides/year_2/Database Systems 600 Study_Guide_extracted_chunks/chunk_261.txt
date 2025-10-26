@@ -1,0 +1,15 @@
+maximum values, calculate averages, and so on. Better yet, SQL allows the user to limit queries to 
+only those entries that have no duplicates or entries whose duplicates can be grouped. 
+Aggregate Functions 
+SQL can perform various mathematical summaries for you, such as counting the number of rows 
+that contain a specified condition, finding the minimum or maximum values for a specified 
+attribute, summing the values in a specified column, and averaging the values in a specified 
+column. While there are other aggregate functions supported by some DBMS products, the ones 
+shown in Table 7.7 are the most common aggregate functions and are supported by most DBMS 
+products. Aggregate functions are most commonly used in the SELECT column list to return an 
+aggregate value that has been calculated across a collection of rows and take a value, typically an 
+attribute, as a parameter inside parentheses. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+C

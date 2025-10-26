@@ -1,0 +1,39 @@
+on. 
+valueOf() 
+Returns the primitive value of a Date object.  
+ 
+Table 6.11 – The Date Object Methods 
+ 
+
+ 
+105 
+ 
+SIX | JAVASCRIPT OBJECTS 
+6.2.5.4 Date Static Methods 
+In addition to the many instance methods listed previously, the Date object also 
+defines two static methods. These methods are invoked through the Date( ) 
+constructor itself: 
+Method 
+Description 
+Date.parse( )  
+Parses a string representation of a date and time and 
+returns the internal millisecond representation of that 
+date. 
+Date.UTC( )  
+Returns the millisecond representation of the specified 
+UTC date and time. 
+Table 6.12 – The Date Static Object Methods 
+ 
+6.2.6 The Math Object 
+The math object provides you properties and 
+methods 
+for 
+mathematical 
+constants 
+and 
+functions.Unlike the other global objects, Math is 
+not a constructor. All properties and methods of 
+Math are static and can be called by using Math as 
+an object without creating it. 
+ 
+Thus, you refer to the constant pi as Math.PI and you cal

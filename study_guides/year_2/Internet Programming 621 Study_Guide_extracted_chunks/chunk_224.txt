@@ -1,0 +1,45 @@
+and iv) 
+c) None of the mentioned 
+d) All of the mentioned 
+ 
+Answer: d 
+ 
+14. Which one of the following functions will convert a string to all uppercase? 
+a) strtoupper() 
+b) uppercase() 
+c) str_uppercase() 
+d) struppercase() 
+ 
+Answer: a 
+ 
+15. What will be the output of the following PHP code? 
+<?php 
+$title = "O'malley wins the heavyweight championship!"; 
+echo ucwords($title); 
+?> 
+ 
+a) O’Malley Wins The Heavyweight Championship! 
+b) O’malley Wins The Heavyweight Championship! 
+c) O’Malley wins the heavyweight championship! 
+d) o’malley wins the heavyweight championship! 
+ 
+
+Answer: d 
+ 
+16. What will be the output of the following PHP code? 
+<?php 
+echo str_pad("Salad", 5)." is good."; 
+?> 
+a) SaladSaladSaladSaladSalad is good 
+b) is good SaladSaladSaladSaladSalad 
+c) is good Salad 
+d) Salad is good 
+ 
+Answer: d 
+ 
+17. Which one of the following functions can be used to concatenate array elements to form a 
+single delimited string? 
+a) explode() 
+b) implode() 
+c) concat() 
+d) c

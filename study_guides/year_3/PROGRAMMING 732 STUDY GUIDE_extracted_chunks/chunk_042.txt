@@ -1,0 +1,21 @@
+1.2.21 Tables  
+A table is a component that displays rows and columns of data. You can drag the cursor on column 
+boundaries to resize column. You can also drag a column to a new position. Tables are implemented by 
+the JTable class, which extends Jcomponent. One of its constructors is shown here:  
+JTable(Object data[ ][ ], Object colHeads[ ])  
+  
+Here, data is two-dimensional array information to be presented, and colHeads is a one-dimensional array 
+with the column headings. Here are the steps for using a table in an applet:  
+  
+1. Create a JTable object.  
+2. Create a JscrollPane object. (The arguments to the constructor specify the table and the      policies for 
+vertical and horizontal scroll bars).  
+3. Add the table to the scroll pane.  
+4. Add the scroll pane to the content pane of the applet.  
+  
+The following example illustrates how to create and use a table: The content pane of the JApplet object is 
+obtained and a border layout is assigned as its layout manager. A one-dimensional array of strings is 
+created for the column headings. This table has three columns. A twodimensional array of strings is 
+created for the table cells. You can see that each element in the array is an array of three strings. These 
+arrays are passed to the JTable constructor. The table is added to a scroll pane and then the scroll pane is 
+added to the content pane.

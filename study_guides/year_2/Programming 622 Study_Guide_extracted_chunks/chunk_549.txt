@@ -1,0 +1,36 @@
+(h(X) + i * c) % HTSize  
+  
+If c = 2 and h(X) = 2k, that is, h(X) is even, only the even-numbered array positions are visited. Similarly, if 
+c = 2 and h(X) = 2k + 1, that is, h(X) is odd, only the odd-numbered array positions are visited. To visit all 
+the array positions, the constant c must be relatively prime to HTSize.  
+  
+  
+  
+  
+  
+  
+  
+
+272  
+  
+7.3.3.2 Random Probing  
+  
+This method uses a random number generator to find the next available slot. The ith slot in the probe 
+sequence is  
+(h(X) + ri) % HTSize  
+  
+where ri is the ith value in a random permutation of the numbers 1 to HTSize – 1. All insertions and 
+searches use the same sequence of random numbers.  
+  
+EXAMPLE 7-5  
+  
+  
+  
+7.3.3.3 Rehashing  
+  
+In this method, if a collision occurs with the hash function h, we use a series of hash functions, h1, h2, . . 
+., hs. That is, if the collision occurs at h(X), the array slots hi(X), 1 ≤ hi(X) ≤ s are examined.  
+  
+7.3.3.4 Quadratic Probing  
+  
+Suppose that

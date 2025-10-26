@@ -1,0 +1,25 @@
+, the member function equalTime executes and compares the three instance 
+variables of myClock to the corresponding instance variables of yourClock. Because in this statement 
+equalTime is a member of the object myClock, it has direct access to the three instance variables of 
+myClock. So it needs one more object, which in this case is yourClock, to compare. This explains why the 
+function equalTime has only one parameter.  
+  
+The objects myClock and yourClock can access only public members of the class. Thus, the following 
+statements are illegal because hr and min are declared as private members of the class clockType and, 
+therefore, cannot be accessed by the objects myClock and yourClock:  
+  
+myClock.hr = 10;   
+  
+  
+//illegal myClock.min 
+= yourClock.min;   
+//illegal  
+  
+  
+  
+  
+ 
+1.4.5  Implementation of Member Functions  
+  
+When we defined the class clockType, we included only the function prototype for the member functions. 
+For these functions to work properly, we must

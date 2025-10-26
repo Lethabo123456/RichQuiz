@@ -1,0 +1,24 @@
+st function. What we have is this: 
+secondFunction(); 
+ 
+To call a function into action, then, all you need to do is to type the function name, and 
+its round brackets, ending the line with a semicolon. 
+ 
+Try it out for yourself. When you load the page in a browser, the BODY onLoad call is 
+the first thing to happen. This activates myFunction. When myFunction gets executed, 
+it calls secondFunction into action. 
+  
+4.2.2 Return values 
+ 
+Quite often, you will want to get something back from your functions. If you are 
+examining an email address for errors, you would want to get back the results from 
+your code (is it a valid email address or not). Or if you have a check box asking user to 
+
+ 
+69 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+agree to your terms and conditions, you would want the answer back from your 
+function. This value that you want to get back is called the return value in JavaScript. 
+The return value can be a string of text, a number, a Boolean value, or even objects. 
+But the

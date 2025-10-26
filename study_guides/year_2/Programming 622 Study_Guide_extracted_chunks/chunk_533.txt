@@ -1,0 +1,14 @@
+e room for the item to be inserted, and 
+then we insert the item. Because the list is sorted and stored in an array, we can use an algorithm similar 
+to the binary search algorithm to find the place in the list where the item is to be inserted. We can then 
+use the function insertAt (of the class arrayListType) to insert the item. (Note that we cannot use the 
+binary search algorithm as designed previously because it returns –1 if the item is not in the list. Of course, 
+we can write another function using the binary search technique to find the position in the array where 
+the item is to be inserted.) Therefore, the algorithm to insert the item is: (The special cases, such as 
+inserting an item in an empty list or in a full list, are handled separately.)  
+  
+1. Use an algorithm similar to the binary search algorithm to find the place where the item is to be 
+inserted.  
+2. if the item is already in this list   
+output an appropriate message else use the function 
+insertAt to insert t

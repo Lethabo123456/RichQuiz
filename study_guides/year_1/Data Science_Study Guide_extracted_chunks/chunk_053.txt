@@ -1,0 +1,34 @@
+Figure 4.1 - Yelp Table 
+ 
+Let’s ask some questions of the data. 
+a) Is the data organized or not?  Because we have a nice row/column structure, we can conclude 
+that this data seems pretty organized. 
+ 
+b) What does each row represent? It’s obvious that each row represents a user giving a review of a 
+business. The next thing we should do is to examine each row and label it by the type of data it 
+contains. At this point, we can also use python to figure out just how big our dataset is. We can 
+use the shape quality of a Dataframe to find this out, as shown: 
+ 
+   yelp_raw_data.shape 
+Output # (10000,10) 
+ 
+# (10000, 10) tells us that the dataset has 10000 records and 10 fields/columns. Your own .csv file 
+will yield different results or in this case shape. Observe the table shown to confirm that we in fact 
+have 10 columns/Fields. Using the information learnt in the previous chapter try and identify what 
+level of data each column represents. Additionally, determine which column(s) can be regarded as 
+quantitative and qualitative data. 
+ 
+c) Are there any missing data points? 
+Perform an isnull operation. For example if your dataframe is called awesome_dataframe 
+then try the python command awesome_dataframe.isnull().sum()which will show the 
+number of missing values in each column. 
+ 
+d) Do we need to perform any transformations on the columns? 
+Before starting, let's go over some quick terminology for pandas, the python data exploration 
+module. 
+Dataframes - When we read in a dataset, Pandas creates a custom object called Dataframe. 
+Think of this as the python version of a spreadsheet (but way better). In this case, the variable, 
+yelp_raw_data, is a Dataframe. To check whether this is true in Python, type in the following 
+code: 
+ type(yelp_raw_data) 
+Output #pandas.core.frame.DataFrame 

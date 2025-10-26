@@ -1,0 +1,20 @@
+queue as shown in Figure 6-6(a).  
+  
+  
+FIGURE 6-6 Queue before and after the add operation  
+  
+After the operation addQueue(Queue,'Z');, the queue is as shown in Figure 6-6(b).  
+  
+Because the array containing the queue is circular, we can use the following statement to advance 
+queueRear (queueFront) to the next array position:  
+ queueRear = (queueRear + 1) % maxQueueSize;  
+  
+If queueRear < maxQueueSize - 1, then queueRear + 1 <= maxQueueSize - 1, so (queueRear + 1) % 
+maxQueueSize = queueRear + 1. If queueRear == maxQueueSize - 1 (that is, queueRear points to the last 
+array position), queueRear + 1 == maxQueueSize, so (queueRear + 1) % maxQueueSize = 0. In this case, 
+queueRear will be set to 0, which is the first array position.  
+  
+This queue design seems to work well. Before we write the algorithms to implement the queue operations, 
+consider the following two cases.  
+  
+Case 1:  Suppose that after certain operations, the array containing the queue is as shown in Figure

@@ -1,0 +1,49 @@
+<?php 
+echo ucwords("i love my country"); 
+?> 
+a) I love my country 
+b) i love my Country 
+c) I love my Country 
+d) I Love My Country 
+ 
+Answer: d 
+ 
+40. What will be the output of the following PHP code? 
+<?php 
+echo lcfirst("welcome to India"); 
+?> 
+a) welcome to India 
+b) welcome to india 
+c) Welcome to India 
+d) Welcome to india 
+ 
+Answer: a 
+ 
+41. PHP’s numerically indexed array begin with position __. 
+a) 1 
+b) 2 
+c) 0 
+d) -1 
+ 
+Answer: c 
+ 
+42. Which of the following are correct ways of creating an array? 
+i) state[0] = “karnataka”; 
+ii) $state[] = array(“karnataka”); 
+iii) $state[0] = “karnataka”; 
+iv) $state = array(“karnataka”); 
+a) iii) and iv) 
+b) ii) and iii) 
+c) Only i) 
+d) ii), iii) and iv) 
+ 
+
+Answer: a 
+ 
+43. What will be the output of the following php code? 
+<?php 
+$states = array("karnataka" => array 
+( "population" => "11,35,000", "captial" => "Bangalore"), 
+"Tamil Nadu" => array( "population" => "17,90,000", 
+"captial" => "Chennai") ); 
+echo $states["karnataka"]["

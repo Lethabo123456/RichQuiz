@@ -1,0 +1,17 @@
+m of the class queueADT.  
+  
+ 
+6.2  
+Implementation of Queues as Arrays  
+  
+Before giving the definition of the class to implement a queue as an ADT, we need to decide how many 
+member variables are needed to implement the queue. Of course, we need an array to store the queue 
+elements, the variables queueFront and queueRear to keep track of the first and last elements of the 
+queue, and the variable maxQueueSize to specify the maximum size of the queue. Thus, we need at least 
+four member variables.   
+  
+Before writing the algorithms to implement the queue operations, we need to decide how to use 
+queueFront and queueRear to access the queue elements. How do queueFront and queueRear indicate 
+that the queue is empty or full? Suppose that queueFront gives the index of the first element of the queue, 
+and queueRear gives the index of the last element of the queue. To add an element to the queue, first we 
+advance queueRear to the next array position and then add the element to the po

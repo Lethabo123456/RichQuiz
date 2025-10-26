@@ -1,0 +1,44 @@
+3. Exploring Data: 
+# Displaying the first few rows of the DataFrame 
+print(df.head()) 
+ 
+# Getting basic statistics about the DataFrame 
+print(df.describe()) 
+ 
+# Accessing columns and rows 
+age_column = df['Age'] 
+row_0 = df.iloc[0] 
+ 
+4. Data Manipulation: 
+# Adding a new column 
+df['Salary'] = [50000, 60000, 70000] 
+ 
+# Filtering rows 
+filtered_df = df[df['Age'] > 30] 
+ 
+# Grouping and Aggregation 
+grouped_df = df.groupby('City').mean() 
+
+ 
+5. Handling missing Data 
+# Checking for missing values 
+print(df.isnull()) 
+ 
+# Dropping rows with missing values 
+df_cleaned = df.dropna() 
+
+6. Data I/O 
+# Writing DataFrame to a CSV file 
+df.to_csv('output.csv', index=False) 
+ 
+# Reading data from an Excel file 
+df_excel = pd.read_excel('data.xlsx')
+ 
+# Filling missing values with a specific value 
+df_filled = df.fillna(0) 
+ 
+6. Data I/O 
+# Writing DataFrame to a CSV file 
+df.to_csv('output.csv', index=False) 
+ 
+# R

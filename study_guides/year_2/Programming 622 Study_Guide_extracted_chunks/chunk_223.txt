@@ -1,0 +1,23 @@
+search the list for the node with the given info and, if such a node is found, we delete this node. After 
+deleting the node, count is decremented by 1. In pseudocode, the algorithm is as follows:  
+  
+if list is empty  
+Output(cannot delete from an empty list); else  
+{ if the first node is the node with the given info  
+adjust the head pointer, that is, first, and deallocate 
+the memory; else  
+{ search the list for the node with the given info if 
+such a node is found, delete it and adjust the 
+values of last (if necessary) and count.  
+}  
+}   
+Case 1:   
+The list is empty. If the list is empty, output an error message as shown in the 
+pseudocode.  
+Case 2:   
+The list is not empty and the node to be deleted is the first node. This case has two 
+scenarios: list has only one node, and list has more than one node. If list has only one node, 
+then after deletion, the list becomes empty. Therefore, after deletion, both first and last 
+are set to NULL and count is set to 0.  
+  
+Suppose

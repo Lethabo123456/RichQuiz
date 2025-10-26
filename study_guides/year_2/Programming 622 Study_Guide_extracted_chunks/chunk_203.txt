@@ -1,0 +1,17 @@
+rom the class linkedListType. Because each of the classes unorderedLinkedList and 
+orderedLinkedList will provide separate definitions of the functions search, insertFirst, insertLast, and 
+deleteNode, and because these functions would access the instance variable, to provide direct access to 
+the instance variables, the instance variables are declared as protected.  
+  
+
+101  
+  
+The definition of the class linkedListType includes a member function to overload the assignment 
+operator. For classes that include pointer data members, the assignment operator must be explicitly 
+overloaded. For the same reason, the definition of the class also includes a copy constructor.  
+  
+Notice that the definition of the class linkedListType contains the member function copyList, which is 
+declared as a private member. This is because this function is used only to implement the copy constructor 
+and overload the assignment operator.  
+  
+Next, we write the definitions of the nonabstract functions of

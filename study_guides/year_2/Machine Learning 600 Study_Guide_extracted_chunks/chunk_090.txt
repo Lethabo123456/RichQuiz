@@ -1,0 +1,18 @@
+ect or the other. Think of it as a 0 or a 1. With some supervised 
+learning, you could figure out pretty quickly where those classes would lie with a reasonable 
+amount of confidence. What about when there are more than two classes? For example, you 
+can add triangles to the mix, as shown in Figure 5.3. 
+  
+ 
+                                                                        Figure 5.3: Multiple classes to be classified 
+ 
+Binary classification isn't going to work here. You're now presented with a multiclass 
+classification problem.  
+
+P a g e  | 56 
+ 
+Because there are more than two classes, you have to use an algorithm that can classify these 
+classes accordingly. It's worth noting, though, that some multiclass methods use pair-wise 
+combinations of binary classifiers to get to a prediction. 
+Linear classifier. To determine in which group an object belongs, you use a linear classifier to 
+establish the locations of the objects and see if there's a neat dividing line. This line i

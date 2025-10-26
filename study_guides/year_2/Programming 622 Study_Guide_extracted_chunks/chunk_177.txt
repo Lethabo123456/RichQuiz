@@ -1,0 +1,15 @@
+we will use only the arrow notation.  
+  
+3.1.1.1 Traversing a Linked List  
+  
+The basic operations of a linked list are as follows: Search the list to determine whether a particular item 
+is in the list, insert an item in the list, and delete an item from the list. These operations require the list to 
+be traversed. That is, given a pointer to the first node of the list, we must step through the nodes of the 
+list.  
+  
+Suppose that the pointer head points to the first node in the list, and the link of the last node is NULL. We 
+cannot use the pointer head to traverse the list because if we use the head to traverse the list, we would 
+lose the nodes of the list. This problem occurs because the links are in only one direction. The pointer 
+head contains the address of the first node, the first node contains the address of the second node, the 
+second node contains the address of the third node, and so on. If we move head to the second node, the 
+first node is lost (unless we save a p

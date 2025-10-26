@@ -1,0 +1,13 @@
+xity of the data structures being modelled has increased and as application software 
+requirements have become more stringent, the need to capture more information in the data model 
+has increased. The extended entity relationship model (EERM), sometimes referred to as the 
+enhanced entity relationship model, is the result of adding more semantic constructs to the 
+original ER model. As you might expect, a diagram that uses the EERM is called an EER diagram 
+(EERD). In the following sections, you will learn about the main EER model constructs—entity 
+super-types, entity subtypes, and entity clustering—and see how they are represented in ERDs or 
+EERDs. 
+Entity Super-types and Subtypes 
+In modelling terms, an entity supertype is a generic entity type that is related to one or more entity 
+subtypes. The entity supertype contains common characteristics, and the entity subtypes each 
+contain their own unique characteristics. 
+Two criteria help the designer determine when to use subtypes an

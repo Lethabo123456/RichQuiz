@@ -1,0 +1,27 @@
+Most Internet web servers that allow just about anyone to download ﬁles also allow the 
+username anonymous, as I demonstrated. In addition to anonymous, you can use the username 
+ftp to gain access to a public FTP server. They are both anonymous usernames. Remember that 
+FTP (and Unix) usernames are case sensitive. 
+
+All good, but if you want to access a private FTP server, as I’ll demonstrate in a minute, you’ll need 
+to use the username and password given to you by the site’s administrator. Oh, and sometimes 
+you can use your email address as a password when accessing a public FTP server with a 
+username like anonymous. 
+If you enter the wrong username and/or password, the server will tell you so by displaying the 
+following and leaving you at the ftp command prompt: 
+
+530 Login Incorrect 
+Login failed. 
+
+Downloading Files 
+After you log in to the FTP server, you’ll navigate to the directory that contains the ﬁles you want. 
+Thankfully, the FTP command-line interface is similar to the DOS command-line interface. 
+This is no surprise because DOS is based on Unix and FTP is a Unix utility. Table 5.8 lists and 
+describes the common navigation commands for FTP. (Remember that these are also case 
+sensitive.) 
+After you navigate to the directory and ﬁnd the ﬁle you want to download, it’s time to set nthe 
+parameters for the type of ﬁle. Files come in two types: 
+• ASCII, which contains text 
+• Binary, which is all other ﬁles 
+If you set ftp to the wrong type, the ﬁle you download will contain gibberish. So if you’re in doubt, 
+set ftp to download ﬁles as binary ﬁles. Check out Table 5.8. 

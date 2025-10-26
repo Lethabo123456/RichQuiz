@@ -1,0 +1,16 @@
+e the following. 
+ 
+Creating and Modifying the Database 
+ 
+Schemas or designs are entered into the DBMS (usually by database personnel) via a data 
+definition language. A data definition language (DDL) is a collection of instructions and 
+commands used to define and describe data and relationships in a specific database. A DDL 
+allows the database’s creator to describe the data and relationships. Structured Query Language 
+(SQL) is a DDL. Figure 5.7 shows four SQL statements to create a database called Let- tings, 
+a table called Landlords and insert a record about John Smith. 
+ 
+Another important step in creating a database is to establish a data dictionary, a detailed 
+description of all data used in the database. The data dictionary describes all the fields in the 
+database, their range of accepted values, the type of data (such as alphanumeric or numeric), 
+the amount of storage space needed for each and a note of who can access each and who updates 
+each. Figure 5.8 shows a typica

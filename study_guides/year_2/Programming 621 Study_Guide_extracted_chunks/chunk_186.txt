@@ -1,0 +1,24 @@
+ns on that data in a single unit is 
+called a class. Now that you know how to store and manipulate data in computer 
+memory and how to construct your own functions, you are ready to learn how objects 
+are constructed. This and subsequent chapters develop and implement programs 
+using OOD. This chapter first explains how to define a class and use it in a program. 
+ 
+A class is a collection of a fixed number of components. The components of a class 
+are called the members of the class. 
+ 
+The general syntax for defining a class is: 
+ 
+in which classMembersList consists of variable declarations and/or functions. That is, 
+a member of a class can be either a variable (to store data) or a function (to manipulate 
+data). 
+For example, the following statements define the class courseType, with variables and 
+functions, to implement the basic properties of a course. 
+
+171 | P a g e  
+ 
+class courseType  
+{  
+public: 
+void setCourseInfo(string cName, string cNo, int credits);  
+void print() con

@@ -1,0 +1,35 @@
+5.3 Heatmaps in Seaborn 
+Heatmap is defined as a graphical representation of data using colors to visualize the value of the matrix. In 
+this, to represent more common values or higher activities brighter colors basically reddish colors are used 
+and to represent less common or activity values, darker colors are preferred. Heatmap is also defined by the 
+name of the shading matrix. Heatmaps in Seaborn can be plotted by using the seaborn.heatmap() function. 
+ 
+The heatmap function allows creating heat maps or correlations plots in Python with seaborn. You can pass a 
+2D data set or a pandas dataframe. In case you provide a pandas data frame the row and column names will 
+be used to label the plot axes. 
+
+Squared tiles 
+
+Note that depending on the number of rows and columns and the size of the plot the tiles of the heat map 
+could be non-square. If you want to fix the aspect ratio of the tiles set the argument square to True. 
+ 
+Border 
+  
+You can also add a border for the tiles setting the width of the lines with linewidths, which defaults to 0. The 
+default color will be white, but you can override it with linecolor. 
+ 
+Annotations 
+ 
+In addition, it is possible to add the values for each cell with annot = True. If you need to change the size or 
+other styling of the texts you can pass a dictionary to annot_kws, as in the example below. 
+
+Color customization 
+  
+The colors of a heat map can be customized in two ways: you can create a diverging color palette setting a center 
+value with center or changing the color palette with cmap. 
+ 
+Color bar 
+  
+Note that you can remove the color bar (the legend) if desired setting cbar = False, customize it passing a 
+dictionary to cbar_kws or change the lower and upper limits of the bar with vmin and vmax, respectively. 
+ 

@@ -1,0 +1,50 @@
+Floating-Point Data Types 
+ 
+To deal with decimal numbers, C++ provides the floating-point data type, which we 
+discuss in this section. 
+To facilitate the discussion, let us review a concept from a high school or college 
+algebra course. You may be familiar with scientific notation. For example:  
+ 
+43872918 = 4.3872918 * 107 {10 to the power of seven}  
+.0000265 = 2.65 * 10-5 {10 to the power of minus five} 
+47.9832 = 4.79832 * 101 {10 to the power of one}  
+
+To represent decimal numbers, C++ uses a form of scientific notation called floating-
+point notation. In the C++ floating-point notation, the letter E stands for the exponent. 
+ 
+C++ provides three data types to manipulate decimal numbers: float, double, and long 
+double. As in the case of integral data types, the data types float, double, and long 
+double differ in the set of values it can represent. 
+float: The data type float is used in C++ to represent any decimal number between -
+3.4 * 1038 and 3.4 * 1038. The memory allocated for a value of the float data type is 
+four bytes. double: 
+
+ The data type double is used in C++ to represent any decimal number between -1.7 
+* 10308 and 1.7 * 10308. The memory allocated for a value of the double data type is 
+eight bytes. The maximum and minimum values of the data types float and double are 
+system dependent. To find these values on a particular system, you can check your 
+compiler’s documentation or, alternatively, you can run a program given in Appendix 
+F (Header File cfloat). Other than the set of values, there is one more difference 
+between the data types float and double. The maximum number of significant digits—
+that is, the number of decimal places—in float values is six or seven. 
+
+The maximum number of significant digits is called the precision. Sometimes float 
+values are called single precision, and values of type double are called double 
+precision. If you are dealing with decimal numbers, for the most part you need only the 
+float type; if you need accuracy to more than six or seven decimal places, you can use 
+the double type. 
+
+String Data Type 
+ 
+The data type string is a programmer-defined data type. It is not directly available for 
+use in a program like the simple data types discussed earlier. To use this data type, 
+you need to access program components from the library, which will be discussed 
+later in this chapter. The data type string is a feature of ANSI/ISO Standard C++. 
+ 
+A string is a sequence of zero or more characters. Strings in C++ are enclosed in 
+double quotation marks. A string containing no characters is called a null or empty 
+string. The following are examples of strings. Note that "" is the empty string. "William 
+Jacob" "Mickey" "" Every character in a string has a relative position in the string. The 
+position of the first character is 0, the position of the second character is 1, and so on. 
+The length of a string is the number of characters in it. When determining the length 
+of a string, you must also count any spaces in the string. 

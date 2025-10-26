@@ -1,0 +1,15 @@
+nd data- bases changed during the 
+last few days or the last week, a technique called incremental back-up. One approach to 
+backup uses a transaction log, which is a separate file that contains only changes to the database 
+and is backed up more frequently than the database itself (which is much bigger). If a problem 
+occurs with a current database, the transaction log and the last back-up of the database, can be 
+used to recreate the current database.  
+  
+  
+Systems Controls  
+Security lapses, fraud and the invasion of privacy can present disastrous problems. For 
+example, because of an inadequate security and control system, a futures and options trader for 
+a British bank lost almost £1 billion. A simple systems control might have prevented a problem 
+that caused the 200-year-old Barings Bank to collapse. In addition, from time to time, tax 
+officials have been caught looking at the returns of celebrities and others. Preventing and 
+detecting these problems is an important part of

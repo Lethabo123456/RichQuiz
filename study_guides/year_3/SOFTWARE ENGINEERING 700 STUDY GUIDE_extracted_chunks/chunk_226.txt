@@ -1,0 +1,24 @@
+7.4 Refactoring  
+Refactoring is the process of making improvements to a program to slow down degradation 
+through change. It means modifying a program to improve its structure, reduce its complexity, or 
+make it easier to understand. Refactoring is sometimes considered to be limited to object-
+oriented development, but the principles can in fact be applied to any development approach. 
+When you refactor a program, you should not add functionality but rather should concentrate on 
+program improvement. You can therefore think of refactoring as “preventative maintenance” that 
+reduces the problems of future change. 
+ 
+Refactoring is an inherent part of agile methods because these methods are based on change. 
+Program quality is liable to degrade quickly, so agile developers frequently refactor their programs 
+to avoid this degradation. The emphasis on regression testing in agile methods lowers the risk of 
+introducing new errors through refactoring. Any errors that are introduced should be detectable, 
+as previously successful tests should then fail. However, refactoring is not dependent on other 
+“agile activities.” 
+ 
+Although reengineering and refactoring are both intended to make software easier to understand 
+and change, they are not the same thing. Reengineering takes place after a system has been 
+maintained for some time, and maintenance costs are increasing. You use automated tools to 
+process and reengineer a legacy system to create a new system that is more maintainable. 
+Refactoring is a continuous process of improvement throughout the development and evolution 
+process. It is intended to avoid the structure and code degradation that increases the costs and 
+difficulties of maintaining a system. 
+ 

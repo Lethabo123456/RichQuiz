@@ -1,0 +1,36 @@
+of the linked list. This can be done by calling the function 
+copyList. Because the function copyList checks whether the original is empty by checking the value of first, 
+we must first initialize the pointer first to NULL before calling the function copyList.  
+  
+The definition of the copy constructor is as 
+follows: template <class Type> 
+linkedListType<Type>::linkedListType (const 
+linkedListType<Type>& otherList)  
+{ first = NULL; 
+copyList(otherList);  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end copy constructor  
+  
+  
+3.2.15 Overloading the Assignment Operator  
+  
+The definition of the function to overload the assignment operator for the class linkedListType is similar 
+to the definition of the copy constructor. We give its definition for the sake of completeness.  
+  
+//overload the assignment operator template 
+<class Type>  
+const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>& otherList)  
+{  
+ 
+if (this != &otherList)    
+  
+//avoid self-copy  
+{

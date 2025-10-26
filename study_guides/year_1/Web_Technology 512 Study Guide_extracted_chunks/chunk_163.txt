@@ -1,0 +1,41 @@
+unction that creates an object's prototype. 
+prototype 
+The prototype property allows you to add properties and methods to 
+an object. 
+Table 6.10 – The Date Object Properties 
+ 
+6.2.5.3 Date Methods 
+Here is a list of each method and its description. 
+
+ 
+103 
+ 
+SIX | JAVASCRIPT OBJECTS 
+ 
+Method 
+Description 
+Date() 
+Returns today's date and time 
+getDate() 
+Returns the day of the month for the specified date 
+according to local time. 
+getDay() 
+Returns the day of the week for the specified date 
+according to local time. 
+getFullYear() 
+Returns the year of the specified date according to local 
+time. 
+getHours() 
+Returns the hour in the specified date according to local 
+time. 
+getMilliseconds() 
+Returns the milliseconds in the specified date according to 
+local time. 
+getMinutes() 
+Returns the minutes in the specified date according to local 
+time. 
+getMonth() 
+Returns the month in the specified date according to local 
+time. 
+getSeconds() 
+Returns the seconds in the specified date a

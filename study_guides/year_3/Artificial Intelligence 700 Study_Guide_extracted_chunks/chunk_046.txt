@@ -1,0 +1,28 @@
+Standard system 
+It is a trained person or a computer program that is able to produce the correct 
+output. In order to check whether the machine learning system has learned well, the 
+same input is given to the standard system. The outputs of standard system and that 
+of performance element are given as inputs to the feedback element for the 
+comparison. Standard system is also called idealized system. 
+The sequence of operations described above may be repeated until the system gets 
+the desired perfection. 
+ 
+There are several factors affecting the performance. They are, 
+• Types of training provided 
+• The form and extent of any background knowledge 
+• The type of feedback provided 
+• The learning algorithms used 
+
+Training is the process of making the system able to learn. It may consist of randomly 
+selected examples that include a variety of facts and details including irrelevant data. 
+The learning techniques can be characterized as a search through a space of possible 
+hypotheses or solutions. Background knowledge can be used to make learning more 
+efficient by reducing the search space. The feedback may be a simple yes or no type 
+of evaluation or it may contain useful information describing why a particular action 
+was good or bad. If the feedback is always reliable and carries useful information, the 
+learning process will be faster and the resultant knowledge will be correct. 
+The success of machine learning system also depends on the algorithms. These 
+algorithms control the search to find and build the knowledge structures. The 
+algorithms should extract useful information from training examples. There are 
+several machine learning techniques available. I have explored some of the important 
+techniques.

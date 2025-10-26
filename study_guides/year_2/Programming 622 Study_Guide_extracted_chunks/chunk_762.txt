@@ -1,0 +1,18 @@
+of a node. The item 37 is to be inserted in the right child of 30. However, the 
+right child of 30 is full, as shown in Figure 9-27(a). So we split the right child of 30, insert 37, and move the 
+median key, which is 54, to the parent node. Because the parent node is not full, the median key 54 is 
+inserted into the parent node; see Figure 9-27(b).  
+  
+Figure 9-28 shows the insertion of 25, 62, 81, 150, and 79 into the B-tree of Figure 9-27(b).  
+  
+  
+FIGURE 9-28 Insertion of 25, 62, 81, 150, and 79  
+  
+
+375  
+  
+Note that 25, 62, 81, and 150 are inserted without splitting any node; see Figure 9-28(a). However, the 
+insertion of 79 requires the splitting of a node. The item 79 is to be inserted in the right child of 54. 
+However, the right child of 54 is full; see Figure 9-28(a). So we split the right child of 54, insert 79, and 
+move the median key, which is 73, to the parent node. Because the parent node is not full, the median 
+key 73 is inserted into the parent node; see Figure

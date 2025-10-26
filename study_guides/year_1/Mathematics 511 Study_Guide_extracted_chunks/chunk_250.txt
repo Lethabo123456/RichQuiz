@@ -1,0 +1,20 @@
+ 4.6.1 A Shortest-Path Algorithm 
+There are several different algorithms that find a shortest path between two 
+vertices in a weighted graph. We will present a greedy algorithm discovered 
+by the Dutch mathematician Edsger Dijkstra in 1959. The version we will 
+describe solves this problem in undirected weighted graph where all the 
+weights are positive. It is easy to adapt it to solve shortest-path problems in 
+directed graphs. 
+Before giving a formal presentation of the algorithm, we will give an 
+illustrative example. 
+ 
+
+Worked Example 
+What is the length of a shortest path between a and z in the weighted 
+graph shown below? 
+ 
+Solution: 
+Although a shortest path is easily found by inspection, we will develop 
+some ideas useful in understanding Dijkstra’s algorithm. We will solve this 
+problem by finding the length of a shortest path from a to successive 
+vertices, until z is reached. 

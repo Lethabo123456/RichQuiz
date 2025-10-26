@@ -1,0 +1,86 @@
+erver 
+C. It processes the HTML and PHP files 
+D. All of the above 
+ANS: C 
+27. How are PHP files accessed? 
+A. Through the Web Browser 
+B. Through HTML files 
+C. Through the Web Server 
+D. All of the above 
+ANS: C 
+ 
+28. Variables in PHP are case sensitive 
+A. True 
+B. False 
+
+IP 621  
+C. Depends on server 
+D. Depends on browser 
+ANS: A 
+ 
+29. What will be the output of the following PHP code? 
+ 
+<?php 
+ 
+ 
+$a = 10; 
+ 
+ 
+ 
+echo ++$a; 
+ 
+ 
+ 
+echo $a++; 
+ 
+ 
+ 
+echo $a; 
+ 
+ 
+ 
+echo ++$a; 
+ 
+?> 
+ 
+A. 11111213 
+B. 11121213 
+C. 11111212 
+D. 11111112 
+ANS: A 
+30. What will be the output of the following PHP Code? 
+ 
+<?php 
+ 
+ 
+$a = 12; 
+ 
+ 
+--$a; 
+ 
+Echo $a++; 
+ 
+?> 
+A. 11 
+B. 12 
+C. 10 
+D. error 
+ANS: A 
+ 
+31. Trace the odd data type 
+A. floats 
+
+IP 621  
+B. integer 
+C. doubles 
+D. Real number 
+ANS: D 
+ 
+32. In php string data are 
+A. delimited by single quote 
+B. delimited by double quote 
+C. delimited by <<< identifier 
+D. All of above 
+ANS: B 
+ 
+32. Which data types are treated as arrays

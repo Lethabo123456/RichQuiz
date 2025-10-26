@@ -1,0 +1,7 @@
+1.3.3 Using Private Constructors 
+In C# there are no global methods or constants. You might find yourself creating small utility 
+classes that exist only to hold static members. Setting aside whether this is a good design or 
+not, if you create such a class you will not want any instances created. You can prevent any 
+instances from being created by creating a default constructor (one with no parameters), 
+which does nothing, and which is marked private. With no public constructors, it will not be 
+possible to create an instance of your class.

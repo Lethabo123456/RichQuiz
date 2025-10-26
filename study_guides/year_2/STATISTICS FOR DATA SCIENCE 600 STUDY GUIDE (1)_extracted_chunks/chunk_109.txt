@@ -1,0 +1,45 @@
+So, basically, I want the following: 
+• P (A and B): P (I choose a person with an iPhone and a person with an iPhone) 
+So, I can use my P (A and B) = P(A) · P(B|A) formula. 
+P(A) is simple, right? People with iPhones are 6 out of 10, so, I have a 6/10 = 3/5 = 0.6 
+chance of A. This means P(A) = 0.6. 
+So, if I have a 0.6 chance of choosing someone with an iPhone, the probability of 
+choosing two should just be 0.6 * 0.6, right? 
+But wait! We only have 9 people left to choose our second person from, because one 
+was taken away. So, in our new transformed sample space, we have 9 people in total, 
+5 with iPhones and 4 with droids, making P(B) = 5/9 = .555. 
+So, the probability of choosing two people with iPhones is 0.6 * 0.555 = 0.333 = 33%. 
+4I have a 1/3 chance of choosing two people with iPhones out of 10. The conditional 
+probability is very important in the multiplication rule as it can drastically alter your 
+answer. 
+Independence 
+Two events are independent if one event does not affect the outcome of the other, 
+that is P(B|A) = P(B) and P(A|B) = P(A). 
+If two events are independent, then: 
+P (A ∩ B) = P(A) · P(B|A) = P(A) · P(B) 
+
+Some examples of independent events are as follows: 
+• It was raining in San Francisco, and a puppy was born in India 
+• Flip a coin and get heads and flip another coin and get tails 
+None of these pairs of events affect each other. 
+
+3.8. Discrete and continuous probability distributions. 
+ 
+Probability distributions are fundamental tools in statistics and data science, providing a 
+way to model and understand the uncertainty in various phenomena. Discrete 
+probability distributions, such as the binomial and Poisson distributions, deal with 
+outcomes that can be counted and are often used to analyse discrete random 
+variables. These distributions are essential for predicting and understanding outcomes 
+ranging from the number of successes in a fixed number of trials to the number of 
+customers visiting a store in a day. Let’s explore the fascinating world of discrete 
+probability distributions and their applications in modelling and predicting random 
+events. 
+
+Significance of Probability distributions in Data Science  
+In a way, most of the data science and machine learning operations are dependent on 
+several assumptions about the probability of your data. Probability distribution allows 
+a skilled data analyst to recognize and comprehend patterns from large data sets; that 
+is, otherwise, entirely random variables and values. Thus, it makes probability 
+distribution a toolkit based on which we can summarize a large data set. The density 
+function and distribution techniques can also help in plotting data, thus supporting 
+data analysts to visualize data and extract meaning. 

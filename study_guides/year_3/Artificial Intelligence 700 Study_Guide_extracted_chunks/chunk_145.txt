@@ -1,0 +1,22 @@
+A block world with it is predicate calculus description. 
+- To pick up a block and stack it on another block, both blocks must be clear. In figure 
+above, block [a] is not clear. 
+- Because the arm can move blocks, it can change the state of the world and clear a 
+block. 
+The following rule describes when a block is clear: 
+ 
+6X(~EY on(Y,X) → clear(X)). 
+ 
+That is , for all X , X is clear if there does not exist Y such that Y is on X. 
+ 
+- Besides using implication to define when a block is clear, other rules may be added 
+that describe operations such as stacking a block on another.  
+ 
+For example : to stack X on Y first empty the hand, then clear Y, then clear X, and then 
+pick-on X. and put-down X on Y. 
+6X6Y (( hand-empty ^ clear(X) ^ clear(Y) ^ pick-up(X) ^ 
+put-down(X,Y) → stack (X,Y))
+
+(1) Hand-empty Clear Clear(y)  X Y
+(2) pick-up(X) Y
+(3) put-down(X,Y) X Y 

@@ -1,0 +1,34 @@
+Simple Lists 
+The simple list implementation displays only the contact name of each contact in the user’s contact 
+database. For now, the user will be able to scroll through this list and click the list to open the 
+MainActivity, but little else. 
+Open the project you worked on in the previous chapter, or download the Chapter project from the 
+website. 
+ 
+Create the Data Source Method 
+The first step to implementing the simple list is to have data. For this, you need to add a method to 
+the ContactDataSource class that will retrieve each contact’s name. Open ContactDataSource and add 
+the code in Listing 6.1 to create a method for getting this data from the database. 
+
+Much of this method is similar to the method   you   wrote   in  the   previous 
+chapter to retrieve the last contact’s ID number. The primary difference is that 
+the query can return more than one record to the cursor, so you  have to 
+implement a loop to retrieve all the records and add them to the ArrayList. 
+
+5.1.1 Line 2—The return value for this 
+method is an ArrayList. An ArrayList is an object that acts like an array in that the data it holds 
+can be accessed through an index.  In  contrast  to  an  array,  the 
+ArrayList is not a fixed size. It can grow as data is added to it. An ArrayList is parameterized. That’s the 
+<String> portion of the code. This says that the values in the ArrayList are all of the String data type. 
+Parameters for an ArrayList can be more complex objects. Later, you will parameterize an ArrayList to 
+hold the Contact objects. 
+▪ Lines 4-5—The SQL query is written to return the contactname field for all records in the contact 
+table and then executed in Line 5. The cursor object holds the results of the query. 
+▪ Lines 7–11—A loop is set up to go through all the records in the cursor. The loop is initialized by 
+moving to the first record in the cursor. Next, the while loop is set up to test if the end of the cursor’s 
+record set has been reached. Within the loop, the contact name is added to the ArrayList, and the 
+cursor is advanced to the next record. Forgetting the moveToNext() command will leave your method 
+in an infinite loop, because it will never reach the end of the record set. 
+▪ Line 15—The ArrayList is set to a new empty ArrayList in case the routine crashes partially through 
+its filling. This way, the calling activity can test for an empty list to determine if the retrieve was 
+successful. 

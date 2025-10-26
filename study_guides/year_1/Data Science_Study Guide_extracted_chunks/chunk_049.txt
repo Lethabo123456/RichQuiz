@@ -1,0 +1,30 @@
+Model the data 
+This step involves the use of statistical and machine learning models. In this step, we are not only 
+fitting and choosing models, we are implanting mathematical validation metrics in order to quantify 
+the models and their effectiveness. 
+Communicate and visualize the results 
+This is arguably the most important step. While it might seem obvious and simple, the ability to 
+conclude your results in a digestible format is much more difficult than it seems. We will look at 
+different examples of cases when results were communicated poorly and when they were displayed 
+very well (Sinan, 2016). 
+
+Considering that we covered obtaining the data in the previous chapter, we will now move on to the 
+next step which is to Explore the Data. 
+ 
+3.2 Explore the Data 
+Fundamental questions for data exploration: 
+When looking at a new dataset, whether it is familiar to you or not, it is important to use the following 
+questions as guidelines for your preliminary analysis (Sinan, 2016). 
+ 
+• Is the data organized or not? We are checking for whether or not the data is presented in a 
+row/column structure. For the most part, data will be presented in an organized fashion. This 
+is the most rudimentary question that we can answer before diving any deeper into our 
+analysis. A general rule of thumb is that if we have unorganized data, we want to transform it 
+into a row/column structure.  
+• What does each row represent? Once we have an answer to how the data is organized and 
+are now looking at a nice row/column based dataset, we should identify what each row 
+actually represents. This step is usually very quick, and can help put things in perspective much 
+more quickly. 
+• What does each column represent? We should identify each column by the level of data and 
+whether or not it is quantitative/qualitative, and so on. This categorization might change as 
+our analysis progresses, but it is important to begin this step as early as possible. 

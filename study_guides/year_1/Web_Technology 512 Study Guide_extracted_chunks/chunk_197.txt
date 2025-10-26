@@ -1,0 +1,30 @@
+buttons. 
+Here it is: 
+
+ 
+124 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+Figure 7.11 – Dropdown list Validation 
+ 
+The only difference is in the IF Statement. Between the round brackets we have the 
+following: 
+document.frmOne.hear[i].selected 
+ 
+Dropdown lists have a selected property at the end. This means whether an item was 
+selected from the list or not. Again, we are looping over all of the items. Whichever 
+item was chosen will be placed in the variable called chosen. But it's the value 
+property we want to place in the variable. This gets you the text of the item on the 
+list. 
+ 
+We want to detect if the user has left it on the default option of "None". If so, it is an 
+error and we can ask the user to try again. 
+ 
+Test your code out. Do not select an item from the list. When you click the submit 
+button you should see this: 
+ 
+Figure 7.12 – Dropdown list with default value 
+Select an item and then click the button again. The error message will vanish. 
+ 
+7.6 CHECKBOXES 
+The final

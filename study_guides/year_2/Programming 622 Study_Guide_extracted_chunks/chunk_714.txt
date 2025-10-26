@@ -1,0 +1,22 @@
+oid (*visit) (elemType&));   
+//Line 2  
+  
+
+351  
+  
+The statement in Line 1 declares fParamFunc1 to be a function that takes as a parameter any void function 
+that has one value parameter of type int. The statement in Line 2 declares fParamFunc2 to be a function 
+that takes as a parameter any void function that has one reference parameter of type elemType.  
+  
+We can now rewrite the inorder traversal function of the class binaryTreeType. Alternatively, we can 
+overload the existing inorder traversal functions. To further illustrate function overloading, we will 
+overload the inorder traversal functions. Therefore, we include the following statements in the definition 
+of the class binaryTreeType:  
+  
+void inorderTraversal(void (*visit) (elemType&)); //Function 
+to do an inorder traversal of the binary tree. //The 
+parameter visit, which is a function, specifies the //action 
+to be taken at each node.  
+  
+void inorder(binaryTreeNode<elemType> *p, void (*visit) (elemType&));  
+//Fun

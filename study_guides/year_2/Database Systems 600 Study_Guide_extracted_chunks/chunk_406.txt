@@ -1,0 +1,13 @@
+orm a 
+full-table scan and read all 14,786 customer rows. Assuming an index is created (and analysed), the 
+DBMS would be saved from reading approximately 14,776 I/O requests for customer rows that do 
+not meet the criteria. That is a lot of CPU cycles!  
+If indexes are so important, why not index every column in every table? The simple answer is that 
+it is not practical to do so. Indexing every column in every table overtaxes the DBMS in terms of 
+index-maintenance processing, especially if the table has many attributes and rows, or requires 
+many inserts, updates, and deletes. 
+One measure that determines the need for an index is the data sparsity of the column you want to 
+index. Data sparsity refers to the number of different values a column could have. Knowing the 
+sparsity helps you decide whether the use of an index is appropriate. In subsequent sections you 
+will learn and be able to identify when an index is necessary.  
+Most DBMSs implement indexes using one of the following

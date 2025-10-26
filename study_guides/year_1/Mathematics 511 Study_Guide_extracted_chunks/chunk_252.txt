@@ -1,0 +1,24 @@
+The only paths starting at a that contain no vertex other than a are formed 
+by adding an edge that has a as one endpoint. These paths have only one 
+edge. They are a, b of length 4 and a, d of length 2. It follows that d is the 
+closest vertex to a, and the shortest path from a to d has length 2. 
+We can find the second closest vertex by examining all paths that begin 
+with the shortest path from a to a vertex in the set {a, d}, followed by an 
+edge that has one endpoint in {a, d} and its other endpoint not in this set. 
+There are two such paths to consider, a, d, e of length 7 and a, b of length 
+4. Hence, the second closest vertex to a is b and the shortest path from a 
+to b has length 4. 
+To find the third closest vertex to a, we need examine only the paths that 
+begin with the shortest path from a to a vertex in the set {a, d, b}, followed 
+by an edge that has one endpoint in the set {a, d, b} and its other endpoint 
+not in this set. There are three such paths, a, b, c of length 7, a, b, e of 
+length 7, and a, d, e of length 5. Because the shortest of these paths is a, 
+d, e, the third closest vertex to a is e and the length of the shortest path 
+from a to e is 5. 
+To find the fourth closest vertex to a, we need examine only the paths 
+that begin with the shortest path from a to a vertex in the set {a, d, b, e}, 
+followed by an edge that has one endpoint in the set {a, d, b, e} and its 
+other endpoint not in this set. There are two such paths, a, b, c of length 
+7 and a, d, e, z of length 6. Because the shorter of these paths is a, d, e, z, 
+the fourth closest vertex to a is z and the length of the shortest path from 
+a to z is 6. 

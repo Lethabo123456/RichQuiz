@@ -1,0 +1,16 @@
+sure that multiple users can access the database concurrently 
+without compromising its integrity.  
+• 
+Backup and recovery management. The DBMS provides backup and data recovery to ensure 
+data safety and integrity. Current DBMS systems allow the DBA to perform routine and special 
+backup and restore procedures. Recovery management deals with the recovery of the database 
+after a failure, such as a bad sector in the disk or a power failure.  
+• 
+Data integrity management. The DBMS promotes and enforces integrity rules, thus minimizing 
+data redundancy and maximizing data consistency. The data relationships stored in the data 
+dictionary are used to enforce data integrity.  
+• 
+Database access languages and application programming interfaces. The DBMS provides data 
+access through a query language. Structured Query Language (SQL) is the de facto query 
+language and data access standard supported by majority of DBMS vendors. The DBMS also 
+provides application programming interfaces to

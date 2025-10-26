@@ -1,0 +1,20 @@
+and save it in your Web server’s document root folder on your hard 
+drive. What is the document root folder, you ask? When you install Apache, it comes with a default 
+Web site. This Web site has a document root folder, which is the top-level folder into which you put 
+the website’s files. You want to save your testing.html Web page in this folder so you can browse it 
+via your web browser.   
+   
+So where is the document root folder? With WampServer on Windows, the document root folder is 
+usually in C:\wamp\www. So save your testing.html file to the appropriate folder, and then open a 
+Web browser and type the following into its address bar:   
+   
+   
+http://localhost/testing.html   
+   
+Now press Enter. If all has gone according to plan, you should see something like Figure 4.   
+   
+   
+Figure 4   
+   
+If your Apache server is not running on the standard HTTP port (80) — for example, if you installed 
+MAMP and used its default port of 8888 — modify your URL appropriately; for exam

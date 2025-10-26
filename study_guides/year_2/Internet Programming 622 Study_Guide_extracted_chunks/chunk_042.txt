@@ -1,0 +1,16 @@
+ame=”listBox” id=”listBox” size=”3”>   
+                        <option value=”option1”>Option 1</option>   
+                        <option value=”option2”>Option 2</option>   
+                        <option value=”option3”>Option 3</option>                </select>   
+   
+• 
+A multi-select list box — This works like a list box, but it also allows the user to select 
+multiple items at once by holding down the Ctrl key on Windows and Linux browsers. To turn 
+a normal list box into a multi-select box, add the attribute multiple (with a value of 
+“multiple“) to the select element. If the user selects more than one option, all the selected 
+values are sent to the server:   
+   
+               <label for=”multiListBox”>A multi-select list box</label>   
+               <select name=”multiListBox” id=”multiListBox” size=”3” multiple=”multiple”>   
+                           <option value=”option1”>Option 1</option>   
+                           <option value=”option2”>Option 2</option>

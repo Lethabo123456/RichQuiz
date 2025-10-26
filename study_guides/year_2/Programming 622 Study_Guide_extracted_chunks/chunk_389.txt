@@ -1,0 +1,46 @@
+itializeStack();  
+ 
+}  
+  
+//end destructor  
+  
+ 
+5.3.9  Overloading the Assignment Operator (=)  
+  
+The definition of the function to overload the assignment operator for the class linkedStackType is as 
+follows:  
+  
+template <class Type>  
+const linkedStackType<Type>& linkedStackType<Type>::operator= (const 
+linkedStackType<Type>& otherStack)  
+{  
+if (this != &otherStack)   
+  
+//avoid self-copy copyStack(otherStack);  
+return *this;  
+ 
+}  
+  
+  
+  
+  
+  
+//end operator=  
+  
+Table 5-2 summarizes the time complexity of the operations to implement a linked stack.  
+  
+  
+  
+  
+  
+
+196  
+  
+  
+  
+TABLE 5-2: Time complexity of the operations of the class linkedStackType on a stack 
+with n elements  
+  
+The definition of a stack, and the functions to implement the stack operations discussed previously, are 
+generic. Also, as in the case of an array representation of a stack, in the linked representation of a stack, 
+we put the definition of the stack and the functions to implement

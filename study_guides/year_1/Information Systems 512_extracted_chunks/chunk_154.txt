@@ -1,0 +1,18 @@
+data or after you enter it, to help ensure that it is valid. For instance, when 
+an admissions department specialist adds or modifies data in a student record, the DBMS 
+tests the entered data to verify it meets certain criteria. 
+If the data fails a validity check, the computer either should not allow the invalid data to be 
+stored, or it should display an error message that instructs the user to enter the data again. 
+Validity checks, sometimes called validation rules, reduce data entry errors and thus enhance 
+the data’s integrity. 
+Validation can be: 
+ Alphabetic/numeric Check 
+An alphabetic check ensures that users enter only alphabetic data into a field. A numeric 
+check ensures that users enter only numeric data into a field. For example, data in a First 
+Name field should contain only characters from the alphabet. Data in a Current Enrollment 
+field should contain integers. 
+ Range Check  
+
+Page 97 of 117 
+ 
+A range check determines whether a number is within a specified ran

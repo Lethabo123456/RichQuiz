@@ -1,0 +1,32 @@
+mber is a public member; a – (minus) 
+  
+  
+
+31  
+  
+sign indicates that this is a private member. The symbol # before the member name indicates that the 
+member is a protected member.  
+  
+ 
+1.4.3  Variable (Object) Declaration  
+  
+Once a class is defined, you can declare variables of that type. In C++ terminology, a class variable is called 
+a class object or class instance. To help you become familiar with this terminology, from now on we will 
+use the term class object, or simply object, for a class variable.  
+  
+A class can have both types of constructors—default constructor and constructors with parameters. 
+Therefore, when you declare a class object, either the default constructor executes or the constructor 
+with parameters executes. The general syntax for declaring a class object that invokes the default 
+constructor is:  
+  
+  
+  
+  
+For example, the statement  
+  
+  
+  
+  
+clockType myClock;  
+  
+declares myClock to be an object of type clockType. In this case, the default

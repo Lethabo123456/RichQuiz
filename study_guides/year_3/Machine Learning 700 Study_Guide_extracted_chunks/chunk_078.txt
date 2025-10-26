@@ -1,0 +1,28 @@
+3.5  Decision Tree Regression 
+Decision Tree Regression is a non-parametric model that splits the data into branches based on 
+feature values. Each terminal node (leaf) represents a decision rule, and the prediction is typically 
+the average of the outcomes in that node. 
+
+Decision trees structure their model by recursively partitioning the feature space, where each node 
+selects the feature and threshold that best minimizes prediction error. One of their key advantages 
+is interpretability, as the decision-making process at each split is transparent and can be easily 
+visualized. However, decision trees are prone to overfitting, especially if they are too deep or not 
+properly pruned. Recent advancements in machine learning have led to the development of 
+ensemble methods such as Random Forests and Gradient Boosting, which build upon decision trees 
+to enhance performance and reduce variance. 
+
+Decision tree regressors split data based on decision rules that are easy to follow. The splitting 
+criterion (often the mean squared error) is computed at each node to decide the best split. While 
+decision trees are intuitive and interpretable, they are also sensitive to small changes in the data. 
+Ensemble methods are commonly used to mitigate this instability.
+
+Example: Predicting House Prices Using Decision Trees 
+from sklearn.tree import DecisionTreeRegressor 
+# Train a Decision Tree Regressor 
+tree_model = DecisionTreeRegressor() 
+tree_model.fit(X, y) 
+ 
+# Predicting using the decision tree model 
+predicted_price_tree = tree_model.predict(new_house) 
+print(f"Predicted price (Decision Tree Regression): ${predicted_price_tree[0]:.2f}K") 
+ 

@@ -1,0 +1,38 @@
+Closed loop simulation 
+We now command the system to follow a trajectory and use the linear controller to correct for 
+any errors. 
+The desired trajectory is a given by a longitudinal position that tracks a velocity of 10 m/s for the 
+first 5 seconds and then increases to 12 m/s and a lateral position that varies sinusoidally 
+by  
+ m around the centerline. The nominal inputs are not modified, so that feedback is 
+required to obtained proper trajectory tracking. 
+Xd = np.array([ 
+    10 * timepts + 2 * (timepts-5) * (timepts > 5), 
+    0.5 * np.sin(timepts * 2*np.pi), 
+    np.zeros_like(timepts) 
+]) 
+Ud = np.array([10 * np.ones_like(timepts), np.zeros_like(timepts)]) 
+ 
+# Simulate the system dynamics, starting from the origin 
+resp = ct.input_output_response( 
+    vehicle_closed, timepts, np.vstack((Xd, Ud)), 0) 
+time, outputs = resp.time, resp.outputs 
+# Plot the results in the xy plane 
+
+plt.plot(Xd[0], Xd[1], 'b--')      # desired trajectory 
+plt.plot(outputs[0], outputs[1])   # actual trajectory 
+plt.xlabel("$x$ [m]") 
+plt.ylabel("$y$ [m]") 
+plt.ylim(-1, 2) 
+# Add a legend 
+plt.legend(['desired', 'actual'], loc='upper left') 
+# Compute and plot the velocity 
+rightax = plt.twinx()       # Create an axis in the right 
+rightax.plot(Xd[0, :-1], np.diff(Xd[0]) / np.diff(timepts), 'r--') 
+rightax.plot(outputs[0, :-1], np.diff(outputs[0]) / np.diff(timepts), 'r-') 
+rightax.set_ylim(0, 13) 
+rightax.set_ylabel("$x$ velocity [m/s]") 
+rightax.yaxis.label.set_color('red') 
+plt.show() 
+ 
+OUTPUT

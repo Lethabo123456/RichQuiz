@@ -1,0 +1,23 @@
+e 
+3-22. (Notice that the deletion of 37 does not require us to change the values of first and last. The link 
+field of the previous node—that is, 17—changes. After deletion, the node with info 17 contains the 
+address of the node with 24.)  
+  
+
+112  
+  
+  
+FIGURE 3-22 list after deleting 37  
+  
+Case 3b:   
+ 
+The node to be deleted is the last node. In this case, after deleting the node, the value of 
+the pointer last changes. It contains the address of the node just before the node to be 
+deleted. For example, consider the list given in Figure 3- 21 and the node to be deleted is 
+54. After deleting 54, last contains the address of the node with info 24. Also, count is 
+decremented by 1.  
+Case 4:   
+The node to be deleted is not in the list. In this case, the list requires no adjustment. We 
+simply output an error message, indicating that the item to be deleted is not in the list.  
+  
+From cases 2, 3, and 4, it follows that the deletion of a node requires us to traverse the list. B

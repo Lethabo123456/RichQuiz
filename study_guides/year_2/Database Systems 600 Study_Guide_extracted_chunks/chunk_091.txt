@@ -1,0 +1,21 @@
+mon entity with the other view.  
+
+ 
+32 
+ 
+The use of external views that represent subsets of the database has some important advantages:  
+• 
+It is easy to identify specific data required to support each business unit’s operations.  
+• 
+It makes the designer’s job easy by providing feedback about the model’s adequacy. 
+Specifically, the model can be checked to ensure that it supports all processes as defined by 
+their external models, as well as all operational requirements and constraints.  
+• 
+It helps to ensure security constraints in the database design. Damaging an entire database is 
+more difficult when each business unit works with only a subset of data.  
+• 
+It makes application program development much simpler. 
+The Conceptual Model 
+The conceptual model represents a global view of the entire database by the entire organization. 
+That is, the conceptual model integrates all external views (entities, relationships, constraints, and 
+processes) into a single global view of the

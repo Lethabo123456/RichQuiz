@@ -1,0 +1,17 @@
+mple, a relationship exists between 
+customers and agents that can be described as follows: an agent can serve many customers, and each 
+customer may be served by one agent.  
+Data models use three types of relationships: one-to-many, many-to-many, and one-to-one. The 
+following examples illustrate the distinctions among the three relationships.  
+• 
+One-to-many (1:M or 1..*) relationship. A painter creates many different paintings, but each 
+is painted by only one painter. Thus, the painter (the “one”) is related to the paintings (the 
+“many”). Therefore, database designers label the relationship “PAINTER paints PAINTING” as 
+1:M.  
+• 
+Many-to-many (M:N or *..*) relationship. An employee may learn many job skills, and each 
+job skill may be learned by many employees. Database designers label the relationship 
+“EMPLOYEE learns SKILL” as M:N.  
+• 
+One-to-one (1:1 or 1..1) relationship. A retail company’s management structure may require 
+that each of its stores be managed by a single em

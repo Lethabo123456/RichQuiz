@@ -1,0 +1,27 @@
+ables. The tables on which the view is based are called base tables.  
+You can create a view by using the CREATE VIEW command:  
+CREATE VIEW view-name AS SELECT query  
+The CREATE VIEW statement is a data definition command that stores the subquery 
+specification—the SELECT statement used to generate the virtual table—in the data dictionary. 
+A relational view has several special characteristics:  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eight, page 379-387. 
+
+ 
+122 
+ 
+You can use the name of a view anywhere a table name is expected in a SQL statement.  
+ 
+Views are dynamically updated. That is, the view is recreated on demand each time it is 
+invoked.  
+ 
+Views provide a level of security in the database because they can restrict users to seeing 
+only specified columns and rows in a table.  
+ 
+Views may also be used as the basis for reports.  
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and M

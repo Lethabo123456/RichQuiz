@@ -1,0 +1,29 @@
+Worked Example 
+Find the duals of 𝑥(𝑦 +  0) and 𝑥̅  ∙ 1 + (𝑦̅ +  𝑧). 
+Solution: 
+Interchanging ・ signs and + signs and interchanging 0s and 1s in these 
+expressions produces their duals. The duals are 𝑥 + (𝑦 ・ 1) and 
+(𝑥̅  +  0)(𝑦̅𝑧), respectively. 
+Worked Example 
+Construct an identity from the absorption law 𝑥(𝑥 +  𝑦) =  𝑥 by taking 
+duals. 
+Solution: 
+Taking the duals of both sides of this identity produces the identity 𝑥 +  𝑥𝑦 =
+ 𝑥, which is also called an absorption law and is shown in Table 16.
+
+2.2 Logic Gates 
+Introduction 
+Boolean algebra is used to model the circuitry of electronic devices. Each 
+input and each output of such a device can be thought of as a member of the 
+set {0, 1}.A computer, or other electronic device, is made up of a number of 
+circuits. Each circuit can be designed using the rules of Boolean algebra. The 
+basic elements of circuits are called gates. Each type of gate implements a 
+Boolean operation. In this section we define several types of gates. Using 
+these gates, we will apply the rules of Boolean algebra to design circuits that 
+perform a variety of tasks. The circuits that we will study in this chapter give 
+output that depends only on the input, and not on the current state of the 
+circuit. In other words, these circuits have no memory capabilities. Such 
+circuits are called combinational circuits or gating networks.  
+We will construct combinational circuits using three types of elements. The 
+first is an inverter, which accepts the value of one Boolean variable as input 
+and produces the complement of this value as its output.  

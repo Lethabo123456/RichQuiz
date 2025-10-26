@@ -1,0 +1,33 @@
+Mathematical Representation 
+ 
+Customer Segmentation Using k-Means 
+Cluster customers based on purchasing behavior. 
+ 
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+from sklearn.cluster import KMeans 
+from sklearn.preprocessing import StandardScaler 
+ 
+# Generate synthetic customer data (Age, Annual Income, Spending Score) 
+np.random.seed(42) 
+data = np.random.rand(200, 3) * [50, 100000, 100]  # Simulated Age, Income, Score 
+df = pd.DataFrame(data, columns=['Age', 'Annual_Income', 'Spending_Score']) 
+ 
+# Standardize the data 
+scaler = StandardScaler() 
+df_scaled = scaler.fit_transform(df) 
+ 
+# Apply k-Means clustering 
+kmeans = KMeans(n_clusters=3, random_state=42) 
+df['Cluster'] = kmeans.fit_predict(df_scaled) 
+ 
+# Visualize clusters 
+plt.scatter(df['Annual_Income'], df['Spending_Score'], c=df['Cluster'], cmap='viridis') 
+
+plt.xlabel('Annual Income ($)') 
+plt.ylabel('Spending Score') 
+plt.title('Customer Segmentation using k-Means') 
+plt.show() 
+ 
+Output: 

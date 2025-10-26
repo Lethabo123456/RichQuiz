@@ -1,0 +1,32 @@
+trix[row][col] << " ";  
+cout << endl; 
+ } 
+ } 
+This function takes as a parameter a two-dimensional array of an unspecified number 
+of rows and five columns, and outputs the content of the two-dimensional array. During 
+the function call, the number of columns of the actual parameter must match the 
+number of columns of the formal parameter. 
+ 
+Similarly, the following function outputs the sum of the elements of each row of a two-
+dimensional array whose elements are of type int: 
+void sumRows(int matrix[][NUMBER_OF_COLUMNS], int noOfRows) 
+ {  
+int sum; 
+              //Sum of each individual row  
+for (int row = 0; row < noOfRows; row++)  
+{  
+sum = 0;  
+for (int col = 0; col < NUMBER_OF_COLUMNS; col++)  
+sum = sum + matrix[row][col]; cout << "Sum of row " << (row + ) << "        
+= " << sum << endl; 
+ } 
+
+151 | P a g e  
+ 
+ } 
+ 
+The following function determines the largest element in each row: 
+ 
+void largestInRows(int matrix[][NUMBER_OF_COLUMNS], int noOfRows)  
+{ 
+ int largest;

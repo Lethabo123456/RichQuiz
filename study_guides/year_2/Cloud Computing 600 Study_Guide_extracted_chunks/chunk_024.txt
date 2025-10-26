@@ -1,0 +1,29 @@
+IT Resource 
+An IT resource is a physical or virtual IT-related artifact that can be either software-based, such as a 
+virtual server or a custom software program, or hardware-based, such as a physical server or a 
+network device. This is shown in Figure 1.4 below 
+ 
+Figure 1.4 Common IT resources and their corresponding symbols. 
+Technology architectures and various interaction scenarios involving IT resources are illustrated in 
+Figure 1.3 below. It shows how the cloud symbol can be used to define a boundary for a cloud-based 
+environment that hosts and provisions a set of IT resources. The displayed IT resources are 
+consequently considered to be cloud-based IT resources.  
+ 
+Fig 1.5: Cloud symbol representing a cloud-based environment 
+ 
+On-premise 
+An IT resource that is hosted in a conventional IT enterprise within an organizational boundary (that 
+does not specifically represent a cloud) is considered to be located on the premises of the IT 
+A cloud hosting eight IT resources: 
+
+Three virtual servers, Two cloud services, and Three storage devices  
+enterprise, or on-premise for short. In other words, the term “on-premise” is another way of stating 
+“on the premises of a controlled IT environment that is not cloud-based.” This term is used to qualify 
+an IT resource as an alternative to “cloud-based.” An IT resource that is on-premise cannot be cloud-
+based, and vice-versa.  
+When discussing on-premise, the following points need to be noted; 
+• An on-premise IT resource can access and interact with a cloud-based IT resource. 
+• An on-premise IT resource can be moved to a cloud, thereby changing it to a cloud-based IT 
+resource. 
+• Redundant deployments of an IT resource can exist in both on-premise and cloud-based 
+environments. 

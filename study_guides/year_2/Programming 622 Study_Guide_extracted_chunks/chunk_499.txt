@@ -1,0 +1,21 @@
+e queue to the free server to be served. Moreover, when a customer starts the transaction, the 
+waiting time ends. The waiting time of the customer is added to the total waiting time. The general 
+algorithm to start the transaction (supposing that serverID denotes the ID of the free server) is as follows:  
+  
+1. Remove the customer from the front of the queue.  
+  
+customer = customerQueue.front();  
+customerQueue.deleteQueue();  
+  
+2. Update the total waiting time by adding the current customer’s waiting time to the 
+previous total waiting time.  
+  
+totalWait = totalWait + customer.getWaitingTime();  
+  
+3. Set the free server to begin the transaction.  
+  
+serverList.setServerBusy(serverID, customer, transTime);  
+  
+To run the simulation, we need to know the number of customers arriving at a given time unit and how 
+long it takes to serve the customer. We use the Poisson distribution from statistics, which says that the 
+probability of y events occurring at a given time is given

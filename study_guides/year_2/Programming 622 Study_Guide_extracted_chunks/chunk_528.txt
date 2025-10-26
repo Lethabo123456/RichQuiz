@@ -1,0 +1,32 @@
+turn -1;  
+ 
+}  
+  
+  
+  
+  
+//end binarySearch  
+  
+In the binary search algorithm, each time through the loop we make two key comparisons. The only 
+exception is in the successful case; the last time through the loop only one key comparison is made.  
+  
+Example 7-1 further illustrates how the binary search algorithm works.  
+  
+EXAMPLE 7-1  
+Consider the list given in Figure 7-4.  
+  
+  
+FIGURE 7-4 Sorted list for a binary search  
+  
+The number of elements in this list is 12, so length = 12. Suppose that we are searching for item 89. Table 
+7-1 shows the values of first, last, and mid each time through the loop. It also shows the number of times 
+the item is compared with an element in the list each time through the loop.  
+  
+TABLE 7-1: Values of first, last, and mid and the number of comparisons for search item 89  
+  
+The item is found at location 10, and the total number of comparisons is 5.  
+  
+
+262  
+  
+Next, let us search the list for item 34. Table 7-2 shows the values of

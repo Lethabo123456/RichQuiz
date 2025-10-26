@@ -1,0 +1,13 @@
+The user can manipulate and 
+query the data in a way that seems intuitive and logical.  
+Tables are related to each other through the sharing of a common attribute (a value in a column).  
+Although the tables are independent of one another, you can easily associate the data between tables. 
+The relational model provides a minimum level of controlled redundancy to eliminate most of the 
+redundancies commonly found in file systems.  
+The relationship type (1:1, 1:M, or M:N) is often shown in a relational schema, an example of which 
+is shown in Figure 2.2. A relational diagram is a representation of the relational database’s entities, 
+the attributes within those entities, and the relationships between those entities.  
+In Figure 2.2, the relational diagram shows the connecting fields and the relationship type (1:M).  
+ 
+A relational table stores a collection of related entities. In this respect, the relational database table 
+resembles a file, but there is a crucial difference between

@@ -1,0 +1,24 @@
+of a given binary tree. This function is also useful in implementing the copy constructor and 
+overloading the assignment operator, as described later in this chapter (see the section, ‘‘Implementing 
+Binary Trees’’).  
+  
+template <class elemType>  
+void copyTree(binaryTreeNode<elemType>* &copiedTreeRoot, binaryTreeNode<elemType>* 
+otherTreeRoot)  
+{  
+if (otherTreeRoot == NULL) 
+copiedTreeRoot = NULL; else  
+{  
+copiedTreeRoot = new binaryTreeNode<elemType>; copiedTreeRoot->info 
+= otherTreeRoot->info; copyTree(copiedTreeRoot->llink, otherTreeRoot-
+>llink); copyTree(copiedTreeRoot->rlink, otherTreeRoot->rlink);  
+}  
+}//end copyTree  
+  
+ 
+9.2  
+Binary Tree Traversal  
+  
+The item insertion, deletion, and lookup operations require that the binary tree be traversed. Thus, the 
+most common operation performed on a binary tree is to traverse the binary tree, or visit each node of 
+the binary tree. As you can see from the diagram of a binary tree, the traversal must start at the root no

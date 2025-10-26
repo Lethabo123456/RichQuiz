@@ -1,0 +1,26 @@
+Containment, Eradication, and Recovery 
+The containment, eradication, and recovery phase is the central task of incident management. If 
+prevention measures failed and an incident occurs, the enterprise needs to stop the attack if it is 
+ongoing and recover from the attack. Actions taken during this phase can conceivably uncover another 
+incident, which feeds back to the detection and analysis phase, as shown in Figure 15.8. 
+ 
+Containment 
+Most incidents require some sort of containment. The objective is to prevent the spread of the effects 
+Analysis 
+ 
+Once an incident is detected, it is appropriate to move immediately to the next phase of the life cycle, 
+which deals with removing the threat and recovery from any damage. Most enterprises choose to do 
+a more in-depth analysis at this point. Typical actions include the following: 
+ 
+ Determine the magnitude of the impact. Consider the number of users affected or the number 
+of devices or the segments of the network. 
+ Assess the severity. What is the sensitivity of the data involved? What is the criticality of the 
+service, or system, or application? What is the potential for damage or liability? 
+ Assess the urgency of the event. Is it an active problem, a threat, or an event-in-progress? 
+Was the problem discovered after the fact? Is the intrusion dormant or completed? Does this 
+involve use of an account rather than a system? Does this involve the safety or privacy of 
+individuals? 
+ 
+The analysis also needs to determine whether immediate action is needed to remove the vulnerability 
+or to block the action that enabled the incident to occur. Such analysis may also be part of the post-
+incident activity phase.

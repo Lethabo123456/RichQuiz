@@ -1,0 +1,45 @@
+3.3 Creating & Activating the Interface 
+ 
+Creating the Interface 
+The MyContactList app requires four activities and four layouts to provide the functionality described 
+in previous Chapter. The app will use intents to switch between activities and pass data between these 
+activities. Your first task in creating the MyContactsList app is to make sure you have access to the 
+image resources provided with this book. You will need four image files. One image is the app icon 
+(appicon.png), and the other three are used in the app for navigation (contactlisticon.png, 
+settingsicon.png, mapicon.png). Every app needs a project, and MyContactList is no different. Your 
+second task is to create a new project.
+
+Importing a Project 
+The completed project for each chapter may be available from your instructor. You can import the 
+project by following these steps: 
+
+1. Unzip the chapter code. 
+2. Close any open projects in Android Studio to get to the Android Studio Welcome screen. Select 
+Open an existing Android Studio project. 
+3. Navigate to the unzipped code folder. Select MyContactList and click OK. 
+The project will be imported and opened in Android Studio. 
+If you don’t want to import the whole project, you can inspect the different files by navigating through 
+the MyContactList folder. 
+
+Create the Project 
+Create a new Android project by selecting File > New > New Project from the menu if you have a 
+project open. If you don’t have a project open, you can select Start a new Android Studio project from 
+the Quick Start menu. 
+
+1. In the Choose your project window, make sure Phone and Tablet is selected and then select Empty 
+Activity. Click Next. 
+2. Use the following values for the Configure your project window presented by the project creation 
+wizard: 
+
+Name: My Contact List 
+Package name: com.example.mycontactlist 
+Save location: Choose a location appropriate for your environment. 
+Language: Java 
+Minimum API level: API 15: Android 4.0.3 (IceCreamSandwich) 
+Make sure the two checkboxes are not checked. 
+
+3. Click Finish. 
+ 
+To code the navigation, you need more than one activity. Create three more empty activities using the 
+following process. Expand the app folder in the Project window and then expand the java folder. Right- 
+click on com.example.mycontactlist and select New > Activity > Empty Activity (Figure 4.2).

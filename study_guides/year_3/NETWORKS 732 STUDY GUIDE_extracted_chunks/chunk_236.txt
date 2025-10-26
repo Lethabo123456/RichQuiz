@@ -1,0 +1,39 @@
+5.3.5 arp Utility
+ 
+You now know that ARP is a protocol included in the TCP/IP suite. You also understand that ARP 
+is used by IP to determine the MAC address of a device that exists on the same subnet as the 
+requesting device. When a TCP/IP device needs to forward a packet to a device on the local 
+subnet, it first looks in its own table, called an ARP cache or MAC address lookup table, for an
+association between the known IP address of the destination device on the local subnet and that
+same device’s MAC address. The cache is called because the contents are periodically weeded
+out. If no association that includes the destination IP address can be found, the device will then
+send out an ARP broadcast that includes its own MAC and IP information as well as the IP address
+of the target device and a blank MAC address field. Filling in that blank is the object of the whole
+operation—it’s the unknown value that the source device is requesting to be returned to it in the
+form of an ARP reply. Windows includes a utility called arp that allows us to check out the
+operating system’s ARP cache. To view this, from a Windows DOS prompt, use the arp command
+like this:
+
+C:\Users\tlammle>arp
+
+Displays and modifies the IP-to-Physical address translation tables used
+by address resolution protocol (ARP).
+
+ARP -s inet_addr eth_addr [if_addr]
+ARP -d inet_addr [if_addr]
+ARP -a [inet_addr] [-N if_addr] [-v]
+
+Figure 5.17: arp command output (Lammle, 2022)
+
+Table 5.2 describes the various options that you can use with the arp command. Sheesh. Looking
+at that output really makes me wish we were all just running IPv6 because, as you already should
+know, IPv6 doesn’t need ARP as well as many other annoying features and protocols required
+when running IPv4.
+
+Of note, the Windows arp utility is primarily useful for resolving duplicate IP addresses. For
+example, let’s say your workstation receives its IP address from a DHCP server but it accidentally
+receives the same address that some other workstation gets. And so, when you try to ping it, you
+get no response. Your workstation is basically confused—it’s trying to determine the MAC
+address, and it can’t because two machines are reporting that they have the same IP address. To
+solve this little snag, you can use the arp utility to view your local ARP table and see which TCP/IP
+address is resolved to which MAC address.

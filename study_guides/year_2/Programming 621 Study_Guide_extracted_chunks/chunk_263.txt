@@ -1,0 +1,31 @@
+standard input device and output to the standard output device. 
+In addition, C++ provides a header file called fstream, which is used for file I/O. Among 
+other things, the fstream header file contains the definitions of two data types: ifstream, 
+which means input file stream and is similar to istream, and ofstream, which means 
+output file stream and is similar to ostream. 
+
+254 | P a g e  
+ 
+ 
+File I/O is a five-step process:  
+1. Include the header file fstream in the program. 
+2. Declare file stream variables.  
+3. Associate the file stream variables with the I/O sources.  
+4. Use the file stream variables with >>, < 
+5.Close the files. 
+ 
+The stream member function open is used to open files. The syntax for opening a file 
+is: 
+ 
+ 
+ 
+Here, fileStreamVariable is a file stream variable, and sourceName is the name of the 
+I/O file. 
+ 
+ 
+Step 1 
+Requires that the header file fstream be included in the program. The following 
+statement accomplishes this task: #include 
+ 
+Step 2 
+Req

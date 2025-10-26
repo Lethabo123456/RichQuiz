@@ -1,0 +1,32 @@
+ondFibNum; int 
+nth;  
+cout << "Enter the first Fibonacci number: 
+"; cin >> firstFibNum; cout << endl;  
+
+155  
+  
+cout << "Enter the second Fibonacci number: "; cin 
+>> secondFibNum;  
+cout << endl;  
+cout << "Enter the position of the desired Fibonacci number: 
+"; cin >> nth; cout << endl;  
+cout << "The Fibonacci number at position " << nth << " is: " << rFibNum(firstFibNum, 
+secondFibNum, nth) << endl;  
+return 0;  
+}  
+  
+int rFibNum(int a, int b, int n)  
+{ if (n == 1) return a; else if (n == 2) return b; else return 
+rFibNum(a, b, n - 1) + rFibNum(a, b, n - 2);  
+}   
+Sample Run: In this sample run, the user input is shaded.  
+Enter the first Fibonacci number: 2  
+Enter the second Fibonacci number: 5  
+Enter the position of the desired Fibonacci number: 6  
+The Fibonacci number at position 6 is: 31  
+  
+ 
+4.2.4  Tower of Hanoi  
+  
+In the nineteenth century, a game called the Tower of Hanoi became popular in Europe. This game 
+represents work that is under way in the temple of

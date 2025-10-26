@@ -1,0 +1,40 @@
+2.1.4 JavaScript Comments  
+JavaScript supports both C-style and C++-style 
+comments, thus: 
+ 
+ Any text between a // and the end of a line 
+is treated as a comment and is ignored by 
+JavaScript. 
+ Any text between the characters /* and */ 
+is treated as a comment. This may span multiple 
+lines. 
+ JavaScript also recognizes the HTML 
+comment opening sequence <!--. JavaScript treats 
+this as a single-line comment, just as it does the // comment. 
+ The HTML comment closing sequence --> is not recognized by JavaScript so it 
+should be written as //-->. 
+ 
+Example: 
+ 
+ 
+ 
+IDEA 
+ 
+To avoid error, proper 
+capitalisation is required when 
+using keywords, method names 
+and variable names. 
+
+ 
+15 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+2.2 A FIRST JAVASCRIPT 
+You can use any text editor you are comfortable with. We are going to be using 
+Notepad on a Windows machine throughout this module. Add the simple HTML as 
+shown in Figure 2.1 below: 
+ 
+ 
+Figure 2.1 - Basic HTML document 
+ 
+Figu

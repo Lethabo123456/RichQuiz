@@ -1,0 +1,57 @@
+Example. Construct a truth table for the formula ~p ^ (p -> q).
+
+p   q   ~p   p -> q   ~p ^ (p -> q)
+-------------------------------------
+T   T   F    T        F
+-------------------------------------
+T   F   F    F        F
+-------------------------------------
+F   T   T    T        T
+-------------------------------------
+F   F   T    T        T
+-------------------------------------
+ 
+A tautology is a formula which is "always true" --- that is, it is true for every 
+assignment of truth values to its simple components. You can think of a tautology 
+as a rule of logic. 
+The opposite of a tautology is a contradiction, a formula which is "always false". 
+In other words, a contradiction is false for every assignment of truth values to its 
+simple components. 
+ 
+Example. Show that (p -> q) v (q -> p) is a tautology. 
+I construct the truth table for (p -> q) v (q -> p) and show that the formula is 
+always true. 
+
+p   q   p -> q   q -> p   (p -> q) v (q -> p)
+-----------------------------------------------
+T   T   T        T         T
+-----------------------------------------------
+T   F   F        T         T
+-----------------------------------------------
+F   T   T        F         T
+-----------------------------------------------
+F   F   T        T         T
+----------------------------------------------- 
+ 
+The last column contains only T's. Therefore, the formula is a tautology.  
+ 
+Example. Construct a truth table for (p -> q) ^ (q -> r).
+
+p   q   r   p -> q   q -> r   (p -> q) ^ (q -> r)
+--------------------------------------------------
+T   T   T   T        T         T
+--------------------------------------------------
+T   T   F   T        F         F
+--------------------------------------------------
+T   F   T   F        T         F
+--------------------------------------------------
+T   F   F   F        T         F
+--------------------------------------------------
+F   T   T   T        T         T
+--------------------------------------------------
+F   T   F   T        F         F
+--------------------------------------------------
+F   F   T   T        T         T
+--------------------------------------------------
+F   F   F   T        T         T
+-------------------------------------------------- 

@@ -1,0 +1,16 @@
+aces to maintain data integrity. A data anomaly 
+develops when not all the required changes in the redundant data are made successfully. The data 
+anomalies possible in this case are commonly defined as follows:  
+• 
+Update anomalies. If agent Leah F. Hahn has a new phone number, it must be entered in each 
+of the CUSTOMER file records in which Ms. Hahn’s phone number is shown. In a large file 
+system, such a change might occur in hundreds or even thousands of records. Clearly, the 
+potential for data inconsistencies is great.  
+• 
+Insertion anomalies. If only the CUSTOMER file existed, and you needed to add a new agent, 
+you would also add a dummy customer data entry to reflect the new agent’s addition and the 
+potential for creating data inconsistencies would be great.  
+• 
+Deletion anomalies. If you delete customers Amy B. O’Brian, George Williams, and Olette K. 
+Smith, you will also delete John T. Okon’s agent data. Clearly, this is not desirable.  
+On a positive note, however, thi

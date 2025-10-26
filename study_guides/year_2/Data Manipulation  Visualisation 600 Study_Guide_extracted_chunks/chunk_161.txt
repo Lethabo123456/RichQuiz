@@ -1,0 +1,27 @@
+ies of a particular 
+component. In this example, our input is the "value" property of the component that has the ID 
+"my-id". 
+Our output is the "children" property of the component with the ID "my-div". 
+
+ 
+ 
+ 
+ 
+5. Whenever an input property changes, the function that the callback decorator wraps will get called 
+automatically. Dash provides the function with the new value of the input property as an input argument 
+and Dash updates the property of the output component with whatever was returned by the function. 
+6. The component_id and component_property keywords inside Output and Input are optional 
+(there are only two arguments for each of those objects). We included them here for clarity but we’ll 
+omit them from here on out for brevity and readability. 
+ 
+7. Don't 
+confuse 
+the 
+dash.dependencies.Input 
+object 
+inside 
+app.callback 
+from 
+the 
+dash_core_components.Input object inside app.layout. The former is just used in these callbacks and the 
+latter is an actual component.

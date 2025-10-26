@@ -1,0 +1,22 @@
+ree in Figure 9-11, the leftmost node is the node with info 28.  
+  
+  
+FIGURE 9-11 Binary tree; leftmost node is 28  
+  
+To get to the leftmost node of the binary tree, we start by traversing the binary tree at the root node and 
+then follow the left link of each node until the left link of a node becomes null. We then back up to the 
+parent node, visit the node, and then move to the right node. Because links go in only one direction, to 
+get back to a node, we must save a pointer to the node before moving to the child node. Moreover, the 
+nodes must be backtracked in the order they were traversed. It follows that while backtracking, the nodes 
+must be visited in a last-in, first-out manner. This can be done by using a stack. We, therefore, save a 
+pointer to a node in a stack. The general algorithm is as follows:  
+  
+1. current = root;   
+  
+  
+//start 
+traversing the binary tree at the root node  
+2. while (current is not NULL or stack is nonempty) if 
+(current is not NULL)  
+{  
+p

@@ -1,0 +1,36 @@
+ere. 
+} 
+else 
+{ 
+//code to be executed if condition tests to false. 
+} 
+ 
+As an example, change your code to this: 
+var first_name = "Benny"; 
+if ( first_name == "Kenny" )  
+{ 
+document.write("First Name is " + first_name); 
+} 
+else 
+{ 
+document.write("First Name is " + first_name); 
+} 
+ 
+The first line of the code has changed "Kenny" into "Benny". Between the curly 
+brackets we now have: 
+document.write("First Name is " + first_name); 
+ 
+Look at the else part we have added, though: 
+else 
+{ 
+document.write("First Name is " + first_name); 
+} 
+ 
+If you add an else part, it needs its own pair of curly brackets. Miss one out and your 
+code will not work. Between the curly brackets is where you type your code. 
+ 
+Save your changes and run your code. You should see this written to your browser: 
+First Name is Benny 
+ 
+So the first part of the IF Statement checks the condition between the round brackets. 
+If it is true, the code for its pair of curly brackets will get executed. If it's fals

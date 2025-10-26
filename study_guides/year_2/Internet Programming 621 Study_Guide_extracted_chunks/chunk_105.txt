@@ -1,0 +1,17 @@
+the heredoc and nowdoc syntaxes. You also learnt how to 
+find the length of a string, as well as count the number of words in a string, access the individual 
+characters within a string, and access groups of characters in a string.  
+  
+You then looked at various functions for searching strings and replacing text within strings, 
+including:  
+strstr() , strpos() , and strrpos() for searching for text  
+substr_count() for counting the occurrences of a search term within a string  
+strpbrk() for searching for any one of a set of characters  
+str_replace() for replacing all occurrences of a search term within a string  
+substr_replace() for replacing a specified portion of a string  
+strtr() for replacing certain characters in a string with other characters  
+  
+Next, you took a look at issues regarding case sensitivity, and explored a few functions — 
+strtolower() , strtoupper() , ucfirst() , lcfirst(), and ucwords() — that you can use to convert case.  
+  
+You now have a pretty go

@@ -1,0 +1,31 @@
+Explanation: 
+
+Component                     Meaning 
+---------------------------------------------------------------------------------------------
+input_size=6                  6 sensor inputs (e.g., x/y/z from accelerometer + gyroscope) 
+---------------------------------------------------------------------------------------------
+sequence_length=10            Model sees 10 timesteps of data at once 
+---------------------------------------------------------------------------------------------
+hidden_size=128               Memory size of RNN 
+---------------------------------------------------------------------------------------------
+num_layers=2                  Two RNN layers stacked for deeper modeling 
+---------------------------------------------------------------------------------------------
+num_actions=4                 Four possible movement actions 
+---------------------------------------------------------------------------------------------
+softmax()                     Converts raw output into probabilities over actions 
+---------------------------------------------------------------------------------------------
+ 
+What the Model Learns 
+The model learns patterns like: 
+• Repeated jerks in IMU data = likely obstacle → turn or stop 
+• Smooth forward acceleration = safe to continue 
+• Spinning detected → realign by turning left/right
+
+Sensor Fusion Using Deep Learning 
+
+Real-world robots rarely rely on a single sensor. Effective navigation requires fusing information 
+from multiple sources: 
+• Cameras: Rich visual information but affected by lighting 
+• LIDAR: Accurate depth but sparse data 
+• Ultrasonic: Reliable close-range but limited range 
+• IMU: Motion tracking but subject to drift 

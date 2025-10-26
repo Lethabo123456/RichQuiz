@@ -1,0 +1,33 @@
+ Audit review, analysis, and reporting: Deals with reviewing and analyzing security audit 
+records at a specified frequency, with reports to specified individuals. Enhancement include: 
+
+o Employ automated mechanisms to integrate audit review, analysis, and reporting. 
+o Analyze and correlate audit records across different repositories to gain 
+organizationwide situational awareness. 
+o Provide and implement the capability to centrally review and analyze audit records 
+from multiple components in the system. 
+o Integrate analysis of audit records with other security analysis and monitoring efforts. 
+o Correlate information from audit records with information obtained from monitoring 
+physical access to further enhance the ability to identify suspicious, inappropriate, 
+unusual, or malevolent activity. 
+o Specify permitted actions for system processes, roles, and/or users associated with 
+the review, analysis, and reporting of audit records. 
+
+o Require a distinct environment for the dedicated analysis of audit information related 
+to privileged users. 
+o Correlate information from nontechnical sources with audit information to enhance 
+organizationwide situational awareness. 
+
+ Audit reduction and report generation: Deals with providing summary information from audit 
+records that is meaningful to analysts. May also include: 
+o Provide and implement the capability to process audit records for events of interest 
+ased on specified criteria. 
+o Provide and implement the capability to sort and search audit records for events of 
+interest based on selected audit fields. 
+
+ Time stamps: Deals with recording time stamps from internal system clocks. Enhancements 
+include: 
+
+o Synchronize with an authoritative time source. 
+o Identify a secondary authoritative time source to be used if the primary source is not 
+available.

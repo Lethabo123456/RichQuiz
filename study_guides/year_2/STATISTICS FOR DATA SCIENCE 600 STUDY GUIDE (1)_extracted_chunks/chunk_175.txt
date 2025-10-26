@@ -1,0 +1,31 @@
+700-800 people. 
+Now, let's model 6000 people who take, on average, about 15 minutes' worth of breaks. Let's 
+again use the Poisson distribution to simulate 6000 people. 
+short_breaks = stats.poisson.rvs(loc=10, mu=15, size=6000)  # represents 6000 people who 
+take about a 15-minute break 
+ 
+pd.Series(short_breaks).hist() 
+  
+                       
+
+P a g e  | 102 
+ 
+  
+                          
+  
+                   
+Okay, so, we have a distribution for the people who take longer breaks and a distribution for 
+the people who take shorter breaks. Again, note how our average break length of 15 minutes 
+falls to the left-hand side of the distribution, and note that the tallest bar is about 1600 
+people. 
+breaks = np.concatenate((long_breaks, short_breaks))  # put the two arrays together to get 
+our "population" of 9000 people 
+pd.Series(breaks).hist() 
+
+P a g e  | 103 
+ 
+ 
+                                                         
+ 
+  
+We see how we have two humps. On the left, we have

@@ -1,0 +1,20 @@
+Let’s consider an example to create and display a label containing both an icon and a string:  
+  
+Import java.awt.*;  
+Import javax.swing.*;  
+/* < applet code = “Jlabel Demo” width=250 
+height=200><lapplet*/  
+Public class Jlabel Demo extends Japplet  
+{  
+   public void init ( )    
+{ // Get Context pane  
+  container content Pane=getContentpane ( );  
+// Create an icon  
+ImageIcon ii = New ImageIcon (“Italy.gif”);  
+// Create a label  
+Jlabel jl = new Jlabel (“Italy, ii,  
+Jlabel.RIGHT);  
+// Add label to the content pane 
+contentPane.add (jl);  
+  }  
+} 

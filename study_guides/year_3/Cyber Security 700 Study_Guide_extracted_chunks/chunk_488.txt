@@ -1,0 +1,33 @@
+VoIP Threats 
+
+As VoIP becomes mainstream, a number of security issues must be understood and addressed. Key 
+areas of concern are as follows: 
+
+ VoIP traffic travels through the Internet. It is possible that a hacker could use a packet sniffer 
+to listen to unencrypted VoIP traffic. The solution lies in setting up a VPN between the 
+endpoints, but doing so also introduces additional complications. 
+ Many older firewalls may not recognize VoIP packets. In addition, some intrusion detection 
+systems may try to inspect voice packets, thereby introducing delay and jitter. Bypassing the 
+traffic inspection rules in the firewall may create additional vulnerability. 
+ Many older VoIP phones may require security patches for their software. Such patches are 
+seldom applied as many administrators are not even aware that phone software needs to be 
+patched. Some VoIP phones are set up to apply patches directly without even asking for 
+authentication. Such phones can be very vulnerable to hackers. 
+ Phones also inherit the security flaws of the operating systems they use. 
+ Systems used out of the box may have default passwords and open ports that need to be 
+managed and secured. In many cases, this is ignored. 
+ DoS attacks can be launched against a VoIP phone system, just as they can be launched against 
+other computer applications. 
+The following are some specific threats to the use of VoIP: 
+ Spam over Internet telephone (SPIT): Unsolicited bulk messages may be broadcast over VoIP 
+to phones connected to the Internet. Although marketers already use voicemail for 
+commercial messages, IP telephony makes a more effective channel because the sender can 
+send messages in bulk instead of dialing each number separately. 
+ Eavesdropping: Interception of control packets enables an adversary to listen in on an 
+unsecured VoIP call. 
+ Theft of service: This type of attack involves capturing access codes, allowing the adversary to 
+get into the VoIP provider network and then use the facility. 
+ Man-in-the middle attack: This type of attack involves an adversary inserting as a relay point 
+between two ends of a VoIP call. In addition to eavesdropping, the adversary could divert a 
+call to a third party or generate simulated voice content to create misleading impressions or 
+cause operational errors. 

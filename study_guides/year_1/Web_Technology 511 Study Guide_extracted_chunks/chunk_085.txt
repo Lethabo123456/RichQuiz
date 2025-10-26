@@ -1,0 +1,39 @@
+SIX | ENHANCING A WEBSITE WITH MULTIMEDIA 
+
+(Working with images, Sound, and Video) 
+ 
+LEARNING OUTCOMES 
+ 
+1. Add images to a Web page and align text around images 
+2. Add background colors and images to a Web page 
+3. Understand audio and video formats  
+4. Insert an HTML audio clip 
+5. Support multiple audio formats 
+6. Insert an HTML video clip 
+ 
+ 
+6.1 ADDING IMAGES 
+You use the <img> tag to add an image to a page. The src attribute specifies the path 
+and filename of the image file. You can specify the absolute path or the relative path 
+of an image file. A relative path is the path of an image file based on the location of 
+the page in which you add the image. To add the image img1.png to a page, use the 
+following code: 
+
+<img src="img1.png" alt=”image 1”> 
+The value assigned to the SRC attribute is the 
+relative path of the image file. 
+ 
+The following table shows a list of the <img> 
+tag attributes: 
+ 
+Attribute       Value         Description 
+------------------------------------------------------------------------
+alt             text          Specifies an alternate text for an image
+------------------------------------------------------------------------
+scr             url           Specifies the url of an image
+------------------------------------------------------------------------ 
+height          pixels        Specifies the height of an image
+------------------------------------------------------------------------
+width           pixels        Specifies the width of an image 
+------------------------------------------------------------------------
+Other attributes are not supported in HTML5 

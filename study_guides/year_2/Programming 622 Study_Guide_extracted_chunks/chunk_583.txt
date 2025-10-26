@@ -1,0 +1,37 @@
+if statement evaluates to false. So the body of the if 
+statement does not execute and the next iteration of the for loop, if any, takes place. Note that this is the 
+case when the firstOutOfOrder element is already at the proper place. So we simply need to advance 
+firstOutOfOrder to the next array element, if any.  
+  
+We can repeat this process for the remaining elements of list to sort list.  
+  
+The following C++ function implements the previous algorithm:  
+  
+template <class elemType>  
+void arrayListType<elemType>::insertionSort()  
+{  
+int firstOutOfOrder, location; elemType 
+temp;  
+
+290  
+  
+  
+for (firstOutOfOrder = 1; firstOutOfOrder < length; firstOutOfOrder++) if 
+(list[firstOutOfOrder] < list[firstOutOfOrder - 1])  
+{  
+temp = list[firstOutOfOrder];  
+location = firstOutOfOrder;  
+  
+do  
+{ list[location] = list[location - 1]; 
+location--;  
+}  
+while (location > 0 && list[location - 1] > temp);  
+  
+list[location] = temp;  
+}  
+} //end insertionSort  
+  
+ 
+8.4  
+Insert

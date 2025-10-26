@@ -1,0 +1,46 @@
+y ( [1] => NYC [0] => London ) 
+d) Array ( [0] => Mumbai [1] => Beijing ) 
+ 
+Answer:d 
+ 
+67. What will be the output of the following PHP code ? 
+1. 
+<?php 
+2. 
+$people = array("Peter", "Susan", "Edmund", "Lucy"); 
+3. 
+echo pos($people); 
+4. 
+?> 
+ 
+a) Lucy 
+b) Peter 
+c) Susan 
+d) Edmund 
+ 
+Answer:b 
+ 
+68. What will be the output of the following PHP code ? 
+<?php 
+$number = range(0, 5); 
+print_r ($number); 
+?> 
+a) Array ( [0] => 0 [1] => 1 [2] => 2 [3] => 3 [4] => 4 [5] => 5 ) 
+b) Array ( [0] => 0 [1] => 0 [2] => 0 [3] => 0 [4] => 0 [5] => 0 ) 
+c) Array ( [0] => 5 [1] => 5 [2] => 5 [3] => 5 [4] => 5 [5] => 5 ) 
+d) Array ( [0] => 0 [5] => 5 ) 
+ 
+ 
+ 
+ 
+
+69. What will be the output of the following PHP code ? 
+<pre lang="php" line="1" cssfile="hk1_style"> 
+<?php 
+$array = array("red", "green"); 
+array_push($array, "blue", "yellow"); 
+print_r($array); 
+?> 
+a) Array ( [0] => red [1] => green [2] => blue [3] => yellow ) 
+b) Array ( [0] => blue [1] => yellow [2] => red [3] => green ) 
+c) Arra

@@ -1,0 +1,13 @@
+ws in a table collect together all the data about one specific entity. For example, in the 
+customer table, each row stores all the data about one particular customer – Jane Smith, for 
+instance, or Desmond Paton. These rows are known as records. The columns in a table are the 
+specific items of data that get stored; for example, first name, and surname or telephone 
+number. These columns are known as fields or attributes. 
+ 
+So a database is made up of tables, which are made up of records, which are made up of fields. 
+This is illustrated in Figure 5.1 using the customer table example. Notice that in the figure each 
+customer has been given a unique customer number. This is because, as can be seen, there are 
+two customers called Jane Wilson. Both work for the same company and therefore have the 
+same address and phone number. The database needs some way of differentiating between 
+them, and that is the job of the customer number, which is the primary key. Every table should 
+have a p

@@ -1,0 +1,34 @@
+5  
+  
+ 
+if (root != NULL)   
+//if the binary tree is not empty,  
+//destroy the binary tree  
+destroy(root);  
+if (otherTree.root == NULL) //otherTree is empty root 
+= NULL;  
+else  
+copyTree(root, otherTree.root);  
+ 
+}//end if  
+  
+return *this;  
+}  
+  
+ 
+9.3  
+Binary Search Trees  
+  
+Now that you know the basic operations on a binary tree, this section discusses a special type of binary 
+tree, called a binary search tree.  
+  
+Consider the binary tree in Figure 9-6.  
+  
+  
+FIGURE 9-6 Arbitrary binary tree  
+  
+Suppose that we want to determine whether 50 is in the binary tree. To do so, we can use any of the 
+previous traversal algorithms to visit each node and compare the search item with the data stored in the 
+node. However, this could require us to traverse a large part of the binary tree, so the search would be 
+slow. We need to visit each node in the binary tree until either the item is found or we have traversed the 
+entire binary tree because no criteria exist to guide o

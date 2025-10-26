@@ -1,0 +1,43 @@
+Chapter Six: Wireless Networking 
+ 
+6.1 Introduction to Wireless Networks 
+
+The term Wireless Communication refers to the transfer of information using electromagnetic 
+(EM) or acoustic waves over the atmosphere rather than using any propagation medium that 
+employs wires. Not requiring an explicit network of wires and permitting communication while 
+on the move this allows devices like smart phones, laptops, and smart TVs to connect to the 
+internet or each other. Through the use of electromagnetic waves, sending and receiving data is 
+much easier whether you are at home, in the oﬃce or at campus and with the rise of 
+smartphones, IoT, and smart devices, wireless networks are more than just a convenience there 
+are an essential part of our daily lives, helping us stream videos, check emails, play video games 
+online, and even run businesses without being tied down by cables but given an edge to roam. 
+Transmitting a signal using the basic 802.11 speciﬁcations works a lot like transmitting with a basic 
+Ethernet hub: They’re both two-way forms of communication, and they both use the same 
+frequency to both transmit and receive, often referred to as half-duplex 
+
+6.2 Understanding the 802.11 in reference to the OSI Model’s Wireless Protocol 
+The 802.11 architecture, which forms the foundation of Wi-Fi networks, is closely aligned with 
+the OSI (Open Systems Interconnection) model, particularly focusing on the Physical and Data 
+Link layers. In the OSI model, the Physical Layer (Layer 1) in 802.11 handles the actual transmission 
+of radio signals over the air. It deﬁnes aspects like frequency bands (e.g., 2.4 GHz, 5 GHz), 
+modulation techniques, and data rates. 
+ 
+Figure 6.1 802.11 Architecture (West, 2002) 
+ 
+WLANs deﬁne operations at OSI layers 1 and 2. Just like wired LANs, they support the same TCP/IP 
+higher-layer OSI protocols (such as IP, TCP, and UDP). This compatibility ensures that wireless and 
+wired transmission methods can be integrated on the same network. The most popular OSI 
+physical and data link layer standards used by WLANs are popularly referred to as Wi-Fi. Wi-Fi 
+(wireless ﬁdelity) is a collection of wireless standards and their amendments, extensions, and 
+corrections developed by IEEE’s 802.11 committee. Notable wireless standards developed by the 
+IEEE 802.11 committee and its task groups are 802.11b, 802.11a, 802.11g, 802.11n, 802.11ac, 
+and 802.11ax. The 802.11 standards employ various technologies at the physical layer.  
+In addition, 802.11n and later standards modify the way frames are used at the MAC sublayer, 
+which, as you’ve already read, is the lower portion of the data link layer that is speciﬁcally involved 
+with managing MAC addresses in message frames. Recall that layer 2’s other sublayer is the LLC 
+sublayer, which is primarily concerned with multiplexing, ﬂow and error control, and reliability. 
+
+Table 1.1 summarizes the technical details of the 802.11 standards. Table1.1 gives a more detailed 
+description of each standard 
+ 
+Table 6.1 Technical details for 802.11 wireless standards (West, 2002) 

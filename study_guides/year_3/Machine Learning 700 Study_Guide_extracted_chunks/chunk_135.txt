@@ -1,0 +1,33 @@
+Let’s do a side-by-side comparison of PCA, NMF, and k-means, showing the components extracted, as 
+well as reconstructions of faces from the test set using 100 components. For k-means, the reconstruction 
+is the closest cluster center found on the training set: 
+ 
+An interesting aspect of vector quantization using k-means is that we can use many more clusters than 
+input dimensions to encode our data. Let’s go back to the two_moons data. Using PCA or NMF, there is 
+nothing much we can do to this data, as it lives in only two dimensions. Reducing it to one dimension 
+with PCA or NMF would completely destroy the structure of the data. But we can find a more expressive 
+representation with k-means, by using more cluster centers: 
+
+We used 10 cluster centers, which means each point is now assigned a number between 0 and 9. We can 
+see this as the data being represented using 10 components (that is, we have 10 new features), with all 
+features being 0, apart from the one that represents the cluster center the point is assigned to. Using 
+this 10-dimensional repre- sentation, it would now be possible to separate the two half-moon shapes 
+using a lin- ear model, which would not have been possible using the original two features. It is also 
+possible to get an even more expressive representation of the data by using the distances to each of the 
+cluster centers as features. This can be accomplished using the transform method of kmeans: 
+ 
+K-means is a widely used clustering algorithm, favored for its simplicity, ease of implementation, and fast 
+execution. It scales well to large datasets, and scikit-learn offers an even more scalable version called 
+MiniBatchKMeans, which is capable of handling very large datasets. However, one limitation of k-means 
+ 
+is that it depends on a random initialization, meaning the results can vary depending on the random 
+seed. To address this, scikit-learn runs the algorithm 10 times with different random initializations and 
+selects the best outcome. Other drawbacks include the algorithm's restrictive assumptions about cluster 
+shapes and the need to specify the number of clusters beforehand, which may not always be known in 
+real-world scenarios. 
+Agglomerative clustering encompasses a group of algorithms that follow similar principles: the algorithm 
+begins by treating each data point as its own cluster, then iteratively merges the two most similar clusters 
+until a predefined stopping condition is met. In scikit-learn, this stopping condition is set by the desired 
+number of clusters, and clusters are merged until that number is reached. The similarity between clusters 
+is measured using different linkage criteria, each defining how to evaluate the proximity between two 
+clusters. 

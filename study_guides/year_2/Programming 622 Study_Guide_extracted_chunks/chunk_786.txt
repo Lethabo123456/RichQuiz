@@ -1,0 +1,14 @@
+the analysis 
+of electrical circuits, finding the shortest route, project planning, linguistics, genetics, social science, and 
+so forth. In this chapter, you learn about graphs and their applications in computer science.  
+  
+ 
+10.2  Graph Definitions and Notations  
+  
+To facilitate and simplify our discussion, we borrow a few definitions and terminology from set theory. Let 
+X be a set. If a is an element of X, we write a  X. (The symbol ‘‘ ’’ means ‘‘belongs to.’’) A set Y is called a 
+subset of X if every element of Y is also an element of X. If Y is a subset of X, we write Y  X. (The symbol ‘‘ 
+’’ means ‘‘is a subset of.’’) The intersection of sets A and B, written A  B, is the set of all elements that are 
+in A and B; that is, A  B = {x | x  A and x  B}. (The symbol ‘‘ ’’ means ‘‘intersection.’’) The union of sets A 
+and B, written A  B, is the set of all elements that are in A or in B; that is, A  B = {x | x  A or x  B}. (The 
+symbol ‘‘ ’’ means ‘‘union.’’) For sets A and B, th

@@ -1,0 +1,76 @@
+ears old'; 
+    
+ ?> 
+A. What is her age? \n She is $num years old 
+B. What is her age? 
+     She is $num years old 
+C. What is her age? She is 10 years old 
+
+IP 621  
+D. What is her age? 
+    She is 10 years old 
+ANS: A 
+ 
+13. Which of the conditional statements is/are supported by PHP? 
+i) if statements 
+ii) if-else statements 
+iii) if-elseif statements 
+iv) switch statements 
+A. Only i) 
+B. i), ii) and iv) 
+C. ii), iii) and iv) 
+D. All of the mentioned. 
+ANS: D 
+ 
+ 
+ 
+ 
+ 
+ 
+14. What will be the output of the following PHP code? 
+ 
+     
+<?php 
+    
+ $team = "arsenal"; 
+    
+ switch ($team) { 
+
+IP 621  
+   
+  
+ case "manu": 
+         
+ 
+ 
+echo "I love man u"; 
+     
+ 
+case "arsenal": 
+         
+ 
+ 
+echo "I love arsenal"; 
+     
+ 
+case "manc": 
+        
+ 
+ 
+ echo "I love manc"; } 
+    
+ ?> 
+A. I love arsenal 
+B. Error 
+C. I love arsenalI love manc 
+D. I love arsenalI love mancI love manu 
+ANS: C 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15. Which of the looping statements is/are supported by PHP? 
+i) for loop

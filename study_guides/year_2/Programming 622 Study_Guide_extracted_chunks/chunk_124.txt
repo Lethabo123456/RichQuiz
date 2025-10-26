@@ -1,0 +1,22 @@
+er. 
+The container intList of size 5 was declared in Example 2-2. You might think that you can only add five 
+elements to the container intList. However, this is not the case. If you need to add more than five 
+elements, you can use the function push_back. You cannot use the array subscripting operator, as in 
+Example 2-2, to add elements past the position 4 unless you increase the size of the container.  
+  
+If you do not know the number of elements you need to store in a vector container, then when you declare 
+the vector container you do not need to specify its size (see Example 2-3). In this case, you can use the 
+function push_back, as shown in Examples 2-3 and 2-5, to add elements into a vector container.  
+  
+EXAMPLE 2-3  
+The following statement declares intList to be a vector container of size 0.  
+ vector<int> intList;  
+  
+
+57  
+  
+To add elements into intList, we can use the function push_back as follows:  
+  
+intList.push_back(34); intList.push_back(55);  
+  
+After these s

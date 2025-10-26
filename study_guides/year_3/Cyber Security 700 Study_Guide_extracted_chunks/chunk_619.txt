@@ -1,0 +1,31 @@
+llected for use by the various security detection and prevention 
+mechanisms, including items related to intrusion detection and items related to firewall 
+operation 
+ Events related to system management and operation 
+ Events related to operating system access (for example, via system calls) 
+ Events related to application access for selected applications 
+ Events related to remote access 
+
+X.816 suggests the auditing the following: 
+ Security events related to a specific connection: 
+ Connection requests 
+ Connection confirmed 
+ Disconnection requests 
+ Disconnection confirmed 
+Statistics appertaining to the connection 
+ 
+Security events related to the use of security services: 
+ Security service requests 
+ Security mechanisms usage 
+ Security alarms 
+ Security events related to management: 
+ Management operations 
+ Management notifications 
+The list of auditable events should include at least the following: 
+ Deny access  
+ Authenticate 
+ Change attribute 
+ Create object 
+ Delete object 
+ Modify object 
+ Use privilege 

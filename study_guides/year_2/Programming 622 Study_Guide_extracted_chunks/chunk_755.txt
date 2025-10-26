@@ -1,0 +1,25 @@
+ins an array data member. The array element type and the size of the array are 
+passed as parameters to the class template. To create a list of 100 components of int elements, we use 
+the following statement:  
+ listType<int, 100> intList;  
+  
+Next, we give the definitions of the B-tree node and the class that implements the properties of a Btree.  
+  
+Each node should store the number of keys in the node, the records, and the pointer to subtrees. We use 
+an array to store the records and an array to store the pointers to the subtrees. Thus, the definition of a 
+B-tree node is as follows:  
+  
+template <class recType, int bTreeOrder> struct 
+bTreeNode  
+{  
+int 
+recCount; 
+recType 
+list[bTreeOrder - 1];  
+bTreeNode *children[bTreeOrder];  
+};  
+  
+The class implementing the properties of a B-tree must, among others, implement the search, traversal, 
+insertion, and deletion algorithms. The following class implements the basic properties of a B-tree as an 
+ADT:  
+//*********************

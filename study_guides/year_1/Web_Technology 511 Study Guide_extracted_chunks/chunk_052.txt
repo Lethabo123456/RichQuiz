@@ -1,0 +1,45 @@
+3.5 ADDING BODY TEXT 
+
+You can add content to an HTML document by using the BODY tag (body). In the BODY tag 
+you can include tags to add headings, paragraphs, lists, tables, and images to a Web page. 
+For instance, to create a heading on a page, use the H1 tag (heading 1). This tag marks text 
+that will appear as a heading. 
+ 
+Adding body text to an HTML document 
+ 
+Here’s how                                     Here’s why
+-----------------------------------------------------------------------------------------
+Open the source code of the page               Choose View, Source.
+-----------------------------------------------------------------------------------------
+Place the insertion point as shown             <HTML>
+                                               <HEAD>
+                                               <TITLE>Outlander Spices</TITLE>
+                                               </HEAD>
+                                               </BODY>
+                                               </HTML>
+                                               To prepare to add text that will appear 
+                                               on the Web page in the browser. 
+-----------------------------------------------------------------------------------------
+Press enter                                    To move the insertion point to the next
+                                               line. 
+-----------------------------------------------------------------------------------------
+Enter the following code:                      
+
+Welcome to the Outlander Spices Web site.
+----------------------------------------------------------------------------------------- 
+This text will appear on the page.
+----------------------------------------------------------------------------------------- 
+Place the insertion point as shown             <HTML>
+                                               <HEAD>
+                                               <TITLE>Outlander Spices</TITLE>
+                                               </HEAD>
+                                               <BODY>
+                                               Welcome to the Outlander Spices Web site.
+                                               </BODY>
+                                               </HTML>
+                                               To prepare to add the H1 tags (heading 
+                                               1) to create a heading on the page. 
+------------------------------------------------------------------------------------------
+Press enter                                    To prepare to add code on the next line
+                                               in the source code.
+------------------------------------------------------------------------------------------ 

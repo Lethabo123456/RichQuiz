@@ -1,0 +1,33 @@
+The final disjunction in the resolution rule, q ∨ r, is called the resolvent. When 
+we let 𝑞 =  𝑟 in this tautology, we obtain (𝑝 ∨ 𝑞) ∧ (￢𝑝 ∨ 𝑞) → 𝑞. 
+Furthermore, when we let 𝑟 =  𝐹, we obtain (𝑝 ∨ 𝑞) ∧ (￢𝑝) →
+ 𝑞 (because 𝑞 ∨ 𝐹 ≡ 𝑞), which is the tautology on which the rule of 
+disjunctive syllogism is based. 
+Resolution plays an important role in programming languages based on the 
+rules of logic, such as Prolog (where resolution rules for quantified 
+statements are applied). Furthermore, it can be used to build automatic 
+theorem proving systems. To construct proofs in propositional logic using 
+resolution as the only rule of inference, the hypotheses and the conclusion 
+must be expressed as clauses, where a clause is a disjunction of variables or 
+negations of these variables.  
+
+We can replace a statement in propositional logic that is not a clause by one 
+or more equivalent statements that are clauses. For example, suppose we 
+have a statement of the form 𝑝 ∨ (𝑞 ∧ 𝑟).  
+Because 𝑝 ∨ (𝑞 ∧ 𝑟) ≡ (𝑝 ∨ 𝑞) ∧ (𝑝 ∨ 𝑟), we can replace the single 
+statement 𝑝 ∨ (𝑞 ∧ 𝑟) by two statements p ∨ q and p ∨ r, each of which is 
+a clause. We can replace a statement of the form ￢(𝑝 ∨ 𝑞) by the two 
+statements ￢𝑝 and ￢𝑞 because De Morgan’s law tells us that 
+￢(𝑝 ∨ 𝑞) ≡ ￢𝑝 ∧￢𝑞. We can also replace a conditional statement 𝑝 →
+ 𝑞 with the equivalent disjunction ￢𝑝 ∨ 𝑞. 
+
+Worked Example 
+Use resolution to show that the hypotheses “Jasmine is skiing or it is not 
+snowing” and “It is snowing or Bart is playing hockey” imply that “Jasmine 
+is skiing or Bart is playing hockey.” 
+Solution: 
+Let 𝑝 be the proposition “It is snowing,” 𝑞 the proposition “Jasmine is 
+skiing,” and 𝑟 the proposition “Bart is playing hockey.” We can represent 
+the hypotheses as ￢𝑝 ∨ 𝑞 and 𝑝 ∨ 𝑟, respectively. Using resolution, 
+the proposition 𝑞 ∨ 𝑟, “Jasmine is skiing or Bart is playing hockey,” 
+follows. 

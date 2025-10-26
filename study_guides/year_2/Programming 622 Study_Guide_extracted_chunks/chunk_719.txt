@@ -1,0 +1,60 @@
+29  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 30  
+  
+ 
+void update(int& x)    
+  
+  
+  
+  
+  
+  
+  
+  
+ //Line 31  
+{             //Line 32 x = 2 * x;           //Line 33  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 34  
+  
+Sample Run: In this sample run, the user input is shaded.  
+  
+Line 10: Enter numbers ending with -999  
+56 87 23 65 34 45 12 90 66 -999  
+  
+Line 17: Tree nodes in inorder: 12 23 34 45 56 65 66 87 90  
+Line 19: Tree Height: 4  
+  
+Line 20: ******* Update Notes *******  
+Line 22: Tree nodes in inorder after the update:  
+  24 46 68 90 112 130 132 174 180  
+Line 24: Tree Height: 4  
+  
+This program works as follows. The statement in Line 8 declares treeRoot to be a binary search tree object, 
+in which the data in each node is of type int. The statements in Lines 11 through 16 build the binary search 
+tree. The statement in Line 18 uses the member function inorderTraversal of treeRoot to traverse the 
+binary search tree treeRoot. The parameter to the functi

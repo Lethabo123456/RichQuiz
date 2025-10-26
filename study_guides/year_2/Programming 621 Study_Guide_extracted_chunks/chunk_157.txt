@@ -1,0 +1,33 @@
+y putting the row number in a loop, we can find the sum of each row 
+separately. The following is the C11 code to find the sum of each individual row: 
+//Sum of each individual row  
+for (row = 0; row < NUMBER_OF_ROWS; row++)  
+{  
+    sum = 0; 
+    for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+            sum = sum + matrix[row][col];  
+
+148 | P a g e  
+ 
+cout << "Sum of row " << row + 1 << " = " << sum << endl; 
+ } 
+ 
+Sum by Column 
+As in the case of sum by row, the following nested for loop finds the sum of each 
+individual column: 
+        //Sum of each individual column 
+for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+{ 
+ sum = 0; 
+ for (row = 0; row < NUMBER_OF_ROWS; row++) 
+        sum = sum + matrix[row][col]; 
+ cout << "Sum of column " << col + 1 << " = " << sum 
+ << endl; 
+} 
+ 
+Largest Element in Each Row and Each Column 
+ 
+As stated earlier, two other operations on a two-dimensional array are finding the 
+largest element in each row and each column. 
+ 
+The following for loop

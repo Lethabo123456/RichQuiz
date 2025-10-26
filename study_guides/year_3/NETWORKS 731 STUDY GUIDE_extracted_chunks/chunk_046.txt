@@ -1,0 +1,25 @@
+2.5 Server Mirroring 
+ Mirroring is a fault-tolerance technique in which one device or component duplicates the 
+activities of another. In server mirroring, one server continually duplicates the transactions 
+and data storage of another. The servers involved must be identical machines using identical 
+components. As you would expect, mirroring requires a highspeed link between the servers. 
+It also requires software running on both servers that allows them to synchronize their actions 
+continually and, in case of a failure, that permits one server to take over for the other. Server 
+mirroring is considered to be a form of replication, a term that refers to the dynamic copying 
+of data from one location to another. 
+ 
+For example, suppose that you give a presentation to a large group of people, and the 
+audience is allowed to interrupt you to ask questions at any time. You might talk for two 
+minutes, wait while someone asked a question, answer the question, begin lecturing again, 
+take another question, and so on. In this sense, you act like a primary server, busily 
+transmitting and receiving information. Now imagine that your identical twin is standing in 
+the next room and can hear you over a loudspeaker. 
+
+Your twin was instructed to say exactly what you say as quickly as possible after you spoke, 
+but to an empty room containing only a tape recorder. Of course, your twin must listen to you 
+before imitating you. It takes time for the twin to digest everything you say and repeat it, 
+so you must slow down your lecture and your room’s question-and-answer process. A mirrored server 
+acts in much the same way. The time it takes to duplicate the incoming and outgoing data detrimentally 
+affects network performance if the network handles a heavy traffic load. But if you should faint during your 
+lecture, for example, your twin can step into your room and take over for you in very short 
+order. The mirrored server also stands ready to assume the responsibilities of its counterpart.

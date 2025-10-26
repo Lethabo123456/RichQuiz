@@ -1,0 +1,65 @@
+Example 5-12. Working with an Ar rayList 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.Collections; 
+namespace Values 
+{ 
+// a simple class to store in the array 
+public class Employee 
+{ 
+public Employee(int empID) 
+{ 
+this.empID = empID; 
+
+135 
+ 
+} 
+public override string ToString() 
+{ 
+return empID.ToString(); 
+} 
+public int EmpID 
+{ 
+get 
+{ 
+return empID; 
+} 
+set 
+{ 
+empID = value; 
+} 
+} 
+private int empID; 
+} 
+public class Tester 
+{ 
+static void Main() 
+{ 
+ArrayList empArray = new ArrayList(); 
+ArrayList intArray = new ArrayList(); 
+// populate the array 
+for (int i = 0; i < 5; i++) 
+{ 
+empArray.Add(new Employee(i + 100)); 
+intArray.Add(i * 5); 
+} 
+// print all the contents 
+for (int i = 0; i < intArray.Count; i++) 
+{ 
+Console.Write("{0} ", intArray[i].ToString()); 
+} 
+Console.WriteLine("\n"); 
+// print all the contents of the Employee array 
+for (int i = 0; i < empArray.Count; i++) 
+{ 
+Console.Write("{0} ", empArray[i].ToString()); 
+} 
+Console.WriteLine("\n"); 
+Console.WriteLine("empArray.Capacity: {0}", 
+empArray.Capacity); 
+} 
+} 
+Output:

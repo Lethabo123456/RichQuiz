@@ -1,0 +1,31 @@
+Optical Media  
+A simple way to save data is by copying it to optical media, which is a type of media capable 
+of storing digitized data and that uses a laser to write data to it and read data from it. 
+Examples of optical media include all types of CDs, DVDs, and Blu-Ray discs. Backing up data 
+to optical media requires only a computer with the appropriate recordable optical storage 
+drive and a utility for writing data to the media. Such utilities often come with a computer’s 
+operating system. If not, they are inexpensive and easy to find. 
+ 
+Tape Backups In the early days of networking, the most popular method for backing up 
+networked systems was tape backup or copying data to a magnetic tape. Tape backups 
+require the use of a tape drive connected to the network (via a system such as a file server or 
+dedicated, networked workstation), software to manage and perform backups, and, of 
+course, backup media. The tapes used for tape backups resemble small cassette tapes, but 
+they are higher quality, specially made to reliably store data. 
+ 
+On a relatively small network, stand-alone tape drives might be attached to each server. On 
+a large network, one large, centralized tape backup device might manage all of the 
+subsystems’ backups. This tape backup device usually is connected to a computer other than 
+a busy file server to reduce the possibility that backups might cause traffic bottlenecks. 
+Extremely large environments (for example, global manufacturers with several terabytes of 
+inventory and product information to safeguard) may require robots to retrieve and circulate 
+tapes from a tape storage library, also known as a vault, that may be as large as a warehouse. 
+ 
+External Disk Drives An external disk drive is a storage device that can be attached temporarily 
+to a computer via its USB, PCMCIA, FireWire, or CompactFlash port. External disk drives are 
+also known as removable disk drives. Small external disk drives are frequently used by laptop 
+or desktop computer users to save and share data. After being connected to the computer, 
+the external disk drives appear as any other drive, and the user can copy files directly to them. 
+For backing up large amounts of data, however, network administrators are likely to use an 
+external disk drive with backup control features, higher storage capacity, and faster read-
+write access.

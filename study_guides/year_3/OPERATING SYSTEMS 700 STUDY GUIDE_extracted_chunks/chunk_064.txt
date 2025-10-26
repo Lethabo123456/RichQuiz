@@ -1,0 +1,29 @@
+Figure 2.6 
+ 
+The job in figure 2.6 is 350 bytes long and is divided into four pages of 100 bytes each that 
+are loaded into four-page frames in memory. Notice the internal fragmentation at the end 
+of Page 3. 
+In this example, it is easy for us to see intuitively that all bytes numbered less than 100 will 
+be on Page 0; all bytes numbered greater than, or equal to, 100, but less than 200, will be on 
+Page 1; andso on. This is the advantage of choosing a convenient fixed page size, such as 100 
+bytes. The operating system uses an algorithm for calculating the page and displacement 
+using a simple arithmetic calculation: 
+
+YTE_NUMBER_TO_BE_LOCATED / PAGE_SIZE = PAGE_NUMBER 
+ 
+However, this calculation gives only the page number, not the actual location on that page 
+whereour desired data resides. 
+
+The previous example used a very convenient page size but now let us do the calculation 
+with a morelikely page size, where each page is 512 bytes each. The data to be retrieved is 
+located at byte 1076.To find the displacement, one could use traditional long division or a  
+modulo operation. This is a mathematical operation that displays the remainder that results 
+when the dividend is divided by the divisor. 
+ 
+Pages Versus Page Frames 
+The displacement calculation gives the location of an instruction with respect to the job’s 
+pages. However, these page numbers are ordered logically, not physically. Each page is 
+stored in a page frame that can be located anywhere in available main memory. Therefore, 
+the paged memory allocation algorithm needs to be expanded to find the exact location of 
+the byte in main memory. To do so, we need to correlate each of the job’s pages with its 
+page frame number using the job’s Page Map Table. 

@@ -1,0 +1,32 @@
+4.2  Fundamental Architecture 
+The control architecture of software-based robots typically follows a hierarchical structure with 
+multiple layers of abstraction. At the lowest level, servo controllers manage individual actuators 
+using feedback loops to maintain precise positioning and velocity control. These controllers 
+implement algorithms such as PID (Proportional-Integral-Derivative) control to minimise the error 
+between the desired and actual states. 
+Moving up the hierarchy, motion controllers coordinate multiple actuators to achieve complex 
+movements. These systems handle trajectory planning, interpolation, and the synchronisation of 
+multiple degrees of freedom. They translate high-level motion commands into sequences of low-
+level actuator instructions while respecting physical constraints such as acceleration limits and 
+collision avoidance. 
+
+4.3  PID Controllers 
+A PID controller is a control loop feedback mechanism that calculates the difference between a 
+desired value (setpoint) and the actual output from a process and use that result to apply a 
+correction to the process. The term PID stands for Proportional–Integral–Derivative feedback 
+
+control, and it is one of the most commonly used controllers in the industry. It is the best starting 
+point when designing an autonomous control system and is very popular in commercial autopilot 
+systems and open-source developments. The main goal of this process is to maintain a specified 
+setpoint value. For example, you may want a DC motor to maintain a setpoint value r(t) of 600 
+encoder pulses per second. The actual motor speed y(t), referred to as the process variable, is 
+subtracted from the setpoint value of 600 to determine the error value e(t). The PID controller 
+then computes the new control value u(t) to apply to the motor based on the computed error 
+value. In the case of a DC motor, the control value would be a pulse-width-modulated (PWM) 
+signal.  
+The (t) represents a time parameter being passed into the process (Fig. 4.2). Let us now look at 
+how each of the three elements, P, I, D, contributes to the overall controller. 
+
+Fig. 4.2  A PID controller—r(t) is the reference setpoint, e(t) is the difference between the 
+process output and the desired setpoint, u(t) is the process input control value, y(t) is the 
+process output. 

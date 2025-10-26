@@ -1,0 +1,18 @@
+25 outputs the modified intDeq. The statements in Lines 27 and 28 use the operation 
+pop_back to remove the last two elements of intDeq; the statement in Line 30 outputs the modified 
+intDeq.  
+  
+The statement in Line 32 declares deqIt to be a deque iterator that processes all deque containers whose 
+elements are of type int. After the statement in Line 33 executes, deqIt points to the first element of 
+intDeq. The statement in Line 34 advances deqIt to the next element of intDeq. The statement in Line 35 
+inserts 444 into intDeq at the position specified by deqIt. The statement in Line 37 outputs intDeq.  
+  
+ 
+2.2  
+Iterators  
+  
+Examples 2-5 through 2-7 further clarify that iterators are quite important to efficiently process the 
+elements of a container. Let us discuss iterators in some detail.  
+  
+Iterators work just like pointers. In general, an iterator points to the elements of a container (sequence or 
+associative). Thus, with the help of iterators, we can successively acc

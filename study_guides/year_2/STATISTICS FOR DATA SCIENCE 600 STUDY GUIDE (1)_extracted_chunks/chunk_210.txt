@@ -1,0 +1,23 @@
+Recall that we ran a test and exposed half of our users to a certain landing page (Website A), 
+exposed the other half to a different landing page (Website B), and then, measured the sign-
+up rates for both sites. We obtained the following results: 
+ 
+• Did not sign up: Website A - 134, Website B - 110. 
+• Signed up: Website A - 54, Website B - 48. 
+
+P a g e  | 119 
+ 
+ 
+We calculated website conversions but what we really want to know is whether there is a 
+difference between the two variables: which website was the user exposed to? and did the 
+user sign up? For this, we will use our chi-square test. 
+ 
+Assumptions of the Chi-square Independence Test 
+ 
+There are the following two assumptions of this test: 
+• All expected counts are at least 5. 
+• Individual observations are independent, and the population should be at least 10 
+times as large as the sample (10n < N). 
+ 
+Note that they are the same as the last chi-square test. Let's set up our hypotheses: 
+• H0: There is no associat

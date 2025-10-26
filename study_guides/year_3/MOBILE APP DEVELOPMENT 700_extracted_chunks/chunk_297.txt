@@ -1,0 +1,37 @@
+Defining Layouts  
+ 
+The preferred way to defi ne a layout is by using XML external resources. 
+Each layout XML must contain a single root element. This root node can contain as many nested layouts 
+and Views as necessary to construct an arbitrarily complex UI. The following snippet shows a simple 
+layout that places a TextView above an EditText control using a vertical LinearLayout. 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<LinearLayout xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:orientation=“vertical” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent”> 
+<TextView 
+android:layout_width=“match_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Enter Text Below” 
+/> 
+<EditText 
+android:layout_width=“match_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Text Goes Here!” 
+/> 
+</LinearLayout> 
+ 
+For each of the layout elements, the constants wrap_content and match_parent are used rather 
+than an exact height or width in pixels. These constants, combined with layouts that scale (such as 
+the Linear Layout, Relative Layout, and Grid Layout) offer the simplest, and most powerful, technique 
+for ensuring your layouts are screen-size and resolution independent. 
+ 
+The wrap_content constant sets the size of a View to the minimum required to contain the contents 
+it displays (such as the height required to display a wrapped text string). The match_parent constant 
+expands the View to match the available space within the parent View, Fragment, or Activity. 
+Later in this chapter you’ll learn how to set the minimum height and width for your own controls, 
+as well as further best practices for resolution independence. 
+Implementing layouts in XML decouples the presentation layer from the View, Fragment, and 
+Activity controller code and business logic. It also lets you create hardware configuration-specific 
+variations that are dynamically loaded without requiring code changes.

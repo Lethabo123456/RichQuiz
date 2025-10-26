@@ -1,0 +1,19 @@
+IZE];                                   //Line 2  
+ 
+list yourList;                                                     //Line 3 
+ list myList;                                                     //Line   4 
+ 
+The statement in Line 2 defines a data type list, which is an array of 50 components 
+of type double. The statements in Lines 3 and 4 declare two variables, yourList and 
+myList. Both are arrays of 50 components of type double. Of course, these statements 
+are equivalent to:  
+double yourList[50];  
+double myList[50]; 
+ 
+Searching an Array for a Specific Item  
+ 
+Searching a list for a given item is one of the most common operations performed on 
+a list. The search algorithm we describe is called the sequential search or linear 
+search. As the name implies, you search the array sequentially, starting from the first 
+array element. You compare searchItem with the elements in the array (the list) and 
+continue the search until either you find the item or no more data is left in the

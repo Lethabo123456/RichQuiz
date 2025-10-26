@@ -1,0 +1,37 @@
+8.3 App Distribution for the Enterprise 
+App distribution within an organization differs between iOS and Android. Generally, distribution is 
+easier because you are not required to conform to the specifications of the Play or App stores. 
+ 
+Android Enterprise Distribution 
+
+Distributing Android apps within an organization is very easy. You prepare an APK just like you did for 
+the Play Store, and then you give it to your users. The easiest way to do this is by sending users an 
+email with the APK attached. If users open the email on an Android device, the device automatically 
+asks if they want to install it. However, for this to occur, users must have set their device to accept 
+apps from unknown sources. To do this, go to the Settings app on the Android device and check the 
+box next to Unknown Sources. Unfortunately, this item is not located in exactly the same spot in 
+Settings on every Android device. Some common locations are under Applications or Security. 
+Another approach would be to set up an internal website to distribute the app. Again, the user must 
+check the box next to Unknown Sources. Although these are the two most common approaches, 
+because Android is open, you can choose whatever method works for your organization. 
+Many organizations also implement mobile device management (MDM) solutions to manage their 
+mobile devices and app distribution. These systems can help organizations implement security 
+controls on devices owned by employees, as well as devices owned by the enterprise. In addition, they 
+can also be used to distribute both in-house and purchased apps to users. A detailed discussion of 
+MDM is well beyond the scope of this book. 
+
+iOS Enterprise Distribution 
+The distribution of apps within the organization is a bit more complicated in iOS than it is in Android. 
+The first step is to get an iOS Enterprise Developer license. The cost of the license is $299 per year but 
+allows unlimited distribution of apps within the organization. You cannot sell apps in the App Store 
+with this license. Organizations that want to do both internal and public development need both an 
+Enterprise Developer license and an iOS Developer license. 
+
+Distributing within the organization requires setting up both an enterprise distribution certificate and 
+an enterprise distribution provisioning profile. These are then packaged with the app using Xcode. 
+There is no need to use iTunes Connect with in-house apps. However, the provisioning profile expires 
+after a year. Prior to that time, a new profile must be created, packaged with the app, and 
+redistributed, or the app will stop working. 
+ 
+After an app is compiled with the appropriate certificate and profile, it can be distributed through 
+third-party MDM systems, or the app file can be sent directly to the users for installation. 

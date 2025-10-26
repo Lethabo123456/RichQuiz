@@ -1,0 +1,42 @@
+Table 6.17 
+ 
+6.2.7.3 Literal characters 
+Character 
+Description 
+Alphanumeric Itself 
+\0 
+The NUL character (\u0000) 
+\t  
+Tab (\u0009) 
+\n 
+Newline (\u000A) 
+\v 
+Vertical tab (\u000B) 
+
+ 
+109 
+ 
+SIX | JAVASCRIPT OBJECTS 
+SIX | JAVASCRIPT OBJECTS 
+\f 
+Form feed (\u000C) 
+\r  
+Carriage return (\u000D) 
+\xnn 
+The Latin character specified by the hexadecimal number nn; for 
+example, \x0A is the same as \n 
+\uxxxx 
+The Unicode character specified by the hexadecimal number 
+xxxx; for example, \u0009 is the same as \t 
+\cX  
+The control character ^X; for example, \cJ is equivalent to the 
+newline character \n 
+Table 6.18 – Literal characters 
+ 
+6.2.7.4 Metacharacters 
+A metacharacter is simply an alphabetical character preceded by a backslash that acts 
+to give the combination a special meaning.For instance, you can search for large 
+money sums using the '\d' metacharacter: /([\d]+)000/, Here \d will search for any 
+string of numerical character. 
+ 
+Following is the list of metacharacters w

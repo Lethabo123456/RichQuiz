@@ -1,0 +1,19 @@
+ts, each of size 
+1. It follows that the exponent 3 in 23 indicates the level of the recursion, as shown in Figure 8-40.  
+  
+
+309  
+  
+  
+FIGURE 8-40 Levels of recursion levels to recMergeSort for a list of length 8  
+  
+Let us consider the general case when n = 2m. Note that the number of recursion levels is m. Also, note 
+that to merge a sorted list of size s with a sorted list of size t, the maximum number of comparisons is s  
++ t - 1.  
+  
+Consider the function mergeList, which merges two sorted lists into a sorted list. Note that this is where 
+the actual work, comparisons and assignments, is done. The initial call to the function recMergeSort, at 
+level 0, produces two sublists, each of size n / 2. To merge these two lists, after they are sorted, the 
+maximum number of comparisons is n / 2 + n / 2 – 1 = n – 1 = O(n). At level 1, we merge two sets of sorted 
+lists, where each sublist is of size n / 4. To merge two sorted sublists, each of size n / 4, we need at most 
+n / 4 + n /

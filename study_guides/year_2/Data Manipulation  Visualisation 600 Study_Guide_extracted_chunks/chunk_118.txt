@@ -1,0 +1,51 @@
+of 399 vehicles manufactured from 1970 to 1982. 
+When brought into a DataFrame, the first ten records look like this: 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+bubble1.py compares mpg to horsepower. The size of the marker is set by the number of cylinders. 
+ 
+ 
+import plotly.offline as pyo 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+df = pd.read_csv('../data/mpg.csv') 
+ 
+data = [go.Scatter( # start with a normal scatter plot x=df['horsepower'], 
+ 
+y=df['mpg'], 
+text=df['name'], 
+mode='markers', 
+marker=dict(size=1.5*df['cylinders']) # set the marker size 
+)] 
+ 
+layout = go.Layout( 
+ 
+title='Vehicle mpg vs. horsepower', 
+xaxis = dict(title = 'horsepower'), # x-axis label 
+yaxis = dict(title = 'mpg'), 
+# y-axis label 
+ 
+hovermode='closest' 
+) 
+fig = go.Figure(data=data, layout=layout) 
+ 
+pyo.plot(fig, filename='bubble1.html') 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+● The graph shows a definite relationship between high horsepower and low mpg, and also displays a trend 
+toward higher horsepower with greater numbers of cyl

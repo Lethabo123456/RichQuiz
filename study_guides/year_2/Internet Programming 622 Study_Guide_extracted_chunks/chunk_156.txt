@@ -1,0 +1,29 @@
+into a table   
+• 
+REPLACE — Replaces data in a table. If the same record exists in the table, the statement 
+overwrites the record with the new data   
+• 
+UPDATE — Updates data in a table   
+• 
+DELETE — Deletes data from a table   
+   
+
+65   
+   
+Other often-used statements create or modify tables and databases themselves, rather than 
+manipulating the data stored in a table:   
+• 
+CREATE — Creates a database, table or index   
+• 
+ALTER — Modifies the structure of a table   
+• 
+DROP — Wipes out a database or table   
+   
+You learn about most of these statements as you work through the unit. Just to give you a taste 
+though, let us take a look at the typical form of a MySQL SELECT statement, which retrieves records 
+from a table. Operations performed with SELECT are known as queries (hence the name “Structured 
+Query Language”):   
+   
+SELECT field1 , field2 , ... , fieldn FROM table WHERE condition   
+   
+A statement may expand to multiple lines. Here is a simple example of a real mul

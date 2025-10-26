@@ -1,0 +1,46 @@
+3.3  Agile Development Techniques  
+The ideas underlying agile methods were developed around the same time by a number of 
+different people in the 1990s. However, perhaps the most significant approach to changing 
+software development culture was the development of Extreme Programming (XP). The name 
+was coined by Kent Beck because the approach was developed by pushing recognized good 
+practice, such as iterative development, to “extreme” levels. 
+ 
+For example, in XP, several new versions of a system may be developed by different programmers, 
+integrated, and tested in a day. In XP, requirements are expressed as scenarios (called user 
+stories), which are implemented directly as a series of tasks. Programmers work in pairs and 
+develop tests for each task before writing the code. All tests must be successfully executed when 
+new code is integrated into the system. There is a short time gap between releases of the system. 
+ 
+Extreme programming was controversial as it introduced a number of agile practices that were 
+quite different from the development practice of that time.  
+These practices reflect the principles of the agile manifesto as outlined below;  
+
+i. Incremental development is supported through small, frequent releases of the 
+system. Requirements are based on simple customer stories or scenarios that are 
+used as a basis for deciding what functionality should be included in a system 
+increment. 
+ 
+ii. Customer involvement is supported through the continuous engagement of the 
+customer in the development team. The customer representative takes part in the 
+development and is responsible for defining acceptance tests for the system. 
+ 
+iii. People, not process, are supported through pair programming, collective 
+ownership of the system code, and a sustainable development process that does 
+not involve excessively long working hours. 
+ 
+iv. Change is embraced through regular system releases to customers, test-first 
+development, refactoring to avoid code degeneration, and continuous integration 
+of new functionality. 
+ 
+v. Maintaining simplicity is supported by constant refactoring that improves code 
+quality and by using simple designs that do not unnecessarily anticipate future 
+changes to the system. 
+ 
+In practice, the application of Extreme Programming as originally proposed has proved to be more 
+difficult than anticipated. It cannot be readily integrated with the management practices and 
+culture of most businesses. Therefore, companies adopt-ing agile methods pick and choose those 
+XP practices that are most appropriate for their way of working. Sometimes these are 
+incorporated into their own development processes but, more commonly, they are used in 
+conjunction with a management-focused agile method such as Scrum.  
+ 
+Table 3.2: Extreme programming practices

@@ -1,0 +1,30 @@
+percase:  
+  
+$myString = “Hello, world!”; echo strtoupper( $myString ); 
+// Displays ‘HELLO, WORLD!’  
+  
+ucfirst() makes just the first letter of a string uppercase:  
+
+51  
+  
+$myString = “hello, world!”;  
+echo ucfirst( $myString ); // Displays ‘Hello, world!’ 
+  
+lcfirst() – – introduced in PHP 5.3 — makes the first letter of a string lowercase:  
+  
+$myString = “Hello, World!”; echo lcfirst( 
+$myString ); // Displays ‘hello, World!’  
+  
+Finally, ucwords() makes the first letter of each word in a string uppercase:  
+  
+$myString = “hello, world!”; echo ucwords( 
+$myString ); // Displays ‘Hello, World!’  
+  
+4.12 Padding Strings With str_pad()  
+To use str_pad(), pass the string to be padded, and the desired width of the final string. The function 
+returns the string padded on the right using space characters (by default):  
+ echo ‘ < pre > ”’;  
+echo str_pad( “Hello, world!”, 20 ); // Displays “Hello, world! “ 
+echo ‘” < /pre > ’;  
+  
+To pad using characters other than space, pa

@@ -1,0 +1,81 @@
+0, compute the factorial of n – 1, multiply it by n , and return the result Write a PHP 
+script that uses a recursive function to display the factorials of the integers 0 to 10.  
+  
+3 
+Consider the following code:  
+  
+function resetCounter($c){  
+$c = 0;  
+}  
+  
+$counter = 0;  
+$counter++;  
+$counter++;  
+$counter++; 
+$counter++; echo 
+“$counter<br />”; 
+resetCounter($counter);  
+echo “$counter<br/>”;  
+  
+Task: State what this program displays.  
+  
+4 Also consider the following code:  
+  
+$myVar = 123;  
+$myRef = & $myVar;  
+$myRef++; echo 
+$myRef . “<br/>”;  
+echo $myVar . “<br/>”;  
+  
+Task: State the output of this code.  
+  
+  
+  
+  
+  
+  
+
+88  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+7. ADDENDUM 621 - INSTALLING PHP  
+  
+  
+To create and run PHP scripts, you need to have a few things in place:  
+A computer running Web server software, such as Apache or Internet Information Server  
+(IIS).  
+The PHP server

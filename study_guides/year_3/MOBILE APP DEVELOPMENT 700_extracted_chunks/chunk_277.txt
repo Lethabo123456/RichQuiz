@@ -1,0 +1,40 @@
+<EditText android:id=“@+id/txtName” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” /> 
+ 
+<CheckBox android:id=“@+id/chkAutosave” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Autosave” /> 
+ 
+<CheckBox android:id=“@+id/star” 
+style=“?android:attr/starStyle” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” /> 
+ 
+<RadioGroup android:id=“@+id/rdbGp1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:orientation=“vertical” > 
+ 
+ <RadioButton android:id=“@+id/rdb1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Option 1” /> 
+<RadioButton android:id=“@+id/rdb2” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Option 2” /> 
+</RadioGroup> 
+ 
+<ToggleButton android:id=“@+id/toggle1” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” /> 
+</LinearLayout> 
+
+Explanation 
+ 
+So far, all the views are relatively straightforward — they are listed using the <LinearLayout> element, 
+so they are stacked on top of each other when they are displayed in the activity. 
+For the first Button, the layout_width attribute is set to fill_parent so that its width occupies the 
+entire width of the screen: 

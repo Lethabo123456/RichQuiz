@@ -1,0 +1,83 @@
+), ostream_iterator<int>(cout, " "));  
+  
+Finally, the statement  
+  
+copy(vecList.begin(), vecList.end(), ostream_iterator<int>(cout, ", "));  
+  
+outputs the elements of vecList with a comma and space between them.  
+  
+Example 2-6 illustrates how to use the function copy and an ostream iterator in a program.  
+  
+EXAMPLE 2-6  
+//**********************************************************
+* // This program illustrates how to use the function copy and // an 
+ostream iterator in a program.  
+//***********************************************************  
+ 
+#include <algorithm>    
+  
+  
+  
+  
+  
+//Line 1  
+ 
+#include <vector>   
+  
+  
+  
+  
+  
+  
+//Line 2  
+ 
+#include <iterator>     
+  
+  
+  
+  
+  
+//Line 3  
+ 
+#include <iostream>    
+  
+  
+  
+  
+  
+//Line 4  
+ 
+using namespace std;   
+  
+  
+  
+  
+  
+//Line 5  
+ 
+int main()   
+  
+  
+  
+  
+  
+  
+  
+//Line 6  
+ 
+{   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 7  
+ 
+int intArray[] = {5, 6, 8, 3, 40, 36, 98, 29, 75};   
+  
+//Line 8  
+ 
+vector<int> vec

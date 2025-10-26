@@ -1,0 +1,19 @@
+eject the null hypothesis: 
+o This step changes slightly based on the type of test being used. The final result 
+will either yield in rejecting the null hypothesis in Favor of the alternative or 
+failing to reject the null hypothesis. 
+ 
+In this chapter, we will look at the following three types of hypothesis tests: 
+• One-sample t-tests 
+• Chi-square goodness of fit 
+• Chi-square test for association/independence 
+ 
+There are many more tests. However, these three are a great combination of distinct, simple, 
+and powerful tests. One of the biggest things to consider when choosing which test we should 
+implement is the type of data we are working with, specifically, are we dealing with 
+continuous or categorical data. To truly see the effects of a hypothesis, I suggest we dive right 
+into an example. First, let's look at the use of a t-tests to deal with continuous data. 
+ 
+5.4.2 One-Sample t-Tests 
+The one-sample t-test is a statistical test used to determine whether a quantitative 
+(n

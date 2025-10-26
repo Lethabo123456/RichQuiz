@@ -1,0 +1,14 @@
+Visualizing Distribution Plots 
+An early step in any effort to analyze or model data should be to understand how the variables are distributed. 
+Techniques for distribution visualization can provide quick answers to many important questions. What range do the 
+observations cover? What is their central tendency? Are they heavily skewed in one direction? Is there evidence for 
+bimodality? Are there significant outliers? Do the answers to these questions vary across subsets defined by other 
+variables? 
+ 
+The distributions module contains several functions designed to answer questions such as these. The axes-level 
+functions are histplot(), kdeplot(), ecdfplot(), and rugplot(). They are grouped together within the figure-level 
+displot(), jointplot(), and pairplot() functions. 
+ 
+There are several different approaches to visualizing a distribution, and each has its relative advantages and 
+drawbacks. It is important to understand these factors so that you can choose the best approach for your particular 
+aim.

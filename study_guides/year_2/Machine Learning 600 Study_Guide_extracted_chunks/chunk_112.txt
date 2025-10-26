@@ -1,0 +1,21 @@
+ter-based image is a grid of numbers. Each 
+“square” is called a pixel. Figure 6.1 is an example of an 8 pixel by 8–pixel image.  
+Let's assume this is an image of two colours: black and white. When there is a pixel colored 
+black, then it's given the value of one, and all the others are zero.  From a numeric point of 
+view, our image looks like Figure 6.2. What we have is a 1 bitmap image representation. Each 
+bit represents the colour, black or white. 
+ 
+                           
+ 
+                                                                                       Figure 6.1: An Image in a grid form 
+ 
+
+P a g e  | 72 
+ 
+                              
+ 
+                                                     Figure 6.2: Numeric image representation (8 x 8 pixel) 
+6.6.1 Color Depth 
+The more bits available, the more information you can store in the image. Table 6.1 shows 
+the image information that can be handled depending on the image depth; the larger the 
+depth, the more colours t

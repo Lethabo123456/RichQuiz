@@ -1,0 +1,19 @@
+but typically you will be working with text files that 
+contain data.   
+   
+The terms “ directory ” and “ folder ” are used interchangeably in this guide; they mean exactly the 
+same thing.   
+   
+A file is nothing more than an ordered sequence of bytes stored on a hard disk or other storage 
+media.   
+A directory is a special type of file that holds the names of the files and directories inside the folder 
+(sometimes denoted as subdirectories or subfolders ) and pointers to their storage areas on the 
+media.   
+3.2 Getting Information On Files   
+PHP provides some functions that enable you to access useful file information. For example, you can 
+use file_exists() to discover whether a file exists before attempting to open it:   
+   
+file_exists( “/home/chris/myfile.txt” )   
+   
+file_exists() returns true if the file at the specified path exists, or false otherwise. In a similar fashion, 
+you can use the filesize() function to determine the size of a file on the hard disk. Just as wi

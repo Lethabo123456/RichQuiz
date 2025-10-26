@@ -1,0 +1,20 @@
+ode in the HEAD section 
+gets executed first. But the browser does not wait until the whole page loads - it 
+executes 
+the JavaScript in the HEAD section first. This contained the 
+document.write method. Because the write method writes to the page then this 
+happens before any HTML is displayed. 
+ 
+Put the JavaScript code back into the BODY section. Amend your code to this: 
+document.write("Screen Height=" + window.screen.height); 
+ 
+What we have done here is something called concatenation. This just means joining 
+strings of text together. We have added some direct text between quotation marks. 
+After a plus symbol ( + ) we then have the screen height code. The plus symbol when 
+used like this means "join together". You can use it as many times as you want. For 
+example: 
+document.write(“SH=” + window.screen.height + “ SW=” + 
+window.screen.width); 
+ 
+The SH and SW above obviously mean Screen Height and Screen Width. But note 
+where all the plus symbols, commas and spaces are. Get you

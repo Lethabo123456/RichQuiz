@@ -1,0 +1,40 @@
+.py and add the following code: 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+import numpy as np 
+ 
+np.random.seed(42) 
+ 
+random_x = np.random.randint(1,101,100) 
+random_y = np.random.randint(1,101,100) 
+ 
+data = [go.Scatter( 
+x = random_x, 
+ 
+
+ 
+ 
+ 
+ 
+y = random_y, mode = 
+'markers', 
+)] 
+ 
+pyo.plot(data, filename='scatter1.html') 
+ 
+● 
+scatter1.py plots 100 random coordinate pairs. By seeding the random number generator, we can reproduce 
+the same plot each time the script is run. 
+● 
+Now is a good time to mention that random number generators are algorithmic and not really random - and 
+should never be used for cybersecurity! This explains why we can set seed values to obtain the same results. 
+Run the script and you should see: 
+ 
+ 
+• 
+You’ll notice that the plot has no title and no axis labels. To add them we’ll use the graph_objs Layout module to 
+add features to our graph. 
+• 
+You may also notice that when you move the cursor across the graph, information is

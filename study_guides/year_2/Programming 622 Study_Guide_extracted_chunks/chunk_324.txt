@@ -1,0 +1,14 @@
+ucting partial solutions and 
+making sure that any partial solution does not violate the problem requirements. The algorithm tries to 
+extend a partial solution toward completion. However, if it is determined that the partial solution would 
+not lead to a solution, that is, the partial solution would end in a dead end, then the algorithm backs up 
+by removing the most recently added part and trying other possibilities.  
+  
+ 
+4.4.2  n-Queens Puzzle  
+  
+In backtracking, the solution of the n-queens puzzle, because each queen must be placed in a different 
+row, can be represented as an n-tuple (x1, x2, . . ., xn), where xi is an integer such that 1 ≤ xi ≤ n. In this 
+tuple, xi specifies the column number, where to place the ith queen in the ith row. Therefore, for the 
+8queens puzzle the solution is an 8-tuple (x1, x2, x3, x4, x5, x6, x7, x8), where xi is the column where to place 
+the ith queen in the ith row. For example, the solution in Figure 4-11 can be represented as the 8-tuple

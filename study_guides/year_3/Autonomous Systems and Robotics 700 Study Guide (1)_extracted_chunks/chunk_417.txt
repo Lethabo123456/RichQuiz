@@ -1,0 +1,51 @@
+6.2.2 Recurrent Neural Networks (RNNs) for Sequential Decision-Making 
+Navigation often requires understanding temporal context—where the robot has been affects 
+where it should go next. RNNs and LSTMs capture this temporal dependency. 
+
+Use Cases: 
+• Path memory: Avoiding previously explored areas 
+• Dynamic obstacle tracking: Predicting pedestrian movements 
+• Behavioral patterns: Learning efficient exploration strategies 
+
+Simulated Scenario 
+Suppose we have a robot that moves in 4 directions: 
+• 0 = forward 
+• 1 = left 
+• 2 = right 
+• 3 = stop 
+
+We collect sequences of IMU sensor readings (e.g., accelerometer, gyroscope) over 10 time steps 
+to predict what action the robot should take next.
+
+import torch 
+import torch.nn as nn 
+import torch.nn.functional as F 
+ 
+class MovementRNN(nn.Module): 
+    def __init__(self, input_size=6, hidden_size=128, num_layers=2, num_actions=4): 
+        super(MovementRNN, self).__init__() 
+        self.hidden_size = hidden_size 
+        self.num_layers = num_layers 
+ 
+        # Define the RNN 
+        self.rnn = nn.RNN(input_size, hidden_size, num_layers, batch_first=True) 
+
+        # Fully connected output layer 
+        self.fc = nn.Linear(hidden_size, num_actions) 
+ 
+    def forward(self, x): 
+        # x: (batch_size, sequence_length, input_size) 
+        batch_size = x.size(0) 
+ 
+        # Initialize hidden state 
+        h0 = torch.zeros(self.num_layers, batch_size, self.hidden_size).to(x.device) 
+ 
+        # Pass through RNN 
+        out, _ = self.rnn(x, h0) 
+ 
+        # Use the final hidden state 
+        out = out[:, -1, :]  # Get output from last timestep 
+ 
+        # Map to action space 
+        out = self.fc(out) 
+        return F.softmax(out, dim=1)

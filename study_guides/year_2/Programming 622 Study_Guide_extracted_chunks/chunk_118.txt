@@ -1,0 +1,39 @@
+effectively manipulate data. More formally, the STL has three 
+main components:  
+  
+• Containers  
+• Iterators  
+• Algorithms  
+  
+Containers and iterators are class templates. Iterators are used to step through the elements of a 
+container. Algorithms are used to manipulate data. This chapter discusses some of the containers and 
+iterators.  
+  
+  
+  
+  
+  
+
+53  
+  
+Containers are used to manage objects of a given type. The STL containers are classified into three 
+categories:  
+  
+• Sequence containers (also called sequential containers)  
+• Associative containers  
+• Container adapters  
+  
+Container adapters are described in Chapters 5 and 6.  
+  
+ 
+2.1.2  Sequence Containers  
+  
+Every object in a sequence container has a specific position. The three predefined sequence containers 
+are as follows:  
+  
+• vector  
+• deque  
+• list  
+  
+Before discussing container types in general, let us first briefly describe the sequence container vector. 
+We do so because vector containers are

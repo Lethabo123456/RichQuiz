@@ -1,0 +1,12 @@
+alue; therefore, it can be left empty. 
+Domains Attributes have a domain. A domain is the set of possible values for a given attribute. 
+Attributes may share a domain. In fact, the data dictionary may let a newly declared attribute inherit 
+the characteristics of an existing attribute if the same attribute name is used.  
+Identifiers (Primary Keys) The ERM uses identifiers—one or more attributes that uniquely 
+identify each entity instance. In the relational model, entities are mapped to tables, and the entity 
+identifier is mapped as the table’s primary key (PK). Identifiers are underlined in the ERD. Key 
+attributes are also underlined in a frequently used shorthand notation for the table structure, called 
+a relational schema. 
+Composite Identifiers Ideally, an entity identifier is composed of only a single attribute. However, 
+it is possible to use a composite identifier, a primary key composed of more than one attribute.  
+Composite and Simple Attributes. Attributes are classified

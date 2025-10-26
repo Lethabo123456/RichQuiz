@@ -1,0 +1,12 @@
+essional programmer, your time typically is far more expensive than the 
+cost of the computer you use to produce programs. Of course, if you are developing software that will be 
+used many times a day by large numbers of users, then execution time and memory usage become 
+important considerations.  
+  
+Today’s computers are fast and have abundant memory. Therefore, the additional execution time and the 
+memory consumed by a recursive function might not be noticeable. Given the ever-increasing speed and 
+memory capacity of today’s computers, the choice between iteration and recursion depends more and 
+more on how the programmer envisions the solution to the problem, and less on execution time and 
+memory usage. In rare instances where execution time must be minimized or the demand for memory is 
+inordinately high, iteration might be better than recursion even when the recursive solution is more 
+obvious. Fortunately, any program that can be written recursively also can be written iterat

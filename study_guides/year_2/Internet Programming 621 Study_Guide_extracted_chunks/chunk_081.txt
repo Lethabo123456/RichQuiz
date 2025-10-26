@@ -1,0 +1,20 @@
+ain; if it is still true, the code block is run again, and so 
+on. However, if at any point the expression is false, the loop exits and execution continues with the 
+line after the closing brace. Here is a simple, practical example of a while loop:  
+  
+< ?php  
+$widgetsLeft = 10; while ( 
+$widgetsLeft > 0 ) { echo 
+“Selling a widget... “;  
+$widgetsLeft - - ;  
+echo “done. There are $widgetsLeft widgets left. < br / > ”;  
+}  
+echo “We ’ re right out of widgets!”;  
+? >  
+  
+First a variable, $widgetsLeft , is created to record the number of widgets in stock ( 10 ). Then the 
+while loop works through the widgets, “ selling ” them one at a time (represented by decrementing 
+the $widgetsLeft counter) and displaying the number of widgets remaining. Once $widgetsLeft 
+reaches 0 , the expression inside the parentheses ( $widgetsLeft > 0 ) becomes false , and the loop 
+exits. Control is then passed to the echo() statement outside the loop, and the message “ We ’ re 
+right out of widgets! ”

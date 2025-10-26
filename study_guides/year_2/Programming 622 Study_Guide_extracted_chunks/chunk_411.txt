@@ -1,0 +1,20 @@
+ot enough operands) = (Error in the expression)  
+_________________________________  
+#34.00 #24.00 #12.00 #7.00 / * + #23.00 - = 52.14  
+_________________________________  
+  
+ 
+5.5  
+Removing Recursion: Nonrecursive Algorithm to Print a Linked List Backward  
+  
+In this section, you will learn how a stack can be used to design a nonrecursive algorithm to print a linked 
+list backward. Consider the linked list shown in Figure 5-16.  
+  
+  
+FIGURE 5-16 Linked list  
+  
+To print the list backward, first we need to get to the last node of the list, which we can do by traversing 
+the linked list starting at the first node. However, once we are at the last node, how do we get back to the 
+previous node, especially given that links go in only one direction? You can again traverse the linked list 
+with the appropriate loop termination condition, but this approach might waste a considerable amount 
+of computer time, especially if the list is very large. Moreover, if we do this for every node

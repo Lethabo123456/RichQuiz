@@ -1,0 +1,36 @@
+5.10 Stacks 
+ 
+A stack is a last-in, first-out (LIFO) collection, like a stack of dishes at a buffet table, or a stack 
+of coins on your desk. Add a dish on top, which is the first dish you take off the stack. The 
+principal methods for adding to and removing from a stack are Push and Pop ( ); Stack also 
+offers a Peek ( ) method, very much like Queue. The significant methods and properties for 
+Stack are shown in Table 5-5. 
+ 
+Table 5-5. Stack methods and properties 
+ 
+Method or property         Purpose 
+Clear()                    Removes all objects from the Stack. 
+Clone()                    Creates a shallow copy of the Stack. 
+Contains(Object)           Determines whether an element is in the Stack. 
+CopyTo(Array, Int32)       Copies the Stack to an existing one-dimensional Array, starting 
+                           sat the specified array index. 
+Equals(Object)             Determines whether the specified object is equal to the current 
+                           object.(Inherited from Object) 
+GetEnumerator()            Returns an IEnumerator for the Stack. 
+GetHashCode()              Serves as the default hash function. (Inherited from Object) 
+GetType()                  Gets the Type of the current instance. (Inherited from Object) 
+MemberwiseClone()          Creates a shallow copy of the current Object. (Inherited 
+                           from Object) 
+Peek()                     Returns the object at the top of the Stack without removing it. 
+Pop()                      Removes and returns the object at the top of the Stack. 
+Push(Object)               Inserts an object at the top of the Stack. 
+Synchronized(Stack)        Returns a synchronized (thread safe) wrapper for the Stack. 
+ToArray()                  Copies the Stack to a new array. 
+ToString()                 Returns a string that represents the current object. (Inherited 
+                           from Object) 
+
+The ArrayList, Queue, and Stack types contain overloaded CopyTo( ) and ToArray( ) methods 
+for copying their elements to an array. In the case of a Stack, the CopyTo ( ) method will 
+copy its elements to an existing one-dimensional array, overwriting the contents of the array 
+beginning at the index you specify. The ToArray ( ) method returns a new array with the 
+contents of the stack's elements. Example 5-16 illustrates. 

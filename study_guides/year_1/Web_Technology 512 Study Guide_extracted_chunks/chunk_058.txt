@@ -1,0 +1,21 @@
+the addition with round brackets. Like this: 
+total = ( number1 + number2 ) / 2; 
+ 
+Now JavaScript will do the sums between the round brackets first and then divide by 2. 
+ 
+If you wanted to divide the second number by 2 then add that to the first number you 
+just rearrange the round brackets: 
+total = number1 + ( number2 / 2) ; 
+ 
+The reason you need to do this is because of something called Operator Precedence. 
+This just means which mathematical symbols get taken care of first. Take the following 
+code: 
+var result = 5 + 3 * 8 
+ 
+The multiplication operator ( * ) has a higher priority than the plus symbol. Because 
+the 3 and the 8 are together, JavaScript thinks you want to multiply these two 
+numbers first. After it multiplies 8 by 3 to get 24 it will then add the 5 at the start. 
+Parentheses (round brackets) are used as a way to override this operator precedence. 
+So if you want to add 5 plus three first, and then multiply by 8, you would do it like 
+this: 
+var result = (5 + 3) *

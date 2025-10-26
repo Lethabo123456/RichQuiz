@@ -1,0 +1,58 @@
+Parameterized Constructors 
+   
+While the Box( ) constructor in the preceding example does initialize a Box object, it is not very 
+useful—all boxes have the same dimensions. What is needed is a way to construct Box objects of 
+various dimensions. The easy solution is to add parameters to the constructor. 
+ As you can probably guess, this makes them much more useful. For example, the following version 
+of Box defines a parameterized constructor which sets the dimensions of a box as specified by those 
+parameters. Pay special attention to how Box objects are created.    
+/* Here, Box uses a parameterized constructor to 
+initialize the dimensions of a box.   
+
+*/ class Box { 
+double width; 
+double 
+height; 
+double 
+depth;   
+   
+// This is the constructor for Box.   
+Box(double w, double h, double d)   
+   
+{ width = w;   
+height = h;  
+depth = d;    
+}   
+// compute and return volume 
+double volume() { return width * 
+height * depth;   
+ 
+}   
+}   
+class BoxDemo7 {   
+   
+public static void main(String args[]) {   
+// declare, allocate, and initialize Box   
+   
+objects Box mybox1 = new Box(10, 20, 15); Box 
+mybox2 = new Box(3, 6,   
+9); double vol;   
+   
+// get volume of first box 
+vol = mybox1.volume();   
+   
+System.out.println("Volume is " + vol);   
+// get volume of second box vol = 
+mybox2.volume();   
+System.out.println("Volume is " + vol);   
+}   
+}   
+The output from this program is shown here:  Volume  
+is 
+3000.0  
+Volume is 162.0 
+
+As you can see, each object is initialized as specified in the parameters to its constructor. For 
+example, in the following line, Box mybox1 = new Box(10, 20, 15); the values 10, 20, and 15 are 
+passed to the Box( ) constructor when new creates the object. Thus, mybox1’s copy of width, height, 
+and depth will contain the values 10, 20, and 15, respectively. 

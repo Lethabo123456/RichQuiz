@@ -1,0 +1,51 @@
+Chapter 2: Cloud Computing Architecture and Platforms  
+ 
+2.1 Introduction 
+There are certain services and models working behind the scene making cloud computing feasible and 
+accessible to end users. This chapter analyse various service model and deployment models in cloud 
+computing.
+  
+2.2 Cloud Service Delivery Model 
+A cloud service delivery model represents a specific, pre-packaged combination of IT resources 
+offered by a cloud provider. There are three (3) common cloud delivery models, namely; 
+ Infrastructure-as-a- Service (IaaS) 
+ Platform-as-a- Service (PaaS) 
+ Software-as-a- Service (SaaS) 
+
+2.2.1  Infrastructure-as-a- Service (IaaS) 
+The IaaS delivery model represents a self-contained IT environment comprised of infrastructure-
+centric IT resources that can be accessed and managed via cloud service-based interfaces and tools. 
+This environment can include hardware, network, connectivity, operating systems and other IT 
+resources. In contrast to traditional hosting or outsourcing environment, with IaaS, IT resources are
+typically virtualised and packaged into bundles that simplify up-front runtime scaling and 
+customisation of the infrastructure. The general purpose of an IaaS environment is to provide cloud 
+consumers with a high level of control and responsibility over its configuration and utilisation. 
+IaaS provide access to fundamental resources such as physical machines, virtual machines, virtual 
+storage, etc. Iaas also offers Virtual machine disk storage, IP addresses, Virtual local area network 
+(VLANS),etc.
+
+Fig 2.1: IaaS 
+ 
+Characteristics of IaaS 
+ Virtual machines with pre-installed software. 
+ Virtual machines with pre-installed operating systems such as Windows, Linux, and Solaris. 
+ On-demand availability of resources. 
+ Allows to store copies of particular data at different locations. 
+ The computing resources can be easily scaled up and down. 
+ 
+Benefits of IaaS 
+IaaS allows the cloud provider to freely locate the infrastructure over the Internet in a cost-effective 
+manner. Some of the key benefits of IaaS are listed below: 
+ Full control of the computing resources through administrative access to VMs. 
+ Flexible and efficient renting of computer hardware. 
+ Portability, interoperability with legacy applications. 
+
+A cloud consumer is using a virtual server within an IaaS environment. 
+Cloud consumers are provided with a range of contractual guarantees by 
+the cloud provider, pertaining to characteristics such as capacity, 
+performance, and availability. 
+
+Challenges associated with IaaS 
+ Data erasure practices. 
+ Compatibility with legacy security and vulnerabilities.  
+ Robustness of VM level isolation 

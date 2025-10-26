@@ -1,0 +1,18 @@
+s the first step in using ODBC. To define a data source, you must create a 
+data source name (DSN) for it. To create a DSN, you need to provide the following:  
+ 
+An ODBC driver. You must identify the driver to use to connect to the data source.  
+ 
+A name. This is a unique name by which the data source will be known to ODBC, and therefore 
+to applications.  
+ 
+ODBC driver parameters. Most ODBC drivers require specific parameters to establish a 
+connection to the database.  
+ 
+Once the ODBC data source is defined, application programmers can write to the ODBC API by 
+issuing specific commands and providing the required parameters. The ODBC Driver Manager will 
+properly route the calls to the appropriate data source. 
+ 
+The ODBC API standard defines three levels of compliance: Core, Level-1, and Level-2, which 
+provide increasing levels of functionality. Because much of the functionality provided by these 
+interfaces is oriented toward accessing relational data sources, the use of th

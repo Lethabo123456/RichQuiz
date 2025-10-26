@@ -1,0 +1,31 @@
+area for merge, sort, or set 
+aggregate operations.  
+o Rollback segment table space. This is used for transaction-recovery purposes. 
+ 
+Put high-usage tables in their own table spaces so the database minimizes conflict with other 
+tables. 
+ 
+Assign separate data files in separate storage volumes for the indexes, system, and high-usage 
+tables. This ensures that index operations will not conflict with end-user data or data dictionary 
+table access operations.  
+ 
+Take advantage of the various table storage organizations available in the database.  
+ 
+Partition tables based on usage.  
+ 
+Use denormalized tables where appropriate.  
+ 
+Store computed and aggregate attributes in tables. In short, use derived attributes in your tables. 
+ 
+ 
+
+ 
+170 
+ 
+Chapter Summary/Review 
+ 
+In this chapter, you have learned: 
+ 
+ 
+Database performance tuning refers to a set of activities and procedures designed to ensure 
+that an end-user query is processed by the DBMS in the least amount of time.

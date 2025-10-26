@@ -1,0 +1,58 @@
+the headings 
+of these functions. Moreover, a constant member function of a class cannot modify the 
+member variables of that class. For example, see the headings of the member 
+functions getTime, printTime, and equalTime of the class clockType. 
+
+186 | P a g e  
+ 
+Full Program – ClockType 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+187 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+188 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Constructors 
+
+189 | P a g e  
+ 
+ 
+To guarantee that the member variables of a class are initialized, you use constructors. 
+There are two types of constructors: with parameters and without parameters. The 
+constructor without parameters is called the default constructor. 
+ 
+Constructors have the following properties:  
+ The name of a constructor is the same as the name of the class.  
+ A constructor is a function and it has no type. That is, it is neither a value-
+returning function nor a void function.  
+ A class can have more than one constructor. However, all constructors of a 
+class have the same

@@ -1,0 +1,23 @@
+1.7.2 The while loop 
+The semantics of the while loop are "while this condition is true, do this work." The syntax is: 
+while (expression) statement 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int i = 0; 
+repeat: // the label 
+Console.WriteLine("i: {0} ",i); 
+OUTPUT 
+
+As usual, an expression is any statement that returns a value. While statements require an 
+expression that evaluates to a Boolean (true /false) value, and that statement can, of course, 
+be a block of statements. Example 1-11 updates Example 1-10, using a while loop. 

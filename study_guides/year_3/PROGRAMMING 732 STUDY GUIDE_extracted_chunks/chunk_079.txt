@@ -1,0 +1,37 @@
+3.4.3 The Statement Interface  
+A statement is the vehicle for sending SQL queries to the database and retrieving a set of results. 
+Statements can be SQL updates, inserts, deletes, or queries; statements may also create or drop tables. 
+The Statement interface provides a number of methods designed to ease the job of writing queries to the 
+database. The important Statement methods are listed below. As usual, SQLException is thrown if there 
+is a problem with the remote database.  
+  
+a) ResultSet executeQuery (String sql) throws SQLException  
+Executes a single SQL query and returns the results in an object of type ResultSet.  
+b) int executeUpdata (String sql) throws SQLException  
+Executes a single SQL query that returns a count of rows affected rather than a set of results.  
+c)  boolean execute (String sql) throws SQLException  
+A general way to execute SQL statements that may return multiple result sets and/or update counts. This 
+method is also used to execute stored procedures that return out and inout parameters. The getResultSet 
+( ), getUpdateCount ( ), and getMoreResults ( ) methods are used to retrieve the data returned. (The 
+method is less likely to be used than executeUpdate ( ) and executeQuery ( ).)  
+d) ResultSet getResultSet ( ) throws SQLException  
+Returns the result of a statement execution as a ResultSet object. Note that if there are no results to be 
+read, or if the result is an update count, this method returns null. Also note that once read, the results are 
+cleared.  
+e)  int getUpdateCount ( ) throws SQLException  
+Returns the status of an Update, an Insert, or a Delete query; a stored procedure; or a DDL statement. The 
+value returned is the number of rows affected. A-1 is returned if there is no update count, or if the data 
+returned is a result set. Once read, the update count is cleared.
+f)  boolean getMoreResults ( ) throws SQLException  
+Moves to the next result in a set of multiple results/update counts. This method returns true if the next 
+result is a ResultSet object. This method will also close any previous  
+g)  ResultSet read.  
+Statement methods may or may not return a ResultSet object, depending on the Statement method used. 
+The executeUpdate ( ) method, for example, is used to execute SQL statements that do not expect a result 
+(except a row-count status); int rowCount;rowCount = stmt, executeUpdate (.DELETE FROM Customer 
+WHERE Custoer ID = .McG10233. .);  SQL statements that return a single set of results can use the 
+executeQuery ( ) method. This method returns a single Result Set object. The object represents the row 
+information returned as a result of the query:  
+  
+ResultSet results;  
+results = stmt.executeQuery (.SELECT * FROM Stock.);

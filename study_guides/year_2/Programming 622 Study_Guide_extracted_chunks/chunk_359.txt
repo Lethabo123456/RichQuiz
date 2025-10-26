@@ -1,0 +1,23 @@
+condition: The stack is changed and the top element // 
+is removed from the stack.  
+};   
+Figure 5-4 shows the UML class diagram of the class stackADT.  
+  
+  
+FIGURE 5-4 UML class diagram of the class stackADT  
+  
+We now consider the implementation of our abstract stack data structure. Functions such as push and 
+pop that are required to implement a stack are not available to C++ programmers. We must write the 
+functions to implement the stack operations.  
+  
+Because all the elements of a stack are of the same type, a stack can be implemented as either an array 
+or a linked structure. Both implementations are useful and are discussed in this chapter.  
+  
+  
+ 
+5.2  
+Implementation of Stacks as Arrays  
+  
+Because all the elements of a stack are of the same type, you can use an array to implement a stack. The 
+first element of the stack can be put in the first array slot, the second element of the stack in the second 
+array slot, and so on. The top of the stack is the index of the l

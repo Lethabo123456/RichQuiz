@@ -1,0 +1,38 @@
+decToBin(int num, int base); int 
+main()  
+{  
+
+160  
+  
+int decimalNum; 
+int base; base = 
+2;  
+cout << "Enter number in decimal: ";  
+cin >> decimalNum; cout 
+<< endl;  
+cout << "Decimal " << decimalNum << " = 
+"; decToBin(decimalNum, base); cout << " 
+binary" << endl; return 0;  
+}  
+  
+void decToBin(int num, int base)  
+{  
+if (num > 0)  
+{  
+decToBin(num / base, base);  
+cout << num % base;  
+}  
+}    
+Sample Run: In this sample run, the user input is shaded.  
+Enter a number in decimal: 57  
+Decimal 57 = 111001 binary  
+  
+ 
+4.3  
+Recursion or Iteration?  
+  
+Often there are two ways to solve a particular problem—recursion or iteration. The programs in the 
+previous chapters used a loop to repeat a set of statements to perform certain calculations. In other 
+words, the programs in the previous chapters used an iterative control structure to repeat a set of 
+statements. Formally, iterative control structures use a looping structure, such as while, for, or do... while, 
+to repeat a

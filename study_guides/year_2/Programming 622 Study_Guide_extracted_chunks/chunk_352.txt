@@ -1,0 +1,14 @@
+uter keeps track of the 
+function calls? What about recursive functions? How does the computer keep track of the recursive calls? 
+In Chapter 6, we designed a recursive function to print a linked list backward. What if you want to write a 
+nonrecursive algorithm to print a linked list backward?  
+  
+This section discusses the data structure called the stack, which the computer uses to implement function 
+calls. You can also use stacks to convert recursive algorithms into nonrecursive algorithms, especially 
+recursive algorithms that are not tail recursive. Stacks have numerous other applications in computer 
+science. After developing the tools necessary to implement a stack, we will examine some applications of 
+stacks.   
+  
+A stack is a list of homogenous elements in which the addition and deletion of elements occurs only at 
+one end, called the top of the stack. For example, in a cafeteria, the second tray in a stack of trays can be 
+removed only if the first tray has been removed.

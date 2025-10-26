@@ -1,0 +1,18 @@
+query optimization algorithm can be evaluated on the basis of its 
+operation mode or the timing of its optimization. 
+Operation modes can be classified as manual or automatic. Automatic query optimization means 
+that the DBMS finds the most cost-effective access path with-out user intervention and is thus more 
+desirable. manual query optimization requires that the optimization be selected and scheduled by 
+the end user or programmer.  
+
+ 
+161 
+Query optimization algorithms can also be classified according to when the optimization is done. 
+Within this timing classification, query optimization algorithms can be static or dynamic. 
+ 
+Static query optimization takes place at compilation time. In other words, the best optimization 
+strategy is selected when the query is compiled by the DBMS.  
+ 
+Dynamic query optimization takes place at execution time. Database access strategy is defined 
+when the program is executed. Therefore, access strategy is dynamically determined by the 
+DBMS at

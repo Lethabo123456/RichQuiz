@@ -1,0 +1,26 @@
+2.2.2 Broadcast Domain 
+
+A broadcast domain is a domain in which a broadcast is forwarded. A broadcast domain 
+contains all devices that can reach each other at the data link layer (OSI layer 2) by using 
+broadcast. All ports on a hub or a switch are by default in the same broadcast domain. All 
+ 
+ports on a router are in the different broadcast domains and routers don’t forward 
+broadcasts from one broadcast domain to another. 
+ The following example clarifies the concept. 
+ 
+Figure 23: Three Broadcast Domain 
+
+From the above diagram we have three broadcast domains, since all ports on a hub or a 
+switch are in the same broadcast domain, and all ports on a router are in a different 
+broadcast domain. 
+
+2.2.3 CSMA/CD 
+
+CSMA/CD (Carrier sense multiple access with collision detection) acts as decision maker to 
+hosts when to send packets on a shared network segment and to detect collisions. For 
+example, in a hub network, if the two devices can send packets at the same time can cause 
+a collision. CSMA/CD enables devices to “sense” the wire to ensure that no other device is 
+currently transmitting packets. Also, if two devices “sense” that the wire is clear and send 
+packets at the same time, a collision can occur. If the collision occurs, packets have to be 
+resend after a random period of time. This is what will happen if there happen to have a 
+collision. 

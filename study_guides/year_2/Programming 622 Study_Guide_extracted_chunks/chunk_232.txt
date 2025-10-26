@@ -1,0 +1,25 @@
+an 
+element in an ordered list at the proper place.  
+  
+The following class defines an ordered linked list as an ADT:  
+//***********************************************************  
+// This class specifies the members to implement the 
+basic // properties of an ordered linked list. This class is // 
+derived from the class linkedListType.  
+//*********************************************************** template 
+<class Type>  
+class orderedLinkedList: public linkedListType<Type>  
+{ public:  
+bool search(const Type& searchItem) const;  
+//Function to determine whether searchItem is in the list. 
+//Postcondition: Returns true if searchItem is in the list, // 
+otherwise the value false is returned.  
+  
+void insert(const Type& newItem); //Function 
+to insert newItem in the list.  
+//Postcondition: first points to the new list, newItem 
+// is inserted at the proper place in the list, and // 
+count is incremented by 1.  
+  
+void insertFirst(const Type& newItem);  
+//Function to insert new

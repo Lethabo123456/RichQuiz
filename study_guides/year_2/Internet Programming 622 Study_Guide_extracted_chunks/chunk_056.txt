@@ -1,0 +1,14 @@
+nd them of it).   
+   
+Secondly, it is generally a bad idea to pass any user-entered data — such as the values in $_GET and 
+$_POST — straight through to a statement like echo() or print() for displaying in a Web page. You 
+should never trust user input on a public Web site; a malicious user might be trying to break into the 
+site. It is quite easy for a wrong-doer to submit form data to an unprotected site that could be used 
+to gain access to other users’ credentials, for example. Therefore you should always validate (that is, 
+check) or filter user input to make sure it is safe before you display it in a Web page.    
+   
+1.5 Handling Empty Form Fields   
+The process_registration.php script assumes that the user has filled in all the fields in the form. 
+However, users often forget to (or don ’ t want to) fill in certain fields in a form. When this happens, 
+some data is not sent to the server. Sometimes the field is sent as an empty string; sometimes no 
+field name is sent at all.

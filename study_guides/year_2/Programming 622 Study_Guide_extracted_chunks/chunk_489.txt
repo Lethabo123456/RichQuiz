@@ -1,0 +1,35 @@
+serverListType. The definitions of the 
+constructor and destructor are straightforward.  
+  
+serverListType::serverListType(int num)  
+
+245  
+  
+{  
+numOfServers = num;  
+servers = new serverType[num];  
+}  
+  
+serverListType::~serverListType()  
+{ delete [] servers;  
+}  
+  
+The function getFreeServerID searches the list of servers. If a free server is found, it returns the server’s 
+ID; otherwise, the value -1 is returned, which indicates that all the servers are busy. The definition of this 
+function is as follows:  
+  
+int serverListType::getFreeServerID() const  
+{ int serverID = -1;  
+for (int i = 0; i < numOfServers; i++)  
+if (servers[i].isFree())  
+{ serverID = i;  
+break;  
+} return 
+serverID;  
+}  
+  
+The function getNumberOfBusyServers searches the list of servers and determines the number of busy 
+servers. The number of busy servers is returned. The definition of this function is as follows:  
+  
+int serverListType::getNumberOfBusyServers() const  
+{ int busyServers = 0;

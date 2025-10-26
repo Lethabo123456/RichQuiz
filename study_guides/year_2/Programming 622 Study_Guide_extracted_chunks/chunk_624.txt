@@ -1,0 +1,13 @@
+ist is of size n / 4. To merge two sorted sublists, each of size n / 4, we need at most 
+n / 4 + n / 4 – 1 = n / 2 – 1 comparisons. Thus, at level 1 of the recursion, the number of comparisons is 
+2(n / 2 – 1) = n – 2 = O(n). In general, at level k of the recursion, there are a total of 2k calls to the function 
+mergeList. Each of these calls merge two sublists, each of size n / 2k+1, which requires a maximum of n / 
+2k - 1 comparisons. Thus, at level k of the recursion, the maximum number of comparisons is 2k (n / 2k - 1) 
+= n – 2k = O(n). It now follows that the maximum number of comparisons at each level of the recursion is 
+O(n). Because the number of levels of the recursion is m, the maximum number of comparisons made by 
+mergesort is O(nm). Now n = 2m implies that m = log2n. Hence, the maximum number of comparisons 
+made by mergesort is O(n log2n).  
+  
+If W(n) denotes the number of key comparisons in the worst case to sort L, then W(n) = O(n log2n).  
+  
+Let A(n) denote the numb

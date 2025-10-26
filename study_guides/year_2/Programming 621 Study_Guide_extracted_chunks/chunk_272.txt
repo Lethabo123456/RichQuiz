@@ -1,0 +1,22 @@
+265 | P a g e  
+ 
+The statement in Line 11 prompts the user to enter the value for the divisor, and 
+the statement in Line 12 stores this number in the variable divisor. The statement 
+in Line 14 checks whether the value of divisor is 0. 
+ 
+If the value of divisor is 0, the statement in Line 15 throws the constant value 0. 
+The statement in Line 16 calculates the quotient and stores it in quotient. The 
+statement in Line 17 outputs the value of quotient. 
+ 
+The catch block starts in Line 19 and catches an exception of type int. 
+ 
+In Sample Run 1, the program does not throw any exception. 
+ 
+In Sample Run 2, the entered value of divisor is 0. Therefore, the statement in 
+Line 15 throws 0, which is caught by the catch block starting in Line 19. The 
+statement in Line 21 outputs the appropriate message 
+ 
+Throwing An Exception 
+ 
+C++ provides support to handle exceptions via a hierarchy of classes. The class 
+exception is the base of the classes designed to handle exceptions. Among

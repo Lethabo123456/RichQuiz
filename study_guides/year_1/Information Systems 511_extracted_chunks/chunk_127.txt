@@ -1,0 +1,19 @@
+it increases the amount of data that can be held in memory at one 
+time. When the memory chips get full, some of the data is paged 
+out to the hard disk. This is called swapping.  
+Windows uses a swap file for this purpose.   
+Input and output  
+Flow control is also part of the operating system's responsibilities. 
+The operating system must manage all requests to read data from 
+disks or tape and all writes to these and to printers.    
+To speed up the output to printers, most operating systems now 
+allow for print spooling, where the data to be printed is first put 
+in a file. This frees up the processor for other work in between the 
+times data is going to the printer. A printer can only handle so 
+much data at a time. Without print spooling you'd have to wait for 
+a print job to finish before you can do anything else. With it you 
+can request several print jobs and go on working. The print spool 
+will hold all the orders and process them in turn. 
+
+ 
+ 5.2.2 MONITORING SYSTEM ACTIV

@@ -1,0 +1,72 @@
+4.3 CONNECTING TO DATABASES  
+  
+It is very common to have servlets connect to databases through JDBC. This allows you to better control 
+access to the database by only permitting the middle-tier to communicate with the database. If your 
+database server includes sufficient simultanious connection licenses, you can even setup database 
+connections once, when the servlet is initialized, and pool the connections between all the different 
+service requests.   
+The following demonstrates sharing a single Connection between all service requests. To find out how 
+many simultaneous connections the driver supports, you can ask its DatabaseMetaData and then create 
+a pool of Connection objects to share between service requests.  In the init() method connect to the 
+database.   
+  
+Connection con = null;  
+public void init (ServletConfig cfg)throws ServletException   
+{  
+  super.init (cfg);  
+  // Load driver  
+  String name = cfg.getInitParameter("driver");  
+  Class.forName(name);   
+// Get Connection  
+  con = DriverManager.getConnection (urlString); }  
+In the doGet() method retrieve database information.   
+  
+public void doGet (HttpServletRequest 
+request,  HttpServletResponse response)  
+throws ServletException, IOException { 
+response.setContentType("text/html");  // 
+Have browser ignore cache - force reload  
+ response.setHeader ("Expires", "Mon, 01 Jan 1990 00:00:00  
+GMT");  
+ Statement stmt = null;  
+ResultSet result = null;  
+try   
+{  
+    // Submit query  
+    stmt = con.createStatement();  
+    result = stmt.executeQuery ("SELECT programmer, cups " +  
+"FROM JoltData ORDER BY cups    DESC;");  
+    // Create output  
+    PrintWriter out = response.getWriter();     
+while(result.next())  
+    {  
+      // Generate output from ResultSet  
+   } } 
+finall
+y  {  
+    if (result != null)   
+    {  
+      result.close();  
+    }  
+    if (stmt != null)   
+   {  
+      stmt.close();  
+    } } 
+out.flush()
+; 
+out.close()
+;  
+     }  
+  
+In the destroy() method disconnect from the database.   
+public void destroy()   
+{  
+  super.destroy();   
+con.close();  
+}  
+
+It is not good practice to leave a database connection permanently open, so this servlet should not be 
+installed as a permanent servlet. Having it as a temporary servlet that closes itself down after a predefined 
+period of inactivity allows the sharing of the database connection with requests that coincide, reducing 
+the cost of each request. You can also save some information in the HttpSession to possible page through 
+the result set. 

@@ -1,0 +1,23 @@
+following example assigns “ myfile ” to $filename:   
+   
+$filename = basename( “/home/james/docs/myfile.doc”, “.doc” );   
+   
+3.5 Opening And Closing Files   
+Usually, to work with a file from within your PHP script, you first need to open the file. When you 
+open   
+a file, you create a file handle. A file handle is a pointer associated with the open file that you can 
+then use to access the file’s contents. When you’ve finished with the file, you close it, which removes 
+the file handle from memory.   
+   
+
+46   
+   
+3.6 Opening A File With fopen()   
+The fopen() function opens a file and returns a file handle associated with the file. The first argument 
+passed to fopen() specifies the name of the file you want to open, and the second argument specifies 
+the mode , or how the file is to be used. For example:   
+   
+$handle = fopen( “./data.txt”, “r” );   
+   
+The first argument can be just a filename ( “ data.txt “ ), in which case PHP will look for the file in the 
+current direct

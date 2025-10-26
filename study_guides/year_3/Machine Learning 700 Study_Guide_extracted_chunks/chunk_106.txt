@@ -1,0 +1,25 @@
+Making Predictions  
+We can now make predictions using this model on new data for which we might not know the correct 
+labels. Imagine we found an iris in the wild with a sepal length of 5 cm, a sepal width of 2.9 cm, a petal 
+length of 1 cm, and a petal width of 0.2 cm. What species of iris would this be? We can put this data into 
+a NumPy array, again by calculating the shape that is, the number of samples (1) multiplied by the 
+number of features (4):  
+ 
+For this model, the accuracy of the test set is around 0.97, meaning the model correctly predicted 97% 
+of the irises in the test set. Under certain mathematical assumptions, this suggests the model will be 
+accurate 97% of the time when applied to new irises. In our hobby botanist scenario, this high accuracy 
+indicates that the model is likely reliable enough for practical use. In upcoming chapters, we will explore 
+ways to improve the model's performance and discuss the challenges of fine-tuning it. 
+The task involved three species: setosa, versicolor, and virginica, making it a multiclass classification 
+problem. In classification, the categories or species are called classes, and each iris has a species label. 
+The Iris dataset consists of two NumPy arrays: one for the features (denoted as X in scikit-learn) and one 
+for the correct labels (denoted as y). X is a two-dimensional array where each row corresponds to a data 
+point, and each column represents a feature, while y is a one-dimensional array containing the class 
+labels for each sample. We split the dataset into a training set to build the model and a test set to evaluate 
+how well the model generalizes to new data. We selected the k-nearest neighbors algorithm for 
+classification, which makes predictions based on the closest neighbors in the training set. We 
+implemented this using the KNeighborsClassifier class, setting the parameters accordingly. After fitting 
+the model with the fit method and passing in the training data and labels, we evaluated its performance 
+with the score method, which returned an accuracy of 97%. This indicates the model made correct 
+predictions 97% of the time on the test set, giving us confidence that it will predict new iris 
+measurements with similar accuracy. 

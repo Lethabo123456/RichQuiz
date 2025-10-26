@@ -1,0 +1,17 @@
+a specific task. You define a function using a special syntax — 
+which you are about to learn in this unit — and you can then call that function from elsewhere in 
+your script.  
+  
+A function often accepts one or more arguments , which are values passed to the function by the 
+code that calls it. The function can then read and work on those arguments. A function may also 
+optionally return a value that can then be read by the calling code. In this way, the calling code can 
+communicate with the function.  
+  
+6.2 Why Functions Are Useful  
+Functions are an important part of any programming language, and you will find yourself using and 
+creating functions in PHP all the time. Functions are useful for a number of reasons:  
+
+75  
+They avoid the necessity to duplicate code — Let us say you have written some PHP code to 
+check that an email address is valid. If you are writing a webmail system, chances are you 
+will need to check email addresses at lots of different points in your code.

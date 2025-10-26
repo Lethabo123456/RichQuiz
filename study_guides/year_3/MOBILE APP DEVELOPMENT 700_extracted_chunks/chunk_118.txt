@@ -1,0 +1,21 @@
+▪ Lines 14–20—The buildTypes element is used to configure different “flavors” of the same app. 
+Here we have only one flavor—the release version. Proguard is enabled by default, but it is also 
+recommended. Proguard is a tool that shrinks and optimizes your compiled code. It also obfuscates 
+your code by renaming classes, fields, and methods so your app is more difficult to reverse engineer. 
+▪ Lines 22–30—The dependencies element identifies packages external to the app that are required 
+to ensure proper operation. The items above are included by default, but you may add others to 
+enhance your app. For example, if you wanted to have your app interact with Facebook, you would 
+include a dependency on the Facebook SDK here (e.g., compile 'com.facebook.android:facebook- 
+android-sdk:4.1.0'). 
+
+2.4 Configuring the Emulator 
+
+Now that you have some understanding of the development environment, you are almost ready to 
+start creating the app. Don’t worry. Future projects will take less time to set up. You could start coding 
+at this point, but until you tell Android Studio how to execute the app, you will not be able to see your 
+results. Therefore, the next step will be to set up the test environment. 
+Android apps may be tested on either the emulator provided by the Android Studio IDE or an Android 
+device. The emulator is a program that simulates an Android device. If you choose to test on the 
+emulator, you should also test on several varieties of real devices before you publish your app. Real 
+devices often perform differently from how the emulator does. If you do not test on a real device, you 
+will likely have many unhappy users. 

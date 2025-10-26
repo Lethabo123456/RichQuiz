@@ -1,0 +1,20 @@
+bodies have no code. One way to handle this is to make the body of 
+these functions empty. This solution would work, but it has a drawback. Once we write 
+the definitions of the functions of the class shape, then we could create an object of 
+this class and invoke the empty draw and move functions. Because there is no shape 
+to work with, we would like to prevent the user from creating objects of the class shape. 
+It follows that we would like to do the following two things—to not include the definitions 
+
+233 | P a g e  
+ 
+of the functions draw and move and to prevent the user from creating objects of the 
+class shape. 
+ 
+Because we do not want to include the definitions of the functions draw and move of 
+the class shape, we must convert these functions to pure virtual functions. In this 
+case, the prototypes of these functions are: 
+ 
+virtual void draw () = 0;  
+virtual void move (double x, double y) = 0; 
+ 
+Note the expression = 0 before the semicolon. Once you make these functions

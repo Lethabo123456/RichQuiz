@@ -1,0 +1,14 @@
+• Scanning speed-Safety can be an issue when the laser source is operating at a frequency 
+dangerous to human eyes.  This issue is being mitigated by other approaches such as flash 
+LiDAR which illuminate a large area all at once and by operating at eye-safe wavelengths. 
+• Device crosstalk-signals from nearby LiDAR devices might interfere with the signal of 
+interest. The challenge faced now is how to differentiate signals emitted by other LiDAR 
+devices nearby. Various approaches with signal chirping and isolation are under 
+development. 
+• Cost and maintenance of LiDAR systems – These systems are more expensive than some 
+alternative types of sensors however, there is active development to overcome the high 
+cost and produce systems at lower prices for wider use.  Rejection of returns from 
+unintended objects- This is similar to the rejection of atmospheric spurious signals as 
+mentioned previously. However, it can also happen in clear-air scenarios. Addressing this 
+challenge generally involves minimising the size of the beam at various target distances, 
+as well as over the field of view received back at the LiDAR receiver. 

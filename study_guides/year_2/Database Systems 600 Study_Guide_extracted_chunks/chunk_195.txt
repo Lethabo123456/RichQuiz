@@ -1,0 +1,13 @@
+stages called normal forms. 
+The first three stages are described as first normal form (1NF), second normal form (2NF), and 
+third normal form (3NF). From a structural point of view, 2NF is better than 1NF, and 3NF is better 
+than 2NF.  
+For most purposes in business database design, 3NF is as high as you need to go in the normalization 
+process. However, even higher-level normal forms exist, including: Boyce-Codd normal form 
+(BCNF), fourth normal form (4NF), fifth normal form (5NF) and domain-key normal form 
+(DKNF). However, normal forms such as the 5NF and DKNF are not likely to be encountered in a 
+business environment and are mainly of theoretical interest. 
+Furthermore, a successful design must also consider end-user demand for fast performance. Hence, 
+at times you may need to de-normalize some portions of a database design to meet performance 
+requirements. Denormalization produces a lower normal form; that is, a 3NF will be converted to 
+a 2NF through denormalization. Howeve

@@ -1,0 +1,11 @@
+ood relational database software is not enough to avoid the data redundancy discussed in 
+Chapter 1, Database Systems. If the database tables are designed as though they are files in a file 
+system, the relational database management system (RDBMS) never has a chance to demonstrate 
+its superior data-handling capabilities. The table is the basic building block of database design. 
+Consequently, the table’s structure is of great interest.  
+How do you recognize a poor table structure, and how do you produce a good table? The answer to 
+both questions involves normalization. Normalization is a process for evaluating and correcting 
+table structures to minimize data redundancies, thereby reducing the likelihood of data anomalies.  
+The normalization process involves assigning attributes to tables based on the concepts of 
+determination and functional dependency. It works through a series of stages called normal forms. 
+The first three stages are described as first normal form (1NF), secon

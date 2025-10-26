@@ -1,0 +1,25 @@
+In the end, there are three kinds of points: core points, points that are within distance eps of core points 
+(called boundary points), and noise. When the DBSCAN algorithm is run on a particular dataset multiple 
+times, the clustering of the core points is always the same, and the same points will always be labeled as 
+noise. However, a boundary point might be neighbor to core samples of more than one cluster. Therefore, 
+the cluster membership of boundary points depends on the order in which points are vis- ited. Usually 
+there are only few boundary points, and this slight dependence on the order of points is not important. 
+Let’s apply DBSCAN on the synthetic dataset we used to demonstrate agglomerative clustering. Like 
+agglomerative clustering, DBSCAN does not allow predictions on new test data, so we will use the 
+fit_predict method to perform clustering and return the cluster labels in one step: 
+
+As you can see, all data points were assigned the label -1, which stands for noise. This is a consequence 
+of the default parameter settings for eps and min_samples, which are not tuned for small toy datasets. 
+The cluster assignments for different values of min_samples and eps are shown below, and visualized: 
+
+In this plot, points belonging to clusters are represented by solid markers, while noise points are shown 
+in white. Core samples are indicated by larger markers, and boundary points are represented by smaller 
+ones. As eps increases (moving from left to right in the figure), the clusters expand to include more 
+points, but this may also lead to the merging of distinct clusters into one. Conversely, 
+increasing min_samples (moving from top to bottom) results in fewer points being classified as core 
+samples, and more points being labeled as noise. 
+
+The eps parameter is typically more influential, as it sets the proximity threshold for points to be 
+considered as part of the same cluster. If eps is too small, no points may qualify as core samples, and all 
+points could be labeled as noise. On the other hand, if eps is too large, all points may end up in a single 
+cluster. 

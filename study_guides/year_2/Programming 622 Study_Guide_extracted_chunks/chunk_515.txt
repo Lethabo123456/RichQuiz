@@ -1,0 +1,21 @@
+an do the following:  
+  
+Determine whether a particular item is in the list.  
+If the data is specially organized (for example, sorted), find the location in the list where a new 
+item can be inserted.  
+ Find the location of an item to be deleted.  
+  
+The search algorithm’s performance, therefore, is crucial. If the search is slow, it takes a large amount of 
+computer time to accomplish your task; if the search is fast, you can accomplish your task quickly.  
+  
+ 
+7.1  
+Search Algorithms  
+  
+This chapter discusses other search algorithms and analyzes them. The analysis of algorithms enables 
+programmers to decide which algorithm to use for a specific application. Before describing these 
+algorithms, let us make the following observations.  
+  
+Associated with each item in a data set is a special member that uniquely identifies the item in the data 
+set. For example, if you have a data set consisting of student records, then the student ID uniquely 
+identifies each student in a part

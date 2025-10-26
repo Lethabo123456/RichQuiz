@@ -1,0 +1,27 @@
+e it. For example:    
+   
+rmdir( “/home/matt/myfolder” );    
+   
+If PHP cannot remove the directory — for example, because it is not empty — rmdir() 
+returns false ; otherwise it returns true.   
+   
+• 
+dirname() — Returns the directory portion of a path. The dirname() function returns the 
+directory part of a given path. It complements the basename() function, which returns the 
+filename portion of a given path, For example:    
+   
+$path = “/home/james/docs/index.html”;    
+$directoryPath = dirname( $path );   
+ $filename = basename( $path );    
+   
+After running this code, $directoryPath contains “ /home/james/docs ”, and $filename holds 
+“ index.html ”.   
+   
+3.17 Working With Directory Objects   
+PHP offers an alternative object-oriented mechanism for working with directories: the Directory 
+class.   
+To use it, first create a Directory object by calling the dir() function with the name of the directory 
+you want to work with, as follows:   
+   
+   
+$dir = dir( “/home/james/do

@@ -1,0 +1,15 @@
+t 
+bit of 33 is 1 because 33 % 2 is 1, and the rightmost bit of 28 is 0 because 28 % 2 is 0. (Recall that in C++, 
+% is the mod operator; it produces the remainder of the integer division.)  
+  
+We first illustrate the algorithm to convert an integer in base 10 to the equivalent number in binary format 
+with the help of an example.  
+  
+Suppose we want to find the binary representation of 35. First, we divide 35 by 2. The quotient is 17 and 
+the remainder—that is, the rightmost bit of 35—is 1. Next, we divide 17 by 2. The quotient is 8 and the 
+remainder—that is, the rightmost bit of 17—is 1. Next, we divide 8 by 2. The quotient is 4 and the 
+remainder—that is, the rightmost bit of 8—is 0. We continue this process until the quotient becomes 0.  
+  
+The rightmost bit of 35 cannot be printed until we have printed the rightmost bit of 17. The rightmost bit 
+of 17 cannot be printed until we have printed the rightmost bit of 8, and so on. Thus, the binary 
+representation of 35 is the binary

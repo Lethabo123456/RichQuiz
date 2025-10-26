@@ -1,0 +1,17 @@
+rity (foreign key) rules are 
+automatically applied to the new table. 
+SQL Indexes 
+You’ve learned that indexes can be used to improve the efficiency of searches and to avoid duplicate 
+column values. The ability to create indexes quickly and efficiently is important. Using the 
+CREATE INDEX command, SQL indexes can be created on the basis of any selected attribute. 
+The syntax is:  
+CREATE [UNIQUE]INDEX index-name ON table-name(column1 [, column2])  
+For example, based on the attribute P_INDATE stored in the PRODUCT table, the following 
+command creates an index named P_INDATEX:  
+CREATE INDEX P_INDATEX ON PRODUCT(P_INDATE); 
+Using the UNIQUE index qualifier, as shown in the command below, you can even create an index 
+that prevents you from using a value that has been used before. 
+CREATE UNIQUE INDEX P_CODEX ON PRODUCT(P_CODE); 
+To delete an index, use the DROP INDEX command:  
+DROP INDEX index-name 
+After creating the tables and some indexes, you are ready to start entering data.

@@ -1,0 +1,22 @@
+esults of a specific test. 
+Meanwhile, a loop lets you run the same section of code over and over again until a specific 
+condition is met.  
+  
+In this unit you explore the various ways in which you can implement decision-making and 
+looping code in PHP. You learn about:  
+Making decisions with the if , else , and switch statements  
+Writing compact decision code with the ternary operator  
+Looping with the do , while , and for statements  
+Altering loops with the break and continue statements  
+Nesting loops inside each other  
+
+36  
+  
+Once you have learned the concepts in this chapter, you  will be well on your way to building 
+useful, adaptable PHP scripts.  
+  
+3.1 Making Decisions  
+Like most programming languages, PHP lets you write code that can make decisions based on the 
+result  
+of an expression. This allows you to test if a variable matches a particular value, or if a string of text is 
+of a certain length. In essence, if you can create a test in the form of an expre

@@ -1,0 +1,15 @@
+utes, relationships, and 
+constraints. In the real world, names are used to identify objects. If the business environment wants 
+to keep track of the objects, there will be specific business rules for the objects. As a rule, a noun in 
+a business rule will translate into an entity in the model, and a verb (active or passive) that associates 
+the nouns will translate into a relationship among the entities. For example, the business rule “a 
+customer may generate many invoices” contains two nouns (customer and invoices) and a verb 
+(generate) that associates the nouns. From this business rule, you could deduce the following:  
+• 
+Customer and invoice are objects of interest for the environment and should be represented 
+by their respective entities. 
+• 
+There is a generate relationship between customer and invoice.  
+To properly identify the type of relationship, you should consider that relationships are bidirectional; 
+that is, they go both ways.  
+To properly identify the relationship

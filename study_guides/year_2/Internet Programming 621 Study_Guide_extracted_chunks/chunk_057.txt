@@ -1,0 +1,22 @@
+01100  
+> > (Shift Right)  
+Shifts all bits in the first value a 
+number of places to the right 
+(specified by the second value)  
+8 > > 2 = 2  
+00001000 > > 2 = 00000010  
+  
+2.11 Incrementing / Decrementing Operators  
+Oftentimes it  is useful to add or subtract the value 1 (one) over and over. This situation occurs so 
+frequently — for example, when creating loops — that special operators are used to perform this 
+task:  
+the increment and decrement operators. They are written as two plus signs or two minus signs, 
+respectively, preceding or following a variable name, like so:  
+  
+++$x; // Adds one to $x and then returns the result  
+$x++; // Returns $x and then adds one to it  
+– - $x; // Subtracts one from $x and then returns the result 
+$x – - ; // Returns $x and then subtracts one from it  
+  
+The location of the operators makes a difference. Placing the operator before the variable name 
+causes the variable’s value to be incremented or decremented before the value is returned;

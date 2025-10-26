@@ -1,0 +1,22 @@
+sition. 
+For example, consider the following function headings:  
+void functionOne(int x)  
+void functionTwo(int x, double y)  
+void functionThree(double y, int x)  
+int functionFour(char ch, int x, double y)  
+int functionFive(char ch, int x, string name) 
+Function overloading: Creating several functions with the same name. The 
+signature of a function consists of the function name and its formal parameter list. 
+Two functions have different signatures if they have either different names or 
+different formal parameter lists. (Note that the signature of a function does not 
+include the return type of the function.) If a function’s name is overloaded, then 
+
+113 | P a g e  
+ 
+all of the functions in the set have the same name. Therefore, all the functions in 
+the overloaded set must have different formal parameter lists. 
+Thus, the following function headings correctly overload the function 
+functionXYZ:  
+void functionXYZ()  
+void functionXYZ(int x, double y)  
+void functionXYZ(double

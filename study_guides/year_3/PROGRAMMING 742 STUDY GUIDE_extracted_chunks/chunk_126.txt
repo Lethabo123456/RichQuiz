@@ -1,0 +1,30 @@
+3.2.3 Delegates as Properties 
+The problem with static delegates is that they must be instantiated -- whether or not they are ever 
+used -- as with Student and Dog in the previous example. Y o u  can improve these classes by 
+changing the static delegate fields to properties. 
+For Student, take out the declaration: 
+public static readonly Pair.WhichIsFirst OrderStudents = new Pair.WhichIsFirst(Stu-
+dent.WhichStudentComesFirst); 
+and replace it with the following: 
+public static Pair.WhichIsFirst OrderStudents 
+{ 
+get { 
+return new Pair.WhichIsFirst(WhichStudentComesFirst); } 
+} 
+Similarly, replace the Dog static field with: 
+public static Pair.WhichIsFirst OrderStudents { 
+get { 
+return new Pair.WhichIsFirst(WhichStudentComesFirst); } 
+} 
+Similarly, replace the Dog static field with: 
+public static Pair.WhichIsFirst OrderDogs { 
+get 
+{ 
+return new Pair.WhichIsFirst(Whic } 
+} 
+W h e n  the OrderStudent property is accessed, the delegate is created: 
+return new Pair.WhichIsFirst(WhichStudentComesFirst); 
+ 
+
+The key advantage is that the delegate is not created until it is requested. This allows the test class to determine when it needs a 
+delegate but still allows the details of the creation of the delegate to be the responsibility of the Student (or Dog) class.

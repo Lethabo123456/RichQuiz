@@ -1,0 +1,15 @@
+variables. For example, 
+you can use it to output the contents of objects. If you ’d rather store the output of print_r() in a 
+string, rather than displaying it in a browser, pass a second true argument to the function:  
+  
+$arrayStructure = print_r( $array, true ); echo 
+$arrayStructure; // Displays the contents of $array  
+  
+5.6 Extracting A Range Of Elements With array_slice()  
+Sometimes you want to access more than one array element at a time. For example, if you have an 
+array containing 100 pending orders from customers, you might want to extract the first ten orders 
+so that you can process them. PHP has a built-in function, array_slice() , that you can use to extract 
+a range of elements from an array. To use it, pass it the array to extract the slice from, followed by 
+the position of the first element in the range (counting from zero), followed by the number of 
+elements to extract. The function returns a new array containing copies of the elements you 
+extracted (it doe

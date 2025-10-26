@@ -1,0 +1,15 @@
+rformed on that data. For example, for a video object, the data might include the 
+movie name, starring actors, producer, production company, number of copies in stock, and so on. Some 
+of the operations on a video object might include checking the name of the movie, reducing the number 
+of copies in stock by one after a copy is rented, and incrementing the number of copies in stock by one 
+after a customer returns a particular video.  
+  
+This illustrates that each object consists of data and operations on that data. An object combines data and 
+operations on the data into a single unit. In OOD, the final program is a collection of interacting objects. 
+A programming language that implements OOD is called an object-oriented programming (OOP) language. 
+You will learn about the many advantages of OOD in later chapters.  
+  
+OOD has the following three basic principles:  
+  
+Encapsulation—The ability to combine data and operations in a single unit  
+Inheritance—The ability to create new

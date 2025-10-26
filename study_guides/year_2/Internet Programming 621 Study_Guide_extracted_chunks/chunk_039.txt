@@ -1,0 +1,20 @@
+able to:  
+  
+Understand what a variable is and how to name variables legally in PHP.  
+Understand and conceptualize variable and data types and their declation implications.  
+Change a variable or data type using built-in functions as provided by PHP.  
+Perform a type cast in order to change a data or variable type.  
+Use operators appropriately in expressions and demonstrate an understanding of operators in 
+an overall sense including operator precedence.  
+Use and understand PHP constants and their scope in PHP scripts  
+  
+  
+2.1 Variables  
+A variable is simply a container, so to speak, and it holds a certain value. Variables get their name 
+from the fact that the quantities that they contain can change their values throughout the execution 
+of the script. It is this ability to contain changing values that makes variables so useful. For example, 
+consider the following simple PHP script:  
+  
+echo 2 + 2;  
+  
+As you might imagine, this code outputs the number 4 when it is ru

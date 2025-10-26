@@ -1,0 +1,18 @@
+ith a distributed 
+database design, data could be stored at multiple locations, and each location may have different 
+security restrictions. After validating the logical model integrity constraints, you are ready to 
+validate the model against the end-user requirements. 9-6d validate the Logical model against user 
+requirement 
+ 
+Validate the Logical Model against User Requirements 
+The logical design translates the software-independent conceptual model into a soft-ware-
+dependent model. The final step in the logical design process is to validate all logical model 
+definitions against all end-user data, transaction, and security requirements. The stage is now set to 
+define the physical requirements that allow the system to function within the selected 
+DBMS/hardware environment. 
+ 
+ 
+5.6 The Physical Design 
+ 
+Physical design is the process of determining the data storage organization and data access 
+characteristics of the database to ensure its integrity, security, and performance.

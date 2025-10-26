@@ -1,0 +1,36 @@
+an object by assigning 
+methods to it. 
+ 
+Example: 
+Here is a simple example to show how to add a function along with an object: 
+ 
+Figure 6.2 – How to add a function along with an object 
+6.1.5 The with Keyword 
+
+ 
+91 
+ 
+SIX | JAVASCRIPT OBJECTS 
+The with keyword is used as a kind of shorthand for referencing an object's properties 
+or methods. The object specified as an argument to with becomes the default object 
+for the duration of the block that follows. The properties and methods for the object 
+can be used without naming the object. 
+ 
+Syntax: 
+with (object) 
+{ 
+  //properties used without the object name and dot 
+} 
+ 
+Example: 
+ 
+Figure 6.3 – Using the with keyword to reference the object’s properties and 
+methods 
+ 
+6.2 JAVASCRIPT NATIVE OBJECTS 
+ 
+JavaScript has several built-in or native objects. These objects are accessible anywhere 
+in your program and will work the same way in any browser running in any operating 
+system. 
+ 
+Here is the list of all important JavaScript N

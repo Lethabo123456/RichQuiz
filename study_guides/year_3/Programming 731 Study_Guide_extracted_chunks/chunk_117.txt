@@ -1,0 +1,42 @@
+3.1.2 Multidimensional Arrays    
+In Java, multidimensional arrays are actually arrays of arrays. These, as you might expect, look and 
+act like regular multidimensional arrays. However, as you will see, there are a couple of subtle 
+differences. To declare a multidimensional array variable, specify each additional index using 
+another set of square brackets. For example, the following declares a two dimensional array variable 
+called twoD.   
+   
+int twoD[ ][ ] = new int[3][5];   
+   
+This allocates a 3 by 5 array and assigns it to twoD. Internally this matrix is implemented as an array 
+of arrays of int. Conceptually, this array will look like the one shown in Figure 3-1.    
+ 
+Figure 3.1 A conceptual view of a 3 by 5, two-dimensional array   
+   
+The following program numbers each element in the array from left to right, top to bottom, and 
+then displays these values:
+
+// Demonstrate a two-dimensional  array.  
+class TwoDArray {  
+  
+public static void main(String args[ ]) { 
+int twoD[ ][ ]= new int[3][5];   
+int i, j, k = 0;   
+for(i=0; i<3; i++)  { 
+   
+for(j=0; j<5; j++) {   
+twoD[i][j] = k;  
+ k++;   
+}   
+for(i=0; i<3; i++){  
+for(j=0; j<5; j++)   
+System.out.print(twoD[i][j] + " ");   
+System.out.println();   
+}   
+}   
+}   
+
+This program generates the following output:   
+01234   
+56789   
+10 11 12 13 14   
+15 16 17 18 19

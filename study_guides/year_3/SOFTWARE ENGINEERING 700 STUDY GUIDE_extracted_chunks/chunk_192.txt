@@ -1,0 +1,49 @@
+6.2 Verification and Validation  
+Verification and validation processes are concerned with checking that software being developed 
+meets its specification and delivers the functionality expected by the people paying for the 
+software. These checking processes start as soon as requirements become available and continue 
+through all stages of the development process.  
+
+Software verification is the process of checking that the software meets its stated functional and 
+non-functional requirements. Validation is a more general process. The aim of software validation 
+is to ensure that the software meets the customer’s expectations. It goes beyond checking 
+conformance with the specification to demonstrating that the software does what the customer 
+expects it to do.  
+
+Validation is essential because statements of requirements do not always reflect the real wishes 
+or needs of system customers and users. The goal of verification and validation processes is to 
+establish confidence that the software system is “fit for purpose.” This means that the system 
+must be good enough for its intended use. The level of required confidence depends on the 
+system’s purpose, the expectations of the system users, and the current marketing environment 
+for the system: 
+
+i. Software purpose: The more critical the software, the more important it is that it 
+is reliable. For example, the level of confidence required for software used to 
+control a safety-critical system is much higher than that required for a 
+demonstrator system that prototypes new product ideas. 
+ 
+ii. User expectations: Because of their previous experiences with buggy, unreliable 
+software, users sometimes have low expectations of software quality. They are not 
+surprised when their software fails. When a new system is installed, user may 
+tolerate failures because the benefits of use outweigh the costs of failure recovery. 
+However, as a software product becomes more established, users expect it to 
+become more reliable. Consequently, more thorough testing of later versions of 
+the system may be required. 
+
+iii. Marketing environment When a software company brings a system to market, it 
+must take into account competing products, the price that customers are willing 
+to pay for a system, and the required schedule for delivering that system. In a 
+competitive environment, the company may decide to release a program before it 
+has been fully tested and debugged because it wants to be the first into the 
+market. If a software product or app is very cheap, users may be willing to toler-
+ate a lower level of reliability. 
+
+Just like software testing, the verification and validation process may involve software inspections 
+and reviews. Inspections and reviews analyse and check the system requirements, design models, 
+the program source code, and even proposed system tests. These are “static” V & V techniques 
+in which you don’t need to execute the software to verify it.  
+ 
+Inspections mostly focus on the source code of a system, but any readable representation of the 
+software, such as its requirements or a design model, can be inspected. When you inspect a 
+system, you use knowledge of the system, its application domain, and the programming or 
+modelling language to discover errors. 

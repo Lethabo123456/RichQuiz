@@ -1,0 +1,31 @@
+Setting Up for Maps 
+The final way to get the GPS coordinates of your device’s location is through the 
+map object. The map has built-in methods that access the sensors 
+Android versus iOS: Location Sensors 
+
+Working with location data on iOS is similar to Android. However, although iOS devices also have both 
+GPS and network sensors, iOS developers don’t have access to the specific sensors. Instead, the 
+developer specifies a desired accuracy of the location data, and the system chooses the appropriate 
+sensor to provide the data. This allows the system to optimize the sensor usage for battery and 
+performance of the device. 
+
+without you having to write any code. This makes things easier, because all sensor management is 
+handled by the map. The drawback is that you must display a map in the layout to use these 
+features. There are a few things that need to be done before you can successfully add maps to your 
+app. The first is to load the Google Play Services SDK into your workspace. Select Tools > Android 
+> SDK Manager. The SDK Manager window opens and shows a list of available SDK platforms. Click 
+on the SDK Tools tab. Check the box next to Google Play Services (Figure 7.7), and click OK. 
+Click OK in the next window that opens to begin the download and installation process. When 
+installation is done, click the Finish button.
+
+Now that the Google Play Services SDK is downloaded, it must be added to your project. Select File > 
+Project Structure. Refer to the instructions for adding a library dependency earlier in the chapter 
+(Figures 7.2 and 7.3), but this time type play-services into the  search and select 
+com.android.google.gms:play-services. 
+
+To use Google Maps in an app, Google requires that the app contain an API key. There are two types 
+of keys: debug and release. The debug key can work only in debug mode and is associated with your 
+development machine. An app compiled for release with a debug key will not run the maps portion of 
+the app. To release the app, you need to follow a slightly different procedure to register with Google 
+to get a release key. The API key allows you (and Google) to track how often the users of your app 
+access the map functionality. For now, you need only a debug key.

@@ -1,0 +1,50 @@
+Type>::treeNodeCount() const  
+{  
+return nodeCount(root);  
+}  
+  
+template <class elemType>  
+int binaryTreeType<elemType>::treeLeavesCount() const  
+{  
+return leavesCount(root);  
+}  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::inorder(binaryTreeNode<elemType> *p) const  
+{  
+if (p != NULL)  
+{  
+inorder(p->llink); cout 
+<< p->info << " "; 
+inorder(p->rlink);  
+}  
+}  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::preorder(binaryTreeNode<elemType> *p) const  
+{  
+if (p != NULL)  
+{ cout << p->info << " "; 
+preorder(p->llink);  
+preorder(p->rlink);  
+}  
+}  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::postorder(binaryTreeNode<elemType> *p) const  
+{  
+if (p != NULL)  
+{ postorder(p->llink); 
+postorder(p-
+>rlink);  
+cout << p->info << " ";  
+}  
+}  
+
+333  
+  
+  
+template <class elemType>  
+int binaryTreeType<elemType>::height(binaryTreeNode<elemType> *p) const  
+{ if (p == NULL) return 0; else return 1 + max(height(p->llink), 
+heigh

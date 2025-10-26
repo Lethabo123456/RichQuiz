@@ -1,0 +1,34 @@
+the height of the B-tree.  
+  
+Next, we illustrate how the deletion process works. Consider the B-tree of order 5 shown in Figure 9-30.  
+  
+
+379  
+  
+  
+FIGURE 9-30 A B-tree of order 5  
+  
+Let us delete 18 from this B-tree. Because 18 is in a leaf and the leaf has more than the minimum number 
+of keys, we simply delete 18 from the leaf; see Figure 9-31.  
+  
+  
+FIGURE 9-31 Deleting 18 from a B-tree of order 5  
+  
+Next, let us delete 30. Figure 9-32 shows the B-tree before and after deleting 30.  
+  
+  
+FIGURE 9-32 B-tree before and after deleting 30  
+  
+The leaf containing 30 has only the minimum number of keys. However, its adjacent sibling has more than 
+the minimum number of keys. So we move 20 from the adjacent sibling to the parent node and then move 
+25 from the parent node to the leaf; see Figure 9-32(b).  
+  
+Next, let us delete 70. Figure 9-33 shows the process of deleting 70.  
+  
+
+380  
+  
+  
+FIGURE 9-33 Deletion of 70 from the B-tree  
+  
+The node containing 70 is not a

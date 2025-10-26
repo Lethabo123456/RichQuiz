@@ -1,0 +1,24 @@
+a) ResultSet.TYPE_SCROLL_INSENSITIVE  
+Creates a forward and backward scrollable ResultSet that will not reflect any changes to the database data 
+after the query data is returned.  
+  
+b) ResultSet.TYPE_SCROLL_SENSITIVIES  
+Created a forward and backward scrollable ResultSet that will be updated if the database Connectivity 
+data changes even after the query data is returned. The resultSetConcurrency parameter can be one of 
+the following two values:  
+  
+c) ResultSet.CONCUR_READ_ONLY  
+Creates an updatable ResultSet that allows updates insertions, and deletions, and backward scrollable 
+ResultSet:  
+  
+Statement stmt;  
+stmt = conn.createStatement  
+(ResultSet.TYPE_SCROLL_INSENSITIVE,  
+
+ResultSet.CONCUR_READ_ONLY);  
+ResultSet results;  
+Results = stmt.executeQuery (“SELECT * FROM  Stock”);  
+  
+If the ResultSet is scrollable, in addition to next(), you may use previous(), 
+first(), last(), absolute(int), and relative(int) methods to move around the 
+ResultSet.

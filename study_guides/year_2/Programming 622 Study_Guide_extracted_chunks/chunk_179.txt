@@ -1,0 +1,37 @@
+ent != NULL)  
+{ cout << current->info << " ";  
+current = current->link;  
+}  
+  
+ 
+3.1.2  Item Insertion and Deletion  
+  
+This section discusses how to insert an item into, and delete an item from, a linked list. Consider the 
+following definition of a node. (For simplicity, we assume that the info type is int. The next section, which 
+discusses linked lists as an abstract data type (ADT) using templates, uses the generic definition of a node.)  
+  
+struct nodeType  
+{  
+int info; nodeType 
+*link;  
+};  
+  
+We will use the following variable declaration:  
+ nodeType *head, *p, *q, *newNode;  
+  
+3.1.2.1 Insertion  
+  
+Consider the linked list shown in Figure 3-6.  
+  
+  
+FIGURE 3-6 Linked list before item insertion  
+  
+Suppose that p points to the node with info 65, and a new node with info 50 is to be created and inserted 
+after p. Consider the following statements:  
+  
+newNode = new nodeType;    
+//create newNode  
+newNode->info = 50;    
+  
+newNode->link = p->link; p->link 
+= n

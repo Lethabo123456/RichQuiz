@@ -1,0 +1,19 @@
+2.2.5 How Does LiDAR Play Out in a Real-World Situation? 
+One fascinating application for LiDAR is situational awareness for things like autonomous 
+navigation. The situational awareness system for any moving vehicle needs to be aware of 
+both stationary and moving objects around it. For example, radar has been used for a long 
+time in detecting aircraft. LiDAR has been found very helpful for terrestrial vehicles because 
+it can ascertain the distance to objects and is very precise in terms of directionality. The 
+probing beams can be directed to precise angles and scanned quickly to create the point 
+cloud for the three-dimensional model. The ability to scan quickly is key for this application 
+since the situation surrounding the vehicle is highly dynamic.  
+
+2.2.6 What Software Is Needed for LiDAR Devices? 
+Software is key to every aspect of LiDAR system creation and operation. There are multiple 
+software needs for the design of LiDAR systems. The system engineer needs a radiometric model 
+to predict the signal-to-noise ratio of the return beam. The optical engineer needs software to 
+create the optical design. The electronics engineer needs an electronics model to create the 
+electrical design. The mechanical engineer needs a CAD package to accomplish the system layout. 
+Structural and thermal modelling software may also be needed. The operation of LiDAR systems 
+requires control software and reconstruction software that converts the point cloud to a three-
+dimensional model.

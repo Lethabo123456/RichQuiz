@@ -1,0 +1,16 @@
+determine the departure time by 
+adding these three times. Let us call the class to implement the customer object customerType. It follows 
+that the class customerType has four member variables: the customerNumber, arrivalTime, waitingTime, 
+and transactionTime, each of type int. The basic operations that must be performed on an object of type 
+customerType are as follows: Set the customer’s number, arrival time, and waiting time; increment the 
+waiting time by one clock unit; return the waiting time; return the arrival time; return the transaction 
+time; and return the customer number. The following class, customerType, implements the customer as 
+an ADT:  
+  
+//************************************************************  
+// class customerType  
+// This class specifies the members to implement a customer.  
+//************************************************************ class 
+customerType  
+{ public: customerType(int cN = 0, int arrvTime = 0, int wTime = 0, int tTime = 0);  
+//Cons

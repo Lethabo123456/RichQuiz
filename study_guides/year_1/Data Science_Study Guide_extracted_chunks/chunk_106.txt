@@ -1,0 +1,46 @@
+# means 
+# 9.0 
+# 5.0 
+# 6.0 
+# 4.5 
+# 4.0 
+print df.tail() # as n, our size of the sample size, increases, the averages get 
+closer to 5! 
+# means 
+# 4.998799 
+# 5.060924 
+# 4.990597 
+# 5.008802 
+# 4.979198 
+df.plot(title='Law of Large Numbers') 
+plt.xlabel("Number of throws in sample") 
+plt.ylabel("Average Of Sample")
+
+What this is essentially showing us is that as we increase the sample size of our relative frequency, the 
+frequency approaches the actual average (probability) of 5
+
+5.4 Compound Events 
+Sometimes, we need to deal with two or more events. These are called compound events. A 
+compound event is any event that combines two or more simple events. When this happens, we need 
+some special notation (Sinan, 2016). 
+ 
+Given events A and B:  
+• The probability that A and B occur is P(A ∩ B) = P(A and B) 
+• The probability that either A or B occurs is P(A  B) = P(A or B) 
+ 
+Understanding why we use set notation for these compound events is very important. Remember how 
+we represented events in a universe using circles earlier? Let's say that our Universe is 100 people 
+who showed up for an experiment, in which a new test for cancer is being developed: 
+ 
+ 
+ 
+ 
+ 
+ 
+In the above diagram, the red circle, A, represents 25 people who actually have cancer. Using the 
+relative frequency approach, we can say that P(A) = number of people with cancer/number of people 
+in study, that is, 25/100 = ¼ = .25. This means that there is a 25% chance that someone has cancer. 
+ 
+Let's present a second event, called B, as shown, which contains people for whom the test was positive 
+(it claimed that they had cancer). Let's say that this is for 30 people. So, P(B) = 30/100 = 3/10 = 
+.3. This means that there is a 30% chance that the test said positive for any given person: 

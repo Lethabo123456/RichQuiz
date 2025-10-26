@@ -1,0 +1,25 @@
+S TOTALVALUE  
+FROM  
+PRODUCT  
+WHERE  
+P_QOH * P_PRICE > ALL (SELECT P_QOH * P_PRICE FROM PRODUCT 
+WHERE V_CODE IN (SELECT V_CODE FROM VENDOR WHERE V_STATE = 
+'FL')); 
+ 
+SQL Functions 
+The data in databases is the basis of critical business information. Generating information from 
+data often requires many data manipulations. Sometimes such data manipulation involves the 
+decomposition of data elements. 
+SQL functions are very useful tools. Functions always use a numerical, date, or string value. The 
+value may be part of the command itself (a constant or literal), or it may be an attribute located in 
+a table. Therefore, a function may appear anywhere in a SQL statement where a value or an 
+attribute can be used.  
+There are many types of SQL functions, such as arithmetic, trigonometric, string, date, and time 
+functions. See prescribed textbook for further details. 
+ 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris

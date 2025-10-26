@@ -1,0 +1,20 @@
+s the text value 
+specified in the value attribute. Hidden fields are great for passing additional information 
+from the form to the server:   
+   
+              <label for=”hiddenField”>A hidden field</label>   
+              <input type=”hidden” name=”hiddenField” id=”hiddenField” value=”” />   
+   
+• 
+An image field — This works like a submit button, but allows you to use your own button 
+graphic instead of the standard gray button. You specify the URL of the button graphic using 
+the src attribute, and the graphic’s width and height (in pixels) with the width and height 
+attributes. As with the submit button, the value attribute contains the value that is sent to 
+the server when the button is clicked:   
+   
+               <label for=”imageField”>An image field</label>   
+               <input type=”image” name=”imageField” id=”imageField” value=””                            
+src=”asterisk.gif” width=”23” height=”23” />   
+   
+• 
+A push button — This type of button does not do any

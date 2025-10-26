@@ -1,0 +1,31 @@
+Step 6: Run Everything Together 
+Setup Controller in Webots 
+1. In Webots, right-click on your robot 
+2. Go to "controller" field 
+3. Change from "simple_webots_robot" to <extern> 
+4. Save the world 
+ 
+Run Complete System 
+Command Prompt 1 - Start Webots Robot: 
+cd C:\robot_project 
+call C:\dev\ros2_humble\setup.bat 
+python src\simple_webots_robot.py 
+
+Command Prompt 2 - Robot Brain: 
+cd C:\robot_project 
+call C:\dev\ros2_humble\setup.bat 
+python src\simple_robot.py 
+Command Prompt 3 - Monitor: 
+cd C:\robot_project 
+call C:\dev\ros2_humble\setup.bat 
+python src\robot_monitor.py 
+Command Prompt 4 - Remote Control: 
+cd C:\robot_project 
+call C:\dev\ros2_humble\setup.bat 
+python src\robot_remote.py 
+Final Output: 
+1. A virtual robot moving in Webots simulation 
+2. ROS2 communication between different programs 
+3. Remote control of your robot 
+4. Real-time monitoring of robot status 
+5. Understanding of how robots communicate

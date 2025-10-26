@@ -1,0 +1,17 @@
+i-square. Test Statistic: χ2 = Σ (Oi - Ei) ^2 / Ei over k categories. 
+Degrees of Freedom = k − 1. A critical value is when we use χ2 as well as our degrees of 
+freedom and our significance level, and then reject the null hypothesis if the p-value is below 
+our significance level (the same as before). Let's see an example to understand further. 
+ 
+ 
+Example of a Chi-square Test for Goodness of Fit 
+ 
+The CDC categorizes adult BMIs into four classes: Under/Normal, Overweight, Obesity, and 
+Extreme Obesity. A 2009 survey showed the distribution for adults in the U.S. to be 31.2%, 
+33.1%, 29.4%, and 6.3% respectively. A total of 500 adults are randomly sampled and their 
+BMI categories are recorded. Is there evidence to suggest that BMI trends have changed since 
+2009? Test at the 0.05 significance level. 
+ 
+First, let's calculate our expected values. In a sample of 500, we expect 156 to be 
+Under/Normal (that's 31.2% of 500), and we fill in the remaining boxes in the same way. 
+First, ch

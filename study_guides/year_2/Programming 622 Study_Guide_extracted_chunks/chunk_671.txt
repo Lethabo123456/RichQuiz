@@ -1,0 +1,16 @@
+Insert an item in the binary tree.  
+Delete an item from the binary tree.  
+Find the height of the binary tree.  
+Find the number of nodes in the binary tree.  
+Find the number of leaves in the binary tree.  
+Traverse the binary tree.  
+Copy the binary tree.  
+  
+The item search, insertion, and deletion operations all require the binary tree to be traversed. However, 
+because the nodes of a binary tree are in no particular order, these algorithms are not very efficient on 
+arbitrary binary trees. That is, no criteria exist to guide the search on these binary trees, as we will see in 
+the next section. Therefore, we will discuss these algorithms when we discuss special binary trees.  
+  
+Other than for the search, insertion, and deletion operations, the following class defines binary trees as 
+an ADT. The definition of the node is the same as before. However, for the sake of completeness and easy 
+reference, we give the definition of the node followed by the definition of the class.

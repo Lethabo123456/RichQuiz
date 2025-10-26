@@ -1,0 +1,39 @@
+In addition to cloud storage devices and virtual servers, which are commonly pooled mechanisms, the 
+following mechanisms can also be part of this cloud architecture: 
+
+• Audit Monitor – This mechanism monitors resource pool usage to ensure compliance with privacy 
+and regulation requirements, especially when pools contain cloud storage devices or data loaded into 
+memory. 
+• Cloud Usage Monitor – Various cloud usage monitors are involved in the runtime tracking and 
+synchronization that are required by the pooled IT resources and any underlying management 
+systems. 
+• Hypervisor – The hypervisor mechanism is responsible for providing virtual servers with access to 
+resource pools, in addition to hosting the virtual servers and sometimes the resource pools 
+themselves. 
+• Logical Network Perimeter – The logical network perimeter is used to logically organize and isolate 
+resource pools. 
+• Pay-Per-Use Monitor – The pay-per-use monitor collects usage and billing information on how 
+individual cloud consumers are allocated and use IT resources from various pools. 
+• Remote Administration System – This mechanism is commonly used to interface with backend 
+systems and programs in order to provide resource pool administration features via a front-end portal. 
+• Resource Management System – The resource management system mechanism supplies cloud 
+consumers with the tools and permission management options for administering resource pools. 
+• Resource Replication – This mechanism is used to generate new instances of IT resources for 
+resource pools.
+
+5.4 Dynamic Scalability Architecture 
+The dynamic scalability architecture is an architectural model based on a system of predefined scaling 
+conditions that trigger the dynamic allocation of IT resources from resource pools. Dynamic allocation 
+enables variable utilization as dictated by usage demand fluctuations, since unnecessary IT resources 
+are efficiently reclaimed without requiring manual interaction 
+The following types of dynamic scaling are commonly used: 
+Dynamic Horizontal Scaling – IT resource instances are scaled out and in to handle fluctuating 
+workloads. The automatic scaling listener monitors requests and signals resource replication to initiate 
+IT resource duplication, as per requirements and permissions. 
+
+Dynamic Vertical Scaling – IT resource instances are scaled up and down when there is a need to 
+adjust the processing capacity of a single IT resource. For example, a virtual server that is being 
+overloaded can have its memory dynamically increased or it may have a processing core added. 
+Dynamic Relocation – The IT resource is relocated to a host with more capacity. For example, a 
+database may need to be moved from a tape-based SAN storage device with 4 GB per second I/O 
+capacity to another disk-based SAN storage device with 8 GB per second I/O capacity.  

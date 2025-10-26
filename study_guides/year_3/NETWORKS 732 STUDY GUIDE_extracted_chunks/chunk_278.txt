@@ -1,0 +1,38 @@
+The –n Switch 
+
+The -n switch is a modiﬁer for the other switches. When used with them, it reverses the natural 
+tendency of netstat to use names instead of network addresses. In other words, when you use 
+the –n switch, the output always displays network addresses instead of their associated network 
+names. Following is output from the netstat command used with the netstat -n command. It’s 
+showing the same information but with IP addresses instead of names: 
+
+Uses for netstat 
+You might be saying to yourself, “Fine . . . I can use lots of cool switches with netstat, but really, 
+what for?” I’m always ﬁnding uses for netstat. For instance, once I found a particularly nasty worm 
+on my PC using netstat. I just happened to run netstat for giggles one day and noticed a very large 
+number of outbound connections to various places on the Internet. My PC was sending out SYN 
+packets to a large number of hosts (an indication that my computer was involved—unknowingly— 
+ 
+Figure 5.32: Sample output of the netstat (Lammle, 2022) 
+ 
+Figure 5.33: Sample output of the netstat -n (Lammle, 2022) 
+ 
+5.3.12 tcpdump 
+The tcpdump utility is used to read either packets captured live from a network or packets that 
+have been saved to a ﬁle. Although there is a Windows version called windump, tcpdump only 
+works on Unix-like operating systems. 
+
+Examples of Using tcpdump 
+Use this command to capture traﬃc on all interfaces: 
+# tcpdump -I any 
+Here is the command to capture traﬃc on a particular interface: 
+# tcpdump -I eth0 
+And to ﬁlter traﬃc by IP, whether it’s the source or the destination, use this command: 
+# tcpdump host 192.168.5.5 
+
+Using the File Transfer Protocol 
+You already know that File Transfer Protocol (FTP) is a subset of TCP/IP and that FTP is used for 
+the transfer of ﬁles. In recent years, FTP has become a truly cross-platform protocol for 
+transferring ﬁles. Because Internet (and thus TCP/IP) use has skyrocketed, almost every client and 
+server platform has implemented FTP. Windows is no exception. Its TCP/IP stack comes with a 
+command-line ftp utility. 

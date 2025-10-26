@@ -1,0 +1,28 @@
+Production Set : 
+ 
+Condition                                 Action 
+-----------------------------------------------------------------
+Goal state in working memory   →          stop 
+Blank is not on the top edge   →          move the blank up 
+Blank is not on the right edge  →         move the blank right 
+Blank is not on the bottom edge  →        move the blank down 
+Blank is not on the left edge    →        move the blank left 
+Working memory is the present board state and goal state. 
+ 
+Control Recognize : 
+1- Try each production in order. 
+2- Do not allow loops. 
+3- Stop when goal is found. 
+ 
+Predicate logic is a mathematical model for reasoning with predicates: 
+functions that map variables to truth values. 
+ 
+As in propositional logic, we can create logical expressions containing 
+predicates, manipulate those expressions according to the algebraic laws 
+of predicate logic, and construct proofs using rules of inference to 
+deduce new facts from axioms. In fact, proofs in predicate logic (based 
+on unification) are a form of computation used in the programming 
+language Prolog.
+
+Although predicate logic is more powerful than propositional logic, it 
+too has its limits.

@@ -1,0 +1,58 @@
+9.2.2 Aligning Work Practices 
+ 
+User research, also known as discovery research, involves collecting and analyzing data to understand 
+potential users, their tasks, and the context in which they operate. While this research is typically 
+conducted before product development begins, it remains valuable throughout the development process. 
+In agile environments, time-intensive methods like ethnography are incompatible with short iteration 
+cycles. As a result, technical development should proceed independently of such studies. Instead, agile 
+projects benefit from focused activities, such as evaluating design components, clarifying requirements, 
+or understanding task contexts, which can run concurrently with development. This is exemplified by the 
+dual tracks approach. 
+Bob Thomas (2021) recommends adopting lean user research methods, which involve team members 
+from technical and design roles participating in usability tests, recording observations on sticky notes, and 
+summarizing findings within hours or days rather than weeks. 
+
+One strategy is to conduct user research before the project officially starts, often referred to as "iteration 
+zero." This phase supports foundational activities, including software architecture design and user 
+research. However, the time allotted for iteration zero may still be insufficient for more extensive 
+research. Don Norman (2006) suggests conducting user research even earlier, before a project is 
+announced, to avoid the time constraints imposed by agile timeboxes. 
+Another approach involves maintaining a continuous user research program that regularly updates and 
+enhances a company's understanding of its users over an extended period. This ongoing effort informs 
+individual projects, with iteration zero focused on collecting project-specific data. For example, companies 
+like Microsoft and Google recruit participants for various research activities, using the insights gained to 
+guide product development. 
+
+Cycles 0 and 1 differ significantly from subsequent cycles in agile development, as the initial focus is on 
+creating a product vision. While agile methodologies handle this differently, all agree on the importance 
+of upfront work to understand the product, its scope, and its overall design—both technical and UX. 
+Preliminary customer and behavioral data may be collected before cycle 0, but the vision and overarching 
+design for the current project are finalized by the end of cycle 0. The nature of the product—whether it’s 
+an update, a new product, or an entirely novel experience—affects the work required. Cycle 0 might be 
+longer than other cycles to meet these needs, but it does not aim to deliver pixel-perfect designs before 
+the evolutionary development begins. 
+
+Cycle 1 typically involves technical setup activities, allowing UX designers to prepare designs and user 
+activities for cycle 2. Subsequent cycles follow a rhythm where design and user activities occur in cycle n–
+1, while corresponding technical activities happen in cycle n. 
+When this dual-track approach was first introduced, interaction designers recognized three key 
+advantages. First, design time was not wasted on features that wouldn’t be implemented. Second, 
+combining usability testing and contextual inquiry during the same customer visit saved time. Third, 
+designers received timely feedback from users and developers, allowing them to adjust designs based on 
+feedback. For example, schedules could be revised for longer development times, or features could be 
+dropped if users prioritized other needs. 
+
+The dual-track methodology, widely known as agile UX, has become a common way to implement agile 
+practices. UX designers sometimes work two iterations ahead, depending on the work required, iteration 
+length, and stakeholder input timelines. Despite the parallel nature of the design and developer tracks, 
+they are closely interconnected and should not be treated as separate processes. 
+This method aligns with the double diamond process, where the design track focuses on “discovery” 
+(understanding pain points), and the developer track emphasizes “delivery” (implementing solutions). 
+Discovery activities include stakeholder interviews, user research, creating personas, and story mapping 
+to prioritize features. 
+
+Since its introduction in the early 2000s, this approach has evolved, particularly for larger, long-term 
+projects with ample resources. In such cases, the design and developer tracks are less tightly coupled, and 
+design iterations may vary in length. Some ideas from discovery may remain in refinement for longer or 
+may never progress to delivery. However, for smaller teams and short projects, this flexibility could lead 
+to role overburdening due to the demands of managing multiple activities.

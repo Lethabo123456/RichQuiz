@@ -1,0 +1,98 @@
+return(number + mystery(number - 1));   
+  
+//Line 6  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 7  
+  
+a. Identify the base case.  
+b. Identify the general case.  
+c. What valid values can be passed as parameters to the function mystery?  
+d. If mystery(0) is a valid call, what is its value? If not, explain why.  
+e. If mystery(5) is a valid call, what is its value? If not, explain why.  
+f. If mystery(-3) is a valid call, what is its value? If not, explain why.  
+  
+  
+  
+  
+  
+
+173  
+  
+8. Consider the following recursive function:  
+ 
+void funcRec(int u, char v)     
+  
+  
+  
+  
+//Line 1  
+{   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 2 if 
+(u == 0)   
+  
+  
+  
+  
+  
+  
+//Line 3 
+cout << v;   
+  
+  
+  
+  
+  
+//Line 4 else if (u 
+== 1)      
+  
+  
+  
+  
+//Line 5  
+cout << static_cast<char>(static_cast<int>(v) + 1);  //Line 6 else  
+ 
+  
+  
+  
+  
+  
+  
+  
+//Line 7 
+funcRec(u - 1, v);   
+  
+  
+  
+  
+//Line 8  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 9  
+  
+Answer the following questions: a. 
+Identif

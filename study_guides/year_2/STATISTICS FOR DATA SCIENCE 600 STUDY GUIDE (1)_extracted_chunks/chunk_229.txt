@@ -1,0 +1,29 @@
+. For comparison, both graphs are presented one after the other: 
+  
+                       
+ 
+
+P a g e  | 133 
+ 
+                                   
+ 
+ 
+Note how the x axis for each graph is the same, ranging from 0 to 1,200. The box plot is much 
+quicker at giving us a centre of the data, the red line is the median, while the histogram works 
+much better in showing us how spread out the data is and where people's biggest bins are. 
+For example, the histogram reveals that there is a very large bin of zero people. This means 
+that for a little over 150 days of data, there were zero customers. Note that we can get the 
+exact numbers to construct a box plot using the describe feature in Pandas, as shown: 
+  
+                 first_rossmann_sales['Customers'].describe() 
+  
+ 
+                             
+ 
+ 
+
+P a g e  | 134 
+ 
+6.3 Correlation vs Causation 
+Correlation is a quantitative metric between -1 and 1 that measures how two variables move 
+with each other. If two variables have a

@@ -1,0 +1,16 @@
+security must be 
+addressed. Data stored in the company database must be protected from access by unauthorized 
+users. (It does not take much imagination to predict the likely results if students have access to a 
+student database or if employees have access to payroll data!) Consequently, you must test for at 
+least the following:  
+ 
+Physical security allows only authorized personnel physical access to specific areas. Depending 
+on the type of database implementation, however, establishing physical security might not 
+always be practical. For example, a university student research database is not a likely candidate 
+for physical security.  
+ 
+Password security allows the assignment of access rights to specific authorized users. Password 
+security is usually enforced at login time at the operating system level.  
+ 
+Access rights can be established through the database software. The assignment of access rights 
+may restrict operations (CREATE, UPDATE, DELETE, and so on) on predeterm

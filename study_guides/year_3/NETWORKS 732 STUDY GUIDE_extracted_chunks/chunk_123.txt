@@ -1,0 +1,23 @@
+2.6.2 Caching 
+
+A network or host often uses caching to enhance performance in addition to traffic shaping. 
+Caching involves storing frequently accessed files locally, which would otherwise need to be 
+retrieved from external sources. By keeping these files closer to the user, access times are 
+reduced, resulting in faster performance. Moreover, caching can also reduce operational costs 
+for Internet Service Providers (ISPs). One of the most common forms of caching is web caching, 
+where web pages are stored locally—either on a specific device or across a network—and 
+delivered directly to users when requested. You may already be familiar with browser caching, 
+where your device saves copies of the web pages you visit on your local hard drive. If you revisit 
+the same page and it hasn't changed, your browser retrieves it from the local cache instead of 
+downloading it again. This process is highly customizable—you can set cache size limits, define 
+refresh rules, and configure conditions for clearing stored data. 
+
+For ISPs, caching serves a broader and more strategic purpose. It helps reduce the amount of 
+data that must traverse wide area networks (WANs), improving overall network efficiency and 
+saving bandwidth costs. For instance, if many subscribers access a popular news website daily, 
+the ISP can store the entire site on a cache engine—a dedicated device for storing and delivering 
+frequently requested content. When a user requests the site, the network checks the cache 
+engine first. If the cached version is available and up to date, it is delivered directly, bypassing 
+the need to contact the website's original server. If the site has changed or isn’t cached yet, the 
+engine fetches and stores the updated version for future requests. This process significantly 
+reduces redundant data transfers, optimizes performance, and lowers the ISP’s bandwidth usage.

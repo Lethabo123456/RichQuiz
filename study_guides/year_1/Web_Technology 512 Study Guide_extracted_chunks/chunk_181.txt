@@ -1,0 +1,41 @@
+e of a method or property to determine whether the 
+browser has the capability you desire. For example: 
+if (document.getElementById)  
+{ 
+// If the W3C method exists, use it 
+} 
+else if (document.all)  
+{ 
+// If the all[] array exists, use it 
+} 
+else 
+
+ 
+112 
+ 
+{ 
+// Otherwise use the legacy DOM 
+} 
+ 
+ 
+ 
+ 
+ 
+THINK POINT 
+ 
+What are the advantages of 
+using DOM with Javascript. 
+
+ 
+113 
+ 
+SIX | GLOSSARY OF TERMS 
+Encapsulation:  the packing of data and functions into a single component. The 
+features of encapsulation are supported using classes in most object-oriented 
+programming languages, although other alternatives also exist. 
+Polymorphism: an object-oriented programming concept that refers to the ability of a 
+variable, function or object to take on multiple forms. 
+Inheritance: the practice of passing on property, titles, debts, rights and obligations 
+upon the death of an individual. 
+Constructor: a special type of subroutine called to create an object. It prepares the 
+new o

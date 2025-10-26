@@ -1,0 +1,14 @@
+when the program is executed. Therefore, access strategy is dynamically determined by the 
+DBMS at run time, using the most up-to-date information about the database.  
+Finally, query optimization techniques can be classified according to the type of information that is 
+used to optimize the query. For example, queries may be based on statistically based or rule-based 
+algorithms. 
+ 
+A statistically based query optimization algorithm uses statistical information, such as size, 
+number of records, average access time and such like information about the database. These 
+statistics are then used by the DBMS to determine the best access strategy.  
+ 
+The statistical information is managed by the DBMS and is generated in one of two different 
+modes: dynamic or manual. In the dynamic statistical generation mode, the DBMS 
+automatically evaluates and updates the statistics after each data access operation. In the manual 
+statistical generation mode, the statistics must be updated periodica

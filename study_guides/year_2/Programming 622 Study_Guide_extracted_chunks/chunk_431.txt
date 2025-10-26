@@ -1,0 +1,39 @@
+herwise, the first element of the queue // 
+is returned.  
+  
+  
+  
+  
+  
+  
+  
+  
+
+219  
+  
+virtual Type back() const = 0;  
+//Function to return the last element of the queue. //Precondition: 
+The queue exists and is not empty.  
+//Postcondition: If the queue is empty, the program // 
+terminates; otherwise, the last element of the queue // 
+is returned.  
+  
+virtual void addQueue(const Type& queueElement) = 0; //Function 
+to add queueElement to the queue.  
+//Precondition: The queue exists and is not full.  
+//Postcondition: The queue is changed and queueElement is // 
+added to the queue.  
+  
+virtual void deleteQueue() = 0;  
+//Function to remove the first element of the queue.  
+//Precondition: The queue exists and is not empty.  
+//Postcondition: The queue is changed and the first element // 
+is removed from the queue.  
+};  
+We leave it as an exercise for you to draw the UML diagram of the class queueADT.  
+  
+ 
+6.2  
+Implementation of Queues as Arrays  
+  
+Before giving the defi

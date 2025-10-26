@@ -1,0 +1,30 @@
+he value of the 
+cookiesEnabled variable will then handed over to the secondFunction. But look at how 
+the secondFunction is now laid out: 
+function secondFunction( cookiesEnabled )  
+{ 
+ 
+The second function also has a variable name between its round brackets, the same 
+one as myFunction. But It does not have to be the same name. You can have different 
+names if you like. For example: 
+var retVal = secondFunction( cookiesEnabled ); 
+
+ 
+71 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+function secondFunction( cookiesEnabled_two )  
+{ 
+ 
+The result is the same: whatever was in the variable from the calling function will be 
+passed over to the function being called. 
+ 
+You could even do this: 
+var retVal = secondFunction( true ); 
+function secondFunction( cookiesEnabled )  
+{ 
+ 
+The function call now has a hard-coded value of true between the round brackets. A 
+value of true will then be placed in the cookiesEnabled variable. 
+ 
+The code for the secondFunction just uses an IF statement to check if coo

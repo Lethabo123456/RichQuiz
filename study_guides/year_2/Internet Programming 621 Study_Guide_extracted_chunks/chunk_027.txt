@@ -1,0 +1,20 @@
+rver will cancel the operation and generate an appropriate message for the 
+user.  
+
+18  
+Many settings can be configured in the php.ini file. This file requires that you have administrator 
+privileges in order for you to both access and edit it. Folder options as well as cookie options are set 
+in this file to determine the operational internet environment for the user. This file is read by the 
+PHP engine when PHP starts and the PHP engine sets the operational environment as specified by 
+the php.ini file.  
+  
+1.3 Basic PHP Syntax – Creating Your first PHP Script  
+With PHP successfully installed on your computer, it is time to start writing your first proper PHP 
+script. This script will do one very simple thing: display the text “ Hello, world! ” in the browser 
+window. Once you have this script working, you will learn how to enhance it in various ways. To 
+create this very simple script, open your text editor once more and enter the following:  
+  
+  
+  
+< ?php  
+echo “Hello, wor

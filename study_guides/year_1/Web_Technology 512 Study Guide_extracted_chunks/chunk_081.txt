@@ -1,0 +1,19 @@
+qual sign the NOT operator flips the value. Once 
+JavaScript has flipped the true or false value it puts the answer into the variable on the 
+left. This is the same variable as the one the right hand side. So bool_value will be the 
+opposite of what it was before. In other words, if the variable bool_value was true 
+before this line then it will be false after it. Likewise, if it was false before then it will 
+be true after. Test it out with this code: 
+var bool_value = true; 
+document.write( bool_value + "<BR>" ); 
+bool_value = !bool_value; 
+document.write( bool_value ); 
+ 
+You should find that it writes true the first time and false the second time. Change the 
+first line from true to false. Now rerun your script. It should be the other way round 
+this time: it writes false the first time and true the second time. 
+  
+3.9 JAVASCRIPT SWITCH STATEMENTS 
+ 
+Sometimes, you will have more than one value to check for your variables. You can do 
+the checking with a lot of if ... else stateme

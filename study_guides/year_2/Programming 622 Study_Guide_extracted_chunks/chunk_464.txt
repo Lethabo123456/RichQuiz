@@ -1,0 +1,16 @@
+ait to be seen, such as those 
+awaiting their routine annual checkup. For another example, in a shared environment, when print 
+requests are sent to the printer, interactive programs take priority over batchprocessing programs.  
+  
+There are many other situations where some priority is assigned to the customers. To implement such a 
+data structure in a program, we use a special type of queue, called priority queues. In a priority queue, 
+customers or jobs with higher priority are pushed to the front of the queue.  
+  
+One way to implement a priority queue is to use an ordinary linked list, which keeps the items in order 
+from the highest to lowest priority. However, an effective way to implement a priority queue is to use a 
+treelike structure. In Chapter 8, we discuss a special type of sorting algorithm, called the heapsort, which 
+uses a treelike structure to sort a list. After describing this algorithm, we discuss how to effectively 
+implement a priority queue.  
+  
+ 
+6.5.1  STL cl

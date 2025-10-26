@@ -1,0 +1,14 @@
+tructure will reduce the data redundancies. Normalisation starts with a 
+simple three-step procedure: 
+Step 1: Eliminate the Repeating Groups Start by presenting the data in a tabular format, where 
+each cell has a single value and there are no repeating groups. This change converts the table in 
+Figure 6.1 to 1NF as shown in Figure 6.2. 
+Step 2: Identify the Primary Key The layout in Figure 6.2 represents more than a mere cosmetic 
+change. Even a casual observer will note that PROJ_NUM is not an adequate primary key because 
+the project number does not uniquely identify each row. To maintain a proper primary key that will 
+uniquely identify any attribute value, the new key must be composed of a combination of 
+PROJ_NUM and EMP_NUM.  
+Step 3: Identify All Dependencies The identification of the PK in Step 2 means that you have 
+already identified the following dependency:  
+PROJ_NUM, EMP_NUM S PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, HOURS  
+That is, the PROJ_NAME, EMP_NAME, JOB_CLASS,

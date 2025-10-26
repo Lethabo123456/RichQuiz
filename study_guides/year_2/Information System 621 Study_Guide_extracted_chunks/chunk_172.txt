@@ -1,0 +1,12 @@
+e fans and other input/ output devices – can fail. Thus 
+organizations now require that their data storage devices be fault tolerant; that is, they can 
+continue with little or no loss of performance if one or more key components fail. 
+A redundant array of independent/inexpensive discs (RAID) is a method of storing data 
+that generates extra bits of data from existing data, allowing the system to create a 
+‘reconstruction map’ so that if a hard drive fails, it can rebuild lost data. With this approach, 
+data is split and stored on different physical disc drives using a technique called striping to 
+evenly distribute the data. RAID technology has been applied to storage systems to improve 
+system performance and reliability. RAID can be implemented in several ways. In the simplest 
+form, RAID sub- systems duplicate data on drives. This process, called disc mirroring, 
+provides an exact copy that protects users fully in the event of data loss. However, to keep 
+complete duplicates of cu

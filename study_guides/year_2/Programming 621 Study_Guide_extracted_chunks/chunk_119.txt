@@ -1,0 +1,48 @@
+type. Therefore, 
+functionType— that is, the return type—in the heading part and the return statement 
+in the body of the void functions are meaningless. However, in a void function, you 
+can use the return statement without any value; it is typically used to exit the function 
+early. Like value-returning functions, void functions may or may not have formal 
+parameters. 
+ 
+The function definition of void functions with parameters has the following 
+syntax: 
+ 
+ 
+
+102 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Parameter Types 
+
+103 | P a g e  
+ 
+ 
+Parameters provide a communication link between the calling function (such as main) 
+and the called function. They enable functions to manipulate different data each time 
+they are called. In general, there are two types of formal parameters: value parameters 
+and reference parameters. Value parameter: A formal parameter that receives a copy 
+of the content of the corresponding actual parameter. Reference parameter: A formal 
+p

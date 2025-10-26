@@ -1,0 +1,40 @@
+1.5.5 Fallacies 
+
+Several common fallacies arise in incorrect arguments. These fallacies 
+resemble rules of inference, but are based on contingencies rather than 
+tautologies. These are discussed here to show the distinction between correct and 
+incorrect reasoning. The proposition ((𝑝 → 𝑞) ∧ 𝑞) → 𝑝 is not a tautology, because it is false when 𝑝 
+is false and 𝑞 is true. However, there are many incorrect arguments that treat this 
+as a tautology. In other words, they treat the argument with premises 𝑝 → 𝑞 and 
+𝑞 and conclusion 𝑝 as a valid argument form, which it is not. This type of incorrect 
+reasoning is called the fallacy of affirming the conclusion. 
+Fallacies are either invalid arguments, or valid arguments based on false premises.
+
+Worked Example 
+Is the following argument valid? 
+If you do every problem in this book, then you will learn discrete 
+mathematics. You learned discrete mathematics. Therefore, you did 
+every problem in this book. 
+Solution: 
+Let p be the proposition “You did every problem in this book.” Let 𝑞 be 
+the proposition “You learned discrete mathematics.” Then this argument 
+is of the form: if 𝑝 → 𝑞 and 𝑞, then 𝑝. This is an example of an incorrect 
+argument using the fallacy of affirming the conclusion. Indeed, it is 
+possible for you to learn discrete mathematics in some way other than by 
+doing every problem in this book. (You may learn discrete mathematics 
+by reading, listening to lectures, doing some, but not all, the problems in 
+this book, and so on.) 
+ 
+A fallacy is an incorrect result arrived at by apparently correct, though 
+actually specious reasoning. 
+
+For example we can prove that 
+1=2 as follows: 
+
+Let 𝑎= 𝑏 
+𝑎𝑏= 𝑎**2 
+𝑎𝑏−𝑏**2 = 𝑎**2 −𝑏**2 
+𝑏(𝑎−𝑏) = (𝑎+ 𝑏)(𝑎−𝑏) 
+𝑏= 𝑎+ 𝑏 
+𝑏= 2𝑏 
+1 = 2 

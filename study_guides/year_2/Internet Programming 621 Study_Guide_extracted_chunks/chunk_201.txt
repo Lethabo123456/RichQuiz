@@ -1,0 +1,78 @@
+" 
+        echo GREETING; 
+?> 
+A. PHP is a scripting language 
+B. GREETING 
+     GREEtING 
+C. GREETING 
+D. PHP is a scripting language 
+     PHP is a scripting language 
+ANS: D 
+ 
+46. What will be the output of the following PHP code ? 
+<?php 
+$i = 0 
+do 
+{ 
+
+IP 621  
+   
+ 
+ 
+ 
+  print "hi"; 
+   
+ 
+ 
+ 
+  $i++; 
+} 
+while ($i != 3); 
+?> 
+A. hi 
+     hi 
+B. hi 
+C. hi 
+     hi 
+     hi 
+     hi 
+D. no output 
+ANS: C 
+ 
+47. What will be the output of the following PHP code ? 
+<?php 
+$i = 5; 
+while (--$i > 0) 
+{    
+    $i++; print $i; print "hello"; 
+} 
+?> 
+A. 4hello4hello4hello4hello4hello…..infinite 
+B. 5hello5hello5hello5hello5hello…..infinite 
+
+IP 621  
+C. no output 
+D. error 
+ANS: A 
+48. What will be the output of the following PHP code? 
+<?php 
+$i = 5; 
+while (--$i > 0 && ++$i) 
+{    
+    print $i; 
+} 
+?> 
+A. 5 
+B. 555555555…infinitely 
+C. 54321 
+D. error 
+ANS: B 
+ 
+49. What will be the output of the following PHP code? 
+<?php 
+$a = "1"; 
+switch($a) 
+{ 
+case 1: 
+    break; 
+    print

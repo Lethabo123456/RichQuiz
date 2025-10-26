@@ -1,0 +1,25 @@
+For each control, the catalog provides a description of the control, supplemental guidance on 
+implementation, a description of control enhancements, and references to other documents. 
+Also worthwhile is the CIS Critical Security Controls for Effective Cyber Defense, described in Section 
+1.7. Table 1.10 in Chapter 1 provides the current list that CIS considers most important: 20 controls 
+that encompass the broad range of known threats and the state of the art in countering those threats. 
+
+There is also a companion document, A Measurement Companion to the CIS Critical Security Controls, 
+that describes in detail techniques for measuring the performance of a given sub-control, plus a set of 
+three risk threshold values (lower, moderate, and higher). 
+ISO 27002, Code of Practice for Information Security Controls, is a document with a well-organized list 
+of controls (refer to Table 1.4 in Chapter 1), together with guidance on the implementation of each 
+control. 
+
+For purposes of risk assessment, it is useful to group security controls in a manner that reflects the 
+risk assessment process. The FAIR (Factor Analysis of Information Risk) risk analysis document, which 
+is described in Section 3.6, groups controls into four categories. 
+Avoidance controls: These controls, which include the following, affect the frequency and/or 
+likelihood of encountering threats: 
+
+ Firewall filters 
+ Physical barriers 
+ The relocation of assets 
+
+The reduction of threat populations (for example, reducing the number of personnel who are given 
+legitimate access to assets) 

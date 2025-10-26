@@ -1,0 +1,43 @@
+ys the current time 
+# This code displays the current timee  
+  
+To write multi-line comments, start the comment with a slash followed by an asterisk (/*) and 
+end the comment with an asterisk followed by a slash (*/), as follows:  
+  
+/*  
+This code displays the 
+current time in a nice, 
+easy-to-read format.  
+*/  
+  
+So you might comment the PHP code in the hello_with_time.php script like this:  
+  
+
+23  
+< ?php  
+// Get the current time in a readable format  
+$currentTime = date( “g:i:s a” ); // Display greeting 
+and time to the visitor echo “Hello, world! The 
+current time is $currentTime”;  
+? >  
+  
+  
+  
+  
+  
+  
+Self-Assessment  
+  
+1 Enhance the hello_with_time.php script to display the current date as well as the time. Comment 
+your code for readability.  
+ 
+ 
+
+24  
+2. PHP LANGUAGE BASICS  
+  
+Section Outcomes  
+At the end of this section of the syllabus, the learner should be able to:  
+  
+Understand what a variable is and how to name variables legally in PHP.  
+Understand

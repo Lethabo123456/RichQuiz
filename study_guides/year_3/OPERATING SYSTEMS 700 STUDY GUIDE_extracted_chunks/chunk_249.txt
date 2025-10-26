@@ -1,0 +1,36 @@
+7.2. Design Goals 
+To accommodate its user community and to optimize resources, the Windows team has identified five 
+overarching design goals: Extensibility, Portability, Reliability, Compatibility, and Performance. 
+
+1. Extensibility 
+Extensibility ensures that the operating system can grow and adapt over time. This includes support 
+for new hardware, emerging software paradigms, and innovative applications. Technology evolves 
+rapidly, and an extensible design allows developers to introduce features such as new APIs, 
+frameworks, or services without major overhauls. For example, Windows has successfully adapted 
+to integrate cloud services and modern application ecosystems. The introduction of PowerShell, the 
+Windows Subsystem for Linux (WSL), and modular updates to the OS are all results of extensible 
+design. 
+2. Portability 
+Portability ensures that the operating system can function across a wide range of hardware 
+architectures, such as x86, ARM, and more. By supporting multiple hardware platforms, Windows 
+can cater to a diverse user base, from desktop users to embedded systems. Windows 10 runs on 
+devices ranging from traditional PCs to tablets, IoT devices, and servers. Portability allows it to scale 
+across these platforms effectively. 
+3. Reliability 
+Reliability ensures that the operating system is stable and dependable, minimizing the risk of 
+crashes, data corruption, or system failure. Reliability is crucial in critical applications, such as 
+medical systems, financial services, and enterprise environments, where downtime or data loss 
+could have severe consequences. Features like automatic error reporting, robust recovery tools, and 
+built-in diagnostics contribute to Windows' reliability. 
+4. Compatibility 
+Compatibility ensures that existing software and hardware continue to function as expected, even 
+with updates or new versions of the OS. Many businesses and users rely on legacy systems, and 
+replacing or updating them can be costly. Compatibility allows organizations to adopt newer 
+versions of Windows without significant disruptions. Backward compatibility with older applications 
+through features like compatibility modes and support for 32-bit applications in 64-bit systems. 
+5. Performance 
+Performance ensures that the operating system uses system resources, such as CPU, memory, and 
+storage, efficiently to deliver a smooth and responsive experience. High performance is essential for 
+demanding applications, multitasking, and an overall pleasant user experience. Performance 
+enhancements like fast boot times, improved memory management, and optimized handling of 
+background tasks in Windows 11 reflect this goal. 

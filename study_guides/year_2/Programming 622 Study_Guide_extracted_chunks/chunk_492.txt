@@ -1,0 +1,28 @@
+tput is 
+sent to a file specified by the user. The definition of this function is as follows:  
+  
+void serverListType::updateServers(ostream& outF)  
+{ for (int i = 0; i < numOfServers; i++)  
+if (!servers[i].isFree())  
+{  
+servers[i].decreaseTransactionTime();  
+if (servers[i].getRemainingTransactionTime() == 0)  
+{  
+outF << "From server number " << (i + 1)  
+<< " customer number "  
+<< servers[i].getCurrentCustomerNumber()  
+<< "\n departed at clock unit "  
+<< servers[i].getCurrentCustomerArrivalTime()  
++ servers[i].getCurrentCustomerWaitingTime()  
++ servers[i].getCurrentCustomerTransactionTime()  
+<< endl; servers[i].setFree();  
+}  
+}  
+}  
+  
+ 
+6.6.5  Waiting Customers Queue  
+  
+When a customer arrives, he or she goes to the end of the queue. When a server becomes available, the 
+customer at the front of the queue leaves to conduct the transaction. After each time unit, the waiting 
+time of each customer in the queue is incremented by 1. The ADT queueType designed in this c

@@ -1,0 +1,24 @@
+Definition 32 
+Let g be a function from the set A to the set B and let f be a function from 
+the set B to the set C. The composition of the functions f and g, denoted for 
+all a ∈ A by 𝑓∘ 𝑔, is defined by (𝑓∘ 𝑔)(𝑎) =  𝑓 (𝑔(𝑎)).
+
+Figure 2.16: The Composition of the Functions f and g. 
+
+Worked Example 
+1. Let f be the function from {a, b, c} to {1, 2, 3} such that f (a) = 2, f 
+(b) = 3, and f (c) = 1. Is f invertible, and if it is, what is its inverse? 
+
+Solution: 
+The function f is invertible because it is a one-to-one 
+correspondence. The inverse function f−1 reverses the 
+correspondence given by f , so f−1(1) = c, f−1(2) = a, and f−1(3) = b. 
+ 
+2. Let f : 𝑍 → 𝑍 be such that 𝑓 (𝑥) =  𝑥 +  1. Is 𝑓 invertible, and if 
+it is, what is its inverse? 
+Solution: 
+The function f has an inverse because it is a one-to-one 
+correspondence. To reverse the correspondence, suppose that y 
+is the image of 𝑥, so that 𝑦 =  𝑥 +  1. Then 𝑥 =  𝑦 − 1. This 
+means that 𝑦 − 1 is the unique element of Z that is sent to 𝑦 by  
+. Consequently, f−1(𝑦) =  𝑦 −1. 

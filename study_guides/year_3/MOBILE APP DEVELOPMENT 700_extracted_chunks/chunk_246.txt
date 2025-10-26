@@ -1,0 +1,49 @@
+Listing 5.4 - ContactDataSource Code
+
+public class ContactDataSource {
+
+    private SQLiteDatabase database;
+    private ContactDBHelper dbHelper;
+
+    public ContactDataSource(Context context) {
+        dbHelper = new ContactDBHelper(context);
+    }
+
+    public void open() throws SQLException {
+        database = dbHelper.getWritableDatabase();
+    }
+
+    public void close() {
+        dbHelper.close();
+    }
+}
+
+▪ Line 2—A reference to the Contact Name EditText is assigned to the variable contactName. The 
+80 
+variable is declared as final because it is used inside the event code. 
+▪ Line 3—A TextChangedListener is added to the EditText by creating a new TextWatcher object. 
+TextWatcher is an object that, when attached to a widget that allows editing, will execute its methods 
+when the text in the widget is changed. The TextWatcher object requires that three methods (lines 3, 
+5, and 6) are implemented, even though you will use only one of these events. 
+▪ Line 5—The afterTextChanged method is a required method for the TextWatch object. It is called 
+after the user completes editing the data and leaves the EditText. This is the event that this app uses 
+to capture the data the user entered. 
+▪ Line 6—This code is executed when the user ends editing of the EditText. It gets the text in the 
+EditText, converts it to a string, and sets the contactName attribute of the currentContact object to 
+that value. 
+▪ Line 8—The beforeTextChanged method is a required TextWatcher method. This method is 
+executed when the user presses down on a key to enter it into an EditText but before the value in the 
+EditText is actually changed. 
+▪ Line 11—The onTextChanged method is also a required TextWatcher method. The method is 
+executed after each and every character change in an EditText. 
+▪ Lines 16–17—The pattern repeats for another EditText in the layout, except that value is assigned 
+to a different attribute of the currentContact object. 
+▪ Line 19—This code gets the value entered into the editAddress EditText, converts it to a string, 
+and sets the streetAddress attribute of the currentContact object to that value. It is essentially the 
+same as the code in line number 6, except that it gets the value from a different widget and assigns it 
+to a different attribute. 
+This code needs to be repeated for the remaining EditTexts in the activity_main.xml file. This includes 
+the remaining address EditTexts, the phone and cell number EditTexts, and the email EditText. You 
+can copy and paste the code you already entered or type it. In either case, but especially with the 
+copy/paste approach, make sure you get a reference to the correct widget (R.id.widget+id) and assign 
+the value to the correct Contact attribute.

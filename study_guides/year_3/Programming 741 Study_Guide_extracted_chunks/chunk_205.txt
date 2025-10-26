@@ -1,0 +1,64 @@
+Example 5-15. Working with a queue 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.Collections; 
+namespace Values 
+{ 
+public class Tester 
+{  
+static void Main() 
+{ 
+Queue intQueuee = new Queue(); 
+// populate the array 
+for (int i = 0; i < 5; i++) 
+{ 
+intQueuee.Enqueue(i * 5); 
+} 
+Console.Write("intQueuee values:\t");// Display the Queue. 
+PrintValues(intQueuee); 
+// Remove an element from the queue. 
+Console.WriteLine( 
+"\n(Dequeue)\t{0}", intQueuee.Dequeue()); 
+// Display the Queue. 
+Console.Write("intQueuee values:\t"); 
+PrintValues(intQueuee); 
+// Remove another element from the queue. 
+Console.WriteLine( 
+"\n(Dequeue)\t{0}", intQueuee.Dequeue()); 
+// Display the Queue. 
+Console.Write("intQueuee values:\t"); 
+PrintValues(intQueuee); 
+// View the first element in the Queue but do not remove. 
+Console.WriteLine( 
+"\n(Peek) \t{0}", intQueuee.Peek()); 
+// Display the Queue. 
+Console.Write("intQueuee values:\t"); 
+PrintValues(intQueuee); 
+} 
+public static void PrintValues(IEnumerable myCollection) 
+{ 
+IEnumerator myEnumerator = 
+myCollection.GetEnumerator(); 
+while (myEnumerator.MoveNext()) 
+Console.Write("{0} ", myEnumerator.Current); 
+Console.WriteLine(); 
+} 
+} 
+} Output:
+
+In this example the ArrayList is replaced by a Queue. I've dispensed with the Employee class 
+to save room, but of course you can Enqueue user-defined objects as well.  
+ 
+The output shows that queuing objects adds them to the Queue, and calls to Dequeue return 
+the object and also remove them from the Queue. The Queue class also provides a Peek( ) 
+method that allows you to see, but not remove, the first element. 
+ 
+Because the Queue class is enumerable, you can pass it to the PrintValues method, which is 
+provided as an IEnumerable interface. The conversion is implicit. In the PrintValues method 
+you call GetEnumerator, which you will remember is the single method of all IEnumerable 
+classes. This returns an IEnumerator, which you then use to enumerate all the objects in the 
+collection.  

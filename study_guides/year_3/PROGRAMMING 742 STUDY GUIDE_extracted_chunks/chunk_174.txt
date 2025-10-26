@@ -1,0 +1,44 @@
+Attempting to perform an action other than that specified by the FileAccess enumeration member will 
+result in an exception being thrown. This property is often used as a way to vary user access to the file 
+based on the use 
+
+In the version of the FileStream FileAccess enumeration parameter, the 
+default value is used, which is FileAccess.ReadWrite. 
+ 
+The FileMode enumeration members are shown in the next table. What actually happens when each of 
+these values is used depends on whether the filename specified refers to an existing file. Note that the 
+entries in this table refer to the position in the file that the stream points to when it is created, a topic 
+n more about in the next section. Unless otherwise stated, the stream points to the beginning 
+of a file.
+
+MEMBER                     FILE EXISTS BEHAVIOR                    NO FILE EXISTS BEHAVIOR 
+Append                     The file is opened, with the            A new file is created. Can only 
+                           stream positioned at the end of         be used in conjunction with File-
+                           the file. Can only be used in con-      Access.Write. 
+                           junction with FileAccess.Write 
+Create                     The file is destroyed, and a new        A new file is created. 
+                           file is created in its place. 
+CreateNew                  An exception is thrown.                 A new file is created
+Open                       The file is opened, with the            An exception is thrown
+                           stream positioned at the begin-
+                           ning of the file. 
+An exception is thrown     The file is opened, with the            A new file is created 
+                           stream positioned at the begin-
+                           ning of the file.  
+Truncate                   The file is opened and erased.          An exception is thrown.
+                           The stream is positioned at the 
+                           beginning of the file. The origi-
+                           nal file creation date is retained. 
+
+Both the File and FileInfo classes expose OpenRead() and OpenWrite() methods that make it easier to 
+create FileStream objects. The first opens the file for read-only access, and the second allows write-only 
+access. These methods provide shortcuts, so you do not have to provide all the information required in 
+the form of parameters to the FileStream constructor. For example, the following line of code opens the 
+Data.txt file for read-only access: 
+ 
+FileStream aFile = File.OpenRead("Data.txt"); 
+ 
+The following code performs the same function: 
+ 
+FileInfo aFileInfo = new FileInfo("Data.txt"); 
+FileStream aFile = aFileInfo.OpenRead(); 

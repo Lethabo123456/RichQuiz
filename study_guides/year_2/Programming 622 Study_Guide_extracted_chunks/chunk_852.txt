@@ -1,0 +1,20 @@
+truct the circuit: T3: (0, e1, 1, e4, 2, e6, C2, e7, 3, e5, 1, e3, 2, e2, 0).  
+  
+This circuit also does not contain all the edges. Select now vertex 3 and edge e11. Form the circuit: C3: (3, 
+e11, 4, e10, 5, e9, 3).  
+  
+Next, construct the circuit: T4: (0, e1,1, e4, 2, e6, C2, e7, C3, e5, 1, e3, 2, e2, 0).  
+  
+Circuit T4 contains all the vertices and all the edges of the given graph and, hence, it is an Euler circuit.  
+  
+We leave it as an exercise for you to write a program to implement Fleury’s algorithm.  
+  
+Key Terms   
+  
+1. A graph G is a pair, G = (V, E), where V is a finite nonempty set, called the set of vertices of G and E  V 
+x V , called the set of edges.  
+2. In an undirected graph G = (V, E), the elements of E are unordered pairs.  
+3. In a directed graph G = (V, E), the elements of E are ordered pairs.  
+4. Let G be a graph. A graph H is called a subgraph of G if every vertex of H is a vertex of G and every 
+edge in H is an edge in G.  
+5. Two vertices u and v in a

@@ -1,0 +1,31 @@
+5.3.8 Nmap Utility 
+Nmap is one of the most popular port scanning tools used today. After performing scans with 
+certain ﬂags set in the scan packets, security analysts (and hackers) can make certain assumptions 
+based on the responses received. These ﬂags are used to control the TCP connection process and 
+so are present only in TCP packets. Figure 25.5 shows a TCP header with the important ﬂags 
+circled. Normally ﬂags are “turned on” because of the normal TCP process, but hackers can craft 
+packets to check the ﬂags they want to check. 
+
+Figure 5.20: TCP ﬂags (Lammle, 2022) 
+ 
+Figure 5.20 shows these ﬂags, among others: 
+ 
+• URG: Urgent pointer ﬁeld signiﬁcant 
+• ACK: Acknowledgment ﬁeld signiﬁcant 
+• PSH: Push function 
+• RST: Reset the connection 
+• SYN: Synchronize sequence numbers 
+• FIN: No more data from sender 
+The Mtr utility is basically the same as traceroute and ping, but it does give you some additional 
+output that can help you troubleshoot your network. 
+
+Note 
+While application of a scan and interpretation of the responses are beyond the scope of this book, 
+security analysts and hackers alike can perform scans with these ﬂags set in the scan packets to 
+get responses that allow them to determine the following information: 
+• If a port is open on a device 
+• If the port is blocked by a ﬁrewall before it gets to the device 
+Nmap can also be used as follows: 
+• To determine the live hosts on a network 
+• To create a logical “map” of the network
+ 

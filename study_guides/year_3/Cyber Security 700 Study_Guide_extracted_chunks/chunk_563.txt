@@ -1,0 +1,21 @@
+Dealing with the Command-and-Control Phase 
+Countermeasures at the command-and-control stage include the following: 
+ 
+ Network-based intrusion detection systems (NIDS): A NIDS can detect and alert on attempts 
+to use an unauthorized or suspicious channel. 
+ Firewall: A firewall blocks communication with known or suspected hostile sources and also 
+blocks suspicious activity or packet content. 
+ Tarpit: This is a service on a computer system (usually a server) that delays incoming 
+connections for as long as possible. Tarpits were developed as a defense against computer 
+worms, based on the idea that network abuses such as spamming or broad scanning are less 
+effective if they take too long. A tarpit is used for incoming traffic that is not on an approved 
+source whitelist.
+
+Dealing with the Actions Phase 
+ 
+If an attack gets to the stage of ongoing advanced attacks, a critical aspect of security is a backup 
+policy. An organization should regularly back up all critical data and systems; test, document, and 
+update system recovery procedures; and, during a system compromise, capture evidence carefully 
+and document all recovery steps as well as all evidentiary data collected. 
+ 
+Incident management, discussed in Sections 15.6 and 15.7, is relevant for this stage.

@@ -1,0 +1,22 @@
+number of item assignments is (1/2)(n2 +3n) – 2. This is the worst 
+case. (See Exercise 14 at the end of this chapter.)  
+Table 8-1 summarizes the average-case behavior of selection and insertion sort.   
+  
+TABLE 8-1: Average-case behavior of the selection sort and insertion sort for a list of length n  
+
+294  
+  
+  
+  
+ 
+8.5  
+Shellsort  
+  
+In the previous sections, we described selection sort and insertion sort. We noticed that selection sort 
+makes more comparisons and less item movements than insertion sort. Selection sort makes more 
+comparisons because it makes many redundant comparisons. The number of item movements in selection 
+sort is less because each item is moved at most one time. In fact, the number of item movements in 
+insertion sort is considerably more than selection sort because it moves items one position at a time, so 
+to move an item to its final position, it might require many movements.  
+  
+We can reduce the number of item movements in insertion sort by modif

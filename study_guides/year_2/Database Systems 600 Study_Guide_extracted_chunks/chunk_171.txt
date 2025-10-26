@@ -1,0 +1,17 @@
+entifiers of composite entities, in which each primary key combination is allowed only 
+once in the M:N relationship  
+ 
+As identifiers of weak entities, in which the weak entity has a strong identifying relationship 
+with the parent entity 
+In both situations, having a strong identifying relationship ensures that the dependent entity can 
+exist only when it is related to the parent entity. In summary, the selection of a composite primary 
+key for composite and weak entity types provides benefits that enhance the integrity and consistency 
+of the model. 
+
+ 
+67 
+When to Use Surrogate Primary Keys 
+In some instances a primary key doesn’t exist in the real world or the existing natural key might not 
+be a suitable primary key. In these cases, it is standard practice to create a surrogate key. A 
+surrogate key is a primary key created by the database designer to simplify the identification of 
+entity instances. The surrogate key has no meaning in the user’s environment—it exists only to

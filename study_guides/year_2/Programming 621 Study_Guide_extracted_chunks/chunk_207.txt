@@ -1,0 +1,16 @@
+nd sec in the body of the function 
+equalTime are the member variables of the object myClock. 
+ 
+ 
+Let us again take a look at the definition of the function equalTime. Notice that within 
+the definition of this function, the object otherClock accesses the member variables 
+hr, min, and sec. However, these member variables are private. So is there any 
+violation? The answer is no. The function equalTime is a member of the class 
+clockType, and hr, min, and sec are the member variables. Moreover, otherClock is 
+an object of type clockType. Therefore, the object otherClock can access its private 
+member variables within the definition of the function equalTime.  
+ 
+The same is true for any member function of a class. In general, when you write the 
+definition of a member function, say, dummyFunction, of a class, say, dummyClass, 
+and the function uses an object, dummyObject of the class dummyClass, then within 
+the definition of dummyFunction, the object dummyObject can access its privat

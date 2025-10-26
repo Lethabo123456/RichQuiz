@@ -1,0 +1,38 @@
+2.2.3 Arithmetic Operators 
+
+One of the most important uses of a computer is its ability to calculate. You can use 
+the standard arithmetic operators to manipulate integral and floating-point data types. 
+There are five arithmetic operators: 
+ 
+ Arithmetic Operators: + (addition), - (subtraction or negation), * (multiplication), 
+/ (division), % (mod, (modulus or remainder)) 
+ 
+These operators work as follows:  
+ You can use the operators +, -, *, and / with both integral and floating point 
+data types. These operators work with integral and floating-point data the same 
+way as you learned in a college algebra course.  
+ When you use / with the integral data type, it gives the quotient in ordinary 
+division. That is, integral division truncates any fractional part; there is no 
+rounding.  
+ You use % with only the integral data type, to find the remainder in 
+ 
+Example 2-3 shows how the operators / and % work with the integral data types. 
+ 
+In the following example, we illustrate how to use the operators / and % with integral 
+data types. 
+
+Note that each time you run this program, it will output the value of 100 inches. To 
+convert some other value of inches, you need to edit this program and store a different 
+value in the variable inches, which is not very convenient. Later in this chapter we will 
+illustrate how to include statements in a program that will instruct the user to enter 
+different values. However, if you are curious to know at this point, then replace the 
+statement  
+
+inches = 100; //store 100 in the variable inches 
+
+with the following statements and rerun the program: 
+ 
+cout << "Enter total inches and press Enter: "; //prompt  
+                                                                          //the user to enter total inches  
+cin >> inches; //store the value entered by the user //into the variable inches 
+cout << endl; 

@@ -1,0 +1,14 @@
+istics of how two devices communicate on a network is 
+called a protocol. Specifically, a proto- col may define data format, coding schemes, error 
+handling, and the sequence in which data transfers over a network. 
+ Ethernet  
+Ethernet is a network standard that specifies no central computer or device on the network 
+(nodes) should control when data can be transmitted. That is, each node attempts to transmit 
+data when it determines the network is available to receive communications.  
+If two computers or devices on an Ethernet network attempt to send data at the same time, 
+a collision will occur. When this happens, the computers or devices resend their messages 
+until data transfer is successful. 
+The Ethernet standard defines guidelines for the physical configuration of a network. Ethernet 
+currently is the most popular network standard for LANs because it is relatively inexpensive 
+and easy to install and maintain. Depending on the transmission media used, Ethernet 
+networks have

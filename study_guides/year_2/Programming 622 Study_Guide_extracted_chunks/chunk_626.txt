@@ -1,0 +1,24 @@
+(n2). This section describes another algorithm, the heapsort, for array-based lists. This 
+algorithm is of order O(n log2n) even in the worst case, therefore overcoming the worst case of the 
+quicksort.  
+
+310  
+  
+  
+Definition: A heap is a list in which each element contains a key, such that the key in the element at 
+position k in the list is at least as large as the key in the element at position 2k + 1 (if it exists) and 2k + 2 
+(if it exists).  
+  
+Recall that, in C++ the array index starts at 0. Therefore, the element at position k is in fact the k + 1th 
+element of the list.  
+  
+Consider the list in Figure 8-41.  
+ 
+  
+FIGURE 8-41 A heap  
+  
+It can be checked that the list in Figure 8-41 is in a heap. For example, consider list[3], which is 50. The 
+elements at position list[7] and list[8] are 20 and 10, respectively. Clearly, list[3] is larger than list[7] and 
+list[8].   
+  
+In heapsort, elements at position k, 2k + 1, and 2k + 2, if they exist, are accessed frequently. The

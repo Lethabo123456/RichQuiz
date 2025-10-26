@@ -1,0 +1,23 @@
+In terms of the individual security services, the following security-related events are important: 
+
+ Authentication: Verify success and verify fail 
+ Access control: Decide access success and decide access fail 
+ Non-repudiation: Non-repudiable origination of message, non-repudiable receipt of message, 
+unsuccessful repudiation of event, and successful repudiation of event 
+ Integrity: Use of shield, use of unshield, validate success, and validate fail 
+ Confidentiality: Use of hide and use of reveal 
+ Audit: Select event for auditing, deselect event for auditing, and change audit event selection 
+criteria
+ 
+The standard points out that both normal and abnormal conditions may need to be audited; for 
+instance, each connection request, such as a Transmission Control Protocol (TCP) connection request, 
+may be a subject for a security audit trail record, whether or not the request was abnormal and 
+regardless of whether the request was accepted. This is an important point. Data collection for 
+auditing goes beyond the need to generate security alarms or to provide input to a firewall module. 
+Data representing behavior that does not trigger an alarm are used to identify normal versus abnormal 
+usage patterns and thus serve as input to intrusion detection analysis. Also, in the event of an attack, 
+an analysis of all the activity on a system may be needed to diagnose the attack and arrive at suitable 
+countermeasures for the future. 
+As a security administrator designs an audit data collection policy, it is useful to organize the audit trail 
+into categories for purposes of choosing data items to collect. The following sections look at categories 
+for audit trail design.

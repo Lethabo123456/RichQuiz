@@ -1,0 +1,41 @@
+you are using. Typically, its 
+value will be javascript. Although recent versions 
+of HTML (and XHTML, its successor) have phased 
+out the use of this attribute. 
+ 
+type: This attribute is what is now recommended to indicate the scripting 
+language in use and its value should be set to "text/javascript". 
+ 
+So your JavaScript segment will look like: 
+<script language="javascript" type="text/javascript"> 
+ 
+JavaScript code 
+</script> 
+ 
+OR 
+<script language="javascript"> 
+ 
+JavaScript code 
+</script> 
+ 
+OR 
+<script type="text/javascript"> 
+ 
+JavaScript code 
+</script> 
+2.1.1 Whitespace and Line Breaks 
+ 
+Research 
+ 
+What is a syntax? What do you 
+call an error caused by the 
+syntax is wrong? 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+14 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+JavaScript ignores spaces, tabs, and newlines that appear in JavaScript code. Because 
+you can use spaces, tabs, and newlines freely in your program so you are free to 
+format

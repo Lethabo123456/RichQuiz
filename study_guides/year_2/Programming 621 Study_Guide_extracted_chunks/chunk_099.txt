@@ -1,0 +1,33 @@
+Clearly, you want to print five lines of stars. In the first line, you want to print one 
+star, in the second line, two stars, and so on. 
+Because five lines will be printed, start with the following for statement:  
+for (i = 1; i <= 5; i++)  
+The value of i in the first iteration is 1, in the second iteration it is 2, and so on. 
+You can use the value of i as the limiting condition in another for loop nested 
+within this loop to control the number of stars in a line. A little more thought 
+produces the following code:  
+for (i = 1; i <= 5; i++)                      //Line 1  
+{  
+       for (j = 1; j <= i; j++)                //Line 2  
+             cout << "*";                       //Line 3  
+        cout << endl;                         //Line 4 
+}   
+
+A walk-through of this code shows that the for loop in Line 1 starts with i = 1. 
+When i is 1, the inner for loop in Line 3 outputs one star and the insertion point 
+moves to the next line. Then i becomes 2, the inner for loop outputs two stars, 
+and the output statement in Line 5 moves the insertion point to the next line, and 
+so on. This process continues until i becomes 6  and the loop stops. 
+
+Suppose you want to create the following multiplication table:  
+ 
+1  2  3  4  5  6  7  8  9  10 
+2  4  6  8  10 12 14 16 18 20 
+3  6  9  12 15 18 21 24 27 30 
+4  8  12 16 20 24 28 32 36 40 
+5  10 15 20 25 30 35 40 45 50 
+
+The multiplication table has five lines. Therefore, as in the previous example, we use 
+a for statement to output these lines as follows: 
+for (i = 1; i <= 5; i++) 
+       //output a line of numbers                                             //Line 5  

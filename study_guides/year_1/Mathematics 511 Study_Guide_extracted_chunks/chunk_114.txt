@@ -1,0 +1,28 @@
+To begin a  direct proof of this theorem, we assume that the 
+hypothesis of this conditional statement is  true, namely, we assume 
+that n is odd. By the definition of an odd integer, it follows that  
+𝑛 =  2𝑘 +  1, where 𝑘 is some integer. We want to show that 𝑛 2is also 
+odd. We can square both sides of the equation 𝑛 =  2𝑘 +  1 to obtain a 
+new equation that expresses 𝑛 2. When we do this, we find that 
+ 𝑛2  = (2𝑘 +  1)2  =  4𝑘2 +  4𝑘 +  1 =  2(2𝑘 2 +  2𝑘) +  1. 
+ By the definition of an odd integer, we can conclude that 𝑛2 is an odd 
+integer (it is one more than twice an integer). Consequently, we have 
+proved that if 𝑛 is an odd integer, then 𝑛2 is an odd integer.
+ 
+This means that the conditional statement 𝑝 → 𝑞 can be proved by showing 
+that its contrapositive,￢𝑞 →￢𝑝, is true. In a proof by contraposition of 
+𝑝 → 𝑞, we take ￢𝑞 as a premise, and using axioms, definitions, and previously 
+proven theorems, together with rules of inference, we show that ￢𝑝 must follow.  
+ 
+Definition 16 
+The real number 𝑟 is rational if there exist integers 𝑝 and 𝑞 with 𝑞 ≠ 0 such 
+that 𝑟 =  𝑝/𝑞. A real number that is not rational is called irrational. 
+To prove that the sum of two rational numbers is rational. (Note that if we 
+include the implicit quantifiers here, the theorem we want to prove is “For 
+every real number 𝑟 and every real number 𝑠, if 𝑟 and 𝑠 are rational numbers, 
+then 𝑟 +  𝑠 is rational.) 
+We first attempt a direct proof. To begin, suppose that r and s are rational 
+numbers. From the definition of a rational number, it follows that there are 
+integers 𝑝 and 𝑞, with 𝑞 ≠ 0, such that 𝑟 =  𝑝/𝑞, and integers 𝑡 and 𝑢, with 
+𝑢 ≠ 0, such that 𝑠 =  𝑡/𝑢. Can we use this information to show that 𝑟 +  𝑠 
+is rational? 

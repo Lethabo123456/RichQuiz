@@ -1,0 +1,17 @@
+: form fields and URLs. Passing the session ID via hidden 
+fields is extremely awkward, as it forces you to make every link between pages to be a form’s submit 
+button.    
+   
+The URL system for passing around the session ID, however, is somewhat more elegant. PHP can 
+rewrite your HTML files, adding the session ID to every relative link. For this to work, though, PHP 
+must be configured with the -enable-trans-id option when compiled. There is a performance penalty for 
+
+41   
+   
+this, as PHP must parse and rewrite every page. Busy sites may wish to stick with cookies, as they do 
+not incur the slowdown caused by page rewriting. In addition, this exposes your session IDs, 
+potentially allowing for man-in-the-middle attacks.   
+2.4 Combining Cookies And Sessions   
+Using a combination of cookies and your own session handler, you can preserve state across visits. Any 
+state that should be forgotten when a user leaves the site, such as which page the user is on, can be 
+left up to PHP’s

@@ -1,0 +1,12 @@
+nes that body of documented practices in selecting a primary 
+key. First, you should understand the function of a primary key. Its main function is to uniquely 
+identify an entity instance or row within a table. Given a primary key value—that is, the 
+determinant—the relational model can determine the value of all dependent attributes that 
+“describe” the entity. Note that identification and description are separate semantic constructs in 
+the model. The function of the primary key is to guarantee entity integrity, not to “describe” the 
+entity.  
+Second, primary keys and foreign keys are used to implement relationships among entities. 
+However, the implementation of such relationships is done mostly behind the scenes, hidden from 
+end users. In the real world, end users identify objects based on the characteristics they know about 
+the objects. For example, when shopping at a grocery store, you select products by taking them 
+from a display shelf and reading the labels, not by looking

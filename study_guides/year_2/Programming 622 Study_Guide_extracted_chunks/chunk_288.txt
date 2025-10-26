@@ -1,0 +1,16 @@
+called the general case. Recursive 
+definition: A definition in which something is defined in terms of a smaller version of itself.  
+  
+From the previous example (factorial), it is clear that:  
+1. Every recursive definition must have one (or more) base cases.  
+2. The general case must eventually be reduced to a base case.  
+3. The base case stops the recursion.  
+  
+The concept of recursion in computer science works similarly. Here, we talk about recursive algorithms 
+and recursive functions. An algorithm that finds the solution to a given problem by reducing the problem 
+to smaller versions of itself is called a recursive algorithm. The recursive algorithm must have one or more 
+base cases, and the general solution must eventually be reduced to a base case.  
+  
+A function that calls itself is called a recursive function. That is, the body of the recursive function contains 
+a statement that causes the same function to execute again before completing the current call. Recursive 
+al

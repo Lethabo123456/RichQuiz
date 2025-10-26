@@ -1,0 +1,46 @@
+Cisco Packet Tracer installed 
+ 
+1. Open Packet Tracer—make sure you’re starting from a new ﬁle, not an existing network. From 
+the Network Devices > Wireless Devices menu, insert a WRT300N wireless router. 
+2. On the wireless router’s Conﬁg tab, set its LAN-facing IP address to 192.168.5.1 and subnet 
+mask to 255.255.255.0. 
+3. From the End Devices menu, insert a Laptop. 
+4. On the laptop’s Physical tab, replace the Ethernet network module with a wireless module: 
+a. Click the laptop’s power button to turn oﬀ the laptop. 
+b. Drag the PT-LAPTOP-NM-1CFE card from the laptop to the MODULES pane. Zoom in if 
+necessary. The card is labelled FAST ETH 0. 
+c. Drag the WPC300N module from the MODULES pane to empty slot on the laptop, as shown in 
+Figure 6.16 
+ 
+Figure 6.16 Laptop wireless module (West, 2002) 
+ 
+d. Turn the laptop back on. 
+e. Within a few seconds, a wireless connection is automatically created between the wireless 
+router and the laptop. If not, troubleshoot the problem 
+5. Now you need to set up some security parameters on the wireless router: 
+a. On the wireless router’s Conﬁg tab on the Wireless page, select WPA2-PSK authentication. This 
+option will use a passphrase instead of a RADIUS server, which is less secure but is more likely 
+what you would use on a small SOHO network. 
+b. Set the PSK Pass Phrase to networkplus. 
+c. Make sure the encryption type is AES, which is more secure than TKIP. 
+d. What has happened to your wireless network connection? Why do you think this is? 
+6. To solve this problem, you need to give the client the proper credentials: 
+a. On the laptop’s Conﬁg tab, enter the correct authentication information. 
+b. If the connection does not re-establish, troubleshoot the problem. 
+c. Make a screenshot of the information you entered on the wireless interface’s conﬁguration 
+menu to establish successful authentication; submit this visual with your answers to this project’s 
+questions. 
+The wireless router oﬀers many of the same GUI-based options you might see on a home router’s 
+user interface. To explore some of the security options, complete the following steps: 
+7. On the wireless router’s GUI tab, what is the current DHCP pool? What is the client lease time? 
+8. On the Wireless > Basic Wireless Settings page, change the default SSID to HappyVintage. 
+Scroll to the bottom of the screen and click Save Settings. 
+9. On the Wireless > Wireless Security page, WPA2 Personal is already selected. What other 
+security mode options do you have? Which of these security modes is the most secure? 
+10. AES encryption is selected. What other encryption option do you have? Which of these 
+encryption options is most secure? 
+11. Close the wireless router’s conﬁguration window. What changed on your network? Why do 
+you think this is?  
+12. On the laptop’s Conﬁg tab, on the Wireless0 page, correct the SSID. What happens on your 
+network? 
+13. Save your project. 

@@ -1,0 +1,36 @@
+ter is optional.)  
+ clockType clockType(int = 0, int = 0, int = 0);  //Line 1  
+  
+In the implementation file, the definition of this constructor is the same as the definition of the constructor 
+with parameters.  
+  
+If you replace the constructors of the class clockType with the constructor in Line 1, (the constructor with 
+the default parameters), you can declare clockType objects with 0, 1, 2, or 3 arguments as follows:  
+  
+clockType clock1;   
+  
+  
+  
+  
+//Line 2 clockType 
+clock2(5);    
+  
+  
+  
+//Line 3  
+  
+  
+clockType clock3(12, 30);   
+  
+  
+  
+//Line 4 clockType 
+clock4(7, 34, 18);    
+  
+  
+//Line 5  
+  
+The data members of clock1 are initialized to 0. The data member hr of clock2 is initialized to 5, and the 
+data members min and sec of clock2 are initialized to 0. The data member hr of clock3 is initialized to 12, 
+the data member min of clock3 is initialized to 30, and the data member sec of clock3 is initialized to 0. 
+The data member hr of clock4 is initialized to

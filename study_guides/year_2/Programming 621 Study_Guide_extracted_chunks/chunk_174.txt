@@ -1,0 +1,20 @@
+the 
+following statements: 
+ p = new int;        //Line 1  
+*p = 54;              //Line 2 
+ p = new int;       //Line 3  
+*p = 73;             //Line 4 
+ 
+Figure below shows the effect of these statements. 
+ 
+(The number 1500 on top of the box indicates the address of the memory space.) The 
+statement in Line 1 allocates memory space of type int and stores the address of the 
+allocated memory space into p. Suppose that the address of allocated memory space 
+is 1500. Then, the value of p after the execution of this statement is 1500 (see Figure 
+(a)). The statement in Line 2 stores 54 into the memory space that p points to, which 
+is 1500 (see Figure (b)). 
+ 
+Now the obvious question is what happened to the memory space 1500 that p was 
+pointing to after execution of the statement in Line 1. After execution of the statement 
+in Line 3, p points to the new memory space at location 1800. The previous memory 
+space at location 1500 is now inaccessible. In addition, the memory space 1500

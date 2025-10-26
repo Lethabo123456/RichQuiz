@@ -1,0 +1,19 @@
+e certain items, rather than 
+with how they work.  
+  
+Separating the design details (that is, how the car’s engine works) from its use is called abstraction. In 
+other words, abstraction focuses on what the engine does and not on how it works. Thus, abstraction is 
+the process of separating the logical properties from the implementation details. Driving the car is a logical 
+property; the construction of the engine constitutes the implementation details. We have an abstract 
+view of what the engine does, but are not interested in the engine’s actual implementation.  
+  
+Abstraction can also be applied to data. Earlier sections of this chapter defined a data type clockType. The 
+data type clockType has three instance variables and the following basic operations:  
+  
+1. Set the time.  
+2. Return the time.  
+3. Print the time.  
+4. Increment the time by one second.  
+5. Increment the time by one minute.  
+6. Increment the time by one hour.  
+7. Compare two times to see whether they are

@@ -1,0 +1,25 @@
+d of the string  
+The number of characters to extract. If you use a negative number, substr() misses that 
+many characters from the end of the string instead. This parameter is optional; if left out, 
+substr() extracts from the start position to the end of the string  
+  
+Here are a few examples that show how to use substr() :  
+  
+$myString = “Hello, world!”;  
+echo substr( $myString, 0, 5 ) . “ < br/ > ”; // Displays ‘Hello’ 
+echo substr( $myString, 7 ) . “ < br/ > ”; // Displays ‘world!’ 
+echo substr( $myString, -1 ) . “ < br/ > ”; // Displays ‘!’ echo 
+substr( $myString, -5, -1 ) . “ < br/ > ”; // Displays ‘orld’  
+  
+You can ’ t modify characters within strings using substr() . If you need to change characters within a 
+string, use substr_replace() instead. This function is described later in this unit.  
+  
+  
+  
+  
+
+48  
+  
+4.6 Searching Strings  
+Often it is useful to know whether one string of text is contained within another. PHP gives 
+you several string functions that let

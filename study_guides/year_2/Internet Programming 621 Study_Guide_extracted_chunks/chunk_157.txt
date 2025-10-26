@@ -1,0 +1,22 @@
+l=”stylesheet” type=”text/css” href=”common.css” / > 
+< /head >  
+
+76  
+< body >  
+< h1 > Square roots < /h1 >  
+< ?php echo “The square root of 9 is: “ . sqrt( 9 ) . “. < br/ > 
+”;  
+echo “All done! < br/ > ”;  
+? >  
+< /body > 
+< /html >  
+  
+This code produces the output shown in Figure 6.1. Here is how:  
+  
+After displaying the XHTML page header, the first echo() line is run, and the PHP engine evaluates 
+the expression after the echo() statement. This includes a function call to PHP ’ s built-in sqrt() 
+function, which determines the square root of its argument (in this case, 9 ). The engine jumps to 
+the code for the sqrt() function and runs it. The function does its job and exits, returning the value 3. 
+The engine jumps back to the first echo() statement and, now that it knows the result of the call to 
+sqrt() , evaluates the rest of the expression, producing the string: “ The square root of 9 is: 3. ” This 
+string value is then displayed in the Web page using the echo() state

@@ -1,0 +1,29 @@
+identifiers, we use the scope resolution operator, :: (double 
+colon). In the function definition’s heading, the name of the function is the name of the class, followed by 
+the scope resolution operator, followed by the function name. For example, the definition of the function 
+setTime is as follows:  
+  
+void clockType::setTime(int hours, int minutes, int seconds)  
+{  
+if (0 <= hours && hours < 
+24) hr = hours; else  
+hr = 0;  
+if (0 <= minutes && minutes < 60) 
+min = minutes; else min = 0;  
+if (0 <= seconds && seconds < 60) 
+sec = seconds; else  
+sec = 0;  
+}  
+  
+
+34  
+  
+Note that the definition of the function setTime checks for the valid values of hours, minutes, and seconds. 
+If these values are out of range, the instance variables hr, min, and sec are initialized to 0.  
+  
+Suppose that myClock is an object of type clockType (as declared previously). The object myClock has 
+three instance variables. Consider the following statement:  
+  
+myClock.setTime(3, 48, 52);  
+  
+In t

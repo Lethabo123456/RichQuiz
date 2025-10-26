@@ -1,0 +1,40 @@
+Table 2.3 
+ 
+Table 2.3 shows three snapshots of the Job Table. Initially the Job Table has one entry for 
+each job (a). When the second job ends (b), its entry in the table is released. Finally, it is 
+replaced by the entry for the next job (c). 
+Each active job has its own Page Map Table (PMT), which contains the vital information for 
+each page, the page number and its corresponding memory address to the page frame. The 
+PMT includes only one entry per page. The page numbers are sequential (Page 0, Page 1, 
+Page 2, and so on), so it isn’t necessary to list each page number in the PMT. That is, the first 
+entry in the PMT always lists the page frame memory address for Page 0, the second entry 
+is the address for Page 1, and so on. 
+A simple Memory Map Table (MMT) has one entry for each page frame and shows its  
+location and its free or busy status. 
+ 
+At compilation time, every job is divided into pages. Using job 1 from Figure 2.1, we can 
+see how this works: 
+
+➢ Page 0 contains the first hundred bytes, 0-99 
+➢ Page 1 contains the second hundred bytes, 100-199 
+➢ Page 2 contains the third hundred bytes, 200-299 
+➢ Page 3 contains the last 50 bytes, 300-349 
+ 
+As you can see, the program has 350 bytes; but when they are stored, the system numbers 
+them starting from 0 through 349. Therefore, the system refers to them as Byte 0 through 
+Byte 349. 
+ 
+Page Displacement 
+How far away is a certain byte from the beginning of its page frame? This value is called the 
+displacement (also called the offset), and it is a relative factor that is used to locate a certain 
+bytewithin its page frame. 
+Here is how it works; In the simplified example shown in Figure 3.2, Bytes 0, 100, 200, and 
+300 are the first bytes for pages 0, 1, 2, and 3, respectively, so that each has a displacement 
+of zero. To stateit another way, the distance from the beginning of the page frame to Byte 
+200 is zero bytes. 
+Likewise, if the Memory Manager needs to access Byte 314, it can first go to the page frame 
+containing Page 3 and then go to Byte 14 (the fifteenth) in that page frame. 
+ 
+Because the first byte of each page has a displacement of zero, and the last byte has a 
+displacement of 99, the operating system can access the correct bytes by using its relative 
+position from the beginning of its page frame. 

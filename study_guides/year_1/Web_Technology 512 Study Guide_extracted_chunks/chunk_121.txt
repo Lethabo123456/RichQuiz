@@ -1,0 +1,31 @@
+<P ID="message">First Name</P> 
+ 
+The inner HTML is "First Name". This will be erased and replaced with the new text. 
+The new text goes after an equal sign. For us, this is whatever is in the variable called 
+error. 
+ 
+The else statement sets the innerHTML back to "First Name". We do not really need 
+this, but it is there for testing purposes.  
+ 
+The return false line is also not needed in this simple piece of code. But in reality, you 
+would add it if you were going to send your form data somewhere. Adding return 
+false cancels the sending so that the user can try again. 
+  
+Exercise 4.1 
+Try the code in Figure 4.8 above. Typing it all out will give you some good practice of 
+setting up HTML and JavaScript. When you click your button, you should see the new 
+text appear in red. Type some text in the text box and click the button again. The First 
+Name text should reappear. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+76 
+ 
+FOUR | GLOSSARY OF TERMS 
+Array: a special variable, which can hold more than one val

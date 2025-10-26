@@ -1,0 +1,12 @@
+cept possibly the first and last vertices, are distinct.  
+13. A cycle in G is a simple path in which the first and last vertices are the same.  
+14. An undirected graph G is called connected if there is a path from any vertex to any other vertex.  
+15. A maximal subset of connected vertices is called a component of G.  
+16. Suppose that u and v are vertices in a directed graph G. If there is an edge from u to v, that is, (u, v)  E, 
+we say that u is adjacent to v and v is adjacent from u.  
+17. A directed graph G is called strongly connected if any two vertices in G are connected.  
+18. Let G be a graph with n vertices, where n > 0. Let V(G) = {v1, v2, . . ., vn}. The adjacency matrix AG is a 
+two-dimensional n x n matrix such that the (i, j)th entry of AG is 1 if there is an edge from vi to vj; 
+otherwise, the (i, j)th entry is 0.  
+19. In an adjacency list representation, corresponding to each vertex v is a linked list such that each node 
+of the linked list contains the vertex u an

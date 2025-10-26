@@ -1,0 +1,42 @@
+ew nodeType;    
+//create newNode  
+newNode->info = 50;    
+  
+newNode->link = p->link; p->link 
+= newNode;  
+//store 50 in the new node 
+  
+Table 3-3 shows the effect of these statements.  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+
+88  
+  
+TABLE 3-3: Inserting a node in a linked list  
+  
+  
+Note that the sequence of statements to insert the node, that is,  
+  
+newNode->link = p->link; p->link 
+= newNode;  
+  
+is very important because to insert newNode in the list we use only one pointer, p, to adjust the links of 
+the nodes of the linked list. Suppose that we reverse the sequence of the statements and execute the 
+statements in the following order:  
+  
+p->link = newNode;  
+newNode->link = p->link;  
+  
+Figure 3-7 shows the resulting list after these statements execute.  
+  
+  
+FIGURE 3-7 List after the execution of the statement p->link = newNode; followed by the execution of the 
+statement newNode->link = p->link;  
+  
+From Figure 3-7, it is clear that newNode points back to itself and the remainder o

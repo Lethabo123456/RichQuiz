@@ -1,0 +1,26 @@
+tent. 
+ 
+The 
+Legacy 
+DOM: This is the 
+model 
+which 
+was 
+introduced in early 
+versions of JavaScript 
+language. It is well supported by all browsers, but allows access only to certain key 
+portions of documents, such as forms, form elements, and images. 
+ 
+The W3C DOM: This document object model allows access and modification of 
+all document content and is standardized by the World Wide Web Consortium (W3C). 
+This model is supported by almost all the modern browsers. 
+ 
+The IE4 DOM: This document object model was introduced in Version 4 of 
+Microsoft's Internet Explorer browser. IE 5 and later versions include support for most 
+basic W3C DOM features. 
+ 
+6.2.8.1 DOM compatibility 
+If you want to write a script that uses the W3C DOM when it is available, and 
+otherwise uses the IE 4 DOM if it is available, you can use a capability-testing approach 
+that first checks for the existence of a method or property to determine whether the 
+browser has the capability you desire. For examp

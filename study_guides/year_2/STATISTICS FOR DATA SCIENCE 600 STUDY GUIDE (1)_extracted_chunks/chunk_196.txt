@@ -1,0 +1,18 @@
+g department. Let us now conduct a t-test at a 95% confidence level to find a 
+difference (or not!). Technically speaking, this test will tell us if the sample comes from the 
+same distribution as the population. 
+ 
+Assumptions of the One-Sample t-Test 
+Before diving into the five steps, we must first acknowledge that t-tests must satisfy the 
+following two conditions to work properly: 
+• The population distribution should be normal, or the sample should be large (n ≥ 30). 
+• To assume that the sample is independently randomly sampled, it is sufficient to 
+enforce that the population size should be at least 10 times larger than the sample 
+size (10n < N). 
+Note that our test requires that either the underlying data be normal (which we know is not 
+true for us), or that the sample size be at least 30 points large. For the t-test, this condition is 
+sufficient to assume normality. This test also requires independence, which is satisfied by 
+
+P a g e  | 113 
+ 
+taking a sufficiently small

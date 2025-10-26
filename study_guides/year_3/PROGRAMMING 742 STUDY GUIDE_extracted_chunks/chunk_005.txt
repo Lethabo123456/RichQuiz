@@ -1,0 +1,13 @@
+1.1 Defining Classes 
+To define a new type or class, first declare it, and then define its methods and fields. Declare a 
+class using the class keyword. The complete syntax is as follows: 
+[attributes] [access-modifiers] class identifier [ :base-class] {class-body} 
+In C#, everything happens within a class. For instance, some of the examples in Topic  1 make 
+use of a class named Tester: 
+
+public class Tester { 
+public static int Main( ) 
+{ 
+/... 
+} 
+} 

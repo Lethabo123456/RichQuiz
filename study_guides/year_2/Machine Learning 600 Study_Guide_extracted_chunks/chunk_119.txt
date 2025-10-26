@@ -1,0 +1,14 @@
+sed function for this 
+operation is a Rectified Linear Unit, or ReLU for short. What the ReLU is doing is converting 
+all the negative values to zero and leaving the positive values as they are. At this point, the 
+resulting dimming created by the filter will be enhanced. 
+Pooling. The convolution layer, as described earlier, leaves us with a set of feature maps. 
+Common among CNN implementations is to add a subsampling layer, also known as pooling. 
+Performing pooling reduces the number of parameters and computations in the network and, 
+therefore, reduces the dimensionality. With reduced dimension, this will decrease the time 
+taken to train the network. With max-pooling, we are looking at a window, similar to our 
+feature filter, and moving across the feature map. This time, however, we are only finding the 
+maximum value of the window and registering that value in the new filter. 
+ 
+6.7.2 Classification 
+So far, we've covered the steps of building the CNN; these are the convolution

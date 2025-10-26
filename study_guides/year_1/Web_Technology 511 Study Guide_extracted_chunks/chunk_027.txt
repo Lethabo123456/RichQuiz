@@ -1,0 +1,26 @@
+2.2 HTML AS A MARKUP LANGUAGE 
+A markup language is a structured language that lets you identify common sections 
+of a document, such as headings, paragraphs, and lists. An HTML file includes text and 
+HTML markup elements that identify these sections. The HTML markup elements 
+indicate how the document sections display in a browser. For example, the <H1> 
+element tags in the following code indicate that the text is a first-level heading: 
+
+<H1>This is a first-level heading</H1> (Headings will be covered in Topic 4) 
+The browser interprets the HTML markup elements and displays the results, hiding 
+the actual markup tags from the user. This will be the output for the above code: 
+ 
+HTML adopts many features of SGML, including the cross-platform compatibility that 
+allows different computers to download and read the same file from the Web. 
+Because HTML is cross-platform compatible, it does not matter whether you are 
+working on a Windows PC, Macintosh, or UNIX computer. You can create HTML files 
+and view them on any computer platform. 
+ 
+HTML is not a What You See Is What You Get (WYSIWYG) layout tool. It was intended 
+only to express logical document structure, not formatting characteristics. Although many current HTML 
+editors let you work with a graphical interface, the underlying code they create still is basic HTML. 
+Because HTML was not designed as a layout language, however, many editing programs create 
+spaghetti code or use HTML tricks to accomplish a certain effect. You cannot rely on the 
+HTML editor’s WYSIWYG view to test your Web pages. Because users can view the same 
+HTML file through different browsers and on different machines, the only way to be sure 
+of what your audience sees is to preview your HTML files through the browsers you 
+anticipate your audience will use. 

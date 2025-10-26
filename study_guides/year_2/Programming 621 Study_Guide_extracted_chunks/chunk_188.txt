@@ -1,0 +1,24 @@
+condition is that you 
+must declare an identifier before you can use it. 
+ 
+In C++, class is a reserved word, and it defines only a data type; no memory is 
+allocated. It announces the declaration of a class. Moreover, note the semicolon (;) 
+after the right brace. The semicolon is part of the syntax. A missing semicolon, 
+therefore, will result in a syntax error. 
+ 
+The members of a class are classified into three categories: private, public, and 
+protected. This chapter mainly discusses the first two types, private and public. 
+ 
+
+172 | P a g e  
+ 
+In C++, private, protected, and public are reserved words and are called member 
+access specifiers. 
+ 
+Following are some facts about public and private members of a class:  
+ By default, all members of a class are private.  
+ If a member of a class is private, you cannot access it directly from outside of 
+the class.  
+ A public member is accessible outside of the class. (Example 10-1 illustrates 
+this concept.)  
+ To make a member o

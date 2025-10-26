@@ -1,0 +1,31 @@
+for the most part, every 
+time middle advances by one node, current advances by two nodes. Eventually, current becomes NULL 
+and middle points to the last node of the first sublist. For example, for the list in Figure 8-34, when current 
+becomes NULL, middle points to the node with info 25 (see Figure 8-35).  
+  
+  
+FIGURE 8-35 middle after traversing the list  
+  
+It is now easy to divide the list into two sublists. First, using the link of middle, we assign a pointer to the 
+node following middle. Then we set the link of middle to NULL. Figure 8-36 shows the resulting sublists.  
+  
+  
+FIGURE 8-36 List after dividing it into two lists  
+  
+This discussion translates into the following C++ function, divideList:  
+  
+template <class Type>  
+void unorderedLinkedList<Type>::divideList(nodeType<Type>* first1,nodeType<Type>* &first2)  
+{  
+nodeType<Type>* middle; 
+nodeType<Type>* current;  
+if (first1 == NULL)   
+  
+ first2 
+= NULL;  
+ 
+//list is empty  
+
+305  
+  
+else if (first1->link ==

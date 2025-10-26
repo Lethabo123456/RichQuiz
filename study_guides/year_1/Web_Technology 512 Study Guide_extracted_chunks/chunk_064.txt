@@ -1,0 +1,25 @@
+we want to check and the text we are checking for. The double equal symbols mean 
+"has a value of". It is not assigning a value "Kenny" to the variable, like it would if there 
+were only one equal symbol. The whole line, then, reads like this: "IF the variable 
+called first_name has a value of Kenny". JavaScript will test the truth of that 
+statement. Is it true, or is it false? It is indeed true. In which case JavaScript can go 
+ahead and execute the code between the curly brackets. 
+ 
+In fact try that code out. Create a new web page. Type the code above between your 
+two JavaScript tags. Your code should then look like the one in Figure 3.5 below: 
+ 
+ 
+Multimedia Resource 
+ 
+http://www.w3schools.com/js/js
+_if_else.asp 
+
+ 
+43 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+Figure 3.5 – If statement 
+Make sure you have the correct format for the new if statements (the correct syntax, 
+as it is called). The first line, the one that starts with var, needs a single equal sign (=). 
+This is

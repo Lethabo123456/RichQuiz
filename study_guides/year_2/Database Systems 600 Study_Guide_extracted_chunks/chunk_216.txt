@@ -1,0 +1,15 @@
+some concerns. For example, a composite primary key might become too cumbersome 
+to use as the number of attributes grows. Or, a primary key attribute might simply have too much 
+descriptive content to be usable. When the primary key is considered unsuitable for some reason, 
+designers use surrogate keys. 
+At the implementation level, a surrogate key is a system-defined attribute generally created and 
+managed via the DBMS. Usually, a system-defined surrogate key is numeric, and its value is 
+automatically incremented for each new row. However, in some cases, the best solution might be 
+to add a new externally defined attribute—such as a stub, voucher, or ticket number—to ensure 
+uniqueness. In any case, frequent data audits would be appropriate. 
+ 
+ 
+Higher-Level Normal Forms 
+Tables in 3NF will perform suitably in business transactional databases. However, higher normal 
+forms are sometimes useful. In this section, you will learn about a special case of 3NF, known as 
+Boyce-Codd nor

@@ -1,0 +1,17 @@
+uctors, including the default constructor. Therefore, a vector 
+container can be declared and initialized in several ways. Table 2-1 describes how a vector container of a 
+specific type can be declared and initialized.  
+  
+TABLE 2-1: Various ways to declare and initialize a vector container  
+   
+EXAMPLE 2-1  
+  
+a. The following statement declares intList to be an empty vector container and the element type is int. 
+vector<int> intList;  
+b. The following statement declares intList to be a vector container of size 10 and the element type is int. 
+The elements of intList are initialized to 0. vector<int> intList(10);  
+c. The following statement declares intList to be a vector container of size 5 and the element type is int. 
+The container intList is initialized using the elements of the array. int intArray[5] = {2,4,6,8,10};  
+vector<int> intList(intArray, intArray + 5);  
+  
+The container intList is initialized using the elements of the array intArray. That is, intList = {2,4,6,8,10

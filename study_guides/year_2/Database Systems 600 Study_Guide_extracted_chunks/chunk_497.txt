@@ -1,0 +1,22 @@
+horized user.  
+ 
+DBMS access control. Database access can be controlled by placing limits on the use of DBMS 
+query and reporting tools.  
+ 
+DBMS usage monitoring. The DBA must also audit the use of data in the database. Several 
+DBMS packages contain features that allow the creation of an audit log, which automatically 
+records a brief description of database operations performed by all users.  
+The integrity of a database could be lost because of external factors beyond the DBA’s control. For 
+example, the database might be damaged or destroyed by an explosion, a fire, or an earthquake. 
+
+ 
+202 
+Whatever the reason, the spectre of database corruption or destruction makes backup and recovery 
+procedures crucial to any DBA. 
+ 
+ 
+8.4 Database Administration Tools 
+  
+The extraordinary growth of data management activities within organizations created the need for 
+better management standards, processes, and tools. Over the years, a new industry arose dedicated 
+exclusively to data adm

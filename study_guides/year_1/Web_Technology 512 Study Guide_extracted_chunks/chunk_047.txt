@@ -1,0 +1,40 @@
+e some important considerations.  
+ 
+These: 
+ 
+You cannot have spaces in your variable 
+ 
+You cannot start your variable name with a 
+number 
+ 
+The variable should contain only letters, 
+numbers ( but not the first character of the 
+variable), a dollar sign ($) and an underscore ( _ ) 
+ 
+Here are some valid variable names: 
+number1 
+moms_phone_number 
+$firstName 
+ 
+And here are some that will get you into trouble: 
+1number 
+moms phone number 
+"firstName" 
+ 
+For the ones that will get you into trouble, the first variable starts with a number, the 
+ 
+THINK POINT 
+ 
+What are the advantages of 
+using variables? 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+35 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+second one has spaces, and the third is surrounded with double quotes. 
+ 
+To store something in a variable, you use an equals symbols ( = ). You can store 
+numbers, strings of text and Boolean values in a variable. (Boolean values are Yes/No, 
+True/False, 1 or

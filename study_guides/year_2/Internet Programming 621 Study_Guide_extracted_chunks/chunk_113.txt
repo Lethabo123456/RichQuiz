@@ -1,0 +1,22 @@
+, “ Kafka ” 
+has an index of 1 , “ Tolkien ” has an index of 2 , and “ Dickens ” has an index of 3 .  
+  
+If you want to create an associative array, where each element is identified by a string index rather 
+than a number, you need to use the => operator, as follows:  
+  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”, 
+“pubYear” = > 1939 );  
+  
+This creates an array with three elements: “The Grapes of Wrath ”, which has an index of “ title “ ; 
+“John Steinbeck ”, which has an index of “ author “ ; and 1939 , which has an index of “ pubYear ”.  
+  
+  
+  
+5.3 Accessing Array Elements  
+Once you have created your array, how do you access the individual values inside it? In fact, you do 
+this in much the same way as you access the individual characters within a string:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” ); 
+$myAuthor = $authors[0]; // $myAuthor contains “Steinbeck”  
+$anotherAuthor = $authors[1]; // $anotherAuthor cont

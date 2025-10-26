@@ -1,0 +1,37 @@
+3.4.  Agile Project Management 
+In any software business, managers need to know what is going on and whether or not a project 
+is likely to meet its objectives and deliver the software on time with the proposed budget. Plan-
+driven approaches to software development evolved to meet this need.  
+A plan-based approach requires a manager to have a stable view of everything that has to be 
+developed and the development processes. The informal planning and project control that was 
+proposed by the early adherents of agile methods clashed with this business requirement for 
+visibility. Teams were self-organizing, did not produce documentation, and planned development 
+in very short cycles.  
+
+While this can and does work for small companies developing software products, it is 
+inappropriate for larger companies who need to know what is going on in their organization. Like 
+every other professional software development process, agile development has to be managed 
+so that the best use is made of the time and resources available to the team. To address this issue, 
+the Scrum agile method was developed to provide a framework for organizing agile projects and, 
+to some extent at least, provide external visibility of what is going on. The developers of Scrum 
+wished to make clear that Scrum was not a method for project management in the conventional 
+sense, so they deliberately invented new terminology, such as ScrumMaster, which replaced 
+names such as project manager.  
+
+Table 3.3: Scrum Terminology 
+ 
+Scrum is an agile method insofar as it follows the principles from the agile manifesto. However, it 
+focuses on providing a framework for agile project organization, and it does not mandate the use 
+of specific development practices such as pair programming and test-first development. This 
+means that it can be more easily integrated with existing practice in a company.  
+Consequently, as agile methods have become a mainstream approach to software development, 
+Scrum has emerged as the most widely used method. The Scrum process or sprint cycle is shown 
+in the figure below.  The input to the process is the product backlog. Each process iteration 
+produces a product increment that could be delivered to customers. 
+ 
+The starting point for the Scrum sprint cycle is the product backlog—the list of items such as 
+product features, requirements, and engineering improvement that have to be worked on by the 
+Scrum team. The initial version of the product backlog may be derived from a requirements 
+document, a list of user stories, or other description of the software to be developed.
+
+Figure 3.3 The Scrum Sprint circle (Sommerville,  I.  2021) 

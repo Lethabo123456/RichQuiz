@@ -1,0 +1,54 @@
+nsert newNode between trailCurrent and current 
+if (current != NULL)  
+{  
+trailCurrent->next = newNode; 
+newNode->back = trailCurrent; 
+newNode->next = current;  
+current->back = newNode;  
+}  
+
+132  
+  
+else  
+{  
+trailCurrent->next = newNode; 
+newNode->back = trailCurrent; 
+last = newNode;  
+}  
+count++;  
+ 
+}  
+  
+  
+  
+  
+//end else  
+ 
+}  
+  
+  
+  
+  
+  
+//end else  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end insert  
+  
+3.5.11 Delete a Node  
+  
+This operation deletes a given item (if found) from the doubly linked list. As before, we first search the list 
+to see whether the item to be deleted is in the list. The search algorithm is the same as before. Similar to 
+the insert operation, this operation (if the item to be deleted is in the list) requires the adjustment of two 
+pointers in certain nodes. The delete operation has several cases:  
+Case 1:   
+The list is empty.  
+Case 2:   
+The item to be deleted is in the first node of the list, which would require us to change the 
+value of the p

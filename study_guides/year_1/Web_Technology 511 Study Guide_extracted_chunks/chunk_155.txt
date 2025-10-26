@@ -1,0 +1,16 @@
+9.6 CREATING BUTTONS 
+ 
+You use the submit button to allow users to submit the data that they enter in a form. 
+If you want users to reenter the data, you use the reset button to delete entries in all 
+the fields of a form. This is easier than deleting data from each field individually. 
+ 
+Submit buttons 
+To create a submit button on a page, you assign the value “submit” to the TYPE 
+attribute of an INPUT tag. By default, the submit button has the label “Submit Query.” 
+You can change this by using the VALUE attribute of the tag. For instance, to create a 
+submit button with the label “Order now,” use the following code: 
+<INPUT TYPE="submit" VALUE="Order now"> 
+When a user clicks the submit button, the data of the form is sent to a database on 
+the server where it is processed based on the method (POST or GET) specified by the 
+METHOD attribute of the FORM tag. The program that processes the data is specified 
+by the ACTION attribute of the FORM tag. 

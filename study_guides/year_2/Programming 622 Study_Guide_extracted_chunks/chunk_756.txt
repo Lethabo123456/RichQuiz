@@ -1,0 +1,36 @@
+he following class implements the basic properties of a B-tree as an 
+ADT:  
+//*************************************************************  
+// class bTree  
+// This class specifies the basic operations to implement a B-tree.  
+//************************************************************
+* template <class recType, int bTreeOrder> class bTree  
+{ public:  
+bool search(const recType& searchItem);  
+//Function to determine if searchItem is in the B-tree. 
+//Postcondition: Returns true if searchItem is found in the // 
+B-tree; otherwise, returns false.  
+  
+void insert(const recType& insertItem); //Function 
+to insert insertItem in the B-tree.  
+//Postcondition: If insertItem is not in the the B-tree, it // 
+is inserted in the B-tree.  
+  
+void inOrder();  
+//Function to do an inorder traversal of the B-tree.  
+
+372  
+  
+  
+bTree();  
+//constructor  
+//Add additional members as needed.  
+  
+protected:  
+bTreeNode<recType, bTreeOrder> *root;  
+};  
+  
+ 
+9.8.1  Search  
+  
+The function s

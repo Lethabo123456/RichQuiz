@@ -1,0 +1,13 @@
+In heapsort, elements at position k, 2k + 1, and 2k + 2, if they exist, are accessed frequently. Therefore, to 
+facilitate the discussion of heapsort, we typically view data in the form of a complete binary tree as 
+described next. For example, the data given in Figure 8-41 can be viewed in a complete binary tree, as 
+shown in Figure 8-42.  
+  
+  
+FIGURE 8-42 Complete binary tree corresponding to the list in Figure 8-41  
+  
+In Figure 8-42, the first element of the list, which is 85, is the root node of the tree. The second element 
+of the list, which is 70, is the left child of the root node; the third element of the list, which is 80, is the 
+right child of the root node. Thus, in general, for the node k, which is the k - 1th element of the list, its left 
+child is the 2kth (if it exists) element of the list, which is at position 2k - 1 in the list, and the right child is 
+the 2k + 1st (if it exists) element of the list, which is at position 2k in the list. Note that Figure 842 clear

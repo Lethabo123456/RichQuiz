@@ -1,0 +1,19 @@
+wed for a string object is used, the class length_error deals with this error. 
+For example, recall that every string object has a maximum length. If a length 
+
+266 | P a g e  
+ 
+larger than the maximum length allowed for a string is used, then the 
+length_error exception is generated. If the operator new cannot allocate memory 
+space, this operator throws a bad_alloc exception. 
+ 
+The class runtime_error is designed to deal with errors that can be detected only 
+during program execution. For example, to deal with arithmetic overflow and 
+underflow exceptions, the classes overflow_error and underflow_error are 
+derived from the class runtime_error. 
+ 
+The program in Example below shows how to handle the exceptions 
+out_of_range and length_error. Notice that in this program, these exceptions are 
+thrown by the string functions substr and the string concatenation operator +. 
+Because the exceptions are thrown by these functions, we do not include any 
+throw statement in the try block.

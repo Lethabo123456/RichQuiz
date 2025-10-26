@@ -1,0 +1,22 @@
+ists is 
+trivial.  
+  
+The partition algorithm is as follows: (We assume that pivot is chosen as the middle element of the list.)  
+  
+1. Determine the pivot, and swap the pivot with the first element of the list.  
+  
+Suppose that the index smallIndex points to the last element smaller than the pivot. The index 
+smallIndex is initialized to the first element of the list.  
+  
+2. For the remaining elements in the list (starting at the second element) If the current element is 
+smaller than the pivot  
+  
+a. Increment smallIndex.  
+b. Swap the current element with the array element pointed to by smallIndex.  
+  
+3. Swap the first element, that is, the pivot, with the array element pointed to by smallIndex.  
+  
+Step 2 can be implemented using a for loop, with the loop starting at the second element of the list.  
+  
+Step 1 determines the pivot and moves the pivot in the first array position. During the execution of Step 
+2, the elements of the list get arranged as shown in Figure 8-23.

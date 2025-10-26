@@ -1,0 +1,25 @@
+1.12.3 Print Servers 
+Print servers enable printers to be shared by other users on the network. Supporting either 
+parallel and/or serial interfaces, a print server accepts print jobs from any person on the network 
+using supported protocols and manages those jobs on each appropriate printer. 
+ 
+The earliest print servers were external devices, which supported printing via parallel or serial 
+ports on the device. Typically, only one or two protocols were supported. The latest generations of 
+print servers support multiple protocols, have multiple parallel and serial connection options and, 
+in some cases, are small enough to fit directly on the parallel port of the printer itself. Some 
+printers have embedded or internal print servers. This design has an integral communication 
+benefit between printer and print server, but lacks flexibility if the printer has physical problems. 
+Print servers generally do not contain a large amount of memory; printers simply store 
+information in a queue. When the desired printer becomes available, they allow the host to 
+transmit the data to the appropriate printer port on the server. The print server can then simply 
+queue and print each job in the order in which print requests are received, regardless of protocol 
+used or the size of the job. 
+ 
+Figure 1- 7: Terminal/Printer Server 
+
+
+Device Server Technology in the Data Center 
+The IT/data center is considered the pulse of any modern business. Remote management enables 
+users to monitor and manage global networks, systems and IT equipment from anywhere and at 
+any time.  Device servers play a major role in allowing for the remote capabilities and flexibility 
+required for businesses to maximize personnel resources and technology ROI.

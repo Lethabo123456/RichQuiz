@@ -1,0 +1,20 @@
+ouble inchesToCentimeters(double inches)  
+{  
+if (inches < 0)  
+{  
+cerr << "The given measurement must be nonnegative." << endl; return 
+-1.0;  
+}  
+else  
+return 2.54 * inches;  
+}  
+  
+If you look at the body of the function, you can recognize that if the value of inches is less than 0, that is, 
+negative, the function returns –1.0; otherwise, the function returns the equivalent length in centimeters. 
+The user of this function does not need to know the specific details of how the algorithm that finds the 
+equivalent length in centimeters is implemented. However, the user must know that in order to get the 
+valid answer, the input must be a nonnegative number. If the input to this function is a negative number, 
+the program returns –1.0. This information can be provided as part of the documentation of this function 
+using specific statements, called preconditions and postconditions.  
+  
+Precondition: A statement specifying the condition(s) that must be true before the function is

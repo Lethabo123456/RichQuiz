@@ -1,0 +1,25 @@
+ying and documenting business rules 
+is essential to database design for several reasons:  
+• 
+It helps to standardize the company’s view of data.  
+• 
+It can be a communication tool between users and designers.  
+• 
+It allows the designer to understand the nature, role, and scope of the data.  
+• 
+It allows the designer to understand business processes.  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Two, page 36-38. 
+
+ 
+22 
+• 
+It allows the designer to develop appropriate relationship participation rules and constraints 
+and to create an accurate data model.  
+Of course, not all business rules can be modelled. However, they can be represented and enforced 
+by application software. 
+Translating Business Rules to Data Model Components 
+Business rules set the stage for the proper identification of entities, attributes, relationships, and 
+constraints. In the real world, names are used to identify objects. If the

@@ -1,0 +1,36 @@
+• Pareto Distribution: It is one of the most critical types of continuous distribution. The 
+Pareto Distribution is a skewed statistical distribution that uses power-law to describe 
+quality control, scientific, social, geophysical, actuarial, and many other types of 
+observable phenomena. The distribution shows slow or heavy-decaying tails in the 
+plot, where much of the data reside at its extreme end. 
+
+Here is a code example showing the use of Pareto Distribution –   
+import numpy as np  
+from matplotlib import pyplot as plt  
+from scipy.stats import pareto  
+def paretoDist():  
+    xm = 1.5    
+    alp = [2, 4, 6]   
+    x = np.linspace(0, 4, 800)  
+    output = np.array([pareto.pdf(x, scale = xm, b = a) for a in alp])  
+    plt.plot(x, output.T)  
+    plt.show()  
+paretoDist() 
+Output:
+
+• Exponential Distribution: It is a type of continuous distribution that determines the 
+time elapsed between events (in a Poisson process). Let’s suppose that you have the 
+Poisson distribution model that holds the number of events happening in each period. 
+We can model the time between each birth using an exponential distribution. 
+
+Here is a code example showing the use of Pareto Distribution – 
+from numpy import random 
+import matplotlib.pyplot as plt 
+import seaborn as sb 
+  
+def expDist(): 
+    sb.histplot(random.exponential(size=1200), kde=True) 
+    plt.show() 
+  
+expDist() 
+Output:

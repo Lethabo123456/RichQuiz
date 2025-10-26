@@ -1,0 +1,25 @@
+2.11: Assignment of Grades in a Discrete Mathematics Class. 
+ 
+Definition 24 
+Let A and B be nonempty sets. A function f from A to B is an assignment of 
+exactly one element of B to each element of A. We write f (a) = b if b is the 
+unique element of B assigned by the function f to the element a of A. If f is a 
+function from A to B, we write f : A → B. 
+ 
+Remark: Functions are sometimes also called mappings or transformations. 
+Functions are specified in many different ways. Sometimes we explicitly 
+state the assignments, as in Figure 2.11. Often we give a formula, such as 
+ f (x) = x + 1, to define a function. Other times we use a computer program 
+to specify a function. A function f : A → B can also be defined in terms of a 
+relation from A to B. A relation from A to B that contains one, and only one, 
+ordered pair (a, b) for every element a ∈ A, defines a function f from A to B. 
+This function is defined by the assignment  
+f (a) = b, where (a, b) is the unique ordered pair in the relation that has a as 
+its first element. 
+
+Definition 24 
+If f is a function from A to B, we say that A is the domain of f and B is the 
+codomain of f. If f (a) = b, we say that b is the image of a and a is a preimage 
+of b. The range, or image, of f is the set of all images of elements of A. Also, 
+if f is a function from A to B, we say that f maps A to B. Figure 2.12 represents 
+a function f from A to B. 

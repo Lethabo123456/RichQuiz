@@ -1,0 +1,20 @@
+Most people naturally view the world as made up of objects that are related to each other in a 
+hierarchical way, such as animals, mammals, and dogs.  
+ 
+If you wanted to describe animals in an abstract way, you would say they have some attributes, such 
+as size, intelligence, and type of skeletal system. Animals also have certain behavioral aspects; they 
+eat, breathe, and sleep. This description of attributes and behavior is the class definition for animals.   
+If you wanted to describe a more specific class of animals, such as mammals, they would have more 
+specific attributes, such as type of teeth, and mammary glands. This is known as a subclass of 
+animals, where animals are referred to as mammals’ superclass.  
+Since mammals are simply more precisely specified animals, they inherit all of the attributes from 
+animals. A deeply inherited subclass inherits all of the attributes from each of its ancestors in the  
+class hierarchy.
+
+Figure 1.4: Inheritance 
+
+Inheritance interacts with encapsulation as well. If a given class encapsulates some attributes, then 
+any subclass will have the same attributes   plus any that it adds as part of its specialization (see 
+Figure 2-2). This is a key concept which lets object-oriented programs grow in complexity linearly 
+rather than geometrically. A new subclass inherits all of the attributes of all of its ancestors. It does 
+not have unpredictable interactions with the majority of the rest of the code in the system.  

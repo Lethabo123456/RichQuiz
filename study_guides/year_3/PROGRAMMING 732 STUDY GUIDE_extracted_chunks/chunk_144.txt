@@ -1,0 +1,34 @@
+As with all servlets, once you've performed the necessary operations, you need to generate some output. 
+If you are using sessions, it is necessary to request the session with  
+HttpServletRequest.getSession() before generating any output.   
+  
+   response.setContentType("text/html");  
+PrintWriter out = response.getWriter();  
+out.println("<html>" +  
+    "<head><title>Session Information</title></head>" +  
+    "<body bgcolor=\"#FFFFFF\">" +  
+    "<h1>Session Information</h1><table>");   
+out.println ("<tr><td>Identifier</td>");  
+  out.println ("<td>" + session.getId() + 
+"</td></tr>");   out.println ("<tr><td>Created</td>");   
+out.println ("<td>" + new Date(  
+    session.getCreationTime()) + "</td></tr>");   
+out.println ("<tr><td>Last Accessed</td>");   
+out.println ("<td>" + new Date(  
+    session.getLastAccessedTime()) + "</td></tr>");   
+out.println ("<tr><td>New Session?</td>");   
+out.println ("<td>" + session.isNew() + "</td></tr>");   
+String names[] = session.getValueNames();   for (int 
+i=0, n=names.length; i<n; i++) {     out.println 
+("<tr><td>" + names[i] + "</td>");     out.println 
+("<td>" + session.getValue (names[i])  
+      + "</td></tr>");  
+  }  
+  out.println("</table></center></body></html>");   
+out.close();  
+  
+The complete code example shown above is available for testing. One thing not demonstrated in the 
+example is the ability to end a session, where the next call to request.getSession(true) returns a different 
+session. This is done with a call to invalidate().   
+In the event a user has browser cookies disabled, you can encode the session ID within the 
+HttpServletResponse by calling its encodeUrl() method.

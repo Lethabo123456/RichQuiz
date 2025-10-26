@@ -1,0 +1,45 @@
+Logical conjunction 
+
+Logical conjunction is an operation on two logical values, typically the values of 
+two propositions, that produces a value oftrue if both of its operands are true. 
+ 
+The truth table for p AND q (also written as p ∧ q, Kpq, p & q, or p  q) is as 
+follows: 
+
+Logical Conjunction 
+
+p     q     p ∧ q 
+--------------------
+T     T     T 
+--------------------
+T     F     F 
+--------------------
+F     T     F 
+--------------------
+F     F     F 
+--------------------
+
+ In ordinary language terms, if both p and q are true, then the conjunction p ∧ q is 
+true. For all other assignments of logical values to p and to q the 
+conjunction p ∧ q is false. 
+It can also be said that if p, then p ∧ q is q, otherwise p ∧ q is p. 
+ 
+Logical disjunction 
+Logical disjunction is an operation on two logical values, typically the values of 
+two propositions, that produces a value oftrue if at least one of its operands is 
+true. 
+The truth table for p OR q (also written as p ∨ q, Apq, p || q, or p + q) is as 
+follows: 
+
+Logical Disjunction 
+p    q     p ∨ q
+------------------ 
+T    T     T 
+------------------
+T    F     T 
+------------------
+F    T     T 
+------------------
+F    F     F 
+------------------
+Stated in English, if p, then p ∨ q is p, otherwise p ∨ q is q.

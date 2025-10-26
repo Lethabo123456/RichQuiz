@@ -1,0 +1,31 @@
+like the countries competing in the Olympics in our previous example. Second, unlike bar charts, the height 
+of a histogram bar does not indicate frequency - rather, it’s the volume of the bar (height x width) that does. The width 
+of a histogram bar is determined by binning; since the x-axis usually displays a continuous range of values, like time 
+or temperature, each vertical bar represents a range of values. 
+Also, while bar charts usually have space between bars, histograms generally have no space between adjacent bars. 
+For this section we’ll revisit the mpg dataset. Let’s take a look at a frequency distribution of mpg values from our set 
+of 1970’s era vehicles. 
+ 
+hist1.py takes plotly’s default settings: 
+
+ 
+ 
+ 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+df = pd.read_csv('../data/mpg.csv') 
+ 
+data = [go.Histogram( 
+x=df['mpg'] 
+)] 
+ 
+layout = go.Layout( 
+ 
+title="Miles per Gallon Frequencies of<br>\ 
+1970's Era Vehicles" 
+) 
+fig =

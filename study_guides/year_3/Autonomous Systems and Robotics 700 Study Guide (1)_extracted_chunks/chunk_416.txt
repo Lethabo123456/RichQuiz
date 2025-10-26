@@ -1,0 +1,27 @@
+Explanation:  
+a) The VisualNavigationCNN(nn.Module) class defines a neural network model that takes 
+an RGB image from a robot camera and outputs a probability distribution over possible 
+navigation actions, such as:
+ 
+• Move forward 
+• Turn left 
+• Turn right 
+• Stop 
+
+b) Convolutional Layers (Feature Extraction): These layers extract useful features from the 
+raw image. They progressively reduce spatial dimensions while increasing feature 
+complexity. Typical use in obstacle detection:  
+• identify shapes 
+• edges 
+• movement in the camera frame. 
+
+c) Fully Connected Layers (Decision Making):  After flattening the extracted features, the 
+model passes them through these layers to decide what action to take. num_actions=4 
+corresponds to the robot’s possible directions: [forward, left, right, stop] 
+d) Output: The model returns a probability distribution over the 4 actions (e.g., 80% chance 
+of moving forward, 5% chance of stopping, etc.). 
+In summary the model: 
+• Takes a live image from the robot camera 
+• Processes it using convolutional layers to extract visual information 
+• Uses this information to choose a safe and efficient movement direction, based on learned 
+patterns (like avoiding walls or recognizing open paths)

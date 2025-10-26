@@ -1,0 +1,39 @@
+import com.google.android.gms.maps.SupportMapFragment; 
+▪ Line 19—The map is retrieved asynchronously. Once the map has been retrieved, the 
+onMapReady() method is executed and we can begin working with the map. 
+▪ Line 21—This line calls a method that sets up the location listener. We will code this method later. 
+▪ Line 22—This line calls a method that is used to process any location changes provided by the 
+FusedLocationProviderClient. This method will also be coded later. 
+ 
+The next step is to code the callback methods required by the interface and other methods required 
+to capture user location. If you chose to have Android Studio implement the required methods, you 
+may see more methods in your code than in the following listing. Don’t worry—we do not need those 
+methods to get the functionality we are after, and you can just ignore them. However, the interface 
+requires that the empty method be in the code. Refer to Listing 7.12 to code the required methods. 
+ 
+Each of these methods implements a portion of the required functionality. Their exact function is 
+explained as follows:
+
+▪ Lines 1–6—This method creates the parameters of your location request. It sets the standard 
+monitoring interval (in milliseconds), the fastest interval needed, and the required accuracy level of 
+the reported location. By using PRIORITY_HIGH_ACCURACY, we use the device’s GPS to get the 
+coordinates. 
+▪ Lines 8–22 — This method responds to location changes provided by the 
+FusedLocationProviderClient. If there are no changes or the LocationResult does not have any 
+locations in it due to an error, then nothing is done. If there are location results, then it loops through 
+the set of results, displaying them as a Toast on the screen. 
+▪ Lines 24–33—This method starts location updates. Note the code checking for permission. Since 
+we are requesting the location of the user’s device, we must check the permission, as we did when 
+using the sensors directly. The only other line of code starts the location listening through the 
+FusedLocationProviderClient. This line will show an error that will be corrected next. 
+▪ Line 34—This line enables the map to find the device location. It places a button on the map that 
+allows the user to enable or disable the display of the small blue dot on the map (which represents 
+the device’s location) and to zoom to that location. 
+▪ Lines 37–47—This method stops location updates from the FusedLocationProviderClient. 
+▪ Lines 48–56—Finally, the onMapReady() method is created. This method overrides a super class 
+method, so it requires the Override designation. Since we want to use location in the map, we will add 
+the permission request in this method and delete the initGetLocationButton() method. Be sure to copy 
+the code before deleting the method. This code receives the GoogleMap object and assigns it to our 
+gMap variable. The map type is also set. A map type of normal is a standard highway map. Other valid 
+types include MAP_TYPE_SATELLITE for satellite pictures and MAP_TYPE_TERRAIN for a map of the 
+terrain features.

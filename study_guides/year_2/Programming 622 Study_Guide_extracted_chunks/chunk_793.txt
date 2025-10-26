@@ -1,0 +1,35 @@
+vertex i.  
+  
+EXAMPLE 10-4  
+Consider the directed graphs of Figure 10-4. Figure 10-5 shows the adjacency list of the directed graph G2.  
+  
+  
+FIGURE 10-5 Adjacency list of graph G2 of Figure 10-4  
+  
+Figure 10-6 shows the adjacency list of the directed graph G3.  
+  
+  
+  
+
+390  
+  
+  
+FIGURE 10-6 Adjacency list of graph G3 of Figure 10-4  
+  
+ 
+10.4  Operations on Graphs  
+  
+Now that you know how to represent graphs in computer memory, the next obvious step is to learn the 
+basic operations on a graph. The operations commonly performed on a graph are as follows:  
+  
+1. Create the graph. That is, store the graph in computer memory using a particular graph 
+representation.  
+2. Clear the graph. This operation makes the graph empty.  
+3. Determine whether the graph is empty.  
+4. Traverse the graph.  
+5. Print the graph.  
+  
+We will add more operations on a graph when we discuss a specific application or a particular graph later 
+in this chapter.  
+  
+How a graph is represented i

@@ -1,0 +1,36 @@
+Example: 
+import numpy as np x = np.array([3, 6, 8])  
+# A vector of three elements  
+Understanding Vectors: 
+• Vectors store multiple dimensions of a single data point or observation. 
+• Example: Average satisfaction ratings for different departments in a company can be 
+represented as a vector. 
+Practical Application: 
+• Consider average satisfaction ratings for three departments: 57 (HR), 89 (Engineering), 
+94 (Management). 
+ 
+• This can be represented as a vector: satisfaction = np.array([57, 89, 94]). 
+A matrix is a 2-dimensional representation of arrays of numbers. Matrices (plural) 
+have two main characteristics that we need to be aware of. The dimension of the 
+matrix, denoted as n x m (n by m), tells us that the matrix has n rows and m columns. 
+Matrices are generally denoted using a capital, bold-faced letter, such as X. Consider 
+the following example: 
+
+This is a 3 x 2 (3 by 2) matrix because it has three rows and two columns. 
+If a matrix has the same number of rows and columns, it is called a square matrix. 
+Revisiting our previous example, let's say we have three offices in different locations, each 
+with the same three departments: HR, engineering, and management. We could make three 
+different vectors, each holding a different office's satisfaction scores, as shown: 
+ 
+However, this method is not only inconvenient but also not feasible for large-scale 
+applications. For instance, if there are 100 different offices, it would require maintaining 100 
+separate one-dimensional arrays to store this data. A matrix can solve this issue effectively. 
+In the matrix, each row can represent a different department, and each column can represent 
+a different office, as illustrated: 
+ 
+Now, let's strip away the labels, and we are left with a matrix: 
+  
+Introduction 
+In data science, arithmetic symbols are used extensively for various calculations and data 
+manipulations. Understanding these symbols is crucial for interpreting and creating 
+mathematical expressions in data science contexts. 

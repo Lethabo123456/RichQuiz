@@ -1,0 +1,24 @@
+er, PHP 
+does give you a function called print_r() that you can use to output the contents of an array for 
+debugging. Using print_r() is easy — just pass it the array you want to output:  
+  
+print_r( $array );  
+  
+The following example code creates an indexed array and an associative array, then displays both 
+arrays in a Web page using print_r() . You can see the result in Figure 5.1.  
+  
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” > 
+< head >  
+< title > Outputting Arrays with print_r() < /title >  
+< link rel=”stylesheet” type=”text/css” href=”common.css” / >  
+< /head >  
+< body >  
+< h1 > Outputting Arrays with print_r() < /h1 >  
+< ?php  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”, 
+“pubYear” = > 1939 );  
+echo ‘ < h2 > $authors: < /

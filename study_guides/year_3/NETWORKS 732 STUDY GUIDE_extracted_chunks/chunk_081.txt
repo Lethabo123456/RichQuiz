@@ -1,0 +1,24 @@
+1. Network Monitors 
+
+Network monitors are software-based tools used to analyse traﬃc on a given segment. They 
+capture and log frames, detect anomalies, and help visualize traﬃc volume or types. Some 
+can recreate network conditions or simulate loads to test capacity and performance. 
+Key features include capturing broadcast/multicast packets, logging traﬃc per node, and 
+triggering alerts when traﬃc thresholds are met. These tools help uncover issues such as high 
+collision rates, slow performance, or even compromised devices ﬂooding the network with 
+data. By capturing a traﬃc baseline during normal operations, network monitors can later 
+compare and quickly ﬂag abnormal behaviour (Dean, 2013). 
+ 
+2. Protocol Analysers 
+
+Protocol analysers, like Wireshark, delve deeper than network monitors by inspecting frames 
+up to Layer 7 (Application Layer) of the OSI model. They interpret protocols such as TCP/IP, 
+ ARP, and HTTP, allowing network professionals to understand the type, content, and intent of 
+data being transmitted. 
+
+These tools are essential for diagnosing advanced problems, such as corrupted packets, 
+protocol mismatches, or application-layer errors. Additionally, they can reveal security 
+vulnerabilities, such as unencrypted credentials. Sophisticated analysers can even emulate 
+traﬃc to replicate errors and test ﬁxes.
+
+Figure: 1.6: Screenshot of Data captured from a Protocol Analyser: 

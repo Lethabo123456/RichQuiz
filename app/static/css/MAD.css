@@ -1,0 +1,152 @@
+/* Mobile App Development Themed CSS (programming_mobile_app.css) */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0f7fa;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 12px #00e5ff, 0 0 20px #ff00ff;
+}
+
+/* Question container */
+.question-container {
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,255,255,0.1));
+    border: 2px solid #00e5ff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.question-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Options list */
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #ff00ff;
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-label:hover {
+    background: rgba(0, 229, 255, 0.1);
+    border-color: #00e5ff;
+    transform: scale(1.02);
+}
+
+.option-text {
+    margin-left: 0.8rem;
+    color: #e0f7fa;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, #00e5ff, #ff00ff);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00e5ff, 0 0 50px #ff00ff;
+}
+
+/* Back link */
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color: #00e5ff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ff00ff;
+}
+
+/* Code blocks inside questions */
+pre, code {
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(0,0,0,0.2);
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    color: #ffeb3b;
+    overflow-x: auto;
+}
+
+/* Error message */
+.error-message {
+    color: #ff5252;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

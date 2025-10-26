@@ -1,0 +1,50 @@
+3.4.3 For Looping Structure 
+The C++ for looping structure discussed here is a specialized form of the while 
+loop. Its primary purpose is to simplify the writing of counter-controlled loops. For 
+this reason, the for loop is typically called a counted or indexed for loop. 
+The general form of the for statement is: 
+ 
+The initial statement, loop condition, and update statement (called for loop 
+control statements) enclosed within the parentheses control the body 
+(statement) of the for statement. 
+ 
+The for loop executes as follows:  
+    1. The initial statement executes. 
+    2. The loop condition is evaluated.  
+ 
+If the loop condition evaluates to true:  
+            i. Execute the for loop statement.  
+            ii. Execute the update statement (the third expression in the   
+parentheses). 
+ 
+ 3. Repeat Step 2 until the loop condition evaluates to false. The initial statement 
+usually initializes a variable (called the for loop control, or for indexed, variable). 
+In C++, for is a reserved word. 
+
+3.4.4 Do….while Looping Structure 
+ 
+This section describes the third type of looping or repetition structure, called a 
+do. . . while loop. 
+ 
+The general form of a do. . .while statement is as follows: 
+ 
+Of course, statement can be either a simple or compound statement. If it is a 
+compound statement, enclose it between braces. Figure below shows the flow of 
+execution of a do. . .while loop. 
+ 
+In C++, do is a reserved word.  
+ 
+The statement executes first, and then the expression is evaluated. If the expression 
+evaluates to true, the statement executes again. As long as the expression in a do. . 
+.while statement is true, the statement executes. To avoid an infinite loop, you must, 
+once again, make sure that the loop body contains a statement that ultimately makes 
+the expression false and assures that it exits properly 
+ 
+In a while and for loop, the loop condition is evaluated before executing the body of 
+the loop. Therefore, while and for loops are called pretest loops. On the other hand, 
+the loop condition in a do. . .while loop is evaluated after executing the body of the 
+loop. Therefore, do. . .while loops are called posttest loops.  
+ 
+Because the while and for loops both have entry conditions, these loops may never 
+activate. The do...while loop, on the other hand, has an exit condition and therefore 
+always executes the statement at least once.

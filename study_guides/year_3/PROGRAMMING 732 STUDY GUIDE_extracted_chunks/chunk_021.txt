@@ -1,0 +1,16 @@
+1.2.13 TextArea    
+Sometimes a single line of text input is not enough for a given task. To handle these situations, the AWT 
+includes a simple multiline editor called TextArea. Following are the constructors for TextArea.  
+  
+TextArea()  
+TextArea(int numLines, int numChars)  
+TextArea(String str)  
+TextArea(String str, int numLines, int numChars)  
+TexArea(String str, int numLines, int numChars, int sBars)  
+  
+Here, numLines specifies the height, in lines, of the text area, and numChars specifies its width, in 
+characters. Initial text can be specified by str. In the fifth form you can specify the scroll bars that you want 
+the control to have sBars must be one of these values:  
+  
+SCROLLBARS_BOTH SCROLLBARS_NONE  
+SCROLLBARS_HORIZONTAL_ONLY SCROLLBARS_VERTICAL_ONLY  

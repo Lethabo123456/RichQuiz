@@ -1,0 +1,53 @@
+6.12 Security Threats to Wi-Fi Networks 
+Wireless transmissions are particularly susceptible to eavesdropping. Several additional security 
+threats to wireless networks are discussed in the following list: 
+• War driving: A hacker searches for unprotected wireless networks by driving around with 
+a laptop or smartphone conﬁgured to receive and capture wireless data transmissions. 
+(The term is derived from the term war dialling, which is a similar tactic involving old, dial- 
+up modems.) War driving is surprisingly eﬀective for obtaining private information. Years 
+ago, the hacker community publicized the vulnerabilities of a well-known store chain, 
+which were discovered while war driving. The retailer used wireless cash registers to help 
+customers make purchases when the regular, wired cash registers were busy. However, 
+the wireless cash registers transmitted purchase information, including credit card 
+numbers and customer names, to network APs in cleartext (in other words, unencrypted). 
+By chance, a person in the parking lot who was running a protocol analyzer program on 
+his laptop obtained several credit card numbers in a very short time. The person alerted 
+the retailer to the security risk (rather than exploiting the information he gathered). After 
+the retailer discovered its error, it abandoned the use of wireless cash registers until a 
+thorough evaluation of its data security could be conducted. 
+ 
+
+• War chalking: Once hackers discover vulnerable access points, they make this information 
+public by drawing symbols with chalk on the sidewalk or a wall within range of a wireless 
+network. The symbols, patterned after marks that hobos devised to indicate hospitable 
+places for food or rest, indicate the access point’s SSID and whether it’s secured. 
+Alternatively, many websites oﬀer maps of these open networks, as reported by war 
+drivers. 
+Evil twin: Clients running Linux, macOS, or a modern version of Windows will ﬁrst attempt 
+to associate with a known access point. This feature can result in network devices 
+connecting to rogue access points, or access points oﬀering a connection to the Internet 
+without the authorization of the area’s network administrator. One type of rogue access 
+point, an evil twin, can be used to trick a device into connecting to the wrong network by 
+broadcasting the same SSID as the authorized network or another SSID that appears just 
+as legitimate to the user. Suppose another user brings their own AP to a café and its signal 
+is twice as strong as the café’s AP. Your laptop will automatically recognize the other user’s 
+stronger AP as the best option. If the user has conﬁgured their AP with the same SSID as 
+the cafés, and if you’ve conﬁgured your laptop to trust that SSID, your laptop might 
+complete association to this evil twin AP without your knowledge. The person controlling 
+the evil twin could then steal your data or gain access to another network that trusts your 
+system. Note that a user can create a rogue access point inadvertently, too for example, 
+by bringing an AP to work, using software to turn a workstation into an AP, or creating a 
+hotspot with a smartphone. As a network technician, you should check regularly for evil 
+twins or other rogue access points within your network’s geographical area. Especially be 
+on the lookout for access points that show a stronger signal than your corporate AP 
+because Windows lists SSIDs by signal strength, and users are accustomed to selecting the 
+SSID at the top of the list. 
+• WPA attack: These attacks, also called WPA cracking, involve an interception of the 
+network keys communicated between clients and access points. 
+• WPS attack: WPS (Wi-Fi Protected Setup) is a user-friendly but not very secure security 
+setting available on some consumer-grade APs. Part of the security involves requiring a 
+PIN (personal identiﬁcation number) to access the AP’s settings or to associate a new 
+device with the network. The problem is that the PIN can be easily cracked through a brute 
+force attack, which means simply trying numerous possible character combinations to ﬁnd 
+the correct combination. This gives the attacker access to the network’s WPA2 key. The 
+PIN feature in WPS should be disabled if possible. 

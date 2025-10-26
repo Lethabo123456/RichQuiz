@@ -1,0 +1,46 @@
+The if-else-if Ladder    
+A common programming construct that is based upon a sequence of nested ifs is the if-else-if ladder. 
+It looks like this:   
+   
+if(condition)   
+   
+statement;   
+
+else if(condition) statement;   
+   
+else if(condition) statement;   
+...   
+else statement;   
+   
+The if statements are executed from the top down. As soon as one of the conditions controlling the 
+if is true, the statement associated with that if is executed, and the rest of the ladder is bypassed. If 
+none of the conditions is true, then the final else statement will be executed. The final else acts as 
+a default condition; that is, if all other conditional tests fail, then the last else statement is 
+performed. If there is no final else and all other conditions are  false, then no action will take 
+place.
+
+// Demonstrate 
+if-else-if  
+statements. class IfElse {  public static void 
+main(String args[])   
+{ int month = 4; // April   
+   
+String season;   
+if(month == 12 || month == 1 || month == 2) 
+season = "Winter";   
+else if(month == 3 || month == 4 || month == 5) 
+season = "Spring"; else if(month == 6 || month == 7 || month == 8) 
+season = "Summer";   
+else if(month == 9 || month == 10 || month ==  11) 
+season = "Autumn";   
+ 
+else   
+season = "Bogus Month"; System.out.println("April is in the " + season + ".");   
+}   
+}   
+
+Here is the output produced by the program:    
+   
+April is in the Spring.   
+You might want to experiment with this program before moving on. As you will find, no matter what 
+value you give month, one and only one assignment statement within the ladder will be executed.

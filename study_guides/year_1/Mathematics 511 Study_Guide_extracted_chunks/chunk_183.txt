@@ -1,0 +1,37 @@
+Definition 36  
+A geometric progression is a sequence of the form 𝑎, 𝑎𝑟, 𝑎𝑟2, . . . , 𝑎𝑟𝑛, . .. 
+where the initial term a and the common ratio r are real numbers. 
+ 
+Definition 37  
+An arithmetic progression is a sequence of the form 𝑎, 𝑎 +  𝑑, 𝑎 +
+ 2𝑑, . . . , 𝑎 +  𝑛𝑑, . .. 
+where the initial term a and the common difference d are real numbers. 
+ 
+3.4.2 Recurrence Relations 
+ 
+Definition 38  
+A recurrence relation for the sequence {an} is an equation that expresses an 
+in terms of one or more of the previous terms of the sequence, namely, a0, 
+a1, . . . , an−1, for all integers n with n ≥ n0, where n0 is a nonnegative integer. 
+A sequence is called a solution of a recurrence relation if its terms satisfy the 
+recurrence relation. 
+ 
+Worked Example 
+Let {an} be a sequence that satisfies the recurrence relation 𝑎𝑛 = 𝑎𝑛−1 +
+ 3  𝑓𝑜𝑟 𝑛 =  1, 2, 3, . . ., and suppose that a0 = 2. What are a1, a2, and a3? 
+Solution: 
+We see from the recurrence relation that: 
+a1 = a0 + 3 = 2 + 3 = 5.  
+It then follows that a2 = 5 + 3 = 8 and a3 = 8 + 3 = 11
+
+The initial conditions for a recursively defined sequence specify the terms 
+that precede the first term where the recurrence relation takes effect. For 
+instance, the initial condition in previous example is a0 = 2. 
+Next, we define a particularly useful sequence defined by a recurrence 
+relation, known as the Fibonacci sequence, after the Italian mathematician 
+Fibonacci who was born in the 12th century. 
+
+Definition 39 
+The Fibonacci sequence, f0, f1, f2, . . . , is defined by the initial conditions f0 = 
+0, f1 = 1, and the recurrence relation: 
+fn = fn−1 + fn−2 for n = 2, 3, 4, . . . .

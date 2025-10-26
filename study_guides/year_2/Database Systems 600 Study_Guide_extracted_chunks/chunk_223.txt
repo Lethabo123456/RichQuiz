@@ -1,0 +1,12 @@
+ng speed must be carefully weighed against the 
+disadvantage of data anomalies. On the other hand, some anomalies are of only theoretical interest. 
+As explained earlier, the problem with denormalized relations and redundant data is that data 
+integrity could be compromised due to the possibility of insert, update, and deletion anomalies. The 
+advice is simple: use common sense during the normalization process. 
+Furthermore, the database design process could, in some cases, introduce some small degree of 
+redundant data in the model. This, in effect, creates “denormalized” relations. Table 6.6 shows some 
+common examples of data redundancy that are generally found in database implementations.  
+Also, in some cases a solution in 3NF is practical only if performance is not an issue and there are 
+no other viable processing options. As shown, normalization purity is often difficult to sustain in 
+the modern database environment.  
+Lower normalization forms occur (and are even required) in

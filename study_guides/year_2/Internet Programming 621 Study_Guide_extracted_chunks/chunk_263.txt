@@ -1,0 +1,70 @@
+the following PHP code ? 
+<?php 
+
+function mine($num) 
+{ 
+$num = 2 + $num; 
+echo $num; 
+} 
+mine(3); 
+?> 
+a) 3 
+b) $num 
+c) 5 
+d) None of the above 
+ Answer: c 
+  
+136. 
+What will be the output of the following PHP code ? 
+<?php 
+function mine($num) 
+{ 
+$num = 2 + $num; 
+echo "$num"; 
+} 
+mine(3); 
+?> 
+a) 3 
+b) $num 
+c) 5 
+d) None of the above 
+  
+Answer: b 
+   
+137. 
+What will be the output of the following PHP code ? 
+<?php 
+function one($string) 
+{ 
+echo "I am ". $String; 
+} 
+one("Batman"); 
+?> 
+a) I am Batman 
+
+b) I am 
+c) Batman 
+d) ERROR 
+Answer: a 
+138. 
+What will be the output of the following PHP code ? 
+<?php 
+function string($title); 
+{ 
+$title = ucwords($title); 
+echo lcfirst($title); 
+} 
+string("you went full retard"); 
+?> 
+a) You went full retard 
+b) You Went Full Retard 
+c) YOU WENT FULL RETARD 
+d) you Went Full Retard 
+Answer: d 
+  
+ 
+139. 
+What will be the output of the following PHP code ? 
+ <pre lang="php" line="1" cssfile="hk1_style"> 
+ <?php 
+     function multi($nu

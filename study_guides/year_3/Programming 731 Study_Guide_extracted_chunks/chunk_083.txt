@@ -1,0 +1,21 @@
+2.4. Relational Operators   
+The relational operators determine the relationship that one operand has to the other.  Specifically, 
+they determine equality and ordering. The relational operators are shown here:      
+  
+Figure 2.2 : Relational Operators  
+ 
+The outcome of these operations is a boolean value. The relational operators are most frequently 
+used in the expressions that control the if statement and the various loop statements. Any type in 
+Java, including integers, floating-point numbers, characters, and Booleans can be compared using 
+the equality test, ==, and the inequality test, !=. Notice that in Java (as in C/C++/C#) equality is 
+denoted with two equal signs, not one. 
+ (Remember: a single equal sign is the assignment operator.) Only numeric types can be compared 
+using the ordering operators. That is, only integer, floating-point, and character operands may be 
+compared to see which is greater or less than the other.   
+As stated, the result produced by a relational operator is a boolean value. For example, the following 
+code fragment is perfectly valid:    
+int a = 4; 
+int b = 1;  
+boolean c = a< b;   
+   
+In this case, the result of a<b (which is false) is stored in c.

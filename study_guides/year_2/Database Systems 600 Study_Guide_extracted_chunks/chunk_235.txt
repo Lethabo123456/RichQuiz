@@ -1,0 +1,15 @@
+e ANSI/ISO SQL standard defines many different data types. A data type is a specification about 
+the kinds of data that can be stored in an attribute. Data types influence queries that retrieve data 
+because there are slight differences in the syntax of SQL and how it behaves during a query that are 
+based on the data type of the column being retrieved.  
+For now, consider that there are three fundamental types of data: character data, numeric data, and 
+date data. Character data is composed of any printable characters such as alphabetic values, digits, 
+punctuation, and special characters. Character data is also often referred to as a “string” because it 
+is a collection of characters threaded together to create the value. Numeric data is composed of 
+digits, such that the data has a specific numeric value. Date data is composed of date and, 
+occasionally, time values. Although character data may contain digits, the DBMS does not 
+recognize the numeric value of those digits. 
+
+ 
+94 
+S

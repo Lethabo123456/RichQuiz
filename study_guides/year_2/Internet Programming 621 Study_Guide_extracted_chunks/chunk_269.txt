@@ -1,0 +1,89 @@
+= 3; 
+echo $x % $y % $z; 
+?> 
+a) 0 
+b) 1 
+c) 2 
+d) Error 
+  
+Answer: c 
+  
+156. 
+What will be the output of the following PHP code ? 
+<?php 
+
+$x = 10; 
+$y = 4; 
+$z = 3; 
+echo ($x % ($y) + $z); 
+?> 
+a) 5 
+b) 3 
+c) 0 
+d) 1 
+  
+Answer: a 
+  
+157. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 30; 
+$y = 20; 
+$z = 10; 
+echo $x + $y - $z / ($z - $y); 
+?> 
+a) 41 
+b) -4 
+c) -5 
+d) 51 
+  
+Answer: d 
+  
+158. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = -1; 
+$y = 1; 
+$z = $x * $y + $z; 
+echo $z; 
+?>  
+a) Undefined variable z 
+b) -1 
+a) Undefined variable z -1 
+c) None of the above 
+  
+Answer: c 
+
+  
+159. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 4; 
+$y = -3; 
+$z = 11; 
+echo 4 + $y * $z / $x; 
+?> 
+a) 4.25 
+b) 3.25 
+c) -3.25 
+d) -4.25 
+  
+Answer: d 
+  
+160. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 3.5; 
+$y = 2; 
+$z = 2; 
+echo $x / $y / $z; 
+?> 
+a) 1.75 
+b) 0.875 
+c) 3.5 
+d) Error 
+  
+Answer: b 
+ 
+161. 
+What wi

@@ -1,0 +1,21 @@
+op condition in Line 7 evaluates to true because the stack is nonempty. Therefore, the statements 
+in Lines 9, 10, and 11 execute. After the statement in Line 9 executes, current points to the last node. The 
+statement in Line 10 removes the top element of the stack; see Figure 5-20.  
+  
+  
+FIGURE 5-20 List and stack after the statements current = stack.top(); and stack.pop(); Execute  
+  
+The statement in Line 11 outputs current->info, which is 15.  
+  
+Because stack is nonempty, the body of the while loop executes again. In fact, for the linked list in Figure 
+5-20, the body of the while loop executes two more times; the first time it prints 10, and the second time 
+it prints 5. Ater printing 5, the stack becomes empty and the while loop terminates. It follows that the 
+while loop in Line 7 produces the following output: 15 10 5  
+  
+  
+ 
+5.6  
+STL class stack  
+  
+The previous sections discussed the data structure stack in detail. Because a stack is an important data 
+structure, th

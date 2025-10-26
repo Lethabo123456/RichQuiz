@@ -1,0 +1,28 @@
+1.4.8 Translating from English into Logical Expressions 
+Translating sentences in English (or other natural languages) into logical 
+expressions is a crucial task in mathematics, logic programming, artificial 
+intelligence, software engineering, and many other disciplines. We will use 
+some examples to illustrate how to translate sentences from English into 
+logical expressions. The goal in this translation is to produce simple and 
+useful logical expressions. In this section, we restrict ourselves to sentences 
+that can be translated into logical expressions using a single quantifier. 
+
+Worked Example 
+Express the statement “Every student in this class has studied calculus” 
+using predicates and quantifiers. 
+Solution: 
+First, we rewrite the statement so that we can clearly identify the 
+appropriate quantifiers to use. Doing so, we obtain: 
+“For every student in this class, that student has studied calculus.” 
+Next, we introduce a variable 𝑥 so that our statement becomes 
+“For every student 𝑥 in this class, 𝑥 has studied calculus.” 
+Continuing, we introduce 𝐶(𝑥), which is the statement “𝑥 has studied 
+calculus.” Consequently, if the domain for 𝑥 consists of the students in the 
+class, we can translate our statement as ∀𝑥𝐶(𝑥). However, there are other 
+correct approaches; different domains of discourse and other predicates 
+can be used. The approach we select depends on the subsequent reasoning 
+we want to carry out. For example, we may be interested in a wider group 
+of people than only those in this class. If we change the domain to consist 
+of all people, we will need to express our statement as: 
+“For every person 𝑥, if person 𝑥 is a student in this class then 𝑥 has studied 
+calculus.” 

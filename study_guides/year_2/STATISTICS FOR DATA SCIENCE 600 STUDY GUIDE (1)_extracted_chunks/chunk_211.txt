@@ -1,0 +1,18 @@
+y are the same as the last chi-square test. Let's set up our hypotheses: 
+• H0: There is no association between two categorical variables in the population of 
+interest. 
+• Ha: There is an association between two categorical variables in the population of 
+interest. 
+ 
+You might notice that we are missing something important here. Where are the expected 
+counts? Earlier, we had a prior distribution to compare our observed results to but now we 
+do not. For this reason, we will have to create some. We can use the following formula to 
+calculate the expected values for each value. In each cell of the table, we can use: 
+Expected Count = (Row Total * Column Total) / Grand Total 
+ 
+To calculate our chi-square test statistic and our degrees of freedom: 
+ 
+• Degrees of Freedom = (Number of Rows - 1) * (Number of Columns - 1) 
+ 
+Here, r is the number of rows and c is the number of columns. Of course, as before, when we 
+calculate our p-value, we will reject the null if that p-value is less th

@@ -1,0 +1,24 @@
+When an operator is found, back up to get the required number of 
+operands, perform the operation, and continue.  
+  
+Consider the following postfix expression:  
+  
+6 3 + 2 * =  
+  
+Let us evaluate this expression using a stack and the previous algorithm. Figure 5-15 shows how this 
+expression gets evaluated.  
+  
+  
+FIGURE 5-15 Evaluating the postfix expression: 6 3 + 2 * =  
+  
+Read the first symbol, 6, which is a number. Push the number onto the stack; see Figure 5-15(a). Read the 
+next symbol, 3, which is a number. Push the number onto the stack; see Figure 5-15(b). Read the next 
+symbol, +, which is an operator. Because an operator requires two operands to be evaluated, pop the 
+
+201  
+  
+stack twice; see Figure 5-15(c). Perform the operation and put the result back onto the stack; see Figure 
+5-15(d).   
+  
+Read the next symbol, 2, which is a number. Push the number onto the stack; see Figure 5-15(e). Read the 
+next symbol, *, which is an operator. Because an operator requires t

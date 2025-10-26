@@ -1,0 +1,26 @@
+Impact Assessment 
+
+Impact assessment is the process of developing some sort of agreed-upon impact score or cost value 
+that estimates the magnitude or the adverse consequence of a successful threat action. 
+The essence of impact assessment is that, for a given threat to a given asset, you determine the impact 
+(cost or relative magnitude of impact) on the asset if the threat were to become an actual security 
+incident. This analysis needs to be repeated for every threat to every asset. 
+ISO 27005 and other ISO documents provide limited guidance on how to perform this function. The 
+FAIR documents note that this is one of the most difficult aspects of risk assessment. FAIR provides 
+detailed guidance on how to systematically characterize impact. This guidance, although clear, is 
+rather complex, so this section provides an overview. 
+FAIR impact analysis depends on two categories of loss, as shown Figure 3.7 and Table 3.10. 
+ 
+Estimating the Primary Loss 
+ 
+For a given threat acting on a given asset, the FAIR impact (referred to as loss in the FAIR documents) 
+assessment begins with determining the primary loss suffered as the result of the event. There are 
+two aspects to this assessment: 
+
+ Asset factors: The value of the asset under threat. 
+ Threat factors: Threat factors that contribute to the loss. 
+
+The magnitude of the loss depends on a number of factors, such as how critical the asset is to the 
+organization, the cost of replacement and/or recovery, and the sensitivity of information that might 
+be disclosed or modified. The process of asset identification, discussed in Section 3.2, feeds into this 
+evaluation.

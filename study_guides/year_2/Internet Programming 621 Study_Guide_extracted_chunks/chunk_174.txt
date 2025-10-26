@@ -1,0 +1,35 @@
+h a variable inside a function, write the word global followed by the variable name inside the 
+function’s code block. Here ’ s an example:  
+  
+$myGlobal = “Hello there!”;  
+  
+function hello() { 
+global $myGlobal;  
+echo “$myGlobal < br/ > ”;  
+}  
+  
+hello(); // Displays “Hello there!”  
+  
+You can see that the hello() function accesses the $myGlobal variable by declaring it to be global 
+using the global statement. The function can then use the variable to display the greeting. In fact, 
+you do not need to have created a variable outside a function to use it as a global variable. Take a 
+look at the following script:  
+  
+function setup() { global 
+$myGlobal; 
+
+85  
+$myGlobal = “Hello 
+there!”;  
+}  
+  
+function hello() { 
+global $myGlobal;  
+echo “$myGlobal < br/ > ”;  
+}  
+  
+setup();  
+hello(); // Displays “Hello there!”  
+  
+In this script, the setup() function is called first. It declares the $myGlobal variable as global, and 
+gives it a value. Then the hello() function is cal

@@ -1,0 +1,21 @@
+(which is the last element of the list). We then obtain the binary 
+tree as shown in Figure 8-48(b).  
+  
+Because the largest element is now in its proper place, we consider the remaining elements of the list, 
+that is, elements list[0]...list[9]. The complete binary tree representing this list is no longer a heap, and so 
+wemust restore the heap in this portion of the complete binary tree. We use the function heapify to 
+restore the heap. A call to this function is as follows:  
+ heapify(list, 0, 9);  
+  
+We thus obtain the binary tree as shown in Figure 8-48(c).  
+  
+We repeat this process for the complete binary tree corresponding to the list elements list[0]...list[9]. We 
+swap list[0] with list[9] and then restore the heap in the complete binary tree corresponding to the list 
+elements list[0]...list[8]. We continue this process.  
+  
+The following C++ function describes this algorithm:  
+  
+template <class elemType>  
+void arrayListType<elemType>::heapSort()  
+{  
+elemType temp;

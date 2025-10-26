@@ -1,0 +1,31 @@
+{  
+copiedTreeRoot = new binaryTreeNode<elemType>; copiedTreeRoot->info 
+= otherTreeRoot->info; copyTree(copiedTreeRoot->llink, otherTreeRoot-
+>llink); copyTree(copiedTreeRoot->rlink, otherTreeRoot->rlink);  
+}  
+} //end copyTree  
+  
+To destroy a binary tree, for each node, first we destroy its left subtree, then its right subtree, and then 
+the node itself. We must use the operator delete to deallocate the memory occupied by each node. The 
+definition of the function destroy is as follows:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::destroy(binaryTreeNode<elemType>* &p)  
+{  
+if (p != NULL)  
+{ destroy(p->llink); 
+destroy(p-
+>rlink); delete p;  
+p = NULL;  
+
+334  
+  
+}  
+}  
+  
+To implement the function destroyTree, we use the function destroy and pass the root node of the binary 
+tree to the function destroy. The definition of the function destroyTree is as follows:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::destroyTree()  
+{ destroy(root);

@@ -1,0 +1,29 @@
+The following lines show how to convert the character array to the correct byte array needed by the 
+FileStream object: 
+ 
+Encoder e = Encoding.UTF8.GetEncoder(); 
+e.GetBytes(charData, 0, charData.Length, byData, 0, true); 
+ 
+This time, an Encoder object is created based on the UTF-8 encoding. You used Unicode for the decod-
+ing as well, and this time you need to encode the character data into the correct byte format before you 
+can write to the stream. The GetBytes() method is where the magic happens. It converts the character 
+array to the byte array. It accepts a character array as the first parameter (charData in this example), 
+and the index to start in that array as the second parameter (0 for the start of the array). The third pa-
+rameter is the number of characters to convert (charData.Length
+ the number of elements in the 
+charData array). The fourth parameter is the byte array to place the data into (byData), and the fifth pa-
+rameter is the index to start writing from in the byte array (0 for the start of the byData array).  
+ 
+The sixth, and final, parameter determines whether the Encoder object should flush its state after com-
+pletion. This reflects the fact that the Encoder object retains an in-memory record of where it was in the 
+byte array. This aids in subsequent calls to the Encoder object but is meaningless when only a single call 
+is made. The final call to the Encoder must set this parameter to true to clear its memory and free the 
+object for garbage collection. 
+ 
+After that, it is a simple matter of writing the byte array to the FileStream by using the Write() method: 
+ 
+aFile.Seek(0, SeekOrigin.Begin); 
+aFile.Write(byData, 0, byData.Length); 
+ 
+Like the Read() method, the Write() method has three parameters: the array to write from, the index in 
+the array to start writing from, and the number of bytes to write. 

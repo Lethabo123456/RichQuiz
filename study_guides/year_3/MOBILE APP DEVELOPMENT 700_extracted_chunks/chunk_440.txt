@@ -1,0 +1,41 @@
+Chapter 6 Access to Hardware and Sensors 
+  
+6.1 Introduction 
+
+Mobile computing devices have hardware features that significantly distinguish them from their more 
+stationary counterparts. Hardware features allow the device to both sense and interact with its 
+environment. These features enable the reexamination of the assumptions many developers make 
+when developing a piece of software. The ability to sense and interact with the environment allows 
+the developer to rethink business processes encapsulated in software. Innovative and powerful 
+approaches to solving problems become possible. This suggests that the app developer needs to have 
+a working knowledge of how to integrate the device’s hardware features into an app. This chapter 
+describes how to integrate hardware sensors that can provide information about the device’s internal 
+and external environment and hardware features, such as the camera and phone, provided by the 
+Android platform that can be used independently or integrated  into an app.  This  chapter also 
+addresses how to determine the presence of a sensor on any specific device. 
+
+6.2 Sensors, Managers, and Other Hardware 
+Four components are required for any list implementation in Android: a RecyclerView widget, an 
+Adapter, a ViewHolder, and a LayoutManager. The RecyclerView widget is an object that can display 
+a vertical list of items that can be scrolled through. In earlier versions of Android, lists were 
+
+Sensors 
+Android devices may have any number of sensors. Two of these, the network and GPS sensors, were 
+discussed in the previous chapter. However, other sensors may also be used in apps. In all, the Android 
+platform supports about twelve sensors. However, there is no requirement that a manufacturer of an 
+Android device include all of them. For this reason, it is good practice to always check for the presence 
+of a sensor before attempting to use it and its supported range from those that measure the device’s 
+ambient environment, including temperature, relative humidity, atmospheric pressure, magnetic 
+field, and light level, to those that detect how the device is moving or rotating. 
+
+The Sensor class represents all types of sensors. Sensors are instantiated as a system service by the 
+operating system and thus are not instantiated by the apps that use them. To use a sensor, the app 
+must access it through the SensorManager class. The SensorManager is also a system service and not 
+instantiated by an app. An app accesses both Sensors and the SensorManager object by creating a 
+reference to them by calling the getSystemService method within an app. 
+Two other items are needed to work with sensors: SensorEvent and SensorEventListener. A 
+SensorEvent is an object that is created by a Sensor when it has something to report. This object holds 
+information about the event, including a time stamp for when the object was created, the sensor that 
+produced the event, and data that represents the sensor’s measurements at the time of the event. A 
+SensorEventListener is an interface that is implemented by any app that wants to use sensor 
+information encapsulated in a SensorEvent. 

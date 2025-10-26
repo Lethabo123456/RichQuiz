@@ -1,0 +1,13 @@
+ite key 
+composed of the combination CRS_CODE and CLASS_SECTION, CLASS could be represented 
+by: CLASS (CRS_CODE, CLASS_SECTION, CLASS_TIME, ROOM_CODE, PROF_NUM) In 
+that case, the CLASS primary key is partially derived from COURSE because CRS_CODE is the 
+COURSE table’s primary key. Given this decision, CLASS is a weak entity. In any case, CLASS 
+is always existence-dependent on COURSE, whether or not it is defined as weak. 
+Relationship Participation 
+Participation in an entity relationship is either optional or mandatory. Recall that relationships are 
+bidirectional; that is, they operate in both directions. If COURSE is related to CLASS, then by 
+definition, CLASS is related to COURSE. Because of the bidirectional nature of relationships, it is 
+necessary to determine the connectivity of the relationship from both directions. Similarly, the 
+specific maximum and minimum cardinalities must be determined in each direction for the 
+relationship. Once again, you must consider the bidir

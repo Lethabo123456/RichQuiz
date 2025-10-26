@@ -1,0 +1,17 @@
+content (meaning) into the ERD. A specialization hierarchy provides 
+the means to:  
+ 
+Support attribute inheritance.  
+ 
+Define a special supertype attribute known as the subtype discriminator.  
+ 
+Define disjoint or overlapping constraints and complete or partial constraints.  
+       The following sections cover such characteristics and constraints in more detail. 
+       Inheritance 
+The property of inheritance enables an entity subtype to inherit the attributes and relationships of 
+the supertype. For example, Figure 5.2 illustrates that pilots, mechanics, and accountants all inherit 
+the employee number, last name, first name, middle initial, and hire date from the EMPLOYEE 
+entity. One important inheritance characteristic is that all entity subtypes inherit their primary key 
+attribute from their supertype. At the implementation level, the supertype and its subtype(s) 
+depicted in the specialization hierarchy maintain a 1:1 relationship.  
+Entity subtypes inherit all relation

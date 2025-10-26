@@ -1,0 +1,27 @@
+\d will search for any 
+string of numerical character. 
+ 
+Following is the list of metacharacters which can be used in PERL Style Regular 
+Expressions. 
+ 
+Character 
+Description 
+.   
+a single character 
+\s                        a whitespace character (space, tab, newline) 
+\S                        non-whitespace character 
+\d                       a digit (0-9) 
+\D                       a non-digit 
+\w                       a word character (a-z, A-Z, 0-9, _) 
+\W                      a non-word character 
+[\b]                     a literal backspace (special case). 
+[aeiou]               matches a single character in the given set 
+[^aeiou]             matches a single character outside the given set 
+(foo|bar|baz)   matches any of the alternatives specified 
+Table 6.19 - Metacharacters 
+6.2.7.5 Modifiers 
+Several modifiers are available that can make your work with regexps much easier, like 
+case sensitivity, searching in multiple lines etc. 
+Modifier Description 
+i 
+Perform case-

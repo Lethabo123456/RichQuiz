@@ -1,0 +1,13 @@
+aximum values: Finding the minimum and maximum values of a list of numbers, while 
+not seemingly ground breaking in terms of stats or ML, is still worthwhile to know. 
+The Collections object will give you access to the methods min and max assuming that the input 
+type is a collection.  
+Sum: The sum, or rather summation, is the addition of a sequence of numbers. The result is a 
+single value of the total. The order of the numbers is not important in summation. For 
+example, the summation of [1, 2, 3, 4] is the same as [3, 1, 4, 2]. With Java, things require a 
+little more thought, as we are dealing with a collection of objects. At this point, we could write 
+a method to get the sum for us, iterating each value in the collection and adding to the 
+accumulative total. An alternative would be to use the Arrays class and use 
+the stream() method. Be aware that this method uses only primitive arrays as it's input, so 
+you need to convert the List first.                              
+Mean: T

@@ -1,0 +1,63 @@
+Be Displayed 
+ANS: C 
+ 
+
+IP 621  
+86. Which of the following cases is a correct way to write a case for a switch statement? 
+A. case “Mark”; 
+B. case “Mark”:: 
+C. case “Mark”: 
+D. case “Mark”{ 
+ANS: C 
+ 
+87. The default case is executed if all the other cases for a switch statement evaluate to false? 
+A. True 
+B. False 
+ANS: A 
+ 
+88. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $variable = 2; 
+ 
+   switch ($variable) { 
+ 
+       case 1: 
+ 
+           echo "Hello World"; 
+ 
+           break; 
+ 
+       default: 
+ 
+           echo "Hello Channel"; 
+ 
+           break; 
+ 
+   } 
+?> 
+ 
+
+IP 621  
+A. Hello World 
+B. Hello Channel 
+C. Nothing Will Be Displayed 
+D. $variable 
+ANS: B 
+ 
+89. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $variable = 1; 
+ 
+   switch ($variable) { 
+ 
+       case 1: 
+ 
+           echo "Hello World"; 
+ 
+       default: 
+ 
+           echo "Hello Channel"; 
+ 
+           break;

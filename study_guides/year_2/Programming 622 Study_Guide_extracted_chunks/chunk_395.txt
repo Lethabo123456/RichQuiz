@@ -1,0 +1,12 @@
+learned in elementary school) is 
+called infix notation, in which the operator is written between the operands. For example, in the 
+expression a + b, the operator + is between the operands a and b. In infix notation, the operators have 
+precedence. That is, we must evaluate expressions from left to right, and multiplication and division have 
+higher precedence than addition and subtraction. If we want to evaluate the expression in a different 
+order, we must include parentheses. For example, in the expression a + b * c, we first evaluate * using the 
+operands b and c, and then we evaluate + using the operand a and the result of b * c.  
+  
+In the early 1920s, the Polish mathematician Jan Lukasiewicz discovered that if operators were written 
+before the operands (prefix or Polish notation; for example, + a b), the parentheses can be omitted. In the 
+late 1950s, the Australian philosopher and early computer scientist Charles L. Hamblin proposed a scheme 
+in which the operators follow t

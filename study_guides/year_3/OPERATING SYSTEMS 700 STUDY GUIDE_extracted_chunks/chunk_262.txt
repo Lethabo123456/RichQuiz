@@ -1,0 +1,50 @@
+7.7. File Management 
+Typically, an operating system is associated with the file structure that it uses for mass storage devices, 
+such as hard disks. Although there is a resident NTFS, current versions of Windows are designed to be 
+independent of the file system on which they operate. 
+In recent versions of Windows, the primary file-handling concept is the virtual file, introduced with 
+UNIX. This includes any I/O source or destination, and it’s treated as if it were a file. In Windows, 
+programs perform I/O on virtual files, manipulating them by using file handles. Although not a new 
+concept, in Windows, a file handle refers to an executive file object that represents all sources and 
+destinations of I/O. Processes call native file object services, such as those required to read from or 
+write to a file. The I/O Manager directs these virtual file requests to real files, file directories, physical 
+devices, or any other destination supported by the system. File objects have hierarchical names, are 
+
+protected by object-based security, support synchronization, and are handled by object services. 
+When opening a file, a process supplies the file’s name, and the type of access required. This request 
+moves to an environment subsystem that, in turn, calls a system service. The Object Manager starts 
+an object name lookup and turns control over to the I/O Manager to find the file object. The I/O 
+Manager checks the security subsystem to determine whether access can be granted. The I/O 
+Manager also uses the file object to determine whether asynchronous I/O operations are required. 
+The creation of file objects helps bridge the gap between the characteristics of physical devices and 
+directory structures, file system structures, and data formats. File objects provide a memory-based 
+representation of shareable physical resources. When a file is opened, the I/O Manager returns a 
+handle to a file object. The Object Manager treats file objects like all other objects until the time 
+comes to write to or read from a device, at which point the Object Manager calls the I/O Manager for 
+assistance to access the device. Figure 7.3 illustrates the contents of file objects and the services that 
+operate on them. 
+
+File    
+
+Filename Device 
+Type Byte Offset 
+Share Mode 
+Open Mode 
+File Disposition 
+Create File 
+Open File 
+Read File 
+Write File 
+Query File Information 
+Set File Information 
+Query Extended Attributes 
+Set Extended Attributes 
+Lock Byte Range 
+Unlock Byte Range 
+Cancel I/O 
+Flush Buffers 
+Query Directory File 
+Notify Caller When Directory Changes 
+Get Volume Information 
+Set Volume Information 
+Figure 7.3 

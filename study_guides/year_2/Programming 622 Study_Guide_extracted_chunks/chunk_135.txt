@@ -1,0 +1,11 @@
+look at operations that are common to all 
+containers. For example, every container class has a default constructor, several constructors with 
+parameters, a destructor, a function to insert an element into a container, and so on.  
+  
+Recall that a class encapsulates data, and operations on that data, into a single unit. Because every 
+container is a class, several operations are directly defined for a container and are provided as part of the 
+class definition. Also, recall that the operations to manipulate the data are implemented with the help of 
+functions and are called member functions of the class. Table 2-5 describes the member functions that 
+are common to all containers; that is, these functions are included as members of the class template 
+implementing the container. Suppose that ct, ct1, and ct2 are containers of the same type. Table 2-5 
+shows the name of the function in bold, and shows how a function is called.

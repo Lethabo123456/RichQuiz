@@ -1,0 +1,35 @@
+Create the Toolbar 
+The toolbar consists of a LinearLayout positioned at the top of the root layout, a ToggleButton to 
+switch between editing and viewing modes, and a button to allow the user to save changes to the 
+contact’s information. 
+
+1. Open activity_main.xml if it is not already open. Switch to Design view and drag a LinearLayout 
+(horizontal) to the screen. Don’t worry about its position, but do not put it on the navigation 
+bar. 
+2. Drag a ToggleButton from the Buttons folder on the Palette to the new LinearLayout in the 
+Blueprint or Design view. 
+3. Drag a button from the Palette to the right of the ToggleButton. 
+4. Click on the new LinearLayout in the Blueprint or Component Tree views. Click the top, left, and 
+right buttons on the Layout diagram in the Attributes panel. Change all values from 8 to 0. 
+Change the layout_height attribute’s value to wrap_content and the layout_width attribute to 
+0dp. 
+5. Click on the ToggleButton and find layout_margin in All Attibutes. Expand it and enter 16dp for 
+layout_marginLeft and 32dp for layout_marginRight. Change its id to toggleButtonEdit. 
+6. Click on the button, and repeat the previous step except reverse the values using 16 for right 
+and 32 for left. Also change the text attribute to Save. Change its id to buttonSave. 
+7. Create another color resource for the toolbar’s background. Double-click the colors.xml file in 
+the  values  folder.  Add  the  color  resource  with  the  name  toolbar_background  and  value 
+#bebebe. Close the color resource file. Click on the LinearLayout and change its background 
+attribute to use the new color. 
+Both the ToggleButton and the Button will have warning triangles in the Component Tree. There are 
+several issues that could be corrected. Of the most importance is adding layout_marginStart and 
+layout_marginEnd to the XML to allow the app to layout properly in Right to Left layouts. Click on the 
+warning, scroll down, and use the Fix button to correct these. You may also want to create string 
+resources to eliminate the hard-coded text warning. Use the Fix button to do this. 
+Switch to Design view. The toolbar should appear at the top of the screen with a gray background (see 
+Figure 4.6). Note that you may get a Rendering problem (Path.isConvex is not supported) now when 
+you switch to Design view. This is caused by the ToggleButton. At runtime 
+it will have rounded corners, but that is not supported in Design view. 
+Click Ignore for this session if it occurs. 
+
+Figure 4.6 Complete toolbar layout 

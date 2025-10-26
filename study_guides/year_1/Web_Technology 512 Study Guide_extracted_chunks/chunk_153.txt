@@ -1,0 +1,34 @@
+were in a <font size="size"> tag. 
+italics()  
+Causes a string to be italic, as if it were in an <i> tag. 
+link() 
+Creates an HTML hypertext link that requests another URL. 
+small()  
+Causes a string to be displayed in a small font, as if it were in a 
+<small> tag. 
+strike() 
+Causes a string to be displayed as struck-out text, as if it were in a 
+<strike> tag. 
+sub() 
+Causes a string to be displayed as a subscript, as if it were in a 
+<sub> tag 
+sup() 
+Causes a string to be displayed as a superscript, as if it were in a 
+<sup> tag 
+Table 6.7 – The String HTML wrappers 
+ 
+6.2.4 The Arrays Object 
+The Array object lets you store multiple values in a single variable. 
+
+ 
+97 
+ 
+SIX | JAVASCRIPT OBJECTS 
+ 
+Syntax: 
+Creating an Array object: 
+var fruits = new Array( "apple", "orange", "mango" ); 
+ 
+The Array parameter is a list of strings or integers. When you specify a single numeric 
+parameter with the Array constructor, you specify the initial length of the array. The 
+maximum length all

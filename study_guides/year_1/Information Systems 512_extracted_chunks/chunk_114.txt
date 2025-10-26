@@ -1,0 +1,17 @@
+ransmit data 
+over the network. Only one token exists per network. This ensures that only one computer 
+transmits data at a time. 
+ TCP/IP 
+Short for Transmission Control Protocol/Internet Protocol, TCP/IP is a network protocol that 
+defines how messages (data) are routed from one end of a network to the other, ensuring the 
+data arrives correctly. TCP/IP describes rules for dividing messages into small pieces, called 
+packets; providing addresses for each packet; checking for and detecting errors; sequencing 
+packets; and regulating the flow of messages along the network. 
+
+Page 70 of 117 
+ 
+TCP/IP has been adopted as the network standard for Internet communications. When a 
+computer sends data over the Internet, the data is divided into packets. Each packet contains 
+the data, as well as the recipient (destination), the origin (sender), and the sequence 
+information used to reassemble the data at the destination.  
+When a computer sends data over the Internet, the data is divided in

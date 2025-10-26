@@ -1,0 +1,26 @@
+3.2 Left and Right Hand Limits 
+The previous example shows that the value a can be approached from both 
+the left and right sides. Each side has its own limit. For example, as 𝑥 
+approaches a from the right side we have lim𝑥→𝑎+ 𝑓(𝑥) and as 𝑥 approaches a from the left we have lim𝑥→𝑎−𝑓(𝑥)
+
+The graph below shows an example of a function with different right and left 
+hand limits at the point 𝑥 = 1. As 𝑥 approaches 1 from the left side, the limit of 
+𝑓(𝑥) approaches 1. As 𝑥 approaches 1 from the right side however, the limit 
+of 𝑓(𝑥) approaches 4. In this case, the limit of 𝑓(𝑥)  as 𝑥 approaches 1 does 
+not exist, because the left and right hand limits do not approach the same 
+value.  
+ 
+Figure 3.2 
+
+This idea leads to the following theorem: 
+If lim𝑥→𝑎∓𝑓(𝑥) ≠ lim𝑥→𝑎− 𝑓(𝑥) then lim𝑥→𝑎 𝑓(𝑥) does not exist 
+
+For the limit to exist, the left and right hand limits must approach the same 
+value. In our example, as 𝑥 approaches 3, the left and right hand limits both 
+approach a value of 4. Since the left and right hand limits are the same, the 
+limit of 𝑓(𝑥) as 𝑥 approaches 3 exists and is equal to 4. Even though the actual 
+value of 𝑓(3) is equal to 2, the limit is equal to 4. This gives the following 
+theorem:  
+
+lim𝑥→𝑎 𝑓(𝑥) = 𝐿 if and only if lim𝑥→𝑎∓ 𝑓(𝑥) = lim𝑥→𝑎− 𝑓(𝑥) = 𝐿
+                         

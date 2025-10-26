@@ -1,0 +1,38 @@
+onfiguration();  
+//Function to output an n-tuple containing a solution //to 
+the n-queens puzzle.  
+  
+int solutionsCount();  
+//Function to return the total number of solutions.  
+//Postcondition: The value of noOfSolution is returned.  
+  
+private: int 
+noOfSolutions; 
+int noOfQueens;  
+int *queensInRow;  
+};  
+  
+
+167  
+  
+The definitions of the member functions of the class nQueensPuzzle are given next:  
+  
+nQueensPuzzle::nQueensPuzzle(int queens)  
+{  
+noOfQueens = queens;  
+queensInRow = new int[noOfQueens];  
+noOfSolutions = 0;  
+}  
+  
+bool nQueensPuzzle::canPlaceQueen(int k, int i)  
+{  
+for (int j = 0; j < k; j++) if 
+((queensInRow[j] == i)  
+|| (abs(queensInRow[j] - i) == abs(j-k))) return 
+false;  
+return true;  
+}  
+  
+Using recursion, the function queensConfiguration implements the backtracking technique to determine 
+all solutions to the n-queens puzzle. The parameter k specifies the queen to be placed in the kth row. Its 
+definition is straightforward and is given nex

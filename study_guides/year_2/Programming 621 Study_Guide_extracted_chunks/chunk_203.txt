@@ -1,0 +1,27 @@
+type clockType. The member function setTime 
+is a void function and has three parameters. Therefore:  
+ 
+ A call to this function is a stand-alone statement. 
+ We must use three parameters in a call to this function. 
+ 
+Furthermore, recall that because setTime is a member of the class clockType, it can 
+directly access the member variables hr, min, and sec, as shown in the definition of 
+setTime. 
+ 
+The object myClock has three member variables, as shown in Figure (a) below 
+ 
+ 
+Consider the following statement:  
+
+181 | P a g e  
+ 
+ 
+myClock.setTime(3, 48, 52);  
+ 
+Now the function setTime is called with parameters 3, 48, and 52. So the values of 
+the formal parameters hours, minutes, and seconds of the function setTime are 3, 48, 
+and 52, respectively. 
+ 
+Next, in the statement myClock.setTime(3, 48, 52);, setTime is accessed by the object 
+myClock. Therefore, the three variables—hr, min, and sec—referred to in the body of 
+the function setTime are the three member variables of my

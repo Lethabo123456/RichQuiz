@@ -1,0 +1,38 @@
+4.3 COMMENTS 
+In HTML a comment (or comments) is information a designer can add to the HTML 
+source code for reference. Comments are not viewed by the user or displayed on the 
+web browser, but only when viewing the HTML source code. HTML allows you to add 
+comments within the code to help the reader better understand the code. To add a 
+comment to the code for a page, use the following code: 
+
+Adding comments 
+Here’s how                               Here’s why 
+----------------------------------------------------------------------------
+Open the source code                     You’ll add comments in this code.
+----------------------------------------------------------------------------
+Place the insertion point as shown       </HEAD>
+
+                                         <BODY>
+----------------------------------------------------------------------------
+Enter the following code: 
+----------------------------------------------------------------------------
+<!--Contents of the page-->              To add a comment in the code.
+----------------------------------------------------------------------------
+Update and close the source code
+----------------------------------------------------------------------------
+Refresh and observe the page             The text enclosed within the comment 
+                                         tag does not appear on 
+                                         the page. 
+ 
+ 
+4.4 CHARACTER ENTITIES  
+You might want to display certain characters like the copyright symbol (©), registered 
+trademark symbol (®), or a blank space on your Web page. You cannot type these 
+characters in the code because these are special characters that have a specific function 
+in HTML. However, you can use character entities to insert these characters in your 
+page. The following table displays the character entities for some commonly used characters. 
+ 
+The ampersand (&) indicates the beginning and the semi-colon (;) indicates the end 
+of a character entity. 
+ 
+ 

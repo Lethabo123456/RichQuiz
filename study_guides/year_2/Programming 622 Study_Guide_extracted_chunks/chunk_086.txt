@@ -1,0 +1,16 @@
+as function values.  
+As parameters to functions, class objects can be passed either by value or by reference.  
+If a class object is passed by value, the contents of the instance variables of the actual parameter 
+are copied into the corresponding instance variables of the formal parameter.  
+  
+1.4.10 Constructors and Default Parameters  
+  
+A constructor can also have default parameters. In such a case, the rules for declaring formal parameters 
+are the same as those for declaring default formal parameters in a function. Moreover, actual parameters 
+to a constructor with default parameters are passed according to the rules for functions with default 
+parameters. Using the rules for defining default parameters, in the definition of the class clockType, you 
+can replace both constructors using the following statement. (Notice that in the function prototype, the 
+name of a formal parameter is optional.)  
+ clockType clockType(int = 0, int = 0, int = 0);  //Line 1  
+  
+In the implement

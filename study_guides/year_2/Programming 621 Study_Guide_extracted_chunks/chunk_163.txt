@@ -1,0 +1,26 @@
+atement in Line 11 declares and initializes board to be a two 
+dimensional array of six rows and five columns. The statement in Line 12 uses the 
+function printMatrix to output the elements of board (see the first six lines of the Sample 
+Run). The statement in Line 14 uses the function sumRows to calculate and print the 
+sum of each row. The statement in Line 16 uses the function largestInRows to find 
+and print the largest element in each row. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5.3 POINTERS 
+The values belonging to pointer data types are the memory addresses of your 
+computer. As in many other languages, there is no name associated with the pointer 
+data type in C11. Because the domain—that is, the set of values of a pointer data 
+type—is the addresses (locations) in memory, a pointer variable is a variable whose 
+content is an address, that is, a memory location and the pointer variable is said to 
+point to that memory location. 
+ 
+Pointer variable: A variable whose content is an address (that

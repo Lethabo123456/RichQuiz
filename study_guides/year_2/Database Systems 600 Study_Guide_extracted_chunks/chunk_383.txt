@@ -1,0 +1,12 @@
+ralized design might be used when the system’s data 
+component has a considerable number of entities and complex relations on which very complex 
+operations are performed. Decentralized design is also often used when the problem itself is spread 
+across several operational sites and each element is a subset of the entire data set.  
+In large and complex projects, the database typically cannot be designed by only one person. 
+Instead, a carefully selected team of database designers tackles a complex data-base project. Within 
+the decentralized design framework, the database design task is divided into several modules. Once 
+the design criteria have been established, the lead designer assigns design subsets or modules to 
+design groups within the team. 
+Because each design group focuses on modelling a subset of the system, the definition of boundaries 
+and the interrelation among data subsets must be very precise. Each design group creates a 
+conceptual data model corresponding to the su

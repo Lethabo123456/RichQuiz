@@ -1,0 +1,25 @@
+1.6.4 Proof by Contraposition 
+
+Direct proofs lead from the premises of a theorem to the conclusion. They 
+begin with the premises, continue with a sequence of deductions, and end 
+with the conclusion. However, we will see that attempts at direct proofs 
+often reach dead ends. We need other methods of proving theorems of the 
+form ∀𝑥(𝑃(𝑥) → 𝑄(𝑥)). Proofs of theorems of this type that are not direct 
+proofs, that is, that do not start with the premises and end with the 
+conclusion, are called indirect proofs. 
+
+An extremely useful type of indirect proof is known as proof by 
+contraposition. Proofs by contraposition make use of the fact that the 
+conditional statement 𝑝 → 𝑞 is equivalent to its contrapositive,￢𝑞 →￢𝑝. 
+
+
+Worked Example 
+Give a direct proof of the theorem “If 𝑛 is an odd integer, the 𝑛2 is odd.” 
+Solution: 
+Note that this theorem states ∀nP ((n) → Q(n)), where P(n) is “n is an odd 
+integer” and Q(n)  
+is “n2 is odd.” As we have said, we will follow the 
+usual convention in mathematical proofs  
+by showing that P(n) implies 
+Q(n), and not explicitly using universal instantiation. 
+ 

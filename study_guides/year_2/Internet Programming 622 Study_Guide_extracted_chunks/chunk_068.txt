@@ -1,0 +1,16 @@
+p setChecked( “gender”, “F” )?> />   
+               <label for=”favoriteWidget”>What’s your favorite widget? *</label>   
+                            <select name=”favoriteWidget” id=”favoriteWidget” size=”1”>   
+           <option value=”superWidget”<?php setSelected( “favoriteWidget”,   
+                         “superWidget” ) ?>>The SuperWidget</option>   
+         <option value=”megaWidget”<?php setSelected( “favoriteWidget”,   
+                        “megaWidget” ) ?>>The MegaWidget</option>   
+          <option value=”wonderWidget”<?php setSelected( “favoriteWidget”,   
+                        “wonderWidget” ) ?>>The WonderWidget</option>    
+</select>   
+ <label for=”newsletter”>Do you want to receive our newsletter?   
+</label>   
+<input type=”checkbox” name=”newsletter” id=”newsletter” value=”yes”   
+<?php setChecked( “newsletter”, “yes” ) ?> />   
+<label for=”comments”>Any comments?</label>   
+<textarea name=”comments” id=”comments” rows=”4” cols=”50”><?php setValue( “comm

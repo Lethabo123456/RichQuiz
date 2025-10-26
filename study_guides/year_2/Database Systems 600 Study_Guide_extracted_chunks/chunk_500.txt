@@ -1,0 +1,18 @@
+nagement, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Sixteen, page 757-761. 
+
+ 
+203 
+The data dictionary’s main function is to store the description of all objects that interact with the 
+database. Integrated data dictionaries tend to limit their metadata to the data managed by the DBMS. 
+Standalone data dictionary systems are usually more flexible and allow the DBA to describe and 
+manage all of the organization’s data, whether they are computerized or not. Whatever the data 
+dictionary’s format, it provides database designers and end users with a much-improved ability to 
+communicate. In addition, the data dictionary is the tool that helps the DBA resolve data conflicts. 
+Although there is no standard format for the information stored in the data dictionary, several 
+features are common. For example, the data dictionary typically stores descriptions of the 
+following: 
+ 
+Data elements that are defined in all tables of all databases 
+ 
+Tables defined in all databases.

@@ -1,0 +1,22 @@
+when 
+you organize data in an array.  
+  
+This chapter helps you to overcome some of these problems. This chapter uses pointers to organize and 
+process data in lists, called linked lists. Recall that when data is stored in an array, memory for the 
+components of the array is contiguous—that is, the blocks are allocated one after the other.However, as 
+we will see, the components (called nodes) of a linked list need not be contiguous.  
+  
+ 
+3.1  
+Linked Lists  
+  
+A linked list is a collection of components, called nodes. Every node (except the last node) contains the 
+address of the next node. Thus, every node in a linked list has two components: one to store the relevant 
+information (that is, data) and one to store the address, called the link, of the next node in the list. The 
+address of the first node in the list is stored in a separate location, called the head or first. Figure 3-1 is a 
+pictorial representation of a node.  
+  
+  
+FIGURE 3-1 Structure of a node  
+  
+Linked lis

@@ -1,0 +1,21 @@
+If you later decide that you want the screen title size to be different 
+(e.g., <dimen name=“screen_title_size”>24sp</dimen>), you only have to change the value in the dimens.xml file 
+and it automatically applies the new size to all titles that use that dimension. Some values folders may 
+have a dash and number or other information and are for values to be used for specific versions of the 
+Android operating system. (Note: These may not be in new apps.) This enables the developer to take 
+advantage of different OS capabilities within the same app. Some common values files are described 
+as follows:
+ 
+dimens.xml—values for the display size of items in a layout color.xml—values for the displayed color of item in a layout 
+strings.xml—values for text array.xml—defines string arrays and the values in those arrays 
+ids.xml—IDs that cannot be reused by items in layouts styles.xml— defines a look and format for layouts or app as a whole 
+
+2.3 The Android Manifest 
+ 
+The final item in the Project window that we will examine is the AndroidManifest.xml 
+file, which is significant for several reasons. The manifest 
+file is in the manifests folder. The  manifest  is  used  to 
+configure the whole app and tell the device it is installed on 
+what it can and should be able to do. You can open it by 
+double-clicking AndroidManifest.xml in the left sidebar. The manifest will 
+be displayed in the editor. 

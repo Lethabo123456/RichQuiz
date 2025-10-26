@@ -1,0 +1,274 @@
+4.6.4 Extending Interfaces 
+It is possible to extend an existing interface to add new methods or members, or to modify 
+how existing members work. For example, you might extend ISedan with a new interface, 
+IExecutive, which extends the original ISedan interface with methods to count seats: 
+interface IExecutive : ISedan 
+{ 
+void CountSeats() 
+} 
+Classes are now free to implement either ISedan or IExecutive, depending on whether they 
+need the additional functionality. If a class does implement IExecutive, it must implement all 
+the methods of both ISedan and IExecutive,  . Objects of that type can be cast either to ISedan 
+or IExecutive.  
+ 
+Similarly, you can create new interfaces by combining existing interfaces, and, optionally, 
+adding new methods or properties. The new interface will implement all methods and 
+properties from the base interface. 
+ 
+interface Irental : ISedan,ICoupe 
+{ 
+void CountSpareWheels() 
+void Drivers() 
+ 
+} 
+
+Example 4-10 Extending and combining interfaces 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.Threading; 
+namespace Examples 
+{ 
+interface IStorable 
+{ 
+void Read(); 
+void Write(object obj); 
+int Status { get; set; } 
+} 
+// here's the new interface 
+interface ICompressible 
+{ 
+void Compress(); 
+void Decompress(); 
+} 
+// Extend the interface 
+interface ILoggedCompressible : ICompressible 
+{ 
+void LogSavedBytes(); 
+} 
+// Combine Interfaces 
+interface 
+IStorableCompressible 
+: 
+IStorable, 
+ILoggedCompressible 
+{ 
+void LogOriginalSize(); 
+} 
+// yet another interface 
+
+interface IEncryptable 
+{ 
+void Encrypt(); 
+void Decrypt(); 
+} 
+public class Document : IStorableCompressible, IEncryptable 
+{ 
+// the document constructor 
+public Document(string s) 
+{ 
+Console.WriteLine("Creating document with: {0}", s); 
+} 
+// implement IStorable 
+public void Read() 
+{ 
+Console.WriteLine( 
+"Implementing the Read Method for IStorable"); 
+} 
+public void Write(object o) 
+{ 
+Console.WriteLine( 
+"Implementing the Write Method for IStorable"); 
+} 
+public int Status 
+{ 
+get 
+{ 
+return status; 
+} 
+set 
+{ 
+status = value; 
+} 
+
+} 
+// implement ICompressible 
+public void Compress() 
+{ 
+Console.WriteLine("Implementing Compress"); 
+} 
+public void Decompress() 
+{ 
+Console.WriteLine("Implementing Decompress"); 
+} 
+// implement ILoggedCompressible 
+public void LogSavedBytes() 
+{ 
+Console.WriteLine("Implementing LogSavedBytes"); 
+} 
+// implement IStorableCompressible 
+public void LogOriginalSize() 
+{ 
+Console.WriteLine("Implementing LogOriginalSize"); 
+} 
+// implement IEncryptable 
+public void Encrypt() 
+{ 
+Console.WriteLine("Implementing Encrypt"); 
+} 
+public void Decrypt() 
+{ 
+Console.WriteLine("Implementing Decrypt"); 
+} 
+// hold the data for IStorable's Status property 
+private int status = 0; 
+} 
+public class Tester 
+Console.WriteLine("Implementing Compress"); 
+} 
+public void Decompress() 
+{ 
+Console.WriteLine("Implementing Decompress"); 
+} 
+// implement ILoggedCompressible 
+public void LogSavedBytes() 
+{ 
+Console.WriteLine("Implementing LogSavedBytes"); 
+} 
+// implement IStorableCompressible 
+public void LogOriginalSize() 
+{ 
+Console.WriteLine("Implementing LogOriginalSize"); 
+} 
+// implement IEncryptable 
+public void Encrypt() 
+{ 
+Console.WriteLine("Implementing Encrypt"); 
+} 
+public void Decrypt() 
+{ 
+Console.WriteLine("Implementing Decrypt"); 
+} 
+// hold the data for IStorable's Status property 
+private int status = 0; 
+} 
+public class Tester 
+Console.WriteLine("Implementing Compress"); 
+} 
+public void Decompress() 
+{ 
+Console.WriteLine("Implementing Decompress"); 
+} 
+// implement ILoggedCompressible 
+public void LogSavedBytes() 
+{ 
+Console.WriteLine("Implementing LogSavedBytes"); 
+} 
+// implement IStorableCompressible 
+public void LogOriginalSize() 
+{ 
+Console.WriteLine("Implementing LogOriginalSize"); 
+} 
+// implement IEncryptable 
+public void Encrypt() 
+{ 
+Console.WriteLine("Implementing Encrypt"); 
+} 
+public void Decrypt() 
+{ 
+Console.WriteLine("Implementing Decrypt"); 
+} 
+// hold the data for IStorable's Status property 
+private int status = 0; 
+} 
+public class Tester 
+Console.WriteLine("Implementing Compress"); 
+} 
+public void Decompress() 
+{ 
+Console.WriteLine("Implementing Decompress"); 
+} 
+// implement ILoggedCompressible 
+public void LogSavedBytes() 
+{ 
+Console.WriteLine("Implementing LogSavedBytes"); 
+} 
+// implement IStorableCompressible 
+public void LogOriginalSize() 
+{ 
+Console.WriteLine("Implementing LogOriginalSize"); 
+} 
+// implement IEncryptable 
+public void Encrypt() 
+{ 
+Console.WriteLine("Implementing Encrypt"); 
+} 
+public void Decrypt() 
+{ 
+Console.WriteLine("Implementing Decrypt"); 
+} 
+// hold the data for IStorable's Status property 
+private int status = 0; 
+} 
+public class Tester 
+static void Main() 
+{ 
+// create a document object 
+Document doc = new Document("Test Document"); 
+// cast the document to the various interfaces 
+IStorable isDoc = doc as IStorable; 
+if (isDoc != null) 
+{ 
+isDoc.Read(); 
+} 
+else 
+Console.WriteLine("IStorable not supported"); 
+ICompressible icDoc = doc as ICompressible; 
+if (icDoc != null) 
+{ 
+icDoc.Compress(); 
+} 
+else 
+Console.WriteLine("Compressible not supported"); 
+ILoggedCompressible ilcDoc = doc as ILoggedCompressible; 
+if (ilcDoc != null) 
+{ 
+ilcDoc.LogSavedBytes(); 
+ilcDoc.Compress(); 
+// ilcDoc.Read( ); 
+} 
+else 
+Console.WriteLine("LoggedCompressible not supported"); 
+IStorableCompressible isc = doc as IStorableCompressible; 
+if (isc != null) 
+{ 
+isc.LogOriginalSize(); // IStorableCompressible 
+isc.LogSavedBytes(); // ILoggedCompressible 
+isc.Compress(); // ICompressible 
+isc.Read(); // IStorable 
+} 
+else 
+{ 
+Console.WriteLine("StorableCompressible not supported"); 
+} 
+IEncryptable ie = doc as IEncryptable; 
+if (ie != null) 
+{ 
+ie.Encrypt(); 
+} 
+else 
+Console.WriteLine("Encryptable not supported"); 
+} 
+} 
+} 
+OUTPUT: 
+
+Example starts by implementing the IStorable interface and the ICompressible interface. The 
+latter is extended to ILoggedCompressible and then the two are combined into 
+IStorableCompressible. Finally, the example adds a new interface, IEncryptable. The Tester 
+program creates a new Document object and then casts it to the various interfaces. When the 
+object is cast to ILoggedCompressible, you can use the interface to call methods on 
+Icompressible because ILoggedCompressible extends (and thus subsumes) the methods from 
+the base interface: 

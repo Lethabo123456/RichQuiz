@@ -1,0 +1,18 @@
+e. The definition of the function createWeightedGraph is also left as an exercise for you. Next, we 
+describe the shortest path algorithm.  
+  
+10.7.1 Shortest Path  
+  
+Given a vertex, say vertex (that is, a source), this section describes the shortest path algorithm. The general 
+algorithm is as follows:  
+  
+1. Initialize the array smallestWeight so that  smallestWeight[u] = weights[vertex, u]  
+2. Set smallestWeight[vertex] = 0.  
+3. Find the vertex v that is closest to vertex for which the shortest path has not been determined.  
+4. Mark v as the (next) vertex for which the smallest weight is found.  
+5. For each vertex w in G, such that the shortest path from vertex to w has not been determined  and   
+an edge (v, w) exists, if the weight of the path to w via v is smaller than its current weight, update the 
+weight of w to the weight of v + the weight of the edge (v, w).  
+  
+Because there are n vertices, Steps 3 through 5 are repeated n - 1 times. Example 10-5 illustrates the 
+s

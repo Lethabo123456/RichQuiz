@@ -1,0 +1,34 @@
+Example 1.7  Conditional Statements 
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int valueOne = 10; 
+int valueTwo = 20; 
+if (valueOne > valueTwo) 
+Console.WriteLine("ValueOne: {0} larger than ValueTwo: {1} 
+",valueOne,valueTwo); 
+} 
+else{ 
+Console.WriteLine("ValueTwo: {0} larger than ValueOne: {1} ", 
+valueTwo
+valueOne);
+ 
+In Example 1-7, the first if statement tests whether valueOne is greater than valueTwo. The 
+relational operators such as greater than (>), less than (<), and equal to (==) are fairly intuitive 
+to use. The test of whether valueOne is greater than valueTwo evaluates false (because 
+valueOne is 10 and valueTwo is 20, so valueOne is not greater than valueTwo). The else 
+statement is invoked, printing the statement: 
+ValueTwo: 20 is larger than ValueOne: 10 
+The second if statement evaluates true and all the statements in the if block are evaluated, 
+causing two lines to print: 
+Setting valueTwo to valueOne value and incrementing ValueOne. 
+ValueOne: 31 ValueTwo: 30 

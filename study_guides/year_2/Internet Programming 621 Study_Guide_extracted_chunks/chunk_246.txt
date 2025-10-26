@@ -1,0 +1,33 @@
+Error 
+d) Array ( [1] => apple [0] => mango [3] => peach [2] => pear ) 
+  
+Answer: a 
+  
+84. What will be the output of the following PHP code? 
+<?php 
+$arr = array ("picture1.JPG", "picture2.jpg", 
+"Picture10.jpg", "picture20.jpg"); 
+sort($arr); 
+print_r($arr); 
+?> 
+  
+a) Array ( [0] => picture1.JPG [1] => Picture10.jpg [2] => picture2.jpg [3] => picture20.jpg ) 
+b) Array ( [0] => picture1.JPG [1] => picture2.jpg [2] => Picture10.jpg [3] => picture20.jpg ) 
+c) Array ( [0] => Picture10.jpg [1] => picture1.JPG [2] => picture2.jpg [3] => picture20.jpg ) 
+d) Array ( [0] => Picture10.jpg [1] => picture1.JPG [2] => picture20.jpg [3] => picture2.jpg ) 
+  
+Answer: c 
+  
+85. Say in the above question you need to get the array sorted in the manner we humans would 
+have done it i.e picture1 then picture2 etc.. Which of the following function should be used? 
+a) dsort() 
+b) casesort() 
+c) natcasesort() 
+d) naturalsort() 
+  
+Answer: c 
+ 
+ 
+ 
+
+86. What will be the output of the following PHP code?

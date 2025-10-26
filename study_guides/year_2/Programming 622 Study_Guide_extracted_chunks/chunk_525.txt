@@ -1,0 +1,24 @@
+lass elemType>  
+class orderedLinkedListType: public linkedListType<elemType>  
+{  
+public:  
+...  
+}  
+  
+ 
+7.1.3  Binary Search  
+  
+
+260  
+  
+As you can see, the sequential search is not efficient for large lists because, on average, the sequential 
+search searches half the list. We therefore describe another search algorithm, called the binary search, 
+which is very fast. However, a binary search can be performed only on ordered lists. We, therefore, 
+assume that the list is ordered. In the next chapter, we describe several sorting algorithms.  
+  
+The binary search algorithm uses the divide-and-conquer technique to search the list. First, the search 
+item is compared with the middle element of the list. If the search item is found, the search terminates. 
+If the search item is less than the middle element of the list, we restrict the search to the first half of the 
+list; otherwise, we search the second half of the list.  
+  
+Consider the sorted list of length = 12 in Figure 7-1.

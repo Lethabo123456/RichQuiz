@@ -1,0 +1,17 @@
+e 
+detected during program execution. 
+2. The try/catch block is used to handle exceptions within a program. 
+3. Statements that may generate an exception are placed in a try block. The 
+try block also contains statements that should not be executed if an 
+exception occurs. 
+4. If no exceptions are thrown in a try block, all catch blocks associated with 
+that try block are ignored and program execution resumes after the last 
+catch block. 
+5. If an exception is thrown in a try block, the remaining statements in the 
+try block are ignored. The program searches the catch blocks, in the order 
+they appear after the try block, and looks for an appropriate exception 
+handler. If the type of the thrown exception matches the parameter type 
+in one of the catch blocks, then the code in that catch block executes and 
+the remaining catch blocks after this catch block are ignored. 
+6. In order for an exception to occur in a try block and be caught by a catch 
+block, the exception must be thrown i

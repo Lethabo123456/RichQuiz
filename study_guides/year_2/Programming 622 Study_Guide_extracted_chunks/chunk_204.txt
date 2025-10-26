@@ -1,0 +1,32 @@
+verload the assignment operator.  
+  
+Next, we write the definitions of the nonabstract functions of the class LinkedListClass.  
+ The list is empty if first is NULL. Therefore, the definition of the function isEmptyList to implement this 
+operation is as follows:  
+  
+template <class Type>  
+bool linkedListType<Type>::isEmptyList() const  
+{ return (first == NULL);  
+}  
+  
+ 
+3.2.4  Default Constructor  
+  
+The default constructor, linkedListType, is quite straightforward. It simply initializes the list to an empty 
+state. Recall that when an object of the linkedListType type is declared and no value is passed, the default 
+constructor is executed automatically.  
+  
+template <class Type>  
+linkedListType<Type>::linkedListType() //default constructor  
+{ first = NULL; last = 
+NULL;  
+count = 0;  
+}  
+  
+From the definitions of the functions isEmptyList and the default constructor, it follows that each of these 
+functions is of O(1).  
+  
+ 
+3.2.5  Destroy the List  
+  
+The function des

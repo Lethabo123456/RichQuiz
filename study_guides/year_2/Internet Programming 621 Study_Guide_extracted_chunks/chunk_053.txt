@@ -1,0 +1,24 @@
+o a float  
+strval(value)  
+Returns value cast to a string  
+  
+  
+Think Point: Take particular note of the similarities and differences between changing a  
+data type using the settype() function and type casting. Take note of the permanent effects of the 
+one and the temporal effects of the other.  Good point of discussion.  
+  
+
+30  
+2.9 Operators And Expressions  
+Using an operator, you can manipulate the contents of one or more variables to produce a new 
+value.  For example, this code uses the addition operator ( + ) to add the values of $x and $y 
+together to produce a new value:  
+  
+echo $x + $y;  
+  
+So an operator is a symbol that manipulates one or more values, usually producing a new value in 
+the process. Meanwhile, an expression in PHP is anything that evaluates to a value; this can be any 
+combination of values, variables, operators, and functions. In the preceding example, $x + $y is an 
+expression. Here are some more examples of expressions:  
+$x + $y + $z  
+$x - $y

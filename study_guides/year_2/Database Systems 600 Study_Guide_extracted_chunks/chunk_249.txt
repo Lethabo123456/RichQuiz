@@ -1,0 +1,19 @@
+form a join of the INVOICE and LINE tables by writing 
+the following:  
+SELECT  P_CODE, P_DESCRIPT, V_CODE, V_NAME, V_AREACODE, V_PHONE  
+FROM 
+PRODUCT  
+JOIN  
+VENDOR  
+USING  
+(V_CODE);  
+The preceding SQL command sequence joins a row in the PRODUCT table with a row in the 
+VENDOR table, in which the V_CODE values of these rows are the same, as indicated in the 
+USING clause. As with the NATURAL JOIN command, the JOIN USING operand does not require 
+table qualifiers and only returns one copy of the common attribute. 
+JOIN ON Syntax 
+The previous two join styles use common attribute names in the joining tables. Another way to 
+express a join when the tables have no common attribute names is to use the JOIN ON operand. 
+The query returns only the rows that meet the indicated join condition. The join condition typically 
+includes an equality comparison expression of two columns. (The columns may or may not share 
+the same name, but they must have comparable data types.) The syntax is:

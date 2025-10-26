@@ -1,0 +1,25 @@
+od=”post” >   
+< !-- Contents of the form go here -- >   
+< /form >   
+   
+
+17   
+   
+The  second line of code in this example is an HTML comment – – everything between the <!-- and 
+--> is ignored by the Web browser.   
+   
+   
+   
+Notice that there are two attributes within the opening < form > tag:   
+• 
+action tells the Web browser where to send the form data when the user fills out and 
+submits the form. This should either be an absolute URL (such as http://www.example.com/ 
+myscript.php ) or a relative URL (such as myscript.php , /myscript.php , or ../ 
+scripts/myscript.php ). The script at the specified URL should be capable of accepting and 
+processing the form data; more on this in a moment.   
+• 
+method tells the browser how to send the form data. You can use two methods: get is useful 
+for sending small amounts of data and makes it easy for the user to resubmit the form, and 
+post can send much larger amounts of form data.   
+   
+Once you have created your basic form element

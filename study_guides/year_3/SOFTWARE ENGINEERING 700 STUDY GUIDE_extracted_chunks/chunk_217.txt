@@ -1,0 +1,41 @@
+Chapter Seven: Software Maintenance  
+ 
+7.1 Introduction to Software Maintenance 
+Software maintenance is the general process of changing a system after it has been delivered. 
+The term is usually applied to custom software, where separate development groups are involved 
+before and after delivery. The changes made to the software may be simple changes to correct 
+coding errors, more extensive changes to correct design errors, or significant enhancements to 
+correct specification errors or to accommodate new requirements. Changes are implemented by 
+modifying existing system components and, where necessary, by adding new components to the 
+system. 
+
+7.2 Software Maintenance Types 
+
+There are three different types of software maintenance, these are described below;  
+
+• Fault repairs to fix bugs and vulnerabilities. Coding errors are usually relatively cheap to 
+correct; design errors are more expensive because they may involve rewriting several 
+program components. Requirements errors are the most expensive to repair because 
+extensive system redesign may be necessary. 
+• Environmental adaptation to adapt the software to new platforms and environments. This 
+type of maintenance is required when some aspect of a system’s environment, such as 
+the hardware, the platform operating system, or other sup-port software, changes. 
+Application systems may have to be modified to cope with these environmental changes. 
+• Functionality addition to add new features and to support new requirements. This type of 
+maintenance is necessary when system requirements change in response to 
+organizational or business change. The scale of the changes required to the software is 
+often much greater than for the other types of maintenance. 
+  
+In practice, there is no clear-cut distinction between these types of maintenance. When you adapt 
+a system to a new environment, you may add functionality to take advantage of new 
+environmental features. Software faults are often exposed because users use the system in 
+unanticipated ways. Changing the system to accommodate their way of working is the best way 
+to fix these faults. 
+ 
+These types of maintenance are generally recognized, but different people some-times give them 
+different names. “Corrective maintenance” is universally used to refer to maintenance for fault 
+repair. However, “adaptive maintenance” sometimes means adapting to a new environment and 
+sometimes means adapting the software to new requirements. “Perfective maintenance” 
+sometimes means perfecting the soft-ware by implementing new requirements; in other cases, it 
+means maintaining the functionality of the system but improving its structure and its 
+performance 

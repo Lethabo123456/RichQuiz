@@ -1,0 +1,48 @@
+what is written by the following segment of 
+code: stack.push(0); 
+queue.addQueue(0);  
+cin >> x; while (x 
+!= -999)  
+{  
+switch (x % 4)  
+{ case 0: stack.push(x); 
+break; case 1:  
+if (!stack.isEmptyStack())  
+{  
+cout << "Stack Element = " << stack.top() << endl; stack.pop();  
+}  
+else cout << "Sorry, the stack is empty." << endl;  
+break; case 
+2:  
+queue.addQueue(x);  
+break; case 
+3:  
+if (!queue.isEmptyQueue())  
+{  
+cout << "Queue Element = " << queue.front() << endl;  
+ 
+queue.deleteQueue();  
+}  
+else cout << "Sorry, the queue is empty." << endl; 
+break; } //end switch cin >> x; } //end while cout << "Stack Elements: ";  
+while (!stack.isEmptyStack())  
+{ cout << stack.top() << " "; 
+stack.pop();  
+}  
+cout << endl; cout << 
+"Queue Elements: ";  
+while (!queue.isEmptyQueue())  
+{  
+cout << queue.front() << " ";  
+
+254  
+  
+queue.deleteQueue();  
+}  
+cout << endl;  
+3. What does the following function do?  
+  
+void mystery(queueType<int>& q)  
+{  
+stackType<int> s; while 
+(!

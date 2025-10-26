@@ -1,0 +1,21 @@
+In cases when it’s impractical to have failover capable components, you can provide some 
+level of fault tolerance by using hot swappable parts. The term hot swappable refers to 
+identical components that can be changed (or swapped) while a machine is still running (hot). 
+A hot swappable SFP or hard disk, for example, is known as a hot spare, or a duplicate 
+component already installed in a device that can assume the original component’s functions 
+in case that component fails. In contrast, cold spare refers to a duplicate component that is 
+not installed but can be installed in case of a failure. Replacing a component with a cold spare 
+requires an interruption of service. When you purchase switches or routers to support critical 
+links, look for those that contain failover capable or hot swappable components. As with other 
+redundancy provisions, these features add to the cost of your device purchase. 
+Using redundant NICs allows devices, servers, or other nodes to participate in link aggregation. 
+Link aggregation, also known as bonding, is the seamless combination of multiple network 
+interfaces or ports to act as one logical interface. In one type of link aggregation, NIC teaming, 
+two or more NICs work in tandem to handle traffic to and from a single node. This allows for 
+increased total throughput and automatic failover between the two NICs. It also allows for 
+load balancing, or a distribution of traffic over multiple components or links to optimize 
+performance and fault tolerance. For multiple NICs or ports to use link aggregation, they must 
+be properly configured in each device’s operating system.
+ 
+Figure 2.4 Link aggregation between a switch and server 
+© Cengage Learning 2023 

@@ -1,0 +1,16 @@
+state, taking care of all the details for you. We’ll cover PHP’s session-tracking system in detail later in 
+subsequent parts of this unit.    
+   
+Going back to cookies: a cookie is basically a string that contains several fields. A server can send one 
+or more cookies to a browser in the headers of a response. Some of the cookie’s fields indicate the 
+pages for which the browser should send the cookie as part of the request. The value field of the 
+cookie is the payload—servers can store any data they like there (within limits), such as a unique 
+code identifying the user, preferences, etc.   
+   
+Use the setcookie() function to send a cookie to the browser:   
+   
+setcookie(name [, value [, expire [, path [, domain [, secure ]]]]]);   
+   
+This function creates the cookie string from the given arguments and creates a Cookie header with 
+that string as its value. Because cookies are sent as headers in the response, setcookie() must be 
+called  before any of the body of the document

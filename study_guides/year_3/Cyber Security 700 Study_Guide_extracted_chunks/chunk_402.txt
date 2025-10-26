@@ -1,0 +1,38 @@
+Distributed Network Management Systems 
+In a traditional centralized network management scheme, one host in the configuration has the role 
+of a network management station; there can be one or two other management stations in a backup 
+role. The remainder of the devices on the network contain agent software and a local database to 
+allow monitoring and control from the management station. As networks grow in 
+size and traffic load, such a centralized system is unworkable. Too much burden is 
+placed on the management station, and there is too much traffic, with reports from 
+every single agent having to wend their way across the entire network to 
+headquarters. In such circumstances, a decentralized, distributed approach works 
+best (see the example in Figure 12.2). In a decentralized network management 
+scheme, there can be multiple top-level management stations, which are referred 
+to as management servers. Each such server can directly manage a portion of the 
+total pool of agents. However, for many of 
+the agents, the management server delegates responsibility to an intermediate 
+manager. The intermediate manager plays the role of manager to monitor and control 
+the agents under its responsibility. It also plays an agent role to provide information 
+and accept control from a higher-level management server. This type of arrangement spreads the 
+processing burden and reduces total network traffic. 
+
+The element management layer provides an interface to the network devices and communications 
+links in order to monitor and control them. This layer captures events and fault occurrences through 
+a combination of direct polling and unsolicited notification by network elements. Management 
+function modules provide interfaces to specific elements, allowing elements from different 
+manufacturers to be incorporated under a single network management system. 
+The network management layer (NML) provides a level of abstraction that does not depend on the 
+details of specific elements. In terms of event management, this layer takes input from multiple 
+elements (which in reality can be different applications), correlates the information received from the 
+various sources (also referred to as root-cause analysis), and identifies the event that occurred. The 
+NML provides a level of abstraction above the element management layer in that operations 
+personnel are not “weeding” through potentially hundreds of unreachable or node down alerts but 
+instead are focusing on the actual event, such as failure of an area-border router. Thus, this layer 
+performs a filtering function, only providing a more aggregated view of the network through a 
+common database across all five functions as well as a trouble ticketing facility. 
+TThe service management layer is responsible for adding intelligence and automation to filtered events, 
+event correlation, and communication between databases and incident management systems. The 
+goal is to move traditional network management environments and the operations personnel from 
+element management (managing individual alerts) to network management (managing network 
+events) to service management (managing identified problems).

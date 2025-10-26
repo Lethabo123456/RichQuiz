@@ -1,0 +1,51 @@
+before and after the push operation  
+  
+The definition of the function push is as follows:  
+  
+template <class Type>  
+void stackType<Type>::push(const Type& newItem)  
+{  
+if (!isFullStack())  
+{  
+list[stackTop] = newItem;   
+  
+  
+//add newItem at the top stackTop++;   
+ 
+  
+  
+  
+//increment stackTop  
+}  
+else  
+cout << "Cannot add to a full stack." << endl;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end push  
+  
+If we try to add a new item to a full stack, the resulting condition is called an overflow. Error checking for 
+an overflow can be handled in different ways. One way is as shown previously. Or, we can check for an 
+overflow before calling the function push, as shown next (assuming stack is an object of type stackType).  
+  
+if (!stack.isFullStack()) stack.push(newItem);  
+  
+
+183  
+  
+  
+  
+ 
+5.2.5  Return the Top Element  
+  
+The operation top returns the top element of the stack. Its definition is as follows:  
+  
+template <class Type>  
+Type stackType<Type>::top() const  
+{

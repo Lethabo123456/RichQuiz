@@ -1,0 +1,17 @@
+xt of the corpus text. 
+ 
+6.5 TF/IDF 
+One useful technique is to find out how important a word or phrase is within a corpus of text 
+or a collection of documents. Term Frequency/Inverse Document Frequency (TF/IDF) is a 
+method of giving a numerical value to the importance of a word. TF/IDF is used widely within 
+recommendation systems, and it's quite easy to implement. 
+Calculating the Term Frequency. The term frequency is the number of times a phrase is in the 
+document; in this example we're using an iterator over the list of words and seeing whether the term 
+matches. If there is a match, then the count is increased by one. 
+
+P a g e  | 70 
+ 
+Word2Vec. The Word2Vec algorithm was developed by Google. It comprises a neural network of two 
+layers. With a large corpus of text you can achieve some very accurate vector results. Groups of words 
+will appear closer within the vectors. It's not just limited to text; you can use this method on pretty 
+much anything where patterns of associati

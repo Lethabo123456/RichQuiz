@@ -1,0 +1,15 @@
+program is straightforward. The statements in Lines 10 
+through 16 insert the element numbers 23, 58, 58, 36, 15, 98, and 58 (in that order) into intList1. The 
+statement in Line 20 copies the elements of intList1 into intList2. After this statement executes, intList1 
+and intList2 are identical. The statement in Line 24 removes any consecutive occurrences of the same 
+elements. For example, the number 58 appears consecutively two times. The operation unique removes 
+two occurrences of 58. Note that this operation has no effect on the 58 that appears at the end of intList1. 
+The statement in Line 28 sorts intList2.  
+  
+ 
+3.7  
+Linked Lists with Header and Trailer Nodes  
+  
+When inserting and deleting items from a linked list (especially an ordered list), we saw that there are 
+special cases, such as inserting (or deleting) at the beginning (the first node) of the list or in an empty list. 
+These cases needed to be handled separately. As a result, the insertion and deletion algorithms

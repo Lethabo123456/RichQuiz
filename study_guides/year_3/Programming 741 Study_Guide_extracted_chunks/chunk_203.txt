@@ -1,0 +1,30 @@
+5.9 Queues 
+A queue represents a first-in, first-out (FIFO) collection. The classic analogy is to a line at a 
+ticket window. The first person in line ought to be the first person to come off the line to buy 
+a ticket. A queue is a good collection to use when you are managing a limited resource. For 
+example, you might want to send messages to a resource that can only handle one message 
+at a time. You would then create a message queue so that you can say to your clients: "Your 
+message is important to us. Messages are handled in the order in which they are received." 
+ 
+The Queue class has a number of member methods and properties, as shown in Table 4-4. 
+ 
+Table 4-4. Queue methods and properties 
+ 
+Methods                   Method Description 
+Clear()                   Removes all objects from the Queue. 
+Clone()                   Creates a shallow copy of the Queue. 
+Contains(Object)          Determines whether an element is in the Queue. 
+CopyTo(Array, Int32)      Copies the Queue elements to an existing one-dimensional Array, 
+                          starting at the specified array index. 
+Dequeue()                 Removes and returns the object at the beginning of the Queue. 
+Enqueue(Object)           Adds an object to the end of the Queue. 
+Equals(Object)            Determines whether the specified object is equal to the current object. 
+GetEnumerator()           Returns an enumerator that iterates through the Queue. 
+GetHashCode()             Serves as the default hash function. 
+GetType()                 Gets the Type of the current instance. 
+MemberwiseClone()         Creates a shallow copy of the current Object. 
+Peek()                    Returns the object at the beginning of the Queue without removing it. 
+Synchronized(Queue)       Returns a new Queue that wraps the original queue, and is thread safe. 
+ToArray()                 Copies the Queue elements to a new array. 
+ToString()                Returns a string that represents the current object. 
+TrimToSize()              Sets the capacity to the actual number of elements in the Queue. 

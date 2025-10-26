@@ -1,0 +1,40 @@
+7.2.1 Using Delegates to Specify Methods at Runtime 
+
+Delegates specify the kinds of methods that can handle events and implement callbacks in 
+your applications. They can also specify static and instance methods that won't be known 
+until runtime. 
+ 
+Suppose, for example, that you want to create a simple container class called a Pair that can 
+hold and sort any two objects passed to it. You can't know in advance what kind of objects a 
+Pair will hold, but by creating methods within those objects to which the sorting task can be 
+delegated, you can delegate responsibility for determining their order to the objects 
+themselves. 
+ 
+Different objects will sort differently; for example, a Pair of counter objects might sort in 
+numeric order, while a Pair of Buttons might sort alphabetically by their name. As the 
+author of the Pair class, you want the objects in the pair to have the responsibility of 
+knowing which should be first and which should be second. To accomplish this, insist that 
+the objects to be stored in the Pair provide a method that tells you how to sort the objects.  
+ 
+Define the method you require by creating a delegate that defines the signature and return 
+type of the method the object (e.g., Button) must provide to allow the Pair to determine 
+which object should be first and which should be second.  
+ 
+The Pair class defines a delegate, WhichIsFirst . The Sort method will take a parameter, an 
+instance of WhichIsFirst . When the Pair needs to know how to order its objects it will 
+invoke the delegate passing in its two objects as parameters. The responsibility for deciding 
+which of the two objects comes first is delegated to the method encapsulated by the 
+delegate. 
+ 
+To test the delegate, create two classes: a Dog class and a Student class. Dogs and Students 
+have little in common, except they both implement methods that can be encapsulated by 
+Which ComesFirst; thus both Dog objects and Student objects are eligible to be held within 
+Pair objects. 
+ 
+In the test program, create a couple of Students and a couple of Dogs, and store them each 
+in a Pair. You will then create delegate objects to encapsulate their respective methods that 
+match the delegate signature and return type, and ask the Pair objects to sort the Dog and 
+Student objects. Let's take this step by step. Begin by creating a Pair constructor that takes 
+two objects and stashes them away in a private array: 
+
+Example 7-1 Delegates 

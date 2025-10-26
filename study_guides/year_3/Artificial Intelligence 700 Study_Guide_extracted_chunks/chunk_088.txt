@@ -1,0 +1,34 @@
+For example, a binary addition can be represented with the truth table: 
+A B | C R 
+1 1 | 1 0 
+1 0 | 0 1 
+0 1 | 0 1 
+0 0 | 0 0 
+ 
+where 
+ 
+A = First Operand 
+B = Second Operand 
+C = Carry 
+R = Result 
+
+This truth table is read left to right: 
+✓ Value pair (A,B) equals value pair (C,R). 
+✓ Or for this example, A plus B equal result R, with the Carry C. 
+
+Note that this table does not describe the logic operations necessary to implement 
+this operation, rather it simply specifies the function of inputs to output values. 
+With respect to the result, this example may be arithmetically viewed as modulo 2 
+binary addition, and as logically equivalent to the exclusive-or (exclusive 
+disjunction) binary logic operation(Kritandani, Aryani and Rakasiwi, 2024). 
+In this case it can be used for only very simple inputs and outputs, such as 1s and 
+0s. However, if the number of types of values one can have on the inputs increases, 
+the size of the truth table will increase. 
+
+For instance, in an addition operation, one needs two operands, A and B. Each can 
+have one of two values, zero or one. The number of combinations of these two 
+values is 2×2, or four. So the result is four possible outputs of C and R. If one were 
+to use base 3, the size would increase to 3×3, or nine possible outputs. 
+The first "addition" example above is called a half-adder. A full-adder is when the 
+carry from the previous operation is provided as input to the next adder. Thus, a 
+truth table of eight rows would be needed to describe a full adder's logic: 

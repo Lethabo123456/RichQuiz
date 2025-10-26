@@ -1,0 +1,27 @@
+e 8-15.  
+  
+  
+FIGURE 8-15 Linked list and pointers trailCurrent and current  
+  
+Because current is the same as firstOutOfOrder, the node firstOutOfOrder is in the right place. So no 
+adjustment of the links is necessary.  
+  
+Case 3: Consider the list in Figure 8-16.  
+  
+  
+FIGURE 8-16 Linked list and pointers lastInOrder and firstOutOfOrder  
+  
+Because firstOutOfOrder->info is greater than first->info, we search the list to find the place where 
+firstOutOfOrder is to be moved. As in Case 2, we use the pointers trailCurrent and current to traverse the 
+list. For this list, these pointers end up at the nodes as shown in Figure 8-17.  
+  
+  
+FIGURE 8-17 Linked list and pointers trailCurrent and current  
+  
+Now, firstOutOfOrder is to be moved between trailCurrent and current. So we adjust the necessary links 
+and obtain the list as shown in Figure 8-18.  
+  
+  
+FIGURE 8-18 Linked list after moving firstOutOfOrder between trailCurrent and current  
+  
+We now write the C++ function, l

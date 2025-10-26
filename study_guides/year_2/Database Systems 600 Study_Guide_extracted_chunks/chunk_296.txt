@@ -1,0 +1,16 @@
+hat existed before the changes were made. To restore the data to its “pre-change” 
+condition, type:  
+ROLLBACK;  
+and then press Enter. 
+COMMIT and ROLLBACK work only with data manipulation commands that add, modify, or 
+delete table rows.  
+ 
+Virtual Tables: Creating a View 
+As you learned earlier, the output of a relational statement such as SELECT is another relation (or 
+table). Suppose that at the end of each day, you would like to have a list of all products to reorder—
+that is, products with a quantity on hand that is less than or equal to the minimum quantity. Instead 
+of typing the same query at the end of each day, wouldn’t it be better to permanently save that query 
+in the database? That is the function of a relational view. A view is a virtual table based on a 
+SELECT query. The query can contain columns, computed columns, aliases, and aggregate 
+functions from one or more tables. The tables on which the view is based are called base tables.  
+You can create a view by usin

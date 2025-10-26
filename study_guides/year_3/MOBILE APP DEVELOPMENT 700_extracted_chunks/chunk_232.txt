@@ -1,0 +1,16 @@
+Creating the Database 
+The MyContactList app uses a simple database with a single table to provide the data storage and 
+manipulation functionality described in previous Chapter, “App Design Issues and Considerations.” 
+You will create two new classes to provide the database functionality. One class is a database helper 
+class used to create, modify, and delete the tables included in the database. The other class is used 
+for data access. It provides methods to open and close the database and the queries used to store, 
+access, and manipulate the data in the tables. The focus in this chapter is to enable the MainActivity 
+to store a contact’s data. Retrieval and manipulation of that data is introduced in later chapters. 
+ 
+Create the Database Helper Class 
+The recommended approach to using SQLite in an Android app is to create a Database Helper 
+class whose only function is to provide for the creation, modification, and deletion of tables in 
+the database. The new class is defined as a subclass of the SQLiteOpenHelper class. Much 
+of the required functionality for working with databases is inherited from the 
+SQLiteOpenHelper class, although some of its methods will be overridden to implement the 
+functionality required for this app.

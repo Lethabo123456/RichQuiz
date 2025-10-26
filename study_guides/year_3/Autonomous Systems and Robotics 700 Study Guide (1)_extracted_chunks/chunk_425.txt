@@ -1,0 +1,39 @@
+What the Robot Learns 
+This model learns to trust different sensors in different situations: 
+• In darkness → rely more on LIDAR or ultrasonic 
+• In cluttered environments → use IMU to stabilize decisions 
+• On open roads → trust camera vision for direction 
+
+It builds a robust, generalizable decision policy across varied environments by learning the best 
+combination of sensor inputs. 
+Neural networks are a foundational tool in modern robotics, enabling machines to learn from 
+data, adapt to new environments, and perform complex tasks that are difficult or impossible to 
+program manually. Inspired by the structure of the human brain, neural networks consist of layers 
+of interconnected neurons that transform inputs through learnable weights and non-linear 
+activation functions. 
+
+In robotics, neural networks are particularly valuable for handling high-dimensional, noisy, and 
+uncertain sensory data. They are used extensively in perception, control, and decision-making 
+tasks, forming the basis for learning-based approaches to autonomy.
+
+Key Applications in Robotics 
+1. Perception and Sensor Processing 
+Neural networks, especially convolutional neural networks (CNNs), are used to extract 
+spatial features from camera images, LIDAR scans, and other high-dimensional sensor 
+inputs. This allows robots to recognize objects, identify obstacles, classify terrain, and 
+navigate their environment. 
+2. Sequential and Temporal Reasoning 
+Recurrent neural networks (RNNs), including variants like LSTMs and GRUs, are 
+employed when robots must interpret time-series data. For instance, they help in 
+trajectory prediction, interpreting motion from IMU sensors, or planning based on past 
+events. 
+3. Sensor Fusion 
+Real-world robots integrate data from multiple sources (e.g., camera, LIDAR, ultrasonic, 
+IMU) to improve robustness and reliability. Multi-modal deep learning architectures 
+enable these diverse sensor modalities to be fused intelligently, allowing the robot to 
+maintain awareness even when some sensors are degraded. 
+4. Control and Decision Making 
+Neural networks can approximate control policies directly, mapping sensory input to 
+motor commands. In reinforcement learning contexts, such as with Deep Q-Networks 
+(DQNs), neural networks serve as function approximators for action-value functions, 
+enabling robots to learn optimal behaviours through interaction with their environment.

@@ -1,0 +1,25 @@
+echo “<ul>“;   
+try {   
+      $rows = $conn->query( $sql );       foreach 
+( $rows as $row ) {   
+             echo “<li>A “ . $row[“name“] . “ is “ . $row[“color“] . “</li>“;   
+     }   
+} catch ( PDOException $e ) {   
+          echo “Query failed: “ . $e->getMessage();   
+}   
+echo “</ul>“;   
+   
+Notice that both the call to $conn->query and the looping code are within a try block to catch any 
+exceptions that might be caused by running the query. If an exception is thrown, it is handled by the 
+catch block, which displays the message “Query failed,” along with the error message. Finally, the 
+script closes the database connection and completes the XHTML page:   
+   
+            $conn = null;   
+            ?>   
+      </body>   
+</html>   
+   
+4.21 Unit Summary   
+Though you can use text files for storing small amounts of data, many Web applications have a need 
+to store data in databases. In this unit you were introduced to the concept of databases, and you 
+learned some

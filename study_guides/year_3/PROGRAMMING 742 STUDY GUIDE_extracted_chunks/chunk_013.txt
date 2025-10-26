@@ -1,0 +1,18 @@
+1.2 Creating Objects 
+In Topic 1, a distinction is drawn between value types and reference types. The primitive C# 
+types (int, char, etc.) are value types, and are created on the stack. Objects, however, are refer-
+ence types, and are created on the heap, using the keyword new, as in the following: 
+Time t = new Time ( ); 
+it does not actually contain the value for the Time object; it contains the address of that (un-
+named) object that is created on the heap. t itself is just a reference to that object. 
+
+1.2.1 Constructors 
+In Example 1-1, notice that the statement that creates the Time object looks as though it is 
+invoking a method: 
+Time t = new Time ( ); 
+In fact, a method is invoked whenever you instantiate an object. This method is called a con-
+structor, and you must either define one as part of your class definition or let the Common Lan-
+guage Runtime (CLR) provide one on your behalf. The job of a constructor is to create the object 
+specified by a class and to put it into a valid state. Before the constructor runs, the object is 
+undifferentiated memory; after the constructor completes, the memory holds a valid instance 
+of the class type. 

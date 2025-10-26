@@ -1,0 +1,22 @@
+sterisk.gif” width=”23” height=”23” />   
+   
+• 
+A push button — This type of button does not do anything by default when it is clicked, but 
+you can make such buttons trigger various events in the browser using JavaScript. The value 
+ttribute specifies the text label to display in the button:    
+   
+               <label for=”pushButton”>A push button</label>   
+               <input type=”button” name=”pushButton” id=”pushButton”  value=”Click Me” />   
+   
+• 
+A pull-down menu — This allows a user to pick a single item from a predefined list of 
+options.    
+• 
+The size attribute’s value of 1 tells the browser that you want the list to be in a pull-down 
+menu format. Within the select element, you create an option element for each of your 
+
+22   
+   
+options. Place the option label between the <option> ... </option> tags. Each option element 
+can have an optional value attribute, which is the value sent to the server if that option is 
+selected. If you do not include a value attribu

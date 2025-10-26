@@ -1,0 +1,34 @@
+rent->info == searchItem)  
+found = true;  
+else  
+ 
+//searchItem is found  
+current = current->link;   
+return found;  
+ 
+//make current point to  
+//the next node  
+}  
+  
+  
+  
+  
+  
+  
+ 
+//end search  
+  
+The number of times the while loop executes, in the function search, depends on where in the list the 
+search item is located. Suppose the list has n items. If the search item is not in the list, the while loop 
+executes n times. On the other hand, if the search item is the first item, the while loop executes 1 time. 
+Similarly, if the search item is the ith item in the list, the while loop executes i times. From these 
+observations, we can show that the function search is of O(n). We will explicitly analyze the sequential 
+search algorithm in Chapter 7.  
+  
+ 
+3.3.2  Insert the First Node  
+  
+The function insertFirst inserts the new item at the beginning of the list—that is, before the node pointed 
+to by first. The steps needed to implement this function are as follows:  
+  
+1.

@@ -1,0 +1,63 @@
+The final step is to execute the program. The compiler guarantees only that the 
+program follows the language’s syntax. It does not guarantee that the program will run 
+correctly. During execution, the program might terminate abnormally due to logical 
+errors, such as division by zero. 
+
+Even if the program terminates normally, it may still generate erroneous results. Under 
+these circumstances, you may have to re-examine the code, the algorithm, or even 
+the problem analysis 
+ 
+In this example, we design an algorithm to find the perimeter and area of a rectangle. 
+To find the perimeter and area of a rectangle, you need to know the rectangle’s length 
+and width. The perimeter and area of the rectangle are then given by the following 
+formulas: 
+
+perimeter = 2 · (length + width)  
+area = length · width  
+The algorithm to find the perimeter and area of the rectangle is as follows:  
+1. Get the length of the rectangle.  
+2. Get the width of the rectangle. 
+3. Find the perimeter using the following equation:  
+perimeter = 2 · (length    + width)  
+4. Find the area using the following equation: 
+ area = length · width 
+
+In this example, we design an algorithm that calculates the sales tax and the price of 
+an item sold in a particular state. The sales tax is calculated as follows: The state’s 
+portion of the sales tax is 4%, and the city’s portion of the sales tax is 1.5%. If the item 
+is a luxury item, such as a car more than $50,000, then there is a 10% luxury tax. To 
+calculate the price of the item, we need to calculate the state’s portion of the sales tax, 
+the city’s portion of the sales tax, and, if it is a luxury item, the luxury tax. 
+Suppose salePrice denotes the selling price of the item, stateSalesTax denotes the 
+state’s sales tax, citySalesTax denotes the city’s sales tax, luxuryTax denotes the 
+luxury tax, salesTax denotes the total sales tax, and amountDue denotes the final 
+price of the item. To calculate the sales tax, we must know the selling price of the item 
+and whether the item is a luxury item. 
+
+The stateSalesTax and citySalesTax can be calculated using the following formulas:  
+stateSalesTax = salePrice · 0.04  
+citySalesTax = salePrice · 0.015 
+Next, you can determine luxuryTax as follows: 
+if (item is a luxury item)  
+luxuryTax = salePrice · 0.1 
+ otherwise 
+ luxuryTax = 0 
+Next, you can determine salesTax as follows: 
+salesTax = stateSalesTax + citySalesTax + luxuryTax 
+ 
+The algorithm to determine salesTax and amountDue is, therefore:  
+1. Get the selling price of the item.  
+2. Determine whether the item is a luxury item. 
+3. Find the state’s portion of the sales tax using the formula:  
+stateSalesTax = salePrice · 0.04  
+4. Find the city’s portion of the sales tax using the formula:  
+citySalesTax = salePrice · 0.015  
+5. Find the luxury tax using the following formula:  
+if (item is a luxury item) 
+ luxuryTax = salePrice · 0.1 
+ otherwise  
+luxuryTax = 0  
+6. Find salesTax using the formula:  
+salesTax = stateSalesTax + citySalesTax + luxuryTax  
+7. Find amountDue using the formula:  
+amountDue = salePrice + salesTax 

@@ -1,0 +1,16 @@
+ceptual simplicity was bought at the expense of computer overhead; 
+computers at that time lacked the power to implement the relational model. Fortunately, computer 
+power grew exponentially, as did operating system efficiency.  
+The relational data model is implemented through a very sophisticated relational database 
+management system (RDBMS). The RDBMS performs the same basic functions provided by the 
+hierarchical and network DBMS systems, in addition to a host of other functions that make the 
+relational data model easier to understand and implement (as outlined in Chapter 1, in the DBMS 
+Functions section).  
+Arguably the most important advantage of the RDBMS is its ability to hide the complexities of the 
+relational model from the user. The RDBMS manages all the physical details, while the user sees 
+
+ 
+24 
+the relational database as a collection of tables in which data is stored. The user can manipulate and 
+query the data in a way that seems intuitive and logical.  
+Tables are

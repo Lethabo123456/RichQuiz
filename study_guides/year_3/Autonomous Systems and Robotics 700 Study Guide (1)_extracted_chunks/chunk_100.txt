@@ -1,0 +1,34 @@
+The code produces the following output: 
+
+A -> A: 0
+A -> B: 3
+A -> C: 2
+A -> D: 8
+A -> E: 10
+A -> F: 13
+
+Shortest paths from A:
+A to B: A -> C -> B (distance: 3)
+A to C: A -> C (distance: 2)
+A to D: A -> C -> B -> D (distance: 8)
+A to E: A -> C -> B -> D -> E (distance: 10)
+A to F: A -> C -> B -> D -> E -> F (distance: 13)
+
+Process finished with exit code 0
+ 
+The implementation of the algorithm does 4 basic things: 
+1. Initialization: Set all distances to infinity except the start node (distance 0)  
+2. Main Loop:  
+a. Find the unvisited node with minimum distance 
+b. Mark it as visited by removing from unvisited set 
+c. Update distances to all its unvisited neighbors 
+3. Distance Update: If path through current node is shorter than known distance, update it  
+4. Path Reconstruction: Use the previous dictionary to trace back the shortest path 
+Dijkstra’s algorithm has quite a number of variations, namely, Bidirectional Dijkstra, Dijkstra with 
+Early Termination and All-Pairs Shortest Path. The variations focus on specific key points in their 
+execution:  
+Bidirectional Dijkstra: Searches from both source and target simultaneously, often faster for 
+single-pair shortest path 
+Dijkstra with Early Termination: Stops when target is reached (useful for single-target queries) 
+
+All-Pairs Shortest Path: Can be extended to find shortest paths between all pairs of vertices 

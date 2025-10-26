@@ -1,0 +1,32 @@
+e the cookie from any directory or page. 
+ 
+Secure: If this field contains the word "secure" then the cookie may only be 
+retrieved with a secure server. If this field is blank, no such restriction exists. 
+ 
+Multimedia Resource 
+ 
+http://www.w3schools.com/js/js_co
+okies.asp  
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+145 
+ 
+TEN | JAVASCRIPT AND COOKES 
+ 
+Name=Value: Cookies are set and retrieved in the form of key and value 
+pairs. 
+ 
+Cookies were originally designed for CGI 
+programming and cookies' data is automatically 
+transmitted between the web browser and web 
+server, so CGI scripts on the server can read and 
+write cookie values that are stored on the client. 
+JavaScript can also manipulate cookies using the 
+cookie property of the Document object. 
+JavaScript can read, create, modify, and delete 
+the cookie or cookies that apply to the current 
+web page. 
+ 
+10.1.2 Storing Cookies 
+The simplest way to create a cookie is to assign a string va

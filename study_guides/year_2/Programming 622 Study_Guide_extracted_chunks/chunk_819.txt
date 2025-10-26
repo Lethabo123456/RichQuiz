@@ -1,0 +1,45 @@
+is set to 
+true. In this iteration, the action of Step 5 is null because the shortest path from the vertex 0 to every 
+other vertex in the graph has been determined. Figure 10-13 shows the final graph.  
+  
+  
+FIGURE 10-13 Graph after the fourth iteration of Steps 3 through 5  
+  
+  
+The following C++ function, shortestPath, implements the previous algorithm:  
+  
+void weightedGraphType::shortestPath(int vertex)  
+{  
+for (int j = 0; j < gSize; j++) smallestWeight[j] = 
+weights[vertex][j];  
+  
+
+403  
+  
+bool *weightFound; weightFound 
+= new bool[gSize]; for (int j = 0; j 
+< gSize; j++)  
+weightFound[j] = false;  
+  
+weightFound[vertex] = true;  
+smallestWeight[vertex] = 0;  
+  
+for (int i = 0; i < gSize - 1; i++)  
+{  
+double minWeight = DBL_MAX; int 
+v;  
+  
+for (int j = 0; j < gSize; j++) if (!weightFound[j]) if 
+(smallestWeight[j] < minWeight)  
+{  
+v = j;  
+minWeight = smallestWeight[v];  
+ 
+}  
+  
+  
+  
+weightFound[v] = true;  
+for (int j = 0; j < gSize; j++)  
+ 
+if (!weightFoun

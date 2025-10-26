@@ -1,0 +1,20 @@
+gram 
+thus requests this data from the DBMS. In doing so, the application program follows a logical 
+access path. Next, the DBMS, working with various system programs, accesses a storage 
+device, such as disc drives, where the data is stored. When the DBMS goes to this storage 
+device to retrieve the data, it follows a path to the physical location (physical access path) where 
+the price of this option is stored. In the pricing example, the DBMS might go to a disc drive to 
+retrieve the price data for six-cylinder engines. This relationship is shown in Figure 5.9. 
+ 
+ 
+ 
+ 
+ 
+ 
+145 
+
+This same process is used if a user wants to get information from the database. First, the user 
+requests the data from the DBMS. For example, a user might give a command, such as LIST 
+ALL OPTIONS FOR WHICH PRICE IS GREATER THAN 200 EUROS. This is the logical 
+access path (LAP). Then, the DBMS might go to the options price section of a disc to get the 
+information for the user. This is the physical access

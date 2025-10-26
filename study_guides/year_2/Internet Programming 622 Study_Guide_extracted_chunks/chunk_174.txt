@@ -1,0 +1,19 @@
+ord );   
+$conn- > setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );   
+   
+Now you can capture any error that might occur when connecting to the database by using a try ... 
+catch code block. If you were writing a sophisticated application, you wouldd probably log the error 
+message to a file, and possibly send an email to the Webmaster informing him of the details of the 
+error. For the sake of these examples, though, you will just display the error message in the Web 
+page:   
+   
+try {   
+$conn = new PDO( $dsn, $username, $password );   
+$conn- > setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );   
+} catch ( PDOException $e ) {   
+echo “Connection failed: “ . $e- > getMessage();   
+}   
+   
+PHP runs the code within the try block. If an exception is raised by PDO, the catch block stores the 
+PDOException object in $e, then displays the error message with $e - > getMessage() . For example, 
+if the $password variable in the script contained an incorrect password, you

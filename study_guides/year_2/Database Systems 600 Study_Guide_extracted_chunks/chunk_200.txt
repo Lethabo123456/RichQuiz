@@ -1,0 +1,16 @@
+etion anomalies, which ensures the 
+integrity and consistency of the data.  
+To accomplish these objectives, the normalization process takes you through steps that lead to 
+successively higher normal forms. The most common normal forms and their basic characteristics 
+are listed in Table 6.2.  
+ 
+Although normalization is typically presented from the perspective of candidate keys, this initial 
+discussion assumes that each table has only one candidate key; therefore, that candidate key is the 
+primary key.  
+Before outlining the normalization process, it is a good idea to review the concepts of determination 
+and functional dependence. Table 6.3 summarizes the main concepts.  
+ 
+The normalization process works one relation at a time, identifying the dependencies on that 
+relation and normalizing the relation. Normalization starts by identifying the dependencies of a 
+given relation and progressively breaking up the relation (table) into a set of new relations (tables) 
+based on the ide

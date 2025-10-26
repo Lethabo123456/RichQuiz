@@ -1,0 +1,29 @@
+I have the following two events: 
+a) This event shows the probability that I choose a person with an iPhone first 
+b) This event shows the probability that I choose a person with an iPhone second 
+ 
+So, basically, I want the following: 
+P(A and B): P(I choose a person with an iPhone and a person with an iPhone) 
+ 
+So, I can use my P(A and B) = P(A) · P(B|A) formula. 
+ 
+P(A) is simple, right? People with iPhones are 6 out of 10, so, I have a 6/10 = 3/5 = 0.6 chance of A. 
+This means P(A) = 0.6. 
+ 
+So, if I have a 0.6 chance of choosing someone with an iPhone, the probability of choosing two should 
+just be 0.6 * 0.6, right? 
+ 
+But wait! We only have 9 people left to choose our second person from, because one was taken away. 
+So in our new transformed sample space, we have 9 people in total, 5 with iPhones and 4 with droids, 
+making P(B) = 5/9 = .555.  
+So, the probability of choosing two people with iPhones is 0.6 * 0.555 = 0.333 = 33%. 
+ 
+I have a 1/3 chance of choosing two people with iPhones out of 10. The conditional probability is very 
+important in the multiplication rule as it can drastically alter your answer. 
+ 
+Independence 
+Two events are independent if one event does not affect the outcome of the other, that is P(B|A) = 
+P(B) and P(A|B) = P(A). 
+
+If two events are independent, then: 
+P(A ∩ B) = P(A) · P(B|A) = P(A) · P(B) 

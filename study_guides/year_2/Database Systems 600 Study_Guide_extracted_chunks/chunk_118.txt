@@ -1,0 +1,20 @@
+page 72-76 
+
+ 
+45 
+relation is often assigned a lowercase letter (e.g., “r”), while the relvar is assigned an uppercase 
+letter (e.g., “R”). We could then say that r is a relation of type R, or r(R). 
+Relational Set Operators 
+The relational operators have the property of closure; that is, the use of relational algebra operators 
+on existing relations (tables) produces new relations. Numerous operators have been defined. Some 
+operators are fundamental, while others are convenient but can be derived using the fundamental 
+operators.  
+ 
+ 
+The Data Dictionary and System Catalogue 
+ 
+The data dictionary provides a detailed description of all tables in the database created by the user 
+and designer. Thus, the data dictionary contains at least all of the attribute names and characteristics 
+for each table in the system. In short, the data dictionary contains metadata—data about data.  
+The system catalogue can be described as a detailed system data dictionary that describes all 
+objects wi

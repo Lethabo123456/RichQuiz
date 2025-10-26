@@ -1,0 +1,52 @@
+specifies the queen to be placed in the kth row. Its 
+definition is straightforward and is given next.  
+  
+void nQueensPuzzle::queensConfiguration(int k)  
+{  
+for (int i = 0; i < noOfQueens; i++)  
+{  
+if (canPlaceQueen(k, i))  
+{  
+queensInRow[k] = i;    
+  
+ 
+//place the kth queen in column i  
+if (k == noOfQueens - 1)   
+  
+ 
+//all the queens are placed  
+printConfiguration();    
+ 
+//print the n-tuple  
+else queensConfiguration(k + 1);    
+//determine the place  
+//for the (k+1)th queen  
+}  
+}  
+}  
+  
+void nQueensPuzzle::printConfiguration()  
+{  
+noOfSolutions++; cout 
+<< "(";  
+for (int i = 0; i < noOfQueens - 1; i++) cout 
+<< queensInRow[i] << ", ";  
+cout << queensInRow[noOfQueens - 1] << ")" << endl;  
+}  
+  
+int nQueensPuzzle::solutionsCount()  
+
+168  
+  
+{  
+return noOfSolutions;  
+}  
+  
+We leave it as an exercise for you to write a program to test the n-queens puzzle class for various board 
+sizes.  
+  
+ 
+4.5  
+Recursion, Backtracking, and Sudoku  
+  
+In the previous s

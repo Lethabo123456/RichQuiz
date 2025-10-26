@@ -1,0 +1,37 @@
+4.1.6 File Position  
+ 
+The FileStream class maintains an internal file pointer that points to the location within the file where 
+the next read or write operation will occur. In most cases, when a file is opened, it points to the begin-
+ning of the file, but this pointer can be modified. This enables an application to read or write anywhere 
+ 
+within the file, which in turn enables random access to a file and the capability to jump directly to a spe-
+cific location in the file. This can save a lot of time when dealing with very large files because you can 
+instantly move to the location you want. 
+ 
+The method that implements this functionality is the Seek() method, which takes two parameters. The 
+first parameter specifies how far to move the file pointer, in bytes. The second parameter specifies 
+where to start counting from, in the form of a value from the SeekOrigin enumeration. The SeekOrigin 
+enumeration contains three values: Begin, Current, and End. 
+ 
+For example, the following line would move the file pointer to the eighth byte in the file, starting from 
+the very first byte in the file: 
+ 
+aFile.Seek(8, SeekOrigin.Begin); 
+ 
+The following line would move the file pointer two bytes forward, starting from the current position. If 
+this were executed directly after the previous line, then the file pointer would now point to the tenth 
+byte in the file: 
+ 
+aFile.Seek(2, SeekOrigin.Current); 
+ 
+When you read from or write to a file, the file pointer changes as well. After you have read 10 bytes, the 
+file pointer will point to the byte after the tenth byte read. You can also specify negative seek positions, 
+which could be combined with the SeekOrigin.End 
+enumeration value to seek near the end of the file. The following seeks to the fifth byte from the end of 
+the file: 
+ 
+aFile.Seek(-5, SeekOrigin.End); 
+ 
+Files accessed in this manner are sometimes referred to as random access files because an application 
+can access any position within the file. The Stream classes described later access files sequentially and 
+do not allow you to manipulate the file pointer in this way.

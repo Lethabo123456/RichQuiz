@@ -1,0 +1,60 @@
+output of the following PHP code? 
+<?php 
+$a = "1"; 
+switch($a) 
+{ 
+case 1: 
+    break; 
+    print "hi"; 
+
+IP 621  
+case 2: 
+    print "hello"; 
+    break; 
+default: 
+    print "hi1"; 
+} 
+?> 
+A. hihellohi1 
+B. no output 
+C. hihi1 
+D. hi1 
+ANS: B 
+ 
+50. What will be the output of the following PHP code? 
+    <?php 
+    $a = 5; 
+    $b = 5; 
+    echo ($a === $b); 
+    ?> 
+A. 5 === 5 
+B.  Error 
+C. 1 
+D. False 
+ANS: C 
+ 
+
+IP 621  
+ 
+51. An unitialised variable in PHP is given a default value of ____________ 
+A. 0 (zero) 
+B. null 
+C. default 
+D. None of the above 
+ANS: B 
+ 
+52. PHP allows you to use variables at any point of the script without having explicitly declared them 
+prior 
+A. True 
+B. False 
+ANS: A 
+ 
+53. Which two compound data types are supported by PHP? 
+A. Array and Integer 
+B. Array and float 
+C. Float and Integer 
+D. Array and Object 
+ANS: D 
+ 
+54. Finally, PHP supports two special data types, so called because they don’t contain scalar or    
+compound data. Identify two s

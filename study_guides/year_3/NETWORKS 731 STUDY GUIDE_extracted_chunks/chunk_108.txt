@@ -1,0 +1,27 @@
+For the configuration phase: 
+The next part of setup is the software-based configuration. Increasingly, routers are allowing 
+for wireless setup, the most efficient way to configure a router is to hard wire the router to 
+laptop or computer you are using to set it up with. I do recommend using a laptop or desktop 
+for setup. While vendors are bringing apps to market that will let you set up some routers with 
+a mobile device, currently, using a full computer is the easiest option. This is because you have 
+access to that machine's network settings, which is involved in the first step of configuring the 
+router. 
+ 
+First, the easiest way to get most routers configured is to match the network settings of the 
+computer you are using to setup the router with the router's LAN network settings. Routers 
+have two sets of network information: WAN and LAN. The WAN settings are related to the 
+information received from the ISP that delivers your Internet connectivity. The LAN IP address 
+is the router's IP address and is the address that determines by default, the IP addresses 
+scheming of your internal home network. This is a private IP address not accessible from the 
+Internet, only from your home network. It's also the IP address you type into a browser to get 
+to its management software for configuration.  
+ 
+When documentation refers to the router's IP address, this almost always means the LAN-side 
+IP address. Because just about all consumer routers act as DHCP servers, they will give 
+appropriate network information to any computer connected to them, matching the IP address 
+information of the computer being used to set up the router, with the router's IP information. 
+I have a Trendnet TEW-633GR router, and I want to get to the management interface. After the 
+router is cabled properly and all the lights indicate the connections are active and good, I open 
+a browser and type in the LAN IP address of the router. The LAN IP address is 192.168.3.1. What 
+if I didn't have the documentation or an Internet connection to find out how to get into the 
+management interface?

@@ -1,0 +1,16 @@
+But if you are checking Boolean variables you can miss out the == true. JavaScript will 
+then think you are checking for a true value, which you are. So the whole line reads "IF 
+cookies_enabled equals true AND javascript_enabled equals true".  
+ 
+If both are indeed true then the whole statement between the round brackets 
+becomes true. In which case, the first document.write will get executed. However, if 
+just one of these turns out to be false then the whole statement becomes false. In 
+which case, the else part will be executed. 
+ 
+Once you have finished typing the script, try it out. Now change javascript_enabled = 
+false to javascript_enabled = true. Save the changes and refresh the web page in your 
+browser. You should find that the first document.write will be printed. 
+ 
+The OR operators (||) allow you to check if just one of the values is true. (On a UK 
+keyboard the OR operators are just to the left of the Z key. Hold down a SHIFT key 
+first.) Change your IF statement to

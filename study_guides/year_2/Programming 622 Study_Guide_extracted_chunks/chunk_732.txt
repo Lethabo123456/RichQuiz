@@ -1,0 +1,24 @@
+tion can occur at any node on the 
+path back to the root node.  
+  
+  
+ 
+9.7.2  AVL Tree Rotations  
+  
+We now describe the reconstruction procedure, called rotating the tree. There are two types of rotations: 
+left rotation and right rotation. Suppose the rotation occurs at a node x. If it is a left rotation, then certain 
+nodes fromthe right subtree of x move to its left subtree; the root of the right subtree of x becomes the 
+new root of the reconstructed subtree. Similarly, if it is a right rotation at x, certain nodes from the left 
+subtree of x move to its right subtree; the root of the left subtree of x becomes the new root of the 
+reconstructed subtree.  
+  
+Case 1: Consider Figure 9-18.  
+  
+
+359  
+  
+FIGURE 9-18 Right rotation at b  
+  
+In Figure 9-18, subtrees T1, T2, and T3 are of equal height, say h. The dotted rectangle shows an item 
+insertion in T1, causing the height of the subtree T1 to increase by 1. The subtree at node a is still an AVL 
+tree, but the balance criter

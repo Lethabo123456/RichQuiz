@@ -1,0 +1,22 @@
+3.4.6 The ResultSetInterface  
+The ResuletSet interface defines methods for accessing tables of data generated as the result of executing 
+a Statement. ResultSet column values may be accessed in any order-they are indexed and may be selected 
+by either the name or the number (from 1 to n) of the column. ResultSet maintains the position of the 
+current row, starting with the first row of data returned. The next ( ) method moves to the next row of 
+data. A partial look at the ResultSet interface follows. Vendors that implement this interface have the 
+option of catching the results on the remote side, so there is the possibility of a communication problem. 
+For this reason, the following methods listed below SQLException.  
+
+a) boolean next( ) throws SQLException .  
+Positions the ResultSet to the next row. The ResultSet row position is initially just before the first row of 
+the result set. Method Signature Java Type SQL Type from The Database  
+b) ResultSet MetaData getMetaData( ) throws SQLException  
+Returns an object that contains a description of the current result set, including the number of columns, 
+the type of each column, and properties of the results.  
+
+c) void close() throws SQLException  
+Normally a ResultSet is closed when another SQL statement is executed, but it may bedesirable to release 
+the resources earlier. As with the CallableStatement interface discussed earlier, the resulting data can be 
+read through getType () methods. Note, however, that values can be accessed either via volumn names 
+or column numbers; callable statements can use only column numbers. Recall that column numbers begin 
+at 1.

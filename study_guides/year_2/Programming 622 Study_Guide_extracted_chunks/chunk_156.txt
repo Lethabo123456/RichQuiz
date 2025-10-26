@@ -1,0 +1,22 @@
+ard iterator  
+  
+  
+2.2.1.4 Bidirectional Iterators  
+  
+Bidirectional iterators are forward iterators that can also iterate backward over the elements. Suppose 
+biDirectionalIterator is a bidirectional iterator. The operations defined for forward iterators (Table 2-11) 
+are also applicable to bidirectional iterators. To step backward, the decrement operations are also defined 
+for biDirectionalIterator. Table 2-12 shows additional operations on a bidirectional iterator.  
+  
+TABLE 2-12: Additional operations on a bidirectional iterator  
+  
+  
+2.2.1.5 Random Access Iterators  
+  
+Random access iterators are bidirectional iterators that can randomly process the elements of a container. 
+These iterators can be used with containers of type vector, deque, string, and arrays. The operations 
+defined for bidirectional iterators (for example, Tables 2-11 and 2-12) are also applicable to random access 
+
+75  
+  
+iterators. Table 2-13 describes the additional operations that are defined for ra

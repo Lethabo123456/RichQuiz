@@ -1,0 +1,19 @@
+1.8.3.2 Network Interface Cards 
+Network Interface Cards, commonly referred to as NICs, are used to connect a PC to a network. 
+The NIC provides a physical connection between the networking cable and the computer’s internal 
+bus. Different computers have different bus architectures. PCI bus slots are most commonly found 
+on 486/Pentium PCs and ISA expansion slots are commonly found on 386 and older PCs. NICs 
+come in three basic varieties: 8-bit, 16-bit, and 32-bit. The larger the number of bits that can be 
+transferred to the NIC, the faster the NIC can transfer data to the network cable. Most NICs are 
+designed for a particular type of network, protocol, and medium, though some can serve multiple 
+networks.
+ 
+Many NIC adapters comply with plug-and-play specifications. On these systems, NICs are 
+automatically configured without user intervention, while on non-plug-and-play systems, 
+configuration is done manually through a set-up program and/or DIP switches. 
+Cards are available to support almost all networking standards. Fast Ethernet NICs are often 
+10/100 capable, and will automatically set to the appropriate speed. Gigabit Ethernet NICs are 
+10/100/1000 capable with auto negotiation depending on the user’s Ethernet speed. Full duplex 
+networking is another option where a dedicated connection to a switch allows a NIC to operate at 
+twice the speed. 
+

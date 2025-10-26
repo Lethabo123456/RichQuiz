@@ -1,0 +1,19 @@
+Create the Layout 
+Now that you have a way to get contact data, the next step is to modify the activity_contact_list.xml 
+file to include a RecyclerView widget. Open this file and delete the HelloWorld TextView, if present. 
+You should also add the navigation bar if you haven’t done that already. In Design view, from the 
+Common folder in the Palette, drag a RecyclerView to anywhere on the layout above the navigation 
+bar. Android Studio may ask you to import a design library. Be sure to do so if prompted. A design 
+library is needed for the RecyclerView. Click the top, left, and right buttons on the layout diagram and 
+change the margins to 8 if not already set. In Design view, drag from the button constraint button of 
+the RecyclerView to the top constraint button of the navigation bar and set the margin to 8. Change 
+layout_height and layout_width to match_constraint in the Attributes panel. Give it the id of 
+rvContacts. 
+
+RecyclerView also requires a layout for the individual list item. Right-click on the layouts folder in the 
+res folder and select New > XML > Layout resource file. In the Configure Component window that 
+opens, give the layout the name simple_item_view and make sure the Root tag is LinearLayout. Click 
+Finish. The new layout then will be displayed. In the Attributes panel, change the orientation to 
+horizontal and change layout_height to wrap_content. This is very important. If you don’t change this 
+value, your list will display only one item. Next, drag a TextView to the layout. Give it the id: 
+textViewName. 

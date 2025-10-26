@@ -1,0 +1,25 @@
+Because you have no control over which font definition file the browser will choose for a 
+generic font, the common practice is to list specific fonts first, in order of preference, and end 
+the font stack with a generic font. If the browser cannot find any of the specific fonts listed, it 
+uses a generic font of its own choosing. For example, the style  
+ 
+font-family: 'Arial Black', Gadget, sans-serif; 
+ 
+tells a browser to use the Arial Black font if available; if not, to look for the Gadget font; and if 
+neither of those fonts are available, to use its generic sans-serif font. Note that font names 
+containing one or more blank spaces (such as Arial Black) must be enclosed within single or 
+double quotes. 
+ 
+Because the available fonts vary by operating system and device, the challenge is to choose a 
+font stack limited to web safe fonts, which are fonts that will be displayed in mostly the same 
+way in all operating systems and on all devices.  
+ 
+Specifying a font stack 
+ 
+Exploring Web Fonts 
+Because web safe fonts limit your choices to a select number of fonts that have universal 
+support, another approach is to supply a web font in which the definition font is supplied to 
+the browser in an external file. Figure 2-22 describes the different web font file formats and 
+their current levels of browser support. The format most universally accepted in almost all 
+current browsers and on almost all devices is the Web Open 
+Font Format (WOFF). 

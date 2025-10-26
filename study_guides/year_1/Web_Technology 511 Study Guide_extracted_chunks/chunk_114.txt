@@ -1,0 +1,49 @@
+ Inserting images and links within cells 
+ 
+Here’s how                       Here’s why
+------------------------------------------------------------------------------------
+Open the source code             You’ll add an image of coins to the heading of
+                                 the table.
+------------------------------------------------------------------------------------ 
+Place the insertion point as     <TABLE BORDER WIDTH=50%>
+shown                            <TR>
+                                    <TH COLSPAN=3>Products
+                                 </TR>
+ 
+                                 (Before the word “Products”) To prepare to 
+                                 add the IMG tag. 
+------------------------------------------------------------------------------------
+Enter the following code:        To add the image Coins.gif within the cell. 
+
+<IMG 
+SRC=”./Images/Coins.gif”> 
+------------------------------------------------------------------------------------
+Update and close the source code 
+------------------------------------------------------------------------------------
+Refresh the page and observe     The image appears within the table. 
+the table 
+------------------------------------------------------------------------------------
+Open the source code             You’ll insert a link within a cell to make it easy
+                                 to move to the page Our products.html. 
+------------------------------------------------------------------------------------
+Place the insertion point as     SRC="./Images/Coins.gif">Products
+shown 
+                                 (Before the word “Products”) To prepare to 
+                                 mark the word “Products” as a hyperlink. 
+-------------------------------------------------------------------------------------
+Enter the following code: 
+
+<A HREF=”Our products.html”>
+-------------------------------------------------------------------------------------
+Enter the closing A tag as       <A HREF="Our products.html">Products</A>
+shown 
+-------------------------------------------------------------------------------------
+Update and close the source code
+-------------------------------------------------------------------------------------
+Refresh and observe the page     The word “Products” in the first row is now a
+                                 hyperlink (as shown in Exhibit 0-6). 
+-------------------------------------------------------------------------------------
+Click the hyperlink              To move to the Our products page. 
+-------------------------------------------------------------------------------------
+Move back to the Price list page
+-------------------------------------------------------------------------------------

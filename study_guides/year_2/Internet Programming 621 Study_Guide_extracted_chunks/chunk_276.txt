@@ -1,0 +1,59 @@
+tic $x = 0; 
+function fun() 
+{ 
+echo $x; 
+$x++; 
+} 
+
+fun(); 
+fun(); 
+fun(); 
+?> 
+  
+a) 012 
+b) 123 
+c) Nothing 
+d) Error 
+  
+Answer: c 
+  
+189. 
+What will be the output of the following PHP code ? 
+<?php 
+$x=0; 
+function fun() 
+{ 
+echo $GLOBALS['x']; 
+$GLOBALS['x']++; 
+} 
+fun(); 
+fun(); 
+fun(); 
+?> 
+a) 000 
+b) 012 
+c) 123 
+d) Error 
+  
+Answer: b 
+ . 
+190. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 0; 
+function fun() 
+{ 
+echo $GLOBALS['x']; 
+$x++; 
+
+} 
+fun(); 
+fun(); 
+fun(); 
+?> 
+a) 000 
+b) 012 
+c) Nothing 
+d) Error 
+  
+Answer: a

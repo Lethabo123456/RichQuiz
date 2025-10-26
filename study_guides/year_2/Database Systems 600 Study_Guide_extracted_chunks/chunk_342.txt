@@ -1,0 +1,25 @@
+the 
+whole DBLC process begins anew. 
+As you can see, many of the activities described in the DBLC are similar to those in the SDLC. 
+This should not be surprising because the SDLC is the framework within which the DBLC activities 
+take place. A summary of the parallel activities that occur within the SDLC and DBLC is shown in 
+Figure 9.8. 
+ 
+ 
+ 
+ 
+ 
+
+ 
+141 
+ 
+ 
+5.4 Conceptual Design 
+ 
+Recall that the second phase of the DBLC is database design, which comprises three stages: 
+conceptual design, logical design, and physical design, plus the critical decision of DBMS selection. 
+Conceptual design is the first stage in the database design process. The goal at this stage is to design 
+a database that is independent of database software and physical details. The output of this process 
+is a conceptual data model that describes the main data entities, attributes, relationships, and 
+constraints of a given problem domain. This design is descriptive and narrative in form. In other 
+words, it

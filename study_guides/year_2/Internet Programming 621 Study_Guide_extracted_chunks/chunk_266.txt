@@ -1,0 +1,75 @@
+("GREETING", "Welcome to Narnia"); 
+echo greeting; 
+} 
+?> 
+  
+a) Welcome to Narnia 
+b) greeting 
+c) GREETING 
+d) ERROR 
+  
+Answer: d 
+  
+145. 
+5. What will be the output of the following PHP code ? 
+<?php 
+function constant() 
+{ 
+define("GREETING", "Welcome to Narnia",true); 
+echo greeting; 
+} 
+?> 
+a) Welcome to Narnia 
+b) greeting 
+c) GREETING 
+d) ERROR 
+  
+Answer: a 
+  
+146. 
+What will be the output of the following PHP code ? 
+<?php 
+function start($string) 
+{ 
+if ($string < 45) 
+
+return 20; 
+else 
+return 40; 
+} 
+$t = start(90); 
+if ($t < 20) 
+{ 
+echo "Have a good day!"; 
+} 
+else 
+{ 
+echo "Have a good night!"; 
+} 
+?> 
+a) Have a good day! 
+b) Have a good night! 
+c) ERROR 
+d) None of the above 
+  
+Answer: b 
+  
+147. 
+What will be the output of the following PHP code ? 
+<?php 
+function case() 
+{ 
+ECHO "Hello World!<br>"; 
+echo "Hello World!<br>"; 
+EcHo "Hello World!<br>"; 
+} 
+case(); 
+?> 
+a) Hello World! 
+b) Hello World! 
+Hello World! 
+c) Hello World! 
+Hello World! 
+Hello World! 
+
+d) N

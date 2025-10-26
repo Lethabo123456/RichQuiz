@@ -1,0 +1,21 @@
+Report 
+The nature of any report resulting from a forensic investigation depends on the original purpose of 
+the investigation. In general, SP 800-86 lists the following factors that affect reporting for any type of 
+investigation: 
+ 
+ Alternative explanations: The available information may not provide a definitive explanation 
+of the cause and nature of an incident. The analyst should present the best possible 
+conclusions and highlight alternative explanations. 
+ Audience consideration: An incident requiring law enforcement involvement requires highly 
+detailed reports of all information gathered and can also require copies of all evidentiary data 
+obtained. A system administrator might want to see network traffic and related statistics in 
+great detail. Senior management might simply want a high-level overview of what happened, 
+such as a simplified visual representation of how the attack occurred and what should be done 
+to prevent similar incidents. 
+ Actionable information: Reporting also includes identifying actionable information gained 
+from data that allows an analyst to collect new sources of information. For example, a list of 
+contacts may be developed from the data that can lead to additional information about an 
+incident or a crime. Also, information that is obtained might help prevent future events, such 
+as learning about a backdoor on a system that is to be used for future attacks, a crime that is 
+being planned, a worm scheduled to start spreading at a certain time, or a vulnerability that 
+could be exploited.

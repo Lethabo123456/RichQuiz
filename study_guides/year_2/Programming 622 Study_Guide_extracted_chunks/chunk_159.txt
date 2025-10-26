@@ -1,0 +1,32 @@
+o process the elements of those vector containers that are declared as 
+constant vector containers of type vector<int>.  
+  
+An iterator of type const_iterator is a read-only iterator.  
+  
+typedef reverse_iterator Every container also contains the typedef reverse_iterator. An iterator of this 
+type is used to iterate through the elements of a container in reverse.  
+  
+typedef const_reverse_iterator An iterator of this type is a read-only iterator and is used to iterate through 
+the elements of a container in reverse. It is required if the container is declared as const and we need to 
+iterate through the elements of the container in reverse.  
+  
+In addition to the previous four typedefs, several other typedefs are common to all containers. Table 2- 
+14 describes them.  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+  
+
+77  
+  
+TABLE 2-14: Various typedefs common to all containers  
+  
+  
+2.2.1.6 Stream Iterators  
+  
+Another useful set of iterators is stream iterators—istream iterators and ostream iterators

@@ -1,0 +1,13 @@
+he first step is to identify all the entities you want to store data about. This is usually done by 
+interviewing the firm’s managers and staff. If there are too many of them to interview, 
+sometimes database designers will use a questionnaire to get opinions from as many people as 
+possible. If you are designing a database for a student project, you will probably think that this 
+first step is the easy bit, but in fact getting the right list of entities is vital if your data model is 
+to be useful, and it is often not a trivial task, specifically because you have to inter- view 
+different people and each might give you a different list! (This problem is examined more 
+closely in a later chapter on system development.) 
+ 
+Identify Relationships 
+You next need to identify any relationships that exist between entities. The sort of relationships 
+that you have to identify are relationships that the firm wants to store information about. For 
+example, there might be a relationship between

@@ -1,0 +1,27 @@
+an one value to check for your variables. You can do 
+the checking with a lot of if ... else statements. Or you can use something called a 
+switch statement. Here is an example: 
+ 
+var age = 17; 
+switch (age)  
+{ 
+case 17: 
+document.write("under 18"); 
+break; 
+case 24: 
+document.write("over 18"); 
+break; 
+default:  
+document.write("can't tell"); 
+break; 
+} 
+ 
+In this example, we have set up a variable called age. We have then stored a value of 
+17 in the age variable. The switch statement examines what this value is. If it is the 
+case that age hold a value of 17 then its code gets executed. The break keyword is for 
+escaping the switch statement. If you miss it out JavaScript will continue downwards 
+and assume all your other cases are true, thus executing the rest of the case code. If 
+none of your cases apply, a default value can be added. 
+ 
+But note the syntax for the switch statement. The word switch is lowercase. After this, 
+you have a pair of round brackets. Inside the round b

@@ -1,0 +1,21 @@
+To detect failures, clustered servers regularly poll each other on the network, asking, “Are you 
+still there?” They then wait a specified period of time before again asking, “Are you still 
+there?” If they don’t receive a response from one of their counterparts, the clustering 
+software initiates the failover. This process can take anywhere from a few seconds to a minute 
+because all information about a failed server’s shared resources must be gathered by the 
+cluster. Unlike with mirroring, users will not notice the switch. Later, when the other servers 
+in the cluster detect that the missing server has been replaced, they automatically relinquish 
+that server’s responsibilities. The failover and recovery processes are transparent to network 
+users.  
+ 
+Often, clustering is implemented among servers located in the same data room. However, 
+some clusters can contain servers that are geographically distant from each other. One factor 
+to consider when separating clustered servers is the time required for the servers to 
+communicate. For example, Microsoft recommends ensuring a return-trip latency of less than 
+500 milliseconds for requests to clustered servers. Thus, clusters that must appear as a single 
+storage entity to LAN clients depend on fast WAN or MAN connections. They also require close 
+attention to their setup and configuration, as they are more complex to install than clusters 
+of servers on the same LAN. 
+Like mirroring, clustering is implemented through a combination of software and hardware. 
+Microsoft Windows Server 2008 R2 incorporates options for server clustering. Clustering has 
+been part of UNIX-type operating systems since the early 1990s

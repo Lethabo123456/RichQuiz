@@ -1,0 +1,29 @@
+Resolving Names with the Hosts File 
+ 
+The hosts ﬁle is really a lot like DNS, except its entries are static for each and every host and server. 
+Within the Hosts table, you’ll ﬁnd a collection of hostnames that devices reference for name- 
+resolution purposes. And even though it works in both IPv4 and IPv6 environments, it’s unlikely 
+you will use it these days because the hosts ﬁle is a way-ancient relic left over from old Unix 
+machines. 
+
+But just because it belongs in a museum, that doesn’t mean you won’t run into it now and then, 
+which is the main reason I’m showing it to you. You can ﬁnd the Hosts table in 
+C:\Windows\System32\drivers\etc. Just double-click the ﬁle, and then choose to open the ﬁle in 
+Notepad or another text editor. Here’s the default information, it’s really nothing more than an 
+explanation of how to use it and the local hosts for both IP and IPv6: 
+ 
+Figure 5.19: HOST ﬁle (Lammle, 2022) 
+
+Any information entered to the right of a pound sign (#) in a hosts ﬁle is ignored, so you can use 
+this space for comments. Because it’s a plain ASCII text ﬁle, you add the IP address under the local 
+hosts and then the name to which you want to resolve the IP address. It’s a simple conﬁguration, 
+and again, one I don’t recommend using because you must type in the names of every host on 
+every machine in your network. DNS is the name resolution of choice for networks today. Do not 
+get the hosts ﬁle confused with the hostname command. The hostname command doesn’t do 
+much but displays the name of your host, as shown here: 
+
+C:\Users\tlammle>hostname /? 
+Prints the name of the current host. 
+hostname 
+C:\Users\tlammle>hostname 
+globalnet-todd 

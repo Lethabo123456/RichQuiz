@@ -1,0 +1,61 @@
+special data types, so called because they don’t contain scalar or    
+compound data. Identify two special data types supported by PHP 
+A. Array and Object 
+B. Integer and Float 
+C. Resource and Null 
+
+IP 621  
+D. None of the above 
+ANS: C 
+ 
+55. Consider the following code block: 
+ 
+<php 
+ 
+$testVar; 
+ 
+$testVar = “moodley”; 
+ 
+$testVar = 89.6; 
+ 
+$testVar = 67; 
+echo gettype($testVar); 
+ 
+ 
+?> 
+The output of this program is: 
+A. error 
+B. String 
+C. Integer 
+D. Double 
+ANS: C 
+ 
+56. Consider the following code block 
+ 
+<?php  
+$test_var = 8.23; 
+settype( $test_var, “integer” ); 
+echo $test_var . “ < br / > ”;  
+?> 
+ 
+The output of this program is _____________ 
+A. 8.23 
+B. 8 
+C.8.0 
+
+IP 621  
+D. 8.2 
+ANS: B 
+ 
+ 
+57. PHP is an interpreted language,  
+A. True 
+B. False 
+ANS: A 
+ 
+ 
+58. Which statement is not true about PHP? 
+A. PHP is a server side scripting language 
+B. PHP is a client side scripting language 
+C. PHP is used to make websites dynamic and interactive 
+D. PHP code can be

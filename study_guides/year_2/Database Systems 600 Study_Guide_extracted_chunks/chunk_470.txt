@@ -1,0 +1,16 @@
+tions in character data  
+ 
+Different decompositions of composite attributes into simple attributes across systems  
+ 
+Some causes of dirty data, such as improper implementation of constraints, can be addressed within 
+an individual database. However, addressing other causes is more complicated. Some dirty data 
+comes from the movement of data across systems, as in the creation of a data warehouse. Efforts to 
+control dirty data are generally referred to as data quality initiatives. 
+Data quality is a comprehensive approach to ensuring the accuracy, validity, and timeliness of data. 
+This comprehensive approach is important because data quality involves more than just cleaning 
+dirty data; it also focuses on preventing future inaccuracies and building user confidence in the data. 
+While data quality efforts vary greatly from one organization to another, most involve the following:  
+ 
+A data governance structure that is responsible for data quality  
+ 
+ Measurements of current data

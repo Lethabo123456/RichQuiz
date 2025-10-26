@@ -1,0 +1,59 @@
+One of the inputs to the categorize step consists of architecture considerations. These considerations 
+include: 
+
+ Information security architecture: Recall from Chapter 2, “Security Governance,” that this 
+is defined as a description of the structure and behavior for an enterprise’s security 
+processes, information security systems, personnel, and organizational sub-units, 
+showing their alignment with the enterprise’s mission and strategic plans. 
+ Mission and business processes: This refers to what the organization does, what the 
+perceived mission or missions are, and what business processes are involved in fulfilling 
+the mission. 
+ Information system boundaries: These boundaries, also referred to as authorization 
+boundaries, establish the scope of protection for organizational information systems (that 
+is, what the organization agrees to protect under its direct management control or within 
+the scope of its responsibilities) and include the people, processes, and information 
+technologies that are part of the systems supporting the organization’s missions and 
+business processes. 
+
+The other major type of input to the categorize step consists of organizational inputs, including: 
+ Laws, directives, and policy guidance 
+ Strategic goals and objectives 
+ Priorities and resource availability 
+ Supply chain considerations 
+Before proceeding, let’s distinguish some interrelated concepts that are essential to information 
+classification: 
+ Information type: A specific category of information (for example, privacy, medical, 
+proprietary, financial, investigative, contractor sensitive, security management) defined 
+by an organization or, in some instances, by a specific law, directive, policy, or regulation. 
+ Security objective: The characteristic of security to be achieved, which typically consists 
+of confidentiality, integrity, and availability. 
+ Impact: An adverse change to the level of business objectives achieved. Also called impact 
+level or impact value. Typically either three (low, medium, high) or five (very low, low, 
+medium, high, very high) levels are used. 
+ Security classification: The grouping of information into classes that reflect the value of 
+the information and the level of protection required. Also called security categorization. 
+
+Classification provides people who deal with information with a concise indication of how to handle 
+and protect that information. Creating groups of information with similar protection needs and 
+specifying information security procedures that apply to all the information in each group facilitates 
+this. For example, an access control policy may dictate that access to a certain group of information is 
+limited to personnel in certain defined roles. This approach reduces the need for case-by-case risk 
+assessment and custom design of controls. 
+
+The way classification is approached varies from one standards body to another. ISO 27001 indicates 
+that information is to be classified in terms of legal requirements, value, criticality, and sensitivity to 
+unauthorized disclosure or modification. ISO 27002, Code of Practice for Information Security 
+Controls, provides further guidance, stating that results of classification should indicate value of 
+assets, depending on their sensitivity and criticality to the organization (for example, in terms of 
+confidentiality, integrity, and availability). 
+
+FIPS 199, Standards for Security Categorization of Federal Information and Information Systems, 
+provides a more precise definition of security categories, specifying the following generalized format 
+for expressing a security category: 
+SC information type = {(confidentiality, impact), (integrity, impact), (availability, impact)} 
+Thus, in FIPS 199, the category for an information type consists of three values. An organization may 
+instead use a more descriptive set of terms and may make a distinction between critical and sensitive 
+information, as discussed in Chapter, “People Management.” 
+NIST SP 800-60, Guide for Mapping Types of Information and Information Systems to Security 
+Categories, defines the security categorization process as consisting of four steps, as shown in Figure 
+6.2. The following sections examine these four steps.

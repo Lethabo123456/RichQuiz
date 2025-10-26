@@ -1,0 +1,42 @@
+3.2.5 Multicasting 
+At times it is desirable to multicast , or call two implementing methods through a single delegate. 
+The goal is to have a single delegate that invokes more than one method. This is different from having a collection of delegates, 
+each of which invokes a single method. In the previous example, the collection was used to order the various delegates. It was 
+possible to add a single delegate to the collection more than once and to use the collection to reorder the delegates to control 
+their order of invocation. 
+
+With multicasting, you create a single delegate that will call multiple encapsulated methods. For example, when a button is 
+pressed, you might want to take more than one action. You could implement this by giving the button a collection of delegates, 
+but it is  cleaner and easier to create a single multicast delegate. 
+Two delegates can be combined with the addition operator (+). The result is a new multicast delegate that invokes both of 
+the original implementing methods. For example, assuming Writer and Logger are delegates, the following line will com-
+bine them and produce a new multicast delegate named myMulticastDelegate: 
+myMulticastDelegate = Writer + Logger; 
+You can add delegates to a multicast delegate using the plus-equals (+=) operator. This operator adds the delegate  
+on the right side of the operator to the multicast delegate on the left. For example, assuming 
+
+Transmitter and myMulticastDelegate are delegates, the following line adds Transmitter to myMulti-
+castDelegate: 
+ 
+myMulticastDelegate += Transmitter; 
+
+To  see how multicast delegates are created and used, let's walk through a complete example. In Example 3-2, 
+you create a class called MyClassWithDelegate, which defines a delegate that takes a string as a parameter 
+and returns void: 
+public delegate void StringDelegate(string s); 
+You then define a class called MyImplementingClass, which has three methods, all of which return void and 
+take a string as a parameter: WriteString, LogString, and TransmitString. The first writes the string to 
+standard output, the second simulates writing to a log file, and the third simulates transmitting the string across the 
+Internet. You instantiate the delegates to invoke the appropriate methods: 
+Writer("String passed to Writer\n"); 
+Logger("String passed to Logger\n");  
+Transmitter("String passed to Transmitter\n"); 
+ 
+To see how to combine delegates, create another Delegate instance: 
+MyClassWithDelegate . StringDelegate myMulticastDelegate; 
+Assign to it the result of "adding" two existing delegates: 
+myMulticastDelegate = Writer + Logger; 
+Add an additional delegate to this delegate using the += operator: 
+myMulticastDelegate += Transmitter; 
+Finally, selectively remove delegates using the -= operator: 
+DelegateCollector -= Logger;

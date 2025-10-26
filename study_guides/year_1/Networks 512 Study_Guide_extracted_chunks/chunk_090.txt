@@ -1,0 +1,24 @@
+Figure 1- 8: Prices of Devices Example 
+
+Example Prices of Devices 
+Let’s use the Lantronix UDS100 Device Server as an example of how to network a RAID controller 
+serial port. The user simply cables the UDS100‘s serial port to the RAID controller’s serial port and 
+attaches the UDS100’s Ethernet interface to the network. Once it has been configured, the 
+UDS100 makes that serial ports a networked port, with its own IP address. The user can now 
+connect to the UDS100‘s serial port over a network, from a PC or terminal emulation device and 
+perform the same commands as if he was using a PC directly attached to the RAID controller. 
+Having now become network enabled, the RAID can be managed or controlled from anywhere on 
+the network or via the Internet. 
+
+The key to network-enabling serial equipment is in a device server’s ability to handle two separate 
+areas: 
+
+1. the connection between the serial device and the device server 
+2. the connection between the device server and the network (including other network 
+devices) 
+Traditional terminal, print and serial servers were developed specifically for connecting terminals, 
+printers and modems to the network and making those devices available as networked devices. 
+Now, more modern demands require other devices be network-enabled, and therefore device 
+servers have become more adaptable in their handling of attached devices. Additionally, they have 
+become even more powerful and flexible in the manner in which they provide network 
+connectivity. 

@@ -1,0 +1,19 @@
+riginally considered an attribute might turn out 
+to contain a sufficient number of subcomponents to warrant the introduction of one or more 
+new entities.  
+ 
+The focus on attribute details can provide clues about the nature of relationships as they are 
+defined by the primary and foreign keys. Improperly defined relationships lead to 
+implementation problems first and to application development problems later.  
+ 
+To satisfy processing and end-user requirements, it might be useful to create a new primary key 
+to replace an existing primary key. For example, in the example illustrated in Figure 9.9, a 
+surrogate primary key (RENTAL_ID) could be introduced to replace the original primary key 
+composed of VIDEO_ID and CUST_NUM. 
+ 
+Unless the entity details (the attributes and their characteristics) are precisely defined, it is 
+difficult to evaluate the extent of the design’s normalization. Knowledge of the normalization 
+levels helps guard against undesirable redundancies.  
+
+ 
+146

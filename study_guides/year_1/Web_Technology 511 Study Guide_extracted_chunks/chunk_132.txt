@@ -1,0 +1,19 @@
+font-family: fonts; 
+Where fonts is a comma-separated list, also known as a font stack, of specific or generic font 
+names. A specific font is a font that is identified by name, such as Times New Roman or 
+Helvetica, and based on a font definition file that is stored on the user’s computer or 
+accessible on the web. A generic font describes the general appearance of the characters in 
+the text but does not specify any particular font definition file. Instead,  the font definition 
+file is selected by the browser to match the general characteristics of 
+the generic font. CSS supports the following generic font groups: 
+
+1. serif—a typeface in which a small ornamentation appears at the tail end of each 
+character 
+2. sans-serif—a typeface without any serif ornamentation. 
+3. monospace—a typeface in which each character has the same width; often used to 
+display programming code. 
+4. cursive—a typeface that mimics handwriting with highly stylized elements and 
+flourishes; best used in small doses for decorative page elements. 
+5. fantasy—a highly ornamental typeface used for page decoration; should never be used 
+as body text. 
+  

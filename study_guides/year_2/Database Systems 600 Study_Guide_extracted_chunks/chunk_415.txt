@@ -1,0 +1,17 @@
+timizers will choose only one index to be the driving index for a query, even if your query 
+uses conditions in many different indexed columns. Which index does the optimizer use? If you use 
+the cost-based optimizer, the answer will change with time as new rows are added to or deleted 
+from the tables. In any case, you should create indexes in all search columns and then let the 
+optimizer choose. It is important to constantly evaluate the index usage—monitor, test, evaluate, 
+and improve it if performance is not adequate. 
+Conditional Expressions 
+A conditional expression is normally placed within the WHERE or HAVING clauses of a SQL 
+statement. Also known as conditional criteria, a conditional expression restricts the output of a 
+query to only the rows that match the conditional criteria. Generally, the conditional criteria have 
+the form shown in Table 11.6.  
+
+ 
+167 
+ 
+Most of the query optimization techniques mentioned below are designed to make the optimizer’s 
+work easier. The

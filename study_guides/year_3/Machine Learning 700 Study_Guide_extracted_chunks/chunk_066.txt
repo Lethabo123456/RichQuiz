@@ -1,0 +1,37 @@
+Let’s look at the first couple of principal components: 
+ 
+Although we cannot fully comprehend all the details captured by these components, we can make 
+educated guesses about what aspects of the face images they represent. For example, the first 
+component seems to primarily capture the contrast between the face and its background, while the 
+second component appears to reflect lighting differences between the left and right sides of the face, 
+and so on. While this representation is somewhat more interpretable than the raw pixel values, it still 
+differs significantly from how a human would perceive a face. Since PCA is based on pixel values, factors 
+such as the alignment of facial features (like the eyes, chin, and nose) and the lighting conditions strongly 
+influence how similar two images are in terms of their pixel representations. However, alignment and 
+lighting are not typically the primary factors humans use to judge facial similarity. People tend to focus 
+on attributes like age, gender, facial expression, and hairstyle, which are difficult to derive from pixel 
+intensity alone. It's important to remember that algorithms often interpret data—especially visual data 
+like images—in ways that differ from human perception. 
+Let’s come back to the specific case of PCA, though. We introduced the PCA transformation as rotating 
+the data and then dropping the components with low variance. Another useful interpretation is to try to 
+find some numbers (the new feature values after the PCA rotation) so that we can express the test points 
+as a weighted sum of the principal components. 
+
+In this context, x0, x1, and so on represent the coefficients of the principal components for a given data 
+point, essentially providing the image's representation in the transformed space. Another way to gain 
+insight into the workings of a PCA model is by examining the reconstructions of the original data using 
+only a subset of the components. As demonstrated in figure above, after removing the second 
+component and reaching the third panel, we reversed the rotation and reintroduced the mean to obtain 
+new points in the original space with the second component excluded, as shown in the final panel. A 
+similar transformation can be applied to face images by reducing the data to a smaller number of 
+principal components, then reversing the transformation back into the original space. This return to the 
+original feature space can be accomplished using the inverse_transform method. In this case, we visualize 
+the reconstruction of several faces using 10, 50, 100, 500, or 2,000 components.
+
+You can see that when we use only the first 10 principal components, only the essence of the picture, 
+like the face orientation and lighting, is captured. By using more and more principal components, more 
+and more details in the image are preserved. This corresponds to extending the sum to include more and 
+more terms. Using as many components as there are pixels would mean that we would not discard any 
+information after the rotation, and we would reconstruct the image perfectly. We can also try to use PCA 
+to visualize all the faces in the dataset in a scatter plot using the first two principal components, with 
+classes given by who is shown in the image, similarly to what we did for the cancer dataset: 

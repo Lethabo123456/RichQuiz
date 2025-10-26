@@ -1,0 +1,53 @@
+If we plug in these values into the formula for the z-score, we will get: 
+ 
+This is no coincidence! When we standardize the data using the z-score, our standard 
+deviations become the metric of choice. Let's see our new graph with the standard deviations 
+plotted: 
+plt.bar(y_pos, z_scores) plt.plot((0, 25), (1, 1), 'g-') 
+plt.plot((0, 25), (0, 0), 'b-') plt.plot((0, 25), (-1, -1), 
+'r-') 
+The preceding code is adding in the following three lines: 
+• A blue line at y = 0 that represents zero standard deviations away from the mean 
+(which is on the x axis) 
+• A green line that represents one standard deviation above the mean 
+• A red line that represents one standard deviation below the mean 
+ 
+
+The colours of the lines match up with the lines drawn in the earlier graph of the raw friend 
+count. If you look carefully, the same people still fall outside of the green and the red lines. 
+Namely, the same three people still fall below the red (lower) line, and the same three people 
+fall above the green (upper) line. 
+
+Under this scaling, we can also use statements as follows: 
+
+• This data point is over one standard deviation away from the mean: 
+• This person has a friend count within one standard deviation from the mean: 
+ 
+Z-scores are an effective way to standardize data. This means that we can put the entire set 
+on the same scale. For example, if we also measure each person's general happiness scale 
+(which is between 0 and 1), we might have a dataset like the following dataset: 
+friends = [109, 1017, 1127, 418, 625, 957, 89, 950, 946, 797, 981, 125, 455, 731, 1640, 
+485, 1309, 472, 1132, 1773, 906, 531, 742, 621] 
+happiness = [.8, .6, .3, .6, .6, .4, .8, .5, .4, .3, .3, .6, .2, .8,  
+1, .6, .2, .7, .5, .3, .1, 0, .3, 1] 
+
+import pandas as pd 
+df = pd.DataFrame({'friends':friends, 'happiness':happiness}) df.head() 
+
+These data points are on two different dimensions, each with a very different scale. The friend 
+count can be in the thousands while our happiness score is stuck between 0 and 1. 
+To remedy this (and for some statistical/machine learning modelling, this concept will 
+become essential), we can simply standardize the dataset using a prebuilt standardization 
+package in scikit-learn, as follows: from sklearn import preprocessing 
+df_scaled = pd.DataFrame(preprocessing.scale(df), columns = ['friends_ scaled', 
+'happiness_scaled']) df_scaled.head() 
+
+This code will scale both the friends and happiness columns simultaneously, thus revealing 
+the z-score for each column. It is important to note that by doing this, the preprocessing 
+module in sklearn is doing the following things separately for each column: 
+
+• Finding the mean of the column 
+• Finding the standard deviation of the column 
+• Applying the z-score function to each element in the column 
+
+ 

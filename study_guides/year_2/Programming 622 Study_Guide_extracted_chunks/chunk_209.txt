@@ -1,0 +1,35 @@
+he Data of the Last Node  
+  
+The function back returns the info contained in the last node. Its definition is as follows:  
+  
+template <class Type>  
+Type linkedListType<Type>::back() const  
+{ assert(last != NULL);  
+return last->info;   
+  
+  
+//return the info of the last node }//end 
+back  
+  
+Notice that if the list is empty, the assert statement terminates the program. Therefore, before calling this 
+function, you have to check to see whether the list is nonempty.  
+  
+From the definitions of the functions length, front, and back, it follows easily that each of these functions 
+are of O(1).  
+  
+3.2.11 Begin and End  
+  
+The function begin returns an iterator to the first node in the linked list and the function end returns an 
+iterator to the last node in the linked list. Their definitions are as follows:  
+  
+
+104  
+  
+template <class Type>  
+linkedListIterator<Type> linkedListType<Type>::begin()  
+{  
+linkedListIterator<Type> temp(first); return 
+temp;  
+}  
+  
+template <cla

@@ -1,0 +1,32 @@
+If not, then maybe this is not an operation the hardware or software is designed to do. You can 
+inform the user that the system won’t do the operation (or that they may need additional hardware 
+or software to do it).  
+If so, when did you become unable to do it?  
+If the computer was able to do the operation and then suddenly could not, the conditions that 
+surround this change become extremely important. You may be able to discover the cause of the 
+problem if you know what happened immediately before the change. It is likely that the cause of the 
+problem is related to the conditions surrounding the change. 
+Has anything changed since you were last able to do this? 
+Most often, the thing that changed before the problem started is the source of the problem. When 
+you ask this question of a user, the answer is typically that nothing has changed, so you might need 
+to rephrase it. For example, you can try asking, “Did anyone add anything to your computer?” or 
+“Are you doing anything that’s different from the way you normally precede?”  
+Were any error messages displayed? 
+Are other people experiencing this problem? 
+
+2.7.1 Troubleshooting Tools to consider 
+Both using GUI and Command line to verify TCP/IP function on windows workstations. Check listed 
+which are the common ones to be used: 
+.Traceroute (tracert in Microsoft) 
+.ipconfig/winipcfg (ifconfig in UNIX) 
+.ping 
+.arp 
+.nslookup (dig in UNIX) 
+.Mtr (pathping) 
+.route 
+.nbtstat 
+.netstat 
+.ftp 
+.telnet 
+
+For the last two .ftp and .telnet has been explained under the Server Application subtopic.

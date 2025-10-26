@@ -1,0 +1,20 @@
+ly under special conditions depending on the 
+increment sequence. Empirical studies suggest that for large lists of size n, the number of moves is in the 
+range of n1.25  to 1.6n1.25, which is a considerable improvement over insertion sort.  
+  
+  
+
+296  
+  
+ 
+8.6  
+Lower Bound on Comparison-Based Sort Algorithms  
+  
+The previous sections discussed selection sort and insertion sort, and noted that the average case 
+behavior of these algorithms is O(n2). Both of these algorithms are comparison-based algorithms; that is, 
+the lists are sorted by comparing their respective keys. Before discussing any additional sorting algorithms, 
+let us discuss the best-case scenario for the comparisonbased sorting algorithms.  
+  
+We can trace the execution of a comparison-based algorithm using a graph called a comparison tree. Let 
+L be a list of n distinct elements, where n> 0. For any j and k, where 1 ≤ j, k ≤ n, either L* j+ < L*k+ or L* j+ 
+> L[k]. Because each comparison of the keys has two outc

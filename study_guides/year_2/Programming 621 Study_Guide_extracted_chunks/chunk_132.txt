@@ -1,0 +1,28 @@
+otation marks.  
+The statement:  
+string name = "William Jacob"; declares name to be a string variable and initializes 
+name to "William Jacob" 
+Other operators, such as the binary operator + (to allow the string concatenation 
+operation) and the array index (subscript) operator [], have also been defined for the 
+data type string. Let’s see how these operators work on the string data type. Suppose 
+you have the following declarations: 
+string str1, str2, str3; 
+The statement:  
+str1 = "Hello There"; 
+
+116 | P a g e  
+ 
+stores the string "Hello There" in str1. The statement:  
+str2 = str1;  
+copies the value of str1 into str2. 
+If str1 = "Sunny", the statement:  
+str2 = str1 + " Day";  
+stores the string "Sunny Day" into str2.  
+Suppose str1 = "Hello" and str2 = "There". The statement:  
+str3 = str1 + " " + str2; 
+ stores "Hello There" into str3. This statement is equivalent to the statement: 
+ str3 = str1 + ' ' + str2; 
+ 
+If str1 = "Hello there", the statement:  
+str1[6] = 'T';  
+repl

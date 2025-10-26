@@ -1,0 +1,57 @@
+Here, each statement may be a single statement or a compound statement enclosed in curly braces 
+(that is, a block). The condition is any expression that returns a boolean value.The else clause is 
+optional.The if works like this: If the condition is true, then statement1 is executed.  
+Otherwise, statement2 (if it exists) is executed. In no case will both statements be executed. For 
+example, consider the following:   
+   
+int a, b; //  
+...   
+if(a < b) a = 0;   
+   
+else b = 0;   
+Here, if a is less than b, then a is set to zero. Otherwise, b is set to zero. In no case are they both set 
+to zero.Most often, the expression used to control the if will involve the relational 
+operators.However, this is not technically necessary. It is possible to control the if using a single 
+boolean variable, as shown in this code fragment: boolean dataAvailable;   
+   
+// ...   
+if (dataAvailable) 
+ProcessData();  
+else   
+   
+waitForMoreData();   
+Remember, only one statement can appear directly after the if or the else. If you want to include 
+more statements, you’ll need to create a block, as in this fragment:    
+int bytesAvailable;    
+// ...   
+   
+if (bytesAvailable > 0) { 
+ProcessData(); 
+bytesAvailable -= n;   
+
+} else   
+   
+waitForMoreData();   
+
+Here, both statements within the if block will execute if bytesAvailable is greater than zero. Some 
+programmers find it convenient to include the curly braces when using the if,even when there is 
+only one statement in each clause. This makes it easy to add another statement at a later date, and 
+you don’t have to worry about forgetting the braces. In fact, forgetting to define a block when one 
+is needed is a common cause of errors. For example, consider the following code fragment:    
+int bytesAvailable;   
+// ...   
+if (bytesAvailable > 0) {   
+   
+ProcessData();   
+ 
+bytesAvailable -= n;   
+} else   
+   
+waitForMoreData();   
+ 
+bytesAvailable = n;   
+It seems clear that the statement bytesAvailable = n; was intended to be executed inside the else 
+clause, because of the indentation level. However, as you recall, whitespace is insignificant to Java, 
+and there is no way for the compiler to know what was intended. This code will compile without 
+complaint, but it will behave incorrectly when run. The preceding example is fixed in the code that 
+follows: int bytesAvailable;   

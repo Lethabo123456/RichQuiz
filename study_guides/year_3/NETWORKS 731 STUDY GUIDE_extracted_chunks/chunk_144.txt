@@ -1,0 +1,43 @@
+Pros 
+• Faster than PPTP, SSTP and L2TP, as it does not involve the overhead associated 
+with Point-to-Point protocols (PPP) 
+• Very stable – especially when switching network or reconnecting after a lost 
+internet connection 
+• Very secure – supports AES 128, AES 192, AES 256 and 3DES ciphers 
+• Easy to setup (at least at the user-end!) 
+• Protocol is supported on Blackberry devices 
+• Uses Perfect Forward Secrecy 
+  
+Cons 
+• Not supported on many platforms 
+• Implementing IKEv2 at the server-end is tricky, which is something that could 
+potentially result in issues developing 
+• We only trust open source implementations 
+ 
+Issues 
+In order to understand encryption, there are a number of key concepts that need to be 
+grasped. 
+ 
+Encryption key length 
+Key length is the crudest way of determining how long a cipher will take to break, as it is the 
+raw number of ones and zeros used in a cipher. Similarly, the crudest form of attack on a 
+cipher is known as a brute force attack (or exhaustive key search), which involves trying every 
+possible combination until the correct one is found. 
+Encryption used by VPN providers is invariably between 128-bits and 256-bits in key length 
+(with higher levels used for handshake and data authentication), but what does this mean, 
+and is 256-bit encryption really more secure than 128-bit encryption? 
+ 
+• A 128-bit key cipher would require 3.4 x10(38) operations to reliably break 
+• In 2011 the fastest supercomputer in the word (the Fujitsu K computer located in Kobe, 
+Japan) was capable of an Rmax peak speed of 10.51 petaflops. Based on this figure, it 
+would take Fujitsu K 1.02 x 10(18) (around 1 billion) years to crack an 128-bit AES key 
+by force
+• The most powerful supercomputer in the world is the NUDT Tianhe-2 in Guangzhou, 
+China. 
+• Almost 3 times as fast as the Fujitsu K at 33.86 petaflops, it would ‘only’ take it around 
+a third of a billion years to crack a 128-bit AES key. That’s still a long time, and is the 
+figure for breaking just one key 
+• A 256-bit key would require 2(128) times more computational power to break than a 
+128-bit one 
+• The number of operations required to brute force a 256-bit cipher is 3.31 x 10(65), 
+roughly equal to the number of atoms in the universe! 

@@ -1,0 +1,32 @@
+6.3. Circuit Switching 
+Circuit switching is a communication model in which a dedicated communication path is established 
+between two hosts. The path is a connected sequence of links, the connection between the two 
+points exists until one of them is disconnected. The connection path must be set up before data 
+transmission begins, therefore, if the entire path becomes unavailable, messages cannot be 
+transmitted because the circuit will not be complete. The telephone system is a good example of 
+a circuit-switch network. 
+ 
+In terms of performance, there is a delay before signal transfer begins while the connection is set up. 
+However, once the circuit is completed, the network is transparent to users, and information is 
+transmitted at a fixed rate of speed with insignificant delays at intermediate nodes. 
+
+Packet Switching 
+ 
+Packet switching is basically a store-and-forward technique in which a message is divided into 
+multiple, equal-sized units called packets, the packets are duplicated and then sent individually 
+through the networks toward their destination, often along different paths. After they arrive, 
+the packets are reassembled into their original order, duplicates are discarded, and the entire 
+message is delivered intact, as illustrated in Figure 6.10. 
+ 
+Figure 6.10 
+ 
+Figure 6.10 A packet switching network does not require a dedicated connection. It sends packets 
+using a three- step procedure: (a) divide the data into addressed packets; (b) send each packet toward 
+its destination; (c) and, at the destination, confirm receipt of all packets, place them in order, 
+reassemble the data, and deliver it to the recipient. 
+ 
+Packet switching is an effective technology for long-distance data transmission. Because it permits 
+data transmission between devices that receive or transmit data at different rates, it provides 
+more flexibility than circuit switching. However, there is no guarantee that after a message has been 
+divided into packets, the packets will all travel along the same path to their destination, or that they 
+will arrive in their physical sequential order. I

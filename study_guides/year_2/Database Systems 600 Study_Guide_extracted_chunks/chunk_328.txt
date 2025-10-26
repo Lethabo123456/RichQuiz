@@ -1,0 +1,14 @@
+w instance of the DBMS on a virtual server running on shared hardware. 
+This is normally a task that involves system and network administrators to create appropriate user 
+groups and services in the server configuration and network routing. Another common trend is the 
+use of cloud database services such Microsoft SQL Database Service or Amazon Relational 
+Database Services (RDS). This new generation of services allows user to create databases that 
+could be easily managed, tested, and scaled up as needed.  
+Create the Database(s) in most modern relational DBMSs, a new database implementation 
+requires the creation of special storage-related constructs to house the end- user tables. The 
+constructs usually include the storage group (or file groups), the table spaces, and the tables.  
+
+ 
+137 
+Load or Convert the Data After the database has been created, the data must be loaded into the 
+database tables. Typically, the data will have to be migrated from the prior version of the system.

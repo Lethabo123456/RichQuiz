@@ -1,0 +1,14 @@
+Data Model Verification 
+From the preceding discussion, you might get the impression that ER modelling activities such as 
+entity and attribute definition, normalization, and verification take place in a precise sequence. In 
+fact, once you have completed the initial ER model, chances are that you will move back and forth 
+among the activities until you are satisfied that the ER model accurately represents a database 
+design that can meet the required system demands. The activities often take place in parallel, and 
+the process is iterative. All objects (entities, attributes, relations, views, and so on) are defined in a 
+data dictionary, which is used in tandem with the normalization process to help eliminate data 
+anomalies and redundancy problems. During this ER modelling process, the designer must:  
+ 
+Define entities, attributes, primary keys, and foreign keys. (The foreign keys serve as the basis 
+for the relationships among the entities.)  
+ 
+Make decisions about adding new p

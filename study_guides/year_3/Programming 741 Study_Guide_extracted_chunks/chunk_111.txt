@@ -1,0 +1,43 @@
+Example 3-4 Constructors 
+ 
+//Default constructor 
+public Student ( ) 
+{ 
+} 
+//Constructor with one parameter 
+public Student (string sID ) 
+{ 
+studentNumber = sID; 
+} 
+//Constructor with three parameters 
+public Student (string sID, string firstName, 
+string lastName) 
+{ 
+studentNumber = sID; 
+studentFirstName = firstName; 
+studentLastName = lastName; 
+} 
+//Constructor with all data members 
+public Student (string sID, string firstName, string lastName, 
+int s1, int s2, int s3, string maj) 
+{ 
+studentNumber = sID; 
+studentFirstName = firstName; 
+studentLastName = lastName; 
+score1 = s1; 
+score2 = s2; 
+score3 = s3; 
+major = maj; 
+}
+
+This is the default constructor. As previously noted, you lose the default constructor that is 
+automatically generated when you start writing your own constructors. However, you will 
+normally want to offer the flexibility of allowing an object of your class to be instantiated 
+without any arguments. This is where the default constructor is needed. So, you need to 
+create one. 
+ 
+The body of the constructor methods consists primarily of assignment statements. Notice that 
+the private data member identifier appears on the left side of the equal symbol. A different 
+name, from the data member, is used as a parameter identifier. This is done to avoid using 
+the this keyword to reference the data member. You will read more about this in upcoming 
+chapters.

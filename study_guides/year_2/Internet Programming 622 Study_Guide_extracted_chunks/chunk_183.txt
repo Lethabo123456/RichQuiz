@@ -1,0 +1,28 @@
+ndle 
+errors, and how to read data from a table   
+Now that you have a good working idea of PHP, you are urged to try the following two exercises to 
+test your knowledge of SQL and of writing MySQL-enabled PHP scripts.    
+   
+   
+   
+   
+   
+   
+   
+   
+ Mini-Project Self-Assessment Exercise   
+   
+1. 
+Write out an SQL statement that creates a table called members in your mydatabase 
+database to store information about the members of a book club. Store the following data for each 
+person: first name, last name, age, and the date they joined the club. Create more SQL statements to 
+insert five imaginary people into this table:   
+   Jo Scrivener, aged 31, joined September 3, 2006   
+   Marty Pareene, aged 19, joined January 7, 2007   
+   Nick Blakeley, aged 23, joined August 19, 2007   
+      Bill Swan, aged 20, joined June 11, 2007   
+   Jane Field, aged 36, joined March 3, 2006   
+   
+2. 
+Write a PHP script to query the table you created in Self-Assessment Exercise 1, displaying 
+the

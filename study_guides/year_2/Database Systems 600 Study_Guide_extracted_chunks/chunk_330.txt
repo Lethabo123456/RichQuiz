@@ -1,0 +1,14 @@
+ased database service sometimes can be expensive. The 
+reason for this is that most cloud services are priced based not only on the volume of data to be 
+stored but also on the amount of data that travels over the network. In such cases, loading a 1 TB 
+database could be a very expensive proposition. Therefore, system administrators must be very 
+careful in reading and negotiating the terms of cloud service contracts to ensure that there will be 
+no “hidden” costs. 
+ 
+Testing and Evaluating 
+In the design phase, decisions were made to ensure integrity, security, performance, and 
+recoverability of the database. During implementation and loading, these plans were put into place 
+In testing and evaluation, the DBA tests and fine-tunes the database to ensure that it performs as 
+expected. This phase occurs in conjunction with application programming. Programmers use 
+database tools to prototype the applications during coding of the programs. Tools such as report 
+generators, screen painte

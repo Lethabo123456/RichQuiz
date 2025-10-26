@@ -1,0 +1,22 @@
+te 
+how similar an object is with another object within the same cluster.  
+By calculating the averages of objects that connect to a cluster and then evaluating how 
+dissimilar they are in relation to the other clusters, you can determine an average score. The 
+main aim is to measure the grouping of the objects in the cluster—the lower the number the 
+better. When comparing the averages for each cluster, they are expected to be similar. When 
+
+P a g e  | 46 
+ 
+silhouettes are very narrow and others are large, it might point to the fact that not enough 
+clusters have been defined when the computation process began. 
+ 
+4.4.2 Data Visualization 
+The last thing to do is look at the visualization of the clustering. Each cluster has its own colour 
+scheme, and the plot shows values (see Figure 4.5).  
+ 
+ 
+                                                                        Figure 4.5: Data visualization 
+ 
+ 
+4.5 Summary 
+This chapter has shown how decision trees work and the different alg

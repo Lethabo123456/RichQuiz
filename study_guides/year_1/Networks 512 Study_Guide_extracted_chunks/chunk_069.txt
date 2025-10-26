@@ -1,0 +1,22 @@
+1.10.1 When and Why Ethernets Become Too Slow 
+As more users are added to a shared network or as applications requiring more data are added, 
+performance deteriorates. This is because all users on a shared network are competitors for the 
+Ethernet bus. On a moderately loaded 10Mbps Ethernet network that is shared by 30-50 users, 
+that network will only sustain throughput in the neighborhood of 2.5Mbps after accounting for 
+packet overhead, interpacket gaps and collisions. 
+Increasing the number of users (and therefore packet transmissions) creates a higher collision 
+potential. Collisions occur when two or more nodes attempt to send information at the same 
+time. When they realize that a collision has occurred, each node shuts off for a random time 
+before attempting another transmission. With shared Ethernet, the likelihood of collision 
+increases as more nodes are added to the shared collision domain of the shared Ethernet. One of 
+the steps to alleviate this problem is to segment traffic with a bridge or switch. A switch can 
+replace a hub and improve network performance. 
+
+For example, an eight-port switch can support eight Ethernets, each running at a full 10 Mbps. 
+Another option is to dedicate one or more of these switched ports to a high traffic device such as a file server. 
+Greater throughput is required to support multimedia and video applications. When added to the 
+network, Ethernet switches provide a number of enhancements over shared networks that can 
+support these applications. Foremost is the ability to divide networks into smaller and faster 
+segments. Ethernet switches examine each packet, determine where that packet is destined and 
+then forward that packet to only those ports to which the packet needs to go. Modern switches 
+are able to do all these tasks at “wire speed,” that is, without delay. 

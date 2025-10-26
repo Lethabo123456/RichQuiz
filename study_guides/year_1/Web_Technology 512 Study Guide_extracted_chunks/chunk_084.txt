@@ -1,0 +1,19 @@
+t switch statements do not 
+allow you to do this, so you would have to have one case for each age - a lot of cases, 
+in other words. They can be useful in limited situations, though, so they are worth 
+knowing about. 
+ 
+3.10 JAVASCRIPT PROGRAMMING LOOPS 
+ 
+One programming tool common to all languages is the loop. Normally, a programme is 
+executed from top to bottom, with each line of code getting processed in turn. If you 
+want to go back up and, you can use a loop. Loops are a great way to execute lines of 
+code again and again. There are many reasons why you want to do this. But take the 
+following sum as an example: 
+var total; 
+total = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10; 
+ 
+The code above just adds up the numbers 1 to 10. That is fine if you only have 10 
+numbers. But supposed you have a 100 numbers, or 1000. You cannot really type 
+them all out. With a loop, though, you can add up a 1000, 10000 numbers, in just a 
+few lines of code. The most common type a loop is called the f

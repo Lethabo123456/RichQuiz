@@ -1,0 +1,40 @@
+he before-increment time is 23:45:53, the 
+time // is reset to 00:45:53.  
+  
+bool equalTime(const clockType& otherClock) const;  
+//Function to compare the two times  
+//Postcondition: Returns true if this time is equal to  
+// otherClock; otherwise, returns false  
+  
+  
+private:  
+int hr;    
+  
+//stores the hours int 
+min;     
+//store the minutes int sec;  
+  
+//store the seconds  
+};   
+We note the following in the definition of the class clockType:  
+  
+
+29  
+  
+ The  
+class  clockType  
+has  
+seven  function  
+members:  
+setTime, 
+ getTime,  
+printTime, incrementSeconds, incrementMinutes, incrementHours, and 
+equalTime. It has three data members: hr, min, and sec.  
+ The three data members—hr, min, and sec—are private to the class and cannot be accessed outside 
+the class.  
+ The  
+seven  function  
+members—setTime,  getTime,  
+printTime, 
+ incrementSeconds, incrementMinutes, incrementHours, and equalTime—can directly access the 
+data members (hr, min, and sec). In other words,

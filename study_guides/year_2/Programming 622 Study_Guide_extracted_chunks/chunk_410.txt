@@ -1,0 +1,39 @@
+ile  
+  
+infile.close();  
+outfile.close();  
+  
+return 0;  
+} //end main  
+
+208  
+  
+//Place the definitions of the function evaluateExpression, 
+//evaluateOpr, discardExp, and printResult as described //previously 
+here.  
+  
+Sample Run:  
+Input File  
+#35 #27 + #3 * =  
+#26 #28 + #32 #2 ; - #5 / =  
+#23 #30 #15 * / =  
+#2 #3 #4 + =  
+#20 #29 #9 * ; =  
+#25 #23 - + =  
+#34 #24 #12 #7 / * + #23 - =  
+  
+Output  
+  
+#35.00 #27.00 + #3.00 * = 186.00  
+_________________________________  
+#26.00 #28.00 + #32.00 #2.00 ; (Illegal operator) - #5 / = (Error in the expression)  
+_________________________________  
+#23.00 #30.00 #15.00 * / = 0.05  
+_________________________________  
+#2.00 #3.00 #4.00 + = (Error: Too many operands)  
+_________________________________  
+#20.00 #29.00 #9.00 * ; (Illegal operator) = (Error in the expression)  
+_________________________________  
+#25.00 #23.00 - + (Not enough operands) = (Error in the expression)  
+_________________________________  
+#34.00 #24.00

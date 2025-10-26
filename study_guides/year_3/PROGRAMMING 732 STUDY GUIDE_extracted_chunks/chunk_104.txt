@@ -1,0 +1,22 @@
+4.1.10 Using servletrunner  
+For both JDK 1.1 and the Java 2 platform, you need to install the Java Servlet Development Kit (JSDK). To 
+use servletrunner, make sure your PATH environment variable points to its directory. For the JSDK 2.0 
+installed with all default options, that location is: c:\jsdk2.0\bin on a Windows platform.   
+To make sure that servletrunner has access to the Java servlet packages, check that your CLASSPATH 
+environment variable is pointing to the correct JAR file, c:\jsdk2.0\lib\jsdk.jar on a Windows platform. 
+With the Java 2 platform, instead of modifying the CLASSPATH, it is easier to just copy the JAR file to the 
+ext directory under the Java runtine environment. This treats the servlet packages as standard extensions.  
+With the environment set up, run the servletrunner program from the command line. The parameters 
+are:   
+  
+Usage: servletrunner [options] Options:  
+  -p port     the port number to listen on  
+  -b backlog  the listen backlog  
+  -m max      maximum number of connection handlers  
+  -t timeout  connection timeout in milliseconds  
+  -d dir      servlet directory  
+  -s filename servlet property file name  
+  
+The most common way to run this utility is to move to the directory that contains your servlets and run 
+servletrunner from that location. However, that doesn't automatically configure the tool to load the 
+servlets from the current directory.   

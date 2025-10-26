@@ -1,0 +1,26 @@
+, accomplishes this task:  
+  
+template <class elemType>  
+void arrayListType<elemType>::swap(int first, int second)  
+{  
+elemType temp;  
+  
+temp = list[first]; list[first] 
+= list[second];  
+list[second] = temp;  
+}  
+  
+Once the list is partitioned into lowerSublist and upperSublist, we again apply the quicksort method to 
+sort the two sublists. Because both sublists are sorted using the same quicksort algorithm, the easiest way 
+to implement this algorithm is to use recursion. Therefore, this section gives the recursive version of 
+quicksort. As explained previously, after rearranging the elements of the list, the function partition returns 
+the index of the pivot so that the starting and ending indices of the sublists can be determined.  
+  
+Given the starting and ending indices of a list, the following function, recQuickSort, implements the 
+recursive version of quicksort:  
+  
+template <class elemType>  
+void arrayListType<elemType>::recQuickSort(int first, int last)  
+{  
+ 
+in

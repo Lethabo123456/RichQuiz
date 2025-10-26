@@ -1,0 +1,60 @@
+5.8 Array Lists 
+ 
+The classic problem with the Array type is its fixed size. I f you do not know in advance how 
+many objects an array will hold, you run the risk of declaring either too small an array (and 
+running out of room) or too large an array (and wasting memory). 
+ 
+Your program might be asking the user for input, or gathering input from a web site. As it 
+finds objects (strings, books, values, etc.), you will add them to the array, but you have no 
+idea how many objects you'll collect in any given session. The classic fixed-size array is not a 
+good choice, as you can't predict how large an array you'll need. 
+ 
+The ArrayList class is an array whose size is dynamically increased as required. ArrayLists 
+provide a number of useful methods and properties for their manipulation. Some of the most 
+important are shown in Table 4-3. 
+
+Table 5-3. ArrayList methods and properties 
+ 
+Method                                            Description 
+Adapter(IList)                                    Creates an ArrayList wrapper for a specific IList. 
+Add(Object)                                       Adds an object to the end of the ArrayList. 
+AddRange(ICollection)                             Adds the elements of an ICollection to the end of the ArrayList. 
+BinarySearch(Int32, Int32, Object, IComparer)     Searches a range of elements in the sorted ArrayList for 
+                                                  an element using the specified comparer and returns the 
+                                                  zero-based index of the element. 
+BinarySearch(Object)                              Searches the entire sorted ArrayList for an element using 
+                                                  the default comparer and returns the zero-based index of 
+                                                  the element. 
+BinarySearch(Object, IComparer)                   Searches the entire sorted ArrayList for an element using  
+                                                  the specified comparer and returns the zero-based index 
+                                                  of the element. 
+Clear()                                           Removes all elements from the ArrayList. 
+Clone()                                           Creates a shallow copy of the ArrayList. 
+Contains(Object)                                  Determines whether an element is in the ArrayList. 
+CopyTo(Array)                                     Copies the entire ArrayList to a compatible one-
+                                                  dimensional Array, starting at the beginning of the target 
+                                                  array. 
+CopyTo(Array, Int32)                              Copies the entire ArrayList to a compatible one-
+                                                  dimensional Array, starting at the specified index of the 
+                                                  target array. 
+CopyTo(Int32, Array, Int32, Int32)                Copies a range of elements from the ArrayList to a 
+                                                  compatible one-dimensional Array, starting at the 
+                                                  specified index of the target array.
+Equals(Object)                                    Determines whether the specified object is equal to the 
+                                                  current object. 
+FixedSize(ArrayList)                              Returns an ArrayList wrapper with a fixed size. 
+FixedSize(IList)                                  Returns an IList wrapper with a fixed size. 
+GetEnumerator()                                   Returns an enumerator for the entire ArrayList. 
+GetEnumerator(Int32, Int32)                       Returns an enumerator for a range of elements in the 
+                                                  ArrayList. 
+GetHashCode()                                     Serves as the default hash function. 
+GetRange(Int32, Int32)                            Returns an ArrayList which represents a subset of the 
+                                                  elements in the source ArrayList. 
+GetType()                                         Gets the Type of the current instance. 
+IndexOf(Object)                                   Searches for the specified Object and returns the zero-
+                                                  based index of the first occurrence within the entire 
+                                                  ArrayList. 
+IndexOf(Object, Int32)                            Searches for the specified Object and returns the zero-
+                                                  based index of the first occurrence within the range of 
+                                                  elements in the ArrayList that extends from the specified 
+                                                  index to the last element. 

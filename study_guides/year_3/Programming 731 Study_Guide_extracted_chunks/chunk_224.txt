@@ -1,0 +1,34 @@
+class Exc2 {   
+   
+public static void main(String args[ ]) 
+{  int d, a; try { // monitor a block of 
+code.  d = 0; a =  
+42 / d;   
+   
+System.out.println("This will not be printed.");   
+} catch (ArithmeticException e) { // catch divide-by-zero 
+error System.out.println("Division by zero.");   
+}   
+System.out.println("After catch statement.");   
+}   
+}   
+   
+This program generates the following output:  Division by 
+zero.   
+After catch statement.   
+   
+Notice that the call to println( ) inside the try block is never executed. Once an exception is thrown, 
+program control transfers out of the try block into the catch block. Put differently, catch is not 
+“called,” so execution never “returns” to the try block from a catch. Thus, the line “This will not be 
+printed.” is not displayed. Once the catch statement has executed, program control continues with 
+the next line in the program following the entire try/catch mechanism.   
+A try and its catch statement form a unit. The scope of the catch clause is restricted to those 
+statements specified by the immediately preceding try statement. A catch statement cannot catch 
+an exception thrown by another try statement (except in the case of nested try statements, 
+described shortly). The statements that are protected by try must be surrounded by curly braces. 
+(That is, they must be within a block.) You cannot use try on a single statement. The goal of most 
+well-constructed catch clauses should be to resolve the exceptional condition and then continue on 
+as if the error had never happened. For example, in the next program each iteration of the for loop 
+obtains two random integers. Those two integers are divided by each other, and the result is used 
+to divide the value 12345. The final result is put into a. If either division operation causes a divide-
+by-zero error, it is caught, the value of a is set to zero, and the program continues.

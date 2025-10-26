@@ -1,0 +1,12 @@
+sical Model 
+The physical model operates at the lowest level of abstraction, describing the way data is saved on 
+storage media such as magnetic, solid state, or optical media. The physical model requires the 
+definition of both the physical storage devices and the (physical) access methods required to reach 
+the data within those storage devices, making it both software and hardware dependent. The 
+precision required in the physical model’s definition demands that database designers have a detailed 
+knowledge of the hardware and software used to implement the database design.  
+The now-dominant relational model is aimed largely at the logical level rather than at the physical 
+level; therefore, it does not require the physical-level details common to its predecessors but may 
+require physical-level fine-tuning for increased performance.  
+As noted earlier, the physical model is dependent on the DBMS, methods of accessing files, and 
+types of hardware storage devices supported by the o

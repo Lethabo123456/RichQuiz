@@ -1,0 +1,24 @@
+ist is at least as large as the key in the element at position 2k + 1 (if it exists) and 2k + 2 (if it exists).  
+14. The first step in the heapsort algorithm is to convert the list into a heap, called buildHeap. After we 
+convert the array into a heap, the sorting phase begins.  
+15. Suppose that L is a list of n elements, where n> 0. In the worst case, the number of key comparisons 
+in heapsort to sort L is 2nlog2n + O(n). Also, in the worst case, the number of item assignments in 
+heapsort to sort L is nlog2n + O(n).  
+  
+Exercises  
+  
+1. Sort the following list using selection sort as discussed in this chapter. Show the list after each iteration 
+of the outer for loop.  
+  
+26, 45, 17, 65, 33, 55, 12, 18  
+  
+2. Sort the following list using selection sort as discussed in this chapter. Show the list after each iteration 
+of the outer for loop.  
+  
+36, 55, 17, 35, 63, 85, 12, 48, 3, 66  
+
+318  
+  
+  
+3. Assume the following list of keys: 5, 18, 21, 10, 55, 20  
+The first three key

@@ -1,0 +1,86 @@
+mplate <class Type>  
+Type linkedQueueType<Type>::back() const  
+{  
+assert(queueRear!= NULL); 
+return queueRear->info;  
+ 
+//end front  
+}   
+  
+  
+  
+  
+  
+  
+ 
+template <class Type>  
+void linkedQueueType<Type>::deleteQueue()  
+{  
+nodeType<Type> *temp;  
+if (!isEmptyQueue())  
+{  
+ 
+//end back  
+temp = queueFront;    
+  
+ 
+//make temp point to the first
+node  
+queueFront = queueFront->link;    
+//advance queueFront  
+delete temp;    
+  
+  
+ 
+//delete the first node  
+if (queueFront == NULL)   
+  
+ 
+//if after deletion the queue is
+empty  
+queueRear = NULL;     
+ 
+//set queueRear to NULL  
+}  
+else cout << "Cannot remove from an empty queue" << endl;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end deleteQueue  
+  
+The definition of the default constructor is as follows:  
+  
+template<class Type>  
+
+232  
+  
+linkedQueueType<Type>::linkedQueueType()  
+{  
+ 
+queueFront = NULL;    
+  
+  
+  
+//set front to null  
+ 
+queueRear = NULL;     
+  
+  
+  
+//set rear to null  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end

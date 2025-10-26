@@ -1,0 +1,20 @@
+p  
+$currentTime = date( “g:i:s a” );  
+echo “Hello, world! The current time is $currentTime”; 
+? >  
+  
+The first line of PHP code takes the current time and formats it as a readable string of text, then 
+stores  
+this string of text in a variable called $currentTime. ( Variables are containers that store data.) To 
+format the time, the script uses the built-in date() function. The string of characters between the 
+quotation marks tells PHP how to format the time, as follows:  
+  
+g, i, and s tell PHP to output the current hour, minute, and second, respectively, while a tells 
+PHP to display either “ am ” or ‘ pm ” as appropriate.  
+The colons (:) and the space character are not processed by the date() function, so they are 
+displayed as is  
+  
+Then the second line of code displays the “ Hello, world! ” message, including the current 
+time. Reload the page in your browser and you ’ ll see the time change.  
+  
+This simple example is the essence of a dynamic Web page — a page whose

@@ -1,0 +1,38 @@
+Constructor  
+  
+The first operation that we consider is the default constructor. The default constructor initializes the stack 
+to an empty state when a stack object is declared. Thus, this function sets stackTop to NULL. The definition 
+of this function is as follows:  
+  
+template <class Type>  
+linkedStackType<Type>::linkedStackType()  
+{  
+stackTop = NULL;  
+}  
+  
+  
+  
+  
+
+191  
+  
+ 
+5.3.2  Empty Stack and Full Stack  
+  
+The operations isEmptyStack and isFullStack are quite straightforward. The stack is empty if stackTop is 
+NULL. Also, because the memory for a stack element is allocated and deallocated dynamically, the stack 
+is never full. (The stack is full only if we run out of memory.) Thus, the function isFullStack always returns 
+the value false. The definitions of the functions to implement these operations are as follows:  
+  
+template <class Type>  
+bool linkedStackType<Type>::isEmptyStack() const  
+{  
+return(stackTop == NULL);  
+ 
+}   
+  
+  
+  
+  
+  
+//end isEmptySt

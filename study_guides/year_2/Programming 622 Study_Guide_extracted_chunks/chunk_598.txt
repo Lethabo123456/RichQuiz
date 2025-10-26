@@ -1,0 +1,23 @@
+This 
+uniqueness follows because the sort algorithm only moves the data and makes comparisons. 
+Furthermore, the data movement on any path from the root to a leaf is the same regardless of the initial 
+inputs. For a list of n elements, n> 0, there are n! different permutations. Any one of these n! permutations 
+might be the correct ordering of L. Thus, the comparison tree must have at least n! leaves.  
+  
+Let us consider the worst case for all comparison-based sorting algorithms. We state the following result 
+without proof.  
+  
+Theorem: Let L be a list of n distinct elements. Any sorting algorithm that sorts L by comparison of the 
+keys only, in its worst case, makes at least O(nlog2n) key comparisons.  
+  
+As analyzed in the previous sections, both selection sort and insertion sort are of the order O(n2). The 
+remainder of this chapter discusses sorting algorithms that, on average, are of the order O(nlog2n).  
+  
+
+297  
+  
+ 
+8.7  
+Quicksort: Array-Based Lists  
+  
+In the previous

@@ -1,0 +1,28 @@
+3.10.5 Patch and Firmware management 
+Applying patches, especially device driver updates, can be problematic. Issues can include the 
+device no longer working, loss of some key functionality, or generation of odd error messages. 
+Moreover, Rollback, ﬁrmware updates, and driver updates. e rollback is a general term that 
+applies to reversing any operation related to device drivers. It means to remove the newer driver 
+and go back to using the previous driver. If you don’t have automatic updates set up, you can 
+download patches and hotfixes manually. A hotfix is just like a patch that updates software, but 
+this term is reserved for a solution to potentially serious issues that could compromise your 
+network and host. 
+
+While keeping operating system and application patches up-to-date gets most of the attention, 
+there are devices on your network that may require ﬁrmware updates from time to time. 
+Firmware is a form of program code and related data that is stored in persistent memory of some 
+sort, such as non-volatile RAM (NVRAM). Drivers are ﬁles that allow a peripheral or component 
+to talk to the hardware layer of the hosting device.
+
+3.11 Remote access methods and security implications 
+Remote access plays a critical role in modern networks by enabling employees, administrators, 
+and external partners to connect to internal systems from anywhere. This ﬂexibility supports 
+telecommuting, branch oﬃce connectivity, and rapid troubleshooting, but it also introduces 
+security risks that must be carefully managed. 
+
+3.11.1 Site-to-Site VPN 
+Site-to-site VPNs, or intranet VPNs, allow a company to connect its remote sites to the corporate 
+backbone securely over a public medium like the Internet instead of requiring more expensive 
+wide area network (WAN) connections like Frame Relay. This is often the best way to connect a 
+remote oﬃce to the main oﬃce because it automatically encrypts all traﬃc between them, 
+passing through a VPN. 

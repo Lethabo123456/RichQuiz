@@ -1,0 +1,15 @@
+the integrity and optimal performance of the database. This chapter provides fundamental 
+knowledge that will help you optimize database performance by selecting the appropriate database 
+server configuration, using indexes, under-standing table storage organization and data locations, 
+and implementing the most efficient SQL query syntax. 
+Performance Tuning: Client and Server 
+In general, database performance-tuning activities can be divided into those on the client side and 
+those on the server side. 
+ 
+On the client side, the objective is to generate a SQL query that returns the correct answer in 
+the least amount of time, using the minimum amount of resources at the server end. The 
+activities required to achieve that goal are commonly referred to as SQL performance tuning. 
+ 
+On the server side, the DBMS environment must be properly configured to respond to clients’ 
+requests in the fastest way possible, while making optimum use of existing resources. The 
+activities required t

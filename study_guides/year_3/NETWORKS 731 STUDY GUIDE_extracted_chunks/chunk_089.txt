@@ -1,0 +1,23 @@
+WAN Dialup Services 
+Dialup services offer cost-effective methods for connectivity across WANs. Two popular dialup 
+implementations are dial-on-demand routing (DDR) and dial backup.  
+ 
+DDR is a technique whereby a router can dynamically initiate a call on a switched circuit when 
+it needs to send data. In a DDR setup, the router is configured to initiate the call when certain 
+criteria are met, such as a particular type of network traffic needing to be transmitted. When 
+the connection is made, traffic passes over the line. The router configuration specifies an idle 
+timer that tells the router to drop the connection when the circuit has remained idle for a 
+certain period. 
+ 
+Dial backup is another way of configuring DDR. However, in dial backup, the switched circuit is 
+used 
+to provide backup service for another type of circuit, such as point-to-point or packet switching. 
+The router is configured so that when a failure is detected on the primary circuit, the dial 
+backup line is initiated. The dial backup line then supports the WAN connection until the 
+primary circuit is restored. When this occurs, the dial backup connection is terminated. 
+ 
+WAN Devices 
+WANs use numerous types of devices that are specific to WAN environments. WAN switches, 
+access servers, modems, CSU/DSUs, and ISDN terminal adapters are discussed in the following 
+sections. Other devices found in WAN environments that are used in WAN implementations 
+include routers, ATM switches, and multiplexers. 

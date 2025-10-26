@@ -1,0 +1,20 @@
+Then determine how likely it is that a threat action will cause harm, based on the likelihood of a threat 
+action and the effectiveness of the corresponding controls that are in place. 
+Finally, the level of risk is determined as the combination of the cost of the threat occurring combined 
+with the likelihood of the threat occurring. 
+
+For example, a hacker (threat agent) may exploit known vulnerabilities (vulnerability) in a remote 
+authentication protocol (vulnerability target) to disrupt (policy violated) remote authentication (asset 
+exposed). The threat is unauthorized access. The assets are anything that can be compromised by an 
+unauthorized access. The vulnerability expresses how a threat action could occur (for example, by 
+access through a web interface). Existing security controls for this vulnerability reduce the likelihood 
+of a threat action. 
+
+Note that both factors, impact and likelihood, are necessary in determining a budget allocation for 
+security controls. If an organization focuses only on impact, the inclination will be to invest much of 
+the security budget on high-impact threats, even if the likelihood of the impact is extremely small. 
+Thus, threats that produce a low or moderate impact and are realized frequently may be given little 
+attention, with the net effect of the overall loss to the business being higher than needed. Conversely, 
+an organization errs in allocating security funds on the basis of likelihood alone. If a relatively rare 
+security event that has very high impact costs is ignored, the organization is exposed to a very high 
+security loss. 

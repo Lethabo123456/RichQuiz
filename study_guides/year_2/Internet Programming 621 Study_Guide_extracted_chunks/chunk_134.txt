@@ -1,0 +1,34 @@
+br/ > ”; echo “Key: “ . 
+$element[“key”] . “ < br/ > ”; echo “Value: “ . 
+$element[“value”] . “ < br/ > ”; This code 
+displays:  
+Key:  
+title  
+Value:  
+The Grapes of Wrath 
+Key:  
+title  
+Value:  
+The Grapes of Wrath 
+  
+  
+  
+Here is how to use each() to retrieve an array element with a value of false :  
+  
+$myArray = array( false );  
+$element = each( $myArray );  
+$key = $element[“key”]; // $key now equals 0 
+$val = $element[“value”]; // $val now equals false  
+  
+Because each() both returns the current array element and advances the array pointer, it is easy 
+to use it in a while loop to move through all the elements of an array. The following example 
+works through the $myBook array, returning each element’s key and value as it goes. Figure 5.3 
+shows the result.  
+  
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” > 
+< head >  
+
+65  
+< title

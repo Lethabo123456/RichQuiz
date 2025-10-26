@@ -1,0 +1,16 @@
+ated or used by another program. 
+ 
+Manipulating Data and Generating Reports 
+ 
+After a DBMS has been installed, employees, managers and consumers can use it to review 
+reports and obtain important information. Some databases use Query-by-Example (QBE), 
+which is a visual approach to developing database queries or requests. 
+Alternatively, SQL can be used to query the database. For example, SELECT * FROM 
+EMPLOYEE WHERE JOB_CLASSIFICATION = ‘C2’. 
+This will output all employees who have a job classification of ‘C2’. The ‘*’ tells the DBMS 
+to include all columns from the EMPLOYEE table in the results. In general, the concurrency 
+control A method of dealing with a situation in which two or more people need to access the 
+same record in a commands that are used to manipulate the database are part of the data 
+manipulation language (DML), of which SQL is an example. (So SQL is both a DDL and 
+DML.) SQL commands can be used in a computer program to query a database, which is 
+convenient f

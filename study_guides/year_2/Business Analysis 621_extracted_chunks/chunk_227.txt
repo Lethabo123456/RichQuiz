@@ -1,0 +1,38 @@
+The business analyst needs to decide the project’s approach to traceability before the 
+requirements development work actually begins. It is important to decide the level of 
+traceability and the types of relationships to be traced ahead of time. That allows the business 
+analysis team to do this work concurrently with developing the requirements. 
+Selecting Relationships to Trace Key dependencies and relationships between requirements 
+should be recorded so they can be traced across the project life cycle. Creating and maintaining 
+this information assists the business analyst in sequencing project work activities to design and 
+deploy the capabilities found in the requirements. It also assists the business analyst in correctly 
+allocating requirements to solution components. The following are types of relationships to 
+consider: 
+Derive. Derivation is the backward traceability of a requirement to its higher-level parent. An 
+example of derivation is when a solution requirement is derived from a business or stakeholder 
+requirement. 
+
+Depends. A dependency relationship exists between two requirements when the requirements 
+depend upon one another in some way. There are two types of dependency: necessity and effort. 
+Necessity is when it makes sense to implement one requirement only when another requirement 
+is also implemented. Effort is when a requirement is easier to implement when a related 
+requirement is also implemented. 
+Satisfy. The satisfy relationship exists between a requirement and a solution component. 
+Essentially, the solution component satisfies the associated requirement.  
+Validate. This relationship exists between a requirement and the test case or other method that 
+validates or proves the solution fulfils the requirement. 
+Traceability Repository Traceability is usually achieved by putting the requirements in a 
+table, spreadsheet, or tool to manage the tracing activities. Although traceability can be done 
+manually using a spreadsheet, complex projects often require a more streamlined approach. 
+Many business analysts prefer to use a requirements management tool or a configuration 
+management system to trace large numbers of requirements. 
+
+Implementing traceability for project requirements demands work from the business analysis 
+team, but it’s worth the effort. Traceability is used for many things on a project. For example, 
+traceability allows the business analyst to thoroughly evaluate the impacts of a change request 
+to both the requirements and the solution components. In another example, tracing 
+requirements back to the business needs shows the business analyst how those objectives will 
+be accomplished. This also allows the business analyst to confirm that all the business needs 
+are included in the solution scope and the solution components. In one last example, traceability 
+allows the business analyst to trace the subset of requirements that are allocated to each of the 
+solution components. 

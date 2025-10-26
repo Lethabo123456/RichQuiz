@@ -1,0 +1,28 @@
+PROPERTY                                 DESCRIPTION 
+Attributes                               Gets or sets the attributes of the current file or 
+                                         directory, using the FileAttributes enumeration 
+                                         CreationTime, CreationTimeUtc 
+                                         Gets or sets the creation date and time of the 
+                                         current file, available in coordinated universal 
+                                         time (UTC) and non-UTC versions. 
+Extension                                Retrieves the extension of the file. This property 
+                                         is read-only 
+Exists                                   Determines whether a file exists. This is a read-
+                                         only abstract property, and is overridden in  
+FileInfo and DirectoryInfo FullName      Retrieves the full path of the file. This property is 
+                                         read-only 
+LastAccessTime,                          Gets or sets the date and time that the current 
+                                         file was last 
+LastAccessTimeUtc                        accessed, available in UTC and non-UTC versions. 
+LastWriteTime, LastWriteTimeUtc          Gets or sets the date and time that the current 
+                                         file was last written to,available in UTC and non-
+                                         UTC versions. 
+Name                                     Retrieves the full path of the file. This is a read-
+                                         only abstract property, and is overridden in 
+                                         FileInfo and DirectoryInfo 
+IsReadOnly                               Shortcut to the read-only attribute of the file. 
+                                         This property is also accessible via Attributes 
+Length                                   Gets the size of the file in bytes, returned as a           
+                                         long value. This property is read-only. 
+A FileInfo                               Stream object has to be created. The FileInfo object aids you in doing this by exposing several methods that return 
+                                         instantiated Stream objects 

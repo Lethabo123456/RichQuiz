@@ -1,0 +1,21 @@
+h as an array. Therefore, to access, for example, the fifth element 
+in the list, we must first traverse the first four elements.  
+  
+The name of the class containing the definition of the class list is list. The definition of the class list, and 
+the definitions of the functions to implement the various operations on a list, are contained in the header 
+file list. Therefore, to use list in a program, the program must include the following statement:  
+  
+#include <list>  
+  
+Like other container classes, the class list contains several constructors. Thus, a list object can be initialized 
+in several ways when it is declared, as described in Table 3-9.  
+  
+TABLE 3-9: Various ways to declare a list object 
+  
+
+135  
+  
+  
+Table 3-5 describes the operations that are common to all containers, and Table 3-6 describes the 
+operations that are common to all sequence containers. In addition to these common operations, Table 
+3-10 describes the operations that are specific to a list containe

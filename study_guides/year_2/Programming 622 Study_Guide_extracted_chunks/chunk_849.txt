@@ -1,0 +1,20 @@
+er a connected graph G has an Euler circuit by 
+checking whether all of its vertices are of even degree.  
+  
+Let us again consider the Ko¨nigsberg bridge problem. Notice that the graph corresponding to this 
+problem is a connected graph but has vertices of odd degree; see Figure 10-2. Hence, by Theorem 10-2, 
+the graph of Figure 10-2 has no Euler circuit. In other words, starting at one land area, it is not possible to 
+walk across all the bridges exactly once and return to the starting land area.  
+  
+After 1736, two additional bridges have been constructed on the Pregel river—one is between the regions 
+B and C and the other is between A and D. The graph with the additional two bridges is shown in Figure 
+10-25.  
+  
+
+418  
+  
+  
+FIGURE 10-25 Graph of the Kӧnigsberg bridge problem with two additional bridges  
+  
+By Theorem 10-3, every connected graph with only even degree vertices has an Euler circuit. Next, we 
+describe an algorithm, known as Fleury’s algorithm, which can be used

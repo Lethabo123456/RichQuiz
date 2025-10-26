@@ -1,0 +1,17 @@
+tion. Knowledge of the normalization 
+levels helps guard against undesirable redundancies.  
+
+ 
+146 
+ 
+ A careful review of the rough database design blueprint is likely to lead to revisions. Those 
+revisions will help ensure that the design is capable of meeting end-user requirements. 
+Keep in mind that this process requires the continuous verification of business trans-actions as well 
+as system and user requirements. The verification sequence must be repeated for each of the 
+system’s modules. Figure 9.12 illustrates the iterative nature of the process. 
+ 
+The verification process starts with selecting the central (most important) entity, which is the focus 
+for most of the system’s operations. To identify the central entity, the designer selects the entity 
+involved in the greatest number of the model’s relationships. In the ER diagram, it is the entity with 
+more lines connected to it than any other. The next step is to identify the module or subsystem to 
+which the central entit

@@ -1,0 +1,16 @@
+The Android life cycle (see Figure 2.1) begins when a user touches an app’s icon. This action causes 
+the onCreate method in the app’s initial activity to execute. This method includes code to load the 
+screen (called a layout) associated with the initial activity to load. The developer needs to place code 
+in this method, which initializes variables and layout objects to the settings required 
+for the user to begin  interacting  with  the  app. After the activity has been created, 
+the on Start method is executed. 
+
+This method does not have to be implemented but is useful if the 
+app requires certain settings to be the same every time the app starts, whether it is an initial start 
+after the activity is created or restarted after the activity is brought back from a stopped (but 
+not destroyed) state. After the activity has started, the on Resume 
+method is executed. This method also does not have to be implemented but is very useful to return 
+the app to the running state that the app was in before it paused. 
+This includes turning on system services used by the app (e.g., the GPS or the camera), 
+restarting animations, and reinitiating any other settings needed to allow users to pick up where they 
+left off. 

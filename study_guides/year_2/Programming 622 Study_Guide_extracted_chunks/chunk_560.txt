@@ -1,0 +1,21 @@
+tion of simple uniform hashing, each element is equally likely 
+to hash into any of the m slots, independently of where any other element has hash to. But usually it is 
+not possible to check this condition because one rarely knows the probability distribution according to 
+which the keys are drawn.  
+In practice, we use heuristic techniques to create a hash function that perform well. One good approach 
+is to derive the hash value in a way that is expected to be independent of any patterns that might exist in 
+the data (division method).  
+ Most hash function assume that the universe of keys is the set of natural numbers. Thus, its keys are not 
+natural to interpret than as natural numbers.  
+7.3.6.2 Method for Creating Hash Function   
+1. The division method.   
+2. The multiplication method.   
+3. Universal hashing.   
+t case running time for insertion is O(1).   
+  
+- hashing, all n keys hash to the same slot, creating a list of length n.  
+
+279  
+  
+ The Division Method  
+Map a key

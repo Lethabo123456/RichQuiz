@@ -1,0 +1,132 @@
+        // Simulate voting process 
+        function simulateVoting(candidateId) { 
+            const candidate = nodes.find(n => n.id === candidateId); 
+             
+            nodes.forEach(node => { 
+                if (node.id !== candidateId) { 
+                    // 80% chance to vote for candidate 
+                    if (Math.random() < 0.8) { 
+                        candidate.votes++; 
+                        logMessage(` Node ${node.id} voted for Node ${candidateId}`); 
+                    } else { 
+
+                        logMessage(` Node ${node.id} rejected Node ${candidateId}`); 
+                    } 
+                } 
+            }); 
+             
+            // Check if won election 
+            const majority = Math.floor(nodes.length / 2) + 1; 
+             
+            setTimeout(() => { 
+                if (candidate.votes >= majority) { 
+                    candidate.state = NodeState.LEADER; 
+                    updateNode(candidateId); 
+                    logMessage(` 
+Node 
+${candidateId} 
+became 
+LEADER 
+with 
+${candidate.votes}/${nodes.length} votes!`); 
+                    startHeartbeats(candidateId); 
+                } else { 
+                    candidate.state = NodeState.FOLLOWER; 
+                    updateNode(candidateId); 
+                    logMessage(` 
+Node 
+${candidateId} 
+lost 
+election 
+with 
+${candidate.votes}/${nodes.length} votes`); 
+                } 
+            }, 2000); 
+
+        } 
+         
+        // Start heartbeat process 
+        function startHeartbeats(leaderId) { 
+            const heartbeatInterval = setInterval(() => { 
+                const leader = nodes.find(n => n.id === leaderId); 
+                if (leader && leader.state === NodeState.LEADER) { 
+                    logMessage(` Node ${leaderId} sending heartbeats...`); 
+                } else { 
+                    clearInterval(heartbeatInterval); 
+                } 
+            }, 3000); 
+        } 
+         
+        // Simulate node failure 
+        function simulateFailure() { 
+            const activeNodes = nodes.filter(n => n.state !== 'failed'); 
+            if (activeNodes.length === 0) return; 
+             
+            const failedNode = activeNodes[Math.floor(Math.random() * activeNodes.length)]; 
+            const wasLeader = failedNode.state === NodeState.LEADER; 
+             
+
+            failedNode.state = 'failed'; 
+            const element = document.getElementById(`node-${failedNode.id}`); 
+            element.className = 'node'; 
+            element.style.background = '#95a5a6'; 
+            element.innerHTML = ` 
+                <div>Node ${failedNode.id}</div> 
+                <div>FAILED</div> 
+                <div>X</div> 
+            `; 
+             
+            logMessage(` Node ${failedNode.id} failed!`); 
+             
+            if (wasLeader) { 
+                logMessage(" Leader failed! Starting new election..."); 
+                setTimeout(startElection, 2000); 
+            } 
+        } 
+         
+        // Restore failed node 
+        function restoreNode() { 
+            const failedNodes = nodes.filter(n => n.state === 'failed'); 
+            if (failedNodes.length === 0) return; 
+
+             
+            const restoredNode = failedNodes[0]; 
+            restoredNode.state = NodeState.FOLLOWER; 
+            restoredNode.term = currentTerm; 
+             
+            updateNode(restoredNode.id); 
+            logMessage(` Node ${restoredNode.id} restored as follower`); 
+        } 
+         
+        // Log message 
+        function logMessage(message) { 
+            const timestamp = new Date().toLocaleTimeString(); 
+            messages.unshift(`[${timestamp}] ${message}`); 
+             
+            if (messages.length > 20) { 
+                messages = messages.slice(0, 20); 
+            } 
+             
+            const messagesDiv = document.getElementById('messages'); 
+            messagesDiv.innerHTML 
+= 
+messages.map(msg 
+=> 
+`<div 
+class="message">${msg}</div>`).join(''); 
+        } 
+
+         // Clear log 
+        function clearLog() { 
+            messages = []; 
+            document.getElementById('messages').innerHTML = ''; 
+        } 
+         
+        // Initialize on page load 
+        window.onload = function() { 
+            initializeNodes(); 
+            logMessage(" Raft cluster initialized with 5 nodes"); 
+        }; 
+    </script> 
+</body> 
+</html> 

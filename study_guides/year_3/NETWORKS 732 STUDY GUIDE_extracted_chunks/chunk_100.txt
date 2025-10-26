@@ -1,0 +1,23 @@
+2.3 Baseline Measurements 
+A baseline is a report of the network’s current state of operation. Baseline measurements might 
+include the utilization rate for your network backbone, number of users logged on per day or per 
+hour, number of protocols that run on your network, statistics about errors (such as runts, 
+collisions, jabbers, or giants), frequency with which networked applications are used, or 
+information regarding which users take up the most bandwidth (Lamlee,2023). The graph in 
+
+Figure 2-1 shows a sample baseline for daily network traffic over a six-week period. 
+ 
+Figure 2.1- Baseline Measurements
+
+Baseline measurements allow you to compare future performance increases or decreases caused 
+by network changes or events with past network performance. Obtaining baseline 
+measurements is the only way to know for certain whether a pattern of usage has changed (and 
+requires attention) or, later, whether a network upgrade made a difference (West, 2023). Each 
+network requires its own approach. The elements you measure depend on which functions are 
+most critical to your network and its users. Consider a scenario where your network currently 
+accommodates 500 users, and the backbone traffic surpasses 50% during peak times at 10:00 
+a.m. and 2:00 p.m. on business days. This pattern represents your baseline. Now, imagine your 
+organization plans to introduce 200 additional users who will engage in similar activities on the 
+network. These new users represent 40% of the existing user base (200/500). Consequently, it's 
+reasonable to anticipate that the backbone's capacity should expand by around 40% to sustain 
+the current level of service.

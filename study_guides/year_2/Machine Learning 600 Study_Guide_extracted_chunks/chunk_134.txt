@@ -1,0 +1,12 @@
+normalization follows the same steps with one key difference: instead of summing the 
+squared values of the features, you consider the absolute value. A normalized row is useful in 
+all those situations in which you’re not much interested in the absolute count of occurrences 
+but in the frequency. As an example, consider a dataset based on sentences in which each 
+feature refers to a given word. The value of the feature is the number of occurrences of the 
+word in the corresponding sentence. Are you interested in the absolute count of occurrences 
+of the word or more in the relative frequency in which it appears? When you opt for the 
+frequency, then you need to normalize the rows of the dataset. 
+6.10 Summary 
+This Chapter  covered ML concepts pertaining to text analysis where stopwords, word frequency, 
+stemming, N-gram, word2Vec, bag of words and Sentiment Analysis have been discussed. This chapter 
+also discussed image processing in ML where CNN, feature extraction, ReLU and LSTM

@@ -1,0 +1,39 @@
+bool operator!=(const linkedListIterator<Type>& right) const; //Overload 
+the not equal to operator.  
+//Postcondition: Returns true if this iterator is not equal to 
+// the iterator specified by right, otherwise it returns // 
+false.  
+ private:  
+nodeType<Type> *current; //pointer to point to the current //node 
+in the linked list  
+};   
+Figure 3-18 shows the UML class diagram of the class linkedListIterator.  
+  
+
+97  
+  
+  
+FIGURE 3-18 UML class diagram of the class linkedListIterator  
+  
+  
+The definitions of the functions of the class linkedListIterator are as follows:  
+  
+template <class Type>  
+  
+linkedListIterator<Type>::linkedListIterator()  
+{  
+current = NULL;  
+}  
+  
+template <class Type>  
+linkedListIterator<Type>::linkedListIterator(nodeType<Type> *ptr)  
+{ current = ptr;  
+}  
+  
+template <class Type>  
+Type linkedListIterator<Type>::operator*()  
+{ return current->info;  
+}  
+  
+template <class Type>  
+linkedListIterator<Type> linkedListIterator<Type>::operator

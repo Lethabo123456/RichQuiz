@@ -1,0 +1,27 @@
+/Postcondition: Returns true if the list is empty, // 
+false otherwise.  
+  
+bool isFull();  
+//Function to determine whether the list is full.  
+//Precondition: The list must exist. 
+//Postcondition: Returns true if the list is full, // 
+false otherwise.  
+  
+int search(int searchItem);  
+//Function to determine whether searchItem is in the list.  
+//Postcondition: If searchItem is in the list, returns its 
+// index, that is, its position in the list; // otherwise, 
+it returns -1.  
+  
+void insert(int newItem);  
+//Function to insert newItem in the list.  
+//Precondition: The list must exist and must not be full. 
+//Postcondition: newItem is inserted in the list and // 
+length is incremented by one.  
+  
+void remove(int removeItem);  
+//Function to delete removeItem from the list.  
+//Precondition: The list must exist and must not be empty 
+//Postcondition: If found, removeItem is deleted from the // 
+list and the length is decremented by one;  
+// otherwise, an appropriate message is

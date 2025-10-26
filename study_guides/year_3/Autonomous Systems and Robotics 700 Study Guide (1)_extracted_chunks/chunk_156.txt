@@ -1,0 +1,23 @@
+4.3.4 PID Control Python Implementation 
+The Python Control Systems Library (python-control) provides common functions for analysing 
+and designing feedback control systems. The python-control package is a set of Python classes 
+and functions that implement common operations for the analysis and design of feedback control 
+systems.
+ 
+In terms of the Python-control package more specifically, here are some things to keep in mind: 
+
+Syntax Differences: 
+• Python requires explicit commas in lists: [1,2,3] instead of MATLAB's [1 2 3] 
+• Matrices use nested lists: [[1, 2], [3, 4]] for a 2×2 matrix 
+• Use parentheses () for tuples, not braces {} 
+Function Return Values: 
+• Functions with multiple outputs use return_<val> parameters instead of MATLAB's 
+multiple assignment syntax 
+• The preferred approach is to use the returned object's attributes rather than the 
+return_<val> parameters
+
+Data Conventions: 
+• Time series data follow Python conventions with time as the final index, which differs from 
+MATLAB's typical column-wise time organization 
+These details are particularly important when working with functions like step(), bode(), lsim(), 
+and state-space operations where matrix notation and return value handling are frequently used.

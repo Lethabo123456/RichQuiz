@@ -1,0 +1,19 @@
+1.2 Types, variables, operators, and expressions 
+
+1.2.1 Understanding statements 
+A statement is a command that performs an action, such as calculating a value and storing 
+the result or displaying a message to a user. You combine statements to create methods. 
+You’ll learn more about methods in Chapter 3, “Writing methods and applying scope,” but for 
+now, think of a method as a named sequence of statements. Main, which was introduced in
+ 
+/* This is a multi-line comment 
+All text is ignored by the compiler 
+until the closing comment sequence of characters 
+*/ 
+
+earlier, is an example of a method. Statements in C# follow a well-defined set of rules 
+describing their format and construction. These rules are collectively known as syntax. (In 
+contrast, the specification of what statements do is collectively known as semantics.) One of 
+the simplest and most important C# syntax rules states that you must terminate all 
+statements with a semicolon. For example, we have demonstrated that without the 
+terminating semicolon, the following statement won’t compile:

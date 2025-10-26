@@ -1,0 +1,11 @@
+verage wait time for a customer. 
+To calculate the average wait time for a customer, we need to add the waiting time of each customer, and 
+then divide the sum by the number of customers who have arrived. When a customer arrives, he or she 
+goes to the end of the queue and the customer’s waiting time starts. If the queue is empty and a server is 
+free, the customer is served immediately and so this customer’s waiting time is zero. On the other hand, 
+if when the customer arrives and either the queue is nonempty or all the servers are busy, the customer 
+must wait for the next available server and, therefore, this customer’s waiting time starts. We can keep 
+track of the customer’s waiting time by using a timer for each customer. When a customer arrives, the 
+timer is set to 0, which is incremented after each clock unit.  
+Suppose that, on average, it takes five minutes for a server to serve a customer. When a server becomes 
+free and the waiting customer’s queue is nonempty, the custom

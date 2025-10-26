@@ -1,0 +1,24 @@
+Chapter Two: Memory Management 
+ 
+2.1. Introduction 
+
+One of the most critical segments of the operating system is the part that manages the main 
+memory. In fact, for early computers, the performance of the entire system was judged by the 
+quantity of the available main memory resources, and how that memory was optimized while 
+jobs were being processed. Back in those days, jobs were submitted serially, one at a time; and 
+managing memory centered on assigning that memory to each incoming job and then reassigning 
+it when the job was finished. Main memory has gone by several synonyms, including random 
+access memory (RAM), core memory, and primary storage (in contrast with secondary storage, 
+where data is stored in a more permanent way). This chapter discusses four types of memory 
+allocation schemes: single-user systems, fixed partitions, dynamic partitions, and relocatable 
+dynamic partitions. Let us begin with the simplest memory management scheme: the one used 
+with early computer systems.
+
+Since then, memory management has advanced dramatically to satisfy the needs of
+contemporary computer systems. Advanced ideas like virtual memory surfaced after the
+development of early techniques, allowing systems to use disk storage to increase the apparent
+capacity of physical memory. This advancement made it possible to run larger programs than
+physical memory could hold, multitask, and use resources more effectively. These days, memory
+management also includes strategies that improve efficiency and flexibility, like segmentation and
+paging. Complex operating systems, where dynamic memory allocation and protection are
+necessary for reliable, secure, and high-performance computing environments.

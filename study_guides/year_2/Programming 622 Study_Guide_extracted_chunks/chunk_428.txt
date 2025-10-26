@@ -1,0 +1,24 @@
+ed two more operations to successfully implement 
+the addQueue and deleteQueue operations: isEmptyQueue (checks whether the queue is empty) and 
+isFullQueue (checks whether a queue is full).  
+We also need an operation, initializeQueue, to initialize the queue to an empty state. Moreover, to 
+retrieve the first and last elements of the queue, we include the operations front and back as described 
+in the following list. Some of the queue operations are as follows:  
+  
+  
+  
+  
+  
+  
+
+218  
+  
+  
+initializeQueue—Initializes the queue to an empty state.  
+isEmptyQueue—Determines whether the queue is empty. If the queue is empty, it returns the 
+value true; otherwise, it returns the value false.  
+ isFullQueue—Determines whether the queue is full. If the queue is full, it returns the value true; 
+otherwise, it returns the value false.  
+ front—Returns the front, that is, the first element of the queue. Prior to this operation, the queue 
+must exist and must not be empty.  
+ back—Returns t

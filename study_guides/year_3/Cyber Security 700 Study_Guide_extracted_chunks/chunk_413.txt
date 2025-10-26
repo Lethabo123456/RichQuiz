@@ -1,0 +1,29 @@
+Filtering rules are based on information contained in a network packet: 
+ Source IP address: The IP address of the system that originated the IP packet (for 
+example, 192.178.1.1)
+
+ Destination IP address: The IP address of the system the IP 
+packet is trying to reach (for example, 192.168.1.2) 
+ Source and destination transport-level addresses: The transport-level (for example, 
+Transmission Control Protocol [TCP] or User Datagram Protocol [UDP]) port number, 
+which defines applications such as Simple Network Management Protocol (SNMP) 
+or Telnet 
+ IP protocol field: The transport protocol 
+ Interface: For a firewall with three or more ports, which interface of the firewall the packet 
+came from or which interface of the firewall the packet is destined for 
+A packet filter is typically set up as a list of rules, based on matches to fields in the IP or TCP header. If 
+there is a match to one of the rules, that rule is invoked to determine whether to forward or discard 
+the packet. If there is no match to any rule, then a default action is taken. Two default policies are 
+possible: 
+ Default = discard: That which is not expressly permitted is prohibited. 
+ Default = forward: That which is not expressly prohibited is permitted. 
+The default = discard policy is the more conservative of the two. Initially, everything is blocked, and 
+services are added on a case-by-case basis. This policy is more visible to users, who are more likely to 
+see the firewall as a hindrance. However, this is the policy likely to be preferred by businesses and 
+government organizations. Further, visibility to users diminishes as rules are created. The default = 
+forward policy increases ease of use for end users but provides reduced security; the security 
+administrator must, in essence, react to each new security threat as it becomes known. This policy is 
+used by generally more open organizations, such as universities. 
+Table 12.2 gives some examples of packet filtering rule sets. In each set, the rules are applied top to 
+bottom. The * in a field is a wildcard designator that matches everything. Assume that the default = 
+discard policy is in force with all these rule sets.

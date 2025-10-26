@@ -1,0 +1,32 @@
+Moving quantifiers through AND and OR 
+L1 AND (A x) L2(x) == (A x) (L1 AND L2(x)) 
+L1 AND (E x) L2(x) == (E x) (L1 AND L2(x)) 
+ 
+L1 OR (A x) L2(x) == (A x) (L1 OR L2(x)) 
+L1 OR (E x) L2(x) == (E x) (L1 OR L2(x)) 
+ 
+Note that we require x is not a free variable in expression L1 in the above 
+rules. We may have to rename variable x (consistently) in L2 to avoid any 
+overlap with free variables in L1. 
+ 
+Manipulating Quantifiers: Example 
+Given the following expression: 
+(A x)P(x) OR (E x)(NOT P(x)) 
+we can rename the second occurrence of x to avoid any overlap with the first 
+occurrence and arrive at the equivalent expression 
+  
+(A x)P(x) OR (E y)(NOT P(y)) 
+ 
+Moving the universal quantifier through the OR we arrive at 
+(A x) (P(x) OR (E y)(NOT P(y))) 
+Moving the existential quantifier through the OR we arrive at 
+(A x) (E y) (P(x) OR NOT P(y)) 
+Using these rules, we can write any expression involving quantifiers Q1, Q2, 
+.. QN, and the logical operators AND, OR, and NOT in *prenex form*: 
+(Q1 x1)(Q2 x2)..(Qn xn)L 
+where all the quantifiers appear outside expression L.
+
+1. First, rewrite the expression so that all of the quantifiers refer to 
+distinct variables not found in other quantifiers or free in the 
+expression. 
+2. Use the rules above to move the quantifiers outside NOT, AND, and OR.

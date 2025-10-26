@@ -1,0 +1,31 @@
+in descending order? 
+a) sort() 
+b) asort() 
+c) rsort() 
+d) dsort() 
+ 
+Answer: c 
+ 
+53. What will be the output of the following PHP code? 
+<?php 
+$fruits = array ("mango", "apple", "peach", "pear"); 
+$fruits = asort ($fruits); 
+printr ($fruits); 
+?> 
+a) Array ( [1] => apple [0] => mango [2] => peach [3] => pear ) 
+b) Array ( [0] => apple [1] => mango [2] => peach [3] => pear ) 
+c) Error 
+d) Array ( [1] => apple [0] => mango [3] => peach [2] => pear ) 
+Answer: a 
+
+54. What will be the output of the following PHP code? 
+<?php 
+$arr = array ("picture1.JPG", "picture2.jpg", 
+"Picture10.jpg", "picture20.jpg"); 
+sort($arr); 
+print_r($arr); 
+?> 
+a) Array ( [0] => picture1.JPG [1] => Picture10.jpg [2] => picture2.jpg [3] => picture20.jpg ) 
+b) Array ( [0] => picture1.JPG [1] => picture2.jpg [2] => Picture10.jpg [3] => picture20.jpg ) 
+c) Array ( [0] => Picture10.jpg [1] => picture1.JPG [2] => picture2.jpg [3] => picture20.jpg ) 
+d) Array ( [0] => Picture10.jpg [1] => picture1.JPG [2] => pictu

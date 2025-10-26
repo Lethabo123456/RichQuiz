@@ -1,0 +1,16 @@
+1.4 Enumerations 
+
+Enums are strongly typed constants. They are essentially unique types that allow you to assign 
+symbolic names to integral values. In the C# tradition, they are strongly typed, meaning that 
+an enum of one type may not be implicitly assigned to an enum of another type even though 
+the underlying value of their members are the same. Along the same lines, integral types and 
+enums are not implicitly interchangable. All assignments between different enum types and 
+integral types require an explicit cast. In Example 1-4, you created two related constants: 
+ 
+const int FreezingPoint = 32; 
+const int BoilingPoint = 212; 
+
+You might wish to add a number of other useful constants as well to this list, such as: 
+ 
+Const int LightJacketWeather = 60; 
+const int SwimmingWeather =int WickedCold = 0;

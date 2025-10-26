@@ -1,0 +1,38 @@
+4.4   Delimited Files 
+Delimited files are a common form of data storage and are used by many legacy systems. If your applica-
+tion must interoperate with such a system, you will often encounter the delimited data format. A partic-
+ularly common form of delimiter is the comma 
+ for example, the data in an Excel spreadsheet,an Ac-
+cess database, or a SQL Server database can be exported as a comma-separated value (CSV) file. 
+ 
+StreamWriter class to write such files using this approach; it is also easy to 
+read comma-separated files. You may remember from Chapter 5 the String 
+Split() method, which 
+is used to convert a string into an array based on a supplied separator character. If you specify a comma 
+as the separator, it creates a correctly dimensioned string array containing all of the data in the original 
+comma-separated string. 
+ 
+The next Try It Out shows how useful this can be. The example uses comma-separated values, loading 
+them into a List<Dictionary<string, string>> object. This example is quite generic, and you may find your-
+self using the technique in your own applications if you need to work with commaseparated 
+values. 
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.IO; 
+ 
+ 
+namespace ConsoleApplication1 
+{ 
+    class Program 
+    { 
+        private static List<Dictionary<string, string>> GetData( 
+out List<string> columns) 
+        { 
+            string line; 
+            string[] stringArray; 
+            char[] charArray = new char[] { ',' }; 
+            List<Dictionary<string, string>>

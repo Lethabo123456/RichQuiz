@@ -1,0 +1,35 @@
+Stress testing helps you do two things: 
+ 
+• Test the failure behavior of the system. Circumstances may arise through an unexpected 
+combination of events where the load placed on the system exceeds the maximum 
+anticipated load. In these circumstances, system failure should not cause data corruption 
+or unexpected loss of user services. Stress testing checks that overloading the system 
+causes it to “fail-soft” rather than collapse under its load. 
+• Reveal defects that only show up when the system is fully loaded. Although it can be 
+argued that these defects are unlikely to cause system failures in normal use, there may 
+be unusual combinations of circumstances that the stress testing replicates. 
+ 
+Stress testing is particularly relevant to distributed systems based on a network of processors. 
+These systems often exhibit severe degradation when they are heavily loaded. The network 
+becomes swamped with coordination data that the different processes must exchange. The 
+processes become slower and slower as they wait for the required data from other processes.  
+ 
+Stress testing helps you discover when the degradation begins so that you can add checks to the 
+system to reject transactions beyond this point. 
+
+6.6 User Testing  
+User or customer testing is a stage in the testing process in which users or customers provide 
+input and advice on system testing. This may involve formally testing a system that has been 
+commissioned from an external supplier. Alternatively, it may be an informal process where users 
+experiment with a new software product to see if they like it and to check that it does what they 
+need.  
+ 
+User testing is essential, even when comprehensive system and release testing have been carried 
+out. Influences from the user’s working environment can have a major effect on the reliability, 
+performance, usability, and robustness of a system. 
+ 
+It is practically impossible for a system developer to replicate the system’s working environment, 
+as tests in the developer’s environment are inevitably artificial. For example, a system that is 
+intended for use in a hospital is used in a clinical environment where other things are going on, 
+such as patient emergencies and conversations with relatives. These all affect the use of a system, 
+but developers cannot include them in their testing environment. 

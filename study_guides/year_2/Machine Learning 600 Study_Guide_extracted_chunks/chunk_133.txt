@@ -1,0 +1,21 @@
+d scaler works by subtracting the mean of 
+the feature and dividing the resulting value by the standard deviation. After this operation is 
+completed, 68 percent of the values fall in the range [−1, 1]. The range of values is larger than 
+the one obtained with the MinMax scaler. 
+
+P a g e  | 83 
+ 
+Normalisation 
+Scaling and standardization are algorithms that work on the values of a feature—namely, a 
+column in the dataset. Normalization instead works on the rows of the dataset. There are two 
+types of normalization: L2 and L1. For each row in the dataset, the L2 normalization works as 
+follows: 
+ 
+Calculate the sum of squared feature values. 
+ 
+Take the square root of the result. 
+The value obtained is known as norm L2. As the final step, each feature value in the row is 
+divided by the norm. After all is done, in each row the sum of the square of the feature values 
+equals 1. 
+The L1 normalization follows the same steps with one key difference: instead of summing the 
+squared value

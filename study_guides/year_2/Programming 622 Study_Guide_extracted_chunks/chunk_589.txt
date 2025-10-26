@@ -1,0 +1,33 @@
+after moving firstOutOfOrder between trailCurrent and current  
+  
+We now write the C++ function, linkedInsertionSort, to implement the previous algorithm:  
+  
+template <class elemType>  
+void unorderedLinkedList<elemType>::linkedInsertionSort()  
+{  
+
+293  
+  
+nodeType<elemType> *lastInOrder; nodeType<elemType> 
+*firstOutOfOrder; nodeType<elemType> *current; 
+nodeType<elemType> *trailCurrent; lastInOrder = first; if 
+(first == NULL) cerr << "Cannot sort an empty list." << 
+endl; else if (first->link == NULL) cout << "The list is of 
+length 1. "<< "It is already in order." << endl; else  
+while (lastInOrder->link != NULL)  
+{  
+firstOutOfOrder = lastInOrder->link;  
+if (firstOutOfOrder->info < first->info)  
+{  
+lastInOrder->link = firstOutOfOrder->link; 
+firstOutOfOrder->link = first; first = 
+firstOutOfOrder;  
+}  
+else  
+{ trailCurrent = first;  
+current = first->link;  
+  
+while (current->info < firstOutOfOrder->info)  
+{ trailCurrent = current;  
+current = current->link;  
+}

@@ -1,0 +1,21 @@
+1.2.18 Card Layout  
+The CardLayout class is unique among the other layout managers in that it stores several different layouts. 
+Each layout can be thought of as being on a separate index card in a deck that can be shuffled so that any 
+card is on top at a given time. This can be useful for user interfaces with optional components that can be 
+dynamically enabled and disabled upon user input. You can prepare the other layouts and have them 
+hidden, ready to be activated when needed.CardLayout provides these two constructors:  
+  
+CardLayout()  
+CardLayout (int horz, int vert)  
+  
+The first form creates a default card layout. The second form allows you to specify the horizontal and 
+vertical space left between components in horz and vert, respectively. Use of a card layout requires a bit 
+more work than the other layouts. The cards are typically held in an object of typePanel. This panel must 
+have CardLayout selected as its layout manager. The cards that form the deck are also typically objects of 
+type Panel. Thus, you must create a panel that contains the deck and a panel for each card in the deck. 
+Next, you add to the appropriate panel the components that form each card. You then add these panels   
+to the panel for which CardLayout is the layout manager. Finally, you add this panel to the main applet 
+panel. Once these steps are complete, you must provide some way for the user to select between cards. 
+One common approach is to include one push button for each card in the deck. When card panels are 
+added to a panel, they are usually given a name. Thus, most of the time, you will use this form of add() 
+when adding cards to a panel: 

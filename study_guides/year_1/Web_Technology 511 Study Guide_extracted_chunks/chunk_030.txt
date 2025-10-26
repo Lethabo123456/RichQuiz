@@ -1,0 +1,22 @@
+2.3 XML AND XHTML 
+ 
+With the Extensible Markup Language (XML), the W3C has a chance to start from scratch 
+in defining a standard markup language, instead of playing catch-up, as it had to do with 
+HTML. XML is also a subset of SGML. Unlike HTML, XML is a meta-language, not a language 
+itself, but a language that lets you describe other languages. As a meta-language, XML 
+allows you to create your own elements to meet your information needs, which 
+significantly distinguishes it from the predefined elements of HTML. XML provides a 
+format for describing structured data that can be shared by multiple applications across 
+multiple platforms. 
+
+Features of XML 
+Some of the features of XML that makes it a very useful language are: 
+ XML describes data: The power of data representation in XML comes from separating 
+display and style from the structure of data. XML elements describe data and structure 
+only and not presentation. Where HTML contains elements that describe a word as bold 
+or italic, XML declares an element to be a book title, item price, or product measurement. 
+Once the data are structured in XML, they can be displayed across a variety of media, such 
+as a computer display, television screen, or handheld device, using an associated style 
+sheet that contains the appropriate display information. Currently, Cascading Style Sheets 
+is the only complete style language for XML, though the W3C is working on the Extensible 
+Style Language (XSL), which is derived from XML.

@@ -1,0 +1,22 @@
+j)  E(G), then (vj, vi)  E(G), so AG(i, j) = 1 = AG( j, i). It follows that the adjacency 
+matrix of an undirected graph is symmetric.  
+  
+  
+EXAMPLE 10-3  
+  
+  Consider the directed graphs of Figure 10-4. The adjacency matrices of the directed graphs G1 and G2 are 
+as follows:  
+  
+  
+  
+10.3.2 Adjacency Lists  
+  
+Let G be a graph with n vertices, where n>0. Let V(G) = {v1, v2, ..., vn}. In the adjacency list representation, 
+corresponding to each vertex, v, there is a linked list such that each node of the linked list contains the 
+vertex, u, such that (v, u)   E(G). Because there are n nodes, we use an array, A, of size n, such that A[i] is 
+a reference variable pointing to the first node of the linked list containing the vertices to which vi is 
+adjacent. Clearly, each node has two components, say vertex and link. The component vertex contains 
+the index of the vertex adjacent to vertex i.  
+  
+EXAMPLE 10-4  
+Consider the directed graphs of Figure 10-4. Figure 10-5 shows the adj

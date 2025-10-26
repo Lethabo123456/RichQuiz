@@ -1,0 +1,45 @@
+2. a. Translate problem 6 into PROLOG 
+lawyer(mary).  
+computer_scientist(ann). 
+rich(ann). 
+rich(X):- 
+lawyer(X). 
+smart(X):- 
+computer_scientist(X). 
+nice_car(X):- lawyer(X). 
+nice_car(X):- 
+smart(X), 
+rich(X). 
+ 
+b. What will be the PROLOG queries and resulting answers for the following: 
+1) Does Ann have a nice car? 
+2) Who is rich? 
+ 
+?- nice_car(ann). 
+yes 
+ 
+?- rich(X). 
+X = ann ; 
+ 
+X = mary 
+ 
+c. What are the advantages/disadvantages of this representation over that in 
+problem 6? 
+ 
+Disadvantages: 
+1. You have to learn PROLOG. 
+2. One can get mixed up as to which side the sufficient and necessary clauses should 
+go and the meanings of the symbols. 
+3. Developing a more complex problem would yield more errors because of the 
+probable detail of the problem whereas words could explain the problem better 
+
+Advantages: 
+1. it is formal and automated  
+Write 3 of the following predicates in PROLOG: 
+a. stepmother(X, Y). 
+stepmother(Z, Y) :- remarried (X, Z), birthparent (X, Y). //z 
+b. cousin(X, Y). 
+cousin(X,Y) :- (parent(W,X) ^ siblings(W,Z)) ^ parent (Z, Y). //z 
+c. subset(L, LL) which returns true if L is a subset of LL 
+d. flatten(L, LL) which returns the elements in list L with possible sublists in LL with no 
+sublists. For example, if L is [1, [2,3], [[4]], 5) LL is [1, 2, 3, 4, 5].

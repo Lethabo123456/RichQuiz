@@ -1,0 +1,23 @@
+2.4 Software Design and Implementation   
+The implementation stage of software development is the process of developing an executable 
+system for delivery to the customer. Sometimes this involves separate activities of software design 
+and programming. However, if an agile approach to development is used, design and 
+implementation are interleaved, with no formal design documents produced during the process. 
+Of course, the software is still designed, but the design is recorded informally on whiteboards and 
+programmer’s notebooks. 
+ 
+A software design is a description of the structure of the software to be implemented, the data 
+models and structures used by the system, the interfaces between system components and, 
+sometimes, the algorithms used. Designers do not arrive at a finished design immediately but 
+develop the design in stages. They add detail as they develop their design, with constant 
+backtracking to modify earlier designs.  
+
+Figure 2.5: A General Process of the Design Process (Sommerville,  I.  2021)   
+ 
+The figure above is an abstract model of the design process showing the inputs to the design 
+process, process activities, and the process outputs. The design process activities are both 
+interleaved and interdependent. New information about the design is constantly being 
+generated, and this affects previous design decisions. Design rework is therefore inevitable. 
+The activities in the design process vary, depending on the type of system being developed. For 
+example, real-time systems require an additional stage of timing design but may not include a 
+database, so there is no database design involved.

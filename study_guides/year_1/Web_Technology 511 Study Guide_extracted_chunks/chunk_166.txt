@@ -1,0 +1,32 @@
+These sectioning elements are also referred to as semantic elements because the tag 
+name describes the purpose of the element and the type of content it contains. Even 
+without knowing much about HTML, the page structure defined in the above code is 
+easily understood because of the tag names. 
+ 
+The About Curbside Thai page will have a simple structure containing a header, a single 
+article, and a footer. Within the header, there will be an h1 element providing the page 
+title (not to be confused with the document title, which is displayed on the browser 
+title bar or a browser tab). Add this structure to the document body. 
+
+Adding sectioning elements to the page body 
+
+<body>
+    <header>
+       <h1>Curbside Thai</h1>
+    </header>
+    <article>
+        <h1>About Us</h1>
+    </article>
+    <footer>
+         Curbside Thai 411 Belde Drive, Charlotte NC 28201 704-555-1151
+    </footer>
+</body>
+</html>
+
+One problem with div elements is that there are no rules for the ids. One web designer 
+might identify the page heading with the id header while another designer might use 
+heading or top. The lack of consistency makes it harder for search engines to identify 
+the page’s main topics. he advantage of the HTML5 sectioning elements is that their 
+tag name indicates their purpose in the document, leading to greater uniformity in how 
+pages are designed and interpreted. 
+ 

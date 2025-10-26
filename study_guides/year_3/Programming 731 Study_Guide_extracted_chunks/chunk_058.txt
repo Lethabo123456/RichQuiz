@@ -1,0 +1,20 @@
+One other point: main( ) is simply a starting place for your program. A complex program will have 
+dozens of classes, only one of which will need to have a main( ) method to get things started.  
+When you begin creating applets—Java programs that are embedded in Web browsers—you won’t 
+use main( ) at all, since the Web browser uses a different means of starting the execution of applets.   
+The next line of code is shown here. Notice that it occurs inside main( ).   
+   
+System.out.println("This is a simple Java program.");   
+This line outputs the string “This is a simple Java program.” followed by a new line on  the screen.  
+Output is actually accomplished by the built-in println( ) method. In this case, println( ) displays the 
+string which is passed to it. As you will see, println( ) can be used to display other types of 
+information, too. The line begins with System.out. While too complicated to explain in detail at this 
+time, briefly, System is a predefined class that provides access to the system, and out is the output 
+stream that is connected to the console. As you have probably guessed, console output (and input) 
+is not used frequently in real Java programs and applets. Since most modern computing 
+environments are windowed and graphical in nature, console I/O is used mostly for simple, utility 
+programs and for demonstration programs. Later in this book, you will learn other ways to generate 
+output using Java. But for now, we will continue to use the console I/O methods. Notice that the 
+println( ) statement ends with a semicolon. All statements in Java end with a semicolon. The reason 
+that the other lines in the program do not end in a semicolon is that they are not, technically, 
+statements. The first } 

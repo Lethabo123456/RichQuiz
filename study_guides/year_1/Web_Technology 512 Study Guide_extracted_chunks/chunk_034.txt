@@ -1,0 +1,30 @@
+more 
+closely. 
+ 
+ 
+WEB RESOURCE 
+ 
+http://www.w3schools.com/j
+s/js_events.asp 
+
+ 
+25 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+window.open 
+ 
+It is quite useful to be able to open up a new window from the current page. For 
+example, we use it on our site for the "contact us" links. The new window then 
+contains things like email address, phone numbers, etc. The new window typically 
+opens when you click a hyperlink on a web page. You can also have a window open 
+when a web page loads, so-called popup windows (which can be very annoying for 
+your visitors). 
+ 
+The code below illustrates how to open up a new window when a hyperlink is clicked. 
+Do not worry about understanding this code yet, as it is a bit complicated at this stage 
+of your programming career. But it uses something called a function. The function is 
+called into action when the hyperlink is clicked. You will study functions later in this 
+course. Here is the code, though: 
+ 
+ 
+Figure 2.16 - How to open up a new windo

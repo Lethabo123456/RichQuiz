@@ -1,0 +1,12 @@
+male...</label>   
+                              <input type=”radio” name=”gender” id=”genderMale” value=”M” />   
+                             <label for=”genderFemale”>...or female?</label>   
+                             <input type=”radio” name=”gender” id=”genderFemale” value=”F” />   
+                             <label for=”favoriteWidget”>What’s your favorite widget?</label>   
+                            <select name=”favoriteWidget” id=”favoriteWidget” size=”1”>   
+                                     <option value=”superWidget”>The SuperWidget</option>   
+                                     <option value=”megaWidget”>The MegaWidget</option>   
+                                     <option value=”wonderWidget”>The WonderWidget</option>   
+                           </select>   
+                           <label for=”newsletter”>Do you want to receive our newsletter?</label>   
+                          <input type=”checkbox” name=”newsletter” id=”newsletter” value=”yes” />

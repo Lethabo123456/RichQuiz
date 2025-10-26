@@ -1,0 +1,38 @@
+The designer of Document has opted to make the Read( ) method virtual but not to make the 
+Write( ) method virtual: 
+ 
+public virtual void Read( )
+ 
+The new class Note derives from Document: 
+public class Note : Document 
+It is not necessary for Note to override Read( ), but it is free to do so and has in fact done so 
+here: 
+  public override void Read( ) 
+ 
+In Tester, the Read and Write methods are called in four ways: 
+1. Through the base class reference to a derived object 
+2. Through an interface created from the base class reference to the derived object 
+3. Through a derived object 
+4. Through an interface created from the derived object 
+To accomplish the first two calls, a Document (base class) reference is created, and the 
+address of a new Note (derived) object created on the heap is assigned to the Document 
+reference: 
+Document theNote = new Note("Test Note"); 
+An interface reference is created and the as operator is used to cast the Document to the 
+IStorable reference: 
+IStorable isNote = theNote as IStorable; 
+You then invoke the Read( ) and Write( ) methods through that interface. The output 
+reveals that the Read( ) method is responded to polymorphically and the Write( ) method 
+is not, just as we would expect: 
+Overriding the Read method for Note! 
+Document Write Method for IStorable 
+The Read( ) and Write( ) methods are then called directly on the object itself: 
+theNote.Read( ); 
+theNote.Write( ); 
+ 
+and once again you see the polymorphic implementation has worked: 
+Overriding the Read method for Note! 
+Document Write Method for IStorable 
+In both cases, the Read( ) method of Note is called and the Write( ) method of Document is
+called. 
+ 

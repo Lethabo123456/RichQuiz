@@ -1,0 +1,38 @@
+ed from the // 
+list and the length is decremented by one;  
+// otherwise, an appropriate message is printed.  
+  
+void printList();  
+//Function to output the elements of the list.  
+//Precondition: The list must exist. 
+//Postcondition: The elements of the list are // 
+printed on the standard output device.  
+  
+intListType(); //Default 
+constructor  
+
+43  
+  
+//Postcondition: length = 0  
+  
+private:  
+int list[1000]; int 
+length;  
+};  
+  
+  
+  
+  
+  
+EXAMPLE 1-12  
+  
+The class personType that is designed in Example 1-12 is quite useful; we will use this class in subsequent 
+chapters. EXAMPLE 1-12  
+The most common attributes of a person are the person’s first name and last name. The typical operations 
+on a person’s name are to set the name and print the name. The following statements define a class with 
+these properties.  
+  
+//************************************************************  
+// class personType  
+// This class specifies the members to implement a name.  
+//******

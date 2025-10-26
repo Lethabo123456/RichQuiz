@@ -1,0 +1,22 @@
+The Three OOP Principles    
+All object-oriented programming languages provide mechanisms that help you implement the 
+object-oriented model. They are encapsulation, inheritance, and polymorphism. Let’s take a look 
+at these concepts now.   
+   
+Encapsulation    
+Encapsulation is the mechanism that binds together code and the data it manipulates and keeps 
+both safe from outside interference and misuse. One way to think about encapsulation is as a 
+protective wrapper that prevents the code and data from being arbitrarily accessed by other code 
+defined outside the wrapper.  
+ 
+Access to the code and data inside the wrapper is tightly controlled through a well-defined interface. 
+To relate this to the real world, consider the automatic transmission on an automobile. It 
+encapsulates hundreds of bits of information about your engine, such as how much you are 
+accelerating, the pitch of the surface you are on, and the position of the shift lever. You, as the user, 
+have only one method of affecting this complex encapsulation: by moving the gear-shift lever. You 
+can’t affect the transmission by using the turn signal or windshield wipers, for example. Thus, the 
+gear-shift lever is a well-defined (indeed,unique) interface to the transmission. Further, what occurs 
+inside the transmission does not affect objects outside the transmission. For example, shifting gears 
+does not turn on the headlights! Because an automatic transmission is encapsulated, dozens of car 
+manufacturers can implement one in any way they please. However, from the driver’s point of view, 
+they all work the same. This same idea can be applied to programming.

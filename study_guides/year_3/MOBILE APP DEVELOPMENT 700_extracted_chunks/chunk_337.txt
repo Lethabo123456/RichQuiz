@@ -1,0 +1,27 @@
+5.3 Complex Lists 
+The ContactListActivity needs to have more functionality than can be coded in a simple list. In this 
+section, you will change the list to display the contact’s name in a large blue font and the contact’s 
+phone number in a smaller black font below the name. The list item also displays an arrow indicating 
+that tapping the contact leads to some other activity. In this case, the MainActivity will open and the 
+contact’s data will be displayed. The list also allows the deletion of one or more contacts. To get this 
+functionality, you need to create data source methods, create another list item layout, and modify 
+your own adapter. 
+ 
+Create the Data Source Method 
+The complex list displays and uses several bits of data about a contact. To function properly, it needs 
+all the data for a contact. This requires a method to retrieve contact data for all contacts from the 
+database. Open or switch to ContactDataSource.java to create a new method that returns that data 
+as Contact objects in an ArrayList. Use the code in Listing 6.6. 
+This code is very similar to the method used to retrieve the contact name. The primary difference is 
+that it retrieves all the data for each contact and places that data in a Contact object before it adds it 
+to the ArrayList (which is now parameterized to hold Contact objects). However, there are some 
+notable differences: 
+▪ Lines 10–19—A new Contact object is instantiated for each record in the cursor. All the values in 
+the record are added to the appropriate attribute in the new object. Care must be taken to get the 
+proper field. You need to know the structure of your table for this, since the fields are only referenced 
+by their location in the table. The first field in the table creation SQL statement is index 0 in the cursor, 
+the second field is index 1, and so on. 
+▪ Lines 20–22—A new Calendar object is created to hold the contact’s birthday. Dates are stored in 
+millis, so the calendar object is set to the proper date using the setTimeInMillis(long millis) method. 
+After the birthdate object is created, it is inserted into the Contact object. 
+ 

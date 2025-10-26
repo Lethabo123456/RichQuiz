@@ -1,0 +1,13 @@
+e “many” 
+side (the dependent entity) as a foreign key. However, where do you place the foreign key when 
+you are working with a 1:1 relationship? For example, take the case of a 1:1 relationship between 
+EMPLOYEE and DEPARTMENT based on the business rule “one EMPLOYEE is the manager of 
+one DEPARTMENT, and one DEPARTMENT is managed by one EMPLOYEE.” In that case, 
+there are two options for selecting and placing the foreign key:  
+1. Place a foreign key in both entities.  
+2. Place a foreign key in one of the entities. In that case, the primary key of one of the two entities 
+appears as a foreign key in the other entity.  
+As a designer, you must recognize that 1:1 relationships exist in the real world; therefore, they 
+should be supported in the data model. In fact, a 1:1 relationship is used to ensure that two entity 
+sets are not placed in the same table. In other words, EMPLOYEE and DEPARTMENT are clearly 
+separate and unique entity types that do not belong together in a single ent

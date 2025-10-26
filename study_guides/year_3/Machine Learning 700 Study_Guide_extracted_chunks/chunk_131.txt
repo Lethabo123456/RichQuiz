@@ -1,0 +1,25 @@
+5.6.1 Failure cases of k-means 
+Even if you know the “right” number of clusters for a given dataset, k-means might not always be able to 
+recover them. Each cluster is defined solely by its center, which means that each cluster is a convex shape. 
+As a result of this, k-means can only cap- ture relatively simple shapes. k-means also assumes that all 
+clusters have the same “diameter” in some sense; it always draws the boundary between clusters to be 
+exactly in the middle between the cluster centers. That can sometimes lead to surprising results: 
+
+One might have expected the dense region in the lower left to be the first cluster, the dense region in the 
+upper right to be the second, and the less dense region in the cen- ter to be the third. Instead, both 
+cluster 0 and cluster 1 have some points that are far away from all the other points in these clusters that 
+“reach” toward the center. k-means also assumes that all directions are equally important for each 
+cluster. The following plot shows a two-dimensional dataset where there are three clearly separated 
+parts in the data. However, these groups are stretched toward the diagonal. As k-means only considers 
+the distance to the nearest cluster center, it can’t handle this kind of data: 
+k-means also performs poorly if the clusters have more complex shapes:
+
+Vector quantization, or seeing k-means as decomposition Even though k-means is a clustering algorithm, 
+there are interesting parallels between k-means and the decomposition methods like PCA and NMF that 
+we discussed ear- lier. You might remember that PCA tries to find directions of maximum variance in the 
+data, while NMF tries to find additive components, which often correspond to “extremes” or “parts” of 
+the data. Both methods tried to express the data points as a sum over some components. k-means, on 
+the other hand, tries to rep- resent each data point using a cluster center. You can think of that as each 
+point being represented using only a single component, which is given by the cluster center. This view of 
+k-means as a decomposition method, where each point is represented using a single component, is called 
+vector quantization. 

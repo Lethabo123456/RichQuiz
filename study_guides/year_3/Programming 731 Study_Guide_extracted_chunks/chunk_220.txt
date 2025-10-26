@@ -1,0 +1,41 @@
+When the Java run-time system detects the attempt to divide by zero, it constructs a new exception 
+object and then throws this exception. This causes the execution of Exc0 to stop, because once an 
+exception has been thrown, it must be caught by an exception handler and dealt with immediately. 
+In this example, we haven’t supplied any exception handlers of our own, so the exception is caught 
+by the default handler provided by the Java run-time system. Any exception that is not caught by 
+your program will ultimately be processed by the default handler. The default handler displays a 
+string describing the exception, prints a stack trace from the point at which the exception occurred, 
+and terminates the program.   
+
+Here is the output generated when this example is executed.  java.lang.ArithmeticException:  
+/ by zero    
+at Exc0.main(Exc0.java:4) Notice how the class name, Exc0; the method name, main; the  
+filename, Exc0.java; and the line number, 4, are all included in the simple stack trace. Also, notice 
+that thetype of the exception thrown is a subclass of Exception called  
+ArithmeticException,which more specifically describes what type of error happened. 
+ As discussed later inthis chapter, Java supplies several built-in exception types that match the 
+by the default handler provided by the Java run-time system. Any exception that is not caught by 
+your program will ultimately be processed by the default handler. The default handler displays a 
+string describing the exception, prints a stack trace from the point at which the exception occurred, 
+and terminates the program.   
+Here is the output generated when this example is executed.  java.lang.ArithmeticException:  
+/ by zero    
+at Exc0.main(Exc0.java:4) Notice how the class name, Exc0; the method name, main; the  
+filename, Exc0.java; and the line number, 4, are all included in the simple stack trace. Also, notice 
+that thetype of the exception thrown is a subclass of Exception called  
+ArithmeticException,which more specifically describes what type of error happened. 
+ As discussed later inthis chapter, Java supplies several built-in exception types that match the 
+various sortsof run-time errors that can be generated.The stack trace will always show the sequence 
+of method invocations that led up to the error. For example, here is another version of the preceding 
+program that introduces the same error but in a method separate from main( ):   
+   
+class Exc1 {   
+   
+static void subroutine() {   
+int d = 0; 
+int a = 10 / d;   
+}   
+public static void main(String args[]) {   
+Exc1.subroutine();   
+}   
+} 

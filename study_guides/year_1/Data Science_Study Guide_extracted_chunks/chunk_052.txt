@@ -1,0 +1,26 @@
+• Are there any missing data points? Data isn't perfect. Sometimes we might be missing data 
+because of human or mechanical error. When this happens, we, as data scientists, must make 
+decisions about how to deal with these discrepancies. 
+• Do we need to perform any transformations on the columns? Depending on what level/type 
+of data each column is at, we might need to perform certain types of transformations. For 
+example, generally speaking, for the sake of statistical modelling and machine learning, we 
+would like each column to be numerical. Of course, we will use Python to make any and all 
+transformations (Sinan, 2016). 
+
+Now let us look at an example. 
+ 
+3.1.1. Dataset 1 – Yelp 
+The first dataset we will look at is a public dataset made available by the restaurant review site, Yelp. 
+All personally identifiable information has been removed. Let's read in the data first, as shown here: 
+ 
+import pandas as pd 
+yelp_raw_data = pd.read_csv("yelp.csv") 
+yelp_raw_data.head() 
+ 
+The preceding code does: 
+• Import the pandas package and named it as pd. 
+• Read in the .csv from the Web; call is yelp_raw_data.  
+You can download a similar csv file from https://data.world/datasets/reviews  
+• Look at the head of the data (just the first few rows). 
+ 
+By observing the table  - Download a similar csv file from https://data.world/datasets/reviews

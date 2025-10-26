@@ -1,0 +1,26 @@
+ble name 
+causes the variable’s value to be incremented or decremented before the value is returned; placing 
+the operator after the variable name returns the current value of the variable first, then adds or 
+subtracts one from the variable. For example:  
+  
+$x = 5;  
+echo ++$x; // Displays “6” (and $x now contains 6)  
+$x = 5; echo $x++; // Displays “5” (and $x now 
+contains 6)  
+
+32  
+  
+2.12 String Operators  
+There is really only one string operator, and that is the concatenation operator , . (dot). This operator 
+simply takes two string values, and joins the right-hand string onto the left-hand one to make a longer 
+string. For example:  
+  
+  
+  
+  
+  
+echo “Shaken, “ . “not stirred”; // Displays “ Shaken, not stirred ”  
+  
+You can also concatenate more than two strings at once. Furthermore, the values you concatenate 
+do not have to be strings; thanks to PHP’s automatic type conversion, non-string values, such as 
+integers and floats, are converted to strings at the time they

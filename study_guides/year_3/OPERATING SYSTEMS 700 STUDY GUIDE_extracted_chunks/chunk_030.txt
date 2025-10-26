@@ -1,0 +1,15 @@
+1.5. Types of Operating Systems
+ 
+i. Batch Operating Systems 
+In a batch system, tasks are collected, grouped, and processed as a batch without user interaction 
+during execution. Users prepare jobs ofline, typically on punch cards or tape, and submit them 
+for processing. The operating system processes jobs sequentially, minimizing idle time. No direct 
+interact ion between the user and the system during execution. 
+
+Advantages: 
+➢ Efficient for large-scale, repetitive tasks (e.g., payroll processing). 
+➢ Reduces setup time and maximizes resource utilization. 
+
+Disadvantages: 
+➢ Delayed feedback: users must wait until the batch is complete to see results. 
+➢ Errors in job input can cause an entire batch to fail. 

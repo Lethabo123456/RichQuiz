@@ -1,0 +1,34 @@
+4.1.18 Utility Classes  
+
+There are several utilities provided in the Servlet API. The first is the interface 
+javax.servlet.SingleThreadModel that can make it easier to write simple servlets. If a servlet implements 
+this marker interface, the hosting server knows that it should never call the servlet's service() method 
+while it is processing a request. That is, the server processes all service requests within a single thread. 
+While this makes it easier to write a servlet, this can impede performance. A full discussion of this issue is 
+located later in this course.   
+Two exception classes are included in the Servlet API. The exception javax.servlet.ServletException can be 
+used when there is a general failure in the servlet. This notifies the hosting server that there is a problem. 
+The exception javax.servlet.UnavailableException indicates that a servlet is unavailable. Servlets can 
+report this exception at any time. There are two types of unavailability:   
+Permanent. The servlet is unable to function until an administrator takes some action. In this state, a 
+servlet should write a log entry with a problem report and possible resolutions.   
+Temporary. The servlet encountered a (potentially) temporary problem, such as a full disk, failed server, 
+etc. The problem can correct itself with time or may require operator intervention.   
+  
+4.1.19 HTTP Support  
+Servlets that use the HTTP protocol are very common. It should not be a surprise that there is specific help 
+for servlet developers who write them. Support for handling the HTTP protocol is provided in the package 
+javax.servlet.http. Before looking at this package, take a look at the HTTP protocol itself.  HTTP stands for 
+the HyperText Transfer Protocol. It defines a protocol used by web browsers and servers to communicate 
+with each other. The protocol defines a set of text-based request messages called HTTP methods. (Note: 
+The HTTP specification calls these HTTP methods; do not confuse this term with Java methods. Think of 
+HTTP methods as messages requesting a certain type of response). The HTTP methods include:   
+• GET   
+• HEAD   
+• POST   
+• PUT   
+• DELETE   
+• TRACE   
+• CONNECT   OPTIONS   
+
+For this course, you will only need to look at only three of these methods: GET, HEAD, and POST.

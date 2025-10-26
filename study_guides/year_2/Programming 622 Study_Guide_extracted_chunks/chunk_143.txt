@@ -1,0 +1,30 @@
+or screen is initialized using the object cout, 
+and when this iterator outputs the elements they are separated by a space.  
+  
+The statement  
+ copy(intArray, intArray+9, screen);  
+  
+
+67  
+  
+outputs the elements of intArray on the screen.  
+  
+Similarly, the statement  
+ copy(vecList.begin(), vecList.end(), screen);  
+  
+outputs the elements of the container vecList on the screen.  
+  
+We will frequently use the function copy to output the elements of a container by using an ostream 
+iterator. Also, until we discuss ostream iterators in detail, we will use statements similar to the statement 
+in Line A to create an ostream iterator.  
+  
+Of course, we can directly specify an ostream iterator in the function copy. For example, the statement 
+(shown previously)   
+ copy(vecList.begin(), vecList.end(), screen);    
+  
+is equivalent to the statement  
+ copy(vecList.begin(), vecList.end(), ostream_iterator<int>(cout, " "));  
+  
+Finally, the statement  
+  
+copy(vecList.begin(), vecList

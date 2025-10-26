@@ -1,0 +1,43 @@
+5.7.1 Indexers and Assignment 
+
+In Example 4-6, you cannot assign to an index that does not have a value. Thus, if you write: 
+lbt [ 10] = "wow!"; 
+you've passed in (10) is larger than the counter (6). 
+ 
+Of course, you can use the set ( ) method for assignment; you simply have to handle the 
+indexes you receive. To do so, you might change the set ( ) method to check the Length of the 
+buffer rather than the current value of counter. If a value was entered for an index that did 
+not yet have a value, you would update ctr: 
+ 
+This allows you to create a "sparse" array in which you can assign to offset 10 without ever 
+having assigned to offset 9. Thus, if you now write: 
+ 
+lbt[ 10] = "wow!"; 
+the output would be: 
+lbt[0] : Hello 
+lbt[1] : Universe 
+lbt[2] : Who 
+lbt[3] : Is 
+lbt[4] : John 
+lbt[5] : Galt 
+lbt[6] : lbt[7] : lbt[8] : lbt[9] : 
+lbt[10] : wow! 
+In Main ( ), you create an instance of the ListBoxTest class named lbt and pass in two strings 
+as parameters: 
+ListBoxTest lbt = new ListBoxTest("Hello", "World"); 
+
+Then call Add ( ) to add four more strings: 
+/ / add a few strings 
+Lbt.Add(“Who”); 
+Lbt.Add(“Is”); 
+Lbt.Add(“John”); 
+Lbt.Add(“Charles”); 
+Before examining the values, modify the second value (at index 1): 
+string subst = 
+"Universe"; lbt[ 
+1] = subst; 
+Finally, display each value in a loop: 
+for (int i = 0;i<lbt.GetNumEntries( );i++) 
+{ 
+Console.WriteLine("lbt[{0}] : {1} ",i,lbt[ i]); 
+} 

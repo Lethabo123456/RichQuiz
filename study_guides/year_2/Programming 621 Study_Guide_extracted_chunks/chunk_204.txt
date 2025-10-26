@@ -1,0 +1,37 @@
+, min, and sec—referred to in the body of 
+the function setTime are the three member variables of myClock. When the body of 
+the function setTime executes, the value of hours is copied into myClock.hr, the value 
+of minutes is copied into myClock.min, and the value of seconds is copied into 
+myClock.sec. In essence, the values, 3, 48, and 52, which are passed as parameters 
+in the preceding statement, are assigned to the three member variables of myClock 
+by the function setTime (see the body of the function setTime). After the previous 
+statement executes, the object myClock is as shown in Figure (b) 
+ 
+ 
+ 
+ 
+ 
+ 
+The definitions of these functions are simple and easy to follow: 
+ 
+void clockType::getTime(int& hours, int& minutes, int& seconds) const  
+{ 
+ hours = hr; 
+ minutes = min; 
+ seconds = sec; 
+ } 
+ 
+void clockType::printTime() const 
+
+182 | P a g e  
+ 
+ { 
+if (hr < 10) 
+  
+ 
+cout << "0";  
+cout << hr << ":"; 
+         if (min < 10) cout << "0";  
+       
+cout << min << ":"; 
+i

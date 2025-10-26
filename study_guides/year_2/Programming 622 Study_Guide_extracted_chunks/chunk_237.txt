@@ -1,0 +1,21 @@
+fore. The following 
+cases arise:  
+  
+Case 1:   
+The list is initially empty. The node containing the new item is the only node and, thus, the 
+first node in the list.  
+Case 2:   
+The new item is smaller than the smallest item in the list. The new item goes at the 
+beginning of the list. In this case, we need to adjust the list’s head pointer— that is, first. 
+Also, count is incremented by 1.  
+Case 3:   
+The item is to be inserted somewhere in the list.  
+Case 3a:   
+The new item is larger than all the items in the list. In this case, the new item is inserted at 
+the end of the list. Thus, the value of current is NULL and the new item is inserted after 
+trailCurrent. Also, count is incremented by 1.  
+Case 3b:   
+The new item is to be inserted somewhere in the middle of the list. In this case, the new 
+item is inserted between trailCurrent and current. Also, count is incremented by 1.  
+  
+The following statements can accomplish both cases 3a and 3b. Assume newNode points to the new

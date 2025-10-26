@@ -1,0 +1,27 @@
+ilCurrent and current. Of course, we also handle any special cases such as an empty 
+list, a list with only one node, or a list in which the node firstOutOfOrder is already in the proper place.  
+This discussion translates into the following algorithm:  
+  
+if (firstOutOfOrder->info is less than first->info) 
+move firstOutOfOrder before first else  
+{ set trailCurrent to first  
+set current to the second node in the list first->link;  
+  
+//search the list  
+while (current->info is less than firstOutOfOrder->info)  
+{  
+advance trailCurrent;  
+advance current;  
+}  
+  
+if (current is not equal to firstOutOfOrder)  
+{ //insert firstOutOfOrder between current and trailCurrent 
+lastInOrder->link = firstOutOfOrder->link; firstOutOfOrder->link 
+= current;  
+trailCurrent->link = firstOutOfOrder;  
+}  
+else //firstOutOfOrder is already at the first place lastInOrder 
+= lastInOrder->link;  
+}  
+  
+Let us illustrate this algorithm on the list shown in Figure 8-12. We consider several cases.

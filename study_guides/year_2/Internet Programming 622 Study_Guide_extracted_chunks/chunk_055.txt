@@ -1,0 +1,20 @@
+nstead access the form field values using $_REQUEST:   
+   
+<dt>First name</dt><dd><?php echo $_REQUEST[“firstName”]?></dd>   
+   
+   
+Generally speaking, if you know that your user data will come from a form with a get or a post 
+method, it is best to use $_GET or $_POST rather than $_REQUEST. This reduces ambiguity and the 
+
+28   
+   
+chance of bugs appearing in your code, and also eliminates any risk of clashes between form fields 
+and cookies; for example, there might be a cookie with the same name as one of your form fields.   
+   
+1.4 PHP Form Data And Security   
+Although the preceding script is just an example and is not designed for use in the real world, a 
+couple of security issues with the script are worth pointing out. First of all, you would no t of course 
+display the password that the users had just entered (although you might send them their password 
+in an email to remind them of it).   
+   
+Secondly, it is generally a bad idea to pass any user-entered data — such as

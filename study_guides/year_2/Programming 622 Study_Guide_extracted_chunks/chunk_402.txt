@@ -1,0 +1,54 @@
+ssion evaluates each postfix expression. Each expression ends with the symbol 
+=. The general algorithm in pseudocode is as follows:  
+  
+ 
+while (ch is not = '=')    
+  
+  
+//process each expression = marks the end of an expression  
+{  
+switch (ch)  
+{  
+case '#':  
+read a number output the 
+number; push the number onto 
+the stack; break;  
+  
+default:  
+assume that ch is an operation  
+evaluate the operation;  
+ 
+}   
+  
+  
+  
+  
+//end switch  
+  
+if no error was found, then  
+ 
+{  
+  
+read next ch;  
+output ch;  
+
+203  
+  
+}  
+else  
+Discard the expression  
+ 
+}   
+  
+  
+  
+  
+  
+//end while  
+  
+From this algorithm, it follows that this method has five parameters—a parameter to access the input file, 
+a parameter to access the output file, a parameter to access the stack, a parameter to pass a character of 
+the expression, and a parameter to indicate whether there is an error in the expression. The definition of 
+this function is as follows:  
+  
+void evaluateExpression(ifstream&

@@ -1,0 +1,24 @@
+3.7.3 Strategies for Handling Deadlocks 
+1. Deadlock Prevention 
+ 
+Deadlock prevention ensures that at least one of the four necessary conditions for deadlock 
+(mutual exclusion, hold and wait, no pre-emption, circular wait) is never allowed to occur. 
+➢ Mutual Exclusion: Avoid granting exclusive access to resources wherever possible (e.g., use 
+shared access for read-only files). 
+➢ Hold and Wait: Require processes to request all required resources at once or ensure that a 
+process holds no resources while requesting additional ones. 
+➢ No Pre-emption: Allow resources to be forcibly pre-empted if a process holding them is 
+waiting for others. 
+➢ Circular Wait: Impose a total ordering on resources and require processes to request 
+resources in a strict order to prevent circular dependencies.
+
+2. Deadlock Avoidance 
+ 
+Deadlock avoidance dynamically examines resource allocation requests to ensure that the system 
+remains in a safe state. A system is in a safe state if there is at least one sequence of process 
+execution that does not result in deadlock. 
+➢ Banker’s Algorithm: Simulates the allocation of resources and checks if it would lead to a safe 
+state. Grants resources only if the system remains in a safe state. 
+➢ Resource Allocation Graph (RAG): Uses a graph to model processes and resources. Avoids 
+cycles in the graph by granting resources only if it does not result in a circular wait. 
+ 

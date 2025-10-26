@@ -1,0 +1,17 @@
+ver, 
+the database canno t be shared between different machines because each one would simply end up 
+storing and manipulating its own separate version of the data.   
+   
+On the plus side, embedded databases tend to be faster, easier to configure, and easier to work 
+with.   
+Long-tanding examples of embedded database engines include dBase and dbm, and PHP supports 
+both these engines in the form of PHP extensions. A more recent addition to the fold is SQLite, which 
+is bundled with the PHP engine itself, making it easy to install.    
+   
+4.3 Client-Server Databases   
+Client-server databases are, generally speaking, more powerful and flexible than embedded 
+databases.   
+They are usually designed for use over networks, enabling many applications in a network to work 
+simultaneously with the same data. The database engine itself acts as a server, serving up data to its 
+clients (much like Web servers serve pages to Web browsers). In principle it can field requests from 
+just about an

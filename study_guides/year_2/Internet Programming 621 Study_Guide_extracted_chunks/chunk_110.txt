@@ -1,0 +1,15 @@
+single variable that can hold more than 
+one value at once. You can think of an array as a list of values. Each value within an array is called an 
+element, and each element is referenced by its own index , which is unique to that array. To access 
+an element’s value — whether you are creating, reading, writing, or deleting the element — you use 
+that element’s index. In this sense, arrays share some similarity with strings. Just as you can access 
+any character of a string via its index, you can access any element of an array using the element’s 
+index.  
+
+55  
+Many modern programming languages — including PHP — support two types of arrays:  
+Indexed arrays — These are arrays where each element is referenced by a numeric index, 
+usually starting from zero. For example, the first element has an index of 0, the second has 
+an index of 1, and so on  
+Associative arrays — This type of array is also referred to as a hash or map. With associative 
+arrays, each element is referenced by a

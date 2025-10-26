@@ -1,0 +1,50 @@
+ember functions of the 
+class stackType.  
+  
+ 
+5.2.1  Initialize Stack  
+  
+Let us consider the initializeStack operation. Because the value of stackTop indicates whether the stack is 
+empty, we can simply set stackTop to 0 to initialize the stack. (See Figure 5-7.)  
+  
+  
+FIGURE 5-7 Empty stack  
+  
+The definition of the function initializeStack is as follows:  
+  
+template <class Type>  
+void stackType<Type>::initializeStack()  
+{  
+stackTop = 0;  
+ 
+}  
+  
+  
+  
+  
+  
+//end initializeStack  
+  
+ 
+5.2.2  Empty Stack  
+  
+We have seen that the value of stackTop indicates whether the stack is empty. If stackTop is 0, the stack 
+is empty; otherwise, the stack is not empty. The definition of the function isEmptyStack is as follows:  
+  
+template <class Type>  
+bool stackType<Type>::isEmptyStack() const  
+{  
+return(stackTop == 0);  
+ 
+}  
+  
+  
+  
+  
+  
+//end isEmptyStack  
+  
+ 
+5.2.3  Full Stack  
+  
+Next, we consider the operation isFullStack. It follows that the stack is full if sta

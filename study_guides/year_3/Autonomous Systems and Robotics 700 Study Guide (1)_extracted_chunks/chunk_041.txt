@@ -1,0 +1,24 @@
+2.1.1 Key Components of Perception 
+
+Sensor Data Acquisition: Collecting raw data from sensors like LIDAR (distance measurements), 
+cameras (visual images), radar (velocity and distance), ultrasonic sensors (proximity), or inertial 
+measurement units (IMUs) (orientation and acceleration). 
+
+Data Processing: Applying algorithms to filter noise, preprocess data, and extract features. 
+
+Examples include:  
+• Image processing (e.g., edge detection, object segmentation) for camera data. 
+• Point cloud analysis (e.g., clustering, contour detection) for LIDAR data. 
+• Feature Extraction: Identifying meaningful patterns, such as obstacle locations, lane 
+markings, or object classes (e.g., pedestrian, vehicle). 
+• Environmental Modelling: Building representations like occupancy grids, 3D maps, or 
+semantic maps to support tasks like navigation or manipulation. 
+• Decision Support: Providing processed data to higher-level systems (e.g., path planners, 
+controllers) for actions like avoiding obstacles or grasping objects.
+
+2.1.2 Examples of Perception in Autonomous Systems 
+
+Self-Driving Cars: Perception processes LIDAR point clouds and camera images to detect lanes, 
+traffic signs, pedestrians, and other vehicles, enabling safe navigation. 
+Drones: Use camera and sonar data to estimate altitude, avoid obstacles, and track targets. 
+Robotic Arms: Interprets camera and force sensor data to locate and grasp objects precisely.

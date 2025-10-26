@@ -1,0 +1,229 @@
+Raft Visualization 
+File: C:\distributed_systems\visualizations\raft_visualizer.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Raft Consensus Visualizer</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 100vh; 
+        } 
+         
+        .container { 
+            background: white; 
+            border-radius: 15px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+        } 
+         
+        .cluster { 
+            display: flex; 
+            justify-content: space-around; 
+            margin: 20px 0; 
+            flex-wrap: wrap; 
+        } 
+         
+        .node { 
+            width: 150px; 
+
+            height: 150px; 
+            border-radius: 50%; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            margin: 10px; 
+            color: white; 
+            font-weight: bold; 
+            transition: all 0.3s ease; 
+            cursor: pointer; 
+        } 
+         
+        .follower { 
+            background: linear-gradient(45deg, #3498db, #2980b9); 
+        } 
+         
+        .candidate { 
+            background: linear-gradient(45deg, #f39c12, #e67e22); 
+            animation: pulse 1s infinite; 
+        } 
+         
+
+        .leader { 
+            background: linear-gradient(45deg, #e74c3c, #c0392b); 
+            box-shadow: 0 0 20px rgba(231, 76, 60, 0.5); 
+        } 
+         
+        @keyframes pulse { 
+            0% { transform: scale(1); } 
+            50% { transform: scale(1.05); } 
+            100% { transform: scale(1); } 
+        } 
+         
+        .term-display { 
+            text-align: center; 
+            font-size: 24px; 
+            margin: 20px 0; 
+            color: #2c3e50; 
+        } 
+         
+        .message-log { 
+            max-height: 300px; 
+            overflow-y: auto; 
+            background: #f8f9fa; 
+
+            border-radius: 10px; 
+            padding: 15px; 
+            margin: 20px 0; 
+        } 
+         
+        .message { 
+            padding: 5px 0; 
+            border-bottom: 1px solid #e9ecef; 
+        } 
+         
+        .controls { 
+            text-align: center; 
+            margin: 20px 0; 
+        } 
+         
+        button { 
+            background: #3498db; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            margin: 0 10px; 
+
+            cursor: pointer; 
+            font-size: 16px; 
+        } 
+         
+        button:hover { 
+            background: #2980b9; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1> Raft Consensus Algorithm Visualization</h1> 
+         
+        <div class="term-display"> 
+            Current Term: <span id="current-term">1</span> 
+        </div> 
+         
+        <div class="cluster" id="cluster"> 
+            <!-- Nodes will be generated here --> 
+        </div> 
+         
+        <div class="controls"> 
+
+            <button onclick="startElection()">Start Election</button> 
+            <button onclick="simulateFailure()">Simulate Node Failure</button> 
+            <button onclick="restoreNode()">Restore Node</button> 
+            <button onclick="clearLog()">Clear Log</button> 
+        </div> 
+         
+        <div class="message-log" id="message-log"> 
+            <h3> Message Log</h3> 
+            <div id="messages"></div> 
+        </div> 
+    </div> 
+ 
+    <script> 
+        // Raft visualization state 
+        let nodes = []; 
+        let currentTerm = 1; 
+        let messages = []; 
+         
+        // Node states 
+        const NodeState = { 
+            FOLLOWER: 'follower', 
+            CANDIDATE: 'candidate', 
+
+            LEADER: 'leader' 
+        }; 
+         
+        // Initialize nodes 
+        function initializeNodes() { 
+            const cluster = document.getElementById('cluster'); 
+             
+            for (let i = 1; i <= 5; i++) { 
+                const nodeData = { 
+                    id: i, 
+                    state: NodeState.FOLLOWER, 
+                    term: currentTerm, 
+                    votes: 0 
+                }; 
+                nodes.push(nodeData); 
+                 
+                const nodeElement = document.createElement('div'); 
+                nodeElement.className = `node ${NodeState.FOLLOWER}`; 
+                nodeElement.id = `node-${i}`; 
+                nodeElement.innerHTML = ` 
+                    <div>Node ${i}</div> 
+                    <div>Follower</div> 
+
+                    <div>Term: ${currentTerm}</div> 
+                `; 
+                nodeElement.onclick = () => nodeClicked(i); 
+                 
+                cluster.appendChild(nodeElement); 
+            } 
+        } 
+         
+        // Update node display 
+        function updateNode(nodeId) { 
+            const node = nodes.find(n => n.id === nodeId); 
+            const element = document.getElementById(`node-${nodeId}`); 
+             
+            element.className = `node ${node.state}`; 
+            element.innerHTML = ` 
+                <div>Node ${nodeId}</div> 
+                <div>${node.state.charAt(0).toUpperCase() + node.state.slice(1)}</div> 
+                <div>Term: ${node.term}</div> 
+            `; 
+        } 
+         
+        // Handle node clicks 
+
+        function nodeClicked(nodeId) { 
+            const node = nodes.find(n => n.id === nodeId); 
+            logMessage(` Clicked Node ${nodeId} (${node.state})`); 
+        } 
+         
+        // Start election process 
+        function startElection() { 
+            logMessage(" Starting election process..."); 
+             
+            // Reset all nodes to followers 
+            nodes.forEach(node => { 
+                node.state = NodeState.FOLLOWER; 
+                node.votes = 0; 
+                updateNode(node.id); 
+            }); 
+             
+            // Random node becomes candidate 
+            const candidateId = Math.floor(Math.random() * 5) + 1; 
+            const candidate = nodes.find(n => n.id === candidateId); 
+             
+            candidate.state = NodeState.CANDIDATE; 
+            candidate.term = ++currentTerm; 
+
+            candidate.votes = 1; // Vote for self 
+             
+            updateNode(candidateId); 
+            document.getElementById('current-term').textContent = currentTerm; 
+             
+            logMessage(` Node ${candidateId} became candidate for term ${currentTerm}`); 
+             
+            // Simulate voting process 
+            setTimeout(() => simulateVoting(candidateId), 1000); 
+        } 
+        

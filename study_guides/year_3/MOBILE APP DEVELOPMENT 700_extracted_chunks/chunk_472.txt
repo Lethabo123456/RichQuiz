@@ -1,0 +1,54 @@
+Next, add the setters and getters with the code in Listing 8.14. Close the file. 
+ 
+Now that you have a picture to save, the method to display a contact must be modified to display the 
+saved contact picture, the ContactDataSource methods to save and retrieve contacts must be 
+modified to store and retrieve the picture, and the database must be modified to have a field in the 
+table to hold the picture. First, open ContactDBHelper.java to add the field to the database. The first 
+step is to tell the app that the database has changed. Locate the following line and increase the version 
+number by 1. 
+ 
+private static final int DATABASE_VERSION = 2; 
+Next, add a picture field with a data type of blob to the contact table. The blob data type can hold any 
+type of binary data and is typically used for picture, audio, and video objects. The data type, blob, is 
+an acronym for “binary large object.” Change the last line in the CREATE_TABLE_CONTACT string to 
+the following: 
+ 
++ "email text, birthday text, contactphoto blob);"; 
+The last step is to modify the onUpgrade method. Technically, you would not have to modify this to 
+get the change to the database. It is currently written to delete the current table and create a new 
+one when the database is updated. However, there is one big drawback: All the user’s contacts will be 
+deleted! If you are in the development stage prior to release of the app, this is OK. If the app has been 
+released, this is not an option. To handle a change to the database structure without losing all the user 
+data, modify the onUpgrade method to match the code in Listing 8.15. 
+ 
+The modifications comment out the deletion and re-creation of the table and add an SQL statement 
+to add the new field to the table. This line is surrounded by a try and catch statement, so that if the 
+field has already been added, it doesn’t crash the app. 
+After the ContactDBHelper.java file has been modified, the ContactDataSource.java file needs to be 
+modified to save and retrieve the picture. The code in Listing 8.16 must be added to both the 
+insertContact and updateContact methods. The code must be placed prior to the call to update or 
+insert the contact. Note that in the updateContact method, you need to use 
+updateValues.put("contactphoto", photo) instead of initialValues.put("contactphoto", photo).
+
+To store a bitmap to the database, it must first be converted to a byte array. This code uses standard 
+objects in the Android SDK to do this conversion. After the photo is converted, it is placed into the 
+values to be updated like any other value. Next, modify the getSpecificContact method to load the 
+Contact object with the picture. This does not need to be done in the getContacts method because 
+the picture is not used by any activity that uses the whole set of contacts. Returning the picture from 
+the database is essentially the reverse process from saving to the database (Listing 8.17). 
+ 
+Again, the objects supplied by Android do most of the work. The byte array is retrieved from the 
+database and is then tested to determine if a picture has been stored. The 10 in the getBlob method 
+is the index of the contactphoto field in the contact table. The conversion from byte array to Bitmap 
+will cause a crash if no picture is stored. After the data has been converted, it is set in the Contact 
+object. The last step is to modify MainActivity.java to display the retrieved picture along with the rest of the 
+contact’s data. This is done in the initContact method. Place the code in Listing 8.18 where appropriate 
+in that method. 
+ 
+The code gets a reference to the ImageButton on the layout and checks if the contact has a picture. If there 
+is a picture, it sets it as the button’s image. If not, the default image resource is displayed. 
+Test the app on an Android device or the emulator. (Note: The 
+emulator works but is a bit slow and cumbersome to manipulate.) 
+The camera display you see will depend on the device you are 
+running the app on. After taking a picture, the MainActivity should 
+look similar to Figure 8.4.

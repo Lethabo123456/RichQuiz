@@ -1,0 +1,14 @@
+are six workers, in a workshop, with IDs 147, 169, 580, 216, 974, and 124. Suppose hash 
+table, HT, is of the size 13, indexed 0, 1, 2, . . ., 12. Show how these workers’ IDs, in the order given, are 
+inserted in HT using the hashing function h(k) = k % 13. Use linear probing to resolve collision.  
+  
+3. Suppose there are five workers, in a shop, with IDs 909, 185, 657, 116, and 150. Suppose hash table, 
+HT, is of the size 7, indexed 0, 1, 2, . . ., 6. Show how these workers’ IDs, in the order given, are inserted 
+in HT using the hashing function h(k) = k % 7. Use linear probing to resolve collision.  
+  
+4. Suppose there are seven students with IDs 5701, 9302, 4210, 9015, 1553, 9902, and 2104. Suppose 
+hash table, HT, is of the size 19, indexed 0,1,2, . . ., 18. Show how these students’ IDs, in the order given, 
+are inserted in HT using the hashing function h(k) = k % 19. Use double hashing to resolve collision, 
+where the second hash function is given by g(k) = (k+1) % 17.  
+  
+5. S

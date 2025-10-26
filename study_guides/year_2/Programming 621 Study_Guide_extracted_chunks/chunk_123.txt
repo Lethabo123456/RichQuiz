@@ -1,0 +1,29 @@
+ve limitations 
+ 
+Reference Variables as Parameters 
+Because a reference parameter receives the address (memory location) of the actual 
+parameter, reference parameters can pass one or more values from a function and 
+can change the value of the actual parameter. Reference parameters are useful in 
+three situations:  
+ When the value of the actual parameter needs to be changed  
+ When you want to return more than one value from a function (recall that the 
+return statement can return only one value)  
+ When passing the address would save memory space and time relative to 
+copying a large amount of data  
+ 
+The first two situations are illustrated throughout this book. Later Chapters will discuss 
+the third situation, when arrays and classes are introduced. Recall that when you 
+attach & after the dataType in the formal parameter list of a function, the variable 
+following that dataType becomes a reference parameter. 
+
+108 | P a g e  
+ 
+ 
+ 
+ 
+
+109 | P a g e  
+ 
+ 
+ 
+Let us walk throug

@@ -1,0 +1,32 @@
+) with the plus symbol ( +). Try it 
+yourself. Amend your document.write code so that it looks like our below: 
+document.write("The variable has a value of: " + number1 + 
+"<BR>");document.write( "Is it true or false? " + true_or_false 
++ "<BR>"); 
+document.write( "What's your first name? " + firstName + 
+"<BR>"); 
+
+ 
+37 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+Make sure you get the quotation marks and the plus symbols in the right place, 
+otherwise your code will not work. (You do not have to use double quotes, single 
+quotes work just as well. You cannot have a double quote at the start, though, and a 
+single quote at the end.) 
+ 
+The results in a browser should look like this: 
+ 
+Figure 3.3 
+ 
+3.1.1 Variable Assignment  
+When setting up a variable, we did this: 
+var number1 = 42; 
+ 
+But you do not have to store a value in the variable all on the same line. You can use 
+two lines instead: 
+var number1; 
+number1 = 42; 
+ 
+The first line here creates a variable called number1. But th

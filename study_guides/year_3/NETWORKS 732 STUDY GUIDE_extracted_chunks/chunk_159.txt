@@ -1,0 +1,31 @@
+3.7.10 Extensible Authentication Protocol (EAP) 
+
+Extensible Authentication Protocol (EAP) isn’t a single method but a framework that enhances 
+the existing 802.1X framework. Furthermore, the EAP framework describes a basic set of actions 
+that will take place, and each EAP type diﬀers in the speciﬁcs of how it operates within the 
+framework. These variables include things like whether they use passwords or certiﬁcates, as well 
+as the ultimate level of security provided. There are various EAP types, namely, Protected 
+EAP(PEAP), EAP-Fast, and EAP-TLS. 
+
+The PEAP is a protocol that encapsulates an EAP within an encrypted and authenticated Transport 
+Layer Security (TLS) tunnel. The EAP-FAST operates in 2 stages; initially TLS tunnel is established. 
+Unlike PEAP, this is achieved through a preshared key called the Protected Authentication 
+Credential (PAC). Secondly, a series of type/length/value (TLV)–encoded data is used to carry a 
+user authentication. EAP Transport Layer Security (EAP-TLS) is the most secure method, but it’s 
+also the most diﬃcult to conﬁgure and maintain. EAP-TLS requires the installation of a certiﬁcate 
+on both the authentication server and the client 
+
+A preshared key (PSK), where all devices share the same password to connect to the network. 
+While easier to set up, it’s less secure because the shared key must be updated often to stay 
+eﬀective 
+
+3.8 Security Risk Assessment 
+Security assessments are used to identify security vulnerabilities to eliminate them. The 
+subsections below cover the diﬀerent types of security risk assessments. 
+ 
+3.8.1 Threat Assessment 
+Prior to performing a vulnerability or a penetration test, it is useful to identify the types of risk 
+with which you are concerned. Threat intelligence feeds are constantly updating streams of 
+indicators or artifacts derived from a source outside the organization. More so, threat intelligence 
+covers suspicious domains, a list of known malware hashes, and IP addresses associated with 
+malicious activity. 

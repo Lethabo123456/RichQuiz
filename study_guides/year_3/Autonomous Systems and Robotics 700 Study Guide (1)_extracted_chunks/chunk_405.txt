@@ -1,0 +1,21 @@
+Summary: Understanding the Learned Q-Table 
+The Q-table represents the robot's learned values for each possible action in different battery 
+states, as a result of training with Q-learning. Each entry in the table corresponds to a numerical 
+value indicating the expected long-term reward for taking a specific action in a given state. 
+
+The robot has two available actions: 
+• deliver: proceed with the delivery task 
+• recharge: return to charge its battery 
+And three discrete battery levels as states: 
+• low 
+• medium 
+• high
+
+Based on the final Q-values: 
+• When the battery is low, the Q-value for recharge is higher than for deliver. This 
+indicates that the robot has learned it is generally better to recharge when battery 
+levels are low to avoid penalties or task failure. 
+• At medium battery, both actions have similar Q-values, but deliver has a slightly higher 
+value, suggesting it is usually more beneficial to continue the task than to recharge. 
+• With a high battery level, deliver has the highest Q-value across all states, showing 
+that delivery is the most rewarding action in this situation. 

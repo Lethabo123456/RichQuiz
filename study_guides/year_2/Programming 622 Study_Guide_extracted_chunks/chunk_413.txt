@@ -1,0 +1,30 @@
+nodes in a linked list is usually not known, we will use the linked implementation 
+of a stack. Suppose that stack is an object of type linkedListType, and current is a pointer of the same type 
+as the pointer first. Consider the following statements:  
+  
+current = first;      //Line 1 while (current != NULL)     //Line 2  
+{        //Line 3 stack.push(current);     //Line 4 current = 
+current->link;    //Line 5  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//Line 6  
+  
+After the statement in Line 1 executes, current points to the first node. (See Figure 5-17)  
+  
+  
+FIGURE 5-17 List after the statement current = first; executes  
+   
+Because current is not NULL, the statements in Lines 4 and 5 execute. (See Figure 5-18.)   
+  
+  
+FIGURE 5-18 List and stack after the statements stack.push(current); and current = current-
+>link; execute  
+  
+Because current is not NULL, statements in Lines 4 and 5 execute. In fact, statements in Lines 4 and 5 
+execute until current beomes NULL. When current is NULL, Fi

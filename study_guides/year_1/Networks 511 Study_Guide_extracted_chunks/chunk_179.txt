@@ -1,0 +1,16 @@
+3.7.3 Caching and Prefetching 
+Web acceleration servers can cache, or locally store, commonly requested information rather than 
+fetching it over and over from backend servers, which wastes server resources and slows down 
+content delivery. The web accelerator can refresh cached content at a specified interval to avoid 
+serving content that is out of date. 
+The web accelerator can also pre-fetch and cache content that the user is likely to ask for, such as 
+the next page of a document, making it ready for delivery as soon as the user requests it. 
+
+Compression 
+A web accelerator can compress large files, such as image or video files, to reduce transfer times. 
+
+3.7.4 SSL/TLS Processing 
+Some advanced web accelerators can offload computationally intensive processing from backend 
+servers, freeing them to serve content faster. A common example is encryption and decryption of 
+documents during transmissions secured with Secure Sockets Layer (SSL) or Transport Layer Security 
+(TLS). 

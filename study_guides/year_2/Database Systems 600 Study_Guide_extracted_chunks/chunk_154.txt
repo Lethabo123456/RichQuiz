@@ -1,0 +1,20 @@
+ch standards 
+guide you in developing logical structures that minimize data redundancies, thereby 
+minimizing the likelihood that destructive data anomalies will occur. Without design 
+standards, it is nearly impossible to formulate a proper design process, to evaluate an 
+existing design, or to trace the likely logical impact of changes in design.  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Four page 138-146. 
+
+ 
+61 
+ 
+Processing speed. High processing speed means minimal access time, which may be 
+achieved by minimizing the number and complexity of logically desirable relationships.  
+ 
+Information requirements. The quest for timely information might be the focus of 
+database design. Complex information requirements may dictate data transformations, 
+and they may expand the number of entities and attributes within the design. Therefore, 
+the database may have to sacrifice some of its “clean” design stru

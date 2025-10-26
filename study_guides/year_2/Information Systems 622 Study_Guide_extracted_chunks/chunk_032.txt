@@ -1,0 +1,22 @@
+ple, it might be important to process invoices and customer payments for the 
+ac- counts receivable system daily. On the other hand, the payroll system might receive process 
+data weekly to create cheques, update employee earnings records and distribute labour costs. 
+The essential characteristic of a batch processing system is that there is some delay between an 
+event and the eventual processing of the related transaction to update the organization’s 
+records.  
+  
+Figure 1.2 Batch Versus Online Transaction Processing   
+  
+
+  
+ 
+ 
+13  
+  
+  
+  
+With online transaction processing (OLTP), each transaction is processed immediately, 
+without the delay of accumulating transactions into a batch (see Figure 1.2b). Consequently, at 
+any time, the data in an online sys- tem reflects the current status. This type of processing is 
+essential for businesses that require access to current data such as airlines, ticket agencies and 
+stock investment firms. Many companies find that OLTP helps them

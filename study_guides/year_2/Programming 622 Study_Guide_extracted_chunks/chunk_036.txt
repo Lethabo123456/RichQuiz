@@ -1,0 +1,14 @@
+The term testing refers to testing the correctness of the program; that is, making sure that the program 
+does what it is supposed to do. The term debugging refers to finding and fixing the errors, if they exist.  
+  
+Once a function and/or an algorithm is written, the next step is to verify that it works properly. However, 
+in a large and complex program, errors almost certainly exist. Therefore, to increase the reliability of the 
+program, errors must be discovered and fixed before the program is released to the user.  
+  
+You can certainly prove this by using some (perhaps mathematical) analysis of the correctness of a 
+program. However, for large and complex programs, this technique alone might not be enough because 
+errors can be made in the proof. Therefore, we also rely on testing to determine the quality of the 
+program. The program is run through a series of specific tests, called test cases, in an attempt to find 
+problems.  
+  
+A test case consists of a set of inputs, user a

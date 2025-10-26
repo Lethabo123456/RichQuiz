@@ -1,0 +1,12 @@
+storage and performance guidelines. 
+In this phase, you actually implement all these design specifications. 
+Install the DBMS This step is required only when a new dedicated instance of the DBMS is 
+necessary for the system. In many cases, the organization will have made a particular DBMS the 
+standard to leverage investments in the technology and the skills that employees have already 
+developed. The DBMS may be installed on a new server or on existing servers. One current trend 
+is called virtualization. Virtualization is a technique that creates logical representations of 
+computing resources that are independent of the underlying physical computing resources. This 
+technique is used in many areas of computing, such as the creation of virtual servers, virtual 
+storage, and virtual private networks. In a database environment, database virtualization refers to 
+the installation of a new instance of the DBMS on a virtual server running on shared hardware. 
+This is normally a task that

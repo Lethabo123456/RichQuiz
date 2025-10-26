@@ -1,0 +1,28 @@
+ements: 
+ int *p; 
+ int num;  
+In these statements, p is a pointer variable of type int, and num is a variable of type 
+int. Let us assume that memory location 1200 is allocated for p, and memory location 
+1800 is allocated for num. 
+
+156 | P a g e  
+ 
+ 
+Consider the following statements:  
+1. num = 78; 
+2. p = &num;  
+3. *p = 24;  
+Let us summarize the preceding discussion.  
+1. A declaration such as int *p; allocates memory for p only, not for *p. Later, you will 
+learn how to allocate memory for *p. 
+2. The content of p points only to a memory location of type int. 
+3. &p, p, and *p all have different meanings. 
+4. &p means the address of p—that is, 1200 (in Figure 12-1). 
+5. p means the content of p, which is 1800, after the statement p = &num; executes. 
+6. *p means the content of the memory location to which p points. Note that after the 
+statement p = &num; executes, the value of *p is 78; after the statement *p = 24; 
+executes, the value of *p is 24.. 
+ 
+ 
+
+157 | P a g e

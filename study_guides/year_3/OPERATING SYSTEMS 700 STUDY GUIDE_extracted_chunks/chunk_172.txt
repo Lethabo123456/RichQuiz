@@ -1,0 +1,63 @@
+File Descriptor contains information about the file: 
+ 
+➢ Filename: within a single directory, filenames must be unique; in some operating systems, the 
+filenames are case sensitive 
+➢ File type: the organization and usage that are dependent on the system (for example, files and 
+directories) 
+➢ File size: although it could be computed from other information, the size is kept here for 
+convenience 
+➢ File location: identification of the first physical block (or all blocks) where the file is stored 
+➢ Date and time of creation: 
+➢ Owner: 
+➢ Protection information: access restrictions based on who is allowed to access the file and what 
+type of access is allowed 
+➢ Max record size: its fixed size or its maximum size, depending on the type of record. 
+
+5.6. Naming Conventions. 
+Table 5.1 below summarizes the naming conventions allowed for different Operating systems. 
+ 
+Table 5.1 
+ 
+5.6.1 Record Format 
+Files consist of records, which users access or modify through commands targeting these records. 
+Each file assumes a consistent record format, either fixed-length or variable-length. Fixed-length 
+records offer faster access, while variable-length records, though more flexible, take longer to 
+retrieve. Records can be accessed individually or grouped into blocks for processing. 
+Fixed-length records are easy to access directly due to their consistent size, but they risk truncation 
+if too small or waste storage space if too large. In contrast, variable-length records eliminate these 
+issues by adjusting to the data size, avoiding truncation and empty space. However, they are harder 
+to access directly because their locations cannot be easily calculated, making them better suited for 
+sequential access. Details about the record format, blocking, and related metadata are stored in the 
+file descriptor.
+
+5.7. File Organization 
+File organization is the arrangement of records within a file. When a user gives a command to modify 
+the contents of a file, it is a command to access records within the file. 
+
+5.8. File Access Methods 
+Access methods are dictated by a file’s organization, the most flexibility is allowed with indexed 
+sequential files and the least with sequential. A file that has been organized in sequential fashion can 
+support sequential access to its records, and these records can be of either fixed or variable length. 
+The File Manager uses the address of the last byte read to access the next sequential record. Therefore, 
+the current byte address (CBA) must be updated every time a record is accessed, such as when the 
+READ command is executed.
+
+1. Contiguous Allocation 
+ 
+Files are stored in contiguous blocks of memory. 
+ 
+➢ Advantages 
+: Simple to implement. 
+: Fast sequential access. 
+➢ Disadvantages : Fragmentation. 
+: Free space may be scattered. 
+ 
+: Difficult to grow file size without relocating. 
+ 
+2. Indexed Allocation 
+An index block contains pointers to all blocks of a file. 
+➢ Advantages 
+: Supports random and sequential access. 
+: Reduces fragmentation. 
+➢ Disadvantages : Requires extra storage for index blocks. 
+: Can be complex to manage for  very large files. 

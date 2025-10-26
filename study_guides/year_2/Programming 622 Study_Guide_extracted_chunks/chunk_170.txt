@@ -1,0 +1,82 @@
+sh_front(23); 
+intDeq.push_front(45); 
+intDeq.push_back(35); 
+intDeq.push_front(0); 
+intDeq.push_back(50);  
+intDeq.push_front(34);  
+  
+deqIt = intDeq.begin(); 
+intDeq.insert(deqIt,76); 
+intDeq.pop_back(); 
+deqIt = intDeq.begin();  
+++deqIt;  
+++deqIt;  
+  
+intDeq.erase(deqIt);  
+
+82  
+  
+intDeq.push_front(2 * intDeq.back()); intDeq.push_back(3 
+* intDeq.front());  
+  
+copy(intDeq.begin(), intDeq.end(), screen); cout 
+<< endl;  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+83  
+  
+  
+  
+TOPIC 3: LINKED LISTS  
+  
+  
+LEARNING OUTCOMES  
+After Studying this topic you should be able to:  
+Learn about linked lists  
+Become aware of the basic properties of linked lists  
+Explore the insertion and deletion operations on linked lists  
+Discover how to build and manipulate a linked list  
+Learn how to construct a doubly linked list  
+Discover how to use the STL container list  
+Learn about linked lists with head

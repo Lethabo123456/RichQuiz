@@ -1,0 +1,58 @@
+2.5.2 Unboxing Must Be Explicit 
+To return the boxed object back to a value type, you must explicitly unbox it. You should accom-
+plish this in two steps: 
+
+1. Make sure the object instance is a boxed value of the given value type. 
+2. Copy the value from the instance to the value-type variable. 
+Example 2-5. Boxing and unboxing 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace DevelopExample 
+{ 
+    public class UnboxingTest 
+    { 
+        public static void Main() 
+        { 
+            int i = 122; 
+            //Boxing  
+            object o = i; 
+            // unboxing (must be explict) 
+            int j = (int) o; 
+            Console.WriteLine("j: {0}", j); 
+ 
+        } 
+    } 
+  } 
+ 
+Example 2-5 creates an integer i and implicitly boxes it when it is assigned to the object o. The 
+value is then explicitly unboxed and assigned to a new int whose value is displayed. 
+
+2.6 Implementing an Interface
+The syntax for defining an interface is as follows: 
+[attributes ] [access-modifier ] interface interface-name [: base-list ] 
+{interface-body } 
+Access modifiers, including public, private, protected, internal, and protected 
+Internal 
+ 
+The interface keyword is followed by the name of the interface. It is common (but not 
+required) to begin the name of your interface with a capital I (thus, IStorable, ICloneable, 
+IClaudius, etc.). 
+The base-list lists the interfaces that this interface extends (as described in Section 8.1.1,
+later in this chapter). 
+The interface-body is the implementation of the interface, as described next. 
+Suppose you wish to create an interface that describes the methods and properties a class 
+needs to be stored to and retrieved from a database or other storage such as a file. You decide 
+to call this interface IStorable.
+
+In this interface you might specify two methods: Read( ) and Write( ), which appear in the 
+interface-body: 
+
+interface IStorable 
+{ 
+void Read( ); 
+void Write(object); 
+}

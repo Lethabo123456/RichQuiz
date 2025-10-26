@@ -1,0 +1,60 @@
+I/O Devices in the Cloud 
+When a user sends a command from a laptop to access a high-speed hard drive that is many miles 
+away, the laptop’s operating system still performs many of the steps outlined in this chapter and 
+expects an appropriate response from the operating system for the hard drive. Therefore, the 
+concepts explored in this chapter continue to apply even as the cloud allows access to many more 
+devices. 
+
+Sequential Access Media Storage 
+The first secondary storage medium used for electronic digital computers was paper in the form 
+of printouts, punch cards, and paper tape. Magnetic tape followed for routine secondary 
+storage in early computer systems. 
+ 
+A thorough introduction to the details of storage management is to look at the simplest case: 
+a sequential access storage device, which can easily be visualized as an archival magnetic tape that 
+writes and reads records in sequence from the beginning of a reel of tape to the end. 
+ 
+The length of sequential record is usually determined by the application program, and each record 
+can be identified by its position on the tape. To appreciate just how long this takes, consider a 
+hypothetical computer system that uses a reel of tape that is 2400 feet long, see figure 4.3. Data 
+is recorded on eight of the nine parallel tracks that run the length of the tape. The ninth track, 
+shown at the top of the figure, holds a parity bit that is used for routine error checking. 
+ 
+The number of characters that can be recorded per inch is determined by the density of the tape, 
+such as 1,600 bytes per inch (bpi). For example, if you had records of 160 characters each, and 
+were storing them on a tape with a density of 1,600 bpi, then theoretically you could store 10 
+records on one inch of tape. However, in actual practice, it would depend on how you decided to 
+store the records: individually or grouped into blocks. If the records were stored in blocks, then 
+each block would be preceded by a space and followed by a space, with the individual records 
+stored sequentially within the block. 
+ 
+Figure 4.3 
+ 
+Figure 4.3 illustrates a nine-track magnetic tape with three characters recorded using odd 
+parity. A half-inch wide reel of tape, typically used to back up a mainframe computer, can 
+store thousands of characters, or bytes, per inch. 
+ 
+To appreciate the difference between storing records individually or in blocks, let us look at 
+the mechanics of reading data from a magnetic tape. The tape remains stopped until there is 
+a request to access one or more records. Then the reel of tape starts to rotate, and the tape 
+passes under the read/write head. Magnetic tape moves under the read/write head only when 
+there is a need to access a record, at all other times it is standing still. 
+ 
+Records are written in the same way, assuming that there is room on the reel of tape for the data 
+to be written, otherwise, a fresh reel of tape would need to be accessed. So, the tape moves in 
+jerks as it stops, reads, and moves on at high speed, or stops, writes, and starts again, and so on. 
+ 
+The tape needs time and space to stop, so a gap is inserted between each record. This inter- record 
+gap (IRG) is about 1@2 inch long regardless of the sizes of the records it separates. Therefore, if 
+10 records are stored individually, there will be nine 1@2-inch IRGs between each record. In Figure 
+4.4, we assume each record is only 1@10 inch, so 5.5 inches of tape are required to store 1 inch of 
+data, not a very efficient way to use the storage medium. 
+ 
+Figure 4.4 
+ 
+Figure 4.4 illustrate an IRGs on magnetic tape. Each record requires only 1/10 inch of tape. 
+When 10 records are stored individually on magnetic tape, they are separated by IRGs, which add 
+up to 4.5 inches of tape. This totals 5.5 inches of tape. 
+An alternative is to group the records into blocks before recording them on tape. This is called 
+blocking, and it is performed when the file is created. Later, when you retrieve them, you must 
+be sure to unblock them accurately. 

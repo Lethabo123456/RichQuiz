@@ -1,0 +1,30 @@
+if the example above had continued to time out after line 9, you could suspect that global-
+gateway.co.nz was the problem, and not mediacollege.com. 
+If it timed out after line 1, you would know there was a problem connecting to your ISP (in this case 
+you would not be able to access anything on the internet). 
+It is generally recommended that if you have a website that is unreachable, you should use both the 
+traceroute and ping commands before you contact your ISP to complain. More often than not, there 
+will be nothing to your ISP or hosting company can do about it. 
+ipconfig and ifconfig 
+Windows uses ipconfig and UNIX/LINUX/Mac uses ifconfig to display the current configuration of 
+TCP/IP on a given workstation including the current IP address, DNS configuration, Windows Internet 
+Naming Services (WINS) configuration, and default gateway.  
+Ipconfig utility 
+All new operating systems such as Mac, Windows Vista, Windows 7, 8 and 10 and Windows server 
+2008/ 2012 IPv6 configuration is available by default. The output if the command ipconfig is 
+executed you see something like this because I am not connected to the internet:  
+
+But when connected to the internet you will see something like this:  
+ 
+Using ifconfig 
+
+Normally for Mac, Linux and UNIX uses this utility and gives you the similar information to the 
+ipconfig. Interface configuration(ifconfig) there are major differences ipconfig is used to view 
+TCPP/IP configuration for a computer where as ifconfig do the same with extra as configuring 
+protocol or a particular network interface. The command is as follows: 
+ifconfig interface [address [parameters] ] 
+the interface parameter euqals the unix name of the interface, such as eth0. If the optional address 
+parameter is specified, the ifconfig command sets the IP address for the interface to the address 
+you’ve specified. When the ifconfig command is used by itself with no parameters, all configured 
+interfaces will be reported on. But if only the interface name is specified, you will get output that 
+looks like this: 

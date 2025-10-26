@@ -1,0 +1,14 @@
+Data to Collect for Auditing 
+The choice of what data to collect should be based on a number of requirements. One issue is the 
+amount of data to collect, which is determined by the range of areas of interest and by the granularity 
+of data collection. There is a trade-off here between quantity and efficiency. The more data collected, 
+the greater the performance penalty on the system. Larger amounts of data may also unnecessarily 
+burden the various algorithms used to examine and analyze the data. Further, the presence of large 
+amounts of data creates a temptation to generate security reports excessive in number or length. 
+With these cautions in mind, the first order of business in security audit trail design is the selection of 
+data items to capture, including the following: 
+
+ Events related to the use of the auditing software (that is, all the components in Figure 18.1) 
+ Events related to the security mechanisms on the system 
+ Any events that are collected for use by the various security detection and prevention 
+mechanisms, including items relate

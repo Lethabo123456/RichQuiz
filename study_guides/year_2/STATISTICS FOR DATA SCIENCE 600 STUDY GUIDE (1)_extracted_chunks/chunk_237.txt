@@ -1,0 +1,38 @@
+dicting house prices based on their size, number of bedrooms, and age. Here, 
+the house price (dependent variable) could be predicted based on multiple factors: size of the 
+house (independent variable X1), number of bedrooms (independent variable X2), and age of 
+the house (independent variable X3). 
+Formula for linear regression equation is given by: 
+
+P a g e  | 138 
+ 
+ 
+ 
+ 
+Source:  https://byjus.com/linear-regression-formula/ 
+ 
+
+P a g e  | 139 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+P a g e  | 140 
+ 
+              
+ 
+6.4.3 Implementation of linear regression 
+Let's look at some data before we go in-depth. This dataset is publicly available and attempts 
+to predict the number of bikes needed on a particular day for a bike sharing program: 
+# Read the data and set the datetime as the index  
+# taken from Kaggle: https://www.kaggle.com/c/bike-sharing-demand/data  
+import pandas as pd  
+import matplotlib.pyplot as plt %matplotlib inline 
+url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master

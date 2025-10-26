@@ -1,0 +1,24 @@
+Next, suppose that your service() method contained the following code:   
+  
+int myNumber = counter + 1;  // line 1 
+counter = myNumber;          // line 2 // 
+rest of the code in the service() method 
+counter = counter - 1;   
+What would happen if two service() methods were running at the same time, and both executed line 1 
+before either executed line 2? Both would have the same value for myNumber, and the counter would 
+not be properly updated.   
+  
+For this situation, the answer might be to synchronize the access to the counter variable:   
+synchronized(this)   
+{  
+    myNumber = counter + 1;  
+    counter = myNumber;  
+}  
+// rest of code in the service() method 
+synchronized(this)   
+{  
+    counter = counter - 1 ;  
+}  
+  
+This ensures that the counter access code is executed only one thread at a time. There are several issues 
+that can arise with multi-threaded execution, such as deadlocks and coordinated interactions.   

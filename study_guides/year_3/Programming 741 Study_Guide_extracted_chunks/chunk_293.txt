@@ -1,0 +1,29 @@
+public void Run( ) 
+{ 
+for (;;) 
+{ 
+// sleep 10 milliseconds Thread. Sleep (10); 
+// get the current time 
+System.DateTime dt = System.DateTime.Now; 
+// if the second has changed 
+// notify the subscribers 
+if (dt.Second != second) 
+{ 
+// create the TimeInfoEventArgs object 
+// to pass to the subscriber 
+TimeInfoEventArgs timeInformation = 
+new TimeInfoEventArgs (dt.Hour,dt.Minute,dt.Second); 
+// if anyone has subscribed, notify them  
+if (OnSec-ondChange != null) 
+{ 
+OnSecondChange (this, timeInformation); 
+} 
+} 
+// update the state 
+this.second = dt.Second; this.minute = dt.Minute; this.hour = 
+dt.Hour; 
+} 
+Run creates an infinite for loop that periodically checks the system time. If the time has 
+changed from the Clock object's current time, it notifies all its subscribers and then updates 
+its own state. The first step is to sleep for 10 milliseconds: 
+Thread. Sleep (10); 

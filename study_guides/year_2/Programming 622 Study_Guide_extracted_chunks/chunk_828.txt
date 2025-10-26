@@ -1,0 +1,18 @@
+graph, V(T), E(T), and N.  
+  
+At the next iteration, Step 3 checks the following edges: (0,1), (2,5), (2,6), and (3,4). The weight of the 
+edge (0,1) is 6, the weight of the edge (2,5) is 7, the weight of the edge (2,6) is 5, and the weight of the 
+edge (3,4) is 8. Clearly, the edge (2,6) has the smallest weight. Therefore, vertex 6 is added to V(T) and the 
+edge (2,6) is added to E(T). Figure 10-17(d) shows the resulting graph, V(T), E(T), and N. (The dotted lines 
+show the edges in T.)  
+  
+At the next iteration, Step 3 checks the following edges: (0,1), (2,5), (3,4), and (6,1). The weight of the 
+edge (0,1) is 6, the weight of the edge (2,5) is 7, the weight of the edge (3,4) is 8, and the weight of the 
+
+408  
+  
+edge (6,1) is 4. Clearly, the edge (6,1) has the smallest weight. Therefore, vertex 1 is added to V(T) and the 
+edge (6,1) is added to E(T). Figure 10-17(e) shows the resulting graph, V(T), E(T), and N. (The dotted lines 
+show the edges in T.)  
+  
+At the next iteration

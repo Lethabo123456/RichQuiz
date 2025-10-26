@@ -1,0 +1,15 @@
+edges, as shown in Figure 10-2. Now the problem reduces to finding a circuit in the 
+graph of Figure 10-2, such that it contains all the edges. In this section, we further describe properties of 
+graphs, which will help us answer this question.  
+  
+Definition: A circuit is a path of nonzero length from a vertex u to u with no repeated edges.  
+  
+Definition: A circuit in a graph that includes all the edges of the graph is called an Euler circuit.  
+  
+Definition: A graph G is said to be Eulerian if either G is a trivial graph or G has an Euler circuit.  
+Notice that the graph of Figure 10-2 is a connected graph and this graph has odd degree vertices as well 
+as even degree vertices.  
+  
+Let us consider a connected graph with more than one vertex such that every vertex has odd degree. For 
+example, consider the graph of Figure 10-23. This is a connected graph and every vertex of this graph is 
+odd degree. This graph has no circuit and so has no circuit that contains all the edges.

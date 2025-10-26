@@ -1,0 +1,50 @@
+this case, derived class constructors can only 
+construct the additional members specified in its definition. This means that a call to a 
+
+207 | P a g e  
+ 
+base class constructor must be included in the definition of a constructor of the derived 
+class. 
+ 
+When a derived class constructor executes, first a constructor of the base class 
+executes to initialize the data members inherited from the base class, and then the 
+constructor of the derived class executes to initialize the data members declared by 
+the derived class. So first, the constructor of the class rectangleType executes to 
+initialize the instance variables length and width, and then the constructor of the class 
+boxType executes to initialize the instance variable height. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+208 | P a g e  
+ 
+ 
+ 
+ 
+
+209 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+
+210 | P a g e  
+ 
+ 
+ 
+ 
+Classes and Pointers 
+Because a class can have pointer member variables, this section discusses some 
+peculiarities of such classes. To facilita

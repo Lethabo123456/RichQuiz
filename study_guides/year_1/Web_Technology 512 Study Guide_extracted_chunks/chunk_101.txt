@@ -1,0 +1,25 @@
+refuse to work. Instead, it adds a new position 
+to the end of your array. You can even store something in this new position. Change 
+your script to this: 
+var my_array = [10, "ten", true]; 
+document.write( my_array[3] + "<BR>"); 
+my_array[3] ="new item"; 
+document.write( my_array[3] ); 
+ 
+JavaScript first prints out "undefined" then "new item". 
+ 
+Notice the way we are assigning this new value: 
+my_array[3] ="new item"; 
+ 
+On the left of the equal sign, we have the name of the array then a pair of square 
+brackets. Inside of the square brackets is the array position number we want to 
+access. After the equal sign you type the value you want to assign. So it is just like 
+normal variable assignment except you add the square brackets and the array 
+position after the variable name. 
+ 
+The second (Regular) way to set up an array is with the new keyword: 
+ 
+var my_array = new Array( ); 
+ 
+This time, after the equal sign we have the word new then a space. The word Array 
+comes next (upper

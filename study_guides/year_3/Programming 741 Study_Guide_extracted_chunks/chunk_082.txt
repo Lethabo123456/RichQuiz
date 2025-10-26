@@ -1,0 +1,45 @@
+2.5 Method Body 
+As you saw in earlier, statements making up the method body are enclosed in curly braces. 
+The body for the following DisplayMessage( ) method consists of two calls to the Write( ) 
+method in the Console class, one call to the WriteLine( ) method in the Console class and a 
+return statement that does not return a value. 
+ 
+Normally, the statements inside the body of a method are executed in sequential order. The 
+body of a method can include statements that declare variables, do arithmetic, and call other 
+methods. These same rules and concepts apply whether you are using your own methods or 
+predefined methods that make up the FCL. When the last statement in the method finishes, 
+control is returned to the method that made the call. 
+ 
+2.6 Calling Class Methods 
+Invoking a method means calling the method. When a method call is encountered, the .NET 
+execution engine, the common language runtime (CLR), halts execution in the current method 
+and transfers control to the body of the method called. After completing the called method’s 
+body, control is returned back to the location in the calling method that made the call. A call 
+to the method that does not return a value uses the following syntax: 
+ 
+[qualifier].MethodName(argumentList); 
+ 
+As stated previously, not all methods require an argument list. Both of the following 
+statements are legal calls to the WriteLine( ) method. The first takes no arguments; the second 
+call sends one data item to the method. 
+void DisplayMessage( ) { Write("This is "); 
+Write("an example of a method "); 
+WriteLine("body. "); 
+return; // no value is returned 
+} 
+
+WriteLine( ); // No arguments. Writes a blank line 
+WriteLine("Ok"); // Single argument 
+When the argument list contains more than one data item, the values are separated by 
+commas, as follows: 
+  
+The call included four arguments: 
+1. "Value1({0}) + Value2({1})" + " = Value3({2})" 
+2. 25 
+3. 75 
+4. (25 + 75) 
+
+A call to a method never includes the data type as part of the argument list, but rather the 
+actual data. The actual argument can, of course, take the form of a literal, as shown 
+previously, or it can be a variable or an expression. The expression can be quite sophisticated 
+and even include a call to another method. 

@@ -1,0 +1,44 @@
+2.3.4 Server and client Program 
+1: This program displays the local time at the specified web site where the web site.s name is typed at the 
+command line.  
+import java.net.*; 
+import jave.io.*; 
+class daytimedemo  {  
+  final static int DAY_TIME_PORT = 13;   
+public static void main (String args[ ])  
+{  
+DatagramSocket socket;  
+InetAddress Destination; DatagramPacket 
+datagram;  
+byte dataSend[ ] = new byte [256]; 
+String dataReceive; if (args.length = = 0) {  
+System.out.println (“Usage: Java Daytime Demo”);  
+System.exit (0);  
+    } try 
+{  
+socket = new DatagramSocket( );  
+Destination = InetAddress.getByName(args[0]);   
+datagram = new DatagramPacket   datasend, datasend.Length,   destination, 
+DAY_TIME_PORT);   socket.send (datagram);   
+datagram = new DatagramPacket   datasend, 
+datasend.length);   socket.receive (datagram);   
+datareceive = new String(datagram.   getData( 
+));  
+  System.out.println (The time at the   
+site”+destination.getHostName( ) + “is”  
+  + dataReceive);  
+  Socket.close( );  
+}  
+catch (UnknownHostException h)  
+{  
+  System.out.println (“The website is unknown”);  
+}  
+catch (IOException I)  
+{  
+System.out.println (“Error in sending or receiving              
+datagram”);  
+}  
+catch (socketException s)  
+{  
+  System.out.println(“Socket cannot be created”); }  
+  } }

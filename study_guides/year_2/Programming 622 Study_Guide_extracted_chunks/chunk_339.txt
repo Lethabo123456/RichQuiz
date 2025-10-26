@@ -1,0 +1,27 @@
+ter placing a number in the first empty slot, we find the next empty slot and try to place a number in 
+that slot. If a number cannot be placed in a slot, then we must backtrack to the previous slot, where the 
+number was placed, place a different number, and continue. If we arrive at a slot where no number can 
+be placed, then the sudoku problem has no solutions.  
+  
+The following class implements the sudoku problem as an ADT:  
+//***************************************************************  
+
+169  
+  
+// This class specifies the functions to solve a sudoku problem.  
+//***************************************************************  
+class sudoku  
+{  
+public:  
+sudoku();  
+//default constructor  
+//Postcondition: grid is initialized to 0  
+  
+sudoku(int g[][9]);  
+//constructor  
+//Postcondition: grid = g  
+  
+void initializeSudokuGrid();  
+//Function to prompt the user to specify the numbers of the //partially 
+filled grid.  
+//Postcondition: grid is initialized to the numbers

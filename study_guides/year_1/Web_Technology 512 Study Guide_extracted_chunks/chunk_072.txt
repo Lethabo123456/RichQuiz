@@ -1,0 +1,22 @@
+Than 
+<    Less Than 
+>=    Greater Than or equal to 
+<=    Less Than or equal to 
+===    Is exactly like and is of the same variable type as 
+ 
+To try then out, change the code between your two JavaScript tags to this (or create a 
+new one, if you prefer): 
+ 
+So this script places a value of true in a variable called over_eighteen. We trying to see 
+what is in this variable with the help of an if … else statement. In between the round 
+brackets of IF we have this: 
+over_eighteen != true 
+ 
+This reads "If over_eighteen does not equal true". So we want something to happen if 
+our variable does not contain what we are looking for. Except, it does contain a value 
+of true. So Javascript will skip this part and jump to the else part. The else part writes 
+the text "You have passed the age test!" to the browser. 
+ 
+Save your work and test it out. Now change var over_eighteen = true to var 
+over_eighteen = false. Save and rerun the script in your browser. You should see the 
+message "You're

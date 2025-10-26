@@ -1,0 +1,17 @@
+the 0–1 interval. Among other things, using a [0,1] interval also reduces the 
+amount of memory necessary for the computation. There are two main algorithms for scaling 
+data: 
+ 
+The MinMax scaler is the core algorithm used to change the scale of values. For each 
+value in the feature, the transformation goes through the following steps: 
+1. The value is subtracted from the minimum value of the feature in the dataset. 
+2. The resulting value is divided by the range—namely, the difference between the 
+maximum and minimum value of the feature in the dataset. 
+ 
+The MinMax scaler doesn’t alter the distribution of values and maintains the relative 
+distance between values. 
+ 
+The robust scaler algorithm aims to reduce the importance of outliers. Each value in 
+the feature is first subtracted from the median, and the result is then divided by the 
+interquartile range (the difference between the third and first quartile). In this way, 
+the distance between values in the scaled feature is

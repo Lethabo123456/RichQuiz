@@ -1,0 +1,32 @@
+5.5 Security Considerations for Network Management 
+ 
+This section addresses the network management topics defined in the Information Security Forum’s 
+(ISF’s) Standard of Good Practice for Information Security (SGP). 
+
+Network Device Configuration 
+The principal security objective related to network device configuration is to ensure that the 
+configuration of network devices is accurate and does not compromise the security of the network. 
+The SGP recommends that policies and procedures for device configuration cover: 
+
+ Security architecture principles 
+ Standard security management practices 
+ Device configuration 
+ Restriction of access to network devices 
+ Vulnerability and patch management 
+ Changes to routing tables and settings in network devices 
+ Regular review of network device configuration and setup 
+
+Configuring network devices is a complex undertaking. As vendors build more features into their 
+routers, switches, firewalls, and application delivery controllers, the command-line syntax required to 
+configure those devices becomes increasingly loaded with options and syntactic choices. Web-based 
+graphical user interfaces (GUIs) are often available as an alternative to a command-line interface (CLI), 
+but they can be slow to navigate. Web GUIs also have a way of obfuscating functions by hiding them 
+in unlikely pages, making accessing them require an annoying series of clicks. 
+Analyses by numerous IT experts have time and again revealed that the most common cause of 
+network outages is faulty configuration changes [BANK14]. Even minor errors in configuration changes 
+to the devices in production carry the risk of causing network outage. Therefore, skilled network 
+administrators spend a significant part of their time configuring devices. They may find it hard to 
+concentrate on strategic network engineering and administration tasks. 
+Most configuration changes are repetitive, labor-intensive tasks, such as changing passwords and 
+access control lists. A number of tools and vendor offerings can automate repeatable and complex 
+tasks related to device configuration, reducing the chance of human error.

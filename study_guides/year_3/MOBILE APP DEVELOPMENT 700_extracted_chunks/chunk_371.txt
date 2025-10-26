@@ -1,0 +1,40 @@
+Maps 
+Maps are implemented using the GoogleMap object in the source code file and a MapFragment in the 
+layout file. These objects are not a part of the standard Android SDK but rather the Google Play 
+Services SDK. This SDK must be installed on your development machine to implement maps in your 
+app. Using Google Maps requires an API key, which associates your app with an attempt to access the 
+GoogleMap API. This is how you (and Google) can track how often your users access the map portion 
+of your app. The API key is free; you just have to sign up for it. Maps are implemented as a 
+MapFragment widget in a layout. The Activity that implements the code to provide the map’s behavior 
+must be a FragmentActivity. 
+
+Fragments 
+Fragments were discussed in previous Chapter, “Android Navigation and Interface Design.” The 
+FragmentActivity is a subclass of the Activity class. An Activity that needs to implement a map must 
+extend the FragmentActivity class rather than the Activity class. This is required because maps are 
+encapsulated in a MapFragment. This allows a map to be a part of a layout rather than the only thing 
+in a layout. 
+
+Finding Your Location 
+You can obtain a location in two ways. The first involves using the device network and/or GPS sensors 
+to locate the device in real time. The second uses a known location (e.g., an address) and looks up the 
+GPS coordinates via the internet. Both approaches will be demonstrated. When working with maps, 
+you can use the map’s getMyLocation() method to get the device’s current GPS coordinates. If you 
+need to get the location without using a map, there is more work involved. In this section, you build 
+and test several versions of ContactMapActivity to learn the different approaches to getting a location 
+before building the final one used for the app. 
+
+Geocoding: Get Coordinates from an Address 
+
+In this first approach to obtaining a location, the ContactMapActivity will take an entered address and 
+look up and display the GPS coordinates of the address. This process is called geocoding. The first step 
+is to create the layout in activity_contact_map.xml. For now, this 
+layout will not use a map object. Refer to Figure 7.1 to code this 
+layout. The exact layout is up to you—you’ve done all this before. 
+However, to match to the code, use the following IDs for the 
+widgets: 
+
+Get Coordinates button: @+id/buttonGetLocation 
+Latitude output TextView: @+id/textLatitude 
+Longitude output TextView: @+id/textLongitude 
+Accuracy output TextView: @+id/textAccuracy 

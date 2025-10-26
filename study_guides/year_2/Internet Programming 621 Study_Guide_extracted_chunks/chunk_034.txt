@@ -1,0 +1,21 @@
+mon.css style sheet file contains selectors to style some common HTML 
+elements — including the h1 (Level-1) heading used in the page — to produce the nicer-looking 
+result. Please keep this common.css file in your document root folder because we will be using this 
+styling in all the examples that shall follow hereafter.  
+
+21  
+  
+1.7 Enhamcing The Script Further  
+The “ Hello, world! ” example shows how you can write a simple PHP script, but the code does 
+nothing more— you could just as easily achieve the same effect with a simple HTML page. In this 
+section you enhance the script to display the current time. In doing so, you move from creating a 
+static Web page to a dynamic page; a page that changes each time you view it. Here ’ s the modified 
+“ Hello, world! ” script:  
+  
+  
+  
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>  
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>  
+<head>  
+<title>He

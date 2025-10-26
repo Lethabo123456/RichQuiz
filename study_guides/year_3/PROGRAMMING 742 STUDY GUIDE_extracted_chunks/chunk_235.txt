@@ -1,0 +1,23 @@
+Asynchronous code solves this problem. Instead of blocking your thread until the I/O operation finishes, 
+you get back a Task object that represents the result of the asynchronous operation. By setting a contin-
+uation on this Task, you can continue when the I/O is done. In the meantime, your thread is available for 
+other work. When the I/O operation finishes, Windows notifies the runtime and the continuation Task is 
+scheduled on the thread pool. 
+  
+But writing asynchronous code is not easy. You have to make sure that all edge cases are handled and 
+that nothing can go wrong. Because of this predicament, C# 5 has added two new keywords to simplify 
+writing asynchronous code. Those keywords are async and await. 
+ 
+You use the async keyword to mark a method for asynchronous operations. This way, you signal to the 
+compiler that something asynchronous is going to happen. The compiler responds to this by transform-
+ing your code into a state machine. 
+ 
+A method marked with async just starts running synchronously on the current thread. What it does is 
+enable the method to be split into multiple pieces. The boundaries of these pieces are marked with the 
+await keyword. 
+ 
+When you use the await keyword, the compiler generates code that will see whether your asynchro-
+nous operation is already finished. If it is, your method just continues running syn
+yet completed, the state machine will hook up a continuation method that should run when the Task 
+completes. Your method yields control to the calling thread, and this thread can be used to do other 
+work. 

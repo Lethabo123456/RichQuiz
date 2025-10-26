@@ -1,0 +1,45 @@
+Performing Patch Management 
+There are a number of issues to consider related to performing patch management. One is the 
+relationship between timing, prioritization, and testing. Ideally, every discovered vulnerability should 
+be patched as soon as discovered. But, because resources are limited, enterprises need to prioritize 
+patching. Further, there is a risk of installing a patch throughout an enterprise without testing it, so 
+the resources involved in testing need to be taken into account. An organization should consider the 
+impact of a patch on operational systems, such as rebooting or changing configurations. It should also 
+take special care if it uses multiple automated means of patching, such as self-patching software, third-
+party services, and network-based capability. An organization should anticipate and resolve conflicts 
+and maintain a policy to verify that patches are effective on all relevant systems. 
+ 
+Patch Management Technologies 
+Table 15.1 shows three types of patch management techniques: agent-based scanning, agentless 
+scanning, and passive network monitoring. 
+ 
+Details of the three patch management techniques are as follows: 
+ Agent-based scanning: Requires an agent to be running on each host to be patched, with one 
+or more servers managing the patching process and coordinating with the agents. Each agent 
+is responsible for determining what vulnerable software is installed on the host, 
+communicating with the patch management servers, determining what new patches are 
+available for the host, installing those patches, and executing any state changes needed to 
+make the patches take effect. 
+ Agentless scanning: Uses one or more servers that perform network scanning of each host to 
+be patched and determine what patches each host needs. Generally, agentless scanning 
+requires that servers have administrative privileges on each host so that they can return more 
+accurate scanning results and so they have the ability to install patches and implement state 
+changes on the hosts. 
+ Passive network monitoring: Monitors local network traffic to identify applications (and, in 
+some cases, operating systems) that are in need of patching. Unlike the other techniques, this 
+technique identifies vulnerabilities on hosts that don’t permit direct administrator access to 
+the operating system, such as some Internet of Things (IoT) devices and other appliances. 
+However, the passive monitoring must be linked to system management software that has 
+the ability to install patches.
+
+Common features of patch management capabilities include identifying which patches are needed, 
+bundling and sequencing patches for distribution, allowing administrators to select which patches may 
+or may not be deployed, and installing patches and verifying installation. Many patch management 
+technologies also allow patches to be stored centrally (within the organization) or downloaded as 
+needed from external sources. 
+
+A supplementary approach to traditional patch management is virtual patching. Virtual patching is 
+implemented in a hardware device or software module that sits between incoming traffic and an 
+application, a database, a server, or an endpoint. The virtual patch capability scans all traffic for 
+exploits and blocks specific communications and resource usage, based on several factors. Virtual 
+patching is an interim measure when it is difficult to immediately install needed patches. 

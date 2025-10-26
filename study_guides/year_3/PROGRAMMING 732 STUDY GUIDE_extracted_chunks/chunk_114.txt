@@ -1,0 +1,23 @@
+4.1.14 Servlet Context  
+A servlet lives and dies within the bounds of the server process. To understand its operating environment, 
+a servlet can get information about its environment at different times. Servlet initialization information is 
+available during servlet start-up; information about the hosting server is available at any time; and each 
+service request can contain specific contextual information.   
+  
+4.1.15 Servlet Initialization Information  
+Initialization information is passed to the servlet via the ServletConfig parameter of the init() method. 
+Each web server provides its own way to pass initialization information to a servlet. With the JWS, if a  
+servlet class DatePrintServlet takes an initialization argument timezone, you would define the following 
+properties in a servlets.properties file:   
+  
+  servlet.dateprinter.code=DatePrinterServlet   
+servlet.dateprinter.timezone=PST  
+or this information could be supplied through a GUI administration tool.  The timezone information would 
+be accessed by the servlet with the following code:   
+  
+  String timezone;  
+  public void init(ServletConfig config) {  
+    timeZone = config.getInitParameter("timezone");   
+}  
+An Enumeration of all initialization parameters is available to the servlet via the getInitParameterNames() 
+method.   

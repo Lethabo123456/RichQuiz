@@ -1,0 +1,38 @@
+up a 1000, 10000 numbers, in just a 
+few lines of code. The most common type a loop is called the for loop. 
+ 
+3.10.1 For Loops 
+For loops (lowercase "f") syntax: 
+ 
+ 
+for (start_value; end_value; increament_value) 
+ 
+{ 
+ 
+//code to be executed over and over again comes here 
+ 
+} 
+ 
+So you start with the word for. After a space you have a pair of round brackets. In 
+between the round brackets you need three things, separated by semicolons: a start 
+value for your loop, some way for the loop to end, and a way to get from one to the 
+other, which is known as the increment value. 
+Next is a pair of curly brackets. The code you want 
+to execute repeatedly goes between the curly 
+brackets. Here is a for loop that adds up the 
+numbers 1 to 10. Try it out by creating a web 
+page. 
+ 
+ 
+WEB RESOURCE 
+ 
+http://www.w3schools.com/j
+s/js_loop_for.asp  
+
+ 
+54 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+Figure 3.8 – The for loops to add up numbers from 1 to 10 
+The first thing to notice here is that

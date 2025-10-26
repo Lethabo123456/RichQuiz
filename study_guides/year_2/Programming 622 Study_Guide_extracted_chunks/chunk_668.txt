@@ -1,0 +1,21 @@
+.3. Because the right subtree of C is empty, there is nothing to traverse. Step 3.3 is completed.  
+  
+This completes Step 3, which in turn completes the traversal of the binary tree.  
+  
+Clearly, the inorder traversal of the previous binary tree outputs the nodes in the following order:  
+  
+Inorder sequence: B D A C  
+
+327  
+  
+Similarly, the preorder and postorder traversals output the nodes in the following order:  
+  
+Preorder sequence: A B D C  
+  
+Postorder sequence: D B C A  
+  
+As you can see from the walk-through of the inorder traversal, after visiting the left subtree of a node we 
+must come back to the node itself. The links are only in one direction; that is, the parent node points to 
+the left and right children, but there is no pointer from each child to the parent. Therefore, before going 
+to a child, we must somehow save a pointer to the parent node. A convenient way to do this is to write a 
+recursive inorder function because in a recursive call after completing a p

@@ -1,0 +1,32 @@
+We want to test what is in this text box so have set up an IF … ELSE statement. The IF 
+part is this: 
+if (textbox_value == "")  
+{ 
+ 
+THINK POINT 
+ 
+What are the advantages of 
+using functions 
+
+ 
+75 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+var error = "<span STYLE=color:red>Required</span>"; 
+document.getElementById("message").innerHTML = error; 
+} 
+ 
+The variable called error just stores some HTML and CSS: 
+"<span STYLE=color:red>Required</span>"; 
+ 
+This is a SPAN tag with a style applied. It will cause the test "Required" to be coloured 
+red. Next is this line: 
+document.getElementById("message").innerHTML = error; 
+ 
+This is setting some text in the HTML. That paragraph tag we set up had an ID of 
+message. We can use this with document.getElementById. Notice the innerHTML part 
+after the dot. This allows you to set text in your HTML. The inner HTML is the parts 
+between the two P tags: 
+<P ID="message">First Name</P> 
+ 
+The inner HTML is "First Name". This will be erased and replaced

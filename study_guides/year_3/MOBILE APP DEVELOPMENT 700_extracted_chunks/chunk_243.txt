@@ -1,0 +1,43 @@
+Using the Database 
+The three classes—Contact, ContactDBHelper, and ContactDataSource—are used in the MainActivity 
+class to implement the saving of contact data to the database. This will require implementing several 
+new methods and modifying some existing methods. Because the methods to retrieve contacts have 
+not been implemented yet, the update functionality will be only partially implemented at this time. 
+The first step is to provide an association between the MainActivity class and a Contact object. This is 
+implemented by declaring a private variable in the MainActivity class. Enter the following code after 
+ 
+private Contact currentContact; 
+Next, associate the currentContact variable with a new Contact object by entering the following code 
+as the last line in the onCreate method: 
+ 
+currentContact = new Contact(); 
+Notice that while you are using a new class (Contact) in the MainActivity class, you do not have to 
+import it. That’s because you created the Contact class as a part of the com.example.mycontactlist 
+package. Android already knows about this class, so it does not have to be imported. 
+The final step in modifying existing code is to add a line of code in the didFinishDatePickerDialog 
+method to store the selected birthday in the Contact object. Add the following line of code as the last 
+line of code in that method: 
+
+currentContact.setBirthday(selectedTime); 
+
+This code uses the Contact class’s setBirthday method to assign the date selected in the custom dialog 
+to the currentContact object. 
+
+Capture User-Entered Data 
+The first new method needed is used to capture the user data as it is typed and store it in the 
+currentContact object. The method itself does not capture the data. Rather, it sets up listeners on all 
+the EditTexts where data can be entered. If the text changes, the listener then executes the code to 
+set the attribute that holds the code in the currentContact object. The method is called in the onCreate 
+method of the MainActivity, so that the listeners are ready to go when the MainActivity is ready for 
+input. To start, enter the following line of code after all the other init methods in the onCreate method 
+(it will be red until you add the method): 
+ 
+initTextChangedEvents(); 
+Next, create a new method in the MainActivity class called initTextChangedEvents(). Place this method 
+after the other init methods currently in the class. Enter the code in Listing 5.7. Note that once you 
+get to line 2, you should see a light bulb you can click to autogenerate the methods in lines 3, 5, and 
+6—or they may be automatically generated just by typing the code in line 2. Be aware that the order 
+of the methods and parameter names may not exactly match what’s shown here. 
+Listing 5.4 is not the complete method. A listener has to be added for all the other EditTexts in the 
+layout. However, the code is essentially the same for each EditText. Take time to understand this code 
+before adding the rest.

@@ -1,0 +1,43 @@
+4.8 Introducing the final modifier   
+A variable can be declared as final. Doing so prevents its contents from being modified. This means 
+that you must initialize a final variable when it is declared.(In this usage, final is similar to const in 
+C/C++/C#.) For example:   
+   
+final int FILE_NEW = 1;   
+final int FILE_OPEN = 2;  
+final int FILE_SAVE = 3; 
+final int FILE_SAVEAS =; 
+final int FILE_QUIT = 5;  
+
+Subsequent parts of your program can now use FILE_OPEN, etc., as if they were constants, without 
+fear that a value has been changed. It is a common coding convention to choose all uppercase 
+identifiers for final variables. Variables declared as final do not occupy memory on a per-instance 
+basis.Thus, a   final variable is essentially a constant. The keyword final can also be applied to 
+methods, but its meaning is substantially different than when it is applied to variables. This second 
+usage of final is described in the next topic, when inheritance is described. 
+
+4.9 Arrays Revisited  
+   
+Arrays were introduced earlier in this book, before classes had been discussed. Now that you know 
+about classes, an important point can be made about arrays: they are implemented as objects. 
+Because of this, there is a special array attribute that you will want to take advantage of. Specifically, 
+the size of an array—that is, the number of elements that an array can hold—is found in its length 
+instance variable. All arrays have this variable, and it will always hold the size of the array. Here is a 
+program that demonstrates this property:   
+   
+// This program demonstrates the length array member.  
+class Length {   
+public static void main(String args[])   
+{ int a1[] = new int[10];  
+int a2[] = {3, 5, 7, 1, 8, 99, 44, -10}; 
+ int a3[] = {4, 3, 2, 1};   
+System.out.println("length of a1 is " + a1.length);  
+System.out.println("length of a2 is " + a2.length);   
+System.out.println("length of a3 is " + a3.length);   
+}   
+}   
+ This program displays the following output:  length of a1 is 10 length of a2 is 8 length of a3 is 4   
+   
+As you can see, the size of each array is displayed. Keep in mind that the value of length has nothing 
+to do with the number of elements that are actually in use. It only reflects the number of elements 
+that the array is designed to hold.

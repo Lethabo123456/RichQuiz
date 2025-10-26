@@ -1,0 +1,18 @@
+2.4.2 Binary to decimal and hexadecimal conversion  
+In networking it is important to follow steps before we talk about TCP/IP protocol stack and IP 
+addressing we must know the difference between binary, decimal, and hexadecimal numbers and 
+how we convert from one format to the other.  
+Let’s start with binary numbering each digit is limited to either a 1 (one) or a 0 (zero) each digit is 
+called 1 bit (short for binary digit). When counting either 4 or 8 bits together and are called nibble 
+and a byte respectively. Interestingly binary numbering is the value represented in a decimal format- 
+the typical decimal format being the base-10 number scheme. Binary numbers are from right moving 
+left with each spot having double the value of the previous spot.  
+Below is a decimal value of each bit location in a nibble or a byte. Nibble is four bits and a byte is an 
+eight bits. However in network addressing we refer a byte as an octet or octal addressing. In 
+Mathematics octal addressing refers to base 8, not the same as base 10. 
+
+Nibble values = 8 4 2 1  
+Byte values = 128 64 32 16 8 4 2 1 
+
+Figure 28: Binary Values 
+Step by step on binary  

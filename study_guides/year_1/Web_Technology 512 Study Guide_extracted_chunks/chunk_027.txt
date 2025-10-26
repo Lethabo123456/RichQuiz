@@ -1,0 +1,28 @@
+this 
+browser hierarchy is the Window object. This 
+represents the entire browser, with its toolbars, menus, status bar, the page itself, and 
+a whole lot more besides. Effectively, the Window is the browser. 
+ 
+ 
+WEB RESOURCE 
+ 
+http://www.w3schools.com/js/js
+_window.asp 
+
+ 
+21 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+Underneath the Window Object there are lots of other objects you can access. These 
+allow you do things like, redirecting the user to a different web page, get the size of 
+the browser window, access all the HTML elements on the page and again a whole lot 
+more besides. Here's an (incomplete) list of Window objects. Notice that the two 
+objects are separated by a dot (full stop/period), with no space between the two. 
+window.document 
+ 
+This allows you to access all your HTML elements. We'll go into more detail about the 
+document object later. 
+window.history 
+ 
+This accesses information about browsing history. This object is of limited use since 
+you can't get at wh

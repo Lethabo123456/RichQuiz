@@ -1,0 +1,15 @@
+M SYSTABAUTH 
+WHERE TTNAME = ‘INVENTORY’; 
+As you can see in the preceding examples, the data dictionary can be a tool for monitoring database 
+security by checking the assignment of data access privileges.  
+The data dictionary can also be used to ensure that application programmers have met the naming 
+standards for data elements in the database, and that the data validation rules are correct. Thus, the 
+data dictionary can be used to support a wide range of data administration activities and facilitate 
+the design and implementation of information systems. Integrated data dictionaries are also 
+essential to the use of computer-aided systems engineering tools. 
+ 
+Case Tools 
+A computer-aided systems engineering (CASE) tool provides an automated framework for the 
+Systems Development Life Cycle (SDLC). CASE uses structured methodologies and powerful 
+graphical interfaces. Because they automate many tedious system design and implementation 
+activities, CASE tools play an increasingly i

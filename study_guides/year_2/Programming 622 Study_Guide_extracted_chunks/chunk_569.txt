@@ -1,0 +1,31 @@
+ist. The first time we 
+locate the smallest item in the entire list, the second time we locate the smallest item in the list starting 
+from the second element in the list, and so on. Selection sort described here is designed for array-based 
+lists.  
+  
+  
+  
+  
+
+283  
+  
+  
+Suppose you have the list shown in Figure 8-1.  
+  
+  
+FIGURE 8-1 List of 8 elements  
+  
+Figure 8-2 shows the elements of list in the first iteration.  
+  
+  
+FIGURE 8-2 Elements of list during the first iteration  
+  
+Initially, the entire list is unsorted. So we find the smallest item in the list. The smallest item is at position 
+6, as shown in Figure 8-2(a). Because this is the smallest item, it must be moved to position 0. So we swap 
+16 (that is, list[0]) with 5 (that is, list[6]), as shown in Figure 8-2(b). After swapping these elements, the 
+resulting list is as shown in Figure 8-2(c).  
+  
+Figure 8-3 shows the elements of list in the second iteration.  
+  
+  
+FIGURE 8-3 Elements of list during the second

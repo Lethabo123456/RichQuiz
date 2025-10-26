@@ -1,0 +1,32 @@
+< link rel=”stylesheet” type=”text/css” href=”common.css” / > 
+< /head >  
+< body >  
+< h1 > Normal and bold text < /h1 >  
+< ?php function makeBold( $text ) { 
+return “ < b > $text < /b > ”;  
+  
+ 
+  
+}  
+  $normalText = “This is normal text.”;   
+$boldText = 
+makeBold( “This is bold text.” );  
+  
+ 
+  
+echo “ < p > $normalText < /p > ”;  
+ 
+  
+echo “ < p > $boldText < /p > ”;  
+? >  
+< /body >  
+< /html >  
+  
+This script defines a function, makeBold(), that accepts a string argument and returns the string 
+enclosed by HTML < b > ... < /b > (bold) tags. It then creates a variable, $normalText , containing an 
+unformatted string of text. Then it calls the makeBold() function, passing it some text to format, and 
+stores the return value from makeBold() in another variable, $boldText . Finally, the script outputs 
+both $normalText and $boldText to the browser. You can see the result in Figure 6.3 on the next 
+page.  
+  
+As a matter of fact, you can use the return statement without incl

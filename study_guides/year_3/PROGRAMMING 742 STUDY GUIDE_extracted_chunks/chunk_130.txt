@@ -1,0 +1,51 @@
+The ImageProcessor then declares a number of methods, each of which processes an image and each of which 
+matches the return type and signature of the delegate: 
+
+public static void Blur( ) 
+    { 
+       Console.WriteLine("Blurring image"); 
+     } 
+   public static void Filter( ) 
+    {  
+
+
+     Console.WriteLine("Filtering image"); 
+}
+   public static void Sharpen( ) 
+    { 
+      Console.WriteLine("Sharpening image"); 
+    } 
+   public static void Rotate( ) 
+   { 
+    Console.WriteLine("Rotating image"); 
+   } 
+ 
+The ImageProcessor class needs an array to hold the delegates that the user picks, a variable to hold the run-
+ning total of how many effects are in the array, and of course a variable for the image itself: 
+
+DoEffect[ ] arrayOfEffects; Image image; 
+  int numEffectsRegistered = 0; 
+The ImageProcessor also needs a method to add delegates to the array: 
+public void AddToEffects(DoEffect theEffect) 
+ { 
+  if (numEffectsRegistered >= 10) 
+    { 
+     throw new Exception("Too many members in array"); 
+    } 
+    arrayOfEffects[ numEffectsRegistered++] = theEffect; 
+   } 
+It needs another method to actually call each method in turn: 
+public void ProcessImages( ) 
+{ 
+for (int i = 0;i < numEffectsRegistered;i++) { 
+arrayOfEffects[ i] ( ); 
+} 
+} 
+ 
+Finally, you need only declare the static delegates that the client can call, hooking them to the processing meth-
+ods: 
+ 
+ public DoEffect BlurEffect = new DoEffect(Blur);  
+ public DoEffect SharpenEffect = new DoEffect(Sharpen); 
+ public DoEffect FilterEffect = new DoEffect(Filter);  
+ public DoEffect RotateEffect = new DoEffect(Rotate);

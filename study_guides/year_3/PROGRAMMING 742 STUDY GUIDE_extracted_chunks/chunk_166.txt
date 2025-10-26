@@ -1,0 +1,21 @@
+4.1.3 The FileInfo Class 
+ 
+Unlike the File class, the FileInfo class is not static and does not have static methods. This class is only 
+useful when instantiated. A FileInfo object represents a file on a disk or a network location, and you can 
+create one by supplying a path to a file: 
+ 
+FileInfo aFile = new FileInfo(@"C:\Log.txt"); 
+  
+You can also pass the name of a directory to the FileInfo constructor, although in practical terms that 
+arly useful. Doing this causes the base class of FileInfo, which is FileSystemInfo, to be initial-
+ized with all the directory information, but none of the FileInfo methods or properties relating specifi-
+cally to files will work. 
+ 
+Many of the methods exposed by the FileInfo class are similar to those of the File class, but because File 
+is a static class, it requires a string parameter that specifies the file location for every method call. There-
+fore, the following calls do the same thing: 
+   FileInfo aFile = new FileInfo("Data.txt"); 
+            if (aFile.Exists) 
+                Console.WriteLine("File Exists"); 
+            if (File.Exists("Data.txt")) 
+                Console.WriteLine("File Exists"); 

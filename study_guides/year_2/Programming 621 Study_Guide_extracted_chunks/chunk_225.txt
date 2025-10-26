@@ -1,0 +1,18 @@
+the definition of the default constructor of the class boxType. Recall 
+that, if a class contains a default constructor and no values are specified when the 
+object is declared, the default constructor executes and initializes the object. Because 
+the class rectangleType contains the default constructor, we do not specify any 
+constructor of the base class when writing the definition of the default constructor of 
+the class boxType. 
+ 
+boxType::boxType() 
+ {  
+height = 0.0;  
+} 
+ 
+To write the definition of class boxType constructor with parameters, we first write the 
+class boxType constructor heading including all of the parameters needed for both the 
+base class and derived class constructors; that is, all the parameters needed for both 
+boxType and rectangleType. Then, to trigger the execution of the base class 
+constructor with parameters, we add a colon (:) to the heading followed by the name 
+of the constructor of the base class with its parameters in the heading of the definiti

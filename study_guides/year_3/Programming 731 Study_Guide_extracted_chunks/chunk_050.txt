@@ -1,0 +1,23 @@
+Compiling the Program    
+To compile the Example program, execute the compiler, javac, specifying the name of the source 
+file on the command line, as shown here:  
+
+C:\>javac Example.java   
+   
+The javac compiler creates a file called Example.class that contains the bytecode version of the 
+program. As discussed earlier, the Java bytecode is the intermediate representation of your program 
+that contains instructions the Java interpreter will execute. Thus, the output of javac is not code that 
+can be directly executed.To actually run the program, you must use the Java interpreter, called java. 
+To do so, pass the class name Example as a command-line argument, as shown here:   
+
+C:\>java Example     
+   
+When the program is run, the following output is displayed:  This is a 
+simple Java program. When Java source code is compiled, each individual class 
+is put into its own output file named after the class and using the .class extension. 
+This is why it is a good idea to give your Java source files the 
+same name as the class they contain—the name of the source file will match the name of the .class 
+file. When you execute the Java interpreter as just shown, you are actually specifying the name of the 
+class that you want the interpreter to execute. It will automatically search for a file by that name 
+that has the .class extension. If it finds the file, it will execute the code contained in the specified 
+class.   

@@ -1,0 +1,12 @@
+ecific access rights 
+for database objects to a user or group of users. For example, you could assign the SELECT 
+and UPDATE access rights to the user leaders on the CLASS table. An access right could also 
+be revoked from a specific user or groups of users. This feature could come in handy during 
+database backups, scheduled maintenance events, or even during data breach incidents. 
+Determine Performance Measures 
+Physical design becomes more complex when data is distributed at different locations because the 
+performance is affected by the communication media’s throughput. Given such complexities, it is 
+not surprising that designers favour database software that hides as many of the physical-level 
+activities as possible. Despite that relational models tend to hide the complexities of the computer’s 
+physical characteristics; the performance of relational databases is affected by physical storage 
+properties. For example, performance can be affected by characteristics of the storage

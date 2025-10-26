@@ -1,0 +1,22 @@
+thm and 
+the method implementing the algorithm might be simpler. In the recursive version, some values are 
+calculated more than once. For example, to calculate rFibNum(2, 3, 4), the value rFibNum(2, 3, 2) is 
+calculated twice. So a recursive method might be easier to write, but might not execute as efficiently. The 
+section ‘‘Recursion or Iteration?’’, presented later in this chapter, discusses these two alternatives.  
+  
+The following C++ program uses the function rFibNum:  
+//*************************************************************  
+// Given the first two numbers of a Fibonacci sequence, this // 
+program uses a recursive function to determine a specific // 
+number(s) of a Fibonacci sequence.  
+//*************************************************************  
+#include <iostream> using 
+namespace std; int 
+rFibNum(int a, int b, int n); 
+int main()  
+{  
+int firstFibNum;  
+int secondFibNum; int 
+nth;  
+cout << "Enter the first Fibonacci number: 
+"; cin >> firstFibNum; cout << en

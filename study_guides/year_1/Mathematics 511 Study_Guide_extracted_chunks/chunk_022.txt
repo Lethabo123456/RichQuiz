@@ -1,0 +1,30 @@
+1.1.3 Converse, Contrapositive, and Inverse 
+We can form some new conditional statements starting with a conditional 
+statement 𝑝 → 𝑞. In particular, there are three related conditional 
+statements that occur so often that they have special names. The 
+proposition 𝑞 → 𝑝 is called the converse of 𝑝 → 𝑞. The contrapositive of 
+𝑝 → 𝑞 is the proposition ¬𝑞 →¬p. The proposition ¬𝑝 →¬𝑞 is called the 
+inverse of 𝑝 → 𝑞. We will see that of these three conditional statements 
+formed from 𝑝 → 𝑞, only the contrapositive always has the same truth 
+value as 𝑝 → 𝑞. 
+
+We first show that the contrapositive, ¬𝑞 →¬𝑝, of a conditional statement 
+𝑝 → 𝑞 always has the same truth value as 𝑝 → 𝑞. To see this, note that the 
+contrapositive is false only when ¬𝑝 is false and ¬𝑞 is true, that is, only when 𝑝 is true 
+and 𝑞 is false. We now show that neither the converse, 𝑞 → 𝑝, nor the inverse, ¬𝑝 →
+¬𝑞, has the same truth value as 𝑝 → 𝑞 for all possible truth values of 𝑝 and 𝑞. Note 
+that when 𝑝 is true and 𝑞 is false, the original conditional statement is false, but the 
+converse and the inverse are both true. The converse and the inverse of a conditional 
+statement are also equivalent, as the reader can verify, but neither is equivalent to the original conditional statement.
+
+Given an if-then statement "if p, then q", we can create three related 
+statements: 
+
+A conditional statement consists of two parts, a hypothesis in the “if” clause 
+and a conclusion in the “then” clause.  For instance, “If it rains, then they will cancel school.” 
+ 
+“It rains, “is the hypothesis.  
+“They will cancel school,” is the conclusion.  
+To form the converse of the conditional statement, interchange the 
+hypothesis and the conclusion.
+ 

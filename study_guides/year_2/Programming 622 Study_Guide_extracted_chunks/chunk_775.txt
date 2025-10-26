@@ -1,0 +1,19 @@
+path from the root to a leaf.  
+9. In an inorder traversal, the binary tree is traversed as follows: (a) Traverse the left subtree; (b) visit 
+the node; (c) traverse the right subtree.  
+10. In a preorder traversal, the binary tree is traversed as follows: (a) Visit the node; (b) traverse the left 
+subtree; (c) traverse the right subtree.  
+11. In a postorder traversal, the binary tree is traversed as follows: (a) Traverse the left subtree; (b) 
+traverse the right subtree; (c) visit the node.  
+12. A binary search tree T is either empty or  
+i. 
+T has a special node called the root node.  
+ii. 
+T has two sets of nodes, LT and RT, called the left subtree and the right subtree of T, respectively.  
+iii. 
+The key in the root node is larger than every key in the left subtree and smaller than every key in 
+the right subtree.  
+iv. 
+LT and RT are binary search trees.  
+13. To delete a node from a binary search tree that has both left and right nonempty subtrees, first its 
+immediate predece

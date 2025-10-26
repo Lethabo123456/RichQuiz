@@ -1,0 +1,41 @@
+1. An atomic formula is a logical expression. 
+o A predicate with all constant arguments is a ground atomic 
+formula. 
+o A proposition is a predicate with no arguments, and therefore is a 
+ground atomic formula. 
+o A predicate with at least one variable argument is a nonground 
+atomic formula. 
+o A literal is either an atomic formula or its negation. 
+ 
+2. If L1 and L2 are logical expressions, then L1 AND L2, L1 OR L2, NOT L1, 
+L1 -> L2, and L1 == L2 are logical expressions. 
+ 
+3. If L1 is a logical expressions, then (A X) L1 is a logical expression. 
+ 
+4. If L1 is a logical expressions, then (E X) L1 is a logical expression. 
+ 
+Quantifiers have the highest precedence in logical expressions. 
+
+5.2 BOUND AND FREE VARIABLES 
+The quantifiers E (there exists) and A (forall) introduce variables into 
+logical expressions. 
+ 
+An occurrence of variable x in a logical expression is bound to the closest 
+enclosing quantifier containing x, either (E x) or (A x). 
+ 
+If an occurrence of x in a logical expression is not bound to any quantifier 
+(because there is no enclosing quantifier containing x) that occurrence of x 
+is free. 
+ 
+Example: 
+ 
+(A x) L1(x) OR (E x) L2(x,y) 
+ 
+The variable x in L1 is bound to the universal quantifier. The variable 
+x in L2 is bound to the existential quantifier. The variable y is free 
+in this expression. 
+ 
+In order for an expression to be *closed*, all of its variables must 
+be bound. Cf. scope in programming languages. A common convention is 
+to say that all variables that are unbound at the outermost nesting 
+level are implicitly universally quantified.

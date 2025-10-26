@@ -1,0 +1,18 @@
+1. Find the location of the smallest element.  
+2. Move the smallest element to the beginning of the unsorted list.  
+  
+Initially, the entire list, list[0]...list[length-1], is the unsorted list. After executing Steps 1 and 2 once, the 
+unsorted list is list[1]...list[length-1]. After executing Steps 1 and 2 a second time, the unsorted list is 
+list[2]...list[length-1], and so on. We can keep track of the unsorted portion of the list and repeat Steps a 
+and b with the help of a for loop as follows:  
+  
+for (index = 0; index < length - 1; index++)  
+{  
+1. Find the location, smallestIndex, of the smallest element in list[index]...list[length - 1].  
+2. Swap the smallest element with list[index]. That is, swap list[smallestIndex] with 
+list[index].  
+}  
+  
+The first time through the loop, we locate the smallest element in list[0]...list[length-1] and swap this 
+smallest element with list[0]. The second time through the loop, we locate the smallest element in 
+list[1]...list[length-1]

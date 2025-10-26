@@ -1,0 +1,29 @@
+The contrast between the two models is quite clear. The linear model fits the data with a line, as 
+expected, and provides a solid forecast for the test data (years after 2000), though it overlooks 
+some of the finer details in both the training and test data. In contrast, the tree model perfectly 
+predicts the training data since it was allowed to grow without complexity restrictions and 
+essentially memorized the dataset. However, when the model encounters data beyond the training 
+range, it simply predicts the last known value. This limitation arises because the tree model cannot 
+extrapolate or make predictions outside the scope of the training data. This issue is common to all 
+tree-based models.
+ 
+Strengths, weaknesses, and parameters As discussed earlier, the parameters that control model 
+complexity in decision trees are the pre-pruning parameters that stop the building of the tree 
+before it is fully developed. Usually, picking one of the pre-pruning strategies—setting either 
+Parameters like max_depth, max_leaf_nodes, or min_samples_leaf are sufficient to prevent 
+overfitting in decision trees. 
+
+Decision trees offer two significant advantages over many of the algorithms we've covered so far: 
+the resulting model is easy to visualize and interpret, especially for smaller trees, and they are 
+completely unaffected by the scaling of the data. Since each feature is processed independently, 
+and the splits do not depend on the scaling of the data, decision trees do not require preprocessing 
+steps such as normalization or standardization. This makes them particularly effective when dealing 
+with features on different scales or a combination of binary and continuous features. 
+However, the main drawback of decision trees is that they are prone to overfitting, even with pre-
+pruning, which leads to poor generalization performance. As a result, ensemble methods are often 
+preferred over single decision trees in most applications. 
+
+Ensemble methods combine multiple machine learning models to create more robust models. 
+While there are several ensemble techniques, two have proven particularly effective for both 
+classification and regression tasks across various datasets, using decision trees as their core 
+components: random forests and gradient boosted decision trees. 

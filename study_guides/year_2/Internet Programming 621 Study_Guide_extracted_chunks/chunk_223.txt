@@ -1,0 +1,54 @@
+, iii) and iv) 
+d) i) and iv) 
+ 
+Answer: b 
+ 
+10. Which among the following is/are not a metacharacter? 
+i)/a 
+ii)/A 
+iii)/b 
+iv)/B 
+a) Only i) 
+b) i) and iii) 
+c) ii), iii) and iv) 
+d) ii) and iv) 
+ 
+Answer: i) 
+ 
+11. How many functions does PHP offer for searching and modifying strings using Perl-
+compatible regular expressions. 
+a) 7 
+b) 8 
+c) 9 
+d) 10 
+ 
+Answer: b 
+ 
+12. What will be the output of the following PHP code? 
+<?php 
+$foods = array("pasta", "steak", "fish", "potatoes"); 
+$food = preg_grep("/^s/", $foods); 
+print_r($food); 
+
+?> 
+a) Array ( [0] => pasta [1] => steak [2] => fish [3] => potatoes ) 
+b) Array ( [3] => potatoes ) 
+c) Array ( [1] => steak ) 
+d) Array ( [0] => potatoes ) 
+ 
+Answer: c 
+ 
+13. Say we have two compare two strings which of the following function/functions can you 
+use? 
+i) strcmp() 
+ii) strcasecmp() 
+iii) strspn() 
+iv) strcspn() 
+a) i) and ii) 
+b) iii) and iv) 
+c) None of the mentioned 
+d) All of the mentioned 
+ 
+Answer: d 
+ 
+14. Which one of the fol

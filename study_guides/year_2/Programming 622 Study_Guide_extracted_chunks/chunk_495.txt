@@ -1,0 +1,14 @@
+e waiting time, the element can be put back into the queue by using the 
+addQueue operation.  
+  
+The addQueue operation inserts the element at the end of the queue. If we perform the deleteQueue 
+operation followed by the addQueue operation for each element of the queue, eventually the front 
+element again becomes the front element. Given that each deleteQueue operation is followed by an 
+addQueue operation, how do we determine that all the elements of the queue have been processed? We 
+cannot use the isEmptyQueue or isFullQueue operations on the queue because the queue will never be 
+empty or full.   
+  
+One solution to this problem is to create a temporary queue. Every element of the original queue is 
+removed, processed, and inserted into the temporary queue. When the original queue becomes empty, 
+all of the elements in the queue are processed. We can then copy the elements from the temporary queue 
+back into the original queue. However, this solution requires us to use extra memo

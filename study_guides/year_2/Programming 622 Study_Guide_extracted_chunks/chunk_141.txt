@@ -1,0 +1,18 @@
+List.rbegin());  //Line 7  
+  
+Recall that the function rbegin (reverse begin) returns a pointer to the last element into a container; it is 
+used to process the elements of a container in reverse. Therefore, vecList.rbegin() + 2 returns a pointer to 
+the third-to-last element into the container vecList. Similarly, the function rend (reverse end) returns a 
+pointer to the first element of a container. The previous statement shifts the elements of the container 
+vecList to the right by two positions. After the statement in Line 7 executes, the container vecList is as 
+follows:  
+ vecList = {5, 6, 5, 6, 8, 3, 40, 36, 98}  
+  
+Example 2-6 shows the effect of the preceding statements using a C++ program. Before discussing Example 
+2-6, let us describe a special type of iterator, called ostream iterators, which work well with the function 
+copy to copy the elements of a container to an output device.  
+  
+ 
+2.1.9  ostream Iterator and Function copy  
+  
+One way to output the contents of a c

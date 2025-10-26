@@ -1,0 +1,40 @@
+* #include <iostream> #include "linkedQueue.h" using namespace std;  
+int main()  
+{  
+linkedQueueType<int> queue;  
+int x, y;  
+queue.initializeQueue();  
+x = 4; y 
+= 5;  
+queue.addQueue(x); 
+queue.addQueue(y); x = 
+queue.front(); 
+queue.deleteQueue(); 
+queue.addQueue(x + 5); 
+queue.addQueue(16); 
+queue.addQueue(x); 
+queue.addQueue(y - 3); 
+cout << "Queue Elements: 
+";  
+while (!queue.isEmptyQueue())  
+{  
+cout << queue.front() << " ";  
+queue.deleteQueue();  
+}  
+cout << endl;  
+return 0;  
+}  
+  
+Sample Run:  
+Queue Elements: 5 9 16 4 2  
+  
+
+233  
+  
+ 
+6.3.4  Queue Derived from the class unorderedLinkedList  
+  
+From the definitions of the functions to implement the queue operations, it is clear that the linked 
+implementation of a queue is similar to the implementation of a linked list created in a forward manner 
+(see Chapter 3). The addQueue operation is similar to the operation insertFirst. Likewise, the operations 
+initializeQueue and initializeList, isEmptyQueue, and isEmptyL

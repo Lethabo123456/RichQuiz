@@ -1,0 +1,31 @@
+to display information to your users. In between a pair of round 
+brackets, you type the text you want people to see. This text goes between quote 
+marks (single or double quotes, but not a mixture of the two). 
+ 
+2.2.1 Confirm and Prompt 
+As well as an alert box, you can have confirm and 
+prompt boxes. Using a confirm box will get you 
+two buttons, OK and Cancel. They are normally 
+used with an IF Statements to detect which of the 
+two buttons was clicked. You will learn about IF 
+Statements in a later section, but the code for a 
+Confirm box is just this: 
+confirm("OK or Cancel?") 
+ 
+Again, the text you want to display goes between quote marks. In a browser, the 
+confirm box looks like this: 
+ 
+Multimedia Resource 
+ 
+http://www.lynda.com/JavaScript-
+tutorials/Creating-your-first-
+JavaScript/81266/87518-4.html  
+
+ 
+18 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+ 
+Figure 2.6 – Confirm Box 
+A prompt box is used when you want some input from the user. The code for a Prompt 
+box is this:

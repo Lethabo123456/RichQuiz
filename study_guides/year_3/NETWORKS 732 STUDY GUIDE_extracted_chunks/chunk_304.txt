@@ -1,0 +1,39 @@
+Z-Wave is a smart home protocol that provides two basic types of functions: signalling to manage 
+wireless connections, and control to transmit data and commands between devices. A Z-Wave 
+network controller, called a hub, receives commands from a smartphone or computer and relays 
+the commands to various smart devices on its network. Devices on the network are identiﬁed by 
+a 1-byte Node ID, and the entire network has a 4-byte Network ID. Multiple Z-Wave networks can 
+coexist in the same space because the Network ID prevents communication outside of a device’s 
+Z-Wave network. Z-Wave transmissions oﬀer a range of up to 100 m per hop, and they can tolerate 
+up to four hops through repeaters. Z-Wave–controlled devices can serve as repeaters on a Z-Wave 
+mesh network. 
+ 
+Figure 6.4 Z-Wave (Albert, 2025) 
+ 
+Bluetooth, deﬁned by IEEE 802.15.1 speciﬁcations, is named after a medieval king of Denmark 
+named Harald Bluetooth, who fought to merge several Danish tribes under a single government. 
+Like its namesake, Bluetooth technology unites separate entities such as mobile devices, PCs, and 
+accessories under a single communications standard. Bluetooth operates in the radio band of 2.4 
+GHz to 2.4835 GHz and hops between frequencies within that band (up to 1600 hops/sec) to help 
+reduce interference. Most Bluetooth devices require close proximity to form a connection, with 
+the exact distance requirements depending on the class of Bluetooth device 
+IR (infrared) technology has found new life in the world of IoT, where it’s used primarily to collect 
+data through various sensors. IR is also commonly used in remote controls such as the one that 
+comes with the projector shown in Figure 6.5. Infrared standards are deﬁned by the IrDA (Infrared 
+Data Association) at the website irda.org. IR exists just below the spectrum that is visible to the 
+human eye, with longer wavelengths than red light. Because it’s a form of light, IR requires a 
+nearly unobstructed LOS (line of sight) between the transmitter and receiver, some devices use a 
+scatter mode that reﬂects IR signals oﬀ nearby surfaces to circumvent some obstacles, but IR 
+cannot pass through these obstacles. This limitation can be used to increase the security of IR 
+transmissions. An LED in a device creates the invisible radiation, which is then detected by a 
+sensor’s semiconductor material that converts the signals into electrical current. IR sensors are 
+used to collect information such as the following: 
+
+• Presence or level of liquid, based on the quality of a reﬂection 
+• Variations in reﬂections from skin caused by variations in blood ﬂow, which can be used 
+to monitor heart rate 
+• Proximity to the device, which can trigger an action such as steering a vehicle away from 
+an obstacle 
+• Commands from a control device, such as a game or TV remote control 
+ 
+Figure 6.5 (West, 2002)  

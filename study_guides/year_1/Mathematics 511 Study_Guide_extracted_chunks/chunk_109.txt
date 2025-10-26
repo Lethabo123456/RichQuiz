@@ -1,0 +1,24 @@
+1.6.2 Methods of Proving Theorems 
+Proving mathematical theorems can be difficult. To construct proofs we 
+need all available ammunition, including a powerful battery of different 
+proof methods. These methods provide the overall approach and strategy of 
+proofs. Understanding these methods is a key component of learning how 
+to read and construct mathematical proofs. One we have chosen a proof 
+method, we use axioms, definitions of terms, previously proved results, and 
+rules of inference to complete the proof.  
+To prove a theorem of the form ∀𝑥(𝑃(𝑥) → 𝑄(𝑥)), our goal is to show that 
+𝑃(𝑐) → 𝑄(𝑐)is true, where 𝑐 is an arbitrary element of the domain, and 
+then apply universal generalization. In this proof, we need to show that a 
+conditional statement is true. Because of this, we now focus on methods that 
+show that conditional statements are true. Recall that 𝑝 → 𝑞 is true unless 
+𝑝 is true but 𝑞 is false. Note that to prove the statement 𝑝 → 𝑞, we need 
+only show that 𝑞 is true if 𝑝 is true. The following discussion will give the 
+most common techniques for proving conditional statements. Later we will 
+discuss methods for proving other types of statements.  
+
+When you read proofs, you will often find the words “obviously” or “clearly.” These 
+words indicate that steps have been omitted that the author expects the reader 
+to be able to fill in. Unfortunately, this assumption is often not warranted and 
+readers are not at all sure how to fill in the gaps. We will assiduously try to avoid using 
+these words and try not to omit too many steps. However, if we included all steps in proofs, our proofs would often be 
+excruciatingly long.

@@ -1,0 +1,51 @@
+g member variables of 
+the formal parameter. Its definition is as follows:  
+  
+template <class Type>  
+stackType<Type>::stackType(const stackType<Type>& otherStack)  
+{  
+list = NULL;  
+copyStack(otherStack);  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end copy constructor  
+  
+5.2.10 Overloading the Assignment Operator (=)  
+  
+Recall that for classes with pointer member variables, the assignment operator must be explicitly 
+overloaded. The definition of the function to overload the assignment operator for the class stackType is 
+as follows:  
+  
+template <class Type>  
+const stackType<Type>& stackType<Type>::operator=(const stackType<Type>& otherStack)  
+{  
+ 
+if (this != &otherStack)   
+  
+  
+  
+//avoid self-copy  
+copyStack(otherStack);  
+return *this;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end operator=  
+  
+5.2.11 Stack Header File  
+  
+Now that you know how to implement the stack operations, you can put the definitions of the class and 
+the functions to implement the stack operations together to c

@@ -1,0 +1,25 @@
+Chapter Four: High Availability and Disaster Recover 
+ 
+4.1 Introduction 
+High availability and fault tolerance are essential design principles for modern networks. High
+availability minimizes unplanned downtime by using redundant components like multiple
+servers or network interfaces. Fault tolerance ensures that if one component fails, access to
+resources remains uninterrupted.
+
+A mirrored hard drive setup, for instance, keeps data accessible even if one drive fails. In
+networks, multiple paths between devices provide failover or load balancing to sustain uptime.
+This chapter explores how redundant hardware, network paths, and cluster configurations
+maintain availability. It also introduces disaster recovery strategies—hot, warm, cold, and cloud
+sites—and key metrics like MTTR, MTBF, RTO, and RPO for recovery planning. You'll also review
+backup best practices for device configurations and system states.
+Understanding these concepts is crucial for building and maintaining reliable IT environments.
+
+4.1.1 Load Balancing 
+Load balancing is a technique used to distribute workloads across multiple servers, network links, or 
+devices to improve performance and reliability. For instance, a busy website might run on 20 
+servers that appear as a single site, ensuring fast access for users. In networks, redundant links can 
+balance traﬃc and maximize bandwidth. This is like having several roads to the same destination—
+if one is congested, another can be used. 
+While load balancing improves availability and speed, it also adds complexity. Proper conﬁguration 
+and maintenance require technical expertise, and errors can lead to poor performance or 
+downtime. 

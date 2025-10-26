@@ -1,0 +1,27 @@
+are of the order O(nlog2n).  
+  
+
+297  
+  
+ 
+8.7  
+Quicksort: Array-Based Lists  
+  
+In the previous section, we noted that the lower bound on comparison-based algorithms is O(nlog2n). The 
+sorting algorithms selection sort and insertion sort, discussed earlier in this chapter, are O(n2). In this and 
+the next two sections, we discuss sorting algorithms that are usually of the order O(nlog2n). The first 
+algorithm is quicksort.  
+  
+Quicksort uses the divide-and-conquer technique to sort a list. The list is partitioned into two sublists, and 
+the two sublists are then sorted and combined into one list in such a way so that the combined list is 
+sorted. Thus, the general algorithm is as follows:  
+  
+if (the list size is greater than 1)  
+{  
+a. Partition the list into two sublists, say lowerSublist and upperSublist.  
+b. Quicksort lowerSublist.  
+c. Quicksort upperSublist.  
+d. Combine the sorted lowerSublist and sorted upperSublist.  
+}  
+  
+After partitioning the list into two sublis

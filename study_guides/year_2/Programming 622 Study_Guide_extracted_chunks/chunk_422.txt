@@ -1,0 +1,46 @@
+ude 
+"myStack.h"  
+using namespace std;  
+  
+template <class Type>  
+void mystery(stackType<Type>& s, stackType<Type>& t); int 
+main()  
+{  
+stackType<string> s1; stackType<string> 
+s2;  
+  
+string list[] = {"Winter", "Spring", "Summer", "Fall","Cold", "Warm", "Hot"};  
+  
+for (int i = 0; i < 7; i++) s1.push(list[i]);  
+  
+mystery(s1, s2);  
+  
+while (!s2.isEmptyStack())  
+{ cout << s2.top() << " "; 
+s2.pop();  
+}  
+cout << endl;  
+
+215  
+  
+}  
+  
+template <class Type>  
+void mystery(stackType<Type>& s, stackType<Type>& t)  
+{  
+while (!s.isEmptyStack())  
+{  
+t.push(s.top());  
+s.pop();  
+}  
+}  
+  
+7. What is the effect of the following statements? If a statement is invalid, explain why it is invalid. The 
+classes stackADT, stackType, and linkedStackType are as defined in this chapter. a. stackADT<int> 
+newStack;  
+b. stackType<double> sales(-10);  
+c. stackType<string> names;  
+d. linkedStackType<int> numStack(50);  
+  
+8. What is the output of the following program?  
+#include <io

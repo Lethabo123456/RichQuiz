@@ -1,0 +1,23 @@
+rator first2);  
+  
+The parameter first1 specifies the position from which to begin copying the elements; the parameter last 
+specifies the end position. The parameter first2 specifies where to copy the elements. Therefore, the 
+parameters first1 and last specify the source, and the parameter first2 specifies the destination. Note that 
+the elements within the range first1...last-1 are copied.  
+  
+The definition of the function template copy is contained in the header file algorithm. Thus, to use the 
+function copy, the program must include the statement  
+  
+#include <algorithm>  
+  
+The function copy works as follows. Consider the following statement:  
+  
+int intArray[] = {5, 6, 8, 3, 40, 36, 98, 29, 75};  //Line 1 vector<int> 
+vecList(9);     //Line 2  
+  
+This statement in Line 1 creates the array intArray of nine components—that is,  
+ intArray = {5, 6, 8, 3, 40, 36, 98, 29, 75}  
+  
+Here intArray[0] = 5, intArray[1] = 6, and so on.  
+  
+The statement in Line 2 creates an empty

@@ -1,0 +1,22 @@
+$missingFields[] = $requiredField;   
+                     }   
+            }   
+if ( $missingFields ) {   
+                displayForm( $missingFields );   
+} else {   
+                 displayThanks();   
+             }   
+}   
+function displayForm( $missingFields ) {   
+          ?>   
+           <h1>Membership Form</h1>   
+           <?php if ( $missingFields ) { ?>   
+                         <p class=”error”>There were some problems with the form you submitted.   
+                                                 Please complete the fields highlighted below and click Send Details to                            
+Resend the form.</p>   
+            <?php } else { ?>   
+                          <p>Thanks for choosing to join The Widget Club. To register, please                                            
+fill in your details below and click Send Details. Fields marked with an                           asterisk (*) 
+are required.</p>   
+            <?php } ?>   
+<form action=”r

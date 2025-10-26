@@ -1,0 +1,121 @@
+//Line 4  
+{   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 5 vector<int> 
+intList;   
+  
+  
+  
+  
+  
+//Line 6  
+  
+intList.push_back(13);   
+  
+  
+  
+  
+//Line 7 intList.push_back(75);  
+ 
+  
+  
+  
+  
+//Line 8 intList.push_back(28);   
+  
+  
+ 
+ 
+  
+//Line 9  
+ 
+intList.push_back(35);   
+  
+  
+  
+  
+//Line 10  
+  
+  
+  
+  
+cout << "Line 11: List Elements: ";     
+  
+  
+//Line 11 for 
+(int i = 0; i < 4; i++)     
+  
+  
+  
+//Line 12 cout << 
+intList[i] << " ";   
+  
+  
+  
+//Line 13  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+//Line 14  
+  
+for (int i = 0; i < 4; i++)   
+  
+  
+  
+  
+//Line 15 
+intList[i] *= 2;    
+  
+  
+  
+  
+//Line 16 cout << 
+"Line 17: List Elements: ";   
+  
+  
+  
+//Line 17  
+  
+for (int i = 0; i < 4; i++)   
+  
+  
+  
+  
+//Line 18 cout 
+<< intList[i] << " ";   
+  
+  
+  
+//Line 19 cout << endl;   
+ 
+  
+  
+  
+  
+  
+//Line 20  
+  
+ 
+vector<int>::iterator listIt;     
+  
+  
+  
+//Line 21  
+  
+TABLE 2-4: Functions to determine the size of a vector container  
+
+60  
+  
+ 
+cout << "L

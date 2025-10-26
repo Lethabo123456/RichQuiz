@@ -1,0 +1,24 @@
+2.2 Polymorphism 
+There are two powerful aspects to inheritance. One is code reuse. When you create a ListBox 
+class, you're able to reuse some of the logic in the base (Window) class. 
+What is arguably more powerful, however, is the second aspect of inheritance: polymor-
+phism. Poly means many and morph means form. Thus, polymorphism refers to being able 
+to use many forms of a type without regard to the details. 
+ 
+When the phone company sends your phone a ring signal, it does not know what type of 
+phone is on the other end of the line. You might have an old-fashioned Western Electric phone 
+that energizes a motor to ring a bell, or you might have an electronic phone that plays digital 
+music. 
+As far as the phone company is concerned, it knows only about the "base type" phone and 
+expects that any "instance" of this type knows how to ring. When the phone company tells 
+your phone to ring, it simply expects the phone to "do the right thing." Thus, the phone com-
+pany treats your phone polymorphically. 
+
+2.2.1 Creating Polymorphic Types 
+Because a ListBox is-a Window and a Button is-a Window, we expect to be able to use 
+either of these types in situations that call for a Window. For example, a form might want to 
+keep a collection of all the instances of Window it manages so that when the form is opened, 
+it can tell each of its Windows to draw itself. For this operation, the form does not want to 
+know which elements are list boxes and which are buttons; it just wants to tick through its 
+collection and tell each to "draw." In short, the form wants to treat all its Window objects 
+polymorphically.

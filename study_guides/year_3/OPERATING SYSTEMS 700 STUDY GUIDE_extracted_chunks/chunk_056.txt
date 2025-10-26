@@ -1,0 +1,50 @@
+2.3. Paged Memory Allocation 
+ 
+Paged memory allocation is based on the concept of dividing jobs into units of equal size. 
+Each unit is called a page. Some operating systems choose a page size that is the exact same 
+size as a section of main memory, which is called a page frame. Likewise, the sections of a 
+magnetic disk are called sectors or blocks. The paged memory allocation scheme works quite 
+efficiently when the pages, sectors, and page frames are all the same size. The exact size of 
+the number of bytes that can be stored in each of them is usually determined by the disk’s 
+size. Therefore, one sector will hold one page of job instructions (or data) and will fit into a 
+single page frame of memory; but because this is the smallest addressable chunk of disk 
+storage, it is not subdivided, even for very tiny jobs. 
+Before executing a program, a basic Memory Manager prepares it by 
+ 
+1. determining the number of pages in the program, 
+2. locating enough empty page frames in main memory, 
+3. Loading all the program’s pages into those frames. 
+ 
+When the program is initially prepared for loading, its pages are in logical sequence, the first 
+pagescontain the first instructions of the program, and the last page has the last instructions. We 
+refer to the program’s instructions as “bytes” or “words.” 
+The loading process is different from the schemes because the pages do not have to be 
+contiguous, loaded in adjacent memory blocks. In fact, each page can be stored in any 
+available page frame anywhere in main memory. 
+The primary advantage of storing programs in non-contiguous page frames is that main 
+memory is used more efficiently, because an empty page frame can be used by any page of 
+any job. In addition,the compaction scheme used for relocatable partitions is eliminated 
+because there is no external fragmentation between page frames. 
+
+However, with every new solution comes a new problem. Because a job’s pages can be 
+located anywhere in main memory, the Memory Manager now needs a mechanism to keep 
+track of them, and this means enlarging the size, complexity, and overhead of the operating 
+system software. 
+
+The simplified example in Figure 2.5 shows how the Memory Manager keeps track of a 
+program that is four pages long. To simplify the arithmetic, we have arbitrarily set the page 
+size at 100 bytes. Job 1 is350 bytes long and is ready for execution. The Page Map Table for 
+the first job is shown laterin Table 3.2. 
+ 
+Notice in Figure 2.5 that the last page frame (Page Frame 11) is not fully utilized because 
+Page 3 is less than 100 bytes, the last page uses only 50 of the 100 bytes available. In fact, 
+very few jobs perfectly fill all the pages, so internal fragmentation is still a problem, but only 
+in the job’s last page frame. 
+ 
+Figure 2.5 has seven free page frames; therefore, the operating system can accommodate 
+an incoming job of up to 700 bytes because it can be stored in the seven empty page frames. 
+But a job that is larger than 700 bytes cannot be accommodated until Job 1 ends its 
+execution and releases the four-page frames it occupies. Any job larger than 1100 bytes will 
+never fit into the memory of this tiny system. Therefore, although paged memory allocation 
+offers the advantage of non- contiguous storage, it still requires that the entire job be stored 
+in memory during its execution. 

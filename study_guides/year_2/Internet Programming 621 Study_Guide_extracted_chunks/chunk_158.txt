@@ -1,0 +1,23 @@
+quare root of 9 is: 3. ” This 
+string value is then displayed in the Web page using the echo() statement. Finally, the engine moves 
+to the next line of code, and displays the “ All done! ” message.  
+  
+  
+ 
+Figure 6.1  
+  
+6.4 Working With Variable Functions  
+When you include a function call in your code, most of the time you will know the name of the 
+function  
+you want to call. However, sometimes it is useful to be able to store the name of a function in 
+a string variable, and use that variable instead of the function name when calling a function. 
+Here is an example:  
+  
+$squareRoot = “sqrt”;  
+
+77  
+echo “The square root of 9 is: “ . $squareRoot( 9 ) . “. < br/ > ”; 
+echo “All done! < br/ > ”;  
+As you can see, the first line of code stores the function name, “ sqrt ”, as a string in the 
+$squareRoot variable. This variable is then used in place of the function name on the second line. 
+The example above is fairly trivial, but it shows how the concept works. Here is a slightl

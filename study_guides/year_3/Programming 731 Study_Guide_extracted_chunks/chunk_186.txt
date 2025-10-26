@@ -1,0 +1,53 @@
+4.7 Understanding static Keyword   
+   
+There will be times when you will want to define a class member that will be used independently of 
+any object of that class. Normally a class member must be accessed only in conjunction with an 
+object of its class. However, it is possible to create a member that can be used by itself, without 
+reference to a specific instance. To create such a member, precede its declaration with the keyword 
+static. When a member is declared static, it can be accessed before any objects of its class are 
+created, and without reference to any object. You can declare both methods and variables to be 
+static. The most common example of a static member is main( ). main( ) is declared as static because 
+it must be called before any objects exist. Instance variables declared as static are, essentially, global 
+variables. When objects of its class are declared, no copy of a static variable is made. Instead, all 
+instances of the class share the same static variable. Methods declared as static have several 
+restrictions:    
+
+  They can only call other static methods. They must only access 
+static data 
+ They cannot refer to this or super in any way. (The keyword super relates to inheritance and is 
+described in the next topic.)
+If you need to do computation in order to initialize your static variables, you can declare a static 
+block which gets executed exactly once, when the class is first loaded.The following example shows 
+a class that has a static method, some static variables, and a static initialization block:   
+   
+// Demonstrate static variables, methods, 
+and  blocks. class UseStatic {  
+ static 
+int 
+a 
+= 
+3;  
+             static int b;   
+static void meth(int x) {  
+System.out.println("x = " + x);   
+System.out.println("a = " + a);   
+System.out.println("b = " + b);   
+}   
+   
+static {   
+System.out.println("Static 
+block  
+initialized."); b = a * 4;   
+   
+}   
+public static void main(String args[])   
+     
+{ meth(42);   
+}   
+   
+} 
+  
+As soon as the UseStatic class is loaded, all of the static statements are run. First, a is set to 3, then 
+the static block executes (printing a message), and finally, b is initialized to a * 4 or 12. Then main( ) 
+is called, which calls meth( ), passing 42 to x. The three println( ) statements refer to the two static 
+variables a and b, as well as to the local variable x. 

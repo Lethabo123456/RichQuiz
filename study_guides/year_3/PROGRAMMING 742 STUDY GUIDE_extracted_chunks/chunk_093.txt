@@ -1,0 +1,112 @@
+2.6.4 An implementing class is free to mark any or all of the methods that implement the interface 
+as virtual. Derived classes can override or provide new implementations. For example, a Docu-
+ment class might implement the IStorable interface and mark the Read() and Write() methods 
+as virtual. The Document might Read() and Write() its contents to a File type. The developer 
+might later derive new types from Document, such as a Note or EmailMessage type, and he 
+might decide that Note will read and write to a database rather than to a file. 
+ 
+Example 2.6-2 strips down the complexity of Example 2.6-2 and illustrates overriding 
+an interface implementation. The Read() method is marked as virtual and implemented by 
+Document. Read() is then overridden in a Note type that derives from Document. 
+
+using System;
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.Threading; 
+ 
+namespace Examples 
+{ 
+    interface IStorable 
+    { 
+        void Read(); 
+        void Write(); 
+    } 
+    // Simplify Document to implement only IStorable 
+    public class Document : IStorable 
+    { 
+        // the document constructor 
+        public Document(string s) 
+        { 
+            Console.WriteLine( 
+            "Creating document with: {0}", s); 
+        } 
+        // Make read virtual 
+        public virtual void Read() 
+        { 
+            Console.WriteLine( 
+            "Document Read Method for IStorable"); 
+        } 
+        // NB: Not virtual! 
+        public void Write() 
+        { 
+            Console.WriteLine( 
+            "Document Write Method for IStorable"); 
+        } 
+    } 
+    // Derive from Document 
+    public class Note : Document 
+    { 
+        public Note(string s) : 
+            base(s) 
+        { 
+            Console.WriteLine( 
+            "Creating note with: {0}", s); 
+        } 
+        // override the Read method 
+        public override void Read() 
+        { 
+            Console.WriteLine( 
+            "Overriding the Read method for Note!"); 
+        } 
+        // implement my own Write method 
+        public new void Write() 
+        { 
+            Console.WriteLine( 
+            "Implementing the Write method for Note!"); 
+        } 
+    } 
+    public class Tester 
+    { 
+        static void Main() 
+        { 
+            // create a document object 
+            Document theNote = new Note("Test Note"); 
+ 
+            IStorable isNote = theNote as IStorable; 
+if (isNote != null)
+            { 
+                isNote.Read(); 
+                isNote.Write(); 
+            } 
+            Console.WriteLine("\n"); 
+            // direct call to the methods 
+            theNote.Read(); 
+            theNote.Write(); 
+            Console.WriteLine("\n"); 
+            // create a note object 
+            Note note2 = new Note("Second Test"); 
+            IStorable isNote2 = note2 as IStorable; 
+            if (isNote != null) 
+            { 
+                isNote2.Read(); 
+                isNote2.Write(); 
+            } 
+            Console.WriteLine("\n"); 
+            // directly call the methods 
+            note2.Read(); 
+            note2.Write(); 
+        } 
+    } 
+} 
+ 
+OUTPUT: 
+ 
+In this example, Document implements a simplified IStorable interface (simplified to make 
+the example clearer): 
+   interface IStorable 
+    { 
+        void Read(); 
+        void Write(); 
+    }

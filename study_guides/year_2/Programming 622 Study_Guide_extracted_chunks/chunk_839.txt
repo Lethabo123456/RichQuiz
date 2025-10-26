@@ -1,0 +1,12 @@
+hm is similar to traversing a binary tree level-by-level, and so 
+the root node (which has no predecessor) is visited first. Therefore, in the breadth-first topological 
+ordering, we first find a vertex that has no predecessor vertex and place it first in the topological ordering. 
+We next find the vertex, say v, all of whose predecessors have been placed in the topological ordering and 
+place v next in the topological ordering. To keep track of the number of vertices of a vertex, we use the 
+array predCount. Initially, predCount[j] is the number of predecessors of the vertex vj. The queue used to 
+guide the breadth-first traversal is initialized to those vertices vk such that predCount[k] is 0. In essence, 
+the general algorithm is as follows:  
+1. Create the array predCount and initialize it so that predCount[i] is the number of predecessors of 
+the vertex vi.  
+2. Initialize the queue, say queue, to all those vertices vk so that predCount[k] is 0. (Clearly, queue is 
+not empty becau

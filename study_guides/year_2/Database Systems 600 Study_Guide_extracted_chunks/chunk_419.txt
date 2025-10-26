@@ -1,0 +1,20 @@
+.4  DBMS Performance Tuning 
+ 
+DBMS performance tuning includes global tasks such as managing the DBMS processes in primary 
+memory (allocating memory for caching purposes) and managing the structures in physical storage 
+(allocating space for the data files). 
+Fine-tuning the performance of the DBMS also includes applying several practices examined in 
+the previous section. DBMS performance tuning at the server end focuses on setting the parameters 
+used for: 
+ 
+Data cache. The data cache size must be set large enough to permit as many data requests as 
+possible to be serviced from the cache.  
+ 
+SQL cache. The SQL cache stores the most recently executed SQL statements (after the SQL 
+statements have been parsed by the optimizer).  
+ 
+Sort cache. The sort cache is used as a temporary storage area for ORDER BY or GROUP BY 
+operations, as well as for index-creation functions.  
+ 
+Optimizer mode.  
+From the performance point of view, it would be optimal to have the entire database st

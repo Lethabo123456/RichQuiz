@@ -1,0 +1,21 @@
+display its contents. Even though $test_var is a floating-point variable 
+again, it now contains the whole number 8. Finally, after converting $test_var to a Boolean, it 
+contains the value true  
+
+29  
+(which PHP displays as 1 ). This is because PHP converts a non-zero number to the Boolean value 
+‘True’.  
+  
+2.8 Changing By Type Casting  
+You can also cause a variable’s value to be treated as a specific type using a technique known as 
+type casting. This involves placing the name of the desired data type in parentheses before the 
+variable’s name. Note that the variable itself remains unaffected; this is in contrast to settype() , 
+which changes the variable’s type.  
+In the following example, a variable’s value is cast to various different types at the time that the 
+value is displayed:  
+  
+$test_var = 8.23;  
+echo $test_var . “ < br / > ”; // Displays “8.23” echo 
+(string) $test_var . “ < br / > ”; // Displays “8.23” 
+echo (int) $test_var . “ < br / > ”; // Displays “8” echo 
+(f

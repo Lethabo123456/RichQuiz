@@ -1,0 +1,24 @@
+Once a task has been created, it is scheduled for execution by an object of type Timer. The 
+constructors for Timer are shown here.
+  
+Timer( )   
+  
+Timer(boolean DThread)  
+  
+The first version creates a Timer object that runs as a normal thread. The second uses a daemon thread if 
+DThread is true. A daemon thread will execute only as long as the rest of the program continues to 
+execute. The methods defined by Timer are shown Table 1.2:  
+  
+Table 1.2: The Methods Defined by Timer 
+Method - 
+Void cancel() 
+Void schedule(TimerTask, Ttask, long wait)
+Void schedule(TimerTask TTask, long wait, long repeat)
+Void schedule(TimerTask Task, Date targetTime)
+Void schedule(TimerTask TTask, Date targetTime, long repeat)
+Void scheduleAtFixedRate(TimerTask TTask, long wait, long repeat)
+ 
+Once a Timer has been created, you will schedule a task by calling schedule( ) on the Timer that you 
+created. As Table 1.2 above shows, there are several forms of schedule( ) which allow you to schedule 
+tasks in a variety of ways. If you create a non-daemon task, then you will want to call cancel( ) to end the 
+task when your program ends. If you don’t do this, then your program may hang for a period of time. 

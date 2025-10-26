@@ -1,0 +1,27 @@
+e the function compares two numbers, it follows that 
+this function has two parameters and that both parameters are numbers. Let us 
+assume that the data type of these numbers is floating-point (decimal)—say, double. 
+Because the larger number is of type double, the function’s data type is also double. 
+Let us name this function larger. The only thing you need to complete this function is 
+the body of the function. Thus, following the syntax of a function, you can write this 
+function as follows: 
+ 
+ 
+ 
+double larger(double x, double y) 
+ {  
+          double max;  
+                if (x >= y)  
+
+96 | P a g e  
+ 
+                   max = x;  
+                else  
+                    max = y; 
+          return max;  
+} 
+Note that the function larger uses an additional variable max (called a local declaration, 
+in which max is a variable local to the function larger). Figure below describes various 
+parts of the function larger. 
+ 
+Suppose that num, num1, and num2 are double variables.

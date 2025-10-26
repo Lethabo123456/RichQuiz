@@ -1,0 +1,26 @@
+21   
+   
+              <input type=”submit” name=”submitButton” id=”submitButton” value=”Submit Form” />   
+   
+   
+   
+   
+   
+   
+• 
+A reset button — This type of button resets all form fields back to their initial values (often 
+empty). The value attribute contains the button label text:   
+   
+               <label for=”resetButton”>A reset button</label>   
+               <input type=”reset” name=”resetButton” id=”resetButton”  value=”Reset Form” />   
+   
+• 
+A file select field — This allows the users to choose a file on their hard drive for uploading to 
+the server. The value attribute is usually ignored by the browser:   
+   
+               <label for=”fileSelectField”>A file select field</label>   
+               <input type=”file” name=”fileSelectField” id=”fileSelectField” value=”” />   
+   
+• 
+A hidden field — This type of field is not displayed on the page; it simply stores the text value 
+specified in the value attribute. Hidden fields are great for passing additional i

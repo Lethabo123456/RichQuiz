@@ -1,0 +1,37 @@
+7.3 Ad Supported Apps 
+The app market is very price sensitive. Free apps get downloaded at a much greater rate than any paid 
+app. However, it’s hard to make money with a totally free app. That is why, although many apps 
+appear to be free, they often have a way to make money built into the app. The most common 
+approach to making money from a free app is to embed ads within the app screens. Ads take up screen 
+real estate, so you will have to plan and code the user interface with this in mind. 
+While there are several different companies that provide the ability to embed ads in your apps, AdMob 
+from Google is well integrated with Android and therefore probably the easiest for the beginner. 
+AdMob is included in Firebase. Firebase is a collection of backend development tools. Once you 
+become adept at developing, learning more on how to use the tools provided in Firebase to enhance 
+your app would be a good idea. Because setting up for supporting ads in your app mostly involves 
+registering for the ads with either Google or Apple, as well as submitting bank account information 
+(so you can be paid) and a W-9 tax form (so you can pay taxes on your ad revenue), it isn’t feasible to 
+have a tutorial in this chapter on setting up ads. Instead, here are the basic steps you need to follow 
+to embed ads in an Android app, after you have properly registered for AdMob with Google: 
+
+1. Open the Firebase assistant by clicking Tools > Firebase. 
+2. Find AdMob in the list of services and click Add a banner to your app. 
+3. Follow the instructions carefully. 
+You can also use AdMob in an iOS app, either directly using the SDK or with Firebase 
+(https://firebase.google.com/docs/admob/ios/quick-start).
+
+Download the SDK from 
+
+https://developers.google.com/mobile-ads-sdk/download#downloadios. The process to add an ad to 
+an iOS project is a bit lengthy to discuss here, but in essence you add the AdSupport Framework from 
+the unzipped download file to your project and then add the ad view where needed to your xib files. 
+A complete description of the process is located at https://developers.google.com/mobile-ads- 
+sdk/docs. 
+
+To use AdMob to make money from ads on your app, as well as test the ads, you need to sign up with 
+AdMob (http://www.google.com/ads/admob). Ads generate money  for you only when they are 
+clicked. Each click generates only a few cents, so you need a lot of clicks to make any real income. For 
+example, we have a free card game on Android that is ad supported. It has been downloaded by nearly 
+a thousand people. The money it generates is measured in dollars per month. In contrast, we have an 
+app that costs $1.99. It gets only a couple of downloads per month but generates as much money as 
+the more frequently downloaded and ad-supported app.

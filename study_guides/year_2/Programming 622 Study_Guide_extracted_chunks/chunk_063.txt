@@ -1,0 +1,28 @@
+that the instance variables of a class are initialized, you use constructors. There are two types of 
+constructors: with parameters and without parameters. The constructor without parameters is called the 
+default constructor.  
+  
+Constructors have the following properties:  
+  
+The name of a constructor is the same as the name of the class.  
+A constructor, even though it is a function, has no type. That is, it is neither a value-returning 
+function nor a void function.  
+ A class can have more than one constructor. However, all constructors of a class have the same 
+name.  
+ If a class has more than one constructor, the constructors must have different formal parameter 
+lists. That is, either they have a different number of formal parameters or, if the number of formal 
+parameters is the same, the data type of the formal parameters, in the order you list, must differ 
+in at least one position.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+30  
+  
+ Constructors execute automatically when a class o

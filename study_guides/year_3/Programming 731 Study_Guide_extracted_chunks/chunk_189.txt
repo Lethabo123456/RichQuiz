@@ -1,0 +1,38 @@
+Note: It is illegal to refer to any instance variables inside of a static method.   
+   
+Here is the output of the program:    
+Static block initialized.  
+x = 42   
+a = 3  b 
+= 12   
+Outside of the class in which they are defined, static methods and variables can be used 
+independently of any object. To do so, you need only specify the name of their class followed by the 
+dot operator. For example, if you wish to call a static method from outside its class, you can do so 
+using the following general form:   
+   
+classname.method  ( )   
+ 
+Here, classname is the name of the class in which the static method is declared. As you can see, this 
+format is similar to that used to call non-static methods through objectreference variables. A static 
+variable can be accessed in the same way—by use of the dot operator on the name of the class. This 
+is how Java implements a controlled version of global methods and global variables. Here is an 
+example. Inside main( ), the static method callme( )  and the static variable b are accessed outside 
+of their class. 
+
+class StaticDemo {   
+   
+static int a = 42;   
+static int b = 99; 
+static void callme() {   
+System.out.println("a = " + a);   
+}   
+}   
+class StaticByName {  public static 
+void main(String args[]) {   
+StaticDemo.callme();   
+System.out.println("b = " + StaticDemo.b);   
+}   
+}   
+Here is the output of this program:   
+a = 42 b 
+= 99 

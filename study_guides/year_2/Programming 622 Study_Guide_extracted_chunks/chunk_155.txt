@@ -1,0 +1,44 @@
+t. These iterators are provided for reading data from an input stream. Suppose inputIterator is an 
+input iterator. Table 2-9 describes the operations on inputIterator.  
+  
+ 
+ 
+ 
+ 
+
+73  
+  
+TABLE 2-9: Operations on an input iterator  
+  
+  
+2.2.1.2 Output Iterators  
+  
+Output iterators, with write access, step forward element-by-element. These iterators are typically used 
+for writing data to an output stream. Suppose outputIterator is an output iterator. Table 2-10 describes 
+the operations on outputIterator.  
+  
+  
+ 
+TABLE 2-10: Operations on an output iterator  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+74  
+  
+2.2.1.3 Forward Iterators  
+  
+Forward iterators combine all of the functionality of input iterators and almost all of the functionality of 
+output iterators. Suppose forwardIterator is a forward iterator. Table 2-11 describes the operations on 
+forwardIterator. 4  
+TABLE 2-11: Operations on a forward iterator  
+  
+  
+2.2.1.4 Bidirectional Iterators  
+  
+Bidirectional iterators are forward iterat

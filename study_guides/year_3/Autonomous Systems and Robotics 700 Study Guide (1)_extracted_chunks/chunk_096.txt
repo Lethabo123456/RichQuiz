@@ -1,0 +1,113 @@
+3.3  Dijkstra’s Algorithm 
+Dijkstra’s Algorithm is a graph search algorithm that finds the shortest path from a source node 
+to all other nodes in a weighted graph with non-negative edge weights. Developed by Edsger 
+Dijkstra in 1956, it's one of the most fundamental algorithms in computer science and forms the 
+backbone of many routings and pathfinding systems. The algorithm maintains a set of unvisited 
+nodes and continuously selects the unvisited node with the smallest known distance from the 
+source. It then examines all neighbours of this node, updating their distances if a shorter path is 
+found through the current node. 
+
+This algorithm can be summarised with 3 key points:  
+1. Initialise distances to all nodes as infinity, except the source (distance = 0)  
+2. Add all nodes to an unvisited set  
+3. While unvisited nodes remain:  
+a. Select the unvisited node with minimum distance 
+b. For each neighbour, calculate the distance through the current node 
+c. Update neighbour's distance if a shorter path is found 
+d. Mark the current node as visited 
+
+Here’s a basic implementation of Dijkstra’s algorithm: 
+def dijkstra(graph, start): 
+    """ 
+    Basic implementation of Dijkstra's algorithm 
+     
+    Args: 
+        graph: Dictionary where keys are nodes and values are dictionaries 
+               of neighboring nodes with their weights 
+               Example: {'A': {'B': 1, 'C': 4}, 'B': {'A': 1, 'C': 2}, ...} 
+
+        start: Starting node 
+     
+    Returns: 
+        distances: Dictionary of shortest distances from start to each node 
+        previous: Dictionary to reconstruct paths 
+    """ 
+     
+    # Initialize distances to infinity for all nodes except start 
+    distances = {node: float('inf') for node in graph} 
+    distances[start] = 0 
+ 
+    # Keep track of previous node in optimal path 
+    previous = {node: None for node in graph} 
+     
+    # Keep track of unvisited nodes 
+    unvisited = set(graph.keys()) 
+     
+    while unvisited: 
+        # Find unvisited node with minimum distance 
+        current = min(unvisited, key=lambda node: distances[node]) 
+         
+        # If minimum distance is infinity, remaining nodes are unreachable 
+        if distances[current] == float('inf'): 
+            break 
+         
+        # Remove current node from unvisited 
+        unvisited.remove(current) 
+        # Check all neighbors of current node 
+        for neighbor, weight in graph[current].items(): 
+
+            if neighbor in unvisited: 
+                # Calculate distance through current node 
+                new_distance = distances[current] + weight 
+                 
+                # Update if we found a shorter path 
+                if new_distance < distances[neighbor]: 
+                    distances[neighbor] = new_distance 
+                    previous[neighbor] = current 
+     
+    return distances, previous 
+ 
+def get_shortest_path(previous, start, end): 
+    """ 
+    Reconstruct the shortest path from start to end 
+    """ 
+    path = [] 
+    current = end 
+     
+    # Build path backwards 
+    while current is not None: 
+        path.append(current) 
+        current = previous[current] 
+     
+    # Reverse to get correct order 
+    path.reverse() 
+     
+    # Only return path if it starts with our start node 
+    return path if path[0] == start else [] 
+ 
+
+# Example usage 
+if __name__ == "__main__": 
+    # Example graph represented as adjacency list 
+    graph = { 
+        'A': {'B': 4, 'C': 2}, 
+        'B': {'A': 4, 'C': 1, 'D': 5}, 
+        'C': {'A': 2, 'B': 1, 'D': 8, 'E': 10}, 
+        'D': {'B': 5, 'C': 8, 'E': 2, 'F': 6}, 
+        'E': {'C': 10, 'D': 2, 'F': 3}, 
+        'F': {'D': 6, 'E': 3} 
+    } 
+     
+    # Run Dijkstra's algorithm from node 'A' 
+    distances, previous = dijkstra(graph, 'A') 
+     
+    print("Shortest distances from A:") 
+    for node in sorted(distances.keys()): 
+        print(f"A -> {node}: {distances[node]}") 
+     
+    print("\nShortest paths from A:") 
+    for node in sorted(graph.keys()): 
+        if node != 'A': 
+            path = get_shortest_path(previous, 'A', node) 
+            path_str = ' -> '.join(path) 
+            print(f"A to {node}: {path_str} (distance: {distances[node]})")

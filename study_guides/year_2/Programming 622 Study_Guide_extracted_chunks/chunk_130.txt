@@ -1,0 +1,58 @@
+5, 7, 9, 11, 13}. 
+Notice that the size of the container also increases.  
+  
+The class vector also contains member functions that can be used to find the number of elements currently 
+in the container, the maximum number of elements that can be inserted in a container, and so on. Table 
+2-4 describes some of these operations. (Suppose that vecCont is a vector container.)  
+
+59  
+  
+   
+Example 2-5 illustrates how to use a vector container in a program and how to process the elements into 
+a vector container.  
+  
+EXAMPLE 2-5  
+//*********************************************************** //This 
+program illustrates how to use a vector container in a program.  
+//***********************************************************  
+#include <iostream>     
+  
+  
+  
+  
+//Line 1 #include 
+<vector>   
+  
+  
+  
+  
+  
+  
+//Line 2 using 
+namespace std;   
+  
+  
+  
+  
+  
+//Line 3 int main()  
+ 
+  
+  
+  
+  
+  
+  
+  
+//Line 4  
+{   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 5 vector<int> 
+intList;

@@ -1,0 +1,25 @@
+10. A data type that separates the logical properties from the implementation details 
+is called an abstract data type (ADT). 
+11. Classes were specifically designed in C++ to handle ADTs. 
+12. A precondition is a statement specifying the condition(s) that must be true 
+before the function is called. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+221 | P a g e  
+ 
+1. Define a class counterType to implement a counter. Your class must have a 
+private data member counter of type int and functions to set counter to the value 
+specified by the user, initialize counter to 0, retrieve the value of counter, and 
+increment and decrement counter by one. The value of counter must be 
+nonnegative. 
+ 
+2. Write the definition of a class, swimmingPool, to implement the properties of a 
+swimming pool. Your class should have the instance variables to store the 
+length (in feet), width (in feet), depth (in feet), the rate (in gallons per minute) at 
+which the water is filling the pool, and the rate (in gallons per minute) at which

@@ -1,0 +1,25 @@
+of names or other objects. 
+ 
+ 
+Destructors 
+Like constructors, destructors are also functions. Moreover, like constructors, a 
+destructor does not have a type. That is, it is neither a value-returning function nor a 
+void function. However, a class can have only one destructor, and the destructor has 
+no parameters. The name of a destructor is the tilde character (~), followed by the 
+name of the class. For example, the name of the destructor for the class clockType is: 
+ ~clockType(); 
+ 
+ 
+6.2 INHERITANCE 
+      
+      
+Inheritance lets us create new classes from existing classes. The new classes that we 
+create from the existing classes are called the derived classes; the existing classes 
+
+196 | P a g e  
+ 
+are called the base classes. The derived classes inherit the properties of the base 
+classes. So rather than create completely new classes from scratch, we can take 
+advantage of inheritance and reduce software development complexity.  
+ 
+Each derived class, in turn, can become

@@ -1,0 +1,21 @@
+2.5.2 DiffServ (Differentiated Services) 
+
+Differentiated Services (DiffServ) is a straightforward method for addressing Quality of Service 
+(QoS) concerns by prioritizing traffic at the Layer 3 (network layer) of the OSI model. Unlike other 
+QoS methods that focus only on time-sensitive data like voice and video, DiffServ considers all 
+types of traffic. This allows it to give high priority to critical streams—such as voice calls—while 
+assigning a lower priority to less essential traffic, like employees browsing the internet during 
+lunch breaks. This approach enhances the protection of important, time-sensitive data. To 
+implement traffic prioritization, DiffServ uses the DiffServ field within IPv4 packets. Specifically, 
+the first 6 bits of this 8-bit field are known as the DSCP (Differentiated Services Code Point), which 
+indicate the level of service the packet should receive. In IPv6, a similar function is handled 
+through the Traffic Class field. These fields guide routers in determining how to forward each 
+data stream based on its priority. DiffServ classifies traffic forwarding into two main types: 
+EF (Expedited Forwarding): Ensures that a data stream departs from a node at a guaranteed 
+minimum rate, reducing delays and helping the data arrive on time and in the correct order. 
+AF (Assured Forwarding): Allows routers to assign different levels of resources to various data 
+streams. Although it prioritizes traffic, it doesn’t guarantee timely or sequential delivery under 
+heavy network load. 
+While this explanation simplifies the inner workings of DiffServ, it highlights the key idea: a 
+flexible and efficient method of traffic management. Thanks to its simplicity and minimal 
+processing requirements, DiffServ is especially well-suited for large-scale, high-traffic networks.

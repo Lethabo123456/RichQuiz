@@ -1,0 +1,23 @@
+1.1.6 Commenting code 
+You will often see two forward slashes (//) followed by ordinary text in C# code. These are 
+comments. They are ignored by the compiler but are very useful for developers because they 
+help document what a program is actually doing. Take, for instance, the following example: 
+ 
+Console.ReadLine(); // Wait for the user to press the Enter key 
+The compiler skips all text from the two slashes to the end of the line. You can add multiline 
+comments that start with a forward slash followed by an asterisk (/*).  
+ 
+The compiler skips everything until it finds an asterisk followed by a forward slash sequence 
+(*/), which could be many lines further down, as shown here: 
+ 
+ 
+sable one or more lines of code, typically during testing or debugging.
+ 
+ 
+ 
+ 
+You are encouraged to document your code with as many meaningful comments as 
+necessary. You can also use comments to temporarily disable one or more lines of code, 
+typically during testing or debugging. 
+1.2 
+Types, variables, ope

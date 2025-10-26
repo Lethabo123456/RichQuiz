@@ -1,0 +1,24 @@
+1.5.1 Encapsulation process varies in each layer as follows: 
+
+1. Initially the data was made, when starting the process of sending, the data fell through the 
+application layer (layer 7) responsible for the exchange of information from the computer to the 
+network, and basically this is an interface layer between network applications used by users. This 
+layer serves to define the request of the user. Then the data passed to the Presentation layer (layer 
+6), which layer is responsible for determining whether he needs to do the encryption on this request 
+or to other forms of translational data.  
+Then forwarded to the session layer (layer 5) in which this layer will check whether an application 
+requesting the information and verify that the services requested on the server. Any information will 
+ 
+be passed down an added header of each layer. However, the processing layer 5, 6 and 7 sometimes 
+it is not necessary to the header.  
+
+2. Data arrived at the Transport layer (layer 4), ensuring that he already possessed a proper 
+connection with the server and start the process by converting the information into the form of 
+segments. Error checking and merging data coming from the same application done in this transport 
+layer and the wholeness data is guaranteed here as well. L4PDU formed from this process. 
+
+3. The next segment is forwarded to the Network layer (layer 3), here the segments received earlier 
+and added the network address for the station to request and network address for the requested 
+server. Segments will be converted into a packet-packet, then network layer makes 
+Network header, in which there are also addresses the network layer, and placed L4PDU behind it, 
+and formed L3PDU. 

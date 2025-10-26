@@ -1,0 +1,37 @@
+3.11.2 Client-to-Site VPN 
+Client-to-site allows remote users or employees to securely connect to the company network 
+from anywhere. A common issue is that users can get on the Internet but can’t reach the oﬃce 
+network because they don’t have the correct VPN address or password. A clientless VPN enables 
+end users to securely access resources on the corporate network from anywhere using an 
+SSL/TLS-enabled web browser. They need no remote access clients to do this, only a browser that 
+can perform SSL or the more secure TLS.
+
+When a client-to-site VPN is created, it is possible to do so in two ways: split tunnel and full tunnel. 
+The diﬀerence is whether the user uses the VPN for connecting to the Internet as well as for 
+connecting to the oﬃce. Split tunneling works by using two connections at the same time: the 
+secure VPN connection and an open connection to the Internet. With SSLsplit tunneling, only 
+traﬃc to the oﬃce goes through the VPN. Internet traﬃc does not. The security issue with this is 
+that while the user is connected to the VPN, they are also connected to the most untrusted 
+network, the Internet. With a full tunnel, all traﬃc goes through the VPN, which means the user 
+is accessing the Internet through the connection of the oﬃce, and so all traﬃc will be examined 
+by the oﬃce security.
+
+Figure 3.11: Client to Site VPN  
+
+3.11.3 Remote Desktop Connection 
+Remote Desktop Protocol (RDP) is a proprietary protocol developed by Microsoft. RDP operates 
+somewhat like Telnet, except that instead of getting a command-line prompt as you do with 
+Telnet, you get the actual graphical user interface (GUI) of the remote computer. A remote 
+desktop connection is designed to allow you to establish a connection to a machine, view its 
+desktop, and perform any action you could perform if you were sitting in front of it. This 
+connectivity provides real-time issue observations, interactive support, eﬃciency, and reduces 
+costs. 
+
+Furthermore, attackers constantly probe remote services, and unsecured RDP connections 
+remain a popular target for brute-force attacks, credential theft, and ransomware campaigns. To 
+mitigate these risks, organizations are turning to more secure alternatives, such as RDP Gateway. 
+RDP Gateway, developed by RouterHosting, strengthens remote access. It utilizes SSL encryption 
+to securely tunnel connections, eliminating the need to route through third-party services, and 
+integrates natively with Windows Server infrastructure. Additionally, it uses SSL encryption to 
+securely tunnel connections without relying on a VPN, eliminates the need to route through third- 
+party services, and integrates natively with Windows Server infrastructure 

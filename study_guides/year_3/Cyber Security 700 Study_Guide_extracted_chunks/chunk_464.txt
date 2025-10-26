@@ -1,0 +1,51 @@
+Trustworthy Email Standards 
+For both organizations and individuals, email is pervasive and vulnerable to a wide range of security 
+threats. In general terms, email security threats are classified as follows: 
+
+ Authenticity-related threats: Can result in unauthorized access to an enterprise’s email 
+system. Another threat in this category is deception, in which case the purported author isn’t 
+the actual author. 
+ Integrity-related threats: Can result in unauthorized modification of email content. 
+ Confidentiality-related threats: Can result in unauthorized disclosure of sensitive information. 
+ Availability-related threats: Can prevent end users from being able to send or receive email. 
+To assist in addressing these threat categories, the National Institute of Standards and Technology 
+(NIST) issued SP 800-177, Trustworthy Email, which provides recommendations and guidelines for 
+enhancing trust in email. The document is both a survey of available standardized protocols and a set 
+of recommendations for using these protocols to counter security threats to email usage. The 
+following protocols and standards are described in and recommended by SP 800-177: 
+ STARTTLS: This SMTP security extension enables an SMTP client and server to negotiate the 
+use of Transport Layer Security (TLS) to provide private, authenticated communication across 
+the Internet. 
+ S/MIME: S/MIME provides authentication, integrity, non-repudiation (via digital signatures) 
+and confidentiality (via encryption) of the message body carried in SMTP messages. 
+ DNS-based Authentication of Named Entities (DANE): DANE is designed to overcome 
+problems in a certification authority (CA) system by providing an alternative channel for 
+authenticating public keys based on DNSSEC (DNS Security Extensions), with the result that 
+the same trust relationships used to certify IP addresses are used to certify servers operating 
+on those addresses. 
+ Sender Policy Framework (SPF): SPF enables a domain owner to specify the IP addresses of 
+MTAs that are authorized to send mail on its behalf. SPF uses DNS to allow domain owners to 
+create records that associate the domain name with a specific IP address range of authorized 
+MTAs. It is a simple matter for receivers to check the SPF TXT record in DNS to confirm that 
+the purported sender of a message is permitted to use that source address and reject mail 
+that does not come from an authorized IP address. 
+ DomainKeys Identified Mail (DKIM): DKIM enables an email actor (author or operator) to affix 
+a domain name to the message reliably, using cryptographic techniques, so that filtering 
+engines develop an accurate reputation for the domain. The MTA is able to sign selected 
+headers and the body of a message. This validates the source domain of the mail and provides 
+message body integrity.
+ Domain-based Message Authentication, Reporting and Conformance (DMARC): DMARC 
+publishes a requirement for the author domain name to be authenticated by DKIM and/or 
+SPF, for that domain’s owner to request recipient handling of non-authenticated mail using 
+that domain, and a reporting mechanism from recipients back to domain owners. DMARC lets 
+senders know the proportionate effectiveness of their SPF and DKIM policies and signals to 
+receivers what action should be taken in various individual and bulk attack scenarios. 
+An examination of these standards is beyond the scope of this book. For a detailed discussion, see 
+Stallings’s article “Comprehensive Internet Email Security” [STAL16]. A security manager must be 
+aware of these standards and determine whether they should be required for email software products 
+and services.
+
+Another useful NIST document is SP 800-45, Guidelines on Electronic Mail Security, which 
+complements SP 800-177. SP 800-45 recommends security practices for designing, implementing, and 
+operating email systems on public and private networks. SP 800-177 focuses on the required Internet 
+protocols and the use of digital signatures and encryption. 

@@ -1,0 +1,36 @@
+Discover Known Vulnerabilities 
+The discover step involves monitoring sources of information about known vulnerabilities to 
+hardware, software, and network equipment. Key sources of information include the following: 
+CERT Coordination Center https://www.sei.cmu.edu/about/divisions/cert/index.cfm 
+
+ National Institute of Standards and Technology (NIST) National Vulnerability Database (NVDB) 
+and Common Vulnerability Scoring System (CVSS): This excellent source of information is 
+discussed in some detail in Section 3.5. 
+
+ Computer emergency response (or readiness) team (CERT): Such a team is a cooperative 
+venture that collects information about system vulnerabilities and disseminates it to systems 
+managers. Hackers also routinely read CERT reports. Thus, it is important for system 
+administrators to quickly verify and apply software patches to discovered vulnerabilities. One 
+of the most useful of these teams is the U.S. Computer Emergency Readiness Team, which is 
+a partnership between the Department of Homeland Security and the public and private 
+sectors, intended to coordinate responses to security threats from the Internet. Another 
+excellent resource is the CERT Coordination Center, which grew from the computer 
+emergency response team formed by the Defense Advanced Research Projects Agency. The 
+CERT Coordination Center website provides good information on Internet security threats, 
+vulnerabilities, and attack statistics. 
+
+ Packet Storm: Packet Storm provides around-the-clock information and tools to help mitigate 
+both personal data and fiscal loss on a global scale. As new information surfaces, Packet Storm 
+releases everything immediately through its RSS (Rich Site Summary) feeds, Twitter, and 
+Facebook. 
+Packet Storm https://packetstormsecurity.com 
+ SecurityFocus: This site maintains two important resources. BugTraq is a high-volume, full-
+disclosure mailing list for detailed discussion and announcement of computer security 
+vulnerabilities. The SecurityFocus Vulnerability Database provides security professionals with 
+up-to-date information on vulnerabilities for all platforms and services. 
+SecurityFocus https://www.securityfocus.com 
+ Internet Storm Center (ISC): Maintained by the SANS Technology Institute, the ISC provides a 
+free analysis and warning service to thousands of Internet users and organizations and is 
+actively working with Internet service providers to fight back against the most malicious 
+attackers. 
+Internet Storm Center https://isc.sans.edu 

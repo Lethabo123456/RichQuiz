@@ -1,0 +1,25 @@
+4.3.1 Representing Graphs 
+One way to represent a graph without multiple edges is to list all the edges 
+of this graph. Another way to represent a graph with no multiple edges is to 
+use adjacency lists, which specify the vertices that are adjacent to each 
+vertex of the graph. 
+ 
+Worked Example 
+Use adjacency lists to describe the simple graph given below: 
+ 
+Solution: 
+The table below lists those vertices adjacent to each of the vertices of the graph. 
+ 
+4.3.2 Adjacency Matrices 
+Carrying out graph algorithms using the representation of graphs by lists of 
+edges, or by adjacency lists, can be cumbersome if there are many edges in 
+the graph. To simplify computation, graphs can be represented using 
+matrices. Two types of matrices commonly used to represent graphs will be 
+presented here. One is based on the adjacency of vertices, and the other is 
+based on incidence of vertices and edges. 
+Suppose that G = (V ,E) is a simple graph where |V| = n. Suppose that the 
+vertices of G are listed arbitrarily as v1, v2, . . . , vn. The adjacency matrix A (or 
+AG) of G, with respect to this listing of the vertices, is the n x n zero–one 
+matrix with 1 as its (i, j )th entry when vi and vj are adjacent, and 0 as its 
+(i, j )th entry when they are not adjacent. In other words, if its adjacency 
+matrix is A = [aij ], then: 

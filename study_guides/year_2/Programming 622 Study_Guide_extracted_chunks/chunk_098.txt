@@ -1,0 +1,32 @@
+tor  
+personType::personType()  
+{  
+
+45  
+  
+firstName = "";  
+lastName = "";  
+}  
+  
+//Constructor with parameters  
+personType::personType(string first, string last)  
+{  
+firstName = first;  
+lastName = last;  
+}  
+ 
+1.6  
+Identifying Classes, Objects, and Operations  
+  
+The hardest part of OOD is to identify the classes and objects. This section describes a common and simple 
+technique to identify classes and objects.  
+  
+We begin with a description of the problem and then identify all of the nouns and verbs. From the list of 
+nouns we choose our classes, and from the list of verbs we choose our operations.  
+  
+For example, suppose that we want to write a program that calculates and prints the volume and surface 
+area of a cylinder. We can state this problem as follows:  
+  
+Write a program to input the dimensions of a cylinder and calculate and print its surface area and volume.  
+  
+In this statement, the nouns are bold and the verbs are italic. From the list of nouns— progr

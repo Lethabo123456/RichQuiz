@@ -1,0 +1,14 @@
+rithm, we count the number of multiplications.  
+  
+In addition to developing algorithms, we also provide a reasonable analysis of each algorithm. If there are 
+various algorithms to accomplish a particular task, the algorithm analysis allows the programmer to 
+choose between various options.  
+  
+Suppose that an algorithm performs f(n) basic operations to accomplish a task, where n is the size of the 
+problem. Suppose that you want to determine whether an item is in a list. Moreover, suppose that the 
+size of the list is n. To determine whether the item is in the list, there are various algorithms, as you will 
+see in Chapter 9. However, the basic method is to compare the item with the items in the list. Therefore, 
+the performance of the algorithm depends on the number of comparisons.  
+  
+Thus, in the case of a search, n is the size of the list and f(n) becomes the count function, that is, f(n) gives 
+the number of comparisons done by the search algorithm. Suppose that, on a particu

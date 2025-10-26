@@ -1,0 +1,31 @@
+r = “brown”;  
+echo “My dog is $color < br/ > ”;  
+}  
+// Define my cat’s color 
+$color = “black”;  
+  
+// Display info about my dog and cat 
+describeMyDog();  
+echo “My cat is $color < br/ > ”;  
+
+84  
+Notice that the code creates variables with the same name — $color — both inside and outside the 
+function. Thanks to the concept of variable scope, however, the $color variable inside the 
+describeMyDog() function is independent of the $color variable created outside the function, so the 
+code produces the expected result:  
+  
+My dog is brown 
+My cat is black  
+  
+Consider what would happen if the scope of the $color variable was not limited. In this case, $color 
+would first be set to “ black ” as before:  
+  
+// Define my cat 
+$color = “black”;  
+  
+However, when the describeMyDog() function was then called, it would overwrite the $color 
+variable with the value “ brown ” (because there is only one $color variable), producing the 
+following output:  
+  
+My dog is brown 
+My cat is br

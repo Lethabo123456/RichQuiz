@@ -1,0 +1,22 @@
+“ We have 
+exactly 23 widgets in stock! ” If $widgets does not hold the value 23 , the code between the 
+parentheses — that is, the echo() statement — is skipped.  
+  
+Here ’ s another example that uses the > = (greater than or equal to) and < = (less than or equal to) 
+comparison operators, as well as the && (and) logical operator:  
+  
+$widgets = 23;  
+if ( $widgets > = 10 && $widgets < = 20 ) {  
+
+37  
+echo “We have between 10 and 20 widgets in stock.”;  
+}  
+  
+This example is similar to the previous one, but the test expression inside the parentheses is slightly 
+more complex. If the value stored in $widgets is greater than or equal to 10, and it is also less than 
+or  
+equal to 20, the expression evaluates to true and the message “ We have between 10 and 20 
+widgets in stock. ” is displayed. If either of the comparison operations evaluates to false , the overall 
+expression also evaluates to false , the echo() statement is skipped, and nothing is displayed.  
+  
+The key point to

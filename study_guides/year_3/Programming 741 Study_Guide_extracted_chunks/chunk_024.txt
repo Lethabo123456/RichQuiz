@@ -1,0 +1,18 @@
+1.1.4 Using namespaces 
+ 
+The example you’ve seen so far is a very small program. However, small programs can soon 
+grow into much bigger programs. As a program grows, two issues arise: 
+• It’s harder to understand and maintain big programs than it is to understand and 
+maintain smaller ones. 
+• More code usually means more classes, with more methods, requiring you to keep 
+track of more names. As the number of names increases, so does the likelihood that 
+the project build will fail because two or more names clash. For example, you might 
+try to create two classes with the same name. The situation becomes more 
+complicated when a program references assemblies written by other developers who 
+have also used a variety of names.
+
+In the past, programmers tried to solve the name-clashing problem by prefixing names with 
+some sort of qualifier or set of qualifiers. Using prefixes as qualifiers is not a good solution, 
+however, because it’s not scalable. Names become longer, you spend less time writing 
+software and more time typing (there is a difference), and you spend too much time reading 
+and rereading incomprehensibly long names.

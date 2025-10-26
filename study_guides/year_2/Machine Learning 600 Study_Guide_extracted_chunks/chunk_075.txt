@@ -1,0 +1,18 @@
+00 objects and we want to find four clusters: 
+
+P a g e  | 44 
+ 
+                                                            
+ 
+Each one of the clusters has a centroid (sometimes called the mean, hence the name k-
+means), a point where the distance of the objects will be calculated. The clusters are defined 
+by an iterative process on the distances of the objects to calculate which are nearest to the 
+centroid. This is all done unsupervised; you just have to let the algorithm do its processing 
+and inspect the results. After the iterations have taken place to the point where the objects 
+don't move to different centroids, then it's assumed that the k-means clustering is complete. 
+The following pseudo code describes what's happening: 
+                                           
+ 
+First, the algorithm must initialize by assigning a cluster to every observation made. 
+The random partition method places the cluster points toward the center of the dataset. 
+Another initialization method is

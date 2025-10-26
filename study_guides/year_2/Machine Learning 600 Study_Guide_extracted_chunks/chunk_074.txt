@@ -1,0 +1,28 @@
+ubsets 
+connected with one main edge (see Figure 4.3). You can also approach simple clustering with 
+groups in the same way you group in a structured query language. 
+ 
+                                                                Table 4.2: Clustering in real life 
+Domain 
+Description 
+The Internet 
+To determine the community of users 
+Business and Retail 
+Customers can be grouped based on 
+various attributes (location, items, gender 
+etc.) 
+Law Enforcement 
+To predict when and where crimes will 
+occur 
+Computing 
+Motion detection and remote sensing 
+ 
+ 
+                                                    Figure 4.3: Clustering Models (Nodes & Edges) 
+ 
+4.3.3 K-Means Algorithms 
+If you have a group of objects, the idea of the k-means algorithm is to define a number of 
+clusters. What's important is that it's up to you to define how many clusters you want. For 
+example, say we have 1,000 objects and we want to find four clusters: 
+
+P a g e  | 44

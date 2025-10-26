@@ -1,0 +1,23 @@
+H to pad the string on both the left and the right, centering the result as much 
+as possible  
+  
+The following example adds padding to both the left and right of a string:  
+  
+// Displays “***Hello, world!****” echo str_pad( “Hello, 
+world!”, 20, “*”, STR_PAD_BOTH ) . “\n”;  
+  
+4.13 Formatting Numbers With number_format()  
+PHP’s number_format() function gives you a convenient way to format numbers in an easy-to-read 
+way, with thousands separators and rounded to a specified number of decimal places. In its most 
+basic form, you just need to pass the number to format as a single argument, and the function 
+returns the formatted string:  
+  
+echo number_format( 1234567.89 ); // Displays “1,234,568”  
+
+52  
+Note that this rounds to the nearest whole number. If you would rather include some decimal 
+places, specify the number of places as a second, optional argument:  
+  
+echo number_format( 1234567.89, 1 ); // Displays “1,234,567.9”  
+  
+Finally, you can change the characters used fo

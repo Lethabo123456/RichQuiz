@@ -1,0 +1,13 @@
+a set consisting of student records, then the student ID uniquely 
+identifies each student in a particular school. This unique member of the item is called the key of the item. 
+The keys of the items in the data set are used in such operations as searching, sorting, insertion, and 
+deletion. For instance, when we search the data set for a particular item, we compare the key of the item 
+for which we are searching with the keys of the items in the data set.  
+  
+As previously remarked, in addition to describing searching algorithms, this chapter analyses these 
+algorithms. In the analysis of an algorithm, the key comparisons refer to comparing the key of the search 
+item with the key of an item in the list. Moreover, the number of key comparisons refers to the number 
+of times the key of the item (in algorithms such as searching and sorting) is compared with the keys of the 
+items in the list.  
+  
+This chapter refers to this class(class arrayListType), for easy reference we give its de

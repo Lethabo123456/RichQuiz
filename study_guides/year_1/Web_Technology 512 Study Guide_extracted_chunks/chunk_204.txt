@@ -1,0 +1,27 @@
+tion in our JavaScript 
+file.  
+ 
+Before the button is clicked, the web page looks like this: 
+ 
+Figure 8.2 
+The script will add the news just above the footer, and after the main contents. 
+ 
+8.2 CREATE HTML ELEMENTS 
+ 
+To create a new element with JavaScript you use the createElement method of the 
+document object. Like this: 
+var newPara = document.createElement("p"); 
+ 
+In between the round brackets of createElement you type the HTML element you 
+want to create. This needs to go inside of quote marks (single or double). We want 
+to create a new paragraph using the P tag. (The HTML element is created with 
+lowercase letters.) We have then assigned the new tag to a variable that we have 
+called newPara. 
+ 
+Creating new text nodes 
+To add some new text with JavaScript you can use the createTextNode method of 
+the document object. Again, the text you want to add goes between quote marks: 
+var add_news = document.createTextNode("The latest news 
+goes here."); 
+ 
+The newly created text i

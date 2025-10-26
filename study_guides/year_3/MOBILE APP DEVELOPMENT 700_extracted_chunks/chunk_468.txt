@@ -1,0 +1,44 @@
+Now you have to add the identifier for the permission result. Add this line to the top of the file where 
+you declared the other identifier: 
+ 
+final int PERMISSION_REQUEST_CAMERA = 103; 
+Add code to the onRequestPermissionsResult method to handle the request for permission to access 
+the camera. Add the code in Listing 8.12 after the  closing } of  the 
+case (PERMISSION_REQUEST_PHONE) statement 
+ 
+Next, add the code to access the camera and get the returned picture. The camera app is, of course, 
+an activity, so it must be started with an Intent. Use the code in Listing 8.13 to create the takePhoto 
+method and the method to capture the picture. 
+Not much code is required to implement the camera functionality, because the objects in the Android 
+SDK do most of the work. 
+
+▪ Line 2—A new intent is instantiated with a parameter that tells the system to open the camera in 
+image capture mode. You do not have to check whether the camera is present. The permission you 
+added in the manifest would not let your app run on the device if it did not have a camera. 
+▪ Line 3—The Activity is started in a different way than you have seen before. In this case, you want 
+the activity to return a value to the app after it has completed, so you use the startActivityForResult 
+method. The parameters are the new Intent and a static variable called CAMERA_REQUEST. The 
+variable CAMERA_REQUEST is identified as an error because it has not been defined. This variable is 
+an integer that is used to identify the response from the camera when it finishes. The value is not fixed 
+by the SDK but should be given a large integer so it is not confused with other built-in responses. Add 
+this line after the class declaration to fix the error: 
+ 
+final int CAMERA_REQUEST = 1888; 
+
+▪ Line 4—The onActivityResult method is declared. This method receives a request code that was 
+sent to the camera, a result code, and an intent that includes the data (the picture in this case) from 
+the intent you started. This method is executed when the camera finishes. 
+▪ Line 7—The returned request code is checked to see if it is the one sent to the camera. 
+▪ Line 8—Check if the camera returned with a picture. 
+▪ Line 9—The data from the Intent is assigned to a variable declared as a Bitmap. The method 
+.g et("data") doesn’t specify a type of data to get from the extras, so it must be cast into a Bitmap. 
+After the photo is captured, it is displayed in the ImageButton, and the contact object’s picture 
+attribute is set to hold the photo. 
+▪ Line 10—The picture is scaled so that a consistent-size photo is displayed in the ImageButton. The 
+parameters of this method are the picture to be scaled, the height and width to scale to in pixels, and 
+whether a filter should be applied during the scaling operation. Generally, when scaling down, this 
+filter has no effect but can change the result when scaling up. 
+The setPicture method must be added, along with a Bitmap variable to the Contact object. Open 
+Contact.java and add a variable to the class using the following code: 
+ 
+private Bitmap picture; 

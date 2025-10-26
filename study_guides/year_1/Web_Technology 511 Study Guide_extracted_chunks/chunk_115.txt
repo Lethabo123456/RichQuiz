@@ -1,0 +1,28 @@
+7.7 NESTED TABLES 
+ 
+A table within a cell of another table is a nested table. You can use nested tables to 
+organize information and set the layout of a page. 
+ 
+Nested tables 
+You use nested tables to add additional information within a table. They are used to 
+display information that is useful but not necessary. To create a nested table, put the 
+
+code required for a table within a pair of <td> tags in another table. For example, you 
+can display a calorie chart within a table for an apple pie recipe.
+
+<TR>
+   <TD><IMG SRC=''./Images/Applepie.gif">
+   <TABLE BORDER>
+   <TR>
+      <TD>Calories</TD>
+      <TD>254 kcal</TD>
+   </TR>
+   <TR>
+      <TD>Proteins</TD>
+      <TD>2.4 g</TD>
+   </TR>
+   </TABLE>
+   </TD>
+ 
+Exhibit 0-11: The source code of the Applepie page with a nested table
+Exhibit 0-12: A cell of the table on the Applepie page containing another table 

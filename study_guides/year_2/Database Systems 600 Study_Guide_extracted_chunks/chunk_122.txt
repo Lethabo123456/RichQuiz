@@ -1,0 +1,21 @@
+le for any given row in the PAINTER 
+table. 
+The 1:1 Relationship 
+As the 1:1 label implies, one entity in a 1:1 relationship can be related to only one other entity, and 
+vice versa. The basic 1:1 relationship implementation is shown in Figure 3.22. 
+
+ 
+47 
+ 
+As you examine the tables in Figure 3.22, note several important features:  
+ 
+Each professor is a Tiny College employee. Therefore, the professor identification is 
+through the EMP_NUM. (However, note that not all employees are professors— there’s 
+another optional relationship.)  
+ 
+The 1:1 “PROFESSOR chairs DEPARTMENT” relationship is implemented by having the 
+EMP_NUM foreign key in the DEPARTMENT table.  
+The preceding “PROFESSOR chairs DEPARTMENT” example illustrates a proper 1:1 
+relationship. In fact, the use of a 1:1 relationship ensures that two entity sets are not placed in the 
+same table when they should not be. However, the existence of a 1:1 relationship sometimes means 
+that the entity components were not define

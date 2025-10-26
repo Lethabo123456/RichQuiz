@@ -1,0 +1,16 @@
+, which arranges for the transfer of web pages to your 
+browser and browser requests for pages to servers, is state-less, which means that 
+once the server has sent a page to a browser requesting it, it doesn't remember a 
+thing about it. So if you come to the same web page a second, third, hundredth or 
+millionth time, the server once again considers it the very first time you ever came 
+there. 
+ 
+This can be annoying in a number of ways. The server cannot remember if you 
+identified yourself when you want to access protected pages, it cannot remember 
+your user preferences, and it cannot remember anything. As soon as 
+personalization was invented, this became a major problem. 
+ 
+Cookies were invented to solve this problem. There are other ways to solve it, but 
+cookies are easy to maintain and very versatile. In many situations, using cookies is 
+the most efficient method of remembering and tracking preferences, purchases, 
+commissions, and other information required for better visit

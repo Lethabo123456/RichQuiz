@@ -1,0 +1,48 @@
+Using a Grid Layout 
+ 
+The Grid Layout was introduced in Android 3.0 (API level 11) and provides the most flexibility of 
+any of the Layout Managers. 
+ 
+The Grid Layout uses an arbitrary grid to position Views. By using row and column spanning, the 
+Space View, and Gravity attributes, you can create complex without resorting to the often complex 
+nesting required to construct UIs using the Relative Layout described previously. 
+ 
+The Grid Layout is particularly useful for constructing layouts that require alignment in two directions 
+— for example, a form whose rows and columns must be aligned but which also includes elements 
+that don’t fi t neatly into a standard grid pattern. 
+ 
+It’s also possible to replicate all the functionality provided by the Relative Layout by using the Grid 
+Layout and Linear Layout in combination. For performance reasons it’s good practice to use the 
+Grid Layout in preference to creating the same UI using a combination of nested layouts. 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<GridLayout 
+xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent” 
+android:orientation=“vertical”> 
+<ListView 
+android:background=“#FF444444” 
+android:layout_gravity=“fill”> 
+</ListView> 
+ <LinearLayout 
+android:layout_gravity=“fill_horizontal” 
+android:orientation=“horizontal” 
+android:padding=“5dp”> 
+<Button 
+android:text=“Cancel” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:layout_weight=“1”/> 
+<Button 
+android:text=“OK” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:layout_weight=“1”/> 
+ </LinearLayout> 
+</GridLayout> 
+ 
+Note that the Grid Layout elements do not require width and height parameters to be set. Instead, 
+each element wraps its content by default, and the layout_gravity attribute is used to determine in 
+which directions each element should expand. 
+ 

@@ -1,0 +1,30 @@
+Explanation: This code snippet is comparing the value of the 'text' column from the yelp_raw_data data 
+frame to the value of the variable duplicate_text. The result of the comparison is then stored in the variable 
+text_is_the_duplicate, which will be a boolean (True or False) indicating if the text in 
+yelp_raw_data['text'] is the same as the duplicate_text. 
+ 
+type(text_is_the_duplicate) # it is a Series of Trues and Falses 
+text_is_the_duplicate.head() # shows a few Falses out of the Series 
+ 
+Explanation: The code snippet is checking the type of the variable 'text_is_the_duplicate', which is 
+likely to be a data type in Python known as a Series. The code then uses the head() function to display the 
+first few values in the Series, which are Falses. This suggests that the Series contains a list of Booleans 
+(True/False) values and that the first few values are False. 
+ 
+ 
+sum(text_is_the_duplicate) # == 2 
+ 
+Explanation: The code snippet is referring to a Boolean variable called "text_is_the_duplicate". This 
+variable is likely a list of values, either 0s or 1s, that indicate whether a given text is a duplicate or not. The code 
+is asking the program to count the number of times the value 1 appears in the list, which would indicate the 
+number of text duplicates present. In this case, the output of the code snippet would be 2, meaning there are 
+two duplicates. 
+ 
+ 
+filtered_dataframe = yelp_raw_data[text_is_the_duplicate]  
+# the filtered Dataframe 
+ 
+Output: filtered_dataframe 
+ 
+Here we can see that the user_id, gave the same comment and star rating for two different 
+business_ids on the same day. 

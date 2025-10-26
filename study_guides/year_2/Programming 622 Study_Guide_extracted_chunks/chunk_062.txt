@@ -1,0 +1,16 @@
+ble of type clockType.  
+  
+Note that we have not yet written the definitions of the function members of the class clockType. You will 
+learn how to write them shortly.  
+The function setTime sets the three data members—hr, min, and sec—to a given value. The given values 
+are passed as parameters to the function setTime. The function printTime prints the time, that is, the 
+values of hr, min, and sec. The function incrementSeconds increments the time by one second, the 
+function incrementMinutes increments the time by one minute, the function incrementHours increments 
+the time by one hour, and the function equalTime compares the two times for equality.  
+  
+ 
+1.4.1  Constructors  
+  
+C++ does not automatically initialize variables when they are declared. Therefore, when an object is 
+instantiated, there is no guarantee that the data members of the object will beinitialized. To guarantee 
+that the instance variables of a class are initialized, you use constructors. There are two types

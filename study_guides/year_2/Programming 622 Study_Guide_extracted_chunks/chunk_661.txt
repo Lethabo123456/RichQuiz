@@ -1,0 +1,19 @@
+integers. The 
+function max can be easily implemented.  
+  
+Similarly, we can implement algorithms to find the number of nodes and number of leaves in a binary 
+tree.  
+  
+ 
+9.1.1  Copy Tree  
+  
+One useful operation on binary trees is to make an identical copy of a binary tree. A binary tree is a 
+dynamic data structure; that is, memory for its nodes is allocated and deallocated during program 
+execution. Therefore, if we use just the value of the pointer of the root node to make a copy of a binary 
+tree, we get a shallow copy of the data. To make an identical copy of a binary tree, we need to create as 
+many nodes as there are in the binary tree to be copied. Moreover, in the copied tree, these nodes must 
+appear in the same order as they are in the original binary tree.  
+  
+Given a pointer to the root node of a binary tree, we next describe the function copyTree, which makes a 
+copy of a given binary tree. This function is also useful in implementing the copy constructor and 
+over

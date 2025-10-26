@@ -1,0 +1,29 @@
+from fruit WHERE id > = 2;   
++----+-----------+--------+   
+| id | name | color |   
++----+-----------+--------+   
+| 2 | tangerine | orange |   
+| 3 | plum | purple |   
++----+-----------+--------+   
+2 rows in set (0.06 sec)   
+   
+   
+4.14 Updating Data In A Table Using The UPDATE and UPDATE … WHERE Clauses   
+You change existing data in a table with the UPDATE statement. As with the SELECT statement, you 
+can (and usually will) add a WHERE clause to specify exactly which rows you want to update. If you 
+leave out the WHERE clause, the entire table gets updated. Here is how to use UPDATE to change 
+values in your fruit table:   
+   
+mysql > UPDATE fruit SET name = ‘grapefruit’, color = ‘yellow’ WHERE id = 2;   
+   
+Query OK, 1 row affected (0.29 sec)   
+Rows matched: 1 Changed: 1 Warnings: 0   
+   
+mysql > SELECT * from fruit;   
+   
++----+------------+--------+   
+| id | name | color |   
++----+------------+--------+   
+| 1 | banana | yellow |   
+| 2 | grapefruit | yellow |   
+|

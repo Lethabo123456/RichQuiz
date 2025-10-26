@@ -1,0 +1,17 @@
+ssing.  
+  
+ 
+7.3.3  Open Addressing  
+  
+As described previously, in open addressing, the data is stored within the hash table. Therefore, for each 
+key X, h(X) gives the index in the array where the item with key X is likely to be stored. Open addressing 
+can be implemented in several ways. Next, we describe some of the common ways to implement it.  
+  
+7.3.3.1 Linear Probing  
+  
+Suppose that an item with key X is to be inserted in HT. We use the hash function to compute the index 
+h(X) of this item in HT. Suppose that h(X) = t. Then 0 ≤ h(X) ≤ HTSize – 1. If HT[t] is empty, we store this 
+item into this array slot. Suppose that HT[t] is already occupied by another item; we have a collision. In 
+linear probing, starting at location t, we search the array sequentially to find the next available array slot.  
+In linear probing, we assume that the array is circular so that if the lower portion of the array is full, we 
+can continue the search in the top portion of the array. This can b

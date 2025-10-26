@@ -1,0 +1,43 @@
+he new node 
+the left child of trailCurrent  
+else make the new node the right child of trailCurrent  
+}   
+This pseudocode algorithm translates into the following C++ function:  
+  
+  
+template <class elemType>  
+void bSearchTreeType<elemType>::insert(const elemType& insertItem)  
+{  
+binaryTreeNode<elemType> *current;   
+  
+//pointer to traverse the tree 
+binaryTreeNode<elemType> *trailCurrent;    
+//pointer behind current  
+
+340  
+  
+binaryTreeNode<elemType> *newNode;   newNode 
+= new binaryTreeNode<elemType>;  
+assert(newNode != NULL); newNode-
+>info = insertItem; newNode->llink = 
+NULL; newNode->rlink = NULL;  
+//pointer to create the node  
+  
+if (root == NULL) root = 
+newNode;  
+else  
+{  
+Current = root;  
+  
+while (current != NULL)  
+{  
+trailCurrent = current;  
+  
+if (current->info == insertItem)  
+{  
+cerr << "The insert item is already in the list-"; cerr << 
+"duplicates are not allowed."<< insertItem << endl; 
+return;  
+}  
+else if (current->info > insertItem) current 
+=

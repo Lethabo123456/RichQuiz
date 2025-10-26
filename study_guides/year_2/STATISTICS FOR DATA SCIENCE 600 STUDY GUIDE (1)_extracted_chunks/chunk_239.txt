@@ -1,0 +1,19 @@
+ify the relationship between temp and 
+count. To make a prediction, we simply find a given temperature, and then see where the line 
+would predict the count. For example, if the temperature is 20 degrees (Celsius mind you), 
+then our line would predict that about 200 bikes will be rented. If the temperature is above 
+40 degrees, then more than 400 bikes will be needed! It appears that as temp goes up, our 
+count also goes up. Let's see if our correlation value, which quantifies a linear relationship 
+between variables, also matches this notion:  
+bikes[['count', 'temp']].corr() # 0.3944 
+  
+There is a (weak) positive correlation between the two variables! Now, let's go back to the 
+form of the linear regression: 
+  
+                                                  
+     
+  
+  
+Our model will attempt to draw a perfect line between all the dots in the preceding graph, 
+but of course, we can clearly see that there is no perfect line between these dots! The model 
+will then find the best

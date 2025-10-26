@@ -1,0 +1,18 @@
+, if you installed 
+MAMP and used its default port of 8888 — modify your URL appropriately; for example: http:// 
+localhost:8888/testing.htm l.   
+   
+
+82   
+   
+This means that Apache is up and running and you have successfully located the Web server’s 
+document root. If you do not get this page, it is likely that one of two things is happening: If you get a 
+404 Not Found error, this means that the testing.html file is not in the Web Server’s document root. 
+Double - check the location of the document root folder — take a look at the documentation if 
+necessary — and make sure your testing.html file is inside the folder. If you get a Connection 
+Refused error, the Apache Web server is not running (or it is running on a different port). Check that 
+you have started the Web server and that it is configured correctly (again, the documentation that 
+came with the package should help here).   
+   
+Testing PHP   
+Now that you know Apache is working correctly, it is time to make sure PHP is

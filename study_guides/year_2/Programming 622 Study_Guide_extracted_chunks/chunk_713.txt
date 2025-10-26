@@ -1,0 +1,22 @@
+solution is to write separate traversal algorithms to update the data. This solution requires you to 
+frequently modify the definition of the class implementing the binary search tree. However, if the user 
+can write an appropriate function to update the data of each employee and then pass this function as a 
+parameter to the traversal algorithms, we can considerably enhance the program’s flexibility. This section 
+describes how to pass functions as parameters to other functions.  
+  
+In C++, a function name without any parentheses is considered a pointer to the function. To specify a 
+function as a formal parameter to another function, we specify the function type, followed by the function 
+name as a pointer, followed by the parameter types of the function. For example, consider the following 
+statements:  
+  
+  
+void fParamFunc1(void (*visit) (int));   
+  
+//Line 1 void 
+fParamFunc2(void (*visit) (elemType&));   
+//Line 2  
+  
+
+351  
+  
+The statement in Line 1 declares fParamFunc1 t

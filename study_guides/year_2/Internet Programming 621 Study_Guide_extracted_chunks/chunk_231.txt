@@ -1,0 +1,52 @@
+adu" => array( "population" => "17,90,000", 
+"captial" => "Chennai") ); 
+echo $states["karnataka"]["population"]; 
+?> 
+a) karnataka 11,35,000 
+b) 11,35,000 
+c) population 11,35,000 
+d) karnataka population 
+ 
+Answer: b 
+44. Which function will return true if a variable is an array or false if it is not? 
+this_array() 
+is_array() 
+do_array() 
+in_array() 
+ 
+Answer: b 
+ 
+45. Which in-built function will add a value to the end of an array? 
+a) array_unshift() 
+b) into_array() 
+c) inend_array() 
+d) array_push() 
+ 
+Answer: d 
+ 
+46. What will be the output of the following PHP code? 
+<?php 
+$state = array ("Karnataka", "Goa", "Tamil Nadu", 
+"Andhra Pradesh"); 
+echo (array_search ("Tamil Nadu", $state) ); 
+?> 
+
+a) True 
+b) 1 
+c) False 
+d) 2 
+ 
+Answer: d 
+ 
+47. What will be the output of the following PHP code? 
+<?php 
+$fruits = array ("apple", "orange", "banana"); 
+echo (next($fruits)); 
+echo (next($fruits)); 
+?> 
+a) orangebanana 
+b) appleorange 
+c) orangeorange 
+d) appleapple 
+ 
+Answer: a

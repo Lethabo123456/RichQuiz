@@ -1,0 +1,28 @@
+The trick to programming well in any language is to learn the syntax and semantics of the 
+language and then use the language in a natural and idiomatic way. This approach makes your 
+programs easier to maintain. (Code that’s difficult to read is said to be obfuscated. This type 
+of code may appear to be clever but is a real pain if you, or someone else, needs to come back 
+to it later!) As you progress through this book, you’ll see examples of the most important C# 
+statements. 
+ 
+1.2.2 Expressions 
+Statements that evaluate to a value are called expressions. You may be surprised how many 
+statements do evaluate to a value. For example, an assignment such as: 
+ 
+myVariable = 57; 
+ 
+is an expression; it evaluates to the value assigned, which, in this case, is 57. Note that the 
+preceding statement assigns the value 57 to the variable myVariable. The assignment 
+operator (=) does not test equality; rather it causes whatever is on the right side (57) to be 
+assigned to whatever is on the left side (myVariable).
+
+All of the C# operators (including Console.WriteLine("Hello, World!"); //a statement 
+
+int x=40; // another statement 
+int y = x+5;// yet another statement 
+ 
+assignment and equality) are discussed later in this chapter (see "Operators"). Because 
+myVariable = 57 is an expression that evaluates to 57, it can be used as part of another 
+assignment operator, such as: 
+ 
+mySecondVariable = myVariable = 57;  

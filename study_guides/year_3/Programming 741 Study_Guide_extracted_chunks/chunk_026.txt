@@ -1,0 +1,16 @@
+Namespaces help solve this problem by creating a container for items such as classes. Two 
+classes with the same name won’t be confused with each other if they live in different 
+namespaces. You can create a class named Greeting inside the named Greeting inside the namespace named TestHello 
+by using the namespace keyword like this:  
+ 
+namespace TestHello 
+{ 
+class Greeting 
+{ 
+... 
+ 
+You can then refer to the Greeting class as TestHello.Greeting in your programs. If another 
+developer also creates a Greeting class in a different namespace, such as NewNamespace, 
+and you install the assembly that contains this class on your computer, your programs will still 
+work as expected because they’re using your TestHello.Greeting class. If you want to refer to 
+the other developer’s Greeting class, you must specify it as NewNamespace.Greeting. 

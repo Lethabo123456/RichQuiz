@@ -1,0 +1,31 @@
+res intVecIter to be an iterator into a vector container of type int.  
+  
+Because iterator is a typedef defined inside the class vector, we must use the container name (vector), 
+container element type, and scope resolution operator to use the typedef iterator.  
+  
+Suppose that the iterator intVecIter points to an element of a vector container whose elements are of 
+type int. The expression  
+  
+++intVecIter  
+  
+advances the iterator intVecIter to the next element into the container. The expression   
+  
+*intVecIter  
+  
+returns the element at the current iterator position.  
+  
+Note that these operations are the same as the operations on pointers. Recall that when used as a unary 
+operator, * is called the dereferencing operator.  
+We now discuss how to use an iterator into a vector container to manipulate the data stored into it. 
+Suppose that we have the following statements:  
+
+58  
+  
+  
+vector<int> intList;     
+  
+//Line 1 vector<int>::iterator 
+intVecIter;   
+//Line 2  
+  
+T

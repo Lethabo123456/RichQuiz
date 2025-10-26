@@ -1,0 +1,19 @@
+lve a particular 
+problem. It contains many case studies—called Programming Examples—to solve real-world problems.  
+  
+The final program consists of several functions, each accomplishing a specific goal. Some functions are 
+part of the main program; others are used to implement various operations on objects. Clearly, functions 
+interact with each other, taking advantage of each other’s capabilities. To use a function, the user needs 
+to know only how to use the function and what the function does. The user should not be concerned with 
+the details of the function, that is, how the function is written. Let us illustrate this with the help of the 
+following example.  
+  
+Suppose that you want to write a function that converts a measurement given in inches into equivalent 
+centimeters. The conversion formula is 1 inch = 2.54 centimeters. The following function accomplishes 
+the job:  
+  
+double inchesToCentimeters(double inches)  
+{  
+if (inches < 0)  
+{  
+cerr << "The given measurement

@@ -1,0 +1,31 @@
+FIGURE 1-2 Processing a C++ program 
+ 
+1. One kilobyte (KB) is 2 5 1024 bytes 10; one megabyte (MB) is  
+215,048,576 20 bytes; one gigabyte (GB) is 215,073,741,824 30 
+bytes; one terabyte (TB) is 215,099,511,627,776 40 bytes; one petabyte (PB) 
+is 21 5,125,899,906,842,624 50 bytes; one exabyte (EB)  
+is 215,152,921,504,606,846,976 60 bytes; and one zettabyte (ZB) is  
+215,180,591,620,717,411,303,424 70 bytes. 
+2. An algorithm is a step-by-step problem-solving process in which a solution is 
+arrived at in a finite amount of time. 
+3. The problem-solving process has three steps: analyze the problem and design 
+an algorithm, implement the algorithm in a programming language, and 
+maintain the program. 
+4. In structured design, a problem is divided into smaller subproblems. Each 
+subproblem is solved, and the solutions to all of the subproblems are then 
+combined to solve the problem. 
+5. Linker links the object code with other programs provided by the integrated 
+development environment (IDE) and used in the program to produce 
+executable code. 
+
+1. The dealer’s cost of a car is 85% of the listed price. The dealer would accept 
+any offer that is at least $500 over the dealer’s cost. Design an algorithm that 
+prompts the user to input the list price of the car and print the least amount that 
+the dealer would accept for the car. 
+ 
+2. The volume of a sphere is (4.0 / 3.0)πr 3 and the surface area is 4.0πr 2 , where 
+r is the radius of the sphere. Given the radius, design an algorithm that 
+computes the volume and surface area of the sphere. Also using the C11 
+statements provided for Example 1-1, write the C++ statement corresponding 
+to each statement in the algorithm. (You may assume that pi = 3.141592.)  
+ 

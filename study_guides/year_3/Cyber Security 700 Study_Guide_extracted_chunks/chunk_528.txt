@@ -1,0 +1,40 @@
+6.4 Security Event Management 
+Security event management (SEM) is the process of identifying, gathering, monitoring, analyzing, and 
+reporting security-related events. The objective of SEM is to extract from a large volume of security 
+events those events that qualify as incidents. SEM takes data input from all 
+devices/nodes and other similar applications, such as log management 
+software. The collected events data is analyzed with security algorithms and statistical computations to trace out any 
+vulnerability, threat, or risk, as shown in Figure 15.3. 
+
+SEM Functions 
+The first phase of event management is the collection of event data in the form of logs, as discussed 
+in the preceding section. As event data are generated, they are generally stored in logs local to the 
+devices that generate them. A number of steps need to be taken at this point: 
+1. Normalization: For effective management, the log data needs to be in a common format to 
+enable further processing. 
+2. Filtering: This step includes assigning priorities to various types of events. On the basis of 
+priority, large number of events can be set aside and not subject to further analysis, or they 
+can be archived in case there is a need to review them later. 
+3. Aggregation: The IT facility of a large enterprise generates millions of events per day. It is 
+possible to aggregate them by categories into a more manageable amount of data. For 
+example, if a particular type of traffic is blocked a number of times, it is sufficient to record as 
+a single aggregate event the type of traffic and the number of times it was blocked over a 
+particular time frame. 
+These preliminary steps reduce the volume of data. The objective of the next steps is to analyze the 
+data and generate alerts of security incidents. 
+
+Analysis includes the following aspects: 
+ Pattern matching: It is important to look for data patterns within the fields of stored event 
+records. A collection of events with a given pattern can signal a security incident. 
+ Scan detection: Often, an attack begins with a scan of IT resources by the attacker, such as 
+port scans, vulnerability scans, or other types of pings. A substantial number of scans being 
+found from a single source or a small number of sources can signal a security incident. 
+ Threshold detection: A straightforward form of analysis is the detection of a threshold being 
+crossed. For example, if the number of occurrences of a type of event exceeds a given 
+threshold in a certain time period, that constitutes an incident. 
+ Event correlation: Correlation consists of using multiple events from a number of sources to 
+determine that an attack or suspicious activity occurred. For example, if a particular type of 
+attack proceeds in multiple stages, the separate events that record those multiple activities 
+need to be correlated in order to see the attack. Another aspect of correlation is to correlate 
+particular events with known system vulnerabilities, which might result in a high-priority 
+incident.

@@ -1,0 +1,27 @@
+directory containing the running script. You can 
+retrieve the current directory by calling getcwd() :   
+   
+chdir( “/home/matt/newfolder” );   
+echo getcwd(); // Displays “/home/matt/newfolder”   
+   
+• 
+mkdir() — Creates a directory. To create a new directory, call the mkdir() function, passing in 
+the path of the directory you want to create:    
+   
+mkdir( “/home/matt/newfolder” );   
+   
+ Note that the parent directory has to exist already ( “ /home/matt ” in the example just 
+shown) for the function to work. mkdir() returns true if the directory was created, or false if 
+there was a problem. You can also set permissions for the directory at the time you create it 
+by passing the mode as the second argument.    
+
+58   
+   
+   
+• 
+rmdir() — Deletes a directory. The rmdir() function removes a given directory. The directory 
+must be empty, and you need appropriate permissions to remove it. For example:    
+   
+rmdir( “/home/matt/myfolder” );    
+   
+If PHP cannot remove the director

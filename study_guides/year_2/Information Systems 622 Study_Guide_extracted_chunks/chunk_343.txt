@@ -1,0 +1,23 @@
+Any changes made to this order 
+processing system could affect the company’s other systems, such as inventory control and 
+marketing.  
+Grid Charts  
+A grid chart is a table that shows relationships between various aspects of a systems 
+development effort. For example, a grid chart can reveal the databases used by the various 
+applications (see Figure 5.15).  
+Figure 5.15 A Grid Chart   
+  
+  
+
+  
+ 
+ 
+14
+6  
+The simplified grid chart in Figure 5.15 shows that the customer database is used by the order 
+processing, marketing analysis and invoicing applications. The inventory database is used by 
+the order processing, inventory control and marketing analysis applications. The sup- plier 
+database is used by the inventory control application, and the accounts receivable data- base is 
+used by the invoicing application. This grid chart shows which applications use common 
+databases and reveals that, for example, any changes to the inventory control application must 
+investigate the invent

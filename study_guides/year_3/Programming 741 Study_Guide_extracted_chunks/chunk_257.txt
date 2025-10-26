@@ -1,0 +1,36 @@
+Example 7-1 Delegates 
+
+You now have two objects in your Pair and you can print out their values. You're ready to sort 
+them and print the results of the sort. You can't know in advance what kind of objects you 
+will have, so you would like to delegate the responsibility of deciding which object comes first 
+in the sorted Pair to the objects themselves. Thus, you require that each object stored in a 
+Pair implement a method to return which of the two comes first. The method will take two 
+objects (of whatever type) and return an enumerated value: the First Comes Fi r s t if the first 
+object comes first, and the SecondComesFirst if the second does. These required methods 
+will be encapsulated by the delegate WhichIsFirst that you define within the Pair class 
+ 
+public class Pair { 
+// two objects, added in order received 
+public Pair (object firstObject, object secondObject) 
+{ 
+thePair[ 0] = firstObject; 
+thePair[ 1] = secondObject; 
+} 
+// hold both objects 
+private object[ ]thePair = new object[ 2]; 
+//Next, you override ToString ( ) to obtain the string 
+value of the two objects: 
+public override string ToString( ) 
+{ 
+return thePair [ 0] .ToString( ) + ", " + thePair[ 1] 
+.ToString( ); 
+} 
+public delegate comparison 
+WhichIsFirst (object obj1, object obj2) ;
+ 
+The return value is of type comparison, the enumeration. 
+
+public enum comparison { 
+theFirstComesFirst = 1; 
+theSecondComesFirst = 2; 
+} 

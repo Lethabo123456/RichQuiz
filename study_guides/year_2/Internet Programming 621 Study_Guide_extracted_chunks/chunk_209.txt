@@ -1,0 +1,68 @@
+P code is executed: 
+<?php 
+ 
+   $bookColor = "red"; 
+ 
+   $bookName = "The PHP Basics"; 
+ 
+ 
+   if ($bookColor == "red" && $bookName == "Steve Jobs") { 
+ 
+       echo "You have the wrong book"; 
+ 
+   } 
+ 
+   else { 
+ 
+       echo "You might have the right book"; 
+ 
+   } 
+ 
+?> 
+ 
+A. You have the wrong book 
+B. You might have the right book 
+
+IP 621  
+C. Nothing Will Be Displayed 
+D. False 
+ANS: B 
+85. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $x = 6; 
+ 
+   $y = 4; 
+ 
+   $sum = $x + $y; //sum = 10 
+ 
+   $ten = "Ten"; 
+ 
+ 
+   if ($sum >= 10 && $ten == "Ten") { 
+ 
+       $answer = "Correct"; 
+ 
+       echo "Your answer is: $answer"; 
+ 
+   } 
+ 
+   else { 
+ 
+       $answer = "Incorrect"; 
+ 
+       echo "Your answer is: $answer"; 
+ 
+   } 
+ 
+?> 
+ 
+A. Your answer is: Incorrect 
+B. Your answer is: $answer 
+C. Your answer is: Correct 
+D. Nothing Will Be Displayed 
+ANS: C 
+ 
+
+IP 621  
+86. Which of the following cases is a correct way to write a case

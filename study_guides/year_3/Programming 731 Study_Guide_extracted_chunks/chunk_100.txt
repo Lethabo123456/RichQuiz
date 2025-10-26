@@ -1,0 +1,31 @@
+This program finds the midpoint between  i and j. It generates the following output: Midpoint is 150   
+   
+Here is how the while loop works. The value of i is incremented, and the value of j is decremented. 
+These values are then compared with one another. If the new value of i is still less than the new 
+value of j, then the loop repeats. If i is equal to or greater than j, the loop stops. Upon exit from the 
+loop, i will hold a value that is midway between the original values of i and j. (Of course, this 
+procedure only works when i is less than j to begin with.) As you can see, there is no need for a loop 
+body; all of the action occurs within the conditional expression, itself. In professionally written Java 
+code, short loops are frequently coded without bodies when the controlling expression can handle 
+all of the details itself.   
+   
+do-while   
+ 
+As you just saw, if the conditional expression controlling a while loop is initially false, then the body 
+of the loop will not be executed at all. However, sometimes it is desirable  to execute the body of a 
+while loop at least once, even if the conditional expression is false to begin with. In other words, 
+there are times when you would like to test the termination expression at the end of the loop rather 
+than at the beginning. Fortunately, Java supplies a loop that does just that: the do-while. The do-
+while loop always executes its body at least once, because its conditional expression is at the 
+bottom of the loop. Its general form is    
+
+do {   
+// body of loop   
+   
+} while (condition);   
+
+Each iteration of the do-while loop first executes the body of the loop and then evaluates the 
+conditional expression. If this expression is true, the loop will repeat. Otherwise, the loop 
+terminates. As with all of Java’s loops,   condition must be a Boolean expression. Here is a reworked 
+version of the “tick” program that demonstrates the dowhile  loop. It generates the same output as 
+before. 

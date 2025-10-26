@@ -1,0 +1,19 @@
+server? First of all, the form’s action 
+attribute needs to contain the URL of the PHP script that will handle the form. For example:   
+   
+< form action=”form_handler.php” method=”post” >   
+   
+Next, of course, you need to create the form_handler.php script. When users send their forms, their 
+data is sent to the server and the form_handler.php script is run. The script then needs to read the 
+form data and act on it. To read the data from a form, you use a few superglobal variables. A 
+superglobal is a built-in PHP variable that is available in any scope: at the top level of your script, 
+within a function, or within a class method. Early on we discussed the $GLOBALS superglobal array, 
+which contains a list of all global variables used in your applications. Here in this unit, you learn 
+about three new superglobal arrays:   
+   
+Superglobal Array   
+Description   
+$_GET    
+   
+Contains a list of all the field names and values sent by a form using the get method   
+$_POST

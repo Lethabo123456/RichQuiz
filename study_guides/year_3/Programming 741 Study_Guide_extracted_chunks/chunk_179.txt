@@ -1,0 +1,91 @@
+5.5 Multidimensional Arrays 
+Arrays can be thought of as long rows of slots into which values can be placed. Once you have 
+a picture of a row of slots, imagine 10 rows, one on top of another. This is the classic two-
+dimensional array of rows and columns. The rows run across the array and the columns run 
+up and down the array. 
+ 
+A third dimension is possible, but somewhat harder to imagine. Make your arrays three-
+dimensional, with new rows stacked atop the old two-dimensional array. OK, now imagine 
+four dimensions. Now imagine 10. 
+ 
+Those of you who are not string-theory physicists have probably given up, as have I. 
+Multidimensional arrays are useful, however, even if you can't quite picture what they would 
+look like. 
+ 
+C# supports two types of multidimensional arrays: rectangular and jagged. In a rectangular 
+array, every row is the same length. A jagged array, however, is an array of arrays, each of 
+which can be a different length. 
+
+5.6 Rectangular arrays 
+A rectangular array is an array of two (or more) dimensions. In the classic two-dimensional 
+array, the first dimension is the number of rows and the second dimension is the number of 
+columns. 
+ 
+To declare a two-dimensional array, use the following syntax: 
+type [ ,] array-name 
+For example, to declare and instantiate a two-dimensional rectangular array named 
+myRectangularArray that contains two rows and three columns of integers, you would write: 
+int [ ,] myRectangularArray = new int[ 2,3]; 
+Example 5-4 declares, instantiates, initializes, and prints the contents of a two-dimensional 
+array. In this example, a for loop is used to initialize the elements of the array. 
+ 
+Example 5-4. Rectangular arrays 
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Tester 
+{ 
+static void Main( ) 
+{ 
+const int rows = 4; 
+const int columns = 3; 
+// declare a 4x3 integer array 
+int[,] rectangularArray = new int[rows, columns]; 
+// populate the array 
+for (int i = 0; i < rows; i++) 
+{ 
+for (int j = 0; j < columns; j++) 
+{ 
+rectangularArray[i, j] = i + j; 
+} 
+} 
+// report the contents of the array 
+for (int i = 0; i < rows; i++) 
+{ 
+for (int j = 0; j < columns; j++) 
+{ 
+Console.WriteLine("rectangularArray[{0},{1}] = {2}", 
+i, j, rectangularArray[i, j]); 
+} 
+} 
+} 
+} 
+} 
+OUTPUT:
+
+In this example, you declare a pair of constant values: 
+const int rows = 4; 
+const int columns = 3; 
+which are then used to dimension the array: 
+int [ , ] rectangularArray = new int [ rows, columns ] ; 
+Notice the syntax. The brackets in the int [ , ] declaration indicate that the type is an array of 
+integers, and the comma indicates the array has two dimensions (two commas would indicate 
+three dimensions, and so on). The actual instantiation of rectangularArray with new int [ rows, 
+columns] sets the size of each dimension. Here the declaration and instantiation have been 
+combined. 
+ 
+The program fills the rectangle with a pair of for loops, iterating through each column in each 
+row. Thus, the first element filled is rectangularAr ray[ 0,0] , followed by rectangularAr ray[ 
+0,1] , and rectangularArray[ 0,2] . Once this is done, the program moves on to the next rows: 
+rectangularAr ray[ 1 , 0 ] , rectangularArray[ 1 ,1] , rectangularAr ray[ 1 , 2] , and so forth, until 
+all the columns in all the rows are filled. 
+ 
+Just as you can initialize a one-dimensional array using bracketed lists of values, you can 
+initialize a two-dimensional array using similar syntax. Example 5-5 declares a two-
+dimensional array (rectangularArray) , initializes its elements using bracketed lists of values, 
+and then prints out the contents. 

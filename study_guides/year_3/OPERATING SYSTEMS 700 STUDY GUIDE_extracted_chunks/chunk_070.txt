@@ -1,0 +1,38 @@
+Figure 2.7 
+ 
+Figure 2.7 When you choose one option from the menu of an application program, such as 
+this one,the other modules, which are not currently required such as Help, do not need to 
+be moved into memory immediately, and, typically, are loaded only when requested. 
+The demand paging scheme allows the user to run jobs with less main memory than is 
+required if the operating system were using the paged memory allocation scheme (described 
+earlier). In fact, a demand paging scheme can give the appearance of vast amounts of 
+physical memory when physical memory is significantly less than vast. 
+The key to the successful implementation of this scheme is the use of a high-speed direct 
+access storage device (often shortened to DASD), which will be discussed in Chapter 7. 
+Examples of DASDsinclude hard drives or flash memory. High-speed access is vital because 
+this scheme requires pagesto be passed quickly from secondary storage into main memory 
+and back again as they are needed. 
+
+How and when the pages are passed (also called swapped) between main memory and 
+secondary storage depend on predefined policies that determine when to make room for 
+needed pages, and how to do so. The operating system relies on tables, such as the Job Table, 
+the Page Map Tables, andthe Memory Map Table, to implement the algorithm. These tables 
+are basically the same as for paged memory allocation. With demand paging, there are three 
+new fields for each page in each PMT: one to determine if the page being requested is 
+already in memory, a second to determine if the page contents have been modified while in 
+memory, and a third to determine if the page has been referenced most recently. The fourth 
+field, which we discussed earlier in this chapter, shows the page frame number, as shown at 
+the top of Figure 3.5. 
+
+The memory field tells the system where to find each page. If it is already in memory (shown 
+here with a Y), the system will spare the time required to bring it from secondary storage. 
+As one can imagine, it’s faster for the operating system to scan a table located in main 
+memory than it is toretrieve a page from a disk or other secondary storage device. 
+ 
+Figure 2.8 
+ 
+In Figure 2.8 Demand paging requires that the Page Map Table for each job keep track of 
+each pageas it is loaded or removed from main memory. Each PMT tracks the status of the 
+page, whether it has been modified or recently referenced, and the page frame number for 
+each page currently in main memory. (Note: For this illustration, the Page Map Tables have 
+been simplified. See Table 3.3 for more detail).

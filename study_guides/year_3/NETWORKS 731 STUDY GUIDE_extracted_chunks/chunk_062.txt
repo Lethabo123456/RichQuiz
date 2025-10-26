@@ -1,0 +1,23 @@
+2.7 Data Backup 
+
+A backup is a copy of data or program files created for archiving or safekeeping. Without 
+backing up your data, you risk losing everything through a hard disk fault, fire, flood, or 
+malicious or accidental erasure or corruption. No matter how reliable and fault tolerant you 
+believe your server’s hard disk (or disks) to be, you still risk losing everything unless you make 
+backups on separate media and store them off-site. 
+ 
+To fully appreciate the importance of backups, imagine coming to work one morning to find 
+that everything disappeared from the server: programs, configurations, data files, user IDs, 
+passwords, and the network operating system. It doesn’t matter how it happened. What 
+matters is how long it will take to reinstall the network operating systems; how long it will 
+take to duplicate the previous configuration; and how long it will take to figure out which IDs 
+should reside on the server, in which groups they should belong, and which permissions each 
+group should have. What will you say to your colleagues when they learn that all of the data 
+that they have worked on for the last year is irretrievably lost? When you think about this 
+scenario, you quickly realize that you can’t afford not to perform regular backups. 
+ 
+Many different options exist for making backups. They can be performed by different types of 
+software and hardware combinations and use one of many storage types or locations. They 
+can be controlled by NOS utilities or third-party software. In this section, you will learn about 
+the most common backup media, techniques for performing data backups, ways to schedule 
+them, and methods for determining what you must back up.

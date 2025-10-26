@@ -1,0 +1,29 @@
+ure 5.25, you can see that there’s a distinct lack of information 
+regarding names resolved by a name server. What this means is that the output is telling you that 
+there’s no WINS server operating—instead, all NetBIOS names were resolved by broadcast only. 
+ 
+Figure 5.25: Sample output of the nbtstat –r command (Lammle, 2022) 
+
+The –r switch comes in handy when you want to determine how a workstation is resolving DNS 
+names and whether DNS is conﬁgured correctly. If DNS isn’t conﬁgured correctly or it’s simply 
+not being used, the numbers in the Resolved By Name Server and Registered By Name Server 
+categories will always be zero. 
+
+The –R Switch 
+Unlike the –a and –A switches, -r and -R use the same letter but do not have anything in 
+common. 
+Here’s an example. Let’s say you have a bad name in the NetBIOS name cache but the right 
+name is in the LMHOSTS ﬁle instead. (The LMHOSTS ﬁle contains NetBIOS names of stations and 
+their associated IP addresses.) Because the cache is consulted before the LMHOSTS ﬁle is, that 
+bad address will remain in the cache until it expires. 
+This command is used when you want to purge the NetBIOS name table cache and reload the 
+LMHOSTS ﬁle into memory. You do that by using the nbtstat command with the –R switch, like 
+so: 
+
+nbtstat –R 
+You can practice this nbtstat -R command on your host to purge the NBT remote cache table. 
+The –S Switch 
+Using the -S switch will display the NetBIOS sessions table that lists all NetBIOS sessions to and 
+from the host from which you issued the command. The –S switch displays both workstation 
+and server sessions but lists remote addresses by IP address only. Figure 5.26 shows sample 
+output of the nbtstat –S command. 

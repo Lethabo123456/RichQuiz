@@ -1,0 +1,15 @@
+1.6 Overloading Methods and Constructors
+ 
+Often you'll want to have more than one function with the same name. The most common 
+example of this is to have more than one constructor. In the examples shown so far, the con-
+structor has taken a single parameter: a DateTime object. It would be convenient to be able 
+to set new Time objects to an arbitrary time by passing in year, month, date, hour, minute, 
+and second values. It would be even more convenient if some clients could use one construc-
+tor, and other clients could use the other constructor. Function overloading provides for ex-
+actly these contingencies. 
+
+The signature of a method is defined by its name and its parameter list. Two methods differ in 
+their signatures if they have different names or different parameter lists. Parameter lists can 
+differ by having different numbers or types of parameters. For example, in the following code 
+the first method differs from the second in the number of parameters, and the second differs 
+from the third in the types of parameters:

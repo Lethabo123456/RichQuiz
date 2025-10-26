@@ -1,0 +1,13 @@
+ieces of information, the designer must: 
+ 
+Determine the location and physical storage organization for each table. As you saw in Section 
+9-3c, tables are stored in table spaces, and a table space can hold data from multiple tables. In 
+this step, the designer assigns which tables will use which table spaces and assigns the location 
+of the table spaces. For example, a useful technique available in most relational databases is the 
+use of clustered tables. The clustered tables storage technique stores related rows from two 
+related tables in adjacent data blocks on disk. This ensures that the data is stored in sequentially 
+adjacent locations, thereby reducing data access time and increasing system performance.  
+ 
+Identify indexes and the type of indexes to be used for each table. As you saw in previous 
+chapters, indexes are useful for ensuring the uniqueness of data values in a column and to 
+facilitate data lookups. You also know that the DBMS automatically creates a unique ind

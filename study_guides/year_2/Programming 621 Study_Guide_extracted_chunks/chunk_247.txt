@@ -1,0 +1,29 @@
+print() const; 
+ void setBreed(string b = "");  
+dogType(string n = "", string b = ""); 
+ 
+private:  
+string breed; 
+}; 
+Consider the following statements:  
+petType pet("Lucky");  
+dogType dog("Tommy", "German Shepherd"); 
+ 
+pet = dog; 
+ 
+ 
+C++ allows this type of assignment, that is, the values of a derived class object can be 
+copied into a base class object. (Note that the reverse statement, that is, dog = pet; is 
+not allowed.) Now, because the object pet has only one data member ( name ), only 
+the value of the data member name of dog is copied into the data member name of 
+pet. This is called the slicing problem. 
+ 
+Abstract Classes and Pure Virtual Functions 
+ 
+The derived classes, in addition to inheriting the existing members of the base class, 
+can add their own members and also redefine or override public and protected 
+
+232 | P a g e  
+ 
+member functions of the base class. The base class can contain functions that you 
+would want each derived class to implement. There are

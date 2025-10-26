@@ -1,0 +1,29 @@
+▪ Lines 7–8—The code for when the button is clicked references the EditText where the name was 
+entered and the TextView where the message will be displayed. 
+▪ Line 9—The name entered by the user is retrieved from the EditText and stored in a String variable 
+named nameToDisplay. 
+▪ Line 10—The text attribute of the TextView is changed to the value of the String variable. This will 
+be highlighted in yellow. Android does not like concatenating strings while setting the text. It will work, 
+but the preferred method is to use a string value with a placeholder in it. To fix this, open the 
+strings.xml file in the values section of the Project Explorer. Enter the following as a new string 
+resource: 
+ 
+<string name=“welcome_message”>Hello, %1R s!</string> 
+ 
+The %1R s is the placeholder for the text you want to put in, and the string %1 indicates it’s the first 
+placeholder value (you can have more than one). The R s indicates it’s a string value. Next, switch back 
+to the activity code. Before the setText line of code, add the following lines: 
+Resources res = getResources(); // Asks the system for access to the values files 
+String displayString = res.getString(R.string.welcome_message, nameToDisplay); // Creates the 
+string with a message and name Finally, change the setText line to 
+ 
+textDisplay.setText(displayString); 
+ 
+The yellow should go away. 
+Notice that initDisplayButton() is light gray in color. This is because the method is never called by the 
+code. To call it and get the behavior associated with the button to execute, you have to call the method 
+in the onCreate method. After the setContentView line of code, enter 
+ 
+initDisplayButton(); 
+The name gets normal code color and your code is done! Run the app in the emulator using Run > Run 
+App. You could also run your app using the button in the top toolbar.

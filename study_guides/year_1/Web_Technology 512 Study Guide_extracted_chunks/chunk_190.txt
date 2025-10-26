@@ -1,0 +1,34 @@
+t "ID" but "Id". Get that bit wrong and your code won't 
+work. 
+ 
+To change the textbox red, our code is this: 
+ 
+ 
+ 
+ 
+Problem 
+A student wants to have a webpage that 
+changes background color every 3 seconds, 
+how can you do that using javascript? 
+
+ 
+120 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+document.getElementById("textbox_1").style.backgroundColor
+='red'; 
+ 
+So we are still accessing the ID of the textbox. This time, we're adding a style after the 
+round brackets: 
+.style.backgroundColor='red' 
+ 
+The particular style we are changing is the background colour. 
+ 
+7.3 JAVASCRIPT FORM VALIDATION - THE EMAIL FUNCTION 
+ 
+We will start with the function that checks the email address text box. We will only 
+check if the text box has had anything typed into it. Checking for a correct email 
+address is notoriously difficult, so we are just trying to keep things simple here. 
+ 
+Add the following function to your code (you would not be able to copy and paste 
+because ours is an image – you wi

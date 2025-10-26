@@ -1,0 +1,21 @@
+‘t’ to treat the file like a text file,  
+in   
+which case PHP attempts to translate end-of-line characters from or to the operating system’s  
+standard when the file is read or written. For example, to open a file in binary mode use:   
+   
+$handle = fopen( “data.txt”, “rb” );   
+
+47   
+   
+   
+Although this flag is irrelevant for UNIX-like platforms such as Linux and Mac OS X, which treat text 
+and binary files identically, you may find the text mode useful if you’re dealing with files created on a 
+Windows computer, which uses a carriage return followed by a line feed character to represent the 
+end of a line (Linux and the Mac just use a line feed).   
+   
+That said, binary mode is recommended for portability reasons. If you need your application’s data 
+files   
+to be readable by other applications on different platforms, you should use binary mode and write 
+your   
+code to use the appropriate end-of-line characters for the platform on which you are running. (The 
+PHP  constant

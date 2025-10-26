@@ -1,0 +1,28 @@
+set 
+the time and print the time. Therefore, the members that set the time and print the time should be 
+declared public.  
+  
+Similarly, the members to increment the time and compare the time for equality should be declared 
+public. On the other hand, to control the direct manipulation of the data members hr, min, and sec, we 
+will declare these data members private. Furthermore, note that if the user has direct access to the data 
+members, member functions such as setTime are not needed.  
+  
+The following statements define the class clockType:  
+  
+  
+  
+  
+  
+
+28  
+  
+class clockType  
+{ public: void setTime(int hours, int minutes, int seconds);  
+//Function to set the time  
+//The time is set according to the parameters  
+//Postcondition: hr = hours; min = minutes; sec = seconds  
+// The function checks whether the values of hours, // 
+minutes, and seconds are valid. If a value is invalid, // 
+the default value 0 is assigned.  
+  
+void getTime(int& hours, int& minutes, int& secon

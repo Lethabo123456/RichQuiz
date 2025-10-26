@@ -1,0 +1,31 @@
+ve pointer member variables, this section discusses some 
+peculiarities of such classes. To facilitate the discussion, we will use the following 
+class: 
+class ptrMemberVarType 
+ { 
+public: 
+ . . . 
+ private:  
+int x;  
+int lenP; 
+  
+int *p;  
+}; 
+Also, consider the following statements 
+
+211 | P a g e  
+ 
+ptrMemberVarType objectOne;  
+ptrMemberVarType objectTwo; 
+ 
+ 
+ 
+Destructor 
+The object objectOne has a pointer member variable p. Suppose that during program 
+execution, the pointer p creates a dynamic array. When objectOne goes out of scope, 
+all of the member variables of objectOne are destroyed. However, p created a dynamic 
+array, and dynamic memory must be deallocated using the operator delete. Thus, if 
+the pointer p does not use the delete operator to deallocate the dynamic array, the 
+memory space of the dynamic array will stay marked as allocated, even though it 
+cannot be accessed. How do we ensure that when p is destroyed, the dynamic 
+memory created by p is also destroye

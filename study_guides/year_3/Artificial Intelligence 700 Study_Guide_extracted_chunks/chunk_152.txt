@@ -1,0 +1,30 @@
+Quantifiers 
+All we want to know about a given proposition A (Adam is tall) is whether A 
+is true or false. 
+ 
+Given a predicate such as Tall(x), we want to know whether Tall(x) is true 
+for different values of x. 
+ 
+In addition, we might like to know whether Tall(x) is true for every 
+possible value of x, or whether Tall(x) is true for some value of x. 
+ 
+Predicate logic has two additional operators not found in propositional 
+logic (called quantifiers) to express truth values about predicates with  
+variable arguments. 
+ 
+* Existential quantifier E (there exists): (E x) Tall(x) is true if there 
+exists some value for x such that Tall(x) is true. 
+ 
+* Universal quantifier A (for all): (A x) Tall(x) is true if Tall(x) is 
+true for all values of x. 
+ 
+[NB: the existential quantifier is written with a backward E. The 
+universal quantifier is written with an upside-down A. I can't type 
+those in ascii. Please DO NOT feed me ordinary E's and A's on the 
+final: write them the way they're supposed to be written.] 
+ 
+Logical Expressions in Predicate Logic 
+ 
+A logical expression in predicate logic has much the same form as a logical 
+expression in propositional logic, with the addition of atomic formulae 
+(ie., predicates), and the universal and existential quantifiers.

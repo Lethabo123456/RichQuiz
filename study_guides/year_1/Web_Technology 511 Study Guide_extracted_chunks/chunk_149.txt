@@ -1,0 +1,17 @@
+9.3 LIST BOXES 
+User information is easier to collect if you provide the user with several options. You 
+can do this by using a list box. For instance, you can add a list box that contains the 
+list of products of the company in a form used to order products. 
+To add a list box, you use the SELECT and OPTION tags. SELECT tags enclose the items 
+of the list. You specify each item of the list by using an OPTION tag. The NAME 
+attribute of the SELECT tag assigns a name to the list box. 
+To create a list box called “Spices” that contains Anise, Basil, and Cumin, you would 
+use the following code: 
+
+<SELECT NAME="Spices"> 
+<OPTION>Cumin 
+<OPTION>Black Cardamom 
+<OPTION>Green Cardamom 
+</SELECT> 
+
+Exhibit 0-16: The Order page with the list box dropped down 

@@ -1,0 +1,18 @@
+Universal modus ponens is commonly used in mathematical arguments. 
+This is illustrated in following example. 
+ 
+Another useful combination of a rule of inference from propositional logic 
+and rule of inference for quantified statements is universal modus tollens. 
+Universal modus tollens combines universal instantiation and modus tollens.
+
+Worked Example 
+Assume that “For all positive integers 𝑛, if 𝑛 is greater than 4, then 𝑛2 is 
+less than 2𝑛” is true. Use universal modus ponens to show that 1002  <
+2100. 
+Solution: 
+Let 𝑃(𝑛) denote “𝑛 >  4” and 𝑄(𝑛) denote “𝑛2  < 2𝑛.” The statement 
+“For all positive integers 𝑛, if 𝑛 is greater than 4, then 𝑛2 is less than 2𝑛” 
+can be represented by ∀𝑛(𝑃 (𝑛) → 𝑄(𝑛)), where the domain consists 
+of all positive integers. We are assuming that ∀𝑛(𝑃 (𝑛) → 𝑄(𝑛)) is true. 
+Note that 𝑃(100) is true because 100 >  4. It follows by  universal 
+modus ponens that 𝑄(100) is true, namely that 1002  < 2100.   

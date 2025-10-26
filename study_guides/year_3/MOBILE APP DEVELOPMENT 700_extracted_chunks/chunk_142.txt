@@ -1,0 +1,16 @@
+Initial Run of Hello World 
+Run the app in the emulator using Run > Run App (or click the green triangle on the toolbar). Choose 
+your AVD from the chooser window to see the layout as it would appear running (Figure 3.9). The first 
+time you run the emulator, you may have to slide the lock to unlock the device (like a real phone). 
+Note that the emulator might be behind Android Studio, so you will have to minimize windows or in 
+some other way bring it to the foreground. The button clicks but does not do anything. For this to 
+work, you need to write code. Your display may be different based on the selections you made for 
+hardware during AVD creation. 
+
+Coding App Behavior 
+Code to give behavior to the layout is written and stored in the Java class file associated with the 
+layout. Open the MainActivity.java file by double-clicking it. If it is already open, click its tab in the 
+editor. You should see the basic code structure (Listing 3.5). Note: You may have to expand the import 
+section by clicking the + button to the left of the keyword import. 
+This code was generated when you created the activity at the start of the Hello World project. It is 
+important to understand what this code does to properly code an activity.

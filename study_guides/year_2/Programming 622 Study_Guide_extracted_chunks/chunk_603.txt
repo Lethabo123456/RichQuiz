@@ -1,0 +1,23 @@
+on. During the execution of Step 
+2, the elements of the list get arranged as shown in Figure 8-23. (Suppose the name of the array containing 
+the list elements is list.)  
+  
+  
+FIGURE 8-23 List during the execution of Step 2  
+  
+As shown in Figure 8-23, the pivot is in the first array position, elements in lowerSublist are less than the 
+pivot, and elements in the upperSublist are greater than or equal to the pivot. The variable smallIndex 
+contains the index of the last element of lowerSublist and the variable index contains the index of the 
+next element that needs to be moved either in lowerSublist or in upperSublist. As explained in Step 2, if 
+the next element of the list (that is, list[index]) is less than the pivot, we advance smallIndex to the next 
+array position and swap list[index] with list[smallIndex].  Next we illustrate Step 2.  
+  
+Suppose that list is as given in Figure 8-24.  
+  
+  
+FIGURE 8-24 list before sorting  
+  
+
+299  
+  
+For the list in Figure 8-24, the piv

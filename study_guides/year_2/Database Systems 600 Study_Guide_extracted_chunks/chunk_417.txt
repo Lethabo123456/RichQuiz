@@ -1,0 +1,18 @@
+ition most likely to be false first. If you use 
+this technique, the DBMS will stop evaluating the rest of the conditions as soon as it finds a 
+conditional expression that is evaluated as false.  
+ 
+When using multiple OR conditions, put the condition most likely to be true first. By doing 
+this, the DBMS will stop evaluating the remaining conditions as soon as it finds a conditional 
+expression that is evaluated as true.  
+ 
+Whenever possible, try to avoid the use of the NOT logical operator.  
+ 
+ 
+Query Formulation 
+Queries are usually written to answer questions. Often, an end user will give you a sample output 
+and tell you to match that output format, you must write the corresponding SQL. This requires that 
+you must have a good understanding of the database environment and the database that will be the 
+focus of your SQL code. 
+This section focuses on SELECT queries because they are the queries you will find in most 
+applications. To formulate a query, you would normally follo

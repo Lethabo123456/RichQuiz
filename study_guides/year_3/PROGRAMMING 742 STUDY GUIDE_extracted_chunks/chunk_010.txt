@@ -1,0 +1,21 @@
+Table 1-1. Access modifiers 
+ 
+Private 
+The members in class A that are marked private 
+are accessible only to methods of class A. 
+ 
+public 
+No restrictions. Members marked public are visible to any method of any class. 
+ 
+protected 
+The members in class A that are marked protected are accessible to methods of class A and also to 
+methods of classes derived from class A. 
+ 
+internal 
+The members in class A that are marked internal are accessible to methods of any class in A's 
+assembly Protected internal 
+
+The members in class A that are marked protected internal are accessible to methods of class A, to 
+methods of classes derived from class A, and also to any class in A's assembly. This is effectively pro-
+tected OR internal (There is no concept of protected AND internal.) 
+

@@ -1,0 +1,49 @@
+Strategies for Handling Missing Values 
+
+Handling missing values is an essential step in data preprocessing, as unaddressed missing data can 
+lead to misleading results and poor model performance. The choice of method depends on the extent 
+of missing data, the nature of the dataset, and the machine learning task. While simple approaches 
+like mean imputation work well for numerical data, more sophisticated techniques, such as 
+predictive imputation, are necessary when dealing with complex missing data patterns. 
+Effective data cleaning ensures that machine learning models can learn from high-quality, well-
+structured data, leading to more reliable and accurate predictions. 
+ 
+1. Removing Missing Values 
+If only a small percentage of data points contain missing values, removing these rows can 
+prevent contamination of the dataset. This approach is suitable when missing values occur 
+randomly and their removal does not introduce bias. However, removing data can lead to 
+loss of valuable information if the dataset is already small. The code below demonstrates 
+how to remove the rows with missing values. 
+df_cleaned = df.dropna()  # Removes rows with missing values 
+
+2. Filling (Imputing) Missing Values 
+Instead of discarding data, missing values can be filled using statistical methods. Imputation 
+prevents data loss while ensuring consistency across the dataset. 
+✓ Mean imputation (suitable for numerical data that follows a normal distribution). 
+✓ Median imputation (best for skewed data). 
+✓ Mode imputation (used for categorical data). 
+            The code below demonstrates how to fill in missing data using mean and mode. 
+# Fill missing values with the mean 
+df['Age'].fillna(df['Age'].mean(), inplace=True)   
+ 
+# Fill categorical missing values with mode 
+df['Gender'].fillna(df['Gender'].mode()[0], inplace=True)   
+Example: Filling Missing Values Using Mean full code 
+import pandas as pd 
+from sklearn.impute import SimpleImputer 
+# Sample data 
+data = {'Age': [25, 30, None, 45, 50], 'Salary': [50000, None, 60000, 80000, 90000]} 
+df = pd.DataFrame(data) 
+# Impute missing values with mean 
+imputer = SimpleImputer(strategy="mean") 
+df.iloc[:, :] = imputer.fit_transform(df) 
+print(df)
+
+3. Predicting Missing Values Using Machine Learning 
+In cases where missing values are extensive, machine learning models can predict them using 
+existing features. k-Nearest Neighbors (k-NN) or regression models can estimate missing 
+values by analyzing patterns in the available data. The code below uses  k-NN Imputer to  fill 
+in the missing values. 
+from sklearn.impute import KNNImputer 
+imputer = KNNImputer(n_neighbors=5) 
+df_filled = imputer.fit_transform(df)

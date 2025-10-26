@@ -1,0 +1,40 @@
+Consider the following expressions, which you have been accustomed to working with 
+since high school: -5, 8 -7, 3 + 4, 2 + 3 * 5, 5.6 + 6.2 * 3, and x + 2 * 5 + 6 / y, where 
+x and y are unknown numbers. These are examples of arithmetic expressions. The 
+numbers appearing in the expressions are called operands. The numbers that are 
+used to evaluate an operator are called the operands for that operator. In expression 
+-5, the symbol - specifies that the number 5 is negative. In this expression, - has only 
+one operand. Operators that have only one operand are called unary operators. In 
+expression 8 -7, the symbol - is used to subtract 7 from 8. In this expression, - has two 
+operands, 8 and 7. Operators that have two operands are called binary operators. 
+
+Unary operator: An operator that has only one operand.  
+Binary operator: An operator that has two operands. 
+
+Order of Precedence 
+When more than one arithmetic operator is used in an expression, C++ uses the 
+operator precedence rules to evaluate the expression. According to the order of 
+precedence rules for arithmetic operators, *, /, and % are at a higher level of 
+precedence than + and - Note that the operators *, /, and % have the same level of 
+precedence.  
+
+Similarly, the operators + and - have the same level of precedence. When operators 
+have the same level of precedence, the operations are performed from left to right. To 
+avoid confusion, you can use parentheses to group arithmetic expressions. For 
+example, using the order of precedence rules, 
+ 3 * 7 - 6 + 2 * 5 / 4 + 6 
+ means the following:  
+
+(((3 * 7) - 6) +((2 * 5) / 4)) + 6  
+= ((21 - 6) + (10 / 4)) + 6 (Evaluate *)  
+= ((21 - 6) + 2) + 6 (Evaluate /. Note that this is an integer division.) 
+ = (15 + 2) + 6 (Evaluate -)  
+= 17 + 6 (Evaluate first +)  
+= 23 (Evaluate +) 
+
+Note that the use of parentheses in the second example clarifies the order of 
+precedence. You can also use parentheses to override the order of precedence rules. 
+Because arithmetic operators, using the precedence rules, are evaluated from left to
+right, unless parentheses are present, the associativity of the arithmetic operators is 
+said to be from left to right. 
+ 

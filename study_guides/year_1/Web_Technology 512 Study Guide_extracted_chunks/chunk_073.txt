@@ -1,0 +1,26 @@
+ver_eighteen = false. Save and rerun the script in your browser. You should see the 
+message "You're too young - go away!". 
+ 
+Now try this script: 
+
+ 
+48 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+ 
+The first line gets the Inner Width available to the browser. We want to check what 
+this is. Our IF statement uses the Greater Than operator ( > ) to check if the value in the 
+available_width variable is more than 800 pixels. (If we wanted more precision we 
+could have used the >= operator, which means Greater Than or Equal To.) If the 
+condition evaluates to true (it is more than 800) then we'll show a larger image. 
+However, if the condition evaluates to false then we'll show the smaller image. 
+  
+Exercise 3.5 
+Reduce the size of your browser. Refresh the page and see what happens. If you 
+reduce your browser to below 800 in width then the else part of the IF statement 
+should execute. 
+ 
+Exercise 3.6 
+Change the Greater Than symbol to a Less Than symbol. Change the document.write 
+m

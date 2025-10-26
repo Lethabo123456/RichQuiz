@@ -1,0 +1,48 @@
+The for loop is illustrated in Example 1-13. 
+ 
+Example 1-13. The for loop 
+ 
+This for loop makes use of the modulus operator described later in this chapter. The value of 
+i is printed until i is a multiple of 10. 
+if (i%10 == 0) 
+A tab is then printed, followed by the value. Thus the tens (20, 30, 40, etc.) are called out on 
+the right side of the output. The individual values are printed using Console.Write, which is 
+much like WriteLine but which does not enter a newline character, allowing the subsequent 
+writes to occur on the same line. 
+ 
+A few quick points to notice: in a for loop the condition is tested before the statements are 
+executed. Thus, in the example, i is initialized to zero, then it is tested to see if it is less than 
+100. Because i < 100 returns true, the statements within the for loop are executed. After the 
+execution, i is incremented (i++). Note that the variable i is scoped to within the for loop (that 
+is, the variable i is visible only within the for loop). The line shown in bold fails, as the variable 
+i is not available outside the scope of the for loop itself.
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int i = 0; 
+for (int i=0;i<100;i++) 
+{ 
+//repeat: // the label 
+Console.WriteLine("i: {0} ", i); 
+i++; 
+//if (i < 10) 
+//goto repeat; // the dastardly deed return 0; 
+if (i%10 == 0) 
+{ 
+Console.WriteLine("\t{ 0} “, i); 
+} 
+} 
+Console.ReadLine(); 
+}}} 
+ 
+OUTPUT 
+ 

@@ -1,0 +1,28 @@
+6.4 Using Throws   
+In some cases, if a method generates an exception that it does not handle, it must declare that 
+exception in a throws clause. Here is the general form of a method that includes a throws clause:    
+ret-type methName(param-list) throws except-list {   
+ // body    
+}   
+Here, except-list is a comma-separated list of exceptions that the method might throw outside of 
+itself.    
+You might be wondering why you did not need to specify a throws clause for some of the preceding 
+examples, which threw exceptions outside of methods. The answer is that exceptions that are 
+subclasses of Error or RuntimeException don’t need to be specified in a throws list. Java simply 
+assumes that a method may throw one. All other types of exceptions do need to be declared. Failure 
+to do so causes a compile-time error.  Actually, you saw an example of a throws clause earlier in this 
+book. As you will recall, when performing keyboard input, you needed to add the clause  throws 
+java.io.IOException to main( ). Now you can understand why.  
+
+An input statement might generate an IOException, and at that time, we weren’t able to handle that 
+exception. Thus, such an exception would be thrown out of main( ) and needed to be specified as 
+such. Now that you know about exceptions, you can easily handle IOException.   
+   
+Let’s look at an example that handles IOException. It creates a method called prompt( ), which 
+displays a prompting message and then reads a character from the keyboard. Since input is being 
+performed, an IOException might occur. However, the prompt( ) method does not handle 
+IOException itself. Instead, it uses a throws clause, which means that the calling method must 
+handle it. In this example, the calling method is main( ), and it deals with the error.    
+On a related point, notice that IOException is fully qualified by its package name java.io. Thus, the 
+IOException is also contained there. It would also have been possible to import java.io and then 
+refer to IOException directly.

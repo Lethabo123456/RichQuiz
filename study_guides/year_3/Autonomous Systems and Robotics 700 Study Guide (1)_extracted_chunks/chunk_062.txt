@@ -1,0 +1,17 @@
+2.4.1 Types of Images 
+
+2.4.1.1 Digital Images 
+Digital images are interpreted as 2D or 3D matrices by a computer, where each value or pixel in 
+the matrix represents the amplitude, known as the “intensity” of the pixel. Typically, we are used 
+to dealing with 8-bit images, wherein the amplitude value ranges from 0 to 255. 
+
+Thus, a computer “sees” digital images as a function: I(x, y) or I(x, y, z), where “I” is the pixel 
+intensity and (x, y) or (x, y, z) represent the coordinates (for binary/grayscale or RGB images 
+respectively) of the pixel in the image. Computers deal with different “types” of images based on 
+their function representations. 
+ 
+2.4.1.2 Binary Image 
+Images that have only two unique values of pixel intensity- 0 (representing black) and 1 
+(representing white) are called binary images. Such images are generally used to highlight a 
+discriminating portion of a coloured image. For example, it is commonly used for image 
+segmentation, as shown below. 

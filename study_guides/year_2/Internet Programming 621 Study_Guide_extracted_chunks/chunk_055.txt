@@ -1,0 +1,25 @@
+may be used to include or exclude.  
+String  
+There is only one STRING [.] operator and it is 
+used to concatenate or join together string 
+objects.  
+Array  
+Perform operations on arrays  
+  
+We are all familiar with arithmetic operators [+, -, / and *] and the assignment operator [=]. 
+Comparison operators [==, >, <, <=, >= and, !=] are such as all of us have without doubt used since 
+time immemorial.  
+  
+2.10 Bitwise Operators  
+PHP’s bitwise operators let you work on the individual bits within integer variables. Consider the 
+integer value 1234. For a 16-bit integer, this value is stored as two bytes: 4 (the most significant 
+
+31  
+byte) and 210 (the least significant). 4 * 256 + 210 = 1234. Here’s how those two bytes look as a 
+string of bits:  
+  
+00000100 11010010  
+  
+A bit with a value of 1 is said to be set, whereas a bit with a value of 0 is unset (or not set). PHP’s 
+bitwise operators let you manipulate these bits directly, as shown in the following table. Each 
+example

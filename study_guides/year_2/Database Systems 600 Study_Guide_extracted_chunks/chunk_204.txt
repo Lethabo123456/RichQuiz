@@ -1,0 +1,14 @@
+NUM S PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, HOURS  
+That is, the PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, and HOURS values are all 
+dependent on—they are determined by—the combination of PROJ_NUM and EMP_NUM.  
+Achieving 1NF is insufficient to address all the anomalies that existed in the original structure. 1NF 
+has dealt with the repeating groups and ensured that our table conforms to the requirements for a 
+relational table. However, anomalies remain. The anomalies that remain exist because there are 
+additional dependencies.  
+ By further studying the data in Figure 6.2, you can see that knowing the job classification means 
+knowing the charge per hour for that job classification. Therefore, you can identify one last 
+dependency:  
+JOB_CLASS  CHG_HOUR 
+However, this dependency exists between two nonprime attributes; therefore, it is a signal that a 
+transitive dependency exists, and we will refer to it as a transitive dependency. The dependencies 
+you have just examined can a

@@ -1,0 +1,22 @@
+1.13.3 Factory Floor Automation 
+For shops that are running automated assembly and manufacturing equipment, time is money. 
+For every minute a machine is idle, productivity drops and the cost of ownership soars. Many 
+automated factory floor machines have dedicated PCs to control them. In some cases, handheld 
+PCs are used to reprogram equipment for different functions such as changing computer 
+numerically controlled (CNC) programs or changing specifications on a bottling or packaging 
+machine to comply with the needs of other products. These previously isolated pieces of industrial 
+equipment could be networked to allow them to be controlled and reprogrammed over the 
+network, saving time and increasing shop efficiency. For example, from a central location (or 
+actually from anywhere in the world for that matter) with network connectivity, the machines can 
+be accessed and monitored over the network. When necessary, new programs can be downloaded 
+to the machine and software/firmware updates can be installed remotely. 
+
+One item of interest is how that input programming is formatted. Since many industrial and 
+factory automation devices are legacy or proprietary, any number of different data protocols 
+could be used. Device servers provide the ability to utilize the serial ports on the equipment for 
+virtually any kind of data transaction. 
+Lantronix device servers support binary character transmissions. In these situations, managing the 
+rate of information transfer is imperative to guard against data overflow. The ability to manage 
+data flow between computers, devices or nodes in a network, so that data can be handled 
+efficiently is referred to as flow control. Without it, the risk of data overflow can result in 
+information being lost or needing to be retransmitted. 

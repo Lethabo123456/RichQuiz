@@ -1,0 +1,26 @@
+Uploading important data is also a concern. As with a download, uploads should be performed 
+asynchronously. You need to check that the upload was completed fully so that if a connection is lost 
+during the upload, the user’s data is not corrupted. This means that the data should be cached locally 
+until it is successfully uploaded. Finally, you may need to provide functionality to upload the data when 
+a good connection becomes available. 
+Communication problems external to the app can affect your app’s performance. You must plan for 
+this potential scenario to provide the best user experience possible. 
+ 
+Battery Issues 
+
+Mobile devices are just that—mobile. This means that they are not always connected to a power 
+source. They rely on batteries for their power, and batteries can be drained. Your job as a developer 
+is to not drain those batteries unnecessarily. This is not just a courtesy issue. If every time your app is 
+used the user’s device quickly becomes a brick, it will be noticed. An app that quickly drains power will 
+not get used, will get bad reviews, and eventually will not get downloaded at all. 
+The primary power draw for devices is the display. You cannot do much about that except to make 
+sure that your code is efficient and doesn’t take an unnecessary amount of time to complete the work 
+that the user wants to do. 
+
+Also, you should make sure that users can pick up where they left off if the 
+app is interrupted, so the screen doesn’t need to be on so long. 
+After the screen, the primary power drains are the sensors. The global positioning system (GPS), 
+camera, communication, and other sensors are all big power draws. Fortunately, it is within your 
+power to control these things. You control access to device hardware within your app and should turn 
+on these capabilities only just before the user needs them. You should also turn them off as soon as 
+the user completes the task that requires these items. 

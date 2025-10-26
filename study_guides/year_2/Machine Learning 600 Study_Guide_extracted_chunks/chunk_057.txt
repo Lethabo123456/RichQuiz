@@ -1,0 +1,23 @@
+tition (see Figure 3.1). 
+With the scores of the first judge, is it possible to reliably predict the scores of the second 
+judge? We can find out by using simple linear regression. 
+ 
+                                       
+ 
+                                                              Figure 3.1: Dataset showing judge’s scores 
+ 
+
+P a g e  | 30 
+ 
+3.2.1 Scatter Plots 
+The next step is to create a simple scatter plot graph. Select all the numbers in both columns 
+and click insert at the top. The top section of Excel will display a new set of icons; look for the 
+Graph section, and you will see a scatter plot diagram. Clicking this will open a dialog box with 
+scatter plot options. Choose the Scatter option, which is the basic plot. See Figure 3.2 
+   
+ 
+                                                            Figure 3.2: Scatter Plot of the two judges’ scores 
+ 
+3.2.2 Trendline 
+First, we would like to see a trendline to show where the data lies relative to the slope. Click 
+the di

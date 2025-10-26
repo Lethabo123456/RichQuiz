@@ -1,0 +1,16 @@
+For the most part, the preceding output is self-explanatory. Notice that the statement in Line 12 calls the 
+function insert of the class arrayListType. Similarly, the statements in Lines 16 and 20 call the function 
+print of the class arrayListType. The statement in Line 18 calls the function selectionSort to sort the list.  
+  
+ 
+8.2.1  Analysis: Selection Sort  
+  
+In the case of search algorithms (Chapter 7), our only concern was with the number of key (item) 
+comparisons. A sorting algorithm makes key comparisons and also moves the data. Therefore, in analyzing 
+the sorting algorithm, we look at the number of key comparisons as well as the number of data 
+movements. Let us look at the performance of selection sort.  
+  
+Suppose that the length of the list is n. The function swap does three item assignments and is executed n 
+- 1 times. Hence, the number of item assignments is 3(n - 1).   
+  
+The key comparisons are made by the function minLocation. For a list of length k, the func

@@ -1,0 +1,24 @@
+port or constrain. 
+§ 
+Maintain the business rules in a way that allows for changes as business policies 
+change. 
+To effectively perform business rules analysis, you need to have a data dictionary and 
+glossary for your specific project or your organization. 
+Recommended Technique: Data Flow Diagrams 
+Data flow diagrams (DFDs) model how information flows within a system. DFDs portray the 
+transformation of data by looking at the following: 
+§ 
+External entities that are sources or destinations for data 
+§ 
+Data processes that transform the data in some way 
+§ 
+Data stores that collect the data for some period of time 
+§ 
+Data flows moving data between external entities, processes, and data stores 
+DFDs help you understand the range of data found within a solution or solution component. 
+They are created after a context diagram has been built that shows you the high-level view of 
+
+ 
+11 
+the solution and its associated data flow. However, DFDs do not show you who performs the 
+work nor

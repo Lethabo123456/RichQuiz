@@ -1,0 +1,20 @@
+h. (The dotted arrow shows the shortest path from the 
+source—that is, from 0—to the vertex.)  
+  
+  
+FIGURE 10-10 Graph after the first iteration of Steps 3 to 5  
+  
+Iteration 2 of Steps 3 through 5: At Step 3, we select vertex 4 because this is the vertex in the array 
+smallestWeight that has the smallest weight and its corresponding entry in the array weightFound is false. 
+Next we execute Steps 4 and 5. At Step 4, we set weightFound[4] to true. At Step 5, we consider vertices 
+1 and 2 because these are the vertices for which there is an edge from the vertex 4 and the shortest path 
+from 0 to these vertices has not been found.We then check if the path from the vertex 0 to the vertices 1 
+and 2 via the vertex 4 can be improved. Clearly, the weight of the path 0-4-1, which is 13, is smaller than 
+the current weight of 1, which is 14. So we update smallestWeight[1]. Similarly, we update 
+smallestWeight[2]. Figure 10-11 shows the resulting graph.  
+  
+
+402  
+  
+  
+FIGURE 10-11 Graph af

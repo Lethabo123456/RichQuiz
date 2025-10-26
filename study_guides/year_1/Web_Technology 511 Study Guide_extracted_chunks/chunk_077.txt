@@ -1,0 +1,19 @@
+ Linking to another page on your site 
+
+A hyperlink that links one page to another page in your Web site is useful in situations 
+when you cannot provide all the relevant information on one page. For example, on 
+the PC Training and Business College Web site, the home page displays a welcome 
+message and history about the institution but the user has the option of cl icking any 
+of the hyperlink for more (e.g. Management Structure, Staff portal, Programs, etc.) 
+information about an institution. To create a hyperlink to the different Web page, use 
+the following code: 
+
+<a href="page_name.html">Click here</a> 
+Where page_name will be the name of the Web page you want to link to and Click 
+Here will be the hyperlink. 
+
+e.g. <a href=”home.html”>Go to homepage</a> 
+home.html is the file to which the link points. When you click the text “Click here,” 
+home.html appears in the browser. If you want to link to a file that is stored in a 
+subdirectory, the value assigned to the HREF attribute will be the path of that file with 
+respect to the current directory. 

@@ -1,0 +1,42 @@
+3.5.  Practical Problems with Agile Methodology  
+In some areas, particularly in the development of software products and apps, agile development 
+has been incredibly successful. It is by far the best approach to use for this type of system.  
+However, agile methods may not be suitable for other types of software development, such as 
+embedded systems engineering or the development of large and complex systems. For large, 
+long-lifetime systems that are developed by a software company for an external client, using an 
+agile approach presents a number of problems. 
+ 
+i. The informality of agile development is incompatible with the legal approach to 
+contract definition that is commonly used in large companies. 
+ii. Agile methods are most appropriate for new software development rather than 
+for software maintenance. Yet, the majority of software costs in large companies 
+come from maintaining their existing software systems. 
+iii. Agile methods are designed for small co-located teams, yet much software 
+development now involves worldwide distributed teams 
+ 
+Contractual issues can be a major problem when agile methods are used. When the system 
+customer uses an outside organization for system development, a contract for the software 
+development is drawn up between them. The software requirements document is usually part of 
+that contract between the customer and the supplier. Because the interleaved development of 
+requirements and code is fundamental to agile methods, there is no definitive statement of 
+requirements that can be included in the contract. 
+ 
+Consequently, agile methods have to rely on contracts in which the customer pays for the time 
+required for system development rather than the development of a specific set of requirements. 
+As long as all goes well, this benefits both the customer and the developer. However, if problems 
+arise, then there may be difficult disputes over who is to blame and who should pay for the extra 
+time and resources required to resolve the problems. 
+
+Another key challenge in using an agile approach to maintenance is keeping customers involved 
+in the process. While a customer may be able to justify the full-time involvement of a 
+representative during system development, this is less likely during maintenance where changes 
+are not continuous. Customer representatives are likely to lose interest in the system.  
+Agile methods rely on team members understanding aspects of the system without having to 
+consult documentation. If an agile development team is broken up, then this implicit knowledge 
+is lost, and it is difficult for new team members to build up the same understanding of the system 
+and its components. Many programmers prefer to work on new development to software 
+maintenance, and so they are unwilling to continue to work on a software system after the first 
+release has been delivered. Therefore, even when the intention is to keep the development team 
+together, people leave if they are assigned maintenance tasks. 
+
+Table 3.4: Agile practices and organizational practices

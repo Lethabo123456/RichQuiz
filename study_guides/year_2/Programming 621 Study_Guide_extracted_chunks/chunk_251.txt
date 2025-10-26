@@ -1,0 +1,63 @@
+which is the class shape 
+ 
+Note that in addition to the pure virtual functions, an abstract class can contain 
+instance variables, constructors, and functions that are not pure virtual. However, the 
+abstract class must provide the definitions of the constructor and functions that are not 
+pure virtual. The following example further illustrates how abstract classes work. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+235 | P a g e  
+ 
+ 
+The definitions of the constructor and functions of the class employeeType that are 
+not pure virtual are: 
+ 
+The definition of the class fullTimeEmployee is: 
+
+236 | P a g e  
+ 
+ 
+ 
+ 
+The definitions of the constructor and functions of the class fullTimeEmployee are: 
+
+237 | P a g e  
+ 
+ 
+ 
+
+238 | P a g e  
+ 
+ 
+The definition of the class partTimeEmployee is: 
+ 
+ 
+
+239 | P a g e  
+ 
+ 
+The definitions of the constructor and functions of the class 
+partTimeEmployee are: 
+ 
+
+240 | P a g e  
+ 
+ 
+ 
+ 
+OVERLOADING 
+
+241 | P a g e  
+ 
+ 
+Recall that the only built-in operations on

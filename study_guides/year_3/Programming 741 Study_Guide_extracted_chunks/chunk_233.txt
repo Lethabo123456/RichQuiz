@@ -1,0 +1,78 @@
+6.2.6 The finally Statement 
+In some instances, throwing an exception and unwinding the stack can create a problem. For 
+example, i f you have opened a file or otherwise committed a resource, you might need an 
+opportunity to close the file or flush the buffer. In the event, however, that there is some 
+action you must take regardless of whether an exception is thrown, such as closing a file, you 
+have two strategies to choose from. One approach is to enclose the dangerous action in a try 
+block and then to close the file in both the catch and try blocks. However, this is an ugly 
+duplication of code, and it's error prone. C# provides a better alternative in the finally block. 
+ 
+The code in the finally block is guaranteed to be executed regardless of whether an exception 
+is thrown. The TestFunc( ) method in Example 5-5 simulates opening a file as its first action. 
+The method undertakes some mathematical operations, and the file is closed. It is possible 
+that some time between opening and closing the file an exception will be thrown. If this were 
+to occur, it would be possible for the file to remain open. The developer knows that no matter 
+what happens, at the end of this method the file should be closed, so the file close function 
+call is moved to a finally block, where it will be executed regardless of whether an exception 
+is thrown. 
+ 
+Example 5-5. Using a finally block 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{
+public class Test 
+{ 
+public static void Main() 
+{ 
+Test t = new Test(); 
+t.TestFunc(); 
+} 
+// try to divide two numbers 
+// handle possible exceptions 
+public void TestFunc() 
+{ 
+try 
+{ 
+Console.WriteLine("Open file here"); 
+double a = 5; 
+double b = 0; 
+Console.WriteLine("{0} / {1} = {2}", 
+a, b, DoDivide(a, b)); 
+Console.WriteLine( 
+"This line may or may not print"); 
+} 
+// most derived exception type first 
+catch (System.DivideByZeroException) 
+{ 
+Console.WriteLine( 
+"DivideByZeroException caught!"); 
+} 
+catch 
+{ 
+Console.WriteLine("Unknown exception caught"); 
+} 
+finally 
+{ 
+Console.WriteLine("Close file here."); 
+} 
+} 
+// do the division if legal 
+public double DoDivide(double a, double b) 
+{ 
+if (b == 0) 
+throw new System.DivideByZeroException(); 
+if (a == 0) 
+throw new System.ArithmeticException(); 
+return a / b; 
+} 
+} 
+} 
+OUTPUT: 
+ 
+In this example, one of the catch blocks has been eliminated to save space and a Finally block 
+has been added. Whether or not an exception is thrown, the finally block is executed, and so 
+in both output examples you see the message: Close file here.

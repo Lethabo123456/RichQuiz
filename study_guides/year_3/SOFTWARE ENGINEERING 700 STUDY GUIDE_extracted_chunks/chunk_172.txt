@@ -1,0 +1,51 @@
+In practice, you have to use several knowledge sources to discover object classes. Object classes, 
+attributes, and operations that are initially identified from the informal system description can be 
+a starting point for the design. Information from application domain knowledge or scenario 
+analysis may then be used to refine and extend the initial objects.  
+ 
+This information can be collected from requirements documents, discussions with users, or 
+analyses of existing systems. As well as the objects representing entities external to the system, 
+you may also have to design “implementation objects” that are used to provide general services 
+such as searching and validity checking. 
+ 
+Figure 5.3: Weather station object (Sommerville,  I.  2021)   
+ 
+In the wilderness weather station, object identification is based on the tangible hardware in the 
+system. I don’t have space to include all the system objects here, but I have shown five object 
+classes in the Figure above.  The Ground thermometer, Anemometer, and Barometer objects are 
+application domain objects, and the WeatherStation and WeatherData objects have been 
+identified from the system description and the scenario (use case) description: 
+ 
+• The WeatherStation object class provides the basic interface of the weather station with 
+its environment. Its operations are based on the interactions shown above. A single object 
+class, and it includes all of these interactions. Alternatively, you could design the system 
+interface as several different classes, with one class per interaction.  
+• The WeatherData object class is responsible for processing the report weather command. 
+It sends the summarized data from the weather station instruments to the weather 
+information system. 
+• The Ground thermometer, Anemometer, and Barometer object classes are directly related 
+to instruments in the system. They reflect tangible hardware entities in the system and 
+the operations are concerned with controlling that hardware. These objects operate 
+autonomously to collect data at the specified frequency and store the collected data 
+locally. This data is delivered to the WeatherData object on request 
+
+You use knowledge of the application domain to identify other objects, attributes. and services: 
+ 
+• Weather stations are often located in remote places and include various instru-ments that 
+sometimes go wrong. Instrument failures should be reported auto-matically. This implies 
+that you need attributes and operations to check the correct functioning of the 
+instruments. 
+ 
+• There are many remote weather stations, so each weather station should have its own 
+identifier so that it can be uniquely identified in communications. 
+• As weather stations are installed at different times, the types of instrument may be 
+different. Therefore, each instrument should also be uniquely identified, and a database 
+of instrument information should be maintained. 
+
+At this stage in the design process, you should focus on the objects themselves, without thinking 
+about how these objects might be implemented. Once you have identified the objects, you then 
+refine the object design. You look for common features and then design the inheritance hierarchy 
+for the system. For example, you may identify an Instrument superclass, which defines the 
+common features of all instruments, such as an identifier, and get and test operations. You may 
+also add new attributes and operations to the superclass, such as an attribute that records how 
+often data should be collected. 

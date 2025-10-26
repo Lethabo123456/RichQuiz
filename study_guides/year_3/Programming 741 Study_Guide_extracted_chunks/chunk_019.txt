@@ -1,0 +1,18 @@
+How to create a console application in Visual Studio 2022 
+1. On the Windows taskbar, select Start, type Visual Studio 2022, and press Enter. 
+Alternatively, select the Visual Studio 2022 icon on the Start menu. Visual Studio 2022 starts 
+and displays the Start page, similar to the following image:
+ 
+Figure 1.1 
+
+2. In the Get started pane, select Create a new project.  
+The Create a new project dialog opens. This dialog lists the templates that you can use 
+as a starting point for building an application. The dialog categorizes templates 
+according to the programming language you’re using and the type of application. 
+3. In the Create a new project dialog, enter the following values, and select Next: 
+a. In the All-languages dropdown list box, select C#. 
+b. In the All-platforms dropdown list box, select Windows. 
+c. In the All project types dropdown list box, select Console. 
+d. Select the Console App (.NET Framework) template. 
+ 
+Figure 1.2 

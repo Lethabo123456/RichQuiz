@@ -1,0 +1,37 @@
+nds;  
+else 
+ sec = 0;  
+} 
+ 
+clockType::clockType()                 //default constructor 
+ {  
+hr = 0; 
+  
+min = 0;  
+sec = 0; 
+ } 
+Invoking Constructors 
+Invoking the Default Constructor Suppose that a class contains the default 
+constructor. The syntax to invoke the default constructor is: 
+
+191 | P a g e  
+ 
+ 
+For example, the statement:  
+clockType yourClock; 
+ declares yourClock to be an object of type clockType.  
+ 
+ 
+ 
+Invoking a Constructor with Parameters 
+ 
+Suppose a class contains constructors with parameters. The syntax to invoke a 
+constructor with a parameter is: 
+ 
+in which argument1, argument2, and so on are either a variable or an expression. Note 
+the following:  
+ The number of arguments and their type should match the formal parameters 
+(in the order given) of one of the constructors. 
+ If the type of the arguments does not match the formal parameters of any 
+constructor (in the order given), C++ uses type conversion and looks for the 
+best match. For example, a

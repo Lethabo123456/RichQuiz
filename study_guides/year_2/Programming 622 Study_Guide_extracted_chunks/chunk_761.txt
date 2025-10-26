@@ -1,0 +1,17 @@
+FIGURE 9-26 Item insertion into a B-tree of order 5  
+  
+The insertion of 40, 30, 70, and 5 is shown in Figure 9-26(a). The insertion of 16 requires to split the root 
+node, causing the height of the tree to increase; see Figure 9-26(b). The insertion of 82 and 95 is shown 
+in Figure 9-26(c). The next item inserted is 100; see Figure 9-26(d). The item 100 is to be inserted in the 
+right child of the root node. However, the right child of the root node is full. So we split this node and 
+move the median key, which is 82, to the parent node. Because the parent node is not full, we can insert 
+82 in the parent node; see Figure 9-26(d).  
+  
+Figure 9-27 shows the insertion of 73, 54, 98, and 37.  
+  
+  
+FIGURE 9-27 Insertion of 73, 54, 98, and 37  
+  
+Note that 73, 54, and 98 are inserted without splitting any node; see Figure 9-27(a). However, the insertion 
+of 37 requires the splitting of a node. The item 37 is to be inserted in the right child of 30. However, the 
+right child of 30 i

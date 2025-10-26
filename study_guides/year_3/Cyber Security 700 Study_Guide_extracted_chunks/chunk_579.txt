@@ -1,0 +1,29 @@
+Incident Management Information 
+The information security incident management framework is responsible for detailing the types of 
+information needed to assist information security incident management. The SGP lists the following 
+information types needed for incident management: 
+ 
+ Contact details for relevant parties, such as business managers, technical experts (such as 
+those in a security operations center [SOC] or equivalent), and external suppliers 
+ Security-related event logs (for example, those produced by applications, systems, network 
+devices, and security products) 
+ Details about affected business environments, such as processes, operations, and applications 
+ Technical details, such as network diagrams, system configurations, and external network 
+connections 
+ Threat intelligence and the results of threat analysis 
+
+Incident Management Tools 
+The information security information management framework specifies the tools needed to assist 
+information security incident management (for example, checklists, e-discovery software, log 
+analyzers, incident tracking software, forensic analysis software). 
+ 
+One of the most important incident management tools is a SIEM system. SIEM is a broader term than 
+SEM and refers to a more comprehensive system of information collection and subsequent action. 
+Capabilities of a typical SIEM include the following, according to ISACA’s Security Information and 
+Event Management: Business Benefits and Security, Governance and Assurance Perspectives [ISAC10]: 
+ 
+ Data collection: In a typical use case, a SIEM solution must be able to touch a number of 
+different systems: firewalls, proxy servers, databases, intrusion detection and prevention 
+systems, operating systems, routers, switches, access control systems, and so on. Some of 
+these share similar logging and alert functions, but frequently there is significant variation in 
+the format, protocol, and information provided. 

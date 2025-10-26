@@ -1,0 +1,20 @@
+For example when planning a new data center, it is therefore sensible to install a cabling system that 
+can support at least two generations of Ethernet over a 10 year lifespan.  
+For copper switch-to-server connections that means category 6A (for now) and for fiber backbone 
+switch-to-switch connections that means either 0M4 laser-optimized multimode or single mode 
+optical fiber. But watch out—category 8 has just started to be used. 
+ 
+2.1.1 Future of Ethernet  
+Each and every person talk of the need for higher speed switch-to-server connections in today’s 
+virtualized data centers, the IEEE 802.3bq 40GBASE-T task force is well on their way to defining the 
+topology, reach objectives, cabling requirements and the power consumption of the next generation 
+physical layer interface (PHY) to transmit at speeds of 40 Gb/s. There is TIA 42.7 subcommittee 
+developing the category 8 cabling standards to support the future 40GBASE-T standard.
+
+Figure 20: Ethernet Standard 
+It (40GBASE-T) is intended to be used for switch-to-server connections in the data center; the ability 
+to interoperate with legacy slower-speed Ethernet technologies through auto negotiation is a goal 
+that is here to stay. This is facilitated by the use of the 8-pin modular (RJ-45) connector, and TIA is 
+therefore developing the category 8 cabling standard to include this recognized de facto interface. 
+Category 8 cabling is specified to 2 GHz, or four times the bandwidth specified for Category 6A 
+cabling and twice the bandwidth specified for Category 7A cabling. 

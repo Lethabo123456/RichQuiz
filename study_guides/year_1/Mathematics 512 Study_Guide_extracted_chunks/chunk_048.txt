@@ -1,0 +1,28 @@
+4.6 Derivatives of Trigonometric Functions 
+The limits below are required for proving the derivatives of trigonometric 
+functions. These limits and the derivatives of the trigonometric functions will 
+be proven in your calculus lectures. Here, they are simply stated. 
+
+lim𝜃→0 sin𝜃/𝜃 = 1   lim𝜃→0 (cos𝜃 −1)/𝜃 = 0    lim𝜃→0 tan𝜃/𝜃 = 1 
+
+These limits are used often when solving trigonometric limit problems. Try to 
+remember them and the conditions under which they hold.  The derivatives of 
+the six trigonometric functions are shown below. 
+
+𝑑/𝑑𝑥 sin𝑥 = cos𝑥       𝑑/𝑑𝑥  csc𝑥 = − csc𝑥 cot𝑥 
+𝑑/𝑑𝑥 cos𝑥 = −sin𝑥      𝑑/𝑑𝑥 sec𝑥 = sec𝑥 tan𝑥  
+𝑑/𝑑𝑥 tan𝑥 = 𝑠𝑒𝑐**2𝑥     𝑑/𝑑𝑥  cot𝑥 = −𝑐𝑠𝑐**2𝑥
+ 
+The derivatives of the co-functions (cosine, cosecant and cotangent) have a "-
+" sign at the beginning. The derivatives of the other 3 functions have a "+" sign 
+at the beginning. This is a helpful way to remember the signs when taking the 
+derivatives of trigonometric functions. 
+
+In order to do this, you'll need to identify inside and outside functions. When 
+you take the derivative, you'll take the derivative of the outside function first, 
+leaving the inside function completely untouched. Ignore it, as if it were 
+simple. Think about it like peeling away layers of an onion, or just as working 
+your way in from the outside. After you've taken the derivative of the outside 
+function, multiply that result by the derivative of the inside function. Then 
+simplify your result as much as possible.
+

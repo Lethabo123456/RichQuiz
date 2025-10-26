@@ -1,0 +1,17 @@
+that can be 
+performed on it, such as changing its data values, finding a specific data value, and printing data 
+values. Because objects include data, various types of relation- ships, and operational procedures, 
+the object becomes self-contained, thus making it a basic building block for autonomous structures. 
+The OO data model is based on the following components:  
+ 
+An object is an abstraction of a real-world entity. In general terms, an object may be 
+considered equivalent to an ER model’s entity.  
+ 
+Attributes describe the properties of an object. For example, a PERSON object includes the 
+attributes Name, Social Security Number, and Date of Birth.  
+ 
+Objects that share similar characteristics are grouped in classes. A class is a collection of 
+similar objects with shared structure (attributes) and behaviour (methods). A class’s method 
+represents a real-world action such as finding a selected PERSON’s name, changing a 
+PERSON’s name, or printing a PERSON’s address.  
+

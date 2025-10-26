@@ -1,0 +1,26 @@
+TOPIC FOUR | DERIVATIVES 
+ 
+4.1 Derivatives 
+The average rate of change of a function 𝑦= 𝑓(𝑥) from 𝑥 to 𝑎 is given by the 
+equation: 
+
+Δ𝑦/Δ𝑥 = 𝑓(𝑥) −𝑓(𝑎) / 𝑥 − 𝑎
+ 
+The average rate of change is equal to the slope of the secant line that passes 
+through the points (𝑓, 𝑓(𝑥)) and (𝑎,𝑓(𝑥)). As 𝑥 approaches 𝑎 along the curve, 
+the secant line approaches the tangent line to the curve at 𝑎. The slope of the 
+tangent line at 𝑎 is equal to the instantaneous rate of change of the function 
+at 𝑎. This slope can be calculated by taking the limit of the average rate of 
+change, as 𝑥 approaches 𝑎. 
+
+A derivative is the instantaneous rate of change of a function. When finding 
+the equation of tangent lines, the slope of the curve 𝑓(𝑥) at (𝑎,𝑓(𝑎)) is equal 
+to the derivative of 𝑓 at 𝑎. When finding rates of change, the instantaneous 
+rate of change of a function 𝑓(𝑥) when  𝑥 = 𝑎 is equal to the derivative of 𝑓   
+at 𝑎. Derivatives have their own notation. The derivative of a function 𝑓 at a 
+number 𝑎 is denoted by 𝑓 '(𝑎) and is given by: 
+
+𝑓′(𝑎) = limℎ→0  𝑓(𝑎+ ℎ) −𝑓(𝑎)/ℎ = lim𝑥→𝑎 𝑓(𝑥) −𝑓(𝑎) / 𝑥−𝑎
+     
+So 𝑓 '(𝑎) represents the slope of the tangent line to the curve at a, or 
+equivalently, the instantaneous rate of change of the function at 𝑎. 

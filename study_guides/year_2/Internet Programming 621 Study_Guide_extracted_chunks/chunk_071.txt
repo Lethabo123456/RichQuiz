@@ -1,0 +1,16 @@
+valuates to false , the echo() statement is skipped, and nothing is displayed.  
+  
+The key point to remember is that, no matter how complex your test expression is, if the whole 
+expression evaluates to true the code inside the braces is run; otherwise the code inside the 
+braces is skipped and execution continues with the first line of code after the closing brace.  
+You can have as many lines of code between the braces as you like, and the code can do 
+anything, such as display something in the browser, call a function, or even exit the script.  
+  
+  
+  
+3.3 The else Statement  
+As you have already seen, the if statement allows you to run a block of code if an expression 
+evaluates to true . If the expression evaluates to false , the code is skipped. You can enhance this 
+decision-making process by adding an else statement to an if construction. This lets you run one 
+block of code if an expression is true , and a different block of code if the expression is false . For 
+example:

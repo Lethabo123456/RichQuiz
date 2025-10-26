@@ -1,0 +1,43 @@
+@Override 
+public void didFinishDatePickerDialog(Calendar selectedTime) { 
+} 
+ 
+The didFinishDatePickerDialog method is the code that will handle the date that the user selected. 
+Enter the following two lines of code in the method: 
+TextView birthDay = findViewById(R.id.textBirthday); 
+birthDay.setText(DateFormat.format(“MM/dd/yyyy”, selectedTime); 
+ 
+Some of the code may be highlighted in red, indicating that it needs to be imported. In the case of 
+DateFormat, you may see two import options. Choose android.text.format. This code gets a reference 
+to the TextView that will display the date and set its text attribute to a string produced by the 
+DateFormat.format method. 
+The last thing to do for the dialog is to code the Change button to make it display the dialog. Add the 
+code in Listing 4.11 to the MainActivity. 
+
+Listing 4.11 - Change Birthday Butto
+private void initChangeDateButton() {
+  Button changeDate = findViewById(R.id.btnBirthday);
+  changeDate.setOnClickListener(new View.OnClickListener() {
+        
+      @Override
+      public void onClick(View view) {
+          FragmentManager fm = getSupportFragmentManager();
+          DatePickerDialog datePickerDialog = new DatePickerDialog();
+          datePickerDialog.show(fm, "DatePick")
+      }
+   });
+}
+
+Most of the code is standard initialization of a button to respond to the user pressing the button. The 
+code to be executed when the click occurs displays the dialog. 
+▪ Line 7—A FragmentManager is a required object to manage any and all fragments displayed in an 
+activity. It needs to be imported. 
+▪ Line 8—A new instance of the DatePickerDialog class is created. 
+▪ Line 9—The DatePickerDialog’s show method (inherited from DialogFragment) displays the dialog. 
+The method requires an instance of a FragmentManager and a name, which the FragmentManager 
+uses to keep track of the dialog. 
+
+Be sure to call the initChangeDateButton() method in the onCreate method of MainActivity. The app 
+interface is ready to be tested! Run it to be sure that the dialog is displayed and the correct date is 
+placed in the TextView.
+ 

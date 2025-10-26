@@ -1,0 +1,17 @@
+As you can see, both mybox1 and mybox2 were initialized by the Box( ) constructor when they were 
+created. Since the constructor gives all boxes the same dimensions, 10 by 10 by 10, both mybox1 
+and mybox2 will have the same volume. The println( ) statement inside Box( ) is for the sake of 
+illustration only. Most constructors will not display anything. They will simply initialize an object. 
+Before moving on, let’s reexamine the new operator. As you know, when you allocate an object, you 
+use the following general form:   
+   
+class-var = new classname( );   
+   
+Now you can understand why the parentheses are needed after the class name. What is actually 
+happening is that the constructor for the class is being called. Thus, in the line Box mybox1 = new 
+Box(); new Box( ) is calling the Box( ) constructor. When you do not explicitly define a constructor 
+for a class, then Java creates a default constructor for the class. This is why the preceding line of 
+code worked in earlier versions of Box that did not define a constructor. The default constructor 
+automatically initializes all instance variables to zero. The default constructor is often sufficient for 
+simple classes, but it usually won’t do for more sophisticated ones. Once you define your own 
+constructor, the default constructor is no longer used.

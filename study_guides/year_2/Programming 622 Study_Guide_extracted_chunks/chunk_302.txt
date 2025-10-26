@@ -1,0 +1,25 @@
+trace the execution of this statement; which is a function call, for the list shown in Figure 4-5. 
+Because the formal parameter is a value parameter, the value of the actual parameter is passed to the 
+formal parameter. See Figure 4-6.  
+  
+
+152  
+  
+  
+FIGURE 4-6 Execution of the statement reversePrint(first);  
+  
+4.2.2.1 The Function printListReverse  
+  
+Now that we have written the function reversePrint, we can write the definition of the function 
+printListReverse, which can be used to print an ordered linked list contained in an object of the type 
+linkedListType. Its definition is as follows:  
+  
+template <class Type>  
+void linkedListType<Type>::printListReverse() const  
+{ reversePrint(first);  
+cout << endl;  
+}  
+  
+We can include the function printListReverse as a public member in the definition of the class and the 
+function reversePrint as a private member. We include the function reversePrint as a private member 
+because it is used only to implement the function prin

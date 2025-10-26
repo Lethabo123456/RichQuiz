@@ -1,0 +1,25 @@
+2.3.2 Adders 
+This section will illustrate how logic circuits can be used to carry out addition 
+of two positive integers from their binary expansions. It will show how to 
+build up the circuitry to do this addition from some 
+component circuits. The input to our circuit will be x and y, because these 
+each have the value 0 or the value 1. The output will consist of two bits, 
+namely, s and c, where s is the sum bit and c is the carry bit. This circuit is 
+called a multiple output circuit because it has more than one output. The 
+circuit that we are designing is called the half adder, because it adds two bits, 
+without considering a carry from a previous addition. We show the input and 
+output for the half adder in Table 17. From Table 17 we see that 𝑐 =  𝑥𝑦 and 
+that 𝑠 =  𝑥𝑦̅ + 𝑥̅𝑦 = (𝑥 +  𝑦)(𝑥𝑦)
+̅̅̅̅̅̅. Hence, the circuit shown in Figure 2.4 
+computes the sum bit s and the carry bit c from the bits x and y. We use the 
+full adder to compute the sum bit and the carry bit when two bits and a carry 
+are added. The inputs to the full adder are the bits x and y and the carry 𝑐𝑖 . 
+The outputs are the sum bit s and the new carry ci+1. The inputs and outputs 
+for the full adder are shown in Table 17 
+ 
+Table 17: Input and Output for the Half Adder 
+ 
+A Half Adder is a combinational circuit that performs the addition of two 
+bits, this circuit needs two binary inputs and two binary outputs. 
+ 
+Figure 2.4: The Half Adder 

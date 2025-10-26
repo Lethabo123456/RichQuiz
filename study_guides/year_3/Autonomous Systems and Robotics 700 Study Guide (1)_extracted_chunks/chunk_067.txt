@@ -1,0 +1,32 @@
+For example, the earliest example of using Deep Learning to address the Super-Resolution 
+problem is the SRCNN model, where a low-resolution image is first upscaled using traditional 
+Bicubic Interpolation and then used as the input to a CNN model. The non-linear mapping in the 
+CNN extracts overlapping patches from the input image, and a convolution layer is fitted over the 
+extracted patches to obtain the reconstructed high-resolution image.  The model framework is 
+shown visually below. 
+ 
+An example of the results obtained by the SRCNN model compared to its contemporaries is shown 
+below. 
+ 
+2.4.2.2 Image Restoration 
+The quality of images could degrade for several reasons, especially photos from the era when 
+cloud storage was not so commonplace. For example, images scanned from hard copies taken 
+with old instant cameras often acquire scratches. 
+ 
+Image Restoration is particularly fascinating because advanced techniques in this area could 
+potentially restore damaged historical documents. Powerful Deep Learning-based image 
+restoration algorithms may be able to reveal large chunks of missing information from torn 
+documents. 
+
+Image inpainting, for example, falls under this category, and it is the process of filling in the 
+missing pixels in an image. This can be done by using a texture synthesis algorithm, which 
+synthesises new textures to fill in the missing pixels. However, Deep Learning-based models are 
+the de facto choice due to their pattern recognition capabilities. 
+ 
+An example of an image painting framework (based on the U-Net autoencoder) was 
+proposed in this paper that uses a two-step approach to the problem: a coarse 
+estimation step and a refinement step. The main feature of this network is the 
+Coherent Semantic Attention (CSA) layer that fills the occluded regions in the input 
+images through iterative optimisation. The architecture of the proposed model is 
+shown below. 
+ 

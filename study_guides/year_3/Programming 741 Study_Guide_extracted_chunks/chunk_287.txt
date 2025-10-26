@@ -1,0 +1,21 @@
+7.3 Events Graphical user interfaces (GUIs), Windows, and web browsers (such as Microsoft), require 
+that programs respond to events. An event might be a button push, a menu selection, the 
+completion of a file transfer, and so forth. In short, something happens and you must 
+respond to it. You cannot predict the order in which events will arise. The system is 
+quiescent until the event, and then it springs into action to handle the event.  
+ 
+In a GUI environment, any number of widgets can raise an event. For example, when you 
+click a button, it might raise the Click event. When you add to a drop-down list, it might 
+raise a List Changed event. 
+Other classes will be interested in responding to these events. How they respond is not of 
+interest to the class raising the event. The button says "I was clicked," and the responding 
+classes react appropriately. 
+
+7.3.1 Publishing and Subscribing 
+In C#, any object can publish a set of events to which other classes can subscribe. When the 
+publishing class raises an event, all the subscribed classes are notified. With this mechanism, 
+your object can say "Here are things I can notify you about," and other classes might sign up, 
+saying "Yes, let me know when that happens." For example, a button might notify any 
+number of interested observers when it is clicked. The button is called the publisher 
+because the button publishes the Click event and the other classes are the subscribers 
+because they subscribe to the Click event.

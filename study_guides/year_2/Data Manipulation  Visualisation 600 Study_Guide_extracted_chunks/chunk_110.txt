@@ -1,0 +1,40 @@
+random_y, mode = 
+'markers', 
+ 
+marker = dict(# change the marker style size = 12, 
+ 
+color = 'rgb(51,204,153)', symbol = 
+'pentagon', line = dict( 
+width = 2, 
+) 
+) 
+)] 
+ 
+layout = go.Layout( 
+title = 'Random Data Scatterplot', # Graph title 
+ 
+
+ 
+ 
+ 
+ 
+xaxis = dict(title = 'Some random x-values'), # x-axis label yaxis = dict(title = 'Some random 
+y-values'), # y-axis label 
+hovermode ='closest' # handles multiple points landing on the same vertical 
+ 
+) 
+fig = go.Figure(data=data, layout=layout) 
+ 
+pyo.plot(fig, filename='scatter3.html') 
+ 
+ 
+ 
+        
+      6.3.2 Line Charts 
+Line charts are little more than scatter plots that have only one data point per x-value, and (optionally) a line 
+connecting the markers. To illustrate this, we’ll take another random sample of data that is evenly distributed along 
+the x-axis. 
+line1.py makes three copies of the same random dataset. Each set becomes a trace, that is, an independent set of 
+data that appears on our graph. 
+ 
+import plotly.of

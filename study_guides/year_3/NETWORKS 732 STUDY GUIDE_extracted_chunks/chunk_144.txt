@@ -1,0 +1,23 @@
+3.4 Password Attacks 
+Password attacks are one of the most common attacks there are. Cracked or disclosed passwords 
+can lead to severe data breaches (CISECURITY, 2025). The endgame of a phishing attack is often 
+to learn a password. Password cracking can be done in diﬀerent ways; however, this content 
+covers the Brute-Force attack and Dictionary attack. 
+The Brute-force attacker attempts every possible combination of numbers and letters that could 
+be in a password. Theoretically, given enough time and processing power, any password can be 
+cracked. When long, complex passwords are used, however, it can take years. Similar to a brute- 
+force attack, a dictionary attack uses all the words in a dictionary until a key is discovered that 
+successfully decrypts the ciphertext. This attack requires considerable time and processing power 
+and is very diﬃcult to complete. It also requires a comprehensive dictionary of words. An 
+automated program uses the hash of the dictionary word and compares this hash value to entries 
+in the system password ﬁle. Although the program comes with a dictionary, attackers also use 
+extra dictionaries that are found on the Internet. 
+
+3.5 Social Engineering Techniques 
+Phishing is a social engineering attack in which attackers try to learn personal information, 
+including credit card information and ﬁnancial data. This type of attack is usually carried out by 
+implementing a fake website that is nearly identical to a legitimate website. Users are led there 
+by fake emails that appear to come from a trusted source. Users enter data, including credentials, 
+on the fake website, allowing the attackers to capture any information entered. Spear phishing is 
+a phishing attack carried out against a speciﬁc target by learning about the target’s habits and 
+likes. The best defense is security awareness training for the users.

@@ -1,0 +1,14 @@
+oth procedural (function-oriented)  
+and object-oriented interfaces. Because it has quite a large set of functions and classes, it  
+can seem overwhelming if you’re not used to working with databases. However, if you know 
+you are only ever going to work with MySQL, and you want to squeeze the most out of 
+MySQL’s power from your PHP scripts, then mysqli is a good choice   
+• 
+PDO (PHP Data Objects) — This is an object-oriented extension that sits between the MySQL  
+server and the PHP engine. It gives you a nice, simple, clean set of classes and methods that 
+you can use to work with MySQL databases. Furthermore, you can use the same extension 
+to talk to lots of other database systems, meaning you only have to learn one set of classes 
+and methods in order to create applications that can work across MySQL, PostgreSQL, 
+Oracle, and so on   
+Choosing between these two extensions can be a topic of religious debate among PHP developers, 
+which goes to show that both approaches have their

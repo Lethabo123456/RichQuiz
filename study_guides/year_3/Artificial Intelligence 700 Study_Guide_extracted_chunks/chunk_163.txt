@@ -1,0 +1,27 @@
+Laws for Manipulating Quantifiers 
+Binding free variables in a tautology 
+ 
+If a logical expression L with free variables x1..xn is a tautology, then (A 
+x1)(A x2)..(A xn) L is also a tautology. 
+ 
+We can use the above rule to bind all free variables in a tautology to a 
+universal quantifier. 
+ 
+P(x,y) OR NOT P(x,y) == 1 
+== (A x)(A y) (P(x,y) OR NOT P(x,y)) 
+ 
+An expression with no free variables is a closed expression. 
+ 
+Moving NOT within a quantifier 
+ 
+There is rule analogous to DeMorgan's law that allows us to move a NOT 
+operator through an expression containing a quantifier. 
+ 
+NOT (A x) L(x) == (E x) (NOT L(x)) 
+ 
+NOT (E x) L(x) == (A x) (NOT L(x)) 
+ 
+The first rule can be read as "it is not the case that for all x, L(x) is true" 
+is equivalent to "for some x, it is not the case that L(x) is true". The 
+second rule can be read as "it is not the case that for some x L(x) is 
+true" is equivalent to "for all x, it is not the case that L(x) is true". 

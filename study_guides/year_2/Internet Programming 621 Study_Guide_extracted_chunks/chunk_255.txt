@@ -1,0 +1,51 @@
+onst","I am awesome!"); 
+echo constant("const"); 
+} 
+one(); 
+?> 
+a) I am awesome!! 
+b) const 
+c) const, I am awesome!! 
+d) “const”,”I am awesome!” 
+  
+Answer: a 
+111. 
+What will be the output of the following PHP code? 
+<?php 
+$title = "O'malley wins the heavyweight championship!"; 
+echo ucwords($title); 
+?> 
+a) O’Malley Wins The Heavyweight Championship! 
+b) O’malley Wins The Heavyweight Championship! 
+c) O’Malley wins the heavyweight championship! 
+d) o’malley wins the heavyweight championship! 
+Answer: d 
+ 
+
+112. 
+What will be the output of the following PHP code? 
+<?php 
+echo str_pad("Salad", 5)." is good."; 
+?> 
+a) SaladSaladSaladSaladSalad is good 
+b) is good SaladSaladSaladSaladSalad 
+c) is good Salad 
+d) Salad is good 
+  
+Answer: d 
+  
+113. 
+What will be the output of the following PHP code? 
+<?php 
+$str = "Hello World" 
+echo wordwrap($str,5,"<br>\n");     
+?> 
+a) Hello-World 
+b) HelloWorld 
+c) Helo world 
+d) World 
+  
+Answer: b 
+  
+114. 
+What will be the output of the followin

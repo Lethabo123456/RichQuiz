@@ -1,0 +1,24 @@
+remove these entries from the hash table, we store -1 at positions 3 and 6 in the 
+array indexStatusList (see Figure 7-9).  
+  
+  
+FIGURE 7-9 Hash table and indexStatusList after removing the entries at positions 3 and 6  
+
+277  
+  
+   
+ 
+7.3.5  Hashing: Implementation Using Quadratic Probing  
+  
+Better behaviour is usually obtained with quadratic probing, where the secondary hash function depends 
+on the re-hash index:   
+  
+address = h(key) + c i2   
+  
+on the tth re-hash. (A more complex function of i may also be used.) Since keys which are mapped to the 
+same value by the primary hash function follow the same sequence of addresses, quadratic probing shows 
+secondary clustering. However, secondary clustering is not nearly as severe as the clustering shown by 
+linear probes.   
+Re-hashing schemes use the originally allocated table space and thus avoid linked list overhead, but 
+require advance knowledge of the number of items to be stored.   
+However, the collision elements are sto

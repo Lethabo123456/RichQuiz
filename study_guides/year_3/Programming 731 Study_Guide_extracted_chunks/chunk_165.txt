@@ -1,0 +1,88 @@
+Inside square( ), the parameter i receives that value. You can use a parameterized method to 
+improve the Box class. In the preceding examples, the dimensions of each box had to be set 
+separately by use of a sequence of statements, such as:   
+     
+mybox1.width = 10; 
+mybox1.height = 20; 
+mybox1.depth = 15;   
+   
+While this code works, it is troubling for two reasons. First, it is clumsy and error prone. For example, 
+it would be easy to forget to set a dimension. Second, in well-designed Java programs, instance 
+variables should be accessed only through methods defined by their class. In the future, you can 
+change the behavior of a method, but you can’t change the behavior of an exposed instance 
+variable. Thus, a better approach to setting the dimensions of a box is to create a method that takes 
+the dimension of a box in its parameters and sets each instance variable appropriately. This concept 
+is implemented by the following program:   
+   
+// 
+This 
+program 
+uses 
+a 
+parameterized  method. class Box { double 
+width; double height;   
+   
+double depth;   
+// 
+compute 
+and 
+return 
+volume double volume() { 
+return width * height * depth;   
+   
+}   
+//
+compute 
+and 
+return 
+volume double volume() { 
+return width * height * depth;   
+   
+}   
+// sets dimensions of box  void 
+setDim(double w, double h, double d)  
+{ width = w; height = h; depth = d;   
+}   
+}   
+   
+class BoxDemo5 {  public static void 
+main(String args[ ]) {   
+Box mybox1 = new Box();   
+Box 
+mybox2 
+= 
+new 
+Box();    
+ 
+double vol;   
+// 
+initialize 
+each 
+box 
+mybox1.setDim(10, 20, 15);   
+   
+mybox2.setDim(3, 6, 9);   
+// 
+get 
+volume 
+of 
+first 
+box 
+vol 
+= 
+mybox1.volume();   
+System.out.println("Volume is " 
++ vol); // get volume of second 
+box vol = mybox2.volume();   
+System.out.println("Volume is " + 
+vol);   
+}   
+}   
+   
+As you can see, the setDim( ) method is used to set the dimensions of each box. For example, when 
+mybox1.setDim(10, 20, 15);is executed, 10 is copied into parameter w, 20 is copied into h, and 15 is 
+copied into d. Inside setDim( ) the values of w, h, and d are then assigned to width, height, and 
+depth, respectively. For many readers, the concepts presented in the preceding sections will be 
+familiar. However, if such things as method calls, arguments, and parameters are new to you, then 
+you might want to take some time to experiment before moving on. The concepts of the method 
+invocation, parameters, and return values are fundamental to Java programming.  

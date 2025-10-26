@@ -1,0 +1,33 @@
+The base metric group represents the intrinsic characteristics of a vulnerability that are constant over 
+time and across user environments. It consists of three sets of metrics: 
+
+ Exploitability: These metrics reflect the ease and technical means by which the vulnerability 
+is exploited. The metrics are: 
+ Attack vector: As mentioned, this metric is a measure of how remote an attacker can be from 
+the vulnerable component.  
+ Attack complexity: Conveys the level of difficulty required for an attacker to exploit a 
+vulnerability once the target component is identified. The complexity is rated high if the 
+attacker cannot accomplish the attack at will but must invest some measurable amount of 
+effort in preparation or execution. 
+ Privileges required: Measures the access an attacker requires to exploit a vulnerability. The 
+values are none (no privileged access required), low (basic user privileges), and high 
+(administrative-level privileges). 
+ User interaction: Indicates whether a user other than the attacker must participate for a 
+successful attack. 
+ Impact: These metrics indicate the degree of impact on the primary security objectives 
+confidentiality, integrity, and availability. In each of these cases, the score reflects the worst 
+outcome if more than one component is affected (scope = changed). For each of the three 
+objectives, the values are high (total loss of confidentiality, integrity, or availability), low (some 
+loss), and none. 
+ Scope: This metric is grouped within the base metric group although it is somewhat 
+independent of the remainder of the group. It refers to the ability for a vulnerability in one 
+software component to impact resources beyond its means, or privileges. An example is a 
+vulnerability in a virtual machine that enables an attacker to delete files on the host operating 
+system. An unchanged value of this metric means that the vulnerability can only affect 
+resources managed by the same authority. 
+ 
+Generally, the base and temporal metrics are specified by vulnerability bulletin analysts, security 
+product vendors, or application vendors because they typically have better information about the 
+characteristics of a vulnerability than do users. The environmental metrics, however, are specified by 
+users because they are best able to assess the potential impact of a vulnerability within their own 
+environments.

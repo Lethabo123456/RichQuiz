@@ -1,0 +1,27 @@
+4.3 Introducing Methods   
+   
+As mentioned at the beginning of this chapter, classes usually consist of two things: instance 
+variables and methods. The topic of methods is a large one because Java gives them so much power 
+and flexibility. In fact, much of the next chapter is devoted to methods. However, there are some 
+fundamentals that you need to learn now so that you can begin to add methods to your classes.   
+   
+This is the general form of a method:   
+   
+type name(parameter-list) {   
+// body of method   
+   
+}  
+ 
+Here, type specifies the type of data returned by the method. This can be any valid type, including 
+class types that you create. If the method does not return a value, its return type must be void. The 
+name of the method is specified by name. This can be any legal identifier other than those already 
+used by other items within the current scope. The parameter-list is a sequence of type and identifier 
+pairs separated by commas. Parameters are essentially variables that receive the value of the 
+arguments passed to the method when   
+it is called. If the method has no parameters, then the parameter list will be empty. Methods that 
+have a return type other than void return a value to the calling routine using the following form of 
+the return statement:  return value;   
+Here, value is the value returned.   
+
+In the next few sections, you will see how to create various types of methods, including those that 
+take parameters and those that return values. 

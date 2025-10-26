@@ -1,0 +1,33 @@
+ead and send the form. If just one of them is false then the 
+form will not be sent. 
+ 
+So add a function called validate in between your two SCRIPT tags. In between the 
+curly brackets of the validate function, add the following four variables and function 
+ 
+THINK POINT 
+ 
+Why do you need form 
+validation? 
+
+ 
+118 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+calls: 
+function validate()  
+{ 
+var emailError = checkEmail(); 
+var radioError = checkRadio(); 
+var dropdownError = checkDropdown(); 
+var checkboxError = checkCheckbox(); 
+} 
+ 
+The four variables are emailError, radioError, dropdownError, and checkboxError. To 
+the right of these variables we have four function calls: checkEmail, checkRadio, 
+checkDropdown, and checkCheckbox. Once a value has been returned from these 
+functions the variables will be either true or false. We'll add the IF Statement that 
+checks these values later. 
+ 
+7.2 USING getElementById IN JAVASCRIPT 
+ 
+The document method getElementById is used to manipulate parti

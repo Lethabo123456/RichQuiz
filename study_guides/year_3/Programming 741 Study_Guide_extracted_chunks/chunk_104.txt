@@ -1,0 +1,33 @@
+You can use the Circle class like you have used the other types you have already met. You 
+create a variable specifying Circle as its type, and then you initialize the variable with some 
+valid data. Here’s an example: 
+
+Circle c; // Create a Circle variable 
+c = new Circle (); // Initialize it 
+A point worth highlighting in this code is the use of the new keyword. Previously, when you 
+initialized a variable such as an int or a float, you simply assigned it a value: 
+int i; 
+i = 42; 
+
+You cannot do the same with variables of class types. One reason for this is that C# just doesn’t 
+provide the syntax for assigning literal class values to variables. You cannot write a statement 
+such as this: 
+Circle c; 
+c = 42; 
+  
+Note
+The Math class contains methods for performing mathematical calculations and fields containing 
+mathematical constants. The Math.PI field contains the value 3.14159265358979, which 
+approximates the value of pi 
+
+After all, what is the Circle equivalent of 42? Another reason concerns the way in which 
+memory for variables of class types is allocated and managed by the runtime. For now, just 
+accept that the new keyword creates a new instance of a class, more commonly called an 
+0bject. You can, however, directly assign an instance of a class to another variable of the same 
+type, like this: 
+ 
+Circle c; 
+c = new Circle(); 
+Circle d; 
+d = c; 
+c = 42;

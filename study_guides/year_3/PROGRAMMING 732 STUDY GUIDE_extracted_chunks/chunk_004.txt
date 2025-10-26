@@ -1,0 +1,25 @@
+1.1. FEATURES OF SWINGS  
+• Swing provides more powerful and flexible components that are possible with AWT. In addition to 
+the familiar components, such as buttons, check boxes, and labels, Swing supplies several exciting 
+additions, including tabbed panes, scroll panes, trees and tables.   
+• Swing components are not implemented by platform-specific code. Instead, they are written 
+entirely in Java and, therefore, are platform independent. The number of classes and interfaces in 
+the swing packages is substantial.  
+  
+1.1.1 Swing Components  
+Various swing component classes used in this chapter are as follows:  
+(a) Abstract Button: Abstract super class for swing buttons.  
+(b) Button Group: Encapsulates a mutually exclusive set of buttons.  
+(c) Image Icon: Encapsulates in icon.  
+(d) Japplet: The swing version of applet.  
+(f) JButton: Class of swing push button.  
+(g) JCheck Box: Class of swing check box.  
+(h) JCombo Box: Encapsulates a combo box.  
+(i) JLabel: The swing version of a label  
+(j) JRadio Button: The swing version of radio button.  
+(k) JScroll pane: Encapsulates a scroll bar window.  
+(l) JTabbed Pane: Encapsulates a tabbed window.  
+(m) JTable: Encapsulates a table-based control. (n) JText field: The swing version of a text field.  
+(o) JTree: Encapsulates a tree-based control.  
+  
+All swing-related classes are contained in javax·swing and its sub packages like javax.swing.tree. 

@@ -1,0 +1,18 @@
+ric between -1 and 1 that measures how two variables move 
+with each other. If two variables have a correlation close to -1, it means that as one variable 
+increases, the other decreases, and if two variables have a correlation close to +1, it means 
+that those variables move together in the same direction—as one increases, so does the 
+other, and vice versa.  
+  
+Causation is the idea that one variable affects another. For example, we can look at two 
+variables: the average hours of TV watched in a day and a 0-100 scale of work performance 
+(0 being very poor performance and 100 being excellent performance). One might expect that 
+these two factors are negatively correlated, which means that as the number of hours of TV 
+watched increases in a 24-hour day, the overall work performance goes down. Recalling the 
+code from earlier, which is as follows: 
+  
+import pandas as pd  
+hours_tv_watched = [0, 0, 0, 1, 1.3, 1.4, 2, 2.1, 2.6, 3.2, 4.1,    4.4, 4.4, 5]  
+  
+  
+Here, looking at the s

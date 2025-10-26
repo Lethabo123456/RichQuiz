@@ -1,0 +1,25 @@
+a anomalies. Redundant relationships occur when there are multiple relationship paths 
+between related entities. The main concern with redundant relationships is that they remain 
+consistent across the model.  
+However, it is important to note that some designs use redundant relationships to simplify the 
+design. A specific example of a redundant relationship is represented in Figure 5.14. In Figure 5.14, 
+note the transitive 1:M relationship between DIVISION and PLAYER through the TEAM entity 
+set. Therefore, the relationship that connects DIVISION and PLAYER is redundant, for all practical 
+purposes. In that case, the relationship could be safely deleted without losing any information-
+generation capabilities in the model. 
+ 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Five page 180-187. 
+
+ 
+71 
+ 
+Chapter Summary/Review 
+ 
+In this chapter, you learned: 
+ 
+ Tables are the basic building blocks of a rela

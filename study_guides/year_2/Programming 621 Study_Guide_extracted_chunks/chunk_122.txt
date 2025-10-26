@@ -1,0 +1,16 @@
+ue of number after calling the function 
+funcValueParam. The sample run shows that the value of number (Lines 7 and 9) 
+remains the same even though the value of its corresponding formal parameter num 
+was changed within the function funcValueParam. The output shows the sequence in 
+which the statements execute. 
+After copying data, a value parameter has no connection with the actual parameter, 
+so a value parameter cannot pass any result back to the calling function. When the 
+function executes, any changes made to the formal parameters do not in any way 
+affect the actual parameters. The actual parameters have no knowledge of what is 
+happening to the formal parameters. Thus, value parameters cannot pass information 
+outside of the function. Value parameters provide only a one-way link from the actual 
+parameters to the formal parameters. Hence, functions with only value parameters 
+have limitations 
+ 
+Reference Variables as Parameters 
+Because a reference parameter receives the addr

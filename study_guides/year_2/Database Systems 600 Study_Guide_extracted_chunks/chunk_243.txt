@@ -1,0 +1,21 @@
+OM clause of the SELECT statement. Different DBMS products vary in 
+the column headings that are displayed for the computed column. 
+To make the output more readable, an alias is typically used for any computed fields. An alias, in 
+simple terms, is a column name that is defined by the programmer within an SQL query. For 
+example, you can rewrite the previous SQL statement as follows:  
+SELECT  P_DESCRIPT, P_QOH, P_PRICE, P_QOH * P_PRICE AS TOTVALUE  
+FROM  
+PRODUCT;  
+Arithmetic Operators: The Rule of Precedence 
+SQL commands are often used in conjunction with the arithmetic operators shown in Table 7.4. 
+
+ 
+97 
+ 
+As you perform mathematical operations on attributes, remember the mathematical rules of 
+precedence. As the name suggests, the rules of precedence are the rules that establish the order in 
+which computations are completed. For example, note the order of the following computational 
+sequence:  
+1. Perform operations within parentheses.  
+2. Perform power operations.  
+3. Pe

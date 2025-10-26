@@ -1,0 +1,14 @@
+le, the recovery process uses the transaction log to “undo” all of the transactions that were not 
+committed (see Chapter 10, Transaction Management and Concurrency Control).  
+At the end of this phase, the database completes an iterative process of testing, evaluation, and 
+modification that continues until the system is certified as ready to enter the operational phase. 
+ 
+Operation 
+Once the database has passed the evaluation stage, it is considered operational. At that point, the 
+database, its management, its users, and its application programs constitute a complete information 
+system. 
+The beginning of the operational phase invariably starts the process of system evolution. As soon 
+as all the targeted end users have entered the operations phase, problems that could not have been 
+foreseen during the testing phase begin to surface. Some of the problems are serious enough to 
+warrant emergency “patchwork,” while others are merely minor annoyances.  
+The web, the sheer volume of t

@@ -1,0 +1,13 @@
+ottlenecks and optimize database performance is the focal point 
+of this chapter. 
+ 
+Indexes and Query Optimization 
+Indexes are crucial in speeding up data access because they facilitate searching, sorting, and using 
+aggregate functions and even join operations. The improvement in data access speed occurs because 
+an index is an ordered set of values that contains the index key and pointers. The pointers are the 
+row IDs for the actual table rows. Conceptually, a data index is like a book index.  
+An index scan is more efficient than a full table scan because the index data is pre-ordered, and the 
+amount of data is usually much smaller. Therefore, when performing searches, it is almost always 
+better for the DBMS to use the index to access a table than to scan all rows in a table sequentially.  
+Given a table with 14,786 customer records, in the absence of an index, the DBMS will perform a 
+full-table scan and read all 14,786 customer rows. Assuming an index is created (and analysed

@@ -1,0 +1,21 @@
+string of text is 
+of a certain length. In essence, if you can create a test in the form of an expression that evaluates to 
+either true or false , you can use that test to make decisions in your code.  
+  
+You can see that, thanks to the wide range of operators available in PHP, you can construct some 
+pretty complex expressions. This means that you can use almost any test as the basis for decision-
+making in your code. PHP gives you a number of statements that you can use to make decisions:  
+The if statement  
+The else and elseif statements  
+The switch statement  
+  
+3.2 The if Statement 
+The easiest decision-making statement to understand is the if statement. The basic form of an if 
+construct is as follows:  
+if ( expression ) {  
+// Run this code  
+}  
+// More code here  
+  
+If the expression inside the parentheses evaluates to true , the code between the braces is run. If 
+the expression evaluates to false , the code between the braces is skipped. That ’ s really all there i

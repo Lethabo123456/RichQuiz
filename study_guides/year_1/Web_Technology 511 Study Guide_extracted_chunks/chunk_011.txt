@@ -1,0 +1,27 @@
+1.4 COMMUNICATION PROTOCOLS 
+In an effort to standardize data transmission, the Transmission Control 
+Protocol/Internet Protocol was created. Today, we refer to this protocol as TCP/IP. 
+More specifically, Hypertext Markup Language (HTML) is the standard 
+programming language used to build documents for the Web; and Hypertext 
+Transfer Protocol (HTTP) is the set of rules used to distribute hypertext documents 
+on the Web. For most Web sites, you will need to use HTTP. There are two other 
+protocols that you might run across: 
+
+ HTTPS: This is HTTP with a Secure Sockets Layer (SSL) security added on. 
+HTPS is a communication protocol for secure communication over a computer 
+network. This protocol is used for online transactions and other activities that 
+require accounts and privacy (e.g. Online shopping, Facebook, etc.) to protect 
+information that is being transferred (username, password, credit card 
+information, etc.).
+
+ File Transfer Protocol (FTP): This is a protocol which is used to transfer files 
+between computers running TCP/IP. Some FTP sites allow you to access them
+anonymously without supplying a user name and password.
+
+ Host names 
+An IP address is just numbers, which makes it hard to memorize for each device an individual 
+uses, therefore people prefer to use words rather than numbers. The IP addresses are registered 
+with the Internet Network Information Center (InterNIC) and given host names that are easier 
+for people  to remember.   Host names are company names, such as Microsoft, or easy to remember abbreviations.
+The Domain Name Service (DNS) is the method of matching host names with their unique IP 
+addresses and vice versa. 

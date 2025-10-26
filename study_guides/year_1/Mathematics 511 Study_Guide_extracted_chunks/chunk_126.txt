@@ -1,0 +1,17 @@
+Worked Example 
+1. Translate 1 ∙ 0 + ((0 + 1))   = 0, the equality found in the previous 
+
+example, into a logical equivalence. 
+
+Solution: 
+We obtain a logical equivalence when we translate each 1 into a 𝑻, each 
+0 into an 𝑭, each Boolean sum into a disjunction, each Boolean product 
+into a conjunction, and each  complementation into a negation. We 
+obtain: (𝑻 ∧ 𝑭) ∨￢(𝑻 ∨ 𝑭) ≡ 𝑭. 
+2. Translate the logical equivalence (𝑻 ∧ 𝑻) ∨￢𝑭 ≡ 𝑻 into an identity 
+in Boolean algebra. 
+Solution: 
+We obtain an identity in Boolean algebra when we translate each 𝑻 into 
+a 1, each 𝑭 into a 0, each disjunction into a Boolean sum, each conjunction 
+into a Boolean product, and each negation into a complementation. We 
+obtain: (1 ∙1) + 0 ̅ =  1.

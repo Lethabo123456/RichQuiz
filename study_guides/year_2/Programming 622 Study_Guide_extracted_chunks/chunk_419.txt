@@ -1,0 +1,15 @@
+a structure in which the items are added and deleted from one end only.  
+2. A stack is a Last In First Out (LIFO) data structure.  
+3. The basic operations on a stack are as follows: Push an item onto the stack, pop an item from the 
+stack, retrieve the top element of the stack, initialize the stack, check whether the stack is empty, and 
+check whether the stack is full.  
+4. A stack can be implemented as an array or a linked list.  
+5. The middle elements of a stack should not be accessed directly.  
+6. Stacks are restricted versions of arrays and linked lists.  
+7. Postfix notation does not require the use of parentheses to enforce operator precedence.  
+8. In postfix notation, the operators are written after the operands.  
+9. Postfix expressions are evaluated according to the following rules:  
+a. Scan the expression from left to right.  
+b. If an operator is found, back up to get the required number of operands, evaluate the operator, 
+and continue.  
+10. The STL class stack can

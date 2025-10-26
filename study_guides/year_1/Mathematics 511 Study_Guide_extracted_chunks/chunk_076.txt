@@ -1,0 +1,30 @@
+This example illustrates the equivalence ￢∃𝑥𝑄(𝑥) ≡ ∀𝑥 ￢𝑄(𝑥). 
+To show that ￢∃𝑥𝑄(𝑥) and ∀𝑥 ￢𝑄(𝑥) are logically equivalent no matter 
+what 𝑄(𝑥) is and what the domain is, first note that ￢∃𝑥𝑄(𝑥) is true if and 
+only if ∃𝑥𝑄(𝑥) is false. This is true if and only if no 𝑥 exists in the domain for 
+which 𝑄(𝑥) is true. Next, note that no x The rules for negations for quantifiers are called De Morgan’s laws for 
+quantifiers. These rules are summarized in Table 2 below. 
+
+Table 13: De Morgan’s laws for Quantifiers 
+
+
+
+Remark: When the domain of a predicate 𝑃(𝑥) consists of 𝑛 elements, 
+where 𝑛 is a positive integer greater than one, the rules for negating 
+quantified statements are exactly the same as De Morgan’s laws. This is why 
+these rules are called De Morgan’s laws for quantifiers. When the domain 
+has 𝑛 elements 𝑥1, 𝑥2, . . . , 𝑥𝑛, it follows that ￢∀𝑥𝑃(𝑥) is the same as ￢
+(𝑃 (𝑥1) ∧ 𝑃(𝑥2) ∧ · · · ∧ 𝑃(𝑥𝑛)), which is equivalent to ￢𝑃(𝑥1) ∨
+￢𝑃(𝑥2) ∨··· ∨ ￢𝑃(𝑥𝑛) by De Morgan’s laws, and this is the same as 
+∃𝑥￢𝑃(𝑥). Similarly, ￢∃𝑥𝑃(𝑥) is the same as ￢(𝑃 (𝑥1) ∨ 𝑃(𝑥2) ∨ · · · ∨
+ 𝑃(𝑥𝑛)), which by De Morgan’s laws is equivalent to ￢𝑃(𝑥1) ∧￢𝑃(𝑥2) ∧ ·
+·· ∧ ￢𝑃(𝑥𝑛), and this is the same as ∀𝑥￢𝑃(𝑥). 
+
+Worked Example 
+What are the negations of the statements ∀𝑥(𝑥2  >  𝑥) 𝑎𝑛𝑑 ∃𝑥(𝑥2 =  2)? 
+Solution: 
+The negation of ∀𝑥(𝑥2  >  𝑥) is the statement ￢∀𝑥(𝑥2  >  𝑥), which is 
+equivalent to ∃𝑥￢(𝑥2  >  𝑥). This can be rewritten as ∃x(𝑥2 ≤ x). The 
+negation of ∃x(𝑥2 = 2) is the statement ￢∃𝑥(𝑥2  =  2), which is 
+equivalent to ∀𝑥￢(𝑥2  =  2). This can be rewritten as ∀𝑥(𝑥2  ≠ 2). The 
+truth values of these statements depend on the domain. 

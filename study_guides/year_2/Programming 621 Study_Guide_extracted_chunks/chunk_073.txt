@@ -1,0 +1,29 @@
+TOPIC 3 CONTROL STRUCTURES 
+
+3.1 INTRODUCTION   
+A computer can process a program in one of the following ways: in sequence; 
+selectively, by making a choice, which is also called a branch; repetitively, by 
+executing a statement over and over, using a structure called a loop; or by calling 
+a function. 
+Control structures provide alternatives to sequential program execution and are 
+used to alter the sequential flow of execution. The two most common control 
+structures are selection and repetition. In selection, the program executes 
+particular statements depending on some condition(s). In repetition, the program 
+repeats particular statements a certain number of times based on some 
+condition(s) 
+
+3.2 SELECTION: if AND if….else  
+Logical expression: An expression that evaluates to true or false is called a logical 
+expression 
+For example, because “8 is greater than 3” is true, the expression 8 > 3 is a logical 
+expression. Note that > is an operator in C++, called the “greater than” and is an 
+example of a relational operator. The Table below  lists the C++ relational operators. 
+
+Each of the relational operators is a binary operator; that is, it requires two operands. 
+Because the result of a comparison is true or false, expressions using these operators 
+always evaluate to true or false. 
+ 
+Relational Operators and Simple Data Types 
+You can use the relational operators with all three simple data types. In the following 
+example, the expressions use both integers and real numbers: 
+ 

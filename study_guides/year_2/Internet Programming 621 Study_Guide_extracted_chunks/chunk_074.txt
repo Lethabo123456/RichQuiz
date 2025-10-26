@@ -1,0 +1,31 @@
+eif ( $widgets > = 5 ) {  
+echo “Less than 10 widgets left. Time to order some more!”;  
+} else {  
+echo “Panic stations: Less than 5 widgets left! Order more now!”;  
+}  
+  
+  
+  
+  
+  
+3.4 The SWITCH Statement  
+Sometimes you want to test an expression against a range of different values, carrying out a 
+different task depending on the value that is matched. Here is an example, using the if, 
+elseif, and else statements:  
+  
+if ( $userAction == “open” ) {  
+// Open the file  
+} elseif ( $userAction == “save” ) {  
+// Save the file  
+} elseif ( $userAction == “close” ) {  
+// Close the file  
+} elseif ( $userAction == “logout” ) {  
+// Log the user out  
+} else {  
+print “Please choose an option”;  
+}  
+  
+As you can see, this script compares the same variable, over and over again, with different values. 
+This can get quite cumbersome, especially if you later want to change the expression used in all of 
+the tests.  
+PHP provides a more elegant way to run these types of tests: the sw

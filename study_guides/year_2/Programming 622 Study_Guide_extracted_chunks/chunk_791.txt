@@ -1,0 +1,24 @@
+Figure 10-4. In G1, 1-4-5 is a path from vertex 1 to vertex 5. There are no 
+cycles in G1. In G2, 1-2-1 is a cycle. In G3, 0-1-2-4-3 is a path from vertex 0 to vertex 3; 1-5-6-8-10 is a path 
+from vertex 1 to vertex 10. There are no cycles in G3.  
+  
+ 
+10.3  Graph Representation  
+  
+To write programs that process and manipulate graphs, the graphs must be stored—that is, represented—
+in computer memory. A graph can be represented (in computer memory) in several ways. We now discuss 
+two commonly used ways: adjacency matrices and adjacency lists.  
+  
+10.3.1 Adjacency Matrices  
+  
+
+389  
+  
+Let G be a graph with n vertices, where n > 0. Let V(G) = {v1, v2, ..., vn}. The adjacency matrix AG is a 
+twodimensional n x n matrix such that the (i, j)th entry of AG is 1 if there is an edge from vi to vj; otherwise, 
+the (i, j)th entry is 0. That is,  
+  
+  
+  
+In an undirected graph, if (vi, vj)  E(G), then (vj, vi)  E(G), so AG(i, j) = 1 = AG( j, i). It follows that the adjacency 
+matrix of

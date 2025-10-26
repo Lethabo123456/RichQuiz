@@ -1,0 +1,24 @@
+1.15.8 Store-and-Forward vs. Cut-Through 
+LAN switches come in two basic architectures, cut-through and store-and-forward. Cut-through 
+switches only examine the destination address before forwarding it on to its destination segment. 
+A store-and-forward switch, on the other hand, accepts and analyzes the entire packet before 
+forwarding it to its destination. It takes more time to examine the entire packet, but it allows the 
+switch to catch certain packet errors and collisions and keep them from propagating bad packets 
+through the network. 
+Today, the speed of store-and-forward switches has caught up with cut-through switches to the 
+point where the difference between the two is minimal. Also, there are a large number of hybrid 
+switches available that mix both cut-through and store-and-forward architectures. 
+
+1.15.9 Blocking vs. Non-Blocking Switches 
+Take a switch’s specifications and add up all the ports at theoretical maximum speed, then you 
+have the theoretical sum total of a switch’s throughput. If the switching bus or switching 
+components cannot handle the theoretical total of all ports the switch is considered a “blocking 
+switch”. There is debate whether all switches should be designed non-blocking, but the added 
+costs of doing so are only reasonable on switches designed to work in the largest network 
+backbones. For almost all applications, a blocking switch that has an acceptable and reasonable 
+throughput level will work just fine. 
+Consider an eight port 10/100 switch. Since each port can theoretically handle 200 Mbps (full 
+duplex) there is a theoretical need for 1600 Mbps, or 1.6 Gbps. But in the real world each port will 
+not exceed 50% utilization, so an 800 Mbps switching bus is adequate. Consideration of total 
+throughput versus total ports demand in the real world loads provides validation that the switch 
+can handle the loads of your network. 

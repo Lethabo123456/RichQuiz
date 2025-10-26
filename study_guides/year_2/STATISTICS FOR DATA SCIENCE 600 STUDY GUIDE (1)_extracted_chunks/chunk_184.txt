@@ -1,0 +1,15 @@
+in of error is a value that represents our certainty 
+that our point estimate is accurate and is based on our desired confidence level, the variance 
+of the data, and how big your sample is. There are many ways to calculate confidence 
+intervals; for the purpose of brevity and simplicity, we will look at a single way of taking the 
+confidence interval of a population mean. For this confidence interval, we need the following: 
+• A point estimate. For this, we will take our sample mean of break lengths from our 
+previous example. 
+• An estimate of the population standard deviation, which represents the variance in 
+the data. This is calculated by taking the sample standard deviation (the standard 
+deviation of the sample data) and dividing that number by the square root of the 
+population size. 
+• The degrees of freedom (which is the sample size - 1). 
+ 
+Obtaining these numbers might seem arbitrary but, trust me, there is a reason for all of them. 
+However, again for simplicity, I will u

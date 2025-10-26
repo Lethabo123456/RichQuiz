@@ -1,0 +1,23 @@
+2.2 Data Cleaning 
+In real-world applications, datasets are rarely perfect; they often contain missing values, 
+inconsistencies, errors, or duplicate records. Data cleaning is a critical preprocessing step in machine 
+learning that ensures the dataset is accurate, reliable, and suitable for model training. Poor-quality 
+data can lead to inaccurate predictions and unreliable models, making effective data cleaning 
+essential for improving model performance and generalizability. 
+Data cleaning involves several key tasks, including handling missing values, identifying and removing 
+outliers, and eliminating duplicate records. These steps help maintain data integrity and ensure that 
+machine learning algorithms can extract meaningful patterns from the dataset. 
+
+2.2.1 Handling Missing Values 
+Missing values occur when certain observations lack data for specific attributes. These gaps in the 
+dataset can arise due to human error, sensor failures, incomplete data collection, or data corruption. 
+If not addressed properly, missing values can introduce bias, reduce model accuracy, and lead to 
+incorrect conclusions. 
+There are three types of missing data in datasets: 
+
+1. Missing Completely at Random (MCAR): The missing values occur independently of any 
+factor, making them unpredictable. 
+2. Missing at Random (MAR): The missing values depend on observed data but not on the 
+missing data itself. 
+3. Missing Not at Random (MNAR): The missing values are dependent on the missing data itself, 
+making imputation more complex. 

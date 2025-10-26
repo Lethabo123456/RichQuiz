@@ -1,0 +1,25 @@
+Depending on the size and structure of the institution, the approach to vulnerability scanning can 
+differ. Small institutions with a good understanding of IT resources throughout the enterprise can 
+centralize vulnerability scanning. Larger institutions are more likely to have some degree of 
+decentralization, so vulnerability scanning might be the responsibility of individual units. Some 
+institutions have a blend of both centralized and decentralized vulnerability assessment. In any case, 
+before starting a vulnerability scanning program, it is important to have authority to conduct the scans 
+and to understand the targets to be scanned. 
+There are a number of free and commercial vulnerability scanners available for enterprise use. An 
+example of a freeware package is the Open Vulnerability Assessment System (OpenVAS), which scans 
+for thousands of vulnerabilities and supports concurrent scan tasks and scheduled scans. OpenVAS 
+includes a daily updated feed of vulnerability tests. Perhaps the most widely used commercial scanner 
+is Nessus. Nessus uses a variety of types of scans and looks for a broad range of vulnerabilities. 
+There are two challenges involved in scanning that an enterprise needs to address: 
+ Scanning can cause disruptions. The scanning process can impact performance. This is 
+especially true with legacy systems, which can have problems even with simple network port 
+scans. IT operations staff need to be in the loop. Make them aware of the importance and 
+relevance of scans. Also, timing needs to be resolved to ensure that scanning does not conflict 
+with regular maintenance schedules. 
+ Scanning can generate huge amounts of data and numerous false positives. Technical 
+vulnerability management practices produce very large data sets. Accordingly, use frequent 
+follow-up evaluations to validate the findings. Reviewing all these vulnerabilities is infeasible. 
+Develop a vulnerability prioritization plan before initiating a large number of scans. The 
+vulnerability prioritization plan must be aligned with the IT infrastructure and application plan 
+to support the overall IT strategic plan; there should not be too much focus on legacy 
+infrastructure and legacy applications that may be retired shortly.

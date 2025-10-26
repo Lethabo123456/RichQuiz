@@ -1,0 +1,37 @@
+5.5 IoT Programming Languages 
+Nowadays, IoT software uses more general programming languages than it used to. The 
+choice of language for your smart service depends on its compatibility with the system, the 
+code size and memory, general requirements and whether your developer is familiar with this 
+or that language. Some languages are suitable for general-purpose projects (e.g. Java), others 
+are more specific (e.g. Parasail). Here is a list of the main languages in use: 
+1.  C and C++ are quite universal and familiar to many programmers. Both languages are 
+created to be written for the hardware they are running on, which helps provide ideal code 
+for a special built-in system. 
+2. Java is rather mobile and is able to run on various hardware. This is a real advantage for 
+IoT. 
+3. JavaScript is the most widespread language on the Internet. As the greater part of the 
+Internet already speaks JavaScrip, it’s a great option for IoT, too. When all of the connected 
+devices understand the servers, it’s much easier to make them function. It’s also possible 
+to reuse the same JavaScript functions for different devices. 
+4. Python is an interpreted language, so it is flexible and easy to use in the IoT world. Python 
+is especially good for data-heavy applications. 
+5. Go, Rust, Forth, Parasail, B# — these languages were not modified, but specifically 
+designed for embedded programming, so they fit the Internet of Things like a glove. 
+ 
+5.6 Open-Source Tools for the Internet of Things 
+
+IoT developers have numerous open-source tools for the Internet of Things at their disposal. 
+Utilizing the tools we’ve listed below, you’ll be able to develop successful solutions with ease. 
+Arduino Starter Kit. This is a cloud-based system that offers both software and hardware. It 
+can be used even by beginner programmers. 
+Home Assistant. This tool is aimed at the smart home market and is great for interaction with 
+smart sensors in your home. The downside is that it doesn’t have a cloud component. 
+Zetta. This is a cloud-based platform built on Node.js. Zetta is perfect for turning devices into 
+API. 
+Device Hive. This tool functions as an M2M communications framework. Device Hive is quite 
+popular for the development of smart homes. 
+ThingSpeak. This is one of the oldest and most effective tools for IoT applications in the 
+market. ThingSpeak can process huge sums of data, it is used in web design applications and 
+location tracking tasks. This tool is able to work with other open-source tools. 
+NOD-RED. This is a browser-based tool for wiring the Internet of Things together. It helps deal 
+with the flow of the data, integrates with APIs, services and any devices. 

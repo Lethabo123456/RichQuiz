@@ -1,0 +1,33 @@
+2.3  Feature Scaling and Normalization 
+
+Feature scaling ensures that all variables contribute equally to model training. If one feature has 
+values in the range of thousands and another in decimal points, models like Support Vector Machines 
+(SVM) and k-Nearest Neighbors (k-NN) may become biased. Feature scaling improves the 
+performance of distance-based algorithms. 
+Min-Max Scaling and Standardization 
+from sklearn.preprocessing import MinMaxScaler, StandardScaler 
+# Sample dataset 
+data = [[100, 200], [300, 400], [500, 600]] 
+scaler = MinMaxScaler() 
+scaled_data = scaler.fit_transform(data) 
+print("Min-Max Scaled Data:\n", scaled_data) 
+standardizer = StandardScaler() 
+standardized_data = standardizer.fit_transform(data) 
+print("Standardized Data:\n", standardized_data) 
+
+2.4 Principal Component Analysis (PCA) 
+2.4.1 Dimensionality Reduction 
+In machine learning and data analysis, dimensionality reduction is a crucial preprocessing step used to 
+reduce the number of input features in a dataset while retaining as much relevant information as 
+possible. High-dimensional data can pose several challenges, collectively referred to as the curse of 
+dimensionality. These challenges include: 
+
+✓ Increased computational cost – As the number of features grows, so does the complexity of the 
+model, requiring more processing power and memory. 
+✓ Overfitting risk – A model with too many features may learn noise instead of meaningful patterns, 
+leading to poor generalization on new data. 
+✓ Reduced interpretability – When a dataset has a large number of features, understanding the 
+relationships between variables becomes increasingly difficult. 
+Dimensionality reduction techniques address these problems by simplifying the dataset while preserving 
+its core structure and information. Among these techniques, Principal Component Analysis (PCA) is one 
+of the most widely used methods.

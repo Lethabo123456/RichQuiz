@@ -1,0 +1,24 @@
+6.6. File Management 
+
+Distributed file management gives users the illusion that the network is a single logical file system 
+that’s implemented on an assortment of devices and computers. Therefore, the main function of 
+a DO/S File Manager is to provide transparent mechanisms to find, open, read, write, close, 
+create, and delete files no matter where they are in the network, as shown in Table 6.13. 
+ 
+Table 6.13 
+ 
+Table 6.13 shows typical file management functions and the necessary actions of the File Manager. 
+ 
+File management systems are a subset of database managers, which provide more capabilities to user 
+processes than file systems and are implemented as distributed database management systems as 
+part of local area network systems. 
+Therefore, the tasks required by a DO/S include those typically found in a distributed database 
+environment. These involve a host of controls and mechanisms necessary to provide consistent, 
+synchronized, and reliable management of system and user information assets, including the 
+following: 
+
+➢ Concurrency control   
+➢ Data redundancy  
+➢ Location transparency and distributed directory  
+➢ Deadlock resolution or recovery  
+➢ Query processing 

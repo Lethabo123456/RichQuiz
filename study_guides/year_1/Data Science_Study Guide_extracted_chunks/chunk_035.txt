@@ -1,0 +1,35 @@
+2.2 Structured versus Unstructured data 
+In the field of Data Science, structured and unstructured data refer to two different types of data that 
+require distinct approaches for processing and analysis: 
+ 
+Structured Data 
+Structured data refers to data that is organized and formatted in a specific way, usually in a tabular 
+format with rows and columns. Each data entry has a well-defined data type and can be easily stored 
+in databases or spreadsheets. Examples of structured data include data from relational databases, CSV 
+files, Excel sheets, and tables (Chohan, 2019). 
+ 
+Characteristics of structured data 
+• Easy to query and analyse using standard methods and statistical techniques 
+• Well-defined schema, meaning the data's structure is pre-defined, and each data element has 
+a clear meaning. 
+• Ideal for traditional data analysis techniques, like SQL queries and statistical analysis. 
+ 
+Unstructured Data 
+Unstructured data, on the other hand, lacks a predefined data model or structure. It does not conform 
+to a fixed schema and is typically not easily organized into rows and columns. Unstructured data is 
+often in the form of text-heavy documents, images, videos, audio files, social media posts, emails, and 
+other free-form content. 
+ 
+Characteristics of unstructured data 
+• More challenging to process and analyse compared to structured data due to its lack of 
+predefined structure. 
+• Requires specialized tools and techniques, such as Natural Language Processing (NLP) and 
+Machine Learning, to extract insights and patterns. 
+• Often contains valuable information, but accessing and utilizing it effectively can be complex. 
+ 
+As a Data Scientist, practitioners often encounter both structured and unstructured data. The ability 
+to handle both types of data and integrate them effectively is essential to uncovering comprehensive 
+insights and solutions to real-world problems (Chohan, 2019) 
+
+Figure 3.1 - Structured and Unstructured Data 
+Source: (Altersoft, 2020) 

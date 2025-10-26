@@ -1,0 +1,29 @@
+1.9.1 Bridges 
+
+Bridges connect two LAN segments of similar or dissimilar types, such as Ethernet and Token Ring. 
+This allows two Ethernet segments to behave like a single Ethernet allowing any pair of computers 
+on the extended Ethernet to communicate. Bridges are transparent therefore computers don’t 
+know whether a bridge separates them. 
+Bridges map the Ethernet addresses of the nodes residing on each network segment and allow 
+only necessary traffic to pass through the bridge. When a packet is received by the bridge, the 
+bridge determines the destination and source segments. If the segments are the same, the packet 
+is dropped or also referred to as “filtered”; if the segments are different, then the packet is 
+“forwarded” to the correct segment. Additionally, bridges do not forward bad or misaligned 
+packets.
+ 
+Bridges are also called “store-and-forward” devices because they look at the whole Ethernet 
+packet before making filtering or forwarding decisions. Filtering packets and regenerating 
+forwarded packets enables bridging technology to split a network into separate collision domains. 
+Bridges are able to isolate network problems; if interference occurs on one of two segments, the
+bridge will receive and discard an invalid frame keeping the problem from affecting the other 
+segment. This allows for greater distances and more repeaters to be used in the total network 
+design. 
+
+Dealing with Loops 
+Most bridges are self-learning task bridges; they determine the user Ethernet addresses on the 
+segment by building a table as packets that are passed through the network. However, this self-
+learning capability dramatically raises the potential of network loops in networks that have many 
+bridges. A loop presents conflicting information on which segment a specific address is located 
+and forces the device to forward all traffic. The Distributed Spanning Tree (DST) algorithm is a 
+software standard (found in the IEEE 802.1d specification) that describes how switches and 
+bridges can communicate to avoid network loops.  

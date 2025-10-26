@@ -1,0 +1,19 @@
+in in 
+the modern database environment.  
+Lower normalization forms occur (and are even required) in specialized databases known as data 
+warehouses. The data warehouse routinely uses 2NF structures in its complex, multilevel, 
+multisource data environment. Although normalization is very important, especially in the so-called 
+production database environment, 2NF is no longer disregarded as it once was.  
+Although 2NF tables cannot always be avoided, the problem of working with tables that contain 
+partial and/or transitive dependencies in a production database environment should not be 
+minimized. Aside from the possibility of troublesome data anomalies being created, unnormalized 
+tables in a production database tend to suffer from these defects:  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six page 218-224. 
+
+ 
+88 
+ 
+Data updates are less efficient because programs that read and update tables must deal w

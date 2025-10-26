@@ -1,0 +1,30 @@
+s to be deleted from the list. The following statement removes the 
+node from the list:  
+ p->link = p->link->link;  
+  
+Figure 3-10 shows the resulting list after the preceding statement executes.  
+
+90  
+  
+  
+FIGURE 3-10 List after the statement p->link = p->link->link; executes  
+  
+From Figure 3-10, it is clear that the node with info 34 is removed from the list. However, the memory is 
+still occupied by this node and this memory is inaccessible; that is, this node is dangling. To deallocate the 
+memory, we need a pointer to this node. The following statements delete the node from the list and 
+deallocate the memory occupied by this node:  
+  
+q = p->link; p->link 
+= q->link; delete 
+q;  
+  
+Table 3-5 shows the effect of these statements.  
+  
+TABLE 3-5: Deleting a node from a linked list  
+  
+  
+ 
+3.1.3  Building a Linked List  
+   
+Now that we know how to insert a node in a linked list, let us see how to build a linked list. First, we 
+consider a linked list in general. If the d

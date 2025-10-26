@@ -1,0 +1,41 @@
+5.2 Software tools 
+ 
+5.2.1 Wi-Fi Analyzers 
+When deploying and troubleshooting wireless networks, you must have some way to determine 
+signal levers, noise readings, SSIDs, and interference to resolve most Wi-Fi related issues. Wi-Fi 
+analyzers can look into the air and gather valuable information so you can see what is healthy and 
+what is not. Using Wi-Fi analyzers, you can see the Wi-Fi coverage in an area and use that 
+information for optimal access-point placement to get complete coverage and avoid dead spots. 
+Many vendors now have Wi-Fi analyzers built into access points and client software running on 
+your laptop. Wireless controllers that manage multiple access points can also act as an analyzer 
+and gather data from many access points in your network to give you a consolidated view of 
+coverage, interference, and signal reception levels. 
+ 
+5.2.2 Protocol Analyzer/Packet Capture 
+Protocol analyzers, also called sniffers or network monitors, are used to capture packets 
+in their raw format as they cross the network. Windows desktop operating systems before 
+Windows Vista came with a built-in protocol analyzer called Network Monitor, but that is no 
+longer the case, although you can download one for free that will work with the newer operating 
+systems.
+
+Protocol analyzers can be used to determine the type of traffic that you have in your network, 
+and depending on the product and the architecture contained therein, you may be able to sort 
+the results based on port numbers, protocols, and so on. Another use of a sniffer is to examine 
+the traffic that should be occurring on the network when something is not working to aid in 
+troubleshooting. These devices can capture and display all packets involved in the connection 
+setup, including, for example, request and response headers to a web server. 
+There are four packet types that must occur for a DHCP client to receive an IP configuration from 
+the server. 
+ 
+• DHCP Discover 
+• DHCP Offer 
+• DHCP Request 
+• DHCP ACK 
+ 
+FIGURE 5.1: DHCP capture (Lammle, 2022, p. 828) 
+ 
+If all you saw in the capture were the DHCP Discover packets with no DHCP Offer packets, you 
+could reasonably assert that the DHCP server is not receiving the DHCP Offer packets (perhaps 
+the DHCP server is located in another broadcast domain or perhaps it is not on). Additionally, you 
+could examine fields in the DHCP Offer packets that may tell you that the DHCP server is out of 
+addresses. The point is that the tool can be used to troubleshoot the issue. 

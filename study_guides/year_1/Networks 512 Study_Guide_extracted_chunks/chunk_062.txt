@@ -1,0 +1,26 @@
+1.9.2 Ethernet Switches 
+
+Ethernet switches are an expansion of the Ethernet bridging concept. The advantage of using a 
+switched Ethernet is parallelism. Up to one-half of the computers connected to a switch can send 
+data at the same time. 
+
+LAN switches link multiple networks together and have two basic architectures: cut-through and 
+store-and-forward. In the past, cut-through switches were faster because they examined the 
+packet destination address only before forwarding it on to its destination segment. A store-and-
+forward switch works like a bridge in that it accepts and analyzes the entire packet before 
+forwarding it to its destination.
+ 
+Historically, store-and-forward took more time to examine the entire packet, although one benefit 
+was that it allowed the switch to catch certain packet errors and keep them from propagating 
+through the network. Today, the speed of store-and-forward switches has caught up with cut-
+through switches so the difference between the two is minimal. Also, there are a large number of 
+hybrid switches available that mix both cut-through and store-and-forward architectures. 
+Both cut-through and store-and-forward switches separate a network into collision domains, 
+allowing network design rules to be extended. Each of the segments attached to an Ethernet 
+ 
+switch has a full 10 Mbps of bandwidth shared by fewer users, which results in better 
+performance (as opposed to hubs that only allow bandwidth sharing from a single Ethernet). 
+Newer switches today offer high-speed links, either Fast Ethernet, Gigabit Ethernet, 10 Gigabit 
+Ethernet or ATM. These are used to link switches together or give added bandwidth to high-traffic 
+servers. A network composed of a number of switches linked together via uplinks is termed a 
+“collapsed backbone” network. 

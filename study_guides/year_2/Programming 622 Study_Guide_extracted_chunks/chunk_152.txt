@@ -1,0 +1,18 @@
+ting 444, intDeq: 75 444 28  
+  
+The statement in Line 8 declares a deque container intDeq of type int; that is, all the elements of intDeq 
+are of type int. The statement in Line 9 declares screen to be an ostream iterator initialized to the standard 
+output device. The statements in Lines 10 through 13 use the push_back operation to insert four 
+numbers—13, 75, 28, and 35—into intDeq. The statement in Line 15 outputs the elements of intDeq. In 
+the output, see the line marked Line 14, which contains the output of the statements in Lines 14 through 
+16 of the program.  
+  
+
+72  
+  
+The statement in Line 17 inserts 0 at the beginning of intDeq. The statement in Line 18 inserts 100 at the 
+end of intDeq. The statement in Line 20 outputs the modified intDeq.  
+  
+The statements in Lines 22 and 23 use the operation pop_front to remove the first two elements of intDeq; 
+the statement in Line 25 outputs the modified intDeq. The statements in Lines 27 and 28 use the operation 
+pop_back to re

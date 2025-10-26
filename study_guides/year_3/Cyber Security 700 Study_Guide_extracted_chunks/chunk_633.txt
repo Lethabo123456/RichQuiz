@@ -1,0 +1,25 @@
+ Protection of audit information: Deals with providing technical or automated protection of 
+audit information. Enhancements include: 
+
+o For initial generation and backup of audit trails, use hardware-enforced, write-once 
+media. 
+o Store audit information in a repository separate from the audited system or system 
+component. 
+o Implement cryptographic mechanisms to protect the integrity of audit information 
+and audit tools. 
+o Authorize access to management of audit functionality to only selected privileged 
+users. 
+o For executing selected actions, require the approval of two authorized individuals. 
+o Authorize read-only access to audit information to a selected subset of privileged 
+users. 
+o Store audit information on a component running a different operating system than 
+the system or component being audited. 
+
+ Non-repudiation: Deals with protecting against an individual falsely denying having performed 
+selected audit-related activities. Enhancements include: 
+o Provide organizational personnel with the means to identify who produced specific 
+information in the event of an information transfer. 
+o Prevent the modification of information between production and review. 
+o Maintain reviewer or releaser identity and credentials within the established chain of 
+custody for all information reviewed or released. 
+o Prevent the modification of information between review and transfer/release. 

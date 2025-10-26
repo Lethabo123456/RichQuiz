@@ -1,0 +1,24 @@
+Demand paging takes advantage of the fact that programs are written sequentially so that, 
+whileone section or module is processed, other modules may be idle. Not all the pages are 
+accessed atthe same time, or even sequentially. For example: 
+
+➢ Instructions to handle errors are processed only when a specific error is detected during 
+execution.For instance, these instructions can indicate that input data was incorrect or 
+that a computation resulted in an invalid answer. If no error occurs, and we hope this is 
+generally the case, these instructions are never processed and never need to be loaded 
+into memory. 
+➢ Many program modules are mutually exclusive. For example, while the program is being 
+loaded, when the input module is active, then the processing module is inactive because 
+ 
+it is generally not performing calculations during the input stage. Similarly, if the 
+processing module is active, then theoutput module (such as printing) may be idle. 
+
+➢ Certain program options are either mutually exclusive or not always accessible. For 
+example, whena program gives the user several menu choices, as shown in Figure 3.4, it 
+allows the user to make only one selection at a time. If the user selects the first option 
+(File), then the module with those program instructions is the only one that is being used; 
+therefore, this is the only module that needs to be in memory currently. The other 
+modules remain in secondary storage until they are “called.”For example, many tables 
+may be assigned a large, fixed amount of address space, even if only a fraction of the table 
+is used. One instance of this is a symbol table that might be prepared tohandle 100 
+symbols, but if only 10 symbols are used, then 90 percent of the table remains unused.

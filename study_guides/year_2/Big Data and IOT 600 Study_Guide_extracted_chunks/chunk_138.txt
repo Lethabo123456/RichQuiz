@@ -1,0 +1,44 @@
+5.12 Most Popular Internet of Things Protocols, Standards and Communication 
+Technologies 
+Now, let’s get to the specifics of IoT wireless protocols, standards and 
+technologies. There are numerous options and alternatives, but we’ll discuss 
+the most popular ones. 
+MQTT 
+MQTT (Message Queue Telemetry Transport) is a lightweight protocol for 
+sending simple data flows from sensors to applications and 
+middleware. 
+The protocol functions on top of TCP/IP and includes three 
+components: subscriber, publisher and broker. The publisher 
+collects data and sends it to subscribers. The broker tests 
+publishers and subscribers, checking their authorization and ensuring security. 
+MQTT suits small, cheap, low-memory and low-power devices. 
+DDS 
+DDS (Data Distribution Service) is an IoT standard for real-time, scalable and high-
+performance machine-to-machine communication. It was developed by the Object 
+Management Group (OMG). 
+You can deploy DDS both in low-footprint devices and in the cloud. 
+The DDS standard has two main layers:Data-Centric Publish-Subscribe 
+(DCPS), which delivers the information to subscribers  
+Data-Local Reconstruction Layer (DLRL), which provides an interface to DCPS functionalities 
+AMQP 
+AMQP (Advanced Message Queuing Protocol) is an 
+application layer protocol for message-oriented middleware 
+environments. It is approved as an international standard. 
+The processing chain of the protocol includes three components that follow certain rules. 
+1. Exchange — gets messages and puts them in the queues 
+2. Message queue — stores messages until they can be safely processed by the client app 
+3. Binding — states the relationship between the first and the second components 
+
+Bluetooth 
+Bluetooth is a short-range communications technology integrated into most smartphones 
+and mobile devices, which is a major advantage for personal products, particularly wearables. 
+Bluetooth is well-known to mobile users. But not long ago, the new 
+significant protocol for IoT apps appeared — Bluetooth Low-Energy (BLE), 
+or Bluetooth Smart. This technology is a real foundation for the IoT, as it 
+is scalable and flexible to all market innovations. Moreover, it is designed 
+to reduce power consumption.
+
+ Standard: Bluetooth 4.2 
+ Frequency: 2.4GHz 
+ Range: 50-150m (Smart/BLE) 
+ Data Rates: 1Mbps (Smart/BLE) 

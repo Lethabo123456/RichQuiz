@@ -1,0 +1,13 @@
+respect, the relational database table 
+resembles a file, but there is a crucial difference between a table and a file: a table yields complete 
+data and structural independence because it is a purely logical structure. This property of the 
+relational data model, which is explored in depth in the next chapter, became the source of a real 
+data- base revolution.  
+Another reason for the relational data model’s rise to dominance is its powerful and flexible query 
+language. Most relational database software uses Structured Query Language (SQL), which allows 
+the user to specify what must be done without specifying how. The RDBMS uses SQL to translate 
+user queries into instructions for retrieving the requested data. From an end-user perspective, any 
+SQL-based relational database application involves three parts: a user interface, a set of tables stored 
+in the database, and the SQL “engine”, explained as follows:  
+• 
+The end-user interfaces. Basically, the interface allows the end use

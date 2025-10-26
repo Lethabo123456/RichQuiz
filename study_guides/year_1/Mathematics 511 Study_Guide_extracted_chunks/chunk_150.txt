@@ -1,0 +1,32 @@
+The set of all odd positive integers less than 10 is a subset of the set of all 
+positive integers less than 10, the set of all computer science majors at your 
+school is a subset of the set of all students at your school, and the set of all 
+people in China is a subset of the set of all people in China. Each of these 
+facts follows immediately by noting that an element that belongs to the first 
+set in each pair of sets also belongs to the second set in that pair. 
+Theorem  
+For every set S, (i ) ∅ ⊆ S and (ii ) S ⊆ S. 
+ 
+Proof: We will prove (i )  
+Let S be a set. To show that ∅ ⊆ S, we must show that ∀x(x ∈ ∅ → x ∈ S) is 
+true. Because the empty set contains no elements, it follows that x ∈ ∅ is 
+always false. It follows that the conditional statement x ∈ ∅ → x ∈ S is always 
+true, because its hypothesis is always false and a conditional statement with 
+a false hypothesis is true. Therefore, ∀x(x ∈ ∅ → x ∈ S) is true. This completes 
+the proof of (i). Note that this is an example of a vacuous proof. 
+When we wish to emphasize that a set A is a subset of a set B but that A ≠ 
+B, we write A ⊂ B and say that A is a proper subset of B. For A ⊂ B to be true, 
+it must be the case that A ⊆ B and there must exist an element x of B that is 
+not an element of A. That is, A is a proper subset of B if and only if: 
+∀𝑥(𝑥 ∈ 𝐴 → 𝑥 ∈ 𝐵) ∧ ∃𝑥(𝑥 ∈ 𝐵 ∧ 𝑥 ∉ 𝐴) is true. Venn diagrams 
+can be used to illustrate that a set A is a subset of a set B. We draw the 
+universal set U as a rectangle. Within this rectangle we draw a circle for B. 
+Because A is a subset of B, we draw the circle for A within the circle for B. 
+This relationship is shown in Figure 2.7 A useful way to show that two sets 
+have the same elements is to show that each set is a subset of the other. In 
+other words, we can show that if A and B are sets with A ⊆ B and B ⊆ A, then 
+A = B. That is, A = B if and only if ∀𝑥(𝑥 ∈ 𝐴 → 𝑥 ∈ 𝐵) and 
+∀𝑥(𝑥 ∈ 𝐵 → 𝑥 ∈ 𝐴) or equivalently if and only if  
+∀𝑥(𝑥 ∈ 𝐴 ↔ 𝑥 ∈ 𝐵), which is what it means for the A and B to be equal. 
+Because this method of showing two sets are equal is so useful, we highlight 
+it here.

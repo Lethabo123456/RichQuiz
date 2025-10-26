@@ -1,0 +1,19 @@
+re is only one $color variable), producing the 
+following output:  
+  
+My dog is brown 
+My cat is brown  
+  
+So variable scope avoids clashing variable names, which helps to prevent you accidentally 
+overwriting variables of the same name. This is another reason why functions are so good.  
+  
+6.10 Working With Global Variables  
+Although the concept of variable scope is extremely useful, occasionally you do actually want to 
+create a variable that can be accessed anywhere in your script, whether inside or outside a function. 
+Such a variable is called a global variable .  
+  
+PHP supports global variables, but if you are used to other programming languages you will find PHP 
+handles globals slightly differently. In PHP, all variables created outside a function are, in a sense, 
+global in that they can be accessed by any other code in the script that is not inside a function. To 
+use such a variable inside a function, write the word global followed by the variable name inside the 
+func

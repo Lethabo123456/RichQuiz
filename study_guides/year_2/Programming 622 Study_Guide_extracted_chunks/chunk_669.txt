@@ -1,0 +1,25 @@
+o do this is to write a 
+recursive inorder function because in a recursive call after completing a particular call, the control goes 
+back to the caller. (Later we discuss how to write nonrecursive traversal functions.) The recursive 
+definition of the function to implement the inorder traversal algorithms is as follows:  
+  
+template <class elemType>  
+void inorder(binaryTreeNode<elemType> *p) const  
+{  
+if (p != NULL)  
+{ inorder(p->llink); cout << p-
+>info << " ";  
+inorder(p->rlink);  
+}  
+}  
+  
+To do the inorder traversal of a binary tree, the root node of the binary tree is passed as a parameter to 
+the function inorder. For example, if the root points to the root node of the binary tree, a call to the 
+function inorder is as follows:  
+ inorder(root);  
+  
+Similarly, we can write the functions to implement the preorder and postorder traversals.  
+The definitions of these functions are given next.  
+  
+template <class elemType>  
+void preorder(binaryTreeNode<elemType> *p) const

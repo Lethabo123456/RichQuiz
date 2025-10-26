@@ -1,0 +1,21 @@
+e 
+that, for example, the 30th element in the array will always have an index of 29. If you are in doubt 
+you can use the functions described in the next section — “Stepping Through an Array” — to 
+retrieve the element you are after.  
+  
+  
+  
+  
+  
+5.8 Stepping Through An Array  
+You have already learned that you can access any element in an array using its key — whether 
+numeric (in the case of indexed arrays) or string (in the case of associative arrays). But what if you 
+do not know all of the keys in an array in advance?  
+  
+As you saw in the previous section, it is possible to create indexed arrays where the indices are not 
+consecutively numbered from zero, but are instead arbitrary numbers. Furthermore, an associative 
+array‘s keys do not have to follow any pattern either — one element’s key might be “elephant ” 
+while the next element’s key could be “ teacup “ — so unless you know the keys of the array in 
+advance you are going to find it hard to access its elements!  
+  
+Fo

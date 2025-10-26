@@ -1,0 +1,17 @@
+ode is not 21344, use the following command sequence:  
+SELECT  * 
+FROM  
+PRODUCT 
+WHERE  
+NOT  (V_CODE = 21344);  
+Note that the condition is enclosed in parentheses; that practice is optional, but it is highly 
+recommended for clarity. The logical operator NOT can be combined with AND and OR. 
+ 
+Aggregate Processing 
+The RDBMS works on sets of data, not individual row processing, but one can imagine the 
+processing that has been discussed up to this point as if it were row-based. However, there are 
+many questions that are asked of the database that require working with collections of rows as if 
+they are a single unit. This type of collection processing is done with aggregate functions. The 
+defining characteristic of using an aggregate function is that it takes a collection of rows and 
+reduces it to a single row. SQL provides useful aggregate functions that count, find minimum and 
+maximum values, calculate averages, and so on. Better yet, SQL allows the user to limit queries to

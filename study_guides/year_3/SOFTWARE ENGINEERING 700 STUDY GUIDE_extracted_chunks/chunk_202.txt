@@ -1,0 +1,39 @@
+6.4 Test-driven Development  
+Test-driven development (TDD) is an approach to program development in which you interleave 
+testing and code development. You develop the code incrementally, along with a set of tests for 
+that increment. You don’t start working on the next increment until the code that you have 
+developed passes all of its tests.  
+ 
+Test-driven development was introduced as part of the XP agile development method. However, 
+it has now gained mainstream acceptance and may be used in both agile and plan-based 
+processes 
+ 
+Figure 6.1: Test driven Development (Sommerville,  I.  2021)   
+ 
+The steps in the process are as follows: 
+
+i. You start by identifying the increment of functionality that is required. This 
+should normally be small and implementable in a few lines of code. 
+ 
+ii. You write a test for this functionality and implement it as an automated test. This 
+means that the test can be executed and will report whether or not it has passed 
+or failed. 
+ 
+iii. You then run the test, along with all other tests that have been implemented. 
+Initially, you have not implemented the functionality so the new test will fail. This 
+is deliberate as it shows that the test adds something to the test set. 
+ 
+iv. You then implement the functionality and re-run the test. This may involve 
+refactoring existing code to improve it and add new code to what’s already there. 
+ 
+v. Once all tests run successfully, you move on to implementing the next chunk of 
+functionality 
+
+One of the most important benefits of TDD is that it reduces the costs of regression testing. 
+Regression testing involves running test sets that have successfully executed after changes have 
+been made to a system. The regression test checks that these changes have not introduced new 
+bugs into the system and that the new code interacts as expected with the existing code.  
+ 
+Regression testing is expensive and sometimes impractical when a system is manually tested, as 
+the costs in time and effort are very high. You have to try to choose the most relevant tests to re-
+run and it is easy to miss important tests.

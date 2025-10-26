@@ -1,0 +1,13 @@
+a 
+series of case statements test the expression against various values: ”open” , ” save” , and so on. If a 
+value matches the expression, the code following the case line is executed. If no values match, the 
+default statement is reached, and the line of code following it is executed.  
+  
+Note that each case construct has a break statement at the end of it. Why are these break 
+statements necessary? Well, when the PHP engine finds a case value that matches the expression, 
+it not only executes the code block for that case statement, but it then also continues through each 
+of the case statements that follow, as well as the final default statement, executing all of their code 
+blocks in turn.  
+It does this regardless of whether the expression matches the values in those case statements! Most 
+of the time, you do no t want this to happen, so you insert a break statement at the end of each 
+code block. break exits the entire switch construct, ensuring that no more code blocks within th

@@ -1,0 +1,20 @@
+padding and margins. 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+Core Components 
+First and foremost among Dash's core components are the Dash Core Components (dcc). These components, 
+built on top of React.js, offer a plethora of interactive elements essential for crafting user interfaces. From 
+graphs and dropdowns to input fields and sliders, dcc provides a rich library of higher-level components that 
+simplify the process of creating intuitive and interactive user experiences. 
+Complementing dcc are the Dash HTML Components (html). These components, available within the 
+dash_html_components module, allow developers to define the structural layout of their web applications. 
+With tags such as html.Div, html.H1, and html.Span, developers can efficiently structure the visual hierarchy 
+of their applications, ensuring clarity and coherence in design. A standout feature of Dash is its specialized 
+component for tabular data, the Dash DataTable. This component goes beyond simple data display, offering 
+functionali

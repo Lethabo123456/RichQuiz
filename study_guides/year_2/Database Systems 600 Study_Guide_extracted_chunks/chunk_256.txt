@@ -1,0 +1,27 @@
+ELECT statement is represented by one or more conditional expressions, separated by 
+logical operators. The WHERE clause is optional. If no rows match the specified criteria in the 
+WHERE clause, you see a blank screen or a message that tells you no rows were retrieved. For 
+example, consider the following query:  
+SELECT  P_DESCRIPT, P_QOH, P_PRICE, V_CODE 
+FROM  
+PRODUCT 
+WHERE  
+V_CODE = 21344;  
+This query returns the description, quantity on hand, price, and vendor code for products with a 
+vendor code of 21344, as shown in Figure 7.21. 
+ 
+ 
+ 
+Numerous conditional restrictions can be placed on the selected table contents. For example, the 
+comparison operators shown in Table 7.6 can be used to restrict output. Note that there are two 
+options for not equal to. Both <> and != are well supported and perform the same function. 
+ 
+ 
+ 
+ 
+
+ 
+103 
+Using Comparison Operators on Character Attributes 
+Because computers identify all characters by their numeric American Standard Code for 
+Inf

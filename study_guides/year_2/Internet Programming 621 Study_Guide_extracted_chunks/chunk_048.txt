@@ -1,0 +1,34 @@
+loating - point numbers are double - precision). Finally, setting $test_var to “ Hello, world! ” 
+alters its type to string .  
+  
+
+28  
+In PHP, a floating-point value is simply a value with a decimal point. So if 15.0 was used instead of 15 
+in the preceding example, $test_var would become a double, rather than an integer. You can also 
+test a variable for a specific data type using PHP’s type testing functions:  
+  
+  
+  
+  
+Function  
+Description  
+is_int(value)  
+Returns True if value is an integer  
+is_float(value)  
+Returns True if value is a float  
+is_string(value)  
+Returns True if value is a string  
+is_boolean(value)  
+Returns True if value is Boolean  
+is_array(value)  
+Returns True if value is an array  
+is_object(value)  
+Returns True if value is an object  
+  
+is_resource(value)  
+Returns True if value is a resource  
+is_null(value)  
+Returns True if value is null  
+  
+It is best to use gettype() only when you want to debug a script to pinpoint a bug that might be 
+relat

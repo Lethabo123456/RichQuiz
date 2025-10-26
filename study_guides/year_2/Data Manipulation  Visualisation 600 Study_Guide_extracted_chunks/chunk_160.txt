@@ -1,0 +1,29 @@
+ain__': 
+ 
+app.run_server() 
+ 
+Run the script, open a browser to http://127.0.0.1:8050/ and you should see: 
+ 
+ 
+ 
+Now type something into the input box. Immediately you should see the output change to reflect the input! 
+ 
+ 
+Let's break down what's happening here: 
+1. We set up our dcc.Input in the usual way, except that we assigned an id to it, and added another Div after 
+it with an assigned id ('my-id' and 'my-div' respectively) 
+2. app.callback is called as a decorator function over update_output_div. The "inputs" and "outputs" of 
+our application interface are described declaratively through the app.callback decorator. 
+3. Inside 
+@app.callback, 
+Output 
+and 
+Input 
+are 
+abbreviated 
+forms 
+of 
+dash.dependencies.Output and dash.dependencies.Input. Note how we imported them from 
+dash.dependencies by name. 
+4. In Dash, the inputs and outputs of our application are simply the properties of a particular 
+component. In this example, our input is the "value" property of the component

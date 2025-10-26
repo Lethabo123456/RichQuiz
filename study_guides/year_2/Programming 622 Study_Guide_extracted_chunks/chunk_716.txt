@@ -1,0 +1,31 @@
+type elemType pointed to by the pointer visit.  
+  
+Example 9-3 further illustrates how functions are passed as parameters to other functions.  
+  
+EXAMPLE 9-3  
+
+352  
+  
+This example shows how to pass a user-defined function as a parameter to the binary tree traversal 
+algorithms. For illustration purposes, we show how to use only the inorder traversal function.  
+  
+The following program uses the class bSearchTreeType, which is derived from the class binaryTreeType, 
+to build the binary tree. The traversal functions are included in the class binaryTreeType, which are then 
+inherited by the class bSearchTreeType.  
+//*************************************************************
+* // This program illustrates how to pass a user-defined function // as a 
+parameter to the binary tree traversal algorithms.  
+//**************************************************************  
+ 
+#include <iostream>    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 1  
+ 
+#include "binarySearchTree.h"

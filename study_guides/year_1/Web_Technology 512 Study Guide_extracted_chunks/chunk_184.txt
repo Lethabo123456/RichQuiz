@@ -1,0 +1,46 @@
+number 
+d. 
+None of the above 
+10.  Native objects can be described as ______ 
+a. 
+Objects which are built in to the programming language 
+b. 
+Objects that were used when a language was still tested 
+c. 
+Old objects that are no longer accesible 
+d. 
+None of the above 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+116 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+LEARNING OUTCOMES 
+ 
+1. Validate HTML controls 
+2. Understand how to create a validate function 
+3. Understand the working of the method geElementById 
+ 
+7.1 JAVASCRIPT AND HTML FORMS 
+ 
+You can use JavaScript to check that form elements have been filled in correctly. If 
+not, you can keep your users on the same page and display an error message. If 
+everything is OK then you can submit the form. You will see how that works now. 
+ 
+The HTML, then, is this: 
+ 
+ 
+Figure 7.1 – HTML Form code 
+ 
+ 
+The first thing to notice is the FORM tag itself: 
+<FORM NAME="frmOne" ACTION="" METHOD="POST"> 
+ 
+After reading this Section of the guide,

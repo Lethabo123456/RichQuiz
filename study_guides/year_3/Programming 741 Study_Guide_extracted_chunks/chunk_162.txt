@@ -1,0 +1,15 @@
+Topic 5: Arrays, Indexes And Collections 
+
+5.1 Introduction 
+The .NET Framework provides a rich suite of collection classes, including Array, ArrayList, 
+NameValueCollection, StringCollection,Queue, Stack, and BitArray. The simplest collection is 
+the Array, the only collection type for which C# provides built-in support. In this chapter you 
+will learn to work with single, multidimensional, and jagged arrays. You will also be introduced 
+to indexers, a bit of C# syntactic sugar that makes it easier to access class properties, as though 
+the class were indexed like an array. 
+ 
+The .NET Framework provides a number of interfaces, such as Enumerable and Collection , 
+whose implementation provides you with standard ways to interact with collections. In this 
+chapter you will see how to work with the most essential of these. The chapter concludes 
+with a tour of commonly used .NET collections, including ArrayList , Hashtable, Queue, and 
+Stack. 

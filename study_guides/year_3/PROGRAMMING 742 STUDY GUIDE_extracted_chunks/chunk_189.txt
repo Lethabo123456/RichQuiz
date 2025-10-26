@@ -1,0 +1,68 @@
+4.3.1    The  StreamReader Object 
+ 
+Input streams are used to read data from an external source. Often, this will be a file on a disk or net-
+work location, but remember that this source could be almost anything that can send data, such as a 
+network application, a Web service, or even the console. 
+  
+The StreamReader class is the one that you will be using to read data from files. Like the StreamWriter 
+class, this is a generic class that can be used with any stream. In the next Try It Out, you again construct 
+it around a FileStream object so that it points to the correct file.  
+ 
+StreamReader objects are created in much the same way as StreamWriter objects. The most common 
+way to create one is to use a previously created FileStream object: 
+ 
+FileStream aFile = new FileStream("Log.txt", FileMode.Open); 
+StreamReader sr = new StreamReader(aFile); 
+ 
+Like StreamWriter, the StreamReader class can be created directly from a string containing the path to a 
+particular file: 
+ 
+StreamReader sr = new StreamReader("Log.txt"); 
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.IO; 
+ 
+ 
+namespace ConsoleApplication1 
+{ 
+    class Program 
+    { 
+        static void Main(string[] args) 
+        { 
+            string line; 
+            try 
+            { 
+                FileStream aFile = new FileStream("Log.txt", FileMode.Open); 
+                StreamReader sr = new StreamReader(aFile); 
+                line = sr.ReadLine(); 
+                // Read data in line by line. 
+                while (line != null) 
+                { 
+                    Console.WriteLine(line); 
+                    line = sr.ReadLine(); 
+                } 
+                sr.Close(); 
+            } 
+            catch (IOException e) 
+            { 
+                Console.WriteLine("An IO exception has been thrown!"); 
+                Console.WriteLine(e.ToString()); 
+                return; 
+}
+
+Copy the Log.txt file, created in the previous example, into the StreamRead\bin\Debug directory. If you 
+Log.txt, the FileStream 
+it. 
+ 
+This application is very similar to the previous one, with the obvious difference being that it is reading a 
+file, rather than writing one. As before, you must import the System.IO namespace to be able to access 
+the necessary classes. 
+ 
+You use the ReadLine() method to read text from the file. This method reads text until a new line is 
+found, and returns the resulting text as a string. The method returns a null when the end of the file has 
+been reached, which you use to test for the end of the file. Note that you use a while loop, which en-
+that way, only the genuine contents of the file are displayed:

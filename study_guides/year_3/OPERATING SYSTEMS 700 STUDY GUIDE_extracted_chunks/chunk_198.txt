@@ -1,0 +1,33 @@
+the same path to their destination, or that they 
+will arrive in their physical sequential order. In addition, packets from one message may be 
+interspersed with those from other messages as they travel toward their destinations. To prevent 
+these problems, a header containing pertinent information about the packet is attached to each 
+packet before it is transmitted. The information contained in the packet header varies according to 
+the routing method used by the network. 
+
+The idea is like sending a series of 30 reference books through a package delivery system. Six 
+boxes contain five volumes each, and each box is labeled with its sequence number (e.g., box 2 of 6), 
+as well as its ultimate destination. As space on passing delivery trucks becomes available, each box is 
+forwarded to a central switching center, where it is stored until space becomes available to send it to 
+the next switching center, getting closer to its destination each time. Eventually, when all six boxes 
+arrive, they are put in their original order, the 30 volumes are unpacked, and the original sequence 
+is restored. 
+ 
+As shown in Table 6.2, packet switching is fundamentally different from circuit switching. 
+ 
+Table 6.2 
+ 
+Packet switching provides greater line efficiency because a single node-to-node circuit can be shared 
+by several packets and does not sit idle over long periods of time. Although delivery may be delayed 
+as traffic increases, packets can still be accepted and transmitted. 
+ 
+This is also in contrast to circuit switching networks, which, when they become overloaded, refuse to 
+accept new connections until the load decreases. If you have ever tried to buy tickets for a popular 
+concert when they first go on sale, then you have experienced an issue like a circuit switching 
+network’s overload response. 
+ 
+Packet switching allows users to allocate priorities to their messages so that a router with several 
+packets queued for transmission can send the higher priority packets first. In addition, packet 
+switching networks are more reliable than other types because most nodes are connected by more 
+than one link, so that if one circuit fails, a completely different path may be established between 
+nodes. 

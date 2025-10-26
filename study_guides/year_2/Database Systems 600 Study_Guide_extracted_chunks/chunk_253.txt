@@ -1,0 +1,34 @@
+ips.  
+ 
+ORDER BY Clause Options 
+The ORDER BY clause is especially useful when the listing order is important to you. The syntax 
+is:  
+SELECT   
+column-list 
+FROM  
+ 
+table-list  
+[ORDER BY  
+column-list [ASC | DESC];  
+Although you have the option of declaring the order type—ascending or descending—the default 
+order is ascending. For example, if you want the contents of the PRODUCT table to be listed by 
+P_PRICE in ascending order, use the following command:  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 256-266. 
+
+ 
+101 
+SELECT   
+P_CODE, P_DESCRIPT, P_QOH, P_PRICE 
+FROM  
+ 
+PRODUCT 
+ORDER BY  
+P_PRICE;  
+Note that although ORDER BY produces a sorted output, the actual table contents are unaffected 
+by the ORDER BY operation.  
+You can add DESC after the attribute to indicate descending order. To produce the listing with 
+products sorted in descending order by price, you would enter:  
+SELECT

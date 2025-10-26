@@ -1,0 +1,42 @@
+Example 1-2. Passing values into SomeMethod( ) 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace Values 
+{ 
+    class TimeMyClass 
+    { 
+        public void SomeMethod(int firstParam, float secondParam) 
+        { 
+ 
+            Console.WriteLine("Here are the parameters received: {0} , {1} 
+",  
+           firstParam, secondParam); 
+            Console.ReadLine(); 
+        } 
+    } 
+ 
+    public class Tester 
+    { 
+        static void Main() 
+        { 
+ 
+            int howManyPeople = 5; 
+            float pi = 3.14f; 
+            TimeMyClass mc = new TimeMyClass(); 
+            mc.SomeMethod(howManyPeople, pi); 
+        } 
+    } 
+
+OutPut:  
+ 
+ 
+The method SomeMethod ( ) takes an int and a float and displays them using Con-
+sole.WriteLine( ). The parameters, which are named firstParam and secondParam, are 
+treated as local variables within SomeMethod ( ). 
+In the calling method (Main), two local variables (howManyPeople and pi) are created and 
+initialized. These variables are passed as the parameters to SomeMethod ( ). The compiler 
+maps howManyPeople to firstParam and pi to secondParam, based on their relative 

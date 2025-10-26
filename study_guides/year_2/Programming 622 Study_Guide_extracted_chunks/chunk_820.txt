@@ -1,0 +1,41 @@
+ht[v];  
+ 
+}  
+  
+  
+  
+weightFound[v] = true;  
+for (int j = 0; j < gSize; j++)  
+ 
+if (!weightFound[j])    
+  
+if (minWeight + weights[v][j] < smallestWeight[j]) smallestWeight[j] 
+= minWeight + weights[v][j];  
+ 
+}   
+  
+  
+  
+  
+  
+//end for  
+  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end shortestPath  
+  
+Note that the function shortestPath records only the weight of the shortest path from the source to a 
+vertex. We leave it for you to modify this function so that the shortest path from the source to a vertex is 
+also recorded. Moreover, this function uses the named constant DBL_MAX, which is defined in the header 
+file cfloat.  
+  
+Let G be a graph with n vertices. In the function shortestPath, the first for loop executes n times and the 
+second for loop also executes n times. The third for loop executes n – 1 times. The body of the third for 
+loop contains two for loops, in sequence, and each of these for loops executes n times. Thus, the total 
+number of iterations of the for loops is n +

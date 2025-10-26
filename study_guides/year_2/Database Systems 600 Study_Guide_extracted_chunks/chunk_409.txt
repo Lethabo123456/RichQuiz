@@ -1,0 +1,19 @@
+ery optimizer can operate in one of two modes: 
+ 
+A rule-based optimizer uses pre-set rules and points to determine the best approach to execute 
+a query.  
+ 
+A cost-based optimizer uses sophisticated algorithms based on statistics about the objects 
+being accessed to determine the best approach to execute a query.  
+In this case, the optimizer process adds up the processing cost, the I/O costs, and the resource costs 
+(RAM and temporary space) to determine the total cost of a given execution plan. 
+The optimizer’s objective is to find alternative ways to execute a query—to evaluate the “cost” of 
+each alternative and then to choose the one with the lowest cost. To understand the function of the 
+query optimizer, consider a simple example. Assume that you want to list all products provided by 
+a vendor based in Florida. To acquire that information, you could write the following query: 
+SELECT 
+P_CODE, P_DESCRIPT, P_PRICE, V_NAME, V_STATE  
+FROM 
+PRODUCT, VENDOR 
+WHERE 
+PRODUCT.V_CODE

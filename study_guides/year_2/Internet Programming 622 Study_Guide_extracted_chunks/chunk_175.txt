@@ -1,0 +1,26 @@
+ssage() . For example, 
+if the $password variable in the script contained an incorrect password, you would see a message 
+like this appear when you ran the script:   
+   
+Connection failed: SQLSTATE[28000] [1045] Access denied for user ‘root’@’localhost’ (using 
+password: YES)   
+   
+4.20 Reading Data   
+Now that you have connected to your database in your PHP script, you can read some data from the 
+database using a SELECT statement. To send SQL statements to the MySQL server, you use the query 
+method of the PDO object:   
+   
+$conn- > query ( $sql );   
+   
+If your SQL statement returns rows of data as a result set, you can capture the data by assigning the 
+result of $conn - > query to a variable:   
+   
+
+74   
+   
+$rows = $conn- > query ( $sql );   
+   
+The result returned by $conn - > query is actually another type of object, called a PDOStatement 
+object.   
+You can use this object along with a foreach loop to move through all the rows in the result set. Each 
+row is an associat

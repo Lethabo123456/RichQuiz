@@ -1,0 +1,30 @@
+expressions yielding nonnegative integer 
+values. indexExp1 specifies the row position and indexExp2 specifies the column 
+position. 
+The statement:  
+sales[5][3] = 25.75; 
+ stores 25.75 into row number 5 and column number 3 (that is, the sixth row and the 
+fourth column) of the array sales 
+
+143 | P a g e  
+ 
+ 
+ 
+Suppose that: 
+ int i = 5; 
+ int j = 3; 
+ Then, the previous statement:  
+sales[5][3] = 25.75; is equivalent to:  
+sales[i][j] = 25.75; 
+ So the indices can also be variables. 
+ 
+Two-Dimensional Array Initialization 
+Like one-dimensional arrays, two-dimensional arrays can be initialized when they are 
+declared. The following example helps illustrate this concept. Consider the following 
+statement: 
+int board[4][3] = {{2, 3, 1},  
+                            {15, 25, 13},  
+                             {20, 4, 7},  
+                            {11, 18, 14}}; 
+This statement declares board to be a two-dimensional array of four rows and 
+three columns. The elements of the first

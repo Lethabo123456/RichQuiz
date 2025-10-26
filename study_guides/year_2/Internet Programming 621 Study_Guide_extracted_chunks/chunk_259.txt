@@ -1,0 +1,63 @@
+; 
+$wow("Time to live king size"); 
+?> 
+a) TIME TO LIVE KING SIZE 
+b) Time to live king size 
+
+c) uppercase 
+d) Time To Live King Size 
+  
+Answer: d 
+  
+123. 
+What will be the output of the following PHP code ? 
+<?php 
+function TV($string) 
+{ 
+echo "my favourite TV show is ".$string; 
+function b() 
+{ 
+echo " I am here to spoil this code"; 
+} 
+} 
+b(); 
+?> 
+a) I am here to spoil this code 
+b) Error 
+c) my favourite TV show isI am here to spoil this code 
+d) None of the above 
+  
+Answer: b 
+ . 
+124. 
+4. What will be the output of the following PHP code ? 
+<?php 
+function TV($string) 
+{ 
+echo "my favourite TV show is ".$string; 
+function b() 
+{ 
+echo " I am here to spoil this code"; 
+} 
+} 
+function b() 
+{ 
+echo " I am here to spoil this code"; 
+
+} 
+b(); 
+?> 
+  
+a) I am here to spoil this code 
+b) Error 
+c) my favourite TV show isI am here to spoil this code 
+d) None of the above 
+  
+Answer: a 
+  
+125. 
+What will be the output of the following PHP code ? 
+<?php 
+function TV($string) 
+{ 
+ech

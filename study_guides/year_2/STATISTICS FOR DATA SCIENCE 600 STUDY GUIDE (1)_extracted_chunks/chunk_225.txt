@@ -1,0 +1,29 @@
+has the least. 
+ 
+ 
+
+P a g e  | 128 
+ 
+ 
+                                     
+ 
+ 
+In addition to the count of countries, we can also plot the average beer servings per 
+continent using a bar chart, as shown: 
+ 
+ drinks.groupby('continent').beer_servings.mean().plot(kind='bar') 
+  
+                               
+ 
+Note how a scatter plot or a line graph would not be able to support this data because they 
+
+P a g e  | 129 
+ 
+can only handle quantitative variables; bar graphs can demonstrate categorical values. We 
+can also use bar charts to graph variables that change over time, like a line graph. 
+ 
+6.2.4 Histograms 
+Histograms show the frequency distribution of a single quantitative variable by splitting up 
+the data, by range, into equidistant bins and plotting the raw count of observations in each 
+bin. A histogram is effectively a bar chart where the x axis is a bin (subrange) of values and 
+the y axis is a count. As an example, I will import a store's daily number of unique cust

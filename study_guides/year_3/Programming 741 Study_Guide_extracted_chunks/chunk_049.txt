@@ -1,0 +1,37 @@
+The base type is the underlying type for the enumeration. If you leave out this optional value 
+(and often you will) it defaults to int, but you are free to use any of the integral types (e.g., 
+ushort, long) except for char. For example, the following fragment declares an enumeration 
+of unsigned integers (uint): 
+ 
+enum ServingSizes :uint{ 
+Small = 1, 
+Regular = 2, 
+Large = 3 
+} 
+
+Notice that an enum declaration ends with the enumerator list. The enumerator list contains 
+the constant assignments for the enumeration, each separated by a comma. 
+
+Using enum Example 1-5
+
+using System.Text; 
+using System.Threading.Tasks; 
+namespace assignvalu 
+{ 
+enum Days {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, 
+Sunday 
+}; 
+enum Months : int { Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, 
+Oct, Nov, Dec }; 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+Days today = Days.Tuesday; 
+int dayNumber = (int)today + 1; 
+Console.WriteLine("{0} is day number #{1}.", today, dayNumber); 
+Months thisMonth = Months.Dec; 
+int monthNumber = (int)thisMonth + 1; 
+Console.WriteLine("{0} is month number #{1}",thisMonth, monthNumber); 
+Console.ReadLine(); 
+}}} 

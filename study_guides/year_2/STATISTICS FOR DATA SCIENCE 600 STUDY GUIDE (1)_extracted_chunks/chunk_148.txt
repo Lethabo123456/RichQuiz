@@ -1,0 +1,42 @@
+Let's go back to our Facebook example for a visualization and further explanation of this. Let's 
+begin to calculate the standard deviation. So, we'll start calculating a few of them. Recall that 
+the arithmetic mean of the data was just about 789, so, we'll use 789 as the mean. 
+We start by taking the difference between each data value and the mean, squaring it, 
+adding them all up, dividing it by one less than the number of values, and then taking its 
+square root. This would look as follows: 
+
+On the other hand, we can take the Python approach and do all this programmatically (which 
+is usually preferred). 
+np.std(friends) # == 425.2 
+What the number 425 represents is the spread of data. You could say that 425 is a kind of 
+average distance the data values are from the mean. What this means, in simple words, is 
+that this data is pretty spread out. 
+
+So, our standard deviation is about 425. This means that the number of friends that these 
+people have on Facebook doesn't seem to be close to a single number and that's quite evident 
+when we plot the data in a bar graph and graph the mean as well as the visualizations of the 
+standard deviation. In the following plot, every person will be represented by a single bar in 
+the bar chart, and the height of the bars represent the number of friends that the individuals 
+have: 
+import matplotlib.pyplot as plt 
+%matplotlib inline y_pos = 
+range(len(friends)) 
+plt.bar(y_pos, friends) plt.plot((0, 25), (789, 789), 'b-') 
+plt.plot((0, 25), (789+425, 789+425), 'g-') plt.plot((0, 25), 
+(789-425, 789-425), 'r-') 
+ 
+The blue line in the centre is drawn at the mean (789), the red line on the bottom is drawn 
+at the mean minus the standard deviation (789-425 = 364), and, finally, the green line 
+towards the top is drawn at the mean plus the standard deviation (789+425 = 1,214). 
+Note how most of the data lives between the green and the red lines while the outliers live 
+outside the lines. Namely, there are three people who have friend counts below the red line 
+and three people who have a friend count above the green line. 
+It's important to mention that the units for standard deviation are, in fact, the same units 
+as the data's units. So, in this example, we would say that the standard deviation is 425 
+friends on Facebook. 
+
+So, now we know that the standard deviation and variance is good for checking how spread 
+out our data is, and that we can use it along with the mean to create a kind of range that a 
+lot of our data lies in. But what if we want to compare the spread of two different datasets, 
+maybe even with completely different units? That's where the coefficient of variation 
+comes into play. 

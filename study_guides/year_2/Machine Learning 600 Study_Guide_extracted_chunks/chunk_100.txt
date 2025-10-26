@@ -1,0 +1,17 @@
+eltas of all the output and hidden layers of the network based on the target of the 
+training pattern. 
+
+P a g e  | 64 
+ 
+In the second phase, the weight update is calculated by multiplying the output delta and input 
+activation. This gives you the gradient weight. The percentage ratio is then subtracted from 
+the weight. The second part is done for all the weight axons in the network. The percentage 
+ratio is called the learning rate. The higher the ratio, the faster the learning. With a lower ratio 
+you know the accuracy of the learning is good. 
+ 
+5.4.1 Data Preparation for ANN 
+For creating an ANN, it's worth using a supervised learning method. However, this requires 
+some thought about the data that you are going to use to train the network. ANN work only 
+with numerical data values. So, if there are normalized things with text values, they need to 
+be converted. This isn't so much an issue with the likes of gender, where the common output 
+would be Male = 0 and Female = 1, for ex

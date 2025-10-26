@@ -1,0 +1,43 @@
+The final step is to modify the onPause() method so that locationManager.removeUpdates line no 
+longer creates an error. This is easy! Simply copy the code you put at the beginning of 
+startLocationUpdates() method (Listing 7.5) and paste it before the try in the onPause() method. You 
+are now ready to test finding locations. 
+
+Run the code on the emulator and press the Get Coordinates button. You should see the permission 
+request to allow My Contact List to access the device’s location (Figure 7.4). If you click Deny, you will 
+see the Toast message that the app will not be able to locate your contacts. If you click the Get 
+Coordinates button again, you will see the Snackbar message that the app requires the permission to 
+locate contacts. When you click OK, you will get back to the permission dialog where you can turn the 
+permission on to access the location functionality.
+
+1. Click the Ellipsis button next to the emulator. 
+2. Make sure the Location tab is selected. 
+3. Enter a new latitude and/or longitude value and click the Send button. These values should show 
+up in your app. 
+
+To test the code on a device that has a GPS, terminate the app running on the emulator (Run > 
+Terminate) and plug an Android device into the computer. (Note that the first four steps below were 
+done in previous Chapter. If you did not change anything, you should be able to jump to Step 5.) 
+1. From the main menu, select Run > Edit Configurations. The Run Configurations window is 
+displayed. 
+2. Click the disclosure button to the left of Android Application on the left side of the screen. Then 
+click app. 
+3. Find Deployment Target Options on the right side of the screen and verify that Show Device 
+o select it from the list.) 
+4. Click OK. Now when you run or debug your app, a device chooser (Figure 7.6) will display all your 
+AVDs and real devices connected to the computer. You can then choose which one you want to 
+test on. 
+5. Your device must be set up to Allow USB Debugging before you can test the app. The location 
+where you can turn this on varies widely among devices. It is usually in the Settings app under 
+USB Settings or Developer Options. This will usually also require the device to be in developer 
+mode, which is also done differently on different devices. You may have to do some internet 
+searches to determine how to change the settings for your device. 
+6. Make sure the device is connected to the computer and is unlocked. Select Choose a running 
+device and then select your device. Click OK. The app will be loaded like on the emulator and 
+begin running when finished. Note that if your device goes to sleep during this process, the app 
+will be terminated. After the app is running on your device, you can unplug it so that you can walk 
+around and see the location change. If you are indoors, it may take some time to 
+get a GPS reading. In some buildings it will not work at all, so you will have to go 
+outside. Get Coordinates from the Network Sensor declaration in ContactMapActivity.java: 
+ 
+LocationListener networkListener;

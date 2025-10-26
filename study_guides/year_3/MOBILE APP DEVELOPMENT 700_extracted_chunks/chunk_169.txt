@@ -1,0 +1,39 @@
+Create the Navigation Bar 
+The navigation bar for the MyContactList app sits at the bottom of the screen and allows the user to 
+quickly move among different activities in the app by tapping one of the images on the bar (Figure 
+4.3). The navigation bar is made up of three ImageButtons contained within a RelativeLayout. The 
+RelativeLayout is set to be just big enough to hold the three buttons and placed within the root 
+RelativeLayout, which was placed in the layout file by the wizard when you created the activity. The 
+navigation layout is anchored to the bottom of that 
+layout so that it always appears at the bottom of the screen. 
+
+Figure 4.3 Complete navigation bar layout 
+ 
+ImageButtons can only use image files that are within the project. To add the images to the project: 
+1. Expand the res folder, which is in the app folder, until you see the drawable folder. 
+2. Open Windows Explorer and navigate to the folder where you placed the contactlisticon.png, 
+settingsicon.png, and mapicon.png files. Select all three files, right-click, and choose Copy. 
+3. Go back to Android Studio and right-click on the drawable folder. Choose Paste. Make sure the 
+drawable folder is selected (or select it), and click OK on the window that opens. 
+4. Open the activity_main.xml file if it is not already open by double-clicking it in the Project 
+window. Make sure that it is open in the Design view in the Editor window. 
+5. Click the Hello World! TextView and delete it as needed. (There may not be one.)  
+6. Scroll to the Layouts folder in the Palette to the left of the Design view. Locate the LinearLayout 
+(horizontal) and drag it onto the activity_main layout. Position the layout anywhere on the 
+screen. It will expand to the size of the screen. You will set the exact location and size in the 
+XML later in this chapter. You should see a LinearLayout in a ConstraintLayout in the Component 
+Tree, and the new LinearLayout should be outlined in light blue in the Design view and the 
+Blueprint view. 
+7. Click and drag an ImageButton from the Buttons folder in the Palette, and place it inside the 
+LinearLayout you just put on the screen. Again, exact position does not matter at this point. 
+8. The Resources window will open. Make sure Drawable is selected on the left top of the window 
+and expand the Project section to the right. The images you put into the project should be listed. 
+Double-click on contactlisticon. The image will be displayed in Design view in the ImageButton. 
+9. Drag another ImageButton to the right of the first one and set its image to the mapicon image 
+using the same procedure used with the first button. 
+10. Repeat step 1 for the last button. Use the settingsicon image and make sure it is positioned to 
+the right of the mapicon button. 
+11. Click on the LinearLayout you added to layout in either the Blueprint view or the Component 
+Tree. The Properties panel on the right should display the basic properties of the layout (id, 
+layout_width, layout_height). Change the layout_height value from its current value to 
+wrap_content using the dropdown. Your layout should shrink in size to just hold the buttons.

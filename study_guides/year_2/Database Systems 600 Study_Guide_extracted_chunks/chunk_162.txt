@@ -1,0 +1,16 @@
+in the specialization hierarchy maintain a 1:1 relationship.  
+Entity subtypes inherit all relationships in which the supertype entity participates. Through 
+inheritance, all subtypes also participate in that relationship. In specialization hierarchies with 
+multiple levels of supertype and subtypes, a lower-level subtype inherits all of the attributes and 
+relationships from all of its upper-level supertypes. Inheriting the relationships of their supertypes 
+does not mean that subtypes cannot have relationships of their own.  
+
+ 
+64 
+Subtype Discriminator 
+A subtype discriminator is the attribute in the supertype entity that determines to which subtype the 
+supertype occurrence is related. In Figure 5.2, the subtype discriminator is the employee type 
+(EMP_TYPE). It is common practice to show the subtype discriminator and its value for each 
+subtype in the ERD, as shown in Figure 5.2.  
+Using Figure 5.2 as your guide, note that the supertype is related to a PILOT subtype if the 
+EMP_

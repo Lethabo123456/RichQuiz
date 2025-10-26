@@ -1,0 +1,22 @@
+function A calls function B, function B calls function C, 
+function C calls function D, and function D calls function A. Function A is then indirectly recursive.  
+  
+Indirect recursion requires the same careful analysis as direct recursion. The base cases must be identified 
+and appropriate solutions to them must be provided. However, tracing through indirect recursion can be 
+tedious. You must, therefore, exercise extra care when designing indirect recursive functions. For 
+simplicity, the problems in this book involve only direct recursion.  
+  
+  
+  
+  
+
+147  
+  
+A recursive function in which the last statement executed is the recursive call is called a tail recursive 
+function. The function fact is an example of a tail recursive function.  
+  
+ 
+4.1.2  Infinite Recursion  
+  
+Figure 4-1 shows that the sequence of recursive calls eventually reached a call that made no further 
+recursive calls. That is, the sequence of recursive calls eventually reached a base case. On the other ha

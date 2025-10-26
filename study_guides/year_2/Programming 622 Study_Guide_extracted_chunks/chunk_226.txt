@@ -1,0 +1,17 @@
+From cases 2, 3, and 4, it follows that the deletion of a node requires us to traverse the list. Because a 
+linked list is not a random access data structure, we must sequentially search the list. We handle case 1 
+separately because it does not require us to traverse the list. We sequentially search the list starting at 
+the second node. If the node to be deleted is in the middle of the list, we need to adjust the link field of 
+the node just before the node to be deleted. Thus, we need a pointer to the previous node. When we 
+search the list for the given info, we use two pointers: one to check the info of the current node, and one 
+to keep track of the node just before the current node. If the node to be deleted is the last node, we must 
+adjust the pointer last.  
+  
+The definition of the function deleteNode is as follows:  
+  
+template <class Type>  
+void unorderedLinkedList<Type>::deleteNode(const Type& deleteItem)  
+{  
+nodeType<Type> *current;      
+  
+//pointer to traverse t

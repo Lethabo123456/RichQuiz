@@ -1,0 +1,74 @@
+abstract public class Window 
+Example 2-2 illustrates the creation of an abstract Window class and an abstract DrawWindow( ) method. 
+
+Example 2-2. Using an abstract method  
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace DevelopExample 
+{ 
+  abstract public class Window 
+    { 
+          // constructor takes two integers to 
+          // fix location on the console 
+    public Window(int top, int left) 
+      { 
+             this.top = top; 
+             this.left = left; 
+      } 
+      // simulates drawing the window // notice: no implementation 
+    abstract public void DrawWindow( ); 
+    protected int top; protected int left; 
+   } 
+   // ListBox derives from Window 
+   public class ListBox : Window 
+    { 
+      // constructor adds a parameter 
+      public ListBox(int top,int left,string contents):base(top, left){ // call base constructor 
+        listBoxContents = contents; 
+      } 
+ 
+   // an overridden version implementing the // abstract method 
+   public override void DrawWindow( ) 
+   { 
+      Console.WriteLine ("Writing string to the listbox: {0}",
+   } 
+   private string listBoxContents; // new member variable  
+   } 
+   public class Button : Window 
+   { 
+     public Button(int top,int left):base(top, left){ } 
+     // implement the abstract method 
+     public override void DrawWindow( ) 
+     { 
+         Console.WriteLine("Drawing a button at {0}, {1}\n", top, left); 
+      } 
+   } 
+  public class Tester 
+          { 
+     static void Main( ) 
+     { 
+       Window[] winArray = new Window[ 2]; 
+       winArray[ 0] = new ListBox(1,2,"First List Box");  
+       winArray[ 1] = new ListBox(2,4,"Second List Box"); 
+       winArray[ 2] = new Button (5,6); 
+
+      for (int i = 0;i < 2; i++) { 
+      winArray[ i]. DrawWindow ( ); 
+       } 
+      } 
+     } 
+   } 
+   
+OUTPUT 
+ 
+Example 2-2, the Window class has been declared abstract and therefore cannot be instanti-
+ated. If you replace the first array member: 
+winArray[ 0] = new ListBox(1,2,"First List Box"); 
+the program will generate the following error: 
+Cannot create an instance of the abstract class or interface 'Window' 
+You can instantiate the ListBox and Button objects because these classes override the abstract 
+method, thus making the classes concrete (i.e., not abstract).

@@ -1,0 +1,29 @@
+r is running correctly, choose the Localhost option from the 
+WampServer menu. If all has gone according to plan, you should see the page shown in   
+Figure 3 appear; this means that WampServer was successfully installed. Congratulations   
+   
+Testing Your Installation   
+Now that you  have installed Apache, PHP, and MySQL on your computer, you are ready to test the 
+installation to make sure everything  is working just fine. Along the way, you will create your very 
+first PHP script (albeit an extremely simple one!).   
+
+81   
+   
+   
+Testing the Web Server   
+The first thing to do is to create a simple HTML Web page for testing. In a text editor such as 
+Notepad for Windows, create the following simple Web page:   
+   
+   
+<html>   
+<head>   
+<title>Testing</title>   
+</head>   
+<body>   
+<h1>Testing, testing, 1-2-3</h1>   
+</body>   
+</html>   
+   
+   
+Call the Web page testing.html and save it in your Web server’s document root folder on your hard 
+drive. What is the document root

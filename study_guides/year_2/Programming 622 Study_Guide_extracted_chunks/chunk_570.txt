@@ -1,0 +1,20 @@
+the elements of list in the second iteration.  
+  
+  
+FIGURE 8-3 Elements of list during the second iteration  
+  
+Now the unsorted list is list[1]...list[7]. So we find the smallest element in the unsorted list. The smallest 
+element is at position 3, as shown in Figure 8-3(a). Because the smallest element in the unsorted list is at 
+position 3, it must be moved to position 1. So we swap 7 (that is, list[3]) with 30 (that is, list[1]), as shown 
+in Figure 8-3(b). After swapping list[1] with list[3], the resulting list is as shown in Figure 8-3(c).  
+  
+Now the unsorted list is list[2]...list[7]. So we repeat the preceding process of finding the (position of the) 
+smallest element in the unsorted portion of the list and moving it to the beginning of the unsorted portion 
+of the list. Selection sort, thus, involves the following steps.  
+  
+In the unsorted portion of the list:  
+
+284  
+  
+1. Find the location of the smallest element.  
+2. Move the smallest element to the beginning of th

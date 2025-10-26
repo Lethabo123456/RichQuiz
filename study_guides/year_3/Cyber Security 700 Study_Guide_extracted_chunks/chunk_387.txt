@@ -1,0 +1,34 @@
+To satisfy requirements, fault management generally includes functions to do the following: 
+ Maintain and examine error logs 
+ Accept and act upon error detection notifications 
+ Trace and identify faults 
+ Carry out sequences of diagnostic tests 
+ Correct faults 
+As with other areas of network management, fault management should have minimal effect on 
+network performance. 
+ 
+Accounting Management 
+In many enterprise networks, individual divisions or cost centers, or even individual project accounts, 
+are charged for the use of network services. These are internal accounting procedures rather than 
+actual cash transfers, but they are important to the participating users nevertheless. Furthermore, 
+even if no such internal charging is employed, a network manager needs to be able to track the use of 
+network resources by user or user class for a number of reasons, including the following: 
+
+ A user or group of users may abuse their access privileges and burden the network at the 
+expense of other users. 
+ Users can make inefficient use of the network, and the network manager can assist in 
+changing procedures to improve performance. 
+ The network manager is in a better position to plan for network growth if user activity is 
+known in sufficient detail. 
+
+A network manager must specify the kinds of accounting information to be recorded at various nodes, 
+the desired interval between successive transmissions of the recorded information to higher-level 
+management nodes, and the algorithms used in calculating the charging. 
+To limit access to accounting information, the accounting facility must provide the capability to verify 
+users’ authorization to access and manipulate that information. 
+To satisfy requirements, accounting management generally includes functions to do the following: 
+ Inform users of costs incurred or resources consumed  
+ Enable accounting limits to be set and tariff schedules to be associated with the use of 
+resources 
+ Enable costs to be combined where multiple resources are invoked to achieve a given 
+communication objective 

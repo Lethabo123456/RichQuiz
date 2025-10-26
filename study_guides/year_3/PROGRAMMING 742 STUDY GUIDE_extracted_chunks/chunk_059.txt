@@ -1,0 +1,44 @@
+2.2.2 Creating Polymorphic Methods 
+To create a method that supports polymorphism, you need only mark it as virtual in its base 
+class. For example, to indicate that the method DrawWindow ( ) of class Window in Exam-
+ple 2-1 is polymorphic, simply add the keyword virtual to its declaration, as follows: 
+public virtual void DrawWindow( ) 
+Now each derived class is free to implement its own version of DrawWindow ( ). To do so, 
+simply override the base class virtual method by using the keyword override in the derived 
+class method definition, and then add the new code for that overridden method. 
+In the following quote from Example 2-2 (which appears later in this section), ListBox derives 
+from Window and implements its own version of DrawWindow ( ): 
+
+public override void DrawWindow( ) 
+{ 
+base.DrawWindow( ); 
+// invoke the base method 
+Console.WriteLine ("Writing string to the listbox: {listBoxContents);
+}  
+} 
+ 
+The keyword override tells the compiler that this class has intentionally overridden how Draw-
+Window ( ) works. Similarly, you'll override this method in another class, Button, also derived 
+from Window. 
+In the body of Example 2-2, you'll first create three objects, a Window, a ListBox, and a Button. 
+You'll then call DrawWindow ( ) on each: 
+Window win = new Window(1,2); 
+ListBox lb = new ListBox(2,4,"Stand alone list box"); Button b = new 
+Button(5,6); 
+win. DrawWindow ( ); 
+lb.DrawWindow( ); 
+b.DrawWindow( ); 
+This works much as you might expect. The correct DrawWindow ( ) object is called for each. So 
+far, nothing polymorphic has been done. The real magic starts when you create an array of 
+Window objects. Because a ListBox is-a Window, you are free to place a ListBox into a Win-
+dow array. You can also place a Button into an array of Window objects because a Button is 
+also a Window: 
+Window[] winArray = new Window[ 2]; 
+winArray[ 0] = new Window(1,2); 
+winArray[ 1] = new ListBox(2,4,"List box in array"); 
+winArray[ 2] = new Button(5,6); 
+What happens when you call DrawWindow ( ) on each of these objects? 
+for (int i = 0;i < 2; i++) 
+{ 
+winArray[ i] . DrawWindow ( ); 
+} 

@@ -1,0 +1,23 @@
+1.1.4 Biconditional Statements 
+A biconditional statement is the combination of a conditional statement and 
+a biconditional contains the words “if and only if” its converse. 
+
+Definition 6 
+Let 𝑝 and 𝑞 be propositions. The biconditional statement 𝑝 ↔ 𝑞 is the 
+proposition “𝑝 if and only if 𝑞.” The biconditional statement 𝑝 ↔ 𝑞 is true 
+when 𝑝 and 𝑞 have the same truth values, and is false otherwise. 
+Biconditional statements are also called bi-implications. 
+
+The truth table for 𝑝 ↔ 𝑞 is shown in Table 6. Note that the statement 𝑝 ↔
+ 𝑞 is true when both the conditional statements 𝑝 → 𝑞 and 𝑞 → 𝑝 are true 
+and is false otherwise. That is why we use the words “if and only if” to 
+express this logical connective and why it is symbolically written by 
+combining the symbols→and←. There are some other common ways to 
+express 𝑝 ↔ 𝑞: 
+
+ “p is necessary and sufficient for q” 
+ “if p then q, and conversely” 
+ “p iff q.” 
+The last way of expressing the biconditional statement 𝑝 ↔ 𝑞 uses the 
+abbreviation “iff” for “if and only if.” Note that 𝑝 ↔ 𝑞 has exactly the same 
+truth value as (𝑝 → 𝑞) ∧ (𝑞 → 𝑝). 

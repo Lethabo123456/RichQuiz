@@ -1,0 +1,22 @@
+rease in height, which in turn violated the balance criteria 
+at x.)  
+  
+2. Suppose that the balance factor of the node x and the balance factor of the higher subtree of x are 
+opposite in sign. To be specific, suppose that the balance factor of node x prior to insertion was 1 
+and suppose that y is the root node of the left subtree of x. After insertion, the balance factor of 
+node y is 1. That is, after insertion, the right subtree of node y grew in height. In this case, we 
+require a double rotation at x. First, we make a left rotation at y (because y is right high). Then, we 
+make a right rotation at x. The other case, which is a mirror image of this case, is handled similarly.  
+  
+The following C++ functions implement the left and right rotations of a node. The pointer of the node 
+requiring the rotation is passed as a parameter to the function.  
+  
+template <class elemT>  
+void rotateToLeft(AVLNode<elemT>* &root)  
+{  
+ 
+AVLNode<elemT> *p;   
+  
+  
+  
+//pointer to the root of

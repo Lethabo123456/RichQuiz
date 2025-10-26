@@ -1,0 +1,22 @@
+er to send the form back to the same page   
+(web_form.html). In a real-world form this attribute would contain the URL of the form handler 
+script.   
+   
+Next, each of the form controls is created in turn. Most controls are given a name attribute, which is 
+the name of the field that stores the data, and a value attribute, which contains either the fixed field 
+value or, for fields that let the users enter their own value, the default field value. You can think of 
+the field names and field values as being similar to the keys and values of an associative array.   
+   
+Most controls are also given an associated label element containing the field label. This text 
+describes the field to the users and prompts them to enter data into the field. Each label is 
+
+20   
+   
+associated with its control using its for attribute, which matches the corresponding id attribute in the 
+control element.   
+   
+   
+   
+The created form fields include:   
+• 
+A text input field –– This allows the user t

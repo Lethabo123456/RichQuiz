@@ -1,0 +1,41 @@
+icalOrder, andqueue after the third iteration of Step 3  
+If you repeat Step 3 eight more times, the arrays predCount, topologicalOrder, and queue are as shown 
+in Figure 10-22.  
+  
+  
+FIGURE 10-22 Arrays predCount, topologicalOrder, and queue after Step 3 executes  
+  
+
+415  
+  
+In Figure 10-22, the array topologicalOrder shows the breadth-first topological ordering of the nodes of 
+the graph G3.  
+  
+The following C++ function implements this breadth-first topological ordering algorithm:  
+  
+void topologicalOrderType::bfTopOrder()  
+{ 
+linkedQueueType<int> queue;  
+  
+ 
+int *topologicalOrder;   
+  
+//pointer to the array to store  
+//breadth first topological ordering  
+topologicalOrder = new int[gSize];  
+  
+int topIndex = 0;  
+  
+ 
+linkedListIterator<int> graphIt;   
+//iterator to traverse a linked list  
+  
+ 
+int *predCount;   
+  
+  
+//pointer to the array to store the  
+//predecessor count of a vertex.  
+predCount = new int[gSize];  
+  
+for (int ind = 0; ind < gSize; ind++) pre

@@ -1,0 +1,35 @@
+irectory   
+• 
+is_file() — Returns true if the given filename refers to a regular file   
+   
+Here is a simple example that determines if a file called myfile is a file or a directory:   
+   
+$filename = “myfile”; if ( is_dir( 
+$filename ) ) {            echo “$filename 
+is a directory.”; } elseif ( is_file( 
+$filename ) ) {           echo “$filename 
+is a file.”;   
+} else {   
+         echo “$filename is neither a directory nor a file.”;   
+}   
+   
+   
+ 
+  
+3.19   
+Unit Summary   
+In this chapter you learned how to work with files and explored PHP’s various file-handling functions.   
+
+60   
+   
+You looked at:   
+• 
+How files and directories work, and the differences between file paths on UNIX-like servers 
+and Windows servers   
+• 
+Retrieving information on files using file_exists(), filesize(), fileatime(), filectime(), filemtime(), 
+basename(), and dirname()   
+• 
+Using fopen() and fclose() to open and close files for reading and writing   
+• 
+Reading and writing to files using f

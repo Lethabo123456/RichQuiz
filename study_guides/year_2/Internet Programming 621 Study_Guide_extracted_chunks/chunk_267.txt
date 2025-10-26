@@ -1,0 +1,84 @@
+a) Hello World! 
+b) Hello World! 
+Hello World! 
+c) Hello World! 
+Hello World! 
+Hello World! 
+
+d) None of the above 
+  
+Answer: c 
+  
+148. 
+What will be the output of the following PHP code ? 
+<?php 
+function email() 
+{ 
+$email = ’user@yahoo.com’; 
+$new = strstr($email, ‘@'); 
+echo $new; 
+} 
+email(); 
+?> 
+  
+a) user 
+b) user@yahoo.com 
+c) @yahoo.com 
+d) yahoo.com 
+  
+Answer: c 
+  
+149. 
+What will be the output of the following PHP code ? 
+<?php 
+function string() 
+{ 
+echo strstr("Hello world!", 111); 
+} 
+string(); 
+?> 
+a) o world! 
+b) Hello world! 
+c) 111 
+d) No Output 
+  
+Answer: a 
+  
+150. 
+What will be the output of the following PHP code ? 
+
+<?php 
+function CalAll($x,$y) 
+{ 
+echo ($x + $y); 
+echo "<br>"; 
+echo ($x - $y); 
+echo "<br>"; 
+echo ($x * $y); 
+echo "<br>"; 
+echo ($x / $y);  
+echo "<br>"; 
+echo ($x % $y); 
+} 
+$x = 10;  
+$y = 6; 
+CalcAll();  
+?> 
+a) 4 
+60 
+1.6666666666667 
+4 
+16 
+b) 16 
+4 
+60 
+1.6666666666667 
+4 
+c) 4 
+16 
+4 
+60 
+1.6666666666667 
+d) 1.6666666666667 
+4 
+16

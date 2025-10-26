@@ -1,0 +1,20 @@
+d 
+transforming the original SQL query into a slightly different version of the original SQL code, but 
+one that is fully equivalent and more efficient. Fully equivalent means that the optimized query 
+results are always the same as the original query. More efficient means that the optimized query 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eleven page 516-522. 
+
+ 
+162 
+will almost always execute faster than the original query. To determine the most efficient way to 
+execute the query, the DBMS may use the database statistics you learned about earlier.  
+The SQL parsing activities are performed by the query optimizer, which analyses the SQL query 
+and finds the most efficient way to access the data. This process is the most time-consuming phase 
+in query processing. Parsing a SQL query requires several steps, in which the SQL query is:  
+ 
+Validated for syntax compliance  
+ 
+Validated against the data dict

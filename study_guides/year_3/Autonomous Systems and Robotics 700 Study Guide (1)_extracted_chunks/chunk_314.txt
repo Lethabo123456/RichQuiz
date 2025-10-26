@@ -1,0 +1,25 @@
+5.9.2 Domain-Specific Simulation Requirements 
+Different application domains in multi-agent robotics require specialized simulation capabilities 
+that address the unique physical, environmental, and operational characteristics of specific 
+deployment scenarios. These domain-specific requirements often drive the development of 
+custom simulation platforms that can accurately model the relevant aspects of particular 
+application environments while providing the performance and scalability needed for systematic 
+research and development. 
+Aerial swarm simulations require sophisticated aerodynamics modeling, wind field simulation, 
+and three-dimensional collision avoidance capabilities that accurately represent the challenges 
+of coordinating multiple unmanned aerial vehicles in complex airspace environments. These 
+simulations must model not only the flight dynamics of individual vehicles but also the 
+aerodynamic interactions between vehicles flying in close formation and the effects of 
+atmospheric disturbances on swarm coordination. 
+Marine robotics applications demand simulation environments that can model underwater 
+dynamics, communication limitations imposed by the aquatic environment, and the unique 
+navigation challenges associated with three-dimensional underwater environments where GPS is 
+unavailable and acoustic communication has limited range and bandwidth. These simulations 
+often require integration with oceanographic models that represent current patterns, 
+temperature gradients, and other environmental factors that affect robot operations. 
+
+Industrial automation scenarios require simulation environments that can model complex factory 
+layouts, conveyor systems, robotic manipulators, and the safety constraints that are critical in 
+human-robot collaborative environments. These simulations must accurately represent the 
+timing constraints, safety protocols, and coordination requirements that characterize modern 
+automated manufacturing systems. 

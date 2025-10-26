@@ -1,0 +1,73 @@
+Write a program that uses C++ random number generators to generate 25 real 
+numbers between 10 and 100. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+253 | P a g e  
+ 
+TOPIC 8: ADVANCED CONCEPTS 
+ 
+    
+    
+ 
+    
+    
+    
+  
+ 
+LEARNING OUTCOMES:  
+After studying this topic you should be able to:  
+• 
+Learn what a stream is and examine input and output streams 
+• 
+Learn what an exception is 
+• 
+Learn how to handle exceptions within a program 
+• 
+Learn how a try/catch block is used to handle exceptions 
+• 
+Learn how to throw an exception 
+• 
+Become familiar with C++ exception classes and how to use them in 
+a program 
+ 
+FILE INPUT/OUTPUT 
+The previous sections discussed in some detail how to get input from the keyboard 
+(standard input device) and send output to the screen (standard output device). 
+However, getting input from the keyboard and sending output to the screen have 
+several limitations. Inputting data in a program from the keyboard is comforta

@@ -1,0 +1,32 @@
+5.4.3  Function evaluateOpr  
+  
+This function (if possible) evaluates an expression. Two operands are needed to evaluate an operation 
+and operands are saved in the stack. Therefore, the stack must contain at least two numbers. If the stack 
+contains fewer than two numbers, the expression has an error. In this case, the entire expression is 
+discarded and an appropriate message is printed. This function also checks for any illegal operations. In 
+pseudocode, this function is as follows:  
+  
+if stack is empty  
+{  
+error in the expression set 
+expressionOk to false  
+}  
+else  
+{  
+retrieve the top element of stack into op2 pop 
+stack  
+if stack is empty  
+{  
+error in the expression  
+set expressionOk to false  
+}  
+else  
+{  
+retrieve the top element of stack into op1 pop 
+stack  
+//If the operation is legal, perform the operation and 
+//push the result onto the stack; //otherwise, report 
+the error. switch (ch)  
+{  
+case '+': //add the operands: op1 + 
+op2 stack.push(op1 + op2);

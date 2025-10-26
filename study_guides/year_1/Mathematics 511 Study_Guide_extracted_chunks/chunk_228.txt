@@ -1,0 +1,23 @@
+4.2.5 Some Applications of Special Types of Graphs 
+
+ Local Area Networks 
+The various computers in a building, such as minicomputers and personal 
+computers, as well as peripheral devices such as printers and plotters, can 
+be connected using a local area network. Some of these networks are based 
+on a star topology, where all devices are connected to a central control 
+device.A local area network can be represented using a complete bipartite 
+graph K1,n, as shown in Figure 4.12(a) Messages are sent from device to 
+device through the central control device. 
+ 
+ 
+Figure 4.12: Star, Ring, and Hybrid Topologies for Local Area Networks. 
+Other local area networks are based on a ring topology, where each device 
+is connected to exactly two others. Local area networks with a ring topology 
+are modeled using n-cycles, Cn, as shown in Figure 4.12b). Messages are sent 
+from device to device around the cycle until the intended recipient of a 
+message is reached. 
+
+Finally, some local area networks use a hybrid of these two topologies. 
+Messages may be sent around the ring, or through a central device. This 
+redundancy makes the network more reliable. Local area networks with this 
+redundancy can be modeled using wheels Wn, as shown in Figure 4.12(c). 

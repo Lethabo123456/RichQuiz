@@ -1,0 +1,27 @@
+sional array are finding the 
+largest element in each row and each column. 
+ 
+The following for loop determines the largest element in row number 4:  
+row = 4; 
+largest = matrix[row][0]; //Assume that the first element of the row is the largest.  
+for (col = 1; col < NUMBER_OF_COLUMNS; col++) 
+ if (matrix[row][col] > largest) 
+ largest = matrix[row][col]; 
+ 
+The following C++ code determines the largest element in each row and each column: 
+         //Largest element in each row  
+for (row = 0; row < NUMBER_OF_ROWS; row++)  
+{ 
+
+149 | P a g e  
+ 
+ largest = matrix[row][0]; //Assume that the first element //of the row is the largest. for 
+for (col = 1; col < NUMBER_OF_COLUMNS; col++) 
+     if (matrix[row][col] > largest) largest = matrix[row][col]; 
+ cout << "The largest element in row " << row + 1 << " = " << largest << endl; 
+ } 
+ 
+     //Largest element in each column  
+for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+ {  
+largest = matrix[0][col]; //Assume that the first element //of

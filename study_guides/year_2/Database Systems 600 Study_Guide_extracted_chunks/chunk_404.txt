@@ -1,0 +1,25 @@
+cks are more likely.  
+A query processing bottleneck is a delay introduced in the processing of an I/O operation that 
+causes the overall system to slow down. Within a DBMS, five components typically cause 
+bottlenecks: 
+ 
+RAM.  
+ 
+Hard disk. 
+ 
+Network.  
+ 
+Application code.  
+Bottlenecks are the result of multiple database transactions competing for the use of database 
+resources (CPU, RAM, hard disk, indexes, locks, buffers, etc.). Because most (if not all) 
+transactions work with data rows in tables, one of the most typical bottlenecks is caused by 
+transactions competing for the same data rows. Another common source of contention is for shared 
+
+ 
+163 
+memory resources, particularly shared buffers and locks. To speed up data update operations, the 
+DMBS uses buffers to cache the data. At the same time, to manage access to data, the DBMS uses 
+locks. Learning how to avoid these bottlenecks and optimize database performance is the focal point 
+of this chapter. 
+ 
+Indexes and Que

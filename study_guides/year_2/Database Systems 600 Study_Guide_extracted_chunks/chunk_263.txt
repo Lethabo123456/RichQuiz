@@ -1,0 +1,23 @@
+etrieves the highest and lowest prices in the PRODUCT table in a single query.  
+SELECT  MAX(P_PRICE) AS MAXPRICE, MIN(P_PRICE) AS MINPRICE  
+FROM  
+PRODUCT; 
+SUM and AVG The SUM function computes the total sum for any specified numeric attribute, 
+using any condition(s) you have imposed. For example, if you want to compute the total amount 
+owed by your customers, you could use the following command:  
+SELECT  SUM(CUS_BALANCE) AS TOTBALANCE 
+FROM  
+CUSTOMER; 
+The AVG function format is similar to those of SUM and is subject to the same operating 
+restrictions. The following command set shows how a simple average P_PRICE value can be 
+generated to yield the computed average price of 56.42125.  
+SELECT  AVG(P_PRICE) AS AVGPRICE 
+FROM  
+PRODUCT; 
+Grouping Data 
+
+ 
+106 
+Sometimes, you do not want to treat the entire table as a single collection of data for 
+summarizing. Rows can be grouped into smaller collections quickly and easily using the GROUP 
+BY clause within the SELECT statement.

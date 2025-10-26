@@ -1,0 +1,29 @@
+4.11.2 Disaster Recovery Contingencies 
+
+i. Cold site 
+ Components necessary to rebuild network exist 
+ Not appropriately configured, updated, or connected 
+ii. Warm site 
+ Components necessary to rebuild network exist  
+ Some appropriately configured, updated, and connected 
+iii. Hot site 
+ Components exist and match network’s current state 
+ All appropriately configured, updated, and connected 
+
+4.11.3 Forensics 
+Every security policy should include a response policy 
+ Defines the characteristics of an event that qualifies as a formal incident and steps 
+that should be followed 
+ Qualifying incidents might include a: 
+ Break-in 
+ Fire 
+ Weather-related emergency 
+ Hacking attack or malware outbreak 
+ Discovery of illegal content or activity 
+ Data collected might be presented in a court of law 
+ Data must be carefully collected so that it will stand up to the scrutiny of the court 
+ First responders may take charge 
+ People with training and/or certifications that prepare them to handle evidence 
+ Every IT technician should know how to safeguard sensitive information, logged data, and 
+other legal evidence until first responder can take over 
+A response policy should detail the following steps: 

@@ -1,0 +1,31 @@
+re 8-24.  
+  
+  
+FIGURE 8-24 list before sorting  
+  
+
+299  
+  
+For the list in Figure 8-24, the pivot is at position 6. After moving the pivot at the first array position, the 
+list is shown in Figure 8-25. (Notice that in Figure 8-25, 52 is swapped with 32.)  
+  
+  
+FIGURE 8-25 List after moving pivot at the first array position  
+  
+Suppose that after executing Step 2 a few times, the list is as shown in Figure 8-26.  
+  
+  
+FIGURE 8-26 List after a few iterations of Step 2  
+  
+As shown in Figure 8-26, the next element of the list that needs to be moved in a sublist is indicated by 
+index. Because list[index] < pivot, we need to move the element list[index] in lowerSublist. To do so, we 
+first advance smallIndex to the next array position and then swap list[smallIndex] with list[index]. The 
+resulting list is shown in Figure 8-27. (Notice that 11 is swapped with 96.)  
+  
+  
+FIGURE 8-27 List after moving 11 into lowerSublist  
+  
+Now consider the list in Figure 8-28.  
+  
+  
+FIGURE

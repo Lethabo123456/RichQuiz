@@ -1,0 +1,48 @@
+2.2.4 Spiral Model  
+The Spiral model of software development is shown in the figure below. The diagrammatic 
+representation of this model appears like a spiral with many loops. The exact number of loops 
+in the spiral is not fixed. Each loop of the spiral represents a phase of the software process. For 
+example, the innermost loop might be concerned with feasibility study, the next loop with 
+requirements specification, the next one with design, and so on. Each phase in this model is split 
+into four sectors (or quadrants). 
+
+Figure 2.3: The Spiral Model (Sommerville,  I.  2021)  
+ 
+The following activities are carried out during each phase of a spiral model. 
+i. First quadrant (Objective Setting) 
+• During the first quadrant, it is needed to identify the objectives of the phase. 
+• Examine the risks associated with these objectives. 
+ 
+ii. Second Quadrant (Risk Assessment and Reduction) 
+• A detailed analysis is carried out for each identified project risk. 
+• Steps are taken to reduce the risks. For example, if there is a risk that the requirements 
+are inappropriate, a prototype system may be developed. 
+ 
+iii. Third Quadrant (Development and Validation) 
+• Develop and validate the next level of the product after resolving the identified risks 
+
+iv. Fourth Quadrant (Review and Planning) 
+• Review the results achieved so far with the customer and plan the next iteration around 
+the spiral  
+• Progressively more complete version of the software gets built with the iteration around 
+the spiral
+
+The spiral model is called a “meta model” since it encompasses all other life cycle models. Risk 
+handling is inherently built into this model. The spiral model is suitable for development of 
+technically challenging software products that are prone to several kinds of risks. However, this 
+model is much more complex than the other models – this is probably a factor deterring its use 
+in ordinary projects 
+
+The different software life cycle models can be compared from the viewpoint of the customer. 
+Initially, customer confidence in the development team is usually high irrespective of the 
+development model followed. During the lengthy development process, customer confidence 
+normally drops off, as no working product is immediately visible. Developers answer customer 
+queries using technical slang, and delays are announced. This gives rise to customer resentment.  
+
+On the other hand, an evolutionary approach lets the customer experiment with a working 
+product much earlier than the monolithic approaches. Another important advantage of the 
+incremental model is that it reduces the customer’s trauma of getting used to an entirely new 
+system. The gradual introduction of the product via incremental phases provides time to the 
+customer to adjust to the new product. Also, from the customer’s financial viewpoint, 
+incremental development does not require a large upfront capital outlay. The customer can order 
+the incremental versions as and when he can afford them 

@@ -1,0 +1,44 @@
+4.6.3 Explicit Interface Implementation 
+If a class implements two or more interfaces that contain a member with the same signature, 
+then implementing that member on the class will cause both interfaces to use that member 
+as their implementation.  An explicit interface implementation is a class member that is only 
+called through the specified interface. Using explicit implementation you can tell the compiler 
+which interface’s method you are Overloading and can provide different functionalities for 
+methods of different interfaces. Name the class member by prefixing it with the name of the 
+
+interface and a period. For example: 
+Example 4-9 Explicit interface implementation 
+// Interface 
+interface ISedan 
+{ 
+  void CountDoors();// interface method (does not have a body) 
+} 
+// Interface 
+interface ICoupe 
+{ void CountDoors();// interface method (does not have a body) 
+} 
+ 
+// MyCars "implements" the ISedan & ICoupe interface 
+class MyCars: ISedan,ICoupe  
+{// Explicitly implements method of ISedan 
+ void ISedan.CountDoors()  
+  { 
+    Console.WriteLine("Sedan:\t Four doors"); 
+  } 
+  void ICoupe.CountDoors()  
+  { 
+    Console.WriteLine("Coupe:\t Two doors"); 
+  } 
+} 
+ 
+class Program  
+{ 
+  static void Main(string[] args)  
+  { 
+    ICoupe coupe= new MyCars();  // Create a MyCar object 
+    coupe.CountDoors(); // call to method of ICoupe 
+    ISedan sedan= new MyCars();  // Create a MyCar object 
+    sedan.CountDoors(); // call to method of ISedan 
+
+  } 
+}

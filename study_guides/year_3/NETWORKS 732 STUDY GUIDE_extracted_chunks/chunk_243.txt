@@ -1,0 +1,45 @@
+5.3.6 nslookup Utility 
+Whenever you’re conﬁguring a server or a workstation to connect to the Internet, you’ve got to 
+start by conﬁguring DNS if you want name resolution to happen (that is, if you want to be able to 
+type www.sybex.com instead of an IP address). When conﬁguring DNS, it’s a very good thing to 
+be able to test what IP address DNS is returning to ensure that it’s working properly. The nslookup 
+utility allows you to query a name server and quickly ﬁnd out which name resolves to which IP 
+address. 
+ 
+The nslookup utility comes with Windows 10 as well as with most versions of Unix and Linux. You 
+can run it from a Windows command prompt. At the command prompt, you can start the 
+nslookup utility by typing nslookup and pressing Enter. When you’re inside this utility, the 
+command prompt will change from something similar to a C:\> sign to a shorter > sign. It will also 
+display the name and IP address of the default DNS server you will be querying (you can change 
+it, if necessary). Then you can start using nslookup. The following output gives you a sample of 
+the display after the nslookup command has been entered at the C:\> prompt. 
+C:\Users\tlammle>nslookup 
+ 
+Default Server: gnt-corpdc1.globalnet.local 
+Address: 10.100.36.12 
+> 
+ 
+The primary job of nslookup is to tell you the many diﬀerent features of a particular domain name, 
+the names of the servers that serve it, and how they’re conﬁgured. To get that, just type in a 
+domain name at the > prompt, and the nslookup utility will then return this information: 
+> lammle.com 
+
+Server: dslmodem.domain.actdsltmp 
+Address: 192.168.0.1 
+The non-authoritative answer is as follows: 
+ 
+Name: lammle.com 
+Address: 206.123.114.186 
+
+What this tells you is that the server that returned the information is not responsible 
+(authoritative) for the zone information of the domain for which you requested an address and 
+that the name server for the domain lammle.com is located at the IP address 206.123.114.186. 
+You can also ask nslookup for other information by setting a diﬀerent option within nslookup. Just 
+type set option at the > prompt and replace option with the actual option you want to use—for 
+example, use >set type=mx to determine the IP address of your email server. If you can’t decide 
+which one you want, use the question mark (?) at the greater than sign (>) to see all available 
+options. If you type in nslookup and receive this reply, 
+then you know your DNS servers are not answering. You need to get over to the DNS server, stat! 
+ 
+Figure 5.19: entire arp output (Lammle, 2022) 
+ 

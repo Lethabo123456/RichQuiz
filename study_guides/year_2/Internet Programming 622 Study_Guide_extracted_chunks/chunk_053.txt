@@ -1,0 +1,25 @@
+“lastName”]?></dd>   
+                                  <dt>Password</dt><dd><?php echo $_POST[“password1”]?></dd>   
+                                  <dt>Retyped password</dt><dd><?php echo $_POST[“password2”]?></dd>   
+                                  <dt>Gender</dt><dd><?php echo $_POST[“gender”]?></dd>   
+                                  <dt>Favorite widget</dt><dd><?php echo $_POST[“favoriteWidget”]?></dd>   
+                                   <dt>Do you want to receive our newsletter?</dt><dd><?php echo          
+                                          $_POST[“newsletter”]?></dd>   
+                                   <dt>Comments</dt><dd><?php echo $_POST[“comments”]?></dd>   
+                        </dl>   
+           </body>   
+</html>   
+   
+Figure 1.3 shows an example form just before it was submitted, and Figure 1.4 shows the result of 
+sending the form.   
+   
+   
+Figure 1.3   
+   
+
+27   
+   
+   
+Figure 1.4   
+   
+Here is how it works: Because the form is sent using t

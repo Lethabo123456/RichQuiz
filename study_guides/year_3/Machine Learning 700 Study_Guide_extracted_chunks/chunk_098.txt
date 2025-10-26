@@ -1,0 +1,33 @@
+4.3 k-Nearest Neighbors (k-NN) 
+
+The k-Nearest Neighbors (k-NN) algorithm classifies a data point based on the majority class of its k 
+closest neighbors in the feature space. k-NN performs well when data is well-distributed but struggles 
+with high-dimensional datasets due to the curse of dimensionality. 
+
+Key Properties: 
+• Lazy learning: No training phase; all computation happens during prediction. 
+• Distance metric: Typically uses Euclidean distance to measure closeness between points. 
+Mathematical Formula (Euclidean Distance): 
+ 
+The k-NN algorithm is one of the simplest machine learning methods. Building the model simply involves 
+storing the training dataset. When making a prediction for a new data point, the algorithm finds the 
+closest data points in the training set, known as its “nearest neighbors.” In its most basic form, the k-NN 
+algorithm considers only one neighbor the closest training point to the data point we are predicting for. 
+The prediction output is then the same as the output of this nearest neighbor.set. 
+ 
+Here, we introduced three new data points, represented by stars. For each of these points, we identified 
+the closest point in the training set. The prediction made by the one-nearest-neighbor algorithm is the 
+label of that closest point, indicated by the color of the cross. Instead of considering just the nearest 
+neighbor, we can also factor in a chosen number, k, of neighbors. This is where the term "k-nearest 
+neighbors" originates. When looking at multiple neighbors, we use a voting process to determine the 
+label. For each test point, we count how many neighbors belong to class 0 and how many belong to class 
+1, then assign the label of the majority class—the most frequent class among the k-nearest neighbors. 
+The example below illustrates this using the three closest neighbors: 
+ 
+Once again, the prediction is represented by the color of the cross. You can observe that the prediction 
+for the new data point at the top left differs from the one made using only a single neighbor. Although 
+this example is for a binary classification problem, the same approach can be used for datasets with 
+multiple classes. In such cases, we count how many neighbors belong to each class and predict the most 
+frequent class. Now, let’s explore how we can implement the k-nearest neighbors algorithm using scikit-
+learn. First, we divide our data into training and test sets so we can assess the model's ability to 
+generalize.

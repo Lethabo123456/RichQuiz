@@ -1,0 +1,32 @@
+hy the answer is 4. 
+ 
+Now delete the @ sign from the email address on the first line of the code. Run the 
+script again and you should find a value of -1 is written to the page. 
+ 
+You can use this information in an IF Statement. Like this: 
+if ( at_sign == -1 )  
+{ 
+document.write( "no @ sign in email address" ); 
+} 
+else 
+{ 
+document.write("email address contains @ sign"); 
+} 
+ 
+The code above just checks the at_sign variable for a value of -1 and takes action 
+accordingly. Add it to your own code and test it out. Put the @ sign back in and rerun 
+your code. 
+ 
+5.3 JAVASCRIPT STRINGS - CHARAT 
+ 
+In the previous section, you used indexOf to get the position of one string of text 
+inside another. But if you want the character returned rather than its position number 
+then you can use the JavaScript string method charAt. Like this: 
+if ( at_sign == -1 )  
+{ 
+document.write( "no @ sign in email address" ); 
+} 
+else  
+{ 
+var character = email.charAt( at_sign ); 
+document.write( character

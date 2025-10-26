@@ -1,0 +1,36 @@
+3.7 Defining Structs 
+The syntax for declaring a struct is almost identical to that for a class: 
+ 
+[attributes] [ access-modifiers] struct identifier [ :interface-list] { struct-members } 
+ 
+Example 6-9 illustrates the definition of a struct. Employee represents a person with ID and 
+name . Notice that the struct Employee is declared exactly as a class would be, except for the 
+use of the keyword struct. Also notice that the Employee constructor takes two parameters 
+and assigns their value to the instance members, name and ID. A structure type (or struct 
+type) is a value type that can encapsulate data and related functionality 
+ 
+Example 3.9. Creating a struct 
+ 
+using System; 
+namespace CsharpStruct { 
+   // defining struct 
+  struct Employee { 
+    public int id; 
+    public string name; 
+    // parameterized constructor 
+
+    public Employee(int employeeId, string employeeName) { 
+         id = employeeId; 
+      name = employeeName; 
+    } 
+  } 
+   class Program { 
+    static void Main(string[] args) { 
+       // calls constructor of struct 
+      Employee emp = new Employee(1, "Brian"); 
+      Console.WriteLine("Employee Name: " + emp.name); 
+      Console.WriteLine("Employee Id: " + emp.id); 
+      Console.ReadLine(); 
+    } 
+  } 
+}

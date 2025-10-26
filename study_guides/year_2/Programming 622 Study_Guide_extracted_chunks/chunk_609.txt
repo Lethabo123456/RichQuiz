@@ -1,0 +1,40 @@
+mplate <class elemType>  
+void arrayListType<elemType>::recQuickSort(int first, int last)  
+{  
+ 
+int pivotLocation;  
+  
+if (first < last)  
+{ pivotLocation = partition(first, last); 
+recQuickSort(first, pivotLocation - 1); 
+recQuickSort(pivotLocation + 1, 
+last);  
+}  
+}  
+  
+Finally, we write the quicksort function, quickSort, that calls the function recQuickSort of the original list:  
+  
+template <class elemType>  
+void arrayListType<elemType>::quickSort()  
+{ recQuickSort(0, length -1);  
+}  
+  
+
+302  
+  
+We leave it as an exercise for you to write a program to test quicksort.   
+  
+ 
+8.7.1  Analysis: Quicksort  
+  
+Table 8-2 summarizes the behavior of quicksort for a list of length n. (The proofs of these results are given 
+in Appendix F.)  
+  
+TABLE 8-2: Analysis of quicksort for a list of length n  
+  
+  
+ 
+8.8  
+Mergesort: Linked List-Based Lists  
+In the previous section, we described quicksort and stated that the average-case behaviour of quicksort 
+is O(nlog2n). However, t

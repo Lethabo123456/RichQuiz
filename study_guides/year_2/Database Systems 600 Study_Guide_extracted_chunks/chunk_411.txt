@@ -1,0 +1,17 @@
+n is the I/O cost. 
+(Remember, the DBMS always tries to minimize I/O operations.) Table 11.4 shows two sample 
+access plans (Plan A and Plan B) for the previous query and their respective I/O costs. 
+ 
+ 
+Comparing, plan A and B, the optimizer would consider the number of I/O operations as well as the 
+resulting data set and not only the total I/O cost, to decide which of the plans is optimal (best) and 
+execute the query using that access plan. In analysing Table 11.4, you can see how Plan A has a 
+total I/O cost that is almost 30 times higher than Plan B. In this case, the optimizer will choose Plan 
+B to execute the SQL. 
+ 
+6.3  Performance Tuning 
+ 
+SQL performance tuning is evaluated from the client perspective. Therefore, the goal is to illustrate 
+some common practices used to write efficient SQL code.  
+In as much as most current-generation relational DBMSs perform automatic query optimization at 
+the server end and most SQL performance optimization techniques are DBMS-specific

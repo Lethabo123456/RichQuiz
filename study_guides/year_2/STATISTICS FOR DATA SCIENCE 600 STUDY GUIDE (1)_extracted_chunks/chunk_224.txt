@@ -1,0 +1,26 @@
+or example, we can plot the 
+number of countries per continent using a bar chart. Note how the x axis does not represent 
+a quantitative variable, in fact, when using a bar chart, the x axis is generally a categorical 
+variable, while the y axis is quantitative. 
+  
+Note that, for this code, we are using the World Health Organization's report on alcohol 
+consumption around the world by country:  
+drinks = pd.read_csv('data/drinks.csv') drinks.continent.value_counts().plot(kind='bar', 
+title='Countries per Continent')  
+plt.xlabel('Continent')  
+plt.ylabel('Count')  
+  
+The following graph shows us a count of the number of countries in each continent. We can 
+see the continent code at the bottom of the bars and the bar height represents the number 
+of countries we have in each continent. For example, we see that Africa has the most 
+countries represented in our survey, while South America has the least. 
+ 
+ 
+
+P a g e  | 128 
+ 
+ 
+                                     
+ 
+ 
+In addition to t

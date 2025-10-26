@@ -1,0 +1,58 @@
+trailCurrent points to node 
+54 and current is NULL.  
+  
+The definition of the function insert is as follows:  
+template <class Type>  
+void orderedLinkedList<Type>::insert(const Type& newItem)  
+{  
+nodeType<Type> *current;      
+//pointer to traverse the list nodeType<Type> 
+*trailCurrent;    
+//pointer just before current nodeType<Type> *newNode;   
+ 
+ 
+//pointer to create a node bool found;  
+  
+ 
+newNode = new nodeType<Type>;    
+//create the node  
+newNode->info = newItem;    
+  
+//store newItem in the node  
+newNode->link = NULL;   
+ 
+  
+  
+//set the link field of the node  
+//to NULL  
+
+119  
+  
+if (first == NULL)   
+  
+{  
+first = newNode; 
+last = newNode; 
+count++;  
+}  
+else  
+{ current = first; 
+found = false;  
+  
+  
+//Case 1  
+  
+while (current != NULL && !found)  //search the list 
+if (current->info >= newItem) found = true; 
+else  
+{ trailCurrent = current;  
+current = current->link;  
+}  
+  
+ 
+if (current == first)   
+  
+  
+//Case 2  
+{  
+newNode->link = first; first

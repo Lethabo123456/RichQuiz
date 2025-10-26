@@ -1,0 +1,35 @@
+We also need to load the test images: 
+
+test_images = mnist.test_images().tolist() 
+test_labels = mnist.test_labels().tolist() 
+assert shape(test_images) == [10000, 28, 28] 
+assert shape(test_labels) == [10000] 
+Each image is 28 × 28 pixels, but our linear layers can only deal with one-dimensional inputs, 
+so we’ll just flatten them (and also divide by 256 to get them between 0 and 1). In addition, 
+
+our neural net will train better if our inputs are 0 on average, so we’ll subtract out the average 
+value: 
+
+# Compute the average pixel value 
+avg = tensor_sum(train_images) / 60000 / 28 / 28 
+# Recenter, rescale, and flatten 
+train_images = [[(pixel - avg) / 256 for row in image for pixel in row] 
+for image in train_images] 
+test_images = [[(pixel - avg) / 256 for row in image for pixel in row] 
+for image in test_images] 
+assert shape(train_images) == [60000, 784], "images should be flattened" 
+assert shape(test_images) == [10000, 784], "images should be flattened" 
+# After centering, average pixel should be very close to 0 
+assert -0.0001 < tensor_sum(train_images) < 0.0001 
+We also want to one-hot-encode the targets, since we have 10 outputs. First let’s write a 
+one_hot_encode function: 
+
+def one_hot_encode(i: int, num_labels: int = 10) -> List[float]: 
+return [1.0 if j == i else 0.0 for j in range(num_labels)] 
+assert one_hot_encode(3) == [0, 0, 0, 1, 0, 0, 0, 0, 0, 0] 
+assert one_hot_encode(2, num_labels=5) == [0, 0, 1, 0, 0] 
+and then apply it to our data: 
+train_labels = [one_hot_encode(label) for label in train_labels] 
+test_labels = [one_hot_encode(label) for label in test_labels] 
+assert shape(train_labels) == [60000, 10] 
+assert shape(test_labels) == [10000, 10] 

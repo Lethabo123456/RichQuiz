@@ -1,0 +1,27 @@
+3.4.5 The Callable Statement Interface  
+The CallableStatement interface is used to execute SQL stored procedures. CallableStatement inherits 
+from the PreparedStatement interface, so all of the execute and setType methods are available. The 
+syntax of stored procedures varies among database vendors, so JDBC defines a standard way to call stored 
+procedures in all RDBMSs.  
+  
+a) public interface CallableStatement extends  PreparedStatement  
+The JDBC uses an escape syntax that allows parameters to be passed as in parameters and out parameters. 
+The syntax also allows a result to be returned. If this syntax is used, the parameter must be registered as 
+an out parameter. Method Signature Java Type SQL Type from the Database Here is an example of a 
+CallableStatement with an out parameter.   
+Connectivity  
+CallableStatement cs = conn.prepareCall  
+(“[ca]]  
+GetQuote (?, ?)}”);  
+cs.setString (1, stockName);  
+// java.sql.Types defines SQL data types that 
+are returned // as out parameters  
+cs.registerOutParameter(2, Types, FLOAT); cs.executeUpdate 
+();  
+float quote = cs.getFloat (2);  
+  
+CallableStatement defines a set of get Type methods that convert the SQL types returned from the 
+database to Java types. These methods match the setType methods declared by Prepared Statement, 
+and are listed in Table 3.2  
+  
+Table 3.2: The Get Type Methods

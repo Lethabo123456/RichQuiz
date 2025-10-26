@@ -1,0 +1,31 @@
+2.1.2 Identities of Boolean algebra 
+There are many identities in Boolean algebra. The most important of these 
+are displayed in Table 16 below. These identities are particularly useful in 
+simplifying the design of circuits. Each of the identities in Table 16 can be 
+proved using a table.  
+ 
+Table 16: Identities 
+
+Worked Example 
+Find the values of the Boolean function represented by 
+ 𝐹(𝑥, 𝑦, 𝑧) =  𝑥𝑦 + 𝑧̅ 
+Solution: 
+The values of this function are displayed in the table below. 
+ 
+2.1.3 Duality 
+The identities in the previous example above come in pairs (except for the 
+law of the double complement and the unit and zero properties). To explain 
+the relationship between the two identities in each pair we use the concept of a dual. 
+The dual of a Boolean expression is obtained by interchanging Boolean sums 
+and Boolean products and interchanging 0s and 1s. All the definitions states, that if a statement 
+is true, then also its dual statement is true and this dual statement is obtained by 
+changing + for ∙, 0 for 1 and vice versa. However when we say 1+1, whose dual 
+statement according to the above is 0.0, I get opposite results, that is:  
+               
+1 + 1 = 1, 0 . 0 = 0. How should you understand this duality principle?                  
+"1+1=0 " is a statement (a boolean statement), and indeed, 1+1=1  happens 
+to be a true statement. Likewise, the entire statement "0⋅0=0 " is a true 
+statement, since 0⋅0  correctly evaluates to false: and this is exactly what 
+"0⋅0=0 " asserts, so it is a correct (true) statement about the falsity of 0⋅0 The 
+duality principle ensures that "if we exchange every symbol by its dual in a 
+formula, we get the dual result".

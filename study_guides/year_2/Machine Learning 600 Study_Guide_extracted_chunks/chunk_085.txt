@@ -1,0 +1,18 @@
+ress, the association rules could eventually suggest related content on your site that 
+would be of interest to the user. There are several algorithms used in association rule learning 
+that you'll come across; the two described in this section are the most prevalent: 
+Apriori algorithm. Using a bottom-up approach, the Apriori algorithm works through item sets 
+one at a time. Candidate groups are tested against the data; when no extensions to the set 
+are found, the algorithm will stop. The support threshold for the example in Figure 5.1 is 3. 
+
+P a g e  | 52 
+ 
+                                                    
+ 
+                                                                          Figure 5.1: Apriori algorithm 
+ 
+As {1,2}, {1,3}, {1,4}, and {2,3} are under the chosen support threshold you can reject them 
+from the triples that are in the database. In the example, there is only one triple: 
+ 
+{2,3,4} = 1 (we've discounted one from the {1,2} group) 
+From that deduction, you have

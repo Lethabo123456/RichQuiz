@@ -1,0 +1,40 @@
+FOUR| DATA STREAMS 
+ 
+4.1 Introduction 
+ 
+Working with files is a common task when building an application. Sometimes you have to create a file 
+to store data or to parse a file and extract some content from it. Maybe you are writing plain text or bi-
+nary data
+this is where a Stream object can be used. Maybe you are using streams to send bytes over 
+the network to another application. The .NET Framework also offers support for those scenarios.  
+ 
+Another important topic when it comes to dealing with input/output (I/O) is performance. The new async 
+keyword in C# can be used to easily implement asynchronous operations that can improve usability and 
+scalability of your application 
+ 
+4.1.1 StreamReader and StreamWriter 
+ 
+The most useful concrete text reader and writer types are StreamReader and StreamWriter, which wrap 
+a Stream object. You can pass a Stream as a constructor argument, or you can just pass a string contain-
+ing the path of a file, in which case they will automatically construct a FileStream for you and then wrap 
+that. Example 4-0 uses this technique to write some text to a file. 
+
+Example 4-0. Writing text to a file with StreamWriter 
+ 
+   sing (var fw = new StreamWriter(@"c:\temp\out.txt")) 
+   { 
+     fw.WriteLine("Writing to a file"); 
+     fw.WriteLine("The time is {0}", DateTime.Now); 
+  } 
+ 
+There are two types of streams: 
+ 
+Output
+Output streams are used when data is written to some external destination, which can 
+be a physical disk file, a network location, a printer, or another program. Understanding stream 
+programming opens many advanced possibilities. This chapter focuses on file system data, so 
+ 
+Input
+Input streams are used to read data into memory or variables that your program can ac-
+cess. The most common form of input stream you have worked with so far is the keyboard. An 
+input

@@ -1,0 +1,20 @@
+solution can assume to be true when the use case 
+begins 
+Trigger 
+An event that initiates the flow of events for a use case 
+Flow of events 
+Description of what the actor and the solution do during the execution 
+of the scenario, usually consisting of a primary flow and alternate flows 
+Post-conditions 
+or 
+guarantees 
+Any fact that must be true when the use case is complete 
+ 
+Recommended Technique: State Modelling 
+State modelling shows a sequence of states that an object, entity, or concept goes through 
+during its lifetime. These models also define the events that cause a transition between these 
+states. The functionality and behaviour of a particular object will be different based on its 
+current state. For example, a mainframe computer system in batch-processing mode may be 
+unable to process real-time queries from a user during the time it is in that state. 
+State models are also called state machine diagrams. A state represents a unique condition 
+that an object can be in or

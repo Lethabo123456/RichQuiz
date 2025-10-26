@@ -1,0 +1,25 @@
+has an effect at compile time. Because the actual 
+parameter to a class is specified in the user code and because the compiler cannot 
+instantiate a function template without the actual parameter to the template, we can 
+no longer compile the implementation file independently of the user code 
+ 
+This problem has several possible solutions. We could put the class definition and the 
+definitions of the function templates directly in the client code, or we could put the class 
+definition and the definitions of the function templates together in the same header file. 
+Another alternative is to put the class definition and the definitions of the functions in 
+separate files (as usual) but include a directive to the implementation file at the end of 
+the header file. In either case, the function definitions and the client code are compiled 
+together. For illustrative purposes, we will put the class definition and the function 
+definitions in the same header file. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Funct

@@ -1,0 +1,82 @@
+6.3 Feed-Forward Neural Networks 
+
+The topology of the brain is enormously complicated, so it’s common to approximate it with 
+an idealized feed-forward neural network that consists of discrete layers of neurons, each 
+connected to the next. This typically entails an input layer (which receives inputs and feeds 
+them forward unchanged), one or more “hidden layers” (each of which consists of neurons 
+that take the outputs of the previous layer, performs some calculation, and passes the result 
+to the next layer), and an output layer (which produces the final outputs). 
+Just like in the perceptron, each (noninput) neuron has a weight corresponding to each of its 
+inputs and a bias. To make our representation simpler, we’ll add the bias to the end of our 
+weights vector and give each neuron a bias input that always equals 1. 
+As with the perceptron, for each neuron we’ll sum up the products of its inputs and its 
+weights. But here, rather than outputting the step_function applied to that product, we’ll 
+output a smooth approximation of it. Here we’ll use the sigmoid function (Figure 4.1): 
+ 
+import math 
+ 
+def sigmoid(t: float) -> float: 
+return 1 / (1 + math.exp(-t)) 
+ 
+Figure 4.1. The sigmoid function 
+ 
+• Why we use the sigmoid instead of the simpler step_function? 
+•  In order to train a neural network, we need to use calculus, and in order to use calculus, 
+we need smooth functions, step_function isn’t even continuous, and sigmoid is a good 
+smooth approxi- mation of it. 
+ 
+We then calculate the output as: 
+def neuron_output(weights: Vector, inputs: Vector) -> float: 
+# weights includes the bias term, inputs includes a 1 
+return sigmoid(dot(weights, inputs)) 
+
+weights vector and give each neuron a bias input that always equals 1. 
+As with the perceptron, for each neuron we’ll sum up the products of its inputs and its 
+weights. But here, rather than outputting the step_function applied to that product, we’ll 
+output a smooth approximation of it. Here we’ll use the sigmoid function (Figure 4.1): 
+ 
+import math 
+ 
+def sigmoid(t: float) -> float: 
+return 1 / (1 + math.exp(-t)) 
+ 
+Figure 4.1. The sigmoid function 
+ 
+• Why we use the sigmoid instead of the simpler step_function? 
+•  In order to train a neural network, we need to use calculus, and in order to use calculus, 
+we need smooth functions, step_function isn’t even continuous, and sigmoid is a good 
+smooth approxi- mation of it. 
+ 
+We then calculate the output as: 
+def neuron_output(weights: Vector, inputs: Vector) -> float: 
+# weights includes the bias term, inputs includes a 1 
+return sigmoid(dot(weights, inputs)) 
+
+weights vector and give each neuron a bias input that always equals 1. 
+As with the perceptron, for each neuron we’ll sum up the products of its inputs and its 
+weights. But here, rather than outputting the step_function applied to that product, we’ll 
+output a smooth approximation of it. Here we’ll use the sigmoid function (Figure 4.1): 
+ 
+import math 
+ 
+def sigmoid(t: float) -> float: 
+return 1 / (1 + math.exp(-t)) 
+ 
+Figure 4.1. The sigmoid function 
+ 
+• Why we use the sigmoid instead of the simpler step_function? 
+•  In order to train a neural network, we need to use calculus, and in order to use calculus, 
+we need smooth functions, step_function isn’t even continuous, and sigmoid is a good 
+smooth approxi- mation of it. 
+ 
+We then calculate the output as: 
+def neuron_output(weights: Vector, inputs: Vector) -> float: 
+# weights includes the bias term, inputs includes a 1 
+
+Given this function, we can represent a neuron simply as a vector of weights whose length is 
+one more than the number of inputs to that neuron (because of the bias weight). Then we 
+can represent a neural network as a list of (noninput) layers, where each layer is just a list of 
+the neurons in that layer. 
+
+That is, we will represent a neural network as a list (layers) of lists (neurons) of 
+vectors (weights). 

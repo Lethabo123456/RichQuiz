@@ -1,0 +1,29 @@
+ULL; first has already  
+//been set to NULL by the while loop  
+count = 0;  
+}  
+If the list has n items, the while loop executes n times. From this, it follows that the function destroyList 
+is of O(n).  
+  
+ 
+3.2.6  Initialize the List  
+  
+The function initializeList initializes the list to an empty state. Note that the default constructor or the 
+copy constructor has already initialized the list when the list object was declared. This operation, in fact, 
+reinitializes the list to an empty state, and so it must delete the nodes (if any) from the list. This task can 
+be accomplished by using the destroyList operation, which also resets the pointers first and last to NULL 
+and sets count to 0.  
+  
+template <class Type>  
+void linkedListType<Type>::initializeList()  
+{  
+ 
+destroyList();    
+  
+  
+  
+//if the list has any nodes, delete them  
+}  
+  
+The function initializeList uses the function destroyList, which is of O(n). Therefore, the function 
+initializeList is of O(n).

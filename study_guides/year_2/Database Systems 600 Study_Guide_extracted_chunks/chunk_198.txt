@@ -1,0 +1,17 @@
+t conform to relational table 
+requirements and therefore is not suitable to handle data updates well. Consider the following 
+deficiencies: 
+ 
+The data structure invites data inconsistencies.   
+ 
+The data structure contains several multivalued attributes that make data management tasks 
+very difficult.  
+ 
+Employee data is redundant in the table because employees can work on multiple projects. 
+Adding, updating, and deleting data are likely to be very cumbersome using this structure.  
+Clearly, this data structure yields data inconsistencies. A report generated might yield varying 
+results depending on which data anomaly has occurred. Such reporting anomalies cause a multitude 
+of problems for managers—and cannot be fixed through application programming. These data 
+integrity, data redundancy, and data inconsistency problems must be addressed during database 
+design. The next section walks you through the normalization process used to minimize 
+redundancies and eliminate data anom

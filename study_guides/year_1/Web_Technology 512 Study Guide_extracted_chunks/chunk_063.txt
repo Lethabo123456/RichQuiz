@@ -1,0 +1,18 @@
+d "if" in lowercase. Next is a pair of round brackets. In between the 
+round brackets you need a condition to test. The condition will be evaluated and 
+checked if it is true. If your condition is true then whatever code you have between a 
+pair of curly brackets will get executed. IF your condition is false then the code 
+between the curly brackets will be ignored. Take the following code as an example: 
+var first_name = "Kenny"; 
+if ( first_name == "Kenny" )  
+{ 
+document.write( "First Name is Kenny " + first_name ); 
+} 
+The first line of the code stores the text "Kenny" into a variable called first_name. Next 
+we have our IF Statement. The condition we are testing is between the round brackets: 
+first_name == "Kenny" 
+ 
+So we are checking to see whether or not the variable called first_name contains the 
+word "Kenny". Notice that we now have two equal symbols (==) between the variable 
+we want to check and the text we are checking for. The double equal symbols mean 
+"has a value of"

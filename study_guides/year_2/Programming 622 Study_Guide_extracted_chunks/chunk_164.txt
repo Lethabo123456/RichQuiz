@@ -1,0 +1,14 @@
+py, using an ostream iterator, can also be used to output the elements of a container.  
+20. When we create an iterator of the type ostream, we also specify the type of element that the iterator 
+will output.  
+21. Deque containers are implemented as dynamic arrays in such a way that the elements can be inserted 
+at both ends of the array.  
+22. A deque can expand in either direction.  
+23. The name of the header file containing the definition of the class deque is deque.  
+24. In addition to the operations that are common to all containers, the other operations that can be used 
+to manipulate the elements of a deque are assign, push_front, pop_front, at, array subscripting 
+operator [], front, and back.  
+25. The five categories of iterators are: input, output, forward, bidirectional, and random access iterator.  
+26. Input iterators are used to input data from an input stream.  
+27. Output iterators are used to output data to an output stream.  
+28. A forward iterator can refer to th

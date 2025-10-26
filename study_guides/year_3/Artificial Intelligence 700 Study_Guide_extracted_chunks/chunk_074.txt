@@ -1,0 +1,43 @@
+Logical Negation 
+Logical negation is an operation on one logical value, typically the value of 
+a proposition that produces a value of true if its operand is false and a value 
+of false if its operand is true. 
+The truth table for NOT p (also written as ¬p, Np, Fpq, or ~p) is as follows: 
+ 
+Logical Negation 
+p       ¬p 
+T        F 
+F        T 
+ 
+Logical True 
+p        T 
+T        T 
+F        T 
+ 
+Truth table for most commonly used logical operators 
+Here is a truth table giving definitions of the most commonly used 6 of the 16 
+possible truth functions of 2 binary variables (P,Q are thus boolean variables): 
+
+P Q P ^ Q  P v Q  P v_ Q  P ^_ Q  P -> Q  P <- Q  P <-> Q
+-----------------------------------------------------------
+T T T      T      F       T       T       T       T 
+-----------------------------------------------------------
+T F F      T      T       F       F       T       F 
+-----------------------------------------------------------
+F T F      T      T       F       T       F       F 
+-----------------------------------------------------------
+F F F      F      F       T       T       T       T 
+-----------------------------------------------------------
+ 
+Key: 
+T = true, F = false 
+ 
+^ = AND (logical conjunction) 
+v = OR (logical disjunction) 
+v_ = XOR (exclusive or) 
+^_ = XNOR (exclusive nor) 
+-> = conditional "if-then" 
+<- = conditional "(then)-if" 
+<-> biconditional or "if-and-only-if" is logically equivalent to : XNOR (exclusive 
+nor). 
+Logical operators can also be visualized using Venn diagrams.

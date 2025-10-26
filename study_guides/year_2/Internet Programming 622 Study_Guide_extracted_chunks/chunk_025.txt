@@ -1,0 +1,26 @@
+built-in error checking   
+• 
+How to use hidden form fields to create a user - friendly three - stage registration form   
+• 
+Creating forms that allow users to upload files   
+• 
+How to use page redirection to make your forms smoother and safer to use   
+   
+Once you have worked through this chapter you ’ ll be able to use Web forms to make your PHP 
+scripts much more useful and flexible.   
+   
+1.1 How HTML Forms Work   
+We may, before looking at the PHP side of things, take a quick look at how an HTML form is 
+constructed. An HTML form, or Web form, is simply a collection of HTML elements embedded within 
+a standard Web page. By adding different types of elements, you can create different form fields, 
+such as text fields, pull-down menus, checkboxes, etc,. All Web forms start with an opening < form > 
+tag, and end with a closing < /form > tag:   
+   
+< form action=”myscript.php” method=”post” >   
+< !-- Contents of the form go here -- >   
+< /form >   
+   
+
+17   
+   
+The  second li

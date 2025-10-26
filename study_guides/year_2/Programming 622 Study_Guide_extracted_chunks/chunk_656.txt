@@ -1,0 +1,30 @@
+node F has no right child.  
+  
+Example 9-1 shows nonempty binary trees.  
+  
+EXAMPLE 9-1  
+Figure 9-2 shows binary trees with one, two, or three nodes.  
+  
+  
+FIGURE 9-2 Binary tree with one, two, or three nodes  
+  
+In the binary tree of Figure 9-2(a), the root node is A, LA = empty, and RA = empty.  
+  
+In the binary tree of Figure 9-2(b), the root node is A, LA = {B}, and RA = empty. The root node of LA = B, LB 
+= empty, and RB = empty.  
+  
+In the binary tree of Figure 9-2(c), the root node is A, LA = empty, RA = {C}. The root node of RA = C, LC = 
+empty, and RC = empty.  
+
+322  
+  
+In the binary tree of Figure 9-2(d), the root node is A, LA = {B}, RA = {C}. The root node of LA = B, LB = empty, 
+RB = empty. The root node of RA = C, LC = empty, RC = empty.  
+  
+EXAMPLE 9-2  
+This example shows other cases of nonempty binary trees with three nodes. See Figure 9-3.  
+  
+  
+FIGURE 9-3 Various binary trees with three nodes  
+  
+As you can see from the preceding examples, every node i

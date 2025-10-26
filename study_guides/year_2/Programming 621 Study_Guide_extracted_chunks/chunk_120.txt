@@ -1,0 +1,34 @@
+eives a copy 
+of the content of the corresponding actual parameter. Reference parameter: A formal 
+parameter that receives the location (memory address) of the corresponding actual 
+parameter. When you attach & after the dataType in the formal parameter list of a 
+function, the variable following that dataType becomes a reference parameter. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+104 | P a g e  
+ 
+ 
+ 
+ 
+ 
+
+105 | P a g e  
+ 
+ 
+Value Parameters 
+When a function is called, for a value parameter, the value of the actual parameter is 
+copied into the corresponding formal parameter. Therefore, if the formal parameter is 
+a value parameter, then after copying the value of the actual parameter, there is no 
+connection between the formal parameter and actual parameter; that is, the formal 
+parameter is a separate variable with its own copy of the data. Therefore, during 
+program execution, the formal parameter manipulates the data stored in its own 
+memory space.  
+ 
+
+106 | P a g e

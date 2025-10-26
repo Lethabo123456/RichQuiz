@@ -1,0 +1,19 @@
+security by 
+allowing each user to see only the tables that belong to that user.  
+ANSI SQL standards define a command to create a database schema:  
+CREATE SCHEMA AUTHORIZATION {creator}; 
+This command is seldom used directly and for most RDBMSs, the CREATE SCHEMA 
+AUTHORIZATION command is optional. 
+Data Types 
+There is a wide array of data types supported by SQL. Only a few of the most common are covered 
+in this book. Generally speaking, the data types are character, numeric, and date (see Table 8.1). 
+ 
+Note that if your RDBMS is fully compliant with ANSI SQL, it supports many more data types 
+than those shown in Table 8.1. Those data types, include TIME, TIMESTAMP, REAL, DOUBLE, 
+and FLOAT, and intervals, such as INTERVAL DAY TO HOUR. However, for the purpose of this 
+chapter, the discussion is limited to the data types summarized in Table 8.1. 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eight, page

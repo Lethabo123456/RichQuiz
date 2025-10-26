@@ -1,0 +1,21 @@
+Figure 51 illustrates placeholders in a byte, the exponential multiplier for each position, and the 
+different decimal that are represented by a 1 in each position. 
+To convert a decimal number to a byte, you reverse this process. For example, the decimal number 8 
+equals 23, which mean a single “on” bit would be indicated in the fourth bit position as follows: 
+00001000. In another example, the decimal number 9 equals 8 + 1, or 23 + 20, and would be 
+represented by the binary number 00001001.  
+The binary numbering scheme may be used with more than eight positions. However, in the digital 
+world, bytes form the building blocks for messages, and bytes always include eight positions. In a 
+data signal, multiple bytes are combined to form a message. If you were to peek at the 1s and 0s 
+used to transmit an entire email message, for example, you might see millions of zeros and ones 
+passing by. A JPEG, that expresses letters, numbers, and pictures. 
+
+2.8.5 Frequency Division Multiplexing is a networking method in which multiple data 
+signals are joint for concurrent transmission via a shared communication medium. FDM uses a 
+carrier signal at a discrete frequency for each data stream and then combines many modulated 
+signals. Below blue waves: A circuit switch put together the Multiplexes multiple voice calls on a 
+high- bandwidth link.  
+Each circuit receives a fixed bandwidth the frequency of each call is shifted, to avoid interference. 
+
+Figure 53: FDM  
+ 

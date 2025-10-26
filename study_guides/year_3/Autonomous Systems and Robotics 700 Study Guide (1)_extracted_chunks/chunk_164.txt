@@ -1,0 +1,33 @@
+frequency response 
+# Manual computation of the frequency response 
+resp = ct.input_output_response(sys, T, np.sin(1.35 * T)) 
+ 
+cplt = resp.plot( 
+plot_inputs='overlay', 
+legend_map=np.array([['lower left'], ['lower left']]), 
+label=[['q1', 'u[0]'], ['q2', None]]) 
+ 
+The magnitude and phase of the frequency response is controlled by the transfer function, 
+ 
+which can be computed using the ss2tf function: 
+try: 
+    G = ct.ss2tf(sys, name='u to q1, q2') 
+except ct.ControlMIMONotImplemented: 
+    # Create SISO transfer functions, in case we don't have slycot 
+    G = ct.ss2tf(sys[0, 0], name='u to q1') 
+print(G) 
+# Gain and phase for the simulation above 
+from math import pi 
+val = G(1.35j) 
+print(f"{G(1.35j)=}") 
+
+print(f"Gain: {np.absolute(val)}") 
+print(f"Phase: {np.angle(val)}", " (", np.angle(val) * 180/pi, "deg)") 
+The frequency response across all frequencies can be computed using 
+the frequency_response function: 
+freqresp = ct.frequency_response(sys) 
+cplt = freqresp.plot() 
+OUTPUT 
+ 
+By default, frequency responses are plotted using a “Bode plot”, which plots the log of the 
+magnitude and the (linear) phase against the log of the forcing frequency.

@@ -1,0 +1,28 @@
+o a base case. This chapter provides several examples that illustrate how 
+to design and implement recursive algorithms.  
+  
+To design a recursive function, you must do the following:  
+1. Understand the problem requirements.  
+2. Determine the limiting conditions. For example, for a list, the limiting condition is the number of 
+elements in the list.  
+3. Identify the base cases and provide a direct solution to each base case.  
+4. Identify the general cases and provide a solution to each general case in terms of smaller versions 
+of itself.  
+  
+ 
+4.2  
+Problem Solving Using Recursion  
+  
+The next few sections illustrate how recursive algorithms are developed and implemented in C++ using 
+recursive functions.  
+  
+ 
+4.2.1  Largest Element in an Array  
+  
+In this example, we use a recursive algorithm to find the largest element in an array. Consider the list given 
+in Figure 4-2.  
+  
+  
+FIGURE 4-2 list with six elements  
+  
+The largest element in the list in Figure 4-2 is 10.

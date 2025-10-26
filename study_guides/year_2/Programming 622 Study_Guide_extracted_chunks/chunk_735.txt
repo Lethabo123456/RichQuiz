@@ -1,0 +1,26 @@
+, where the tree is to be reconstructed, and the balance factor 
+of the higher subtree are opposite, that node requires a double rotation. First, we rotate the tree at node 
+a and then at node c. Now the tree at node a is right high and so we make a left rotation at a. Next, 
+because the tree at node c is left high, we make a right rotation at c. Figure 9-20 shows the resulting tree 
+(which is to the right of the tree after insertion). Figure 9-21, however, shows both rotations in sequence.  
+  
+ 
+FIGURE 9-21 Left rotation at a followed by a right rotation at c Case 4: This is a mirror image of Case 
+3. We illustrate this with the help of Figure 9-22.  
+  
+FIGURE 9-22 Double rotation: First rotate right at c, then rotate left at a  
+  
+Using these four cases, we now describe what type of rotation might be required at a node.  
+  
+  
+  
+  
+  
+  
+  
+  
+
+361  
+  
+Suppose that the tree is to be reconstructed, by rotation, at node x. Then, the subtree with root node x 
+requires either a sin

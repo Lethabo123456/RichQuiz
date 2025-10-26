@@ -1,0 +1,23 @@
+n the foreign key and 
+the primary key of related tables. For example, suppose that you want to join the two tables 
+VENDOR and PRODUCT. Because V_CODE is the foreign key in the PRODUCT table and the 
+primary key in the VENDOR table, the link is established on V_CODE.  
+Joining the PRODUCT and VENDOR tables, can be accomplished in multiple ways. 
+Natural Join 
+Recall that a natural join returns all rows with matching values in the matching columns and eliminates 
+duplicate columns. This style of query is used when the tables share one or more common attributes 
+with common names. The natural join syntax is:  
+SELECT   
+column-list  
+FROM  
+ 
+table1  
+NATURAL JOIN  table2  
+The natural join performs the following tasks:  
+• 
+Determines the common attribute(s) by looking for attributes with identical names and 
+compatible data types.  
+• 
+Selects only the rows with common values in the common attribute(s).  
+• 
+If there are no common attributes, returns the relational product of the two

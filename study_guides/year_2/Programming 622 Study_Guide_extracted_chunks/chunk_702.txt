@@ -1,0 +1,38 @@
+elete from the empty 
+tree." << endl; else  
+{ current = root;  
+trailCurrent = root;  
+  
+while (current != NULL && !found)  
+{  
+if (current->info == deleteItem) 
+found = true; else  
+{  
+trailCurrent = current;  
+  
+if (current->info > deleteItem) 
+current = current->llink; else 
+current = current->rlink;  
+}  
+}//end while  
+  
+if (current == NULL) cout << "The delete item is not in the 
+tree." << endl; else if (found)  
+{  
+if (current == root) deleteFromTree(root); 
+else if (trailCurrent->info > deleteItem) 
+deleteFromTree(trailCurrent->llink); else 
+deleteFromTree(trailCurrent->rlink); }//end if  
+}  
+}//end deleteNode  
+  
+  
+  
+  
+ 
+9.4  
+Binary Search Tree: Analysis  
+  
+This section provides an analysis of the performance of binary search trees. Let T be a binary search tree 
+with n nodes, where n> 0. Suppose that we want to determine whether an item, x, is in T. The performance 
+of the search algorithm depends on the shape of T. Let us first consider the worst case. In the

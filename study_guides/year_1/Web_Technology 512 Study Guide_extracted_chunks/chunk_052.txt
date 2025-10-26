@@ -1,0 +1,26 @@
+stead: 
+var number1; 
+number1 = 42; 
+ 
+The first line here creates a variable called number1. But there is nothing stored in it. 
+The second line is where we store something in the variable. Note that the var has now 
+gone missing - you only need to use var once when you are setting up (declaring) your 
+variables. 
+ 
+You can also assign a different value to a variable. For example, you can do this: 
+var number1; 
+number1 = 42; 
+number1 = 100; 
+ 
+JavaScript is a sequential programming language, meaning lines get executed from top 
+to bottom. What we have done above is to first assign a value of 42 to the variable 
+called number1. The third line stores a new number in this same variable. The two are 
+not added together. When you assign a new number to a variable, it will erase the old 
+contents. So the variable number1 will now hold a value of 100. 
+ 
+You can also overwrite the number 42 with a string of text. Like this: 
+var number1; 
+number1 = 42; 
+number1 = "one hundred"; 
+ 
+This time

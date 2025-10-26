@@ -1,0 +1,40 @@
+Figure 15.9 illustrates the typical phases in the digital forensics process, which are discussed in detail in the 
+following sections. 
+ 
+Prepare 
+Preparation involves the planning and policy-making activities related to forensic investigation. A 
+section of the security policy should deal with computer forensics. SP 800-86, Guide to Integrating 
+Forensic Techniques into Incident Response, recommends the following considerations: 
+ Ensure that policies contain clear statements addressing all major forensic considerations, 
+such as contacting law enforcement, performing monitoring, and conducting regular reviews 
+of forensic policies and procedures 
+ Create and maintain procedures and guidelines for performing forensic tasks, based on the 
+organization’s policies and all applicable laws and regulations  
+ Ensure that policies and procedures support the reasonable and appropriate use of forensic 
+tools 
+ Ensure that IT professionals are prepared to participate in forensic activities 
+ 
+In addition, an organization should establish guidelines on how to manage evidence. Such guidelines 
+help ensure that evidence is preserved throughout the entire investigation process. 
+The preparation phase also covers other activities, such as staff training, staff recruitment, tool 
+validation, and quality assurance measures. 
+ 
+A vital aspect of preparation is to ensure that the data sources needed for forensic analysis are created 
+and securely stored. Key actions include the following: 
+ 
+ Creating a file system baseline to help detect changes 
+ Utilizing a central system log server 
+ Maintaining network-level logging at key control points on the network 
+ Synchronizing system clocks and log timestamps using central Network Time Protocol (NTP) 
+servers for systems that generate logs 
+ 
+Network Time Protocol (NTP): A protocol that assures accurate local timekeeping on computer 
+systems, network devices, and other system components, with reference to radio and atomic clocks 
+located on the Internet. This protocol is capable of synchronizing distributed clocks within milliseconds 
+over long time periods. 
+ 
+ Maintaining protocol activity tables, which are useful when responding to certain types of 
+incidents 
+ 
+The advantage of creating centralized logs is that they are easier to protect than local logs distributed 
+throughout the network, which present a greater attack surface. 

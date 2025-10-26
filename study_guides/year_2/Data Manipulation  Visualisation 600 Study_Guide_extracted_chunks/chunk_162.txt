@@ -1,0 +1,11 @@
+ide app.layout. The former is just used in these callbacks and the 
+latter is an actual component. 
+8. Notice how we don't set a value for the children property of the my-div component in the layout. When 
+the Dash app starts, it automatically calls all of the callbacks with the initial values of the input components 
+in order to populate the initial state of the output components. In this example, if you specified something 
+like html.Div(id='my-div', children='Hello world'), it would get overwritten when the app starts. 
+It's sort of like programming with Microsoft Excel: whenever an input cell changes, all of the cells that 
+depend on that cell will get updated automatically. This is called "Reactive Programming". 
+Remember how every component was described entirely through its set of keyword arguments? Those 
+properties are important now. With Dash interactivity, we can dynamically update any of those properties 
+through a callback function. Frequently we'll update the children of

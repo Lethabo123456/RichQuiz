@@ -1,0 +1,39 @@
+FIVE | AXIOMS AND PREDICATE CALCULUS 
+ 
+5.0 INTRODUCTION 
+An axiom is a statement that everyone believes is true, such as "supply equals 
+demand" or "the only constant is change." Mathematicians use axiom to refer to 
+established proofs 
+Predicates 
+ 
+A predicate is a boolean function whose value may be true or false, depending on the 
+arguments to the predicate. 
+ 
+* Predicates are a generalization of propositional variables. 
+ 
+* A propositional variable is a predicate with no arguments.
+ 
+Example - Consider the following boolean propositions: 
+A (Adam is tall) 
+B (Beth is tall) 
+C (Carl is tall) 
+: 
+Z (Zeke is tall) 
+ 
+We need a different proposition for each person; each of these propositions 
+is either true or false.  
+ 
+We can capture the same set of truth values using a single predicate (or 
+boolean function), Tall(x). 
+ 
+Tall(x) is true whenever person x is tall, and is false otherwise. 
+ 
+* Tall(Adam) is true if proposition A above is true. 
+* Tall(Beth) is true if proposition B above is true. 
+* Tall(Carl) is true if proposition C above is true. 
+ 
+Predicates are atomic operands in the logical expressions of predicate logic. 
+ 
+An argument can be either a constant or a variable. It is conventional to write 
+variables with an initial upper-case letter. Constants can be numbers, names that 
+begin with a lower-case letter, or quoted strings.

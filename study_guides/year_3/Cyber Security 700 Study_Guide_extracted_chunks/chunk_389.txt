@@ -1,0 +1,30 @@
+Configuration Management
+ 
+Modern data communication networks are composed of individual components and logical 
+subsystems (for example, the device driver in an operating system) that are configured to perform 
+many different applications. The same device, for example, can be configured to act either as a router 
+or as an end system node or both. Once it is decided how a device is to be used, the configuration 
+manager chooses the appropriate software and set of attributes and values (for example, a transport 
+layer retransmission timer) for that device.
+ 
+Configuration management is concerned with initializing a network and gracefully shutting down part 
+or all of the network. It is also concerned with maintaining, adding, and updating the relationships 
+among components and the status of components during network operation. 
+Startup and shutdown operations on a network are part of configuration management. It is often 
+desirable for these operations on certain components to be performed unattended (for example, 
+starting up or shutting down a network interface unit). A network manager needs to be able to identify 
+initially the components that comprise the network and to define the desired connectivity of those 
+components. Those who regularly configure a network with the same or a similar set of resource 
+attributes need ways to define and modify default attributes and to load those predefined sets of 
+attributes into the specified network components. A network manager needs to be able to change the 
+connectivity of network components when users’ needs change. Reconfiguration of a network is often 
+desired in response to performance evaluation or in support of network upgrade, fault recovery, or 
+security checks. 
+
+Users often need to, or want to, be informed of the status of network resources and components. 
+Therefore, when changes in configuration occur, the network or system manager should notify users 
+of these changes. The network or system manager should also generate configuration reports either 
+on some routine periodic basis or in response to a request for such a report. Before reconfiguration, 
+users often want to inquire about the upcoming status of resources and their attributes. 
+Network managers usually want only authorized users (operators) to manage and control network 
+operation (for example, software distribution and updating). 

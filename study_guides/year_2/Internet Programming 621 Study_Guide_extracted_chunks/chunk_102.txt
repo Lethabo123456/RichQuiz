@@ -1,0 +1,22 @@
+// Displays “Hello, world! “ 
+echo ‘” < /pre > ’;  
+  
+To pad using characters other than space, pass a string to use as an optional third argument. 
+Note that this can be either a single character or a string of characters; in the latter case, the 
+string is repeated as needed to pad out the input string:  
+  
+// Displays “Hello, world!*******”  
+echo str_pad( “Hello, world!”, 20, “*” ) . “\n”;  
+// Displays “Hello, world!1231231”  
+echo str_pad( “Hello, world!”, 20, “123” ) . “\n”;  
+  
+You can also make str_pad() add padding to the left of the string, or to both the left and the right of 
+the string. To do this, pass an optional fourth argument comprising one of the following built-in 
+constants:  
+  
+STR_PAD_RIGHT to pad the string on the right (the default setting), left - aligning the string  
+STR_PAD_LEFT to pad the string on the left, right - aligning the string  
+STR_PAD_BOTH to pad the string on both the left and the right, centering the result as much 
+as possible  
+  
+T

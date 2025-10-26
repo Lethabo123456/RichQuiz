@@ -1,0 +1,26 @@
+Working with Color in CSS 
+The first part of your style sheet for the Tri and Succeed Sports website will focus on color. If 
+you’ve worked with graphics software, you’ve probably made your color selections using a 
+graphical interface where you can see your color options. Specifying color with CSS is 
+somewhat less intuitive because CSS is a text-based language and requires colors to be defined 
+in textual terms. This is done through either a color name 
+or a color value. 
+ 
+Color Names 
+You’ve already seen from previous code examples that you can set the color of page text using 
+the color property along with a color name such as red, blue, or black. CSS supports 147 color 
+names covering common names such as red, green, and yellow to more exotic colors such as 
+ivory, orange, crimson, khaki, and brown. 
+ 
+RGB Color Values 
+Because a palette of 147 color names is extremely limited for graphic design and color names 
+can be constricting (how do you name a color that is slightly redder than ivory with a tinge of 
+blue?), CSS also supports color values, in which the color is given by an exact numeric 
+representation. CSS3 supports two types of color values: RGB values and HSL values. 
+
+RGB color values are based on classical color theory in which all colors are determined by 
+adding three primary colors—red, green, and blue—at different levels of intensity. For 
+
+example, adding all three primary colors at maximum intensity produces the color white, while 
+adding any two of the three primary colors at maximum intensity produces the trio of 
+complementary colors—yellow, magenta, and cyan. 

@@ -1,0 +1,28 @@
+are the queries you will find in most 
+applications. To formulate a query, you would normally follow these steps: 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eleven page 531-534. 
+
+ 
+168 
+1. Identify what columns and computations are required.  
+a. Do you need simple expressions?   
+b. Do you need aggregate functions? In some cases, you might need to use a subquery. 
+c. Determine the granularity of the raw data required for your output.  
+2. Identify the source tables.  
+3. Determine how to join the tables.  
+4. Determine what selection criteria are needed. Most queries involve some type of 
+selection/comparison criteria, such as:  
+a. Simple comparison.  
+b. Single value to multiple values.  
+c. Nested comparisons.  
+d. Grouped data selection. 
+5. Determine the order in which to display the output.  
+ 
+ 
+ 
+6.4  DBMS Performance Tuning 
+ 
+DBMS performance tuning includes global tasks such as managing the DB

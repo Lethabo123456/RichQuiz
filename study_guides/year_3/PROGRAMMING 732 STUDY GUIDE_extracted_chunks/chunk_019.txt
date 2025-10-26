@@ -1,0 +1,13 @@
+1.2.11 Trees  
+A tree is a component that presents a hierarchical view of data. A user has the ability to expand or collapse 
+individual subtrees in this display. Trees are implemented in swing by the Jtreeclass, which extends 
+Jcomponent. Some of its constructors are shown here:  
+  
+JTree(Hashtable ht)  
+JTree ( Object obj [])  
+JTree (TreeNode tn)  
+JTree (Vector v) 
+  
+The first form creates a tree in which each element of the hash table ht is a child node. Each element of 
+the array obj is a child node in the second form. The tree node tn is the root of the tree in the third form. 
+Finally, the last form uses the elements of vector v as child nodes. 

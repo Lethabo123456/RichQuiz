@@ -1,0 +1,20 @@
+Use the Debugger 
+
+The Contact Activity is finished for now. We will add some functionality later after 
+creating other activities. Now we  need to test our code. However, it is difficult to test 
+the recently added functionality because currently it does not retrieve contact data. 
+Thus to test that the functionality you just added is working properly, you have to 
+watch it run. This is done using the debugger. The first step in using the debugger is to set 
+a breakpoint. A breakpoint tells the debugger to halt execution at that line of 
+code. This gives you the capability to inspect the values in the variables and step through the code line by line. To set a breakpoint, click in the gray 
+vertical bar to the left of the line of code you want to stop on. A pink dot will be placed in the bar 
+(Figure 5.2). 
+
+To check whether currentContact is getting a new ID, set a breakpoint in the initSaveButton method 
+on the hideKeyboard() line (Figure 5.2). Run the program in debug mode by pressing the button in the 
+top menu. Click the Off button to enable editing, fill in some values, and then press the Save button. 
+When the breakpoint is hit during execution, the Debug app window will open at the bottom left of 
+Android Studio. The line of code that stopped execution will be displayed in the editor. The app has 
+halted on that line and is waiting for your command. To control 
+execution during debugging, use the Debug toolbar buttons at 
+the top of the Debug window (see Figure 5.3).

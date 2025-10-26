@@ -1,0 +1,28 @@
+a database whose 
+integrity is either preserved or corrupted:  
+ 
+Preserved. In these cases, action is required to avoid the recurrence of similar security 
+problems, but data recovery may not be necessary.  
+ 
+Corrupted. Action is required to avoid the recurrence of similar security problems, and the 
+database must be recovered to a consistent state.  
+ 
+Database Security 
+Database security refers to DBMS features and other related measures that comply with the 
+organization’s security requirements. From the DBA’s point of view, security measures should be 
+implemented to protect the DBMS against service degradation and to protect the database against 
+loss, corruption, or mishandling.  
+To protect the DBMS against service degradation, some security safeguards are recommended. For 
+example:  
+ 
+Change default system passwords.  
+ 
+Change default installation paths.  
+ 
+Set up auditing logs.  
+ 
+Set up session logging.  
+ 
+Require session encryption. 
+ 
+Furthermore, the DBA sho

@@ -1,0 +1,19 @@
+Android Life Cycle 
+To understand the Android life cycle, it is useful to first understand the states that an Android app 
+user experiences. When users touch an app’s icon, the app is started and becomes visible to them. 
+While the app is visible, the users can interact with it. This is considered the Resumed, or running, 
+state. As the users interact with the app, they may be interrupted with a pop-up window, or they may 
+be distracted and not touch the screen for a period of time. If the users stop interacting for a period 
+of time, the app will fade but still be partially visible. In either of these two cases, the app enters the 
+Paused state. If the users close the pop-up or touch the screen, the app becomes fully visible again, 
+and the app again enters the Resumed state. If users don’t touch the screen for a longer period of 
+time and the screen goes black, or if the user starts another app so that the original app is no longer 
+visible, the app enters the Stopped state. If users turn on the screen or use the Back button to get 
+back to the app, the app again enters the Resumed state. 
+
+An app can remain in the Stopped state for quite some time. However, if the device is rebooted or a user
+runs a number of other apps before coming back to the original app, that app can be Destroyed by the operating 
+system to free up resources for other apps that the user is actually interacting with. To design an app that functions well, 
+given this pattern of use, developers must understand what happens as the app enters and leaves 
+these states, as well as what they should design the app to do in those instances. This requires an 
+understanding of the Android life cycle. 

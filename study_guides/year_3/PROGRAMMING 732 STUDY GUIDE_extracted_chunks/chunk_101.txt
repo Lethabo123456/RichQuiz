@@ -1,0 +1,31 @@
+4.1.7 Replacing CGI Scripts  
+An HTTP servlet is a direct replacement for Common Gateway Interface (CGI) scripts. HTTP servlets are 
+accessed by the user entering a URL in a browser or as the target of an HTML form action. For example, if 
+a user enters the following URL into a browser address field, the browser requests a servlet to send an 
+HTML page with the current time: http://localhost/servlet/DateTimeServlet The DateTimeServlet 
+responds to this request by sending an HTML page to the browser.    
+Note that these servlets are not restricted to generating web pages; they can perform any other function, 
+such as storing and fetching database information, or opening a socket to another machine.   
+  
+4.1.8 Installing Servlets  
+Servlets are not run in the same sense as applets and applications. Servlets provide functionality that 
+extends a server. In order to test a servlet, two steps are required:   Install the servlet in a hosting server   
+ Request a servlet's service via a client request   
+There are many web servers that support servlets. It is beyond the scope of this course to cover the 
+different ways to install servlets in each server. This course examines the JSDK's servletrunner utility and 
+the JWS.   
+  
+4.1.9 Temporary versus Permanent Servlets  
+Servlets can be started and stopped for each client request, or they can be started as the web server is 
+started and kept alive until the server is shut down. Temporary servlets are loaded on demand and offer 
+a good way to conserve resources in the server for less-used functions. Permanent servlets are loaded 
+when the server is started, and live until the server is shutdown. Servlets are installed as permanent 
+extensions to a server when their start-up costs are very high (such as establishing a connection with a 
+DBMS), when they offer permanent server-side functionality (such as an RMI service), or when they must 
+respond as fast as possible to client requests.  There is no special code necessary to make a servlet 
+temporary or permanent; this is a function of the server configuration. Because servlets can be loaded 
+when a web server starts, they can use this auto-loading mechanism to provide easier loading of 
+serverside Java programs. These programs can then provide functionality that is totally unique and 
+independent of the web server. For example, a servlet could provide R-based services (rlogin, rsh, ...) 
+through TCP/IP ports while using the servlet request/response protocol to present and process HTML 
+pages used to manage the servlet. 

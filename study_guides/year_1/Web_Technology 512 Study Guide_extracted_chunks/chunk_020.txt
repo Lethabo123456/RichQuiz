@@ -1,0 +1,25 @@
+pt tags  
+ 
+The lines you are adding are these: 
+<SCRIPT LANGUAGE = "Javascript"> 
+alert("Hello World") 
+</SCRIPT> 
+Programming scripts are added between two <SCRIPT> tags, an opening one and a 
+closing one. An attribute to the SCRIPT tag is LANGUAGE. This tells the browser which 
+scripting language is being used. For us, this is JavaScript. This goes after an equal sign ( 
+= ). Notice that we have surrounded the word JavaScript with double quote marks. But 
+you don't have to. In fact, you can miss out the LANGUAGE attribute altogether and 
+just have this: 
+<SCRIPT> 
+alert("Hello World") 
+</SCRIPT> 
+ 
+Any JavaScript you want to add needs to go between the two SCRIPT tags. Careful of 
+the forward slash for the end SCRIPT tag - miss this out and your code won't work. Like 
+all HTML tags, though, the two SCRIPT tags can be lowercase, if you prefer: 
+<script> 
+alert("Hello World") 
+</script> 
+ 
+However, although the SCRIPT tags are not case sensitive JavaScript very definitely is. 
+Our cod

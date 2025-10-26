@@ -1,0 +1,24 @@
+Code the Page’s Behavior 
+
+The settings activity’s function is straightforward. When a user presses one of the choices, that value 
+is stored as a key/value pair in SharedPreferences. When the page is accessed, the activity reads the 
+stored preferences and sets the RadioButtons to the stored value. The value stored in a 
+SharedPreferences will be used in ContactListActivity to sort the list of saved contacts. 
+Open the ContactSettingsActivity.java file, and if you didn’t implement the navigation bar previously, 
+complete the following steps: 
+
+1. Copy the ImageButton initialization methods from the MainActivity.java to the 
+ContactSettingsActivity.java file so that the navigation bar will work. These methods are 
+initMapButton(), initListButton(), and initSettingsButton(). Paste this code before the last } in 
+the ContactSettingsActivity.java file. A pop-up will ask if you want to import required code. Click 
+OK. 
+2. When the code is pasted into the ContactSettingActivity class, it will produce errors. That is 
+because the current activity in the Intent code is referencing the MainActivity (which should be 
+underlined in red). Change this for each error to ContactSettingActivity. 
+3. Change the code in the initSettingsButton() method so that the button is disabled. Use the 
+following code: 
+
+private void initSettingsButton() { 
+ImageButton ibSettings = findViewById(R.id.imageButtonSettings); 
+ibSettings.setEnabled(false); 
+}

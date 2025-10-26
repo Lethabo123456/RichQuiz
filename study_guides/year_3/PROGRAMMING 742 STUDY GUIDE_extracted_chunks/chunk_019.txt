@@ -1,0 +1,38 @@
+If you do not provide a specific initializer, the constructor will initialize each integer member 
+variable to zero (0). In the case shown, however, the Second member is initialized to 20: 
+}       
+//Private Members
+        private int Year; 
+        private int Month; 
+        private int Date; 
+        private int Minute; 
+        private int Hour; 
+        private int Second = 30; 
+         public Time(int Hour, int Year, int Month, int Day, int Minute) 
+        { 
+ 
+            this.Year = Year; 
+            this.Month = Month; 
+            this.Date = Day; 
+            this.Hour = Hour; 
+            this.Minute = Minute; 
+        } 
+        public class Tester 
+        { 
+            static void Main() 
+            {   //  DateTime currentTime =  DateTime .Now; 
+                Time t = new Time(DateTime.Now); 
+                t.DisplayCurrentTime(); 
+                 Time t2 = new Time(2014, 10, 15, 12, 45); 
+               t2.DisplayCurrentTime(); 
+            } 
+        } 
+    } 
+}
+
+private int Second = 20; // initializer 
+If a value is not passed in for Second, its value will be set to 20 when t2 is created: 
+Time t2 = new Time(2005,11,18,11,45); t2 
+. DisplayCurrentTime ( ); 
+However, if a value is assigned to Second, as is done in the constructor (which takes a 
+DateTime object, shown in bold), that value overrides the initialized value. 

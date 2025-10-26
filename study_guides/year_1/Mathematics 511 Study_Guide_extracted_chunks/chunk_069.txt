@@ -1,0 +1,33 @@
+1.4.4 Precedence of Quantifiers 
+The quantifiers ∀ and ∃ have higher precedence than all logical operators 
+from propositional calculus. For example, ∀𝑥𝑃(𝑥) ∨ 𝑄(𝑥) is the disjunction 
+of ∀𝑥𝑃(𝑥) 𝑎𝑛𝑑 𝑄(𝑥). In other words, it means (∀𝑥𝑃(𝑥)) ∨ 𝑄(𝑥) rather 
+than ∀𝑥(𝑃(𝑥) ∨ 𝑄(𝑥)). 
+
+1.4.5 Binding Variables 
+When a quantifier is used on the variable 𝑥, we say that this occurrence of 
+the variable is bound. An occurrence of a variable that is not bound by a 
+quantifier or set equal to a particular value is said to be free. All the variables 
+that occur in a propositional function must be bound or set equal to a 
+particular value to turn it into a proposition. This can be done using a 
+combination of universal quantifiers, existential quantifiers, and value 
+assignments. 
+
+The part of a logical expression to which a quantifier is applied is called the 
+scope of this quantifier. Consequently, a variable is free if it is outside the 
+scope of all quantifiers in the formula that specify this variable. 
+In the statement ∃𝑥(𝑥 +  𝑦 =  1), the variable 𝑥 is bound by the existential 
+quantification ∃𝑥, but the variable 𝑦 is free because it is not bound by a 
+quantifier and no value is assigned to this variable. This illustrates that in the 
+statement ∃𝑥(𝑥 +  𝑦 =  1), 𝑥 is bound, but 𝑦 is free. 
+In the statement ∃𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) ∨ ∀𝑥𝑅(𝑥), all variables are bound. The 
+scope of the first quantifier, ∃𝑥, is the expression 𝑃(𝑥) ∧ 𝑄(𝑥) because ∃𝑥 
+is applied only to 𝑃(𝑥) ∧ 𝑄(𝑥), and not to the rest of the statement. 
+Similarly, the scope of the second quantifier, ∀𝑥, is the expression 𝑅(𝑥). That 
+is, the existential quantifier binds the variable 𝑥 in 𝑃(𝑥) ∧ 𝑄(𝑥) and the 
+universal quantifier ∀𝑥 binds the variable 𝑥 in 𝑅(𝑥). Observe that we could 
+have written our statement using two different variables 𝑥 and 𝑦, as 
+∃𝑥(𝑃(𝑥) ∧ 𝑄(𝑥)) ∨ ∀𝑦𝑅(𝑦), because the scopes of the two quantifiers do 
+not overlap. You should be aware that in common usage, the same letter is 
+often used to represent variables bound by different quantifiers with scopes 
+that do not overlap. 

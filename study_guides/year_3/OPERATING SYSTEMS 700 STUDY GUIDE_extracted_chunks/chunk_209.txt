@@ -1,0 +1,41 @@
+Process Management 
+
+In a network, the Processor Manager provides policies and mechanisms to create, delete, abort, 
+name, rename, find, block, run, and synchronize processes, it also provides real-time priority 
+execution if required. The Processor Manager also manages the states of execution: READY, 
+RUNNING, and WAIT. To do this, each CPU in the network is required to have its own run-time kernel 
+that manages the lowest-level hardware operation on the physical device, as shown in Figure 6.11. 
+ 
+Figure 6.11 
+ 
+Figure 6.11 shows the kernel that controls each piece of the host’s hardware, including the CPU. 
+Each kernel is operated by the DO/S, which, in turn, is directed by the application software running 
+on the host computer. In this way, the most cumber- some functions are hidden from 
+the user. 
+ 
+The kernel is the entity that controls and operates the CPU and manages the queues used for states 
+of execution, although upper-level system policies direct how process control blocks (PCBs) are 
+stored in the queues and how they are selected to be run. Therefore, each kernel assumes the role 
+of helping the system reach its operational goals. 
+ 
+The kernel’s states are dependent on the global system’s process scheduler and dis- patcher, which 
+organize the queues within the local CPU and choose the running policy, 4 which is used to 
+execute the processes on those queues. Typically, the system’s scheduling function has three parts: 
+a decision mode, a priority function, and an arbitration rule. 
+➢ The decision mode determines which policies are used when scheduling a resource. Options 
+could include pre-emptive, non-pre-emptive, round robin, and so on. 
+➢ The priority function gives the scheduling algorithm the policy that’s used to assign an 
+order to processes in the execution cycle. This priority is often determined using a calculation 
+that’s based on system characteristics, such as occurrence of events, task recurrence, 
+system loading levels, or program run-time characteristics, such as most time remaining, least 
+time remaining, and so on. 
+➢ The arbitration rule is a policy that is used to resolve conflicts between jobs of equal priority. 
+That is, it typically dictates the order in which jobs of the same priority are to be executed. Two 
+examples of arbitration rules are last-in- first-out (LIFO), and first-in- first-out (FIFO). 
+Most advances in job scheduling rely on one of three theories: queuing theory, statistical 
+decision theory, or estimation theory. (These queuing and statistical decision theories are the same 
+as those discussed in statistics courses.) An example of estimation theory is a scheduler based on 
+process priorities and durations. It maximizes the system’s throughput by using durations to 
+compute and schedule the optimal way to interleave process chunks. Distributed scheduling is 
+better achieved when migration of the scheduling function and policies considers all aspects of 
+the system, including I/O, devices, processes, and communications. 

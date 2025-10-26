@@ -1,0 +1,111 @@
+uperclass. 
+ class A {   
+int i; // public by default  
+ private int j; // private   
+   
+void setij(int x, int y) { 
+               i = x;   
+      
+j = y;   
+}   
+}   
+   
+// A's j is not accessible  here.  
+             class B extends A {   
+int total;  
+void sum() {  total = i + j; 
+ // ERROR, j is not accessible here   
+}   
+}   
+   
+class Access {   
+public static void main(String args[]) {   
+   
+B subOb = new B();   
+subOb.setij(10, 12); 
+ subOb.sum();   
+System.out.println("Total is " + subOb.total);   
+}   
+
+   
+This program will not compile because the reference to j inside the sum( ) method of B causes an 
+access violation. Since j is declared as private, it is only accessible by other members of its own class. 
+Subclasses have no access to it.    
+A class member that has been declared as private will remain private to its class. It is not accessible 
+by any code outside its class, including subclasses.   
+   
+A More Practical Example    
+Let’s look at a more practical example that will help illustrate the power of inheritance. Here, the 
+final version of the Box class developed in the preceding chapter will be extended to include a fourth 
+component called   weight. Thus, the new class will contain a box’s width, height, depth, and weight.   
+   
+// This program uses inheritance to extend   Box. 
+class Box {  
+double width; 
+ double height;   
+   
+double depth;   
+// construct clone of an object   
+Box(Box ob) { // pass object to constructor   
+   
+width = ob.width;   
+height = ob.height;   
+            depth = ob.depth;   
+   
+}   
+// constructor used when all dimensions specified    
+Box(double w, double h, double d) {  
+width = w; 
+height = h;  
+  
+             depth = d;   
+                              }   
+// constructor used when no dimensions  specified  
+                       Box() {   
+                    width = -1;  
+          
+               height = -1;  
+       
+               depth = -1; // box   
+   }   
+// constructor used when cube is created  
+Box(double len)  
+{ width = height = depth = len;   
+}   
+// compute and return volume  
+double volume() { 
+ return width * height * depth;   
+}   
+}   
+   
+// Here, Box is extended to include weight.  
+class BoxWeight extends Box {  
+double weight; 
+ // weight of box   
+// constructor for BoxWeight   
+BoxWeight(double w, double h, double d, double m)  
+{ width = w;  
+height = h;  
+ depth = d;   
+ weight = m;   
+}   
+}    
+class DemoBoxWeight {   
+ public static void main(String args[]) {   
+BoxWeight mybox1 = new BoxWeight(10, 20, 15, 34.3);  
+BoxWeight mybox2 = new BoxWeight(2, 3, 4, 0.076);  
+double vol;  vol = mybox1.volume();   
+System.out.println("Volume of mybox1 is " + vol);   
+System.out.println("Weight of mybox1 is " + mybox1.weight);   
+System.out.println(); vol = mybox2.volume();   
+System.out.println("Volume of mybox2 is " + vol);   
+System.out.println("Weight of mybox2 is " + mybox2.weight);   
+}   
+}   
+   
+The output from this program is shown here:    
+Volume of mybox1 is 3000.0   
+Weight of mybox1 is 34.3   
+Volume of mybox2 is 24.0   
+
+Weight of mybox2 is 0.076 

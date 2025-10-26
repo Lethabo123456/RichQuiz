@@ -1,0 +1,21 @@
+ements. 
+In this syntax, functionType is the type of the value that the function returns. The 
+functionType is also called the data type or the return type of the value-returning 
+
+95 | P a g e  
+ 
+function. Moreover, statements enclosed between curly braces form the body of the 
+function 
+ 
+Consider the definition of the function abs given earlier in this chapter. Figure below 
+identifies various parts of this function. 
+ 
+In C++, return is a reserved word. When a return statement executes in a function, the 
+function immediately terminates and the control goes back to the calling function. 
+Moreover, the function call statement is replaced by the value returned by the return 
+statement. When a return statement executes in the function main, the program 
+terminates. 
+ 
+To put the ideas in this discussion to work, let us write a function that determines the 
+larger of two numbers. Because the function compares two numbers, it follows that 
+this function has two parameters and that both

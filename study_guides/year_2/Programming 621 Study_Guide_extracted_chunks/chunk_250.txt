@@ -1,0 +1,24 @@
+ble x, double y) = 0; 
+ 
+Note the expression = 0 before the semicolon. Once you make these functions pure 
+virtual functions in the class shape, you no longer need to provide the definitions of 
+these functions for the class shape. 
+ 
+Once a class contains one or more pure virtual functions, then that class is called an 
+abstract class. Thus, the abstract definition of the class shape is similar to the 
+following: 
+ 
+ 
+Because an abstract class (or its implementation file) does not contain the definitions 
+of certain functions, it is not a complete class and you cannot create objects of that 
+class. 
+ 
+
+234 | P a g e  
+ 
+Now suppose that we derive the class rectangle from the class shape. To make 
+rectangle a nonabstract class so that we can create objects of this class, the class (or 
+its implementation file) must provide the definitions of the pure virtual functions of its 
+base class, which is the class shape 
+ 
+Note that in addition to the pure virtual functions, an abstract class

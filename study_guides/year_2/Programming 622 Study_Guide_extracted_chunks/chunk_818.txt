@@ -1,0 +1,20 @@
+smallestWeight[2]. Figure 10-11 shows the resulting graph.  
+  
+
+402  
+  
+  
+FIGURE 10-11 Graph after the second iteration of Steps 3 to 5  
+  
+Iteration 3 of Steps 3 through 5: At Step 3, the vertex selected is 2. At Step 4, we set weightFound[2] to 
+true. Next at Step 5, we consider the vertex 1 because this is the vertex for which there is an edge from 
+the vertex 2 and the shortest path from 0 to this vertex has not been found. We then check if the path 
+from the vertex 0 to the vertex 1 via the vertex 2 can be improved. Clearly, the weight of the path 0-4-21, 
+which is 10, from 0 to 1 is smaller than the current weight of 1 (which is 13). So we update 
+smallestWeight[1]. Figure 10-12 shows the resulting graph.  
+  
+  
+FIGURE 10-12 Graph after the third iteration of Steps 3 to 5  
+  
+Iteration 4 of Steps 3 through 5: At Step 3, the vertex 1 is selected and at Step 4, weightFound[1] is set to 
+true. In this iteration, the action of Step 5 is null because the shortest path from the

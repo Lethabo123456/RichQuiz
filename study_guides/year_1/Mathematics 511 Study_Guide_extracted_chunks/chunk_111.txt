@@ -1,0 +1,21 @@
+1.6.3 Direct Proofs 
+A direct proof of a conditional statement 𝑝 → 𝑞 is constructed when the 
+first step is the assumption that 𝑝 is true; subsequent steps are constructed 
+using rules of inference, with the final step showing that 𝑞 must also be true. 
+A direct proof shows that a conditional statement 𝑝 → 𝑞 is true by showing 
+that if 𝑝 is true, then 𝑞 must also be true, so that the combination 𝑝 true and 
+𝑞 false never occurs. In a direct proof, we assume that 𝑝 is true and use 
+axioms, definitions, and previously proven theorems, together with rules of 
+inference, to show that 𝑞 must also be true.You will find that direct proofs 
+of many results are quite straight forward, with a fairly obvious sequence of 
+steps leading from the hypothesis to the conclusion. However, direct proofs 
+sometimes require particular insights and can be quite tricky. The first direct 
+proofs we present here are quite straightforward; later in the text you will 
+see some that are less obvious. 
+
+Definition 15 
+The integer 𝑛 is even if there exists an integer 𝑘 such that 𝑛 =  2𝑘, and 𝑛 is 
+odd if there exists an integer 𝑘 such that 𝑛 =  2𝑘 +  1. (Note that every 
+integer is either even or odd, and no integer is both even and odd.) Two 
+integers have the same parity when both are even or both are odd; they have 
+opposite parity when one is even and the other is odd.

@@ -1,0 +1,31 @@
+Understanding the different levels of data is important as a data scientist, as it directs the nature of 
+operations that are allowed at each level. Let us examine a Python example that seeks to determine 
+the mean. 
+ 
+Example 1: (Ordinal Level - Calculate mean)-  Imagine you have conducted a survey among your 
+employees asking "how happy are you to be working here on a scale from 1-5", and your results are: 
+5, 4, 3, 4, 5, 3, 2, 5, 3, 2, 1, 4, 5, 3, 4, 4, 5, 4, 2, 1, 4, 5, 4, 3, 2, 
+4, 4, 5, 4, 3, 2, 1 
+
+The following code extract demonstrates the use of Python to determine the mean. 
+ 
+Code Extract 2.2 
+import numpy 
+results = [5, 4, 3, 4, 5, 3, 2, 5, 3, 2, 1, 4, 5, 3, 4, 4, 5, 4, 2, 1, 4, 5, 4, 3, 
+2, 4, 4, 5, 4, 3, 2, 1] 
+ 
+sorted_results = sorted(results) 
+print sorted_results 
+''' 
+[1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 
+5, 5, 5, 5] 
+''' 
+print numpy.mean(results)    # == 3.4375 
+print numpy.median(results)  # == 4.0 
+ 
+Example 2 (Interval Level):  Suppose we look at the temperature of a fridge containing a 
+pharmaceutical company's new vaccine. We measure the temperate every hour with the following 
+data points (in Fahrenheit): 
+31, 32, 32, 31, 28, 29, 31, 38, 32, 31, 30, 29, 30, 31, 26.  
+
+Using Python, let's find the mean and median of the data: 

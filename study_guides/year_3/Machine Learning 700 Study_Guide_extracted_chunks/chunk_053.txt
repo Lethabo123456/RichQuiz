@@ -1,0 +1,27 @@
+2.4.2 What is Principal Component Analysis (PCA)? 
+Principal Component Analysis (PCA) is a statistical technique that transforms a high-dimensional dataset 
+into a lower-dimensional space while maintaining as much variance (information) as possible. Rather 
+than simply removing features, PCA creates new features that are linear combinations of the original 
+ones. These new features, called principal components, capture the directions of maximum variance in 
+the dataset. The primary objectives of PCA are: 
+
+1. Identifying the directions of maximum variance in the dataset. 
+2. Creating new axes called principal components, which are linear combinations of the original 
+features. 
+3. Selecting the top components that capture most of the variance while discarding less significant 
+ones.
+
+In the example below, Principal Component Analysis (PCA) is applied to a dataset containing two highly 
+correlated features to demonstrate how PCA identifies the direction of maximum variance and 
+transforms the dataset into a new coordinate system. The dataset consists of Feature X, which is 
+randomly generated, and Feature Y, which is a linear function of Feature X with added noise, creating a 
+strong correlation between the two features. The first scatter plot (blue) represents the original dataset, 
+where the elongated cluster of points suggests redundancy in the data, as both features contain nearly 
+identical information. To extract the most meaningful insights, the dataset is standardized to ensure all 
+features contribute equally, followed by the application of PCA, which finds the principal components—
+new axes that maximize variance. The second scatter plot (red) illustrates the transformed dataset, where 
+Principal Component 1 (PC1) captures the majority of the variance, while Principal Component 2 (PC2) 
+contributes only minimally (0.59%). The explained variance ratio confirms that PC1 captures 99.4% of the 
+variance, making PC2 largely insignificant. This transformation enables dimensionality reduction while 
+preserving essential patterns in the data, leading to more efficient machine learning models with reduced 
+computational complexity and improved interpretability. 

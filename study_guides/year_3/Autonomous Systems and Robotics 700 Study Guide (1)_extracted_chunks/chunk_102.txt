@@ -1,0 +1,397 @@
+Here’s an example of an optimized implementation of Dijkstra’s algorithm 
+
+import heapq 
+from collections import defaultdict 
+import time 
+ 
+def dijkstra_optimized(graph, start): 
+    """ 
+    Optimized Dijkstra's algorithm using a min-heap priority queue 
+    Args: 
+        graph: Dictionary adjacency list representation 
+        start: Starting node 
+ 
+    Returns: 
+        distances: Dictionary of shortest distances 
+        previous: Dictionary for path reconstruction 
+    """ 
+ 
+    # Initialize distances and previous nodes 
+    distances = {node: float('inf') for node in graph} 
+    distances[start] = 0 
+    previous = {node: None for node in graph} 
+ 
+    # Priority queue: (distance, node) 
+    # Using heapq which implements a min-heap 
+    pq = [(0, start)] 
+ 
+    # Keep track of visited nodes to avoid reprocessing 
+    visited = set() 
+
+ 
+    while pq: 
+        # Get node with minimum distance 
+        current_distance, current_node = heapq.heappop(pq) 
+ 
+        # Skip if already processed (handles duplicate entries in heap) 
+        if current_node in visited: 
+            continue 
+ 
+        # Mark as visited 
+        visited.add(current_node) 
+ 
+        # Process all neighbors 
+        for neighbor, weight in graph[current_node].items(): 
+            if neighbor not in visited: 
+                # Calculate new distance through current node 
+                new_distance = current_distance + weight 
+ 
+                # Update if shorter path found 
+                if new_distance < distances[neighbor]: 
+                    distances[neighbor] = new_distance 
+                    previous[neighbor] = current_node 
+                    # Add to priority queue 
+                    heapq.heappush(pq, (new_distance, neighbor)) 
+ 
+    return distances, previous 
+ 
+ 
+ 
+
+def dijkstra_single_target(graph, start, target): 
+    """ 
+    Optimized version that stops when target is reached 
+    More efficient when you only need path to one specific node 
+    """ 
+    distances = {node: float('inf') for node in graph} 
+    distances[start] = 0 
+    previous = {node: None for node in graph} 
+ 
+    pq = [(0, start)] 
+    visited = set() 
+ 
+    while pq: 
+        current_distance, current_node = heapq.heappop(pq) 
+ 
+        # Early termination when target is reached 
+        if current_node == target: 
+            break 
+ 
+        if current_node in visited: 
+            continue 
+ 
+        visited.add(current_node) 
+ 
+        for neighbor, weight in graph[current_node].items(): 
+            if neighbor not in visited: 
+                new_distance = current_distance + weight 
+ 
+                if new_distance < distances[neighbor]: 
+
+                    distances[neighbor] = new_distance 
+                    previous[neighbor] = current_node 
+                    heapq.heappush(pq, (new_distance, neighbor)) 
+ 
+    return distances, previous 
+ 
+def dijkstra_with_node_objects(graph, start): 
+    """ 
+    Version using custom node objects for better performance 
+    and to handle more complex scenarios 
+    """ 
+ 
+    class Node: 
+        def __init__(self, name, distance=float('inf')): 
+            self.name = name 
+            self.distance = distance 
+            self.previous = None 
+            self.visited = False 
+ 
+        def __lt__(self, other): 
+            return self.distance < other.distance 
+ 
+    # Create node objects 
+    nodes = {name: Node(name) for name in graph} 
+    nodes[start].distance = 0 
+ 
+    # Priority queue with node objects 
+    pq = [nodes[start]] 
+    heapq.heapify(pq) 
+
+    while pq: 
+        current = heapq.heappop(pq) 
+ 
+        if current.visited: 
+            continue 
+ 
+        current.visited = True 
+ 
+        for neighbor_name, weight in graph[current.name].items(): 
+            neighbor = nodes[neighbor_name] 
+ 
+            if not neighbor.visited: 
+                new_distance = current.distance + weight 
+ 
+                if new_distance < neighbor.distance: 
+                    neighbor.distance = new_distance 
+                    neighbor.previous = current 
+                    heapq.heappush(pq, neighbor) 
+ 
+    # Convert back to dictionaries 
+    distances = {name: node.distance for name, node in nodes.items()} 
+    previous = {name: node.previous.name if node.previous else None 
+                for name, node in nodes.items()} 
+ 
+    return distances, previous 
+ 
+def dijkstra_bidirectional(graph, start, target): 
+    """ 
+    Bidirectional Dijkstra - searches from both start and target 
+
+    Often faster for single-pair shortest path queries 
+    """ 
+ 
+    def search_direction(graph, source, distances, previous, pq, visited, other_distances): 
+        if not pq: 
+            return None, False 
+ 
+        current_distance, current_node = heapq.heappop(pq) 
+ 
+        if current_node in visited: 
+            return None, False 
+ 
+        visited.add(current_node) 
+ 
+        # Check if we've met the other search 
+        if current_node in other_distances: 
+            return current_node, True 
+ 
+        for neighbor, weight in graph[current_node].items(): 
+            if neighbor not in visited: 
+                new_distance = current_distance + weight 
+ 
+                if new_distance < distances[neighbor]: 
+                    distances[neighbor] = new_distance 
+                    previous[neighbor] = current_node 
+                    heapq.heappush(pq, (new_distance, neighbor)) 
+        return None, False 
+ 
+
+    # Initialize forward search (from start) 
+    forward_distances = {node: float('inf') for node in graph} 
+    forward_distances[start] = 0 
+    forward_previous = {node: None for node in graph} 
+    forward_pq = [(0, start)] 
+    forward_visited = set() 
+ 
+    # Initialize backward search (from target) 
+    # Need reverse graph for backward search 
+    reverse_graph = defaultdict(dict) 
+    for node in graph: 
+        for neighbor, weight in graph[node].items(): 
+            reverse_graph[neighbor][node] = weight 
+ 
+    backward_distances = {node: float('inf') for node in graph} 
+    backward_distances[target] = 0 
+    backward_previous = {node: None for node in graph} 
+    backward_pq = [(0, target)] 
+    backward_visited = set() 
+ 
+    meeting_point = None 
+ 
+    while forward_pq or backward_pq: 
+        # Alternate between forward and backward search 
+ 
+        # Forward search step 
+        if forward_pq: 
+            meet, found = search_direction( 
+                graph, start, forward_distances, forward_previous, 
+
+                forward_pq, forward_visited, backward_distances 
+            ) 
+            if found: 
+                meeting_point = meet 
+                break 
+ 
+        # Backward search step 
+        if backward_pq: 
+            meet, found = search_direction( 
+                reverse_graph, target, backward_distances, backward_previous, 
+                backward_pq, backward_visited, forward_distances 
+            ) 
+            if found: 
+                meeting_point = meet 
+                break 
+ 
+    if meeting_point: 
+        # Reconstruct path 
+        path = [] 
+ 
+        # Forward path (start to meeting point) 
+        current = meeting_point 
+        forward_path = [] 
+        while current is not None: 
+            forward_path.append(current) 
+            current = forward_previous[current] 
+        forward_path.reverse() 
+ 
+
+        # Backward path (meeting point to target) 
+        current = backward_previous[meeting_point] 
+        backward_path = [] 
+        while current is not None: 
+            backward_path.append(current) 
+            current = backward_previous[current] 
+ 
+        path = forward_path + backward_path 
+        total_distance = forward_distances[meeting_point] + backward_distances[meeting_point] 
+ 
+        return total_distance, path 
+ 
+    return float('inf'), [] 
+ 
+def get_shortest_path(previous, start, end): 
+    """Reconstruct shortest path""" 
+    path = [] 
+    current = end 
+ 
+    while current is not None: 
+        path.append(current) 
+        current = previous[current] 
+ 
+    path.reverse() 
+    return path if path[0] == start else [] 
+ 
+def benchmark_implementations(): 
+    """Compare different implementations""" 
+ 
+
+    # Create test graph 
+    def create_large_graph(size): 
+        graph = defaultdict(dict) 
+        for i in range(size): 
+            for j in range(size): 
+                node = f"{i},{j}" 
+ 
+                # Connect to adjacent nodes 
+                if i > 0: 
+                    graph[node][f"{i - 1},{j}"] = 1 
+                if j > 0: 
+                    graph[node][f"{i},{j - 1}"] = 1 
+                if i < size - 1: 
+                    graph[node][f"{i + 1},{j}"] = 1 
+                if j < size - 1: 
+                    graph[node][f"{i},{j + 1}"] = 1 
+ 
+        return dict(graph) 
+ 
+    print("Performance Comparison") 
+    print("=" * 50) 
+ 
+    # Test different graph sizes 
+    for size in [20, 50, 100]: 
+        print(f"\nTesting {size}x{size} grid ({size * size} nodes):") 
+ 
+        graph = create_large_graph(size) 
+        start_node = "0,0" 
+        target_node = f"{size - 1},{size - 1}" 
+
+        # Standard optimized Dijkstra 
+        start_time = time.time() 
+        distances, previous = dijkstra_optimized(graph, start_node) 
+        opt_time = time.time() - start_time 
+ 
+        # Single target optimization 
+        start_time = time.time() 
+        distances_single, previous_single = dijkstra_single_target(graph, start_node, target_node) 
+        single_time = time.time() - start_time 
+ 
+        # Bidirectional search 
+        start_time = time.time() 
+        bi_distance, bi_path = dijkstra_bidirectional(graph, start_node, target_node) 
+        bi_time = time.time() - start_time 
+ 
+        print(f"  Standard optimized: {opt_time:.4f}s") 
+        print(f"  Single target:      {single_time:.4f}s") 
+        print(f"  Bidirectional:      {bi_time:.4f}s") 
+        print(f"  Single target speedup: {opt_time / single_time:.2f}x") 
+        print(f"  Bidirectional speedup: {opt_time / bi_time:.2f}x") 
+ 
+# Example usage 
+if __name__ == "__main__": 
+    # Example graph 
+    
+ graph = { 
+        'A': {'B': 4, 'C': 2}, 
+        'B': {'A': 4, 'C': 1, 'D': 5}, 
+        'C': {'A': 2, 'B': 1, 'D': 8, 'E': 10}, 
+
+        'D': {'B': 5, 'C': 8, 'E': 2, 'F': 6}, 
+        'E': {'C': 10, 'D': 2, 'F': 3}, 
+        'F': {'D': 6, 'E': 3} 
+    } 
+ 
+    print("Optimized Dijkstra's Algorithm Demo") 
+    print("=" * 40) 
+ 
+    # Standard optimized version 
+    distances, previous = dijkstra_optimized(graph, 'A') 
+ 
+    print("Shortest distances from A:") 
+    for node in sorted(distances.keys()): 
+        print(f"  A -> {node}: {distances[node]}") 
+ 
+    print("\nShortest paths:") 
+    for node in sorted(graph.keys()): 
+        if node != 'A': 
+            path = get_shortest_path(previous, 'A', node) 
+            print(f"  A to {node}: {' -> '.join(path)} (distance: {distances[node]})") 
+ 
+    # Single target example 
+    print(f"\n" + "=" * 40) 
+    print("Single target optimization (A to F):") 
+    distances_single, previous_single = dijkstra_single_target(graph, 'A', 'F') 
+    path_to_f = get_shortest_path(previous_single, 'A', 'F') 
+    print(f"Path: {' -> '.join(path_to_f)}") 
+    print(f"Distance: {distances_single['F']}") 
+ 
+
+    # Bidirectional example 
+    print(f"\n" + "=" * 40) 
+    print("Bidirectional search (A to F):") 
+    bi_distance, bi_path = dijkstra_bidirectional(graph, 'A', 'F') 
+    print(f"Path: {' -> '.join(bi_path)}") 
+    print(f"Distance: {bi_distance}") 
+ 
+    # Performance benchmark 
+    print(f"\n" + "=" * 40) 
+    benchmark_implementations() 
+
+The code above generates the following output:
+
+Optimized Dijkstra's Algorithm Demo
+=======================================
+Shortest distances from A:
+A -> A: 0
+A -> B: 3
+A -> C: 2
+A -> D: 8
+A -> E: 10
+A -> F: 13
+
+Shortest paths:
+A to B: A -> C -> B (distance: 3)
+A to C: A -> C (distance: 2)
+A to D: A -> C -> B -> D (distance: 8)
+A to E: A -> C -> B -> D -> E (distance: 10)
+A to F: A -> C -> B -> D -> E -> F (distance: 13)
+
+======================================================
+Single target optimization (A to F):
+Path: A -> C -> B -> D -> E -> F
+Distance: 13
+======================================================
+Bidirectional search (A to F)
+Path: A
+Distance: inf  
+ 

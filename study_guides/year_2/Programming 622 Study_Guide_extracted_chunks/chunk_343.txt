@@ -1,0 +1,49 @@
+171  
+  
+  
+bool sudoku::solveSudoku()  
+{  
+int row, col;  
+  
+if (findEmptyGridSlot(row, col))  
+{  
+for (int num = 1; num <= 9; num++)  
+{  
+if (canPlaceNum(row, col, num))  
+{  
+grid[row][col] = num;  
+if (solveSudoku())   
+ return 
+true;  
+grid[row][col] = 0;  
+}  
+}  
+ 
+//recursive call  
+return false;    
+  
+  
+  
+}  
+else  
+ 
+//backtrack  
+return true;     
+  
+  
+  
+ 
+//there are no empty slots  
+}  
+  
+We leave it is as an exercise for you to write the definitions of the remaining functions of the class sudoku 
+and program that solves sudoku problems.  
+  
+Key Terms  
+  
+1. The process of solving a problem by reducing it to smaller versions of itself is called recursion.  
+2. A recursive definition defines a problem in terms of smaller versions of itself.  
+3. Every recursive definition has one or more base cases.  
+4. A recursive algorithm solves a problem by reducing it to smaller versions of itself.  
+5. Every recursive algorithm has one or more base cases.  
+6. The solut

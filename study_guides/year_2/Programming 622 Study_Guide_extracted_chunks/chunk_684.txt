@@ -1,0 +1,22 @@
+the item is found or we have traversed the 
+entire binary tree because no criteria exist to guide our search. This case is like an arbitrary linked list 
+where we must start our search at the first node, and continue looking at each node until either the item 
+is found or the entire list is searched.  
+  
+On the other hand, consider the binary tree in Figure 9-7.  
+  
+
+336  
+  
+  
+FIGURE 9-7 Binary search tree  
+  
+In 
+the binary tree in Figure 9-7, the data in each node is  
+Larger than the data in its left subtree  
+Smaller than the data in its right subtree  
+  
+The binary tree in Figure 9-7 has some structure. Suppose that we want to determine whether 58 is in this 
+binary tree. As before, we must start our search at the root node. We compare 58 with the data in the 
+root node; that is, we compare 58 with 60. Because 58 ≠ 60 and 58 < 60, it is guaranteed that 58 will not 
+be in the right subtree of the root node. Therefore, if 58 is in the binary tree, it must be in the left subtr

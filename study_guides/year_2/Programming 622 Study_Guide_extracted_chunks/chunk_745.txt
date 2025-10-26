@@ -1,0 +1,22 @@
+lly empty AVL tree  
+  
+First, we insert 40; see Figure 9-23(a). Next, we insert 30 into the AVL tree. Item 30 is inserted into the left 
+subtree of node 40, causing the left subtree of 40 to grow in height. After insertion, the balance factor of 
+node 40 is –1; see Figure 9-23(b).  
+  
+Next, we insert 20 into the AVL tree. See Figure 9-23(c). The insertion of 20 violates the balance criteria at 
+node 40. The tree is reconstructed at node 40 by making a single right rotation.  
+  
+Next, we insert 60 into the AVL tree. See Figure 9-23(d). The insertion of 60 does not require 
+reconstruction; only the balance factor is adjusted at nodes 40 and 30.  
+  
+Next, we insert 50. See Figure 9-23(e). The insertion of 50 requires the tree to be reconstructed at 40. 
+Notice that a double rotation is made at node 40.  
+  
+Next, we insert 80; see Figure 9-23(f). The insertion of 80 requires the tree to be reconstructed at node 
+30.  
+  
+
+367  
+  
+Next, we insert 15; see Figure 9-23(g). The insertion

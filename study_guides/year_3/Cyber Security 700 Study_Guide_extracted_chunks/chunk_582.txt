@@ -1,0 +1,27 @@
+ Data aggregation: The aggregator serves as a consolidating resource before data is sent to be 
+correlated or retained. 
+ Data normalization: Normalization is the process of resolving different representations of the 
+same types of data into a similar format in a common database. 
+ Correlation: Event correlation is the function of linking multiple security events or alerts, 
+typically within a given time window and across multiple systems, to identify anomalous 
+activity that is not evident from any singular event. 
+ Alerting: When data that trigger certain responses (such as alerts or potential security 
+problems) are gathered or identified, SIEM tools activate certain protocols to alert users, such 
+as notifications sent to the dashboard, an automated email, or text message. 
+ Reporting/compliance: Protocols in a SIEM are established to automatically collect data 
+necessary for compliance with company, organizational, and government policies. Both 
+custom reporting and report templates (generally for common regulations such as the 
+Payment Card Industry Data Security Standard [PCI DSS] and the U.S. Sarbanes-Oxley Act) are 
+typically part of a SIEM solution. 
+ Forensics: The ability to search log and alert data for indicators of malicious or otherwise 
+anomalous activities is the forensic function of the SIEM. Forensics, which is supported by the 
+event correlation and normalization processes, requires highly customizable and detailed 
+query capabilities and drill-down access to raw log files and archival data. Working in concert, 
+these technologies greatly enhance the investigative capabilities of security analysts, just as 
+data collection, aggregation, and correlation technologies enhance their ability to detect and 
+respond to real-time events. 
+ Retention: Data need to be stored for long periods so that decisions can be made based on 
+more complete data sets. 
+ Dashboards: Dashboards are used to analyze and visualize data in an attempt to recognize 
+patterns or target activity or data that do not fit into a normal pattern. 
+ 

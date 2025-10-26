@@ -1,0 +1,42 @@
+ame (markers, lines+markers, lines). Names appear in the legend to the upper right 
+(similar to the A B C D names we saw in our first plotly example) and as hover text. 
+line2.py takes some online data and makes a stacked series of line charts. For this exercise we imported a dataset from 
+the U.S. Census Bureau and whittled it down to a small file named population.csv. This file is stored in a neighboring 
+folder called /data: 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+# read a .csv file into a pandas DataFrame: 
+df = pd.read_csv('../data/population.csv', index_col=0) 
+ 
+# create traces traces = 
+[go.Scatter( 
+ 
+x = df.columns, 
+y = df.loc[name], 
+mode = 'markers+lines', 
+name = name 
+) for name in df.index] 
+ 
+layout = go.Layout( 
+ 
+title = 'Population Estimates of the Six New England States' 
+) 
+fig = go.Figure(data=traces,layout=layout) 
+ 
+pyo.plot(fig, filename='line2.html') 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+● To grab a file from a neighboring di

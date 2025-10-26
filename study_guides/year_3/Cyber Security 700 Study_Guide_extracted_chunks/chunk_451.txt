@@ -1,0 +1,48 @@
+ Access constraints: A wireless access point transmits, at regular intervals, a signal containing 
+is Service Set Identifier (SSID). This unique SSID identifies the access point and is used to 
+announce that the access point is active. Because SSIDs are transmitted unencrypted, an 
+unauthorized use could exploit the SSID to attempt an attack or intrusion. Countermeasures 
+include the following: 
+ Enable device security features. 
+ Change default settings, such as default SSIDs set by the manufacturer. 
+ Use static IP addresses for wireless access points. This avoids the use of the Dynamic 
+Host Configuration Protocol (DHCP), which automatically provides an IP address to 
+anyone attempting to gain access to your wireless network. again Static IP addresses 
+make unauthorized penetration more difficult. 
+ Track employees who have WLANs at home or at a remote site. Require that wireless 
+networks be placed behind the main routed interface so the institution can shut them 
+off if necessary. If WLANs are being used at home, require specific security 
+configurations, including encryption and VPN tunneling. 
+ Rogue access points: Rogue access points are APs that users install without coordinating with 
+IT. Access controls, encryption, and authentication procedures enable IT to maintain control. 
+ Traffic analysis and eavesdropping: To counter this threat, it is necessary to use a strong user 
+authentication technique and to encrypt all traffic. 
+ Insufficient network performance: Poor performance is due to an imbalance in the use of 
+access points, insufficient capacity planning, or a denial of service attack. The following steps 
+can mitigate this risk.
+
+1. Continually monitor network performance and investigate any anomalies immediately. 
+2. Segment the access point’s coverage areas to reduce the number of people using each access 
+point. 
+3. Apply a traffic-shaping solution to allow administrators to proactively manage traffic rather 
+than react to irregularities.
+
+ Hacker attacks: Hackers attempt to gain unauthorized access over wireless networks. 
+Intrusion detection systems, anti-virus software, and firewalls are mitigation techniques. 
+ Physical security deficiencies: This is in the domain of physical security. Subject Both the 
+network devices and mobile devices to physical security policies and procedures. 
+Employ VPNs as an additional security control. 
+ 
+External Network Connections 
+ 
+The principal security objective with respect to external network connections is to prevent 
+unauthorized external users from gaining access to information systems and networks. The SGP 
+includes the following guidelines: 
+
+ Restrict external network traffic to only specified parts of information systems and networks 
+and defined entry points. 
+ Verify the sources of external connections. 
+ Limit access to devices that meet minimum security configuration requirements. 
+ Restrict access to only specific enterprise applications. 
+ Use firewalls to enforce security policies. 
+ Use a VPN for devices.

@@ -1,0 +1,28 @@
+Much of this code was already shown in the previous Chapter. After you do all the required imports, 
+you will still have some errors that can be corrected as follows: 
+6.5.1 Line 4—The permission required to access the phone is android.Manifest.Permission.CALL_PHONE. 
+6.5.2 Line 9—If you are getting an error on this line (activity_main is red), you need to add 
+an id to the root layout. Click the top ConstrainLayout in the Component Tree and add the 
+id in the Attributes panel. 
+6.5.3 Line 18—Just as in the previous Chapter, we need the ability to identify which 
+permission is being requested. The method onRequestPermissionsResult is executed anytime 
+the app asks for a permission from a user. The constant used below allows the method to 
+respond to the type of permission that was asked for. If you only request one permission in 
+an activity, this is not a big deal; but if more than one is asked for, the method has to be able 
+to respond to each one appropriately. Open MainActivity (if not open) and put the following 
+line of code after the Contact currentContact line at the top of the file:
+
+final int PERMISSION_REQUEST_PHONE = 102; 
+ 
+The  final step  to  handling  the  permission  check  is to  override the onPermissionsRequestResult 
+method, as you did in the previous Chapter. Refer to Listing 8.8 to write this code. 
+  
+Notice that this follows the same pattern as in previous Chapter. There are two main differences. The 
+first is that we check for a different permission in the switch case statement. The second is that instead 
+of doing something, we provide a message that the functionality is now available. It is preferable to 
+perform the action requested, as we did in the chapter on location. However, there is no way to pass 
+the phone number to this method, so we have to be satisfied with a message. 
+The final step is to code the method that actually dials the phone number. Add the callContact method 
+to MainActivity.java using the code in Listing 8.9. Note that since calling the phone is considered 
+dangerous, we have to check if permission has been granted to get it to work, just like we did in the 
+onPause method of previous Chapter. 

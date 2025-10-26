@@ -1,0 +1,22 @@
+1.2.5 Identifying Reserved keywords 
+C# reserves 77 identifiers for its own use. You cannot reuse these identifiers for your own 
+purposes. These identifiers are called keywords, and each has a meaning. Examples of 
+keywords are class, namespace, and using. You’ll learn the meaning of most of the C# 
+keywords as you proceed through this book. The following is the list of keywords: 
+
+Tip
+C# is a free format language, which means that white space, such as a space character or a new line, 
+is not significant except as a separator. In other words, you are free to lay out your statements in any 
+style you choose. However, you should adopt a simple, consistent layout style to make your programs 
+
+Note
+It is recommended to use descriptive names to create understandable and maintainable 
+code: 
+
+Table 1-1 C# Keywords / Reserved Words  
+abstract as base bool break byte case catch char checked class const 
+continue decimal default delegate do double else enum event explicit extern false 
+finally fixed float for foreach goto if implicit in static int interface 
+internal is lock long namespace new null object operator out out  
+override params private protected public static string struct switch 
+typeof uint ulong unchecked unsafe ushort using using void volatile while 

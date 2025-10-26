@@ -1,0 +1,38 @@
+All of the agile methods that have been proposed share a number of common characteristics: 
+ 
+i. The processes of specification, design and implementation are interleaved. There 
+is no detailed system specification, and design documentation is minimized or 
+generated automatically by the programming environment used to implement the 
+system. The user requirements document is an outline definition of the most 
+important characteristics of the system. 
+
+ii. The system is developed in a series of increments. End-users and other system 
+stakeholders are involved in specifying and evaluating each increment. They may 
+propose changes to the software and new requirements that should be 
+implemented in a later version of the system 
+ 
+iii. Extensive tool support is used to support the development process. Tools that 
+may be used include automated testing tools, tools to support configuration 
+management, and system integration and tools to automate user interface 
+production.
+
+Agile methods are incremental development methods in which the increments are small, and, 
+typically, new releases of the system are created and made available to customers every two or 
+three weeks. They involve customers in the development process to get rapid feedback on 
+changing requirements. They minimize documentation by using informal communications rather 
+than formal meetings with written documents.  
+Agile approaches to software development consider design and implementation to be the central 
+activities in the software process. They incorporate other activities, such as requirements 
+elicitation and testing, into design and implementation. By contrast, a plan-driven approach to 
+software engineering identifies separate stages in the software process with outputs associated 
+with each stage. The outputs from one stage are used as a basis for planning the following process 
+activity.
+
+Figure 3.1: Plan-driven approach and Agile Development (Sommerville,  I.  2021)   
+Figure 3.1 shows the essential distinctions between plan-driven and agile approaches to system 
+specification. In a plan-driven software development process, iteration occurs within activities, 
+with formal documents used to communicate between stages of the process. For example, the 
+requirements will evolve, and, ultimately, a requirements specification will be produced. This is 
+then an input to the design and implementation process. In an agile approach, iteration occurs 
+across activities. Therefore, the requirements and the design are developed together rather than 
+separately.

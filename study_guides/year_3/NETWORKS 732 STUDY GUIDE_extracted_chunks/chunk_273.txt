@@ -1,0 +1,23 @@
+The –e Switch 
+The -e switch displays a summary of all the packets that have been sent over the Network 
+Interface Card (NIC) as of an instance. The Received and Sent columns show packets coming in as 
+well as being sent: 
+ 
+C:\Users\tlammle>netstat -e 
+Interface Statistics 
+
+                            Received                 Sent 
+Bytes                       7426841                  7226953 
+Unicast packets             25784                    35006 
+Non-unicast packets         1115                     12548 
+Discards                    0                        0 
+Errors                      0                        71 
+Unknown protocols           0 
+
+You can use the –e switch to display the following categories of statistics: 
+Bytes The number of bytes transmitted or received since the computer was turned on. This 
+statistic is useful for ﬁnding out if data is being transmitted and received or if the network 
+interface isn’t doing anything at all. 
+Unicast Packets The number of packets sent from or received at this computer. To register in one 
+of these columns, the packet must be addressed directly from one computer to another, and the 
+computer’s address must be in either the source or destination address section of the packet. 

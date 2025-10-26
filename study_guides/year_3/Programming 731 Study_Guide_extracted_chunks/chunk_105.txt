@@ -1,0 +1,38 @@
+Here is a version of the “tick” program that uses a for loop:   
+   
+// Demonstrate the for   loop.  
+class ForTick {   
+public static void main(String args[])   
+   
+{ int n; 
+
+for(n=10; n>0; n--)   
+   
+System.out.println("tick " + n);   
+}   
+}   
+   
+Declaring Loop Control Variables Inside the for Loop    
+Often the variable that controls a for loop is only needed for the purposes of the loop and is not 
+used elsewhere. When this is the case, it is possible to declare the variable inside the initialization 
+portion of the for. For example, here is the preceding program recoded so that the loop control 
+variable  n is declared as an int inside the for:
+   
+// Declare a loop control variable inside the for. 
+class ForTick {   
+
+public static void main(String args[]) { 
+// here, n is declared inside of the for loop 
+
+for(int n=10; n>0; n--) 
+System.out.println("tick " + n);  
+}
+} 
+
+When you declare a variable inside a for loop, there is one important point to remember: the scope 
+of that variable ends when the for statement does. (That is, the scope of the variable is limited to 
+the for loop.) Outside the for loop, the variable will cease to exist. If you need to use the loop control 
+variable elsewhere in your program, you will not be able to declare it inside the for loop. When the 
+loop control variable will not be needed elsewhere, most Java programmers declare it inside the for. 
+For example, here is a simple program that tests for prime numbers. Notice that the loop control 
+variable, i, is declared inside the for since it is not needed elsewhere. 

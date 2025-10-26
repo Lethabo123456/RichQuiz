@@ -1,0 +1,73 @@
+5.3.1 Using Tasks 
+ 
+Queuing a work item to a thread pool can be useful, but it has its shortcomings. There is no built-in way 
+to know when the operation has finished and what the return value is. 
+This is why the .NET Framework introduces the concept of a Task, which is an object that represents 
+some work that should be done. The Task can tell you if the work is completed and if the operation re-
+turns a result, the Task gives you the result. 
+ 
+A task scheduler is responsible for starting the Task and managing it. By default, the Task scheduler uses 
+threads from the thread pool to execute the Task.  
+ 
+Tasks can be used to make your application more responsive. If the thread that manages the user inter-
+face offloads work to another thread from the thread pool, it can keep processing user events and en-
+ability. If a thread receives a web 
+request and it would start a new Task, it would just consume another thread from the thread pool while 
+the original thread waits for results. 
+ 
+Executing a Task on another thread makes sense only if you want to keep the user interface thread free 
+for other work or if you want to parallelize your work on to multiple processors. 
+example 5-8 shows how to start a new Task 
+
+This example creates a new Task and immediately starts it. Calling Wait is equivalent to calling Join on a 
+thread. It waits till the Task is finished before exiting the application. 
+ 
+Next to Task, the .NET Framework also has the Task<T> class that you can use if a Task should return a 
+value. example 5-9 shows how this works. 
+
+using System;
+using System.Threading.Tasks; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        public static void Main() 
+        { 
+            Task t = Task.Run(() => 
+            { 
+                for (int x = 0; x < 100; x++) 
+                { 
+                    Console.Write('*'); 
+                } 
+            }); 
+            t.Wait(); 
+        } 
+    } 
+} 
+using System; 
+using System.Threading.Tasks; 
+namespace Chapter1 
+{ 
+    public static class Program 
+    { 
+        public static void Main() 
+        { 
+            Task<int> t = Task.Run(() => 
+            { 
+                return 42; 
+            }); 
+            Console.WriteLine(t.Result); // Displays 42 
+        } 
+    } 
+} 
+
+Attempting to read the Result property on a Task 
+wait until the Task is finished before continuing. As long as the Task has not finished, it is impossible to 
+give the result. If the Task is not finished, this call will block the current thread. 
+Because of the object-oriented nature of the Task object, one thing you can do is add a continuation 
+task. This means that you want another operation to execute as soon as the Task finishes. 
+The ContinueWith method has a couple of overloads that you can use to configure when the continua-
+tion will run. This way you can add different continuation methods that will run when an exception hap-
+pens, the Task is canceled, or the Task completes successfully.  Next to continuation Tasks, a Task can 
+also have several child Tasks. The parent Task finishes when all the child tasks are ready ,example 5-11 
+shows how to do this. 

@@ -1,0 +1,21 @@
+2.3 Understand Naming and Addressing Services 
+When naming or addressing services, such as DNS and DHCP, fail on a network, nearly all traffic 
+comes to a halt. Therefore, it’s important to understand techniques for keeping these services 
+available. Most organizations rely on more than one DNS server to make sure that requests to 
+resolve host names and IP addresses are always satisfied. At the very least, organizations  
+specify a primary name server and a secondary name server. Primary name servers, which are 
+queried first when a name resolution that is not already cached is requested, are also known 
+as master name servers. Secondary name servers, which can take the place of primary name 
+servers, are also known as slave name servers. 
+ 
+Network administrators who work on large enterprise networks are likely to add more than 
+one slave name server to the DNS architecture. However, a thoughtful administrator will 
+install only as many name servers as needed. Because the slave name servers regularly poll 
+the master name servers to ensure that their DNS zone information is current, running too 
+many slave name servers may add unnecessary traffic and slow performance. Networks can 
+also contain DNS caching servers, which save DNS information locally but do not provide 
+resolution for new requests. If a client can resolve a name locally, it can access the host more 
+quickly and reduce the burden on the master name server. 
+ 
+Figure 2.5 Redundant name servers 
+© Cengage Learning 2023 

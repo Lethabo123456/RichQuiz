@@ -1,0 +1,26 @@
+Notice that the structure of this method is similar to the other insert and update methods. A try and 
+catch is used to handle an error if it occurs, and a value, set to failure initially, is returned. However, 
+because this is a method to retrieve data from the database rather than save it to the database, there 
+are some significant differences. 
+
+▪ Line 2—An integer variable is declared to hold the retrieved id. Its default value is –1. 
+▪ Line 4—An SQL query is written to get the maximum value for the _id field in the contact table. 
+The last contact entered will have the maximum value because the _id field is set to autoincrement. 
+▪ Line 5—A cursor is declared and assigned to hold the results of the execution of the query. A cursor 
+is an object that is used to hold and move through the results of a query. 
+▪ Line 7—The cursor is told to move to the first record in the returned data. 
+▪ Line 8—The maximum ID is retrieved from the record set. Fields in the record set are indexed 
+starting at 0. 
+▪ Line 9—The cursor is closed. Just like with closing the database, it is best to close the cursor as 
+soon as you are done using it. Forgetting to do so can lead to errors during execution. 
+Open the MainActivity code. Navigate to the initSaveButton method. Enter the following code after 
+the line of code that inserts a new contact (not the update): 
+ 
+if (wasSuccessful) { 
+int newId = ds.getLastContactId(); 
+currentContact.setContactID(newId); 
+} 
+ 
+The first line checks if the insertion of the new contact was successful. If it was, the second line uses 
+the newly created retrieval method to get the newly inserted contact’s ID. The second line sets the 
+currentContact object’s ID to the retrieved value. 

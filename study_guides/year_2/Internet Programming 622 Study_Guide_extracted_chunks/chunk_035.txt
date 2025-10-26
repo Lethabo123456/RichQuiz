@@ -1,0 +1,22 @@
+.   
+   
+   
+   
+The created form fields include:   
+• 
+A text input field –– This allows the user to enter a single line of text. You can optionally 
+prefill the field with an initial value using the value attribute (if you don’t want to do this, 
+specify an empty string for the value attribute, or leave the attribute out altogether):   
+   
+              <label for=”textField”>A text input field</label>   
+             <input type=”text” name=”textField” id=”textField” value=”” />   
+   
+• 
+A password field — This works like a text input field, except that the entered text is not 
+displayed. This is, of course, intended for entering sensitive information such as passwords. 
+Again, you can pre-fill the field using the value attribute, though it is not a good idea to do 
+this because the password can then be revealed by viewing the page source in the Web 
+browser:   
+   
+               <label for=”passwordField”>A password field</label>   
+               <input type=”password” name=”pa

@@ -1,0 +1,15 @@
+ing information on “ The Trial. ” Meanwhile, the two echo() examples show how to 
+access elements in the nested associative arrays. As you can see, you use two keys within two 
+sets of square brackets. The first key is the index of an element in the top-level array, and the 
+second key is the index of an element in the nested array. In this example, the first key selects 
+the associative array you want to access, and the second key selects an element within that 
+associative array.  
+  
+5.11 Looping Through Multidimensional Arrays  
+You know how to use foreach to loop through one-dimensional arrays, but how do you loop through 
+multidimensional arrays? Well, because multidimensional arrays are basically arrays nested inside 
+other arrays, you can loop through them using nested loops!  
+  
+The following example uses two nested foreach loops to loop through the $myBooks array. Save it 
+as multidimensional_array_loop.php within your document root folder, then browse to the script’s 
+URL t

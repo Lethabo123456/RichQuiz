@@ -1,0 +1,21 @@
+regate functions and join operations.  
+ 
+ 
+During query optimization, the DBMS must choose what indexes to use, how to perform 
+join operations, which table to use first, and so on. Each DBMS has its own algorithms for 
+determining the most efficient way to access the data. The two most common approaches 
+are rule-based and cost-based optimization.  
+ 
+ 
+A rule-based optimizer uses pre-set rules and points to determine the best approach to 
+execute a query. A cost-based optimizer uses sophisticated algorithms based on statistics 
+about the objects being accessed to determine the best approach to execute a query.  
+ 
+ 
+SQL performance tuning deals with writing queries that make good use of the statistics. In 
+particular, queries should make good use of indexes.  
+ 
+ 
+Query formulation deals with how to translate business questions into specific SQL code 
+to generate the required results. To do this, you must carefully evaluate which columns, 
+tables, and computations are required t

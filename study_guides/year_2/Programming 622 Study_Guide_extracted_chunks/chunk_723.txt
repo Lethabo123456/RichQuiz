@@ -1,0 +1,27 @@
+he number of items in the data set is not equal to 2h -1 for some 
+nonnegative integer h, then we cannot construct a perfectly balanced binary tree. Moreover, perfectly 
+balanced binary trees are a too stringent refinement.  
+  
+Definition: An AVL tree (or height-balanced tree) is a binary search tree such that  
+  
+i. The heights of the left and right subtrees of the root differ by at most 1.  
+ii. The left and right subtrees of the root are AVL trees.  
+  
+Figure 9-13 gives examples of AVL and non-AVL trees.  
+  
+
+355  
+  
+  
+FIGURE 9-13 AVL and non-AVL trees  
+  
+Let x be a node in a binary tree. Let xl denote the height of the left subtree of x, and xh denote the height 
+of the right subtree of x.  
+  
+Proposition: Let T be an AVL tree and x be a node in T. Then |xh - xl| ≤ 1, where |xh - xl| denotes the 
+absolute value of xh - xl.  
+  
+Let x be a node in the AVL tree T.  
+  
+1. If xl > xh, we say that x is left high. In this case, xl = xh + 1.  
+2. If xl = xh, we say that x is equ

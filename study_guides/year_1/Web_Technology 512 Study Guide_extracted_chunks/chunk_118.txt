@@ -1,0 +1,27 @@
+osure and prototypes. Just remember to take care 
+when declaring variables inside of functions - they cannot be seen outside of that 
+function if you declare them with the var keyword. 
+ 
+To end this section, let us have a look at some code that uses functions in a real 
+setting. The HTML in the BODY section below sets up a text box and a button. (We 
+have missed out FORM tags just to keep things simple. But you will learn about 
+JavaScript and FORMS in a later chapter.) We want users to fill in this box. If it is 
+empty when the button is clicked we will display an error message just above the text 
+box. Here is the code: 
+
+ 
+74 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+ 
+Figure 4.8 – Simple Form Validation 
+ 
+The BODY of the HTML has this code: 
+<P ID="message">First Name</P> 
+<INPUT TYPE ="text" SIZE="25" VALUE="" ID="Name"> 
+<INPUT TYPE ="button" value =" SUBMIT " onClick = 
+"validate()"> 
+ 
+The first line is just two paragraph tags with the 
+text "First Name" between them. The P tag also 
+h

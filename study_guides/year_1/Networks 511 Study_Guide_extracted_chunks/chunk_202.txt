@@ -1,0 +1,34 @@
+4.10 Components of an Industrial Control System and SCADA Network 
+ Two methods that an ICS might use to control the physical system: 
+ Open loop system 
+ Makes decisions based on predetermined expectations, events, and past history 
+ Closed loop system 
+ Makes decisions based on real-time data 
+ Requires field devices distributed throughout they physical system to monitor aspects 
+of the system (called a distributed control system or DCS) 
+
+4.10.1 Securing an ICS/SCADA Network 
+ Recommended best practices: 
+ Inventory all connections to your ICS/SCADA network 
+ Segment your ICS/SCADA network from the corporate network 
+ Isolate your ICS/SCADA network by deploying a DMZ between the corporate 
+network and the ICS network 
+ Completely disconnect the ICS/SCADA network from the Internet 
+ Secure or harden the ICS/SCADA network by implementing strict firewall rules, IDS, 
+and physical security controls 
+ For fault tolerance, deploy redundancy as appropriate 
+ Harden the ICS/SCADA network by strictly controlling access to the network with 
+encrypted authentication 
+ Protect the historian 
+ Make sure vendors responsible for supporting hardware and software on your 
+network fully disclose any backdoor entrance into your network
+ If the ICS network provides W-Fi, consider installing Faraday cages around the Wi-Fi 
+hot spots 
+ Keep current all documentation needed for configuration management 
+ Keep well-documented and well-maintained backups of the system and its data 
+ Clearly define risk management practices and establish risk management teams 
+ Implement role-based access control (RBAC) to the system 
+ Asset Management and Business Documents 
+ Asset management documentation 
+ Important when managing large numbers of devices  
+ Essential in an enterprise environment 

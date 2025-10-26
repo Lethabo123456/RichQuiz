@@ -1,0 +1,24 @@
+Case 1:  Suppose that after certain operations, the array containing the queue is as shown in Figure 6-7(a).  
+  
+FIGURE 6-7 Queue before and after the delete operation  
+
+222  
+  
+After the operation deleteQueue();, the resulting array is as shown in Figure 6-7(b).  
+  
+ 
+Case 2:   
+Let us now consider the queue shown in Figure 6-8(a).  
+  
+  
+FIGURE 6-8 Queue before and after the add operation  
+  
+After the operation addQueue(Queue,'Z');, the resulting array is as shown in Figure 6-8(b).  
+  
+The arrays in Figures 6-7(b) and 6-8(b) have identical values for queueFront and queueRear. However, the 
+resulting array in Figure 6-7(b) represents an empty queue, whereas the resulting array in Figure 68(b) 
+represents a full queue. This latest queue design has brought up another problem of distinguishing 
+between an empty and a full queue.  
+  
+This problem has several solutions. One solution is to keep a count. In addition to the member variables 
+queueFront and queueRear, we need another

@@ -1,0 +1,31 @@
+an XHTML page header, the script sets up the 
+DSN, username, and password for connecting to the MySQL database:   
+   
+
+76   
+   
+$dsn = “mysql:dbname=mydatabase“;   
+$username = “root“;   
+$password = “mypass“;   
+   
+Next, the script uses PDO to open the database connection, trapping and displaying any error that 
+occurs:   
+   
+try {   
+          $conn = new PDO( $dsn, $username, $password );   
+         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION ); } catch 
+( PDOException $e ) {   
+         echo “Connection failed: “ . $e->getMessage();   
+}   
+Now the SQL query is created and stored in a string variable, $sql. This query simply extracts all the 
+data from the fruit table:   
+   
+$sql = “SELECT * FROM fruit“;   
+   
+The main part of the script runs the query, and loops through the returned rows of data, displaying 
+the contents of each row in an HTML li element:   
+   
+echo “<ul>“;   
+try {   
+      $rows = $conn->query( $sql );       foreach 
+( $rows as $row )

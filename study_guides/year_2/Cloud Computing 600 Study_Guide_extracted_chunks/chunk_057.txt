@@ -1,0 +1,51 @@
+Application virtualization 
+In this type of virtualization, the single application installed on the central server is virtualized, and the 
+various virtualized components of the application will be given to the users requesting the services.  
+
+Hardware virtualization 
+This is the installation of virtualization software directly on the physical host hardware so as to bypass 
+the host operating system, which is presumably engaged with operating system-based virtualization 
+Allowing the virtual servers to interact with hardware without requiring intermediary action from the 
+host operating system generally makes hardware-based virtualization more efficient. 
+One of the main issues of hardware-based virtualization concerns compatibility with hardware 
+devices. The virtualization layer is designed to communicate directly with the host hardware, meaning 
+all of the associated device drivers and support software need to be compatible with the hypervisor. 
+Hardware device drivers may not be as available to hypervisor platforms as they are to operating 
+systems. Host management and administration features may further not include the range of 
+advanced functions that are common to operating systems. 
+ 
+3.6 Multitenant Technology  
+Multitenancy refers to a software architecture design in which a single instance of a software 
+application serves multiple tenants (users). Multitenant application enables multiple users (tenants) 
+to access the same application simultaneously.  It allows multiple users (tenants) to work in a software 
+environment all at the same time, each with their own separate user instances, resources and services. 
+Multitenant application ensures that tenants do not have access to data and configuration information 
+that is not their own. Tenants can individually customize features of the application such as: User 
+interface, access control, data security, application upgrade, scalability, etc.  
+SaaS-based software applications delivered over the internet is a common example of multitenant 
+architecture where a single application is accessed by many users globally. Multitenant application 
+architecture is often significantly more complex than that of single-tenant applications because they 
+need to support the sharing of various artefacts.   
+
+Advantages of multitenancy  
+ Helps to cut cost of investment  
+ It is relatively easy to add new tenants (customers) 
+ It is convenient to maintain same application, thereby maximising resource usage  
+ Holds multiple tenants all at the same time 
+
+Disadvantages of multitenancy 
+ Security 
+ Limited customization 
+ Rigid service levels 
+ Potential cost of re-architecture 
+ Increased operational and infrastructural costs and people’s skills 
+ Service delivery  
+ 
+Fig 3.2: A multitenant application serving multiple cloud service consumers simultaneously. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

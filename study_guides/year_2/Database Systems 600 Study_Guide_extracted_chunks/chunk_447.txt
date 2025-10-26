@@ -1,0 +1,15 @@
+eved data to HTML format 
+and passes the data to the web server, which sends the HTML-formatted page to the client.  
+The main disadvantage of using CGI scripts is that the script file is an external program that 
+executes separately for each user request and therefore causes a resource bottleneck. Performance 
+also could be degraded by using an interpreted language or by writing the script inefficiently 
+An application programming interface (API) is a newer web server interface standard that is 
+more efficient and faster than a CGI script. APIs are more efficient because they are implemented 
+as shared code or as dynamic-link libraries (DLLs). That means the API is treated as part of the 
+web server program that is dynamically invoked when needed. 
+
+ 
+181 
+APIs are faster than CGI scripts because the code resides in memory, so there is no need to run an 
+external program for each request. Instead, the same API serves all requests. Another advantage is 
+that an API can use a shared con

@@ -1,0 +1,29 @@
+(warm during the day, cold at night), the temperature 
+ranges are quite different for each one. 
+For heat4.py, several things happen: 
+i. We import plotly’s tools module to create a figure with subplots. 
+ii. We add zmin and zmax values to each trace. 
+Looking at the raw data, the lowest temperature recorded in Sitka, Alaska was 3.7°C, and the highest 
+recorded temperature in Yuma, Arizona was 40.6°C (that’s 105° Fahrenheit!). 
+Using this range we set the min to 5 and the max to 40. 
+iii. In the subplot section we set shared_yaxes = True. This makes the hour markers appear on the left 
+side only, and not beside each plot. 
+iv. Lastly, instead of combining data and layout into a Figure as we’ve done in the past, we access 
+the layout directly using fig[‘layout’].update(). 
+ 
+
+ 
+ 
+ 
+ 
+heat4.py 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+from plotly import tools 
+ 
+import pandas as pd 
+ 
+df1 = pd.read_csv('../data/2010SitkaAK.csv') 
+ 
+df2 = pd.read_csv('../data/2010S

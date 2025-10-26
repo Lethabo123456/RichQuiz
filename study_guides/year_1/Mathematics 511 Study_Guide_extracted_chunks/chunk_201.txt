@@ -1,0 +1,30 @@
+3.6.4 Properties of Relations 
+There are several properties that are used to classify relations on a set. We 
+will introduce the most important of these here. 
+In some relations an element is always related to itself. For instance, let R be 
+the relation on the set of all people consisting of pairs (x, y) where x and y 
+have the same mother and the same father. Then xRx for every person x. 
+ 
+Definition 49 
+A relation R on a set A is called reflexive if (a, a) ∈ R for every element a ∈ 
+A. 
+ 
+Using quantifiers we see that the relation R on the set A is reflexive if  
+∀a((a, a) ∈ R), where the universe of discourse is the set of all elements in 
+A.
+
+Definition 50 
+A relation R on a set A is called symmetric if (b, a) ∈ R whenever (a, b) ∈ R, 
+for all a, b ∈ A. A relation R on a set A such that for all a, b ∈ A, if (a, b) ∈ R 
+and (b, a) ∈ R, then a = b is called antisymmetric. 
+
+Worked Example 
+Let A be the set {1, 2, 3, 4}. Which ordered pairs are in the relation  
+R = {(a, b) | a divides b}? 
+Solution: 
+ 
+Because (a, b) is in R if and only if a and b are positive integers not 
+exceeding 4 such that a divides b, we see that 
+R = {(1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 4), (3, 3), (4, 4)}. 
+The pairs in this relation are displayed both graphically and in tabular form 
+in the diagram below. 

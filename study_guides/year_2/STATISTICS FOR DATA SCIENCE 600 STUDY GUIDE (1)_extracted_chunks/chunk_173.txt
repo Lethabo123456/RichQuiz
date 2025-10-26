@@ -1,0 +1,14 @@
+s an estimate of a population parameter based on sample data. We use 
+point estimates to estimate population means, variances, and other statistics. To obtain these 
+estimates, we simply apply the function that we wish to measure for our population to a 
+sample of the data. For example, suppose there is a company of 9,000 employees and we are 
+interested in ascertaining the average length of breaks taken by employees in a single day. As 
+we probably cannot ask every single person, we will take a sample of the 9,000 people and 
+take a mean of the sample. This sample mean will be our point estimate. 
+The following code is broken into three parts: 
+We will use the probability distribution, known as the Poisson distribution, to randomly 
+generate 9,000 answers to the question: for how many minutes in a day do you usually take 
+breaks? This will represent our "population." Remember, from Chapter 6, Advanced 
+ 
+LEARNING OUTCOMES 
+After reading this Section of the guide, the learner should be

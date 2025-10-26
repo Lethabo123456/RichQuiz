@@ -1,0 +1,43 @@
+bes various 
+parts of the function larger. 
+ 
+Suppose that num, num1, and num2 are double variables. Also suppose that num1 = 
+45.75 and num2 = 35.50. Figure below shows various ways the function larger can be 
+called. 
+ 
+ 
+ 
+ 
+ 
+In this example, we modify the main program by writing a function that computes and 
+returns the desired number of a Fibonacci sequence. 
+
+97 | P a g e  
+ 
+Given the first number, the second number, and the position of the desired Fibonacci 
+number, the following function returns the Fibonacci number: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+98 | P a g e  
+ 
+ 
+ 
+
+99 | P a g e  
+ 
+ 
+Function Prototype 
+In reality, C++ programmers customarily place the function main before all other user-
+defined functions. However, this organization could produce a compilation error 
+because functions are compiled in the order in which they appear in the program. For 
+example, if the function main is placed before the function larger, the identifier larger 
+will be undefined when the function mai

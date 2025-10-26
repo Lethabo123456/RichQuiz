@@ -1,0 +1,22 @@
+1.2.7 Type Conversion Methods 
+ 
+Because C# is statically-typed at compile time, after a variable is declared, it can't be declared 
+again or assigned a value of another type unless that type is implicitly convertible to the 
+variable's type.  In C#, you can perform the following kinds of conversions: 
+ 
+• Implicit conversions: No special syntax is required because the conversion always 
+succeeds, and no data is lost. Examples include conversions from smaller to larger 
+integral types, and conversions from derived classes to base classes. 
+• Explicit conversions (casts): Explicit conversions require a cast expression. Casting is 
+required when information might be lost in the conversion, or when the conversion 
+might not succeed for other reasons. Typical examples include numeric conversion to 
+a type that has less precision or a smaller range, and conversion of a base-class 
+instance to a derived class. 
+• User-defined conversions: User-defined conversions use special methods that you 
+can define to enable explicit and implicit conversions between custom types that don't 
+have a base class–derived class relationship. For more information, see User-defined 
+conversion operators. 
+• Conversions with helper classes: To convert between non-compatible types, such as 
+integers and System.DateTime objects, or hexadecimal strings and byte arrays, you 
+can use the System.BitConverter class, the System.Convert class, 
+and the Parse methods of the built-in numeric types, such as Int32.Parse. 

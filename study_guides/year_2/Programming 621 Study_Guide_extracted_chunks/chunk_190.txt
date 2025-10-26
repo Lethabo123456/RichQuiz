@@ -1,0 +1,19 @@
+ll write seven functions—setTime, 
+getTime, printTime, incrementSeconds, incrementMinutes, incrementHours, and 
+equalTime. 
+ 
+
+173 | P a g e  
+ 
+Some members of the class clockType will be private; others will be public. Deciding 
+which member to make public and which to make private depends on the nature of the 
+member. The general rule is that any member that needs to be directly accessed 
+outside of the class is declared public; any member that should not be accessed 
+directly by the user should be declared private. For example, the user should be able 
+to set the time and print the time. Therefore, the members that set the time and print 
+the time should be declared public. 
+ 
+Similarly, the members to increment the time and compare the time for equality should 
+be declared public. On the other hand, to prevent the direct manipulation of the 
+member variables hr, min, and sec, we will declare them private. Furthermore, note 
+that if the user has direct access to the member variable

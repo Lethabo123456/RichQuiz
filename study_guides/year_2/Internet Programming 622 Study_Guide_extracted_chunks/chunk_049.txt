@@ -1,0 +1,13 @@
+s.</p>   
+                    <form action=”process_registration.php” method=”post”>   
+                    <div style=”width: 30em;”>   
+                              <label for=”firstName”>First name</label>   
+                              <input type=”text” name=”firstName” id=”firstName” value=”” />   
+                              <label for=”lastName”>Last name</label>   
+                              <input type=”text” name=”lastName” id=”lastName” value=”” />   
+                              <label for=”password1”>Choose a password</label>   
+                              <input type=”password” name=”password1” id=”password1” value=”” />   
+                              <label for=”password2”>Retype password</label>   
+                              <input type=”password” name=”password2” id=”password2” value=”” />   
+                              <label for=”genderMale”>Are you male...</label>   
+                              <input type=”radio” name=”gender” id=”genderMale” v

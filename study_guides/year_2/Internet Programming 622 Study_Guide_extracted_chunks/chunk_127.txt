@@ -1,0 +1,24 @@
+handle );   
+   
+To specify how the offset is calculated, you can add a third optional argument containing one of the 
+following constants:   
+   
+• 
+SEEK_SET — Sets the pointer to the beginning of the file plus the specified offset (the default 
+setting)   
+• 
+SEEK_CUR — Sets the pointer to the current position plus the specified offset   
+• 
+SEEK_END — Sets the pointer to the end of the file plus the specified offset (use with a 
+negative offset)   
+   
+fseek() returns 0 if the pointer was successfully positioned, or - 1 if there was a problem. You can  
+no t use this function with files on remote hosts opened via HTTP or FTP (for example, fopen( “ 
+http://www.example.com/ ” )).If you want to move the pointer back to the start of the file (a 
+common occurrence), a handy shortcut is the rewind() function. The following two lines of code both 
+do the same thing:   
+   
+fseek( $handle, 0 );   
+rewind( $handle );   
+   
+The ftell() function takes a file handle and returns the current off

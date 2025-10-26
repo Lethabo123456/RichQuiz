@@ -1,0 +1,18 @@
+tree of 80, we change its balance factor to 1 (not shown in 
+the figure). Now we go back to node 70. Prior to insertion, bf(70) was 1. Because after insertion the height 
+of the right subtree of 70 is increased, we see that the subtree with root node 70 is not an AVL tree. In 
+this case, we reconstruct this subtree (this is called rotating the tree at root node 70). Therefore, we obtain 
+the tree shown in Figure 9-14(c). The binary tree of Figure 9-14 is an AVL tree.  
+  
+Now consider the AVL tree of Figure 9-15(a). Let us insert 75 into the AVL tree of Figure 9-15(a).  
+  
+
+357  
+  
+  
+FIGURE 9-15 AVL tree before and after inserting 75  
+  
+As before, we search the tree starting at the root node. The dotted arrows show the path traversed. After 
+inserting 75, the resulting tree is shown in Figure 9-15(b). After inserting 75, we backtrack. First we go to 
+node 80 and change its balance factor to -1. The subtree with root node 80 is an AVL tree. Now we go 
+back to 70. Clearly, the subtr

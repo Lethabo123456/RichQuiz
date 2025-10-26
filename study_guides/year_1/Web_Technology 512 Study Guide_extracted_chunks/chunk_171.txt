@@ -1,0 +1,35 @@
+mber. 
+max() 
+Returns the largest of zero or more numbers. 
+min() 
+Returns the smallest of zero or more numbers. 
+pow() 
+Returns base to the exponent power, that is, base exponent. 
+random() 
+Returns a pseudo-random number between 0 and 1. 
+round() 
+Returns the value of a number rounded to the nearest integer. 
+sin() 
+Returns the sine of a number. 
+sqrt() 
+Returns the square root of a number. 
+tan() 
+Returns the tangent of a number. 
+toSource() 
+Returns the string "Math". 
+Table 6.14 – The Math Object Methods 
+ 
+6.2.7 Regular Expressions and RegExp Object 
+A regular expression is an object that describes a pattern of characters.The JavaScript 
+
+ 
+107 
+ 
+SIX | JAVASCRIPT OBJECTS 
+RegExp class represents regular expressions, and both String and RegExp define 
+methods that use regular expressions to perform powerful pattern-matching and 
+search-and-replace functions on text. 
+ 
+Syntax: 
+A regular expression could be defined with the RegExp( ) constructor like this: 
+var pattern = new RegE

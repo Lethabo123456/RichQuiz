@@ -1,0 +1,27 @@
+Switching Map Type 
+The map is almost complete. The final touch is to add RadioButtons that allow the user to select the 
+type of map to display. Switch to activity_contact_map.xml and change to Design view. Perform the 
+following steps: 
+
+1. Drag a RadioGroup from the Buttons folder of the Palette to the bottom right of the 
+mapFragment. Constrain its left side to the left side of the mapFragment with a margin of 8dp. 
+Constrain its top to the top of the mapFragment, also with a margin of 8dp. Give it an id of 
+radioGroupMapType. 
+2. Drag two RadioButtons 
+from the same folder into the RadioGroup. (The easiest way is to drag to 
+the Component Tree.) Give them ids and text of radioButtonNormal, 
+Normal and radioButtonSatellite, Satellite, respectively. 
+3. Add a method to ContactMapActivity.java to change the map type when the RadioButtons are 
+clicked. Refer to the code in Listing  7.16.  Remember to call  initMapTypeButtons() in the 
+onCreate method. 
+4. Add the following two lines of code to the onMapReady method right after you set the map type 
+to normal. This makes sure that the Normal RadioButton is checked when the map is displayed. 
+RadioButton rbNormal = findViewById(R.id.radioButtonNormal); 
+rbNormal.setChecked(true); 
+
+Finish the code by making the navigation buttons work if you haven’t 
+already. Copy the code like you did for the Settings and List Activities. Be 
+sure to disable the Maps button and call the initialization methods in the 
+onCreate method. Test the code. When testing the app, you should see a 
+display similar to Figure 7.9. Tap the marker to display the contact 
+information. 

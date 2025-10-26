@@ -1,0 +1,42 @@
+insertion, the subtree grew in  
+//height switch 
+(root->bfactor)  
+{ case -1: root-
+>bfacto
+r = 0; 
+isTaller 
+= false; 
+break; 
+case 0: 
+
+365  
+  
+root-
+>bfacto
+r = 1; 
+isTaller 
+= true; 
+break; 
+case 1:  
+balanceFromRight(root); isTaller 
+= false;  
+}//end switch  
+}//end else  
+}//insertIntoAVL  
+  
+Next, we illustrate the insertIntoAVL function and build an AVL tree from scratch. Initially the tree is 
+empty. Each figure shows the item to be inserted as well as the balance factor of each node. An equal 
+sign, =, on the top of a node indicates that the balance factor of this node is 0, the less-than sign, <, 
+indicates that the balance factor of this node is –1, and the greater-than sign, >, indicates that the balance 
+factor of this node is 1.  
+  
+Figure 9-23 shows how items are inserted into an initially empty AVL tree.  
+  
+ 
+
+366  
+  
+  
+FIGURE 9-23 Item insertion into an initially empty AVL tree  
+  
+First, we insert 40; see Figure 9-23(a). Next, we insert 30 into the AVL tre

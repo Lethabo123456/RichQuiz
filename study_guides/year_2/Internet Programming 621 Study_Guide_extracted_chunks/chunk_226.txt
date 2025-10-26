@@ -1,0 +1,60 @@
+nachiketh 
+c) nachiketh@ 
+d) example.com 
+ 
+Answer: d 
+ 
+Topic: 5 
+21. Which one of the following is the right way of defining a function in PHP? 
+a) function { function body } 
+b) data type functionName(parameters) { function body } 
+c) functionName(parameters) { function body } 
+d) function fumctionName(parameters) { function body } 
+ 
+Answer: d 
+ 
+22. Type Hinting was introduced in which version of PHP? 
+a) PHP 4 
+b) PHP 5 
+c) PHP 5.3 
+d) PHP 6 
+ 
+Answer: b 
+ 
+23. What will happen in this function call? 
+<?php 
+function calc($price, $tax)  
+{ 
+$total = $price + $tax; 
+} 
+$pricetag = 15; 
+
+$taxtag = 3; 
+calc($pricetag, $taxtag); 
+ 
+?> 
+a) Call By Value 
+b) Call By Reference 
+c) Default Argument Value 
+d) Type Hinting 
+ 
+Answer: a 
+ 
+24. What will be the output of the following PHP code? 
+<?php 
+function calc($price, $tax="") 
+{ 
+$total = $price + ($price * $tax); 
+echo "$total";  
+} 
+calc(42); 
+ 
+?> 
+a) Error 
+b) 0 
+c) 42 
+d) 84 
+ 
+Answer: c 
+ 
+25. Which of the following are valid f

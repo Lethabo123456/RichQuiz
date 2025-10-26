@@ -1,0 +1,20 @@
+itional expressions. 
+Index Selectivity 
+Indexes are the most important technique used in SQL performance optimization. The key is to 
+know when an index is used. As a rule, indexes are likely to be used: 
+ 
+When an indexed column appears by itself in the search criteria of a WHERE or HAVING 
+clause 
+ 
+When an indexed column appears by itself in a GROUP BY or ORDER BY clause  
+ 
+When a MAX or MIN function is applied to an indexed column  
+ 
+When the data sparsity on the indexed column is high 
+Indexes are very useful when you want to select a small subset of rows from a large table based on 
+a given condition. If an index exists for the column used in the selection, the DBMS may choose to 
+use it. The objective is to create indexes with high selectivity. Index selectivity is a measure of the 
+likelihood that an index will be used in query processing. Here are some general guidelines for 
+creating and using indexes: 
+ 
+Create indexes for each single attribute used in a WHERE, HAVIN

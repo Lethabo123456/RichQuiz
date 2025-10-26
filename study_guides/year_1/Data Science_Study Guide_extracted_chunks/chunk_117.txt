@@ -1,0 +1,26 @@
+Some examples of independent events are as follows: 
+• It was raining in San Francisco, and a puppy was born in India 
+• Flip a coin and get heads and flip another coin and get tails 
+ 
+A bit deeper 
+Without getting too deep into the machine learning terminology, this test is what is known as a binary 
+classifier, which means that it is trying to predict from only two options: have cancer or no cancer. 
+When we are dealing with binary classifiers, we can draw what are called confusion matrices, which 
+are 2 x 2 matrices that house all the four possible outcomes of our experiment. 
+ 
+Let's try some different numbers. Let's say 165 people walked in for the study. So, our n (sample size) 
+is 165 people. All 165 people are given the test and asked if they have cancer (provided through 
+various other means). The following confusion matrix shows us the results of this experiment: 
+
+
+The matrix shows that 50 people were predicted to have no cancer and did not have it, 100 people 
+were predicted to have cancer and actually did have it, and so on. We have the following four classes, 
+again, all with different names: 
+• The true positives are the tests correctly predicting positive (cancer) == 100 
+• The true negatives are the tests correctly predicting negative (no cancer) == 50 
+• The false positives are the tests incorrectly predicting positive (cancer) == 10 
+• The false negatives are the tests incorrectly predicting negative (no cancer) == 5 
+ 
+The first two classes indicate where the test was correct or true. The last two classes indicate where 
+the test was incorrect or false. False positives are sometimes called Type I error whereas false 
+negatives are called a Type II error. 

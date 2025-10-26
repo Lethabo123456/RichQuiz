@@ -1,0 +1,28 @@
+0 | P a g e  
+ 
+ 
+ 
+ 
+OVERLOADING 
+
+241 | P a g e  
+ 
+ 
+Recall that the only built-in operations on classes are the assignment operator and the 
+member selection operator. Therefore, other operators cannot be directly applied to 
+class objects by default. However, C++ allows the programmer to extend the 
+definitions of operators such as relational operators, arithmetic operators, the insertion 
+operator for data output, and the extraction operator for data input—so they can be 
+applied to classes. In C++ terminology, this is called operator overloading.   
+ 
+ 
+ 
+ 
+ 
+OPERATOR OVERLOADING 
+ 
+Recall how the arithmetic operator / works. If both operands of / are integers, the result 
+is an integer; otherwise, the result is a floating-point number. This means that the / 
+operator has one definition when both operands are integers and another when an 
+operand is a floating-point number. Which definition is used depends on the data types 
+of the operand it is used with. Similarly, the stream

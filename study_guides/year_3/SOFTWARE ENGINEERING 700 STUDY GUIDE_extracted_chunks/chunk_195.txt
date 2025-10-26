@@ -1,0 +1,40 @@
+Software inspection has three advantages over testing: 
+
+i. During testing, errors can mask (hide) other errors. When an error leads to 
+unexpected outputs, you can never be sure if later output anomalies are due to a 
+new error or are side effects of the original error. Because inspection doesn’t 
+involve executing the system, you don’t have to worry about interactions between 
+errors. Consequently, a single inspection session can discover many errors in a 
+system.  
+ 
+ii. Incomplete versions of a system can be inspected without additional costs. If a 
+program is incomplete, then you need to develop specialized test harnesses to test 
+the parts that are available. This obviously adds to the system development costs. 
+ 
+iii. As well as searching for program defects, an inspection can also consider broader 
+quality attributes of a program, such as compliance with standards, portability, and 
+maintainability. You can look for inefficiencies, inappropriate algorithms, and poor 
+programming style that could make the system difficult to maintain and update. 
+
+6.3 Development Testing  
+
+Development testing includes all testing activities that are carried out by the team developing the 
+system. The tester of the software is usually the programmer who developed that software. Some 
+development processes use programmer/tester pairs where each programmer has an associated 
+tester who develops tests and assists with the testing process.  
+For critical systems, a more formal process may be used, with a separate testing group within the 
+development team. This group is responsible for developing tests and maintaining detailed 
+records of test results. 
+There are three stages of development testing: 
+ 
+• Unit testing, where individual program units or object classes are tested. Unit testing 
+should focus on testing the functionality of objects or methods. 
+• Component testing, where several individual units are integrated to create com-posite 
+components. Component testing should focus on testing the component interfaces that 
+provide access to the component functions. 
+• System testing, where some or all of the components in a system are integrated and the 
+system is tested as a whole. System testing should focus on testing com-ponent 
+interactions. 
+ 
+Development testing is primarily a defect testing process, where the aim of testing is to 
+discover bugs in the software. 

@@ -1,0 +1,46 @@
+Option             Description 
+-a                 Displays all connections and listening ports. 
+-b                 Displays the executable involved in creating each connection or listening port. 
+                   In some cases, well-known executables host multiple independent 
+                   components, and in these cases the sequence of components involved in 
+                   creating the connection or listening port is displayed. Note that this option 
+                   can be time consuming and will fail unless you have suﬃcient permissions. 
+-e                 Displays Ethernet statistics. This may be combined with the -s 
+                   option. 
+-f                 Displays fully qualiﬁed domain names (FQDNs) for foreign addresses. 
+-n                 Displays addresses and port numbers in numerical form. 
+-o                 Displays the owning process ID associated with each connection. 
+-p proto 
+Shows connections for the protocol speciﬁed by proto; proto may be TCP, 
+UDP, TCPv6, or UDPv6. If used with the -s option to display per-protocol 
+statistics, proto may be IP, IPv6, ICMP, ICMPv6, TCP, TCPv6, UDP, or UDPv6. 
+-r 
+Displays the routing table. 
+-s 
+Displays per-protocol statistics. By default, statistics are shown for IP, IPv6, 
+ICMP, ICMPv6, TCP, TCPv6, UDP, and UDPv6; the -p option may be used to 
+specify a subset of the default. 
+-t 
+Displays the current connection oﬄoad state. Redisplays selected statistics, 
+pausing interval seconds between each display. Press Ctrl+C to stop 
+redisplaying statistics. If -t is omitted, netstat will print the current 
+conﬁguration information once. 
+TABLE 5.7 netstat options 
+Simply type netstat followed by a space and then the particular switch you want to use. 
+Some switches have options, but no matter what, the syntax is basically the same. 
+ 
+The –a Switch 
+When you use the –a switch, the netstat utility displays all TCP/IP connections and all UDP 
+connections. Figure 5.29 shows sample output produced by the netstat –a command. 
+ 
+Figure 5.29: Sample output of the netstat –a command (Lammle, 2022) 
+ 
+The last two entries in Figure 5.29 show that the protocol is UDP and give the source-port 
+nicknames nbname and nbdatagram. These are the well-known port numbers of 137 and 138, 
+respectively. These port numbers are commonly seen on networks that broadcast the NetBIOS 
+name of a workstation on the TCP/IP network. You can tell that this is a broadcast because the 
+destination address is listed as *:* (meaning “any address, any port”). 
+The State column in Figure 5.29 has no entry for the UDP rows because UDP is not a connection- 
+oriented protocol and, therefore, has no connection state. The most common use for the –a 
+switch is to check the status of a TCP/IP connection that appears to be hung. You can determine 
+if the connection is simply busy or is actually hung and no longer responding. 

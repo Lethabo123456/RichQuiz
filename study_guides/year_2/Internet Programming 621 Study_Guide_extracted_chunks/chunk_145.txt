@@ -1,0 +1,27 @@
+) , but they preserve 
+the association between each element ’ s key and its value:  
+  
+$myBook = array( “title” = > “Bleak House”,  
+“author” = > “Dickens”,  
+“year” = > 1853 );  
+
+71  
+// Displays “Array ( [title] = > Bleak House [author] = > Dickens [year] = > 1853 )” 
+asort( $myBook );  
+print_r( $myBook );  
+  
+// Displays “Array ( [year] = > 1853 [author] = > Dickens [title] = > Bleak House )” 
+arsort( $myBook );  
+print_r( $myBook );  
+  
+5.15 Sorting associative Arrays With ksort() And krsort() ksort() and krsort() behave in much the 
+same way as asort() and arsort() , in that they sort arrays in ascending and descending order, 
+respectively, preserving the associations between keys and values. The only difference is that, 
+whereas asort() and arsort() sort elements by value, ksort() and krsort() sort the elements by their 
+keys:  
+  
+$myBook = array( “title” = > “Bleak House”,  
+“author” = > “Dickens”, 
+“year” = > 1853 );  
+  
+// Displays “Array ( [author] = > Dickens [title]

@@ -1,0 +1,23 @@
+Using Files 
+The MyContactList does not really have a need to store data in a file. Accessing and storing contacts 
+in a database is a better solution versus accessing and storing them in a file. One possible use for a file 
+in the app could be to export the contacts in the database for export to another app or for backup. 
+This is beyond the scope of the book at this point. However, we will discuss some of the options. 
+First, an app can store data in the standard file storage on the device. This is considered external 
+storage, and data stored here is accessible to other apps. The other option is internal, which stores 
+the data in the app’s private storage area. Files stored here are only accessible by the app and will be 
+deleted if the app is ever uninstalled. Whichever storage location is selected, Android encourages 
+developers to use standard folders such as Documents or Pictures provided by the operating system, 
+so that the OS knows how to treat those files. 
+
+The process of storing data in a file starts with converting the data to text (if it is not already). The next 
+step is to get a reference to the storage location. For example: 
+File filePath = new File (Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), “contacts”); 
+ 
+This path is a document folder external to the app with the name contacts. The next step is to create 
+a folder using this path and then create a new file in that folder. The final step is to use 
+FileOutputStream and OutputStreamWriter to write the text to the file. Reading the file is essentially 
+the same process, except the data would be read in from an existing file using FileInputStream and 
+InputStreamReader. 
+For more details on file storage, you can reference the Android developer’s site, which provides plenty 
+of information on how to do this.

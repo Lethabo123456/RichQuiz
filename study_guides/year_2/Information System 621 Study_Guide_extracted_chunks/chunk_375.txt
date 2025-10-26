@@ -1,0 +1,16 @@
+that the firm wants to store information about. For 
+example, there might be a relationship between customers and suppliers – some of them might 
+play golf together. However, this is unlikely to be the sort of thing the firm will want to store. 
+The relationship between customers and orders is definitely something that the firm will want 
+to store, so that they can see which customers have placed which orders. Like identifying 
+entities, identifying relationships between them is not trivial and may take several attempts to 
+get right. 
+ 
+Once you identify a relationship, there are three things you need to document about it: its 
+degree, cardinality and optionality. 
+ 
+The degree of a relationship is simply how many entities are involved, and this figure is often 
+two. When the degree is two, it is known as a ‘binary relationship’. 
+ 
+The cardinality of a relationship is whether each entity in the relationship is related to one or 
+more than one of the other entities. For example, going

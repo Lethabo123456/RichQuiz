@@ -1,0 +1,23 @@
+rocess a single element.  
+2. Process the entire array.  
+3. Process a particular row of the array, called row processing.  
+4. Process a particular column of the array, called column processing. 
+ 
+Processing a single element is like processing a single variable. Initializing and printing 
+the array are examples of processing the entire two-dimensional array. Finding the 
+largest element in a row (column) or finding the sum of a row (column) are examples 
+of row (column) processing. 
+const int NUMBER_OF_ROWS = 7;                     //This can be set to any number.  
+const int NUMBER_OF_COLUMNS = 6;         //This can be set to any number. 
+ 
+int matrix[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS];  
+int row;  
+int col; 
+int sum; 
+int largest;  
+int temp; 
+figure below shows the array matrix 
+ 
+All of the components of a two-dimensional array, whether rows or columns, are 
+identical in type. If a row is looked at by itself, it can be seen to be just a one-
+dimensional array. A column seen by it

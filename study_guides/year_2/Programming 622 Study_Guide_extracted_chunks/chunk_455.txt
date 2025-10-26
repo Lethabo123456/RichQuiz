@@ -1,0 +1,73 @@
+of the queue, and so we access the pointer queueFront.  
+  
+The definitions of the functions to implement these operations are as follows:  
+  
+template <class Type>  
+void linkedQueueType<Type>::addQueue(const Type& newElement)  
+{  
+nodeType<Type> *newNode;  
+newNode = new nodeType<Type>;    
+ 
+//create the node  
+newNode->info = newElement;   
+  
+ 
+//store the info  
+newNode->link = NULL;   
+  
+  
+ 
+//initialize the link field to 
+NULL  
+
+231  
+  
+if (queueFront == NULL)   
+  
+  
+ 
+//if initially the queue is 
+empty  
+{  
+queueFront = newNode;  
+queueRear = newNode;  
+}  
+else     
+  
+  
+  
+  
+{  
+queueRear->link = newNode;  
+queueRear = queueRear->link;  
+}  
+ 
+//add newNode at the end  
+}  
+  
+  
+  
+  
+  
+  
+ 
+template <class Type>  
+Type linkedQueueType<Type>::front() const  
+{  
+assert(queueFront != NULL); 
+return queueFront->info;  
+ 
+//end addQueue  
+}   
+  
+  
+  
+  
+  
+  
+ 
+template <class Type>  
+Type linkedQueueType<Type>::back() const  
+{  
+assert(queueRear!= NULL); 
+retu

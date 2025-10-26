@@ -1,0 +1,16 @@
+tional 
+sequence:  
+1. Perform operations within parentheses.  
+2. Perform power operations.  
+3. Perform multiplications and divisions.  
+4. Perform additions and subtractions.  
+Date Arithmetic 
+Date data in the column list can be interesting when used in computed fields. Internally, the DBMS 
+stores a date value in a numeric format. Although the details can be complicated, essentially, a date 
+is stored as a day number, that is, the number of days that have passed since some defined point in 
+history. Exactly what that point in history is varies from one DBMS to another. However, because 
+the values are stored as a number of days, it is possible to perform date arithmetic in a query. For 
+example, if today’s date in some DBMS is the day number “250,000,” then tomorrow will be 
+“250,001,” and yesterday was “249,999.” Adding or subtracting a number from a date that is stored 
+in a date data type returns the date that is the specified number of days from the given date. 
+Subtracting on

@@ -1,0 +1,15 @@
+ariant data, you must create a new entity in a 1:M relationship with the original entity. 
+This new entity will contain the new value, the date of the change, and any other attribute that is 
+pertinent to the event being modelled.  
+Design Case 3: Fan Traps 
+Creating a data model requires proper identification of the data relationships among entities. 
+However, due to miscommunication or incomplete understanding of the business rules or processes, 
+
+ 
+69 
+it is not uncommon to misidentify relationships among entities. Under those circumstances, the 
+ERD may contain a design trap. A design trap occurs when a relationship is improperly or 
+incompletely identified and is therefore represented in a way that is not consistent with the real 
+world. The most common design trap is known as a fan trap, which occurs when you have one 
+entity in two 1:M relationships to other entities, thus producing an association among the other 
+entities that is not expressed in the model. For example, assume

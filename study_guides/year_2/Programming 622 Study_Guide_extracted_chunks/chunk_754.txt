@@ -1,0 +1,31 @@
+rder 5  
+  
+Note that the 5-way search tree in Figure 9-24 is not a B-tree of order 5.  
+  
+The basic operations performed on a B-tree are search the tree, insert an item in the tree, delete an item 
+from the tree, and traverse the tree. In the remainder of this section, we discuss how to implement some 
+of these operations.  
+  
+Before discussing these properties and describing the structure of a node and the class to implement the 
+properties of a B-tree, we note the following: Until now, we have passed only data types as parameters 
+to templates. Just like types (data types), constant expressions can also be passed as parameters to 
+templates. For example, consider the following class template:  
+  
+template<class elemType, int size>  
+class listType  
+{  
+public:  
+.  
+
+371  
+  
+.  
+.  
+private: int 
+maxSize; int 
+length;  
+elemType listElem[size];  
+};  
+  
+This class template contains an array data member. The array element type and the size of the array are 
+passed as parameters

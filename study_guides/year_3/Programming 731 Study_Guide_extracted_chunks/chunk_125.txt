@@ -1,0 +1,26 @@
+Change an element in ArrayList   
+
+You can use the set method to change an element in ArrayList. You need to provide the index and 
+new element, this method then updates the element present at the given index with the new given 
+element.   
+   
+In the following example, we have given the index as 0 and new element as “Lucy” in the set() 
+method. The method updated the element present at the index 0 (“Jim”) with the new String 
+element “Lucy”.   
+   
+import 
+java.util.ArrayList; 
+public 
+class 
+JavaExample {     public static void 
+main(String[] args) {   
+      ArrayList<String> names = new ArrayList<String>();    
+    names.add("Jim");    
+    names.add("Jack");     
+    names.add("Mikhail");    
+    names.add("Chantelle");    
+    names.set(0, "Lucy");      
+  System.out.println(names);   
+   } }   
+Output   
+[Lucy, Jack, Mikhail, Chantelle] 

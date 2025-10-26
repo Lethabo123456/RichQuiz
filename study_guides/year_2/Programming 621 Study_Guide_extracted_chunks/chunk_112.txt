@@ -1,0 +1,26 @@
+and 
+secondNum are passed to the function pow. The other statements have similar 
+meanings. Once again, note that the program includes the header files cctype and 
+cmath, because it uses the functions islower, toupper, pow, abs, and sqrt from these 
+header files. 
+ 
+ 
+ 
+ 
+ 
+4.1.2 User- Defined Functions  
+
+94 | P a g e  
+ 
+Because C++ does not provide every function that you will ever need and designers 
+cannot possibly know a user’s specific needs, you must learn to write your own 
+functions. 
+User-defined functions in C++ are classified into two categories:  
+ Value-returning functions—functions that have a return type. These functions 
+return a value of a specific data type using the return statement, which we will 
+explain shortly. Note that the function main has used a return statement to 
+return the value 0 in every program we’ve seen so far.  
+ Void functions—functions that do not have a return type. These functions do 
+not use a return statement to return a value. 
+ 
+Value-R

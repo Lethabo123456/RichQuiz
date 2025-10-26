@@ -1,0 +1,18 @@
+Some Agent Types 
+ 
+Table-driven agents: use a percept sequence/action table in memory to find the next 
+action. They are implemented by a (large) lookup table. 
+ 
+Simple reflex agents: are based on condition-action rules, implemented with an 
+appropriate production system. They are stateless devices which do not have memory 
+of past world states. 
+ 
+Agents with memory have internal state, which is used to keep track of past states of 
+the world. 
+ 
+Agents with goals are agents that, in addition to state information, have goal 
+information that describes desirable situations. Agents of this kind take future events 
+into consideration. 
+ 
+Utility-based agents base their decisions on classic axiomatic utility theory in order 
+to act rationally. 

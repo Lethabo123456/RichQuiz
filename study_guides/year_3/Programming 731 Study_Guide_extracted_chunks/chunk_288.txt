@@ -1,0 +1,49 @@
+As you can see, by calling sleep( ), the call( ) method allows execution to switch to another thread. 
+This results in the mixed-up output of the three message strings. In this program, nothing exists to 
+stop all three threads from calling the same method, on the same object, at the same time. This is 
+known as a race condition, because the three threads are racing each other to complete the method.    
+This example used sleep( ) to make the effects repeatable and obvious. In most situations, a race 
+condition is more subtle and less predictable, because you can’t be sure when the context switch 
+will occur. This can cause a program to run right one time and wrong the next. To fix the preceding 
+program, you must serialize access to call( ). That is, you must restrict its access to only one thread 
+at a time. To do this, you simply need to precede call( )’s definition with the keyword synchronized, 
+as shown here:   
+   
+class Callme {   
+   
+synchronized void call(String msg) {   
+   
+..   
+This prevents other threads from entering call( ) while another thread is using it. After synchronized 
+has been added to call( ), the output of the program is as follows:   
+   
+[Hello]   
+[Synchronized]   
+[World]   
+   
+Any time that you have a method, or group of methods, that manipulates the internal state of an 
+object in a multithreaded situation, you should use the synchronized keyword to guard the state 
+In most situations, a race 
+condition is more subtle and less predictable, because you can’t be sure when the context switch 
+will occur. This can cause a program to run right one time and wrong the next. To fix the preceding 
+program, you must serialize access to call( ). That is, you must restrict its access to only one thread 
+at a time. To do this, you simply need to precede call( )’s definition with the keyword synchronized, 
+as shown here:   
+   
+class Callme {   
+   
+synchronized void call(String msg) {   
+   
+..   
+This prevents other threads from entering call( ) while another thread is using it. After synchronized 
+has been added to call( ), the output of the program is as follows:   
+   
+[Hello]   
+[Synchronized]   
+[World]   
+   
+Any time that you have a method, or group of methods, that manipulates the internal state of an 
+object in a multithreaded situation, you should use the synchronized keyword to guard the state 
+from race conditions. Remember, once a thread enters any synchronized method on an instance, no 
+other thread can enter any other synchronized method on the same instance. However, 
+nonsynchronized methods on that instance will continue to be callable.

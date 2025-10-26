@@ -1,0 +1,21 @@
+mmyClass, then within 
+the definition of dummyFunction, the object dummyObject can access its private 
+
+185 | P a g e  
+ 
+member variables (in fact, any private member of the class). Once a class is properly 
+defined and implemented, it can be used in a program.  
+ 
+A program or software that uses and manipulates the objects of a class is called a 
+client of that class. 
+ 
+Accessor and Mutator Functions 
+ 
+Let us look at the member functions of the class clockType. The function setTime sets 
+the values of the member variables to the values specified by the user. In other words, 
+it alters or modifies the values of the member variables. Similarly, the functions 
+incrementSeconds, incrementMinutes, and incrementHours also modify the member 
+variables. On the other hand, functions such as getTime, printTime, and equalTime 
+only access the values of the member variables. They do not modify the member 
+variables. We can, therefore, categorize the member functions of the class clockType 
+int

@@ -1,0 +1,21 @@
+3.4.1 Type inference and the new operator  
+ 
+In the examples shown in the main body of the text, the class name, Circle, in the new 
+expression is actually superfluous. You can simply write: 
+ 
+Circle c; 
+c = new(); 
+ 
+The C# compiler understands that c is a Circle variable, so it will create a new Circle object by 
+default. Whether you include or omit the type in the new expression is often a matter of 
+personal preference, but there will be times when you need to specify the type in the new 
+expression. (You’ll meet some examples later.) 
+ 
+On the other hand, if you combine the declaration and initialization into a single statement, 
+omitting the type can make your code more concise. For example: 
+ 
+Circle c = new(); 
+
+Alternatively, you can declare the c variable as a var and specify the type for the new operator 
+(this is my preferred style): 
+var c = new Circle(); 

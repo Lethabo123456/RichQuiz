@@ -1,0 +1,29 @@
+5.5 Density-Based Clustering (DBSCAN) 
+
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) identifies dense clusters and 
+separates noise points. DBSCAN is widely used for anomaly detection and geospatial analysis.  
+Advantages of DBSCAN: 
+  No need to specify kkk (number of clusters). 
+  Works well with arbitrary-shaped clusters. 
+  Can detect outliers (noise points). 
+DBSCAN Clustering 
+from sklearn.cluster import DBSCAN 
+ 
+# Apply DBSCAN 
+dbscan = DBSCAN(eps=0.5, min_samples=5) 
+df['DBSCAN_Cluster'] = dbscan.fit_predict(df_scaled) 
+ 
+# Visualize clusters 
+
+plt.scatter(df['Annual_Income'], 
+df['Spending_Score'], 
+c=df['DBSCAN_Cluster'], 
+cmap='viridis') 
+plt.xlabel('Annual Income ($)') 
+plt.ylabel('Spending Score') 
+plt.title('Customer Segmentation using DBSCAN') 
+plt.show() 
+ 
+Output: 
+ 
+• A scatter plot showing clusters with noise points (outliers). 

@@ -1,0 +1,21 @@
+by one minute.  
+6. Increment the time by one hour.  
+7. Compare two times to see whether they are equal.  
+  
+The actual implementation of the operations, that is, the definitions of the member functions of the class, 
+clockType was postponed.  
+  
+
+41  
+  
+Data abstraction is defined as a process of separating the logical properties of the data from its 
+implementation. The definition of clockType and its basic operations are the logical properties; storing 
+clockType objects in the computer, and the algorithms to perform these operations, are the 
+implementation details of clockType.  
+  
+Abstract data type (ADT): A data type that separates the logical properties from the implementation 
+details.  
+  
+Like any other data type, an ADT has three things associated with it: the name of the ADT, called the type 
+name; the set of values belonging to the ADT, called the domain; and the set of operations on the data. 
+Following these conventions, we can define the clockType ADT as follows:

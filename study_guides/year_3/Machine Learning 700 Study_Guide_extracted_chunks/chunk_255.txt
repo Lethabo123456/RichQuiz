@@ -1,0 +1,40 @@
+# Only propagate the gradients where mask == 1. 
+
+return tensor_combine(operator.mul, gradient, self.mask) 
+else: 
+raise RuntimeError("don't call backward when not in train mode") 
+We’ll use this to help prevent our deep learning models from overfitting. 
+ 
+Example: MNIST 
+MNIST is a dataset of handwritten digits that everyone uses to learn deep learning. It is 
+available in a somewhat tricky binary format, so we’ll install the mnist library to work with it. 
+(Yes, this part is technically not “from scratch.”) 
+
+python -m pip install mnist 
+And then we can load the data: 
+
+import mnist 
+ 
+# This will download the data; change this to where you want it. 
+# (Yes, it's a 0-argument function, that's what the library expects.) 
+# (Yes, I'm assigning a lambda to a variable, like I said never to do.) 
+mnist.temporary_dir = lambda: '/tmp' 
+# Each of these functions first downloads the data and returns a numpy 
+array. # We call .tolist() because our "tensors" are just lists. 
+train_images 
+= 
+mnist.train_images().tolist() 
+train_labels = mnist.train_labels().tolist() 
+assert shape(train_images) == [60000, 28, 28] 
+assert shape(train_labels) == [60000] 
+
+Let’s plot the first 100 training images to see what they look like: 
+import matplotlib.pyplot as plt 
+ 
+fig, ax = plt.subplots(10, 10) 
+for i in range(10): 
+for j in range(10): 
+# Plot each image in black and white and hide the axes. 
+ax[i][j].imshow(train_images[10 * i + j], cmap='Greys') 
+ax[i][j].xaxis.set_visible(False) ax[i][j].yaxis.set_visible(False) 
+plt.show() 

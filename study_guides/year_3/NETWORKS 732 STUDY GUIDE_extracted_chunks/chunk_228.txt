@@ -1,0 +1,29 @@
+5.3.2.3 ip Utility 
+
+Newer versions of the Linux operating system have added the ip utility to replace the ifconﬁg 
+command. This command serves the same purpose as ifconﬁg and is used to assign an address to 
+a network interface and/or conﬁgure network interface parameters on Linux operating systems. 
+The ip command allows us to ﬁnd out what interfaces are conﬁgured on the computer, view and 
+conﬁgure their IP values, take an interface up or down, conﬁgure routing, display network status 
+information, view and conﬁgure multicast values, view the ARP table, add or remove static routes, 
+and view the host’s routing table. 
+For example, to add the IP address of 192.168.1.1 to interface Ethenrnet0, use the following 
+command: 
+ 
+Figure 5.12: interface Ethenrnet0 syntax (Lammle, 2022) 
+ 
+5.3.2.4 iptables Utility 
+While iptables is not part of the exam objectives, it is added here as it is an important Linux 
+networking utility and good to be aware of. The iptables ﬁrewall utility is built for the Linux 
+operating system. It is a command-line utility that uses what are called chains to allow or disallow 
+traﬃc. When traﬃc arrives, iptables looks for a rule that addresses that traﬃc type, and if none 
+exists, it will enforce the default rule. There are three diﬀerent chain types: 
+• Input: Controls behavior for incoming connections 
+• Forward: Used for incoming connections that aren’t being delivered locally (like a router 
+would receive) 
+• Output: Used for outgoing connections 
+ 
+You can set the default action to accept, drop, or reject, with the diﬀerence between reject and 
+drop being that reject sends an error message back to the source. 
+ 
+Figure 5.13: Examples of iptables (Lammle, 2022) 

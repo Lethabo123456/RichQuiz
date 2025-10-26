@@ -1,0 +1,37 @@
+7.3 The Collection Framework and Java.Util Package  
+   
+The java.util package contains one of Java’s most powerful subsystems: collections. Collections were 
+added by the initial release of Java 2, and enhanced by Java 2, version 1.4. A collection is a group of 
+objects. 
+ The addition of collections caused fundamental alterations in the structure and architecture of 
+many elements in java.util. It also expanded the domain of tasks to which the package can be 
+applied.  
+Collections are a state-of-the-art technology that merits close attention by all Java programmers. In 
+addition to collections, java.util contains a wide assortment of classes and interfaces that support a 
+broad range of functionality. These classes and interfaces are used throughout the core Java 
+packages and, of course, are also available for use in programs that you write. Their applications  
+include generating pseudorandom numbers, manipulating date and time, observing events, 
+manipulating sets of bits, and tokenizing strings. Because of its many features, java.util is one of 
+Java’s most widely used packages. The java.util classes are listed here. 
+
+Key Classes and Interfaces 
+Collections Framework 
+The collections framework provides a set of interfaces and classes for storing and manipulating 
+groups of data as a single unit. Some of the key interfaces include: 
+• Collection: The root interface in the collection hierarchy. 
+• List: An ordered collection (also known as a sequence). 
+• Set: A collection that contains no duplicate elements. 
+• Map<K, V>: An object that maps keys to values. 
+Key classes in the collections framework include: 
+• ArrayList: A resizable-array implementation of the List interface. 
+• HashSet: This class implements the Set interface, backed by a hash table. 
+• HashMap<K, V>: A hash table-based implementation of the Map interface. 
+• LinkedList: A doubly-linked list implementation of the List and Deque interfaces12. 
+
+Date and Time Facilities 
+The java.util package provides classes for handling dates and times, such as: 
+• Date: Represents a specific instant in time, with millisecond precision. 
+• Calendar: An abstract class that provides methods for converting between a specific instant 
+in time and a set of calendar fields. 
+• GregorianCalendar: A concrete subclass of Calendar that provides the standard calendar 
+system used by most of the world12. 

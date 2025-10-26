@@ -1,0 +1,30 @@
+6.1  Forms of Learning 
+Any component of an agent program can be improved by machine learning. The improvements, 
+and the techniques used to make them, depend on these factors: 
+• Which component is to be improved. 
+• What prior knowledge the agent has, which influences the model it builds. 
+• What data and feedback on that data is available. 
+
+Main Forms of Learning: 
+
+1. Learning from Observation (Supervised Learning): 
+• The agent is given input-output pairs (examples) and learns a function that maps inputs 
+to correct outputs. 
+• Often used in classification and regression. 
+• Example: A robot learns to identify obstacles from labeled camera images. 
+
+2. Learning from Feedback (Reinforcement Learning): 
+• The agent performs actions in an environment and receives rewards or punishments. 
+• No direct supervision; instead, the agent learns which actions yield the best long-term 
+rewards. 
+• Example: A robotic arm learns to grasp objects by trial and error. 
+
+3. Unsupervised Learning: 
+• The agent is only given input data, without corresponding labels or rewards. 
+• The goal is to discover patterns, clusters, or structure in the data. 
+• Example: A robot exploring a room might group visual scenes into different room types. 
+ 
+4. Learning by Exploration or Active Learning: 
+• The agent chooses what data to learn from, rather than passively receiving it. 
+• Useful when data acquisition is expensive or risky (e.g., physical experiments). 
+• Example: A drone deciding which terrain to scan for better mapping accuracy.

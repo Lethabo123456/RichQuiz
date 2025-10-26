@@ -1,0 +1,22 @@
+1.8 Rounding Topologies 
+Network topology is the geometric arrangement of nodes and cable links in a LAN. Two general 
+configurations are used, bus and star. These two topologies define how nodes are connected to 
+one another in a communication network. A node is an active device connected to the network, 
+such as a computer or a printer. A node can also be a piece of networking equipment such as a 
+hub, switch or a router. 
+A bus topology consists of nodes linked together in a series with each node connected to a long 
+cable or bus. Many nodes can tap into the bus and begin communication with all other nodes on 
+that cable segment. A break anywhere in the cable will usually cause the entire segment to be 
+inoperable until the break is repaired. Examples of bus topology include 10BASE2 and 10BASE5. 
+
+Table 1- 5: example of Topologies 
+
+1.8.1 General Topology Configurations 
+10BASE-T Ethernet and Fast Ethernet use a star topology where access is controlled by a central 
+computer. Generally a computer is located at one end of the segment, and the other end is 
+terminated in central location with a hub or a switch. Because UTP is often run in conjunction with 
+telephone cabling, this central location can be a telephone closet or other area where it is 
+convenient to connect the UTP segment to a backbone. The primary advantage of this type of 
+network is reliability, for if one of these ‘point-to-point’ segments has a break; it will only affect 
+the two nodes on that link. Other computer users on the network continue to operate as if that 
+segment were non-existent.

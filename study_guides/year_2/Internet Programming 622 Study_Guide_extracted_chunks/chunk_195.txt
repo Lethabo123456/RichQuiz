@@ -1,0 +1,23 @@
+not (or do not want to) edit 
+your php.ini file, you have other ways to set your time zone: Create an .htaccess file in the 
+document root folder of your Web site(s) and add a directive to the file to set your 
+time zone: php_value date.timezone Africa/Johannesburg.  Alternatively, toward the 
+start of each PHP script that you create, add a line similar to this:  
+date_default_timezone_set( Africa/Johannesburg”);.   
+   
+   
+   
+
+ 
+ASSIGNMENT.GUIDELINES.....ATTENTION STUDENTS/STAFF  
+ 
+If you COPY AND OR REPRODUCE SOMEBODY ELSE’S WORK WITHOUT REFERENCING, your 
+assignment will be penalized by 30%. 
+TO AVOID BEING PENALISED IN YOUR ASSIGNMENTS DO NOT 
+ 
+ Copy and paste information from the internet and on-line media, such as 
+encyclopedias or journal articles without acknowledging the source of 
+information (Referencing). 
+ Transcribe information from any  textbook,  encyclopedia, newspaper, journal 
+articles, without acknowledging the source of information  (Referencing) 
+ Modify in

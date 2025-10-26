@@ -1,0 +1,15 @@
+ications you use today have a need to store data between browser 
+requests. For example, a shopping cart needs to remember which items you have added to your cart, 
+and a forum application needs to remember your identity whenever you post a message in the 
+forum. In other words, there is a need to preserve the current state of a user ‘s interaction with an 
+application from one request to the next. In this unit, we look at ways to save state, that is to give 
+the web application the ability to store data between browser requests to enable it to remember 
+related or linked actions or requests such as the items that a web user continually adds to his 
+shopping cart. The addition of each incremental item to the cart is a different action, but is linked or 
+related to the previous addition as well as to the next. We explore how to use:   
+• 
+(Query strings to store small amounts of data in the URL)   
+• 
+Cookies to store larger amounts of data in the browser itself   
+• 
+Sessions to store

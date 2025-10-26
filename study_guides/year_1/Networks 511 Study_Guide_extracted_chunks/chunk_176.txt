@@ -1,0 +1,29 @@
+ Valid TCP/IP configuration parameters for all clients on the network. 
+ Valid IP addresses, maintained in a pool for assignment to clients, as well as excluded 
+addresses. 
+ Reserved IP addresses associated with particular DHCP clients. This allows consistent 
+assignment of a single IP address to a single DHCP client. 
+ The lease duration, or the length of time for which the IP address can be used before a lease 
+renewal is required. 
+A DHCP-enabled client, upon accepting a lease offer, receives: 
+ A valid IP address for the subnet to which it is connecting.  
+ Requested DHCP options, which are additional parameters that a DHCP server is configured 
+to assign to clients. Some examples of DHCP options are Router (default gateway), DNS 
+Servers, and DNS Domain Name. For a full list of DHCP options, see DHCP Tools and Options. 
+
+3.6.3 Benefits of DHCP 
+In Windows Server 2008, the DHCP Server service provides the following benefits: 
+ Reliable IP address configuration. DHCP minimizes configuration errors caused by manual IP 
+address configuration, such as typographical errors, or address conflicts caused by the 
+assignment of an IP address to more than one computer at the same time. 
+ Reduced network administration. DHCP includes the following features to reduce network 
+administration: 
+ Centralized and automated TCP/IP configuration. 
+ The ability to define TCP/IP configurations from a central location. 
+ The ability to assign a full range of additional TCP/IP configuration values by means 
+of DHCP options. 
+ The efficient handling of IP address changes for clients that must be updated 
+frequently, such as those for portable computers that move to different locations on 
+a wireless network. 
+ The forwarding of initial DHCP messages by using a DHCP relay agent, which 
+eliminates the need for a DHCP server on every subnet. 

@@ -1,0 +1,15 @@
+Exploring Style Rules 
+If the element tag is the building block of the HTML file, then the style rule, which defines the 
+
+styles applied to an element or group of elements, is the building block of the CSS style sheet. 
+Style rules have the general form. 
+ 
+An embedded style sheet is simply adding the style sheet directly into the HTML5 script. In 
+the <head> of the program, add the style sheet using the <style> container. Place the 
+element you want to style in the style container, and then add values to the property to be 
+styled. The Figure above  shows the general format. 
+ 
+Each element has a unique set of properties, and each property has values that can be 
+assigned to it. When you change the value of the property, that value appears in the text 
+inside the element’s container. So, if you change the text color to red, all the text inside the 
+element’s container will be red. 

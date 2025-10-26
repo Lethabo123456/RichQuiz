@@ -1,0 +1,54 @@
+"";  
+  
+
+44  
+  
+personType(string first, string last); //Constructor 
+with parameters.  
+//Sets firstName and lastName according to the parameters. //Postcondition: 
+firstName = first; lastName = last;  
+  
+private:  
+string firstName;  //variable to store the first name string 
+lastName;  //variable to store the last name  
+};  
+  
+Figure 1-9 shows the UML class diagram of the class personType.  
+  
+  
+FIGURE 1-9 UML class diagram of the class personType  
+  
+We now give the definitions of the member functions of the class personType.  
+  
+void personType::print() const  
+{  
+cout << firstName << " " << lastName;  
+}  
+  
+void personType::setName(string first, string last)  
+{  
+firstName = first;  
+lastName = last;  
+}  
+  
+string personType::getFirstName() const  
+{  
+return firstName;  
+}  
+  
+string personType::getLastName() const  
+{  
+return lastName;  
+}  
+  
+//Default constructor  
+personType::personType()  
+{  
+
+45  
+  
+firstName = "";  
+lastName = "";  
+}  
+  
+//Constructo

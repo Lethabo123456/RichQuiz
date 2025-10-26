@@ -1,0 +1,31 @@
+The functional areas are as follows: 
+ 
+ Computer room: This is the portion of the data center that houses data processing equipment. 
+ Entrance room: One or more entrance rooms house external network access provider 
+equipment and provide the interface between the computer room equipment and the 
+enterprise cabling systems. Physical separation of the entrance room from the computer room 
+provides better security. 
+ Main distribution area: This centrally located area houses the main cross-connect as well as 
+core routers and switches for LAN and SAN (storage area network) infrastructures. 
+ Horizontal distribution area (HDA): The HAD serves as the distribution point for horizontal 
+cabling and houses cross-connects and active equipment for distributing cable to the 
+equipment distribution area. 
+ Equipment distribution area (EDA): The EDA is the location of equipment cabinets and racks, 
+with horizontal cables terminating with patch panels. 
+ Zone distribution area (ZDA): The ZDA is an optional interconnection point in the horizontal 
+cabling between the HDA and EDA. The ZDA acts as a consolidation point for reconfiguration 
+flexibility or for housing freestanding equipment such as mainframes. 
+An important part of TIA-942 that is especially relevant for computer security is the concept of tiered 
+reliability. The standard defines four tiers, as shown in Table 12.4. For each of the four tiers, TIA-942 
+describes detailed architectural, security, electrical, mechanical, and telecommunications 
+recommendations such that the higher the tier, the higher the availability. 
+
+Wireless Access 
+The security aspects of network management for wireless access have the objective of ensuring that 
+only authorized individuals and computing devices gain wireless access to networks and minimizing 
+the risk of wireless transmissions being monitored, intercepted or modified. 
+Dennis Kennedy’s article “Best Practices for Wireless Network Security” provides a useful list of risks 
+associated with wireless access and mitigation techniques including the following: 
+ Insufficient policies, training, and awareness: As with other areas, wireless security controls 
+must include policies and user awareness training specifically for wireless access. These 
+include procedures regarding uses of wireless devices and an understanding of relevant risks. 

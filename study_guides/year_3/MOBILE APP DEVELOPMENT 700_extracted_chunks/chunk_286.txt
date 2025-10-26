@@ -1,0 +1,65 @@
+Explanation 
+ 
+To handle the events fi red by each view, you fi rst have to programmatically locate the view that you 
+created during the onCreate() event. You do so using the findViewById() method (belonging to the 
+Activity base class), supplying it with the ID of the view: 
+ 
+//---Button view--- 
+Button btnOpen = (Button) findViewById(R.id.btnOpen); 
+ 
+The setOnClickListener() method registers a callback to be invoked later when the view is clicked: 
+ 
+btnOpen.setOnClickListener(new View.OnClickListener() { 
+public void onClick(View v) { 
+DisplayToast(“You have clicked the Open button”); 
+} 
+}); 
+ 
+The onClick() method is called when the view is clicked. 
+To determine the state of the CheckBox, you have to typecast the argument of the onClick() method 
+to a CheckBox and then check its isChecked() method to see if it is checked: 
+ 
+CheckBox checkBox = (CheckBox) findViewById(R.id.chkAutosave); 
+checkBox.setOnClickListener(new View.OnClickListener() 
+{ 
+public void onClick(View v) { 
+
+if (((CheckBox)v).isChecked()) 
+DisplayToast(“CheckBox is checked”); 
+else 
+DisplayToast(“CheckBox is unchecked”); 
+} 
+});
+
+For the RadioButton, you need to use the setOnCheckedChangeListener() method on the RadioGroup 
+to register a callback to be invoked when the checked RadioButton changes in this group: 
+ 
+//---RadioButton--- 
+RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rdbGp1); 
+radioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() 
+{ 
+public void onCheckedChanged(RadioGroup group, int checkedId) { 
+RadioButton rb1 = (RadioButton) findViewById(R.id.rdb1); 
+if (rb1.isChecked()) { 
+DisplayToast(“Option 1 checked!”); 
+} else { 
+DisplayToast(“Option 2 checked!”); 
+    
+} 
+} 
+}); 
+ 
+When a RadioButton is selected, the onCheckedChanged() method is fi red. Within it, you locate 
+individual RadioButtons and then call their isChecked() method to determine which RadioButton is 
+selected. Alternatively, the onCheckedChanged() method contains a second argument that contains a 
+unique identifier of the RadioButton selected. The ToggleButton works just like the CheckBox. 
+ 
+So far, to handle the events on the views, you fi rst had to get a reference to the view and then register 
+a callback to handle the event. There is another way to handle view events. Using the Button as an 
+example, you can add an attribute called onClick to it: 
+ 
+<Button android:id=“@+id/btnSave” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“@string/save” 
+android:onClick=“btnSaved_clicked”/> 

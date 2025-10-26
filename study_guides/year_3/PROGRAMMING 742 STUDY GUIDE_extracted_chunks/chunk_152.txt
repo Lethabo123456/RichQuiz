@@ -1,0 +1,44 @@
+All that is left is to create classes that can subscribe to this event. You'll create two. Your first will be the DisplayClock class. The 
+job of DisplayClock is not to keep track of time, but rather to display the current time to the console. 
+The example simplifies this class down to two methods. The first is a helper method named Subscribe. Subscribe's job is to 
+subscribe to the clock's OnSecondChange event. The second method is the event handler TimeHasChanged: 
+public class DisplayClock 
+    { 
+        public void Subscribe(Clock theClock) 
+        { 
+            theClock.OnSecondChange += 
+            new Clock.SecondChangeHandler(TimeHasChanged); 
+        } 
+        public void TimeHasChanged( 
+        object theClock, TimeInfoEventArgs ti) 
+        { 
+
+
+            Console.WriteLine("Current Time: { 0} :{ 1} :{ 2} ", ti.hour.ToString(), 
+ti.minute.ToString(),
+            ti.second.ToString()); 
+       } 
+   }
+
+When the first method, Subscribe, is invoked, it creates a new SecondChangeHandler delegate, passing in its event-
+handler method TimeHasChanged. It then registers that delegate with the OnSecondChange event of Clock. 
+Create a second class that will also respond to this event, LogCurrentTime. This class would normally log the event to a file, but for our 
+demonstration purposes, it will log to the standard console: 
+
+public class LogCurrentTime 
+    { 
+        public void Subscribe(Clock theClock) 
+        { 
+            theClock.OnSecondChange += 
+            new Clock.SecondChangeHandler(WriteLogEntry); 
+        } 
+        // this method should write to a file 
+        // we write to the console to see the effect // this object keeps no state 
+        public void WriteLogEntry( 
+        object theClock, TimeInfoEventArgs ti) 
+        { 
+            Console.WriteLine("Logging to file: { 0} :{ 1} :{ 2} ", ti.hour.ToString(), 
+            ti.minute.ToString(), 
+            ti.second.ToString()); 
+        } 
+    }

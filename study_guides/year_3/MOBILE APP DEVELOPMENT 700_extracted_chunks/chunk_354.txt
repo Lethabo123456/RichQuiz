@@ -1,0 +1,31 @@
+Coding the New Contact Button 
+
+Coding the New Contact button is just reusing code that you used 
+before (Listing 6.12). Add this method to ContactListActivity.java 
+to have the Add Contact button open the Contact Activity. 
+
+Add Delete Functionality 
+The final job associated with making the list work properly is to code the capability to delete a contact 
+from the list (and the database). This functionality is primarily implemented in the custom adapter. 
+However, because you don’t want the user to accidently delete a contact, the app provides a button 
+to turn the delete functionality on and off. Three tasks need to be completed to implement the delete 
+function: 
+
+1. Code a method to delete a contact from the database in ContactDataSource. 
+2. Modify the adapter to delete a contact from the list and database. 
+3. Code the ContactListActivity to use the delete function of the adapter. 
+After you have the layout correct, open ContactDataSource.java to add a method to 
+delete a contact. This method will be passed to the ID number of the contact to delete. 
+Refer to Listing 6.13 to code the method. 
+
+The deleteContact method is easy to understand. The method is passed the ID as the parameter 
+contacted. A return value to indicate success or failure is set up, and the database’s delete method is 
+called. There are three parameters for the delete method. The first is the name of the table to delete 
+from. The second is the WHERE clause to use to determine which records to delete. The final 
+parameter is a string array of criteria for deletion. Only one of the last two parameters is needed. The 
+other can be null. 
+
+Now turn your attention to the adapter (ContactAdapter.java) you created earlier. You need to add 
+two methods to this class, add variables, and modify three methods. When the user turns the delete 
+function on, it calls a method in the adapter to set its status to deleting. The adapter then redraws the 
+list to display the delete button for each contact.

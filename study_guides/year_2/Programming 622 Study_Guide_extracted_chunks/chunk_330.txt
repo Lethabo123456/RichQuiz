@@ -1,0 +1,20 @@
+8-Queens Puzzle  
+  
+Let us now consider the 8-queens puzzle. Like the 4-queens puzzle, no two queens can be in the same 
+row, same columns, and same diagonals. Determining whether two queens are in the same row or column 
+is easy because we can check their row and column position. Let us describe how to determine whether 
+two queens are in the same diagonal or not.  
+  
+Consider the 8 by 8 square board shown in Figure 4-16. The rows are numbered 0 through 7; the columns 
+are numbered 0 through 7. (Recall that, in C++, the array index starts at 0.)  
+  
+
+165  
+  
+  
+FIGURE 4-16 8 x 8 square board  
+  
+Consider the diagonal from upper left to lower right, as indicated by the arrow. The positions of the 
+squares on this diagonal are (0,4), (1,5), (2,6), and (3,7). Notice that for these entries rowPosition – 
+columnPosition is – 4. For example, 0 – 4 = 1 – 5 = 2 – 6 = 3 – 7 = – 4. It can be shown that for each square 
+on a diagonal from upper left to lower right, rowPosition – columnPosit

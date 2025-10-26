@@ -1,0 +1,30 @@
+put the definitions of the class and 
+the functions to implement the stack operations together to create the stack header file. For the sake of 
+completeness, we next describe the header file. Suppose that the name of the header file containing the 
+definition of the class stackType is myStack.h. We will refer to this header file in any program that uses a 
+stack.  
+  
+//Header file: myStack.h  
+#ifndef H_StackType  
+#define H_StackType  
+
+186  
+  
+  
+#include <iostream>  
+#include <cassert>  
+  
+#include "stackADT.h" using 
+namespace std;  
+//Place the definition of the class template stackType, as given //previously 
+in this chapter, here.  
+//Place the definitions of the member functions as discussed here. #endif  
+  
+The analysis of the stack operations is similar to the operations of the class arrayListType. We, therefore, 
+provide only a summary in Table 5-1.  
+  
+TABLE 5-1: Time complexity of the operations of the class stackType on a stack with n 
+elements  
+  
+  
+EXAMPLE 5-1

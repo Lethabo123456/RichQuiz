@@ -1,0 +1,23 @@
+When a user stops directly interacting with the app, the path to destruction begins. None of the 
+methods executed on the path to destruction have to be implemented. However, they often serve a 
+useful purpose and should be considered. The first method executed is onPause. This method should 
+be used to stop services that the app is using, to stop animations, or to store important state 
+information so that users can start using the app exactly as they left it. If the app is about to become 
+invisible, the onStop method will be executed. 
+
+This method should make sure important data is permanently stored so that as system resources are 
+consumed by other apps, they are not lost. Finally, if not restarted, the onDestroy method will be executed 
+just before the operating system takes away all the app’s resources. This is your last chance to capture 
+important data before all is lost. 
+
+iOS Life Cycle 
+The life cycle for iOS is similar to Android’s. However, iOS uses both an app life cycle and a screen (called 
+view) life cycle to accomplish essentially the same things. As with Android, the life cycle (see Figure 2.2) 
+begins when the user taps an app’s icon. The didFinishLaunchingWithOptions method is similar to an Activity’s onCreate method. However, in iOS 
+this method is used to set up the operating environment for the complete app, not just a single 
+activity. The applicationWillResignActive method is executed when the app is interrupted, similar to when the 
+onPause  method  is  executed  in  Android. Finally, when the app is no longer visible, the 
+applicationDidEnterBackground method is executed. As with Android, code in these methods should 
+be used to turn off services and save important data for the user before it’s potentially lost. 
+Unlike Android, iOS has a separate life cycle for displayed screens 
+(called ViewControllers).

@@ -1,0 +1,82 @@
+import rclpy 
+from rclpy.node import Node 
+from geometry_msgs.msg import Twist 
+from std_msgs.msg import String 
+ 
+class RobotMonitor(Node): 
+    def __init__(self): 
+        super().__init__('robot_monitor') 
+         
+ 
+
+        # Listen to robot movement 
+        self.movement_subscriber = self.create_subscription( 
+            Twist, 'robot_movement', self.show_movement, 10 
+        ) 
+         
+        # Listen to robot status 
+        self.status_subscriber = self.create_subscription( 
+            String, 'robot_status', self.show_status, 10 
+        ) 
+         
+        # Send commands to robot 
+        self.command_publisher = self.create_publisher(String, 'user_command', 10) 
+         
+        # Send a command every 10 seconds 
+        self.command_timer = self.create_timer(10.0, self.send_random_command) 
+         
+        print(" Robot Monitor Started!") 
+        print("Watching robot movement and status...") 
+ 
+    def show_movement(self, msg): 
+        """Display robot movement""" 
+        forward_speed = msg.linear.x 
+
+        turn_speed = msg.angular.z 
+         
+        if forward_speed > 0: 
+            print(f" Moving forward at speed {forward_speed}") 
+        elif turn_speed != 0: 
+            direction = "left" if turn_speed > 0 else "right" 
+            print(f" Turning {direction} at speed {abs(turn_speed)}") 
+        else: 
+            print(" Robot stopped") 
+ 
+    def show_status(self, msg): 
+        """Display robot status""" 
+        print(f" Status: {msg.data}") 
+ 
+    def send_random_command(self): 
+        """Send random commands to test the robot""" 
+        import random 
+        commands = ["START", "STOP", "TURN"] 
+        command = random.choice(commands) 
+         
+        msg = String() 
+        msg.data = command 
+
+        self.command_publisher.publish(msg) 
+        print(f" Sent command: {command}") 
+ 
+def main(): 
+    rclpy.init() 
+    monitor = RobotMonitor() 
+     
+    try: 
+        rclpy.spin(monitor) 
+    except KeyboardInterrupt: 
+        print("\n Monitor stopped!") 
+    finally: 
+        monitor.destroy_node() 
+        rclpy.shutdown() 
+ 
+if __name__ == '__main__': 
+    main() 
+ 
+Create Simple User Interface 
+Create file: C:\robot_project\src\robot_remote.py 
+#!/usr/bin/env python3 
+""" 
+
+Robot Remote Control - Control the robot manually 
+"""

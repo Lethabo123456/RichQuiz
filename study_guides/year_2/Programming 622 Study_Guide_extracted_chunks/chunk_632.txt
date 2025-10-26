@@ -1,0 +1,22 @@
+list[10] does not have a subtree, Step 3 does not execute.   
+  
+Figure 8-45(a) shows the resulting binary tree.  
+  
+  
+FIGURE 8-45 Binary tree while building heaps at list[4], list[3], and list[2]  
+  
+  
+Next, we consider the subtree with root node list[3], that is, 70 and repeat the three steps given earlier, 
+to obtain the complete binary tree as given in Figure 8-45(b). (Notice that Step 3 does not execute here 
+either.)  
+  
+Now we consider the subtree with the root node list[2], that is, 72, and apply the three steps given earlier. 
+Figure 8-45(c) shows the resulting binary tree. (Note that in this case, because the parent is larger than 
+both children, this subtree is already in a heap.)  
+  
+Next, we consider the subtree with the root node list[1], that is, 60, see 8-45(c). First, we apply Steps 1 
+and 2. Because list[1] = 60 < list[3] = 92 (the larger child), we swap list[1] with list[3], to obtain the tree as 
+given in Figure 8-46(a).  
+  
+  
+FIGURE 8-46 Binary tree while

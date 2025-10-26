@@ -1,0 +1,13 @@
+ections of this chapter is used as a starting point for 
+illustrating the SQL commands in this section and subsequent sections. 
+Creating the Database 
+Before you can use a new RDBMS, you must complete two tasks: create the database structure and 
+create the tables that will hold the end-user data. To complete the first task, the RDBMS creates the 
+physical files that will hold the database. When you create a new database, the RDBMS 
+automatically creates the data dictionary tables in which to store the metadata and creates a default 
+database administrator.  
+If you work in a database environment typically used by larger organizations, you will probably use 
+an enterprise RDBMS such as Oracle, MS SQL Server, MySQL, or DB2. For the purpose of this 
+course we will be using the MySQL RDBMS and/or Microsoft Access.  
+If you are using an enterprise RDBMS, you must be authenticated by the RDBMS before you can 
+start creating tables. Authentication is the process the DBMS uses to verify that

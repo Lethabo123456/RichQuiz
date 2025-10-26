@@ -1,0 +1,25 @@
+list, an appropriate message 
+// is printed.  
+};  
+  
+Figure 3-23 shows a UML class diagram of the class orderedLinkedList and the inheritance hierarchy.  
+  
+  
+FIGURE 3-23 UML class diagram of the class orderedLinkedList and the 
+inheritance hierarchy  
+  
+Next we give the definitions of the member functions of the class orderedLinkedList.  
+  
+ 
+3.4.1  Search the List  
+  
+First, we discuss the search operation. The algorithm to implement the search operation is similar to the 
+search algorithm for general lists discussed earlier. Here, because the list is sorted, we can improve the 
+search algorithm somewhat. As before, we start the search at the first node in the list. We stop the search 
+as soon as we find a node in the list with info greater than or equal to the search item, or we have searched 
+the entire list.  
+  
+The following steps describe this algorithm:  
+1. 
+Compare the search item with the current node in the list. If the info of the current node is greater 
+than or e

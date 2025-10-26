@@ -1,0 +1,150 @@
+Example 6-1. Working with delegates 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Examples 
+{ 
+public enum comparison 
+{ 
+theFirstComesFirst = 1, 
+theSecondComesFirst = 2 
+} 
+// a simple collection to hold 2 items 
+public class Pair 
+{ 
+// the delegate declaration 
+public delegate comparison 
+WhichIsFirst(object obj1, object obj2); 
+// passed in constructor take two objects, 
+// added in order received 
+public Pair( 
+object firstObject, 
+object secondObject) 
+{ 
+thePair[0] = firstObject; 
+thePair[1] = secondObject; 
+} 
+// public method which orders the two objects 
+// by whatever criteria the object likes! 
+public void Sort( 
+WhichIsFirst theDelegatedFunc) 
+{ 
+
+if (theDelegatedFunc(thePair[0], thePair[1]) 
+== comparison.theSecondComesFirst) 
+{ 
+object temp = thePair[0]; 
+thePair[0] = thePair[1]; 
+thePair[1] = temp; 
+} 
+} 
+// public method which orders the two objects 
+// by the reverse of whatever criteria the object likes! 
+public void ReverseSort( 
+WhichIsFirst theDelegatedFunc) 
+{ 
+if (theDelegatedFunc(thePair[0], thePair[1]) == 
+comparison.theFirstComesFirst) 
+{ 
+object temp = thePair[0]; 
+thePair[0] = thePair[1]; 
+thePair[1] = temp; 
+} 
+} 
+// ask the two objects to give their string value 
+public override string ToString() 
+{ 
+return thePair[0].ToString() + ", " 
++ thePair[1].ToString(); 
+} 
+// private array to hold the two objects 
+private object[] thePair = new object[2]; 
+} 
+public class Dog 
+{ 
+public Dog(int weight) 
+
+{ 
+this.weight = weight; 
+} 
+// dogs are ordered by weight 
+public static comparison WhichDogComesFirst( 
+Object o1, Object o2) 
+{ 
+Dog d1 = (Dog)o1; 
+Dog d2 = (Dog)o2; 
+return d1.weight > d2.weight ? 
+comparison.theSecondComesFirst : 
+comparison.theFirstComesFirst; 
+} 
+public override string ToString() 
+{ return weight.ToString(); 
+} 
+private int weight; 
+} 
+public class Student 
+{ 
+public Student(string name) 
+{ 
+this.name = name; 
+} 
+// students are ordered alphabetically 
+public static comparison 
+WhichStudentComesFirst(Object o1, Object o2) 
+{ 
+Student s1 = (Student)o1; 
+Student s2 = (Student)o2; 
+return (String.Compare(s1.name, s2.name) < 0 ? 
+comparison.theFirstComesFirst : 
+comparison.theSecondComesFirst); 
+
+185 
+ 
+} 
+public override string ToString() 
+{ 
+return name; 
+} 
+private string name; 
+} 
+public class Test 
+{ 
+public static void Main() 
+{ 
+// create two students and two dogs 
+// and add them to Pair objects 
+Student Jesse = new Student("Jesse"); 
+Student Stacey = new Student("Stacey"); 
+Dog Milo = new Dog(65); 
+Dog Fred = new Dog(12); 
+Pair studentPair = new Pair(Jesse, Stacey); 
+Pair dogPair = new Pair(Milo, Fred); 
+Console.WriteLine("studentPair\t\t\t: {0}", 
+studentPair.ToString()); 
+Console.WriteLine("dogPair\t\t\t\t: {0}", 
+dogPair.ToString()); 
+// Instantiate the delegates 
+Pair.WhichIsFirst theStudentDelegate = 
+new Pair.WhichIsFirst( 
+Student.WhichStudentComesFirst); 
+Pair.WhichIsFirst theDogDelegate = 
+new Pair.WhichIsFirst( 
+Dog.WhichDogComesFirst); 
+// sort using the delegates 
+studentPair.Sort(theStudentDelegate); 
+Console.WriteLine("After Sort studentPair\t\t: {0}", 
+
+studentPair.ToString()); 
+studentPair.ReverseSort(theStudentDelegate); 
+Console.WriteLine("After ReverseSort studentPair\t: {0}", 
+studentPair.ToString()); 
+dogPair.Sort(theDogDelegate); 
+Console.WriteLine("After Sort dogPair\t\t: {0}", 
+dogPair.ToString()); 
+dogPair.ReverseSort(theDogDelegate); 
+Console.WriteLine("After ReverseSort dogPair\t: {0}", 
+dogPair.ToString()); 
+} 
+}

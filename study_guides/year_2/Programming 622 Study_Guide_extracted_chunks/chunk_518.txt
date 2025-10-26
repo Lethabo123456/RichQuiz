@@ -1,0 +1,24 @@
+yListType(int size = 100);  
+arrayListType(const arrayListType<elemType>& otherList); ~arrayListType();  
+  
+protected:  
+elemType *list;   
+//array to hold the list elements  
+int length;   
+  
+//to store the length of the list  
+int maxSize;    
+//to store the maximum size of the list  
+};  
+  
+ 
+7.1.1  Sequential Search  
+  
+The sequential search (also called linear search) on linked lists was covered in Chapter 3. The sequential 
+search works the same for both array-based and linked lists. The search always starts at the first element 
+in the list and continues until either the item is found in the list or the entire list is searched.  
+  
+Because we are interested in the performance of the sequential search (that is, the analysis of this type 
+of search), for easy reference and for the sake of completeness, we give the sequential search algorithm 
+for array-based lists. If the search item is found, its index (that is, its location in the array) is returned. If 
+the search is unsuc

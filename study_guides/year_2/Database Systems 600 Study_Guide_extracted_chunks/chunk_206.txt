@@ -1,0 +1,19 @@
+is a partial dependency.  
+b. Transitive dependencies. A transitive dependency exists when a functional 
+dependency exists only among nonprime attributes. Transitive dependencies yield data 
+anomalies. 
+Figure 6.3 includes the relational schema for the table in 1NF and a textual notation for each 
+identified dependency. All relational tables satisfy the 1NF requirements, but it still has undesirable 
+problems. A table that contains partial dependencies is still subject to data redundancies, and 
+therefore to various anomalies. Our example still has the following anomalies:  
+ 
+Update anomalies.  
+ 
+Insertion anomalies.  
+ 
+Deletion anomalies.  
+The data redundancies occur because every row entry requires duplication of data. Such 
+duplication of effort is very inefficient, and it helps create data anomalies. Such data anomalies 
+violate the relational database’s integrity and consistency rules. 
+       Conversion to Second Normal Form (2NF) 
+Conversion to 2NF occurs only when the 1

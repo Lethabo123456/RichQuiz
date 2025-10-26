@@ -1,0 +1,48 @@
+example 5-17 shows a simple example of an asynchronous method. 
+ 
+using System; 
+//using System.Net.Http; 
+using System.Threading.Tasks; 
+namespace Chapter1.Threads 
+{ 
+    public static class Program 
+    { 
+        public static void Main() 
+        { 
+            string result = DownloadContent().Result; 
+            Console.WriteLine(result); 
+        } 
+        public static async Task<string> DownloadContent() 
+        { 
+            using(HttpClient client = new HttpClient()) 
+            { 
+               string result = await client.GetStringAsync("http://www.microsoft.com"); 
+                return  result; 
+            } 
+        } 
+    } 
+} 
+
+async, the example uses the Wait 
+method in Main. This class uses both the async and await keywords in the DownloadContent method. 
+The GetStringAsync uses asynchronous code internally and returns a Task<string> to the caller that will 
+finish when the data is retrieved. In the meantime, your thread can do other work. 
+ 
+The nice thing about async and await 
+code in precise steps. Writing correct asynchronous code by hand is difficult, especially when trying to 
+implement exception handling. Doing this correctly can become difficult quickly. Adding continuation 
+ bottom anymore. Instead, 
+ 
+when debugging your code. The await keyword enables you to write code that looks synchronous but 
+behaves in an asynchronous way. The Visual Studio debugger is even clever enough to help you in de-
+bugging asynchronous code as if it were synchronous. 
+ 
+So doing a CPU-bound task is different from an I/O-bound task. CPU-bound tasks always use some 
+thread to execute their work. An asynchronous I/O-
+the I/O is finished. 
+ 
+If you are building a client application that needs to stay responsive while background operations are 
+running, you can use the await keyword to offload a long-running operation to another thread. Alt-
+hough this does not improve performance, it does improve responsiveness. The await keyword also 
+makes sure that the remainder of your method runs on the correct user interface thread so you can up-
+date the user interface. 

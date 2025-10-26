@@ -1,0 +1,30 @@
+dFunction, the else part will be executed. In 
+practice, though, you would want the number of arguments to match. So if a second 
+function is accepting two arguments then the calling line should pass over two values. 
+It can be terribly confusing otherwise. 
+ 
+4.3 VARIABLE SCOPE 
+ 
+
+ 
+73 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+Variables have something called scope. This is to do with where variables can be seen 
+from. Variables declared with the var keyword inside of functions cannot be seen 
+from outside of that function. Examine this code: 
+ 
+function myFunction()  
+{ 
+var alertString = "ALERT!!!"; 
+secondFunction(); 
+} 
+function secondFunction()  
+{ 
+alert( alertString ); 
+} 
+ 
+The first function has a variable set up inside of its curly brackets called alertString. It 
+is set up with the var keyword. The second function is trying to access this variable in 
+an alert box. However, the code does not work, and you get an error message saying 
+"alertString is not defined". It does not work bec

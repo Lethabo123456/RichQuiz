@@ -1,0 +1,50 @@
+Until the recent Edward Snowden revelations, it was generally assumed that 128 bit 
+encryption was in practice uncrack able through brute force, and would be so another for 
+another hundred years or so (taking Moore’s Law into account). In theory this still hold true, 
+but the sheer scale of resources that the NSA seems to have thrown at cracking encryption 
+has shaken many experts’ faith in these predictions, and system administrators around the 
+world are scrambling to upgrade cipher key lengths.
+
+It should be noted that the US government uses 256-bit encryption to protect ‘sensitive’ data 
+(and 128-bit for ‘routine’ encryption needs). However, the method it uses is AES, which as we 
+shall discuss below, is not without problems. 
+
+Ciphers 
+While encryption key length refers to the amount of raw of numbers involved, ciphers are the 
+mathematics used to perform the encryption, and it is weaknesses in these algorithms, rather 
+than in the key length, that often leads to encryption being broken? 
+By far the most common ciphers that you will likely encounter with VPN are Blowfish and AES. 
+In addition to this, RSA is used to encrypt and decrypt a cipher’s keys, and SHA-1 or SHA-2 are 
+used as a hash function to authenticate the data. 
+ 
+AES is now generally considered the most secure cipher for VPN use, and its adoption by the 
+US government has only increased its perceived reliability, and consequently its popularity. 
+However, there is reason to believe this trust may be misplaced.
+
+4.4 Accessing a Remote Server 
+Windows: Accessing Your Server with Remote Desktop 
+Please note that this article pertains only for Windows server hosted with Liquid Web. Linux 
+servers can access learn how to use SSH to access their server. 
+On a normal Windows computer you have a keyboard, monitor, and mouse that allow you to 
+interact with the machine. For Windows servers hosted on the Internet, things are a bit 
+different because your server could physically be thousands of miles away. To access the 
+desktop of an Internet-hosted server, Microsoft has created a feature known as Remote 
+
+Desktop Supported Operating Systems 
+All Liquid Web Windows servers are capable of Remote Desktop. However, not all client 
+computers 
+can use it. Here is a list of operating systems known to be capable of communicating with your 
+Windows server with Remote Desktop: 
+• Microsoft Windows 2000 Clients and Servers 
+• Microsoft Windows XP Professional 
+• Microsoft Windows 2003 Server 
+• Microsoft Windows Vista Ultimate and Business Editions 
+• Microsoft Windows 2008 Server 
+• Microsoft Windows 7 and later 
+• Linux with the RDesktop application installed 
+(http://www.rdesktop.org/) 
+• Mac OS X with a Remote Desktop client: 
+(Mac OS X versions 10.9 and later: Microsoft Remote Desktop) 
+(Mac OS X versions 10.5-10.8 only: Open Source CoRD Client) 
+(Mac OS X versions prior to 10.7: Microsoft Remote Desktop Connection Client for 
+Mac) 

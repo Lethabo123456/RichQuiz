@@ -1,0 +1,18 @@
+nform to the new file structure. Thus, the file system application programs exhibit 
+structural dependence as well as data dependence. 
+The practical significance of data dependence is the difference between the logical data format and 
+the physical data format. Any program that accesses a file system’s file must tell the computer not 
+only what to do but also how to do it. Consequently, each program must contain lines that specify 
+the opening of a specific file type, its record specification, and its field definitions. Data dependence 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter One, page 15-18. 
+
+ 
+15 
+makes the file system extremely cumbersome from the point of view of a programmer and database 
+manager. 
+Data Redundancy 
+The file system’s structure makes it difficult to combine data from multiple sources, and its lack of 
+security renders the file system vulnerable to security breaches. The organizationa

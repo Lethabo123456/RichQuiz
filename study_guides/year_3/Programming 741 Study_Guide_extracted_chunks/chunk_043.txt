@@ -1,0 +1,32 @@
+C# provides built-in methods for Type-Conversions as follows: 
+
+Method                 Description 
+--------------------------------------------------------------------------
+ToBoolean              It will converts a type to Boolean value
+-------------------------------------------------------------------------- 
+ToChar                 It will converts a type to a character value 
+--------------------------------------------------------------------------
+ToByte                 It will converts a value to Byte Value 
+--------------------------------------------------------------------------
+ToDecimal              It will converts a value to Decimal point value 
+--------------------------------------------------------------------------
+ToDouble               It will converts a type to double data type 
+--------------------------------------------------------------------------
+ToInt16                It will converts a type to 16-bit integer 
+--------------------------------------------------------------------------
+ToInt32                It will converts a type to 32-bit integer 
+--------------------------------------------------------------------------
+ToInt64                It will converts a type to 64-bit integer 
+--------------------------------------------------------------------------
+ToString               It will converts a given type to string 
+--------------------------------------------------------------------------
+ToUInt16               It will converts a type to unsigned 16-bit integer 
+--------------------------------------------------------------------------
+ToUInt32               It will converts a type to unsigned 32-bit integer 
+--------------------------------------------------------------------------
+ToUInt64               It will converts a type to unsigned 64-bit integer 
+--------------------------------------------------------------------------
+
+Table 1-3 Type conversion methods 
+
+Example 1.2 Type conversion 

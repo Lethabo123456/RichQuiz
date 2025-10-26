@@ -1,0 +1,34 @@
+ken at each node.  
+  
+void inorder(binaryTreeNode<elemType> *p, void (*visit) (elemType&));  
+//Function to do an inorder traversal of the binary  
+//tree, starting at the node specified by the parameter p. //The 
+parameter visit, which is a function, specifies the //action to 
+be taken at each node.  
+  
+The definitions of these functions are as follows:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::inorderTraversal(void (*visit) (elemType& item))  
+{ inorder(root, *visit);  
+}  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::inorder(binaryTreeNode<elemType>* p, void 
+(*visit) (elemType& item))  
+{  
+if (p != NULL)  
+{ inorder(p->llink, *visit); 
+(*visit)(p->info); 
+inorder(p->rlink, *visit);  
+}  
+}  
+  
+The statement  
+  
+(*visit)(p->info);  
+  
+in the definition of the function inorder makes a call to the function with one reference parameter of the 
+type elemType pointed to by the pointer visit.  
+  
+Example 9-3 further illustrates how functions a

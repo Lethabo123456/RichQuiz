@@ -1,0 +1,15 @@
+2.3.2 Half and full duplex Ethernet  
+Ethernet IEEE 802.3 standard defines the half duplex; Cisco describes, it uses a digital signal on a 
+wire pair flowing in both tracks on the wire. Half Duplex always employs the Carrier Sense Multiple 
+Access with Collision Domain (CSMA/CD), so that it can retransmit the transmission if collision 
+occurs.  It is a one way side talk at a time. Once one side has finished transmitting its data, the other 
+side can respond. Only one node can talk at a time. As you can recognize, this method of 
+communication is not very efficient and requires more time to send/receive larger amounts of data. 
+
+ 
+The older networks used to work with half duplex mode, because of the constraints of the network 
+medium (coax cable) and hardware equipment (hubs). It has a limit of up to 10BaseT, as Cisco 
+describes 10BaseT is not more than 3 to 4Mbps. 
+ 
+Figure 27: Half Duplex Sending Information and Full Duplex Receiving information 
+]

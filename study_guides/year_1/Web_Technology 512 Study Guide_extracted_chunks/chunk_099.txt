@@ -1,0 +1,32 @@
+y = [10, "ten", true]; 
+ 
+This sets up an array to hold three values all under 
+the single variable name we called my_array. 
+Notice that you can store numbers, strings of text, 
+and Boolean values in an array. Each value needs 
+to be separated by a comma. The values need to 
+go between two square brackets and after an 
+equal sign. 
+ 
+To get at the values in your array you use 
+something called the index value. This is a number 
+between square brackets. The number corresponds to a value's position in the array 
+(position numbers start at 0): 
+my_array[0] 
+my_array[1] 
+my_array[2] 
+ 
+So my_array[0] will hold the value 10, my_array[1] will hold the text "ten", and 
+my_array[2] will hold the Boolean value true. You could then write the values to a web 
+page: 
+document.write( my_array[0] + "<BR>"); 
+document.write( my_array[1] + "<BR>"); 
+document.write( my_array[2] + "<BR>"); 
+ 
+Test it out with the following script: 
+ 
+ 
+THINK POINT 
+ 
+How can you create a slide show 
+of images using jav

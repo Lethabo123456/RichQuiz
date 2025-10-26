@@ -1,0 +1,31 @@
+4.2.1 Implementing Inheritance 
+
+In C#, you create a derived class by adding a colon after the name of the derived class, 
+followed by the name of the base class: 
+public class ListBox : Window 
+This code declares a new class, ListBox, that derives from Window. You can read the colon as 
+"derives from." The Derived Class (child)  is the class that inherits from another class  while 
+The Base Class (parent)  is the class being inherited from.  In C#, inheritance allows for code 
+reusability by enabling new classes (derived classes) to inherit properties and methods from 
+existing classes (base classes), significantly reducing code redundancy and improving 
+maintainability by promoting a clear "is-a" relationship between classes. Key advantages of 
+inheritance in C# include: 
+
+• Code Reusability: By inheriting from a base class, you can reuse existing functionality 
+without having to re-implement it in every derived class, saving development time and 
+effort.  
+• Improved Readability: Inheritance helps structure code logically by clearly defining 
+the "is-a" relationship between classes, making the code easier to understand and 
+maintain.  
+• Extensibility: Derived classes can override methods from the base class to add or 
+modify behavior specific to their needs, providing flexibility to extend existing 
+functionality.  
+• Reduced Code Duplication: By sharing common properties and methods in a base 
+class, you avoid writing the same code multiple times in different classes.  
+• Polymorphism Support: Inheritance is a key component of polymorphism, allowing 
+you to treat objects of different derived classes as objects of their base class, enabling 
+more dynamic and flexible code.  
+ 
+In the example below, the Car class (child) inherits the fields and methods from 
+the Vehicle class (parent) and  modify behavior specific to their needs, providing flexibility to 
+extend existing functionality. 

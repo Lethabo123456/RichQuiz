@@ -1,0 +1,71 @@
+5.3.3 ping Utility 
+The ping utility is the most basic TCP/IP utility, and it’s included with most TCP/IP stacks for most 
+platforms. Windows, again, is no exception. In most cases, ping is a command-line utility, although 
+there are many GUI implementations available. You use the ping utility for two primary purposes: 
+
+• To ﬁnd out if a host is responding 
+• To ﬁnd out if you can reach a host 
+
+Here’s the syntax (you can use either command): 
+ 
+Figure 5.14: ping syntax (Lammle, 2022) 
+ 
+You can ping your local TCP/IP interface by typing ping 127.0.0.1 or ping localhost. Understand 
+that both addresses represent the local interface. Really, you can use any address in the 127.0.0.0 
+network range to provide a loopback test. 
+
+Note 
+If you ping any station that has an IP address, the ICMP that’s part of that particular host’s TCP/IP 
+stack will respond to the request. The ICMP test and response looks something like this: 
+ 
+Figure 5.15: ICMP test and response (Lammle, 2022) 
+ 
+Because I’ve received a reply from the destination station (204.153.163.2, in this case), I know 
+that I can reach the host and that it’s responding to basic IP requests. Don’t forget that you can 
+use name resolution and ping to a name, such as ping www.sybex.com, and as long as that name 
+can be resolved, you’re golden. Most versions of ping work the same way, but there are some 
+switches you can use to specify certain information, like the number of packets to send, how big 
+a packet to send, and so on. And if you’re running the Windows command-line version of ping, 
+just use the /? or –? switch to display a list of the available options like this: 
+ 
+Figure 5.16: Windows command-line version of ping (Lammle, 2022) 
+ 
+The command will also output a table showing what each of the options does, presented 
+here in Table 5.1. 
+
+Option            Description 
+-t                Pings the speciﬁed host until stopped. To see statistics and continue, press 
+                  Ctrl+Break; to stop, press Ctrl+C. 
+-a                Resolves addresses to hostnames. 
+-n count          Speciﬁes the number of echo requests to send. 
+-l size           Sends the buﬀer size. 
+-f                Sets the Don’t Fragment ﬂag in the packet (IPv4 only). 
+-I TTL            Speciﬁes the time to live of the packet. 
+-I TOS            Speciﬁes the type of service (IPv4 only). 
+-r count          Records the route for count hops (IPv4 only). 
+-s count          Speciﬁes the time stamp for count hops (IPv4 only). 
+-j host-list      Uses a loose source route along the host list (IPv4 only). 
+-k host-list      Uses a strict source route along the host list (IPv4 only). 
+-w timeout        Speciﬁes the time-out to wait for each reply in milliseconds.
+-R                Uses the routing header to test the reverse route also (IPv6 only). 
+-S srcaddr        Speciﬁes the source address to use. 
+-4                Forces using IPv4. 
+-6                Forces using IPv6. 
+
+TABLE 25.1: Options for ping switches 
+ 
+As you can see, there’s a plethora of options you can use with the ping command from a Windows 
+DOS prompt. But I really want you to focus on a few from the previous output. (I’m going to go 
+over only a few of them, but you can get on your host machine and play with all the options.) 
+The -a switch is very cool because if you have name resolution (such as a DNS server), you can 
+see the name of the destination host even if you only know its IP address. The -n switch sets the 
+number of echo requests to send, where four is the default, and the -w switch allows you to adjust 
+the time-out in milliseconds. The default ping time-out is 1 second (1,000 ms). 
+The ARP table is cleared of dynamic entries whose TTL has expired to ensure that the entries are 
+current. 
+
+Note 
+The -6 is also nice if you want to ping an IPv6 host. By the way, unless you really love typing 128 
+bit addresses, this is a wonderful example of how important name resolution is. And then there’s 
+-t, which keeps the ping running. Here’s an example of a ping to an IPv6 address: 
+C:\Users\tlammle>ping -6 fe80::1063:16af:3f57:ﬀf9 

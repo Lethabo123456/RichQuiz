@@ -1,0 +1,23 @@
+s makes it easier for users to find help, tutorials, and examples when working 
+with the library. Offline Mode: Plotly allows you to generate visualizations in an offline mode without requiring an 
+internet connection. This can be useful for scenarios where internet access is limited or when working on local 
+projects. Cross-Platform Compatibility: Plotly can be used across various operating systems, including Windows, 
+macOS, and Linux. This cross-platform compatibility makes it a flexible choice for developers working on different 
+systems. 
+ 
+
+ 
+ 
+72 
+ 
+6.3 Plotly Basics 
+ 
+This section compares Plotly to matplotlib using the same data to show the interactivity of plotly in the browser. 
+The first example provides a static matplotlib plot of four lines (called traces) drawn from random samples. 
+Create a file named basic1.py and add the following code: 
+ 
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+# create fake data: 
+df = pd.DataFrame(np.random.randn(

@@ -1,0 +1,53 @@
+▪ Lines 7–9—This statement determines if the user had previously denied 
+a request from the app to access the device’s location. If it has previously been denied, the app presents 
+the user with a rationale informing them why the app needs this permission. The 
+first time the app requests a permission, a “canned” 
+▪ Lines 11–25—This code asks for permission to access location if it was previously denied. It will 
+only show the permission request if the user previously denied this specific permission. The request 
+for location is made with a Snackbar. A Snackbar is an object that implements a kind of AlertDialog 
+that is run as an asynchronous task floating in the activity’s layout. 
+The findViewById(R.id.activity_contact_map) may be underlined in red. If so, you need to add an id to the 
+root layout of activity_contact_map.xml. Open the map’s layout file and switch to Text view. Add the 
+following line after the android:layout_height line: android:id="@+id/activity_contact_map". The 
+user can go on using the activity; however, the Snackbar will obstruct some of the layout. The 
+LENGTH_INDEFINITE code keeps the Snackbar open until the user explicitly dismisses it by clicking 
+either the OK or Deny buttons. Finally, the code creates an OnClick listener for the OK button click 
+event. 
+
+▪ Lines 18–22—This code requests permission for access to location. Note that it only asks for 
+permission to access fine location. If this permission is granted, coarse location is also automatically 
+granted. The PERMISSION_REQUEST_LOCATION will be highlighted in red. This will also be fixed later. 
+▪ Lines 28–30—This code is the same as described previously in Lines 3–5. It is executed if the user 
+has not previously denied access to location. 
+
+Now we will fix the PERMISSION_REQUEST_LOCATION issue. Open ContactMapActivity.java (if not 
+open) and put the following line of code after the LocationListener gpsListener line at the top of the 
+file: 
+ 
+final int PERMISSION_REQUEST_LOCATION = 101; 
+
+This line declares a constant that is used to identify the permission that is being 
+requested. Note that the code in Listing 7.6 includes this value each time it requests 
+location permission. This is done because the user’s response to any permission 
+request is handled by the same method, and we  may ask for more than one 
+permission in an activity. That method must be able to identify what permission 
+request it is responding to in order to act appropriately. The next step is to code 
+the method required to respond to the user’s response. Enter the code in Listing 7.7 after 
+the startLocationUpdates() method. 
+This code is called when the user clicks one of the buttons on the permission request dialog. It is called 
+by a response to a request for any permission. 
+
+▪ Lines 2–3—This is the method signature required to override the super class method of the same 
+name. The request response sends the requestCode, which is the value you sent the request with 
+PERMISSION_REQUEST_LOCATION. It is used to determine with which permission request it is dealing. 
+The response also sends a string array with the permissions requested and an integer array with the 
+user response to each request. 
+▪ Lines 5–6—A switch statement is used to determine to which permission the method is 
+responding. In our activity, we only have one permission request, so there is only one case statement. 
+This method can be used to deal with multiple permission requests by simply adding additional case 
+statements. 
+▪ Lines 7–8—This if statement uses PackageManager to check if the permission was granted by the 
+user. PackageManager is an operating system object that keeps track of what permissions were  
+granted by the user for the apps on the device. If the permission was granted, the app starts finding 
+the location. If it is not granted, a message is displayed explaining how the app will function without 
+the permission. 

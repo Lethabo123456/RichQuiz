@@ -1,0 +1,60 @@
+4.5 The this Keyword 
+   
+Sometimes a method will need to refer to the object that invoked it. To allow this, Java defines the 
+this keyword. this can be used inside any method to refer to the current object. That is, this is always 
+a reference to the object on which the method was invoked. You can use this anywhere a reference 
+to an object of the current class’ type is permitted. To better understand what this refers to, consider 
+the following version of Box( ):   
+   
+// A redundant use of this.   
+Box(double w, double h, double d)   
+   
+{ this.width = w;   
+this.height = h;   
+   
+this.depth = d;   
+}   
+   
+This version of Box( ) operates exactly like the earlier version. The use of this is redundant, but 
+perfectly correct. Inside Box( ), this will always refer to the invoking object. While it is redundant in 
+this case, this is useful in other contexts, one of which is explained in the next section.   
+   
+4.6. Garbage Collection   
+   
+Since objects are dynamically allocated by using the new operator, you might be wondering how 
+such objects are destroyed and their memory released for later reallocation. In some languages, 
+such as C++, dynamically allocated objects must be manually released by use of  
+a delete operator. Java takes a different approach; it handles deallocation for you automatically. The 
+technique that accomplishes this is called garbage collection. It works like this: when no references 
+to an object exist, that object is assumed to be no longer needed, and the memory occupied by the 
+object can be reclaimed. There is no explicit need to destroy objects as in C++. Garbage collection 
+only occurs sporadically (if at all) during the execution of your program. It will not occur simply 
+because one or more objects exist that are no longer used. Furthermore, different Java run-time 
+implementations will take varying approaches to garbage collection, but for the most part, you 
+should not have to think about it while writing your programs.   
+   
+The finalize( ) Method    
+ 
+Sometimes an object will need to perform some action when it is destroyed. For example, if an 
+object is holding some non-Java resource such as a file handle or window character font, then you 
+might want to make sure these resources are freed before an object is destroyed. To handle such 
+situations, Java provides a mechanism called finalization. By using finalization, you can define 
+specific actions that will occur when an object is just about to be reclaimed by the garbage 
+collector.To add a finalizer to a class, you simply define the finalize( ) method. The Java run time calls 
+that method whenever it is about to recycle an object of that class. Inside the finalize( ) method you 
+will specify those actions that must be performed before an object is destroyed. The garbage 
+collector runs periodically, checking for objects that are no longer referenced by any running state 
+or indirectly through other referenced objects. Right before an asset is freed, the Java run time calls 
+the finalize( ) method on the object. The finalize( ) method has this general form:   
+   
+protected void finalize( )   
+{   
+// finalization code here   
+}   
+   
+Here, the keyword protected is a specifier that prevents access to finalize( ) by code defined outside 
+its class. This and the other access specifiers are explained in Topic 7.  It is important to understand 
+that finalize( ) is only called just prior to garbage collection. It is not called when an object goes out-
+of-scope, for example. This means that you cannot know when—or even if—finalize( ) will be 
+executed. Therefore, your program should provide other means of releasing system resources, etc., 
+used by the object. It must not rely on finalize( ) for normal program operation. 

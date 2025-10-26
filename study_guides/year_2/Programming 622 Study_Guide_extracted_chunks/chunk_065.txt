@@ -1,0 +1,30 @@
+re valid. If a value is invalid, // 
+the default value 0 is assigned.  
+  
+clockType();  
+//Default constructor with parameters //The 
+time is set to 00:00:00.  
+//Postcondition: hr = 0; min = 0; sec = 0 private:  
+int hr;    //stores the hours int min;  
+ //store the minutes int sec;   //store 
+the seconds  
+};  
+  
+ 
+1.4.2  Unified Modeling Language Diagrams  
+  
+A class and its members can be described graphically using a notation known as Unified Modeling 
+Language (UML) notation. For example, Figure 1-5 shows the UML class diagram of the class clockType.  
+  
+  
+FIGURE 1-5 UML class diagram of the class clockType  
+  
+The top box contains the name of the class. The middle box contains the data members and their data 
+types. The last box contains the member function name, parameter list, and the return type of the 
+function. A + (plus) sign in front of a member indicates that this member is a public member; a – (minus) 
+  
+  
+
+31  
+  
+sign indicates that this is a private member. T

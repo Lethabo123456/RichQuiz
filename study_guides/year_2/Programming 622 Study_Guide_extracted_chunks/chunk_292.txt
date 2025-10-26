@@ -1,0 +1,12 @@
+sive calls. That is, the sequence of recursive calls eventually reached a base case. On the other hand, 
+if every recursive call results in another recursive call, the recursive function (algorithm) is said to have 
+infinite recursion. In theory, infinite recursion executes forever. Every call to a recursive function requires 
+the system to allocate memory for the local variables and formal parameters. The system also saves this 
+information so that after completing a call, control can be transferred back to the right caller. Therefore, 
+because computer memory is finite, if you execute an infinite recursive function on a computer, the 
+function executes until the system runs out of memory and results in an abnormal termination of the 
+program.  
+  
+Recursive functions (algorithms) must be carefully designed and analyzed. You must make sure that every 
+recursive call eventually reduces to a base case. This chapter provides several examples that illustrate how 
+to design and implement r

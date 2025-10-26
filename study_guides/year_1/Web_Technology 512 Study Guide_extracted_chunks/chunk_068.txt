@@ -1,0 +1,35 @@
+nd brackets. 
+If it is true, the code for its pair of curly brackets will get executed. If it's false then 
+JavaScript will jump to the else part. The code for the curly brackets of else will then 
+get executed. 
+ 
+3.4.3 IF … ELSE IF 
+You can add another condition to test. This is done with ELSE IF. The syntax is this: 
+if ( first_condition_to_test )  
+{ 
+
+ 
+45 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+//code to be executed if the first condition is true  
+} 
+else if ( second_condition_to_test )  
+{ 
+ /* code to be executed if the first condition is false 
+ 
+and the second condition is true */ 
+} 
+ 
+Notice that else if is two words. If you type it as one word (elseif) then your code 
+would not work. So it is just another IF statement with the word else in front of it. 
+ 
+You can add as many else … if parts as you need: 
+if ( first_condition_to_test )  
+{ 
+ //executes only if first condition is true. 
+} 
+else if ( second_condition_to_test )  
+{ 
+/*executes only if first condition is f

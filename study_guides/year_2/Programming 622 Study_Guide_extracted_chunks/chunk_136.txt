@@ -1,0 +1,102 @@
+bold, and shows how a function is called.  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+62  
+  
+TABLE 2-5: Member functions common to all containers  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+63  
+  
+TABLE 2-5: Member functions common to all containers (continued)  
+  
+  
+  
+ 
+2.1.7  Member Functions Common to Sequence Containers  
+  
+The previous section described the member functions that are common to all containers. In addition to 
+these member functions, Table 2-6 describes the member functions that are common to all sequence 
+containers—that is, containers of type vector, deque, and list. (Suppose that seqCont is a sequence 
+container.)  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+64  
+  
+  
+  
+  
+  
+  
+TABLE 2-6: Member functions common to all sequence containers  
+  
+  
+  
+ 
+2.1.8  The copy Algorithm  
+  
+Example 2-5 used a for loop to output the elements of a vector container. The STL provides a convenient 
+way to output the elements of a container

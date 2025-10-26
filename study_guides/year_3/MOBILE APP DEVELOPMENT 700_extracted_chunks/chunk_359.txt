@@ -1,0 +1,43 @@
+Android versus iOS: Creating Complex Lists 
+Creating a list like the one shown in this chapter is much simpler in iOS because a lot of the 
+functionality is available in ready-made controls. In iOS, the list is called a table, and the default delete 
+behavior is as it’s described here, where the user taps a button to initiate delete mode and then is 
+able to delete rows until the delete mode is canceled. 
+Although the iOS controls provide a lot of functionality and can be customized, you do have less 
+freedom versus what is available in Android. 
+
+Congratulations—you’ve successfully developed a custom list! The code is 
+relatively involved, but the pattern is the basis for any future complex lists you 
+might want to create. Complex lists are really not all that difficult. Through the use 
+of a custom adapter and layout, you can create list items with a significant amount 
+of diverse information, including images if desired. To add an image, you would 
+add an ImageView widget to the list_item XML. Use the constraints to position the 
+widget like you did with the widgets in the layout. Loading an image will be 
+covered in Chapter, “Access to Hardware and Sensors in Android.”
+
+Sort the Contacts List 
+ 
+The next task is to code the ContactListActivity to sort the contact list according to the preferences set 
+by the user. The first step is to modify the getContacts method in ContactDataSource. The method 
+needs to be modified to accept the sort field and sort order as parameters and use these parameters 
+in the SQL to perform the actual sort. Switch to ContactDataSource.java and locate the getContacts 
+method. Change the method signature from public ArrayList<Contact> getContacts() { 
+to 
+public ArrayList<Contact> getContacts(String sortField, String sortOrder) { 
+
+Next, change the SQL statement from 
+String query = "SELECT * FROM contact"; 
+to 
+String query = "SELECT * FROM contact ORDER BY " + sortField + " " + sortOrder; 
+ 
+The next step is to modify the ContactListActivity to retrieve the user sorting preferences and pass 
+them to this modified method. Switch to ContactListActivity.java. There will be an error in the code 
+because the method getContacts() no longer exists. To fix the error, you must first retrieve the stored 
+user preferences. Enter the following two lines before the line that creates a new ContactDataSource 
+object in the onCreate method: 
+
+String sortBy = getSharedPreferences("MyContactListPreferences", 
+↪Context.MODE_PRIVATE).getString("sortfield",      "contactname"); 
+String sortOrder = getSharedPreferences("MyContactListPreferences", 
+↪Context.MODE_PRIVATE).getString("sortorder",     "ASC"); Now, modify the call to the getContacts method to use these values: 
+contacts = ds.getContacts(sortBy, sortOrder); 

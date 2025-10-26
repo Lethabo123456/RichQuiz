@@ -1,0 +1,24 @@
+ion 
+phase of heapsort.  
+  
+100, 85, 94, 47, 72, 82, 76, 30, 20, 60, 65, 50, 45, 17, 35, 14, 28, 5  
+  
+Show the resulting array after two passes of heapsort. (Use the heapify procedure as given in this chapter.) 
+Exactly how many key comparisons are executed during the first pass?  
+  
+14. 
+Suppose that L is a list is of length n and it is sorted using insertion sort. If L is already sorted in the 
+reverse order, show that the number of comparisons is (1/2)(n2 – n) and the number of item assignments 
+is (1/2)(n2 +3n) – 2.   
+  
+15. 
+Suppose that L is a list is of length n and it is sorted using insertion sort. If L is already sorted, show 
+that the number of comparisons is (n – 1) and the number of item assignments is 0.  
+  
+16. 
+Write the definition of the class arrayListType that implements the sorting algorithms for 
+arraybased lists as discussed in this chapter.  
+  
+17. 
+Write the definition of the class unorderedLinkedList that implements the searching (described in 
+Chapter 3

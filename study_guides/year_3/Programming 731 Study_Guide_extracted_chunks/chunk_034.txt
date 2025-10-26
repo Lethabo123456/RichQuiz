@@ -1,0 +1,21 @@
+Interpreted and High Performance    
+ 
+As described earlier, Java enables the creation of cross-platform programs by compiling into an 
+intermediate representation called Java bytecode. This code can be interpreted on any system that 
+provides a Java Virtual Machine. Most previous attempts at crossplatform solutions have done so at 
+the expense of performance. Other interpreted systems, such as BASIC, Tcl, and PERL, suffer from 
+almost insurmountable performance deficits. 
+
+Java, however, was designed to perform well on very low-power CPUs. As explained earlier, while 
+it is true that Java was engineered for interpretation, the Java bytecode was carefully designed so 
+that it would be easy to translate directly into native machine code for very high performance by 
+using a just-in-time compiler. Java run-time systems that provide this feature lose none of the 
+benefits of the platform-independent code.
+
+Distributed    
+Java is designed for the distributed environment of the Internet, because it handles TCP/IP protocols. 
+In fact, accessing a resource using a URL is not much different from accessing a file. The original 
+version of Java (Oak) included features for intraaddress - space messaging. This allowed objects on 
+two different computers to execute procedures remotely. Java revived these interfaces in a package  
+called Remote Method Invocation (RMI). This feature brings an unparalleled level of abstraction to 
+client/server programming.

@@ -1,0 +1,38 @@
+6.1.4 Using Multiple catch Statements   
+   
+you can associate more than one catch statement with a try. In fact, it is common to do so. However, 
+each catch must catch a different type of exception. For example, the program shown here catches 
+both array boundary and divide-by-zero errors:   
+   
+//Use multiple catch statements.   
+public class ExcDemo4 {     public static void main(String args[]) {         //Here, number is longer than denom         int 
+number[] = { 4, 8, 16, 32, 64, 128, 256,  
+512 };         int denom[] = { 2, 0, 4, 4, 0, 8 };   
+         for (int i = 0; i < number.length; i++) {             try{   
+                System.out.println(number[i] + " / " +  denom[i] + " is " + number[i] / denom[i]);   
+            }             catch (ArithmeticException exc) {   
+                //catch the exception   
+
+                System.out.println("Can't divide by Zero!");   
+            }   
+            catch (ArrayIndexOutOfBoundsException exc) {   
+                //Catch the exception   
+                System.out.println("No matching element found.");   
+            }   
+        }   
+    }   
+}   
+   
+   
+This program produces the following output:   
+   
+4 / 2 is 2   
+Can't divide by Zero!   
+16 / 4 is 4   
+32 / 4 is 8   
+Can't divide by Zero!   
+128 / 8 is 16  
+
+As the output confirms, each catch statement responds only to its own type of exception.   
+In general, catch expressions are checked in the order in which they occur in a program. Only a 
+matching statement is executed. All other catch blocks are ignored. 

@@ -1,0 +1,41 @@
+ment: 
+ str3 = str1 + ' ' + str2; 
+ 
+If str1 = "Hello there", the statement:  
+str1[6] = 'T';  
+replaces the character t with the character T. Recall that the position of the first 
+character in a string variable is 0. Therefore, because t is the seventh character in str1, 
+its position is 6. In C++, [] is called the array subscript operator. 
+ 
+Additional string Operations 
+The data type string has a data type, string::size_type, and a named constant, 
+string::npos, defined as follows: 
+ 
+The data type string contains several other functions for string manipulation. Table 
+below describes some of these functions. In this table, we assume that strVar is a 
+string variable and str is a string variable, a string constant, or a character array. 
+
+117 | P a g e  
+ 
+ 
+ 
+ 
+ 
+
+118 | P a g e  
+ 
+ 
+The following program illustrates the use of the length function. //Example: clear, 
+empty, erase, length, and size functions. 
+ 
+ 
+
+119 | P a g e  
+ 
+ 
+ 
+ 
+ 
+Insert AND replace Functions 
+
+120 | P a

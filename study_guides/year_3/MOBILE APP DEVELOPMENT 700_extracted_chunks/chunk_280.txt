@@ -1,0 +1,32 @@
+If you do not like the default look of the CheckBox, you can apply a style attribute to it to display it as 
+another image, such as a star: 
+
+<CheckBox android:id=“@+id/star” 
+style=“?android:attr/starStyle” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” /> 
+ 
+The format for the value of the style attribute is as follows: 
+ 
+?[package:][type:]name 
+ 
+The RadioGroup encloses two RadioButtons. This is important because radio buttons are usually used 
+to present multiple options to the user for selection. When a RadioButton in a RadioGroup is selected, 
+all other RadioButtons are automatically unselected: 
+ 
+<RadioGroup android:id= “@+id/rdbGp1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:orientation=“vertical” > 
+ 
+<RadioButton android:id=“@+id/rdb1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Option 1” /> 
+ 
+<RadioButton android:id=“@+id/rdb2” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Option 2” /> 
+ 
+</RadioGroup> 

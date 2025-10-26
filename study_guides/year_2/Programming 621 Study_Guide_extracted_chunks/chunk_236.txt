@@ -1,0 +1,16 @@
+per minute) at 
+which the water is filling the pool, and the rate (in gallons per minute) at which 
+the water is draining from the pool. Add appropriate constructors to initialize the 
+instance variables. Also add member functions to do the following: determine 
+the amount of water needed to fill an empty or partially filled pool, determine 
+the time needed to completely or partially fill or empty the pool, and add or drain 
+water for a specific amount of time. 
+ 
+3. Define the class bankAccount to implement the basic properties of a bank 
+account. An object of this class should store the following data: Account 
+holder’s name (string), account number (int), account type (string, 
+checking/saving), balance (double), and interest rate (double). (Store interest 
+rate as a decimal number.) Add appropriate member functions to manipulate 
+an object. Use a static member in the class to automatically assign account 
+numbers. Also declare an array of 10 components of type bankAccount to 
+proce

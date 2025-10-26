@@ -1,0 +1,28 @@
+Fortunately, most programs are structured, and this leads to a locality of reference during the 
+program’s execution, meaning that during any phase of its execution the program references 
+only a small fraction of its pages. If a job is executing a loop, then the instructions within the loop 
+are referenced extensively while those outside the loop may not be used at all until the loop is 
+completed, that’s the location of reference. The same concept applies to sequential instructions, 
+subroutine calls (within the subroutine), stack implementations, access to variables acting as 
+counters or sums, or multidimensional variables, such as arrays and tables, where only a few of 
+the pages are needed to handle the references. 
+
+It would be convenient if all the pages in a job’s working set were loaded into memory at one 
+time to minimize the number of page faults and to speed up processing, but that is easier said 
+than done. To do so, the system needs definitive answers to some difficult questions: How many 
+pages comprise the working set? What is the maximum number of pages the operating system 
+will allow for a working set? The second question is particularly important in networked or time- 
+sharing systems, which regularly swap jobs, or pages of jobs, into memory and back to secondary 
+storage to accommodate the needs of many users. The problem is this, every time a job is 
+reloaded back into memory (or has pages swapped), it must generate several page faults until its 
+working set is back in memory and processing can continue. 
+ 
+One solution adopted by many paging systems is to begin by identifying each job’s working set 
+and then loading it into memory in its entirety before allowing execution to begin. In a time- 
+sharing or network system, this means the operating system must keep track of the size and 
+identity of every working set, making sure that the jobs destined for processing at any one time 
+will not exceed the available memory. Some operating systems use a variable working set size, 
+and either increase it when necessary (i.e., the job requires more processing) or decrease it when 
+necessary. This may mean that the number of jobs in memory will need to be reduced if, by doing 
+so, the system can ensure the completion of each job and the subsequent release of its memory 
+space.

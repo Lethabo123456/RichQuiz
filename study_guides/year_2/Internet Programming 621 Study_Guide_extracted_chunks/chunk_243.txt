@@ -1,0 +1,44 @@
+"Cat", "Dog", "A", "Dog"); 
+print_r(array_count_values($a)); 
+?> 
+a) Array ( [A] => 2 [Cat] => 1 [Dog] => 2 ) 
+b) Array ( [A] => 2 [Cat] => 2 [Dog] => 1 ) 
+c) Array ( [A] => 1 [Cat] => 1 [Dog] => 2 ) 
+d) Array ( [A] => 2 [Cat] => 1 [Dog] => 1) 
+  
+Answer: a 
+  
+76. What will be the output of the following PHP code? 
+<?php 
+$a1 = array("a"=>"red", "b"=>"green", "c"=>"blue", "d"=>"yellow"); 
+$a2 = array("e"=>"red", "f"=>"green", "g"=>"blue"); 
+$result = array_diff($a1, $a2); 
+print_r($result); 
+?> 
+a) Array ( [d] => yellow ) 
+b) Array ( [c] => blue ) 
+c) Array ( [a] => red ) 
+d) Array ( [e] => yellow ) 
+Answer: a 
+ 
+
+77. What will be the output of the following PHP code? 
+1. 
+<?php 
+2. 
+$a1 = array_fill(3, 4, "blue"); 
+3. 
+$b1 = array_fill(0, 1, "red"); 
+4. 
+print_r($a1); 
+5. 
+echo "<br>"; 
+6. 
+print_r($b1); 
+7. 
+?> 
+a) Array ( [3] => blue [4] => blue) 
+Array ( [0] => red ) 
+b) Array ( [4] => blue [5] => blue [6] => blue) 
+Array ( [0] => red ) 
+c) Array ( [3] => blue [4] => blue [5] =>

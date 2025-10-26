@@ -1,0 +1,38 @@
+n the above examples we 
+show how to pass multiple inputs inside an Input list parameter. To update multiple Outputs, just 
+write multiple functions. For this example, we’ll set up two sets of radio buttons, and two 
+separate output areas. Next, we’ll add a third output that’s determined by the combination of 
+radio buttons selected! 
+           Create a file called callback4.py and add the following code: 
+ 
+import dash 
+ 
+import dash_core_components as dcc 
+import dash_html_components as html 
+ 
+from dash.dependencies import Input, Output 
+import pandas as pd 
+ 
+app = dash.Dash() 
+ 
+df = pd.read_csv('../data/wheels.csv') 
+ 
+app.layout = html.Div([ 
+ 
+dcc.RadioItems( 
+id='wheels', 
+ 
+options=[{'label': i, 'value': i} for i in df['wheels'].unique()], value=1 
+ 
+), 
+html.Div(id='wheels-output'), 
+ 
+html.Hr(), 
+# add a horizontal rule 
+dcc.RadioItems( 
+id='colors', 
+ 
+options=[{'label': i, 'value': i} for i in df['color'].unique()], value='blue' 
+ 
+), 
+html.Div(id='colors-output')

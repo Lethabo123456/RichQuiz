@@ -1,0 +1,49 @@
+2.1.2 Program to compute and output the area and perimeter of a rectangle. 
+The last statement, that is, return 0; returns the value 0 to the operating 
+system when the program terminates. 
+Before ending this section, let us identify certain parts of the C++ program 
+in Figure 2-1. 
+ 
+Figure 2-2: Various parts of a C++ Program 
+
+2.1.3 Special Symbols & Identifiers 
+ 
+In the previous section, we gave an example of a C++ program and also identified 
+certain parts of the program. In general, a C++ program is a collection of one or more 
+subprograms, called functions. Roughly speaking, a subprogram or a function is a 
+collection of statements, and when it is activated, or executed, it accomplishes 
+something. Some functions, called predefined or standard functions, are already 
+written and are provided as part of the system. But to accomplish most tasks, 
+programmers must learn to write their own functions. Every C++ program has a 
+function called main. Thus, if a C++ program has only one function, it must be the 
+function main. Until later Chapters, other than using some of the predefined functions, 
+you will mainly deal with the function main. By the end of this chapter, you will have 
+learned how to write programs consisting only of the function main. 
+To write meaningful programs, you must learn the programming language’s special 
+symbols, words, and syntax rules. The syntax rules tell you which statements 
+(instructions) are legal or valid, that is, which are accepted by the programming 
+language and which are not. You must also learn semantic rules, which determine 
+the meaning of the instructions. The programming language’s rules, symbols, and 
+special words enable you to write programs to solve problems.  
+Programming language: A set of rules, symbols, and special words. 
+
+Special Symbols  
+ 
+The smallest individual unit of a program written in any language is called a 
+token. C++’s tokens are divided into special symbols, word symbols, and 
+identifiers. Following are some of the special symbols: 
+ 
+ +  -  *  /  
+.   ;   ? , 
+ <= != == >=  
+
+The first row includes mathematical symbols for addition, subtraction, 
+multiplication, and division. The second row consists of punctuation marks taken 
+from English grammar. Note that the comma is also a special symbol. In C++, 
+commas are used to separate items in a list. Semicolons are also special 
+symbols and are used to end a C++ statement. Note that a blank, which is not 
+shown above, is also a special symbol. You create a blank symbol by pressing 
+the space bar (only once) on the keyboard. The third row consists of tokens 
+made up of two characters that are regarded as a single symbol. No character 
+can come between the two characters in the token, not even a blank. 
+ 

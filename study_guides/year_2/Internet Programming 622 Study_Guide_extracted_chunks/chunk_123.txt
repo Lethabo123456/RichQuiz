@@ -1,0 +1,25 @@
+any characters you want to read. For example, 
+the following code reads 23 characters from myfile.txt , starting at character 17:   
+   
+$fileContents = file_get_contents( “myfile.txt”, null, null, 17, 23 );   
+
+53   
+   
+   
+The first null argument avoids setting the FILE_USE_INCLUDE_PATH flag, and the second null 
+argument avoids setting a context.    
+   
+file_put_contents() is the complement to file_get_contents() . As you would d imagine, it takes a  
+string and writes it to a file:   
+   
+$numChars = file_put_contents( “myfile.txt”, $myString );   
+   
+The function returns the number of characters written, or false if there was a problem. You can 
+affect the behavior of the function by passing various flags as the third argument. file_put_contents() 
+supports the same flags as file_get_contents() , as well as two additional flags:   
+   
+Flag   
+Description    
+FILE_APPEND   
+If the file already exists, append the string to the end of the file, 
+rather than overwriting the file.

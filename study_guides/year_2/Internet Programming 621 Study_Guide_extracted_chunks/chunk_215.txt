@@ -1,0 +1,49 @@
+ert Counter is: 22 
+D. Hello Robert Hello Robert Counter is: 22 
+ANS: B 
+ 
+
+IP 621  
+104. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   for ($counter = 15; $counter != 10; $counter--){ 
+ 
+       echo "Hello "; 
+ 
+   }  
+ 
+?> 
+ 
+A. Hello Hello 
+B. Hello Hello Hello 
+C. Hello Hello Hello Hello Hello 
+D. None of the above 
+ANS: C 
+ 
+105. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   for ($counter = 10; $counter < 10; $counter = $counter + 5){ 
+ 
+       echo "Hello"; 
+ 
+   }  
+ 
+?> 
+ 
+A. Hello Hello Hello Hello Hello 
+B. Hello Hello Hello 
+C. Hello 
+D. None of the above 
+ANS: D 
+ 
+
+IP 621  
+ 
+106. Which of the following is correct about variable naming rules? 
+A. Variable names must begin with a letter or underscore character. 
+B. A variable name can consist of numbers, letters, underscores. 
+C. You cannot use characters like + , - , % , ( , ) . & , etc in a variable      name. 
+D.  All of the above. 
+A

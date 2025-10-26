@@ -1,0 +1,28 @@
+2.5.5.2 Displaying an Image 
+Once the image is loaded into the program, you might want to display it to check its correctness 
+or simply to see what you are working with. OpenCV uses the cv2.imshow() function to display 
+images: 
+ 
+2.5.5.3 Saving an Image 
+Modifying images is common in image processing, whether it be resizing, transforming, or 
+applying filters. After these modifications, you may want to save the result. 
+The cv2.imwrite() function allows you to save an image to a file: 
+ 
+2.5.5.4 Image Transformations 
+Image transformations are an important aspect of image processing that involve modifying the 
+geometry of an image to achieve desired effects or extract useful information. Common 
+transformations include scaling, rotating, and cropping. These operations help in preparing 
+images for further processing and analysis, such as in applications of machine learning and 
+computer vision. 
+
+2.5.5.5 Scaling (Resizing an Image) 
+Resizing an image is one of the most basic transformations. It can be crucial for reducing the 
+computational load required for processing large images or for making images fit a particular size 
+requirement. OpenCV provides the cv2.resize() function for this purpose, which allows you to 
+specify the new image dimensions or a scaling factor. 
+
+2.5.5.6 Rotating an Image 
+Rotating an image is another common transformation. It can be used to correct the orientation 
+of an image or for artistic effects. To rotate an image, OpenCV uses a transformation matrix, which 
+can be created using the cv2.getRotationMatrix2D() function. This matrix is then applied to the 
+image using the cv2.warpAffine() function. 

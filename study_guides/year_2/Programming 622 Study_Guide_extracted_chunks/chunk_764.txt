@@ -1,0 +1,30 @@
+Furthermore, 
+because the insertion of an item might require the splitting of a node and moving the median key to the 
+parent node, the simplest way to implement the insertion algorithm is to use recursion. To trigger the 
+recursion, we will write another function, insertBTree. The definition of the function insert, which uses 
+the function insertBTree, is as follows:  
+  
+template <class recType, int bTreeOrder>  
+void bTree<recType, bTreeOrder>::insert(const recType& insertItem)  
+{  
+bool isTaller = false;  
+recType median;  
+  
+bTreeNode<recType, bTreeOrder> *rightChild;  
+  
+insertBTree(root, insertItem, median, rightChild, isTaller);  
+  
+ 
+if (isTaller)   
+  
+  
+  
+  
+//the tree is initially empty or the root  
+//was split by the function insertBTree  
+{  
+bTreeNode<recType, bTreeOrder> *tempRoot; 
+tempRoot = new bTreeNode<recType, bTreeOrder>; 
+tempRoot->recCount = 1; tempRoot->list[0] = 
+median; tempRoot->children[0] = root; tempRoot-
+>children[1] = rightChild; root = tempRoot

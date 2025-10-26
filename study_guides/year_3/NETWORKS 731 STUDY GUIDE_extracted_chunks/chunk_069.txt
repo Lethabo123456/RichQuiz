@@ -1,0 +1,36 @@
+Backup Strategy 
+After selecting the appropriate tool for performing your servers’ data backups, devise a 
+backup strategy to guide you and your colleagues in performing reliable backups that provide 
+maximum data protection. This strategy should be documented in a common area where all 
+IT staff can access it. The strategy should address at least the following questions: 
+
+● What data must be backed up? 
+● What kind of rotation schedule will backups follow? 
+● At what time of day or night will the backups occur? 
+● How will you verify the accuracy of the backups? 
+● Where and for how long will backup media be stored? 
+● Who will take responsibility for ensuring that backups occurred? 
+● How long will you save backups? 
+● Where will backup and recovery documentation be stored? 
+
+Different backup methods provide varying levels of certainty and corresponding labour and 
+cost. An important concept to understand before learning about different backup methods is 
+the archive bit. An archive bit is a file attribute that can be checked (or set to “on”) or 
+unchecked (or set to “off”) to indicate whether the file must be archived. When a file is created 
+or changed, the operating system automatically sets the file’s archive bit to “on.” 
+Various backup methods use the archive bit in different ways to determine which files should 
+be backed up below is the list of different ways to backup:
+
+● Full backup—All data on all servers is copied to a storage medium, regardless of whether 
+the data is new or changed. After backing up the files, a full backup unchecks—or turns off—
+the files’ archive bits. 
+ 
+● Incremental backup—Only data that has changed since the last full or incremental backup 
+is copied to a storage medium. An incremental backup saves only files whose archive bit is 
+checked. After backing up files, an incremental backup unchecks the archive bit for every file 
+it has saved. 
+ 
+● Differential backup—Only data that has changed since the last backup is copied to a storage 
+medium, and that information is then marked for subsequent backup, regardless of whether 
+it has changed. In other words, a differential backup does not uncheck the archive bits for files 
+it backs up. 

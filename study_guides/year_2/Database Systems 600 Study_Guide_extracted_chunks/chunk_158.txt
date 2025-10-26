@@ -1,0 +1,14 @@
+their own unique characteristics. 
+Two criteria help the designer determine when to use subtypes and supertypes:  
+ 
+There must be different, identifiable kinds or types of the entity in the user’s environment. 
+ 
+The different kinds or types of instances should each have one or more attributes that are 
+unique to that kind or type of instance.  
+For example, because pilots meet both criteria of being an identifiable kind of employee and having 
+unique attributes that other employees do not possess, it is appropriate to create PILOT as a subtype 
+of EMPLOYEE. Assume that mechanics and accountants also each have attributes that are unique 
+to them, respectively, and that clerks do not. In that case, MECHANIC and ACCOUNTANT would 
+also be legitimate subtypes of EMPLOYEE because they are identifiable kinds of employees and 
+have unique attributes. CLERK would not be an acceptable subtype of EMPLOYEE because it only 
+satisfies one of the criteria—it is an identifiable kind of employee—b

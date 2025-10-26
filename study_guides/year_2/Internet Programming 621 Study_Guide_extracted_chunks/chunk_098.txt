@@ -1,0 +1,21 @@
+g of text for a keyword to see how 
+relevant the text is for that keyword; the more occurrences of the keyword, the greater the chance 
+that the text is relevant.  
+  
+You could find the number of occurrences easily enough using strpos() and a loop, but PHP, as in 
+most other things, gives you a function to do the job for you: substr_count() . To use it, simply pass 
+the string to search and the text to search for, and the function returns the number of times the text 
+was found in the string. For example:  
+
+50  
+  
+$myString = “I say, nay, nay, and thrice nay!”;  
+echo substr_count( $myString, “nay” ); // Displays ‘3’ 
+  
+You can also pass an optional third argument to specify the index position to start searching, and an 
+optional fourth argument to indicate how many characters the function should search before giving 
+up.  
+Here are some examples that use these third and fourth arguments:  
+  
+$myString = “I say, nay, nay, and thrice nay!”; echo substr_count( 
+$myString, “nay”, 9 )

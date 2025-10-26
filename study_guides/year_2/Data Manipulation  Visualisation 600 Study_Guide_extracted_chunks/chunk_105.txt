@@ -1,0 +1,22 @@
+ll create offline plotly graphs and run them locally. 
+● basic2.py uses a list comprehension to build a trace for each column in the DataFrame. 
+This technique is covered in more detail later. 
+  Run this script at the terminal. A browser should open automatically and you should see something like this: 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+● Hover over data points in the graph to reveal specific information. 
+● Note that clicking on a trace (in the legend, a trace represents one of the displayed datasets A, B, C or D) removes 
+it from the rest, and double-clicking a trace isolates it. Double-click again to redisplay the other traces. 
+● If you look to the directory where basic2.py was saved, you should see a new file named temp-plot.html. Plotly 
+created this file, and this is what's showing in the browser. We’ll show later how adding a filename='something-
+else.html' argument lets you change the name of the file (useful when working with replaces earlier copies of the file. 
+ 
+Plots vs. Charts - we se

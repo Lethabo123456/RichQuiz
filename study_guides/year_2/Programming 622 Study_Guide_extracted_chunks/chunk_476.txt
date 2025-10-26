@@ -1,0 +1,27 @@
+rType  
+{ public: customerType(int cN = 0, int arrvTime = 0, int wTime = 0, int tTime = 0);  
+//Constructor to initialize the instance variables  
+//according to the parameters  
+
+238  
+  
+//If no value is specified in the object declaration, //the 
+default values are assigned.  
+//Postcondition: customerNumber = cN; arrivalTime = arrvTime;  
+// waitingTime = wTime; transactionTime = tTime  
+  
+void setCustomerInfo(int cN = 0, int inTime = 0, int wTime = 0, int tTime = 0); //Function 
+to initialize the instance variables.  
+//Instance variables are set according to the parameters.  
+//Postcondition: customerNumber = cN; arrivalTime = arrvTime;  
+// waitingTime = wTime; transactionTime = tTime;  
+  
+int getWaitingTime() const;  
+//Function to return the waiting time of a customer.  
+//Postcondition: The value of waitingTime is returned.  
+  
+void setWaitingTime(int time);  
+//Function to set the waiting time of a customer.  
+//Postcondition: waitingTime = time;  
+  
+void incrementWaitin

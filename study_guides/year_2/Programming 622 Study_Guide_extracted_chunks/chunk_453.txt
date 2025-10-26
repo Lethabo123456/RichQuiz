@@ -1,0 +1,41 @@
+e parent class queueADT.  
+  
+
+230  
+  
+ 
+ 
+ 
+ 
+6.3.2  Initialize Queue  
+  
+The operation initializeQueue initializes the queue to an empty state. The queue is empty if there are no 
+elements in the queue. Note that the constructor initializes the queue when the queue object is declared. 
+So this operation must remove all the elements, if any, from the queue. Therefore, this operation 
+traverses the list containing the queue starting at the first node, and it deallocates the memory occupied 
+by the queue elements. The definition of this function is as follows:  
+  
+template <class Type>  
+void linkedQueueType<Type>::initializeQueue()  
+{  
+nodeType<Type> *temp;  
+ 
+while (queueFront!= NULL)    
+  
+//while there are elements left in the queue  
+{  
+temp = queueFront;      
+//set temp to point to the current node queueFront = 
+queueFront->link;   
+//advance first to the next node  
+ 
+delete temp;    
+  
+  
+//deallocate memory occupied by temp  
+}  
+ 
+queueRear = NULL;     
+  
+  
+//set r

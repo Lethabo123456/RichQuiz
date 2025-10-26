@@ -1,0 +1,47 @@
+s) 
+pyo.plot(fig, filename='multiset_distplot.html') 
+ 
+ 
+ 
+ 
+ 
+A normal distribution would show an even, symmetric bell curve. These generally do not.
+
+ 
+ 
+ 
+ 
+Distplots are not very informative on small datasets. 
+dist3.py goes back to our Mark Twain example, and plots two groups of only 10 and 8 points, respectively. 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.figure_factory as ff 
+ 
+snodgrass = [.209,.205,.196,.210,.202,.207,.224,.223,.220,.201] twain = 
+[.225,.262,.217,.240,.230,.229,.235,.217] 
+ 
+hist_data = [snodgrass,twain] 
+group_labels = ['Snodgrass','Twain'] 
+ 
+fig = ff.create_distplot(hist_data, group_labels, bin_size=[.005,.005]) 
+pyo.plot(fig, filename='SnodgrassTwainDistplot.html') 
+ 
+ 
+ 
+ 
+We set the bin_size to .005, and the results are confusing at best. 
+Box plots were clearly a better choice here! 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+     6.3.8 Heatmaps 
+In their simplest forms, Bar Charts, Box Plots, Histograms and Distplots help visualize “univariate 
+distributions” - that is

@@ -1,0 +1,418 @@
+Here’s another example using the Manhattan distance heuristic: 
+import heapq 
+ 
+# Heuristic function: Manhattan distance (used to estimate cost to goal) 
+def heuristic(a, b): 
+    return abs(a[0] - b[0]) + abs(a[1] - b[1]) 
+ 
+# A* pathfinding function 
+def astar(grid, start, goal): 
+    open_list = []  # Priority queue: stores (f_score, node) 
+    heapq.heappush(open_list, (0, start))  # Start node with f_score = 0 
+    came_from = {}  # Keeps track of the best path to each node 
+    g_score = {start: 0}  # Cost from start to current node 
+ 
+    while open_list: 
+        # Get the node with the lowest f_score 
+        _, current = heapq.heappop(open_list) 
+ 
+        # If goal is reached, reconstruct the path 
+        if current == goal: 
+            path = [] 
+            while current in came_from: 
+                path.append(current) 
+                current = came_from[current] 
+            return path[::-1]  # Reverse the path to get start -> goal 
+ 
+        # Explore neighbors (up, down, left, right) 
+        for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]: 
+            neighbor = (current[0] + dx, current[1] + dy) 
+
+            # Check if neighbor is within bounds and not an obstacle 
+            if 0 <= neighbor[0] < len(grid) and 0 <= neighbor[1] < len(grid[0]) and 
+grid[neighbor[0]][neighbor[1]] == 0: 
+                temp_g = g_score[current] + 1  # Tentative g_score 
+ 
+                # If this path to neighbor is better than any previous one 
+                if temp_g < g_score.get(neighbor, float('inf')): 
+                    g_score[neighbor] = temp_g  # Update g_score 
+                    f = temp_g + heuristic(neighbor, goal)  # Calculate f_score 
+                    heapq.heappush(open_list, (f, neighbor))  # Add to open list 
+                    came_from[neighbor] = current  # Track path 
+ 
+    return None  # No path found 
+ 
+# Create a 10x10 grid with 0s (free space) 
+grid = [[0]*10 for _ in range(10)] 
+ 
+# Add a wall (obstacle) from (5,3) to (5,7) 
+for i in range(3, 8): 
+    grid[5][i] = 1 
+ 
+# Define start and goal positions 
+start, goal = (2, 2), (7, 7) 
+ 
+# Run A* algorithm 
+path = astar(grid, start, goal) 
+ 
+# Visualize the result 
+for i in range(10): 
+
+    row = "" 
+    for j in range(10): 
+        if (i, j) == start: 
+            row += "S "  # Start node 
+        elif (i, j) == goal: 
+            row += "G "  # Goal node 
+        elif (i, j) in (path or []): 
+            row += "* "  # Path node 
+        elif grid[i][j] == 1: 
+            row += "[] "  # Obstacle 
+        else: 
+            row += ". "  # Empty space 
+    print(row) 
+ 
+Which produces the following results: 
+ 
+The next example covers multiple heuristics: 
+import heapq 
+import math 
+from typing import List, Tuple, Dict, Set, Optional, Callable 
+ 
+class Node: 
+    """Node class for A* algorithm""" 
+    def __init__(self, position: Tuple[int, int], g_cost: float = 0, h_cost: float = 0, parent=None): 
+
+        self.position = position 
+        self.g_cost = g_cost  # Cost from start 
+        self.h_cost = h_cost  # Heuristic cost to goal 
+        self.f_cost = g_cost + h_cost  # Total cost 
+        self.parent = parent 
+ 
+    def __lt__(self, other): 
+        return self.f_cost < other.f_cost 
+ 
+    def __eq__(self, other): 
+        return self.position == other.position 
+ 
+    def __hash__(self): 
+        return hash(self.position) 
+ 
+def manhattan_distance(pos1: Tuple[int, int], pos2: Tuple[int, int]) -> float: 
+    """Manhattan distance heuristic (for grid-based movement)""" 
+    return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1]) 
+ 
+def euclidean_distance(pos1: Tuple[int, int], pos2: Tuple[int, int]) -> float: 
+    """Euclidean distance heuristic (for diagonal movement)""" 
+    return math.sqrt((pos1[0] - pos2[0]) ** 2 + (pos1[1] - pos2[1]) ** 2) 
+ 
+def diagonal_distance(pos1: Tuple[int, int], pos2: Tuple[int, int]) -> float: 
+    """Diagonal distance heuristic (Chebyshev distance)""" 
+    dx = abs(pos1[0] - pos2[0]) 
+    dy = abs(pos1[1] - pos2[1]) 
+    return max(dx, dy) 
+ 
+
+def astar_grid(grid: List[List[int]], start: Tuple[int, int], goal: Tuple[int, int], 
+               heuristic: Callable = manhattan_distance, allow_diagonal: bool = False) -> Optional[ 
+    List[Tuple[int, int]]]: 
+    """ 
+    A* pathfinding on a 2D grid 
+ 
+    Args: 
+        grid: 2D list where 0 = walkable, 1 = obstacle 
+        start: Starting position (row, col) 
+        goal: Goal position (row, col) 
+        heuristic: Heuristic function to use 
+        allow_diagonal: Whether diagonal movement is allowed 
+ 
+    Returns: 
+        List of positions representing the path, or None if no path exists 
+    """ 
+    rows, cols = len(grid), len(grid[0]) 
+ 
+    # Validate start and goal positions 
+    if (start[0] < 0 or start[0] >= rows or start[1] < 0 or start[1] >= cols or 
+            goal[0] < 0 or goal[0] >= rows or goal[1] < 0 or goal[1] >= cols or 
+            grid[start[0]][start[1]] == 1 or grid[goal[0]][goal[1]] == 1): 
+        return None 
+ 
+    # Define possible movements 
+    if allow_diagonal: 
+        # 8-directional movement 
+        movements = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)] 
+        # Cost for diagonal movement is sqrt(2), orthogonal is 1 
+
+        costs = [math.sqrt(2), 1, math.sqrt(2), 1, 1, math.sqrt(2), 1, math.sqrt(2)] 
+    else: 
+        # 4-directional movement 
+        movements = [(-1, 0), (1, 0), (0, -1), (0, 1)]  # Up, Down, Left, Right 
+        costs = [1, 1, 1, 1] 
+ 
+    # Initialize start node 
+    start_node = Node(start, 0, heuristic(start, goal)) 
+ 
+    # Open list (priority queue) and closed set 
+    open_list = [start_node] 
+    closed_set: Set[Tuple[int, int]] = set() 
+ 
+    # Keep track of nodes for efficient lookups 
+    open_dict: Dict[Tuple[int, int], Node] = {start: start_node} 
+ 
+    while open_list: 
+        # Get node with lowest f_cost 
+        current_node = heapq.heappop(open_list) 
+        current_pos = current_node.position 
+ 
+        # Remove from open_dict 
+        if current_pos in open_dict: 
+            del open_dict[current_pos] 
+ 
+        # Add to closed set 
+        closed_set.add(current_pos) 
+ 
+
+        # Check if we reached the goal 
+        if current_pos == goal: 
+            # Reconstruct path 
+            path = [] 
+            while current_node: 
+                path.append(current_node.position) 
+                current_node = current_node.parent 
+            return path[::-1]  # Reverse to get start-to-goal path 
+ 
+        # Explore neighbors 
+        for i, (dr, dc) in enumerate(movements): 
+            neighbor_pos = (current_pos[0] + dr, current_pos[1] + dc) 
+            # Check bounds and obstacles 
+            if (0 <= neighbor_pos[0] < rows and 0 <= neighbor_pos[1] < cols and 
+                    grid[neighbor_pos[0]][neighbor_pos[1]] == 0 and 
+                    neighbor_pos not in closed_set): 
+ 
+                # Calculate costs 
+                tentative_g_cost = current_node.g_cost + costs[i] 
+                h_cost = heuristic(neighbor_pos, goal) 
+ 
+                # Check if this path to neighbor is better 
+                if neighbor_pos in open_dict: 
+                    neighbor_node = open_dict[neighbor_pos] 
+                    if tentative_g_cost < neighbor_node.g_cost: 
+                        # Update existing node 
+                        neighbor_node.g_cost = tentative_g_cost 
+                        neighbor_node.f_cost = tentative_g_cost + h_cost 
+                        neighbor_node.parent = current_node 
+
+                        heapq.heapify(open_list)  # Re-heapify since we changed costs 
+                else: 
+                    # Create new node 
+                    neighbor_node = Node(neighbor_pos, tentative_g_cost, h_cost, current_node) 
+                    heapq.heappush(open_list, neighbor_node) 
+                    open_dict[neighbor_pos] = neighbor_node 
+ 
+    return None  # No path found 
+ 
+def astar_graph(graph: Dict, start, goal, heuristic: Callable) -> Optional[List]: 
+    """ 
+    A* for general graphs 
+ 
+    Args: 
+        graph: Dictionary where keys are nodes and values are lists of (neighbor, cost) tuples 
+        start: Start node 
+        goal: Goal node 
+        heuristic: Function that takes (node, goal) and returns heuristic cost 
+ 
+    Returns: 
+        List representing the path, or None if no path exists 
+    """ 
+    start_node = Node(start, 0, heuristic(start, goal)) 
+ 
+    open_list = [start_node] 
+    closed_set = set() 
+    open_dict = {start: start_node} 
+ 
+
+    while open_list: 
+        current_node = heapq.heappop(open_list) 
+        current_pos = current_node.position 
+ 
+        if current_pos in open_dict: 
+            del open_dict[current_pos] 
+ 
+        closed_set.add(current_pos) 
+ 
+        if current_pos == goal: 
+            # Reconstruct path 
+            path = [] 
+            while current_node: 
+                path.append(current_node.position) 
+                current_node = current_node.parent 
+            return path[::-1] 
+ 
+        # Explore neighbors 
+        if current_pos in graph: 
+            for neighbor, cost in graph[current_pos]: 
+                if neighbor not in closed_set: 
+                    tentative_g_cost = current_node.g_cost + cost 
+                    h_cost = heuristic(neighbor, goal) 
+ 
+                    if neighbor in open_dict: 
+                        neighbor_node = open_dict[neighbor] 
+                        if tentative_g_cost < neighbor_node.g_cost: 
+                            neighbor_node.g_cost = tentative_g_cost 
+                            neighbor_node.f_cost = tentative_g_cost + h_cost 
+
+                            neighbor_node.parent = current_node 
+                            heapq.heapify(open_list) 
+                    else: 
+                        neighbor_node = Node(neighbor, tentative_g_cost, h_cost, current_node) 
+                        heapq.heappush(open_list, neighbor_node) 
+                        open_dict[neighbor] = neighbor_node 
+ 
+    return None 
+ 
+def print_grid_with_path(grid: List[List[int]], path: List[Tuple[int, int]] = None): 
+    """Visualize grid with path""" 
+    if not path: 
+        path = [] 
+ 
+    path_set = set(path) 
+ 
+    for i, row in enumerate(grid): 
+        line = "" 
+        for j, cell in enumerate(row): 
+            if (i, j) in path_set: 
+                if (i, j) == path[0]:  # Start 
+                    line += "S " 
+                elif (i, j) == path[-1]:  # Goal 
+                    line += "G " 
+                else: 
+                    line += "* " 
+            elif cell == 1: 
+                line += "[]"  # Obstacle 
+            else: 
+
+                line += ". "  # Empty space 
+        print(line) 
+ 
+def compare_heuristics(): 
+    """Compare different heuristic functions""" 
+ 
+    # Simple test grid 
+    grid = [ 
+        [0, 0, 0, 1, 0, 0, 0], 
+        [0, 1, 0, 1, 0, 1, 0], 
+        [0, 1, 0, 0, 0, 1, 0], 
+        [0, 0, 0, 1, 1, 1, 0], 
+        [1, 1, 0, 0, 0, 0, 0], 
+        [0, 0, 0, 1, 1, 1, 1], 
+        [0, 0, 0, 0, 0, 0, 0] 
+    ] 
+ 
+    start = (0, 0) 
+    goal = (6, 6) 
+ 
+    heuristics = [ 
+        ("Manhattan", manhattan_distance), 
+        ("Euclidean", euclidean_distance), 
+        ("Diagonal", diagonal_distance) 
+    ] 
+ 
+    print("Heuristic Comparison") 
+    print("=" * 50) 
+    print("Grid:") 
+
+    print_grid_with_path(grid) 
+    print() 
+ 
+    for name, heuristic_func in heuristics: 
+        path = astar_grid(grid, start, goal, heuristic_func, allow_diagonal=True) 
+        if path: 
+            print(f"{name} Heuristic:") 
+            print(f"  Path length: {len(path)}") 
+            print(f"  Path cost: {sum(euclidean_distance(path[i], path[i + 1]) for i in range(len(path) - 
+1)):.2f}") 
+            print_grid_with_path(grid, path) 
+            print() 
+ 
+# Example usage and demonstrations 
+if __name__ == "__main__": 
+    print("A* Algorithm Demonstration") 
+    print("=" * 40) 
+ 
+    # Example 1: Simple grid pathfinding 
+    simple_grid = [ 
+        [0, 0, 1, 0, 0], 
+        [0, 0, 1, 0, 0], 
+        [0, 0, 0, 0, 0], 
+        [0, 1, 1, 1, 0], 
+        [0, 0, 0, 0, 0] 
+    ] 
+ 
+    start_pos = (0, 0) 
+    goal_pos = (4, 4) 
+
+    print("Example 1: Grid Pathfinding") 
+    print("Original grid:") 
+    print_grid_with_path(simple_grid) 
+ 
+    path = astar_grid(simple_grid, start_pos, goal_pos, manhattan_distance) 
+ 
+    if path: 
+        print(f"\nPath found with {len(path)} steps:") 
+        print_grid_with_path(simple_grid, path) 
+        print(f"Path: {' -> '.join([str(p) for p in path])}") 
+    else: 
+        print("No path found!") 
+ 
+    print("\n" + "=" * 40) 
+ 
+    # Example 2: Graph pathfinding 
+    graph = { 
+        'A': [('B', 1), ('C', 4)], 
+        'B': [('A', 1), ('C', 2), ('D', 5)], 
+        'C': [('A', 4), ('B', 2), ('D', 1)], 
+        'D': [('B', 5), ('C', 1), ('E', 3)], 
+        'E': [('D', 3)] 
+    } 
+ 
+    # Simple heuristic for this example (just return 0 for simplicity) 
+    def simple_heuristic(node, goal): 
+        distances = {'A': 4, 'B': 3, 'C': 2, 'D': 1, 'E': 0}  # Heuristic distances to 'E' 
+        return distances.get(node, 0) 
+ 
+
+    print("Example 2: Graph Pathfinding") 
+    graph_path = astar_graph(graph, 'A', 'E', simple_heuristic) 
+ 
+    if graph_path: 
+        print(f"Path from A to E: {' -> '.join(graph_path)}") 
+    else: 
+        print("No path found!") 
+ 
+    print("\n" + "=" * 40) 
+    compare_heuristics() 
+
+This example yields the following results:
+  
+A* Algorithm Demonstration
+==========================================
+. . []. .
+. . []. .
+. . . . .
+. [][][].
+. . . . .
+
+Path found with 9 steps:
+S . []. .
+* . . . .
+* . . . .
+* [][][].
+* * * * G
+Path: (0, 0) -> (1, 0) -> (2, 0) -> (3, 0) -> (4, 0) -> (4, 1) -> (4, 2) -> (4, 3) -> (4, 4)
+
+================================================
+Example 2: Graph Pathfinding
+
+Path from A to E: A -> B -> C -> D -> E
+
+ 

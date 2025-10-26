@@ -1,0 +1,16 @@
+il. Because a queue is an important data 
+structure, the Standard Template Library (STL) provides a class to implement queues in a program. The 
+name of the class defining the queue is queue, and the name of the header file containing the definition 
+of the class queue is queue. The class queue provided by the STL is implemented similar to the classes 
+discussed in this chapter. Table 6-1 defines various operations supported by the queue container class.  
+TABLE 6-1: Operations on a queue object  
+  
+  
+In addition to the operations size, empty, push, front, back, and pop, the queue container class provides 
+relational operators to compare two queues. For example, the relational operator == can be used to 
+determine whether two queues are identical.  
+  
+The program in Example 6-2 illustrates how to use the queue container class.  
+EXAMPLE 6-2  
+//*************************************************************** 
+// This program illustrates how to use the STL class queue in a program.

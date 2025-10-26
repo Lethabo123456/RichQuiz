@@ -1,0 +1,44 @@
+<Type>::isEmptyStack() const  
+{  
+return(stackTop == NULL);  
+ 
+}   
+  
+  
+  
+  
+  
+//end isEmptyStack  
+  
+template <class Type>  
+bool linkedStackType<Type>::isFullStack() const  
+{ return false;  
+ 
+}   
+  
+  
+  
+  
+  
+//end isFullStack  
+  
+Recall that in the linked implementation of stacks, the function isFullStack does not apply because logically 
+the stack is never full. However, you must provide its definition because it is included as an abstract 
+function in the parent class stackADT.   
+  
+ 
+5.3.3  Initialize Stack  
+  
+The operation initializeStack reinitializes the stack to an empty state. Because the stack might contain 
+some elements and we are using a linked implementation of a stack, we must deallocate the memory 
+occupied by the stack elements and set stackTop to NULL. The definition of this function is as follows:  
+  
+template <class Type>  
+void linkedStackType<Type>:: initializeStack()  
+{  
+ 
+nodeType<Type> *temp;   
+  
+//pointer to delete the node  
+ 
+while (st

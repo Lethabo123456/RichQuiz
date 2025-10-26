@@ -1,0 +1,188 @@
+/* ===============================
+   Advanced Machine Learning Results Theme
+   =============================== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f1f, #2a2a72, #0f0f1f);
+  font-family: 'Roboto Mono', monospace;
+  color: #f0f8ff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Neon grid overlay for ML vibe */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02) 1px, transparent 1px, transparent 5px),
+                    repeating-linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02) 1px, transparent 1px, transparent 5px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Card container */
+.card {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 50px;
+  background: rgba(25, 25, 55, 0.95);
+  border-radius: 25px;
+  border: 3px solid #ff66ff;
+  box-shadow: 0 0 50px rgba(255,102,255,0.7), inset 0 0 30px rgba(102,204,255,0.4);
+  position: relative;
+  z-index: 2;
+  animation: cardGlow 4s infinite alternate;
+}
+
+@keyframes cardGlow {
+  0% { box-shadow: 0 0 20px rgba(255,102,255,0.5), inset 0 0 20px rgba(102,204,255,0.4); }
+  100% { box-shadow: 0 0 60px rgba(255,102,255,0.9), inset 0 0 50px rgba(102,204,255,0.7); }
+}
+
+/* Headings */
+h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff99ff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 15px #ff99ff, 0 0 25px #66ccff;
+}
+
+/* Score display */
+.score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ccfffe;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 0 8px #66ccff;
+}
+
+/* Progress bar */
+.progress-container {
+  width: 100%;
+  background: rgba(60, 60, 100, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+  border: 1px solid #66ccff;
+}
+
+.progress-bar {
+  height: 25px;
+  background: linear-gradient(90deg, #ff66ff, #66ccff, #ff66ff);
+  width: 0%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ff66ff, inset 0 0 15px #66ccff;
+  transition: width 1s ease-in-out;
+}
+
+/* Result text */
+#result-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 0 12px #ff66ff, 0 0 24px #66ccff;
+}
+
+/* Time display */
+.time {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #ccfffe;
+  text-shadow: 0 0 6px #66ccff;
+}
+
+/* Adaptive feedback */
+.adaptive-feedback {
+  background: rgba(50, 50, 90, 0.6);
+  border-left: 5px solid #ff66ff;
+  padding: 15px 20px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #66ccff inset;
+}
+
+.adaptive-feedback ul {
+  padding-left: 20px;
+}
+
+.adaptive-feedback li {
+  margin: 10px 0;
+  color: #ccfffe;
+}
+
+/* Answer summary */
+.summary {
+  margin-top: 30px;
+}
+
+.qa {
+  background: rgba(60, 60, 100, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border-left: 5px solid #66ccff;
+  transition: all 0.3s ease;
+}
+
+.qa.correct {
+  border-left-color: #33ff99;
+  box-shadow: 0 0 10px #33ff99 inset;
+}
+
+.qa.incorrect {
+  border-left-color: #ff4d4d;
+  box-shadow: 0 0 10px #ff4d4d inset;
+}
+
+.question-text {
+  font-weight: bold;
+  color: #ccfffe;
+  text-shadow: 0 0 4px #66ccff;
+}
+
+.reasoning pre {
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 8px;
+  color: #ccfffe;
+  overflow-x: auto;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #ff66ff, #66ccff, #ff66ff);
+  box-shadow: 0 0 25px rgba(255,102,255,0.7);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #66ffcc, #ff99ff, #66ffcc);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(102,255,204,0.8);
+}

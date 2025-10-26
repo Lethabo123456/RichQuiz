@@ -1,0 +1,34 @@
+//the right subtree of p becomes  
+//the left subtree of root  
+p->rlink = root;  
+ 
+root = p;   
+  
+  
+  
+  
+//make p the new root node  
+}  
+}//end rotateRight  
+  
+Now that we know how to implement both rotations, we next write the C++ functions, balanceFromLeft 
+and balanceFromRight, which are used to reconstruct the tree at a particular node. The pointer of the 
+node where reconstruction occurs is passed as a parameter to this function. These functions use the 
+functions rotateToLeft and rotateToRight to reconstruct the tree, and also adjust the balance factors of 
+the nodes affected by the reconstruction. The function balanceFromLeft is called when the subtree is left 
+double high and certain nodes need to be moved to the right subtree. The function balanceFromRight has 
+similar conventions.  
+  
+template <class elemT>  
+void balanceFromLeft(AVLNode<elemT>* &root)  
+{  
+AVLNode<elemT> *p;  
+AVLNode<elemT> *w;  
+  
+ 
+p = root->llink;   
+  
+  
+  
+  
+//p points to the left s

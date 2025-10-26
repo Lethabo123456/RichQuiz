@@ -1,0 +1,18 @@
+erceptrons have one or 
+more layers between the input nodes and the eventual output nodes. Middle layer are called 
+a hidden layer, between the input and the output (see Figure 5.11). The question is, what 
+happens in the hidden layer? The input values would then be fed to the hidden layer, and the 
+input is dependent on the output of the input layer. 
+
+P a g e  | 63 
+ 
+          
+ 
+            Figure 5.11: A neural network with one input, one hidden and one output layer 
+ 
+This is where the neural network becomes useful. You can train the network for classification 
+and pattern recognition, but it does require training. You can train an artificial neural network 
+by unsupervised or supervised means. The issue is that you don't know what the weight 
+values should be for the hidden layer. By changing the bias in the Sigmoid function, you can 
+vary the output layer, an error function can be applied, and the aim is to get the value of the 
+error function to a minimum value. You need somet

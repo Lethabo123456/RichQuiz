@@ -1,0 +1,29 @@
+properties of a linked list as an ADT: 
+//***********************************************************  
+// This class specifies the members to implement the basic // 
+properties of a linked list. This is an abstract class.  
+// We cannot instantiate an object of this class.  
+//*********************************************************** template 
+<class Type>  
+class linkedListType  
+{  
+public:  
+const linkedListType<Type>& operator=(const linkedListType<Type>&); //Overload 
+the assignment operator.  
+  
+void initializeList();  
+//Initialize the list to an empty state.  
+//Postcondition: first = NULL, last = NULL, count = 0;  
+  
+bool isEmptyList() const;  
+//Function to determine whether the list is empty. 
+//Postcondition: Returns true if the list is empty, otherwise // 
+it returns false.  
+  
+void print() const;  
+//Function to output the data contained in each node.  
+//Postcondition: none  
+  
+int length() const;  
+//Function to return the number of nodes in the list.  
+//Postco

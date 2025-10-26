@@ -1,0 +1,59 @@
+nline function at every location the 
+function is called. When a function is called, memory for its parameters and local 
+variables is allocated and when the function exits the memory is deallocated. So there 
+is an overhead when calling a function. In the case of an inline function the overhead 
+of a function invocation is saved.  
+
+214 | P a g e  
+ 
+ 
+ 
+ 
+ 
+
+215 | P a g e  
+ 
+ 
+ 
+
+216 | P a g e  
+ 
+ 
+ 
+
+217 | P a g e  
+ 
+ 
+ 
+ 
+
+218 | P a g e  
+ 
+ 
+ 
+
+219 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+220 | P a g e  
+ 
+ 
+1. A class is a collection of a fixed number of components. 
+2. Components of a class are called the members of the class. 
+3. The private members of a class are not directly accessible outside of the class. 
+4. The public members of a class are directly accessible outside of the class. 
+5. By default, all members of a class are private. 
+6. A member function of a class is called a constant function if its heading contains 
+the reserved word const at the end. Moreover, a cons

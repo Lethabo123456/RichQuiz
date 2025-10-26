@@ -1,0 +1,15 @@
+us, we use e-λ 
+as the cutoff point to determine whether a customer arrives at a given time unit. Suppose that, on 
+average, a customer arrives every four minutes. Then λ = 0.25.We can use an algorithm to generate a 
+number between 0 and 1. If the value of the number generated is > e-0.25, we can assume that the customer 
+arrived at a particular time unit. For example, suppose that rNum is a random number such that 0 ≤ rNum 
+≤ 1. If rNum> e-0.25, the customer arrived at the given time unit.  
+  
+
+250  
+  
+We now describe the function runSimulation to implement the simulation. Suppose that we run the 
+simulation for 100 time units and customers arrive at time units 93, 96, and 100. The average transaction 
+time is 5 minutes—that is, 5 time units. For simplicity, assume that we have only one server and the server 
+becomes free at time unit 97, and that all customers arriving before time unit 93 have been served. When 
+the server becomes free at time unit 97, the customer arriving at time

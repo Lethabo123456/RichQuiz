@@ -1,0 +1,24 @@
+of the target table are different: 
+INSERT INTO PART  
+(PART_CODE, PART_DESCRIPT, PART_PRICE, V_CODE) 
+SELECT   
+ 
+P_CODE, P_DESCRIPT, P_PRICE, V_CODE  
+FROM PRODUCT; 
+Given the previous SQL statement, the INSERT portion represents the outer query, and the 
+SELECT portion represents the subquery. 
+
+ 
+120 
+The values returned by the SELECT subquery should match the attributes and data types of the 
+table in the INSERT statement. 
+Saving Table Changes 
+Any changes made to the table contents are not saved on disk until you close the data-base, close 
+the program you are using, or use the COMMIT command. The syntax for the COMMIT command 
+is:  
+COMMIT [WORK]  
+The COMMIT command permanently saves all changes—such as rows added, attributes modified, 
+and rows deleted—made to any table in the database.  
+However, the COMMIT command’s purpose is not just to save changes. In fact, the ultimate 
+purpose of the COMMIT and ROLLBACK commands is to ensure database update integrity in 
+transaction

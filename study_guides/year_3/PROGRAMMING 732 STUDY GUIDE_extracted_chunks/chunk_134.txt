@@ -1,0 +1,48 @@
+4.1.25 Generating Inline Content  
+Sometimes a web page needs only a small piece of information that is customized at runtime. The 
+remainder of a page can be static information. To substitute only small amounts of information, some 
+web servers support a concept known as server-side includes, or SSI.   
+If it supports SSI, the web server designates a special file extension (usually .shtml) which tells the server 
+that it should look for SSI tags in the requested file. The JWS defines a special SSI tag called the <servlet> 
+tag, for example:   
+  
+  <servlet code="DatePrintServlet">  
+    <param name=timezone value=pst>  
+</servlet>  
+  
+This tag causes the invoking of a servlet named DatePrintServlet to generate some in-line content.  SSI 
+and servlets allow an HTML page designer to write a skeleton for a page, using servlets to fill in sections 
+of it, rather than require the servlet to generate the entire page. This is very useful for features like page-
+hit counters and other small pieces of functionality.   
+The DatePrintServlet servlet works just like a regular servlet except that it is designed to provide a very 
+small response and not a complete HTML page. The output MIME type gets set to "text/plain" and not 
+"text/html". Keep in mind that the syntax of server-side includes, if they are even supported, may vary 
+greatly from one web server to another.  In the following Magercise you create the DatePrintServlet and 
+see how to use it in an HTML page. 
+
+4.1.26 Processing HTTP Post Requests  
+HTTP POST method processing differs from HTTP GET method processing in several ways. First, because 
+POST is expected to modify data on the server, there can be a need to safely handle updates coming from 
+multiple clients at the same time. Second, because the size of the information stream sent by the client 
+can be very large, the doPost() method must open an InputStream (or Reader) from the client to get any 
+of the information. HTTP POST does not support sending parameters encoded inside of the URL as does 
+the HTTP GET method. The problem of supporting simultaneous updates from multiple clients has been 
+solved by database systems (DBMSs); unfortunately the HTTP protocol does not work well with database 
+systems. This is because DBMSs need to maintain a persistent connection between a client and the DBMS 
+to determine which client is trying to update the data. The HTTP protocol does not support this type of a 
+connection as it is a message based, stateless protocol. Solving this problem is not easy and never elegant! 
+Fortunately, the Servlet API defines a means to track client/server sessions. This is covered in the 
+Maintaining Session Information section later in this course. Without session management tracking, one 
+can resort to several different strategies. They all involve writing data to the client in hidden fields which 
+is then sent back to the server. The simplest way to handle updates is to use an optimistic locking scheme 
+based on date/time stamps. One can use a single date/time stamp for a whole form of data, or one could 
+use separate date/time stamps for each "row" of information. Once the update strategy has been 
+selected, capturing the data sent to the server via an HTTP POST method is straightforward. Information 
+from the HTML form is sent as a series of parameters (name/value pairs) in the InputStream object. The 
+HttpUtils class contains a method parsePostData() that accepts the raw InputStream from the client and 
+return a Hashtable with the parameter information already processed. A really nice feature is that if a 
+parameter of a given name has multiple values (such is the case for a column name with multiple rows), 
+then this information can be retrieved from the Hashtable as an array of type String. In the following 
+Magercise, you will be given skeleton code that implements a pair of servlets that display data in a browser 
+as an editable HTML form. The structure of the data is kept separate from the actual data. This makes it 
+easy to modify this code to run against arbitrary tables from a JDBC-connected database. 

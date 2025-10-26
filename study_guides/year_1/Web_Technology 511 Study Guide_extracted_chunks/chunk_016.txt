@@ -1,0 +1,26 @@
+1.6 UNIFORM RESOURCE LOCATORS (URL) 
+To identify a particular page or document on the Internet, you need an Internet 
+address called a Uniform Resource Locator, or URL. A URL consists of three major 
+components that provide the necessary information to find a specific document. 
+These components are separated by a forward slash (/). For example, the URL for 
+the page that contains downloadable files for Microsoft Internet Explorer might be 
+as follows: 
+
+http://www.microsoft.com/ie/downloads 
+ http:// is the protocol used.
+ www.microsoft.com/ is the server’s host name and domain.
+ ie/downloads is the directory path where the page is stored. The path might 
+also include files names.
+
+1.7 UNDERSTANDING E-MAIL 
+Short for electronic mail, e-mail or email is text messages that may contain 
+files, images, or other attachments sent through a network to a specified individual 
+or group of individuals. The first e-mail was sent by Ray Tomlinson in 1971. By 1996, 
+more electronic mail was being sent than postal mail. Below is an example and 
+breakdown of an Internet e-mail address. 
+When sending an email, the sender’s computer uses SMTP protocol to send an email 
+to the email server which passes the email to the receivers email server. The sender’s 
+and receiver’s email servers communicate using SMTP. An email will reside on the 
+receiver’s server until a request to download or get an email is sent by the receiver. 
+An email is then sent to the receiver’s computer using POP3 or IMAP4 protocol. 
+

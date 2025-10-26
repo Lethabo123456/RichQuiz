@@ -1,0 +1,28 @@
+In the Configure Activity window, change the Activity Name to ContactListActivity. Accept the defaults 
+(check Generate Layout file, Layout name: activity_contact_list, uncheck Launcher Activity, Package 
+name: com.example.mycontactlist, Source Language: Java). Click Finish. Repeat this process to add 
+another two activities to your project. Give the activities the names ContactMapActivity and 
+ContactSettingsActivity. Find the res folder in the Project Explorer and expand the layout folder. You 
+should now have four layout XML files, one for each activity. 
+
+Set the Launch Icon 
+The launch icon is the picture displayed above the app’s name in the device’s Apps screen. An icon 
+should give the user some idea about the function of the app. Launch icons are stored in the mipmap 
+folder of the res folder in the Project window. You should have a number of app icons of different sizes 
+named exactly the same name. To set the launch icon, you will copy the launch images provided to 
+the mipmap folder in your Android project. There are four versions of the launch image provided. Each 
+is in a different folder. Each will have to be individually copied to your project. Follow this procedure: 
+
+1. Expand the res folder, which is in the app folder, until you see the mipmap folder. 
+2. Open Windows Explorer and navigate to the folder where you placed the Images folder; then 
+open one of the HDPI, MDPI, XHDPI, XXHDPI, or XXXHDPI folders. Right-click on the 
+contactlist_launch_icon and choose Copy. 
+3. Go back to Android Studio and right-click on the mipmap folder. Choose Paste. On the window 
+that opens, select the folder that has a name that ends with characters matching the folder from 
+which you copied the image. Click OK. Repeat for all five images in individual folders. 
+4. Open   the   AndroidManifest.xml   file   and   find   the   android:icon=   attribute.   Replace 
+@mipmap/ic_launcher with @mipmap/contactlist_launch_icon. 
+ 
+Your app will now display the image as the app’s launch icon rather than the default launch icon. We 
+won’t worry about including a round icon. However, if we did, the process for adding it to the project 
+would be the same.

@@ -1,0 +1,29 @@
+m access 
+
+75  
+  
+iterators. Table 2-13 describes the additional operations that are defined for random access iterators. 
+(Suppose rAccessIterator is a random access iterator.)  
+  
+TABLE 2-13: Additional operations on a random access iterator  
+  
+  
+Figure 2-1 shows the iterator hierarchy.  
+  
+FIGURE 2-1 Iterator hierarchy  
+  
+
+76  
+  
+Now that you know the different types of iterators, next we describe how to declare an iterator to a 
+container.  
+  
+typedef iterator Every container (sequence or associative) contains a typedef iterator. Thus, an iterator 
+into a container is declared using the typedef iterator.  For example, the statement vector<int>::iterator 
+intVecIter;  
+  
+declares intVecIter to be an iterator into a vector container of type int. Moreover, the iterator intVecIter 
+can be used on any vector<int>, but not on any other container, such as vector<double>, vector<string>, 
+and deque.  
+  
+Because iterator is a typedef defined inside a container (that is, a class)

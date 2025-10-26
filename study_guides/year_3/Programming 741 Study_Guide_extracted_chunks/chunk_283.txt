@@ -1,0 +1,92 @@
+Example 7-3.Combining delegates 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Examples 
+{ 
+public class MyClassWithDelegate 
+{ 
+// the delegate declaration 
+public delegate void StringDelegate(string s); 
+} 
+public class MyImplementingClass 
+{ 
+public static void WriteString(string s) 
+{ 
+Console.WriteLine("Writing string {0}", s); 
+} 
+public static void LogString(string s) 
+{ 
+Console.WriteLine("Logging string {0}", s); 
+} 
+public static void TransmitString(string s) 
+{ 
+Console.WriteLine("Transmitting string {0}", s); 
+} 
+} 
+public class Test 
+{ 
+public static void Main() 
+{ 
+// define three StringDelegate objects 
+MyClassWithDelegate.StringDelegate Writer, Logger, Transmitter; 
+// define another StringDelegate  
+// to act as the multicast delegate 
+MyClassWithDelegate.StringDelegate myMulticastDelegate; 
+// Instantiate the first three delegates, 
+// passing in methods to encapsulate 
+Writer = new MyClassWithDelegate.StringDelegate( 
+MyImplementingClass.WriteString); 
+Logger = new MyClassWithDelegate.StringDelegate( 
+MyImplementingClass.LogString); 
+Transmitter = new MyClassWithDelegate.StringDelegate( 
+MyImplementingClass.TransmitString); 
+// Invoke the Writer delegate method 
+Writer("String passed to Writer\n"); 
+// Invoke the Logger delegate method 
+Logger("String passed to Logger\n"); 
+// Invoke the Transmitter delegate method 
+Transmitter("String passed to Transmitter\n"); 
+// Tell the user you are about to combine 
+// two delegates into the multicast delegate 
+Console.WriteLine( "myMulticastDelegate = Writer + Logger"); 
+// combine the two delegates, the result is 
+// assigned to myMulticast Delegate 
+myMulticastDelegate = Writer + Logger; 
+// Call the delegated methods, two methods  will be invoked 
+myMulticastDelegate( "First string passed to Collector"); 
+// Tell the user you are about to add 
+// a third delegate to the multicast 
+Console.WriteLine( "\nmyMulticastDelegate += Transmitter"); 
+// add the third delegate 
+myMulticastDelegate += Transmitter; 
+// invoke the three delegated methods 
+myMulticastDelegate( "Second string passed to Collector"); 
+// tell the user you are about to remove 
+// the logger delegate 
+Console.WriteLine("\nmyMulticastDelegate -= Logger"); 
+// remove the logger delegate 
+myMulticastDelegate -= Logger; 
+// invoke the two remaining 
+// delegated methods 
+myMulticastDelegate -= Logger; 
+// invoke the two remaining 
+// delegated methods 
+myMulticastDelegate("Third string passed to Collector"); 
+} 
+} 
+} 
+OUTPUT:
+
+In the test portion of Example 7-3, the delegate instances are defined and the first three 
+(Writer, Logger, and Transmitter) are invoked. The fourth delegate, myMulticastDelegate, is 
+then assigned the combination of the first two and it is invoked, causing both delegated 
+methods to be called. The third delegate is added, and when myMulticastDelegate is 
+invoked, all three delegated methods are called. Finally, Logger is removed; when 
+myMulticastDelegate is invoked, only the two remaining methods are called. 
+ 
+The power of multicast delegates is best understood in terms of events, discussed in the 
+next section. When an event such as a button press occurs, an associated multicast delegate 
+can invoke a series of event-handler methods that will respond to the event. 

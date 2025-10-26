@@ -1,0 +1,24 @@
+the left subtree and the height of the right subtree. We then 
+take the maximum of these two heights and add 1 to find the height of the binary tree. To find the height 
+of the left (right) subtree, we apply the same procedure because the left (right) subtree is a binary tree. 
+Therefore, the general algorithm to find the height of a binary tree is as follows. Suppose height(p) 
+denotes the height of the binary tree with root p.  
+  
+if (p is NULL) height(p) = 0 else height(p) = 1 + max(height(p-
+>llink), height(p->rlink))  
+  
+Clearly, this is a recursive algorithm. The following function implements this algorithm:  
+  
+template <class elemType>  
+int height(binaryTreeNode<elemType> *p) const  
+{ if (p == NULL) return 0; else return 1 + max(height(p->llink), 
+height(p->rlink));  
+}  
+  
+
+324  
+  
+The definition of the function height uses the function max to determine the larger of two integers. The 
+function max can be easily implemented.  
+  
+Similarly, we can implement algorithms

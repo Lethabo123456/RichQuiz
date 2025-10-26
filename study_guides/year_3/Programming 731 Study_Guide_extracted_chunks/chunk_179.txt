@@ -1,0 +1,57 @@
+A Stack Class    
+ 
+While the Box class is useful to illustrate the essential elements of a class, it is of little practical value. 
+To show the real power of classes, this chapter will conclude with a more sophisticated example. As 
+you recall from the discussion of object-oriented programming (OOP) presented in Chapter 2, one 
+of OOP’s most important benefits is the encapsulation of data and the code that manipulates that 
+data. As you have seen, the class is the mechanism by which encapsulation is achieved in Java. By 
+creating a class, you are creating a new data type that defines both the nature of the data being 
+manipulated and the routines used to manipulate it.  
+ 
+Further, the methods define a consistent and controlled interface to the class’ data. Thus, you can 
+use the class through its methods without having to worry about the details of its implementation 
+or how the data is actually managed within the class. In a sense, a class is like a “data engine.” No 
+knowledge of what goes on inside the engine is required to use the engine through its controls. In 
+fact, since the details are hidden, its inner workings can be changed as needed. 
+ As long as your code uses the class through its methods, internal details can change without causing 
+side effects outside the class. To see a practical application of the preceding discussion, let’s develop 
+one of the archetypal examples of encapsulation: the stack. 
+ A stack stores data using first-in, lastout ordering. That is, a stack is like a stack of plates on a table—
+the first plate put down on the table is the last plate to be used. Stacks are controlled through two 
+operations traditionally called push and pop. To put an item on top of the stack, you will use push. 
+To take an item off the stack, you will use pop. As you will see, it is easy to encapsulate   
+the entire stack mechanism.    
+Here is a class called   Stack that implements a stack for integers:   
+// This class defines an integer stack that can hold 
+10   
+  
+values. class Stack {   
+int stck[ ] = new int[10]; int 
+tos;   
+// 
+Initialize 
+top-of-
+stack  Stack() { tos = -1;   
+   
+}   
+// Push an item onto the stack void 
+push(int item) { if(tos==9)  
+
+   
+   
+   
+   
+125   
+   
+System.out.println("Stack is  
+full."); else   
+   
+stck[++tos] = item;   
+}   
+// Pop an item from the stack 
+int pop() { if(tos < 0) {   
+System.out.println("Stack 
+underflow."); return 0;  }  else  return 
+stck[tos--];   
+}   
+}  

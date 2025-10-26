@@ -1,0 +1,28 @@
+Bus 
+ 
+In the bus topology all sites are connected to a single communication line running the length of 
+the network, as shown in Figure 6.4. 
+Devices are physically connected by means of cables that run between them, but the cables do 
+not pass through a centralized controller mechanism. Messages from any site circulate in both 
+directions through the entire communication line and can be received by all other sites. 
+ 
+Figure 6.3 
+ 
+Figure 6.3 shows m ultiple rings bridged together. Three rings connected to each other by two bridges. 
+This variation of ring topology allows several networks with the same protocol to be linked together. 
+ 
+Figure 6.4 
+ 
+Figure 6.4 shows a bus topology. Hosts are connected to one another in a linear fashion. Data 
+flows in both directions from host to host and is turned around when it reaches an end point 
+controller. 
+ 
+Because all sites share a common communication line, only one of them can successfully send 
+messages at any one time. Therefore, a control mechanism is needed to prevent collisions. In 
+this environment, data may pass directly from one device to another, or it may be routed to an 
+end point controller at the end of the line. In a bus, if the data reaches an end point controller without 
+being accepted by a host, the end point controller turns it around and sends it back so that the 
+message can be accepted by the appropriate node as it moves along its way to the other 
+end point controller. With some buses, each message must always go to the end of the line before 
+going back down the communication line to the node to which it is addressed, but other bus networks 
+allow messages to be sent directly to the target node without reaching an end point controller. 

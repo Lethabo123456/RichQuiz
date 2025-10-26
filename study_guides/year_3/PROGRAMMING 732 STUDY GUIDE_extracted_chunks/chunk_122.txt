@@ -1,0 +1,45 @@
+4.1.20 The HTTP GET Method  
+The HTTP GET method requests information from a web server. This information could be a file, output 
+from a device on the server, or output from a program (such as a servlet or CGI script).  An HTTP GET 
+request takes the form:   
+
+GET URL <http version>   Host: <target host> in addition to several other lines of information.  For 
+example, the following HTTP GET message is requesting the home page from the MageLang web site:   
+ 
+GET / HTTP/1.1  
+    
+Connection: Keep-Alive    
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01;Windows NT) 
+Host: www.magelang.com    Accept: image/gif, image/x-xbitmap,      
+image/jpeg, image/pjpeg  
+  
+On most web servers, servlets are accessed via URLs that start with /servlet/. The following HTTP GET 
+method is requesting the servlet MyServlet on the host www.magelang.com:   
+  
+GET /servlet/MyServlet?name=Scott& company=MageLang%20Institute 
+HTTP/1.1 Connection: Keep-Alive User-Agent: Mozilla/4.0 ( compatible;  
+MSIE 4.01;  Windows NT) Host: www.magelang.com   
+Accept: 
+image/gif, image/x-xbitmap,    
+image/jpeg, image/pjpeg  
+  
+The URL in this GET request invokes the servlet called MyServlet and contains two parameters, name and 
+company. Each parameter is a name/value pair following the format name=value. The parameters are 
+specified by following the servlet name with a question mark ('?'), with each parameter separated by an 
+ampersand ('&').   
+Note the use of %20 in the company's value. A space would signal the end of the URL in the GET request 
+line, so it must be "URL encoded", or replaced with %20 instead. As you will see later, servlet developers 
+do not need to worry about this encoding as it will be automatically decoded by the HttpServletRequest 
+class.   
+HTTP GET requests have an important limitation. Most web servers limit how much data can be passed as 
+part of the URL name (usually a few hundred bytes.) If more data must be passed between the client and 
+the server, the HTTP POST method should be used instead.   It is important to note that the server's 
+handling of a GET method is expected to be safe and idempotent. This means that a GET method will not 
+cause any side effects and that it can be executed repeatedly.   
+When a server replies to an HTTP GET request, it sends an HTTP response message back. The header of an 
+HTTP response looks like the following:
+
+HTTP/1.1 200 Document follows Date: Tue, 14 Apr 1997 09:25:19 PST Server: JWS/1.1 Last-
+modified: Mon, 17 Jun 1996 21:53:08 GMT Content-type: text/html Content-length: 4435  
+  
+<4435 bytes worth of data -- the document body> 

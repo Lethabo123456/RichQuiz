@@ -1,0 +1,23 @@
+lots to be examined. To perform insertion, we successively examine or probe, the hash table until we 
+find an empty slot. The sequence of slots probed "depends upon the key being inserted." To determine 
+which slots to probe, the hash function includes the probe number as a second input.  
+ 
+Thus,  
+the  
+hash  
+function  
+becomes   
+ h: × {0, 1, . . . m -1 }--> {0, 1, . . . , m-1}  
+  
+and the probe sequence  
+  
+< h(k, 0), h(k, 1), . . . , h(k, m-1) >  
+in which every slot is eventually considered.  
+Exercise  
+1. Suppose there are eight students with IDs 197354883, 933185971, 132489992, 134152075, 216500325, 
+106500325, 216510325, 197354884. Suppose hash table, HT, is of the size 19, indexed 0, 1, 2, . . ., 18. 
+Show how these students’ IDs, in the order given, are inserted in HT using the hashing function h(k) = k 
+% 19. Use linear probing to resolve collision.  
+  
+2. Suppose there are six workers, in a workshop, with IDs 147, 169, 580, 216, 974, and 124. Suppose hash 
+table, HT,

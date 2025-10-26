@@ -1,0 +1,23 @@
+authors[0]; // $myAuthor contains “Steinbeck”  
+$anotherAuthor = $authors[1]; // $anotherAuthor contains “Kafka”  
+
+56  
+In other words, you write the variable name, followed by the index of the element in square 
+brackets. If you want to access the elements of an associative array, simply use string indices rather 
+than numbers:  
+  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”,  
+“pubYear” = > 1939 );  
+$myTitle = $myBook[“title”]; // $myTitle contains “The Grapes of Wrath” 
+$myAuthor = $myBook[“author”]; // $myAuthor contains “Steinbeck”  
+  
+You do not have to use literal values within the square brackets; you can use any expression, as long 
+as it evaluates to an integer or string as appropriate:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$pos = 2; echo $authors[$pos + 1]; // Displays 
+“Dickens”  
+  
+5.4 Changing Elements  
+As well as accessing array values, you can also change values using the same techniques. It

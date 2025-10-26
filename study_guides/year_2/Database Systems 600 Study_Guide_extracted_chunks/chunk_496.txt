@@ -1,0 +1,30 @@
+ting logs.  
+ 
+Set up session logging.  
+ 
+Require session encryption. 
+ 
+Furthermore, the DBA should work closely with the network administrator to implement network 
+security that protects the DBMS and all services running on the network.  
+Protecting the data in the database is a function of authorization management. Authorization 
+management defines procedures to protect and guarantee database security and integrity. Those 
+procedures include the following:  
+ 
+ 
+User access management. This function is designed to limit access to the database; it likely 
+includes at least the following procedures: 
+- 
+Define each user to the database.  
+- 
+Assign passwords to each user.  
+- 
+Define user groups.  
+- 
+Assign access privileges. 
+- 
+Control physical access.  
+ 
+View definition. The DBA must define data views to protect and control the scope of the data 
+that are accessible to an authorized user.  
+ 
+DBMS access control. Database access can be controlled by placing limits on the u

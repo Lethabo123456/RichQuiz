@@ -1,0 +1,35 @@
+4.2.2 Calling base-class constructors 
+In addition to the methods that it inherits, a derived class automatically contains all the fields 
+from the base class. These fields usually require initialization when an object is created. You 
+typically perform this kind of initialization in a constructor. Remember that all classes have at 
+least one constructor. (If you don’t provide one, the compiler generates a default constructor 
+for you.) 
+ 
+It’s good practice for a constructor in a derived class to call the constructor for its base class 
+as part of the initialization, which enables the base-class constructor to perform any 
+additional initialization that it requires. You can specify the base keyword to call a base-class 
+constructor when you define a constructor for an inheriting class, as shown in this example: 
+
+Example 4-2 Calling base Constructors 
+class Mammal // base class 
+{ 
+public Mammal(string name) // constructor for base class 
+{ 
+} 
+} 
+class Horse : Mammal // derived class 
+{ 
+public Horse(string name) 
+: base(name) // calls Mammal(name) 
+{ 
+} 
+}
+
+If you don’t explicitly call a base-class constructor in a derived-class constructor, the compiler 
+attempts to silently insert a call to the base class’s default constructor before executing the 
+code in the derived-class constructor. 
+ 
+Note 
+The method signature refers to the name of the method and the number and types of its 
+parameters but not its return type. Two methods that have the same name and that take the 
+same list of parameters have the same signature, even if they return different types. 

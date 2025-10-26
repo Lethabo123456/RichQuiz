@@ -1,0 +1,19 @@
+testTime: 
+otherClock.setTime(5, 34, 56);                 //illegal 
+otherClock = dClock;                               //illegal 
+ 
+ 
+Implementation of Member Functions 
+ 
+One way to implement these functions is to provide the function definition rather than 
+the function prototype in the class itself. Unfortunately, the class definition would then 
+be very long and difficult to comprehend. Another reason for providing function 
+prototypes instead of function definitions relates to information hiding; that is, we want 
+to hide the details of the operations on the data. 
+ 
+That is, we will write the definitions of the functions setTime, getTime, printTime, 
+incrementSeconds, equalTime, and so on. Because the identifiers setTime, 
+printTime, and so forth are local to the class, we cannot reference them (directly) 
+outside of the class. In order to reference these identifiers, we use the scope 
+resolution operator, :: (double colon). In the function definition’s heading, the name 
+of th

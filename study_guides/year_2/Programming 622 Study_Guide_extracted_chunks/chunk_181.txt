@@ -1,0 +1,39 @@
+= p->link;  
+  
+From Figure 3-7, it is clear that newNode points back to itself and the remainder of the list is lost.  
+  
+Using two pointers, we can simplify the insertion code somewhat. Suppose q points to the node with info 
+34. (See Figure 3-8.)  
+  
+
+89  
+  
+  
+FIGURE 3-8 List with pointers p and q  
+  
+The following statements insert newNode between p and q:  
+  
+newNode->link = q; p->link 
+= newNode;  
+  
+The order in which these statements execute does not matter. To illustrate this, suppose that we execute 
+the statements in the following order:  
+  
+p->link = newNode; newNode->link 
+= q;  
+  
+Table 3-4 shows the effect of these statements.  
+  
+TABLE 3-4: Inserting a node in a linked list using two pointers  
+  
+  
+3.1.2.2 Deletion  
+  
+Consider the linked list shown in Figure 3-9.  
+  
+  
+FIGURE 3-9 Node to be deleted is with info 34  
+  
+Suppose that the node with info 34 is to be deleted from the list. The following statement removes the 
+node from the list:  
+ p->link =

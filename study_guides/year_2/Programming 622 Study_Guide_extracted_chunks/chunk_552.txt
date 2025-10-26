@@ -1,0 +1,45 @@
+s actually half full; in practice, it seldom happens unless the table is nearly full.)  
+  
+Next we describe how to generate the probe sequence.  
+  
+Note that  
+22 = 1 + (2 * 2 – 1)  
+32 = 1 + 3  + (2 * 3 – 1) 42 
+= 1 + 3  + 5 + (2 * 4 – 1)  
+.  
+.  
+. i2 = 1 + 3 + 5 + 7 + . . . + (2 * i - 1); i ≥ 
+1:  
+  
+Thus, it follows that  
+  
+(t + i2)%HTSize = (t + 1 + 3 + 5 + 7 + . . . + (2 * i – 1))%HTSize  
+  
+Consider the probe sequence t, t + 1, t + 22, t + 32, . . . , (t + i2) % HTSize. The following C++ code computes 
+the ith probe, that is, (t + i2) % HTSize:  
+  
+int inc = 1;  
+int pCount = 0;  
+  
+while (p < i)  
+{ t = (t + inc) % HTSize; inc = 
+inc + 2; pCount++;  
+}  
+  
+The following pseudocode implements quadratic probing (assume that HTSize is a prime):  
+  
+  
+int pCount; int 
+inc;  
+int hIndex;  
+  
+hIndex = hashFunction(insertKey);  
+  
+pCount = 0;  
+
+274  
+  
+inc = 1;  
+  
+while (HT[hIndex] is not empty && HT[hIndex] is not the same as the insert item 
+&& pCount < HTSize / 2)

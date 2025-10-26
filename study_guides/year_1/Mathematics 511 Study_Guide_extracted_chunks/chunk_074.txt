@@ -1,0 +1,33 @@
+1.4.7 Negating Quantified Expressions 
+We will often want to consider the negation of a quantified expression. For 
+instance, consider the negation of the statement: 
+“Every student in your class has taken a course in calculus.” 
+This statement is a universal quantification, namely,∀𝑥𝑃(𝑥), where 𝑃(𝑥) is 
+the statement “x has taken a course in calculus” and the domain consists of 
+the students in your class. The negation of this statement is “It is not the case 
+that every student in your class has taken a course in calculus.” This is 
+equivalent to “There is a student in your class who has not taken a course in 
+calculus.” And this is simply the existential quantification of the negation of 
+the original propositional function, namely, ∃𝑥 ￢𝑃(𝑥). 
+
+This example illustrates the following logical equivalence: 
+￢∀𝑥𝑃(𝑥) ≡ ∃𝑥 ￢𝑃(𝑥). 
+
+To show that ￢∀𝑥𝑃(𝑥) and ∃𝑥𝑃(𝑥) are logically equivalent no matter what 
+the propositional function 𝑃(𝑥) is and what the domain is, first note that    
+￢∀𝑥𝑃(𝑥) is true if and only if ∀𝑥𝑃(𝑥) is false. Next, note that ∀𝑥𝑃(𝑥) is 
+false if and only if there is an element x in the domain for which P(x) is false. 
+This holds if and only if there is an element x in the domain for which ￢𝑃(𝑥) 
+is true. Finally, note that there is an element x in the domain for which 
+￢𝑃(𝑥) is true if and only if ∃𝑥 ￢𝑃(𝑥) is true. Putting these steps together, 
+we can conclude that ￢∀𝑥𝑃(𝑥) is true if and only if ∃𝑥 ￢𝑃(𝑥) is true. It 
+follows that ￢∀𝑥𝑃(𝑥) and ∃𝑥 ￢𝑃(𝑥) are logically equivalent. 
+Suppose we wish to negate an existential quantification. For instance, 
+consider the proposition “There is a student in this class who has taken a 
+course in calculus.” This is the existential Quantification ∃𝑥𝑄(𝑥), where 𝑄(𝑥) 
+is the statement “x has taken a course in calculus.” The negation of this 
+statement is the proposition “It is not the case that there is a student in this 
+class who has taken a course in calculus.” This is equivalent to “Every student 
+in this class has not taken calculus,” which is just the universal quantification 
+of the negation of the original propositional function, or, phrased in the 
+language of quantifiers, ∀𝑥 ￢𝑄(𝑥).

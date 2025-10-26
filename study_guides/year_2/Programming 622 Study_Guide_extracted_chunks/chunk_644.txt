@@ -1,0 +1,22 @@
+implemented in the same way as implemented for queues. 
+We leave the implementation of the priority queues as an exercise for you.  
+  
+Key Terms  
+  
+1. 
+Selection sort sorts a list by finding the smallest (or equivalently, the largest) element in the list, 
+and moving it to the beginning (or the end) of the list.  
+2. 
+For a list of length n, where n> 0, selection sort makes (1/2)n(n – 1) key comparisons and 3(n – 1) 
+item assignments.  
+3. 
+For a list of length n, where n> 0, on average, insertion sort makes (1/4)n2 + O(n) = O(n2) key 
+comparisons and (1/4)n2 + O(n) = O(n2) item assignments.  
+4. 
+Empirical studies suggest that for large lists of size n, the number of moves in Shellsort is in the 
+range of n1.25 to 1.6n1.25.  
+5. 
+Let L be a list of n distinct elements. Any sorting algorithm that sorts L by comparison of the keys 
+only, in its worst case, makes at least O(nlog2n) key comparisons. 6. Both quicksort and mergesort sort a 
+list by partitioning the list.  
+7. To partiti

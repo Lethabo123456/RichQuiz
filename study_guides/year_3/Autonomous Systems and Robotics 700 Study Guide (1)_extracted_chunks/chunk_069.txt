@@ -1,0 +1,25 @@
+2.4.2.3 Image Segmentation 
+Image segmentation is the process of partitioning an image into multiple segments or regions. 
+Each segment represents a different object in the image, and image segmentation is often used 
+as a preprocessing step for object detection. 
+
+There are many different algorithms that can be used for image segmentation, but one of the 
+most common approaches is to use thresholding. Binary thresholding, for example, is the process 
+of converting an image into a binary image, where each pixel is either black or white. The 
+threshold value is chosen such that all pixels with a brightness level below the threshold are 
+turned black, and all pixels with a brightness level above the threshold are turned white. This 
+results in the objects in the image being segmented, as they are now represented by distinct black 
+and white regions. 
+ 
+In multi-level thresholding, as the name suggests, different parts of an image are converted to 
+different shades of grey depending on the number of levels. This paper, for example, used multi-
+level thresholding for medical imaging—specifically for brain MRI segmentation, an example of 
+which is shown below. 
+ 
+Modern techniques use automated image segmentation algorithms using deep learning for both 
+binary and multi-label segmentation problems. For example, the PFNet or Positioning and Focus 
+Network is a CNN-based model that addresses the camouflaged object segmentation problem. It 
+consists of two key modules—the positioning module (PM) designed for object detection (that 
+mimics predators that try to identify a coarse position of the prey); and the focus module (FM) 
+designed to perform the identification process in predation for refining the initial segmentation 
+results by focusing on the ambiguous regions. The architecture of the PFNet model is shown

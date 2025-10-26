@@ -1,0 +1,22 @@
+e (HT[hIndex] is not empty && HT[hIndex] is not the same as the insert item 
+&& pCount < HTSize / 2)  
+{  
+pCount++;  
+hIndex = (hIndex + inc ) % HTSize;  
+inc = inc + 2;  
+}  
+  
+if (HT[hIndex] is empty)  
+HT[hIndex] = newItem; else if (HT[hIndex] is the 
+same as the insert item) cerr << "Error: No duplicates are 
+allowed." << endl; else cerr << "Error: The table is full. "  
+<< "Unable to resolve the collisions." << endl;  
+  
+Both randomand quadratic probings eliminate primary clustering. However, if two nonidentical keys, say 
+X1 and X2, are hashed to the same home position, that is, h(X1) = h(X2), then the same probe sequence is 
+followed for both keys. The same probe sequence is used for both keys because random probing and 
+quadratic probing are functions of the home positions, not the original key. It follows that if the hash 
+function causes a cluster at a particular home position, the cluster remains under these probings. This is 
+called secondary clustering.  
+  
+One way to

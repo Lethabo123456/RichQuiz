@@ -1,0 +1,17 @@
+iny College is shown in Figure 2.9. 
+ 
+Contrary to the hierarchical and network models the relational model requires less detail in its 
+internal model because most RDBMSs handle data access path definition transparently. 
+Nevertheless, relational database software usually requires specifications of data storage locations, 
+especially in a mainframe environment.  
+Because the internal model depends on specific database software, it is software dependent. 
+Therefore, a change in the DBMS software requires that the internal model be changed to fit the 
+characteristics and requirements of the implementation database model. When you can change the 
+internal model without affecting the conceptual model, you have logical independence. However, 
+
+ 
+34 
+the internal model is still hardware independent because it is unaffected by the type of computer on 
+which the software is installed.  
+The Physical Model 
+The physical model operates at the lowest level of abstraction, describing the way data

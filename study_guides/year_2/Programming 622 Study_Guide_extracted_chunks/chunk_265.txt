@@ -1,0 +1,28 @@
+to be deleted is in the first node of the list, which would require us to change the 
+value of the pointer first.  
+Case 3:   
+The item to be deleted is somewhere in the list.  
+Case 4:   
+The item to be deleted is not in the list.  
+  
+After deleting a node, count is decremented by 1. Let us demonstrate case 3. Consider the list shown in 
+Figure 3-30.  
+  
+FIGURE 3-30 Doubly linked list before deleting 17  
+  
+Suppose that the item to be deleted is 17. First, we search the list with two pointers and find the node 
+with info 17, and then adjust the link field of the affected nodes. (See Figure 3-31.)  
+  
+  
+FIGURE 3-31 List after adjusting the links of the nodes before and after the node with info 17  
+  
+Next, we delete the node pointed to by current. (See Figure 3-32.)  
+
+133  
+  
+  
+FIGURE 3-32 List after deleting the node with info 17  
+The definition of the function deleteNode is as follows:  
+  
+template <class Type>  
+void doublyLinkedList<Type>::deleteNode(const Type& deleteIt

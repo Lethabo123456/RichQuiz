@@ -1,0 +1,65 @@
+import numpy as np 
+import random 
+ 
+# States: 0 = low, 1 = medium, 2 = high 
+# Actions: 0 = deliver, 1 = recharge 
+num_states = 3 
+num_actions = 2 
+Q = np.zeros((num_states, num_actions)) 
+ 
+# Hyperparameters 
+alpha = 0.1    # learning rate 
+gamma = 0.9    # discount factor 
+
+epsilon = 0.2  # exploration rate 
+episodes = 5000 
+ 
+# Reward function 
+def get_reward(state, action): 
+    if state == 0 and action == 0:  # low + deliver 
+        return -10 
+    elif state == 0 and action == 1:  # low + recharge 
+        return 5 
+    elif state == 1 and action == 0:  # medium + deliver 
+        return 10 
+    elif state == 1 and action == 1:  # medium + recharge 
+        return 0 
+    elif state == 2 and action == 0:  # high + deliver 
+        return 15 
+    elif state == 2 and action == 1:  # high + recharge 
+        return -5 
+ 
+# Transition logic 
+def next_state(state, action): 
+    if action == 1:  # recharge 
+        return min(state + 1, 2) 
+
+    else:  # deliver 
+        return max(state - 1, 0) 
+ 
+# Training loop 
+for episode in range(episodes): 
+    state = random.randint(0, 2)  # random battery level 
+ 
+    # Choose action (epsilon-greedy) 
+    if random.uniform(0, 1) < epsilon: 
+        action = random.randint(0, 1) 
+    else: 
+        action = np.argmax(Q[state]) 
+ 
+    # Environment response 
+    reward = get_reward(state, action) 
+    new_state = next_state(state, action) 
+ 
+    # Q update 
+    Q[state][action] += alpha * (reward + gamma * np.max(Q[new_state]) - Q[state][action]) 
+ 
+# Show final Q-table 
+print("Learned Q-table:") 
+
+actions = ["deliver", "recharge"] 
+states = ["low", "medium", "high"] 
+for s in range(num_states): 
+    print(f"{states[s]:>6}: {[(a, round(Q[s][i], 2)) for i, a in enumerate(actions)]}") 
+ 
+OUTPUT:

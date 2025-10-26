@@ -1,0 +1,40 @@
+When the user taps the delete button for a contact, the adapter deletes 
+the contact from its data source, deletes it from the database, 
+and then redraws the list without the contact. Refer to Listing 6.14 for the 
+modifications required for the adapter. Items that have not changed 
+will not be shown in the listing. The following explains the changes to the 
+adapter: 
+ 
+deleted and to display a message if the deletion fails. 
+
+▪ Lines 4–5—Two variables are added to hold the delete status of the adapter and the 
+activity (context) that the adapter is operating in. The context is needed to 
+open the database so the contact can be 
+▪ Lines 7–10—The adapter’s constructor method is modified so that the Context can be passed to it 
+from the Activity and it can be held in the new variable. 
+▪ Line 13—The keyword final is added before the position variable to allow the button’s onClick 
+method to access its value. 
+▪ Lines 17–26—If the adapter is in delete mode, the delete button for each contact is set to be 
+visible, and an onClickListener is added to call the adapter’s delete method. The delete method is 
+passed to the position of the contact in the data so that the proper Contact can be deleted. 
+▪ Lines 30–32—A public method is added to allow the delete switch on the activity to set the adapter 
+to delete mode. 
+▪ Lines 34–53—Most of this code should be familiar. The first step is to get the selected contact 
+from the ArrayList. Next, a ContactDataSource object is created and opened, and the new delete 
+method is used to delete the contact. If the deletion from the database was successful, the contact is 
+removed from the adapter’s data and the adapter is told to refresh the display with the 
+notifyDataSetChanged() command. If the delete fails, a message is displayed to the user. 
+The next step is to code the switch. The user enables deletion by moving the Delete switch to the on 
+position. This tells the RecyclerView adapter to display (and enable) the Delete button in the list item 
+layout. If the user taps the Delete button, the button’s response to a tap event is executed and the 
+contact is deleted from the database and the list. This implementation does not ask the user to confirm 
+the deletion, but that functionality could be added. Refer to Listing 6.15 to code the initDeleteSwitch 
+method. When finished, remember to call initDeleteSwitch() in the onCreate method. Put it as the last 
+line of code in that method.
+
+▪ Lines 1–2—A reference to the switch is assigned to a variable using findViewById and a new 
+onCheckedChangeListener is added to the switch. 
+▪ Lines 5–8—The OnCheckedChange method checks if the switch is on or off. A switch is considered 
+on if the isChecked method returns true. The status of the delete switch is then passed to the 
+contactAdapter and notifyDataSetChanged is called. NotifyDataSetChanged tells the adapter to 
+redraw the list. If the switch is on, the delete buttons will be displayed. If not, they will be hidden. 

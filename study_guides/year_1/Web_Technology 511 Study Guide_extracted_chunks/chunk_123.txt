@@ -1,0 +1,30 @@
+Style Inheritance 
+
+An additional factor in how an element is rendered is that properties are passed from a parent 
+element to its children in a process known as style inheritance. Thus, the following style rule 
+sets the color of article text to blue and that rule is passed to any paragraph, header, footer, or 
+other element nested within that article. In addition, the text in a paragraph within that article 
+is centered: 
+
+article {color: blue;}
+p {text-align: center;}
+ 
+Thus, the final rendering of any page element is the result of styles drawn from rules across 
+multiple style sheets and from properties passed down from one element to another within 
+the hierarchy of page elements. These style sheets and style rules form the “cascade “of styles 
+in Cascading Style Sheets. 
+ 
+Creating a Style Sheet 
+Now that you’ve reviewed some history and concepts behind style sheets, you’ll start creating 
+your own. You should usually begin your style sheets with comments that document the 
+purpose of the style sheet and provide information about who created the document and 
+when. 
+ 
+Writing Style Comments 
+Style sheet comments are entered as 
+ 
+where comment is the text of the comment. Because CSS ignores the presence of white space, 
+you can insert your comments on a single line to save space as: 
+ 
+Create a style sheet file now, placing a comment with your name and the current date at the 
+top of the file 

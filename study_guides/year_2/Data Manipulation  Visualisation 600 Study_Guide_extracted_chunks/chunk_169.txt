@@ -1,0 +1,53 @@
+'inline-block'}) 
+]), 
+ 
+dcc.Graph(id='feature-graphic') 
+ 
+], style={'padding':10}) 
+ 
+@app.callback( 
+Output('feature-graphic', 'figure'), 
+[Input('xaxis', 'value'), 
+ 
+Input('yaxis', 'value')]) 
+def update_graph(xaxis_name, yaxis_name): 
+ 
+return { 
+'data': [go.Scatter( 
+x=df[xaxis_name], 
+ 
+y=df[yaxis_name], 
+text=df['name'], 
+mode='markers', 
+marker={ 
+'size': 15, 
+ 
+'opacity': 0.5, 
+'line': {'width': 0.5, 'color': 'white'} 
+ 
+} 
+)], 
+'layout': go.Layout( 
+ 
+
+ 
+ 
+ 
+ 
+xaxis={'title': xaxis_name}, 
+yaxis={'title': yaxis_name}, 
+margin={'l': 40, 'b': 40, 't': 10, 'r': 0}, 
+hovermode='closest' 
+ 
+) 
+} 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server() 
+ 
+Let’s look at what happened here: 
+● We set a variable features equal to the column names in our dataset. An alternative would be 
+to set it to a recurring value in one dataset column. Note that setting this variable is optional - we 
+could just as easily pass df.columns wherever features is used. 
+● Nothing new has happened in the la

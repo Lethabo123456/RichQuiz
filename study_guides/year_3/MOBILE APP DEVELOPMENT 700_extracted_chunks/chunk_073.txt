@@ -1,0 +1,16 @@
+The app’s life cycle plays an important role here. If the app is interrupted, all device access or use 
+should be suspended immediately. When the app is about to become active, turn on as late as possible 
+only those device capabilities needed. For example, in the previously mentioned app that uses 
+weather data, the weather retrieval is started as soon as any app activity begins. If the weather data 
+is successfully retrieved, it is time stamped. The next time the activity becomes active, the weather 
+data will be retrieved only if it is outdated, thus saving battery power. Users Can’t Wait!
+ 
+In my first app, I (Michael) made this mistake. The app retrieved weather information as part of its 
+functionality. I included it on the main thread of the application. Everything worked fine in testing 
+because I was in an area with good connectivity. But the first time I used it in the field where there 
+were connectivity problems, I couldn’t use the app at all! I could see the screen, but nothing worked 
+because it was waiting for the weather. The screen eventually timed out, and I retried starting the 
+cycle again. This was very frustrating. If I had purchased the app, I would have demanded a refund 
+immediately. Some battery issues are beyond your control. You cannot make an app that extends battery power. 
+However, you can definitely make an app that significantly reduces battery life. Be sure to account for 
+battery use when designing your app. 

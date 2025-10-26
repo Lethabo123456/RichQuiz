@@ -1,0 +1,103 @@
+Step 4: Run Your Robot (No Webots Yet) 
+Open 3 Command Prompts 
+
+Command Prompt 1 - Robot Brain: 
+cd C:\robot_project  
+call C:\dev\ros2_humble\setup.bat  
+python src\simple_robot.py 
+Command Prompt 2 - Robot Monitor: 
+cd C:\robot_project 
+call C:\dev\ros2_humble\setup.bat 
+python src\robot_monitor.py 
+ 
+Command Prompt 3 - Remote Control: 
+cd C:\robot_project 
+call C:\dev\ros2_humble\setup.bat 
+python src\robot_remote.py 
+ 
+What You Should See(Output) 
+• Window 1: Robot announcing its state changes 
+• Window 2: Monitor showing movement and status 
+• Window 3: You can type commands like "start", "stop", "turn" 
+
+Step 5: Add Webots Simulation 
+Create Simple Webots World 
+1. Open Webots 
+2. Go to File → New → New World 
+3. Save as: C:\robot_project\simple_world.wbt 
+ 
+Replace the content with this simple world: 
+#VRML_SIM R2023b utf8 
+ 
+WorldInfo { 
+  title "Simple Robot World" 
+} 
+Viewpoint { 
+  orientation -0.5 0.5 0.7 2.0 
+  position 0 0 3 
+} 
+RectangleArena { 
+  floorSize 2 2 
+} 
+Robot { 
+  translation 0 0 0.1 
+  children [ 
+    HingeJoint { 
+      jointParameters HingeJointParameters { 
+        axis 0 1 0 
+      } 
+
+      device [ 
+        RotationalMotor { 
+          name "left_motor" 
+        } 
+      ] 
+      endPoint Solid { 
+        translation -0.1 0 0 
+        rotation 1 0 0 1.57 
+        children [ 
+          DEF WHEEL Shape { 
+            appearance PBRAppearance { 
+              baseColor 0.3 0.3 0.3 
+            } 
+            geometry Cylinder { 
+              height 0.02 
+              radius 0.04 
+            } 
+          } 
+        ] 
+        physics Physics {} 
+      } 
+    } 
+
+    HingeJoint { 
+      jointParameters HingeJointParameters { 
+        axis 0 1 0 
+      } 
+      device [ 
+        RotationalMotor { 
+          name "right_motor" 
+        } 
+      ] 
+      endPoint Solid { 
+        translation 0.1 0 0 
+        rotation 1 0 0 1.57 
+        children [ 
+          USE WHEEL 
+        ] 
+        physics Physics {} 
+      } 
+    } 
+    Shape { 
+      appearance PBRAppearance { 
+        baseColor 0.9 0.1 0.1 
+      } 
+
+      geometry Box { 
+        size 0.2 0.1 0.05 
+      } 
+    } 
+  ] 
+  controller "simple_webots_robot" 
+  physics Physics {} 
+}

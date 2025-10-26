@@ -1,0 +1,12 @@
+e problems, it is better if the modules’ ER fragments are merged into a single 
+enterprise ER model. This process starts by selecting a central ER model segment and iteratively 
+adding more ER model segments one at a time. At each stage, for each new entity added to the 
+model, you need to validate that the new entity does not overlap or conflict with a previously 
+identified entity in the enterprise ER model. Merging the ER model segments into an enterprise ER 
+model triggers a careful revaluation of the entities, followed by a detailed examination of the 
+attributes that describe those entities. This process serves several important purposes: 
+ 
+The emergence of the attribute details might lead to a revision of the entities themselves. 
+Perhaps some of the components first believed to be entities will instead turn out to be attributes 
+within other entities. Or, a component that was originally considered an attribute might turn out 
+to contain a sufficient number of subcomponents to

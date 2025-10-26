@@ -1,0 +1,17 @@
+) 
+The data connectivity interfaces illustrated here are dominant players in the market, and more 
+importantly, they enjoy the support of most database vendors. In fact, ODBC, OLE-DB, and 
+ADO.NET form the backbone of Microsoft’s Universal Data Access (UDA) architecture, a 
+collection of technologies used to access any type of data source and manage the data through a 
+common interface. As you will see, Microsoft’s database connectivity interfaces have evolved over 
+time: each interface builds on top of the other, thus providing enhanced functionality, features, 
+flexibility, and support. 
+ 
+Native SQL Connectivity 
+Most DBMS vendors provide their own methods for connecting to their databases. Native SQL 
+connectivity refers to the connection interface that is provided by the database vendor and is unique 
+to that vendor. The best example of this type of native interface is the Oracle RDBMS. To connect 
+
+ 
+175 
+a client application to an Oracle database, you must install and configure

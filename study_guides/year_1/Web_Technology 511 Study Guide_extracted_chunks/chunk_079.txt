@@ -1,0 +1,17 @@
+ Link to a point within a page 
+You can use the anchor tag to create a link to another point within a page. This can be 
+useful when a page contains a large amount of information and you want to provide 
+a quick way to move within the page. 
+To create a hyperlink to a point within a page, you use the href and name attributes. 
+The name attribute is used to name the point to which you want to link. You then 
+assign this name as the value to the href attribute. For example, the Home page 
+contains the basic information about the Web site. However, to locate the description 
+or any other information, you’ll have to scroll extensively. To avoid this, you can 
+create hyperlinks that link to these descriptions by using the name and href attributes 
+of the <a> tag. The point in the document to which you want to link is the target 
+address. To create a target address on the page, use the name attribute as shown in 
+the following code: 
+
+<a name = "topic">Welcome to my page</a> 
+To create a hyperlink to this target, use the following code: 
+<a href = "#topic">Back to intro</a> 

@@ -1,0 +1,25 @@
+Computation in Predicate Logic 
+Prolog is a programming language based on predicate logic. 
+ 
+* A Prolog program attempts to prove a goal, such as brother(Barney,x), from a set 
+of facts and rules. 
+* In the process of proving the goal to be true, using substitution and the other rules 
+of inference, Prolog substitutes values for the variables in the goal, thereby 
+"computing" an answer. 
+How does Prolog know which facts and which rules to use in the proof? 
+* Prolog uses *unification* to determine when two clauses can be made equivalent 
+by a substitution of variables. 
+* The unification procedure is used to instantiate the variables in a goal clause 
+based on the facts and rules in the database. 
+ 
+ 
+Horn Clauses 
+ 
+To simplify the resolution process in Prolog, statements must be expressed 
+in a simplified form, called Horn clauses. 
+ 
+* Statements are constructed from terms. 
+* Each statement (clause) has (at most) one term on the left hand side of 
+a left-pointing implication symbol ( :- ).
+* Each statement has a conjunction of zero or more terms on the right 
+hand side. 

@@ -1,0 +1,35 @@
+Switch    
+The switch statement is Java’s multiway branch statement. It provides an easy way to dispatch 
+execution to different parts of your code based on the value of an expression.  
+As such, it often provides a better alternative than a large series of if-else-if statements. Here is the 
+general form of a switch statement:   
+   
+switch 
+(expression) 
+{ 
+case value1:   
+//  statement sequence 
+break; 
+  case value2:   
+// statement sequence 
+break;   
+...    
+ 
+case valueN:   
+
+// statement sequence 
+break; 
+default:   
+// default statement sequence   
+}   
+   
+The expression must be of type byte, short, int, or char; each of the values specified in the case 
+statements must be of a type compatible with the expression. Each case value must be a unique 
+literal (that is, it must be a constant, not a variable). Duplicate case values are not allowed.The switch 
+statement works like this: The value of the expression is compared with each of the literal values in 
+the case statements. If a match is found, the code sequence following that case statement is 
+executed. If none of the constants matches the value of the expression, then the default statement 
+is executed. However, the default statementis optional. If no case matches and no default is present, 
+then no further action is taken.The break statement is used inside the switch to terminate a 
+statement sequence.When a break statement is encountered, execution branches to the first line of 
+code that follows the entire switch statement. This has the effect of “jumping out” of the switch. 

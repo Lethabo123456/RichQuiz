@@ -1,0 +1,19 @@
+in it onto a string value to produce a 
+longer string. In contrast, many other languages, such as Java, are strongly-typed. Once you set the 
+type of a variable in  
+Java, it must always contain data of that type.  
+  
+  
+Think Point: Identify what problems, if any, could or might arise due to the 
+seemingly  
+beautiful PHP property that the language is Loose Typed. This point can form a very informative 
+discussion point. Gather two or three colleagues and throw the die.  
+  
+2.6 Testing Variable Types  
+You can determine the type of a variable at any time by using PHP’s gettype() function. To use 
+gettype(), pass in the variable whose type you want to test into the gettype() function by typing the 
+name of the variable within the parentheses of the gettype() function. The function then returns the 
+variable’s type as a string.  
+  
+The following example shows gettype() in action. A variable is declared, and its type is tested with 
+gettype() . Then, four different types of data are a

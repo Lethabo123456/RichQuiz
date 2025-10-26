@@ -1,0 +1,48 @@
+s follows:  
+  
+template <class Type>  
+void doublyLinkedList<Type>::deleteNode(const Type& deleteItem)  
+{  
+nodeType<Type> *current;      
+  
+//pointer to traverse the list 
+nodeType<Type> *trailCurrent;   
+  
+  
+//pointer just before current bool 
+found;  
+  
+if (first == NULL) cout << "Cannot delete from an empty list." 
+<< endl;  
+ 
+else if (first->info == deleteItem)   
+  
+  
+//node to be deleted is the first node  
+{ current = first; first = 
+first->next;  
+  
+if (first != NULL) first-
+>back = NULL; else last = 
+NULL;  
+  
+count--;  
+delete current;  
+}  
+else  
+{  
+found = false;  
+current = first;  
+  
+while (current != NULL && !found)    //search the list if 
+(current->info >= deleteItem) found = true; else 
+current = current->next;  
+  
+if (current == NULL) cout << "The item to be deleted is not in "<< "the 
+list." << endl;  
+ 
+else if (current->info == deleteItem)    
+//check for equality  
+{  
+trailCurrent = current->back; trailCurrent-
+>next = current->next; if (current->

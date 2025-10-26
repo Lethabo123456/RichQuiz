@@ -1,0 +1,56 @@
+rotateToLeft(AVLNode<elemT>* &root)  
+{  
+ 
+AVLNode<elemT> *p;   
+  
+  
+  
+//pointer to the root of the  
+//right subtree of root  
+if (root == NULL) cerr << "Error in the tree" << endl; else if (root->rlink == 
+NULL) cerr << "Error in the tree:"<<" No right subtree to rotate." << endl; 
+else  
+{ p = root->rlink;  
+ 
+root->rlink = p->llink;    
+  
+  
+//the left subtree of p becomes  
+//the right subtree of root  
+p->llink = root;  
+ 
+root = p;   
+  
+  
+  
+  
+//make p the new root node  
+}  
+}//rotateLeft  
+  
+template <class elemT>  
+void rotateToRight(AVLNode<elemT>* &root)  
+{  
+ 
+AVLNode<elemT> *p;   
+  
+  
+  
+//pointer to the root of  
+//the left subtree of root  
+
+362  
+  
+if (root == NULL) cerr << "Error in the tree" << endl; else if (root->llink == 
+NULL) cerr << "Error in the tree:"<< " No left subtree to rotate." << endl; 
+else  
+{ p = root->llink;  
+ 
+root->llink = p->rlink;    
+  
+  
+//the right subtree of p becomes  
+//the left subtree of root  
+p->rlink = root;  
+ 
+root =

@@ -1,0 +1,23 @@
+gets left! Order more now!”;  
+}  
+  
+If there are 10 or more widgets in stock, the first code block is run, displaying the message: “ 
+We have plenty of widgets in stock. ” However, if $widgets is less than 10, control passes to the 
+first else statement, which in turn runs the second if statement:  
+  
+if ( $widgets > = 5 ).  
+  
+
+38  
+If this is true the second message — “ Less than 10 widgets left. Time to order some more! ” — is 
+displayed. However, if the result of this second if expression is false, execution passes to the final 
+else code block, and the message “ Panic stations: Less than 5 widgets left! Order more now! ” is 
+displayed.  
+PHP even gives you a special statement — elseif — that you can use to combine an else and an if 
+statement. So the preceding example can be rewritten as follows:  
+  
+if ( $widgets > = 10 ) {  
+echo “We have plenty of widgets in stock.”;  
+} elseif ( $widgets > = 5 ) {  
+echo “Less than 10 widgets left. Time to order some more!”;  
+} else {

@@ -1,0 +1,27 @@
+plum’, ‘purple’ );   
+   
+Query OK, 1 row affected (0.00 sec)   
+   
+mysql >   
+   
+4.13 Reading Data From A Table With The SELECT And SELECT … Where Clauses   
+To read data in SQL, you create a query using the SELECT statement. Thanks to the flexibility of SQL, 
+it is possible to run very complex queries on your data (for example, “Give me a list of all 
+transactions over   
+$500 sent from John Smith to Henry Hargreaves between 13 October and 17 November last year”). 
+For now, though, you will stick with couple of simple examples. To retrieve a list of all the data in 
+your fruit table, you can use:   
+   
+mysql > SELECT * from fruit;   
+   
++----+-----------+--------+   
+| id | name | color |   
++----+-----------+--------+   
+| 1 | banana | yellow |   
+| 2 | tangerine | orange |   
+| 3 | plum | purple |   
++----+-----------+--------+   
+3 rows in set (0.00 sec)   
+   
+(The asterisk means “ all fields. ” ) You can also specify just the field or fields you want to retrieve:   
+mysql >

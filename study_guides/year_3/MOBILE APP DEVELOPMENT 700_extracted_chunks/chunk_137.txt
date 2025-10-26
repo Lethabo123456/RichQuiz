@@ -1,0 +1,28 @@
+▪ Lines 25–27—The margin attributes layout_marginLeft, layout_marginStart, and 
+layout_marginTop tell Android how much space to put between the widget and the referenced 
+locations. MarginLeft and Start mean the same thing. However, before API 21, only marginLeft was 
+available. If your app has a minimum of 21, you will only have to use marginStart. The default distance 
+of 8 is the current value. Change the left/start margins to 16dp and the top margin to 32dp. You will 
+often have to tweak these values to get the layout to look exactly the way you want it to. 
+▪ Line 28—The android:text attribute indicates what text should be displayed. Delete “TextView” 
+and replace it with “Name:”. This line now may be highlighted in gold. This warning indicates that you are not following Android coding 
+standards. Hover over the highlighted line and the warning is displayed, saying that the 
+value “Name:” is a hard-coded value. Android wants all values to be referenced from a value’s XML file. 
+This is for ease of maintenance. You can change a string value used multiple times just once in the strings.xml file, 
+and the changes will be made throughout  your  app.  Also, by substituting a different strings.xml file, 
+you can adapt your app to different languages more easily. To simplify this example, leave the string hard-coded for now. Switch back to the Design view. The 
+TextView you added should now be displaying Name: and be positioned farther from the screen edge 
+and Hello World TextView (Figure 3.8). 
+Locate the Text folder in the Palette. (You may have to switch to Design view.) A number of widgets 
+for entering information are displayed. 
+
+The widget for entering data in Android is called an EditText. 
+Each of the EditText widgets listed is configured for the entry of a different type of data. The different 
+configurations dictate what soft keyboard is displayed when the widget is clicked and, in some cases, 
+how the text is formatted as it is entered. For example, the EditText named Number will display a 
+keyboard with only numbers on it, whereas the EditText named Plain Text will display a full keyboard. 
+Drag the Plain Text EditText to the right of the Name: TextView. Use the left circle on the EditText to 
+create a left constraint to the Name: TextView. Go to the Attributes panel and expand All Attributes. 
+Scroll down until you find layout_constraints. Expand it and scroll down to 
+layout_constraintBaseline_toBaselineOf. Select @id/textView from the dropdown. This will center the 
+EditText vertically with the TextView. 

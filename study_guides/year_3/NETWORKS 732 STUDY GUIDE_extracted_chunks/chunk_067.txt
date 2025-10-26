@@ -1,0 +1,20 @@
+1.8 Verify Full System Functionality 
+ 
+After implementing a network solution, the next critical step is to conﬁrm its eﬀectiveness. 
+This involves thorough testing and evaluation to ensure the issue has been fully resolved 
+without causing new complications. The nature of this testing will vary depending on the 
+scope and complexity of the ﬁx. However, the ultimate goal remains the same: to restore 
+reliable, eﬃcient network operations while avoiding unintended disruptions. 
+ 
+Testing Based on the Nature and Scope of the Problem 
+
+Testing should be directly aligned with the type of issue you resolved. For instance, if a faulty 
+patch cable was replaced, a basic test would involve conﬁrming network connectivity from 
+the connected device. If the device still fails to connect, the problem may persist due to a 
+diﬀerent underlying issue, perhaps relating to logical conﬁgurations or NIC performance. In 
+such cases, utilizing advanced hardware and software diagnostic tools—like cable testers or 
+protocol analysers—may provide deeper insights. 
+When a larger network segment or device is involved, such as a switch servicing multiple 
+departments, it is essential to verify that each aﬀected workstation across all areas can 
+connect and function as expected. A multi-point validation ensures that the replacement or 
+ﬁx is eﬀective throughout the network and not just at one node. 

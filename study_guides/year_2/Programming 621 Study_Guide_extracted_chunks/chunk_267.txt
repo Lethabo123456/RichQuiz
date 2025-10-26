@@ -1,0 +1,35 @@
+the old contents are 
+erased when the file is opened. 
+
+257 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+
+258 | P a g e  
+ 
+ 
+ 
+ 
+8.2 
+EXCEPTION HANDLING 
+ 
+An exception is an occurrence of an undesirable situation that can be detected 
+during program execution. For example, division by zero is an exception. Similarly, 
+trying to open an input file that does not exist is an exception, as is an array index 
+that goes out of bounds. 
+ 
+
+259 | P a g e  
+ 
+The code to handle exceptions depends on the type of application you develop. 
+One common way to provide exception-handling code is to add exception-handling 
+code at the point where an error can occur. This technique allows the programmer 
+reading the code to see the exception-handling code together with the actual code 
+and to determine whether the error-checking code is properly implemented. The 
+disadvantage of this approach is that the program can become cluttered with 
+exception-handling code, which can make understanding and maintaining the 
+program d

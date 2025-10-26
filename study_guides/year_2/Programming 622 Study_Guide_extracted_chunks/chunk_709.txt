@@ -1,0 +1,30 @@
+template <class elemType>  
+void binaryTreeType<elemType>::nonRecursivePreTraversal() const  
+{  
+stackType<binaryTreeNode<elemType>*> stack; binaryTreeNode<elemType> 
+*current;  
+  
+current = root;  
+  
+while ((current != NULL) || (!stack.isEmptyStack()))  
+if (current != NULL)  
+{ cout << current->info << " "; 
+stack.push(current);  
+current = current->llink;  
+}  
+else  
+{ current = stack.top(); 
+stack.pop();  
+current = current->rlink;  
+} cout 
+<< endl;  
+}  
+  
+ 
+9.5.3  Nonrecursive Postorder Traversal  
+  
+In a postorder traversal of a binary tree, for each node, first the left subtree is visited, then the right 
+subtree is visited, and then the node is visited. As in the case of an inorder traversal, in a postorder 
+traversal, the first node visited is the leftmost node of the binary tree. Because—for each node—the left 
+and right subtrees are visited before visiting the node, we must indicate to the node whether the left and 
+right subtrees have been visited. After visiting th

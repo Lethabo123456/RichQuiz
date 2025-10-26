@@ -1,0 +1,19 @@
+se produces a list of only those values that are different from one another. 
+For example, the command  
+SELECT  DISTINCT V_CODE  
+FROM  
+PRODUCT;  
+yields only the different vendor codes (V_CODE) in the PRODUCT table. The DISTINCT 
+keyword only appears once in the query, and that is immediately following the SELECT keyword.  
+
+ 
+98 
+ 
+FROM Clause Options 
+The FROM clause of the query specifies the table or tables from which the data is to be retrieved. 
+In practice, most SELECT queries will need to retrieve data from multiple tables. Through joins, 
+the programmer integrates pieces of data to satisfy the users’ information needs.  
+Inner joins return only rows from the tables that match on a common value. Outer joins return the 
+same matched rows as the inner join, plus unmatched rows from one table or the other. 
+The join condition is generally composed of an equality comparison between the foreign key and 
+the primary key of related tables. For example, suppose that you want to join

@@ -1,0 +1,28 @@
+of TV a day and was rated 72/100: 
+ df = pd.DataFrame({'hours_tv_watched':hours_tv_watched, 'work_ 
+performance':work_performance}) 
+ Here, we are creating a Dataframe to ease our exploratory data analysis and make it easier 
+to make a scatter plot:  
+df.plot(x='hours_tv_watched', y='work_performance', kind='scatter')  
+Now, we are actually making our scatter plot. In the following plot, we can see that our axes 
+represent the number of hours of TV watched in a day and the person's work performance 
+metric 
+  
+ 
+ 
+ 
+ 
+ 
+
+P a g e  | 125 
+ 
+                                                  
+ 
+ 
+Each point on a scatter plot represents a single observation (in this case a person) and its 
+location is a result of where the observation stands on each variable. This scatter plot does 
+seem to show a relationship, which implies that as we watch more TV in the day, it seems to 
+affect our work performance. 
+ 
+6.2.2 Line Graphs 
+Line graphs are, perhaps, one of the most widely used graphs in dat

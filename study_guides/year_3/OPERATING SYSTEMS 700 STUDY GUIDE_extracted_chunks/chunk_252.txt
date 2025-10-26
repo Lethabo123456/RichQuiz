@@ -1,0 +1,54 @@
+7.3. Memory Management 
+Every operating system uses its own view of physical memory and requires its application programs to 
+access memory in specified ways. In the example shown in Figure 7.1 below, virtual address space is 
+16 TB, with half of that allocated to program storage and half for system storage. When physical 
+memory becomes full, the Virtual Memory Manager pages some of the memory contents to disk, 
+freeing physical memory for other processes. 
+ 
+Figure 7.1 
+ 
+In recent versions, the Windows operating system resides in high virtual memory, and the user’s code 
+and data reside in low virtual memory. A user’s process cannot read or write to system memory 
+directly. All user-accessible memory can be paged to disk, as can the segment of system memory 
+labeled paged pool. However, the segment of system memory labeled non-paged pool is never paged 
+to disk because it is used to store critical objects, such as the code that does the paging, as well as 
+major data structures. 
+
+7.4. Virtual Memory Management in Windows Operating System 
+ 
+1. Virtual Address Space: Every process in Windows is given its own virtual address space (VAS), 
+typically 4 GB in size for 32-bit systems (2 GB for user mode, 2 GB for kernel mode) and 
+significantly larger on 64-bit systems. The virtual address space isolates processes from one 
+another, enhancing security and stability by preventing the process from interfering with 
+another’s memory. 
+2. Paging: Windows uses paging to implement virtual memory. The virtual address space is divided 
+into fixed-size blocks called pages (usually 4 KB each), which are mapped to physical memory 
+frames. When a page is not in physical memory, it is stored on the disk in a special file called the 
+pagefile. 
+3. Pagefile: The pagefile.sys file on disk acts as an extension of RAM. When physical memory is 
+exhausted, the operating system moves less frequently used pages to the pagefile to free up RAM 
+for active processes. The location and size of the pagefile can be configured by users or managed 
+automatically by the OS. 
+4. Memory Manager: The Windows memory manager is responsible for handling virtual memory. 
+It dynamically allocates and manages memory for processes, ensuring fair distribution of 
+resources while maximizing system performance. 
+5. Demand Paging: Windows employs demand paging, which means that pages are loaded into 
+physical memory only when they are needed. This reduces the overhead of preloading 
+unnecessary data. 
+6. Page Faults: When a process accesses a page that is not currently in physical memory, a page 
+fault occurs. The memory manager handles this by retrieving the required page from the pagefile 
+or another source. Hard page faults involve disk access (e.g., retrieving data from the pagefile), 
+while soft page faults occur when the page is already in memory but not mapped to the 
+requesting process. 
+7. Working Set: Each process has a working set, which is the subset of its pages currently loaded 
+into physical memory. The memory manager adjusts the working set size based on system activity 
+and memory demand. 
+8. Memory Protection: Virtual memory management in Windows includes mechanisms to protect 
+memory regions, ensuring that processes cannot access memory they do not own. For example, 
+the OS uses guard pages and access control flags (read-only, execute, etc.). 
+9. Address Translation: Virtual addresses are translated to physical addresses using a page table 
+maintained by the operating system. Modern CPUs support hardware-based memory 
+management units (MMUs) to speed up this process. 
+10. NUMA (Non-Uniform Memory Access): Windows supports NUMA architecture, optimizing 
+memory allocation by considering the proximity of processors to memory banks. This improves 
+performance on multi-core systems. 

@@ -1,0 +1,19 @@
+functions. The results of the function output can be used to store values in a 
+database table, to serve as the basis for the computation of derived variables, or to serve as 
+a basis for data comparisons.  
+ 
+ 
+SQL provides relational set operators to combine the output of two queries to generate a new 
+relation. The UNION and UNION ALL set operators combine the output of two or more 
+queries. The INTERSECT relational set operator selects only the common rows. The 
+EXCEPT (MINUS) set operator selects only the rows that are different.  
+ 
+ 
+In order to successfully craft complex queries, the SQL programmer must understand the 
+data with which he or she is working, and understand the problem to be solved. When 
+struggling with the formulation of the query itself, building the query components in the 
+order FROM, WHERE, GROUP BY, HAVING, SELECT, and ORDER BY can be helpful. 
+ 
+ 
+The basic data definition commands allow you to create tables and indexes. The commands 
+are CREATE TABLE,

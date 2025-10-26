@@ -1,0 +1,22 @@
+d that the following lines (if any) contain plain HTML again: ? >  
+  
+1.5 Embedding PHP within HTML Code  
+One of the nice things about PHP is that you can embed PHP code within HTML. In fact, each .php 
+script that you write is essentially treated as an HTML page by default. If the page contains no < 
+?php ... ? > tags, the PHP engine just sends the contents of the file as is to the browser.  
+  
+We will try this out by creating a stylish “Hello World!” web page out of our original “Hello World!” 
+script. We will also include a Cascading Style Sheet [CSS] to make the web page look a little 
+swankier. Enter the following code and save it as hello_pretty.php in your document root folder:  
+  
+  
+  
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN” 
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>  
+  
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”> 
+<head>  
+<title>Hello</title>  
+<link rel=”stylesheet” type=”text/css” href=”common.css” /> 
+</head>  
+<bod

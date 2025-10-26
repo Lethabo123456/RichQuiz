@@ -1,0 +1,47 @@
+Figure 8.5: Configuration management activities (Sommerville,  I.  2021)    
+ 
+Configuration management tools are used to store versions of system components, build systems 
+from these components, track the releases of system versions to customers, and keep track of 
+change proposals. CM tools range from simple tools that support a single configuration 
+management task, such as bug tracking, to integrated environments that support all configuration 
+management activities. 
+
+The development of a software product or custom software system takes place in three distinct 
+phases: 
+
+• A development phase where the development team is responsible for managing the 
+software configuration and new functionality is being added to the software. The 
+development team decides on the changes to be made to the system. 
+• A system testing phase where a version of the system is released internally for testing. 
+This may be the responsibility of a quality management team or an individual or group 
+within the development team. At this stage, no new functionality is added to the system. 
+The changes made at this stage are bug fixes, performance improvements, and security 
+vulnerability repairs. There may be some customer involvement as beta testers during this 
+phase. 
+• A release phase where the software is released to customers for use. After the release has 
+been distributed, customers may submit bug reports and change requests. New versions 
+of the released system may be developed to repair bugs and vulnerabilities and to include 
+new features suggested by customers. 
+ 
+For large systems, there is never just one “working” version of a system; there are always several 
+versions of the system at different stages of development teams may be involved in the 
+development of different system versions. 
+
+Figure 8.6: Multiversion system development (Sommerville,  I.  2021)   
+   
+• Version 1.5 of the system has been developed to repair bug fixes and improve the 
+performance of the first release of the system. It is the basis of the second system 
+release (R1.1). 
+• Version 2.4 is being tested with a view to it becoming release 2.0 of the system. No 
+new features are being added at this stage. 
+• Version 3 is a development system where new features are being added in response 
+to change requests from customers and the development team. This will eventually 
+be released as release 3.0. 
+ 
+These different versions have many common components as well as components or component 
+versions that are unique to that system version. The CM system keeps track of the components 
+that are part of each version and includes them as required in the system build. 
+Version management is the process of keeping track of different versions of software 
+components and the systems in which these components are used. It also involves ensuring that 
+changes made by different developers to these versions do not interfere with each other. In other 
+words, version management is the process of managing code-lines and baselines. 

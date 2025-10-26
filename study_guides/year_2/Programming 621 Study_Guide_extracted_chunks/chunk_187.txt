@@ -1,0 +1,27 @@
+rseType  
+{  
+public: 
+void setCourseInfo(string cName, string cNo, int credits);  
+void print() const;  
+int getCredits();  
+string getCourseNumber();  
+string getCourseName(); 
+ 
+private: 
+ string courseName; 
+ string courseNo;  
+ int courseCredits;  
+}; 
+Let us note the following:  
+o If a member of a class is a variable, you declare it just like any other variable. 
+Also, in C++ versions prior to C++11, in the definition of the class, you cannot 
+initialize a variable when you declare it.  
+o If a member of a class is a function, you typically use the function prototype to 
+declare that member.  
+o If a member of a class is a function, it can (directly) access any member of the 
+class—member variables and member functions. That is, when you write the 
+definition of a member function, you can directly access any member variable 
+of the class without passing it as a parameter. The only condition is that you 
+must declare an identifier before you can use it. 
+ 
+In C++, class is a rese

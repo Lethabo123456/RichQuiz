@@ -1,0 +1,25 @@
+of a container (sequence or 
+associative). Thus, with the help of iterators, we can successively access each element of a container.  
+  
+The two most common operations on iterators are ++ (the increment operator) and * (the dereferencing 
+operator). Suppose that cntItr is an iterator into a container. The statement   
+  
+++cntItr;   
+  
+advances cntItr so that it points to the next element in the container. The statement  
+  
+*cntItr;  
+  
+returns the value of the element of the container pointed to by cntItr.  
+  
+  
+ 
+2.2.1  Types of Iterators  
+  
+There are five types of iterators: input iterators, output iterators, forward iterators, bidirectional iterators, 
+and random access iterators. In the next few sections, we describe these iterators.  
+  
+2.2.1.1 Input Iterators  
+  
+Input iterators, with read access, step forward element-by-element and so return the values elementby-
+element. These iterators are provided for reading data from an input stream. Suppose inputIterator is an

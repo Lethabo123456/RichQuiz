@@ -1,0 +1,44 @@
+Avoid Using Excessive Views 
+ 
+Each additional View takes time and resources to inflate. To maximize the speed and responsiveness 
+of your application, none of its layouts should include more than 80 Views. When you exceed this 
+limit, the time taken to inflate the layout becomes significant. 
+ 
+To minimize the number of Views inflated within a complex layout, you can use a ViewStub. 
+A View Stub works like a lazy include — a stub that represents the specified child Views within the 
+parent layout — but the stub is only inflated explicitly via the inflate method or when it’s made visible. 
+ 
+// Find the stub 
+View stub = findViewById(R.id. download_progress_panel_stub); 
+// Make it visible, causing it to inflate the child layout 
+stub.setVisibility(View.VISIBLE); 
+// Find the root node of the inflated stub layout 
+View downloadProgressPanel = findViewById(R.id.download_progress_panel); 
+ 
+As a result, the Views contained within the child layout aren’t created until they are 
+required — minimizing the time and resource cost of inflating complex UIs. 
+When adding a View Stub to your layout, you can override the id and layout parameters of the 
+root View of the layout it represents: 
+
+<?xml version=”1.0” encoding=”utf-8”?> 
+<FrameLayout “xmlns:android=http://schemas.android.com/apk/res/android” 
+android:layout_width=”match_parent” 
+android:layout_height=”match_parent”> 
+<ListView 
+android:id=”@+id/myListView” 
+android:layout_width=”match_parent” 
+android:layout_height=”match_parent” 
+/> 
+<ViewStub 
+android:id=”@+id/download_progress_panel_stub” 
+android:layout=”@layout/progress_overlay_panel” 
+android:inflatedId=”@+id/download_progress_panel” 
+android:layout_width=”match_parent” 
+android:layout_height=”wrap_content” 
+android:layout_gravity=”bottom” 
+/> 
+</FrameLayout> 
+ 
+This snippet modifies the width, height, and gravity of the imported layout to suit the requirements of 
+the parent layout. This flexibility makes it possible to create and reuse the same generic child layouts 
+in a variety of parent layouts.

@@ -1,0 +1,39 @@
+Graph Traversal Algorithms 
+ 
+Depth-First Search 
+You are aware of tree traversal mechanism. Give a tree, you can traverse it using 
+preorder, inorder and postorder. Similarly given an undirected graph you can 
+traverse it or visit its nodes using breadth first-search and depth-first search. 
+Searching in breadth-first search or depth first search means exploring a given 
+graph. Through searching a graph one can find out whether a graph is connected 
+or not? There are many more applications of graph searching algorithms. In this 
+section we will illustrate Depth First Search algorithm followed by Breadth first 
+Search algorithm in the next section. 
+ 
+The logic behind this algorithm is to go as far as possible from the given starting 
+node searching for the target. In case, we get a node that has no 
+adjacent/successor node, we get back (recursively) and continue with the last 
+vertex that is still not visited. 
+ 
+Broadly it is divided into 3 steps: 
+▪ Take a vertex that is not visited yet and mark it visited 
+▪ Go to its first adjacent non-visited (successor) vertex and mark it visited 
+▪ If all the adjacent vertices (successors) of the considered vertex are already 
+visited or it doesn’t have any more adjacent vertex (successor) – go back to its 
+parent vertex 
+ 
+Before starting with an algorithm, let us discuss the terminology and structure 
+used in the algorithm. The following algorithm works for undirected graph and 
+directed graph both. 
+The following color scheme is to maintain the status of vertex i.e mark a vertex 
+is visited or unvisited or target vertex: 
+ 
+white- for an undiscovered/unvisited vertex 
+gray - for a discovered/visited vertex 
+black - for a finished/target vertex 
+The structure given below is used in the algorithm. 
+p[u]- Predecessor or parent node. 
+Two (2) timestamps referred as 
+t[u] – First time discovering/visiting a vertex, store a counter or number of 
+times 
+f[u]= finish off / target vertex

@@ -1,0 +1,13 @@
+rementHours, and equalTime—can directly access the 
+data members (hr, min, and sec). In other words, we do not pass data members as parameters to 
+member functions.  
+ In the function equalTime, the parameter otherClock is a constant reference parameter. That is, in 
+a call to the function equalTime, the parameter otherClock receives the address of the actual 
+parameter, but otherClock cannot modify the value of the actual parameter. You could have 
+declared otherClock as a value parameter, but that would require otherClock to copy the value of 
+the actual parameter, which could result in poor performance. (For an explanation, see the 
+section, ‘‘Reference Parameters and Class Objects (Variables)’’ located later in this chapter.)  
+ The word const at the end of the member functions getTime, printTime, and equalTime specifies 
+that these functions cannot modify the data members of a variable of type clockType.  
+  
+Note that we have not yet written the definitions of the function member

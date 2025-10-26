@@ -1,0 +1,24 @@
+NDEX index-name 
+After creating the tables and some indexes, you are ready to start entering data.  
+ 
+ 
+Altering Table Structures 
+In this section, you will learn how to change table structures by changing attribute characteristics 
+and by adding columns. Finally, you will learn how to copy tables or parts of tables and how to 
+delete tables. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eight, page 366-375. 
+
+ 
+117 
+All changes in the table structure are made by using the ALTER TABLE command followed by a 
+keyword that produces the specific change you want to make. Three options are available: ADD, 
+MODIFY, and DROP.  
+The basic syntax to add or modify columns is:  
+ALTER TABLE table-name  
+{ADD | MODIFY} (column-name datatype [ {ADD | MODIFY} column-name datatype] );  
+The ALTER TABLE command can also be used to add table constraints. In those cases, the syntax 
+would be:  
+ALTER TABLE table-name ADD constr

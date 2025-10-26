@@ -1,0 +1,18 @@
+; see Figure 5-15(e). Read the 
+next symbol, *, which is an operator. Because an operator requires two operands to be evaluated, pop 
+the stack twice; see Figure 5-15(f). Perform the operation and put the result back onto the stack; see 
+Figure 5-15(g).  
+  
+Scan the next symbol, =, which is the equal sign, indicating the end of the expression. Therefore, print the 
+result. The result of the expression is in the stack, so pop and print; see Figure 5-15(h).  
+  
+The value of the expression 6 3 + 2 * = 18.  
+  
+From this discussion, it is clear that when we read a symbol other than a number, the following cases 
+arise:  
+  
+1. The symbol we read is one of the following: +, -, *, /, or =.  
+a. If the symbol is +, -, *, or /, the symbol is an operator and so we must evaluate it. Because an 
+operator requires two operands, the stack must have at least two elements; otherwise, the 
+expression has an error.  
+b. If the symbol is = (an equal sign), the expression ends and we must print the ans

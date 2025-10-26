@@ -1,0 +1,14 @@
+Traceroute is a command which can show you the path a packet of information taken from your 
+computer to one you specify. It will list all the routers it passes through until it reaches its 
+destination, or fails to and is discarded. In addition to this, it will tell you how long each 'hop' from 
+router to router takes. 
+In Windows, select Start > Programs > Accessories > Command Prompt. This will give you a window 
+like the one below. 
+Enter the word tracert, followed by a space, then the domain name. 
+The following is a successful traceroute from your computer in New Zealand to mediacollege.com: 
+
+Figure 39: Latency test 
+Firstly it tells you that it's tracing the route to mediacollege.com, tells you the IP address of that 
+domain, and what the maximum number of hops will be before it times out. 
+Examine the output and find at what point in the route messages started jumping across the ocean. 
+Next it gives information about each router it passes through on the way to its destination. 

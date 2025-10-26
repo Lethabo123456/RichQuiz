@@ -1,0 +1,28 @@
+0, 10, 25); 
+ 
+For the month value, January is 0 and December is 11. Hour values are from 0 to 23. 
+ 
+6.2.5.1 Customised Dates 
+Once you have a Date object you have quite a lot of inbuilt properties available to you. 
+These allow you to get just the parts of the date and time that you require. Let us have 
+a look at them. 
+ 
+Get the year 
+If you just want the year, add getFullYear to the end of your date object. Like this: 
+var the_date = new Date(); 
+var year = the_date.getFullYear(); 
+document.write(year + "<BR>"); 
+ 
+You can also use getUTCYear. There is a slight difference between the two: FullYear 
+gets the locale year, the one we all get globally. But if it is 31st December and heading 
+towards Jan 1 of the next year then the locale year could be wrong; UTCFullYear gets 
+the universal year - in other words, it corrects for the end of year problem. It's up to 
+you which one you want to use. 
+  
+
+ 
+100 
+ 
+SIX | JAVASCRIPT OBJECTS 
+Get the month 
+To get the month of the year, use ge

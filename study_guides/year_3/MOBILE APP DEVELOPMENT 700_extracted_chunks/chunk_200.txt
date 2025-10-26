@@ -1,0 +1,32 @@
+3.4 Activating the Interface 
+The primary function of the Contact activity is to save information about the user’s contacts. The 
+saving of data is beyond the scope of this chapter but is addressed in next Chapter, “Persistent Data 
+in Android.” However, other functions can be implemented at this time. This section demonstrates 
+the coding of the navigation bar, coding the toggle button to switch between editing and viewing 
+modes, coding the Change Birthday button to display the dialog window, and coding the dialog. 
+ 
+Code the Navigation Bar 
+Movement and data transfer between activities is done with 
+Intents, as discussed earlier in this chapter. The use of Intents makes coding navigation relatively simple.   
+The Intent does most of the work. Open the MainActivity.java file in the java folder by double-clicking it. Begin 
+by coding the List ImageButton, which will switch to the list of all contacts. Enter the code in Listing 
+4.7 before the last } in the MainActivity.java file. Pay attention as you enter the code, as the editor 
+may complete several parts of it for you.
+
+Listing 4.7 List Button Code
+private void initListButton() {
+  ImageButton ibList = findViewById(R.id.imageButtonList);
+  ibList.setOnClickListener(new View.OnClickListener() {
+    public void onClick (View view) {
+       Intenet intent = new Intent (MainActivity.this, ContactListActivity.class);
+       intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+       startActivity(intent);
+    }
+  });
+}
+ 
+After you have entered the code, some of the objects may be underlined in red. This indicates that 
+the compiler doesn’t know what that object is. To fix this, click on the underlined object and then 
+hover the mouse button over it until the message ?nameOfObject?Alt+Enter message is displayed. 
+Press the Alt + Enter keys simultaneously to import the object. If there is no import option, it is likely 
+that you misspelled the object name

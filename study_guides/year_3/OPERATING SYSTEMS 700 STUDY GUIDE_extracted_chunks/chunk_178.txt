@@ -1,0 +1,38 @@
+Chapter Six: Network and Security 
+
+When computer resources are connected by data communication components, they form a network 
+to support the many functions of the organization. Networks provide an essential infrastructure for 
+the members of an information-based society to process, manipulate, and distribute data and 
+information to each other. This chapter introduces the terminology and basic concepts of networks. 
+ 
+6.1. Network Topologies 
+Sites in any networked system can be physically or logically connected to one another in a certain 
+topology, the geometric arrangement of connections (cables, wireless, or both) that link the nodes. 
+The most common geometric arrangements are star, ring, bus, tree, and hybrid. In each topology, 
+there are trade-offs among the need for fast communication among all sites, the tolerance of failure 
+at a site or communication link, the cost of long communication lines, and the difficulty of 
+connecting one site to many other sites. It is important to note that the physical topology of a network 
+may not reflect its logical topology. For example, a network that is wired in a star configuration can 
+be logically arranged to operate as if it is a ring. That is, it can be made to manipulate a token in a 
+ring-like fashion even though its cables are arranged in a star topology. To keep our explanations 
+in this chapter as simple as possible, whenever we discuss topologies, we assume that the logical 
+structure of the network is identical to the physical structure. 
+ 
+For the network designer, there are many alternatives available, all of which will probably solve the 
+customers’ requirements. When deciding which configuration to use, designers should keep in mind 
+four criteria: 
+
+➢ Basic cost - the expense required to link the various sites in the system. 
+➢ Communications cost - the time required to send a message from one site to another. 
+➢ Reliability - the assurance that many sites can still communicate with each other even if a 
+system link or site fails. 
+➢ User environment - the critical parameters that the network must meet to be a successful 
+business investment. 
+ 
+It is quite possible that there are several possible solutions for each customer. The best choice would 
+be needed to consider all four criteria. For example, an international data retrieval company 
+might consider the fastest communications and the most flexible hardware configuration to be a cost-
+effective investment. But a neighborhood charity might put the most emphasis on having a low- cost 
+networking solution. Over-engineering the neighborhood system could be just as big a mistake as 
+under-engineering the international customer’s network. The key to choosing the best design is to 
+understand the available technology, as well as the customer’s business requirements and budget. 

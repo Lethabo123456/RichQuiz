@@ -1,0 +1,34 @@
+Chapter 5: Unsupervised Learning – Clustering Algorithms 
+ 
+5.1 Introduction 
+Unsupervised learning is a category of machine learning where models analyze and learn patterns from 
+unlabeled data. Unlike supervised learning, where models require labeled outputs (e.g., spam vs. non-
+spam emails), unsupervised learning identifies hidden structures in data without explicit supervision. 
+Unsupervised learning is crucial in fields like finance, marketing, and healthcare, where vast amounts of 
+unstructured data must be analyzed without human annotation. 
+
+5.2 Clustering 
+
+Clustering is an unsupervised learning technique that groups similar data points into clusters based on 
+their feature similarities. It is widely used for: 
+  
+Customer segmentation – Grouping customers based on purchasing behavior. 
+Anomaly detection – Identifying fraudulent transactions. 
+Image segmentation – Dividing images into meaningful regions. 
+Document categorization – Organizing text documents into topics. 
+Mathematically, clustering can be defined as a partitioning problem: Given a dataset X with n 
+observations, the goal is to assign each observation to one of k clusters such that intra-cluster similarity 
+is maximized while inter-cluster similarity is minimized.
+
+5.3  k-Means Clustering
+ 
+k-Means is a centroid-based clustering algorithm that divides data into kkk clusters, minimizing the 
+distance between data points and their assigned cluster center. k-Means is one of the most commonly 
+used clustering techniques for customer segmentation in retail and e-commerce. 
+How k-Means Works: 
+
+1 Choose the number of clusters kkk. 
+2 Randomly initialize kkk centroids. 
+3 Assign each data point to the nearest centroid. 
+4 Update centroids based on the mean of assigned points. 
+5 Repeat steps 3 and 4 until convergence. 

@@ -1,0 +1,36 @@
+Review results of audits. 
+
+This section provides a brief overview of the types of controls that may be contemplated. Details of 
+these and other controls are provided in the appropriate chapters of this book. There are several 
+particularly useful sources of information on security controls: SP 800-53, Center for Internet Security 
+(CIS), ISO 27002, FAIR, and NISTIR 7621, introduced in the following paragraphs. 
+
+Online Catalog of Security Controls https://nvd.nist.gov/800-53/ 
+
+SP 800-53, Recommended Security Controls for Federal Information Systems and Organizations, 
+provides an invaluable and extraordinarily detailed discussion of controls and should be consulted in 
+the development of any risk treatment plan. This 450-page document provides plenty of guidance on 
+the overall development of a treatment plan and includes a 233-page catalog of security controls (also 
+available online) and a 55-page catalog of privacy controls. The security control catalog is organized 
+according to the degree of impact each control addresses and includes 115 low-impact controls, 159 
+moderate-impact controls, and 170 high-impact controls. The controls are organized into the 
+following families: 
+
+ AC: Access Control 
+ AU: Audit and Accountability 
+ AT: Awareness and Training 
+ CM: Configuration Management 
+ CP: Contingency Planning 
+ IA: Identification and Authentication 
+ IR: Incident Response 
+ MA: Maintenance 
+ MP: Media Protection 
+ PS: Personnel Security 
+ PE: Physical and Environmental Protection 
+ PL: Planning 
+ PM: Program Management 
+ RA: Risk Assessment 
+ CA: Security Assessment and Authorization 
+ SC: System and Communications Protection 
+ SI: System and Information Integrity 
+ SA: System and Services Acquisition

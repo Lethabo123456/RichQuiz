@@ -1,0 +1,307 @@
+ZeroMQ Patterns 
+File: C:\distributed_systems\2_messaging\zeromq_patterns.py 
+#!/usr/bin/env python3 
+""" 
+ZeroMQ Messaging Patterns Demo 
+Shows different communication patterns: REQ-REP, PUB-SUB, PUSH-PULL 
+"""
+
+import zmq 
+import time 
+import threading 
+import random 
+import json 
+ 
+class ZeroMQPatterns: 
+    def __init__(self): 
+        self.context = zmq.Context() 
+        print("  ZeroMQ Context initialized") 
+
+    def request_reply_server(self, port=5555): 
+        """REQ-REP Pattern: Server side""" 
+        socket = self.context.socket(zmq.REP) 
+        socket.bind(f"tcp://*:{port}") 
+         
+        print(f" REQ-REP Server listening on port {port}") 
+         
+        while True: 
+            try: 
+                # Wait for request 
+                message = socket.recv_json() 
+                print(f" Server received: {message}") 
+                 
+                # Process request 
+                if message.get('type') == 'calculator': 
+                    a = message.get('a', 0) 
+                    b = message.get('b', 0) 
+                    operation = message.get('operation', 'add') 
+                     
+                    if operation == 'add': 
+                        result = a + b 
+                    elif operation == 'multiply': 
+
+                        result = a * b 
+                    elif operation == 'divide': 
+                        result = a / b if b != 0 else "Error: Division by zero" 
+                    else: 
+                        result = "Error: Unknown operation" 
+                     
+                    response = { 
+                        'result': result, 
+                        'timestamp': time.time() 
+                    } 
+                else: 
+                    response = { 
+                        'echo': message, 
+                        'timestamp': time.time() 
+                    } 
+                 
+                # Send response 
+                socket.send_json(response) 
+                print(f" Server sent: {response}") 
+                 
+            except KeyboardInterrupt: 
+                break        
+
+        socket.close() 
+ 
+    def request_reply_client(self, port=5555, requests=5): 
+        """REQ-REP Pattern: Client side""" 
+        socket = self.context.socket(zmq.REQ) 
+        socket.connect(f"tcp://localhost:{port}") 
+         
+        print(f" REQ-REP Client connected to port {port}") 
+         
+        for i in range(requests): 
+            # Create request 
+            request = { 
+                'type': 'calculator', 
+                'a': random.randint(1, 100), 
+                'b': random.randint(1, 100), 
+                'operation': random.choice(['add', 'multiply', 'divide']), 
+                'request_id': i + 1 
+            } 
+             
+            print(f" Client sending: {request}") 
+            socket.send_json(request) 
+             # Wait for response 
+
+            response = socket.recv_json() 
+            print(f" Client received: {response}") 
+             
+            time.sleep(2) 
+         
+        socket.close() 
+ 
+    def publisher(self, port=5556): 
+        """PUB-SUB Pattern: Publisher side""" 
+        socket = self.context.socket(zmq.PUB) 
+        socket.bind(f"tcp://*:{port}") 
+         
+        print(f" Publisher broadcasting on port {port}") 
+        time.sleep(1)  # Allow subscribers to connect 
+         
+        topics = ['weather', 'traffic', 'news', 'sports'] 
+         
+        for i in range(50): 
+            topic = random.choice(topics) 
+             
+            if topic == 'weather': 
+                data = { 
+
+                    'temperature': random.randint(15, 35), 
+                    'humidity': random.randint(30, 90), 
+                    'city': random.choice(['New York', 'London', 'Tokyo']) 
+                } 
+            elif topic == 'traffic': 
+                data = { 
+                    'road': f'Highway {random.randint(1, 10)}', 
+                    'congestion': random.choice(['Light', 'Moderate', 'Heavy']), 
+                    'speed': random.randint(20, 80) 
+                } 
+            elif topic == 'news': 
+                data = { 
+                    'headline': f'Breaking News {i+1}', 
+                    'category': random.choice(['Politics', 'Technology', 'Science']) 
+                } 
+            else:  # sports 
+                data = { 
+                    'team1': f'Team_{random.randint(1, 10)}', 
+                    'team2': f'Team_{random.randint(1, 10)}', 
+                    'score': f'{random.randint(0, 5)}-{random.randint(0, 5)}' 
+                } 
+             
+
+            message = { 
+                'topic': topic, 
+                'data': data, 
+                'timestamp': time.time() 
+            } 
+             
+            # Send topic followed by message 
+            socket.send_multipart([ 
+                topic.encode('utf-8'), 
+                json.dumps(message).encode('utf-8') 
+            ]) 
+             
+            print(f" Published {topic}: {data}") 
+            time.sleep(1) 
+         
+        socket.close() 
+ 
+    def subscriber(self, topics, port=5556): 
+        """PUB-SUB Pattern: Subscriber side""" 
+        socket = self.context.socket(zmq.SUB) 
+        socket.connect(f"tcp://localhost:{port}") 
+         
+
+        # Subscribe to topics 
+        for topic in topics: 
+            socket.setsockopt(zmq.SUBSCRIBE, topic.encode('utf-8')) 
+         
+        print(f" Subscriber listening for topics: {topics}") 
+         
+        while True: 
+            try: 
+                # Receive topic and message 
+                topic, message_data = socket.recv_multipart() 
+                topic = topic.decode('utf-8') 
+                message = json.loads(message_data.decode('utf-8')) 
+                 
+                print(f" Received {topic}: {message['data']}") 
+                 
+            except KeyboardInterrupt: 
+                break 
+         socket.close() 
+ 
+    def push_pull_producer(self, port=5557): 
+        """PUSH-PULL Pattern: Producer (work distributor)""" 
+        socket = self.context.socket(zmq.PUSH) 
+
+        socket.bind(f"tcp://*:{port}") 
+         
+        print(f" PUSH Producer distributing work on port {port}") 
+        time.sleep(1)  # Allow workers to connect 
+         
+        # Distribute work tasks 
+        for task_id in range(20): 
+            task = { 
+                'task_id': task_id, 
+                'work_load': random.randint(1, 10),  # Seconds of work 
+                'data': f'Process data batch {task_id}', 
+                'timestamp': time.time() 
+            } 
+             
+            socket.send_json(task) 
+            print(f" Distributed task {task_id}: {task['work_load']}s work") 
+            time.sleep(0.5) 
+        socket.close() 
+ 
+    def push_pull_worker(self, worker_id, port=5557): 
+        """PUSH-PULL Pattern: Worker (pulls and processes work)""" 
+        socket = self.context.socket(zmq.PULL) 
+
+        socket.connect(f"tcp://localhost:{port}") 
+         
+        print(f" Worker {worker_id} ready for work") 
+         
+        while True: 
+            try: 
+                # Pull work from producer 
+                task = socket.recv_json() 
+                 
+                print(f" Worker {worker_id} received task {task['task_id']}") 
+                 
+                # Simulate work 
+                work_time = task['work_load'] 
+                time.sleep(work_time) 
+                 
+                print(f" Worker {worker_id} completed task {task['task_id']} ({work_time}s)") 
+                 
+            except KeyboardInterrupt: 
+                break 
+         
+        socket.close() 
+ 
+
+    def close(self): 
+        """Clean up ZeroMQ context""" 
+        self.context.term() 
+ 
+def run_pattern_demo(pattern_type): 
+    """Run demonstration of specific pattern""" 
+    zmq_demo = ZeroMQPatterns() 
+     
+    if pattern_type == "req-rep": 
+        print(" Starting REQ-REP Pattern Demo") 
+        print("=" * 40) 
+         
+        # Start server in separate thread 
+        server_thread = threading.Thread(target=zmq_demo.request_reply_server) 
+        server_thread.daemon = True 
+        server_thread.start() 
+         
+        time.sleep(2)  # Let server start 
+         
+        # Run client 
+        zmq_demo.request_reply_client() 
+         
+
+    elif pattern_type == "pub-sub": 
+        print(" Starting PUB-SUB Pattern Demo") 
+        print("=" * 40) 
+         
+        # Start subscribers in separate threads 
+        weather_sub = threading.Thread(target=zmq_demo.subscriber, args=(['weather'],)) 
+        traffic_sub = threading.Thread(target=zmq_demo.subscriber, args=(['traffic'],)) 
+        all_sub = threading.Thread(target=zmq_demo.subscriber, args=(['weather', 'news'],)) 
+         
+        for thread in [weather_sub, traffic_sub, all_sub]: 
+            thread.daemon = True 
+            thread.start() 
+         
+        time.sleep(2)  # Let subscribers connect
+      
+        # Run publisher 
+        zmq_demo.publisher() 
+    elif pattern_type == "push-pull": 
+        print(" Starting PUSH-PULL Pattern Demo") 
+        print("=" * 40) 
+         
+        # Start workers in separate threads 
+
+        workers = [] 
+        for worker_id in range(3): 
+            worker_thread = threading.Thread( 
+                target=zmq_demo.push_pull_worker,  
+                args=(worker_id + 1,) 
+            ) 
+            worker_thread.daemon = True 
+            worker_thread.start() 
+            workers.append(worker_thread) 
+         
+        time.sleep(2)  # Let workers connect 
+         
+        # Run producer 
+        zmq_demo.push_pull_producer() 
+     
+    zmq_demo.close() 
+ 
+if __name__ == '__main__': 
+    print("ZeroMQ Patterns Demo") 
+    print("Choose pattern:") 
+    print("1. REQ-REP (Request-Reply)") 
+    print("2. PUB-SUB (Publish-Subscribe)") 
+
+    print("3. PUSH-PULL (Work Distribution)") 
+     
+    choice = input("Enter choice (1-3): ").strip() 
+     
+    patterns = { 
+        '1': 'req-rep', 
+        '2': 'pub-sub', 
+        '3': 'push-pull' 
+    } 
+     
+    pattern = patterns.get(choice, 'req-rep') 
+    run_pattern_demo(pattern)

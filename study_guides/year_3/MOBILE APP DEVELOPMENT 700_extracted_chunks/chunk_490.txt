@@ -1,0 +1,42 @@
+In-App Purchases 
+
+Making enough money from ad-supported apps to support a business is difficult. You need a very 
+popular app to generate a significant amount of money. Another approach for monetization is to 
+release a free app that is supported by in-app purchases. The basic theory for an in-app purchase 
+monetization strategy is that you generate downloads with the free app, get the users hooked, and 
+then allow them to add features by advertising the feature in the app. The sale is made during use of 
+the app. This is a very popular approach among app developers. In fact, in 2019, 50% of app developers 
+reported using in-app purchases as a monetization strategy according to App Annie. Another 
+advantage over the basic paid app is that in-app purchasing opens up the possibility of a regular 
+revenue stream from the same user, instead of relying on a single purchase up front. 
+In-app purchasing is one way to establish a freemium business model, where most of your users use 
+the free version, but a small percentage becomes heavily invested in your app and service and convert 
+to paying for the service, thus underwriting the free experience for everyone else. 
+You can use several approaches to create products for in-app purchase. Most are dependent on the 
+type of app and its designed use. Game apps often limit the user to only a few game levels and then 
+provide an in-app purchase option for moving to the next level. Other games have consumables that 
+can be purchased during game use. For example, a number of lives are purchased and used up. If users 
+want to continue playing, they have to buy more. Other apps include features that can be unlocked 
+with an in-app purchase. For example, an app may have a mapping feature, such as in the 
+MyContactList app. The button opens the map screen, but rather than displaying the contact, it 
+presents the user with a message that the feature needs to be purchased before the contacts will be 
+displayed. Another approach is to limit the amount of data that can be saved or the number of times 
+the app can be used before the user needs to pay for it. Finally, if your app includes access to content, 
+that content could be purchased on a subscription basis. For example, services that provide weather 
+information cost the developer money, depending on the number of times the weather service is 
+accessed. If the user wants that information in the app, the developer could charge a subscription fee 
+to cover the cost and generate revenue for themselves. Often an in-app purchase strategy is combined 
+with an ad-supported strategy. The free version includes ads that are eliminated as a bonus for an in- 
+app purchase. 
+
+To implement in-app purchases in Android, you have to get the Google Play Billing Library from the 
+Android SDK Manager. It is found in the extras folder in the SDK Manager. Import the 
+IInAppBillingService.aidl file into the src folder of your project. Also, import the files in the util folder 
+of the example app included in the library. Complete information on implementing in-app purchases 
+in Android is available at http://developer.android.com/google/play/billing/index.html. 
+ 
+Implementing in-app purchases in iOS is easier, because all you have to do to get the code is add the 
+StoreKit framework to your project. Products that can be purchased in the app are set up in iTunes 
+Connect and then made available in the app. The complete process is too detailed to cover here, but 
+complete information is available at https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/Store  
+KitGuide/Introduction.html. 

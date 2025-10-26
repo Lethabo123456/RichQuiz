@@ -1,0 +1,63 @@
+orld | Hello World | Hello World 
+C. Hello World | Hello World | Hello World | Hello World 
+D. None of the above 
+ANS: D 
+ 
+96. A do while loop will execute a segment of code at least one time? 
+A. True 
+B. False 
+ANS: A 
+ 
+
+IP 621  
+97. A do while loop will check the while condition before executing the segment of code between the 
+curly braces? 
+A. True 
+B. False 
+ANS: B 
+ 
+98. Is the following a correct example for a PHP do while loop? 
+<?php 
+ 
+   $counter = 1; 
+ 
+   do while ($counter < 5);{ 
+ 
+       $counter++; 
+ 
+   }  
+ 
+   echo "Counter is: $counter"; 
+ 
+?> 
+ 
+A. Yes 
+B. No 
+ANS: B 
+ 
+99. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $counter = 1; 
+ 
+   do while ($counter < 5);{ 
+ 
+       $counter++; 
+ 
+   }  
+ 
+   echo "Counter is: $counter"; 
+
+IP 621  
+ 
+?> 
+ 
+A. Counter is: 4 
+B. Counter is: 5 
+C. Counter is: 2 
+D. None of the above 
+ANS: D 
+ 
+ 
+100. What will be displayed in a browser when the following PHP code is executed: 
+<?

@@ -1,0 +1,30 @@
+Create a second class that will also respond to this event, LogCurrentTime. This class would 
+normally log the event to a file, but for our demonstration purposes, it will log to the 
+standard console: 
+public class LogCurrentTime 
+{ 
+public void Subscribe(Clock theClock) 
+{ 
+theClock.OnSecondChange += 
+new Clock.SecondChangeHandler(WriteLogEntry); 
+} 
+// this method should write to a file 
+// we write to the console to see the effect  
+// this object keeps no state 
+public void WriteLogEntry(object theClock,  
+TimeInfoEventArgs ti) 
+{ 
+Console.WriteLine("Logging to file: { 0} :{ 1} :{ 2} ", 
+ti.hour.ToString(),ti.minute.ToString(),ti.second.ToString()); 
+} 
+} 
+
+Although in this example these two classes are very similar, in a production program any 
+number of disparate classes might subscribe to an event. Notice that events are added using 
+the += operator. This allows new events to be added to the Clock object's OnSecondChange 
+event without destroying the events already registered. When LogCurrentTime subscribes 
+to the OnSecondChange event, you do not want the event to lose track of the fact that 
+DisplayClock has already subscribed. All that remains is to create a Clock class and the 
+DisplayClock class, and tell the latter to subscribe to the event. Then create a 
+LogCurrentTime class and tell it to subscribe as well. Finally, tell the Clock to run. All this is 
+shown in Example 7-4. 

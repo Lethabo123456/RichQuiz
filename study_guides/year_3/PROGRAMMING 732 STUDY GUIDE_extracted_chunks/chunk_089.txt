@@ -1,0 +1,22 @@
+3.4.7 The ResultSet MetaData Interface  
+Aside from being able to read data from a ResultSet object, JDBC provides an interface to allow the 
+developer to determine what type of data was returned. The ResultSetMetaData interface is similar to 
+the DatabaseMetaData interface in concept, but it is specific to the current ResultSet. As with Database, 
+MetaData, it is unlikely that many developers will use this interface because most applications are written 
+with an understanding of the database schema and column names and values; however, 
+ResultSetMetaData is useful in dynamically determining the MetaData of a ResultSet returned from a 
+stored procedure.  
+  
+3.4.8 Scrollable or Updatable ResultSets  
+By default, when you execute a Statement that creates a ResultSet, the ResultSet is read-only and the 
+rows can only be read in order; however, JDBC 2.0 and above drivers allow you the option of making a 
+ResultSet that is updatable or scrollable. To do this, you must supply two additional parameters to the 
+Connection interface.s createStatement, prepareStatement, or prepareCall methods.  
+  
+• Statement createStatement (String sql, int result-SetType, int resultSetConcurrency) throws 
+SQLException  
+• PreparedStatement prepareStatement (String sql, int ResultSetType, int resultSetConcurrency) 
+throws SQL Exception.  
+• The resultSetType parameter can be one of the following three values:  
+• ResultSet TYPE FROWARD ONLY  
+• This is the default value; it creates a forward only ResultSet.

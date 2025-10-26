@@ -1,0 +1,33 @@
+Just resetting the default margin and padding of the body. 
+ 
+.header {
+    height:140px;
+    margin-bottom:15px;
+    background-color:#0d7963;
+}
+.content {
+    width:690px;
+    height:450px;
+    background-color:#0d7963;
+    float:left;
+}
+ 
+We added float property to make this DIVs floats. That way we can make these DIVs stand 
+beside each other. Without float property, DIV would take the whole width of the page and 
+new “.sidebar” DIV would start under “.content” DIV. You can swap the values of float to 
+change the position of the sidebar to either on the left or right side. 
+ 
+.clear {
+    clear:both;
+}
+
+As you noticed we used clear DIV which will probably be as it is in all other designs without 
+any text or content in it. The purpose of this DIV is to clear the space for floating elements 
+above otherwise footer DIV would ignore floating DIVs above and would snap to header DIV. 
+Click here to learn more about the clear property. 
+
+.footer {
+    heigth:70px;
+    margin-top:15px;
+    background-color:#0d7963;
+}

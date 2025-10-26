@@ -1,0 +1,38 @@
+e do not need extra computer time to copy 
+
+248  
+  
+the elements back into the original queue. We will use this solution to update the queue. Therefore, the 
+definition of the function updateWaitingQueue is as follows:  
+  
+void waitingCustomerQueueType::updateWaitingQueue()  
+{  
+customerType cust;  
+  
+cust.setWaitingTime(-1); int 
+wTime = 0;  
+  
+addQueue(cust);  
+  
+while (wTime != -1)  
+{  
+cust = front();  
+deleteQueue();  
+  
+wTime = cust.getWaitingTime();  
+if (wTime == -1) break;  
+cust.incrementWaitingTime(); addQueue(cust);  
+}  
+}  
+  
+ 
+6.6.6  Main Program  
+  
+To run the simulation, we first need to get the following information:  
+  
+The number of time units the simulation should run. Assume that each time unit is one minute.  
+The number of servers.  
+The amount of time it takes to serve a customer—that is, the transaction time. The 
+approximate time between customer arrivals.  
+  
+These pieces of information are called simulation parameters. By changing the values of

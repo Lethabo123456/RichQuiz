@@ -1,0 +1,25 @@
+Type  
+// This class specifies the operations to find the weight of the  
+// shortest path from a given vertex to every other vertex in a graph.  
+//**************************************************************** class 
+weightedGraphType: public graphType  
+{  
+public:  
+void createWeightedGraph();  
+//Function to create the graph and the weight matrix. 
+//Postcondition: The graph using adjacency lists and 
+// its weight matrix is created.  
+  
+void shortestPath(int vertex);  
+//Function to determine the weight of a shortest path 
+//from vertex, that is, source, to every other vertex 
+//in the graph.  
+//Postcondition: The weight of the shortest path from vertex // 
+to every other vertex in the graph is determined.  
+  
+void printShortestDistance(int vertex);  
+//Function to print the shortest weight from the vertex 
+//specified by the parameter vertex to every other vertex in //the 
+graph.  
+//Postcondition: The weight of the shortest path from vertex // 
+to every other vertex in the

@@ -1,0 +1,24 @@
+alidation 
+ 
+First we set up a variable called payment and set it to be a blank string. This will hold a 
+value of checked if the user has selected a radio button and will be empty otherwise. 
+The next line is this: 
+var len = document.frmOne.payment.length; 
+ 
+On the right of the equal sign we again try to access a form element. This time, the 
+element we want has a name of payment. This came from the HTML: 
+<INPUT TYPE="Radio" Name="payment" Value="CC">Credit Card 
+<INPUT TYPE="Radio" Name="payment" Value="DC">Debit Card 
+<INPUT TYPE="Radio" Name="payment" Value="PP">PayPal 
+ 
+If you want to group radio buttons together you give them the same name. You can 
+then access this name in your code. But look at what is now on the end: 
+document.frmOne.payment.length; 
+ 
+When we accessed the text box element like this we had value on the end. This time 
+we have length. Length is how many radio buttons are in the group. We can use this 
+length in the loop: 
+for (i = 0; i < len; i++)  
+{ 
+ 
+if

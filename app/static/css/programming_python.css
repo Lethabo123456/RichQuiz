@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  background: #0f111a;
+  color: #e0e0e0;
+}
+
+.container {
+  background: #1e1e2f;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 95%;
+  max-width: 850px;
+  margin: 60px auto;
+  box-shadow: 0 0 25px rgba(0, 255, 128, 0.15);
+}
+
+h1, h2, h3 {
+  color: #00ff88;
+}
+
+.question-container {
+  margin-bottom: 2rem;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.options-list li {
+  margin-bottom: 1rem;
+}
+
+.option-label {
+  display: block;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #2d2d3a;
+  transition: all 0.3s ease;
+  color: #e0e0e0;
+  padding: 1rem 1.25rem;
+  user-select: none;
+  position: relative;
+}
+
+.option-label:hover {
+  background-color: #2d2d3a;
+  border-color: #00ff88;
+}
+
+/* Hide the actual radio input */
+.option-label input[type="radio"] {
+  display: none;
+}
+
+/* Option text container */
+.option-text {
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Styling when radio is checked */
+.option-label input[type="radio"]:checked ~ .option-text {
+  background-color: #282a36;
+  font-weight: bold;
+  border-left: 5px solid #00ff88;
+  padding-left: 0.75rem;
+  color: #00ff88;
+  display: block;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Code styling */
+pre, code {
+  font-family: 'Fira Code', monospace;
+}
+
+pre code {
+  background-color: #12131e;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 10px;
+  display: block;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  border: 1px solid #00ff88;
+}
+
+.question-container pre code {
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
+}
+
+.submit-btn {
+  background-color: #00ff88;
+  color: #000;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-family: 'Fira Code', monospace;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #00cc70;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.error-message {
+  color: #ff4c4c;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Highlighting inline code (optional) */
+code:not(pre code) {
+  background-color: #2d2d3a;
+  color: #f8f8f2;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}

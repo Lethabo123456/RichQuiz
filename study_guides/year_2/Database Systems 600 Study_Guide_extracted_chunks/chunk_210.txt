@@ -1,0 +1,12 @@
+UM  EMP_NAME, JOB_CLASS 
+Draw a new dependency diagram to show all the tables you have defined in Steps 1 and 2. Name 
+the table to reflect its contents and function. Check all the tables to make sure that each table has a 
+determinant and that no table contains inappropriate dependencies. When you have completed these 
+steps, you will see the results in Figure 6.5 and the tables are said to be in third normal form (3NF). 
+It is interesting to note the similarities between resolving 2NF and 3NF problems. No matter 
+whether the “problem” dependency is a partial dependency or a transitive dependency, the solution 
+is the same: create a new table for each problem dependency. The determinant of the problem 
+dependency remains in the original table and is placed as the primary key of the new table. The 
+dependents of the problem dependency are removed from the original table and placed as nonprime 
+attributes in the new table.  
+In the above examples each table has only one candidate key,

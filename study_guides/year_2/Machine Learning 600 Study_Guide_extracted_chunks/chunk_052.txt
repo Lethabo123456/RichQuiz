@@ -1,0 +1,16 @@
+Harmonic Means:  The harmonic mean is calculated differently. There are three steps to 
+complete the calculation. 
+                                        
+ 
+Geometric Mean: If the values in your dataset are widely different, then it's worth using the 
+geometric mean to find the average. The calculation is made by multiplying the set of 
+numbers and finding the 𝑛𝑡ℎ root of the total. For example, if your set had two numbers in it, 
+you'd square root the total; if it had three numbers, you would cube root; and so on. The 
+following are two examples, one with a set of three numbers and another with a set of six 
+numbers: 
+                                           
+                 
+Mode: To find the most commonly used number in the dataset, we use the mode. Use 
+the StatUtils.mode method in Apache Commons Math to get the mode of a double primitive 
+array. Notice it returns a double primitive array. 
+Median: To find the middle number of the dataset, you use the medi

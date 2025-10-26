@@ -1,0 +1,38 @@
+dren'), 
+[Input('wheels', 'value')]) 
+def callback_a(wheels_value): 
+return 'You\'ve selected "{}"'.format(wheels_value) 
+ 
+@app.callback( 
+ 
+Output('colors-output', 'children'), 
+[Input('colors', 'value')]) 
+def callback_b(colors_value): 
+
+ 
+ 
+ 
+ 
+return 'You\'ve selected "{}"'.format(colors_value) 
+ 
+@app.callback( 
+Output('display-image', 'src'), 
+[Input('wheels', 'value'), 
+Input('colors', 'value')]) 
+def callback_image(wheel, color): 
+ 
+path = '../data/images/' 
+ 
+return encode_image(path+df[(df['wheels']==wheel) & \ 
+(df['color']==color)]['image'].values[0]) 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server() 
+ 
+ 
+Now when you run the script, the default values of 1 and blue display an image of a blue unicycle. 
+Change either input to change the displayed image! 
+A couple of interesting techniques were introduced here: 
+● As of this writing, Dash doesn’t serve up static files gracefully. To display images stored on the 
+hard drive requires a conversion to base64. For this we define

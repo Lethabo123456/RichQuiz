@@ -1,0 +1,71 @@
+from the function : 30 
+d) Returned value from the function :  
+Answer: c 
+
+  
+107. 
+What will be the output of the following PHP code? 
+<?php 
+function sayHello() 
+{ 
+echo "HelloWorld<br />"; 
+} 
+$function_holder = "sayHello"; 
+$function_holder(); 
+?> 
+a) No Output 
+b) Error 
+c) sayHello 
+d) HelloWorld 
+  
+Answer: d 
+108. 
+What will be the output of the following PHP code? 
+<?php 
+function one() 
+{ 
+echo " this works"; 
+function two() 
+{ 
+echo "this too works"; 
+} 
+} 
+one(); 
+two(); 
+?> 
+  
+ 
+a) Error 
+b) this works 
+c) this worksthis too works 
+d) this works this too works 
+  
+Answer: c 
+  
+
+109. 
+What will be the output of the following PHP code? 
+<?php 
+function do($myString) 
+{ 
+echo strpos($myString, "donkey",0); 
+} 
+do("The donkey looks like a horse."); 
+?> 
+a) 4 
+b) 5 
+c) 2 
+ Answer: a  
+110. 
+What will be the output of the following PHP code? 
+<?php 
+function one() 
+{ 
+define("const","I am awesome!"); 
+echo constant("const"); 
+} 
+one(); 
+?> 
+a) I am awesome!! 
+b) const 
+c) con

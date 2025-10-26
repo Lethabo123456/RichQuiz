@@ -1,0 +1,20 @@
+Table 2.2 
+ 
+In Table 2.2 there are two snapshots of memory that show the status of each memory block 
+before and after 200 spaces are allocated at address 7600 (shaded), using the best-fit algorithm. 
+In Table 2.2, a request for a block of 200 spaces has just been given to the Memory Manager. 
+Using the best-fit algorithm and starting from the top of the list, the manager searches the entire 
+list and locates a block of memory starting at location 7600, which is the block that is the smallest 
+one that is also large enough to accommodate the job. The choice of this block minimizes the 
+wasted space. 
+
+Only 5 spaces are wasted, which is less than in the four alternative blocks. The job is then stored, 
+starting at location 7600 and occupying the next 200 spaces. Now the free list must be adjusted 
+to show that the block of free memory starts at location 7800 (not 7600 as before) and that it 
+contains only 5 spaces (not 205 as before). But it does not eliminate wasted space. Note that 
+while the best-fit resulted in a better fit, it also resulted as it does in the general case, in a smaller 
+free space (5 spaces), which is known as a sliver. 
+Which one is best? (first-fit or best-fit) For many years there was no way to answer such a general 
+question because performance depended on the job mix. In recent years, access times have 
+become so fast that the scheme that saves the more valuable resource, memory space, may be 
+the best.

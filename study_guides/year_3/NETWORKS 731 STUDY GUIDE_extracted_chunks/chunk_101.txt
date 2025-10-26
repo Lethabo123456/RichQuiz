@@ -1,0 +1,39 @@
+Local Loop Services 
+ 
+In telephony, a local loop is the wired connection from a telephone company's central office in 
+a locality to its customers' telephones at homes and businesses. This connection is usually on 
+a pair of copper wires called twisted pair. The system was originally designed for voice 
+transmission only using analog transmission technology on a single voice channel. Today, your 
+computer's modem makes the conversion between analog signals and digital signals. With 
+Integrated Services Digital Network (ISDN) or Digital Subscriber Line (DSL), the local loop can 
+carry digital signals directly and at a much higher bandwidth than they do for voice only. 
+ 
+Figure 3.14 Local Loop 
+
+3.6 Connecting WAN Wireless 
+Most commonly, your router will connect to the Internet via fixed line (ADSL, VDSL, cable) or 
+cellular (3G/4G/LTE) but the Vigor routers with wireless such as the DrayTek Vigor 2860n or 
+DrayTek Vigor 2925ac can also use a Wi-Fi connection as its WAN (Internet)feed i.e. where you 
+are in a location which provides Wi-Fi access (a hotel, a web café, someone else's office etc.) 
+you can use that to provide the Vigor's Internet connection instead of a fixed line. 
+Importantly, when using this feature, your own Wireless LAN still works - i.e. the wireless base 
+facility provided to your laptops/phones/tablets by the Vigor router still works. 
+ 
+Ideal for Emergencies 
+With the Wireless WAN feature, you can now fall back to using the public Wi-Fi or your phone's 
+tethering if your main WAN/Internet connection is lost (obviously assuming the public Wi-Fi 
+hasn't suffered the same fate!). 
+ 
+Figure 3.15 Connecting WAN Wireless 
+
+The DrayTek router connects to the wireless network specified and provides internet access to 
+clients connected to the DrayTek Vigor Router's LAN ports or Wireless network, applying any 
+QoS, CSM or Firewall to these connections. 
+
+This can be used as either a primary internet connection, load balanced with other WAN 
+interfaces or as a backup internet connection, via the WAN2 interface which is switchable 
+between Ethernet WAN and Wireless WAN modes. 
+ 
+The WAN interface can be used in the same way as all other WAN interfaces on the router, it 
+can be used for VPN, remote management or port forwarding, if the network that the router is 
+connecting to allows this.

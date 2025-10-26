@@ -1,0 +1,46 @@
+Security Audit Controls 
+A useful guide to developing a security audit program is the family of audit controls defined in SP 800-
+53, Security and Privacy Controls for Federal Information Systems and Organizations. The controls are 
+designed to be flexible and customizable and implemented as part of an organizationwide process to 
+manage risk. 
+The audit and accountability family consists of 16 base controls. Some of the base controls include 
+one or more control enhancements, which add functionality or specificity to a base control or increase 
+the strength of a base control. The control enhancements are labeled with numbers in parentheses in 
+the following list and table. In the following list some numbers associated with control enhancements 
+are missing; these are withdrawn enhancements. The 16 base controls are: 
+
+ Audit and accountability policy and procedures: Defines the governance strategy for a security 
+audit policy. 
+ Audit events: This control includes specifying the type of events to be audited. Additional 
+guidance for this control includes the following: Specify the event types to be audited; Verify 
+that the system can audit the selected event types; provide a rationale for why the auditable 
+event types are deemed to be adequate to support after-the-fact investigations of security 
+and privacy incidents; and coordinate the security audit function with other organizational 
+entities requiring audit-related information. 
+
+ (3) Periodically review and update the set of events to be audited. 
+ Content of audit records: Deals with the content of audit records, including the following 
+issues: 
+
+o Specify the content of an audit record, such as what type of event occurred, when the 
+event occurred, where the event occurred, the source of the event, the outcome of 
+the event, and the identity of any individuals or subjects associated with the event. 
+o Provide centralized management and configuration of the content to be captured. 
+o Limit the personally identifiable information contained in audit records. 
+
+ Audit storage capacity: Deals with allocating sufficient storage capacity to accommodate 
+record retention requirements. 
+o Periodically offload audit records onto a different system or media. 
+
+ Response to audit processing failures: Provides guidance on alerting specific personnel about 
+an audit processing failure and what additional actions to take. The following control 
+enhancements are covered: 
+
+o Provide warning when allocated storage is exhausted. 
+o Provide an alert to designated personnel or locations when specified audit failure 
+events occur. 
+o Enforce configurable network communications traffic volume thresholds reflecting 
+limits on auditing capacity. 
+o Invoke a specified full system shutdown, partial system shutdown, or degraded 
+operational mode with limited mission/business functionality available in the event 
+of specified audit processing failures. 

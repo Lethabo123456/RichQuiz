@@ -1,0 +1,13 @@
+ter codes manually at the cash register. The product ID for each item is determined 
+automatically, and its price is retrieved from the item database. This TPS uses the price data to 
+determine the customer’s bill. It also updates the shop’s inventory database and its database of 
+purchases. This data is then used by the shop’s management information systems to generate 
+reports.  
+Data Editing and Correction  
+An important step in processing transaction data is to perform data editing for validity and 
+completeness to detect any problems. For example, quantity and cost data must be numeric and 
+names must be alphabetic, otherwise the data is not valid. Often, the codes associated with an 
+individual transaction are edited against a database containing valid codes. If any code entered 
+(or scanned) is not present in the database, the transaction is rejected. For example, when you 
+are buying something online, the system will usually check whether you have entered a 
+correctly formatted

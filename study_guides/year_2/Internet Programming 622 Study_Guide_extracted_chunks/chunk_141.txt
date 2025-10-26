@@ -1,0 +1,23 @@
+fclose() to open and close files for reading and writing   
+• 
+Reading and writing to files using fread(), fwrite() , fgetc(), feof(), fgets(), fgetcsv(), file(), 
+file_get_contents(), file_put_contents(), fpassthru() , readfile(), fseek(), ftell(), and rewind()   
+• 
+Setting file permissions with chmod() , and checking permissions with is_readable(), 
+is_writable(), and is_executable()   
+• 
+Copying files with copy(), renaming and moving files with rename(), and deleting files with 
+unlink()   
+• 
+Reading directories with opendir(), closedir(), readdir(), rewinddir(), and dir()   
+• 
+Manipulating directories with chdir(), mkdir(), and rmdir()   
+• 
+Testing for files and directories with is_file() and is_dir()   
+   
+Along the way you learned how to use recursion to move through a directory tree, and you also built 
+a simple text editor to illustrate many of the functions and concepts covered in the chapter.   
+   
+ Mini-Project Self-Assessment Exercise   
+   
+A directory may hold sub

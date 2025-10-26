@@ -1,0 +1,17 @@
+to 
+design two more classes: a class to create and process a list of servers and a class to create and process a 
+queue of waiting customers. The next two sections describe each of these classes.  
+  
+  
+  
+ 
+6.6.4  Server List  
+  
+A server list is a set of servers. At any given time, a server is either free or busy. For the customer at the 
+front of the queue, we need to find a server in the list that is free. If all the servers are busy, the customer 
+must wait until one of the servers becomes free. Thus, the class that implements a list of servers has two 
+member variables: one to store the number of servers and one to maintain a list of servers. Using dynamic 
+arrays, depending on the number of servers specified by the user, a list of servers is created during 
+program execution. Some of the operations that must be performed on a server list are as follows: Return 
+the server number of a free server; when a customer gets ready to do business and a server is available, 
+set the ser

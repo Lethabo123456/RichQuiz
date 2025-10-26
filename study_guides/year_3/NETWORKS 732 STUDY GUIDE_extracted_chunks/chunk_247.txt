@@ -1,0 +1,31 @@
+5.3.7 Mtr Command (pathping) 
+Mtr, or My traceroute, is a computer program that combines the functions of the traceroute and 
+the output—very cool. Mtr probes routers on the route path by limiting the number of hops 
+individual packets are allowed to traverse and listening to news of their termination. It will 
+regularly repeat this process (usually once per second) and keep track of the response times of 
+the hops along the path. Mtr is great if you have Linux or Unix, but by default, it’s not installed on 
+Windows devices. Third-party applications of Mtr are available to install on Windows, but 
+Microsoft did respond with its own version of Mtr—it’s called pathping and it provides the same 
+functions as Mtr. Here’s a look at the output and the options:
+ 
+C:\Users\tlammle>pathping 
+ 
+Usage: pathping [-g host-list] [-h maximum_hops] [-I address] [-n] 
+[-p period] [-q num_queries] [-w timeout] 
+[-4] [-6] target_name 
+ 
+Table 5.3 lists the options of the Windows pathping command. 
+ 
+Option                    Description 
+_g host-list              Uses a loose source route along the host list. 
+-h maximum_hops           Speciﬁes the maximum number of hops to search 
+                          for the target. 
+-I address                Uses the speciﬁed source address. 
+-n                        Does not resolve addresses to hostnames. 
+-p period                 Waits period milliseconds between pings. 
+-q num_queries            Speciﬁes the number of queries per hop. 
+-w timeout                Waits timeout milliseconds for each reply. 
+-4                        Forces using IPv4. 
+-6                        Forces using IPv6.
+ 
+TABLE 5.3 pathping options 

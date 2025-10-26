@@ -1,0 +1,34 @@
+de is ordered, we can also use a binary search algorithm to search the node. We leave it as an exercise 
+for you to modify the definition of the function searchNode so that it uses a binary search algorithm to 
+search the node.  
+  
+ 
+9.8.2  Traversing a B-Tree  
+  
+As in the case of a binary tree, a B-tree can be traversed in three ways: inorder, preorder, and 
+postorder.We only discuss the inorder traversal algorithm and leave the others as an exercise.  
+  
+template <class recType, int bTreeOrder>  
+void bTree<recType, bTreeOrder>::inOrder()  
+{  
+recInorder(root);  
+} // end inOrder  
+  
+template <class recType, int bTreeOrder>  
+void bTree<recType, bTreeOrder>::recInorder(bTreeNode<recType, bTreeOrder> *current)  
+{  
+if (current != NULL)  
+{  
+recInorder(current->children[0]); 
+for 
+(int i = 0; i < current->recCount; i++)  
+{ cout << current->list[i] << " ";  
+recInorder(current->children[i + 1]);  
+}  
+}  
+} //end recInorder  
+  
+ 
+9.8.3  Insertion into a B-Tree  
+  
+The general

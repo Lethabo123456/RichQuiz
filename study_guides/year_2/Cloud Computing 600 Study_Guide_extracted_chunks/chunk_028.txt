@@ -1,0 +1,30 @@
+Cloud Service 
+
+A cloud service is any IT resource that is made remotely accessible via a cloud. Unlike other IT fields 
+that fall under the service technology umbrella—such as service-oriented architecture—the term 
+“service” within the context of cloud computing is especially broad. A cloud service can exist as a 
+simple Web-based software program with a technical interface invoked via the use of a messaging 
+protocol, or as a remote access point for administrative tools or larger environments and other IT 
+resources. 
+ 
+Fig 1.8: Cloud Service  
+
+A cloud service with a published technical interface is being accessed by a consumer outside of the 
+cloud (left). A cloud service that exists as a virtual server is also being accessed from outside of the 
+cloud’s boundary (right). The cloud service on the left is likely being invoked by a consumer program 
+that was designed to access the cloud service’s published technical interface. The cloud service on the 
+right may be accessed by a human user that has remotely logged on to the virtual server.  
+The driving motivation behind cloud computing is to provide IT resources as services that encapsulate 
+other IT resources, while offering functions for clients to use and leverage remotely 
+
+Cloud service consumer 
+The cloud service consumer is a temporary runtime role assumed by a software program when it 
+accesses a cloud service. Common types of cloud service consumers can include software programs 
+and services capable of remotely accessing cloud services with published service contracts, as well as 
+workstations, laptops and mobile devices running software capable of remotely accessing other IT 
+resources positioned as cloud services. 
+ 
+Figure 1.9 Examples of cloud service consumers 
+An artifact labeled as a cloud service consumer may be a software program or a hardware device (in 
+which case it is implied that it is running a software program capable of acting as a cloud service 
+consumer). 

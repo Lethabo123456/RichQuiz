@@ -1,0 +1,14 @@
+int we backtrack to the previous board 
+configuration and place the second queen in the fourth column; see Figure 4-13(c). Next, we try to place 
+the third queen in the third row. This time, we successfully place the third queen in the second column of 
+the third row; see Figure 4-13(d). After placing the third queen in the third row, when we try to place the 
+fourth queen, we discover that the fourth queen cannot be placed in the fourth row.  
+  
+We backtrack to the third row and try placing the queen in any other column. Because no other column is 
+available for queen three, we backtrack to row two and try placing the second queen in any other column, 
+which cannot be done. We, therefore, backtrack to the first row and place the first queen in the next 
+column. After placing the first queen in the second column, we place the remaining queens in the 
+successive rows. This time we obtain the solution, as shown by Figure 4-14.  
+  
+  
+FIGURE 4-14 A solution to the 4-queens puzzle

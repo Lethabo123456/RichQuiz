@@ -1,0 +1,28 @@
+1.2.3 TextFields  
+
+JtextComponent class, which extends Jcomponent, encapsulats the swing textfield. The functionality 
+common to swing text components is provided by it. Jtextfield is one of its subclasses, which allows you 
+to edit one line of text. Some of its constructors are as follows:  
+JTextField ( )  
+JTextField (int cols) (Cols is the number of columns)  
+JText Field (string s,int cols)- s is the string to be presented) 
+JTextField (sring s)  
+  
+An example to create a text field is as follows;  
+  
+Import java.awt.*;  
+Import javax.swing.*;  
+/*<applet code = “JtextFieldDemo” width = 250 height = 507  
+</applet> */  
+public class JtextFieldDemo extends Japplet  
+{  
+  JTextField jtf;  
+  Public void init ( )  
+  { // get content pane container contentPane = 
+get contentpane ( ); contentPane . 
+setlayout(new flowlayout ( ));  
+//Add text field to contentPane Jtf 
+= new JTextField (15); 
+contentpane·add(jtf);  
+  } }  
+  

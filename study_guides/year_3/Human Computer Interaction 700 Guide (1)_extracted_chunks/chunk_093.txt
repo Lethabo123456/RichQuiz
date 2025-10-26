@@ -1,0 +1,35 @@
+2.2.6 A Simple Lifecycle Model for Interaction Design 
+ 
+Understanding the activities involved in interaction design is crucial, but it's equally important to grasp 
+how these activities are interconnected. The term "lifecycle model" (or process model) refers to a 
+framework that outlines a set of activities and their relationships. These models can vary in complexity 
+and are often non-prescriptive. For smaller projects with only a few experienced developers, a 
+straightforward process may be sufficient. However, for larger systems with many developers, a simple 
+approach is inadequate to provide the necessary structure and discipline for developing a usable product. 
+
+Various lifecycle models have been proposed in fields related to interaction design. For instance, in 
+software engineering, popular models include the waterfall, spiral, and V models (for more details, see 
+Pressman and Maxim [2019]). While HCI has been less focused on lifecycle models, two well-known 
+examples are the Star model (Hartson and Hix, 1989) and the international standard ISO 9241-210. Instead 
+of delving into the specifics of these models, we focus on a simpler lifecycle model depicted in Figure 2.4. 
+This model illustrates how the four activities of interaction design are interconnected and incorporates 
+the principles of people-centered design discussed earlier. 
+ 
+Many projects begin by identifying requirements, which then lead to the creation of alternative designs. 
+Prototypes of these designs are developed and evaluated. Based on feedback from evaluations or during 
+the prototyping phase, the team may refine the requirements or redesign the product. This iterative cycle 
+of refinement may happen with one or more alternative designs running in parallel. The underlying idea 
+in this process is that the final product evolves over time, starting from an initial concept to the finished 
+product or gradually progressing from basic functionality to a more advanced one. The exact progression 
+varies from project to project, but development typically concludes with an evaluation activity to ensure 
+the final product meets the expected user experience and usability standards. This evolutionary process 
+is reflected on the right side of the double diamond model, though it’s important to note that discovering 
+requirements may be revisited during this stage. 
+
+In recent years, numerous lifecycle models have emerged, each encompassing these activities but with 
+different focuses on specific activities, relationships, and outcomes. For example, design sprints (Box 2.3) 
+prioritize rapid investigation of problems, development of solutions, and testing. While this approach 
+doesn’t always result in a fully developed product, it ensures that the solution is acceptable to customers. 
+The in-the-wild approach (Box 2.4) focuses on developing novel technologies that may not be tailored to 
+specific needs but aim to enhance people, places, and environments. Additional models are discussed in 
+Chapter 13.

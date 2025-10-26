@@ -1,0 +1,21 @@
+of PHP that ’ s installed. This means that you have successfully installed both Apache and PHP.  
+Congratulations!   
+   
+
+83   
+   
+   
+Figure 5   
+   
+Setting Your Time zone   
+Before leaving the topic of installation and testing, there is one more thing you need to do, and that 
+is configure your PHP installation to use the correct time zone. For older versions of PHP, setting the 
+time zone was less important; if you did not specify the time zone, the PHP engine would attempt to 
+work it out by querying the server it was running on. However, this process was somewhat 
+unreliable and is no longer recommended. Therefore, as of PHP 5.3, the engine complains with a 
+warning message if you try to use any of the date-related features of PHP without having first 
+configured your time zone.    
+   
+Follow these steps to set the Time Zone:   
+1. First look to see if the time zone is already set. Look at the page produced by the testing.php 
+script you just created, and find the date.timez

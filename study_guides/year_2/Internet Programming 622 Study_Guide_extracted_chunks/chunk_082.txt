@@ -1,0 +1,22 @@
+<option value="red">Red</option>   
+                              <option value="blue">Blue</option>                       </select><br 
+/>                       Foreground:   
+                      <select name="foreground">   
+                               <option value="black">Black</option>   
+                               <option value="white">White</option>   
+                              <option value="red">Red</option>   
+                              <option value="blue">Blue</option>   
+                     </select></p>   
+                     <input type="submit" value="Change Preferences">             
+</form>  </body>   
+
+38   
+   
+</html>   
+   
+The form in the example above submits to the PHP script prefs.php, which is shown in the next 
+example below. This script sets cookies for the color preferences specified in the form. Note that the 
+calls to setcookie() are made before the HTML page is started.   
+   
+<html>   
+<head><title>Preferences Set</ti

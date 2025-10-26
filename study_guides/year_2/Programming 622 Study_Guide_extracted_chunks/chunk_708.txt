@@ -1,0 +1,38 @@
+Nonrecursive Preorder Traversal  
+  
+In a preorder traversal of a binary tree, for each node, first the node is visited, then the left subtree is 
+visited, and then the right subtree is visited. As in the case of an inorder traversal, after visiting a node 
+and before moving to the left subtree, we must save a pointer to the node so that after visiting the left 
+subtree, we can visit the right subtree. The general algorithm is as follows:  
+  
+1. current = root;   
+  
+  
+  
+ 
+ 
+//start the traversal at the root node  
+2. while (current is not NULL or stack is nonempty) if 
+(current is not NULL)  
+{ visit current node; push 
+current into stack;  
+current = current->llink;  
+}  
+else  
+{  
+pop stack into current;  
+ 
+current = current->rlink;   
+  
+//prepare to visit the right subtree  
+}  
+  
+The following function implements the nonrecursive preorder traversal algorithm:  
+
+349  
+  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::nonRecursivePreTraversal() const  
+{  
+st

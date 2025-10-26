@@ -1,0 +1,37 @@
+you see the distribution of values inside each bin. Lastly, Displots often 
+include a “kernel density estimate”, or KDE line that tries to describes the shape of the distribution. 
+Because KDEs use computations to derive the shape of the line - using too large a bandwidth gives a line 
+without enough detail, and too small a bandwidth can yield an unhelpful, jagged line - we say that we plot a 
+histogram, but we fit a KDE line to the plot. 
+We obtain distplots from Plotly’s Figure Factory module in place of Graph Objects. 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+dist1.py shows a basic distplot formed from 1000 random values: 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.figure_factory as ff 
+ 
+import numpy as np 
+ 
+x = np.random.randn(1000) 
+ 
+hist_data = [x] 
+group_labels = ['distplot'] 
+ 
+fig = ff.create_distplot(hist_data, group_labels) 
+ 
+pyo.plot(fig, filename='basic_distplot.html') 
+ 
+ 
+ 
+ 
+ 
+Note that distplots display relative frequencies, not actual ones. The total area under the plot is equal to

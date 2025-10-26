@@ -1,0 +1,12 @@
+theater.  
+  
+In computer simulation, the objects being studied are usually represented as data. For the theater 
+problem, some of the objects are the customers and the cashier. The cashier serves the customers and 
+we want to determine a customer’s average waiting time. Actions are implemented by writing algorithms, 
+which in a programming language are implemented with the help of functions. Thus, functions are used 
+to implement the actions of the objects. In C++, we can combine the data and the operations on that data 
+into a single unit with the help of classes. Thus, objects can be represented as classes. The member 
+variables of the class describe the properties of the objects, and the function members describe the 
+actions on that data. This change in simulation results can also occur if we change the values of the data 
+or modify the definitions of the functions (that is, modify the algorithms implementing the actions). The 
+main goal of a computer simulation is to either gener

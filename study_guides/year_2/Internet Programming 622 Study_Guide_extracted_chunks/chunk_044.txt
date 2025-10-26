@@ -1,0 +1,24 @@
+ith 
+the form tag:   
+   
+</form>   
+   
+
+23   
+   
+   
+Try filling in a few of the fields, then clicking the Submit Form button. Because the action attribute in 
+the <form> tag is an empty string, the browser sends the form data back to the same URL 
+(web_form.html). Obviously web_form.html cannot do anything with the form data because it is 
+simply an HTML Web page, but shortly you’ll be writing PHP scripts that can handle data sent from a 
+form.   
+   
+Notice that, once you submit your form, you can see all of the form data in your browser’s address 
+bar, as shown in Figure 1.2. This is because your form used the get method, which sends the form 
+data in the URL. You can see that the form data is preceded by a ‘?’ character, and that the data for 
+each form field is sent as a name/value pair:   
+   
+http://localhost/web_form.html?textField=Hello&passwordField=secret& ...   
+   
+The get method is limited in the amount of data it can send, because a URL can only contain a small 
+numbe

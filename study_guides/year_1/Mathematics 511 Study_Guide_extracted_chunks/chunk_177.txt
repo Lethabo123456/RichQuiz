@@ -1,0 +1,29 @@
+3.3.3 The Graphs of Functions 
+We can associate a set of pairs in 𝐴 ×  𝐵 to each function from 𝐴 to 𝐵. This 
+set of pairs is called the graph of the function and is often displayed 
+pictorially to aid in understanding the behaviour of the function. 
+ 
+Definition 33 
+Let f be a function from the set A to the set B. The graph of the function f is 
+the set of ordered pairs {(a, b) | a ∈ A and f (a) = b}. 
+ 
+From the definition, the graph of a function f from 𝐴 to 𝐵 is the subset of        
+𝐴 ×  𝐵 containing the ordered pairs with the second entry equal to the 
+element of 𝐵 assigned by f to the first entry. 
+
+Worked Example 
+Let g be the function from the set {a, b, c} to itself such that g(a) = b, g(b) 
+= c, and g(c) = a. Let f be the function from the set {a, b, c} to the set {1, 2, 
+3} such that f (a) = 3, f (b) = 2, and f (c) = 1. What is the composition of f 
+and g, and what is the composition of g and f ? 
+
+Solution: 
+The composition f ∘ g is defined by (f ∘g)(a) = f (g(a)) = f (b) = 2, (f ∘g) (b) 
+= f (g(b)) = f (c) = 1, and (f ∘ g)(c) = f (g(c)) = f (a) = 3. Note that g ∘ f is not 
+defined, because the range of f is not a subset of the domain of g 
+Worked Example 
+1. Display the graph of the function f (n) = 2n + 1 from the set of 
+integers to the set of integers. 
+Solution: 
+The graph of f is the set of ordered pairs of the form (n, 2n + 1), where 
+n is an integer. 

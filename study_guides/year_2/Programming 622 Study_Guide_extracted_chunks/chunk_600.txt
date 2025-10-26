@@ -1,0 +1,16 @@
+he sorted lowerSublist and sorted upperSublist.  
+}  
+  
+After partitioning the list into two sublists—lowerSublist and upperSublist—these two sublists are sorted 
+using quicksort. In other words, we use recursion to implement quicksort.  
+  
+Quicksort described here is for array-based lists. The algorithm for linked lists can be developed in a similar 
+manner and is left as an exercise for you.   
+  
+In quicksort, the list is partitioned in such a way that combining the sorted lowerSublist and upperSublist 
+is trivial. Therefore, in quicksort, all the sorting work is done in partitioning the list. Because all the sorting 
+work occurs during the partition, we first describe the partition procedure in detail.  
+  
+To partition the list into two sublists, first we choose an element of the list called the pivot. The pivot is 
+used to divide the list into two sublists: the lowerSublist and the upperSublist. The elements in the 
+lowerSublist are smaller than the pivot, and the elements in t

@@ -1,0 +1,23 @@
+se Procedural Language SQL (PL/SQL) to create triggers, stored 
+procedures, and PL/SQL functions 
+ 
+ 
+Create embedded SQL 
+ 
+ 
+
+ 
+93 
+4.1 Intro to Structured Query Language (SQL) 
+ 
+Introduction to SQL 
+Ideally, a database language allows you to create database and table structures, perform basic data 
+management chores (add, delete, and modify), and perform complex queries designed to transform 
+the raw data into useful information. Moreover, a database language must perform such basic 
+functions with minimal user effort, and its command structure and syntax must be easy to learn. 
+Finally, it must be portable; that is, it must conform to some basic standard, so a person does not 
+have to relearn the basics when moving from one RDBMS to another. SQL meets those ideal 
+database language requirements well. SQL functions fit into several broad categories:  
+• 
+It is a data manipulation language (DML). SQL includes commands to insert, update, delete, 
+and retrieve data within the databas

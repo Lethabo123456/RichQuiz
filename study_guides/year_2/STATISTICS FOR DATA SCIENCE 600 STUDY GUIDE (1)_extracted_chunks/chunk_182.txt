@@ -1,0 +1,19 @@
+ks.mean()- np.array(point_estimates).mean()  # .047 minutes difference 
+ 
+ 
+This is actually a very exciting result because it means that we can get even closer than a single 
+point estimate by taking multiple point estimates and utilizing the central limit theorem! In 
+general, as we increase the number of samples taken, our estimate will get closer to the 
+parameter (actual value). 
+ 
+5.3.1 Sampling Distributions 
+ 
+While point estimates are okay estimates of a population parameter and sampling 
+distributions are even better, there are the following two main issues with these approaches: 
+• Single point estimates are very prone to error (due to sampling bias among other 
+things) 
+• Taking multiple samples of a certain size for sampling distributions might not be 
+feasible and may sometimes be even more infeasible than finding the population 
+parameter. 
+For these reasons and more, we may turn to a concept, known as a confidence interval, to 
+find statistics. A confidence interval is

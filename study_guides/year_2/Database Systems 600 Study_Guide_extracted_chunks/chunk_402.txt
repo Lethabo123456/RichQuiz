@@ -1,0 +1,20 @@
+in which the SQL query is:  
+ 
+Validated for syntax compliance  
+ 
+Validated against the data dictionary to ensure that table names and column names are correct  
+ 
+Validated against the data dictionary to ensure that the user has proper access rights  
+ 
+Analysed and decomposed into more atomic components 
+ 
+Optimized through transformation into a fully equivalent but more efficient SQL query  
+ 
+Prepared for execution by determining the most efficient execution or access plan  
+Access plans are DBMS-specific and translate the client’s SQL query into the series of complex 
+I/O operations required to read the data from the physical data files and generate the result set.  
+ 
+SQL Execution Phase 
+In this phase, all I/O operations indicated in the access plan are executed. When the execution plan 
+is run, the proper locks—if needed—are acquired for the data to be accessed, and the data is 
+retrieved from the data files and placed in the DBMS’s data cache. All transaction management

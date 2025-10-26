@@ -1,0 +1,24 @@
+4. In the Configure your new project dialog, enter the following values, and select Create: 
+• In the Project name field, type TestHello. 
+• In the Location field, type C:\Users\YourName\Documents\Visual Studio 2022 
+• Leave the Solution name box set to TestHello 
+• Ensure that you Place the solution and project in the same directory checkbox is left 
+unchecked. 
+• Leave the Framework option set to its default value. Visual Studio creates the project 
+by using the Console Application template. Visual Studio then displays the starter code 
+
+for the project, as in the following image.
+ 
+Figure 1.3 The visual studio 2022 IDE Editor 
+
+1.1.3 Writing your first program using Visual Studio 2022 
+The Program.cs file defines a class called Program that contains a method called Main. In the 
+following exercises, you’ll modify the code to also display the message Hello yourName! to 
+the console window. You’ll build and run the application using Visual Studio. You’ll also learn 
+how namespaces are used to partition code elements. 
+ 
+Note 
+A console application is an application that runs in a command prompt window instead 
+of providing a graphical user interface (GUI). 
+
+To write code in Visual Studio by using Microsoft IntelliSense 

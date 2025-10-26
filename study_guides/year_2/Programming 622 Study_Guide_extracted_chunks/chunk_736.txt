@@ -1,0 +1,16 @@
+be reconstructed, by rotation, at node x. Then, the subtree with root node x 
+requires either a single or a double rotation.  
+  
+1. Suppose that the balance factor of the node x and the balance factor of the root node of the higher 
+subtree of x have the same sign, that is, both positive or both negative.  
+  
+1. If these balance factors are positive, make a single left rotation at x. (Prior to insertion, the right 
+subtree of x was higher than its left subtree. The new item was inserted in the right subtree of x, 
+causing the height of the right subtree to increase in height, which in turn violated the balance criteria 
+at x.)  
+2. If these balance factors are negative, make a single right rotation at x. (Prior to insertion, the left right 
+subtree of x was higher than its right subtree. The new item was inserted in the left subtree of x, 
+causing the height of the left subtree to increase in height, which in turn violated the balance criteria 
+at x.)  
+  
+2. Suppose that the balanc

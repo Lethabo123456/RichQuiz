@@ -1,0 +1,45 @@
+3.5.2 Pre-emptive and Non-pre-emptive Scheduling Algorithms 
+In multiprogramming environments, an I/O request is called a natural wait, allowing the CPU to be 
+allocated to another job while the request is processed (e.g., printing a book chapter). This 
+enhances CPU utilization. 
+
+➢ Pre-emptive Scheduling: Interrupts a job's execution to allocate the CPU to another job, 
+enabling better responsiveness and multitasking. 
+➢ Non-pre-emptive Scheduling: The job retains the CPU until it finishes or issues an I/O request. 
+It lacks external interrupts during execution. 
+In both policies, processes in infinite loops can be terminated and moved to the FINISHED queue to 
+free up resources.
+
+3.6. Scheduling Algorithms 
+The Process Scheduler relies on a scheduling algorithm, based on a specific scheduling policy, to 
+allocate the CPU in the best way for moving jobs through the system efficiently. 
+ 
+3.6.1 First Come First Served 
+First-Come-First-Served (FCFS) is a non-pre-emptive scheduling algorithm that handles all incoming 
+objects according to their arrival time, the earlier they arrive, the sooner they are served. Assuming 
+there is no multiprogramming, turnaround time (the time required to execute a job and return the 
+output to the user) is unpredictable with the strict FCFS policy. 
+Example:
+
+Consider the following three jobs with a run-time that includes the jobs CPU cycles and I/O cycles: 
+ 
+• Job A has a run-time of 15 milliseconds (ms). 
+• Job B has a run-time of 2 ms. 
+• Job C has a run-time of 1 ms. 
+ 
+Solution: 
+ 
+The timeline shown in Figure 3.5 below shows an FCFS algorithm with an arrival sequence of A, B, 
+and C. 
+
+Figure 3.5 
+ 
+If all three jobs arrive in very quick succession (almost simultaneously at time 0), we can calculate 
+that the turnaround time (each job’s finish time minus arrival time), for Job A is 15, for Job B is 17, 
+and for Job C is 18. So, the average turnaround time is: 
+Average turnaround = [(15-0) + (17-0) + (18-0)] / 3 
+ 
+= 16.67 ms 
+ 
+In this example, the turnaround time for Job A is 18, for Job B is 3, and for Job C is 1, and the average 
+turnaround time, shown here in the order in which they finish, Job C, Job B, and Job A, is 7.3ms. 

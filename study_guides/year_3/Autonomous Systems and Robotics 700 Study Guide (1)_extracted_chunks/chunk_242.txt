@@ -1,0 +1,254 @@
+gRPC Server Implementation 
+File: C:\distributed_systems\3_grpc\grpc_server.py 
+#!/usr/bin/env python3 
+""" 
+gRPC Server Implementation 
+Demonstrates various gRPC communication patterns 
+"""  
+import grpc 
+from concurrent import futures 
+import time 
+import random 
+import threading 
+import json 
+ 
+# Generate Python code from proto file: 
+# python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. robot_service.proto 
+ 
+# For this demo, we'll create mock classes since protoc generation might not work immediately 
+class MockRobotStatus: 
+    def __init__(self, robot_id, status, battery_level, x=0, y=0, z=0): 
+        self.robot_id = robot_id 
+        self.status = status 
+        self.battery_level = battery_level 
+        self.position_x = x 
+        self.position_y = y 
+        self.position_z = z 
+        self.timestamp = int(time.time()) 
+ 
+class MockRobotRequest: 
+    def __init__(self, robot_id="robot1", request_type="status"): 
+        self.robot_id = robot_id 
+        self.request_type = request_type 
+ 
+class MockCommandResult: 
+    def __init__(self, success=True, message="OK", commands_processed=0): 
+        self.success = success 
+
+        self.message = message 
+        self.commands_processed = commands_processed 
+ 
+class MockChatMessage: 
+    def __init__(self, robot_id, message, timestamp=None): 
+        self.robot_id = robot_id 
+        self.message = message 
+        self.timestamp = timestamp or int(time.time()) 
+ 
+class RobotControllerService: 
+    """gRPC service implementation""" 
+     
+    def __init__(self): 
+        self.robots = { 
+            'robot1': {'status': 'active', 'battery': 85.5, 'x': 1.0, 'y': 2.0, 'z': 0.0}, 
+            'robot2': {'status': 'charging', 'battery': 45.2, 'x': -1.0, 'y': 1.5, 'z': 0.0}, 
+            'robot3': {'status': 'maintenance', 'battery': 12.8, 'x': 0.0, 'y': 0.0, 'z': 0.0}, 
+        } 
+        self.command_count = 0 
+        print(" Robot Controller Service initialized") 
+ 
+ 
+
+    def GetRobotStatus(self, request, context): 
+        """Unary RPC: Get single robot status""" 
+        robot_id = request.robot_id 
+        print(f" Status request for {robot_id}") 
+         
+        if robot_id in self.robots: 
+            robot = self.robots[robot_id] 
+            status = MockRobotStatus( 
+                robot_id=robot_id, 
+                status=robot['status'], 
+                battery_level=robot['battery'], 
+                x=robot['x'], 
+                y=robot['y'], 
+                z=robot['z'] 
+            ) 
+            print(f" Sending status for {robot_id}: {robot['status']}, {robot['battery']}%") 
+            return status 
+        else: 
+            context.set_code(grpc.StatusCode.NOT_FOUND) 
+            context.set_details(f'Robot {robot_id} not found') 
+            return MockRobotStatus(robot_id, "not_found", 0.0) 
+ 
+    def MonitorRobot(self, request, context): 
+        """Server Streaming RPC: Stream robot status updates""" 
+        robot_id = request.robot_id 
+        print(f" Starting monitoring stream for {robot_id}") 
+         
+        try: 
+            for i in range(20):  # Send 20 updates 
+                if robot_id in self.robots: 
+                    robot = self.robots[robot_id] 
+                     
+                    # Simulate changing battery and position 
+                    robot['battery'] = max(0, robot['battery'] - random.uniform(0.1, 0.5)) 
+                    robot['x'] += random.uniform(-0.1, 0.1) 
+                    robot['y'] += random.uniform(-0.1, 0.1) 
+                     
+                    # Update status based on battery 
+                    if robot['battery'] < 20: 
+                        robot['status'] = 'low_battery' 
+                    elif robot['battery'] < 10: 
+                        robot['status'] = 'critical' 
+                     
+
+                    status = MockRobotStatus( 
+                        robot_id=robot_id, 
+                        status=robot['status'], 
+                        battery_level=robot['battery'], 
+                        x=robot['x'], 
+                        y=robot['y'], 
+                        z=robot['z'] 
+                    ) 
+                     
+                    print(f" Streaming update {i+1} for {robot_id}: {robot['battery']:.1f}%") 
+                    yield status 
+                     
+                time.sleep(1) 
+        except GeneratorExit: 
+            print(f" Client disconnected from {robot_id} monitoring") 
+ 
+    def SendCommands(self, request_iterator, context): 
+        """Client Streaming RPC: Receive stream of commands""" 
+        print(" Receiving command stream...") 
+         
+        commands_processed = 0 
+         
+
+        try: 
+            for command in request_iterator: 
+                robot_id = command.robot_id 
+                cmd = command.command 
+                 
+                print(f" Processing command for {robot_id}: {cmd}") 
+                 
+                # Process command 
+                if robot_id in self.robots: 
+                    if cmd == 'move_forward': 
+                        self.robots[robot_id]['x'] += 1.0 
+                    elif cmd == 'move_backward': 
+                        self.robots[robot_id]['x'] -= 1.0 
+                    elif cmd == 'turn_left': 
+                        self.robots[robot_id]['y'] += 1.0 
+                    elif cmd == 'turn_right': 
+                        self.robots[robot_id]['y'] -= 1.0 
+                    elif cmd == 'charge': 
+                        self.robots[robot_id]['status'] = 'charging' 
+                        self.robots[robot_id]['battery'] = min(100, self.robots[robot_id]['battery'] + 10) 
+                     
+                    commands_processed += 1 
+
+                time.sleep(0.1)  # Simulate processing time 
+         
+        except Exception as e: 
+            print(f" Error processing commands: {e}") 
+         
+        result = MockCommandResult( 
+            success=True, 
+            message=f"Processed {commands_processed} commands successfully", 
+            commands_processed=commands_processed 
+        ) 
+         
+        print(f" Command stream completed: {commands_processed} commands processed") 
+        return result 
+ 
+    def RobotChat(self, request_iterator, context): 
+        """Bidirectional Streaming RPC: Chat with robots""" 
+        print(" Starting robot chat session...") 
+         
+        def generate_responses(): 
+            responses = [ 
+                "Hello! I'm ready for commands.", 
+                "Systems operational.", 
+
+                "Battery level is adequate.", 
+                "Awaiting instructions.", 
+                "Navigation systems online.", 
+                "All sensors functioning normally.", 
+                "Ready to assist.", 
+                "Standing by for orders." 
+            ] 
+             
+            for response in responses: 
+                time.sleep(2) 
+                yield MockChatMessage( 
+                    robot_id="system", 
+                    message=response, 
+                    timestamp=int(time.time()) 
+                ) 
+         
+        # Start response generator 
+        response_thread = threading.Thread(target=lambda: list(generate_responses())) 
+        response_thread.start() 
+         
+        # Process incoming messages 
+        try: 
+
+            for message in request_iterator: 
+                print(f" Received: {message.robot_id}: {message.message}") 
+                 
+                # Echo back with processing 
+                response = MockChatMessage( 
+                    robot_id="echo_bot", 
+                    message=f"Received: '{message.message}' - Processing...", 
+                    timestamp=int(time.time()) 
+                ) 
+                yield response 
+                 
+        except Exception as e: 
+            print(f" Chat error: {e}") 
+ 
+def serve(): 
+    """Start gRPC server""" 
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=10)) 
+     
+    # In real implementation, you would use: 
+    # robot_service_pb2_grpc.add_RobotControllerServicer_to_server(RobotControllerService(), 
+server) 
+     
+
+    # For this demo, we'll simulate the server 
+    service = RobotControllerService() 
+     
+    listen_addr = '[::]:50051' 
+    # server.add_insecure_port(listen_addr) 
+     
+    print(f" gRPC Server starting on {listen_addr}") 
+    print("Available services:") 
+    print("  - GetRobotStatus (Unary)") 
+    print("  - MonitorRobot (Server Streaming)") 
+    print("  - SendCommands (Client Streaming)") 
+    print("  - RobotChat (Bidirectional Streaming)") 
+     
+    # server.start() 
+     
+    # Simulate server running 
+    try: 
+        while True: 
+            print(" Server running... (Press Ctrl+C to stop)") 
+             
+            # Simulate handling requests 
+            time.sleep(5) 
+
+             # Demo unary call 
+            request = MockRobotRequest("robot1", "status") 
+            response = service.GetRobotStatus(request, None) 
+            print(f" Demo unary call result: {response.robot_id} - {response.status}") 
+             
+    except KeyboardInterrupt: 
+        print("\n Shutting down gRPC server...") 
+     
+    # server.stop(0) 
+ 
+if __name__ == '__main__': 
+    serve()

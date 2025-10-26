@@ -1,0 +1,25 @@
+e function 
+pointerParameters can change the value of *q, but not the value of q. However, the 
+function pointerParameters can change the value of both p and *p. 
+ 
+ 
+ 
+ 
+ 
+ 
+1. An array is a structured data type with a fixed number of components. 
+Every component is of the same type, and components are accessed using 
+their relative positions in the array. 
+2. In C++, an array index starts with 0. 
+3. Arrays can be initialized during their declaration. If there are fewer initial 
+values than the array size, the remaining elements are initialized to 0 
+
+167 | P a g e  
+ 
+4. The base address of an array is the address of the first array component. 
+For example, if list is a one-dimensional array, the base address of list is 
+the address of list[0]. 
+5. Although as parameters, arrays are passed by reference, when declaring an 
+array as a formal parameter, using the reserved word const before the data 
+type prevents the function from modifying the array. 
+6. The sequential search algorith

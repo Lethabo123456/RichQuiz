@@ -1,0 +1,33 @@
+lemType> *current;  
+bool found = false;  
+  
+if (root == NULL) cerr << "Cannot search the empty 
+tree." << endl; else  
+{  
+current = root;  
+  
+while (current != NULL && !found)  
+{  
+if (current->info == searchItem) 
+found = true; else if (current->info 
+> searchItem) current = current-
+
+339  
+  
+>llink; else current = current-
+>rlink;  
+}//end while  
+}//end else  
+  
+return found;  
+}//end search  
+  
+ 
+9.3.2  Insert  
+  
+After inserting an item in a binary search tree, the resulting binary tree must also be a binary search tree. 
+To insert a new item, first we search the binary search tree and find the place where the new item is to 
+be inserted. The search algorithm is similar to the search algorithm of the function search. Here we 
+traverse the binary search tree with two pointers—a pointer, say current, to check the current node and 
+a pointer, say trailCurrent, pointing to the parent of current. Because duplicate items are not allowed, our 
+search must end at an empty subtree

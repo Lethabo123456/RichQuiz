@@ -1,0 +1,18 @@
+Float-Point Numbers 
+  
+float    
+The type float specifies a single-precision value that uses 32 bits of storage. Single precision is faster 
+on some processors and takes half as much space as double precision, but will become imprecise 
+when the values are either very large or very small. Variables of type float are useful when you need 
+a fractional component, but don’t require a large degree of precision. For example, float can be 
+useful when representing dollars and cents.Here are some example float variable declarations:   
+   
+float hightemp, lowtemp;   
+
+double    
+Double precision, as denoted by the double keyword, uses 64 bits to store a value. Double precision 
+is actually faster than single precision on some modern processors that have been optimized for 
+high-speed mathematical calculations. All transcendental math functions, such as sin( ), cos( ), and 
+sqrt( ), return double values. When you need to maintain accuracy over many iterative calculations, 
+or are manipulating large-valued numbers, double is the best choice.Here is a short program that 
+uses double variables to compute the area of a circle: 

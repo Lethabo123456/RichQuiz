@@ -1,0 +1,19 @@
+ue as the second argument. 
+Incidentally, readfile() is handy for sending binary files — such as images and PDF documents — to 
+the Web browser for displaying or downloading.   
+   
+3.13 Random Access To File Data   
+Using the functions you have met so far, you can only manipulate data sequentially, that is, in the 
+same order that it is arranged in the file. However, sometimes you need to skip around the contents 
+of an open file. For example, you might want to read a file once to search for a particular string, then 
+return to the start of the file in order to search for another string. Of course, this is easy if you have 
+read the entire file using, for example, file_get_contents(). However, this is no t practical for large 
+files. Fortunately, it is possible to move the file pointer around within an open file, so that you can 
+start reading or writing at any point in the file. PHP gives you three functions that let you work with 
+the file   
+pointer:   
+
+54   
+   
+• 
+fseek() — Repo

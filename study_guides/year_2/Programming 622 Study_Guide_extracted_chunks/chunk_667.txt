@@ -1,0 +1,19 @@
+1.3.3.  
+1.3.3. Because the right subtree of D is empty, there is nothing to traverse. Step 1.3.3 is 
+completed.  
+  
+This completes Step 1.3. Because Steps 1.1, 1.2, and 1.3 are completed, Step 1 is completed, and so we 
+go to Step 2.  
+  
+2. Visit A. That is, output A on an output device. This completes Step 2, so we proceed to Step 3.  
+3. Traverse the right subtree of A; that is, traverse RA = {C}. Now RA is a binary tree with the root 
+node C. Because RA is a binary tree, we apply the inorder traversal criteria to RA.  
+  
+3.1. Traverse the left subtree of C; that is, traverse LC = empty.  
+3.2. Visit C.  
+3.3. Traverse the right subtree of C; that is, traverse RC = empty.  
+  
+3.1 Because the left subtree of C is empty, there is nothing to traverse. Step 3.1 is completed.  
+3.2. Visit C. That is, output C on an output device. This completes Step 3.2, so we proceed to Step 
+3.3.  
+3.3. Because the right subtree of C is empty, there is nothing to traverse. Step 3.3 is completed.

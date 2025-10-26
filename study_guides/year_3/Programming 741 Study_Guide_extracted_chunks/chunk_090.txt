@@ -1,0 +1,48 @@
+2.11 Value-Returning Method 
+Every method that has a return type other than void must have a return statement in the 
+body. A compatible value of the type found in the heading follows the return keyword. As 
+stated previously, this return does not actually have to appear as the last statement; however, 
+it is good practice to design your methods so they have one entry and one exit. Placing the 
+return as the last statement helps you follow this guideline. Example 3-15 illustrates a value-
+returning method that does not require any arguments. To call this method, no data need to 
+be passed to it. 
+
+EXAMPLE 3-3 Value returning methods 
+ 
+static void DisplayInstructions( ) 
+{ 
+WriteLine("This program will determine how " + "much carpet to purchase."); 
+WriteLine( ); 
+WriteLine("You will be asked to enter the" + 
+" size of the room and "); 
+WriteLine("the price of the carpet, " + 
+"in price per square yards."); 
+WriteLine( ); 
+} 
+static double GetLength( ) 
+{ 
+string inputValue; 
+int feet, 
+inches; 
+Write("Enter the Length in feet: "); 
+inputValue = ReadLine( ); 
+feet = int.Parse(inputValue); 
+Write("Enter the Length in inches: "); 
+inputValue = ReadLine( ); 
+i
+h
+i t P
+(i
+tV l
+)
+
+Three variables are declared in the GetLength( ) method in Example 3-3. They are considered 
+local variables. A local variable exists only inside the method where it is declared. This method 
+is the only place these three variables can be referenced. 
+ 
+The term visible is often used to indicate where an identifier has meaning and can be used. A 
+variable’s life begins with its declaration in a method and ends when it exits the method. 
+Scope is very similar to visibility in that it is used to describe where in the program’s text the 
+identifier can be used. Thus, the variable’s scope covers the location where it is declared to 
+the closing curly brace of the method. The scope of an identifier is simply the region of the 
+program in which that identifier is usable. Scope applies to methods and variables.

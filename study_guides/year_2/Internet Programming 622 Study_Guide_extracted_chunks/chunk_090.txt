@@ -1,0 +1,19 @@
+?>   
+<html>   
+<head><title>Front Door</title></head>   
+<body bgcolor="<?= $backgroundName; ?>" text="<?= $foregroundName; ?>">   
+      <h1>Welcome to the Store</h1>   
+     <p>We have many fine products for you to view. Please feel free to browse       the 
+aisles and stop an assistant at any time. But remember, you break it       you bought 
+it!</p>   
+<p>Would you like to <a href="colors.php">change your preferences?</a></p> </body>   
+</html>   
+   
+By default, PHP session ID cookies expire when the browser closes. That is, sessions do not persist 
+after the browser ceases to exist. To change this, you will need to set the session.cookie_lifetime 
+option in php.ini to the lifetime of the cookie in seconds.   
+   
+2.3 Alternatives To Cookies   
+By default, the session ID is passed from page to page in the PHPSESSID cookie. However, PHP’s 
+session system supports two alternatives: form fields and URLs. Passing the session ID via hidden 
+fields is extremely awkward, as it forces

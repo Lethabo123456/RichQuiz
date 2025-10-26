@@ -1,0 +1,19 @@
+ields in the form, then click the Send Details button. If all goes well, you should see a page displaying 
+the data that you just entered.   
+   
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”   
+                     “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>   
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>   
+             <head>   
+                  <title>Thank You</title>   
+
+26   
+   
+                  <link rel=”stylesheet” type=”text/css” href=”common.css” />             </head>   
+           <body>   
+                    <h1>Thank You</h1>   
+                         <p>Thank you for registering. Here is the information you submitted:</p>   
+                        <dl>   
+                                <dt>First name</dt><dd><?php echo $_POST[“firstName”]?></dd>   
+                                 <dt>Last name</dt><dd><?php echo $_POST[“lastName”]?></dd>   
+                                  <dt>Password</dt><dd><?php echo $_POST[“pass

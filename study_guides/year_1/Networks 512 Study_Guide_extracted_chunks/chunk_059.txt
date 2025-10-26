@@ -1,0 +1,29 @@
+Basically, the number and type of hubs in any one collision domain for 10Mbps Ethernet is limited by the following rules:
+ 
+Network Type        Max Nodes Per Segment     Max Distance Per Segment 
+10BASE-T            2                         100m
+10BASE-FL           2                         2000m
+
+
+Table 1- 6: Network, Node and Distance Segmentation  
+
+1.9 Ethernet: Adding Speed 
+The phrase “you can never get too much of a good thing” can certainly be applied to networking. 
+Once the benefits of networking are demonstrated, there is a thirst for even faster, more reliable 
+connections to support a growing number of users and highly-complex applications. 
+How to obtain that added bandwidth can be an issue. While repeaters allow LANs to extend 
+beyond normal distance limitations, they still limit the number of nodes that can be supported. 
+Bridges and switches on the other hand allow LANs to grow significantly larger by virtue of their 
+ability to support full Ethernet segments on each port. Additionally, bridges and switches 
+selectively filter network traffic to only those packets needed on each segment, significantly
+filter network traffic to only those packets needed on each segment, significantly 
+increasing throughput on each segment and on the overall network. Network managers continue to 
+look for better performance and more flexibility for network topologies, bridges and switches. 
+
+To provide a better understanding of these and related technologies, this tutorial will cover: 
+Bridges 
+Ethernet Switches 
+Routers 
+Network Design Criteria 
+When and Why Ethernets Become Too Slow 
+Increasing Performance with Fast and Gigabit Ethernet 

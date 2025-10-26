@@ -1,0 +1,20 @@
+Definition 44 
+Let A = [𝑎𝑖𝑗] be an m × n matrix. The transpose of A, denoted by At, is the n 
+× m matrix obtained by interchanging the rows and columns of A. In other 
+words, if At = [bij ], then bij = aji for i = 1, 2, . . . , n and j = 1, 2, . . . , m. 
+ 
+The transpose of the matrix 
+ 
+ 
+is the matrix 
+ 
+Definition 45 
+A square matrix A is called symmetric if A = At . Thus A = [aij ] is symmetric if 
+aij = aji for all i and j with 1 ≤ i ≤ n and 1 ≤ j ≤ n. 
+
+Note that a matrix is symmetric if and only if it is square and it is symmetric 
+with respect to its main diagonal (which consists of entries that are in the 
+ith row and ith column for some i). This symmetry is displayed in Figure 2.18. 
+ 
+Figure 2.18: A Symmetric Matrix. 
+

@@ -1,0 +1,26 @@
+your page and load it into your browser. When the page loads, you should see 
+
+ 
+22 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+this: 
+ 
+ 
+Figure 2.13 – innerHeight in pixelson Firefox 
+The 908 in the alert box means 908 pixels worth of height. Yours may well be different. 
+It depends on how big your monitor is, and how many toolbars you have in your 
+browser. The alert box above is from Firefox. Here's the same web page in Internet 
+Explorer version 9: 
+ 
+ 
+Figure 2.14 – innerHeight in pixels on Internet Explorer version 9 
+ 
+Our Internet Explorer has no toolbars, just the address bar at the top, so the number 
+of pixels is greater. 
+Now reduce the size of your browser. In windows, you can click the Restore Down icon 
+to do this. (The Restore Down icon is just to the left of the red X in the top right.) Mac 
+users can resize with the mouse pointer held over the bottom right of the browser. 
+ 
+Refresh your page by hitting the F5 key on your keyboard. Your innerHeight value 
+should chan

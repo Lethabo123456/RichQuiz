@@ -1,0 +1,21 @@
+has an error.  
+b. If the symbol is = (an equal sign), the expression ends and we must print the answer. At this 
+step, the stack must contain exactly one element; otherwise, the expression has an error.  
+2. The symbol we read is something other than +, -, *, /, or ¼. In this case, the expression contains 
+an illegal operator.  
+  
+It is also clear that when an operand (number) is encountered in an expression, it is pushed onto the stack 
+because the operator comes after the operands.  
+  
+Consider the following expressions:  
+  
+i. 7 6 + 3 ; 6 - = ii. 
+14 + 2 3 * =  
+iii. 14 2 3 + =  
+  
+Expression (i) has an illegal operator, expression (ii) does not have enough operands for +, and expression 
+(iii) has too many operands. In the case of expression (iii), when we encounter the equal sign (=), the stack 
+will have two elements and this error cannot be discovered until we are ready to print the value of the 
+expression.  
+  
+To make the input easier to read, we assume that the postfix

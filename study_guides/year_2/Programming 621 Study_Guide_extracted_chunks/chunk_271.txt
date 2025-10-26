@@ -1,0 +1,31 @@
+meter. This way, if the exception-handling code wants to do 
+something with that value, it can be accessed via the catch block parameter. 
+ 
+Throwing An Exception 
+ 
+In order for an exception to occur in a try block and be caught by a catch block, the 
+exception must be thrown in the try block. The general syntax to throw an exception 
+is 
+ 
+in which expression is a constant value, variable, or object. The object being 
+thrown can be either a specific object or an anonymous object. It follows that in 
+C++, an exception is a value. 
+ 
+ In C++, throw is a reserved word 
+ 
+
+264 | P a g e  
+ 
+ 
+ 
+ 
+ 
+This program works as follows. The statement in Line 5 declares the int variables 
+dividend, divisor, and quotient. The try block starts at Line 6. The statement in 
+Line 8 prompts the user to enter the value for the dividend; the statement in Line 
+9 stores this number in the variable dividend.  
+ 
+
+265 | P a g e  
+ 
+The statement in Line 11 prompts the user to enter the value for the divisor

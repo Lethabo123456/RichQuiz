@@ -1,0 +1,19 @@
+f you ever want to create a regular key (as opposed to a primary key) for a field in a table, use the 
+keyword KEY or INDEX instead of PRIMARY KEY . So if you wanted to add an index for the name field 
+(because your table contained a large number of fruit records and you frequently wanted to look up  
+fruit by name), you could use (again, don ’ t type the arrows): mysql > CREATE TABLE fruit (   
+- > id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,   
+- > name VARCHAR(30) NOT NULL,   
+- > color VARCHAR(30) NOT NULL,   
+- > PRIMARY KEY (id),   
+- > KEY (name)   
+- > );   
+   
+4.12 Adding Data To A Table With The INSERT Statement   
+Now try adding some fruit to your table. To add a new row to a table, you use the SQL INSERT 
+statement. In its basic form, an INSERT statement looks like this:   
+   
+INSERT INTO table VALUES ( value1 , value2 , ... );   
+   
+This inserts values into each of the fields of the table, in the order that the fields were created.   
+Alternatively, you can create a ro

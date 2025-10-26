@@ -1,0 +1,33 @@
+3.6.2 Screen Subnet or (DMZ) 
+A screened subnet, also known as a demilitarized zone (DMZ), is used to host publicly accessible 
+servers like web servers, FTP servers, and email relays. It’s set up using two ﬁrewalls or routers 
+conﬁgured as ﬁrewalls, creating a subnet between them. This subnet acts as a buﬀer zone where 
+external traﬃc is ﬁltered twice.
+ 
+3.6.3 Separation of Duties 
+Separation of duties is a concept that speciﬁes that any operation that is susceptible to fraud or 
+abuse by employees should be broken into two tasks, and then these two tasks should be Internet 
+Firewall Internal Network Exterior Router DMZ Interior Router FIGURE assigned to diﬀerent 
+individuals. 
+
+3.6.4 Network Access Control 
+Network Access Control (NAC) is a method of securing network hosts before they’re allowed to 
+access the network. Network Access Control systems that control access to devices based on their 
+security settings include Cisco’s Network Admission Control (NAC) and Microsoft’s Network Policy 
+and Access Services (NPAS). NAC components include posture assessment, guest network, and 
+persistent vs non-persistent agents 
+
+When devices attempt to access the network, the devices are examined closely for antimalware 
+updates, operating system updates, and Windows registry settings, called posture assessment. 
+When a device is attempting to connect to a network using a form of network access control, the 
+device is ﬁrst placed in a guest network until a posture assessment is performed. When the 
+assessment is complete and is positive, admission is granted. If problems are found, admission 
+may be denied and the user notiﬁed that action must be taken, or the device may be directed to 
+a remediation server that can install missing updates or quarantine the device if necessary. 
+A persistent agent is installed on an NAC client and starts when the operating system loads. This 
+agent provides functionality that may not be present in the nonpersistent agent, such as system- 
+wide notiﬁcations and alerts, and auto and manual remediation. While nonpersistent agent is 
+used to assess the device only during the one-time check-in at login, usually through a captive 
+web portal. The nonpersistent or dissolvable agent is removed from the device when the 
+authentication web page is closed
+

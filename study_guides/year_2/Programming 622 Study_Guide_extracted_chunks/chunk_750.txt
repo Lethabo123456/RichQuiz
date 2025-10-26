@@ -1,0 +1,21 @@
+pose that q points to the root of the taller subtree of p.  
+a. If the balance factor of q is equal, a single rotation is required at p and shorter is set to 
+false.  
+b. If the balance factor of q is the same as p, a single rotation is required at p and shorter is 
+set to true.  
+c. Suppose that the balance factors of p and q are opposite. A double rotation is required at 
+p (a single rotation at q and then a single rotation at p). We adjust the balance factors and 
+set shorter to true.  
+  
+ 
+9.7.4  Analysis: AVL Trees  
+  
+Consider all possible AVL trees of height h. Let Th be an AVL tree of height h such that Th has the fewest 
+number of nodes. Let Thl denote the left subtree of Th and Thr denote the right subtree of Th. Then   
+  
+|Th| = |Thl| + |Thr| + 1;  
+  
+where |Th| denotes the number of nodes in Th.  
+  
+Because Th is an AVL tree of height h such that Th has the fewest number of nodes, it follows that one of 
+the subtrees of Th is of height h - 1 and the other is of height

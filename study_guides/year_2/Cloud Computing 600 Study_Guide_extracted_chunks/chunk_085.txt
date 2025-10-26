@@ -1,0 +1,34 @@
+5.5 Elastic Resource Capacity Architecture  
+The elastic resource capacity architecture is primarily related to the dynamic provisioning of virtual 
+servers, using a system that allocates and reclaims CPUs and RAM in immediate response to the 
+fluctuating processing requirements of hosted IT resources.  
+
+5.6 Service Load Balancing Architecture  
+
+The service load balancing architecture can be considered a specialized variation of the workload 
+distribution architecture that is geared specifically for scaling cloud service implementations. 
+Redundant deployments of cloud services are created, with a load balancing system added to 
+dynamically distribute workloads. 
+
+The duplicate cloud service implementations are organized into a resource pool, while the load 
+balancer is positioned as either an external or built-in component to allow the host servers to balance 
+the workloads themselves. Depending on the anticipated workload and processing capacity of host 
+server environments, multiple instances of each cloud service implementation can be generated as 
+part of a resource pool that responds to fluctuating request volumes more efficiently. 
+The load balancer can be positioned either independent of the cloud services and their host servers 
+or built-in as part of the application or server’s environment. In the latter case, a primary server with 
+the load balancing logic can communicate with neighboring servers to balance the workload.  
+
+Fig 5.3: Load balancing Architecture 
+ 
+5.7 Cloud Bursting Architecture  
+The cloud bursting architecture establishes a form of dynamic scaling that scales or “bursts out” on-
+premise IT resources into a cloud whenever pre-defined capacity thresholds have been reached. The 
+corresponding cloud-based IT resources are redundantly pre-deployed but remain inactive until cloud 
+bursting occurs. After they are no longer required, the cloud-based IT resources are released and the 
+architecture “bursts in” back to the on-premise environment. 
+
+Cloud bursting is a flexible scaling architecture that provides cloud consumers with the option of using 
+cloud-based IT resources only to meet higher usage demands. The foundation of this architectural 
+model is based on the automated scaling listener and resource replication mechanisms. 
+ 

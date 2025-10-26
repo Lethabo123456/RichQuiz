@@ -1,0 +1,71 @@
+ect ($array1, $array2); 
+print_r ($inter); 
+?> 
+a) Array ( [0] => KA [1] => LA [2] => CA [3] => MA [4] => TA [5] => IA [6] => GA ) 
+b) Array ( [0] => KA [2] => CA [4] => TA ) 
+c) Array ( [1] => IA [3] => GA ) 
+d) Array ( [1] => LA [3] => MA ) 
+  
+Answer: b 
+ 
+Topic: 6 
+91. What will be the output of the following PHP code? 
+<?php 
+function calc($price, $tax="") 
+{ 
+$total = $price + ($price * $tax); 
+
+echo "$total";  
+} 
+calc(42);     
+?> 
+a) Error 
+b) 0 
+c) 42 
+d) 84 
+  
+Answer: c 
+  
+92. What will be the output of the following PHP code? 
+<?php 
+function a() 
+{ 
+function b() 
+{ 
+echo 'I am b'; 
+} 
+echo 'I am a'; 
+} 
+a(); 
+a(); 
+?> 
+a) I am b 
+b) I am bI am a 
+c) Error 
+d) I am a Error 
+  
+Answer: d 
+  
+93. What will be the output of the following PHP code? 
+<?php 
+function a()   
+{ 
+function b() 
+{ 
+echo 'I am b'; 
+
+} 
+echo 'I am a'; 
+} 
+b(); 
+a(); 
+?> 
+a) I am b 
+b) I am bI am a 
+c) Error. 
+d) I am a Error 
+  
+Answer: c 
+  
+94. What will be the output of the following PHP code? 
+<?p

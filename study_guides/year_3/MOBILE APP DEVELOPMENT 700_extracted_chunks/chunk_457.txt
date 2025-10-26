@@ -1,0 +1,33 @@
+6.5 Using the Phone 
+
+An Android device not only provides hardware devices that can be used in an app to collect 
+information on the device’s internal and external environment, but it also includes hardware 
+capabilities that can be accessed to provide certain functionality for an app. To access data from a 
+sensor, the app listens for a broadcast from a sensor. However, other hardware on an Android device 
+operates only when the user or an app wants to use it. In these cases, the functionality provided by 
+the hardware is accessed by calling the API associated with the hardware. One such piece of hardware 
+provided by some devices is a telephone. In the MyContactList app, you will code the MainActivity so 
+that pressing and holding one of the contact’s phone numbers will automatically call that number. 
+This functionality requires accessing the phone’s API and asking it to call the number provided. 
+Accessing the phone functionality of an Android device requires user permission. Add the following 
+line with the other permissions already in the AndroidManifest.xml file:
+
+<uses-permission android:name="android.permission.CALL_PHONE"/> 
+ 
+Using the phone is considered a dangerous permission, so we will also have to ask for permission to 
+do it to make the app compatible with the newer versions of the Android OS. 
+The next step is to add a listener to the phone number EditTexts for the press-and-hold user action. 
+This is done by adding a method to the MainActivity.java file. Since we have to check permission, this 
+method will call a method to check the permission. Use the code in Listing 8.6. Be sure to add the call 
+to this activity in the onCreate method. 
+
+Android versus iOS: Creating a Compass 
+As you have seen in the preceding section, creating a compass in Android requires accessing two 
+sensors and manipulating the data they provide. In contrast, the device’s heading is included in the 
+Core Location framework on iOS. Heading is reported as a function of the device’s location, making 
+creating a compass in iOS significantly easier than in Android. 
+ 
+The pattern in this method should be very familiar by now. A reference to the widget is created, and 
+an event is added to the widget. Next, the widget’s response to the event is coded. In this case, that 
+is a call to another method to check if the app has permission to use the phone. Add the 
+checkPhonePermission method using Listing 8.7. 

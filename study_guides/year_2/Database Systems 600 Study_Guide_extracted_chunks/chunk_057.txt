@@ -1,0 +1,22 @@
+retail company’s management structure may require 
+that each of its stores be managed by a single employee. In turn, each store manager, who is an 
+employee, manages only a single store. Therefore, the relationship “EMPLOYEE manages 
+STORE” is labelled 1:1.  
+The preceding discussion identified each relationship in both directions; that is, relationships are 
+bidirectional.   
+A constraint is a restriction placed on the data. Constraints are important because they help to ensure 
+data integrity. Constraints are normally expressed in the form of rules, such as:  
+• 
+A student’s GPA must be between 0.00 and 4.00.  
+
+ 
+21 
+• 
+Each class must have one and only one teacher. 
+How do you properly identify entities, attributes, relationships, and constraints? The first step is to 
+clearly identify the business rules for the problem domain you are modelling. 
+ 
+ 
+Business Rules 
+When database designers go about selecting or determining the entities, attributes, and relationships 
+that will be u

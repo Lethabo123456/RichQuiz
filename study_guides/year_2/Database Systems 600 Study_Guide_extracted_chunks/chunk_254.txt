@@ -1,0 +1,29 @@
+o produce the listing with 
+products sorted in descending order by price, you would enter:  
+SELECT   
+P_CODE, P_DESCRIPT, P_QOH, P_PRICE 
+FROM  
+ 
+PRODUCT 
+ORDER BY  
+P_PRICE DESC; 
+Ordered listings are used frequently and we often order data in multilevel ordered sequences (by 
+more than one attribute). A multilevel ordered sequence is known as a cascading order sequence, 
+and it can be created by listing several attributes, separated by commas, after the ORDER BY 
+clause.  
+To illustrate a cascading order sequence, use the following SQL command on the EMPLOYEE 
+table:  
+SELECT   
+EMP_LNAME, EMP_FNAME, EMP_INITIAL, EMP_AREACODE, 
+EMP_PHONE 
+FROM  
+ 
+EMPLOYEE 
+ORDER BY  
+EMP_LNAME, EMP_FNAME, EMP_INITIAL; 
+ 
+WHERE Clause Options 
+In this section, you learn how to fine-tune the SELECT command by adding restrictions to the 
+search criteria. When coupled with appropriate search conditions, SELECT is an incredibly 
+powerful tool that enables you to transform data into information.  
+Selec

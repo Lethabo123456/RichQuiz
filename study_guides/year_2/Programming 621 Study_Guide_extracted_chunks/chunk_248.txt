@@ -1,0 +1,20 @@
+he base class can contain functions that you 
+would want each derived class to implement. There are many scenarios when it is 
+desirable for a class to serve as a base class for a number of derived classes; 
+however, the derived classes may contain certain functions that may not have 
+meaningful definitions in the base class. 
+ 
+For example, you could have the definition of the class shape similar to the following: 
+ 
+ 
+ 
+ 
+Because the definitions of the functions draw and move are specific to a particular 
+shape, each derived class can provide an appropriate definition of these functions. 
+Note that we have made the functions draw and move virtual to enforce run-time 
+binding of these functions. 
+ 
+This definition of the class shape requires you to write the definitions of the functions 
+draw and move. However, at this point, there is no shape to draw or move. Therefore, 
+these function bodies have no code. One way to handle this is to make the body of 
+these functions empty. This sol

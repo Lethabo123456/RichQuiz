@@ -1,0 +1,16 @@
+function, passing in the file handle. The 
+function reads from the current file pointer to the end of the current line, and returns the read 
+characters as a string (or false if there was a problem, such as the end of the file being reached).  
+Note that any end-of-line character (or characters) at the end of the line is also included in the string.   
+   
+You can limit the number of characters read by passing in a second, integer argument, in which case 
+fgets() stops when it reaches that number of characters minus one (unless the end of the line is 
+reached first). It is a good idea to include this argument when reading large files that might not 
+contain line breaks.   
+   
+The following example uses fgets() to read and display a three-line text file, one line at a time. The 
+while loop exits when fgets() returns false (which means it is reached the end of the file):   
+   
+/* milton.txt contains:   
+The mind is its own place, and in itself Can make 
+a Heav’n of Hell, a Hell of Heav

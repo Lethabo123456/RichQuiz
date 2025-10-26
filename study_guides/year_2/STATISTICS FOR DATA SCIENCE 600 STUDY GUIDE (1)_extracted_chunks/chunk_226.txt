@@ -1,0 +1,30 @@
+alues and 
+the y axis is a count. As an example, I will import a store's daily number of unique customers, 
+as shown: 
+  
+rossmann_sales = pd.read_csv('data/rossmann.csv')  
+rossmann_sales.head() 
+  
+ 
+                                       
+ 
+  
+ 
+Note how we have multiple store data (by the first Store column).  
+Let's subset this data for only the first store, as shown:  
+first_rossmann_sales = rossmann_sales[rossmann_sales['Store']==1]  
+  
+Now, let's plot a histogram of the first store's customer count:  
+first_rossmann_sales['Customers'].hist(bins=20)  
+plt.xlabel('Customer Bins')  
+plt.ylabel('Count') 
+ 
+
+P a g e  | 130 
+ 
+                  
+ 
+The x axis is now categorical in that each category is a selected range of values, for example, 
+600-620 customers would potentially be a category. The y axis, like a bar chart, is plotting the 
+number of observations in each category. In this graph, for example, one might take away the 
+fact that most of the time, the number of customers

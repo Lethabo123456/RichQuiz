@@ -1,0 +1,17 @@
+of EMPLOYEE because it only 
+satisfies one of the criteria—it is an identifiable kind of employee—but none of the attributes are 
+unique to just clerks. In the next section, you will learn how entity super-types and subtypes are 
+related in a specialization hierarchy. 
+       Specialization Hierarchy 
+ Entity supertypes and subtypes are organized in a specialization hierarchy, which depicts the 
+arrangement of higher-level entity supertypes (parent entities) and lower-level entity subtypes 
+(child entities). Figure 5.2 shows the specialization hierarchy formed by an EMPLOYEE supertype 
+and three entity subtypes—PILOT, MECHANIC, and ACCOUNTANT. The specialization 
+hierarchy reflects the 1:1 relationship between EMPLOYEE and its subtypes. For example, a 
+PILOT subtype occurrence is related to one instance of the EMPLOYEE supertype.  
+
+ 
+63 
+ 
+The terminology and symbols in Figure 5.2 are explained throughout this chapter. The relationships 
+depicted within the specialization hierarchy a

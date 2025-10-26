@@ -1,0 +1,20 @@
+Modify the Adapter 
+Once the new layout is created, the Adapter and ViewHolder have 
+to be modified to properly display the data. 
+ 
+Open ContactAdapter.java in the com.example.mycontactlist source folder. Modify the class by 
+adding the code in Listing 6.7. In the interest of brevity and clarity, 
+only modified lines and methods are displayed here. It is important to understand the 
+components of the custom adapter so that you can create your own version and have it 
+work properly in the future. 
+
+▪ Line 2—The ArrayList variable used to hold the data set is modified to hold Contact objects rather 
+than Strings. 
+▪ Lines 8–9—Two additional variables are declared for the ContactViewHolder class to reference the 
+new TextView and Button widgets on the layout. 
+▪ Lines 13–14—References to the new layout widgets are assigned to the new variables. 
+▪ Lines 20–26—Two new methods to return the new widgets are added. 
+▪ Lines 32–33—The name and phone number of the contact are displayed in ViewHolder. Note that 
+the position is used to retrieve a contact from the ArrayList and then the Contact object’s methods 
+are used to get the required values. At this point, we will not use the button. That functionality will be 
+added later. 

@@ -1,0 +1,19 @@
+tributes 
+Because computers identify all characters by their numeric American Standard Code for 
+Information Interchange (ASCII) codes, comparison operators may even be used to place 
+restrictions on character-based attributes. Therefore, the command:  
+SELECT  P_CODE, P_DESCRIPT, P_QOH, P_MIN, P_PRICE 
+FROM  
+PRODUCT 
+WHERE  
+P_CODE < '1558-QW1'; 
+would be correct and would yield a list of all rows in which the P_CODE is alphabetically less than 
+1558-QW1.  
+String (character) comparisons are made from left to right. This left-to-right comparison is 
+especially useful when attributes such as names are to be compared. However, may get some 
+unexpected results from comparisons when dates or other numbers are stored in character format. 
+Using Comparison Operators on Dates 
+Date procedures are often more software-specific than other SQL procedures. For example, the 
+query to list all the rows in which the inventory stock dates occur on or after January 20, 2018, may 
+look like this:  
+SE

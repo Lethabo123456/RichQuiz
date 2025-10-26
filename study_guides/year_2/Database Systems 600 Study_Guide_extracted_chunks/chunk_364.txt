@@ -1,0 +1,18 @@
+’s relationships with other modules to address module coupling. module 
+coupling describes the extent to which modules are independent of one another. Modules must 
+display low coupling, indicating that they are independent of other modules. Low coupling 
+decreases unnecessary intermodal dependencies, thereby allowing the creation of a truly 
+modular system and eliminating unnecessary relationships among entities. Processes may be 
+classified according to their:  
+ 
+ Frequency (daily, weekly, monthly, yearly, or exceptions)  
+ 
+Operational type (INSERT or ADD, UPDATE or CHANGE, DELETE, queries and reports, 
+batches, maintenance, and backups) 
+
+ 
+147 
+All identified processes must be verified against the ER model. If necessary, appropriate changes 
+are implemented. The process verification is repeated for all of the model’s modules. You can 
+expect that additional entities and attributes will be incorporated into the conceptual model during 
+its validation. At this point, a conceptual

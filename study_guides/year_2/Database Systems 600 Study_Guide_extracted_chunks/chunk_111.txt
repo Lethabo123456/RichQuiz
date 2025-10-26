@@ -1,0 +1,14 @@
+rminology, it would be correct 
+to say that in a Student table, STU_NUM is the determinant and STU_LNAME is the dependent, 
+since STU_NUM functionally determines STU_LNAME, and STU_LNAME is functionally 
+dependent on STU_NUM. Also, functional dependence can involve a determinant that comprises 
+more than one attribute and multiple dependent attributes.  
+Determinants made of more than one attribute require special consideration. It is possible to have a 
+functional dependency in which the determinant contains attributes that are not necessary for the 
+relationship. Thus, a more specific term, full functional dependence, is used to refer to functional 
+dependencies in which the entire collection of attributes in the determinant is necessary for the 
+relationship.  
+Types of Keys 
+Recall that a key is an attribute or group of attributes that can determine the values of other 
+attributes. Therefore, keys are determinants in functional dependencies. Several different types of 
+keys are use

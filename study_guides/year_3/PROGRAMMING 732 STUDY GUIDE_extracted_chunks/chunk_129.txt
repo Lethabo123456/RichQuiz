@@ -1,0 +1,24 @@
+4.1.24 Using the HTTP Support Classes  
+When using the HTTP support classes, you generally create a new servlet that extends HttpServlet and 
+overrides either doGet() or doPost(), or possibly both. Other methods can be overridden to get more fine-
+grained control.   
+The HTTP processing methods are passed two parameters, an HttpServletRequest object and an 
+HttpServletResponse object. The HttpServletRequest class has several convenience methods to help parse 
+the request, or you can parse it yourself by simply reading the text of the request.   
+A servlet's doGet() method should   
+• Read request data, such as input parameters   
+• Set response headers (length, type, and encoding)   
+• Write the response data   
+It is important to note that the handling of a GET method is expected to be safe and idempotent. 
+Handing is considered safe if it does not have any side effects for which users are held responsible, such 
+as charging them for the access or storing data.   
+Handling is considered idempotent if it can safely be repeated. This allows a client to repeat a GET 
+request without penalty.Think of it this way: GET should be "looking without touching." If you require 
+processing that has side effects, you should use another HTTP method, such as POST. A servlet's 
+doPost() method should be overridden when you need to process an HTML form posting or to handle a 
+large amount of data being sent by a client. HTTP POST method handling is discussed in detail later.  
+HEAD requests are processed by using the doGet() method of an HttpServlet. You could simply 
+implement doGet() and be done with it; any document data that you write to the response output 
+stream will not be returned to the client. A more efficient implementation, however, would check to see 
+if the request was a GET or HEAD request, and if a HEAD request, not write the data to the response 
+output stream. 

@@ -1,0 +1,32 @@
+ata type, built-in or user-defined, and declaration is 
+either a function declaration or a class declaration. In C++, template is a reserved 
+word. The word class in the heading refers to any user-defined type or built-in type. 
+Type is referred to as a formal parameter to the template. (Note that in the first line, 
+template , the keyword class can be replaced with the keyword typename.) 
+ 
+Using class templates, we can create a generic class listType, and the compiler can 
+generate the appropriate source code for a specific implementation. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+223 | P a g e  
+ 
+Class Templates    
+ 
+Class templates are called parameterized types because, based on the parameter 
+type, a specific class is generated. 
+The following statements define listType to be a class template: 
+ 
+ 
+
+224 | P a g e  
+ 
+ 
+ 
+ 
+This definition of the class template listType is a generic definition and includes only 
+the basic operations on a list. To derive a specific list from this list and to add or rewrite

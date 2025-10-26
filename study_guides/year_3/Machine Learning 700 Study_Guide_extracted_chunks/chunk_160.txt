@@ -1,0 +1,22 @@
+Summary of Clustering Methods 
+This section highlighted the fact that clustering is a largely qualitative process, often most useful during 
+the exploratory phase of data analysis. We explored three clustering algorithms: k-means, DBSCAN, and 
+agglomerative clustering. Each method offers a way to control the level of granularity in clustering. While 
+k-means and agglomerative clustering allow you to specify the number of clusters, DBSCAN lets you 
+define proximity using the eps parameter, which indirectly affects the cluster size. All three algorithms 
+are capable of handling large, real-world datasets, are relatively easy to understand, and support 
+clustering into multiple groups. 
+
+Each algorithm has its own unique strengths. K-means provides a way to characterize clusters by their 
+centers and can be seen as a decomposition method, representing each data point by its cluster's center. 
+DBSCAN has the advantage of detecting "noise points" that do not belong to any cluster and can 
+automatically determine the number of clusters. Unlike the other two methods, DBSCAN can identify 
+clusters with complex shapes, as demonstrated in the two_moons example. However, DBSCAN can 
+sometimes create clusters of vastly different sizes, which may be either a benefit or a drawback. 
+Agglomerative clustering, on the other hand, offers a hierarchical view of possible data partitions, which 
+can be easily examined using dendrograms. 
+ 
+The second category of machine learning algorithms we will explore is unsupervised learning. In 
+unsupervised learning, there is no predefined output or supervisor guiding the algorithm. Instead, the 
+algorithm is given input data and is tasked with independently identifying patterns or extracting insights 
+from it. 

@@ -1,0 +1,31 @@
+3.4.3 Constructors 
+Constructors are special types of methods used to create objects. Object-oriented design of 
+applications facilitates reuse of code. After the class is defined, you create instances, or 
+examples, of the class. This is called instantiating the class. An instance of a class is called an 
+object. When you instantiate the class, you actually create an instance of the class, an 0bject 
+that takes up space and exists. It is through this special type of method, called a constructor, 
+that you create instances of a class. Constructors differ from other methods in two ways: 
+
+• Constructors do not return a value, but the keyword void is not included. 
+• You receive an error message if you type void as part of the constructor method 
+heading. 
+• Constructors use the same identifier (name) as the class name. 
+• Constructors are methods. Like other methods, they can be overloaded. 
+ 
+A public access modifier is always associated with constructors so that other classes can 
+instantiate objects of their type. When you write a class, a constructor is automatically 
+created for you if you do not explicitly define one. This one is called the default constructor. 
+It has no functionality, other than the fact that it can be used to create an instance of the 
+class. Default values are assigned to each member data field if the default constructor is used 
+to create an object of the class type. No parameters are included with the default constructor. 
+It has no body, simply opening and closing curly braces. For a class called student, a default 
+constructor is shown here: 
+ 
+public Student ( ) 
+{ 
+} 
+ 
+Constructors are used to provide initial values for the object’s data members. These initial 
+values can be sent as arguments to the constructor method, or the initial values can be hard 
+coded in the body for the constructor. To add full functionality to your classes, you normally 
+write multiple constructors for all classes in which objects will be instantiated

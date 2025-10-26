@@ -1,0 +1,24 @@
+byte  
+The smallest integer type is byte. This is a signed 8-bit type that has a range from –128 to 127 . 
+Variables of type byte are especially useful when you’re working with a stream of data from a 
+network or file. They are also useful when you’re working with raw binary data that may not be 
+directly compatible with Java’s other built-in types. Byte variables are declared by use of the byte 
+keyword. For example, the following declares two byte variables called   b and c: byte b, c;   
+ 
+short  
+short is a signed 16-bit type. It has a range from –32,768 to 32,767. It is probably the least-used 
+Java type, since it is defined as having its high byte first (called big-endianformat). This type is mostly 
+applicable to 16-bit computers, which are becoming increasingly scarce. Here are some examples of   
+ 
+short variable declarations: short s;    short t;  int    
+The most commonly used integer type is int. It is a signed 32-bit type that has a range from –
+2,147,483,648 to 2,147,483,647. In addition to other uses, variables of type int are commonly 
+employed to control loops and to index arrays. 
+ Any time you have an integer expression involving bytes, shorts, ints, and literal numbers, the entire 
+expression is promoted to int before the calculation is done.   
+   
+long    
+is a signed 64-bit type and is useful for those occasions where an int type is not large enough to hold 
+the desired value. The range of a long is quite large. This makes it useful when big, whole numbers 
+are needed. For example, here is a program that computes the number of miles that light will travel 
+in a specified number of days.

@@ -1,0 +1,36 @@
+3.6 Relations 
+Relationships between elements of sets occur in many contexts. Every day we 
+deal with relationships such as those between a business and its telephone 
+number, an employee and his or her salary, a person and a relative, and so 
+on. In mathematics we study relationships such as those between a positive 
+integer and one that it divides, an integer and one that it is congruent to 
+modulo 5, a real number and one that is larger than it, a real number x and 
+the value f (x) where f is a function, and so on. 
+Relationships between elements of sets are represented using the structure 
+called a relation, which is just a subset of the Cartesian product of the sets. 
+Relations can be used to solve problems such as determining which pairs of 
+cities are linked by airline flights in a network, finding a viable order for the 
+different phases of a complicated project, or producing a useful way to store 
+information in computer databases. 
+3.6.1 Relations and Their Properties 
+The most direct way to express a relationship between elements of two sets 
+is to use ordered pairs made up of two related elements. For this reason, sets 
+of ordered pairs are called binary relations. In this section we introduce the 
+basic terminology used to describe binary relations. 
+
+
+Definition 48 
+Let A and B be sets. A binary relation from A to B is a subset of A × B. 
+ 
+In other words, a binary relation from A to B is a set R of ordered pairs where 
+the first element of each ordered pair comes from A and the second element 
+comes from B. We use the notation belongs to R, a is said to be related to b by R. 
+Binary relations represent relationships between the elements of two sets. 
+Let A be the set of students in your school, and let B be the set of courses. 
+Let R be the relation that consists of those pairs (a, b), where a is a student 
+enrolled in course b. For instance, if Jason Goodfriend and Deborah Sherman 
+are enrolled in CS518, the pairs (Jason Goodfriend, CS518) and (Deborah 
+Sherman, CS518) belong to R. If Jason Goodfriend is also enrolled in CS510, 
+then the pair (Jason Goodfriend, CS510) is also in R. However, if Deborah 
+Sherman is not enrolled in CS510, then the pair (Deborah Sherman, CS510) 
+is not in R. 

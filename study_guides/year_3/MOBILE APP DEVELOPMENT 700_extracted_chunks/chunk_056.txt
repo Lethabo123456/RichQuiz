@@ -1,0 +1,16 @@
+Operating System Design Issues 
+
+The primary technical difference between mobile device operating systems and operating systems 
+used on laptop and desktop computers is that the mobile operating system is not a true multitasking 
+system. On mobile devices, only one app can be active at a time. When another app is started, or the 
+app is interrupted by another app (e.g., via a phone call), the app that was running gets put in the 
+background. It remains in the background until the user specifically accesses it again. If it remains in 
+the background too long, or if available memory gets too low, the operating system may kill it. This 
+back-and-forth between different states is called the app’s life cycle. Both Android and iOS apps have 
+a life cycle. The life cycle is based on the user’s interaction with the app and the operating system’s 
+need for memory and processing resources. As users interact with the device, they may switch 
+between apps or different views within a single app. When this happens, the app goes through 
+different states, requiring the developer to handle this switch so that users don’t lose data or aren’t 
+unnecessarily interrupted in the middle of the task they are currently performing. This makes 
+understanding and designing for the app life cycle extremely important to the successful app 
+developer. 

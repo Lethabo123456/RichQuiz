@@ -1,0 +1,18 @@
+nguage (DML). SQL includes commands to insert, update, delete, 
+and retrieve data within the database tables.  
+• 
+It is a data definition language (DDL). SQL includes commands to create database objects 
+such as tables, indexes, and views, as well as commands to define access rights to those 
+database objects.  
+• 
+It is a transaction control language (TCL). The DML commands in SQL are executed within 
+the context of a transaction, which is a logical unit of work composed of one or more SQL 
+statements. SQL provides commands to control the processing of these statements an 
+indivisible unit of work.  
+• 
+It is a data control language (DCL). Data control commands are used to control access to 
+data objects, such as giving a one user permission to only view a table and giving another 
+user permission to change the data in the table. Common TCL and DCL commands are shown 
+in Table 7.3.  
+SQL is a nonprocedural language: you merely command what is to be done; you do not have to 
+worry abo

@@ -1,0 +1,101 @@
+Example 5-16. Working with a Stack 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.Collections; 
+namespace Values 
+{ 
+public class Tester 
+{ 
+static void Main() 
+{ 
+Stack intStack = new Stack(); 
+// populate the array 
+for (int i = 0; i < 8; i++) 
+{ 
+intStack.Push(i * 5); 
+} 
+// Display the Stack. 
+Console.Write("intStack values:\t"); 
+PrintValues(intStack); 
+// Remove an element from the stack. 
+Console.WriteLine("\n(Pop)\t{0}", 
+intStack.Pop()); 
+// Display the Stack. 
+Console.Write("intStack values:\t"); 
+PrintValues(intStack); 
+// Remove another element from the stack. 
+Console.WriteLine("\n(Pop)\t{0}", 
+intStack.Pop()); 
+// Display the Stack. 
+Console.Write("intStack values:\t"); 
+PrintValues(intStack); 
+// View the first element in the 
+// Stack but do not remove. 
+Console.WriteLine("\n(Peek) \t{0}", 
+intStack.Peek()); 
+// Display the Stack. 
+Console.Write("intStack values:\t"); 
+PrintValues(intStack); 
+// declare an array object which will 
+// hold 12 integers 
+Array targetArray = Array.CreateInstance( 
+typeof(int), 12); 
+targetArray.SetValue(100, 0); 
+targetArray.SetValue(200, 1); 
+targetArray.SetValue(300, 2); 
+targetArray.SetValue(400, 3); 
+targetArray.SetValue(500, 4); 
+targetArray.SetValue(600, 5); 
+targetArray.SetValue(700, 6); 
+targetArray.SetValue(800, 7); 
+targetArray.SetValue(900, 8); 
+// Display the values of the target Array instance. 
+Console.WriteLine("\nTarget array: "); 
+PrintValues(targetArray); 
+// Copy the entire source Stack to the 
+// target Array instance, starting at index 6. 
+intStack.CopyTo(targetArray, 6); 
+// Display the values of the target Array instance. 
+Console.WriteLine("\nTarget array after copy: "); 
+PrintValues(targetArray); 
+// Copy the entire source Stack 
+// to a new standard array. 
+Object[] myArray = intStack.ToArray(); 
+// Display the values of the new standard array. 
+Console.WriteLine("\nThe new array:"); 
+PrintValues(myArray); 
+} 
+public static void PrintValues( 
+IEnumerable myCollection) 
+{ 
+System.Collections.IEnumerator enumerator = 
+myCollection.GetEnumerator(); 
+while (enumerator.MoveNext()) 
+Console.Write("{0} ", enumerator.Current); 
+Console.WriteLine(); 
+} 
+} 
+} 
+
+output reflects that the items pushed onto the stack were popped in reverse order. In fact, 
+the entire stack is stored in reverse order to reflect its LIFO nature. 
+ 
+Example 5-16 uses the Array class that serves as the base class for all arrays. The example 
+creates an array of 12 integers by calling the static method of CreateInstance ( ). This method 
+takes two arguments: a type (in this case, int ) and a number representing the size of the 
+array. 
+ 
+The array is populated with the SetValue ( ) method which takes two arguments: the object 
+to add and the offset at which to add it. 
+ 
+The effect of CopyTo ( ) can be seen by examining the target array before and after calling 
+CopyTo ( ). The array elements are overwritten beginning with the index specified (6). 
+ 
+Notice also that the ToArray ( ) method is designed to return an array of objects, and so 
+myArray is declared appropriately: 
+ 
+Object[] myArray = intStack.ToArray( ); 

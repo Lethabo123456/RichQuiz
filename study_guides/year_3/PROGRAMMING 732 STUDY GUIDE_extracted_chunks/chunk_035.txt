@@ -1,0 +1,19 @@
+Void add(Component panelObj, Object name);  
+  
+Here, name is a string that specifies the name of the card whose panel is specified by panelObj. After you 
+have created a deck, your program activates a card by calling one of the following methods defined by 
+CardLayout:  
+
+void first (Container deck) 
+void last (Container deck) void 
+next (Container deck) void 
+previous (Container deck)  
+void show (Container deck, String cardName) 
+  
+Here, deck is a reference to the container (usually a panel) that holds the cards, and cardName is the name 
+of a card. Calling first() causes the first card in the deck to be shown. To show the last card, call last(). To 
+show the next card, call next(). To show the previous card, call previous(). Both next() and previous() 
+automatically cycle back to the top or bottom of the deck, respectively. The show() method displays the 
+card whose name is passed in cardName. The following example creates a tow-level card deck that allows 
+the user to select an operating system. Windows-based operating systems are displayed in one card. 
+Macintosh and Solaris are displayed in the other card.  

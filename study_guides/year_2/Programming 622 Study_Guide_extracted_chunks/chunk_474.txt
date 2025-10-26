@@ -1,0 +1,16 @@
+rve a customer. When a server becomes 
+free and the waiting customer’s queue is nonempty, the customer at the front of the queue proceeds to 
+begin the transaction. Thus, we must keep track of the time a customer is with a server. When the 
+customer arrives at a server, the transaction time is set to five and is decremented after each clock unit. 
+When the transaction time becomes zero, the server is marked free. Hence, the two objects needed to 
+implement a time-driven computer simulation of a queuing system are the customer and the server.  
+  
+Before designing the main algorithm to implement the simulation, we design classes to implement each 
+of the two objects: customer and server.  
+  
+ 
+6.6.2  Customer  
+  
+Every customer has a customer number, arrival time, waiting time, transaction time, and departure time. 
+If we know the arrival time, waiting time, and transaction time, we can determine the departure time by 
+adding these three times. Let us call the class to implement the c

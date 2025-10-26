@@ -1,0 +1,19 @@
+tion Carlos 
+Coronel and Steven Morris, Chapter three, page 69-72 
+
+ 
+44 
+ 
+The next section (Chapter 2.2), Entity Relationship (ER) Modelling, discusses several ways to 
+handle nulls. Other integrity rules that can be enforced in the relational model are the NOT NULL 
+and UNIQUE constraints. The NOT NULL constraint can be placed on a column to ensure that 
+every row in the table has a value for that column. The UNIQUE constraint is a restriction placed 
+on a column to ensure that no duplicate values exist for that column. 
+ 
+ 
+Relational Algebra 
+The data in relational tables is of limited value unless the data can be manipulated to generate useful 
+information. This section describes the basic data manipulation capabilities of the relational model. 
+Relational algebra defines the theoretical way of manipulating table contents using relational 
+operators. In Chapter 4, Working with Structured Query Language (SQL), you will learn how SQL 
+commands can be used to accomplish relational a

@@ -1,0 +1,46 @@
+ically assign account 
+numbers. Also declare an array of 10 components of type bankAccount to 
+process up to 10 customers and write a program to illustrate how to use your 
+class 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+222 | P a g e  
+ 
+TOPIC 7 
+CLASSES (PART TWO) 
+ 
+    
+    
+ 
+    
+    
+    
+  
+ 
+LEARNING OUTCOMES:  
+After studying this topic you should be able to:  
+• 
+Learn about templates 
+• 
+Explore how to construct function templates and class templates 
+• 
+Learn about virtual functions 
+• Learn about overloading 
+• Become familiar with the restrictions on operator overloading 
+• Examine the pointer this 
+ 
+7.1 TEMPLATES 
+ 
+Templates are a very powerful feature of C++. They allow you to write a single code 
+segment for a set of related functions, called a function template, and for a set of 
+related classes, called a class template. The syntax we use for templates is 
+ 
+in which Type is the name of a data type, built-in or user-defined, and declaration is 
+either a function declaration or a class dec

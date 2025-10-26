@@ -1,0 +1,33 @@
+In general terms, firewalls use four techniques that to control access and enforce the site’s security 
+policy. Originally, firewalls focused primarily on service control, but they have since evolved to provide 
+all four techniques: 
+
+ Service control: Determines the types of Internet services that can be accessed—inbound or 
+outbound. The firewall can filter traffic on the basis of IP address, protocol, or port number; 
+provide proxy software that receives and interprets each service request before passing it on; 
+or host the server software itself, such as a web or mail service. 
+ Direction control: Determines the direction in which particular service requests are initiated 
+and allowed to flow through the firewall. 
+ User control: Controls access to a service according to which user is attempting to access it. 
+This feature is typically applied to users inside the firewall perimeter (local users). It can also 
+be applied to incoming traffic from external users, though this requires some form of secure 
+authentication technology, such as that provided in IP Security (IPsec). 
+ Behavior control: Controls how particular services are used. For example, the firewall can filter 
+email to eliminate spam or enable external access to only a portion of the information on a 
+local web server. 
+
+Before proceeding to the details of firewall types and configurations, let’s consider the capabilities 
+that are within the scope of a firewall: 
+
+ A firewall defines a single choke point that keeps unauthorized users out of the protected 
+network, prohibits potentially vulnerable services from entering or leaving the network, and 
+provides protection against various kinds of IP spoofing and routing attacks. The use of a single 
+choke point simplifies security management because security capabilities are consolidated on 
+a single system or set of systems. 
+ A firewall provides a location for monitoring security-related events. Audits and alarms are 
+implemented on the firewall system. 
+ A firewall is a convenient platform for several Internet functions that are not security related. 
+These include a network address translator, which maps local addresses to Internet addresses, 
+and a network management function, which audits or logs Internet usage. 
+ A firewall serves as a platform for implementing virtual private networks (as discussed in the 
+following section).

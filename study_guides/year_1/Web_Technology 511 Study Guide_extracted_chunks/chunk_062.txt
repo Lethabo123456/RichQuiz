@@ -1,0 +1,50 @@
+Character     HTML5      Intended     Description 
+Entity        Entity     Character 
+-------------------------------------------------------
+&amp;         &AMP;      &            Ampersand
+-------------------------------------------------------
+&copy         &COPY      ©            Copyright
+-------------------------------------------------------
+&gt;          &GT;       >            Greater than
+-------------------------------------------------------
+&lt;          &LT;       <            Less than
+-------------------------------------------------------
+&trade;       &TRADE;    ™            Trademark symbol 
+------------------------------------------------------- 
+&reg;         &REG;      ®            Registration mark
+------------------------------------------------------- 
+&quot;        &QUOT;     “            Double quotes
+------------------------------------------------------
+ 
+ 
+Using character entities 
+ 
+ 
+Here’s how                             Here’s why 
+-------------------------------------------------------------------------------
+Open the source code                   You’ll add a character entity to this
+                                       page.
+-------------------------------------------------------------------------------
+Place the insertion point as shown     </P>
+                        
+                                       </BODY>
+                                       </HTML>
+-------------------------------------------------------------------------------
+Enter the following code: 
+-------------------------------------------------------------------------------
+&copy; Outlander Spices 1999-2000.     To insert the copyright symbol (©) on
+All rights reserved.                   the page. The ampersand (&) indicates
+                                       to the browser that the text that 
+                                       follows is a character entity and the 
+                                       semi-colon (;) indicates the end of the
+                                       character entity. 
+-------------------------------------------------------------------------------
+Update and close the source code 
+-------------------------------------------------------------------------------
+Refresh the page 
+-------------------------------------------------------------------------------
+Observe the page                       The copyright symbol (©) appears at 
+                                       the end of the page.
+-------------------------------------------------------------------------------
+ 
+ 

@@ -1,0 +1,48 @@
+ized in a hierarchy. This hierarchical 
+structure applies to the organization of objects in a Web document. 
+ 
+Window object: Top of the hierarchy. It is the outmost element of the object 
+hierarchy. 
+ 
+Document object: Each HTML document that gets loaded into a window 
+becomes a document object. The document contains the content of the page. 
+ 
+Form object: Everything enclosed in the <form>...</form> tags sets the form object. 
+
+ 
+111 
+ 
+SIX | JAVASCRIPT OBJECTS 
+ 
+Form control elements: The form object contains all the elements defined for 
+that object such as text fields, buttons, radio buttons, and checkboxes. 
+ 
+Here is a simple hierarchy of few important objects: 
+ 
+ 
+ 
+Figure 6.9 – The DOM hierarchy 
+ 
+There 
+are 
+several 
+DOMs in existence. 
+The 
+following 
+sections explain each 
+of these DOMs in 
+detail and describe 
+how you can use 
+them to access and 
+modify 
+document 
+content. 
+ 
+The 
+Legacy 
+DOM: This is the 
+model 
+which 
+was 
+introduced in early 
+versions of JavaScr

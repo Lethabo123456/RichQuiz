@@ -1,0 +1,45 @@
+Potential Security Log Sources 
+A wide variety of sources of security events can be logged, including the following: 
+
+ Server and workstation operating system logs 
+Log: A record of the events occurring within an organization’s systems and networks. 
+ Application logs (for example, web server, database server) 
+ Security tool logs (for example, antivirus, change detection, intrusion detection/prevention 
+system) 
+ Outbound proxy logs and end-user application logs 
+ Firewalls and other perimeter security devices for traffic between local user and remote 
+database or server (referred to as north–south traffic)  
+ Security devices between data center storage elements that communicated across a 
+network (referred to as east–west traffic), which may involve virtual machines and 
+software-based virtual security capabilities 
+ 
+The abundance of log sources present a considerable challenge to enterprise security management. 
+An organization should create a central repository to store logs in a standardized format. This may 
+require conversion software and consolidation software to keep the amount of log information 
+manageable.
+
+What to Log 
+
+In determining what types of events to log, an organization must take into consideration a number of 
+factors, including relevant compliance obligations, institutional privacy policies, data storage costs, 
+access control needs, and the ability to monitor and search large data sets in an appropriate time 
+frame. The following are examples of potential security-related events that that could be logged: 
+ Operating system logs: Successful user logon/logoff; failed user logon; user account change 
+or deletion; service failure; password changes; service started or stopped; object access enied; 
+object access changed 
+ Network device logs: Traffic allowed through firewall, traffic blocked by firewall; bytes 
+transferred; protocol usage; detected attack activity; user account changes; administrator 
+access 
+ Web servers: Excessive access attempts to nonexistent files; code (for example, SQL 
+[Structured Query Language] or HTML [Hypertext Markup Language]) seen as part of the URL; 
+attempted access to extensions not implemented on the server; web service 
+stopped/started/failed messages; failed user authentication; invalid request; internal server 
+error 
+
+Protection of Log Data 
+An organization needs to protect log data in terms of confidentiality, data integrity, availability, and 
+authenticated usage. Logs can contain sensitive information, such as a user’s password or the content 
+of emails. This presents security and privacy risks. In addition, if logs are altered or deleted, malicious 
+activity might not be noticed or the identity of the malicious party might be concealed. 
+Role-based access controls are used to partition the ability to read and modify log data based on 
+business needs and position responsibilities.

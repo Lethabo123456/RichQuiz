@@ -1,0 +1,20 @@
+Table 8: Precedence of Logical Operators 
+ 
+1.1.7 Logic and Bit Operations 
+Computers represent information using bits. A bit is a symbol with two 
+possible values, namely, 0 (zero) and 1 (one). This meaning of the word bit 
+comes from binary digit, because zeros and ones are the digits used in binary 
+representations of numbers. 
+
+The well-known statistician John Turkey introduced this terminology in 1946.
+A bit can be used to represent a truth value, because there are two truth values, 
+namely, true and false. As is customarily done, we will use a 1 bit to represent true and 
+a 0 bit to represent false. That is, 1 represents T (true), 0 represents F (false).A variable 
+is called a Boolean variable if its value is either true or false. Consequently, a 
+Boolean variable can be represented using a bit. 
+
+Computer bit operations correspond to the logical connectives. By replacing 
+true by a one and false by a zero in the truth tables for the operators ∧, ∨, 
+and ⊕, the tables shown in Table 9 for the corresponding bit operations are 
+obtained. We will also use the notation OR, AND, and XOR for the 
+operators  ∨,∧, and ⊕, as is done in various programming languages.

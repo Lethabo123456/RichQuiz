@@ -1,0 +1,40 @@
+Let's look at the code: 
+import numpy as np 
+import pandas as pd 
+from matplotlib import pyplot as plt 
+# This line allows inline plotting in Jupyter notebooks 
+%matplotlib inline 
+ results = [] 
+ for n in range(1, 10000): 
+    # Generate n random integers between 1 and 10 
+    nums = np.random.randint(low=1, high=11, size=n)  
+    # Calculate the mean of these numbers 
+    mean = nums.mean()  
+    # Append the mean to the results list 
+
+P a g e  | 51 
+ 
+    results.append(mean)  
+  
+# The length of the results list should be 9999 
+print(len(results))  
+  
+# Create a DataFrame from the results 
+df = pd.DataFrame({'means': results}) 
+ # Print the first few rows of the DataFrame 
+print(df.head())  
+ # Print the last few rows of the DataFrame 
+print(df.tail())  
+ # Plot the results 
+df.plot(title='Law of Large Numbers') 
+plt.xlabel("Number of throws in sample") 
+plt.ylabel("Average Of Sample") 
+plt.show() 
+OUTPUT:  
+
+What this is essentially showing us is that as we increase the sample size 
+of our relative frequency, the frequency approaches the actual average (probability) 
+of 5. 
+In our statistics chapters, we will work to define this law much more rigorously, 
+but for now, just know that it is used to link the relative frequency of an event to its 
+actual probability. 

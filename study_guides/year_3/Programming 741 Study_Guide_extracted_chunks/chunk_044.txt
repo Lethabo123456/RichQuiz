@@ -1,0 +1,25 @@
+1.3 Constants 
+A constant is a variable whose value cannot be changed. Variables are a powerful tool, but 
+there are times when you want to manipulate a defined value, one whose value you want to 
+ensure remains constant. For example, you might need to work with the Fahrenheit freezing 
+and boiling points of water in a program simulating a chemistry experiment. Your program be 
+clearer if you name the variables that store the values FreezingPoint and BoilingPoint, but you 
+do not want to permit their values to be reassigned. How do you prevent reassignment? The 
+answer is to use a constant. Constants come in three flavors: literals, symbolic constants, and 
+enumerations. In this assignment: 
+
+x = 32; 
+the value 32 is a literal constant. The value of 32 is always 32. You can't ssign a new value to 
+32; you can't make 32 represent the value 99 no matter how you might try. Symbolic 
+constants assign a name to a constant value. You declare a symbolic constant using the const 
+keyword and the following syntax: 
+ 
+const type identifier = value; 
+ 
+int myInt = 10; 
+double myDouble = 5.25; 
+bool myBool = true; 
+Console.WriteLine(Convert.ToString(myInt)); // convert int to string 
+Console.WriteLine(Convert.ToDouble(myInt)); // convert int to double 
+Console.WriteLine(Convert.ToInt32(myDouble)); // convert double to int 
+Console.WriteLine(Convert.ToString(myBool)); // convert bool to string 

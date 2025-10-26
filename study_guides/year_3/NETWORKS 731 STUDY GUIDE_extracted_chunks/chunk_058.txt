@@ -1,0 +1,24 @@
+SANs (Storage Area Networks) 
+NAS devices are separate storage devices, but they still require a file server to interact with 
+other devices on the network. In contrast, SANs (storage area networks) are distinct networks 
+of storage devices that communicate directly with each other and with other networks. In 
+SAN, multiple storage devices are connected to multiple, identical servers. This type of 
+architecture is similar to the mesh topology in WANs, the most fault-tolerant type of topology 
+possible. If one storage device within a SAN suffers a fault, data is automatically retrieved from 
+elsewhere in the SAN. If one server in a SAN suffers a fault, another server steps in to perform 
+its functions.  
+ 
+Not only are SANs extremely fault tolerant, but they are also extremely fast. Much of their 
+speed can be attributed to the use of a special transmission method that relies on fiber-optic 
+media and its own proprietary protocols. One popular SAN transmission method is called Fibre 
+Channel. Fibre Channel connects devices within the SAN and also connects the SAN to other 
+networks. Fibre Channel is capable of over 5 Gbps throughput. Because it depends on Fibre 
+Channel, and not on a traditional network transmission method (for example, 1000Base-T), a 
+SAN is not limited to the speed of the client/server network for which it provides data storage. 
+SAN does not belong to the client/server network, it does not have to contend with the normal 
+overhead of that network, such as broadcasts and acknowledgments. Likewise, a SAN frees 
+the client/server network from the traffic-intensive duties of backing up and restoring data. 
+Figure 2.7 shows a SAN connected to a traditional Ethernet network. 
+ 
+Figure 2.7 Storage area network (SANs) 
+© Cengage Learning 2023 

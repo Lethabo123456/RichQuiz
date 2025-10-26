@@ -1,0 +1,23 @@
+se there are n vertices, Steps 3 through 5 are repeated n - 1 times. Example 10-5 illustrates the 
+shortest path algorithm. (We use the Boolean array weightFound to keep track of the vertices for which 
+the smallest weight from the source vertex has been found. If the smallest weight for a vertex, from the 
+source, has been found, then this vertex’s corresponding entry in the array weightFound is set to true; 
+otherwise the corresponding entry is false.)  
+  
+EXAMPLE 10-5  
+Let G be the graph shown in Figure 10-8.    
+  
+  
+FIGURE 10-8 Weighted graph G  
+  
+Suppose that the source vertex of G is 0. The graph shows the weight of each edge. After Steps 1 and 2 
+execute, the resulting graph is as shown in Figure 10-9.  
+
+401  
+  
+  
+  
+FIGURE 10-9 Graph after Steps 1 and 2 execute  
+  
+Iteration 1 of Steps 3 through 5: At Step 3, we select a vertex that is closest to the vertex 0 and for which 
+the shortest path has not been found. We do this by finding a vertex in the array smallestWeigh

@@ -1,0 +1,12 @@
+n flow between 
+two people having a conversation. They show how the information gets passed back and forth 
+between the two people. Sequence diagrams are commonly used during object-oriented 
+analysis to show how classes and objects interact during a scenario. You can also use them to 
+show how the user interface components or software components interact in your solution. 
+In a nutshell, sequence diagrams shows stimuli flowing between objects. The stimulus is 
+a message, and the arrival of the stimulus at the object is called an event. Each object name is 
+in a rectangle with a single vertical line drawn beneath it called a lifeline. Messages are 
+depicted starting at the top of the lifeline and moving down that lifeline over time. 
+There are two ways to send messages between objects: asynchronous and synchronous. 
+Synchronous flow transfers a message to the receiving object and waits for a response or 
+return message before it can do anything else. Asynchronous flow allows the sender

@@ -1,0 +1,26 @@
+Worked Example 
+Show that the distributive law 𝑥(𝑦 +  𝑧) =  𝑥𝑦 +  𝑥𝑧 is valid. 
+
+Solution: 
+The verification of this identity is shown in the table below. The identity 
+holds because the last two columns of the table agree. The dual of a Boolean 
+function F represented by a Boolean expression is the function represented by 
+the dual of this expression. This dual function, denoted by 𝐹𝑑 , does not depend 
+on the particular Boolean expression used to represent 𝐹. An identity between 
+functions represented by Boolean expressions remains valid when the duals of both sides of the identity are 
+taken. This result, called the duality principle, is useful for obtaining new 
+identities. 
+ 
+2.1.4. The Abstract Definition of a Boolean Algebra 
+In this section we have focused on Boolean functions and expressions. 
+However, the results we have established can be translated into results 
+about propositions or results about sets. Because of this, it is useful to define 
+Boolean algebras abstractly. Once it is shown that a particular structure is a 
+Boolean algebra, then all results established about Boolean algebras in 
+general apply to this particular structure. Boolean algebras can be defined in 
+several ways. The most common way is to specify the properties that 
+operations must satisfy, as is done in Definition 17. 
+Definition 17 
+A Boolean algebra is a set 𝐵 with two binary operations ∨ and ∧, elements 0 
+and 1, and a unary operation such that these properties hold for all 
+𝑥, 𝑦, 𝑎𝑛𝑑 𝑧 𝑖𝑛 𝐵: 

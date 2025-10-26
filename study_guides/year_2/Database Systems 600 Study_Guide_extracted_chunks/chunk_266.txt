@@ -1,0 +1,29 @@
+ation from two or more tables. 
+However, it is often necessary to process data based on other processed data. For example, 
+suppose that you want to generate a list of vendors who do not provide products. This result can 
+also be found by using a subquery, such as:  
+SELECT  V_CODE, V_NAME  
+FROM  
+VENDOR  
+WHERE  
+V_CODE NOT IN (SELECT V_CODE FROM PRODUCT WHERE V_CODE IS 
+NOT NULL);  
+Similarly, to generate a list of all products with a price greater than or equal to the average 
+product price, you can write the following query:  
+SELECT  P_CODE, P_PRICE 
+FROM  
+PRODUCT 
+WHERE  
+P_PRICE >= (SELECT AVG(P_PRICE) FROM PRODUCT);  
+Likewise, to list all products with a total quantity sold greater than the average quantity sold, you 
+would write the following query:  
+SELECT   
+P_CODE, SUM(LINE_UNITS) AS TOTALUNITS 
+FROM  
+ 
+LINE  
+GROUP BY  
+P_CODE  
+HAVING   
+SUM(LINE_UNITS) > (SELECT AVG(LINE_UNITS) FROM LINE); 
+In both queries, you needed to get information that was not unknown, and you

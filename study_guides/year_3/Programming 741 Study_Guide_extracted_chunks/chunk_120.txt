@@ -1,0 +1,44 @@
+A common use of static member variables is to keep track of the number of instances that 
+currently exist for your class. Example 6-8 illustrates. 
+
+Example 3-8. Using static fields for instance counting 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Cat 
+{ 
+public Cat() 
+{ 
+instances++; 
+} 
+public static void HowManyCats() 
+{ 
+Console.WriteLine("{0} cats adopted",instances); 
+} 
+private static int instances = 0; 
+} 
+public class Tester 
+{ 
+static void Main() 
+{ 
+Cat.HowManyCats(); 
+Cat frisky = new Cat(); 
+Cat.HowManyCats(); 
+Cat whiskers = new Cat(); 
+Cat.HowManyCats(); 
+} 
+}
+
+The Cat class has been stripped to its absolute essentials. A static member variable called 
+instances is created and initialized to zero. Note that the static member is considered part of 
+the class, not a member of an instance, and so it cannot be initialized by the compiler on 
+creation of an instance. Thus, an explicit initializer is required  for static member variables. 
+When additional instances of Cats are created (in a constructor), the count is incremented. It 
+is undesirable to make member data public. This applies to static member variables as well. 
+One solution is to make the static member private, as we've done here with instances. We 
+have created a public accessor method, HowMany-Cats ( ), to provide access to this private 
+member.

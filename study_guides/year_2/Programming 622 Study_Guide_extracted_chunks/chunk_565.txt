@@ -1,0 +1,24 @@
+shing to resolve collision, 
+where the second hash function is given by g(k) = (k+1) % 17.  
+  
+5. Suppose that an item is to be removed from a hash table that was implemented using linear or quadratic 
+probing. Why wouldn’t you mark the position of the item to be deleted as empty?  
+  
+6. What are the advantages of open hashing?  
+  
+7. Give a numerical example to show that collision resolution by quadratic probing is better than chaining.  
+  
+8. Give a numerical example to show that collision resolution by chaining is better than quadratic probing.  
+  
+9. Suppose that the size of the hash table is 1001 and the table has 850 items. What is the load factor?  
+  
+10. 
+Suppose that the size of the hash table is 1001 and the table has 750 items. On average, how many 
+comparisons are made to determine whether an item is in the list if: a. Linear probing is used.  
+b. Quadratic probing is used.  
+c. Chaining is used.  
+  
+
+281  
+  
+11. Suppose that 550 items are to be stored in a hash tab

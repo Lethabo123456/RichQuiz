@@ -1,0 +1,29 @@
+Log Management Policy 
+NIST SP 800-92, Guide to Computer Security Log Management, recommends addressing the following 
+questions in a log management policy: 
+
+log management 
+
+The process for generating, transmitting, storing, analyzing, archiving, and disposing of log data. 
+ Log generation: 
+ 
+o Which types of hosts perform logging? 
+o Which host components perform logging (for example, operating system, service, 
+application)? 
+o Which types of events each component logs (for example, security events, network 
+connections, authentication attempts)? 
+o Which data characteristics are logged for each type of event (for example, username 
+and source IP address for authentication attempts)? 
+o How frequently each type of event is logged (for example, every occurrence, once for 
+all instances in x minutes, once for every x instances, every instance after x instances)?
+
+ Log transmission: 
+o Which types of hosts transfer logs to a log management infrastructure? 
+o Which types of entries and data characteristics are transferred from individual hosts 
+to a log management infrastructure? 
+o How is log data transferred (for example, which protocols are permissible), including 
+out-of-band methods, where appropriate (for example, for standalone systems)? 
+o How frequently is log data transferred from individual hosts to a log management 
+infrastructure (for example, in real time, every five minutes, every hour)? 
+o How are the confidentiality, integrity, and availability of each type of log data 
+protected while in transit, and is a separate logging network used? 

@@ -1,0 +1,30 @@
+y search tree.  
+//Postcondition: The node to which p points is deleted from // 
+the binary search tree.  
+  
+  
+  
+  
+  
+  
+  
+  
+
+338  
+  
+};   
+Next, we describe each of these operations.  
+  
+  
+ 
+9.3.1  Search  
+  
+The function search searches the binary search tree for a given item. If the item is found in the binary 
+search tree, it returns true; otherwise, it returns false. Because the pointer root points to the root node 
+of the binary search tree, we must begin our search at the root node. Furthermore, because root must 
+always point to the root node, we need a pointer, say current, to traverse the binary search tree. The 
+pointer current is initialized to root.  
+  
+If the binary search tree is nonempty, we first compare the search item with the info in the root node. If 
+they are the same, we stop the search and return true. Otherwise, if the search item is smaller than the 
+info in the node, we follow llink to go to the left subtree; otherwise, we follow rlink to go to the

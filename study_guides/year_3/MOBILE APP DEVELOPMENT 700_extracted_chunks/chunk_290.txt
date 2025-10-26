@@ -1,0 +1,24 @@
+4.3 Views and Layouts 
+The importance of creating a UI that your users will understand and enjoy using cannot be overstated.  
+Android introduces some new terminology for familiar programming metaphors such as: 
+ 
+• Views — Views are the base class for all visual interface elements (commonly known as 
+controls or widgets). All UI controls, including the layout classes, are derived from View. 
+• View Groups — View Groups are extensions of the View class that can contain multiple child 
+Views. Extend the ViewGroup class to create compound controls made up of interconnected 
+child Views. The ViewGroup class is also extended to provide the Layout Managers that help 
+you lay out controls within your Activities. 
+• Fragments — Fragments, introduced in Android 3.0 (API level 11), are used to encapsulate 
+portions of your UI. This encapsulation makes Fragments particularly useful when optimizing 
+your UI layouts for different screen sizes and creating reusable UI elements. Each 
+Fragment includes its own UI layout and receives the related input events but is tightly 
+bound to the Activity into which each must be embedded. Fragments are similar to UI View 
+Controllers in iOS development. 
+• Activities — Activities, described in detail in the previous chapter, represent the window, 
+or screen, being displayed. Activities are the Android equivalent of Forms in traditional 
+Windows desktop development. To display a UI, you assign a View (usually a layout or 
+Fragment) to an Activity. 
+ 
+Android provides several common UI controls, widgets, and Layout Managers. For most graphical 
+applications, it’s likely that you’ll need to extend and modify these standard Views — or create 
+composite or entirely new Views — to provide your own user experience. 

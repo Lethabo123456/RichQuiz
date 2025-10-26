@@ -1,0 +1,46 @@
+ray ( [a] => red [b] => green [c] => blue [d] => yellow ) 
+c) Array ( [e] => red [f] => green [g] => blue ) 
+d) Array ( [a] => red [b] => green [c] => blue [d] => yellow [e] => red [f] => green [g] => blue ) 
+ 
+Answer:a 
+ 
+64. What will be the output of the following PHP code ? 
+<?php 
+$a = array(12, 5, 2); 
+echo(array_product($a)); 
+?> 
+a) 024 
+b) 120 
+c) 010 
+d) 060 
+ 
+Answer: b 
+ 
+65. What will be the output of the following PHP code ? 
+<?php 
+$a = array("a" => "Jaguar", "b" => "Land Rover", "c" => "Audi", "d" => "Maseratti"); 
+echo array_search("Audi", $a); 
+?> 
+a) a 
+b) b 
+c) c 
+d) d 
+ 
+Answer:c 
+ 
+ 
+
+66. What will be the output of the following PHP code ? 
+<?php 
+$city_west = array("NYC", "London"); 
+$city_east = array("Mumbai", "Beijing"); 
+print_r(array_replace($city_west, $city_east)); 
+?> 
+a) Array ( [1] => Mumbai [0] => Beijing ) 
+b) Array ( [0] => NYC [1] => London ) 
+c) Array ( [1] => NYC [0] => London ) 
+d) Array ( [0] => Mumbai [1] => Beijing ) 
+ 
+Answer:d 
+ 
+67. What wi

@@ -1,0 +1,36 @@
+These required methods will be encapsulated by the delegate WhichIsFirst that you define within the 
+Pair class: 
+
+public delegate comparison 
+WhichIsFirst(object obj1, object obj2); 
+The return value is of type comparison, the enumeration. 
+public enum comparison 
+{ 
+theFirstComesFirst = 1; 
+theSecondComesFirst = 2; 
+} 
+Any static method that takes two objects and returns a comparison can be encapsulated by this delegate at 
+runtime. 
+You can now define the Sort method for the Pair class:  
+public void Sort(WhichIsFirst theDelegatedFunc) { 
+    i f  (theDelegatedFunc(thePair[ 0] ,thePair[ 1]) == 
+comparison. theSecondComesFirst) 
+{ 
+object temp = thePair[ 0]; 
+thePair[ 0] = thePair[ 1]; 
+thePair[ 1] = temp; 
+ } 
+}
+
+This method takes a parameter: a delegate of type WhichIsFirst named theDelegatedFunc. The 
+Sort( ) method delegates responsibility for deciding which of the two objects in the Pair comes first to the 
+method encapsulated by that delegate. It invokes the delegated method in the body of the Sort( ) method 
+and examines the return value, which will be one of the two enumerated values of compars ion. 
+If the value returned is the SecondComes First, the objects within the pair are swapped; otherwise no 
+action is taken. 
+
+Notice that theDelegatedFunc is the name of the parameter to represent the method encapsulated by 
+the delegate. You can assign any method (with the appropriate return value and signature) to this parameter. It 
+is as if you had a method that took an int as a parameter: 
+
+int SomeMethod (int myParam){ //...}

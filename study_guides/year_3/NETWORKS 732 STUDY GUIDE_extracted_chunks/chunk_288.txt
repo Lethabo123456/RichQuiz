@@ -1,0 +1,39 @@
+Uploading Files 
+
+To upload a ﬁle to an FTP server, you’ve got to have rights on that speciﬁc server. These rights are 
+assigned on a directory-by-directory basis. To upload a ﬁle, log in and then follow these steps: 
+1. At the ftp command prompt, type lcd to navigate to the directory on the local machine 
+where the ﬁle resides. 
+2. Type cd to navigate to the destination directory. 
+3. Set the ﬁle type to ASCII or binary. 
+4. Use the put command to upload the ﬁle. 
+The syntax of the put command looks like this: 
+ftp>put local ﬁle destination ﬁle 
+Let’s say you want to upload a ﬁle called 1.txt on the local server but you want it to be called 
+my.txt on the destination server. To accomplish that, use the following command: 
+ftp>put 1.txt my.txt 
+You’ll get the following response: 
+200 PORT command successful. 
+150 Opening BINARY mode data connection for collwin.zip 
+226 Transfer complete. 
+743622 bytes sent in 0.55 seconds (1352.04 Kbytes/sec) 
+You can upload multiple ﬁles using the mput command. Simply type mput, a space, and then a 
+wildcard that speciﬁes the ﬁles. For example, to upload all the text ﬁles in a directory, type mput 
+*.txt.
+
+5.3.13 Telnet Utility 
+Part of the TCP/IP protocol suite, Telnet is a virtual terminal protocol utility that allows you to 
+make connections to remote devices, gather information, and run programs. Telnet was 
+originally developed to open terminal sessions from remote Unix workstations to Unix servers. 
+Although it’s still used for that purpose, we now use it as a troubleshooting tool as well. Figure 
+5.34 shows the basic Telnet interface as it’s being used to start a terminal session on a remote 
+Unix host. 
+
+Figure 5.34: The Telnet utility (Lammle, 2022) 
+
+In today’s Windows environments, Telnet is a basic command-line tool for testing TCP 
+connections. You can telnet to any TCP port to see if it’s responding—something that’s 
+especially useful when checking Simple Mail Transfer Protocol (SMTP) and HTTP (web) ports. 
+As you learned in your networks modules each upper-layer service in a TCP stack has a number 
+for its address. And by default, each network service that uses a particular address will respond 
+to a TCP request on that speciﬁc port. 

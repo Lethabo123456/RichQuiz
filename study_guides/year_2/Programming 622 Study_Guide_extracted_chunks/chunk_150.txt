@@ -1,0 +1,122 @@
+ront " << endl   
+ 
+<< " and one at the back, intDeq: ";    
+  
+  
+  
+  
+//Line 19  
+ 
+copy(intDeq.begin(), intDeq.end(), screen);    
+  
+  
+  
+  
+//Line 20  
+
+71  
+  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 21  
+ 
+intDeq.pop_front();    
+  
+  
+  
+  
+  
+  
+  
+//Line 22  
+ 
+intDeq. pop_front();    
+  
+  
+  
+  
+  
+  
+  
+//Line 23  
+ 
+cout << "Line 24: After removing the first " << "two elements, intDeq: ";    
+//Line 24  
+ 
+copy(intDeq.begin(), intDeq.end(), screen);    
+  
+  
+  
+  
+//Line 25  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 26  
+ 
+intDeq.pop_back();     
+  
+  
+  
+  
+  
+  
+  
+//Line 27  
+ 
+intDeq.pop_back();     
+  
+  
+  
+  
+  
+  
+  
+//Line 28  
+ 
+cout << "Line 29: After removing the last " << "two elements, intDeq = ";    
+//Line 29  
+ 
+copy(intDeq.begin(), intDeq.end(), screen);    
+  
+  
+  
+  
+//Line 30  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 31  
+ 
+deque<int>::iterator deqIt;    
+  
+  
+  
+  
+  
+  
+//Line 32  
+ 
+deqIt = intDeq.begin();

@@ -1,0 +1,65 @@
+he required number of operands, evaluate the operator, 
+and continue.  
+10. The STL class stack can be used to implement a stack in a program.  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+213  
+  
+Exercises  
+  
+1. Consider the following statements:  
+  
+stackType<int> stack;  
+int x, y;  
+  
+Show what is output by the following segment of code:  
+  
+x = 4; y = 0; stack.push(7); 
+stack.push(x); 
+stack.push(x + 5); y = 
+stack.top(); stack.pop(); 
+stack.push(x + y); 
+stack.push(y - 2); 
+stack.push(3); x = 
+stack.top(); stack.pop(); 
+cout << "x = " << x << 
+endl; cout << "y = " << y 
+<< endl;  
+while (!stack.isEmptyStack())  
+{  
+cout << stack.top() << endl; stack.pop();  
+}  
+  
+2. Consider the following statements:  
+stackType<int> stack;  
+int x;  
+  
+Suppose that the input is:  
+  
+14 45 34 23 10 5 -999  
+  
+Show what is output by the following segment of code:  
+  
+stack.push(5); 
+cin >> x; while 
+(x != -999)  
+{  
+if (x % 2 == 0)  
+{  
+if (!stack.isFullStack()) stack.push(x);  
+}  
+else

@@ -1,0 +1,18 @@
+2.4.2.4 Object Detection 
+Object Detection is the task of identifying objects in an image and is often used in applications 
+such as security and surveillance. Many different algorithms can be used for object detection, but 
+the most common approach is to use Deep Learning models, specifically Convolutional Neural 
+Networks (CNNs). 
+ 
+CNNs are a type of Artificial Neural Network that were specifically designed for image processing 
+tasks since the convolution operation in their core helps the computer “see” patches of an image 
+at once instead of having to deal with one pixel at a time. CNNs trained for object detection will 
+output a bounding box (as shown in the illustration above) depicting the location where the 
+object is detected in the image along with its class label. 
+
+An example of such a network is the popular Faster R-CNN (Region-based Convolutional Neural 
+Network) model, which is an end-to-end trainable, fully convolutional network. The Faster R-CNN 
+model alternates between fine-tuning for the region proposal task (predicting regions in the 
+image where an object might be present) and then fine-tuning for object detection (detecting 
+what object is present) while keeping the proposals fixed. The architecture and some examples 
+of region proposals are shown below. 

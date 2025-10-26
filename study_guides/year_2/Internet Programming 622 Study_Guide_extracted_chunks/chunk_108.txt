@@ -1,0 +1,21 @@
+re so that if 
+an error occurs (perhaps you do not have necessary privileges to access the file, or the file does not 
+exist), your script will handle the error gracefully. For example:   
+   
+if ( !( $handle = fopen( “./data.txt”, “r” ) ) ) die( “Cannot open the file” );   
+   
+Rather than exiting with die(), you might prefer to raise an error or throw an exception.   
+   
+3.7 Closing Files With fclose()   
+Once you have finished working with a file, it needs to be closed. You can do this using fclose(), 
+passing in the open file’s handle as a single argument, like this:   
+   
+fclose( $handle );   
+   
+Although PHP should close all open files automatically when your script terminates, it is good 
+practice to close files from within your script as soon as you are finished with them because it frees 
+them up quicker for use by other processes and scripts — or even by other requests to the same 
+script.   
+   
+3.8 Reading And Writing To Files   
+Now that you know how to open and close f

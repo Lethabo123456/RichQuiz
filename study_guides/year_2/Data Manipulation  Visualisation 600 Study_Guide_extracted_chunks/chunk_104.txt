@@ -1,0 +1,43 @@
+ndas as pd 
+import matplotlib.pyplot as plt 
+# create fake data: 
+df = pd.DataFrame(np.random.randn(100,4),columns='A B C D'.split()) 
+df.plot() 
+ 
+plt.show() 
+ 
+At the terminal run python basic1.py. A separate plot window should appear: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+Next we’ll build a Plotly plot with similar data. Create a new file called basic2.py and add the following code: 
+ 
+import numpy as np 
+ 
+import pandas as pd 
+import plotly.offline as pyo 
+# create fake data: 
+df = pd.DataFrame(np.random.randn(100,4),columns='A B C D'.split()) 
+ 
+pyo.plot([{ 
+'x': df.index, 
+'y': df[col], 
+'name': col 
+ 
+} for col in df.columns]) 
+ 
+● We’ve assigned the alias pyo to the plotly.offline import, to distinguish it from import 
+plotly.plotly as py as shown in most online examples. 
+Plotly offers online hosting from their website for those who set up an account with them. 
+Throughout this course we will create offline plotly graphs and run them locally. 
+● basic2.py uses a list comprehension to buil

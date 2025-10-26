@@ -1,0 +1,34 @@
+1.3.2 Using Static Constructors 
+
+If your class declares a static constructor, you will be guaranteed that the static constructor 
+will run before any instance of your class is created. 
+
+For example, you might add the following static constructor to Time: 
+static Time( ) 
+{ 
+Name = "Time"; 
+} 
+
+Notice that there is no access modifier (e.g., public) before the static constructor. Access 
+modifiers are not allowed on static constructors. In addition, because this is a static member 
+method, you cannot access nonstatic member variables, and so Name must be declared a 
+static member variable: 
+
+private static string Name; 
+The final change is to add a line to DisplayCurrentTime ( ), as in the following: 
+ 
+Console.WriteLine("Name: { 0} ", Name); 
+Console.WriteLine ("{ 0} /{ 1} /{ 2} { 2} :{ 4} :{ 5} ",Month, Date, Year, Hour, Mi-
+nute, Second); 
+ 
+Name: Time 11/18/2005 11:45:20 
+(Your output will vary depending on the date and time you run this code.) 
+
+Although this code works, it is not necessary to create a static constructor to accomplish this 
+goal. You could, instead, use an initializer: 
+private static string Name = "Time"; 
+which accomplishes the same thing. Static constructors are useful, however, for set-up work 
+that cannot be accomplished with an initializer and that needs to be done only once. 
+For example, assume you have an unmanaged bit of code in a legacy dll. You want to provide 
+a class wrapper for this code. You can call load library in your static constructor and initialize 
+the jump table in the static constructor. 

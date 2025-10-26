@@ -1,0 +1,47 @@
+2.2. Best-Fit and First-Fit Allocation  
+
+the creation of numerous small memory fragments called splinters, which may be too small to 
+accommodate new jobs, further complicating memory management. 
+Best-fit allocation offers a balance between efficient memory utilization and complexity in 
+management. It is most effective when the free list is well-organized, and the overhead of 
+searching for the best fit does not outweigh the benefits of reduced fragmentation. For systems 
+with dynamic and unpredictable memory demands, careful consideration is needed to determine 
+whether the benefits of this approach justify its computational cost. 
+ 
+Figure 2.1 below illustrate a shelving scenario of memory allocation strategies. The shelf 
+demonstrates Best-Fit Allocation, where books are placed in the smallest available space that fits 
+them, minimizing wasted space and external fragmentation. 
+ 
+Figure 2.1
+
+First-Fit Allocation 
+First-Fit Allocation is a memory management strategy where the operating system allocates the 
+first available partition in memory that is large enough to accommodate an incoming job or 
+process. This approach is simple and fast because the system does not need to search the entire 
+list of free memory spaces, it stops as soon as it finds a suitable partition. While this method 
+reduces search time and overhead, it often results in external fragmentation because it does not 
+prioritize fitting jobs into partitions with minimal leftover space. 
+For both fixed and dynamic memory allocation schemes, the operating system also maintains two 
+key lists (the free list and the busy list). The free list tracks all unoccupied memory locations, while 
+the busy list records all allocated partitions. When a new job arrives, the operating system scans 
+the free list sequentially and assigns the first partition that can fit the job. The corresponding 
+partition is then removed from the free list and added to the busy list. If the partition size is larger 
+than the job, the leftover space remains in the free list as a smaller partition. 
+In practical terms, imagine you are managing a small library with books of various sizes and 
+shelves of fixed capacities. Whenever a book is returned, you scan the shelves from the top down 
+and place the book on the first shelf that has enough room, regardless of whether a better-fitting 
+shelf exists further down. For example, if a small paperback is returned, it might be placed on a 
+large shelf simply because it is the first available space. This approach may lead to inefficiencies, 
+as smaller books fill up large spaces, leaving fragmented gaps that cannot accommodate other 
+books. 
+
+As books are checked out or returned, the system updates the lists. When a book is removed, the 
+space is taken off the busy list and added back to the free list. Similarly, when a new book is 
+placed on a shelf the system finds the first available spot, updates the lists accordingly, and leaves 
+any leftover space as a smaller partition in the free list. 
+The free list in First-Fit Allocation is typically organized by location, meaning memory partitions 
+are listed in the order in which they appear in physical memory. This makes it easier for the system 
+to allocate the first suitable partition. However, the simplicity of this method can lead to external 
+fragmentation as memory becomes increasingly divided into small unusable chunks over time. 
+To address this, periodic defragmentation may be required to consolidate free spaces into larger 
+contiguous blocks.

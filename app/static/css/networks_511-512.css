@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Fira+Code&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Rajdhani', sans-serif;
+  background: radial-gradient(circle at center, #0a0f1c, #05070d 80%);
+  color: #e0f7fa;
+  overflow-x: hidden;
+}
+
+/* NETWORK GRID BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: networkFlow 80s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes networkFlow {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-40px, -40px); }
+}
+
+.container {
+  background: rgba(10, 20, 40, 0.9);
+  border: 1px solid #00bcd4;
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 850px;
+  margin: 60px auto;
+  box-shadow: 0 0 25px #00bcd470;
+  position: relative;
+}
+
+/* Faint node connections as watermark */
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../images/network_topology_diagram.png') center/70% no-repeat;
+  opacity: 0.05;
+  z-index: 0;
+  filter: contrast(130%) grayscale(100%);
+  pointer-events: none;
+}
+
+.container > * {
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #00e5ff;
+  text-align: center;
+  text-shadow: 0 0 15px #00e5ff55;
+  margin-bottom: 30px;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #e0f7fa;
+}
+
+#question strong {
+  display: block;
+  color: #69f0ae;
+  margin-bottom: 10px;
+}
+
+#question pre {
+  font-family: 'Fira Code', monospace;
+  background-color: #102535;
+  color: #80d8ff;
+  padding: 18px;
+  border-left: 4px solid #00bcd4;
+  border-radius: 10px;
+  overflow-x: auto;
+  box-shadow: inset 0 0 10px #00bcd455;
+}
+
+/* Network Option Nodes */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(0, 255, 255, 0.05);
+  border-left: 3px solid #00e5ff;
+  margin-bottom: 16px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: rgba(0, 255, 255, 0.15);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00e5ff33;
+}
+
+li.selected {
+  background: #00e5ff;
+  color: #0a0f1c;
+  font-weight: 700;
+  box-shadow: 0 0 12px #00e5ffaa;
+}
+
+/* Signal-Pulse Button */
+button {
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  border: none;
+  color: #0a0f1c;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #00bcd466;
+  transition: all 0.3s ease;
+}
+
+button:hover:enabled {
+  background: linear-gradient(90deg, #1de9b6, #00acc1);
+  box-shadow: 0 7px 20px #1de9b666;
+}
+
+button:disabled {
+  background: #555;
+  color: #bbb;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+a.back-link {
+  display: block;
+  margin-top: 38px;
+  text-align: center;
+  color: #80d8ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a.back-link:hover {
+  color: #00e5ff;
+  text-decoration: underline;
+}

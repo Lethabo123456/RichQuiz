@@ -1,0 +1,27 @@
+1.1.3 Accessing and Updating Values in a Series 
+
+Values in a series may be accessed and updated using the index. Using the series created in Example 1.1, we will 
+attempt to access and edit the first value within this series.   
+While the code above shows us how to access values using the default index, the same concept may be applied to 
+accessing a series with a custom index. For example, if you try to access and update the values in Example 1.3, you 
+must provide the state's name, as we had set the state as the index for that series.  
+
+1.2 DataFrame 
+A DataFrame is a two-dimensional, tabular data structure. "Two-dimensional" refers to a structure with two axes: 
+rows and columns. Rows represent the observations or records in the dataset. Columns represent the variables or 
+features associated with each observation. "Tabular" implies that the data is organised in a table or grid-like format.  
+
+1.2.1 Create a DataFrame 
+ 
+Example 1.3.1: 
+• We create a dictionary named area_dict that will hold the states' names and the areas they cover.  
+• Following the steps in Example 1.3, we convert this dictionary to a series.  
+• We use the pd.DataFrame() constructor, we pass the population and area series. 
+• Finally, we print the DataFrame, which neatly displays our data into rows and columns.
+
+1.2.2 Accessing Columns in a DataFrame 
+We can access the columns in a DataFrame using the column's name or the loc and iloc indexers. The loc indexer is 
+primarily label-based and is used for selecting data by row labels and column names. The iloc indexer is integer-
+location-based and is used for selecting data by integer indices.  
+  
+ 

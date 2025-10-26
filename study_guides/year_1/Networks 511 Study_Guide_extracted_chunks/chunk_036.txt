@@ -1,0 +1,23 @@
+Just as a librarian manages the use of books and other media by patrons, a server manages the use of shared 
+resources by clients. For example, if a patron does not have the credentials to check out books, the 
+librarian prevents the patron from doing so. Similarly, a server allows only authorized clients to 
+access its resources. 
+Every computer on a client/server network acts as a client or a server. (It is possible, but uncommon, 
+for some computers to act as both.) Clients on a network can still run applications from and save 
+data to their local hard disk. But by connecting to a server, they also have the option of using shared 
+applications, data, and devices. Clients on a client/server network do not share their resources 
+directly with each other, but rather use the server as an intermediary. Clients and servers 
+communicate through connectivity devices such as switches and/or routers.
+ 
+The below figure illustrates how resources are shared on a client/server network. 
+To function as a server, a computer must be running a Network Operating System [NOS]. 
+A(n) NOS is a special type of software designed to do the following: 
+
+Manage data and other resources for a number of clients. 
+Ensure that only authorized users access the network. 
+Control which type of files a user can open and read. 
+Restrict when and from where users can access the network. 
+Dictate which rules computers will use to communicate. 
+Supply applications to clients. 
+ 
+

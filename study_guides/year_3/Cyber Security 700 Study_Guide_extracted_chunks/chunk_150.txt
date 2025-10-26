@@ -1,0 +1,40 @@
+Asset Register 
+
+In order to effectively protect assets, an organization needs to provide a systematic method of 
+documenting assets and their security implications. This is done in an asset register that documents 
+important security-related information for each asset. Examples of items that may be included for 
+each asset are as follows:
+ 
+ Asset name/description: This information uniquely identifies an asset. 
+ Asset type: This denotes the type of asset it is, such as physical/infrastructure assets, software, 
+information, service, or human resource. 
+ Asset class: For purposes of risk assessment, an organization should group assets into classes 
+so risks are measured against classes of assets rather than against individual assets. Asset class 
+examples include desktops/workstations, servers, Payment Card Industry (PCI) devices, 
+restricted/sensitive file shares, and restricted printers. 
+ Information assets: An information asset defines specifically what kind of information is 
+processed, transmitted, or stored by the asset (for example, customer personally identifiable 
+information [PII], PCI data). This item does not apply to all assets. 
+ Asset owner: An organization should define the department/company function that owns an 
+asset and is responsible for risk associated with the asset. This is also sometimes referred to 
+as the risk owner or business owner. 
+ Asset custodian: This is the individual responsible for maintaining, monitoring, and managing 
+the asset. This is typically a network or systems administrator. 
+ Location: This is the physical location of the asset. 
+ Function/business process: This is the business process or function the asset supports (for 
+example, information processing facility). 
+ Data type/classification: The company’s established information classification policy should 
+be used to classify the information transmitted, processed, or stored by the asset. This helps 
+drive the risk assessment later. 
+ Asset value classification: This could be a monetary value but more typically is a ranking, such 
+as low, medium, or high. 
+ Disaster recovery priority: In the event of a security breach that affects multiple assets, this is 
+the relative priority for devoting resources to recovery. This could be a numeric scale (for 
+example, 1 to 10) or a low/medium/high scale. 
+ Exposure level: This is the degree to which an asset is exposed to threats. This depends, at 
+least, on how the asset is shared and also may 
+depend on other factors. 
+
+Table 3.4, from the ISACA document “Security Risk 
+Management” [RITC13], is a simplified example of the 
+type of elements that should go into an asset register. 

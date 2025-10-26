@@ -1,0 +1,35 @@
+The result is two columns, as shown, that exist on the same scale as each other even if they 
+were not previously: 
+ 
+Now, we can plot friends and happiness on the same scale and the graph will at least be 
+readable. 
+df_scaled.plot(kind='scatter', x = 'friends_scaled', y = 'happiness_ scaled') 
+
+Now our data is standardized to the z-score and this scatter plot is easily interpretable! In 
+later chapters, this idea of standardization will not only make our data more interpretable, 
+but it will also be essential in our model optimization. Many machine learning algorithms will 
+require us to have standardized columns as they are reliant on the notion of scale. 
+The insightful part – correlations in data 
+Throughout this book, we will discuss the difference between having data and having 
+actionable insights about your data. Having data is only one step to a successful data science 
+operation. Being able to obtain, clean, and plot data helps to tell the story that the data has 
+to offer but cannot reveal the moral. To take this entire example one step further, we will 
+look at the relationship between having friends on Facebook and happiness. 
+In subsequent chapters, we will look at a specific machine learning algorithm that attempts 
+to find relationships between quantitative features, called linear regression, but we do not 
+have to wait until then to begin to form hypotheses. We have a sample of people, a measure 
+of their online social presence and their reported happiness. The question of the day here 
+is—can we find a relationship between the number of friends on Facebook and overall 
+happiness? 
+
+Now, obviously, this is a big question and should be treated respectfully. Experiments to 
+answer this question should be conducted in a laboratory setting, but we can begin to form 
+a hypothesis about this question. Given the nature of our data, we only have the following 
+three options for a hypothesis: 
+
+• There is a positive association between the number of online friends and happiness 
+(as one goes up, so does the other) 
+• There is a negative association between them (as the number of friends goes up, your 
+happiness goes down) 
+• There is no association between the variables (as one changes, the other doesn't really 
+change that much) 

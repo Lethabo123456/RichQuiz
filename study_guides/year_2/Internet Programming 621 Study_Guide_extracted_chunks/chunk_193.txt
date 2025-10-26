@@ -1,0 +1,59 @@
+th ___ and end with ___: 
+A. < php > 
+
+IP 621  
+B. < ? php ?> 
+C. <? ?> 
+D. <?php ?> 
+ANS: D 
+ 
+8. We can use ___ to comment a single line? 
+i) /? 
+ii) // 
+iii) # 
+iv) /* */ 
+A. Only ii) 
+B. i), iii) and iv) 
+C. ii), iii) and iv) 
+D. Both ii) and iv) 
+ANS: C 
+ 
+9. Which of the following php statement/statements will store 111 in variable num? 
+i) int $num = 111; 
+ii) int mum = 111; 
+iii) $num = 111; 
+iv) 111 = $num; 
+A. Both i) and ii) 
+B. All of the mentioned. 
+C. Only iii) 
+D. Only i) 
+
+IP 621  
+ANS: C 
+ 
+10. Which of the below statements is equivalent to $add += $add? 
+A. $add = $add 
+B. $add = $add +$add 
+C. $add = $add + 1 
+D. $add = $add + $add + 1 
+ANS: B 
+ 
+11. Which of the below symbols is a newline character? 
+A. \r 
+B. \n 
+C. /n 
+D. /r 
+ANS: B 
+ 
+12. What will be the output of the following PHP code? 
+     
+<?php 
+    
+ $num = 10; 
+     
+echo 'What is her age? \n She is $num years old'; 
+    
+ ?> 
+A. What is her age? \n She is $num years old 
+B. What is her age? 
+     She is

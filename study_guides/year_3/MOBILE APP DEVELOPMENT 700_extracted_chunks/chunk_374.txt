@@ -1,0 +1,42 @@
+Obviously, the easiest way to code the address portion of the layout 
+is to copy the relevant XML from activity_main.xml. Some minor 
+changes need to be made to get the Address TextView to appear at 
+the top left of the layout. The code for this section uses the same 
+widget IDs for the address EditTexts as was used in activity_main.xml. 
+
+Note that if you haven’t already, you should add the navigation buttons to the 
+layout and code their operation in the ContactMapActivity (remember to disable the map button). 
+After the layout has been created, open the ContactMapActivity.java file to write the code that 
+provides the behavior for the Get Location button. The button will respond to a user tap by retrieving 
+the data entered into the EditTexts and format them into the form required by the address lookup 
+service. It will then be sent to the service, and the resulting location will be displayed onscreen. Refer 
+to Listing 7.1 to write this code. You will need to import multiple objects. The address will have several 
+options. Select Android.Location. Remember to code the call to the 
+initialization method in the onCreate method. 
+
+This code introduces a few new items. 
+
+5.1.2 Lines 12–15 — The proper format for a call to the geocoding service is the street address with the elements of the 
+address separated by commas.
+5.1.3 Line 17—A List object variable parameterized to hold an Address object is declared. 
+The geocoding service will return the result with this type of object. 
+required to contact the host service (Google) via the internet. 
+▪ Line 18—A Geocoder variable is declared and assigned a new 
+Geocoder object. The Geocoder object   has   all   the   information 
+▪ Lines 19–24—The getFromLocationName method is passed from the address to look up as a 
+parameter. The parameter “1” tells the service that you want one response. If you are unable to 
+provide a specific address, you can request more responses (e.g., multiple addresses on the same 
+street). If the service cannot find the exact location, it will return several locations with the best guess 
+as the first entry. Because this method calls a service outside your app, it requires a try and catch to 
+protect the app from errors produced by the service. 
+▪ Lines 26–30—The latitude and longitude of the first address in the returned list are displayed in 
+the appropriate TextView widgets. 
+Switch the value in the dropdown list next to the Run button in the Android Studio toolbar to app (if 
+not already set), and click the Run button (green triangle) to test your code on the emulator. Click the 
+Maps button in the navigation bar to get to the ContactMapsActivity, enter an address, and click the 
+Get Location button. The GPS coordinates should be displayed in the TextViews. Try entering a valid 
+and an invalid address to see what happens. Using geocoding is a good way to find the GPS coordinates 
+of address information available to the app. However, this is not very useful for locating the device in 
+real time. For that, you need to use the sensors.
+ 
+ 

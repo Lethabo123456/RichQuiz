@@ -1,0 +1,26 @@
+*****  
+// This class specifies the members to implement the 
+basic // properties of an unordered linked list. This class is 
+// derived from the class linkedListType.  
+//*********************************************************** template 
+<class Type>  
+class unorderedLinkedList: public linkedListType<Type>  
+{ public:  
+bool search(const Type& searchItem) const;  
+//Function to determine whether searchItem is in the list. 
+//Postcondition: Returns true if searchItem is in the list, // 
+otherwise the value false is returned.  
+
+108  
+  
+  
+void insertFirst(const Type& newItem);  
+//Function to insert newItem at the beginning of the list.  
+//Postcondition: first points to the new list, newItem 
+is // inserted at the beginning of the list, last points to 
+// the last node, and count is incremented by 1.  
+  
+void insertLast(const Type& newItem);  
+//Function to insert newItem at the end of the list.  
+//Postcondition: first points to the new list, newItem 
+is // inserted at the end o

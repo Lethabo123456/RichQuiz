@@ -1,0 +1,11 @@
+rence engine is to seek information and relationships from the 
+knowledge base and to provide answers, predictions and suggestions the way a human expert 
+would. In other words, the inference engine is the component that delivers the expert advice. 
+To provide answers and give advice, expert systems can use backward and forward chaining. 
+Backward chaining is the process of starting with conclusions and working backwards to the 
+supporting facts. If the facts do not support the conclusion, another conclusion is selected and 
+tested. This process is continued until the correct conclusion is identified. Forward chaining 
+starts with the facts and works forwards to the conclusions. Consider the expert system that 
+forecasts future sales for a product. Forward chaining starts with a fact such as ‘The demand 
+for the product last month was 20000 units’. With the forward-chaining approach, the expert 
+system searches for rules that contain a reference to product demand. For example, ‘IF prod

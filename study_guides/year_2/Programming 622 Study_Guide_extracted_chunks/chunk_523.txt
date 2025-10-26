@@ -1,0 +1,22 @@
+ge number of comparisons:  
+
+259  
+  
+  
+It is known that  
+  
+Therefore, the following expression gives the average number of comparisons made by the sequential 
+search in the successful case:  
+  
+This expression shows that, on average, the sequential search searches half the list. It, thus, follows that 
+if the list size is 1,000,000, on average, the sequential search makes 500,000 comparisons. As a result, the 
+sequential search is not efficient for large lists.  
+  
+ 
+7.1.2  Ordered Lists  
+  
+A list is ordered if its elements are ordered according to some criteria. The elements of a list are usually in 
+ascending order. Several operations that can be performed on an ordered list are similar to the operations 
+performed on an arbitrary list. For example, determining whether the list is empty or full, determining the 
+length of the list, printing the list, and clearing the list for an ordered list are the same operations as those 
+on an unordered list. Therefore, to define an order

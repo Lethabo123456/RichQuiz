@@ -1,0 +1,31 @@
+By choosing 𝑢= 𝑥 we obtain a simpler integral than we started with. Had we 
+chosen 𝑢= 𝑐𝑜𝑠𝑥 and 𝑑𝑣= 𝑥 then 𝑑𝑢= −𝑠𝑖𝑛𝑥 and 𝑣= (1/2)𝑥2 so 
+integration by parts gives: 
+
+∫𝑥cos𝑥 𝑑𝑥= −𝑥2 cos𝑥 / 2 + ∫𝑥**2 sin 𝑥 / 2 𝑑𝑥 
+
+This equation is correct, but the integral is more difficult than the one we 
+started with. 
+ 
+
+5.8 Trigonometric Integrals 
+Suppose we have an integral such as ∫𝑠𝑖𝑛5𝑥 𝑑𝑥, the easy mistake is to simply 
+make the substitution 𝑢= 𝑠𝑖𝑛𝑥, but then 𝑑𝑢= 𝑐𝑜𝑠𝑥𝑑𝑥. So in order to 
+integrate powers of sine we need an extra 𝑐𝑜𝑠𝑥 factor. Similarly, in order to 
+integrate powers of cosine we need an extra 𝑠𝑖𝑛𝑥 factor. Thus for this example 
+knowing we need an extra 𝑠𝑖𝑛𝑥 factor to integrate powers of cosine we can 
+separate one sine factor and convert the remaining 𝑠𝑖𝑛4𝑥 to an expression 
+involving cosine using the identity 𝑠𝑖𝑛2𝑥+ 𝑐𝑜𝑠2𝑥= 1 thus, 
+
+𝑠𝑖𝑛5𝑥= (𝑠𝑖𝑛𝑥)(𝑠𝑖𝑛2𝑥) 2 = (𝑠𝑖𝑛𝑥)(1 −𝑐𝑜𝑠2𝑥) 2  
+Now by using our knowledge of substitution we can evaluate the integral by 
+letting 𝑢= 𝑐𝑜𝑠𝑥, then 𝑑𝑢= −𝑠𝑖𝑛𝑥 𝑑𝑥 and...
+
+
+Now consider the integral: 
+∫𝑐𝑜𝑠2 𝑥 𝑑𝑥   
+If we were to use the method from the previous example and separate one 
+cosine factor we would be left with a factor of cosine of odd degree which isn't 
+easily converted to sine. We must now consider the half angle formulas:
+
+Using the half angle formula for 𝑐𝑜𝑠2 𝑥, we have:

@@ -1,0 +1,21 @@
+tNode->children[0] = current-
+>children[current->recCount + 1];  
+}  
+} //split Node  
+  
+We leave it as an exercise for you to include the functions to insert an item in a B-tree and the functions 
+to search and traverse a B-tree in the class BTree, and write a program to perform these operations on a 
+B-tree.  
+  
+ 
+9.8.4  Deletion from a B-Tree  
+  
+To delete an item from a B-tree, we search the tree for the item to be deleted, say deleteItem. The 
+following cases arise:  
+1. If deleteItem is not in the tree, output an appropriate error message.  
+2. If deleteItem is in the tree, find the node containing the deleteItem. If the node containing the 
+deleteItem is not a leaf, its immediate predecessor (or successor) is in a leaf. So we can swap the 
+immediate predecessor (or successor) with the deleteItem to move the deleteItem into a leaf. We 
+consider the cases to delete an item from a leaf.  
+a. If the leaf contains more than the minimum number of keys, delete the deleteItem from 
+t

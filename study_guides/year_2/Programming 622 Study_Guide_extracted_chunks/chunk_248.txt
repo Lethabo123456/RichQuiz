@@ -1,0 +1,67 @@
+const Type& deleteItem); //Function 
+to delete deleteItem from the list.  
+//Postcondition: If found, the node containing deleteItem is  
+// deleted from the list; first points to the first node of  
+// the new list, and count is decremented by 1. If // 
+deleteItem is not in the list, an appropriate message 
+// is printed.  
+};  
+  
+//Place the definitions of the functions search, insert, //insertfirst, 
+insertLast, and deleteNode here.  
+.  
+.  
+.  
+#endif  
+  
+The following program tests various operations on an ordered linked list:  
+//**********************************************************  
+// This program tests the various operations on an ordered  
+// linked list.  
+//**********************************************************  
+ 
+#include <iostream>    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 1  
+ 
+#include "orderedLinkedList.h"   
+  
+  
+  
+  
+  
+  
+  
+//Line 2  
+ 
+using namespace std;   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 3  
+ 
+int main()   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 4  
+{

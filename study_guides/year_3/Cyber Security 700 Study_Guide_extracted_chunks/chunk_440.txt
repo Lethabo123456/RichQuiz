@@ -1,0 +1,21 @@
+Firewall-Based VPNs 
+
+Figure 12.7 shows a typical scenario of IPsec usage. An organization maintains 
+LANs at dispersed locations. Insecure IP traffic is conducted on each LAN. For 
+traffic offsite, through some sort of private or public WAN, IPsec protocols 
+are used. These protocols operate in networking devices, such as a router or 
+firewall, that connect each LAN to the outside world. The IPsec networking 
+device typically encrypts and compresses all traffic going into the WAN and decrypts and 
+decompresses traffic coming from the WAN; authentication can also be provided. These operations 
+are transparent to workstations and servers on the LAN. Secure transmission is also possible with 
+individual users who dial in to the WAN. Such user workstations must implement the IPsec protocols 
+to provide security. They must also implement high levels of host security, as they are directly 
+connected to the wider Internet, which makes them an attractive target for attackers attempting to 
+access the corporate network. 
+
+A logical means of implementing IPsec is in a firewall, as shown in Figure 12.8. If IPsec is implemented 
+in a separate box behind (internal to) the firewall, then VPN traffic passing through the firewall in both 
+directions is encrypted. In this case, the firewall is unable to perform its filtering function or other 
+security functions, such as access control, logging, or scanning for viruses. IPsec can be implemented 
+in the boundary router, outside the firewall. However, this device is likely to be less secure than the 
+firewall and thus less desirable as an IPsec platform.

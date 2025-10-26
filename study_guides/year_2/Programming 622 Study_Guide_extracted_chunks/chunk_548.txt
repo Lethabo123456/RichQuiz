@@ -1,0 +1,20 @@
+cupied. Slot 9 will be occupied next if, for the next 
+key, the hash address is 6, 7, 8, or 9. Thus, the probability that slot 9 will be occupied next is 4/20. Similarly, 
+in this hash table, the probability that array position 14 will be occupied next is 5/20.  
+  
+Now consider the hash table of Figure 7-7.  
+ 
+  
+FIGURE 7-7 Hash table of size 20 with certain positions occupied  
+  
+In this hash table, the probability that the array position 14 will be occupied next is 9/20, whereas the 
+probability that the array positions 15, 16, or 17 will be occupied next is 1/20. We see that items tend to 
+cluster, which would increase the search length. Linear probing, therefore, causes clustering. This 
+clustering is called primary clustering.  
+  
+One way to improve linear probing is to skip array positions by a fixed constant, say c, rather than 1. In 
+this case, the hash address is as follows:  
+  
+(h(X) + i * c) % HTSize  
+  
+If c = 2 and h(X) = 2k, that is, h(X) is even, only the even-numb

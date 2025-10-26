@@ -1,0 +1,25 @@
+ses 
+ 
+This section describes an approach to designing a relational database. A database design is also 
+known as a data model or a database schema. It is a list of all the tables in the database, along 
+with all the fields, with any primary and foreign keys identified. The approach has four stages: 
+ 
+ 
+ 
+ 
+ 
+145 
+139 
+
+1. Identify all entities. between  
+2. Identify all relationships entities. 
+3. Identify all attributes. 
+4. Resolve all relationships. 
+ 
+If you are trying this approach out for yourself, you are unlikely to get the perfect data model 
+first time. The approach is iterative; that is, you do all four stages once, and examine the 
+resulting schema. If it doesn’t work perfectly, go back to stage one and adjust your list of 
+entities, then go through the rest of the stages again. Do this over and over again until, 
+eventually, a good data model emerges. 
+Identify Entities 
+The first step is to identify all the entities you want to store data about. This is usually done by

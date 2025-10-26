@@ -1,0 +1,18 @@
+468 
+
+ 
+148 
+5.5 The Logical Design 
+ 
+Logical design is the second stage in the database design process. The logical design goal is to 
+design an enterprise-wide database that is based on a specific data model but independent of 
+physical-level details. Logical design requires that all objects in the conceptual model be mapped 
+to the specific constructs used by the selected database model. For example, the logical design for 
+a relational DBMS includes the specifications for the relations (tables), relationships, and 
+constraints (in other words, domain definitions, data validations, and security views). The logical 
+design is generally performed in four steps, which are listed in Table 9.6. 
+ 
+Such steps, like most of the data-modelling process, are not necessarily performed sequentially, but 
+in an iterative fashion. The following sections cover these steps in more detail. 
+The conceptual design, and the table columns must correspond to the attributes specified in the 
+conceptual d

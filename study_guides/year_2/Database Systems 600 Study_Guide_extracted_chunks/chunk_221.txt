@@ -1,0 +1,16 @@
+multiple job assignments and many service activities. Version 3 at least 
+has a PK, but it is composed of all the attributes in the table. In fact, version 3 meets 3NF 
+requirements, yet it contains many redundancies that are clearly undesirable. The solution is to 
+eliminate the problems caused by the multivalued dependency. You do this by creating new tables 
+for the components of the multivalued dependency. In this example, the multivalued dependency is 
+resolved and eliminated by creating ASSIGNMENT and SERVICE_V1 tables. Those tables are 
+said to be in 4NF. 
+If you follow the proper design procedures illustrated in this book, you should not encounter the 
+problem shown in Figure 6.11. Specifically, the discussion of 4NF is largely academic if you make 
+sure that your tables conform to the following two rules:  
+
+ 
+87 
+1. All attributes must be dependent on the primary key, but they must be independent of each 
+other.  
+2. No row may contain two or more multivalued facts about an e

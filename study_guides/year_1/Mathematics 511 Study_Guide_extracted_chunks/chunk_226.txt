@@ -1,0 +1,24 @@
+Worked Example 
+Suppose that there are m men and n women on an island. Each person 
+has a list of members of the opposite gender acceptable as a spouse. 
+We construct a bipartite graph G = (V1, V2) where V1 is the set of men and 
+V2 is the set of women so that there is an edge between a man and a 
+woman if they find each other acceptable as a spouse. 
+A matching in this graph consists of a set of edges, where each pair of 
+endpoints of an edge is a husband-wife pair. 
+A maximum matching is a largest possible set of married couples, and a 
+complete matching of V1 is a set of married couples where every man is 
+married, but possibly not all women. 
+
+
+4.2.4 Necessary and Sufficient Conditions For Complete Matchings 
+We now turn our attention to the question of determining whether a 
+complete matching from V1 to V2 exists when (V1, V2) is a bipartition of a 
+bipartite graph G = (V ,E).We will introduce a theorem that provides a set of 
+necessary and sufficient conditions for the existence of a complete matching. 
+This theorem was proved by Philip Hall in 1935. 
+
+Theorem : Hall’s Marriage Theorem  
+The bipartite graph G = (V ,E) with bipartition (V1, V2) has a complete 
+matching from V1 to V2 if and only if |N(A)| ≥ |A| for all subsets A of V1. 
+ 

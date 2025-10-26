@@ -1,0 +1,49 @@
+The data, or variables, defined within a class are called instance variables. The code is contained 
+within methods. Collectively, the methods and variables defined within a class are called members 
+of the class. In most classes, the instance variables are acted upon and accessed by the methods 
+defined for that class. Thus, it is the methods that determine how a class’ data can be used.Variables 
+defined within a class are called instance variables because each instance of the class (that is, each 
+object of the class) contains its own copy of these variables.Thus, the data for one object is separate 
+and unique from the data for another. We will come back to this point shortly, but it is an important 
+concept to learn early. All methods have the same general form as main( ), which we have been 
+using thusfar. However, most methods will not be specified as static or public. Notice that the 
+general form of a class does not specify a main( ) method. Java classes do not need to have a main( 
+) method. You only specify one if that class is the starting point for your program. Further, applets 
+don’t require a   main( ) method at all.   
+ 
+Note: C++ programmers will notice that the class declaration and the implementation of the 
+methods are stored in the same place and not defined separately. This sometimes makesfor very 
+large .java files, since any class must be entirely defined in a single source file.This design feature 
+was built into Java because it was felt that in the long run, having specification, declaration, and 
+implementation all in one place makes for code that is easier to maintain.   
+
+A Simple Class    
+
+Let’s begin our study of the class with a simple example. Here is a class called Box that defines three 
+instance variables: width, height, and depth. Currently, Box does not contain any methods (but some 
+will be added soon).   
+   
+class Box { double 
+width; 
+double 
+height;   
+double depth;   
+}   
+   
+As stated, a class defines a new type of data. In this case, the new data type is called Box. You will 
+use this name to declare objects of type Box. It is important to rememberthat a class declaration 
+only creates a template; it does not create an actual object. Thus,the preceding code does not cause 
+any objects of type Box to come into existence.To actually  create a Box object, you will use a 
+statement like the following: Box mybox = new Box(); // create a Box object called mybox. After this 
+statement executes, mybox will be an instance of Box. Thus, it will have “physical” reality. For the 
+moment, don’t worry about the details of this statement. Again, each time you create an instance 
+of a class, you are creating an object that contains its own copy of each instance variable defined by 
+the class. Thus, every Box object will contain its own copies of the instance variables width, height, 
+and depth. To access these variables, you will use the dot (.) operator. The dot operator links the 
+name of the object with the name of an instance variable. For example, to assign  the widthvariable 
+of mybox the value 100, you would use the following statement:   
+   
+mybox.width = 100;   
+This statement tells the compiler to assign the copy of width that is contained within the mybox 
+object the value of 100. In general, you use the dot operator to access both the instance variables 
+and the methods within an object. 

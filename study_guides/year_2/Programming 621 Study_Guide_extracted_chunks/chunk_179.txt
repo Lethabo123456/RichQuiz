@@ -1,0 +1,17 @@
+e value of a pointer variable by the size of the data type or structure to 
+which it is pointing. 
+ 
+Moreover, the statement p = p + 2; increments the value of p (an int pointer) by 8 
+bytes. Thus, when an integer is added to a pointer variable, the value of the pointer 
+variable is incremented by the integer times the size of the data type or structure to 
+which the pointer is pointing. Similarly, when an integer is subtracted from a pointer 
+variable, the value of the pointer variable is decremented by the integer times the size 
+of the data type or structure to which the pointer is pointing. 
+ 
+Functions and Pointers 
+ 
+A pointer variable can be passed as a parameter to a function either by value or by 
+reference. To declare a pointer as a value parameter in a function heading, you use 
+the same mechanism as you use to declare a variable. To make a formal parameter 
+be a reference parameter, you use & when you declare the formal parameter in the 
+function heading. Therefore, to decl

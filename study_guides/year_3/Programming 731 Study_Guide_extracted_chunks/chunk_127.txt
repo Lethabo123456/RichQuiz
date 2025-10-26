@@ -1,0 +1,24 @@
+3.4 ITERATING ARRAYLIST   
+Here, we are using enhanced for loop to iterate ArrayList elements. This one of the best ways to 
+iterate an ArrayList of string type. 
+ 
+ Example 1 
+import java.util.*;   
+ class JavaExample{     
+  public static void main(String args[]){     
+     ArrayList<String> alist=new ArrayList<String>(); 
+        alist.add("Gregor Clegane");    
+     alist.add("Khal Drogo");   
+      alist.add("Cersei Lannister");   
+      alist.add("Sandor Clegane");   
+     alist.add("Tyrion Lannister");   
+     
+     //iterating ArrayList      for(String str:alist)     
+        System.out.println(str);     
+     }   }  
+Output:   
+   
+Gregor Clegane   
+Khal Drogo   
+Cersei Lannister Sandor Clegane   
+Tyrion Lannister

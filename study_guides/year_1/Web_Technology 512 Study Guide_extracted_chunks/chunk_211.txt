@@ -1,0 +1,39 @@
+program. 
+ 
+9.2 EXCEPTION HANDLING 
+ 
+The latest versions of JavaScript added exception handling capabilities. JavaScript 
+implements the try...catch...finally construct as well as the throw operator to 
+handle exceptions. 
+ 
+9.2.1 The Try…Catch…Finally Statement 
+You can catch programmer-generated and runtime exceptions, but you cannot 
+catch JavaScript syntax errors. 
+ 
+Here is the try...catch...finally block syntax: 
+<script type="text/javascript"> 
+<!-- 
+try 
+{ 
+    // Code to run 
+    [break;] 
+}  
+catch ( e )  
+{ 
+    // Code to run if an exception occurs 
+    [break;] 
+} 
+[ finally { 
+    // Code that is always executed regardless of  
+    // an exception occurring 
+}] 
+//--> 
+</script> 
+The try block must be followed by either 
+exactly one catch block or one finally block (or 
+one of both). When an exception occurs in the 
+try block, the exception is placed in e and the 
+catch block is executed. The optional finally 
+block executes unconditionally after try/catch. 
+ 
+Examples:

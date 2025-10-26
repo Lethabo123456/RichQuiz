@@ -1,0 +1,14 @@
+y has a direct 
+bearing on the efficiency and effectiveness of database implementation. 
+Natural Keys and Primary Keys 
+The concept of a unique identifier is commonly encountered in the real world. A natural key or 
+natural identifier is a real-world, generally accepted identifier used to distinguish—that is, 
+uniquely identify—real-world objects. As its name implies, a natural key is familiar to end users 
+and forms part of their day-to-day business vocabulary. Usually, if an entity has a natural identifier, 
+a data modeler uses it as the primary key of the entity being modelled. Generally, most natural keys 
+make acceptable primary key identifiers. The next section presents some basic guidelines for 
+selecting primary keys. 
+Primary Key Guidelines 
+A primary key is the attribute or combination of attributes that uniquely identifies entity instances 
+in an entity set. This section examines that body of documented practices in selecting a primary 
+key. First, you should understand the

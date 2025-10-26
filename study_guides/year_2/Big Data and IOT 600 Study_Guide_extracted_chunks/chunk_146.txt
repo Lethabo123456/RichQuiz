@@ -1,0 +1,52 @@
+ISO/IEC JTC/SWG 5 
+This joint technical committee (JTC) of ISO and IEC produced a subcommittee / working 
+group (SWG) that identifies market requirements and standardization gaps. It documents 
+standardization activity for IoT from groups internal and external to ISO and IEC. Areas 
+of collaboration this SWG focuses on include accessibility, user interfaces, software 
+and systems engineering, IT education, IT sustainability, sensor networking, automatic 
+identification and data capture, geospatial information, shipping, packaging, and thermal 
+performance and energy usage. 
+ 
+W3C - Worldwide Web Consortium (http://www.w3.org) 
+In early 2015, W3C launched a Web of Things initiative to develop web standards based 
+on IoT and what it calls “a web of data.” Many previous W3C standards efforts are 
+fundamental to IoT development including XML, SOAP, WSDL, and REST. 
+ 
+Open Source Projects 
+Open source projects are based on the notion of a shared code base with multiple 
+committers or contributors. Within IoT, a number of such projects have emerged. Though 
+not considered as standards in the classic sense, these efforts can become defacto 
+standards if widespread adoption occurs. 
+ 
+Allseen Alliance (http://www.allseenalliance.org) 
+This alliance of over 140 members (as of early 2015) created “AllJoyn,” an open source 
+framework used in developing IoT projects. The alliance is largely made up of non-IT 
+companies interested in building IoT solutions. The framework that was created defines 
+data and power transports, language bindings, platforms, and security methods, as well 
+as providing a growing array of common services and interfaces. 
+ 
+Contiki (http://www.contiki-os.org) 
+Contiki provides an open source development environment (written in C) used to 
+connect low-cost and low-power micro-controllers to the Internet (IPv6 and IPv4). The 
+environment includes simulators and regression tests. 
+ 
+Eclipse (http://iot.eclipse.org) 
+Eclipse provides frameworks for developing IoT gateways including Kura (Java and 
+OSGi services) and Mihini (written in Lua scripts). Industry services are bundled in a 
+SmartHome project consisting of OSGi bundles and an Eclipse SCADA offering. Tools 
+and libraries are provided for Message Queuing Telemetry Transport (MQTT), the 
+Constrained Application Protocol (CoAP), and OMA-DM and OMA LWM2M device 
+management protocols. 
+ 
+openHAB (http://www.openhab.org) 
+An open source project called openHAB produced software capable of integrating home 
+automation systems and technologies through a common interface. It can be deployed to 
+any intelligent device in the home that can run a Java Virtual Machine (JVM). It includes 
+
+a rules engine enabled through user control and provides interfaces via popular mobile 
+devices (Android, iOS) or via the web. 
+ 
+ThingsSpeak (http://www.thingspeak.org) 
+ThingSpeak provides APIs for “channels” enabling applications to store and retrieve data 
+and for “charts” providing visualization. ThingHTTP enables a device to connect to a web 
+service using HTTP over a network or the Internet. Links into Twitter are also provided for

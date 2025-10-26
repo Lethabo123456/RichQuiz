@@ -1,0 +1,26 @@
+1.5.7 Combining Rules of Inference for Propositions and Quantified 
+
+Statements 
+We have developed rules of inference both for propositions and for 
+quantified statements. Note that in our arguments in previous examples we 
+used both universal instantiation, a rule of inference for quantified 
+statements, and modus ponens, a rule of inference for propositional logic. 
+We will often need to use this combination of rules of inference. Because 
+universal instantiation and modus ponens are used so often together, this 
+combination of rules is sometimes called universal modus ponens. This rule 
+tells us that if ∀𝑥(𝑃(𝑥) → 𝑄(𝑥)) is true, and if 𝑃(𝑎) is true for a particular 
+element 𝑎 in the domain of the universal quantifier, then 𝑄(𝑎) must also be 
+true. To see this, note that by universal instantiation, 𝑃(𝑎) → 𝑄(𝑎) is true.
+
+Then, by modus ponens, 𝑄(𝑎) must also be true. We can describe universal 
+modus ponens as follows: 
+
+Worked Example 
+Show that the premises “A student in this class has not read the book,” 
+and “Everyone in this class passed the first exam” imply the conclusion 
+“Someone who passed the first exam has not read the book.” 
+Solution: 
+Let 𝐶(𝑥) be “x is in this class,” 𝐵(𝑥) be “x has read the book,” and 𝑃(𝑥) 
+be “x passed the first exam.” The premises are ∃𝑥(𝐶(𝑥) ∧￢𝐵(𝑥)) and 
+∀𝑥(𝐶(𝑥) → 𝑃(𝑥)). The conclusion is ∃𝑥(𝑃(𝑥) ∧￢𝐵(𝑥)). These steps 
+can be used to establish the conclusion from the premises. 

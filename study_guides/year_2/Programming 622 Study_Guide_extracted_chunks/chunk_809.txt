@@ -1,0 +1,48 @@
+] 
+= true;  
+cout << " " << index << " ";  
+  
+while (!queue.isEmptyQueue())  
+{  
+int u = queue.front();  
+queue.deleteQueue();  
+  
+for (graphIt = graph[u].begin(); graphIt != graph[u].end(); ++graphIt)  
+{ int w = *graphIt;  
+if (!visited[w])  
+{  
+queue.addQueue(w); visited[w] 
+= true;  
+cout << " " << w << " ";  
+}  
+}  
+ 
+}   
+  
+  
+  
+  
+//end while  
+}  
+delete [] visited;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end breadthFirstTraversal  
+  
+As we continue to discuss graph algorithms, we will be writing C++ functions to implement specific 
+algorithms, and so we will derive (using inheritance) new classes from the class graphType.  
+  
+ 
+10.7  Shortest Path Algorithm  
+  
+Graph theory has many applications. For example, we can use graphs to show how different chemicals 
+are related or to show airline routes. Graphs also be used to show the highway structure of a city, state, 
+or country. The edges connecting two vertices can be assigned a nonnegative real number, called the 
+weight of

@@ -1,0 +1,27 @@
+3.2.1 Two-Way Selection 
+There are many programming situations in which you must choose between two 
+alternatives. 
+ 
+Take a moment to examine this syntax. It begins with the reserved word     if, 
+followed by a logical expression contained within parentheses, followed by a 
+statement, followed by the reserved word else, followed by a second statement. 
+Statements 1 and 2 are any valid C++ statements. In a two-way selection, if the 
+value of the expression is true, statement1 executes. If the value of the 
+expression is false, statement2 executes.  
+ 
+Logical(Boolean)Operators and Logical Expressions 
+The logical expressions used in these examples involve the evaluation of a 
+single relational operator. There are situations when the logical expression is a 
+combination of two or more logical expressions. For example, suppose weight 
+and height are double variables. Consider the following logical expression 
+weight > 180 and height < 6.0 
+This logical expression is a combination of the logical expressions weight > 180 
+and height < 6.0, and these logical expressions are combined using the word 
+“and”. 
+Logical (Boolean) operators enable you to combine logical expressions. 
+C++ has three logical (Boolean)operators. 
+
+Logical operators take only logical values as operands and yield only logical 
+values as results. The operator ! is unary, so it has only one operand.  
+The operators && and || are binary operators and there is no space within these 
+operators. 

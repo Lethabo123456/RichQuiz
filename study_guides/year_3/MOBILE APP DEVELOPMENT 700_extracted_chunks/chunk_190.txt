@@ -1,0 +1,31 @@
+Switch back to Design view to review the impact of these changes. Switch back to 
+the XML. The next widget will be added completely through XML. Locate the 
+TextView XML and copy all of it from the 
+<TextView initial tag, including the /> closing tag. Paste it after the EditText XML 
+but before the closing ConstraintLayout tag. Modify the XML to match Listing 4.4. 
+Next, copy all the EditText XML and paste it after the TextView XML. Be sure to 
+include the </EditText> closing tag. Delete the <requestFocus /> tag. Refer to Listing 
+
+4.5 to configure the XML. 
+
+Switch to Design view. Your layout should like Figure 4.8. If it doesn’t, return to the XML and verify 
+your settings. 
+
+The next step is to add the three EditTexts required to enter the city, state, and zip code of the contact. 
+Drag and drop or copy XML to add these widgets to your layout. You can do this all in the TextView or 
+in the Attributes panel. Refer to Table 4.1 for parameter values for each EditText. Attributes that have 
+a value --- in the table should not be included for that particular widget. The table introduces two new 
+attributes. Some input has a limited number of characters that should be entered. The maxLength 
+attribute is how the developer limits the number of characters that can be entered into an EditText. 
+Finally, the nextFocusDown attribute is used when it is difficult for Android to figure out which of the 
+EditTexts should get focus next. This attribute is used to specifically identify which widget should get 
+focus after the current one. 
+
+Verify with Design view that the interface looks like Figure 4.9. If everything looks correct, the next 
+step is to add the phone number fields. You will need to add two TextViews and two EditTexts to the 
+layout for the phone information. Configure the widgets using the information in Table 4.2. 
+The phone number labels (TextViews) are above the EditTexts used for input of those phone numbers. 
+This layout poses challenges because the size of the EditText inputs can and will change based on 
+which device the user runs the app. Given that, you cannot set the labels at a fixed position, because 
+the inputs below them will change and no longer align with their labels. This makes the interface look 
+sloppy.

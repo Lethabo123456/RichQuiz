@@ -1,0 +1,47 @@
+2.3 Software Specifications  
+Software specification or requirements engineering is the process of understanding and defining 
+what services are required from the system and identifying the constraints on the system’s 
+operation and development.  
+
+Requirements engineering is a particularly critical stage of the software process, as mistakes made 
+at this stage inevitably lead to later problems in the system design and implementation. Before 
+the requirements engineering process starts, a company may carry out a feasibility or marketing 
+study to assess whether or not there is a need or a market for the software and whether or not it 
+is technically and financially realistic to develop the software required. Feasibility studies are 
+short-term, relatively cheap studies that inform the decision of whether or not to go ahead with 
+a more detailed analysis. 
+The requirements engineering process aims to produce an agreed requirements document that 
+specifies a system satisfying stakeholder requirements. Requirements are usually presented at 
+two levels of detail. End-users and customers need a high-level statement of the requirements; 
+system developers need a more detailed system specification. 
+ 
+Figure 2.4: The Requirement Engineering Process (Sommerville,  I.  2021)   
+There are three main activities in the requirements engineering process: 
+
+i. Requirements elicitation and analysis: This is the process of deriving the system 
+requirements through observation of existing systems, discussions with potential 
+users and procurers, task analysis, and so on. This may involve the development of 
+one or more system models and prototypes. These help you understand the 
+system to be specified. 
+ 
+ii. Requirements specification: This is the activity of translating the information 
+gathered during requirements analysis into a document that defines a set of 
+requirements. Two types of requirements may be included in this document. User 
+requirements are abstract statements of the system requirements for the 
+customer and end-user of the system; system requirements are a more detailed 
+description of the functionality to be provided. 
+ 
+iii. Requirements validation: This activity checks the requirements for realism, 
+consistency, and completeness. During this process, errors in the requirements 
+document are inevitably discovered. It must then be modified to correct these 
+problems. 
+ 
+Requirements analysis continues during definition and specification, and new requirements come 
+to light throughout the process. Therefore, the activities of analysis, definition, and specification 
+are interleaved. 
+ 
+In agile methods, requirements specification is not a separate activity but is seen as part of system 
+development. Requirements are informally specified for each increment of the system just before 
+that increment is developed. Requirements are specified according to user priorities. The 
+elicitation of requirements comes from users who are part of or work closely with the 
+development team 

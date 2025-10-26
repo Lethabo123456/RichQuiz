@@ -1,0 +1,14 @@
+rs communicate is when the client requests a page—when the user clicks a link—and the 
+server sends the requested page to the client. Once the client receives the page and its components, 
+the client/server communication is ended.  
+The web browser, through its use of HTML, does not have computational abilities beyond 
+formatting output text and accepting form field inputs. Even when the browser accepts form field 
+data, there is no way to perform immediate data entry validation. Therefore, to perform such crucial 
+processing in the client, the web defers to other web programming languages such as Java, 
+JavaScript, and VBScript. The browser resembles a dumb terminal that displays only data and can 
+perform only rudimentary processing such as accepting form data inputs. To improve the 
+capabilities of the web browser, you must use plug-ins and other client-side extensions. On the 
+server side, web application servers provide the necessary processing power. 
+ 
+Client-Side Extensions 
+Cl

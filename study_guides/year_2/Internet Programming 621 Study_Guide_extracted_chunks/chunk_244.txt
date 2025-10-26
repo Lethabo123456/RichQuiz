@@ -1,0 +1,40 @@
+] => blue [5] => blue [6] => blue) 
+Array ( [0] => red ) 
+c) Array ( [3] => blue [4] => blue [5] => blue [6] => blue ) 
+Array () 
+d) Array ( [3] => blue [4] => blue [5] => blue [6] => blue ) 
+Array ( [0] => red ) 
+  
+Answer: d 
+78.  What will be the output of the following PHP code? 
+<?php 
+$a1 = array("red", "green"); 
+$a2 = array("blue", "yellow"); 
+print_r(array_merge($a1, $a2)); 
+?>  
+a) Array ( [0] => red [1] => green) 
+b) Array ( [0] => blue [1] => yellow [2] => red [3] => green ) 
+c) Array ( [0] => red [1] => green [2] => blue [3] => yellow ) 
+d) Array ( [0] => blue [1] => yellow ) 
+  
+Answer: c 
+79. What will be the output of the following PHP code? 
+<?php 
+$a = array("a"=>"red", "b"=>"green", "c"=>"blue"); 
+echo array_shift($a); 
+print_r ($a); 
+?> 
+a) green 
+
+b) red 
+c) blue 
+d) none of the above 
+  
+Answer: b 
+80. What will be the output of the following PHP code? 
+<?php 
+$a = array("red", "green", "blue"); 
+array_pop($a); 
+print_r($a); 
+?> 
+a) Array ( [0] => red [1] => green

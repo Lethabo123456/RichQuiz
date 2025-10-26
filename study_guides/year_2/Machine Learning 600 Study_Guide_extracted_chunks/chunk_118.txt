@@ -1,0 +1,18 @@
+d be set to 1, for example (see Figure 6.7). Or if looking for 
+horizontal features, the filter could be set for that. 
+ 
+                              
+ 
+                                                            Figure 6.7: Filter values set at vertical and horizontal  
+ 
+
+P a g e  | 76 
+ 
+How the filter is configured will determine the output of the CNN; features that are not 
+featured in the filter will be dimmed from the outgoing computed CNN value. 
+Activation Functions. There is an activation layer that is usually done by way of a Sigmoid 
+function (or TANH if you prefer). The ANN is a linear combination of its own inputs. Nonlinear 
+functions let us perform classification of data even when it's not linearly separable.  
+In the CNN, once the filter has passed the part of the image, it will be passed through to 
+another mathematical function, an activation function. The commonly used function for this 
+operation is a Rectified Linear Unit, or ReLU for short. What the ReLU is doi

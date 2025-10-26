@@ -1,0 +1,10 @@
+in a binary search tree, and at the end of the year pay 
+increases or bonuses are to be awarded to each employee. This task requires that each node in the binary 
+search tree be visited and that the salary of each employee be updated. The preceding sections discussed 
+various ways to traverse a binary tree. However, in these traversal algorithms—inorder, preorder, and 
+postorder—whenever we visited a node, for simplicity and for illustration purposes, we only output the 
+data contained in each node. How do we use a traversal algorithm to visit each node and update the data 
+in each node? One way to do so is to first create another binary search tree in which the data in each node 
+is the updated data of the original binary search tree, and then destroy the old binary search tree. This 
+would require extra computer time and perhaps extra memory, and, therefore, is not efficient. Another 
+solution is to write separate traversal algorithms to update the data. This solution requires you t

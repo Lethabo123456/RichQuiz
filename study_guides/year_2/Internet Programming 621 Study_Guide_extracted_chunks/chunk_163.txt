@@ -1,0 +1,26 @@
+}em;\” > Hello, world! < /p  
+> ”;  
+ 
+  
+}  
+  
+ helloWithStyle( “Helvetica”, 2 );  helloWithStyle( 
+“Times”, 3 );  helloWithStyle( “Courier”, 1.5 );  
+? >  
+< /body >  
+< /html >  
+  
+This code creates a function, helloWithStyle(), that has two parameter variables: $font and $size . 
+These variables are then used within the function to set the font and size of the text via CSS.  
+  
+  
+  
+Next, the code calls the helloWithStyle() function three times, passing in different arguments each 
+time. For each function call, the $font parameter takes on the value of the first argument, and the 
+$size parameter takes on the value of the second argument. Notice how the order of the arguments 
+in the function calls matches the order of the parameters in the function definition.  
+
+79  
+Save this script as hello_with_style.php in your document root folder and try it out. The resulting 
+page is shown in Figure 6.2. You can see how the same line of code within the function is used three 
+times to

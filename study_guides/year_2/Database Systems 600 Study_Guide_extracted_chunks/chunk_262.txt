@@ -1,0 +1,27 @@
+rentheses. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 269-275. 
+
+ 
+105 
+ 
+ 
+COUNT The COUNT function is used to tally the number of non-null values of an attribute. In 
+the following code, a tally of the number of products is calculated, returning a result of 16.  
+SELECT  COUNT (P_CODE) 
+FROM  
+PRODUCT; 
+The collection of rows does not have to be composed of all the rows in the table. For example, we 
+can use the following query to determine how many products have a price that is less than $10.  
+SELECT  COUNT(P_PRICE) 
+FROM  
+PRODUCT  
+WHERE  
+P_PRICE < 10; 
+COUNT can also be used in conjunction with the DISTINCT clause. 
+MIN and MAX The MIN and MAX functions help you find answers to problems such as the 
+highest and lowest (maximum and minimum) prices in the PRODUCT table. The following code 
+retrieves the highest and lowest prices in the PRODUCT table in a single query.  
+SELECT  MAX(P_PRICE

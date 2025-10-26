@@ -1,0 +1,22 @@
+stops. Given new data points, k-means will assign each to 
+the closest cluster center. The next example shows the boundaries of the cluster centers: 
+
+Applying k-means with scikit-learn is quite straightforward. Here, we apply it to the synthetic data that 
+we used for the preceding plots. We instantiate the KMeans class, and set the number of clusters we are 
+looking for. Then we call the fit method with the data: 
+ 
+During the algorithm, each training data point in X is assigned a cluster label. You can find these labels in 
+the kmeans.labels_ attribute: 
+ 
+You can see that clustering is somewhat similar to classification, in that each item gets a label. However, 
+there is no ground truth, and consequently the labels themselves have no a priori meaning. Let’s go back 
+to the example of clustering face images that we discussed before. It might be that the cluster 3 found 
+by the algorithm contains only faces of your friend Bela. You can only know that after you look at the 
+pictures, though, and the number 3 is arbitrary. The only information the algorithm gives you is that all 
+faces labeled as 3 are similar. For the clustering we just computed on the two-dimensional toy dataset, 
+that means that we should not assign any significance to the fact that one group was labeled 0 and 
+another one was labeled 1. Running the algorithm again might result in a differ- ent numbering of clusters 
+because of the random nature of the initialization. Here is a plot of this data again. The cluster centers 
+are stored in the cluster_centers_ attribute, and we plot them as triangles: 
+ 
+We can also use more or fewer cluster centers 

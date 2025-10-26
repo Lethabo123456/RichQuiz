@@ -1,0 +1,13 @@
+on from statistics, which says that the 
+probability of y events occurring at a given time is given by the formula:  
+ where λ is the expected value that y 
+events occur at that time. Suppose that, on average, a customer arrives every four minutes. During this 
+four-minute period, the customer can arrive at any one of the four minutes. Assuming an equal likelihood 
+of each of the four minutes, the expected value that a customer arrives in each of the four minutes is, 
+therefore, 1 / 4 = 0.25.  
+  
+Next, we need to determine whether the customer actually arrives at a given minute. Now P(0) = e- λ is 
+the probability that no event occurs at a given time. One of the basic assumptions of the Poisson 
+distribution is that the probability of more than one outcome occurring in a short time interval is 
+negligible. For simplicity, we assume that only one customer arrives at a given time unit. Thus, we use e-λ 
+as the cutoff point to determine whether a customer arrives at a given time unit. Su

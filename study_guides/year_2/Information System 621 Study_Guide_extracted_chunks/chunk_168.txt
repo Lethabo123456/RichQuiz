@@ -1,0 +1,13 @@
+. Sequential access means that 
+data must be accessed in the order in which it is stored. For example, inventory data might be 
+stored sequentially by part number, such as 100, 101, and 102 and so on. If you want to retrieve 
+information on part number 125, you must read and discard all the data relating to parts 001 to 
+124. Direct access means that data can be retrieved directly without the need to pass by other 
+data in sequence. With direct access, it is possible to go directly to and access the needed data 
+– for example, part number 125 – without having to read through parts 001 to 124. For this 
+reason, direct access is usually faster than sequential access. The devices used only to access 
+secondary storage data sequentially are called sequential access storage devices (SASDs); 
+those used for direct access are called direct access storage devices (DASDs). 
+Secondary Storage Devices 
+Secondary data storage is not directly accessible by the CPU. Instead, computers usually use 
+i

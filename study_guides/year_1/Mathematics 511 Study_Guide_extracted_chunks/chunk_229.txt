@@ -1,0 +1,28 @@
+4.2.6 New Graphs from Old 
+Sometimes we need only part of a graph to solve a problem. For instance, 
+we may care only about the part of a large computer network that involves 
+the computer centers in New York, Denver, Detroit, and Atlanta. Then we 
+can ignore the other computer centers and all telephone lines not linking 
+two of these specific four computer centers. In the graph model for the large 
+network, we can remove the vertices corresponding to the computer centers 
+other than the four of interest, and we can remove all edges incident with a 
+vertex that was removed. When edges and vertices are removed from a 
+graph, without removing endpoints of any remaining edges, a smaller graph 
+is obtained. Such a graph is called a subgraph of the original graph. 
+ 
+Definition 58 
+A subgraph of a graph G = (V ,E) is a graph H = (W, F), where W ⊆ V and F ⊆ 
+E. A subgraph H of G is a proper subgraph of G if H ≠ G. 
+ 
+Given a set of vertices of a graph, we can form a subgraph of this graph with 
+these vertices and the edges of the graph that connect them. 
+ 
+Definition 59 
+Let G = (V ,E) be a simple graph. The subgraph induced by a subset W of the 
+vertex set V is the graph (W, F), where the edge set F contains an edge in E 
+if and only if both endpoints of this edge are in W. 
+
+Definition 60 
+The union of two simple graphs G1 = (V1,E1) and G2 = (V2,E2) is the simple 
+graph with vertex set V1 ∪ V2 and edge set E1 ∪ E2. The union of G1 and G2 is 
+denoted by G1 ∪ G2. 

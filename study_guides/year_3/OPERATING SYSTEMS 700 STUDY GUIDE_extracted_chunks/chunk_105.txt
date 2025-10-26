@@ -1,0 +1,34 @@
+3.4.2 Thread Control Block 
+The Thread Control Block (TCB) is a similar data structure, but it represents individual threads 
+within a process. While threads share certain resources with their parent process (e.g., memory 
+space, open files), the TCB maintains information specific to the thread, allowing for efficient 
+thread management and execution. 
+
+Figure 3.4 
+ 
+Components of a TCB: 
+ 
+1. Thread Identification: 
+ 
+➢ Thread ID (TID): A unique identifier for the thread. 
+ 
+➢ Reference to the parent process or PCB. 
+ 
+2. Thread State: 
+ 
+➢ Current state of the thread (e.g., READY, RUNNING, WAITING). 
+ 
+3. Program Counter: 
+➢ Points to the next instruction to execute within the thread. 
+ 
+4. Registers and Stack Pointer: 
+➢ Stores the thread-specific CPU register values and the stack pointer for local variables. 
+ 
+5. Priority: 
+➢ Priority assigned to the thread for scheduling purposes. 
+ 
+6. Thread Scheduling Information: 
+➢ Parameters used by the scheduler to allocate CPU time to threads. 
+ 
+7. Thread-specific Storage:  
+➢ Data specific to the thread, such as local variables or buffers.

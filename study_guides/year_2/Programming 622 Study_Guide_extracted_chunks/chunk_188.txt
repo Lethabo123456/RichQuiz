@@ -1,0 +1,32 @@
+eginning of the list, we do not need to know the end of 
+the list, so the pointer last is not needed. Also, after inserting the new node at the beginning, the new 
+node becomes the first node in the list. Thus, we need to update the value of the pointer first to correctly 
+point to the first node in the list. We see, then, that we need only two pointers to build the linked list: one 
+to point to the list and one to create the new node. Because initially the list is empty, the pointer first 
+must be initialized to NULL. The following C++ function builds the linked list backward and returns the 
+pointer of the built list:  
+  
+nodeType* buildListBackward()  
+
+94  
+  
+{  
+nodeType *first, *newNode;  
+int num;  
+cout << "Enter a list of integers ending with -999."<< endl; 
+cin >> num; first = NULL; while (num != -999)  
+{  
+newNode = new nodeType;      
+  
+//create a node newNode->info = num;  
+ 
+  
+  
+  
+//store the data in newNode  
+ 
+newNode->link = first;   
+  
+  
+  
+//put newNode at t

@@ -1,0 +1,44 @@
+2.2 DATA TYPES 
+ 
+2.2.1 C++ Data Types  
+The objective of a C++ program is to manipulate data. Different programs manipulate 
+different data. A program designed to calculate an employee’s paycheck will add, 
+subtract, multiply, and divide numbers, and some of the numbers might represent 
+hours worked and pay rate. Similarly, a program designed to alphabetize a class list 
+will manipulate names. 
+ 
+Data type: A set of values together with a set of allowed operations. C++ data types 
+fall into the following three categories: 
+
+ Simple data type  
+ Structured data type 
+ Pointers
+
+2.2.1.1 Simple Data Types 
+ 
+The simple data type is the fundamental data type in C++ because it becomes a 
+building block for the structured data type, which you will start learning about in later 
+Chapters. There are three categories of simple data:  
+ Integral, which is a data type that deals with integers, or numbers without a 
+decimal part  
+ Floating point, which is a data type that deals with decimal numbers  
+ Enumeration, which is a user-defined data type 
+ 
+Integral Data Types 
+Table below gives the range of possible values associated with some integral data 
+types and the size of memory allocated to manipulate these values. 
+ 
+Int Data Types 
+ 
+This section describes the int data type. This discussion also applies to other integral 
+data types. Integers in C++, as in mathematics, are numbers such as the following: -
+6728, -67, 0, 78, 36782, +763 Note the following two rules from these examples: 1. 
+Positive integers do not need a + sign in front of them. 2. No commas are used within 
+an integer. Recall that in C++, commas are used to separate items in a list. So 36,782 
+would be interpreted as two integers: 36 and 782. 
+
+bool Data Types 
+ 
+The data type bool has only two values: true and false. Also, true and false are called 
+the logical (Boolean) values. The central purpose of this data type is to manipulate 
+logical (Boolean) expressions. 

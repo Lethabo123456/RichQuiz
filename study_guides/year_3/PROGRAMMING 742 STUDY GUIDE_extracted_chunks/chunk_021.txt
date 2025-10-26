@@ -1,0 +1,13 @@
+1.3 Using Static Members 
+The properties and methods of a class can be either instance members or static members. 
+Instance members are associated with instances of a type, while static members are consid-
+ered to be part of the class. You access a static member through the name of the class in which 
+it is declared. For example, suppose you have a class named Button and have instantiated 
+objects of that class named btnUpdate and btnDelete. Suppose as well that the Button 
+class has a static method SomeMethod ( ). To access the static method you write: 
+
+Button.SomeMethod( ); 
+rather than writing: 
+btnUpdate.SomeMethod( ); 
+In C# it is not legal to access a static method or member variable through an instance, and 
+trying to do so will generate a compiler error (C++ programmers, take note). 

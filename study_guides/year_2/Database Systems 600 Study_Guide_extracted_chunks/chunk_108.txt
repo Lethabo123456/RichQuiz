@@ -1,0 +1,12 @@
+the details of table structure and contents. 
+Tables and Their Characteristics 
+The logical view of the relational database is facilitated by the creation of data relationships based 
+on a logical construct known as a relation. Because a relation is a mathematical construct, end users 
+find it much easier to think of a relation as a table. A table is perceived as a two-dimensional 
+structure composed of rows and columns. You can think of a table as a persistent representation of 
+a logical relation— that is, a relation whose contents can be permanently saved for future use. As 
+far as the table’s user is concerned, a table contains a group of related entity occurrences—that is, 
+an entity set. For example, a STUDENT table contains a collection of entity occurrences, each 
+representing a student. For that reason, the terms entity set and table are often used interchangeably. 
+You will discover that the table view of data makes it easy to spot and define entity relationships, 
+thereby g

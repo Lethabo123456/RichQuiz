@@ -1,0 +1,35 @@
+finition of the member 
+function print of boxType, we must use the following statement:  
+
+202 | P a g e  
+ 
+ 
+rectangleType::print();  
+ 
+This statement ensures that we call the member function print of the base class 
+rectangleType, not of the class boxType.  
+The definition of the member function print of the class boxType is:  
+ 
+void boxType::print() const  
+{  
+rectangleType::print(); 
+ cout << "; Height = " << height;  
+} 
+The definition of the function setDimension is:  
+void boxType::setDimension(double l, double w, double h)  
+{  
+rectangleType::setDimension(l, w); 
+if (h >= 0)  
+height = h;  
+else height = 0; 
+} 
+Notice that in the preceding definition of the function setDimension, a call to the 
+member function setDimension of the class rectangleType is preceded by the name 
+of the class and the scope resolution operator, even though the class boxType 
+overloads—not overrides—the function setDimension. 
+ 
+ 
+ 
+ 
+The definition of the function getHeight is:  
+double boxType::

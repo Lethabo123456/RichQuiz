@@ -1,0 +1,14 @@
+definition is used depends on the data types 
+of the operand it is used with. Similarly, the stream insertion operator, <>, are 
+overloaded. The operator >> is used as both a stream extraction operator and a right 
+shift operator. The operator << is used as both a stream insertion operator and a left 
+shift operator. These are examples of operator overloading. (Note that the operators 
+<< and >> have also been overloaded for various data types, such as int, double, and 
+string.) 
+Other examples of overloaded operators are + and -. The results of + and - are different 
+for integer arithmetic, floating-point arithmetic, and pointer arithmetic.  
+ 
+C++ allows the user to overload most of the operators so that the operators can work 
+effectively in a specific application. It does not allow the user to create new operators. 
+Most of the existing operators can be overloaded to manipulate class objects. In order 
+to overload an operator, you must write function(s) (that is, the header and the

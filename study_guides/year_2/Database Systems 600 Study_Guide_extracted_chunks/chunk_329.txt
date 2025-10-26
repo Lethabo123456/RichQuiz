@@ -1,0 +1,11 @@
+database tables. Typically, the data will have to be migrated from the prior version of the system. 
+Often, data to be included in the system must be aggregated from multiple sources. In a best-case 
+scenario, all the data will be in a relational database so that it can be readily transferred to the new 
+database. However, in some cases data may have to be imported from other relational databases, 
+no relational databases, flat files, legacy systems, or even manual paper-and-pencil systems. If the 
+data format does not support direct importing into the new database, conversion programs may 
+have to be created to reformat the data for importing. In a worst-case scenario, much of the data 
+may have to be manually entered into the database. Once the data has been loaded, the DBA 
+works with the application developers to test and evaluate the database.   
+Loading existing data into a cloud-based database service sometimes can be expensive. The 
+reason for this is that most cloud services a

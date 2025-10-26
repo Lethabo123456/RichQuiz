@@ -1,0 +1,89 @@
+implementation 
+d. System maintenance 
+ 
+5. The final step of the system analysis phase in the SDLC is to  
+ 
+a. Gather data 
+b. Write system analysis report 
+c. Propose changes 
+d. Analyse data 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+158 
+Chapter 6: Performance Tuning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ LEARNING OUTCOMES 
+After reading this Section of the guide, the learner should be able to:  
+ 
+ 
+Identify the procedures involved in database performance tuning 
+ 
+ 
+Describe how a DBMS processes SQL queries in each of its three 
+phases 
+ 
+ 
+Explain the role of indexes in speeding up data access 
+ 
+ 
+Differentiate between a rule-based optimizer and a cost-based 
+optimizer 
+ 
+ 
+Describe some common practices used to write efficient SQL Code 
+ 
+ 
+Explain how to formulate queries and tune the DBMS for optimal 
+performance  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+
+ 
+159 
+ 
+6.1 Database Performance Tuning Concepts 
+ 
+One of the main functions of a database system is to provide timely answers to end u

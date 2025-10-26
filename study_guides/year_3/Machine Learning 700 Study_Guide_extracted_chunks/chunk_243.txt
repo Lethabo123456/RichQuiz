@@ -1,0 +1,65 @@
+Here that won’t quite work for us, for a couple reasons. The first is that our neural nets will 
+have many parameters, and we’ll need to update all of them. The second is that we’d like to 
+be able to use more clever variants of gradient descent, and we don’t want to have to rewrite 
+them each time. Accordingly, we’ll introduce a (you guessed it) Optimizer abstraction, of which 
+gradient descent will be a specific instance: 
+
+class Optimizer: 
+""" 
+An optimizer updates the weights of a layer (in place) using 
+information known by either the layer or the optimizer (or by both). 
+""" 
+def step(self, layer: Layer) -> None: 
+raise NotImplementedError 
+After that it’s easy to implement gradient descent, again using tensor_combine: 
+class GradientDescent(Optimizer): 
+def __init__(self, learning_rate: float = 0.1) -> None: self.lr 
+= learning_rate 
+def step(self, layer: Layer) -> None: 
+for param, grad in zip(layer.params(), layer.grads()): 
+
+# Update param using a gradient step 
+param[:] = tensor_combine(lambda param, grad: param - grad * self.lr, param, grad) 
+The only thing that’s maybe surprising is the “slice assignment,” which is a reflection of the 
+fact that reassigning a list doesn’t change its original value. That is, if you just did param = 
+tensor_combine(. . .), you would be redefining the local variable param, but you would not 
+be affecting the original parameter tensor stored in the layer. If you assign to the slice [:], 
+however, it actually changes the values inside the list. 
+Here’s a simple example to demonstrate: 
+
+tensor = [[1, 2], [3, 4]] 
+for row in tensor: row = [0, 0] 
+assert tensor == [[1, 2], [3, 4]], "assignment doesn't update a list" 
+for row in tensor: row[:] 
+= [0, 0] 
+assert tensor == [[0, 0], [0, 0]], "but slice assignment does" 
+
+If you are somewhat inexperienced in Python, this behavior may be surprising, so meditate 
+on it and try examples yourself until it makes sense. To demonstrate the value of this 
+abstraction, let’s implement another optimizer that uses momentum. The idea is that we 
+don’t want to overreact to each new gradient, and so we maintain a running average of the 
+gradients we’ve seen, updating it with each new gradient and taking a step in the direction 
+of the average: 
+class Momentum(Optimizer): def 
+__init__(self, 
+learning_rate: float, 
+
+momentum: float = 0.9) -> None: self.lr 
+= learning_rate 
+self.mo = momentum 
+self.updates: List[Tensor] = [] # running average 
+def step(self, layer: Layer) -> None: 
+# If we have no previous updates, start with all zeros 
+if not self.updates: 
+self.updates = [zeros_like(grad) for grad in layer.grads()] 
+for update, param, grad in zip(self.updates, 
+layer.params(), 
+layer.grads()): 
+# Apply momentum 
+update[:] = tensor_combine( 
+lambda u, g: self.mo * u + (1 - self.mo) * g, update, 
+grad) 
+# Then take a gradient step 
+param[:] = tensor_combine( 
+lambda p, u: p - self.lr * u, param, 
+update) 

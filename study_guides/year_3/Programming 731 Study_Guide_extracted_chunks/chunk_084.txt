@@ -1,0 +1,44 @@
+Boolean Logical Operators    
+The Boolean logical operators shown here operate only on boolean operands. All of the binary 
+logical operators combine two  boolean values to form a resultant boolean value.     
+ 
+Figure 2.3 Logical Operators   
+   
+The logical Boolean operators, &, |, and ^, operate on boolean values in the same way that they 
+operate on the bits of an integer. The logical ! operator inverts the Boolean state: !true == false and 
+!false == true. The following table shows the effect of each logical operation:   
+   
+// Demonstrate 
+the boolean logical operators. class BoolLogic {   
+public static void main(String args[])   
+   
+{ boolean a = true;   
+boolean 
+b 
+= 
+false; boolean c = 
+a | b; boolean d = 
+a & b;   
+   
+boolean e = a ^ b;  boolean f = (!a & 
+b) | (a & !b); boolean g = !a; 
+System.out.println(" a = " + a); 
+System.out.println(" b = " + b);   
+System.out.println(" a|b = " + c);   
+System.out.println(" a&b = " + d);   
+System.out.println(" a^b = " + e);   
+System.out.println("!a&b|a&!b = " + f);   
+System.out.println(" !a = " + g);   
+   
+}   
+}     
+   
+After running this program, you will see that the same logical rules apply to boolean values as they 
+did to bits. As you can see from the following output, the string representation of a Java boolean 
+value is one of the literal values true or false:   
+a = true   
+b = false   
+a|b = true a&b = 
+false a^b = true 
+a&b|a&!b = true   
+!a = false   

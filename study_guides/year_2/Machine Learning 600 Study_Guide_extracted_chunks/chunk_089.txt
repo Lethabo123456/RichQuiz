@@ -1,0 +1,27 @@
+SVM 
+that is taking in input data and producing output data, but you have little knowledge in 
+between.  
+ML with SVM takes the concept of a perceptron a little bit further to maximize the geometric 
+margin. It's one of the reasons why SVM and ANN are frequently compared in function and 
+performance. 
+ 
+
+P a g e  | 54 
+ 
+5.3.1 SVM classification principle 
+Consider a basic classification problem. You want to figure out which objects are squares and 
+which are circles. These squares and circles could represent anything you want—cats and 
+dogs, humans and aliens, or something else. An illustration of the two sets of objects is 
+provided in Figure 5.2. 
+ 
+ 
+       
+ 
+                                Figure 5.2: An illustration of binary classification 
+ 
+
+P a g e  | 55 
+ 
+This task would be considered a binary classification problem, because there are only two 
+outcomes; it's either one object or the other. Think of it as a 0 or a 1. With some supervised 
+learning, you could figure out pr

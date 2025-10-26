@@ -1,0 +1,27 @@
+b Server  
+The first thing to do is to create a simple HTML Web page for testing. In a text editor such as 
+Notepad for Windows, create the following simple Web page:  
+  
+  
+  
+<html>  
+<head>  
+<title>Testing</title>  
+</head>  
+<body>  
+<h1>Testing, testing, 1-2-3</h1>  
+</body>  
+</html>  
+  
+  
+  
+Call the Web page testing.html and save it in your Web server’s document root folder on your hard 
+drive. What is the document root folder, you ask? When you install Apache, it comes with a default 
+Web site. This Web site has a document root folder, which is the top-level folder into which you put 
+the website’s files. You want to save your testing.html Web page in this folder so you can browse it 
+via your web browser.  
+  
+So where is the document root folder? With WampServer on Windows, the document root folder is 
+usually in C:\wamp\www. So save your testing.html file to the appropriate folder, and then open a 
+Web browser and type the following into its address bar:  
+http://localh

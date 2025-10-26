@@ -1,0 +1,38 @@
+3.4. Bayesian versus Frequentist 
+ 
+The preceding example was almost too easy. In practice, we can hardly ever truly 
+count the number of ways something can happen. For example, let's say that we 
+want to know the probability of a random person smoking cigarettes at least once 
+a day. If we wanted to approach this problem using the classical way (the previous 
+formula), we would need to figure out how many ways a person is a 
+smoker—someone who smokes at least once a day—which is not possible! 
+When faced with such a problem, two main schools of thought are considered when 
+it comes to calculating probabilities in practice: the Frequentist approach and the 
+ 
+Bayesian approach. This chapter will focus heavily on the Frequentist approach 
+ 
+while the subsequent chapter will dive into the Bayesian analysis (Curuksu, J. D. (2018).  
+• Frequentist approach 
+In a Frequentist approach, the probability of an event is calculated through 
+experimentation. It uses the past to predict the future chance of an event. 
+The basic formula is as follows: 
+ 
+Basically, we observe several instances of the event and count the number of times A 
+was satisfied. The division of these numbers approximates the probability. 
+The Bayesian approach differs by dictating that probabilities must be discerned 
+using theoretical means. Using the Bayes approach, we would have to think a bit 
+more critically about events and why they occur. Neither methodology is 100% the 
+correct answer all the time. Usually, it comes down to the problem and the difficulty 
+of using either approach. 
+The crux of the Frequentist approach is the relative frequency. 
+The relative frequency of an event is how often an event occurs divided by the total 
+number of observations. 
+
+Example – marketing stats 
+Let's say that you are interested in ascertaining how often a person who visits your 
+website is likely to return on a later date. This is sometimes called the rate of repeat 
+visitors. In the previous definition, we would define our A event as being a visitor 
+coming back to the site. We would then have to calculate the number of ways a 
+person can come back, which doesn't really make sense at all! In this case, many 
+people would turn to a Bayesian approach; however, we can calculate what is known 
+as relative frequency. 

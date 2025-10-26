@@ -1,0 +1,16 @@
+lgorithms. For some of them, the performance depends 
+on the characteristics of the sequence of input data. The most illustrious example is the 
+Quicksort algorithm, which performs worse if served already sorted data! In ML, things are 
+not much different. Some algorithms work well if trained on data where features have a given 
+mean, few or many outliers, values in a given range, and so forth. Preparing data to obtain 
+the best performance is therefore crucial. There are three main operations you can perform 
+on data: scaling, standardization, and normalization. 
+Scaling 
+The purpose of scaling is to change the range of values of a feature without altering the 
+distribution of values. For example, imagine a feature that takes values in the [0,100] range. 
+In this case, a scaling operation can consist of dividing each value by 100, thus shifting the 
+
+P a g e  | 82 
+ 
+range of values in the 0–1 interval. Among other things, using a [0,1] interval also reduces the 
+amount of memory nece

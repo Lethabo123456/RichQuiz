@@ -1,0 +1,36 @@
+5.1.1 Different Categories of plot in Seaborn  
+ 
+Plots are basically used for visualizing the relationship between variables. Those variables can be either 
+completely numerical or a category like a group, class, or division. Seaborn divides the plot into the below  
+categories. 
+ 
+Relational plots: This plot is used to understand the relation between two variables. 
+Categorical plots: This plot deals with categorical variables and how they can be visualized. 
+Distribution plots: This plot is used for examining univariate and bivariate distributions 
+Regression plots: The regression plots in Seaborn are primarily intended to add a visual guide that helps to 
+emphasize patterns in a dataset during exploratory data analyses. 
+Matrix plots: A matrix plot is an array of scatterplots. 
+Multi-plot grids: It is a useful approach to draw multiple instances of the same plot on different subsets of the 
+dataset. 
+
+An example of what seaborn can do, 
+
+Output 
+ 
+A few things have happened here. Let’s go through them one by one, 
+Seaborn is the only library we need to import for this simple example. By convention, it is imported with the shorthand 
+sns. 
+Behind the scenes, seaborn uses matplotlib to draw its plots. For interactive work, it’s recommended to use a 
+Jupyter/IPython interface in matplotlib mode, or else you’ll have to call matplotlib.pyplot.show() when you want to 
+see the plot. 
+Beyond the default theme, there are several other options, and you can independently control the style and scaling 
+of the plot to quickly translate your work between presentation contexts (e.g., making a version of your figure that 
+will have readable fonts when projected during a talk). If you like the matplotlib defaults or prefer a different theme, 
+you can skip this step and still use the seaborn plotting functions. 
+Most code in the docs will use the load_dataset() function to get quick access to an example dataset. There’s 
+nothing special about these datasets: they are just pandas dataframes, and we could have loaded them with 
+pandas.read_csv() or built them by hand. 
+This plot shows the relationship between five variables in the tips dataset using a single call to the seaborn function 
+relplot(). Notice how we provided only the names of the variables and their roles in the plot. Unlike when using 
+matplotlib directly, it wasn’t necessary to specify attributes of the plot elements in terms of the color values or marker 
+codes 

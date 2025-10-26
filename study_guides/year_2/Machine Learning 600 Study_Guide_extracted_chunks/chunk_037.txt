@@ -1,0 +1,21 @@
+such as CSV files, that's not 
+the case, so it's worth looking at each field and ensuring that what you're expecting to see is valid. 
+                                        
+ 
+From the example, you can see that the first row of data is correct, but the second is wrong 
+because the first name field has a number in it and not a string type. There are a couple of 
+things you could do here. The first option is to ignore the record, as it doesn't fit the data-
+quality check. The other option is to see if any other records have the same e-mail address 
+and check the name against those records. 
+Length Checks. Field lengths must be checked, too; once again, relational databases exercise a certain 
+amount of control, but textual data can be error-prone if people don't go with the general rules of the 
+schema (see Table 2.2). 
+                       
+
+P a g e  | 17 
+ 
+                                                                     Table 2.2: Length checks  
+      
+ 
+ 
+Range Checks: Range

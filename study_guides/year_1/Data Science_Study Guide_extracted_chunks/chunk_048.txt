@@ -1,0 +1,34 @@
+Chapter Three 
+The Five Steps of Data Science 
+ 
+Learning Outcomes:  
+After reading this section of the guide, the student should be able to: 
+• Understand the five steps of the data science process 
+• Able to implement the matplotlib library to data visualization 
+• Demonstrate the ability to work with a dataset within a given context 
+• Understand the various Python methods to implement in order to preprocess data 
+ 
+3.1 
+Introduction  
+We have spent extensive time looking at the preliminaries of data science, including outlining the 
+types of data and how to approach datasets depending on their type. This chapter will focus mostly 
+on the third step of exploration. We will use the Python packages pandas and matplotlib to explore 
+different datasets (Sinan, 2016). 
+ 
+The five essential steps to perform data science are as follows: 
+1. Asking an interesting question 
+2. Obtaining the data 
+3. Exploring the data 
+4. Modelling the data 
+5. Communicating and visualizing the results
+
+Obtain the data 
+Once you have selected the question you want to focus on, it is time to scour the world for the data 
+that might be able to answer that question. As discussed previously, the data can come from different 
+sources; so, this step can be very creative! 
+
+Explore the data 
+Once we have the data, we use the lessons learned in Chapter 2, of this guide and begin to break down 
+the types of data that we are dealing with. This is a pivotal step in the process. Once this step is 
+completed, the analyst generally has spent several hours learning about the domain, using code or other tools to manipulate and explore the data, and has a very good sense of what the data might be 
+trying to tell them (Sinan, 2016).

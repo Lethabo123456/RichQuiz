@@ -1,0 +1,35 @@
+NAS (Network Attached Storage)  
+NAS (network attached storage) is a specialized storage device or group of storage devices 
+that provides centralized fault-tolerant data storage for a network. NAS differs from RAID in 
+that it maintains its own interface to the LAN rather than relying on a server to connect it to 
+the network and control its functions. In fact, you can think of NAS as a unique type of server 
+dedicated to data sharing. The advantage to using NAS over a typical file server is that a NAS 
+device contains its own file system that is optimized for saving and serving files (as opposed 
+to also managing printing, authenticating logon IDs, and so on). Because of this optimization, 
+NAS reads and writes from its disk significantly faster than other types of servers could. 
+ 
+Another advantage to using NAS is that it can be easily expanded without interrupting service. 
+For instance, if you purchased a NAS device with 400 GB of disk space, then six months later 
+realized you need three times as much storage space, you could add the new 800 GB of disk 
+space to the NAS device without requiring users to log off the network or taking down the NAS 
+device. After physically installing the new disk space, the NAS device would recognize the 
+added storage and add it to its pool of available reading and writing space. Compare this 
+process with adding hard disk space to a typical server, for which you would have to take the 
+server down, install the hardware, reformat the drive, integrate it with your NOS, and then 
+add directories, files, and permissions as necessary. 
+ 
+Although NAS is a separate device with its own file system, it still cannot communicate directly 
+with clients on the network. When using NAS, the client requests a file from its usual file server 
+over the LAN. The server then requests the file from the NAS device on the network. In 
+response, the NAS device retrieves the file and transmits it to the server, which transmits it to 
+the client. 
+  
+Figure 2.6 Network attached storage on a LAN  
+© Cengage Learning 2023 
+ 
+NAS is appropriate for enterprises that require not only fault tolerance, but also fast access 
+for their data. For example, an ISP might use NAS to host its customers’ Web pages. Because 
+NAS devices can store and retrieve data for any type of client (providing it can run TCP/IP), 
+NAS is also appropriate for organizations that use a mix of different operating systems on their 
+desktops. Large enterprises that require even faster access to data and larger amounts of storage might 
+prefer storage area networks over NAS.

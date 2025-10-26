@@ -1,0 +1,21 @@
+ty in the relationship is related to one or 
+more than one of the other entities. For example, going back to the customer–order relationship, 
+each order is placed by just one customer, but each customer can place many orders. Hence the 
+cardinality in this case is one to many (1 : M). Cardinality for a binary relationship can be one 
+to one (1 : 1), one to many (1 : M) or many to many (M : M). 
+ 
+Last, the optionality documents whether the relationship must exist for each entity or whether 
+it is optional. For instance, an order must be placed by a customer – there is no option. An order 
+can’t exist unless a customer has placed it! However, a customer can be in the database even 
+though they have no current orders, so the relationship is optional for the customer. All of the 
+above are documented in an entity–relationship diagram, shown in Figure 5.3. 
+ 
+ 
+ 
+ 
+140 
+
+ 
+ 
+It is important to note that the database designer doesn’t get to make up the degree, cardinality 
+and optionality

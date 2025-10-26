@@ -1,0 +1,32 @@
+d the new element. Prior to this operation, the stack must exist and must not be full.  
+ top—Returns the top element of the stack. Prior to this operation, the stack must exist and must 
+not be empty.  
+ pop—Removes the top element of the stack. Prior to this operation, the stack must exist and must 
+not be empty.  
+  
+The 
+following 
+abstract 
+class 
+stackADT 
+defines 
+these 
+operations 
+as 
+an 
+ADT: 
+//*************************************************************  
+// This class specifies the basic operations on a stack.  
+//************************************************************
+* template <class Type> class stackADT  
+{ public: virtual void initializeStack() = 0;  
+//Method to initialize the stack to an empty state.  
+//Postcondition: Stack is empty.  
+  
+virtual bool isEmptyStack() const = 0;  
+//Function to determine whether the stack is empty. 
+//Postcondition: Returns true if the stack is empty, // 
+otherwise returns false.  
+  
+virtual bool isFullStack() const = 0;  
+//F

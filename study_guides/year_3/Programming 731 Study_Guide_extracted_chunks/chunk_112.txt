@@ -1,0 +1,17 @@
+Here, type specifies the type of data being allocated, size specifies the number of elements in the 
+array, and array-var is the array variable that is linked to the array. That is, to use new to allocate an 
+array, you must specify the type and number of elements to allocate. The elements in the array 
+allocated by new will automatically be initialized to zero.This example allocates a 12-element array 
+of integers and links them to month_days.   
+     
+month_days = new int[12];   
+After this statement executes, month_days will refer to an array of 12 integers. Further, all elements 
+in the array will be initialized to zero. 
+ 
+Let’s review: Obtaining an array is a twostep process. First, you must declare a variable of the desired 
+array type. Second, you must allocate the memory that will hold the array, using new, and assign it 
+to the array variable. Thus, in Java all arrays are dynamically allocated. If the concept of dynamic 
+allocation is unfamiliar to you, don’t worry. It will be described at length later in this book. Once you 
+have allocated an array, you can access a specific element in the array by specifying its index within 
+square brackets. All array indexes start at zero. For example, this statement assigns the value 28 to 
+the second element of month_days.

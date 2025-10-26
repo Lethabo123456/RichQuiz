@@ -1,0 +1,36 @@
+5.2.6 Trivial File Transfer Protocol (TFTP) Server 
+When the time comes to upgrade the software on a piece of networking equipment such as a 
+switch or router, the code is downloaded from the vendor site to your laptop or a management 
+server. Then steps are taken to transfer the code to the actual device. One of the most common 
+methods is to use the Trivial File Transfer Protocol (TFTP) as it is supported by all vendors. A TFTP 
+server is a small application that is available from a wide variety of developers as freeware for 
+Windows and Linux computers. All that is needed is to run the TFTP server on your local machine 
+and point its source directory to the location of the ﬁle to upload. Then from the network device, 
+specify the IP address of the TFTP server and the name of the ﬁle you want to upload. TFTP is 
+designed to be a simple, eﬀective, and fast method to upload code to a network device. 
+
+5.2.7 Connectivity Software 
+
+There are times when you need to make a remote connection to a machine to perform 
+troubleshooting, but you are miles away. Connectivity software is designed to allow you to make 
+a connection to the machine, see the desktop, and perform any action you could perform if you 
+were sitting in front of it. Microsoft has made what it calls Remote Desktop software available for 
+free with Windows products since Windows NT. When this software is installed (by default in later 
+versions) on both source and destination computers, a remote desktop connection can be made. 
+Commercial tools are also available that (of course) claim to have more functionality, and they 
+probably do have a few extra bells and whistles. These include LogMeIn.com, GoToMyPC, and 
+others. The advantages of these connectivity tools are obvious. With these tools, you can do 
+anything you need to on the machine if you can connect. They also allow you to see what a user 
+is doing when they encounter a problem rather than having to rely on what they tell you they are 
+doing. You can even show a user what they are doing wrong. Most of these tools allow for chat 
+sessions and for either end of the connection to take control of the machine. You can also transfer 
+ﬁles to them if required (maybe a DLL got deleted, for example). 
+ 
+For networking, it is common to access the device’s command-line interface remotely. This will 
+require you to use terminal emulation software. Today the Telnet protocol is rarely used because 
+it has no security, and all data is sent unencrypted. Secure Shell (SSH) is the preferred method of 
+accessing a remote device command line from across a network. There are many free and 
+commercial terminal emulation packages for you to use. The most common open-source 
+emulator is PuTTY, and it supports Telnet, SSH, and serial interfaces. PuTTY is widely used and 
+found in almost every networking shop. As for commercial packages, SecureCRT is popular and 
+has an extensive feature set.

@@ -1,0 +1,23 @@
+Risk Determination 
+
+Once the loss magnitude is estimated and the loss event frequency derived, it is a straightforward 
+process to derive an estimate of risk. This is done separately for primary and secondary losses, and 
+then the two are combined. The primary risk determination is illustrated in 
+Figure 3.8c (FAIR Risk Assessment Matrices (Primary Loss Event Frequence - Primary Loss Mangnitude, Primary Risk)) 
+and is expressed as: 
+
+Primary risk = f3 (Primary loss event frequency, Primary loss magnitude) 
+The individual matrix values are a matter of judgment, which may differ from one organization to 
+another. The matrix f3 takes a relatively conservative view. Thus, if the loss magnitude is rated as very 
+high, then the risk is assigned a value of very high even if the loss event frequency is only moderate. 
+Similarly, even if the loss magnitude is rated as moderate, if the loss event frequency is rated as very 
+high, the risk is assigned a value of very high. 
+The same f3 calculation is applied to secondary loss to determine the secondary risk. The two risks are 
+then combined to determine an overall risk using the matrix in Figure 3.8d (FAIR Risk Assessment Matrices 
+(Secondary Risk, Overall Risk, Primary Risk), which is expressed as: 
+
+Overall risk = f4 (Primary risk, Secondary risk) 
+Again, the individual matrix values are a matter of judgment. For example, a conservative view might 
+be that if both primary and secondary risk are at the same level, the overall risk should be raised to 
+the next level. In that case, if both risks are rated high, the overall risk is rated very high. A less 
+conservative strategy is indicated in function f4. 

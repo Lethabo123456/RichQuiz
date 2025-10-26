@@ -1,0 +1,60 @@
+3.5.1 Auto Implemented Properties 
+There are many shortcuts that can be used by developers; one introduced with C# 3.0 and 
+later is auto-implemented properties. With auto-implemented properties, you do not have to 
+include the return and set statements. You simply write get; set; as the body for the property. 
+Auto-implemented properties make property declaration more concise. They can be used 
+when no additional logic is required in the property accessors other than just returning the 
+value or sending in a new value to change the field. The additional requirement is that you do 
+not define a separate private data member to tie the property to. When you declare a 
+property as shown in the Example 4-10, the compiler creates a private, anonymous backing 
+field that can only be accessed through the property’s get and set accessors. 
+Syntax:  
+
+public string Name { get; set; } 
+public int EmployeeID { get; set; } 
+
+As illustrated in Example 4-9, with the auto-implemented property no assignment statement 
+is included with the set portion and no return is written for the get. Another shortcut recently 
+introduced with C# 6.0 is auto property initializers. An auto property initializer adds to the 
+auto-implemented concept in that it is used to set the value of read-only properties during 
+the property declaration. This is illustrated here.
+
+//Auto property with initializer 
+public int Salary 
+{get; set; } = 10000; 
+public string EmployeeGroup{get;} = "Contract"; 
+ 
+Example 3-6 Implementing classes 
+using System; 
+namespace Shapes 
+{ 
+    class Circle 
+    { 
+        private int radius { set; get; } 
+        public Circle() // default constructor 
+        { 
+            radius = 0; 
+        }public double Area() // calates the area  
+        { 
+            return Math.PI * radius * radius; 
+        } 
+      public double Circumference()// calculates the Perimeter 
+        { 
+            return 2*(Math.PI * radius ); 
+        } 
+        static void Main(string[] args) 
+//Class Implementation 
+       { Circle obj = new Circle(); //creating a circle object 
+         obj.radius = 3; // assign a value to radius 
+// Calling instance methods 
+ouble area=   obj.Area(); 
+// display results 
+Console.WriteLine("The Area is: "+ Math.Round(area)); 
+double perimeter = obj.Circumference(); 
+Console.WriteLine("The Circumference is: " + perimeter); 
+                } 
+        } 
+    } 
+The examples show how to create and implement a class. A class named circle is created and 
+instance methods Area and Circumference are defined which returns area and the 
+circumference. The class object is created to implement the class.

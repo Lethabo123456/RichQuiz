@@ -1,0 +1,13 @@
+shown that for each square 
+on a diagonal from upper left to lower right, rowPosition – columnPosition is the same.  
+  
+Now consider the diagonal from upper right to lower left as indicated by the arrow. The positions of the 
+squares on this diagonal are (0,6), (1,5), (2,4), (3,3), (4,2), (5,1), and (6,0). Here rowPosition + 
+columnPosition = 6. It can be shown that for each square on a diagonal from upper right to lower left, 
+rowPosition + columnPosition is the same.  
+  
+We can use these results to determine whether two queens are on the same diagonal or not. Suppose a 
+queen is at position (i, j), (row i and column j), and another queen is at position (k, l) , (row k and column 
+l). These queens are on the same diagonal if either i + j = k + l or i - j = k – l. The first equation implies that 
+j – l = i – k and the second equation implies that j – l = k – i. From this it follows that the two queens are 
+on the same diagonal if |j – l| = |i – k|, where |j – l| is the absolute valu

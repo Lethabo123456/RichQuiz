@@ -1,0 +1,26 @@
+Introducing Fragments 
+ 
+Fragments enable you to divide your Activities into fully encapsulated reusable components, each 
+with its own lifecycle and UI. 
+The primary advantage of Fragments is the ease with which you can create dynamic and fl exible UI 
+designs that can be adapted to suite a range of screen sizes — from small-screen smartphones to 
+tablets. 
+Each Fragment is an independent module that is tightly bound to the Activity into which it is placed. 
+Fragments can be reused within multiple activities, as well as laid out in a variety of combinations to 
+suit multipaned tablet UIs and added to, removed from, and exchanged within a running Activity to 
+help build dynamic UIs. 
+Fragments provide a way to present a consistent UI optimized for a wide variety of Android device 
+types, screen sizes, and device densities. 
+Although it is not necessary to divide your Activities (and their corresponding layouts) into 
+Fragments, doing so will drastically improve the flexibility of your UI and make it easier for you to 
+adapt your user experience for new device configurations. 
+
+Android introduces three fragment classes 
+• DialogFragment - Fragment that you can use to display a floating Dialog over the parent 
+Activity. You can customize the Dialog’s UI and control its visibility directly via the Fragment 
+API. 
+• ListFragment - A wrapper class for Fragments that feature a ListView bound to a data 
+source as the primary UI metaphor. It provides methods to set the Adapter to use and exposes 
+the event handlers for list item selection. 
+• WebViewFragment - A wrapper class that encapsulates a WebView within a Fragment. The 
+child WebView will be paused and resumed when the Fragment is paused and resumed.

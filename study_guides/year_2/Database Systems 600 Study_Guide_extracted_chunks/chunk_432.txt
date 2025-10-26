@@ -1,0 +1,17 @@
+BMS. To connect 
+
+ 
+175 
+a client application to an Oracle database, you must install and configure Oracle’s SQL*Net 
+interface on the client computer.  
+Native database connectivity interfaces are optimized for “their” DBMS, and those interfaces 
+support access to most or all the database features. However, maintaining multiple native interfaces 
+for different databases can become a burden for the program-mer. Therefore, the need for universal 
+database connectivity arises. Usually, the native database connectivity interface provided by the 
+vendor is not the only way to connect to a database; most current DBMS products support other 
+database connectivity standards, the most common being ODBC. 
+ 
+ODBC, DAO, and RDO 
+Developed in the early 1990s, Open Database Connectivity (ODBC) is Microsoft’s implementation 
+of a superset of the SQL Access Group Call Level Interface (CLI) standard for database access. 
+ODBC allows any Windows application to access relational data sources, using SQL

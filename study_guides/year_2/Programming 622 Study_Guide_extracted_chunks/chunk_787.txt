@@ -1,0 +1,17 @@
+in B; that is, A  B = {x | x  A or x  B}. (The 
+symbol ‘‘ ’’ means ‘‘union.’’) For sets A and B, the set A x B is the set of all ordered pairs of elements of A 
+and B; that is, A x B = {(a, b) | a  A, b  B}. (The symbol ‘‘x’’ means ‘‘Cartesian product.’’)  
+  
+A graph G is a pair, G = (V, E), where V is a finite nonempty set, called the set of vertices of G and E  
+ 
+V x V . That is, the elements of E are pairs of elements of V. E is called the set of edges of G. G is called 
+trivial if it has only one vertex.  
+  
+Let V(G) denote the set of vertices, and E(G) denote the set of edges of a graph G. If the elements of E are 
+ordered pairs, G is called a directed graph or digraph; otherwise, G is called an undirected graph. In an 
+undirected graph, the pairs (u, v) and (v, u) represent the same edge.  
+  
+Let G be a graph. A graph H is called a subgraph of G if V(H)  V(G) and E(H)  E(G); that is, every vertex of H 
+is a vertex of G, and every edge in H is an edge in G.  
+  
+A graph can b

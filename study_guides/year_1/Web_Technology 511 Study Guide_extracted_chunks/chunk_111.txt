@@ -1,0 +1,31 @@
+Setting table properties 
+ 
+Here’s how                        Here’s why 
+--------------------------------------------------------------------------------
+Observe the page                  The table does not have a border. You’ll add a
+                                  border to this table. 
+-----------------------------------------------------------------------------------
+Open the source code 
+-----------------------------------------------------------------------------------
+Edit the TABLE tag to read as     <table border>
+shown                             <tr>
+-----------------------------------------------------------------------------------
+Update and close the source code 
+-----------------------------------------------------------------------------------
+Refresh and observe the page      The table now has a border. The name column is
+                                  just wide enough to accommodate the text 
+                                  “Njabulo”, which is the widest entry. By default, 
+                                  columns will be as wide as the largest text they
+                                  contain. 
+-----------------------------------------------------------------------------------
+Open the source code              You’ll set the width of the table on this page. 
+-----------------------------------------------------------------------------------
+Edit the TABLE tag to read as     <table border width="504">
+shown 
+----------------------------------------------------------------------------------- 
+Update and close the source code
+-----------------------------------------------------------------------------------
+Refresh and observe the page.     The table now extends to 50% of the browser
+                                  window’s width.
+-----------------------------------------------------------------------------------
+                                  

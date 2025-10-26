@@ -1,0 +1,24 @@
+ion shows that our universe would last about 33 times as long as it already has.  
+  
+Assume that a computer can generate 1 billion (109) moves per second. Then the number of moves that 
+the computer can generate in one year is:  
+  
+(3.2 x 107) x 109 = 3.2 x 1016  
+  
+So the computer time required to generate 264 moves is: 264 
+≈ 1.6 x 1019 = 1.6 x 1016 x 103 = (3.2 x 1016) x 500  
+  
+Thus, it would take about 500 years for the computer to generate 264 moves at the rate of 1 billion moves 
+per second.  
+  
+ 
+4.2.5  Converting a Number from Decimal to Binary  
+  
+
+158  
+  
+In this example, we design a program that uses recursion to convert a nonnegative integer in decimal 
+format—that is, base 10—into the equivalent binary number—that is, base 2. First we define some terms.  
+  
+Let x be an integer. We call the remainder of x after division by 2 the rightmost bit of x. Thus, the rightmost 
+bit of 33 is 1 because 33 % 2 is 1, and the rightmost bit of 28 is 0 because 28 % 2 is 0. (Recall

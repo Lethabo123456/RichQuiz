@@ -1,0 +1,27 @@
+ally, no more data is left in the list 
+to compare with the search item. This is an unsuccessful search.  
+ 
+It now follows that, as soon as you find an element in the list that is equal to the search 
+item, you must stop the search and report success. (In this case, you usually also 
+report the location in the list where the search item was found.) Otherwise, after the 
+search item is unsuccessfully compared with every element in the list, you must stop 
+the search and report failure. 
+Suppose that the name of the array containing the list elements is list. The previous 
+discussion translates into the following algorithm for the sequential search: 
+ 
+ 
+ 
+ 
+The following function performs a sequential search on a list. To be specific, and for 
+illustration purposes, we assume that the list elements are of type int 
+ 
+ 
+
+136 | P a g e  
+ 
+ 
+ 
+If the function seqSearch returns a value greater than or equal to 0, it is a successful 
+search; otherwise, it is an unsuccessful search. 
+ 
+As y

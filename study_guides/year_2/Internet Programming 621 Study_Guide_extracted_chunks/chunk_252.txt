@@ -1,0 +1,74 @@
+a) Error 
+b) 49 
+c) 1 
+d) sum 
+ 
+Answer: c 
+  
+102. 
+What will be the output of the following PHP code? 
+<?php 
+function sum($num1, $num2) 
+{ 
+$total = $num1 + $num2; 
+echo "cos($total)";  
+} 
+sum(5,-5);     
+?> 
+a) 0 
+b) 1 
+c) 0.5 
+d) -0.5 
+  
+Answer: b 
+  
+103. 
+What will be the output of the following PHP code? 
+<?php 
+function b() 
+{ 
+echo "b is executed"; 
+} 
+function a() 
+{ 
+b(); 
+echo "a is executed"; 
+b(); 
+} 
+a(); 
+?> 
+a) b is executedb is executedb is executed 
+
+b) b is executeda is executed 
+c) a is executed 
+d) b is executeda is executedb is executed 
+  
+Answer: d 
+  
+104. 
+What will be the output of the following PHP code? 
+<?php 
+function sum($x, $y) 
+{ 
+$z = $x + $y; 
+return $z; 
+} 
+echo "5 + 10 = " . sum(7,13) . "<br>"; 
+echo "7 + 13 = " . sum(2,4) . "<br>"; 
+echo "2 + 4 = " . sum(5,10); 
+?> 
+  
+a) 5 + 10 = 15 
+2 + 4 = 6 
+7 + 13 = 20 
+b) 7 + 13 = 20 
+5 + 10 = 15 
+2 + 4 = 6 
+c) 5 + 10 = 15 
+7 + 13 = 20 
+2 + 4 = 6 
+d) 5 + 10 = 20 
+7 + 13 = 6 
+2 + 4 = 15 
+  
+Answer: d

@@ -1,0 +1,35 @@
+llowing program segment? (Assume that screen is an ostream_iterator 
+initialized to the standard output device to output elements of type int.)  
+  
+int list[5] = {2,4,6,8,10};  
+vector<int> vecList(5);  
+  
+copy(list, list + 5, vecList.begin());  
+  
+copy(vecList.begin(), vecList.end(), screen); cout 
+<< endl;  
+  
+
+80  
+  
+9. What is the output of the following program segment? (Assume that screen is an ostream_iterator 
+initialized to the standard output device to output elements of type int.)  
+  
+vector<int> vecList;  
+vector<int>::iterator vecIt;  
+  
+vecList.push_back(3); 
+vecList.push_back(5); 
+vecList.push_back(7); 
+vecIt = vecList.begin();  
+++vecIt; vecList.erase(vecIt);  
+vecList.push_back(9);  
+  
+copy(vecList.begin(), vecList.end(), screen); cout 
+<< endl;  
+  
+10. What is the output of the following program segment? (Assume that screen is an ostream_iterator 
+initialized to the standard output device to output elements of type int.)  
+  
+int list[5] = {2,4,6,8,10};  
+vec

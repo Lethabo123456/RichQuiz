@@ -1,0 +1,14 @@
+thers regarding how the tree works. Also, with 
+decision trees you can handle numerical or categorized information. Later, this chapter 
+demonstrates how to manually work through an algorithm with category values; the example 
+walk-through uses numerical data. In terms of data preparation, there's little to do. As long 
+as the data is formalized in something like comma-separated variables, then you can create a 
+working model. This also makes it easy to validate the model using various tests. With decision 
+trees you use white-box testing—meaning the internal workings can be observed but not 
+changed; you can view the steps that are being used when the tree is being modelled. 
+Decision trees perform well with reasonable amounts of computing power. If you have a large 
+set of data, then decision tree learning will handle it well. 
+ 
+4.1.2 Disadvantages of using Decision Trees 
+One of the main issues of decision trees is that they can create overly complex models, 
+depending on the data

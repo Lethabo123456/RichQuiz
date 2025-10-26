@@ -1,0 +1,33 @@
+ddir( $handle ) ) {                    if ( 
+$file != “.” && $file != “..” ) echo “<li>$file</li>”;   
+                  }   
+                  closedir( $handle );   
+        ?>   
+       </ul>   
+   </body>   
+</html>   
+   
+Figure 3.2 below shows an example result.   
+   
+   
+
+57   
+   
+Figure 3.2   
+   
+3.16 Other Directory Functions    
+Just as with files, PHP provides a range of ways to manipulate directories, including the following 
+functions:   
+• 
+rewinddir() — Moves the directory pointer back to the start of the list of entries. The 
+rewinddir() function resets PHP’s internal pointer back to the first entry in a given directory.  
+This function is the directory counterpart to the rewind() function for files. To use rewinddir(), 
+pass an open directory handle to it, as follows: rewinddir( $handle );   
+   
+• 
+chdir() — Changes the current directory. The chdir() function call changes the current 
+directory to a new directory:   
+   
+chdir( “/home/matt/myfolder” );   
+   
+chdir

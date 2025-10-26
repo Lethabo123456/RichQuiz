@@ -1,0 +1,19 @@
+performance tuning. Note the following 
+general recommendations for physical storage of databases: 
+ 
+Use I/O accelerators. This type of device uses flash solid state drives (SSDs) to store the 
+database.  
+ 
+Use RAID (Redundant Array of Independent Disks) to provide both performance improvement 
+and fault tolerance, and a balance between them. Fault tolerance means that in case of failure, 
+data can be reconstructed and retrieved.  
+ 
+Minimize disk contention. Use multiple, independent storage volumes with independent 
+spindles (rotating disks) to minimize hard disk cycles. A database should have at least the 
+following table spaces: 
+o System table space. This is used to store the data dictionary tables.  
+o User data table space. This is used to store end-user data.  
+o Index table space. This is used to store indexes.  
+o Temporary table space. This is used as a temporary storage area for merge, sort, or set 
+aggregate operations.  
+o Rollback segment table space. This is used f

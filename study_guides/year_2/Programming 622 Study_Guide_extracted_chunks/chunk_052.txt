@@ -1,0 +1,42 @@
+ic function without the linear term, we say that the function is of O(n2), called Big-O of n2.  
+  
+Let f and g be real-valued functions. Assume that f and g are nonnegative, that is, for all real numbers n, 
+f(n) >= 0 and g(n) >= 0.  
+  
+Definition: We say that f(n) is Big-O of g(n), written f(n) = O(g(n)), if there exists positive constants c and 
+n0 such that f(n) <= cg(n) for all n >= n0.  
+  
+EXAMPLE 1-3  
+  
+  
+  
+From Example 1-3, it follows that if f is a nonnegative constant function, then f is O(1).  
+  
+EXAMPLE 1-4  
+  
+
+25  
+  
+  
+  
+EXAMPLE 1-5  
+  
+  
+  
+In general, we can prove the following theorem. Here we state the theorem without proof. Theorem:  
+Let f(n) be a nonnegative real-valued function such that:  
+  
+In Example 1-6, we use the preceding theorem to establish the Big-O of certain functions.  
+  
+EXAMPLE 1-6  
+  
+In the following, f(n) is a nonnegative real-valued function.  
+  
+  
+EXAMPLE 1-7  
+  
+  
+  
+EXAMPLE 1-8   
+  
+Consider the following code, where m an

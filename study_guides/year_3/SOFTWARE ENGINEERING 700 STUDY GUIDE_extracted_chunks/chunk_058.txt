@@ -1,0 +1,35 @@
+Some of the general process models are discussed below; 
+ 
+2.2.1 The Waterfall Model  
+The first published model of the software development process was derived from engineering 
+process models used in large military systems engineering. It presents the software development 
+process as a number of stages. Because of the cascade from one phase to another, this model is 
+known as the waterfall model or software life cycle.  
+ 
+Figure 2.1 : The Waterfall Model (Sommerville,  I.  2021)   
+The waterfall model is an example of a plan-driven process. In principle at least, you plan and 
+schedule all of the process activities before starting software development. 
+The stages of the waterfall model directly reflect the fundamental software development 
+activities 
+• Requirements analysis and definition: The system’s services, constraints, and goals are 
+established by consultation with system users. They are then defined in detail and serve 
+as a system specification. 
+• System and software design: The systems design process allocates the requirements to 
+either hardware or software systems. It establishes an overall system architecture. 
+Software design involves identifying and describing the funda-mental software system 
+abstractions and their relationships. 
+• Implementation and unit testing: During this stage, the software design is real-ized as a 
+set of programs or program units. Unit testing involves verifying that each unit meets its 
+specification. 
+• Integration and system testing: The individual program units or programs are integrated 
+and tested as a complete system to ensure that the software requirements have been 
+met. After testing, the software system is delivered to the customer. 
+• Operation and maintenance: Normally, this is the longest life-cycle phase. The system is 
+installed and put into practical use. Maintenance involves correcting errors that were not 
+discovered in earlier stages of the life cycle, improving the implementation of system 
+units, and enhancing the system’s services as new requirements are discovered 
+ 
+In principle, the result of each phase in the waterfall model is one or more documents that are 
+approved (“signed off”). The following phase should not start until the previous phase has 
+finished. For hardware development, where high manufacturing costs are involved, this makes 
+sense.

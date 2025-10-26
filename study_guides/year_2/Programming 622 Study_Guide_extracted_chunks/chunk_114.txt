@@ -1,0 +1,19 @@
+clock1.setTime(0, 13, 0); if 
+(clock1.equalTime(clock2)) cout << "Clock1 time is the same as 
+clock2 time." << endl; else cout << "The two times are 
+different." << endl;  
+  
+18. Write the definition of a class that has the following properties:  
+a. The name of the class is secretType.  
+b. The class secretType has four instance variables: name of type string, age and weight of type int, and 
+height of type double.  
+c. The class secretType has the following member functions:  
+  
+print—Outputs the data stored in the instance variables with the appropriate titles 
+setName—Function to set the name setAge—Function to set the age setWeight—
+Function to set the weight setHeight—Function to set the height getName—
+Value-returning function to return the name getAge—Value-returning function to 
+return the age  
+getWeight—Value-returning function to return the weight getHeight—Value-returning 
+function to return the height  
+Default constructor—Sets name to the empty string and age, weight,

@@ -1,0 +1,26 @@
+e level. Let's calculate confidence intervals for multiple confidence levels and look 
+at how large the intervals are by looking at the difference between the two numbers. Our 
+hypothesis will be that as we make our confidence level larger, we will likely see larger 
+confidence intervals to be surer that we catch the true population parameter: 
+ 
+
+P a g e  | 109 
+ 
+for confidence in (.5, .8, .85, .9, .95, .99): 
+    confidence_interval 
+= 
+stats.t.interval(alpha=confidence, 
+df=sample_size 
+- 
+1, 
+loc=sample_mean, scale=sigma) 
+    length_of_interval = round(confidence_interval[1] - confidence_interval[0], 2)  # the length 
+of the confidence interval 
+    print(f"confidence {confidence} has an interval of size {length_of_interval}") 
+ 
+• confidence 0.5 has an interval of size 2.56 
+• confidence 0.8 has an interval of size 4.88 
+• confidence 0.85 has an interval of size 5.49 
+• confidence 0.9 has an interval of size 6.29 
+• confidence 0.95 has an interval of size 7.51 
+• confidence 0.99

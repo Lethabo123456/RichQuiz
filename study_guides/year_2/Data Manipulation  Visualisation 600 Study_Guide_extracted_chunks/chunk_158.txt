@@ -1,0 +1,39 @@
+(not in Python or any IDE) type pydoc -w dash_html_components.Div 
+This creates a file called dash_html_components.Div.html in the same directory, which can be 
+viewed in the browser. This works for any Dash component! 
+ 
+This is what help looks like in the Python console: 
+ 
+ 
+This is the same file seen in the browser: 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+6.4.6 Dash - Interactive Components 
+Interactive Components Overview 
+ 
+The first part of this tutorial covered the layout of Dash apps: 
+● 
+The layout of a Dash app describes what the app looks like. It is a hierarchical tree of 
+components. 
+ 
+● 
+The dash_html_components library provides classes for all of the HTML tags and the 
+keyword arguments describe the HTML attributes like style, className, and id. 
+● 
+The dash_core_components library generates higher-level components like controls and 
+graphs. 
+ 
+The second part of the tutorial describes how to make your Dash apps interactive. 
+Let's get started with a simple example. 
+ Connecting Com

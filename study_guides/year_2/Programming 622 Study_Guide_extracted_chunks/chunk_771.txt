@@ -1,0 +1,15 @@
+leaf.  
+a. If the leaf contains more than the minimum number of keys, delete the deleteItem from 
+the leaf. (In this case, no further action is required.)  
+b. If the leaf contains only the minimum number of keys, look at the sibling nodes that are 
+adjacent to the leaf. (Note that the sibling nodes and the leaf have the same parent node.)  
+i. If one of the sibling nodes has more than the minimum number of keys, move one 
+of the keys from that sibling node to the parent and one key from the parent to 
+the leaf, and then delete deleteItem.  
+ii. If the adjacent siblings have only the minimum number of keys, then combine one 
+of the siblings with the leaf and the median key from the parent. If this action does 
+not leave the minimum number of keys in the parent node, this process of 
+combining the nodes propogates upward, possibly as far as the root node, which 
+could result in reducing the height of the B-tree.  
+  
+Next, we illustrate how the deletion process works. Consider the B-tr

@@ -1,0 +1,23 @@
+Figure 2.5 Android virtual buttons 
+The Home button immediately moves your app to the Stopped state. This causes the onPause and 
+onStop methods to execute. It will not destroy the app unless it needs the system resources. This 
+means that you must pay attention to these events, even though you may not be anticipating this 
+behavior when your app is in use. 
+ 
+Figure 2.6 Android action bar 
+The Back button immediately goes back one action or activity. This can have several implications for 
+your code. For example, if the user is looking at an activity and presses the Back button, the visible 
+activity will be immediately moved to the Stopped state (causing the onPause and onStop methods to 
+execute). It will move the previous activity into the Running state. This will cause the onStart and 
+onResume methods to execute for that activity. If your activity has displayed a pop-up, the activity is 
+currently in the Paused state (because it is partially visible). Pressing the Back button will hide the pop- 
+up and cause the onResume method to execute, and your activity will be placed in the running state. 
+
+If the soft keyboard is displayed, your app is also in the Paused state. Pressing the Back button will 
+hide the keyboard and again put your activity in the Running state. 
+If the user presses the Menu button, your app will not do anything unless you have specifically 
+programmed it to have a menu. Menus can be useful ways to provide the user with access to 
+functionality that is not used as the normal course of events in using your app; thus you don’t want to 
+waste valuable screen real estate to provide access to that functionality. 
+Finally, the Search button also does nothing unless you code it. You can use this button to allow the 
+user to search for information within your app. 

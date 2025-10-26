@@ -1,0 +1,45 @@
+y is a dictionary 
+● 
+Properties in the style dictionary are camelCased 
+● 
+The class key is renamed as className 
+● 
+Style properties in pixel units can be supplied as just numbers without the px unit 
+ 
+Let's take a look at an example. 
+import dash_html_components as html 
+ 
+html.Div([ 
+ 
+html.Div('Example Div', style={'color': 'blue', 'fontSize': 14}), html.P('Example 
+P', className='my-class', id='my-p-element') 
+ 
+], style={'marginBottom': 50, 'marginTop': 25}) 
+ 
+That dash code will render this HTML markup: 
+ 
+ 
+<div style="margin-bottom: 50px; margin-top: 25px;"> 
+ 
+<div style="color: blue; font-size: 14px"> 
+ 
+Example Div 
+</div> 
+ 
+<p class="my-class", id="my-p-element"> 
+Example P 
+ 
+</p> 
+ 
+</div> 
+ 
+To provide an example of how dash_html_components can be laid out on a page, create a file called 
+HTMLComponents.py and add the following code: 
+import dash 
+import dash_html_components as html 
+ 
+app = dash.Dash() 
+ 
+app.layout = html.Div([ 
+'This is the outermost Div', 
+html.

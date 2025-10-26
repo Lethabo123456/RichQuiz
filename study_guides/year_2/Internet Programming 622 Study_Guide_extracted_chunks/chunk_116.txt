@@ -1,0 +1,21 @@
+/html>   
+   
+Save this script as hit_counter.php and give it a try. Figure 3.1 shows a sample run.   
+   
+   
+Figure 3.1   
+   
+3.10 Testing For The End Of A File   
+The feof() function serves a single, simple purpose: it returns true when the file pointer has reached 
+the end of the file (or if an error occurs) and returns false otherwise. It takes just one argument — 
+the file handle to test. Notice that feof() only returns true once the script has tried to read one or 
+more characters past the last character in the file:   
+   
+// hello_world.txt contains the characters “Hello, world!”   
+$handle = fopen( “hello_world.txt”, “r” );   
+$hello = fread( $handle, 13 ); echo $hello . “ < br / >  
+”; // Displays “Hello, world!” echo feof( $handle ) . “  
+< br / > ”; // Displays “” (false)   
+$five_more_chars = fread( $handle, 5 );  echo $five_more_chars . “ < br / > ”; // Displays “” (or 
+possibly a newline) echo feof( $handle ) . “ < br / > ”; // Displays “1” (true) fclose( $handle ); 
+f

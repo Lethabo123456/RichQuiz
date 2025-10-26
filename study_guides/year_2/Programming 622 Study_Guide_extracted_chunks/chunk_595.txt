@@ -1,0 +1,25 @@
+gorithm:  
+  
+template <class elemType>  
+void arrayListType<elemType>::shellSort()  
+{  
+int inc;  
+  
+for (inc = 1; inc < (length - 1) / 9; inc = 3 * inc + 1);  
+  
+do  
+{ for (int begin = 0; begin < inc; begin++) 
+intervalInsertionSort(begin, inc);  
+inc = inc / 3;  
+}  
+while (inc > 0);  
+} //end shellSort  
+  
+In the function shellSort, we use the function intervalInsertionSort, which is a modified version of insertion 
+sort for array-based lists, discussed earlier in this chapter. In the intervalInsertionSort, the sublist starts at 
+the variable begin, and the increment between successive elements is given by the variable inc instead of 
+1. We leave the details of the function intervalInsertionSort as an exercise for you.  
+  
+The analysis of the Shellsort is difficult to obtain. In fact, to date, good estimates of the number of 
+comparisons and item movements have been obtained only under special conditions depending on the 
+increment sequence. Empirical studies suggest that for

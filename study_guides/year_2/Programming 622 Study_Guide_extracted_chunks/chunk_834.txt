@@ -1,0 +1,49 @@
+ble to design Prim’s algorithm 
+so that it is of the order O(n2); Programming Exercise 5 at the end of this chapter asks you to do this.  
+  
+The definition of the function printTreeAndWeight is as follows:  
+  
+void msTreeType::printTreeAndWeight()  
+{  
+double treeWeight = 0;  
+cout << "Source Vertex: " << source << endl; cout 
+<< "Edges Weight" << endl;  
+  
+for (int j = 0; j < gSize; j++)  
+{  
+if (edges[j] != j)  
+{  
+treeWeight = treeWeight + edgeWeights[j];  
+cout << "("<<edges[j] << ", " << j << ") " << edgeWeights[j] << endl;  
+}  
+}  
+  
+cout << endl;  
+cout << "Minimum spanning Tree Weight: " << treeWeight << endl;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end printTreeAndWeight  
+  
+The definitions of the constructor and the destructor are as follows:  
+
+411  
+  
+  
+msTreeType::msTreeType(int size):graphType(size)  
+{ 
+weights = new double*[size];  
+  
+for (int i = 0; i < size; i++) weights[i] = 
+new double[size];  
+  
+edges = new int[size];  
+  
+edgeWeights = new double[size];  
+}

@@ -1,0 +1,27 @@
+2.1.3 Calling Base Class Methods 
+In Example 2-1, the DrawWindow ( ) method of ListBox hides and replaces the base class 
+method. When you call DrawWindow( ) on an object of type ListBox, it is ListBox. Draw-
+Window ( ) that will be invoked, not Window. DrawWindow ( ). Note, however, that ListBox. 
+DrawWindow ( ) can invoke the DrawWindow ( ) method of its base class with the code: 
+base.DrawWindow( ); // invoke the base method 
+(The keyword base identifies the base class for the current object.) 
+2.1.4 Controlling Access 
+The visibility of a class and its members can be restricted through the use of access modifiers, 
+such as public, private, protected, internal, and protected internal. 
+As you've seen, public allows a member to be accessed by the member methods of other 
+classes, while private indicates that the member is visible only to member methods of its 
+own class. The protected keyword extends visibility to methods of derived classes, while in-
+ternal extends visibility to methods of any class in the same assembly.1 
+The internal protected keyword pair allows access to members of the same assembly (in-
+ternal) or derived classes (protected). You can think of this designation as internal or 
+protected. 
+Classes as well as their members can be designated with any of these accessibility levels. If a 
+class member has a different access designation than the class, the more restricted access 
+applies. Thus, if you define a class, myClass, as follows: 
+public class myClass 
+{ 
+// ... 
+protected int myValue; 
+} 
+the accessibility for myValue is protected even though the class itself is public. A public class 
+is one that is visible to any other class that wishes to interact with it.

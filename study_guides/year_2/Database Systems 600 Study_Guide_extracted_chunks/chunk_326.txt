@@ -1,0 +1,18 @@
+esign and moves to the logical and physical design stages. At each stage, more details 
+about the data model design are determined and documented. You could think of the conceptual 
+design as the overall data as seen by the end user, the logical design as the data as seen by the 
+DBMS, and the physical design as the data as seen by the operating system’s storage management 
+devices.  
+
+ 
+136 
+ 
+It is important to note that the overwhelming majority of database designs and implementations are 
+based on the relational model, and therefore use the relational model constructs and techniques. 
+When you finish the design activities, you will have a complete database design ready to be 
+implemented. 
+ 
+Implementation and Loading 
+The output of the database design phase is a series of instructions detailing the cre- ation of tables, 
+attributes, domains, views, indexes, security constraints, and storage and performance guidelines. 
+In this phase, you actually implement all these design specifi

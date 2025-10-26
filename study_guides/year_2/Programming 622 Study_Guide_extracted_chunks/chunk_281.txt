@@ -1,0 +1,53 @@
+, show the 
+output. If it is invalid, explain why. a.   
+s = A;  
+
+141  
+  
+p = B; s-
+>info = B; p 
+= p->link;  
+cout << s->info << " " << p->info << endl;  
+  
+ 
+b.   
+p = A;  
+p = p->link; s = 
+p; p->link = 
+NULL; s = s-
+>link;  
+cout << p->info << " " << s->info << endl;  
+  
+8. Show what is produced by the following C++ code. Assume the node is in the usual info-link form with 
+the info of type int. (list and ptr are pointers of type nodeType.)  
+  
+a. 
+list = new nodeType; 
+list->info = 10; ptr = 
+new nodeType; ptr-
+>info = 13; ptr->link 
+= NULL; list->link = 
+ptr;  
+ptr = new nodeType; 
+ptr->info = 18; ptr-
+>link = list->link; list-
+>link = ptr;  
+cout << list->info << " " << ptr->info << " "; ptr 
+= ptr->link;  
+cout << ptr->info << endl;  
+  
+  
+b. 
+list = new nodeType; 
+list->info = 20; ptr = 
+new nodeType; ptr-
+>info = 28; ptr->link 
+= NULL; list->link = 
+ptr;  
+ptr = new nodeType; 
+ptr->info = 30; ptr-
+>link = list;  
+list = ptr;  
+ptr = new nodeType; 
+ptr->info = 42; ptr-
+>

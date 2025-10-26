@@ -1,0 +1,31 @@
+VoIP Security Measures 
+A number of security measures can be taken to protect VoIP traffic, including the following: 
+ Encryption: It is a good practice to encrypt all voice connections. 
+ VPNs: VPNs create segregated broadcast domains within the IP network infrastructure. By 
+creating VPNs for voice, organizations provide an additional layer of protection that can 
+potentially insulate voice communications from DoS attacks and other risks. 
+ Port administration: SIP applications tend to open multiple ports on network devices, creating 
+additional exposure to hackers. Therefore, IT staff need to implement firewalls and other 
+security administration tools that discover and close unnecessarily opened ports—and 
+rigorously authenticate devices attempting to use those ports. 
+ Real-time antivirus scanner: An organization should scan the VoIP server continuously. 
+ Application-layer firewall: This protects assets associated with the VoIP server, such as a 
+database devoted to logging calls or even recording the calls. 
+ Device authentication: Any user device that attempts to use the VoIP service should be 
+authenticated. 
+ User authentication: Individual users should be authenticated to limit specific users or groups 
+of users to specific VoIP services. 
+
+Telephony and Conferencing 
+The security objective with respect to telephony and conferencing is to prevent and detect 
+unauthorized use or misuse of telephony and conferencing facilities. This is achieved with a 
+combination of physical and logical controls. The SGP recommends that there should be policies that 
+cover the following: 
+
+ Use of the organization’s telephones 
+ Moves and changes of telephone users 
+ Registration and authentication of users with access to voicemail 
+ Protection of voicemail systems against unauthorized access (for example, by use of password 
+protection) 
+ The use and setup of web-based conferencing facilities (including teleconferencing, 
+videoconferencing, and online web-based collaboration) 

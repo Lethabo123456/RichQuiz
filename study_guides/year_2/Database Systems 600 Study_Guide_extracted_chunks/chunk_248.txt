@@ -1,0 +1,28 @@
+mon attribute(s).  
+• 
+If there are no common attributes, returns the relational product of the two tables.  
+The following example performs a natural join of the CUSTOMER and INVOICE tables and 
+returns only selected attributes:  
+SELECT CUS_CODE, CUS_LNAME, INV_NUMBER, INV_DATE  
+FROM CUSTOMER NATURAL JOIN INVOICE;  
+You are not limited to two tables when performing a natural join.  
+JOIN USING Syntax 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 250-256. 
+
+ 
+99 
+A second way to express a join is through the USING keyword. The query returns only the rows 
+with matching values in the column indicated in the USING clause—and that column must exist in 
+both tables. The syntax is:  
+SELECT  column-list  
+FROM  
+table1  
+JOIN  
+table2  USING  
+(common-column)  
+To see the JOIN USING query in action, perform a join of the INVOICE and LINE tables by writing 
+the following:  
+SELECT  P_CODE, P_DESCRIPT,

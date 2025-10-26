@@ -1,0 +1,35 @@
+e a month number. 
+  
+Get the day of the month 
+To get the day of the month, rather oddly you need getDate. This does not get you 
+today's date but a number from 1 to 31, which is the day of the month. 
+var day_of_month = the_date.getDate(); 
+document.write( day_of_month + "<BR>" ); 
+  
+Get the weekday 
+To get the day of the week you use getDay. A number from 0 to 6 will be returned, 
+with 0 being Sunday and 6 being Saturday: 
+var weekday = the_date.getDay(); 
+document.write( weekday + "<BR>"); 
+ 
+Again, you can set up a function to return a name from the weekday number: 
+ 
+
+ 
+101 
+ 
+SIX | JAVASCRIPT OBJECTS 
+ 
+Figure 6.6 
+To call the function you can then do this: 
+document.write( day_of_week(weekday) + "<BR>");  
+ 
+Get the hours, the minutes, and the seconds 
+To get the various part of the time, you can use getHours, getMinutes, and 
+getSeconds: 
+ 
+ 
+Figure 6.7 
+You can then join then together through concatenation: 
+document.write( hours +":" + minutes + ":" + seconds + 
+"<BR>");

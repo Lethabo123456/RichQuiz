@@ -1,0 +1,43 @@
+Identifying Information Types 
+ 
+The first step of the security categorization process according to SP 800-60 is to identify the 
+information types to be classified. The result of this step should be an information taxonomy or catalog 
+of information types. The level of detail, or granularity, must be decided by those involved in security 
+governance. The determination may be based on factors such as the size of the organization, its range 
+of activities, and the perceived overall level of risk. 
+
+The identification process must cover all forms of information, including: 
+ Electronic, consisting of data that can be stored, transmitted, and processed 
+ Electronic communication, such as email and text messages 
+ Spoken communication, such as telephone, Skype, and teleconferencing 
+ Multimedia information, such as video presentations and surveillance camera recordings 
+ Physical information, such as paper documents 
+
+SP 800-60 suggests three general organizational areas from which individual information types are 
+defined:
+
+ Mission-based information: This area encompasses types of information that relate 
+specifically to the mission of the organization. For example, an organization in the 
+healthcare field has information on what healthcare delivery services it provides, fee 
+schedules, insurance arrangements, and policies for providing financial help to clients. A 
+technology company has information about its research and development plans and 
+goals, outside consulting arrangements, and long-range plans for new technology. 
+ Services delivery support functions: These are types of information that support the 
+operation of the organization and relate to specific services or products offered by the 
+organization. For example, in the area of risk management and mitigation, information 
+types include contingency planning, continuity of operations, and service recovery. 
+ Back office support functions: These support activities enable the organization to operate 
+effectively. SP 800-60 identifies five main groups of information types in this area: 
+ Administrative management 
+ Financial management 
+ Human resource management 
+ Information management 
+ Technology management 
+As an example, in the information and technology management group, SP 800-60 lists system and 
+network monitoring as an information type, with the following suggested classification: 
+{(confidentiality, Moderate), (integrity, Moderate), (availability, Low)} 
+Whatever classification scheme an organization uses, it needs to have clear definitions of the various 
+classification levels so that all those involved in classifying information types are working with the 
+same understanding. A useful tool in this context is the Business Impact Reference Table (BIRT; refer 
+to Figure 3.11 in Chapter, “Information Risk Assessment”), which provides consistent definitions to 
+different types of impacts and severity levels. 

@@ -1,0 +1,26 @@
+Switch Benefits 
+ Isolates traffic, relieving congestion 
+ Separates collision domains, reducing collisions 
+ Segments, restarting distance and repeater rules 
+
+Figure 1- 15: benefits of Switch Costs 
+ Price: currently 3 to 5 times the price of a hub 
+ Packet processing time is longer than in a hub 
+ Monitoring the network is more complicated 
+
+1.15.3 General Benefits of Network Switching 
+Switches replace hubs in networking designs, and they are more expensive. So why is the desktop 
+switching market doubling every year with huge numbers sold? The price of switches is declining 
+precipitously, while hubs are a mature technology with small price declines. This means that there 
+is far less difference between switch costs and hub costs than there used to be, and the gap is 
+narrowing. Since switches are self-learning, they are as easy to install as a hub. Just plug them in and go. And 
+they operate on the same hardware layer as a hub, so there are no protocol issues. 
+There are two reasons for switches being included in network designs. First, a switch breaks one 
+network into many small networks so the distance and repeater limitations are restarted. Second, 
+this same segmentation isolates traffic and reduces collisions relieving network congestion. It is 
+very easy to identify the need for distance and repeater extension, and to understand this benefit 
+of network switching. But the second benefit, relieving network congestion, is hard to identify and 
+harder to understand the degree by which switches will help performance. Since all switches add 
+small latency delays to packet processing, deploying switches unnecessarily can actually slow 
+down network performance. So the next section pertains to the factors affecting the impact of 
+switching to congested networks. 

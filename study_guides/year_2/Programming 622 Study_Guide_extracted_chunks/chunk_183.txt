@@ -1,0 +1,24 @@
+list, let us see how to build a linked list. First, we 
+consider a linked list in general. If the data we read is unsorted, the linked list will be unsorted. Such a list 
+can be built in two ways: forward and backward. In the forward manner, a new node is always inserted at 
+the end of the linked list. In the backward manner, a new node is always inserted at the beginning of the 
+list. We will consider both cases.  
+  
+3.1.3.1 Building a Linked List Forward  
+  
+Suppose that the nodes are in the usual info-link form and info is of type int. Let us assume that we process 
+the following data:  
+  
+2 15 8 24 34  
+  
+
+91  
+  
+We need three pointers to build the list: one to point to the first node in the list, which cannot be moved, 
+one to point to the last node in the list, and one to create the new node. Consider the following variable 
+declaration:  
+  
+nodeType *first, *last, *newNode; int 
+num;  
+  
+Suppose that first points to the first node in the list. Initially, the list is empt

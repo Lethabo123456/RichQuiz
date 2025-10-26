@@ -1,0 +1,25 @@
+2.4.3 Binary to Octal 
+
+An easy way to convert from binary to octal is to group binary digits into sets of three, 
+starting with the least significant (rightmost) digits. 
+
+Then, look up each group in a table:
+ 
+Binary: 000 01 010 011 100 101 110 111 
+Octal:  0   1  2   3   4   5   6   7 
+ 
+ 
+2.4.4 Binary to Hexadecimal 
+
+An equally easy way to convert from binary to hexadecimal is to group binary digits into sets of four, 
+starting with the least significant (rightmost) digits. 
+
+Binary: 11100101 = 1110 0101 
+Then, look up each group in a table: 
+
+Binary:      0000 0001 0010 0011 0100 0101 0110 0111 
+Hexadecimal: 0    1    2    3    4    5    6    7 
+
+Binary:      1000 1001 1010 1011 1100 1101 1110 1111 
+Hexadecimal: 8    9    A    B    C    D    E    F 
+ 

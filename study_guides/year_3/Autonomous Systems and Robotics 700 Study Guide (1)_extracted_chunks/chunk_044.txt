@@ -1,0 +1,16 @@
+2.2.1 Key Aspects of Sensor Simulation 
+
+Sensor Modelling: Replicating sensor characteristics, such as: 
+• Range and Resolution: E.g., LIDAR's maximum range (500 meters) and angular resolution 
+(1°) 
+• Noise and Errors: Adding Gaussian noise or dropout to mimic real sensor imperfections 
+• Field of View (FOV): Simulating limited FOV (e.g., 180° for 2D LIDAR) 
+• Environmental Interactions: Modelling reflections, occlusions, or multipath effects (e.g., 
+LIDAR rays bouncing off reflective surfaces) 
+
+Environment Modelling: Creating virtual scenes with obstacles, terrain, or objects (e.g., walls, 
+vehicles, pedestrians) using geometric shapes or 3D models. 
+Data Generation: Producing synthetic outputs like point clouds (LIDAR), images (cameras), or 
+depth maps (RGB-D sensors). 
+Integration with Simulation Frameworks: Using tools like Gazebo, CARLA, or Unity to simulate 
+sensors in realistic virtual worlds.

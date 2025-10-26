@@ -1,0 +1,14 @@
+standard. The following sections 
+examine how web-to-database middleware enables end users to interact with databases over the 
+web. 
+ 
+Web-to-Database Middleware: Server-Side Extensions 
+In general, the web server is the main hub through which all Internet services are accessed. For 
+example, when an end user uses a web browser to dynamically query a database, the client browser 
+requests a webpage from the web server. When the web server receives the page request, it looks 
+for the page on the hard disk; when it finds the page, the server sends it back to the client. 
+Note that the web server generates the webpage contents before it sends the page to the client web 
+browser. Ideally, the web server must include the database query result on the page before it sends 
+that page back to the client. Unfortunately, neither the web browser nor the web server knows how 
+to connect to and read data from the database. Therefore, to support this type of request, the web 
+server’s capability mu

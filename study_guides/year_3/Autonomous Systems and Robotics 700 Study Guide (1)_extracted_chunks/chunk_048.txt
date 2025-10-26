@@ -1,0 +1,28 @@
+2.3.1 How Does LiDAR Work and How Does It Provide Solutions? 
+
+Essentially, LiDAR is a ranging device which measures the distance to a target. The distance is 
+measured by sending a short laser pulse and recording the time lapse between the outgoing light 
+pulse and the detection of the reflected (back-scattered) light pulse.  
+Figure 11: LiDAR Operating Principle - Pulse Transit Time Distance Calculation 
+ 
+A LiDAR system may use a scan mirror, multiple laser beams, or other means to "scan" the object 
+space. With the ability to provide accurate measurements of distances, LiDAR can be used to solve 
+many different problems. 
+
+In remote sensing, LiDAR systems are used to measure scatter, absorption, or re-emission from 
+particles or molecules in the atmosphere. For these purposes, the systems may have specific 
+requirements on the wavelength of the laser beams.  The concentration of a specific molecular 
+species in the atmosphere, e.g. methane and the aerosol loading, can be measured. Rain droplets 
+in the atmosphere can be measured to estimate the distance of a storm and the rain fall rate. 
+Other LiDAR systems provide profiles of three-dimensional surfaces in the object space. In these 
+systems, the probing laser beams are not tied to specific spectral features. Instead, the 
+wavelength of the laser beams may be chosen to ensure eye safety or to avoid atmospheric 
+spectral features. The probing beam encounters and is reflected by a "hard target" back to the 
+LiDAR receiver. 
+
+LiDAR can also be used to determine the velocity of a target. This can be done either through the 
+Doppler technique or by measuring the distance to a target in rapid succession. For example, 
+atmospheric wind velocity and the velocity of an automobile can be measured by a LiDAR system. 
+In addition, LiDAR systems can be used to create a three-dimensional model of a dynamic scene, 
+such as what may be encountered by an autonomous driving vehicle. This can be done in various 
+ways, usually using a scanning technique.

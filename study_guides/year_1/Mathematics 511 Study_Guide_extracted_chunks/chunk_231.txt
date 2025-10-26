@@ -1,0 +1,21 @@
+Worked Example 
+Find the union of the graphs G1 and G2 shown below: 
+ 
+Solution: 
+The vertex set of the union G1 ∪ G2 is the union of the two vertex sets, 
+namely, {a, b, c, d, e, f }. The edge set of the union is the union of the two 
+edge sets. The union is displayed below. 
+ 
+4.3 Representing Graphs and Graph Isomorphism 
+Introduction 
+There are many useful ways to represent graphs. As we will see throughout 
+this section, in working with a graph it is helpful to be able to choose its most 
+convenient representation. In this section we will show how to represent 
+graphs in several different ways. 
+
+Sometimes, two graphs have exactly the same form, in the sense that there 
+is a one-to-one correspondence between their vertex sets that preserves 
+edges. In such a case, we say that the two graphs are isomorphic. 
+Determining whether two graphs are isomorphic is an important problem of 
+graph theory that we will study in this section.
+

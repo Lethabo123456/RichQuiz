@@ -1,0 +1,37 @@
+pty, the program 
+// terminates; otherwise, the first element of the // 
+queue is returned.  
+  
+Type back() const;  
+//Function to return the last element of the queue. //Precondition: 
+The queue exists and is not empty.  
+//Postcondition: If the queue is empty, the program // 
+terminates; otherwise, the last element of the queue // 
+is returned.  
+  
+void addQueue(const Type& queueElement);  
+//Function to add queueElement to the queue.  
+//Precondition: The queue exists and is not full.  
+//Postcondition: The queue is changed and queueElement is // 
+added to the queue.  
+  
+void deleteQueue();  
+//Function to remove the first element of the queue.  
+//Precondition: The queue exists and is not empty.  
+//Postcondition: The queue is changed and the first element // 
+is removed from the queue.  
+
+224  
+  
+  
+queueType(int queueSize = 100);  
+//Constructor  
+  
+queueType(const queueType<Type>& otherQueue);  
+//Copy constructor  
+  
+~queueType();  
+//Destructor  
+  
+private:  
+int maxQue

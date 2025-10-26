@@ -1,0 +1,17 @@
+ic operations on a linked list as an abstract class.Using 
+the principal of inheritance, we derive two classes— unorderedLinkedList and orderedLinkedList—from 
+the class linkedListType.  
+  
+Objects of the class unorderedLinkedList would arrange list elements in no particular order, that is, these 
+lists may not be sorted. On the other hand, objects of the class orderedLinkedList would arrange elements 
+
+95  
+  
+according to some comparison criteria, usually less than or equal to. That is, these lists will be in ascending 
+order. Moreover, after inserting an element into or removing an element from an ordered list, the 
+resulting list will be ordered.  
+  
+If a linked list is unordered, we can insert a new item at either the end or the beginning. Furthermore, you 
+can build such a list in either a forward manner or a backward manner. The function buildListForward 
+inserts the new item at the end, whereas the function buildListBackward inserts the new item at the 
+beginning. To accommod

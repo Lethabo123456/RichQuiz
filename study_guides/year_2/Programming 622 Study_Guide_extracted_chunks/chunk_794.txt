@@ -1,0 +1,15 @@
+specific application or a particular graph later 
+in this chapter.  
+  
+How a graph is represented in computer memory depends on the specific application. For illustration 
+purposes, we use the adjacency list (linked list) representation of graphs. Therefore, for each vertex v the 
+vertices adjacent to v (in a directed graph, also called the immediate successors) are stored in the linked 
+list associated with v.  
+  
+To manage the data in a linked list, we use the class unorderedLinkedList, discussed in Chapter 3.  
+  
+The labeling of the vertices of a graph depends on a specific application. If you are dealing with the graph 
+of cities, you could label the vertices by the names of the cities. However, to write algorithms to 
+manipulate a graph as well as to simplify the algorithm, there must be some ordering to the vertices. That 
+is, we must specify the first vertex, the second vertex, and so on. Therefore, for simplicity, throughout this 
+chapter we assume that the n vertices of the

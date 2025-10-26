@@ -1,0 +1,48 @@
+After the changes to the initGetLocationButton have been made, you need to add a method to stop 
+the sensors if the Activity’s life-cycle state changes. To do this, you need to override the Activity’s 
+onPause method. Create a new method using the code in Listing 7.4 to do this. 
+The code is straightforward. The LocationManager object is sent the 
+message removeUpdates to end listening to the gpsListener. This 
+code is within a try and catch block, because it is possible that the activity 
+could pause before the user presses the Get Location button. In that case, 
+neither the locationManager nor the gpsListener   variables   would   have 
+values, and the code would crash the app. You don’t want this to happen. The first line of code calls 
+the overridden method to execute the standard onPause routine for the activity. The 
+locationManager.removeUpdates line may be underlined in red for the same reason noted previously. 
+We will now address that issue.
+
+The New Android Permissions Model 
+
+The old Android permissions model (prior to SDK 23) required the user to approve all permissions 
+requested by an app prior to installation. It was an all or none prospect. If the user didn’t approve all, 
+the app was not installed. Likewise, if the user approved the permissions, the app had access to  
+everything on the device it requested. The new model allows the user to grant permission when the 
+app needs it. This way, the user can use the features of the app they want and still restrict what the 
+app can do with their device in areas the user is not comfortable. 
+The new permissions model distinguishes between what are called “normal” versus “dangerous” 
+permissions. Normal permissions no longer need to be declared. They are granted automatically. For 
+example, if the app needs to access the internet, this is termed “normal,” and the developer does not 
+have to request the permission on devices running SDK 23 or later. However, accessing device location 
+and device storage are termed “dangerous,” and the developer has to code the app to request the 
+required permission when they want to access these. Once the user grants permission during app 
+execution, that permission is granted until the user specifically rejects it by accessing the phone’s 
+settings. 
+Modifying the code to work with the new model requires some setup. The first step is to add another 
+dependency. To do this, complete the following steps: 
+
+1. Choose File > Project Structure. Note: If it is grayed out, select app or MyContactList in the 
+Project window and try again. 
+2. The Project Structure window will open (Figure 7.2). In the panel to the far left, select 
+Dependencies. In the Modules panel, select app (or MyContactList). 
+3. Click the plus (+) sign on the top left of the Declared Dependencies panel. Select Library 
+dependency from the pop-up window. Another window will display. Enter design into the search 
+bar for Step 1 and then click Search. The search may take some time. When it returns results, 
+pick the library named com.android.support:design. Make sure implementation is selected in 
+Step 2 (Figure 7.3). 
+4. Click OK to close the Project Structure window. Android Studio will show a message that Gradle 
+Sync started at the bottom of Android Studio. This integrates the code into your project. When 
+private method in ContactMapActivity.java with this code: 
+
+private void startLocationUpdates() { 
+} 
+

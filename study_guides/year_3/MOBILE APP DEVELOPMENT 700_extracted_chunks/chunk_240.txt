@@ -1,0 +1,31 @@
+After creating the Contact class, you can now code the insert and update methods in the 
+ContactDataSource class. Enter the code in Listing 5.6 to create these methods. You should enter 
+the code after the close() method. 
+ 
+The two methods are very similar. The primary difference is that the updateContact method uses the 
+Contact ID to overwrite values in the Contact table, whereas the insertContact method just inserts 
+contact data and the database inserts the ID because the _id field was declared as an autoincrement 
+field. 
+
+▪ Line 2—A Boolean variable is declared and assigned the value false. Both the update and insert 
+methods return a Boolean to tell the calling code if the operation succeeded. The value is initially set 
+to false and then changed to true only if the operation succeeds. 
+▪ Line 4—The ContentValues object is used to store a set of key/value pairs that are used to assign 
+contact data to the correct field in the table. 
+▪ Lines 6–14—The values for the table are retrieved from the contact object, associated with the 
+correct field, and inserted into the ContentValues object. Note that the date is stored as millis, because 
+SQLite doesn’t support storing data as dates directly. 
+▪ Line 16—The database’s insert method is called and passed to the name of the table and values 
+to insert. The method returns the number of records (rows) successfully inserted. The value is 
+compared to zero. If it is greater than zero, then the operation succeeded and the return value is set 
+to true. 
+▪ Lines 18–20—If the method throws an exception, the return value is already set to false, so we 
+don’t have to do anything. 
+▪ Line 27—The update procedure needs the contact’s ID to correctly update the table. This value is 
+retrieved from the contact object and assigned to the variable rowId. 
+▪ Line 41—The database’s update method is called to place the changes in the database. Just like 
+the insert method, if the operation is a success, the method returns the number of records affected. 
+If this number is greater than zero, the operation was successful. 
+The SQLite database is ready for use. An object to create and upgrade the database has been 
+implemented, and another object to open, close, and access the database has also been created. You 
+are now ready to save contact data!

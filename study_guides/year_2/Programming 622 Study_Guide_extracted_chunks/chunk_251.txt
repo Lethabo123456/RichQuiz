@@ -1,0 +1,24 @@
+ils are left as an exercise for you.  
+  
+ 
+3.5  
+Doubly Linked Lists  
+  
+A doubly linked list is a linked list in which every node has a next pointer and a back pointer. In other 
+words, every node contains the address of the next node (except the last node), and every node contains 
+the address of the previous node (except the first node).(See Figure 3-27.)  
+  
+  
+FIGURE 3-27 Doubly linked list  
+  
+A doubly linked list can be traversed in either direction. That is, we can traverse the list starting at the first 
+node or, if a pointer to the last node is given, we can traverse the list starting at the last node. As before, 
+the typical operations on a doubly linked list are as follows: Initialize the list, destroy the list, determine 
+whether the list is empty, search the list for a given item, insert an item, delete an item, and so on. The 
+following class defines a doubly linked list as an ADT and specifies the basic operations on a doubly linked 
+list:  
+  
+
+125  
+  
+//*********

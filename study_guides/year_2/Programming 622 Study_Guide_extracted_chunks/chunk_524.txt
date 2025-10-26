@@ -1,0 +1,24 @@
+n ordered list are the same operations as those 
+on an unordered list. Therefore, to define an ordered list as an abstract data type (ADT), by using the 
+mechanism of inheritance, we can derive the class to implement the ordered lists from the class 
+arrayListType discussed in the previous section. Depending on whether a specific application of a list can 
+be stored in either an array or a linked list, we define two classes.  
+  
+The following class, orderedArrayListType, defines an ordered list stored in an array as an ADT:  
+  
+template <class elemType>  
+class orderedArrayListType: public arrayListType<elemType>  
+{ public: orderedArrayListType(int size = 100);  
+//constructor  
+...  
+//We will add the necessary members as needed. private:  
+//We will add the necessary members as needed.  
+}  
+  
+Chapter 3 defined the following class to implement ordered linked lists:  
+  
+template <class elemType>  
+class orderedLinkedListType: public linkedListType<elemType>  
+{  
+public:  
+...

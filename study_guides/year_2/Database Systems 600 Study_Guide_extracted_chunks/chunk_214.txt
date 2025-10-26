@@ -1,0 +1,12 @@
+ironment, several other attributes would have to be added. These attributes would be 
+useful in data processing to generate information that be used in decision making. The same 
+principle must be applied to all other tables in your design.  
+Identifying New Relationships. In carefully studying the business rules and past reports, new 
+relationships may be identified. In identifying these new relationships, the designer must then take 
+care to place the right attributes in the right tables by using normalization principles.  
+Refining Primary Keys as Required for Data Granularity. Granularity refers to the level of 
+detail represented by the values stored in a table’s row. Data stored at its lowest level of granularity 
+is said to be atomic data, as explained earlier.  
+Maintaining Historical Accuracy. The addition of certain attributes to a table may be crucial to 
+maintaining the historical accuracy of the table’s data. For example, writing the charge per hour on 
+the ASSIGNMENT tabl

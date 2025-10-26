@@ -1,0 +1,23 @@
+error message. One way to avoid this pitfall is 
+
+164 | P a g e  
+ 
+to set these pointers to nullptr after the delete operation. Also note that for the operator 
+delete to work properly, the pointer must point to a valid memory space 
+ 
+Operations on Pointer Variables 
+The operations that are allowed on pointer variables are the assignment and relational 
+operations and some limited arithmetic operations. The value of one pointer variable 
+can be assigned to another pointer variable of the same type. For example, suppose 
+that we have the following statements:  
+int *p, *q; 
+Integer values can be added and subtracted from a pointer variable. The value of one 
+pointer variable can be subtracted from another pointer variable. The arithmetic 
+operations that are allowed differ from the arithmetic operations on numbers. First, let 
+us use the following statements to explain the increment and decrement operations 
+on pointer variables: 
+ 
+int *p;  
+double *q;  
+char *chPtr;  
+studentType *s

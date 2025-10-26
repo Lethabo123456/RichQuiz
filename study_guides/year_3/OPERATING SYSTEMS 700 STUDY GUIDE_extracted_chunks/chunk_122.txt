@@ -1,0 +1,24 @@
+The primary advantage of this configuration is its simplicity. However, it has three serious 
+disadvantages: 
+➢ Its reliability is no higher than it is for a single-processor system because if the master 
+processor fails, none of the slave processors can take over, and the entire system fails. 
+➢ It can lead to poor use of resources because if a slave processor should become free while the 
+master processor is busy, the slave must wait until the master becomes free and can assign 
+more work to it. 
+➢ It increases the number of interrupts because all slave processors must interrupt the master 
+processor every time they need operating system intervention, such as for I/O requests. This 
+creates long queues at the master processor level when there are many processors and many 
+interrupts. 
+ 
+2. Loosely Coupled Configuration 
+The loosely coupled configuration features several complete computer systems, each with its 
+own memory, I/O devices, CPU, and operating system. Each processor controls its own 
+resources, its own files, access to memory, and its own I/O devices, and this means that each 
+processor maintains its own commands and I/O management tables. Each processor can 
+communicate and cooperate with the others. 
+ 
+Figure 3.8 
+ 
+This system is not prone to catastrophic system failures because even when a single processor 
+fails, the others can continue to work independently. However, it can be difficult to detect when 
+a processor has failed.

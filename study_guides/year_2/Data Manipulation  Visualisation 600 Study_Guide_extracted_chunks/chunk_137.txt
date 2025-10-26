@@ -1,0 +1,25 @@
+ctive: Create a histogram that plots the 'length' field from the Abalone dataset 
+(../data/abalone.csv). Set the range from 0 to 1, with a bin size of 0.02 
+Ex7-Distplot.py 
+Objective: Using the iris dataset, develop a Distplot that compares the petal lengths of each class. 
+File: '../data/iris.csv' 
+Fields: 'sepal_length','sepal_width','petal_length','petal_width','class' 
+Classes: 'Iris-setosa','Iris-versicolor','Iris-virginica' 
+Ex8-Heatmap.py 
+Objective: Using the "flights" dataset available from Python's Seaborn module (see 
+https://seaborn.pydata.org/generated/seaborn.heatmap.html) create a heatmap with the following 
+parameters: 
+x-axis="year" 
+y-axis="month" 
+z-axis(color)="passengers" 
+ 
+ 
+    6.4 Dash Basics - Layout 
+    6.4.1 Introduction to Dash Basics 
+ 
+If you haven’t already done so, follow the installation instructions below. 
+As a quick review, the Dash installation steps are: 
+pip install dash==0.21.0 
+# The core dash backend 
+pip install dash-renderer==0.11.3 
+# The

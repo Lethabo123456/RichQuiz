@@ -1,0 +1,42 @@
+Feature Importance in Trees 
+Rather than attempting to interpret the entire tree, which can be overwhelming, we can use valuable 
+metrics to summarize the tree’s behavior. One of the most widely used metrics is feature 
+importance, which indicates how significant each feature is in the tree’s decision-making process. 
+This value ranges from 0 to 1 for each feature, with 0 meaning the feature is not used at all and 1 
+indicating the feature perfectly predicts the target. The sum of all feature importances will always 
+equal 1. 
+ 
+In this case, we can see that the feature used in the first split, "worst radius," is by far the most 
+important feature. This aligns with our previous observation during the tree analysis, where the first 
+level effectively separates the two classes. 
+
+However, if a feature has a low feature_importance, it doesn’t necessarily mean the feature is 
+insignificant. It simply suggests that the tree didn't prioritize that feature, possibly because another 
+feature provides similar information. 
+Unlike coefficients in linear models, feature importances are always positive and do not indicate 
+which class a feature predicts. The feature importances reveal that "worst radius" is important, but 
+they do not specify whether a higher radius indicates a benign or malignant sample. In fact, the 
+relationship between features and classes may not be so straightforward, as shown in the following 
+example. 
+ 
+Although our focus here has been on decision trees for classification, the same principles apply to 
+decision trees used for regression, as seen in the DecisionTreeRegressor. The process of using and 
+analyzing regression trees is very similar to that of classification trees. However, one key difference 
+with tree-based models for regression is important to note: the DecisionTreeRegressor, like other 
+tree-based regression models, cannot extrapolate. This means it is unable to make predictions 
+beyond the range of the training data. 
+
+To illustrate this, let’s examine a dataset containing historical computer memory (RAM) prices. The 
+figure below shows this dataset, with the date on the x-axis and the price per megabyte of RAM for 
+each year on the y-axis. 
+  
+Note the logarithmic scale on the y-axis. When plotted on a logarithmic scale, the relationship 
+appears fairly linear, making it relatively easy to predict, though with some fluctuations. 
+We will use historical data up to the year 2000 to forecast future RAM prices, treating the date as 
+the sole feature. Two simple models will be compared: a DecisionTreeRegressor and a 
+LinearRegression. The prices are rescaled using a logarithmic transformation to make the 
+relationship more linear. While this transformation doesn't affect the DecisionTreeRegressor, it has 
+a significant impact on the LinearRegression model. After training both models and making 
+predictions, we apply the exponential function to reverse the logarithmic transformation. We will 
+visualize predictions on the entire dataset, but for a proper evaluation, only the test dataset should 
+be considered.

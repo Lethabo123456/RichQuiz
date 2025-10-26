@@ -1,0 +1,18 @@
+fier to 
+establish the locations of the objects and see if there's a neat dividing line. This line is called 
+a hyperplane—in place; there should be a group of objects clearly on one side of the line and 
+another group of objects just as clearly on the opposite side. (That's the theory, anyway. 
+Assume that all your ducks are in a row…well, two separate groups. As shown in Figure 5.4, 
+visually it looks straightforward, but you need to compute it mathematically. Every object that 
+you classify is called a point, and every point has a set of features. 
+ 
+ 
+                                                           Figure 5.4: SVM hyperplane – Linear classification 
+ 
+
+P a g e  | 57 
+ 
+For each point in the graph, you know there is an x-axis value and there is a y-axis value. The 
+classification point is calculated as follows: 
+                                                       𝑠𝑖𝑔𝑛 (𝑎𝑥+ 𝑏𝑦+ 𝑐) 
+The values for a, b, and c are the values that define the line; these values are ones tha

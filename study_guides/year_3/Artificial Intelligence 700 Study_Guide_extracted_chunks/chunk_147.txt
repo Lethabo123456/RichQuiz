@@ -1,0 +1,24 @@
+Using inference Rules to produce predicate Calculus Expression : 
+The semantic of predicate calculus provide a basis for a formal theory of logical 
+inference. The ability to infer new correct expansions from a set of true assertions is 
+an important feature of predicate calculus. 
+ 
+S : 6X human(X) → mortal (X) 
+An inference rule is essentially a mechanical means of producing new predicate 
+calculus sentences from other sentences. That is, inference rules produce new 
+sentences based on the syntactic from a given logical assertions. 
+Modus Ponens: 
+Is a sound inference rule. If we are given an expression of the form P→Q and 
+another expression of the form P such that both are true under an interpretation, 
+Modus Ponens allows to infer that Q is true for that interpretation.
+
+P→Q   true 
+P     true 
+Q     true 
+
+Modus Tolens : 
+If P→Q is know to be true and Q is known to be false we can infer ~P. 
+ 
+P→Q   True 
+Q     False 
+~P 

@@ -1,0 +1,29 @@
+FOUR | HEADINGS AND PARAGRAPHS 
+  
+Learning Outcomes 
+ 
+1. Create headings and paragraphs on a Web page 
+2. Format the text on a Web page 
+3. Insert and format horizontal rulers on a Web page 
+ 
+INTRODUCTION 
+Headings and paragraphs have long been used to improve the reading ease and 
+appearance of all kinds of documents, such as newspapers, books, and reports. 
+Headings inform the reader what the document is about. You use headings in Web 
+pages to describe the contents of a page or a section of a page. 
+You use paragraphs to group information on a page that has a large amount of text. 
+Using paragraphs increases the readability of the page and makes the information 
+easily accessible. 
+ 
+4.1 HEADINGS 
+You use the heading tag to mark headings in a Web page. You can create up to six 
+levels of headings; Heading 1 (H1) is the first level and Heading 6 (H6) is the last level. 
+Each heading level appears in a different size. Text marked as Heading 1 appears bigger 
+in size as compared to text marked as Heading 6. The syntax for marking text as 
+Heading 1 is: 
+
+<h_level>some text</h_level>
+
+The H1 tag is a container with <H1> as its starting tag and </H1> as it’s ending tag. 
+You can mark text as any of the heading levels, such as Heading 2 (H2) or Heading 3 
+(H3), in a similar manner. 

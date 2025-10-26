@@ -1,0 +1,40 @@
+4.2 How do we obtain and sample data? 
+If statistics is about taking samples of populations, it must be very important to know how we 
+obtain these samples, and you'd be correct. Let's focus on just a few of the many ways of 
+obtaining and sampling data.  
+Obtaining data 
+There are two main ways of collecting data for our analysis: observational and 
+experimentation. Both these ways have their pros and cons, of course. They each produce 
+different types of behavior and, therefore, warrant different types of analysis. 
+
+Observational 
+We might obtain data through observational means, which consists of measuring specific 
+characteristics but not attempting to modify the subjects being studied. For example, you 
+have a tracking software on your website that observes users' behavior on the website, such 
+as length of time spent on certain pages and the rate of clicking on ads, all the while not 
+affecting the user's experience, then that would be an observational study. 
+This is one of the most common ways to get data because it's just plain easy. All you must do 
+is observe and collect data. Observational studies are also limited in the types of data you 
+may collect. This is because the observer (you) is not in control of the environment. You may 
+only watch and collect natural behavior. If you are looking to induce a certain type of 
+behavior, an observational study would not be useful. 
+ 
+Experimental 
+An experiment consists of a treatment and the observation of its effect on the subjects. 
+Subjects in an experiment are called experimental units. This is usually how most scientific 
+labs collect data. They will put people into two or more groups (usually just two) and call them 
+the control and the experimental group. The control group is exposed to a certain 
+environment and then observed. 
+
+The experimental group is then exposed to a different environment and then observed. The 
+experimenter then aggregates data from both the groups and decides about which 
+environment was more favorable (favorable is a quality that the experimenter gets to decide). 
+In a marketing example, consider that we expose half of our users to a certain landing page 
+with certain images and a certain style (website A), and we measure Whether they sign up for 
+the service. Then, we expose the other half to a different landing page, different images, and 
+different styles (website B) and again Measure if they sign up. We can then decide which of 
+the two sites performed better and should be used to going further. This, specifically, is called 
+an A/B test. Let's see an example in Python! Let's suppose we run the preceding test and 
+obtain the following results as a list of lists: 
+
+results = [ ['A', 1], ['B', 1], ['A', 0], ['A', 0] …] 

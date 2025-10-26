@@ -1,0 +1,27 @@
+Evaluating clustering without ground truth Although we have just shown one way to evaluate clustering 
+algorithms, in practice, there is a big problem with using measures like ARI. When applying clustering 
+algo- rithms, there is usually no ground truth to which to compare the results. If we knew the right 
+clustering of the data, we could use this information to build a supervised model like a classifier. 
+Therefore, using metrics like ARI and NMI usually only helps in developing algorithms, not in assessing 
+success in an application. There are scoring metrics for clustering that don’t require ground truth, like 
+the sil- houette coefficient. However, these often don’t work well in practice. The silhouette score 
+computes the compactness of a cluster, where higher is better, with a perfect score of 1. While compact 
+clusters are good, compactness doesn’t allow for complex shapes. Here is an example comparing the 
+outcome of k-means, agglomerative clustering, and DBSCAN on the two-moons dataset using the 
+silhouette score: 
+ 
+As observed, k-means achieves the highest silhouette score, even though we may prefer the results 
+produced by DBSCAN. A more effective approach for evaluating clusters is to use robustness-based 
+clustering metrics. These metrics involve running an algorithm after adding noise to the data or using 
+different parameter settings and comparing the results. The idea is that if many algorithm configurations 
+and variations in the data produce the same outcome, the result is likely reliable. Unfortunately, this 
+approach is not available in scikit-learn as of this writing. 
+Even with a very robust clustering or a high silhouette score, we still cannot determine if the clustering 
+has any semantic meaning or if it reflects an aspect of the data we care about. Returning to the face 
+image example, we might want to identify groups of similar faces, such as distinguishing between men 
+and women, young and old, or people with beards versus those without. Suppose we cluster the data 
+into two groups, and all algorithms agree on which points should be grouped together. However, we still 
+cannot be certain that the clusters correspond to the concepts we are interested in. The clusters could 
+have been formed based on factors like side views versus front views, photos taken at night versus during 
+the day, or pictures captured with different types of phones (iPhones versus Androids). The only way to 
+determine whether the clustering aligns with our interests is through manual analysis of the clusters. 

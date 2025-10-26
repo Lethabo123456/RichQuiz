@@ -1,0 +1,14 @@
+1.2.2 Process management
+ 
+The Processor Manager decides how to allocate the Central Processing Unit (CPU), an important 
+function of the Processor Manager is to keep track of the status of each job, process, thread, and 
+so on. A process is a program’s “instance of execution.” The Processor Manager is required to 
+monitor the computer’s CPU to see if it’s busy executing a process or sitting idle as it waits for 
+some other command to finish execution. Generally, systems are more efficient when their CPUs 
+are kept busy. The Processor Manager handles each process’s transition, from one state of 
+execution to another, as it moves from the starting queue, through the running state, and, finally, 
+to the finish line (where it then tends to the next process). Therefore, this manager can be 
+compared to a traffic controller. When the process is finished, or when the maximum amount of 
+computation time has expired, the Processor Manager reclaims the CPU so it can allocate it to 
+the next waiting process. If the computer has multiple CPUs, as with a multicore system, the 
+Process Manager’s responsibilities are greatly complicated.

@@ -1,0 +1,24 @@
+1.1.1 Access Modifiers 
+An access modifier determines which class methods -- including methods of other classes --can 
+see and use a member variable or method within a class. Table 2-1 summarizes the C# access 
+modifiers. 
+
+Example 1-1. Simple Time class 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace Values 
+{ 
+    class Time 
+    { 
+        // public methods 
+        public void DisplayCurrentTime() 
+        { 
+            Console.WriteLine("stub for DisplayCurrentTime"); 
+            Console.ReadLine(); 
+        } 
+         
+    } 

@@ -1,0 +1,32 @@
+Review of Enterprise Security Risk Management [HIRT15] suggests the following classification 
+examples: 
+
+ Low business impact: Public information, high-level information 
+ Medium business impact: Network designs, employee lists, purchase order information 
+ High business impact: Financial data, personally identifiable information (PII), Social Security 
+numbers, medical record information 
+
+personally identifiable information (PII) 
+
+Information used to distinguish or trace an individual’s identity, such as name, Social Security number, 
+or biometric records, either alone or when combined with other information that is linked or linkable 
+to a specific individual, such as date and place of birth, mother’s maiden name, and so on. 
+
+Review of Enterprise Security Risk Management [HIRT15] also suggests the following exposure 
+examples: 
+
+ Low asset exposure: Minor or no loss 
+ Medium asset exposure: Limited or moderate loss 
+ High asset exposure: Severe or complete loss
+
+Finally, risk is determined as a function of impact and the likelihood of an adverse event that causes 
+the impact. Thus, these matrices, coupled with an informed estimate of low, medium, and high for the 
+various factors, provide a reasonable means of assessing risk. 
+
+It should be kept in mind, however, that results of such a coarse-grained analysis must be subject to 
+judgment. For example, in Figure 3.6d, a low-likelihood, high-impact breach and a high-likelihood, low-
+impact breach are both rated as medium risk. Which should be given priority for scarce security 
+resources? On average, each type of breach may be expected to yield the same amount of annual loss. 
+Is it more important to deal with the former breach—because although rare, if it does occur, it could 
+be catastrophic for the organization—or deal with the latter type—which could produce a steady 
+stream of losses. That is for management to decide.

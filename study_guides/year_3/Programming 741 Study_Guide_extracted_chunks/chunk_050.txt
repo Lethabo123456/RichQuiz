@@ -1,0 +1,16 @@
+1.5 Strings
+ 
+A string object holds a string of characters. You declare a string variable using the string 
+keyword much as you would create an instance of any object: 
+string myString; 
+A string literal is created by placing double quotes around a string of letters: 
+
+"Hello World" 
+It is common to initialize a string variable with a string literal: 
+string myString = "Hello World"; 
+ 
+Unconditional Branching Statements 
+An unconditional branch is created in one of two ways. The first way is by invoking a method. 
+When the compiler encounters the name of a method, it stops execution in the current 
+method and branches to the newly "called" method. When that method returns a value, 
+execution picks up in the original method on the line just below the method call. 

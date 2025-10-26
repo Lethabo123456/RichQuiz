@@ -1,0 +1,23 @@
+d recovery procedures are critical in all database installations. The 
+DBA must also ensure that data can be fully recovered in case of data loss or loss of database 
+integrity.  
+The management of database security, integrity, backup, and recovery is so critical that many DBA 
+departments have created a position called the database security officer (DSO). The DSO’s sole 
+job is to ensure database security and integrity. In large organizations, the DSO’s activities are often 
+classified as disaster management.  
+Backup and recovery measures must include at least the following:  
+ 
+Periodic data and application backups.  
+ 
+Proper backup identification.  
+ 
+Convenient and safe backup storage 
+ 
+Physical protection of both hardware and software.  
+ 
+Personal access control to the software of a database installation.  
+ 
+Insurance coverage for the data in the database.  
+ 
+Data recovery and contingency plans must be thoroughly tested and evaluated, and they 
+must be practiced frequ

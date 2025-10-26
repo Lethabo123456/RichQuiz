@@ -1,0 +1,28 @@
+n walks you through the normalization process used to minimize 
+redundancies and eliminate data anomalies. 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six page 200-203 
+
+ 
+80 
+3.2  The Normalization Process 
+ 
+In this section, you learn how to use normalization to produce a set of normalized relations (tables) 
+that will be used to generate the required information. The objective of normalization is to ensure 
+tables that have the following characteristics:  
+• 
+Each relation (table) represents a single subject.  
+• 
+Each row/column intersection contains only one value and not a group of values.  
+• 
+No data item will be unnecessarily stored in more than one table.  
+• 
+All nonprime attributes in a relation (table) are dependent on the primary key. 
+• 
+Each relation (table) has no insertion, update, or deletion anomalies, which ensures the 
+integrity and consistency of the data.  
+To accomplish these obj

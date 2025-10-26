@@ -1,0 +1,21 @@
+2.5 Introduction to OpenCV 
+In this section, we’ll explore how to handle various image processing tasks using the Python 
+library OpenCV. OpenCV is an open-source computer vision and machine learning software library 
+that provides a common infrastructure for computer vision applications. Its extensive set of 
+features makes it a popular choice for image processing. We’ll cover basic operations such as 
+image transformations and filtering, go into feature detection, and even touch on more advanced 
+topics like face recognition. 
+With Python installed, the next step is to set up a virtual environment. This is good practice 
+because it helps manage dependencies and keep projects isolated and reproducible. You can 
+create a virtual environment using the following commands in your terminal: 
+ 
+2.5.1 Basic Image Operations 
+When beginning with image processing in OpenCV, understanding how to handle basic operations 
+such as reading, displaying, and saving images is crucial. These foundational skills are the stepping 
+stones to more complex image manipulation and analysis techniques. 
+
+2.5.5.1 Reading an Image 
+To read an image from a file, OpenCV provides the cv2.imread() function. The path to the image 
+file is passed as a parameter. It's important to note that cv2.imread() returns an image in BGR 
+(Blue, Green, Red) format, which is different from the more common RGB format. This distinction 
+is vital when working with image data directly.

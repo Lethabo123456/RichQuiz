@@ -1,0 +1,21 @@
+2.3.1 Combinations of Gates 
+Combinational circuits can be constructed using a combination of inverters, 
+OR gates, and AND gates. When combinations of circuits are formed, some 
+gates may share inputs. This is shown in one of two ways in depictions of 
+circuits. One method is to use branchings that indicate all the gates that use 
+a given input. The other method is to indicate this input separately for each 
+gate. Figure 2.3 illustrates the two ways of showing gates with the same 
+input values. Note also that output from a gate may be used as input by one 
+or more other elements, as shown in Figure 2.3. Both drawings in Figure 2.3 
+depict the circuit that produces the output 𝑥𝑦 + 𝑥̅𝑦. 
+
+Figure 2.3: Two Ways to Draw the Same Circuit. 
+
+Worked Example 
+Construct circuits that produce the following outputs:  
+a. (𝑥 +  𝑦)𝑥̅ 
+b. 𝑥̅ (𝑦 + 𝑧̅)
+̅̅̅̅̅̅̅̅̅̅̅ 
+c. (𝑥 +  𝑦 +  𝑧)(𝑥 ̅𝑦̅ 𝑧̅). 
+Solution: 
+Circuits that produce these outputs are shown below:

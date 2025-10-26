@@ -1,0 +1,35 @@
+2.5 Boxing and Unboxing Types 
+Boxing and unboxing are the processes that enable value types (e.g., integers) to be treated as 
+reference types (objects). The value is "boxed" inside an Object, and subsequently "unboxed" 
+back to a value type. It is this process that allowed us to call the ToString ( ) method on the integer 
+in Example 2-4. 
+
+2.5.1 Boxing Is Implicit 
+Boxing is an implicit conversion of a value type to the type Object. Boxing a value allocates an 
+instance of Object and copies the value into the new object instance, as shown in Figure 2-4. 
+Figure 2-4. Boxing reference types 
+ 
+Boxing is implicit when you provide a value type where a reference is expected and the value is 
+implicitly boxed. For example, if you assign a primitive type such as an integer to a variable of type 
+Obj ect (which is legal because int derives from Obj ect), the value is boxed, as shown here: 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+    class Boxing 
+    { 
+        public static void Main() 
+        { 
+            int i = 122; 
+            Console.WriteLine("The object value = {0} ", i); 
+        } 
+    } 
+} 
+
+Console . WriteLine ( ) expects an object, not an integer. To accommodate the method, the 
+integer type is automatically boxed by the CLR, and ToString ( ) is called on the resulting object. 
+This feature allows you to create methods that take an object as a parameter; no matter what 
+is passed in (reference or value type) the method will work.

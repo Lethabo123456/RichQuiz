@@ -1,0 +1,33 @@
+Insertion at the end of a nonempty list  
+Case 4:   
+Insertion somewhere in a nonempty list  
+  
+Both cases 1 and 2 require us to change the value of the pointer first. Cases 3 and 4 are similar. After 
+inserting an item, count is incremented by 1. Next, we show case 4.  
+  
+Consider the doubly linked list shown in Figure 3-28.  
+  
+  
+FIGURE 3-28 Doubly linked list before inserting 20  
+  
+Suppose that 20 is to be inserted in the list. After inserting 20, the resulting list is as shown in Figure 3- 
+29.  
+  
+  
+FIGURE 3-29 Doubly linked list after inserting 20  
+  
+From Figure 3-29, it follows that the next pointer of node 15, the back pointer of node 24, and both the 
+next and back pointers of node 20 need to be adjusted.  
+  
+
+131  
+  
+The definition of the function insert is as follows:  
+  
+template <class Type>  
+void doublyLinkedList<Type>::insert(const Type& insertItem)  
+{  
+nodeType<Type> *current;    
+  
+//pointer to traverse the list  
+nodeType<Type> *trailCurrent;

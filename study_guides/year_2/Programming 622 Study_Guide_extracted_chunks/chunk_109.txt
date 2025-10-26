@@ -1,0 +1,30 @@
+= " << z << endl;  
+}  
+  
+Find the exact number of operations executed by the function funcExercise6.  
+  
+7. Consider the following function:  
+  
+int funcExercise7(int list[], int size)  
+{ int sum = 0;  
+for (int index = 0; index < size; index++) sum 
+= sum + list[index];  
+return sum;  
+}  
+  
+a. Find the number of operations executed by the function funcExercise7 if the value of size is 10.  
+b. Find the number of operations executed by the function funcExercise7 if the value of size is n.  
+c. What is the order of the function funcExercise7?  
+  
+8. Consider the following function prototype:  
+ int funcExercise8(int x);  
+
+49  
+  
+  
+The function funcExercise8 returns the value as follows: If 0 <= x <= 50, it returns 2x; if –50 <= x < 0, it 
+returns x2; otherwise it returns –999.What are the reasonable boundary values for the function 
+funcExercise8?  
+  
+9. Write a function that uses a loop to find the sum of the squares of all integers between 1 and n. What 
+is the order of y

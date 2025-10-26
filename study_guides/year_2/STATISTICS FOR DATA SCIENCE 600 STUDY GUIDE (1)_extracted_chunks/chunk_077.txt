@@ -1,0 +1,36 @@
+Application in Data Science 
+• Sets are used to represent a collection of items or characteristics. 
+• Example: Predicting customer preferences based on previous shopping habits. 
+user1 = {"Target", "Banana Republic", "Old Navy"} 
+user2 = {"Banana Republic", "Gap", "Kohl's"} 
+Jaccard Measure 
+• A method to quantify similarity between two sets. 
+• Defined as the ratio of the magnitude of the intersection to the magnitude of the 
+union of the sets. 
+• Example: Calculating similarity between user1 and user2. 
+def jaccard(user1, user2):  
+ 
+return len(user1 & user2) / float(len(user1 | user2))  
+ 
+# Jaccard similarity for user1 and user2  
+ 
+jaccard(user1, user2) # Output: 0.2 or 1/5  
+  
+Linear Algebra: Matrix Multiplication and Its Applications 
+Introduction to Linear Algebra Linear algebra is a branch of mathematics focusing on matrices 
+and vectors. It plays a critical role in various applications, such as in machine learning, 
+engineering, and data science. 
+
+Matrix Multiplication: The Basics 
+• Non-Commutative Operation: Unlike scalar numbers, the order of multiplication in 
+matrices is crucial. The product of matrix A and matrix B (AB) generally differs from 
+the product of BA. 
+• Dimension Matching: To multiply two matrices, the number of columns in the first 
+matrix must equal the number of rows in the second. For instance, a matrix of 
+dimensions 3x2 can be multiplied with a 2x2 matrix. 
+How to Multiply Matrices 
+• The result of matrix multiplication is a new matrix whose elements are derived from 
+dot products of rows and columns from the original matrices. 
+• The resulting matrix's dimensions will be a combination of the outer dimensions of 
+the multiplied matrices. For example, multiplying a 3x2 matrix with a 2x2 matrix yields 
+a 3x2 matrix.

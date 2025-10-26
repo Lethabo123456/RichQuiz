@@ -1,0 +1,63 @@
+4.3 Writing Data 
+ 
+The process for writing data to a random access file is very similar; a byte array must be created. The 
+easiest way to do this is to first build the character array you wish to write to the file. Next, use the En-
+coder object to convert it to a byte array, very much as you used the Decoder object. Last,call the 
+Write() method to send the array to the file. 
+  
+ 
+Decoder d = Encoding.UTF8.GetDecoder();
+d.GetChars(byData, 0, byData.Length, charData, 
+0); 
+            Console.WriteLine(charData); 
+            Console.ReadKey();
+
+using System;
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.IO; 
+ 
+ 
+namespace ConsoleApplication1 
+{ 
+    class Program 
+    { 
+        static void Main(string[] args) 
+        { 
+            byte[] byData; 
+            char[] charData; 
+            try 
+            { 
+         FileStream aFile = new FileStream("Temp.txt", FileMode.Create); 
+                charData = "My pink half of the drainpipe.".ToCharArray(); 
+                byData = new byte[charData.Length]; 
+                Encoder e = Encoding.UTF8.GetEncoder(); 
+                e.GetBytes(charData, 0, charData.Length, byData, 0, true); 
+                // Move file pointer to beginning of file. 
+                aFile.Seek(0, SeekOrigin.Begin); 
+                aFile.Write(byData, 0, byData.Length); 
+            } 
+            catch (IOException ex) 
+            { 
+                Console.WriteLine("An IO exception has been thrown!"); 
+                Console.WriteLine(ex.ToString()); 
+                Console.ReadKey(); 
+                return; 
+            } 
+ 
+        } 
+    } 
+} 
+
+ 
+This application opens a file in its own directory and writes a simple string to it. In structure, this exam-
+ple is very similar to the previous example, except you use Write() instead of Read(), and Encoder in-
+stead of Decoder. 
+
+The following line creates a character array by using the ToCharArray() static method of the String class. 
+Because everything in C# is an object, the text "My pink half of the drainpipe." is actually a string object 
+(albeit a slightly odd one), so these static methods can be called even on a string of characters: 
+ 
+CharData = "My pink half of the drainpipe.".ToCharArray(); 

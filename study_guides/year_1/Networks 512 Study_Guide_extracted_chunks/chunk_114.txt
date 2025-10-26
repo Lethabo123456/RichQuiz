@@ -1,0 +1,26 @@
+Easy to install, most switches are self-learning. They determine the Ethernet addresses in use on 
+each segment, building a table as packets are passed through the switch. This “plug and play” 
+element makes switches an attractive alternative to hubs. 
+Switches can connect different network types (such as Ethernet and Fast Ethernet) or networks of 
+the same type. Many switches today offer high-speed links, like Fast Ethernet, which can be used 
+to link the switches together or to give added bandwidth to important servers that get a lot of 
+traffic. A network composed of a number of switches linked together via these fast uplinks is 
+called a “collapsed backbone” network. 
+Dedicating ports on switches to individual nodes is another way to speed access for critical 
+computers. Servers and power users can take advantage of a full segment for one node, so some 
+networks connect high traffic nodes to a dedicated switch port. 
+Full duplex is another method to increase bandwidth to dedicated workstations or servers. To use 
+full duplex, both network interface cards used in the server or workstation and the switch must 
+support full duplex operation. Full duplex doubles the potential bandwidth on that link. 
+
+1.15.2 Network Congestion 
+ 
+Figure 1- 13: Network Congestion 
+As more users are added to a shared network or as applications requiring more data are added, 
+performance deteriorates. This is because all users on a shared network are competitors for the 
+Ethernet bus. A moderately loaded 10 Mbps Ethernet network is able to sustain utilization of 35 
+percent and throughput in the neighborhood of 2.5 Mbps after accounting for packet overhead, 
+inter-packet gaps and collisions. A moderately loaded Fast Ethernet or Gigabit Ethernet shares 25 
+Mbps or 250 Mbps of real data in the same circumstances. With shared Ethernet and Fast 
+Ethernet, the likelihood of collisions increases as more nodes and/or more traffic is added to the 
+shared collision domain. 

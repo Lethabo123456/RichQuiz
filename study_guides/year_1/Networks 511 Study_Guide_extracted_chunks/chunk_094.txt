@@ -1,0 +1,29 @@
+o Example: Ethernet 
+ Broadband transmission 
+o Multiple transmissions share a single media 
+o Transmission sharing the same media rely on multiplexing to manage multiple 
+signals 
+
+o Example: Cable TV and cable Internet 
+
+2.2.5 Bit Rates vs Baud Rate 
+ 
+Both are commonly expressed as bits transmitted per second, called bit rate.  A Baud rate was used 
+in 1970 and 1980s measuring the speed of telegraph transmissions and named after a French 
+Engineer Jean-Maurice-Emile-Baudot by bps. 
+
+ Throughput  
+o Amount of data transmitted during given time period 
+o Also called payload rate or effective data rate 
+o Expressed as bits transmitted per second  
+
+ Bandwidth (strict definition) 
+o Difference between highest and lowest frequencies medium can transmit 
+o Range of frequencies 
+
+Figure 25: Throughput and bandwidth measure 
+
+So one Baud is one electronic state change per second, 0.2 volts to 3 volts or from binary 0 to 1. 
+However, since a single state change can involve more than a single bit of data, the bps unit of 
+measurement has replacement has substituted it as a more accurate meaning of how much data 
+you’re transmitting or receiving.  

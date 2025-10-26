@@ -1,0 +1,29 @@
+. “ < br / > ”; // Displays 5 
+echo strlen( “goodbye” ) . “ < br / > ”; // Displays 7  
+  
+strlen() often comes in useful if you want to loop through all the characters in a string, or if you want 
+to validate a string to make sure it is the correct length. For example, the following code makes sure 
+that the string variable $year is 4 characters long:  
+ if ( strlen( $year ) != 4 ) {  
+echo “The year needs to contain 4 characters. Please try again.”;  
+} 
+else 
+{  
+
+47  
+}  
+// Process the year  
+}  
+  
+Another useful related function is str_word_count() , which returns the number of words in a string.  
+For example:  
+  
+echo str_word_count( “Hello, world!” ); // Displays 2  
+  
+4.5 Accessing Characters Within A String  
+You might be wondering how you can access the individual characters of a string. PHP makes 
+this easy for you. To access a character at a particular position, or index , within a string, use:  
+  
+$character = $string[index];  
+  
+In other words, you place the index

@@ -1,0 +1,34 @@
+command-line tool and then 
+open a shell prompt and type [on Windows]:   
+   
+mysql -u root -p   
+   
+Press Enter. You will be prompted for the [root] password which you must correctly enter and press 
+Enter again. You should see the prompt appear:   
+   
+mysql >   
+   
+To create a new database, all you have to do is use the CREATE DATABASE command. Type the 
+following to create a new database called mydatabase :   
+   
+CREATE DATABASE mydatabase;   
+   
+
+66   
+   
+Press Enter, and MySQL creates your new database. You can see a list of all the databases in the 
+system — including your new database — by typing the command SHOW DATABASES :   
+   
+mysql > SHOW DATABASES;   
+   
++--------------------+   
+| Database           |   
++--------------------+   
+| information_schema |   
+| mydatabase                |   
+| mysql                           |   
++--------------------+   
+   
+3 rows in set (0.00 sec)   
+   
+Do no t forget to type a semicolon at the end of a command or statement befor

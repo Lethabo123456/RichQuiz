@@ -1,0 +1,53 @@
+ing PHP code ? 
+<?php 
+function A1($x) 
+{ 
+switch($x) 
+{ 
+case 1:  
+//this statement is the same as if($x == 1) 
+echo 'Case 1 was executed.'; 
+break; 
+case 2:  
+//this statement is the same as if($x == 2) 
+
+echo 'Case 2 was executed.'; 
+break; 
+case 3:  
+//this statement is the same as if($x == 3) 
+echo 'Case 3 was executed.'; 
+break; 
+case 4:  
+//this statement is the same as if($x == 4) 
+echo 'Case 4 was executed.'; 
+break; 
+default:  
+             //this statement is the same as if $x does not equal the other conditions 
+             echo 'Default was executed.'; 
+             break; 
+  
+         } 
+     } 
+     A1(9); 
+ ?> 
+a) Case 1 was executed. 
+b) Case 2 was executed. 
+c) Default was executed. 
+d) Case 4 was executed. 
+  
+Answer: d 
+  
+122. 
+2. What will be the output of the following PHP code ? 
+<?php 
+function uppercase($string) 
+{ 
+echo ucwords($string); 
+} 
+$wow = "uppercase"; 
+$wow("Time to live king size"); 
+?> 
+a) TIME TO LIVE KING SIZE 
+b) Time to live king size 
+
+c) up

@@ -1,0 +1,44 @@
+The final step in populating the contact screen is to code MainActivity to get the id passed to it and 
+call the initContact method to display the contact. Scroll to the onCreate method and delete the 
+currentContact = new Contact() line. Before the setForEditing(false) line, add the code in Listing 6.11. 
+This code corresponds to the code in onClick in ContactListActivity that put the selected contact ID as 
+an extra into the bundle. Here we check the intent for extras. If one is found, the code gets the contact 
+ID, retrieves the contact from the database, and displays the data in the layout. If there is no extra, it 
+assigns a new contact object to currentContact, effectively setting the currentContact ID to –1. This 
+takes care of coding for the click of the Add Contact button in the ContactListActivity (see the “Coding 
+the New Contact Button” section that follows). The Add Contact button does not pass an extra to the 
+MainActivity, so the activity is ready to add a new contact’s data. 
+Run your app. When you tap a name in the contact list, the MainActivity should open with all the 
+contact’s data displayed. Congratulations! You have successfully learned how to obtain data from an 
+item selected in a list and pass that data to another activity. 
+The ContactListActivity is almost complete. There are only four tasks remaining: 
+ 
+ 
+1. Code the Toolbar with the Delete switch and New widgets. 
+2. Modify the list to sort the data according to user preferences. 
+3. Modify the app to open the list activity as the first activity. 
+4. Modify the onCreate method of list activity to check if there are any contacts saved. If there are 
+no contacts, it will open the MainActivity instead of the list. 
+First, add the toolbar and widgets to the activity_contact_list.xml. The code to implement the widgets 
+is addressed later in this section. The two widgets are located at the top of the layout in a toolbar, just 
+like in the MainActivity. Complete the following steps to create the toolbar in the layout: 
+1. Drag a ConstraintLayout from the Layouts folder of the Palette to the Component Tree such that 
+it is indented below the root ConstraintLayout. Next, drag a switch from the Buttons folder to 
+the new ConstraintLayout in the Component Tree. Finally, drag a button to below the switch. 
+Your Component Tree should look like Figure 6.5. The Design view will look a little weird. We’ll 
+fix that next.
+2. In the Component Tree, click on the ConstrainLayout you just added, and in the Attributes panel, 
+set the top, left, and right constraints with a margin of 0. Change layout_height to 
+wrap_content. Change the background attribute to toolbar_background. 
+3. In the Component Tree, click on the button you just added, and in the Attributes panel, set the 
+top, bottom, and right constraints. The top and bottom margins should be 0 and the right margin 
+should be 16. Change the text attribute to New and id to buttonAddContact.  
+4. Click on the Switch and set the top, bottom, and left constraints. Use a margin of 0 for the top 
+and bottom and a margin of 32 for the left. Change the text attribute to Delete: and the id to 
+switchDelete. 
+5. In the Component Tree, click on the RecyclerView (rvContacts) and click the top button in the 
+layout diagram to delete the top constraint. The RecyclerView should shrink to the bottom of 
+the Design view. Now grab the top constraint button and drag it to the bottom constraint button 
+of the new toolbar. The margin should be 8. 
+ 
+When complete, the layout should look like that in Figure 6.6.

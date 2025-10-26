@@ -1,0 +1,49 @@
+Direct Memory Access 
+
+Direct memory access (DMA) is an I/O technique that allows a control unit to directly access main 
+memory. This means that once reading or writing has begun, the remainder of the data can be 
+transferred to and from memory without CPU intervention. However, it is possible that the DMA 
+control unit and the CPU will compete for the system bus if they happen to need it at the same 
+time. To activate this process, the CPU sends enough information, such as the type of operation 
+(read or write), the unit number of the I/O device needed, the location in memory where data is 
+to be read from or written to, and the amount of data (bytes or words) to be transferred, to the 
+DMA control unit to initiate the transfer of data, the CPU then can go on 
+to another task while the control unit completes the transfer independently. The DMA 
+controller sends an interruption to the CPU to indicate that the operation is completed. This mode 
+of data transfer is used for high-speed devices such as fast secondary storage devices.  
+Without DMA, the CPU is responsible for the movement of data between main memory and 
+the device, a time-consuming task that results in significant overhead and decreased CPU 
+utilization. 
+
+Buffers enable better handling of the movement of data between the relatively slow I/O devices 
+and the very fast CPU. Buffers are temporary storage areas built into convenient locations 
+throughout the system including main memory, channels, and control units. They are used to store 
+data read from an input device before it is needed by the processor, as well as to store data that 
+will be written to an output device. A typical use of buffers (mentioned earlier in this chapter) 
+occurs when blocked records are either read from or written to an I/O device. In this case, one 
+physical record contains several logical records and must reside in memory while the 
+processing of each individual record takes place. 
+ 
+For example, if a block contains five records, then a physical READ occurs with every six READ 
+commands; all other READ requests are directed to retrieve information from the buffer (this 
+buffer may be set by the application program). 
+To minimize the idle time for devices and, even more importantly, to maximize their 
+throughput, the technique of double buffering is used, as shown in Figure 4.9. In this system, two 
+buffers are present in the main memory, the channels, and the control units. The objective is to 
+have a record ready to be transferred to or from memory at any time to avoid any possible 
+delay that might be caused by waiting for a buffer to fill up with data. Thus, while one 
+
+record is being processed by the CPU, another can be read or written by the channel. 
+
+Figure 4.9 
+ 
+Figure 4.9 illustrates an example of double buffering: (a) the CPU is reading from Buffer 1 as Buffer 
+2 is being filled from the disk; (b) once Buffer 2 is filled, it can be read quickly by the CPU 
+while Buffer 1 is being filled again. 
+ 
+When using blocked records, upon receipt of the command to “READ last logical record,” the 
+channel can start reading the next physical record, which results in overlapped I/O and processing. 
+When the first READ command is received, two records are transferred from the device to 
+immediately fill both buffers. Then data transfer begins. Once the data from one buffer has 
+been processed, the second buffer is already ready. As the second buffer is being ready, the first 
+buffer is being filled with data from a third record, and so on.

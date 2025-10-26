@@ -1,0 +1,23 @@
+use. Although the PHP engine usually closes connections when a script finishes, it is a good 
+
+73   
+   
+idea to close the connection explicitly to be on the safe side. To close the connection, just assign null 
+to your onnection variable. This effectively destroys the PDO object, and therefore the connection:   
+   
+$conn = null;   
+   
+4.19 Handling Errors   
+Database errors can be notoriously difficult to track down and deal with. One of the nice things 
+about   
+PDO is that you can get it to return MySQL errors in the form of highly descriptive PDOException 
+objects. You can then use the PHP keywords try and catch to handle these exceptions easily and deal 
+with them appropriately.   
+   
+To set PDO to raise exceptions whenever database errors occur, you use the PDO::SetAttribute 
+method to set your PDO object’s error mode, as follows:   
+   
+$conn = new PDO( $dsn, $username, $password );   
+$conn- > setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );   
+   
+Now you can cap

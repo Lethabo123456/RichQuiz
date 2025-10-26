@@ -1,0 +1,32 @@
+ A class can have more than one constructor. However, all constructors of a 
+class have the same name.  
+ If a class has more than one constructor, the constructors must have different 
+formal parameter lists. That is, either they have a different number of formal 
+parameters or, if the number of formal parameters is the same, then the data 
+type of the formal parameters, in the order you list, must differ in at least one 
+position. In other words, like function overloading, a constructor’s name is 
+overloaded.  
+ Constructors execute automatically when a class object is declared and enters 
+its scope. Because they have no types, they cannot be called like other 
+functions. 
+  Which constructor executes depends on the types of values passed to the 
+class object when the class object is declared. 
+ 
+Let us extend the definition of the class clockType by including two constructors: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+class clockType  
+{ 
+  
+public: 
+
+190 | P a g e  
+ 
+void setTime(int, int, int);  
+v

@@ -1,0 +1,19 @@
+Notice that the "Current time" in the output is 0 : 0 : 0. Clearly, this first attempt did not work. The 
+problem is with the parameters. We pass in three integer parameters to GetTime ( ), and we 
+modify the parameters in GetTime ( ), but when the values are accessed back in Main ( ), they are 
+unchanged. This is because integers are value types, and so are passed by value; a copy is 
+made in GetTime ( ). What we need is to pass these values by reference. 
+ 
+Two small changes are required. First, change the parameters of the GetTime method to 
+indicate that the parameters are ref (reference) parameters: 
+
+public void GetTime(ref int h, ref int m, ref int s) 
+{ 
+h = Hour; 
+m = Minute; s = Second; 
+} 
+
+Second, modify the call to GetTime ( ) to pass the arguments as references as well: 
+t.GetTime(ref theHour, ref theMinute, ref theSecond); 
+If you leave out the second step of marking the arguments with the keyword ref, the compiler 
+will complain that the argument cannot be converted from an int to a ref int. 

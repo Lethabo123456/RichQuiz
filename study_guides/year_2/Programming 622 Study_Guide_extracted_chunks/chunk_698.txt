@@ -1,0 +1,17 @@
+ts immediate predecessor. In this case, we swap 48 with 50. This reduces to the case 
+wherein the node to be deleted has no right subtree. We now apply Case 3 to delete the node. (Note that 
+because we will delete the immediate predecessor from the binary tree, we, in fact, copy only the info of 
+the immediate predecessor into the node to be deleted.) After deleting 50 from the binary search tree in 
+Figure 9-8, the resulting binary tree is as shown in Figure 9-9(d).  
+  
+In each case, we see that the resulting binary tree is again a binary search tree.  
+  
+From this discussion, it follows that to delete an item from a binary search tree, we must do the following:  
+  
+1. Find the node containing the item (if any) to be deleted.  
+2. Delete the node.  
+  
+We accomplish the second step by a separate function, which we will call deleteFromTree. Given a pointer 
+to the node to be deleted, this function deletes the node by taking into account the previous four cases.  
+  
+The preceding ex

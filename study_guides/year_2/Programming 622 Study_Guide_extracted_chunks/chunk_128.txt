@@ -1,0 +1,23 @@
+vector<int> intList;     
+  
+//Line 1 vector<int>::iterator 
+intVecIter;   
+//Line 2  
+  
+The statement in Line 1 declares intList to be a vector container and the element type to be int. The 
+statement in Line 2 declares intVecIter to be an iterator into a vector container whose element type is int.  
+  
+ 
+2.1.5  Containers and the Functions begin and end  
+  
+Every container contains the member functions begin and end. The function begin returns the position of 
+the first element into the container; the function end returns the position of the last element into the 
+container. These functions have no parameters.   
+After the following statement executes:  
+ intVecIter = intList.begin();  
+  
+the iterator intVecIter points to the first element into the container intList.  
+  
+The following for loop uses an iterator to output the elements of intList onto the standard output device: 
+for (intVecIter = intList.begin(); intVecIter != intList.end(); intVecList)  
+cout << *intVecIt

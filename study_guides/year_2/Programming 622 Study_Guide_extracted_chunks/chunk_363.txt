@@ -1,0 +1,34 @@
+se, the top element of the stack // 
+is returned.  
+  
+void pop();  
+//Function to remove the top element of the stack.  
+//Precondition: The stack exists and is not empty. 
+//Postcondition: The stack is changed and the top element is // 
+removed from the stack.  
+  
+stackType(int stackSize = 100);  
+//Constructor  
+//Create an array of the size stackSize to hold //the 
+stack elements. The default stack size is 100.  
+//Postcondition: The variable list contains the base address  
+// of the array, stackTop = 0, and maxStackSize = stackSize  
+  
+stackType(const stackType<Type>& otherStack);  
+//Copy constructor  
+
+180  
+  
+  
+~stackType();  
+//Destructor  
+//Remove all the elements from the stack. 
+//Postcondition: The array (list) holding the stack // 
+elements is deleted.  
+  
+private:  
+int maxStackSize; //variable to store the maximum stack size 
+int stackTop; //variable to point to the top of the stack Type 
+*list; //pointer to the array that holds the stack elements  
+  
+void copyS

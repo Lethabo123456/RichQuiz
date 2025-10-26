@@ -1,0 +1,30 @@
+1.5.1 Valid Arguments in Propositional Logic 
+Consider the following argument involving propositions (which, by 
+definition, is a sequence of propositions): 
+“If you have a current password, then you can log onto the network.” 
+“You have a current password.” 
+Therefore, 
+“You can log onto the network.” 
+We would like to determine whether this is a valid argument. That is, we 
+would like to determine whether the conclusion “You can log onto the 
+network” must be true when the premises “If you have a current password, 
+then you can log onto the network” and “You have a current password” are 
+both true. 
+
+Before we discuss the validity of this particular argument, we will look at its 
+form. Use 𝑝 to represent “You have a current password” and 𝑞 to represent 
+“You can log onto the network.” Then, the argument has the form: 
+𝑝 →𝑞 
+∴𝑝
+𝑞
+
+where ∴ is the symbol that denotes “therefore.” 
+We know that when p and q are propositional variables, the statement 
+((𝑝 → 𝑞) ∧ 𝑝) → 𝑞 is a tautology. In particular, when both 𝑝 → 𝑞 and 𝑝 
+are true, we know that 𝑞 must also be true. We say this form of argument is 
+valid because whenever all its premises (all statements in the argument 
+other than the final one, the conclusion) 
+are true, the conclusion must also be true. Now suppose that both “If you have a current password, 
+then you can log onto the network” and “You have a current password” are true statements. 
+When we replace 𝑝 by “You have a current password” and 𝑞 by “You can log onto the network,” 
+it necessarily follows that the conclusion “You can log onto the network” is true.

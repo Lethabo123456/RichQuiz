@@ -1,0 +1,19 @@
+8 in this tree.  
+  
+  
+FIGURE 9-17 AVL tree before and after inserting 88  
+  
+Following the insertion procedure as described previously, we obtain the tree as shown in Figure 917(b). 
+As before, we now backtrack to the root node. We adjust the balance factor of nodes 85 and 90.  
+When we visit node 80, we discover that at this node we need to reconstruct the subtree. In this case, the 
+subtree is reconstructed as shown in Figure 9-17(c). As before, after reconstructing the subtree, the entire 
+tree is balanced. So for the remaining nodes on the path back to the root node, we would not do anything.  
+  
+The examples described previously indicate that if part of the tree requires reconstruction, then after 
+reconstructing that part of the tree, we can ignore the remaining nodes on the path back to the root node. 
+(This is, indeed, the case.) Also, after inserting the node, the reconstruction can occur at any node on the 
+path back to the root node.  
+  
+  
+ 
+9.7.2  AVL Tree Rotations

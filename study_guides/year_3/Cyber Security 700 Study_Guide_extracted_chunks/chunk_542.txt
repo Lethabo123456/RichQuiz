@@ -1,0 +1,24 @@
+A typical APT attack proceeds through the following steps: 
+ 
+1. Conduct background research. An APT attack begins with research on potential targets to 
+identify specific avenues of attack. This maximizes the chance of the target reacting as desired. 
+ 
+2. Execute the initial attack. Typically, the initial attack targets one or more specific individuals 
+through some form of social engineering: embedding a link to malicious content into an email 
+message, an instant message, or a social media posting or another attack vector and then 
+persuading the target to open an attachment or click on a link to infect one or more devices 
+with malicious software. 
+ 
+3. Establish a foothold. The APT establishes an initial foothold into the target environment by 
+using customized malware. In almost every case, that custom software does not trigger any 
+antivirus alert, but it does let the APT know about the successful attack. The initial infection 
+tool, sometimes called first-stage malware, can have very little malicious functionality, but it 
+generally is able to beacon home and download additional functionality, sometimes called 
+second-stage malware. 
+
+4. Enable persistence. One of the primary objectives of the APT is to establish persistent 
+command and control over compromised computers in the target environment—meaning 
+control and access that survives a reboot of the targeted device and provides the APT with 
+regular connectivity to the target environment. In most cases, this persistence is established 
+simply by installing new services (including the attacker’s command-and-control software) on 
+the target computer that automatically start when the computer boots.

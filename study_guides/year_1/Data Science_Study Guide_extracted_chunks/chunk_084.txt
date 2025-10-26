@@ -1,0 +1,31 @@
+It can be thought that reinforcement is like supervised learning in that the agent is learning from its 
+past actions to make better moves in the future; nevertheless, the main difference lies in the reward. 
+The reward does not have to be tied in any way to a "correct" or "incorrect" decision. The reward 
+simply encourages (or discourages) different actions (Sinan, 2016). 
+ 
+Reinforcement learning is the least explored of the three types of machine learning and therefore is 
+not explored in great length in this text. The remainder of the chapter will focus on supervised and 
+unsupervised learning. 
+ 
+Advantages of Supervised Machine Learning: 
+• Predictive Power: Supervised learning algorithms can make accurate predictions on new, 
+unseen data once they are trained on labelled data. This is especially useful in tasks like 
+classification and regression. 
+• Feedback Mechanism: With labelled data, the algorithm receives feedback during training, 
+enabling it to learn from its mistakes and improve its performance iteratively. 
+• Interpretable Results: In many cases, the trained models are interpretable, allowing users to 
+understand the factors influencing predictions. 
+• Well-studied Techniques: Supervised learning has been extensively studied and applied in 
+various domains, resulting in a wide range of robust algorithms and tools. 
+• Wide Applicability: Supervised learning can be applied to both structured and unstructured 
+data, making it versatile for various problem domains (Valcheva, 2022). 
+ 
+Disadvantages of Supervised Machine Learning: 
+• Data Dependency: Supervised learning requires labelled data for training, which can be 
+expensive and time-consuming to obtain, especially for large-scale datasets. 
+• Overfitting: If the model is too complex or the dataset is too small, it may memorize the 
+training data and perform poorly on new, unseen data. 
+• Bias and Noise: The quality of predictions heavily depends on the quality and 
+representativeness of the training data. Biased or noisy data can lead to biased models.
+• Limited Generalization: Models trained on specific data may not generalize well to different 
+distributions or real-world scenarios not seen during training (Valcheva, 2022). 

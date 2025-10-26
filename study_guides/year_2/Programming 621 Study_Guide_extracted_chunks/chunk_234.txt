@@ -1,0 +1,16 @@
+ed a constant function if its heading contains 
+the reserved word const at the end. Moreover, a constant member function of 
+a class cannot modify the member variables of the class. 
+7. In the Unified Modeling Language (UML) diagram of a class, the top box 
+contains the name of the class. The middle box contains the member variables 
+and their data types. The last box contains the member function name, 
+parameter list, and the return type of the function. A + (plus) sign in front of a 
+member name indicates that the member is a public member. A - (minus) sign 
+preceding a member name indicates that the member a private member. The 
+symbol # before the member name indicates that the member is a protected 
+member. 
+8. Constructors guarantee that the member variables are initialized when an 
+object is declared. 
+9. A class can have only one destructor, and the destructor has no parameters. 
+10. A data type that separates the logical properties from the implementation details 
+is called an

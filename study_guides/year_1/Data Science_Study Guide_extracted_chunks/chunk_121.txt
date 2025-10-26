@@ -1,0 +1,40 @@
+Basic Steps to Create a Plot using Matplotlib: 
+
+Import Matplotlib: To start using Matplotlib, you need to import it first. Commonly, it is imported 
+as plt for convenience. 
+ 
+1. Create Data: Prepare the data you want to visualize. 
+2. Create a Figure and Axes: Use plt.figure() to create a new figure and 
+fig.add_subplot() or plt.subplot() to add one or more axes (subplots) to the 
+figure. 
+3. Plot Data: Use appropriate plotting functions (e.g., plot(),scatter(), etc.) to plot your 
+data on the axes. 
+4. Customize the Plot: Add labels, titles, legends, change colours, adjust axis limits, etc. 
+5. Show or Save the Plot: Use plt.show() to display the plot or plt.savefig() to save 
+the plot as an image file. 
+ 
+Example - Simple Line Plot using Matplotlib: 
+import matplotlib.pyplot as plt 
+ 
+# Sample data 
+x = [1, 2, 3, 4, 5] 
+y = [2, 4, 6, 8, 10] 
+ 
+# Create a new figure and axis 
+fig, ax = plt.subplots() 
+ 
+# Plot the data 
+ax.plot(x, y, marker='o', linestyle='-', color='b', label='Line Plot') 
+ 
+# Customize the plot 
+ax.set_xlabel('X-axis') 
+ax.set_ylabel('Y-axis') 
+ax.set_title('Simple Line Plot') 
+ax.legend() 
+ 
+# Show the plot 
+plt.show() 
+In this example, we create a simple line plot with five data points (x, y). We use the plot() function 
+to plot the data, and set_xlabel(), set_ylabel(), and set_title() to add labels and title to the 
+plot. The legend() function is used to display the legend. Finally, we call plt.show() to display the 
+plot. 

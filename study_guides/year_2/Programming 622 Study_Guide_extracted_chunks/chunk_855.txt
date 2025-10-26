@@ -1,0 +1,17 @@
+g to each vertex v is a linked list such that each node 
+of the linked list contains the vertex u and (v, u)   E(G).  
+
+420  
+  
+20. The depth-first traversal of a graph is similar to the preorder traversal of a binary tree.  
+21. The breadth-first traversal of a graph is similar to the level-by-level traversal of a binary tree.  
+22. The shortest path algorithm gives the shortest distance for a given node to every other node in the 
+graph.  
+23. In a weighted graph, every edge has a nonnegative weight.  
+24. The weight of the path P is the sum of the weights of all the edges on the path P, which is also called 
+the weight of v from u via P.  
+25. A (free) tree T is a simple graph such that if u and v are two vertices in T, there is a unique path from 
+u to v.  
+26. A tree in which a particular vertex is designated as a root is called a rooted tree.  
+27. Suppose T is a tree. If a weight is assigned to the edges in T, T is called a weighted tree.  
+28. If T is a weighted tree, the weig

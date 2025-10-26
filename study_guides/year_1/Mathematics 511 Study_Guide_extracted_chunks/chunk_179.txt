@@ -1,0 +1,27 @@
+3.3.4 Partial Functions 
+A program designed to evaluate a function may not produce the correct 
+value of the function for all elements in the domain of this function. For 
+example, a program may not produce a correct value because evaluating the 
+function may lead to an infinite loop or an overflow. Similarly, in abstract 
+mathematics, we often want to discuss functions that are defined only for a 
+subset of the real numbers, such as 1/x, √𝑥, and arcsin (x). Also, we may 
+want to use such notions as the “youngest child” function, which is 
+undefined for a couple having no children, or the “time of sunrise,” which is 
+undefined for some days above the Arctic Circle. To study such situations, 
+we use the concept of a partial function. 
+
+Definition 34 
+A partial function f from a set A to a set B is an assignment to each element 
+a in a subset of A, called the domain of definition of f , of a unique element 
+b in B. The sets A and B are called the domain and codomain of f , 
+respectively. We say that f is undefined for elements in A that are not in the 
+domain of definition of f . When the domain of definition of f equals A, we 
+say that f is a total function. 
+ 
+We write f : A → B to denote that f is a partial function from A to B. Note that 
+this is the same notation as is used for functions. The context in which the 
+notation is used determines whether f is a partial function or a total function. 
+The function f : Z → R where f (n) =√n is a partial function from Z to R where 
+the domain of definition is the set of nonnegative integers. Note that f is 
+undefined for negative integers. 
+

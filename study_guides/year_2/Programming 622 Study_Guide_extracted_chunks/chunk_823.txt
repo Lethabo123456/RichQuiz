@@ -1,0 +1,13 @@
+The total cost factor of maintaining the remaining connections in Figure 10-15(a) is 33, in Figure 1015(b) 
+it is 28, and in Figure 10-15(c) it is 25. Out of these three solutions, obviously, the desired solution is the 
+one shown by the graph of Figure 10-15(c) because it gives the lowest cost factor. Graphs of Figure 10-15 
+are called spanning trees of the graph of Figure 10-14.  
+  
+Let us note the following from the graphs of Figure 10-15. Each of the graphs of Figure 10-15 is a subgraph 
+of the graph of Figure 10-14, and there is a unique path from a node to any other node. Such graphs are 
+called trees. There are many other situations, where given a weighted graph, we need to determine a 
+graph such as in Figure 10-15 with the smallest weight. In this section, we give an algorithm to determine 
+such graphs. However, first we introduce some terminology.  
+  
+A (free) tree T is a simple graph such that if u and v are two vertices in T, there is a unique path from u to 
+v.

@@ -1,0 +1,83 @@
+calc(42); 
+ 
+?> 
+a) Error 
+b) 0 
+c) 42 
+d) 84 
+ 
+Answer: c 
+ 
+25. Which of the following are valid function names? 
+i) function() 
+ii) €() 
+iii) .function() 
+iv) $function() 
+a) Only ii) 
+b) None of the mentioned. 
+c) All of the mentioned. 
+d) iii) and iv) 
+ 
+Answer: a 
+ 
+ 
+
+26. What will be the output of the following PHP code? 
+<?php 
+function a() 
+{ 
+function b() 
+{ 
+echo 'I am b'; 
+} 
+echo 'I am a'; 
+} 
+a(); 
+a(); 
+?> 
+a) I am b 
+b) I am bI am a 
+c) Error 
+d) I am a Error 
+ 
+Answer: d 
+ 
+27. What will be the output of the following PHP code? 
+<?php 
+function a()   
+{ 
+function b() 
+{ 
+echo 'I am b'; 
+} 
+echo 'I am a'; 
+} 
+b(); 
+a(); 
+?> 
+a) I am b 
+b) I am bI am a 
+c) Error. 
+d) I am a Error 
+Answer: c 
+
+ 
+28. What will be the output of the following PHP code? 
+<?php 
+$op2 = "blabla"; 
+function foo($op1) 
+{ 
+echo $op1; 
+echo $op2; 
+} 
+foo("hello"); 
+?> 
+ 
+a) helloblabla 
+b) Error 
+c) hello 
+d) helloblablablabla 
+ 
+Answer: c 
+ 
+29. A function in PHP which starts with __ (double unde

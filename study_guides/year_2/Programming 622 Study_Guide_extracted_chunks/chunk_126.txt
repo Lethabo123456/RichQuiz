@@ -1,0 +1,17 @@
+ent is to be inserted at a specific position, this 
+would require shifting the elements of the container (unless the element is added at the end). Of course, 
+we must also think about the size of the container. To make element(s) insertion convenient, the class 
+vector provides the function insert to insert the elements at a specific position in a vector container. 
+However, to use the function insert, the position where to insert the element(s) must be specified by an 
+iterator. Similarly, the function erase, to remove an element, also requires the use of an iterator. This 
+section describes how to declare and use an iterator on a vector container.  
+  
+The class vector contains a typedef iterator, which is declared as a public member. An iterator to a vector 
+container is declared using the typedef iterator.  
+For example, the statement  
+  
+vector<int>::iterator intVecIter;  
+  
+declares intVecIter to be an iterator into a vector container of type int.  
+  
+Because iterator is a typ

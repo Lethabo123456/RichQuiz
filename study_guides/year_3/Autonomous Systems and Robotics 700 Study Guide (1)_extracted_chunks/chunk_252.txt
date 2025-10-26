@@ -1,0 +1,250 @@
+gRPC Client Implementation 
+File: C:\distributed_systems\3_grpc\grpc_client.py 
+#!/usr/bin/env python3 
+""" 
+gRPC Client Implementation 
+Demonstrates calling various gRPC methods 
+""" 
+ 
+import grpc 
+
+import time 
+import threading 
+import random 
+ 
+# Mock classes for demo (in real implementation, import from generated pb2 files) 
+class MockRobotRequest: 
+    def __init__(self, robot_id="robot1", request_type="status"): 
+        self.robot_id = robot_id 
+        self.request_type = request_type 
+ 
+class MockRobotCommand: 
+    def __init__(self, robot_id, command): 
+        self.robot_id = robot_id 
+        self.command = command 
+ 
+class MockChatMessage: 
+    def __init__(self, robot_id, message): 
+        self.robot_id = robot_id 
+        self.message = message 
+        self.timestamp = int(time.time()) 
+ 
+class RobotControllerClient: 
+    """gRPC client for robot controller""" 
+     
+    def __init__(self, server_address='localhost:50051'): 
+        self.server_address = server_address 
+        print(f" Initializing gRPC client for {server_address}") 
+         
+        # In real implementation: 
+        # self.channel = grpc.insecure_channel(server_address) 
+        # self.stub = robot_service_pb2_grpc.RobotControllerStub(self.channel) 
+         
+        # For demo, we'll simulate calls 
+        self.connected = True 
+ 
+    def get_robot_status(self, robot_id="robot1"): 
+        """Demo unary RPC call""" 
+        print(f" Calling GetRobotStatus for {robot_id}") 
+         
+        # Simulate the call 
+        request = MockRobotRequest(robot_id, "status") 
+         
+ 
+
+        try: 
+            # In real implementation: 
+            # response = self.stub.GetRobotStatus(request) 
+             
+            # Simulated response 
+            time.sleep(0.5)  # Simulate network delay 
+             
+            # Mock response data 
+            statuses = { 
+                'robot1': ('active', 85.5), 
+                'robot2': ('charging', 45.2), 
+                'robot3': ('maintenance', 12.8) 
+            } 
+             
+            status, battery = statuses.get(robot_id, ('unknown', 0.0)) 
+             
+            print(f" Status received: {robot_id} = {status}, {battery}% battery") 
+            return {'robot_id': robot_id, 'status': status, 'battery': battery} 
+             
+        except Exception as e: 
+            print(f" Error getting status: {e}") 
+            return None 
+
+    def monitor_robot(self, robot_id="robot1", duration=10): 
+        """Demo server streaming RPC""" 
+        print(f" Starting robot monitoring for {robot_id} ({duration}s)") 
+         
+        request = MockRobotRequest(robot_id, "monitor") 
+         
+        try: 
+            # In real implementation: 
+            # for status in self.stub.MonitorRobot(request): 
+            #     print(f" Update: {status.robot_id} - {status.battery_level}%") 
+             
+            # Simulated streaming 
+            battery = 85.0 
+            for i in range(duration): 
+                battery -= random.uniform(0.5, 2.0) 
+                battery = max(0, battery) 
+                 
+                print(f" Stream update {i+1}: {robot_id} - {battery:.1f}% battery") 
+                            if battery < 20: 
+                    print(f" LOW BATTERY WARNING for {robot_id}!") 
+                 
+                time.sleep(1) 
+
+            print(f" Monitoring completed for {robot_id}") 
+             
+        except Exception as e: 
+            print(f" Error monitoring robot: {e}") 
+ 
+    def send_commands(self, robot_id="robot1", command_list=None): 
+        """Demo client streaming RPC""" 
+        if command_list is None: 
+            command_list = ['move_forward', 'turn_left', 'move_forward', 'charge'] 
+         
+        print(f" Sending {len(command_list)} commands to {robot_id}") 
+         
+        def generate_commands(): 
+            for cmd in command_list: 
+                command = MockRobotCommand(robot_id, cmd) 
+                print(f" Sending command: {cmd}") 
+                yield command 
+                time.sleep(1) 
+         
+        try: 
+            # In real implementation: 
+            # response = self.stub.SendCommands(generate_commands()) 
+
+            # print(f" Command result: {response.message}") 
+             
+            # Simulated command processing 
+            commands_sent = 0 
+            for cmd in command_list: 
+                print(f" Processing command: {cmd}") 
+                commands_sent += 1 
+                time.sleep(0.5) 
+             
+            print(f" All {commands_sent} commands processed successfully") 
+             
+        except Exception as e: 
+            print(f" Error sending commands: {e}") 
+ 
+    def robot_chat(self, robot_id="robot1", messages=None): 
+        """Demo bidirectional streaming RPC""" 
+        if messages is None: 
+            messages = [ 
+                "Hello robot!", 
+                "What's your status?", 
+                "Please move forward", 
+                "Thank you!", 
+
+                "Goodbye" 
+            ] 
+         
+        print(f" Starting chat with {robot_id}") 
+         
+        def send_messages(): 
+            for msg in messages: 
+                chat_msg = MockChatMessage(robot_id, msg) 
+                print(f" Sending: {msg}") 
+                # In real implementation: yield chat_msg 
+                time.sleep(2) 
+         
+        def receive_responses(): 
+            responses = [ 
+                "Hello! Ready for commands.", 
+                "All systems operational.", 
+                "Moving forward as requested.", 
+                "You're welcome!", 
+                "Goodbye, have a great day!" 
+            ]
+
+            for response in responses: 
+                time.sleep(2.5) 
+                print(f" Robot says: {response}") 
+         
+        try: 
+            # In real implementation: 
+            # response_stream = self.stub.RobotChat(send_messages()) 
+            # for response in response_stream: 
+            #     print(f" Robot: {response.message}") 
+             
+            # Simulated bidirectional chat 
+            send_thread = threading.Thread(target=send_messages) 
+            receive_thread = threading.Thread(target=receive_responses) 
+             
+            send_thread.start() 
+            receive_thread.start() 
+             
+            send_thread.join() 
+            receive_thread.join() 
+             
+            print(" Chat completed") 
+             
+
+        except Exception as e: 
+            print(f" Error in chat: {e}") 
+ 
+ def close(self): 
+        """Close connection""" 
+        # In real implementation: self.channel.close() 
+        print(" Client connection closed") 
+ 
+def demo_all_patterns(): 
+    """Demonstrate all gRPC communication patterns""" 
+    print(" Starting gRPC Client Demo") 
+    print("=" * 50) 
+     
+    client = RobotControllerClient() 
+     
+    try: 
+        # 1. Unary call 
+        print("\n UNARY CALL DEMO") 
+        print("-" * 20) 
+        client.get_robot_status("robot1") 
+        client.get_robot_status("robot2") 
+         
+
+        time.sleep(2) 
+         
+        # 2. Server streaming 
+        print("\n SERVER STREAMING DEMO") 
+        print("-" * 25) 
+        client.monitor_robot("robot1", duration=5) 
+         
+        time.sleep(2) 
+         
+        # 3. Client streaming 
+        print("\n CLIENT STREAMING DEMO") 
+        print("-" * 25) 
+        commands = ['move_forward', 'turn_right', 'move_forward', 'stop', 'charge'] 
+        client.send_commands("robot2", commands) 
+         
+        time.sleep(2) 
+         
+        # 4. Bidirectional streaming 
+        print("\n BIDIRECTIONAL STREAMING DEMO") 
+        print("-" * 30) 
+        chat_messages = [ 
+            "Hello robot!", 
+
+            "Check your sensors", 
+            "Move to position (5,5)", 
+            "Report status", 
+            "Goodbye" 
+        ] 
+        client.robot_chat("robot3", chat_messages) 
+         
+    except KeyboardInterrupt: 
+        print("\n Demo interrupted") 
+    finally: 
+        client.close() 
+ 
+if __name__ == '__main__': 
+    demo_all_patterns() 

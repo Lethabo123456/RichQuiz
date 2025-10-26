@@ -1,0 +1,45 @@
+'615'  
+NOT NULL 
+CHECK(CUS_AREACODE 
+IN 
+('615','713','931')), 
+CUS_PHONE  
+ 
+CHAR(8)  
+ 
+NOT NULL,  
+CUS_BALANCE   
+NUMBER(9,2)  
+DEFAULT 0.00,  
+CONSTRAINT CUS_UI1 UNIQUE (CUS_LNAME, CUS_FNAME)); 
+The final SQL command sequence creates the LINE table. The LINE table has a composite primary 
+key (INV_NUMBER, LINE_NUMBER) and uses a UNIQUE constraint in INV_NUMBER and 
+P_CODE to ensure that the same product is not ordered twice in the same invoice.  
+CREATE TABLE LINE (  
+INV_NUMBER  
+ 
+NUMBER 
+ 
+NOT NULL, 
+LINE_NUMBER   
+NUMBER(2,0)  
+NOT NULL, 
+P_CODE   
+ 
+VARCHAR(10)  
+NOT NULL, 
+LINE_UNITS  
+ 
+NUMBER(9,2)  
+DEFAULT 0.00  
+NOT NULL, 
+LINE_PRICE  
+ 
+NUMBER(9,2)  
+DEFAULT 0.00  
+NOT NULL,  
+PRIMARY KEY (INV_NUMBER, LINE_NUMBER),  
+FOREIGN KEY (INV_NUMBER) REFERENCES INVOICE ON DELETE CASCADE,  
+FOREIGN KEY (P_CODE) REFERENCES PRODUCT(P_CODE),  
+CONSTRAINT LINE_UI1 UNIQUE(INV_NUMBER, P_CODE)); 
+In the creation of the LINE table, note that a UNIQUE constraint is added to pre-vent the d

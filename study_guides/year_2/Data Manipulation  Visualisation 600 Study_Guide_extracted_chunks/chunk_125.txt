@@ -1,0 +1,63 @@
+layout = go.Layout( 
+ 
+title="Miles per Gallon Frequencies of<br>\ 
+1970's Era Vehicles" 
+) 
+fig = go.Figure(data=data, layout=layout) 
+pyo.plot(fig, filename='basic_histogram.html') 
+ 
+ 
+ 
+ 
+ 
+Note that each bin has a width of 2. The first bin spans 8 to 9.9, the last one from 48 to 49.9. 
+hist2.py sets bins wider, to 6. (since 50-8=42, seven equally spaced bins makes sense) 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+ 
+
+ 
+ 
+ 
+ 
+import pandas as pd 
+ 
+df = pd.read_csv('../data/mpg.csv') 
+ 
+data = [go.Histogram( 
+x=df['mpg'], 
+xbins=dict(start=8,end=50,size=6), 
+ 
+)] 
+ 
+layout = go.Layout( 
+ 
+title="Miles per Gallon Frequencies of<br>\ 1970's Era Vehicles" 
+ 
+) 
+fig = go.Figure(data=data, layout=layout) 
+pyo.plot(fig, filename='wide_histogram.html') 
+ 
+ 
+ 
+ 
+ 
+ 
+hist3.py sets bins to just 1: 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+import pandas as pd 
+ 
+df = pd.read_csv('../data/mpg.csv') 
+ 
+data = [go.Histogram( 
+
+ 
+ 
+ 
+ 
+x=df['mpg']

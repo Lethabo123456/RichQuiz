@@ -1,0 +1,21 @@
+Code Extract – Part 3 
+type(texts) # == list 
+ 
+vect = CountVectorizer(ngram_range=(1,2), stop_words='english') 
+# Get basic counts of one and two word phrases 
+ 
+matrix = vect.fit_transform(texts) 
+ 
+# fit and learn to the vocabulary in the corpus 
+print len(vect.get_feature_names())  # how many features are there  
+ 
+Output # There are 11,293 total one and two words phrases in my case!! 
+ 
+Explanation 
+The code snippet is creating a variable called vect which is an instance of the CountVectorizer 
+class. The CountVectorizer class can be used to create a vector matrix of all of the one and two 
+word phrases in the text. The code is specifying the ngram_range to be (1,2) and for the stop words 
+to be English, which will prevent common words like "the" and "and" from being included in the vector 
+matrix. The code then creates a matrix variable which is fitted and learned to the vocabulary in the 
+corpus. The last line is printing out the number of feature names which in this case is 11,293 one and 
+two word phrases. 

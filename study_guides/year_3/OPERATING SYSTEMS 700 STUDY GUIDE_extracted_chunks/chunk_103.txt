@@ -1,0 +1,42 @@
+3.4. Process Control Blocks 
+Each process in the system is represented by a data structure called a process control block (PCB). 
+Each thread is represented by a similar data structure called a thread control block (TCB). 
+ 
+3.4.1 Process Control Block (PCB) 
+It is a crucial data structure in an operating system that represents information about a process. It 
+acts as the metadata for the process, storing all the necessary details required for process 
+management and execution. The PCB ensures the operating system can switch processes efficiently 
+during multitasking and keep track of the state of each process. 
+ 
+Figure 3.3 
+ 
+Components of a Process Control Block: 
+ 
+1. Process Identification: 
+➢ Process ID (PID): A unique identifier for the process. 
+➢ Parent Process ID: Links the process to its creator. 
+
+2. Process State: 
+➢ Current state of the process (e.g., READY, RUNNING, WAITING). 
+ 
+3. CPU Registers:  
+➢ Stores the values of registers for the process. These are used during context switching to save 
+the current execution state. 
+
+4. Program Counter:  
+➢ Indicates the address of the next instruction to execute. 
+ 
+5. Memory Management Information: 
+➢ Base and limit registers for the process. 
+➢ Page tables or segment tables used for memory allocation. 
+ 
+6. CPU Scheduling Information: 
+➢ Priority of the process. 
+➢ Scheduling queues and other parameters. 
+ 
+7. I/O Status Information: 
+➢ List of open files and I/O devices assigned to the process. 
+ 
+8. Accounting Information: 
+➢ CPU usage, memory usage, and other resource consumption data. 
+➢ Time limits and process quotas. 

@@ -1,0 +1,20 @@
+numeric (model_year), we first added a column to the DataFrame converting it to text, then another column 
+that combined it with Name. This last column is used for the hover text. 
+ 
+6.3.5 Box Plots 
+At times it’s important to determine if two samples of data belong to the same population. Box plots are great for 
+this! The shape of a box plot (also called a box-and-whisker-plot) doesn’t depend on aggregations like sample mean. 
+Rather, the plot represents the true shape of the data. Also, depending on how the whiskers are constructed, 
+
+ 
+ 
+ 
+ 
+box plots are useful for identifying true outliers of a data set. While some visualizations might arbitrarily discard the 
+“top and bottom 5%” as outliers, a box plot identifies those points that lie far from the median compared to the rest 
+of the data. 
+To construct the plot: 
+● 
+First mark the median value (usually with a line segment). This sets the location of the distribution. 
+● 
+Construct a box to contain all the inner-quartile values.

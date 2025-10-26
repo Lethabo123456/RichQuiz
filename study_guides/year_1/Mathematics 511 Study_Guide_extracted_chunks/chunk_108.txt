@@ -1,0 +1,15 @@
+1.6.1 Understanding How Theorems Are Stated 
+Before we introduce methods for proving theorems, we need to understand 
+how many mathematical theorems are stated. Many theorems assert that a 
+property holds for all elements in a domain, such as the integers or the real 
+numbers. Although the precise statement of such theorems needs to include 
+a universal quantifier, the standard convention in mathematics is to omit it. 
+For example, the statement 
+“If 𝑥 >  𝑦, where 𝑥 and 𝑦 are positive real numbers, then 𝑥2  > 𝑦2.” 
+really means “For all positive real numbers 𝑥 and 𝑦, if 𝑥 >  𝑦, then 
+ 𝑥2  > 𝑦2.” 
+Furthermore, when theorems of this type are proved, the first step of the 
+proof usually involves selecting a general element of the domain. 
+Subsequent steps show that this element has the property in question. 
+Finally, universal generalization implies that the theorem holds for all 
+members of the domain. 

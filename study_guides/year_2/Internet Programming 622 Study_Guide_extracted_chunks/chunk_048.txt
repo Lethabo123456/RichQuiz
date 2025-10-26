@@ -1,0 +1,20 @@
+orm handler example in which we create a simple user registration form, then 
+write a form handler script that reads the field values sent from the form and displays them in the 
+page. First, create the registration form. Save the following HTML code as registration.html in your 
+document root folder:   
+   
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”   
+                “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>   
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>   
+      <head>   
+           <title>Membership Form</title> <link rel=”stylesheet” type=”text/   css” href=”common.css” 
+/>   
+      </head>   
+      <body>   
+
+25   
+   
+               <h1>Membership Form</h1>   
+                     <p>Thanks for choosing to join The Widget Club. To register, please fill   
+                                   in your details below and click Send Details.</p>   
+                    <form action=”process_registration.php” method=”post”>

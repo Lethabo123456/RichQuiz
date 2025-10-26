@@ -1,0 +1,17 @@
+tep 3 and move 52, the pivot, to the proper position in the list. This is accomplished by 
+swapping 52 with 45. The resulting list is shown in Figure 8-31.  
+  
+  
+FIGURE 8-31 List after swapping 52 with 45  
+  
+As shown in Figure 8-31, the preceding algorithm, Steps 1, 2, and 3, partitions the list into two sublists 
+such that the elements less than the pivot are in lowerSublist and elements greater than or equal to the 
+pivot are in upperSublist.  
+  
+To partition the list into the lower and upper sublists, we only need to keep track of the last element of 
+the lowerSublist and the next element of the list that needs to be moved either in lowerSublist or in 
+upperSublist. In fact, upperSublist is between the two indices smallIndex and index.  
+  
+We now write the function, partition, to implement the preceding partition algorithm. After rearranging 
+the elements of the list, the function returns the location of the pivot so that we can determine the 
+starting and ending locations of

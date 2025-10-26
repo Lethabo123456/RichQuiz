@@ -1,0 +1,18 @@
+mizer mode.  
+From the performance point of view, it would be optimal to have the entire database stored in 
+primary memory to minimize costly disk access. In-memory database systems are optimized to 
+store large portions (if not all) of the database in primary (RAM) storage rather than secondary 
+(disk) storage. These systems are becoming popular because increasing performance demands of 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eleven page 534-536. 
+
+ 
+169 
+modern database applications (such as Big Data), diminishing costs, and technology advances of 
+components.  
+Although in-memory databases are carving a niche in selected markets, most data-base 
+implementations still rely on data stored on disk drives. That is why managing the physical storage 
+details of the data files plays an important role in DBMS performance tuning. Note the following 
+general recommendations for physical storage of databases:

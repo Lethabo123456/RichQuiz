@@ -1,0 +1,15 @@
+nsertFirst. Likewise, the operations 
+initializeQueue and initializeList, isEmptyQueue, and isEmptyList are similar. The deleteQueue operation 
+can be implemented as before. The pointer queueFront is the same as the pointer first, and the pointer 
+queueRear is the same as the pointer last. This correspondence suggests that we can derive the class to 
+implement the queue from the class linkedListType (see Chapter 3). Note that the class linkedListType is 
+an abstract and does not implement all the operations. However, the class unorderedLinkedList is derived 
+from the the class linkedListType and provides the definitions of the abstract functions of the the class 
+linkedListType. Therefore, we can derive the class linkedQueueType from the class unorderedLinkedList.  
+  
+ 
+6.4  
+STL class queue (Queue Container Adapter)  
+  
+The preceding sections discussed the data structure queue in detail. Because a queue is an important data 
+structure, the Standard Template Library (STL) provides a

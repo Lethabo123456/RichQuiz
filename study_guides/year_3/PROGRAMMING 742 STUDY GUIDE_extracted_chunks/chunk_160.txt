@@ -1,0 +1,12 @@
+The net effect of this code is to create two classes, DisplayClock and LogCurrentTime. Both of these subscribe to a third 
+class event (Clock.OnSecondChange). 
+Delegates are a type that defines a method signature and can contain a reference to a method.  
+Delegates can be instantiated, passed around, and invoked.  
+Lambda expressions, also known as anonymous methods, use the => operator and form a compact way 
+of creating inline methods.  
+Events are a layer of syntactic sugar on top of delegates to easily implement the publish-subscribe pat-
+tern.  
+Events can be raised only from the declaring class. Users of events can only remove and add methods 
+the invocation list.  
+You can customize events by adding a custom event accessor and by directly using the underlying dele-
+gate type. 

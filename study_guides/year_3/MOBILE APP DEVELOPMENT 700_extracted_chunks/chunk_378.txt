@@ -1,0 +1,32 @@
+Get Coordinates from the GPS Sensor 
+
+The network sensor uses cell towers and Wi-Fi access points to determine the device’s location. It is 
+not as accurate as the GPS sensor, but it is faster. Additionally, it is available on all devices, whereas a 
+GPS sensor is not. Our discussion first focuses on accessing location using the GPS sensor. It might 
+make more sense to begin with the network sensor, since it is less accurate. However, the network 
+sensor cannot be tested on the emulator, whereas the GPS sensor can. In addition, the code required 
+to use both sensors is almost identical, so learning one versus the other first does not really matter. 
+Regardless of which is done first, the first step in using these sensors is to add the permissions required 
+to access them. 
+These permissions are used to alert the user during installation or upgrade what the app is allowed to 
+access on the device. The user permits that app to use those devices, services, or data by choosing to 
+install the app after reviewing the permissions. Permissions are set in the Android manifest file. If a 
+permission is required by what you are trying to do but is not in the manifest, the app will crash. 
+Android SDK version 23 (Android 6.0 Marshmallow) changed the way permissions work. We will 
+address that later. However, for your app to run on both older and new versions of the Android OS, 
+you must code for both. The following instructions are for older versions. 
+Open the AndroidManifest.xml file and enter the permissions in Listing 7.2. Put these permissions 
+after the <manifest tag and before the <application tag. 
+ 
+To use the GPS sensor, you replace the geocoding code in the Get Location button with GPS listener 
+code. You also add a method to turn off the location sensing when the app enters the Paused life- 
+cycle state. First, go to ContactMapActivity.java and add the following variable declarations just after 
+the class declaration:
+
+LocationManager locationManager; 
+LocationListener gpsListener; 
+  
+You will have to import these classes. Use the android.location option, not the 
+com.google.android.gms one. Next, go to the initGetLocationButton method and replace all the code 
+in the onClick method with the code in Listing 7.3. You will also have to import some objects after 
+entering the code. 

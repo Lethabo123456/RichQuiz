@@ -1,0 +1,33 @@
+1.6.5 Proofs by Contradiction 
+Suppose we want to prove that a statement 𝑝 is true. Furthermore, suppose 
+that we can find a contradiction 𝑞 such that ￢𝑝 → 𝑞 is true. Because 𝑞 is 
+false, but ￢𝑝 → 𝑞 is true, we can conclude that ￢𝑝 is false, which means 
+that 𝑝 is true. How can we find a contradiction 𝑞 that might help us prove 
+that 𝑝 is true in this way?
+ 
+Because the statement 𝑟 ∧￢𝑟 is a contradiction whenever 𝑟 is a 
+proposition, we can prove that 𝑝 is true if we can show that ￢𝑝 → (𝑟 ∧￢𝑟) 
+is true for some proposition 𝑟. Proofs of this type are called proofs by
+
+Worked Example 
+Give a proof by contradiction of the theorem “If 3𝑛 +  2 is odd, then 𝑛 is 
+odd.” 
+
+Solution: 
+Let 𝑝 be “3𝑛 +  2 is odd” and 𝑞 be “n 𝑖𝑠 odd.” To construct a proof by 
+contradiction,  assume that both p and ￢𝑞 are true. That is, assume that 
+3𝑛 +  2 is odd and that 𝑛 is not odd. Because 𝑛 is not odd, we know that 
+it is even. Because 𝑛 is even, there is an integer  
+𝑘 such that 𝑛 =  2𝑘. 
+
+This implies that 3𝑛 +  2 =  3(2𝑘) +  2 =  6𝑘 +  2 =  2(3𝑘 +  1). 
+Because 3𝑛 +  2 is 2𝑡 , where 𝑡 =  3𝑘 +  1, 3𝑛 +  2 is even. Note that 
+the statement “3𝑛 +  2 is even” is equivalent to the statement ￢𝑝, 
+because an integer is even if and only if it is not odd. Because both 𝑝 
+and￢𝑝 are true, we have a contradiction. This completes the proof by 
+contradiction, proving that if 3𝑛 +  2 is odd, then 𝑛 is odd.  
+Note that we can also prove by contradiction that 𝑝 → 𝑞 is true by 
+assuming that 𝑝 and ￢𝑞  are true, and showing that 𝑞 must be also 
+be true. This implies that ￢𝑞 and 𝑞 are both true,  a contradiction. This 
+observation tells us that we can turn a direct proof into a proof by 
+contradiction. 

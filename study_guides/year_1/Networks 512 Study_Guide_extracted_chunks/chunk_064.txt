@@ -1,0 +1,15 @@
+Figure 1- 5: Dedicated Ethernet and Switches 
+
+1.9.3 Routers 
+
+A router is a device that forwards data packets along networks, and determines which way to send 
+each data packet based on its current understanding of the state of its connected networks. 
+Routers are typically connected to at least two networks, commonly two LANs or WANs or a LAN 
+and its Internet Service Providers (ISPs) network. Routers are located at gateways, the places 
+where two or more networks connect. 
+Routers filter out network traffic by specific protocol rather than by packet address. Routers also 
+divide networks logically instead of physically. An IP router can divide a network into various 
+subnets so that only traffic destined for particular IP addresses can pass between segments. 
+Network speed often decreases due to this type of intelligent forwarding. Such filtering takes 
+more time than that exercised in a switch or bridge, which only looks at the Ethernet address. 
+However, in more complex networks, overall efficiency is improved by using routers. 

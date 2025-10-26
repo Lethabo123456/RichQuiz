@@ -1,0 +1,39 @@
+5-11.  
+  
+  
+FIGURE 5-11 Stack before the push operation  
+  
+Figure 5-12 shows the steps of the push operation. (Assume that the new element to be pushed is 'D'.)  
+  
+  
+FIGURE 5-12 Push operation  
+  
+As shown in Figure 5-12, to push 'D' into the stack, first we create a new node and store 'D' into it. Next, 
+we put the new node on top of the stack. Finally, we make stackTop point to the top element of the stack. 
+The definition of the function push is as follows:  
+  
+template <class Type>  
+void linkedStackType<Type>::push(const Type& newElement)  
+{  
+ 
+nodeType<Type> *newNode;   
+//pointer to create the new node  
+  
+newNode = new nodeType<Type>;  //create the node  
+  
+newNode->info = newElement;  //store newElement in the node newNode->link = 
+stackTop;   //insert newNode before stackTop  
+ 
+stackTop = newNode;   
+  
+//set stackTop to point to the top node  
+ 
+}   
+  
+  
+  
+  
+  
+//end push  
+  
+We do not need to check whether the stack is full before we push an element onto

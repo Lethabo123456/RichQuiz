@@ -1,0 +1,31 @@
+ipt. 
+The return value can be a string of text, a number, a Boolean value, or even objects. 
+But they only return one value. Let us adapt our second function so that it returns a 
+value. 
+function secondFunction()  
+{ 
+var alertString = "My Return Value"; 
+return alertString; 
+} 
+ 
+In this simple example, we have set up a variable called alertString. We have set this 
+value to be the text "My Return Value". To get this value out of the function, we have 
+this line: 
+return alertString; 
+ 
+To get a value out, you type the word return followed by a space (not an equal sign). 
+Next you type the variable name or the value (true or false, for example) that you want 
+to get back. For us, this was the variable called alertString. 
+ 
+But we need to adapt the first function to get at this value. Study this new version of 
+the first function: 
+function myFunction()  
+{ 
+var retVal = secondFunction(); 
+alert( retVal ); 
+} 
+ 
+This is the important line: 
+var retVal = secondFunction(); 
+ 
+We still

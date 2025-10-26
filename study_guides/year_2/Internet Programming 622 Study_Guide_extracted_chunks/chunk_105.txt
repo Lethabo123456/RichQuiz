@@ -1,0 +1,21 @@
+g only. Any existing content will be lost. If the file does not exist, 
+PHP attempts to create it.   
+w+   
+Open the file for reading and writing. Any existing file content will be lost. If the file does 
+not exist, PHP attempts to create it.   
+a   
+Open the file for appending only. Data is written to the end of an existing file. If the file 
+does not exist, PHP attempts to create it.   
+a+   
+Open the file for reading and appending. Data is written to the end of an existing file. If 
+the file does not exist, PHP attempts to create it.   
+   
+   
+The file pointer is PHP’ s internal pointer that specifies the exact character position in a file where the 
+start of the next operation should be performed.   
+   
+You can also append the value ‘b’to the argument to indicate that the opened file should be treated 
+as a   
+binary file (this is the default setting). Alternatively, you can append ‘t’ to treat the file like a text file,  
+in   
+which case PHP attempts to translate end-of-line ch

@@ -1,0 +1,20 @@
+ubtree.  
+3. Visit the node.  
+  
+Clearly, each of these traversal algorithms is recursive.  
+  
+The listing of the nodes produced by the inorder traversal of a binary tree is called the inorder sequence. 
+The listing of the nodes produced by the preorder traversal of a binary tree is called the preorder 
+sequence. The listing of the nodes produced by the postorder traversal of a binary tree is called the 
+postorder sequence.  
+  
+Before giving the C++ code for each of these traversals, let us illustrate the inorder traversal of the binary 
+tree in Figure 9-5. For simplicity, we assume that visiting a node means to output the data stored in the 
+node. The section, ‘‘Binary Tree Traversal and Functions as Parameters,’’ located later in this chapter, 
+explains how to modify the binary tree traversal algorithms so that by using a function, the user can specify 
+the action to be performed on a node when the node is visited.  
+  
+  
+FIGURE 9-5 Binary tree for an inorder traversal  
+  
+A poi

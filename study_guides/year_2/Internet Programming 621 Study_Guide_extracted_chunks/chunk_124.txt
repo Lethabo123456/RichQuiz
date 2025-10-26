@@ -1,0 +1,24 @@
+] = > Tolkien [2] = > Dickens )”; 
+print_r( $authorsSlice );  
+  
+Earlier you learned that array_slice() does not preserve the indices of elements taken from an 
+indexed array. If you want to preserve the indices, you can pass a fourth argument, true, to 
+array_slice() :  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+// Displays “Array ( [0] = > Tolkien [1] = > Dickens )”; 
+print_r( array_slice( $authors, 2, 2 ) );  
+// Displays “Array ( [2] = > Tolkien [3] = > Dickens )”; 
+print_r( array_slice( $authors, 2, 2, true ) );  
+  
+5.7 Counting Elements In An Array  
+How do you find out how many elements are in an array? Easy: you use PHP’s handy count() 
+function. All you need to do is pass the array to count() , and it returns the number of elements as 
+an integer:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”,  
+
+61  
+“pubYear” = > 1939 ); echo count( $autho

@@ -1,0 +1,31 @@
+Relationship to Information Security Management System 
+ 
+Figure 15.7, adapted from figures in ISO 27035-1, indicates the relationship between information 
+security incident management and an information security management system (ISMS) (refer to Figure 
+2.1). The upper part of the figure, bounded by dashed lines, illustrates the relationships among 
+objects in an information security incident. A threat causes a security event by exploiting a vulnerability, 
+which enables the threat to create the event. The event is potentially an incident that impacts 
+information assets exposed by vulnerabilities and compromises the operations supported by the 
+information assets. In the upper part of the figure, the shaded objects are preexisting and affected by 
+the unshaded objects. 
+ 
+The lower part of Figure 15.7 indicates the bigger picture, showing how security incident management 
+relates to risk management and an ISMS.
+
+Incident Management Policy 
+Essential to successful incident management is a documented incident management policy. Such a 
+policy should have sections that deal with overall management, including the following topics: 
+ 
+ A specification of internal and external interested parties 
+ An agreed-on definition of incident and guidelines to identify a security incident 
+ A definition of incident response/handling and its overall objectives and scope 
+ A statement of management intent, supporting the goals and principles of incident 
+response/handling 
+ A brief explanation of the incident response/handling policies, principles, standards, and 
+compliance requirements that are of particular importance to the enterprise 
+ A definition of general and specific responsibilities for incident response/handling, including 
+handling of evidence and reporting 
+ References to documentation that supports the policy, such as detailed incident 
+response/handling, incident triage, and computer forensic policies and procedures 
+ User awareness training pertaining to incident identification and reporting 
+ Metrics for measuring the incident response capability and its effectiveness 

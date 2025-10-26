@@ -1,0 +1,25 @@
+iv. Mesh Topology 
+It is a point-to-point connection to other nodes or devices. All the network nodes are 
+connected to each other. Mesh has n (n-2)/2 physical channels to link n devices. 
+There are two techniques to transmit data over the Mesh topology, they are: 
+
+1. Routing 
+2. Flooding 
+ 
+1. Routing 
+In routing, the nodes have a routing logic, as per the network requirements. Like routing 
+logic to direct the data to reach the destination using the shortest distance. Or, routing logic 
+which has information about the broken links, and it avoids those nodes etc. We can even 
+have routing logic, to re-configure the failed nodes. 
+
+2. Flooding 
+In flooding, the same data is transmitted to all the network nodes; hence no routing logic is 
+required. The network is robust, and it’s very unlikely to lose the data. But it leads to 
+unwanted load over the network. 
+ 
+Figure 8: Mesh Topology 
+
+Types of Mesh Topology 
+1. Partial Mesh Topology: In this topology some of the systems are connected in the same 
+fashion as mesh topology but some devices are only connected to two or three devices. 
+2. Full Mesh Topology: Each and every nodes or devices are connected to each other. 

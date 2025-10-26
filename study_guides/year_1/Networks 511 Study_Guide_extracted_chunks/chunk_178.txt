@@ -1,0 +1,21 @@
+3.7 Proxy Reverse Proxy 
+
+3.7.1 Web acceleration refers to speeding up the transfer of content between web servers and 
+client browsers by using a variety of techniques such as caching and compression. 
+High-traffic websites must support hundreds of thousands, if not millions, of users in a fast, reliable 
+manner. To scale to meet such high volumes, modern computing best practice usually calls for 
+adding more server hardware, which can become expensive. Web acceleration instead employs 
+other methods to speed delivery of both static and dynamic content, enabling your web servers to 
+handle more client requests without the need for more hardware. 
+
+3.7.2 HTTP Optimization 
+
+One of the primary ways to accelerate web traffic is by using a load balancer or reverse proxy 
+server to optimize HTTP traffic as it flows between clients and backend servers. Users access the 
+web from a variety of devices – laptops, mobile phones, smart TVs, and cameras – over connections 
+that vary widely in bandwidth. Content acceleration is important because the web server can have 
+its resources tied up as the client is accepting and processing the data it has just received. This can 
+create inefficiencies in server utilization and lead to poor performance for other users as well. 
+Through HTTP optimization techniques, the load balancer sits in between clients and servers, 
+forwarding requests for content to backend servers in a streamlined and efficient manner that 
+maximizes speed and server utilization. 

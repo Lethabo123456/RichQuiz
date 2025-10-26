@@ -1,0 +1,20 @@
+tribute is mandatory for 
+checkboxes and radio buttons, and optional for other field types:    
+   
+              <label for=”radioButtonField1”>A radio button field</label>   
+              <input type=”radio” name=”radioButtonField” id=”radioButtonField1”  value=”radio1” />   
+              <label for=”radioButtonField2”>Another radio button</label>   
+              <input type=”radio” name=”radioButtonField” id=”radioButtonField2” value=”radio2” />   
+   
+You can preselect a radio button using the same technique as for preselecting checkboxes.    
+   
+• 
+A submit button — Clicking this type of button sends the filled-in form to the server-side 
+script for processing. The value attribute stores the text label that is displayed inside the 
+button (this value is also sent to the server when the button is clicked):   
+   
+              <label for=”submitButton”>A submit button</label>   
+
+21   
+   
+              <input type=”submit” name=”submitButton” id=”submitButton” value=”Submit Fo

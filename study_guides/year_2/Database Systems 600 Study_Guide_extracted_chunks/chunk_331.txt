@@ -1,0 +1,12 @@
+type the applications during coding of the programs. Tools such as report 
+generators, screen painters, and menu generators are especially useful to application programmers. 
+ 
+Test the Database During this step, the DBA tests the database to ensure that it maintains the 
+integrity and security of the data. Data integrity is enforced by the DBMS through the proper use 
+of primary and foreign key rules. Many DBMSs also support the creation of domain constraints and 
+database triggers. Testing will ensure that these constraints were properly designed and 
+implemented. Data integrity is also the result of properly implemented data management policies, 
+which are part of a comprehensive data administration framework.  
+Previously, users and roles were created to grant users access to the data. In this stage, not only 
+must those privileges be tested, but the broader view of data privacy and security must be 
+addressed. Data stored in the company database must be protected from access by un

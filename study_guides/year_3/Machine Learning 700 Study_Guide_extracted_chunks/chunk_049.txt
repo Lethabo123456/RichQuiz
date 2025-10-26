@@ -1,0 +1,22 @@
+2.2.2 Handling Outliers 
+Outliers are data points that are significantly different from the rest of the dataset. They can occur 
+due to measurement errors or genuine extreme values. Outlier detection is crucial for improving 
+model accuracy and robustness. Common techniques for handling outliers: 
+✓ Remove outliers: If an outlier is a result of a data entry error, it should be removed. 
+✓ Transform data: Use logarithmic transformations or robust scaling. 
+✓ Cap extreme values: Replace extreme values with a predefined threshold (e.g., 5th and 95th 
+percentiles). 
+Example: Removing Outliers Using the Percentile Method 
+import numpy as np 
+# Generate sample data with an outlier 
+data = np.array([10, 12, 13, 15, 1000])  # 1000 is an outlier 
+# Remove outlier using percentile method 
+filtered_data = data[data < np.percentile(data, 95)] 
+       print(filtered_data) 
+
+2.2.3 Removing Duplicates 
+Duplicate records can cause bias in the dataset, leading to misleading model predictions. Removing 
+duplicates ensures that each observation is unique. Cleaning redundant data prevents models from 
+being skewed by repeated observations. The drop_duplicates() method removes duplicate rows 
+from the dataset in-place, modifying the original DataFrame. 
+df.drop_duplicates(inplace=True)

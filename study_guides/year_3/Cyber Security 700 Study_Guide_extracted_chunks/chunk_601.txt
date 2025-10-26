@@ -1,0 +1,36 @@
+Identify 
+The identification phase is initiated when there is a request for a forensic analysis. This phase involves 
+understanding the purpose of the request and the scope of the investigation, such as type of case, 
+subjects involved, and system involved. A forensic analyst must determine if a request contains 
+sufficient information to start the process. If not, the analyst must coordinate with the requester to 
+determine the next step. 
+ 
+The identification phase determines where the data of interest are stored and what data can be 
+recovered and retrieved. Another task of this phase is to set up and validate forensic hardware and 
+software and create system configuration as needed. 
+ 
+Collect 
+Once the location or locations of data are identified, the forensic process needs to ensure that the 
+data are collected in a manner that preserves the integrity of the evidence. Typically, enterprise policy 
+requires the use of special-purpose forensic hardware and software to ensure that the original data 
+are never altered and that the evidence collected stands up to legal scrutiny. Once the data are 
+collected, they are verified and backed up to ensure that a valid image exists.  
+The data collection process includes one or more of the following, depending on the purpose of the 
+forensic analysis: 
+
+ Capturing data from system logs, event logs, and incident logs 
+ Discovering data on computer systems 
+ Recovering deleted, encrypted, or damaged file information 
+ Monitoring online activity 
+ Making a bit-image copy of an affected system’s hard drive 
+ Detecting violations of corporate policy 
+
+For this phase, as well as the preservation phase, an organization should use forensic software tools 
+that are well known in the computer forensics community, such as Forensic Tool Kit (FTK) and EnCase. 
+ 
+Preserve 
+Several actions comprise the preservation of data process, including the following: 
+ 
+ Creating a log that documents when, from where, how, and by whom data were collected 
+ Storing the data in a secure fashion to prevent tampering or contamination 
+ Logging each access to the data made for forensic analysis 

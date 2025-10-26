@@ -1,0 +1,21 @@
+Using lossless compression, data is compressed by removing redundant 
+information. For example, the following text string, consisting of 4 as followed by 5 
+Bs, and then 6 Cs requires 15 characters of information: 
+AAAABBBBBCCCCCC 
+Yet, this content can be rewritten using the following 6 characters with no 
+loss of 4A5B6C 
+This same general technique can be applied to digital audio and video, which can 
+contain long stretches of redundant sound and images. The disadvantage of lossless 
+compression is that you cannot achieve the same level of compression as with lossy 
+compression. Most codecs involve some combination of lossy and lossless 
+techniques. Web developers can choose from dozens of different codecs to 
+compress their multimedia content.
+
+Codecs are placed within a container that handles the packaging, transportation, and 
+presentation of the data. The container is essentially the file format, which is identified by a 
+file extension. The web supports a multitude of container and codec combinations but not all 
+containers and codecs are equally supported. For example, Google Chrome uses the WebM 
+container for video content, compressing that data with the VP8 codec; however, that 
+combination of container and codec is not supported by Internet Explorer or any Apple device, 
+such as iPods or iPads. Thus, web developers have to account for browser support before 
+making any multimedia content available to the user. 

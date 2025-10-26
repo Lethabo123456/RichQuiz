@@ -1,0 +1,15 @@
+notices will not interfere with the running of your script; for example, 
+in the case just shown, all that happens is that an empty string is passed to the echo() statement: 
+<dt>Gender</dt><dd><?php echo $_POST[“gender”]?></dd>   
+   
+However, it is generally a good idea to write your code so that it does not generate notices. This 
+helps to ensure the robustness and security of your application. This means that you should check 
+for the presence of a submitted form field before using it, rather than assuming that it exists. You 
+can do this using PHP functions such as isset() or array_key_exists() :   
+   
+<dt>Gender</dt><dd><?php if ( isset( $_POST["gender"] ) ) echo $_POST["gender"]?></dd>   
+   
+   
+Reading/Activity: Using your prescribed book, the internet or any other comparable source, 
+you are strongly urged to perform some research pertaining to how PHP deals with Multi-Value 
+Fields. This is not a very large discussion topic, so you should be done and dusted with it in under

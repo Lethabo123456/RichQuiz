@@ -1,0 +1,24 @@
+NINE | FORMS 
+ 
+LEARNING OUTCOMES 
+1. Use forms to communicate with users 
+2. Add text boxes, text area fields, list boxes, radio buttons and check 
+boxes to a form 
+3. Add submit and reset buttons 
+ 
+INTRODUCTION 
+ 
+In general, if you want to collect vital information about someone or something, the 
+form is used. What if you want to create a Web page which will collect data from the 
+user? You can collect data from the users of your Web site by using forms. For 
+instance, you can ask users to fill out forms to specify which products they want to 
+order. You can also use forms to collect feedback about your site. 
+
+9.1 FORMS 
+You use <form> tags to create a form. This tag encloses the code for all the fields in a 
+form, such as text boxes, text area, check boxes, radio buttons, and other buttons. 
+The data of a form is stored and processed in a database on a Web server. You process 
+the data by assigning the value POST or GET to the METHOD attribute. POST is used 
+when you want to store the data of the form in the database and GET is used to 
+retrieve data from the database. You use the ACTION attribute of the FORM tag to 
+specify the URL of a program that processes this data. 

@@ -1,0 +1,23 @@
+t (++) operator for a class if the operator function 
+is a member of that class, it must have no parameters. Similarly, to overload 
+the pre-decrement (--) operator for a class if the operator function is a member 
+of that class, it must have no parameters. 
+8. To overload the post-increment (++) operator for a class if the operator function 
+is a member of that class, it must have one parameter, of type int. The user 
+does not specify any value for the parameter. The dummy parameter in the 
+function heading helps the compiler generate the correct code. The post-
+decrement operator has similar conventions. 
+9. The operator functions that overload the stream insertion operator, <<or>>, for 
+a class must be friend functions of that class. 
+10. Using templates, you can write a single code segment for a set of related 
+classes—called the class template. 
+ 
+ 
+ 
+
+252 | P a g e  
+ 
+ 
+      
+1. Write a program that uses C++ random number generators to generate 25 real 
+numbers between 10 and 1

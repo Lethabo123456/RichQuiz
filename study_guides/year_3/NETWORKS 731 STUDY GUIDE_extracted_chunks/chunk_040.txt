@@ -1,0 +1,33 @@
+2.2 Differentiate Fault Tolerance Devices and Interfaces 
+Even when dedicated links and VPN connections remain sound, a faulty device or interface in 
+the data path can affect service for a user, a whole segment, or the whole network. To 
+understand how to increase the fault tolerance of a connection 
+from end to end, let’s return to the example of Legend PayNTime. Suppose that the company’s 
+network administrator decides to establish a VPN agreement with a national ISP. Legend 
+PayNTime bandwidth analysis indicates that a single T1 link is sufficient to transport the data 
+of five customers from the ISP’s office to Legend PayNTime data room. Figure 2.3 provides a 
+detailed representation of this arrangement 
+ 
+Figure 2.3 Single T1 connectivity 
+© Cengage Learning 2023 
+ 
+Notice the single points of failures within this arrangement shown in Figure 2.3. If the link T1 
+fails for example it gets accidentally cut during a road construction all the devices connected 
+through it will suffer a fault or failure and deficiency in performance: 
+● Firewall 
+● Router 
+● CSU/DSU 
+● Multiplexer 
+● Switch 
+ 
+Figure 2.3 Shows a network design that ensures full redundancy for all components linking 
+two locations through a T1 link  
+ 
+Figure 2.3 Fully redundant T1 connectivity 
+© Cengage Learning 2023 
+ 
+To achieve the utmost fault tolerance, each critical device requires redundant NICs, Small 
+Form-factor Pluggable SFPs, power supplies, cooling fans, and processors, all of which should 
+be able to immediately assume the duties of an identical component, a capability known as 
+automatic failover. If one NIC in a router fails, for example, failover ensures that the router’s 
+other NIC can automatically handle the first NIC’s responsibilities.

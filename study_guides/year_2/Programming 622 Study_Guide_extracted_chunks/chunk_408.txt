@@ -1,0 +1,48 @@
+)     
+  
+  
+  
+  
+  
+//if no error, print the result  
+{  
+if (!stack.isEmptyStack())  
+{ result = stack.top(); 
+stack.pop();  
+  
+if (stack.isEmptyStack()) outF << result << endl; else 
+outF << " (Error: Too many operands)" << endl; } //end if  
+else outF << " (Error in the expression)" << endl;  
+}  
+else outF << " (Error in the expression)" << endl;  
+outF << "_________________________________"<< endl << endl;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//end printResult  
+  
+ 
+5.4.6  Program Listing  
+  
+//************************************************************* // 
+This program uses a stack to evaluate postfix expressions.  
+//*************************************************************  
+#include <iostream>  
+#include <iomanip>  
+
+207  
+  
+#include <fstream> 
+#include "mystack.h" 
+using namespace std;  
+void evaluateExpression(ifstream& inpF, ofstream& outF, stackType<double>& stack  
+, char& ch, bool& isExpOk); void 
+evaluateOpr(ofstream& out, stackType<double>& stack, 
+char& ch, bo

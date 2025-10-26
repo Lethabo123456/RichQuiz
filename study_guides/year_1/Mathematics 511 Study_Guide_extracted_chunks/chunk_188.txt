@@ -1,0 +1,36 @@
+3.5 Matrices 
+Introduction 
+Matrices are used throughout discrete mathematics to express relationships 
+between elements in sets. For instance, matrices will be used in models of 
+communications networks and transportation systems. This section reviews 
+matrix arithmetic that will be used in these algorithms. 
+ 
+Definition 40 
+A matrix is a rectangular array of numbers. A matrix with m rows and n 
+columns is called an m × n matrix. The plural of matrix is matrices. A matrix 
+with the same number of rows as columns is called square. Two matrices are 
+equal if they have the same number of rows and the same number of 
+columns and the corresponding entries in every position are equal. 
+ 
+The matrix shown below is an example of is a 3 × 2 matrix. 
+ 
+ 
+ 
+Boldface uppercase letters will be used to represent matrices. 
+ 
+Let m and n be positive integers and let 
+
+The 𝑖𝑡ℎ row of A is the 1 × n matrix [𝑎𝑖1, 𝑎𝑖2, . . . , 𝑎𝑖𝑛]. The j th column of A is the m 
+× 1 matrix 
+ 
+ 
+ 
+The (i, j )th element or entry of A is the element aij , that is, the number in the 
+𝑖𝑡ℎ row and j th column of A. A convenient shorthand notation for expressing 
+the matrix A is to write A = [aij], which indicates that A is the matrix with its 
+(i, j )th element equal to aij. 
+
+3.5.1 Matrix Arithmetic 
+ 
+3.5.1.1 Matrix Addition 
+

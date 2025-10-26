@@ -1,0 +1,20 @@
+tant, followed by the value for the constant, as shown here:  
+  
+define( “MY_CONSTANT”, “19” ); // MY_CONSTANT always has the string value “ 19 ” 
+echo MY_CONSTANT; // Displays “ 19 ” (note this is a string, not an integer)  
+  
+Constants are useful for any situation where you want to make sure a value does not change 
+throughout the running of your script. Common uses for constants include configuration files and 
+storing text to display to the user. Let us use a constant in an example involving the area of a circle. 
+
+33  
+We are going to create a PHP script called circle_properties.php. Save this simple script as 
+circle_properties.php in your Web server’s document root folder, then open its URL. Its URL is 
+http://localhost/circle_properties.php according to the way we have been testing our scripts all 
+along. Run the script:  
+  
+< ?php  
+$radius = 4;  
+$diameter = $radius * 2;  
+$circumference = M_PI * $diameter; $area = M_PI * 
+pow( $radius, 2 ); echo “This circle has... < br /

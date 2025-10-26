@@ -1,0 +1,46 @@
+5.3.10 nbtstat Utility 
+Microsoft Windows uses an interface called Network Basic Input/Output System (NetBIOS), which 
+relates names with workstations and is an upper-layer interface that requires a transport 
+protocol—usually TCP/IP. But IPv6 can be used as well. Deploying the nbtstat utility will achieve 
+these three important things: 
+• Track NetBIOS over TCP/IP statistics 
+• Show the details of incoming and outgoing NetBIOS over TCP/IP connections 
+• Resolve NetBIOS names 
+Understand that because NetBIOS name resolution is primarily a Windows network utility, the 
+nbtstat command is available only in Windows-based operating systems. To display a basic 
+description of nbtstat and its associated options, type nbtstat at the command line. Then, use 
+these options to get a display of information about NetBIOS over TCP/IP hosts. Here are some of 
+the tools, or switches, you can use: 
+
+-a 
+-A 
+-c 
+-n 
+-r 
+-R 
+-S 
+-s 
+
+All nbtstat switches are case sensitive. Lowercase switches deal with NetBIOS names of hosts, and 
+the uppercase ones deal with the TCP/IP addresses of hosts. 
+The –a Switch 
+Making use of the –a switch will get you a remote machine’s NetBIOS name table consisting of a 
+list of every NetBIOS name the machine from which you’ve deployed the switch knows of. The – 
+a switch produced the output from server S1 shown in Figure 5.22. 
+
+So, using this switch arranges the NetBIOS name-table information in table form with output in 
+four columns. The Name column displays the NetBIOS name entry for the remote host machine. 
+ 
+Figure 5.22: Sample output of the nbtstat –a command (Lammle, 2022) 
+ 
+The next column gives you a unique two-digit hexadecimal identiﬁer for the NetBIOS 
+name. This identiﬁer represents the last byte of the NetBIOS name depicted in the Name 
+column, and it’s important because the same name could actually be used several times for the 
+same machine. Plus, it identiﬁes the speciﬁc service on the particular host that the name is 
+referencing. Table 5.5 and Table 5.6 list the hexadecimal identiﬁers for unique and group 
+hostnames. 
+
+The Type column refers to (surprise) the type of NetBIOS name being referenced. Unique 
+NetBIOS names refer to individual hosts, and group names refer to logical groupings of 
+workstations—either domains or workgroups. The Status column gives you information about 
+the status of the host’s NetBIOS even if it hasn’t been registered with the rest of the network.

@@ -1,0 +1,37 @@
+There are several steps to getting a debug key for a maps application: 
+
+1. Get the SHA1 fingerprint for your project: Select View > Tool Windows > Gradle. A panel titled 
+Gradle will open on the right side of the editor. 
+2. Expand the project until you see :app. Expand that. Expand Tasks. Expand android. Double-click 
+signingReport (on the left side of Figure 7.8. The Run panel will open at the bottom of Android 
+Studio. 
+3. Locate SHA1: in the Config: debug portion of the report (If there is no report, you may have to 
+click the run button on the top left of the panel.) Copy the long hexadecimal number. (Be careful 
+to only copy the key and not the SHA1: header.) Note that the key will look similar to this: 
+72:27:E9:A6:AF:85:77:C2:4C:F2:22:45:72:98:1B:2C:50:F4:07:B1. 
+4. Google now requires new users of the Maps platform to set up a billing account to gain access 
+to it. The billing account requires a credit card. What we do with maps in this book falls into the 
+free access use category, but they still require the billing account to get a key. If you are 
+interested in continuing, you need to do this to get maps to work. Since procedures change 
+frequently, please refer to the following to set up the account and get a map key: 
+https://developers.google.com/maps/documentation/android-sdk/intro. You will need the 
+SHA1 fingerprint you generated previously to obtain the key. 
+5. If you have a key, return to Android Studio and open the AndroidManifest.xml file. Just before 
+the </application> tag at the bottom of the file, enter the following:
+
+<meta-data android:name="com.google.android.maps.v2.API_KEY" 
+android:value="YourKeyGoesHere" /> 
+ 
+6. You also must add the location of the library for the map objects in the manifest. Enter the 
+following after the line you added previously and before the </application> tag: 
+ 
+<uses-library android:name="org.apache.http.legacy" android:require="false" /> 
+ 
+The process of getting a production map key so that you can release the app to other individuals is 
+essentially the same. However, you have to create a new keystore and get the SHA1 fingerprint from 
+that keystore (see http://developer.android.com/tools/publishing/app-signing.html). 
+ 
+Setting Permissions for the Map To use maps in your app, you have 
+to give the app more permissions. Open the AndroidManifest.xml file 
+and enter the permissions in Listing 7.9. Put these permissions after 
+the <manifest tag and before the <application tag. 

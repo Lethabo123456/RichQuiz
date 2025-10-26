@@ -1,0 +1,29 @@
+Number theory is undecidable 
+Goedel proved the incompleteness theorem before Turing proved the halting 
+problem. Given the halting problem, however, we can write a particularly nice proof 
+of the incompleteness theorem. 
+ 
+Consider a program running on a computer. The computer operates in a series of 
+discrete steps, each of which can be captured by the contents of memory (including 
+the program counter and all other registers). Some special value, appearing in some 
+special subset of the memory, indicates the act of halting. 
+ 
+If the program halts there must exist some maximum, over time, of the amount of 
+memory it uses. Call that maximum m (expressed in bits). We can capture the entire 
+step-by-step history of the program as a (huge!) binary integer. Start with a string of 
+m ones, followed by a zero. This indicates the grouping of subsequent bits. Each 
+subsequent group of m bits indicates the contents of memory for the next step of the 
+computation. 
+ 
+The rules that take us from one step to another can be expressed in terms of simple 
+arithmetic functions. This means we can create a Predicate P(e,p,i) that is true iff e is 
+the encoding of a computation of program p, running with input i. 
+ 
+Now suppose we that number theory is decidable. Then every true statement has a 
+proof. But now we can solve the halting problem! Given a program p, consider the 
+statements (Ei)[P(e,p,i)] (the program halts) and (Ai)[~P(e,p,i)] (the program does not 
+halt). One of these statements must have a proof, which will have finite length, and 
+which we can check in finite time. All (!) we have to do is enumerate all the 
+proofs in the world, one at a time, (e.g. starting with the shortest and working up), 
+until we find one for one of our two statements. This constitutes a (very slow) 
+algorithm to solve the halting problem.

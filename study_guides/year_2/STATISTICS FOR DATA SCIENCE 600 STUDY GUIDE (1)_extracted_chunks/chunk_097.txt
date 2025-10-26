@@ -1,0 +1,23 @@
+So, in this case, we can take the visitor logs and calculate the relative frequency of 
+event A (repeat visitors). Let's say, of the 1,458 unique visitors in the past week, 452 
+were repeat visitors. We can calculate this as follows: 
+P(A) RF(A) =
+ 
+So, about 31% of your visitors are repeat visitors. 
+The law of large numbers 
+The reason that even the Frequentist approach can do this is because of the law of 
+large numbers, which states that if we repeat a procedure over and over, the relative 
+frequency probability will approach the actual probability. Let's try to demonstrate 
+this using Python. 
+If I were to ask you the average of the numbers 1 and 10, you would very quickly 
+answer around 5. This question is identical to asking you to pick the average number 
+between 1 and 10. Let's design the experiment to be as follows: 
+Python will choose n random numbers between 1 and 10 and find their average. 
+We will repeat this experiment several times using a larger n each time, and then we 
+will graph the outcome. The steps are as follows: 
+
+1. Pick a random number between 1 and 10 and find the average. 
+2. Pick two random numbers between 1 and 10 and find their average. 
+3. Pick three random numbers between 1 and 10 and find their average. 
+4. Pick 10,000 random numbers between 1 and 10 and find their average. 
+5. Graph the results. 

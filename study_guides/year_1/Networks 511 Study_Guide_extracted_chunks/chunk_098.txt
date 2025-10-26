@@ -1,0 +1,18 @@
+2.3.3 Full Duplex Ethernet Mode 
+On the other hand, full-duplex is used to describe communication where both sides are able to send 
+and receive data at the same time. In these cases, there is no danger of a collision “auto detect 
+mechanism” and therefore the transfer of data is completed much faster (it can run at 10Mpbs or 
+100Mbps). 
+
+These days, all networks make use of switches (rather than hubs) and UTP Ethernet cabling, which 
+allow full-duplex communication between all connected hosts. 
+Full duplex Ethernet mode can be deployed in the following conditions:
+ 
+Switch to host connection 
+Switch to a switch connection 
+Host to host connection by using crossover cable 
+A few points to remember for deploying full duplex Ethernet mode: 
+No collisions in full duplex. 
+A dedicated port is necessary for each full duplex device. 
+ Host’ network identification card and switch port have to able to operate in full duplex 
+mode. 

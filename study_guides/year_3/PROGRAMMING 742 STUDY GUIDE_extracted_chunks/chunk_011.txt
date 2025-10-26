@@ -1,0 +1,12 @@
+1.1.2 Method Arguments 
+
+Methods can take any number of parameters. The parameter list follows the method name and 
+is encased in parentheses, with each parameter preceded by its type. For example, the following 
+declaration defines a method named MyMethod, which returns void (that is, which returns no 
+value at all) and which takes two parameters: an int and a button: 
+void MyMethod (int firstParam, button secondParam) {
+ 
+Within the body of the method, the parameters act as local variables, as if you had declared 
+them in the body of the method and initialized them with the values passed in. Example 2-2 
+illustrates how you pass values into a method -- in this case, values of type int and float. 
+ 

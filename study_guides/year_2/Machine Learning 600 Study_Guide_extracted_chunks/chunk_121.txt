@@ -1,0 +1,17 @@
+ate how they are being implemented 
+and used. 
+
+P a g e  | 77 
+ 
+6.8 CNN & Transfer Learning 
+So far, we've covered two potential ways of classifying images through neural networks: the 
+multilayer perceptron and convolutional neural network. As you may have noticed, these can 
+take time to train.  
+Using a technique called transfer learning, we can use existing models and use their weights 
+to do predictions or create a newly updated model based on the pretrained model. Model 
+training on images and video are intensive on your time and your computing power, so finding 
+that someone else has done all the work so we can reuse the model is great. The 
+DeepLearning4J website has a model zoo that lets you use existing models in your work. You'll 
+see examples for CNNs that you've just learned about and other model types such as Long 
+Short Term Memory (LSTM) models. Convolutional neural networks do not show the specific 
+features until the later layers; this means that most of the generic

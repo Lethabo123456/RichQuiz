@@ -1,0 +1,32 @@
+4.3 How does Machine Learning work? 
+
+Each type of machine learning and discrete model functions in very dissimilar ways, exploiting 
+different parts of mathematics and data science. Nevertheless, in general, machine learning works by 
+taking in data, finding relationships within the data, and giving as output what the model learned, as 
+illustrated in the following diagram:  
+ 
+Key Steps involved in Machine learning (Mayo, 2022): 
+ 
+• Data Collection: The first step is to gather relevant data from various sources. The quality and 
+quantity of the data play a crucial role in the success of machine learning algorithms. 
+• Data Preprocessing: Once the data is collected, it needs to be cleaned and prepared for 
+training. This involves handling missing values, normalizing the data, and converting it into a 
+suitable format for the machine learning algorithm. 
+• Feature Extraction: Feature extraction involves identifying and selecting the most relevant 
+features (characteristics) from the data that will be used to make predictions. 
+ 
+Figure 4.2 – Overview of Machine Learning Model 
+
+• Model Selection: Depending on the type of problem and the nature of the data, a suitable 
+machine learning model is chosen. There are various types of models, including decision trees, 
+support vector machines, neural networks, and many more. 
+• Model Training: The selected model is fed with the preprocessed data, and the algorithm 
+adjusts its internal parameters to find patterns and relationships within the data. During this 
+training process, the model learns from the data to make predictions. 
+• Model Evaluation: Once the model is trained, it needs to be evaluated on a separate set of 
+data that was not used during the training process. This testing data allows us to measure the 
+model's accuracy and effectiveness in making predictions. 
+• Model Optimization: Based on the evaluation results, the model may be fine-tuned and 
+optimized. 
+• Model Deployment: Once the model is trained and optimized, it can be integrated into real-
+world applications to make predictions or automate decision-making.

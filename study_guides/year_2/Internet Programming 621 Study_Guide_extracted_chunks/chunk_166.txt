@@ -1,0 +1,32 @@
+lo, world! < /p >  
+”;  
+ 
+ 
+ 
+ 
+ 
+  
+}  
+helloWithStyle( “Helvetica”, 2 ); 
+helloWithStyle( 
+“Times”, 
+3 
+); 
+helloWithStyle( “Courier” ); ? >  
+< /body >  
+< /html >  
+  
+You can see that the third call to helloWithStyle() does no t pass a second argument to the function.  
+This causes PHP to give the $size parameter its default value of 1.5. The end result is that the third 
+“ Hello, world! ” is displayed in Courier font with a size of 1.5 em, just like the first version of the 
+script.  
+  
+6.8 Returning Values From Your Functions  
+Earlier in the chapter, you saw that functions can return values as well as accept them. For example, 
+the built-in sqrt() function shown earlier accepts an argument (a number) and returns a value (the 
+square root of that number).  
+  
+Note that both accepting arguments and returning values are optional. A function can do either, 
+both, or neither of these things.  
+  
+To get your function to return a value, you use — you guessed it — PHP’s return stat

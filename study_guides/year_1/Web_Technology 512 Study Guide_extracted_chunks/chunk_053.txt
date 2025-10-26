@@ -1,0 +1,31 @@
+ith a string of text. Like this: 
+var number1; 
+number1 = 42; 
+number1 = "one hundred"; 
+ 
+This time the text "one hundred" is stored in the variable called number1, even though 
+previously the variable held a number. Other languages would not let you do this. If 
+you set up a variable to hold a number then an error would be raised if you tried to 
+store text in it. JavaScript, however, does not care. 
+
+ 
+38 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+3.2 MATHEMATICAL OPERATORS 
+ 
+You can use the mathematical operators with variables. This allows you to add up, 
+multiply, subtract, and divide. The mathematical operators are these: 
+ 
+ 
+The plus symbol ( + ) is used for addition 
+ 
+The minus symbol ( - ) is used for subtraction 
+ 
+The asterisk symbol ( * ) is used for multiplication 
+ 
+The forward slash symbol ( / ) is used for division 
+ 
+The percentage symbol ( % ) is used for modulus calculations 
+To get some practice with these symbols, create a new web page. Or you can reuse

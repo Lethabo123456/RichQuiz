@@ -1,0 +1,31 @@
+4.5 FORMATTING TEXT 
+ 
+You can increase the readability of a page by changing the style, size, or color of 
+the text. 
+ 
+Formatting body text 
+You can modify the appearance of a page by adding formatting tags to its source 
+code. You format a page by specifying the color for the text, underlining or 
+italicizing the text, or making it bold. Browsers determine a specific format and 
+the text formatted by using these formatting tags might appear different on 
+different browsers. The following table lists some of the formatting tags and their 
+function. 
+
+
+Tag                    Function
+------------------------------------------------------------------------
+<B> </B>               Makes the text enclosed within these tags bold. 
+------------------------------------------------------------------------
+<I> </I>               Italicizes the text enclosed within these tags.
+------------------------------------------------------------------------ 
+<U> </U>               Underlines the text enclosed within these tags.
+------------------------------------------------------------------------
+
+Attributes 
+Attributes of a tag provide additional features to a tag. You specify attributes within 
+the starting tag. The syntax for using an attribute is: 
+<Tag_name attribute_name=value> 
+ 
+In HTML, there are attributes which are known as global attributes. These attributes 
+can be used on any HTML element/tag. The following table contains a list of mostly 
+used global attributes and their description. 

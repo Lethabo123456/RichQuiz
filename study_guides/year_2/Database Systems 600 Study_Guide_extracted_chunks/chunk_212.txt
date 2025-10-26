@@ -1,0 +1,17 @@
+n, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six page 203-203. 
+
+ 
+84 
+3.3 Improving the Design 
+ 
+Now that the table structures have been cleaned up to eliminate the troublesome partial and 
+transitive dependencies, you can focus on improving the database’s ability to provide information 
+and on enhancing its operational characteristics. Following, you will learn about the different types 
+of issues you need to address to produce a well normalized set of tables. Remember that 
+normalization cannot, by itself, produce good designs. Thus, other considerations need to be made 
+to improve the overall design of the database. These include: 
+Evaluating PK Assignments. Unfortunately, it is too easy to make data-entry errors that lead to 
+referential integrity violations if a key attribute needs to be entered with every new record. For 
+example, each time a new employee is entered in the EMPLOYEE table, a JOB_CLASS value must 
+be entered. In such cases, it would

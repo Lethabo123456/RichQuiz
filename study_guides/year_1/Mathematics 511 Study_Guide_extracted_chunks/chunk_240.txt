@@ -1,0 +1,35 @@
+4.5. Euler and Hamilton Paths 
+Introduction 
+Can we travel along the edges of a graph starting at a vertex and returning 
+to it by traversing each edge of the graph exactly once? Similarly, can we 
+travel along the edges of a graph starting at a vertex and returning to it while 
+visiting each vertex of the graph exactly once? Although these questions 
+seem to be similar, the first question, which asks whether a graph has an 
+Euler circuit, can be easily answered simply by examining the degrees of the 
+vertices of the graph, while the second question, which asks whether a graph 
+has a Hamilton circuit, is quite difficult to solve for most graphs. In this 
+section we will study these questions and discuss the difficulty of solving 
+them. Although both questions have many practical applications in many 
+different areas, both arose in old puzzles. We will learn about these old 
+puzzles as well as modern practical applications. 
+
+4.5.1 Euler Paths and Circuits 
+The town of Königsberg, Prussia (now called Kaliningrad and part of the 
+Russian republic), was divided into four sections by the branches of the 
+Pregel River. These four sections included the two regions on the banks of 
+the Pregel, Kneiphof Island, and the region between the two branches of the 
+Pregel. In the eighteenth century seven bridges connected these regions. 
+Figure 4.14 depicts these regions and bridges. 
+ 
+Figure 4.14: The Seven Bridges of Königsberg. 
+
+The townspeople took long walks through town on Sundays. They wondered 
+whether it was possible to start at some location in the town, travel across 
+all the bridges once without crossing any bridge twice, and return to the 
+starting point. 
+The Swiss mathematician Leonhard Euler solved this problem. His solution, 
+published in 1736, may be the first use of graph theory. Euler studied this 
+
+problem using the multigraph obtained when the four regions are 
+represented by vertices and the bridges by edges. This multigraph is shown 
+in Figure 4.15. 

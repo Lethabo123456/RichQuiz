@@ -1,0 +1,26 @@
+CODE)); 
+In the creation of the LINE table, note that a UNIQUE constraint is added to pre-vent the duplication 
+of an invoice line. A UNIQUE constraint is enforced through the creation of a unique index. 
+Create a Table with a SELECT Statement 
+SQL provides a way to rapidly create a new table based on selected columns and rows of an existing 
+table using a subquery. In this case, the new table copies the attribute names, data characteristics, 
+and rows of the original table as retrieved by the subquery. The command is:  
+CREATE TABLE PART AS 
+SELECT 
+P_CODE AS PART_CODE, P_DESCRIPT AS PART_DESCRIPT, 
+ 
+ 
+P_PRICE AS PART_PRICE, V_CODE 
+
+ 
+116 
+FROM PRODUCT; 
+The MS Access version of this command is:  
+SELECT  P_CODE AS PART_CODE, P_DESCRIPT AS PART_DESCRIPT, P_PRICE AS 
+PART_PRICE, V_CODE INTO PART 
+FROM  
+PRODUCT; 
+However, note that no entity integrity (primary key) or referential integrity (foreign key) rules are 
+automatically applied to the new table. 
+SQL Indexes 
+You’ve learned t

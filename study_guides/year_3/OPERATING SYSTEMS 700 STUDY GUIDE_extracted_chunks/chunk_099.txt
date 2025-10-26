@@ -1,0 +1,32 @@
+3.3. Process Scheduler 
+Once a job is accepted by the Job Scheduler, the Process Scheduler manages its execution. If the 
+operating system supports threads, the Process Scheduler oversees them as well. It determines 
+which processes receive CPU time, when, and for how long. Additionally, it handles interruptions, 
+assigns jobs to appropriate queues during execution, and terminates jobs once they are completed. 
+ 
+As a low-level scheduler, the Process Scheduler is responsible for allocating the CPU to execute 
+tasks for jobs placed in the READY queue by the Job Scheduler. This coordination is critical, 
+especially when managing multiple jobs that require efficient orchestration, like prioritizing tasks 
+in a real-life scenario. 
+ 
+3.3.1. Job and Process States 
+As a job, process, or thread moves through the system, its status changes, often from HOLD, to 
+READY, to RUNNING, to WAITING, and, eventually, to FINISHED, as shown in the figure 3.1 
+below these are called the job status, process status, or thread status, respectively. 
+ 
+Figure 3.1 
+ 
+When a user submits a job, its status transitions through several states, guided by the Job Scheduler 
+and Process Scheduler. 
+
+1. HOLD: Upon submission, the job enters the HOLD state and is queued. A job spooler may record 
+its attributes (e.g., CPU time estimate, priority, required I/O devices, and memory needs) in a table, 
+which the Job Scheduler uses to decide execution order. 
+2. READY: After system resources are checked and interrupts resolved, the job moves to READY. Some 
+systems may place jobs directly into the READY queue. 
+3. RUNNING: The Process Scheduler assigns the CPU to the job, marking it as RUNNING. In single- 
+processor systems, only one job can be in this state at a time. 
+4. WAITING: If a job requires a resource or an I/O operation, it moves to WAITING. Once the need is 
+fulfilled, the job returns to READY. 
+5. FINISHED: After successful completion or due to an error, the job is marked as FINISHED and is 
+returned to the user or terminated. 

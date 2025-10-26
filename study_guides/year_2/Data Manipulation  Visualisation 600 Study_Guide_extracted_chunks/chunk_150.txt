@@ -1,0 +1,52 @@
+ponents as html 
+ 
+app = dash.Dash() 
+ 
+app.layout = html.Div([ 
+'This is the outermost Div', 
+html.Div( 
+
+ 
+ 
+ 
+ 
+'This is an inner Div', 
+ 
+style={'color':'blue', 'border':'2px blue solid', 'borderRadius':5, 'padding':10, 'width':220} 
+), 
+ 
+html.Div( 
+ 
+'This is another inner Div', style={'color':'green', 'border':'2px green 
+solid', 'margin':10, 'width':220} 
+ 
+), 
+ 
+], 
+ 
+# this styles the outermost Div: 
+ 
+style={'width':500, 'height':200, 'color':'red', 'border':'2px red dotted'}) 
+ 
+if __name__ == '__main__': 
+ 
+ 
+app.run_server() 
+ 
+Note that 'border':'2px blue solid' is shorthand for 'borderWidth':2, 
+'borderColor':'blue', 'borderStyle':'solid' 
+'borderRadius':5 needs to be listed separately. 
+Now run the script and open a browser to http://127.0.0.1:8050/ You should see something like this: 
+ 
+ 
+Note how style can be individually applied to each Div, providing color, borders, padding and margins. 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+Core Components 
+First and foremost among Dash's core component

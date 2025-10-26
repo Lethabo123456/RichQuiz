@@ -1,0 +1,19 @@
+FIGURE 4-2 list with six elements  
+  
+The largest element in the list in Figure 4-2 is 10.  
+  
+Suppose list is the name of the array containing the list elements. Also, suppose that list[a]...list[b] stands 
+for the array elements list[a], list[a + 1], ..., list[b]. For example, list[0]...list[5] represents the array 
+elements list[0], list[1], list[2], list[3], list[4], and list[5]. Similarly, list[1]...list[5] represents the array 
+
+148  
+  
+elements list[1], list[2], list[3], list[4], and list[5]. To write a recursive algorithm to find the largest element 
+in list, let us think in terms of recursion.  
+  
+If list is of length 1, then list has only one element, which is the largest element. Suppose the length of list 
+is greater than 1. To find the largest element in list[a]...list[b], we first find the largest element in list[a + 
+1]...list[b] and then compare this largest element with list[a]. That is, the largest element in list[a]...list[b] 
+is given by:  
+  
+maximum(list[

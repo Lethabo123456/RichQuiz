@@ -1,0 +1,10 @@
+an array is a random access data structure, if the data is properly organized (for 
+example, sorted), we can use a search algorithm, such as a binary search, to effectively find and retrieve 
+an item from the list. However, we know that storing data in an array has its limitations. For example, 
+iteminsertion (especially if the array is sorted) and item deletion can be very time consuming, especially 
+if the list size is very large, because each of these operations requires data movement. To speed up item 
+insertion and deletion, we can use linked lists. Item insertion and deletion in a linked list do not require 
+any data movement; we simply adjust some of the pointers in the list. However, one of the drawbacks of 
+linked lists is that theymust be processed sequentially. That is, to insert or delete an item, or simply search 
+the list for a particular item, we must begin our search at the first node in the list. As you know, a 
+sequential search is good only for very small lists beca

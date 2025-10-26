@@ -1,0 +1,18 @@
+ous chapters, you might 
+suggest: (DATE, TIME_START, ROOM) or (DATE, TIME_END, ROOM). Taking the first 
+combination may result in a lengthy, four-attribute composite primary key or lengthy primary keys 
+for existence-dependent entities. At this point, you can see that the composite primary key could 
+make the data- base implementation and program coding unnecessarily complex.  
+ 
+The preferred alternative is to use a numeric, single-attribute surrogate primary key. Surrogate 
+primary keys are accepted practice in today’s complex data environments. They are especially 
+helpful when there is no natural key, when the selected candidate key has embedded semantic 
+contents, or when the selected candidate key is too long or cumbersome. However, there is a trade-
+off: if you use a surrogate key, you must ensure that the candidate key of the entity in question 
+performs properly through the “unique index” and “not null” constraints. 
+ 
+ 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and

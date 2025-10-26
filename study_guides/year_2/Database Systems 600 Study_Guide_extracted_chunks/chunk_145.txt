@@ -1,0 +1,15 @@
+must be determined in each direction for the 
+relationship. Once again, you must consider the bidirectional nature of the relationship when 
+determining participation.  
+Optional participation means that one entity occurrence does not require a corresponding entity 
+occurrence in a relationship. For example, in the “COURSE generates CLASS” relationship, you 
+noted that at least some courses do not generate a class. In other words, an entity occurrence (row) 
+in the COURSE table does not necessarily require the existence of a corresponding entity 
+
+ 
+56 
+occurrence in the CLASS table. Therefore, the CLASS entity is considered optional to the COURSE 
+entity. In Crow’s Foot notation, an optional relationship between entities is shown by drawing a 
+small circle (O) on the side of the optional entity, as illustrated in Figure 4.9. The existence of an 
+optional entity indicates that its minimum cardinality is 0. 
+Mandatory participation means that one entity occurrence requires a correspond

@@ -1,0 +1,37 @@
+The rule sets can be described as follows: 
+
+ Rule set A: Inbound mail is allowed (port 25 is for Simple Mail Transfer Protocol [SMTP] 
+incoming), but only to a gateway host. However, packets from a particular external host, 
+SPIGOT, are blocked because that host has a history of sending massive files in email 
+messages. 
+ Rule set B: This rule set is intended to specify that any inside host can send mail to the outside. 
+A TCP packet with destination port 25 is routed to the SMTP server on the destination 
+machine. The problem with this rule is that the use of port 25 for SMTP receipt is only a 
+default; an outside machine can be configured to have some other application linked to port 
+25. As this rule is written, an attacker can gain access to internal machines by sending packets 
+with TCP source port number 25. 
+ Rule set C: This rule set achieves the intended result that was not achieved in C. The rules take 
+advantage of a feature of TCP connections. Once a connection is set up, the ACK flag of a TCP 
+segment is set to acknowledge segments sent from the other side. Thus, this rule set states 
+that it allows IP packets where the source IP address is one of a list of designated internal 
+hosts and the destination TCP port number is 25. It also allows incoming packets with source 
+port number 25 that include the ACK flag in the TCP segment. Note that you explicitly 
+designate source and destination systems to define these rules. 
+ Rule set D: This rule set is one approach to handling File Transfer Protocol (FTP) connections. 
+With FTP, two TCP connections are used: a control connection to set up the file transfer and 
+a data connection for the actual file transfer. The data connection uses a different port 
+number that is dynamically assigned for the transfer. Most servers, and hence most attack 
+targets, use low-numbered ports; most outgoing calls tend to use a higher-numbered port, 
+typically above 1023. Thus, this rule set allows: 
+ Packets that originate internally 
+ Reply packets to a connection initiated by an internal machine 
+ Packets destined for a high-numbered port on an internal machine 
+
+This scheme requires that the systems be configured so that only the appropriate port numbers are 
+in use. 
+
+ Rule set E: This is an explicit statement of the default policy. All rule sets include this rule 
+implicitly as the last rule. 
+Rule set D points out the difficulty in dealing with applications at the packet filtering level. Another 
+way to deal with FTP and similar applications is either to use stateful packet filters or an application-
+level gateway, both described subsequently in this section. 

@@ -1,0 +1,49 @@
+The next step in coding the initTextChangedEvents method is to set the phone number EditTexts to 
+autoformat the number as it’s typed. Enter the following code as the last code in that method, 
+replacing homephoneedittextvariable and cellphoneedittextvariable with the names you used 
+previously for the two variables: 
+
+homephoneedittextvariable.addTextChangedListener(new        PhoneNumberFormattingTextWatcher()); 
+cellphoneedittextvariable.addTextChangedListener(new        PhoneNumberFormattingTextWatcher()); 
+
+This code adds a listener to the phone number EditTexts that calls 
+the PhoneNumberFormattingTextWatcher object, which in turn adds the appropriate formatting as the 
+user types.
+
+Save User-Entered Data 
+
+The initTextChangedEvents method you just created sets all the EditTexts to update the MainActivity’s 
+contact object with any changes users make as they implement them. The next step is to pass that 
+object to the insert or update method in the ContactDataSource class so that the changes can be 
+stored in the database. This requires the addition of a method that initializes the Save button and 
+executes the code that will do the save operation when the button is pressed. 
+The initialization of the Save button is similar to the initialization of all the other buttons you have 
+coded so far. The only difference is what happens when the button is pressed. Enter the code in Listing 
+5.8 to create the method associated with the Save button. Don’t forget to call the method in the 
+onCreate method where the rest of the button initialization methods are called. 
+The only new code in this method is the code associated with the save operation. The basic save 
+operation opens the database; checks if this is a new contact to be inserted or if it should be updated; 
+and if the save was successful, changes the screen back to view rather than editing mode. 
+
+▪ Line 7—A Boolean variable is declared. The value of a Boolean is false unless explicitly assigned 
+true. This variable captures the return value of the ContactDataSource methods and is used to 
+determine the operations that should be performed upon success or failure of the method. 
+▪ Line 8—A new ContactDataSource object is instantiated. 
+▪ Line 10—The database is opened. It is good practice to open the database just prior to using it and  
+close it as soon as you are done. 
+▪ Lines 12–17—The current contact’s id is compared to –1. Only new contacts will have a –1 value. 
+If it is a new contact, the insertContact method is called and passed to the currentContact object. 
+Otherwise, the updateContact method is called to save the new data. 
+▪ Line 18—The database is closed as soon as possible. Do not forget to close the database! If you do 
+not close it, strange errors can show up during execution. 
+▪ Lines 24–28—The return value is checked. If the save operation was successful, the ToggleButton 
+is toggled to viewing mode and the screen is set for viewing. If it was not successful, the activity 
+remains in editing mode. 
+Test the code on the emulator. You may notice one discrepancy (but note that this does not happen 
+on all devices): when you push the Save button and the screen changes to viewing rather than editing 
+mode, the keyboard may still be displayed. If you don’t see this happen, edit your Android Virtual 
+Device. Look for Hardware Keyboard Present and uncheck it. Stop and restart the emulator. Many 
+Android devices do not have a hardware keyboard, and if your app keeps the soft keyboard displayed 
+when the user is clearly done, it will make the user think that the app doesn’t work properly. 
+Correct this by adding a method that dismisses the keyboard that is called when the Save button is 
+pressed. The code in Listing 5.9 is a method for doing this.

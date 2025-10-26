@@ -1,0 +1,21 @@
+Each NVD entry includes the following: 
+ The unique Common Vulnerabilities and Exposure (CVE) dictionary identifier 
+ A description of the vulnerability 
+ Links to websites and other references with information related to the vulnerability 
+ CVSS metrics 
+
+There are 14 CVSS metrics in three groups. Table 3.6 lists the individual metrics and shows the levels 
+defined for each one. In each case, the levels are listed from highest to lowest security concern. In  
+essence, the scoring is done as follows: For each identified vulnerability, the NVD provides a level for 
+each metric in the base group, based on the characteristics of the vulnerability. For example, the attack 
+vector metric indicates whether the attack can be launched remotely over a network or over the 
+Internet, is launched only across the immediate network to which both the attack source and the 
+target system are attached, must be done by a local login, or requires physical access to the machine. 
+The more remote the attack, the more attack sources are possible, and therefore the more serious 
+the vulnerability. This information is invaluable in enabling users to understand the characteristics of 
+a vulnerability.
+
+As Table 3.6 shows, each level of a metric has a descriptive name. In addition, the CVSS assigns a 
+numeric value on a scale of 0.0 to 10.0, with 10.0 being the most severe security issue. The numeric 
+scores for the metrics in the base metric group are put into an equation defined in the CVSS that 
+produces an aggregate base security score ranging from 0.0 to 10.0 (see Figure 3.4). 

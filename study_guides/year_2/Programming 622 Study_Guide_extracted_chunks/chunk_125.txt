@@ -1,0 +1,17 @@
+function push_back as follows:  
+  
+intList.push_back(34); intList.push_back(55);  
+  
+After these statements execute, the size of intList is 2 and intList = {34, 55}. Of course, you could have 
+used the resize function to increase the size of intList and then use the array subscripting operator. 
+However, at times, the push_back function is more convenient because it does not need to know the size 
+of the container; it simply adds elements at the end.  
+  
+ 
+2.1.4  Declaring an Iterator to a Vector Container  
+  
+Even though we can process a vector container just like an array using the array subscripting operator, 
+there are situations where we would like to process the elements of a vector container using an iterator. 
+(Recall that an iterator is just like a pointer.) For example, suppose that we want to insert an element at 
+a specific position in a vector container. Because the element is to be inserted at a specific position, this 
+would require shifting the elements of the conta

@@ -1,0 +1,16 @@
+The more comprehensive the data you collect while defining your network’s baseline, the more 
+precise your projections will be. Predicting network traffic patterns can be challenging because 
+user behavior, the impact of emerging technologies, or variations in resource demand over time 
+are unpredictable. For example, the earlier scenario assumes the new users will have network 
+usage patterns identical to the existing users. However, new users might cause significantly more 
+or less network traffic. How can you collect baseline data on your network? While theoretically, 
+it's possible to use a network monitor or analyzer and log its output periodically, many software 
+solutions are available to perform baselining tasks for you. These options range from free 
+software you can download from the Internet to sophisticated, customizable hardware and 
+software combinations. Before selecting a network-baselining tool, it's crucial to assess its 
+intended usage. For a small network offering a single crucial application to users, a cost-effective 
+tool may suffice. Conversely, if you manage a WAN with multiple critical links, exploring a more 
+comprehensive solution is advisable. The baselining tool should also be capable of gathering 
+necessary statistics. For instance, only advanced tools can assess the traffic from each network 
+node, filter traffic by protocol types and errors, and simultaneously collect statistics from multiple 
+network segments.

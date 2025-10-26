@@ -1,0 +1,43 @@
+Figure 2.2 shows a segmented memory allocation. Job 1 includes a main program and two 
+subroutines. It is a single job that is structurally divided into three segments of different sizes. 
+ 
+The Memory Manager needs to keep track of the segments in memory. This is done with three 
+tables, combining aspects of both dynamic partitions and demand paging memory management: 
+
+• The Job Table lists every job being processed (one for the whole system). 
+• The Segment Map Table lists details about each segment (one for each job). 
+• The Memory Map Table monitors the allocation of main memory (one for the whole system). 
+ 
+Like demand paging, the instructions within each segment are ordered sequentially, but the 
+segments do not need to be stored contiguously in memory. We just need to know where each 
+segment is stored. The contents of the segments themselves are contiguous in this scheme. 
+To access a specific location within a segment, we can perform an operation like the one used for 
+paged memory management. The only difference is that we work with segments instead of 
+pages. The addressing scheme requires the segment number and the displacement within that 
+segment; and because the segments are of different sizes, the displacement must be verified to 
+make sure it is not outside of the segment’s range. 
+  
+Figure 2.13 
+ 
+Figure 2.13 illustrates Segment Map Table tracks each segment for this job. Notice that Subroutine B has 
+not yet been loaded into memory. 
+
+In Figure 2.14, Segment 1 includes all of Subroutine A, so the system finds the beginning address of 
+Segment 1, 7000, and it begins there. 
+
+If the instruction requested that processing begin at byte 100 of Subroutine A (which is possible in 
+languages that support multiple entries into subroutines) then, to locate that item in memory, the 
+Memory Manager would need to add 100 to 7000 (the beginning address of Segment 1). 
+Can the displacement be larger than the size of the segment? No, not if the program is coded 
+correctly; however, accidents and attempted exploits do happen, and the Memory Manager must 
+always guard against this possibility by checking the displacement against the size of the segment, 
+verifying that it is not out of bounds.
+
+Figure 2.14 
+ 
+Figure 2.14 The Segment Map Table tracks each segment for this job. Notice that Subroutine B has 
+not yet been loaded into memory. 
+To access a location in memory, when using either paged or segmented memory management, 
+the address is composed of two values: the page or segment number and the displacement. 
+Therefore, it is a two-dimensional addressing scheme, it has two elements: SEGMENT_NUMBER 
+and DISPLACEMENT. 

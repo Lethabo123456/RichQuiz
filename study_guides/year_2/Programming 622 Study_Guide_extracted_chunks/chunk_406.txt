@@ -1,0 +1,88 @@
+{  
+op1 = stack.top(); stack.pop();  
+switch (ch)  
+{  
+case '+':  
+stack.push(op1 + op2); 
+break; case '-':  
+stack.push(op1 - op2); break;  
+case '*':  
+stack.push(op1 * op2); 
+break; case '/':  
+if (op2 != 0) stack.push(op1 / 
+op2);  
+else  
+{  
+out << " (Division by 0)"; isExpOk 
+= false;  
+}  
+break;  
+default: out << " (Illegal 
+operator)"; isExpOk = 
+false;  
+ 
+}  
+  
+  
+  
+  
+  
+//end switch  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end else  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end else  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//end evaluateOpr  
+  
+
+206  
+  
+ 
+5.4.4  Function discardExp  
+  
+This function is called whenever an error is discovered in the expression. It reads and writes the input data 
+only until the input is '=', the end of the expression. The definition of this function is as follows:  
+  
+void discardExp(ifstream& in, ofstream& out, char& ch)  
+{  
+while (ch != '=')  
+{ in.get(ch);  
+out << ch;  
+}  
+ 
+}   
+  
+  
+//end discardExp  
+  
+  
+  
+ 
+5.4.5  Function printResult  
+  
+If the p

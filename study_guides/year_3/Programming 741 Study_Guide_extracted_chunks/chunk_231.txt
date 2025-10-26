@@ -1,0 +1,29 @@
+In this example, the DoDivide ( ) method will not let you divide zero by another number, nor 
+will it let you divide a number by zero. It throws an instance of DivideByZeroException if you 
+try to divide by zero. If you try to divide zero by another number, there is no appropriate 
+exception -- dividing zero by another number is a legal mathematical operation and shouldn't 
+throw an exception at all. For the sake of this example, assume you don't want to allow 
+division by zero; you will throw an Arithmetic Exception . 
+ 
+When the exception is thrown, the runtime examines each exception handler in order and 
+matches the first one it can. When you run this with a=5 and b=7, the output is: 
+5 / 7 = 0.7142857142857143 
+As you'd expect, no exception is thrown. However, when you change the value of a to 0, the 
+output is: 
+
+ArithmeticException caught! 
+The exception is thrown, and the runtime examines the first exception, 
+DivideByZeroException. Because this does not match, it goes on to the next handler, 
+ArithmeticException, which does match. In a final pass through, suppose you change a to 7 
+and b to 0. This throws the DivideByZeroException. 
+ 
+It is possible to distribute your try /catch statements, catching some specific exceptions in one 
+function and more generic exceptions in higher, calling functions. Your design goals should 
+dictate the exact design.  
+ 
+Assume you have a method A that calls another method B, which in turn calls method C. 
+Method C calls method D, which then calls method E. Method E is deep in your code; methods 
+B and A are higher up. I f you anticipate that method E might throw an exception, you should 
+create a try /catch block deep in your code to catch that exception as close as possible to the 
+place where the problem arises. You might also want to create more general exception 
+handlers higher up in the code in case unanticipated exceptions slip by. 

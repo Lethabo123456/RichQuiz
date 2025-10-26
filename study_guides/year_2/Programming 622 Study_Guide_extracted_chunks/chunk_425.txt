@@ -1,0 +1,20 @@
+7  
+  
+TOPIC 6: QUEUES  
+  
+LEARNING OUTCOMES  
+After Studying this topic you should be able to:  
+Learn about queues  
+Examine various queue operations  
+Learn how to implement a queue as an array  
+Learn how to implement a queue as a linked list  
+Discover queue applications  
+Become aware of the STL class queue  
+  
+This chapter discusses another important data structure, called a queue. The notion of a queue in 
+computer science is the same as the notion of the queues to which you are accustomed in everyday life. 
+There are queues of customers in a bank or in a grocery store and queues of cars waiting to pass through 
+a tollbooth. Similarly, because a computer can send a print request faster than a printer can print, a queue 
+of documents is often waiting to be printed at a printer. The general rule to process elements in a queue 
+is that the customer at the front of the queue is served next and that when a new customer arrives, he or 
+she stands at the end of the queue. That is, a

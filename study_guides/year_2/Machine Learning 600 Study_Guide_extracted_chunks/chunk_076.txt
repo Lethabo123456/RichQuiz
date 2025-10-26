@@ -1,0 +1,12 @@
+method places the cluster points toward the center of the dataset. 
+Another initialization method is the Forgy method, which spreads out the randomness of the 
+initial location of the cluster. After the initial cluster observations are assigned, you can look 
+at the assignment and updating of the algorithm. 
+Assignments. Each observed object is assigned to the cluster to find out which cluster centroid 
+it's assigned to; the algorithm uses a Euclidean distance measurement. The sum of squares is 
+then calculated by squaring the Euclidean distances to each cluster centroid, and the one with 
+the smallest value is the cluster that the object is assigned to. Calculating the Euclidean 
+distance is quite simple and requires only some entry-level math; if you can remember how 
+to do Pythagoras' theorem, then you are already there. Assume a basic grid of six positions 
+on the X-axis (horizontal) and four positions on the Y-axis (vertical).  
+The center point of our cluster is currently at (1,

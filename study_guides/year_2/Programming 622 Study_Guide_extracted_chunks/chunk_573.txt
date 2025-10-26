@@ -1,0 +1,45 @@
++ function, swap, swaps 
+those elements:  
+  
+template <class elemType>  
+void arrayListType<elemType>::swap(int first, int second)  
+{  
+elemType temp;  
+  
+temp = list[first]; list[first] 
+= list[second]; 
+list[second] = temp;  
+}//end swap  
+
+285  
+  
+We can now complete the definition of the function selectionSort:  
+  
+template <class elemType>  
+void arrayListType<elemType>::selectionSort()  
+{  
+int minIndex;  
+for (int loc = 0; loc < length - 1; loc++)  
+{  
+minIndex = minLocation(loc, length - 1); swap(loc, 
+minIndex);  
+}  
+}  
+  
+You can add the functions to implement selection sort in the definition of the class arrayListType as 
+follows:  
+  
+template<class elemType> class 
+arrayListType  
+{ public:  
+//Place the definitions of the function given earlier here. void 
+selectionSort();  
+... private:  
+//Place the definitions of the members given earlier here. 
+void swap(int first, int second); int minLocation(int first, 
+int last);  
+};  
+  
+EXAMPLE 8-1  
+  
+The following pr

@@ -1,0 +1,15 @@
+3. Symmetric Configuration 
+A symmetric configuration features decentralized processor scheduling. That is, a single copy 
+of the operating system, and a global table listing each process and its status, is stored in a 
+common area of memory so that every processor has access to it. Each processor uses the same 
+scheduling algorithm to select which process it will run next. 
+ 
+The symmetric configuration (sometimes called tightly coupled) has four advantages over 
+loosely coupled configuration: 
+➢ It is more reliable. 
+➢ It uses resources effectively. 
+➢ It can balance loads well. 
+➢ It can degrade gracefully in the event of a failure. 
+ 
+However, it is the most difficult configuration to implement because the processes must be well 
+synchronized to avoid the problems of races and deadlocks.

@@ -1,0 +1,56 @@
+AR 
+iii) Pearl 
+iv) POSIX 
+a) i) and ii) 
+b) ii) and iv) 
+c) i) and iv) 
+d) ii) and iii) 
+ 
+Answer: c 
+ 
+2. Which one of the following regular expression matches any string containing zero or one p? 
+a) p+ 
+b) p* 
+c) P? 
+d) p# 
+ 
+Answer: c 
+ 
+3. [:alpha:] can also be specified as.. 
+a) [A-Za-z0-9] b) [A-za-z] c) [A-z] d) [a-z] View Answer 
+4. How many functions does PHP offer for searching strings using POSIX style regular 
+expression? 
+a) 7 
+b) 8 
+c) 9 
+d) 10 
+ 
+Answer: a 
+5. What will be the output of the following PHP code? 
+<?php 
+$username = "jasoN"; 
+if (ereg("([^a-z])",$username)) 
+echo "Username must be all lowercase!"; 
+else 
+echo "Username is all lowercase!"; 
+?> 
+
+ 
+a) Error 
+b) Username must be all lowercase! 
+c) Username is all lowercase! 
+d) No Output is returned 
+ 
+Answer: b 
+ 
+6. POSIX implementation was deprecated in which version of PHP? 
+a) PHP 4 
+b) PHP 5 
+c) PHP 5.2 
+d) PHP 5.3 
+ 
+Answer: d 
+ 
+7. POSIX stands for 
+a) Portable Operating System Interface for Unix 
+b)

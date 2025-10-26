@@ -1,0 +1,183 @@
+Look at the following simple A* implementation. Please note that ‘*’ on the program represents 
+a path and ‘[]’ represents an obstacle: 
+
+import heapq 
+ 
+def astar(grid, start, goal): 
+    """ 
+    Simple A* pathfinding algorithm for 2D grids 
+
+    Args: 
+        grid: 2D list where 0 = walkable, 1 = obstacle 
+        start: Starting position as (row, col) 
+        goal: Goal position as (row, col) 
+ 
+    Returns: 
+        List of (row, col) positions from start to goal, or None if no path 
+    """ 
+ 
+    def heuristic(pos1, pos2): 
+        """Manhattan distance heuristic""" 
+        return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1]) 
+ 
+    def get_neighbors(pos): 
+        """Get valid neighboring positions (4-directional movement)""" 
+        row, col = pos 
+        neighbors = [] 
+ 
+        # Check all 4 directions: up, down, left, right 
+        for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]: 
+            new_row, new_col = row + dr, col + dc 
+ 
+            # Check if position is valid and walkable 
+            if (0 <= new_row < len(grid) and 
+                    0 <= new_col < len(grid[0]) and 
+                    grid[new_row][new_col] == 0): 
+                neighbors.append((new_row, new_col)) 
+ 
+        return neighbors 
+
+    # Priority queue: (f_cost, g_cost, position, path) 
+    open_list = [(0, 0, start, [start])] 
+ 
+    # Keep track of visited positions with their best g_cost 
+    visited = {} 
+ 
+    while open_list: 
+        # Get the position with lowest f_cost 
+        f_cost, g_cost, current_pos, path = heapq.heappop(open_list) 
+ 
+        # Skip if we've already found a better path to this position 
+        if current_pos in visited and visited[current_pos] <= g_cost: 
+            continue 
+ 
+        # Mark as visited with current g_cost 
+        visited[current_pos] = g_cost 
+ 
+        # Check if we reached the goal 
+        if current_pos == goal: 
+            return path 
+ 
+        # Explore neighbors 
+        for neighbor in get_neighbors(current_pos): 
+            # Skip if already visited with better or equal cost 
+            new_g_cost = g_cost + 1  # Cost of moving to neighbor is 1 
+ 
+            if neighbor in visited and visited[neighbor] <= new_g_cost: 
+                continue 
+ 
+
+            # Calculate f_cost = g_cost + heuristic 
+            h_cost = heuristic(neighbor, goal) 
+            new_f_cost = new_g_cost + h_cost 
+ 
+            # Add to open list 
+            new_path = path + [neighbor] 
+            heapq.heappush(open_list, (new_f_cost, new_g_cost, neighbor, new_path)) 
+ 
+    # No path found 
+    return None 
+ 
+def print_grid_with_path(grid, path=None): 
+    """Print grid with path visualization""" 
+    if path is None: 
+        path = [] 
+ 
+    path_set = set(path) 
+    for i, row in enumerate(grid): 
+        line = "" 
+        for j, cell in enumerate(row): 
+            pos = (i, j) 
+            if pos in path_set: 
+                if pos == path[0]: 
+                    line += "S "  # Start 
+                elif pos == path[-1]: 
+                    line += "G "  # Goal 
+                else: 
+                    line += "*"  # Path 
+            elif cell == 1: 
+
+                line += "[]"  # Obstacle 
+            else: 
+                line += ". "  # Empty space 
+        print(line) 
+ 
+# Example usage 
+if __name__ == "__main__": 
+    # Create a simple test grid 
+    # 0 = walkable, 1 = obstacle 
+    test_grid = [ 
+        [0, 0, 0, 1, 0, 0, 0], 
+        [0, 1, 0, 1, 0, 1, 0], 
+        [0, 1, 0, 0, 0, 1, 0], 
+        [0, 0, 0, 1, 1, 1, 0], 
+        [1, 1, 0, 0, 0, 0, 0], 
+        [0, 0, 0, 1, 1, 1, 1], 
+        [0, 0, 0, 0, 0, 0, 0] 
+    ] 
+ 
+    start_pos = (0, 0)  # Top-left corner 
+    goal_pos = (6, 6)  # Bottom-right corner 
+ 
+    print("Simple A* Algorithm Demo") 
+    print("=" * 30) 
+    print("Original Grid:") 
+    print_grid_with_path(test_grid) 
+ 
+    # Find path using A* 
+    path = astar(test_grid, start_pos, goal_pos) 
+
+    if path: 
+        print(f"\nPath found! Length: {len(path)} steps") 
+        print("Grid with path:") 
+        print_grid_with_path(test_grid, path) 
+ 
+        print(f"\nPath coordinates:") 
+        for i, pos in enumerate(path): 
+            print(f"  Step {i}: {pos}") 
+    else: 
+        print("\nNo path found!") 
+ 
+    # Test with impossible path 
+    print("\n" + "=" * 30) 
+    print("Testing impossible path:") 
+ 
+    blocked_grid = [ 
+        [0, 0, 0], 
+        [1, 1, 1],  # Wall blocking the path 
+        [0, 0, 0] 
+    ] 
+ 
+    print_grid_with_path(blocked_grid) 
+ 
+    impossible_path = astar(blocked_grid, (0, 0), (2, 2)) 
+ 
+    if impossible_path: 
+        print("Path found:") 
+        print_grid_with_path(blocked_grid, impossible_path) 
+
+    else: 
+        print("No path found (as expected)") 
+ 
+Here's the output from the code: 
+
+Simple A* Algoritm Demo
+================================
+Original Grid:
+. . . []. . .
+. []. []. [].
+. []. . . [].
+. . . [][][].
+[][]. . . . .
+. . . [][][][]
+. . . . . . .
+
+Path found! Length: 13 steps
+Grid with path:
+S **[]. . .
+. []*[]. [].
+. []*. . [].
+. . *[][][].
+[][]*. . . .
+. . *[][][][]
+. . ****G

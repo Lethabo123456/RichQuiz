@@ -1,0 +1,19 @@
+linked list (as constructed in Chapter 3) are in ascending order. Certain 
+applications, however,might require the data to be printed in descending order, which means that we 
+must print the list backward. We now discuss the function reversePrint. Given a pointer to a list, this 
+function prints the elements of the list in reverse order.  
+  
+Consider the linked list shown in Figure 4-5.  
+  
+  
+FIGURE 4-5 Linked list  
+  
+For the list in Figure 4-5, the output should be in the following form:  
+15 10 5  
+  
+Because the links are in only one direction, we cannot traverse the list backward starting from the last 
+node. Let us see how we can effectively use recursion to print the list in reverse order.  
+  
+Let us think in terms of recursion. We cannot print the info of the first node until we have printed the 
+remainder of the list (that is, the tail of the first node). Similarly, we cannot print the info of the second 
+node until we have printed the tail of the second node, and so on.

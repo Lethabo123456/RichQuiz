@@ -1,0 +1,24 @@
+1.4.2 Quantifiers 
+When the variables in a propositional function are assigned values, the 
+resulting statement becomes a proposition with a certain truth value. 
+However, there is another important way, called quantification, to create a 
+proposition from a propositional function. Quantification expresses the 
+extent to which a predicate is true over a range of elements. In English, the 
+words all, some, many, none, and few are used in quantifications. We will 
+focus on two types of quantification here: universal quantification, which 
+tells us that a predicate is true for every element under consideration, and 
+existential quantification, which tells us that there is one or more element 
+under consideration for which the predicate is true. The area of logic that 
+deals with predicates and quantifiers is called the predicate calculus. 
+
+1.4.2.1 The Universal Quantifier
+Many mathematical statements assert that a property is true for all values 
+of a variable in a particular domain, called the domain of discourse (or the 
+universe of discourse), of ten just referred to as the domain. Such a 
+statement is expressed using universal quantification. The universal 
+quantification of 𝑃(𝑥) for a particular domain is the proposition that asserts 
+that 𝑃(𝑥) is true for all values of 𝑥 in this domain. Note that the domain 
+specifies the possible values of the variable 𝑥. The meaning of the universal 
+quantification of 𝑃(𝑥) changes when we change the domain. The domain 
+must always be specified when a universal quantifier is used; without it, the 
+universal quantification of a statement is not defined. 

@@ -1,0 +1,51 @@
+Working with Block Quotes and Other Elements 
+Now that you’ve written the code for the ct_about.html file, you’ll work on other pages 
+in the Curbside Thai website. The ct_reviews.html file provides excerpts of reviews from 
+food critics and magazines. Because these excerpts contain extended quotes, you’ll 
+place each review in the following blockquote element 
+
+<blockquote>
+content
+</blockquote> 
+ 
+Where content is the text of the quote. By default, most browsers render block quotes 
+by indenting the quoted material to separate from it from the website author’s words, 
+however, you can substitute your own style with a custom style sheet. Sajja has created 
+much of the code required for the reviews page. The code is contained in the two style 
+sheets that are already linked to the reviews page. Complete the page by adding the 
+excerpts of the reviews marked as block quotes. 
+ 
+Marking extended text as block quotes 
+<article>
+     <h1>Reviews</h1>
+     <blockquote>
+          <p>.......</p>
+          <p>.......</p>
+     </blockquote>
+     <blockquote>
+          <p>.......</p>
+          <p>.......</p>
+     </blockquote>
+     <blockquote>
+          <p>.......</p>
+          <p>.......</p>
+     </blockquote>
+     <blockquote>
+          <p>.......</p>
+          <p>.......</p>
+     </blockquote>
+     <blockquote>
+          <p>.......</p>
+          <p>.......</p>
+     </blockquote>
+</article>
+                                            
+Block Quotes of Restaurant Reviews 
+ 
+
+Because of the styles in the style sheets, each blockquote element appears within its own 
+formatted box with an opening quote character added to reinforce the fact that this is quoted 
+material. The next page you’ll create contains information about catering from Curbside Thai. 
+The structure of this page is identical to the structure of the About Curbside Thai page. We 
+have linked the catering page to two style sheets containing the style rules that dictate how 
+the page will look when the page is rendered in a browser. 

@@ -1,0 +1,24 @@
+4.5 The Chain Rule 
+The chain rule is used to find the derivatives of compositions of functions. A 
+composite function is a function that is composed of two other functions. For 
+the two functions 𝑓 and 𝑔, the composite function or the composition of 𝑓 and 
+𝑔, is defined by: (𝑓𝑜𝑔)(𝑥) = 𝑓(𝑔(𝑥)). 
+
+The function 𝑔(𝑥) is substituted for 𝑥 into the function 𝑓(𝑥). For example, the 
+function 𝐹(𝑥)=(2𝑥+6)4 could be considered as a composition of the functions, 
+𝑓(𝑥)= 𝑥4 and 𝑔(𝑥) =2𝑥 + 6. However, it could also be written as a composition 
+of 𝑓(𝑥)=(2𝑥)4 and 𝑔(𝑥)= 𝑥+3. Often, a function can be written as a 
+composition of several different combinations of functions.  
+
+The chain rule allows us to find the derivative of composite functions. The chain rule states 
+that if 𝑓 and 𝑔 are differentiable functions and 𝐹(𝑥)= 𝑓 (𝑔 (𝑥)), then 𝐹 is 
+differentiable and the derivative of 𝐹 is given by: 𝐹′(𝑥) = 𝑓′(𝑔(𝑥))𝑔′(𝑥). 
+
+In order to differentiate a function of a function, 𝑦 = 𝑓(𝑔(𝑥)), that is 
+to find 𝑑𝑦/𝑑𝑥‘ we need to do two things: 
+
+1. Substitute 𝑢= 𝑔(𝑥). This gives us 
+𝑦= 𝑓(𝑢). 
+
+2. Use the Chain rule, 
+𝑑𝑦/𝑑𝑥 = 𝑑𝑦/𝑑𝑢 . 𝑑𝑢/𝑑𝑥 

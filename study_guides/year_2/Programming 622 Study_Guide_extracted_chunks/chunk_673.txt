@@ -1,0 +1,46 @@
+//Function to do an inorder traversal of the binary tree.  
+  
+void preorderTraversal() const;  
+//Function to do a preorder traversal of the binary tree.  
+  
+void postorderTraversal() const;  
+//Function to do a postorder traversal of the binary tree.  
+  
+int treeHeight() const;  
+ 
+    
+  
+//Returns the height of the binary tree.  
+  
+int treeNodeCount() const;  
+//Returns the number of nodes in the binary tree.  
+  
+int treeLeavesCount() const;  
+//Returns the number of leaves in the binary tree.  
+  
+void destroyTree();  
+//Deallocates the memory space occupied by the binary tree.  
+//Postcondition: root = NULL;  
+  
+binaryTreeType(const binaryTreeType<elemType>& otherTree);  
+//copy constructor  
+  
+binaryTreeType(); //default 
+constructor  
+  
+~binaryTreeType();  
+//destructor  
+  
+protected:  
+  
+binaryTreeNode<elemType> *root;  
+ private:  
+  
+
+330  
+  
+void 
+copyTree(binaryTreeNode<elemType>* 
+&copiedTreeRoot, 
+binaryTreeNode<elemType>* otherTreeRoot);  
+//Makes a copy of

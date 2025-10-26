@@ -1,0 +1,26 @@
+Structure of a Proof in Predicate Logic 
+The simplest proofs in predicate logic consist of: 
+* facts, which are ground atomic formulas 
+male(Adam) 
+female(Ann) 
+parent(Adam,Barney) 
+ 
+* rules, which are the conjunction of one or more atomic formulae that 
+imply another atomic formula 
+ 
+parent(y,x) AND male(x) -> son(x,y) 
+parent(y,x) AND female(x) -> daughter(x,y) 
+ 
+The left-hand side of a rule contains hypotheses (called the body of 
+the rule); each atomic formula is a hypothesis or subgoal. The 
+right-hand side is the goal (or head of the rule). 
+ 
+Rules are general principles that we can apply to facts to prove new facts. 
+ 
+* Assert a rule that is known to be true (that is, the body of the rule 
+implies the head of the rule) 
+* Find facts that (via substitution) match the atomic formulae of the 
+body of the rule 
+* Make consistent variable substitutions in the body and the head of the 
+rule 
+* Assert the head (or goal) as proven

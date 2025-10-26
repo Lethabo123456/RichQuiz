@@ -1,0 +1,33 @@
+cript, open your text editor once more and enter the following:  
+  
+  
+  
+< ?php  
+echo “Hello, world!”;  
+? >  
+  
+  
+  
+Save this file as hello.php in your document root folder, and view the results in your browser by 
+visiting http://localhost/hello.php. You should see something like Figure 1.1.  
+  
+ 
+Figure 1.1  
+  
+1.4 Explaining The Script The first line tells the PHP engine to expect 
+some PHP code to follow:  
+  
+< ?php  
+  
+Why do you need this line? This is due to the fact that PHP can be embedded within HTML Web 
+pages.  
+When the PHP engine first starts processing the page, it assumes it is dealing with plain old HTML 
+until told otherwise. By using the PHP delimiter, < ?php, you are telling the PHP engine to treat 
+anything following the < ?php as PHP code, rather than as HTML.  
+  
+The next line displays the message “ Hello, world! ” :  
+  
+
+19  
+echo “Hello, world!”;  
+PHP ’s echo() statement takes a string of text — in this case, “Hello, world!” — and sends it as part

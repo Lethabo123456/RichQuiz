@@ -1,0 +1,32 @@
+Definition 63  
+Let n be a nonnegative integer and G a directed graph. A path of length n 
+from u to v in G is a sequence of edges e1, e2, . . . , en of G such that e1 is 
+associated with (x0, x1), e2 is associated with (x1, x2), and so on, with en 
+associated with (xn−1, xn), where x0 = u and xn = v. When there are no multiple 
+edges in the directed graph, this path is denoted by its vertex sequence x0, 
+x1, x2, . . . , xn. A path of length greater than zero that begins and ends at the 
+same vertex is called a circuit or cycle. A path or circuit is called simple if it 
+does not contain the same edge more than once. 
+ 
+4.4.2 Paths and Isomorphism 
+There are several ways that paths and circuits can help determine whether 
+two graphs are isomorphic. For example, the existence of a simple circuit of 
+a particular length is a useful invariant that can be used to show that two 
+graphs are not isomorphic. In addition, paths can be used to construct 
+mappings that may be isomorphisms. 
+ 
+Theorem  
+Let G be a graph with adjacency matrix A with respect to the ordering v1, v2, 
+. . . , vn of the vertices of the graph (with directed or undirected edges, with 
+multiple edges and loops allowed). The number of different paths of length 
+r from vi to vj , where r is a positive integer, equals the (i, j )th entry of Ar . 
+FOUR | GRAPHS 
+Worked Example 
+How many paths of length four are there from a to d in the simple graph 
+G below? 
+ 
+Solution: 
+The adjacency matrix of G (ordering the vertices as a, b, c, d) is 
+ 
+Hence, the number of paths of length four from a to d is the (1, 4)th entry of 
+A4. Because  

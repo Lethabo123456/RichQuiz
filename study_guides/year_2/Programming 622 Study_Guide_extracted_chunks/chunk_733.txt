@@ -1,0 +1,23 @@
+the subtree T1 to increase by 1. The subtree at node a is still an AVL 
+tree, but the balance criteria is violated at the root node. We note the following in this tree. Because the 
+tree is a binary search tree,  
+Every key in subtree T1 is smaller than the key in node a. Every 
+key in subtree T2 is larger than the key in node a.  
+Every key in subtree T2 is smaller than the key in node b.  
+  
+Therefore,  
+1. We make T2 (the right subtree of node a) the left subtree of node b.  
+2. We make node b the right child of node a.  
+3. Node a becomes the root of the reconstructed tree, as shown in Figure 9-18.  
+  
+Case 2: This case is a mirror image of Case 1. See Figure 9-19.  
+  
+FIGURE 9-19 Left rotation at a  
+  
+Case 3: Consider Figure 9-20.  
+  
+FIGURE 9-20 Double rotation: First rotate left at a and then right at c  
+  
+  
+In Figure 9-20, the tree on the left is the tree prior to the reconstruction. The heights of the subtrees are 
+shown in the figure. The dotted rectangle shows that

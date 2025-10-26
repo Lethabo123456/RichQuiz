@@ -1,0 +1,37 @@
+Chapter 3:  Probability Theory and Distributions 
+
+3.1 Introduction  
+Probability theory or probability calculus is the branch of mathematics concerned with 
+probability. Although there are several different probability interpretations, probability 
+theory treats the concept in a rigorous mathematical manner by expressing it through a set 
+of axioms. Typically, these axioms formalize probability in terms of a probability space, which 
+assigns a measure taking values between 0 and 1, termed the probability measure, to a set of 
+outcomes called the sample space. Any specified subset of the sample space is called an 
+event. 
+The modern mathematical theory of probability has its roots in attempts to analyze games of 
+chance by Gerolamo Cardano in the sixteenth century, and by Pierre de Fermat and Blaise 
+Pascal in the seventeenth century (for example the "problem of points"). Christiaan Huygens 
+published a book on the subject in 1657.In the 19th century, what is considered the classical 
+definition of probability was completed by Pierre Laplace. 
+Initially, probability theory mainly considered discrete events, and its methods were mainly 
+combinatorial. Eventually, analytical considerations compelled the incorporation of 
+continuous variables into the theory. This culminated in modern probability theory, on 
+foundations laid by Andrey Nikolaevich Kolmogorov. Kolmogorov combined the notion of 
+sample space, introduced by Richard von Mises, and measure theory and presented his axiom 
+system for probability theory in 1933. This became the mostly undisputed axiomatic basis for 
+modern probability theory; but, alternatives exist, such as the adoption of finite rather than 
+countable additivity. 
+
+3.2 What is probability Theory?  
+
+Probability theory is a branch of mathematics focusing on the analysis of random phenomena. 
+It is an important skill for data scientists using data affected by chance. With randomness 
+existing everywhere, the use of probability theory allows for the analysis of chance events. 
+The aim is to determine the likelihood of an event occurring, often using a numerical scale of 
+between 0 and 1, with the number “0” indicating impossibility and “1” indicating certainty. A 
+classic example of this is a coin toss, where there can be two possible options: heads or tails. 
+Here the possibility of flipping a head or a tail on a single toss is 50%. When conducting your 
+own experiment, you may find that the outcomes can vary. But if you continue flipping the 
+coin, the outcome grows closer to 50/50.
+
+ 

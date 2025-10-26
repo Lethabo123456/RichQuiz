@@ -1,0 +1,24 @@
+6.9 Native audio player for different 
+browsers 
+													
+Playing Web Video: Exploring Digital Video 
+In this session, you explore how to embed videos within your web pages. Before exploring 
+the HTML video elements, you examine some of the issues involved with producing video 
+files suitable for the web. 
+ 
+Video Formats and Codecs 
+A video file typically contains two codecs: one codec for audio and another for video images. 
+The audio codecs are the same ones you amined in the last session. Figure 8-11 describes the 
+most commonly used video codecs on the web. 
+ 
+Video codecs used on the web 
+ 
+The most popular video codec is H.264 used by YouTube and most commercial vendors; 
+however, because H.264 is a commercial product, it is not royalty free. This is not an issue if 
+you are creating a video that is not actually being sold. If you are creating a commercial video 
+that uses the H.264 codec, you might have to pay licensing fees depending on the number of 
+subscribers to your video content. The Theora, VP8, and VP9 codecs are royalty-free, but they 
+are not as widely supported at the time of this writing. Browser support for video containers is 
+focused on three formats: MP4, Ogg, and WebM, with multiple combinations of video and 
+audio codecs available within each container. Figure 8-12 summarizes these formats and their 
+use on the web. 

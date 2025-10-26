@@ -1,0 +1,53 @@
+rst  
+lastSmall->link = first1;  
+return newHead;  
+}  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end mergeList  
+  
+Finally, we write the recursive mergesort function, recMergeSort, which uses the divideList and mergeList 
+functions to sort a list. The reference of the first node of the list to be sorted is passed as a parameter to 
+the function recMergeSort.  
+  
+template <class Type>  
+void unorderedLinkedList<Type>::recMergeSort(nodeType<Type>* &head)  
+{  
+nodeType<Type> *otherHead;  
+  
+if (head != NULL)   
+  
+  
+  
+//if the list is not empty if (head-
+>link != NULL)   
+  
+//if the list has more than one node  
+{  
+
+308  
+  
+divideList(head, otherHead); 
+recMergeSort(head); 
+recMergeSort(otherHead);  
+head = mergeList(head, otherHead);  
+}  
+ 
+}   
+  
+  
+  
+  
+  
+  
+//end recMergeSort  
+  
+We can now give the definition of the function mergeSort, which should be included as a public member 
+of the class unorderedLinkedList. (Note that the functions divideList, merge, and recMergeSort can be 
+inc

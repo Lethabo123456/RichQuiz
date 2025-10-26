@@ -1,0 +1,21 @@
+1.15.7 Managed or Unmanaged 
+
+Management provides benefits in many networks. Large networks with mission critical 
+applications are managed with many sophisticated tools, using SNMP to monitor the health of 
+devices on the network. Networks using SNMP or RMON (an extension to SNMP that provides 
+much more data while using less network bandwidth to do so) will either manage every device, or 
+just the more critical areas. VLANs are another benefit to management in a switch. A VLAN allows 
+the network to group nodes into logical LANs that behave as one network, regardless of physical 
+connections. The main benefit is managing broadcast and multicast traffic. An unmanaged switch 
+will pass broadcast and multicast packets through to all ports. If the network has logical grouping 
+that are different from physical groupings then a VLAN-based switch may be the best bet for 
+traffic optimization. 
+
+Another benefit to management in the switches is Spanning Tree Algorithm. Spanning Tree allows 
+the network manager to design in redundant links, with switches attached in loops. This would 
+defeat the self-learning aspect of switches, since traffic from one node would appear to originate 
+on different ports. Spanning Tree is a protocol that allows the switches to coordinate with each 
+other so that traffic is only carried on one of the redundant links (unless there is a failure, then the 
+backup link is automatically activated). Network managers with switches deployed in critical 
+applications may want to have redundant links. In this case management is necessary. But for the 
+rest of the networks an unmanaged switch would do quite well, and is much less expensive. 

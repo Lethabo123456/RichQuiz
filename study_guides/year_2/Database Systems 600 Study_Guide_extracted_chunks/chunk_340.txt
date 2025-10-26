@@ -1,0 +1,21 @@
+nt emergency “patchwork,” while others are merely minor annoyances.  
+The web, the sheer volume of transactions might cause even a well-designed system to bog down. 
+In that case, the designers must identify the source of the bottleneck and produce alternative 
+solutions. Those solutions may include using load-balancing soft- ware to distribute the transactions 
+among multiple computers, increasing the available cache for the DBMS, and so on. The demand 
+for change is the designer’s constant concern, which leads to phase 6, maintenance and evolution. 
+ 
+Maintenance and Evolution 
+
+ 
+140 
+The database administrator must be prepared to perform routine maintenance activities within the 
+database. Some of the required periodic maintenance activities include: 
+ 
+Preventive maintenance (backup)  
+ 
+Corrective maintenance (recovery)  
+ 
+Adaptive maintenance (enhancing performance, adding entities and attributes, and so on)  
+ 
+Assignment of access permissions and their maintenance for new

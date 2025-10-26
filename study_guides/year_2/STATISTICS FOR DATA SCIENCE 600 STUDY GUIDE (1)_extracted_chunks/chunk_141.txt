@@ -1,0 +1,26 @@
+This is likely the most common way to define the centre of data but can be flawed! Suppose 
+we wish to find the mean of the following numbers: 
+
+import numpy as np np.mean 
+([11, 15, 17, 14]) == 14.25 
+Simple enough, our average is 14.25 and all our values are close to it.  But what if we 
+introduce a new value: 31?  
+np.mean([11, 15, 17, 14, 31]) == 17.6 
+This greatly affects the mean because the arithmetic mean is sensitive to outliers. The new 
+value, 31, is almost twice as large as the rest of the numbers and, therefore, skews the 
+mean. 
+Another, and sometimes better, measure of centre is the median. 
+The median is the number found in the middle of the dataset when it is sorted in order, as 
+shown: 
+
+Np.median 
+([11, 15, 17, 14]) == 14.5   
+np.median([11, 15, 17, 14, 31]) == 15 
+
+Note how the introduction of 31 using the median did not affect the median of the dataset 
+greatly. This is because the median is less sensitive to outliers. 
+When working with datasets with many outliers, it is sometimes more useful to use the 
+median of the dataset, while if your data does not have many outliers and the data points 
+are mostly close to one another, then the mean is likely a better option. 
+But how can we tell if the data is spread out? Well, we will have 
+to introduce a new type of statistic. 

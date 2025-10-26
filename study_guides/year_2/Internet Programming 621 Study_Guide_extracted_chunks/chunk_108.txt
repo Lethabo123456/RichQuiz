@@ -1,0 +1,17 @@
+s using the medium of PHP.  
+  
+  
+You have learnt that a variable is a container that can store a single value. However, a couple of 
+types of variables can store many values at once within a single variable. One such type is array, 
+which you explore in this unit.  
+  
+Arrays are a very powerful feature of any programming language, because they let you easily work 
+with large amounts of similar data. For example, say you are writing a script that stores information 
+about 100 customers. Rather than having to create 100 separate variables — $customer1 , 
+$customer2 , and so on — to store the customers, you can create just one array variable called 
+$customers that holds information on all the customers at once.  
+  
+Two specific features of arrays make them good for storing lots of data:  
+Arrays can be of any length — An array can store one value, or millions of values, all 
+referenced via a single variable name (for example, $customers ). You can also easily change 
+the length — by

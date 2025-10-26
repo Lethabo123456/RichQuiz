@@ -1,0 +1,23 @@
+pty. 
+//Postcondition: If the list is empty, the program terminates; // 
+otherwise, the last element of the list is returned.  
+  
+bool search(const Type& searchItem) const;  
+//Function to determine whether searchItem is in the list. 
+//Postcondition: Returns true if searchItem is found in the // 
+list, otherwise returns false.  
+  
+void insert(const Type& insertItem);  
+//Function to insert insertItem in the list.  
+//Precondition: If the list is nonempty, it must be in order.  
+//Postcondition: insertItem is inserted at the proper place  
+// in the list, first points to the first node, last points 
+// to the last node of the new list, and count is // 
+incremented by 1.  
+  
+void deleteNode(const Type& deleteItem); //Function 
+to delete deleteItem from the list.  
+//Postcondition: If found, the node containing deleteItem is  
+// deleted from the list; first points to the first node of  
+// the new list, last points to the last node of the new 
+// list, and count is decremented by 1;

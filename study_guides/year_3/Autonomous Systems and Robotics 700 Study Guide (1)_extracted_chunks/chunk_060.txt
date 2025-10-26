@@ -1,0 +1,23 @@
+2.2.8.2 Algorithm Design 
+ 
+The below Python Output uses Pygame to simulate a 2D LIDAR, casting rays, detecting 
+intersections with line segment obstacles, and visualising the resulting point cloud. 
+ 
+2.4  What is Image Processing? 
+Digital Image processing is a class of methods that deal with manipulating digital images using 
+computer algorithms. It is an essential preprocessing step in many applications, such as face 
+recognition, object detection, and image compression. 
+Image processing is done to enhance an existing image or to sift out important information from 
+it. This is important in several Deep Learning-based Computer Vision applications, where such 
+preprocessing can dramatically boost the performance of a model. Manipulating images, for 
+example, adding or removing objects to images, is another application, especially in the 
+entertainment industry. 
+
+This chapter addresses a medical image segmentation problem, where the authors used image 
+inpainting in their preprocessing pipeline for the removal of artefacts from dermo copy images. 
+Examples of this operation are shown below.
+
+The authors achieved a 3% boost in performance with this simple preprocessing procedure, which 
+is a considerable enhancement, especially in a biomedical application where the accuracy of 
+diagnosis is crucial for AI systems. The quantitative results obtained with and without 
+preprocessing for the lesion segmentation problem in three different datasets are shown below 

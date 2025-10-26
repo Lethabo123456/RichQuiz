@@ -1,0 +1,18 @@
+addition of a physical model to explicitly 
+address physical-level implementation details of the internal model. 
+ 
+The External Model 
+The external model is the end users’ view of the data environment. The term end users refers to 
+people who use the application programs to manipulate the data and generate information. End users 
+within different business units of a company view their data subsets as separate from or external to 
+other units within the organization.  
+Because data is being modelled, ER diagrams will be used to represent the external views. A specific 
+representation of an external view is known as an external schema (see example in Figure 2.7). Each 
+external schema includes the appropriate entities, relationships, processes, and constraints imposed 
+by the business unit. Also note that although the application views are isolated from each other, 
+each view shares a common entity with the other view.  
+
+ 
+32 
+ 
+The use of external views that represent subsets of the d

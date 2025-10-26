@@ -1,0 +1,15 @@
+ray is also referred to as a hash or map. With associative 
+arrays, each element is referenced by a string index. For example, you might create an array 
+element representing a customer’s age and give it an index of “ age ” Although PHP lets you 
+create and manipulate both indexed and associative arrays, all PHP arrays are in fact of the 
+same type behind the scenes. This can sometimes come in handy; for example, you can mix 
+numeric and string indices within the same array, or treat an indexed array like an 
+associative array. In practice, though, you generally want to work with one array type or 
+another, and it helps to think of indexed and associative arrays as different types of arrays.  
+  
+An array index is often referred to as a key. Typically, a numeric index is called an index and a string 
+index is called a key; however there ’ s no hard - and - fast rule with this. You will see both terms used 
+interchangeably in this book and elsewhere.  
+  
+5.2 Creating Arrays  
+Powerful

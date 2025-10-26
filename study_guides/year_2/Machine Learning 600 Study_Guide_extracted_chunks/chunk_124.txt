@@ -1,0 +1,13 @@
+g set, the more you teach it about the noise in that specific dataset.  
+In doing so, you teach the model things it will not be able to use in production because the 
+noise will be different in any different dataset. In other words, the noise in the data doesn’t 
+belong to the inherent relationships between the features you ideally want the model to 
+capture. 
+Underfitting and Overfitting 
+A model that returns a bias that is too high on the training dataset is simply a model that 
+doesn’t fit. Its predictions are wrong, meaning that the model is wrong—mostly, too simple. 
+You need to change the features and/or change the algorithm. In the literature, this situation 
+is known as underfitting. A model with a good bias on the training dataset but a high variance 
+is one that is not general enough and fits too much the training data. The algorithm is unfit 
+too, as you fail to capture the inner relationships between data. In the literature, this situation 
+is known as overfitting. (See Fig

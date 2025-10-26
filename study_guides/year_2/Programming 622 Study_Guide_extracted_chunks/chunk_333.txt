@@ -1,0 +1,28 @@
+t thus follows that the kth queen can be placed in column i of 
+row k, provided no other queen is in column i and no queens are on the diagonals on which square (k, i ) 
+lies. The general algorithm for the function canPlaceQueen(k, i) is as follows:  
+ for (int j = 0; j < k; j++)  
+ 
+if((queensInRow[j] == i)   
+  
+  
+  
+//there is already a queen in column i  
+ 
+|| (abs(queensInRow[j] - i) == abs(j-k)))   
+//there is already  
+
+166  
+  
+//a queen in one of the diagonals 
+//on which square (k,i) lies return false;  
+return true;  
+  
+The for loop checks whether there is already a queen either in column i or in one of the diagonals on which 
+square (k, i) lies. If it finds a queen at any of such positions, the for loop returns the value false. Otherwise, 
+the value true is returned.  
+  
+The following class defines the n-queens puzzle as an ADT:  
+//***************************************************************  
+// This class specifies the functions to solve the n-queens puzzle.  
+//**

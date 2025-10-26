@@ -1,0 +1,17 @@
+e 21 declares listIt to be a vector iterator that processes any vector container whose 
+elements are of type int. Using the iterator listIt, the statements in Lines 23 and 24 output the elements 
+of intList. After the statement in Line 26 executes, listIt points to the first element of intList. The 
+statements in Lines 27 and 28 advance listIt twice; after these statements execute, listIt points to the third 
+element of intList. The statement in Line 29 inserts 88 into intList at the position specified by the iterator 
+listIt. Because listIt points to the component at position 2 (the third element of intList), 88 is inserted at 
+
+61  
+  
+position 2 in intList; that is, 88 becomes the third element of intList. The statements in Lines 31 and 32 
+output the modified intList.  
+  
+ 
+2.1.6  Member Functions Common to All Containers  
+  
+The previous section discussed vector containers. We now look at operations that are common to all 
+containers. For example, every container class has a def

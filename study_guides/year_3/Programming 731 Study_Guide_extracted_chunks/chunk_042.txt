@@ -1,0 +1,22 @@
+The private methods and data can only be accessed by code that is a member of the class. 
+Therefore, any other code that is not a member of the class cannot access a private method or 
+variable. Since the private members of a class may only be accessed by other parts of your program 
+through the class public methods, you can ensure that no improper actions take place. Of course, 
+this means that the public interface should be carefully designed not to expose too much of the 
+inner workings of a class.   
+    
+Inheritance    
+
+Inheritance is the process by which one object acquires the properties of another object. This is 
+important because it supports the concept of hierarchical classification. As mentioned earlier, most 
+knowledge is made manageable by hierarchical (that is, top-down) classifications. For example, a 
+Golden Retriever is part of the classification dog, which in turn is part of the mammal class, which 
+is under the larger class animal. Without the use of hierarchies, each object would need to define 
+all of its characteristics explicitly.  
+ 
+However, by use of inheritance, an object need only define those qualities that make it unique 
+within its class. It can inherit its general attributes from its parent. Thus, it is the inheritance 
+mechanism that makes it possible for one object to be a specific instance of a more general case. 
+Let’s take a closer look at this process.    
+
+Figure 1.3: Classes and Methods   

@@ -1,0 +1,16 @@
+For a given threat to a given asset, once an analyst has developed estimates of threat capability and 
+resistance strength, these two dimensions can be combined to produce a measure of vulnerability. 
+This is done using the matrix shown in Figure 3.8 (FAIR Risk Assessment Matrices - Threat Capability, Vulnerability, Resistance Strength). 
+(Compare this figure to Figure 3.6a.) As shown, the 
+higher the resistance strength, the lower the vulnerability, and the higher the threat capability, the 
+higher the vulnerability. The vulnerability values shown in the matrix are based on the experience 
+of those involved in developing the FAIR model. For example, a high-threat capability applied to an 
+asset with a low-resistance strength for that threat is rated as a very high vulnerability. 
+
+It is worth making a distinction here between an estimated parameter and a derived parameter. 
+Threat capability and resistance strength are parameters whose values are estimated by an 
+analyst, which involves analytic effort. Once these two parameters are estimated, the analyst simply 
+plugs them into the matrix to derive the desired vulnerability rating. The matrix defines a 
+qualitative function, f1, that is expressed as: 
+
+Vulnerability = f1 (Resistance strength, Threat capability) 

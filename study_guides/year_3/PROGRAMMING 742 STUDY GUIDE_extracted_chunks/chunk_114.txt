@@ -1,0 +1,21 @@
+Now all you need are some objects to sort. You'll create two absurdly simple classes: Student and Dog. Assign 
+Student objects a name at creation: 
+ 
+public class Student 
+{ 
+public Student(string name) 
+{ 
+this.name = name; 
+
+TWO} 
+
+The Student class requires  two  methods, one to override ToString( ) and the other to be encapsulated as 
+the delegated method. 
+Student must  override  ToString( ) so that  the ToString( ) method in Pair, which invokes 
+ToString( ) on the  contained  objects, will work properly; the  implementation does nothing more than return 
+the student's name (which is already a string object): 
+
+public override string ToString( ) 
+{ 
+return name; 
+}

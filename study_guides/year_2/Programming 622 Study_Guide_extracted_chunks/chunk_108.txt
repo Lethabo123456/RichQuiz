@@ -1,0 +1,40 @@
+f a class must be public.  
+f. A class can have more than one constructor.  
+g. A class can have more than one destructor.  
+h. Both constructors and destructors can have parameters.  
+  
+2. What is black-box testing?  
+
+48  
+  
+  
+3. What is white-box testing?  
+  
+4. Consider the following function prototype, which returns the square root of a real number:  
+  
+double sqrt(double x);  
+  
+What should be the pre- and postconditions for this function?  
+  
+5. Each of the following expressions represents the number of operations for certain algorithms. What is 
+the order of each of these expressions?  
+  
+a. n2 + 6n + 4  
+b. 5n3 + 2n + 8  
+c. (n2 + 1) (3n + 5)  
+d. 5(6n + 4)  
+e. n + 2log2n – 6  
+f. 4n log2n + 3n + 8  
+  
+  
+6. Consider the following function:  
+  
+void funcExercise6(int x, int y)  
+{ int z; z = x + y; 
+x = y; y 
+= z; z = 
+x;  
+cout << "x = " << x << ", y = " << y << ", z = " << z << endl;  
+}  
+  
+Find the exact number of operations executed by the function funcExercis

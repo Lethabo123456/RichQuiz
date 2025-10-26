@@ -1,0 +1,25 @@
+$myString!” echo “ < pre > Hi\tthere! < /pre > 
+”; // Displays “Hi there!” echo ‘ < pre > Hi\tthere! < /pre > ’; // 
+Displays “Hi\tthere!”  
+  
+With the “ Hello, world! ” example, notice that using double quotes causes the $myString variable 
+name  
+to be substituted with the actual value of $myString . However, when using single quotes, the text 
+$myString is retained in the string as - is.  
+  
+With the “Hi there!” example, an escaped tab character ( \t ) is included within the string literal.  
+When  
+double quotes are used, the \t is replaced with an actual tab character; hence the big gap between 
+Hi and there! in the output. The same string enclosed in single quotes results in the \t characters 
+being passed through intact.  
+  
+Here’s a list of the more common escape sequences that you can use within double - quoted strings:  
+  
+Sequence  
+Meaning  
+\n  
+A line feed character (ASCII 10)  
+\r  
+A carriage return character (ASCII 13)  
+\t  
+A horizontal tab character (ASCII 9)

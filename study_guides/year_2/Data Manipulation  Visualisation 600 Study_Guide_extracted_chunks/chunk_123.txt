@@ -1,0 +1,24 @@
+title = 'Comparison of three-letter-word frequencies<br>\ between Quintus 
+Curtius Snodgrass and Mark Twain' 
+) 
+
+ 
+ 
+ 
+ 
+fig = go.Figure(data=data, layout=layout) 
+pyo.plot(fig, filename='box3.html') 
+ 
+ 
+ 
+ 
+ 
+ 
+     6.3.6 Histograms 
+Histograms are one of the most frequently used (and abused) visualizations. While they’re great for showing which 
+range of values has a greater frequency, it’s hard to tell how much greater. And when converted to 3D, as seen in 
+many flashy magazine articles, perspective can be completely distorted. 
+Still, if you’re just starting your analysis and you want a quick peek at the data, histograms are a handy tool. 
+We should point out that while they look similar, histograms differ from bar charts in two important ways. First, 
+histograms plot a numerical value along the x-axis - something that can be measured. Bar charts put categories along 
+the x-axis, like the countries competing in the Olympics in our previous example. Second, unlike bar charts, th

@@ -1,0 +1,31 @@
+able. Type the following at the mysql > prompt:   
+   
+mysql > CREATE TABLE fruit (   
+- > id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,   
+- > name VARCHAR(30) NOT NULL,   
+- > color VARCHAR(30) NOT NULL,   
+- > PRIMARY KEY (id)   
+- > );   
+   
+
+67   
+   
+Press Enter at the end of each line. Do no t enter the “ - > “ arrows; MySQL displays these 
+automatically each time you press Enter, to inform you that your statement is being continued on a 
+new line. If all goes well, you should see a response similar to the following:   
+   
+Query OK, 0 rows affected (0.06 sec)   
+   
+You have now created your table. To see a list of tables in your database, use the SHOW TABLES 
+command:   
+   
+mysql > SHOW TABLES;   
+   
++----------------------+   
+| Tables_in_mydatabase |   
++----------------------+   
+| fruit                      |   
++----------------------+   
+1 row in set (0.00 sec)   
+   
+If you ever want to create a regular key (as opposed to a primary key) for a field in a table, use th

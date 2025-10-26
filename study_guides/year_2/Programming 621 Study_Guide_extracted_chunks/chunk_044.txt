@@ -1,0 +1,34 @@
+Reserved Words (Keywords)  
+ 
+A second category of tokens is reserved word symbols. Some of the reserved 
+word symbols include the following: 
+ 
+int, float, double, char, const, void, return 
+ 
+Reserved words are also called keywords. The letters that make up a 
+reserved word are always lowercase. Like the special symbols, each is 
+considered to be a single symbol. Furthermore, reserved words cannot be 
+redefined within any program; that is, they cannot be used for anything other 
+than their intended use. 
+
+Identifiers 
+ 
+Identifier: A C++ identifier consists of letters, digits, and the underscore character 
+(_) and must begin with a letter or underscore.  
+ 
+Two predefined identifiers that you will encounter frequently are cout and cin. 
+You have already seen the effect of cout. Later in this chapter, you will learn 
+how cin, which is used to input data, works. Unlike reserved words, predefined 
+identifiers can be redefined, but it would not be wise to do so. 
+ 
+In C++, identifiers can be of any length. 
+
+Whitespaces 
+ 
+Every C++ program contains whitespaces. Whitespaces include blanks, tabs, 
+and newline characters. In a C++ program, whitespaces are used to separate 
+special symbols, reserved words, and identifiers. Whitespaces are nonprintable 
+in the sense that when they are printed on a white sheet of paper, the space 
+between special symbols, reserved words, and identifiers is white. Proper 
+utilization of whitespaces in a program is important. They can be used to make 
+the program more readable 

@@ -1,0 +1,28 @@
+Data is in the eyes of the beholder 
+Occasionally, it can be tricky to decide whether or not you should use classification or regression. 
+Consider that we are interested in the weather outside. We could ask the question, how hot is it 
+outside? In which case your answer is on a continuous scale, and some possible answers are 60.7 
+degrees, or 98 degrees. Nevertheless, as an exercise, ask 10-15 people what the temperature is 
+outside. I assure you that many will not answer in some exact degrees but will estimate their answer 
+and say something like it's in the 20s (Sinan, 2016). 
+ 
+We might wish to consider this problem as a classification problem, where the response variable is no 
+longer in exact degrees but an estimation. There would only be a finite number of estimations in 
+theory, making the model perhaps learn the differences between 20s and 30s a bit better (Sinan, 
+2016).
+
+4.4.2 Unsupervised learning 
+The second type of machine learning does not deal with predictions but has a much more open 
+objective. Unsupervised learning takes in a set of predictors and utilizes relationships between the 
+predictors in order to accomplish tasks, such as the following: 
+ 
+• Reducing the dimension of the data by condensing variables together. An example of this 
+would be file compression. Compression works by utilizing patterns in the data and 
+representing the data in a smaller format. 
+• Finding groups of observations that behave similarly and grouping them together. 
+ 
+The first element on this list is called dimension reduction and the second is called clustering. Both of 
+these are examples of unsupervised learning because they do not attempt to find a relationship 
+between predictors and a specific response and so are not used to make predictions of any kind. 
+Unsupervised models, instead, are used to unearth patterns and representations of the data that were 
+previously unknown (Sinan, 2016).  

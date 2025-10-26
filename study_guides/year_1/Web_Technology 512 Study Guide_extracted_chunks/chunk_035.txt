@@ -1,0 +1,22 @@
+tions later in this 
+course. Here is the code, though: 
+ 
+ 
+Figure 2.16 - How to open up a new window 
+That part that opens and configures the new window is this (it is only on three lines 
+above so as to fit on the page): 
+ 
+window.open("popup.html","PopUp","toolbar=no,width=500,hei
+ght=300"); 
+ 
+In between the round brackets of open are three thing: the page you want to appear 
+in your new window (popup.html for us), then a name for your new window (PopUp, 
+but it can be just about anything you want), and finally the configuration options for 
+the window. We have three configuration options: one to set the toolbar to no, one to 
+set the width of the window, and one to set the height. All the configuration options 
+go between a set of quotation marks, with no spaces between each option and its 
+value. All three options are separated by commas. 
+ 
+Here are some more configuration options you can have: 
+ left - the left position of the window in pixels 
+ top - the top position of the

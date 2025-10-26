@@ -1,0 +1,37 @@
+ss of this allocated memory. Moreover, the allocated 
+memory is uninitialized. 
+ 
+Consider the following declaration:  
+int *p;  
+
+161 | P a g e  
+ 
+char *q; 
+int x;  
+ 
+The statement 
+ p = &x; 
+ stores the address of x in p. However, no new memory is allocated. On the other 
+hand, consider the following statement: 
+ 
+ p = new int; 
+ 
+This statement creates a variable during program execution somewhere in memory 
+and stores the address of the allocated memory in p. The allocated memory is 
+accessed via pointer dereferencing—namely, *p. 
+ 
+Because a dynamic variable is unnamed, it cannot be accessed directly. It is accessed 
+indirectly by the pointer returned by new. The following statements illustrate this 
+concept: 
+ 
+Operator delete 
+Suppose you have the following declaration: 
+ int *p;  
+
+162 | P a g e  
+ 
+This statement declares p to be a pointer variable of type int. Next, consider the 
+following statements: 
+ p = new int;        //Line 1  
+*p = 54;              //Line 2 
+ p = new

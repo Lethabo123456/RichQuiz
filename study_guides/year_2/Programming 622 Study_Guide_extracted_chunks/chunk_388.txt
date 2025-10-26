@@ -1,0 +1,68 @@
+e->link = 
+NULL; last->link = newNode;  
+
+195  
+  
+last = newNode;  
+current = current->link;  
+ 
+}  
+  
+  
+  
+  
+  
+//end while  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end else  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end copyStack  
+  
+ 
+5.3.8  Constructors and Destructors  
+  
+We have already discussed the default constructor. To complete the implementation of the stack 
+operations, next we give the definitions of the functions to implement the copy constructor and the 
+destructor, and to overload the assignment operator. (These functions are similar to those discussed for 
+linked lists in Chapter 3.)  
+  
+//copy constructor template 
+<class Type>  
+linkedStackType<Type>::linkedStackType(const linkedStackType<Type>& otherStack)  
+{  
+ 
+stackTop = NULL;  
+  
+copyStack(otherStack);  
+ 
+}  
+  
+//end copy constructor  
+  
+//destructor template 
+<class Type>  
+linkedStackType<Type>::~linkedStackType()  
+{  
+initializeStack();  
+ 
+}  
+  
+//end destructor  
+  
+ 
+5.3.9  Overloading the Assignment Operator (=)

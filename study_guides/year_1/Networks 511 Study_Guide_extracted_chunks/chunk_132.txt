@@ -1,0 +1,32 @@
+Subdomains of the organization, below the second-level domain. The individual organization 
+is responsible for the creation and maintenance of subdomains. 
+For example, for the FQDN ftpsrv.wcoast.reskit.com: 
+ The trailing period ( . ) denotes that this is an FQDN with the name relative to the root of the 
+domain namespace. The trailing period is usually not required for FQDNs and if it is missing it 
+is assumed to be present. 
+ com is the top-level domain, indicating a commercial organization. 
+ reskit is the second-level domain, indicating the Windows 2000 Resource Kit organization. 
+ wcoast is a subdomain of reskit.com indicating the West Coast division of the 
+Windows 2000 Resource Kit organization. 
+ ftpsrv is the name of the FTP server in the West Coast division. 
+Domain names are not case sensitive. 
+Organizations not connected to the Internet can implement whatever top and second-level domain 
+names they want. However, typical implementations do adhere to the InterNIC specification so that 
+eventual participation in the Internet will not require a renaming process. 
+ 
+Using the Mtr command (pathping) 
+In an effort to take advantage of the benefits of both the ping and tracert/traceroute commands, the 
+pathping and mtr utilities were developed. Both of these tools take the functionality and information that 
+can be obtained from these types of tools and provide a more detailed single picture of the path 
+characteristics from a specific host to a specific destination. Figure 11 and 12 below show examples of 
+these two tools and what information they provide. 
+
+Figure 44: Path Ping 
+ 
+Figure 45: Mtr 
+Using the route command 
+The last of the tools covered in this article is the route utility. This utility is used to display the current 
+status of the routing table on a host. While the use of the route utility is limited in common situations 
+where the host only has a single IP address with a single gateway, it is vital in other situations where 
+multiple IP address and multiple gateways are available. Figure below shows an example of the route 
+utility being used on a Windows machine. 

@@ -1,0 +1,22 @@
+rements. Also, you will 
+learn that proper data warehousing design requires carefully defined and controlled data 
+redundancies to function properly. Regardless of how you describe data redundancies, the potential 
+for damage is limited by proper implementation and careful control. As important as it is to control 
+data redundancy, sometimes the level of data redundancy must be increased to make the database 
+serve crucial information purposes. Also, data redundancies sometimes seem to exist to preserve 
+the historical accuracy of the data. Thus, such planned “redundancies” are common in good 
+database design.  
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Three page 89-97 
+
+ 
+50 
+ 
+ 
+Indexes 
+Suppose you want to locate a book in a library. Does it make sense to look through every book until 
+you find the one you want? Of course not; you use the library’s catalogue, which is indexed by title, 
+topic, and aut

@@ -1,0 +1,17 @@
+data type returns the date that is the specified number of days from the given date. 
+Subtracting one date value from another yields the number of days between those dates. Suppose 
+that a manager wants a list of all products, the dates they were received, and the warranty expiration 
+date (90 days from receiving the product). To generate that list, you would make the following 
+query:  
+SELECT 
+P_CODE, P_INDATE, P_INDATE + 90 AS EXPDATE  
+FROM  
+PRODUCT;  
+The DBMS also has a function to return the current date on the database server, making it possible 
+to write queries that reference the current date without having to change the contents of the query 
+each day. For example, the DATE(), GETDATE(), and CURDATE() functions in MS Access, SQL 
+Server, and MySQL, respectively, and the SYSDATE keyword in Oracle will all retrieve the current 
+date.  
+Listing Unique Values 
+SQL’s DISTINCT clause produces a list of only those values that are different from one another. 
+For example, the comma

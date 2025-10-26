@@ -1,0 +1,26 @@
+Centralized key management has been a security best practice for many years even in big 
+data environments, especially those with wide geographical distribution. Best practices 
+include policy-driven automation, logging, on-demand key delivery, and abstracting key 
+management from key usage. 
+ 
+User access control may be the most basic network security tool, but many companies 
+practice minimal control because the management overhead can be so high. This is dangerous 
+at both the network level, as well as on the big data platform. Strong user access control 
+requires a policy-based approach that automates access based on user and role-based 
+settings. Policy driven automation manages complex user control levels, such as multiple 
+administrator settings that protect the big data platform against inside attack. 
+Controlling who has root access to Business Intelligence tools and analytics platforms is 
+another key to protecting your data. By developing a tiered access system, the opportunities 
+for an attack can be reduced. 
+
+Intrusion detection and prevention systems are security pillars equally so to the big data 
+platform. Big data’s value and distributed architecture naturally lends itself to intrusion 
+attempts. Intrusion Prevention Systems (IPS) enable security administrators to protect the big 
+data platform from intrusion. However, should an intrusion succeed despite the IPS, Intrusion 
+Detection Systems (IDS) quarantine the intrusion before it does significant damage. 
+Physical Security must not be ignored. Physical security should be deploying when the big 
+data platform in the data centre is being built. If your data centre is cloud based carefully do 
+due diligence to the cloud provider’s data centre security. Physical security systems serve an 
+important role in that they can deny data centre access to both strangers, or to staff members 
+who should not have access to sensitive areas. Video surveillance and security logs will also 
+serve the same purpose. 

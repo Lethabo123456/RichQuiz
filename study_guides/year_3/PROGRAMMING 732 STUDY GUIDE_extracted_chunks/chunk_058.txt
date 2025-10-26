@@ -1,0 +1,48 @@
+2.3.1 Writing Client / Server Systems using TCP To 
+write a Server program:  
+Step 1 : Create the server socket and begin listening.  
+Setp 2 : Call the accept( ) method to get new connections.   
+Setp 3 : Create input and output streams for the returned socket.  
+Step 4 : Conduct the conversation based on the agreed protocol.  
+Step 5 : Close the Client Stream and the Socket.  
+Step 6 : Go back to step 2 or continue to step 7.  
+Step 7 : Close the Server Socket.  
+  
+Program 1:  
+For using TCP for a server program which sends the current data to the client upon its request and 
+terminates when the client wants to quit.  
+import java.io.*; import 
+java.net.*; import 
+java.util.*; class 
+TCPServer  
+{  
+  public static void main (String args[ ])  
+  {  
+ServerSocket server; 
+recSocket; 
+PrintWriter on; 
+BufferedReader i; 
+String msg;  
+server = new ServerSocket (8001); for 
+(; ;)  
+{  
+  recSocket = Server.accept( );  
+  i = new BufferedReader (new InputStreamReader  
+  (recSocket.getInputStream( )));  
+  on = new PrintWriter (new OutputStreamWriter  
+  (recSocket.getOutputStream( 
+)));   on.println (server);   on 
+flush( );   msg = i.readline( );   
+if (msg.equals (“Date”))  
+   msg = “Client asked for “+msg+” and the current date    
+is ”+ (new Date()).toString( );   else if (msg.equals 
+(“Quit”))  
+System.exit(1);   else 
+msg = “Invalid Request”; 
+on.println (msg); on.flush( 
+);  
+i.close( ); on.close( 
+); recSocket.close( 
+);  
+    }  
+  } }

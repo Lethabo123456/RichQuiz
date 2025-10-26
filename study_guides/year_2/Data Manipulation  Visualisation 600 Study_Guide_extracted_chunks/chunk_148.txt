@@ -1,0 +1,32 @@
+er 
+again to http://127.0.0.1:8050/ and the following page should appear: 
+ 
+ 
+ 
+     6.4.4 Dash Components 
+Dash components are provided by two libraries: dash_html_components which we usually abbreviate to 
+html, and dash_core_components, usually abbreviated to dcc. Normally, html components describe the 
+layout of the page, including placement and alignment of different graphs. dcc components describe the 
+individual graphs themselves. 
+HTML Components 
+For a description of Dash’s HTML components, visit https://dash.plot.ly/dash-html-components 
+Common components include: 
+Html.Div([section]) applies CSS to section page of page <div></div> 
+• 
+Html.P()  paragraph  <p></p> 
+• 
+Html.H1(‘text’) heading(level 1)  <h1></h1> 
+
+ 
+ 
+ 
+ 
+• 
+Html.Labe(‘text’)     label   <label></label> 
+HTML elements and Dash classes are mostly the same but there are a few key differences 
+● 
+The style property is a dictionary 
+● 
+Properties in the style dictionary are camelCased 
+● 
+The class key is renamed

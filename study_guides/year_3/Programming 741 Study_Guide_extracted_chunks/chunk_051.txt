@@ -1,0 +1,18 @@
+Example 1-6. Calling a method
+ 
+Executing a method is sometimes referred to as "calling" the method. At that point program 
+flow branches to the method. When the method completes, program flow resumes at the 
+next line after the call to that method. 
+ 
+The second way to create an unconditional branch is with one of the unconditional branch 
+keywords: goto, break, continue, return, or throw. Additional information about the first four 
+jump statements is provided later in this chapter, in Section 1.5.2.3, Section 1.5.3.1, and 
+Section 1.5.3.6. The final statement, throw, is discussed in Topic 8. 
+
+1.6 Control structures 
+1.6.1 If...else statements 
+
+If. . . else statements branch based on a condition. The condition is an expression, tested in 
+the head of the if statement. If the condition evaluates true, the statement (or block of 
+statements) in the body of the if statement is executed. 
+ 

@@ -1,0 +1,31 @@
+Defining the Character Encoding 
+As with HTML files, it is a good idea in every CSS document to define the character encoding 
+used in the file. In CSS, you accomplish this using the following @charset rule @charset 
+"encoding"; where encoding defines the character encoding used in the file. Add the 
+@charset rule to the tss_styles.css style sheet file now, specifying that the UTF-8 character 
+
+set is used in the CSS code. 
+ 
+Importing Style Sheets 
+The @charset rule is an example of a CSS at-rule, which is a rule used to send directives to the 
+browser indicating how the contents of the CSS file should be interpreted and parsed. Another 
+at-rule is the following @import used to import the contents of a style sheet file. 
+ 
+@import url(url); 
+ 
+where url is the URL of an external style sheet file. The @import is used to combine style rules 
+from several style sheets into a single file. For example, an online store might have one style 
+sheet named basic.css 
+containing all of the basic styles used in every web page and another style sheet. 
+ 
+named sales.css containing styles used with merchandise-related pages. The following code 
+imports styles from both files: 
+ 
+@import url(company.css); 
+
+@import url(support.css); 
+ 
+Using multiple @import rules in a CSS file has the same impact as adding multiple link elements 
+to the HTML file. One advantage of the @import rule is that it simplifies your HTML code by 
+placing the decision about which style sheets to include and exclude in the CSS file rather than 
+in the HTML file. 

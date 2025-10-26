@@ -1,0 +1,26 @@
+ions and 
+postconditions are specified with the function prototype.  
+  
+That is, the user is given the following information:  
+  
+double inchesToCentimeters(double inches);  
+//Precondition: The value of inches must be nonnegative.  
+//Postcondition: If the value of inches is < 0, the 
+function // returns -1.0; otherwise, the function returns 
+the // equivalent length in centimeters.  
+  
+As another example, to use a function that searches a list for a specific item, the list must exist before the 
+function is called. After the search is complete, the function returns true or false depending on whether 
+the search was successful.  
+  
+
+18  
+  
+bool search(int list[], int listLength, int searchItem); //Precondition: 
+The list must exist.  
+//Postcondition: The function returns true if searchItem is in // 
+list; otherwise, the function return false.  
+ 
+1.2.4  Testing and Debugging  
+  
+The term testing refers to testing the correctness of the program; that is, making sure that the pro

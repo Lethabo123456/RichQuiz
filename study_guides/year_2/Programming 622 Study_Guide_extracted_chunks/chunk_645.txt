@@ -1,0 +1,13 @@
+comparisons. 6. Both quicksort and mergesort sort a 
+list by partitioning the list.  
+7. To partition a list, quicksort first selects an item from the list, called the pivot. The algorithm then 
+rearranges the elements so that the elements in one of the sublists are less than the pivot, and the 
+elements in the second sublist are greater than or equal to the pivot.  
+8. In a quicksort, the sorting work is done in partitioning the list.  
+9. On average, the number of key comparisons in quicksort is O(nlog2n). In the worst case, the number 
+of key comparisons in quicksort is O(n2).  
+10. Mergesort partitions the list by dividing it in the middle.  
+11. In mergesort, the sorting work is done in merging the list.  
+12. The number of key comparisons in mergesort is O(nlog2n).  
+13. A heap is a list in which each element contains a key, such that the key in the element at position k in 
+the list is at least as large as the key in the element at position 2k + 1 (if it exists) and 2k + 2 (if

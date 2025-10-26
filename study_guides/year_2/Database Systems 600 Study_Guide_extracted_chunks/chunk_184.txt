@@ -1,0 +1,23 @@
+pe that is 
+related to one or more entity subtypes.  
+ 
+A specialization hierarchy depicts the arrangement and relationships between entity super-
+types and entity subtypes. There are basically two approaches to developing a specialization 
+hierarchy of entity super-types and subtypes: specialization and generalization.  
+ 
+An entity cluster is a “virtual” entity type used to represent multiple entities and relationships 
+in the ERD.  
+ 
+Natural keys are identifiers that exist in the real world. Natural keys sometimes make good 
+primary keys, but not always. Primary keys must have unique values, they should be non-
+intelligent, they must not change over time, and they are preferably numeric and composed 
+of a single attribute.  
+
+ 
+72 
+ 
+Composite keys are useful to represent M:N relationships and weak (strong identifying) 
+entities.  
+ 
+Surrogate primary keys are useful when there is no natural key that makes a suitable primary 
+key, when the primary key is a composite primary ke

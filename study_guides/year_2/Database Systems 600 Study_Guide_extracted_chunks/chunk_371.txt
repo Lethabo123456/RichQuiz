@@ -1,0 +1,12 @@
+al model also requires definition of the attribute 
+domains and appropriate constraints.  
+All the defined constraints must be supported by the logical data model. In this stage, you must map 
+these constraints to the proper relational model constraints.  
+During this step, you also define which attributes are mandatory and which are optional and ensure 
+that all entities maintain entity and referential integrity. The right to use the database is also 
+specified during the logical design phase. Who will be allowed to use the tables, and what portions 
+of the tables will be available to which users? Within a relational framework, the answers to those 
+questions require the definition of appropriate views.  
+Special attention is needed at this stage to ensure that all views can be resolved, and that security is 
+enforced to ensure the privacy of the data. Additionally, if you are working with a distributed 
+database design, data could be stored at multiple locations, and each location ma

@@ -1,0 +1,26 @@
+nter++; 
+ 
+Again, we want to add up the numbers 1 to 10. We are doing it the same as before. 
+This time we are adding up whatever is in the answer variable and whatever is in the 
+counter variable. We need to move the counter on by 1, though, each time round the 
+loop. Otherwise the loop would never end. The second line, then, increments the 
+counter variable: 
+counter++; 
+The second time round the loop the counter variable will be 2. That is still less than 11 
+so the loop continues for a third time. When the counter advances to 11 the condition 
+
+ 
+58 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+between the round brackets becomes false, so the loop will end. 
+ 
+You can use the while loop or for loop depending on the situation. But it is advisable 
+to master both. So try these two exercises: 
+ 
+Exercise 3.9 
+Use a while loop to add up the numbers from 1 to 20. 
+ 
+Exercise 3.10 
+Use a while loop to print out the even number from 1 to 20. (You will ne

@@ -1,0 +1,25 @@
+$file < /li > ”;   
+                     }   
+                     $dir- > close();   
+            ? >   
+        < /ul >   
+      < /body >   
+< /html >   
+   
+3.18 Telling A File From A Directory   
+Often you need to know whether a particular file is a regular file or a directory. For example, 
+suppose you want to write some code that travels down through a tree of folders. You  would need 
+to detect when a file was actually a folder, so you could enter the folder and continue working 
+through the tree. By the same token, if you want to display the files in a folder, you ’d need to detect 
+when a file is in fact a regular file.   
+   
+Remember: both directories and regular files are all essentially files, but directories are a special kind 
+of file.   
+   
+PHP has two functions to help you test for a file or a directory:   
+• 
+is_dir() — Returns true if the given filename refers to a directory   
+• 
+is_file() — Returns true if the given filename refers to a regular file   
+   
+Here i

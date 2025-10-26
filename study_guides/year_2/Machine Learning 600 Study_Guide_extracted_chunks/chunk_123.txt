@@ -1,0 +1,15 @@
+you have to carefully consider the noise 
+embedded in the data that you consider to train the model. Let’s face it: all real-world data 
+you can work on is dirty. In this context, “dirty” means that data contains irreducible errors 
+coming from random sources, such as measurement inaccuracies and unavoidable impactful 
+conditions. Sometimes, improving a model to make it fit better to the available data only has 
+the effect of making it fit better to the inherent noise embedded in the dataset.  
+
+P a g e  | 78 
+ 
+This is where you experience the true difference between statistics and ML. In ML, all you 
+want is to be able to make reliable predictions. To achieve that, you need a model that, in 
+some way, learns from the provided examples. In production, though, the model will likely 
+never work on the same data it was trained on. Therefore, the more you make the model fit 
+to the training set, the more you teach it about the noise in that specific dataset.  
+In doing so, you teach the

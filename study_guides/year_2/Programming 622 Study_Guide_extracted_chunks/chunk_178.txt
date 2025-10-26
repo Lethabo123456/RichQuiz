@@ -1,0 +1,28 @@
+ird node, and so on. If we move head to the second node, the 
+first node is lost (unless we save a pointer to this node). If we keep advancing head to the next node, we 
+will lose all the nodes of the list (unless we save a pointer to each node before advancing head, which is 
+impractical because it would require additional computer time and memory space to maintain the list).  
+  
+Therefore, we always want head to point to the first node. It now follows that we must traverse the list 
+using another pointer of the same type. Suppose that current is a pointer of the same type as head. The 
+following code traverses the list:  
+current = head;  
+  
+while (current != NULL)  
+{  
+//Process current current 
+= current->link; }  
+For example, suppose that head points to a linked list of numbers. The following code outputs the data 
+stored in each node:  
+
+87  
+  
+current = head;  
+  
+while (current != NULL)  
+{ cout << current->info << " ";  
+current = current->link;  
+}  
+  
+ 
+3.1.2  Item Ins

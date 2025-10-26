@@ -1,0 +1,12 @@
+Using Figure 5.2 as your guide, note that the supertype is related to a PILOT subtype if the 
+EMP_TYPE has a value of “P.” If the EMP_TYPE value is “M,” the supertype is related to a 
+MECHANIC subtype. If the EMP_TYPE value is “A,” the supertype is related to the 
+ACCOUNTANT subtype. Note that the default comparison condition for the subtype discriminator 
+attribute is the equality comparison. However, in some situations the subtype discriminator is not 
+necessarily based on an equality comparison.  
+As you learned earlier in this section, the implementation of disjoint subtypes is based on the value 
+of the subtype discriminator attribute in the supertype. However, implementing overlapping 
+subtypes requires the use of one discriminator attribute for each subtype. For example, in the case 
+of the Tiny College database design, a professor can also be an administrator. Therefore, the 
+EMPLOYEE supertype would have the subtype discriminator attributes and values shown in Table 
+5.1.

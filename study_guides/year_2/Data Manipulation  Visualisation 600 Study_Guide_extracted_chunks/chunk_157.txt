@@ -1,0 +1,37 @@
+own_text) 
+]) 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server() 
+ 
+
+ 
+ 
+ 
+ 
+Run the program at the terminal, open a browser to http://127.0.0.1:8050/ and you should see the 
+following page: 
+ 
+ 
+ 
+Notice how in the code three hash marks ### translates to an <h3> tag on the page. Notice also that the line 
+break between “Dash apps can be written in Markdown.” and “Dash uses the [CommonMark] specification 
+of Markdown.” is ignored. 
+ 
+    6.4.5 Using Help() with Dash 
+Dash components are declarative: every configurable aspect of these components is set during 
+instantiation as a keyword argument. Call help in your Python console on any of the components to 
+learn more about a component and its available arguments. 
+ 
+-- 
+
+ 
+ 
+ 
+ 
+  
+Writing Help() to HTML 
+As an alternative to reading a plain-text help file in the console, you can write it out to an .html file 
+using pydoc. At the terminal (not in Python or any IDE) type pydoc -w dash_html_components.Div 
+This creates a file called dash_

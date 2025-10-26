@@ -1,0 +1,12 @@
+SQL code to the database server, and process the result set. 
+One main advantage of JDBC is that it allows a company to leverage its existing investment in 
+technology and personnel training. JDBC allows programmers to use their SQL skills to manipulate 
+the data in the company’s databases. As a matter of fact, JDBC allows direct access to a database 
+server or access via database middleware. Furthermore, JDBC provides a way to connect to 
+databases through an ODBC driver. 
+One advantage of JDBC over other middleware is that it requires no configuration on the client 
+side. The JDBC driver is automatically downloaded and installed as part of the Java applet 
+download. Because Java is a web-based technology, applications can connect to a database directly 
+using a simple URL. Once the URL is invoked, the Java architecture comes into play, the necessary 
+applets are downloaded to the client (including the JDBC database driver and all configuration 
+information), and then the applets are

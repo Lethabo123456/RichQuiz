@@ -1,0 +1,19 @@
+ary of the most commonly recognized data 
+models is shown in Figure 2.5. 
+
+ 
+30 
+ 
+In the evolution of data models, some common characteristics have made them widely accepted: 
+• 
+A data model must show some degree of conceptual simplicity without compromising the 
+semantic completeness of the database. A data model must represent the real world as closely 
+as possible.  
+• 
+Representation of the real-world transformations (behaviour) must be in compliance with the 
+consistency and integrity characteristics required by the intended use of the data model. 
+Each new data model addresses the shortcomings of previous models. The network model replaced 
+the hierarchical model because the former made it much easier to represent complex (many-to-many) 
+relationships. In turn, the relational model offers several advantages over the hierarchical and 
+network models through its simpler data representation, superior data independence, and easy-to-use 
+query language; these features have made it t

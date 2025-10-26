@@ -1,0 +1,36 @@
+Containment, Eradication, and Recovery
+The containment, eradication, and recovery phase is the central task of incident management. If
+prevention measures failed and an incident occurs, the enterprise needs to stop the attack if it is
+ongoing and recover from the attack. Actions taken during this phase can conceivably uncover another
+incident, which feeds back to the detection and analysis phase, as shown in Figure 15.8.
+
+Containment
+Most incidents require some sort of containment. The objective is to prevent the spread of the effects
+of the incident before they overwhelm resources or in some other way increase damage.
+Strategies for dealing with various types of incidents must be planned well in advance. The strategy 
+varies depending on the type of incident. For example, email-borne virus, DoS attacks, and intrusion 
+coupled with escalation of privileges require different strategies. In some cases, a system may need 
+to be isolated from the network until it is cleaned. User or system-level accounts may need to be 
+disabled or changed. Active sessions may need to be terminated. 
+ 
+The nature of the strategy and the magnitude of resources devoted to containment depends on 
+criteria developed ahead of time. Examples of criteria include potential damage to and theft of 
+resources, the need to preserve evidence, the effectiveness of the strategy, the time and resources 
+needed to implement the strategy, and the duration of the solution.
+
+Eradication 
+ 
+Once the ongoing damage has been stopped, it may be necessary to perform some sort of eradication 
+to eliminate any residual elements of the incident, such as malware and compromised user accounts. 
+ 
+Recovery 
+ 
+During recovery, IT personnel restore systems to normal operation to the extent possible and, if 
+applicable, harden systems to prevent similar incidents. Possible actions include the following: 
+ 
+ Restoring systems with clean versions from the latest backup 
+ Rebuilding systems from scratch 
+ Replacing compromised files with clean versions 
+ Installing patches 
+ Changing passwords 
+ Tightening network perimeter security (for example, firewall rule sets) 

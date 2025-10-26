@@ -1,0 +1,17 @@
+t to the screen have 
+several limitations. Inputting data in a program from the keyboard is comfortable as 
+long as the amount of input is very small. Sending output to the screen works well if 
+the amount of data is small (no larger than the size of the screen) and you do not want 
+to distribute the output in a printed format to others. 
+ 
+This section discusses how to obtain data from other input devices, such as a flash 
+drive (that is, secondary storage), and how to save the output to a flash drive. C++ 
+allows a program to get data directly from and save output directly to secondary 
+storage. A program can use the file I/O and read data from or write data to a file. 
+Formally, a file is defined as follows: 
+ 
+File: An area in secondary storage used to hold information. 
+ 
+The standard I/O header file, iostream, contains data types and variables that are used 
+only for input from the standard input device and output to the standard output device. 
+In addition, C++ provides a header

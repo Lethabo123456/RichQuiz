@@ -1,0 +1,30 @@
+VarType(); 
+ . . . 
+   private: 
+ int x; 
+ int lenP; 
+ int *p;  
+}; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Inline Functions 
+The definiton of the class clockType contains the declarations of the data members 
+and the function prototypes of the member functions. The definitions of the member 
+
+213 | P a g e  
+ 
+functions are placed in the implementations file. However, in the definition of a class 
+you can give the complete definition of a member function. Such member functions 
+definitions are called inline function definitions. Suppose that you want to include a 
+function to return the hours of a clock. You can write the definition of the class 
+clockType as follows: 
+ 
+In this definition of the class, the function getHours is inline. Inline function definitions 
+are typically used for very short function definitions. The compiler treats inline functions 
+in a special way. It typically inserts the code of an inline function at every location the 
+function is called. When a function is called, memory for its

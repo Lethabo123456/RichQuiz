@@ -1,0 +1,22 @@
+is accessible outside of the class. (Example 10-1 illustrates 
+this concept.)  
+ To make a member of a class public, you use the member access specifier 
+public with a colon. 
+Suppose that we want to define a class to implement the time of day in a program. 
+Because a clock gives the time of day, let us call this class clockType. Furthermore, 
+to represent time in computer memory, we use three int variables: one to represent 
+the hours, one to represent the minutes, and one to represent the seconds. 
+Suppose these three variables are: 
+ int hr; 
+ int min; 
+ int sec; 
+We also want to perform the following operations on the time:  
+1. Set the time.  
+2. Retrieve the time.  
+3. Print the time.  
+4. Increment the time by one second.  
+5. Increment the time by one minute.  
+6. Increment the time by one hour.  
+7. Compare the two times for equality. 
+To implement these seven operations, we will write seven functions—setTime, 
+getTime, printTime, incrementSeconds, incrementMinutes, increment

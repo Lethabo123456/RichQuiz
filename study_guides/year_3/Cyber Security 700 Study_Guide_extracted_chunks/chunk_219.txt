@@ -1,0 +1,20 @@
+Estimating Threat Event Frequency 
+
+The assessment of threat event frequency involves two aspects: determining the frequency with 
+which a threat agent will come in contact with an asset and the probability that, once in contact, the 
+threat agent will act against the asset. 
+
+Contact can be physical or logical. Physical access, for example, is possible for employees, contract 
+workers such as cleaning and maintenance crews, and outside actors, such as clients, customers, 
+salespeople, and inspectors. Logical access is via a network. Contact can be unplanned, or random, or 
+it can be regular, such as with a cleaning crew, or it can be intentional, as when a hacker tries to gain 
+logical access. The task for a security analyst is to come up with a reasonable estimate, such as using 
+five levels of frequency. 
+
+The next task is to determine the probability or likelihood that the threat agent will take action, given 
+that contact has been made. This, of course, depends on the nature of the threat and the type of 
+action available to the threat agent. But in general, the factors that an analyst needs to consider are 
+the perceived value to the threat agent in performing the action, the level of effort required to 
+perform the act, and the risk of discovery and/or punishment if the action is detected. 
+Based on estimates of contact frequency and probability of action, the analyst should be able to make 
+a reasonable estimate of the threat event frequency.

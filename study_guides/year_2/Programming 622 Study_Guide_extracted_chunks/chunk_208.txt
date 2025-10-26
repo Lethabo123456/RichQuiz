@@ -1,0 +1,41 @@
+yList, the function print is of O(n).  
+  
+ 
+3.2.8  Length of a List  
+  
+The length of a linked list (that is, how many nodes are in the list) is stored in the variable count. Therefore, 
+this function returns the value of this variable.  
+  
+template <class Type>  
+int linkedListType<Type>::length() const  
+{ return count;  
+}  
+  
+ 
+3.2.9  Retrieve the Data of the First Node  
+  
+The function front returns the info contained in the first node, and its definition is straightforward.  
+  
+template <class Type>  
+Type linkedListType<Type>::front() const  
+{ assert(first != NULL);  
+ 
+return first->info;   
+  
+  
+//return the info of the first node  
+ 
+}  
+  
+  
+  
+  
+  
+//end front  
+  
+Notice that if the list is empty, the assert statement terminates the program. Therefore, before calling this 
+function check, you have to check to see whether the list is nonempty.  
+  
+3.2.10 Retrieve the Data of the Last Node  
+  
+The function back returns the info contained in the last node. Its def

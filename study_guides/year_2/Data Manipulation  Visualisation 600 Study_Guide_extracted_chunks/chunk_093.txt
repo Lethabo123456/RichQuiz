@@ -1,0 +1,32 @@
+How to create a seaborn correlation heatmap 
+  
+The strength and direction of the correlation between two pairs of variables in a dataset are displayed 
+graphically in a correlation heatmap, which depicts the correlation matrix. It is an effective technique for 
+finding patterns and connections in massive datasets. 
+  
+We must import the dataset, compute the correlation matrix of the variables, and then use the Seaborn 
+heatmap function to produce the heatmap to construct a correlation heatmap. The heatmap displays a 
+matrix with colours that indicate the degree of correlation between the variables. Also, the user can show 
+the correlation coefficients on the heatmap. 
+ 
+Using Heatmap() Function 
+  
+The heatmap function generates a colour-coded matrix that illustrates how strongly two pairs of variables in a 
+dataset correlate with one another. The heatmap function requires that we feed it the correlation matrix of 
+the variables, which can be calculated using the corr method of the Pandas data frame. The heatmap function 
+offers a wide range of optional options to enable the user to alter the heatmap's visual look, including the 
+colour scheme, annotations, plot size, and location. 
+  
+In this example, we create a seaborn correlation heatmap in Python. Firstly, we import the seaborn and 
+matplotlib libraries and use Seaborn's load dataset function to load the iris dataset. The dataset comprises the 
+SepalLength, SepalWidth, PetalLength, and PetalWidth variables. The iris dataset includes measurements of 
+the sepal length, sepal breadth, petal length, and petal width of iris flowers. 
+
+Serial No    Sepal_length    Sepal_width    Petal_length     Petal_width 
+0            5.1             3.5            1.4              0.2 
+1            4.9             3.0            1.4              0.2 
+2            4.7             3.2            1.3              0.2 
+3            4.6             3.1            1.5              0.2 
+4            5.0             3.6            1.4              0.2 
+
+ 

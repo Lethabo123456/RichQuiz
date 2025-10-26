@@ -1,0 +1,50 @@
+7.3 Software Re-engineering  
+Software maintenance involves understanding the program that has to be changed and then 
+implementing any required changes. However, many systems, especially older legacy systems, are 
+difficult to understand and change. The programs may have been optimized for performance or 
+space utilization at the expense of under-standability, or, over time, the initial program structure 
+may have been corrupted by a series of changes. To make legacy software systems easier to 
+maintain, you can reengineer these systems to improve their structure and understandability.  
+ 
+Reengineering may involve redocumenting the system, refactoring the system architecture, 
+translating programs to a modern programming language, or modifying and updating the 
+structure and values of the system’s data. The functionality of the software is not changed, and, 
+normally, you should try to avoid making major changes to the system architecture. 
+
+Reengineering has two important advantages over replacement: 
+ 
+• Reduced risk:  There is a high risk in redeveloping business-critical software. Errors may 
+be made in the system specification or there may be development problems. Delays in 
+introducing the new software may mean that business is lost and extra costs are incurred. 
+• Reduced cost: The cost of reengineering may be significantly less than the cost of 
+developing new software. 
+
+Figure 7.2: The Re-engineering process 
+ 
+This is a general model of the reengineering process. The input to the process is a legacy program, 
+and the output is an improved and restructured version of the same program. The activities in 
+this reengineering process are: 
+
+• Source code translation Using a translation tool, you can convert the program from an old 
+programming language to a more modern version of the same lan-guage or to a different 
+language. 
+• Reverse engineering:  The program is analyzed and information extracted from it. This 
+helps to document its organization and functionality. Again, this process is usually 
+completely automated. 
+• Program structure improvement: The control structure of the program is analyzed and 
+modified to make it easier to read and understand. This can be partially automated, but 
+some manual intervention is usually required. 
+• Program modularization Related parts of the program are grouped together, and, where 
+appropriate, redundancy is removed. In some cases, this stage may involve architectural 
+refactoring (e.g., a system that uses several different data stores may be refactored to use 
+a single repository). This is a manual process. 
+• Data reengineering: The data processed by the program is changed to reflect program 
+changes. This may mean redefining database schemas and converting existing databases 
+to the new structure. You should usually also clean up the data. This involves finding and 
+correcting mistakes, removing duplicate records, and so on. This can be a very expensive 
+and prolonged process. 
+Program reengineering may not necessarily require all of the steps in the Figure above. You don’t 
+need source code translation if you still use the application’s programming language. If you can 
+do all reengineering automatically, then recovering documentation through reverse engineering 
+may be unnecessary. Data reengineering is required only if the data structures in the program 
+change during system reengineering. 

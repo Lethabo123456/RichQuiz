@@ -1,0 +1,20 @@
+rical accuracy of the table’s data. For example, writing the charge per hour on 
+the ASSIGNMENT table is crucial for maintaining its history. 
+Evaluating Using Derived Attributes. Finally, you can use a derived attribute in a table to store 
+a value computed using values from other attributes. This creates a transitive dependency. From a 
+system functionality point of view, derived attribute values can be calculated when they are needed 
+to write reports or invoices. However, storing the derived attribute in the table makes it easy to write 
+the application software to produce the desired results. Also, if many transactions must be reported 
+and/or summarized, the availability of the derived attribute will save reporting time. 
+ 
+ 
+ 
+ 
+
+ 
+85 
+ 
+Surrogate Key Consideration 
+Although this design meets the vital entity and referential integrity requirements, the designer must 
+still address some concerns. For example, a composite primary key might become too cumbersome 
+to use as the numb

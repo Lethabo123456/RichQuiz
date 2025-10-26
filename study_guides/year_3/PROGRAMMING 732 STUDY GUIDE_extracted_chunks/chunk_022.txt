@@ -1,0 +1,14 @@
+TextArea is subclass of TextComponent. Therefore, it supports the getText(), set Text(), getSelectedText(), 
+select(), isEditable(), and setEditable() method described in the preceding section. TextArea adds the 
+following methods:  
+  
+Void append(String str)  
+Void insert(String str, int index)  
+Void replaceRange(String str, int startIndex, int endIndex) 
+
+The append( ) method appends the string specified by str to the end of the current text. insert( ) inserts 
+the string passed in str at the specified index. To replace text, call replaceRange(). It replaces the 
+characters from startIndex to endIndex-1, with the replacement text passed in str.  
+Text areas are almost self-contained controls. You program incurs virtually no management overhead. 
+Text areas only generate got-focus and lost-focus events. Normally, your program simply obtains the 
+current text when it is needed.  

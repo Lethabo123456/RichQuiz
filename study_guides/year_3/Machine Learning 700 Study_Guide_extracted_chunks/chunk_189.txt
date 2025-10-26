@@ -1,0 +1,19 @@
+Hierarchical clustering and dendrograms 
+
+Agglomerative clustering produces what is known as a hierarchical clustering. The clustering proceeds 
+iteratively, and every point makes a journey from being a single point cluster to belonging to some final 
+cluster. Each intermediate step provides a clustering of the data (with a different number of clusters). It 
+is sometimes helpful to look at all possible clusterings jointly. The next example shows an overlay of all 
+the possible clusterings shown before, providing some insight into how each cluster breaks up into 
+smaller clusters: 
+ 
+While this visualization provides a very detailed view of the hierarchical clustering, it relies on the two-
+dimensional nature of the data and therefore cannot be used on datasets that have more than two 
+features. There is, however, another tool to visualize hierarchical clustering, called a dendrogram, that 
+can handle multidimensional datasets.
+ 
+Unfortunately, scikit-learn currently does not have the functionality to draw dendrograms. However, you 
+can generate them easily using SciPy. The SciPy clustering algorithms have a slightly different interface to 
+the scikit-learn clustering algorithms. SciPy provides a function that takes a data array X and computes a 
+linkage array, which encodes hierarchical cluster similarities. We can then feed this linkage array into the 
+scipy dendrogram function to plot the dendrogram: 

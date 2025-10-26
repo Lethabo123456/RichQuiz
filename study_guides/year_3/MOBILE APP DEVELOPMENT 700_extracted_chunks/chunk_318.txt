@@ -1,0 +1,19 @@
+FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction(); 
+fragmentTransaction.replace(R.id.details_fragment, 
+new DetailFragment(selected_index)); 
+fragmentTransaction.commit(); 
+ 
+Using the Fragment Manager to Find Fragments 
+To find Fragments within your Activity, use the Fragment Manager’s findFragmentById method. If 
+you have added your Fragment to the Activity layout in XML, you can use the Fragment’s resource 
+identifier: 
+ 
+MyFragment myFragment = (MyFragment)fragmentManager.findFragmentById(R.id.MyFragment); 
+ 
+If you’ve added a Fragment using a Fragment Transaction, you should specify the resource identifi 
+er of the container View to which you added the Fragment you want to fi nd. Alternatively, you can 
+use the findFragmentByTag method to search for the Fragment using the tag you specifi ed in the 
+Fragment Transaction: 
+ 
+MyFragment myFragment = 
+(MyFragment)fragmentManager.findFragmentByTag(MY_FRAGMENT_TAG);

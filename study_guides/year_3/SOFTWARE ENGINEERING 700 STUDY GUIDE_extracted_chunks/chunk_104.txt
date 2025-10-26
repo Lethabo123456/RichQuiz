@@ -1,0 +1,12 @@
+3.3.2 Refactoring  
+A fundamental precept of traditional software engineering is that you should design for change. 
+That is, you should anticipate future changes to the software and design it so that these changes 
+can be easily implemented. Extreme programming, however, has discarded this principle on the 
+basis that designing for change is often wasted effort. It isn’t worth taking time to add generality 
+to a program to cope with change. Often the changes anticipated never materialize, or completely 
+different change requests may actually be made. Of course, in practice, changes will always have 
+to be made to the code being developed. To make these changes easier, the developers of XP 
+suggested that the code being developed should be constantly refactored.  
+Refactoring means that the programming team look for possible improvements to the software 
+and implements them immediately. When team members see code that can be improved, they 
+make these improvements even in situations where there is no immediate need for them

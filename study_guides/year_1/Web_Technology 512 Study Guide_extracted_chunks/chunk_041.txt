@@ -1,0 +1,30 @@
+Screen Height and Screen Width. But note 
+where all the plus symbols, commas and spaces are. Get your plus symbols and/or 
+commas wrong and your code won't work. 
+ 
+You can use HTML tags with concatenation. For example, if you want to spread things 
+over two lines, you can use the BR tag. Like this: 
+document.write("SH="+window.screen.height+"<BR>"+"SW="+ 
+window.screen.width); 
+ 
+The BR tag is surrounded by quotation marks. You need the quote marks for any 
+HTML that you insert using the write method. 
+ 
+You can use document.write as many times as you want. In the code if Figure 
+2.20 below, we have moved the SCRIPT tags back to the HEAD section. We then used 
+
+ 
+29 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+document.write twice: once to add the H1 line, and once to add the text below it. 
+ 
+ 
+Figure 2.20 - document.write used multiple times 
+ 
+Exercise 2.2 
+Use concatenation with document.write to create the following in your browser: 
+ 
+ 
+ 
+We used document.write twice here. The fi

@@ -1,0 +1,36 @@
+5.3 Resource Pooling Architecture 
+A resource pooling architecture is based on the use of one or more resource pools, in which identical 
+IT resources are grouped and maintained by a system that automatically ensures that they remain 
+synchronized 
+ 
+Common examples of resource pools are  
+Physical server pool  
+Physical server pools are composed of networked servers that have been installed with operating 
+systems and other necessary programs and/or applications and are ready for immediate use. 
+ 
+Virtual server pool  
+Virtual server pools are usually configured using one of several available templates chosen by the 
+cloud consumer during provisioning. For example, a cloud consumer can set up a pool of mid-tier 
+Windows servers with 4 GB of RAM or a pool of low-tier Ubuntu servers with 2 GB of RAM 
+ 
+Storage pool  
+Storage pools, or cloud storage device pools, consist of file-based or block-based storage structures 
+that contain empty and/or filled cloud storage devices. 
+ 
+Network pool  
+Network pools (or interconnect pools) are composed of different preconfigured network connectivity 
+devices. For example, a pool of virtual firewall devices or physical network switches can be created for 
+redundant connectivity, load balancing, or link aggregation 
+ 
+CPU pool  
+CPU pools are ready to be allocated to virtual servers, and are typically broken down into individual 
+processing cores. 
+ 
+Memory pool 
+Pools of physical RAM can be used in newly provisioned physical servers or to vertically scale physical 
+servers. 
+ 
+Dedicated pools can be created for each type of IT resource and individual pools can be grouped into 
+a larger pool, in which case each individual pool becomes a sub-pool 
+ 
+Fig 5.2: A sample resource pool comprising four sub-pools  

@@ -1,0 +1,33 @@
+ivals.  
+  
+These pieces of information are called simulation parameters. By changing the values of these parameters, 
+we can observe the changes in the performance of the system. We can write a function, 
+setSimulationParameters, to prompt the user to specify these values. The definition of this function is as 
+follows:  
+  
+void setSimulationParameters(int& sTime, int& numOfServers, int& transTime, int& tBetweenCArrival)  
+{  
+cout << "Enter the simulation time: 
+"; cin >> sTime; cout << endl;  
+  
+cout << "Enter the number of servers: 
+"; cin >> numOfServers; cout << endl;  
+  
+cout << "Enter the transaction time: "; cin 
+>> transTime;  
+  
+  
+  
+  
+
+249  
+  
+cout << endl;  
+  
+cout << "Enter the time between customers arrival: 
+"; cin >> tBetweenCArrival; cout << endl;  
+}  
+  
+When a server becomes free and the customer queue is nonempty, we can move the customer at the 
+front of the queue to the free server to be served. Moreover, when a customer starts the transaction, the 
+wait

@@ -1,0 +1,26 @@
+e perform the following steps:  
+  
+1. Insert the new element in the first available position in the list. (This ensures that the array holding 
+the list is a complete binary tree.)  
+2. After inserting the new element in the heap, the list might no longer be a heap. So to restore the 
+heap:  
+  
+while (the parent of the new entry is smaller than the new entry) swap 
+the parent with the new entry.  
+  
+Notice that restoring the heap might result in moving the new entry to the root node.  
+  
+8.10.2 Remove An Element From The Priority Queue  
+  
+Assuming the priority queue is implemented as a heap, to remove the first element of the priority queue, 
+we perform the following steps:  
+  
+1. Copy the last element of the list into the first array position.  
+
+317  
+  
+2. Reduce the length of the list by 1.  
+3. Restore the heap in the list.  
+  
+The other operations for priority queues can be implemented in the same way as implemented for queues. 
+We leave the implementation of the priority

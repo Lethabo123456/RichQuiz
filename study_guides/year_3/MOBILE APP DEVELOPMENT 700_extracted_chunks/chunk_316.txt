@@ -1,0 +1,30 @@
+Creating and Destroying Fragments 
+
+The created lifetime of your Fragment occurs between the fi rst call to onCreate and the fi nal call 
+to onDestroy. As it’s not uncommon for an Activity’s process to be terminated without the corresponding 
+onDestroy method being called, so a Fragment can’t rely on its onDestroy handler being 
+triggered. As with Activities, you should use the onCreate method to initialize your Fragment. It’s good practice 
+to create any class scoped objects here to ensure they’re created only once in the Fragment’s 
+lifetime. 
+ 
+Adding, Removing, and Replacing Fragments 
+When adding a new UI Fragment, specify the Fragment instance to add, along with the container 
+View into which the Fragment will be placed. Optionally, you can specify a tag that can later be 
+used to fi nd the Fragment by using the findFragmentByTag method: 
+ 
+FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction(); 
+fragmentTransaction.add(R.id.ui_container, new MyListFragment()); 
+fragmentTransaction.commit(); 
+ 
+To remove a Fragment, you fi rst need to fi nd a reference to it, usually using either the Fragment 
+Manager’s findFragmentById or findFragmentByTag methods. Then pass the found Fragment 
+instance as a parameter to the remove method of a Fragment Transaction: 
+ 
+FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction(); 
+Fragment fragment = fragmentManager.findFragmentById(R.id.details_fragment); 
+fragmentTransaction.remove(fragment); 
+fragmentTransaction.commit(); 
+ 
+You can also replace one Fragment with another. Using the replace method, specify the container 
+ID containing the Fragment to be replaced, the Fragment with which to replace it, and (optionally) a 
+tag to identify the newly inserted Fragment. 

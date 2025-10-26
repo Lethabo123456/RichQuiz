@@ -1,0 +1,19 @@
+2.2  Sensor Simulation in Autonomous Systems and Robotics 
+
+Sensor Simulation refers to the computational modelling of sensors to replicate their behaviour 
+in virtual environments, creating synthetic sensor data that mimics real-world sensor outputs. 
+This process generates virtual sensor data such as LIDAR point clouds, camera images, and depth 
+maps while accurately accounting for key sensor characteristics including range, resolution, noise, 
+and environmental interactions. 
+
+Sensor simulation is essential for designing, training, and validating autonomous systems, 
+allowing developers to test perception algorithms without requiring physical hardware. It 
+provides safe, scalable, and controlled environments where developers can conduct testing, 
+development, and validation of perception algorithms in repeatable and cost-effective virtual 
+settings. 
+
+This capability is critical for autonomous systems and robotics, as it enables comprehensive 
+algorithm development and validation before deployment on physical hardware. By offering 
+controlled virtual environments, sensor simulation supports the entire development lifecycle of 
+autonomous systems, from initial algorithm design through final validation, ensuring robust 
+performance when systems are eventually deployed in real-world scenarios.

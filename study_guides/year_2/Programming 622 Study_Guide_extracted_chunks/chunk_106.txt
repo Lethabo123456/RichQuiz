@@ -1,0 +1,13 @@
+ons on classes are the assignment and member selection.  
+44. Class objects can be passed as parameters to functions and returned as function values.  
+45. As parameters to functions, classes can be passed either by value or by reference.  
+46. Constructors guarantee that the data members are initialized when an object is declared.  
+47. The name of a constructor is the same as the name of the class.  
+48. A class can have more than one constructor.  
+49. A constructor without parameters is called the default constructor.  
+50. Constructors automatically execute when a class object enters its scope.  
+51. Destructors automatically execute when a class object goes out of scope.  
+52. A class can have only one destructor with no parameters.  
+53. The name of a destructor is the tilde (~), followed by the class name (no spaces in between).  
+54. Constructors and destructors are functions without any type; that is, they are neither valuereturning 
+nor void. As a result, they cannot be call

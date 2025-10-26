@@ -1,0 +1,26 @@
+pointer to the second half of the node. The parameter current points to the 
+node to be split, insertItem is the item to be inserted, newChild is a pointer to the right child of the item 
+to be inserted, insertPosition specifies the position where to insert the new item, after splitting the node 
+the parameter rightNode returns a pointer to the right half of the node, and median returns the median 
+key of the node.  
+  
+template <class recType, int bTreeOrder> void 
+bTree<recType, bTreeOrder>::splitNode  
+(bTreeNode<recType, bTreeOrder> *current,const recType& insertItem, 
+bTreeNode<recType, bTreeOrder>* rightChild,int insertPosition, bTreeNode<recType, 
+bTreeOrder>* &rightNode,recType &median)  
+{  
+rightNode = new bTreeNode<recType, bTreeOrder>;  
+  
+int mid = (bTreeOrder - 1) / 2;  
+  
+ 
+if (insertPosition <= mid)   
+  
+  
+//new item goes in the first half of the node  
+{ int index = 0; int i 
+= mid;  
+while (i < bTreeOrder - 1)  
+{ rightNode->list[index] = current->list[i];  
+right

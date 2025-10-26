@@ -1,0 +1,28 @@
+ction, right at the end 
+as shown in Figure 2.8 below: 
+
+ 
+19 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+ 
+Figure 2.8 – JavaScript tags in the BODY section 
+The reason to do it this way is because the web page itself will have loaded before the 
+script is read. If it is in the HEAD section, the script will be parsed before any HTML or 
+CSS elements are loaded. If your JavaScript references any of the web page's 
+elements, there may be a slight delay in the fancy affects you want to apply, or it may 
+just not work at all. 
+ 
+For the most part, though, we will place our script tags in the HEAD section of the 
+HTML as shown in Figure 2.9 below: 
+ 
+ 
+Figure 2.9 - JavaScript tags in the HEAD section 
+Exercise 
+ 
+Using your code from the previous lesson, move your JavaScript code from the BODY 
+to the HEAD section of your HTML, so that it looks like ours above. Change the 
+confirm box back to an alert message. 
+ 
+2.3.1 External JavaScript Files 
+JavaScript code can also be placed in an exte

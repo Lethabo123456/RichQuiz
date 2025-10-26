@@ -1,0 +1,108 @@
+ine 21  
+  
+TABLE 2-4: Functions to determine the size of a vector container  
+
+60  
+  
+ 
+cout << "Line 22: List Elements: ";     
+  
+  
+//Line 22  
+ 
+for (listIt = intList.begin(); listIt != intList.end(); ++listIt)   
+//Line 23  
+ 
+cout << *listIt << " ";    
+  
+  
+  
+//Line 24  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+//Line 25  
+  
+ 
+listIt = intList.begin();    
+  
+  
+  
+  
+//Line 26  
+++listIt;   
+  
+  
+  
+  
+  
+  
+//Line 27 ++listIt;   
+  
+  
+  
+  
+ 
+ 
+  
+//Line 28  
+ 
+intList.insert(listIt, 88);   
+  
+  
+  
+  
+//Line 29  
+  
+ 
+cout << "Line 30: List Elements: ";     
+  
+  
+//Line 30  
+ 
+for (listIt = intList.begin(); listIt != intList.end(); ++listIt)   
+//Line 31  
+ 
+cout << *listIt << " ";    
+  
+  
+  
+//Line 32  
+ 
+cout << endl;    
+  
+  
+  
+  
+  
+//Line 33  
+  
+ 
+return 0;   
+  
+  
+  
+  
+  
+  
+//Line 34  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 35  
+  
+Sample Run:  
+Line 11: List Elements: 13 75 28 35  
+Line 17: List Elements: 26 150 56 70  
+Line 22: List Elements: 26 150 56 70

@@ -1,0 +1,43 @@
+ray ( [0] => peach ) 
+b) Array ( [0] => apple [1] => mango [2] => peach ) 
+c) Array ( [0] => apple [1] => mango ) 
+d) Array ( [0] => peach [1] => pear [2] => orange ) 
+  
+Answer: d 
+  
+88. What will be the output of the following PHP code? 
+<?php 
+$fruits = array ("apple", "mango", "peach", "pear", 
+"orange"); 
+$subset = array_splice ($fruits, 2); 
+print_r ($fruits); 
+?> 
+  
+
+a) Error 
+b) Array ( [0] => apple [1] => mango [2] => peach ) 
+c) Array ( [0] => apple [1] => mango ) 
+d) Array ( [0] => pear [1] => orange ) 
+  
+Answer: c 
+  
+89. What will be the output of the following PHP code? 
+<?php 
+$number = array ("4", "hello", 2); 
+echo (array_sum ($number)); 
+?> 
+a) 4hello2 
+b) 4 
+c) 2 
+d) 6 
+  
+Answer: d 
+  
+90. What will be the output of the following PHP code? 
+<?php 
+$array1 = array ("KA", "LA", "CA", "MA", "TA"); 
+$array2 = array ("KA", "IA", "CA", "GA", "TA"); 
+$inter = array_intersect ($array1, $array2); 
+print_r ($inter); 
+?> 
+a) Array ( [0] => KA [1] => LA [2] => CA [3] => MA [

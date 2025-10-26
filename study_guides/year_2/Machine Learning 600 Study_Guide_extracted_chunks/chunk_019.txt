@@ -1,0 +1,21 @@
+redict or classify unknown features 
+during the testing phase and observations that was not considered or included in the training 
+dataset will be classified as unknown instances. An example is given in Figure 1.2. 
+ 
+ 
+                                                                   Figure 1.2:  Supervised learning 
+ 
+There are problems with this ML technique:  
+ Bias-variance dilemma: how the ML model performs accurately using different 
+training sets? 
+
+P a g e  | 5 
+ 
+ High-bias models: how to deal with complex and noisy training dataset?  
+ Size of the training dataset: what is the acceptable size of the training dataset for 
+the ML algorithm to compute accurate classification and prediction? 
+ 
+1.2.2 Unsupervised Learning 
+The opposite of supervised learning is unsupervised learning. With unsupervised learning, the 
+ML algorithm detect hidden patterns in a given dataset. With unsupervised learning there is 
+no wrong or right answer; it's just a case of running the ML algori

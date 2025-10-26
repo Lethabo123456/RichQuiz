@@ -1,0 +1,30 @@
+->info;  
+}  
+  
+template <class Type>  
+linkedListIterator<Type> linkedListIterator<Type>::operator++()  
+{ current = current->link; 
+return *this;  
+}  
+  
+template <class Type>  
+bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>& right) const  
+{ return (current == right.current);  
+}  
+  
+template <class Type>  
+bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>& right) const  
+{ return (current != right.current);  
+}  
+  
+From the definitions of the functions and constructors of the class linkedListIterator, it follows that each 
+function and the constructors are of O(1).  
+
+98  
+  
+  
+Now that we have defined the classes to implement the node of a linked list and an iterator to a linked 
+list, next, we describe the class linkedListType to implement the basic porperties of a linked list.  
+  
+The following abstract class defines the basic properties of a linked list as an ADT: 
+//*********************************************************

@@ -1,0 +1,26 @@
+r file.” );   
+                          } else {   
+                                   fwrite( $handle, 0 );   
+                                   fclose( $handle );   
+                          }   
+                       }   
+                       if ( !( $handle = fopen( $counterFile, “r” ) ) ) {                                    die( 
+“Cannot read the counter file.” );   
+                     }   
+                 $counter = (int) fread( $handle, 20 );   
+                 fclose( $handle );                   
+$counter++;   
+                 echo “<p>You’re visitor No. $counter.</p>”;                 
+if ( !( $handle = fopen( $counterFile, “w” ) ) ){   
+                         die( “Cannot open the counter file for writing.” );   
+                 }   
+               fwrite( $handle, $counter );   
+               fclose( $handle );   
+
+50   
+   
+           ?>   
+      </body>   
+</html>   
+   
+Save this script as hit_counter.php and give it a try. Figure 3.1 shows a sample run.

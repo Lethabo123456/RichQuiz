@@ -1,0 +1,37 @@
+tCustomerArrivalTime() const; 
+//Function to return the arrival time of the current 
+//customer.  
+//Postcondition: The value of arrivalTime of the current // 
+customer is returned.  
+  
+int getCurrentCustomerWaitingTime() const; 
+//Function to return the current waiting time of the 
+//current customer.  
+//Postcondition: The value of transactionTime is returned.  
+  
+int getCurrentCustomerTransactionTime() const; 
+//Function to return the transaction time of the 
+//current customer.  
+//Postcondition: The value of transactionTime of the // 
+current customer is returned.  
+  
+private:  
+customerType currentCustomer; string 
+status;  
+
+242  
+  
+int transactionTime;  
+};   
+Figure 6-12 shows the UML diagram of the class serverType.  
+  
+  
+FIGURE 6-12 UML diagram of the class serverType  
+  
+The definitions of some of the member functions of the class serverType are as follows: 
+serverType::serverType()  
+{ status = "free";  
+transactionTime = 0;  
+}  
+  
+bool serverType::isFree() const

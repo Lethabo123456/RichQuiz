@@ -1,0 +1,17 @@
+re common ones are:  
+sort() and rsort() – – For sorting indexed arrays  
+asort() and arsort() – – For sorting associative arrays  
+
+70  
+ksort() and krsort() – – For sorting associative arrays by key rather than by value  
+array_multisort() – – A powerful function that can sort multiple arrays at once, or 
+multidimensional arrays  
+5.13 Sorting Indexed Arrays With sort() and rsort() 
+The simplest of the array sorting functions are sort() and rsort() . sort() sorts the values of the 
+array in ascending order (alphabetically for letters, numerically for numbers, letters before 
+numbers),  
+and rsort() sorts the values in descending order. To use either function, simply pass it the array to 
+besorted. The function then sorts the array. As with all the sorting functions covered in this 
+chapter, the function returns true if it managed to sort the array or false if there was a problem. 
+Here’s an example that sorts a list of authors alphabetically in ascending order, and then in 
+desce

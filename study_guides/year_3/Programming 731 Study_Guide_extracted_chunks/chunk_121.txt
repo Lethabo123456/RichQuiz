@@ -1,0 +1,29 @@
+3.3 Array Lists  
+   
+Java ArrayList class uses a dynamic array for storing the elements. It is like an array, but there is no 
+size limit. We can add or remove elements anytime. So, it is much more flexible than the traditional 
+array. It is found in the java.util package Arraylist class implements 
+List interface and it is based on an Array data structure. It is widely used 
+because of the functionality and flexibility it offers.   
+ 
+ArrayList in Java, is a resizable-array implementation of the List interface. It implements all optional 
+list operations and permits all elements, including null. Most of the developers choose Arraylist over 
+Array as it is a very good alternative of traditional java arrays.   
+  
+3.3.1  ARRAYS VS ARRAYLISTS IN JAVA   
+   
+The main difference between array and arraylist is that arraylist can grow and shrink dynamically 
+while an array cannot.   
+   
+An array has a fixed length so if it is full you cannot add any more elements to it. Similarly, if number 
+of elements are removed from ArrayList, the memory consumption remains same as it doesn’t 
+shrink.   
+   
+On the other hand, ArrayList can dynamically grow and shrink after addition and removal of 
+elements. ArrayList class has several useful methods that can make our task easy.   
+  
+• ArrayList can grow and shrink automatically based on the addition and removal of elements.   
+• ArrayList can contain duplicate elements   
+• ArrayList maintains the insertion order, which means the elements appear in the same order 
+in which they are inserted.   
+• ArrayList is non synchronized. However you can make it synchronized.

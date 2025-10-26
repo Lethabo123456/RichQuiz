@@ -1,0 +1,19 @@
+:N relationship must be mapped to a 
+set of 1:M relationships through a composite entity.  
+ 
+ERDs may be based on many different ERMs. However, regardless of which model is 
+selected, the modelling logic remains the same.  
+ 
+Unified Modelling Language (UML) class diagrams are used to represent the static data 
+structures in a data model. The UML class diagrams can be used to depict data models at the 
+conceptual or implementation abstraction levels.  
+ 
+Database designers are often forced to make design compromises. Those compromises are 
+required when end users have vital transaction-speed and information requirements that 
+prevent the use of “perfect” modelling logic and adherence to all modelling conventions.  
+ 
+The extended entity relationship (EER) model adds semantics to the ER model via entity 
+super-types, subtypes, and clusters. An entity super-type is a generic entity type that is 
+related to one or more entity subtypes.  
+ 
+A specialization hierarchy depicts the arra

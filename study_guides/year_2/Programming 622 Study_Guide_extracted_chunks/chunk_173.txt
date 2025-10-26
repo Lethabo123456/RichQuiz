@@ -1,0 +1,36 @@
+3-1 is a 
+pictorial representation of a node.  
+  
+  
+FIGURE 3-1 Structure of a node  
+  
+Linked list: A list of items, called nodes, in which the order of the nodes is determined by the address, 
+called the link, stored in each node.  
+  
+The list in Figure 3-2 is an example of a linked list.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+84  
+  
+ FIGURE 
+3-2 Linked list  
+The arrow in each node indicates that the address of the node to which it is pointing is stored in that node. 
+The down arrow in the last node indicates that this link field is NULL.  
+  
+For a better understanding of this notation, suppose that the first node is at memory location 1200, and 
+the second node is at memory location 1575, see Figure 3-3.  
+  
+  
+FIGURE 3-3 Linked list and values of the links  
+  
+The value of the head is 1200, the data part of the first node is 45, and the link component of the first 
+node contains 1575, the address of the second node. If no confusion arises, we will use the arrow notation 
+whenever we

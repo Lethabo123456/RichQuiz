@@ -1,0 +1,28 @@
+class maintains a (hidden) pointer to itself, and the name of this pointer is this. In C++, 
+this is a reserved word. 
+ 
+The pointer this (in a member function) is available for you to use. When an object 
+invokes a member function, the member function references the pointer this of the 
+object. For example, suppose that test is a class and has a member function called 
+one. 
+ 
+Further suppose that the definition of one looks like the following: 
+test test::one()  
+{  
+. . . 
+  
+return *this; 
+ } 
+ 
+If x and y are objects of type test, then the statement: 
+y = x.one(); 
+ 
+Copies the value of object x into object y. That is, the member variables of x are copied 
+into the corresponding member variables of y. When object x invokes function one, 
+the pointer this in the definition of member function one refers to object x, so this 
+means the address of x and *this means the contents of x. On the other hand, in the 
+statement: 
+ 
+x = y.one(); 
+ 
+the pointer this in the definition of member

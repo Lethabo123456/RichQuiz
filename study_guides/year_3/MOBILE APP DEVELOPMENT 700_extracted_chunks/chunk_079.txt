@@ -1,0 +1,18 @@
+21 thread to do the initialization, thus allowing the user to interact with other parts of your app while the 
+19 services are being activated. 
+A final important issue with the use of hardware devices is accuracy. There are several aspects of this 
+issue. First, the accuracy of the component can differ among manufacturers. Consider the minimal 
+level of accuracy needed for effective use of your app, and design for that. Be sure to give the user 
+options if the required level of accuracy is not available. Second, accuracy often takes time. For 
+example, finding the location of the device within a few hundred meters is often very quick. However, 
+accuracy of a few feet often takes much more time. What is the required level of accuracy for your 
+app’s functionality? What can the user do if the device cannot achieve this? How quick does the 
+acquisition of location need to be? All are important considerations when you are designing the app. 
+
+A very good design strategy when you need better accuracy is to keep the user informed of progress. 
+The Google Maps app provides an example of this. When finding your location on the map, the app 
+first shows a big blue circle that gets progressively smaller as the accuracy improves. Finally, how the 
+device returns data to the app may affect the level of accuracy your app can access. Again, using GPS 
+as an example, the number of digits reported for the latitude and longitude coordinates dictate the 
+level of accuracy of those coordinates. In some cases, the number of digits reported can differ. This is 
+primarily an issue for the Android platform because it can differ among versions of the Android OS.

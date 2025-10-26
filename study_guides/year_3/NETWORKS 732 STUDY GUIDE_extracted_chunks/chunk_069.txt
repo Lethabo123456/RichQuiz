@@ -1,0 +1,23 @@
+Avoiding Negative Side Eﬀects 
+ 
+While solving one issue, it is possible to inadvertently introduce others. For instance, if you 
+reconﬁgured a user’s mail client to log in using your administrator account during testing, but 
+forgot to revert those settings after ﬁxing the root cause—say, an IP address conﬂict—then 
+the user might later be unable to receive emails. Testing by the end user helps catch such 
+oversights. Always ensure conﬁgurations are restored to original or improved states before 
+signing oﬀ on a solution. 
+
+Planning for Prevention 
+ 
+Verifying a solution isn’t just about conﬁrming a ﬁx—it also involves reﬂecting on how to 
+prevent similar issues in the future. Prevention can be achieved through: 
+• Routine network maintenance 
+• Proactive documentation 
+• Security auditing 
+• System upgrades 
+• Capacity planning and monitoring 
+
+For example, over-utilized segments can be diagnosed through traﬃc analysis tools. Solutions 
+may involve redistributing traﬃc loads, redesigning network topologies, or purchasing more 
+bandwidth. Preventative planning could include setting access level policies, building user 
+groups strategically, or conducting health checks on a regular basis.

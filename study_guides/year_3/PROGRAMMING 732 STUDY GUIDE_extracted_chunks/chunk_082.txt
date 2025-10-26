@@ -1,0 +1,74 @@
+SQL statements that execute stored procedures (or trigger a stored procedure) may return more than one 
+set of results. The execute ( ) method is a general-purpose method that can return either a single result 
+set or multiple result sets. The method returns a Boolean flag that is used to determine whether there are 
+more result sets. Because a result set could contain either data or the count of an operation that returns 
+a row count, the getResultSet 9 ), getMoreResults ( ), and getUpdateCount( ) methods are used. Here is 
+an example:  
+  
+//Assume SQLString returns multiple result sets  
+//returns true if a ResultSet is returned 
+int count; ResultSet results;  
+If (stmt execute (SQL string))  
+{  
+results = stmt.getResultSet ( ); // 
+false, an UpdateCount was returned  
+} else 
+{  
+count = stmt.getUpdateCount ( );  
+}  
+// Process the first results here....  
+Connectivity  
+// Now loop until there are no more  
+//results or update counts 
+do {  
+// Is the next result a ResultSet?  
+If (stmt.getMoreResults())  
+{  
+results = stmt.getResultSet ();  
+} else 
+{  
+count = stmt.getUpdateCount();  
+}  
+// Process next results (if any) here....  
+}  
+while ((results !=null) && (count != -1);   
+3.4.4 The PreparedStatement Interface  
+The Prepared Statement interface extends the Statement interface. When there is a SQL statement that 
+requires repetition with minor variations, the PreparedStatement provides the mechanism for passing a 
+precompiled SQL statement that uses parameters. Public interface PreparedStatement extends Statement 
+PreparedStatement parameters are used to pass data into a SQL statement, so they are considered in 
+parameters and are filled in by using setType methods:  
+  
+// Assume pricelist is an array of prices that 
+needs  
+// to be reduced for a 10% off sale, and reduced 
+items  
+// is an array of item IDs int 
+reduction = 10;  
+PreparedStatement ps = conn.prepareStatement  
+
+(*UPDATE Catalog SET Price = WHERE ItemID =7”)  
+// Do the updates in a loop  
+for (int I = 0; I < reducedItems.length; i++)  
+{  
+//Note that the setType methods set the value of 
+the  
+//parameters noted in the SQL statement with  
+question  
+//marks (?). They are indexed, starting from  
+1 to n.  
+ps.setFloat  
+(1.  
+(pricelist[i]*((float)(100=reduction)/100))); 
+ps.setString(2, reducedItems[i]); if 
+(ps.executeUpdate() == 0)  
+{  
+throw new ApplicationSpecificException (*No 
+Item ID: “ + reduced Items[i]);
+
+Parameters hold their current values until either a new setType method is called, or the method 
+clearParameters( ) is called for PreparedStatement object. In addition to the execute methods inherited 
+from Statement, PreparedStatement declares the setType methods listed in Table 3.1. Each method takes 
+two arguments a parameter index, and the primitive or class type, as shown in table 3.1.  
+  
+Table 3.1: The Set Type Methods

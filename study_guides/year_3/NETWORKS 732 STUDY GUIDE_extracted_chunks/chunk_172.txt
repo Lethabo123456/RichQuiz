@@ -1,0 +1,28 @@
+3.11.4 Secure Shell (SSH) 
+Secure Shell (SSH) is a network protocol that replaces Telnet by creating an encrypted channel to 
+protect data transmission. It ensures conﬁdentiality and integrity through public-key 
+cryptography, where a public key is installed on the server and the private key remains secure 
+with the user. While setting up SSH can sometimes require careful conﬁguration, the security 
+beneﬁts far outweigh the eﬀort. As a best practice, Telnet should be disabled wherever possible. 
+
+3.11.5 Virtual Network Computing (VNC) 
+Virtual Network Computing (VNC) is a remote desktop sharing system that uses the Remote 
+Frame Buﬀer (RFB) protocol. It is platform-independent and provides an experience similar to 
+Remote Desktop Protocol (RDP). VNC components include the VNC server, the VNC client, and 
+the VNC protocol. The VNC server is a software that runs on a machine sharing its screen, while 
+the VNC client is the software on the machine that is remotely receiving the shared and the VNC 
+protocol is the RDP. 
+Virtual Desktops, on the other hand, go beyond screen sharing by delivering complete desktop 
+environments as virtual machines (VMs) hosted on a server or in the cloud. This approach reduces 
+the need for powerful local hardware, as both applications and desktops run centrally 
+
+3.12 Physical Security 
+In recent years, many organizations have invested heavily in technical security, like ﬁrewalls, group 
+policies, and fault tolerance, but often overlook physical security. Things like unlocked server 
+rooms, propped-open doors, or servers placed in open hallways can easily expose systems to 
+threats from within the building itself. Detection and prevention methods can further strengthen 
+physical security. Detection methods include cameras, IP cameras, CCTVs, infrared sensors, 
+electromechanical systems, photoelectric systems, and asset tags. Prevention methods include 
+employee training, end-user training, administrator training, biometrics, and asset disposal. 
+Together, these controls ensure that both digital and physical aspects of security are properly 
+addressed, keeping systems and data safe from both external and internal threats.

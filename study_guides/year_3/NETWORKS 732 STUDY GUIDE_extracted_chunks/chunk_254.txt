@@ -1,0 +1,34 @@
+Command              Purpose 
+add                  Adds a route 
+change               Modiﬁes an existing route 
+delete               Deletes a route (or routes) 
+print                Prints a route (or routes) 
+
+TABLE 5.4 route command options 
+ 
+Here’s a description of some other tasks you can accomplish via the rest of the command’s 
+options: 
+
+Destination This will give you the network destination of a given route. If the host bits of the 
+network address are set to 0, it will be depicted with the destination’s IP network address, an IP 
+address for a speciﬁc host route, or the default route of 0.0.0.0. 
+mask netmask This will provide you with the netmask—often referred to as the subnet mask— 
+that’s associated with the destination network. The default destination subnet mask is 0.0.0.0, 
+and typically you’ll see 255.255.255.255 representing a host route. It’s important to remember 
+that the destination address can’t be more speciﬁc than its corresponding subnet mask. What I’m 
+saying is that there absolutely can’t be a bit set to 1 in the destination address if the equivalent 
+bit in the subnet mask is a 0. 
+
+Gateway The gateway also depends on the network address and subnet mask, but it’s even more 
+speciﬁc and delimits what’s called the next-hop IP address. For routes located on a local subnet, 
+the gateway address maps directly to a particular interface. If the destination is on a remote 
+network, the gateway IP address will direct packets to the neighboring router. 
+metric metric Metric refers to the cost of a given route from the sending to the receiving device, 
+and it’s a value between 1 and 9999. Devices use this value to choose the best, or most eﬃcient, 
+routes among those in its routing table—the route with the lowest value wins. This decision can 
+also include factors like the number of hops and the speed, reliability, and available bandwidth of 
+the path being considered plus the various administrative aspects associated with it. 
+if interface This tool depends on information from the gateway address and determines the 
+interface index for the speciﬁc interface that needs to receive the data. You can get a list of 
+interfaces along with their relevant interface indexes by typing the route print command. 
+/? Using this will allow you to view help at the command prompt. 

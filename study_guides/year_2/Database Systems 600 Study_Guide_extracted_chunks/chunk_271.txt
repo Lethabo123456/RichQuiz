@@ -1,0 +1,19 @@
+omers might have purchased goods from both companies, the two lists might contain 
+common customers. SaleCo’s management wants to make sure that customer records are not 
+duplicated when the two customer lists are merged. The UNION query is a perfect tool for 
+generating a combined listing of customers—one that excludes duplicate records. 
+The UNION statement combines rows from two or more queries without including duplicate 
+rows. The syntax of the UNION statement is:  
+query UNION query  
+In other words, the UNION statement combines the output of two SELECT queries. To 
+demonstrate the use of the UNION statement in SQL, use the CUSTOMER and CUSTOMER_2 
+tables in the Ch07_SaleCo database. To show the combined CUSTOMER and CUSTOMER_2 
+records without duplicates, the UNION query is written as follows:  
+SELECT  CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE 
+FROM  
+CUSTOMER 
+UNION  
+SELECT  CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE 
+FROM  
+CUSTOMER_2; 
+The U

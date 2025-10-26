@@ -1,0 +1,16 @@
+ed to include all the functionality all the time.  
+OLE-DB provides additional capabilities for the applications accessing the data. However, it does 
+not provide support for scripting languages, especially the ones used for web development. To 
+provide that support, Microsoft developed a new object framework called ActiveX Data Objects 
+(ADO), which provides a high-level, application-oriented interface to interact with OLE-DB, DAO, 
+and RDO. ADO provides a unified interface to access data from any programming language that 
+uses the underlying OLE-DB objects. Figure 15.5 illustrates the ADO/OLE-DB architecture and 
+how it interacts with ODBC and native connectivity options. 
+ 
+ ADO introduced a simpler object model that was composed of only a few interacting objects to 
+provide the data manipulation services required by the applications. Although the ADO model is a 
+
+ 
+177 
+tremendous improvement over the OLE-DB model, Microsoft is actively encouraging programmers 
+to use its newer da

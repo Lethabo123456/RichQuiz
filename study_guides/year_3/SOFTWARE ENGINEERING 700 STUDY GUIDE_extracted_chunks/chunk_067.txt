@@ -1,0 +1,29 @@
+2.2.3 Prototyping Model  
+A prototype is a “toy” implementation of the system. A prototype usually exhibits limited 
+functional capabilities, low reliability, and inefficient performance compared to the actual 
+software. A prototype is usually built using several shortcuts. The shortcuts might involve using 
+inefficient, inaccurate, or dummy functions. The shortcut implementation of a function, for 
+example, may produce the desired results by using a table look-up instead of performing the 
+actual computations. A prototype usually turns out to be a very crude version of the actual 
+system. 
+
+Need for a prototype in software development 
+There are several uses of a prototype. An important purpose is to illustrate the input data 
+formats, messages, reports, and the interactive dialogues to the customer. This is a valuable 
+mechanism for gaining better understanding of the customer’s needs: 
+• how the screens might look like 
+• how the user interface would behave 
+• how the system would produce outputs 
+ 
+Another reason for developing a prototype is that it is impossible to get the perfect product in 
+the first attempt. Many researchers and engineers advocate that if you want to develop a good 
+product you must plan to throw away the first version. The experience gained in developing the 
+prototype can be used to develop the final product. 
+ 
+A prototyping model can be used when technical solutions are unclear to the development 
+team. A developed prototype can help engineers to critically examine the technical issues 
+associated with the product development. Often, major design decisions depend on issues like 
+the response time of a hardware controller, or the efficiency of a sorting algorithm, etc. In such 
+circumstances, a prototype may be the best or the only way to resolve the technical issues. 
+A prototype of the actual product is preferred in situations such as: User requirements are not 
+complete, or technical issues are not clear 

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/results_default.css') }}">
+
+  {% set module_num = module_id|default(0)|int %}
+  {% if module_num == 1 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_programming_python.css') }}">
+  {% elif module_num == 2 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_information_system_511-512.css') }}">
+  {% elif module_num == 3 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_web_technology.css') }}">
+  {% elif module_num == 4 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_networks_511-512.css') }}">
+  {% elif module_num == 5 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_mathematics_511-512.css') }}">
+  {% elif module_num == 6 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_data_science.css') }}">
+  {% elif module_num == 7 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_information_system_621-622.css') }}">
+  {% elif module_num == 8 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_programming_c++.css') }}">
+  {% elif module_num == 9 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_database_systems.css') }}">
+  {% elif module_num == 10 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_cloud_computing.css') }}">
+  {% elif module_num == 11 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_internet_programming_php.css') }}">
+  {% elif module_num == 12 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_data_manipulation.css') }}">
+  {% elif module_num == 13 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_business_analysis.css') }}">
+  {% elif module_num == 14 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_computer_architecture.css') }}">
+  {% elif module_num == 15 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_stats_for_ds.css') }}">
+  {% elif module_num == 16 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_server_technology.css') }}">
+  {% elif module_num == 17 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_matchine_learning_600.css') }}">
+  {% elif module_num == 18 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_big_data_IOT.css') }}">
+  {% elif module_num == 19 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_software_engineering.css') }}">
+  {% elif module_num == 20 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_programming_java.css') }}">
+  {% elif module_num == 21 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_cyber_security.css') }}">
+  {% elif module_num == 22 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_machine_learning_700.css') }}">
+  {% elif module_num == 23 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_MAD.css') }}">
+  {% elif module_num == 24 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_AI.css') }}">
+  {% elif module_num == 25 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_HCI.css') }}">
+  {% elif module_num == 26 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_ASR_700.css') }}">
+  {% elif module_num == 27 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_programming_C#.css') }}">
+  {% elif module_num == 28 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_networks_731-732.css') }}">
+  {% elif module_num == 29 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_operating_system_700.css') }}">
+  {% elif module_num == 30 %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results_ISM_731-732.css') }}">
+  {% endif %}
+</head>
+
+<body>
+  <div class="card">
+    <h2>Quiz Results - {{ module_name }}</h2>
+
+    <div class="score">
+      ✅ You answered <strong>{{ correct_count }}</strong> out of <strong>{{ total }}</strong> correctly ({{ score_percentage }}%)
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
+    </div>
+
+    <div class="result" id="result-text">
+      {% if passed %}
+        🎉 Congratulations! You Passed!
+      {% else %}
+        ❌ You did not pass. Try again!
+      {% endif %}
+    </div>
+
+    <div class="time" id="time-display" data-seconds="{{ time_taken }}">
+      ⏱ Time taken: <strong>--:--</strong>
+    </div>
+
+    <div class="adaptive-feedback">
+      <h3>Adaptive Feedback</h3>
+      <ul>
+        {% for diff, stats in difficulty_stats.items() %}
+          {% set correct = stats.correct %}
+          {% set total = stats.total %}
+          {% set percentage = (correct / total * 100) if total > 0 else 0 %}
+          {% set avg_time = (stats.total_time / total) | round(2) if total > 0 else 0 %}
+          <li>
+            <strong>{{ diff }}:</strong>
+            {{ correct }}/{{ total }} correct ({{ percentage | round(2) }}%)
+            ⏱ Avg time: {{ avg_time }}s
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% set easy_ratio = (difficulty_stats['Easy'].correct / difficulty_stats['Easy'].total) if difficulty_stats['Easy'].total > 0 else 1 %}
+      {% set medium_ratio = (difficulty_stats['Medium'].correct / difficulty_stats['Medium'].total) if difficulty_stats['Medium'].total > 0 else 1 %}
+      {% set hard_ratio = (difficulty_stats['Hard'].correct / difficulty_stats['Hard'].total) if difficulty_stats['Hard'].total > 0 else 1 %}
+
+      {% if hard_ratio < 0.5 %}
+        <p>⚠️ You struggled with hard questions. Consider reviewing the advanced topics.</p>
+      {% elif medium_ratio < 0.5 %}
+        <p>⚠️ Medium difficulty questions need more attention.</p>
+      {% elif easy_ratio < 0.5 %}
+        <p>⚠️ You should revisit the fundamentals as you missed many easy questions.</p>
+      {% else %}
+        <p>👍 Great job across all difficulty levels!</p>
+      {% endif %}
+    </div>
+
+    <div class="summary">
+      <h3>Answer Summary</h3>
+      {% for i in range(total) %}
+        {% set question = questions[i] %}
+        {% set options = question.get('options', {}) %}
+        {% set correct_label = question.get('correct_option', question.get('correct_answer', '')) %}
+        {% set correct_text = options.get(correct_label, '') %}
+        {% set user_label = user_answers[i] if i < user_answers|length else 'No Answer' %}
+        {% set user_text = options.get(user_label, 'No Answer') %}
+
+        <div class="qa {% if user_label != correct_label %}incorrect{% else %}correct{% endif %}">
+          <p><strong>Q{{ i + 1 }}:</strong></p>
+
+          <div class="question-text">
+            {% if question.get('text') %}
+              {{ question['text']|safe }}
+            {% else %}
+              <em>No question text available.</em>
+            {% endif %}
+          </div>
+
+          <p><strong>Your Answer:</strong> {{ user_label }} - {{ user_text|safe }}</p>
+
+          {% if user_label != correct_label %}
+            <p><strong>Correct Answer:</strong> {{ correct_label }} - {{ correct_text|safe }}</p>
+          {% endif %}
+
+          {% if show_explanations and question.get('reasoning') %}
+            <div class="reasoning">
+              <strong>Explanation:</strong>
+              <div class="code-block">
+                <pre>{{ question['reasoning']|safe }}</pre>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="buttons">
+      <a href="{{ url_for('main.index') }}" class="button">← Back to Dashboard</a>
+      <a href="{{ url_for('quiz.start_quiz', module_id=module_num) }}" class="button">🔁 Retry Quiz</a>
+    </div>
+  </div>
+
+  <script>
+    const timeDisplay = document.getElementById('time-display');
+    if (timeDisplay) {
+      const seconds = parseInt(timeDisplay.dataset.seconds, 10);
+      const minutes = String(Math.floor(seconds / 60)).padStart(2, '0');
+      const remainingSeconds = String(seconds % 60).padStart(2, '0');
+      timeDisplay.innerHTML = `⏱ Time taken: <strong>${minutes}:${remainingSeconds}</strong>`;
+    }
+
+    const resultText = document.getElementById('result-text');
+    if (resultText) {
+      resultText.style.color = '{{ "lime" if passed else "salmon" }}';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const progressBar = document.getElementById('progress-bar');
+      const percentage = parseFloat("{{ score_percentage }}");
+      if (!isNaN(percentage)) {
+        setTimeout(() => {
+          progressBar.style.width = `${percentage}%`;
+        }, 100);
+      }
+    });
+  </script>
+</body>
+</html>

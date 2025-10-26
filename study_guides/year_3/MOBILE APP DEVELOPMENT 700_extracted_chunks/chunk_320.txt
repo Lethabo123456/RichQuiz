@@ -1,0 +1,34 @@
+Chapter 5: Navigation and Information Display, Maps and Location 
+
+5.1 Introduction 
+Lists are very useful tools and have become ubiquitous in mobile computing. Flick scrolling a list is so 
+common an action that my daughter once asked, after seeing my brother-in-law with a cast needed 
+because of carpal tunnel syndrome from computer use, if she was going to get a similar disease 
+because she does this so often. With that, she moved her index finger in the list swipe gesture. Lists 
+are so common because they are a very useful way to organize, display, and access large amounts of 
+data on a very small screen. This chapter explores the implementation of lists in Android. It covers 
+simple lists that exploit the built-in list capabilities of the Android SDK and then examines the 
+development of more complex lists, tailored specifically to the task at hand. Finally, the chapter 
+concludes by introducing passing data between activities, using user preferences to sort a list, and 
+changing the app’s launch activity to complete the ContactListActivity. 
+
+In the MyContactList app, you will use the simple list to display the names of each of the contacts. The 
+simple list will allow the user to click an entry in the list and go to a different activity. You will increase 
+the functionality by displaying a more complex list that also shows the contact’s phone number in a 
+different font. This version also allows the user to delete entries and shows the full contact information 
+in the Main Activity. You will also see how sorting can be implemented based on the settings screen.
+
+Additionally, it demonstrates how to set up the Android Studio development
+environment to work with maps in Android 
+as the proper way to implement a list. An Adapter is dynamically 
+associated with the RecyclerView. The adapter provides access to the underlying data source for the list 
+and implements special list functionality, such as deleting list 
+items. Almost all the functionality of the list in terms of its display and 
+behavior is implemented in the adapter, regardless of how simple 
+or complex the list is. A ViewHolder is an object that belongs to the adapter. It describes 
+the item view and provides access to the widgets in the item layout. The final component required to 
+display a list is a LayoutManager. A LayoutManager is responsible for measuring and positioning items 
+(views) in the list, as well as determining when a view needs to be recycled (or reused because another 
+item in the list needs to be displayed). Different LayoutManagers can be used to display a simple 
+vertical scrolling list, a grid display, or horizontally scrolling lists. Refer to Figure 6.1 for a visual 
+representation of the relationship between these objects.

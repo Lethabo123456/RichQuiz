@@ -1,0 +1,21 @@
+s designed to ensure 
+that an end-user query is processed by the DBMS in the least amount of time.  
+ 
+ 
+Database statistics refer to a number of measurements gathered by the DBMS that describe 
+a snapshot of the database objects’ characteristics. The DBMS gathers statistics about 
+objects such as tables, indexes, and available resources, and uses the statistics to make 
+critical decisions about improving query processing efficiency.  
+ 
+ 
+DBMSs process queries in three phases. In the parsing phase, the DBMS parses the SQL 
+query and chooses the most efficient access/execution plan. In the execution phase, the 
+DBMS executes the SQL query using the chosen execution plan. In the fetching phase, the 
+DBMS fetches the data and sends the result set back to the client.  
+ 
+ 
+Indexes are crucial in the process that speeds up data access. Indexes facilitate searching, 
+sorting, and using aggregate functions and join operations.  
+ 
+ 
+During query optimization, the DBMS must choose what in

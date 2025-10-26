@@ -1,0 +1,28 @@
+4.5.2 Hamilton Paths and Circuits 
+ 
+Definition 65  
+A simple path in a graph G that passes through every vertex exactly once is 
+called a Hamilton path, and a simple circuit in a graph G that passes through 
+every vertex exactly once is called a Hamilton circuit. That is, the simple path 
+x0, x1, . . . , xn−1, xn in the graph G = (V ,E) is a Hamilton path if V = {x0, x1, . . . , 
+xn−1, xn} and xi = xj for 0 ≤ i < j ≤ n, and the simple circuit x0, x1, . . . , xn−1, xn, x0 
+(with n > 0) is a Hamilton circuit if x0, x1, . . . , xn−1, xn is a Hamilton path. 
+ 
+This terminology comes from a game, called the Icosian puzzle, invented in 
+1857 by the Irish mathematician Sir William Rowan Hamilton. It consisted of 
+a wooden dodecahedron [a polyhedron with 12 regular pentagons as faces, 
+as shown in Figure 4.16], with a peg at each vertex of the dodecahedron, and 
+string. The 20 vertices of the dodecahedron were labelled with different 
+cities in the world. The object of the puzzle was to start at a city and travel 
+along the edges of the dodecahedron, visiting each of the other 19 cities 
+exactly once, and end back at the first city. The circuit travelled was marked 
+off using the string and pegs. 
+ 
+ 
+Figure 4.16: Hamilton’s “A Voyage Round the World” Puzzle. 
+Because the author cannot supply each reader with a wooden solid with pegs 
+and string, we will consider the equivalent question: Is there a circuit in the 
+graph shown in Figure 4.17 that passes through each vertex exactly once? 
+This solves the puzzle because this graph is isomorphic to the graph 
+consisting of the vertices and edges of the dodecahedron. A solution of 
+Hamilton’s puzzle is shown in Figure 4.18. 

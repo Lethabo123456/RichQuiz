@@ -1,0 +1,39 @@
+Second, suppose that a group has second group also has four employees: 
+Washington, Xuan, Ybarra, and Ziegler; and suppose that the same four jobs 
+need to be done to complete Project 2 as are needed to complete Project 1. 
+Suppose that Washington has been trained to do architecture; Xuan has 
+been trained to do requirements, implementation, and testing; Ybarra has 
+been trained to do architecture; and Ziegler has been trained to do 
+requirements, architecture and testing. We model these employee 
+capabilities using the bipartite graph in Figure 4.11. To complete Project 1, 
+we must assign an employee to each job so that every job has an employee 
+assigned to it, and so that no employee is assigned more than one job. We 
+can do this by assigning Alvarez to testing, Berkowitz to implementation, 
+Chen to architecture, and Davis to requirements, as shown in Figure 4.10 
+(where blue lines show this assignment of jobs). To complete Project 2, we 
+must also assign an employee to each job so that every job has an employee 
+assigned to it and no employee is assigned more than one job. However, this 
+is impossible because there are only two employees, Xuan and Ziegler, who 
+have been trained for at least one of the three jobs of requirements, 
+implementation, and testing. Consequently, there is no way to assign three 
+different employees to these three job so that each job is assigned an 
+employee with the appropriate training. 
+ 
+
+Figure 4.11: Modelling the Jobs for Which Employees Have Been Trained. 
+ 
+Finding an assignment of jobs to employees can be thought of as finding a 
+matching in the graph model, where a matching M in a simple graph 
+ G = (V ,E) is a subset of the set E of edges of the graph such that no two 
+edges are incident with the same vertex. In other words, a matching is a 
+subset of edges such that if {s, t} and {u, v} are distinct edges of the matching, 
+then s, t , u, and v are distinct. A vertex that is the endpoint of an edge of a 
+matching M is said to be matched in M; otherwise it is said to be unmatched. 
+A maximum matching is a matching with the largest number of edges. We 
+say that a matching M in a bipartite graph G = (V ,E) with bipartition (V1, V2) 
+is a complete matching from V1 to V2 if every vertex in V1 is the endpoint of 
+an edge in the matching, or equivalently, if |M| = |V1|. For example, to 
+assign jobs to employees so that the largest number of jobs are assigned 
+employees, we seek a maximum matching in the graph that models 
+employee capabilities. To assign employees to all jobs we seek a complete 
+matching from the set of jobs to the set of employees.

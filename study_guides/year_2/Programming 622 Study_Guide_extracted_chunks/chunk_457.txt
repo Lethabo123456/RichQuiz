@@ -1,0 +1,34 @@
+t to null  
+ 
+queueRear = NULL;     
+  
+  
+  
+//set rear to null  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+//end default constructor  
+When the queue object goes out of scope, the destructor destroys the queue; that is, it deallocates the 
+memory occupied by the elements of the queue. The definition of the function to implement the 
+destructor is similar to the definition of the function initializeQueue. Also, the functions to implement the 
+copy constructor and overload the assignment operators are similar to the corresponding functions for 
+stacks.   
+  
+EXAMPLE 6-1  
+The following program tests various operations on a queue. It uses the class linkedQueueType to 
+implement a queue.  
+//**************************************************************
+* // This program illustrates how to use the class linkedQueueType // in a 
+program.  
+//**************************************************************
+* #include <iostream> #include "linkedQueue.h" using namespace std;  
+int main()  
+{  
+linkedQueueTy

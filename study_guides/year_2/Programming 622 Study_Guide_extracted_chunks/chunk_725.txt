@@ -1,0 +1,25 @@
+ctor. To make the algorithms efficient, we store the 
+balance factor of each node in the node itself. Hence, the definition of a node in the AVL tree is as follows:  
+  
+template<class elemType> struct 
+AVLNode  
+{  
+elemType info;  
+ 
+int bfactor;     
+  
+//balance factor  
+AVLNode<elemType> *llink;  
+AVLNode<elemType> *rlink;  
+};  
+  
+
+356  
+  
+Because an AVL tree is a binary search tree, the search algorithm for an AVL tree is the same as the search 
+algorithm for a binary search tree. Other operations, such as finding the height, determining the number 
+of nodes, checking whether the tree is empty, tree traversal, and so on, on AVL trees can be implemented 
+exactly the same way they are implemented on binary trees. However, item insertion and deletion 
+operations on AVL trees are somewhat different from the ones discussed for binary search trees. This is 
+because after inserting (or deleting) a node from an AVL tree, the resulting binary tree must be an AVL 
+tree. Next, we describ

@@ -1,0 +1,16 @@
+s a combination of XML 
+and HTML that has been approved by the World Wide Web Consortium (W3C). Extensible 
+Markup Language (XML) is a markup language for web documents containing structured 
+information, including words and pictures. XML does not have a predefined tag set. With 
+HTML, for example, the 
+Not have a predefined tag set. With HTML, for example, the <h1> tag always means a firstlevel 
+heading. The content and formatting are contained in the same HTML document. With XML, 
+web documents contain the content of a web page. The formatting of the content is contained 
+in a separate style sheet. A few typical instructions in XML follow: 
+<Chapter> Hardware 
+<Topic> input devices 
+<Topic>processing and storage devices 
+<Topic>output devices 
+How the preceding content is formatted and displayed on a web page is contained in the 
+corresponding style sheet, such as the following cascading style sheet (CSS). Note that the 
+chapter title ‘Hardware’ is displayed on the web page in a larg

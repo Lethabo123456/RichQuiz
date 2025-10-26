@@ -1,0 +1,44 @@
+2.5.2 How to find the MAC address in UNIX or Linux 
+ 
+ Go to a terminal 
+ In the terminal, type ifconfig and press ENTER 
+You should see the MAC address in this format 00:00:00:00:00:00 following HWaddr 
+
+2.5.3 How to find the MAC address in Mac OS  
+
+ Go to Utilities (Finder > Utilities OR command + shift + u) and start the Terminal app. 
+ Type this in the Terminal: 
+ networksetup -listallhardwareports 
+
+ You will be a list of all the network interfaces with their MAC addresses (Ethernet Address). 
+An example output is this: 
+ $ networksetup -listallhardwareports 
+
+ 
+ 
+ Hardware Port: Bluetooth DUN 
+ Device: Bluetooth-Modem 
+ Ethernet Address: N/A 
+ 
+ 
+ Hardware Port: Ethernet 
+ Device: en0 
+ Ethernet Address: 10:dd:b1:xx:xx:xx 
+ 
+ 
+ Hardware Port: FireWire 
+ Device: fw0 
+ Ethernet Address: 10:dd:b1:ff:fe:xx:xx:xx 
+ 
+ 
+ Hardware Port: Wi-Fi 
+ Device: en1 
+ Ethernet Address: 4c:8d:79:xx:xx:xx 
+ 
+ 
+ Hardware Port: Bluetooth PAN 
+ Device: en3 
+ Ethernet Address: N/A 
+ 
+ 
+ VLAN Configurations 

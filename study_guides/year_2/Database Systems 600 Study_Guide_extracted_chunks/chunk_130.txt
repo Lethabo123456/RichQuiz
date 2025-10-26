@@ -1,0 +1,17 @@
+ase Model, that the entity 
+relationship model (ERM) forms the basis of an ERD. The ERD represents the conceptual database 
+as viewed by the end user. ERDs depict the database’s main components: entities, attributes, and 
+relationships. Because an entity represents a real-world object, the words entity and object are often 
+used interchangeably. 
+Earlier, you also learned about the various notations used with ERDs—the original Chen notation 
+and the newer Crow’s Foot and UML notations. Some conceptual database modelling concepts can 
+be expressed only using the Chen notation. Because of its emphasis on implementation, the Crow’s 
+Foot notation can represent only what could be implemented. In other words:  
+• 
+The Chen notation favours conceptual modelling.  
+• 
+The Crow’s Foot notation favours a more implementation-oriented approach.  
+• 
+The UML notation can be used for both conceptual and implementation modelling. 
+Entities 
+An entity in the ERM corresponds to a table—not to a row—in

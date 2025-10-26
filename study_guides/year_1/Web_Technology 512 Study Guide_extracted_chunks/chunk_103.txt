@@ -1,0 +1,26 @@
+et up an array is withthe new keyword and values in 
+brackets: 
+var my_array = new Array(10, "ten", true); 
+This sets up an array called my_array of three values indexed from 0 to 2. 
+  
+4.1.1 Arrays and Loops 
+ 
+Arrays are quite often used with loops. That is because the index position of arrays 
+are numbers that you swap for the loop variable. As an example, study the following 
+code (of course, you can try it out as well): 
+var counter = 0; 
+var lottery_numbers = new Array(); 
+while ( counter < 49 )  
+{ 
+lottery_numbers[counter] = counter + 1;  
+document.write( lottery_numbers[counter] + "<BR>" ); 
+counter++; 
+} 
+ 
+What the script does is to assign values to an array called lottery_numbers. We have 
+used a while loop. The loop goes round and round executing this line: 
+lottery_numbers[counter] = counter + 1; 
+ 
+Instead of saying lottery_numbers[0], lottery_numbers[1], lottery_numbers[2], etc, 
+we have replaced the index number with the variable name counter. We can do this 
+because

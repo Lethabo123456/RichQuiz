@@ -1,0 +1,22 @@
+tain conditions 
+are met. For example, before performing the division, we check whether the divisor is 
+nonzero. If the conditions are not met, we typically generate an exception, which in 
+C++ terminology is called throwing an exception. 
+ 
+Consider the following catch block:  
+catch (int x) { 
+ //exception-handling code  
+} In this catch block: 
+ The identifier x acts as a parameter. In fact, it is called a catch block parameter.  
+
+263 | P a g e  
+ 
+ The data type int specifies that this catch block can catch an exception of type 
+int.  
+ A catch block can have at most one catch block parameter. 
+ 
+Essentially, the catch block parameter becomes a placeholder for the value thrown. In 
+this case, x becomes a placeholder for any thrown value that is of type int. In other 
+words, if the thrown value is caught by this catch block, then the thrown value is stored 
+in the catch block parameter. This way, if the exception-handling code wants to do 
+something with that value, it can be ac

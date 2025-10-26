@@ -1,0 +1,24 @@
+middle bits of a square usually depend on all the characters, it is expected that different keys will yield 
+different hash addresses with high probability, even if some of the characters are the same.  
+  
+Folding: In folding, the key X is partitioned into parts such that all the parts, except possibly the last parts, 
+are of equal length. The parts are then added, in some convenient way, to obtain the hash address.  
+  
+Division (Modular arithmetic): In this method, the key X is converted into an integer iX. This integer is then 
+divided by the size of the hash table to get the remainder, giving the address of X in HT. That is, (in C++) 
+h(X) = iX % HTSize;  
+  
+Suppose that each key is a string. The following C++ function uses the division method to compute the 
+address of the key.  
+  
+int hashFunction(char *insertKey, int keyLength)  
+{ int sum = 0;  
+for (int j = 0; j < keyLength; j++) sum = sum + 
+static_cast<int>(insertKey[j]);  
+return (sum % HTSize);  
+ 
+}   
+  
+  
+  
+// end

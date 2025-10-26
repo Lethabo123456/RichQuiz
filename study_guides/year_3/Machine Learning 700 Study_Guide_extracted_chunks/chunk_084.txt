@@ -1,0 +1,39 @@
+In scikit-learn decision trees are implemented using the DecisionTreeRegressor and 
+DecisionTreeClassifier classes. It’s worth noting that scikit-learn supports only pre-pruning and not 
+post-pruning. 
+Let us explore the impact of pre-pruning in more detail using the Breast Cancer dataset. First, we 
+import the dataset and split it into training and test sets. Then, we create a model using the default 
+configuration, where the tree grows until all leaves are pure. We also fix 
+the random_state parameter to ensure consistent results for tie-breaking during tree construction. 
+ 
+As expected, the accuracy on the training set is 100% because the leaves are pure, and the tree has 
+grown deep enough to memorize all the labels in the training data. However, the accuracy on the 
+test set is slightly lower than the approximately 95% accuracy observed with the linear models we 
+previously discussed. 
+If the depth of a decision tree is not restricted, it can become excessively deep and complex. As a 
+result, unpruned trees are more prone to overfitting and may struggle to generalize effectively to 
+new data. To mitigate this, we can apply pre-pruning to prevent the tree from perfectly fitting the 
+training data. One method is to halt the tree's growth once it reaches a certain depth. For example, 
+by setting max_depth=4, the tree can only ask up to four questions. Limiting the tree’s depth helps 
+reduce overfitting, which results in a decrease in training set accuracy but an improvement in 
+accuracy on the test set.
+
+Analyzing decision trees 
+We can visualize the tree using the export_graphviz function from the tree module. This writes a 
+file in the .dot file format, which is a text file format for storing graphs. We set an option to color 
+the nodes to reflect the majority class in each node and pass the class and features names so the 
+tree can be properly labeled: 
+ 
+The visualization of the decision tree offers a clear view of how the algorithm makes predictions and 
+serves as an excellent example of a machine learning model that can be easily explained to non-
+experts. However, even with a tree of depth four, as shown here, the visualization can still become 
+somewhat intricate. Deeper trees, especially those with depths of 10 or more, are even more 
+challenging to interpret. One effective method for understanding the tree is to focus on the path that 
+most of the data follows. The n_samples displayed in each node represents the number of samples 
+in that node, while the value indicates the number of samples in each class. By tracing the branches 
+to the right, we see that a split based on "worst radius <= 16.795" leads to a node with 8 benign and 
+134 malignant samples. Further splits break down the 8 benign samples, and out of the 142 samples 
+that initially followed the right path, 132 end up in the far-right leaf. Following the left path at the 
+root, where "worst radius > 16.795," we find 25 malignant and 259 benign samples. Most of the 
+benign samples end up in the second leaf from the right, with only a few remaining in the other 
+leaves.

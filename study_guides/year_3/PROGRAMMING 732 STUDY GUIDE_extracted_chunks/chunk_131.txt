@@ -1,0 +1,55 @@
+Servlet support currently spans two packages:   
+javax.servlet: General Servlet Support  
+Servlet   
+An interface that defines communication between a web server and a servlet. 
+This interface defines the init(), service(), and destroy() methods (and a few 
+others).  
+
+ServletConfig  
+An interface that describes the configuration parameters for a servlet. This is 
+passed to the servlet when the web server calls its init() method. Note that the 
+servlet should save the reference to the ServletConfig object, and define a 
+getServletConfig() method to return it when asked. This interface defines how to 
+get the initialization parameters for the servlet and the context under which the 
+servlet is running.  
+
+ServletContext   
+An interface that describes how a servlet can get information about the server in 
+which it is running. It can be retrieved via the getServletContext() method of the 
+ServletConfig object.  
+ServletRequest   
+An interface that describes how to get information about a client request.  
+ServletResponse  
+An interface that describes how to pass information back to the client.  
+GenericServlet   
+A base servlet implementation. It takes care of saving the ServletConfig object 
+reference, and provides several methods that delegate their functionality to the 
+ServletConfig object. It also provides a dummy implementation for init() and 
+destroy().  
+ServletInputStream   
+A subclass of InputStream used for reading the data part of a client's request. It 
+adds a readLine() method for convenience.  
+ServletOutputStream   An OutputStream to which responses for the client are written.  
+ServletException   
+Should be thrown when a servlet problem is encountered.  
+UnavailableException   Should be thrown when the servlet is unavailable for some reason.  
+  
+javax.servlet.http: Support for HTTP Servlets  
+HttpServletRequest   A subclass of ServletRequest that defines several methods that parse HTTP 
+request headers.  
+HttpServletResponse   A subclass of ServletResponse that provides access and interpretation of HTTP 
+status codes and header information.  
+HttpServlet   
+A subclass of GenericServlet that provides automatic separation of HTTP request 
+by method type. For example, an HTTP GET request will be processed by the 
+service() method and passed to a doGet() method.  
+HttpUtils  
+A class that provides assistance for parsing HTTP GET and POST requests.  
+
+Servlet Examples  
+Now for an in-depth look at several servlets. These examples include:   
+• Generating Inline Content   
+• Processing HTTP Post Requests   
+• Using Cookies   
+• Maintaining Session Information   
+• Connecting to Databases   

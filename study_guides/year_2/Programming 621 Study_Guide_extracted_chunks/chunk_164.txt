@@ -1,0 +1,20 @@
+o 
+point to that memory location. 
+ 
+Pointer variable: A variable whose content is an address (that is, a memory address) 
+and is therefore said to point to a memory address. 
+ 
+Declaring Pointer Variables 
+The value of a pointer variable is an address or memory space that typically contains 
+some data. Therefore, when you declare a pointer variable, you also specify the data 
+
+154 | P a g e  
+ 
+type of the value to be stored in the memory location pointed to by the pointer variable. 
+For example, if a pointer variable contains the address of a memory location containing 
+an int value, it is said to be an int pointer or a pointer (variable) of type int. As with 
+regular variables, pointers are bound to a data type and they can only contain the 
+addresses of (or point to) variables of the specific data type they were created to hold. 
+ 
+In C++, you declare a pointer variable by using the asterisk symbol (*) between the 
+data type and the variable name. The general syntax to declare a po

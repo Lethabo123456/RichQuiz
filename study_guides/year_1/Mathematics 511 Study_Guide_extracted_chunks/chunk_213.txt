@@ -1,0 +1,29 @@
+Figure 4.4: A Communications Network with One-Way Communications Links. 
+ 
+Definition 55 
+A directed graph (or digraph) (V ,E) consists of a nonempty set of vertices V 
+and a set of directed edges (or arcs) E. Each directed edge is associated with 
+an ordered pair of vertices. The directed edge associated with the ordered 
+pair (u, v) is said to start at u and end at v. 
+ 
+When we depict a directed graph with a line drawing, we use an arrow 
+pointing from u to v to indicate the direction of an edge that starts at u and 
+ends at v. A directed graph may contain loops and it may contain multiple 
+directed edges that start and end at the same vertices. A directed graph may 
+also contain directed edges that connect vertices u and v in both directions; 
+that is, when a digraph contains an edge from u to v, it may also contain one 
+or more edges from v to u. Note that we obtain a directed graph when we 
+assign a direction to each edge in an undirected graph. When a directed 
+graph has no loops and has no multiple directed edges, it is called a simple 
+directed graph. Because a simple directed graph has at most one edge 
+associated to each ordered pair of vertices (u, v), we call (u, v) an edge if 
+there is an edge associated to it in the graph. 
+In some computer networks, multiple communication links between two 
+data centers may be present, as illustrated in Figure 5. Directed graphs that 
+may have multiple directed edges from a vertex to a second (possibly the 
+same) vertex are used to model such networks. We called such graphs 
+directed multigraphs. When there are m directed edges, each associated to 
+an ordered pair of vertices (u, v), we say that (u, v) is an edge of multiplicity 
+m. 
+
+Figure 4.5: A Computer Network with Multiple One-Way Links. 

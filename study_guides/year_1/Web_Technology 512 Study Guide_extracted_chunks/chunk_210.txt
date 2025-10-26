@@ -1,0 +1,27 @@
+/interpretation). 
+For example, the following line causes a run time error because here syntax is 
+correct but at run time it is trying to call a non-existed method: 
+<script type="text/javascript"> 
+<!-- 
+window.printme(); 
+//--> 
+</script> 
+Exceptions also affect the thread in which they occur, allowing other JavaScript 
+threads to continue normal execution. 
+9.1.3 Logical Errors 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+137 
+ 
+NINE | JAVASCRIPT ERROR AND EXCEPTION HANDLING 
+Logic errors can be the most difficult type of errors to track down. These errors are 
+not the result of a syntax or runtime error. Instead, they occur when you make a 
+mistake in the logic that drives your script and you do not get the result you 
+expected. 
+You cannot catch those errors, because it depends on your business requirement 
+what type of logic you want to put in your program. 
+ 
+9.2 EXCEPTION HANDLING 
+ 
+The latest versions of JavaScript added exception handling cap

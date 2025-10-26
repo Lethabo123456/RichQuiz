@@ -1,0 +1,23 @@
+n, 
+you can use the filesize() function to determine the size of a file on the hard disk. Just as with 
+file_exists() , this function takes a filename as an argument:   
+   
+filesize( “/home/chris/myfile.txt” )   
+   
+This returns the size of the specified file in bytes, or false upon error.   
+   
+3.3 Time-Related Properties   
+Besides their contents, files have other properties that can provide useful information. The available 
+properties depend on the operating system in which the files are created and modified. On Windows 
+
+45   
+   
+and UNIX platforms such as Linux, for example, properties include the time the file was last modified, 
+the time it was last accessed, and the user permissions that have been set on the file.   
+   
+PHP provides three time-related file functions:   
+• 
+fileatime() — Returns the time at which the file was last accessed as a UNIX timestamp. A file 
+is considered accessed if its contents are read   
+• 
+filectime() — Returns the time at which the file was

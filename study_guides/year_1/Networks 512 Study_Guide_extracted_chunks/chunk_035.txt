@@ -1,0 +1,29 @@
+1.6.2 Fast Ethernet 
+The Fast Ethernet standard (IEEE 802.3u) has been established for Ethernet networks that need 
+higher transmission speeds. This standard raises the Ethernet speed limit from 10 Mbps to 100 
+Mbps with only minimal changes to the existing cable structure. Fast Ethernet provides faster 
+throughput for video, multimedia, graphics, Internet surfing and stronger error detection and 
+correction. 
+There are three types of Fast Ethernet: 100BASE-TX for use with level 5 UTP cable; 100BASE-FX for 
+use with fiber-optic cable; and 100BASE-T4 which utilizes an extra two wires for use with level 3 
+UTP cable. The 100BASE-TX standard has become the most popular due to its close compatibility 
+with the 10BASE-T Ethernet standard. 
+Network managers who want to incorporate Fast Ethernet into an existing configuration are 
+required to make many decisions. The number of users in each site on the network that need the 
+higher throughput must be determined; which segments of the backbone need to be reconfigured 
+specifically for 100BASE-T; plus what hardware is necessary in order to connect the 100BASE-T 
+segments with existing 10BASE-T segments. Gigabit Ethernet is a future technology that promises 
+a migration path beyond Fast Ethernet so the next generation of networks will support even 
+higher data transfer speeds. 
+
+1.6.3 Gigabit Ethernet 
+Gigabit Ethernet was developed to meet the need for faster communication networks with 
+applications such as multimedia and Voice over IP (VoIP). Also known as “gigabit-Ethernet-over-
+copper” or 1000Base-T, GigE is a version of Ethernet that runs at speeds 10 times faster than 
+100Base-T. It is defined in the IEEE 802.3 standard and is currently used as an enterprise 
+backbone. Existing Ethernet LANs with 10 and 100 Mbps cards can feed into a Gigabit Ethernet 
+backbone to interconnect high performance switches, routers and servers. 
+From the data link layer of the OSI model upward, the look and implementation of Gigabit 
+Ethernet is identical to that of Ethernet. The most important differences between Gigabit Ethernet
+and Fast Ethernet include the additional support of full duplex operation in the MAC layer and the 
+data rates. 

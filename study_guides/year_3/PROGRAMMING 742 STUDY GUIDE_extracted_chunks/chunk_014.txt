@@ -1,0 +1,29 @@
+The Time class of Example 1-1 does not define a constructor. If a constructor is not declared, 
+the compiler provides one for you. The default constructor creates the object but takes no other 
+action. Member variables are initialized to innocuous values (integers to 0, strings to the empty 
+string, etc.). Table 1-2 lists the default values assigned to primitive types. 
+
+Table 1-2. Primitive types and their default values 
+
+TYPE                            DEFAULT  VALUES 
+-----------------------------------------------------
+numeric (int, long , etc.)      0 
+-----------------------------------------------------
+Bool                            false 
+-----------------------------------------------------
+Char                            '\0' 
+-----------------------------------------------------
+enum                            0 
+-----------------------------------------------------
+reference                       null 
+-----------------------------------------------------
+
+Typically, you'll want to define your own constructor and provide it with arguments so that the 
+constructor can set the initial state for your object. In Example 2-1, assume that you want to 
+pass in the current year, month, date, and so forth, so that the object is created with meaningful 
+data. 
+To define a constructor, declare a method whose name is the same as the class in which it is 
+declared. Constructors have no return type and are typically declared public. If there are argu-
+ments to pass, define an argument list just as you would for any other method. Example 2-2 
+declares a constructor for the Time class that accepts a single argument, an object of type 
+DateTime. 

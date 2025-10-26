@@ -1,0 +1,22 @@
+Figure 4.15: Multigraph Model of the Town of Königsberg. 
+
+The problem of traveling across every bridge without crossing any bridge 
+more than once can be rephrased in terms of this model. The question 
+becomes: Is there a simple circuit in this multigraph that contains every 
+edge? 
+ 
+Definition 64  
+An Euler circuit in a graph G is a simple circuit containing every edge of G. An 
+Euler path in G is a simple path containing every edge of G. 
+ 
+
+Worked Example 
+Which of the undirected graphs below has an Euler circuit? Of those that 
+do not, which have an Euler path? 
+ 
+ 
+Solution: 
+The graph G1 has an Euler circuit, for example, a, e, c, d, e, b, a. Neither 
+of the graphs G2 or G3 has an Euler circuit (the reader should verify this). 
+However, G3 has an Euler path, namely, a, c, d, e, b, d, a, b. G2 does not 
+have an Euler path (as the reader should verify). 

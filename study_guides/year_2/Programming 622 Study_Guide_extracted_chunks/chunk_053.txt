@@ -1,0 +1,35 @@
+d function.  
+  
+  
+EXAMPLE 1-7  
+  
+  
+  
+EXAMPLE 1-8   
+  
+Consider the following code, where m and n are int variables and their values are nonnegative:  
+  
+for (int i = 0; i < m; i++)   
+  
+//Line 1 
+for (int j = 0; j < n; j++)   
+//Line 2 
+cout << i * j << endl;  //Line 3  
+  
+This code contains nested for loops. The outer for loop, at Line 1, executes m times. For each iteration of 
+the outer loop, the inner loop, at Line 2, executes n times. For each iteration of the inner loop, the output 
+statement in Line 3 executes. It follows that the total number of iterations of the nested for loop is mn. 
+So the number of times the statement in Line 3 executes is mn. Therefore, this algorithm is O(mn). Note 
+that if m = n, then this algorithm is O(n2).  
+  
+
+26  
+  
+Table 1-5 shows some common Big-O functions that appear in the algorithm analysis. Let 
+f(n) = O(g(n)) where n is the problem size.  
+  
+TABLE 1-5: Some Big-O functions that appear in algorithm analysis  
+  
+ 
+1.4  
+Classes

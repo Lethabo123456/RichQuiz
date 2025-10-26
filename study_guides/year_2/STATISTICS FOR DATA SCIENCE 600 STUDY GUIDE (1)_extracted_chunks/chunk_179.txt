@@ -1,0 +1,20 @@
+ioned how much we love when data follows the normal 
+distribution. One of the reasons for this is that many statistical tests (including the ones we 
+will use in this chapter) rely on data that follows a normal pattern, and for the most part, a 
+lot of real-world data is not normal (surprised?). Take our employee break data for example, 
+you might think I was just being fancy creating data using the Poisson distribution, but I had 
+a reason for  
+ 
+pd.DataFrame(breaks).hist(bins=50, range=(5, 100)) 
+
+P a g e  | 105 
+ 
+                          
+ 
+ 
+As you can see, our data is not following a normal distribution, it appears to be bimodal, which 
+means that there are two peaks of break times, at around 25 and 70 minutes. As our data is 
+not normal, many of the most popular statistics tests may not apply, however, if we follow 
+the given procedure, we can create normal data! 
+First off, we will need to utilize what is known as a sampling distribution, which is a 
+distribution of point est

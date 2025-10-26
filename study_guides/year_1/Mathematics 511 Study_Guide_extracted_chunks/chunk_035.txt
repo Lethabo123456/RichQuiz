@@ -1,0 +1,20 @@
+1.2 Applications of Propositional Logic 
+Introduction 
+Statements in mathematics and the sciences and in natural language often 
+are imprecise or ambiguous. To make such statements precise, they can be 
+translated into the language of logic. For example, logic is used in the 
+specification of software and hardware, because these specifications need 
+to be precise before development begins. Furthermore, propositional logic 
+and its rules can be used to design computer circuits, to construct computer 
+programs, to verify the correctness of programs, and to build expert systems.  
+
+1.2.1 Translating English Sentences 
+There are many reasons to translate English sentences into expressions 
+involving propositional variables and logical connectives. In particular, 
+English (and every other human language) is often ambiguous. Translating 
+sentences into compound statements removes the ambiguity. Note that this 
+may involve making a set of reasonable assumptions based on the intended 
+meaning of the sentence. Moreover, once we have translated sentences 
+from English into logical expressions we can analyze these logical expressions to determine 
+their truth value, we can manipulate them, and we can use rules of 
+inference to reason about them.

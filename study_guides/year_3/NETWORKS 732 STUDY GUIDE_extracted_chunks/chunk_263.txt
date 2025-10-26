@@ -1,0 +1,27 @@
+The –n Switch 
+The –n switch will give you the local NetBIOS name table on a Windows device. Figure 5.24 
+shows output that’s similar to the output of the –a switch except for one important thing: 
+What you’re seeing is the NetBIOS name table for the machine you’re running the command on 
+
+The –A Switch 
+The –A switch works just like the –a switch and will give you the same output, but the 
+syntax of the command is diﬀerent. Obviously, you use an uppercase A instead of a lowercase 
+one, and you also have to include the host’s IP address instead of its NetBIOS name. To use it, 
+type nbtstat followed by –A and ﬁnally the IP address of the speciﬁc host whose NetBIOS table 
+you want to check out: 
+
+nbtstat –A 199.153.163.2 
+
+The –c Switch 
+Use the –c switch to display the local NetBIOS name cache on the workstation it’s running on. 
+Figure 5.23 shows sample output of the nbtstat –c command. 
+ 
+Figure 5.23: Sample output of the nbtstat –c command (Lammle, 2022) 
+ 
+Each entry in this display shows the NetBIOS name, the hex ID for the service that was accessed, 
+the type of NetBIOS name (unique or group), the IP address that the name resolves to, and its 
+life. The Life value shows how many seconds each entry will live in the cache. When this time 
+expires, the entry will be deleted. 
+Sometimes, deploying nbtstat to display the cache will get you the response “No names in the 
+cache” because all entries in the cache have expired. This is what happens if you don’t regularly 
+access machines or services with NetBIOS names. 

@@ -1,0 +1,39 @@
+Limits on Logic 
+Given that we can model computation as a "proof", and proceed from facts (axioms) 
+and rules to prove new facts (ie, compute), we are interested in knowing whether 
+there are any limits to what we can prove (ie, compute). 
+ 
+Two of the most fundamental results in mathematical logic place limits on what we 
+can compute: 
+ 
+* The Incompleteness Theorem [Kurt Goedel, 1931] states that for number theory 
+(predicate logic restricted to predicates involving  integers, +, *, =, and <), there are 
+expressions that are true, but  which cannot be proved to be true. 
+* The Halting Problem [Alan Turing, 1936] states that for any  computational 
+model equivalent to modern computers (including   Pascal, C, and Prolog) there is 
+no program that takes as input an 
+arbitrary program and its input, and determines whether or not the  program 
+halts on that input. 
+ 
+The halting problem is undecidable 
+Suppose we could decide, given a program and its input, whether that program would 
+halt when run on that input. Then we could create the following program, D, that 
+takes some other program P as input, and decides whether P halts when given itself 
+(i.e. the text of P) as input. 
+ 
+If P halts, D runs it and looks at its output. If P prints "true", D also prints "true". 
+Otherwise (if P doesn't halt, or prints something other than "true"), D prints "false". 
+ 
+Given D we can build a "complement" program C that also takes programs as input. 
+Internally C runs D and then prints the opposite of what D does. That is, if D prints 
+"true", C prints "false". If D prints "false", C prints "true". 
+ 
+Now the question arises: what does C print when given itself as input? If C prints 
+"false" that means D would have printed "true", meaning that D's input program 
+(namely C!) would have printed "true" (ouch). 
+Similarly, if C prints "true" that means D would have printed "false", meaning that D's 
+input program (C) would either have run forever or halted and printed something 
+other than "true" (double ouch). 
+ 
+The contradiction implies that our original assumption (the existence of D) must be 
+wrong.

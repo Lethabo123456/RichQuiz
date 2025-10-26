@@ -1,0 +1,38 @@
+4.1.2 Multipathing 
+Multipathing is the process of establishing multiple network paths between a system and its 
+storage device to ensure high availability and redundancy. Its main purpose is to provide an 
+alternate route in case the primary connection fails. For example, a SCSI hard drive might be 
+connected to two SCSI controllers on the same host, or a disk could be linked to two Fibre Channel 
+ports.
+ 
+One of the beneﬁts of virtualization is that it simpliﬁes the setup of multipathing conﬁgurations. As 
+shown in the figure below, both Host A and Host B are equipped with multiple host bus adapters 
+(HBAs), multiple switches, and connections to more than one storage processor. This results in a 
+fault-tolerant system that can withstand failures in HBAs, switches, storage processors, or data 
+paths.
+ 
+However, a key disadvantage of multipathing is the added complexity in conﬁguration and 
+maintenance. Managing multiple paths and ensuring proper load balancing and failover support 
+can increase administrative overhead and may require specialized tools or expertise. 
+
+Figure 4.1 – Multipathing 
+ 
+4.1.3 NIC Teaming 
+NIC teaming combines multiple network interface cards (NICs) into a single group to improve 
+bandwidth and provide failover in case of hardware failure. Teams can be conﬁgured as 
+active/active for load balancing or active/passive, where one NIC remains on standby. 
+Data is typically sent using multicast, but broadcast can be used to ensure all NICs receive traﬃc 
+simultaneously. Teaming can be implemented with one or multiple switches. 
+ 
+However, when using a single switch (static teaming), the setup only protects against NIC failure— 
+not switch failure—limiting overall redundancy. 
+
+Figure 4.2 below shows what is called static teaming, where a single switch is in use. This would 
+provide failover only for the connection but would not protect against a switch failure. 
+
+Figure 4.2 – Static Teaming  
+ 
+A more redundant arrangement is shown in Figure 4.3, where a switch-independent setup is in 
+use. This provides fault tolerance for both switches and connections. 
+
+Figure 4.3: Switch independent Set-up 

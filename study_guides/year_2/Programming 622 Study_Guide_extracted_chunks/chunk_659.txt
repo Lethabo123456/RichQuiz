@@ -1,0 +1,17 @@
+nt to its children, from the previous discussion it is clear that in 
+a binary tree, there is a unique path from the root to every node in the binary tree.  
+  
+Definition: The level of a node in a binary tree is the number of branches on the path from the root to the 
+node.  
+  
+Clearly, the level of the root node of a binary tree is 0, and the level of the children of the root node is 1.  
+  
+Definition: The height of a binary tree is the number of nodes on the longest path from the root to a leaf.  
+  
+Suppose that a pointer p to the root node of a binary tree is given. We next describe the C++ function 
+height to find the height of the binary tree. The pointer to the root node is passed as a parameter to the 
+function height.  
+  
+If the binary tree is empty, the height is 0. Suppose that the binary tree is nonempty. To find the height of 
+the binary tree, we first find the height of the left subtree and the height of the right subtree. We then 
+take the maximum of these two height

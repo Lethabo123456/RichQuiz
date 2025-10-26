@@ -1,0 +1,53 @@
+he root node  
+2. while (current is not NULL or stack is nonempty) if 
+(current is not NULL)  
+{  
+push current into the stack;  
+current = current->llink;  
+}  
+else  
+{  
+pop stack into current;  
+ 
+visit current;    
+  
+//visit the node  
+  
+  
+  
+  
+
+348  
+  
+ 
+current = current->rlink;   
+//move to the right child  
+}  
+  
+The following function implements the nonrecursive inorder traversal of a binary tree:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::nonRecursiveInTraversal() const  
+{  
+stackType<binaryTreeNode<elemType>* > stack; binaryTreeNode<elemType> 
+*current;  
+current = root;  
+  
+while ((current != NULL) || (!stack.isEmptyStack()))  
+if (current != NULL)  
+{  
+stack.push(current);  
+current = current->llink;  
+}  
+else  
+{ current = stack.top(); stack.pop(); 
+cout << current->info << " ";  
+current = current->rlink;  
+} cout 
+<< endl;  
+}  
+  
+ 
+9.5.2  Nonrecursive Preorder Traversal  
+  
+In a preorder traversal of a binary tree, for each node, first

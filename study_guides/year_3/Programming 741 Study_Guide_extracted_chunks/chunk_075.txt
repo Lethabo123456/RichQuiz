@@ -1,0 +1,26 @@
+Topic 2: Using methods and applying scope   
+ 
+2.1 Introduction 
+
+In Chapter 1, “Working with variables, operators, and expressions,” you learned how to 
+declare variables, how to create expressions using operators, and how precedence and 
+associativity control the way in which expressions containing multiple operators are 
+evaluated. In this chapter, you’ll learn about methods. You’ll see how to declare and call 
+methods, how to use arguments and parameters to pass information to a method, and how 
+to return information from a method by using a return statement. You’ll also see how to step 
+into and out of methods by using the Microsoft Visual Studio 2022 integrated debugger. This 
+information is useful when you need to trace the execution of your methods because they do 
+not work quite as you expect. Finally, you’ll learn how to declare methods that take optional 
+parameters and how to invoke methods by using named arguments.
+
+2.2 Creating methods 
+
+A method is a named sequence of statements. If you have programmed previously using a 
+language such as C, C++, or Microsoft Visual Basic, you’ll see that a method is similar to a 
+function or a subroutine. A method has a name and a body. The method name should be a 
+meaningful identifier that indicates the overall purpose of the method (calculateIncomeTax, 
+for example). The method body contains the actual statements to be run when the method 
+is called. Additionally, methods can be given some data for processing and can return 
+information, which is usually the result of the processing. Methods are a fundamental and 
+powerful mechanism
+

@@ -1,0 +1,16 @@
+the fastest way possible, while making optimum use of existing resources. The 
+activities required to achieve that goal are commonly referred to as DBMS performance 
+tuning 
+In this chapter, we assume a fully optimized network, and, therefore, our focus is on the database 
+components. Even in multi-tier client/server environments that consist of a client front end, 
+application middleware, and database server back end, performance-tuning activities are frequently 
+
+ 
+160 
+divided into subtasks to ensure the fastest possible response time between any two component 
+points.  
+The database administrator must work closely with the network group to ensure that database traffic 
+flows efficiently in the network infrastructure. This is even more important when you consider that 
+most database systems service geographically dispersed users. This chapter covers SQL 
+performance-tuning practices on the client side and DBMS performance-tuning practices on the 
+server side. However, before you sta

@@ -1,0 +1,24 @@
+f an expression is true , and a different block of code if the expression is false . For 
+example:  
+  
+if ( $widgets > = 10 ) {  
+echo “We have plenty of widgets in stock.”;  
+} else {  
+echo “Less than 10 widgets left. Time to order some more!”;  
+}  
+  
+If $widgets is greater than or equal to 10 , the first code block is run, and the message “ We have 
+plenty of widgets in stock. ” is displayed. However, if $widgets is less than 10 , the second code 
+block is run, and the visitor sees the message: “ Less than 10 widgets left. Time to order some more! 
+” You can even combine the else statement with another if statement to make as many alternative 
+choices as you like:  
+  
+if ( $widgets > = 10 ) {  
+echo “We have plenty of widgets in stock.”;  
+} else if ( $widgets > = 5 ) {  
+echo “Less than 10 widgets left. Time to order some more!”;  
+} else {  
+echo “Panic stations: Less than 5 widgets left! Order more now!”;  
+}  
+  
+If there are 10 or more widgets in stock, the first code block

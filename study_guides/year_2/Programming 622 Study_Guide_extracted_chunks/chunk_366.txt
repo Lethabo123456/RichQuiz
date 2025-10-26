@@ -1,0 +1,40 @@
+ull Stack  
+  
+Next, we consider the operation isFullStack. It follows that the stack is full if stackTop is equal to 
+maxStackSize. The definition of the function isFullStack is as follows:  
+  
+template <class Type>  
+bool stackType<Type>::isFullStack() const  
+{  
+return(stackTop == maxStackSize);  
+
+182  
+  
+ 
+}   
+  
+  
+  
+  
+  
+//end isFullStack  
+  
+ 
+5.2.4  Push  
+  
+Adding, or pushing, an element onto the stack is a two-step process. Recall that the value of stackTop 
+indicates the number of elements in the stack, and stackTop - 1 gives the position of the top element of 
+the stack. Therefore, the push operation is as follows:  
+  
+1. Store the newItem in the array component indicated by stackTop.  
+2. Increment stackTop.  
+  
+Figure 5-8(a) shows the stack before pushing 'y' into the stack. Figure 5-8(b) shows the stack after pushing 
+'y' into the stack.  
+  
+  
+FIGURE 5-8 Stack before and after the push operation  
+  
+The definition of the function push is as follows:  
+  
+te

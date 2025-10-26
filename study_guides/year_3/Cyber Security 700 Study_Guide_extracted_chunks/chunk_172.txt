@@ -1,0 +1,25 @@
+The phases of the kill chain are as follows [MYER13, ENGE14]: 
+
+ Reconnaissance: The adversary determines likely targets for attack. This includes determining 
+what information is available for targeting as well as what means are promising for targeting. 
+For example, if names and contact details of employees are online, these could be used for 
+social engineering purposes (for example, getting people to divulge usernames or passwords). 
+ Weaponization: The adversary couples an exploit with a means of gaining access to the 
+specific system to be attacked. The result is a malicious payload, which is constructed on the 
+attacker side, without access to the victim’s system. 
+ Delivery: Weaponized payload is delivered to the victim via email, web access, USB, or other 
+means. 
+ Exploit: The delivered bundle exploits a vulnerability to enable installation. This is relevant 
+only when the attacker uses an exploit. 
+ Installation: The malware package is installed on the asset. This step is relevant only if malware 
+is part of the threat. 
+ Command and control: Once a threat is in an organization’s system, the attacker creates a 
+command and control channel to be able to operate the malware remotely. 
+ Actions: With command and control in place, the threat can be activated to achieve the goals 
+of the attack, which could be to obtain data, do damage, or make a ransom demand. 
+
+European Union Agency for Network and Information Security https://www.enisa.europa.eu 
+The kill chain is useful for selecting security controls to counter a particular threat. However, as 
+[ENGE14] points out, the kill chain focuses mostly on intrusion prevention, and only the last step is 
+relevant to intrusion detection and recovery. Thus kill chain analysis needs to be balanced with other 
+threat intelligence.

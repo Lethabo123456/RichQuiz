@@ -1,0 +1,40 @@
+class definition and the function 
+definitions in the same header file. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Function Templates    
+ 
+
+227 | P a g e  
+ 
+To implement the function larger, we need to write four function definitions for the data 
+type: one for int, one for char, one for double, and one for string. However, the body 
+of each function is similar. C++ simplifies the process of overloading functions in cases 
+such as this by providing function templates. 
+ 
+The syntax of the function template is 
+ 
+in which Type is referred to as a formal parameter of the template. It is used to specify 
+the type of parameters to the function and the return type of the function and to declare 
+variables within the function. 
+ 
+The statements: 
+Template 
+ Type larger(Type x, Type y)  
+{  
+if (x >= y)  
+return x;  
+else  
+return y; 
+ } 
+define a function template larger, which returns the larger of two items. In the function 
+heading, the type of the formal parameters x and y is Type, which will be specified

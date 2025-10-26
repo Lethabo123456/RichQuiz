@@ -1,0 +1,24 @@
+Evaluating Quantifiers 
+To evaluate a quantifier for a predicate we must first define 
+ 
+* the domain over which the quantifier varies (that is, the set of values 
+for the predicate's arguments) 
+* the interpretation of the predicate (that is, the meaning of the 
+predicate) 
+ 
+When we state "there exists x such that P(x)" we must be explicit about the 
+possible values x can take (the domain of P). We evaluate P(x) for each 
+value of x in the domain of P (according to the interpretation for P), and 
+if P(x) is true for some x, then the expression (E x)P(x) is true. 
+ 
+Similarly, when we assert "for all x P(x)" we must be clear about what 
+possible values of x we consider (again, the domain of P). We evaluate P(x) 
+for all values of x in the domain of P (again, according to the meaning of 
+P) , and if P(x) is true for all x, then the expression (A x)P(x) is true. 
+ 
+Note that if the domain of P is infinite, we don't have an algorithm (which 
+terminates) to compute the value of P. 
+ 
+* In many cases, we'll have a finite domain, so we do have an algorithm. 
+* In many cases we're concerned about whether two expressions are 
+equivalent, and not whether a particular expression is true or not.

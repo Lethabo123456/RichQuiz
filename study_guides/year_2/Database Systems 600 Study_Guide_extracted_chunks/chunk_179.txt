@@ -1,0 +1,19 @@
+ng an association among the other 
+entities that is not expressed in the model. For example, assume that the JCB basketball league has 
+many divisions. Each division has many players, and each division has many teams. Given those 
+“incomplete” business rules, you might create an ERD that looks like the one in Figure 5.12. 
+ 
+As you can see in Figure 5.12, DIVISION is in a 1:M relationship with TEAM and in a 1:M 
+relationship with PLAYER. Although that representation is semantically correct, the relationships 
+are not properly identified, and we thus have a fan trap. 
+Figure 5.13 shows the correct ERD after the fan trap has been eliminated.  
+ 
+ 
+Design Case 4: Redundant Relationships 
+
+ 
+70 
+Although redundancy is often good to have in computer environments (multiple back-ups in 
+multiple places, for example), redundancy is seldom good in the database environment as it may 
+result in data anomalies. Redundant relationships occur when there are multiple relationship paths 
+between relat

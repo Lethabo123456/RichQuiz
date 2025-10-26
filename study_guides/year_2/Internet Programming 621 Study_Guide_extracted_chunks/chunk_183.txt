@@ -1,0 +1,24 @@
+from http://www.wampserver.com/en/. At the 
+time of the writing of this guide, the latest version was PHP 5.2.6; however, by the time you 
+read this it is likely that a PHP 5.3 version or higher is available.  
+2. Open the WampServer .exe file that you downloaded, and follow the instructions on the 
+screen to install the application.  
+3. Unblock Apache. As you run the installer, you may be asked if you want to allow Apache 
+through the Windows Firewall, as shown in Figure 1. If you want to allow other computers 
+on your network to access the Web server, click Unblock. If you are only going to access the 
+Web server from a browser on the same computer, you can click Keep Blocking to improve 
+security.  
+  
+  
+Figure 1  
+  
+4.   Enter default mail settings. During the configuration process you ’ ll also be asked to enter a 
+default mail server and email address for PHP to use (Figure 2); you can accept the defaults 
+for now.  
+  
+
+90  
+ 
+Figure 2  
+  
+5.   Once the setup wizard has comp

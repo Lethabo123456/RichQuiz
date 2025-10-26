@@ -1,0 +1,27 @@
+3.8.2 Types of the Discrete probability distribution 
+There are various types of Discrete Probability Distribution a Data science aspirant should 
+know about. Some of them are: 
+
+• Binomial Distribution: It is one of the popular discrete distributions that determine 
+the probability of x success in the 'n' trial. We can use Binomial distribution in 
+situations where we want to extract the probability of SUCCESS or FAILURE from an 
+experiment or survey which went through multiple repetitions. A Binomial 
+distribution holds a fixed number of trials. Also, a binomial event should be 
+independent, and the probability of obtaining failure or success should remain the 
+same. 
+
+Here is a code example showing the use of Binomial Distribution –   
+
+from numpy import random  
+import matplotlib.pyplot as mpl  
+import seaborn as sb  
+  
+def binomialDist():  
+    sb.distplot(random.normal(loc = 50, scale = 6, size = 1200), hist = False, label = 
+'normal')  
+    sb.distplot(random.binomial(n = 100, p = 0.6, size = 1200), hist = False, label = 
+'binomial')  
+    plt.show()  
+  
+binomialDist() 
+Output: 

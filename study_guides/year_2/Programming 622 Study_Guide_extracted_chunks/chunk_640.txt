@@ -1,0 +1,29 @@
+ithm:  
+  
+template <class elemType>  
+void arrayListType<elemType>::heapSort()  
+{  
+elemType temp; buildHeap();  
+for (int lastOutOfOrder = length - 1; lastOutOfOrder >= 0; lastOutOfOrder--)  
+{  
+temp = list[lastOutOfOrder]; 
+list[lastOutOfOrder] = list[0]; list[0] 
+= temp;  
+heapify(0, lastOutOfOrder - 1);  
+}//end for  
+}//end heapSort  
+  
+We leave as an exercise for you to write a program to test heapsort;   
+ 
+8.9.2  Analysis: Heapsort  
+  
+
+316  
+  
+Suppose that L is a list of n elements, where n> 0. In the worst case, the number of key comparisons in 
+heapsort to sort L (the number of comparisons in heapSort and the number of comparisons in buildHeap) 
+is 2nlog2n + O(n). Also, in the worst case, the number of item assignments in heapsort to sort L is nlog2n + 
+O(n). On average, the number of comparisons made by heapsort to sort L is of O(nlog2n).  
+  
+In the average case of quicksort, the number of key comparisons is 1.39nlog2n + O(n) and the number of 
+swaps is 0.69nlog2n +

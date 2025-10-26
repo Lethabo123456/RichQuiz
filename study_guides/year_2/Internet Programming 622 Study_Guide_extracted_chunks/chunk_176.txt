@@ -1,0 +1,19 @@
+t along with a foreach loop to move through all the rows in the result set. Each 
+row is an associative array containing all the field names and values for that row in the table. For 
+example:   
+   
+$sql = “SELECT * FROM fruit”; $rows =  
+$conn- > query( $sql ); foreach ( $rows as  
+$row ) { echo “name = “ . $row[“name”] . “  
+< br / > ”; echo “color = “ . $row[“color”] . “ < 
+br / > ”;   
+}   
+   
+At this juncture, we may take the liberty to try out some of the techniques that we have come across 
+so far. The simple example which follows shows you how to use PDO to connect to a MySQL server 
+and database, read all the rows of a table, and handle any errors that might occur.   
+   
+First, you need a database and table to work with. This example assumes that you have already 
+created the database called mydatabase, and created and populated the table called fruit, as shown 
+in previous sections of this unit. If you have not, you can easily re-create the database and table by 
+typing th

@@ -1,0 +1,49 @@
+CES VENDOR ON UPDATE CASCADE  
+In general, ANSI SQL permits the use of ON DELETE and ON UPDATE clauses to cover 
+CASCADE, SET NULL, or SET DEFAULT. Besides the PRIMARY KEY and FOREIGN KEY 
+constraints, the ANSI SQL standard also defines the following constraints:  
+ 
+The DEFAULT constraint assigns an ‘automatic’ value to an attribute when a new row is 
+added to a table.  
+ 
+The CHECK constraint is used to validate data when an attribute value is entered. The 
+CHECK constraint does precisely what its name suggests: it checks to see that a specified 
+condition exists. 
+ 
+ 
+ 
+
+ 
+115 
+The following SQL command sequence uses the DEFAULT and CHECK constraints to define the 
+table named CUSTOMER.  
+CREATE TABLE CUSTOMER (  
+CUS_CODE 
+ 
+NUMBER 
+ 
+PRIMARY KEY, 
+CUS_LNAME 
+ 
+VARCHAR(15)  
+NOT NULL, 
+CUS_FNAME 
+ 
+VARCHAR(15)  
+NOT NULL, 
+CUS_INITIAL 
+ 
+CHAR(1), 
+CUS_AREACODE CHAR(3) 
+ 
+ 
+DEFAULT '615'  
+NOT NULL 
+CHECK(CUS_AREACODE 
+IN 
+('615','713','931')), 
+CUS_PHONE  
+ 
+CHAR(8)  
+ 
+NOT NULL,

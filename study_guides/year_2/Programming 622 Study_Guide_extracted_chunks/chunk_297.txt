@@ -1,0 +1,35 @@
+t lowerIndex, int upperIndex)  
+{  
+int max;  
+if (lowerIndex == upperIndex) //size of the sublist is 
+one return list[lowerIndex]; else  
+{  
+max = largest(list, lowerIndex + 1, upperIndex); 
+if (list[lowerIndex] >= max) return 
+list[lowerIndex]; else  
+return max;  
+
+149  
+  
+}  
+}   
+Consider the list given in Figure 4-3.  
+  
+  
+FIGURE 4-3 list with four elements  
+  
+Let us trace the execution of the following statement:  
+  
+cout << largest(list, 0, 3) << endl;  
+  
+Here upperIndex = 3 and the list has four elements. Figure 4-4 traces the execution of largest(list, 0, 3).  
+  
+ FIGURE 
+4-4 Execution of largest(list, 0, 3)  
+  
+The value returned by the expression largest(list, 0, 3) is 12, which is the largest element in list.  
+  
+The followingC++program uses the function largest to determine the largest element in a list:  
+//*************************************************************  
+//This program uses a recursive function to find the largest element in a list.  
+//******

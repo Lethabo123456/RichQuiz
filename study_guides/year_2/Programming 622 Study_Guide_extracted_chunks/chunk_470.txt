@@ -1,0 +1,15 @@
+daily basis. For example, a grocery 
+store and a banking system are both queuing systems. Furthermore, when you send a print request to a 
+networked printer that is shared by many people, your print request goes in a queue. Print requests that 
+arrived before your print request are usually completed before yours. Thus, the printer acts as the server 
+when a queue of documents is waiting to be printed.  
+  
+ 
+6.6.1  Designing a Queuing System  
+  
+In this section, we describe a queuing system that can be used in a variety of applications, such as a bank, 
+grocery store, movie theater, printer, or mainframe environment in which several people are trying to use 
+the same processors to execute their programs. To describe a queuing system, we use the term server for 
+the object that provides the service. For example, in a bank, a teller is a server; in a grocery store or movie 
+theater, a cashier is a server. We will call the object receiving the service the customer, and the service 
+time

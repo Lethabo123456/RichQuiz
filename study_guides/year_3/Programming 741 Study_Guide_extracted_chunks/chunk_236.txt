@@ -1,0 +1,72 @@
+6.3 Exception Objects 
+So far you've been using the exception as a sentinel -- that is, the presence of the exception 
+signals the errors -- but you haven't touched or examined the Exception object itself. The 
+System. Except ion object provides a number of useful methods and properties. The Message 
+property provides information about the exception, such as why it was thrown. The Message 
+property is read-only; the code throwing the exception can set the Message property as an 
+argument to the exception constructor.  
+ 
+The HelpLink property provides a link to the help file associated with the exception. This 
+property is read/write. The StackTrace property is read-only and is set by the runtime. In 
+Example 6-6, the Exception . HelpLink property is set and retrieved to provide information to 
+the user about the DivideByZeroException. The StackTrace property of the exception is used 
+to provide a stack trace for the error statement. A stack trace displays the call stack : the series 
+of method calls that lead to the method in which the exception was thrown. 
+
+Example 6-6. Working with an exception object
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Test{ 
+public static void Main( ){ 
+Test t = new Test( ); 
+t.TestFunc( ); 
+} 
+// try to divide two numbers 
+// handle possible exceptions 
+public void TestFunc() 
+{ 
+try 
+{ 
+Console.WriteLine("Open file here"); 
+double a = 12; 
+double b = 0; 
+Console.WriteLine("{0} / {1} = {2}", 
+a, b, DoDivide(a, b)); 
+Console.WriteLine( 
+"This line may or may not print"); 
+} 
+// most derived exception type first 
+catch (System.DivideByZeroException e) 
+{ 
+Console.WriteLine( 
+"\nDivideByZeroException! Msg: {0}", 
+e.Message); 
+Console.WriteLine( 
+"\nHelpLink: {0}", e.HelpLink); 
+Console.WriteLine( 
+"\nHere's a stack trace: {0}\n", 
+e.StackTrace); 
+} 
+catch 
+{ 
+Console.WriteLine( 
+"Unknown exception caught"); 
+} 
+finally 
+{ 
+Console.WriteLine( 
+-
+} 
+if (a == 0) 
+throw new ArithmeticException(); 
+return a / b; 
+} 
+} 
+} 
+OUTPUT : 

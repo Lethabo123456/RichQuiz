@@ -1,0 +1,63 @@
+logical operator && stands for? 
+A. OR 
+B. AND 
+C. NOT 
+D. None of the above 
+ANS: B 
+ 
+75. The logical operator || stands for? 
+A. OR 
+B. AND 
+C. NOT 
+D. None of the above 
+ANS: A 
+ 
+76. The following condition will return TRUE or FALSE:  
+     (4 >= 4 && 8 < 1) 
+A. TRUE 
+B. FALSE 
+ANS: B 
+ 
+77. The following condition will return TRUE or FALSE  
+      ((4 >= 4 && 8 < 1) || (44 == 33 || 5 > 3)) 
+A. TRUE 
+B. FALSE 
+ANS: A 
+
+IP 621  
+ 
+78. What will be displayed in a browser when the following PHP code is executed? 
+<?php 
+ 
+   if (8 >= 7) { 
+ 
+       echo "Hello World"; 
+ 
+   } 
+ 
+?> 
+ 
+A. Hello World 
+B. Nothing Will Be Displayed 
+C. True 
+D. TrueHello World 
+ANS: A 
+79. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   if (8 >= 7 && "Tom" == "Rose") { 
+ 
+       echo "Hello World"; 
+ 
+   } 
+ 
+?> 
+ 
+A. Hello World 
+B. Nothing Will Be Displayed 
+ANS: B 
+ 
+80. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+
+IP

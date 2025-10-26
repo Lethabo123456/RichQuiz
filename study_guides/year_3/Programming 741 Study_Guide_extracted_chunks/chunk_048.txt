@@ -1,0 +1,17 @@
+This process is somewhat cumbersome, and there is no logical connection among these 
+various constants. C# provides the enumeration to solve these problems: 
+ 
+enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, 
+Friday, Saturday}; 
+ 
+Every enumeration has an underlying type, which can be any integral type (integer, short, 
+long, etc.) except for char. The technical definition of an enumeration is: 
+ 
+[attributes ] [modifiers ] enum identifier [: base-type ] { 
+enumerator-list}; 
+
+The optional attributes and modifiers are considered later in this book. For now, let's focus 
+on the rest of this declaration. An enumeration begins with the keyword enum, which is 
+generally followed by an identifier, such as: 
+
+enum Days 

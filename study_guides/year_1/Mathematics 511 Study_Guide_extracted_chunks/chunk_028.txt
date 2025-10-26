@@ -1,0 +1,30 @@
+Table 6: Truth table for the Biconditional 𝒑 ↔ 𝒒 
+ 
+1.1.5 Truth Tables of Compound Propositions 
+We have now introduced four important logical connectives; conjunctions, 
+disjunctions, conditional statements, and biconditional statements as well as 
+negations. We can use these connectives to build up complicated compound 
+propositions involving any number of propositional variables. We can use 
+truth tables to determine the truth values of these compound propositions, 
+as Example 10 illustrates. We use a separate column to find the truth value 
+of each compound expression that occurs in the compound proposition as it 
+is built up. The truth values of the compound proposition for each 
+combination of truth values of the propositional variables in it is found in the 
+final column of the table. 
+
+Imagine we want to construct the truth table of the compound 
+proposition (𝑝 ∨￢𝑞) → (𝑝 ∧ 𝑞). Because this truth table involves two propositional 
+variables p and q, there are four rows in this truth table, one for each of the pairs of truth 
+values 𝑇𝑇, 𝑇𝐹, 𝐹𝑇, and 𝐹𝐹. The first two columns are used for the truth 
+values of 𝑝 and 𝑞, respectively. In the third column we find the truth value 
+of ¬𝑞, needed to find the truth value of 𝑝 ∨¬𝑞, found in the fourth column. 
+The fifth column gives the truth value of p ∧ q. Finally, the truth value of (𝑝 ∨¬𝑞) → (𝑝 ∧ 𝑞) 
+is found in the last column. 
+
+The resulting truth table is shown in Table 7. 
+
+Worked Example 
+Let 𝑝 be the statement “You can take the flight,” and let 𝑞 be the 
+statement “You buy a ticket.”  
+Then 𝑝 ↔ 𝑞 is the statement “You can take the flight if and only if you 
+buy a ticket.” 

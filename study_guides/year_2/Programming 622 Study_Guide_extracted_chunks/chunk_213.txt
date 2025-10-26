@@ -1,0 +1,26 @@
+cally, resetting the pointers first and last does not deallocate 
+the memory occupied by the nodes in the list. We must traverse the list, starting at the first node, and 
+delete each node in the list. The list can be destroyed by calling the function destroyList. Therefore, the 
+definition of the destructor is as follows:  
+  
+template <class Type>  
+ 
+linkedListType<Type>::~linkedListType()   
+  
+  
+//destructor  
+{ destroyList();  
+}  
+  
+3.2.14 Copy Constructor  
+  
+Because the class linkedListType contains pointer data members, the definition of this class contains the 
+copy constructor. Recall that, if a formal parameter is a value parameter, the copy constructor provides 
+the formal parameter with its own copy of the data. The copy constructor also executes when an object 
+is declared and initialized using another object.  
+  
+
+106  
+  
+The copy constructor makes an identical copy of the linked list. This can be done by calling the function 
+copyList. Because the function copyLi

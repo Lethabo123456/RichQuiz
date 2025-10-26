@@ -1,0 +1,51 @@
+5.3 Declaring Arrays 
+Declare a C# array with the following syntax:  
+type [ ] array-name; 
+For example:  
+int [] myIntArray; 
+The square brackets ([]) tell the C# compiler that you are declaring an array, and the type 
+specifies the type of the elements it will contain. In the previous example, myIntArray is an 
+array of integers.  
+ 
+Instantiate an array using the new keyword. For example:  
+myIntArray = new int [5]; 
+This declaration sets aside memory for an array holding five integers. It is important to 
+distinguish between the array itself (which is a collection of elements) and the elements of 
+the array. myIntArray is the array; its elements are the five integers it holds. C# arrays are 
+reference types, created on the heap. Thus, myIntArray is allocated on the heap. The 
+elements of an array are allocated based on their type. Integers are value types, and so the 
+elements in myIntArray will be value types, not boxed integers. An array of reference types 
+will contain nothing but references to the elements, which are themselves created on the 
+heap.
+
+5.4 Understanding Default Values 
+When you create an array of value types each element initially contains the default value for 
+the type stored in the array. The declaration:  
+ 
+myIntArray = new int [5] ; 
+ 
+The declaration above creates an array of five integers, each of whose value is set to 0, which 
+is the default value for integer types. 
+ 
+Unlike with arrays of value types, the reference types in an array are not initialized to their 
+default value. Instead, they are initialized to null. If you attempt to access an element in an 
+array of reference types before you have specifically initialized them, you will generate an 
+exception.  
+Assume you have created a Button class. Declare an array of Button objects with the following 
+statement: 
+ 
+Button [] myButtonArray; 
+ 
+and instantiate the actual array like this: 
+ 
+myButtonArray = new Button [3] ; 
+ 
+You can shorten this to: 
+ 
+Button [] myButtonArray = new Button [3] ; 
+ 
+Unlike with the earlier integer example, this statement does not create an array with 
+references to three Button objects. Instead, this creates the array myButtonArray with three 
+null references. To use this array, you must first construct and assign the Button objects for 
+each reference in the array. You can construct the objects in a loop that adds them one by 
+one to the array. 

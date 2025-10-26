@@ -1,0 +1,23 @@
+Consider the following statements: 
+rectangleType myRectangle(5.0, 3.0);                      //Line 1  
+boxType myBox(6.0, 5.0, 4.0);                                  //Line 2 
+ 
+The statement in Line 1 creates the rectangleType object myRectangle. Thus, the 
+object myRectangle has two member variables: length and width. The statement in 
+Line 2 creates the boxType object myBox. Thus, the object myBox has three member 
+variables: length, width, and height (see Figure below) 
+ 
+
+206 | P a g e  
+ 
+ 
+ 
+Consider the following statements: 
+ 
+myRectangle.print();                                            //Line 3  
+cout << endl;                                                       //Line 4  
+myBox.print();                                                   //Line 5 
+ cout << endl;                                                   //Line 6 
+ 
+In the statement in Line 3, the member function print of the class rectangleType is 
+executed. In the statement in Line 5, the function print associat

@@ -1,0 +1,28 @@
+refore, will result in a syntax error.  
+  
+  
+  
+  
+
+27  
+  
+The members of a class are classified into three categories: private, public, and protected, called member 
+access specifiers. This chapter mainly discusses the first two types—that is, private and public.  
+  
+Following are some facts about private and public members of a class:  
+  
+By default, all members of a class are private.  
+If a member of a class is private, you cannot access it outside the class.  
+A public member is accessible outside the class.  
+To make a member of a class public, you use the member access specifier public with a colon.  
+  
+In C++, private, protected, and public are reserved words.   
+  
+  
+  
+  
+EXAMPLE 1-9  
+  
+Suppose that we want to define a class, clockType, to implement the time of day in a program. 
+Furthermore, suppose that the time is represented as a set of three integers: one to represent the hours, 
+one to represent the minutes, and one to represent the seconds. We also want to per

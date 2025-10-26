@@ -1,0 +1,22 @@
+Definition 26 
+Let f be a function from A to B and let S be a subset of A. The image of S 
+under the function f is the subset of B that consists of the images of the 
+elements of S.We denote the image of S by f (S), so 
+ 
+f (S) = {t | ∃s ∈S (t = f (s))}. 
+We also use the shorthand {f (s) | s ∈ S} to denote this set. 
+ 
+The notation f (S) for the image of the set S under the function f is potentially 
+ambiguous. Here, f (S) denotes a set, and not the value of the function f for 
+the set S. 
+Let A = {a, b, c, d, e} and B = {1, 2, 3, 4} with f (a) = 2, f (b) = 1, f (c) = 4, f (d) = 
+1, and f (e) = 1. The image of the subset S = {b, c, d} is the set f (S) = {1, 4}.
+
+Worked Example 
+Let f1 and f2 be functions from R to R such that f1(x) = x2 and f2(x) = x − x2. 
+What are the functions f1 + f2 and f1f2? 
+Solution: 
+From the definition of the sum and product of functions, it follows that: 
+(f1 + f2)(x) = f1(x) + f2(x) = x2 + (x − x2) = x and  (f1f2)(x) = x2(x − x2) = x3 − x4. 
+When f is a function from A to B, the image of a subset of A can also be 
+defined.

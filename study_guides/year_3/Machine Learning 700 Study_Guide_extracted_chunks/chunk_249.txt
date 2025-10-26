@@ -1,0 +1,18 @@
+6.9 Softmaxes and Cross-Entropy 
+Neural networks can output a vector that was entirely 0s, or it could output a vector that was 
+entirely 1s. Yet when we’re doing classification problems, we’d like to output a 1 for the 
+correct class and a 0 for all the incorrect classes. Generally, our predictions will not be so 
+perfect, but we’d at least like to predict an actual probability distribution over the classes. For 
+example, if we have two classes, and our model outputs [0, 0], it’s hard to make much sense 
+of that. It doesn’t think the output belongs in either class. 
+
+But if our model outputs [0.4, 0.6], we can interpret it as a prediction that there’s a probability 
+of 0.4 that our input belongs to the first class and 0.6 that our input belongs to the second 
+class. In order to accomplish this, we typically forgo the final Sigmoid layer and instead use 
+the softmax function, which converts a vector of real numbers to a vector of probabilities. 
+We compute exp(x) for each number in the vector, which results in a vector of positive 
+numbers. After that, we just divide each of those positive numbers by the sum, which gives 
+us a bunch of positive numbers that add up to 1—that is, a vector of probabilities. If we ever 
+end up trying to compute, say, exp(1000) we will get a Python error, so before taking the exp 
+we subtract off the largest value. This turns out to result in the same probabilities; it’s just 
+safer to compute in Python: 

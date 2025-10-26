@@ -1,0 +1,32 @@
+NMF uses a random initialization, which might lead to different results depending on the random seed. 
+In relatively simple cases such as the synthetic data with two com- ponents, where all the data can be 
+explained perfectly, the randomness has little effect (though it might change the order or scale of the 
+components). In more complex sit- uations, there might be more drastic changes. Applying NMF to face 
+images Now, let’s apply NMF to the Labeled Faces in the Wild dataset we used earlier. The main 
+parameter of NMF is how many components we want to extract. Usually this is lower than the number 
+of input features (otherwise, the data could be explained by making each pixel a separate component). 
+First, let’s inspect how the number of components impacts how well the data can be reconstructed using 
+NMF: 
+ 
+The quality of the back-transformed data is similar to when using PCA, but slightly worse. This is expected, 
+as PCA finds the optimum directions in terms of reconstruction. NMF is usually not used for its ability to 
+reconstruct or encode data, but rather for finding interesting patterns within the data. As a first look into 
+the data, let’s try extracting only a few components (say, 15). 
+
+These components are all positive, and so resemble prototypes of faces much more so than the 
+components shown for PCA. For example, one can clearly see that component 3 shows a face rotated 
+somewhat to the right, while component 7 shows a face somewhat rotated to the left. Let’s look at the 
+images for which these components are particularly strong: 
+
+As expected, faces that have a high coefficient for component 3 are faces looking to the right, while faces 
+with a high coefficient for component 7 are looking to the left. As mentioned earlier, extracting patterns 
+like these works best for data with additive structure, including audio, gene expression, and text data. 
+Let’s walk through one example on synthetic data to see what this might look like. Let’s say we are 
+interested in a signal that is a combination of three different sources: 
+  
+Manifold Learning with t-SNE While PCA is often a good first approach for transforming your data so that 
+you might be able to visualize it using a scatter plot, the nature of the method (applying a rotation and 
+then dropping directions) limits its usefulness, as we saw with the scatter plot of the Labeled Faces in the 
+Wild dataset. There is a class of algorithms for visuali- zation called manifold learning algorithms that 
+allow for much more complex map- pings, and often provide better visualizations. A particularly useful 
+one is the t-SNE algorithm. 

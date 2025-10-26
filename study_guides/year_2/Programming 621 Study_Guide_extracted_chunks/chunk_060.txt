@@ -1,0 +1,29 @@
+2.3.2. Declaring and Initializing Variables 
+If you only declare a variable and do not instruct the computer to put data into the 
+variable, the value of that variable is garbage. However, the computer does not warn 
+us, regards whatever values are in memory as legitimate, and performs calculations 
+using those values in memory. Using a variable in an expression without initializing it 
+produces erroneous results. To avoid these pitfalls, C++ allows you to initialize 
+variables while they are being declared. For example, consider the following C++ 
+statements in which variables are first declared and then initialized: 
+ 
+int first, second;  
+char ch; double x;  
+first = 13; second = 10;  
+ch = ' '; 
+ x = 12.6;  
+
+You can declare and initialize these variables at the same time using the following C++ 
+statements: 
+  
+int first = 13, second = 10; 
+ char ch = ' '; 
+  
+double x = 12.6; 
+
+The first C++ statement declares two int variables, first and second, and stores 13 in 
+first and 10 in second. The meaning of the other statements is similar. In reality, not 
+all variables are initialized during declaration. It is the nature of the program or the 
+programmer’s choice that dictates which variables should be initialized during 
+declaration. The key point is that all variables must be initialized before they are used. 
+ 

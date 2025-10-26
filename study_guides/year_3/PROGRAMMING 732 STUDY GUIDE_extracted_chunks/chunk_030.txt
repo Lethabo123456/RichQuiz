@@ -1,0 +1,33 @@
+Here is an example of a BorderLayout with a component in each layout area:   
+//Demonstrate  
+BorderLayout import 
+java.awt.*; import 
+java.applet.*; import 
+java.until.*;  
+/*  
+<applet code = “BorderLayoutDemo” width = 400 height 
+= 200>  
+</applet> */  
+public class BorderLayoutDemo extends Applet  
+{  
+  public void init()   
+  { setLayout (new BorderLayout ());  
+add(new Button(“this is across the top”);  
+BorderLayout.NORTH);  
+Add(new Label (“The footer message might go here,”);  
+BorderLayout.SOUTH);  
+Add(new Button(“Right”), BorderLayout.EAST);  
+Add(new Button(“Left”), BorderLayout.WEST);  
+String msg = “the reasonable man adapts” +  
+“himself to the world;\n” +  
+“the unreasonable one persists in “ +  
+“trying to adapt the world to himself.\n” +  
+“Therefore all progress depends” +  
+“on the unreasonable man.\n\n” + “George 
+pernard shaw \n\n:;  
+add(new TextArea(msg), BorderLayout.CENTER);  
+  } }  
+  
+Sample output from the BorderLayoutDemo applet is shown in Figure 1.4.  
+
+Figure 1.4

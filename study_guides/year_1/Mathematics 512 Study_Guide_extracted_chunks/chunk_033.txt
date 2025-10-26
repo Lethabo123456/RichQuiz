@@ -1,0 +1,20 @@
+3.5 The Squeeze Theorem 
+The squeeze theorem is an important concept that will be very helpful in upper 
+year calculus courses. The squeeze theorem states: 
+
+For functions 𝑓(𝑥), 𝑔(𝑥)𝑎𝑛𝑑 ℎ(𝑥), 𝑖𝑓 𝑓(𝑥) ≤𝑔(𝑥) ≤ℎ(𝑥) when 𝑥 is close to 
+𝑎 (but 𝑥 is not equal to 𝑎) and lim
+𝑥→𝑎 𝑓(𝑥) = lim
+𝑥→𝑎 ℎ(𝑥) = 𝐿 then, lim
+𝑥→𝑎 𝑔(𝑥) = 𝐿. 
+
+In simpler terms, the squeeze theorem states that if the graph of 𝑔 is squeezed 
+between the graphs of 𝑓 and ℎ when 𝑥 is near 𝑎, and if 𝑓 and ℎ have the same 
+limit L as 𝑥 approaches 𝑎, then the limit of 𝑔 as 𝑥 approaches 𝑎 is also L. The 
+graph below illustrates the squeeze theorem. 
+
+Figure 3.5 
+ 
+The function 𝑔 does not have to be completely contained between 𝑓 and ℎ. It 
+must only be contained between 𝑓 and ℎ while x is near 𝑎. The graph 
+illustrates where the functions 𝑓 and 𝑔 cross each other. 

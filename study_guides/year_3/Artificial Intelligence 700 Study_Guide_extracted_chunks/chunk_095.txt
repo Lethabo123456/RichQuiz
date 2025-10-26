@@ -1,0 +1,31 @@
+Data structure used for implementing DFS algorithm is stack. In the diagram 
+along with each vertex start and finish time is written in the format a/b here a 
+represent start time and b represent finish time. This will result in to tree or 
+forest. The order of vertices according to adjacency list considered for given 
+graph is 1,2,3,4,5.
+
+3.4 Breadth-First Search 
+In this section, we will discuss breadth first search algorithm for graph. This is 
+very well known searching algorithm. A traversal depends both on the starting 
+vertex, and on the order of traversing the adjacent vertices of each node. The 
+analogy behind breadth first search is that it explores the graph wider then deeper. 
+The method starts with a vertex v then  visit  all  its adjacent nodes v1,v2,v3…then move 
+to the next node which is adjacent to v1, v2, v3 …. This also referred as level by level search. 
+
+Basic steps towards exploring a graph using breadth-first search: 
+• Mark all vertices as "unvisited". 
+• Start with start vertex v 
+• Find an unvisited vertex that are adjacent to v , mark them visited 
+• Next consider all recently visited vertices and visit unvisited vertices 
+adjacent to them 
+• Continue this process till all vertices in the graph are explored /visited 
+ 
+Now, let us see the structure used in this algorithm and color scheme for status 
+of vertex. 
+
+Color scheme is same as used in DFS algorithm i.e to maintain the status of vertex 
+i.e mark a vertex is visited or unvisited or target vertex: 
+white- for an undiscovered/unvisited vertex 
+gray - for a discovered/visited vertex 
+black - for a finished/target vertex 
+ 

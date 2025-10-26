@@ -1,0 +1,40 @@
+ll be embedded in a PHP execution block, the PHP execution block, the 
+PHP escape tags (<?php?> aren’t required on the file to be included. 
+C.  For the inclusion of remote files the allow-url-pope must be enabled ad URL wrapper must be 
+supported 
+D.  Including a file produces the same result as copying the data from the file specified into the location 
+in which the statement appears. 
+ANS: B 
+122. What will be the output of the following date() function? 
+
+IP 621  
+<?php 
+$date="2009-5-19"; 
+$time="14:31:38"; 
+$datetime=$date.$time; 
+echo date("Y-m-d:H:i:s",strtotime($datetime)); 
+?> 
+A. 2009-5-19:14:31:38 
+B. 2009-5-19:2:31:38 
+C. 19-5-2009:2:31:38 
+D. 19/5/2009:14:31:38 
+ANS: A 
+123. PHP code is directly embedded into XHTML document? 
+A. True 
+B. False 
+ANS: A 
+ 
+124.  
+
+Topic: 4 
+1. PHP has long supported two regular expression implementations known as ___ and ___. 
+i) Perl 
+ii) PEAR 
+iii) Pearl 
+iv) POSIX 
+a) i) and ii) 
+b) ii) and iv) 
+c) i) and iv) 
+d) ii) and iii) 
+ 
+Answer:

@@ -1,0 +1,25 @@
+$backgroundName = $_POST['background'];   
+      $foregroundName = $_POST['foreground'];   
+      $_SESSION['backgroundName'] = $backgroundName;   
+      $_SESSION['foregroundName'] = $foregroundName;   
+?>   
+<p>Thank you. Your preferences have been changed to:<br />   
+          Background: <?= $backgroundName; ?><br />   
+         Foreground: <?= $foregroundName; ?></p>   
+<p>Click <a href="prefs_session_demo.php">here</a> to see the preferences in action.</p>   
+</body>   
+</html>   
+   
+The example below uses the same code used to illustrate cookies which is now being used to 
+illustrate sessions. Once the session is started, the $bg and $fg variables are created, and all the 
+script has to do is use them.   
+   
+Using Preferences From Sessions (prefs_session_demo.php)   
+<?php   
+session_start() ;   
+$backgroundName = $_SESSION['bg'] ;   
+$foregroundName = $_SESSION['fg'] ;   
+?>   
+<html>   
+<head><title>Front Door</title></head>   
+<body bgcolor="<?= $backgroundName; ?>"

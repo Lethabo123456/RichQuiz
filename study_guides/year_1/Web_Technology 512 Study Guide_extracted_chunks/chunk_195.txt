@@ -1,0 +1,36 @@
+buttons are in the group. We can use this 
+length in the loop: 
+for (i = 0; i < len; i++)  
+{ 
+ 
+if ( document.frmOne.payment[i].checked )  
+ 
+{ 
+ 
+payment = document.frmOne.payment[i].value; 
+break; 
+} 
+} 
+ 
+The loop goes round and around while the variable called i is less than the length of 
+the radio buttons. Inside of the loop we have this: 
+if ( document.frmOne.payment[i].checked )  
+
+ 
+123 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+{ 
+payment = document.frmOne.payment[i].value; 
+break; 
+} 
+ 
+The IF statements checks each radio button for a value of checked. But we cannot just 
+say: 
+document.frmOne.payment.checked 
+ 
+The payment part refers to the whole group of radio buttons. To get at each individual 
+radio button you can use a pair of square brackets. Inside the square brackets you 
+type a number. The number corresponds to a particular button. So payment[0] is the 
+first button, payment[1] is the second button, and so on. If the IF statement detects 
+that any one of these buttons

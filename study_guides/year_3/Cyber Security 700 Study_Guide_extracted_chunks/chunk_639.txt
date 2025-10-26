@@ -1,0 +1,28 @@
+Security Performance Measurement 
+
+Two terms are relevant to this discussion: 
+ Security performance: The measurable result of security controls applied to information 
+systems and supporting information security programs. 
+ Security performance metric: A variable related to security performance to which a value is 
+assigned as the result of measurement. Also called a security performance measure. 
+National Institute of Standards and Technology (NIST) IR 7564, Directions in Security Metrics Research, 
+lists the following as the main broad uses of security metrics: 
+ Strategic support: Assessments of security properties can be used to aid in different kinds of 
+decision making, such as program planning, resource allocation, and product and service 
+selection. 
+ Quality assurance: Security metrics can be used during the software development life cycle to 
+eliminate vulnerabilities, particularly during code production, by performing functions such as 
+measuring adherence to secure coding standards, identifying vulnerabilities that are likely to 
+exist, and tracking and analyzing security flaws that are eventually discovered. 
+ Tactical oversight: Monitoring and reporting of the security status or posture of an IT system 
+can be carried out to determine compliance with security requirements (for example, policies, 
+procedures, regulations), gauge the effectiveness of security controls and manage risk, 
+provide a basis for trend analysis, and identify specific areas for improvement.
+
+Yee’s article “Security Metrics: An Introduction and Literature Review” [YEE17] states that a security 
+metrics should do the following: 
+ Measure quantities that are meaningful for establishing the security posture of a computer 
+system or of an organization 
+ Be reproducible 
+ Be objective and unbiased 
+ Be able to measure a progression toward a goal over time 

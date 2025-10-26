@@ -1,0 +1,28 @@
+“author” = > “Dickens”, 
+“year” = > 1853 );  
+  
+// Displays “Array ( [author] = > Dickens [title] = > Bleak House [year] = > 1853 )” 
+ksort( $myBook );  
+print_r( $myBook );  
+  
+// Displays “Array ( [year] = > 1853 [title] = > Bleak House [author] = > Dickens )” 
+krsort( $myBook );  
+print_r( $myBook );  
+  
+In this example, ksort() has sorted the array by key in ascending order ( “ author ”, “ title ”, “ year “ ), 
+whereas krsort() has sorted by key in the opposite order.  
+  
+  
+  
+  
+  
+Reading/Activity: You are hereby reminded to please refer to your prescribed book and read Pages 
+119 to 143 placing great emphasis on the sorting of multiple arrays as well as merging arrays 
+because these iare an integral aspects of the subject matter of arrays and their treatment in any 
+modern programming language, not least of them is PHP.  
+  
+  
+  
+5.16 Unit Summary  
+This unit has introduced you to another important concept: arrays. These are special variables that 
+can store more than one

@@ -1,0 +1,47 @@
+7.2 Delegates 
+A delegate is a reference to a method. Delegates are so named because they “delegate” 
+processing to the referenced method when they are invoked. A delegate is a very simple 
+concept with extraordinarily powerful implications. Let me explain. Typically, when you 
+write a statement that invokes a method, you specify the name of the method (and possibly 
+the object or structure to which the method belongs). It’s clear from your code exactly 
+which method you’re running and when you are running it. Look at the following simple 
+example that calls the performCalculation method of a Processor object (what this method 
+does or how the Processor class is defined is immaterial for this discussion): 
+ 
+Processor p = new Processor(); 
+p.performCalculation(); 
+ 
+You can assign a reference to a method to a delegate in much the same way that you can 
+assign an int value to an int variable. The next example creates a delegate named 
+performCalculationDelegate that references the performCalculation method of the 
+Processor object. 
+ 
+Processor p = new Processor(); 
+Delegate  performCalculationDelegate; 
+performCalculationDelegate = p.performCalculation; 
+ 
+Keep in mind that the statement that assigns the method reference to the delegate does 
+not run the method at that point; there are no parentheses after the method name, and you 
+do not specify any parameters (if the method takes them). This is just an assignment 
+statement. 
+ 
+Having stored a reference to the performCalculation method of the Processor object in the 
+delegate, the application can subsequently invoke the method through the delegate, like 
+this: 
+
+performCalculationDelegate(); 
+This looks like an ordinary method call. If you didn’t know otherwise, it looks like you might 
+actually be running a method named performCalculationDelegate. However, the common 
+language runtime (CLR) knows that this is a delegate, so it retrieves the method that the 
+delegate references and runs that instead. Later, you can change the method to which a 
+delegate refers, so a statement that calls a delegate might actually run a different method 
+each time it executes. Additionally, a delegate can reference more than one method at a 
+time (think of it as a collection of method references). When you invoke a delegate, all the 
+methods it refers to will run. 
+ 
+A delegate is created with the delegate keyword, followed by a return type and the 
+signature of the methods that can be delegated to it, as in the following: 
+public delegate int WhichIsFirst (object obj1, object obj2); 
+This declaration defines a delegate named WhichIsFirst, which will encapsulate any method 
+that takes two objects as parameters and returns an int . 
+ 

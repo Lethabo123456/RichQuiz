@@ -1,0 +1,23 @@
+n the primary key of the related table. Finally, a secondary key is 
+defined as a key that is used strictly for data retrieval purposes, where necessary. Keep in mind that 
+a secondary key does not necessarily yield a unique outcome.  
+A secondary key’s effectiveness in narrowing down a search depends on how restrictive the key is. 
+Table 3.3 summarizes the various relational database table keys. 
+ 
+ 
+ 
+Integrity Rules 
+Relational database integrity rules are very important to good database design. Relational database 
+management systems (RDBMSs) enforce integrity rules automatically, but it is much safer to make 
+sure your application design conforms to the entity and referential integrity rules mentioned in this 
+chapter. Those rules are summarized in Table 3.4. 
+The integrity rules are summarized in Table 3.4. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter three, page 69-72 
+
+ 
+44 
+ 
+The next section (Chapte

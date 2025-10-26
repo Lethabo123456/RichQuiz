@@ -1,0 +1,43 @@
+Run the app. Change the sort preferences using the Settings screen. You should see the order of the 
+contacts on the list change as you adjust your preferences. Try changing the sort settings and returning 
+to the list using the list ImageButton. Now try changing the sort order and returning to the 
+ContactListActivity using the Back button. You should notice that the list is not re-sorted when you 
+use the Back button, but it is when you use the ImageButton. When you use the ImageButton, the flag 
+you set (FLAG_ACTIVITY_CLEAR_TOP) causes the old ContactListActivity to be destroyed, and a new 
+one is created so the onCreate method is executed. When you use the Back button, the Activity still 
+exists, so the onCreate method is not executed and the sort order is thus never changed. 
+The solution to this is to place the code that populates the list in the onResume() method. As you saw 
+in previous Chapter, the onResume method is executed just before the Activity becomes visible. This 
+method will be executed every time the user navigates to the activity. This is an example of where you 
+need to move some of the code from the onCreate method to the onResume() method to make sure 
+it is executed whenever the activity becomes visible. Use the following steps:
+
+Set ContactListActivity as the Default Activity 
+
+The third task is to modify the AndroidManifest.xml file to open the ContactListActivity instead of the 
+MainActivity as the initial app activity. Open AndroidManifest.xml by double-clicking  it 
+in the Package Explorer. Switch to the Text view if it is not already open. Find the code 
+that matches Listing 6.17, and switch the name and label attributes so that the 
+activity with the intent filter is ContactListActivity and its label, and the
+other activity has the name MainActivity and its label. To do this, delete the strikeout lines (these are
+the original lines) in Listing 6.17 and add the new lines. Note that the manifest will also include the
+
+ContactMapActivity and the ContactSettingsActivity, so be sure to select the correct activity. 
+Test the app. If the app does not start with the ContactListActivity, try cleaning the project to reload 
+the manifest file. Select Build > Clean Project. Run the app again. If the list still does not show as the 
+first activity, you will have to modify your debug configuration. Select Run > Debug Configurations. In 
+the window that opens, select your debug configuration if it is not already selected, and then select 
+Launch Default Activity. Run the app again.
+
+Set MainActivity as Default Activity with No Contacts in Database 
+The final task is to modify the onResume method of the ContactListActivity to check if there are any 
+contacts in the database. If there are none, the app should open the MainActivity. Refer to Listing 6.18 
+to make these changes in approximately the middle of the onResume method. 
+ 
+You are really just adding a few lines of code around an existing body of code. 
+Add the if statement before the line that sets the adapter variable to check if 
+there are any contacts retrieved from the database (Line 5). Close the if 
+statement body after the setting of the setAdapter body of code (Line 10). Then 
+add the else block of code to open the MainActivity if there are no contacts. 
+
+Test the app. Delete all the contacts. Rerun the app to see if it opens to the MainActivity.

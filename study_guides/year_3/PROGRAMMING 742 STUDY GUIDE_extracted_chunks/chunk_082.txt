@@ -1,0 +1,42 @@
+The class implementing the interface must fulfill the contract exactly and completely. 
+Document must provide both a Read( ) and a Write( ) method and the Status property. 
+How it fulfills these requirements, however, is entirely up to the Document class. Although 
+IStorable dictates that Document must have a Status property, it does not know or care 
+whether Document stores the actual status as a member variable or looks it up in a database. 
+The details are up to the implementing class. 
+Classes can implement more than one interface. For example, if your Document class can be 
+stored and it also can be compressed, you might choose to implement both the IStorable and 
+ICompressible interfaces. To do so, change the declaration (in the base-list) to indicate that-
+both interfaces are implemented, separating the two interfaces with commas: 
+ 
+public class Document : IStorable, ICompressible 
+ 
+ 
+Having done this, the Document class must also implement the methods specified by the 
+ICompressible interface (which is declared in Example 2.7-2): 
+ 
+  public void Compress( ) 
+{ 
+Console.WriteLine("Implementing the Compress Method"); 
+} 
+public void Decompress( ) 
+{ 
+Console.WriteLine("Implementing the Decompress Method"); 
+} 
+
+It is possible to extend an existing interface to add new methods or members, or to modify 
+how existing members work. For example, you might extend ICompressible with a new 
+interface, ILoggedCompressible, which extends the original interface with methods to keep 
+track of the bytes saved: 
+ 
+interface ILoggedCompressible : ICompressible 
+{ 
+void LogSavedBytes(); 
+} 
+ 
+Classes are now free to implement either ICompressible or ILoggedCompressible, 
+depending on whether they need the additional functionality. If a class does implement 
+
+2.6.1 ILoggedCompressible, it must implement all the methods of both ILoggedCompressible 
+and ICompressible. Objects of that type can be cast either to ILoggedCompressible or to 
+ICompressible. 

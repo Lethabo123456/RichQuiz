@@ -1,0 +1,18 @@
+element is in L, a binary search makes at most 
+42 item comparisons.  
+  
+ 
+
+263  
+  
+Note that 40 = 2 * 20 = 2 * log2220 = 2 * log2(1048576).  
+In general, suppose that L is a sorted list of size n. Moreover, suppose that n is a power of 2, that is, n = 
+2m, for some nonnegative integer m. After each iteration of the for loop, about half the elements are left 
+to search, that is, the search sublist for the next iteration is half the size of the current sublist. For example, 
+after the first iteration, the search sublist is of size about n /2 = 2m-1. It is easy to see that the maximum 
+number of the iteration of the for loop is about m + 1. Also m = log2n. Each iteration makes 2 key 
+comparisons. Thus, the maximum number of comparisons to determine whether an element x is in L is 
+2(m + 1) = 2(log2n + 1) = 2log2n + 2.  
+  
+In the case of a successful search, it can be shown that for a list of length n, on average, a binary search 
+makes 2log2n – 3 key comparisons. In the case of an un

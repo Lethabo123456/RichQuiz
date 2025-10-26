@@ -1,0 +1,17 @@
+elements of the queue.)  
+  
+  
+FIGURE 10-18 Arrays predCount, topologicalOrder, and queue after Steps 1 and 2 execute  
+  
+Step 3 executes as long as the queue is nonempty.  
+  
+Iteration 1 of Step 3: After Step 3.1 executes, the value of u is 0. Step 3.2 stores the value of u, which is 0, 
+in the next available position in the array topologicalOrder.Notice that 0 is stored at position 0 in this 
+array. Step 3.3 reduces the predecessor count of all the successors of 0 by 1, and if the predecessor count 
+of any successor node of 0 reduces to 0, that node is pushed into queue. The successor nodes of the node 
+0 are the nodes 1 and 5. The predecessor count of the node 1 reduces to 0, and the predecessor count of 
+the node 5 reduces to 1. The node 1 is pushed into queue. After the first iteration of Step 3, the arrays 
+predCount, topologicalOrder, and queue are as shown in Figure 10-19.  
+  
+  
+FIGURE 10-19 Arrays predCount, topologicalOrder, and queue after the first iteration of Step 3

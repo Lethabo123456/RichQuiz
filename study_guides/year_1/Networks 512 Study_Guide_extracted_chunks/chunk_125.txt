@@ -1,0 +1,23 @@
+1.15.5 Replacing a Central Hub with a Switch 
+This switching opportunity is typified by a fully shared network, where many users are connected 
+in cascading hub architecture. The two main impacts of switching will be faster network 
+connection to the server(s) and the isolation of non-relevant traffic from each segment. As the 
+network bottleneck is eliminated performance grows until a new system bottleneck is 
+encountered – such as maximum server performance. 
+
+1.15.5 Adding Switches to a Backbone Switched Network 
+Congestion on a switched network can usually be relieved by adding more switched ports, and 
+increasing the speed of these ports. Segments experiencing congestion are identified by their 
+utilization and collision rates, and the solution is either further segmentation or faster 
+connections. Both Fast Ethernet and Ethernet switch ports are added further down the tree 
+structure of the network to increase performance. 
+
+1.15.6 Designing for Maximum Benefit 
+A change in network design tends to be evolutionary rather than revolutionary-rarely is a network 
+manager able to design a network completely from scratch. Usually, changes are made slowly with 
+an eye toward preserving as much of the usable capital investment as possible while replacing 
+obsolete or outdated technology with new equipment. 
+Fast Ethernet is very easy to add to most networks. A switch or bridge allows Fast Ethernet to 
+connect to existing Ethernet infrastructures to bring speed to critical links. The faster technology is 
+used to connect switches to each other, and to switched or shared servers to ensure the 
+avoidance of bottlenecks.

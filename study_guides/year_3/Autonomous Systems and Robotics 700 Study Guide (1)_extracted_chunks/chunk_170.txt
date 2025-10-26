@@ -1,0 +1,43 @@
+Notice that there is a small drift in the  position despite the fact that the steering wheel is moved 
+back and forth symmetrically around zero. Exercise: explain what might be happening. 
+Linearize the system around a trajectory 
+We choose a straight path along the  axis at a speed of 10 m/s as our desired trajectory and then 
+linearize the dynamics around the initial point in that trajectory. 
+# Create the desired trajectory 
+Ud = np.array([10 * np.ones_like(timepts), np.zeros_like(timepts)]) 
+
+Xd = np.array([10 * timepts, 0 * timepts, np.zeros_like(timepts)]) 
+# Now linizearize the system around this trajectory 
+linsys = vehicle.linearize(Xd[:, 0], Ud[:, 0]) 
+# Check on the eigenvalues of the open loop system 
+np.linalg.eigvals(linsys.A) 
+array([0., 0., 0.]) 
+We see that all eigenvalues are zero, corresponding to a single integrator in the  (longitudinal) 
+direction and a double integrator in the  (lateral) direction. 
+Compute a state space (LQR) control law 
+We can now compute a feedback controller around the trajectory. We choose a simple LQR 
+controller here, but any method can be used.
+
+# Outputs: v (forward velocity), delta (steering angle) 
+def control_output(t, x, z, params): 
+    # Get the parameters for the model 
+    K = params.get('K', np.zeros((2, 3)))   # nominal gain 
+ 
+    # Split up the input to the controller into the desired state and nominal input 
+    xd_vec = z[0:3]    # desired state ('xd', 'yd', 'thetad') 
+    ud_vec = z[3:5]    # nominal input ('vd', 'deltad') 
+    x_vec = z[5:8]     # current state ('x', 'y', 'theta') 
+    # Compute the control law 
+    return ud_vec - K @ (x_vec - xd_vec) 
+# Define the controller system 
+    control = ct.nlsys(None, control_output, name='control', 
+    inputs=['xd', 'yd', 'thetad', 'vd', 'deltad', 'x', 'y', 'theta'],outputs=['v', 'delta'], params={'K': K}) 
+Because we have named the signals in both the vehicle model and the controller in a compatible 
+way, we can use the autoconnect feature of the interconnect() function to create the closed loop 
+system. 
+# Build the closed loop system 
+vehicle_closed = ct.interconnect( 
+     (vehicle, control), 
+    inputs=['xd', 'yd', 'thetad', 'vd', 'deltad'], 
+    outputs=['x', 'y', 'theta'] 
+)

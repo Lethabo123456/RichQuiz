@@ -1,0 +1,26 @@
+A simple example of the use of Modus Ponens is the propositional calculus, assume 
+the following observation: 
+if "it is raining" then "the ground will be wet" 
+And "it is raining" if P denotes " it is raining" and Q is "the ground is wet" 
+
+P→Q True 
+P True 
+Q 
+ 
+Through an application of Modus Ponens, the fact that the ground is wet (Q) may 
+be added to the set of true expression. 
+- Modus Ponens can also be applied to the expression containing variables. For 
+example: 
+ 
+“All men are mortal and Socrates is a man"; 
+Therefore Socrates is mortal. 
+6X(man(X) → mortal (X)). 
+
+man(Socrates) 
+mortal(Socrates) 
+ 
+Because the X in the implication is universal quantified, may substitution any value 
+in the domain for X and still have a true statement under the inference rule of 
+universal institution. 
+By substituting Socrates for X in the implication, we infer the expression: 
+man(Socrates) → mortal(Socrates).

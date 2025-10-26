@@ -1,0 +1,31 @@
+2.1.1 Boolean Expressions and Boolean Functions 
+A Boolean function is a function which takes on just only two values. In logic 
+these two values are the symbols TRUE and FALSE but in other applications 
+different symbols are used such as ON and OFF, or 1 and 0; 
+all that matters is that there should be just two symbols. 
+Let 𝐵 = {0, 1}. Then 𝐵 𝑛= {(𝑥1, 𝑥2, . . . , 𝑥𝑛) | 𝑥𝑖 ∈ 𝐵 𝑓𝑜𝑟 1 ≤ 𝑖 ≤ 𝑛} is 
+the set of all possible n-tuples of 0s and 1s. The variable 𝑥 is called a Boolean variable 
+if it assumes values only from 𝐵, that is, if its only possible values are 0 and 1. 
+A function from 𝐵𝑛 to 𝐵 is called a Boolean function of degree 𝑛.
+ 
+A Boolean function or truth function f(x1, ..., xn) is a mapping f: { 0,1 }n 
+{0,1}. It is completely determined by the corresponding truth table and vice versa. 
+Two Boolean expressions are equivalent if andonly if one can be obtained from the 
+other by applying the laws of Boolean algebra. The function 𝐹(𝑥, 𝑦) =  𝑥𝑦 
+from the set of ordered pairs of Boolean variables to the set {0, 1} is a 
+Boolean function of degree 2 with 𝐹(1, 1) =  0, 𝐹(1, 0) =  1,  
+𝐹(0, 1) =  0, 𝑎𝑛𝑑 𝐹(0, 0) =  0. We display these values of 𝐹 in Table 15.
+
+Table 15 
+Boolean functions can be represented using expressions made up from 
+variables and Boolean operations. The Boolean expressions in the variables 
+𝑥1, 𝑥2, . . . , 𝑥𝑛  are defined recursively as 0, 1, 𝑥1, 𝑥2, . . . , 𝑥𝑛 are Boolean 
+expressions; 
+if 𝐸1 and 𝐸2 are Boolean expressions, then 𝐸̅1, (𝐸1𝐸2), and (𝐸1 + 𝐸2),  are 
+Boolean expressions. 
+Each Boolean expression represents a Boolean function. The values of this 
+function are obtained by substituting 0 and 1 for the variables in the 
+expression.  
+
+Boolean algebra defines operations for the set {0, 1}. While Boolean algebra is the 
+fundamental formal system for digital circuit designers, digital circuits are their final product      

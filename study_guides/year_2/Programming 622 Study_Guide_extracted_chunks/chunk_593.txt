@@ -1,0 +1,17 @@
+t the elements at a distance of 1, that is, the entire 
+list is sorted. Figure 8-19(c) shows the elements before and after the final sorting phase.  
+  
+  
+
+295  
+  
+FIGURE 8-19 Lists during Shellsort  
+In Figure 8-19, we sorted the elements at a distance of 7, 4, and then 1. The sequence 1, 4, 7 is called the 
+increment sequence. How do we choose an increment sequence? In general, this question cannot be 
+answered satisfactorily. The literature provides a discussion of various increment sequences, and some 
+have been found to be useful. Typically, the increment sequences are chosen to decrease roughly 
+geometrically so that the number of increments is logarithmic in the size of the list. For example, if the 
+number of increments is about one-half of the previous increment, then we need at most 20 increments 
+to sort a list of 1 million elements. However, using as few increments as possible is desirable.  
+  
+D. E. Knuth recommended the increment sequence 1, 4, 13, 40, 121, 364, 1093,

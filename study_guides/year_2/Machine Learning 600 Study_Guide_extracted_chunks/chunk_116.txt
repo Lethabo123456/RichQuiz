@@ -1,0 +1,17 @@
+r. The convolution doesn't 
+know what these things actually are; it's just noticing them in a numerical form. Within a CNN 
+the convolution is acting as a filter passing over the image. For example, if we were working 
+with a 5 × 5–pixel image, such as Figure 6.4, the filter could be 3 × 3 pixels in size and scan the 
+image from top left to bottom right, one pixel step across at a time. 
+                                                   
+ 
+                                                                                                  Figure 6.4: Pixel image 
+ 
+The filter is a small matrix of values and layers over the image; the initial values are usually 
+based on a random distribution (see Figure 6.5). 
+ 
+                                                                  
+ 
+                                                                                          Figure 6.5: Filter matrix 
+ 
+By passing the filter over the image, the filter multiplies its own values with the values o

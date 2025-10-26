@@ -1,0 +1,28 @@
+Adding a mailto link 
+ 
+Here’s how                              Here’s why 
+--------------------------------------------------------------------------------------------
+Open the source code 
+--------------------------------------------------------------------------------------------
+Place the insertion point as            To prepare to add the code to create a mailto 
+shown                                   link.
+--------------------------------------------------------------------------------------------
+Enter the following code:               The HREF attribute of the A tag specifies a mailto 
+<A                                      address for the link. 
+HREF=”mailto:info@pctbc.co 
+.za”>email</A>. 
+--------------------------------------------------------------------------------------------
+Update and close the source code 
+--------------------------------------------------------------------------------------------
+Refresh and observe the page            The mailto link appears on the page. 
+--------------------------------------------------------------------------------------------
+Point to the hyperlink                  Notice that the status bar displays the e-mail
+                                        address with the mailto attribute. 
+--------------------------------------------------------------------------------------------
+Click the mailto link                   To open a new message window in your default
+                                        e-mail application. 
+--------------------------------------------------------------------------------------------
+Observe the address in the              This is the address that you specified in the mailto
+message                                 link.
+-------------------------------------------------------------------------------------------- 
+Choose File, Close                      To close the message window. 

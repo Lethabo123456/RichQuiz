@@ -1,0 +1,22 @@
+ections of this unit. If you have not, you can easily re-create the database and table by 
+typing the following into the MySQL command-line tool:   
+   
+CREATE DATABASE mydatabase;   
+USE mydatabase;   
+CREATE TABLE fruit (   
+id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,  
+name VARCHAR(30) NOT NULL, color VARCHAR(30) NOT 
+NULL,   
+PRIMARY KEY (id)   
+);   
+INSERT INTO fruit ( name, color ) VALUES ( ‘banana’, ‘yellow’ );   
+INSERT INTO fruit ( name, color ) VALUES ( ’tangerine’, ‘orange’ );   
+INSERT INTO fruit ( name, color ) VALUES ( ‘plum’, ‘purple’ );   
+   
+Now save the following script as get_fruit.php in your document root folder, replacing mypass with 
+the password you set for the root user in MySQL, and run the script in your Web browser. You 
+should see a result similar to Figure 4.1.   
+   
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”   
+                   “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>   
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=

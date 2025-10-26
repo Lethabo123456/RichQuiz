@@ -1,0 +1,198 @@
+/* ===============================
+   Human–Computer Interaction (HCI) Theme
+   Extravagant + Usability + Accessibility
+   =============================== */
+
+/* Fonts: Rounded & friendly for UX + high readability */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Raleway:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* Container */
+.container {
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative interactive circles */
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  z-index: 0;
+}
+.container::before {
+  width: 250px;
+  height: 250px;
+  background: #ff4081;
+  top: -60px;
+  left: -60px;
+}
+.container::after {
+  width: 180px;
+  height: 180px;
+  background: #40c4ff;
+  bottom: -50px;
+  right: -50px;
+}
+
+.container > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* Question container */
+.question-container {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 16px;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.question-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.question-container strong {
+  color: #ff4081;
+}
+
+/* Options list */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 12px 18px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.option-label:hover {
+  background: #fff0f6;
+  border-color: #ff4081;
+  transform: translateY(-2px);
+}
+
+.option-label input[type="radio"] {
+  accent-color: #ff4081;
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+.option-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Error message */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  border-left: 5px solid #e53935;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(90deg, #ff4081, #40c4ff);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(64, 196, 255, 0.4);
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #40c4ff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ff4081;
+}
+
+/* Accessibility enhancements */
+:focus {
+  outline: 3px dashed #40c4ff;
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .option-label {
+    padding: 10px 14px;
+  }
+}

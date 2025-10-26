@@ -1,0 +1,13 @@
+orm (3NF) 
+The data anomalies created by the database organization shown in Figure 6.4 are easily eliminated 
+by completing the following two steps:  
+Step 1: Make New Tables to Eliminate Transitive Dependencies For every transitive 
+dependency, write a copy of its determinant as a primary key for a new table. A determinant is 
+any attribute whose value determines other values within a row. If you have three different transitive 
+dependencies, you will have three different determinants. As with the conversion to 2NF, it is 
+important that the determinant remain in the original table to serve as a foreign key.  
+Step 2: Reassign Corresponding Dependent Attributes Using Figure 6.4, identify the attributes 
+that are dependent on each determinant identified in Step 1. Place the dependent attributes in the 
+new tables with their determinants and remove them from their original tables.  
+EMP_NUM  EMP_NAME, JOB_CLASS 
+Draw a new dependency diagram to show all the tables you have defined in S

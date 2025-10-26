@@ -1,0 +1,24 @@
+u have learned: 
+ 
+ 
+Normalization is a technique used to design tables in which data redundancies are 
+minimized. The first three normal forms (1NF, 2NF, and 3NF) are the most common. From 
+a structural point of view, higher normal forms are better than lower normal forms. 
+ 
+ 
+A table is in 1NF when all key attributes are defined, and all remaining attributes are 
+dependent on the primary key. However, a table in 1NF can still contain both partial and 
+transitive dependencies.  
+ 
+ 
+A table is in 2NF when it is in 1NF and contains no partial dependencies. Therefore, a 1NF 
+table is automatically in 2NF when its primary key is based on only a single attribute. 
+  
+ 
+A table is in 3NF when it is in 2NF and contains no transitive dependencies. Given that 
+definition, the Boyce-Codd normal form (BCNF) is merely a special 3NF case in which all 
+determinant keys are candidate keys. 
+  
+ 
+A table that is not in 3NF may be split into new tables until all the tables meet the 3NF 
+require

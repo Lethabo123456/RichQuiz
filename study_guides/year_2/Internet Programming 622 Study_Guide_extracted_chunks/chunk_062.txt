@@ -1,0 +1,21 @@
+ch 
+fields the user already filled in, and prefills those fields in the new form   
+   
+To try out the script, first save the following code as registration.php in your document root folder:   
+   
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”   
+                      “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>   
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>   
+           <head>   
+                   <title>Membership Form</title>   
+                   <link rel=”stylesheet” type=”text/css” href=”common.css” />   
+                   <style type=”text/css”>   
+                             .error { background: #d33; color: white; padding: 0.2em; }                   
+</style>   
+         </head>   
+        <body>   
+                 <?php   
+                          if ( isset( $_POST[“submitButton”] ) ) {   
+                                         processForm();   
+                         } else {   
+                                   display

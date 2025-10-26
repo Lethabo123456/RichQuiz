@@ -1,0 +1,18 @@
+and average of the elements of the array. Each of these operations 
+requires the ability to step through the elements of the array. This is easily 
+accomplished using a loop. For example, suppose that we have the following 
+statements: 
+int list[100]; //list is an array of size 100 
+int i; 
+The following for loop steps through each element of the array list, starting at the first 
+element of list: 
+for (i = 0; i < 100; i++) //Line 1  
+           //process list[i] //Line 2 
+If processing the list requires inputting data into list, the statement in Line 2 takes the 
+form of an input statement, such as the cin statement. For example, the following 
+statements read 100 numbers from the keyboard and store the numbers in list: 
+for (i = 0; i < 100; i++) //Line 1  
+                cin >> list[i]; //Line 2 
+Similarly, if processing list requires outputting the data, then the statement in Line 2 
+takes the form of an output statement. For example, the following statements output 
+the numbers s

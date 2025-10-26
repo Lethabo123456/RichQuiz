@@ -1,0 +1,38 @@
+>  
+< html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en” > 
+< head >  
+
+65  
+< title > Using each() with a while loop < /title >  
+  
+< link rel=”stylesheet” type=”text/css” href=”common.css” / > 
+< /head >  
+< body >  
+< h1 > Using each() with a while loop < /h1 >  
+< dl >  
+< ?php  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”,  
+“pubYear” = > 1939 ); while ( 
+$element = each( $myBook ) ) { echo “ < 
+dt > $element[0] < /dt > ”;  
+echo “ < dd > $element[1] < /dd > ”;  
+}  
+? >  
+< /dl >  
+< /body > < 
+/html >  
+  
+ 
+Figure 5.3  
+  
+The while loop continues as long as each() keeps returning a four - element array (which evaluates 
+to true). When the end of the array is reached, each() returns false and the loop finishes.  
+  
+  
+  
+  
+  
+Reading/Activity: At this juncture, please refer to your prescribed book and read Pages 119  
+to 143 and further cement your grasp on the subject matter presented in this chapter. Pay particular 
+at

@@ -1,0 +1,17 @@
+PCI Security Standards Council https://www.pcisecuritystandards.org/pci_security/ 
+The PCI DSS is structured around 6 goals and 12 requirements, as shown in Table 1.12. Each 
+requirement is further broken up into one or two levels of sub requirements, for which testing 
+procedures and guidance are provided. 
+
+The following is an example of a PCI sub requirement: 
+ Sub requirement 8.1.2: Control addition, deletion, and modification of user IDs, credentials, 
+and other identifier objects. 
+ Testing procedures: For a sample of privileged user IDs and general user IDs, examine 
+associated authorizations and observe system settings to verify each user ID and privileged 
+user ID has been implemented with only the privileges specified on the documented approval. 
+ Guidance: To ensure that user accounts granted access to systems are all valid and recognized 
+users, strong processes must manage all changes to user IDs and other authentication 
+credentials, including adding new ones and modifying or deleting existing ones. 
+As you can see, the specification is clear and straightforward. Taken together, the many sub 
+requirements with their testing procedures and guidance provide a powerful tool for managing a 
+cybersecurity capability in the context of the use of payment cards. 

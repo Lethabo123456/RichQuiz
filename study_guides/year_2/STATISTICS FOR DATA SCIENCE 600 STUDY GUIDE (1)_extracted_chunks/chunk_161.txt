@@ -1,0 +1,47 @@
+Can we use basic statistics to form a hypothesis about this question? I say we can! But first, 
+we must introduce a concept called correlation. 
+Correlation coefficients are a quantitative measure that describe the strength of 
+association/relationship between two variables. 
+
+The correlation between two sets of data tells us about how they move together. Would 
+changing one help us predict the other? This concept is not only interesting in this case, but 
+it is one of the core assumptions that many machine learning models make on data. For 
+many prediction algorithms to work, they rely on the fact that there is some sort of 
+relationship between the variables that we are looking at. The learning algorithms then 
+exploit this relationship to make accurate predictions. 
+A few things to note about a correlation coefficient are as follows: 
+• It will lie between -1 and 1 
+• The greater the absolute value (closer to -1 or 1), the stronger the relationship 
+between the variables: 
+                      °  The strongest correlation is a -1 or a 1 
+                      °  The weakest correlation is a 0 
+• A positive correlation means that as one variable increases, the other one tends to 
+increase as well. 
+• A negative correlation means that as one variable increases, the other one tends to 
+decrease. 
+We can use Pandas to quickly show us correlation coefficients between every feature and 
+every other feature in the Data frame, as illustrated: 
+
+# correlation between variables df.corr() 
+This table shows the correlation between friends and happiness. Note the first two things, 
+shown as follows: 
+• The diagonal of the matrix is filled with positive is. This is because they represent the 
+correlation between the variable and itself, which, of course, forms a perfect line, 
+making the correlation perfectly positive! 
+• The matrix is symmetrical across the diagonal. This is true for any correlation matrix 
+made in Pandas. 
+
+There are a few caveats to trusting the correlation coefficient. One is that, in 
+general, a correlation will attempt to measure a linear relationship between 
+variables. This means that if there is no visible correlation revealed by this measure, 
+it does not mean that there is no relationship between the variables, only that there 
+is no line of best fit that goes through the lines easily. There might be a non-linear 
+relationship that defines the two variables. 
+It is important to realize that causation is not implied by correlation. Just because 
+there is a weak negative correlation between these two variables does not 
+necessarily mean that your overall happiness decreases as the number of friends you 
+keep on Facebook goes up. This causation must be tested further, and, in later 
+chapters, we will attempt to do just that. 
+To sum up, we can use correlation to make hypotheses about the relationship 
+between variables, but we will need to use more sophisticated statistical methods 
+and machine learning algorithms to solidify these assumptions and hypotheses. 

@@ -1,0 +1,13 @@
+Manager has a subcomponent that exists on each processor. 
+When an application tries to access a page that’s not in memory, a page fault occurs, and the Memory 
+Manager automatically brings that page into memory. If the page is changed while in memory, the 
+Memory Manager writes the changed page back to the file when it is time to swap the page out of 
+memory. 
+Before allocating space, the Memory Manager examines the total free memory table. If the request 
+can be filled, the memory is allocated, and the table is modified to show the location of the allocated 
+space. 
+The Memory Manager also manages virtual memory. Specifically, it allocates and de-allocates virtual 
+memory, reads and writes to virtual memory, swaps virtual pages to disk, gets information about 
+virtual pages, locks virtual pages in memory, and protects the pages that need to be protected. 
+Pages are protected using hardware or low-level memory management software in each site’s kernel. 
+This protection is summoned as

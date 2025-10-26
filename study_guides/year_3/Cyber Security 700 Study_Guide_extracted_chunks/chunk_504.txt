@@ -1,0 +1,25 @@
+Scan for Vulnerabilities 
+In addition to monitoring vulnerability reporting services, enterprises need to regularly scan software, 
+systems, and networks for vulnerabilities and proactively address those that are found. The Center for 
+Internet Security (CIS) recommends the following scanning regimen [CIS18]: 
+
+ Run automated vulnerability scanning tools against all systems on the network on a weekly or 
+more frequent basis and deliver a prioritized lists of the most critical vulnerabilities to each 
+responsible system administrator, along with risk scores that compare the effectiveness of 
+system administrators and departments in reducing risk. Use a vulnerability scanner that looks 
+for both code-based vulnerabilities (such as those described by Common Vulnerabilities and 
+Exposures entries, described in Section 3.5) and configuration-based vulnerabilities (as 
+enumerated by the Common Configuration Enumeration Project, which is part of the NVDB). 
+ Perform vulnerability scanning in authenticated mode, either with agents running locally on 
+each end system to analyze the security configuration or with     remote scanners that are 
+given administrative rights on the system being tested. Use a dedicated account for 
+authenticated vulnerability scans; this account should not be used for any other 
+administrative activities, and it should be tied to specific machines at specific IP addresses. 
+Ensure that only authorized employees have access to the vulnerability management user 
+interface and that roles are applied to users individually.
+ Compare the results from back-to-back vulnerability scans to verify that vulnerabilities were 
+addressed, either by patching, implementing a compensating control, or documenting and 
+accepting a reasonable business risk. Periodically review business risks for existing 
+vulnerabilities to determine if newer compensating controls or subsequent patches can 
+address vulnerabilities that were previously accepted, or if conditions changed, increasing the 
+risk. 

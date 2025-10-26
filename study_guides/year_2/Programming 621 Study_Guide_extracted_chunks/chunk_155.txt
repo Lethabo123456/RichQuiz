@@ -1,0 +1,29 @@
+op:  
+row = 5; 
+ for (col = 0; col < NUMBER_OF_COLUMNS; col++)  
+          process matrix[row][col] 
+ 
+Initialization 
+Suppose that you want to initialize row number 4, that is, the fifth row, to 0. As 
+explained earlier, the following for loop does this: 
+row = 4;  
+for (col = 0; col < NUMBER_OF_COLUMNS; col++)  
+       matrix[row][col] = 0; 
+If you want to initialize the entire matrix to 0, you can also put the first index (that is, 
+the row position) in a loop. By using the following nested for loops, we can initialize 
+each component of matrix to 0:  
+for (row = 0; row < NUMBER_OF_ROWS; row++)  
+    for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+          matrix[row][col] = 0; 
+ 
+Print 
+ 
+By using a nested for loop, you can output the elements of matrix. The following nested 
+for loops print the elements of matrix, one row per line: 
+for (row = 0; row < NUMBER_OF_ROWS; row++)  
+{  
+    for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+
+147 | P a g e  
+ 
+          cout << setw(5) << ma

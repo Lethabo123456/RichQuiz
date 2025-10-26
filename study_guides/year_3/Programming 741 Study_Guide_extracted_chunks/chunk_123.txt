@@ -1,0 +1,42 @@
+3.8 Anonymous Class 
+ 
+In C#, an anonymous type is a type (class) without any name that can contain public read-only 
+properties only. It cannot contain other members, such as fields, methods, events, etc. 
+ 
+You create an anonymous type using the new operator with an object initializer syntax. The 
+implicitly typed variable- var is used to hold the reference of anonymous types. 
+ 
+The following example demonstrates creating an anonymous type variable student that 
+contains three properties named Id, FirstName, and LastName. 
+ 
+var student = new { Id = 1, FirstName = "James", LastName = "Bond" }; 
+ 
+The properties of anonymous types are read-only and cannot be initialized with a null, 
+anonymous function, or a pointer type. The properties can be accessed using dot (.) notation, 
+same as object properties. However, you cannot change the values of properties as they are 
+read-only. 
+ 
+An anonymous type will always be local to the method where it is defined. It cannot be 
+returned from the method. However, an anonymous type can be passed to the method as 
+object type parameter, but it is not recommended. If you need to pass it to another method, 
+then use struct or class instead of an anonymous type.
+
+Example 3.10 Creating an anonymous type 
+ 
+using System;  
+   
+public class Regsiter {  
+   
+    // Main method  
+    static public void Main()  
+    {  
+          // Creating and initializing anonymous object  
+        var anony_object = new {s_id = 109,  
+                                s_name = "Sohan",   
+                               language = "C#" };  
+          // Accessing the object properties  
+Console.WriteLine("Student id: " + anony_object.s_id);  
+Console.WriteLine("Student name: " + anony_object.s_name);  
+Console.WriteLine("Language: " + anony_object.language);  
+    }  
+}

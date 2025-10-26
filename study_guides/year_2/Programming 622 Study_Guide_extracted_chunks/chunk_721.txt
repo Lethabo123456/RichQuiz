@@ -1,0 +1,15 @@
+9.7  
+AVL (Height-Balanced) Trees  
+  
+
+354  
+  
+In the previous sections, you learned how to build and manipulate a binary search tree. The performance 
+of the search algorithm on a binary search tree depends on how the binary tree is built. The shape of the 
+binary search tree depends on the data set. If the data set is sorted, the binary search tree is linear and so 
+the search algorithm would not be efficient. On the other hand, if the tree is nicely built, the search would 
+be fast. In fact, the smaller the height of the tree, the faster the search. Therefore, we want the height of 
+the binary search tree to be as small as possible. This section describes a special type of binary search 
+tree, called the AVL tree (also called the height-balanced tree) in which the resulting binary search is nearly 
+balanced. AVL trees are due to the mathematicians G. M. Adel´sonVel´skii and E. M. Landis and are so 
+named in their honor. The methods of building such binary trees were given by

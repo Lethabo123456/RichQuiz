@@ -1,0 +1,59 @@
+odeType<Type> *current;    
+  
+//pointer to traverse the list  
+nodeType<Type> *trailCurrent;   
+  
+//pointer just before current  
+nodeType<Type> *newNode;   
+  
+bool found;  
+ 
+//pointer to create a node  
+newNode = new nodeType<Type>;    
+//create the node  
+newNode->info = insertItem;  
+newNode->next = NULL;  
+newNode->back = NULL;  
+ 
+  
+//store the new item in the node  
+if (first == NULL)   
+  
+  
+{  
+first = newNode; 
+last = newNode; 
+count++;  
+}  
+else  
+{ found = false; 
+current = 
+first;  
+  
+//if list is empty, newNode is the only node  
+  
+while (current != NULL && !found)  //search the list 
+if (current->info >= insertItem) found = true; 
+else  
+{ trailCurrent = current;  
+current = current->next;  
+}  
+if (current == first)   
+  
+  
+//insert newNode before first  
+{  
+}  
+else  
+first->back = newNode; 
+newNode->next = first; 
+first = newNode; count++;  
+{  
+ 
+  
+  
+  
+//insert newNode between trailCurrent and current 
+if (current != NULL)  
+{  
+trailCurrent->next = newN

@@ -1,0 +1,12 @@
+is to keep a count. In addition to the member variables 
+queueFront and queueRear, we need another variable, count, to implement the queue. The value of count 
+is incremented whenever a new element is added to the queue, and it is decremented whenever an 
+element is removed from the queue. In this case, the function initializeQueue initializes count to 0. This 
+solution is very useful if the user of the queue frequently needs to know the number of elements in the 
+queue.  
+  
+Another solution is to let queueFront indicate the index of the array position preceding the first element 
+of the queue, rather than the index of the (actual) first element itself. In this case, assuming queueRear 
+still indicates the index of the last element in the queue, the queue is empty if queueFront == queueRear. 
+In this solution, the slot indicated by the index queueFront (that is, the slot preceding the first true 
+element) is reserved. The queue will be full if the next available space is the special

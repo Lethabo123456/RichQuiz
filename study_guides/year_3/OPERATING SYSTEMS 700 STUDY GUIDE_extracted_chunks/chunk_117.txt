@@ -1,0 +1,30 @@
+3. Deadlock Detection and Recovery 
+ 
+This approach allows deadlocks to occur but includes mechanisms to detect and recover from 
+them. 
+➢ Detection: Periodically check the system state for deadlocks using algorithms to detect cycles 
+in the resource allocation graph. Detect unsafe states by comparing requested resources with 
+available ones. 
+➢ Recovery: Abort one or more processes to break the circular wait. Abort all deadlocked 
+processes or Abort one process at a time until the deadlock is resolved. 
+➢ Pre-empt Resources: Forcefully take resources from one process and allocate them to another.
+
+4. Ignoring Deadlocks 
+ 
+In some systems (e.g., UNIX or Windows), the "ostrich algorithm" is used, where deadlocks are 
+ignored under the assumption that they occur infrequently. 
+ 
+3.7.4 Starvation 
+Another system failure is starvation, the result of the conservative allocation of resources, where a 
+single job is prevented from completing its execution because it is waiting for resources that never 
+become available. 
+
+If the resource manager does not watch for starving processes and jobs, and plan for their eventual 
+completion, they could remain in the system forever waiting for the right combination of resources. 
+To address this problem, an algorithm designed to detect starving jobs can be implemented, which 
+tracks how long each job has been waiting for resources (this is the same as aging, described in 
+Chapter 4). Once starvation has been detected, the system can block incoming requests from other 
+jobs until the starving jobs have been satisfied. To promote system efficiency, this algorithm must 
+be monitored closely: if monitoring is done too often, then new jobs will be blocked too frequently, 
+and throughput will be diminished. If it is not done often enough, then starving jobs will remain in 
+the system for an unacceptably long period of time.

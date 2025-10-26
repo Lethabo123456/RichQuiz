@@ -1,0 +1,19 @@
+circumference = M_PI * $diameter; $area = M_PI * 
+pow( $radius, 2 ); echo “This circle has... < br / > ”; echo 
+“A radius of “ . $radius . “ < br / > ”; echo “A diameter of 
+“ . $diameter . “ < br / > ”; echo “A circumference of “ . 
+$circumference . “ < br / > ”; echo “An area of “ . $area . 
+“ < br / > ”; ? >  
+  
+When you run the script, you should see something like Figure 2.1.  
+  
+  
+Figure 2.1  
+  
+First, the script stores the radius of the circle to test in a $radius variable. Then it calculates the 
+diameter — twice the radius — and stores it in a $diameter variable. Next it works out the circle’s 
+circumference, which is π (pi) times the diameter, and stores the result in a $circumference variable. 
+It uses the built-in PHP constant, M_PI , which stores the value of π .  
+  
+Then the script calculates the circle’s area, which is π times the radius squared, and stores it in an 
+$area variable. To get the value of the radius squared, the script uses the built-in pow() function,

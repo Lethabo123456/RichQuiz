@@ -1,0 +1,20 @@
+The html selector in this code selects the entire HTML document so that any part of the browser 
+window background that is not within the page body will be displayed using the HSL color (27, 
+72%, 72%). Within the page body, Alison wants the h1 and h2 headings to be displayed in white 
+text on dark and lighter orange colors using the RGB color values (222, 128, 60) and (235, 177, 
+131) respectively. The style rules are 
+ 
+Adding text and background colors 
+ 
+Working with Fonts 
+
+Typography is the art of designing the appearance of characters and letters on a page. So far, 
+the only typographic style you’ve used is the color property to set the text color. For the rest 
+of this session, you’ll explore other properties in the CSS family of typographical styles, 
+starting with choosing the text font. 
+ 
+Choosing a Font 
+Text characters are based on fonts that define the style and appearance of each character in 
+the alphabet. The default font used by most browsers for displaying text is Times New 
+Roman, but you can specify a different font for any page element using the following font-
+family property 

@@ -1,0 +1,35 @@
+of the edges.  
+// edges is an array to store the edges of a minimum // 
+spanning tree.  
+// edgeWeights is an array to store the weights of the // 
+edges of a minimum spanning tree.  
+  
+~msTreeType();  
+//Destructor  
+//The storage occupied by the vertices and the arrays //weights, 
+edges, and edgeWeights is deallocated.  
+  
+protected:  
+int source; double 
+**weights; int 
+*edges;  
+double *edgeWeights;  
+};  
+  
+We leave the UML class diagram of the class msTreeType and the inheritance hierarchy as an exercise. 
+The definition of the function createSpanningGraph is also left as an exercise for you. This function creates 
+the graph and the weight matrix associated with the graph.  
+  
+The following C++ function, minimumSpanning, implements Prim’s algorithm, as described previously:  
+  
+void msTreeType::minimumSpanning(int sVertex)  
+{  
+int startVertex, endVertex;  
+double minWeight;  
+  
+source = sVertex;  
+  
+bool *mstv;  
+mstv = new bool[gSize];  
+  
+for (int j = 0; j < gSize;

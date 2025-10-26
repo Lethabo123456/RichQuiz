@@ -1,0 +1,20 @@
+2.7 Predefined Methods 
+A key feature of the .NET Framework is the extensive class library. Within the library of classes, 
+each class has a number of predefined methods. The WriteLine( ) method is a predefined 
+member method of the Console class. These .NET methods have been thoroughly tested by 
+the .NET developers and provide a great deal of functionality. Avoid making work for yourself 
+by using predefined methods whenever possible. 
+ 
+In the programs you have already seen and developed, the using directive made the System 
+namespace available and the using static System.Console; reference enabled you to call static 
+members of the Console class without having to first type the class name The Console class 
+WriteLine("Value1({0}) + Value2({1})" + 
+" = Value3({2})", 25, 75, (25 + 75)); 
+Output from the last call to the WriteLine( ) method would be 
+Value1(25) + Value2(75) = Value3(100) 
+ 
+provides methods for reading characters from, and writing characters to the console. There 
+are methods for working with individual characters or entire lines of characters. The methods 
+you have used most often are Write( ) and WriteLine( ). They are both overloaded methods, 
+which means that there are multiple methods with the same name, but each has a different 
+number or type of parameter.

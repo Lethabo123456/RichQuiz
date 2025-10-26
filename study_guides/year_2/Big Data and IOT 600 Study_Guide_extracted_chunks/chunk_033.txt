@@ -1,0 +1,38 @@
+Hadoop has two major layers and two other supporting modules, with five building blocks 
+inside the Hadoop Architecture. Each of these building blocks is briefly explained below: 
+Hadoop Common is a collection of Java libraries and utilities that are required by/common 
+for other Hadoop modules, which contain all the necessary Java files and scripts required to 
+start Hadoop.  
+Hadoop Yet Another Resource Navigator (YARN) framework is a Resource Manager basically 
+used for job scheduling and efficient cluster resource management It takes the responsibility 
+of providing the computational resource (e.g., CPU storage memory devices, etc.) required 
+for application executions. 
+Hadoop Distributed File System (HDFS™) is suitable for applications having large data sets 
+because it is designed to be deployed on low-cost hardware. HDFS is responsible for providing 
+permanent, reliable and distributed storage, with unrestricted, high-speed access to the data 
+application. This is typically used for storing Inputs & Outputs. 
+Hadoop MapReduce framework is the core and integral part of the Hadoop architecture. It 
+efficiently handles large volume datasets by breaking them into multiple datasets and 
+assigning them to a cluster of computers to work parallel at same time. 
+Storage for big data is designed to collect voluminous data produced at variable speeds by 
+multiple sources and in varied formats. Industry experts describe this process as the three Vs: 
+the variety, velocity and volume of data. 
+Variety describes the different sources and types of data to be mined. Sources include audio 
+files, documents, email, file storage, images, log data, social media posts, streaming video and 
+user clickstreams. 
+Velocity pertains to the speed at which storage is able to ingest big data volumes and run 
+analytic operations against it. Volume acknowledges that modern applications scripts are 
+large and growing larger, outstripping the storage capabilities of existing legacy storage. 
+The key requirements of big data storage are that it can handle large volumes of data and 
+keep scaling to keep up with growth, so that it can provide the input/output operations per 
+second (IOPS) necessary to deliver data to analytics tools. 
+The largest big data practitioners such as Google, Facebook, and Apple, run what are known 
+as hyper scale computing environments. 
+These comprise vast amounts of commodity servers with direct-attached storage (DAS). 
+Redundancy is at the level of the entire compute/storage unit, and if a unit suffers an outage 
+of any component it is replaced wholesale, having already failed over to its mirror. 
+Statistical big data analysis and modelling is gaining adoption in a cross-section of industries, 
+including aerospace, environmental science, energy exploration, financial markets, genomics, 
+healthcare and retailing. A big data platform is built for much greater scale, speed and 
+performance than traditional enterprise storage. Also, in most cases, big data storage targets 
+a much more limited set of workloads on which it operates. 

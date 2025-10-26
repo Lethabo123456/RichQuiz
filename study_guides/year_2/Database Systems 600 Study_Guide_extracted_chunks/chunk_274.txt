@@ -1,0 +1,29 @@
+yntax for the EXCEPT statement in MS SQL 
+Server and the MINUS statement in Oracle is:  
+query EXCEPT query  
+and  
+query MINUS query  
+For example, if the SaleCo managers want to know which customers in the CUSTOMER table are 
+not found in the CUSTOMER_2 table, they can use the following command in Oracle (see Figure 
+7.62).  
+
+ 
+111 
+SELECT  CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE 
+FROM  
+CUSTOMER 
+MINUS  
+SELECT  CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE 
+FROM  
+CUSTOMER_2; 
+Users of MS SQL Server would substitute the keyword EXCEPT in place of MINUS, but 
+otherwise the syntax is the same. You can extract useful information by combining MINUS with 
+various clauses such as WHERE. 
+ 
+ 
+4.2  Advanced SQL 
+ 
+Data Definition Commands 
+The same simple database composed of CUSTOMER, INVOICE, LINE, PRODUCT, and 
+VENDOR tables that was used in the previous sections of this chapter is used as a starting point for 
+illustrating the SQL commands in this secti

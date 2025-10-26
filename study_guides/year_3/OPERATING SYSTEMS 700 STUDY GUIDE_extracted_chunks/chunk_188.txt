@@ -1,0 +1,47 @@
+
+6.2. Network Types 
+It is often useful to group networks according to the physical distances they cover. Networks are 
+generally divided into local area networks, metropolitan area networks, and wide area networks. 
+However, as communications technology advances, the characteristics that define each group are 
+blurring. In recent years, the wireless local area network has become ubiquitous. 
+ 
+Personal Area Network 
+ 
+A personal area network (PAN) includes information technology that operates within a radius of 
+approximately 10 meters of an individual and is centered around that one person. Also called body 
+area networks (BANs), PANs include networks for wearable technology (gloves, caps, monitors, and 
+so on) that use the natural connectivity of the human body to communicate. These small networks 
+can usually connect to a bigger network. 
+ 
+Local Area Network 
+ 
+A local area network (LAN) defines a configuration that includes multiple users found within a single 
+office building, warehouse, campus, or similar computing environment. Such a network is generally 
+owned, used, and operated by a single organization, and allows computers to communicate directly 
+through a common communication line. Typically, it is a cluster of personal computers or 
+workstations located in the same general area. Although a LAN is usually confined to a well-defined 
+local area, its communications are not limited to that area because the LAN can be a component of a 
+larger communication network and can allow users to have easy access to other networks through a 
+bridge or a gateway. 
+A bridge is a device that is software operated that connects two or more local area networks that use 
+the same protocols. For example, a simple bridge could be used to connect two local area networks 
+using Ethernet networking technology. 
+A gateway, on the other hand, is a more complex device and software that connects two or more 
+local area networks or systems using different protocols. A gateway translates one network’s protocol 
+into another, resolving hardware and software incompatibility. For example, the systems network 
+architecture (commonly called SNA) gateway can connect a microcomputer network to a mainframe 
+host. 
+
+Figure 6.8 
+  
+Figure 6.8 shows a primary LAN using a bridge to link several computers, printers, a scanner, and 
+another LAN together. 
+ 
+High-speed LANs have a data rate that varies from 100 megabits per second to more than 40 gigabits 
+per second. Because the sites are close to each other, bandwidths are available to support very high- 
+speed transmissions for fully animated, full-color graphics and video, digital voice transmissions; and 
+other high data-rate signals. The previously described topologies, star, ring, bus, tree, and hybrid 
+are normally used to construct local area networks. The transmission medium used may vary 
+from one topology to another. Factors to be considered when selecting a transmission medium 
+are cost, data rate, reliability, number of devices that can be supported, distance between units, and 
+technical limitations. 

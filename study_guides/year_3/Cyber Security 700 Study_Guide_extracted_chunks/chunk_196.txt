@@ -1,0 +1,17 @@
+The temporal metric group represents the characteristics of a vulnerability that change over time but 
+not among user environments. It consists of three metrics. In each case, the value “not defined” 
+indicates that this metric should be skipped in the scoring equation. 
+
+ Exploit code maturity: This metric measures the current state of exploit techniques or code 
+availability. Public availability of easy-to-use exploit code increases the number of potential 
+attackers by including those who are unskilled, thereby increasing the severity of the 
+vulnerability. The levels reflect the degree to which the exploit is available and usable for 
+exploiting the vulnerability. 
+ Remediation level: Measures the degree to which remediation is available. 
+ Report confidence: Measures the degree of confidence in the existence of the vulnerability 
+and the credibility of the known technical details. 
+
+The environmental metric group captures the characteristics of a vulnerability that are associated with 
+a user’s IT environment. It enables the analyst to customize the CVSS score depending on the 
+importance of the affected IT asset to a user’s organization, measured in terms of confidentiality, 
+integrity, and availability. 

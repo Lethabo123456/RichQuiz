@@ -1,0 +1,33 @@
+Chapter 4:  Creating a User Interface with Views 
+ 
+4.1 Introduction 
+This chapter will introduce the various views that can be used to design the user interface of your 
+applications in Android.  There are quite a few was to create the user interface; we will only focus on 
+the basic views used in day-to-day applications. Other views will be covered in subsequent chapters. 
+ 
+4.2 Using Basic Views 
+Some basic views that can be used to design the UI of your Android application(s) are: 
+ 
+• TextView 
+• EditText 
+• Button 
+• ImageButton 
+• CheckBox 
+• ToggleButton 
+• RadioButton 
+• RadioGroup 
+ 
+TextView View 
+When you create a new Android project, Eclipse always creates the main.xml fi le (located in the 
+res/layout folder), which contains a <TextView> element: 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+ 
+<LinearLayout xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:layout_width=“fill_parent” 
+android:layout_height=“fill_parent” 
+android:orientation=“vertical” > 
+<TextView 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“@string/hello” /> 

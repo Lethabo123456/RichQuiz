@@ -1,0 +1,22 @@
+This is necessary since main( ) is called by the Java interpreter before any objects are made 
+The keyword void simply tells the compiler that main( ) does not return a value. As you will see, 
+methods may also return values. If all this seems a bit confusing, don’t worry. All of these concepts 
+will be discussed in detail in subsequent chapters. As stated, main( ) is the method called when a 
+Java application begins. Keep in mind that Java is case-sensitive.  
+
+Thus, Main is different from main. It is important to understand that the Java compiler will compile 
+classes that do not contain a main() method. But the Java interpreter has no way to run these 
+classes. So, if you had typed Main instead of main, the compiler would still compile your program. 
+However, the Java interpreter would report an error because it would be unable to find the main( ) 
+method. Any information that you need to pass to a method is received by variables specified within 
+the set of parentheses that follow the name of the method.  
+ 
+These variables are called parameters. If there are no parameters required for a given method, you 
+still need to include the empty parentheses. In main(), there is only one parameter, albeit a 
+complicated one. String args[] declares a parameter named args, which is an array of instances of 
+the class String. (Arrays are collections of similar objects.) Objects of type String store character 
+strings. In this case, args receives any command-line arguments present when the program is 
+executed. This program does not make use of this information, but other programs shown later in   
+this book will. The last character on the line is the {. This signals the start of main( )’s body. All of the 
+code that comprises a method will occur between the method’s opening curly brace and its closing 
+curly brace.

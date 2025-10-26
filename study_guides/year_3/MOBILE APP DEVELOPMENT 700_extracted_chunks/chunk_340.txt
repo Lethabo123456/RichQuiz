@@ -1,0 +1,63 @@
+Create the Layout 
+A complex list relies on the ListView widget and also requires a custom list item layout. The list item 
+layout is a layout like any other layout.  However, it is  organized  so that it displays  important 
+information from one of the items in the underlying data source. It typically contains significantly 
+fewer widgets than an activity’s layout and is organized in a rowlike manner. There are several steps 
+you need to take to create the list item layout for this chapter. 
+  
+1. Add some colors to the color.xml value file. Use #ff0000 as the value for the color named 
+system_red, #00000000 as the value for the color named system_transparent, and #0000ff for 
+the color named system_blue. Close the file. 
+2. Open the dimens.xml value file or create it by right-clicking on the values folder and selecting 
+New > XML > Values XML file. You will need some new dimensions to set the TextView size. The 
+following are the recommended sizes and names to add between the start and stop resource 
+tags: 
+<dimen name="text_size_small">14sp</dimen> 
+<dimen name="text_size_medium">18sp</dimen> 
+<dimen name="text_size_large">22sp</dimen> 
+3. Create a new XML layout file by right-clicking the layout folder in the Project window and 
+selecting New > XML > Layout resource file. Give the file the name list_item and change the Root 
+element to ConstraintLayout. Make no other changes and click OK. 
+4. In Design view of the new layout, drag a TextView to the layout using the Attributes panel to 
+configure it as follows: 
+Id: textContactName 
+Left Constraint to parent: margin 16dp 
+Top Constraint to parent: margin 8dp 
+textColor: use the ellipse to the right of the attribute to open the Resources window and select 
+system_blue 
+textSize: use the ellipse to open the Resources window and select text_size_large 
+5. Drag another TextView to the layout using the Attributes panel to configure it as follows: 
+Id: textPhoneNumber 
+Left Constraint to parent, margin 16dp 
+Top Constraint to textContactName, margin 8dp 
+Bottom Constraint to parent, margin 8dp 
+textSize: use the ellipse to open the Resources window and select text_size_medium 
+6. Drag a button to the layout using the Attributes panel to configure it as follows: 
+Id: buttonDeleteContact 
+Right Constraint to parent, margin 16dp 
+Top Constraint to parent, margin 8dp 
+Bottom Constraint to parent, margin 8dp (Note: This will make the layout look strange but will 
+be fixed shortly.) 
+text: DELETE 
+textColor: system_red 
+background: system_transparent textSize: use the ellipse to open the Resources window and select text_size_large 
+5. Drag another TextView to the layout using the Attributes panel to configure it as follows: 
+Id: textPhoneNumber 
+Left Constraint to parent, margin 16dp 
+Top Constraint to textContactName, margin 8dp 
+Bottom Constraint to parent, margin 8dp 
+textSize: use the ellipse to open the Resources window and select text_size_medium 
+6. Drag a button to the layout using the Attributes panel to configure it as follows: 
+Id: buttonDeleteContact 
+Right Constraint to parent, margin 16dp 
+Top Constraint to parent, margin 8dp 
+Bottom Constraint to parent, margin 8dp (Note: This will make the layout look strange but will 
+be fixed shortly.) 
+text: DELETE 
+textColor: system_red 
+background: system_transparent 
+7. Click on the ConstraintLayout in the Component Tree. Use the Attributes 
+panel to change layout_height to wrap_content. Your layout should look 
+similar to Figure 6.3. 
+Change the button’s visibility attribute value to invisible. You will no longer see 
+it in the layout. We will manipulate the visibility of the button in the code presented later in the chapter. 

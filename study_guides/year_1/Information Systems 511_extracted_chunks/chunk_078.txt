@@ -1,0 +1,28 @@
+ut the instruction. The arithmetic logic unit (ALU) performs arithmetic, comparison, and 
+other operations.  Arithmetic operations includes basic calculations such as addition, subtraction, 
+multiplication, and division. Comparison operation involve comparing one data item with another 
+to determine whether the first item is greater than, equals to or less than the other item. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+  
+3.3.2.2 Machine Cycle 
+For every instruction, a processor repeats a set of four basic operations, which comprise a machine 
+cycle. 
+ 
+Fig 3.17 
+ Fetching is the process of obtaining a program or application instruction or data item from 
+memory 
+ Decoding refers to the process of translating the instruction into signals the computer can 
+execute 
+ Executing is the process of carrying out the commands 
+ Storing, in this context, means writing the results to memory(not on storage medium) 
+The processor contains small, high speed storage locations, called registers, that temporarly hold

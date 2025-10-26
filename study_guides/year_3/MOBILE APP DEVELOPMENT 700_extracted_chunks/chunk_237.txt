@@ -1,0 +1,31 @@
+Create the Data Source Class 
+Create a new class named ContactDataSource. Enter the code in Listing 5.4, being sure to import 
+any objects underlined in red. Two options will display for SQLException. Pick the java.sql version. 
+The required methods are quite limited and fairly self-explanatory. 
+
+▪ Lines 3–4—Variables are declared to hold instances of the SQLite database and the helper 
+class. You will get a warning on the SQLiteDatabase line because you don’t use it yet. 
+▪ Lines 6–8—The helper class is instantiated when the data source class is instantiated. 
+▪ Lines 10–16—Open and close methods are used to access and end access to the database. 
+ 
+The rest of the code in this class is dependent on 
+the needs of the app. In the case of the MyContactsList app, the MainActivity needs to be able to 
+insert new contacts and update data for existing contacts. This is supported by creating a method 
+for each operation. The data for insertion or for updating a contact is passed to these methods in a 
+Contact object. 
+The Contact class does not exist, so the first task is to create that class. Create another new class in 
+the src folder named Contact. Enter the code in Listing 5.5 to create the Contact object. The 
+MainActivity uses objects of this class to store data entered by the user and pass it to the data source 
+class. 
+You can get significant help in creating this class from Android Studio. Once you have entered all the 
+private instance variables, select Code > Generate > Constructor. Choose None, since this 
+constructor takes no arguments. Then type the two lines that initialize the constructor. Next, select 
+Code > Generate > Getters and Setters. Choose all the fields and click OK. 
+ 
+The Contact class is a very simple class. It declares variables for each piece of data needed for a 
+contact and declares a method to set the value of the variable and a method to get the value of the 
+variable (getters and setter). The only real important code is in the class constructor method. Notice 
+that in this method the contact’s ID is set to –1 by default. This is used by the app to determine if 
+the contact is new and needs to be inserted or the contact already exists and needs to be updated. 
+The birthday variable is also initialized to the current date. This allows the app to assume that there 
+will always be a Calendar value in the birthday variable.

@@ -1,0 +1,43 @@
+// 
+Demonstrate 
+throw. 
+class ThrowDemo {  
+static void demoproc()   
+   
+{ try {   
+throw new NullPointerException("demo"); }  
+catch(NullPointerException e) {   
+System.out.println("Caught 
+inside 
+demoproc.");  throw e; // rethrow the exception   
+}   
+   
+}   
+public static void main(String args[])   
+{ try {   
+   
+demoproc();   
+} catch(NullPointerException e) {   
+   
+System.out.println("Recaught: " + e);   
+}   
+}   
+}   
+     
+This program gets two chances to deal with the same error. First, main() sets up an exception context 
+and then calls demoproc( ). The demoproc( ) method then sets up another exception-handling 
+context and immediately throws a new instance of   
+NullPointerException, which is caught on the next line. The exception is then rethrown.   
+Here is the resulting output:   
+Caught inside demoproc.   
+
+Recaught: java.lang.NullPointerException: demo   
+ 
+The program also illustrates how to create one of Java’s standard exception objects.   Pay close 
+attention to this line:throw new NullPointerException("demo");Here, new is used to construct an 
+instance of NullPointerException. All of Java’s built-in run-time exceptions have at least two 
+constructors: one with no parameter and one that takes a string parameter. When the second form 
+is used, the argument specifies a string that describes the exception. This string is displayed when 
+the object is used as an argument to print( ) or println( ). It can also be obtained by a call to 
+getMessage( ), which is defined by Throwable.  
+ 

@@ -1,0 +1,13 @@
+e Chen ERM, multivalued attributes are 
+shown by a double line connecting the attribute to the entity. The Crow’s Foot notation does not 
+identify multivalued attributes.  
+Implementing Multivalued Attributes Although the conceptual model can handle M:N 
+relationships and multivalued attributes, you should not implement them in the RDBMS. 
+Remember that in the relational table, each column and row intersection represents a single data 
+value. So, if multivalued attributes exist, the designer must decide on one of two possible actions:  
+1. Within the original entity, create several new attributes, one for each component of the original 
+multivalued attribute. Although this solution seems to work, its adoption can lead to major 
+structural problems in the table and it is not always acceptable.  
+2. Create a new entity composed of the original multivalued attribute’s components. This is the 
+preferred way to deal with multivalued attributes. Creating a new entity in a 1:M relationship 
+w

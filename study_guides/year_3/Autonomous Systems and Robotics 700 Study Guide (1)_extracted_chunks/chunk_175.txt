@@ -1,0 +1,27 @@
+4.4 Kinematic and Dynamic Models  
+4.4.1 Kinematics Models 
+Kinematics is the description of the motion of points, bodies, and systems of bodies. It only 
+describes how things are moving, but not why. To describe the kinematics of a moving point, we 
+will refer to position vectors, which are generically defined in R3, and their derivatives.  
+Kinematic Models: These models describe the geometry of robot movement without considering 
+the forces and torques that cause the movement. They are essential for answering questions like: 
+"If my robot's joints are at these angles, where is its end-effector?". 
+Forward Kinematics: Calculates the position and orientation of the end-effector (e.g., a robotic 
+arm's gripper) given the joint angles. This is often solved using transformation matrices and 
+methods like the Denavit-Hartenberg (DH) convention. 
+
+Inverse Kinematics: Calculates the required joint angles to achieve a desired position and 
+orientation of the end-effector. This is often more complex and may have multiple solutions or no 
+solution at all.
+
+4.4.2 Dynamic Models  
+These models describe the relationship between the forces and torques acting on the robot and 
+its resulting motion. They are crucial for designing controllers that can handle inertia, gravity, and 
+other external forces. 
+Lagrange-Euler Formulation: A common method for deriving the equations of motion for a robot, 
+which relates the robot's kinetic and potential energy to the applied forces and torques. 
+Newton-Euler Formulation: Another method that applies Newton's second law and the principle 
+of conservation of angular momentum to each link of the robot. 
+Using a physics engine is essential for simulating dynamic models. Libraries and frameworks like 
+PyBullet, Mujoco, and Gazebo provide robust physics simulation, collision detection, and sensor 
+modelling, allowing you to test controllers in a realistic virtual environment.

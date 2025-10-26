@@ -1,0 +1,35 @@
+quartile. The following is a series of box plots showing the distribution of beer consumption 
+according to continents:  
+
+P a g e  | 131 
+ 
+  
+drinks.boxplot(column='beer_servings', by='continent') 
+  
+ 
+       
+ 
+ 
+ 
+ 
+Now, we can clearly see the distribution of beer consumption across the seven continents 
+and how they differ. Africa and Asia have a much lower median of beer consumption than 
+Europe or North America. Box plots also have the bonus of being able to show outliers much 
+better than a histogram. This is because the minimum and maximum are parts of the box plot. 
+Getting back to the customer data, let's look at the same store customer numbers, but using 
+a box plot:  
+    first_rossmann_sales.boxplot(column='Customers', vert=False) 
+ 
+ 
+
+P a g e  | 132 
+ 
+           
+ 
+This is the exact same data as plotted earlier in the histogram; however, now it is shown as a 
+box plot. For comparison, both graphs are presented one after the other: 
+  
+                       
+ 
+
+P a

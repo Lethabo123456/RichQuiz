@@ -1,0 +1,16 @@
+ulting graph, V(T), E(T), and N. (The dotted lines 
+show the edges in T.)  
+  
+At the next iteration, Step 3 checks the following edges: (1,4), (2,5), and (3,4). The weight of the edge (1,4) 
+is 2, the weight of the edge (2,5) is 7, and the weight of the edge (3,4) is 8. Clearly, the edge (1,4) has the 
+smallest weight. Therefore, vertex 4 is added to V(T) and the edge (1,4) is added to E(T). Figure 10-17(f ) 
+shows the resulting graph, V(T), E(T), and N. (The dotted lines show the edges in T.)  
+  
+At the next iteration, Step 3 checks the following edges: (2,5) and (4,5). The weight of the edge (2,5) is 7 
+and the weight of the edge (4,5) is 10. Clearly, the edge (2,5) has the smallest weight. Therefore, vertex 5 
+is added to V(T) and the edge (2,5) is added to E(T). Figure 10-17(g) shows the resulting graph, V(T), E(T), 
+and N. (The dotted lines show the edges in T.)  
+  
+In Figure 10-17(g), the dotted lines show a minimum spanning tree of G of weight 25.  
+  
+Before we give the defi

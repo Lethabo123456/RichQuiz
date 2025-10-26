@@ -1,0 +1,60 @@
+a browser when the following PHP code is executed: 
+<?php 
+ 
+   $counter = 1; 
+ 
+   while ($counter <= 5) { 
+ 
+       $counter++; 
+ 
+   } 
+ 
+   echo "Counter is: $counter"; 
+ 
+?> 
+A. Counter is: 1 
+B. Counter is: 5 
+C. Counter is: 4 
+D. Counter is: 6 
+ANS: D 
+94. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $counter = 6; 
+ 
+   while ($counter != 3) { 
+ 
+       echo "Hello World | "; 
+ 
+       $counter--; 
+ 
+   } 
+ 
+?> 
+ 
+
+IP 621  
+A. Hello World | Hello World | 
+B. Hello World | Hello World | Hello World | 
+C. Hello World | Hello World | Hello World | Hello World | 
+D. None of the above 
+ANS: B 
+ 
+95. What will be displayed in a browser when the following PHP code is executed: 
+<?php 
+ 
+   $counter = 3; 
+ 
+   while ($counter != 3) { 
+ 
+       echo "Hello World | "; 
+ 
+       $counter--; 
+ 
+   } ?> 
+ 
+ 
+A. Hello World | Hello World 
+B. Hello World | Hello World | Hello World 
+C. Hello World | Hello World | Hello World | Hello World 
+D. None

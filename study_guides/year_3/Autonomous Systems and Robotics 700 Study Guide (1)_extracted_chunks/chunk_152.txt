@@ -1,0 +1,44 @@
+4.3.1 Proportional Control (P) 
+This element takes some proportion of the current error value. The proportion is specified by a 
+constant called the gain value, and a proportional response is represented by the letters Kp. As 
+an example, Kp may be set to 0.25, which will compute a value of 25% of the error value. This is 
+used to compute the corrective response to the process. Since it requires an error to generate 
+the proportional response, there is no proportional part of the corrective response if there is no 
+error. For example, when controlling a drone autonomously, increasing the P gain Kp typically 
+
+leads to shorter rise time (i.e. the drone reaches the required altitude quickly) and larger 
+overshoots. Although it can decrease the system’s settling time, it can also lead the drone to 
+display highly oscillatory or unstable behaviour (Fig 4.3). 
+ 
+Fig. 4.3 An example showing the effects of increasing Kp—shorter rise time but oscillatory 
+behaviour increases. (No Integral and Derivative control)
+
+4.3.2 Derivative Control (D) 
+The derivative term is used to estimate the future trends of the error based on its current rate of 
+change. It is used to add a dampening effect to the system such that the quicker the change rate, 
+the greater the controlling or dampening effect. In that sense, increasing the D gain Kd typically 
+leads to smaller overshoot and a better-damped behaviour. However, increasing Kd could lead to 
+larger steady-state errors (Fig. 4.4). 
+
+4.3.3 Integral Control (I) 
+Element I takes all past error values and integrates them over time. The term integrates simply 
+means to accumulate or add up. This results in the integral term growing until the error goes to 
+zero. When the error is eliminated, the integral term will stop growing. If an error still exists after 
+the application of proportional control, the integral term tries to eliminate the error by adding in 
+
+its accumulated error value. This will result in the proportional effect diminishing as the error 
+decreases, and the growing integral effect compensates for this. Increasing the I gain Ki leads to 
+a reduction in the steady-state error (often elimination) but also could lead to larger oscillations 
+(Fig.4.5).
+
+Fig. 4.4 An example showing the effects of increasing Kd with a constant Kp (No Integral control) 
+ 
+Another issue to be mindful of when using the integral term in a controller refers to Integral 
+windup. This is common in most physical systems (nonlinear systems), where a significant change 
+in the setpoint (either positive or negative) results in the integral term accumulating significant 
+errors that cannot be offset by errors in the opposite direction leading to a loss of control. 
+Researchers have developed several anti-windup techniques over the years to counter the 
+phenomenon. One common technique is setting boundaries for the integral term depending on 
+the known system limitations, such as actuator operational range.
+
+Fig. 4.5  An example showing the effects of increasing Ki with a constant Kp and Kd 

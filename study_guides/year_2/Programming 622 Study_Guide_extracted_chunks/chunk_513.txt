@@ -1,0 +1,19 @@
+in this 
+chapter. Also, suppose that the size of the array implementing queue is 100. If the value of queueFront is 
+50, what is the position of the first queue element?  
+  
+11. 
+Suppose that queue is implemented as an array with the special reserved slot, as described in this 
+chapter. Suppose that the size of the array implementing queue is 100. Also, suppose that the value of 
+queueFront is 74 and the value of queueRear is 99.  
+a. What are the values of queueFront and queueRear after adding an element to queue?  
+b. What are the values of queueFront and queueRear after removing an element from queue? Also, what 
+is the position of the removed queue element?  
+  
+12. Write a function template, reverseQueue, that takes as a parameter a queue object and uses a stack 
+object to reverse the elements of the queue.  
+  
+13. Add the operation queueCount to the class queueType (the array implementation of queues), which 
+returns the number of elements in the queue.  
+  
+Write the definitio

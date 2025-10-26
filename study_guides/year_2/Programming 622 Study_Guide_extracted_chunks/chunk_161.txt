@@ -1,0 +1,21 @@
+er. We review them here for the sake of completeness.  
+  
+The class ostream_iterator contains the definition of an output stream iterator. The general syntax to use 
+an ostream iterator is as follows:  
+  
+ostream_iterator<Type> osIdentifier(ostream&);  
+or ostream_iterator<Type> osIdentifier(ostream&, char* deLimit);  
+  
+where Type is either a built-in type or a user-defined class type, for which an output iterator is defined. 
+The identifier osIdentifier is initialized using the constructor whose argument is either an ostream class 
+object such as cout, or any publicly defined ostream subtype, such as ofstream. In the second form used 
+for declaring an ostream iterator, by using the second argument (deLimit) of the initializing constructor, 
+we can specify a character separating the output.  
+Key Terms  
+
+78  
+  
+  
+1. The STL provides class templates that process lists, stacks, and queues.  
+2. The three main components of the STL are containers, iterators, and algorithms.  
+3. ST

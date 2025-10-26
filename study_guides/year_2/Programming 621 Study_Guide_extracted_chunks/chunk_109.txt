@@ -1,0 +1,22 @@
+ined, is similar to that 
+of a function in algebra. For example, every function has a name and, depending on 
+the values specified by the user, it does some computation. 
+Some of the predefined mathematical functions are pow(x, y), sqrt(x), and floor(x). 
+ 
+In C++, predefined functions are organized into separate libraries. For example, the 
+header file iostream contains I/O functions, and the header file cmath contains math 
+functions. Table below lists some of the commonly used predefined functions, the 
+name of the header file in which each function’s specification can be found, the data 
+type of the parameters, and the function type. The function type is the data type of the 
+value returned by the function. 
+ 
+
+91 | P a g e  
+ 
+ 
+ 
+The square root function, sqrt(x), calculates the nonnegative square root of x for x >= 
+0.0. For example, sqrt(2.25) is 1.5. The function sqrt is of type double and has only 
+one parameter. 
+ 
+The floor function, floor(x), calculates the largest whole n

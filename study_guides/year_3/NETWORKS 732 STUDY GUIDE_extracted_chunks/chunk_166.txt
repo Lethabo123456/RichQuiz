@@ -1,0 +1,26 @@
+3.10.2 Network Hardening 
+Firewalls are tools that you can implement to prevent any unauthorized users roaming around on 
+public networks from gaining access to your private network. Firewalls can be either stand-alone 
+devices or combined with another hardware device, like a server or a router. When developing 
+rules for ﬁrewalls, there are two basic approaches, namely explicit deny and implicit deny. Under 
+explicit deny, all traﬃc is allowed unless it is specially (explicitly) denied with a rule. This is also 
+referred to as blacklisting in that you are creating a blacklist of denied traﬃc. The implicit deny 
+denies all traﬃc unless it is speciﬁcally or implicitly allowed by a rule. This is also called 
+whitelisting, in that you are creating a whitelist of allowed traﬃc. 
+
+3.10.3 Wireless Security 
+Wireless networks are naturally exposed to various threats because their signals travel through 
+the air, but using layered techniques can signiﬁcantly reduce these risks. MAC ﬁltering helps limit 
+which devices can connect, while antenna placement and power level adjustments control how 
+far the wireless signal reaches. Wireless client isolation ensures they can’t communicate directly, 
+and guest network isolation keeps visitor traﬃc completely separate from internal systems. 
+Preshared keys (PSKs) and stronger protocols like EAP provide authentication and encryption to 
+keep unauthorized users out. 
+
+3.10.4 Authentication and Access Control 
+Role-based access control (RBAC) is commonly used in networks to simplify the process of 
+assigning new users the permissions required to perform a job role. This is not a perfect solution, 
+however, and it carries several security issues. First, RBAC is only as successful as the 
+organization's policies designed to support it. Poor policies can result in the proliferation of 
+unnecessary roles, creating an administrative nightmare for the person managing user access. 
+This can lead to mistakes that reduce rather than enhance access security. 

@@ -1,0 +1,31 @@
+ter than or equal to 0, it is a successful 
+search; otherwise, it is an unsuccessful search. 
+ 
+As you can see from this code, you start the search by comparing searchItem with the 
+first element in the list. If searchItem is equal to the first element in the list, you exit the 
+loop; otherwise, loc is incremented by 1 to point to the next element in the list. You 
+then compare searchItem with the next element in the list, and so on. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+137 | P a g e  
+ 
+ 
+
+138 | P a g e  
+ 
+ 
+Sorting an Array  
+In this section, we discuss how to sort an array using the algorithm, called selection 
+sort. 
+As the name implies, in the selection sort algorithm, we rearrange the list by selecting 
+an element in the list and moving it to its proper position. This algorithm finds the 
+location of the smallest element in the unsorted portion of the list and moves it to the 
+top of the unsorted portion of the list. The first time, we locate the smallest item in the 
+entire list. The second time,

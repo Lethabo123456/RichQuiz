@@ -1,0 +1,31 @@
+ition is true. 
+} 
+else if ( second_condition_to_test )  
+{ 
+/*executes only if first condition is false and second 
+condition is true.*/ 
+} 
+else if ( third_condition_to_test )  
+{ 
+/* executes only if first condition is false, second 
+condition is true and third condition is true */. 
+} 
+ 
+Each condition you add will be evaluated to true or false. If JavaScript finds a true value 
+then it will execute any code between the curly brackets that go with it. After that, it 
+will exit the IF statements altogether. So if the second else if above is true then its code 
+gets executed. The third else if will be skipped and your programme will continue on its 
+way. 
+ 
+You can also add an else right at the end, to catch anything you have not checked for 
+as follows: 
+if ( first_condition_to_test )  
+{ 
+ //executes only if first condition is true. 
+} 
+else if ( second_condition_to_test )  
+{ 
+/*executes only if first condition is false and second 
+condition is true.*/ 
+} 
+else if ( third_conditio

@@ -1,0 +1,32 @@
+Figure 2.12: The Function f Maps A to B. 
+ 
+When we define a function we specify its domain, its codomain, and the 
+mapping of elements of the domain to elements in the codomain. Two 
+functions are equal when they have the same domain, have the same 
+codomain, and map each element of their common domain to the same 
+element in their common codomain. Note that if we change either the 
+domain or the codomain of a function, then we obtain a different function. 
+If we change the mapping of elements, then we also obtain a different 
+function. 
+In each of the following examples, we describe the domain, the codomain, 
+the range, and the assignment of values to elements of the domain.
+
+Worked Example 
+What are the domain, codomain, and range of the function that assigns 
+grades to students described in the first paragraph of the introduction of 
+this section? 
+Solution: 
+Let G be the function that assigns a grade to a student in our discrete 
+mathematics class. 
+Note that G(Adams) = A, for instance. The domain of G is the set {Adams, 
+Chou, Goodfriend, Rodriguez, Stevens}, and the codomain is the set 
+{A,B,C,D, F}. The range of G is the set {A,B,C, F}, because each grade except 
+D is assigned to some student. 
+
+Definition 25 
+Let f1 and f2 be functions from A to R. Then f1 + f2 and f1f2 are also functions 
+from A to R defined for all x ∈ A by (f1 + f2)(x) = f1(x) + f2(x), (f1f2)(x) = f1(x)f2(x). 
+ 
+Note that the functions f1 + f2 and f1f2 have been defined by specifying their 
+values at 𝑥 in terms of the values of f1 and f2 at 𝑥. 
+

@@ -1,0 +1,52 @@
+5.1.2 ROS Node Communication (Topics, Services, Actions) 
+Interactions form the communicative and coordinative fabric that binds agents together into a 
+cohesive system. These interactions encompass both direct communication through message 
+passing, data sharing, or explicit coordination protocols, and indirect coordination through 
+environmental modifications that other agents can perceive and respond to. The sophistication 
+of these interaction mechanisms often determines the overall effectiveness and intelligence of 
+the multi-agent system. 
+In robotics applications, these interactions are typically implemented through sophisticated 
+communication architectures that must handle the unique challenges of distributed robotic 
+systems. ROS node communication provides a robust framework for inter-agent interaction 
+through three primary mechanisms: topics, services, and actions. Topics enable publish-subscribe 
+communication patterns where agents can broadcast information to multiple subscribers or 
+receive data streams from multiple publishers, facilitating efficient information dissemination 
+across the system. Services provide synchronous request-response communication for situations 
+where agents need to request specific information or actions from other agents and wait for 
+confirmation or results. Actions support long-running, goal-oriented tasks that may be preempted 
+or provide periodic feedback, enabling complex coordination scenarios where agents collaborate 
+on extended activities.
+
+ROS Communication Diagram: 
+  
+Nodes in ROS 2(ROS 2 FOXY, 2023) 
+Activities 
+Create a simple robot that: 
+• Moves around and avoids obstacles  
+• Sends messages between different parts  
+• Can be controlled remotely  
+• Shows live data on your screen 
+Step 1: Install Everything (Windows) 
+Install ROS2 on Windows (Easy Way) 
+1. Download ROS2 Humble for Windows  
+• Go to: https://github.com/ros2/ros2/releases 
+• Download: ros2-humble-windows-desktop-amd64.zip 
+
+• Extract to: C:\dev\ros2_humble 
+2. Install Visual Studio Build Tools  
+• Download: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-
+studio-2022 
+• Install with "C++ build tools" checked 
+3. Install Python 3.10  
+• Download from: https://www.python.org/downloads/ 
+• Important: Check "Add Python to PATH" during installation 
+Install Webots 
+1. Download Webots  
+• Go to: https://cyberbotics.com/ 
+• Click "Download" → Choose Windows version 
+• Install normally (Next, Next, Finish) 
+ 
+Step 2: Set Up Your Workspace 
+Create Project Folder 
+1. Create a folder: C:\robot_project 
+2. Inside it, create: C:\robot_project\src 

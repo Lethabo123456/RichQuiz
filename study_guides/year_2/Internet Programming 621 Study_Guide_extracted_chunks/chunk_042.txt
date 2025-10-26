@@ -1,0 +1,40 @@
+ndicate in the space provide whether or not each of the  
+following variables are legal.  
+1 
+$my_first_variable  Legal     
+2 
+$_my_first_variable  
+   
+  
+3 
+$234_his_variable    
+ 
+4 
+$another_variable     
+  
+5 
+$Another-variable     
+  
+6 
+Super_variable  
+  
+7 
+$x    
+8 
+$_123  
+  
+  
+  
+2.3 Creating Variables  
+Creating a variable in PHP is known as declaring it. Declaring a variable is as simple as using its 
+name in your script:  
+  
+$my_first_variable;  
+  
+When PHP first sees a variable’s name in a script, it automatically creates the variable at that point. 
+Many programming languages prevent you from using a variable without first explicitly declaring 
+(creating) it. But PHP lets you use variables at any point just by naming them.  
+  
+When you declare a variable in PHP, it is good practice to assign a value to it at the same time. This 
+is known as initializing a variable. By doing this, anyone reading your code knows exactly what value 
+the variable holds at the time it

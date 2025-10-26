@@ -1,0 +1,12 @@
+crosoft Edge, Google Chrome, 
+Apple Safari, or Mozilla Firefox that lets end users navigate the web from their client computer. 
+Each time the end user clicks a hyperlink, the browser generates an HTTP GET page request that 
+is sent to the designated web server using the TCP/IP Internet protocol. 
+The web browser’s job is to interpret the HTML code that it receives from the web server and to 
+present the various page components in a standard formatted way. The web is a stateless system—
+at any given time, a web server does not know the status of any of the clients communicating with 
+it. That is, there is no open communication line between the server and each client accessing it, 
+which of course is impractical in a world wide web! Instead, client and server computers interact in 
+very short “conversations” that follow the request-reply model. The only time the client and server 
+computers communicate is when the client requests a page—when the user clicks a link—and the 
+server sends

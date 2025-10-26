@@ -1,0 +1,16 @@
+2.2.7 What Are the Challenges With LiDAR? 
+Essentially, LiDAR is a ranging device which measures the distance to a target. The distance is 
+measured by sending a short laser pulse and recording the time lapse between the outgoing light 
+pulse and the detection of the reflected (back-scattered) light pulse.  
+There are some well-known challenges with operational LiDAR systems. These challenges depend 
+on the type of LiDAR system. Here are some examples: 
+
+• The isolation and rejection of signal from the emitted beam - The radiance of the probing 
+beam is generally much greater than that of the return beam. Care must be taken to make 
+sure the probing beam is not reflected or scattered by the system back into the receiver 
+such that the detector is saturated and unable to detect external targets. 
+• Spurious returns from debris in the atmosphere between the transmitter and the 
+intended targets - The debris can cause such a strong spurious return that the return from 
+the intended targets is not reliably detected. 
+• Limitations on available optical power -A system with more power in the beam provides 
+higher accuracy but is more expensive to operate. 

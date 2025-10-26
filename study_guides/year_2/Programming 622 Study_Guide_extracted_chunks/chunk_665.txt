@@ -1,0 +1,27 @@
+a node when the node is visited.  
+  
+  
+FIGURE 9-5 Binary tree for an inorder traversal  
+  
+A pointer to the binary tree in Figure 9-5 is stored in the pointer variable root (which points to the node 
+with info A). Therefore, we start the traversal at A.  
+  
+1. Traverse the left subtree of A; that is, traverse LA = {B, D}.  
+2. Visit A.  
+3. Traverse the right subtree of A; that is, traverse RA = {C}.  
+  
+Now, we cannot do Step 2 until we have finished Step 1.  
+  
+
+326  
+  
+1. Traverse the left subtree of A; that is, traverse LA = {B, D}. Now LA is a binary tree with the root node 
+B. Because LA is a binary tree, we apply the inorder traversal criteria to LA.  
+  
+1.1. Traverse the left subtree of B; that is, traverse LB = empty.  
+1.2. Visit B.  
+1.3. Traverse the right subtree of B; that is, traverse RB = {D}.  
+  
+As before, first we complete Step 1.1 before going to Step 1.2.  
+  
+1.1. Because the left subtree of B is empty, there is nothing to traverse.

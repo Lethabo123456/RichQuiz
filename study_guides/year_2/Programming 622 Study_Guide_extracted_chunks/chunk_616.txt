@@ -1,0 +1,18 @@
+rging the sorted sublists.  
+  
+ 
+8.8.2  Merge  
+  
+Once the sublists are sorted, the next step in mergesort is to merge the sorted sublists. Sorted sublists are 
+merged into a sorted list by comparing the elements of the sublists, and then adjusting the references of 
+the nodes with the smaller info. Let us illustrate this procedure on the sublists shown in Figure 8-37. 
+Suppose that first1 points to the first node of the first sublist, and first2 points to the first node of the 
+second sublist.  
+ 
+  
+FIGURE 8-37 Sublists before merging  
+We first compare the info of the first node of each of the two sublists to determine the first node of the 
+merged list. We set newHead to point to the first node of the merged list. We also use the pointer 
+lastMerged to keep track of the last node of the merged list. The pointer of the first node of the sublist 
+with the smaller node then advances to the next node of that sublist. Figure 8-38 shows the sublist of 
+Figure 8-37 after setting newHead

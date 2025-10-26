@@ -1,0 +1,31 @@
+Advantages of Unsupervised Machine Learning: 
+• No Labels Required: Unsupervised learning does not rely on labelled data, making it more 
+scalable and applicable to a wide range of datasets. 
+• Data Exploration: It can help discover patterns, structures, and relationships within the data, 
+even when the underlying structure is not well-defined. 
+• Anomaly Detection: Unsupervised learning can identify unusual patterns or outliers in the 
+data, which can be valuable for anomaly detection and fraud detection (Valcheva, 2022). 
+ 
+Disadvantages of Unsupervised Machine Learning: 
+• Lack of Clear Objectives: Without predefined labels, it can be challenging to evaluate the 
+performance of unsupervised learning algorithms objectively. 
+• Interpretability: Unsupervised learning models are often more complex and harder to 
+interpret compared to supervised models. 
+• Subjectivity: The interpretation of the results from unsupervised learning can be subjective 
+and may require domain expertise for meaningful analysis. 
+• Difficulty in Validation: Due to the absence of ground truth labels, validating the performance 
+of unsupervised learning models can be difficult (Valcheva, 2022). 
+ 
+4.5 Linear Regression 
+We will explore our first true machine learning model. Linear regressions are a form of regression, 
+which means that it is a machine learning model that attempts to find a relationship between 
+predictors and a response variable and that response variable is, you guessed it, continuous! This 
+notion is synonymous with making a line of best fit. In the case of linear regression, we will attempt 
+to find a linear relationship between our predictors and our response variable (Sinan, 2016). Formally, 
+we wish to solve for a formula of the following format: 
+ 
+ 
+• y is our response variable 
+• xi is our ith variable (ith column or ith predictor) 
+• B0 is the intercept
+• Bi is the coefficient for the xi term  

@@ -1,0 +1,108 @@
+6.4 RethrowingExceptions 
+
+You might want your c a t ch block to take some initial corrective action and then rethrow the 
+exception to an outer t r y block (in a calling function). It might rethrow the same exception, 
+or it might throw a different one. I f it throws a different one, it may want to embed the 
+original exception inside the new one so that the calling method can understand the 
+exception history. The InnerExcepion property of the new exception retrieves the original 
+exception. Because the Inner Exception is also an exception, it too might have an inner 
+exception. Thus, an entire chain of exceptions can be nested one within the other, much like 
+Ukrainian dolls are contained one within the other. Example 5-8 illustrates. 
+ 
+Example 5-8. Rethrowing and inner exceptions 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class MyCustomException : System.ApplicationException 
+{ 
+public MyCustomException( 
+string message, Exception inner) : 
+base(message, inner) 
+{ 
+} 
+} 
+public class Test 
+{ 
+public static void Main() 
+{ 
+Test t = new Test(); 
+t.TestFunc(); 
+} 
+public void TestFunc() 
+{ 
+try 
+{ 
+DangerousFunc1(); 
+} 
+// if you catch a custom exception 
+// print the exception history 
+catch (MyCustomException e) 
+{ 
+Console.WriteLine("\n{0}", e.Message); 
+Console.WriteLine( 
+"Retrieving exception history..."); 
+Exception inner =e.InnerException; 
+while (inner != null) 
+{ 
+Console.WriteLine( 
+"{0}", inner.Message); 
+inner = 
+inner.InnerException; 
+} 
+} 
+} 
+public void DangerousFunc1() 
+{ 
+try 
+{ 
+DangerousFunc2(); 
+} 
+// if you catch any exception here 
+// throw a custom exception 
+catch (System.Exception e) 
+{ 
+MyCustomException ex = 
+new MyCustomException("E3 - Custom Exception Situation!", e); 
+throw ex; 
+} 
+} 
+public void DangerousFunc2() 
+{ 
+try 
+{ 
+DangerousFunc3(); 
+} 
+// if you catch a DivideByZeroException take some 
+// corrective action and then throw a general exception 
+catch (System.DivideByZeroException e) 
+{ 
+Exception ex =new Exception("E2 - Func2 caught divide by zero", 
+e); 
+* throw ex; 
+} 
+} 
+public void DangerousFunc3() 
+{ 
+try 
+{ 
+DangerousFunc4(); 
+} 
+catch (System.ArithmeticException) 
+{ 
+throw; 
+} 
+catch (System.Exception) 
+{ 
+Console.WriteLine("Exception handled here."); 
+} 
+} 
+public void DangerousFunc4() 
+{ 
+throw new DivideByZeroException("E1 - DivideByZero Exception"); 
+} 
+} 
+} 

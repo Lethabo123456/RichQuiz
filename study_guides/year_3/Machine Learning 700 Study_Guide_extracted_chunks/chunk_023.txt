@@ -1,0 +1,22 @@
+Example: Overfitting vs. Underfitting 
+Consider a dataset of student exam scores based on study hours. A model that is too simple (e.g., a 
+straight line) underfits the data, while a highly complex polynomial model that fits every data point 
+overfits.
+
+Fig 1.1 Overfitting vs. Underfitting 
+ 
+Fig 1.1  visually illustrate the concepts of underfitting and overfitting, two common pitfalls in machine 
+learning model training. The code generates sample data that follows a sine wave pattern with some 
+added random noise, mimicking a realistic dataset. It then attempts to fit two different types of 
+models to this data. First, it fits a simple linear regression model, which assumes a straight-line 
+relationship.  
+
+This model demonstrates underfitting, as the straight line is too simple to capture the true, non-
+linear pattern of the data. In the resulting graph, this is represented by a green line that poorly 
+follows the blue data points. The model's simplicity prevents it from learning the fundamental 
+relationships within the data. Next, the code fits a highly complex polynomial regression model with 
+a degree of 10. This model attempts to fit a curve that passes through, or extremely close to, every 
+single data point, thus representing overfitting. In the image, this is represented by the red line, 
+which is overly complex and traces every minor fluctuation of the training data. While it fits the 
+training data almost perfectly, it does so by learning the noise within the dataset, making it unlikely 
+to predict new, unseen data points accurately.  

@@ -1,0 +1,47 @@
+The key method of ListBoxTest , however, is the indexer. An indexer is unnamed, so use the 
+this keyword: 
+public string this[ int index] 
+ 
+The syntax of the indexer is very similar to that for properties. There is either a get ( ) method, 
+a set ( ) method, or both. In the case shown, the get ( ) method endeavors to implement 
+  
+Note 
+Because you cannot know how many strings will be added, use the keyword params , 
+as described earlier in this chapter. 
+rudimentary bounds checking, and assuming the index requested is acceptable, it returns the 
+value requested: 
+get 
+{ 
+if (index < 0 || index >= strings.Length) 
+{ 
+// handle bad index 
+} 
+return strings[index]; 
+} 
+The set ( ) method checks to make sure that the index you are setting already has a value in 
+the list box. If not, it treats the set as an error (new elements can only be added using Add 
+with this approach). The set accessor takes advantage of the implicit parameter value that 
+represents whatever is assigned using the index operator: 
+ 
+ 
+set{ 
+if (index >= ctr ){ // handle error} 
+ 
+else{ 
+trings[ index] = value; 
+} 
+set { // add only through the add method 
+ 
+if (index >= strings.Length ) 
+{// handle error 
+} else 
+{ 
+strings[ index] = value; 
+if (ctr < index+1) 
+ctr = index+1; 
+} 
+Thus, if you write: 
+
+lbt [ 5] = "Hello World" 
+the compiler will call the indexer set ( ) method on your object and pass in the string Hello 
+World as an implicit parameter named value. 

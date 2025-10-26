@@ -1,0 +1,32 @@
+Here is a code example showing the use of Bernoulli Distribution:   
+from scipy.stats import bernoulli  
+import seaborn as sb  
+  
+def bernoulliDist():  
+    data_bern = bernoulli.rvs(size=1200, p = 0.7)  
+    ax = sb.distplot(  
+        data_bern,   
+        kde = True,   
+        color = 'g',   
+        hist_kws = {'alpha' : 1},  
+        kde_kws = {'color': 'y', 'lw': 3, 'label': 'KDE'})  
+    ax.set(xlabel = 'Bernouli Values', ylabel = 'Frequency Distribution')  
+bernoulliDist() 
+Output: 
+ 
+ 
+• Continuous Uniform Distribution: In this type of continuous distribution, all outcomes 
+are equally possible; each variable gets the same probability of hit. This symmetric 
+probabilistic distribution has random variables at an equal interval, with the 
+probability of 1/(b-a). 
+Here is a code example showing the use of Uniform Distribution: 
+from numpy import random  
+import matplotlib.pyplot as mpl  
+import seaborn as sb  
+def uniformDist():  
+    sb.distplot(random.uniform(size = 1200), hist = True)  
+    mpl.show()  
+  
+uniformDist() 
+
+Output: 

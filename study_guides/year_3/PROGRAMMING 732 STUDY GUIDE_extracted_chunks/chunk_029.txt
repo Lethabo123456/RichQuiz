@@ -1,0 +1,24 @@
+1.2.16 Border Layout  
+The BorderLayout class implements a common layout style for top-level windows. It has four narrow, 
+fixed-width components at the edges and one large area in the center. The four sides are referred to as 
+north, south, east, and west. The middle area is called the center. Here are the constructors defined by 
+
+BorderLayout:  
+  
+BorderLayout()  
+BorderLayout(int horz, int vert)   
+
+Programming The first form creates a default border layout. The second allows you to specify the 
+horizontal and vertical space left between components in horz and vert, respectively. BorderLayout 
+defines the following constants the specify the regions:  
+  
+BorderLayout.CENTER BorderLayout.SOUTH  
+BorderLayout.EAST BorderLayout.WEST  
+BorderLayout.NORTH  
+  
+When adding components, you will use these constants with the following form of add(), which is defined 
+by Container.  
+  
+Void add(Component compObj, Object region); 
+
+Here, compObj is the component to be added, and region specifies where the component will be added. 

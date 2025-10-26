@@ -1,0 +1,43 @@
+5.10 Types of IoT Connections 
+An IoT system has a three-level architecture: devices, gateways and data systems. The data 
+moves between these levels via four types of transmission channels. 
+  
+1. Device to device (D2D) — direct contact between two smart objects when they share 
+information instantaneously without intermediaries. For example, industrial robots and 
+sensors are connected to one another directly to coordinate their actions and perform the 
+assembly of components more efficiently. This type of connection is not very common yet, 
+because most devices are not able to handle such processes. 
+2. Device to gateway — telecommunications between sensors and gateway nodes. 
+Gateways are more powerful computing devices than sensors. They have two main functions: 
+to consolidate data from sensors and route it to the relevant data system; to analyse data 
+and, if some problems are found, return it back to the device. There are various IoT gateway 
+protocols that may better suit this or that solution depending on the gateway computing 
+capabilities, network capacity and reliability, the frequency of data generation and its quality. 
+3. Gateway to data systems — data transmission from a gateway to the appropriate data 
+system. To determine what protocol to use, you should analyse data traffic (frequency of 
+bustiness and congestion, security requirements and how many parallel connections are 
+needed). 
+4. Between data systems — information transfer within data centres or clouds. Protocols 
+for this type of connection should be easy to deploy and integrate with existing apps, have 
+high availability, capacity and reliable disaster recovery. 
+
+Types of IoT Networks 
+Networks are divided into categories based on the distance range they provide. 
+A nanonetwork — a set of small devices (sized a few micrometres at most) that perform very 
+simple tasks such as sensing, computing, storing, and actuation. Such systems are applied in 
+the biometrical, military and other nanotechnologies. 
+NFC (Near-Field Communication) — a low-speed network to connect electronic devices at a 
+distance within 4 cm from each other. Possible applications are contactless payment systems, 
+identity documents and key cards. 
+BAN (Body Area Network) — a network to connect wearable computing devices that can be 
+worn either fixed on the body, or near the body in different positions, or embedded inside 
+the body (implants). 
+PAN (Personal Area Network) — a net to link up devices within a radius of roughly one or a 
+couple of rooms. 
+LAN (Local Area Network) — a network covering the area of one building. 
+CAN (Campus/Corporate Area Network) — a network that unites smaller local area networks 
+within a limited geographical area (enterprise, university). 
+MAN (Metropolitan Area Network) — a big network for a certain metropolitan area powered 
+by the microwave transmission technology. 
+WAN (Wide Area Network) — a network that exists over a large-scale geographical area and 
+unites different smaller networks, including LANs and MANs. 

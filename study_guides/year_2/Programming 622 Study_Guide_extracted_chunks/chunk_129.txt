@@ -1,0 +1,33 @@
+ce: 
+for (intVecIter = intList.begin(); intVecIter != intList.end(); intVecList)  
+cout << *intVecIter << " ";  
+  
+EXAMPLE 2-4  
+Consider the following statements: int intArray[7] = {1, 3, 5, 7, 9, 11, 13};  
+ 
+//Line 1 vector<int> vecList(intArray, 
+intArray + 7};  //Line 2 vector<int>::iterator 
+intVecIter;   
+  
+//Line 3  
+  
+The statement in Line 2 declares and initializes the vector container vecList. Now consider the following 
+statements:  
+ 
+intVecIter = vecList.begin();    
+  
+//Line 4  
+++intVecIter;     
+  
+  
+//Line 5 vecList.insert(intVecIter, 22};  
+ 
+  
+//Line 6  
+  
+The statement in Line 4 initializes the iterator intVecIter to the first element of vecList. The statement in 
+Line 5 advances intVecIter to the second element of vecList. The statement in Line 6 inserts 22 at the 
+position specified by intVecIter. After the statement in Line 6 executes, vecList = {1, 22, 3, 5, 7, 9, 11, 13}. 
+Notice that the size of the container also increases.  
+  
+The class vector also

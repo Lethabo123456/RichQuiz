@@ -1,0 +1,46 @@
+• The variable receiving the value returned by a method (such as vol, in this case) must also 
+be compatible with the return type specified for the method. 
+ One more point: The 
+preceding program can be written a bit more efficiently because there is actually no need 
+for the vol variable. The call to volume( ) could have been used in the println( ) statement 
+directly, as shown here:   
+   
+System.out.println("Volume is " + box1.volume());   
+In this case, when println( ) is executed, mybox1.volume( ) will be called automatically and its value 
+will be passed to println( ).   
+Adding a Method That Takes Parameters    
+While some methods don’t need parameters, most do. Parameters allow a method to be 
+generalized. That is, a parameterized method can operate on a variety of data and/or be used in a 
+number of slightly different situations. To illustrate this point, let’s use a very simple example. Here 
+is a method that returns the square of the number 10:    
+int square()   
+{  return 10 * 
+10;   
+} 
+
+While this method does, indeed, return the value of 10 squared, its use is very limited. However, if 
+you modify the method so that it takes a parameter, as shown next, then you can make square( ) 
+much more useful.   
+  int square(int i)   
+     
+{   
+return i * i;   
+}   
+   
+Now, square( ) will return the square of whatever value it is called with. That is, square( ) is now a 
+general-purpose method that can compute the square of any integer value, rather than just 10.    
+Here is an example:   
+   
+int x, y;   
+x = square(5); // x equals 25 
+x = square(9); // x equals 81 
+y = 2;   
+x = square(y); // x equals 4   
+   
+In the first call to square( ), the value 5 will be passed into parameter i. In the second call, i will 
+receive the value 9. The third invocation passes the value of y, which is 2 in this example. As these 
+examples show, square( ) is able to return the square of whatever data it is passed. It is important 
+to keep the two terms parameter and argument straight. A parameter is a variable defined by a 
+method that receives a value when the method is called. For example, in square( ), i is a parameter. 
+An argument is a value that is passed to a method when it is invoked. For example, square(100) 
+passes 100 as an argument.

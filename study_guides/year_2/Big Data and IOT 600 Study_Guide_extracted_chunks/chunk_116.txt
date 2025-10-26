@@ -1,0 +1,62 @@
+5.3 IoT Development Platforms 
+IoT development tools help create smart objects. The first thing you need in order 
+to build and launch connected products is a platform. There are plenty available today. Each 
+platform can be an ideal fit for some applications, but not for others, due to the different 
+characteristics that come with it. Below we’ve listed some popular IoT development 
+platforms. IBM Watson https://www.ibm.com/watson 
+This platform enables connecting all types of devices and easily developing custom IoT 
+solutions. The advantages of IBM Watson are obvious: quick and secure connectivity; an 
+ability to control your data flows; online data analysing; the visualization of critical risks and 
+the automation of operational responses to them.   
+Azure 
+https://azure.microsoft.com/en-in/ 
+
+The Azure IoT development platform by Microsoft has some important capabilities. It enables 
+you to collect, analyse and visualize data, integrate it with back-office systems, store and 
+process large data sets and manage devices. Azure is highly scalable, and it supports a great 
+number of devices and operating systems. 
+AWS (Amazon Web Services) 
+https://aws.amazon.com 
+AWS is a managed cloud-based platform that supports billions of devices around the world. 
+It provides secure and easy interaction even if the devices are offline. Amazon’s data centers 
+are equipped with multiple security levels and ensure seamless access and the safety of your 
+data. The main advantage of this platform is that no hardware infrastructure is needed. AWS 
+offers low prices without long-term commitments. 
+
+5.4 IoT Operating Systems 
+When choosing a platform, it’s necessary to decide on the operating system. There are certain 
+limitations to be considered: low processing power, a smaller amount of RAM and storage. 
+The most commonly used operating systems for such built-in computers are Linux, Android 
+and Ubuntu Core. But there is a great number of other IoT OSs available. 
+Here’s a non-exhaustive list: 
+RIOT is a free operating system developed by a community consisting of companies, academia 
+and hobbyists. RIOT supports most low-power devices and microcontroller architecture. It 
+implements all relevant standards to ensure that the Internet of Things is connected, secure, 
+durable and provides privacy protection. 
+Contiki is an open-source operating system for the Internet of Things created by a worldwide 
+team of developers. It provides powerful low-power Internet communication, supports fully 
+standard IPv6 and IPv4, along with the recent low-power wireless standards: 6lowpan, RPL 
+and CoAP. Contiki runs on a range of low-power wireless devices; its applications are written 
+in standard C; development with Contiki is easy and fast. 
+ARM mbed OS is an open-source embedded operating system. It includes all the necessary 
+features to develop a connected product. Mbed OS provides multilayer security and a wide 
+range of communication options with drivers for Bluetooth Low Energy, Thread, 6LoWPAN, 
+
+Ethernet and WiFi. What’s more, necessary libraries are included automatically on your 
+devices to facilitate code writing. 
+The ThingBox is a set of software already installed and configured on an SDCard. The 
+ThingBox allows anyone to graphically create new unlimited applications interacting with 
+connected objects from a simple web-browser. This OS is suitable and easy-to-use for both 
+technical people and users with no technical background. 
+Huawei LiteOS is a lightweight, low energy, efficient operating system. It starts up within 
+milliseconds and responds within microseconds. LiteOS coordinates multiple sensors and 
+supports long- and short-distance communication. 
+Raspbian is one of the most widely used platforms for the Internet of Things. It is a free 
+system optimized for the Raspberry Pi hardware. Raspbian includes basic programs and 
+utilities to make the hardware run, but it also compiles more than 35,000 packages and pre-
+compiled software for easy installation. 
+Android Things is an operating system from Google. It lets you build professional, mass-
+market products on a trusted platform, without previous knowledge of embedded system 
+design. Android Things provides you with leverage for the existing Android development 
+tools, APIs, resources and regular security updates. Android Things ensures the development 
+of IoT products at scale. 

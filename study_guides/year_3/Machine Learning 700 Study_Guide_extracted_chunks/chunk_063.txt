@@ -1,0 +1,25 @@
+There are 3,023 images, each 87×65 pixels large, belonging to 62 different people: 
+This is where PCA comes in. Computing distances in the original pixel space is quite a bad way to measure 
+similarity between faces. When using a pixel representation to compare two images, we compare the 
+grayscale value of each individual pixel to the value of the pixel in the corresponding position in the other 
+image. This representa- tion is quite different from how humans would interpret the image of a face, and 
+it is hard to capture the facial features using this raw representation. For example, using pixel distances 
+means that shifting a face by one pixel to the right corresponds to a drastic change, with a completely 
+different representation. We hope that using distan- ces along principal components can improve our 
+accuracy. Here, we enable the whitening option of PCA, which rescales the principal components to have 
+the same scale. This is the same as using StandardScaler after the transformation. Reusing the data again, 
+whitening corresponds to not only rotating the data, but also rescaling it so that the center panel is a 
+circle instead of an ellipse: 
+ 
+We fit the PCA object to the training data and extract the first 100 principal compo- nents. Then we 
+transform the training and test data: 
+ 
+The new data has 100 features, the first 100 principal components. Now, we can use the new 
+representation to classify our images using a one-nearest-neighbors classifier: 
+ 
+Our accuracy improved quite significantly, from 26.6% to 35.7%, confirming our intuition that the 
+principal components might provide a better representation of the data. 
+
+For image data, we can also easily visualize the principal components that are found. Remember that 
+components correspond to directions in the input space. The input space here is 50×37-pixel grayscale 
+images, so directions within this space are also 50×37-pixel grayscale images.

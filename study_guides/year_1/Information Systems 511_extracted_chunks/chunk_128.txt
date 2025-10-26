@@ -1,0 +1,19 @@
+e print spool 
+will hold all the orders and process them in turn. 
+
+ 
+ 5.2.2 MONITORING SYSTEM ACTIVITIES  
+ Time  
+Time in the CPU is divided into time slices which are measured in milliseconds. 
+Each task the CPU does is assigned a certain number of time slices. When time 
+expires, another task gets a turn. The first task must wait until it has another turn. 
+Since time slices are so small, you usually can't tell that any sharing is going on. 
+Tasks can be assigned priorities so that high priority (foreground) tasks get more 
+time slices than low priority (background) tasks.   
+  
+Memory  
+Memory must be managed also by the operating system. All those rotating turns 
+of CPU use leave data waiting around in buffers. Care must be taken not to lose 
+data!! One way to help out the traffic jam is to use virtual memory. This includes 
+disk space as part of main memory. While it is slower to put data on a hard disk, 
+it increases the amount of data that can be held in memory at one time. Wh

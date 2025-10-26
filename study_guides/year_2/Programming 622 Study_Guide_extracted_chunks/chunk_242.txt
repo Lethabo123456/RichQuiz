@@ -1,0 +1,36 @@
+e, use the function insert to insert the new 
+item at its proper place. The definitions of these functions are as follows:  
+  
+template <class Type>  
+void orderedLinkedList<Type>::insertFirst(const Type& newItem)  
+
+120  
+  
+{  
+insert(newItem);  
+ 
+}  
+  
+//end insertFirst  
+  
+template <class Type>  
+void orderedLinkedList<Type>::insertLast(const Type& newItem)  
+{  
+insert(newItem);  
+ 
+}  
+  
+//end insertLast  
+  
+Note that in reality, the functions insertFirst and insertLast do not apply to an ordered linked list because 
+the new item must be inserted at the proper place in the list. However, you must provide its definition as 
+these functions are declared as abstract in the parent class.  
+  
+The functions insertFirst and insertLast use the function insert, which is of O(n). It follows that these 
+functions are of O(n).  
+  
+ 
+3.4.4  Delete a Node  
+  
+To delete a given item from an ordered linked list, first we search the list to see whether the item to be 
+deleted is in the l

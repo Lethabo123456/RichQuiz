@@ -1,0 +1,37 @@
+the appropriate function? C++ corrects this problem by providing the mechanism of 
+virtual functions. The binding of virtual functions occurs at program execution time, not 
+at compile time. This kind of binding is called run-time binding, late binding, or 
+dynamic binding.  
+ 
+More formally, in run-time binding he compiler does not generate the code to call a 
+specific function. Instead, it generates enough information to enable the run-time 
+system to generate the specific code for the appropriate function call. Run-time binding 
+is also known as dynamic binding.  
+ 
+In C++, virtual functions are declared using the reserved word virtual. 
+ 
+ 
+ 
+ 
+ 
+class petType  
+{  
+public:  
+virtual void print() const;                //virtual function  
+petType(string n = ""); 
+ private: 
+ string name;  
+
+230 | P a g e  
+ 
+}; 
+ 
+class dogType: public petType {  
+public: 
+ void print() const;  
+dogType(string n = "", string b = ""); 
+ private:  
+string breed;  
+} 
+ 
+Note that we need to declare a

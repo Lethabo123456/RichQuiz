@@ -1,0 +1,31 @@
+1.6.7 Token Ring 
+Token Ring is another form of network configuration. It differs from Ethernet in that all messages 
+are transferred in one direction along the ring at all times. Token Ring networks sequentially pass 
+a “token” to each connected device. When the token arrives at a particular computer (or device), 
+the recipient is allowed to transmit data onto the network. Since only one device may be 
+transmitting at any given time, no data collisions occur. Access to the network is guaranteed, and 
+time-sensitive applications can be supported. However, these benefits come at a price. 
+Component costs are usually higher, and the networks themselves are considered to be more 
+complex and difficult to implement. Various PC vendors have been proponents of Token Ring 
+networks. 
+
+1.7 Networking and Ethernet Basics 
+1.7.1 Protocols 
+After a physical connection has been established, network protocols define the standards that 
+allow computers to communicate. A protocol establishes the rules and encoding specifications for 
+sending data. This defines how computers identify one another on a network, the form that the 
+data should take in transit, and how this information is processed once it reaches its final 
+destination. Protocols also define procedures for determining the type of error checking that will 
+be used, the data compression method, if one is needed, how the sending device will indicate that 
+it has finished sending a message, how the receiving device will indicate that it has received a 
+message, and the handling of lost or damaged transmissions or “packets”. 
+The main types of network protocols in use today are: TCP/IP (for UNIX, Windows NT, Windows 95 
+and other platforms); IPX (for Novell NetWare); DECnet (for networking Digital Equipment Corp. 
+computers); AppleTalk (for Macintosh computers), and NetBIOS/NetBEUI (for LAN Manager and 
+Windows NT networks). 
+Although each network protocol is different, they all share the same physical cabling. This 
+common method of accessing the physical network allows multiple protocols to peacefully coexist 
+over the network media, and allows the builder of a network to use common hardware for a 
+variety of protocols. This concept is known as “protocol independence,” which means that devices 
+which are compatible at the physical and data link layers allow the user to run many different 
+protocols over the same medium.

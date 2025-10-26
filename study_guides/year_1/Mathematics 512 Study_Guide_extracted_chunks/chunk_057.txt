@@ -1,0 +1,26 @@
+5.3 Indefinite Integrals 
+An indefinite integral has the form ∫𝑓(𝑥)𝑑𝑥.When evaluated, an indefinite 
+integral results in a function (or family of functions). An indefinite integral of a 
+function 𝑓(𝑥) is also known as the antiderivative of 𝑓. A function 𝐹 is an 
+antiderivative of 𝑓 on an interval 𝑙, if 𝐹′(𝑥) =  𝑓(𝑥) for all 𝑥 in 𝑙. This is a 
+strong indication that that the processes of integration and differentiation are 
+interconnected. 
+
+Table of Indefinite Integrals 
+The following tables list the formulas for anti-differentiation. These formulas 
+allow us to determine the function that results from an indefinite integral. 
+Since the formulas are for the most general indefinite integral, we add a 
+constant 𝐶 to each one. With these formulas and the Fundamental Theorem 
+of Calculus, we can evaluate simple definite integrals.  
+The next table lists indefinite integrals involving trigonometric functions. 
+
+∫𝑐𝑓(𝑥) 𝑑𝑥= 𝑐∫𝑓(𝑥) 𝑑𝑥  
+∫[𝑓(𝑥) + 𝑔(𝑥)] 𝑑𝑥= ∫𝑓(𝑥) 𝑑𝑥 + ∫𝑔(𝑥)𝑑𝑥  
+∫𝑘 𝑑𝑥= 𝑘𝑥 + 𝐶  
+∫𝑥**𝑛 𝑑𝑥 = 𝑥**𝑛+1 / 𝑛+1 + 𝐶 (where n ≠ -1)  
+∫cos𝑥 𝑑𝑥= sin𝑥 + 𝐶  
+∫sin𝑥 𝑑𝑥= −cos𝑥 + 𝐶  
+∫𝑠𝑒𝑐2𝑥 𝑑𝑥= tan𝑥 + 𝐶  
+∫csc𝑥 cot𝑥 𝑑𝑥 = −csc𝑥 + 𝐶  
+∫sec𝑥 tan𝑥 𝑑𝑥 = sec𝑥 + 𝐶  
+∫𝑐𝑠𝑐**2𝑥 𝑑𝑥 = −cot𝑥 + 𝐶  

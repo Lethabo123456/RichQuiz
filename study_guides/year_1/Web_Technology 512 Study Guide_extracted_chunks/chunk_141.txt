@@ -1,0 +1,27 @@
+s that are 
+used internally in the object's methods, but can also be globally visible variables that 
+are used throughout the page. 
+The syntax for adding a property to an object is: 
+objectName.objectProperty = propertyValue; 
+ 
+Example: 
+Following is a simple example to show how to get a document title using "title" 
+property of document object: 
+var str = document.title; 
+ 
+6.1.2 Object Methods 
+The methods are functions that let the object do something or let something be done 
+to it. There is little difference between a function and a method, except that a function 
+is a standalone unit of statements and a method is attached to an object and can be 
+referenced by the this keyword. 
+ 
+Methods are useful for everything from displaying the contents of the object to the 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+89 
+ 
+SIX | JAVASCRIPT OBJECTS 
+screen to performing complex mathematical operations on a group of local properties 
+and parameters. 
+Example

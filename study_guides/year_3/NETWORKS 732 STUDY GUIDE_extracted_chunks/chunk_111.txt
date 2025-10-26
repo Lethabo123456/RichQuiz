@@ -1,0 +1,23 @@
+2.5 Quality of Service 
+You don’t want to hear breaks in an online phone conversation or see a buffering message when 
+you watch a movie over the Internet. For that reason, voice and video transmissions are 
+considered delay sensitive. On the other hand, occasional loss of data (skipping video frames, for 
+example) can be tolerated, for that reason, voice and video transmissions are considered loss 
+tolerant. Typical web surfing might not present much of a challenge for network bandwidth.  
+
+However, streaming movies, voice or video calls, and online gaming can all place heavy demands 
+on available bandwidth. To manage these demands, network administrators must efficiently 
+manage a network’s QoS (quality of service) configurations, which is a group of techniques for 
+adjusting the priority a network assigns to various types of transmissions. To do this, network 
+administrators need to be aware of the applications used on a network, including the application 
+protocols they use and the amount of bandwidth they require. For example, variable delays of 
+VoIP packets result in choppy voice quality. 
+
+A network that handles a lot of VoIP traffic would 
+need to prioritize that traffic to avoid problems with jitters. From the perspective of a person 
+watching a movie online, optimized QoS translates into an uninterrupted, accurate, and faithful 
+reproduction of audio or visual input. For someone competing in online games, high priority on 
+gaming traffic gives quick and accurate responsiveness to game play in addition to a high-quality 
+audio and visual experience. Network engineers have devised several techniques to address the 
+QoS-related challenges inherent in delivering high bandwidth network services. The following 
+sections describe some of these techniques.

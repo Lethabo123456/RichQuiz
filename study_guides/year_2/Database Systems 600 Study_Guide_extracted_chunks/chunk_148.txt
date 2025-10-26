@@ -1,0 +1,17 @@
+ween 
+occurrences of the same entity set. (Naturally, such a condition is found within a unary relationship.) 
+For example, a 1:M unary relationship can be expressed by “an EMPLOYEE may manage many 
+EMPLOYEEs, and each EMPLOYEE is managed by one EMPLOYEE.”  
+The M:N recursive relationship might be more familiar in a school environment. For instance, note 
+how the M:N “COURSE requires COURSE” relationship is implemented in Figure 4.21. In this 
+example, MATH-243 is a prerequisite to QM-261 and QM-362, while both MATH-243 and QM-
+261 are prerequisites to QM-362.  
+
+ 
+57 
+ 
+One common pitfall when working with unary relationships is to confuse participation with 
+referential integrity. In theory, participation and referential integrity are very different concepts and 
+are normally easy to distinguish in binary relationships. In practical terms, conversely, participation 
+and referential integrity are very similar because they are both implemented through constraints on 
+the same set of at

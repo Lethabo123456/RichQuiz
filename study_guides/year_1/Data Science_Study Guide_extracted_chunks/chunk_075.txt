@@ -1,0 +1,36 @@
+Types of supervised learning 
+There are, in general, two types of supervised learning models: regression and classification. The 
+difference between the two is quite simple and lies in the response variable: 
+• Regression - Regression models attempt to predict a continuous response. This means that 
+the response can take on a range of infinite values. 
+• Classification - Classification attempts to predict a categorical response, which means that the 
+response only has a finite amount of choices. 
+
+Figure 4.3 – Supervised Machine Learning 
+
+Example of Regression 
+Linear regression is an algorithm that offers a linear relationship between an independent variable 
+and a dependent variable to predict the outcome of future events. It is a statistical method used in 
+data science and machine learning for predictive analysis (Kanade , 2023). 
+ 
+The independent variable is also the predictor variable that remains unchanged due to the change in 
+other variables. However, the dependent variable changes with fluctuations in the independent 
+variable. The regression model predicts the value of the dependent variable. Therefore, linear 
+regression is a supervised learning algorithm that simulates a mathematical relationship between 
+variables and makes predictions for continuous or numeric variables such as sales, salary, age, product 
+price, etc. (Kanade , 2023). 
+ 
+Let's consider a simple example with one independent variable. Suppose we want to predict a person's 
+exam score based on the number of hours they studied. We have a small dataset with the number of 
+hours studied and the corresponding exam scores. The Python code shown attempts to realize this 
+prediction using the scikit-learn library: 
+ 
+Copy Extract 4.1 – Predict Learner’s Score 
+ 
+import numpy as np 
+import matplotlib.pyplot as plt 
+from sklearn.linear_model import LinearRegression 
+ 
+# Sample data 
+hours_studied = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).reshape(-1, 1) 
+exam_scores = np.array([50, 60, 70, 75, 85, 90, 95, 100, 110, 120])

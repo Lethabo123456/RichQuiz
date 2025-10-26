@@ -1,0 +1,46 @@
+a. interface 
+b. short 
+c. program 
+d. throws 
+9. 
+In JavaScript, which of the following method is used to find out the character at    
+a position in a string? 
+a. charAt() 
+b. CharacterAt() 
+c. CharPos() 
+d. characAt() 
+10. You can refresh the webpage in JavaScript by using ................ method. 
+a. window.reload 
+b. location. reload 
+c. window. refresh 
+d. page.refresh 
+ 
+ 
+ 
+ 
+ 
+
+ 
+63 
+ 
+FOUR | ARRAYS AND FUNCTIONS 
+FOUR | ARRAYS AND FUNCTIONS 
+ 
+Learning Outcomes 
+ 
+1. 
+Understand Javascript array declaration and initialisation 
+2. 
+Create and work with functions 
+3. 
+Understand the scope of variables 
+ 
+4.1 JAVASCRIPT ARRAYS 
+ 
+A normal JavaScript variable such as var age = 18 holds a single piece of data. An array 
+is a way to hold more than one piece of data under the same name. There are three 
+ways to set up an array but the simplest (Literal) looks like this: 
+var my_array = [10, "ten", true]; 
+ 
+This sets up an array to hold three values all under 
+the single variable

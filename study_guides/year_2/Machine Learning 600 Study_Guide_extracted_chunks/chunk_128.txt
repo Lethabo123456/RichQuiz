@@ -1,0 +1,20 @@
+negatives—
+namely, the total number of positives in the applied dataset. Other indicators that can easily 
+be extracted from the confusion matrix are those listed in Table 6.4. 
+ 
+                                                                                           Table 6.4: ML metrics 
+ 
+Not any indicator is relevant in the same way for just any problem. For a model designed to 
+recognize spam messages, false positives (spam messages detected as regular messages) are 
+largely preferable to false negatives (regular messages classified as spam). For a model 
+
+P a g e  | 81 
+ 
+designed to evaluate the credit rating instead, a false negative is preferable to a false positive. 
+For a bank, in fact, it is preferable to deny credit to a reliable customer than to concede it to 
+a potentially risky customer. 
+ 
+6.9.2 Regularization 
+Cross validation is not the only approach to avoid overfitting. Another commonly used 
+approach is regularization.  
+Regularization is about adding some pen

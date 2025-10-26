@@ -1,0 +1,32 @@
+Value           Description 
+-----------------------------------------------------------------------------------
+Text            Specifies that the field is a text box. 
+-----------------------------------------------------------------------------------
+Password        Specifies that the field is a text box in which the text is 
+                encrypted. 
+-----------------------------------------------------------------------------------
+Checkbox        Specifies that the field is a check box. 
+-----------------------------------------------------------------------------------
+Radio           Specifies that the field is a radio button. 
+-----------------------------------------------------------------------------------
+Submit          Creates a button to submit the data in a form to a database on 
+                the Web server. 
+-----------------------------------------------------------------------------------
+Reset           Creates a button that deletes all the data entered in a form. 
+-----------------------------------------------------------------------------------
+Button          Creates a button that does not have a preset function. It can be 
+                assigned a specific function by using a programming language, 
+                such as JavaScript. 
+-----------------------------------------------------------------------------------
+Hidden          Indicates that the field will not appear on the page, but the 
+                content of the field is submitted to the Web server. 
+-----------------------------------------------------------------------------------
+Image           Displays the image specified by the SRC attribute of the INPUT 
+                tag. When you click this image, the data of the form is 
+                submitted.  
+-----------------------------------------------------------------------------------
+
+
+To obtain information from users in the form of text or numbers, you use fields, such 
+as text boxes and text area. You can allow users to select from a given list of items by 
+using fields such as list boxes, radio buttons, and check boxes. 

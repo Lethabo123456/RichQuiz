@@ -1,0 +1,16 @@
+n conjunction 
+with the p-value. 
+o The p-value is the probability that the observed data occurred this way by 
+chance. When the data is showing very strong evidence against the null 
+hypothesis, the test statistic becomes large (either positive or negative) and 
+the p-value usually becomes very small, which means that our test is showing 
+powerful results and what is happening is, probably, not happening by chance. 
+o In the case of a t-test, a t value is our test statistic, as shown: 
+ 
+t_statistic, p_value = stats.ttest_1samp(a=engineering_breaks, popmean=breaks.mean()) 
+print(t_statistic, p_value)  # -5.742, 0.00000018 
+ 
+The test result shows that the t value is -5.742. This is a standardized metric that reveals the 
+deviation of the sample mean from the null hypothesis. The p value is what gives us our final 
+answer. Our p-value is telling us how often our result would appear by chance. So, for 
+example, if our p-value was .06, then that would mean we should expect to observe thi

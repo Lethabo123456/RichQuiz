@@ -1,0 +1,33 @@
+Figure 31: Hex-to-binary-to-decimal chart 
+
+Hexadecimal addressing is completely different than binary or decimal by reading nibbles not bytes. 
+If we use nibble we can convert bits to hex. On step 1 know that the hexadecimal addressing scheme 
+uses number 0 through 9. (we can’t use 10, 11, 12 and so forth because they are two digits) so 
+letters A, B, C, D, E and F are used to represent 10, 11, 12, 13, 14, and 15 as follows; 
+Further reading: network+ Study Guide, 3rd Edition by Todd Lammle. (Page 104- 22) 
+
+2.5 Ethernet Addressing  
+What is a MAC address? What is OUI? 
+A MAC address is a unique identifier for network interfaces. It is a 48-bit number (12 hexadecimal 
+characters). They can either be written in either of these formats: 
+ 
+MM:MM:MM:SS:SS:SS 
+MM-MM-MM-SS-SS-SS 
+ 
+Figure 32: MAC Address and OUI 
+An OUI {Organizationally Unique Identifier} is a 24-bit number that uniquely identifies a vendor or 
+manufacturer. They are purchased and assigned by the IEEE. The OUI is basically the first three 
+octets of a MAC address. For example, these are examples of OUI: 
+
+ 00:00:0A -- this is owned by Omron 
+ 00-0D-4B -- this is owned by Roku, LLC 
+
+How to find the MAC address 
+
+2.5.1 How to find the MAC address in Windows  
+ Go to the DOS prompt 
+ o Click on Start button, select Run 
+ o Type cmd and press ENTER 
+
+ In the DOS prompt, type ipconfig /all and press ENTER 
+You should see the MAC address in this format 00:00:00:00:00:00 

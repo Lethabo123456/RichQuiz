@@ -1,0 +1,35 @@
+<Button android:id=“@+id/btnSave” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text= “save” /> 
+ 
+For the second Button, the layout_width attribute is set to wrap_content so that its width will be the 
+width of its content — specifi cally, the text that it is displaying (i.e.,”Open”): 
+ 
+<Button android:id=“@+id/btnOpen” 
+android:layout_width=“wrap_content” 
+android:layout_height=“wrap_content” 
+android:text=“Open” /> 
+ 
+The ImageButton displays a button with an image. The image is set through the src attribute. In this 
+case, you simply used the image for the application icon: 
+
+<ImageButton android:id=“@+id/btnImg1” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:src=“@drawable/ic_launcher” /> 
+  
+The EditText view displays a rectangular region where the user can enter some text. You set the 
+layout_height to wrap_content so that if the user enters a long string of text, its height will 
+automatically be adjusted to fi t the content. 
+ 
+<EditText android:id=“@+id/txtName” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” /> 
+ 
+The CheckBox displays a checkbox that users can tap to check or uncheck: 
+ 
+<CheckBox android:id=“@+id/chkAutosave” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:text=“Autosave” /> 

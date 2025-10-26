@@ -1,0 +1,35 @@
+on returns the location of the pivot so that we can determine the 
+starting and ending locations of the sublists. Also, because the function partition will be a member of the 
+class, it has direct access to the array containing the list. Thus, to partition a list, we need to pass only the 
+starting and ending indices of the list.  
+  
+template <class elemType>  
+int arrayListType<elemType>::partition(int first, int last)  
+{  
+elemType pivot;  
+  
+int index, smallIndex;   
+  
+swap(first, (first + last) / 2);  
+  
+pivot = list[first];  
+smallIndex = first;  
+  
+for (index = first + 1; index <= last; index++)  
+if (list[index] < pivot)  
+{  
+
+301  
+  
+smallIndex++;  
+swap(smallIndex, index);  
+}  
+  
+swap(first, smallIndex);  
+return smallIndex;  
+}  
+As you can see from the definition of the function partition, certain elements of the list need to be 
+swapped. The following function, swap, accomplishes this task:  
+  
+template <class elemType>  
+void arrayListType<elemType>::swap(int fi

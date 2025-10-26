@@ -1,0 +1,20 @@
+pointer of the root node of the AVL tree are passed 
+as parameters to this function.  
+  
+The following steps describe the function insertIntoAVL:  
+  
+1. Create a node and copy the item to be inserted into the newly created node.  
+2. Search the tree and find the place for the new node in the tree.  
+3. Insert the new node in the tree.  
+
+364  
+  
+4. Backtrack the path, which was constructed to find the place for the new node in the tree, to the 
+root node. If necessary, adjust the balance factors of the nodes, or reconstruct the tree at a node 
+on the path.  
+  
+Because Step 4 requires us to backtrack the path to the root node, and in the binary tree we have links 
+only from the parent to the children, the easiest way to implement the function insertIntoAVL is to use 
+recursion. (Recall that recursion automatically takes care of the backtracking.) This is exactly what we do. 
+The function insertIntoAVL also uses a reference bool parameter, isTaller, to indicate to the parent 
+whether

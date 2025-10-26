@@ -1,0 +1,48 @@
+Chapter 2: Data Transformation with Pandas 
+ 
+2.1 Working with different Data Types 
+
+2.1.0 Strings 
+Pandas provide various string methods to manipulate string data in DataFrame columns. These methods are accessed 
+through the .str accessor. 
+ 
+In the example above, we converted all the values in the Name column to a string using .str and then converted these 
+strings to uppercase. Other string functions include lower(), capitalise(), title(), etc. You can learn more about the 
+different 
+functions 
+here: 
+https://pandas.pydata.org/docs/reference/api/pandas.Series.str.upper.html#pandas.Series.str.upper 
+ 
+2.1.1 DateTime 
+You can convert string representations of dates into DateTime objects, perform arithmetic operations, and extract 
+components like year, month, day, etc. (See Example 2.2) 
+ 
+2.1.2 Categorical Data 
+Categorical data represents data that can take on a limited, fixed number of possible values. When you convert a 
+column to a categorical data type in Pandas, it creates a unique integer code for each unique value in the column and 
+stores the actual category labels separately.  
+
+In the output for Example 2.3, you can see that the 'Category' column has been converted to a categorical data type, 
+and the unique categories are labelled as 'A', 'B', and 'C'. However, when we access the category codes, we see that 
+each category is represented by a unique integer code (0 for 'A', 1 for 'B', and 2 for 'C'). 
+
+2.2 Create New Columns 
+
+2.2.1 Vectorised Operation 
+ 
+Vectorized operations allow you to apply functions to entire columns without explicit loops directly. This is efficient 
+and typically faster than other methods. 
+
+2.2.2 apply() 
+ 
+The apply() method applies a function along the specified axis of the DataFrame. You can define your custom function 
+or use built-in functions. 
+
+2.2.3 lambda Function: 
+ 
+Lambda functions are concise and can be used inline. They are handy for simple transformations. 
+
+2.2.4 assign() 
+ 
+The assign() method creates new columns in a DataFrame and returns a new DataFrame with the additional columns.  
+ 

@@ -1,0 +1,20 @@
+Connectivity Issues 
+One of the most important aspects of mobile devices is that they are able to communicate with other 
+devices and the internet. This enables the capability to create very powerful and useful apps. However, 
+this also poses design problems. The device’s capability to connect can be lost, or the connection 
+speed may be very slow. Additionally, these problems can arise if the device moves even a few feet. 
+Compounding the problem is that users may not recognize or even understand  that there is a 
+connectivity problem while they are using the app. Apple requires that all apps submitted to the app 
+store include a user warning when the network connection is lost, but this doesn’t address slow speeds 
+and is not required by Android at all. 
+ 
+Again, design and planning are your solutions. 
+The primary issue that the app developer has to be concerned with is blocking the user from working 
+with your app. When the app receives or sends data, it can take a significant amount of time. Users 
+are unlikely to be happy waiting for this action to complete before moving on to other tasks. This 
+means that you have to plan for uploading and downloading data asynchronously, which means that 
+you have to make it run outside the main thread of the app. It also means that the rest of the app 
+should be designed to provide other things users can do, unless the data is absolutely necessary for 
+the task. If a user tries to do something that requires the data, provide a warning. The warning should 
+provide enough information to help users decide what they should do next. If there is no connection 
+or if there is a weak signal, tell them and give them options. 

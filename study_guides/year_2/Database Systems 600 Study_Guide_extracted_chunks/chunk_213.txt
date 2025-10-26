@@ -1,0 +1,12 @@
+loyee is entered in the EMPLOYEE table, a JOB_CLASS value must 
+be entered. In such cases, it would be better to add a new attribute to create a unique identifier, and 
+thus a new primary key would be chosen. 
+Evaluating Naming Conventions. It is best to adhere to the naming conventions outlined in the 
+discussion about Data Models (Section 1.2 of learner guide). Therefore, to make sure that all tables 
+conform, some table names may be changed after the completion of the normalization process.  
+Refining Attribute Atomicity. It is generally good practice to pay attention to the atomicity 
+requirement. An atomic attribute is one that cannot be further subdivided. Such an attribute is said 
+to display atomicity. By improving the degree of atomicity, you also gain querying flexibility.  
+Identifying New Attributes. Take the EMPLOYEE table for an example, if it were used in a real-
+world environment, several other attributes would have to be added. These attributes would be 
+useful in data

@@ -1,0 +1,28 @@
+Numbers? The scores are cumulative future rewards. The AI thinks long-term, 
+calculating total points it will earn over many future actions, not just immediate rewards. 
+
+Bottom Line: The AI discovered the optimal strategy: maintain a cycle of 
+High→Deliver→Medium→Recharge→High, maximizing rewards over time. 
+
+6.1.3.3 Q-Learning vs DQN 
+
+Feature                Q-Learning                          DQN (Deep Q-Learning)
+--------------------------------------------------------------------------------------------------- 
+State Space            Discrete, small                     High-dimensional, continuous 
+---------------------------------------------------------------------------------------------------
+Memory                 Tabular                             Neural network weights 
+---------------------------------------------------------------------------------------------------
+Speed of Learning      Fast in small domains               Slower but scalable 
+---------------------------------------------------------------------------------------------------
+Stability              Can converge with enough episodes   Requires careful tuning (e.g., replay) 
+---------------------------------------------------------------------------------------------------
+Robotic Applicability  Ideal for toy/grid worlds           Preferred for real-world robot control
+--------------------------------------------------------------------------------------------------- 
+ 
+Reinforcement learning provides robots with the capability to learn from interaction, adapt over 
+time, and improve their performance autonomously. Q-learning is suitable for small, manageable 
+environments and can be used to teach robots decision-making strategies in energy, motion, or 
+task execution. DQN extends these principles to more complex, real-world robotic tasks where 
+learning must occur from raw or structured sensor data. 
+Together, Q-learning and DQN form a conceptual and practical foundation for intelligent, 
+autonomous robot behaviour.

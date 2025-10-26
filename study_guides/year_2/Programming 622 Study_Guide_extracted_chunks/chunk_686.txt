@@ -1,0 +1,29 @@
+llowing is true:  
+i. 
+T has a special node called the root node.  
+ii. 
+T has two sets of nodes, LT and RT, called the left subtree and right subtree of T, 
+respectively.  
+iii. 
+The key in the root node is larger than every key in the left subtree and smaller than every 
+key in the right subtree.  
+iv. 
+LT and RT are binary search trees.  
+  
+The following operations are typically performed on a binary search tree:  
+  
+  
+  
+
+337  
+  
+Search the binary search tree for a particular item.  
+Insert an item in the binary search tree.  
+Delete an item from the binary search tree.  
+Find the height of the binary search tree.  
+Find the number of nodes in the binary search tree.  
+Find the number of leaves in the binary search tree.  
+Traverse the binary search tree. Copy 
+the binary search tree.  
+Clearly, every binary search tree is a binary tree. The height of a binary search tree is determined the same 
+way as the height of a binary tree. Similarly, the operations to find the number of

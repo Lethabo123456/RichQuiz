@@ -1,0 +1,33 @@
+The European Union’s Safe Harbour Decision in 2000 allowed US companies complying with 
+certain data governance standards to transfer data from the EU to the US. The ability of 
+US companies to safeguard personal data came into question following the Edward Snowden 
+affair, so that, on 6 October 2015, the European Court of Justice 
+invalidated the EC’s Safe Harbour Decision, noting that ‘legislation 
+permitting the public authorities to have access on a generalized 
+basis to the content of electronic communications must be regarded as compromising the 
+essence of the fundamental right to respect for private life.’85 A replacement for Safe 
+Harbou, the EU–US Privacy Shield, was approved by the European Commission nine months 
+later (July 2016). 
+
+Data science and privacy revelations 
+To protect yourself from legal and reputational risk, you’ll need more than just an 
+understanding of laws. You’ll need to understand how customers perceive your use of data, 
+and you’ll need to be conscious of how data science techniques can lead to unintended legal 
+violations. 
+
+When Target used statistical models to identify and target pregnant shoppers, they were not 
+collecting private data, but they were making private revelations with a high degree of 
+accuracy. They weren’t breaking laws, but they were taking a public relations risk. 
+It’s interesting to compare these examples, as no laws were broken by Target, but the 
+company took reputational risk through non-transparent use of personal information. Netflix, 
+on the other hand, aligned its efforts in a very open and transparent way with the interests 
+of customers, in this case to arrive at better video recommendations. There was little 
+reputational risk, but there were legal consequences. 
+
+Other companies and even governments have fallen victim to such ‘linkage attacks’, in which 
+linking data sources allows attackers to compromise privacy measures. If your projects 
+require you to distribute anonymized personal information, you can apply techniques 
+in differential privacy, an area of research in methods to protect against linkage attacks while 
+maintaining data accuracy for legitimate applications. You may need this even for internal use 
+of data, as laws are increasingly limiting companies’ rights to use personal data without 
+explicit consent.

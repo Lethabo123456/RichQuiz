@@ -1,0 +1,21 @@
+lar, you will learn how to allocate and 
+deallocate memory during program execution using pointers. 
+ 
+Variables that are created during program execution are called dynamic variables. 
+With the help of pointers, C++ creates dynamic variables. C++ provides two operators, 
+new and delete, to create and destroy dynamic variables, respectively. When a 
+program requires a new variable, the operator new is used. When a program no longer 
+needs a dynamic variable, the operator delete is used. In C++, new and delete are 
+reserved words. 
+ 
+Operator new 
+The operator new has two forms: one to allocate a single variable and another to 
+allocate an array of variables. The syntax to use the operator new is: 
+ 
+in which intExp is any expression evaluating to a positive integer. 
+ 
+The operator new allocates memory (as a variable) of the designated type and returns 
+a pointer to it—that is, the address of this allocated memory. Moreover, the allocated 
+memory is uninitialized. 
+ 
+Consider the follo

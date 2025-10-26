@@ -1,0 +1,31 @@
+intList2.end(), screen);      //Line 22 
+cout << endl;           //Line 23 intList1.unique();          //Line 24  
+cout << "Line 25: After removing the consecutive "<< "duplicates," <<endl  
+<<" intList1:";          //Line 25 copy(intList1.begin(), intList1.end(), screen);      //Line 
+26 cout << endl;           //Line 27 intList2.sort();          //Line 28 cout << "Line 29: After sorting, 
+intList2: ";       //Line 29 copy(intList2.begin(), intList2.end(), screen);      //Line 30 cout << 
+endl;           //Line 31 return 0;           //Line 32  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 33  
+  
+Sample Run:  
+Line 17: intList1: 23 58 58 36 15 98 58  
+Line 21: intList2: 23 58 58 36 15 98 58  
+Line 25: After removing the consecutive duplicates,    
+intList1: 23 58 36 15 98 58  
+Line 29: After sorting, intList2: 15 23 36 58 58 58 98  
+  
+For the most part, the output of the preceding program is straightforward. The statements in Lines 10 
+through 16 insert the element numbers 23, 58

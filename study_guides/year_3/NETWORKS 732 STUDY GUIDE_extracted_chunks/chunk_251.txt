@@ -1,0 +1,39 @@
+5.3.9 route Command 
+Windows devices like routers perform routing. Most of the time, it’s a good idea to leave Windows 
+alone, but it’s still good to know how to add and delete routes on your Windows machines. 
+Probably the biggest reason for manipulating the routing table on a Windows server is to create 
+a ﬁrewall. For instance, let’s say we’re running an Application layer ﬁrewall on a Windows server 
+located between a screen subnet, formerly known as a demilitarized zone (DMZ), and the internal 
+network. This scenario would mean the routing that’s happening on the server or hosts located 
+in the DMZ wouldn’t be able to reach the internal network’s hosts and vice versa. To circumvent 
+this problem, we would need to employ both static and default routing because while Windows 
+10 and Windows Server versions support some routing protocols, running routing protocols on 
+hosts and servers wouldn’t be a good solution for today’s networks, and Microsoft knows that. To 
+view the routing table on a Windows device, use the route print command, as shown in Figure 
+5.21. 
+In this output, you can see that each of the routes were added automatically when the system 
+booted up. (This is all based on the conﬁguration of your IP stack.) To see all the options available 
+with the route command, type the route command and then press Enter. To add a route to your 
+routing table, use the following syntax: 
+route [-f] [-p] [Command [Destination] [mask Netmask] [Gateway] 
+ 
+[metric Metric]] [if Interface]] 
+Using the route Command Options 
+ 
+Let’s start with the switches you can use: 
+ 
+-f Using this switch with any of the options like add, change, or delete will clear the routing table 
+of all entries that aren’t host routes (routes with the subnet mask 255.255.255.255), the loopback 
+network route or routes (routes with a destination of 127.0.0.0 and the subnet mask 255.0.0.0), 
+and any multicast routes (those with a destination of 224.0.0.0 and the subnet mask 240.0.0.0). 
+-p If you use this with the add command, the individual route will be added to the 
+Registry and then used to initialize the IP routing table whenever TCP/IP is started. It is important 
+to remember that by default, the routes you’ve statically added won’t remain at the routing table 
+the next time TCP/IP boots. And if you use -p with the print command, you’ll be shown a list of 
+the persistent routes that are stored in the Registry location of 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\PersistentRout 
+es. 
+Now, let’s take a look at how and when you would use the route command. Table 5.4 shows the 
+command options available and what they do when you are using the route command with them. 
+ 
+Figure 5.21: route print output (Lammle, 2022) 

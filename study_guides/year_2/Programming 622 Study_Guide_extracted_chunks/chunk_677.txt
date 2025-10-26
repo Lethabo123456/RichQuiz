@@ -1,0 +1,48 @@
+return (root == NULL);  
+}  
+  
+The default constructor initializes the binary tree to an empty state; that is, it sets the pointer root to 
+NULL. Therefore, the definition of the default constructor is as follows:  
+  
+template <class elemType>  
+binaryTreeType<elemType>::binaryTreeType()  
+{  
+root = NULL;  
+}   
+The definitions of the other functions are as follows:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::inorderTraversal() const  
+{  
+inorder(root);  
+}  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::preorderTraversal() const  
+{  
+preorder(root);  
+}  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::postorderTraversal() const  
+{  
+postorder(root);  
+}  
+  
+template <class elemType>  
+
+332  
+  
+int binaryTreeType<elemType>::treeHeight() const  
+{  
+return height(root);  
+}  
+  
+template <class elemType>  
+int binaryTreeType<elemType>::treeNodeCount() const  
+{  
+return nodeCount(root);  
+}  
+  
+template <class elemType>  
+int

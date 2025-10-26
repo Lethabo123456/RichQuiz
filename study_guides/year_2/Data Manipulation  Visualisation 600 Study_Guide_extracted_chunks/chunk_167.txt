@@ -1,0 +1,14 @@
+app or interacts with the app, that data (the df) is already in 
+memory. If possible, expensive initialization (like downloading or querying data) should be done in 
+the global scope of the app instead of within the callback functions. 
+● The callback does not modify the original data, it just creates copies of the dataframe by 
+filtered through pandas filters. This is important: your callbacks should never mutate variables 
+outside of their scope. If your callbacks modify global state, then one user's session might affect 
+the next user's session and when the app is deployed on multiple processes or threads, those 
+modifications will not be shared across sessions. 
+ 
+    6.4.7 Multiple Inputs 
+Input parameters are passed to the callback decorator as a list. For this reason, we can include 
+multiple inputs in our dashboard to affect the same output through a callback function. For this 
+example we’ll use the mpg.csv dataset to show two input components - both dropdowns - will let 
+us s

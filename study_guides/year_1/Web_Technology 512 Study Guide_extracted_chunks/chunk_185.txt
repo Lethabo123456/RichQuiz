@@ -1,0 +1,26 @@
+ag itself: 
+<FORM NAME="frmOne" ACTION="" METHOD="POST"> 
+ 
+After reading this Section of the guide, the learner should be able to: 
+
+ 
+117 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+We have given the form the name frmOne. We 
+will be using this name in our JavaScript. We have 
+also left the ACTION attribute blank. But in a real 
+world situation this would be the name of a 
+processing script like form_validate.php. Or you 
+could have an email address for the ACTION. This, 
+however, is not recommended as spammers have 
+bots trawling the net for email addresses in HTML 
+pages. For further information about ACTION and 
+METHOD, see our web design course. 
+ 
+The form elements we have going to be testing are the text box elements, radio 
+buttons (sometimes called option buttons), dropdown lists, and check boxes.  
+ 
+Each element on our form also has a NAME attribute. To go with each element we 
+have a SPAN tag. The SPAN tags have a CSS colour and an ID. We will be using these 
+SPAN tags to displa

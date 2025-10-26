@@ -1,0 +1,51 @@
+3.2.2 Using Pseudocode to Develop, Test and Debug a Program 
+ 
+Sometimes pseudo provides a useful means to outline and refine a program before 
+putting it into formal C++ code. When you are constructing programs that involve 
+complex nested control structures, pseudo can help you quickly develop the correct 
+structure of the program and avoid making common errors. One useful program 
+segment determines the larger of two integers. If x and y are integers, using pseudo, 
+you can quickly write the following: 
+ 
+a. if (x > y) then  
+    x is larger 
+b. if (y > x) then  
+     y is larger 
+
+If the statement in (a) is true, then x is larger. If the statement in (b) is true, then y is 
+larger. However, for this code to work in concert to determine the larger of two integers, 
+the computer needs to evaluate both expressions:  
+(x > y) and (y > x) 
+even if the first statement is true. Evaluating both expressions when the first one is 
+true is a waste of computer time. 
+ 
+Let’s rewrite this pseudo as follows:  
+ 
+ if (x > y) then  
+             x is larger  
+else  
+          y is larger 
+
+3.3 switch Structures  
+Recall that there are two selection, or branch, structures in C++. The first selection 
+structure, which is implemented with if and if. . .else statements, usually requires the 
+evaluation of a (logical) expression. The second selection structure, which does not 
+require the evaluation of a logical expression, is called the switch structure. C++’s 
+switch structure gives the computer the power to choose from among many 
+alternatives. 
+
+The switch statement executes according to the following rules:  
+
+1. When the value of the expression is matched against a case value (also called 
+a label), the statements execute until either a break statement is found or the 
+end of the switch structure is reached.  
+2. If the value of the expression does not match any of the case values, the 
+statements following the default label execute. If the switch structure has no 
+default label and if the value of the expression does not match any of the case 
+values, the action of the switch statement is null. 
+3. A break statement causes an immediate exit from the switch structure. 
+  
+ 
+The following program illustrates the effect of the break statement. It asks the user to 
+input a number between 0 and 7. 
+

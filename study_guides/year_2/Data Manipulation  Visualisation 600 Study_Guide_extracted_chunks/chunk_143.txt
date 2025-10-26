@@ -1,0 +1,28 @@
+te that, unlike Plotly, layout1.py is an active script that requires a local web server running 
+in the background. If you should make changes to layout1.py that prevent it from running properly then the 
+terminal will display an error and shut down the server. 
+Dash uses Flask as its server back end. You can pass debug=True into the server call to enable some 
+diagnostic services (you wouldn’t want to do this in production!). The code would look like this: 
+ 
+if __name__ == '__main__': 
+ 
+app.run_server(debug=True) 
+ 
+Before we move on, let’s make some changes to the HTML on our page. Open a new file called layout2.py 
+and copy the contents of layout1 to layout2. (You can simply duplicate layout1.py if you want). 
+Next, insert the code shown below in black  
+# -*- coding: utf-8 -*-
+import dash 
+ 
+import dash_core_components as dcc 
+import dash_html_components as html 
+ 
+app = dash.Dash() 
+ 
+colors = { 
+'background': '#111111', 
+'text': '#7FDBFF' 
+ 
+} 
+ 
+app.layout = html.Div(children=

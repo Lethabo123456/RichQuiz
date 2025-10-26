@@ -1,0 +1,23 @@
+ch byte represents a single 
+character, which can be a number (4), letter (R), blank space (spacebar), punctuation mark 
+(?), or other symbol (&). 
+ 
+ Fields 
+A field is a combination of one or more related characters or bytes and is the smallest unit 
+of data a user accesses. A field name uniquely identifies each field. When searching for 
+data in a database, you often specify the field name. For example, field names for the data 
+in the Instructor file are Instructor ID, First Name, Last Name, Extension, Office, and Email 
+Address. The data type specifies the kind of data a field can contain and how the field is 
+used. 
+ 
+
+Page 95 of 117 
+ 
+ 
+ 
+ 
+ Records 
+A record is a group of related fields. For example, a student record includes a set of fields 
+about one student. A primary key is a field that uniquely identifies each record in a file. The 
+data in a primary key is unique to a specific record. For example, the Student ID field uniquely 
+identifies each student because no two st

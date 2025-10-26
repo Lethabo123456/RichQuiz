@@ -1,0 +1,30 @@
+The –r Switch 
+You use the –r switch to display the current route table for a workstation so that you can see 
+exactly how TCP/IP information is being routed. This will give you the same output as the route 
+print command that we covered earlier. 
+The –s Switch 
+Using the –s switch displays a variety of TCP, UDP, IP, and ICMP protocol statistics. But be warned— 
+the output you’ll get is long, which may or may not be okay for you. 
+The –p Switch 
+Like the –n switch, the –p switch is a modiﬁer that’s usually used with the –s switch to specify 
+which protocol statistics to list in the output (IP, TCP, UDP, or ICMP). For example, if you want to 
+view only ICMP statistics, you use the –p switch like so: netstat –s –p ICMP 
+The netstat utility then displays the ICMP statistics instead of the entire gamut of TCP/ IP statistics 
+that the –s switch will typically ﬂood you with. For a diﬀerent example, let’s use the -s and -p 
+switches to retrieve some IPv6 information: 
+ 
+Figure 5.30: Sample output of the netstat –s -p command (Lammle, 2022) 
+TCP connections my host has: 
+C:\Users\tlammle>netstat -s -p tcp 
+TCP Statistics for IPv4 
+Active Opens = 7832 
+Passive Opens = 833 
+Failed Connection Attempts = 1807 
+Reset Connections = 2428 
+Current Connections = 11 
+Segments Received = 1391678 
+Segments Sent = 1340994 
+Segments Retransmitted = 6246 
+ 
+Figure 5.31: Sample output of the netstat –s -p tcp (Lammle, 2022) 
+This kind of eﬃciency is exactly why it’s good to use the -p modiﬁer with the -s switch. 

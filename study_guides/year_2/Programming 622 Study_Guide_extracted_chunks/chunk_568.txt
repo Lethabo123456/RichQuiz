@@ -1,0 +1,23 @@
+are included as public members of the related class. 
+(For example, for an array-based list, these are the members of the class arrayListType.) By doing so, the 
+algorithms have direct access to the list elements.  
+  
+Suppose that the sorting algorithm selection sort (described in the next section) is to be applied to array-
+based lists. The following statements show how to include selection sort as a member of the class 
+arrayListType:  
+  
+template <class elemType> class 
+arrayListType  
+{ public:  
+void selectionSort();  
+...  
+};  
+  
+ 
+8.2  
+Selection Sort: Array-Based Lists  
+  
+In selection sort, a list is sorted by selecting elements in the list, one at a time, and moving them to their 
+proper positions. This algorithm finds the location of the smallest element in the unsorted portion of the 
+list and moves it to the top of the unsorted portion (that is, the whole list) of the list. The first time we 
+locate the smallest item in the entire list, the second time we locate the s

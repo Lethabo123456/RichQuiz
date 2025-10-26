@@ -1,0 +1,19 @@
+om a binary search tree that has both left and right nonempty subtrees, first its 
+immediate predecessor is located, then the predecessor’s info is copied into the node, and finally the 
+predecessor is deleted.  
+14. A perfectly balanced binary tree is a binary tree such that  
+i. 
+The heights of the left and right subtrees of the root are equal.  
+ii. 
+The left and right subtrees of the root are perfectly balanced binary trees.  
+15. An AVL (or height-balanced) tree is a binary search tree such that  
+i. 
+The heights of the left and right subtrees of the root differ by at most 1.  
+ii. 
+The left and right subtrees of the root are AVL trees.  
+16. Let x be a node in a binary tree. xl denotes the height of the left subtree of x; xh denotes the height of 
+the right subtree of x.  
+17. Let T be an AVL tree and x be a node in T. Then |xh - xl| ≤ 1, where |xh - xl| denotes the absolute value 
+of xh - xl.  
+18. Let x be a node in the AVL tree T.  
+a. If xl > xh, we say the x is left high. In

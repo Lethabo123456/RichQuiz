@@ -1,0 +1,15 @@
+t data type each field is. This information is valuable when writing 
+programs that make use of the data. 
+ Easier modification of data and information: The data dictionary and the database 
+appro- ach make modifications to data easier because users do not need to know where 
+the data is stored. The person making the change indicates the new value of the variable 
+or item, such as part number, that is to be changed. The database system locates the data 
+and makes the necessary change. 
+ 
+Storing and Retrieving Data 
+ 
+One function of a DBMS is to be an interface between an application program and the database. 
+When an application program needs data, it requests that data through the DBMS. Suppose that 
+to calculate the total price of a new car, a car dealer pricing program needs price data on the 
+engine option – six cylinders instead of the standard four cylinders. The application program 
+thus requests this data from the DBMS. In doing so, the application program follows a logical

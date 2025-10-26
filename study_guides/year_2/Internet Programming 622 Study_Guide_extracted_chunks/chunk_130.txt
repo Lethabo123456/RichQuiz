@@ -1,0 +1,18 @@
+irectory in question cannot be 
+found. Make sure the file or directory exists first (for example, by using file_exists() ) to avoid such 
+errors.   
+   
+3.15 Working With Directories   
+PHP lets you work with directories in much the same way as files, using a variety of equivalent 
+functions. Some directory functions use a directory handle, whereas others use a string containing 
+the name of the directory with which you want to work. A directory handle is similar to a file handle; 
+it is a special variable pointing to a directory, which you can obtain via the opendir() function:   
+   
+$handle = opendir( “/home/james” );   
+   
+If therei s a problem opening the directory (for example, if the directory does not exist), opendir() 
+returns false instead of the directory handle. As you may have guessed, you can close a directory by 
+passing the directory handle to the function closedir() :   
+   
+closedir( $handle );   
+The readdir() function expects a directory handle for an opened direct

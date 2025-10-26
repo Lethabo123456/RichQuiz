@@ -1,0 +1,17 @@
+l at vertex 0. After visiting the vertex 0, we visit the vertices 
+that are directly connected to it and are not visited, which are 1 and 5. Next, we visit the vertices that are 
+directly connected to 1 and are not visited, which are 2 and 3. After this, we visit the vertices that are 
+directly connected to 5 and are not visited, which is 6. After this, we visit the vertices that are directly 
+connected to 2 and are not visited, and so on.  
+  
+As in the case of the depth-first traversal, because it might not be possible to traverse the entire graph 
+from a single vertex, the breadth-first traversal also traverses the graph from each vertex that is not 
+visited. Starting at the first vertex, the graph is traversed as much as possible; we then go to the next 
+vertex that has not been visited. To implement the breadth-first search algorithm, we use a queue. The 
+general algorithm is as follows:  
+  
+1. for each vertex v in the graph if v is not visited  
+ 
+add v to the queue     
+  
+//st

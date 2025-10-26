@@ -1,0 +1,13 @@
+vertices u1, u2, . . ., un such that u = u1, un = v and (ui, ui+1) is an edge 
+for all i = 1, 2, . . ., n - 1. Vertices u and v are called connected if there is a path from u to v. A simple path 
+is a path in which all the vertices, except possibly the first and last vertices, are distinct. A cycle in G is a 
+simple path in which the first and last vertices are the same. G is called connected if there is a path from 
+any vertex to any other vertex. A maximal subset of connected vertices is called a component of G.  
+  
+Let G be a directed graph, and let u and v be two vertices in G. If there is an edge from u to v, that is, (u, 
+v)  E, we say that u is adjacent to v and v is adjacent from u. The definitions of the paths and cycles in G 
+are similar to those for undirected graphs. G is called strongly connected if any two vertices in G are 
+connected.  
+  
+Consider the directed graphs of Figure 10-4. In G1, 1-4-5 is a path from vertex 1 to vertex 5. There are no 
+cycles in G1. In G2, 1

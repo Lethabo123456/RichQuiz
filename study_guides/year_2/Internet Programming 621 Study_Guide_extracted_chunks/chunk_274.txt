@@ -1,0 +1,84 @@
+2. 
+$x = 3, 4, 5, 6; 
+3. 
+echo "$x"; 
+4. 
+?> 
+a) 3 
+b) 4 
+c) 6 
+d) Error 
+  
+Answer: d 
+  
+180. 
+What will be the output of the following PHP code ? 
+<?php 
+$a = 10; 
+$b = 4; 
+$c = fun(10,4); 
+function fun($a,$b) 
+{ 
+$b = 3; 
+return $a - $b + $b - $a;  
+} 
+echo $a; 
+echo $b; 
+echo $c; 
+?> 
+a) 104 
+b) 410 
+c) 1400 
+d) 4100 
+  
+Answer: c 
+ 
+181. 
+What will be the output of the following PHP code ? 
+<?php 
+$a = "$winner"; 
+$b = "/$looser"; 
+echo $a,$b; 
+?> 
+
+a) $winner/$looser 
+b) /$looser 
+c) / 
+d) $looser 
+  
+Answer: c 
+  
+182. 
+What will be the output of the following PHP code ? 
+<?php 
+$a = "$winner"; 
+$b = "\$looser"; 
+echo $a, $b; 
+?> 
+a) $winner\$looser 
+b) \$looser 
+c) \ 
+d) $looser 
+  
+Answer: d 
+  
+183. 
+What will be the output of the following PHP code ? 
+<?php 
+$a = "$winner"; 
+$b = "\\$looser"; 
+echo $a, $b; 
+?> 
+a) $winner\\$looser 
+b) \\$looser 
+c) \ 
+d) $looser 
+  
+Answer: c 
+  
+184. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 5; 
+$y = 10; 
+functio

@@ -1,0 +1,17 @@
+2.4 Ethernet at the Data Link Layer 
+2.4.1 MAC 
+How Ethernet is used these days? What are MAC addresses and how are they used in networking. 
+This is going to cover the Datalink layer where the Ethernet protocol is found. 
+In short a media access control address (MAC address) or Hardware address of a computer is a 
+unique identifier assigned to network interfaces for communications at the data link layer of a 
+network segment. MAC addresses are used as a network address for most IEEE 802 network 
+technologies, including Ethernet and Wi-Fi.  
+
+It is used for data sharing, printers and videoconferencing. For example there are two computers 
+(Diana and Vicky) personalized connected to the same hub how they communicate. It is responsible 
+for framing packets received from the network layer and preparing them for transmission on the 
+local network through the Ethernet contention media-access method (CSMA/CD as discussed 
+previously.  
+The Ethernet MAC addresses are made up of Hexadecimal addresses first things first let’s start by 
+discussing binary, decimal, and followed by Hexadecimal addresses and how to convert one another.  
+

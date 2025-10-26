@@ -1,0 +1,18 @@
+The prefix and postfix operators 
+
+To complicate matters further, you might want to increment a variable and assign the results 
+to a second variable: 
+
+firstValue = secondValue++; 
+
+The question arises: do you want to assign before you increment the value or after? In other 
+words, if secondValue starts out with the value 10, do you want to end with both firstValue 
+and secondValue equal to 11, or do you want firstValue to be equal to 10 (the original value) 
+and secondValue to be equal to 11? C# (again, like C and C++) offer two flavors of the 
+increment and decrement operators: prefix and postfix. Thus you can write:
+
+firstValue = secondValue++; // postfix which will assign first, 
+and then increment (firs tValue=10, secondValue=11). You can 
+also write: 
+firstValue = ++secondValue; // prefix which will increment 
+first, and then assign (firs tValue=11, secondValue=11). 

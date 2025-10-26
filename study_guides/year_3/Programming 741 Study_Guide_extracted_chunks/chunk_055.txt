@@ -1,0 +1,39 @@
+Example 1-8 Nested if statement 
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+static void Main(string[] args) 
+{ 
+int temp = 32; 
+if (temp <= 32) 
+{ 
+Console.WriteLine ("Warning! Ice on road!"); 
+} 
+if (temp == 32){ 
+Console .WriteLine("Temp exactly freezing, beware of 
+water."); 
+} 
+else{ 
+Console.WriteLine("Watch for black ice! Temp: {0}", 
+temp); 
+} Console.ReadLine(); 
+} 
+}
+
+OUTPUT
+
+The logic of Example 1-8 is that it tests whether the temperature is less than or equal to 32. 
+If so, it prints a warning: 
+if (temp <= 32) 
+{ Console.WriteLine ("Warning! Ice on road!"); 
+} 
+
+The program then checks whether the temp is equal to 32 degrees. If so, it prints one 
+message; if not, the temp must be less than 32 and the program prints the second message. 
+Notice that this second if statement is nested within the first if, so the logic of the else is "since 
+it has been established that the temp is less than or equal to 32, and it isn’t equal to 32, it 
+must be less than 32” 

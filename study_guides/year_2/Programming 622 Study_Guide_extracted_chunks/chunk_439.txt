@@ -1,0 +1,20 @@
+first true 
+element) is reserved. The queue will be full if the next available space is the special reserved slot indicated 
+by queueFront. Finally, because the array position indicated by queueFront is to be kept empty, if the 
+array size is, say, 100, then 99 elements can be stored in the queue. (See Figure 6-9.)  
+  
+  
+FIGURE 6-9 Array to store the queue elements with a reserved slot  
+  
+Let us implement the queue using the first solution. That is, we use the variable count to indicate whether 
+the queue is empty or full.  
+  
+The following class implements the functions of the abstract class queueADT. Because arrays can be 
+allocated dynamically, we will leave it for the user to specify the size of the array to implement the queue. 
+The default size of the array is 100.  
+
+223  
+  
+//*************************************************************  
+// This class specifies the basic operation on a queue as an array.  
+//************************************************************* t

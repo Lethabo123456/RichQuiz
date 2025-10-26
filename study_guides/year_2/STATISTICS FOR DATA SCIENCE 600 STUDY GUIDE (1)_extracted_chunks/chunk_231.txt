@@ -1,0 +1,22 @@
+tched = [0, 0, 0, 1, 1.3, 1.4, 2, 2.1, 2.6, 3.2, 4.1,    4.4, 4.4, 5]  
+  
+  
+Here, looking at the same sample of 14 people as before and their answers to the question, 
+how many hours of TV do you watch on average per night:  
+  
+work_performance = [87, 89, 92, 90, 82, 80, 77, 80, 76, 85, 80, 75, 73, 72]  
+  
+These are the same 14 people as mentioned earlier, in the same order, but now, instead of 
+the number of hours they watched TV, we have their work performance as graded by the 
+company or a third-party system:  
+ df = pd.DataFrame({'hours_tv_watched':hours_tv_watched, 'work_ 
+performance':work_performance}) 
+ 
+  
+ Earlier, we looked at a scatter plot of these two variables and it seemed to clearly show a 
+downward trend between the variables—as TV consumption went up, work performance 
+seemed to go down. However, a correlation coefficient, a number between -1 and 1, is a great 
+
+P a g e  | 135 
+ 
+way to identify relationships between variables and, at the same time, quantify them

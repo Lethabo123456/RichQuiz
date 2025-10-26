@@ -1,0 +1,22 @@
+M. Landis and are so 
+named in their honor. The methods of building such binary trees were given by them in 1962.  
+  
+We begin by defining the following terms.  
+  
+Definition: A perfectly balanced binary tree is a binary tree such that  
+  
+i. The heights of the left and right subtrees of the root are equal.  
+ii. The left and right subtrees of the root are perfectly balanced binary trees.  
+  
+Figure 9-12 shows a perfectly balanced binary tree.  
+  
+  
+FIGURE 9-12 Perfectly balanced binary tree  
+  
+Let T be a binary tree and x be a node in T. If T is perfectly balanced, then from the definition of the 
+perfectly balanced tree, it follows that the height of the left subtree of x is the same as the height of the 
+right subtree of x.  
+  
+It can be proved that, if T is a perfectly balanced binary tree of height h, then the number of nodes in T is 
+2h -1. From this, it follows that if the number of items in the data set is not equal to 2h -1 for some 
+nonnegative integer h, then we ca

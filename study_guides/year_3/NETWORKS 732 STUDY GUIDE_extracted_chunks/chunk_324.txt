@@ -1,0 +1,29 @@
+6.9 Association and Wireless Topologies 
+Suppose you bring your laptop to a local café, turn it on, and soon your laptop prompts you to log 
+on to the café’s wireless network to gain access to the Internet through its hotspot. This seemingly 
+simple process, known as association, involves a few packet exchanges between the café’s access 
+point and your computer. Association is another function of the MAC sublayer described in the 
+802.11 standard. 
+
+While a wireless device is on and has its wireless protocols running, it periodically surveys its 
+surroundings for evidence of an access point, a task known as scanning. A device can use either 
+active scanning or passive scanning: 
+
+Active scanning: The wireless client takes the initiative: 
+• The device transmits a special frame, known as a probe, on all available channels within 
+its frequency range. 
+• An AP detects the probe frame and issues a probe response containing all the information 
+a device needs to associate with the AP, including a status code and node ID, or station ID, 
+for that device. 
+• The device can agree to associate with that AP. The ﬁnal decision to associate with an AP, 
+• at least for the ﬁrst time, usually requires the consent of the user. 
+• The two nodes begin communicating over the frequency channel speciﬁed by the AP. 
+ 
+Passive scanning: The AP takes the initiative: 
+• A wireless-enabled device listens on all channels within its frequency range for a special 
+signal, known as a beacon frame, issued periodically from an AP. The beacon frame contains 
+information that a wireless node requires to associate itself with the AP, including the 
+network’s transmission rate and the SSID (service set identiﬁer), a character string used to 
+identify an access point. 
+• The device usually with the consent of the user can choose to associate with the AP. 
+• The two nodes agree on a frequency channel and begin communicating. 

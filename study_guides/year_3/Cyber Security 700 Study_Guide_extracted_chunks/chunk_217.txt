@@ -1,0 +1,25 @@
+The essence of likelihood assessment for a given threat to a given asset is shown in the following steps: 
+
+Step 1. Determine the likelihood that a threat event will occur. That is, determine the 
+likelihood that this threat will develop into an attack on the given asset. 
+Step 2. Determine the degree of vulnerability of the asset to the threat. 
+Step 3. Based on Step 1 and Step 2, determine the likelihood that a security incident will occur. 
+
+This analysis needs to be repeated for every threat to every asset. 
+ISO 27005 and other ISO documents provide limited guidance on how to perform this function. FAIR 
+provides detailed guidance on how to systematically characterize event likelihood, referred to in the 
+FAIR documents as loss event frequency. This guidance, although clear, is rather complex; this chapter 
+provides an overview. As indicated in the left-hand portion of Figure 3.7, FAIR adopts a top-down 
+approach to determining loss event frequency. 
+
+At the top level, it may be possible, based on historical 
+data, to develop an estimate of loss event frequency, simply on the basis of how frequently a loss 
+event has occurred in the past. It is not necessary, and indeed not possible, to derive an exact 
+frequency or probability. For one thing, a security event in the past may remain undetected at the 
+time of the risk assessment. In addition, the past cannot be considered an exact predictor of the 
+future. The examples in the FAIR documents use five levels (very low, low, moderate, high, very high)
+with an order of magnitude change between levels, as shown in Table 3.8.
+
+Table 3.8: FAIR Risk Assessment Levels
+Columns = Level, Loss Magnitude, Event Frequency, Threat Capacity, Resistance Strength, Secondary Loss Probability
+Row = Very High, High, Moderate, Low, Very Low

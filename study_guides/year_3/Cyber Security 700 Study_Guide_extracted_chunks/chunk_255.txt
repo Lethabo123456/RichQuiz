@@ -1,0 +1,47 @@
+Security Planning 
+
+NIST SP 800-18, Guide for Developing Security Plans for Federal Information Systems, indicates that 
+the purpose of a system security plan is to provide an overview of the security requirements of the 
+system and describe the controls in place or planned for meeting those requirements. The system 
+security plan also delineates responsibilities and expected behavior of all individuals who access the 
+system. The system security plan is basically documentation of the structured process of planning 
+adequate, cost-effective security protection for a system. 
+
+security plan 
+A formal document that provides an overview of the security requirements for an information system 
+and describes the security controls in place or planned for meeting those requirements. 
+SP 800-18 recommends that each information system in an organization have a separate plan 
+document with the following elements: 
+
+ Information system name/identifier: A name or identifier uniquely assigned to each system. 
+Assignment of a unique identifier supports the organization’s ability to easily collect 
+information and security metrics specific to the system as well as facilitate complete 
+traceability to all requirements related to system implementation and performance. The 
+identifier should remain the same throughout the life of the system and retained in audit logs 
+related to system use. 
+ Information system owner: The person responsible for managing this asset. 
+ Authorizing individual: The senior management official or executive with the authority to 
+formally assume responsibility for operating an information system at an acceptable level of 
+risk to agency operations, agency assets, or individuals. 
+ Assignment of security responsibility: The individual responsible for the security of the 
+information system. 
+ Security categorization: Using the FIPS 199, Standards for Security Categorization of Federal 
+Information and Information Systems, categories, the acceptable level of risk (low, moderate, 
+or high) for confidentiality, integrity, and availability (for each distinct element of the system, 
+if necessary). 
+ Information system operational status: Status, such as operational, under development, or 
+undergoing major modification. 
+ Information system type: Type, such as major application or support system. 
+ Description/purpose: A brief description (one to three paragraphs) of the function and 
+purpose of the system. 
+ System environment: A general description of the technical system, including the primary 
+hardware, software, and communications equipment. 
+ System interconnections/information sharing: Other systems/information assets that interact 
+with this information system. 
+ Related laws/regulations/policies: Any laws, regulations, or policies that establish specific 
+requirements for confidentiality, integrity, or availability of the system and information 
+retained by, transmitted by, or processed by the system. 
+ Existing security controls: Description of each control. 
+ Planned security controls: Description of each control plus implementation plan. 
+ Information system security plan completion date: The target date. 
+ Information system security plan approval date: The data plan approved date.

@@ -1,0 +1,26 @@
+an item and then click the button again. The error message will vanish. 
+ 
+7.6 CHECKBOXES 
+The final function we need is for the checkbox. You can have one or more checkboxes 
+on a form. We only have one, so checking it is fairly straightforward. If you have more 
+than checkbox, though, you do the testing in exactly the same way as for radio 
+buttons. But here is the code for the checkCheckbox function: 
+ 
+Figure 7.13 – Checkbox validation 
+The “IF statement” just tests the terms HTML element (a checkbox) for a value of 
+checked. If it has been checked then we can return a value of true, as the user has 
+agreed to the terms and conditions. If the checkbox has not been checked, the value 
+will be "undefined" and we can return a value of false. 
+ 
+Test it out. Leave the check box unchecked. Click the submit button and you will see 
+this: 
+ 
+Figure 7.14 – Checkbox not checked 
+When you check the box the error message should disappear. 
+ 
+
+ 
+125 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+7.7 VA

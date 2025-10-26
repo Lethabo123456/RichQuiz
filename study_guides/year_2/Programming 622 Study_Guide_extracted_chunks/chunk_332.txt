@@ -1,0 +1,15 @@
+at the two queens are 
+on the same diagonal if |j – l| = |i – k|, where |j – l| is the absolute value of j – l and so on.  
+  
+Because a solution to the 8-queens puzzle is represented as an 8-tuple, we use the array queensInRow of 
+size 8, where queensInRow[k] specifies the column position of the kth queen in row k. For example, 
+queensInRow[0] = 3 means the first queen is placed in column 3 (which is the fourth column) of row 0 
+(which is the first row).  
+  
+Suppose that we place the first k-1 queens in the first k – 1 rows. Next we try to place the kth queen in a 
+column of the kth row.Wewrite the function canPlaceQueen(k,i),which returns true if the kth queen can 
+be placed in the ith column of row k; otherwise, it returns false.  
+  
+The first k-1 queens are in the first k-1 rows and we are trying to place the kth queen in the kth row. The 
+kth row, therefore, must first be empty. It thus follows that the kth queen can be placed in column i of 
+row k, provided no other queen is in

@@ -1,0 +1,190 @@
+/* ================================
+   HCI Themed Results CSS
+   ================================ */
+
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito+Sans:wght@400;600&display=swap');
+
+   body {
+     font-family: 'Poppins', 'Nunito Sans', sans-serif;
+     background: linear-gradient(135deg, #ffdde1, #ee9ca7, #a1c4fd, #c2e9fb);
+     background-size: 300% 300%;
+     animation: gradientFlow 12s ease infinite;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     color: #2d2d2d;
+   }
+   
+   @keyframes gradientFlow {
+     0% { background-position: 0% 50%; }
+     50% { background-position: 100% 50%; }
+     100% { background-position: 0% 50%; }
+   }
+   
+   .card {
+     background: rgba(255, 255, 255, 0.9);
+     border-radius: 24px;
+     padding: 2rem 2.5rem;
+     width: 90%;
+     max-width: 900px;
+     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+     backdrop-filter: blur(12px);
+     animation: fadeUp 0.8s ease;
+   }
+   
+   @keyframes fadeUp {
+     from { opacity: 0; transform: translateY(30px); }
+     to { opacity: 1; transform: translateY(0); }
+   }
+   
+   h2 {
+     font-size: 2rem;
+     font-weight: 700;
+     text-align: center;
+     color: #3a0ca3;
+     margin-bottom: 1.5rem;
+     letter-spacing: 1px;
+   }
+   
+   .score {
+     font-size: 1.3rem;
+     text-align: center;
+     font-weight: 600;
+     color: #264653;
+     margin-bottom: 1.5rem;
+   }
+   
+   .progress-container {
+     background: #f0f0f0;
+     border-radius: 50px;
+     overflow: hidden;
+     height: 18px;
+     margin: 1.5rem 0;
+     box-shadow: inset 0 3px 6px rgba(0,0,0,0.2);
+   }
+   
+   .progress-bar {
+     background: linear-gradient(90deg, #06d6a0, #118ab2, #ef476f);
+     height: 100%;
+     width: 0%;
+     border-radius: 50px;
+     transition: width 1s ease-in-out;
+   }
+   
+   .result {
+     font-size: 1.4rem;
+     text-align: center;
+     margin: 1.5rem 0;
+     font-weight: 600;
+   }
+   
+   .time {
+     font-size: 1rem;
+     text-align: center;
+     margin-bottom: 1.5rem;
+     color: #5e548e;
+   }
+   
+   .adaptive-feedback {
+     background: #f7f9fc;
+     padding: 1rem 1.5rem;
+     border-radius: 16px;
+     margin: 1.5rem 0;
+     border-left: 6px solid #3a0ca3;
+   }
+   
+   .adaptive-feedback h3 {
+     color: #3a0ca3;
+     font-weight: 700;
+     margin-bottom: 0.8rem;
+   }
+   
+   .adaptive-feedback ul {
+     padding-left: 1.2rem;
+     margin: 0.5rem 0;
+   }
+   
+   .adaptive-feedback li {
+     margin: 0.3rem 0;
+     font-size: 0.95rem;
+     color: #333;
+   }
+   
+   .summary {
+     margin-top: 2rem;
+   }
+   
+   .summary h3 {
+     font-size: 1.3rem;
+     font-weight: 700;
+     color: #118ab2;
+     margin-bottom: 1rem;
+   }
+   
+   .qa {
+     background: #ffffff;
+     border-radius: 14px;
+     padding: 1rem 1.2rem;
+     margin-bottom: 1rem;
+     border: 2px solid transparent;
+     transition: transform 0.2s ease, box-shadow 0.3s ease;
+   }
+   
+   .qa.correct {
+     border-color: #06d6a0;
+   }
+   
+   .qa.incorrect {
+     border-color: #ef476f;
+   }
+   
+   .qa:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+   }
+   
+   .reasoning {
+     margin-top: 0.5rem;
+     background: #f0f8ff;
+     padding: 0.8rem;
+     border-radius: 10px;
+     font-size: 0.9rem;
+     color: #333;
+   }
+   
+   .code-block {
+     background: #1a1a2e;
+     color: #e0e7ff;
+     padding: 0.6rem;
+     border-radius: 8px;
+     overflow-x: auto;
+     font-family: 'Courier New', monospace;
+     font-size: 0.85rem;
+   }
+   
+   .buttons {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     margin-top: 2rem;
+   }
+   
+   .button {
+     background: linear-gradient(135deg, #7209b7, #3f37c9);
+     color: #fff;
+     text-decoration: none;
+     padding: 0.8rem 1.5rem;
+     border-radius: 14px;
+     font-weight: 600;
+     transition: background 0.3s ease, transform 0.2s ease;
+   }
+   
+   .button:hover {
+     background: linear-gradient(135deg, #4361ee, #4895ef);
+     transform: translateY(-3px);
+     box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+   }
+   

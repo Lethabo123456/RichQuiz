@@ -1,0 +1,20 @@
+capital "L", by the way – we 
+have done it like this for readability's sake). This is 
+followed by the name of the function we created, 
+the one we want to call. The name of the function 
+is best placed between double or single quotes 
+because some browsers won't work without 
+quotes surrounding your function name. As well 
+as the function name, you need the round 
+brackets. 
+ 
+Save your changes and refresh the page in your browser. You should find that the 
+alert box now displays - the function has been called into action! 
+  
+4.2.1 Functions calling other functions 
+ 
+One function can also call another into action. You do not want one giant function 
+that does everything, so the standard practice is to have lots of smaller ones doing 
+specific things. Suppose you had a function that gets values from a form when a 
+button is clicked, you may then want to set up other functions that check things like 
+an email text box to see if the address is valid, or to see if a check box has been t

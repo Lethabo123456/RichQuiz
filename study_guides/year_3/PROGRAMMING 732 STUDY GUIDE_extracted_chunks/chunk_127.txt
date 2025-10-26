@@ -1,0 +1,26 @@
+4.1.23 HTTP Support Classes  
+Now that you have been introduced to the HTTP protocol, consider how the javax.servlet.http package 
+helps you write HTTP servlets. The abstract class javax.servlet.http.HttpServlet provides an 
+implementation of the javax.servlet.Servlet interface and includes a lot of helpful default functionality. 
+The easiest way to write an HTTP servlet is to extend HttpServlet and add your own custom processing.  
+The class HttpServlet provides an implementation of the service() method that dispatches the HTTP 
+messages to one of several special methods. These methods are:   
+• doGet()   
+• doHead()   
+• doDelete()   
+• doOptions()   
+• doPost()   
+• doTrace()   
+and correspond directly with the HTTP protocol methods.   
+As shown in the following diagram, the service() method interprets each HTTP method and determines if 
+it is an HTTP GET, HTTP POST, HTTP HEAD, or other HTTP protocol method:   
+The class HttpServlet is actually rather intelligent. Not only does it dispatch HTTP requests, it detects which 
+methods are overridden in a subclass and can report back to a client on the capabilities of the server. 
+(Simply by overriding the doGet() method causes the class to respond to an HTTP OPTIONS method with 
+information that GET, HEAD, TRACE, and OPTIONS are all supported. These capabilities are in fact all 
+supported by the class's code). In another example of the support HttpServlet provides, if the doGet() 
+method is overridden, there is an automatic response generated for the HTTP HEAD method. (Since the 
+response to an HTTP HEAD method is identical to an HTTP GET method--minus the body of the message-
+-the HttpServlet class can generate an appropriate response to an HTTP HEAD request from the reply sent 
+back from the doGet() method). As you might expect, if you need more precise control, you can always 
+override the doHead() method and provide a custom response.  

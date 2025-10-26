@@ -1,0 +1,32 @@
+nd // 
+each server is initialized to "free".  
+  
+~serverListType();  
+//Destructor  
+//Postcondition: The list of servers is destroyed.  
+  
+int getFreeServerID() const;  
+//Function to search the list of servers.  
+//Postcondition: If a free server is found, returns its ID; // 
+otherwise, returns -1.  
+  
+
+244  
+  
+int getNumberOfBusyServers() const;  
+//Function to return the number of busy servers.  
+//Postcondition: The number of busy servers is returned.  
+  
+void setServerBusy(int serverID, customerType cCustomer, int tTime); //Function 
+to set a server busy.  
+//Postcondition: The server specified by serverID is set to  
+// "busy", to serve the customer specified by cCustomer, 
+// and the transaction time is set according to the // 
+parameter tTime.  
+  
+void setServerBusy(int serverID, customerType cCustomer); //Function 
+to set a server busy.  
+//Postcondition: The server specified by serverID is set to  
+// "busy", to serve the customer specified by cCustomer.  
+  
+void upda

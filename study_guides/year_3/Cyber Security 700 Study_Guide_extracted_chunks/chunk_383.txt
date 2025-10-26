@@ -1,0 +1,34 @@
+Fault Management 
+ 
+To maintain proper operation of a complex network, make sure that systems as a whole, as well as 
+each essential component individually, are in proper working order. When a fault occurs, it is 
+important to do the following as rapidly as possible: 
+ Determine exactly where the fault is 
+ Isolate the rest of the network from the failure so it continues to function without interference 
+ Reconfigure or modify the network in such a way as to minimize the impact of operation 
+without the failed component or components 
+ Repair or replace the failed components to restore the network to its initial state 
+
+Central to the definition of fault management is the fundamental concept of a fault, as distinguished 
+from an error. A fault is an abnormal condition that causes a device or system component to fail to 
+perform in a required manner and that requires management attention (or action) for repair. A fault 
+is usually indicated by failure to operate correctly or by excessive errors. For example, if a 
+communications line is physically cut, no signals get through. Or a crimp in the cable can cause wild 
+distortions so that there is a persistently high bit error rate. Certain errors (for example, a single bit 
+error on a communication line) can occur occasionally and are not normally considered to be faults. It 
+is usually possible to compensate for errors using the error control mechanisms of the various 
+protocols. 
+
+Users expect fast and reliable problem resolution. Most end users tolerate occasional outages. When 
+these infrequent outages do occur, however, users generally expect to receive immediate notification 
+and expect the problem be corrected almost immediately. Providing such a level of fault resolution 
+requires very rapid and reliable fault detection and diagnostic management functions. The impact and 
+duration of faults are also minimized by the use of redundant components and alternate 
+communication routes, to give the network a degree of fault tolerance. An organization should make 
+sure the fault management capability is redundant to increase network reliability. 
+Users expect to be kept informed of the network status, including both scheduled and unscheduled 
+disruptive maintenance. Users expect reassurance of correct network operation through mechanisms 
+that use confidence tests or that analyze dumps, logs, alerts, or statistics. After correcting a fault and 
+restoring a system to its full operational state, the fault management service must ensure that the 
+problem is truly resolved and that no new problems are introduced. This requirement is called 
+problem tracking and control.

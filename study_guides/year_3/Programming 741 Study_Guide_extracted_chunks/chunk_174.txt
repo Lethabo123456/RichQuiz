@@ -1,0 +1,87 @@
+5.4.2  The foreach Statement 
+The foreach looping statement is new to the C family of languages, though it is already well 
+known to VB programmers. The foreach statement allows you to iterate through all the items 
+in an array or other collection, examining each item in turn. The syntax for the foreach 
+statement is: 
+foreach (type identifier in expression) statement 
+Thus, you might update Example 5-1 to replace the for statements that iterate over the 
+contents of the array with foreach statements, as shown in Example 5-2 
+Example 5-2. Using foreach 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+// a simple class to store in the array 
+public class Employee 
+{ 
+// a simple class to store in the array 
+public Employee(int empID) 
+{ 
+this.empID = empID; 
+} 
+public override string ToString()  
+{ 
+return empID.ToString(); 
+} 
+private int empID; 
+} 
+public class Tester 
+{ 
+static void Main() 
+{ 
+int[] intArray; 
+Employee[] empArray; 
+intArray = new int[5]; 
+empArray = new Employee[3]; 
+// populate the array 
+for (int i = 0; i < empArray.Length; i++) 
+{ 
+empArray[i] = new Employee(i + 5); 
+} 
+foreach (int i in intArray) 
+{ 
+Console.WriteLine(i.ToString()); 
+} 
+foreach (Employee e in empArray) 
+{ 
+Console.WriteLine(e.ToString()); 
+} 
+} 
+} 
+}
+
+The output for Example 5-2 is identical to Example 5-1. However, rather than creating a for 
+statement that measures the size of the array and uses a temporary counting variable as an 
+index into the array as in the following, we try another approach: 
+
+sfor ( int i = 0; i < empArray.Length; i++)  
+{ 
+Console.WriteLine(empArray[i].ToString( ) ) ; 
+} 
+We iterate over the array with the foreach loop, which automatically extracts the next item 
+from within the array and assigns it to the temporary object you've created in the head of the 
+statement. 
+ 
+foreach (Employee e in empArray) 
+{ 
+Console .WriteLine ( e.ToString ( ) ) ; 
+} 
+The object extracted from the array is of the appropriate type; thus, you may call any public 
+method on that object. 
+ 
+for ( int i = 0; i < empArray. Length; i++) 
+{ 
+Console.WriteLine(empArray[i].ToString ( ) ) ; 
+} 
+We iterate over the array with the foreach loop, which automatically extracts the next item 
+from within the array and assigns it to the temporary object you've created in the head of the 
+statement. 
+foreach (Employee e in empArray) 
+{ 
+Console.WriteLine ( empArray[i].ToString( )) ; 
+} 
+The object extracted from the array is of the appropriate type; thus, you may call any public 
+method on that object. You are free to pass in an array if you prefer: 

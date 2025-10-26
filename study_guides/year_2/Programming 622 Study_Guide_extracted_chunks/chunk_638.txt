@@ -1,0 +1,47 @@
+store the heap  
+}  
+ 
+ 
+  
+  
+  
+  
+ 
+//end while  
+list[low] = temp;   
+  
+  
+  
+ 
+//insert temp into the tree, that is, list  
+}   
+ 
+  
+  
+  
+  
+  
+ 
+//end heapify  
+  
+Next, we use the function heapify to implement the buildHeap function to convert the list into a heap.  
+  
+template <class elemType>  
+void arrayListType<elemType>::buildHeap()  
+{ for (int index = length / 2 - 1; index >= 0; index--) 
+heapify(index, length - 1);  
+}  
+We now describe heapsort.  
+
+315  
+  
+Suppose the list is in a heap. Consider the complete binary tree representing the list as given in Figure 8- 
+48(a).  
+  
+  
+FIGURE 8-48 Heapsort  
+  
+Because this is a heap, the root node is the largest element of the tree, that is, the largest element of the 
+list. So it must be moved to the end of the list. We swap the root node of the tree, that is, the first element 
+of the list, with the last node in the tree (which is the last element of the list). We then obtain the binary 
+tree as shown in Figure 8-48(b)

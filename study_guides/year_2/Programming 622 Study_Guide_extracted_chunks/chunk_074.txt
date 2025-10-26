@@ -1,0 +1,22 @@
+ree instance variables. Consider the following statement:  
+  
+myClock.setTime(3, 48, 52);  
+  
+In the statement myClock.setTime(3, 48, 52);, setTime is accessed by the object myClock. Therefore, the 
+three variables—hr, min, and sec—to which the body of the function setTime refers, are the three 
+instance variables of myClock. Thus, the values 3, 48, and 52, which are passed as parameters in the 
+preceding statement, are assigned to the three instance variables of myClock by the function setTime (see 
+the body of the function setTime). After the previous statement executes, the object myClock is as shown 
+in Figure 1-6.  
+  
+  
+FIGURE 1-6 Object myClock after the statement myClock.setTime(3, 48, 52); executes  
+  
+Next, let us give the definitions of the other member functions of the class clockType. The 
+definitions of these functions are simple and easy to follow.  
+  
+void clockType::getTime(int& hours, int& minutes, int& seconds) const  
+{  
+hours = hr; minutes 
+= min;  
+seconds =

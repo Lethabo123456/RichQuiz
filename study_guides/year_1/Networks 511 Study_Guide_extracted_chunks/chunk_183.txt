@@ -1,0 +1,25 @@
+3.9 PoE (Power over Ethernet) and STP (Spanning Tree Protocol) 
+ 
+Introduction 
+This document presents a list of recommendations that help to implement a safe network with 
+regard to bridging for Cisco Catalyst switches that run Catalyst OS (CatOS) and Cisco IOS® Software. 
+This document discusses some of the common reasons that Spanning Tree Protocol (STP) can fail 
+and the information for which to look to identify the source of the problem. The document also 
+shows the kind of design that minimizes spanning tree-related issues and is easy to troubleshoot. 
+Prerequisites 
+There are no specific requirements for this document. 
+Components Used 
+This document is not restricted to specific software and hardware versions. 
+Background Information 
+This document does not discuss the basic operation of STP. To learn how STP works, refer to this 
+document: 
+
+3.9.1 Understanding and Configuring Spanning Tree Protocol (STP) on Catalyst Switches 
+This document does not discuss Rapid STP (RSTP), defined in IEEE 802.1w. Also, this document does 
+not discuss Multiple Spanning Tree (MST) protocol, defined in IEEE 802.1s. For more information on 
+RSTP and MST, refer to these documents: 
+Understanding Multiple Spanning Tree Protocol (802.1s) 
+Understanding Rapid Spanning Tree Protocol (802.1w) 
+For a more specific STP troubleshooting document for Catalyst switches that run Cisco IOS Software, 
+refer to the document Troubleshooting STP on Catalyst Switch Running Cisco Integrated IOS (Native 
+Mode). 

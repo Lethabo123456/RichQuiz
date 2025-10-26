@@ -1,0 +1,20 @@
+relationships more effectively than the 
+hierarchical model, to improve database performance, and to impose a database standard. In the 
+network model, the user perceives the network database as a collection of records in 1:M 
+relationships. While the network database model is generally not used today, the definitions of 
+standard database concepts that emerged with the network model are still used by modern data 
+models:  
+• 
+The schema is the conceptual organization of the entire database as viewed by the database 
+administrator.  
+• 
+The subschema defines the portion of the database “seen” by the application programs that 
+produce the desired information.  
+• 
+A data manipulation language (DML) defines the environment in which data can be 
+managed and is used to work with the data in the database.  
+• 
+A schema data definition language (DDL) enables the database administrator to define the 
+schema components.  
+The Relational Model 
+The relational model was introduced in 1970 by E.

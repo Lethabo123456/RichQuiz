@@ -1,0 +1,77 @@
+As you can see, both threads run and print their message to the console. The Thread.Join method is 
+called on the main thread to let it wait until the other thread finishes. 
+Why the Thread.Sleep(0)? It is used to signal to Windows that this thread is finished. Instead of waiting 
+for the whole time-slice of the thread to finish, it will immediately switch to another thread. 
+ 
+Example 5-1.2  
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading; 
+ 
+namespace thre 
+{ 
+    #region Using Threads second Example 
+    class Tester 
+    { 
+        static void Main() 
+        { 
+            // make an instance of this class 
+            Tester t = new Tester(); 
+            // run outside static Main 
+            t.DoTest(); 
+        } 
+        public void DoTest() 
+        { 
+            /* create a thread for the Incrementer 
+             * pass in a ThreadStart delegate 
+             * with the address of Incrementer 
+            */ 
+            Thread t1 = new Thread(new ThreadStart(Incrementer)); 
+ 
+            /* create a thread for the Decrementer 
+             * pass in a ThreadStart delegate 
+             *  with the address of Decrementer 
+             */ 
+ 
+            Thread t2 = new Thread(new ThreadStart(Decrementer)); 
+ 
+            // start the threads 
+ 
+            t1.Start(); 
+            t2.Start(); 
+        } 
+        // demo function, counts up to 10 
+        public void Incrementer() 
+        { 
+            for (int i = 0; i < 10; i++) 
+            { 
+                Console.WriteLine( 
+                "Incrementer: {0}", i); 
+            } 
+        } 
+        // demo function, counts down from 10 
+        public void Decrementer() 
+        { 
+ 
+            for (int i = 10; i >= 0; i--) 
+{
+                Console.WriteLine( 
+                "Decrementer: {0}", i); 
+            } 
+        } 
+    } 
+    #endregion 
+ 
+} 
+ 
+The processor allows the first thread to run up to 2. Then, the second thread kicks in, counting down 
+from 10 until 0. Then the first thread is allowed to continue run.  
+ 
+Both your process and your thread have a priority. Assigning a low priority is useful for applications such 
+tions for CPU time. A higher-sary. A new thread is assigned a priority of 
+Normal, which is okay for almost all scenarios. 
+foreground and back-ground threads. Foreground threads can be used to keep an application alive. Only when all foreground 
+threads end does the common language runtime (CLR) shut down your application. Background threads 
+are then terminated. 

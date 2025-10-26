@@ -1,0 +1,31 @@
+1.4. The using Statement 
+Because you cannot be certain that your user will call Dispose ( ) reliably, and because fina-
+lization is nondeterministic (i.e., you can't control when the GC will run), C# provides a using 
+statement that ensures that Dispose ( ) will be called at the earliest possible time. The idiom 
+is to declare that objects you are using and then to create a scope for these objects with curly 
+braces. When the close brace is reached, the Dispose ( ) method will be called on the object 
+automatically, as illustrated in Example 2-6. 
+
+Example 1-6. The using construct 
+class Tester 
+{ 
+public static void Main( ) 
+{ 
+using (Font theFont = new Font("Arial", 10.0f)) { 
+// use theFont 
+} 
+// compiler will call Dispose on theFont 
+Font anotherFont = new Font ("Courier", 12. 0f); 
+using (anotherFont) { 
+// use anotherFont 
+} // compiler calls Dispose on anotherFont 
+ 
+In the first part of this example, the Font object is created within the using statement. When 
+the using statement ends, Dispose ( ) is called on the Font object. 
+In the second part of the example, a Font object is created outside of the using statement. 
+When we decide to use that font, we put it inside the using statement; when that statement 
+ends, Dispose ( ) is called once again. 
+     
+The using statement also protects you against unanticipated exceptions. No matter how con-
+trol leaves the using statement, Dispose ( ) is called. It is as if there were an implicit trycatch-
+finally block. 

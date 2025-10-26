@@ -1,0 +1,14 @@
+5.6. Java’s Built-In Exception  
+   
+Inside the standard package java.lang, Java defines several exception classes. A few have been used 
+by the preceding examples. The most general of these exceptions are subclasses of the standard 
+type RuntimeException. Since java.lang is implicitly imported into all Java programs, most 
+exceptions derived from RuntimeException are automatically available. Furthermore, they need not 
+be included in any method’s throws list. In the language of Java, these are called unchecked 
+exceptions because the compiler does not check to see if a method handles or throws these 
+exceptions. The unchecked exceptions defined in java.lang are listed in Table 101. Table 10-2 lists 
+those exceptions defined by java.lang that must be included in a method’s throws list if that method 
+can generate one of these exceptions and does not handle it itself. These are called checked 
+exceptions. Java defines several other types of exceptions that relate to its various class libraries.    
+   
+Figure 5.1 Java’s Exception classes and subclasses 

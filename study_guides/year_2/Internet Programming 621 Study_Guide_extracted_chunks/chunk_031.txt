@@ -1,0 +1,28 @@
+<title>Hello</title>  
+<link rel=”stylesheet” type=”text/css” href=”common.css” /> 
+</head>  
+<body>  
+<h1><?php echo “Hello, world!”; ?></h1>  
+</body>  
+</html>  
+  
+  
+Next, enter the following CSS code and save it as common.css in the same folder:  
+  
+  
+  
+  
+/* Page body */ body { font-family: Arial, Helvetica, sans-serif; }  
+  
+/* Definition lists */  
+dl { width: 100%; margin: 2em 0; padding: 0; clear: both; overflow: auto; } dt { 
+width: 30%; float: left; margin: 0; padding: 5px 9.9% 5px 0; border-top: 1px 
+solid #DDDDB7; font-weight: bold; overflow: auto; clear: left; } dd { width: 
+60%; float: left; margin: 0; padding: 6px 0 5px 0; border-top:  
+1px solid #DDDDB7; overflow: auto; }  
+
+20  
+/* Headings */ h1 { font-weight: bold; margin: 35px 0 14px; color: #666; font-
+size: 1.5em; } h2 { font-weight: bold; margin: 30px 0 12px; color: #666; font-
+size: 1.3em; } h3 { font-weight: normal; margin: 30px 0 12px; color: #666; 
+font-size: 1.2em; } h4 { font-weight: bold; margin:

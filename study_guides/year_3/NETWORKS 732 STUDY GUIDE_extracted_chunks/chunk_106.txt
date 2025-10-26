@@ -1,0 +1,41 @@
+2.4.1 Flow Control 
+Flow control is a bandwidth management technique configured on a local connection between 
+two devices. The purpose is to ensure the receiver is not overwhelmed with the rate of data 
+transmission. Flow control can be managed either at the data link layer or at the network and 
+transport layers. When managed at the higher layers, rate-based flow control limits the amount 
+of data that can be transmitted but does not provide feedback to the sender when that rate is 
+exceeded. Instead, traffic is lost. In contrast, feedback-based flow control at the data link layer 
+gives the sender some kind of indication when the transmission rate is exceeding the receiver’s 
+ability to handle the incoming traffic. Common approaches are the stop-and-wait method and 
+two versions of the sliding window method. Consider the following scenarios: 
+
+Stop-and-wait method 
+A sender transmits a frame and then waits for an acknowledgment before transmitting the next 
+frame. See Figure 2-2. If an acknowledgment is not received, the sender retransmits the 
+unacknowledged frame. This way, whether the frame is lost in transit or the acknowledgment is 
+lost, the frame is still resent. At no time is the receiver required to handle more than one 
+incoming frame, and each frame must be acknowledged before sending another frame. This 
+approach is simple and provides high accuracy. However, it’s also very slow because only one 
+frame can be sent at a time. 
+  
+Figure 2-2 Stop and Wait method 
+ 
+Go-back-n sliding window method 
+A sender can transmit multiple frames at one time while considering the maximum number of 
+frames the receiver can handle at any time. For example, suppose a receiver can handle up to 
+three incoming frames at any given time, as shown in Figure 2-3. The sender transmits three 
+frames and waits for three acknowledgments. If all three acknowledgments are received, the 
+sender transmits another three frames. If an acknowledgment is missing, the sender retransmits 
+all three frames, even if only one frame was lost. 
+ 
+Figure 2-3 Go-back-n sliding window method 
+
+Selective repeat sliding window method 
+In this scenario, as shown in Figure 2-4, only the unacknowledged frame is retransmitted. The 
+sender continues sending additional frames as long as space is available in the window for new 
+frames. This is a more efficient approach because later frames don’t have to wait on as many 
+earlier frames to be acknowledged. However, it’s also more complex because the receiver must 
+be able to receive frames out of order and reorganize them, even if a much earlier frame 
+experiences a relatively lengthy delay. 
+ 
+Figure 2-4 Selective repeat sliding window method

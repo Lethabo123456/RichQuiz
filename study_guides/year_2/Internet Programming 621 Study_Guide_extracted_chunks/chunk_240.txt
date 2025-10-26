@@ -1,0 +1,39 @@
+[2] => blue [3] => yellow ) 
+b) Array ( [0] => blue [1] => yellow [2] => red [3] => green ) 
+c) Array ( [0] => red [1] => green ) 
+d) Array ( [0] => blue [1] => yellow ) 
+ 
+Answer: a 
+ 
+70. What will be the output of the following PHP code ? 
+<?php 
+$age = array("Harry" => "21", "Ron" => "19", "Malfoy" => "23"); 
+ksort($age); 
+foreach($age as $x => $x_value) 
+{ 
+echo "Key=" . $x . ", Value=" . $x_value; 
+echo "<br>"; 
+} 
+?> 
+a) Key = Harry, Value = 21 
+Key = Ron, Value = 21 
+Key = Malfoy, Value = 23 
+b) Key = Harry, Value = 21 
+Key = Ron, Value = 19 
+Key = Malfoy, Value = 23 
+c) Key = Harry, Value = 21 
+Key = Malfoy, Value = 23 
+Key = Ron, Value = 19 
+d) Key = Ron, Value = 19 
+Key = Harry, Value = 21 
+Key = Malfoy, Value = 23 
+Answer:c 
+
+71. What will be the output of the following PHP code? 
+<?php 
+$cars = array("Volvo", "BMW", "Toyota"); 
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . "."; 
+?> 
+a) I like Volvo BMW and Toyota) 
+b) I like Volvo, BMW and Toyota) 
+c)

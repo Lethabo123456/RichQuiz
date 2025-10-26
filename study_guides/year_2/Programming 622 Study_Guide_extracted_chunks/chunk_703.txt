@@ -1,0 +1,21 @@
+ce 
+of the search algorithm depends on the shape of T. Let us first consider the worst case. In the worst case, 
+T is linear. That is, T is one of the forms shown in Figure 9-10.  
+  
+
+346  
+  
+  
+FIGURE 9-10 Linear binary trees  
+  
+Because T is linear, the performance of the search algorithm on T is the same as its performance on a 
+linear list. Therefore, in the successful case, on average, the search algorithm makes (n + 1) / 2 key 
+comparisons. In the unsuccessful case, it makes n comparisons.  
+  
+Let us now consider the average-case behavior. In the successful case, the search would end at a node. 
+Because there are n items, there are n! possible orderings of the keys. We assume that all n! orderings of 
+the keys are possible. Let S(n) denote the number of comparisons in the average successful case, and U(n) 
+denote the number of comparisons in the average unsuccessful case.  
+  
+The number of comparisons required to determine whether x is in T is one more than the number of 
+co

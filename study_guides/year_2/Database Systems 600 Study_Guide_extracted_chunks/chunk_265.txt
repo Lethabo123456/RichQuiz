@@ -1,0 +1,35 @@
+table-list 
+[WHERE   
+condition-list]  
+[GROUP BY 
+column-list]  
+[HAVING   
+condition-list]  
+[ORDER BY  
+column-list [ASC | DESC]]; 
+The HAVING clause operates very much like the WHERE clause in the SELECT statement. 
+However, the WHERE clause applies to columns and expressions for individual rows, whereas 
+the HAVING clause is applied to the output of a GROUP BY operation. For example, suppose 
+that you want to generate a listing of the number of products in the inventory supplied by each 
+vendor. However, this time you want to limit the listing to products whose prices average less 
+than $10. The query requires both a GROUP BY clause and a HAVING clause.  
+SELECT   
+V_CODE, COUNT(P_CODE) AS NUMPRODS 
+FROM  
+ 
+PRODUCT  
+GROUP  
+ 
+BY V_CODE  
+HAVING   
+AVG(P_PRICE) < 10  
+ORDER BY  
+V_CODE; 
+ 
+
+ 
+107 
+ 
+Subqueries 
+The use of joins in a relational database allows you to get information from two or more tables. 
+However, it is often necessary to process data based on other proces

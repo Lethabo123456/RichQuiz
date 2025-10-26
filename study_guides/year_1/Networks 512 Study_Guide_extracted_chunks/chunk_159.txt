@@ -1,0 +1,31 @@
+o Far end cross-talk (FEXT) occurs at the far end  
+o Attenuation 
+
+ Loss of signal’s strength as it travels away from source 
+ Two ways analog and digital signals are boosted: 
+ Amplifier - increases the voltage, or strength, of signals 
+• Can also boot the noise that has accumulated in the signal 
+ Repeater - regenerates a digital signal in its original form 
+• Without noise previously accumulated 
+ 
+Figure 2- 11: Use of amplifiers to analog signal distortion 
+ 
+Figure 2- 12: Using a repeater to distorted digital signals 
+
+ 
+ Delay between signal transmission and receipt 
+ May cause network transmission errors 
+
+Latency causes 
+ Cable length 
+ Intervening connectivity device 
+Round trip time (RTT) 
+ Time for packet to go from sender to receiver, then back from receiver to sender 
+ Common Fiber Cable Problems: 
+ Fiber type mismatch 
+ More of a fiber core mismatch 
+ Even same-mode cables can be mismatched if the cores have different widths 
+ Wavelength mismatch 
+ SMF, MMF, and POF (Plastic Optical Fiber) use different wavelengths 
+ Dirty connectors  
+ Signal loss and other errors can start to cause problems 

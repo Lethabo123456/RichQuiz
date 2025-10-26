@@ -1,0 +1,29 @@
+1], and so on. In this way, 
+we can keep track of the unsorted portion of the list and repeat Steps a and b with the 
+help of a for loop. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+140 | P a g e  
+ 
+ 
+ 
+The statement in Line 6 declares and initializes list to be an array of 10 components 
+of type int. The statement in Line 8 uses the function selectionSort to sort list. Notice 
+that both list and its length (the number of elements in it, which is 10) are passed as 
+parameters to the function selectionSort. The for loop in Lines 10 and 11 outputs the 
+elements of list. To illustrate the selection sort algorithm in this program, we declared 
+and initialized the array list.  
+ 
+5.3 Multidimensional ARRAYS 
+In the previous section, you learned how to use one-dimensional arrays to manipulate 
+data. If the data is provided in a list form, you can use one-dimensional arrays. 
+
+141 | P a g e  
+ 
+However, sometimes data is provided in a table form. For example, suppose that you 
+want to track the number of cars in a parti

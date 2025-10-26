@@ -1,0 +1,15 @@
+Figure 3.8 – The for loops to add up numbers from 1 to 10 
+The first thing to notice here is that we are setting up variables to hold the start value 
+of the loop and the end value. Loops are designed to go round and around a set 
+number of times. You have to tell JavaScript how many times you want to go round. 
+So you need a starting value, and an end value. There are many ways to set an end 
+value, but here we are saying, "Keep going round in a loop until the start value is no 
+longer less than the end value." But how does the loop know that the start value is 
+less than the end value? It knows because we've set an increment value. It is this: 
+start_value++ 
+ 
+This is a shorthand way of saying "add 1 to the start_value variable". It is called 
+incrementing a variable. The longhand way to increment a variable is this: 
+start_value = start_value + 1 
+If you do the calculation on the right hand side of the equal sign first, the line above 
+will make more sense. JavaScript will look

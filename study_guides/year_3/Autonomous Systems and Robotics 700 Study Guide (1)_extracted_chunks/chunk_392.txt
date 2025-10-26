@@ -1,0 +1,59 @@
+6.1.1.3 Generalisation and Overfitting 
+A key challenge in supervised learning is generalization: how well the model performs on new 
+data, not just the training examples. 
+• Overfitting: When a model learns the training data too well — including noise — and fails 
+to generalize. 
+• Underfitting: When the model is too simple to capture patterns in the data. 
+Strategies like cross-validation, regularization, and early stopping help strike a balance between 
+accuracy and generalization. 
+
+Case Study 1: 
+Problem Context 
+During the COVID-19 pandemic, ensuring proper mask compliance became critical for public 
+health. Manual monitoring was: 
+
+• Labor intensive 
+• Prone to human error 
+• Potentially risky for staff 
+• Inconsistent across shifts 
+
+Solution Overview 
+An autonomous robot equipped with: 
+• Camera-based vision system 
+• Real-time face detection 
+• Mask classification algorithm 
+• Automated response system 
+
+System Components 
+ 
+Classification Categories 
+1. With Mask - Properly worn face covering 
+2. Without Mask - No face covering detected 
+3. Incorrect Mask - Improperly worn (nose exposed, chin only, etc.)
+
+Model Selection 
+Algorithm: Support Vector Machine (SVM) 
+• Kernel: RBF (Radial Basis Function) 
+• Why SVM?  
+o Excellent for high-dimensional data 
+o Strong performance on image features 
+o Robust to outliers 
+o Interpretable decision boundaries 
+
+Training Process
+
+Real-time Processing Pipeline 
+
+Response System 
+ 
+Conclusion 
+This case study demonstrates how supervised learning enables practical robotics applications. 
+The face mask detection robot showcases: 
+• Feasibility: Standard ML algorithms solve real problems 
+• Efficiency: SVM provides excellent accuracy/speed trade-off 
+• Scalability: System easily deployed across multiple locations 
+• Impact: Tangible public health benefits
+ 
+The project illustrates that effective robotics solutions don't always require cutting-edge deep 
+learning—sometimes classical supervised learning with good feature engineering is the optimal 
+choice.

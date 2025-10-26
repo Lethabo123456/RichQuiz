@@ -1,0 +1,19 @@
+optimization at 
+the server end and most SQL performance optimization techniques are DBMS-specific and, 
+therefore, are rarely portable, even across different versions of the same DBMS. There is 
+considerable room for improvement.  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eleven, page 528-531 
+
+ 
+166 
+A poorly written SQL query can, and usually will, bring the database system to its knees from a 
+performance point of view. Therefore, although a DBMS provides general optimizing services, a 
+carefully written query almost always outperforms a poorly written one. 
+Although SQL data manipulation statements include many different commands such as INSERT, 
+UPDATE, DELETE, and SELECT, most recommendations in this section are related to the use of 
+the SELECT statement, and the use of indexes and how to write conditional expressions. 
+Index Selectivity 
+Indexes are the most important technique used in SQL perfor

@@ -1,0 +1,18 @@
+data from the database. Therefore, to support this type of request, the web 
+server’s capability must be extended so it can understand and process database requests. This job is 
+known as a server-side extension. 
+A server-side extension is a program that interacts directly with the web server to handle specific 
+types of requests. The server-side extension makes it possible to retrieve and present the query 
+results, but more importantly, it provides its services to the web server in a way that is totally 
+transparent to the client browser. In short, the server-side extension adds significant functionality 
+to the web server, and therefore to the Internet. 
+A database server-side extension program is also known as web-to-database middleware. Figure 
+15.8 shows the interaction between the browser, the web server, and the web-to-database 
+middleware and from it you can trace the web-to-database middleware actions. 
+
+ 
+180 
+ 
+ 
+Web Server Interfaces 
+Extending web server functionality i

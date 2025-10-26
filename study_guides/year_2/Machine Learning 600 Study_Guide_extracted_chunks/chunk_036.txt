@@ -1,0 +1,13 @@
+Table 2.1: Sample data 
+                                  
+ 
+ 
+Presence Checks: First things first, check that data has been entered at all. The presence check is 
+simple enough. If the field length is empty or null and that piece of data is important in the analysis, 
+then you can't use records from which the data is missing.  The first name and e-mail are missing from 
+the example in Table 2.1, so the record should really be fixed or rejected. In theory, the data could be 
+used if knowing the customer was not important. 
+Type Checks: With relational databases you have schemas created, so there's already an expectation 
+of what type of data is going where. If incorrect data is written to a field of a different data type, then 
+the database engine will throw an error and complain at you. In text data, such as CSV files, that's not 
+the case, so it's worth looking at each field and ensuring that what

@@ -1,0 +1,73 @@
+e the CREATE 
+TABLE command.  
+Example 1 
+CREATE TABLE VENDOR ( 
+V_CODE  
+INTEGER 
+ 
+NOT NULL 
+UNIQUE, 
+V_NAME  
+VARCHAR(35) 
+NOT NULL, 
+V_CONTACT 
+VARCHAR(25) 
+NOT NULL, 
+V_AREACODE 
+CHAR(3) 
+ 
+NOT NULL, 
+V_PHONE  
+CHAR(8) 
+ 
+NOT NULL, 
+V_STATE  
+CHAR(2) 
+ 
+NOT NULL, 
+V_ORDER  
+CHAR(1) 
+ 
+NOT NULL, 
+PRIMARY KEY (V_CODE)); 
+Example 2 
+CREATE TABLE PRODUCT (  
+P_CODE 
+ 
+VARCHAR(10) 
+NOT NULL 
+UNIQUE, 
+P_DESCRIPT 
+VARCHAR(35) 
+NOT NULL, 
+P_INDATE  
+DATE  
+ 
+NOT NULL, 
+P_QOH 
+ 
+SMALLINT 
+ 
+NOT NULL, 
+P_MIN 
+ 
+SMALLINT 
+ 
+NOT NULL, 
+P_PRICE  
+NUMBER(8,2)  
+NOT NULL,  
+P_DISCOUNT  
+NUMBER(5,2)  
+NOT NULL,  
+
+ 
+114 
+V_CODE   
+INTEGER,  
+PRIMARY KEY (P_CODE),  
+FOREIGN KEY (V_CODE) REFERENCES VENDOR ON UPDATE CASCADE); 
+As you examine the preceding SQL table-creating command sequences, note the following features:  
+ 
+The NOT NULL specifications for the attributes ensure that a data entry will be made. 
+When it is crucial to have the data available, the NOT NULL specification will not allow

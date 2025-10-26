@@ -1,0 +1,67 @@
+linkedListType<Type>& otherList)  
+{  
+nodeType<Type> *newNode;   
+ 
+  
+//pointer to create a node  
+nodeType<Type> *current;    
+ 
+  
+//pointer to traverse the list  
+if (first != NULL)   
+  
+ 
+destroyList();  
+ 
+  
+//if the list is nonempty, make it empty  
+if (otherList.first == NULL)   
+  
+{ first = NULL; last = 
+NULL;  
+count = 0;  
+}  
+else  
+{  
+ 
+  
+//otherList is empty  
+current 
+= 
+otherList.first; 
+count = otherList.count;  
+ 
+  
+//current points to the //list 
+to be copied  
+//copy the first node  
+first = new nodeType<Type>;   
+  
+//create the node  
+
+105  
+  
+first->info = current->info;     
+  
+//copy the info  
+first->link = NULL;   
+  
+  
+  
+//set the link field of the node to NULL  
+last = first;   
+  
+  
+  
+  
+//make last point to the first node  
+current = current->link;   
+  
+  
+//make current point to the next  
+// node  
+//copy the remaining list  
+while (current != NULL)  
+{  
+newNode = new nodeType<Type>;  //create a node newNode->info 
+= current->info;  //co

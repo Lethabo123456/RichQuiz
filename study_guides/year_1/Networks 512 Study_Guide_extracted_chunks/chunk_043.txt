@@ -1,0 +1,21 @@
+1.7.2 The Open System Interconnection Model (From Semester 1 in brief) 
+The Open System Interconnection (OSI) model specifies how dissimilar computing devices such as 
+Network Interface Cards (NICs), bridges and routers exchange data over a network by offering a 
+networking framework for implementing protocols in seven layers. Beginning at the application 
+layer, control is passed from one layer to the next. The following describes the seven layers as 
+defined by the OSI model, shown in the order they occur whenever a user transmits information. 
+
+Layer 7: Application 
+This layer supports the application and end-user processes. Within this layer, user privacy is 
+considered and communication partners, service and constraints are all identified. File transfers, 
+email, Telnet and FTP applications are all provided within this layer. 
+
+Layer 6: Presentation (Syntax) 
+Within this layer, information is translated back and forth between application and network 
+formats.  This translation transforms the information into data the application layer and network 
+recognize regardless of encryption and formatting. 
+
+Layer 5: Session 
+Within this layer, connections between applications are made, managed and terminated as needed 
+to allow for data exchanges between applications at each end of a dialogue. 
+

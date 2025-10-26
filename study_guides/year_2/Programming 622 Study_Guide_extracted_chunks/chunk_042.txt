@@ -1,0 +1,34 @@
+driver picks up the second package, 
+drives 2 miles, delivers the second package, and then returns to the shop. The driver then picks up the 
+third package, drives 3 miles, delivers the package, and comes back to the shop. Figure 1-3 illustrates this 
+delivery scheme.  
+  
+  
+FIGURE 1-3 Another package delivery scheme  
+  
+
+20  
+  
+The driver delivers only one package at a time. After delivering a package, the driver comes back to the 
+shop to pick up and deliver the second package. Using this scheme, the total distance travelled by this 
+driver to deliver the packages and then getting back to the store is:  
+  
+2 . (1 + 2 + 3 + . . . + 50) = 2550 miles  
+  
+Now suppose that there are n packages to be delivered to n houses, and each house is one mile apart 
+from each other, as shown in Figure 1-1. If the packages are delivered using the first scheme, the following 
+equation gives the total distance travelled:  
+  
+1 + 1 + . . . + 1 + n = 2n   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+(1-1)  
+  
+If

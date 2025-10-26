@@ -1,0 +1,28 @@
+Access Times 
+ 
+Depending on whether a disk has fixed or movable heads, there can be as many as three factors 
+that contribute to the time required to access a file: seek time, search time, and transfer time. 
+To date, seek time has been the slowest of the three factors. This is the time required to position 
+the read/write head on the proper track. Search time, also known as rotational delay, is the 
+time it takes to rotate the disk until the requested record is moved under the read/write head. 
+Data transfer time is the fastest of the three, that is when the data is transferred from 
+secondary storage to main memory (primary storage). 
+
+Fixed-Head Magnetic Drives 
+ 
+Fixed-head disk drives are fast because each track has its own read/write head; therefore, seek 
+time does not apply. The total amount of time required to access data depends on the 
+rotational speed. 
+Referred to as search time, this varies from device to device but is constant within each device. 
+The total time also depends on the position of the record relative to the position of the read/write 
+head. Therefore, total access time is the sum of search time plus transfer time. 
+
+Because the disk rotates continuously, there are three basic positions for the requested record in 
+relation to the position of the read/write head. Figure 4.8(a) shows the best possible situation 
+because the record is next to the read/write head when the I/O command is executed; this gives 
+a rotational delay of zero. Figure 4.8(b) shows the average situation because the record is 
+directly opposite the read/write head when the I/O command is executed; this gives a rotational 
+delay of t/2 where t (time) is one full rotation. Figure 4.8(c) shows the worst situation because the 
+record has just rotated past the read/ write head when the I/O command is executed; this gives 
+a rotational delay of t because it will take one full rotation for the record to reposition itself under 
+the read/write head. 

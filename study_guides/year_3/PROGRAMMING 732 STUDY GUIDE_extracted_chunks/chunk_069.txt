@@ -1,0 +1,24 @@
+3.2 JDBC INTERFACE LEVELS  
+  
+There are two JDBC interface levels:  
+
+• The application layer is where the developer uses the API to make calls to the database via SQL 
+and retrieve the results.  
+• The Driver layer handles all communication with a specific driver implementation. Figure 13.2 
+illustrates the Driver and Application layers.  
+  
+Fortunately, the application developer only needs to use the standard API interfaces to guarantee JDBC 
+compliance. The driver developer is responsible for developing code that interfaces to the database and 
+supports the JDBC application level calls. It is important, however, to understand the Driver layer, and 
+how some of the objects that are used at the Application layer are created by the driver. There are four 
+main interfaces that every driver layer must implement, and one class that bridges the Application and 
+Driver layers. The four interfaces are Driver, connection, Statement and ResultSet. The Driver interface 
+implementation is where the connection to the database is made. In most applications, the Driver is 
+accessed through the DriverManager class-providing one more layer of abstraction for the developer. The 
+Connection, Statement, and ResultSet interfaces are implemented by the driver vendor, but these 
+interfaces specify the methods that the application developer can use. They allow the developer to create 
+statements and retrieve results without having to think about where the objects are coming from or worry 
+about what specific driver the application will use. The following sections discuss the Driver and 
+Application layers in more detail.  
+  
+Figure 13.2: JDBC API Components 

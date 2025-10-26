@@ -1,0 +1,21 @@
+1.2.19 Timer and Timertask  
+Java 2, version 1.3 adds an interesting and useful feature to Java.util: the ability to schedule a task for 
+execution at some future time. The classes that support this are Timer and TimerTask. Using these classes 
+you can create a thread that runs in the background, waiting for a specific time. When the time arrives, 
+the task linked to that thread is executed. Various options allow you to schedule a task for repeated 
+execution, and to schedule a task to run on a specific date. Although it was always possible to manually 
+create a task that would be executed ata specific time using the Thread class, Timer and TimerTask greatly 
+simplify this process. Timer and TimerTask work together. Timer is the class that you will use to schedule 
+a task for execution. Task being scheduled must be an instance of TimeTask. Thus, to schedule a task, you 
+will first create a TimerTask object and then schedule it for execution using an instance of Timer. 
+TimerTask implements the Runnable interface; thus it can be used to create a thread of execution. Its 
+constructor is shown here:  
+
+TimerTask( )  
+  
+TimerTask defines the methods shown in Table 1.1. Notice that run( ) is abstract, which means that it must 
+be overridden. The run( ) method, defined by the Runnable interface, contains the code that will be 
+executed. Thus, the easiest way to create a timer task is to extend TimerTask and override run( ).
+
+Table 1.1: The methods Defined by TimerTask  
+Method - Boolean cancel( ), Abstract void run( ), Long scheduledExecutionTime( )

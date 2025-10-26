@@ -1,0 +1,31 @@
+for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+
+147 | P a g e  
+ 
+          cout << setw(5) << matrix[row][col] << " "; 
+           cout << endl;  
+} 
+ 
+Input 
+ 
+The following for loop inputs the data into row number 4, that is, the fifth row of matrix:  
+row = 4;  
+for (col = 0; col < NUMBER_OF_COLUMNS; col++)  
+cin >> matrix[row][col]; 
+ 
+As before, by putting the row number in a loop, you can input data into each 
+component of matrix. The following for loop inputs data into each component of matrix: 
+ for (row = 0; row < NUMBER_OF_ROWS; row++)  
+       for (col = 0; col < NUMBER_OF_COLUMNS; col++) 
+           cin >> matrix[row][col]; 
+ 
+Sum by Row 
+The following for loop finds the sum of row number 4 of matrix; that is, it adds the 
+components of row number 4: 
+ 
+sum = 0;  
+row = 4; for (col = 0; col < NUMBER_OF_COLUMNS; col++)  
+      sum = sum + matrix[row][col]; 
+ 
+Once again, by putting the row number in a loop, we can find the sum of each row 
+separately. The following is th

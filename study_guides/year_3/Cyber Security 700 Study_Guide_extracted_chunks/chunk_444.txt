@@ -1,0 +1,27 @@
+A Zoho Corp. white paper [BALA15] outlines the following important characteristics of automated network device configuration 
+management tools: 
+
+ Multivendor device support: A tool should support all device types from all popular vendors. 
+ Discovery capability for device addition: A network can have thousands of network devices, 
+and it is labor intensive to add each device manually. A tool should allow for discovering the 
+devices in the network and automatically adding them, in addition to other device addition 
+options. 
+ Communication protocols: A tool should support a wide range of protocols for establishing 
+communication with the device and transferring configuration files. 
+ Secure storage: A tool should store configuration data in encrypted form, protected against 
+intrusion. 
+ Inventory: A tool should provide an informative inventory of the devices being managed. It 
+should provide various details, such as serial numbers, interface details, chassis details, port 
+configurations, IP addresses, and hardware properties of the devices. 
+ Configuration operations and schedules: A tool should provide simple, intuitive options in the 
+GUI to carry out various configuration operations, such as     retrieving, viewing, editing, and 
+uploading configurations back to the device. It should include options to schedule the 
+operations for automatic execution. 
+ Configuration versioning: A tool should associate a version number with the configuration of 
+each device, incremented with each change. 
+ Baseline configuration: A tool should have a provision for labeling the trusted configuration 
+version of each device as a baseline version to enable administrators to roll back a 
+configuration to the baseline version in the event of a network outage. 
+ Approval mechanism: The security policies of many enterprises require certain types of 
+changes carried out by certain levels of users to be reserved for review and approval by top 
+administrators prior to the deployment of the changes.

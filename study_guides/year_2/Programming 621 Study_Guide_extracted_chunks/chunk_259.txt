@@ -1,0 +1,26 @@
+n the other hand, in the 
+statement: 
+ 
+x = y.one(); 
+ 
+the pointer this in the definition of member function one refers to object y, and so this 
+means the address of y and *this means the contents of y. So the statement copies 
+
+251 | P a g e  
+ 
+the contents of object y into object x. The following example illustrates how the pointer 
+this works. 
+ 
+ 
+1. An operator that has different meanings with different data types is said to be 
+overloaded. 
+2.  In C++, template is a reserved word. 
+3. Using templates, you can write a single code segment for a set of related 
+functions—called the function template. 
+4. Using templates, you can write a single code segment for a set of related 
+classes—called the class template 
+5. Class templates are called parameterized types 
+6. The parameter Type is mentioned in every class header and member function 
+definition 
+7. To overload the pre-increment (++) operator for a class if the operator function 
+is a member of that class, it must have no par

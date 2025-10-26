@@ -1,0 +1,20 @@
+Setting Up Run Configurations 
+ 
+The final step in setting up the test environment is to confirm the run configuration for your app. 
+1. From the main menu, select Run > Edit Configurations. The Run Configurations window is 
+displayed. 
+2. Click the disclosure button to the left of Android Application on the left side of the screen. Then 
+click app. 
+3. Find Deployment Target Options on the right side of the screen and verify that Open Select 
+Deployment Target Dialog is selected (if not, use the dropdown arrow to select it). 
+4. Click OK. Now when you run or debug your app, a device chooser will display all your AVDs and 
+real devices connected to the computer. You can then choose which one you want to test on. 
+ 
+Often it is preferable to test your app on an actual Android device. If you wish to do so, you first need 
+to set up your device so that it can run in Developer mode. The exact procedure to do this depends 
+somewhat on the make of your device. However, in all devices you must find Build number in Settings 
+→ About (phone). You may have to drill down further to find it. Once found, tap Build number seven 
+times. Your device should display a message counting down. Once complete, a message that 
+Developer mode is activated should appear. To use the device for testing, simple plug it into your 
+development computer and follow the steps provided previously. Your device should be displayed in 
+the Chooser window. 

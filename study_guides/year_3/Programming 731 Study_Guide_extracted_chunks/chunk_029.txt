@@ -1,0 +1,13 @@
+Figure 1.1 Java Bytecode Compilation Flow 
+ 
+A JVM is distributed along with a set of standard class libraries that implement the Java API 
+(Application Programming Interface). Appropriate APIs bundled together form the Java Runtime 
+Environment (JRE).   
+  
+Java development process   
+The javac command compiles Java source code (.java) into   bytecode (.class).   
+   
+Figure 1.2: Java Compiler  
+   
+These bytecodes are loaded and executed in the Java virtual machine (JVM), which is embeddable 
+within other environments, such as Web browsers and operating systems.   

@@ -1,0 +1,30 @@
+A TextView that displays “Hello World” is already on the layout. This is used to 
+display your app’s message. However, the size of the text needs to be bigger. Below 
+the Palette, there should be a panel with the label Component Tree (Figure 3.6). If 
+this is not present, click View > Tool Windows > Designer to display it. The top 
+of the tab should show the structure of the layout. It should have the ConstraintLayout as 
+its root, and the TextView should be indented below the ConstraintLayout. The TextView should 
+be displaying “Hello World!” after it. As widgets are added to the layout, 
+they are displayed in the structure. This is very useful because 
+sometimes controls are added to the layout that get lost (and are not visible) 
+in the Design Layout. However, if they are in the layout, they will be displayed 
+in the structure. Alternatively, they will also be visible in the blueprint view. 
+
+To the right of the Design and Blueprint views is the Attributes panel (Figure 3.7). If you haven’t clicked 
+anything in the Design view, Blueprint view, or Component Tree, that panel will be empty. Click the Hello 
+World TextView in the Design view. The Properties window should populate with the basic attributes that can 
+be set for a TextView widget. This panel provides access to 
+attributes of the selected widget. Changes here will modify the XML in the layout. Scroll down this panel and 
+expand the various sections to examine all the attributes available for the TextView. Scroll back to the Layout 
+section. 
+
+You should see a bar with a circle and the number 50 in the middle of it on the bottom left of the layout 
+diagram. These are the weights given to the vertical and horizontal layout constraints on the TextView. The 50 indicates 
+that each constraint has equal weight and the widget will be centered. If you drag the circle to the right or left, you can change this bias so 
+that the widget is to one side or the other. Drag the vertical bias circle up until it says 10. The TextView 
+should now be centered horizontally but near the top of the screen. 
+At the top of the Attributes panel, you will see a text box labeled id. Enter textViewDisplay into this 
+box. Widgets need to have an id if they are going to be accessed or manipulated by the code. Later in 
+the chapter we will use this TextView to display a message to the user. 
+Next, locate the textSize attribute in the All Attributes section (you may have to scroll down). It should 
+have 14sp as the default value. 

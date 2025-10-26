@@ -1,0 +1,36 @@
+State Transitions: 
+• HOLD to READY: Managed by the Job Scheduler, which ensures sufficient memory and resources 
+are available. 
+• READY to RUN: Controlled by the Process Scheduler using a predefined scheduling algorithm. 
+• RUNNING to READY: Initiated by the Process Scheduler due to a time limit or priority interrupt. 
+• RUNNING to WAITING: Triggered by the Process Scheduler when the job requests I/O or another 
+resource. 
+• WAITING to READY: Managed by the Process Scheduler when the requested resource becomes 
+available, signalled by components like the I/O device manager or page fault handler. 
+• RUNNING to FINISHED: Initiated by the Process or Job Scheduler when the job completes 
+successfully or is terminated due to an error. 
+These transitions ensure efficient job management and resource utilization within the operating 
+system.
+
+3.3.2 Threads States 
+ 
+Figure 3.2 
+ 
+Threads transition through five primary states during execution: 
+ 
+1. READY: A thread enters this state when resources are allocated after creation. It waits in the 
+READY queue until the Process Scheduler assigns it to the processor. 
+2. RUNNING: The thread executes tasks. It transitions to: 
+ 
+• WAITING: When waiting for an external event (e.g., mouse click). 
+• DELAYED: When processing is delayed for a specified time.  
+• BLOCKED: When waiting for an I/O operation to complete. 
+ 
+3. WAITING: Transitions to READY when the awaited event occurs. 
+4. DELAYED: Transitions to READY after the delay time elapses. 
+5. BLOCKED: Transitions to READY after the I/O operation completes. 
+6. FINISHED: When the thread completes execution, its resources are released, and it exits 
+the system. 
+
+Efficient state transitions, such as delaying threads instead of looping, optimize system 
+performance.

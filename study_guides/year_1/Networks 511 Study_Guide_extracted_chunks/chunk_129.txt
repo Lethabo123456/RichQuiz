@@ -1,0 +1,27 @@
+Using nslookup utility 
+Some of the most common networking issues revolve around issues with Dynamic Name System 
+(DNS) address resolution issues. DNS is used by everyone using the Internet to resolve commonly 
+known domain names (i.e. google.com) to commonly unknown IP addresses (i.e. 74.125.115.147). 
+When this system does not work, most of the functionality that people are used to goes away, as 
+there is no way to resolve this information. The nslookup utility can be used to lookup the specific IP 
+address(es) associated with a domain name. If this utility is unable to resolve this information, there 
+is a DNS issue. Along with simple lookup, the nslookup utility is able to query specific DNS servers to 
+determine an issue with the default DNS servers configured on a host. Figure  below shows an 
+example of how the nslookup utility can be used to query the associated IP address information.  
+ 
+ 
+Figure 41: nslookup utility 
+
+Resolving names with the host table  
+A host name is an alias assigned to an IP node to identify it as a TCP/IP host. The host name can be 
+up to 255 characters long and can contain alphabetic and numeric characters and the "-" and "." 
+characters. Multiple host names can be assigned to the same host. For Windows 2000–based 
+computers, the host name does not have to match the Windows 2000 computer name. 
+Windows Sockets applications, such as Microsoft® Internet Explorer and the FTP utility, can use one 
+of two values for the destination to be connected: the IP address or a host name. When the IP 
+address is specified, name resolution is not needed. When a host name is specified, the host name 
+must be resolved to an IP address before IP-based communication with the desired resource can 
+begin. 
+Host names can take various forms. The two most common forms are a nickname and a domain 
+name. A nickname is an alias to an IP address that individual people can assign and use. A domain 
+name is a structured name that follows Internet conventions.

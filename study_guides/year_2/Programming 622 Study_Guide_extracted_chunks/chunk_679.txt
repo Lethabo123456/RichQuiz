@@ -1,0 +1,30 @@
+eeNode<elemType> *p) const  
+{ if (p == NULL) return 0; else return 1 + max(height(p->llink), 
+height(p->rlink));  
+}  
+  
+template <class elemType>  
+int binaryTreeType<elemType>::max(int x, int y) const  
+{  
+if (x >= y) return 
+x; else  
+return y;  
+}  
+  
+The definitions of the functions nodeCount and leavesCount are left as exercises for you.   
+  
+Next, we give the definitions of the functions copyTree, destroy, and destroyTree, as well as the definitions 
+of the copy constructor and the destructor, and overload the assignment operator.  
+  
+The definition of the function copyTree is the same as before; here this function is a member of the class 
+binaryTreeType:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::copyTree  
+(binaryTreeNode<elemType>* &copiedTreeRoot, binaryTreeNode<elemType>* otherTreeRoot)  
+{  
+if (otherTreeRoot == NULL) 
+copiedTreeRoot = NULL; else  
+{  
+copiedTreeRoot = new binaryTreeNode<elemType>; copiedTreeRoot->info 
+= otherTreeRoot->info; co

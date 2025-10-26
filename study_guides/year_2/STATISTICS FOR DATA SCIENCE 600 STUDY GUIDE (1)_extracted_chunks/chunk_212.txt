@@ -1,0 +1,20 @@
+ourse, as before, when we 
+calculate our p-value, we will reject the null if that p-value is less than the significance level. 
+Let's use some built-in Python methods, as shown, to quickly get our results: 
+
+P a g e  | 120 
+ 
+ 
+observed = np.array([[134, 54], [110, 48]])  # built a 2x2 matrix as seen in the table above 
+chi_squared, p_value, degrees_of_freedom, matrix = 
+stats.chi2_contingency(observed=observed) 
+print(chi_squared, p_value)  # (0.04762692369491045, 0.82724528704422262) 
+ 
+We can see that our p-value is quite large; therefore, we fail to reject our null hypothesis and 
+we cannot say for sure that seeing a particular website has any effect on a user's sign up. 
+There is no association between these variables. 
+ 
+5.5 Chapter Summary 
+In this chapter, we explored the foundational concepts of inferential statistics, focusing on 
+making inferences about populations based on sample data. The key topics covered include: 
+1. Point Estimates: These are estimates of population pa

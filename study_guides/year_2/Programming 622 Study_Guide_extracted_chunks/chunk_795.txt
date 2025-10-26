@@ -1,0 +1,29 @@
+and so on. Therefore, for simplicity, throughout this 
+chapter we assume that the n vertices of the graphs are numbered 0, 1, . . ., n - 1. Moreover, it follows 
+that the class we will design to implement the graph algorithm will not be a template.  
+  
+ 
+10.5  Graphs as ADTs  
+  
+In this section, we describe the class to implement graphs as an abstract data type (ADT) and provide the 
+definitions of the functions to implement the operations on a graph.  
+  
+
+391  
+  
+The following class defines a graph as an ADT:  
+//***************************************************************  
+// class graphType  
+// This class specifies the basic operations to implement a graph.  
+//**************************************************************** class 
+graphType  
+{  
+public:  
+  
+bool isEmpty() const;  
+//Function to determine whether the graph is empty. 
+//Postcondition: Returns true if the graph is empty; // 
+otherwise, returns false.  
+  
+void createGraph(); //Function 
+to create a graph.

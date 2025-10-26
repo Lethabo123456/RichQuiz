@@ -1,0 +1,18 @@
+to-many (1:M), and 
+many-to-many (M:N or M:M). This section explores those relationships further to help you apply 
+them properly when you start developing database designs.  
+The 1:M Relationship 
+The 1:M relationship is the norm for relational databases. To see how such a relationship is 
+modelled and implemented, consider the PAINTER and PAINTING example shown in Figure 3.17. 
+Compare the data model in Figure 3.17 with its implementation in Figure 3.18. As you examine the 
+PAINTER and PAINTING table contents in Figure 3.18, note the following features:  
+ 
+Each painting was created by one and only one painter, but each painter could have created 
+many paintings. Note that painter 123 (Georgette P. Ross) has three works stored in the 
+PAINTING table.  
+ 
+There is only one row in the PAINTER table for any given row in the PAINTING table, 
+but there may be many rows in the PAINTING table for any given row in the PAINTER 
+table. 
+The 1:1 Relationship 
+As the 1:1 label implies, one ent

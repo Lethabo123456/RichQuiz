@@ -1,0 +1,29 @@
+3.1.3 Subsets 
+It is common to encounter situations where the elements of one set are also 
+the elements of a second set. We now introduce some terminology and 
+notation to express such relationships between sets. 
+ 
+Definition 20 
+The set A is a subset of B if and only if every element of A is also an element 
+of B.We use the notation A ⊆ B to indicate that A is a subset of the set B. 
+ 
+We see that A ⊆ B if and only if the quantification:∀𝑥(𝑥 ∈ 𝐴 → 𝑥 ∈ 𝐵) 
+is true. Note that to show that A is not a subset of B we need only find one 
+element x ∈ A with 𝑥 ∉ 𝐵. Such an x is a counterexample to the claim that 
+x ∈ A implies x ∈ B.  
+We have these useful rules for determining whether one set is a subset of 
+another: 
+Showing that A is a Subset of B To show that A ⊆ B, show that if x belongs 
+to A then x also belongs to B. Showing that A is Not a Subset of B To show 
+that A ⊈ B, find a single x ∈ A such that x ⊄ B. 
+
+Worked Example 
+Draw a Venn diagram that represents V, the set of vowels in the English 
+alphabet.  
+Solution: 
+We draw a rectangle to indicate the universal set U, which is the set of 
+the 26 letters of the English alphabet. Inside this rectangle we draw a 
+circle to represent V . Inside this circle we indicate the elements of V 
+with points:
+
+Venn Diagram for the Set of Vowels 

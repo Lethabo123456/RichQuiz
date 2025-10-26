@@ -1,0 +1,20 @@
+ch 
+code block. break exits the entire switch construct, ensuring that no more code blocks within the 
+switch construct are run.  
+  
+For example, if you did not include break statements in this example script, and $userAction was 
+equal  
+To ”open” , the script would open the file, save the file, close the file, log the user out and, finally, 
+display “ Please choose an option ”, all at the same time!  
+  
+Here’s a simple example that demonstrates the if, elseif, and else statements, as well as the ‘?’ 
+(ternary) operator. Save the script as greeting.php in your document root folder.  
+  
+N.B: This script (and most of the other scripts in this guide) link to the common.css style sheet file 
+listed in Section 1 of this study guide, so make sure you have common.css in your document root 
+folder too.  
+  
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>  
+<html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>  
+<

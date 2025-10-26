@@ -1,0 +1,14 @@
+Understanding Codecs and Containers 
+ 
+To achieve fast and easy transmission of multimedia content, that content is stored using a 
+codec, which is a computer program that encodes and decodes streams of data. Codecs 
+compress data so that it can be transmitted in a fast and efficient manner and then decompress 
+it when it is to be read or played back. The compression method can be either lossy or lossless. 
+Using lossy compression, onessential data are removed in order to achieve a smaller file size. 
+An audio file ight be compressed by removing sounds that the human ear can barely hear. A 
+video file might be compressed by removing frames from the video playback. The more the file 
+is compressed, the more content is lost. The sound from a highly compressed audio file can 
+become muddy and indistinct. A highly compressed video clip can become blurry or jerky in its 
+movements. Thus, one consideration in lossy compression is determining at what point 
+essential data has been removed because, once that data is lost, it cannot be recovered. 
+ 

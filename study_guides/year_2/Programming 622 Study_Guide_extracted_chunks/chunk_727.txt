@@ -1,0 +1,14 @@
+tore the tree’s balance criteria. This is accomplished by traveling the same path, back to the root 
+node, which was followed when the new item was inserted in the AVL tree. The nodes on this path (back 
+to the root node) are visited and either their balance factor is changed, or we might have to reconstruct 
+part of the tree. We illustrate these cases with the help of the following examples.  
+  
+Consider the AVL tree of Figure 9-14 (a). Let us insert 90 into this AVL tree.  
+  
+FIGURE 9-14 AVL tree before and after inserting 90  
+  
+We search the tree starting at the root node to find the place for 90. The dotted arrow shows the path. 
+We insert a node with info 90 and obtain the tree of Figure 9-14(b). The binary tree of Figure 9-14(b) is 
+not an AVL tree. So we backtrack and go to node 80. Prior to insertion, bf(80) was 0. Because the new 
+node was inserted into the (empty) right subtree of 80, we change its balance factor to 1 (not shown in 
+the figure). Now we go back to node 70.

@@ -1,0 +1,29 @@
+For the cabling phase: 
+• Disconnect the current router that may be in place 
+• Disconnect the broadband modem 
+• Connect an Ethernet cable from one of the LAN ports on the broadband modem to the 
+WAN 
+(sometimes labelled "Internet" port) on the new router. 
+• Connect an Ethernet cable from the LAN port of the new router to the Ethernet port of 
+a powered off-laptop. 
+• Power on in this order: broadband modem, router, and then laptop. 
+• Wait for all appropriate lights on both the modem and router to indicate that the WAN 
+and LAN statuses are connected. (The vendor's documentation will tell you what color the 
+LEDs should be on the router and modem when connections are good.) 
+Here's a tip if you are installing a router that was previously used on another network (a friend 
+gives you a router they used in their home, for instance): after connecting cables, reset the 
+router to its factory default settings, so you are not working with a routers that's already 
+configured. The router's configuration settings may conflict with your existing network, so wipe 
+it out and start configuration from scratch. 
+
+The reset button is typically a tiny, recessed button on the side, rear panel, or sometimes at 
+the bottom of a router's casing. You'll need a safety pin or similar pointy object to push the 
+reset button in and hold it anywhere from 10 to 30 seconds. The lights on the router will usually 
+flash once, indicating that the router has been restored back to factory default. You can easily 
+find out how to reset your router in its documentation or by doing a Google search of the 
+router's make and model and including "reset back to factory settings." 
+That's the cabling part of a router setup. I like to make sure the broadband modem, be it, 
+WiMAX, DSL, cable or whatever, is powered down before connecting a new router if I had a 
+router connected to it previously. Sometimes modems will hold onto information of the 
+previous router and giving it a hard reboot can head off any problems with connecting a new 
+router. 

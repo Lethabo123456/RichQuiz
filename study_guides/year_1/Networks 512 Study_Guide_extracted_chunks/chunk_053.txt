@@ -1,0 +1,23 @@
+1.8.2 Collisions 
+Ethernet is a shared medium, so there are rules for sending packets of data to avoid conflicts and 
+to protect data integrity. Nodes determine when the network is available for sending packets. It is 
+possible that two or more nodes at different locations will attempt to send data at the same time. 
+When this happens, a packet collision occurs. 
+
+Minimizing collisions is a crucial element in the design and operation of networks. Increased 
+collisions are often the result of too many users on the network. This leads to competition for 
+network bandwidth and can slow the performance of the network from the user’s point of view. 
+Segmenting the network is one way of reducing an overcrowded network, i.e., by dividing it into 
+different pieces logically joined together with a bridge or switch. 
+
+1.8.3 CSMA/CD 
+In order to manage collisions Ethernet uses a protocol called Carrier Sense Multiple 
+Access/Collision Detection (CSMA/CD). CSMA/CD is a type of contention protocol that defines 
+how to respond when a collision is detected, or when two devices attempt to transmit packages 
+simultaneously. Ethernet allows each device to send messages at any time without having to wait 
+for network permission; thus, there is a high possibility that devices may try to send messages at 
+the same time. 
+
+After detecting a collision, each device that was transmitting a packet delays a random amount of 
+time before re-transmitting the packet. If another collision occurs, the device waits twice as long 
+before trying to re-transmit. 

@@ -1,0 +1,19 @@
+is supplied by only a single vendor.  
+• 
+Some products are not supplied by a vendor. For example, some products may be 
+produced in-house or bought on the open market.  
+Except as noted, the database model shown in Figure 7.1 will be used for the queries in the 
+remainder of the chapter. Recall that when an ERD is implemented as a database, each entity 
+becomes a table in the database, and each attribute within an entity becomes a column in that table. 
+
+ 
+95 
+ 
+Basic SELECT Queries 
+Data retrieval is done in SQL using a SELECT query. When you run a SELECT command on a 
+table, the RDBMS returns a set of one or more rows that have the same characteristics as a 
+relational table. Each clause in a SELECT query performs a specific function. Understanding the 
+function of each clause is key to developing the skills to construct queries to satisfy the reporting 
+needs of the users. The following clauses will be covered in this chapter (although not in this 
+order).  
+• SELECT—specifies the

@@ -1,0 +1,32 @@
+Forced response 
+To compute the response to an input, using the convolution equation, we can use 
+the forced_response function: 
+T = np.linspace(0, 50, 500) 
+U1 = np.cos(T) 
+U2 = np.sin(3 * T) 
+ 
+resp1 = ct.forced_response(sys, T, U1) 
+resp2 = ct.forced_response(sys, T, U2) 
+resp3 = ct.forced_response(sys, T, U1 + U2) 
+ 
+
+# Plot the individual responses 
+resp1.sysname = 'U1'; resp1.plot(color='b') 
+resp2.sysname = 'U2'; resp2.plot(color='g') 
+resp3.sysname = 'U1 + U2'; resp3.plot(color='r'); 
+Show that the system response is linear 
+cplt = resp3.plot(label="G(U1 + U2)") 
+cplt.axes[0, 0].plot(resp1.time, resp1.outputs[0] + resp2.outputs[0], 'k--', label="G(U1) + G(U2)") 
+cplt.axes[1, 0].plot(resp1.time, resp1.outputs[1] + resp2.outputs[1], 'k--') 
+cplt.axes[2, 0].plot(resp1.time, resp1.inputs[0] + resp2.inputs[0], 'k--') 
+cplt.axes[0, 0].legend(loc='upper right', fontsize='x-small'); 
+Show that the forced response from non-zero initial condition is not linear 
+X0 = [1, 0, 0, 0] 
+resp1 = ct.forced_response(sys, T, U1, X0=X0) 
+resp2 = ct.forced_response(sys, T, U2, X0=X0) 
+resp3 = ct.forced_response(sys, T, U1 + U2, X0=X0) 
+cplt = resp3.plot(label="G(U1 + U2)") 
+cplt.axes[0, 0].plot(resp1.time, resp1.outputs[0] + resp2.outputs[0], 'k--', label="G(U1) + G(U2)") 
+cplt.axes[1, 0].plot(resp1.time, resp1.outputs[1] + resp2.outputs[1], 'k--') 
+cplt.axes[2, 0].plot(resp1.time, resp1.inputs[0] + resp2.inputs[0], 'k--') 
+cplt.axes[0, 0].legend(loc='upper right', fontsize='x-small');

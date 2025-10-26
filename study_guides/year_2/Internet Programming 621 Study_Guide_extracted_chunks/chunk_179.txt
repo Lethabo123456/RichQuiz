@@ -1,0 +1,25 @@
+n is 
+reached.  
+  
+Now that you know how to create and use functions, try the following exercises to brush up on your 
+function skills.  
+  
+
+87  
+  
+  
+Project-Type Self-Assessment  
+  
+1 
+Write a function that takes an array argument, and returns a string containing XHTML markup 
+for a definition list where each key of the array is a term, and each corresponding value is a 
+definition. (Hint: An XHTML definition list element consists of < dl > ... < /dl > tags. Inside these tags, 
+terms are marked up using < dt > ... < /dt > tags, and definitions using < dd > ... < /dd > tags.)  
+  
+2 
+A factorial of any given integer, n , is the product of all positive integers between 1 and n 
+inclusive. So the factorial of 4 is 1 × 2 × 3 × 4 = 24, and the factorial of 5 is 1 × 2 × 3 × 4 × 5 = 120. This 
+can be expressed recursively as follows:  
+If n == 0, return 1. (This is the base case)  
+If n > 0, compute the factorial of n – 1, multiply it by n , and return the result Write a PHP 
+script tha

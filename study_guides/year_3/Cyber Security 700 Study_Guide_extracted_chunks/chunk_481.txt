@@ -1,0 +1,39 @@
+Voice over IP (VoIP) Networks 
+VoIP has become increasingly prevalent in organizations of all sizes. In essence, VoIP involves the 
+transmission of speech across IP-based network. VoIP works by encoding voice information into a 
+digital format, which is carried across IP networks in discrete packets. VoIP has two main advantages 
+over traditional telephony: 
+
+ A VoIP system is usually cheaper to operate than an equivalent telephone system with a PBX 
+and conventional telephone network service. There are several reasons for this. Whereas 
+traditional telephone networks allocate dedicated circuits for voice communications using 
+circuit switching, VoIP uses packet switching, allowing the sharing of transmission capacity. 
+Further, packetized voice transmission fits well in the framework of the TCP/IP protocol suite, 
+enabling the use of application- and transport-level protocols to support communications. 
+ VoIP readily integrates with other services, such as combining web access with telephone 
+features through a single PC or terminal. 
+
+VoIP Signaling 
+Before voice is transferred using VoIP, a call must be placed. In a traditional phone network, the caller 
+enters the digits of the called number. The telephone number is processed by the provider’s signaling 
+system to ring the called number. With VoIP, the calling user (program or individual) supplies the 
+phone number of a URI (universal resource indicator, a form of URL), which then triggers a set of 
+protocol interactions and results in the placement of the call. 
+The heart of the call placement process for VoIP is the Session Initiation Protocol (SIP), defined in RFC 
+3261, which is an application-level control protocol for setting up, modifying, and terminating real-
+time sessions between participants over an IP data network. SIP supports not only VoIP but also many 
+multimedia applications. Associated with SIP is Session Description Protocol (SDP), defined in RFC 
+4566. SIP is used to invite one or more participants to a session, and the SDP-encoded body of a SIP 
+message contains information about what media encodings (for example, voice, video) the parties can 
+and will use. Once this information is exchanged and acknowledged, all participants are aware of the 
+participants’ IP addresses, available transmission capacity, and media type. Then data transmission 
+begins, using an appropriate transport protocol. Typically, Real-Time Transport Protocol (RTP) is used. 
+Throughout the session, participants can make changes to session parameters, such as new media 
+types or new parties to the session, using SIP messages. 
+ 
+An alternative to the use of SIP is ITU-T H.323. The H.323 protocol has been available for several years, 
+and carriers made a significant investment to build out many large, H.323-based networks. SIP is 
+growing in popularity due to its ability to easily combine voice and Internet-based services. SIP 
+interoperability and coexistence with H.323 is very important to maximize the return on current 
+investments and to support new deployments that might use SIP as an alternative packet telephony 
+signaling protocol.

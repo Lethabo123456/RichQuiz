@@ -1,0 +1,30 @@
+3.6.2 Shortest Job Next 
+Shortest Job Next (SJN) is a non-pre-emptive scheduling algorithm that chooses jobs based on the 
+length of their CPU cycle time. It is sometimes known as shortest job first (SJF). 
+Example: 
+ 
+There are four jobs, all in the READY queue at time 0. The CPU cycle, or run time, for each job is 
+given as follows: 
+ 
+Solution: 
+The SJN algorithm would schedule them for processing in this order: B, D, A, and C. The timeline 
+shown in Figure 3.6 below shows the scheduling: 
+ 
+Figure 3.6 
+ 
+Because all four jobs were available to begin at Time 0, the average turnaround time is as follows, 
+shown in this equation in the order in which they finish: Job B, Job D, Job A, and Job C: 
+Average turnaround = [(2-0) + (6-0) + (11-0) + (17-0)] / 4 
+ 
+= 9.0 ms 
+ 
+3.6.3 Priority Scheduling 
+Priority Scheduling is a CPU scheduling algorithm that assigns a priority to each process. The CPU 
+is allocated to the process with the highest priority. 
+
+1. Preemptive Priority Scheduling: 
+ 
+The CPU can be pre-empted if a higher-priority process arrives. 
+ 
+Example: If a running process has a lower priority than a newly arrived process, the CPU will 
+switch to the new process.

@@ -1,0 +1,18 @@
+es business users with a multidimensional view of the data they need to analyze business 
+conditions. A data warehouse stores historical data that has been extracted from transaction 
+processing systems, as well as data from external sources (see Figure 5.10). This operational 
+and external data is ‘cleaned’ to remove inconsistencies and integrated to create a new 
+information database that is more suitable for business analysis. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Data warehouses typically start out as very large databases, containing millions and even 
+hundreds of millions of data records. As this data is collected from various sources, one data 
+warehouse is built that business analysts can use. To keep it accurate, the data warehouse 
+receives regular updates. Old data that is no longer needed is purged. It is common for a data 
+warehouse to contain from three to ten years of current and historical data. Data-cleaning tools 
+can merge data from many sources to make the warehouse, automate data collecti

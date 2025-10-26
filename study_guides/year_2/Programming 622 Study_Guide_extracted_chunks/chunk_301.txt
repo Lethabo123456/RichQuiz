@@ -1,0 +1,28 @@
+the next call fails and the recursion stops. Also, note that 
+statements (for example, printing the info of the node) appear after the recursive call; thus, when the 
+transfer comes back to the calling function, we must execute the remaining statements. Recall that the 
+function exits only after the last statement executes. (By the ‘‘last statement,’’ we do not mean the 
+physical last statement, but rather the logical last statement.)  
+  
+Let us write a function template to implement the previous algorithm and then apply it to a list.  
+  
+template 
+<class 
+Type> 
+void 
+linkedListType<Type>::reversePrint  
+(nodeType<Type> *current) const  
+{  
+if (current != NULL)  
+{ reversePrint(current->link); //print the tail cout << 
+current->info << " "; //print the node  
+}  
+}  
+  
+Consider the statement  
+  
+reversePrint(first);  
+  
+where first is a pointer of type nodeType<Type>.  
+  
+Let us trace the execution of this statement; which is a function call, for the list shown in Figure 4-5.

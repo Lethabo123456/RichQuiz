@@ -1,0 +1,39 @@
+Example 1-10. Varying the return type on overloaded methods 
+
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace Values 
+{ 
+    public class Tester 
+    { 
+        private int Triple(int val) 
+        { 
+            return 2 * val; 
+        } 
+        private long Triple(long val) 
+        { 
+            return 2 * val; 
+        } 
+        public void Test() 
+        { 
+            int x = 5; 
+            int y = Triple(x); System.Console.WriteLine("x: {0} y: {1}", x, y); 
+            long lx = 10; 
+            long ly = Triple(lx); 
+            System.Console.WriteLine("lx: {0} ly: {1} ", lx, ly); 
+        }
+        static void Main() 
+        { 
+            Tester t = new Tester(); 
+            t.Test(); 
+        } 
+    } 
+}
+
+In this example, the Tester class overloads the Triple ( ) method, one to take an integer, the 
+other to take a long. The return type for the two Triple ( ) methods varies. Although this is not 
+required, it is very convenient in this case. 

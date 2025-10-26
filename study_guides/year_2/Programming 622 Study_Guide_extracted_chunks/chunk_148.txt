@@ -1,0 +1,73 @@
+addition to the operations that are common to all containers (see Table 2-6), Table 2-8 describes the 
+operations that can be used to manipulate the elements of a deque container. The name of the function 
+implementing the operations is shown in bold. The statement also shows how to use a particular function. 
+Suppose that deq is a dequecontainer.  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+70  
+  
+TABLE 2-8: Various operations that can be performed on a deque object  
+  
+Example 2-7 illustrates how to use a deque container in a program.  
+  
+EXAMPLE 2-7  
+//*********************************************************** // 
+This program illustrates how to use a deque container in a program.  
+//***********************************************************  
+#include <iostream>    
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+//Line 1  
+#include <deque>   
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+//Line 2  
+#include <algorithm>    
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+//Line 3  
+#include <iterator>     
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+//Line 4  
+using namespace std;

@@ -1,0 +1,16 @@
+elationships. Relationships describe associations among data. Most relationships describe 
+associations between two entities. The ER model uses the term connectivity to label the 
+relationship types (1:1, 1:M, and M:N). The name of the relationship is usually an active or 
+passive verb.  
+Figure 2.3 shows the different types of relationships using three ER notations: the original Chen 
+notation, the Crow’s Foot notation, and the newer class diagram notation, which is part of the Unified 
+Modelling Language (UML).  
+
+ 
+26 
+ 
+The Crow’s Foot notation is used as the design standard in this context. However, the Chen notation 
+is used to illustrate some of the ER modelling concepts whenever necessary. Most data modelling 
+tools let you select the Crow’s Foot or UML class diagram notation.  
+ER model’s exceptional visual simplicity makes it the dominant database modelling and design tool. 
+Nevertheless, the search for better data-modelling tools continues as the data environment continues

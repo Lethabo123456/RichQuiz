@@ -1,0 +1,19 @@
+AND has the same SQL syntax requirement as OR. Furthermore, you can 
+combine the logical OR with the logical AND to place further restrictions on the output, with the 
+use of parenthesis to group clauses appropriately. 
+The use of the logical operators OR and AND can become quite complex when numerous 
+restrictions are placed on the query. In fact, a specialty field in mathematics known as Boolean 
+algebra is dedicated to the use of logical operators.  
+The logical operator NOT is used to negate the result of a conditional expression. That is, in SQL, 
+all conditional expressions evaluate to true or false. If an expression is true, the row is selected; if 
+
+ 
+104 
+an expression is false, the row is not selected. The NOT logical operator is typically used to find 
+the rows that do not match a certain condition. For example, if you want to see a listing of all rows 
+for which the vendor code is not 21344, use the following command sequence:  
+SELECT  * 
+FROM  
+PRODUCT 
+WHERE  
+NOT  (V_C

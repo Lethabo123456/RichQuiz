@@ -1,0 +1,22 @@
+servation.  
+  
+Suppose that HTSize is a prime and for 0 ≤ i < j ≤ HTSize,  
+  
+(t + i2)%HTSize = (t + j2)%HTSize:  
+  
+
+273  
+  
+This implies that HTSize divides (j2 – i2), that is, HTSize divides (j – i) (j + i). Because HTSize is a prime, we 
+get HTSize divides (j – i) or HTSize divides (j + i).  
+Now because 0 < j - i < HTSize, it follows that HTSize does not divide (j - i). Hence, HTSize divides (j + i). This 
+implies that j + i ≥ HTSize, so j ≥ (HTSize / 2).  
+  
+Hence, quadratic probing probes half the table before repeating the probe sequence. Thus, it follows that 
+if the size of HTSize is a prime at least twice the number of items, we can resolve all the collisions.  
+  
+Because probing half the table is already a considerable number of probes, after making these many 
+probes we assume that the table is full and stop the insertion (and search). (This can occur when the table 
+is actually half full; in practice, it seldom happens unless the table is nearly full.)  
+  
+Next we

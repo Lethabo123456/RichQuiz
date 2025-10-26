@@ -1,0 +1,31 @@
+e top of the stack Type 
+*list; //pointer to the array that holds the stack elements  
+  
+void copyStack(const stackType<Type>& otherStack); //Function 
+to make a copy of otherStack.  
+//Postcondition: A copy of otherStack is created and assigned // 
+to this stack.  
+};   
+Figure 5-5 shows the UML class diagram of the class stackType.  
+  
+  
+FIGURE 5-5 UML class diagram of the class stackType  
+  
+Figure 5-6 shows this data structure, wherein stack is an object of type stackType. Note that stackTop can 
+range from 0 to maxStackSize. If stackTop is nonzero, then stackTop - 1 is the index of the top element of 
+the stack. Suppose that maxStackSize = 100.  
+  
+  
+FIGURE 5-6 Example of a stack  
+
+181  
+  
+  
+Note that the pointer list contains the base address of the array (holding the stack elements)—that is, the 
+address of the first array component. Next we discuss how to implement the member functions of the 
+class stackType.  
+  
+ 
+5.2.1  Initialize Stack  
+  
+Let us consider the ini

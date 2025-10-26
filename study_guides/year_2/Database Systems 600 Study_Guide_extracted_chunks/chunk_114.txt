@@ -1,0 +1,20 @@
+g:  
+ 
+An unknown attribute value.  
+ 
+A known, but missing, attribute value  
+
+ 
+43 
+ 
+A “not applicable” condition  
+Depending on the sophistication of the application development software, nulls can create problems 
+when functions such as COUNT, AVERAGE, and SUM are used. In addition, nulls can create 
+logical problems when relational tables are linked.  
+In addition to its role in providing a unique identity to each row in the table, the primary key may 
+play an additional role in the controlled redundancy that allows the relational model to work.  
+Just as the primary key has a role in ensuring the integrity of the database, so does the foreign key. 
+Foreign keys are used to ensure referential integrity, the condition in which every reference to an 
+entity instance by another entity instance is valid. In other words, every foreign key entry must 
+either be null or a valid value in the primary key of the related table. Finally, a secondary key is 
+defined as a key that is used s

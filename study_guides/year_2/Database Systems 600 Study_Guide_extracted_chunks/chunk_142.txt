@@ -1,0 +1,15 @@
+etween COURSE and CLASS is strong or weak depends on 
+how the CLASS entity’s primary key is defined. Remember that the nature of the relationship is 
+often determined by the database designer, who must use professional judgment to determine which 
+relationship type and strength best suit the database transaction, efficiency, and information 
+requirements.  
+Weak Entities 
+In contrast to the strong or regular entity mentioned earlier, a weak entity is one that meets two 
+conditions:  
+1. The entity is existence-dependent; it cannot exist without the entity with which it has a 
+relationship.  
+2. The entity has a primary key that is partially or totally derived from the parent entity in the 
+relationship. 
+The Crow’s Foot notation uses the relationship line and the PK/FK designation to indicate whether 
+the related entity is weak. A strong (identifying) relationship indicates that the related entity is weak. 
+Such a relationship means that both conditions have been met for the weak entit

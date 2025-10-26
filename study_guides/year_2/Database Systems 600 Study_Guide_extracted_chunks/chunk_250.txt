@@ -1,0 +1,25 @@
+mns may or may not share 
+the same name, but they must have comparable data types.) The syntax is:  
+SELECT  column-list  
+FROM  
+table1  
+JOIN  
+table2  ON  
+join-condition  
+The following example performs a join of the INVOICE and LINE tables using the ON clause.  
+SELECT  INVOICE.INV_NUMBER, 
+PRODUCT.P_CODE, 
+P_DESCRIPT, 
+LINE_UNITS, 
+LINE_PRICE  
+FROM  
+INVOICE JOIN LINE ON INVOICE.INV_NUMBER = LINE.INV_NUMBER  
+JOIN  
+PRODUCT ON LINE.P_CODE = PRODUCT.P_CODE; 
+Outer Joins 
+An outer join returns not only the rows matching the join condition (that is, rows with matching 
+values in the common columns), but it also returns the rows with unmatched values. The ANSI 
+standard defines three types of outer joins: left, right, and full. The left and right designations reflect 
+the order in which the tables are processed by the DBMS. Remember that join operations take place 
+two tables at a time. The first table named in the FROM clause will be the left side, and the second 
+table named will

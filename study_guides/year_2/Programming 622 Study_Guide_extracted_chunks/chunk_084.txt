@@ -1,0 +1,24 @@
+//illegal  
+  
+Built-In Operations on Classes  
+  
+The two built-in operations that are defined for class objects are member access (.) and assignment (=). 
+You have seen how to access an individual member of a class by using the name of the class object, then 
+a dot, and then the member name.  
+  
+We now show how an assignment statement works with the help of an example.  
+  
+ 
+1.4.7  Assignment Operator and Classes  
+  
+Suppose that myClock and yourClock are variables of type clockType as defined previously. The statement   
+ 
+myClock = yourClock;    
+  
+//Line 1  
+  
+copies the value of yourClock into myClock. That is, the value of yourClock.hr is copied into myClock.hr; 
+the value of yourClock.min is copied into myClock.min; and the value of yourClock.sec is copied into 
+myClock.sec. In other words, the values of the three instance variables of yourClock are copied into the 
+corresponding instance variables of myClock. Therefore, an assignment statement performs a 
+memberwi

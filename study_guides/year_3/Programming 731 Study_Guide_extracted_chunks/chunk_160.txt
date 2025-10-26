@@ -1,0 +1,58 @@
+Returning a Value    
+ 
+While the implementation of volume( ) does move the computation of a box’s volume inside the  
+Box class where it belongs, it is not the best way to do it. For example, what if another part of your 
+program wanted to know the volume of a box, but not display its value? A better way to implement 
+volume( ) is to have it compute the volume of the box and return the result to the caller. The 
+following example, an improved version of the preceding program, does just that:   
+   
+// Now, volume() returns the volume of 
+a  box. class Box { double width; double height;    
+double depth;   
+// compute and return volume 
+double volume() {  return width * 
+height * depth;   
+}   
+}   
+   
+class BoxDemo4 {   
+public static void main(String args[ 
+]) { Box mybox1 = new Box();    
+Box 
+mybox2 = new Box();   
+double vol;   
+// assign values to mybox1's instance  
+variables  
+mybox1.width 
+= 
+10;  
+mybox1.height = 20;   
+  mybox1.depth = 15;   
+/* assign different values to 
+mybox2's instance variables */ 
+mybox2.width=3;  
+mybox2.height = 6; 
+ mybox2.depth = 9;   
+   
+// get volume of first box 
+vol = mybox1.volume();   
+   
+System.out.println("Volume is " + vol);   
+// get volume of second box vol = 
+mybox2.volume();   
+   
+System.out.println("Volume is " + vol);   
+}   
+   
+}   
+As you can see, when volume( ) is called, it is put on the right side of an assignment statement. On 
+the left is a variable, in this case vol, that will receive the value returned by volume( ). Thus, after   
+   
+vol = mybox1.volume();   
+   
+executes, the value of mybox1.volume( ) is 3,000 and this value then is stored in vol. There are two 
+important things to understand about returning values:    
+
+• The type of data returned by a method must be compatible with the return type specified 
+by the method. For example, if the return type of some method is boolean, you could 
+not return an integer.

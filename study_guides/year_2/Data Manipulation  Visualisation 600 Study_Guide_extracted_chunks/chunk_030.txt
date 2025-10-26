@@ -1,0 +1,28 @@
+1.3.1  Data Cleaning 
+Data cleaning refers to identifying and addressing issues or inconsistencies in a dataset to prepare it for analysis. It 
+involves various tasks to ensure the data is accurate, complete, and properly formatted. Some common data cleaning 
+tasks using Pandas include handling missing data/values, removing duplicates and identifying outliers.  
+
+1.3.2 Handling Missing Data 
+None and NaN (Not a Number) represent missing or undefined values. NaN and None both have their place, and 
+Pandas is built to handle the two of them nearly interchangeably, converting between them where appropriate. 
+
+1.3.3 Detecting Null Values 
+Null values can be detected using the isnull() method, which will return either True or False depending on whether it 
+is invalid. We can also use the isnull() method to determine the total number of null values.  
+ 
+1.4 Dropping Null Values: 
+Null values in a DataFrame can be removed using the dropna() method. 
+  
+In Example above we utilised the dropna() method to remove the rows with null values, whereas in Example 1.6.2, 
+we removed the columns with null values. While this successfully removes all null values, we also removed good (not 
+null) values. Instead, we can remove rows or columns with all or many null values. This can be specified through the 
+how or thresh parameters, which allow fine control of the number of nulls to allow through.  
+
+We add a column using the DataFrame (df) created in Example 1.6.1. In Example 1.7.1, we use the how parameter to 
+remove the columns that contain all null values. In Example 1.7.2, we use the thresh parameter to specify the rows 
+that should be removed. In this case, rows with less than three non-null values will be removed.  
+
+1.5 Filling Null Values: 
+Null can be replaced with zero or through the backward and forward parameters; this is done using the fillna() 
+method. 

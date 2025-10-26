@@ -1,0 +1,29 @@
+6.3 Using Finally   
+When you have actions you must perform at the end of a try…catch sequence, you can use a finally 
+block. The code within a finally block executes regardless of whether the preceding try block 
+identifies an exception. Usually, you use a finally block to perform cleanup tasks that must happen 
+regardless of whether any exceptions occurred and whether any exceptions that occurred were 
+caught. Here is the format of a try…catch sequence that uses a finally block.   
+   
+try   
+    {   
+        // statements to try   
+    } catch(Exception e)   
+    {   
+        // actions that occur if exception was thrown   
+    } finally   
+    {   
+       // actions that occur whether catch block executed or not     }    
+
+Sometimes you will want to define a block of code that will execute when a try/catch block is left. 
+For example, an exception might cause an error that terminates the current method, causing its 
+premature return. However, that method may have opened a file or a network connection that 
+needs to be closed. 
+ Such types of circumstances are common in programming, and Java provides a convenient way to 
+handle them: finally. Here is an example of finally:  
+ 
+
+Here is the output produced by the program:   
+  
+ 
+As the output shows, no matter how the try block is exited, the finally block is executed.   

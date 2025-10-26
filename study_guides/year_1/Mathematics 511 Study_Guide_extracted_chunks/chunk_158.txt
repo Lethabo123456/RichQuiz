@@ -1,0 +1,28 @@
+The intersection of the sets {1, 3, 5} and {1, 2, 3} is the set {1, 3}; that is: 
+{1, 3, 5} ∩ {1, 2, 3} = {1, 3}. 
+ 
+Definition 26 
+Two sets are called disjoint if their intersection is the empty set. 
+ 
+Let A = {1, 3, 5, 7, 9} and B = {2, 4, 6, 8, 10}. Because A ∩ B = ∅, A and B are 
+disjoint. We are often interested in finding the cardinality of a union of two 
+finite sets A and B. Note that |A| + |B| counts each element that is in A but 
+not in B or in B but not in A exactly once, and each element that is in both A 
+and B exactly twice. Thus, if the number of elements that are in both A and 
+B is subtracted from |A| + |B|, elements in A ∩ B will be counted only once. 
+Hence, |A ∪ B| = |A| + |B| − |A ∩ B|. 
+The generalization of this result to unions of an arbitrary number of sets is 
+called the principle of inclusion–exclusion. The principle of inclusion–
+exclusion is an important technique used in enumeration. 
+ 
+Definition 27 
+Let A and B be sets. The difference of A and B, denoted by A − B, is the set 
+containing those elements that are in A but not in B. The difference of A 
+and B is also called the complement of B with respect to A. 
+
+The difference of sets A and B is sometimes denoted by A\B. 
+An element x belongs to the difference of A and B if and only if x ∈ A and     
+x /∈ B. This tells us that: A − B = {x | x ∈ A ∧x /∈ B}. 
+The Venn diagram shown in Figure 2.8 represents the difference of the sets 
+A and B. The shaded area inside the circle that represents A and outside the 
+circle that represents B is the area that represents A − B.

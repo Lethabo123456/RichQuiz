@@ -1,0 +1,69 @@
+Chapter Four: Device Management 
+  
+The Device Manager must manage every peripheral device of the system despite the multitude 
+of input/output (I/O) devices that constantly appear (and disappear) in the marketplace, and the 
+swift rate of change in device technology. To do so, it must maintain a delicate balance of supply 
+and demand, balancing the system’s finite supply of devices with users’ almost infinite demand 
+for them. 
+ 
+4.1. Device management involves 
+Looking at four basic functions of device manager: 
+ 
+➢ Monitoring the status of each device, such as storage hardware, monitors, USB tools, and 
+other peripheral devices. 
+➢ Enforcing preset policies to determine which process will get a device, and for how long. 
+➢ Allocating each device appropriately. 
+➢ Deallocating each device at two levels: at the process (or task) level when an I/O command 
+has been executed and has temporarily released its device, and at the job level when the job 
+is finished, and the device is permanently released. 
+
+Types of Devices: 
+ 
+The system’s peripheral devices, listed in Figure 4.1, generally fall into one of three categories: 
+dedicated, shared, and virtual. The differences are a function of the characteristics of the devices, 
+as well as how they are managed by the Device Manager. 
+ 
+Figure 4.1 
+ 
+Figure 4.1 shows windows 10 operating system that allows users to manage connected 
+devices through the settings menu. 
+ 
+Dedicated devices are assigned to only one job at a time, they serve that job for the entire time it 
+is active or until it releases them. Some devices, such as monitors, the mouse, and printers, often 
+demand this kind of allocation scheme, because it would be awkward to let several users 
+share them. A shared monitor, for example, might display half of one user’s work and half of 
+someone else’s game. The disadvantage of having dedicated devices is that they must be 
+allocated to a single user for the duration of a job’s execution. This can be quite inefficient, such 
+as with a 3D printer that is exclusively allocated to one person who does not use the device 
+100 percent of the time. 
+ 
+Shared devices can be allocated to several processes at the same time. For instance, a disk, or any 
+other direct access storage device (DASD), can be shared by several processes by interleaving their 
+requests, but this interleaving must be carefully controlled by the Device Manager. All conflicts, 
+such as when Process A and Process B need to read from the same disk, must be resolved based 
+on pre-determined policies that decide which request is handled first.
+
+Virtual devices are a combination of the first two: They are dedicated devices that have been 
+transformed into shared devices. For example, printers, which are dedicated devices, can be 
+converted into shared devices by using a spooling program that re-routes all printers’ requests via 
+the storage space on a disk. Only when all a job’s output is complete, and the printer is ready to 
+print out the entire document, is the output sent to the printer for printing. This procedure must 
+be managed carefully to prevent deadlocks. Because disks are sharable devices, this technique can 
+convert one printer into several virtual printers, thus improving both its performance and its use. 
+Spooling is a technique that is often used to speed up slow dedicated I/O devices. 
+ 
+The universal serial bus (USB) controller acts as an interface between the operating system, device 
+drivers, and applications and the devices that are attached via the USB host. One USB host 
+controller (assisted by USB hubs) can accommodate as many as 127 different devices, including 
+flash memory, phones, cameras, scanners, musical key- boards, additional hubs, and so on. Each 
+device is uniquely identified by the USB host controller with an identification number, which 
+allows many devices to exchange data with the computer using the same USB host connection. 
+The USB controller does this by assigning bandwidth to each device depending on its priority: 
+
+➢ Highest priority is assigned to real-time exchanges where no interruption in the data 
+flow is allowed, such as video or sound data. 
+➢ Medium priority is assigned to devices that can allow occasional interrupts without 
+jeopardizing the use of the device, such as a keyboard or joystick. 
+➢ Lowest priority is assigned to bulk transfers or exchanges that can accommodate slower 
+data flow, such as a file update. 
+ 

@@ -1,0 +1,16 @@
+chy of classes. The class 
+exception is the base of the classes designed to handle exceptions. Among 
+others, this class contains the function what. The function what returns a string 
+containing an appropriate message. All derived classes of the class exception 
+override the function what to issue their own error messages. 
+ 
+Two classes are immediately derived from the class exception: logic_error and 
+runtime_error. Both of these classes are defined in the header file stdexcept. 
+ 
+To deal with logical errors in a program, such as a string subscript out of range 
+or an invalid argument to a function call, several classes are derived from the 
+class logic_error. For example, the class invalid_argument is designed to deal 
+with illegal arguments used in a function call. The class out_of_range deals with 
+the string subscript out of range error. If a length greater than the maximum 
+allowed for a string object is used, the class length_error deals with this error. 
+For example, recall

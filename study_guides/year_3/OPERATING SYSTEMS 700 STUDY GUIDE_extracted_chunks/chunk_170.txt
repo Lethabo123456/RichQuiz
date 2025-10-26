@@ -1,0 +1,33 @@
+5.4. Typical Volume Configuration 
+
+Each storage unit, whether it is removable or not, is considered a volume, and each volume can contain 
+several files, so they are called multi-file volumes. However, some files are extremely large and are 
+contained in several volumes, not surprisingly, these are called multi-volume files. 
+Each volume in the system is given a name. The File Manager writes this name and other descriptive 
+information on an easy-to-access place, the innermost part of the CD or DVD, or the first sector of the 
+outermost track of the disk pack. Once the volume is identified, the operating system can begin 
+interacting with the storage unit. 
+A master file directory (MFD) is stored immediately after the volume descriptor and lists the names 
+and characteristics of every file contained in that volume. The filenames in the MFD can refer to 
+program files, data files, and/or system files. And if the File Manager supports subdirectories, they are 
+listed in the MFD as well. The remainder of the volume is used for file storage. 
+ 
+5.5. Subdirectories 
+➢ Master File Directory (MFD): 
+The MFD is the top-level directory created for each storage volume. It holds entries for files and 
+subdirectories. Each entry includes metadata, such as the filename, location, size, and type. 
+➢ Subdirectory: 
+A subdirectory is a specialized entry in the MFD flagged as a directory. It contains records (filenames) 
+pointing to files or other subdirectories within it. This allows users to organize and segregate files 
+logically. 
+
+➢ Two-Level Directory Structure: 
+Initially, systems used a single directory for all users, leading to name conflicts. The two-level 
+structure introduced user-specific directories within the MFD. Users could name their files freely if 
+the names were unique within their subdirectory. 
+➢ Hierarchical (Tree) Structure: 
+Modern file systems extend the two-level model to allow nested subdirectories. 
+The system resembles an upside-down tree: 
+• Root directory: The base of the tree. 
+• Branches: Subdirectories within subdirectories. 
+• Leaves: Files or empty subdirectories. 

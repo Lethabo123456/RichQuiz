@@ -1,0 +1,23 @@
+t with the word function (lowercase "f"). After a space you type a name for 
+your function. Function names are just like variable names in that you can call them 
+anything you like. But they cannot start with a number; you cannot have spaces in the 
+name; and the variable should contain only letters, numbers (but not the first 
+character of the variable), a dollar sign ($) or an underscore (_). 
+ 
+After your function name you need a pair of round brackets. The round brackets are 
+for something called arguments, which we will get to shortly. 
+ 
+Finally, you need a pair of curly brackets. Any code you want to execute goes between 
+the two curly brackets. 
+ 
+You do not need to spread your functions out over multiple lines, however. This is 
+perfectly valid: 
+function myFunction()  
+{  
+alert("My Function");  
+} 
+ 
+But your code will be easier to read if your functions are not all on one line. 
+ 
+To test functions out, create a new web page. In between two SCRIPT tags, add the 
+following:

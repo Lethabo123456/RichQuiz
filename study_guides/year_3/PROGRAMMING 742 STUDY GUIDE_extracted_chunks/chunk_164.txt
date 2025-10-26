@@ -1,0 +1,35 @@
+4.1.2 The Classes for input and output 
+ 
+The System.IO namespace contains almost all of the classes that you will be covering in this chapter. Sys-
+tem.IO contains the classes for reading and writing data to and from files, and you can reference this 
+namespace in your C# application to gain access to these classes without fully qualifying type names. 
+Quite a few classes are contained in System.IO, as shown in Figure 4-1, but you will only be working with 
+the primary classes needed for file input and output 
+ 
+The classes covered in this chapter are described in the following table: Table 4-1 
+ 
+CLASS                DESCRIPTION 
+File                 A static utility class that exposes many static  eth-
+                     ods for oving, copying,and deleting files 
+Path                 A utility class used to manipulate path names. 
+FileInfo             Represents a physical file on disk, and has meth-
+                     ods to manipulate this file. For any reading from 
+                     and writing to the file, a Stream object must be 
+                     created. 
+FileStream           Represents a file that can be written to or read 
+                     from, or both. This file can be written to and read 
+                     from asynchronously or synchronously.
+StreamReader         Reads character data from a stream and can be 
+                     created by using a FileStream as a base 
+StreamWriter         Writes character data to a stream and can be cre-
+                     ated by using a FileStream as a base. 
+FileSystemWatcher    The most advanced class you will examine in this 
+                     chapter. It is used to monitor files and directories, 
+                     and it exposes events that your application can 
+                     catch when changes occur in these locations. This 
+                     functionality has always been missing from Win-
+                     dows programming, but now the .NET Framework 
+                     makes it much easier to respond to file system 
+                     events. 
+ 
+Figure 4-1  

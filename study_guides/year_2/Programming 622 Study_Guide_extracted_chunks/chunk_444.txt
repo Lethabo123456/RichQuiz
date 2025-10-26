@@ -1,0 +1,39 @@
+e index queueFront is returned; otherwise, the program terminates.  
+  
+template <class Type>  
+Type queueType<Type>::front() const  
+{  
+assert(!isEmptyQueue()); return 
+list[queueFront];  
+} //end front  
+  
+ 
+6.2.4  Back  
+  
+This operation returns the last element of the queue. If the queue is nonempty, the element of the queue 
+indicated by the index queueRear is returned; otherwise, the program terminates.  
+  
+template <class Type>  
+Type queueType<Type>::back() const  
+{  
+assert(!isEmptyQueue()); return 
+list[queueRear];  
+} //end back  
+  
+  
+  
+  
+  
+ 
+6.2.5  Add Queue  
+  
+Next, we implement the addQueue operation. Because queueRear points to the last element of the queue, 
+to add a new element to the queue, we first advance queueRear to the next array position, and then add 
+
+226  
+  
+the new element to the array position indicated by queueRear. We also increment count by 1. So the 
+function addQueue is as follows:  
+  
+template <class Type>  
+void queueType<Type>::addQueu

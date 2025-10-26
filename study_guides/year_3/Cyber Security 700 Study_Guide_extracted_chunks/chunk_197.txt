@@ -1,0 +1,31 @@
+Risk Assessment Approaches 
+
+This section begins with a discussion of the distinction between quantitative and qualitative risk 
+assessment. This is followed by discussion of a simple approach to risk assessment. Finally, this section 
+provides an overview of FAIR, which is referenced several times elsewhere in this chapter. 
+ 
+Quantitative Versus Qualitative Risk Assessment 
+
+Two factors of risk assessment can be treated either quantitatively or qualitatively: impact and 
+likelihood. For impact, if it seems feasible to assign a specific monetary cost to each of the impact 
+areas, then the overall impact can be expressed as a monetary cost. Otherwise, qualitative terms, such 
+as low, moderate, and high, are used. Similarly, the likelihood of a security incident may be determined 
+quantitatively or qualitatively. The quantitative version of likelihood is simply a probability value, and 
+again the qualitative likelihood can be expressed in such categories as low, medium, and high. 
+
+Quantitative Risk Assessment 
+If all factors are expressed quantitatively, then it is possible to develop a formula such as the following: 
+Level of risk = (Probability of adverse event) × (Impact value) 
+This is a measure of the cost of security breaches, expressed numerically. It can also be expressed as 
+a residual risk level as follows: 
+
+Residual risk level = (Probability of adverse event) / (Mitigation factor) * (Impact value)
+
+An equation reads, Residual risk level equals ((Probability of adverse event) over (Mitigation factor)) 
+times (Impact value). 
+
+In this equation, the mitigation factor reflects the reduction 
+in the probability of an adverse event due to the 
+implementation of security controls. Thus, the residual risk 
+level is equivalent to the expected cost of security breaches 
+with the implementation of controls. 

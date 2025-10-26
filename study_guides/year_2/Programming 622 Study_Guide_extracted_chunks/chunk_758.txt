@@ -1,0 +1,40 @@
+oid 
+bTree<recType, bTreeOrder>::searchNode  
+(bTreeNode<recType, bTreeOrder> *current, const recType& item, bool& found, int& location)  
+{ location = 0;  
+while (location < current->recCount && item > current->list[location]) location++;  
+  
+if (location < current->recCount && item == current->list[location]) 
+found = true; else  
+found = false;  
+} //end searchNode  
+  
+template <class recType, int bTreeOrder>  
+bool bTree<recType, bTreeOrder>::search(const recType& searchItem)  
+{  
+bool found = false;  
+int location;  
+  
+bTreeNode<recType, bTreeOrder> *current;  
+  
+current = root;  
+  
+while (current != NULL && !found)  
+{  
+searchNode(current, item, found, location);  
+  
+if 
+(!found) 
+current 
+= 
+current-
+>children[location];  
+}  
+
+373  
+  
+return found;  
+} //end search  
+  
+Note that the function searchNode searches the node sequentially. However, because the data in the 
+node is ordered, we can also use a binary search algorithm to search the node. We leave it as an exerc

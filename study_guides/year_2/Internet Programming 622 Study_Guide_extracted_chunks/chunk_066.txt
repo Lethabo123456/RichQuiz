@@ -1,0 +1,16 @@
+asterisk (*) 
+are required.</p>   
+            <?php } ?>   
+<form action=”registration.php” method=”post”>   
+                  <div style=”width: 30em;”>   
+                 <label for=”firstName”<?php validateField( “firstName”,    
+                                $missingFields ) ?>>First name *</label>   
+                <input type=”text” name=”firstName” id=”firstName”                                value=”<?php 
+setValue( “firstName” ) ?>” />                  <label  
+for=”lastName”<?php validateField( “lastName”,   
+                                  $missingFields ) ?>>Last name *</label>   
+                  <input type=”text” name=”lastName” id=”lastName” value=   
+                                 ”<?php setValue( “lastName” ) ?>” />   
+                  <label for=”password1”<?php if ( $missingFields ) echo   
+                                  ‘ class=”error”’ ?>>Choose a password *</label>   
+                   <input type=”password” name=”password1

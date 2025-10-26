@@ -1,0 +1,49 @@
+6.3.1 Unit Testing  
+
+Unit testing is the process of testing program components, such as methods or object classes. 
+Individual functions or methods are the simplest type of component. Your tests should be calls to 
+these routines with different input parameters. When you are testing object classes, you should 
+design your tests to provide coverage of all of the features of the object. This means that you 
+should test all operations associated with the object; set and check the value of all attributes 
+associated with the object; and put the object into all possible states. This means that you should 
+simulate all events that cause a state change 
+
+6.3.2 Component Testing  
+Software components are often made up of several interacting objects. For example, in the 
+weather station system, the reconfiguration component includes objects that deal with each 
+aspect of the reconfiguration. You access the functionality of these objects through component 
+interfaces.  
+Testing composite components should therefore focus on showing that the component interface 
+or interfaces behave according to its specification. You can assume that unit tests on the individual 
+objects within the component have been completed. 
+ 
+6.3.3 System Testing  
+System testing during development involves integrating components to create a version of the 
+system and then testing the integrated system. System testing checks that components are 
+compatible, interact correctly, and transfer the right data at the right time across their interfaces. 
+It obviously overlaps with component testing, but there are two important differences: 
+ 
+i. During system testing, reusable components that have been separately developed 
+and off-the-shelf systems may be integrated with newly developed components. 
+The complete system is then tested. 
+ 
+ii. Components developed by different team members or subteams may be 
+integrated at this stage. System testing is a collective rather than an individual 
+process. In some companies, system testing may involve a separate testing team 
+with no involvement from designers and programmers 
+ 
+All systems have emergent behavior. This means that some system functionality and 
+characteristics only become obvious when you put the components together. This may be 
+planned emergent behavior, which has to be tested. For example, you may integrate an 
+authentication component with a component that updates the system database.  
+ 
+You then have a system feature that restricts information updating to authorized users. 
+Sometimes, however, the emergent behavior is unplanned and unwanted. You have to develop 
+tests that check that the system is only doing what it is supposed to do. 
+ 
+System testing should focus on testing the interactions between the components and objects that 
+make up a system. You may also test reusable components or systems to check that they work as 
+expected when they are integrated with new components. This interaction testing should 
+discover those component bugs that are only revealed when a component is used by other 
+components in the system. Interaction testing also helps find misunderstandings, made by 
+component developers, about other components in the system

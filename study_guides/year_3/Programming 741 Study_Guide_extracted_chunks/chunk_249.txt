@@ -1,0 +1,21 @@
+Topic 7: Delegates and Events 
+ 
+7.1 Introduction  
+Many of the examples and exercises in this study Guide have placed great emphasis on the 
+careful definition of classes and structures to enforce encapsulation. In this way, the 
+implementation of the methods in these types can change without unduly affecting the 
+applications that use them. Sometimes, however, it’s not possible or desirable to encapsulate 
+the entire functionality of a type. For example, the logic for a method in a class might depend 
+upon which component or application invokes the method, which might need to perform 
+some application or components specific processing as part of its operation. However, when 
+you build such a class and implement its methods, you might not know which applications 
+and components will use it, and you need to avoid introducing dependencies in your code 
+that might restrict the use of your class. Delegates provide the ideal solution, making it 
+possible for you to fully decouple the application logic in your methods from the applications 
+that invoke them. 
+
+Events in C# support a related scenario. Much of the code you’ve written in the exercises in 
+this book assumes that statements execute sequentially. Although this is the most common 
+case, you’ll find that it is sometimes necessary to interrupt the normal flow of execution to 
+perform another, more important task. When that task is complete, the program can 
+continue where it left off.

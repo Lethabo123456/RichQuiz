@@ -1,0 +1,14 @@
+Feature selection 
+Feature selection focuses on identifying the most relevant features from a given dataset to improve 
+model performance and generalizability. The presence of too many irrelevant or redundant features 
+can lead to overfitting, where the model learns noise rather than meaningful patterns. To mitigate 
+this issue, various feature selection techniques are employed. Filter methods rely on statistical tests, 
+such as correlation coefficients or mutual information, to assess the relevance of each feature 
+independently of the learning algorithm. In contrast, wrapper methods evaluate subsets of features 
+based on their impact on model performance, often using iterative techniques such as recursive 
+feature elimination or forward selection. By selecting only the most informative features, feature 
+selection enhances model efficiency, reduces computational complexity, and improves 
+interpretability. 
+These two processes are essential components of the machine learning pipeline, as they enable 
+models to learn effectively from data while avoiding unnecessary complexity. 
+

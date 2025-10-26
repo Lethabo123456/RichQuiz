@@ -1,0 +1,23 @@
+uff with the location object, but the main use of 
+location is to redirect a user to another web page. For example, if you detected 
+someone was using an iPad then you can redirect them to your iPad optimised page. 
+The location object is used like this: 
+window.location = "http://www.homeandlearn.co.uk/"; 
+ 
+After an equal sign, you type the name of the web page or site that you want your 
+visitors to go to. This needs to go between quotation marks. Notice the use of a 
+semicolon at the end of the line above. This is not strictly necessary. But it is 
+recommended that you separate each line of code with a semicolon. We'll be doing 
+that from now on. 
+ 
+2.5 WINDOW METHODS AND EVENTS 
+ 
+The Window object also has something called 
+Methods. A method is a chunk of code that does a 
+particular job. The alert, confirm, and prompt boxes 
+you have been using are methods. If we were being 
+exact we would have written this: 
+window.alert("Alert Message") 
+ 
+And this: 
+window.confirm("OK or Canc

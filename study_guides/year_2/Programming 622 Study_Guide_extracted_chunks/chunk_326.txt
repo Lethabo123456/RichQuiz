@@ -1,0 +1,22 @@
+nsider the 4-queens puzzle. That is, you are given a 4 by 4 square board 
+(see Figure 4-12) and you are to place 4 queens on the board so that no two queens attack each other.  
+  
+
+163  
+  
+  
+FIGURE 4-12 Square board for the 4-queens puzzle  
+  
+We start by placing the first queen in the first row and first column as shown in Figure 4-13(a). (A cross in 
+a box means no other queen can be placed in that box.)  
+  
+  
+FIGURE 4-13 Finding a solution to the 4-queens puzzle  
+  
+After placing the first queen, we try to place the second queen in the second row. Clearly, the first square 
+in the second row where the second queen can be placed is the third column. So we place the second 
+queen in that column; see Figure 4-13(b).  
+  
+Next, we try to place the third queen in the third row. We find that the third queen cannot be placed in 
+the third row and so we arrive at a dead end. At this point we backtrack to the previous board 
+configuration and place the second queen in the fourth colum

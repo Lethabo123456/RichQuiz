@@ -1,0 +1,28 @@
+// ...   
+if (bytesAvailable > 0) {   
+ProcessData();   
+ 
+bytesAvailable -= n;   
+} 
+else
+{  
+waitForMoreData();  
+
+bytesAvailable = n;   
+}   
+   
+Nested ifs    
+A nested if is an if statement that is the target of another if or else. Nested ifs are very common in 
+programming. When you nest ifs, the main thing to remember is that an else statement always 
+refers to the nearest if statement that is within the same block as the else and that is not already 
+associated with an else. Here is an example:   
+     
+if(i == 10) {   
+if(j < 20) a = b;   
+if(k > 100) c = d; // this if is   
+else a = c; // associated with this else   
+}  else a = d; // this else refers to if(i == 10)   
+   
+As the comments indicate, the final else is not associated with if(j<20), because it is not in the same 
+block (even though it is the nearest if without an else). Rather, the final else is associated with 
+if(i==10). The inner else refers to if(k>100), because it is the closest if within the same block.

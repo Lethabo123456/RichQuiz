@@ -1,0 +1,26 @@
+5.7 Indexers 
+There are times when it is desirable to access a collection within a class as though theclass 
+itself were an array. For example, suppose you create a list box control named myListBox that 
+contains a list of strings stored in a one-dimensional array, a private member variable named 
+myStrings. A list box control contains member properties and methods in addition to its array 
+of strings. However, it would be convenient to be able to access the list box array with an 
+index, just as if the list box were an array. For example, such a property would permit 
+statements like the following: 
+
+string theFirstString = myListBox[0] ;  
+string theLastString =myListBox[ Length-1]; 
+An indexer is a C# construct that allows you to access collections contained by a class using 
+the familiar [] syntax of arrays. An indexer is a special kind of property and includes get ( ) and 
+set ( ) methods to specify its behavior.  
+ 
+You declare an indexer property within a class using the following 
+syntax: type this [ type argument] { get ; set ;} 
+The return type determines the type of object that will be returned by the indexer, while the 
+type argument specifies what kind of argument will be used to index into the collection that 
+contains the target objects. Although it is common to use integers as index values, you can 
+index a collection on other types as well, including strings. You can even provide an indexer 
+with multiple parameters to create a multidimensional array! 
+ 
+The this keyword is a reference to the object in which the indexer appears. As with a normal 
+property, you also must define get ( ) and set ( ) methods, which determine how the requested 
+object is retrieved from or assigned to its collection.

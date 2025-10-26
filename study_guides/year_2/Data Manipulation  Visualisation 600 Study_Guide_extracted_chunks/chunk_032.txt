@@ -1,0 +1,40 @@
+Example 1.8: 
+• We create a Series named data, which contains some null values. 
+• Using the fillna() method, we replace the null values with 0. 
+• Then, we print the updated series.  
+ 
+In Example 1.9.1, after applying forward fill, missing values are replaced with the last known non-null value forward 
+along the column. For example: 
+
+• The missing value in column 'A' at index 1 is replaced with the last known non-null value (1.0) from index 0. 
+• The missing value in column 'B' at index 0 remains as NaN because there is no non-null value forward from 
+that index. 
+
+In Example 1.9.2, missing values are replaced with the following known non-null value backwards along the column 
+after applying the backwards fill. For example: 
+• The missing value in column 'A' at index 1 is replaced with the following known non-null value (3.0) from index 
+2. 
+• The missing value in column 'B' at index 4 remains as NaN because there is no non-null value backwards from 
+that index. 
+
+1.6 Removing Duplicates 
+Removing duplicates from a dataset before analysis is critical to ensure the accuracy, reliability, and efficiency of 
+data-driven insights and decision-making processes. It helps to maintain data integrity, improve analytical outcomes, 
+and streamline the analysis workflow. 
+ 
+Example 1.10 
+• We create a sample DataFrame with duplicate rows in the 'Name' and 'City' columns. 
+• We use the duplicated() method to identify duplicate rows in the DataFrame.  
+• The drop_duplicates() method removes duplicate rows from the DataFrame. By default, this method keeps 
+the first occurrence of each duplicate row. 
+
+1.7 Handling Outliers 
+Handling outliers involves various techniques to identify, analyse, and mitigate the impact of outliers on data analysis 
+or modelling tasks. Outliers can be removed from the dataset based on predefined thresholds or statistical criteria. 
+ 
+Example 1.11: 
+• We create a sample DataFrame, data. 
+• Our threshold will be set at 100.  
+• Using the filtering technique, we learned in Example 1.4, we created a new DataFrame to store values less 
+than the threshold. 
+ 

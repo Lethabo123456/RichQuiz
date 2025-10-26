@@ -1,0 +1,37 @@
+tructor (in the order given), C++ uses type conversion and looks for the 
+best match. For example, an integer value might be converted to a floating-
+point value with a zero decimal part. Any ambiguity will result in a compile-time 
+error. 
+ 
+ 
+ 
+
+192 | P a g e  
+ 
+ 
+ 
+
+193 | P a g e  
+ 
+ 
+ 
+For item1, the default constructor in Line 1 executes because no value is passed to 
+this variable. For item2, the constructor in Line 2 executes because only one 
+parameter, which is of type string, is passed, and it matches with the constructor in 
+Line 2. For item3, the constructor in Line 3 executes because three parameters are 
+passed to item3, and they match with the constructor in Line 3. Similarly, for item4, the 
+constructor in Line 4 executes (see Figure below). 
+ 
+ 
+ 
+ 
+ 
+ 
+
+194 | P a g e  
+ 
+ 
+Arrays of Objects (Variables) and Constructors 
+ 
+If a class has constructors and you declare an array of that class’s objects, the class 
+should have the default constructor. The default construc

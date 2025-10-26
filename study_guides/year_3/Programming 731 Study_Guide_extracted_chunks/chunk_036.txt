@@ -1,0 +1,27 @@
+Dynamic   
+Java programs carry with them substantial amounts of run-time type information that  is used to 
+verify and resolve accesses to objects at run time. This makes it possible to dynamically link code in 
+a safe and expedient manner. This is crucial to the robustness  of the applet environment, in which 
+small fragments of bytecode may be dynamically updated on a running system.   
+ 
+1.4 Object Oriented Programming   
+   
+Object-oriented programming is at the core of Java. In fact, all Java programs are object-oriented— 
+this isn’t an option the way that it is in C++, for example. OOP is so integral to Java that you must 
+understand its basic principles before you can write even simple Java programs. Therefore, this 
+chapter begins with a discussion of the theoretical aspects of OOP.
+
+Two Paradigms    
+As you know, all computer programs consist of two elements: code and data. Furthermore, a 
+program can be conceptually organized around its code or around its data. That is,some programs 
+are written around “what is happening” and others are written around “who is being affected.” 
+These are the two paradigms that govern how a program is constructed. The first way is called the 
+process-oriented model. This approach characterizes a program as a series of linear steps (that is, 
+code). The process-oriented model can be thought of as code acting on data. Procedural languages 
+such as C employ this model to considerable success. However, as mentioned in Chapter 1, problems 
+with this approach appear as programs grow larger and more complex. To manage increasing 
+complexity, the second approach, called object-oriented programming, was conceived. Object-
+oriented programming organizes a program around its data (that is, objects) and a set of well-
+defined interfaces to that data. An object-oriented program can be characterized as data controlling 
+access to code. As you will see, by switching the controlling entity to data, you can achieve several 
+organizational benefits.

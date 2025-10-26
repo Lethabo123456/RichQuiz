@@ -1,0 +1,16 @@
+he file. (If the file 
+does not exist, PHP attempts to create it.) The second line writes the character string “ ABCxyz ” to 
+the beginning of the file. As with fread() , the file pointer moves to the position after the written 
+string; if you repeat the second line, fwrite() appends the same six characters again, so that the file 
+contains the characters “ ABCxyzABCxyz ”.   
+   
+You can limit the number of characters written by specifying an integer as a third argument. The 
+function stops writing after that many characters (or when it reaches the end of the string, 
+whichever occurs first). For example, the following code writes the first four characters of “ 
+abcdefghij ” (that is, “ abcd “ ) to the file:   
+   
+fwrite( $handle, “abcdefghij”, 4 );   
+   
+One very popular use for Web scripts is a hit counter, which is used to show how many times a Web 
+page has been visited and therefore how popular the Web site is. Hit counters come in different 
+forms, the simplest of which is a te

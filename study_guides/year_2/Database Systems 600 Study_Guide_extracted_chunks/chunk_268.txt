@@ -1,0 +1,20 @@
+subquery is always on the right side of a comparison or assigning expression. Also, a 
+subquery can return one or more values. To be precise, the subquery can return the following:  
+ 
+One single value (one column and one row).  
+ 
+A list of values (one column and multiple rows).  
+ 
+A virtual table (multicolumn, multirow set of values).  
+Multirow Subquery Operators: ALL and ANY 
+So far, you have learned that you must use an IN subquery to compare a value to a list of values. 
+However, the IN subquery uses an equality operator; that is, it selects only those rows that are 
+equal to at least one of the values in the list. What happens if you need to make an inequality 
+comparison ( > or < ) of one value to a list of values? 
+For example, suppose you want to know which products cost more than all individual products 
+provided by vendors from Florida:  
+SELECT  P_CODE, P_QOH * P_PRICE AS TOTALVALUE  
+FROM  
+PRODUCT  
+WHERE  
+P_QOH * P_PRICE > ALL (SELECT P_QOH * P_PRICE FROM PRODUCT

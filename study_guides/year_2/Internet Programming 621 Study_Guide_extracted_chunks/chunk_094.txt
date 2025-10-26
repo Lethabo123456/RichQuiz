@@ -1,0 +1,20 @@
+er one string of text is contained within another. PHP gives 
+you several string functions that let you search for one string inside another:  
+strstr() tells you whether the search text is within the string  
+strpos() and strrpos() return the index position of the first and last occurrence of the search 
+text, respectively  
+substr_count() tells you how many times the search text occurs within the string 
+strpbrk() searches a string for any of a list of characters  
+  
+4.7 Searching Strings With strstr()  
+If you just want to find out whether some text occurs within a string, use strstr() . This takes two 
+parameters:  
+the string to search through, and 
+the search text.  
+  
+If the text is found, strstr() returns the portion of the string from the start of the found text to the 
+end of the string. If the text isn ’ t found, it returns false . For example:  
+  
+$myString = “Hello, world!”;  
+echo strstr( $myString, “wor” ) . “ < br / > ”; // Displays ‘world!’  
+echo ( strstr( $m

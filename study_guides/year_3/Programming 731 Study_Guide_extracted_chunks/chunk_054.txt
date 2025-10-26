@@ -1,0 +1,20 @@
+This is the second type of comment supported by Java. A single-line comment begins with a // and 
+ends at the end of the line. As a general rule, programmers use multiline comments for longer 
+remarks and single-line comments for brief, line-by-line descriptions. The next line of code is shown 
+here: 
+   
+public static void main(String args[]) {   
+   
+This line begins the main( ) method. As the comment preceding it suggests, this is the line at which 
+the program will begin executing. All Java applications begin execution by calling main( ). (This is just    
+like C/C++.) The exact meaning of each part of this line cannot be given now, since it involves a 
+detailed understanding of Java’s approach to encapsulation. However, since most of the examples 
+in the first part of this book will use this line of code, let’s take a brief look at each part now.   
+   
+The public keyword is an access specifier, which allows the programmer to control the visibility of 
+class members. When a class member is preceded by public, then that member may be accessed by 
+code outside the class in which it is declared. (The opposite of public is private, which prevents a 
+member from being used by code defined outside of its class.) In this case, main( ) must be declared 
+as public, since it must be called by code outside of its class when the program is started. The 
+keyword static allows main( ) to be called without having to instantiate a particular instance of the 
+class.

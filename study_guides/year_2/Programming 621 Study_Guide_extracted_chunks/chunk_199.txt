@@ -1,0 +1,21 @@
+ress of the actual parameter. Therefore, an efficient way to pass a variable 
+as a parameter is by reference. If a variable is passed by reference, then when the 
+formal parameter changes, the actual parameter also changes. Sometimes, however, 
+you do not want the function to be able to change the values of the member variables. 
+In C++, you can pass a variable by reference and still prevent the function from 
+changing its value by using the keyword const in the formal parameter declaration. As 
+an example, consider the following function definition: 
+ 
+void testTime(const clockType& otherClock)  
+{ 
+        clockType 
+dClock; 
+         . 
+. 
+.  
+} 
+The function testTime contains a reference parameter, otherClock. The parameter 
+otherClock is declared using the keyword const. Thus, in a call to the function testTime, 
+the formal parameter otherClock receives the address of the actual parameter, but 
+otherClock cannot modify the contents of the actual parameter. 
+For example, after the

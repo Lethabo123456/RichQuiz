@@ -1,0 +1,33 @@
+2.3 TCP / IP SOCKETS  
+TCP/IP sockets are used to implement reliable, bidirectional, persistent, point to point, stream based 
+between two hosts on the Internet. A socket can be used to connect Java’s Input/Output system to other 
+programs that may reside either on the local machine or any other machine on the Internet.  
+  
+In Java, TCP sockets are classified as:  
+• TCP Server Socket  
+• TCP Client Socket  
+  
+The java.net package provides two classes that allow you to create the two kinds of sockets. The classes 
+are Socket and Server Socket respectively. The Socket class, basically used to create client sockets, is 
+designed to connect to server sockets and initiate protocol exchanges.The Server Socket class, basically 
+used to create server sockets, is designed to be a listener, which waits for clients to Connect before doing 
+anything. When you create a Socket object, it implicitly establishes the connection between the client and 
+the server. The Socket class provides some constructors to create client sockets  
+  
+Table 2.3  
+  
+After you have created a socket, you can get the address and port details associated with the socket by 
+the use of the following methods (Table 2.4).  
+  
+Table 2.4  
+  
+Since TCP is a stream based protocol, every TCP socket is associated with input and output streams. It is 
+noted that Remember there should be two ports for all TCP connections, a port on the remote machine 
+and a port on the local machine, through which the client communicates. The local port number need not 
+be specified because the TCP/IP software allocates these ports dynamically. These ports are called 
+ephemeral ports because they exist only for the duration of a volatile client/server transaction. As 
+discussed earlier, Java defines another class that must be used to create server applications. The 
+ServerSocket class is used to create servers that listen for either local or remote client programs to connect 
+to them on standard ports   
+  
+Table 2.5 

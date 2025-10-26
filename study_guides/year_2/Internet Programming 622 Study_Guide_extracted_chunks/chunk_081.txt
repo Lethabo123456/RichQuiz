@@ -1,0 +1,20 @@
+is the cookie’s value field. For instance, the 
+following code at the top of a page keeps track of the number of times the page has been accessed 
+by this client:   
+   
+$pageAccesses = $_COOKIE['accesses'];    
+setcookie('accesses', ++$pageAccesses);   
+   
+When decoding cookies, any periods (.) in a cookie’s name are turned into underscores. For instance, 
+a cookie named tip.top is accessible as $_COOKIE['tip_top']. The example below shows an HTML 
+page that gives a range of options for background and foreground colors.   
+   
+<html>   
+<head><title>Set Your Preferences</title></head>   
+<body>   
+           <form action="prefs.php" method="post">                  <p>Background:   
+                      <select name="background">   
+                               <option value="black">Black</option>   
+                              <option value="white">White</option>   
+                              <option value="red">Red</option>   
+                              <option value="bl

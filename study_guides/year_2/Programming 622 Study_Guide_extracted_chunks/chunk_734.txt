@@ -1,0 +1,21 @@
+construction. The heights of the subtrees are 
+shown in the figure. The dotted rectangle shows that a new item is inserted in the subtree, causing the 
+  
+  
+  
+
+360  
+  
+subtree to grow in height. The new item is inserted either in T2 or T3. We note the following (in the tree 
+prior to reconstruction):  
+All keys in T3 are smaller than the key in node c.  
+All keys in T3 are larger than the key in node b.  
+All keys in T2 are smaller than the key in node b.  
+All keys in T2 are larger than the key in node a.  
+After insertion, the subtrees with root nodes a and b are still AVL trees.  
+The balance criteria is violated at the root node, c, of the tree.  
+The balance factors of node c, bf(c) = -1, and node a, bf(a) = 1 are opposite.  
+  
+This is an example of double rotation. One rotation is required at node a, and another rotation is required 
+at node c. If the balance factor of the node, where the tree is to be reconstructed, and the balance factor 
+of the higher subtree are opposite,

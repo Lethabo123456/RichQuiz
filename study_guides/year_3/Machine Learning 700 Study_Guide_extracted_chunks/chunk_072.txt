@@ -1,0 +1,21 @@
+Chapter 3: Supervised Learning – Regression Algorithms 
+ 
+3.1 What is Supervised Learning? 
+Supervised learning is a fundamental branch of machine learning where an algorithm learns from 
+labeled data. Each data point consists of input features (X) and a corresponding output (Y). The goal 
+of the algorithm is to learn a mapping function f: X → Y that accurately predicts outputs for unseen 
+data. The training process involves adjusting model parameters to minimize the error between 
+predicted and actual values. 
+Key Characteristics of Supervised Learning: 
+✓ Labeled Data: Each training example consists of known input-output pairs. 
+✓ Learning Function: The model approximates the relationship between inputs and outputs 
+using a mathematical function. 
+✓ Error Minimization: Training involves optimizing model parameters to minimize the 
+difference between predictions and actual outcomes.
+
+This framework is the foundation for many applications, such as predicting house prices based on 
+features like square footage, location, and age of the property. Supervised learning is the foundation 
+for various real-world applications such as predicting house prices, stock trends, and sales revenue 
+forecasting. Recent studies (Zhang & Lee, 2021) highlight that the performance of supervised 
+learning models significantly depends on the quality of labeled data and the appropriate selection of 
+hypothesis functions.

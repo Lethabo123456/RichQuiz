@@ -1,0 +1,35 @@
+Object storage interfaces 
+Various types of data can be referenced and stored as Web resources. This is referred to as object 
+storage, which is based on technologies that can support a range of data and media types. Cloud 
+Storage Device mechanisms that implement this interface can typically be accessed via REST or Web 
+service-based cloud services using HTTP as the prime protocol. The Storage Networking Industry 
+Association’s Cloud Data Management Interface (SNIA’s CDMI) supports the use of object storage 
+interfaces. 
+
+Database storage interfaces 
+Cloud storage device mechanisms based on database storage interfaces typically support a query 
+language in addition to basic storage operations. Storage management is carried out using a standard 
+API or an administrative user-interface 
+This classification of storage interface is divided into two main categories according to storage 
+structure. They are Relational and Non-relational Data Storage  
+
+ Relational Data Storage 
+Traditionally, many on-premise IT environments store data using relational databases or relational 
+database management systems (RDBMSs). Relational databases (or relational storage devices) rely on 
+tables to organize similar data into rows and columns. Tables can have relationships with each other 
+to give the data increased structure, to protect data integrity, and to avoid data redundancy (which is 
+referred to as data normalization). Working with relational storage commonly involves the use of the 
+industry standard Structured Query Language (SQL). Challenges with cloud-based relational databases 
+commonly pertain to scaling and performance. Scaling a relational cloud storage device vertically can 
+be more complex and cost-ineffective than horizontal scaling. Databases with complex relationships 
+and/or containing large volumes of data can be afflicted with higher processing overhead and latency, 
+especially when accessed remotely via cloud services. 
+ Non-relational Data Storage 
+Non-relational storage (also commonly referred to as NoSQL storage) moves away from the traditional 
+relational database model in that it establishes a “looser” structure for stored data with less emphasis 
+on defining relationships and realizing data normalization. The primary motivation for using non-
+relational storage is to avoid the potential complexity and processing overhead that can be imposed 
+by relational databases. Also, non-relational storage can be more horizontally scalable than relational 
+storage. Cloud providers often offer non-relational storage that provides scalability and availability of 
+stored data over multiple server environments 
+ 

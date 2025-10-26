@@ -1,0 +1,15 @@
+s a mandatory foreign key—that is, a foreign key attribute that cannot be null.  
+If an entity can exist apart from its related entities, then it is existence-independent, and it is 
+referred to as a strong entity or regular entity. 
+Relationship Strength 
+The concept of relationship strength is based on how the primary key of a related entity is defined. 
+To implement a relationship, the primary key of one entity (the parent entity, normally on the “one” 
+side of the one-to-many relationship) appears as a foreign key in the related entity (the child entity, 
+mostly the entity on the “many” side of the one- to-many relationship). Sometimes, the foreign key 
+
+ 
+54 
+also is a primary key component in the related entity. In this section, you will learn how various 
+relationship strength decisions affect primary key arrangement in database design.  
+Weak (Non-Identifying) Relationships A weak relationship, also known as a non-identifying 
+relationship, exists if the primary key of the rela

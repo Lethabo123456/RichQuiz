@@ -1,0 +1,59 @@
+2.2.2  Platform-as-a- Service (PaaS) 
+The PaaS delivery model represents a pre-defined “ready-to-use” environment typically comprised 
+of already deployed and configured IT resources. PaaS specifically relies on the usage of a ready-
+made environment that establishes a set of pre-packaged products and tools used to support the 
+entire delivery lifecycle of custom applications.  App Engine of Google and Force.com are example of 
+PaaS offering vendors. Developer may log on to these websites and use the built-in Application 
+Programming Interface (API) to create web-based applications.  By working within a ready-made 
+platform, the cloud consumer is spared the administrative burden of setting up and maintaining the 
+bare infrastructure IT resources provided via the IaaS model. 
+ 
+ 
+Fig 2.1: PaaS  
+
+Characteristics of PaaS 
+ PaaS offers browser-based development environment. It allows the developer to create 
+database and edit the application code either via Application Programming Interface or 
+point-and-click tools. 
+ PaaS provides built-in security, scalability and web service interfaces 
+ PaaS provides built-in tools for defining workflow, approval processes and business rules 
+ It is easy to integrate PaaS with other applications on the same platform.  
+ 
+Benefits of PaaS 
+ Scalable solutions 
+ Lower administrative overhead 
+ More current system software 
+ 
+Challenges associated with PaaS 
+Just like SaaS, PaaS also places significant burden on customer’s browser to maintain reliable and 
+secure connection to the provider’s system.  Other specific issues associated with PaaS are;  
+ Lack of portability between PaaS clouds 
+ Event based processor scheduling 
+ Security engineering of PaaS application 
+
+2.2.3  Software-as-a- Service (SaaS) 
+SaaS model provides software application as a service to end users. It refers to a software that is 
+deployed on a host service and is accessible via the internet. Some common examples of SaaS 
+application are - Billing and Invoicing system, Help desk application, Customer Relationship 
+Management (CRM) application, etc.  
+
+Characteristics of SaaS 
+ SaaS makes the software available over the internet 
+ The software applications are maintained by the vendor 
+ SaaS applications are cost-effective since they do not require any maintenance on the end-
+user side.  
+ They are available on demand 
+
+ Fig 2.2: SaaS 
+ 
+Benefits of SaaS 
+ Scalable and efficient  
+ Centralised management and data 
+ Multitenant solutions  
+ The provider is responsible for managing platforms 
+ 
+Challenges associated with SaaS 
+ Network dependent  
+ Browser- based risks 
+ Multitenant solutions  
+ Lack of portability between SaaS clouds  

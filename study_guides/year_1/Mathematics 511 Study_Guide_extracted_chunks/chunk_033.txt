@@ -1,0 +1,40 @@
+Table 9: Table for the Bit Operators OR, AND, and XOR 
+ 
+ 
+Information is often represented using bit strings, which are lists of zeros and 
+ones. When this is done, operations on the bit strings can be used to manipulate 
+this information.
+  
+Definition 7 
+A bit string is a sequence of zero or more bits. The length of this string is the 
+number of bits in the string. 
+Looking at 101010011, you notice that it is a bit string of length nine. 
+We can extend bit operations to bit strings. We define the bitwise OR, 
+bitwise AND, and bitwise XOR of two strings of the same length to be the 
+strings that have as their bits the OR, AND, and XOR of the corresponding 
+bits in the two strings, respectively. We use the symbols ∨, ∧, and ⊕ to 
+represent the bitwise OR, bitwise AND, and bitwise XOR operations, 
+respectively. We will illustrate bitwise 
+operations on bit strings next. 
+
+The meaning of the word bit comes from binary digit, because zeros and ones are 
+the digits used in binary representation
+
+Worked Example 
+Find the bitwise OR, bitwise AND, and bitwise XOR of the bit strings 01 
+1011 0110 and 11 0001 1101. (Bit strings will be split into blocks of four 
+bits to make them easier to read.) 
+
+Solution: 
+The bitwise OR, bitwise AND, and bitwise XOR of these strings are 
+obtained by taking the OR, AND, and XOR of the corresponding bits, 
+respectively. This gives us: 
+
+0 1 1 0 1 1 0 1 1 0 
+1 1 0 0 0 1 1 1 0 1 
+1 1 1 0 1 1 1 1 1 1 
+Bitwise OR 
+0 1 0 0 0 1 0 1 0 0 
+Bitwise AND 
+1 0 1 0 1 0 1 0 1 1 
+Bitwise XOR 

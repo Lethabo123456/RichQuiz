@@ -1,0 +1,31 @@
+Repeat the last two lines of code in Listing 5.9 for each EditText in the layout (changing variable names 
+and EditTexts). The first line gets a system service that manages user input. The second line gets a 
+reference to an EditText, and the third line closes the keyboard. Every EditText must receive this 
+treatment because there is no way of knowing which EditText users were working with when they 
+pressed the Save button. Add a call to this method in the initSaveButton method just before the 
+ContactDataSource is instantiated. 
+
+Test the modification in the emulator. Another discrepancy is exposed (again, only if you have the 
+hardware keyboard disabled in the AVD). The keyboard hides, but the screen remains focused on the 
+last EditText used. When the user saves the data and the screen displays in view mode, it should be 
+focused at the top of the screen. It does not do this. Fortunately, there is an easy fix. Tell the ScrollView 
+to focus on the top of the screen. Change the block of code that requests focus for the contact name 
+EditText in the setForEditing method to the following to change the ScrollView’s focus to the top of 
+the screen when switching to viewing mode: 
+
+if (enabled) { editName.requestFocus(); 
+} 
+else { 
+ScrollView s = findViewById(R.id.scrollView); 
+s.fullScroll(ScrollView.FOCUS_UP); 
+}
+
+One last problem exists with the MainActivity. If the user adds a new contact, presses the Save button, 
+and then edits the data and presses Save again, another contact will be added, rather than updating 
+the contact just entered. This is because the currentContact object still has an ID of –1. There are a 
+number of approaches to fixing this problem. You could clear the screen and make users get the 
+contact from the contact list (not yet implemented) if they want to edit it. You could retrieve the newly 
+inserted contact and reload the screen with all the newly entered data and the id that was created by 
+the auto increment of the ID when the contact was inserted into the database. Or you could get the 
+new ID and set the currentContact contactID attribute to that value. That is the approach used here. 
+Open the ContactDataSource and create a new method using the code in Listing 5.10. 

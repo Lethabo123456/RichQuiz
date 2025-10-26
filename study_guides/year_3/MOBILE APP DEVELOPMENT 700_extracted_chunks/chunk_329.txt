@@ -1,0 +1,40 @@
+Create the Adapter 
+
+The next step is to create the adapter. Right-click on the com.example.mycontactlist folder in the java 
+folder and select New > Java class. Give it the name ContactAdapter in the window that opens and 
+click OK. In the ContactAdapter.java file created, change the class declaration from public class 
+ContactAdapter { to public class ContactAdapter extends RecyclerView.Adapter {. The new line will be 
+underlined in red. Hover over it and click the disclosure button on the red light bulb that appears to 
+the left. Select Implement methods and click OK on the window that opens. Your file should now have 
+three empty methods in it. Refer to Listing 6.2 to enter the code required for the adapter. 
+  
+Most of this code is new, so it requires detailed explanation. 
+▪ Lines 1–2—In the first line, the adapter class is declared and subclasses the required RecyclerView 
+adapter. The second line declares a variable to hold the data to be displayed. Since we retrieve the 
+contact names as an ArrayList of Strings, we must match that data type here. 
+▪ Lines 4–15—This set of code declares and codes the behavior of the ViewHolder class that is owned 
+
+by this adapter. The first line declares the class as a subclass of RecyclerView’s ViewHolder. Next, a 
+variable to hold a reference to the only widget in the item’s layout is declared. Since the only widget 
+is a TextView, this is all that is declared. Lines 7–10 declare the constructor method for the ViewHolder. 
+This method uses findViewById to get a reference to the TextView in the layout. The final lines declare 
+a method to return the TextView in the layout. This method will be used by the adapter to set and 
+change the displayed text.
+
+▪ The @NonNull notation used throughout this code indicates that the parameter—for example, 
+public ContactViewHolder(@NonNull View itemView) {—cannot contain a null value or, if it’s before 
+a method, that the method cannot return a null value 
+▪ Lines 17–19—A constructor method for the adapter is declared. This constructor is used to 
+associate the data to be displayed with the adapter. 
+▪ Lines 21–26—This is a required method for a RecyclerView.Adapter. It overrides the superclasses 
+method. This method is called for each item in the data set to be displayed. Its job is to create the 
+visual display for each item using the layout file we created. For each item, a ViewHolder is created 
+using the inflated XML and returned to the RecylcerView to be displayed in the activity. 
+▪ Lines 21–26—This is also a required method. It is also called for each item in the data set. It is 
+passed to the ViewHolder created by the OnCreateViewHolder method as a generic ViewHolder. This 
+is then cast into the associated ContactViewHolder, and the classes getContactTextView method is 
+called to set the text attribute of the TextView to the name of the contact at the current position in 
+the data set. 
+▪ Lines 33–37—This is the last required method in the adapter. It returns the number of items in the 
+data set. This number is used to determine how many times the other two methods need to be 
+executed.

@@ -1,0 +1,13 @@
+econd value represents the maximum number of associated entities. 
+When the specific cardinalities are not included on the diagram in Crow’s Foot notation, cardinality 
+is implied by the symbols shown in Figure 4.7, which describe the connectivity and participation 
+(discussed next).  
+ 
+Knowing the minimum and maximum number of entity occurrences is very useful at the application 
+software level. However, keep in mind that the DBMS cannot handle the implementation of the 
+cardinalities at the table level—that capability is provided by the application software or by triggers.  
+As you examine the Crow’s Foot diagram in Figure 4.7, keep in mind that the cardinalities represent 
+the number of occurrences in the related entity. For example, the cardinality (1,4) next to the 
+CLASS entity in the “PROFESSOR teaches CLASS” relationship indicates that each professor 
+teaches up to four classes, which means that the PROFESSOR table’s primary key value occurs at 
+least once and no more than fou

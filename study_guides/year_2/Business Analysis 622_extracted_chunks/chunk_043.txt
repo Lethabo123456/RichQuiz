@@ -1,0 +1,15 @@
+so called state machine diagrams. A state represents a unique condition 
+that an object can be in or a status that the object may have. All states for an object are 
+mutually exclusive, which means that an object can be in only one state at a time. All state 
+machines have an initial state and any number of intermediate or end states. Transitions 
+
+ 
+19 
+define the behaviors that move an object from one state to another state. They are often 
+triggered by completed activities or events. 
+Here is a simple state machine for requirements development activities using 
+the BABOK® Guide. The transitions for the requirements that are under development are the 
+knowledge area tasks that change the state of those requirements as you work on them. For 
+example during requirements analysis, the analyzed solution requirements (those that have 
+been specified and modelled) go through a quality check using the verify requirements task. 
+When the requirements emerge from this task, they have changed

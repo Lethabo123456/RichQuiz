@@ -1,0 +1,47 @@
+Metropolitan Area Network 
+A metropolitan area network (MAN) defines a configuration spanning an area larger than a LAN, 
+ranging from several blocks of buildings to an entire city, but generally not exceeding a circumference 
+of 100 kilometers. In some instances, MANs are owned and operated as public utilities, providing the 
+means for internetworking several LANs. 
+A MAN is a high-speed network that can be configured as a logical ring. Depending on the protocol 
+used, messages are either transmitted in one direction using only one ring, as illustrated in Figure 6.2, 
+or in both directions using two counter-rotating rings, as illustrated in Figure 9.5. One ring always 
+carries messages in one direction and the other always carries messages in the opposite direction. 
+
+Wide Area Network 
+ 
+A wide area network (WAN) defines a configuration that interconnects communication facilities 
+in different parts of the world, or that is operated as part of a public utility. WANs use the 
+communication lines of common carriers, which are government-regulated private companies, such 
+as telephone companies, that already provide homes and offices with communication facilities. 
+WANs use a broad range of communication media. In some cases, the speed of transmission is limited 
+by the capabilities of the communication line. WANs are generally slower than LANs. The first WAN, 
+called ARPANET, was developed in 1969 by the U.S. Department of Defense group called the 
+Advanced Research Projects Agency (ARPA). ARPANET’s successor, the Internet, is the most widely 
+recognized WAN. 
+
+Wireless Local Area Network 
+ 
+A wireless local area network (WLAN) is a local area network that uses wireless technology to connect 
+computers or workstations located within the range of the network. As shown in Table 6.1, the 
+Institute of Electrical and Electronics Engineers (IEEE) has specified several standards for wireless 
+networking, each with different ranges. 
+ 
+Table 6.1 
+ 
+Table 6 .1 shows Comparison of IEEE standards for wireless networks (IEEE, 2014). 
+ 
+For wireless nodes (workstations, laptops, and so on), a WLAN can provide easy access to a larger 
+network or the Internet, as shown in Figure 6.9. Keep in mind that a WLAN typically poses security 
+
+vulnerabilities because of its open architecture, and the constant difficulty of keeping out 
+unauthorized intruders. 
+
+Figure 6.9 
+ 
+Figure 6.9 shows a WLAN, wireless enabled nodes connect to the cabled LAN via access points (APs), 
+if they are located within the range of the device sending the signal. 
+ 
+The mobile WiMAX standard (802.16), approved by the Institute of Electrical and Electronics 
+Engineers, delivers high-bandwidth data over long distances (IEEE, 2014). This is a fast-changing 
+subject, so we encourage you to research current literature for the latest developments. 

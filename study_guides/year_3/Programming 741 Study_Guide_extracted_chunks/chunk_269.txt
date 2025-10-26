@@ -1,0 +1,44 @@
+The Test program creates two Student objects and two Dog objects and then adds them to 
+Pair containers. The student constructor takes a string for the student's name and the dog 
+constructor takes an int for the dog's weight. 
+
+Student Jesse = new Student("Jesse"); 
+Student Stacey = new Student ("Stacey"); 
+Dog Milo = new Dog(65); Dog Fred = new Dog(12); 
+Pair studentPair = new Pair(Jesse,Stacey); 
+Pair dogPair = new Pair(Milo, Fred); 
+Console.WriteLine 
+("studentPair\t\t\t: 
+{ 
+0} 
+",studentPair.ToString( )); 
+Console.WriteLine("dogPair\t\t\t\t: { 0} ", dogPair.ToString( 
+)); 
+It then prints the contents of the two Pair containers to see the order of the objects. The 
+
+output looks like this: 
+studentPair : Jesse, Stacey 
+dogPair : 65, 12 
+ 
+As expected, the objects are in the order in which they were added to the Pair containers. We 
+next instantiate two delegate objects: 
+
+Pair.WhichIsFirst theStudentDelegate = new 
+pair.WhichIsFirst(Student.WhichStudentComesFirst); 
+Pair.WhichIsFirst 
+theDogDelegate 
+= 
+new 
+Pair.WhichIsFirst(Dog.WhichDog-ComesFirst); 
+
+The first delegate, theStudentDelegate, is created by passing in the appropriate static method 
+from the Student class. The second delegate, theDogDelegate, is passed a static method from 
+the Dog class. 
+ 
+The delegates are now objects that can be passed to methods. Pass the delegates first to the 
+Sort method of the Pair object, and then to the ReverseSort method. The results are printed 
+to the console: 
+After Sort studentPair : Jesse, Stacey 
+After ReverseSort studentPair : Stacey, Jesse 
+After Sort dogPair : 12, 65 
+After ReverseSort dogPair : 65, 12 

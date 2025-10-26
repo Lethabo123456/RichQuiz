@@ -1,0 +1,19 @@
+d Steven Morris, Chapter Six page 217-218 
+
+ 
+86 
+The CLASS table has two candidate keys:  
+• CLASS_CODE  
+• CRS_CODE + CLASS_SECTION  
+The table is in 2NF because it is in 1NF and there are no partial dependencies on either candidate 
+key. However, the composite candidate key of CRS_CODE + CLASS_SECTION could potentially 
+have a partial dependency, so 2NF must be evaluated for that candidate key. In this case, there are 
+no partial dependencies involving the composite key. Finally, the table is in 3NF because there are 
+no transitive dependencies.  
+So, how can a table be in 3NF and not be in BCNF? To answer that question, you must keep in 
+mind that a transitive dependency exists when one non-prime attribute is dependent on another 
+nonprime attribute. 
+Hence in a case in which one key attribute is the determinant of another key attribute, the table fails 
+to meet the BCNF requirements (see Figure 6.8) because BCNF requires that every determinant in 
+the table be a candidate key. 
+To

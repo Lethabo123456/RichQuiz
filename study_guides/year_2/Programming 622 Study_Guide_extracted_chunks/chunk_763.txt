@@ -1,0 +1,17 @@
+ecause the parent node is not full, the median 
+key 73 is inserted into the parent node; see Figure 9-28(b).  
+  
+Next, we insert 200, as shown in Figure 9-29.  
+  
+  
+FIGURE 9-29 Insertion of 200  
+  
+The item 200 is to be inserted in the right child of 82; see Figure 9-28(b). However, the right child of 82 is 
+full. So we split the right child of 82, insert 200 in the node, and move the median key, which is 100, to 
+the parent node. However, the parent node, which is the root node in Figure 9-28(b), is also full. So we 
+split the parent node and move the median key, which is 73, to the new root node; see Figure 9-29. From 
+Figure 9-29, it is clear that the height of the B-tree is increased.  
+  
+From the previous discussion, it follows that to implement the insertion algorithm, we need algorithms to 
+split a node, insert an item into a node, and move the median key to the parent node. Furthermore, 
+because the insertion of an item might require the splitting of a node and moving the

@@ -1,0 +1,33 @@
+o tables?  
+b. A UNION ALL query based on the two tables?  
+c. An INTERSECT query based on the two tables?  
+d. An EXCEPT (MINUS) query based on the two tables? 
+ 
+The structure and contents of the Ch07_SaleCo database are shown in Figure P7.9. Use 
+this database to answer the following problems. 
+ 
+
+ 
+126 
+ 
+ 
+10. Write a query to count the number of invoices. 
+ 
+11. Write a query to count the number of customers with a balance of more than 
+$500. 
+ 
+12. Generate a listing of all purchases made by the customers. Sort the results by 
+customer code, invoice number, and product description. 
+ 
+13. Using the output shown in Figure P7.12 as your guide, generate a list of 
+customer purchases, including the subtotals for each of the invoice line 
+numbers. The subtotal is a derived attribute calculated by multiplying 
+LINE_UNITS by LINE_PRICE. Sort the output by customer code, invoice 
+number, and product description. Be certain to use the column aliases as shown 
+in the figure. 
+ 
+ 
+ 
+
+ 
+127

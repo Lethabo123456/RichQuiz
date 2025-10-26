@@ -1,0 +1,38 @@
+int num); //Function 
+to determine if num is in grid[row][] //Postcondition: 
+Returns true if num is in grid[row][], // otherwise it 
+returns false.  
+  
+
+170  
+  
+bool numAlreadyInCol(int col, int num); //Function 
+to determine if num is in grid[row][] //Postcondition: 
+Returns true if num is in grid[row][], // otherwise it 
+returns false.  
+  
+bool numAlreadyInBox(int smallGridRow, int smallGridCol,int num);  
+//Function to determine if num is in the small grid 
+//Postcondition: Returns true if num is in small grid, 
+// otherwise it returns false.  
+  
+private:  
+int grid[9][9];  
+};  
+  
+Note that we use the digit 0 to specify an empty grid. For example, the partially filled sudoku grid in Figure 
+4-17(a) is entered and stored as:  
+  
+6 0 3 0 2 0 0 9 0  
+0 0 0 0 5 0 0 8 0  
+0 2 0 4 0 7 0 0 1  
+0 0 6 0 1 4 3 0 0  
+0 0 0 0 8 0 0 5 6  
+0 4 0 6 0 3 2 0 0  
+8 0 0 2 0 0 0 0 7  
+0 1 0 0 7 5 8 0 0  
+0 3 0 0 0 6 1 0 5  
+  
+Next we write the definition of the function solveSudoku.  
+  
+The f

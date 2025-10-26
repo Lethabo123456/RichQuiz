@@ -1,0 +1,19 @@
+Solution: 
+Let s be the statement that the son has a muddy forehead and let d be 
+the statement that the daughter has a muddy forehead. When the father 
+says that at least one of the two children has a muddy forehead, he is 
+stating that the disjunction 𝑠 ∨ 𝑑 is true. Both children will answer “No” 
+the first time the question is asked because each sees mud on the other 
+child’s forehead. That is, the son knows that d is true, but does not know 
+whether s is true, and the daughter knows that s is true, but does not 
+know whether d is true. 
+
+After the son has answered “No” to the first question, the daughter can 
+determine that d must be true. This follows because when the first 
+question is asked, the son knows that 𝑠 ∨ 𝑑 is true, but cannot determine 
+whether s is true. Using this information, the daughter can conclude that 
+d must be true, for if d were false, the son could have reasoned that 
+because 𝑠 ∨ 𝑑 is true, then s must be true, and he would have answered 
+“Yes” to the first question. The son can reason in a similar way to 
+determine that s must be true. It follows that both children answer “Yes” 
+the second time the question is asked. 

@@ -1,0 +1,16 @@
+’. As before, attributes can 
+be identified by interviewing staff. 
+Resolve Relationships 
+The customer–order relationship was implemented by taking the primary key of customer and 
+posting it as a foreign key in the order table. This is essentially what resolving a relationship  
+ 
+141 
+
+means – deciding how to implement it. Sometimes a relationship between two entities will 
+result in three tables being implemented, sometimes one, most often two. There is a series of 
+rules to decide what tables to implement and which primary keys to use as a foreign key.  
+First, let us examine the customer–order relationship more closely to see why we implemented 
+it the way we did. If we had taken the order table primary key (order number) and posted it as 
+a foreign key in the customer table, we would have had two problems, both illustrated in 
+Figure 5.4. First, we have a repeating group – that means we would be trying to squeeze more 
+than one piece of information into one cell in the database,

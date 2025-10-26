@@ -1,0 +1,40 @@
+Firewall 
+Firewalls can also be clustered, and some can also use FHRPs. A ﬁrewall cluster is a group of 
+ﬁrewall nodes that work as a single logical entity to share the load of traﬃc processing and 
+provide redundancy. Clustering guarantees the availability of network services to the users. 
+Cisco Adaptive Security Appliance (ASA) and Cisco Firepower next-generation ﬁrewall (NGFW) 
+clustering allow you to group multiple ASA nodes together as a single logical device to provide 
+high availability and scalability. The two main clustering options discussed in this chapter are 
+active/standby and active/active. In both cases, the ﬁrewall cluster looks like a single logical 
+device (a single MAC/IP address) to the network. Later in this chapter you will learn more about 
+active/active and active/standby operations. 
+ 
+4.1.5 Facilities and Infrastructure Support 
+When infrastructure equipment is purchased and deployed, the ultimate success of the 
+deployment can depend on selecting the proper equipment, determining its proper location in 
+the facility, and installing it correctly. Let’s look at some common data center and server room 
+equipment and a few best practices for managing these facilities. 
+Uninterruptible Power Supply (UPS) 
+ 
+One risk that all organizations should prepare for is the loss of power. All infrastructure systems 
+should be connected to uninterruptible power supplies (UPSs). These devices can immediately 
+supply power from a battery backup when a loss of power is detected. You should keep in mind, 
+however, that these devices are not designed as a long-term solution. They are designed to 
+provide power long enough for you to either shut the system down gracefully or turn on a power 
+generator. In scenarios where long-term backup power is called for, a gaspowered generator 
+should be installed. 
+
+Power Distribution Units (PDUs) 
+ 
+PDUs distribute electrical power from a central source to multiple outlets, typically within a server 
+rack. While basic PDUs resemble power strips, enterprise environments use intelligent PDUs that 
+oﬀer advanced features like remote power monitoring, outlet-level on/oﬀ switching, and alarm 
+notiﬁcations. Many also integrate with environmental sensors to monitor temperature, 
+humidity, and airﬂow within the rack. 
+In data centers, PDUs are often paired with Uninterruptible Power Supplies (UPS) to maintain 
+consistent power delivery during outages or voltage ﬂuctuations. Power may come from high- 
+current circuits across diﬀerent phases or from multiple UPS systems to ensure redundancy. 
+Larger PDUs are commonly used to power multiple server cabinets. These may be stand-alone 
+units equipped with main circuit breakers, individual circuit protection, and power monitoring 
+panels. Each row or cabinet may have a dedicated PDU setup tailored to its load and redundancy 
+needs. 

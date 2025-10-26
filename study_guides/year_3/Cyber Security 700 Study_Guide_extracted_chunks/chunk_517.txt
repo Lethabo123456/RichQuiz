@@ -1,0 +1,24 @@
+6.3 Security Event Logging 
+This section begins with a discussion of the distinction between security events and security incidents 
+and then examines the key objective in performing security event logging. The remainder of this 
+section deals with details of the security event logging function. 
+In the information security field, a distinction is commonly made between events and incidents: 
+ Security event: An occurrence considered by an organization to have potential security 
+implications to a system or its environment. Security events identify suspicious or anomalous 
+activity. Events sometimes provide indications that incident are occurring. 
+ Security incident: An occurrence that actually or potentially jeopardizes the confidentiality, 
+integrity, or availability of an information system; or the information the system processes, 
+stores, or transmits; or that constitutes a violation or imminent threat of violation of security 
+policies, security procedures, or acceptable use policies. 
+
+A related concept is an indicator of compromise (IoC). IoCs are specific techniques used in the course 
+of an attack, which may appear as anomalous behavior. SP 800-53, Recommended Security Controls 
+for Federal Information Systems and Organizations, defines IoCs as forensic artifacts from intrusions 
+that are identified on organizational information systems (at the host or network level). IOCs provide 
+organizations with valuable information on objects or information systems that were compromised. 
+IOCs for the discovery of compromised hosts include for example, the creation of registry key values. 
+IOCs for network traffic include, for example, uniform resource locators (URLs) or protocol elements 
+that indicate malware command-and-control servers. The rapid distribution and adoption of IOCs improve information security by reducing the time 
+during which information systems and organizations are vulnerable to the same exploit or attack. 
+The term security event covers both events that are security incidents and 
+those that are not, as shown in Figure 15.2

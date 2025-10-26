@@ -1,0 +1,24 @@
+However, although the SCRIPT tags are not case sensitive JavaScript very definitely is. 
+Our code consists of a single line, a simple alert box. All it does is to display a dialogue 
+box with the words "Hello World". Try it out. Save your work. Now use Windows 
+Explorer or Finder on a Mac to navigate to where you saved the HTML file. Double click 
+to run your script in a browser. You should see the following in Firefox: 
+
+ 
+17 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+ 
+Figure 2.4 – Output on Firefox 
+Or this in Internet Explorer: 
+ 
+Figure 2.5 -Output on Internet Explorer 
+ 
+Now change your alert line to this: 
+Alert("Hello World") 
+ 
+The word alert now has a capital "A". Save your work and reload the page in your 
+browser. You should find that the alert box no longer displays. Change it back to a 
+lowercase "a", save and reload. The alert box will come back. 
+Alert Boxes are used to display information to your users. In between a pair of round 
+brackets, you type the text you w

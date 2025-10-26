@@ -1,0 +1,35 @@
+6.6 Signal Propagation 
+Propagation refers to the way in which a wave travels from one point to another. Ideally, a wireless 
+signal would travel directly in a straight line from its transmitter to its intended receiver. This 
+straight-line propagation, known as LOS (line of sight), maximizes distance for energy used and 
+results in reception of the clearest possible signal. However, because the atmosphere is an 
+unguided medium and the path between a transmitter and a receiver is not always clear of 
+obstacles, wireless signals do not usually follow a straight line. 
+ 
+When an obstacle stands in a signal’s way, the signal might pass through the object, it might be 
+absorbed by the object, or it might be subject to any of the following phenomena, depending 
+upon the object’s geometry and its constituent materials: 
+Attenuation, as with wired signals, wireless signals also experience attenuation. After a signal is 
+transmitted, the farther it moves away from the transmission source, the more it weakens. Like 
+wired transmission, wireless signals can be ampliﬁed by increasing the power of the transmission 
+or extended by repeating the signal from a closer broadcast point using a repeater (also called a 
+wireless range extender) 
+
+Refraction: As a wave travels into and through a diﬀerent transmission medium, such as when 
+traveling through glass or other solids, the wave’s direction, speed, and wavelength are altered, 
+or refracted. Imagine how light waves are altered when entering the water in a pool. If you’re 
+underwater looking back at the surface, the image you see is distorted. 
+Reﬂection: The wave encounters an obstacle and reﬂects, or bounces back, toward its source. A 
+wireless signal will bounce oﬀ objects whose surface dimensions are large compared with the 
+signal’s average wavelength (the distance from the crest of one wave to the crest of the next 
+wave). In the context of a wireless LAN, whose wavelengths are approximately 12 cm, such objects 
+include walls, ﬂoors, ceilings, and the Earth anything with a large, ﬂat surface. In addition, signals 
+reﬂect more readily oﬀ conductive materials, such as metal, than oﬀ insulators, such as concrete. 
+Scattering: When a wireless signal encounters an object that has small surface dimensions 
+compared with the signal’s wavelength, it’s diﬀused or scattered in multiple directions. Scattering 
+is also related to the roughness of the surface a wireless signal encounter. The rougher the 
+surface, the more likely a signal is to scatter when it hits that surface. In an oﬃce building, objects 
+such as chairs, books, plants, and computers cause scattering of wireless LAN signals. For signals 
+traveling outdoors, precipitation such as rain and mist also cause scattering. 
+ 
+Figure 6.7 Multipath Signal Propagation (West, 2002) 

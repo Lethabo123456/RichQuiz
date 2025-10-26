@@ -1,0 +1,31 @@
+1.2.6 Converting built-in types 
+
+Objects of one type can be converted into objects of another type either implicitly or explicitly 
+this called Type Casting. Implicit conversions happen automatically; the compiler takes care 
+
+Data Type         Size          Description
+------------------------------------------------------------------------------------------------------------
+int               4 bytes       Stores whole numbers from -2147483648 to 2147483647
+------------------------------------------------------------------------------------------------------------ 
+long              8 bytes       Stores whole numbers from -9223372036854775808 to 9223372036854775807 
+------------------------------------------------------------------------------------------------------------
+float             4 bytes       Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits 
+------------------------------------------------------------------------------------------------------------
+double            8 bytes       Stores fractional numbers. Sufficient for storing 15 decimal digits 
+------------------------------------------------------------------------------------------------------------
+bool              1 byte        Stores true or false values 
+------------------------------------------------------------------------------------------------------------
+char              2 bytes       Stores a single character/letter, surrounded by single quotes 
+------------------------------------------------------------------------------------------------------------
+string            2 bytes per   Stores a sequence of characters, surrounded by double quotes 
+                  character 
+------------------------------------------------------------------------------------------------------------
+
+of it for you. Explicit conversions happen when you "cast" a value to a different type. The 
+semantics of an explicit conversion are "Hey! Compiler! I know what I'm doing." This is 
+sometimes called "hitting it with the big hammer" and can be very useful or very painful, 
+depending on whether your thumb is in the way of the nail. 
+ 
+Implicit conversions happen automatically and are guaranteed not to lose information. For 
+example, you can implicitly cast from a short int (2 bytes) to an int (4 bytes). No matter what 
+value is in the short, it is not lost when converting to an int. 

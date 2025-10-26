@@ -1,0 +1,22 @@
+, within a string, use:  
+  
+$character = $string[index];  
+  
+In other words, you place the index between square brackets after the string variable name. String 
+indices start from 0 , so the first character in the string has an index of 0 , the second has an index of  
+1,  
+and so on. You can both read and change characters this way. Here are some examples:  
+  
+$myString = “Hello, world!”; echo 
+$myString[0] . “ < br / > ”; // Displays ‘H’ 
+echo $myString[7] . “ < br / > ”; // Displays 
+‘w’  
+$myString[12] = ‘?’; echo $myString . “ < br / > ”; // 
+Displays ‘Hello, world?’  
+  
+If you need to extract a sequence of characters from a string, you can use PHP ’ s substr() 
+function. This function takes the following parameters:  
+The string to extract the characters from  
+The position to start extracting the characters. If you use a negative number, substr() counts 
+backward from the end of the string  
+The number of characters to extract. If you use a negative number, substr() misse

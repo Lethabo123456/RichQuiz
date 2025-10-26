@@ -1,0 +1,45 @@
+Chapter Five: File Management 
+  
+5.1. File Management 
+The File Manager controls every file in the system. In this section we will look at how files are organized 
+logically, how they are stored physically, how they are accessed, and who is allowed to access them. 
+We will also study the interaction between the File Manager and the Device Manager. 
+ 
+There are several variables that directly affect the efficiency of the File Manager, notably those that are 
+detailed in this chapter including: 
+
+• how the system’s files are organized (sequential, direct, or indexed sequential), 
+• how they are stored (contiguously, not contiguously, or indexed), 
+• how each file’s records are structured (fixed-length or variable-length), 
+• how user access to all files is protected (controlled or not controlled)
+
+The File Manager is the software responsible for creating, deleting, modifying, and controlling access 
+to files, as well as for managing the resources used by the files. The File Manager provides support for 
+libraries of programs and data, doing so in close collaboration with the Device Manager. 
+The File Manager has a complex job. It oversees the system’s physical components, its information 
+resources, and the policies used to store and distribute the files. To carry out its responsibilities, it must 
+perform these four tasks: 
+
+1. Keep track of where each file is stored. 
+2. Use a policy that will determine where and how the files will be stored, making sure to efficiently 
+use the available storage space and provide easy access to the files. 
+3. Allocate each file when a user has been cleared for access to it and then track its use. 
+4. Deallocate the file when the file is to be returned to storage and communicate its availability to 
+others that may be waiting for it. 
+In a computer system, the File Manager keeps track of its files with directories that contain the 
+filename, its physical location in secondary storage, and important information about it. 
+ 
+The File Manager’s policy determines where each file is stored and how the system and its users will be 
+able to access them simply, via commands that are independent from device details. In addition, the 
+policy must determine who will have access to what material, and this involves two factors: flexibility 
+of access to the information and its subsequent protection. The File Manager does this by allowing 
+access to shared files, providing distributed access, and allowing users to browse through public 
+directories. Meanwhile, the operating system must protect its files against system malfunctions and 
+provide security checks via account numbers and passwords to preserve the integrity of the data and 
+safeguard against tampering. These protection techniques are explained later in this chapter. The 
+computer system allocates a file by activating the appropriate secondary storage device and loading 
+the file into memory while updating its records of who is using what file. 
+ 
+Finally, the File Manager deallocates a file by updating the file tables and rewriting the file (if revised) 
+to the secondary storage device. Any processes waiting to access the file are then notified of its 
+availability. 

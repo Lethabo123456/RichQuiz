@@ -1,0 +1,25 @@
+Aside from deciding when to forward or when to filter the packet, Ethernet switches also 
+completely regenerate the Ethernet packet. This regeneration and re-timing allows each port on a 
+switch to be treated as a complete Ethernet segment, capable of supporting the full length of 
+cable along with all of the repeater restrictions. The standard Ethernet slot time required in 
+CSMA/CD half-duplex modes is not long enough for running over 100m copper, so Carrier 
+Extension is used to guarantee a 512-bit slot time. 
+Additionally, bad packets are identified by Ethernet switches and immediately dropped from any 
+future transmission. This “cleansing” activity keeps problems isolated to a single segment and 
+keeps them from disrupting other network activity. This aspect of switching is extremely 
+important in a network environment where hardware failures are to be anticipated. Full duplex 
+doubles the bandwidth on a link, and is another method used to increase bandwidth to dedicated 
+workstations or servers. Full duplex modes are available for standard Ethernet, Fast Ethernet, and 
+Gigabit Ethernet. To use full duplex, special network interface cards are installed in the server or 
+workstation, and the switch is programmed to support full duplex operation. 
+
+1.10.2 Increasing Performance with Fast and Gigabit Ethernet 
+Implementing Fast or Gigabit Ethernet to increase performance is the next logical step when 
+Ethernet becomes too slow to meet user needs. Higher traffic devices can be connected to 
+switches or each other via Fast Ethernet or Gigabit Ethernet, providing a great increase in 
+bandwidth. Many switches are designed with this in mind, and have Fast Ethernet uplinks 
+available for connection to a file server or other switches. Eventually, Fast Ethernet can be 
+deployed to user desktops by equipping all computers with Fast Ethernet network interface cards 
+and using Fast Ethernet switches and repeaters. 
+With an understanding of the underlying technologies and products in use in Ethernet networks, 
+the next tutorial will advance to a discussion of some of the most popular real-world applications.

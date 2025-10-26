@@ -1,0 +1,22 @@
+e file already exists, append the string to the end of the file, 
+rather than overwriting the file.   
+LOCK_EX   
+Lock the file before writing to it. This ensures that other processes 
+can ’ t write to the file at the same time.   
+   
+fpassthru() and readfile() both take a file and output its unmodified contents straight to the Web  
+browser. fpassthru() requires the handle of an open file to work with:   
+   
+$numChars = fpassthru( $handle );   
+   
+readfile() instead works on an unopened file:   
+   
+$numChars = readfile( “myfile.txt” );   
+   
+As you can see, both functions return the number of characters read (or false if there was a 
+problem).   
+fpassthru() reads from the current file pointer position, so if you have already read some of the file  
+only the remaining portion of the file will be sent.   
+   
+You can make readfile() search the include path for the file by passing true as the second argument. 
+Incidentally, readfile() is handy for sending binary files — such as ima

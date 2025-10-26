@@ -1,0 +1,17 @@
+6.7.2 Classification 
+So far, we've covered the steps of building the CNN; these are the convolution (our filter 
+steps), using Rectified Linear Unit (ReLU) to enhance the feature map and then pooling to 
+reduce the filter map again. The CNNs are usually run over several iterations, so you end up 
+with a process along the lines of: Convolution ➪ ReLU ➪ Max pooling ➪ Convolution ➪ 
+ReLU ➪ Max-Pooling and then ending with some form of classification, to give you a fully 
+connected layer. The max-pooling outputs are fed into a neural network for classification. In 
+most cases, this is a multilayer perceptron (MLP). The weights of the MLP will determine the 
+classification. The CNN is a powerful algorithm, and it's used widely for object detection, 
+speech recognition, and image processing. There are various frameworks and architectures 
+using CNNs, and it's worth taking the time to investigate how they are being implemented 
+and used. 
+
+P a g e  | 77 
+ 
+6.8 CNN & Transfer Learning 
+So far

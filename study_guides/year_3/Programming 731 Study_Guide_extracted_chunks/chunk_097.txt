@@ -1,0 +1,37 @@
+Iteration Statements    
+Java’s iteration statements are for, while, and do-while. These statements create what we 
+commonly call loops. As you probably know, a loop repeatedly executes the same set of    
+instructions until a termination condition is met. As you will see, Java has a loop to fit any 
+programming need.   
+   
+While    
+The while loop is Java’s most fundamental looping statement. It repeats a statement or block while 
+its controlling expression is true.
+
+Here is its general form:   
+   
+while(condition) {   
+// body of loop   
+}
+   
+The condition can be any Boolean expression. The body of the loop will be executed as long as the 
+conditional expression is true. When condition becomes false, control passes to the next line of 
+code immediately following the loop. The curly braces are unnecessary if only a single statement is 
+being repeated.    
+Here is a while loop that counts down from 10, printing exactly ten lines of “tick”:   
+   
+// Demonstrate the while loop. 
+
+class While {   
+public static void main(String args[])   
+   
+{ int n = 10;   
+while(n > 0) {   
+System.out.println("tick " +   n); n--;   
+}   
+}   
+}
+
+When you run this program, it will “tick” ten times:  
+tick 10 tick 9 tick 8 tick 7 
+tick 6 tick 5 tick 4 tick 3 tick 2 tick 1

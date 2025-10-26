@@ -1,0 +1,17 @@
+4 emphasizes the point that the DBMS presents the end user with a single, 
+integrated view of the data in the database. The DBMS receives all application requests and translates 
+them into the complex operations required to fulfil those requests. It hides much of the database’s 
+internal complexity from the application programs and users.  
+ 
+Having a DBMS between the end user’s applications and the database offers important advantages. 
+Some of which are: 
+ 
+Improved data sharing and access. It helps create an environment which makes it possible: for 
+end users have better access to more and better-managed data, and to produce quick answers to 
+ad hoc queries (spur-of-the-moment requests to the DBMS for data manipulation).  
+ 
+Improved data security. A DBMS provides a framework for better enforcement of data privacy 
+and security policies.  
+ 
+Better data integration. Wider access to well-managed data promotes an integrated view of the 
+organization’s operations and a clearer view

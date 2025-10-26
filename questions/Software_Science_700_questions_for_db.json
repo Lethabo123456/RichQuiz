@@ -1,0 +1,3382 @@
+[
+  {
+    "question": "MCQ: Which of the following best describes software systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Abstract and intangible",
+      "B. Physically manufactured products",
+      "C. Governed by material properties",
+      "D. Limited by physical laws"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software systems are abstract and intangible, unlike hardware that is constrained by physical properties.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Software engineering methods and techniques are universal for all types of software systems.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only for embedded systems",
+      "D. Only for business systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Different types of software require different approaches; there are no universal methods.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: By 2030, almost all mobile phones will be ______.",
+    "type": "Fill",
+    "options": [
+      "A. Internet-enabled",
+      "B. Powered by AI",
+      "C. Free of software",
+      "D. Not dependent on engineering"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text states that by 2030 almost all mobile phones will be Internet-enabled.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is a reason why software engineering is essential for modern society?",
+    "type": "MCQ",
+    "options": [
+      "A. National infrastructures are controlled by software",
+      "B. Software systems obey physical manufacturing processes",
+      "C. Software replaces hardware in all contexts",
+      "D. Software is governed by material constraints"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Critical infrastructures like utilities and financial systems are dependent on software systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short: What simplifies software engineering compared to physical manufacturing?",
+    "type": "Short",
+    "options": [
+      "A. Lack of physical constraints",
+      "B. Dependence on natural limits",
+      "C. Hardware restrictions",
+      "D. Universal techniques"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software is not governed by physical materials or processes, which simplifies some aspects of its design.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Consider the statement:\n```text\nIndustrial manufacturing and distribution is completely computerized.\n```\nWhat does this imply about the role of software?",
+    "type": "Interpretation",
+    "options": [
+      "A. Software is critical for large-scale industrial operations",
+      "B. Software plays no role in industry",
+      "C. Software is only used for entertainment",
+      "D. Software engineering methods are universal"
+    ],
+    "correct_answer": "A",
+    "reasoning": "It implies that software systems are fundamental to industrial automation and logistics.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of these software systems is most different from a scientific instrument controller?",
+    "type": "MCQ",
+    "options": [
+      "A. Graphics-intensive computer game",
+      "B. Organizational information system",
+      "C. Embedded system",
+      "D. Software library"
+    ],
+    "correct_answer": "A",
+    "reasoning": "A graphics-intensive game differs greatly in requirements from a scientific instrument controller.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Entertainment industries like film and television are software-intensive.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only games are software-intensive",
+      "D. Only the music industry depends on software"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The passage explicitly mentions that entertainment industries are highly dependent on software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Because there are no natural limits, software systems can quickly become extremely ______.",
+    "type": "Fill",
+    "options": [
+      "A. Complex",
+      "B. Simple",
+      "C. Hardware-dependent",
+      "D. Obsolete"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text states that software systems can quickly become extremely complex.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a reason software systems differ from physical products?",
+    "type": "MCQ",
+    "options": [
+      "A. Governed by manufacturing processes",
+      "B. Abstract and intangible",
+      "C. Not constrained by materials",
+      "D. Lack of physical limits"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software is NOT governed by manufacturing processes, unlike physical products.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why can software engineering become expensive?",
+    "type": "Short",
+    "options": [
+      "A. Complexity and difficulty of change",
+      "B. Governed by physical laws",
+      "C. Lack of computer support",
+      "D. Hardware limitations"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The lack of constraints allows complexity to grow, making systems difficult and expensive to change.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: The financial system is completely computerized. What does this mean for software engineering?",
+    "type": "Interpretation",
+    "options": [
+      "A. Software reliability is critical for financial stability",
+      "B. Financial systems can function without software",
+      "C. Only physical laws control financial software",
+      "D. Universal engineering methods apply"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Since financial systems are software-controlled, reliability and correctness are essential.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of these is an example of a software-controlled utility?",
+    "type": "MCQ",
+    "options": [
+      "A. National electricity grid",
+      "B. Wooden furniture",
+      "C. Mechanical clock",
+      "D. Paper ledger"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Utilities like electricity grids are controlled by computer-based software systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Developing a business information system requires the same methods as developing a scientific instrument controller.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only for embedded parts",
+      "D. Only with universal methods"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Different applications require different software engineering approaches.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Software engineering is essential for the functioning of ______.",
+    "type": "Fill",
+    "options": [
+      "A. Government and society",
+      "B. Physical materials",
+      "C. Only entertainment",
+      "D. Simple mechanical devices"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The passage emphasizes the role of software engineering in government, society, and businesses.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which factor increases the complexity of software systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Lack of physical constraints",
+      "B. Strict physical laws",
+      "C. Limited hardware options",
+      "D. Standard universal methods"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Without physical constraints, software systems can become increasingly complex.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: Which type of system requires different software engineering approaches compared to others?",
+    "type": "Short",
+    "options": [
+      "A. Embedded systems",
+      "B. Identical systems",
+      "C. Mechanical systems",
+      "D. Universal systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Embedded systems differ from business or entertainment systems and need specialized approaches.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: If most electrical products include controlling software, what can we infer?",
+    "type": "Interpretation",
+    "options": [
+      "A. Software engineering is vital for consumer technology",
+      "B. Software is unnecessary for electronics",
+      "C. Only hardware matters",
+      "D. Electronics function without software"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The presence of controlling software in electronics shows software engineering’s vital role.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following industries relies heavily on software?",
+    "type": "MCQ",
+    "options": [
+      "A. Music industry",
+      "B. Woodworking",
+      "C. Farming tools without automation",
+      "D. Manual crafts"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text lists the music industry as being software-intensive.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Software systems are limited by natural physical constraints.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in embedded systems",
+      "D. Only in entertainment"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software systems are not limited by physical constraints, unlike hardware.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following is a major reason behind many reported software failures?",
+    "type": "MCQ",
+    "options": [
+      "A. Lack of programming languages",
+      "B. Increasing system complexity",
+      "C. Too many programmers",
+      "D. Hardware being too advanced"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text highlights that increasing system complexity is a primary factor contributing to software failures.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Writing programs without applying software engineering methods often results in reliable and low-cost software.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. True for small projects only"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Without proper methods, software tends to be more expensive and less reliable.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: As new techniques help build larger systems, demands change, requiring ______ delivery of software.",
+    "type": "Fill",
+    "options": [
+      "A. Slower",
+      "B. Faster",
+      "C. Less reliable",
+      "D. More expensive"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The material states that systems must be built and delivered more quickly as demands evolve.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these consequences is linked to not using software engineering methods?",
+    "type": "MCQ",
+    "options": [
+      "A. Increased user satisfaction",
+      "B. Software becoming more expensive and less reliable",
+      "C. Faster release times",
+      "D. Lower complexity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text directly states that without methods, software is more costly and unreliable.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A company developed software without structured methods. The project took longer and cost more. What is the most likely explanation?",
+    "type": "Interpretation",
+    "options": [
+      "A. The programmers lacked talent",
+      "B. They failed to use software engineering methods",
+      "C. They used the wrong programming language",
+      "D. Their systems were too small"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Not using proper methods is identified as a cause of cost and reliability problems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which new challenge has software engineering faced due to increasing system complexity?",
+    "type": "MCQ",
+    "options": [
+      "A. Simpler documentation",
+      "B. Delivering larger, more capable systems quickly",
+      "C. Removing old programming languages",
+      "D. Eliminating training needs"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The challenge mentioned is delivering larger, more capable systems in less time.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Many companies drifted into software development without structured planning.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True only for startups",
+      "D. False for large enterprises"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The passage states that many companies moved into software gradually without systematic approaches.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Better ______ and training are needed to address software reliability problems.",
+    "type": "Fill",
+    "options": [
+      "A. Hardware tools",
+      "B. Software engineering education",
+      "C. Marketing strategies",
+      "D. Funding policies"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text explicitly emphasizes the need for improved education and training.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: The demand for new system capabilities has arisen because:",
+    "type": "MCQ",
+    "options": [
+      "A. Hardware is shrinking in size",
+      "B. Systems are expected to do things once thought impossible",
+      "C. Programming languages are outdated",
+      "D. Developers prefer more complex designs"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text mentions new system capabilities that were previously thought impossible.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why is software often more expensive in companies that do not use software engineering methods?",
+    "type": "Short",
+    "options": [
+      "A. Because they hire more staff",
+      "B. Because lack of methods increases cost and reduces reliability",
+      "C. Because hardware costs more",
+      "D. Because programming languages change"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The lack of structured methods leads directly to higher costs and lower reliability.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A firm must deliver increasingly complex software quickly. What must they adopt to succeed?",
+    "type": "Interpretation",
+    "options": [
+      "A. Hire more programmers",
+      "B. Develop new software engineering techniques",
+      "C. Switch programming languages",
+      "D. Reduce requirements"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text emphasizes the need for new techniques to meet growing demands.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Software failures are often incorrectly blamed on:",
+    "type": "MCQ",
+    "options": [
+      "A. Users",
+      "B. Software engineering itself",
+      "C. Hardware speed",
+      "D. Network bandwidth"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Failures are often seen as flaws of software engineering, though root causes differ.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Increasing complexity always results in better software reliability.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. Only for embedded systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Increasing complexity typically creates new challenges rather than guaranteeing reliability.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Many so-called software failures are actually due to ______ rather than flaws in software engineering itself.",
+    "type": "Fill",
+    "options": [
+      "A. User error",
+      "B. Complexity and lack of methods",
+      "C. Insufficient funding",
+      "D. Programming languages"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text lists complexity and failure to apply methods as the actual causes.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which example best illustrates a failure caused by not using engineering methods?",
+    "type": "MCQ",
+    "options": [
+      "A. A program written in Python",
+      "B. A company that evolved into software development without structured approaches",
+      "C. A system running on old hardware",
+      "D. A small team with too many meetings"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The passage describes companies drifting into development without structured methods.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Suppose a new software project failed to deliver on time because it was extremely complex. What is the likely underlying issue?",
+    "type": "Interpretation",
+    "options": [
+      "A. Lack of programming languages",
+      "B. Increased system complexity requiring new methods",
+      "C. Overuse of hardware resources",
+      "D. Too many developers"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text emphasizes complexity as a driver for needing new engineering approaches.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: What do companies risk when they ignore proper software engineering practices?",
+    "type": "MCQ",
+    "options": [
+      "A. Simplified requirements",
+      "B. Higher cost and lower reliability",
+      "C. Better user satisfaction",
+      "D. More features"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Ignoring methods leads to more expensive, unreliable software.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: Why is software engineering sometimes criticized unfairly?",
+    "type": "Short",
+    "options": [
+      "A. Because developers dislike documentation",
+      "B. Because failures are often due to complexity or lack of methods, not the discipline itself",
+      "C. Because hardware is blamed instead",
+      "D. Because training costs too much"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The discipline is blamed even when actual causes are different.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Delivering larger and more complex systems requires no new engineering techniques.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True for small firms",
+      "D. False for embedded systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text emphasizes that new techniques are needed to meet modern demands.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The evolution of products into software development often happens without ______ planning.",
+    "type": "Fill",
+    "options": [
+      "A. Marketing",
+      "B. Systematic",
+      "C. Financial",
+      "D. Hardware"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The passage states many companies drifted into development without systematic planning.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: When was the notion of software engineering first formally proposed?",
+    "type": "MCQ",
+    "options": [
+      "A. 1950 at the Dartmouth Conference",
+      "B. 1965 during IBM research",
+      "C. 1968 at a conference on the software crisis",
+      "D. 1975 during UNIX development"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The term software engineering was first proposed in 1968 at a conference addressing the software crisis.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Structured programming and object-oriented development emerged in the 1970s and 1980s as solutions to software problems.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True for only the 1990s",
+      "C. True",
+      "D. False because they appeared in 1950s"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The text states that these methods were introduced during the 1970s and 1980s.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: The software crisis highlighted that individual programming approaches did not scale to ______.",
+    "type": "Fill",
+    "options": [
+      "A. Small scripts",
+      "B. Personal software",
+      "C. Large and complex systems",
+      "D. Spreadsheet macros"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The crisis arose because individual methods failed for large and complex software projects.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What is a defining feature of professional software development?",
+    "type": "MCQ",
+    "options": [
+      "A. Software written only for personal enjoyment",
+      "B. Developed solely by individual programmers",
+      "C. Intended for use by others and often developed in teams",
+      "D. Never updated or maintained"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Professional software is made for others’ use and usually by teams, unlike personal programs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Consider this statement:\n```text\nMany people think that software is simply another word for computer programs.\n```\nWhat does this imply in the context of software engineering?",
+    "type": "Interpretation",
+    "options": [
+      "A. Software is limited to compiled code",
+      "B. Software excludes configuration data",
+      "C. Software includes programs, documentation, and supporting resources",
+      "D. Software only refers to personal scripts"
+    ],
+    "correct_answer": "C",
+    "reasoning": "In software engineering, software covers programs plus documentation, libraries, and configuration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why did early software projects often cost more and arrive late?",
+    "type": "Short",
+    "options": [
+      "A. They were hardware-dependent",
+      "B. They used only spreadsheets",
+      "C. Individual approaches failed to scale",
+      "D. They had too few hobbyists"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Individual programming methods did not scale well to complex systems, leading to overruns.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following best represents what a software system may include?",
+    "type": "MCQ",
+    "options": [
+      "A. Only source code",
+      "B. Only executable files",
+      "C. Several programs, configuration files, and documentation",
+      "D. Only hobbyist tools"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Professionally developed systems include multiple programs, configs, and documentation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Hobbyist programming is the main focus of software engineering.",
+    "type": "True/False",
+    "options": [
+      "A. False because hobbyists dominate the industry",
+      "B. True because it drives business software",
+      "C. False",
+      "D. True only for spreadsheets"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Software engineering focuses on professional development, not hobbyist projects.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Software engineering supports program specification, design, and ______.",
+    "type": "Fill",
+    "options": [
+      "A. Hobby coding",
+      "B. Spreadsheet macros",
+      "C. Evolution",
+      "D. Experiment logging"
+    ],
+    "correct_answer": "C",
+    "reasoning": "It includes methods for specification, design, and evolution (maintenance/change).",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Why were new methods like information hiding introduced?",
+    "type": "MCQ",
+    "options": [
+      "A. To increase costs",
+      "B. To eliminate teams",
+      "C. To manage complexity and reliability",
+      "D. To reduce programming languages"
+    ],
+    "correct_answer": "C",
+    "reasoning": "They were developed to improve reliability and manage complexity in large systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: What distinguishes professional software from personal scripts?",
+    "type": "Short",
+    "options": [
+      "A. Written for self-use",
+      "B. Never maintained",
+      "C. Developed for others and maintained",
+      "D. Always hobby-based"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Professional software is for others, developed by teams, and maintained over its lifetime.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Given this example:\n```text\nUser documentation explains how to use the system.\n```\nWhat role does documentation play in professional software?",
+    "type": "Interpretation",
+    "options": [
+      "A. It only describes algorithms",
+      "B. It is optional in all cases",
+      "C. It ensures usability and maintainability",
+      "D. It replaces the actual program"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Documentation is crucial for users and developers to understand and use the system effectively.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: What was one major result of the 1968 software crisis conference?",
+    "type": "MCQ",
+    "options": [
+      "A. The end of programming languages",
+      "B. The invention of spreadsheets",
+      "C. The introduction of the term software engineering",
+      "D. The decline of structured methods"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The conference formally introduced the idea of software engineering.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: A professional software system may consist of multiple programs and configuration files.",
+    "type": "True/False",
+    "options": [
+      "A. False, only one file is allowed",
+      "B. True, but only for games",
+      "C. True",
+      "D. False, it only includes scripts"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The passage describes that systems may include several programs and files.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Tools and standard ______ developed in the 1970s and 1980s are still used today.",
+    "type": "Fill",
+    "options": [
+      "A. Spreadsheets",
+      "B. Hardware models",
+      "C. Notations",
+      "D. Random generators"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Tools and standard notations developed then remain foundational to modern practice.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT part of professional software as defined in engineering?",
+    "type": "MCQ",
+    "options": [
+      "A. Libraries",
+      "B. Support websites",
+      "C. Hardware blueprints",
+      "D. Configuration data"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Hardware blueprints are not part of software systems; the others are included.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: If a system includes both system and user documentation, what does that tell us about professional software?",
+    "type": "Interpretation",
+    "options": [
+      "A. It requires no documentation",
+      "B. It focuses only on source code",
+      "C. It provides resources for developers and users",
+      "D. It excludes configuration files"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System documentation helps developers, while user documentation supports end-users.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why is software engineering not directly relevant for hobbyist programming?",
+    "type": "Short",
+    "options": [
+      "A. Hobbyists use more advanced methods",
+      "B. Hobbyists focus only on games",
+      "C. Hobby projects lack the scale and team requirements",
+      "D. Hobbyists avoid programs altogether"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Software engineering addresses professional, team-based, large-scale systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of these describes the lifecycle of professional software?",
+    "type": "MCQ",
+    "options": [
+      "A. Written once, never updated",
+      "B. Temporary and discarded",
+      "C. Maintained and changed throughout its life",
+      "D. Only used by developers"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Professional systems are maintained and evolved, not one-time efforts.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Information hiding and structured programming are irrelevant to software engineering today.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False for object-oriented only",
+      "C. False",
+      "D. True because they were discarded"
+    ],
+    "correct_answer": "C",
+    "reasoning": "These techniques remain part of the foundation of modern practices.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: If you are writing a program for your own use only, what do you usually NOT need to provide?",
+    "type": "MCQ",
+    "options": [
+      "A. The source code",
+      "B. Test data",
+      "C. User feedback",
+      "D. Program guides and design documentation"
+    ],
+    "correct_answer": "D",
+    "reasoning": "For personal software, there is no need for documentation or guides since no one else will use it.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Professional software development usually requires providing more than just code, such as documentation and guides.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True for amateur only",
+      "C. True only for small systems",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Professional software must be maintainable and usable by others, requiring extra information.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Software engineers are mainly concerned with developing software ______.",
+    "type": "Fill",
+    "options": [
+      "A. Exercises",
+      "B. Games",
+      "C. Prototypes",
+      "D. Products"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The text emphasizes that software engineers focus on developing products, not just code snippets.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these is an example of a generic software product?",
+    "type": "MCQ",
+    "options": [
+      "A. A company’s payroll system",
+      "B. A custom air traffic control system",
+      "C. A bank’s fraud detection module",
+      "D. A word processor sold on the market"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Generic products are sold on the open market to any customer, such as word processors.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A mobile app is developed and released for anyone to download from an app store. What type of software is this?",
+    "type": "Interpretation",
+    "options": [
+      "A. Customized system",
+      "B. Internal tool",
+      "C. Commissioned service",
+      "D. Generic product"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Mobile apps available to everyone are classic examples of generic products.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: In customized software, the specification is controlled by the software developer.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Sometimes true",
+      "C. True for ERP only",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "For custom software, the customer controls the specification, not the developer.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: A contractor building a control system for a specific device is developing ______ software.",
+    "type": "Fill",
+    "options": [
+      "A. Experimental",
+      "B. Prototype",
+      "C. Generic",
+      "D. Customized"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Systems made for a single customer are considered customized software.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: In generic software products, who controls the specification?",
+    "type": "MCQ",
+    "options": [
+      "A. The customer",
+      "B. The programmer’s university",
+      "C. The regulator",
+      "D. The organization developing the software"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The organization building generic software defines and controls the specification.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A business installs SAP software and customizes it with its own processes and rules. What is this an example of?",
+    "type": "Interpretation",
+    "options": [
+      "A. A bespoke-only product",
+      "B. A small-scale tool",
+      "C. An amateur development",
+      "D. A generic product adapted for a customer"
+    ],
+    "correct_answer": "D",
+    "reasoning": "ERP systems like SAP are generic products adapted to specific company needs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which example best represents customized software?",
+    "type": "MCQ",
+    "options": [
+      "A. Microsoft Word",
+      "B. A general database application",
+      "C. A drawing package sold on shelves",
+      "D. An air traffic control system for a government agency"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Air traffic control is a tailored system for a particular client, making it customized.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: The distinction between generic and customized software is becoming blurred.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True for old systems only",
+      "C. False for ERP systems",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Modern approaches mix both, such as customizing generic ERP solutions.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: When a generic product is modified with business rules and customer-specific requirements, it becomes a ______ solution.",
+    "type": "Fill",
+    "options": [
+      "A. Purely generic",
+      "B. Commission-only",
+      "C. Prototype",
+      "D. Blended"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The passage notes that generic products are increasingly adapted, making them a blended solution.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following is true for custom (bespoke) software?",
+    "type": "MCQ",
+    "options": [
+      "A. It is sold on the open market",
+      "B. The developer controls the specification",
+      "C. It is never tailored for specific businesses",
+      "D. It is built for one customer with their specification"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Custom software is commissioned and designed for a particular customer.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: If a development team encounters problems in a generic product, what flexibility do they have?",
+    "type": "Interpretation",
+    "options": [
+      "A. Stop all development",
+      "B. Pass control to the customer",
+      "C. Abandon documentation",
+      "D. Rethink what is to be developed"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Since developers control specifications in generic products, they can revise them when issues arise.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: Why is it harder to change specifications in customized software?",
+    "type": "Short",
+    "options": [
+      "A. Developers control the scope",
+      "B. The software is generic",
+      "C. The system is open-market",
+      "D. The specification is controlled by the customer"
+    ],
+    "correct_answer": "D",
+    "reasoning": "In customized systems, developers must follow customer-controlled specifications.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which description best fits ERP systems like those from SAP or Oracle?",
+    "type": "MCQ",
+    "options": [
+      "A. Always custom-built from scratch",
+      "B. Amateur-developed projects",
+      "C. Sold without customization",
+      "D. Generic bases adapted to specific organizations"
+    ],
+    "correct_answer": "D",
+    "reasoning": "ERP systems are generic frameworks adapted to client needs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Apps for mobile devices are classified as ______ products.",
+    "type": "Fill",
+    "options": [
+      "A. Customized",
+      "B. Amateur",
+      "C. Commissioned",
+      "D. Generic"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They are built for mass distribution and not tied to one customer.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: A system written to support a specific business process is an example of generic software.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. True for small processes only",
+      "C. Sometimes true",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Business process systems are developed for a single customer, making them customized.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which statement best describes the main difference between professional and amateur development?",
+    "type": "MCQ",
+    "options": [
+      "A. Professionals don’t use programming languages",
+      "B. Amateurs write better documentation",
+      "C. Professionals don’t write personal software",
+      "D. Professionals must produce documentation and guides for others"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Professional development includes code plus additional documentation for others to use and maintain.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why are generic and customized product distinctions becoming blurred?",
+    "type": "Interpretation",
+    "options": [
+      "A. Developers no longer document software",
+      "B. Customers dislike specifications",
+      "C. Open markets have ended",
+      "D. Generic systems are increasingly adapted for specific customers"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The text highlights that generic products are now often tailored to meet customer needs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which discipline is concerned with all aspects of software production from specification to maintenance?",
+    "type": "MCQ",
+    "options": [
+      "A. Software Engineering",
+      "B. Computer Networking",
+      "C. Database Management",
+      "D. Artificial Intelligence"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software Engineering covers specification, development, and maintenance of software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Engineers always apply theories, methods, and tools in every situation without exception.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True only for large systems",
+      "D. False only for small systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Engineers use theories selectively, not universally, depending on the situation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Software engineering is not only about technical processes but also about ______.",
+    "type": "Fill",
+    "options": [
+      "A. Software project management",
+      "B. Hardware installation",
+      "C. User interface hardware",
+      "D. Office administration"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text states it includes project management and development of supporting tools.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Why can software engineers not afford to be perfectionists?",
+    "type": "MCQ",
+    "options": [
+      "A. Because they must deliver results within schedule and budget",
+      "B. Because users do not care about quality",
+      "C. Because programming languages are limited",
+      "D. Because hardware is too slow"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Engineering involves compromises to meet schedule and budget constraints.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short: What kind of approach do software engineers generally adopt for producing high-quality software?",
+    "type": "Short",
+    "options": [
+      "A. Systematic and organized",
+      "B. Unplanned and intuitive",
+      "C. Random trial and error",
+      "D. Strictly graphical"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Systematic and organized approaches are usually the most effective.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which example best shows when a creative, less formal approach might be appropriate?",
+    "type": "MCQ",
+    "options": [
+      "A. Developing an interactive mobile app requiring design creativity",
+      "B. Creating a safety-critical medical system",
+      "C. Programming a real-time flight controller",
+      "D. Implementing a banking transaction system"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Creative and flexible approaches suit web/mobile applications with design focus.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Flexible software processes are particularly suitable for interactive web-based systems.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only for small projects",
+      "D. False for apps requiring design"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Interactive web and mobile systems require adaptability and design integration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Engineering is about getting results of the required quality within ______.",
+    "type": "Fill",
+    "options": [
+      "A. Schedule and budget",
+      "B. Unlimited resources",
+      "C. Random timelines",
+      "D. Constant redesign"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The discipline requires quality outcomes within time and budget constraints.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which activity is included in software engineering beyond just coding?",
+    "type": "MCQ",
+    "options": [
+      "A. Development of tools and methods",
+      "B. Network cable installation",
+      "C. Office layout planning",
+      "D. Hardware manufacturing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software engineering encompasses tool and method development, not hardware tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A student spends unlimited time perfecting a personal program. How does this differ from professional software engineering?",
+    "type": "Interpretation",
+    "options": [
+      "A. Professionals must work within time and budget constraints",
+      "B. Students code with more skill",
+      "C. Personal programs are always better",
+      "D. Engineers never test their code"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Unlike personal projects, professional software must balance quality with constraints.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which statement best reflects an engineer’s responsibility when solving problems?",
+    "type": "MCQ",
+    "options": [
+      "A. They must seek solutions even when no applicable theories exist",
+      "B. They should only apply existing methods",
+      "C. They should avoid solving problems outside their expertise",
+      "D. They must wait for new theories before acting"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Engineers often work pragmatically when formal methods are not available.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Organizational and financial constraints play no role in software engineering.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True for startups",
+      "D. False only for large companies"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Engineers must work within organizational and financial boundaries.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: Why do engineers sometimes avoid perfectionism in system design?",
+    "type": "Short",
+    "options": [
+      "A. Because compromises are needed to meet deadlines and budgets",
+      "B. Because users dislike perfect systems",
+      "C. Because methods discourage precision",
+      "D. Because testing is unnecessary"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Perfection conflicts with real-world delivery constraints.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: A flexible software process is particularly appropriate for ______.",
+    "type": "Fill",
+    "options": [
+      "A. Interactive systems requiring rapid change",
+      "B. Safety-critical medical devices",
+      "C. Real-time flight systems",
+      "D. Financial systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Interactive and mobile systems need adaptability to frequent changes.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which aspect is a hallmark of software engineering as an engineering discipline?",
+    "type": "MCQ",
+    "options": [
+      "A. Concern with all stages of production",
+      "B. Focus only on programming",
+      "C. Exclusive emphasis on design",
+      "D. Only system testing"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software engineering spans from specification to maintenance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: An engineer faces a problem with no known theory. What should they do?",
+    "type": "Interpretation",
+    "options": [
+      "A. Try to discover a practical solution",
+      "B. Abandon the project",
+      "C. Wait for new research",
+      "D. Avoid solving it"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Engineers are expected to innovate and find solutions pragmatically.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: The role of a software engineer may include managing projects.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only in startups",
+      "D. False for senior engineers"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Project management is part of the broader scope of software engineering.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: People writing programs for themselves can spend as much time as they wish, unlike ______.",
+    "type": "Fill",
+    "options": [
+      "A. Professional software engineers",
+      "B. Database administrators",
+      "C. Hardware designers",
+      "D. Network engineers"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Professional engineers are constrained by time and cost requirements.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of these requires a systematic and organized approach to succeed?",
+    "type": "MCQ",
+    "options": [
+      "A. High-quality software development",
+      "B. Casual coding practice",
+      "C. Hobbyist game modding",
+      "D. Temporary design sketches"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Systematic approaches ensure quality in professional software engineering.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why might less formal methods be better in some software projects?",
+    "type": "Interpretation",
+    "options": [
+      "A. They allow creativity and rapid changes in areas like mobile app development",
+      "B. They remove the need for testing",
+      "C. They reduce costs for safety-critical systems",
+      "D. They eliminate the need for management"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Flexible processes support creative and rapidly changing projects like apps.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Why is software engineering considered important for society?",
+    "type": "MCQ",
+    "options": [
+      "A. It reduces the need for computers",
+      "B. Society increasingly relies on advanced software systems",
+      "C. It eliminates programming languages",
+      "D. It replaces hardware maintenance"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text states that society depends more and more on advanced software, requiring reliable systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Writing programs as a personal project is usually cheaper in the long run than using software engineering methods.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. True only for small apps"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The material explains that professional methods are cheaper in the long term due to reduced maintenance and testing costs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: The systematic approach used in software engineering is sometimes called a ______.",
+    "type": "Fill",
+    "options": [
+      "A. Program loop",
+      "B. Software process",
+      "C. Development tool",
+      "D. Testing module"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text explicitly defines the systematic approach as a software process.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which fundamental activity ensures that software is checked against customer requirements?",
+    "type": "MCQ",
+    "options": [
+      "A. Specification",
+      "B. Validation",
+      "C. Development",
+      "D. Evolution"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Validation is about confirming the software matches customer needs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A team designed and programmed a system without ensuring customer needs were met. Which process activity did they likely miss?",
+    "type": "Interpretation",
+    "options": [
+      "A. Evolution",
+      "B. Validation",
+      "C. Development",
+      "D. Specification"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Validation ensures the software is what the customer requires; skipping it leads to this problem.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: What is the main advantage of using software engineering methods over ad-hoc programming?",
+    "type": "Short",
+    "options": [
+      "A. They are faster for small projects",
+      "B. They reduce long-term costs by improving quality and maintenance",
+      "C. They eliminate the need for programmers",
+      "D. They make hardware cheaper"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Methods reduce testing, quality assurance, and maintenance costs over time.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: The software process includes activities like specification, development, validation, and evolution.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True only for small projects",
+      "D. False for embedded systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "These four are explicitly listed as fundamental activities in all software processes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which activity involves defining constraints and customer requirements?",
+    "type": "MCQ",
+    "options": [
+      "A. Evolution",
+      "B. Specification",
+      "C. Validation",
+      "D. Development"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Specification is about defining what the software will do and under what constraints.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The activity where the software is designed and programmed is called ______.",
+    "type": "Fill",
+    "options": [
+      "A. Validation",
+      "B. Development",
+      "C. Specification",
+      "D. Evolution"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Development refers to the design and programming phase of the process.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which process activity deals with adapting software to changing market needs?",
+    "type": "MCQ",
+    "options": [
+      "A. Specification",
+      "B. Evolution",
+      "C. Development",
+      "D. Validation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Evolution is about modifying software to meet new customer or market requirements.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A company spends excessive resources on testing and maintenance because they skipped structured design. What practice could have reduced these costs?",
+    "type": "Interpretation",
+    "options": [
+      "A. Ad-hoc coding",
+      "B. Using software engineering methods",
+      "C. Relying on hardware upgrades",
+      "D. Avoiding validation"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Applying systematic engineering methods lowers long-term costs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: What is the correct sequence of activities in a typical software process?",
+    "type": "MCQ",
+    "options": [
+      "A. Development → Specification → Validation → Evolution",
+      "B. Specification → Development → Validation → Evolution",
+      "C. Validation → Evolution → Development → Specification",
+      "D. Evolution → Validation → Specification → Development"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text lists specification, development, validation, and evolution as the fundamental order.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Software evolution only happens when bugs are found in the program.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True for large systems",
+      "D. False only for web apps"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Evolution also reflects changing customer and market needs, not just bug fixes.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why does failure to use software engineering lead to higher long-term costs?",
+    "type": "Short",
+    "options": [
+      "A. Because it requires more developers",
+      "B. Because testing, quality assurance, and maintenance costs rise",
+      "C. Because customers refuse to pay",
+      "D. Because programming languages become outdated"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Skipping structured methods increases the cost of ensuring quality later.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which example best shows software validation?",
+    "type": "MCQ",
+    "options": [
+      "A. Adding new features after launch",
+      "B. Checking that the program matches customer requirements",
+      "C. Writing initial design documents",
+      "D. Debugging a syntax error"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Validation ensures alignment with what the customer needs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Reliable and trustworthy systems must be produced ______ and economically.",
+    "type": "Fill",
+    "options": [
+      "A. Slowly",
+      "B. Quickly",
+      "C. With minimal testing",
+      "D. Without evolution"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The text states systems must be built quickly and economically.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT one of the four fundamental software process activities?",
+    "type": "MCQ",
+    "options": [
+      "A. Specification",
+      "B. Validation",
+      "C. Debugging",
+      "D. Evolution"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Debugging is not listed as one of the four fundamental activities.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Consider the following example:\n```\nA project team defines user requirements, writes the program, tests it against customer needs, and later updates it when regulations change.\n```\nWhich concept does this sequence describe?",
+    "type": "Interpretation",
+    "options": [
+      "A. Agile sprints",
+      "B. Software process",
+      "C. Debugging cycle",
+      "D. Hardware integration"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The described steps match the four fundamental activities of a software process.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Software specification happens after development is complete.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes true",
+      "D. True only for prototypes"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Specification must be done before development, as it defines requirements and constraints.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these outcomes best represents the benefit of using software engineering?",
+    "type": "MCQ",
+    "options": [
+      "A. Slower delivery times",
+      "B. Reliable and trustworthy systems produced economically",
+      "C. Elimination of testing phases",
+      "D. More market complexity"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Software engineering ensures trustworthy and economical production of software systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following best describes the scope of system engineering?",
+    "type": "MCQ",
+    "options": [
+      "A. Only programming small applications",
+      "B. Only writing algorithms",
+      "C. Managing hardware, processes, deployment, and software together",
+      "D. Debugging software errors"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineering covers hardware, policies, processes, deployment, and software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Elegant theories from computer science are often directly applied to large, complex software systems.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. False because they are rarely relevant to large problems",
+      "D. True only for small projects"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Theories are mostly applicable to small programs, not large systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: System engineers are responsible for specifying the system, defining its overall architecture, and ______.",
+    "type": "Fill",
+    "options": [
+      "A. Designing only algorithms",
+      "B. Writing the smallest modules",
+      "C. Integrating different parts into a finished system",
+      "D. Debugging errors"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineers focus on integration of all parts into a complete system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Computer science is most applicable to which type of programs?",
+    "type": "MCQ",
+    "options": [
+      "A. Extremely large distributed systems",
+      "B. Hardware specifications",
+      "C. Relatively small programs",
+      "D. Complex multi-disciplinary systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The material notes that computer science theories apply mainly to small programs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Suppose a project requires designing processes, policies, and integrating hardware with software. Which discipline is most suitable?",
+    "type": "Interpretation",
+    "options": [
+      "A. Only programming",
+      "B. Database administration",
+      "C. System engineering",
+      "D. Web development"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineering deals with processes, policies, and integration of hardware and software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short: Why is computer science knowledge important for software engineers?",
+    "type": "Short",
+    "options": [
+      "A. It teaches debugging shortcuts",
+      "B. It eliminates the need for testing",
+      "C. It provides foundational theories essential for practical software building",
+      "D. It makes documentation unnecessary"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The text compares computer science for software engineers to physics for electrical engineers.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Software engineering focuses on practical problems of producing ______.",
+    "type": "Fill",
+    "options": [
+      "A. Hardware systems",
+      "B. Physics theories",
+      "C. Software",
+      "D. Policies"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Software engineering is about practical problems in producing software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which role involves defining the overall architecture of a system?",
+    "type": "MCQ",
+    "options": [
+      "A. Programmer",
+      "B. Database manager",
+      "C. System engineer",
+      "D. Network administrator"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineers are responsible for defining architecture and integration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: System engineering is limited to software development only.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. False because it covers hardware, policies, and deployment as well",
+      "D. True for startups"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineering includes hardware, policies, and deployment too.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A firm building a nationwide transportation system must combine software, hardware, and policy rules. Which discipline provides the broadest coverage?",
+    "type": "Interpretation",
+    "options": [
+      "A. Software engineering",
+      "B. Computer science",
+      "C. System engineering",
+      "D. Data science"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineering deals with all aspects of large-scale, complex systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which analogy best explains why computer science is important for software engineers?",
+    "type": "MCQ",
+    "options": [
+      "A. Math for historians",
+      "B. Biology for artists",
+      "C. Physics for electrical engineers",
+      "D. Geography for economists"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The text directly compares the relationship to physics and electrical engineering.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why are elegant computer science theories often less relevant for industry-scale software?",
+    "type": "Short",
+    "options": [
+      "A. They are too easy",
+      "B. They are always incorrect",
+      "C. They focus on small programs rather than large systems",
+      "D. They lack mathematical foundation"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Such theories are designed for small, elegant solutions, not large-scale complexity.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: System engineering is concerned with the development and evolution of ______ systems where software plays a major role.",
+    "type": "Fill",
+    "options": [
+      "A. Small",
+      "B. Temporary",
+      "C. Complex",
+      "D. Unreliable"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The passage stresses that system engineering targets complex systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a direct concern of system engineering?",
+    "type": "MCQ",
+    "options": [
+      "A. Hardware development",
+      "B. Process design",
+      "C. Painting and graphic design",
+      "D. System deployment"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineering is about technical, process, and integration tasks, not creative arts.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: If a project is focused only on algorithmic efficiency and correctness, which discipline is it closer to?",
+    "type": "Interpretation",
+    "options": [
+      "A. System engineering",
+      "B. Software engineering",
+      "C. Computer science",
+      "D. Project management"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Computer science emphasizes theories and methods like algorithm design.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Software engineering is primarily theoretical rather than practical.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. False because it is about solving practical production problems",
+      "D. True for small software only"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Software engineering is explicitly about practical production issues.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: System engineers help integrate ______ parts into a complete system.",
+    "type": "Fill",
+    "options": [
+      "A. Only software",
+      "B. Only hardware",
+      "C. Different",
+      "D. Similar"
+    ],
+    "correct_answer": "C",
+    "reasoning": "System engineers integrate different hardware, software, and processes.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: A company tasked with policy creation, process setup, hardware development, and software integration should rely on:",
+    "type": "MCQ",
+    "options": [
+      "A. Only computer scientists",
+      "B. Graphic designers",
+      "C. System engineers",
+      "D. Database developers"
+    ],
+    "correct_answer": "C",
+    "reasoning": "These tasks require the holistic view of system engineering.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: What is the main distinction between software engineering and computer science?",
+    "type": "Short",
+    "options": [
+      "A. One uses diagrams, the other does not",
+      "B. One avoids theory entirely",
+      "C. One focuses on practical production, the other on theoretical foundations",
+      "D. Both are identical fields"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Software engineering applies practical solutions, while computer science emphasizes theory.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is system engineering essential for projects like spacecraft or national defense systems?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because they only require coding small programs",
+      "B. Because hardware is irrelevant",
+      "C. Because they involve integrating complex hardware, software, and processes",
+      "D. Because deployment is unnecessary"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Such large-scale systems require integration of diverse and complex components.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which characteristic of operational software ensures that the system continues functioning without unexpected breakdowns?",
+    "type": "MCQ",
+    "options": [
+      "A. Efficiency",
+      "B. Budget",
+      "C. Usability",
+      "D. Dependability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Dependability means that the system works reliably without frequent failures, which is essential in operations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: In transitional characteristics, reusability means the ability of software to run on different hardware platforms.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only for operating systems",
+      "D. False, that is portability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Portability relates to running on different platforms, while reusability is about using components again.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A key ______ characteristic is adaptability, which allows software to work in changing environments.",
+    "type": "Fill",
+    "options": [
+      "A. Operational",
+      "B. Maintenance",
+      "C. Security",
+      "D. Transitional"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Adaptability is listed under transitional characteristics, enabling platform or environment changes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is an operational characteristic of software?",
+    "type": "MCQ",
+    "options": [
+      "A. Modularity",
+      "B. Portability",
+      "C. Reusability",
+      "D. Security"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Security is explicitly part of operational qualities, ensuring protection against threats.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A financial application must be designed to prevent unauthorized access to user data. Which characteristic is most relevant?",
+    "type": "Interpretation",
+    "options": [
+      "A. Flexibility",
+      "B. Portability",
+      "C. Modularity",
+      "D. Security"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Security in operational characteristics ensures the software defends against breaches.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following maintenance characteristics ensures the system can handle growth in users or data?",
+    "type": "MCQ",
+    "options": [
+      "A. Flexibility",
+      "B. Modularity",
+      "C. Maintainability",
+      "D. Scalability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Scalability ensures the system can grow with increased load without performance loss.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Efficiency is a transitional characteristic of software.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Sometimes",
+      "C. False for small systems",
+      "D. False, it belongs to operational characteristics"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Efficiency is part of operational characteristics, not transitional ones.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A modular design, which allows changes to be made in one part without affecting others, is a ______ characteristic.",
+    "type": "Fill",
+    "options": [
+      "A. Operational",
+      "B. Transitional",
+      "C. Budget-related",
+      "D. Maintenance"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Modularity is grouped under maintenance characteristics, enhancing long-term sustainability.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which characteristic ensures software continues to function correctly under different conditions?",
+    "type": "MCQ",
+    "options": [
+      "A. Portability",
+      "B. Efficiency",
+      "C. Maintainability",
+      "D. Correctness"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Correctness is an operational characteristic that ensures intended functioning.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A video editing software must work seamlessly when migrated from Windows to Linux. Which characteristic supports this?",
+    "type": "Interpretation",
+    "options": [
+      "A. Flexibility",
+      "B. Efficiency",
+      "C. Safety",
+      "D. Portability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Portability under transitional characteristics ensures migration between platforms.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: In the context of transitional characteristics, interoperability means:",
+    "type": "MCQ",
+    "options": [
+      "A. Running fast",
+      "B. Being cost-efficient",
+      "C. Correcting itself automatically",
+      "D. Working with other systems smoothly"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Interoperability ensures systems can communicate and function together.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Safety in operational characteristics ensures software does not cause harm when failures occur.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Partially True",
+      "C. True for embedded systems only",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Safety is explicitly mentioned as part of operational qualities to prevent harm.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short: Which operational characteristic focuses on how easy the software is to use for end users?",
+    "type": "Short",
+    "options": [
+      "A. Efficiency",
+      "B. Functionality",
+      "C. Correctness",
+      "D. Usability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Usability defines how easily end users can interact with the system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: In transitional aspects, the ability to reuse code modules in different projects is known as ______.",
+    "type": "Fill",
+    "options": [
+      "A. Portability",
+      "B. Adaptability",
+      "C. Flexibility",
+      "D. Reusability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Reusability allows components to be applied in multiple projects, a transitional feature.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which maintenance characteristic ensures the system can adapt when requirements change?",
+    "type": "MCQ",
+    "options": [
+      "A. Safety",
+      "B. Security",
+      "C. Efficiency",
+      "D. Flexibility"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Flexibility in maintenance ensures the system adapts to requirement changes.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Suppose a hospital’s patient management system must expand to support more departments. Which maintenance feature is most critical?",
+    "type": "Interpretation",
+    "options": [
+      "A. Dependability",
+      "B. Correctness",
+      "C. Adaptability",
+      "D. Scalability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Scalability ensures growth in system capabilities without major rework.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Budget is part of maintenance characteristics.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. True only in some cases",
+      "C. False for complex projects",
+      "D. False, it is part of operational characteristics"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Budget is listed under operational characteristics, not maintenance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is a transitional characteristic of software?",
+    "type": "MCQ",
+    "options": [
+      "A. Security",
+      "B. Efficiency",
+      "C. Usability",
+      "D. Adaptability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Adaptability belongs to transitional features, helping systems fit new environments.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The ability of a system to handle user load growth without breaking down is called ______.",
+    "type": "Fill",
+    "options": [
+      "A. Usability",
+      "B. Dependability",
+      "C. Efficiency",
+      "D. Scalability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Scalability ensures growth in user numbers or data volume is manageable.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: A team wants to ensure that their application is easy to maintain, adapt, and scale over years. Which overall characteristic should they emphasize?",
+    "type": "Interpretation",
+    "options": [
+      "A. Operational",
+      "B. Transitional",
+      "C. Security",
+      "D. Maintenance"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Maintenance characteristics cover modularity, flexibility, and scalability for long-term viability.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which statement best defines software engineering as described?",
+    "type": "MCQ",
+    "options": [
+      "A. A systematic approach considering cost, schedule, dependability, and user needs",
+      "B. A collection of programming languages only",
+      "C. A marketing strategy for technology companies",
+      "D. A set of universal rules applicable to all projects"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software engineering is defined as a systematic approach to software production while balancing cost, time, dependability, and customer needs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: There is one universal software engineering method suitable for all companies and projects.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True for small projects only",
+      "D. True for agile teams only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text emphasizes that no single universal method exists; methods must adapt to the organization and project.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: The specific methods, tools, and techniques used in software engineering depend on the organization, the type of software, and the ______ involved.",
+    "type": "Fill",
+    "options": [
+      "A. People",
+      "B. Programming languages",
+      "C. Hardware",
+      "D. Customers only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text highlights that people involved in the process influence the choice of methods.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What has been the trend in software engineering methods over the last 50 years?",
+    "type": "MCQ",
+    "options": [
+      "A. A diverse set of methods and tools has evolved",
+      "B. A single method has dominated",
+      "C. Methods have been abandoned",
+      "D. Only agile practices survived"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The passage mentions that diverse sets of methods and tools have evolved over time.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A company developing critical medical software must choose methods carefully. What is the most significant factor in selecting techniques?",
+    "type": "Interpretation",
+    "options": [
+      "A. The type of application being developed",
+      "B. The programming language preference",
+      "C. The popularity of the method",
+      "D. The cheapest available tool"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The type of application is identified as the most significant factor in determining methods.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What does the SEMAT initiative propose?",
+    "type": "MCQ",
+    "options": [
+      "A. A fundamental meta-process that can be instantiated for different processes",
+      "B. A new programming language for software engineering",
+      "C. A universal agile methodology",
+      "D. An end to software engineering diversity"
+    ],
+    "correct_answer": "A",
+    "reasoning": "SEMAT suggests creating a meta-process adaptable to various development contexts.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why is software engineering described as diverse?",
+    "type": "Short",
+    "options": [
+      "A. Because different organizations, software types, and people require different methods",
+      "B. Because programming languages keep changing",
+      "C. Because only large companies dictate methods",
+      "D. Because software failures are frequent"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text emphasizes diversity due to organizational, project, and human differences.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: The SEMAT initiative is already fully developed and universally applied in the industry.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True in Europe only",
+      "D. True for government projects"
+    ],
+    "correct_answer": "A",
+    "reasoning": "SEMAT is described as being in an early stage of development, not yet fully adopted.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Software engineering considers not just technical issues, but also ______.",
+    "type": "Fill",
+    "options": [
+      "A. Practical cost, schedule, and customer needs",
+      "B. Only programming syntax",
+      "C. Marketing and sales",
+      "D. Hardware availability"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The definition provided includes balancing cost, schedule, dependability, and user needs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these is NOT mentioned as part of software engineering’s systematic approach?",
+    "type": "MCQ",
+    "options": [
+      "A. Artistic creativity",
+      "B. Practical cost",
+      "C. Schedule considerations",
+      "D. Dependability"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text focuses on systematic, practical factors, not creativity or art.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A startup insists on using the same method for all its projects regardless of context. Why might this fail?",
+    "type": "Interpretation",
+    "options": [
+      "A. No universal method works for all companies and projects",
+      "B. Startups have limited resources",
+      "C. Programming languages keep evolving",
+      "D. Clients demand agile only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text emphasizes that diversity is necessary since no universal method exists.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: What is the role of customer and producer needs in software engineering?",
+    "type": "MCQ",
+    "options": [
+      "A. They are central factors in choosing approaches",
+      "B. They are ignored in favor of technical priorities",
+      "C. They are less important than hardware costs",
+      "D. They only apply in agile development"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The definition highlights customer and producer needs as central concerns.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Over the past 50 years, software engineering methods have converged into a single standard approach.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True for large companies only",
+      "D. True for embedded systems only"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text explains that diversity has increased, not convergence.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The SEMAT proposal by Jacobson et al. (2013) is described as a ______ stage of development.",
+    "type": "Fill",
+    "options": [
+      "A. Early",
+      "B. Final",
+      "C. Universal",
+      "D. Completed"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text explicitly calls it an early stage of development.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which factor is highlighted as the most significant in selecting methods and techniques?",
+    "type": "MCQ",
+    "options": [
+      "A. The type of application being developed",
+      "B. The available hardware budget",
+      "C. The popularity of the programming language",
+      "D. The size of the development team"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The text names application type as the most significant factor.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: What is the main aim of the SEMAT initiative?",
+    "type": "Short",
+    "options": [
+      "A. To create a fundamental meta-process for software engineering",
+      "B. To remove old programming languages",
+      "C. To standardize only agile methods",
+      "D. To cut software costs by half"
+    ],
+    "correct_answer": "A",
+    "reasoning": "SEMAT is about defining a meta-process that can adapt to different projects.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Software engineering diversity is unnecessary because one method works for everyone.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True for government projects only",
+      "D. False for embedded systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Diversity is emphasized as essential due to varying project contexts.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these best represents why diversity exists in software engineering methods?",
+    "type": "MCQ",
+    "options": [
+      "A. Different organizations, software types, and people require different approaches",
+      "B. Hardware has not evolved",
+      "C. Companies prefer creativity over structure",
+      "D. Programming languages are universal"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The diversity is driven by differences in organizations, applications, and people.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: A systematic approach in software engineering ensures consideration of dependability, cost, schedule, and ______ needs.",
+    "type": "Fill",
+    "options": [
+      "A. Customer and producer",
+      "B. Programming language",
+      "C. Hardware manufacturer",
+      "D. Marketing team"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The definition specifically includes customer and producer needs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: If methods and tools must adapt based on who is involved in the process, what does this illustrate?",
+    "type": "Interpretation",
+    "options": [
+      "A. The diversity of software engineering",
+      "B. The universal nature of agile",
+      "C. The dominance of programming syntax",
+      "D. The irrelevance of application type"
+    ],
+    "correct_answer": "A",
+    "reasoning": "This shows that diversity in approaches is necessary depending on people and context.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which category does a word processor running entirely on a laptop belong to?",
+    "type": "MCQ",
+    "options": [
+      "A. Cloud service",
+      "B. Stand-alone application",
+      "C. Interactive transaction-based application",
+      "D. Remote database"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Word processors on a laptop provide full functionality without requiring network access, fitting the definition of stand-alone applications.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: A CAD program that runs on a desktop without internet access is an example of an interactive transaction-based application.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True for mobile CAD only",
+      "D. False only if installed locally"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CAD programs running locally are stand-alone, not interactive remote systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: An e-commerce platform where customers purchase goods online is an example of an ______.",
+    "type": "Fill",
+    "options": [
+      "A. Embedded system",
+      "B. Interactive transaction-based application",
+      "C. Stand-alone application",
+      "D. System utility"
+    ],
+    "correct_answer": "B",
+    "reasoning": "E-commerce involves remote interaction with a business system, making it interactive and transaction-based.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is most likely a stand-alone application?",
+    "type": "MCQ",
+    "options": [
+      "A. Gmail in a browser",
+      "B. Photoshop installed on a PC",
+      "C. Online banking portal",
+      "D. Cloud-based photo sharing app"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Photoshop is a desktop software example that does not depend on a network to function.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short: Why is a mobile travel app often considered a stand-alone application?",
+    "type": "Short",
+    "options": [
+      "A. Because it runs in the cloud",
+      "B. Because it can function locally on the device with all necessary features",
+      "C. Because it always needs constant internet",
+      "D. Because it connects to large business systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Travel apps on devices can often work independently without remote execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A company designs a photo-sharing service that stores pictures on remote servers. Which category does it fit?",
+    "type": "Interpretation",
+    "options": [
+      "A. Stand-alone",
+      "B. Interactive transaction-based",
+      "C. Embedded",
+      "D. Operating system service"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Photo-sharing services require remote access and storage, matching interactive transaction-based applications.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What do interactive transaction-based applications usually include?",
+    "type": "MCQ",
+    "options": [
+      "A. Local-only data files",
+      "B. A large data store accessed and updated per transaction",
+      "C. A compiler for offline coding",
+      "D. A printer driver"
+    ],
+    "correct_answer": "B",
+    "reasoning": "These applications are designed to update and retrieve information from a large central database during transactions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Online business systems accessed through a web browser are considered interactive transaction-based applications.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True only for cloud systems",
+      "D. False if accessed via mobile apps"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Business systems accessed remotely for transactions fall under interactive transaction-based applications.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: A mobile productivity app like a to-do list manager running entirely on a smartphone is a ______ application.",
+    "type": "Fill",
+    "options": [
+      "A. Cloud-based",
+      "B. Stand-alone",
+      "C. Interactive transaction-based",
+      "D. System-level"
+    ],
+    "correct_answer": "B",
+    "reasoning": "It functions locally without the need for a network connection.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which is an example of an interactive transaction-based application?",
+    "type": "MCQ",
+    "options": [
+      "A. Calculator app on a PC",
+      "B. Amazon shopping website",
+      "C. Text editor",
+      "D. File compression utility"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Amazon involves real-time transactions with a remote system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A system where customers use a client program to connect to a remote payroll database best fits which type?",
+    "type": "Interpretation",
+    "options": [
+      "A. Stand-alone",
+      "B. Interactive transaction-based",
+      "C. Operating system",
+      "D. Embedded control"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Payroll systems accessed remotely with updates per transaction are interactive transaction-based.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: A photo manipulation software installed directly on a PC is an interactive transaction-based application.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only if connected to the cloud",
+      "D. False only if using old versions"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Local photo software does not rely on remote systems, making it stand-alone.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following describes a stand-alone application best?",
+    "type": "MCQ",
+    "options": [
+      "A. Requires remote access to work",
+      "B. Includes all functionality locally and runs independently",
+      "C. Updates a shared remote database",
+      "D. Needs constant network connection"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Stand-alone applications run fully on local machines without requiring remote access.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Cloud-based services like online mail are examples of ______ applications.",
+    "type": "Fill",
+    "options": [
+      "A. Stand-alone",
+      "B. Interactive transaction-based",
+      "C. Compiler-based",
+      "D. Embedded"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Mail services hosted remotely and accessed online fall under interactive transaction-based applications.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these is NOT a stand-alone application?",
+    "type": "MCQ",
+    "options": [
+      "A. Office application on a PC",
+      "B. Web-based e-commerce platform",
+      "C. Photo editor installed on a laptop",
+      "D. CAD program running locally"
+    ],
+    "correct_answer": "B",
+    "reasoning": "E-commerce is interactive and relies on remote servers.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why do interactive applications often require large data stores?",
+    "type": "Short",
+    "options": [
+      "A. To save disk space",
+      "B. To handle updates and retrievals for each transaction",
+      "C. To work without networks",
+      "D. To allow offline storage only"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Transactions require constant access to and updates of large shared datasets.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Consider a banking system that customers access via mobile apps to update their account balances. What type is this?",
+    "type": "Interpretation",
+    "options": [
+      "A. Stand-alone",
+      "B. Interactive transaction-based",
+      "C. Embedded",
+      "D. Utility program"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Banking systems rely on remote databases updated per transaction.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Productivity apps like note-taking software on a phone are interactive transaction-based applications by default.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only with cloud sync",
+      "D. False only when offline"
+    ],
+    "correct_answer": "B",
+    "reasoning": "If running entirely on a device, these apps are stand-alone, not interactive.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which best represents an interactive transaction-based application from the list?",
+    "type": "MCQ",
+    "options": [
+      "A. Local calculator",
+      "B. Online photo-sharing service",
+      "C. PC file manager",
+      "D. Offline dictionary"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Photo-sharing involves remote transactions and updates, fitting the definition.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Stand-alone applications usually ______.",
+    "type": "Fill",
+    "options": [
+      "A. Depend on cloud services",
+      "B. Run locally with all required functionality",
+      "C. Update remote databases per transaction",
+      "D. Require a web browser"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They are self-contained and do not rely on external servers or constant connectivity.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following is an example of an embedded control system?",
+    "type": "MCQ",
+    "options": [
+      "A. Video streaming software",
+      "B. Word processing software",
+      "C. Antilock braking software in a car",
+      "D. Spreadsheet application"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Embedded control systems manage hardware; antilock braking software is a direct example.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Embedded systems are typically more numerous than other types of software systems.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in industrial settings",
+      "D. Only in entertainment systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Embedded systems are very common and widespread in devices, not limited to industrial settings.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Entertainment systems are distinguished primarily by the ______ offered to the user.",
+    "type": "Fill",
+    "options": [
+      "A. Hardware speed",
+      "B. Computational complexity",
+      "C. Quality of user interaction",
+      "D. Number of sensors"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Entertainment systems focus on providing high-quality interaction and engagement for the user.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is a system for modeling and simulation?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile phone app",
+      "B. Video game console",
+      "C. Computational system modeling physical processes",
+      "D. Database management system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Systems for modeling and simulation simulate real-world processes and require computational resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Give an example of a system that collects data from the environment and may operate in hostile conditions.",
+    "type": "Short",
+    "options": [
+      "A. Entertainment game console",
+      "B. ERP software",
+      "C. Data collection system in a remote engine",
+      "D. Spreadsheet software"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Data collection systems interact with sensors and operate in environments like engines or remote locations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A scientist needs to simulate multiple interacting objects in a high-performance parallel system. What system type should they use?",
+    "type": "Interpretation",
+    "options": [
+      "A. Embedded control system",
+      "B. Entertainment system",
+      "C. Modeling and simulation system",
+      "D. Data collection system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Modeling and simulation systems handle computationally intensive simulations of interacting objects.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following statements is true about systems of systems?",
+    "type": "MCQ",
+    "options": [
+      "A. They are standalone applications",
+      "B. They do not include generic software products",
+      "C. They are composed of multiple interacting software systems",
+      "D. They cannot include ERP systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Systems of systems consist of multiple software systems, which can include generic or custom solutions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: A microwave oven controlling cooking process is an example of an entertainment system.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only when used for games",
+      "D. Only in industrial kitchens"
+    ],
+    "correct_answer": "C",
+    "reasoning": "A microwave oven is an embedded control system, not an entertainment system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Cloud-based systems performing statistical analysis of collected data are examples of ______.",
+    "type": "Fill",
+    "options": [
+      "A. Embedded control systems",
+      "B. Entertainment systems",
+      "C. Data collection and analysis systems",
+      "D. Modeling and simulation systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "These systems collect environmental data and perform analysis, often in the cloud.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is a distinguishing characteristic of entertainment systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Computational intensity",
+      "B. Use in scientific modeling",
+      "C. Focus on user interaction quality",
+      "D. Interaction with sensors"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Entertainment systems prioritize high-quality user interaction over other factors.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A company is assembling multiple specialized software systems to support enterprise operations. What system category does this belong to?",
+    "type": "Interpretation",
+    "options": [
+      "A. Embedded control system",
+      "B. Entertainment system",
+      "C. Systems of systems",
+      "D. Modeling system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Combinations of multiple software systems for enterprise use define systems of systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: Name a common feature of embedded control systems.",
+    "type": "Short",
+    "options": [
+      "A. Cloud-based analytics",
+      "B. Console gaming",
+      "C. Hardware management",
+      "D. Statistical modeling"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Embedded control systems manage hardware devices directly.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which system would be most suitable for simulating physical processes for research purposes?",
+    "type": "MCQ",
+    "options": [
+      "A. Entertainment system",
+      "B. Embedded control system",
+      "C. Modeling and simulation system",
+      "D. Data collection system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "These systems are designed for computationally intensive simulation of real-world processes.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Data collection systems cannot operate in hostile environments like engines or remote areas.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for small sensors",
+      "D. Only in simulation labs"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Data collection systems are specifically designed to function even in hostile conditions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Software that controls a car’s antilock braking is an example of ______.",
+    "type": "Fill",
+    "options": [
+      "A. Entertainment system",
+      "B. Data analysis system",
+      "C. Embedded control system",
+      "D. Modeling system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Antilock braking software directly controls hardware, making it an embedded control system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: A system that interacts with sensors and sends collected data to other systems is best described as:",
+    "type": "MCQ",
+    "options": [
+      "A. Entertainment system",
+      "B. Modeling system",
+      "C. Data collection and analysis system",
+      "D. Embedded control system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Data collection systems interact with sensors and forward information for processing.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Scientists use a high-performance system to model chemical reactions with multiple interacting molecules. This is an example of:",
+    "type": "Interpretation",
+    "options": [
+      "A. Data collection system",
+      "B. Embedded control system",
+      "C. Modeling and simulation system",
+      "D. Entertainment system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Modeling multiple interacting entities in a computational system is characteristic of simulation systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short: Give an example of an entertainment system.",
+    "type": "Short",
+    "options": [
+      "A. Microwave oven",
+      "B. Antilock braking system",
+      "C. Console video game",
+      "D. Data collection sensor"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Entertainment systems include video games and consoles intended for personal enjoyment.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these system types is often computationally intensive and requires high-performance parallel systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Embedded control system",
+      "B. Entertainment system",
+      "C. Modeling and simulation system",
+      "D. Data collection system"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Modeling and simulation systems often involve complex, resource-intensive computations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: ERP software is an example of a system of systems.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True for small companies",
+      "C. True",
+      "D. False in manufacturing only"
+    ],
+    "correct_answer": "C",
+    "reasoning": "ERP systems are considered generic software that can be part of systems of systems in enterprises.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is essential for all types of software systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Only large teams",
+      "B. Using the latest programming language",
+      "C. Ignoring customer requirements",
+      "D. A managed and understood development process"
+    ],
+    "correct_answer": "D",
+    "reasoning": "All software systems should follow a clearly planned and managed development process.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Software should perform efficiently and avoid wasting resources.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Only for real-time systems",
+      "C. True in some cases",
+      "D. True for all systems"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The text emphasizes efficiency and proper resource usage for all systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Effective use of existing resources in software development refers to ______.",
+    "type": "Fill",
+    "options": [
+      "A. Buying new hardware",
+      "B. Hiring more developers",
+      "C. Starting projects from scratch",
+      "D. Reusing already developed software"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Reusing existing software saves time and resources, as explained in the passage.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Dependability in software means that the system should ______.",
+    "type": "MCQ",
+    "options": [
+      "A. Be fast only",
+      "B. Use the newest technologies",
+      "C. Ignore security concerns",
+      "D. Behave as expected without failures"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Dependability involves reliable operation without failures, available when needed.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A developer plans a software project, sets deadlines, and tracks progress. Which principle does this illustrate?",
+    "type": "Interpretation",
+    "options": [
+      "A. Using cutting-edge hardware",
+      "B. Maximizing team size",
+      "C. Writing code without testing",
+      "D. Managed and understood development process"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Planning and tracking are components of a well-managed development process.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Understanding customer expectations is important to ensure ______.",
+    "type": "MCQ",
+    "options": [
+      "A. Maximum coding speed",
+      "B. Use of the latest programming language",
+      "C. Minimal resource usage",
+      "D. A useful system delivered on time and budget"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Meeting customer expectations ensures the system is useful and delivered according to schedule and budget.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Security and safety are only important in critical software systems.",
+    "type": "True/False",
+    "options": [
+      "A. True for small apps",
+      "B. False for games",
+      "C. True for real-time systems only",
+      "D. False, important for all systems"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The text specifies that all systems should be safe and secure where possible.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Software that is available when required demonstrates good ______.",
+    "type": "Fill",
+    "options": [
+      "A. Portability",
+      "B. Maintainability",
+      "C. Modularity",
+      "D. Dependability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Dependability includes availability and correct operation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which action demonstrates effective reuse of software?",
+    "type": "MCQ",
+    "options": [
+      "A. Writing all modules from scratch",
+      "B. Copying code without testing",
+      "C. Using code from a different language",
+      "D. Incorporating already tested modules in new projects"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Reusing tested modules reduces effort and increases reliability.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A company developing an online banking system focuses on preventing external attacks. Which principle is being applied?",
+    "type": "Interpretation",
+    "options": [
+      "A. Rapid prototyping",
+      "B. Ignoring system specifications",
+      "C. Increasing team size",
+      "D. Security and safety in software"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Security against attacks and safe operation are emphasized for all software.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: A system designed to behave correctly under all conditions demonstrates ______.",
+    "type": "MCQ",
+    "options": [
+      "A. Usability",
+      "B. Flexibility",
+      "C. Modularity",
+      "D. Dependability"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Dependability includes consistent correct behavior, as explained in the material.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Managed development processes are only necessary for large-scale software systems.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. True for enterprise systems",
+      "C. Sometimes true",
+      "D. False, necessary for all systems"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The text states that all systems should follow a managed process.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Knowing what different users expect from the system helps in ______.",
+    "type": "Fill",
+    "options": [
+      "A. Reducing hardware cost",
+      "B. Avoiding software reuse",
+      "C. Implementing unnecessary features",
+      "D. Managing requirements effectively"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Managing user expectations ensures useful system delivery.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Example: If a graphics module developed previously is reused in a new game, this shows ______.",
+    "type": "MCQ",
+    "options": [
+      "A. Faster programming",
+      "B. Avoiding testing",
+      "C. Ignoring user needs",
+      "D. Effective use of existing resources"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Reusing existing modules demonstrates resource efficiency.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: During project planning, the team defines what will be produced and deadlines. What principle is applied?",
+    "type": "Interpretation",
+    "options": [
+      "A. Ignoring system specifications",
+      "B. Using advanced programming languages",
+      "C. Minimizing development time",
+      "D. Managed and understood development process"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Defining deliverables and deadlines reflects a managed development process.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which example illustrates performance in software?",
+    "type": "MCQ",
+    "options": [
+      "A. Running code on multiple OS versions",
+      "B. Rewriting code frequently",
+      "C. Using expensive hardware",
+      "D. System responds quickly and efficiently under load"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Performance refers to efficient operation without wasting resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Safety in software only applies to systems handling hazardous materials.",
+    "type": "True/False",
+    "options": [
+      "A. True for embedded devices",
+      "B. True in critical systems only",
+      "C. False for non-critical systems",
+      "D. False, important for all systems"
+    ],
+    "correct_answer": "D",
+    "reasoning": "All systems should operate safely wherever possible.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Ensuring a system is secure against external attack is an aspect of ______.",
+    "type": "Fill",
+    "options": [
+      "A. Maintainability",
+      "B. Performance tuning",
+      "C. Flexibility",
+      "D. Software dependability and security"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Security is part of dependable and reliable software operation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: If a team decides to reuse a previously developed login module for a new application, it demonstrates ______.",
+    "type": "MCQ",
+    "options": [
+      "A. Faster coding only",
+      "B. Ignoring documentation",
+      "C. Using a different programming language",
+      "D. Effective software reuse"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Reusing existing modules efficiently saves resources and ensures reliability.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A project is delivered on time, works reliably, and reuses existing code where possible. What best summarizes the applied principles?",
+    "type": "Interpretation",
+    "options": [
+      "A. Use of advanced languages only",
+      "B. Minimal testing",
+      "C. Ignoring user requirements",
+      "D. Managed process, dependability, and reuse"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The project demonstrates all core software engineering fundamentals as described.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following best describes a key ethical responsibility of a software engineer?",
+    "type": "MCQ",
+    "options": [
+      "A. Upholding honesty and integrity in all professional activities",
+      "B. Maximizing profits regardless of client interests",
+      "C. Avoiding collaboration with peers",
+      "D. Using technical skills to bypass company policies"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Software engineers are expected to act ethically and maintain honesty and integrity.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True/False: Software engineers must respect confidentiality of clients and employers even without a formal agreement.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only if signed",
+      "D. Only for sensitive projects"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Respecting confidentiality is a professional responsibility regardless of agreements.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A software engineer should never knowingly accept work that is _______.",
+    "type": "Fill",
+    "options": [
+      "A. Outside their level of competence",
+      "B. Easy to complete",
+      "C. Popular in the industry",
+      "D. Well-documented"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Accepting work beyond competence violates ethical standards.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which example illustrates computer misuse?",
+    "type": "MCQ",
+    "options": [
+      "A. Disseminating malware on a colleague’s computer",
+      "B. Writing a technical report",
+      "C. Developing a personal project at home",
+      "D. Testing code in a sandbox environment"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Using technical skills to harm or misuse others’ computers is unethical.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Suppose a software engineer plays games on an employer's computer without permission. How is this classified?",
+    "type": "Interpretation",
+    "options": [
+      "A. Minor computer misuse",
+      "B. Full compliance",
+      "C. Innovation at work",
+      "D. Intellectual property protection"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Even trivial actions like gaming on employer machines fall under computer misuse.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What is a software engineer’s duty regarding intellectual property?",
+    "type": "MCQ",
+    "options": [
+      "A. Ensure employers' and clients' intellectual property is protected",
+      "B. Ignore copyright laws if not enforced",
+      "C. Copy code from competitors",
+      "D. Use any online resource without permission"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ethical practice requires respecting and protecting intellectual property.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Joining professional organizations like ACM or IEEE commits members to follow ethical codes of conduct.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. True only for senior members",
+      "D. False unless paid membership"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Membership requires adherence to published codes of ethics.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The Software Engineering Code of Ethics is designed to promote ______ behavior.",
+    "type": "Fill",
+    "options": [
+      "A. Fundamental ethical",
+      "B. Technical-only",
+      "C. Profit-driven",
+      "D. Competitive"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The code emphasizes fundamental ethical behavior in professional practice.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is considered dishonest behavior for a software engineer?",
+    "type": "MCQ",
+    "options": [
+      "A. Misrepresenting competence in a project",
+      "B. Following company standards",
+      "C. Documenting work clearly",
+      "D. Using approved development tools"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Misrepresenting skills violates professional ethics.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short: Why must software engineers behave morally responsible?",
+    "type": "Short",
+    "options": [
+      "A. To be respected as professionals",
+      "B. To meet deadlines faster",
+      "C. To increase profit",
+      "D. To reduce workload"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Respect in the profession comes from ethical and responsible behavior.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: An engineer avoids copying code without permission to respect _______.",
+    "type": "Interpretation",
+    "options": [
+      "A. Intellectual property rights",
+      "B. Workload limits",
+      "C. Team preferences",
+      "D. Client timelines"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Avoiding unauthorized code usage protects intellectual property.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of these is an ethical obligation even if not legally required?",
+    "type": "MCQ",
+    "options": [
+      "A. Professional responsibility toward clients",
+      "B. Avoiding overtime",
+      "C. Using the latest programming languages",
+      "D. Reporting only successes"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Professional ethics can require actions beyond legal obligations.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True/False: Software engineers can justify misusing a client’s computer if it is for testing purposes.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. True if signed off",
+      "D. False only for critical systems"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Misuse of computers is unethical regardless of the intention.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Professional societies help set _______ standards for software engineers.",
+    "type": "Fill",
+    "options": [
+      "A. Ethical",
+      "B. Technical-only",
+      "C. Marketing",
+      "D. Competitive"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Organizations like ACM and IEEE publish ethical standards.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: If a software engineer works beyond their competence, what principle is violated?",
+    "type": "MCQ",
+    "options": [
+      "A. Competence",
+      "B. Confidentiality",
+      "C. Intellectual property",
+      "D. Computer misuse"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Accepting work beyond skill level violates ethical competence.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: A developer avoids spreading malware even on personal machines. This demonstrates adherence to _______.",
+    "type": "Interpretation",
+    "options": [
+      "A. Ethical standards",
+      "B. Corporate culture",
+      "C. Peer pressure",
+      "D. Productivity goals"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Not misusing technical skills aligns with ethical standards.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which action is consistent with professional responsibility?",
+    "type": "MCQ",
+    "options": [
+      "A. Protecting client data",
+      "B. Ignoring security protocols",
+      "C. Using pirated software",
+      "D. Sharing passwords with coworkers"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Protecting client data is part of ethical and professional responsibility.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True/False: Misrepresenting the level of competence is acceptable if the client is unaware.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. False only for minor tasks",
+      "D. True if deadlines are tight"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Ethics require honesty regardless of client awareness.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Ethical software engineers should use their technical skills responsibly and avoid _______.",
+    "type": "Fill",
+    "options": [
+      "A. Misuse of computers",
+      "B. Proper documentation",
+      "C. Client consultation",
+      "D. Code reviews"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Misusing technical skills, even trivially, is unethical.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of these best represents the scope of a software engineer’s responsibilities?",
+    "type": "MCQ",
+    "options": [
+      "A. Beyond technical skills, including ethical and professional behavior",
+      "B. Only writing correct code",
+      "C. Meeting deadlines at any cost",
+      "D. Minimizing communication with clients"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Engineers must consider ethical, legal, and social responsibilities beyond technical work.",
+    "difficulty": "hard"
+  }
+]

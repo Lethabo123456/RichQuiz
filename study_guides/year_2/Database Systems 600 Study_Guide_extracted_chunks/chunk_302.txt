@@ -1,0 +1,35 @@
+ic data definition commands allow you to create tables and indexes. The commands 
+are CREATE TABLE, CREATE INDEX, ALTER TABLE, DROP TABLE, and DROP 
+INDEX.  
+ 
+ 
+The basic DML commands are SELECT, INSERT, UPDATE, and DELETE which allow 
+you to retrieve, add, modify and delete rows from a table. 
+ 
+ 
+The COMMIT and ROLLBACK commands are used to permanently save or reverse 
+changes made to the rows. Once you COMMIT the changes, you cannot undo them with a 
+ROLLBACK command.  
+ 
+ 
+Views can be created to expose subsets of data to end users primarily for security and privacy 
+reasons. Normally, views only store the SELECT statement to produce the view.  
+ 
+  
+ 
+ 
+ 
+
+ 
+125 
+ 
+  
+Review Questions  
+ 
+1. Explain why the following command would create an error and what changes 
+could be made to fix the error:  
+SELECT V_CODE, SUM(P_QOH) FROM PRODUCT; 
+ 
+2. What three join types are included in the outer join classification? 
+ 
+3. Explain the difference between an ORDER BY clause and a GROUP

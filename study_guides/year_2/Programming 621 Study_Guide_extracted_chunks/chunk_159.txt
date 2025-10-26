@@ -1,0 +1,19 @@
+ol < NUMBER_OF_COLUMNS; col++) 
+ {  
+largest = matrix[0][col]; //Assume that the first element //of the column is the largest. 
+for (row = 1; row < NUMBER_OF_ROWS; row++) 
+     if (matrix[row][col] > largest) largest = matrix[row][col];  
+cout << "The largest element in column " << col + 1 << " = " << largest << endl;  
+} 
+ 
+Passing Two-Dimensional Arrays as Parameters to Functions 
+Two-dimensional arrays can be passed as parameters to a function, and they are 
+passed by reference. The base address (that is, the address of the first component of 
+the actual parameter) is passed to the formal parameter. If matrix is the name of a two-
+dimensional array, then matrix[0][0] is the first component of matrix. 
+ 
+When storing a two-dimensional array in the computer’s memory, C++ uses the row 
+order form. That is, the first row is stored first, followed by the second row, followed by 
+the third row, and so on. 
+ 
+In the case of a one-dimensional array, when declaring it as a formal parameter,

@@ -1,0 +1,19 @@
+e triple: 
+ 
+{2,3,4} = 1 (we've discounted one from the {1,2} group) 
+From that deduction, you have the frequent item sets. 
+FP-Growth algorithm. The Frequent Pattern Growth (FP-Growth) algorithm works as a tree 
+structure (called an FP-Tree). It creates the tree by counting the occurrences of the items in 
+the database and storing them in a header table. In a second pass, the tree is built by inserting 
+the instances it sees in the data as it goes along the header table. Items that don't meet the 
+minimum support threshold are discarded; otherwise, they are listed in descending order. 
+You can think of the FP-Growth algorithm like a graph. With a reduced dataset in a tree 
+formation, the FP-Growth algorithm starts at the bottom—the place with the longest 
+branches—and finds all instances of the given condition.  When no more single items match 
+the attribute's support threshold, the growth ends, and then it works on the next part of the 
+FP-Tree. 
+ 
+
+P a g e  | 53 
+ 
+5.2 Support Vect

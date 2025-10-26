@@ -1,0 +1,36 @@
+Examine the attributes of the ConstraintLayout element (Listing 3.3). A closer look at the attributes 
+reveals a certain structure. Attributes have the format library:attribute name = “attribute value”. First, 
+all the attributes in the listing start with android: . This indicates that the attribute is associated with 
+the Android SDK library, and that is where the compiler should look for information on what to do. 
+Other libraries are available from third parties, and later in this text, we’ll explore how to add other 
+libraries. The attribute name and values differ based on the element to which they are applied. 
+An explanation of the code in the above listing is as follows: 
+ 
+▪ Lines 1–2—These are actually one line. This defines the root element of the layout to be a 
+ConstraintLayout and to refer to the Android XML namespace (source) identified for the functions 
+associated with the layout. 
+▪ Lines 3–4—These two lines define additional XML namespaces for items in the app. The first is 
+used for items that will be used in the compiled app and points to your current project. The tools 
+namespace is for tools used in building the app but will not be in the final compiled code. 
+▪ Lines 5–6—These two attributes define the size of the element. In this case, the value 
+match_parent indicates that the layout should be the height and width of the device screen. If a child 
+element of ConstraintLayout has this value for either layout_height or layout_width, it will fill up as 
+much of the ConstraintLayout as it can. 
+▪ Line 7—The tools:context identifies the activity that is associated with the layout. This is used 
+during the design process to support development but has no impact once the app is compiled. 
+▪ Lines 9–16—Switch back to activity_main.xml. The only child element of the ConstrainLayout, and 
+thus the only item on the screen, is a TextView. TextView is Android’s version of a label. It is used 
+primarily to display text. This element currently has several attributes. The two size attributes differ 
+from the ConstraintLayout in that they have the value wrap_content. This tells Android to size the 
+TextView to the size of the text displayed in it. The third attribute tells Android what text to display. 
+In this case its value is “Hello World!” The final four attributes describe the position of the TextView 
+in the ConstraintLayout. In this case, the bottom of the TextView is constrained to the bottom of the 
+ConstraintLayout (its parent) with the layout_constraintBottom_toBottomOf attribute. The remaining 
+three attributes constrain the TextView’s left, right, and top sides to the left, right, and top of the root 
+layout. Because no additional information is provided about these constraints, Android assumes they 
+are equally weighted and places the TextView in the exact middle of the screen. 
+Switch back to the Graphical Layout (Design tab) view of the activity_main.xml file (by clicking the 
+Design tab below the code window). At the left of the layout is a panel titled Palette. Palette contains 
+a set of folders with different components (called widgets) that can be used to design a user interface. 
+If it is not open, click on the Common folder in the Palette. The Common folder contains a set of widely 
+used widgets for designing the user interaction with your app.

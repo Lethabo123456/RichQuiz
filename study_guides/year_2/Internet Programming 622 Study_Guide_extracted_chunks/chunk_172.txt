@@ -1,0 +1,21 @@
+$conn = new PDO( $dsn, $username, $password );   
+   
+A DSN , or Database Source Name, is simply a string that describes attributes of the connection such 
+as the type of database system, the location of the database, and the database name. For example, 
+the following DSN can be used to connect to a MySQL database called mydatabase running on the 
+same machine as the PHP engine:   
+   
+$dsn = “mysql:host=localhost;dbname=mydatabase”;   
+   
+If host is not specified, localhost is assumed. So, putting it all together, you could connect to your 
+mydatabase database as follows (replacing mypass with your real root password of course):   
+   
+$dsn = “mysql:dbname=mydatabase”;   
+$username = “root”;   
+$password = “mypass”;   
+$conn = new PDO( $dsn, $username, $password );   
+   
+When you have finished with the connection, you should close it so that it is freed up for other 
+scripts to use. Although the PHP engine usually closes connections when a script finishes, it is a good 
+
+73

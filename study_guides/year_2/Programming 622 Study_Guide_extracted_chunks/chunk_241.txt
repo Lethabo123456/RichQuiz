@@ -1,0 +1,55 @@
+current->link;  
+}  
+  
+ 
+if (current == first)   
+  
+  
+//Case 2  
+{  
+newNode->link = first; first 
+= newNode;  
+count++;  
+}  
+ 
+else     
+  
+  
+  
+//Case 3  
+{  
+trailCurrent->link = newNode;  
+newNode->link = current;  
+  
+if (current == NULL) last 
+= newNode;  
+count++;  
+}  
+ 
+}  
+  
+  
+  
+  
+  
+//end else  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end insert  
+  
+The function insert uses a while loop to find the place where the new item is to be inserted and this loop 
+is similar to the while loop used in the search function. It can be shown that the function insert is of O(n).  
+  
+ 
+3.4.3  Insert First and Insert Last  
+  
+The function insertFirst inserts the new item at the beginning of the list. However, because the resulting 
+list must be sorted, the new item must be inserted at the proper place. Similarly, the function insertLast 
+must insert the new item at the proper place. We, therefore, use the function insert to insert the new 
+item at its proper place. The definitions of these fun

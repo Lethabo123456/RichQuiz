@@ -1,0 +1,26 @@
+wn above. 
+
+ 
+ 
+ 
+ 
+The steps we took in this quick example are as follows: 
+1. # -*- coding: utf-8 -*- 
+This specifies the encoding for the Python file. See PEP 0263 - Defining Python Source Code 
+Encodings for details. 
+2. import dash 
+import dash_core_components as dcc import 
+dash_html_components as html 
+We import Dash and both of its component libraries. 
+3. app = dash.Dash() 
+We launch a Dash application. “app” is just a convenient name for our Dash instance. 
+ 
+4. app.layout = html.Div(children=[ 
+html.H1(children='Hello Dash'), 
+html.Div(children='Dash: A web application framework for Python.'), 
+ 
+Here we start to define the application layout. 
+H1 and Div are component attributes that map to corresponding HTML tags. 
+H1 we’ve seen; it creates a level one heading. Div creates a <div> tag which is like an HTML container. 
+children is a property of HTML components (we’ll use this keyword later when we add interactivity to 
+our dashboards). By default this is the first property

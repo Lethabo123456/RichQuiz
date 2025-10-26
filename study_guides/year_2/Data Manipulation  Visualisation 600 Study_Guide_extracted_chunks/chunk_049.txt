@@ -1,0 +1,34 @@
+Fig 3.1 
+ 
+Creating NumPy arrays from Python lists is a fundamental operation in data science and numerical computing, and it 
+provides a powerful foundation for working with large datasets efficiently. Unlike Python lists, NumPy arrays can only 
+contain data of the same type. If the types do not match, NumPy will upcast them according to its type promotion 
+rules. For example, integers are upcast to floating point. If we want to explicitly set the data type of the resulting 
+array, we can use the dtype keyword. Unlike Python lists, which are always one-dimensional sequences, NumPy arrays 
+can be multidimensional. Fig 3.2 below demonstrates how to create an array using Python lists.  
+ 
+3.3 NumPy Array Attributes 
+NumPy arrays possess several key attributes that offer insights into their characteristics. The shape attribute returns 
+a tuple specifying the dimensions of the array, while ndim indicates the number of dimensions or axes. The size 
+attribute provides the total number of elements in the array, and dtype reveals the data type of its elements. The 
+itemsize attribute informs about the size, in bytes, of each element. The data attribute points to a buffer object 
+containing the array's data in memory. Additionally, the flags attribute furnishes information on the memory layout, 
+offering details such as contiguity and ownership. These attributes empower data scientists and practitioners to 
+comprehend and manipulate NumPy arrays efficiently, aiding in diverse applications ranging from scientific 
+computing to machine learning. Fig 3.3 below demonstrates how NumPy attributes can be used. 
+ 
+Fig 3.3 
+
+3.4 Manipulating NumPy Arrays  
+
+3.4.1 Slicing and Indexing 
+Indexing is a fundamental concept in NumPy arrays, encompassing accessing individual elements or extracting subsets 
+within an array. In NumPy, indexing allows for the modification of array elements by assigning new values. The library 
+supports diverse indexing techniques, comprising basic indexing, slicing, and advanced indexing methodologies. Basic 
+indexing in NumPy mirrors standard Python indexing, utilizing square brackets to access elements. This indexing 
+system is 0-based, signifying that the initial element can be retrieved with an index of 0. Whether extracting specific 
+elements, performing array slicing, or employing advanced indexing techniques, NumPy's comprehensive indexing 
+capabilities contribute to efficient and versatile array manipulation. Image below shows how basic indexing, getting 
+values and setting values can be done using NumPy arrays. 
+Slicing allows you to access a range of elements in the array. NumPy supports advanced indexing using integer arrays 
+or Boolean arrays. 

@@ -1,0 +1,41 @@
+2.5. The Assignment Operator 
+   
+You have been using the assignment operator since Topic 2. Now it is time to take a formal look at 
+it. The assignment operator is the single equal sign, =. The assignment operator works in Java much 
+as it does in any other computer language. It has this general form:    
+var = expression;   
+   
+Here, the type of var must be compatible with the type of expression.   
+The assignment operator does have one interesting attribute that you may not be familiar with: it 
+allows you to create a chain of assignments. For example, consider this fragment:   int x, y, z;   
+   
+x = y = z = 100; // set x, y, and z to 100   
+This fragment sets the variables x, y, and z to 100 using a single statement. This works because the 
+= is an operator that yields the value of the right-hand expression. Thus, the value of z = 100 is 100, 
+which is then assigned to y, which in turn is assigned to x. Using a “chain of assignment” is an easy 
+way to set a group of variables to a common value.   
+   
+2.6. Control Statements  
+   
+A programming language uses control statements to cause the flow of execution to advance and 
+branch based on changes to the state of a program. Java’s program control statements can be put 
+into the following categories: selection, iteration, and jump. Selection statements allow your 
+program to choose different paths of execution based upon the outcome of an expression or the 
+state of a variable. Iteration statements enable program execution to repeat one or more statements 
+(that is, iteration statements form loops). Jump statements allow your program to execute in a 
+nonlinear fashion. All of Java’s control statements are examined here.   
+   
+Java’s Selection Statements    
+Java supports two selection statements: if and switch. These statements allow you to control the 
+flow of your program’s execution based upon conditions known only during run time. You will be 
+pleasantly surprised by the power and flexibility contained in these two statements.   
+  
+The If Statement    
+ 
+The if statement was introduced in Chapter 2. It is examined in detail here. The if statement is Java’s 
+conditional branch statement. It can be used to route program execution through two different 
+paths. Here is the general form of the if statement:   
+   
+if (condition) statement1;  
+else  
+statement2;   

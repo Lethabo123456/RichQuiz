@@ -1,0 +1,22 @@
+3.4.7 IDS/IPS 
+
+ Intrusion Detection System - A device or application that analyzes whole packets, both header 
+and payload, looking for known events. When a known event is detected a log message is 
+generated detailing the event. 
+
+ Intrusion Prevention System - A device or application that analyzes whole packets, both header 
+and payload, looking for known events. When a known event is detected the packet is rejected. 
+The functional difference between an IDS and an IPS is a fairly subtle one and is often nothing more 
+than a configuration setting change. For example, in a Juniper IDP module, changing from Detection 
+to Prevention is as easy as changing a drop-down selection from LOG to LOG/DROP. At a technical 
+level it can sometimes require redesign of your monitoring architecture. 
+Given the similarity between all three systems there has been some convergence over time. The 
+Juniper IDP module mentioned above, for example, is effectively an add-on component to a firewall. 
+From a network flow and administrative perspective the firewall and IDP are functionally 
+indistinguishable even if they are technically two separate devices. 
+There is also much market discussion of something called a Next Generation Firewall (NGFW). The 
+concept is still new enough that each vendor has their own definition as to what constitutes a NGFW 
+but for the most part all agree that it is a device that enforces policy unilaterally across more than 
+just network packet header information. This can make a single device act as both a traditional 
+Firewall and IPS. Occasionally additional information is gathered, such as from which user the traffic 
+originated, allowing even more comprehensive policy enforcement. 

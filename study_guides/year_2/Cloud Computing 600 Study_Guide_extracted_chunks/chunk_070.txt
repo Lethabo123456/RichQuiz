@@ -1,0 +1,45 @@
+4.3.3 Virtualization Attack  
+This Virtualization attack exploits vulnerabilities in the virtualization platform in order to jeopardize 
+its confidentiality, integrity and availability. An attacker successfully accesses a virtual server to 
+compromise its underlying physical server. In the case of a public cloud where single physical IT 
+resource may be providing virtualized IT resources to multiple consumers, such an attack can have 
+huge consequences.   
+ 
+Fig 4.3: Virtualization attack 
+
+4.3.4 Malicious Intermediary 
+ This threat arises when messages are intercepted and altered by a malicious service agent thereby 
+potentially compromising the message’s confidentiality and sometimes its integrity. It may also insert 
+harmful data into the message before forwarding it to its destination.  
+ 
+Fig 4.4: Malicious intermediary 
+ 
+4.3.5 Overlapping Trust Boundaries 
+If physical IT resources within a cloud are shared by different cloud service consumers, these cloud 
+service consumers have overlapping trust boundaries.  Malicious cloud service consumers can target 
+shared IT resources with the intention of compromising cloud consumers or other IT resources that 
+share the same cloud boundary. This could result in some or all of the other cloud service consumers 
+being impacted by the attack, and the attacker could use virtual IT resources against others that also 
+share the same trust boundary.  
+ 
+4.3.6 Flawed Implementation 
+Sub-standard design, configuration and implementation of cloud service deployment can have 
+adverse consequences on the system. Security flaws or operational weakness on the cloud provider’s 
+software can be exploited to compromise integrity, confidentiality and available of the IT resources 
+provided. 
+
+Some other cloud security threats are;  
+ Malware Injection 
+ Insecure Application Programming Interface (API) 
+ Insider Threats (Malicious insider) 
+ Advanced persistent threats (APT) 
+ 
+4.4 Mitigating Cloud Security Threats  
+Cloud security threats can be mitigated by adopting the following practices;  
+
+ Conduct a cloud security assessment regularly  
+ Implement cloud security monitoring  
+ Establish solid access management policies 
+ Create a disaster recovery plan  
+ Encryption  
+ Raise employee awareness 

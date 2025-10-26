@@ -1,0 +1,14 @@
+it than any other. The next step is to identify the module or subsystem to 
+which the central entity belongs and to define that module’s boundaries and scope. The entity 
+belongs to the module that uses it most frequently. Once each module is identified, the central entity 
+is placed within the module’s framework to let you focus on the module’s details. Within the central 
+entity/module framework, you must 
+ 
+Ensure the module’s cohesivity. The term cohesivity describes the strength of the relation-ships 
+found among the module’s entities. A module must display high cohesivity—that is, the entities 
+must be strongly related, and the module must be complete and self-sufficient. Cohesively The 
+strength of the relationships between a module’s components. Module cohesivity must be high. 
+Module coupling the extent to which modules are independent of one another.  
+ 
+ Analyse each module’s relationships with other modules to address module coupling. module 
+coupling describes the exten

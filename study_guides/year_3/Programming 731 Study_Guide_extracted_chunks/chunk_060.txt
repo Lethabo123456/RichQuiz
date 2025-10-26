@@ -1,0 +1,26 @@
+1.6 A Second Short Program   
+   
+Perhaps no other concept is more fundamental to a programming language than that of a variable. 
+As you probably know, a variable is a named memory location that may be assigned a value by your 
+program. The value of a variable may be changed during the execution of the program. The next 
+program shows how a variable is declared and how  it is assigned a value. In addition, the program 
+also illustrates some new aspects of console output. As the comments at the top of the program 
+state, you should call this file Example2.java.  
+
+/*   
+Here is another short example.   
+Call this file "Example2.java".   
+*/   
+
+class Example2 {   
+public static void main(String args[]) {   
+   
+int num; // this declares a variable called num 
+num = 100; // this assigns num the value 100 
+System.out.println("This is num: " + num); 
+num = num * 2;   
+System.out.print("The value of num * 2 is ");   
+System.out.println(num);   
+}   
+}
+

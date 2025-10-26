@@ -1,0 +1,26 @@
+3.3.5 ARP Spooﬁng 
+ARP spooﬁng is a cyber attack that allows hackers to intercept communications between network 
+devices on a network. Hackers can also use ARP spooﬁng to alter or block all traﬃc between 
+devices on the network. One of the ways this cache can be poisoned is by pinging a device with a 
+spoofed IP address. In this way, an attacker can force the victim to insert an incorrect IP address– 
+to–MAC address mapping into its ARP cache. If the attacker can accomplish this with two 
+computers having a conversation, they can eﬀectively be placed in the middle of the transmission. 
+After the ARP cache is poisoned on both machines, they will be sending data packets to the 
+attacker, all the while thinking they are sending them to the other member of the conversation
+
+3.3.6 Rogue DHCP 
+Dynamic Host Conﬁguration Protocol (DHCP) is used to automate the process of assigning IP 
+conﬁgurations to hosts. When conﬁgured properly, it reduces administrative overload, reduces 
+the human error inherent in manual assignment, and enhances device mobility. But it introduces 
+a vulnerability that, when leveraged by a malicious individual, can result in an inability of hosts to 
+communicate (constituting a DoS attack) and peer-to-peer attacks. When an illegitimate DHCP 
+server (called a rogue DHCP server) is introduced to the network, unsuspecting hosts may accept 
+
+DHCP Oﬀer packets from the illegitimate DHCP server rather than the legitimate DHCP server. 
+When this occurs, the rogue DHCP server will not only issue the host an incorrect IP address, 
+subnet mask, and default gateway address (which makes a peer-to-peer attack possible), it can 
+also issue an incorrect DNS server address, which will lead to the host relying on the attacker’s 
+DNS server for the IP addresses of websites (such as those resembling major banks’ websites) 
+that lead to phishing attacks. 
+ 
+Figure 3.8: Rogue DHCP

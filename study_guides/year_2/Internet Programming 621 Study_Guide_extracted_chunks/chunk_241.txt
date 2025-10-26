@@ -1,0 +1,28 @@
+and " . $cars[2] . "."; 
+?> 
+a) I like Volvo BMW and Toyota) 
+b) I like Volvo, BMW and Toyota) 
+c) I like Volvo, BMW and Toyota 
+d) I like. Volvo.,. BMW. and) Toyota) . 
+  
+Answer: b 
+72. What will be the output of the following PHP code? 
+<?php 
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); 
+print_r(array_change_key_case($age, CASE_UPPER)); 
+?> 
+a) Array ( [Peter] => 35 [Ben] => 37 [Joe] => 43 ) 
+b) Array ( [peter] => 35 [ben] => 37 [joe] => 43 ) 
+c) Array ( [PETER] => 35 [BEN] => 37 [JOE] => 43 ) 
+d) Array ( [PeTeR] => 35 [BeN] => 37 [Joe] => 43 ) 
+  
+Answer: c 
+  
+73. What will be the output of the following PHP code? 
+<?php 
+$cars = array("Volvo", "BMW", "Toyota", "Honda", "Mercedes", "Opel"); 
+print_r(array_chunk($cars, 2)); 
+?> 
+a) Array ( [0] => Array ( [1] => Volvo [2] => BMW ) [1] => Array ( [1] => Toyota [2] => Honda ) [2] 
+=> Array ( [1] => Mercedes [2] => Opel ) ) 
+b) Array ( [1] => Array ( [1] => Volvo [2] => BMW ) [2] => Array ( [1] => Toyota [2] => Honda ) [3]

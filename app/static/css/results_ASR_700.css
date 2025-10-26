@@ -1,0 +1,224 @@
+/* ===============================
+   Autonomous Systems & Robotics Theme - Results
+   =============================== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background: linear-gradient(135deg, #0a0a1a, #12122e, #1a1a3d);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* Card container */
+.card {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(20, 25, 40, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.3), 0 0 60px rgba(0, 150, 255, 0.2);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Grid overlay for futuristic effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 200, 255, 0.05) 0px,
+    rgba(0, 200, 255, 0.05) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  z-index: 0;
+  animation: rotateGrid 30s linear infinite;
+}
+@keyframes rotateGrid {
+  100% { transform: rotate(360deg); }
+}
+
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #00c8ff;
+  text-shadow: 0 0 15px rgba(0, 200, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+/* Score */
+.score {
+  font-size: 1.2rem;
+  background: rgba(0, 200, 255, 0.05);
+  border-left: 4px solid #00c8ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+/* Progress bar */
+.progress-container {
+  width: 100%;
+  background: rgba(0, 200, 255, 0.1);
+  border-radius: 10px;
+  height: 20px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00c8ff, #0077b6);
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Result text */
+.result {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Time display */
+.time {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #66f6ff;
+}
+
+/* Adaptive feedback */
+.adaptive-feedback h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00c8ff;
+  margin-bottom: 15px;
+}
+
+.adaptive-feedback ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.adaptive-feedback li {
+  background: rgba(10, 20, 40, 0.85);
+  border-left: 4px solid #00c8ff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Summary section */
+.summary h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00c8ff;
+  margin-bottom: 15px;
+}
+
+.qa {
+  background: rgba(30, 35, 55, 0.85);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qa.correct {
+  border-left: 4px solid #00ffb3;
+}
+.qa.incorrect {
+  border-left: 4px solid #ff4c4c;
+}
+
+.qa:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.4);
+}
+
+/* Question text inside QA */
+.question-text {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Reasoning / code block */
+.reasoning {
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 3px solid #00c8ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.reasoning .code-block pre {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  background: transparent;
+  color: #e0e0e0;
+  overflow-x: auto;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.button {
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00c8ff, #0077b6);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.6);
+}
+
+/* Scrollbar for long summaries */
+.summary {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.summary::-webkit-scrollbar {
+  width: 8px;
+}
+.summary::-webkit-scrollbar-thumb {
+  background: #00c8ff;
+  border-radius: 4px;
+}
+.summary::-webkit-scrollbar-track {
+  background: rgba(0, 200, 255, 0.05);
+}

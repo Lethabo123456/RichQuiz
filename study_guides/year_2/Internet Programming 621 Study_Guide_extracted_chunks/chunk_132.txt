@@ -1,0 +1,15 @@
+could not be retrieved. This is all very well, but what if one or more of the elements in 
+your array actually contain the value false? In this case, when a function returns false you will not 
+know whether you are getting back the element’s value, or whether there was in fact a problem 
+retrieving the element.  
+  
+To get round this issue, you can use another PHP function: each(). This returns the current element 
+of the array, then advances the pointer to the next element. Unlike the previous five functions, 
+however,  
+
+64  
+each() returns a four-element array rather than a value. This array contains both the key of the 
+current element, as well as its value. If an element could not be retrieved — because the pointer has 
+reached the end of the array, or because the array is empty — each() returns false. This makes it 
+easy to tell if each() has retrieved an element with the value of false — in which case it returns the 
+four-element array — or if it could not retrieve an element a

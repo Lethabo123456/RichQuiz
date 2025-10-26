@@ -1,0 +1,38 @@
+“pubYear” = > 1937  
+),  
+array(  
+“title” = > “A Tale of Two Cities”,  
+“author” = > “Charles Dickens”,  
+“pubYear” = > 1859  
+
+67  
+),  
+);  
+echo “ < pre > ”;  
+print_r ( $myBooks ); 
+echo “ < /pre > ”;  
+? >  
+< /body >  
+< /html >  
+  
+  
+Figure 5.4  
+  
+5.10 Accessing Elements Of Multi-Dimensional Arrays  
+Using the square bracket syntax that you ’ ve already learned, you can access any element within a 
+multidimensional array. Here are some examples (these work on the $myBooks array just shown):  
+  
+// Displays “Array ( [title] = > The Trial [author] = > Franz Kafka  [pubYear] = > 1925 )”; 
+print_r( $myBooks[1] );  
+  
+// Displays “The Trial” echo “ < br/ > ” . 
+$myBooks[1][“title”] . “ < br/ > ”;  
+  
+// Displays “1859” echo 
+$myBooks[3][“pubYear”] . “ < br/ > ”;  
+  
+
+68  
+The print_r() example shows that the second element of $myBooks is in fact an associative array 
+containing information on “ The Trial. ” Meanwhile, the two echo() examples show how to 
+access elements in

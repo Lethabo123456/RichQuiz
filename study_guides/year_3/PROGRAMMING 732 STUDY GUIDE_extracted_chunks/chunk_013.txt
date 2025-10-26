@@ -1,0 +1,25 @@
+1.2.4 Buttons  
+Some features that are not found in the Button class defined by AWT are provided by the swing buttons. 
+For example, an icon can be associated with a swing button. Swing buttons are subclasses of the Abstract 
+Button class, which extends JComponent. The methods contained in the Abstract Button Class are as 
+under:  
+  
+Void setDisabledIcon (icon di) Void 
+setPressedIcon (icon pi)  
+Void setSelectedIcon (icon si)  
+Void setRolloverIcon (icon ri)  
+  
+Here di, pi, si and ri are the icons to be used for these different conditions. The text associated with a 
+button can be read are written via the following methods:  
+  
+String getText ( )  
+Void setText (string s)  
+  
+Where s is the text to be associated with the button. Concrete subclasses of AbstractButton generate 
+action events when they are pressed. The methods used by listeners to register and unregister for these 
+events are: 
+
+Void addActionlistener (Actionlistener al)  
+Void removeActionlistener (Actionlistener al)  
+  
+Where al is the actionlistener. 

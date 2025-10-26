@@ -1,0 +1,17 @@
+.  
+  
+In this statement, the nouns are bold and the verbs are italic. From the list of nouns— program, 
+dimensions, cylinder, surface area, and volume—we can easily visualize cylinder to be a class—say, 
+cylinderType—from which we can create many cylinder objects of various dimensions. The nouns— 
+dimensions, surface area, and volume— are characteristics of a cylinder and, thus, can hardly be 
+considered classes.  
+  
+After we identify a class, the next step is to determine three pieces of information:  
+  
+Operations that an object of that class type can perform  
+Operations that can be performed on an object of that class type Information 
+that an object of that class type must maintain  
+  
+From the list of verbs identified in the problem description, we choose a list of possible operations that 
+an object of that class can perform, or has performed, on itself. For example, from the list of verbs for the 
+cylinder problem description—write, input, calculate, and print—the possible

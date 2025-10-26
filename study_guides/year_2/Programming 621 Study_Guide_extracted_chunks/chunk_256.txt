@@ -1,0 +1,73 @@
+nation of objects of the user-defined type and objects of the built-in type 
+ 
+
+243 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+244 | P a g e  
+ 
+ 
+ 
+Figure below shows a UML class diagram of the class complexType. 
+
+245 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+246 | P a g e  
+ 
+ 
+Next, we discuss the definition of the function to overload the stream extraction 
+operator, >> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7.4.1 Overloading the Stream Extractoin Operator(>>) 
+    
+The general syntax to overload the stream extraction operator, >>, for a class is 
+described next. Function Prototype (to be included in the definition of the class): 
+ 
+ 
+ 
+ 
+Function Definition: 
+
+247 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In this function definition: ? Both parameters are reference parameters.  
+ The first parameter—that is, isObject—is a reference to an istream object.  
+ The second parameter is usually a reference to a particular class. The data 
+read will be stored in the object. 
+ The function return type is a reference to an istream obj

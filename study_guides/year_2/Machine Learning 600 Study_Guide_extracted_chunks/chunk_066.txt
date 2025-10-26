@@ -1,0 +1,14 @@
+main issues of decision trees is that they can create overly complex models, 
+depending on the data presented in the training set. To avoid the ML algorithm's over-fitting 
+the data, it's sometimes worth reviewing the training data and pruning the values to 
+categories, which will produce a more refined and better-tuned model. Some of the decision 
+tree concepts can be hard to learn because the model cannot express them easily. This 
+shortcoming sometimes results in a larger-than-normal model. You might be required to 
+change the model or look at different methods of ML. 
+ 
+4.1.3  Decision Trees Types 
+ID3. The ID3 (Iterative Dichotomiser 3) algorithm was invented by Ross Quinlan to create 
+trees from datasets. By calculating the entropy for every attribute in the dataset, this could 
+be split into subsets based on the minimum entropy value. After the set had a decision tree 
+node created, all that was required was to recursively go through the remaining attributes in 
+the set. ID3 use

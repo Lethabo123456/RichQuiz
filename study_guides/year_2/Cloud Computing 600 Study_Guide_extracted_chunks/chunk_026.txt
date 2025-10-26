@@ -1,0 +1,36 @@
+Cloud consumers and Cloud Providers 
+The cloud provider refers to the “party” that provides cloud-based IT resources, while the party that 
+uses the cloud-based IT resources is the cloud consumer. These terms represent roles usually assumed 
+by organizations in relation to clouds and corresponding cloud provisioning contracts.  
+
+Scaling 
+The term “scaling” from an IT resource perspective, represents the ability of the IT resource to handle 
+increased or decreased usage demands. There are two types of scaling - Horizontal Scaling (scaling out 
+and scaling in); Vertical Scaling (scaling up and down). 
+ 
+Horizontal Scaling 
+This refers to allocating or releasing of IT resources that are of the same type. The horizontal allocation 
+of resources is referred to as scaling out and the horizontal releasing of resources is referred to 
+as scaling in. Horizontal scaling is a common form of scaling within cloud environments. 
+
+Figure 1.6: Horizontal scaling 
+
+Vertical Scaling 
+
+Vertical scaling is when an existing IT resource is replaced by another with higher or lower capacity. 
+Specifically, the replacing of an IT resource with another that has a higher capacity is referred to 
+as scaling up, while the replacing an IT resource with another that has a lower capacity is 
+considered scaling down. Vertical scaling is less common in cloud environments due to the downtime 
+required while the replacement is taking place. 
+ 
+Figure 1.7 : Vertical scaling 
+ 
+An IT resource (Virtual Server A) is scaled out by adding more of the 
+same IT resources (Virtual Servers B and C). 
+An IT resource (a virtual server with two CPUs) is scaled up by replacing it with a 
+more powerful IT resource with increased capacity for data storage (a 
+physical server with four CPUs). 
+
+The table below provides an overview of pros and cons associated with horizontal and vertical scaling  
+ 
+Table 1.1 A comparison between horizontal and vertical scaling. 

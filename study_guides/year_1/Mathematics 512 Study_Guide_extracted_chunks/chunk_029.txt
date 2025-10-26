@@ -1,0 +1,26 @@
+3.4 Laws of Limits 
+Calculating limits using graphs and tables takes a lot of unnecessary time and 
+work. Using the limit laws listed below, limits can be calculated much more 
+quickly and easily.  
+
+Let lim𝑥→𝑎 𝑓(𝑥) and lim𝑥→𝑎 𝑔(𝑥) exist and let c be constant: 
+
+1. lim𝑥→𝑎[ 𝑓(𝑥) ± 𝑔(𝑥)] = lim𝑥→𝑎 𝑓(𝑥) ± lim𝑥→𝑎 𝑔(𝑥) 
+2. lim𝑥→𝑎[𝑐 𝑓(𝑥) ] = c lim𝑥→𝑎 𝑓(𝑥) 
+3. lim𝑥→𝑎[ 𝑓(𝑥) 𝑔(𝑥)] = lim𝑥→𝑎 𝑓(𝑥)  lim𝑥→𝑎 𝑔(𝑥) 
+4. lim𝑥→𝑎(𝑓(𝑥)𝑔(𝑥)) = lim𝑥→𝑎 𝑓(𝑥)/lim𝑥→𝑎 𝑔(𝑥) if lim𝑥→𝑎 𝑔(𝑥) ≠ 0 
+5. lim𝑥→𝑎[ 𝑓(𝑥)]𝑛 = [ lim𝑥→𝑎 𝑓(𝑥)]𝑛 if n is a positive integer 
+6. lim𝑥→𝑎 √𝑓(𝑥)𝑛 = √lim𝑎→𝑥𝑓(𝑥)𝑛 if𝑛 √lim𝑎→𝑥𝑓(𝑥) exists. 
+7. lim𝑥→𝑎 𝑐 = c 
+8. lim𝑥→𝑎 𝑥 = a 
+
+
+From the limit laws above, comes the property of direct substitution. This 
+property makes it possible to solve most rational and polynomial functions. The 
+property of direct substitution states: For any rational or polynomial function 
+𝑓, if a is in the domain of 𝑓 then lim
+𝑥→𝑎 𝑓(𝑥) = 𝑓(𝑎). 
+Often, the method of direct substitution cannot be used because a is not in the 
+domain of f. In these cases, it is sometimes possible to factor the function and 
+eliminate terms so that the function is defined at the point a. For an example 
+of factoring, see example below.  

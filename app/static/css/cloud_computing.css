@@ -1,0 +1,232 @@
+/* cloud_computing.css - Updated Cloud Computing Themed Quiz */
+
+/* =========================
+   Fonts & Imports
+   ========================= */
+   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+   /* =========================
+      Body & Background
+      ========================= */
+   body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     background: linear-gradient(135deg, #0b1525, #1b263b);
+     color: #ffffff;
+     overflow-x: hidden;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 40px 0;
+   }
+   
+   body::before {
+     content: '';
+     position: fixed;
+     top: 0; left: 0;
+     width: 100vw; height: 100vh;
+     background: url('https://www.transparenttextures.com/patterns/clouds.png') repeat;
+     opacity: 0.18;
+     z-index: -1;
+     animation: floatClouds 90s linear infinite;
+   }
+   
+   @keyframes floatClouds {
+     0% { background-position: 0 0; }
+     100% { background-position: 1200px 0; }
+   }
+   
+   /* =========================
+      Main Container
+      ========================= */
+   .container {
+     max-width: 950px;
+     margin: 50px auto;
+     padding: 45px 50px;
+     background: rgba(10, 20, 40, 0.88);
+     border-radius: 22px;
+     box-shadow: 0 0 45px rgba(0, 200, 255, 0.5), inset 0 0 20px rgba(0, 200, 255, 0.15);
+     border-left: 6px solid #00c8ff;
+     border-right: 6px solid #00c8ff;
+     position: relative;
+   }
+   
+   .container::before {
+     content: '';
+     position: absolute;
+     top: -15px; left: -15px; right: -15px; bottom: -15px;
+     border-radius: 26px;
+     background: linear-gradient(120deg, #00c8ff, #00f0ff, #00c8ff);
+     filter: blur(38px);
+     opacity: 0.42;
+     z-index: -1;
+     animation: pulseGlow 6s infinite alternate;
+   }
+   
+   @keyframes pulseGlow {
+     0% { opacity: 0.3; }
+     50% { opacity: 0.7; }
+     100% { opacity: 0.3; }
+   }
+   
+   /* =========================
+      Headings
+      ========================= */
+   h2 {
+     font-family: 'Orbitron', sans-serif;
+     text-align: center;
+     font-size: 3rem;
+     color: #00c8ff;
+     text-shadow: 0 0 12px #00f0ff, 0 0 25px #00c8ff;
+     margin-bottom: 2.5rem;
+   }
+   
+   /* =========================
+      Questions & Options
+      ========================= */
+   .question-container p {
+     font-weight: 600;
+     font-size: 1.25rem;
+     margin-bottom: 12px;
+     color: #a0e7ff;
+     text-shadow: 0 0 2px #00c8ff;
+   }
+   
+   #question-text {
+     background: rgba(0, 200, 255, 0.05);
+     padding: 18px 22px;
+     border-radius: 14px;
+     margin-bottom: 1.8rem;
+     font-weight: 500;
+     color: #d0f7ff;
+   }
+   
+   .options-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0 0 1.5rem 0;
+   }
+   
+   .option-label {
+     display: flex;
+     align-items: center;
+     padding: 14px 18px;
+     margin-bottom: 12px;
+     background: rgba(0, 200, 255, 0.1);
+     border-radius: 12px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     font-weight: 500;
+     position: relative;
+   }
+   
+   .option-label:hover {
+     background: rgba(0, 200, 255, 0.25);
+     transform: translateX(6px) scale(1.01);
+     box-shadow: 0 0 18px rgba(0, 200, 255, 0.4);
+   }
+   
+   .option-label input[type="radio"] {
+     margin-right: 15px;
+     accent-color: #00c8ff;
+     position: relative;
+     z-index: 2;
+   }
+   
+   .option-label input[type="radio"]:checked + .option-text {
+     background: rgba(0, 255, 255, 0.22);
+     border-radius: 14px;
+     box-shadow: 0 0 22px rgba(0, 200, 255, 0.6), 0 0 42px rgba(0, 255, 255, 0.4) inset;
+     color: #00f0ff;
+     font-weight: 700;
+     transform: scale(1.03);
+     transition: all 0.3s ease;
+   }
+   
+   .option-label input[type="radio"]:checked + .option-text::after {
+     content: '';
+     position: absolute;
+     top: -6px; left: -6px;
+     width: calc(100% + 12px);
+     height: calc(100% + 12px);
+     border-radius: 14px;
+     box-shadow: 0 0 22px #00f0ff, 0 0 42px #00c8ff;
+     animation: pulseGlowOption 1.5s infinite alternate;
+     z-index: 1;
+   }
+   
+   @keyframes pulseGlowOption {
+     0% { box-shadow: 0 0 18px #00f0ff, 0 0 36px #00c8ff; }
+     100% { box-shadow: 0 0 28px #00f0ff, 0 0 52px #00c8ff; }
+   }
+   
+   .option-text {
+     color: #d0f0ff;
+     position: relative;
+     z-index: 2;
+   }
+   
+   /* =========================
+      Submit Button
+      ========================= */
+   .submit-btn {
+     display: block;
+     width: 100%;
+     padding: 14px 22px;
+     border: none;
+     border-radius: 14px;
+     background: linear-gradient(90deg, #00c8ff, #00f0ff);
+     color: #0b1525;
+     font-weight: 700;
+     font-size: 1.15rem;
+     cursor: pointer;
+     box-shadow: 0 6px 18px rgba(0, 200, 255, 0.6);
+     transition: all 0.3s ease;
+   }
+   
+   .submit-btn:hover {
+     background: linear-gradient(90deg, #00f0ff, #00c8ff);
+     transform: scale(1.06);
+     box-shadow: 0 0 28px rgba(0, 200, 255, 0.8);
+   }
+   
+   /* =========================
+      Back Link
+      ========================= */
+   .back-link {
+     display: inline-block;
+     margin-top: 28px;
+     color: #00c8ff;
+     font-weight: 600;
+     text-decoration: none;
+     transition: all 0.3s ease;
+   }
+   
+   .back-link:hover {
+     color: #00f0ff;
+     text-shadow: 0 0 12px #00c8ff;
+   }
+   
+   /* =========================
+      Code Blocks
+      ========================= */
+   pre[class*="language-"] {
+     background: rgba(0, 200, 255, 0.05) !important;
+     color: #00f0ff !important;
+     padding: 16px !important;
+     border-radius: 14px !important;
+     overflow-x: auto !important;
+     box-shadow: inset 0 0 12px rgba(0, 200, 255, 0.3);
+   }
+   
+   /* =========================
+      Responsive Design
+      ========================= */
+   @media (max-width: 768px) {
+     .container { padding: 35px 25px; }
+     h2 { font-size: 2.2rem; }
+     .submit-btn { font-size: 1rem; }
+   }
+   

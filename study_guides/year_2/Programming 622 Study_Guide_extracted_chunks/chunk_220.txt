@@ -1,0 +1,58 @@
+e the node pointed 
+to by first. The steps needed to implement this function are as follows:  
+  
+1. Create a new node.  
+2. If unable to create the node, terminate the program.  
+3. Store the new item in the new node.  
+4. Insert the node before first.  
+5. Increment count by 1.  
+  
+template <class Type>  
+void unorderedLinkedList<Type>::insertFirst(const Type& newItem)  
+{  
+nodeType<Type> *newNode;   
+  
+//pointer to create the new node newNode 
+= new nodeType<Type>;    
+//create the new node  
+newNode->info = newItem;    
+  
+//store the new item in the node  
+newNode->link = first;   
+  
+  
+//insert newNode before first  
+first = newNode;   
+  
+  
+  
+//make first point to the actual first node  
+count++;   
+  
+  
+  
+  
+//increment count  
+if (last == NULL)   
+  
+last = newNode;  
+  
+  
+//if the list was empty, newNode is also  
+//the last node in the list  
+}  
+ 
+  
+  
+  
+  
+  
+//end insertFirst  
+  
+
+110  
+  
+ 
+3.3.3  Insert the Last Node  
+  
+The definition of the member functio

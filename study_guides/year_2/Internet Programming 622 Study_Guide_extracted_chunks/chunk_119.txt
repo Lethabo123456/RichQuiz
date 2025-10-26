@@ -1,0 +1,28 @@
+txt contains:   
+The mind is its own place, and in itself Can make 
+a Heav’n of Hell, a Hell of Heav’n.   
+What matter where, if I be still the same,   
+*/   
+$handle = fopen( “milton.txt”, “r” );   
+$lineNumber = 1;   
+while ( $line = fgets( $handle ) ) {   
+echo $lineNumber++ . “: $line < br / > ”;   
+}   
+fclose( $handle );   
+   
+The code produces the following output:   
+1: The mind is its own place, and in it self 2:  
+Can make a Heav’n of Hell, a Hell of Heav’n.   
+3: What matter where, if I be still the same,   
+   
+   
+3.12 Reading And Writing Entire Files   
+Writing code to read a file line by line, or string by string, can be tedious. Fortunately, PHP provides 
+you  with some functions that can access the complete contents of a file in one go. These include: 
+ 
+file() — For reading a whole file into an array, without needing to open it   
+• 
+file_get_contents() and file_put_contents() — For reading and writing the contents of a file 
+without needing to open it   
+• 
+fpassthr

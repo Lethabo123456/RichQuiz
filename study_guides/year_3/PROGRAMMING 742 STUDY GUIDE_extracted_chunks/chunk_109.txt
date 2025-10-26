@@ -1,0 +1,25 @@
+Begin by creating a Pair constructor that takes two objects and stashes them away in a private array: 
+
+public class Pair { 
+// two objects, added in order received 
+public Pair (object firstObject, object secondObject) 
+{ 
+ 
+thePair[ 0] = firstObject; 
+thePair[ 1] = secondObject; 
+} 
+// hold both objects 
+private object[ ]thePair = new object[ 2]; 
+//Next, you override  ToString ( ) to obtain the string value of the two objects: 
+public override string ToString( ) 
+{ 
+return thePair [ 0] .ToString( ) + ", " + thePair[ 1] .ToString( ); 
+} 
+ 
+ 
+You now have two objects in your Pair and you can print out their values. You're ready to sort them and print 
+the results of the sort. You can't know in advance what kind of objects you will have, so you would like to delegate 
+the responsibility of deciding which object comes first in the sorted Pair to the objects themselves. Thus, you re-
+quire that each object stored in a Pair implement a method to return which of the two comes first. The method 
+will take two objects (of whatever type) and return an enumerated value: the First Comes First if  the first ob-
+ject comes first, and theSecondComesFirst if the second does.

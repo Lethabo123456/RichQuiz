@@ -1,0 +1,38 @@
+Chapter Six: Software Testing  
+ 
+6.1 Introduction to Software Testing 
+Testing is intended to show that a program does what it is intended to do and to discover program 
+defects before it is put into use. When you test software, you execute a program using artificial 
+data. You check the results of the test run for errors, anomalies, or information about the 
+program’s non-functional attributes.  
+Testing shows that a program does what it was created to do, and that it has no errors. Software 
+testing is done prior to deployment to the client’s environment and is conducted using sample 
+data which resembles the actual data which will be used by the users of the system. The test 
+results are checked for errors, unexpected behaviour or information about the program’s non -
+functional attributes. 
+
+When you test software, you are trying to do two things: 
+ 
+i. Demonstrate to the developer and the customer that the software meets its 
+requirements. For custom software, this means that there should be at least one 
+test for every requirement in the requirements document. For generic software 
+products, it means that there should be tests for all of the system features that will 
+be included in the product release. You may also test combinations of features to 
+check for unwanted interactions between them. 
+ 
+ii. Find inputs or input sequences where the behavior of the software is incorrect, 
+undesirable, or does not conform to its specification. These are caused by defects 
+(bugs) in the software. When you test software to find defects, you are trying to 
+root out undesirable system behavior such as system crashes, unwanted 
+interactions with other systems, incorrect computations, and data corruption. 
+ 
+The first of these is validation testing, where you expect the system to perform correctly using a 
+set of test cases that reflect the system’s expected use. The second is defect testing, where the 
+test cases are designed to expose defects. The test cases in defect testing can be deliberately 
+obscure and need not reflect how the system is normally used. Of course, there is no definite 
+boundary between these two approaches to testing. During validation testing, you will find 
+defects in the system; during defect testing, some of the tests will show that the program meets 
+its requirements. 
+Testing is part of a broader process of software verification and validation (V & V). Verification 
+and validation are not the same thing, although they are often confused. 
+ 

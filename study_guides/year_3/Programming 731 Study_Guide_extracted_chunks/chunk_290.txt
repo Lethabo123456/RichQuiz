@@ -1,0 +1,102 @@
+The synchronized Statement    
+While creating synchronized methods within classes that you create is an easy and effective means 
+of achieving synchronization, it will not work in all cases. To understand why, consider the following. 
+Imagine that you want to synchronize access to objects of  a class that was not designed for 
+multithreaded access. That is, the class does not use synchronized methods. Further, this class was 
+not created by you, but by a third party, and you do not have access to the source code. Thus, you 
+can’t add synchronized to the appropriate methods within the class. How can access to an object of 
+this class be synchronized? Fortunately, the solution to this problem is quite easy: You simply put 
+calls to the methods defined by this class inside a synchronized block.   
+   
+This is the general form of the synchronized statement:   
+   
+synchronized(object) {   
+// statements to be synchronized   
+}   
+Here, object is a reference to the object being synchronized. A synchronized block ensures that a 
+call to a method that is a member of object occurs only after the current thread has successfully 
+entered object’s monitor.   
+   
+Here is an alternative version of the preceding example, using a synchronized block within the run( 
+) method:   
+   
+// This program uses a synchronized   
+ 
+block. class Callme {   
+void call(String msg) { 
+System.out.print("[" 
++ 
+msg); try {   
+   
+Thread.sleep(1000);   
+} catch (InterruptedException e) {   
+   
+System.out.println("Interrupted");   
+}   
+
+System.out.println("]");   
+}   
+   
+}   
+class Caller implements Runnable    
+ 
+{ String msg;   
+Callme target;   
+   
+Thread t;   
+public Caller(Callme targ, String s)   
+{ target = targ;  msg 
+= s;  t = new Thread(this);   
+   
+t.start();   
+}   
+// synchronize calls to call() 
+public void run() {   
+synchronized(target) { // synchronized block 
+target.call(msg);   
+   
+}   
+}   
+}   
+   
+class Synch1 {  public static void 
+main(String args[]) { Callme target = 
+new Callme();   
+Caller ob1 = new Caller(target, "Hello");   
+Caller ob2 = new Caller(target, "Synchronized");    
+ 
+Caller ob3 = new Caller(target, "World");   
+// wait for threads 
+to 
+end 
+try 
+{ 
+ob1.t.join();  
+ob2.t.join();   
+              ob3.t.join();   
+} catch(InterruptedException e) {   
+   
+System.out.println("Interrupted");   
+}   
+}   
+}   
+   
+Caller ob3 = new Caller(target, "World");   
+// wait for threads 
+to 
+end 
+try 
+{ 
+ob1.t.join();  
+ob2.t.join();   
+              ob3.t.join();   
+} catch(InterruptedException e) {   
+   
+System.out.println("Interrupted");   
+}   
+}   
+}   
+   
+Here, the call( ) method is not modified by synchronized. Instead, the synchronized statement is 
+used inside Caller’s run( ) method. This causes the same correct output as the preceding example, 
+because each thread waits for the prior one to finish before proceeding.

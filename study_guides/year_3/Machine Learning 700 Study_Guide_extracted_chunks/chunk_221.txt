@@ -1,0 +1,39 @@
+6 Chapter Six: Deep Learning 
+  
+6.1 Neural Networks 
+An artificial neural network (or neural network for short) is a predictive model motivated by the way the 
+brain operates. Think of the brain as a collection of neurons wired together. Each neuron looks at the 
+outputs of the other neurons that feed into it, does a calculation, and then either fires (if the calculation 
+exceeds some threshold) or does not (if it does not). Accordingly, artificial neural networks consist of 
+artificial neurons, which perform similar calculations over their inputs. Neural networks can solve a wide 
+variety of problems like handwriting recognition and face detection, and they are used heavily in deep 
+learning, one of the trendiest subfields of data science. However, most neural networks are “black 
+boxes”—inspecting their details doesn’t give you much understanding of how they are solving a problem. 
+And large neural networks can be difficult to train. For most problems you will encounter as a budding 
+data scientist, they’re probably not the right choice. Someday, when you are trying to build an artificial 
+intelligence to bring about the Singularity, they very well might be. 
+
+6.2  Perceptrons 
+• The simplest neural network is the perceptron, which approximates a single neuron with n binary 
+inputs.  
+• It computes a weighted sum of its inputs and “fires” if that weighted sum is 0 or greater: 
+from scratch.linear_algebra import Vector, dot 
+def step_function(x: float) -> float: 
+return 1.0 if x >= 0 else 0.0 
+                              def perceptron_output(weights: Vector, bias: float, x: Vector) -> float: 
+"""Returns 1 if the perceptron 'fires', 0 if not""" 
+calculation = dot(weights, x) + bias 
+return step_function(calculation) 
+The perceptron is simply distinguishing between the half-spaces separated by the hyperplane of 
+points x for which: 
+    dot(weights, x) + bias == 0 
+ 
+With properly chosen weights, perceptrons can solve several simple problems. For example, we can 
+create an AND gate (which returns 1 if both its inputs are 1 but returns 0 if one of its inputs is 0) with: 
+and_weights = [2., 2] 
+and_bias = -3. 
+
+assert perceptron_output(and_weights, and_bias, [1, 1]) == 1 
+assert perceptron_output(and_weights, and_bias, [0, 1]) == 0 
+assert perceptron_output(and_weights, and_bias, [1, 0]) == 0 
+assert perceptron_output(and_weights, and_bias, [0, 0]) == 0 

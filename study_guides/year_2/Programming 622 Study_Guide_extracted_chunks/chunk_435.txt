@@ -1,0 +1,24 @@
+One solution to this problem is that when the queue overflows to the rear (that is, queueRear points to 
+the last array position), we can check the value of the index queueFront. If the value of queueFront 
+indicates that there is room in the front of the array, then when queueRear gets to the last array position, 
+we can slide all of the queue elements toward the first array position. This solution is good if the queue 
+size is very small; otherwise, the program might execute more slowly.  
+
+221  
+  
+  
+Another solution to this problem is to assume that the array is circular—that is, the first array position 
+immediately follows the last array position. (See Figure 6-5.)  
+  
+  
+FIGURE 6-5 Circular queue  
+  
+We will consider the array containing the queue to be circular, although we will draw the figures 
+of the array holding the queue elements as before.  
+  
+Suppose that we have the queue as shown in Figure 6-6(a).  
+  
+  
+FIGURE 6-6 Queue before and after the add operation  
+  
+A

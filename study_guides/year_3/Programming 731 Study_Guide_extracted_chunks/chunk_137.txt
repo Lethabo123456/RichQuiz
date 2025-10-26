@@ -1,0 +1,57 @@
+CHAPTER FOUR: INTRODUCING CLASSES AND METHODS   
+   
+4.1. Introducing Classes 
+   
+The class is at the core of Java. It is the logical construct upon which the entire Java language is built 
+because it defines the shape and nature of an object. As such, the class forms the basis for object-
+oriented programming in Java. Any concept you wish to implement in a Java program must be 
+encapsulated within a class. Because the class is so fundamental to Java, this and the next few 
+chapters will be devoted to it. Here, you will be introduced to the basic elements of a class and learn 
+how a class can be used to create objects. You will also learn about methods, constructors, and the 
+this keyword.
+
+Class Fundamentals    
+ 
+Classes have been used since the beginning of this book. However, until now, only the most 
+rudimentary form of a class has been used. The classes created in the preceding chapters primarily 
+exist simply to encapsulate the main( ) method, which has been used to demonstrate the basics of 
+the Java syntax. As you will see, classes are substantially more powerful than the limited ones 
+presented so far. Perhaps the most important thing to understand about a class is that it defines a 
+new data type. Once defined, this new type can be used to create objects of that type. Thus, a class 
+is a template for an object, and an object is an instance of a class. Because an object is an instance 
+of a class, you will often see the two words object and instance used interchangeably.   
+   
+The General Form of a Class    
+When you define a class, you declare its exact form and nature. You do this by specifying the data 
+that it contains and the code that operates on that data. While very simple classes may contain 
+only code or only data, most real-world classes contain both. As you will   
+see, a class’ code defines the interface to its data. A class is declared by use of the class keyword. 
+The classes that have been used up to this point are actually very limited examples of its complete 
+form. Classes can (and usually do) get much more complex. The general form of a class definition is 
+shown here:   
+   
+class classname {  
+type instance-variable1; type instance-variable2;   
+   
+// ...   
+type instance-variableN;   
+type methodname1(parameter-list) {   
+// body of method   
+}   
+
+   
+   
+   
+   
+97   
+   
+type methodname2(parameter-list) {   
+// body of method   
+   
+}   
+// ...   
+type methodnameN(parameter-list) {   
+// body of method   
+}   
+   
+}  

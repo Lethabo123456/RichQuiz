@@ -1,0 +1,44 @@
+5.2 Polymorphism   
+   
+Polymorphism gives us the ultimate flexibility in extensibility. Polymorphism is a term that describes 
+a situation where one name may refer to different methods. In java there are two type of 
+polymorphism: overloading type and overriding type. When you override methods, java determines 
+the proper methods to call at the program’s run time, not at the compile time. Overriding occurs 
+when a class method has the same name and signature as a method in parent class. Overloading 
+occurs when several methods have same names with different method signature. Overloading is 
+determined at the compile time.
+
+Example:    
+   
+Class Book{   
+String  title;  String publisher; 
+float price;  
+setBook(String title){   
+} 
+ 
+setBook(String 
+title, 
+String 
+publisher){   
+}  setBook(String title, String publisher,float 
+price){   
+}   
+}   
+     
+5.3. Method Overriding 
+   
+Example: Overriding    
+   
+Class Tool{ void operate_it(){   
+}    
+}    
+Class ScrewDriver extends Tool{ 
+void operate_it(){   
+}   
+}   
+
+In a class hierarchy, when a method in a subclass has the same name and type signature as a method 
+in its superclass, then the method in the subclass is said to override the method in the superclass. 
+When an overridden method is called from within a subclass, it will always refer to the version of 
+that method defined by the subclass. The version of the method defined by the superclass will be 
+hidden.

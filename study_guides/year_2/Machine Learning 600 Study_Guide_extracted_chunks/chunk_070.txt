@@ -1,0 +1,22 @@
+n 55, then you are prompted to 
+check his or her credit rating. With this type of ML, you are using supervised learning to 
+deduce the optimal method to make a prediction; what we mean by “supervised learning” is 
+that you give the classifier data with the outcomes. The real question is, “What's the best 
+node to start with as the root node?”  
+ 
+ Check the model for the base cases. 
+ Iterate through all the attributes (attr). 
+ Get the normalized information gain from splitting on attr. 
+ Let best_attr be the attribute with the highest information gain. 
+ Create a decision node that splits on the best_attr attribute. 
+ Work on the sublists that are obtained by splitting on best_attr and add those 
+nodes as child nodes. 
+
+P a g e  | 41 
+ 
+That's the basic outline of what happens when you build a decision tree. Depending on the 
+algorithm type, like the ones previously mentioned, there might be subtle differences in the 
+way things are done. 
+ 
+4.2 Entropy Computation 
+Entropy is

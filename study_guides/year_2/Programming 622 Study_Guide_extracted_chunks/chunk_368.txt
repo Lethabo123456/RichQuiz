@@ -1,0 +1,49 @@
+Its definition is as follows:  
+  
+template <class Type>  
+Type stackType<Type>::top() const  
+{  
+assert(stackTop != 0);   
+ 
+//if stack is empty, terminate the  
+//program  
+return list[stackTop - 1];   
+ 
+//return the element of the stack 
+//indicated by stackTop - 1  
+}  
+  
+  
+  
+  
+ 
+//end top  
+  
+ 
+5.2.6  Pop  
+  
+To remove, or pop, an element from the stack, we simply decrement stackTop by 1. Figure 5-9(a) shows 
+the stack before popping 'D' from the stack. Figure 5-9(b) shows the stack after popping 'D' from the stack.  
+  
+  
+FIGURE 5-9 Stack before and after the pop operation  
+  
+The definition of the function pop is as follows:  
+  
+template <class Type>  
+void stackType<Type>::pop()  
+{  
+if (!isEmptyStack())  
+stackTop--;    //decrement stackTop else cout << "Cannot 
+remove from an empty stack." << endl;  
+ 
+}  
+  
+  
+  
+  
+  
+//end pop  
+  
+If we try to remove an item from an empty stack, the resulting condition is called an underflow. Error 
+checking for an underflow

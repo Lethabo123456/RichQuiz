@@ -1,0 +1,11 @@
+ookie is a bit of information that the server can give to a client. On every subsequent request the 
+client will give that information back to the server, thus identifying itself. Cookies are useful for 
+retaining information through repeated visits by a browser, but they are not without their own 
+problems. The main problem is that most browsers allow users to disable cookies. So any application 
+that uses cookies for state maintenance needs to use another technique as a fallback mechanism.    
+   
+The best way to maintain state with PHP, however, is to use the built-in session-tracking system.  
+This system lets you create persistent variables that are accessible from different pages of your 
+application, as well as in different visits to the site by the same user. Behind the scenes, PHP’s 
+session-tracking mechanism uses cookies (or URLs) to elegantly solve most problems that require 
+state, taking care of all the details for you. We’ll cover PHP’s session-tracking system in detail

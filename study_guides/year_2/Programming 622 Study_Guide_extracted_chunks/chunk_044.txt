@@ -1,0 +1,19 @@
+We focus on the number of operations, not on the actual computer time to execute the 
+algorithm. This is because a particular algorithm can be implemented on a variety of computers and the 
+speed of the computer can affect the execution time. However, the number of operations performed by 
+the algorithm would be the same on each computer. Let us consider the following examples.  
+  
+EXAMPLE 1-1  
+Consider the following algorithm. (Assume that all variables are properly declared.)  
+  
+cout << "Enter two numbers";     //Line 1 cin >> num1 >> num2;      
+//Line 2 if (num1 >= num2)       //Line 3 max = num1;       //Line 4 
+else         //Line 5 max = num2;       //Line 6 cout << "The maximum 
+number is: " << max << endl;  //Line 7  
+  
+
+21  
+  
+Line 1 has one operation, <<; Line 2 has two operations; Line 3 has one operation, >=; Line 4 has one 
+operation, =; Line 6 has one operation; and Line 7 has three operations. Either Line 4 or Line 6 executes. 
+Therefore, the total number of opera

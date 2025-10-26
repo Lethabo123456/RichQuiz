@@ -1,0 +1,21 @@
+is the size of the list. The obvious question is: Can we devise a search algorithm that 
+has an order less than log2n? Before we answer this question, first we obtain the lower bound on the 
+number of comparisons for the comparison-based search algorithms.  
+  
+Theorem: Let L be a list of size n > 1. Suppose that the elements of L are sorted. If SRH(n) denotes the 
+minimum number of comparisons needed, in the worst case, by using a comparison-based algorithm to 
+recognize whether an element x is in L, then SRH(n) _ log2(n + 1).  
+  
+Corollary: The binary search algorithm is the optimal worst-case algorithm for solving search problems by 
+the comparison method.  
+  
+From these results, it follows that if we want to design a search algorithm that is of an order less than 
+log2n, it cannot be comparison based.  
+  
+  
+ 
+7.3  
+Hashing  
+  
+Previous sections of this chapter discussed two search algorithms: sequential and binary. In a binary 
+search, the data must be sorted; in a sequential

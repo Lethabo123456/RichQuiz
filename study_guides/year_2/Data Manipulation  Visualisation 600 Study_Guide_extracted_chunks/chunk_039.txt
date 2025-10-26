@@ -1,0 +1,60 @@
+2.3 Grouping and Aggregating Data 
+
+2.3.1 Grouping Data 
+
+Grouping data in Pandas involves splitting the data into groups based on criteria, applying a function to each group 
+independently, and combining the results into a new data structure. This process is typically referred to as the "split-
+apply-combine" pattern. Pandas provides a flexible and powerful groupby() function to perform grouping operations. 
+You can use the groupby() function to group data based on one or more columns: 
+ 
+2.3.2 Aggregating Data 
+
+Aggregating data involves computing summary statistics or transformations on data, typically across groups defined 
+by one or more categorical variables. This is useful for deriving insights from the dataset or preparing data for further 
+analysis.  
+The agg() method allows you to specify multiple aggregation functions to apply to each group. Pandas provides several 
+built-in aggregation functions like sum(), mean(), median(), min(), max(), count(), etc. You can directly use these 
+functions after grouping the data. 
+
+2.4 Merging and Joining Datasets 
+
+2.4.1 Joining Datasets 
+Joins are operations used to combine datasets based on common columns or indices.  
+ 
+1. Inner Join: 
+• An inner join combines rows from two datasets based on a common key and includes only the rows with 
+matching values in both datasets. 
+• Rows with non-matching keys in either dataset are excluded from the result. 
+
+2. Outer Join: 
+• An outer join combines rows from both datasets, including all rows from both datasets. 
+• Rows with matching keys are combined into a single row, while rows with non-matching keys are included 
+with NaN values in the columns from the dataset where there is no match. 
+
+
+3. Left Join: 
+• A left join combines rows from the left dataset with matching rows from the right dataset based on a common 
+key. 
+• All rows from the left dataset are included in the result, even if there are no matching rows in the right 
+dataset. 
+• Rows with non-matching keys in the right dataset will have NaN values in the columns from the right dataset.  
+
+4. Right Join: 
+• A right join combines rows from the right dataset with matching rows from the left dataset based on a 
+common key. 
+• All rows from the right dataset are included in the result, even if there are no matching rows in the left 
+dataset. 
+• Rows with non-matching keys in the left dataset will have NaN values in the columns from the left dataset. 
+
+5. Concatenation: 
+• Concatenation is used to stack datasets either along rows or columns. 
+• Concatenation is not based on common keys; instead, it is based on the index or position. 
+
+2.4.2 Merging Datasets 
+ 
+• left_df, lexicographical right_df: these represent the DataFrames to be merged. 
+• how: Specifies the join to be performed (inner, outer, left, right). 
+• on: Column or index level names to join on. It must be found in both DataFrames. 
+• left_on, right_on: Columns or index level names from the left and right DataFrames to join on. 
+• left_index, right_index: Use the index from the left/right DataFrame as the join key. 
+• sort: Sort the result DataFrame by the join keys in lexicographical order.  

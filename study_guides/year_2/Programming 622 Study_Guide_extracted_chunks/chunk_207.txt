@@ -1,0 +1,47 @@
+function destroyList, which is of O(n). Therefore, the function 
+initializeList is of O(n).  
+  
+ 
+3.2.7  Print the List  
+  
+The member function print prints the data contained in each node. To print the data contained in each 
+node, we must traverse the list starting at the first node. Because the pointer first always points to the 
+first node in the list, we need another pointer to traverse the list. (If we use first to traverse the list, the 
+entire list will be lost.)  
+  
+template <class Type>  
+void linkedListType<Type>::print() const  
+{  
+nodeType<Type> *current;    
+  
+//pointer to traverse the list  
+current = first;   
+  
+  
+  
+//set current point to the first node  
+while (current != NULL)   
+  
+  
+{ cout << current->info << " "; 
+current = current->link;  
+}  
+//while more data to print  
+}  
+ 
+  
+  
+  
+  
+  
+//end print  
+
+103  
+  
+  
+As in the case of the function destroyList, the function print is of O(n).  
+  
+ 
+3.2.8  Length of a List  
+  
+The length of a linked lis

@@ -1,0 +1,27 @@
+2.5.5.7 Cropping an Image 
+Cropping is useful for removing unwanted outer areas from an image or for focusing on a 
+particular part of the image. Cropping in OpenCV is easily achieved by slicing arrays, since images 
+are stored as NumPy arrays. 
+ 
+2.5.2 Introduction to Face Recognition 
+Face recognition technology identifies or verifies a person from a digital image or a video source. 
+It is distinct from face detection, which merely locates the presence of faces in an image. Face 
+recognition involves more complex processes that include identifying unique features of a face 
+and comparing them to a database of known faces.
+ 
+Face recognition uses machine learning algorithms to learn the distinctive features of faces during 
+a training phase. Once trained, the system can recognise the same faces in new images. OpenCV 
+supports several algorithms for face recognition, such as Eigenfaces, Fisherfaces, and Local Binary 
+Patterns Histograms (LBPH), each suitable for different types of applications. 
+
+Eigenfaces for Face Recognition 
+Eigenfaces is one of the simplest face recognition approaches. It involves reducing the 
+dimensionality of the image data using Principal Component Analysis (PCA) to the most significant 
+features, which are called eigenfaces. The eigenfaces capture the main variations in the face 
+images, which can then be used to compare and recognise individual faces. 
+Here’s a basic example of setting up face recognition using the Eigenface recogniser in OpenCV: 
+
+In this code snippet, we first train the EigenFace recogniser with a set of pre-labelled face images. 
+Once trained, we use it to predict the identity of a face in a new image. The label and confidence 
+level returned by the predict method help determine the accuracy of the recognition. 
+ 

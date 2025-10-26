@@ -1,0 +1,19 @@
+base Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Seven, page 290-302. 
+
+ 
+109 
+ 
+Relational Set Operators 
+In this section, you will learn how to use three SQL operators—UNION, INTERSECT, and 
+EXCEPT (MINUS)—to implement the union, intersection, and difference relational operators. 
+You can combine two or more sets to create new sets (or relations). That is precisely what the 
+UNION, INTERSECT, and EXCEPT (MINUS) statements do.  
+UNION, INTERSECT, and EXCEPT (MINUS) work properly only if relations are union-
+compatible, which means that the number of attributes must be the same and their corresponding 
+data types must be alike. 
+UNION 
+Suppose that SaleCo has bought another company. SaleCo’s management wants to make sure that 
+the acquired company’s customer list is properly merged with its own customer list. Because 
+some customers might have purchased goods from both companies, the two lists might contain 
+common customers.

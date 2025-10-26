@@ -1,0 +1,20 @@
+nipulate an AVL tree is no more than 44% of the optimum time. However, in general, 
+AVL trees are not as sparse as in the worst case. It can be shown that the average search time of an AVL 
+tree is about 4% more than the optimum.  
+  
+ 
+9.8  
+B-Trees  
+  
+In the previous sections of this chapter, we discussed how to build binary search trees and in particular 
+AVL trees to effectively organize data dynamically and effectively search the data. However, the 
+performance of the search depends on the height of the tree. In this section, we discuss B-trees in which 
+the leaves are on the same level and are not too far from the root.  
+  
+Definition: (m-way search tree) An m-way search tree is a tree in which each node has at most m children, 
+and if the tree is nonempty, it has the following properties:  
+  
+1. Each node has the following form:  
+ where P0, P1, P2, . . . 
+, Pn are pointers to the subtrees of the node, K1, K2, . . . , Kn are keys such that K1 < K2 < . . .< Kn, and 
+n ≤ m – 1

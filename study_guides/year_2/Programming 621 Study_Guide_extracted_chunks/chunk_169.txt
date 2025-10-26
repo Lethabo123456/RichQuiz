@@ -1,0 +1,19 @@
+s the user to input the radius and the statement 
+in Line 15 stores the radius in the memory location to which radiusPtr is pointing. Next, 
+similar to the statements in Lines 12 and 13, the statements in Lines 17 and 18 output 
+the radius and area using the variables radius and radiusPtr.  
+
+159 | P a g e  
+ 
+The statements in Lines 19 to 22 output the address of radiusPtr, the value stored in 
+radiusPtr, the address of radius, and the value stored in radius. 
+ 
+From the output of the statements in Lines 20 and 21, it follows that radiusPtr stores 
+the address of the variable radius. (Note that the address of radiusPtr, the value of 
+radiusPtr, and the address of radius as shown by the output of Lines 19, 20, and 21, 
+respectively, are machine dependent. When you run this program on your machine, 
+you are likely to get different values. Furthermore, the pointer values, that is, the 
+addresses, are printed in hexadecimal by default. 
+ 
+Initializing Pointer Variables 
+Because C++ does n

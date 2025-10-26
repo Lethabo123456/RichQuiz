@@ -1,0 +1,26 @@
+first() , lcfirst(), and ucwords() — that you can use to convert case.  
+  
+You now have a pretty good understanding of how strings work in PHP, and you have learnt about 
+some of the more important string-manipulation functions that PHP offers. However, as mentioned 
+at the start of the unit, PHP has a lot more string-related functions than those listed here. For a full 
+list, see the PHP manual at http://www.php.net/manual/en/ref.strings.php .  
+  
+  
+  
+
+53  
+  
+  
+  
+  
+Reading/Activity: Read Pages 77 to 117 of your prescribed book and further cement your  
+grasp on the subject matter presented in this chapter.  
+ 
+  
+  
+Project-Type Self-Assessment  
+  
+1 Using the printf() function, write a single line of code that takes a month (from 1 to 12), a day 
+(from 1 to 31), and a four - digit year, and displays the resulting date, formatted in mm/dd/yyyy 
+format. Do not forget to add a zero in front of the month or day if it is less than 10. 2 Write a 
+script that emulates the function

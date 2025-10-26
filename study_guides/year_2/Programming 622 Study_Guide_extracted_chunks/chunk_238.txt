@@ -1,0 +1,28 @@
+The following statements can accomplish both cases 3a and 3b. Assume newNode points to the new node.  
+  
+trailCurrent->link = newNode; newNode->link 
+= current;  
+  
+Let us next illustrate Case 3.  
+Case 3:   
+The list is not empty, and the item to be inserted is larger than the first item in the list. As 
+indicated previously, this case has two scenarios.  
+Case 3a:   
+The item to be inserted is larger than the largest item in the list; that is, it goes at the end 
+of the list. Consider the list shown in Figure 3-24.  
+  
+  
+FIGURE 3-24 list before inserting 65  
+  
+Suppose that we want to insert 65 in the list. After inserting 65, the resulting list is as shown in Figure 3- 
+25.  
+  
+
+118  
+  
+  
+FIGURE 3-25 list after inserting 65  
+  
+Case 3b:  The item to be inserted goes somewhere in the middle of the list. Again consider the list shown 
+in Figure 3-24. Suppose that we want to insert 25 in this list. Clearly, 25 goes between 17 
+and 27, which would require the link of the

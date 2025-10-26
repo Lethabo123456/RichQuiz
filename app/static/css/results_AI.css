@@ -1,0 +1,190 @@
+/* results_AI.css - Artificial Intelligence Themed */
+
+/* Import futuristic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #0d0d0d);
+    color: #00fff7;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 950px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.5), 0 0 60px rgba(255, 0, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border: 2px solid #00fff7;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
+    margin-bottom: 2rem;
+}
+
+.score {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #00fff7;
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #ff00ff;
+}
+
+.progress-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 25px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px #00fff7;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00fff7, #ff00ff);
+    width: 0%;
+    border-radius: 15px;
+    transition: width 1s ease-in-out;
+}
+
+.result {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #00fff7, 0 0 15px #ff00ff;
+}
+
+.time {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ff00ff;
+}
+
+.adaptive-feedback {
+    background: rgba(0, 0, 0, 0.25);
+    border: 2px solid #00fff7;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px #00fff7, 0 0 25px #ff00ff;
+}
+
+.adaptive-feedback h3 {
+    font-size: 1.6rem;
+    color: #ff00ff;
+    margin-bottom: 0.8rem;
+}
+
+.adaptive-feedback ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.adaptive-feedback li {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #00fff7;
+}
+
+.summary {
+    margin-top: 2rem;
+}
+
+.qa {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff;
+}
+
+.qa.correct {
+    border-left: 5px solid #00ff00;
+}
+
+.qa.incorrect {
+    border-left: 5px solid #ff4d4d;
+}
+
+.question-text {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #00fff7;
+}
+
+.reasoning {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffeb3b;
+    box-shadow: 0 0 10px #ffeb3b;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    background: linear-gradient(90deg, #00fff7, #ff00ff);
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #ff00ff;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00fff7, 0 0 50px #ff00ff;
+}
+
+.code-block pre {
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffeb3b;
+    padding: 0.5rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .score, .time {
+        font-size: 1.2rem;
+    }
+    .adaptive-feedback h3 {
+        font-size: 1.4rem;
+    }
+    .button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

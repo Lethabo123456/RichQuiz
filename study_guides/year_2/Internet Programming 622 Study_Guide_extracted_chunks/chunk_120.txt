@@ -1,0 +1,22 @@
+ntents() — For reading and writing the contents of a file 
+without needing to open it   
+• 
+fpassthru() — For displaying the contents of an open file   
+• 
+readfile() — For displaying the contents of a file without needing to open it   
+   
+Because these functions read the entire file into memory in one go, they should really be used for 
+relatively small files (a few MB at most). If you are working with a 100MB text file, it is probably best 
+to use fread() or fgets() to read and process the file in chunks.   
+
+52   
+   
+   
+file() reads the contents of a file into an array, with each element containing a line from the file. It 
+takes just one argument — a string containing the name of the file to read — and returns the array 
+containing the lines of the file:   
+   
+$lines = file( “/home/chris/myfile.txt” );   
+   
+The newline character remains attached at the end of each line stored in the array. This function, like 
+most of the others described in this section, does not require you

@@ -1,0 +1,20 @@
+2.6 Storage 
+Related to the availability and fault tolerance of servers is the availability and fault tolerance 
+of data storage. In the following sections, you will learn about different methods for making 
+sure shared data and applications are never lost or irretrievable. 
+ 
+RAID (Redundant Array of Independent [or Inexpensive] Disks)  
+RAID (Redundant Array of Independent [or Inexpensive] Disks) refers to a collection of disks 
+that provide fault tolerance for shared data and applications. A group of hard disks is called a 
+disk array (or a drive). The collection of disks that work together in a RAID configuration is 
+often referred to as the RAID drive or RAID array. To the system, the multiple disks in a RAID 
+drive appear as a single logical drive. One advantage of using RAID is that a single disk failure 
+will not cause a catastrophic loss of data. Other advantages are increased storage capacity and 
+potentially better disk performance. Although RAID comes in many different forms (or levels), 
+all types use shared, multiple physical or logical hard disks to ensure data integrity and 
+availability. 
+ 
+RAID can be implemented as a hardware or software solution. Hardware RAID includes a set 
+of disks and a separate disk controller. The hardware RAID array is managed exclusively by the 
+RAID disk controller, which is attached to a server through the server’s controller interface. To 
+the server’s NOS, a hardware RAID array appears as just another storage device.

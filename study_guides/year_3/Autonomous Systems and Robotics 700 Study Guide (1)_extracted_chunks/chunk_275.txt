@@ -1,0 +1,36 @@
+System complexity in Multi-Agent Systems grows rapidly with the number of agents and the 
+sophistication of their interactions, making system behaviour increasingly difficult to predict, 
+debug, and optimize. Emergent behaviours that arise from agent interactions can be beneficial, 
+creating intelligent collective behaviours that exceed the capabilities of individual agents, but they 
+can also be problematic when they lead to unexpected or undesirable system states. 
+
+Managing this complexity requires sophisticated modeling tools, simulation environments, and 
+testing methodologies that can explore the vast space of possible system behaviours and identify 
+potential problems before deployment. Additionally, system designers must develop monitoring 
+and diagnostic capabilities that can track system performance, identify anomalies, and provide 
+insights into the sources of unexpected behaviours. 
+
+Synchronization challenges in Multi-Agent Systems arise from the distributed nature of decision-
+making and action execution, where agents must coordinate their timing to achieve collective 
+objectives while maintaining their individual autonomy. This temporal coordination is 
+complicated by variable communication delays, different processing speeds among agents, and 
+the need to handle agents that may temporarily become unavailable due to communication 
+failures or other problems. 
+
+The synchronization challenge extends beyond simple timing coordination to include more 
+complex temporal relationships such as precedence constraints where certain actions must be 
+completed before others can begin, scheduling optimization where agents must coordinate their 
+activities to maximize overall system efficiency, and adaptive timing where agents must adjust 
+their temporal behaviour based on changing conditions or performance feedback. 
+Despite these challenges, the strategic advantages of Multi-Agent Systems in robotics continue 
+to drive their adoption across an increasingly diverse range of applications. Success in 
+implementing MAS requires careful attention to these challenges during system design, robust 
+testing and validation procedures, and ongoing monitoring and optimization to ensure that the 
+system continues to perform effectively as conditions and requirements evolve.
+
+Practical Requirements: 
+# Required Python Libraries: 
+- rospy (ROS Python client) 
+- geometry_msgs, std_msgs 
+- threading, multiprocessing 
+- socket, zmq (ZeroMQ)

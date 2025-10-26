@@ -1,0 +1,21 @@
+nt statements to write out the markup for the form, or you can separate 
+the PHP code from the form markup using the < ?php and ? > tags. You can also use a mixture of the 
+two techniques within the same script.   
+   
+We may try it out by creating an Interactive Form with PHP. The following all-in-one PHP script does 
+the following things:   
+
+30   
+   
+• 
+It displays a registration form for the user to fill out. Certain fields are required to be filled in; 
+these are labeled with asterisks in the form. The remaining fields are optional   
+• 
+When the form is sent, the script checks that the required fields have been filled in If all 
+required fields are filled, the script displays a thank-you message   
+• 
+If one or more required fields are missing, the script redisplays the form with an error 
+message, and highlights the fields that still need to be filled in. The script remembers which 
+fields the user already filled in, and prefills those fields in the new form   
+   
+To try out t

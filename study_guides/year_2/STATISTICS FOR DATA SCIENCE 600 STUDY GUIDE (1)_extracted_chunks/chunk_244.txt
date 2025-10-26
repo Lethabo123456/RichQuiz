@@ -1,0 +1,28 @@
+zip(feature_cols, linreg.coef_)  
+  
+  
+This gives us:  
+[('temp', 
+7.8648249924774403), 
+('season', 
+22.538757532466754), 
+('weather', 
+6.6703020359238048), ('humidity', -3.1188733823964974)]  
+  
+Which implies:  
+  
+• Holding all other predictors constant, a 1 unit increase in temperature is associated 
+with a rental increase of 7.86 bikes. 
+• Holding all other predictors constant, a 1 unit increase in season is associated with a 
+rental increase of 22.5 bikes. 
+• Holding all other predictors constant, a 1 unit increase in weather is associated with 
+a rental increase of 6.67 bikes.  
+•  Holding all other predictors constant, a 1 unit increase in humidity is associated with 
+a rental decrease of 3.12 bikes  
+  
+  
+This is interesting. Note that as weather goes up (meaning that the weather is getting 
+closer to overcast), the bike demand goes up, as is the case when the season variables 
+increase (meaning that we are approaching winter). This is not what we were expecting.  
+
+P a g e

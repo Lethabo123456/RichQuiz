@@ -1,0 +1,38 @@
+Here's the table for logical implication:
+
+p   q   p -> q
+---------------
+T   T   T
+---------------
+T   F   F
+---------------
+F   T   T
+---------------
+F   F   T
+---------------
+ 
+ 
+To understand why this table is the way it is, consider the following example: 
+"If you get an A, then I'll give you a dollar." 
+ 
+The statement will be true if I keep my promise and false if I don't. 
+Suppose it's true that you get an A and it's true that I give you a dollar. Since I 
+kept my promise, the implication is {\it true}. This corresponds to the first line in 
+the table. 
+ 
+Suppose it's true that you get an A but it's false that I give you a dollar. Since I 
+didn't keep my promise, the implication is false. This corresponds to the second 
+line in the table. 
+ 
+What if it's false that you get an A? Whether or not I give you a dollar, I haven't 
+broken my promise. Thus, the implication can't be false, so (since this is a two- 
+valued logic) it must be true. This explains the last two lines of the table. 
+ 
+means that P and Q are equivalent. So the double implication is true if P 
+and Q are both true or if P and Q are both false; otherwise, the double implication 
+is false. 
+
+You should remember --- or be able to construct --- the truth tables for the logical 
+connectives. You'll use these tables to construct tables for more complicated 
+sentences. It's easier to demonstrate what to do than to describe it in words, so 
+you'll see the procedure worked out in the examples.

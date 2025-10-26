@@ -1,0 +1,18 @@
+rmined the same 
+way as the height of a binary tree. Similarly, the operations to find the number of nodes, to find the 
+number of leaves, and to do inorder, preorder, and postorder traversals of a binary search tree are the 
+same as those for a binary tree. Therefore, we can inherit all of these operations from the binary tree. 
+That is, we can extend the definition of the binary tree by using the principle of inheritance and, hence, 
+define the binary search tree.  
+  
+The following class defines a binary search tree as an ADT by extending the definition of the binary tree:  
+//**************************************************************  
+// This class specifies the basic operations to implement a binary search tree. 
+//************************************************************** 
+template <class elemType>  
+class bSearchTreeType: public binaryTreeType<elemType>  
+{  
+public:  
+  
+bool search(const elemType& searchItem) const; 
+//Function to determine if searchItem is in the bin

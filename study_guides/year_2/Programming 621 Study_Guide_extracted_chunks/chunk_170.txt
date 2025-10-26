@@ -1,0 +1,19 @@
+resses, are printed in hexadecimal by default. 
+ 
+Initializing Pointer Variables 
+Because C++ does not automatically initialize variables, pointer variables must be 
+initialized if you do not want them to point to anything. Pointer variables are initialized 
+using the constant value 0, called the null pointer. Thus, the statement p = 0; stores 
+the null pointer in p, that is, p points to nothing. Some programmers use the named 
+constant NULL to initialize pointer variables. The named constant NULL is defined in 
+the header file cstddef. The following two statements are equivalent:  
+ 
+p = NULL;  
+p = 0;  
+The number 0 is the only number that can be directly assigned to a pointer variable. 
+ 
+Initializing Pointer Variables 
+ 
+C++11 Standard provides the null pointer nullptr to initialize pointer variables. A pointer 
+with the value nullptr points to nothing, and is called the null pointer. nullptr has a 
+special value type that can be converted to any pointer type. The following stateme

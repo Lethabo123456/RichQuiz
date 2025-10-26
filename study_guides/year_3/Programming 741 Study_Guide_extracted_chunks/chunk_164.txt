@@ -1,0 +1,76 @@
+5.1 Arrays 
+An array is an indexed collection of objects, all of the same type. C# arrays are some what 
+different from arrays in C++ and other languages, because they are objects. This provides 
+them with useful methods and properties. 
+C# provides native syntax for the declaration of Array objects. What is actually created, 
+however, is an object of type System. Array. Arrays in C# thus provide you with the best of 
+both worlds: easy-to-use C-style syntax underpinned with an actual class definition so that 
+instances of an array have access to the methods and properties of System.Array. These 
+appear in Table 5-1. 
+ 
+Table 5-1. System.Array methods and properties 
+ 
+Method                 Description                            Examples 
+GetValue()             Gets the value of the specified        Int []waterDepth={2.4,3,5,6,8}  
+                       element in the current array.          WriteLine(waterDepth.GetValue (2)); 
+                                                              //Output:  5 
+
+IndexOf()              Returns the index of the first         double[]waterDepth={2.4,3.5,6.8}; 
+                       occurrence of a value in a one-        int i=Array.IndexOf(waterDepth,3.5);
+                       dimensional array or in a portion      WriteLine(i); 
+                       of the array.                          //Returns −1 when the value is not found in the 
+                                                              array 
+                                                              //OUTPUT: 1 
+
+LastIndexOf()          Returns the index of the last          double[]waterDepth={2.4,3.5,2.4}; 
+                       occurrence of a value in a one-        int i= Array.LastIndexOf(waterDepth,2.4); 
+                       dimensional array or in a portion of   WriteLine(i) 
+                       the array.
+Reverse()              Reverses the order of the              double[]waterDepth={2.4,3.5,6.8}; 
+                       elements in a one dimensional          Array.Reverse(waterDepth); 
+                       array or in a portion of the           foreach(double wVal in waterDepth) 
+                       array.                                 Write(wVal + "\t");
+                                                              //OUTPUT: 6.8 3.5 2.4 
+SetValue()             Overloaded. Sets the specified         double[]waterDepth={2.4,3.5,6.8}; 
+                       element in the current array to        waterDepth.SetValue(55,0); 
+                       the specified value.                   foreach(double wVal in  waterDepth)
+                                                              Write(wVal + "\t"); 
+                                                              //OUTPUT: 55 3.5 6.8 
+Sort()                 Overloaded. Sorts the elements in      double [ ] waterDepth = {12.4, 3.5, 6.8}; 
+                       one-dimensional array objects.         Array.Sort(waterDepth); 
+                                                              foreach (double wVal in waterDepth) 
+                                                              Write (wVal + "\t"); 
+                                                              //OUTPUT 3.5 6.8 12.4 
+Copy ()                Copies a section of one array to       double [ ] waterDepth = {2.4, 3.5, 6.8}; 
+                       another array.                         double [ ] w = new double [3]; 
+                                                              Array.Copy(waterDepth, 0, w, 0, 3); 
+                                                              //Copies 3 elements from waterDepth to w 
+                                                              //Begins copy at index 0 in waterDepth; 
+                                                              //Begins placement at index 0 in w.       
+Clear ()               Class method. Sets elements in         double [ ] waterDepth = {2.4, 3.5, 6.8}; 
+                       the array to zero, to false, or        Array.Clear(waterDepth, 0, 2); 
+                       to a null reference depending on       WriteLine(waterDepth[1]);
+                       the element type. Start at first       //Beginning at index 0, for length of 2. 
+                       Index, go length positions.            //Sets waterDepth[0] and 
+                                                              //waterDepth[1] to zero. 
+                                                              //Displays: 0 
+BinarySearch ()        Class method. Overloaded.              double [ ] waterDepth = {2.4, 3.5, 6.8}; 
+                       Searches a one-dimensional             double x = 6.8; 
+                       sorted array for a value, using a      int myIndex = Array.BinarySearch                     
+                       binary search algorithm. Returns       (waterDepth, x);                 
+                       index location or negative value       WriteLine(myIndex);                 
+                       if not found.                          WriteLine(myIndex);                       
+                                                              //Displays index where 6.8 stored                            
+                                                              OUTPUT: 2
+Length()               Public property that returns the       double [ ] waterDepth = {2.4, 3.5, 6.8}; 
+                       length of the array                    waterdepth.Length  
+                                                              OUTPUT: 3 
+Clone( )               Creates a copy of the array.           double [ ] waterDepth = {2.4, 3.5, 6.8}; 
+                       returns an object.                     double [ ] w = new double [3]; 
+                                                              object o = waterDepth.Clone( ); 
+GetUpperBound()        Public method that returns the         int[] age = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 }; 
+                       upper boundary of the specified        int upper = age.GetUpperBound(0);
+                       dimension of the array.                OUTPUT: 9 
+GetLowerBound()        Public method that returns the         int[] integers = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 }; 
+                       lower boundary of the specified        int lower = integers.GetLowerBound(0);
+                       dimension of the array                 OUTPUT: 0 

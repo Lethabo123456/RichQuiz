@@ -1,0 +1,29 @@
+ii. RING Topology 
+It is called ring topology because it forms a ring as each computer is connected to another 
+computer, with the last one connected to the first. There are exactly two neighbors for each 
+device. 
+
+Figure 6: Ring Topology 
+ 
+Structures of Ring Topology 
+
+A number of repeaters are used for Ring topology with large number of nodes, because if 
+someone wants to send some data to the last node in the ring topology with 100 nodes, 
+then the data will have to pass through 99 nodes to reach the 100th node. Hence to prevent 
+data loss repeaters are used in the network. 
+The transmission is unidirectional, but it can be made bidirectional by having 2 connections 
+between each Network Node, it is called Dual Ring Topology. 
+In Dual Ring Topology, two ring networks are formed, and data flow is in opposite direction 
+in them. Also, if one ring fails, the second ring can act as a backup, to keep the network up. 
+ Data is transferred in a sequential manner that is bit by bit. Data transmitted, has to pass 
+through each node of the network, till the destination node. 
+
+Advantages of Ring Topology 
+Transmitting network is not affected by high traffic or by adding more nodes, as only the 
+nodes having tokens can transmit data. 
+Cheap to install and expand 
+
+Disadvantages of Ring Topology 
+Troubleshooting is difficult in ring topology. 
+Adding or deleting the computers disturbs the network activity. 
+Failure of one computer disturbs the whole network. 

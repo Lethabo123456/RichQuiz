@@ -1,0 +1,20 @@
+different types using settype() :  
+  
+$test_var = 8.23;  
+echo $test_var . “ < br / > ”; // Displays “8.23” 
+settype( $test_var, “string” );  
+echo $test_var . “ < br / > ”; // Displays 
+“8.23” settype( $test_var, “integer” ); echo 
+$test_var . “ < br / > ”; // Displays “8” 
+settype( $test_var, “float” );  
+echo $test_var . “ < br / > ”; // Displays “8” 
+settype( $test_var, “boolean” );  
+echo $test_var . “ < br / > ”; // Displays “1”  
+  
+To start with, the $test_var variable contains 8.23, a floating - point value. Next, $test_var is 
+converted to a string, which means that the number 8.23 is now stored using the characters 8 , .  
+(period), 2 , and 3.  
+After converting $test_var to an integer type, it contains the value 8; in other words, the fractional 
+part of the number has been lost permanently. You can see this in the next two lines, which convert 
+test_var back to a float and display its contents. Even though $test_var is a floating-point variable 
+again, it now contains th

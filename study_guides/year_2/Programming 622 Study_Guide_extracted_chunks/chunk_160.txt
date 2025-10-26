@@ -1,0 +1,17 @@
+ors  
+  
+Another useful set of iterators is stream iterators—istream iterators and ostream iterators. This section 
+describes both types of iterators.  
+  
+istream_iterator The istream iterator is used to input data into a program from an input stream. The class 
+istream_iterator contains the definition of an input stream iterator. The general syntax to use an istream 
+iterator is as follows: istream_iterator<Type> isIdentifier(istream&);  
+  
+where Type is either a built-in type or a user-defined class type, for which an input iterator is defined. The 
+identifier isIdentifier is initialized using the constructor whose argument is either an istream class object 
+such as cin, or any publicly defined istream subtype, such as ifstream.  
+  
+ostream_iterator The ostream iterators are used to output data from a program into an output stream. 
+These iterators were defined earlier in this chapter. We review them here for the sake of completeness.  
+  
+The class ostream_iterator contains the d

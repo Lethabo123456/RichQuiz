@@ -1,0 +1,28 @@
+te temp;    
+  
+  
+//deallocate memory occupied by temp  
+}  
+ 
+queueRear = NULL;     
+  
+  
+//set rear to NULL  
+} //end initializeQueue  
+  
+ 
+6.3.3  addQueue, front, back, and deleteQueue Operations  
+  
+The addQueue operation adds a new element at the end of the queue. To implement this operation, we 
+access the pointer queueRear.  
+  
+If the queue is nonempty, the operation front returns the first element of the queue and so the element 
+of the queue indicated by the pointer queueFront is returned. If the queue is empty, the function front 
+terminates the program.  
+  
+If the queue is nonempty, the operation back returns the last element of the queue and so the element 
+of the queue indicated by the pointer queueRear is returned. If the queue is empty, the function back 
+terminates the program. Similarly, if the queue is nonempty, the operation deleteQueue removes the first 
+element of the queue, and so we access the pointer queueFront.  
+  
+The definitions of the functions to imp

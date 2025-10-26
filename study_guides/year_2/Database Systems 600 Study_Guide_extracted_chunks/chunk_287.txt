@@ -1,0 +1,19 @@
+to add table constraints. In those cases, the syntax 
+would be:  
+ALTER TABLE table-name ADD constraint [ADD constraint];  
+You could also use the ALTER TABLE command to remove a column or table constraint. The 
+syntax would be as follows:  
+ALTER TABLE table-name DROP {PRIMARY KEY | COLUMN column-name | CONSTRAINT 
+constraint-name}; 
+Changing a Column’s Data Type and Characteristics 
+Using the ALTER syntax, the integer V_CODE in the PRODUCT table can be changed to a 
+character V_CODE by using the following command:  
+ALTER TABLE PRODUCT  
+MODIFY (V_CODE CHAR(5));  
+Some RDBMSs do not let you change data types unless the column to be changed is empty. 
+If the column to be changed already contains data, you can make changes in the column’s 
+characteristics if those changes do not alter the data type. For example, if you want to increase the 
+width of the P_PRICE column to nine digits, use the following command: 
+ALTER TABLE PRODUCT  
+MODIFY (P_PRICE DECIMAL(9,2)); 
+       Adding a Colu

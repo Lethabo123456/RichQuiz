@@ -1,0 +1,28 @@
+false — in which case it returns the 
+four-element array — or if it could not retrieve an element at all, in which case it returns false .  
+  
+The four - element array that each() returns is itself a shining example of PHP’s flexibility with arrays, 
+because it contains elements with both numeric and string indices, as follows:  
+  
+Element Index  
+Element Value  
+0  
+The current element’s key  
+“key”  
+The current element’s key  
+1  
+The current element’s value  
+“value”  
+The current element’s value  
+  
+In other words, you can use an index of either 0 or “ key ” to access the current element ’ s key, or 
+an index of 1 or “ value ” to access its value. For example:  
+  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”,  
+“pubYear” = > 1939 );  
+$element = each( $myBook ); echo “Key: “ . 
+$element[0] . “ < br/ > ”; echo “Value: “ . 
+$element[1] . “ < br/ > ”; echo “Key: “ . 
+$element[“key”] . “ < br/ > ”; echo “Value: “ . 
+$element[“value”] . “ < b

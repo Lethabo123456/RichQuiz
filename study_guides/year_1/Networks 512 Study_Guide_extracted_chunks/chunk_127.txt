@@ -1,0 +1,27 @@
+Many client/server networks suffer from too many clients trying to access the same server which 
+creates a bottleneck where the server attaches to the LAN. Fast Ethernet, in combination with 
+switched Ethernet, creates the perfect cost-effective solution for avoiding slow client server 
+networks by allowing the server to be placed on a fast port. 
+Distributed processing also benefits from Fast Ethernet and switching. Segmentation of the 
+network via switches brings big performance boosts to distributed traffic networks, and the 
+switches are commonly connected via a Fast Ethernet backbone.
+ 
+Good Candidates for Performance Boosts from Switching 
+ Important to know network demand per node 
+ Try to group users with the nodes they communicate with most often on the same 
+segment 
+ Look for departmental traffic patterns 
+ Avoid switch bottlenecks with fast uplinks 
+ Move users switch between segments in an iterative process until all nodes seeing less 
+than 35% utilization
+ 
+Table 1- 7: Performance Switch Boost 
+ 
+Figure 1- 17: Client/Server Traffic 
+
+Figure 1- 18: Distributed traffic 
+
+Advanced Switching Technology Issues 
+There are some technology issues with switching that do not affect 95% of all networks. Major 
+switch vendors and the trade publications are promoting new competitive technologies, so some 
+of these concepts are discussed here. 

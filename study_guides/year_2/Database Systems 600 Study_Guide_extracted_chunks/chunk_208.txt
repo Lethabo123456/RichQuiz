@@ -1,0 +1,16 @@
+write each key component 
+on a separate line and then write the original (composite) key on the last line.  
+Step 2: Reassign Corresponding Dependent Attributes Use Figure 6.3 to determine attributes 
+that are dependent in the partial dependencies. The dependencies for the original key components 
+are found by examining the arrows below the dependency diagram shown in Figure 6.3. The 
+attributes that are dependent in a partial dependency are removed from the original table and placed 
+in the new table with the dependency’s determinant. In other words, the three tables that result from 
+the conversion to 2NF are given appropriate names.  
+The results of Steps 1 and 2 are displayed in Figure 6.4. At this point, most of the anomalies 
+discussed earlier have been eliminated.  
+Figure 6.4 still shows a transitive dependency, which can generate anomalies.  
+
+ 
+83 
+Conversion to Third Normal Form (3NF) 
+The data anomalies created by the database organization shown in Figure 6.4 are easily el

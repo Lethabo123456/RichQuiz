@@ -1,0 +1,62 @@
+{  
+AVLNode<elemT> *p;  
+AVLNode<elemT> *w;  
+  
+ 
+p = root->rlink;   
+  
+  
+  
+  
+//p points to the left subtree of root  
+  
+switch (p->bfactor)  
+{ case -1: w = p->llink;  
+ 
+switch (w->bfactor)    
+  
+//adjust the balance factors  
+{ case -1: root->bfactor = 0; p-
+>bfactor = 1; break; case 
+0: root->bfactor = 0; p-
+>bfactor = 0; break; case 
+1: root->bfactor = -1;  
+p->bfactor = 0;  
+ 
+}  
+  
+  
+  
+  
+//end switch  
+  
+w->bfactor = 0; rotateToRight(p); root->rlink = p; 
+rotateToLeft(root); break; case 0: cerr << "Error: Cannot 
+balance from the left." << endl; break; case 1: root->bfactor 
+= 0; p->bfactor = 0;  
+rotateToLeft(root);  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end switch;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end balanceFromRight  
+  
+We now focus our attention on the function insertIntoAVL. The function insertIntoAVL inserts the new 
+item in the AVL tree. The item to be inserted and the pointer of the root node of the AVL tree are passed 
+as parameters to this function.  
+  
+The follow

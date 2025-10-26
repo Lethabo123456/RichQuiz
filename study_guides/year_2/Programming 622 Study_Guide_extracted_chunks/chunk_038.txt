@@ -1,0 +1,12 @@
+egories—one consisting of negative numbers and the other consisting of nonnegative numbers.  
+  
+There are two types of testing—black-box testing and white-box testing. In black-box testing, you do not 
+know the internal working of the algorithm or function. You know only what the function does. Blackbox 
+testing is based on inputs and outputs. The test cases for black-box testing are usually selected by creating 
+equivalence categories. If a function works for one input in the equivalence category, it is expected to 
+work for other inputs in the same category.  
+  
+Suppose that the function isWithInRange returns a value true if an integer is greater than or equal to 0 
+and less than or equal to 100. In black-box testing, the function is tested on values that surround and fall 
+on the boundaries, called boundary values, as well as general values from the equivalence categories. For 
+the function isWithInRange, in black-box testing, the boundary values might be: -1, 0, 1, 99, 100, and 1

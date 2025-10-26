@@ -1,0 +1,24 @@
+urn 
+3;  
+else return (func(x - 1) + func(x - 2));  
+}   
+What is the output of the following statements? a. 
+cout << func(0) << endl;  
+b. cout << func(1) << endl;  
+c. cout << func(2) << endl;  
+d. cout << func(5) << endl;  
+  
+12. 
+Suppose that intArray is an array of integers, and length specifies the number of elements in 
+intArray. Also, suppose that low and high are two integers such that 0 <= low < length, 0 <= high < length, 
+and low < high. That is, low and high are two indices in intArray. Write a recursive definition that reverses 
+the elements in intArray between low and high.   
+  
+13. 
+Write a recursive algorithm to multiply two positive integers m and n using repeated addition. 
+Specify the base case and the recursive case.  
+  
+14. 
+Consider the following problem: How many ways can a committee of four people be selected from 
+a group of 10 people? There are many other similar problems, where you are asked to find the number of 
+ways to select a set of items from a give

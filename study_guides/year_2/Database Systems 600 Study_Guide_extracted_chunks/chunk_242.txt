@@ -1,0 +1,16 @@
+; 
+This query specifies that the data should come from the PRODUCT table, and that only the product 
+code, description, price, and quantity on hand columns should be included. Notice that only the 
+requested columns are returned and that the columns are in the same order in the output as they 
+were listed in the query.  
+Using Computed Columns 
+A computed column (also called a calculated column) represents a derived attribute. For example, 
+suppose that you want to determine the total value of each of the products currently held in 
+inventory. You can accomplish this task with the following command:  
+SELECT  P_DESCRIPT, P_QOH, P_PRICE, P_QOH * P_PRICE  
+FROM  
+PRODUCT;  
+SQL accepts any valid expressions (or formulas) in the computed columns. Such formulas can 
+contain any valid mathematical operators and functions that are applied to attributes in any of the 
+tables specified in the FROM clause of the SELECT statement. Different DBMS products vary in 
+the column headings that are dis

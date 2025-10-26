@@ -1,0 +1,15 @@
+ight outer join returns not only the rows matching the join condition (that is, rows with 
+matching values in the common column), but it also returns the rows in the right table with 
+unmatched values in the left table.  
+The full outer join returns not only the rows matching the join condition (that is, rows with matching 
+values in the common column), but it also returns all the rows with unmatched values in the table 
+on either side. The syntax is like that of the left and full join; you simply need to replace the LEFT 
+with RIGHT or FULL. 
+In addition to the JOIN operations discussed above, other joins, such as cross joins and recursive 
+joins, may be performed. 
+A cross join performs a relational product (also known as the Cartesian product) of two tables.  
+A recursive join is a join performed when a table must be joined to itself, as is the case when 
+working with unary relationships.  
+ 
+ORDER BY Clause Options 
+The ORDER BY clause is especially useful when the listing order is

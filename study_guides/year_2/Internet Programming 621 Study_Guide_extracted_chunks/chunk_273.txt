@@ -1,0 +1,101 @@
+= 5; 
+function fun() 
+{ 
+
+$x = 10; 
+echo "$x"; 
+} 
+fun(); 
+echo "$x"; 
+?> 
+a) 0 
+b) 105 
+c) 510 
+d) Error 
+  
+Answer: b 
+  
+176. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 4; 
+$y = 3; 
+function fun($x = 3, $y = 4) 
+{ 
+$z = $x+$y/$y+$x; 
+echo "$z"; 
+}  
+echo $x; 
+echo $y; 
+echo $z;  
+fun($x, $y); 
+?> 
+a) 43 
+b) 943 
+c) 349 
+d) 439 
+  
+Answer: d 
+  
+177. 
+What will be the output of the following PHP code ? 
+<?php 
+$x = 4; 
+$y = 3; 
+
+function fun($x, $y) 
+{ 
+$z = $x + $y / $y + $x; 
+echo "$z"; 
+} 
+echo $x; 
+echo $y; 
+echo $z;  
+fun(3, 4); 
+?> 
+a) 437 
+b) 439 
+c) 349 
+d) 347 
+  
+Answer: a 
+  
+178. 
+What will be the output of the following PHP code ? 
+<?php 
+function fun($x,$y) 
+{ 
+$x = 4; 
+$y = 3; 
+$z = $x + $y / $y + $x; 
+echo "$z"; 
+} 
+fun(3, 4);  
+?> 
+  
+a) 7 
+b) 9 
+c) 0 
+d) Error 
+  
+Answer: b 
+  
+179. 
+What will be the output of the following PHP code ? 
+1. 
+<?php 
+
+2. 
+$x = 3, 4, 5, 6; 
+3. 
+echo "$x"; 
+4. 
+?> 
+a) 3 
+b) 4 
+c) 6 
+d) Error 
+  
+Answer: d 
+  
+180.

@@ -1,0 +1,31 @@
+6.6 Working with Playing Web Audio 
+Code snippet overview  
+ 
+<img src="KOEL.jpg "width="450" height="300">
+<h1>ASIAN KOEL</h1>
+<p><b>......</b>.....</p>
+<p><i><b>Press to play to hear the sound of The Asian Koel biid.</i></i></b>
+<audio controls autoplay>
+   <source src="Koel-sound.ogg" type="audio/ogg">
+   <source src="Koel-sound.mp3" type="audio/mp3">
+
+</audio> 
+ 
+ 
+Code output::
+ 
+ 
+6.7 Introducing Multimedia on the Web 
+The original purpose of the web and HTML was to deliver textual information via 
+interconnected hypertext documents. HTML was a perfect tool for academic researchers 
+needing to share text and data. Once graphical capabilities were added to the HTML language, 
+developers were free to create documents with images and arresting page layouts that opened 
+up the web’s potential for commerce and business. The next major phase in the language was 
+the introduction of multimedia support in the form of streaming audio, video, and interactive 
+games, making the web a dominant entertainment platform. 
+It is estimated that by 2023, online video will account for 80% of global Internet traffic, rising 
+to 85% within the United States alone (Cisco Visual Networking Index: Forecast and 
+Methodology, 2014–2019, May 2015). Thus, web developers need to consider how to best 
+utilize multimedia in making their websites attractive to the public. One of the biggest 
+challenges in delivering multimedia content is putting that content in a form that can be 
+retrieved quickly and easily without loss of quality. 

@@ -1,0 +1,40 @@
+Now, let's dive deeper into analyzing LinearLogistic using the Breast Cancer dataset. 
+The default value of C=1 provides quite good performance, with 95% accuracy on both the training and 
+the test set. But as training and test set performance are very close, it is likely that we are underfitting. 
+Let’s try to increase C to fit a more flexible model: 
+ 
+Using C=100 results in higher training set accuracy, and also a slightly increased test set accuracy, 
+confirming our intuition that a more complex model should perform better. We can also investigate what 
+happens if we use an even more regularized model than the default of C=1, by setting C=0.01: 
+As anticipated, when moving further left on the scale in the figure, starting from an underfit model, both 
+the training and test set accuracies decrease compared to the default 
+parameters. Finally, let's examine the coefficients learned by the models using the three different settings of the 
+regularization parameter C: 
+ 
+Since LogisticRegression uses L2 regularization by default, the resulting plot is similar to the one produced 
+by Ridge regression. As the regularization strength increases, the coefficients are gradually reduced, 
+though they never reach zero. Upon closer examination of the plot, an intriguing pattern appears with 
+the third coefficient, related to "mean perimeter." When C=100 and C=1, the coefficient is negative, but 
+at C=0.001, it becomes positive, with a magnitude even larger than at C=1. Interpreting a model like this 
+might lead one to assume that a feature's coefficient directly corresponds to the class it’s associated with. 
+For example, one might think that a high "texture error" feature is linked to a "malignant" sample. 
+However, the sign change in the "mean perimeter" coefficient indicates that, depending on the model 
+used, a high "mean perimeter" could suggest either "benign" or "malignant." This example underscores 
+the importance of being careful when interpreting the coefficients of linear models. 
+If we desire a more interpretable model, using L1 regularization might help, as it limits the model to using 
+only a few features. Here is the coefficient plot and classification accuracies for L1 regularization 
+ 
+Many linear classification models are designed for binary classification and don't naturally extend to 
+multiclass problems, with logistic regression being a notable exception. To adapt a binary classifier for 
+multiclass classification, the one-vs.-rest strategy is commonly used. In this approach, a separate binary 
+model is trained for each class to distinguish that class from all others, leading to as many binary models 
+as there are classes. To make a prediction, all binary classifiers are applied to a test point, and the 
+classifier with the highest score for its class "wins," assigning that class label to the test point. 
+With one classifier per class, there is a separate coefficient vector (w) and intercept (b) for each class. 
+The class with the highest classification score, determined by the formula: 
+w[0] * x[0] + w[1] * x[1] + ... + w[p] * x[p] + b 
+is chosen as the predicted label. While the mathematical details of multiclass logistic regression differ 
+slightly from the one-vs.-rest approach, both methods result in a separate coefficient vector and intercept 
+for each class, with the same prediction method applied. Let’s now apply the one-vs.-rest approach to a 
+simple three-class classification dataset, where each class consists of data sampled from a Gaussian 
+distribution. 

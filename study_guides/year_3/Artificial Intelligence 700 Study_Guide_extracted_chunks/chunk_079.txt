@@ -1,0 +1,48 @@
+Exclusive disjunction 
+Exclusive disjunction is an operation on two logical values, typically the values of 
+two propositions, that produces a value oftrue if one but not both of its operands 
+is true. 
+ 
+The truth table for p XOR q (also written as p ⊕ q, Jpq, or p ≠ q) is as follows: 
+ 
+p   q   p ⊕ q
+---------------
+T   T   F
+---------------
+T   F   T
+---------------
+F   T   T
+---------------
+F   F   F
+--------------- 
+ 
+For two propositions, XOR can also be written as (p = 1 ∧ q = 0) ∨ (p = 0 ∧ q = 1). 
+ 
+Logical NAND 
+The logical NAND is an operation on two logical values, typically the values of 
+two propositions, that produces a value offalse if both of its operands are true. 
+In other words, it produces a value of true if at least one of its operands is false. 
+ 
+
+The truth table for p NAND q (also written as p ↑ q, Dpq, or p | q) is as follows: 
+Logical NAND 
+
+p    q    p ↑ q 
+-----------------
+T    T    F 
+-----------------
+T    F    T 
+-----------------
+F    T    T 
+-----------------
+F    F    T 
+-----------------
+ 
+It is frequently useful to express a logical operation as a compound operation, 
+that is, as an operation that is built up or composed from other operations. Many 
+such compositions are possible, depending on the operations that are taken as 
+basic or "primitive" and the operations that are taken as composite or 
+"derivative". 
+ 
+In the case of logical NAND, it is clearly expressible as a compound of NOT and 
+AND.

@@ -1,0 +1,16 @@
+et us first briefly describe the sequence container vector. 
+We do so because vector containers are logically the same as arrays and, therefore, they can be processed 
+like arrays. Also, with the help of vector containers, we can describe several properties that are common 
+to all containers. In fact, all containers use the same names for the common operations. Of course, there 
+are operations that are specific to a container. These operations are discussed when describing a specific 
+container. This chapter discusses vector and deque containers. Chapter 3 discusses list containers.  
+  
+ 
+2.1.3  Sequence Container: vector  
+  
+A vector container stores and manages its objects in a dynamic array. Because an array is a random access 
+data structure, the elements of a vector can be accessed randomly. Item insertion in the middle or 
+beginning of an array is time consuming, especially if the array is large. However, inserting an item at the 
+end is fast.  
+  
+The name of the class that im

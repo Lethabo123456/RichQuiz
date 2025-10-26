@@ -1,0 +1,26 @@
+The parameter name is myParam, but you can pass in any int value or variable. Similarly the parameter 
+name in the delegate example is theDelegatedFunc, but you can pass in any method that meets the 
+return value and signature defined by the delegate WhichIsFirst. 
+Imagine you are sorting students by name. Write a method that returns theFirstComesFirst if the first 
+student's name comes first, and returns theSecondComesFirst if the second student's name does. If 
+you pass in "Amy, Beth," the method returns theFirstComesFirst, and if you pass in "Beth, Amy," it re-
+turns theSecondComesFirst. If you get back theSecondComesFirst, the Sort method reverses 
+the items in its array, setting Amy to the first position and Beth to the second. 
+Now add one more method, ReverseSort, which will put the items into the array in reverse order: 
+public void ReverseSort (WhichIsFirst theDelegatedFunc) 
+{ 
+i f  (theDelegatedFunc(thePair[ 0], thePair[ 1]) == comparison. 
+theFirstComesFirst) 
+{ 
+object temp = thePair[ 0]; 
+thePair[ 0] = thePair[ 1]; 
+thePair[ 1] = temp; 
+ } 
+} 
+The logic here is identical to the Sort( ), except that this method performs the swap if the delegated method 
+says that the first item comes first. Because the delegated function thinks 
+the first item comes first, and this is a reverse sort, the result you want is for the second item to come first. This time if 
+you pass in "Amy, Beth," the delegated function returns 
+theFirstComesFirst (i.e., Amy should come first). However, because this is a reverse sort it swaps the val-
+ues, setting Beth first. This allows you to use the same delegated function as you 
+used with Sort, without forcing the object to support a function that returns the reverse sorted value.

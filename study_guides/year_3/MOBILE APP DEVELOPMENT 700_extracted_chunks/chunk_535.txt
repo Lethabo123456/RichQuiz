@@ -1,0 +1,60 @@
+The testing just described may initially be performed on the Android emulator or the iOS simulator, 
+but it should also be performed on an actual device. This is especially true for apps that access the 
+hardware features of the device. Apps that use location or other sensors cannot be adequately tested 
+in either the Android emulator or the iOS simulator. 
+
+After all the unit tests have been passed successfully, the app should be tested for usability. The ability 
+to provide help and/or training in the use of your app is extremely limited. Users should be able to 
+figure out how to use it with relative ease. This requires testing by someone unfamiliar with the app. 
+Developers have a relatively difficult time testing this themselves because they are too familiar with 
+the way the app should work. Both Google and Apple provide extensive guidelines for human- 
+computer-interaction (HCI) design that you should study and follow to help ensure that the app is easy 
+to use. 
+
+The final set of tests requires access to a variety of devices. Because of the large number of 
+manufacturers that provide Android devices, this is a much more difficult problem in Android than in 
+iOS. For Android, you should have at least one device that runs the minimum SDK and one that runs 
+the target SDK. You also should have one device for each screen size supported by your app. (You can 
+limit screen size in the manifest like you did for minimum and target SDK.) This set of devices should 
+be considered the minimum number required. If possible, you should also test devices from different 
+manufacturers. There are differences, and these can cause interesting problems. There are companies 
+that for a fee will help test your app on a range of different devices. However, you can also use market 
+share data about what devices and OS versions are most prevalent in the market you are targeting. 
+For example, if your app would not be relevant to users outside of your own country, you can focus 
+your efforts on the devices that are actually in use in your country. 
+
+8.5 Keeping Up with the Platform 
+
+Both Apple and Google make changes to their respective operating systems on a regular basis. This 
+can be challenging for developers with apps “in the wild.” Updates to the operating system can and, 
+although infrequently, do disrupt apps that previously ran fine. To avoid problems with users of your 
+app or to prevent getting bad reviews in the app stores, it pays to keep on top of platform changes. 
+Keeping up with changes to the OS is not rocket science, but it does require diligence. At a minimum, 
+as soon as the new OS is released, you should recompile your app to include the new version as a 
+target. 
+
+Correct any errors that occur when you do this until you get a new version that can be tested 
+on the emulator or simulator. Once it is running well there, run it on an actual device with the updated 
+OS installed and run through your complete test plan to ensure that it works on that device. Finally, 
+test the new version of your app on a device running an older version of the OS. When you are satisfied 
+that your app works, release an upgrade to the app through the appropriate app store. 
+Beyond the bare minimum previously outlined, as a registered developer you also have access to 
+prerelease software so you can test your app in advance of the general release to the public. For 
+instance, Apple typically releases the first beta version of a new version of iOS and Xcode at its WWDC 
+conference in June, several months before the public release in September. Because most iOS users 
+update their devices very quickly after the public release, it is very important that you have tested 
+your app thoroughly before the release.
+
+Why Did That Happen? (Part 1) 
+One of our Android apps uses a standard list similar to what you have seen in Chapter, “Lists in 
+Android: Navigation and Information Display.” The app worked fine. Then we started getting 
+complaints from users who had a new phone from a specific manufacturer. The manufacturer had 
+made some changes that required a specific attribute value in the ListItem to display properly. 
+Although this change couldn’t have been foreseen by us, it does illustrate the need to test on multiple 
+devices.
+ 
+The iOS world has a much more limited set of devices, and the platform is more standardized between 
+devices. However, Apple has continued to increase the variability of hardware specs across its lineup, 
+so it is increasingly important to test on as many devices as possible. For example, if your app supports 
+3D Touch, you need to make sure to test on devices that support this technology and devices that 
+don’t.

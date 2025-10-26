@@ -1,0 +1,30 @@
+9.2 TEXT BOXES 
+In a form, you can use a text box to obtain information, such as user name, telephone 
+number, or e-mail address. To create a text box, you assign the value “text” to the 
+TYPE attribute of an INPUT tag. 
+The following table lists the attributes that you can use with the INPUT tag when the 
+value assigned to the TYPE attribute is “text.” 
+
+Attribute               Description 
+--------------------------------------------------------------------------------
+SIZE                    Specifies the width of a text box in characters. 
+--------------------------------------------------------------------------------
+MAXLENGTH               Specifies the maximum number of characters that can be 
+                        entered in a text box. 
+--------------------------------------------------------------------------------
+NAME                    Assigns a name to a text box. 
+--------------------------------------------------------------------------------
+VALUE                   Specifies a default value that appears in a text box. 
+--------------------------------------------------------------------------------
+ 
+Text area fields 
+To allow users to enter a large amount of information, such as addresses or feedback, 
+you can add a text area field to a form. To create a text area field, you use the 
+TEXTAREA tag. You can display text in the text area field by specifying it between the 
+TEXTAREA tags. For instance, to display the text “Enter your address here” within a 
+text area field, you would use the following code: 
+
+Address:<TEXTAREA>Enter your address here</TEXTAREA> 
+The ROWS and COLS attributes of this tag specify the number of rows and columns of 
+text that users can see. Scroll bars appear in the field if a user enters more text than 
+can fit in the area. 

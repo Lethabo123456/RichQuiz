@@ -1,0 +1,57 @@
+As well heuristic comparison:
+=========================================
+Heuristic Comparison
+=======================================================
+Grid:
+. . . []. . .
+. []. []. [].
+. []. . . [].
+. . . [][][].
+[][]. . . . .
+. . . . . . .
+
+Manhattan Heuristic:
+Path length: 11
+Path cost: 10.83
+
+S * . []. . .
+. []* []. [].
+. []* . . [].
+. . * [][][].
+[][]* . . . .
+. . * [][][][]
+. . . * * * G
+
+Euclidean Heuristic:
+Path length: 10
+Path cost: 10.24
+S . . []. . .
+* []. []. [].
+* []. . . [].
+. * . [][][].
+[][]* . . . .
+. . * [][][][]
+. . . * * * G4
+
+Diagonal Heuristic:
+Path length: 10
+Path cost: 10.24
+
+S . . []. . .
+* []. []. [].
+* []. . . [].
+. * . [][][].
+[][]* . . . .
+. . * [][][][]
+. . . * * * G
+
+Process finished with exit code 0
+
+To visualise the A* algorithm, let’s build a visualizer with pygame. 
+  
+As seen above the start point (yellow) and goal (turquoise) are separated by 
+obstacles (black) and the algorithm found the shortest path (purple). 
+The algorithm will always find the shortest path regardless of the position of the starting point, 
+goal and number of obstacles. 
+ 
+Here’s a look at another iteration of the starting point, goal and obstacles:

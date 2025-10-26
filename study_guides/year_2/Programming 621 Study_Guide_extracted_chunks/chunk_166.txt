@@ -1,0 +1,32 @@
+he address of its operand. For example, given the statements: 
+int x; 
+
+155 | P a g e  
+ 
+  
+int *p; 
+the statement: 
+p = &x; 
+assigns the address of x to p. That is, x and the value of p refer to the same memory 
+location. 
+ 
+Dereferencing Operator (*) 
+ 
+Every chapter until now has used the asterisk character, *, as the binary multiplication 
+operator. C++ also uses * as a unary operator. When used as a unary operator, *, 
+commonly referred to as the dereferencing operator or indirection operator, refers to 
+the object to which its operand (that is, the pointer) points. 
+int x = 25;  
+int *p;  
+p = &x; //store the address of x in p 
+the statement  
+cout << *p << endl;  
+prints the value stored in the memory space pointed to by p, which is the value of x. 
+Also, the statement 
+*p = 55; 
+stores 55 in the memory location pointed to by p—that is, in x. 
+ 
+Let us consider the following statements: 
+ int *p; 
+ int num;  
+In these statements, p is a pointer variable of type int, and num is

@@ -1,0 +1,25 @@
+Worked Example 
+Find the in-degree and out-degree of each vertex in the graph G with 
+directed edges shown in below. 
+
+Solution:  
+The in-degrees in G are deg−(a) = 2, deg−(b) = 2, deg−(c) = 3, deg−(d) = 
+2,deg−(e) = 3, and deg−(f ) = 0. The out-degrees are deg+(a) = 4, deg+(b) = 
+1, deg+(c) = 2,deg+(d) = 2, deg+(e) = 3, and deg+ 
+(f ) = 0. 
+
+Cycles 
+A cycle Cn, n ≥ 3, consists of n vertices v1, v2, . . . , vn and edges {v1, v2}, {v2, 
+v3}, . . . , {vn−1,  
+vn}, and {vn, v1}. The cycles C3, C4, C5, and C6 are displayed 
+in Figure 4.7. 
+ 
+Figure 4.8: The Cycles C3, C4, C5, and C6. 
+ 
+Wheels 
+We obtain a wheel Wn when we add an additional vertex to a cycle Cn,             
+for n ≥ 3, and connect this new vertex to each of the n vertices in Cn, by new 
+edges. The wheels W3, W4, W5, and W6 are displayed in Figure 4.9. 
+ 
+Figure 4.9: The Wheels W3, W4, W5, and W6. 
+ 

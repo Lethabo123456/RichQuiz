@@ -1,0 +1,37 @@
+How to remove element from Arraylist in Java?  
+
+Removing Element from ArrayList:   
+    
+You can use remove() method to remove elements from an ArrayList. Similar to add() method, this 
+method also has couple of variations.   
+   
+import java.util.*; class JavaExample {     
+public static void main(String args[]){   
+ArrayList<String> alist=new ArrayList<String>();       
+alist.add("Chris");       
+alist.add("Tim");
+alist.add("Lucy");     
+alist.add("Percy");    
+alist.add("Angela");   
+alist.add("Tom");   
+   
+      //displaying elements   
+      System.out.println(alist);   
+   
+      //Removing "Chris" and "Angela"       alist.remove("Chris");       alist.remove("Angela");   
+   
+      //displaying elements   
+      System.out.println(alist);   
+   
+      //Removing 3rd element       alist.remove(2);   
+   
+      //displaying elements   
+      System.out.println(alist);   
+   }   
+}   
+ 
+Output:   
+   
+[Chris, Tim, Lucy, Percy, Angela, Tom]   
+[Tim, Lucy, Percy, Tom]   
+[Tim, Lucy, Tom]

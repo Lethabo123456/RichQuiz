@@ -1,0 +1,46 @@
+for equality  
+{  
+trailCurrent = current->back; trailCurrent-
+>next = current->next; if (current->next != 
+NULL) current->next->back = trailCurrent; 
+if (current == last)  
+last = trailCurrent;  
+  
+count--;  
+
+134  
+  
+delete current;  
+}  
+else  
+cout << "The item to be deleted is not in list." endl;  
+ 
+}  
+  
+  
+  
+  
+  
+  
+//end else  
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+//end deleteNode  
+  
+ 
+3.6  
+STL Sequence Container: list  
+  
+Chapter 2 listed three types of sequence containers—vector, deque, and list. The sequence containers 
+vector and deque are described in Chapter 2. This section describes the STL sequence container list. List 
+containers are implemented as doubly linked lists. Thus, every element in a list points to its immediate 
+predecessor and to its immediate successor (except the first and last elements). Recall that a linked list is 
+not a random access data structure such as an array. Therefore, to access, for example, the fifth element 
+in the list, we must first trav

@@ -1,0 +1,47 @@
+Digital 
+
+Start with your digital platforms. First the basics (not big data yet). 
+You’ll probably already have some web analytics tags on your website that record high-level 
+events. Make sure you also record the key moments in the customer journey, such as when 
+the visitor does an onsite search, selects filters, visits specific 
+pages, downloads material, watches your videos or places items in the checkout basket. 
+
+Record mouse events, such as scrolls and hovers. Make sure these moments are tagged in a 
+way that preserves the details you’ll need later, such as adding the details of product 
+category, price range, and product ID to the web tags associated with each item description 
+page. This will allow you to quickly do top-of-mind analysis, such as identifying how often 
+products in certain categories were viewed, or how effective a marketing campaign was in 
+driving a desired event. In the end, you’ll probably have several dozen or even several 
+hundred specific dimensions that you add to your out-of-the-box web analytics data. This isn’t 
+yet big data. 
+With the additional detailed tags that you’ve implemented, you’ll be able to analyse and 
+understand many aspects of the customer journey, giving insights into how different types of 
+customers interact with the products you’ve presented them. We’ll show examples of this 
+below. 
+If you haven’t already done so, set up conversion funnels for sequential events that lead to 
+important conversion events, such as purchases.  shows how a basic purchase funnel might 
+look. 
+Each intermediate goal in the conversion funnel is a micro-conversion, together leading to a 
+macro-conversion (‘checkout’ in this case). Choose your micro-conversions in a way that 
+reflects increasing engagement and increased likelihood of a final conversion. The funnels you 
+set up will enable you to analyse drop-off rates at each stage, allowing you to address 
+potential problem points and increase the percentage of visitors progressing along each stage 
+of the funnel, eventually reaching the conversion event at the end of the funnel. Depending 
+on your product, customer movement down the funnel may span several days, weeks or 
+months, so you’ll need to decide what to consider ‘drop-off’. 
+
+For privacy and governance in your website, research and comply with local laws governing 
+the use of web cookies. Make a list of where you are storing the browsing data that identifies 
+the individual user (such as IP address) and how you later use the insights you’ve gathered in 
+customizing your interactions with each user. For example, if you personalize your 
+content and marketing based on the users’ online actions, 
+
+you’ll need to consider the ethical and legal implications. Remember the example 
+from Target. Now the big data part. You’ve set up the web analytics to record details most meaningful for 
+you. Now hook your web page up to a big data system that will record every online event for 
+every web visitor. You’ll need a big data storage system, such as HDFS, and you’ll need to implement code 
+(typically JavaScript) that sends the events to that storage. If you want a minimum-pain solution, use Google Analytics’ premium 
+service (GA360), and activate the BigQuery integration. This will send your web data to 
+Google’s cloud storage, allowing you to analyse it in detail within a few hours. If you need 
+data in real time, you can change the GA JavaScript method sendHitTask and send the same 
+data to both Google and to your own storage system.

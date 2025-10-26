@@ -1,0 +1,26 @@
+Practical Application: Yelp Dataset Analysis 
+
+Exploring the Yelp Dataset 
+6. Organized Data: The Yelp dataset is structured in rows and columns, making it organized 
+and ready for analysis. 
+7. Rows and Columns: Each row represents a user review for a business, and columns 
+include business_id, date, review_id, stars, text, type, and user_id. 
+8. Data Types and Missing Values: The dataset includes both nominal (e.g., user_id) and 
+ordinal data (e.g., stars). Checking for missing values is crucial to ensure data integrity. 
+9. Transformations: Some columns might require transformation. For example, converting 
+the text column into a numerical format for analysis or creating dummy variables for 
+categorical data. 
+Using Python and Pandas for Exploration 
+• Dataframes: A DataFrame in Pandas is used to handle the dataset, allowing for 
+efficient manipulation and analysis. 
+• Series: Each column in a DataFrame is a Series object, which can be analyzed 
+independently. 
+• Data Inspection: Commands like yelp_raw_data.head() and yelp_raw_data.shape 
+provide an overview of the dataset's structure and size. 
+
+Example Analysis 
+• Data Import: import pandas as pd; yelp_raw_data = pd.read_csv("yelp.csv") 
+• Checking Organization: Review the dataset's structure and identify each row (e.g., 
+user reviews) and column (e.g., business_id, review_id). 
+• Identifying Data Types: Determine the type of data in each column and assess the 
+need for any data transformations or handling of missing values. 

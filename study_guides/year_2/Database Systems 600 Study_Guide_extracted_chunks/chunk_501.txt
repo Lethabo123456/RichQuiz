@@ -1,0 +1,23 @@
+Data elements that are defined in all tables of all databases 
+ 
+Tables defined in all databases.  
+ 
+Indexes defined for each database table.  
+ 
+Defined databases.  
+ 
+End users and administrators of the database.  
+ 
+Programs that access the database.  
+ 
+ Access authorizations for all users of all databases. 
+ 
+Relationships among data elements.  
+If the data dictionary can be organized to include data external to the DBMS itself, it becomes an 
+especially flexible tool for more general corporate resource management and can then be described 
+as the information resource dictionary. 
+The metadata stored in the data dictionary is often the basis for monitoring database use and for 
+assigning access rights to database users. The information stored in the data dictionary is usually 
+based on a relational table format, thus enabling the DBA to query the database with SQL 
+commands. In the following section, the IBM DB2 system catalogue tables are the basis for several 
+examples o

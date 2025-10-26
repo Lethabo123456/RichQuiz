@@ -1,0 +1,41 @@
+er, like 
+case sensitivity, searching in multiple lines etc. 
+Modifier Description 
+i 
+Perform case-insensitive matching. 
+m  
+Specifies that if the string has newline or carriage return characters, the 
+^ and $ operators will now match against a newline boundary, instead of 
+a string boundary 
+
+ 
+110 
+ 
+SIX | JAVASCRIPT OBJECTS 
+g  
+Perform a global matchthat is, find all matches rather than stopping 
+after the first match. 
+Table 6.20 -Modifiers 
+ 
+6.2.7.6 RegExp Properties 
+Here is a list of each property and their description. 
+Property 
+Description 
+constructor 
+Specifies the function that creates an object's prototype. 
+global  
+Specifies if the "g" modifier is set. 
+ignoreCase 
+Specifies if the "i" modifier is set. 
+lastIndex 
+The index at which to start the next match. 
+multiline 
+Specifies if the "m" modifier is set. 
+source 
+The text of the pattern. 
+Table 6.21 - RegExp Properties 
+ 
+6.2.7.7 RegExp Methods 
+Here is a list of each method and its description. 
+Method 
+Descripti

@@ -1,0 +1,23 @@
+Percept 
+We use the term percept to refer to the agent's perceptual inputs at any given instant. 
+ 
+Percept Sequence 
+An agent's percept sequence is the complete history of everything the agent has ever 
+perceived. 
+ 
+Agent function 
+Mathematically speaking, we say that an agent's behavior is described by the agent 
+function that maps any given percept sequence to an action. 
+ 
+Agent program 
+Internally, The agent function for an artificial agent will be implemented by an agent 
+program. It is important to keep these two ideas distinct. The agent function is an 
+abstract mathematical description; the agent program is a concrete implementation, 
+running on the agent architecture. 
+ 
+To illustrate these ideas, we will use a very simple example-the vacuum-cleaner world 
+shown in Figure 1.3. This particular world has just two locations: squares A and B. The 
+vacuum agent perceives which square it is in and whether there is dirt in the square. 
+It can choose to move left, move right, suck up the dirt, or do nothing. One very simple 
+agent function is the following: if the current square is dirty, then suck, otherwise 
+move to the other square.

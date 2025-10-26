@@ -1,0 +1,27 @@
+3.5. Scheduling Policies and Algorithms 
+In a multiprogramming environment, there are usually more objects (jobs, processes, and threads) 
+to be executed than could possibly be run at one time. Before the operating system can schedule 
+them, it needs to resolve three limitations of the system: 
+
+➢ There are a finite number of resources. 
+➢ Some resources, once they are allocated, cannot be shared with another job. 
+➢ The dedicated resources are discussed in Chapter 7. 
+➢ Some resources require operator intervention, that is, they cannot be reassigned 
+automatically from job to job.
+
+3.5.1 Characteristics of a good Scheduling Algorithm. 
+➢ Maximize throughput. Run as many jobs as possible in each amount of time. This could be 
+accomplished easily by running only short jobs or by running jobs without interrupting them. 
+➢ Minimize response time. Quickly turn around interactive requests. This could be done by running 
+only interactive jobs and letting all other jobs wait until the interactive load ceases. 
+➢ Minimize turnaround time. Move entire jobs in and out of the system quickly. This could be done 
+by running all batch jobs first, because batch jobs are put into groups so they can run more 
+efficiently than interactive jobs. 
+➢ Minimize waiting time. Move jobs out of the READY queue as quickly as possible. This can be done 
+only by reducing the number of users allowed on the system so that the CPU can be available 
+immediately whenever a job entered the READY queue. 
+➢ Maximize CPU efficiency. Keep the CPU busy 100 percent of the time. This could be done by 
+running only CPU-bound jobs (not I/O-bound jobs). 
+➢ Ensure fairness for all jobs. Give everyone an equal amount of CPU and I/O time. This could be 
+done by running jobs as they arrive and not giving special treatment to any job, regardless of its 
+CPU or I/O processing characteristics, or high or low priority.

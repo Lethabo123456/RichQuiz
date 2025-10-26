@@ -1,0 +1,21 @@
+}  
+}  
+}//end insertOrd  
+  
+Similarly, you can write a function to remove an element from an ordered list.  
+  
+If we add the binary search algorithm and the insertOrd algorithm to the class orderedArrayListType, the 
+definition of this class is as follows:  
+  
+template <class elemType>  
+class orderedArrayListType: public arrayListType<elemType>  
+{ public:  
+void insertOrd(const elemType&);  
+int binarySearch(const elemType& item) const; orderedArrayListType(int 
+size = 100);  
+};  
+Because the class orderedArrayListType is derived from the class arrayListType, and the list elements of 
+an orderedArrayListType are ordered, we must override the functions insertAt and insertEnd of the class 
+arrayListType in the class orderedArrayListType. We do this so that if these functions are used by an object 
+of type orderedArrayListType, then after using these functions, the list elements of the object are still in 
+order. We leave the details of these functions as an exercise for you. Fur

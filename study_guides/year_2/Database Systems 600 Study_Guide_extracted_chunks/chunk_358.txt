@@ -1,0 +1,15 @@
+requirements and constraints 
+Because real-world database design is generally done by teams, the database design is probably 
+divided into major components known as modules. A module is an information system 
+component that handles a specific business function, such as inventory, orders, or payroll. 
+Under these conditions, each module is supported by an ER segment that is a subset or fragment 
+of an enterprise ER model. Working with modules accomplishes several important ends: 
+ 
+The modules (and even the segments within them) can be delegated to design groups within 
+teams, greatly speeding up the development work.  
+ 
+The modules simplify the design work. The large number of entities within a complex design 
+can be daunting. Each module contains a more manageable number of entities. Module (1) a 
+design segment that can be implemented as an autonomous unit, and is sometimes linked to 
+produce a system. (2) An information system component that handles a specific function, such 
+as

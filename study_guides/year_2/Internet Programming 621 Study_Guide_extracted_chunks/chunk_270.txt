@@ -1,0 +1,79 @@
+$z = 2; 
+echo $x / $y / $z; 
+?> 
+a) 1.75 
+b) 0.875 
+c) 3.5 
+d) Error 
+  
+Answer: b 
+ 
+161. 
+What will be the output of the following PHP code ? 
+<?php 
+one = 1; 
+two = 2; 
+three = 3; 
+four = 4; 
+echo "one / two + three / four"; 
+?> 
+a) 0.75 
+
+b) 0.05 
+c) 1.25 
+d) Error 
+  
+Answer: d 
+  
+162. 
+What will be the output of the following PHP code ? 
+<?php 
+$on$e = 1; 
+$tw$o = 2; 
+$thre$e = 3; 
+$fou$r = 4; 
+echo "$on$e / $tw$o + $thre$e / $fou$r";  
+?> 
+a) 0.75 
+b) 0.05 
+c) 1.25 
+d) Error 
+  
+Answer: d 
+  
+163. 
+What will be the output of the following PHP code ? 
+<?php 
+$on_e = 1; 
+$tw_o = 2; 
+$thre_e = 3; 
+$fou_r = 4; 
+echo $on_e / $tw_o + $thre_e / $fou_r;  
+?> 
+a) 0.75 
+b) 0.05 
+c) 1.25 
+d) Error 
+  
+Answer: c 
+  
+164. 
+What will be the output of the following PHP code ? 
+<?php 
+
+$On_e = 1; 
+$tw_o = 2; 
+$thre_e = 3; 
+$fou_r = 4; 
+echo $on_e / $tw_o + $thre_e / $fou_r; 
+?> 
+  
+a) 0.75 
+b) 0.05 
+c) 1.25 
+d) Error 
+  
+Answer: a 
+  
+165. 
+What will be the output of the following PHP code ?

@@ -1,0 +1,21 @@
+The next step, for this asset and this threat, is to determine what threat action might apply to this 
+asset. Possible actions include: '
+
+ Access: Simple unauthorized access 
+ Misuse: Unauthorized use of assets (for example, identity theft, setting up a pornographic 
+distribution service on a compromised server) 
+ Disclosure: The threat agent illicitly disclosing sensitive information 
+ Modification: Unauthorized changes to an asset 
+ Deny access: Destruction or theft of a non-data asset 
+
+Other considerations are whether the threat agent is internal or external, which helps to indicate the 
+motivation and intent of any threat event, and the ability of the threat agent to cause damage. 
+Once the asset and threat factors are understood, the analyst needs to determine the form of the loss, 
+which includes productivity, response, and replacement (refer to Table 3.10 - FAIR Loss Categories). For each potential threat 
+action, the analyst should estimate the probable loss magnitude for each form of loss. It is unrealistic 
+to assign an exact monetary value to each loss. Rather, a hierarchy of levels can be used, with a 
+monetary range for each level. The examples in the FAIR documents use five levels (very low, low, 
+moderate, high, very high) with an order of magnitude change between levels 
+(refer to Table 3.7 - Comparison of Quantitative and Qualitatitive Riske Assessment). 
+Once a loss magnitude is estimated for each form of loss, the maximum loss magnitude across all 
+forms of loss is assigned as the primary loss magnitude for this asset and this threat.

@@ -1,0 +1,29 @@
+an alert message. 
+ 
+2.3.1 External JavaScript Files 
+JavaScript code can also be placed in an external file. Your SCRIPT tags then include a 
+SRC attribute that points to the location of your JavaScript file as shown in Figure 2.10 
+below: 
+
+ 
+20 
+ 
+TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+ 
+Figure 2.10 – Link to External JavaScript Files 
+In Figure 2.10 above, we have added the following attribute to the opening SCRIPT 
+tag: 
+SRC="scripts/external_javascript.js" 
+ 
+SRC stands for Source. After an equal sign, you type the path to your JavaScript file. 
+We created a folder called scripts. Inside of this folder we placed a file called 
+external_javascript.js. 
+ 
+When saving JavaScript in an external file, end the file name with the two letter 
+extension js. 
+The file itself is this: 
+ 
+ 
+Figure 2.11 – External JavaScript file. 
+All we have here is the alert box line. Notice that we do not need any SCRIPT tags in 
+the external file. That is because they are already included in the HTML

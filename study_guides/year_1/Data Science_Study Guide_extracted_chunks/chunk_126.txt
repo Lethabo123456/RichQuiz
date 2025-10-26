@@ -1,0 +1,39 @@
+6.3 Pandas 
+Pandas is a powerful open-source library for data manipulation, analysis, and cleaning in Python. It 
+provides data structures and functions that make working with structured data, such as CSV files or 
+SQL tables, efficient and intuitive. Pandas is built on top of NumPy and is an essential tool in the data 
+science and data analysis workflows in Python. 
+ 
+Key Features of Pandas: 
+1. DataFrame: The DataFrame is the central data structure in Pandas. It is a two-dimensional, 
+labeled data structure with columns of potentially different data types. It is similar to a 
+spreadsheet or SQL table, allowing easy data manipulation. 
+2. Series: A Series is a one-dimensional labeled array that can hold data of any data type. A 
+DataFrame consists of multiple Series, one for each column. 
+3. Data Alignment: Pandas aligns data based on row and column labels, making it easy to perform 
+operations on datasets with different shapes. 
+4. Missing Data Handling: Pandas provides robust tools to handle missing data, either by 
+removing or replacing them. 
+5. Data I/O: Pandas supports reading and writing data from various file formats, including CSV, 
+Excel, SQL databases, and more. 
+6. Data Aggregation: Pandas offers flexible and powerful group-by functionality, enabling data 
+aggregation and summarization. 
+7. Time Series: Pandas has excellent support for working with time series data, including date 
+range generation, resampling, and time zone handling. 
+
+Basic Usage of Pandas: 
+1. Importing Pandas: To use Pandas, you need to import it. It is conventionally imported as pd for 
+simplicity. 
+import pandas as pd 
+ 
+2. Creating a DataFrame: You can create a DataFrame from various data sources, such as lists, 
+dictionaries, NumPy arrays, or by reading data from files. 
+ 
+# Creating a DataFrame from a dictionary 
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 
+        'Age': [25, 30, 35], 
+        'City': ['New York', 'San Francisco', 'Los Angeles']} 
+df = pd.DataFrame(data) 
+ 
+# Creating a DataFrame from a CSV file 
+df = pd.read_csv('data.csv')

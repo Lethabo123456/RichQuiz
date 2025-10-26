@@ -1,0 +1,73 @@
+alue <br>"; 
+} 
+} 
+colour(); 
+?> 
+a) red 
+green 
+blue 
+yellow 
+b) green 
+blue 
+yellow 
+red 
+c) red 
+blue 
+yellow 
+
+green 
+d) red 
+green 
+yellow 
+blue 
+  
+Answer:a 
+  
+142. 
+What will be the output of the following PHP code ? 
+<?php 
+function addFunction($num1, $num2) 
+{ 
+$sum = $num1 + $num2; 
+return $sum; 
+} 
+$return_value = addFunction(10, 20); 
+echo "Returned value from the function : " .$return_value 
+?> 
+a) Returned value from the function : $return_value 
+b) Error 
+c) Returned value from the function : 30 
+d) Returned value from the function : 
+  
+Answer: c 
+  
+143. 
+What will be the output of the following PHP code ? 
+<?php 
+function time($string) 
+{ 
+echo strtr("Towe Pa55", "ow5", $string); 
+} 
+time("ims"); 
+?> 
+a) Time Pa55 
+b) Towe Pa55 
+c) Towe Pass 
+d) Time Pass 
+  
+
+Answer: d 
+  
+144. 
+What will be the output of the following PHP code ? 
+<?php 
+function constant() 
+{ 
+define("GREETING", "Welcome to Narnia"); 
+echo greeting; 
+} 
+?> 
+  
+a) Welcome to Narnia 
+b) greeting 
+c)

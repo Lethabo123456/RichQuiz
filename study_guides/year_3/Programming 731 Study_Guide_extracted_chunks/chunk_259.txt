@@ -1,0 +1,31 @@
+Throwing an Exception   
+    
+The preceding examples have been catching exceptions generated automatically by the JVM. 
+However, it is possible to manually throw an exception by using the throw statement. Its general 
+form is shown here:   throw exceptOb;    
+Here, exceptOb must be an object of an exception class derived from Throwable.  Here  
+is an example that illustrates the throw statement by manually throwing an ArithmeticException:   
+   
+// Manually throw an exception. class ThrowDemo {     public 
+static void main(String[] args) {         try {   
+            System.out.println("Before throw.");             throw new  
+ArithmeticException();   
+        } catch (ArithmeticException exc) {   
+            // catch the exception   
+            System.out.println("Exception caught.");   
+        }   
+        System.out.println("After try/catch block.");   
+    }   
+
+}   
+   
+The output from the program is shown here:   
+Before throw. 
+Exception caught.  
+  
+After try/catch block.   
+   
+Notice how the ArithmeticException was created using new in the throw statement. Remember, 
+throw throws an object. Thus, you must create an object for it to throw. That is, you can’t just throw 
+a type.  
+   

@@ -1,0 +1,47 @@
+while 
+(first != NULL)  
+
+128  
+  
+{ temp = first; first = 
+first->next;  
+delete temp;  
+}  
+last = NULL;  
+count = 0;  
+}  
+  
+ 
+3.5.4  Initialize the List  
+  
+This operation reinitializes the doubly linked list to an empty state. This task can be done by using the 
+operation destroy. The definition of the function initializeList is as follows:  
+  
+template <class Type>  
+void doublyLinkedList<Type>::initializeList()  
+{ destroy();  
+}  
+  
+ 
+3.5.5  Length of the List  
+  
+The length of a linked list (that is, how many nodes are in the list) is stored in the variable count. Therefore, 
+this function returns the value of this variable.  
+  
+template <class Type>  
+int doublyLinkedList<Type>::length() const  
+{ return count;  
+}  
+  
+ 
+3.5.6  Print the List  
+  
+The function print outputs the info contained in each node. We traverse the list starting from the first 
+node.  
+  
+template <class Type>  
+void doublyLinkedList<Type>::print() const  
+{  
+nodeType<Type> *current;    
+  
+//

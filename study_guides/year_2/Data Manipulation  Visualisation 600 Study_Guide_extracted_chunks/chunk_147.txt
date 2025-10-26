@@ -1,0 +1,50 @@
+aph( 
+id='scatter3', 
+figure={ 
+'data': [ 
+go.Scatter( 
+x = random_x, 
+ 
+y = 
+random_y, 
+mode = 
+'markers', 
+marker = { 
+'size': 12, 
+'color': 'rgb(51,204,153)', 
+'symbol': 'pentagon', 
+'line': {'width': 2} 
+} 
+) 
+], 
+ 
+'layout': go.Layout( 
+title = 'Random Data Scatterplot', 
+xaxis = {'title': 'Some random x-values'}, 
+yaxis = {'title': 'Some random y-values'}, 
+hovermode='closest' 
+ 
+) 
+} 
+) 
+]) 
+ 
+if __name__ == '__main__': 
+
+ 
+ 
+ 
+ 
+ 
+app.run_server() 
+ 
+As you can see, much of this is the same code as was used in scatter3.py. In Dash, the 
+dash_core_components library includes a component called Graph, which renders interactive data 
+visualizations using Plotly’s JavaScript graphing library. In fact, the figure argument in the dcc.Graph 
+component is the same figure argument that is used by Plotly. 
+Once you have saved the file, run python plotly1.py in the terminal. Open your browser 
+again to http://127.0.0.1:8050/ and the following page should appear: 
+ 
+ 
+ 
+     6.4.4 Dash Com

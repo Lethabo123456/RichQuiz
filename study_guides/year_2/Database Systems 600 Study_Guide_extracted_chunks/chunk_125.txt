@@ -1,0 +1,21 @@
+t each entity in the ERM is represented by a table. Therefore, you can create the 
+composite ENROLL table shown in Figure 3.25 to link the tables CLASS and STUDENT.  
+ 
+Because the ENROLL table in Figure 3.25 links two tables, STUDENT and CLASS, it is also called 
+a linking table. In other words, a linking table is the implementation of a composite entity. 
+The ENROLL table shown in Figure 3.25 yields the required M:N to 1:M conversion. Observe that 
+the composite entity represented by the ENROLL table must contain at least the primary keys of 
+the CLASS and STUDENT tables (CLASS_CODE and STU_ NUM, respectively) for which it 
+
+ 
+49 
+serves as a connector. Also note that the STUDENT and CLASS tables now contain only one row 
+per entity.  
+Naturally, the conversion is reflected in the ERM, too. The revised relationship is shown in Figure 
+3.26. As you examine Figure 3.26, note that the composite entity named ENROLL represents the 
+linking table between STUDENT and CLASS. 
+ 
+ 
+ 
+ 
+Data Re

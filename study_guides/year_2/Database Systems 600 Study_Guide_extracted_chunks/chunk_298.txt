@@ -1,0 +1,36 @@
+y also be used as the basis for reports.  
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Eight, page 387-388. 
+
+ 
+123 
+ 
+Chapter Summary/Review 
+ 
+In this chapter, you have learned: 
+ 
+ 
+SQL commands can be divided into two overall categories: data definition language (DDL) 
+commands and data manipulation language (DML) commands.  
+ 
+ 
+The basic ANSI defined data types are NUMBER, NUMERIC, INTEGER, CHAR, 
+VARCHAR, and DATE.  
+ 
+ 
+The SELECT statement is the main data retrieval command in SQL. A SELECT statement 
+has the following syntax: 
+SELECT columnlist 
+FROM tablelist 
+[WHERE conditionlist ]  
+[GROUP BY columnlist ] 
+[HAVING conditionlist ] 
+[ORDER BY columnlist [ASC | DESC] ];  
+ 
+ 
+Operations that join tables can be classified as inner joins and outer joins. An inner join is 
+the traditional join in which only rows that meet a given criterion are selected. An outer join 
+returns the matching rows as

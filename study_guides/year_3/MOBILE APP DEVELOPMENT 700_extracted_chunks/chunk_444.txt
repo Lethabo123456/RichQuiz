@@ -1,0 +1,22 @@
+Managers 
+Android devices have hardware for processing, memory, long-term storage, and providing power. The 
+Android OS provides objects to facilitate the monitoring of the status of this hardware. For example, 
+the Android OS has a BatteryManager that can be used to monitor the battery’s status, a 
+StorageManager that can be used to monitor the status of long-term storage, and a PowerManager 
+that can be used to monitor power consumption. 
+The objects used to monitor the internal environment of the device are instantiated as system services 
+like the SensorManager. Just like with LocationManager that you saw in the previous chapter, you do 
+not instantiate these objects. To use them in an app, you get a reference to the appropriate system 
+service.
+
+Other Hardware 
+Android devices also have other hardware features, such as a phone and a camera. These devices have 
+an app associated with them to provide access to their functionality. In contrast to accessing the 
+sensors and monitors, these hardware items are accessed by making calls to their application program 
+interface (API). These apps can be opened from within an app to give the user access to their 
+functionality. In this case, the user leaves the app to interact with the device and returns to the app 
+after completing the task. The functionality of the hardware can also be accessed by integrating the 
+features within the app by calling the associated app’s API. In this manner, the app developer can 
+provide users with exactly the functionality they need from the device. This is how the popular 
+flashlight apps work. Developers of these kinds of apps access and control the camera’s flash from 
+within the app to create an entirely new functionality from existing hardware. 

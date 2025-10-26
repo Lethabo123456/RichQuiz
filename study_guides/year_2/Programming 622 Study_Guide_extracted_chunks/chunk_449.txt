@@ -1,0 +1,33 @@
+emoved from the other end, queueFront, we 
+need to know the front of the queue and the rear of the queue. Thus, we need two pointers, queueFront 
+and queueRear, to maintain the queue. The following class implements the functions of the abstract class 
+queueADT:  
+  
+//*************************************************************  
+// This class specifies the basic operations on a queue as a // 
+linked list.  
+//*************************************************************  
+//Definition of the node template 
+<class Type>  
+
+228  
+  
+struct nodeType  
+{  
+Type info;  
+nodeType<Type> *link;  
+};  
+  
+template <class Type>  
+class linkedQueueType: public queueADT<Type>  
+{  
+public:  
+const linkedQueueType<Type>& operator=(const linkedQueueType<Type>&); //Overload 
+the assignment operator.  
+  
+bool isEmptyQueue() const;  
+//Function to determine whether the queue is empty. 
+//Postcondition: Returns true if the queue is empty, 
+// otherwise returns false.  
+  
+bool isFullQueue() const;

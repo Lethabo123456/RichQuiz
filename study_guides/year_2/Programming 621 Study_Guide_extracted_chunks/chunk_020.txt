@@ -1,0 +1,31 @@
+1.2 STRUCTURED PROGRAMMING  
+ 
+Dividing a problem into smaller sub problems is called structured design. Each sub 
+problem is then analysed, and a solution is obtained to solve the sub problem. The 
+solutions to all of the sub problems are then combined to solve the overall problem. 
+This process of implementing a structured design is called structured programming. 
+The structured-design approach is also known as top-down design, bottom-up design, 
+stepwise refinement, and modular programming. 
+ 
+1.3 OBJECTED ORIENTED PROGRAMMING   
+ 
+Object-oriented design (OOD) is a widely used programming methodology. In OOD, 
+the first step in the problem-solving process is to identify the components called 
+objects, which form the basis of the solution, and to determine how these objects 
+interact with one another. For example, suppose you want to write a program that 
+automates the DVD rental process for a local DVD store. The two main objects in this 
+problem are the DVD and the customer. After identifying the objects, the next step is 
+to specify for each object the relevant data and possible operations to be performed 
+on that data. For example, for a DVD object, the data might include: 
+
+o movie name  
+o year released  
+o producer  
+o production company 
+o number of copies in stock 
+
+Some of the operations on a DVD object might include: 
+o checking the name of the movie  
+o reducing the number of copies in stock by one after a copy is rented 
+o incrementing the number of copies in stock by one after a customer 
+returns a particular DVD of length.  

@@ -1,0 +1,17 @@
+Each of these functions is explained as follows:  
+• 
+Data dictionary management. The DBMS stores definitions of the data elements and their 
+relationships (metadata) in a data dictionary which also automatically records structural changes. 
+The DBMS uses the data dictionary to look up the required data component structures and 
+relationships, thus relieving you from having to code such complex relationships in each 
+program. This provides data abstraction and removes structural and data dependence from the 
+system.  
+
+ 
+18 
+• 
+Data storage management. The DBMS creates and manages the complex structures required for 
+data storage, thus relieving you from the difficult task of defining and programming the physical 
+data characteristics. A modern DBMS also provides storage for related data-entry forms or 
+screen definitions, report definitions, data validation rules, and so on. Data storage management 
+is also important for database performance tuning. Performance tuning relates to the a

@@ -1,0 +1,48 @@
+lows:  
+  
+1. for each vertex v in the graph if v is not visited  
+ 
+add v to the queue     
+  
+//start the breadth first search at v  
+2. Mark v as visited  
+3. while the queue is not empty  
+3.1. Remove vertex u from the queue  
+3.2. Retrieve the vertices adjacent to u 3.3. 
+for each vertex w that is adjacent to u  
+          if w is not visited  
+3.3.1 Add w to the queue  
+3.3.2 Mark w as visited  
+  
+The following C++ function, breadthFirstTraversal, implements this algorithm:  
+  
+void graphType::breadthFirstTraversal()  
+{  
+linkedQueueType<int> queue;  
+  
+bool *visited;  
+visited = new bool[gSize];  
+  
+for (int ind = 0; ind < gSize; ind++)  
+ 
+visited[ind] = false;     
+  
+  
+//initialize the array  
+//visited to false  
+  
+linkedListIterator<int> graphIt;  
+  
+for (int index = 0; index < gSize; index++)  
+
+398  
+  
+if (!visited[index])  
+{  
+queue.addQueue(index); visited[index] 
+= true;  
+cout << " " << index << " ";  
+  
+while (!queue.isEmptyQueue())  
+{  
+int u = queue.fro

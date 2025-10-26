@@ -1,0 +1,42 @@
+3.6. Conditional probability 
+ 
+Let's pick an arbitrary person from this study of 100 people. Let's also assume that 
+you are told that their test result was positive. What is the probability of them 
+having cancer? So, we are told that event B has already taken place, and that 
+their test came back positive. The question now is what is the probability that they 
+have cancer, that is P(A)? This is called a conditional probability of A given B or 
+P(A|B). Effectively, it is asking you to calculate the probability of an event given that 
+another event has already happened.  
+You can think of conditional probability as changing the relevant universe. P(A|B) 
+(called the probability of A given B) is a way of saying, given that my entire universe 
+is now B, what is the probability of A? This is also known as transforming the sample 
+space. 
+ 
+Zooming in on our previous diagram, our universe is now B, and we are concerned 
+with AB (A and B) inside of B 
+The formula can be given as follows: 
+P(A|B) = P (A and B) / P(B) = (20/100) / (30/100) = 20/30 = .66 = 66% 
+There is a 66% chance that if a test result came back positive, that person had cancer. 
+This is the main probability that the experimenters want. They want to 
+know how good the test is at predicting cancer. 
+
+3.7 The rules of probability 
+ 
+In probability, we have some rules that become very useful when visualization gets 
+too cumbersome. These rules help us calculate compound probabilities with ease. 
+ 
+The addition rule 
+The addition rule is used to calculate the probability of either-or events. To calculate 
+ 
+P (A ᴜ B) = P (A or B), we use the following formula: 
+P (A ᴜ B) = P (A) + P(B) − P (A ∩ B) 
+ 
+The first part of the formula (P(A) + P(B)) makes complete sense. To get the union of the two 
+events, we must add together the area of the circles in the universe. But why the 
+subtraction of P (A and B)? This is because when we add the two circles, we are adding the 
+area of intersection twice, as shown in the following diagram: 
+
+See how both the red circles include the intersection of A and B? So, when we add 
+them, we need to subtract just one of them to account for this, leaving us with our 
+formula. 
+ 

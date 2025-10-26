@@ -1,0 +1,31 @@
+vecList = {5, 6, 8, 3, 40, 36, 98, 29, 75}   
+  
+//Line 4  
+  
+
+66  
+  
+Next, consider the statement  
+ copy(intArray + 1, intArray + 9, intArray);   //Line 5  
+  
+Here first1 is intArray + 1; that is, first1 points to the location of the second element of the array intArray, 
+and last is intArray + 9. Also, first2 is intArray; that is, first2 points to the location of the first element of 
+the array intArray. Therefore, the second array element is copied into the first array component, the third 
+array element into the second array component, and so on. After the statement in  
+Line 5 executes,  
+  
+ 
+intArray[] = {6, 8, 3, 40, 36, 98, 29, 75, 75}    
+  
+  
+  
+  
+//Line 6  
+  
+Notice that the elements of the array intArray are shifted to the left by one position.  
+  
+Suppose that vecList is as in Line 4. Consider the statement  
+  
+copy(vecList.rbegin() + 2, vecList.rend(), vecList.rbegin());  //Line 7  
+  
+Recall that the function rbegin (reverse begin) returns a pointer to

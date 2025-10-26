@@ -1,0 +1,212 @@
+""" 
+Simple Raft Consensus Algorithm Implementation 
+Demonstrates how distributed nodes agree on a leader and decisions 
+""" 
+import asyncio 
+import random 
+import time 
+import json 
+from enum import Enum 
+from dataclasses import dataclass 
+from typing import List, Dict, Optional 
+ 
+class NodeState(Enum): 
+    FOLLOWER = "follower" 
+    CANDIDATE = "candidate" 
+
+    LEADER = "leader" 
+@dataclass 
+class LogEntry: 
+    term: int 
+    command: str 
+    timestamp: float 
+ 
+class RaftNode: 
+    def __init__(self, node_id: int, all_nodes: List[int]): 
+        self.node_id = node_id 
+        self.all_nodes = all_nodes 
+        self.other_nodes = [n for n in all_nodes if n != node_id] 
+         
+        # Raft state 
+        self.state = NodeState.FOLLOWER 
+        self.current_term = 0 
+        self.voted_for = None 
+        self.log: List[LogEntry] = [] 
+         
+        # Timing 
+        self.last_heartbeat = time.time() 
+        self.election_timeout = random.uniform(5, 10)  # 5-10 seconds 
+
+        self.heartbeat_interval = 2  # 2 seconds 
+ 
+        # For visualization 
+        self.message_log = [] 
+         
+        print(f" Node {self.node_id} initialized as {self.state.value}") 
+ 
+    async def start(self): 
+        """Start the Raft node""" 
+        print(f" Node {self.node_id} starting...") 
+         
+        # Run multiple tasks concurrently 
+        await asyncio.gather( 
+            self.election_timer(), 
+            self.heartbeat_sender(), 
+            self.message_handler(), 
+            self.status_reporter() 
+        ) 
+ 
+    async def election_timer(self): 
+        """Monitor election timeout""" 
+        while True: 
+
+            await asyncio.sleep(1) 
+             
+            if self.state == NodeState.FOLLOWER: 
+                time_since_heartbeat = time.time() - self.last_heartbeat 
+                 
+                if time_since_heartbeat > self.election_timeout: 
+                    print(f" Node {self.node_id}: Election timeout! Starting election...") 
+                    await self.start_election() 
+ 
+    async def start_election(self): 
+        """Start leader election""" 
+        self.state = NodeState.CANDIDATE 
+        self.current_term += 1 
+        self.voted_for = self.node_id 
+         
+        print(f" Node {self.node_id}: Starting election for term {self.current_term}") 
+         
+        # Vote for yourself 
+        votes_received = 1 
+         
+        # Request votes from other nodes (simulated) 
+        for node in self.other_nodes: 
+
+            if await self.request_vote(node): 
+                votes_received += 1 
+                print(f" Node {self.node_id}: Received vote from Node {node}") 
+         
+        # Check if won election 
+        majority = len(self.all_nodes) // 2 + 1 
+         
+        if votes_received >= majority: 
+            await self.become_leader() 
+        else: 
+            print(f" Node {self.node_id}: Lost election ({votes_received}/{majority} votes)") 
+            self.state = NodeState.FOLLOWER 
+ 
+    async def request_vote(self, target_node: int) -> bool: 
+        """Request vote from another node (simulated)""" 
+        # Simulate network delay 
+        await asyncio.sleep(random.uniform(0.1, 0.5)) 
+         
+        # Simulate vote response (80% chance of yes) 
+        vote_granted = random.random() < 0.8 
+         
+        self.message_log.append({ 
+
+            'type': 'vote_request', 
+            'from': self.node_id, 
+            'to': target_node, 
+            'term': self.current_term, 
+            'granted': vote_granted, 
+            'timestamp': time.time() 
+        }) 
+         
+        return vote_granted 
+ 
+    async def become_leader(self): 
+        """Become the leader""" 
+        self.state = NodeState.LEADER 
+        print(f" Node {self.node_id}: Became LEADER for term {self.current_term}!") 
+         
+        # Reset election timeout for all followers 
+        self.last_heartbeat = time.time() 
+ 
+    async def heartbeat_sender(self): 
+        """Send heartbeats if leader""" 
+        while True: 
+            await asyncio.sleep(self.heartbeat_interval) 
+
+            if self.state == NodeState.LEADER: 
+                await self.send_heartbeats() 
+ 
+    async def send_heartbeats(self): 
+        """Send heartbeat to all followers""" 
+        print(f" Node {self.node_id}: Sending heartbeats...") 
+         
+        for node in self.other_nodes: 
+            self.message_log.append({ 
+                'type': 'heartbeat', 
+                'from': self.node_id, 
+                'to': node, 
+                'term': self.current_term, 
+                'timestamp': time.time() 
+            }) 
+ 
+    async def message_handler(self): 
+        """Handle incoming messages (simulated)""" 
+        while True: 
+            await asyncio.sleep(1) 
+             
+ 
+
+            # Simulate receiving heartbeats from leader 
+            if self.state == NodeState.FOLLOWER and random.random() < 0.7: 
+                self.last_heartbeat = time.time() 
+                # print(f" Node {self.node_id}: Received heartbeat") 
+ 
+    async def status_reporter(self): 
+        """Report node status periodically""" 
+        while True: 
+            await asyncio.sleep(3) 
+             
+            status = { 
+                'node_id': self.node_id, 
+                'state': self.state.value, 
+                'term': self.current_term, 
+                'log_length': len(self.log), 
+                'recent_messages': len([m for m in self.message_log if time.time() - m['timestamp'] < 
+10]) 
+            } 
+             
+            print(f" Node {self.node_id} Status: {status}") 
+ 
+    async def add_log_entry(self, command: str): 
+
+        """Add entry to log (leader only)""" 
+        if self.state == NodeState.LEADER: 
+            entry = LogEntry( 
+                term=self.current_term, 
+                command=command, 
+                timestamp=time.time() 
+            ) 
+            self.log.append(entry) 
+            print(f" Node {self.node_id}: Added log entry: {command}") 
+ 
+# Multi-node simulation 
+async def run_raft_cluster(): 
+    """Run a cluster of Raft nodes""" 
+    node_ids = [1, 2, 3, 4, 5]  # 5-node cluster 
+    nodes = [] 
+     
+    print(" Starting Raft Cluster Simulation...") 
+    print("=" * 50) 
+     
+    # Create nodes 
+    for node_id in node_ids: 
+        node = RaftNode(node_id, node_ids) 
+
+        nodes.append(node) 
+     
+    # Start all nodes concurrently 
+    tasks = [node.start() for node in nodes] 
+     
+    try: 
+        await asyncio.gather(*tasks) 
+    except KeyboardInterrupt: 
+        print("\n Shutting down cluster...") 
+ 
+if __name__ == '__main__': 
+    asyncio.run(run_raft_cluster())

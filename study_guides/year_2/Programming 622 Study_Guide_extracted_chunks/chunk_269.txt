@@ -1,0 +1,82 @@
+o these common operations, Table 
+3-10 describes the operations that are specific to a list container. The name of the function implementing 
+the operation is shown in bold. (Suppose that listCont is a container of type list.)  
+  
+TABLE 3-10: Operations specific to a list container  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+136  
+  
+  
+  
+TABLE 3-10: Operations specific to a list container (continued)  
+  
+  
+Example 3-1 shows how to use various operations on a list container.  
+ 
+EXAMPLE 3-1  
+//****************************************************************  
+// This program illustrates how to use a list container in a // 
+program.  
+//****************************************************************  
+#include <iostream>    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 1 
+#include <list>   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 2 
+#include <iterator>     
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 3 
+#include <algorithm>    
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 4 
+using namespace std;   
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 5 
+int m

@@ -1,0 +1,25 @@
+6.1.1 Supervised Learning in Robotics 
+At its core, supervised learning involves: 
+• A training set composed of input-output pairs. 
+• A learning algorithm that generalizes from these examples. 
+• The goal: to find a hypothesis (a function) that accurately predicts outputs for new, 
+unseen inputs. 
+This process is akin to teaching by example. For instance, we might train a robot to distinguish 
+between "obstacle" and "open path" by showing it hundreds of labeled images. 
+
+6.1.1.1 Components of Supervised Learning 
+1. Hypothesis Space 
+The set of all possible functions the learner could choose from. Choosing a good hypothesis space 
+is crucial — too simple, and the model underfits; too complex, and it overfits. 
+2. Loss Function (Error Function) 
+Measures the difference between predicted output and actual output. Learning aims to minimize 
+this loss over the training data. 
+3. Inductive Bias 
+Since the true function is unknown, the learner must rely on assumptions or "biases" to generalize 
+well. For example, a bias might be that simpler hypotheses are more likely to be correct (Occam’s 
+Razor).
+
+6.1.1.2 Examples of Supervised Learning Tasks 
+• Classification: Assigning discrete labels to inputs. e.g., Classifying emails as spam or not spam. 
+• Regression: Predicting continuous values. e.g., Predicting the angle a robotic arm should 
+move to.

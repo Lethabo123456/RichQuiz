@@ -1,0 +1,63 @@
+How to Enable Telnet in Windows 
+Because most people have the Windows 10 operating system running on their PCs these days, 
+it’s good to know that, by default, this operating system installs without Telnet available. But 
+there’s a way around that one—if you really must have a Telnet client enabled in the Windows 
+operating system, here’s how to do it: 
+
+1. Open Control Panel. 
+2. elect Programs and Features. 
+3. In the left column, select Turn Windows Features On Or Oﬀ (get ready for the annoying 
+User Account Control [UAC] prompt, and then enter your name and password). 
+4. Select the Telnet check box (and any other obscure services you may want enabled), and 
+wait while Windows thinks for a while and then reboots. Go to Start and then type 
+telnet in the Start search box to get a Telnet window to open for you. You can also open 
+a DOS prompt and just type telnet from there. Here are the options that Windows 
+provides with Telnet:
+ 
+Microsoft Telnet> ? 
+
+Commands may be abbreviated. Supported commands are: 
+
+c 
+-close 
+close current connection 
+d 
+-display 
+display operating parameters 
+o 
+-open hostname [port] 
+connect to hostname (default port 23). 
+q 
+-quit 
+exit telnet 
+set 
+-set 
+set options (type 'set ?' for a list) 
+sen 
+-send 
+send strings to server 
+st 
+-status 
+print status information 
+u 
+-unset 
+unset options (type 'unset ?' for a list) 
+?/h 
+-help 
+print help information 
+
+Now that we’ve ﬁnished talking about Telnet,recommendation is that you never use it again, 
+here’s why. 
+Don’t Use Telnet, Use Secure Shell 
+What? I just told you how to use Telnet, and now I am telling you not to use it. That’s right, 
+don’t use Telnet! Telnet is totally insecure because it sends all data in crystal-clear text including 
+your name and password. And I’m pretty sure you know that’s a really bad thing these days. If 
+Microsoft doesn’t even enable it on its latest OSs, then you know it really must be insecure. So, 
+if you shouldn’t use Telnet, what should you use instead? Secure Shell (SSH) is your answer. It 
+provides the same options as Telnet, plus a lot more; but most important, it doesn’t send any 
+data in clear text. The thing is, your servers, routers, and other devices need to be enabled with 
+SSH, and it’s not conﬁgured by default on most devices. Some conﬁguration is usually necessary 
+if you want things to work as they really should, and yes, sometimes it’s a little painful to get 
+everything running smoothly, but it’s all worth it in the long run. Disable Telnet on all my routers 
+and use SSH exclusively. Even so, you should still understand Telnet and get some practice with 
+it in case you do ever need it. 

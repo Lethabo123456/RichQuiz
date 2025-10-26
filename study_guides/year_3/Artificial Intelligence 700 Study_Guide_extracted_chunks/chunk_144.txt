@@ -1,0 +1,34 @@
+Problems On Predicate Calculus 
+1. It rained on Tuesday. weather (Tuesday , rain 
+2. It rained every days. weather(X , rain)  day(X 
+3. mother(layla, adel) 
+mother(layla, suha) 
+father(adam, adel) 
+father(adam, suha) 
+6X6Y father(X,Y) v mother(X,Y) →  parent(X,Y) 
+6X6Y6Z parent(X,Y) 
+ parent(X,Z) → 
+brother(Y,Z) 
+ 
+In the last example we use the predicate mother and father to define a set of other 
+relationships such as parent and brother. 
+ 
+Predicate calculus semantics : provide a formal basis for determining the truth value 
+of Well Formed Formula (WFF) . The truth of expressions depends on the mapping of 
+constants, variables and functions into objects and relation in the domain of 
+discourse.  
+ 
+First order predicate Calculus : It is a language allows quantified variables to refer to 
+objects in the domain of discourse and not to predicates or functions.
+
+Problems On Predicate Calculus 
+1. if it doesn't rain tomorrow . Tom will go to the mountains. 
+~weather(rain, tomorrow) → go (tom, mountains) 
+2. All persons who play football are tall 
+6X6Y (person(X) ^ play(X,Y) ^ football(Y) → tall(X) 
+3. some person like anchovies. 
+EX (person(X) ^ like (X, anchovies)). 
+4 Nobody likes taxes. 
+~ EX likes(X, taxes) 
+or 
+6X ~likes(X, taxes).

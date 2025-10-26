@@ -1,0 +1,25 @@
+5.5.2 Consensus-Based Task Assignment 
+Consensus-based task assignment algorithms enable groups of agents to collectively agree on 
+task allocations through iterative negotiation processes that consider both individual agent 
+preferences and global system objectives. These approaches are particularly valuable when tasks 
+require coordination among multiple agents or when fairness considerations are important in 
+addition to efficiency optimisation. 
+
+The mathematical foundation of consensus-based assignment typically involves distributed 
+optimization algorithms where agents iteratively update their task preferences and allocation 
+proposals based on information received from other agents. These algorithms must carefully 
+balance convergence speed with solution quality, ensuring that the system reaches stable 
+allocations within reasonable time frames while avoiding suboptimal local minima that could 
+result from premature convergence. 
+
+Distributed consensus protocols provide the communication and coordination framework for 
+these algorithms, enabling agents to share allocation proposals, communicate constraints and 
+preferences, and collectively converge to mutually acceptable solutions. These protocols must 
+handle challenges such as message delays, communication failures, and agents joining or leaving 
+the system dynamically. 
+
+The Hungarian algorithm and its distributed variants represent one important class of consensus-
+based assignment methods that can guarantee optimal solutions for bipartite matching problems 
+where tasks must be assigned to agents in one-to-one relationships. Distributed implementations 
+of these algorithms enable large-scale task allocation while maintaining optimality guarantees, 
+though at the cost of increased communication overhead and computational complexity.

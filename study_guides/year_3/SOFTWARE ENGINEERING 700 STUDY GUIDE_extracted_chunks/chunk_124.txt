@@ -1,0 +1,49 @@
+For example, system stakeholders for the Mentcare system include: 
+
+• Patients whose information is recorded in the system and relatives of these patients. 
+• Doctors who are responsible for assessing and treating patients.  
+• Nurses who coordinate the consultations with doctors and administer some treatments. 
+• Medical receptionists who manage patients’ appointments.  
+• IT staff who are responsible for installing and maintaining the system.  
+• A medical ethics manager who must ensure that the system meets current ethical 
+guidelines for patient care. 
+• Health care managers who obtain management information from the system.  
+• Medical records staff who are responsible for ensuring that system information can be 
+maintained and preserved, and that record keeping procedures have been properly 
+implemented. 
+ 
+Figure 4.2: Readers of different types of Requirements Specification (Sommerville,  I.  2021)   
+Requirements engineering is usually presented as the first stage of the software engineering 
+process. However, some understanding of the system requirements may have to be developed 
+before a decision is made to go ahead with the procurement or development of a system. This 
+early-stage RE establishes a high-level view of what the system might do and the benefits that it 
+might provide. These may then be considered in a feasibility study, which tries to assess whether 
+or not the system is technically and financially feasible. The results of that study help 
+management decide whether or not to go ahead with the procurement or development of the 
+system.
+
+4.2 Functional and Non- Functional Requirements  
+Software system requirements are often classified as functional or non-functional requirements: 
+ 
+• Functional requirements These are statements of services the system should provide, how 
+the system should react to particular inputs, and how the system should behave in 
+particular situations. In some cases, the functional requirements may also explicitly state 
+what the system should not do. 
+• Non-functional requirements These are constraints on the services or functions offered 
+by the system. They include timing constraints, constraints on the development process, 
+and constraints imposed by standards. Non-functional requirements often apply to the 
+system as a whole rather than individual system features or services. 
+ 
+In reality, the distinction between different types of requirements is not as clear-cut as 
+these simple definitions suggest. A user requirement concerned with security, such as a 
+statement limiting access to authorized users, may appear to be a non-functional 
+requirement. However, when developed in more detail, this requirement may generate 
+other requirements that are clearly functional, such as the need to include user 
+authentication facilities in the system. 
+ 
+This shows that requirements are not independent and that one requirement often 
+generates or constrains other requirements. The system requirements therefore do not 
+just specify the services or the features of the system that are required; they also specify 
+the necessary functionality to ensure that these services/features are delivered effectively 
+ 
+ 

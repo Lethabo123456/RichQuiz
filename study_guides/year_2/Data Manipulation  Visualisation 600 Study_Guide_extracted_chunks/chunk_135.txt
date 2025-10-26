@@ -1,0 +1,36 @@
+fig.append_trace(trace3, 1, 3) 
+ 
+fig['layout'].update( 
+# access the layout directly! 
+title='Hourly Temperatures, June 1-7, 2010' 
+ 
+) 
+pyo.plot(fig, filename='AllThree.html') 
+ 
+ 
+ 
+With this final plot we see data from three different regions, using the same scale, side-by-side for 
+comparison. Not bad! 
+Exercises: Plotly Basics 
+Ex1-Scatterplot.py 
+Objective: Create a scatterplot of 1000 random data points. x-axis values should 
+come from a normal distribution using np.random.randn(1000). y-axis values 
+should come from a uniform distribution over [0,1) using np.random.rand(1000) 
+ 
+Ex2-Linechart.py 
+ 
+Objective: Using the file 2010YumaAZ.csv, develop a Line Chart that plots seven days worth of 
+temperature data on one graph. You can use a list comprehension to assign each day to its own trace. 
+ 
+See https://pandas.pydata.org/pandas-
+docs/stable/generated/pandas.unique.html for help on finding unique 
+values with pandas 
+ 
+ 
+
+ 
+ 
+ 
+ 
+Ex3-Barchart.py 
+Objective: Create a stacked b

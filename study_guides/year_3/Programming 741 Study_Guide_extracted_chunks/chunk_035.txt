@@ -1,0 +1,20 @@
+1.2.3 Using variables 
+
+A variable is a storage location that holds a value. You can think of a variable as a box in the 
+computer’s memory that holds temporary information. You must give each variable in a 
+program an unambiguous name that uniquely identifies it in the context in which it is used. 
+You use a variable’s name to refer to the value it holds. For example, if you want to store the 
+value of the cost of an item in a store, you might create a variable called cost and store the 
+item’s cost in this variable. Later, if you refer to the cost variable, the value retrieved will be 
+the item’s cost that you stored there earlier. To create a variable, you must specify the type 
+and assign it a value: 
+
+Syntax  
+type variableName = value; 
+Where type is a C# type (such as int or string), and variableName is the name of the variable 
+(identifier). The equal sign is used to assign values to the variable. To create a variable that 
+should store text, look at the following example: 
+
+Example 
+Create a variable called names of type string and assign it the value "mbunnex": 
+string name = "mbunnex"; 

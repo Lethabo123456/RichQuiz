@@ -1,0 +1,24 @@
+5.3 Firewalls 
+ 
+The firewall is an important complement to host-based security services such as intrusion detection 
+systems. Typically, a firewall is inserted between the premises network and the Internet to establish 
+a controlled link and to erect an outer security wall or perimeter. The aim of this perimeter is to protect 
+the premises network from Internet-based attacks and to provide a single choke point where security 
+and auditing are imposed. Firewalls are also deployed internally in an enterprise network to segregate 
+portions of the network. 
+A firewall provides an additional layer of defense, insulating internal systems from external networks 
+or other parts of the internal network. This follows the classic military doctrine of “defense in depth,” 
+which is applicable to IT security. 
+
+Firewall Characteristics 
+
+“Network Firewalls” [BELL94] lists the following design goals for a firewall: 
+ All traffic from inside to outside, and vice versa, must pass through the firewall. This is 
+achieved by physically blocking all access to the local network except via the firewall. Various 
+configurations are possible, as explained later in this chapter. 
+ Only authorized traffic, as defined by the local security policy, is allowed to pass. Various types 
+of firewalls are used, and they implement various types of security policies, as explained later 
+in this chapter. 
+ The firewall itself is immune to penetration. This implies the use of a hardened system with a 
+secured operating system. Trusted computer systems are suitable for hosting a firewall and 
+often required in government applications.

@@ -1,0 +1,21 @@
+3.3.7 Rogue Access Point 
+These are Access Points(Aps) that have been connected to your wired infrastructure without your 
+knowledge. The rogue AP may have been placed there by a determined hacker who snuck into 
+your facility and put it in an out-of-the-way location or, more innocently, by an employee who just 
+wants wireless access and doesn’t get just how dangerous doing this is. One way to keep rogue 
+APs out of the wireless network is to employ a wireless LAN controller (WLC) to manage your APs 
+(Lammle, 2015). This is a nice mitigation technique because APs and controllers communicate 
+using Lightweight Access Point Protocol (LWAPP) or the newer CAPWAP, and it just so happens 
+that one of the message types they share is called Radio Resource Management (RRM). 
+
+An evil twin is an AP that is not under your control but is used to perform a hijacking attack. A 
+hijacking attack is one in which the hacker connects one or more of your users’ computers to their 
+network for a peer-to-peer attack. The attack begins with the introduction of an access point that 
+is under the hacker’s control. This access point will be set to use the same network name or SSID 
+your network uses, and it will be set to require no authentication. Moreover, this access point will 
+be set to use a diﬀerent channel than the access point under your control.
+
+3.3.8 Ransomware
+Ransomware is a class of malware that prevents or limits users from accessing their information
+or systems. In many cases, the data is encrypted, and the decryption key is only made available
+to the user when the ransom has been paid.

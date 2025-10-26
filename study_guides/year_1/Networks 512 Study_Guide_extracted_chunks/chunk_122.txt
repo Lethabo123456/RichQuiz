@@ -1,0 +1,28 @@
+1.15.4 Network Switching 
+The benefits of switching vary from network to network. Adding a switch for the first time has 
+different implications than increasing the number of switched ports already installed. 
+Understanding traffic patterns is very important to network switching – the goal being to 
+eliminate (or filter) as much traffic as possible. A switch installed in a location where it forwards 
+almost all the traffic it receives will help much less than one that filters most of the traffic. 
+Networks that are not congested can actually be negatively impacted by adding switches. Packet 
+processing delays, switch buffer limitations, and the retransmissions that can result sometimes 
+slows performance compared with the hub based alternative. If your network is not congested, 
+don’t replace hubs with switches. How can you tell if performance problems are the result of 
+network congestion? Measure utilization factors and collision rates. 
+Good Candidates for Performance Boosts from Switching 
+ Utilization more than 35% 
+ Collision rates more than 10% 
+
+Utilization load is the amount of total traffic as a percent of the theoretical maximum for the 
+network type, 10 Mbps in Ethernet, 100 Mbps in Fast Ethernet. The collision rate is the 
+number of packets with collisions as a percentage of total packages 
+Figure 1- 16: Boosting from Switching 
+Network response times (the user-visible part of network performance) suffers as the load on the 
+network increases, and under heavy loads small increases in user traffic often results in significant 
+decreases in performance. This is similar to automobile freeway dynamics, in that increasing loads 
+results in increasing throughput up to a point, then further increases in demand results in rapid 
+deterioration of true throughput. In Ethernet, collisions increase as the network is loaded, and this 
+causes retransmissions and increases in load which cause even more collisions. The resulting 
+network overload slows traffic considerably. 
+Using network utilities found on most server operating systems network managers can determine 
+utilization and collision rates. Both peak and average statistics should be considered. 

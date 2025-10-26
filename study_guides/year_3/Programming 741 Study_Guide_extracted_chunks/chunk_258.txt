@@ -1,0 +1,36 @@
+static method that takes two objects and returns a comparison can be encapsulated by 
+this delegate at runtime. You can now define the Sort method for the Pair class: 
+
+This method takes a parameter: a delegate of type WhichIsFirst named the Delegated-Func. 
+The Sort( ) method delegates responsibility for deciding which of the two objects in the Pair 
+comes first to the method encapsulated by that delegate. It invokes the delegated method in 
+the body of the Sort( ) method and examines the return value, which will be one of the two 
+enumerated values of comparison. 
+If the value returned is the SecondComesFirst , the objects within the pair are swapped; 
+otherwise no action is taken. 
+ 
+Notice that theDelegatedFunc is the name of the parameter to represent the method 
+encapsulated by the delegate. You can assign any method (with the appropriate return value 
+and signature) to this parameter. It is as if you had a method that took an int as a parameter:
+
+int SomeMethod ( int myParam){ //...} 
+The parameter name is myParam, but you can pass in any int value or variable. Similarly the 
+parameter name in the delegate example is theDelegatedFunc, but you can pass in any 
+method that meets the return value and signature defined by the delegate WhichIsFirst. 
+public  void Sort(WhichIsFirst theDelegatedFunc) 
+{ 
+if (theDelegatedFunc(thePair[ 0] ,the- 
+Pair[ 1] ) == comparison. theSecondComesFirst) 
+{ 
+object temp = thePair[ 0]; 
+thePair[ 0] = thePair[ 1] ; 
+thePair[ 1] = temp; 
+} 
+}  
+ 
+Imagine you are sorting students by name. Write a method that returns theFirstComesFirst if 
+the first student's name comes first, and returns theSecondComesFirst if the second student's 
+name does. If you pass in "Amy, Beth," the method returns theFirstComesFirst, and if you 
+pass in "Beth, Amy," it returns theSecondComesFirst. If you get back theSecondComesFirst, 
+the Sort method reverses the items in its array, setting Amy to the first position and Beth to 
+the second. 

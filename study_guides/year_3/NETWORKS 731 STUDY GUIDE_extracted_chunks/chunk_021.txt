@@ -1,0 +1,25 @@
+Figure 1.7 Two different types of Twisted Pair Cables 
+ 
+Table 1.1 Categories of Unshielded Twisted Pair Cable 
+ 
+End connector for Twisted Pair Cable 
+Twisted-pair cables like Cat5e, Cat6, and Cat7 are terminated by RJ45 connectors, which are 
+frequently used in Ethernet networking. To guarantee device interoperability, these 8-pin 
+modular connectors have a defined wiring scheme (T568A or T568B). RJ45 connections with 
+gold-plated contacts for dependable data transfer and less signal interference come in 
+shielded (STP) and unshielded (UTP) varieties.  
+ 
+Figure 1.8 A crimper for RJ-11 and RJ-45 connectors   
+
+Twisted Pair Testing 
+Twisted pairs can be a hassle to build and test but they are necessary in some cables and 
+harnesses. Testing twisted pairs may be confusing at times, but there are tricks to use that will 
+help you achieve accurate results and ensure twisted pairs function correctly in your cable 
+ 
+Figure 1.9 Twisted Pair Testing   
+ 
+Twisted pairs have a current running through a wire that generates a magnetic field. When 
+the current changes, the magnetic field also changes. These changes can create currents and 
+interfere with signals in surrounding wires. This interference is called cross-talk and it occurs 
+between wires even when the wires are separated by insulation. The longer the cables and 
+the higher the frequency signals, the more cross-talk occurs.

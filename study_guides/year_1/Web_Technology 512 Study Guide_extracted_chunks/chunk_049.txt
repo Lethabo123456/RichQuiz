@@ -1,0 +1,25 @@
+ue, and the third 
+one stores the text 'Kenny'. Notice that the first two variables, the number and the 
+Boolean, don't need any quote marks. The third one does, however: if you want to 
+store strings of text they need to go between quotations marks, either single quotes or 
+double quotes, but not a mixture of the two. 
+ 
+Now add the following write lines to your code 
+document.write( number1 + "<BR>" ); 
+document.write( true_or_false + "<BR>" ); 
+document.write( firstName + "<BR>" ); 
+ 
+So we are using document.write to see what is inside of the variables. (The + 
+"<BR>" is just so that each variable will be printed on a line of its own.) 
+
+ 
+36 
+ 
+THREE | JAVASCRIPT PROGRAMMING BASICS 
+ 
+Your Javascript should look like this: 
+ 
+Figure 3.2 – Writing variable contents 
+Make sure you end each line with a semicolon ( ; ). Make sure, too, that you have a 
+space between var and the variable name. You do not actually need a space to the left 
+and right of the equal symbol, but it helps to

@@ -1,0 +1,20 @@
+Loss Event Frequency 
+The likelihood of a loss, referred to as loss event frequency in the FAIR documents, is derived from the 
+threat event frequency and vulnerability by using the matrix shown in Figure 3.8 
+(FAIR Risk Assessment Matrices - Threat event frequency, Primary loss event frequency, Vulnerability). 
+Again, the loss event frequency entries in the 5 × 5 matrix are based on judgments made by the FAIR designers. For 
+example, if the threat event frequency is very high and the vulnerability is in the range of medium to 
+very high, then the likelihood of a loss event is rated as very high. Note that the loss event frequency 
+is limited by the threat event frequency; that is, the loss event frequency is never higher than the 
+threat event frequency, no matter what the degree of vulnerability. 
+
+This matrix defines a function f2: 
+Primary loss event frequency = f2 (Vulnerability, Threat event frequency) 
+This derived quantity is also referred to as the primary loss event frequency, to contrast it with the 
+secondary loss event frequency discussed subsequently. 
+SP 800-30 defines an approach to determining loss event frequency that is less complex than the FAIR 
+approach. Table 3.9 (Likelihood Assessment Scales), adapted from SP 800-30, summarizes this approach. The table allows the use of 
+either qualitative values or what the standard refers to as semi-quantitative values. This table is used 
+both for adversarial and non-adversarial threats. The likelihood of a threat event combined with the 
+likelihood that the threat event results in adverse impact are used as inputs to the matrix in Figure 
+3.8b to determine the likelihood of an adverse impact.

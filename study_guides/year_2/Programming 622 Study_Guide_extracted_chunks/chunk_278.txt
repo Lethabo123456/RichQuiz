@@ -1,0 +1,18 @@
+ique, splice, sort, merge, and reverse.  
+15. A linked list with header and trailer nodes simplifies the insertion and deletion operations.  
+16. The header and trailer nodes are not part of the actual list. The actual list elements are between the 
+header and trailer nodes.  
+17. A linked list with header and trailer nodes is empty if the only nodes in the list are the header and the 
+trailer.  
+18. A circular linked list is a list in which, if the list is nonempty, the last node points to the first node.  
+  
+Exercises  
+  
+1. Mark the following statements as true or false.  
+a. In a linked list, the order of the elements is determined by the order in which the nodes were created 
+to store the elements.  
+b. In a linked list, memory allocated for the nodes is sequential.  
+c. A single linked list can be traversed in either direction.  
+d. In a linked list, nodes are always inserted either at the beginning or the end because a linked link is not 
+a random access data structure.  
+e. T

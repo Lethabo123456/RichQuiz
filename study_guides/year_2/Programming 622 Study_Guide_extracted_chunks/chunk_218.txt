@@ -1,0 +1,37 @@
+found, it returns true; 
+otherwise, it returns false. Because a linked list is not a random access data structure, we must 
+sequentially search the list starting from the first node.  
+  
+This function has the following steps:  
+1. Compare the search item with the current node in the list. If the info of the current node is the 
+same as the search item, stop the search; otherwise, make the next node the current node.  
+2. Repeat Step 1 until either the item is found or no more data is left in the list to compare with the 
+search item.  
+  
+template <class Type>  
+bool unorderedLinkedList<Type>::search(const Type& searchItem) const  
+{  
+
+109  
+  
+nodeType<Type> *current;    
+  
+bool found = false;  
+ 
+//pointer to traverse the list  
+current = first;   
+  
+  
+  
+ 
+//set current to point to the first 
+//node in the list  
+while (current != NULL && !found)    
+ 
+//search the list  
+if (current->info == searchItem)  
+found = true;  
+else  
+ 
+//searchItem is found  
+current = current->link

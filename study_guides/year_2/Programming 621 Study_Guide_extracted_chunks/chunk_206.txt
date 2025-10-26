@@ -1,0 +1,27 @@
+that myClock and yourClock are objects of type clockType, as declared 
+previously. Further suppose that we have myClock and yourClock, 
+ 
+Consider the following statement:  
+if (myClock.equalTime(yourClock))  
+. . .  
+In the expression:  
+myClock.equalTime(yourClock)  
+
+184 | P a g e  
+ 
+ 
+the object myClock accesses the member function equalTime. Because otherClock 
+is a reference parameter, the address of the actual parameter yourClock is passed 
+to the formal parameter otherClock,as in Figure below 
+ 
+ 
+ 
+The member variables hr, min, and sec of otherClock have the values 14, 25, and 54, 
+respectively. In other words, when the body of the function equalTime executes, the 
+value of otherClock.hr is 14, the value of otherClock.min is 25, and the value of 
+otherClock.sec is 54. The function equalTime is a member of myClock. When the 
+function equalTime executes, the variables hr, min, and sec in the body of the function 
+equalTime are the member variables of the object myClock. 
+ 
+ 
+L

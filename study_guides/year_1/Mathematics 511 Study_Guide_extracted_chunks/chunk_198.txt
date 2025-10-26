@@ -1,0 +1,35 @@
+Note that if a student is not currently enrolled in any courses there will be no 
+pairs in R that have this student as the first element. Similarly, if a course is 
+not currently being offered there will be no pairs in R that have this course as 
+their second element. 
+Let A be the set of cities in the U.S.A., and let B be the set of the 50 states in 
+the U.S.A. Define the relation R by specifying that (a, b) belongs to R if a city 
+with name a is in the state b. For instance, (Boulder, Colorado), (Bangor, 
+Maine), (Ann Arbor, Michigan), (Middletown, New Jersey), (Middletown, 
+New York), (Cupertino, California), and (Red Bank, New Jersey) are in R. 
+
+3.6.2 Functions as Relations 
+ 
+Recall that a function f from a set A to a set B assigns exactly one element of 
+B to each element of A. The graph of f is the set of ordered pairs (a, b) such 
+that b = f (a). Because the graph of f is a subset of A × B, it is a relation from 
+A to B. Moreover, the graph of a function has the property that every 
+element of A is the first element of exactly one ordered pair of the graph. 
+Conversely, if R is a relation from A to B such that every element in A is the 
+first element of exactly one ordered pair of R, then a function can be defined 
+with R as its graph. This can be done by assigning to an element a of A the 
+unique element b ∈ B such that (a, b) ∈ R. (Note that the relation R in Example 
+2 is not the graph of a function because Middletown occurs more than once 
+as the first element of an ordered pair in R.) 
+
+A relation can be used to express a one-to-many relationship between the 
+elements of the sets A and B (as in Example 2), where an element of A may 
+be related to more than one element of B. A function represents a relation 
+where exactly one element of B is related to each element of A. 
+Relations are a generalization of graphs of functions; they can be used to 
+express a much wider class of relationships between sets.
+
+3.6.3 Relations on a Set 
+ 
+Definition 49 
+A relation on a set A is a relation from A to A.

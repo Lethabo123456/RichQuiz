@@ -1,0 +1,24 @@
+m size.  
+  
+TABLE 1-5: Some Big-O functions that appear in algorithm analysis  
+  
+ 
+1.4  
+Classes  
+  
+In this section, we review C++ classes. If you are familiar with how classes are implemented in C++, you 
+can skip this section.  
+  
+Recall that in OOD, the first step is to identify the components called objects; an object combines data 
+and the operations on that data in a single unit, called encapsulation. In C++, the mechanism that allows 
+you to combine data and the operations on that data in a single unit is called a class. A class is a collection 
+of a fixed number of components. The components of a class are called the members of the class.  
+  
+The general syntax for defining a class is:  
+  
+   
+where class members list consists of variable declarations and/or functions. That is, a member of a class 
+can be either a variable (to store data) or a function.  
+  
+ If a member of a class is a variable, you declare it just like any other variable. Furthermore, in the 
+definiti

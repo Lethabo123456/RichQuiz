@@ -1,0 +1,36 @@
+we would have written this: 
+window.alert("Alert Message") 
+ 
+And this: 
+window.confirm("OK or Cancel") 
+ 
+But because the Window object is a Global object you do nothave to use window "dot" 
+notation. You can just type the part after window. For clarity's sake, though, it is better 
+to keep the window part wherever possible as it is clearer to you what your code 
+means. 
+ 
+Other window methods that are commonly used are these: 
+ window.clearInterval 
+ window.clearTimeout  
+ window.close 
+ window.open 
+ window.print 
+ window.setInterval 
+ window.setTimeout 
+ 
+The first two and the last two are used to set up and manipulate timers. Timers are 
+very useful in animation. The close and open methods do what you would expect them 
+to do - close a window and open a new one. The print method brings up an Operating 
+System's print dialogue box. Let us have a look at the window.open method more 
+closely. 
+ 
+ 
+WEB RESOURCE 
+ 
+http://www.w3schools.com/j
+s/js_events.asp 
+
+ 
+25 
+ 
+TWO | JAVA

@@ -1,0 +1,163 @@
+/* ===============================
+   Operating System Theme (Extravagant)
+   =============================== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top left, #0d0d0d, #000);
+  color: #d4ffd4;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(0, 20, 0, 0.95);
+  border: 3px solid #00ff88;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00ff88, inset 0 0 15px rgba(0, 255, 136, 0.2);
+  position: relative;
+  animation: sysPulse 5s infinite alternate;
+}
+
+@keyframes sysPulse {
+  0% { box-shadow: 0 0 15px #00ff88, inset 0 0 10px rgba(0, 255, 136, 0.2); }
+  100% { box-shadow: 0 0 35px #00ffaa, inset 0 0 25px rgba(0, 255, 170, 0.4); }
+}
+
+/* Headings */
+h2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.8rem;
+  color: #00ff88;
+  text-align: center;
+  text-shadow: 0 0 10px #00ff88, 0 0 25px #00ffaa;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+}
+
+/* Question Section */
+.question-container {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  border-left: 6px solid #00ff88;
+  padding-left: 12px;
+}
+
+#question-text {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(0, 255, 136, 0.05);
+  font-family: 'Share Tech Mono', monospace;
+  color: #aaffaa;
+}
+
+/* Options */
+.options-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.option-label {
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: rgba(0, 255, 136, 0.08);
+  border: 1px solid #00ff88;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.option-label:hover {
+  background: rgba(0, 255, 136, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 0 15px #00ff88;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #00ff88;
+}
+
+.option-text {
+  color: #e6ffe6;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  color: #000;
+  background: linear-gradient(90deg, #00ff88, #00ffaa);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.7);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #00ffaa, #00ff88);
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.9);
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff88;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* Code Blocks */
+pre, code {
+  font-family: 'Share Tech Mono', monospace;
+  background: rgba(0, 255, 136, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+  color: #00ff88;
+  border-left: 4px solid #00ffaa;
+}
+
+/* Extravagant Kernel Overlay */
+.container::before {
+  content: "PROCESS_RUNNING | MEMORY_ALLOCATED | IO_WAIT | THREAD_SYNC";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.8rem;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(0, 255, 136, 0.3);
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
+  animation: sysScroll 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes sysScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

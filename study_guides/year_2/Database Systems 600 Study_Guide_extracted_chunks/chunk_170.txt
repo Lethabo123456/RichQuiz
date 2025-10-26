@@ -1,0 +1,14 @@
+ore, you select products by taking them 
+from a display shelf and reading the labels, not by looking at the stock number. It is wise for 
+database applications to mimic the human selection process as much as possible. Therefore, 
+database applications should let the end user choose among multiple descriptive narratives of 
+different objects, while using primary key values behind the scenes. Keeping those concepts in 
+mind, look at Table 5.3, which summarizes desirable primary key characteristics. 
+When to Use Composite Primary Keys 
+In the previous section, you learned about the desirable characteristics of primary keys. For 
+example, you learned that the primary key should use the minimum number of attributes possible. 
+However, that does not mean that composite primary keys are not per- mitted in a model. In fact, 
+composite primary keys are particularly useful in two cases:  
+ 
+As identifiers of composite entities, in which each primary key combination is allowed only 
+once in the

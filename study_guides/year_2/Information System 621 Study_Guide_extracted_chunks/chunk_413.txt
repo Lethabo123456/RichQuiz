@@ -1,0 +1,15 @@
+ns costs, some organizations build a replicated database. A 
+replicated database holds a duplicate set of frequently used data. The company sends a copy of 
+important data to each distributed processing location when needed or at predetermined times. 
+Each site sends the changed data back to update the main database on an update cycle. This 
+process, often called data synchronization, is used to make sure that replicated databases are 
+accurate, up to date and consistent with each other. A railway, for example, can use a replicated 
+database to increase punctuality, safety and reliability. The primary database can hold data on 
+fares, routes and other essential information. The data can be continually replicated and 
+downloaded from the master database to hundreds of remote servers across the country. The 
+remote locations can send back the latest figures on ticket sales and reservations to the main 
+database. 
+ 
+Online Analytical Processing (OLAP) 
+ 
+For nearly two decades, databases

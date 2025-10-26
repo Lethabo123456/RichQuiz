@@ -1,0 +1,18 @@
+customer gets in the line at the rear. Whenever a teller is ready for a new customer, the 
+customer at the front of the line is served.  
+  
+The rear of the queue is accessed whenever a new element is added to the queue, and the front of the 
+queue is accessed whenever an element is deleted from the queue. As in a stack, the middle elements of 
+the queue are inaccessible, even if the queue elements are stored in an array.  
+  
+Queue: A data structure in which the elements are added at one end, called the rear, and deleted from 
+the other end, called the front; a First In First Out (FIFO) data structure.  
+  
+ 
+6.1  
+Queue Operations  
+  
+From the definition of queues, we see that the two key operations are add and delete. We call the add 
+operation addQueue and the delete operation deleteQueue. Because elements can be neither deleted 
+from an empty queue nor added to a full queue, we need two more operations to successfully implement 
+the addQueue and deleteQueue operations: isEmptyQu

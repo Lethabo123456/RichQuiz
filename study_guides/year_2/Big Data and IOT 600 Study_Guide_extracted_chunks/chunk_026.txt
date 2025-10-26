@@ -1,0 +1,55 @@
+Control applications are responsible for sending automatic commands and alerts to 
+actuators, for example: 
+
+ Windows of a smart home can receive an automatic command to open or close depending 
+on the forecasts taken from the weather service. 
+ When sensors show that the soil is dry, watering systems get an automatic command to 
+water plants. 
+ Sensors help monitor the state of industrial equipment, and in case of a pre-failure 
+situation, an IoT system generates and sends automatic notifications to field engineers. 
+ 
+The commands sent by control applications to actuators can be also additionally stored in a 
+big data warehouse to help investigate problematic cases. 
+User applications are the software component of an IoT system which connects IoT users to 
+the devices and gives them the option to monitor and control their smart object through a 
+mobile phone or web application’ (Grizhnevich, 2018). 
+A simple example of “smart” outside lighting system, as a part of a “smart home”, is described 
+in Figure 7, below. 
+ 
+Figure 7: IoT architecture example – Intelligent lighting  
+(Source: Grizhnevich, 2018) 
+ 
+Different architectures have been proposed as there is no single consensus on architecture 
+for IoTs. The most basic architecture is a three-layer architecture [3–5] as shown in Figure 8.  
+
+Figure 8: 3 Layer Architecture of IoTs  
+(Source: Sethi & Sarangi, 2017) 
+ 
+The perception layer is the physical layer, which has sensors for sensing and gathering 
+parameters about the environment, or identifies other smart objects in the environment. 
+The network layer is responsible for connecting to other smart things, network devices, and 
+servers, and is also used for transmitting and processing sensor data. 
+The application layer is responsible for delivering application specific services to the user. An 
+extension of the three-layer architecture is the five-layer architecture, which additionally 
+includes the processing and business layers as depicted in Figure 9 below.
+
+Figure  9: 5 Layer Architecture of IoTs  
+(Source: Sethi & Sarangi, 2017) 
+
+The transport layer transfers the sensor data from the perception layer to the processing 
+layer and vice versa through networks such as wireless, 3G, LAN, Bluetooth, RFID, and NFC. 
+The processing layer stores, analyses, and processes huge amounts of data that come from 
+the transport layer through various technologies such as databases, cloud computing, and big 
+data processing. The business layer manages the whole IoT system, including applications, 
+business and profit models, and users’ privacy.  
+Another architecture proposed by Ning and Wang in Figure 10 below is inspired by the layers 
+of processing in the human brain. It is inspired by the intelligence and ability of human beings 
+to think, feel, remember, make decisions, and react to the physical environment. It is 
+constituted of three parts. First is the human brain, which is analogous to the processing and 
+data management unit or the data centre. Second is the spinal cord, which is analogous to 
+the distributed network of data processing nodes and smart gateways. Third is the network 
+of nerves, which correspond to the networking components and sensors. 
+
+
+Figure 10: 5 Layer Architecture of IoTs  
+(Source: Ning & Wang, 2011) 

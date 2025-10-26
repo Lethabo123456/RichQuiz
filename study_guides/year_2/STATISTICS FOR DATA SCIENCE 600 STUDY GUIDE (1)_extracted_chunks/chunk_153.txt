@@ -1,0 +1,34 @@
+Let's begin by learning a very important value in statistics, the z-score. 
+The z-score is a way of telling us how far away a single data value is from the mean. 
+The z-score of a x data value is as follows: 
+ 
+Remember that the standard deviation was (sort of) an average distance that the data is from 
+the mean, and now, the z-score is an individualized value for each data point. We can find the 
+z-score of a data value by subtracting it from the mean and dividing it by the standard 
+deviation. The output will be the standardized distance a value is from a mean. We use the z-
+score all over statistics. It is a very effective way of normalizing data that exists on very 
+different scales, and to put data in context of their mean. 
+ 
+Let's take our previous data on the number of friends on Facebook and standardize the data 
+to the z-score. For each data point, we will find its z-score by applying the preceding 
+formula. We will take everyone, subtract the average friends from the value, and divide that 
+by the standard deviation, as shown z_scores = [] 
+m = np.mean(friends)  # average friends on Facebook s = np.std(friends)   # 
+standard deviation friends on Facebook for friend in friends: 
+    z = (friend - m)/s  # z-score     z_scores.append(z)  # make a list of the scores for 
+plotting 
+Now, let's plot these z-scores on a bar chart. The following chart shows the same individuals 
+from our previous example using friends on Facebook, but instead of the bar height 
+revealing the raw number of friends, now each bar is the z-score of the number of friends 
+they have on Facebook. If we graph the z-scores, we'll notice a few things: plt.bar(y_pos, 
+z_scores)
+
+• We have negative values (meaning that the data point is below the mean) 
+• The bars' lengths no longer represent the raw number of friends, but the degree to 
+which that friend count differs from the mean This chart makes it very easy to pick 
+out the individuals with much lower and higher friends on an average. For example, 
+the individual at index 0 has fewer friends on an average (they had 109 friends where 
+the average was 789). 
+• What if we want to graph the standard deviations? Recall that we earlier graphed 
+three horizontal lines: one at the mean, one at the mean plus the standard deviation 
+(), and one at the mean minus the standard deviation () 

@@ -1,0 +1,25 @@
+Definition 56 
+When (u, v) is an edge of the graph G with directed edges, u is said to be 
+adjacent to v and v is said to be adjacent from u. The vertex u is called the 
+initial vertex of (u, v), and v is called the terminal or end vertex of (u, v). The 
+initial vertex and terminal vertex of a loop are the same. 
+ 
+Definition 57 
+In a graph with directed edges the in-degree of a vertex v, denoted by 
+deg−(v), is the number of edges with v as their terminal vertex. The out-
+degree of v, denoted by deg+ (v), is the number of edges with v as their initial 
+vertex. (Note that a loop at a vertex contributes 1 to both the in-degree and 
+the out-degree of this vertex.) Because each edge has an initial vertex and 
+a terminal vertex, the sum of the in-degrees and the sum of the out-degrees 
+of all vertices in a graph with directed edges are the same. Both of these sums are 
+the number of edges in the graph. 
+
+4.2.2 Some Special Simple Graphs 
+Complete Graphs: 
+A complete graph on n vertices, denoted by Kn, is a simple graph that 
+contains exactly one edge between each pair of distinct vertices. The graphs 
+Kn, for n = 1, 2, 3, 4, 5, 6, are displayed in Figure 4.6. A simple graph for which 
+there is at least one pair of distinct vertex not connected by an edge is called 
+noncomplete. 
+ 
+Figure 4.6: The Graphs Kn for 1 ≤ n ≤ 6. 

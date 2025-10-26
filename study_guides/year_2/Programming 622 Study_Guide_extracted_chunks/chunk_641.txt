@@ -1,0 +1,14 @@
+cksort, the number of key comparisons is 1.39nlog2n + O(n) and the number of 
+swaps is 0.69nlog2n + O(n). Because each swap is three assignments, the number of item assignments in 
+the average case of quicksort is at least 1.39nlog2n + O(n). It now follows that for the key comparisons, 
+the average case of quicksort is somewhat better than the worst case of heapsort. On the other hand, for 
+the item assignments, the average case of quicksort is somewhat poorer than the worst case of heapsort. 
+However, the worst case of quicksort is of O(n2). Empirical studies have shown that heapsort usually takes 
+twice as long as quicksort, but avoids the slight possibility of poor performance.  
+  
+ 
+8.10  Priority Queues (Revisited)  
+  
+Chapter 6 introduced priority queues. Recall that in a priority queue, customers or jobs with higher 
+priorities are pushed to the front of the queue. Chapter 6 stated that we would discuss the 
+implementation of priority queues after describing heapsort. For simp

@@ -1,0 +1,54 @@
+7.5 Process Management 
+Windows is a preemptive, multitasking, multi-threaded operating system. By default, a process 
+contains one thread, which is composed of a unique identifier, the contents of a volatile set of 
+registers, indicating the processor’s state; two stacks used during the thread’s execution; and a private 
+storage area that can be used by subsystems and dynamic link libraries. 
+For systems with multiple processors, a process can have as many threads as there are CPUs available. 
+The overhead incurred by a thread is minimal. In some cases, it is actually advantageous to split a 
+single application into multiple threads because the entire program is then much easier to 
+understand. Figure 7.2 below shows multitasking using multithreading. The figure shown below shows 
+how a process with four threads can be scheduled for execution on a system with four processors. 
+ 
+Figure 7.2 
+
+7.6. Device Management 
+The I/O system must accommodate the needs of existing devices, from a pointing device, to 
+keyboards, printers, displays, storage units, multimedia, and networks. In addition, the operating 
+system must consider future storage and input technologies. 
+The I/O system provides a uniform high-level interface for executive-level I/O operations and 
+eliminates the need for applications to account for differences among physical devices. It shields the 
+rest of the operating system from the details of device manipulation and, thus, minimizes and isolates 
+hardware-dependent code. 
+The I/O system in Windows is designed to provide the following: multiple installable file systems, 
+services to make device-driver development as easy as possible yet workable on multiprocessor 
+systems, the ability for system administrators to add or remove drivers from the system dynamically, 
+fast I/O processing while allowing drivers to be written in a high-level language, and mapped file I/O 
+capabilities for image activation, file caching, and application use. 
+To make sure the operating system works with a wide range of hardware peripherals, Windows 
+provides a device-independent model for I/O services. This model takes advantage of a concept, 
+called a multilayered device driver, that’s not found in operating systems, such as MS-DOS with 
+monolithic device drivers. These multilayered drivers provide a large and complex set of services that 
+are understood by an intermediate layer of the operating system. 
+Each device driver is made up of a standard set of routines, including those listed in Table 7.2. 
+ 
+Table 7.2 
+
+A driver object may have multiple device objects connected to it. The list of device objects represents 
+the physical, logical, and virtual devices that are controlled by the driver. For example, each sector of 
+a hard disk has a separate device object with sector specific information. However, the same hard disk 
+driver is used to access all sectors. When a driver is unloaded from the system, the I/O Manager uses 
+the queue of device objects to determine which devices will be affected by the removal of the driver. 
+ 
+Using objects to keep track of information about drivers frees the I/O Manager from having to know 
+details about individual drivers, it just follows a pointer to locate a driver. This provides portability and 
+allows new drivers to be easily loaded. Another advantage to representing devices and drivers with 
+different objects is that, if the system configuration changes, it is easier to assign drivers to control 
+additional or different devices. 
+
+Another device driver feature of recent Windows operating systems is that almost all low-level I/O
+operations are asynchronous. This means that when an application issues an I/O request, it does not
+have to wait for data to be transferred, it can continue to perform other work while a data transfer is
+taking place. Asynchronous I/O must be specified by the process when it opens a file handle. During
+asynchronous operations, the process must be careful not to access any data from the I/O operation
+until the device driver has finished the data transfer. Asynchronous I/O is useful for operations that
+take a long time to complete, or when completion time is variable.

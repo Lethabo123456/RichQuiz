@@ -1,0 +1,17 @@
+actor to -1. The subtree with root node 80 is an AVL tree. Now we go 
+back to 70. Clearly, the subtree with root node 70 is not an AVL tree. So we construct this subtree. In this 
+case, we first reconstruct the subtree at root node 80, and then reconstruct the subtree at root node 70 
+to obtain the tree shown in Figure 9-15(c). (These constructions, that is, rotations, are explained in the 
+next section, ‘‘AVL Tree Rotations.’’)  
+  
+Notice that in Figures 9-14(c) and 9-15(c), after reconstructing the subtree at the node, the subtree no 
+longer grew in height. At this point, we usually send the message that overall the tree did not gain any 
+height to the remaining nodes on the path back to the root node of the tree, and so the remaining nodes 
+on the path do not need to do anything.  
+  
+Next, consider the AVL tree of Figure 9-16. Let us insert 95 into this AVL tree.  
+  
+  
+FIGURE 9-16 AVL tree before and after inserting 95  
+  
+We search the tree and insert 95, as shown in Figure 9-

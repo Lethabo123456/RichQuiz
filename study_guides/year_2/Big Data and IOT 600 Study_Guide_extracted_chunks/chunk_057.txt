@@ -1,0 +1,32 @@
+Linking customer data 
+Link the customer data from your interaction points to give a holistic picture of customer 
+journey. If a customer phones your call centre after looking online at your cancellation policy 
+webpage, you should be able to connect those two events in your system. To do this, enter a 
+unique customer field (such as phone number or user name) along with the call record. 
+If you are monitoring a customer walking through your store, link that footpath with 
+subsequent register sales information (subject to privacy considerations). Do this by recording 
+the timestamp and location of the point of sale with the footpath data. Combine the data 
+centrally to give the complete picture. 
+
+Sometimes you’ll use anonymous customer data, such as when analysing traffic flow. Other 
+times you’ll use named-customer data, such as when analysing lifetime activity. For the 
+named-customer applications, you’ll want to de-duplicate customers. This is difficult, and 
+you’ll probably have limited success. The best situation is when customers always present a 
+unique customer ID when using your service. In an online setting, this would require a highly 
+persistent and unique login (as with Facebook). Offline, it typically requires photo ID. In most 
+situations, you won’t have this luxury, so use best efforts to link customer interactions. 
+You’ll typically face the following problems in identifying your customers: 
+ Problem: Customers will not identify themselves (e.g. not logging in). 
+ Possible solutions: Use web cookies and IP addresses to link visits from the same 
+visitors, producing a holistic picture of anonymous customer journeys extended 
+across sessions. Use payment details to link purchases to customers. Smartphones may 
+provide information to installed apps that allow additional linking. Talk to your app 
+developers about this. 
+ Problem: Customers create multiple logins. 
+ Possible solutions: Clean your customer database by finding accounts that share 
+key fields: name, email address, home address, date of birth, or IP address. A 
+graph database such as Neo4J can help in this process, as illustrated in Figure. Work 
+with the business to create logic for which customers to merge and which to associate 
+using a special database field (e.g. ‘spouse of’). Change your account creation process 
+to detect and circumvent creation of duplicate accounts, such as by flagging email 
+addresses from existing accounts. 

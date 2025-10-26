@@ -1,0 +1,37 @@
+h item is found, its index (that is, its location in the array) is returned. If 
+the search is unsuccessful, -1 is returned. Note that the following sequential search does not require the 
+list elements to be in any particular order.  
+  
+template <class elemType>  
+int arrayListType<elemType>::seqSearch(const elemType& item) const  
+{  
+int loc;  
+bool found = false;  
+  
+for (loc = 0; loc < length; loc++)  
+if (list[loc] == item)  
+{  
+found = true;  
+break;  
+} if 
+(found) return 
+loc; else  
+return -1;  
+ 
+}   
+  
+  
+  
+//end seqSearch  
+
+258  
+  
+  
+7.1.1.1 Sequential Search Analysis  
+  
+This section analyzes the performance of the sequential search algorithm in both the worst case and the 
+average case.  
+  
+The statements before and after the loop are executed only once and, hence, require very little computer 
+time. The statements in the for loop are the ones that are repeated several times. For each iteration of 
+the loop, the search item is compared with an element in the li

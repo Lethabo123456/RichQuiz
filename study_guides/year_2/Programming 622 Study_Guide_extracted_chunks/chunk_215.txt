@@ -1,0 +1,57 @@
+const linkedListType<Type>& otherList)  
+{  
+ 
+if (this != &otherList)    
+  
+//avoid self-copy  
+{  
+copyList(otherList);  
+}  
+  
+  
+  
+  
+//end else return 
+*this;  
+}  
+  
+The destructor uses the function destroyList, which is of O(n). The copy constructor and the function to 
+overload the assignment operator use the function copyList, which is of O(n). Therefore, each of these 
+functions are of O(n).  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+107  
+  
+TABLE 3-6 Time-complexity of the operations of the class linked ListType  
+ 
+ 
+ 
+ 
+ 
+3.3  
+Unordered Linked Lists  
+  
+As described in the previous section, we derive the class unorderedLinkedList from the abstract class 
+linkedListType and implement the operations search, insertFirst, insertLast, and deleteNode.  
+  
+The following class defines an unordered linked list as an ADT:  
+//***********************************************************  
+// This class specifies the members to implement the 
+basic // properties of an unordered li

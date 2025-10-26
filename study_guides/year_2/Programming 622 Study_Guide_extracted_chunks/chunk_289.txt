@@ -1,0 +1,26 @@
+ent that causes the same function to execute again before completing the current call. Recursive 
+algorithms are implemented using recursive functions.  
+  
+Next, let us write the recursive function that implements the factorial function.  
+  
+int fact(int num)  
+{ if (num == 0) return 1; else return num * 
+fact(num - 1);  
+}   
+Figure 4-1 traces the execution of the following statement:  
+ cout << fact(3) << endl;  
+  
+
+146  
+  
+  
+FIGURE 4-1 Execution of fact(4)  
+  
+The output of the previous cout statement is: 6  
+  
+In Figure 4-1, the down arrow represents the successive calls to the function fact, and the upward arrows 
+represent the values returned to the caller, that is, the calling function.   
+  
+Let us note the following from the previous example, involving the factorial function:  
+Logically, you can think of a recursive function as having an unlimited number of copies of itself. 
+Every call to a recursive function—that is, every recursive call—has its own code and its own

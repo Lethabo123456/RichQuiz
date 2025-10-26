@@ -1,0 +1,22 @@
+6.2  Neural Networks for Robotic Navigation and Decision-Making 
+While reinforcement learning provides the framework for learning from experience, neural 
+networks serve as the powerful function approximators that enable robots to process complex 
+sensory data and make intelligent navigation decisions. This section explores how deep learning 
+architectures transform raw sensor inputs into actionable navigation commands. 
+What are neural networks? 
+A neural network is a machine learning model inspired by the human brain. It consists of layers 
+of interconnected nodes (neurons) that transform input data through weighted connections and 
+non-linear activation functions. 
+Each node computes: 
+ 
+Neural networks learn by adjusting the weights to minimize prediction error using an algorithm 
+like backpropagation combined with gradient descent. 
+In robotics, environments are often complex, dynamic, and partially observable. Traditional rule-
+based systems break down in such conditions. Neural networks allow robots to: 
+
+• Perceive the environment from raw data (e.g., camera images, LIDAR) 
+• Approximate control policies in high-dimensional spaces 
+• Adapt to new environments via learning 
+
+Neural networks generalize well from examples and can learn complex patterns that would be 
+difficult to program manually.

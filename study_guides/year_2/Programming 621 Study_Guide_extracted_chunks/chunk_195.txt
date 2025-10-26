@@ -1,0 +1,26 @@
+member variables. 
+As an example, Figure below shows the objects myClock and yourClock with values 
+in their member variables. 
+ 
+ 
+Accessing Class Members 
+Once an object of a class is declared, it can access the members of the class. The 
+general syntax for an object to access a member of a class is: 
+ 
+The class members that a class object can access depend on where the object is 
+declared.  
+ If the object is declared in the definition of a member function of the class, then 
+the object can access both the public and private members. (We will elaborate 
+on this when we write the definition of the member function equalTime of the 
+class clockType in the section “Implementation of Member Functions,” later in 
+this chapter.)  
+ If the object is declared elsewhere (for example, in a user’s program), then the 
+object can access only the public members of the class. Recall that in C++, the 
+dot, . (period), is an operator called the member access operator. 
+ 
+ 
+
+177 | P a g e  
+ 
+ 
+In

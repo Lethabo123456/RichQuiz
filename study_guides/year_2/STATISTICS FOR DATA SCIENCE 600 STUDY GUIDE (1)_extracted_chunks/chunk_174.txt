@@ -1,0 +1,31 @@
+ter 6, Advanced 
+ 
+LEARNING OUTCOMES 
+After reading this Section of the guide, the learner should be able to:  
+• Understand point estimates 
+• Understand confidence intervals 
+• Understand the central limit theorem 
+• Understand hypothesis testing 
+ 
+
+P a g e  | 101 
+ 
+Probability, that the Poisson random variable is used when we know the average value of an 
+event and wish to model a distribution around it. 
+import numpy as np 
+import pandas as pd 
+import scipy.stats as stats 
+  
+np.random.seed(1234) 
+long_breaks = stats.poisson.rvs(loc=10, mu=60, size=3000)  # represents 3000 people who 
+take about a 60-minute break 
+  
+#Visualisation of the distribution 
+pd.Series(long_breaks).hist() 
+  
+                                       
+ 
+ 
+We see that our average of 60 minutes is to the left of the distribution. Also, because we only 
+sampled 3000 people, our bins are at their highest around 700-800 people. 
+Now, let's model 6000 people who take, on average, about 15 minutes' worth of break

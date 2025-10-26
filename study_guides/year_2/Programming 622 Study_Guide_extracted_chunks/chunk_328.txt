@@ -1,0 +1,21 @@
+the solution, as shown by Figure 4-14.  
+  
+  
+FIGURE 4-14 A solution to the 4-queens puzzle  
+  
+ 
+4.4.3  Backtracking and the 4-Queens Puzzle  
+  
+Suppose that the rows of the square board of the 4-queens puzzle are numbered 0 through 3 and the 
+columns are numbered 0 through 3. (Recall that in C++, an array index starts at 0.)  
+  
+For the 4-queens puzzle, we start by placing the first queen in the first row and first column, thus 
+generating the tuple (0). We then place the second queen in the third column of the second row and so 
+
+164  
+  
+generate the tuple (0,2). When we try to place the third queen in the third row, we determined that the 
+third queen cannot be placed in the third row and so we back up to the partial solution (0,2), remove 2 
+from the tuple and then generate the tuple (0,3), that is, the third queen is placed in the fourth column of 
+the second row. With the partial solution (0,3), we then try to place the third queen in the third row and 
+generate the tuple

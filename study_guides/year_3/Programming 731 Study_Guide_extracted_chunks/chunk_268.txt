@@ -1,0 +1,29 @@
+6.6 Streams   
+ 
+Java programs perform I/O through streams. A stream is an abstraction that either produces or 
+consumes information. A stream is linked to a physical device by the Java I/O system. All streams 
+behave in the same manner, even if the actual physical devices to which they are linked differ. Thus, 
+the same I/O classes and methods can be applied to different types of devices. This means that an 
+input stream can abstract many kinds of input: from a disk file, a keyboard, or a network socket. 
+Likewise, an output stream may refer to the console, a disk file, or a network connection. Streams 
+are a clean way to deal with input/ output without having every part of your code understand the 
+difference between a keyboard and a network, for example. Java implements streams within class 
+hierarchies defined in the java.io package.   
+   
+6.6.1 Byte Streams Classes   
+ 
+Byte streams are defined by using two class hierarchies. At the top are two abstract classes: 
+InputStream and OutputStream. Each of these abstract classes has several concrete subclasses that 
+handle the differences among various devices, such as disk files, network connections, and even 
+memory buffers. Remember, to use the stream classes, you must import java.io.   
+   
+Table 6.3 The Byte Stream Classes in java.io   
+
+The abstract classes InputStream and OutputStream define several key methods that the other 
+stream classes implement. Two of the most important are read( ) and write( ), which, respectively, 
+read and write bytes of data. Each has a form that is abstract and must be overridden by derived 
+stream classes. Character Stream classes   
+
+Character streams are defined by using two class hierarchies. At the top are two abstract classes: 
+Reader and Writer. These abstract classes handle Unicode character streams. Java has several 
+concrete subclasses of each of these. 

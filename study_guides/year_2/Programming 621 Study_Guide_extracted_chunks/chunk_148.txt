@@ -1,0 +1,19 @@
+provided in a table form. For example, suppose that you 
+want to track the number of cars in a particular color that are in stock at a local 
+dealership. The dealership sells six types of cars in five different colors. Figure below 
+shows sample data 
+ 
+You can see that the data is in a table format. The table has 30 entries, and every 
+entry is an integer. Because the table entries are all of the same type, you can declare 
+a one-dimensional array of 30 components of type int. The first five components of the 
+one-dimensional array can store the data of the first row of the table, the next five 
+components of the one-dimensional array can store the data of the second row of the 
+table, and so on. In other words, you can simulate the data given in a table format in 
+a one-dimensional array. 
+ 
+Two-dimensional array: A collection of a fixed number of components arranged in 
+rows and columns (that is, in two dimensions), wherein all components are of the same 
+type. 
+ 
+ 
+wherein intExp1

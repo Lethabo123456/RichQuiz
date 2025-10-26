@@ -1,0 +1,19 @@
+the Web server. This is very useful, because it means your PHP scripts can store information outside 
+the scripts themselves.   
+   
+Files are stored in directories on a hard drive, and because they retain their data after the computer 
+is shut down, they are a persistent storage mechanism, instead of temporary storage such as RAM. 
+Directories are a special kind of file made for storing other files. Directories are created hierarchically 
+inside other directories, starting with the root (to  level) directory and proceeding down from there.   
+
+44   
+   
+   
+Files can contain any kind of data, and also can contain quite a bit of information about themselves, 
+such as who owns them and when they were created. PHP makes working with the file system easy 
+by including functions that allow you to obtain information about files, as well as open, read from, 
+and write to them.   
+   
+This unit is all about the PHP functions for working with the file system. You learn:   
+• 
+More about file

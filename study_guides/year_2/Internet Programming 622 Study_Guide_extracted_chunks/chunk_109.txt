@@ -1,0 +1,33 @@
+e same 
+script.   
+   
+3.8 Reading And Writing To Files   
+Now that you know how to open and close files, it is time to take a look at reading and writing data 
+in a file. In the following sections you learn about these functions:   
+• 
+fread() — Reads a string of characters from a file   
+• 
+fwrite() — Writes a string of characters to a file   
+• 
+fgetc() — Reads a single character at a time   
+
+48   
+   
+• 
+feof() — Checks to see if the end of the file has been reached   
+• 
+fgets() — Reads a single line at a time   
+• 
+fgetcsv() — Reads a line of comm-separated values   
+• 
+file() — Reads an entire file into an array   
+• 
+file_get_contents() — Reads an entire file into a string without needing to open it   
+• 
+file_put_contents() — Writes a whole string to a file without needing to open it   
+• 
+fpassthru() — Displays the contents of an open file   
+• 
+readfile() — Displays the contents of a file without needing to open it   
+• 
+fseek() — Moves the file pointer to a specific locati

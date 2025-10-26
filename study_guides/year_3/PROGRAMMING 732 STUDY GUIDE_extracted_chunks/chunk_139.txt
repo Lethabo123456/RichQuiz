@@ -1,0 +1,49 @@
+4.2 COOKIES  
+  
+For those unfamiliar with cookies, a cookie is a named piece of data maintained by a browser, normally 
+for session management. Since HTTP connections are stateless, you can use a cookie to store persistent 
+information accross multiple HTTP connections. The Cookie class is where all the "magic" is done. The 
+HttpSession class, described next, is actually easier to use. However, it doesn't support retaining the 
+information across multiple browser sessions.   
+To save cookie information you need to create a Cookie, set the content type of the HttpServletResponse 
+response, add the cookie to the response, and then send the output. You must add the cookie after setting 
+the content type, but before sending the output, as the cookie is sent back as part of the HTTP response 
+header.   
+private static final String SUM_KEY = "sum";  
+  ... int sum = ...; // get old value and 
+add to it  
+Cookie theCookie = new Cookie (SUM_KEY, Integer.toString(sum)); 
+response.setContentType("text/html"); 
+response.addCookie(theCookie);   
+It is necessary to remember that all cookie data are strings. You must convert information like int data to 
+a String object. By default, the cookie lives for the life of the browser session. To enable a cookie to live 
+longer, you must call the setMaxAge(interval) method. When positive, this allows you to set the number 
+of seconds a cookie exists. A negative setting is the default and destroys the cookie when the browser 
+exits. A zero setting immediately deletes the cookie.   
+Retrieving cookie data is a little awkward. You cannot ask for the cookie with a specific key. You must ask 
+for all cookies and find the specific one you are interested in. And, it is possible that multiple cookies could 
+have the same name, so just finding the first setting is not always sufficient. The following code finds the 
+setting of a single-valued cookie: 
+
+  int sum = 0;  
+  Cookie theCookie = null;  
+  Cookie cookies[] = request.getCookies();   
+if (cookies != null)   
+ {  
+    for(int i=0, n=cookies.length; i < n; i++)   
+   {  
+      theCookie = cookies[i];  
+      if (theCookie.getName().equals(SUM_KEY))   
+      {         
+try          
+{  
+          sum = Integer.parseInt(theCookie.getValue());  
+        }   
+        catch (NumberFormatException ignored)  
+       {  
+          sum = 0;  
+       }         
+break;  
+      }  
+   }  
+      }  

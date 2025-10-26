@@ -1,0 +1,19 @@
+of a class is a variable, you declare it just like any other variable. Furthermore, in the 
+definition of the class, you cannot initialize a variable when you declare it.  
+ If a member of a class is a function, you typically use the function prototype to define that member.  
+ If a member of a class is a function, it can (directly) access any member of the class—data members 
+and function members. That is, when you write the definition of the member function, you can 
+directly access any data member of the class without passing it as a parameter. The only obvious 
+condition is that you must declare an identifier before you can use it.  
+  
+In C++, class is a reserved word, and it defines only a data type; no memory is allocated. It announces the 
+declaration of a class. Moreover, note the semicolon (;) after the right brace. The semicolon is part of the 
+syntax. A missing semicolon, therefore, will result in a syntax error.  
+  
+  
+  
+  
+
+27  
+  
+The members of a class are classified

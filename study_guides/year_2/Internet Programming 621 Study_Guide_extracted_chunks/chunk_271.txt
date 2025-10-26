@@ -1,0 +1,82 @@
+0.05 
+c) 1.25 
+d) Error 
+  
+Answer: a 
+  
+165. 
+What will be the output of the following PHP code ? 
+<?php 
+echo $red; 
+?> 
+a) 0 
+b) Nothing 
+c) True 
+d) Error 
+  
+Answer: b 
+  
+166. 
+What will be the output of the following PHP code ? 
+<?php 
+$four4 = 4; 
+$three3 = 3; 
+$two2 = 2; 
+echo $four4 + $three3 / $two2 - 1; 
+?> 
+a) 4.5 
+b) 7 
+c) 3.5 
+d) Error 
+  
+Answer: a 
+
+  
+167. 
+What will be the output of the following PHP code ? 
+<?php 
+$4four = 4; 
+$3three = 3; 
+$2two = 2; 
+echo $4four + $3three / $2two - 1; 
+?> 
+a) 4.5 
+b) 7 
+c) 3.5 
+d) Error 
+  
+Answer: d 
+  
+168. 
+What will be the output of the following PHP code ? 
+<?php 
+int $one = 1; 
+echo "$one"; 
+?> 
+  
+a) 0 
+b) 1 
+c) $one 
+d) Error 
+  
+Answer: d 
+  
+169. 
+What will be the output of the following PHP code ? 
+<?php 
+var $one = 1; 
+var $two = 2; 
+echo $one / $two * $one / $two * $two; 
+?> 
+a) 1 
+b) 0 
+c) 0.5 
+d) Error  
+Answer: d 
+
+  
+170. 
+What will be the output of the following PHP code ? 
+<?php 
+$hello = "Hello World"; 
+$bye =

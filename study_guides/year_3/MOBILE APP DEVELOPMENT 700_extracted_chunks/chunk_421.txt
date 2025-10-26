@@ -1,0 +1,40 @@
+The code to put markers on the map uses a number of classes unique to the mapping application. 
+These classes and their methods make up the bulk of the new code.
+ 
+▪ Lines 1–5—To properly bound a group of points, the app needs to know the size of the display. 
+This code asks the device for the dimensions of the display. 
+▪ Line 8—A LatLngBounds.Builder is used to construct the geographic boundaries of a set of GPS 
+coordinates. This line instantiates the builder for use when the app is going to display all contacts in 
+the database. 
+▪ Lines 9–32—If the contact’s ArrayList contains Contact objects, the Activity loops through them, 
+adding each one to the map. 
+▪ Lines 26–28—A LatLng object is instantiated with the GPS coordinates returned from the 
+geocoding service. The LatLng object is a point on a map. This point is then included in the 
+LatLngBounds.Builder, where it is considered in creating the map boundaries. 
+▪ Lines 30–31—A Marker is added to the map. The marker is a standard marker in the form of a pin. 
+The addMarker method is a MarkerOptions object. The MarkerOptions object is used to set the LatLng 
+object as the position on the map for the marker; the title of the marker that is displayed when the 
+marker is clicked by the user; and a snippet, which is displayed under the title when the marker is 
+clicked. A custom image can be added instead of the standard marker by setting the icon attribute of 
+the MarkerObject using this form: 
+.icon(BitmapDescriptorFactory.fromResource(R.drawable.imagename).
+▪ Line 33—After all the contact markers have been added, the message animateCamera is sent to 
+the map to tell it to zoom in to the location of the markers. A CameraUpdateFactory is the object used 
+to set the zoom level. It is passed to the boundaries of the zoom through the LatLngBounds.Builder, 
+the measured size of the device display, and the amount of padding to put around the bounds. If the 
+padding is set too small, some of the contact markers will be placed so close to the edge of the screen 
+that the user may not see all the markers. 
+▪ Lines 37–58—If the contacts ArrayList does not contain any objects, the code checks whether there 
+is a single Contact object to map. If there is, the address is retrieved and a LatLng object is instantiated 
+for the contact’s coordinates; the LatLng object is used to add a marker to the map. 
+▪ Line 57—The zoom level of the map is set differently with one point than with several. To zoom to 
+a single point, the CameraUpdateFactory is sent the message newLatLngZoom. This message has the 
+LatLng object and zoom level as parameters. The marker will be centered in the map and zoomed to 
+level 16. 
+▪ Lines 59–70—If no contacts are available either in the ArrayList or the Contact object, the app 
+displays an error message. In this case, an object called an AlertDialog is used. An AlertDialog displays 
+the commonly used dialog with a title, message, and button to acknowledge that the user saw the 
+message. This is used rather than a Toast, because the user is expecting to see contacts on the map. 
+The user may miss the Toast and decide that the app does not work. 
+Test the app. Make sure you have entered valid addresses for contacts prior to testing the mapping 
+function.

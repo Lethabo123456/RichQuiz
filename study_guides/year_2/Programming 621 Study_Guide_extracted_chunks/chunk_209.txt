@@ -1,0 +1,18 @@
+he member 
+variables. We can, therefore, categorize the member functions of the class clockType 
+into two categories: member functions that modify the member variables and member 
+functions that only access, but do not modify, the member variables. 
+ 
+ 
+This is typically true for any class. That is, every class has member functions that only 
+access but do not modify the member variables, called accessor functions, and 
+member functions that modify the member variables, called mutator functions. 
+ 
+Accessor function: A member function of a class that only accesses (that is, does 
+not modify) the value(s) of the member variable(s). 
+Mutator function: A member function of a class that modifies the value(s) of the 
+member variable(s). 
+ 
+Because an accessor function only accesses the values of the member variables, as 
+a safeguard, we typically include the reserved word const at the end of the headings 
+of these functions. Moreover, a constant member function of a class cannot modify the

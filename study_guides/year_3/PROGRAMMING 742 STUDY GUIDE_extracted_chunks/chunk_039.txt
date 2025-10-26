@@ -1,0 +1,79 @@
+1.6.1 Defining Structs 
+
+The syntax for declaring a struct is almost identical to that for a class: 
+[attributes] [ access-modifiers] struct identifier [ :interface-list] { struct-members } 
+
+Example 1-2.0 illustrates the definition of a struct. Location represents a point on a two-
+dimensional surface. Notice that the struct Location is declared exactly as a class would be, 
+except for the use of the keyword s truct. Also notice that the Location constructor takes 
+wo integers and assigns their value to the instance members, x and y. The x and y coordinates 
+of Location are declared as properties.
+
+Example 1.2-0. Creating a struct
+ 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+ 
+namespace Values 
+{ 
+   
+  public struct Location 
+  { 
+   
+     public Location (int xCoordinate, int yCoordinate) 
+        { 
+      
+            xVal = xCoordinate; 
+            yVal = yCoordinate; 
+        } 
+ 
+     public int x { 
+         get 
+         { 
+           return xVal; 
+         } 
+        set{ 
+            xVal = value;  
+            } 
+        }
+     public int y { 
+         get { 
+        return yVal; 
+ 
+       } 
+         
+           set{ 
+               yVal = value; 
+           } 
+      } 
+      
+ 
+     public override string ToString( ){ 
+ 
+         return (String.Format("{0}, {1}", xVal,yVal)); 
+       } 
+     private int xVal; 
+     private int yVal; 
+    
+} 
+     public class Tester{ 
+ 
+   public void myFunc (Location loc){ 
+        loc.x = 50; 
+        loc.y = 100; 
+       Console.WriteLine("Loc1 location: {0} ", loc); 
+    } 
+     static void Main( ){ 
+            
+          Location loc1 = new Location(200,200); 
+         Console.WriteLine("Loc1 location: {0} ", loc1); 
+             Tester t = new Tester( );  
+             t.myFunc(loc1); 
+         Console.WriteLine("Loc1 location: {0} ",loc1); 
+     } 
+   } 
+}  
+Output :

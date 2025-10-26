@@ -1,0 +1,28 @@
+Controlling letter spacing and line height 
+ 
+h1, h2 {
+    font-family: Quicksand, Verdana, Geneva, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+/* Navigation Styles */
+nav {
+   font-size: 0.8em;
+}
+
+nav > el {
+   line-height: 2em 
+  
+Working with Font Styles 
+The style sheet built into your browser applies specific styles to key page elements; for 
+instance, address elements are often displayed in italic, headings are often displayed in 
+boldface. You can specify a different font style using the following font-style property  
+ 
+font-style: type; 
+ 
+Where type is normal, italic, or oblique. The italic and oblique styles are similar in appearance, 
+but might differ subtly depending on the font in use. To change the weight of the text, use the 
+following font-weight property 
+ 
+font-weight: weight; 
+ 

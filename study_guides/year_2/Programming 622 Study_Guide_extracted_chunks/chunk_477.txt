@@ -1,0 +1,35 @@
+set the waiting time of a customer.  
+//Postcondition: waitingTime = time;  
+  
+void incrementWaitingTime();  
+//Function to increment the waiting time by one time unit.  
+//Postcondition: waitingTime++;  
+  
+int getArrivalTime() const;  
+//Function to return the arrival time of a customer.  
+//Postcondition: The value of arrivalTime is returned.  
+  
+int getTransactionTime() const;  
+//Function to return the transaction time of a customer.  
+//Postcondition: The value of transactionTime is returned.  
+  
+int getCustomerNumber() const;  
+//Function to return the customer number.  
+//Postcondition: The value of customerNumber is returned.  
+  
+private:  
+int customerNumber; 
+int arrivalTime; int 
+waitingTime;  
+int transactionTime;  
+};   
+Figure 6-11 shows the UML diagram of the class customerType.  
+  
+
+239  
+  
+  
+FIGURE 6-11 UML diagram of the class customerType  
+  
+The definitions of the member functions of the class customerType follow easily from their descriptions. 
+Next, we gi

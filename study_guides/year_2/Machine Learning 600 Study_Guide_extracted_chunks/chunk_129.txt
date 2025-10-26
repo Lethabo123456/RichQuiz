@@ -1,0 +1,14 @@
+itting. Another commonly used 
+approach is regularization.  
+Regularization is about adding some penalty whenever a new feature is added to the model. 
+Regularization intervenes in the training phase when results are not convincing and you are 
+tempted to add more features to the model to achieve better results. In doing so, the risk is 
+overfitting, namely a model too close to the source dataset. To try to avoid that, regularization 
+recommends to add a penalty to each new feature. Adding a penalty, however, automatically 
+increases the error, so in the end, it becomes a matter of adding just the features that bring 
+an inherent value and reduce the error. Regularization is a guard against making the model 
+uselessly complex. 
+Preparing data for processing 
+The actual performance of algorithms also depends on the format of the data with which they 
+work. Think, for example, of sorting algorithms. For some of them, the performance depends 
+on the characteristics of the sequence of inpu

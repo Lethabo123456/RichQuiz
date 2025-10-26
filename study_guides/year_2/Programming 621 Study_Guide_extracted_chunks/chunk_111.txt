@@ -1,0 +1,13 @@
+in Line 13 uses the function toupper to output the 
+uppercase letter that corresponds to 'a', which is A. Note that the function toupper 
+returns an int value. Therefore, the value of the expression toupper('a') is 65, which is 
+the ASCII value of 'A'. To print the character A rather than the value 65, you need to 
+apply the cast operator as shown in the statement in Line 13. The statement in Line 
+14 uses the function pow to output 4.56.0. In C++ terminology, it is said that the 
+function pow is called with the parameters 4.5 and 6.0. The statements in Lines 15 to 
+17 prompt the user to enter two decimal numbers and store the numbers entered by 
+the user in the variables firstNum and secondNum. In the statement in Line 18, the 
+function pow is used to output firstNumsecondNum. In this case, the function pow is 
+called with the parameters firstNum and secondNum and the values of firstNum and 
+secondNum are passed to the function pow. The other statements have similar 
+meanings. Once ag

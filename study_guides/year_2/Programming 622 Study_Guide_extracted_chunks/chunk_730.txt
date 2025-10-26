@@ -1,0 +1,20 @@
+AVL tree before and after inserting 95  
+  
+We search the tree and insert 95, as shown in Figure 9-16(b). After inserting 95, we see that the subtrees 
+with root nodes 90, 80, and 75 are still AVL trees. When backtracking the path, we simply adjust the 
+balance factor of these nodes (if needed). However, when we backtrack to the root node, we discover 
+that the tree at this node is no longer an AVL tree. Prior to insertion, bf(50) was 1, that is, its right subtree 
+was higher than its left subtree. After insertion, the subtree grew in height, thus violating the balance 
+criteria at 50. So we construct the tree at node 50. In this case, the tree will be reconstructed as shown in 
+Figure 9-16(c).   
+  
+
+358  
+  
+Before discussing the general algorithms for reconstructing (rotating) a subtree, let us consider one more 
+case. Consider the AVL tree as shown in Figure 9-17(a). Let us insert 88 in this tree.  
+  
+  
+FIGURE 9-17 AVL tree before and after inserting 88  
+  
+Following the insert

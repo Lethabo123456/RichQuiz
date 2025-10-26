@@ -1,0 +1,23 @@
+ents of the $authors array. Write a script to add an 
+“authorName ” element to each associative array within the $books array that contains the author 
+name string pulled from the $authors array. Display the resulting $books array in a Web page.  
+  
+  
+  
+2. Imagine you are writing a version of the computer game Minesweeper. Use arrays to create and 
+store a minefield on a 20 x 20 grid. Place ten mines randomly on the grid, then display the grid, 
+using asterisks ( * ) for the mines and periods ( . ) for the empty squares. (Hint: To return a random 
+number between 0 and 19 inclusive, use rand( 0, 19 ) .)  
+ 
+
+74  
+6. RE-USING CODE AND WRITING FUNCTIONS  
+  
+  
+Section Outcomes At the end of this section of the syllabus, the 
+learner should be able to:  
+  
+Distinguish between a PHP built-in function and a re-usable, bespoke function that the user 
+creates to handle user-specific tasks.  
+Declare user-supplied or user-created functions including the ability to distinguish between 
+an

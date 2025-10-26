@@ -1,0 +1,38 @@
+lts. To do this, you must carefully evaluate which columns, 
+tables, and computations are required to generate the desired output.  
+ 
+ 
+DBMS performance tuning includes tasks such as managing the DBMS processes in 
+primary memory (allocating memory for caching purposes) and managing the structures in 
+physical storage (allocating space for the data files). 
+ 
+ 
+ 
+ 
+ 
+
+ 
+171 
+ 
+  
+Review Questions  
+ 
+1. What is database performance tuning? 
+2. What database statistics measurements are typical of tables, indexes, and 
+resources? 
+3. In simple terms, the DBMS processes a query in three phases. What are the 
+phases, and what is accomplished in each phase? 
+4. What is the difference between a rule-based optimizer and a cost-based 
+optimizer? 
+5. Give 3 general guidelines for creating and using indexes? 
+ 
+Problems  
+ 
+6. What recommendations would you make for managing the data files in a 
+DBMS with many tables and indexes? 
+ 
+Problems 7−9 are based on the following query: 
+ 
+ 
+ 
+7. What

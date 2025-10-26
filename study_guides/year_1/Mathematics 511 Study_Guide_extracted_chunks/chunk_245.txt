@@ -1,0 +1,16 @@
+Figure 4.17: Hamilton’s “A Voyage Round the World” Puzzle
+
+Figure 4.18: A Solution to the “A Voyage Round the World” Puzzle. 
+
+
+Worked Example 
+Which of the simple graphs in Figure 7 have a Hamilton circuit or, if not, a 
+Hamilton path? 
+ 
+Solution: 
+G1 has a Hamilton circuit: a, b, c, d, e, a. There is no Hamilton circuit in G2 
+(this can be seen by noting that any circuit containing every vertex must 
+contain the edge {a, b} twice), but G2 does have a Hamilton path, namely, 
+a, b, c, d. G3 has neither a Hamilton circuit nor a Hamilton path, because 
+any path containing all vertices must contain one of the edges {a, b},  
+{e, f }, and {c, d} more than once. 

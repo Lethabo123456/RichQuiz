@@ -1,0 +1,17 @@
+e moved to its proper location, and lastInOrder is a pointer to the last node 
+of the sorted portion of the list. For example, see the linked list in Figure 8-11.  
+(We assume that the nodes are in the usual info-link form as described in Chapter 3.)  
+  
+  
+FIGURE 8-11 Linked list and pointers lastInOrder and firstOutOfOrder  
+  
+First, we compare the info of firstOutOfOrder with the info of the first node. If the info of firstOutOfOrder 
+is smaller than the info of first, then the node firstOutOfOrder is to be moved before the first node of the 
+list; otherwise, we search the list starting at the second node to find the location where to move 
+firstOutOfOrder. As usual, we search the list using two pointers, for example current and trailCurrent. The 
+pointer trailCurrent points to the node just before current. In this case, the node firstOutOfOrder is to be 
+
+291  
+  
+moved between trailCurrent and current. Of course, we also handle any special cases such as an empty 
+list, a list wi

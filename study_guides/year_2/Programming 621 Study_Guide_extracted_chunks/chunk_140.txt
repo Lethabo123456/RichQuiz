@@ -1,0 +1,39 @@
+her formal parameter specifying the number of elements in the array, as 
+in the following function: 
+ 
+The first parameter of the function initialize is an int array of any size. When the 
+function initialize is called, the size of the actual array is passed as the second 
+parameter of the function initialize. 
+ 
+
+131 | P a g e  
+ 
+ 
+
+132 | P a g e  
+ 
+ 
+ 
+ 
+
+133 | P a g e  
+ 
+ 
+ 
+ 
+Other Ways to Declare Arrays 
+Suppose that a class has 20 students and you need to keep track of their scores. 
+Because the number of students can change from semester to semester, instead of 
+specifying the size of the array while declaring it, you can declare the array as follows: 
+ 
+const int NO_OF_STUDENTS = 20;  
+int testScores[NO_OF_STUDENTS]; 
+
+134 | P a g e  
+ 
+ 
+Other forms used to declare arrays are:  
+const int SIZE = 50;                                              //Line 1  
+typedef double list[SIZE];                                   //Line 2  
+ 
+list yourList;

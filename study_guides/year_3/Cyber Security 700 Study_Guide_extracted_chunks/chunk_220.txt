@@ -1,0 +1,29 @@
+Estimating Vulnerability
+ 
+As with the estimation of threat event frequency, the estimation of vulnerability involves assigning 
+relative values to two dimensions. In the case of vulnerability, the two dimensions are the threat 
+capability and the control strength. FAIR defines threat capability as the capability of the threat 
+community to act against an asset using a specific threat. This needs to be expressed relative to some 
+baseline, and the technique used in FAIR is to define five levels of threat capability that describe the 
+strength of a specific threat relative to the overall threat population (refer to Table 3.8). 
+ 
+Estimating vulnerability involves looking at two factors:
+ 
+ Skill: The knowledge and experience of the threat agent are critical factors in the severity of 
+the threat action. Skill is reflected in the manner in which a threat agent is able to act, such as 
+performing social engineering or bypassing logon or other access barriers. In the case of 
+malware, the skill applied to constructing and propagating the malware determine the 
+severity of the threat. 
+ Resources: The other important factor is the resources, such as the time, financial resources, 
+and materials that a threat agent can bring to bear. 
+Thus, for a given threat to a given asset, the task of an analyst is to generate a reasonable estimate 
+using the five threat capability levels shown in the FAIR Risk Assessement levels. For software-based threats, the CVSS 
+discussed in Section 3.5 is a useful resource. 
+
+The other dimension of vulnerability is control strength, also referred to in the FAIR documents as 
+resistance strength; it is also called difficulty by FAIR practitioners. This dimension relates to the asset’s 
+ability to resist compromise. The FAIR approach is to define five levels of resistance strength, based 
+on the percentage of a threat population that an asset can successfully thwart, as shown in the FAIR Risk Assessement levels. 
+The purpose of the controls is to increase the difficulty and complexity of causing a successful threat 
+event. The more difficult that task is, the greater the capability the threat agent must have to 
+overcome the controls currently in place. 

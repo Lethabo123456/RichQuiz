@@ -1,0 +1,19 @@
+ussed in the linear methods, but this replaces the dot product with a 
+kernel function. With a radial basis function, you have a few kernel types to choose from: the 
+hyperbolic tangent, Gaussian radial basis function (or RBF), and two polynomial functions—
+one homogenous and the other inhomogeneous.  
+ 
+5.4 Neural Networks 
+In biology terms, a neuron is a cell that can transmit and process chemical or electrical signals. 
+The neuron is connected with other neurons to create a network; picture the notion of graph 
+theory with nodes and edges, and then you're picturing a neural network. Within humans, 
+there are a huge number of neurons interconnected with each other—tens of billions of 
+interconnected structures. Every neuron has an input (called the dendrite), a cell body, and 
+an output (called the axon), as shown in Figure 5.8. 
+
+P a g e  | 60 
+ 
+ 
+                                                                           Figure 5.8:  Neurone Structure 
+ 
+Outputs connect to inputs o

@@ -1,0 +1,24 @@
+anges the current 
+directory to a new directory:   
+   
+chdir( “/home/matt/myfolder” );   
+   
+chdir() returns true if PHP managed to change to the specified directory, or false if there was  
+an error (such as the directory not being found). The current directory is the directory where 
+PHP first looks for files. If you specify a path that is not an absolute or relative path, PHP 
+looks for the file inside the current directory. So the following code   
+   
+chdir( “/home/matt/myfolder” );   
+$handle = fopen( “myfile.txt” );   
+   
+opens the same myfile.txt file as:   
+   
+$handle = fopen( “/home/matt/myfolder/myfile.txt” );   
+   
+The current directory is also used as the base directory for relative file paths. For example:   
+   
+chdir( “/home/joe/images” );   
+$handle = fopen( “../myfile.txt” ); // Looks for myfile.txt in /home/joe   
+   
+Usually the current directory defaults to the directory containing the running script. You can 
+retrieve the current directory by calling getcwd()

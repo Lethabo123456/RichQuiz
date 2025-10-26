@@ -1,0 +1,16 @@
+.  
+  
+The functions to implement the operations of a doubly linked list are similar to the ones discussed earlier. 
+Here, because every node has two pointers, back and next, some of the operations require the adjustment 
+of two pointers in each node. For the insert and delete operations, because we can traverse the list in 
+either direction, we use only one pointer to traverse the list. Let us call this pointer current. We can set 
+the value of trailCurrent by using both the current pointer and the back pointer of the node pointed to by 
+current. We give the definition of each function here, with four exceptions. Definitions of the functions 
+copyList, the copy constructor, overloading the assignment operator, and the destructor are left as 
+exercises for you. Furthermore, the function copyList is used only to implement the copy constructor and 
+overload the assignment operator.  
+  
+ 
+3.5.1  Default Constructor  
+  
+The default constructor initializes the doubly linked list to an emp

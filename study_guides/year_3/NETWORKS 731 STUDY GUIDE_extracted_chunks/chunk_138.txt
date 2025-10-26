@@ -1,0 +1,33 @@
+Perhaps most importantly in light of the information obtained from Edward Snowden, it seems 
+that as long as Perfect Forward Secrecy ephemeral key exchanges, is used, then OpenVPN has 
+not been compromised or weakened by the NSA. 
+Although no-one knows the full capabilities of the NSA for sure, both the evidence and the 
+mathematics strongly point to OpenVPN, if used in conjunction with a strong cipher and 
+ephemeral keys, being the only VPN protocol that can be considered truly secure. 
+Unfortunately, not all VPN providers use PFS when implementing OpenVPN. 
+
+Pros 
+• Highly configurable 
+• Very secure (probably even against the NSA, if Perfect Forward Secrecy is 
+used) 
+• Can bypass firewalls 
+• Can use a wide range of encryption algorithms 
+• Open source (and can therefore be readily vetted for back doors and other 
+NSA style tampering) 
+  
+Cons 
+• Needs third party software 
+• Can be fiddly to set up 
+• Support on mobile devices is improving, but is not as good as on the 
+desktop 
+ 
+SSTP 
+Secure Socket Tunnelling Protocol was introduced by Microsoft in Windows Vista SP1, and 
+although it is now available for Linux, Router OS and SEIL, it is still largely a Windows-only 
+platform (and there is a snowball’s chance in hell of it ever appearing on an Apple device!*). 
+SSTP uses SSL v3, and therefore offers similar advantages to OpenVPN (such as the ability to 
+use to TCP port 443 to avoid NAT firewall issues), and because it is integrated into Windows 
+may be easier to use and more stable However unlike OpenVPN, SSTP is a proprietary standard 
+owned by Microsoft. This means that the code is not open to public scrutiny, and Microsoft’s 
+history of co-operating with the NSA, and ongoing speculation about possible backdoors built-
+in to the Windows operating system, do not inspire us with confidence in the standard. 

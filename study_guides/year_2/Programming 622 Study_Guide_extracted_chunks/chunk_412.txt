@@ -1,0 +1,17 @@
+unt 
+of computer time, especially if the list is very large. Moreover, if we do this for every node in the list, the 
+program might execute very slowly. Next, we show how to use a stack effectively to print the list 
+backward.  
+  
+
+209  
+  
+After printing the info of a particular node, we need to move to the node immediately behind this node. 
+For example, after printing 15, we need to move to the node with info 10. Thus, while initially traversing 
+the list to move to the last node, we must save a pointer to each node. For example, for the list in Figure 
+5-16, we must save a pointer to each of the nodes with info 5 and 10. After printing 15, we go back to the 
+node with info 10; after printing 10, we go back to the node with info 5. From this, it follows that we must 
+save pointers to each node in a stack, so as to implement the Last In First Out principle.  
+  
+Because the number of nodes in a linked list is usually not known, we will use the linked implementation 
+of a stack. Supp

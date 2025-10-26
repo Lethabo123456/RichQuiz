@@ -1,0 +1,36 @@
+The most useful feature offered by the figure-level functions is that they can easily create figures with multiple 
+subplots. For example, instead of stacking the three distributions for each species of penguins in the same 
+axes, we can “facet” them by plotting each distribution across the columns of the figure: 
+ 
+The figure-level functions wrap their axes-level counterparts and pass the kind-specific keyword arguments 
+(such as the bin size for a histogram) down to the underlying function. That means they are no less flexible, 
+but there is a downside: the kind-specific parameters don’t appear in the function signature or docstrings. 
+Some of their features might be less discoverable, and you may need to look at two different pages of the 
+documentation before understanding how to achieve a specific goal. 
+Axes-Level Functions 
+  
+The axes-level functions are written to act like drop-in replacements for matplotlib functions. While they add 
+axis labels and legends automatically, they don’t modify anything beyond the axes that they are drawn into. 
+That means they can be composed into arbitrarily-complex matplotlib figures with predictable results. 
+
+The axes-level functions call matplotlib.pyplot.gca() internally, which hooks into the matplotlib state-machine 
+interface so that they draw their plots on the “currently-active” axes. But they additionally accept an ax= 
+argument, which integrates with the object-oriented interface and lets you specify exactly where each plot 
+should go. 
+ 
+
+Combining multiple views on the data 
+  
+Two important plotting functions in seaborn don’t fit cleanly into the classification scheme discussed above. 
+These functions, jointplot() and pairplot(), employ multiple kinds of plots from different modules to represent 
+multiple aspects of a dataset in a single figure. Both plots are figure-level functions and create figures with 
+multiple subplots by default. But they use different objects to manage the figure: JointGrid and PairGrid, 
+respectively. 
+  
+jointplot() plots the relationship or joint distribution of two variables while adding marginal axes that show the 
+univariate distribution of each one separately: 
+
+pairplot() is similar — it combines joint and marginal views — but rather than focusing on a single relationship, 
+it visualizes every pairwise combination of variables simultaneously. 
+Behind the scenes, these functions are using axes-level functions that you have already met (scatterplot() and 
+kdeplot()), and they also have a kind parameter that lets you quickly swap in a different representation. 

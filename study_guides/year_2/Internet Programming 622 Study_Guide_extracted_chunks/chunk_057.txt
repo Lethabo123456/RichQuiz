@@ -1,0 +1,27 @@
+he server. Sometimes the field is sent as an empty string; sometimes no 
+field name is sent at all. The following table illustrates the behavior of various form controls when 
+they are not filled in or selected:   
+   
+Form Control   
+What Happens When It’s Not filled-In Or Selected   
+Text input field   
+The field name is sent, along with an empty value.   
+Password field   
+The field name is sent, along with an empty value.   
+Checkbox field   
+Nothing is sent at all.   
+Radio button field   
+Nothing is sent at all.   
+Submit button   
+Nothing is sent at all if the button is not clicked. This can happen if 
+the user presses Enter/Return to submit a form. However, if there is 
+only one submit button in the form, most browsers will still send the 
+button’s field name and value.   
+Reset button   
+Nothing is ever sent.   
+File select field   
+The field name is sent, along with an empty value.   
+Hidden field   
+The field name is sent, along with an empty value.   
+Image field   
+Same be

@@ -1,0 +1,35 @@
+2.4 Understanding Data Types  
+All data stored in PHP variables fall into one of eight basic categories, known as data types. A 
+variable’s data type determines what operations can be carried out on the variable’s data, as well as 
+the amount of memory needed to hold the data.  
+  
+PHP supports four scalar data types. Scalar data means data that contains only a single value. Here’s 
+a list of them, including examples:  
+  
+Scalar Data Type  
+Description  
+Example  
+Integer  
+A whole number  
+15  
+Float  
+A floating - point number  
+8.23  
+String  
+A series of characters  
+“Hello, world!”  
+Boolean  
+Represents either True or False  
+True  
+  
+As well as the four scalar types, PHP supports two compound types. Compound data is data that can 
+contain more than one value. The following table describes PHP’s compound types:  
+  
+Compound Data Type  
+Description  
+Array  
+An Ordered map. Contains names, values etc., 
+mapped to values.  
+Object  
+A type that may contain properties and 
+method

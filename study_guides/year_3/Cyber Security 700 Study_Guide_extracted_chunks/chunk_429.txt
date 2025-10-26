@@ -1,0 +1,25 @@
+DMZ Networks 
+As shown in Figure 12.5, a firewall may be an internal or external firewall. An external firewall is placed at the edge 
+of a local or enterprise network, just inside the boundary router that connects to the Internet or some wide area 
+network (WAN). One or more internal firewalls protect the bulk of the enterprise network. Between these two types 
+of firewalls are one or more networked devices in a region referred to as a DMZ (demilitarized zone) network. 
+Systems that are externally accessible but need some protections are usually located on DMZ networks. 
+Typically, the systems in the DMZ require or invite external connectivity, such as a corporate website, an email server, 
+or a DNS (Domain Name System) server. 
+
+An external firewall provides a measure of access control and protection for the DMZ systems 
+consistent with their need for external connectivity. An external firewall also provides a basic level of 
+protection for the remainder of the enterprise network. In this type of configuration, internal firewalls 
+serve three purposes: 
+
+ An internal firewall adds more stringent filtering capability, compared to the external firewall, 
+in order to protect enterprise servers and workstations from external attack. 
+ An internal firewall provides two-way protection with respect to the DMZ. First, the internal 
+firewall protects the remainder of the network from attacks launched from DMZ systems. 
+Such attacks might originate from worms, rootkits, bots, or other malware lodged in a DMZ 
+system. Second, an internal firewall protects the DMZ systems from attack from the internal 
+protected network. 
+ Multiple internal firewalls are used to protect portions of the internal network from each 
+other. For example, firewalls are configured so that internal servers are protected from 
+internal workstations and vice versa. A common practice is to place the DMZ on a different 
+network interface on the external firewall from that used to access the internal networks. 

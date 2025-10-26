@@ -1,0 +1,20 @@
+bing this algorithm, we discuss how to effectively 
+implement a priority queue.  
+  
+ 
+6.5.1  STL class priority_queue  
+  
+The STL provides the class template priority_queue<elemType>, where the data type of the queue 
+elements is specified by elemType. This class template is contained in the STL header file queue. You can 
+specify the priority of the elements of a priority queue in various ways. The default priority criteria for the 
+queue elements uses the lessthan operator, <. For example, a program that implements a priority queue 
+of numbers could use the operator < to assign the priority to the numbers so that larger numbers are 
+always at the front of the queue. If you design your own class to implement the queue elements, you can 
+specify your priority rule by overloading the less-than operator, <, to compare the elements. You could 
+also define a comparison function to specify the priority.   
+  
+ 
+6.6  
+Application of Queues: Simulation  
+  
+A technique in which one system m

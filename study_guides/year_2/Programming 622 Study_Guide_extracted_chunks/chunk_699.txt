@@ -1,0 +1,22 @@
+this function deletes the node by taking into account the previous four cases.  
+  
+The preceding examples show that whenever we delete a node from a binary tree, we adjust one of the 
+pointers of the parent node. Because the adjustment has to be made in the parent node, we must call the 
+function deleteFromTree by using an appropriate pointer of the parent node. For example, suppose that 
+the node to be deleted is 35, which is the right child of its parent node. Further suppose that trailCurrent 
+points to the node containing 30, the parent node of 35. A call to the function deleteFromTree is as 
+follows:  
+  
+deleteFromTree(trailCurrent->rlink);  
+  
+  
+Of course, if the node to be deleted is the root node, then the call to the function deleteFromTree is as 
+follows:  
+ deleteFromTree(root);  
+  
+We now define the C++ function deleteFromTree:  
+  
+template <class elemType>  
+void bSearchTreeType<elemType>::deleteFromTree(binaryTreeNode<elemType>* &p)  
+{  
+binaryTreeNode<elemType> *c

@@ -1,0 +1,17 @@
+the file (useful when working with replaces earlier copies of the file. 
+ 
+Plots vs. Charts - we seem to use these terms interchangeably. We’ll say things like “a bubble chart is a particular kind 
+of scatter plot”. The only real difference is that charts use some kind of symbol to represent the data. 
+“A chart is a graphical representation of data, in which the data is represented by symbols, such as bars in a bar chart, 
+lines in a line chart, or slices in a pie chart. A chart can represent tabular numeric data, functions or some kinds of 
+qualitative structure and provides different info.” 
+6.3.1 Scatter Plots 
+A basic scatter plot maps a distribution of data points along an x- and y-axis. To illustrate, we’ll take a random sample 
+of 100 coordinate pairs, but we’ll seed NumPy’s random number generator so that everyone receives the same 
+“random” sample. 
+Create a file named scatter1.py and add the following code: 
+ 
+import plotly.offline as pyo 
+ 
+import plotly.graph_objs as go 
+i

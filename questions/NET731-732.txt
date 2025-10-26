@@ -1,0 +1,51 @@
+
+🔍 Processing chunk 45/305: chunk_084.txt
+
+=== Generated Prompt ===
+
+Create 20 quiz questions based on the following material.
+Format each question as:
+Q<number>. [question]
+Type: [MCQ / True/False / Short / Fill / Interpretation]
+Options:
+A. [option A]
+B. [option B]
+C. [option C]
+D. [option D]
+Answer: [correct answer]
+Reasoning: [why?]
+Difficulty: [easy, medium, hard]Separate each question with a line of dashes.
+
+5. Voltage Event Recorders Network hardware is highly sensitive to power fluctuations, and even brief voltage irregularities can cause malfunctions or hardware damage. A voltage event recorder is a diagnostic tool that continuously monitors the quality of electrical power supplied to devices like servers, switches, or routers. It is plugged into the same outlet as the network device and records data over time. Later, this data is analysed using included software, which flags voltage anomalies such as dips below standard frequency levels (e.g., below 60 Hz in North America) or spikes above safe thresholds. This helps technicians identify unstable power sources before they lead to outages or equipment failure. Figure 1.9: Wireless Network Testing Tool:
+=========================
+
+
+=== Raw Model Output ===
+
+: Qnumber>. [question] Type: [MCQ / True/False / Short / Fill / Interpretation] Options: A. [option A] B. [option B] C. [option C] D. [option D] Answer: [correct answer] Reasoning: [why?] Difficulty: [easy, medium, hard]Separate each question with a line of dashes. 5. Voltage Event Recorders Network hardware is highly sensitive
+=========================
+
+
+=== Cleaned Output ===
+
+: Qnumber>. [question] Type: [MCQ / True/False / Short / Fill / Interpretation] Options: A. [option A] B. [option B] C. [option C] D. [option D] Answer: [correct answer] Reasoning: [why?] Difficulty: [easy, medium, hard]Separate each question with a line of dashes. 5. Voltage Event Recorders Network hardware is highly sensitive
+======================
+
+Parsed Question:
+ {'question_text': '', 'option_a': '', 'option_b': '', 'option_c': '', 'option_d': '', 'correct_option': '', 'reasoning': ''}
+--------------------------------------------------
+✅ Chunk 45 questions parsed.
+
+{
+    "question": "Fill in the blank: Without monitoring tools, voltage fluctuations remain ______ until failure occurs.",
+    "type": "Fill",
+    "options": [
+      "A. Corrected",
+      "B. Filtered",
+      "C. Obvious",
+      "D. Hidden"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Power anomalies are often invisible until equipment fails.",
+    "difficulty": "hard"
+  }

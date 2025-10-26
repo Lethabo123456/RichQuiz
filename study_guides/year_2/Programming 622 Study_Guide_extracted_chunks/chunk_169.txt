@@ -1,0 +1,35 @@
+erator 
+vecIt; intVector.push_back(15); 
+intVector.push_back(2); 
+intVector.push_back(10); 
+intVector.push_back(7); vecIt = 
+intVector.begin(); vecIt++; 
+intVector.erase(vecIt);  
+intVector.pop_back();  
+  
+copy(intVector.begin(),intVector.end(), screen);  
+  
+13. Suppose that vecList is a vector container and   
+ vecList = {12, 16, 8, 23, 40, 6, 18, 9, 75}  
+  
+Show vecList after the following statement executes:  
+ copy(vecList.begin() + 2, vecList.end(), vecList.begin());  
+  
+14. Suppose that vecList is a vector container and  
+ vecList = {12, 16, 8, 23, 40, 6, 18, 9, 75}  
+  
+Show vecList after the following statement executes:  
+ copy(vecList.rbegin() + 3, vecList.rend(), vecList.rbegin());  
+  
+15. What is the output of the following program segment?  
+  
+deque<int> intDeq;  
+ostream_iterator<int> screen(cout, " "); deque<int>::iterator 
+deqIt;  
+  
+intDeq.push_back(5); 
+intDeq.push_front(23); 
+intDeq.push_front(45); 
+intDeq.push_back(35); 
+intDeq.push_front(0); 
+intDeq.push_bac

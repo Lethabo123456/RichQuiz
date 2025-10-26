@@ -1,0 +1,38 @@
+7.4 Subscriptions 
+
+Selling your app outright and then collecting no revenue from a customer as long as they use the app 
+often does not create enough sustainable revenue to keep the developer in business. Offering 
+subscriptions to all or some portion of the app may be a good choice to counter this problem. Both 
+Google and Apple offer this approach for their apps. However, the challenge becomes keeping the 
+app’s content relevant or the app useful enough to get customers to keep renewing their 
+subscriptions. This approach  requires coding  similar to in-app  billing, where the app  checks its 
+subscription status during use of the app to ensure that the customer is up-to-date. 
+
+7.5 Understanding the Economics of App Stores 
+
+Often developers are surprised that they have to pay Google and Apple 30% of any sales made in the 
+app stores (whether from paid apps or in-app purchases). We have often heard from clients that 
+paying 30% to Google and Apple makes it impossible to do business, because they don’t have 30% 
+margins in the rest of their business to give away. To the extent that a mobile app sale replaces a 
+regular sale of the same product, this argument makes sense. However, if the sale of the mobile app 
+is incremental to the rest of the business, the additional revenue could be lower. 
+You have to remember that you pay Apple and Google to set up an entirely new sales channel. They 
+run and operate the stores, so you don’t have to worry about setting up a new infrastructure to handle 
+sales of mobile apps. 
+
+If you wanted to avoid giving 30% of your sales to Google and Apple, you can carry out the sales outside 
+of the app stores. For instance, you could set up your own website where users register for an account, 
+and then any sales made on your website could be made accessible to the app with a login in the app. 
+This is the model that Amazon uses with the Kindle app. If you want to read a Kindle book on a mobile 
+device, you buy the book on Amazon’s website, and then you log in to the Kindle app and your content 
+from Amazon is available to you. 
+
+Apple is particularly strict about restrictions on the purchasing of content outside the app store, so 
+Amazon isn’t even allowed to have a link in its app that takes users to their store, where they can buy 
+the books. 
+If you wanted to avoid the need to register users, you could also create a system where you email an 
+unlock code to users who have made a purchase. The app could then unlock a specific functionality 
+based on the unlock code. However, you have to be careful in designing the system for the unlock 
+codes, both technically and because of the workload involved. And depending on how you set it up, 
+you may also run afoul of Apple’s App Store rules for in-app purchases. You might find that the work 
+involved makes in-app purchasing more appealing. 

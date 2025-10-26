@@ -1,0 +1,17 @@
+3.9.4 Duplex Mismatch 
+Duplex mismatch on a point-to-point link is a very common configuration error. If you manually set 
+the duplex mode to full on one side of the link and leave the other side in auto negotiation mode, 
+the link ends up in half-duplex. (A port with duplex mode set to full no longer negotiates.) 
+ 
+Figure 60: carrier sense and collision
+ 
+The worst-case scenario is when a bridge that sends BPDUs has the duplex mode set to half-duplex 
+on a port, but the peer port on other end of link has the duplex mode set to full-duplex. In the above 
+example, the duplex mismatch on the link between bridge A and B can easily lead to a bridging loop. 
+Because bridge B has configuration for full-duplex, it does not perform carrier sense before link 
+access. Bridge B starts to send frames even if bridge A is already using the link. This situation is a 
+problem for A; bridge A detects a collision and runs the back off algorithm before the bridge 
+attempts another transmission of the frame. If there is enough traffic from B to A, every packet that 
+A sends, which includes the BPDUs, undergoes deferment or collision and eventually gets dropped. 
+From an STP point of view, because bridge B does not receive BPDUs from A anymore, bridge B has 
+lost the root bridge. This leads B to unblock the port connected to bridge C, which creates the loop. 

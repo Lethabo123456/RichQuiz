@@ -1,0 +1,20 @@
+l see the time change.  
+  
+This simple example is the essence of a dynamic Web page — a page whose content is potentially 
+different each time the page is viewed.  
+  
+1.8 Using Comments  
+To round off this section, you learn about another basic feature of PHP: comments . A comment is 
+simply text that is ignored by the PHP engine. The purpose of comments is to let you add messages 
+to yourself (and other programmers) that explain what your code does. It is always a good idea to 
+add comments to your code, even if you are the only programmer working on it. Sometimes code 
+that makes sense when you write it can seem unclear  and confusing in three months’ time, so 
+comments can really help.  
+  
+PHP supports single-line comments and mult -line comments. To write a single-line comment, 
+start the line with either two slashes (//) or a hash symbol (#). For example:  
+  
+// This code displays the current time 
+# This code displays the current timee  
+  
+To write multi-line comments, start

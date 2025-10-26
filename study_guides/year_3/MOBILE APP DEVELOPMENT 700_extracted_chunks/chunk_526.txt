@@ -1,0 +1,23 @@
+When your app is open in Xcode, do the following to upload the app to iTunes Connect: 
+  
+1. Change the active scheme from the simulator to iOS Device in the upper-left corner of Xcode (see 
+Figure 16.6). 
+2. Select Product > Archive from the menu. An archive file will be compiled and the Organizer opens 
+(see Figure 16.7). 
+3. In the Organizer, make sure the latest archive file is selected and click the Validate button. If you 
+have not set up the app correctly in iTunes Connect, you will get an error and will have to go back to 
+the website to correct any problems. Otherwise, it asks you to log in with your developer ID, and 
+validation will begin. This may take awhile. If you get a message that there are no issues, you are ready 
+to submit to the App Store. 
+4. Click the Distribute button. Click the Submit to App Store option button. Click Next. 
+5. Enter your developer login information. (It may already be there.) Select an identity. The identity is 
+your Distribution Profile you created earlier. It may already be filled in. If so, check to make sure that 
+it is your Distribution Profile. Click the Next button. You will get the message “Your application is being 
+uploaded.” This may take awhile. When it is complete, you will get a success message. Your app is now 
+waiting to be reviewed by Apple.
+
+The app review process is very thorough and may take several weeks to complete. After the app is 
+accepted, it will be available for purchase. If it is rejected, Apple will inform you of the reason and give 
+you a chance to correct the problems. Generally, your first app takes the longest to get reviewed. 
+Future apps typically get a less-thorough review because you have demonstrated that you can 
+conform to the App Store requirements. Congratulations! You are now in the iOS app business. 

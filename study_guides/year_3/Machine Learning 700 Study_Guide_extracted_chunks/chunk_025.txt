@@ -1,0 +1,16 @@
+Finally, the image shows that if the correct degree was chosen, or the model was simpler than a 
+degree 10 polynomial, the model may have been more generalized and fit the data better. The blue 
+dots in the image represent the data that the models are being fit on. The three concepts here are, 
+underfitting when the model is too simple, overfitting when it is too complex, and generalization 
+when it is neither of those two. These examples show the critical importance of finding the right level 
+of model complexity to achieve a balance that enables generalization of new data. This visualization 
+highlights how a model should strike a balance between complexity and generalization. 
+ 
+1.5 Correctness  
+Evaluating the correctness of a machine learning model requires more than simply measuring its 
+accuracy. Accuracy, defined as the proportion of correct predictions over the total number of 
+predictions, is often an inadequate measure, especially when dealing with imbalanced datasets. For 
+example, a test that predicts leukemia based on a child's name might achieve over 98% accuracy, 
+but such a model would be meaningless because it does not use relevant medical features. 
+To better undeectness, machine learning models are evaluated using a confusion matrix, which 
+categorizes predictions into four groups: 

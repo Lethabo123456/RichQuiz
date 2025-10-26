@@ -1,0 +1,20 @@
+o the next node of that sublist. Figure 8-38 shows the sublist of 
+Figure 8-37 after setting newHead and lastMerged and advancing first1.  
+  
+
+306  
+  
+  
+FIGURE 8-38 Sublists after setting newHead and lastMerged and advancing first1  
+  
+In Figure 8-38, first1 points to the first node of the first sublist that is yet to be merged with the second 
+sublist. So we again compare the nodes pointed to by first1 and first2, and adjust the link of the smaller 
+node and the last node of the merged list so as to move the smaller node to the end of the merged list. 
+For the sublists shown in Figure 8-38, after adjusting the necessary links, we have Figure 8-39.  
+  
+  
+FIGURE 8-39 Merged list after putting the node with info 20 at the end of the merged list  
+  
+We continue this process for the remaining elements of both sublists. Every time we move a node to the 
+merged list, we advance either first1 or first2 to the next node. Eventually, either first1 or first2 becomes 
+NULL. If first1 becom

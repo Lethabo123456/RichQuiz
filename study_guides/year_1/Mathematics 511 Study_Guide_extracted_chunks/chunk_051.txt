@@ -1,0 +1,26 @@
+Furthermore, note that De Morgan’s laws extend to: 
+
+￢(𝑝1 ∨ 𝑝2 ∨ · · · ∨ 𝑝𝑛) ≡ (￢𝑝1 ∧￢𝑝2 ∧ ··· ∧￢𝑝𝑛) and 
+￢(𝑝1 ∧ 𝑝2 ∧ · · · ∧ 𝑝𝑛) ≡ (￢𝑝1 ∨￢𝑝2 ∨ ··· ∨￢𝑝𝑛). 
+
+We will sometimes use the notation ⋁𝑛𝑗=1𝑝𝑗 for 𝑝1 ∨ 𝑝2 ∨ · · · ∨ 𝑝𝑛 and 
+⋀𝑛𝑗=1𝑝𝑗 for 𝑝1 ∧ 𝑝 2 ∧ · · · ∧𝑝𝑛 
+
+Using this notation, the extended version of De Morgan’s laws can be 
+written concisely as: 
+￢(⋁𝑛𝑗=1𝑝𝑗) ≡ ⋀𝑛𝑗=1 ￢ 𝑝𝑗 and ￢(⋀𝑛𝑗=1𝑝𝑗) ≡ ⋁𝑛𝑗=1 ￢𝑝𝑗
+ 
+1.3.2 Using De Morgan’s Laws 
+The two logical equivalences known as De Morgan’s laws are particularly 
+important. They tell us how to negate conjunctions and how to negate 
+disjunctions. In particular, the equivalence ￢(𝑝 ∨ 𝑞) ≡ ￢𝑝 ∧￢𝑞 tells us 
+that the negation of a disjunction is formed by taking the conjunction of the 
+negations of the component propositions. Similarly, the equivalence ￢(𝑝 ∧
+ 𝑞) ≡￢𝑝 ∨￢𝑞 tells us that the negation of a conjunction is formed by 
+taking the disjunction of the negations of the component propositions. The 
+following example illustrates the use of De Morgan’s laws. 
+
+Worked Example 
+Use De Morgan’s laws to express the negations of “Miguel has a 
+cellphone and he has a laptop computer” and “Heather will go to the 
+concert or Steve will go to the concert.” 

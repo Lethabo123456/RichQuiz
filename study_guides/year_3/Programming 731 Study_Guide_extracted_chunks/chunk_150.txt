@@ -1,0 +1,29 @@
+Here, class-var is a variable of the class type being created. The classname is the name of the class 
+that is being instantiated. The class name followed by parentheses specifies the constructor for the 
+class. A constructor defines what occurs when an object of a class is created.   
+Constructors are an important part of all classes and have many significant attributes. Most real-
+world classes explicitly define their own constructors within their class definition. However, if no 
+explicit constructor is specified, then Java will automatically supply a default constructor. This is the 
+case with Box. For now, we will use the default constructor. Soon, you will see how to define your 
+own constructors.
+  
+At this point, you might be wondering why you do not need to use new for such things as integers 
+or characters. The answer is that Java’s simple types are not implemented as objects. Rather, they 
+are implemented as “normal” variables. This is done in the interest of efficiency. As you will see, 
+objects have many features and attributes that require Java to treat them differently than it treats 
+the simple types. By not applying the same overhead to the simple types that applies to objects, 
+Java can implement the simple types more efficiently. Later, you will see object versions of the 
+simple types that are available for your use in those situations in which complete objects of these 
+types are needed. It is important to understand that new allocates memory for an object during run 
+time. The advantage of this approach is that your program can create as many or as few objects as 
+it needs during the execution of your program. However, since memory is finite, it is possible that 
+new will not be able to allocate memory for an object because insufficient memory exists.  
+ 
+If this happens, a runtime exception will occur. (You will learn how to handle this and other 
+exceptions in Chapter 10.) For the sample programs in this book, you won’t need to worry about 
+running out of memory, but you will need to consider this possibility in real-world programs that 
+you write. Let’s once again review the distinction between a class and an object. A class creates a 
+new data type that can be used to create objects. That is, a class creates a logical framework that 
+defines the relationship between its members. When you declare an object of a class, you are 
+creating an instance of that class. Thus, a class is a logical construct. An object has physical reality. 
+(That is, an object occupies space in memory.) It is important to keep this distinction clearly in mind.   

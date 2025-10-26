@@ -1,0 +1,44 @@
+y in any browser running in any operating 
+system. 
+ 
+Here is the list of all important JavaScript Native Objects: 
+ 
+JavaScript Number Object 
+ 
+JavaScript Boolean Object 
+ 
+JavaScript String Object 
+ 
+JavaScript Array Object 
+
+ 
+92 
+ 
+SIX | JAVASCRIPT OBJECTS 
+ 
+JavaScript Date Object 
+ 
+JavaScript Math Object 
+ 
+JavaScript RegExp Object 
+ 
+6.2.1 The Number Object 
+The Number object represents numerical date, either integers or floating-point 
+numbers. In general, you do not need to worry about Number objects because the 
+browser automatically converts number literals to instances of the number class. 
+ 
+Syntax: 
+Creating a number object: 
+var val = new Number(number); 
+ 
+If the argument cannot be converted into a number, it returns NaN (Not-a-Number). 
+ 
+6.2.1.1 Number Properties 
+Here is a list of each property and its description. 
+Property 
+Description 
+MAX_VALUE 
+The largest possible value a number in JavaScript can have 
+1.7976931348623157E+308 
+MIN_VALUE  
+The smallest

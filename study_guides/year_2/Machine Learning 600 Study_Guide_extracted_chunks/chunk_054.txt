@@ -1,0 +1,13 @@
+Interquartile Range: As already discussed, if a dataset has outliers, the arithmetic mean will 
+not be the centered average you are looking for. It's best using either the harmonic or 
+geometric mean. The range gives a complete spread of the data, start to end. The interquartile 
+range gives you the bulk of the values, also known as “the middle 50.” Subtracting the third 
+quartile of the dataset from the first quartile will give you the interquartile range.  
+Variance. The variance will give you the spread of the dataset. If you have a variance of zero, 
+then all the values of the dataset are the same. There is a process to working out the variance 
+of a dataset: 
+ Work out the mean of the dataset. 
+ For each number in the dataset, subtract the mean and then square the result. 
+ Calculate the average of the squared differences.                  
+Standard Deviation: The standard deviation (SD) is a number that tells us how the values for a dataset 
+are spread out from the mean

@@ -1,0 +1,19 @@
+tring>, 
+and deque.  
+  
+Because iterator is a typedef defined inside a container (that is, a class) such as vector, we must use the 
+appropriate container name, container element type, and the scope resolution operator to use the 
+typedef iterator.  
+  
+typedef const_iterator Because an iterator works like a pointer, with the help of an iterator into a 
+container and the dereferencing operator, *, we can modify the elements of the container. However, if a 
+container is declared as const, then we must prevent the iterator from modifying the elements of the 
+container, especially accidentally. To handle this situation, every container contains another typedef 
+const_iterator.  
+For example, the statement  
+  
+vector<int>::const_iterator intConstVecIt;  
+  
+declares intConstVecIt to be an iterator into a vector container whose elements are of type int. The 
+iterator intConstVecIt is used to process the elements of those vector containers that are declared as 
+constant vector containers o

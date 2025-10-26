@@ -1,0 +1,14 @@
+a string.    
+   
+When working with binary files a character is always one byte long, so ten characters equals ten bytes. 
+However, this does not apply when working with Unicode files, where each character may take up 
+several bytes. In this case, reading ten characters may in fact result in reading, say, twenty bytes from 
+the file.   
+   
+After fread() has finished, the file pointer, which holds the current position in the file, moves forward 
+in the file by the number of characters read. So after the previous example code runs, the file pointer 
+moves forward to ten characters after the start of the file. If you repeat the same call to fread() , you 
+will get the next ten characters in the file. If there are less than ten characters left to read in the file, 
+fread() simply reads and returns as many as there are. By the way, if you want to read only one 
+character at a time you can use the fgetc() function. fgetc() takes a single argument — a file handle 
+— and returns just one char

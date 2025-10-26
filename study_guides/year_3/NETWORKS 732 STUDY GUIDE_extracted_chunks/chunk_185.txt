@@ -1,0 +1,49 @@
+4.1.4 Redundant Hardware/Clusters 
+
+By now it must be clear that redundancy is a good thing. While this concept can be applied to 
+network connections, it can also be applied to hardware components and even complete 
+servers. In the following sections, you'll learn how this concept is applied to servers and 
+infrastructure devices. Multiple switches can be deployed to provide for failover if a switch 
+fails. When this is done, it sometimes creates what is called a switching loop.  
+
+Page 89 of 202 
+ 
+Switch Clustering 
+ 
+Switch clustering is an alternative to switch stacking that allows a group of connected, cluster- 
+capable switches to be managed as a single unit—without using dedicated stack cables. Instead, 
+this setup relies on Cluster Management Protocol (CMP), which enables centralized management 
+over standard network links. 
+
+In a switch cluster, one switch is designated as the cluster command switch, responsible for 
+managing the entire cluster. The remaining switches act as cluster member switches, all 
+controlled through the command switch’s interface. This design allows administrators to 
+conﬁgure, monitor, and troubleshoot multiple switches from a single IP address, regardless of 
+whether the switches are from diﬀerent models or platforms — as long as they support clustering. 
+Unlike stacking, clustering is more ﬂexible in terms of physical layout, since the switches don’t 
+need to be physically adjacent or in the same rack. However, clustering may not oﬀer the same 
+high-speed backplane or failover performance as switch stacking. 
+
+
+Figure 4.4 below illustrates a typical switch cluster managed through the CMP address of the 
+cluster commander 
+ 
+Figure 4.4: Switch Cluster  
+ 
+Routers 
+Just like switches and servers, routers can be conﬁgured for redundancy to ensure continuous 
+network access. In this context, we use the term ﬁrst-hop redundancy, because the router is 
+the ﬁrst point a host contacts when sending traﬃc outside its local network. To achieve this, 
+networks implement a First-Hop Redundancy Protocol (FHRP). 
+
+FHRPs allow multiple physical routers to function as if they were a single logical router. This 
+simpliﬁes client conﬁgurations by enabling all hosts to use the same default gateway IP 
+address, regardless of which physical router is active. The key to this setup is the concept of a 
+virtual router, which represents the group of redundant routers. 
+This virtual router has its own unique IP address and MAC address. The IP address is assigned 
+as the default gateway on client devices, and when a host sends an ARP request, it receives the 
+virtual MAC address in response. Clients are unaware of which physical router is forwarding 
+their traﬃc—they simply use the virtual router as their gateway. This seamless experience 
+ensures high availability and minimizes network disruptions in case of router failure. 
+The Figure below illustrates how a virtual router masks the physical redundancy from client devices. 
+ 

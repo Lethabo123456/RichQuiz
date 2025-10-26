@@ -1,0 +1,87 @@
+length, and size functions. 
+ 
+ 
+
+119 | P a g e  
+ 
+ 
+ 
+ 
+ 
+Insert AND replace Functions 
+
+120 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+121 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+122 | P a g e  
+ 
+ 
+ 
+ 
+ 
+
+123 | P a g e  
+ 
+ 
+ 
+ 
+ 
+
+124 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5.2 ARRAYS 
+
+125 | P a g e  
+ 
+An array is a collection of a fixed number of components (also called elements) all of 
+the same data type and in contiguous (that is, adjacent) memory space. A one-
+dimensional array is an array in which the components are arranged in a list 
+The general form for declaring a one-dimensional array is: 
+ 
+in which intExp specifies the number of components in the array and can be any 
+constant expression that evaluates to a positive integer. 
+ 
+
+126 | P a g e  
+ 
+ 
+Accessing Array Components 
+The general form (syntax) used for accessing an array component is: 
+ 
+in which indexExp, called the index, is any expression whose value is a nonnegative 
+integer. The index value specifies the position of t

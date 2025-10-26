@@ -1,0 +1,19 @@
+n the business environment and use terminology 
+that is familiar to the users. An attribute name should also be descriptive of the data represented by 
+that attribute. It is also a good practice to prefix the name of an attribute with the name or abbreviation 
+of the entity in which it occurs. For example, in the CUSTOMER entity, the customer’s credit limit 
+may be called CUS_CREDIT_LIMIT. This will become increasingly important in later chapters 
+when you learn about the need to use common attributes to specify relationships between entities. 
+The use of a proper naming convention will improve the data model’s ability to facilitate 
+communication among the designer, application programmer, and the end user. In fact, a proper 
+naming convention can go a long way toward making your model self-documenting. 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Two, page 38-40. 
+
+ 
+23 
+The Evolution of Data Models 
+The

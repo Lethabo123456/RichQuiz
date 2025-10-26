@@ -1,0 +1,19 @@
+s an Euler circuit. Next, we 
+describe an algorithm, known as Fleury’s algorithm, which can be used to construct an Euler circuit in a 
+connected graph with vertices of even degrees.  
+  
+Fleury’s Algorithm  
+  
+Step 1. Choose a vertex v as the starting vertex for the circuit and choose an edge e with v as one of the 
+end vertices.  
+  
+Step 2. If the other end vertex u of the edge e is also v, go to Step 3. Otherwise, choose an edge e1 different 
+from e with u as one of the end vertices. If the other vertex u1 of e1 is v, go to Step 3; otherwise, choose 
+an edge e2 different from e and e1 with u1 as one of the end vertices and repeat Step  
+2.  
+  
+Step 3. If the circuit T1 obtained in Step 2 contains all the edges, then stop. Otherwise, choose an edge ej 
+different from the edges of T1 such that one of the end vertices of ej, say, w is a member of the circuit T1.  
+  
+Step 4. Construct a circuit T2 with starting vertex w, as in Steps 1 and 2, such that all the edges of T2 are 
+differ

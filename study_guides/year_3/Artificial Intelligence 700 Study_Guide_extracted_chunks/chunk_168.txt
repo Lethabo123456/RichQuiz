@@ -1,0 +1,23 @@
+Substitution Rule 
+The law of variable substitution is an inference rule for use in proofs in 
+predicate logic. 
+ 
+Informally, this rule states that having established that a general fact (or 
+expression) is true, we can assert that a specific instance of that general 
+expression is also true. 
+ 
+In particular, if we can prove (or assert as an axiom) a logical expression 
+L1 containing free variables, then if we substitute constants or bound 
+variables for some of the free variables in L1 to create expression L2, 
+then the law of substitution states that L1 -> L2 is a tautology, and we 
+can assert L2 in the proof. 
+ 
+Consider the following assertion about the domain of real numbers: 
+Lt(x,y) -> (E z) (Lt(x,z) AND Lt(z,y)) 
+If we substitute x=2 and y=5 in the original expression, then we can assert: 
+Lt(2,5) -> (E z) (Lt(2,z) AND Lt(z,5)) 
+In other words, if the original expression holds for all x and y, then it 
+must hold for x=2 and y=5. 
+ 
+Note that choosing x=5 and y=2 makes Lt(x,y) = false, and the entire 
+expression is still true (since false->anything is true).

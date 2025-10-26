@@ -1,0 +1,21 @@
+rame(point_estimates).hist()  # look at the distribution of our sample means 
+ 
+ 
+
+P a g e  | 106 
+ 
+Behold! The sampling distribution of the sample mean appears to be normal even though we 
+took data from an underlying bimodal population distribution. It is important to note that the 
+bars in this histogram represent the average break length of 500 samples of employees, 
+where each sample has 100 people in it. In other words, a sampling distribution is a 
+distribution of several point estimates. 
+Our data converged to a normal distribution because of something called the central limit 
+theorem, which states that the sampling distribution (the distribution of point estimates) will 
+approach a normal distribution as we increase the number of samples taken. What's more, as 
+we take more and more samples, the mean of the sampling distribution will approach the 
+true population mean. 
+ 
+breaks.mean()- np.array(point_estimates).mean()  # .047 minutes difference 
+ 
+ 
+This is actually a very

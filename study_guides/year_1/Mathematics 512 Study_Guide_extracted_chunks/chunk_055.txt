@@ -1,0 +1,30 @@
+5.2 The Fundamental Theorem of Calculus 
+The Fundamental Theorem of Calculus defines the relationship between the 
+processes of differentiation and integration. That relationship is that 
+differentiation and integration are inverse processes. 
+The Fundamental Theorem of Calculus: Part 1 
+If 𝑓 is a continuous function on [𝑎, 𝑏], then the function denoted by 
+
+𝑔(𝑥) = ∫𝑥𝑎 𝑓(𝑢)𝑑𝑢 for 𝑥 ϵ [𝑎, 𝑏] 
+
+is continuous on [𝑎, 𝑏], differentiable on (𝑎, 𝑏) and 𝑔'(𝑥) = 𝑓(𝑥). 
+If 𝑓(𝑡) is continuous on [𝑎, 𝑏], the function 𝑔(𝑥) that is equal to the area 
+bounded by the 𝑢-axis and the function 𝑓(𝑢) and the lines 𝑢= 𝑎 and 𝑢= 𝑥 
+will be continuous on [𝑎, 𝑏] and differentiable on (𝑎, 𝑏). Most importantly, 
+when we differentiate the function 𝑔(𝑥), we will find that it is equal to 𝑓(𝑥). 
+The graph below illustrates the function 𝑓(𝑢) and the area 𝑔(𝑥).
+
+
+The Fundamental Theorem of Calculus: Part 2 
+If 𝑓 is a continuous function on [𝑎, 𝑏], then ∫𝑏𝑎 𝑓(𝑥)𝑑𝑥 = 𝐹(𝑏) −𝐹(𝑎), where 
+𝐹 is any antiderivative of 𝑓. If 𝑓 is continuous on [𝑎, 𝑏], the definite integral 
+with integrand 𝑓(𝑥) and limits 𝑎 and 𝑏 is simply equal to the value of the 
+antiderivative 𝐹(𝑥) at b minus the value of 𝐹 at 𝑎. This property allows us to 
+easily solve definite integrals, if we can find the antiderivative function of the 
+integrand. Parts one and two of the Fundamental Theorem of Calculus can be 
+combined and simplified into one theorem. 
+
+The Fundamental Theorem of Calculus 
+Let 𝑓 be a continuous function on [𝑎, 𝑏] then: 
+1. If 𝑔(𝑥) = ∫𝑥𝑎 𝑓(𝑢)𝑑𝑢, then 𝑔′(𝑥) = 𝑓(𝑥) 
+2. ∫𝑏𝑎 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏) −𝐹(𝑎), where 𝐹 is any antiderivative of 𝑓 

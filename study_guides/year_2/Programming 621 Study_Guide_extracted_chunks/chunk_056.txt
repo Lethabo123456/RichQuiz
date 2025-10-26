@@ -1,0 +1,46 @@
+2.3 VARIABLE DECLARATION 
+Earlier in this chapter, we introduced the term variable and how to declare it. We now 
+review this concept and also give the general syntax to declare variables. In some 
+programs, data needs to be modified during program execution. For example, after 
+each test, the average test score and the number of tests taken changes. Similarly, 
+after each pay increase, the employee’s salary changes. This type of data must be 
+stored in those memory cells whose contents can be modified during program 
+execution. In C++, memory cells whose contents can be modified during program 
+execution are called variables.  
+ 
+Variable: A memory location whose content may change during program execution. 
+The syntax for declaring one variable or multiple variables is: 
+ 
+2.3.1. Putting Data into Variables 
+ 
+Now that you know how to declare variables, the next question is: How do you put data 
+into those variables? In C++, you can place data into a variable in two ways:  
+
+1. Use C++’s assignment statement. 
+2. Use input (read) statements. 
+ 
+In an assignment statement, the value of the expression should match the data type 
+of the variable. 
+The expression on the right side is evaluated, and its value is assigned to the variable 
+(and thus to a memory location) on the left side. A variable is said to be initialized the 
+first time a value is placed in the variable. 
+
+Suppose you have the following variable declarations:  
+
+int num1, num2;   
+double sale;  
+char first; 
+string str;  
+Now consider the following assignment statements:  
+num1 = 4;  
+num2 = 4 * 5 - 11;  
+sale = 0.02 * 1000;  
+first = 'D';  
+str = "It is a sunny day."; 
+ 
+For each of these statements, the computer first evaluates the expression on the right 
+and then stores that value in a memory location named by the identifier on the left. 
+The first statement stores the value 4 in num1, the second statement stores 9 in num2, 
+the third statement stores 20.00 in sale, and the fourth statement stores the character 
+D in first. The fifth statement assigns the string "It is a sunny day." to the variable str 
+ 

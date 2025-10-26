@@ -1,0 +1,27 @@
+harder for search engines to identify 
+the page’s main topics. The advantage of the HTML5 sectioning elements is that their 
+tag name indicates their purpose in the document, leading to greater uniformity in how 
+pages are designed and interpreted. 
+ 
+Using Grouping Elements 
+
+Within sectioning elements are grouping elements. Each grouping element organizes 
+similar content into a distinct group, much like a paragraph groups sentences that share 
+a common theme. Figure 1-14 describes all the HTML grouping elements.  
+                                   
+For example, the following code shows three paragraphs nested within a page article with each 
+paragraph representing a group of similar content: 
+
+<article>
+<p>Content of 1st paragraph.</p>
+<p>Content of 2nd paragraph.</p>
+<p>Content of 3rd paragraph.</p>
+</article>
+ 
+                          
+When a browser encounters a sectioning element or a grouping element, the default style is 
+to start the enclosed content on a new line, separating it from any content that appears before 
+it. Thus, each of these paragraphs will be started on a new line as will the article itself. Note 
+that the exact appearance of the paragraphs and the space between them depends on the 
+styles applied by the browser to those elements. You’ll learn more about styles later in this 
+tutorial. 

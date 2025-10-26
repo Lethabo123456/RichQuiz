@@ -1,0 +1,55 @@
+c)  The destroy() Method  
+The destroy() method is called to allow your servlet to clean up any resources (such as open files or 
+database connections) before the servlet is unloaded. If you do not require any clean-up operations, this 
+can be an empty method.   
+The server waits to call the destroy() method until either all service calls are complete, or a certain amount 
+of time has passed. This means that the destroy() method can be called while some longerrunning service() 
+methods are still running. It is important that you write your destroy() method to avoid closing any 
+necessary resources until all service() calls have completed.   
+  
+Sample Servlet  
+The code below implements a simple servlet that returns a static HTML page to a browser. This example 
+fully implements the Servlet interface.   
+ import java.io.*; import 
+javax.servlet.*;  
+public class SampleServlet implements Servlet   
+{      private ServletConfig 
+config; public void init 
+(ServletConfig config)throws 
+ServletException         
+{        this.config = 
+config;  
+ 
+   
+  }  
+  public void destroy() {} // do nothing  
+      public ServletConfig getServletConfig()   
+  {       
+ 
+return config;  
+     }  
+       public String getServletInfo()   
+  {        
+return "A 
+Simple Servlet";    
+  }  
+public void service (ServletRequest req,ServletResponse res)     
+throws ServletException, IOException    
+{        res.setContentType( 
+"text/html" );      PrintWriter out = 
+res.getWriter();        out.println( 
+"<html>" );        out.println( "<head>" 
+);  
+       
+out.println( "<title>A Sample Servlet</title>" 
+);        out.println( "</head>" );        
+out.println( 
+"<body>" );  
+       
+out.println( "<h1>A Sample Servlet</h1>" 
+);        out.println( "</body>" );      
+ 
+out.println( "</html>" );        
+out.close();  
+     }  
+}

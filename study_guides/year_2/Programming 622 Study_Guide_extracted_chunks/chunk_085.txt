@@ -1,0 +1,25 @@
+corresponding instance variables of myClock. Therefore, an assignment statement performs a 
+memberwise copy.  
+  
+
+39  
+  
+ 
+1.4.8  Class Scope  
+  
+A class object can be either automatic (that is, created each time the control reaches its declaration, and 
+destroyed when the control exits the surrounding block) or static (that is, created once, when the control 
+reaches its declaration, and destroyed when the program terminates). Also, you can declare an array of 
+class objects. A class object has the same scope as other variables. A member of a class is local to the class. 
+You access a (public) class member outside the class by using the class object name and the member 
+access operator (.).  
+  
+  
+  
+ 
+1.4.9  Functions and Classes  
+  
+The following rules describe the relationship between functions and classes:  
+  
+Class objects can be passed as parameters to functions and returned as function values.  
+As parameters to functions, class objects can be passed either by value or by

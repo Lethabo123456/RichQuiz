@@ -1,0 +1,48 @@
+5.2 VISUALIZING CATEGORICAL DATA 
+ 
+In seaborn, there are several different ways to visualize a relationship involving categorical data. Similar to the 
+relationship between relplot() and either scatterplot() or lineplot(), there are two ways to make these plots. There 
+are a number of axes-level functions for plotting categorical data in different ways and a figure-level interface, 
+catplot(), that gives unified higher-level access to them. 
+ 
+It’s helpful to think of the different categorical plot kinds as belonging to three different families, which we’ll discuss 
+in detail below. They are: 
+
+Categorical scatterplots: 
+• stripplot() (with kind="strip"; the default) 
+• swarmplot() (with kind="swarm") 
+
+Categorical distribution plots: 
+• boxplot() (with kind="box") 
+• violinplot() (with kind="violin") 
+• boxenplot() (with kind="boxen") 
+Categorical estimate plots: 
+• pointplot() (with kind="point") 
+• barplot() (with kind="bar") 
+• countplot() (with kind="count") 
+   
+These families represent the data using different levels of granularity. When deciding which to use, you’ll have to 
+think about the question that you want to answer. The unified API makes it easy to switch between different kinds 
+and see your data from several perspectives. 
+  
+Categorical Scatter Plots 
+The default representation of the data in catplot() uses a scatterplot. There are actually two different categorical 
+scatter plots in seaborn. They take different approaches to resolving the main challenge in representing categorical 
+data with a scatter plot, which is that all of the points belonging to one category would fall on the same position along 
+the axis corresponding to the categorical variable. The approach used by stripplot(), which is the default “kind” in 
+catplot() is to adjust the positions of points on the categorical axis with a small amount of random “jitter”. 
+
+The jitter parameter controls the magnitude of jitter or disables it altogether: 
+The second approach adjusts the points along the categorical axis using an algorithm that prevents them from 
+overlapping. It can give a better representation of the distribution of observations, although it only works well for 
+relatively small datasets. This kind of plot is sometimes called a “beeswarm” and is drawn in seaborn by 
+swarmplot(), which is activated by setting kind="swarm" in catplot() 
+
+Similar to the relational plots, it’s possible to add another dimension to a categorical plot by using a hue semantic. 
+(The categorical plots do not currently support size or style semantics). Each different categorical plotting function 
+handles the hue semantic differently. For the scatter plots, it is only necessary to change the color of the points. 
+ 
+Unlike with numerical data, it is not always obvious how to order the levels of the categorical variable along its axis. 
+In general, the seaborn categorical plotting functions try to infer the order of categories from the data. If your data 
+have a pandas Categorical datatype, then the default order of the categories can be set there. If the variable passed 
+to the categorical axis looks numerical, the levels will be sorted.  

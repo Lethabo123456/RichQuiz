@@ -1,0 +1,62 @@
+Formatting a horizontal rule 
+ 
+Here’s why                           Here’s how 
+Observe the horizontal rule          The horizontal rule extends across the
+                                     page. 
+---------------------------------------------------------------------------------
+Open the source code                 You’ll add the code to change the 
+                                     thickness of the horizontal rule. 
+---------------------------------------------------------------------------------
+Place the insertion point as shown   <body>
+                                        <h1>The Internet</h2>
+                                        <hr >
+                                        <p>
+                                        The Internet started as
+
+                                        To prepare to add the SIZE attribute to 
+                                        change the thickness of the horizontal 
+                                        rule. 
+----------------------------------------------------------------------------------
+Edit the HR tag to read:                To change the thickness of the 
+                                        horizontal rule to 5 pixels. 
+----------------------------------------------------------------------------------
+<HR SIZE=5> 
+----------------------------------------------------------------------------------
+Update and close the source code 
+----------------------------------------------------------------------------------
+Refresh and observe the page            The horizontal rule appears thicker. 
+----------------------------------------------------------------------------------
+Open the source code                    <body>
+Place the insertion point as shown           <h1>The internet</h2>
+                                             <hr size="3">
+                                             <p>
+                                             The Internet started a
+
+                                             To prepare to add the NOSHADE 
+                                             attribute.
+----------------------------------------------------------------------------------
+Edit the HR tag to read:                To prepare to add the NOSHADE attribute. 
+<HR SIZE=5 NOSHADE>                     The horizontal rule appears thicker.
+----------------------------------------------------------------------------------
+Update and close the source code 
+----------------------------------------------------------------------------------
+Refresh and observe the page            To make the horizontal rule appear
+----------------------------------------------------------------------------------
+Open the source code shaded.            <body>
+Place the insertion point as shown           <h1>The Internet</h1>                                 
+                                             <hr size="3" noshade>
+                                             <p>                               
+----------------------------------------------------------------------------------
+Edit the HR tag to read:                To prepare to add the WIDTH and 
+                                        COLOR attributes.  
+----------------------------------------------------------------------------------
+<HR SIZE=5 NOSHADE WIDTH=90%            To shorten the horizontal rule and 
+COLOR=Blue>                             make it appear blue.
+----------------------------------------------------------------------------------
+Update and close the source code
+----------------------------------------------------------------------------------
+Refresh and observe the page            The horizontal rule appears shorter and 
+                                        blue. 
+----------------------------------------------------------------------------------
+ 
+

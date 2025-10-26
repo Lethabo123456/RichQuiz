@@ -1,0 +1,19 @@
+o 
+produce a system. (2) An information system component that handles a specific function, such 
+as inventory, orders, or payroll.  
+ 
+The modules can be prototyped quickly. Implementation and application programming trouble 
+spots can be identified more readily. Quick prototyping is also a great confidence builder.  
+ 
+Even if the entire system cannot be brought online quickly, the implementation of one or more 
+modules will demonstrate that progress is being made and that at least part of the system is 
+ready to begin serving the end users.  
+As useful as modules are, they represent a loose collection of ER model fragments that could 
+wreak havoc in the database if left unchecked. For example, the ER model fragments:  
+ 
+Might present overlapping, duplicated, or conflicting views of the same data  
+ 
+Might not be able to support all processes in the system’s module 
+ 
+To avoid these problems, it is better if the modules’ ER fragments are merged into a single 
+enterprise ER model.

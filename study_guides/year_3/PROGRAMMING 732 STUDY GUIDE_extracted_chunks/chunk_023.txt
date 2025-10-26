@@ -1,0 +1,11 @@
+1.2.14 Layouts and layouts manager  
+All of the components that we have shown so far have been positioned by the default layout manager. As 
+we mentioned at the beginning of this unit, a layout manager automatically arranges your controls within 
+a window by using some type of algorithm. If you have programmed for other GUI environments, such as 
+Windows, then you are accustomed to laying out your controls by hand. While it is possible to layout Java 
+controls by hand, too, you generally won’t want to, for two main reasons. First, it is very tedious to 
+manually lay out a large number of components. Second, sometimes the width and height information is 
+not yet available when you need to arrange some control, because the native toolkit components haven’t 
+been realized. This is chicken and egg situation; it is pretty confusing to figure out when it is okay to use 
+the size of a given component to positions it relative to another. Each Container object has a layout 
+manager associated with it. 

@@ -1,0 +1,28 @@
+Imagine we want to show that ￢(𝑝 → 𝑞) and 𝑝 ∧￢𝑞 are logically 
+equivalent. We could use a truth table to show that these compound 
+propositions are equivalent. However, we want to illustrate how to use logical 
+identities that we already know to establish new logical identities, something that is of 
+practical importance for establishing equivalences of compound 
+propositions with a large number of variables. So, we will establish this 
+equivalence by developing a series of logical equivalences, using one of the 
+equivalences in Table 5 at a time, starting with ¬(𝑝 → 𝑞) and ending 
+with 𝑝 ∧¬𝑞. We have the following equivalences. 
+
+￢(𝑝 → 𝑞) ≡ ￢(￢𝑝 ∨ 𝑞)
+          ≡ ￢(￢𝑝) ∧￢𝑞 
+          ≡   𝑝 ∧￢𝑞       by the double negation law 
+
+
+Worked Example 
+Show that ￢(𝑝 ∨ (￢𝑝 ∧ 𝑞)) and ￢𝑝 ∧￢𝑞 are logically equivalent by 
+developing a series of logical equivalences. 
+ 
+Solution: 
+￢(𝑝 ∨ (￢𝑝 ∧ 𝑞)) ≡ ￢𝑝 ∧￢(￢𝑝 ∧ 𝑞)  by the second De Morgan law 
+
+                 ≡ ￢𝑝 ∧ [￢(￢𝑝) ∨￢𝑞]  by the first De Morgan law
+     
+                 ≡ ￢𝑝 ∧ (𝑝 ∨￢𝑞)       by the double negation law 
+                 ≡  (￢𝑝 ∧ 𝑝) ∨ (￢𝑝 ∧￢𝑞)    by the second distributive law 
+                 ≡  𝑭 ∨ (￢𝑝 ∧￢𝑞)    because ￢p ∧ p ≡ F
+                 ≡ (￢𝑝 ∧￢𝑞) ∨ 𝑭    by the identity law for F

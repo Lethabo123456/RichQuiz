@@ -1,0 +1,40 @@
+rms a depth-first traversal of the entire graph. The definition of the 
+function dftAtVertex, which performs a depth-first traversal at a given vertex, is as follows:  
+  
+void graphType::dftAtVertex(int vertex)  
+{  
+bool *visited;  
+  
+visited = new bool[gSize];  
+  
+for (int index = 0; index < gSize; index++) visited[index] 
+= false;  
+  
+dft(vertex, visited);  
+  
+delete [] visited;  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+// end dftAtVertex  
+10.6.2 Breadth-First Traversal  
+  
+
+397  
+  
+The breadth-first traversal of a graph is similar to traversing a binary tree level-by-level (the nodes at each 
+level are visited from left to right). All the nodes at any level, i, are visited before visiting the nodes at level 
+i + 1.  
+  
+The breadth-first ordering of the vertices of the graph G3 in Figure 10-7 is as follows:   
+  
+0 1 5 2 3 6 4 8 10 7 9  
+  
+For the graph G3, we start the breadth traversal at vertex 0. After visiting the vertex 0, we visit the vertices 
+that are directly connected to it

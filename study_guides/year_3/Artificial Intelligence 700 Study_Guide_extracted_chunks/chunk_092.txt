@@ -1,0 +1,58 @@
+Let us write the algorithm DFS for any given graph G. In graph G, V is the vertex 
+set and E is the set of edges written as G(V,E). Adjacency list for the given graph 
+G is stored in Adj array as described in the previous section. 
+color[] - An array color will have status of vertex as white or gray or black as 
+defined earlier in this section. 
+ 
+DFS(G) 
+{ 
+for each v in V, 
+//for loop V+1 times 
+{ 
+color[v]=white; 
+// V times 
+p[v]=NULL; 
+// V times 
+} 
+time=0; 
+// constant time O(1) 
+for each u in V, 
+//for loop V+1 times 
+if (color[u]==white) // V times 
+DFSVISIT(u) // call to DFSVISIT(v) , at most V times O(V) 
+} 
+DFSVISIT(u) 
+{ 
+color[u]=gray; 
+// constant time 
+t[u] = ++time; 
+for each v in Adj(u) 
+// for loop 
+if (color[v] == white) 
+{ 
+p[v] = u; 
+DFSVISIT(v);  // call to DFSVISIT(v) 
+} 
+color[u] = black; 
+ 
+// constant time 
+f[u]=++time; 
+// constant time 
+} 
+
+Complexity analysis 
+In the above algorithm, there is only one DFSVISIT(u) call for each vertex u in the 
+vertex set V. Initialization complexity in DFS(G) for loop is O(V). In second for loop 
+of DFS(G) , complexity is O(V) if we leave the call of DFSVISIT(u). 
+Now, Let us find the complexity of function DFSVISIT(u) 
+The complexity of for loop will be O(deg(u)+1) if we do not consider the recursive 
+call to DFSVISIT(v). For recursive call to DFSVISIT(v), (complexity will be O(E) as
+
+Recursive call to DFSVISIT(v) will be at most the sum of degree of adjacency for 
+all vertex v in the vertex set V. It can be written as Σ |Adj(v)|=O(E) 
+vsV 
+Hence, overall complexity for DFS algorithm is O(V + E) 
+The strategy of the DFS is to search “deeper” in the graph whenever possible. 
+Exploration of vertex is in the fashion that first it goes deeper then widened. 
+Let us take up an example to see how exploration of vertex takes place by Depth 
+First Search algorithm.

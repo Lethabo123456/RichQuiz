@@ -1,0 +1,25 @@
+2.3.1 Sealed Class 
+The obverse side of the design coin from abstract is sealed. Although an abstract class is in-
+tended to be derived from and to provide a template for its subclasses to follow, a sealed class 
+does not allow classes to derive from it at all. Placed before the class declaration, the sealed 
+keyword precludes derivation. Classes are most often marked sealed to prevent accidental in-
+heritance. 
+If the declaration of Window in Example 2-2 is changed from abstract to sealed (eliminating the 
+abstract keyword from the DrawWindow ( ) declaration as well), the program will fail to compile. 
+If you try to build this project, the compiler will return the following error message: 
+'ListBox' cannot inherit from sealed class 'Window' 
+among many other complaints (such as that you cannot create a new protected member in a 
+sealed class). 
+2.4 The Root of all Classes: Object 
+All C# classes, of any type, are treated as if they ultimately derive from System .Obj ect. Inter-
+estingly, this includes value types! 
+
+A base class is the immediate "parent" of a derived class. A derived class can be the base to 
+further derived classes, creating an inheritance "tree" or hierarchy. A root class is the topmost 
+class in an inheritance hierarchy. In C#, the root class is Object. The nomenclature is a bit con-
+fusing until you imagine an upside-down tree, with the root on top and the derived classes be-
+low. Thus, the base class is considered to be "above" the derived class. 
+Object provides a number of methods that subclasses can and do override. These include Equals 
+( ) to determine if two objects are the same, GetType ( ), which returns the type of the object , 
+and ToString ( ), which returns a string to represent the current object . Table 2-1 summarizes 
+the methods of Object.

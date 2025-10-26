@@ -1,0 +1,90 @@
+//Line 12  
+  
+cout << "Line 13: After the pop operation, the "  
+<< " top element of intStack: "  
+ 
+<< intStack.top() << endl;   
+  
+  
+  
+  
+  
+//Line 13  
+  
+ 
+cout << "Line 14: intStack elements: ";   
+  
+  
+  
+  
+//Line 14  
+  
+
+212  
+  
+ 
+while (!intStack.empty())   
+  
+  
+  
+  
+  
+  
+//Line 15  
+{           //Line 16 cout << intStack.top() << " ";       //Line 17 intStack.pop();        //Line 
+18  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 19  
+  
+cout << endl;     
+  
+  
+  
+  
+  
+  
+//Line 20 return 0;   
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+//Line 21  
+ 
+}   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//Line 22  
+  
+Sample Run:  
+Line 11: The top element of intStack: 3  
+Line 13: After the pop operation, the top element of intStack: 20 Line 
+14: intStack elements: 20 8 16  
+  
+The preceding output is self-explanatory. The details are left as an exercise for you. Key 
+Terms  
+  
+1. A stack is a data structure in which the items are added and deleted from one end only.  
+2. A stack is a Last In Fi

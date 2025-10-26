@@ -1,0 +1,77 @@
+ually, divided into, say b buckets HT[0], HT[1], . . ., HT[b – 1]. Each bucket is capable 
+of holding, say r items. Thus, it follows that br = m, where m is the size of HT. Generally, r = 1 and so each 
+bucket can hold one item.  
+  
+The hash function h maps the key X onto an integer t, that is, h(X) = t, such that 0 ≤ h(X) ≤ b – 1.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+267  
+  
+EXAMPLE 7-2  
+  
+  
+We consider now a slight variation of Example 7-2.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+268  
+  
+  
+EXAMPLE 7-3  
+  
+   
+Two keys, X1 and X2, such that X1 ≠ X2, are called synonyms if h(X1) ¼ h(X2). Let X be a key and h(X) = t. If 
+bucket t is full, we say that an overflow occurs. Let X1 and X2 be two nonidentical keys. If h(X1) = h(X2), we 
+say that a collision occurs. If r = 1, that is, the bucket size is 1, an overflow and a collision occur at the same 
+time.  
+  
+When choosing a hash function, the main objectiv

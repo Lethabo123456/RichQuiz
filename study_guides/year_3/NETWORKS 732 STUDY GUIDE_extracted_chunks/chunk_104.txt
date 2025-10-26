@@ -1,0 +1,16 @@
+2.4 Bandwidth Management 
+As you might know, a network’s bandwidth indicates its potential to handle network traffic. This 
+is not just a single number, but a conglomeration of numbers from every link and interface on 
+the network. As you’ve learned so far, different devices can handle different volumes of traffic, 
+and your overall bandwidth management techniques must take this reality into account. As a 
+subset of performance management, bandwidth management refers to a collection of strategies 
+to optimize the volume of traffic a network can support. These techniques might include any of 
+the following technologies: 
+
+• Flow control—Configure interfaces and protocols to balance permitted traffic volume with a 
+device’s capability of handling that traffic. 
+• Congestion control—Adjust the way network devices respond to indications of network 
+performance issues caused by traffic congestion, so they don’t make the problem worse. 
+• QoS (quality of service)—Prioritize some traffic over other traffic so the most important traffic 
+gets through even during times of congestion. 
+Let’s explore each of these technologies in more detail. 

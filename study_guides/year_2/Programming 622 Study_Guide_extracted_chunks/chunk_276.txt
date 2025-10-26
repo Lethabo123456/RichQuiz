@@ -1,0 +1,21 @@
+find the length of the list, search the list for a 
+given item, insert an item in the list, delete an item from the list, and copy the list.  
+  
+We leave it as exercise for you to design a class to implement a sorted circular linked list.  
+
+139  
+  
+  
+Key Terms  
+  
+1. A linked list is a list of items, called nodes, in which the order of the nodes is determined by the address, 
+called a link, stored in each node.  
+2. The pointer to a linked list—that is, the pointer to the first node in the list—is stored in a separate 
+location, called the head or first.  
+3. A linked list is a dynamic data structure.  
+4. The length of a linked list is the number of nodes in the list.  
+5. Item insertion and deletion from a linked list does not require data movement; only the pointers are 
+adjusted.  
+6. A (single) linked list is traversed in only one direction.  
+7. The search on a linked list is sequential.  
+8. The first (or head) pointer of a linked list is always fixed, pointing to the firs

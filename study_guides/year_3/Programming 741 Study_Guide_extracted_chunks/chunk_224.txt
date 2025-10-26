@@ -1,0 +1,56 @@
+Example 5-2. Cat ching an except ion 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class Test 
+{ 
+public static void Main() 
+{ 
+Console.WriteLine("Enter Main..."); 
+Test t = new Test(); 
+t.Func1(); 
+Console.WriteLine("Exit Main..."); 
+} 
+public void Func1() 
+{ 
+Console.WriteLine("Enter Func1..."); 
+Func2(); 
+Console.WriteLine("Exit Func1..."); 
+} 
+public void Func2() 
+{ 
+Console.WriteLine("Enter Func2..."); 
+try 
+{ 
+Console.WriteLine("Entering try block..."); 
+Console.WriteLine("Exiting try block..."); 
+} 
+catch{ 
+Console.WriteLine("Exception caught and handled."); 
+} 
+Console.WriteLine("Exit Func2..."); 
+} 
+} 
+} 
+OUTPUT:  
+ 
+Example 6-2 is identical to Example 6-1 except that now the program includes a try/catch 
+block. You would typically put the t r y block around a potentially "dangerous" statement, 
+such as accessing a file, allocating memory, and so forth.  
+Following the try statement is a generic catch statement. The catch statement in Example 6-
+2 is generic because you haven't specified what kind of exceptions to catch. In this case, the 
+statement will catch any exceptions that are thrown. Using catch statements to catch specific 
+types of exceptions is discussed later in this chapter. 
+ 
+6.2.3 Taking corrective action 
+In Example 6-2, the catch statement simply reports that the exception has been caught and 
+handled. In a real-world example, you might take corrective action to fix the problem that 
+caused an exception to be thrown. For example, if the user is trying to open a read-only file, 
+you might invoke a method that allows the user to change the attributes of the file. if the 
+program has run out of memory, you might give the user an opportunity to close other 
+applications. If all else fails, the catch block can print an error message so that the user knows 
+what went wrong. 

@@ -1,0 +1,32 @@
+Limited portability between cloud providers 
+Due to a lack of established industry standards within the cloud computing industry. it can be 
+challenging to migrate from one cloud provider to another. Portability is a measure used to determine 
+the impact of moving cloud consumer IT resources and data between clouds 
+Multi-regional compliance and legal issues 
+Cloud consumers will often not be aware of the physical location of their IT resources and data when 
+hosted by public clouds. This can pose serious legal concerns pertaining to industry or government 
+regulations that specify data privacy and storage policies. Another potential legal issue pertains to the 
+accessibility and disclosure of data. Countries have laws that require some types of data to be 
+disclosed to certain government agencies or to the subject of the data.  
+
+Increased Security Vulnerabilities 
+
+The moving of business data to the cloud means that the responsibility over data security becomes 
+shared with the cloud provider. The remote usage of IT resources requires an expansion of trust 
+boundaries by the cloud consumer to include the external cloud. It can be difficult to establish a 
+security architecture that spans such a trust boundary without introducing vulnerabilities, unless cloud 
+consumers and cloud providers happen to support the same or compatible security frameworks—
+which is unlikely with public clouds. 
+ 
+Vendor Lock-in 
+It is very difficult for the customers to switch from one Cloud Service Provider (CSP) to another. It 
+results in dependency on just a particular CSP for service. 
+Insecure or incomplete data deletion  
+It is possible that the data requested for deletion by a cloud consumer may not get deleted. It happens 
+either because extra copies of data are stored but are not available at the time of deletion, or the disk 
+that stores data of multiple tenants is destroyed. 
+
+Interoperability 
+Application on one platform should be able to incorporate services from other various platforms made 
+possible via web services, but developing such web services is very complex. 
+ 

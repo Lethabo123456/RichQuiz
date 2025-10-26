@@ -1,0 +1,26 @@
+e becomes a reference parameter. 
+
+108 | P a g e  
+ 
+ 
+ 
+ 
+
+109 | P a g e  
+ 
+ 
+ 
+Let us walk through this program. The values of the variables are shown before and/ 
+or after each statement executes. 
+Just before the statement in Line 9 executes, memory is allocated only for the variables 
+of the function main; this memory is not initialized. After the statement in Line 11 
+executes, the variables are as shown in Figure below. 
+ 
+The statement in Line 12 produces the following output: 
+Line 12: Inside main: num1 = 10, num2 = 15, and ch = A 
+The statement in Line 13 is a function call to the function funOne. Now function funOne 
+has three parameters (a, b, and v) and one local variable (one). Memory for the 
+parameters and the local variable of function funOne is allocated. Because the formal 
+parameter b is a reference parameter, it receives the address (memory location) of the 
+corresponding actual parameter, which is num2. The other two formal parameters are 
+value parameters, so th

@@ -1,0 +1,21 @@
+A layout manager is an instance of any class that implements the 
+LayoutManager interface. The layout manager is set by the setLayout( ) method. If no call to setLayout( ) 
+is made, then the default layout manger is used. Whenever a container is resized (or sized for the first 
+time), the layout manager is used to position each of the components within it. The setLayout( ) method 
+has the following general form:  
+  
+Void setLayout(LayoutManger LayoutObj)  
+  
+Here, layoutObj is a reference to the desired layout manager. If you wish to disable the layout manager 
+and position components manually, pass null for layoutObj. If you do this, you will need to determine the 
+shape and position of each component manually, using the setBounds( ) method defined by Component 
+Normally, you will want to use a layout manger. Each layout manager keeps track of a list of components 
+that are stored by their names. The layout manager is notified each time you add a component to a 
+container. Whenever the container needs to be resized, the layout manager is consulted via its 
+minimumLayoutSize( ) and preferredLayoutSize( ) methods. Each component that is being managed by a 
+layout manager contains the getPreferredSize( ) and getMinimumSize( ) methods. These return the 
+preferred and minimum size required to display each component. The Layout manager will honor these 
+requests if at all possible, while maintaining the integrity of the layout policy. You may override these 
+methods for controls that you subclass. Default values are provided otherwise. Java has several 
+predefined LayoutManger classes, which are described next. You can use the layout manager that best 
+fits your application.  

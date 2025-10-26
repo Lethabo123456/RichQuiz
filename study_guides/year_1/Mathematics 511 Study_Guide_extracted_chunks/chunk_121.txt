@@ -1,0 +1,21 @@
+TOPIC TWO | BOOLEAN ALGEBRA 
+ 
+ 
+Introduction 
+The circuits in computers and other electronic devices have inputs, each of 
+which is either a 0 or a 1, and produce outputs that are also 0s and 1s. Circuits 
+can be constructed using any basic element that has two different states. 
+Such elements include switches that can be in either the on or the off 
+position and optical devices that can be either lit or unlit. In 1938 Claude 
+Shannon showed how the basic rules of logic, first given by George Boole in 
+1854 in his The Laws of Thought, could be used to design circuits. These rules 
+form the basis for Boolean algebra. In this chapter we develop the basic 
+properties of Boolean algebra. The operation of a circuit is defined by a 
+Boolean function that specifies the value of an output for each set of inputs. 
+The first step in constructing a circuit is to represent its Boolean function by 
+an expression built up using the basic operations of Boolean algebra. We will 
+provide an algorithm for producing such expressions. The expression that we 
+obtain may contain many more operations than are necessary to represent 
+the function. Later in the chapter we will describe methods for finding an 
+expression with the minimum number of sums and products that represents 
+a Boolean function.  

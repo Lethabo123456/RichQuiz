@@ -1,0 +1,16 @@
+2.5.3 CoS (Class of Service) 
+
+Class of Service (CoS) is often mistakenly used interchangeably with Quality of Service (QoS), but 
+there is a key difference between the two. QoS encompasses a broad set of techniques applied 
+across multiple layers of the OSI model using various protocols to manage and prioritize network 
+traffic. CoS, on the other hand, is a specific method used within Layer 2 of the OSI model, focusing 
+specifically on Ethernet frames. CoS is commonly applied to optimize the routing of Ethernet 
+traffic between VLANs (Virtual LANs). Tagged Ethernet frames—those addressed to specific 
+VLANs—contain a 3-bit field in their headers known as the PCP (Priority Code Point). CoS uses 
+this field to assign one of eight priority levels (ranging from 0 to 7), which tells the switch how to 
+handle the frame when there is congestion at a port. If a switch port receives more data than it 
+can immediately forward, it refers to the priority level set by CoS to decide whether to queue the 
+frame for later transmission or discard it, depending on its importance. For QoS benefits to be 
+realized, all network devices and client systems must support the same protocols. While CoS is 
+one approach, modern networks often combine multiple QoS methods to manage traffic 
+effectively across different layers and types of infrastructure.

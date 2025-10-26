@@ -1,0 +1,21 @@
+aiting 
+time of each customer in the queue is incremented by 1. The ADT queueType designed in this chapter has 
+all the operations needed to implement a queue, except the operation of incrementing the waiting time 
+of each customer in the queue by one time unit. We will derive a class, waitingCustomerQueueType, from 
+the class queueType and add the additional operations to implement the customer queue. The definition 
+of the class waitingCustomerQueueType is as follows:  
+//************************************************************  
+// class waitingCustomerQueueType  
+// This class extends the class queueType to implement a list // 
+of waiting customers.  
+
+247  
+  
+//************************************************************ class 
+waitingCustomerQueueType: public queueType<customerType>  
+{ public:  
+waitingCustomerQueueType(int size = 100);  
+//Constructor  
+//Postcondition: The queue is initialized according to the 
+// parameter size. The value of size is passed to the // 
+con

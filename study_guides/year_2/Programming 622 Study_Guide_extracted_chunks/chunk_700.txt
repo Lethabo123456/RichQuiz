@@ -1,0 +1,50 @@
+chTreeType<elemType>::deleteFromTree(binaryTreeNode<elemType>* &p)  
+{  
+binaryTreeNode<elemType> *current;  
+  
+//pointer to traverse the tree 
+binaryTreeNode<elemType> *trailCurrent;   //pointer behind current 
+binaryTreeNode<elemType> *temp;   //pointer to delete the node  
+  
+if (p == NULL) cerr << "Error: The node to be deleted is NULL." 
+<< endl; else if(p->llink == NULL && p->rlink == NULL)  
+{  
+
+344  
+  
+temp = p; p 
+= NULL;  
+delete temp;  
+}  
+else if(p->llink == NULL)  
+{  
+temp = p; p = 
+temp->rlink;  
+delete temp;  
+}  
+else if(p->rlink == NULL)  
+{  
+temp = p; p = 
+temp->llink;   
+delete temp;  
+}  
+else  
+{ current = p->llink;  
+trailCurrent = NULL;  
+  
+while (current->rlink != NULL)  
+{ trailCurrent = current; current 
+= current->rlink;  
+}//end while  
+  
+p->info = current->info;  
+  
+ 
+if (trailCurrent == NULL)   
+  
+  
+//current did not move;  
+//current == p->llink; adjust p  
+p->llink = current->llink; else 
+trailCurrent->rlink = current->llink; delete 
+current;

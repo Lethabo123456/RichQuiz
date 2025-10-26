@@ -1,0 +1,102 @@
+Examplse 5-7. Creating a custom exception 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Values 
+{ 
+public class MyCustomException : 
+System.ApplicationException 
+{ 
+public MyCustomException(string message) : 
+base(message) 
+{ 
+} 
+} 
+public class Test 
+{ 
+public static void Main() 
+{ 
+Test t = new Test(); 
+t.TestFunc(); 
+} 
+// try to divide two numbers 
+// handle possible exceptions 
+public void TestFunc() 
+{ 
+try 
+{ 
+Console.WriteLine("Open file here"); 
+double a = 0; 
+double b = 5; 
+Console.WriteLine("{0} / {1} = {2}", 
+a, b, DoDivide(a, b)); 
+Console.WriteLine( 
+"This line may or may not print"); 
+} 
+// most derived exception type first 
+catch (System.DivideByZeroException e) 
+{ 
+Console.WriteLine( 
+"\nDivideByZeroException! Msg: {0}", 
+e.Message); 
+Console.WriteLine( 
+
+167 
+ 
+"\nHelpLink: {0}\n", e.HelpLink); 
+} 
+catch (MyCustomException e) 
+{ 
+Console.WriteLine( 
+"\nMyCustomException! Msg: {0}", 
+e.Message); 
+Console.WriteLine( 
+"\nHelpLink: {0}\n", e.HelpLink); 
+} 
+catch 
+{ 
+Console.WriteLine( 
+"Unknown exception caught"); 
+} 
+finally 
+{ 
+Console.WriteLine("Close file here."); 
+} 
+} 
+// do the division if legal 
+public double DoDivide(double a, double b) 
+{ 
+if (b == 0) 
+{ 
+DivideByZeroException e = 
+new DivideByZeroException(); 
+e.HelpLink = 
+"http://www.libertyassociates.com"; 
+throw e; 
+} 
+if (a == 0) 
+{ 
+
+168 
+ 
+MyCustomException e = 
+new MyCustomException( 
+"Can't have zero divisor"); 
+e.HelpLink = 
+"http://www.libertyassociates.com/NoZeroDivisor.htm"; 
+throw e; 
+} 
+return a / b; 
+} 
+} 
+}
+
+MyCustomException is derived from System.ApplicationException and consists of nothing 
+more than a constructor that takes a string message that it passes to its base class. In this 
+case, the advantage of creating this custom exception class is that it better reflects the 
+particular design of the Test class, in which it is not legal to have a zero divisor. Using the 
+ArithmeticException rather than a custom exception would work as well, but it might confuse 
+other programmers because a zero divisor wouldn't normally be considered an arithmetic 
+error. 

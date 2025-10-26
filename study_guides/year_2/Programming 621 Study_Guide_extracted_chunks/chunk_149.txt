@@ -1,0 +1,26 @@
+ns (that is, in two dimensions), wherein all components are of the same 
+type. 
+ 
+ 
+wherein intExp1 and intExp2 are constant expressions yielding positive integer values. 
+The two expressions intExp1 and intExp2 specify the number of rows and the number 
+of columns, respectively, in the array. 
+ 
+The statement:  
+double sales[10][5];  
+
+142 | P a g e  
+ 
+declares a two-dimensional array sales of 10 rows and 5 columns, in which every 
+component is of type double. As in the case of a one-dimensional array, the rows are 
+numbered 0. . .9 and the columns are numbered 0. . .4 
+ 
+Accessing Array Components 
+ 
+To access the components of a two-dimensional array, you need a pair of indices: one 
+for the row position (which occurs first) and one for the column position (which occurs 
+second). The syntax to access a component of a two-dimensional array is: 
+ 
+  
+wherein indexExp1 and indexExp2 are expressions yielding nonnegative integer 
+values. indexExp1 specifies the row position and indexExp

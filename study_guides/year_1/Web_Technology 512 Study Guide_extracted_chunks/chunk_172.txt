@@ -1,0 +1,29 @@
+egular expression could be defined with the RegExp( ) constructor like this: 
+var pattern = new RegExp(pattern, attributes); 
+or simply 
+var pattern = /pattern/attributes; 
+ 
+Here is the description of the parameters: 
+ 
+pattern: A string that specifies the pattern of the regular expression or another 
+regular expression. 
+ 
+attributes: An optional string containing any of the "g", "i", and "m" attributes 
+that specify global, case-insensitive, and multiline matches, respectively. 
+ 
+6.2.7.1 Brackets 
+Brackets ([]) have a special meaning when used in the context of regular expressions. 
+They are used to find a range of characters. 
+Expression Description 
+[...]  
+Any one character between the brackets.  
+[^...]  
+Any one character not between the brackets.  
+[0-9]  
+It matches any decimal digit from 0 through 9.  
+[a-z]  
+It matches any character from lowercase a through lowercase z.  
+[A-Z]  
+It matches any character from uppercase A through uppercase Z.  
+[a-Z]  
+It matches any cha

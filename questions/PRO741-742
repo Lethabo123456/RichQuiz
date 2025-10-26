@@ -1,0 +1,50 @@
+🔍 Processing chunk 30/227: chunk_043.txt
+
+=== Generated Prompt ===
+
+Create 20 quiz questions based on the following material.
+Format each question as:
+Q<number>. [question]
+Type: [MCQ / True/False / Short / Fill / Interpretation]
+Options:
+A. [option A]
+B. [option B]
+C. [option C]
+D. [option D]
+Answer: [correct answer]
+Reasoning: [why?]
+Difficulty: [easy, medium, hard]Separate each question with a line of dashes.
+
+1.6.4 Creating Structs Create an instance of a struct by using the new keyword in an assignment statement, just as you would for a class. In Example 1-2.0, the Tester class creates an instance of Location as follows: Location loc1 = new Location(200,200); Here the new instance is named loc1 and is passed two value This lesson described what is a class, struct and identified a few differences between class and struct types. You learned how to create a struct. You can instantiate a struct either via a default constructor or a custom constructor overload that you write. You also saw how to implement properties and methods in structs. you can declare instance and static constructors. You know how to initialize class fields. When there is no need to instantiate an object, you can create static class members. You can also declare destructors for cleaning up resources.
+=========================
+
+
+=== Raw Model Output ===
+
+20 quiz questions based on the following material. Format each question as: Qnumber>. [question] Type: [MCQ / True/False / Short / Fill / Interpretation] Options: A. [option A] B. [option B] C. [option C] D. [option D] Answer: [correct answer] Reasoning: [why?] Difficulty: [easy, medium, hard]Separate each question with a line of das
+=========================
+
+
+=== Cleaned Output ===
+
+20 quiz questions based on the following material. Format each question as: Qnumber>. [question] Type: [MCQ / True/False / Short / Fill / Interpretation] Options: A. [option A] B. [option B] C. [option C] D. [option D] Answer: [correct answer] Reasoning: [why?] Difficulty: [easy, medium, hard]Separate each question with a line of das
+======================
+
+Parsed Question:
+ {'question_text': '', 'option_a': '', 'option_b': '', 'option_c': '', 'option_d': '', 'correct_option': '', 'reasoning': ''}
+--------------------------------------------------
+✅ Chunk 30 questions parsed.
+
+{
+    "question": "True/False: You can use inheritance between structs in C#.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only with interfaces",
+      "D. Only for abstract structs"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Structs are value types and do not support inheritance.",
+    "difficulty": "hard"
+  }

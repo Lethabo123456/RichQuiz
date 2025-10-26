@@ -1,0 +1,18 @@
+You can't assign data to the ListBox type. Instead you must first create an object of that type, as 
+in the following code snippet: 
+
+ListBox myListBox; 
+
+Once you create an instance of ListBox, you can assign data to its fields. 
+Now consider a class to keep track of and display the time of day. The internal state of the class 
+must be able to represent the current year, month, date, hour, minute, and second. You prob-
+ably would also like the class to display the time in a variety of formats. You might implement 
+such a class by defining a single method and six variables, as shown in Example 2-1. 
+
+The only method declared within the Time class definition is the method DisplayCurrentTime 
+( ). The body of the method is defined within the class definition itself. Unlike other languages 
+(such as C++), C# does not require that methods be declared before they are defined, nor does 
+the language support placing its declarations into one file and code into another. (C# has no 
+header files.) All C# methods are defined inline as shown in 
+
+Example 2-1 with DisplayCurrentTime ( ). 

@@ -1,0 +1,17 @@
+posite entity named ENROLL represents the 
+linking table between STUDENT and CLASS. 
+ 
+ 
+ 
+ 
+Data Redundancy Revisited 
+In Chapter 1, you learned that data redundancy leads to data anomalies, which can destroy the 
+effectiveness of the database. You also learned that the relational database makes it possible to 
+control data redundancies by using common attributes that are shared by tables, called foreign keys. 
+The proper use of foreign keys is crucial to controlling data redundancy, although they do not totally 
+eliminate the problem because the foreign key values can be repeated many times. However, the 
+proper use of foreign keys minimizes data redundancies and the chances that destructive data 
+anomalies will develop. 
+You will learn in Chapter 2.2 that database designers must reconcile three often contradictory 
+requirements: design elegance, processing speed, and information requirements. Also, you will 
+learn that proper data warehousing design requires carefully defined and co

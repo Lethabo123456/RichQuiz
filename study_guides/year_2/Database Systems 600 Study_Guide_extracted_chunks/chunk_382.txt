@@ -1,0 +1,17 @@
+any operations and the scope 
+of the problem are sufficiently limited to allow even a single designer to define the problem(s), 
+create the conceptual design, verify the conceptual design with the user views, define system 
+processes and data constraints to ensure the efficacy of the design, and ensure that the design will 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Nine, page 473-474. 
+
+ 
+153 
+com-ply with all the requirements. (Although centralized design is typical for small companies, do 
+not make the mistake of assuming that it is limited to small companies. Even large companies can 
+operate within a relatively simple database environment.) Figure 9.15 summarizes the centralized 
+design option. Note that a single conceptual design is completed and then validated in the 
+centralized design approach. Decentralized design might be used when the system’s data 
+component has a considerable number of entities

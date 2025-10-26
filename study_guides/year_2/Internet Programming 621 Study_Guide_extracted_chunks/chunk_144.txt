@@ -1,0 +1,21 @@
+d arrays, this is usually what you want to happen: you need the elements to appear in 
+the correct order, and at the same time you expect the indices in an indexed array to start at zero. 
+However, for associative arrays, this can cause a problem. Consider the following scenario:  
+  
+$myBook = array( “title” = > “Bleak House”,  
+“author” = > “Dickens”, 
+“year” = > 1853 );  
+sort( $myBook );  
+  
+// Displays “Array ( [0] = > Bleak House [1] = > Dickens [2] = > 1853 )” 
+print_r( $myBook );  
+  
+Notice how sort() has reindexed the associative array, replacing the original string keys with numeric 
+keys and effectively turning the array into an indexed array. This renders the sorted array practically 
+useless, because there is no longer an easy way to find out which element contains, say, the book 
+title.  
+  
+This is where asort() and arsort() come in. They work just like sort() and rsort() , but they preserve 
+the association between each element ’ s key and its value:  
+  
+$myBook = ar

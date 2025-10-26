@@ -1,0 +1,27 @@
+ctions are used to implement the public member functions of the class and the user 
+need not know their existence. For example, to do an inorder traversal, the function inorderTraversal calls 
+the function inorder and passes the pointer root as a parameter to this function. Suppose that you have 
+the following statement:  
+  
+
+331  
+  
+binaryTreeType<int> myTree;  
+  
+The following statement does an inorder traversal of myTree:  
+  
+myTree.inorder();  
+  
+Also, note that in the definition of the class binaryTreeType, the pointer root is declared as a protected 
+member so that we can later derive special binary trees.  
+  
+Next, we give the definitions of the member functions of the class binaryTreeType.  
+  
+The binary tree is empty if root is NULL. So the definition of the function isEmpty is as follows:  
+  
+template <class elemType>  
+bool binaryTreeType<elemType>::isEmpty() const  
+{ return (root == NULL);  
+}  
+  
+The default constructor initializes the binary tree to an empty sta

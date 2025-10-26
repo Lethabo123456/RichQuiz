@@ -1,0 +1,22 @@
+ormation that can be handled depending on the image depth; the larger the 
+depth, the more colours that can be introduced. 
+                    
+                                                                                      Table 6.1: Colour depth 
+                 
+ 
+ 
+Even at 24 bits, an image, such as Figure 6.3, is just a collection of numbers in grid form; 
+there's just more information going on. The image illustrated in Figure 6.1 is 8 × 8 pixels and 
+has only two colours (black or white, zero or one). On the other hand, the sunflower was a 
+24-bit colour image and has 15,360,000 bits of information. In the context of ML, it may be 
+prudent to reduce the colour depth to speed up training; reducing the image size will help 
+too. 
+ 
+
+P a g e  | 73 
+ 
+                
+ 
+                                                                                                     Figure 6.3:  Bit image 
+6.6.2 Images in ML 
+Most of what we are doing with ML is feeding information, usuall

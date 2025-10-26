@@ -1,0 +1,25 @@
+Simplify 
+A simplification of the overall security infrastructure has benefits in and of itself and also makes the 
+task of SEM easier. There are several considerations in this regard: 
+
+ Over time, the security infrastructure can contain elements that are either no longer needed 
+because they duplicate other functions or that are configured or deployed ineffectively. 
+Remove, reconfigure, or redeploy these elements. 
+ As much as feasible, retire legacy software and equipment and consolidate external routes 
+into the enterprise network. 
+ Consider grouping high-value assets together for highest security. 
+ Deploy a default deny policy as broadly as possible. For example, perhaps only user actions 
+that are specifically allowed are performed, and all others are prohibited. Or maybe 
+applications on a whitelist are allowed to run, and all others are automatically blocked. Default 
+deny makes for short and elegant configuration, fewer events that need investigation, and 
+greater overall security. 
+Another aspect of simplification is to configure and deploy systems in such a way as to reduce the 
+number of alerts and especially the number of false positives. For example, logically group servers so 
+that sensors selectively ignore Windows attacks directed at UNIX systems and vice versa. 
+ 
+6.5 Threat Intelligence 
+Threat intelligence, also known as cyber threat intelligence (CTI), or cyberintelligence, is the 
+knowledge established as a result of analyzing information about potential or current attacks that 
+threaten an organization. The information is taken from a number of internal and external sources, 
+including application, system, and network logs; security products such as firewalls and intrusion 
+detection systems; and dedicated threat feeds. 

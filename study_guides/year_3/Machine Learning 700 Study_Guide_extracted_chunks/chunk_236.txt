@@ -1,0 +1,89 @@
+6.5  Tensors 
+
+Deep neural networks (DNNs) incorporate multiple hidden layers for solving complex tasks. Key 
+elements include: 
+
+Layer types: Input, hidden, and output layers. 
+Applications: Image and speech recognition. 
+ 
+# A Tensor is either a float, or a List of Tensors 
+ Tensor = Union[float, List[Tensor]] 
+
+However, Python won’t let you define recursive types like that. And even if it did that definition is still 
+not right, as it allows for bad “tensors” like: 
+              Tensor = list 
+[[1.0, 2.0], 
+[3.0]] 
+ 
+whose rows have different sizes, which makes it not an n- dimensional array. And we’ll write a helper 
+function to find a tensor’s shape: 
+
+from typing import List 
+def shape(tensor: Tensor) -> List[int]: sizes: 
+List[int] = [] 
+while 
+isinstance(tensor, list): 
+sizes.append(len(tensor)) tensor = tensor[0] 
+return sizes 
+assert shape([1, 2, 3]) == [3] 
+assert shape([[1, 2], [3, 4], [5, 6]]) == [3, 2] 
+Because tensors can have any number of dimensions, we’ll typically need to work with them 
+recursively. We’ll do one thing in the one-dimensional case and recurse in the higher-
+dimensional case: 
+def is_1d(tensor: Tensor) -> bool: 
+""" 
+If tensor[0] is a list, it's a higher-order tensor. 
+Otherwise, tensor is 1-dimensional (that is, a 
+vector). """ 
+
+return not isinstance(tensor[0], list) 
+assert is_1d([1, 2, 3]) 
+assert not is_1d([[1, 2], [3, 4]]) 
+which we can use to write a recursive tensor_sum function: 
+def tensor_sum(tensor: Tensor) -> float: 
+"""Sums up all the values in the tensor""" 
+if is_1d(tensor): 
+return sum(tensor) # just a list of floats, use Python sum 
+else: 
+return sum(tensor_sum(tensor_i) 
+# Call tensor_sum on each row 
+for tensor_i in tensor) 
+# and sum up those results. 
+assert tensor_sum([1, 2, 3]) == 6 
+assert tensor_sum([[1, 2], [3, 4]]) == 10 
+
+If you’re not used to thinking recursively, you should ponder this until it makes sense, because 
+we’ll use the same logic throughout this chapter. However, we’ll create a couple of helper 
+functions so that we don’t have to rewrite this logic everywhere. The first applies a function 
+elementwise to a single tensor: 
+ 
+from typing import Callable 
+def tensor_apply(f: Callable[[float], float], tensor: Tensor) -> Tensor: 
+"""Applies f elementwise""" 
+if is_1d(tensor): 
+return [f(x) for x in tensor] 
+else: 
+return [tensor_apply(f, tensor_i) for tensor_i in tensor] 
+
+assert tensor_apply(lambda x: x + 1, [1, 2, 3]) == [2, 3, 4] 
+assert tensor_apply(lambda x: 2 * x, [[1, 2], [3, 4]]) == [[2, 4], [6, 8]] 
+We can use this to write a function that creates a zero tensor with the same shape as a given 
+tensor: 
+def zeros_like(tensor: Tensor) -> Tensor: 
+return tensor_apply(lambda _: 0.0, tensor) 
+assert zeros_like([1, 2, 3]) == [0, 0, 0] 
+assert zeros_like([[1, 2], [3, 4]]) == [[0, 0], [0, 0]] 
+We’ll also need to apply a function to corresponding elements from two tensors (which had 
+better be the exact same shape, although we won’t check that): 
+def tensor_combine(f: Callable[[float, float], float], 
+t1: Tensor, 
+t2: Tensor) -> Tensor: 
+"""Applies f to corresponding elements of t1 and t2""" 
+if is_1d(t1): 
+return [f(x, y) for x, y in zip(t1, t2)] 
+else: 
+return [tensor_combine(f, t1_i, t2_i) 
+for t1_i, t2_i in zip(t1, t2)] 
+import operator 
+assert tensor_combine(operator.add, [1, 2, 3], [4, 5, 6]) == [5, 7, 9] 
+assert tensor_combine(operator.mul, [1, 2, 3], [4, 5, 6]) == [4, 10, 18] 

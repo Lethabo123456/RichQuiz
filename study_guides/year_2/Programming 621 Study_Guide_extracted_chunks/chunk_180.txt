@@ -1,0 +1,24 @@
+ameter, you use & when you declare the formal parameter in the 
+function heading. Therefore, to declare a formal parameter as a reference pointer 
+parameter, between the data type name and the identifier name, you must include * 
+to make the identifier a pointer and & to make it a reference parameter. The obvious 
+
+166 | P a g e  
+ 
+question is: In what order should & and * appear between the data type name and the 
+identifier to declare a pointer as a reference parameter?  
+ 
+In C++, to make a pointer a reference parameter in a function heading, * appears 
+before the & between the data type name and the identifier. The following example 
+illustrates this concept: 
+ 
+void pointerParameters(int* &p, double *q)  
+{ 
+………. 
+ ………. 
+} 
+ 
+In the function pointerParameters, both p and q are pointers. The parameter p is a 
+reference parameter; the parameter q is a value parameter. Furthermore, the function 
+pointerParameters can change the value of *q, but not the value of q. However, the 
+func

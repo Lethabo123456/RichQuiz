@@ -1,0 +1,13 @@
+ed to needle 2. Disk number 3 can then be moved from needle 1 to needle 3. To move the top 
+two disks from needle 2 to needle 3, we use the same strategy as before. This time we use needle 1 as 
+the intermediate needle. Figure 4-9 shows a solution to the Tower of Hanoi problem with three disks.  
+  
+  
+FIGURE 4-9 Solution to Tower of Hanoi problem with three disks  
+  
+Let us now generalize this problem to the case of 64 disks. To begin, the first needle contains all 64 disks. 
+Disk number 64 cannot be moved from needle 1 to needle 3 unless the top 63 disks are on the second 
+needle. So first we move the top 63 disks from needle 1 to needle 2, and then we move disk number 64 
+from needle 1 to needle 3. Now the top 63 disks are all on needle 2. To move disk number 63 from needle 
+2 to needle 3, we first move the top 62 disks from needle 2 to needle 1, and then we move disk number 
+63 from needle 2 to needle 3. To move the remaining 62 disks, we use a similar procedure. This discussion

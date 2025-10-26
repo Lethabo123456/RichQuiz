@@ -1,0 +1,24 @@
+function runSimulation, the definition of the function main is simple and 
+straightforward because the function main calls only the function runSimulation.   
+  
+When we tested our version of the simulation program, we generated the following results. We assumed 
+that the average transaction time is 5 minutes and that on average a customer arrives every 4 minutes, 
+and we used a random number generator to generate a number between 0 and 1 to decide whether a 
+customer arrived at a given time unit.  
+  
+Sample Run:  
+Customer number 1 arrived at time unit 4  
+Customer number 2 arrived at time unit 8  
+From server number 1 customer number 1  departed 
+at clock unit 9  
+Customer number 3 arrived at time unit 9  
+Customer number 4 arrived at time unit 12  
+
+251  
+  
+From server number 1 customer number 2  departed 
+at clock unit 14  
+From server number 1 customer number 3  departed 
+at clock unit 19  
+Customer number 5 arrived at time unit 21  
+From server number 1 customer number 4  depar

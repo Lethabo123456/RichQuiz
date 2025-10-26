@@ -1,0 +1,3369 @@
+[
+  {
+    "question": "Which software manages all hardware and software on a computer system?",
+    "type": "MCQ",
+    "options": [
+      "A. Operating System",
+      "B. Application Software",
+      "C. Utility Program",
+      "D. Compiler"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The operating system controls every device, file, memory, and process.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: The operating system only manages files, not hardware.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only partially",
+      "D. Depends on the OS"
+    ],
+    "correct_answer": "A",
+    "reasoning": "OS manages both hardware and software.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: The ______ allows the user to issue commands to the operating system.",
+    "type": "Fill",
+    "options": [
+      "A. User Interface",
+      "B. Device Manager",
+      "C. File Manager",
+      "D. Memory Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The UI is the top-level component for user interaction.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which manager handles allocation and control of system memory?",
+    "type": "MCQ",
+    "options": [
+      "A. Memory Manager",
+      "B. Processor Manager",
+      "C. Device Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Memory Manager controls allocation and access to main memory.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Which manager ensures all devices function properly?",
+    "type": "Short",
+    "options": [
+      "A. Device Manager",
+      "B. Processor Manager",
+      "C. File Manager",
+      "D. Memory Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Device Manager oversees hardware devices and drivers.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: A user interface differs between OS versions because:",
+    "type": "Interpretation",
+    "options": [
+      "A. Each OS version may have unique form and function elements",
+      "B. All OS versions use the same interface",
+      "C. Hardware determines interface style",
+      "D. User preferences override OS design"
+    ],
+    "correct_answer": "A",
+    "reasoning": "UI design varies between operating system versions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: The manager responsible for CPU scheduling is the ______.",
+    "type": "Fill",
+    "options": [
+      "A. Processor Manager",
+      "B. Memory Manager",
+      "C. File Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Processor Manager controls execution and CPU allocation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which manager maintains all the files and directories on a system?",
+    "type": "MCQ",
+    "options": [
+      "A. File Manager",
+      "B. Memory Manager",
+      "C. Device Manager",
+      "D. Processor Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "File Manager organizes, stores, and retrieves files for the OS.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: The OS manages only one task at a time.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in batch OS",
+      "D. Depends on the CPU"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Modern OSs support multitasking.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Name the four essential managers of an operating system.",
+    "type": "Short",
+    "options": [
+      "A. Memory, Processor, Device, File Managers",
+      "B. CPU, RAM, HDD, Network Managers",
+      "C. Input, Output, Storage, Network Managers",
+      "D. Task, User, Security, Session Managers"
+    ],
+    "correct_answer": "A",
+    "reasoning": "These four managers are the base of every major OS.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why is the operating system considered the most important software?",
+    "type": "Interpretation",
+    "options": [
+      "A. It manages all hardware and software resources",
+      "B. It only runs applications",
+      "C. It is optional for the system",
+      "D. It is used only for security"
+    ],
+    "correct_answer": "A",
+    "reasoning": "OS is fundamental as it controls all system resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which manager would handle device drivers for printers and scanners?",
+    "type": "MCQ",
+    "options": [
+      "A. Device Manager",
+      "B. Memory Manager",
+      "C. Processor Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Device Manager controls drivers and hardware communication.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The OS controls who can use the system and how, via ______.",
+    "type": "Fill",
+    "options": [
+      "A. User Accounts and Permissions",
+      "B. CPU Scheduling",
+      "C. Memory Allocation",
+      "D. File Compression"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Permissions ensure proper access control for users.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Processor Manager controls only memory access.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in single-core CPUs",
+      "D. Depends on the application"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Processor Manager handles CPU scheduling and execution, not memory.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Which OS component interacts directly with the user?",
+    "type": "Short",
+    "options": [
+      "A. User Interface",
+      "B. Processor Manager",
+      "C. Memory Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The UI allows issuing commands and interacting with the OS.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: A network OS requires specialized device managers because:",
+    "type": "Interpretation",
+    "options": [
+      "A. Multiple devices may be connected simultaneously",
+      "B. Single devices do not require management",
+      "C. Only memory management matters",
+      "D. User interfaces are irrelevant"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network OS must handle various hardware concurrently.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which OS component schedules tasks for CPU execution?",
+    "type": "MCQ",
+    "options": [
+      "A. Processor Manager",
+      "B. Memory Manager",
+      "C. File Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Processor Manager handles CPU task scheduling.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The bottom of the OS pyramid includes ______.",
+    "type": "Fill",
+    "options": [
+      "A. Core managers",
+      "B. User Interface",
+      "C. Applications",
+      "D. Utilities"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Memory, Processor, Device, and File Managers form the OS base.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Each manager in the OS works independently without interacting with others.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only in Unix",
+      "D. Only in Windows"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Managers interact to coordinate system resource usage.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why must the File Manager coordinate with the Memory and Processor Managers?",
+    "type": "Interpretation",
+    "options": [
+      "A. To ensure files are accessed efficiently without conflicts",
+      "B. To update the user interface automatically",
+      "C. To generate device driver updates",
+      "D. To allocate network bandwidth"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The File Manager must work with other managers to manage access, avoid conflicts, and maintain system stability.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which manager oversees allocation and deallocation of RAM?",
+    "type": "MCQ",
+    "options": [
+      "A. Processor Manager",
+      "B. Memory Manager",
+      "C. Device Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The Memory Manager handles RAM allocation and deallocation for processes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: The Memory Manager can reallocate memory when space becomes fragmented.",
+    "type": "True/False",
+    "options": [
+      "A. True only in embedded systems",
+      "B. True",
+      "C. False",
+      "D. Only in batch OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager may reallocate fragmented memory according to OS policies.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: The Memory Manager checks the ______ of each memory request.",
+    "type": "Fill",
+    "options": [
+      "A. Speed",
+      "B. Validity",
+      "C. Size",
+      "D. Location"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager ensures that requests are legal before allocation.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following tasks is NOT part of the operating system managers' responsibilities?",
+    "type": "MCQ",
+    "options": [
+      "A. Monitoring system resources",
+      "B. Printing user documents",
+      "C. Allocating resources",
+      "D. Enforcing policies"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Printing is handled by applications or device drivers, not OS managers.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What is the primary function of the Memory Manager?",
+    "type": "Short",
+    "options": [
+      "A. Handle file storage",
+      "B. Allocate and deallocate RAM",
+      "C. Manage CPU tasks",
+      "D. Control devices"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager is responsible for all RAM operations for running processes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why must OS managers collectively enforce policies?",
+    "type": "Interpretation",
+    "options": [
+      "A. To allow user customization",
+      "B. To ensure resources are used efficiently",
+      "C. To simplify application design",
+      "D. To prevent hardware failure"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Policy enforcement ensures fair and efficient use of system resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Memory fragmentation occurs when ______.",
+    "type": "Fill",
+    "options": [
+      "A. CPU executes instructions out of order",
+      "B. Free memory is scattered into small, noncontiguous blocks",
+      "C. File Manager locks memory",
+      "D. Hardware fails to allocate memory"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Fragmentation causes gaps in free memory, requiring reallocation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which manager ensures that system resources are allocated fairly?",
+    "type": "MCQ",
+    "options": [
+      "A. Device Manager",
+      "B. Memory Manager",
+      "C. File Manager",
+      "D. Processor Manager"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager allocates RAM based on OS rules to maintain fairness.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Deallocating memory is only done when the OS shuts down.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Depends on RAM size",
+      "D. Only in batch systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory is deallocated as soon as a process finishes.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What happens when a memory request is invalid?",
+    "type": "Short",
+    "options": [
+      "A. Allocated anyway",
+      "B. Request is denied",
+      "C. System reboots",
+      "D. Processor handles it"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager denies invalid requests to maintain system stability.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why is memory management critical in multitasking OS?",
+    "type": "Interpretation",
+    "options": [
+      "A. To improve device communication",
+      "B. To ensure each process has proper RAM allocation",
+      "C. To manage user interfaces",
+      "D. To avoid hardware overheating"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Proper allocation prevents conflicts and ensures smooth execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which policy may the Memory Manager use to make more space available?",
+    "type": "MCQ",
+    "options": [
+      "A. CPU scheduling policy",
+      "B. Reallocation of fragmented memory",
+      "C. Device driver prioritization",
+      "D. File compression policy"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Reallocating fragmented memory consolidates free space.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: RAM is also known as ______.",
+    "type": "Fill",
+    "options": [
+      "A. Read-Only Memory",
+      "B. Random Access Memory",
+      "C. Secondary Storage",
+      "D. Flash Memory"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RAM allows both read and write access at random addresses.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: The Memory Manager operates independently of other OS managers.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in Windows OS",
+      "D. Only in Linux OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager interacts with other managers for coordinated resource use.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Which OS function reallocates memory for waiting jobs?",
+    "type": "Short",
+    "options": [
+      "A. Device Manager",
+      "B. Memory Manager",
+      "C. File Manager",
+      "D. Processor Manager"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Reallocation maximizes available memory for queued processes.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: How does enforcing allocation policies prevent resource conflicts?",
+    "type": "Interpretation",
+    "options": [
+      "A. It limits user access",
+      "B. It ensures processes get resources according to priority and rules",
+      "C. It reduces memory speed",
+      "D. It prevents file corruption"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Policies guide fair allocation and prevent contention.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which OS manager monitors resource usage continuously?",
+    "type": "MCQ",
+    "options": [
+      "A. Device Manager",
+      "B. Memory Manager",
+      "C. File Manager",
+      "D. Processor Manager"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Memory Manager monitors RAM usage for allocation and deallocation.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Policies that control memory allocation are established by the ______.",
+    "type": "Fill",
+    "options": [
+      "A. User",
+      "B. OS designers",
+      "C. Processor",
+      "D. File Manager"
+    ],
+    "correct_answer": "B",
+    "reasoning": "OS designers define memory management rules for efficiency and safety.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Resource monitoring by managers only occurs at system startup.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in servers",
+      "D. Only in embedded systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Resource monitoring is continuous to ensure smooth operation.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which manager is responsible for allocating CPU time to processes?",
+    "type": "MCQ",
+    "options": [
+      "A. Memory Manager",
+      "B. Device Manager",
+      "C. Processor Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The Processor Manager controls CPU allocation to ensure efficient execution.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: The Processor Manager monitors whether the CPU is idle or busy.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Only in batch systems",
+      "C. True",
+      "D. Only for multicore CPUs"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Monitoring CPU activity is a key function of the Processor Manager.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A process is a program's ______ of execution.",
+    "type": "Fill",
+    "options": [
+      "A. Memory allocation",
+      "B. Device instruction",
+      "C. Instance",
+      "D. Thread manager"
+    ],
+    "correct_answer": "C",
+    "reasoning": "A process represents a running instance of a program.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which task is part of the Processor Manager's responsibilities?",
+    "type": "MCQ",
+    "options": [
+      "A. File system monitoring",
+      "B. Memory allocation",
+      "C. Reclaiming CPU after a process finishes",
+      "D. Printing jobs"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Processor Manager reclaims CPU to allocate it to the next waiting process.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What happens when a process finishes execution?",
+    "type": "Short",
+    "options": [
+      "A. Memory is freed",
+      "B. Device is released",
+      "C. CPU is reclaimed",
+      "D. Disk cache is cleared"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Processor Manager reclaims CPU to assign to the next process in the queue.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why can the Processor Manager be compared to a traffic controller?",
+    "type": "Interpretation",
+    "options": [
+      "A. It controls network traffic",
+      "B. It monitors memory usage",
+      "C. It coordinates process execution smoothly",
+      "D. It schedules file read/write operations"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The Processor Manager orchestrates transitions between process states like a traffic controller directs vehicles.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: In multicore systems, the Processor Manager's tasks become ______.",
+    "type": "Fill",
+    "options": [
+      "A. Simpler",
+      "B. Static",
+      "C. More complicated",
+      "D. Optional"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Managing multiple CPUs adds complexity to process scheduling and monitoring.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a function of the Processor Manager?",
+    "type": "MCQ",
+    "options": [
+      "A. Tracking process states",
+      "B. Allocating memory",
+      "C. Handling process transitions",
+      "D. Reclaiming CPU for next process"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Tracking process states, CPU allocation, and reclaiming are responsibilities, but handling transitions involves monitoring the process flow, not direct intervention.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: The Processor Manager ensures CPUs are kept busy for efficiency.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Only for single-core CPUs",
+      "C. True",
+      "D. Only in batch systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Efficient CPU utilization is a key goal of the Processor Manager.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What is the starting point for a process in the Processor Manager?",
+    "type": "Short",
+    "options": [
+      "A. Running queue",
+      "B. Waiting list",
+      "C. Starting queue",
+      "D. Finished list"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Processes begin in the starting queue before being scheduled for execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why is monitoring each thread or job important?",
+    "type": "Interpretation",
+    "options": [
+      "A. To allocate memory",
+      "B. To manage devices",
+      "C. To ensure CPU is used efficiently",
+      "D. To prevent file corruption"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Monitoring ensures that the CPU is not idle and process execution is smooth.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which component handles transitions from running to finished state?",
+    "type": "MCQ",
+    "options": [
+      "A. Memory Manager",
+      "B. File Manager",
+      "C. Processor Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Processor Manager oversees all state transitions for process execution.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The Processor Manager monitors the CPU to see if it is busy or ______.",
+    "type": "Fill",
+    "options": [
+      "A. Overheating",
+      "B. Idle",
+      "C. Allocated",
+      "D. Fragmented"
+    ],
+    "correct_answer": "C",
+    "reasoning": "It checks whether the CPU is executing a process or free for allocation.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Multicore systems simplify the Processor Manager's task.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only sometimes",
+      "D. Only in embedded systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Managing multiple cores can complicate scheduling and CPU allocation.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Which manager decides which process gets CPU time next?",
+    "type": "Short",
+    "options": [
+      "A. File Manager",
+      "B. Memory Manager",
+      "C. Processor Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The Processor Manager schedules CPU access for each waiting process.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: How does the Processor Manager contribute to system efficiency?",
+    "type": "Interpretation",
+    "options": [
+      "A. By allocating memory quickly",
+      "B. By organizing files efficiently",
+      "C. By keeping the CPU busy",
+      "D. By controlling network traffic"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Maximizing CPU utilization ensures processes run smoothly and efficiently.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: When the maximum computation time expires for a process, what happens?",
+    "type": "MCQ",
+    "options": [
+      "A. Memory is reallocated",
+      "B. Process is terminated immediately",
+      "C. CPU is reclaimed and assigned to next process",
+      "D. Device manager intervenes"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Processor Manager reclaims CPU to continue fair scheduling.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Systems are more efficient when the CPU is kept ______.",
+    "type": "Fill",
+    "options": [
+      "A. Idle",
+      "B. Monitored",
+      "C. Busy",
+      "D. Overclocked"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Keeping the CPU busy reduces wasted cycles and improves throughput.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: The Processor Manager does not handle threads, only processes.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in batch systems",
+      "D. Only in multicore systems"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Threads are considered execution instances; Processor Manager monitors them as well.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is it critical for the Processor Manager to track each process's execution state in real time?",
+    "type": "Interpretation",
+    "options": [
+      "A. To allocate disk space efficiently",
+      "B. To prevent memory fragmentation",
+      "C. To ensure smooth CPU scheduling and avoid idle cycles",
+      "D. To monitor network traffic"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Tracking execution states ensures the CPU is continuously utilized and processes transition efficiently between states.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: In a multicore system, what makes the Processor Manager's scheduling more complex?",
+    "type": "MCQ",
+    "options": [
+      "A. Monitoring disk I/O",
+      "B. Allocating memory blocks",
+      "C. Coordinating multiple CPUs to avoid conflicts and idle cores",
+      "D. Logging file accesses"
+    ],
+    "correct_answer": "C",
+    "reasoning": "With multiple cores, the Processor Manager must schedule processes across CPUs without conflicts and keep all cores efficiently utilized.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which manager is responsible for allocating printers and disk drives?",
+    "type": "MCQ",
+    "options": [
+      "A. Memory Manager",
+      "B. Processor Manager",
+      "C. File Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Device Manager handles all hardware devices, allocating them efficiently.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: The File Manager controls user access to files.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Only in some OS",
+      "C. Only for system files",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "File Manager enforces access policies to secure system and user files.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Device scheduling policies are determined by the ______.",
+    "type": "Fill",
+    "options": [
+      "A. User",
+      "B. Processor Manager",
+      "C. Memory Manager",
+      "D. Operating system designers"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Operating system designers define scheduling policies for devices.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What must the Device Manager do after a device finishes its task?",
+    "type": "MCQ",
+    "options": [
+      "A. Allocate memory",
+      "B. Notify the CPU",
+      "C. Archive logs",
+      "D. Deallocate the device"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Device Manager frees the device for the next waiting process.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Which manager keeps track of all files on the system?",
+    "type": "Short",
+    "options": [
+      "A. Device Manager",
+      "B. Processor Manager",
+      "C. Memory Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "D",
+    "reasoning": "File Manager monitors every file and its permissions on the system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why is access control tightly coupled with system security?",
+    "type": "Interpretation",
+    "options": [
+      "A. To allocate CPU efficiently",
+      "B. To prevent memory leaks",
+      "C. To monitor network traffic",
+      "D. To prevent unauthorized file access"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Access control ensures only authorized users can perform permitted file actions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: When storing large files, the File Manager must know if the device stores data as ______ or smaller linked blocks.",
+    "type": "Fill",
+    "options": [
+      "A. Compressed blocks",
+      "B. Temporary files",
+      "C. Indexed memory",
+      "D. One large block"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Understanding storage methods allows efficient allocation and retrieval of large files.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following is a responsibility of the Device Manager?",
+    "type": "MCQ",
+    "options": [
+      "A. File creation",
+      "B. Memory allocation",
+      "C. CPU scheduling",
+      "D. Monitoring device progress"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Device Manager tracks device operation status to manage system resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: The File Manager only stores files and does not modify them.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Only in read-only filesystems",
+      "C. Only for system files",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "File Manager must handle modifications accurately according to user permissions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What is required for good device management?",
+    "type": "Short",
+    "options": [
+      "A. CPU monitoring",
+      "B. Memory allocation",
+      "C. User authentication",
+      "D. Unique device identification and scheduling"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Each device must be identified, operated, monitored, and deallocated correctly.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why must the File Manager know technical requirements of storage devices?",
+    "type": "Interpretation",
+    "options": [
+      "A. To optimize CPU usage",
+      "B. To prevent memory fragmentation",
+      "C. To manage network traffic",
+      "D. To store and retrieve files efficiently"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Proper storage methods ensure accurate retrieval and modification of files.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which manager decides how to allocate disk drives based on policies?",
+    "type": "MCQ",
+    "options": [
+      "A. Processor Manager",
+      "B. Memory Manager",
+      "C. File Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Device Manager allocates hardware devices according to OS-defined policies.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Access policies determine what actions a user is ______ to perform on files.",
+    "type": "Fill",
+    "options": [
+      "A. Forbidden",
+      "B. Recommended",
+      "C. Logged",
+      "D. Allowed"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Access policies enforce what actions each user can perform on files.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: File Manager does not care about storage device efficiency.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Only for temporary files",
+      "C. Only for system files",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "File Manager must optimize storage allocation for efficient retrieval.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Who enforces restrictions on user access to files?",
+    "type": "Short",
+    "options": [
+      "A. Device Manager",
+      "B. Processor Manager",
+      "C. Memory Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "D",
+    "reasoning": "File Manager ensures system security by enforcing access policies.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is deallocating a device important after usage?",
+    "type": "Interpretation",
+    "options": [
+      "A. To release memory",
+      "B. To update the CPU queue",
+      "C. To prevent file corruption",
+      "D. To allow next process to use the device"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Deallocation ensures devices are available for waiting processes efficiently.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which manager must monitor device progress continuously?",
+    "type": "MCQ",
+    "options": [
+      "A. Memory Manager",
+      "B. File Manager",
+      "C. Processor Manager",
+      "D. Device Manager"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Device Manager tracks device operation to maintain system stability.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: File Manager ensures modifications are done as ______ as possible.",
+    "type": "Fill",
+    "options": [
+      "A. Slowly",
+      "B. Frequently",
+      "C. Randomly",
+      "D. Accurately and efficiently"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Correct and efficient file modification prevents errors and maintains data integrity.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Device Manager ignores the scheduling policies of the operating system.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Only for network devices",
+      "C. Only in legacy systems",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Device Manager must follow OS-defined scheduling policies for efficient resource allocation.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which manager is responsible for keeping track of every file in the system?",
+    "type": "MCQ",
+    "options": [
+      "A. Device Manager",
+      "B. Processor Manager",
+      "C. Memory Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "D",
+    "reasoning": "The File Manager tracks all files and enforces access policies.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which manager handles all aspects of network connectivity?",
+    "type": "MCQ",
+    "options": [
+      "A. Network Manager",
+      "B. File Manager",
+      "C. Device Manager",
+      "D. Memory Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "The Network Manager is responsible for managing network connections, devices, and resources.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Network Manager only manages wired networks.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Only for LANs"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager handles both wired and wireless networks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: The Network Manager must manage ______, devices, memory, and files in a networked OS.",
+    "type": "Fill",
+    "options": [
+      "A. CPUs",
+      "B. Printers",
+      "C. Archives",
+      "D. Permissions"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager ensures CPU capacity is properly allocated for network tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Why is network management more complex in large networks?",
+    "type": "MCQ",
+    "options": [
+      "A. Many resources and alternative elements must be managed",
+      "B. Only one device can connect at a time",
+      "C. Files are not shared",
+      "D. Memory is not allocated"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Large networks require handling multiple devices, connections, and resource allocations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What essential manager is added in networking OS?",
+    "type": "Short",
+    "options": [
+      "A. Network Manager",
+      "B. Device Manager",
+      "C. Processor Manager",
+      "D. File Manager"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager is the fifth essential manager in OS with networking capabilities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why must Network Manager consider encryption?",
+    "type": "Interpretation",
+    "options": [
+      "A. To secure transmissions and protect data",
+      "B. To allocate CPU efficiently",
+      "C. To manage memory space",
+      "D. To schedule devices"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager ensures transmitted data is encrypted for security.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Network Manager must handle both a small wireless system and ______ networks.",
+    "type": "Fill",
+    "options": [
+      "A. Large private and enterprise",
+      "B. Only LAN",
+      "C. Single user",
+      "D. Offline"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager is designed to handle networks of all sizes and complexities.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which resource does the Network Manager NOT directly handle?",
+    "type": "MCQ",
+    "options": [
+      "A. Network connections",
+      "B. CPU allocation for network tasks",
+      "C. File access for sharing",
+      "D. User keyboard input"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Keyboard input is managed by the Processor and Device Managers, not Network Manager.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Network Manager can manage mobile devices connected to the network.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only for company devices",
+      "D. Only for wired connections"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager handles all connected devices including mobile phones.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What must Network Manager do for authorized users?",
+    "type": "Short",
+    "options": [
+      "A. Share resources and connections",
+      "B. Manage device schedules",
+      "C. Allocate memory only",
+      "D. Monitor CPU usage"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager provides authorized users access to shared resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why does adding network management capability complicate OS design?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because it requires managing multiple resources and devices simultaneously",
+      "B. Because files are not stored efficiently",
+      "C. Because memory cannot be allocated",
+      "D. Because CPU usage decreases"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network management requires coordination of devices, memory, CPU, and connections.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: In a networked OS, which resource must Network Manager allocate properly?",
+    "type": "MCQ",
+    "options": [
+      "A. CPU and memory",
+      "B. Disk indexing only",
+      "C. File logs",
+      "D. Peripheral drives"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager ensures CPU and memory are sufficient for network operations.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Network Manager ensures sharing of resources ______ users are authorized.",
+    "type": "Fill",
+    "options": [
+      "A. Only if",
+      "B. Regardless if",
+      "C. Sometimes when",
+      "D. Never if"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Only authorized users can access shared network resources.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Small wireless networks require less attention from Network Manager.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only for LAN",
+      "D. Only for printers"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Even small networks require monitoring and management for connectivity and security.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Name one task of Network Manager in managing multiple computers.",
+    "type": "Short",
+    "options": [
+      "A. Managing transmission connections",
+      "B. Allocating disk blocks",
+      "C. Handling print queues",
+      "D. Monitoring secondary storage"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager is responsible for connectivity between computers and devices.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why must Network Manager manage all devices and memory space for network tasks?",
+    "type": "Interpretation",
+    "options": [
+      "A. To prevent bottlenecks and ensure smooth data flow",
+      "B. To encrypt data only",
+      "C. To monitor file access",
+      "D. To allocate peripheral devices"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Efficient allocation prevents delays and congestion in network communications.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which scenario requires Network Manager's attention?",
+    "type": "MCQ",
+    "options": [
+      "A. A small business network connecting multiple computers",
+      "B. Only single-user systems",
+      "C. Offline storage systems",
+      "D. Systems without networking capability"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager handles multi-computer networks regardless of size.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Network Manager must consider ______ types for secure communication.",
+    "type": "Fill",
+    "options": [
+      "A. Encryption",
+      "B. Printer formats",
+      "C. Disk layouts",
+      "D. Memory allocations"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Encryption is essential to protect data during network transmission.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Network Manager handles CPU capacity, memory, and file access for networked systems.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only memory",
+      "D. Only CPU"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager oversees all resources necessary for network operations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following networks would NOT require Network Manager?",
+    "type": "MCQ",
+    "options": [
+      "A. Standalone computer without networking",
+      "B. Wireless office network",
+      "C. Small business LAN",
+      "D. Home computer network"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Network Manager is unnecessary on systems without network connectivity.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which interface type allows visually rich interaction with menus and desktops?",
+    "type": "MCQ",
+    "options": [
+      "A. Command Line Interface",
+      "B. Graphical User Interface",
+      "C. Text-Based Interface",
+      "D. Voice Interface"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GUIs provide visual interaction with menus, desktops, and icons.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: CLIs require users to type commands with precise syntax.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs demand accurate typing and syntax to execute commands.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: GUIs often rely on ______ devices like a mouse or touch input.",
+    "type": "Fill",
+    "options": [
+      "A. Keyboard",
+      "B. Pointing",
+      "C. Voice",
+      "D. Motion"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Pointing devices such as mice or touchscreens are central to GUIs.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which interface is better for advanced users executing complex tasks?",
+    "type": "MCQ",
+    "options": [
+      "A. Graphical User Interface",
+      "B. Command Line Interface",
+      "C. Menu-based Interface",
+      "D. Touch Interface"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs allow advanced control and command concatenation for efficiency.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Name one requirement for using a CLI effectively.",
+    "type": "Short",
+    "options": [
+      "A. Visual menus",
+      "B. Precise syntax",
+      "C. Touch input",
+      "D. Graphical icons"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs require precise syntax to ensure commands execute correctly.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why might GUIs be more suitable for beginners?",
+    "type": "Interpretation",
+    "options": [
+      "A. They require memorizing commands",
+      "B. They offer visual cues and intuitive interaction",
+      "C. They are slower",
+      "D. They are text-based"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GUIs provide menus and icons that guide users through tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: CLI users must have strong ______ and error recovery skills.",
+    "type": "Fill",
+    "options": [
+      "A. Visual memory",
+      "B. Accuracy",
+      "C. Color recognition",
+      "D. Typing speed"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Accuracy is required in CLIs to prevent syntax errors and failures.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: What is one advantage of using CLIs over GUIs?",
+    "type": "MCQ",
+    "options": [
+      "A. Easier for beginners",
+      "B. Faster execution of complex tasks",
+      "C. Visually richer interface",
+      "D. Uses pointing devices"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs allow command chaining for rapid task execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: GUIs provide the same commands and functionality across all operating systems.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in Windows",
+      "D. Only in Linux"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GUIs differ in form and function across OSs and versions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What type of users generally prefer CLIs?",
+    "type": "Short",
+    "options": [
+      "A. Beginners",
+      "B. Skilled users",
+      "C. Children",
+      "D. Casual users"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Skilled users benefit from the advanced control and flexibility of CLIs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why must CLI commands be accurate?",
+    "type": "Interpretation",
+    "options": [
+      "A. To avoid incorrect graphical display",
+      "B. To ensure correct execution of tasks",
+      "C. To improve color rendering",
+      "D. To speed up pointing device use"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Inaccurate commands in CLI can fail or execute unintended tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which UI component varies significantly across OS versions?",
+    "type": "MCQ",
+    "options": [
+      "A. Keyboard shortcuts",
+      "B. Graphical elements and menus",
+      "C. File storage",
+      "D. Processor scheduling"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GUIs differ in look and functionality between OS versions.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: CLIs allow users to ______ commands for efficiency.",
+    "type": "Fill",
+    "options": [
+      "A. Visualize",
+      "B. Concatenate",
+      "C. Point",
+      "D. Drag"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Command concatenation allows execution of multiple tasks in a sequence.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: GUIs do not require memorization of syntax.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Only for Linux",
+      "D. Only for CLIs"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GUIs rely on visual interaction, so syntax memorization is unnecessary.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Name a common input device for GUIs.",
+    "type": "Short",
+    "options": [
+      "A. Keyboard",
+      "B. Mouse",
+      "C. Joystick",
+      "D. Scanner"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The mouse is the primary pointing device for GUIs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why are GUIs described as visually rich?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because they require typing commands",
+      "B. Because they use menus, desktops, and icons",
+      "C. Because they only display text",
+      "D. Because they have no interaction"
+    ],
+    "correct_answer": "B",
+    "reasoning": "GUIs use graphical elements that provide an interactive experience.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which UI requires advanced error recovery skills?",
+    "type": "MCQ",
+    "options": [
+      "A. GUI",
+      "B. CLI",
+      "C. Menu-based interface",
+      "D. Touchscreen interface"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs require users to correct mistakes manually and use accurate syntax.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: CLI provides ______ control over the system compared to GUIs.",
+    "type": "Fill",
+    "options": [
+      "A. Minimal",
+      "B. Advanced",
+      "C. Visual",
+      "D. Limited"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs allow skilled users detailed and precise control over system operations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Pointing devices are essential for CLIs.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Only in GUI",
+      "D. Only in touchscreen devices"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs rely on keyboard input, not pointing devices.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which type of interface allows concatenation of commands for efficiency?",
+    "type": "MCQ",
+    "options": [
+      "A. GUI",
+      "B. CLI",
+      "C. Touch interface",
+      "D. Voice interface"
+    ],
+    "correct_answer": "B",
+    "reasoning": "CLIs allow multiple commands to be chained for executing complex tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which type of operating system allows remote access to resources?",
+    "type": "MCQ",
+    "options": [
+      "A. Desktop OS",
+      "B. Mobile OS",
+      "C. Cloud-Based OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud-Based OS provides access to resources over the internet.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Cloud computing eliminates the need for operating systems to manage local resources.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "C",
+    "reasoning": "While cloud computing provides remote access, OS still manages local resources.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Cloud operating systems manage allocation and ______ of resources on a large scale.",
+    "type": "Fill",
+    "options": [
+      "A. Creation",
+      "B. Duplication",
+      "C. Deallocation",
+      "D. Migration"
+    ],
+    "correct_answer": "C",
+    "reasoning": "OS handles allocation and deallocation to ensure efficient resource usage.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which OS platform is primarily designed for servers and enterprise computing?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile OS",
+      "B. Desktop OS",
+      "C. Server OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Server OS is optimized for handling server workloads and enterprise tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Which OS platform is embedded in devices like routers or IoT gadgets?",
+    "type": "Short",
+    "options": [
+      "A. Desktop OS",
+      "B. Mobile OS",
+      "C. Embedded OS",
+      "D. Cloud OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Embedded OS is designed for hardware with specialized functions.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why do operating systems remain essential even in cloud computing?",
+    "type": "Interpretation",
+    "options": [
+      "A. To replace cloud servers",
+      "B. To manage security protocols only",
+      "C. To manage local and remote resources efficiently",
+      "D. To eliminate resource allocation"
+    ],
+    "correct_answer": "C",
+    "reasoning": "OS ensures proper coordination and management of both local and cloud resources.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Mainframe OS platforms are designed to handle ______ workloads for organizations.",
+    "type": "Fill",
+    "options": [
+      "A. Single-user",
+      "B. Mobile",
+      "C. Massive",
+      "D. Desktop"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Mainframe OS handles massive, high-volume enterprise workloads.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which OS type is primarily used in smartphones and tablets?",
+    "type": "MCQ",
+    "options": [
+      "A. Server OS",
+      "B. Desktop OS",
+      "C. Mobile OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Mobile OS is optimized for smartphones and tablets with touch interfaces.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Cloud-based operating systems remove the need for local security management.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud OS aids security but local OS still enforces local policies.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What is a key responsibility of OS managing cloud resources?",
+    "type": "Short",
+    "options": [
+      "A. Printing only",
+      "B. GUI rendering",
+      "C. Coordinating data transfer",
+      "D. Keyboard input"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud OS coordinates data transfer between local and remote systems.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why might organizations migrate diverse resources to the cloud?",
+    "type": "Interpretation",
+    "options": [
+      "A. To avoid OS usage",
+      "B. To eliminate servers",
+      "C. To improve accessibility and scalability",
+      "D. To reduce network speed"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud migration improves access, flexibility, and scalability of resources.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which OS platform supports large-scale data processing in organizations?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile OS",
+      "B. Desktop OS",
+      "C. Server OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Server OS is built for large-scale organizational computing tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Cloud computing OS handles both local and ______ resource management.",
+    "type": "Fill",
+    "options": [
+      "A. Peripheral",
+      "B. User",
+      "C. Remote",
+      "D. Virtual"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud OS coordinates remote resources for users.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Desktop OS platforms are primarily optimized for mobile devices.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Desktop OS is generally for PCs, not mobile devices, though some variations exist.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Name one example of an embedded OS device.",
+    "type": "Short",
+    "options": [
+      "A. Laptop",
+      "B. Server",
+      "C. Router",
+      "D. Desktop"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Routers and IoT devices run specialized embedded OS.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is OS coordination critical in cloud environments?",
+    "type": "Interpretation",
+    "options": [
+      "A. To eliminate local devices",
+      "B. To remove need for user interaction",
+      "C. To ensure efficient allocation of resources",
+      "D. To reduce CPU speed"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Efficient resource allocation prevents conflicts and ensures smooth operation.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which OS type is generally lightweight and used in smart devices?",
+    "type": "MCQ",
+    "options": [
+      "A. Desktop OS",
+      "B. Server OS",
+      "C. Embedded OS",
+      "D. Cloud OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Embedded OS are lightweight and optimized for smart device hardware.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Operating systems managing cloud resources must handle data transfer, resource allocation, and ______.",
+    "type": "Fill",
+    "options": [
+      "A. GUI design",
+      "B. File printing",
+      "C. Security",
+      "D. Touch input"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud OS must also ensure data and transaction security.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Mobile OS platforms are a type of cloud computing OS.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Mobile OS may integrate cloud features but is not a cloud OS by default.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which OS platform provides large-scale storage and remote file access?",
+    "type": "MCQ",
+    "options": [
+      "A. Desktop OS",
+      "B. Mobile OS",
+      "C. Cloud OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Cloud OS platforms enable remote access and large-scale storage.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which operating system platform focuses on cloud service integration and remote resource management?",
+    "type": "MCQ",
+    "options": [
+      "A. Desktop OS",
+      "B. Mobile OS",
+      "C. Server OS",
+      "D. Cloud-Based OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Cloud-Based OS provides cloud service integration and remote management.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Embedded operating systems are designed to handle high-volume enterprise-scale operations.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Embedded OS focuses on minimal resource usage and real-time responsiveness, not enterprise-scale operations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Mainframe operating systems like IBM z/OS are designed to handle ______ transactions efficiently.",
+    "type": "Fill",
+    "options": [
+      "A. Low-volume",
+      "B. Mobile",
+      "C. Desktop",
+      "D. High-volume"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Mainframe OS supports enterprise-scale, high-volume transaction processing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which OS platform typically has a touch-based interface and app ecosystems?",
+    "type": "MCQ",
+    "options": [
+      "A. Desktop OS",
+      "B. Server OS",
+      "C. Mainframe OS",
+      "D. Mobile OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Mobile OS such as Android and iOS are touch-based and have app ecosystems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Which OS type is optimized for minimal resource usage and specialized device integration?",
+    "type": "Short",
+    "options": [
+      "A. Server OS",
+      "B. Desktop OS",
+      "C. Cloud OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Embedded OS like RTOS or VxWorks are designed for minimal resource usage and real-time responsiveness.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why is cloud-based OS important for remote work?",
+    "type": "Interpretation",
+    "options": [
+      "A. To replace local storage",
+      "B. To provide mobile apps only",
+      "C. To run embedded devices",
+      "D. To enable cloud service integration and remote resource management"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Cloud OS allows seamless access to resources and storage from anywhere.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Server OS platforms prioritize ______ and scalability for multi-user environments.",
+    "type": "Fill",
+    "options": [
+      "A. GUI design",
+      "B. Minimal resource usage",
+      "C. Cloud integration",
+      "D. Security"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Server OS such as Linux or UNIX focus on security and scalability in multi-user settings.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which OS platform typically provides broad hardware compatibility and supports productivity software?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile OS",
+      "B. Server OS",
+      "C. Embedded OS",
+      "D. Desktop OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Desktop OS such as Windows or macOS support productivity software and multiple hardware devices.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Mainframe OS variants are designed for small-scale personal computing.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Mainframe OS is used for enterprise-scale operations, not personal computing.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Which OS platform is commonly found in gaming consoles and IoT devices?",
+    "type": "Short",
+    "options": [
+      "A. Cloud OS",
+      "B. Desktop OS",
+      "C. Server OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Embedded OS is used in specialized devices like IoT gadgets and consoles.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: How does a cloud-based OS differ from a desktop OS in terms of resource management?",
+    "type": "Interpretation",
+    "options": [
+      "A. It does not manage local resources",
+      "B. It focuses on app installation",
+      "C. It prioritizes GUI over backend",
+      "D. It manages remote resources and cloud storage in addition to local resources"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Cloud OS extends OS capabilities to remote servers and cloud-based storage while still managing local resources.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which OS platform is designed to run multi-user network services efficiently?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile OS",
+      "B. Desktop OS",
+      "C. Cloud OS",
+      "D. Server OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Server OS such as CentOS or RHEL are optimized for multi-user network management.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Cloud-based OS emphasizes ______ and centralized resource management.",
+    "type": "Fill",
+    "options": [
+      "A. GUI design",
+      "B. Minimal storage",
+      "C. Local-only access",
+      "D. Remote accessibility"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Cloud OS ensures centralized, remote resource management and access.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Desktop OS platforms are primarily optimized for cloud storage and remote access.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Desktop OS focuses on local applications, not primarily cloud storage.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Name an example of a cloud-based OS.",
+    "type": "Short",
+    "options": [
+      "A. Windows 10",
+      "B. Ubuntu Desktop",
+      "C. Android",
+      "D. Google Chrome OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Google Chrome OS is a cloud-based operating system focusing on remote access and storage.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is an embedded OS considered real-time?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because it supports cloud apps",
+      "B. Because it runs on desktops",
+      "C. Because it is multi-user",
+      "D. Because it responds immediately to hardware inputs"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Embedded OS like RTOS is designed to respond immediately to hardware events.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which OS type is designed for enterprise-scale transaction processing and batch jobs?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile OS",
+      "B. Desktop OS",
+      "C. Embedded OS",
+      "D. Mainframe OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Mainframe OS handles high-volume, enterprise-scale transaction processing.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Mobile OS platforms prioritize efficient power management and ______.",
+    "type": "Fill",
+    "options": [
+      "A. Multi-user support",
+      "B. High-volume transaction handling",
+      "C. Cloud server integration",
+      "D. Touch-based interfaces"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Mobile OS is designed for touch-based input and efficient power usage.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Cloud OS platforms are unsuitable for remote file access.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Cloud OS platforms are specifically designed to provide remote access and cloud storage.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which OS platform typically provides a user-friendly GUI and broad software compatibility?",
+    "type": "MCQ",
+    "options": [
+      "A. Mobile OS",
+      "B. Server OS",
+      "C. Cloud OS",
+      "D. Desktop OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Desktop OS like Windows and macOS offer user-friendly GUI and support productivity software.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which type of operating system processes tasks in groups without user interaction during execution?",
+    "type": "MCQ",
+    "options": [
+      "A. Batch Operating System",
+      "B. Real-Time Operating System",
+      "C. Mobile Operating System",
+      "D. Desktop Operating System"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS collects jobs and processes them sequentially without user interaction.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Users receive immediate feedback on jobs processed in a batch operating system.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS processes jobs in groups; feedback is delayed until processing is complete.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Batch OS is especially efficient for ______ tasks like payroll processing.",
+    "type": "Fill",
+    "options": [
+      "A. Large-scale, repetitive",
+      "B. Interactive",
+      "C. Real-time",
+      "D. Mobile"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS minimizes idle time and is ideal for repetitive, large-scale tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is a disadvantage of batch operating systems?",
+    "type": "MCQ",
+    "options": [
+      "A. Delayed feedback",
+      "B. Requires minimal resources",
+      "C. Provides real-time processing",
+      "D. Offers user interaction during execution"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Users must wait until the batch completes to see results, causing delayed feedback.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: In batch OS, what is the primary method for submitting jobs?",
+    "type": "Short",
+    "options": [
+      "A. Offline, via punch cards or tape",
+      "B. Online through GUI",
+      "C. Through cloud servers",
+      "D. Direct console input"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Users prepare jobs offline and submit them as a batch for sequential processing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why does a batch OS maximize resource utilization?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because jobs are queued and executed sequentially",
+      "B. Because it only handles one user at a time",
+      "C. Because it relies on cloud computing",
+      "D. Because it requires GUI interactions"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Sequential execution ensures CPUs and other resources are continuously used.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Errors in job input can cause ______ in a batch OS.",
+    "type": "Fill",
+    "options": [
+      "A. Entire batch to fail",
+      "B. Only that job to fail",
+      "C. System to crash permanently",
+      "D. Instant feedback to users"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Since jobs are processed together, an input error may halt the full batch.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which OS type minimizes setup time and maximizes CPU utilization for repetitive tasks?",
+    "type": "MCQ",
+    "options": [
+      "A. Batch Operating System",
+      "B. Real-Time Operating System",
+      "C. Cloud OS",
+      "D. Mobile OS"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS processes multiple jobs sequentially to optimize efficiency.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Batch OS is suitable for interactive gaming applications.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS does not provide immediate user interaction required for gaming.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What is the main purpose of grouping jobs in a batch OS?",
+    "type": "Short",
+    "options": [
+      "A. To improve efficiency and reduce idle time",
+      "B. To allow user interaction during execution",
+      "C. To run mobile applications",
+      "D. To store data in the cloud"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Grouping jobs allows sequential processing and better resource usage.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: How does batch OS handle large-scale repetitive operations?",
+    "type": "Interpretation",
+    "options": [
+      "A. Processes jobs in sequence without user intervention",
+      "B. Processes jobs interactively",
+      "C. Uses cloud storage for temporary tasks",
+      "D. Allocates tasks to mobile devices"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS queues multiple jobs for sequential execution to efficiently handle repetitive tasks.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which statement best describes a batch operating system?",
+    "type": "MCQ",
+    "options": [
+      "A. Executes jobs without user interaction",
+      "B. Requires constant user input",
+      "C. Only supports mobile devices",
+      "D. Processes cloud applications in real-time"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS runs jobs sequentially with minimal or no user interaction.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Batch OS reduces ______ by processing jobs together.",
+    "type": "Fill",
+    "options": [
+      "A. Setup time",
+      "B. Memory usage",
+      "C. GUI complexity",
+      "D. Cloud latency"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS minimizes setup overhead between jobs.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Users can interact with each job in real-time in a batch OS.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS is non-interactive; users submit jobs and wait for results.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Give an example of a task suitable for batch processing.",
+    "type": "Short",
+    "options": [
+      "A. Payroll processing",
+      "B. Video game rendering",
+      "C. Mobile app execution",
+      "D. Cloud file sync"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Payroll processing involves repetitive, large-scale operations ideal for batch OS.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is delayed feedback considered a disadvantage in batch OS?",
+    "type": "Interpretation",
+    "options": [
+      "A. Users must wait until the batch finishes to see results",
+      "B. It slows CPU speed",
+      "C. It increases memory usage",
+      "D. It limits cloud access"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Delayed feedback prevents immediate correction of input errors.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: In batch OS, how are jobs typically prepared before submission?",
+    "type": "MCQ",
+    "options": [
+      "A. Offline using punch cards or tape",
+      "B. Online using GUI forms",
+      "C. Directly in cloud storage",
+      "D. Through real-time console input"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Jobs are prepared offline and queued for sequential execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Batch OS improves efficiency by ______ idle CPU time.",
+    "type": "Fill",
+    "options": [
+      "A. Minimizing",
+      "B. Maximizing",
+      "C. Ignoring",
+      "D. Recording"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Sequential job execution keeps the CPU busy and minimizes idle time.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: All batch OS tasks are executed interactively.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "A",
+    "reasoning": "Batch OS runs non-interactively; user input is not required during execution.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which type of operating system allows direct communication between the user and the computer during execution?",
+    "type": "MCQ",
+    "options": [
+      "A. Batch Operating System",
+      "B. Interactive Operating System",
+      "C. Distributed Operating System",
+      "D. Network Operating System"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Interactive OS supports direct communication and immediate feedback between user and system.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Interactive operating systems provide immediate feedback to the user.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Users can interact with the system and see instant responses.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Operating systems such as Windows, macOS, and Linux are examples of ______ systems.",
+    "type": "Fill",
+    "options": [
+      "A. Batch",
+      "B. Interactive",
+      "C. Distributed",
+      "D. Embedded"
+    ],
+    "correct_answer": "B",
+    "reasoning": "These OSs provide user interaction and GUI-based environments.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Which environments commonly use interactive operating systems?",
+    "type": "Short",
+    "options": [
+      "A. Supercomputers",
+      "B. Desktops and GUI environments",
+      "C. Embedded controllers",
+      "D. Batch-processing mainframes"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Interactive OS is most common in personal computers with GUI-based systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why are interactive OS considered user-friendly?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because they execute jobs in silence",
+      "B. Because they support multitasking and instant responses",
+      "C. Because they require no hardware",
+      "D. Because they only run one process at a time"
+    ],
+    "correct_answer": "B",
+    "reasoning": "User interaction and multitasking provide responsiveness and ease of use.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following is NOT a disadvantage of interactive OS?",
+    "type": "MCQ",
+    "options": [
+      "A. Delayed output results",
+      "B. Higher CPU and memory demand",
+      "C. Potential overload with heavy use",
+      "D. Risk of performance bottlenecks"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Interactive OS demands high CPU and memory resources compared to batch systems.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Interactive systems may face ______ when too many users run heavy tasks simultaneously.",
+    "type": "Fill",
+    "options": [
+      "A. Simplification",
+      "B. System overload",
+      "C. Infinite loops",
+      "D. Immediate shutdown"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Concurrent heavy usage can overload CPU and memory resources.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Interactive OS allows users to input data while the program is running.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Never"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They are designed to accept input during execution and process it instantly.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which feature makes interactive operating systems suitable for real-time decision-making?",
+    "type": "MCQ",
+    "options": [
+      "A. Offline job submission",
+      "B. Immediate user feedback",
+      "C. Single-task execution",
+      "D. No multitasking"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The ability to provide quick responses enables real-time decisions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: What is a drawback of interactive operating systems compared to batch OS?",
+    "type": "Short",
+    "options": [
+      "A. Reduced user experience",
+      "B. Higher CPU and memory demand",
+      "C. Limited multitasking",
+      "D. Lack of GUI support"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They consume more CPU and memory to maintain responsiveness.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Interactive OS are often described as ______ due to their responsiveness.",
+    "type": "Fill",
+    "options": [
+      "A. Rigid",
+      "B. User-friendly",
+      "C. Limited",
+      "D. Overloaded"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Responsiveness and multitasking make them easy for users to handle.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: If a user opens multiple heavy applications on an interactive OS, what might happen?",
+    "type": "Interpretation",
+    "options": [
+      "A. Faster execution",
+      "B. System overload",
+      "C. Unlimited resource availability",
+      "D. Immediate shutdown of all apps"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Heavy multitasking may exceed resource limits, causing overload.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following best describes the interactive OS environment?",
+    "type": "MCQ",
+    "options": [
+      "A. Completely automated batch execution",
+      "B. User input and system response during execution",
+      "C. Single-task focused OS",
+      "D. Non-user-facing systems"
+    ],
+    "correct_answer": "B",
+    "reasoning": "They rely on user input and provide immediate responses.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Interactive OS are common in embedded controllers.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Embedded systems usually use specialized real-time OS, not interactive ones.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: One key advantage of interactive OS is their support for ______.",
+    "type": "Fill",
+    "options": [
+      "A. Offline processing",
+      "B. Multitasking",
+      "C. Batch grouping",
+      "D. Minimal hardware demand"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Interactive OS can run multiple tasks simultaneously while engaging users.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why might interactive OS be unsuitable for environments with limited resources?",
+    "type": "Interpretation",
+    "options": [
+      "A. They cannot process jobs in order",
+      "B. They consume high CPU and memory resources",
+      "C. They do not allow multitasking",
+      "D. They reject user commands"
+    ],
+    "correct_answer": "B",
+    "reasoning": "The overhead of maintaining responsiveness makes them resource-intensive.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following disadvantages can occur due to multiple users on an interactive OS?",
+    "type": "MCQ",
+    "options": [
+      "A. Faster processing",
+      "B. Potential system overload",
+      "C. Reduced CPU utilization",
+      "D. Elimination of multitasking"
+    ],
+    "correct_answer": "B",
+    "reasoning": "High activity can overwhelm CPU and memory capacity.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Which category of operating system is Windows classified under?",
+    "type": "Short",
+    "options": [
+      "A. Batch OS",
+      "B. Interactive OS",
+      "C. Real-time OS",
+      "D. Distributed OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Windows provides a GUI, supports multitasking, and allows direct user interaction.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Interactive OS are less user-friendly than batch operating systems.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Interactive OS are specifically designed to be user-friendly and responsive.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which of the following operating systems is an example of an interactive OS?",
+    "type": "MCQ",
+    "options": [
+      "A. MS-DOS batch mode",
+      "B. Linux with GUI",
+      "C. Real-time embedded OS",
+      "D. Firmware OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Linux distributions with GUI provide interactive features like multitasking and direct user input.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which operating system ensures immediate response to time-sensitive inputs?",
+    "type": "MCQ",
+    "options": [
+      "A. Interactive OS",
+      "B. Real-Time Operating System",
+      "C. Batch OS",
+      "D. Network OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS is designed to guarantee immediate processing within strict time constraints.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Real-Time Operating Systems are crucial for applications where timing is critical.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS are specifically built for timing-sensitive operations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A ______ real-time system enforces strict deadlines without exception.",
+    "type": "Fill",
+    "options": [
+      "A. Soft",
+      "B. Hard",
+      "C. Flexible",
+      "D. Hybrid"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Hard real-time systems guarantee deadlines must always be met.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What kind of devices commonly use real-time operating systems?",
+    "type": "Short",
+    "options": [
+      "A. Desktop PCs",
+      "B. Medical devices and robotics",
+      "C. Cloud servers",
+      "D. Office laptops"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS is vital in medical, industrial, and robotic systems where timing is crucial.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why is predictability important in real-time operating systems?",
+    "type": "Interpretation",
+    "options": [
+      "A. It improves aesthetics",
+      "B. It ensures reliability in time-critical environments",
+      "C. It reduces hardware requirements",
+      "D. It allows multitasking flexibility"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Predictability guarantees reliable outcomes when deadlines must always be met.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which type of RTOS allows some flexibility in deadlines?",
+    "type": "MCQ",
+    "options": [
+      "A. Hard RTOS",
+      "B. Soft RTOS",
+      "C. Distributed RTOS",
+      "D. Hybrid RTOS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Soft RTOS can tolerate minor deadline delays, unlike Hard RTOS.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: RTOS is often more ______ to design and implement compared to general-purpose systems.",
+    "type": "Fill",
+    "options": [
+      "A. Simple",
+      "B. Complex",
+      "C. Temporary",
+      "D. Limited"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS designs are complex due to strict timing and priority mechanisms.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What is the primary disadvantage of RTOS compared to general-purpose OS?",
+    "type": "MCQ",
+    "options": [
+      "A. Poor reliability",
+      "B. Limited multitasking and high cost",
+      "C. Lack of predictability",
+      "D. Slow response"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS prioritizes timing tasks, limiting multitasking and raising cost.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: RTOS is not suitable for industrial automation.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Never"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Industrial automation is a core application area of RTOS.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: In RTOS, tasks must be completed within strict ______.",
+    "type": "Fill",
+    "options": [
+      "A. Energy levels",
+      "B. Time constraints",
+      "C. Memory capacities",
+      "D. Storage sizes"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS deadlines are based on microseconds or milliseconds.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Which category of RTOS can handle minor delays without critical failure?",
+    "type": "Short",
+    "options": [
+      "A. Batch OS",
+      "B. Soft Real-Time OS",
+      "C. Hard Real-Time OS",
+      "D. Interactive OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Soft RTOS is less rigid and allows limited delay.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why might RTOS not be widely used in consumer desktops?",
+    "type": "Interpretation",
+    "options": [
+      "A. They lack multitasking completely",
+      "B. They are expensive and complex, designed for critical systems",
+      "C. They are slower than general-purpose OS",
+      "D. They require no memory"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Consumer systems don’t need strict timing, so RTOS cost and complexity aren’t justified.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of these is a key advantage of RTOS?",
+    "type": "MCQ",
+    "options": [
+      "A. Reduced reliability",
+      "B. High predictability",
+      "C. Low system responsiveness",
+      "D. Random execution"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS provides reliability and predictability critical in time-sensitive applications.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: RTOS typically prioritize real-time tasks over general multitasking.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. True",
+      "C. Rarely",
+      "D. Never"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Real-time tasks take precedence over background multitasking.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: RTOS tasks often operate in the order of microseconds or ______.",
+    "type": "Fill",
+    "options": [
+      "A. Hours",
+      "B. Milliseconds",
+      "C. Seconds",
+      "D. Days"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Real-time OS work within very short time frames, often milliseconds.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why is RTOS critical in medical devices like pacemakers?",
+    "type": "Interpretation",
+    "options": [
+      "A. They reduce cost",
+      "B. They guarantee responses in life-saving timeframes",
+      "C. They support high entertainment value",
+      "D. They allow multitasking flexibility"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Medical devices require precise and immediate responses for survival.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which real-time system enforces deadlines with no tolerance for delay?",
+    "type": "MCQ",
+    "options": [
+      "A. Soft RTOS",
+      "B. Hard RTOS",
+      "C. Distributed OS",
+      "D. Cloud OS"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Hard RTOS cannot miss deadlines without severe failure.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Why are RTOS generally more expensive than general-purpose OS?",
+    "type": "Short",
+    "options": [
+      "A. Because they use open-source code",
+      "B. Because their design is complex and specialized",
+      "C. Because they lack features",
+      "D. Because they are widely distributed"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Complex design and critical functionality raise cost.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: RTOS is more suitable for entertainment systems than industrial automation.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Sometimes",
+      "D. Rarely"
+    ],
+    "correct_answer": "B",
+    "reasoning": "RTOS is vital for automation, not entertainment platforms.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which example best represents a real-world use of RTOS?",
+    "type": "MCQ",
+    "options": [
+      "A. Streaming movies",
+      "B. Industrial robotics control",
+      "C. Web browsing",
+      "D. Social media apps"
+    ],
+    "correct_answer": "B",
+    "reasoning": "Robotics requires precise timing responses that only RTOS can provide.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: A Hybrid Operating System typically combines which two features?",
+    "type": "MCQ",
+    "options": [
+      "A. Networking and security",
+      "B. Distributed and mobile",
+      "C. Interactive and real-time",
+      "D. Embedded and cloud"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Hybrid OS merges interactive and real-time capabilities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Hybrid Operating Systems support both batch processing and interactive use.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Rarely",
+      "C. True",
+      "D. Sometimes"
+    ],
+    "correct_answer": "C",
+    "reasoning": "They support batch tasks and user interactivity simultaneously.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: Modern ______ such as Windows and Linux are examples of Hybrid Operating Systems.",
+    "type": "Fill",
+    "options": [
+      "A. Databases",
+      "B. Networks",
+      "C. Operating Systems",
+      "D. Applications"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Windows and Linux are well-known OS examples with hybrid capabilities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: What main advantage does a Hybrid Operating System provide?",
+    "type": "Short",
+    "options": [
+      "A. Reduced multitasking",
+      "B. Lower hardware requirements",
+      "C. Flexibility and versatility",
+      "D. Faster boot times"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Flexibility allows hybrid OS to support diverse applications.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why is multitasking an important feature in hybrid operating systems?",
+    "type": "Interpretation",
+    "options": [
+      "A. It improves boot speed",
+      "B. It minimizes security risks",
+      "C. It enables simultaneous execution of tasks",
+      "D. It reduces memory use"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Hybrid OS multitasking allows efficient handling of multiple processes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Which of the following best describes the disadvantage of Hybrid OS?",
+    "type": "MCQ",
+    "options": [
+      "A. Poor compatibility",
+      "B. Lack of interactivity",
+      "C. Complexity and suboptimal performance in specialized tasks",
+      "D. No multitasking ability"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Complexity arises from combining real-time and interactive capabilities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A Hybrid OS supports multitasking, time-sharing, and ______ operations.",
+    "type": "Fill",
+    "options": [
+      "A. Cloud",
+      "B. Network",
+      "C. Real-time",
+      "D. Database"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Hybrid systems include real-time operational support.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: Why are Windows and Linux often described as hybrid operating systems?",
+    "type": "MCQ",
+    "options": [
+      "A. They only work offline",
+      "B. They lack multitasking",
+      "C. They support both general-purpose and real-time applications",
+      "D. They are minimalistic"
+    ],
+    "correct_answer": "C",
+    "reasoning": "They merge batch, interactive, and real-time capabilities.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Hybrid OS are limited to single-task environments.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Rarely",
+      "C. False",
+      "D. Sometimes"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Hybrid OS explicitly support multitasking.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: One disadvantage of Hybrid OS is ______ in resource management.",
+    "type": "Fill",
+    "options": [
+      "A. Clarity",
+      "B. Simplicity",
+      "C. Complexity",
+      "D. Flexibility"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Managing resources in hybrid OS is complex due to mixed features.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Which capability allows Hybrid OS to support real-time applications?",
+    "type": "Short",
+    "options": [
+      "A. Virtualization",
+      "B. Graphics acceleration",
+      "C. Real-time task scheduling",
+      "D. Data compression"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Hybrid OS include mechanisms to handle real-time tasks alongside general tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why might a hybrid OS show suboptimal performance for specialized tasks?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because it is outdated",
+      "B. Because it consumes less memory",
+      "C. Because it is not tailored for one single type of workload",
+      "D. Because it runs only in the cloud"
+    ],
+    "correct_answer": "C",
+    "reasoning": "A hybrid system balances multiple needs, not optimized for one task type.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Hybrid operating systems are considered versatile because they…",
+    "type": "MCQ",
+    "options": [
+      "A. Require less power",
+      "B. Eliminate security issues",
+      "C. Support a wide range of applications",
+      "D. Restrict user interaction"
+    ],
+    "correct_answer": "C",
+    "reasoning": "The blend of multiple OS features broadens application support.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Linux can only act as a real-time operating system, not a hybrid system.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Rarely",
+      "C. False",
+      "D. Sometimes"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Linux is versatile, acting as both general-purpose and real-time, hence hybrid.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Hybrid OS combine the benefits of multiple types of systems but may lead to ______ performance trade-offs.",
+    "type": "Fill",
+    "options": [
+      "A. Higher",
+      "B. Faster",
+      "C. Suboptimal",
+      "D. Optimized"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Trade-offs come from balancing general and specialized workloads.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: In a factory automation system, why might a hybrid OS be chosen?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because it avoids user interaction",
+      "B. Because it reduces hardware needs",
+      "C. Because it handles real-time control and user interface together",
+      "D. Because it only supports cloud tasks"
+    ],
+    "correct_answer": "C",
+    "reasoning": "It allows blending time-critical automation with operator interfaces.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Which aspect of Hybrid OS makes them more challenging to design?",
+    "type": "MCQ",
+    "options": [
+      "A. Minimalistic kernel",
+      "B. Lack of interactivity",
+      "C. Resource management and complexity",
+      "D. Weak security"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Merging multiple OS features increases design complexity.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Hybrid OS are always the fastest for real-time tasks.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Sometimes",
+      "C. False",
+      "D. Rarely"
+    ],
+    "correct_answer": "C",
+    "reasoning": "They can be slower compared to specialized real-time systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: The primary challenge of Hybrid OS design is balancing interactive responsiveness with ______ performance.",
+    "type": "Fill",
+    "options": [
+      "A. Storage",
+      "B. Graphics",
+      "C. Real-time",
+      "D. Energy"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Maintaining real-time performance while interactive remains responsive is difficult.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Why are hybrid OS particularly suited for modern computing environments?",
+    "type": "Short",
+    "options": [
+      "A. They are lightweight",
+      "B. They reduce energy consumption",
+      "C. They support both user interaction and real-time tasks",
+      "D. They simplify programming"
+    ],
+    "correct_answer": "C",
+    "reasoning": "Modern needs include interactivity and real-time responsiveness, both provided by hybrids.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "MCQ: Embedded Operating Systems are primarily designed for which type of devices?",
+    "type": "MCQ",
+    "options": [
+      "A. Desktop computers",
+      "B. Cloud servers",
+      "C. Gaming consoles",
+      "D. Embedded devices"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They are optimized for dedicated hardware like IoT, automotive, and appliances.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Embedded operating systems are generally used for general-purpose computing tasks.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Sometimes",
+      "C. Mostly",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They are tailored for specialized tasks, not general computing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: An embedded OS is often ______ for a specific hardware platform.",
+    "type": "Fill",
+    "options": [
+      "A. Ignored",
+      "B. Unnecessary",
+      "C. Improvised",
+      "D. Tailored"
+    ],
+    "correct_answer": "D",
+    "reasoning": "It is customized to match the device’s hardware design.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Short Answer: Which type of operating system is commonly found in medical equipment?",
+    "type": "Short",
+    "options": [
+      "A. Batch OS",
+      "B. Distributed OS",
+      "C. Hybrid OS",
+      "D. Embedded OS"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Medical devices use embedded OS for reliability and efficiency.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "MCQ: What is one key advantage of embedded operating systems?",
+    "type": "MCQ",
+    "options": [
+      "A. High flexibility",
+      "B. Easy upgrades",
+      "C. General-purpose performance",
+      "D. Low resource consumption"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They are designed to use minimal hardware resources efficiently.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Interpretation: Why are embedded OS often chosen for automotive systems?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because they are cheaper",
+      "B. Because they support multitasking well",
+      "C. Because they can run cloud services",
+      "D. Because they are optimized for specific, reliable tasks"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Automotive systems need reliability and efficiency for dedicated controls.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "True or False: Embedded OS are typically simple but highly reliable for their tasks.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Sometimes",
+      "C. Rarely",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They sacrifice flexibility for reliability in specialized environments.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: A smartwatch running a minimal OS is an example of an ______ system.",
+    "type": "Fill",
+    "options": [
+      "A. Distributed",
+      "B. Hybrid",
+      "C. Batch",
+      "D. Embedded"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Smartwatches are embedded systems designed for low resources and specific tasks.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of the following best describes the disadvantage of embedded OS?",
+    "type": "MCQ",
+    "options": [
+      "A. High flexibility",
+      "B. Easy to reprogram",
+      "C. Unlimited memory use",
+      "D. Limited flexibility and hard to upgrade"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They are difficult to upgrade or adapt for new functions.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: IoT devices often rely on embedded operating systems.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Rarely",
+      "C. Sometimes",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Most IoT devices are powered by lightweight embedded OS.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Short Answer: Which capability is often included in embedded OS for time-critical tasks?",
+    "type": "Short",
+    "options": [
+      "A. Data storage",
+      "B. Multimedia support",
+      "C. Cloud integration",
+      "D. Real-time capabilities"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Real-time OS features allow them to handle time-sensitive operations.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: Embedded OS are commonly found in household ______ like microwaves and washing machines.",
+    "type": "Fill",
+    "options": [
+      "A. Networks",
+      "B. Sensors",
+      "C. Tools",
+      "D. Appliances"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Many home appliances use embedded operating systems for control.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Interpretation: Why are embedded OS generally not suitable for personal computing?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because they are too powerful",
+      "B. Because they consume too much memory",
+      "C. Because they are built only for gaming",
+      "D. Because they are specialized and not flexible"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They cannot support the wide range of functions needed in personal computers.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which of these devices is LEAST likely to use an embedded OS?",
+    "type": "MCQ",
+    "options": [
+      "A. Medical monitor",
+      "B. Smart refrigerator",
+      "C. Automobile control unit",
+      "D. High-performance gaming PC"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Gaming PCs require general-purpose OS, not embedded ones.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "True or False: Embedded OS upgrades are generally seamless and frequent.",
+    "type": "True/False",
+    "options": [
+      "A. True",
+      "B. Sometimes",
+      "C. Rarely",
+      "D. False"
+    ],
+    "correct_answer": "D",
+    "reasoning": "They are usually hard to upgrade because of their specialized nature.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "MCQ: Which aspect makes embedded OS especially valuable in medical devices?",
+    "type": "MCQ",
+    "options": [
+      "A. High flexibility",
+      "B. Compatibility with all software",
+      "C. Large memory use",
+      "D. Reliability in specific tasks"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Reliability and predictability are critical in medical applications.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Interpretation: Why would engineers avoid using embedded OS for tasks like video editing?",
+    "type": "Interpretation",
+    "options": [
+      "A. Because it is too flexible",
+      "B. Because it runs too quickly",
+      "C. Because it supports multitasking poorly",
+      "D. Because it lacks general-purpose features"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Embedded OS are limited to specialized operations, not heavy creative work.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Fill in the blank: Embedded OS are often ______ to maximize performance in a restricted hardware environment.",
+    "type": "Fill",
+    "options": [
+      "A. Bloated",
+      "B. Complicated",
+      "C. Flexible",
+      "D. Optimized"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Optimization ensures they run efficiently on limited hardware.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Short Answer: Which embedded OS feature ensures tasks run without delays in real-world applications?",
+    "type": "Short",
+    "options": [
+      "A. Virtualization",
+      "B. Graphics processing",
+      "C. Power management",
+      "D. Real-time scheduling"
+    ],
+    "correct_answer": "D",
+    "reasoning": "Real-time scheduling ensures tasks meet deadlines in critical systems.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "True or False: Embedded OS are becoming more important with the rise of IoT devices.",
+    "type": "True/False",
+    "options": [
+      "A. False",
+      "B. Rarely",
+      "C. Sometimes",
+      "D. True"
+    ],
+    "correct_answer": "D",
+    "reasoning": "IoT expansion relies heavily on embedded operating systems.",
+    "difficulty": "hard"
+  }
+]

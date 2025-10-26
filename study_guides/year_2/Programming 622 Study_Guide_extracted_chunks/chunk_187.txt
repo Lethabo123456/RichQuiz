@@ -1,0 +1,57 @@
+(in a forward manner) and returns the pointer of the built list:  
+  
+nodeType* buildListForward()  
+
+93  
+  
+{  
+nodeType *first, *newNode, *last; int 
+num;  
+  
+cout << "Enter a list of integers ending with -999."<< endl; cin 
+>> num;  
+first = NULL;  
+  
+while (num != -999)  
+{  
+newNode = new nodeType; newNode->info 
+= num;  
+newNode->link = NULL;  
+  
+if (first == NULL)  
+{  
+first = newNode;  
+last = newNode;  
+}  
+else  
+{  
+last->link = newNode;  
+last = newNode;  
+}  
+cin >> num;  
+}   
+  
+  
+  
+  
+//end while return 
+first;  
+ 
+}   
+  
+  
+  
+  
+  
+//end buildListForward  
+  
+3.1.3.2 Building a Linked List Backward  
+  
+Now we consider the case of building a linked list backward. For the previously given data—2, 15, 8, 24, 
+and 34—the linked list is as shown in Figure 3-17.  
+  
+  
+FIGURE 3-17 List after building it backward  
+  
+Because the new node is always inserted at the beginning of the list, we do not need to know the end of 
+the list, so the pointer last is not needed

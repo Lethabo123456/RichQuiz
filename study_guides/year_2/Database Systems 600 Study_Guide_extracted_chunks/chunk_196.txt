@@ -1,0 +1,21 @@
+uces a lower normal form; that is, a 3NF will be converted to 
+a 2NF through denormalization. However, the price you pay for increased performance through 
+denormalization is greater data redundancy. 
+ 
+ 
+The Need for Normalization 
+Normalization is typically used by database designers in conjunction with the ERM; when 
+designing a new database structure based on the business requirements of the end users and to 
+analyse the relationships among the attributes within each entity, of an existing database, and 
+determine if the structure can be improved through normalization. In either case, the normalization 
+process is the same.  
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Six page 200-200. 
+
+ 
+79 
+Commonly, you start by defining the business rules and data constraints, identifying the functional 
+dependencies, entities, and attributes using the techniques you learned in previous chapters. Then, 
+you apply no

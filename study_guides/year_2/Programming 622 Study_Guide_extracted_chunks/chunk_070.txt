@@ -1,0 +1,31 @@
+trates how to access the members of a class.  
+  
+EXAMPLE 1-10  
+  
+Suppose we have the following declaration (say, in a user’s program):  
+  
+clockType myClock;  
+clockType yourClock;  
+  
+Consider the following statements:  
+  
+myClock.setTime(5, 2, 30); myClock.printTime();  
+if (myClock.equalTime(yourClock))  
+.  
+.  
+.   
+These statements are legal; that is, they are syntactically correct.  
+  
+In the first statement, myClock.setTime(5, 2, 30);, the member function setTime is executed. The values 
+5, 2, and 30 are passed as parameters to the function setTime, and the function uses these values to set 
+the values of the three instance variables hr, min, and sec of myClock to 5, 2, and 30, respectively. 
+  
+  
+
+33  
+  
+Similarly, the second statement executes the member function printTime and outputs the contents of the 
+three instance variables of myClock.  
+  
+In the third statement, the member function equalTime executes and compares the three instance 
+variables of myClock to th

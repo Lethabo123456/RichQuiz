@@ -1,0 +1,13 @@
+ptual design, and the table columns must correspond to the attributes specified in the 
+conceptual design. The outcome of this process is a list of relations, attributes, and relationships 
+that will be the basis for the next step. 
+ 
+Map the Conceptual Model to the Logical Model 
+Recall that the second phase of the DBLC is database design, which comprises three stages: 
+conceptual design, logical design, and physical design, plus the critical decision of DBMS selection. 
+Conceptual design is the first stage in the database design process. The goal at this stage is to design 
+a database that is independent of database software and physical details. The output of this process 
+is a conceptual data model that describes the main data entities, attributes, relationships, and 
+constraints of a given problem domain. This design is descriptive and narrative in form. In other 
+words, it is generally composed of a graphical representation as well as textual descriptions of the 
+main data elemen

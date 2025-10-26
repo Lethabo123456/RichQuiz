@@ -1,0 +1,46 @@
+Process-Based DO/S 
+ 
+A process-based DO/S provides process management using client/server processes that are 
+synchronized and linked together through messages and ports (the ports are also known as channels 
+or pipes). The major emphasis is on processes and messages, and how they provide the basic 
+features essential to process management, such as process creation, scheduling, 
+pausing, 
+communication, and identification, to name a few. 
+The issue of how to provide these features can be addressed in several ways. The processes can be 
+managed from a single copy of the operating system, from multiple cooperating peers, or from 
+some combination of the two. Operating systems for distributed computers are typically configured 
+as a kernel on each site. All other services that are dependent on devices are typically found on the 
+sites where the devices are located. As users enter the system, the scheduling manager gives them 
+a unique process identifier and then assigns them to a site for processing. 
+ 
+In a distributed system, there is a high level of cooperation and sharing among the sites when 
+determining which process should be loaded and where it should be run. This is done by exchanging 
+messages among site operating systems. Once a process is scheduled for service, it must be initiated 
+at the assigned site by a dispatcher. The dispatcher takes directions from the operating system’s 
+scheduler, allocates the device to the process, and initiates its execution. This procedure may 
+necessitate one of the following: moving a process from memory in one site to memory at 
+another site; reorganizing a site’s memory allocation; reorganizing a site’s READY, RUNNING, and 
+WAIT queues; and initiating the scheduled process. The Processor Manager recognizes only 
+processes and their demands for service. It responds to them based on the established scheduling 
+policy, which determines what must be done to manage the processes. As mentioned in earlier 
+chapters, policies for scheduling must consider issues such as load balancing, overhead 
+minimization, memory loading minimization, first-come first-served, and least-time-remaining. 
+ 
+Object-Based DO/S 
+ 
+An object-based DO/S has a different way of looking at the computer system than a process- 
+based DO/S. Instead of viewing the system as a collection of individual resources and processes, the 
+system is viewed as a collection of objects. An object can represent a piece of hardware 
+(such as a CPU or memory), software (such as files, programs, semaphores, and data), or a 
+combination of the two (printers, scanners, and USB ports, each bundled with the software required 
+to operate it). Each object in the system has a unique identifier to differentiate it from all other 
+objects in the system. 
+Objects are viewed by the operating system as abstract entities, data types that can go through 
+a change of state, act according to set patterns, be manipulated, or exist in relation to other objects 
+in a manner appropriate to the object’s semantics in the system. This means that objects have a set 
+of unchanging properties that defines them and their behavior within the context of their defined 
+parameters. For example, a writable CD (CD-R) drive has unchanging properties that include the 
+following: Data can be written to a disc, data can be read from a disc, reading and writing cannot 
+take place concurrently, and the data’s beginning and ending points cannot be compromised. If 
+we use these simple rules to construct a simulation of a CD-R drive, we have created an 
+accurate representation of this object

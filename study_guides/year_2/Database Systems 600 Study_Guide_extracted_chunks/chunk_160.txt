@@ -1,0 +1,14 @@
+explained throughout this chapter. The relationships 
+depicted within the specialization hierarchy are sometimes described in terms of “is-a” 
+relationships. For example, a pilot is an employee. It is important to understand that within a 
+specialization hierarchy, a subtype can exist only within the context of a supertype, and every 
+subtype can have only one supertype to which it is directly related. However, a specialization 
+hierarchy can have many levels of supertype or subtype relationships—that is, you can have a 
+specialization hierarchy in which a supertype has many subtypes. In turn, one of the subtypes is the 
+supertype to other lower-level subtypes. 
+As you can see in Figure 5.2, the arrangement of entity supertypes and subtypes in a specialization 
+hierarchy is more than a cosmetic convenience. Specialization hierarchies enable the data model to 
+capture additional semantic content (meaning) into the ERD. A specialization hierarchy provides 
+the means to:  
+ 
+Support attr

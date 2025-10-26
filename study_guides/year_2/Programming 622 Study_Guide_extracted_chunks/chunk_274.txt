@@ -1,0 +1,20 @@
+he insertion and deletion algorithms and are not part of the actual list. The actual list 
+is between these two nodes.  
+
+138  
+  
+  
+For example, suppose the data are ordered according to the last name. Further, assume that the last name 
+is a string of at most 8 characters. The smallest last name is larger than the string "A" and the largest last 
+name is smaller than the string "zzzzzzzz". We can set up the header node with the value "A" and the 
+trailer node with the value "zzzzzzzz". Figure 3-33 shows an empty and a nonempty linked list with header 
+and trailer nodes.  
+  
+  
+FIGURE 3-33 Linked list with header and trailer nodes  
+  
+As before, the usual operations on lists with header and trailer nodes are as follows: Initialize the list (to 
+an empty state), destroy the list, print the list, find the length of the list, search the list for a given item, 
+insert an item in the list, delete an item from the list, and copy the list.  
+  
+We leave it as an exercise for you to design

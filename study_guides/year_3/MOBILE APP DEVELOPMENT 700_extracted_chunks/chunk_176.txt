@@ -1,0 +1,31 @@
+1. Switch to activity_main.xml, and then highlight and copy all the XML that defines the navigation 
+bar. Be sure to include the start <LinearLayout:> and end </LinearLayout> tags. 
+2. Open the activity_contact_list.xml file in the layouts folder by double-clicking it. Switch to the 
+Text tab and paste the copied code just before the last 
+</androidx.constraintlayout.widget.ConstraintLayout> tag in the file. 
+3. Make sure the following attribute is in the root ConstraintLayout in each XML file: 
+xmlns:app=“http://schemas.android.com/apk/res-auto“. 
+4. Repeat for the other two layouts.
+
+Switch to Design view to verify that the navigation bar is properly displayed. Close the file and repeat 
+the process to add the navigation bar to activity_contact_map.xml and activity_contact_settings.xml. 
+Verify that all were properly copied by switching Design view for each file to check that each layout 
+looks like the first layout, that a dark blue navigation bar is at the bottom, and that three image buttons 
+are included in it. Note that you may get a rendering error. Close the error window with the x on the 
+top right. Oftentimes, when making wholesale changes with cut and paste, this error occurs. If the 
+layout is correct, there is no need to worry about it. 
+ 
+Create the Contact Layout 
+The contact activity provides functionality associated with adding 
+and modifying information about individual contacts. Although it is 
+the most complicated layout in the MyContactsList app, it also 
+demonstrates the use and configuration of a significant number of 
+interface elements available in the Android platform. 
+There are three major sections in this layout (Figure 4.5). The 
+navigation bar completed in the previous section is one of these. 
+The second is another LinearLayout at the top of the screen to 
+display   the   buttons   that   allow   the   user   to   access   overall 
+functionality for the screen—in other words, a layout that will function as a toolbar. The third is a 
+ScrollView that holds all the widgets that allow the user to enter information about a contact. A 
+ScrollView is used to ensure that users can access all the data entry widgets, regardless of the size of 
+their device.

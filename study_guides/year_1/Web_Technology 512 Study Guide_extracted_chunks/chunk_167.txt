@@ -1,0 +1,31 @@
+n-
+readable string. 
+toGMTString() 
+Deprecated - Converts a date to a string, using the Internet 
+GMT conventions. Use toUTCString instead. 
+toLocaleDateString() 
+Returns the "date" portion of the Date as a string, using 
+the current locale's conventions. 
+toLocaleFormat() 
+Converts a date to a string, using a format string. 
+toLocaleString() 
+Converts a date to a string, using the current locale's 
+conventions. 
+toLocaleTimeString() 
+Returns the "time" portion of the Date as a string, using 
+the current locale's conventions. 
+toSource() 
+Returns a string representing the source for an equivalent 
+Date object; you can use this value to create a new object.  
+toString() 
+Returns a string representing the specified Date object. 
+toTimeString() 
+Returns the "time" portion of the Date as a human-
+readable string. 
+toUTCString() 
+Converts a date to a string, using the universal time 
+convention. 
+valueOf() 
+Returns the primitive value of a Date object.  
+ 
+Table 6.11 – The Date Object Metho

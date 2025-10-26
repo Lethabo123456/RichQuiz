@@ -1,0 +1,18 @@
+ferential integrity (which it 
+should) it means you can’t have an order for Customer_Number 15 unless there actually is a 
+customer with Customer_Number 15 in the customer table.  
+ 
+This is an extremely convenient and useful way of organizing data (refer back to Table 5.1). It 
+means, in this case, that the delivery address doesn’t have to be stored twice – once with the 
+order and again with the customer details. Storing the same information twice is very bad 
+practice and leads to all sorts of problems. If a customer moves and one address is updated 
+but the other is not, then the firm has useless data – it is not known which address is the 
+correct one. A large part of organizing data involves deciding which fields are going to be 
+primary keys and identifying where the foreign keys should be. A process for making that 
+decision is described next.   
+ 
+ 
+ 
+Designing Relational Databases 
+ 
+This section describes an approach to designing a relational database. A database design is a

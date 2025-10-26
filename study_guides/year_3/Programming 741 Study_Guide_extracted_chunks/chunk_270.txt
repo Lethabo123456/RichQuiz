@@ -1,0 +1,36 @@
+7.2.2 Static Delegates 
+A disadvantage of Example 7-1 is that it forces the calling class, in this case Test, to instantiate 
+the delegates it needs in order to sort the objects in a Pair. It would be nice to get the delegate 
+from the Student or Dog class. You can do this by giving each class its own static delegate. 
+Thus, you can modify Student to add the following: 
+ 
+public static readonly Pair.WhichIsFirst OrderStudents = new 
+Pair.WhichIsFirst(Student.WhichStudentComesFirst); 
+This creates a static, readonly delegate named OrderStudents. You can create a similar 
+delegate within Dog: 
+
+public static readonly Pair.WhichIsFirst OrderDogs = new 
+Pair.WhichIsFirst(Dog. WhichDogComesFirst); 
+These are now static fields of their respective classes. Each is prewired to the appropriate 
+method within the class. You can invoke delegates without declaring a local delegate instance. 
+Just pass in the static delegate of the class: 
+studentPair.Sort(Student.OrderStudents); 
+Console.WriteLine("After 
+Sort 
+studentPair\t\t: 
+{0} 
+", 
+studentPair. 
+ToString( )); 
+ReverseSort (Student. OrderStudents); 
+Console.WriteLine("After ReverseSort studentPair\t: {0} ", 
+studentPair. 
+ToString( )); 
+dogPair. Sort (Dog. OrderDogs); 
+Console.WriteLine("After Sort dogPair\t\t: { 0} ", 
+dogPair.ToString( )); 
+dogPair . ReverseSort (Dog. OrderDogs); 
+Console.WriteLine("After ReverseSort dogPair\t: { 0} ", 
+dogPair.ToString( )); 
+ 
+The output from these changes is identical to the previous example 

@@ -1,0 +1,37 @@
+Using a Linear Layout 
+ 
+The Linear Layout is one of the simplest layout classes. It allows you to create simple UIs (or UI 
+elements) that align a sequence of child Views in either a vertical or a horizontal line. The simplicity of 
+the Linear Layout makes it easy to use but limits its flexibility. In most cases you will use Linear Layouts 
+to construct UI elements that will be nested within other layouts, such as the Relative Layout. 
+ 
+<?xml version=“1.0” encoding=“utf-8”?> 
+<LinearLayout 
+xmlns:android=“http://schemas.android.com/apk/res/android” 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent” 
+android:orientation=“vertical”> 
+<LinearLayout 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:orientation=“horizontal” 
+android:padding=“5dp”> 
+<Button 
+android:text=“@string/cancel_button_text” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:layout_weight=“1”/> 
+<Button 
+android:text=“@string/ok_button_text” 
+android:layout_width=“fill_parent” 
+android:layout_height=“wrap_content” 
+android:layout_weight=“1”/> 
+</LinearLayout> 
+ 
+<ListView 
+android:layout_width=“match_parent” 
+android:layout_height=“match_parent”/> 
+</LinearLayout> 
+ 
+If you find yourself creating increasingly complex nesting patterns of Linear Layouts, you will likely 
+be better served using a more flexible Layout Manager. 

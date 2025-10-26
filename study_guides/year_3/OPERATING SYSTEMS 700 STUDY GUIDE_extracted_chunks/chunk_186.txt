@@ -1,0 +1,39 @@
+Tree 
+ 
+The tree topology is a collection of buses. The communication line is a branching cable with no closed 
+loops, as shown in Figure 6.5. 
+ 
+Figure 6.5 
+ 
+Figure 6.5 Tree topology. Data flows up and down the branches of the trees and is absorbed by 
+controllers at the end points. Gateways help minimize the differences between the protocol used on 
+one part of the network and a different protocol used on the branch with host 7. 
+ 
+The tree layout begins at the head end, where one or more cables start. Each cable may have branches 
+that may, in turn, have additional branches, potentially resulting in quite complex arrangements. 
+Using bridges as special fitters between buses of the same protocol and as translators to those with 
+different protocols allows designers to create networks that can operate at speeds highly responsive 
+to the hosts in the network. In a tree configuration, a message from any site circulates through the 
+communication line and can be received by all other sites until it reaches the end points. If a message 
+reaches an end point controller without being accepted by a host, the end point controller absorbs 
+it, it is not turned around as it is when using a bus topology. One advantage of bus and tree 
+topologies is that even if a single node fails, message traffic can still flow through the network. 
+ 
+Hybrid 
+A hybrid topology is a combination of any of the topologies discussed here. For example, a hybrid can 
+be made by replacing a single host in a star configuration with a ring, as shown in Figure 6.6. 
+Alternatively, a star configuration could have a bus topology as one of the communication lines 
+feeding its hub, as shown in Figure 6.7. 
+ 
+Figure 6.6 
+ 
+Figure 6.6 shows a hybrid topology, version 1. This network combines a star and a ring, connected 
+by a bridge. Hosts 5, 6, 7, and 8 are located on the ring. 
+ 
+ 
+Figure 6.7 
+ 
+Figure 6.7 shows a hybrid topology, version 2. This network combines star and bus 
+topologies. Hosts5, 6, 7, and 8 are located on the bus. 
+The objective of a hybrid configuration is to select among the strong points of each topology and 
+combine them to meet that system’s communication requirements most effectively. 

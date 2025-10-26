@@ -1,0 +1,17 @@
+Creating forms 
+A form can contain many fields, such as text boxes, text area fields, radio buttons, and 
+check boxes (see Exhibit 0-14). You use the <input> tag within the FORM tag to create 
+fields and other elements in a form. This is an empty container. The TYPE attribute of the 
+INPUT tag allows you to specify the type of the field that you want to add to a page. 
+For example, to add a text box, you would use the following code within the FORM 
+tag: 
+
+<INPUT TYPE="text">
+
+Exhibit 0-14: A form on a page  
+
+The syntax for creating a form is as follows: 
+<form> 
+Input element 
+</form> 
+The following table lists some of the tags which can be used to create a form 

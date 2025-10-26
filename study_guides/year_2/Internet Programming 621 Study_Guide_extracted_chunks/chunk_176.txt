@@ -1,0 +1,18 @@
+OBALS[“myGlobal”] . “ < br/ > ”;  
+}  
+  
+hello(); // Displays “Hello there!”  
+  
+The hello() function accesses the contents of the $myGlobal variable via the $GLOBALS array. Notice 
+that the function does not have to declare the $myGlobal variable as global in order to access its 
+value.  
+PHP makes other superglobal variables available to you as well. Be careful with global variables. If 
+you modify the value of a global variable in many different places within your application, it can 
+make it hard to debug your code when something goes wrong. Generally speaking, you should avoid 
+using global variables unless it is strictly necessary.  
+  
+  
+Reading/Activity: You are hereby reminded to please refer to your prescribed book and read Pages 63
+to 74. Using the internet and other resources, do some research on Static Variables,  
+Anonymous Functions, References and Recursive Functions. Answer as many questions on these 
+topics as you possibly can. One question on the application of Re

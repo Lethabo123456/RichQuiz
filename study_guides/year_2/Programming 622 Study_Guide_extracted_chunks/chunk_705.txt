@@ -1,0 +1,24 @@
+previous sections described how to do the following:  
+  
+
+347  
+  
+Traverse a binary tree using the inorder, preorder, and postorder methods.  
+Construct a binary tree.  
+Insert an item in a binary tree.  
+Delete an item from a binary tree.  
+  
+The traversal algorithms—inorder, preorder, and postorder—discussed earlier are recursive. Because 
+traversing a binary tree is a fundamental operation and recursive functions are somewhat less efficient 
+then their iterative versions, this section discusses the nonrecursive inorder, preorder, and postorder 
+traversal algorithms.  
+  
+ 
+9.5.1  Nonrecursive Inorder Traversal  
+  
+In the inorder traversal of a binary tree, for each node, the left subtree is visited first, then the node, and 
+then the right subtree. It follows that in an inorder traversal, the first node visited is the leftmost node of 
+the binary tree. For example, in the binary tree in Figure 9-11, the leftmost node is the node with info 28.  
+  
+  
+FIGURE 9-11 Binary tree; lef

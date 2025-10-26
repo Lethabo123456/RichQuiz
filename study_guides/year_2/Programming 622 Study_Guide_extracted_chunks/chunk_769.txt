@@ -1,0 +1,46 @@
+0; int i 
+= mid;  
+while (i < bTreeOrder - 1)  
+{ rightNode->list[index] = current->list[i];  
+rightNode->children[index + 1] = current->children[i + 1]; index++;  
+i++;  
+}  
+  
+current->recCount = mid;  
+insertNode(current, insertItem, rightChild, insertPosition);  
+(current->recCount)--;  
+  
+median = current->list[current->recCount];  
+  
+rightNode->recCount = index;  
+rightNode->children[0] = current->children[current->recCount + 1];  
+}  
+ 
+else     
+  
+  
+  
+  
+//new item goes in the second half of the node  
+{ int i = mid + 1;  
+int index = 0;  
+  
+
+378  
+  
+while (i < bTreeOrder - 1)  
+{ rightNode->list[index] = current->list[i];  
+rightNode->children[index + 1] = current->children[i + 1]; 
+index++; i++;  
+}  
+  
+current->recCount = mid;  
+rightNode->recCount = index;  
+  
+median = current->list[mid]; insertNode(rightNode, insertItem, 
+rightChild, insertPosition - mid - 1); rightNode->children[0] = current-
+>children[current->recCount + 1];  
+}  
+} //split Node  
+  
+We leave i

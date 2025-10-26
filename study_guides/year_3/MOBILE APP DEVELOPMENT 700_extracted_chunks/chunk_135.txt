@@ -1,0 +1,17 @@
+Note 
+The values files are used to hold values that are going to be reused in your app. Unfortunately, the 
+only way to know what values are available is to open the file and inspect its contents for the value 
+you’d like to use. We recommend that when you add values, you name them very clearly and limit the 
+number of values you use, to keep it somewhat manageable. Naming clearly is very important because 
+Android Studio’s code completion capability will list the value names but not their actual value. 
+
+Here is a description of the code in the above listing: 
+  
+▪ Line 10—This line was added when we entered textViewDisplay into the Attributes panel. The +id 
+was added to allow this name to be reused in other layouts. If it was not included, you could only use 
+this id once in the whole app. 
+▪ Line 14—This line was also added when we added the dimension resource to change the text size 
+of the Hello World TextView. 
+▪ Line 19—Another line added based on our manipulation of the vertical bias in the Attributes panel. 
+▪ Line 22—The new TextView has an id of textView. This is the default id. If we add another TextView 
+without changing this id, its id will be textView2. 

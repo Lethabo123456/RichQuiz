@@ -1,0 +1,18 @@
+Of course, in real applications, comments generally explain how some part of the 
+program works or what a specific feature does. Java supports three styles of comments. The one  
+shown at the top of the program is called a multiline comment. This type of comment must begin 
+with /* and end with */. Anything between these two comment symbols is ignored by the compiler. 
+As the name suggests, a multiline comment may be several lines long. The next line of code in the 
+program is shown here:   
+   
+class Example {   
+   
+This line uses the keyword class to declare that a new class is being defined. Example is an   
+identifier that is the name of the class. The entire class definition, including all of its members, will 
+be between the opening curly brace ({) and the closing curly brace (}). The use of the curly braces 
+in Java is identical to the way they are used in C, C++, and C#. For the moment, don’t worry too 
+much about the details of a class except to note that in Java, all program activity occurs within 
+one. This is one reason why all Java programs are (at least a little bit) object-oriented.   
+The next line in the program is the single-line comment, shown here:   
+   
+// Your program begins with a call to main(). 

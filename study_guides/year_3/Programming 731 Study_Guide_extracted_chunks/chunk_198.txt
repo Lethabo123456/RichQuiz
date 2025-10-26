@@ -1,0 +1,20 @@
+As you can see, the subclass  B includes all of the members of its superclass, A. This is why subOb 
+can access i and j and call showij( ). Also, inside sum( ), i and j can be referred to directly, as if they 
+were part of B. Even though A is a superclass for B, it is also a completely independent, stand-alone 
+class. Being a superclass for a subclass does not mean that the superclass cannot be used by itself. 
+Further, a subclass can be a superclass for another subclass. The general form of a class declaration 
+that inherits a superclass is shown here:    
+ 
+class subclass-name extends superclass-name {   
+// body of class   
+}   
+   
+You can only specify one superclass for any subclass that you create. Java does not support the 
+inheritance of multiple superclasses into a single subclass. (This differs from C++, in which you can 
+inherit multiple base classes.) You can, as stated, create a hierarchy of inheritance in which a 
+subclass becomes a superclass of another subclass. However, no class can be a superclass of itself.   
+  
+Member Access and Inheritance    
+Although a subclass includes all of the members of its superclass, it cannot access those members 
+of the superclass that have been declared as private. For example, consider the following simple 
+class hierarchy:   

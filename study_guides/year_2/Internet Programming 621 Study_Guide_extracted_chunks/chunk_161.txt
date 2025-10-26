@@ -1,0 +1,23 @@
+world!” 
+hello();  
+  
+  
+  
+As you can see, this script defines a function, hello(), that simply displays the string “ Hello, world! ” 
+After the function definition, the script calls the hello() function to display the output.  
+
+78  
+6.6 Defining Parameters  
+As you know, functions can optionally accept one or more arguments, which are values passed to 
+the function. To tell PHP that you want your function to accept arguments, you specify one or more 
+corresponding parameters when you define your function. A parameter is a variable that holds the 
+value passed to it when the function is called.  
+  
+Strictly speaking, an argument is a value that you pass to a function, and a parameter is the variable 
+within the function that receives the argument. In practice, programmers often use the two terms 
+interchangeably.  
+  
+To specify parameters for your function, insert one or more variable names between the 
+parentheses, as follows:  
+  
+function myFunc( $oneParameter, $anotherParamete

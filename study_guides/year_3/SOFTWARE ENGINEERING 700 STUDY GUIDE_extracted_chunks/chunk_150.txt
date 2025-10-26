@@ -1,0 +1,48 @@
+4.8 Requirements Validation  
+
+Requirements validation is the process of checking that requirements define the system that the 
+customer really wants. It overlaps with elicitation and analysis, as it is concerned with finding 
+problems with the requirements. Requirements validation is critically important because errors 
+in a requirements document can lead to extensive rework costs when these problems are 
+discovered during development or after the system is in service. 
+ 
+The cost of fixing a requirements problem by making a system change is usually much greater 
+than repairing design or coding errors. A change to the requirements usually means that the 
+system design and implementation must also be changed. Furthermore, the system must then be 
+retested. During the requirements validation process, different types of checks should be carried 
+out on the requirements in the requirements document. 
+ 
+These checks include; 
+
+• Validity checks These check that the requirements reflect the real needs of sys-tem users. 
+Because of changing circumstances, the user requirements may have changed since they 
+were originally elicited. 
+• Consistency checks Requirements in the document should not conflict. That is, there 
+should not be contradictory constraints or different descriptions of the same system 
+function. 
+
+• Completeness checks The requirements document should include requirements that 
+define all functions and the constraints intended by the system user.  
+• Realism checks By using knowledge of existing technologies, the requirements should be 
+checked to ensure that they can be implemented within the proposed budget for the 
+system. These checks should also take account of the budget and schedule for the system 
+development. 
+• Verifiability To reduce the potential for dispute between customer and contrac-tor, system 
+requirements should always be written so that they are verifiable. This means that you 
+should be able to write a set of tests that can demonstrate that the delivered system 
+meets each specified requirement. 
+
+A number of requirements validation techniques can be used individually or in conjunction with 
+one another: 
+
+• Requirements reviews: The requirements are analyzed systematically by a team of 
+reviewers who check for errors and inconsistencies.  
+• Prototyping This involves developing an executable model of a system and using this with 
+end-users and customers to see if it meets their needs and expectations. Stakeholders 
+experiment with the system and feed back requirements changes to the development 
+team. 
+• Test-case generation Requirements should be testable. If the tests for the requirements 
+are devised as part of the validation process, this often reveals requirements problems. If 
+a test is difficult or impossible to design, this usually means that the requirements will be 
+difficult to implement and should be reconsidered. Developing tests from the user 
+requirements before any code is written is an integral part of test-driven development.

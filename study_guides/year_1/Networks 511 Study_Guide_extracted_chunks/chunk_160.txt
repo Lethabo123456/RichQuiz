@@ -1,0 +1,29 @@
+CHAPTER 3: NETWORK CONNECTIVITY DEVICES 
+
+Learning outcomes:
+Understand switches, hubs, routers and bridges  
+Know how to configure network connectivity devices 
+Understand and implement and configure a firewall 
+Understand a DHCP 
+Understand a Proxy and reverse proxy how they work and types 
+Be able to understand VLANS  
+
+3.1 A Switch  
+
+Typically connects individual computers 
+ A switch is essentially the same as a bridge 
+ though typically used to connect hosts, not LANs 
+ Like bridges, support concurrent communication 
+ Host A can talk to C, while B talks to D 
+ 
+Figure 54: Switch 
+
+3.1.1 Dedicated Access and Full Duplex 
+• Dedicated access 
+– Host has direct connection to the switch rather than a shared LAN connection 
+• Full duplex 
+– Each connection can send in both directions 
+– Host sending to switch, and host receiving from switch 
+– E.g., in 10BaseT and 100Base T 
+• Completely supports concurrent transmissions 
+– Each connection is a bidirectional point-to-point link 

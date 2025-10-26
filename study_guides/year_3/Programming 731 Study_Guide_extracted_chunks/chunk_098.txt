@@ -1,0 +1,22 @@
+Since the while loop evaluates its conditional expression at the top of the loop, the body of the loop 
+will not execute even once if the condition is false to begin with. For example, in the following 
+fragment, the call to println( ) is never executed:   
+   
+int a = 10, b = 20; while(a > b)   
+   
+System.out.println("This will not be displayed");   
+The body of the while (or any other of Java’s loops) can be empty. This is because a null statement 
+(one that consists only of a semicolon) is syntactically valid in Java. For example, consider the 
+following program:    
+
+// The target of a loop can be   
+   
+empty. class NoBody {   
+public static void main(String args[ ])   
+   
+{ int i, j;  i = 100;  j = 200;   
+// find midpoint between i and j 
+while(++i < --j); 
+
+// no body in this loop   
+System.out.println("Midpoint is " + i);  }} 

@@ -1,0 +1,15 @@
+1.7.3 Standard Ethernet Code 
+In order to understand standard Ethernet code, one must understand what each digit means. 
+
+Following is a guide: 
+Guide to Ethernet Coding 
+10 at the beginning means the network operates at 10Mbps. 
+BASE Means the type of signaling used is baseband. 
+2 or 5 At the end indicates the maximum cable length in meters.
+T The end stands for twisted-pair cable. 
+X At the end stands for full duplex-capable cable. 
+FL At the end stands for fiber optic cable. 
+
+Table 1- 3: Guide to Ethernet Coding 
+For example: 100BASE-TX indicates a Fast Ethernet connection (100 Mbps) that uses a 
+twisted pair cable capable of full-duplex transmissions. 

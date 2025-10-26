@@ -1,0 +1,12 @@
+nly the function prototype for the member functions. 
+For these functions to work properly, we must write the related algorithms. One way to implement these 
+functions is to provide the function definition rather than the function prototype in the class itself. 
+Unfortunately, the class definition would then be long and difficult to comprehend. Another reason for 
+providing function prototypes instead of function definitions relates to information hiding; that is, we 
+want to hide the details of the operations on the data.  
+  
+Next, let us write the definitions of the member functions of the class clockType. That is, we will write the 
+definitions of the functions setTime, getTime, printTime, incrementSeconds, equalTime, and so on. 
+Because the identifiers setTime, printTime, and so forth are local to the class, we cannot reference them 
+(directly) outside the class. To reference these identifiers, we use the scope resolution operator, :: (double 
+colon). In the function definition’s

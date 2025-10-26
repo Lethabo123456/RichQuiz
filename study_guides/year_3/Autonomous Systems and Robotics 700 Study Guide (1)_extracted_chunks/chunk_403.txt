@@ -1,0 +1,37 @@
+Environment Design 
+
+States: 
+Let’s define three battery levels: 
+• 0 = low 
+• 1 = medium 
+• 2 = high 
+
+Actions: 
+• 0 = deliver 
+• 1 = recharge 
+
+Rewards: 
+
+Battery Level    Action     Reward    Explanation 
+---------------------------------------------------------------------
+Low              deliver    -10       Dangerous (risk of shutdown) 
+---------------------------------------------------------------------
+Low              recharge   +5        Safe decision 
+---------------------------------------------------------------------
+
+Battery Level    Action     Reward    Explanation 
+------------------------------------------------------------------------
+Medium           deliver    +10       Acceptable 
+------------------------------------------------------------------------
+Medium           recharge   0         Wasteful recharge 
+------------------------------------------------------------------------
+High             deliver    +15       Efficient and preferred 
+------------------------------------------------------------------------
+High             recharge   -5        Wasteful (battery already full) 
+------------------------------------------------------------------------
+
+
+Transition Dynamics: 
+• If action = recharge, battery increases 
+• If action = deliver, battery decreases 
+• If already at min/max, battery stays at limit

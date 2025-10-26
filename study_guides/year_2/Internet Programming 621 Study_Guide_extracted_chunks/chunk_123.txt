@@ -1,0 +1,22 @@
+ys. Although 
+associative arrays do not have numeric indices, PHP does remember the order of the elements in an 
+associative array. So you can still tell array_slice() to extract, say, the second and third elements of 
+an associative array:  
+  
+$myBook = array( “title” = > “The Grapes of Wrath”,  
+“author” = > “John Steinbeck”,  
+“pubYear” = > 1939 );  
+$myBookSlice = array_slice( $myBook, 1, 2 );  
+// Displays “Array ( [author] = > John Steinbeck [pubYear] = > 1939 )”; 
+print_r( $myBookSlice );  
+  
+Note that array_slice() does preserve the keys of elements from an associative array. By the way, if 
+you leave out the third argument to array_slice() , the function extracts all elements from the start 
+position to the end of the array:  
+  
+$authors = array( “Steinbeck”, “Kafka”, “Tolkien”, “Dickens” );  
+$authorsSlice = array_slice( $authors, 1 );  
+// Displays “Array ( [0] = > Kafka [1] = > Tolkien [2] = > Dickens )”; 
+print_r( $authorsSlice );  
+  
+Earlier you learned that array_sli

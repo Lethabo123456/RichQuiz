@@ -1,0 +1,22 @@
+onidentifying or vice versa—and the loss of foreign key attributes from some 
+entities. To eliminate those problems, the general rule is to avoid the display of attributes when 
+entity clusters are used. 
+ 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Five page 168-175. 
+ 
+Read 
+Database Systems: Design, Implementation, and Management, 13th Edition Carlos 
+Coronel and Steven Morris, Chapter Five page 175-176. 
+
+ 
+66 
+Entity Integrity: Selecting Primary Keys 
+Arguably, the most important characteristic of an entity is its primary key, which uniquely 
+identifies each entity instance. The primary key’s function is to guarantee entity integrity. 
+Furthermore, primary keys and foreign keys work together to implement relationships in the 
+relational model. Therefore, the importance of properly selecting the primary key has a direct 
+bearing on the efficiency and effectiveness of database implementation. 
+Natural Key

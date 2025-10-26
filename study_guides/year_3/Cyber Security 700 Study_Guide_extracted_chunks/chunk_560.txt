@@ -1,0 +1,30 @@
+Dealing with the Exploit Phase 
+Countermeasures at the exploit stage include the following: 
+ 
+ Host-based intrusion detection systems (HIDS): Once an exploit is inside the enterprise 
+network and attacking hosts, a HIDS detects and alerts on such attempts. 
+ Regular patching: Patching discovered vulnerabilities helps contain the damage. 
+ Data restoration from backups: Once an exploit is discovered and removed, it may be 
+necessary to restore a valid copy of data from a backup.
+
+Dealing with the Installation Phase 
+Tools that detect suspicious software or behavior, such as antivirus software and HIDS, are appropriate 
+at the installation stage. These tools include specific actions such as the following: 
+ 
+ An organization should remediate any malware infections as quickly as possible before they 
+progress. Scan the rest of the enterprise network for indicators of compromise associated 
+with this outbreak. 
+ Sometimes a distributed denial-of-service (DDoS) attack is used to divert attention away from 
+another, more serious, attack attempt. Increase monitoring, investigate all related activity, 
+and work closely with the enterprise Internet service provider (ISP) or other service provider. 
+distributed denial-of-service (DDoS) attack 
+A DoS attack in which multiple systems are used to flood servers with traffic in an attempt to 
+overwhelm available resources (transmission capacity, memory, processing power, and so 
+on), making them unavailable to respond to legitimate users. 
+ An organization should detect, monitor, and investigate unauthorized access attempts, giving 
+priority to those that are mission critical and/or contain sensitive data. 
+ An organization should identify the privileged user accounts for all domains, servers, apps, 
+and critical devices. Monitoring should be enabled for all systems, and for all system events, 
+and the monitoring system should feed the log monitoring infrastructure. 
+ An organization should configure critical systems to record all privileged escalation events and 
+set alarms for unauthorized privilege escalation attempts. 

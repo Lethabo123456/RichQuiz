@@ -1,0 +1,40 @@
+rse a linked list (adjacency list) to which 
+the pointer graph[v] points. Next, let us look at the statement  
+  
+int w = *graphIt;  
+  
+The expression *graphIt returns the label of the vertex, adjacent to the vertex v, to which graphIt points.  
+  
+Next, we give the definition of the function depthFirstTraversal to implement the depth-first traversal of 
+the graph.  
+  
+void graphType::depthFirstTraversal()  
+{  
+bool *visited;    
+  
+  
+  
+visited = new bool[gSize];  
+for (int index = 0; index < gSize; index++)  
+visited[index] = false;  
+ 
+//pointer to create the array to keep 
+//track of the visited vertices  
+//For each vertex that is not visited, do a   
+for (int index = 0; index < gSize; index++) if 
+(!visited[index]) dft(index,visited);  
+delete [] visited;  
+ 
+//depth first traverssal  
+}   
+ 
+  
+  
+  
+  
+  
+ 
+//end depthFirstTraversal  
+  
+The function depthFirstTraversal performs a depth-first traversal of the entire graph. The definition of the 
+function dftAtVertex, which

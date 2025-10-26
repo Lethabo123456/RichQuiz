@@ -1,0 +1,23 @@
+tree. If the record 
+is already in the tree, output an error messsage. If the record is not in the tree, the search terminates 
+at a leaf. The record is inserted into the leaf if there is room. If the leaf is full, split the node into two 
+nodes and the median record is moved to the parent node. The splitting can propogate upward even 
+as far as the root, causing the tree to increase in height.  
+  
+Exercises  
+  
+1. Mark the following statements as true or false.  
+a. A binary tree must be nonempty.  
+b. The level of the root node is 0.  
+c. If a tree has only one node, the height of this tree is 0 because the number of levels is 0.  
+d. The inorder traversal of a binary tree always outputs the data in ascending order.  
+  
+2. There are 14 different binary trees with four nodes. Draw all of them. The binary tree of Figure 9-34 is 
+to be used for Exercises 3 through 8.  
+  
+  
+FIGURE 9-34 Binary tree for Exercises 3 through 8  
+  
+3. Find LA, the node in the left subtree of A.  
+  
+4.

@@ -1,0 +1,25 @@
+ Log storage and disposal: 
+o How often are logs rotated or archived? 
+o How are the confidentiality, integrity, and availability of each type of log data 
+protected while in storage (at both the system level and the application level)? 
+o How long is each type of log data preserved (at both the system level and the 
+infrastructure level)? 
+o How is unneeded log data disposed of (at both the system level and the infrastructure 
+level)? 
+o How much log storage space is available (at both the system level and the 
+infrastructure level)? 
+o How are log preservation requests, such as a legal requirement to prevent the 
+alteration and destruction of particular log records, handled (for example, how the 
+impacted logs must be marked, stored, and protected)? 
+
+ Log analysis: 
+o How often is each type of log data analyzed (at both the system level and the 
+infrastructure level)? 
+o Who is able to access the log data (at both the system level and the infrastructure 
+level), and how are accesses logged? 
+o What should happen when suspicious activity or an anomaly is identified? 
+o How are the confidentiality, integrity, and availability of the results of log analysis (for 
+example, alerts, reports) protected while in storage (at both the system level and the 
+infrastructure level) and in transit? 
+o How does the organization handle inadvertent disclosures of sensitive information 
+recorded in logs, such as passwords or the contents of emails? 

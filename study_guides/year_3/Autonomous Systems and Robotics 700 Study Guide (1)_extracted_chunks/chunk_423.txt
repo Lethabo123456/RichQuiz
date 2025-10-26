@@ -1,0 +1,41 @@
+Explanation: 
+1. Camera Branch (CNN) 
+Input: RGB image (shape: 3×64×64) 
+Layers: 
+• Convolutional layers to extract spatial features 
+• ReLU activations to introduce non-linearity 
+• Flattened output 
+Purpose: Recognizes patterns, edges, obstacles, terrain. 
+
+2. LIDAR Branch (FC Layer) 
+Input: 1D array of distance readings (e.g., 64 points) 
+Layers: 
+• Fully connected layer with ReLU 
+Purpose: Understands the shape and spacing of nearby obstacles at medium range. 
+
+3. Ultrasonic Branch (FC Layer) 
+Input: 4 distance readings (front, back, left, right) 
+Layers: 
+• Fully connected layer with ReLU 
+Purpose: Detects very close obstacles like walls or furniture. 
+
+4. IMU Branch (FC Layer) 
+Input: 6-axis motion data (accelerometer + gyroscope) 
+Layers: 
+• Fully connected layer with ReLU 
+Purpose: Understands the robot’s movement or orientation (e.g., tilting, acceleration). 
+
+5. Fusion Layer 
+• All outputs from the four branches are concatenated into one vector. 
+• Passed through two fully connected layers: 
+o First with 128 units and ReLU 
+o Final layer with 4 units (one per possible action) 
+Purpose: Combines all sensor insights to decide an action like: 
+• Move forward 
+• Turn left 
+• Turn right 
+• Stop 
+
+6. Softmax Output 
+• Converts the final scores into probabilities over the four actions 
+• Ensures that the output reflects a confident, normalized decision

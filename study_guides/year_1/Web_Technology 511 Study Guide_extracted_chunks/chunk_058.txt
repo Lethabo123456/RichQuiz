@@ -1,0 +1,36 @@
+4.2 PARAGRAPHS 
+
+In a page that contains a large amount of text, you can separate text into different 
+paragraphs by using the P tag (paragraph), which has the following syntax: 
+     <P>Paragraph text</P> 
+<P> denotes the start and </P> indicates the end of a paragraph. The P tag leaves a 
+blank line before the next text. 
+ 
+ Line breaks
+To make some text appear on a new line you can use the BR tag (line break), which 
+has the following syntax: 
+
+<BR>
+The BR tagis an empty container. You can also
+use this tag to insert a blank line on a page. 
+The BR tag moves text to the next line, while 
+the P tag (paragraph) leaves one blank line 
+between texts on the page as shown in Exhibit
+0-3. 
+ 
+Exhibit 0-3: Use of the BR and P tags 
+ 
+Creating paragraphs and inserting line breaks 
+ 
+Here’s how                                 Here’s why
+-----------------------------------------------------------------------------------
+Observe the page                           The text on this page is continuous
+                                           without any line breaks. 
+-----------------------------------------------------------------------------------
+Open the source code                       You’ll create a paragraph on this page. 
+-----------------------------------------------------------------------------------
+Place the insertion point as shown         We have a large collection
+
+                                           To prepare to add the code to mark 
+                                           the text as a paragraph.
+-----------------------------------------------------------------------------------

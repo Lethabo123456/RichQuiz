@@ -1,0 +1,25 @@
+e variable name from the 
+rest of the string. You can use this curly bracket syntax to insert more complex variable values, such 
+as array element values and object properties.  
+  
+4.3 Other Ways To create Strings  
+You don ’ t have to assign a literal string value to create a string variable; you can assign the result of 
+any expression:  
+  
+$myString = $yourString;  
+$myString = “how “ . “are “ . “you?”;  
+$myString = ( $x > 100 ) ? “Big number” : “Small number”;  
+  
+In addition, many PHP functions return string values that you can then assign to variables (or 
+display in the browser).  
+  
+4.4 Finding The Length Of A String  
+Once you have a string variable, you can find out its length with the strlen() function. This function 
+takes a string value as an argument, and returns the number of characters in the string. For 
+example:  
+  
+$myString = “hello”;  
+echo strlen( $myString ) . “ < br / > ”; // Displays 5 
+echo strlen( “goodbye” ) . “ < br / > ”; // Displays 7  
+  
+strlen()

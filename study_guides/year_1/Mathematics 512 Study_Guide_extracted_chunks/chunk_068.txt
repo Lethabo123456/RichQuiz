@@ -1,0 +1,33 @@
+5.10 Integration of Rational Functions by Partial Fractions 
+Integration of rational functions by partial fractions is a fairly simple 
+integrating technique used to simplify one rational function into two or more 
+rational functions which are more easily integrated. 
+
+3/4 − 2/5 = 3(5)/4(5) − 2(4)/5(4) = 15−8/20 = 7/20  
+
+Think back to the steps taken when adding or subtracting fractions that do not 
+have the same denominator. First you find the lowest common multiple of the 
+two denominators and then cross multiply with the numerators accordingly. 
+Well the same process applies when dealing with polynomial fractions. e.g. 
+
+2/(𝑥+1) + 3/(𝑥−1) = 2(𝑥−1)/(𝑥+1)(𝑥−1) + 3(𝑥+1)/(𝑥+1)(𝑥−1)  
+  
+= 2𝑥−2+3𝑥+3/𝑥**2−1
+= 5𝑥+1/𝑥**2−1 
+
+Now by reversing this process we can simplify a function such as 
+5𝑥+1/𝑥**2−1 into two fractions 2/(𝑥+1) + 3/(𝑥−1) which are more easily integrated.
+
+
+This process is possible when the function is proper; that is the degree of the 
+numerator is less than the degree of the denominator. If the function is 
+improper; that is the degree of the numerator is greater than or equal to the 
+degree of the denominator, then we must first use long division to divide the 
+denominator into the numerator until we obtain a remainder, such that its 
+degree is less than the denominator. Then if possible the above process is used 
+to simplify the proper function. 
+To complete some of the problems in this section it will be useful to know the 
+table integral ∫𝑑𝑥/𝑥2+𝑎2 = 1/2 tan−1 (𝑥/𝑎) + C. 
+
+In general there are 4 cases to consider expressing a rational function as the 
+sum of two or more partial fractions. 

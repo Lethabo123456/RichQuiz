@@ -1,0 +1,38 @@
+2.2.2 Examples of Sensor Simulation in Autonomous Systems 
+2D LIDAR Simulation: Casting rays in a virtual 2D plane to generate a point cloud, as described in 
+prior responses, to test obstacle detection algorithms.  
+
+Camera Simulation: Rendering synthetic images with lighting, shadows, and textures to train 
+vision-based object detection models.  
+Radar Simulation: Modelling Doppler effects to simulate velocity measurements for moving 
+objects.  
+Inertial Sensor Simulation: Generating virtual acceleration and orientation data to test 
+localisation algorithms. 
+
+2.2.3 Applications of Sensor Simulations 
+Algorithm Development: Test perception algorithms (e.g., obstacle detection, SLAM) in varied 
+scenarios without physical hardware.  
+Training Machine Learning Models: Generate large datasets of synthetic sensor data for training 
+neural networks (e.g., for object detection or semantic segmentation). 
+
+2.3 Deep Dive into LiDAR Technology and Applications 
+
+Figure 10: LiDAR Scanning Visualisation for Autonomous Vehicle Perception 
+From self-driving cars to smart cities and advanced forest mapping, LiDAR has quietly become 
+one of the most powerful tools shaping the modern world. Short for "Light Detection and 
+Ranging," LiDAR is a remote sensing technology that uses laser light to measure distances, detect 
+objects, and create detailed 3D maps of environments—often with centimetre-level accuracy. 
+
+If you've ever wondered how autonomous vehicles detect obstacles in real-time, how engineers 
+survey complex terrains from aircraft, or how cities monitor vegetation around power lines, the 
+answer frequently involves LiDAR. This optical technology is often cited as a key method for 
+distance sensing in autonomous vehicles, with virtually all producers pursuing autonomous 
+driving considering LiDAR a crucial enabling technology. 
+
+The automotive industry has recognized LiDAR's critical importance, with many manufacturers 
+actively working to develop cost-effective, compact LiDAR systems to make this technology more 
+accessible and practical for widespread deployment. Some LiDAR systems are already available 
+for Advanced Driver Assistance Systems (ADAS), marking the beginning of broader integration 
+into everyday vehicles. As the technology continues to evolve and become more affordable, 
+LiDAR's influence on transportation, urban planning, and environmental monitoring will only 
+continue to expand. 

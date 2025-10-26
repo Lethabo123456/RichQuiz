@@ -1,0 +1,19 @@
+rtion of the list. The first time, we locate the smallest item in the 
+entire list. The second time, we locate the smallest item in the list starting from the 
+second element in the list, and so on. 
+ 
+Suppose you have the list shown in Figure below 
+ 
+ 
+Initially, the entire list is unsorted. So, we find the smallest item in the list. The smallest 
+item is at position 6, as shown in Figure (a). Because this is the smallest item, it must 
+be moved to position 0. So, we swap 16 (that is, list[0]) with 5 (that is, list[6]), as shown 
+in Figure (b). After swapping these elements, the resulting list is as shown in Figure(c). 
+2nd Iteration 
+Now the unsorted list is list[1]...list[7]. So, we find the smallest element in the unsorted 
+list. The smallest element is at position 3, as shown in (a). Because the smallest 
+
+139 | P a g e  
+ 
+element in the unsorted list is at position 3, it must be moved to position 1. So, we 
+swap 7 (that is, list[3]) with 30 (that is, list[1]), as shown in Figur

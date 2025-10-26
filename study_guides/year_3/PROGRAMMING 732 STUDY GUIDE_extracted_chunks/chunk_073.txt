@@ -1,0 +1,22 @@
+3.4 JAVA.SQL PACKAGE  
+  
+Many J2EE servers support distributed transactions that involve multiple databases. For example, you 
+could run a SQL statement on a Connection from one DataSource for an Oracle database, and run a SQL 
+statement on a Connection from a DataSource for a SQL Server database. If your J2EE server supports 
+distributed transactions, you can specify that thosetwo SQL statements are in the same transaction, and 
+must commit or rollback together. JDBC 2.0 added an interface called XADataSource to allow JDBC drivers 
+to support distributed transactions. As with the ConnectionPoolData Source, you should not need to 
+directly use the DADataSource class. If your JDBC driver and J2EE server support distributed transactions, 
+they should use this interface behind the scenes. You don’t have to write any special code for this purpose.  
+  
+3.4.1 The Application Layer  
+The Application layer encompasses three interfaces that are implemented at the Driver layer, but are used 
+by the application developer. In Java, the interface provides a means of using a general type to indicate a 
+specific class. The interface defines methods that must be implemented by the specific classes. For the 
+application developer, this means that the specific Driver class implementation is irrelevant; simply coding 
+to the standard JDBC APIs will be sufficient. (Of course, this is assuming that the driver is JDBCcompliant, 
+which means that the database is at least ANSI SQL-2 Entry Level). The three main interfaces are 
+Connection, Statement, and ResultSet. A Connection object is obtained from the driver implementation 
+through the DriverManager.getConnection ( ) method call. After a Connection object is returned, the 
+application developer may create a Statement object to issue SQL against the database. If the SQL that 
+was submitted was a SELECT query, the result set is returned in a ResultSet object.

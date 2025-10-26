@@ -1,0 +1,42 @@
+Code the ToggleButton 
+Coding the ToggleButton is relatively easy, if not somewhat tedious. It is easy 
+because you need only to enable or disable the interface. 
+It is tedious because each widget that the user could interact with 
+must be enabled or disabled separately. The ToggleButton’s functionality requires the creation of 
+three methods. One method will initialize the button to respond to the user. A second method will 
+enable all the data entry widgets, and the third will disable all the widgets. First enter the code in 
+Listing 4.8 in MainActivity.java after the navigation bar button code to initialize the ToggleButton. 
+Remember to import any items underlined in red. 
+
+Listing 4.8 - ToggleButton Initialization Method
+private void initToggleButton() {
+   final ToggleButton editToggle = (ToggleButton)findViewById(R.id.toggleButtonEdit);
+   editToggle.setOnClickListener(new OnClickListener() {
+   
+      @Override
+      public void onClick(View view) {
+      setForEditing(editToggle.isChecked());
+      }
+   });
+}
+
+The code is very similar to the navigation button initialization methods. A reference to the widget is 
+grabbed, and an onClickListener is added to the button. There are a few differences that require some explanation: 
+
+▪ Line 2—The final keyword is added to the statement that gets the reference to the 
+ToggleButton to prevent the variable assignment from changing. This is required because it is 
+being used in the button click code. It ensures that the widget referred to cannot change, so the 
+code is always working on the same thing. 
+▪ Line 7—The onClick method calls the setForEditing method, passing it true if the 
+button is toggled for editing and false if it is not. 
+The next step is to code the methods to do the 
+enabling and disabling of the form. Enter the code in Listing 4.9 to create the setForEditing() method. 
+Add the following two lines of code to the onCreate method to initialize the ToggleButton, and set the 
+screen so that it is not in editing mode when it opens: 
+
+initToggleButton();  
+setForEditing(false); 
+ 
+Run the app to test the button. It should not allow you to enter data until you tap the toggle button. 
+When the button reads “On,” you will be able to enter data.
+

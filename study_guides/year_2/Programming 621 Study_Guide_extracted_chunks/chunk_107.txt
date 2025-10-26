@@ -1,0 +1,19 @@
+TOPIC 4 FUNCTIONS 
+      
+4.1 INTRODUCTION  
+Functions are often called modules. They are like miniature programs; you can put 
+them together to form a larger program. When user-defined functions are discussed, 
+you will see that this is the case. This ability is less apparent with predefined functions 
+because their programming code is not available to us. However, because predefined 
+functions are already written for us, you will learn these first so that you can use them 
+when needed.  
+ 
+4.1.1 Predefined Functions    
+In algebra, a function can be considered a rule or correspondence between values, 
+called the function’s arguments, and the unique values of the function associated with 
+the arguments. Thus, if f (x)  =2x + 5, then f (1)  = 7 , f (2) =  9 , and f (3) = 11, where 
+1, 2, and 3 are the arguments of the function f, and 7, 9, and 11 are the corresponding 
+values of  f.      
+ 
+In C++, the concept of a function, either predefined or user-defined, is similar to that 
+of a function in algebra. For example, every function has a name and, depe

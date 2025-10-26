@@ -1,0 +1,20 @@
+ver, the existence of a 1:1 relationship sometimes means 
+that the entity components were not defined properly. It could indicate that the two entities actually 
+belong in the same table! Although 1:1 relationships should be rare, certain conditions absolutely 
+require their use.  
+The M:N Relationship 
+A many-to-many (M:N) relationship is not supported directly in the relational environment. 
+However, M:N relationships can be implemented by creating a new entity in 1:M relationships with 
+the original entities. To explore the M:N relationship, consider a typical college environment. The 
+ER model in Figure 3.23 shows this M:N relationship. 
+
+ 
+48 
+ 
+Note the features of the ERM in Figure 3.23.  
+• 
+Each CLASS can have many STUDENTs, and each STUDENT can take many CLASSes.  
+• 
+There can be many rows in the CLASS table for any given row in the STUDENT table, and 
+there can be many rows in the STUDENT table for any given row in the CLASS table. 
+However, M:N relationships should not be

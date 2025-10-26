@@ -1,0 +1,30 @@
+3.8 VLANS 
+
+A VLAN is a group of devices on one or more LANs that are configured to communicate as if they 
+were attached to the same wire, when in fact they are located on a number of different LAN 
+segments. Because VLANs are based on logical instead of physical connections, they are extremely 
+flexible. VLANs define broadcast domains in a Layer 2 network. A broadcast domain is the set of all devices 
+that will receive broadcast frames originating from any device within the set. Broadcast domains are 
+typically bounded by routers because routers do not forward broadcast frames. Layer 2 switches 
+create broadcast domains based on the configuration of the switch. Switches are multiport bridges 
+that allow you to create multiple broadcast domains. Each broadcast domain is like a distinct virtual 
+bridge within a switch. You can define one or many virtual bridges within a switch. Each virtual bridge you create in the 
+switch defines a new broadcast domain (VLAN). Traffic cannot pass directly to another VLAN 
+(between broadcast domains) within the switch or between two switches. To interconnect two 
+different VLANs, you must use routers or Layer 3 switches. See the "Overview of Layer 3 Interfaces" 
+section for information on inter-VLAN routing on Catalyst 4500 series switches. Figure below shows 
+an example of three VLANs that create logically defined networks. 
+ 
+Figure 59: Sample VLANs 
+VLANs are often associated with IP subnetworks. For example, all of the end stations in a particular 
+IP subnet belong to the same VLAN. Traffic between VLANs must be routed. You must assign LAN 
+interface VLAN membership on an interface-by-interface basis (this is known as interface-based or 
+static VLAN membership). 
+You can set the following parameters when you create a VLAN in the management domain: 
+ VLAN number 
+ VLAN name 
+ VLAN type 
+ VLAN state (active or suspended) 
+ Maximum transmission unit (MTU) for the VLAN 
+ Security Association Identifier (SAID) 
+ VLAN number to use when translating from one VLAN type to another 

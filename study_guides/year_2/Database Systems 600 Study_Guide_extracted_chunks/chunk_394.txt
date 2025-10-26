@@ -1,0 +1,14 @@
+regularly tuned. Database performance tuning 
+refers to a set of activities and procedures designed to reduce the response time of the database 
+system. 
+In general, the performance of a typical DBMS is constrained by three main factors: CPU 
+processing power, available primary memory (RAM), and input/output (hard disk and network) 
+throughput. Table 11.1 lists some system components and summarizes general guidelines for 
+achieving better query performance. 
+Fine-tuning the performance of a system requires a holistic approach. With that said, good database 
+performance starts with good database design. No amount of fine-tuning will make a poorly 
+designed database perform as well as expected. 
+What constitutes a good, efficient database design? From the performance-tuning point of view, the 
+database designer must ensure that the design makes use of features in the DBMS that guarantee 
+the integrity and optimal performance of the database. This chapter provides fundamental 
+knowledge

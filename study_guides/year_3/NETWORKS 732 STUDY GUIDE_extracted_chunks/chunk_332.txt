@@ -1,0 +1,25 @@
+TKIP was a quick ﬁx, designed more as an integrity check for WEP transmissions than as a 
+sophisticated encryption protocol. WPA’s TKIP uses the same encryption mechanism as WEP but 
+with improved algorithms to wrap the older WEP transmissions in a more securely encrypted 
+transmission. However, you’ll still ﬁnd modern wireless network devices oﬀering TKIP to provide 
+compatibility with older wireless clients. 
+
+WPA2 (Wi-Fi Protected Access, Version 2) 
+The data conﬁdentiality methods used in WPA were replaced by stronger technologies for the 
+updated version, WPA2, which can be enabled on most consumer-grade APs today. CCMP, which 
+is short for Counter Mode with CBC (Cipher Block Chaining) MAC (Message Authentication Code) 
+Protocol, improves wireless security for newer devices that can use WPA2. Acronyms within 
+acronyms are only the beginning of what makes this protocol so interesting.
+
+WPA2. Acronyms within 
+acronyms are only the beginning of what makes this protocol so interesting. Whereas TKIP was 
+meant to be backward-compatible as much as possible, CCMP is more future-focused. CCMP 
+helps ensure data conﬁdentiality with both encryption and packet authentication by providing 
+the following: 
+• Message integrity: CCMP includes CBC-MAC, which ensures incoming packets are, in 
+fact, coming from their declared source, and does so using the block cipher algorithm 
+AES, described next. 
+• Encryption: CCMP also uses AES (Advanced Encryption Standard), which provides faster 
+and more secure encryption than TKIP for wireless transmissions. AES relies on a more 
+sophisticated family of ciphers along with multiple stages of data transformation. 
+

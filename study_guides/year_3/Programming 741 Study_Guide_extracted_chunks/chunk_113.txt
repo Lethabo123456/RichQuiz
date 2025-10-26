@@ -1,0 +1,53 @@
+3.5 Properties 
+ 
+One of the underlying themes of object-oriented programming is encapsulation, which states 
+that the internal representation of an object is generally hidden; thus, member data are 
+defined with private access. Typically, the only way to access, inspect, or manipulate the 
+object’s data is through the object’s public methods. As you just read, many languages provide 
+mutators, or setters that enable the data to be changed. They provide accessors or getters 
+that enable the data to be retrieved. Another option is to define and use properties. C# 
+introduced properties. A property looks like a data field, but it does not directly represent a 
+storage location. Properties are more closely aligned to methods. They provide a way to 
+change or retrieve private member data. Example 3-5 is a simple example of defining a private 
+variable and a property in the C# programming language.
+
+Example 3-5 Properties 
+using System; 
+namespace RichField 
+{ 
+     class Student 
+     { 
+                private string name ; 
+  public string getName() 
+    { 
+        return name; 
+    } 
+public string setName(String fname) 
+    { 
+        return name =fname; 
+    } 
+   } 
+     class Program 
+     { 
+        static void Main(string[] args) 
+        { 
+            Student st = new Student(); 
+            // set accessor will invoke 
+            st.Name = st.setName("Danny"); 
+            // get accessor will invoke 
+            Console.WriteLine("Name: " + st.Name); 
+            // get accessor will invoke 
+            Console.ReadLine();  } }} 
+ 
+we defined a property called “Name” and we used a get accessor to return a property value 
+and set accessors to set a new value. Here, the value keyword in set accessor is used to define 
+a value that is being assigned by set accessor. 
+ 
+After the properties are defined, they can be used in other classes as if they were fields of 
+the object instantiated. When you define a property, you can define the set without the get 
+or the get without the set. It is not necessary to include both. The body of the get must return 
+a value of the property type. If you include only the get, the property is considered a read-
+only property because the value of the instance variable cannot be changed through the 
+property. The execution of the get is equivalent to reading the value of the field. After the set 
+property for a variable is defined, you can change the private instance variables data using 
+that property in any class that instantiates an object.

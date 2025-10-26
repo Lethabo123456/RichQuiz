@@ -1,0 +1,20 @@
+2   
+   
+2.5 Unit Summary   
+PHP scripts start to become much more useful when they can store data on a semi-permanent basis. 
+In this unit, you learned how to use three different techniques — query strings, cookies, and sessions 
+— to store data related to a particular user between page requests:   
+• 
+Query strings are simple to understand and use, but they are not at all secure so they are 
+best used for transmitting innocuous information.    
+• 
+Cookies are a step up from query strings, because you do no t have to pass data between 
+every single page request. Cookies can even persist when the browser is closed and 
+reopened. You looked at the anatomy of a cookie, and learned how to create cookies, read 
+cookies via the $_COOKIE  superglobal, and delete cookies.    
+• 
+Sessions have a couple of major advantages over cookies: they are more secure, and they do 
+not involve sending potentially large amounts of data to the server each time a page is 
+viewed.    
+• 
+You explored PHP ’ s

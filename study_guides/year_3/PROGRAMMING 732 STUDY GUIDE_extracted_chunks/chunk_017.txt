@@ -1,0 +1,16 @@
+1.2.9 Tabbed Panes  
+A tabbed pane is a component that appears as a group of folders in a file cabinet. Each folder has a title. 
+When a user selects a folder, its contents become visible. At a time only one of the folders may be selected. 
+Tabbed panes are commonly used for setting configuration options.  
+JtabbedPane class encapsulates the Tabbed panes which extends Jcomponent. Its default constructor is 
+used. Method used to define the Tabs is as follows: 
+ 
+Void addTab(String str, Component comp)   
+Where str is the title for the tab, and comp is the component that should be added to the tab. Typically, 
+a Jpanel or a subclass of it is added. The general procedure to use a tabbed pane in an applet is outlined 
+here:  
+  
+(a) Create a JTabbedPane object.  
+(b) Call addTab ( ) to add a tab to the pane.  
+(c) Repeat step (b) for each tab.  
+(d) Add the tabbed pane to the content pane of the applet.

@@ -1,0 +1,22 @@
+the algorithm. That is, we need to determine the average number of key comparisons 
+the sequential search algorithm makes in the successful case.  
+  
+To determine the average number of comparisons in the successful case of the sequential search 
+algorithm:  
+  
+1. Consider all possible cases.  
+2. Find the number of comparisons for each case.  
+3. Add the number of comparisons and divide by the number of cases.  
+  
+If the search item, called the target, is the first element in the list, one comparison is required. If the target 
+is the second element in the list, two comparisons are required. Similarly, if the target is the kth element 
+in the list, k comparisons are required. We assume that the target can be any element in the list; that is, 
+all list elements are equally likely to be the target. Suppose that there are n elements in the list. The 
+following expression gives the average number of comparisons:  
+
+259  
+  
+  
+It is known that  
+  
+Therefore, the following expression g

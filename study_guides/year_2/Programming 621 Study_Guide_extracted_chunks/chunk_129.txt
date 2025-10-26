@@ -1,0 +1,21 @@
+of its corresponding actual parameter 
+8. reference parameter receives the address (memory location) of its 
+corresponding actual parameter. 
+9. A constant value cannot be passed to a reference parameter 
+10. Variables declared outside of every function definition (and block) are called 
+global variables. 
+11. C++ does not allow the nesting of function definitions. 
+
+114 | P a g e  
+ 
+12. If a function is overloaded, then in a call to that function the formal 
+parameter list of the function determines which function to execute 
+ 
+ 
+1. Write a value-returning function, isVowel, that returns the value true if a given 
+character is a vowel and otherwise returns false. 
+2. Write a program that uses the function isPalindrome given in Example 6-6 
+(Palindrome). Test your program on the following strings: "madam", "abba", 
+"22", "67876", "444244", and "trymeuemyrt". 
+3. Write a program that find the area of a rectangle, the area of a circle, or the 
+volume of a cylinder. Your program must be

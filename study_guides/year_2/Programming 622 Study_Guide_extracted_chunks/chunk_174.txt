@@ -1,0 +1,29 @@
+the address of the second node. If no confusion arises, we will use the arrow notation 
+whenever we draw the figure of a linked list.  
+  
+For simplicity and for the ease of understanding and clarity, Figures 3-3 through 3-5 use decimal integers 
+as the values of memory addresses. However, in computer memory the memory addresses are in binary.  
+  
+Because each node of a linked list has two components, we need to declare each node as a class or struct. 
+The data type of each node depends on the specific application—that is, what kind of data is being 
+processed. However, the link component of each node is a pointer. The data type of this pointer variable 
+is the node type itself. For the previous linked list, the definition of the node is as follows. (Suppose that 
+the data type is int.)  
+  
+struct nodeType  
+ 
+{  
+  
+int info; nodeType 
+*link;  
+};  
+  
+The variable declaration is as follows:  
+  
+nodeType *head;  
+  
+ 
+FIGURE 3-4 Linked list with four nodes  
+  
+ 
+3.1.1  Linked Lis

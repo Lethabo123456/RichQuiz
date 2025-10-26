@@ -1,0 +1,24 @@
+Therefore, after deletion, both first and last 
+are set to NULL and count is set to 0.  
+  
+Suppose that the node to be deleted is the first node and list has more than one node. Then after deleting 
+this node, the second node becomes the first node. Therefore, after deleting the node the value of the 
+pointer first changes and it contains the address of the second node.  
+  
+ 
+Case 3:   
+The node to be deleted is not the first node, but is somewhere in the list.   
+  
+This case has two subcases: (a) the node to be deleted is not the last node, and (b) the node to be deleted 
+is the last node. Let us illustrate the first cases.  
+  
+ 
+Case 3a:   
+The node to be deleted is not the last node.  
+  
+Consider the list shown in Figure 3-21.  
+  
+FIGURE 3-21 list before deleting 37  
+  
+Suppose that the node to be deleted is 37. After deleting this node, the resulting list is as shown in Figure 
+3-22. (Notice that the deletion of 37 does not require us to change the values of first and last.

@@ -1,0 +1,22 @@
+it is all about the PHP functions for working with the file system. You learn:   
+• 
+More about files and directories, and how to find out more information about them in your 
+scripts   
+• 
+How to open and close files, as well as how to read data from, and write data to, files   
+• 
+The concept of file permissions and how to work with them   
+• 
+How to copy, move, and delete files   
+• 
+All about working with directories, including reading their contents, creating them, and 
+deleting them   
+   
+3.1 Understanding Files And Directories   
+Everything on your hard drive is stored as a file of one kind or another, although most folks think in 
+terms of files and directories. There are ordinary program files, data files, files that are directories, 
+and special files that help the hard drive keep track of the contents of folders and files. PHP has 
+functions that can work with any file type, but typically you will be working with text files that 
+contain data.   
+   
+The terms “ directory ”

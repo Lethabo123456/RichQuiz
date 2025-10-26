@@ -1,0 +1,14 @@
+everal times. For each iteration of 
+the loop, the search item is compared with an element in the list, and a few other statements are 
+executed, including some other comparisons. Clearly, the loop terminates as soon as the search itemis 
+found in the list. Therefore, the execution of the other statements in the loop is directly related to the 
+outcome of the key comparison. Also, different programmers might implement the same algorithm 
+differently, although the number of key comparisons would typically be the same. The speed of a 
+computer can also easily affect the time an algorithm takes to perform, but not the number of key 
+comparisons.  
+  
+Therefore, when analyzing a search algorithm, we count the number of key comparisons because this 
+number gives us the most useful information. Furthermore, the criteria for counting the number of key 
+comparisons can be applied equally well to other search algorithms.  
+  
+Suppose that L is list of length n. We want to determine the number o

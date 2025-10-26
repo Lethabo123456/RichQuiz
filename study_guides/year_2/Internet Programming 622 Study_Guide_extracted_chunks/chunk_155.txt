@@ -1,0 +1,18 @@
+a key to be formed in this way, the combination of values across the indexed fields 
+must be unique.   
+   
+Because an index brings about a significant boost in performance, you could create as many indexes 
+as possible for maximum performance gain, right? Not always. An index is a sure-fire way to increase 
+the speed of searching and retrieving data from a table, but it makes updating records slower, and 
+also increases the size of the table. This is because, when you insert a record into an indexed table, 
+the database engine also has to record its position in the corresponding index or indexes. The more 
+indexes, the slower the updating process and the larger the table.   
+   
+4.9 Introducing SQL Statements   
+To actually work with databases and tables, you use SQL statements. Common statements include:   
+• 
+SELECT — Retrieves data from one or more tables   
+• 
+INSERT — Inserts data into a table   
+• 
+REPLACE — Replaces data in a table. If the same record exists in the table, the s

@@ -1,0 +1,46 @@
+This illustrates that each object consists of data and operations on that data. An object 
+combines data and operations on the data into a single unit. In OOD, the final program 
+is a collection of interacting objects. A programming language that implements OOD 
+is called an object-oriented programming (OOP) language. 
+ 
+To work with objects, you need to know how to combine data and operations on the 
+data into a single unit. In C11, the mechanism that allows you to combine data and 
+operations on the data into a single unit is called a class. 
+ 
+Finally, or some problems, the structured approach to program design will be very 
+effective. Other problems will be better addressed by OOD. For example, if a problem 
+requires manipulating sets of numbers with mathematical functions, you might use the 
+structured-design approach and outline the steps required to obtain the solution. The 
+C11 library supplies a wealth of functions that you can use effectively to manipulate 
+numbers. On the other hand, if you want to write a program that would make a juice 
+machine operational, the OOD approach is more effective. C11 was designed 
+specially to implement OOD. Furthermore, OOD works well with structured design. 
+Both the structured-design and OOD approaches require that you master the basic 
+components of a programming language to be an effective programmer. 
+
+1.4 PROBLEM ANALYSIS-CODING-EXECUTION CYCLE   
+ 
+Programming is a process of problem solving. Different people use different 
+techniques to solve problems. Some techniques are nicely outlined and easy to follow. 
+They not only solve the problem, but also give insight into how the solution is reached. 
+These problem-solving techniques can be easily modified if the domain of the problem 
+changes. To be a good problem solver and a good programmer, you must follow good 
+problem solving techniques. One common problem-solving technique includes 
+analysing a problem, outlining the problem requirements, and designing steps, called 
+an algorithm, to solve the problem. 
+
+Algorithm: A step-by-step problem-solving process in which a solution is arrived at in 
+a finite amount of time.  
+
+In a programming environment, the problem-solving process requires the following 
+three steps:  
+ 
+1. Analyse and outline the problem and its solution requirements, and                    
+design an algorithm to solve the problem. 
+2. Implement the algorithm in a programming language, such as C11, and verify 
+that the algorithm works. 
+3. Maintain the program by using and modifying it if the problem domain changes. 
+ 
+Figure 1-1 summarizes the first two steps of this programming process. 
+
+FIGURE 1-1 Problem analysis-coding-execution cycle 

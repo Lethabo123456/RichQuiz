@@ -1,0 +1,28 @@
+3.3.3 Pair Programming  
+Another innovative practice that was introduced in XP is that programmers work in pairs to 
+develop the software. The programming pair sits at the same computer to develop the software. 
+However, the same pair do not always program together. Rather, pairs are created dynamically so 
+that all team members work with each other during the development process. 
+ 
+Pair programming has a number of advantages:  
+i. It supports the idea of collective ownership and responsibility for the system. This 
+reflects Weinberg’s idea of egoless programming where the software is owned by 
+the team as a whole and individuals are not held responsible for problems with 
+the code. Instead, the team has collective responsibility for resolving these 
+problems. 
+ 
+ii. It acts as an informal review process because each line of code is looked at by at 
+least two people. Code inspections and reviews are effective in discovering a high 
+percentage of software errors. However, they are time consuming to organize and, 
+typically, introduce delays into the development process. Pair programming is a 
+less formal process that probably doesn’t find as many errors as code inspections. 
+
+However, it is cheaper and easier to organize than formal program inspections. 
+ 
+iii. It encourages refactoring to improve the software structure. The problem with 
+asking programmers to refactor in a normal development environment is that 
+effort involved is expended for long-term benefit. An developer who spends time 
+refactoring may be judged to be less efficient than one who simply carries on 
+developing code. Where pair programming and collective ownership are used, 
+others benefit immediately from the refactoring so they are likely to support the 
+process.

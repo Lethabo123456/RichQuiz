@@ -1,0 +1,16 @@
+be designed to find 
+the Fibonacci number.  
+The obvious question becomes, which approach is better? There is no general answer, but there are some 
+guidelines. In addition to the nature of the solution, efficiency is the other key factor in determining the 
+better approach.  
+  
+When a function is called, memory space is allocated for its formal parameters and local variables. When 
+the function terminates, that memory space is deallocated. In this chapter, while tracing the execution of 
+recursive methods, we saw that every recursive call had its own set of parameters and local variables. 
+
+161  
+  
+That is, every recursive call required the system to allocate memory space for its formal parameters and 
+local variables, and then deallocate the memory space when the function exited. Even though we don’t 
+need to write program statements to allocate and deallocate memory, overhead is associated with 
+executing a recursive function, both in terms of memory space and execution time. Ther

@@ -1,0 +1,13 @@
+entities, and attributes using the techniques you learned in previous chapters. Then, 
+you apply normalization concepts to validate and further refine the model.  
+The main goal of normalization is to eliminate data anomalies by eliminating unnecessary or 
+unwanted data redundancies. This goal is achieved by using the concept of functional dependencies 
+to identify which attribute (or set of attributes) determines other attributes.  
+To get a better idea of the normalization process, consider the simplified reporting activities of a 
+construction company that manages several building projects. The base data in Figure 6.1 is 
+organized around projects, with each project having a single row to represent the data associated 
+with that project. The base data shows that a project has multiple employees assigned to it.  
+ 
+ 
+Note that the data in Figure 6.1 is unnormalized data and it does not conform to relational table 
+requirements and therefore is not suitable to handle data updates wel

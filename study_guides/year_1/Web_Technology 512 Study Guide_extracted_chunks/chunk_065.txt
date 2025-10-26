@@ -1,0 +1,20 @@
+t is called). The first line, the one that starts with var, needs a single equal sign (=). 
+This is because we are assigning a value of "Kenny" to the variable. In between the two 
+round brackets of the IF statement, however, you need two equal signs (==). They 
+mean "has a value of". You also need two curly brackets for IF statements. In between 
+the curly bracket is where your code goes. 
+ 
+Save your work and test the results in a browser. You should see the following printed 
+to your page: 
+First Name is Lungelo 
+ 
+So we have Kenny written twice. The first time is because we typed "Kenny" between 
+a pair of double quotes. The second time is because JavaScript writes whatever is in 
+the variable first_name. To see why you need two double equal symbols, delete one 
+of them from between the round brackets of the IF statements. Now change "Lungelo" 
+to "Lenny": 
+if ( first_name = "Lenny" )  
+{ 
+ 
+Save your changes and run the code again. This time, you'll see the following: 
+First Name

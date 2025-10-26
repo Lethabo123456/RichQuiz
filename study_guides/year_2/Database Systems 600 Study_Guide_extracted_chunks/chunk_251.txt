@@ -1,0 +1,30 @@
+e. The first table named in the FROM clause will be the left side, and the second 
+table named will be the right side. If three or more tables are being joined, the result of joining the 
+first two tables becomes the left side, and the third table becomes the right side. The left outer join 
+returns not only the rows matching the join condition (that is, rows with matching values in the 
+common column), but it also returns the rows in the left table with unmatched values in the right 
+table. The syntax is:  
+
+ 
+100 
+SELECT   
+column-list  
+FROM  
+ 
+table1  
+LEFT [OUTER] JOIN  
+table2  ON  
+join-condition  
+For example, the following query lists the product code, vendor code, and vendor name for all 
+products and includes those vendors with no matching products:  
+SELECT   
+P_CODE, VENDOR.V_CODE, V_NAME  
+FROM  
+ 
+VENDOR  
+LEFT JOIN  
+PRODUCT  
+ON  
+VENDOR. V_CODE = PRODUCT.V_CODE; 
+The right outer join returns not only the rows matching the join condition (that is, rows with 
+matching

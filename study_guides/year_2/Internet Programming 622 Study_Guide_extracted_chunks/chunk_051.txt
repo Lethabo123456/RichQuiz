@@ -1,0 +1,17 @@
+<input type=”checkbox” name=”newsletter” id=”newsletter” value=”yes” />   
+                          <label for=”comments”>Any comments?</label>   
+                          <textarea name=”comments” id=”comments” rows=”4” cols=”50”> </textarea>   
+   
+               <div style=”clear: both;”>   
+                         <input type=”submit” name=”submitButton” id=”submitButton”  value=”Send Details” 
+/>   
+                         <input type=”reset” name=”resetButton” id=”resetButton”                                      
+value=”Reset Form” style=”margin-right: 20px;” />               </div>   
+         </div>   
+       </form>   
+    </body>   
+</html>   
+   
+Next, save the following script as process_registration.php in your document root (the folder where 
+you placed registration.html), then open the registration.html URL in your Web browser. Fill in the 
+fields in the form, then click the Send Details button. If all goes well, you should see a page displ

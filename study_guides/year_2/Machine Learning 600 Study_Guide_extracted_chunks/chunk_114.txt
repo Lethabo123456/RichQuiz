@@ -1,0 +1,15 @@
+.3:  Bit image 
+6.6.2 Images in ML 
+Most of what we are doing with ML is feeding information, usually in number form, and 
+finding patterns that can then be defined into models. So, if we can convert image data into 
+a grid of numbers, what we are left with is a matrix grid of numbers that a ML algorithm can 
+train against. You will find that most of the ML examples use a fairly small grid of numbers; 
+images that are 16 × 16 and 28 × 28 pixels are used a lot. The reason for this is processing 
+time; if an image is too large, then it will take a long time, depending on machine 
+performance, to convert and process the image. When you are dealing with tens of thousands 
+of images, these processes can take hours. In most cases, it is prudent to be prepared and size 
+the images small enough for processing. It's also important to ensure that the image set is 
+using the same height and width in pixels.  
+ 
+6.7 Convolutional Neural Network (CNN) 
+CNN was introduced into the ML word in 1998 wh

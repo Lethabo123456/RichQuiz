@@ -1,0 +1,29 @@
+have printed the rightmost bit of 8, and so on. Thus, the binary 
+representation of 35 is the binary representation of 17 (that is, the quotient of 35 after division by 2), 
+followed by the rightmost bit of 35.  
+  
+Thus, to convert an integer num in base 10 into the equivalent binary number, we first convert the 
+quotient num / 2 into an equivalent binary number, and then append the rightmost bit of num to the 
+binary representation of num / 2.  
+  
+This discussion translates into the following recursive algorithm, where binary(num) denotes the binary 
+representation of num:  
+  
+1. binary(num) = num if num = 0.  
+2. binary(num) = binary(num / 2) followed by num % 2 if num > 0.  
+  
+The following recursive function implements this algorithm:  
+  
+void decToBin(int num, int base)  
+{  
+if (num > 0)  
+{  
+decToBin(num / base, base);  
+cout << num % base;  
+}  
+}   
+Figure 4-10 traces the execution of the following statement:  
+  
+decToBin(13, 2);  
+  
+where num is 13 and base is 2.

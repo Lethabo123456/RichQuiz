@@ -1,0 +1,22 @@
+ation 
+parameter is 39.99 and note that the interval includes the population mean of 39.99. 
+
+P a g e  | 108 
+ 
+I mentioned earlier that the confidence level was not a percentage of accuracy of our interval 
+but the percent chance that the interval would even contain the population parameter at all. 
+To better understand the confidence level, let's take 10,000 confidence intervals and see how 
+often our population mean falls in the interval. First, let's make a function, as illustrated, that 
+makes a single confidence interval from our breaks data: 
+ 
+ 
+def makeConfidenceInterval(): 
+    sample_size = 100 
+    sample = np.random.choice(a=breaks, size=sample_size) 
+    sample_mean = sample.mean()  # sample mean 
+    sample_stdev = sample.std()  # sample standard deviation 
+    sigma = sample_stdev / math.sqrt(sample_size)  # population Standard deviation estimate 
+    return stats.t.interval(alpha=0.95, df=sample_size-1, loc=sample_mean, scale=sigma) 
+ 
+ 
+Now that we have a function tha

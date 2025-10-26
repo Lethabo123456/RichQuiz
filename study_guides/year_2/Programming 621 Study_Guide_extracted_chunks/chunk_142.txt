@@ -1,0 +1,19 @@
+ay (the list) and 
+continue the search until either you find the item or no more data is left in the list to 
+compare with searchItem. 
+Consider the list of seven elements shown in Figure below 
+ 
+Suppose that you want to determine whether 27 is in the list. A sequential search 
+works as follows: First, you compare 27 with list[0], that is, compare 27 with 35. 
+Because list[0] ≠ 27, you then compare 27 with list[1], that is, with 12, the second item 
+
+135 | P a g e  
+ 
+in the list. Because list[1] ≠ 27, you compare 27 with the next element in the list, that 
+is, compare 27 with list[2]. Because list[2] = 27, the search stops. This search is 
+successful. 
+ 
+Let us now search for 10. As before, the search starts at the first element in the list, 
+that is, at list[0]. Proceeding as before, we see that, this time, the search item, which 
+is 10, is compared with every item in the list. Eventually, no more data is left in the list 
+to compare with the search item. This is an unsuccessful sea

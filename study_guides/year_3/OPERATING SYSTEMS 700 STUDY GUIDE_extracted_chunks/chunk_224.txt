@@ -1,0 +1,44 @@
+6.7. Role of the Operating System in Security 
+Because it has access to every part of the system, the operating system plays a key role in computer 
+system security. Any vulnerability at the operating system level opens the entire system to attack. 
+The more complex and powerful the operating system is, the more likely it is to have vulnerabilities 
+to attack. As a result, system administrators must remain on guard to arm their operating systems 
+with all the available defenses against attack and possible failure. 
+
+System Survivability 
+ 
+The definition of system survivability is “the capability of a system to fulfill its mission, in a timely 
+manner, in the presence of attacks, failures, or accidents” (Linger, 2002). 
+➢ The term system refers to any system. It’s used here in the broadest possible sense from 
+laptop to distributed system to supercomputer. 
+➢ A mission is a very high-level set of requirements or goals. 
+➢ In a timely manner, it refers to system response time, a critical factor for most systems. 
+➢ The terms attack, failure, and accident refer to any potentially damaging incident, regardless 
+of the cause, whether intentional or not. 
+
+Before a system can be considered survivable, it must meet all these requirements, especially with 
+respect to services that are considered essential to the organization in the face of adverse challenges. 
+The four key properties of survivable systems are resistance to attacks, recognition of attacks and 
+resulting damage, recovery of essential services after an attack, and adaptation and evolution of 
+system defense mechanisms to mitigate future attacks. 
+
+Backup and Recovery 
+ 
+Standard procedures for most computing systems include having sufficient backup and 4 recovery 
+policies in place and performing other archiving techniques. Many system managers use a layered 
+backup schedule. That is, they back up the entire system once a week, and only back up, daily, 
+the files that were changed that day. As an extra measure of safety, copies of complete system 
+backups are stored for three to six months in a safe off-site location. 
+Backups are essential when the system becomes unavailable because of a natural disaster or when a 
+computer virus infects the system. If the problem is discovered early, the administrator can run 
+eradication software and reload damaged files from your backup copies. Of course, any changes made 
+since the files were backed up will need to be regenerated. 
+
+Off-site backups are also crucial to disaster recovery. The disaster could come from anywhere. 
+Here are just a few of the threats: 
+
+• Water from firehoses being used to fight a fire upstairs 
+• Fire from an electrical connection 
+• Malfunctioning server 
+• Corrupted archival media 
+• Intrusion from unauthorized users

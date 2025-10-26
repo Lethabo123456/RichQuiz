@@ -1,0 +1,44 @@
+First-In First-Out 
+The first-in first-out (FIFO) page replacement policy will remove the pages that have been in 
+memory the longest, that is, those that were first in. The process of swapping pages is illustrated in 
+Figure 2.9. 
+ 
+• Step 1: Page A is moved into the first available page frame. 
+• Step 2: Page B is moved into the second available page frame. 
+• Step 3: Page A is swapped into secondary storage. 
+• Step 4: Page C is moved into the first available page frame. 
+• Step 5: Page B is swapped into secondary storage. 
+• Step 6: Page A is moved into the second available page frame. 
+
+Figure 2.9 
+ 
+Figure 2.9 First, Pages A and B are loaded into the two available page frames. When Page 
+C is needed, the first page frame is emptied so that C can be placed there. Then Page B is 
+swapped outso that Page A can be loaded there. 
+ 
+Figure 3.8 demonstrates how the FIFO algorithm works by following a job with four pages 
+(A, B, C, and D) as it is processed by a system with only two available page frames. The job 
+needs to have itspages processed in the following order: A, B, A, C, A, B, D, B, A, C, D. 
+ 
+When both page frames are occupied, each new page that is brought into memory will 
+cause an interruption and a page swap into secondary storage. A page interruption, which 
+we identify with an asterisk (*), is generated anytime a page needs to be loaded into 
+memory, whether a page is swapped out or not. Then, we count the number of page 
+interrupts and compute the failure rate andthe success rate. 
+ 
+The efficiency of this configuration is dismayed due to the limited number of page frames 
+available,there are 9-page interrupts out of 11-page requests. To calculate the failure rate, 
+we divide the number of interruptions by the number of page requests: 
+Failure-Rate = Number_of_Interrupts / Page_Requests_Made 
+ 
+The failure rate of this system is 9/11, which is 82 percent. Stated another way, the success 
+rate is 2/11, or 18 percent. A failure rate that is this high is often unacceptable. 
+We are not saying FIFO is bad. We chose this example to show how FIFO works, not to 
+diminish its appeal as a page replacement policy. The high-failure rate here was caused by 
+both the limited amount of memory available, and the order in which pages were requested by 
+the program. Because the job dictates the page order, this order cannot be changed by the 
+system, although the size of the mainmemory can be changed. However, buying more 
+memory may not always be the best solution especially when you have many users, and 
+each one wants an unlimited amount of memory. In otherwords, as explained later in this 
+chapter, there is no guarantee that buying more memory will always result in better 
+performance.

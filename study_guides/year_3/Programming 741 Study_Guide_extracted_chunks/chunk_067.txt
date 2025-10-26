@@ -1,0 +1,25 @@
+Calculate and reassign operators 
+Suppose you want to increment the mySalary variable by 5000. You can do this by writing: 
+mySalary = mySalary + 5000; 
+The addition happens before the assignment, and it is perfectly legal to assign the result back 
+to the original variable. Thus, after this operation completes, mySalary will have been 
+incremented by 5000. You can perform this kind of assignment with any mathematical 
+operator: 
+
+mySalary = mySalary * 5000; mySalary = mySalary - 5000; 
+and so forth. 
+
+The need to increment and decrement variables is so common that C# includes special 
+operators for self-assignment. Among these operators are += , -=, * =, /=, and %=, which, 
+respectively, combine addition, subtraction, multiplication, division, and modulus with self-
+assignment. Thus, you can alternatively write the previous examples as:  
+
+mySalary += 5000; 
+mySalary *= 5000; 
+mySalary -=  5000;
+
+The effect of this is to increment mySalary by 5000, multiply mySalary by 5000, and subtract 
+5000 from the mySalary variable, respectively. Because incrementing and decrementing by 1 
+is a very common need, C# (like C and C++ before it) also provides two special operators. To 
+increment by 1, use the ++ operator, and to decrement by 1, use the -- operator. Thus, if you 
+want to increment the variable myAge by 1 you can write:myAge++; 

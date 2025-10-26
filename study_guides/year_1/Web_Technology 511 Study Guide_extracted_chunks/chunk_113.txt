@@ -1,0 +1,21 @@
+7.5 ALIGMENT OF A TABLE OR CELL 
+A table, or text within a table, can be positioned in 
+a variety of ways by using the align attribute. You 
+use this attribute with the <table>, <tr>, and <td> 
+tags. To align the table to the right, or center of a 
+page, use the align attribute with the <table> tag. 
+Using the align attribute with the <tr> and <td> 
+tags aligns text within the table. The align attribute 
+is not supported in HTML5. 
+ 
+Exhibit 0-10: The use of ALIGN attribute to align data within the cells (surname) 
+ 
+7.6 IMAGES AND LINKS WITHIN CELLS 
+Adding images to a table breaks the monotony of text and communicates the 
+information clearly. You use the <img> tag to add images to a table, just as you would 
+anywhere else in an HTML file. You can add hyperlinks within a table when you 
+cannot provide all relevant information within the table. You use the <a> tag to add 
+a hyperlink within a cell as you would add any hyperlink on a page. 
+ 
+ 
+ 

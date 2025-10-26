@@ -1,0 +1,41 @@
+d) PHP 5.3 
+ 
+Answer: d 
+ 
+7. POSIX stands for 
+a) Portable Operating System Interface for Unix 
+b) Portable Operating System Interface for Linux 
+c) Portative Operating System Interface for Unix 
+d) Portative Operating System Interface for Linux 
+ 
+Answer: a 
+ 
+8. What will be the output of the following PHP code? 
+<?php 
+$text = "this is\tsome text that\nwe might like to parse."; 
+print_r(split("[\n\t]",$text)); 
+?> 
+ 
+a) this is some text that we might like to parse. 
+b) Array ( [0] => some text that [1] => we might like to parse. ) 
+c) Array ( [0] => this is [1] => some text that [2] => we might like to parse. ) 
+d) [0] => this is [1] => some text that [2] => we might like to parse. 
+ 
+Answer: d 
+ 
+ 
+
+9. Which of the following would be a potential match for the Perl-based regular expression 
+/fo{2,4}/ ? 
+i) fol 
+ii) fool 
+iii) fooool 
+iv) fooooool 
+a) Only i) 
+b) ii) and iii) 
+c) i), iii) and iv) 
+d) i) and iv) 
+ 
+Answer: b 
+ 
+10. Which among the following is/are not a metacharact

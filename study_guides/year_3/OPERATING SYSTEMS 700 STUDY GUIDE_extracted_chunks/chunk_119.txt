@@ -1,0 +1,30 @@
+3.8. Concurrent Processes 
+The multiprogramming techniques discussed in the previous section used only one CPU, one 
+processor, which was shared by several jobs or processes, which is called multiprogramming. In this 
+section, we look at an increasingly common situation, a computational device with several processors 
+working cooperatively together, called a multiprocessing system. 
+ 
+Parallel processing is a situation in which two or more processors operate in one system at the same 
+time and may or may not work on related activities. In other words, two or more CPUs execute 
+instructions simultaneously, and the Processor Manager must coordinate activities of each processor 
+while synchronizing the cooperative interactions among all of them. There are two primary benefits 
+to parallel processing systems: increased reliability and faster processing. 
+
+3.8.1 Typical Multiprocessing Configurations 
+Much depends on how the multiple processors are configured within the system. Three typical 
+configurations are master/slave, loosely coupled, and symmetric. 
+
+1. Master/Slave Configuration 
+The master/slave configuration is an asymmetric multiprocessing system. Think of it as a single- 
+processor system with additional slave processors, each of which is managed by the primary 
+master processor.
+
+Figure 3.7 
+ 
+The master processor is responsible for managing the entire system, all files, devices, memory, and 
+processors. Therefore, it maintains the status of all processes in the system, performs storage 
+management activities, schedules the work for the other processors, and executes all control 
+programs. This configuration is well suited for computing environments in which processing time 
+is divided between front-end and back-end processors; in these cases, the front-end processor 
+takes care of the interactive users and quick jobs, and the back-end processor takes care of those 
+with long jobs using the batch mode.

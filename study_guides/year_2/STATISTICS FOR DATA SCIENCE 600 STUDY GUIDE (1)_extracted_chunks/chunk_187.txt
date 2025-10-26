@@ -1,0 +1,21 @@
+val(alpha=0.95, df=sample_size-1, loc=sample_mean, scale=sigma) 
+ 
+ 
+Now that we have a function that will create a single confidence interval, let's create a 
+procedure that will test the probability that a single confidence interval will contain the true 
+population parameter, 39.99: 
+ 
+times_in_interval = 0 
+for i in range(10000): 
+    interval = makeConfidenceInterval() 
+    if 39.99 >= interval[0] and 39.99 <= interval[1]:  # if 39.99 falls in the interval 
+        times_in_interval += 1 
+print(times_in_interval / 10000)  # 0.9455 
+ 
+ 
+Success! We see that about 95% of our confidence intervals contained our actual population 
+mean. Estimating population parameters through point estimates and confidence intervals is 
+a relatively simple and powerful form of statistical inference. 
+Let's also take a quick look at how the size of confidence intervals changes as we change our 
+confidence level. Let's calculate confidence intervals for multiple confidence levels and look 
+at how large

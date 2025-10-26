@@ -1,0 +1,12 @@
+e 
+preferred way to deal with multivalued attributes. Creating a new entity in a 1:M relationship 
+with the original entity yields several benefits: it is a more flexible, expandable solution, and it 
+is compatible with the relational model! 
+Derived Attributes Finally, a derived attribute is an attribute whose value is calculated (derived) 
+from other attributes. The derived attribute need not be physically stored within the database; 
+instead, it can be derived by using an algorithm. A derived attribute is indicated in the Chen notation 
+by a dashed line that connects the attribute and the entity. (See Figure 4.6.) The Crow’s Foot 
+notation does not have a method for distinguishing the derived attribute from other attributes. 
+Derived attributes are sometimes referred to as computed attributes. The decision to store derived 
+attributes in database tables depends on the processing requirements and the constraints placed on 
+an application. The designer should be able to balance the de

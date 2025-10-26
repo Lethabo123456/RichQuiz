@@ -1,0 +1,30 @@
+Precondition: A statement specifying the condition(s) that must be true before the function is called.  
+  
+Postcondition: A statement specifying what is true after the function call is completed.  
+  
+The precondition and postcondition for the function inchesToCentimeters can be specified as follows:  
+  
+//Precondition: The value of inches must be nonnegative.  
+
+17  
+  
+//Postcondition: If the value of inches is < 0, the 
+function // returns -1.0; otherwise, the function returns 
+the // equivalent length in centimeters. double 
+inchesToCentimeters(double inches)  
+{  
+if (inches < 0)  
+{  
+cerr << "The given measurement must be nonnegative." << endl; return 
+-1.0;  
+}  
+else  
+return 2.54 * inches;  
+}  
+  
+In certain situations, you could use C++’s assert statement to validate the input. For example, the 
+preceding function can be written as follows:  
+  
+//Precondition: The value of inches must be nonnegative.  
+//Postcondition: If the value of inches is < 0, the 
+function //

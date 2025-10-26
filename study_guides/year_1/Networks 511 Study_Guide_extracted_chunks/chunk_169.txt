@@ -1,0 +1,19 @@
+3.4.6 HIDS 
+Host based intrusion detection (HIDS) refers to intrusion detection that takes place on a single host 
+system. Currently, HIDS involves installing an agent on the local host that monitors and reports on 
+the system configuration and application activity. Some common abilities of HIDS systems include 
+log analysis, event correlation, integrity checking, policy enforcement, rootkit detection, and 
+alerting. They often also have the ability to baseline a host system to detect variations in system 
+configuration. In specific vendor implementations these HIDS agents also allow connectivity to other 
+security systems. For example, Cisco CSA has the ability to send host data upstream to Cisco network 
+IPS devices, Checkpoint Integrity can be integrated with Checkpoint Secure Client (Client VPN), and 
+IBM Proventia Desktop is Cisco NAC certified. 
+
+HIDS Intrusion Prevention 
+Most HIDS packages now have the ability to actively prevent malicious or anomalous activity on the 
+host system. Due to the potential impact this can have on the end user, HIDS is frequently deployed 
+in "monitor only" mode initially. This enables the administrator to create a baseline of the system 
+configuration and activity. Active blocking of applications, system changes, and network activity is 
+limited to only the most egregious activities. Administrators can then tune the system policy based 
+on what is considered "normal activity". 
+

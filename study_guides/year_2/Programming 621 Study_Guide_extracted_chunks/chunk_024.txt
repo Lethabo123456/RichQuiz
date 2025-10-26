@@ -1,0 +1,36 @@
+To develop a program to solve a problem, you start by analyzing the problem. You 
+then design the algorithm; write the program instructions in a high-level language, or 
+code the program; and enter the program into a computer system. Analyzing the 
+problem is the first and most important step. This step requires you to do the following: 
+ 
+1. Thoroughly understand the problem.  
+ 
+2. Understand the problem requirements. Requirements can include whether 
+the program requires interaction with the user, whether it manipulates data, 
+whether it produces output, and what the output looks like. If the program 
+manipulates data,  
+the programmer must know what the data is and how it is represented. That 
+is, you need to look at sample data. If the program produces output, you 
+should know how the results should be generated and formatted.  
+ 
+. If the problem is complex, divide the problem into subproblems and repeat 
+Steps 1 and 2. That is, for complex problems, you need to analyze each 
+subproblem and understand each sub problem’s requirements. 
+ 
+After you carefully analyze the problem, the next step is to design an algorithm to solve 
+the problem. If you break the problem into subproblems, you need to design an 
+algorithm for each subproblem. Once you design an algorithm, you need to check it 
+for correctness. You can sometimes test an algorithm’s correctness by using sample 
+data. At other times, you might need to perform some mathematical analysis to test 
+the algorithm’s correctness. 
+ 
+Once you have designed the algorithm and verified its correctness, the next step is to 
+convert it into an equivalent programming code. You then use a text editor to enter the 
+programming code or the program into a computer. Next, you must make sure that the 
+program follows the language’s syntax. To verify the correctness of the syntax, you 
+run the code through a compiler. If the compiler generates error messages, you must 
+identify the errors in the code, remove them, and then run the code through the 
+compiler again. When all the syntax errors are removed, the compiler generates the 
+equivalent machine code, the linker links the machine code with the system’s 
+resources, and the loader places the program into main memory so that it can be 
+executed.

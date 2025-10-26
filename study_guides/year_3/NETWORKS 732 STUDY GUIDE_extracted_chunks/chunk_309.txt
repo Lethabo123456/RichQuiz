@@ -1,0 +1,41 @@
+6.5 Wireless Transmission and Reception through Antennas 
+The air provides no ﬁxed path for signals to follow, so signals travel without guidance. Contrast 
+this to wired media, such as STP or ﬁber-optic cable, which do provide a ﬁxed signal path. The 
+lack of a ﬁxed path requires wireless signals to be transmitted, received, controlled, and corrected 
+diﬀerently than wired signals. Part of this work is done at a hardware level. 
+Just as with wired signals, wireless signals originate from electrical current traveling along a 
+conductor. The electrical signal travels from the transmitter to an antenna, which then emits the 
+signal as a series of electromagnetic waves into the atmosphere. The signal moves through the 
+air and eventually reaches (or rather, passes) its destination. At the destination, another antenna 
+detects the signal going by, and a receiver converts it back to current. 
+ 
+Figure 6.6 Wireless transmission and reception (West, 2002) 
+
+Notice that antennas are used for both the transmission and reception of wireless signals. As you 
+might expect, to exchange information, two antennas must be tuned to the same frequency so 
+they can communicate on the same channel. Thus, each type of wireless service requires an 
+antenna speciﬁcally designed for that service. The service’s speciﬁcations determine the 
+antenna’s power output, frequency, and radiation pattern. An antenna’s radiation pattern 
+describes the relative strength over a three-dimensional area of all the electromagnetic energy 
+the antenna sends or receives. 
+Radiation patterns can be used to classify antennas into two basic categories: 
+• Directional antenna (also called a unidirectional antenna): Issues wireless signals along a 
+single direction. This type is used when the source needs to communicate with one 
+destination, as in a point-to-point link or in a speciﬁc area. A satellite downlink (for 
+example, the kind used to receive digital TV signals) uses directional antennas. 
+• Omnidirectional antenna: Issues and receives wireless signals with equal strength and 
+clarity in all directions, although in the real world, an omnidirectional antenna is never 
+perfectly balanced. This type is used when many receivers or mobile receivers must be 
+able to pick up the signal in many directions. TV and radio stations use omnidirectional 
+antennas, as do most towers that transmit cellular signals and most mobile devices 
+The geographical area that an antenna or wireless system can reach is known as range. Receivers 
+must be located within a transmitter’s range to receive accurate signals consistently. Even within 
+an antenna’s range, however, signals may be hampered by obstacles and rendered unintelligible. 
+
+Choosing the correct type of antenna for the application can help solve the problem. Typical users 
+might not put much thought into a wireless device’s antenna, as the antenna is usually attached 
+directly to the device or even embedded within it (such as with a smartphone or laptop). 
+However, network technicians need to be more aware of what antennas devices have, and they 
+also need some basic knowledge on other types of antennas and how to work with them. 
+ 
+ 

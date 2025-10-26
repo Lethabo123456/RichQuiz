@@ -1,0 +1,45 @@
+1. Open the project you worked on in 
+previous Chapter or the project that you 
+downloaded from the website. 
+2. Right-click com.example.mycontactlist in 
+the java folder of the Package Explorer. 
+3. Select New > Java Class and enter ContactDBHelper as the name of the new class and click OK. 
+4. Type the code in Listing 5.3 into the new class. 
+
+The code is relatively standard and all that is needed to create the SQLite database and the one table  
+required for the MyContactList app. It can be copied and modified for other apps. The code and its 
+potential modifications are described as follows: 
+▪ Line 6—The class ContactDBHelper is declared as a subclass of SQLiteOpenHelper. Most of its 
+functionality is inherited from this class. 
+▪ Line 8—A static variable is declared to name the database file. A database name is required. Use 
+the .db extension. 
+▪ Line 9—A static variable to hold the database version number is declared and initialized to 1. 
+This variable is important. Every time the database is accessed, the existing database version is 
+compared to the one here. If the number is higher, the onUpgrade method is executed. The number 
+is incremented by the developer when they need to upgrade an existing database. 
+▪ Lines 12–17—A string variable is declared and assigned to a SQL command that creates the table. 
+It is good practice to define the table definitions in this manner, so that when a change to a table 
+needs to be made, all you have to do is change the definition in one place and increment the version 
+number. Declare a similar variable for each table needed in your database. 
+▪ Lines 19–21—The constructor method calls the super class’s constructor method. Nothing else 
+needs to be done in this method. The constructor creates a new instance of ContactDBHelper. 
+▪ Lines 23–26—The onCreate method is called the first time the database is opened. If the 
+database named in the DATABASE_NAME variable does not exist, this method is executed. The 
+method executes the SQL assigned to the CREATE_TABLE_CONTACT variable. 
+▪ Lines 28–35—The onUpgrade method is executed when the database is opened and the current 
+version number in the code is higher than the version number of the current database. This method 
+first deletes the contact table and then executes the onCreate method to create a new version of 
+the table. 
+
+Carefully planning the data needed by your app is important so that you don’t have to use 
+this method much. What happens in this method is entirely up to the developer. Care must be taken, 
+because if a table is dropped, all the user data currently in the table is lost. If you need to add 
+columns to the table, consider executing an ALTER TABLE SQL command rather than a drop, and re- 
+create the table. The Log command writes a message to LogCat, which is a system for collecting and 
+viewing system debug information. You can view LogCat by selecting Window > Show View > Other… 
+> LogCat. This command may be eliminated if you prefer. 
+
+A database helper class is recommended practice in Android. The primary function of the class is to 
+determine what must be done upon creation of the database and what must be done when the 
+database is upgraded. The next step is to create a class that opens and closes the database and 
+contains the queries used to store and retrieve data from the database.

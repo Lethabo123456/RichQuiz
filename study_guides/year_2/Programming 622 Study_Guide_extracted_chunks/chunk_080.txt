@@ -1,0 +1,20 @@
+pe(int hours, int minutes, int seconds)  
+{  
+setTime(hours, minutes, seconds);  
+}  
+  
+Once a class is properly defined and implemented, it can be used in a program. A program or software 
+that uses and manipulates the objects of a class is called a client of that class.  
+  
+When you declare objects of the class clockType, every object has its own copy of the instance variables 
+hr, min, and sec. In object-oriented terminology, variables such as hr, min, and sec are called instance 
+variables of the class because every object has its own instance of the data.  
+  
+ 
+1.4.6  Reference Parameters and Class Objects (Variables)  
+  
+Recall that when a variable is passed by value, the formal parameter copies the value of the actual 
+parameter. That is, memory to copy the value of the actual parameter is allocated for the formal 
+parameter. As a parameter, a class object can be passed by value.  
+  
+Suppose that a class has several instance variables requiring a large amount of memory to s

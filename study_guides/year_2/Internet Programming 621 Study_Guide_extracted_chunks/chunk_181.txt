@@ -1,0 +1,16 @@
+nning Web server software, such as Apache or Internet Information Server  
+(IIS).  
+The PHP server module installed on the same computer. This module talks to the Web server 
+software; this is the PHP engine that actually does the work of running your PHP scripts.  
+If you want to build database - driven Web applications — and you probably will — you also 
+need a database server installed. Options include MySQL, PostgreSQL, and SQL Server. This 
+Learner Guide mostly refers to using MySQL, so that is the database server that you will 
+install here.  
+
+89  
+  
+Many combinations of operating system and Web server software (not to mention versions of PHP) 
+are available. For example, operating systems that can run PHP include Linux, Windows, and Mac OS 
+X, and Web server software includes Apache, IIS, and Zeus. To keep things simple, this section 
+concentrates on installing PHP and Apache on Microsoft Windows because this is the platform on 
+which nearly all students work their skills an

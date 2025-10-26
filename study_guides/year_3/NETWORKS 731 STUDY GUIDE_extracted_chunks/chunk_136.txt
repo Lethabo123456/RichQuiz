@@ -1,0 +1,34 @@
+OpenVPN 
+OpenVPN is a fairly new open-source technology that uses the Open SSL library and 
+SSLv3/TLSv1 protocols, along with an amalgam of other technologies, to provide a strong and 
+reliable VPN solution. One of its major strengths is that it is highly configurable, and although 
+it runs best on a UDP port, it can be set to run on any port, including TCP port 443. This makes 
+traffic on it impossible to tell apart from traffic using standard HTTPS over SSL (as used by for 
+example Gmail), and it is therefore extremely difficult to block. 
+ 
+Another advantage of OpenVPN is that the Open SSL library used to provide encryption 
+supports a number of cryptographic algorithms (e.g. AES, Blowfish, 3DES, CAST-128, Camellia 
+and more), although VPN providers almost exclusively use either AES or Blowfish. 128-bit 
+Blowfish is the default cipher built into OpenVPN, and although generally considered secure, 
+it does have known weaknesses, and even its creator was quoted in 2007 as saying ‘at this 
+point, though, I’m amazed it’s still being used. If people ask, I recommend Twofish instead’. 
+
+AES is the newer technology, has no known weaknesses, and thanks to its adoption by the US 
+government for use in protecting ‘secure’ data, is generally considered the ‘gold standard’ 
+when it comes to encryption. The fact that it has a 128-bit block size rather than Blowfish’s 
+64-bit block size also means that it can handle larger (over 1 GB) files better than Blowfish. 
+However, both ciphers are NIST certified, which while not widely recognized as problem, we 
+have issues with. 
+
+How fast OpenVPN performs depends on the level of encryption employed, although 
+technically speaking IPSec is faster than OpenVPN because encryption/decryption is 
+performed in the kernel, and because it allows for multi-threading, which OpenVPN does not. 
+ 
+OpenVPN has become the default VPN connection type, and while natively supported by no 
+platform, is widely supported on most through third party software (including both iOS and 
+Android). Compared to PPTP and L2TP/IPsec, OpenVPN can be a bit fiddly to set up (although 
+this is a very subjective judgement.) When using generic OpenVPN software in particular (such 
+as the standard open source OpenVPN client for Windows), it is necessary to not only 
+download and install the client, but also to download and setup additional configuration files. 
+Many VPN providers get around this configuration problem by supplying customized VPN 
+clients.

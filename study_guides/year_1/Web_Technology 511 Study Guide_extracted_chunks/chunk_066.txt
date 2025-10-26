@@ -1,0 +1,39 @@
+4.7 USING HORIZONTAL RULERS 
+You can divide the text on a page into different sections by inserting a horizontal rule 
+to increase the readability of the page. Inserting a horizontal rule creates a dividing 
+line on a page as shown in 
+ 
+Exhibit 0-5: A horizontal rule on The internet page 
+ 
+Horizontal rule 
+A horizontal rule is a line that extends across the page. You insert a horizontal rule on a page by using the 
+<hr> tag (horizontal rule). This tag also support global attribute. The following tag is used to insert 
+horizontal rule on a web page: 
+<HR> 
+This is an empty container. 
+
+Inserting a horizontal rule 
+ 
+Here’s how                               Here’s why 
+Open the source code                     You’ll insert a horizontal rule on this
+                                         page. 
+---------------------------------------------------------------------------------
+Place the insertion point as shown       <body>
+                                            <h1>The internet</h1>
+                                             
+                                            <p>
+                                            The internet started as a
+                                         
+                                         To prepare to add the code to insert a 
+                                         horizontal rule on the page. 
+----------------------------------------------------------------------------------
+Enter the following code:                To insert a horizontal rule on the page.        
+
+<HR> 
+----------------------------------------------------------------------------------
+Update and close the source code 
+----------------------------------------------------------------------------------
+Refresh the page
+----------------------------------------------------------------------------------
+Observe the page                         A horizontal rule appears on the page.
+----------------------------------------------------------------------------------

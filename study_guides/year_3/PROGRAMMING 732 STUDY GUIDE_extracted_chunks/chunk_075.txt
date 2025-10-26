@@ -1,0 +1,51 @@
+3.4.2 The Connection Interface  
+The Connection interface represents a session with the database connection provided by the Driver. 
+Typical database connections include the ability to control changes made to the actual data stored 
+through transactions. On creation, JDBC connections are in an auto-commit mode. There is no rollback 
+possible. After getting a Connection object from the driver, the developer should consider setting auto 
+commit to false with the SetAutoCommit (Boolean b) method. When auto-commit is disabled, the 
+Connection will support both Connection.commit( ) and Connection.rollback( ) method calls. The level of 
+support for transaction isolation depends on the underlying support for transactions in the database. A 
+portion of the connection interface definition follows. As usual, SQLException is thrown in case of trouble 
+with the remote database.  
+  
+a) Statement createStatement ( ) throws SQLException.  
+The Connection object implementation will return an instance of an implementation of a Statement 
+object. The Statement object is then used to issue queries.  
+  
+b) PreparedStatement prepareStatement (String sql) throws SQL Exception  
+The Connection object implementation will return an instance of a PreparedStatement object that is 
+configured with the SQL string passed. The driver may then send the statement to the database, if the 
+database (driver) handles precompiled statements; otherwise, the driver may wait until the 
+PreparedStatement is executed by an execute method.   
+c) CallableStatment prepareCall (String sql) throws SQLException   
+The Connection object implementation will return an instance of a CallableStatement. Callable Statements 
+are optimized for handling stored procedures. The driver implementation may send the sql string 
+immediately when prepareCall ( ) is complete or may wait until an execute method occurs.  
+d) void setAutoCommit (Boolean autoCommit) throws SQLException   
+Sets a flag in the driver implementation that enables commit/rollback (false) or makes all transactions 
+commit immediately (true).  
+e)  void commit ( ) throws SQLException  
+Makes all changes made since the beginning of the current transaction (either since the opening of the 
+Connection or since the last commit ( ) or roll back ( ) ).  
+f)  void rollback ( ) throws SQLException  
+Drops all changes made since the beginning of the current transaction. The primary use of the Connection 
+interface is to create a statement:
+
+Connection conn;  
+Statement stmt;  
+conn = DriverManager.getConnection (url); Connectivity 
+stmt = c.createStatement ( );   
+
+This statement may be used to send SQL statements that return a single result set in a ResultSet object 
+reference. Statements that need to be called a number of times with slight variations may be executed 
+more efficiently using a PreparedStatement. The Connection interface is also used to create a 
+CallableStatement whose purpose is to execute stored procedures. Most of the time, the developer knows 
+the database schema before hand and creates the application based on the schema; however, JDBC 
+provides an interface that may be used to dynamically determine the schema of a database. The 
+Connection interface getMetaData ( ) method will return a DatabaseMetaData object. The instance of the 
+class that implements the interface provides information about the database as a whole, including access 
+information about tables and procedures, column names, data types, and so on. The implementation 
+details of DatabaseMetaData are dependent on the database vendor.s ability to return this type of 
+information.
+ 

@@ -1,0 +1,31 @@
+3.5  Types of virtualization 
+The process of virtualization can be classified into the following depending on the resource that is 
+being virtualized; 
+
+Server virtualization 
+In this type of virtualization, existing physical servers are moved into a virtual environment which is 
+then hosted on a physical server. Modern servers can host more than one server simultaneously which 
+allows the users to reduce the number of servers to be reserved for various purposes.   
+ 
+Operating System (OS) virtualization 
+
+Operating system-based virtualization is the installation of virtualization software in a pre-existing 
+operating system, which is called the host operating system. Since the host operating system can 
+provide hardware devices with the necessary support, operating system virtualization can rectify 
+hardware compatibility issues even if the hardware driver is not available to the virtualization 
+software. A concern with operating system-based virtualization is the processing overhead required 
+to run the virtualization software and host operating systems. Implementing a virtualization layer will 
+negatively affect overall system performance. Estimating, monitoring, and managing the resulting 
+impact can be challenging because it requires expertise in system workloads, software and hardware 
+environments, and sophisticated monitoring tools. 
+
+Memory virtualization 
+In main memory virtualization, the virtual main memory that is abstracted from the physical memory 
+is allocated to various virtual machines to meet their memory requirements. The mapping of physical 
+to virtual memory is performed by the hypervisor software. 
+ 
+Storage virtualization 
+Multiple physical hard drives are combined into a single virtualised storage environment. To different 
+users, this is simply called “cloud storage”, and it could either be private storage (hosted by a 
+company), or a public storage (hosted outside of a company), or mixed approach (i.e. private and 
+public storage).  

@@ -1,0 +1,13 @@
+r, while other times the tree at a particular node is reconstructed. The following 
+steps describe what to do to a node on the path back to the root node. (As in the case of insertion, we use 
+the bool variable shorter to indicate whether the height of the subtree is reduced.) Let p be a node on the 
+path back to the root node. We look at the current balance factor of p.  
+  
+1. If the current balance factor of p is equal high, the balance factor of p is changed according to if 
+the left subtree of p was shortened or the right subtree of p was shortened. The variable shorter 
+is set to false.  
+2. Suppose that the balance factor of p is not equal and the taller subtree of p is shortened. The 
+balance factor of p is changed to equal high, and the variable shorter is left as true.  
+3. Suppose that the balance factor of p is not equal and the shorter subtree of p is shortened. Further 
+suppose that q points to the root of the taller subtree of p.  
+a. If the balance factor of q is equal,

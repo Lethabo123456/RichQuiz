@@ -1,0 +1,26 @@
+The following table shows the difference between XML and HTML: 
+ 
+XML                                       HTML 
+User definable tags                       Defined set of tags designed for web display 
+Content driven                            Format driven 
+End tags required for well-formed         End tags not required 
+documents  
+Quotes required around attributes values  Quotes not required 
+Slash required in empty tags              Slash not required 
+ 
+2.4 CODING APPROACHES 
+There are three types of coding approaches that you can use to develop Web pages. 
+The following list explains these coding types: 
+
+ Lowest common denominator coding: although it may seem difficult to create 
+pages that always display properly, it is not impossible. One way to create portable 
+pages is to use a lowest common denominator approach. This approach provides the 
+greatest acceptance across browsers because the authors choose to code their HTML 
+using the next-to-last release of HTML. For example, when the browsers supporting 
+HTML 5 in 2012 were released, many continued coding to the HTML 4.01 and XHTML 
+standard, knowing that their HTML would render more consistently because the 
+browsers understood all of the 4.01 specifications. This safer method of coding is 
+widely supported among sites that are interested in the greatest accessibility. 
+Maintaining coding specifications of a previous release of HTML does not mean that 
+your site has to be visually uninteresting, although you may have to sacrifice using the 
+latest enhancements.

@@ -1,0 +1,37 @@
+st as an ADT and specifies the basic operations on a doubly linked 
+list:  
+  
+
+125  
+  
+//**********************************************************
+* // This class specifies the members to implement the basic // properties 
+of an ordered doubly linked list.  
+//***********************************************************  
+//Definition of the node template 
+<class Type>  
+struct nodeType  
+{  
+Type info; nodeType<Type> 
+*next;  
+nodeType<Type> *back;  
+};  
+  
+template <class Type> class 
+doublyLinkedList  
+{  
+public:  
+const doublyLinkedList<Type>& operator=(const doublyLinkedList<Type> &); //Overload 
+the assignment operator.  
+  
+void initializeList();  
+//Function to initialize the list to an empty state.  
+//Postcondition: first = NULL; last = NULL; count = 0;  
+  
+bool isEmptyList() const;  
+//Function to determine whether the list is empty. 
+//Postcondition: Returns true if the list is empty, // 
+otherwise returns false.  
+  
+void destroy();  
+//Function to delete all the node

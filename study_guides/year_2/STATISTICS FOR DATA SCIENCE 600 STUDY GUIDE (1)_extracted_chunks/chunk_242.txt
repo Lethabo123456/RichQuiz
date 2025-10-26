@@ -1,0 +1,36 @@
+rs  
+  
+To interpret:  
+  
+  
+ 
+ 
+ 
+ 
+ 
+
+P a g e  | 144 
+ 
+ 
+6.4.4 Adding more predictors (Multiple linear regression) 
+  
+Adding more predictors to the model is as simple as telling the linear regression model in 
+scikit-learn about them!  
+Before we do, we should look at the data dictionary provided to us to make more sense out 
+of these predictors:  
+• season: 1 = spring, 2 = summer, 3 = fall, 4 = winter  
+• holiday: Whether the day is considered a holiday  
+• workingday: Whether the day is a weekend or holiday  
+• weather: 1. Clear, Few clouds, partly cloudy  
+               2. Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist 
+               3. Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain +   
+Scattered clouds. 
+                4. Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog 
+  
+• temp: Temperature in Celsius. 
+•  atemp: Feels like temperature in Celsius. 
+
+P a g e  | 145 
+ 
+•  humidity: Relative humidity. 
+•  windspeed: Wind speed.

@@ -1,0 +1,29 @@
+Dimensionality Reduction, Feature Extraction, and Manifold Learning 
+Not to be confused with the much larger MNIST dataset. Manifold learning algorithms are mainly aimed 
+at visualization, and so are rarely used to generate more than two new features. Some of them, including 
+t-SNE, com- pute a new representation of the training data, but don’t allow transformations of new data. 
+This means these algorithms cannot be applied to a test set: rather, they can only transform the data 
+they were trained for. Manifold learning can be useful for explora- tory data analysis, but is rarely used if 
+the final goal is supervised learning. 
+
+The idea behind t-SNE is to find a two-dimensional representation 
+of the data that preserves the distances between points as best as possible. t-SNE starts with a random 
+two-dimensional representation for each data point, and then tries to make points that are close in the 
+original feature space closer, and points that are far apart in the original feature space farther apart. t-
+SNE puts more emphasis on points that are close by, rather than preserving distances between far-apart 
+points. In other words, it tries to preserve the information indicating which points are neighbors to each 
+other. We will apply the t-SNE manifold learning algorithm on a dataset of handwritten dig- its that is 
+included in scikit-learn. 2 Each data point in this dataset is an 8×8 gray- scale image of a handwritten digit 
+between 0 and 1. Figure below shows an example image for each class: 
+ 
+Let’s apply t-SNE to the same dataset, and compare the results. As t-SNE does not support transforming 
+new data, the TSNE class has no transform method. Instead, we can call the fit_transform method, which 
+will build the model and immediately return the transformed data: 
+
+The result of t-SNE is quite remarkable. All the classes are quite clearly separated. The ones and nines 
+are somewhat split up, but most of the classes form a single dense group. Keep in mind that this method 
+has no knowledge of the class labels: it is com- pletely unsupervised. Still, it can find a representation of 
+the data in two dimensions that clearly separates the classes, based solely on how close points are in the 
+original space. The t-SNE algorithm has some tuning parameters, though it often works well with the 
+default settings. You can try playing with perplexity and early_exaggeration, but the effects are usually 
+minor.

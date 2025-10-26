@@ -1,0 +1,55 @@
+6.7 802.11 Innovations 
+
+Although some of their physical layer services vary, all the 802.11 standards use half-duplex 
+signalling. In other words, an antenna on a wireless node using one of the 802.11 techniques can 
+either transmit or receive, but it cannot do both simultaneously unless the node has more than 
+one transceiver installed. Some wireless access points can simulate full-duplex signalling by using 
+multiple frequencies. But the transmission for each antenna is still only half-duplex. 
+Despite this physical limitation, beginning with 802.11n, several innovations have been 
+implemented that contribute to making later 802.11 standards much faster and much more 
+reliable: 
+
+• Channel bonding: Beginning with 802.11n, two adjacent 20-MHz channels can be combined, or 
+bonded, to make a 40-MHz channel, as shown in Figure 6.9. In fact, bonding two 20-MHz channels 
+more than doubles the bandwidth available in a single 20-MHz channel. That’s because the small 
+amount of bandwidth normally reserved as buﬀers against interference at the top and bottom of 
+the 20-MHz channels can be assigned to carry data instead. Because the 5-GHz band contains 
+more channels and is less crowded (at least, for now), it’s better suited to channel bonding than 
+the 2.4-GHz band. The newer standards take channel bonding to a higher level by supporting 20- 
+, 40-, and 80-MHz channels, with optional use of 160-MHz channels 
+
+Figure 6.9 Channel bonding (West, 2002) 
+ 
+• MIMO (multiple input-multiple output): First available in 802.11n, multiple antennas on the 
+access point and on a client device process incoming or outgoing data simultaneously. Figure 6- 
+10 shows an 802.11n/802.11ac dual-band SOHO router with three antennas. There are some 
+multiantenna 802.11g devices available, but these antennas take turns processing the data 
+stream. 802.11n/ac devices, however, simultaneously process data through two or more 
+antennas. As you learned earlier, wireless signals propagate in a multipath fashion. Therefore, 
+multiple signals cannot be expected to arrive at the same receiver in concert. MIMO uses this 
+phenomenon to its advantage by adjusting either the phase or amplitude of signals from each 
+antenna. 
+ 
+This improves the transmission in two ways: 
+o Signal quality and range: Spatial diversity of the diﬀerent antennas eliminates noise in 
+the transmission, which also increases the distance it can eﬀectively travel. Each 
+antenna receives a slightly diﬀerent version of the signal, and the strengths of each 
+signal are summed. 
+o Signal capacity: Spatial multiplexing adds a new data stream between each additional pair 
+of antennas, thereby increasing the amount of data being transmitted and received. This 
+eﬀect increases linearly with the addition of each pair of antennas. 
+
+• MU-MIMO (multiuser MIMO): Related to MIMO, MU-MIMO is an even newer technology 
+implemented by 802.11ac Wave 2 and newer products that allows multiple antennas to service 
+multiple clients simultaneously. The antennas use diﬀerent spatial streams that rely on clients 
+being positioned relatively far apart from one another. This feature reduces congestion and 
+thereby contributes to even faster data transmission. As with MIMO, however, a MU-MIMO 
+access point can only be used at full capacity when the involved client devices also support MU- 
+MIMO technology. MU-MIMO is currently only available for downstream (AP to client) 
+transmissions and is rarely implemented in indoor environments where clients are located in 
+proximity to each other. 
+• OFDMA (Orthogonal Frequency Division Multiple Access): Improving upon an earlier 
+technology called OFDM, OFDMA supports more eﬃcient multiuser functionality for 802.11ax 
+devices. In essence, OFDMA allows the 802.11ax AP to subdivide each channel into smaller 
+frequency allocations for each client, such as 2 MHz or 4 MHz of each 20-MHz channel. The AP 
+can then transmit multiple small frames to multiple clients at one time using parts of the channel.

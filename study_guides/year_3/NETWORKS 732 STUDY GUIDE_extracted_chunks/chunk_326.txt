@@ -1,0 +1,43 @@
+When setting up a WLAN, most network administrators use the AP’s conﬁguration utility to assign 
+a custom SSID, rather than the default SSID provided by the manufacturer. The default SSID often 
+contains the name of the manufacturer and perhaps even the model number of the access point, 
+which can give hackers a head-start on cracking into the network. Changing the SSID contributes 
+to better security and easier network management, though you should keep the following tips in 
+mind: 
+
+• Disguise the nature of the network identiﬁed by the SSID to avoid giving hackers more 
+information than necessary. For example, it’s probably not a good idea to name the 
+Accounting Department’s access point “Acctg.” 
+• Minimize confusion for employees by using easily recognized though uncommon SSIDs. 
+The point of this is to increase security on client devices as they travel to other areas, so 
+they don’t inadvertently attempt to connect to networks with an identical name. 
+IEEE terminology includes a couple of notable variations to the standard service set conﬁguration. 
+These terms reﬂect the most common wireless topologies as well: 
+• IBSS (independent basic service set) using an ad hoc topology, A small number of nodes 
+closely positioned transmit directly to each other without an intervening connectivity 
+device, as shown in Figure 6.11 
+
+Figure 6.11 An ad hoc WLAN (West, 2002) 
+
+• BSS (basic service set) using an infrastructure topology A group of nodes share an access point, 
+as shown in Figure 6.12. The AP accepts wireless signals from multiple nodes and retransmits 
+them, usually on a wired connection, to the rest of the network. To cover its intended range, an 
+access point must have suﬃcient power and must be strategically placed so that all connected 
+nodes can communicate with it. The identiﬁer for this group of nodes is known as a BSSID (basic 
+service set identiﬁer). 
+• ESS (extended service set) using a mesh topology Several access points work as peer devices 
+on the same network, as illustrated in Figure 6.13, where the AP devices cooperate to provide 
+more fault-tolerant network access to clients across a larger geographical range. These APs are 
+conﬁgured and managed by a wireless LAN controller, which might be used only initially to 
+conﬁgure the APs, or the APs might remain connected to the wireless controller for continued 
+management. Clients that belong to the same ESS share a special identiﬁer called an ESSID 
+(extended service set identiﬁer). In practice, many networking professionals don’t distinguish 
+between the terms SSID and ESSID. They simply conﬁgure every access point in a group or LAN 
+with the same SSID. 
+
+Figure 6.12 An Infrastructure WLAN (West, 2002) 
+  
+Figure 6.13 A network with multiple BSSs form an ESS (West, 2002) 
+ 
+A network with multiple BSSs forms an ESS device can be moved from one room to the next 
+without losing network connectivity. 

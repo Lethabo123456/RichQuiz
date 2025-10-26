@@ -1,0 +1,21 @@
+ng it in a variable called 
+email. 
+ 
+The “IF statement” tests the contents of the variable. We are only testing for a blank 
+value (two double quotes with no spaces between them, though you can single 
+quotes instead of doubles). If email is blank then two things happen: 
+document.getElementById("email_error").innerHTML = "No 
+Email Address"; 
+return false; 
+ 
+We are using getElementById to access an HTML element with the ID "email_error". 
+Notice that we are also using innerHTML after getElementById. The inner HTML is 
+anything between two tags. So if you had <P>Some inner text</P> then the 
+innerHTML would be "Some inner text". After an equal sign we are resetting the 
+innerHTML and replacing it with the text "No Email Address". 
+ 
+The next line is return false. This is enough to set the whole of the function to false. 
+ 
+If the text box is not blank we set the innerHTML again, this time to a blank string. 
+The return value is then true. 
+You can try your script out now. Do not type

@@ -1,0 +1,25 @@
+ws:  
+  
+template <class elemType>  
+void binaryTreeType<elemType>::destroyTree()  
+{ destroy(root);  
+}  
+  
+Recall that when a class object is passed by value, the copy constructor copies the value of the actual 
+parameters into the formal parameters. Because the class binaryTreeType has pointer data members, 
+which creates dynamic memory, we must provide the definition of the copy constructor to avoid the 
+shallow copying of data. The definition of the copy constructor, given next, uses the function copyTree to 
+make an identical copy of the binary tree that is passed as a parameter.  
+  
+//copy constructor template <class elemType> 
+binaryTreeType<elemType>::binaryTreeType 
+(const binaryTreeType<elemType>& 
+otherTree)  
+{  
+if (otherTree.root == NULL) //otherTree is empty root 
+= NULL;  
+else copyTree(root, otherTree.root);  
+}  
+  
+The definition of the destructor is quite straightforward. When an object of type binaryTreeType goes out 
+of scope, the destructor deallocates the mem

@@ -1,0 +1,29 @@
+ng function to your code (you would not be able to copy and paste 
+because ours is an image – you will learn more if you type it out for yourself):  
+Figure 7.6 –E-mail validation 
+Your script tags should now look like this: 
+ 
+ 
+Figure 7.7 
+ 
+The first line of the checkEmail function is this: 
+var email = document.frmOne.email.value; 
+
+ 
+121 
+ 
+SEVEN | JAVASCRIPT AND HTML FORMS 
+ 
+Previously, we got a reference to a text box by using getElementById. Another way to 
+access form elements is to use the following syntax: 
+document.form_name.element_name.element_value 
+ 
+Our form was called frmOne, so we start with document.frmOne. The element name 
+you are trying to access comes next. In the HTML, we gave our text box element the 
+name email. If you want to get what was in the text box, you need the value attribute 
+at the end. 
+ 
+So we are getting the text value from the text box and storing it in a variable called 
+email. 
+ 
+The “IF statement” tests the contents of the variable. We are

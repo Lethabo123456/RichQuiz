@@ -1,0 +1,43 @@
+first, and the ending index, last, of the search list and then divide by 2 to calculate its index. 
+That is, mid = (first + last) / 2.  
+  
+Initially, first = 0 and last = length – 1 (this is because an array index in C++ starts at 0 and length denotes 
+the number of elements in the list).  
+  
+The following C++ function implements the binary search algorithm. If the item is found in the list, its 
+location is returned; if the search item is not in the list, -1 is returned.  
+template<class elemType>  
+int orderedArrayListType<elemType>::binarySearch(const elemType& item) const  
+{  
+
+261  
+  
+int first = 0;  
+ int 
+last = length - 1;  
+int mid;  
+  
+bool found = false;  
+while (first <= last && !found)  
+{  
+mid = (first + last) / 2;  
+  
+if (list[mid] == item) 
+found = true; else if 
+(list[mid] > item) last = 
+mid - 1; else  
+first = mid + 1;  
+}  
+  
+if (found) return 
+mid; else  
+return -1;  
+ 
+}  
+  
+  
+  
+  
+//end binarySearch  
+  
+In the binary search algorithm, each time throu

@@ -1,0 +1,45 @@
+3.2.1 Set Identities 
+Table 2 lists the most important set identities. We will prove several of these 
+identities here, using different methods. These methods are presented to 
+illustrate that there are often many different approaches to the solution of 
+a problem. One way to show that two sets are equal is to show that each is 
+a subset of the other. We generally use a direct proof to do this. We illustrate 
+this type of proof by establishing the first of De Morgan’s laws. 
+ 
+ 
+Table 2: Set Identities 
+
+ 
+Worked Example 
+Prove that 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅ = 𝐴 ̅ ∪ 𝐵̅. 
+
+Solution: 
+We will prove that the two sets 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅  and 𝐴 ̅ ∪ 𝐵̅ are equal by 
+showing that each set is a subset of the other. 
+First, we will show that 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅   ⊆ 𝐴 ̅ ∪ 𝐵̅.We do this by showing that if 
+x is in 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅ , then    it must also be in 𝐴 ̅ ∪ 𝐵̅. Now suppose that x ∈ 
+𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅. By the definition of complement,   x ∉ A ∩ B. Using the 
+definition of intersection, we see that the proposition ￢((x ∈ A) ∧ (x ∈ 
+B)) is true. 
+By applying De Morgan’s law for propositions, we see that ￢(x ∈ A) or 
+￢(x ∈ B). Using the   definition of negation of propositions, we have x 
+∉ A or x ∉ B. Using the definition of the  
+ complement of a set, we 
+see that this implies that x ∈ 𝐴̅ or x ∈ 𝐵̅. Consequently, by the definition 
+of union, we see that x ∈  𝐴 ̅ ∪ 𝐵̅. 
+We have now shown that 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅   ⊆ 𝐴 ̅ ∪ 𝐵̅. 
+Next, we will show that 𝐴 ̅ ∪ 𝐵̅ ⊆ 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅   .We do this by showing that if 
+x is in 𝐴 ̅ ∪ 𝐵̅, then  
+it must also be in 𝐴 ∩ 𝐵
+̅̅̅̅̅̅̅̅̅   . Now suppose that x ∈ A 
+∪ B. By the definition of union, we know  
+that x ∈ 𝐴̅ or x ∈ 𝐵̅. Using the 
+definition of complement, we see that x∉ Aor x ∉ B. Consequently, the 
+proposition ￢(x ∈ A) ∨￢(x ∈ B) is true. 

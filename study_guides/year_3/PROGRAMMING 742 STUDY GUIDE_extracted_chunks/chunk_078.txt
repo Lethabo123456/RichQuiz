@@ -1,0 +1,94 @@
+The purpose of an interface is to define the capabilities that you want to have available in a 
+class. 
+ 
+For example, you might create a class, Document. It turns out that Document types can be 
+stored in a database, so you decide to have Document implement the IStorable interface. 
+To do so, use the same syntax as if the new Document class were inheriting from IStorable - 
+- a colon (:), followed by the interface name: 
+
+public class Document : IStorable 
+    { 
+        public void Read() {...} 
+        public void Write(object obj) {...} 
+        // ... 
+    } 
+ 
+using System; 
+sing System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+using System.Threading;
+ 
+namespace Examples 
+{ 
+    // declare the interface 
+    interface IStorable 
+    { 
+        // no access modifiers, methods are public 
+        // no implementation 
+        void Read(); 
+        void Write(object obj); 
+        int Status { get; set; } 
+    } 
+    // create a class which implements the IStorable interface 
+    public class Document : IStorable 
+    { 
+        public Document(string s) 
+        { 
+            Console.WriteLine("Creating document with: {0}", s); 
+        } 
+        // implement the Read method 
+        public void Read() 
+        { 
+            Console.WriteLine( 
+            "Implementing the Read Method for IStorable"); 
+        } 
+        // implement the Write method 
+        public void Write(object o) 
+        { 
+            Console.WriteLine( 
+            "Implementing the Write Method for IStorable"); 
+        } 
+        // implement the property 
+        public int Status 
+        { 
+            get 
+            { 
+                return status; 
+            } 
+            set 
+            { 
+                status = value; 
+            } 
+        } 
+        // store the value for the property 
+        private int status = 0; 
+    } 
+    // Take our interface out for a spin 
+    public class Tester 
+    { 
+        static void Main() 
+        { 
+            // access the methods in the Document object 
+            Document doc = new Document("Test Document"); 
+            doc.Status = -1; 
+            doc.Read(); 
+            Console.WriteLine("Document Status: {0}", doc.Status); 
+        } 
+    } 
+} 
+ 
+OUTPUT: 
+ 
+Example 2.7-1 defines a simple interface, IStorable, with two methods, Read( ) and Write( 
+), and a property, Status, of type integer. Notice that the property declaration does not 
+provide an implementation for get( ) and set( ), but simply designates that there is a get( 
+) and a set( ): 
+
+int Status { get; set; } 
+Notice also that the IStorable method declarations do not include access modifiers (e.g., 
+public, protected, internal, private). In fact, providing an access modifier generates a 
+compile error. Interface methods are implicitly public because an interface is a contract 
+meant to be used by other classes. You cannot create an instance of an interface; instead you in-
+stantiate a class that implements the interface.
