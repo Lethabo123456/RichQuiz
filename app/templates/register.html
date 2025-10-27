@@ -75,13 +75,20 @@
     }
 
     .flash-messages {
-      background-color: rgba(255, 107, 107, 0.2);
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 20px;
       font-weight: 600;
+    }
+
+    .flash-success {
+      background-color: rgba(76, 175, 80, 0.2);
+      color: #81c784;
+    }
+
+    .flash-danger, .flash-warning {
+      background-color: rgba(255, 107, 107, 0.2);
       color: #ff6b6b;
-      display: none;
     }
 
     a {
@@ -108,9 +115,17 @@
   <div class="register-container">
     <h2>Create Account</h2>
 
-    <div id="flash" class="flash-messages"></div>
+    <!-- Flask Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash-messages flash-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
 
-    <form id="registerForm">
+    <!-- Working Form -->
+    <form method="POST" action="{{ url_for('auth.register') }}">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="text" name="student_number" placeholder="Student Number" required />
       <input type="password" name="password" placeholder="Password" required />
@@ -125,35 +140,5 @@
 
     <a href="{{ url_for('auth.login') }}">Already have an account? Login</a>
   </div>
-
-  <script>
-    document.getElementById('registerForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const form = e.target;
-      const data = {
-        name: form.name.value.trim(),
-        student_number: form.student_number.value.trim(),
-        password: form.password.value,
-        year_level: form.year_level.value
-      };
-
-      const res = await fetch('/auth/register', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
-      });
-
-      const result = await res.json();
-      const flash = document.getElementById('flash');
-      flash.style.display = 'block';
-      flash.innerText = result.message || result.error || 'Unexpected error';
-
-      if (res.status === 201) {
-        setTimeout(() => {
-          window.location.href = '{{ url_for("auth.login") }}';
-        }, 1500);
-      }
-    });
-  </script>
 </body>
 </html>
