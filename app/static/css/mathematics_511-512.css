@@ -7,7 +7,6 @@ html, body {
   font-family: 'Roboto Slab', serif;
   background: #f4f7fb;
   color: #2c3e50;
-  /* subtle grid lines like graph paper */
   background-image:
     linear-gradient(to right, #d0d7e3 1px, transparent 1px),
     linear-gradient(to bottom, #d0d7e3 1px, transparent 1px);
@@ -26,7 +25,7 @@ html, body {
   position: relative;
 }
 
-/* subtle mathematical symbols in the background - faint and large */
+/* Subtle mathematical symbols */
 .container::before {
   content: "∑ ∫ ∞ √ π ∆ ∂ ∇";
   position: absolute;
@@ -96,6 +95,7 @@ h2 {
   border: 1.5px solid #3498db;
 }
 
+/* Options List */
 ul {
   list-style: none;
   padding: 0;
@@ -110,23 +110,35 @@ li {
   border-radius: 14px;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+  position: relative;
 }
 
+/* Hover effect */
 li:hover {
   background-color: #2980b9;
   box-shadow: 0 6px 12px rgba(41, 128, 185, 0.5);
   transform: translateY(-2px);
 }
 
+/* Selected option style */
 li.selected {
   background-color: #1abc9c;
   color: #1c2833;
   font-weight: 700;
   box-shadow: 0 6px 18px #1abc9ccc;
+  animation: pulse 0.8s ease-in-out;
 }
 
+/* Pulse animation for selected option */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 6px 18px #1abc9ccc; }
+  50% { transform: scale(1.03); box-shadow: 0 8px 24px #1abc9cdd; }
+  100% { transform: scale(1); box-shadow: 0 6px 18px #1abc9ccc; }
+}
+
+/* Submit button */
 button {
   padding: 14px 36px;
   font-weight: 700;
@@ -137,7 +149,7 @@ button {
   cursor: pointer;
   margin-top: 40px;
   box-shadow: 0 7px 18px #2980b9aa;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   letter-spacing: 0.03em;
@@ -158,6 +170,7 @@ button:disabled {
   display: none;
 }
 
+/* Back link */
 a.back-link {
   display: block;
   margin-top: 45px;
