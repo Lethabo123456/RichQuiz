@@ -1,212 +1,188 @@
-/* ==========================================
-   MATHEMATICS 511–512 THEME (Extravagant)
-   ========================================== */
+/* ===================================
+   MATHEMATICS 511-512 THEME
+   =================================== */
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Crimson+Pro:wght@400;700&display=swap');
+/* Fonts & General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-/* General Body */
 body {
-  background: radial-gradient(circle at 20% 20%, #1a0033, #000010);
-  font-family: 'Crimson Pro', serif;
-  color: #f8f7ff;
+  background: radial-gradient(circle at top right, #0b0b28, #000010);
+  font-family: 'Libre Baskerville', serif;
+  color: #e8f1ff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 
-/* Animated Geometric Grid Background */
+/* Mathematical Grid Background */
 body::before {
   content: "";
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-image:
-    linear-gradient(45deg, rgba(255,215,0,0.05) 1px, transparent 1px),
-    linear-gradient(-45deg, rgba(138,43,226,0.05) 1px, transparent 1px);
+    linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
   background-size: 60px 60px;
-  animation: grid-flow 12s linear infinite;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.2;
+  animation: moveGrid 25s linear infinite;
 }
-@keyframes grid-flow {
-  0% { background-position: 0 0, 0 0; }
-  50% { background-position: 30px 30px, -30px -30px; }
-  100% { background-position: 0 0, 0 0; }
+@keyframes moveGrid {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
 }
 
-/* Main Container */
+/* Floating Mathematical Symbols */
+body::after {
+  content: '∑ ∞ π √ ∫ Δ θ μ φ ∇ Σ ≈ Ω ∂ λ α β γ δ σ ψ η';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Space Mono', monospace;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.05);
+  white-space: pre-wrap;
+  line-height: 2;
+  text-align: center;
+  z-index: 0;
+  animation: floatSymbols 60s linear infinite alternate;
+}
+@keyframes floatSymbols {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1deg); }
+}
+
+/* Main Container Card */
 .container {
   position: relative;
-  z-index: 1;
-  background: rgba(15, 0, 40, 0.9);
-  border-radius: 20px;
-  border: 3px solid transparent;
-  box-shadow: 0 0 60px rgba(186, 85, 211, 0.4), inset 0 0 20px rgba(255,215,0,0.2);
-  padding: 40px;
-  max-width: 900px;
+  z-index: 2;
+  background: rgba(10, 10, 40, 0.9);
+  border-radius: 25px;
+  padding: 50px;
+  max-width: 950px;
   width: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 50px rgba(0, 255, 204, 0.2);
   overflow: hidden;
 }
 
-/* Animated Golden-Ratio Border */
+/* Animated Border */
 .container::before {
   content: "";
   position: absolute;
-  inset: -3px;
-  border-radius: 24px;
-  background: linear-gradient(135deg, #ffd700, #ba55d3, #9370db, #00bfff, #ffd700);
-  background-size: 400% 400%;
-  animation: golden-move 8s linear infinite;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #00ffcc, #1a73e8, #ffd700, #00ffcc);
+  background-size: 300% 300%;
+  animation: borderFlow 12s linear infinite;
   z-index: -1;
 }
-@keyframes golden-move {
+@keyframes borderFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Title */
+/* Headings */
 h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.2rem;
+  font-family: 'Space Mono', monospace;
   text-align: center;
   color: #ffd700;
-  letter-spacing: 1px;
-  text-shadow: 0 0 15px #ffd700, 0 0 25px #ba55d3;
-  margin-bottom: 30px;
+  font-size: 2.2rem;
+  text-shadow: 0 0 15px #1a73e8;
+  margin-bottom: 35px;
+  letter-spacing: 1.5px;
 }
 
-/* Question Box */
+/* Question Container */
 .question-container {
-  background: rgba(186,85,211,0.05);
-  border-radius: 12px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #1a73e8;
+  border-radius: 15px;
+  padding: 25px;
   margin-bottom: 25px;
-  border-left: 5px solid #ffd700;
-  box-shadow: 0 0 15px rgba(186,85,211,0.2);
 }
 
 /* Options */
 .options-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 .option-label {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   padding: 12px 18px;
   border-radius: 12px;
-  background: rgba(255,215,0,0.05);
+  background: rgba(26, 115, 232, 0.08);
   cursor: pointer;
-  position: relative;
-  transition: all 0.4s ease;
-  border: 1px solid rgba(255,215,0,0.2);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 .option-label:hover {
-  background: rgba(255,215,0,0.15);
-  box-shadow: 0 0 20px #ffd700, 0 0 40px #ba55d3;
-  transform: translateY(-2px);
+  background: rgba(26, 115, 232, 0.2);
+  box-shadow: 0 0 15px #1a73e8;
+  transform: translateX(5px);
 }
-
-/* Input */
 .option-label input[type="radio"] {
   accent-color: #ffd700;
-  width: 20px;
-  height: 20px;
-}
-
-/* Selected option effect */
-.option-label input[type="radio"]:checked + .option-text {
-  background: linear-gradient(135deg, #ffd700, #ba55d3);
-  color: #000;
-  border-radius: 10px;
-  padding: 8px 12px;
-  box-shadow: 0 0 25px #ffd700, 0 0 60px #ba55d3;
-  font-weight: bold;
-  transform: scale(1.05);
-  transition: all 0.4s ease;
-}
-
-/* Option text */
-.option-text {
-  flex: 1;
-  transition: all 0.3s ease;
 }
 
 /* Submit Button */
 .submit-btn {
   display: block;
-  margin: 25px auto 0 auto;
-  background: linear-gradient(135deg, #ffd700, #ba55d3);
-  padding: 14px 35px;
-  border-radius: 15px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  font-size: 1.1rem;
+  margin: 30px auto 0 auto;
+  background: linear-gradient(135deg, #ffd700, #00ffcc);
   color: #000;
-  transition: all 0.3s ease;
   border: none;
+  border-radius: 15px;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .submit-btn:hover {
-  background: linear-gradient(135deg, #ffb700, #9932cc);
-  box-shadow: 0 0 25px #ffd700, 0 0 50px #ba55d3;
   transform: translateY(-3px);
+  box-shadow: 0 0 25px #00ffcc;
+  background: linear-gradient(135deg, #00ffcc, #ffd700);
 }
 
 /* Back Link */
 .back-link {
   display: block;
-  margin-top: 30px;
   text-align: center;
-  color: #ffd700;
+  margin-top: 35px;
+  color: #00ffcc;
+  font-family: 'Space Mono', monospace;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Crimson Pro', serif;
+  transition: 0.3s;
 }
 .back-link:hover {
   text-decoration: underline;
-  color: #ba55d3;
+  color: #ffd700;
 }
 
 /* Code Blocks */
 pre, code {
-  font-family: 'Orbitron', monospace;
-  background: rgba(0,0,0,0.7);
-  color: #ffd700;
-  padding: 8px;
+  font-family: 'Space Mono', monospace;
+  background: rgba(0, 0, 0, 0.7);
+  color: #00ffcc;
+  padding: 10px;
   border-radius: 8px;
   overflow-x: auto;
-  box-shadow: inset 0 0 10px #ba55d3;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #ffd700, #ba55d3);
-  border-radius: 5px;
-}
-::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.05);
-}
-
-/* Floating Container Animation */
-.container, .question-container, .options-list li {
-  animation: gentleFloat 6s ease-in-out infinite alternate;
-}
-@keyframes gentleFloat {
-  0% { transform: translateY(0px); }
-  100% { transform: translateY(-3px); }
 }
 
 /* Error Message */
@@ -217,20 +193,23 @@ pre, code {
   font-weight: bold;
 }
 
-/* Mathematical Decorative Elements */
-body::after {
-  content: '∑ √ ∞ ∫ π θ Δ Σ';
-  position: fixed;
-  bottom: 10%;
-  right: 5%;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 5rem;
-  color: rgba(255,215,0,0.05);
-  letter-spacing: 0.4rem;
-  z-index: 0;
-  animation: mathSymbols 15s linear infinite alternate;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
-@keyframes mathSymbols {
-  0% { transform: rotate(0deg) scale(1); opacity: 0.4; }
-  100% { transform: rotate(360deg) scale(1.05); opacity: 0.2; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ffcc, #ffd700);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Floating Animations */
+.container, .question-container, .options-list li {
+  animation: float 6s ease-in-out infinite alternate;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
 }
