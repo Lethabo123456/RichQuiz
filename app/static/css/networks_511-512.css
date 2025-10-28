@@ -1,5 +1,5 @@
 /* ==============================
-   NETWORKS 511-512 THEME
+   NETWORKS 511-512 THEME (UPDATED)
    ============================== */
 
 /* Fonts & General Body */
@@ -95,23 +95,48 @@ h2 {
   padding: 0;
   margin: 20px 0;
 }
+
 .option-label {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   background: rgba(0,255,255,0.05);
   cursor: pointer;
+  position: relative;
   transition: all 0.3s ease;
 }
+
+/* Hover glow */
 .option-label:hover {
   background: rgba(0,255,255,0.15);
-  box-shadow: 0 0 10px #00fffa;
+  box-shadow: 0 0 15px #00fffa, 0 0 30px #00ff77;
 }
+
+/* Radio input styling */
 .option-label input[type="radio"] {
   accent-color: #00fffa;
+  width: 20px;
+  height: 20px;
+}
+
+/* Selected option effect */
+.option-label input[type="radio"]:checked + .option-text {
+  background: linear-gradient(135deg, #00ff77, #00fffa);
+  color: #000;
+  box-shadow: 0 0 20px #00fffa, 0 0 40px #00ff77;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Option text inside label */
+.option-text {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 /* Submit Button */
@@ -131,7 +156,7 @@ h2 {
 }
 .submit-btn:hover {
   background: linear-gradient(135deg, #00ff77, #00fffa);
-  box-shadow: 0 0 20px #00fffa;
+  box-shadow: 0 0 20px #00fffa, 0 0 40px #00ff77;
   transform: translateY(-3px);
 }
 
