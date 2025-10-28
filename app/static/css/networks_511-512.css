@@ -1,165 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Fira+Code&display=swap');
+/* ==============================
+   NETWORKS 511-512 THEME
+   ============================== */
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Rajdhani', sans-serif;
-  background: radial-gradient(circle at center, #0a0f1c, #05070d 80%);
-  color: #e0f7fa;
+/* Fonts & General Body */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  background: radial-gradient(circle at top right, #0d0d1a, #000022);
+  font-family: 'Roboto', sans-serif;
+  color: #c0f0ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
   overflow-x: hidden;
+  position: relative;
 }
 
-/* NETWORK GRID BACKGROUND */
+/* Circuit-inspired Animated Background */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background-image: 
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image:
+    radial-gradient(circle, rgba(0,255,255,0.1) 2px, transparent 2px),
     linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: networkFlow 80s linear infinite;
-  z-index: -1;
-  pointer-events: none;
-}
-
-@keyframes networkFlow {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(-40px, -40px); }
-}
-
-.container {
-  background: rgba(10, 20, 40, 0.9);
-  border: 1px solid #00bcd4;
-  border-radius: 20px;
-  padding: 50px;
-  max-width: 850px;
-  margin: 60px auto;
-  box-shadow: 0 0 25px #00bcd470;
-  position: relative;
-}
-
-/* Faint node connections as watermark */
-.container::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('../images/network_topology_diagram.png') center/70% no-repeat;
-  opacity: 0.05;
+    linear-gradient(180deg, rgba(0,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px, 60px 60px, 60px 60px;
+  animation: network-flow 12s linear infinite;
   z-index: 0;
-  filter: contrast(130%) grayscale(100%);
-  pointer-events: none;
+  opacity: 0.3;
+}
+@keyframes network-flow {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  50% { background-position: 60px 60px, 30px 30px, 30px 30px; }
+  100% { background-position: 0 0, 0 0, 0 0; }
 }
 
-.container > * {
+/* Main Container Card */
+.container {
   position: relative;
   z-index: 1;
+  background: rgba(0, 0, 30, 0.9);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
 }
 
+/* Glowing Circuit Border */
+.container::before {
+  content: "";
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #00fffa, #0099ff, #00ff77, #00fffa);
+  background-size: 300% 300%;
+  animation: border-glow 8s linear infinite;
+  z-index: -1;
+}
+@keyframes border-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Headings */
 h2 {
-  font-weight: 600;
-  font-size: 2.5rem;
-  color: #00e5ff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2rem;
   text-align: center;
-  text-shadow: 0 0 15px #00e5ff55;
+  color: #00fffa;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00fffa;
   margin-bottom: 30px;
 }
 
-#question {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #e0f7fa;
-}
-
-#question strong {
-  display: block;
-  color: #69f0ae;
-  margin-bottom: 10px;
-}
-
-#question pre {
-  font-family: 'Fira Code', monospace;
-  background-color: #102535;
-  color: #80d8ff;
-  padding: 18px;
-  border-left: 4px solid #00bcd4;
+/* Questions */
+.question-container {
+  background: rgba(0,255,255,0.03);
   border-radius: 10px;
-  overflow-x: auto;
-  box-shadow: inset 0 0 10px #00bcd455;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #00fffa;
 }
 
-/* Network Option Nodes */
-ul {
+/* Options */
+.options-list {
   list-style: none;
   padding: 0;
+  margin: 20px 0;
 }
-
-li {
-  background: rgba(0, 255, 255, 0.05);
-  border-left: 3px solid #00e5ff;
-  margin-bottom: 16px;
-  padding: 14px 20px;
-  border-radius: 8px;
-  font-weight: 500;
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgba(0,255,255,0.05);
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-li:hover {
-  background: rgba(0, 255, 255, 0.15);
-  transform: scale(1.02);
-  box-shadow: 0 0 10px #00e5ff33;
+.option-label:hover {
+  background: rgba(0,255,255,0.15);
+  box-shadow: 0 0 10px #00fffa;
+}
+.option-label input[type="radio"] {
+  accent-color: #00fffa;
 }
 
-li.selected {
-  background: #00e5ff;
-  color: #0a0f1c;
-  font-weight: 700;
-  box-shadow: 0 0 12px #00e5ffaa;
-}
-
-/* Signal-Pulse Button */
-button {
-  background: linear-gradient(90deg, #00e5ff, #00bcd4);
-  border: none;
-  color: #0a0f1c;
-  padding: 14px 32px;
-  border-radius: 50px;
+/* Submit Button */
+.submit-btn {
+  display: block;
+  margin: 25px auto 0 auto;
+  background: linear-gradient(135deg, #00fffa, #0099ff);
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
   font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 5px 15px #00bcd466;
+  color: #000;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: linear-gradient(135deg, #00ff77, #00fffa);
+  box-shadow: 0 0 20px #00fffa;
+  transform: translateY(-3px);
 }
 
-button:hover:enabled {
-  background: linear-gradient(90deg, #1de9b6, #00acc1);
-  box-shadow: 0 7px 20px #1de9b666;
-}
-
-button:disabled {
-  background: #555;
-  color: #bbb;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-a.back-link {
+/* Back link */
+.back-link {
   display: block;
-  margin-top: 38px;
+  margin-top: 30px;
   text-align: center;
-  color: #80d8ff;
+  color: #00fffa;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
 }
 
-a.back-link:hover {
-  color: #00e5ff;
-  text-decoration: underline;
+/* Prism Code Blocks */
+pre, code {
+  font-family: 'Share Tech Mono', monospace;
+  background: rgba(0,0,0,0.7);
+  color: #00fffa;
+  padding: 8px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00fffa, #0099ff);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Floating Animation */
+.container, .question-container, .options-list li {
+  animation: floaty 5s ease-in-out infinite alternate;
+}
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Error Messages */
+.error-message {
+  color: #ff3366;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Extra Network Nodes Decoration */
+body::after {
+  content: '';
+  position: absolute;
+  width: 150px; height: 150px;
+  top: 20%; left: 10%;
+  background: radial-gradient(circle, #00fffa 2px, transparent 2px);
+  border-radius: 50%;
+  box-shadow: 100px 200px #00ff77, 200px 50px #0099ff, 300px 300px #00ffaa;
+  opacity: 0.2;
+  z-index: 0;
 }
