@@ -1,174 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Fira+Code&display=swap');
+/* ==============================
+   MATHEMATICS 511-512 THEME
+   ============================== */
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto Slab', serif;
-  background: #f4f7fb;
-  color: #2c3e50;
-  background-image:
-    linear-gradient(to right, #d0d7e3 1px, transparent 1px),
-    linear-gradient(to bottom, #d0d7e3 1px, transparent 1px);
-  background-size: 30px 30px;
-}
+/* Fonts & General Body */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Ubuntu+Mono&display=swap');
 
-.container {
-  background: #ffffff;
-  border-radius: 16px;
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 50px 40px;
-  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.1), inset 0 0 0 1px #dce6f1;
+body {
+  background: radial-gradient(circle at center, #f0f8ff, #e0e6ff);
+  font-family: 'Roboto Mono', monospace;
+  color: #003366;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  overflow-x: hidden;
   position: relative;
 }
 
-.container::before {
-  content: "∑ ∫ ∞ √ π ∆ ∂ ∇";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 6rem;
-  color: rgba(44, 62, 80, 0.05);
-  font-weight: 700;
-  user-select: none;
-  pointer-events: none;
-  font-family: 'Fira Code', monospace;
-  line-height: 1;
+/* Floating Geometric Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image:
+    radial-gradient(circle, rgba(0,51,102,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,102,204,0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0,102,204,0.05) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 50px 50px;
+  animation: math-pattern 15s linear infinite;
+  z-index: 0;
+}
+@keyframes math-pattern {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  50% { background-position: 50px 50px, 25px 25px, 25px 25px; }
+  100% { background-position: 0 0, 0 0, 0 0; }
 }
 
-.logo { display: flex; justify-content: center; margin-bottom: 30px; }
-.logo img { width: 120px; filter: drop-shadow(0 2px 3px rgba(44, 62, 80, 0.2)); }
-
-h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.2rem;
-  margin-bottom: 35px;
-  color: #34495e;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 8px;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#question {
-  font-family: 'Fira Code', monospace;
-  font-size: 1.25rem;
-  margin-bottom: 30px;
+/* Main Container Card */
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  border: 2px solid #003366;
+  box-shadow: 0 0 40px rgba(0, 51, 102, 0.2);
+  padding: 40px;
+  max-width: 900px;
   width: 100%;
-  line-height: 1.5;
-  color: #2c3e50;
 }
 
-#question strong {
-  display: block;
-  margin-bottom: 14px;
-  font-weight: 700;
-  color: #2980b9;
+/* Glowing Formula Border */
+.container::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 23px;
+  background: repeating-conic-gradient(#003366 0 10deg, #3399ff 10deg 20deg, #003366 20deg 30deg);
+  z-index: -1;
+  animation: border-spin 10s linear infinite;
+}
+@keyframes border-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-#question pre {
-  background-color: #ecf0f1;
-  font-family: 'Fira Code', monospace;
-  color: #2c3e50;
+/* Headings */
+h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 2rem;
+  text-align: center;
+  color: #003366;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #3399ff;
+  margin-bottom: 30px;
+}
+
+/* Questions */
+.question-container {
+  background: rgba(0,51,102,0.05);
+  border-radius: 10px;
   padding: 20px;
-  border-radius: 12px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  font-size: 1.05rem;
-  box-shadow: inset 0 0 12px #bdc3c7;
-  border: 1.5px solid #3498db;
+  margin-bottom: 20px;
+  border-left: 4px solid #003366;
 }
 
-/* Options List */
-ul {
+/* Options */
+.options-list {
   list-style: none;
   padding: 0;
-  width: 100%;
+  margin: 20px 0;
 }
 
-li {
-  background: #3498db;
-  color: #ecf0f1;
-  padding: 16px 24px;
-  margin-bottom: 18px;
-  border-radius: 14px;
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background: rgba(0,102,204,0.1);
   cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
   position: relative;
-  user-select: none;
-}
-
-li:hover {
-  background-color: #2980b9;
-  box-shadow: 0 6px 12px rgba(41, 128, 185, 0.5);
-  transform: translateY(-2px);
-}
-
-li.selected {
-  background-color: #1abc9c;
-  color: #1c2833;
-  font-weight: 700;
-  box-shadow: 0 6px 18px #1abc9ccc;
-  transform: translateY(-2px);
-  animation: pulse 0.8s ease-in-out;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); box-shadow: 0 6px 18px #1abc9ccc; }
-  50% { transform: scale(1.03); box-shadow: 0 8px 24px #1abc9cdd; }
-  100% { transform: scale(1); box-shadow: 0 6px 18px #1abc9ccc; }
-}
-
-/* Submit button */
-button {
-  padding: 14px 36px;
-  font-weight: 700;
-  border: none;
-  border-radius: 30px;
-  background: #2980b9;
-  color: #ecf0f1;
-  cursor: pointer;
-  margin-top: 40px;
-  box-shadow: 0 7px 18px #2980b9aa;
   transition: all 0.3s ease;
-  font-family: 'Roboto Slab', serif;
+}
+
+/* Hover glow */
+.option-label:hover {
+  background: rgba(0,102,204,0.2);
+  box-shadow: 0 0 10px #3399ff, 0 0 20px #003366;
+}
+
+/* Radio input styling */
+.option-label input[type="radio"] {
+  accent-color: #003366;
+  width: 20px;
+  height: 20px;
+}
+
+/* Selected option effect */
+.option-label input[type="radio"]:checked + .option-text {
+  background: linear-gradient(135deg, #3399ff, #003366);
+  color: #fff;
+  box-shadow: 0 0 15px #3399ff, 0 0 30px #003366;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Option text inside label */
+.option-text {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  margin: 25px auto 0 auto;
+  background: linear-gradient(135deg, #3399ff, #003366);
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
   font-size: 1rem;
-  letter-spacing: 0.03em;
+  color: #fff;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
-
-button:hover:enabled {
-  background-color: #1c5980;
-  box-shadow: 0 10px 28px #1c598080;
+.submit-btn:hover {
+  background: linear-gradient(135deg, #003366, #3399ff);
+  box-shadow: 0 0 20px #3399ff, 0 0 40px #003366;
+  transform: translateY(-3px);
 }
-
-button:disabled {
-  background-color: #95a5a6;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-#submitBtn { display: none; }
 
 /* Back link */
-a.back-link {
+.back-link {
   display: block;
-  margin-top: 45px;
-  text-decoration: none;
-  color: #2980b9;
-  font-weight: 700;
+  margin-top: 30px;
   text-align: center;
-  transition: color 0.3s ease;
-  font-family: 'Roboto Slab', serif;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
 }
 
-a.back-link:hover {
-  color: #1abc9c;
-  text-decoration: underline;
+/* Prism Code Blocks / Formulas */
+pre, code {
+  font-family: 'Ubuntu Mono', monospace;
+  background: rgba(230,230,255,0.7);
+  color: #003366;
+  padding: 8px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #003366, #3399ff);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Floating Animation */
+.container, .question-container, .options-list li {
+  animation: floaty 5s ease-in-out infinite alternate;
+}
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Extra Geometric Decoration */
+body::after {
+  content: '';
+  position: absolute;
+  width: 200px; height: 200px;
+  top: 15%; left: 80%;
+  background: radial-gradient(circle, #3399ff 2px, transparent 2px);
+  border-radius: 50%;
+  box-shadow: 150px 250px #003366, 200px 100px #3399ff, 300px 300px #003366;
+  opacity: 0.2;
+  z-index: 0;
 }
