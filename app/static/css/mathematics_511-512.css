@@ -1,227 +1,232 @@
-/* ==============================
-   MATHEMATICS 511–512 THEME
-   Extravagant Mathematical Design
-   ============================== */
+/* =====================================
+   MATHEMATICS 511–512 THEME (Extravagant)
+   ===================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Fira+Code&family=Kaushan+Script&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Fira+Code&family=Cinzel+Decorative:wght@700&display=swap');
 
-/* ======== GLOBAL BODY ======== */
+/* Body (Math Chalkboard Grid Background) */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
+  background: radial-gradient(circle at center, #0e0f1c, #000);
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
   font-family: 'Roboto Slab', serif;
-  background-color: #f9fbfd;
-  color: #1e2a38;
+  color: #e6ecf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-
-  /* Graph paper grid background */
-  background-image:
-    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
 }
 
-/* ======== FLOATING MATH SYMBOLS BACKGROUND ======== */
+/* Floating Mathematical Symbols Background Animation */
 body::before {
-  content: "∑ ∫ √ π ∆ ∂ ∞ ≈ ∇ θ λ";
-  position: fixed;
-  top: 50%;
+  content: "∑ ∫ ∞ √ π ∆ ∂ ∇ ⊗ ≈ ≡ ∠ ∴ ∵ ⊥";
+  position: absolute;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-10deg);
+  transform: translateX(-50%);
+  font-size: 7rem;
   font-family: 'Fira Code', monospace;
-  font-size: 10rem;
-  font-weight: 700;
-  color: rgba(44, 62, 80, 0.04);
-  z-index: 0;
-  user-select: none;
+  color: rgba(255,255,255,0.05);
+  white-space: nowrap;
+  animation: floatSymbols 20s linear infinite alternate;
   pointer-events: none;
+  z-index: 0;
+}
+@keyframes floatSymbols {
+  0% { transform: translate(-50%, 0); opacity: 0.1; }
+  50% { transform: translate(-50%, 20px); opacity: 0.15; }
+  100% { transform: translate(-50%, 0); opacity: 0.1; }
 }
 
-/* ======== CONTAINER ======== */
+/* Glowing Gradient Container */
 .container {
   position: relative;
   z-index: 1;
-  max-width: 950px;
-  background: linear-gradient(145deg, #ffffff, #f1f6fb);
+  background: rgba(10, 10, 25, 0.95);
   border-radius: 20px;
-  margin: 80px auto;
+  max-width: 950px;
   padding: 60px 50px;
   box-shadow:
-    0 12px 25px rgba(0,0,0,0.15),
-    inset 0 0 0 1px #ccd8e5;
-  overflow: hidden;
+    0 0 25px rgba(0, 255, 204, 0.3),
+    inset 0 0 10px rgba(255,255,255,0.05);
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
-/* Elegant animated border with gradient math flow */
+/* Animated Border Glow */
 .container::before {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  padding: 3px;
-  background: linear-gradient(120deg, #00bcd4, #3f51b5, #8e24aa, #00bcd4);
+  inset: -3px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #00f2ff, #42ffb3, #f5ff6b, #00f2ff);
   background-size: 400% 400%;
-  animation: mathflow 10s linear infinite;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  z-index: -1;
+  animation: borderRotate 10s linear infinite;
 }
-@keyframes mathflow {
+@keyframes borderRotate {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ======== HEADER ======== */
+/* Headings */
 h2 {
+  font-family: 'Cinzel Decorative', serif;
+  color: #42ffb3;
+  font-size: 2.6rem;
   text-align: center;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #2c3e50;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(52,152,219,0.25);
-  border-bottom: 4px solid #3f51b5;
-  padding-bottom: 12px;
-  margin-bottom: 40px;
-  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 35px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(66, 255, 179, 0.8), 0 0 20px rgba(0,255,204,0.5);
 }
 
-/* ======== QUESTION AREA ======== */
+/* Question Section */
 .question-container {
-  background: #ecf3f9;
-  border-left: 5px solid #3f51b5;
-  border-radius: 12px;
-  padding: 25px;
+  background: rgba(255,255,255,0.05);
+  border-left: 4px solid #00f2ff;
+  border-radius: 14px;
+  padding: 25px 25px;
   margin-bottom: 25px;
-  box-shadow: 0 4px 10px rgba(63, 81, 181, 0.2);
-}
-
-#question-text {
   font-family: 'Fira Code', monospace;
-  font-size: 1.2rem;
-  color: #1e2a38;
-  line-height: 1.6;
+  box-shadow: inset 0 0 12px rgba(0,255,204,0.2);
 }
 
-/* ======== OPTIONS ======== */
+.question-container strong {
+  color: #00f2ff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Options */
 .options-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin-top: 25px;
 }
 
 .option-label {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 15px;
-  background: linear-gradient(120deg, #f4f7fb, #e0e7ff);
-  border: 1.5px solid #3f51b5;
+  display: block;
+  padding: 16px 20px;
+  background: linear-gradient(90deg, rgba(0,255,204,0.15), rgba(0,100,255,0.1));
+  margin-bottom: 14px;
   border-radius: 12px;
-  padding: 14px 20px;
-  font-weight: 600;
+  color: #e0faff;
   cursor: pointer;
+  font-weight: 600;
   transition: all 0.3s ease;
+  border: 1.5px solid rgba(0,255,204,0.3);
 }
-
 .option-label:hover {
-  background: #cfd8ff;
-  box-shadow: 0 0 10px #3f51b5aa;
+  background: linear-gradient(90deg, rgba(0,255,204,0.35), rgba(0,100,255,0.25));
+  box-shadow: 0 0 12px rgba(0,255,204,0.3);
   transform: translateY(-2px);
 }
-
 .option-label input[type="radio"] {
-  accent-color: #3f51b5;
+  accent-color: #00f2ff;
 }
 
-/* ======== SUBMIT BUTTON ======== */
+/* Submit Button */
 .submit-btn {
   display: block;
-  margin: 35px auto 0 auto;
-  padding: 14px 30px;
-  background: linear-gradient(135deg, #3f51b5, #2196f3);
+  margin: 35px auto 0;
+  padding: 14px 40px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.1rem;
+  color: #00111f;
+  background: linear-gradient(135deg, #00f2ff, #42ffb3, #f5ff6b);
   border: none;
-  color: #fff;
   border-radius: 30px;
-  font-size: 1rem;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(33,150,243,0.4);
   transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,255,204,0.5);
 }
 .submit-btn:hover {
-  background: linear-gradient(135deg, #512da8, #00bcd4);
-  box-shadow: 0 10px 28px rgba(63,81,181,0.5);
-  transform: translateY(-3px);
+  background: linear-gradient(135deg, #f5ff6b, #42ffb3, #00f2ff);
+  box-shadow: 0 8px 25px rgba(255,255,255,0.4);
+  transform: scale(1.05);
 }
 
-/* ======== BACK LINK ======== */
+/* Back Link */
 .back-link {
   display: block;
-  margin-top: 35px;
   text-align: center;
-  color: #3f51b5;
+  margin-top: 40px;
+  font-weight: 700;
+  color: #00f2ff;
   text-decoration: none;
-  font-weight: bold;
-  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 .back-link:hover {
-  color: #1abc9c;
+  color: #42ffb3;
   text-decoration: underline;
 }
 
-/* ======== CODE BLOCKS ======== */
+/* Code Snippets */
 pre, code {
   font-family: 'Fira Code', monospace;
-  background: #f5f7ff;
-  border: 1px solid #cfd8ff;
-  border-radius: 10px;
-  padding: 12px 18px;
-  color: #2c3e50;
-  font-size: 1rem;
+  background: rgba(0, 255, 204, 0.05);
+  color: #00f2ff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border-left: 3px solid #42ffb3;
   overflow-x: auto;
 }
 
-/* ======== SCROLLBAR ======== */
+/* Error Message */
+.error-message {
+  color: #ff6666;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+/* Floating Equations Overlay */
+body::after {
+  content: "E=mc²   sin²θ + cos²θ = 1   a² + b² = c²";
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-family: 'Fira Code', monospace;
+  color: rgba(0,255,204,0.07);
+  white-space: nowrap;
+  animation: floatEquations 16s ease-in-out infinite alternate;
+}
+@keyframes floatEquations {
+  0% { transform: translateX(-50%) translateY(0); opacity: 0.08; }
+  50% { transform: translateX(-50%) translateY(-15px); opacity: 0.12; }
+  100% { transform: translateX(-50%) translateY(0); opacity: 0.08; }
+}
+
+/* Subtle Motion */
+.container, .question-container, .option-label {
+  animation: mathFloat 5s ease-in-out infinite alternate;
+}
+@keyframes mathFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3f51b5, #2196f3);
-  border-radius: 6px;
+  background: linear-gradient(180deg, #00f2ff, #42ffb3);
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #e8ecf5;
-}
-
-/* ======== FLOATING EQUATION DECORATION ======== */
-@keyframes floatEq {
-  0% { transform: translateY(0px); opacity: 0.3; }
-  50% { transform: translateY(-10px); opacity: 0.6; }
-  100% { transform: translateY(0px); opacity: 0.3; }
-}
-.container::after {
-  content: "f(x) = ax² + bx + c";
-  position: absolute;
-  bottom: 25px;
-  left: 40px;
-  font-family: 'Fira Code', monospace;
-  font-size: 1.1rem;
-  color: rgba(63, 81, 181, 0.2);
-  animation: floatEq 6s ease-in-out infinite;
-}
-
-/* ======== ERROR MESSAGE ======== */
-.error-message {
-  color: #e74c3c;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
+  background: rgba(255,255,255,0.05);
 }
