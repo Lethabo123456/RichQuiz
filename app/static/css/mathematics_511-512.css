@@ -19,13 +19,10 @@ html, body {
   max-width: 900px;
   margin: 60px auto;
   padding: 50px 40px;
-  box-shadow:
-    0 8px 24px rgba(44, 62, 80, 0.1),
-    inset 0 0 0 1px #dce6f1;
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.1), inset 0 0 0 1px #dce6f1;
   position: relative;
 }
 
-/* Subtle mathematical symbols */
 .container::before {
   content: "∑ ∫ ∞ √ π ∆ ∂ ∇";
   position: absolute;
@@ -40,16 +37,8 @@ html, body {
   line-height: 1;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.logo img {
-  width: 120px;
-  filter: drop-shadow(0 2px 3px rgba(44, 62, 80, 0.2));
-}
+.logo { display: flex; justify-content: center; margin-bottom: 30px; }
+.logo img { width: 120px; filter: drop-shadow(0 2px 3px rgba(44, 62, 80, 0.2)); }
 
 h2 {
   text-align: center;
@@ -113,25 +102,24 @@ li {
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
   position: relative;
+  user-select: none;
 }
 
-/* Hover effect */
 li:hover {
   background-color: #2980b9;
   box-shadow: 0 6px 12px rgba(41, 128, 185, 0.5);
   transform: translateY(-2px);
 }
 
-/* Selected option style */
 li.selected {
   background-color: #1abc9c;
   color: #1c2833;
   font-weight: 700;
   box-shadow: 0 6px 18px #1abc9ccc;
+  transform: translateY(-2px);
   animation: pulse 0.8s ease-in-out;
 }
 
-/* Pulse animation for selected option */
 @keyframes pulse {
   0% { transform: scale(1); box-shadow: 0 6px 18px #1abc9ccc; }
   50% { transform: scale(1.03); box-shadow: 0 8px 24px #1abc9cdd; }
@@ -166,9 +154,7 @@ button:disabled {
   box-shadow: none;
 }
 
-#submitBtn {
-  display: none;
-}
+#submitBtn { display: none; }
 
 /* Back link */
 a.back-link {
