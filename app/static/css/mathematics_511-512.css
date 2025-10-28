@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -74,7 +74,7 @@ body::after {
   overflow: hidden;
 }
 
-/* Animated Border */
+/* Animated Gradient Border */
 .container::before {
   content: "";
   position: absolute;
@@ -111,12 +111,16 @@ h2 {
   margin-bottom: 25px;
 }
 
-/* Options */
+/* ===================================
+   Options with Click Highlight Fix
+   =================================== */
+
 .options-list {
   list-style: none;
   padding: 0;
   margin: 25px 0;
 }
+
 .option-label {
   display: flex;
   align-items: center;
@@ -128,17 +132,48 @@ h2 {
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
 }
+
+/* Hover Glow */
 .option-label:hover {
   background: rgba(26, 115, 232, 0.2);
   box-shadow: 0 0 15px #1a73e8;
   transform: translateX(5px);
 }
+
+/* Hide native radio circle */
 .option-label input[type="radio"] {
-  accent-color: #ffd700;
+  display: none;
 }
 
-/* Submit Button */
+/* Visual checked state */
+.option-label input[type="radio"]:checked + .option-text {
+  background: rgba(0, 255, 204, 0.15);
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 25px #00ffcc, inset 0 0 10px rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+  animation: pulseGlow 1.8s ease-in-out infinite alternate;
+}
+
+/* Option text */
+.option-text {
+  flex: 1;
+  color: #e8f1ff;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px #00ffcc; }
+  100% { box-shadow: 0 0 40px #ffd700; }
+}
+
+/* =================================== */
+
 .submit-btn {
   display: block;
   margin: 30px auto 0 auto;
