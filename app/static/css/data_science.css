@@ -1,247 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap');
+/* data_science.css */
 
-html, body {
-  height: 100%;
+/* === Root Theme Variables === */
+:root {
+  --bg-gradient: radial-gradient(circle at 20% 20%, #001220, #001f33 60%, #000c14);
+  --accent-magenta: #ff1eae;
+  --accent-cyan: #00e6f6;
+  --accent-green: #3affb3;
+  --accent-blue: #007bff;
+  --text-light: #e5f7ff;
+  --text-dim: #a7c2d8;
+  --font-primary: 'IBM Plex Sans', sans-serif;
+  --font-accent: 'Rajdhani', sans-serif;
+}
+
+/* === Body Setup === */
+body {
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  font-family: var(--font-primary);
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0f2027;  /* Deep blue/teal gradient */
-  background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
-  color: #e0e6f2;
-  overflow-x: hidden;
-}
-
-/* Container with glassmorphic effect for a data visualization "dashboard" vibe */
-.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  background: rgba(12, 32, 48, 0.85);
-  border-radius: 24px;
-  max-width: 850px;
-  margin: 70px auto;
-  padding: 50px 45px;
-  box-shadow:
-    0 0 20px 4px rgba(2, 176, 255, 0.6),
-    0 12px 24px rgba(2, 176, 255, 0.15);
-  backdrop-filter: blur(12px);
-  overflow: visible;
-  z-index: 1;
+  overflow: auto;
 }
 
-/* Floating vertical bars — mimic bar charts or data bars in neon blues and greens */
-.container::before {
+/* === Data Network Border Frame === */
+body::before {
   content: "";
-  position: absolute;
-  top: 20px;
-  left: -50px;
-  width: 12px;
-  height: 180px;
-  background: linear-gradient(180deg, #00f260, #0575e6); /* neon green to blue */
-  border-radius: 6px;
-  box-shadow:
-    40px 0 #00b7ffcc,
-    80px 0 #00d1b2cc,
-    120px 0 #005792cc;
-  animation: floatBars 6s ease-in-out infinite alternate;
-  opacity: 0.12;
+  position: fixed;
+  inset: 0;
+  border: 8px solid var(--accent-cyan);
+  border-radius: 16px;
+  pointer-events: none;
+  box-shadow: 0 0 35px var(--accent-cyan), inset 0 0 25px var(--accent-magenta);
   z-index: 0;
 }
 
-@keyframes floatBars {
-  0% { transform: translateY(0);}
-  100% { transform: translateY(15px);}
+/* === Data Grid Overlay Effect === */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(0, 230, 246, 0.06) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 230, 246, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.container > * {
+/* === Main Container === */
+.container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  width: 90%;
+  max-width: 950px;
+  padding: 50px 60px;
+  background: rgba(0, 15, 25, 0.85);
+  border: 2px solid var(--accent-cyan);
+  border-radius: 25px;
+  box-shadow: 0 0 25px var(--accent-cyan), inset 0 0 10px var(--accent-blue);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1.3s ease;
 }
 
-/* Logo style - circle with network nodes */
-.logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 38px;
-  position: relative;
-}
-
-.logo img {
-  width: 100px;
-  border-radius: 50%;
-  box-shadow:
-    0 0 18px #00f2fecc,
-    0 0 25px #00c3ffcc;
-  filter: drop-shadow(0 0 8px #00c3ffcc);
-}
-
-/* Heading */
-h2 {
-  font-weight: 600;
-  font-size: 2.4rem;
+/* === Title === */
+.container h2 {
   text-align: center;
-  color: #00c3ff;
-  margin-bottom: 36px;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 0 0 8px #00c3ffaa;
-}
-
-/* Question text with highlighted data points style */
-#question {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 28px;
-  color: #c0d8ff;
-  border-left: 6px solid #00d1b2;
-  padding-left: 18px;
-  font-weight: 500;
-  background: rgba(0, 209, 178, 0.1);
-  border-radius: 12px;
-  box-shadow: inset 4px 0 12px #00d1b244;
-  transition: background-color 0.3s ease;
-}
-
-#question strong {
-  display: block;
-  margin-bottom: 14px;
+  font-family: var(--font-accent);
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #00f2fe;
-  font-family: 'Roboto Mono', monospace;
-  letter-spacing: 0.04em;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 230, 246, 0.6);
+  padding-bottom: 10px;
+  text-shadow: 0 0 15px var(--accent-cyan);
 }
 
-/* Code blocks with block-chart style */
-#question pre {
-  background: #001f30;
-  color: #00f2fe;
-  padding: 20px 22px;
-  border-radius: 14px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-top: 14px;
-  box-shadow:
-    0 8px 0 0 #00d1b2 inset,
-    0 -8px 0 0 #005792 inset;
-  white-space: pre-wrap;    /* allow line wrap */
-  overflow-x: hidden;       /* hide horizontal scroll */
-  word-wrap: break-word;    /* break long words if needed */
-  user-select: text;
+/* === Question Container === */
+.question-container {
+  background: rgba(0, 20, 30, 0.8);
+  border-left: 5px solid var(--accent-green);
+  border-radius: 12px;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(0, 230, 246, 0.15);
 }
 
-/* Answer list - cards shaped as minimal bars */
-ul {
+.question-container p {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* === Question Text === */
+#question-text {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* === Options === */
+.options-list {
   list-style: none;
   padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  margin: 0;
 }
 
-li {
-  background: rgba(0, 195, 255, 0.08);
-  border-radius: 10px;
-  border-left: 12px solid #00d1b2;
-  padding: 16px 24px;
-  font-weight: 600;
-  font-size: 1.05rem;
+.option-label {
+  display: block;
+  position: relative;
+  background: rgba(0, 30, 45, 0.85);
+  border: 2px solid rgba(0, 230, 246, 0.3);
+  border-radius: 12px;
+  margin: 15px 0;
+  padding: 15px 20px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 195, 255, 0.1);
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.2s ease;
-  user-select: none;
-}
-
-li:hover {
-  background: rgba(0, 209, 178, 0.3);
-  border-color: #00f2fe;
-  transform: scale(1.03);
-  box-shadow: 0 4px 14px rgba(0, 242, 254, 0.5);
-}
-
-li.selected {
-  background: #00d1b2;
-  color: #001f30;
-  border-color: #00f2fe;
-  box-shadow: 0 6px 24px rgba(0, 242, 254, 0.7);
-  font-weight: 700;
-}
-
-/* Buttons */
-button {
-  margin-top: 38px;
-  padding: 16px 40px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 40px;
-  background: linear-gradient(90deg, #00c3ff 0%, #00d1b2 100%);
-  color: #001f30;
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(0, 195, 255, 0.4);
   transition: all 0.3s ease;
-  user-select: none;
+  overflow: hidden;
 }
 
-button:hover:enabled {
-  background: linear-gradient(90deg, #00d1b2 0%, #00c3ff 100%);
-  box-shadow: 0 15px 35px rgba(0, 242, 254, 0.8);
+.option-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 30, 174, 0.15), rgba(0, 230, 246, 0.15));
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-button:disabled {
-  background: #0a3042;
-  color: #355266;
-  cursor: not-allowed;
-  box-shadow: none;
+.option-label:hover::before {
+  opacity: 1;
 }
 
-#submitBtn {
+.option-label:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-magenta);
+  box-shadow: 0 0 20px rgba(255, 30, 174, 0.4);
+}
+
+.option-label input[type="radio"] {
   display: none;
 }
 
-/* Back link */
-a.back-link {
-  display: block;
-  margin-top: 44px;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  color: #00c3ff;
+.option-label input[type="radio"]:checked + .option-text {
+  color: var(--accent-green);
+  font-weight: 700;
+  text-shadow: 0 0 10px var(--accent-green);
+}
+
+.option-text {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  transition: color 0.3s ease;
+}
+
+/* === Submit Button === */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(90deg, var(--accent-magenta), var(--accent-cyan), var(--accent-green));
+  color: #001220;
+  box-shadow: 0 0 25px var(--accent-cyan);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-accent);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-magenta), var(--accent-cyan));
+  box-shadow: 0 0 40px var(--accent-green);
+  transform: translateY(-3px);
+}
+
+/* === Back Link === */
+.back-link {
+  display: inline-block;
+  margin-top: 25px;
   font-size: 1rem;
-  letter-spacing: 1.1px;
-  transition: color 0.25s ease;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
-a.back-link:hover {
-  color: #00d1b2;
-  text-decoration: underline;
+.back-link:hover {
+  color: var(--accent-magenta);
+  text-shadow: 0 0 10px var(--accent-magenta);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .container {
-    margin: 40px 20px;
-    padding: 30px 25px;
-  }
-  
-  h2 {
-    font-size: 1.8rem;
-  }
-  
-  #question {
-    font-size: 1.15rem;
-  }
-  
-  li {
-    font-size: 1rem;
-    padding: 14px 18px;
-  }
-  
-  button {
-    padding: 14px 32px;
-    font-size: 1rem;
-  }
+/* === Error Message === */
+.error-message {
+  color: #ff4d88;
+  background: rgba(255, 30, 174, 0.1);
+  border-left: 3px solid var(--accent-magenta);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-magenta);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
 }
