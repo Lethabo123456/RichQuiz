@@ -1,114 +1,113 @@
-/* ==========================================
-   MATHEMATICS 511-512 THEME: "Mathematical Cosmos"
-   ========================================== */
+/* ==============================
+   MATHEMATICS 511–512 THEME
+   Extravagant Mathematical Design
+   ============================== */
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;700&family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Fira+Code&family=Kaushan+Script&display=swap');
 
-/* General Body */
-body {
-  background: radial-gradient(circle at top, #0a0a1a 0%, #000010 100%);
-  color: #f5f3ff;
-  font-family: 'Crimson Pro', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  min-height: 100vh;
-  position: relative;
+/* ======== GLOBAL BODY ======== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: #f9fbfd;
+  color: #1e2a38;
   overflow-x: hidden;
-}
+  position: relative;
 
-/* Animated Mathematical Grid Background */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  /* Graph paper grid background */
   background-image:
-    linear-gradient(90deg, rgba(255,215,0,0.05) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(255,215,0,0.05) 1px, transparent 1px);
-  background-size: 80px 80px;
-  animation: math-grid-move 20s linear infinite;
-  z-index: 0;
-  opacity: 0.3;
-}
-@keyframes math-grid-move {
-  0% { background-position: 0 0; }
-  100% { background-position: 80px 80px; }
+    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
-/* Subtle Math Formula Layer */
-body::after {
-  content: "Σ ∫ π √ θ ∆ ∑ ∞ ≈ × ÷ ± ∂ φ λ α β γ";
-  font-family: 'Orbitron', sans-serif;
-  font-size: 8rem;
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  color: rgba(255,255,255,0.02);
-  width: 100%;
-  text-align: center;
+/* ======== FLOATING MATH SYMBOLS BACKGROUND ======== */
+body::before {
+  content: "∑ ∫ √ π ∆ ∂ ∞ ≈ ∇ θ λ";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  font-family: 'Fira Code', monospace;
+  font-size: 10rem;
+  font-weight: 700;
+  color: rgba(44, 62, 80, 0.04);
   z-index: 0;
-  letter-spacing: 2rem;
-  animation: float-symbols 15s ease-in-out infinite alternate;
-}
-@keyframes float-symbols {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(15px); }
+  user-select: none;
+  pointer-events: none;
 }
 
-/* Main Container */
+/* ======== CONTAINER ======== */
 .container {
   position: relative;
   z-index: 1;
-  background: rgba(10, 10, 30, 0.9);
+  max-width: 950px;
+  background: linear-gradient(145deg, #ffffff, #f1f6fb);
   border-radius: 20px;
-  padding: 40px;
-  max-width: 900px;
-  width: 100%;
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.15);
-  border: 2px solid transparent;
+  margin: 80px auto;
+  padding: 60px 50px;
+  box-shadow:
+    0 12px 25px rgba(0,0,0,0.15),
+    inset 0 0 0 1px #ccd8e5;
+  overflow: hidden;
 }
 
-/* Glowing Mathematical Border */
+/* Elegant animated border with gradient math flow */
 .container::before {
   content: "";
   position: absolute;
-  top: -2px; left: -2px; right: -2px; bottom: -2px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #ffd700, #ffef9f, #b399ff, #ffd700);
-  background-size: 300% 300%;
-  animation: golden-glow 8s linear infinite;
-  z-index: -1;
+  inset: 0;
+  border-radius: 20px;
+  padding: 3px;
+  background: linear-gradient(120deg, #00bcd4, #3f51b5, #8e24aa, #00bcd4);
+  background-size: 400% 400%;
+  animation: mathflow 10s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
-@keyframes golden-glow {
+@keyframes mathflow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Headings */
+/* ======== HEADER ======== */
 h2 {
-  font-family: 'Orbitron', sans-serif;
   text-align: center;
-  color: #ffd700;
-  font-size: 2.2rem;
-  text-shadow: 0 0 15px #ffd700, 0 0 30px #b399ff;
-  margin-bottom: 30px;
-  letter-spacing: 3px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(52,152,219,0.25);
+  border-bottom: 4px solid #3f51b5;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  font-family: 'Kaushan Script', cursive;
 }
 
-/* Question Section */
+/* ======== QUESTION AREA ======== */
 .question-container {
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 4px solid #ffd700;
-  padding: 20px;
-  border-radius: 10px;
+  background: #ecf3f9;
+  border-left: 5px solid #3f51b5;
+  border-radius: 12px;
+  padding: 25px;
   margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(63, 81, 181, 0.2);
 }
 
-/* Options */
+#question-text {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.2rem;
+  color: #1e2a38;
+  line-height: 1.6;
+}
+
+/* ======== OPTIONS ======== */
 .options-list {
   list-style: none;
   padding: 0;
@@ -118,123 +117,111 @@ h2 {
 .option-label {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  padding: 12px 18px;
+  gap: 14px;
+  margin-bottom: 15px;
+  background: linear-gradient(120deg, #f4f7fb, #e0e7ff);
+  border: 1.5px solid #3f51b5;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 20px;
+  font-weight: 600;
   cursor: pointer;
-  position: relative;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .option-label:hover {
-  background: rgba(255,215,0,0.15);
-  box-shadow: 0 0 15px rgba(255,215,0,0.4);
-  transform: scale(1.02);
+  background: #cfd8ff;
+  box-shadow: 0 0 10px #3f51b5aa;
+  transform: translateY(-2px);
 }
 
-/* Radio Styling */
 .option-label input[type="radio"] {
-  accent-color: #ffd700;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+  accent-color: #3f51b5;
 }
 
-/* Checked Visual Feedback */
-.option-label input[type="radio"]:checked + .option-text {
-  background: linear-gradient(135deg, #ffd700, #ffef9f);
-  color: #000;
-  font-weight: bold;
-  box-shadow: 0 0 25px #ffd700, 0 0 45px #b399ff;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-/* Option Text */
-.option-text {
-  flex: 1;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-family: 'Crimson Pro', serif;
-  font-size: 1rem;
-}
-
-/* Submit Button */
+/* ======== SUBMIT BUTTON ======== */
 .submit-btn {
   display: block;
-  margin: 25px auto 0 auto;
-  background: linear-gradient(135deg, #ffd700, #b399ff);
-  color: #000;
-  font-weight: bold;
+  margin: 35px auto 0 auto;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #3f51b5, #2196f3);
   border: none;
-  border-radius: 12px;
-  padding: 12px 28px;
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 1px;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   cursor: pointer;
+  box-shadow: 0 8px 20px rgba(33,150,243,0.4);
+  transition: all 0.3s ease;
 }
 .submit-btn:hover {
-  background: linear-gradient(135deg, #ffef9f, #ffd700);
-  box-shadow: 0 0 25px #ffd700, 0 0 40px #b399ff;
+  background: linear-gradient(135deg, #512da8, #00bcd4);
+  box-shadow: 0 10px 28px rgba(63,81,181,0.5);
   transform: translateY(-3px);
 }
 
-/* Back Link */
+/* ======== BACK LINK ======== */
 .back-link {
   display: block;
-  margin-top: 30px;
+  margin-top: 35px;
   text-align: center;
-  color: #ffd700;
+  color: #3f51b5;
   text-decoration: none;
-  font-family: 'Orbitron', sans-serif;
   font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  transition: color 0.3s ease;
 }
 .back-link:hover {
-  text-shadow: 0 0 10px #ffd700, 0 0 25px #b399ff;
+  color: #1abc9c;
+  text-decoration: underline;
 }
 
-/* Code Blocks */
+/* ======== CODE BLOCKS ======== */
 pre, code {
-  font-family: 'Crimson Pro', monospace;
-  background: rgba(255,255,255,0.05);
-  color: #ffd700;
-  padding: 8px;
-  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
+  background: #f5f7ff;
+  border: 1px solid #cfd8ff;
+  border-radius: 10px;
+  padding: 12px 18px;
+  color: #2c3e50;
+  font-size: 1rem;
   overflow-x: auto;
 }
 
-/* Scrollbar */
+/* ======== SCROLLBAR ======== */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #ffd700, #b399ff);
-  border-radius: 5px;
+  background: linear-gradient(180deg, #3f51b5, #2196f3);
+  border-radius: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.05);
+  background: #e8ecf5;
 }
 
-/* Floating Container Effect */
-.container, .question-container {
-  animation: levitate 6s ease-in-out infinite alternate;
+/* ======== FLOATING EQUATION DECORATION ======== */
+@keyframes floatEq {
+  0% { transform: translateY(0px); opacity: 0.3; }
+  50% { transform: translateY(-10px); opacity: 0.6; }
+  100% { transform: translateY(0px); opacity: 0.3; }
 }
-@keyframes levitate {
-  0% { transform: translateY(0px); }
-  100% { transform: translateY(-3px); }
+.container::after {
+  content: "f(x) = ax² + bx + c";
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1rem;
+  color: rgba(63, 81, 181, 0.2);
+  animation: floatEq 6s ease-in-out infinite;
 }
 
-/* Error Message */
+/* ======== ERROR MESSAGE ======== */
 .error-message {
-  color: #ff5c5c;
+  color: #e74c3c;
   text-align: center;
-  margin-top: 15px;
   font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
+  margin-top: 10px;
 }
