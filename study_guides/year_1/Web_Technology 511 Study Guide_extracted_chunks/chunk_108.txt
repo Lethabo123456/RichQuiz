@@ -1,14 +1,5 @@
 SEVEN | TABLES 
  
-LEARNING OUTCOMES 
- 
-1. Create a table, set the border and width of a table, add headings 
-to a table 
-2. Span cells across rows and columns, align a table and data in a cell, 
-insert images and hyperlinks in a table, and add comments to the 
-code of a page 
-3. Create a nested table to organize the information on a page 
- 
 INTRODUCTION 
  
 Presenting data in a table format is an effective way of organizing, displaying, and 
@@ -19,3 +10,49 @@ depicted as a table.
 A table is composed of rows (from left to right) and columns (from top to bottom) 
 with data contained in individual cells. A cell is an intersection of a row and a column. 
 In HTML, you can create a table by using the tags shown below. 
+
+Tag                        Description 
+----------------------------------------------------------------------------------------
+<table></table>            These are the primary tags, which surround the rest of the 
+                           text and code within a table. 
+----------------------------------------------------------------------------------------
+<tr></tr>                  Defines each row in a table. 
+----------------------------------------------------------------------------------------
+<td></td>                  Indicates the beginning and ending of a cell in a table. 
+----------------------------------------------------------------------------------------
+ 
+Error! Reference source not found., using the code shown in Exhibit 0-7. 
+ 
+Exhibit 0-7: The source code of the Student register page after creating a table
+
+7.2 TABLE ATTRIBUTES 
+You use <table> attributes to format a table. You can add a border, change the width 
+and height of a table, align a table, and align data within a table. You use table 
+attributes with the <table>, <td>, and <tr> tags. The <table> attributes are also not 
+supported in HTML5. 
+ 
+BORDER attribute 
+A border around a table gives it a three-dimensional look. You set the border of a 
+table by using the border attribute of the 
+<table> tag. To set the border of a table, use 
+the following 
+
+<table border> 
+
+By default, the width of the border is set to 1 
+pixel. You can increase the width of the 
+border by setting different values to the attribute. 
+To set the width of the border to 2 pixels, use the following code: 
+<table border=”2”> 
+ 
+WIDTH and HEIGHT attributes 
+By default, the width of a table depends on the length of the text. However, you can 
+change the width by using the width attribute of the <table> tag. 
+You can specify the width in pixels or as a percentage value. If you specify the width 
+in pixels, the size of the table remains fixed. When you specify the width as a 
+percentage, the width of the table will vary based on the size of the browser window. 
+To set the width of a table to 50% of the browser window’s width, use the following 
+code: 
+<table width=”50%”> 
+You can set the height of a table in a similar manner by using the height attribute of 
+the <table> tag. 

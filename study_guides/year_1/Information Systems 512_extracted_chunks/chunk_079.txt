@@ -1,19 +1,36 @@
-old approximately 750 billion bytes. 
- 
-3.1.2 
-Storage versus Memory 
-Items on a storage medium remain intact even when you turn off a computer or mobile device. Thus, 
-a storage medium is non-volatile. Most memory (i.e., RAM), by contrast, holds data and instructions 
-temporarily and, thus, is volatile.  
+3.1.3 Storage Access Times 
 
-Page 47 of 117 
- 
-3.1.3 
-Storage Access Times 
 The speed of storage devices and memory is defined by access time. Access time measures  
 (1) The amount of time it takes a storage device to locate an item on a storage medium or  
 (2) The time required to deliver an item from memory to the processor.  
 The access time of storage devices is slow, compared with the access time of memory. Memory (chips) 
 accesses items in billionths of a second (nanoseconds). Storage devices, by contrast, access items in 
 thousandths of a second (milliseconds) or millionths of a second (microseconds). Transfer rate is the 
-speed with which data, instructions, and information transfer to and from a device
+speed with which data, instructions, and information transfer to and from a device. Transfer rates for 
+storage are stated in KBps (kilobytes per second), MBps (megabytes per second), and GBps (gigabytes 
+per second). 
+
+3.2 HARD DISKS 
+ 
+A hard disk, also called a hard disk drive (HDD), is a storage device that contains one or more inflexible, 
+circular platters that use magnetic particles to store data, instructions, and information. The term, 
+hard drive, refers collectively to hard disks and SSDs. Hard drives can be internal or external. That is, 
+they can reside inside a computer or mobile device, or they can be an external device that connects 
+to a computer or some mobile devices. A hard disk, also called a hard disk drive (HDD), is a storage 
+device that contains one or more inflexible, circular platters that use magnetic particles to store data, 
+instructions, and information. Desktop and laptops often contain at least one hard disk. The entire 
+hard disk is enclosed in an airtight, sealed case to protect it from contamination. 
+ 
+Reading is the process of transferring 
+items from a storage medium into 
+memory
+Writing is the process of transferring 
+items from memory to a storage 
+medium
+
+Hard disks are read/write storage media. Before any data can be read from or written on a hard disk, 
+however, the disk must be formatted. Formatting is the process of dividing the disk into tracks and 
+sectors, so that the operating system can store and locate data and information on the disk. A track is 
+an arrow recording band that forms a full circle on the surface of the disk. The disk’s storage locations 
+consist of wedge-shaped sections, which break the tracks into small arcs called sectors. On a hard disk, 
+a sector typically stores up to 512 bytes of data.  

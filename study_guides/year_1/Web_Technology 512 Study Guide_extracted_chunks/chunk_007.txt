@@ -1,25 +1,3 @@
-that you 
-know some HTML and CSS. You by no means need 
-to be a web design guru, but you should have 
-some basic knowledge of how a web page is 
-created. You should know about things like the 
-HEAD and BODY section of a HTML page, how to 
-create 
-new paragraphs, insert images and 
-hyperlinks.  
- 
- 
- 
- 
- 
-Research 
-Which language can one use to 
-create an interactive website?  
-After reading this Section of the guide, the learner should be able to: 
-
- 
-8 
- 
 ONE | INTRODUCTION TO JAVASCRIPT 
  
 1.3 CLIENT-SIDE JAVASCRIPT 
@@ -33,4 +11,35 @@ that interact with the user, control the browser, and dynamically create HTML
 content. 
  
 The JavaScript client-side mechanism features many advantages over traditional 
-Common Gateway Interface (CGI) serve
+Common Gateway Interface (CGI) server-side scripts. For example, you might use 
+JavaScript to check if the user has entered a valid e-mail address in a form field. 
+ 
+The JavaScript code is executed when the user submits the form, and only if all the 
+entries are valid they would be submitted to the Web Server. 
+ 
+JavaScript can be used to trap user-initiated events such as button clicks, link 
+navigation, and other actions that the user explicitly or implicitly initiates.
+
+Advantages of JavaScript: 
+The merits of using JavaScript are: 
+ Less server interaction: You can validate user input before sending the page 
+off to the server. This saves server traffic, which means less load on your server. 
+ Immediate feedback to the visitors: They do not have to wait for a page reload 
+to see if they have forgotten to enter something. 
+ Increased interactivity: You can create interfaces that react when the user 
+hovers over them with a mouse or activates them via the keyboard. 
+ Richer interfaces: You can use JavaScript to include such items as drag-and-drop components 
+and sliders to give a Rich Interface to your site visitors.  
+
+Limitations with JavaScript: 
+We cannot treat JavaScript as a full-fledged programming language. It lacks the following 
+important features: 
+ Client-side JavaScript does not allow the reading or writing of files. This has 
+been kept for security reason. 
+ JavaScript cannot be used for networking applications because there is no such 
+support available. 
+ JavaScript does not have any multithreading or multi-process capabilities. 
+ 
+Once again, JavaScript is a lightweight, interpreted programming language that allows 
+you to build interactivity into otherwise static HTML pages.
+ 

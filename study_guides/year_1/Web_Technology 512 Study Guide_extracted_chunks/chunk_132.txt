@@ -1,23 +1,62 @@
-l address. 
- 
-You can start grabbing character from the end of string by typing a negative number. 
-Hence -4 means grab 4 characters from the end of the string. Here is an example: 
-var email = "meme@meme.com"; 
-var ending = email.substr( -4 ); 
-document.write(ending); 
- 
-This grabs the last 4 characters from the email address, which are .com. 
- 
-A popular use for substr is to cycle through all the letters in a string. In JavaScript code 
-previously we checked for an @ sign. But what if the user enters more than one @ 
-sign, in an attempt to deceive us? If we use indexOf it will only tell us the position of 
-the first occurrence of the @ sign. It will stop when it finds just one. By using a loop, an 
-IF statement, and substr, you can go through all the letters of the email address, 
-counting how many @ signs there are. Take a look at this code: 
-var at_sign = "@meme@meme@.com@"; 
-var counter = 0; 
-var i; 
-for ( i=0; i < at_sign.length; i++ )  
-{ 
+We are looping until the variable called i is no longer less than the length of the email 
+address stored in the at_sign variable. The i variable increases by 1 each time round 
+the loop. We can use that fact in our substr method: 
 var char = at_sign.substr( i, 1 ); 
-if
+ 
+The first time round the loop the i variable will have a value of 0. So substr will be 
+substr(0, 1). This means start at the first character in the string and grab 1 character. 
+The second time round the loop the i variable will have a value of 1. So substr will be 
+substr(1, 1).Which means start at the second character and grab 1 from that point. 
+Next will be substr(2, 1), which grabs the third character from the email address.We 
+keep going round and around grabbing 1 character at a time with substr. The IF 
+statement checks if this character is an @ sign. If it is, the counter will get 1 added to 
+it. 
+
+You can split up strings of text with the JavaScript split method. In between the round 
+brackets of split you type an optional delimiter. The delimiter is how the various parts 
+of the string are separated. This might be with a comma, a semicolon, a space, etc. 
+The delimiter needs to go between quote marks. When you split a string you turn it 
+into an array. Let us look at an example: 
+
+var email = "me@email_1.com, him@email_2.com, her@email_3.com"; 
+var email_array = email.split(','); 
+ 
+The first line is a list of email addresses. All three are separated by commas. The next 
+line uses the split method. Look at the part after the equal sign: 
+ 
+email.split(',') 
+ 
+We are splitting the variable called email. In between the round brackets of split we 
+have typed a comma between two quote marks. The split method will search the 
+string for commas. It will then place anything before a comma into an array position. 
+After it's done, we'll have an array called email_array. Here isa for loop that prints out 
+each email address:
+ 
+var i; 
+for ( i=0; i < email_array.length; i++ )  
+{ 
+document.write( email_array[i] + "<BR>" ); 
+} 
+
+The for loop above keeps going round while the variable called i is less than the 
+length of the array. (An array's length is how many positions it has). 
+ 
+
+5.5.1 The Javascript join Method 
+ 
+You can join strings of text together with the join method. Suppose we wanted our 
+email addresses to be separated by hyphens rather than commas. We can do it like 
+this: 
+var email = meme@email_1.com,him@email_2.com,her@email_3.com"; 
+var email_array = email.split(','); 
+var new_string = email_array.join('-'); 
+document.write(new_string); 
+ 
+The first two lines are the same. But look at the third line: 
+var new_string = email_array.join('-'); 
+ 
+Again, the join method uses a pair of round brackets with a delimiter inside of them. 
+Each position in the email_array will now be joined together with hyphens. 
+ 
+If you wanted no spaces at all between your strings then you can miss out the 
+delimiter and just have two quote marks together.

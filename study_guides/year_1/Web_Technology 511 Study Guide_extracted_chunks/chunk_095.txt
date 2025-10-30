@@ -1,21 +1,5 @@
-6.6 Working with Playing Web Audio 
-Code snippet overview  
- 
-<img src="KOEL.jpg "width="450" height="300">
-<h1>ASIAN KOEL</h1>
-<p><b>......</b>.....</p>
-<p><i><b>Press to play to hear the sound of The Asian Koel biid.</i></i></b>
-<audio controls autoplay>
-   <source src="Koel-sound.ogg" type="audio/ogg">
-   <source src="Koel-sound.mp3" type="audio/mp3">
-
-</audio> 
- 
- 
-Code output::
- 
- 
 6.7 Introducing Multimedia on the Web 
+
 The original purpose of the web and HTML was to deliver textual information via 
 interconnected hypertext documents. HTML was a perfect tool for academic researchers 
 needing to share text and data. Once graphical capabilities were added to the HTML language, 
@@ -29,3 +13,39 @@ Methodology, 2014–2019, May 2015). Thus, web developers need to consider how t
 utilize multimedia in making their websites attractive to the public. One of the biggest 
 challenges in delivering multimedia content is putting that content in a form that can be 
 retrieved quickly and easily without loss of quality. 
+
+Understanding Codecs and Containers 
+ 
+To achieve fast and easy transmission of multimedia content, that content is stored using a 
+codec, which is a computer program that encodes and decodes streams of data. Codecs 
+compress data so that it can be transmitted in a fast and efficient manner and then decompress 
+it when it is to be read or played back. The compression method can be either lossy or lossless. 
+Using lossy compression, onessential data are removed in order to achieve a smaller file size. 
+An audio file ight be compressed by removing sounds that the human ear can barely hear. A 
+video file might be compressed by removing frames from the video playback. The more the file 
+is compressed, the more content is lost. The sound from a highly compressed audio file can 
+become muddy and indistinct. A highly compressed video clip can become blurry or jerky in its 
+movements. Thus, one consideration in lossy compression is determining at what point 
+essential data has been removed because, once that data is lost, it cannot be recovered. 
+
+Using lossless compression, data is compressed by removing redundant 
+information. For example, the following text string, consisting of 4 as followed by 5 
+Bs, and then 6 Cs requires 15 characters of information: 
+AAAABBBBBCCCCCC 
+Yet, this content can be rewritten using the following 6 characters with no 
+loss of 4A5B6C 
+This same general technique can be applied to digital audio and video, which can 
+contain long stretches of redundant sound and images. The disadvantage of lossless 
+compression is that you cannot achieve the same level of compression as with lossy 
+compression. Most codecs involve some combination of lossy and lossless 
+techniques. Web developers can choose from dozens of different codecs to 
+compress their multimedia content.
+
+Codecs are placed within a container that handles the packaging, transportation, and 
+presentation of the data. The container is essentially the file format, which is identified by a 
+file extension. The web supports a multitude of container and codec combinations but not all 
+containers and codecs are equally supported. For example, Google Chrome uses the WebM 
+container for video content, compressing that data with the VP8 codec; however, that 
+combination of container and codec is not supported by Internet Explorer or any Apple device, 
+such as iPods or iPads. Thus, web developers have to account for browser support before 
+making any multimedia content available to the user. 

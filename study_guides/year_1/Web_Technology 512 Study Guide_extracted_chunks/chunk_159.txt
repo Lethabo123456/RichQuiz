@@ -1,7 +1,3 @@
-0, 10, 25); 
- 
-For the month value, January is 0 and December is 11. Hour values are from 0 to 23. 
- 
 6.2.5.1 Customised Dates 
 Once you have a Date object you have quite a lot of inbuilt properties available to you. 
 These allow you to get just the parts of the date and time that you require. Let us have 
@@ -19,10 +15,67 @@ towards Jan 1 of the next year then the locale year could be wrong; UTCFullYear 
 the universal year - in other words, it corrects for the end of year problem. It's up to 
 you which one you want to use. 
   
-
- 
-100 
- 
-SIX | JAVASCRIPT OBJECTS 
 Get the month 
-To get the month of the year, use ge
+To get the month of the year, use getMonth: 
+var month = the_date.getMonth(); 
+document.write( month + "<BR>"); 
+ 
+However, this will only get you a number from 0 to 11 (0 is January and 11 December). 
+If you want to turn it into an actual month you will need your own function. In the 
+code below, we have set up an array to hold all the month names: 
+ 
+Figure 6.4 
+ 
+You can then call this function like this: 
+document.write( months_of_the_year( month ) + "<BR>"); 
+ 
+With month being a number you can use it to access a position in the array. The return 
+value will then be whatever text is at that position. 
+ 
+You can even customise your month array. So if you want the months in French, for 
+example, you could do this: 
+ 
+Figure 6.5 
+You do not have to use an array. You can use a switch statement, if you prefer, with 
+each case a month number. 
+  
+Get the day of the month 
+To get the day of the month, rather oddly you need getDate. This does not get you 
+today's date but a number from 1 to 31, which is the day of the month. 
+var day_of_month = the_date.getDate(); 
+document.write( day_of_month + "<BR>" ); 
+  
+Get the weekday 
+To get the day of the week you use getDay. A number from 0 to 6 will be returned, 
+with 0 being Sunday and 6 being Saturday: 
+var weekday = the_date.getDay(); 
+document.write( weekday + "<BR>"); 
+
+Again, you can set up a function to return a name from the weekday number: 
+
+Figure 6.6 
+To call the function you can then do this: 
+document.write( day_of_week(weekday) + "<BR>");  
+ 
+Get the hours, the minutes, and the seconds 
+To get the various part of the time, you can use getHours, getMinutes, and 
+getSeconds: 
+ 
+Figure 6.7 
+You can then join then together through concatenation: 
+document.write( hours +":" + minutes + ":" + seconds + 
+"<BR>"); 
+ 
+If you want ordinals at the end of your month day then you will have to write your own 
+function. (An ordinal is the st, nd, rd, or th at the end of the number, like 1st, 2nd 3rd, 
+4th.) The function below returns the ordinal for a month day: 
+ 
+Figure 6.8 
+ 
+Here, we have used a switch statement. In English, for the numbers 1 to 31, there are 
+only 7 endings that are not "th". The switch statement tests what is in the variable 
+called day. It returns the ending corresponding to the number, or a default of "th". 
+ 
+To call this function you could then do this: 
+document.write( day_of_month + ordinal( day_of_month ) ); 
+ 

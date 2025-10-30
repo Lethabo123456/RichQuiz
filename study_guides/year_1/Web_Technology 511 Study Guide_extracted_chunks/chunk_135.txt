@@ -23,3 +23,23 @@ a variety of devices and resolutions, you can express kerning
 and tracking values as percentages or em units. Leading measures the amount of space 
 between lines of text and is set using the following line-height property 
 line-height: size; 
+ 
+where size is a value or a percentage of the font size of the text on the affected lines.  If no unit 
+is specified, the size value represents the ratio of the line height to the font size. The default 
+value is 1.2 or 1.2em so that the line height is 20% larger than the font size. By contrast, the 
+following style sets the line height to twice the font size, making the text appear double-
+spaced: 
+line-height: 2em; 
+ 
+An additional way to control text spacing is to set the indentation for the first line of a text 
+block by using the following text-indent property 
+ 
+text-indent: size; 
+ 
+Where size is expressed in absolute or relative units, or as a percentage of the width of the text 
+block. For example, an indentation value of 5% indents the first line by 5% of the width of the 
+block. The indentation value also can be negative, extending the first line to the left of the text 
+block to create a hanging indent. 
+Alison suggests you increase the kerning used in the h1 and h2 headings to 0.1em so that the 
+letters don’t crowd each other on the page. She also asks that you increase the line height of 
+the text.

@@ -1,22 +1,36 @@
-name. You do not actually need a space to the left 
-and right of the equal symbol, but it helps to make your code more readable. 
- 
-Save your work and load your web page in a browser. You should find the following 
-written to your page: 
-42 
-true 
-Lungelo 
- 
-So what just happened? Well, we stored three values in three variables. We retrieved 
-these values by just using the variable names. For example, if you had the code alert( 
-number1) the alert box would display the value 42, which we stored in the variable we 
-called number1. In other words, to get at the value itself, you just use the variable 
-name. 
- 
-You can use concatenation with variable names. For example, you can do this: 
-document.write( "The variable has a value of: " + number1 
-+ "<BR>"); 
- 
 Here, we have combined the text "The variable has a value of: " with the variable 
 name number1. We did the combining (concatenation) with the plus symbol ( +). Try it 
-yourself. Amend your document.write code so that it looks like
+yourself. Amend your document.write code so that it looks like our below: 
+document.write("The variable has a value of: " + number1 + 
+"<BR>");document.write( "Is it true or false? " + true_or_false 
++ "<BR>"); 
+document.write( "What's your first name? " + firstName + 
+"<BR>"); 
+
+Make sure you get the quotation marks and the plus symbols in the right place, 
+otherwise your code will not work. (You do not have to use double quotes, single 
+quotes work just as well. You cannot have a double quote at the start, though, and a 
+single quote at the end.) 
+ 
+The results in a browser should look like this: 
+ 
+Figure 3.3 
+ 
+3.1.1 Variable Assignment  
+When setting up a variable, we did this: 
+var number1 = 42; 
+ 
+But you do not have to store a value in the variable all on the same line. You can use 
+two lines instead: 
+var number1; 
+number1 = 42; 
+ 
+The first line here creates a variable called number1. But there is nothing stored in it. 
+The second line is where we store something in the variable. Note that the var has now 
+gone missing - you only need to use var once when you are setting up (declaring) your 
+variables. 
+ 
+You can also assign a different value to a variable. For example, you can do this: 
+var number1; 
+number1 = 42; 
+number1 = 100; 

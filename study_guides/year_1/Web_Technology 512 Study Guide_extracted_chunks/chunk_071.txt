@@ -1,34 +1,58 @@
-osing you wanted to test a variable to 
-see what value it holds. But you also want to do further tests on it. You can do this kind 
-of thing: 
-if ( x > 1)  
-{ 
- 
-if ( x == 2)  
-{ 
-} 
-else if (x == 3 )  
-{ 
-} 
-} 
-In the code above, we have first testing if the variable x is greater than 1. But we want 
-to narrow it down even further. If it is indeed greater than 1 then a nested if … else 
-statement gets executed. This further scrutinises the x variable. 
-  
 3.5 JAVASCRIPT COMPARISON OPERATORS 
  
-
- 
-47 
- 
-THREE | JAVASCRIPT PROGRAMMING BASICS 
 The IF statements you have used so far test a condition for true or false. They have 
 used the double equal sign (==). But there are other operators you can use besides the 
 double equal sign. These are known as comparison operators. Here are some more of 
-them. Remember, all these evaluate to either true or false. 
+them. Remember, all these evaluate to either true or false.
+ 
 !=   Is not equal to 
 >    Greater Than 
 <    Less Than 
 >=    Greater Than or equal to 
 <=    Less Than or equal to 
-===    Is exactl
+===    Is exactly like and is of the same variable type as 
+ 
+To try then out, change the code between your two JavaScript tags to this (or create a 
+new one, if you prefer): 
+ 
+So this script places a value of true in a variable called over_eighteen. We trying to see 
+what is in this variable with the help of an if … else statement. In between the round 
+brackets of IF we have this: 
+over_eighteen != true 
+ 
+This reads "If over_eighteen does not equal true". So we want something to happen if 
+our variable does not contain what we are looking for. Except, it does contain a value 
+of true. So Javascript will skip this part and jump to the else part. The else part writes 
+the text "You have passed the age test!" to the browser. 
+ 
+Save your work and test it out. Now change var over_eighteen = true to var 
+over_eighteen = false. Save and rerun the script in your browser. You should see the 
+message "You're too young - go away!". 
+
+Now try this script: 
+
+The first line gets the Inner Width available to the browser. We want to check what 
+this is. Our IF statement uses the Greater Than operator ( > ) to check if the value in the 
+available_width variable is more than 800 pixels. (If we wanted more precision we 
+could have used the >= operator, which means Greater Than or Equal To.) If the 
+condition evaluates to true (it is more than 800) then we'll show a larger image. 
+However, if the condition evaluates to false then we'll show the smaller image. 
+
+The final operator on the list is this one ===. So it is triple equal signs, this time. The 
+three equal signs are called the identity operator. This is used when you want to check 
+a variable for equality and that it is of the same variable type. For example, take the 
+script below: 
+ 
+If you run the script, the first IF statement will evaluate to true, meaning that the 
+variable does indeed hold a value of 17 and that its variable is the number type. 
+However, change the first line to this: 
+
+var identity = "17"; 
+ 
+We have now surrounded the number 17 with double quotes, turning it into text. 
+When the code is run again, the else if part of the statement now evaluates to true, 
+while the first part evaluates to false. 
+ 
+So you get more precision with the treble equal sign than you do with the double. Try 
+not to worry too much about it, though: we will use the double equal sign unless we 
+really need the treble one. 

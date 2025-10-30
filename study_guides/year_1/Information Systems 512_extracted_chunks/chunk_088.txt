@@ -1,27 +1,53 @@
-stics of Optical Discs 
- 
-Optical discs store items by using microscopic pits (indentations) and lands (flats areas) that are in the 
-middle layer of the disc. Optical discs commonly store items in a single track that spirals from the 
-center of the disc to the edge of the disc. Track is divided into evenly sized sectors. 
- 
-CDs 
-CDs are available in three basic formats: read-only, recordable, and rewritable 
- CD-ROM 
- CD-R 
- CD-RW 
- 
- 
-DVDs 
-
-Page 55 of 117 
- 
-As with CDs, are available in three basic formats: read-only, recordable, and rewritable. 
- DVD-ROM 
- DVD-R and DVD+R 
- DVD-RW, DVD+RW, DVD+RAM 
-3.5 
-ENTERPRISE STORAGE 
+3.5 ENTERPRISE STORAGE 
 Enterprise hardware allows large organizations to manage and store data and information using 
 devices intended for heavy use, maximum efficiency, and maximum availability. The availability of 
 hardware to users is a measure of how often it is online. Enterprise storage often uses Fibre Channel 
-(FC) technology as the interface that connects the devices
+(FC) technology as the interface that connects the devices to the network because FC technology has 
+much faster transmission rates than SCSI and other previously discussed interfaces. 
+ NAS and SAN 
+Network attached storage (NAS) is a server that is placed on a network with the sole purpose of 
+providing storage to users, computers, and devices attached to the network. A network attached 
+storage server, often called a storage appliance, has its own IP address, usually does not have a 
+keyboard or display, and contains at least one hard drive, often configured in a RAID. Administrators 
+can add storage to an existing network quickly by connecting a network attached storage server to a 
+network. 
+
+A storage area network (SAN) is a high-speed network with the sole purpose of providing 
+storage to other attached servers. 
+ 
+ Tape  
+Tape is a magnetically coated ribbon of plastic capable of storing large amounts of data and 
+information. Tape no longer is used as a primary method of storage. Instead, businesses use 
+tape most often for long- term storage and backup. 
+Comparable to a cassette recorder, a tape drive reads from and writes on a magnetic tape. 
+Although older computers used reel-to-reel tape drives, today’s tape drives use tape 
+cartridges. 
+ Magnetic stripe card 
+A magnetic stripe card has a magnetic stripe that contains information. The information in 
+the stripe often includes your name, account number, and the card’s expiration date. When 
+you swipe the card through a magstripe reader, discussed in the previous chapter, it reads 
+information stored on the stripe.
+
+ Smart Cards 
+A smart card, which is an alternative to a magnetic stripe card, stores data on an integrated 
+circuit embedded in the card.  
+circuit embedded in the card.  
+Two types of smart cards, also called chip cards, are: 
+ contact and  
+ Contactless 
+When you insert a contact smart card in a specialized card reader, the information on the 
+smart card is read and, if necessary, updated. Contactless smart cards communicate with a 
+reader using a radio frequency, which means the user simply places the card near the 
+reader. 
+
+ RFID Tags 
+The RFID tag consists of an antenna and a memory chip that contains the information to be 
+transmitted via radio waves. RFID tags are either active or passive. An active RFID Tag contains 
+a battery that runs the chip’s circuitry and broadcasts a signal to the RFID reader. A passive 
+RFID tag does not contain a battery and, thus, cannot send a signal until the reader activates 
+the tag’s antenna by sending out electromagnetic waves. 
+ NFC Chips and Tags 
+NFC is a technology (based on RFID) that uses close-range radio signals to transmit data 
+between two NFC-enabled devices or an NFC-enabled device and an NFC tag. NFC-enabled 
+devices include smartphones, digital cameras, computers, televisions, and terminals. An NFC-
+enabled 

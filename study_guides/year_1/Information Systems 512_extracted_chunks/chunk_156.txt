@@ -1,19 +1,23 @@
-d in a Birth Date field. 
- Check digit 
- 
-A check digit is a number(s) or character(s) that is appended to or inserted in a primary key 
-value. A check digit often confirms the accuracy of a primary key value. Bank account, credit 
-card, and other identification numbers often include one or more check digits. 
- Other Checks  
-DBMSs that include the hyperlink and attachment data types can perform validity checks on data 
-entered in those fields. Hyperlink entries (web addresses and email addresses) can be tested to ensure 
-that the address follows the correct format. Similarly, an attachment entry can be validated by 
-confirming that the file exists. 
- 
-.1 
-FILE PROCESSING VERSUS DATABASES 
- 
-In the past, many organizations exclusively used file processing systems to store and manage 
-data. In a typical, file processing system, each department or area within an organization has 
-its own set of files. The records in one file may not relate to the records in any other file.  
-Many of th
+ Isolated data:  
+It often is difficult to access data that is stored in separate files in different departments. 
+Assume, for example, that the student email addresses exist in the Student files and class 
+room numbers (locations) are in the Schedule of Classes file. To send an email message 
+informing students about a room change, data is needed from both the Student file and the 
+Schedule of Classes file. Sharing data from multiple, separate files to generate such a list in a 
+file processing system often is a complicated procedure and usually requires an experienced 
+programmer. 
+
+ The Database Approach 
+When an organization uses a database approach, many programs and users share the data in 
+the database. A school’s database most likely, at a minimum, contains data about students, 
+instructors, schedule of classes, and student schedules. Various areas within the school share 
+and interact with the data in this database. The database does secure its data, however, so 
+that only authorized users can access certain data items.  
+While a user is working with the database, the DBMS resides in the computer’s memory. 
+Instead of working directly with the DBMS, some users interact with a front end. A front end 
+is a program that generally has a more user-friendly interface than the DBMS. For example, a 
+registration department specialist interacts with the Class Registration program by filling out 
+a form. This front-end program interacts with the DBMS, which, in turn, interacts with the 
+database. Many programs today use forms on a webpage as their front end. An applica- tion 
+that supports a front-end program by interacting directly with the database some- times is 
+called the back end. In this case, the DBMS is the back end. 

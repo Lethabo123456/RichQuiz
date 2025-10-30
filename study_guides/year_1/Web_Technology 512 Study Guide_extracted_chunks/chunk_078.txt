@@ -1,5 +1,7 @@
-rators are just to the left of the Z key. Hold down a SHIFT key 
+The OR operators (||) allow you to check if just one of the values is true. (On a UK 
+keyboard the OR operators are just to the left of the Z key. Hold down a SHIFT key 
 first.) Change your IF statement to this: 
+
 if ( cookies_enabled || javascript_enabled )  
 { 
  
@@ -15,12 +17,8 @@ whole statement will be true.
  
 Let's have one more example just to clear things. Change your script to this: 
 var age = 24; 
-if ( age >= 18 && age <= 30 )  
 
- 
-51 
- 
-THREE | JAVASCRIPT PROGRAMMING BASICS 
+if ( age >= 18 && age <= 30 )  
 { 
 document.write("Between 18 and 30"); 
 } 
@@ -30,4 +28,14 @@ document.write("Not Between 18 and 30");
 } 
  
 This script checks to an age range. First we set a variable called age to a value of 24. 
-We then use an IF st
+We then use an IF statement to see what is in the variable. Between the round 
+brackets we have this: 
+
+age>= 18 && age <= 30 
+
+This reads, "IF age is greater than or equal to 18 AND age is less than or equal to 30". If 
+both those things are true then the whole statement becomes true, and the first 
+document.write gets executed. If just one of them is false then the whole statement 
+becomes false. To illustrate that, change the age variable from 24 to 14. Save the 
+change and refresh the page in your browser. You should find that the else part gets 
+executed.

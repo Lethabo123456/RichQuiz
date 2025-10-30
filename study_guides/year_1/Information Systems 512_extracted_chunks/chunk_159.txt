@@ -1,20 +1,36 @@
-hedules. Various areas within the school share 
-and interact with the data in this database. The database does secure its data, however, so 
-that only authorized users can access certain data items.  
-While a user is working with the database, the DBMS resides in the computer’s memory. 
-Instead of working directly with the DBMS, some users interact with a front end. A front end 
-is a program that generally has a more user-friendly interface than the DBMS. For example, a 
-registration department specialist interacts with the Class Registration program by filling out 
-a form. This front-end program interacts with the DBMS, which, in turn, interacts with the 
-database. Many programs today use forms on a webpage as their front end. An applica- tion 
-that supports a front-end program by interacting directly with the database some- times is 
-called the back end. In this case, the DBMS is the back end. 
- 
-
-Page 99 of 117 
- 
- 
- 
 Advantages of Database Approach 
  Reduced data redundancy:  
-Mos
+Most data items are stored in only one file, which greatly reduces duplicate data. For example, 
+a school’s database would record a student’s name and address only once. When student 
+data is entered or changed, one employee makes the change once.   
+ Improved data integrity:  
+When users modify data in the database, they make changes to one file instead of multiple 
+files. Thus, the database approach increases the data’s integrity by reducing the possibility of 
+introducing inconsistencies. 
+ Shared data:  
+The data in a database environment belongs to and is shared, usually over a network, by the 
+entire organization. This data is independent of, or separate from, the programs that access 
+the data. Organizations that use databases typically have security settings to define who can 
+access, add, modify, and delete the data in a database. 
+ Easier access:  
+The database approach allows nontechnical users to access and maintain data, provided they 
+have the necessary privileges. Many computer users also can develop smaller databases 
+themselves, without professional assistance. 
+ Reduced development time:  
+It often is easier and faster to develop programs that use the database approach. Many 
+DBMSs include several tools to assist in developing programs, which further reduces the 
+development time. 
+
+Disadvantages of Database Approach 
+ A database can be more complex than a file processing system. People with special 
+training usually develop larger databases and their associated applications.  
+ Databases also require more memory and processing power than file processing 
+systems. 
+ Data in a database can be more vulnerable than data in file processing systems 
+because it can store a lot of data in a single physical file. Many users and programs 
+share and depend on this data. If the database is not operating properly or is 
+damaged or destroyed, users may not be able to perform their jobs.  
+ Further, unauthorized users potentially could gain access to a single database file 
+that contains several data files of personal and confidential data. To protect their 
+database resource, individuals and companies should establish and follow security 
+procedures. 

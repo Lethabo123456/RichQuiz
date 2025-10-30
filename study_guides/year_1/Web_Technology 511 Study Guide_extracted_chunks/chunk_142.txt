@@ -1,11 +1,5 @@
 NINE | FORMS 
  
-LEARNING OUTCOMES 
-1. Use forms to communicate with users 
-2. Add text boxes, text area fields, list boxes, radio buttons and check 
-boxes to a form 
-3. Add submit and reset buttons 
- 
 INTRODUCTION 
  
 In general, if you want to collect vital information about someone or something, the 
@@ -22,3 +16,20 @@ the data by assigning the value POST or GET to the METHOD attribute. POST is use
 when you want to store the data of the form in the database and GET is used to 
 retrieve data from the database. You use the ACTION attribute of the FORM tag to 
 specify the URL of a program that processes this data. 
+
+Creating forms 
+A form can contain many fields, such as text boxes, text area fields, radio buttons, and 
+check boxes (see Exhibit 0-14). You use the <input> tag within the FORM tag to create 
+fields and other elements in a form. This is an empty container. The TYPE attribute of the 
+INPUT tag allows you to specify the type of the field that you want to add to a page. 
+For example, to add a text box, you would use the following code within the FORM 
+tag: 
+
+<INPUT TYPE="text">
+
+Exhibit 0-14: A form on a page  
+
+The syntax for creating a form is as follows: 
+<form> 
+Input element 
+</form> 

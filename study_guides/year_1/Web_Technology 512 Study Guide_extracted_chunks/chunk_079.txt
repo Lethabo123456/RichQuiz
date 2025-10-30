@@ -1,18 +1,3 @@
-t checks to an age range. First we set a variable called age to a value of 24. 
-We then use an IF statement to see what is in the variable. Between the round 
-brackets we have this: 
-age>= 18 && age <= 30 
- 
-This reads, "IF age is greater than or equal to 18 AND age is less than or equal to 30". If 
-both those things are true then the whole statement becomes true, and the first 
-document.write gets executed. If just one of them is false then the whole statement 
-becomes false. To illustrate that, change the age variable from 24 to 14. Save the 
-change and refresh the page in your browser. You should find that the else part gets 
-executed. 
- 
-Exercise 
-Add an ELSE IF part to your code. Make this ELSE IF part check the age ranges 13 to 17. 
- 
 3.8 THE NOT OPERATOR 
  
 You saw above the shorthand way to check for true values: 
@@ -20,4 +5,37 @@ if ( cookies_enabled && javascript_enabled )
 { 
  
 This saves you having to type cookies_enabled == true. You can do this because by 
-default JavaScript will check y
+default JavaScript will check your Boolean variables for a true value. If you want to 
+check for a false value, you can use the NOT operator. (The NOT operator is just an 
+exclamation mark/point.) Examine this code: 
+if ( !cookies_enabled)  
+{ 
+} 
+ 
+Now the cookies_enabled variable has a NOT operator before it. By default, JavaScript 
+will check for a true value. By placing a NOT operator before a Boolean value you are 
+saying "If NOT true". If something is not true then it is false. In other words, if you 
+want a quick way to check for a false value, type an exclamation mark before your 
+Boolean variable.
+
+A popular use of the NOT operator is to toggle a Boolean to either true or false. It is 
+done like this: 
+
+bool_value = !bool_value; 
+
+On the right hand side of the equal sign the NOT operator flips the value. Once 
+JavaScript has flipped the true or false value it puts the answer into the variable on the 
+left. This is the same variable as the one the right hand side. So bool_value will be the 
+opposite of what it was before. In other words, if the variable bool_value was true 
+before this line then it will be false after it. Likewise, if it was false before then it will 
+be true after. Test it out with this code:
+
+var bool_value = true; 
+document.write( bool_value + "<BR>" ); 
+bool_value = !bool_value; 
+document.write( bool_value ); 
+ 
+You should find that it writes true the first time and false the second time. Change the 
+first line from true to false. Now rerun your script. It should be the other way round 
+this time: it writes false the first time and true the second time. 
+    

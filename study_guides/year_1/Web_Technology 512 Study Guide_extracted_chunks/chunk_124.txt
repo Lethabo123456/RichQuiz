@@ -1,36 +1,10 @@
-10. Which of the following is not a valid function name? 
-a. 
-1Calculate() 
-b. 
-getName() 
-c. 
-getDetails() 
-d. 
-student() 
- 
- 
- 
- 
- 
-
- 
-79 
- 
 FIVE | JAVASCRIPT STRING MANIPULATION 
-FIVE | JAVASCRIPT STRING MANIPULATION 
- 
-Learning Outcomes 
- 
-1. Manipulate strings using the inbuilt methods 
  
 5.1 JAVASCRIPT STRINGS - CHANGING CASE 
  
-A big part of your life as a programmer is 
-manipulating strings of text. To help you with this, 
-JavaScript comes with lots of inbuilt methods you 
-can use. We will take a look these in this and the 
-next few sections. Before you go any further, 
-though, create a new web page with two SCRIPT 
+A big part of your life as a programmer is manipulating strings of text. To help you with this, 
+JavaScript comes with lots of inbuilt methods you can use. We will take a look these in this and the 
+next few sections. Before you go any further, though, create a new web page with two SCRIPT 
 tags in the HEAD section.  
  
 5.1.1 Changing Case 
@@ -38,7 +12,40 @@ tags in the HEAD section.
 If you need to change the case of a string of text you can use the two inbuilt methods 
 toUpperCase and toLowerCase. They are fairly easy to use. Add the following to your 
 two SCRIPT tags: 
+
 <SCRIPT LANGUAGE = "Javascript"> 
 var postcode = "sr2 4jh"; 
 var new_postcode = postcode.toUpperCase(); 
-document.write( ne
+document.write( new_postcode ); 
+</SCRIPT> 
+
+The first line sets up a variable called postcode. Imagine you have got this value from a 
+text box on a form. You want to make sure that the letters are all uppercase. You can 
+convert them by using toUpperCase (note the capital letters "U" and "C"). But look at 
+how it's done: 
+
+var new_postcode = postcode.toUpperCase(); 
+ 
+To the right of the equal sign you type the variable you want to convert. After a dot 
+you type the method name, toUpperCase, followed by a pair of empty round brackets. 
+End the line in the usual way with a semicolon. 
+ 
+Another thing to notice here is that we have a new variable to the left of the equal 
+sign. The newly converted value will be placed in the variable we have called 
+new_postcode. The reason that we are storing the converted value into a new variable 
+is because in JavaScript strings are immutable. This means that you cannot actually 
+change any characters in a string. What JavaScript does instead is to create an entirely 
+ 
+new string for you, leaving the original untouched. As an example, add another 
+document.write to the end of your code, as well as a BR tag to the first one: 
+document.write(new_postcode + "<BR>"); 
+document.write( postcode ); 
+ 
+When you run your script in a web browser new_postcode will be SR2 4JH while 
+postcode will be sr2 4jh. The original postcode variable has been left untouched. 
+However, you can do this: 
+var postcode = "sr2 4jh"; 
+postcode = postcode.toUpperCase(); 
+ 
+But be aware that you are creating a new string to the right of the equal sign and 
+storing it back into the postcode variable.

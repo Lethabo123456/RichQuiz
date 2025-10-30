@@ -1,26 +1,28 @@
-re creating a new string to the right of the equal sign and 
-storing it back into the postcode variable. 
- 
-Exercise 5.1 
-Change the postcode variable to SR2 4JH on the first line of your code. Now use 
-toLowerCase to convert it. 
- 
 5.2 JAVASCRIPT STRINGS - INDEXOF 
  
-The indexOf method tells you if a string of text 
-contains a particular character, the @ sign in an 
-email address for example. It would not check 
-every occurrence of the character, but just the 
-first one. If the character cannot be found then 
-IndexOf returns a value of -1 (minus 1). If the 
-character is found then the value returned is the 
-position in the string (6th character, for example). 
+The indexOf method tells you if a string of text contains a particular character, the @ sign in an 
+email address for example. It would not check every occurrence of the character, but just the 
+first one. If the character cannot be found then IndexOf returns a value of -1 (minus 1). If the 
+character is found then the value returned is the position in the string (6th character, for example). 
  
 To test out indexOf (capital letter "O"), change your code to this (or create a new web 
-page): 
+page):
+ 
 var email = "meme@meme.com"; 
 var at_sign = email.indexOf('@'); 
 document.write( at_sign ); 
  
 This code sets up a variable to hold an email address. We want to check if the email 
-address contains an @ sign. indexOf is used like t
+address contains an @ sign. indexOf is used like this: 
+var at_sign = email.indexOf('@'); 
+ 
+Again, you start on the right of an equal sign, and with the variable you want to check. 
+After a dot, you type IndexOf. In between the round brackets of indexOf you need to 
+type the character or characters you are checking for. The character or characters 
+need to go between quotation marks. (You can check for more than one character, 
+.com, for example. In which case the number returned will be for the first character of 
+your string.) 
+ 
+If you run the script above, you will find that JavaScript returns a value of 4. You might 
+think that the @ sign in our email address is at position 5. However, JavaScript starts 
+the count from 0, which is why the answer is 4. 

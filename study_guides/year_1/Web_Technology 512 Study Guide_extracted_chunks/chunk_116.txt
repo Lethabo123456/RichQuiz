@@ -1,15 +1,5 @@
-dFunction, the else part will be executed. In 
-practice, though, you would want the number of arguments to match. So if a second 
-function is accepting two arguments then the calling line should pass over two values. 
-It can be terribly confusing otherwise. 
- 
 4.3 VARIABLE SCOPE 
  
-
- 
-73 
- 
-FOUR | ARRAYS AND FUNCTIONS 
 Variables have something called scope. This is to do with where variables can be seen 
 from. Variables declared with the var keyword inside of functions cannot be seen 
 from outside of that function. Examine this code: 
@@ -27,4 +17,37 @@ alert( alertString );
 The first function has a variable set up inside of its curly brackets called alertString. It 
 is set up with the var keyword. The second function is trying to access this variable in 
 an alert box. However, the code does not work, and you get an error message saying 
-"alertString is not defined". It does not work bec
+"alertString is not defined". It does not work because the variable alertString is local 
+to myFunction (it is inside of this function's curly brackets and has been set up with 
+the var keyword). So the second function cannot see inside of this variable. 
+ 
+To remedy this, you can make variables global in scope. All this entails is declaring 
+them outside of any functions. Like this: 
+var alertString = "ALERT!"; 
+
+function myFunction()  
+{ 
+secondFunction(); 
+} 
+function secondFunction()  
+{ 
+alert( alertString ); 
+} 
+ 
+With the variable declared outside of the two functions, at the top, the code will now 
+work. (You can also miss out the word var keyword from inside a function to turn the 
+variable into a global one.) 
+ 
+However, scope in the JavaScript language can be quite complex, especially when you 
+take into account things called closure and prototypes. Just remember to take care 
+when declaring variables inside of functions - they cannot be seen outside of that 
+function if you declare them with the var keyword. 
+ 
+To end this section, let us have a look at some code that uses functions in a real 
+setting. The HTML in the BODY section below sets up a text box and a button. (We 
+have missed out FORM tags just to keep things simple. But you will learn about 
+JavaScript and FORMS in a later chapter.) We want users to fill in this box. If it is 
+empty when the button is clicked we will display an error message just above the text 
+box. Here is the code: 
+
+Figure 4.8 – Simple Form Validation 

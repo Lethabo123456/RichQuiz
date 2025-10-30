@@ -1,16 +1,37 @@
-s in use today are: 
- Relational database  
-A relational database is a database that stores data in tables that consist of rows and columns. 
-In addition to storing data, a relational database also stores data relationships. A relationship 
-is a link within the data. Applications best suited for relational databases are those whose 
-data can be organized into a two-dimensional table, that is, tables with rows and columns. 
-Many organizations use relational databases for payroll, accounts receivable, accounts 
-payable, general ledger, inventory, order entry, invoicing, and other business-related 
-functions. 
- 
- 
  Object-Oriented Database 
 An object-oriented database (OODB) stores data in objects. An object is an item that contains 
 data, as well as the actions that read or process the data. Examples of applications 
 appropriate for an object-oriented database include media databases that store images, 
-audio clips, and/or video clips; groupware databases that store documents, such as
+audio clips, and/or video clips; groupware databases that store documents, such as schedules, 
+calendars, manuals, memos, and reports; and CAD (computer-aided design) databases that 
+store data about engineering, architectural, and scientific designs. 
+ Multidimensional and other database types 
+ 
+A multidimensional database stores data in dimensions. Whereas a relational database is a 
+two-dimensional table, a multidimensional database can store more than two dimensions of 
+data. These multiple dimensions allow users to access and analyze any view of the database 
+data. One application that uses multi-dimensional databases is a data warehouse. A data 
+warehouse is a huge database that stores and manages the data required to analyze historical 
+and current transactions. The database in a data warehouse often is distributed. The data in 
+a distributed database exists in many separate locations throughout a network or the 
+Internet. Although the data is accessible through a single server, the physical location of the 
+server on which it is stored is transparent and often unknown, to the user. 
+
+ Big Data 
+Recent technology trends have resulted in activities that generate large quantities of data. 
+These trends include the following: 
+• Growth of online commerce, social, and government applications  
+• Increased use of mobile devices  
+• Emergence of the Internet of Things  
+• Development of cloud computing 
+• Availability of Internet connectivity through wired and wireless networks 
+
+Big Data refers to large-scale data sets that require advanced technologies beyond the 
+capabilities of typical database soft- ware to gather, store, process, retrieve, or analyze. 
+Online business transactions, posts on social networks, government agencies, media and text 
+messages from tablets and smartphones, and automated sensors produce data that is stored 
+in databases located stored on servers distributed across the Internet. 
+Read Mini Feature 11-2 to learn more about characteristics and sources of Big Data, and 
+technologies that facilitate working with large-scale distributed databases. 
+
+ 

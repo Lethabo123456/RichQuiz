@@ -1,34 +1,83 @@
-ccesses information about browsing history. This object is of limited use since 
-you can't get at which pages a user has visited, just how many pages are in the 
-browsing 
-history. 
-You 
-can 
-also 
-access 
-the methods history.back, 
-history.forward and history.go. There are not many situations where you 
-want to, though. 
-window.innerHeightand window.innerWidth 
- 
-Gets the height and width of the available space on the page 
-window.screen  
- 
-Gets information about the browser screen. 
- 
 You may think that screen is the same as innerHeight and innerWidth but they are not. 
 As an example, create a new HTML page with SCRIPT tags in the HEAD section.  
 Now add the following Javascript: 
- 
- 
+  
 Figure 2.12  -innerHeight 
 So it is just an alert box with window.innerHeight between the two round 
 brackets. Previously, we had text in between the round brackets surrounded by double 
 quotes. 
  
 Save your page and load it into your browser. When the page loads, you should see 
+this: 
+ 
+Figure 2.13 – innerHeight in pixelson Firefox 
 
+The 908 in the alert box means 908 pixels worth of height. Yours may well be different. 
+It depends on how big your monitor is, and how many toolbars you have in your 
+browser. The alert box above is from Firefox. Here's the same web page in Internet 
+Explorer version 9: 
  
-22 
+Figure 2.14 – innerHeight in pixels on Internet Explorer version 9 
  
-TWO | JAVASCR
+Our Internet Explorer has no toolbars, just the address bar at the top, so the number 
+of pixels is greater. 
+Now reduce the size of your browser. In windows, you can click the Restore Down icon 
+to do this. (The Restore Down icon is just to the left of the red X in the top right.) Mac 
+users can resize with the mouse pointer held over the bottom right of the browser. 
+ 
+Refresh your page by hitting the F5 key on your keyboard. Your innerHeight value 
+should change: 
+ 
+Figure 2.14 – innerHeight in pixels on Firefox with reduce size 
+
+Now change your alert box code to this: 
+
+alert( window.screen.height ) 
+
+This time, we're using the height value of the screen object. Save your work and 
+refresh. No matter what size you have the browser, you should see the same screen 
+height: 
+ 
+Figure 2.15– Screen Height in pixels on Firefox 
+ 
+For us, the screen height is 1080 pixels. It will remain 1080 pixels whether we have a 
+big browser size or large browser size.  
+ 
+So if you're trying to get the available size that a web page has, you should not rely on 
+the window.screen objects.  
+window.navigator 
+Used to get information about the browser. The navigator object exposes lots of other 
+objects you can use. For example, there's this one: 
+window.navigator.cookieEnabled 
+
+If you put that between the round brackets of an alert box it will tell you if cookies 
+have been enabled in your browser. This is usually used in anIF Statement, though. If 
+the answer is yes, then a cookie can be set on a user's computer. If no, then you can 
+ask people to enable cookies. 
+
+Other navigator objects are: 
+ appName 
+ appVersion 
+ language 
+ platform 
+ userAgent 
+ 
+Try them out in an alert box and see what they do. You cannot rely on the first two, 
+however. appName, for example, will return Netscape in Firefox and Safari. You can 
+use userAgent to detect if someone is surfing your site with, say, an iPad. The 
+userAgent will say something like: 
+"Mozilla/5.0(iPad; CPU OS 5_0_1 like Mac OS X)" 
+ 
+window.location 
+
+You can do some quite advanced stuff with the location object, but the main use of 
+location is to redirect a user to another web page. For example, if you detected 
+someone was using an iPad then you can redirect them to your iPad optimised page. 
+The location object is used like this: 
+window.location = "http://www.homeandlearn.co.uk/"; 
+ 
+After an equal sign, you type the name of the web page or site that you want your 
+visitors to go to. This needs to go between quotation marks. Notice the use of a 
+semicolon at the end of the line above. This is not strictly necessary. But it is 
+recommended that you separate each line of code with a semicolon. We'll be doing 
+that from now on. 

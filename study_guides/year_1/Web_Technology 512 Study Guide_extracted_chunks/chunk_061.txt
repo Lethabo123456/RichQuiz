@@ -1,36 +1,34 @@
-hy is this interesting? You can tell if a number is odd or 
-even with modulus. All you need to do is divide any number by 2. If there's no 
-remainder then you know the number is even. If there is a remainder then the number 
-is odd. Here is some code to examine: 
-var result = 31 % 2; 
-if (result == 1)  
-{ 
-document.write("Odd number"); 
-} 
-else 
-{ 
-document.write("Even number"); 
-} 
+3.4 JAVASCRIPT CONDITIONAL STATEMENTS (IF STATEMENTS) 
  
-Although you have not done IF statements yet, you should be able to figure out what is 
-going on. First we test a number using the modulus operator. We then say IF 31 MOD 2 
-has a value of 1 then write "Odd number", ELSE 
-write "Even number". 
- 
-3.4 JAVASCRIPT CONDITIONAL STATEMENTS (IF 
-STATEMENTS) 
- 
-JavaScript is what is known as a sequential 
-programming language. This means that each and 
- 
-Multimedia Resource 
- 
-https://www.youtube.com/watc
-h?v=T81E3cSoN5E 
-
- 
-42 
- 
-THREE | THREE | JAVASCRIPT PROGRAMMING BASICS 
+JavaScript is what is known as a sequential programming language. This means that each and 
 every line of code is executed from top to bottom. Quite often, however, you do not 
-wan
+want every line to execute - you'll want more control over the way your programmes 
+work. 
+ 
+One way to control the flow of your code is with conditional logic. Conditional logic is 
+all about what happens IF a condition is met or not met. For example, you may have an 
+email text box on a form that you want your users to fill in. You don't want this text 
+box to be empty when the user click the SUBMIT button. So you need a way to say "IF 
+the email address is missing THEN do not send the form". You do this with IF Statement. 
+ 
+3.4.1 IF Statements 
+You can use an IF Statement to control the flow of your JavaScript code. An IF Statement will evaluate 
+to either true or false. They look like this: 
+ 
+if ( condition_to_test)  
+{  
+ 
+//code to be executed comes here. 
+}
+ 
+So it is just the word "if" in lowercase. Next is a pair of round brackets. In between the 
+round brackets you need a condition to test. The condition will be evaluated and 
+checked if it is true. If your condition is true then whatever code you have between a 
+pair of curly brackets will get executed. IF your condition is false then the code 
+between the curly brackets will be ignored. Take the following code as an example: 
+
+var first_name = "Kenny"; 
+if ( first_name == "Kenny" )  
+{ 
+document.write( "First Name is Kenny " + first_name ); 
+}

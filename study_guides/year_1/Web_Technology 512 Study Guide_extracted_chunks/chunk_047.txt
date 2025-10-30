@@ -1,40 +1,58 @@
-e some important considerations.  
- 
-These: 
- 
-You cannot have spaces in your variable 
- 
-You cannot start your variable name with a 
-number 
- 
-The variable should contain only letters, 
-numbers ( but not the first character of the 
-variable), a dollar sign ($) and an underscore ( _ ) 
- 
-Here are some valid variable names: 
-number1 
-moms_phone_number 
-$firstName 
- 
-And here are some that will get you into trouble: 
-1number 
-moms phone number 
-"firstName" 
- 
-For the ones that will get you into trouble, the first variable starts with a number, the 
- 
-THINK POINT 
- 
-What are the advantages of 
-using variables? 
-After reading this Section of the guide, the learner should be able to: 
-
- 
-35 
- 
-THREE | JAVASCRIPT PROGRAMMING BASICS 
 second one has spaces, and the third is surrounded with double quotes. 
  
 To store something in a variable, you use an equals symbols ( = ). You can store 
 numbers, strings of text and Boolean values in a variable. (Boolean values are Yes/No, 
-True/False, 1 or
+True/False, 1 or 0.) These three, numbers, strings, and Booleans, are called primitive 
+data types. As well as the primitive data types you can also store objects in variables, 
+objects like the Window, Navigator, and Document objects we covered earlier in Topic 
+2.Let us get some practical work done, though.
+
+Create a new web page for this. Add the JavaScript tags to the HEAD section of the 
+HTML. In between the JavaScript tags, set up the following three variable and their 
+values: 
+ 
+var number1 = 42; 
+var true_or_false = true; 
+var firstName = 'Kenny'; 
+ 
+Your web page should then look like Figure 3.1 below:  
+
+Figure 3.1 – Variable declaration 
+
+So we have three JavaScript variables set up, all starting with the keyword var. The 
+first variable stores the number 42, the second stores a value of true, and the third 
+one stores the text 'Kenny'. Notice that the first two variables, the number and the 
+Boolean, don't need any quote marks. The third one does, however: if you want to 
+store strings of text they need to go between quotations marks, either single quotes or 
+double quotes, but not a mixture of the two. 
+
+Now add the following write lines to your code 
+document.write( number1 + "<BR>" ); 
+document.write( true_or_false + "<BR>" ); 
+document.write( firstName + "<BR>" ); 
+ 
+So we are using document.write to see what is inside of the variables. (The + 
+"<BR>" is just so that each variable will be printed on a line of its own.) 
+
+Your Javascript should look like this: 
+ 
+Figure 3.2 – Writing variable contents 
+
+Make sure you end each line with a semicolon ( ; ). Make sure, too, that you have a 
+space between var and the variable name. You do not actually need a space to the left 
+and right of the equal symbol, but it helps to make your code more readable. 
+ 
+Save your work and load your web page in a browser. You should find the following 
+written to your page: 
+ 
+true Lungelo 
+ 
+So what just happened? Well, we stored three values in three variables. We retrieved 
+these values by just using the variable names. For example, if you had the code alert( 
+number1) the alert box would display the value 42, which we stored in the variable we 
+called number1. In other words, to get at the value itself, you just use the variable 
+name. 
+
+You can use concatenation with variable names. For example, you can do this: 
+document.write( "The variable has a value of: " + number1 
++ "<BR>"); 

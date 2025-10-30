@@ -10,4 +10,30 @@ Observe the page                              The text that follows the BR tag
                                               appears on the next line (as shown in
                                               Exhibit 0-3). 
 
+4.3 COMMENTS 
+In HTML a comment (or comments) is information a designer can add to the HTML 
+source code for reference. Comments are not viewed by the user or displayed on the 
+web browser, but only when viewing the HTML source code. HTML allows you to add 
+comments within the code to help the reader better understand the code. To add a 
+comment to the code for a page, use the following code: 
+
+Adding comments 
+Here’s how                               Here’s why 
+----------------------------------------------------------------------------
+Open the source code                     You’ll add comments in this code.
+----------------------------------------------------------------------------
+Place the insertion point as shown       </HEAD>
+
+                                         <BODY>
+----------------------------------------------------------------------------
+Enter the following code: 
+----------------------------------------------------------------------------
+<!--Contents of the page-->              To add a comment in the code.
+----------------------------------------------------------------------------
+Update and close the source code
+----------------------------------------------------------------------------
+Refresh and observe the page             The text enclosed within the comment 
+                                         tag does not appear on 
+                                         the page. 
+
  

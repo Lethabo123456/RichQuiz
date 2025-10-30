@@ -1,21 +1,64 @@
-the addition with round brackets. Like this: 
-total = ( number1 + number2 ) / 2; 
- 
-Now JavaScript will do the sums between the round brackets first and then divide by 2. 
- 
-If you wanted to divide the second number by 2 then add that to the first number you 
-just rearrange the round brackets: 
-total = number1 + ( number2 / 2) ; 
- 
-The reason you need to do this is because of something called Operator Precedence. 
-This just means which mathematical symbols get taken care of first. Take the following 
-code: 
-var result = 5 + 3 * 8 
- 
 The multiplication operator ( * ) has a higher priority than the plus symbol. Because 
 the 3 and the 8 are together, JavaScript thinks you want to multiply these two 
 numbers first. After it multiplies 8 by 3 to get 24 it will then add the 5 at the start. 
 Parentheses (round brackets) are used as a way to override this operator precedence. 
 So if you want to add 5 plus three first, and then multiply by 8, you would do it like 
 this: 
-var result = (5 + 3) *
+
+var result = (5 + 3) * 8 
+ 
+The result would now be 64(5 + 3 equals 8, then multiply by 8). 
+ 
+Division and multiplication have equal priority. These two in turn have priority over 
+addition and subtraction which, again, have equal priority. To clear up what this 
+means, take a look at the following: 
+var result = 32 - 16 / 8 
+ 
+Because division has a higher priority than subtraction the first thing JavaScript does is 
+to divide 16 by 8 to get 2. It then subtracts the 2 from 32 to get an answer of 30. 
+ 
+Now put some round brackets in: 
+var result = (32 - 16) / 8 
+
+This time, JavaScript will see the parentheses and do this calculation first. 32 minus 
+16 is 16. This is then divided by 8 to get an answer of 2. 
+ 
+Now take this sum: 
+var result = 32 - 16 + 8; 
+ 
+Because addition and subtraction have the same priority the sum is calculated from 
+left to right, giving an answer of 24. However, put some round bracket in and you get a 
+different answer: 
+
+var result = 32 - (16 + 8); 
+ 
+In the sum above, JavaScript will do the sum between the round brackets first, 
+returning an answer of 24 (16 + 8 = 24). This is then subtracted from 32 to give a result 
+of 8. 
+ 
+The moral of all this, then, is be careful of your mathematical operators: they might 
+not give you the answer you were expecting. 
+ 
+The only other operator we have not discussed is the modulus operator (%). If you are 
+not sure what this is, it is when you divide one number by another but keep the 
+remainder. For example, in normal division 31 divided by 10 gives an answer of 3.1. In 
+other words, 10 divides into 31 three times with one left over. Modulus keeps the 1 
+and throws away the rest. Why is this interesting? You can tell if a number is odd or 
+even with modulus. All you need to do is divide any number by 2. If there's no 
+remainder then you know the number is even. If there is a remainder then the number 
+is odd. Here is some code to examine: 
+
+var result = 31 % 2; 
+if (result == 1)  
+{ 
+document.write("Odd number"); 
+} 
+else 
+{ 
+document.write("Even number"); 
+} 
+ 
+Although you have not done IF statements yet, you should be able to figure out what is 
+going on. First we test a number using the modulus operator. We then say IF 31 MOD 2 
+has a value of 1 then write "Odd number", ELSE 
+write "Even number". 

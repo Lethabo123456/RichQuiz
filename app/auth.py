@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, session, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from . import mysql  # MySQL instance from __init__.py
+from . import mysql
 
 auth_bp = Blueprint('auth', __name__)
 
@@ -35,15 +35,20 @@ def register():
             cur.close()
             return redirect(url_for('auth.register'))
 
-        hashed_pw = generate_password_hash(password)
-        cur.execute(
-            "INSERT INTO users (name, student_number, password, year_level) VALUES (%s, %s, %s, %s)",
-            (name, student_number, hashed_pw, year_level)
-        )
-        mysql.connection.commit()
-        cur.close()
+        try:
+            hashed_pw = generate_password_hash(password)
+            cur.execute(
+                "INSERT INTO users (name, student_number, password, year_level) VALUES (%s, %s, %s, %s)",
+                (name, student_number, hashed_pw, year_level)
+            )
+            mysql.connection.commit()
+            flash('Account created successfully! Please log in.', 'success')
+        except Exception as e:
+            print(f"❌ MySQL Error: {e}")
+            flash('Error saving user. Check database connection or table.', 'danger')
+        finally:
+            cur.close()
 
-        flash('Account created successfully! Please log in.', 'success')
         return redirect(url_for('auth.login'))
 
     return render_template('register.html')
@@ -67,15 +72,11 @@ def login():
 
         if user:
             user_id, name, student_number_db, hashed_pw, year_level = user
-            print(f"Fetched user: {user}")  # Debugging statement
-
             if check_password_hash(hashed_pw, password):
                 session['user_id'] = user_id
                 session['student_number'] = student_number_db
                 session['name'] = name
                 session['year_level'] = year_level
-
-                print("Redirecting to dashboard")  # Debugging statement
                 return redirect(url_for('main.dashboard'))
 
         flash('Invalid student number or password.', 'danger')
@@ -88,6 +89,7 @@ def login():
 @auth_bp.route('/logout')
 def logout():
     session.clear()
+    flash('You have been logged out.', 'info')
     return redirect(url_for('auth.login'))
 
 

@@ -1,30 +1,3 @@
-4.3 COMMENTS 
-In HTML a comment (or comments) is information a designer can add to the HTML 
-source code for reference. Comments are not viewed by the user or displayed on the 
-web browser, but only when viewing the HTML source code. HTML allows you to add 
-comments within the code to help the reader better understand the code. To add a 
-comment to the code for a page, use the following code: 
-
-Adding comments 
-Here’s how                               Here’s why 
-----------------------------------------------------------------------------
-Open the source code                     You’ll add comments in this code.
-----------------------------------------------------------------------------
-Place the insertion point as shown       </HEAD>
-
-                                         <BODY>
-----------------------------------------------------------------------------
-Enter the following code: 
-----------------------------------------------------------------------------
-<!--Contents of the page-->              To add a comment in the code.
-----------------------------------------------------------------------------
-Update and close the source code
-----------------------------------------------------------------------------
-Refresh and observe the page             The text enclosed within the comment 
-                                         tag does not appear on 
-                                         the page. 
- 
- 
 4.4 CHARACTER ENTITIES  
 You might want to display certain characters like the copyright symbol (©), registered 
 trademark symbol (®), or a blank space on your Web page. You cannot type these 
@@ -34,5 +7,54 @@ page. The following table displays the character entities for some commonly used
  
 The ampersand (&) indicates the beginning and the semi-colon (;) indicates the end 
 of a character entity. 
+
+Character     HTML5      Intended     Description 
+Entity        Entity     Character 
+-------------------------------------------------------
+&amp;         &AMP;      &            Ampersand
+-------------------------------------------------------
+&copy         &COPY      ©            Copyright
+-------------------------------------------------------
+&gt;          &GT;       >            Greater than
+-------------------------------------------------------
+&lt;          &LT;       <            Less than
+-------------------------------------------------------
+&trade;       &TRADE;    ™            Trademark symbol 
+------------------------------------------------------- 
+&reg;         &REG;      ®            Registration mark
+------------------------------------------------------- 
+&quot;        &QUOT;     “            Double quotes
+------------------------------------------------------
+ 
+ 
+Using character entities 
+ 
+ 
+Here’s how                             Here’s why 
+-------------------------------------------------------------------------------
+Open the source code                   You’ll add a character entity to this
+                                       page.
+-------------------------------------------------------------------------------
+Place the insertion point as shown     </P>
+                        
+                                       </BODY>
+                                       </HTML>
+-------------------------------------------------------------------------------
+Enter the following code: 
+-------------------------------------------------------------------------------
+&copy; Outlander Spices 1999-2000.     To insert the copyright symbol (©) on
+All rights reserved.                   the page. The ampersand (&) indicates
+                                       to the browser that the text that 
+                                       follows is a character entity and the 
+                                       semi-colon (;) indicates the end of the
+                                       character entity. 
+-------------------------------------------------------------------------------
+Update and close the source code 
+-------------------------------------------------------------------------------
+Refresh the page 
+-------------------------------------------------------------------------------
+Observe the page                       The copyright symbol (©) appears at 
+                                       the end of the page.
+-------------------------------------------------------------------------------
  
  

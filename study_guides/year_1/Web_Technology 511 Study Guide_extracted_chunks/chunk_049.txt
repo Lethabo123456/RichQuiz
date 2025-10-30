@@ -10,3 +10,40 @@ To create an HTML document that has a title, headings, paragraphs, and images, y
 can add several tags along with the document structure elements. An HTML 
 document created in Notepad ++, or other simple text editors, is saved with the file 
 extension .html 
+
+Creating an HTML document 
+ 
+Here’s how                                    Here’s why 
+---------------------------------------------------------------------------------------
+Choose Start, Programs, Notepad               To open Notepad. You can use any 
+                                              text editor on your own, but you’ll be
+                                              using Notepad in this course. 
+--------------------------------------------------------------------------------------
+Choose Edit, Word Wrap                        To view the complete code without 
+                                              having to scroll horizontally. 
+--------------------------------------------------------------------------------------
+Enter the following code:                     This is the starting HTML tag that
+                                              indicates the beginning of an HTML
+<HTML>                                        document. 
+--------------------------------------------------------------------------------------
+Enter the following code:                     This tag indicates the end of an HTML 
+                                              document. 
+</HTML> 
+--------------------------------------------------------------------------------------
+Place the insertion point as shown            <HTML>
+                                              </HTML>
+--------------------------------------------------------------------------------------
+                                              To prepare to add the starting HEAD
+                                              tag. 
+--------------------------------------------------------------------------------------
+Press Enter                                   To move the insertion point to the 
+                                              next line to add the ending HEAD tag. 
+--------------------------------------------------------------------------------------
+Press enter                                   To move the insertion point to the
+                                              next line to add the starting BODY 
+                                              tag. 
+--------------------------------------------------------------------------------------
+Enter the following code:                     This is the starting BODY tag that
+                                              indicates the beginning of the body 
+<BODY>                                        section.
+--------------------------------------------------------------------------------------

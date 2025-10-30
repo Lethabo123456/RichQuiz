@@ -1,22 +1,30 @@
-ng a user interface, managing programs, 
-managing memory, coordinating tasks etc. 
-Although an operating systems can run from an external drive, in most cases an operating systems 
-resides inside the computer or mobile device. Firmware consists of ROM chips or flash memory 
-chips that store permanent instructions.Different sizes of computers typically use different 
-operating systems because the operating systems generally are written to run on a specific type of 
-computer. The operating system that a computer uses is sometimes called the platform. 
-Between the hardware and the application software lays the operating system. The operating 
-system is a program that conducts the communication between the various pieces of hardware 
-like the video card, sound card, printer, the motherboard and the applications.   
- 
- 
- 
-After reading this Section of the guide, the learner should be able to: 
+5.2 FUNCTIONS OF OPERATING SYSTEMS  
+Every computer and mobile device has an operating system. Regardless of the type of the 
+computer or device, however, their operating systems provide many similar functions. 
+Today most operating systems perform the following important functions:  
+  
+ Processor management, that is, assignment of processor to different tasks being performed  
+by the computer system.   
+ Memory management, that is, allocation of main memory and other storage areas to the  
+system programmes as well as user programmes and data.  
+ Input/output management, that is, co-ordination and assignment of the different output  
+and input device while one or more programmes are being executed.  
+ File management, that is, the storage of file of various storage devices to another. It also  
+allows all files to be easily changed and modified through the use of text editors or some 
+other files manipulation routines.  
+ Establishment and enforcement of a priority system. That is, it determines and maintains  
+the order in which jobs are to be executed in the computer system.  
+ Automatic transition from job to job as directed by special control statements.  
+ Interpretation of commands and instructions.  
+ Coordination and assignment of compilers, assemblers, utility programs, and other  
+software to the various user of the computer system.  
+ Facilities easy communication between the computer system and the computer operator  
+(human). It also establishes data security and integrity. 
 
-81  
-  
-  
-  
-  
-Operating Systems 
-An operating system (OS) is a set of programs thatcoordinate
+The kernel is the core of an operating system that  
+– Manages memory and devices 
+– Maintains the internal clock 
+– Runs programs 
+– Assigns the resources, such as devices, programs, apps, data, and information 
+The kernel is memory resident , which means it remains in memory while the computer or mobile 
+device is running. 

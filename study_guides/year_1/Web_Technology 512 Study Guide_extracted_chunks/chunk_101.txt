@@ -1,11 +1,3 @@
-refuse to work. Instead, it adds a new position 
-to the end of your array. You can even store something in this new position. Change 
-your script to this: 
-var my_array = [10, "ten", true]; 
-document.write( my_array[3] + "<BR>"); 
-my_array[3] ="new item"; 
-document.write( my_array[3] ); 
- 
 JavaScript first prints out "undefined" then "new item". 
  
 Notice the way we are assigning this new value: 
@@ -22,4 +14,28 @@ The second (Regular) way to set up an array is with the new keyword:
 var my_array = new Array( ); 
  
 This time, after the equal sign we have the word new then a space. The word Array 
-comes next (upper
+comes next (uppercase A and never lowercase). Immediately after the word Array you 
+need a pair of round brackets. If you like you can add how many positions the array is 
+going to hold: 
+
+var my_array = new Array(3); 
+ 
+This says "set up an array with 3 positions". You do not have to add any array 
+positions, though. It is up to you. 
+However, when you are assigning values to each position you do need to add the 
+index positions. You do it like this: 
+
+var my_array = new Array( ); 
+my_array[0] = 10; 
+my_array[1] = "ten"; 
+my_array[2] = true; 
+ 
+So the first line sets up an array called my_array. The next three lines assign values to 
+each position in the new array. The method above is the one we will use to set up an 
+array from now on. 
+ 
+The third (Condensed) way to set up an array is withthe new keyword and values in 
+brackets: 
+
+var my_array = new Array(10, "ten", true); 
+This sets up an array called my_array of three values indexed from 0 to 2. 

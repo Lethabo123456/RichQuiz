@@ -1,36 +1,43 @@
-an object by assigning 
-methods to it. 
- 
-Example: 
-Here is a simple example to show how to add a function along with an object: 
- 
-Figure 6.2 – How to add a function along with an object 
-6.1.5 The with Keyword 
-
- 
-91 
- 
-SIX | JAVASCRIPT OBJECTS 
-The with keyword is used as a kind of shorthand for referencing an object's properties 
-or methods. The object specified as an argument to with becomes the default object 
-for the duration of the block that follows. The properties and methods for the object 
-can be used without naming the object. 
- 
-Syntax: 
-with (object) 
-{ 
-  //properties used without the object name and dot 
-} 
- 
-Example: 
- 
-Figure 6.3 – Using the with keyword to reference the object’s properties and 
-methods 
- 
 6.2 JAVASCRIPT NATIVE OBJECTS 
  
 JavaScript has several built-in or native objects. These objects are accessible anywhere 
 in your program and will work the same way in any browser running in any operating 
 system. 
  
-Here is the list of all important JavaScript N
+Here is the list of all important JavaScript Native Objects: 
+
+ JavaScript Number Object 
+ JavaScript Boolean Object 
+ JavaScript String Object 
+ JavaScript Array Object 
+ JavaScript Date Object 
+ JavaScript Math Object 
+ JavaScript RegExp Object 
+
+6.2.1 The Number Object 
+The Number object represents numerical date, either integers or floating-point 
+numbers. In general, you do not need to worry about Number objects because the 
+browser automatically converts number literals to instances of the number class. 
+ 
+Syntax: 
+Creating a number object: 
+var val = new Number(number); 
+ 
+If the argument cannot be converted into a number, it returns NaN (Not-a-Number). 
+ 
+6.2.1.1 Number Properties 
+Here is a list of each property and its description. 
+Property                      Description 
+MAX_VALUE                     The largest possible value a number in JavaScript can have 
+                              1.7976931348623157E+308 
+MIN_VALUE                     The smallest possible value a number in JavaScript can have 
+                              5E-324 
+NaN                           Equal to a value that is not a number. 
+NEGATIVE_INFINITY             A value that is less than MIN_VALUE. 
+POSITIVE_INFINITY             A value that is greater than MAX_VALUE
+
+prototype 
+A static property of the Number object. Use the prototype property to assign new properties and methods to the 
+Number object in the current document 
+
+Table 6.1 – The Number Object Properties 

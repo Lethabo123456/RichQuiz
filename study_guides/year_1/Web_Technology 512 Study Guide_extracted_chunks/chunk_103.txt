@@ -1,13 +1,9 @@
-et up an array is withthe new keyword and values in 
-brackets: 
-var my_array = new Array(10, "ten", true); 
-This sets up an array called my_array of three values indexed from 0 to 2. 
-  
 4.1.1 Arrays and Loops 
  
 Arrays are quite often used with loops. That is because the index position of arrays 
 are numbers that you swap for the loop variable. As an example, study the following 
 code (of course, you can try it out as well): 
+
 var counter = 0; 
 var lottery_numbers = new Array(); 
 while ( counter < 49 )  
@@ -23,4 +19,32 @@ lottery_numbers[counter] = counter + 1;
  
 Instead of saying lottery_numbers[0], lottery_numbers[1], lottery_numbers[2], etc, 
 we have replaced the index number with the variable name counter. We can do this 
-because
+because counter changes each time round the loop. Javascript knows what is in the 
+counter variable and uses this as the index. After the equal sign, we are assigning 
+whatever is in the counter variable (plus 1) to each position in the array. (Can you see 
+why we would need to add 1?) 
+
+4.2 JAVASCRIPT FUNCTIONS 
+
+The scripts we have at the moment are set to run as soon as the page loads in the browser. But they 
+do not have to. A better way is to put the code inside something called a function. A function is 
+just a separate code segment that you call into action. In fact, they do not do anything unless you 
+do call them into action. Let's see how they work. 
+ 
+Function syntax: 
+function myFunction()  
+{ 
+ //code to be executed comes here. 
+} 
+
+You start with the word function (lowercase "f"). After a space you type a name for 
+your function. Function names are just like variable names in that you can call them 
+anything you like. But they cannot start with a number; you cannot have spaces in the 
+name; and the variable should contain only letters, numbers (but not the first 
+character of the variable), a dollar sign ($) or an underscore (_). 
+ 
+After your function name you need a pair of round brackets. The round brackets are 
+for something called arguments, which we will get to shortly. 
+ 
+Finally, you need a pair of curly brackets. Any code you want to execute goes between 
+the two curly brackets. 

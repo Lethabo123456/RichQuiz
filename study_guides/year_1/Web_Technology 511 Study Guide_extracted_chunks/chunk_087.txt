@@ -22,3 +22,38 @@ default, most web browsers will display a border around graphic links indicating
 link color. To remove this border or want to make it bigger, you can use the border 
 attribute in your <img> tag. The following code uses border attribute: 
 <a href="images.html"><img src="img1.png" border=”1” alt=”image 1”></a> 
+
+Using a graphic as a hyperlink 
+ 
+Here’s how                          Here’s why 
+----------------------------------------------------------------------------------------
+Open the source code                You’ll make a graphic a hyperlink. 
+----------------------------------------------------------------------------------------
+Place the insertion point as        <body>
+shown                                    <img src="logo.gif" alt="PCTBC">
+----------------------------------------------------------------------------------------
+Place the insertion point as        <body>
+shown  
+                                        <h1>The Internet</h1>
+----------------------------------------------------------------------------------------
+Enter the following code:           To make the graphic logo.gif a hyperlink to the
+                                    PCTBC.html page.
+<A HREF="PCTBC.html">               
+----------------------------------------------------------------------------------------
+Add the ending A tag as shown       <body>
+                                         <a href="PCTBC.html">
+                                         <img src="logo.gif" alt="PCTBC">
+                                         </a>
+----------------------------------------------------------------------------------------
+Update and close the source code 
+----------------------------------------------------------------------------------------
+Refresh the page
+----------------------------------------------------------------------------------------
+Point to the hyperlink image        The pointer changes to a hand indicating that the
+                                    image Spice.gif is a hyperlink. 
+----------------------------------------------------------------------------------------
+Click the image                     To move to the PCTBC page.
+---------------------------------------------------------------------------------------- 
+Navigate back to the About us       Click the Back button on the Standard toolbar.
+page.
+----------------------------------------------------------------------------------------

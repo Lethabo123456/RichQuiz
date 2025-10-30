@@ -1,38 +1,44 @@
-up a 1000, 10000 numbers, in just a 
-few lines of code. The most common type a loop is called the for loop. 
- 
-3.10.1 For Loops 
-For loops (lowercase "f") syntax: 
- 
- 
-for (start_value; end_value; increament_value) 
- 
-{ 
- 
-//code to be executed over and over again comes here 
- 
-} 
- 
-So you start with the word for. After a space you have a pair of round brackets. In 
-between the round brackets you need three things, separated by semicolons: a start 
-value for your loop, some way for the loop to end, and a way to get from one to the 
-other, which is known as the increment value. 
-Next is a pair of curly brackets. The code you want 
-to execute repeatedly goes between the curly 
-brackets. Here is a for loop that adds up the 
-numbers 1 to 10. Try it out by creating a web 
-page. 
- 
- 
-WEB RESOURCE 
- 
-http://www.w3schools.com/j
-s/js_loop_for.asp  
-
- 
-54 
- 
-THREE | JAVASCRIPT PROGRAMMING BASICS 
- 
 Figure 3.8 – The for loops to add up numbers from 1 to 10 
-The first thing to notice here is that
+
+The first thing to notice here is that we are setting up variables to hold the start value 
+of the loop and the end value. Loops are designed to go round and around a set 
+number of times. You have to tell JavaScript how many times you want to go round. 
+So you need a starting value, and an end value. There are many ways to set an end 
+value, but here we are saying, "Keep going round in a loop until the start value is no 
+longer less than the end value." But how does the loop know that the start value is 
+less than the end value? It knows because we've set an increment value. It is this: 
+start_value++ 
+
+This is a shorthand way of saying "add 1 to the start_value variable". It is called 
+incrementing a variable. The longhand way to increment a variable is this: 
+start_value = start_value + 1 
+If you do the calculation on the right hand side of the equal sign first, the line above 
+will make more sense. JavaScript will look at what is currently in the start_value 
+variable, and then add 1 to it. Once it is done that it will place the result into the 
+variable on the left of the equal sign, erasing its contents and thus setting a new value. 
+The result is that the start_value variable keeps increasing by 1 each time round the 
+loop. 
+ 
+You can also take 1 away from numbers with this: 
+start_value-- 
+ 
+Two minus signs after a variable are called the decrement operator. They deduct 1 
+from whatever is in the variable. It is the same as saying this: 
+start_value = start_value - 1 
+
+To recap, the start value of the loop is whatever number we have put in the 
+start_value variable; the end condition is when the start_value is no longer less than 
+whatever value we have put in the end_value variable; and the way we get from one 
+to the other is by incrementing the start_value variable. 
+Now have a look at what is in the curly brackets of the loop: 
+answer = answer + start_value; 
+ 
+This is the whole point of having a loop - to run some code over and over again. 
+ 
+We want to add up the numbers 1 to 10. So, again, do the calculation to the right of 
+the equal sign first. JavaScript will look at whatever value is currently held in the 
+answer variable. The first time round the loop this will be zero. (It is zero because we 
+set it that way at the top of the code.) Add 1 to zero to get an answer of 1. This is then 
+stored in the variable to the left of the equal sign. This is the answer variable again. 
+The answer variable will have its contents erased and the new value (1) placed inside 
+of it. 

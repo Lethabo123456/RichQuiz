@@ -1,39 +1,4 @@
-a. interface 
-b. short 
-c. program 
-d. throws 
-9. 
-In JavaScript, which of the following method is used to find out the character at    
-a position in a string? 
-a. charAt() 
-b. CharacterAt() 
-c. CharPos() 
-d. characAt() 
-10. You can refresh the webpage in JavaScript by using ................ method. 
-a. window.reload 
-b. location. reload 
-c. window. refresh 
-d. page.refresh 
- 
- 
- 
- 
- 
-
- 
-63 
- 
 FOUR | ARRAYS AND FUNCTIONS 
-FOUR | ARRAYS AND FUNCTIONS 
- 
-Learning Outcomes 
- 
-1. 
-Understand Javascript array declaration and initialisation 
-2. 
-Create and work with functions 
-3. 
-Understand the scope of variables 
  
 4.1 JAVASCRIPT ARRAYS 
  
@@ -42,5 +7,45 @@ is a way to hold more than one piece of data under the same name. There are thre
 ways to set up an array but the simplest (Literal) looks like this: 
 var my_array = [10, "ten", true]; 
  
-This sets up an array to hold three values all under 
-the single variable
+This sets up an array to hold three values all under the single variable name we called my_array. 
+Notice that you can store numbers, strings of text, and Boolean values in an array. Each value needs 
+to be separated by a comma. The values need to go between two square brackets and after an 
+equal sign. 
+ 
+To get at the values in your array you use something called the index value. This is a number 
+between square brackets. The number corresponds to a value's position in the array 
+(position numbers start at 0): 
+
+my_array[0] 
+my_array[1] 
+my_array[2] 
+ 
+So my_array[0] will hold the value 10, my_array[1] will hold the text "ten", and 
+my_array[2] will hold the Boolean value true. You could then write the values to a web 
+page: 
+
+document.write( my_array[0] + "<BR>"); 
+document.write( my_array[1] + "<BR>"); 
+document.write( my_array[2] + "<BR>"); 
+ 
+Test it out with the following script: 
+
+Figure 4.1 – JavaScript arrays 
+
+Run the script in a browser and you should see the number 10 displayed. Now change 
+the 0 in between the square brackets of my_array[0] to a 1. Save the change and 
+refresh. The text "ten" will be written out. Change the 1 into a 2 and you will see 
+"true" displayed. 
+ 
+Now change the 2 into a 3. This time the word "undefined" will display. The reason is 
+because you only set up your array to hold 3 items. When you typed a 3 instead of a 2 
+you were trying to access item number 4 (0 to 3, remember). But you have not 
+defined a fourth item. Even though you does not have a fourth item, JavaScript does 
+not throw you up an error, it does not refuse to work. Instead, it adds a new position 
+to the end of your array. You can even store something in this new position. Change 
+your script to this: 
+
+var my_array = [10, "ten", true]; 
+document.write( my_array[3] + "<BR>"); 
+my_array[3] ="new item"; 
+document.write( my_array[3] );

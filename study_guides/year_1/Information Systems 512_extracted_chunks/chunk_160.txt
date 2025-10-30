@@ -1,26 +1,27 @@
-ack end. 
- 
+Despite these limitations, business and home users often work with databases because of 
+their numerous advantages. 
 
-Page 99 of 117 
- 
- 
- 
-Advantages of Database Approach 
- Reduced data redundancy:  
-Most data items are stored in only one file, which greatly reduces duplicate data. For example, 
-a school’s database would record a student’s name and address only once. When student 
-data is entered or changed, one employee makes the change once.   
- Improved data integrity:  
-When users modify data in the database, they make changes to one file instead of multiple 
-files. Thus, the database approach increases the data’s integrity by reducing the possibility of 
-introducing inconsistencies. 
- Shared data:  
-The data in a database environment belongs to and is shared, usually over a network, by the 
-entire organization. This data is independent of, or separate from, the programs that access 
-the data. Organizations that use databases typically have security settings to define who can 
-access, add, modify, and delete the data in a database. 
- Easier access:  
+ Web Databases 
+The web offers information about jobs, travel destinations, television programming, photos, 
+movies, videos, local and national weather, sporting events, and legislative information. You 
+can shop for just about any product or service, buy or sell stocks, and make airline 
+reservations. Much of this and other information exists in databases that are stored on or are 
+accessible through the web. Some web databases are collaborative databases, where users 
+store and share photos, videos, recordings, and other personal media with other registered 
+users. A web database for an organization usually resides on a database server. A database 
+server is a computer that stores and provides access to a database.  
 
-Page 100 of 117 
- 
-The datab
+ TYPES OF DATABASES 
+Every database and DBMS is based on a specific data model. A data model consists of rules 
+and standards that define how the database organizes data. A data model defines how users 
+view the organization of the data. It does not define how the operating system actually 
+arranges the data on the storage media. A database typically is based on one data model. 
+Three popular data models in use today are: 
+ Relational database  
+A relational database is a database that stores data in tables that consist of rows and columns. 
+In addition to storing data, a relational database also stores data relationships. A relationship 
+is a link within the data. Applications best suited for relational databases are those whose 
+data can be organized into a two-dimensional table, that is, tables with rows and columns. 
+Many organizations use relational databases for payroll, accounts receivable, accounts 
+payable, general ledger, inventory, order entry, invoicing, and other business-related 
+functions. 

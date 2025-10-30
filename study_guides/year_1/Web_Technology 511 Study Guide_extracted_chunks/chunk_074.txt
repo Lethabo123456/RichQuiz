@@ -17,3 +17,18 @@ Observe the status bar              The address of the linked page appears.
 Click the hyperlink                 The page Whole spices.html appears in the
                                     browser.
 ------------------------------------------------------------------------------- 
+
+5.2 THE A TAG (ANCHOR) 
+You use the <a> tag (anchor) along with one most important attribute to create a hyperlink. 
+The text that you enclose within the tags appears as a hyperlink. You use the href 
+attribute of the <a> tag to specify the page to which the hyperlink leads. 
+For example, to link to the PC Training and Business College Web 
+site from your Web site/page, use the following code: 
+
+<a href=”http://www.pctbc.co.za”>Go To PCTBC</a> 
+ 
+The href attribute contains the URL of the destination Web site or Web page. The 
+value assigned to the HREF attribute should be enclosed within quotation marks. The 
+text “Go o PCTBC” is the hyperlink. Clicking the hyperlink displays the home page of 
+the PC Training and Business College Web site. 
+ 

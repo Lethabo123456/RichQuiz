@@ -1,23 +1,39 @@
-ch byte represents a single 
-character, which can be a number (4), letter (R), blank space (spacebar), punctuation mark 
-(?), or other symbol (&). 
+ Data Files 
  
- Fields 
-A field is a combination of one or more related characters or bytes and is the smallest unit 
-of data a user accesses. A field name uniquely identifies each field. When searching for 
-data in a database, you often specify the field name. For example, field names for the data 
-in the Instructor file are Instructor ID, First Name, Last Name, Extension, Office, and Email 
-Address. The data type specifies the kind of data a field can contain and how the field is 
-used. 
+A data file, often simply called a file, is a collection of related records stored on a storage medium, 
+such as a hard drive, or on cloud storage. A Student file at a school might consist of thousands 
+of individual student records. Each student record in the file contains the same fields.  
  
+ File Maintenance 
+File maintenance refers to the procedures that keep data current. File maintenance includes 
+adding records to, modifying records in, and deleting records from a file. Users add new 
+records to a file when they obtain additional data that should be stored, such as data about a 
+new student admitted to a school. Generally, users modify a record in a file for two reasons:  
+(1) to correct inaccurate data or  
+(2) to update old data with new data, such as replacing a student’s address 
+when she moves to a new address.  
+When a record no longer is needed, a user deletes it from a file. For example, if a student was 
+accepted for admission but later notifies the school that he chose to attend another college, 
+the school might delete the student’s records from its database 
 
-Page 95 of 117 
- 
- 
- 
- 
- Records 
-A record is a group of related fields. For example, a student record includes a set of fields 
-about one student. A primary key is a field that uniquely identifies each record in a file. The 
-data in a primary key is unique to a specific record. For example, the Student ID field uniquely 
-identifies each student because no two st
+ Validating Data 
+Validation is the process of comparing data with a set of rules or values to determine if the 
+data meets certain criteria. Many programs perform a validity check that analyzes data, either 
+as you enter the data or after you enter it, to help ensure that it is valid. For instance, when 
+an admissions department specialist adds or modifies data in a student record, the DBMS 
+tests the entered data to verify it meets certain criteria. 
+If the data fails a validity check, the computer either should not allow the invalid data to be 
+stored, or it should display an error message that instructs the user to enter the data again. 
+Validity checks, sometimes called validation rules, reduce data entry errors and thus enhance 
+the data’s integrity. 
+
+Validation can be: 
+ Alphabetic/numeric Check 
+An alphabetic check ensures that users enter only alphabetic data into a field. A numeric 
+check ensures that users enter only numeric data into a field. For example, data in a First 
+Name field should contain only characters from the alphabet. Data in a Current Enrollment 
+field should contain integers. 
+ Range Check  
+A range check determines whether a number is within a specified range. Assume the lowest 
+per credit hour fee at the school is $75.00 and the highest is $370.75. A range check for the 
+Credit Hour Fee field ensures it is a value between $75.00 and $370.75. 

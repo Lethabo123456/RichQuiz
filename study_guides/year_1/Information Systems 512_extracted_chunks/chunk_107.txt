@@ -1,12 +1,3 @@
-ude smartphones, 
-digital cameras, printers, and more. A PAN may connect devices through a router using 
-network cables or directly using special USB cables. PANs also may use Bluetooth or Wi-Fi 
-technology. A body area network (BAN), sometimes called a body sensor network (BSN), is a 
-type of PAN that wirelessly connects sensors worn by, carried by, implanted in, or attached 
-to a human body. 
-
-Page 67 of 117 
- 
  Networks Architecture 
 The configuration of computers, devices, and media on a network is sometimes called the 
 network architecture. Two examples of network architectures are client/server or peer-to-
@@ -15,4 +6,42 @@ peer.
 On a client/server network, one or more computers act as a server, and the other computers 
 on the network request services from the server. A server, sometimes called a host computer, 
 controls access to the hardware, software, and other resources on the network and provides 
-a centralized storage area for programs, data, and information. The clients a
+a centralized storage area for programs, data, and information. The clients are other 
+computers and mobile devices on the network that rely on the server for its resources. For 
+example, a server might store an organization’s email messages. Clients on the network, 
+which include any users’ connected computers or mobile devices, access email messages on 
+the server.  
+Both wired and wireless networks can be configured as a client/server network. 
+Although it can connect a smaller number of computers, a client/ server network architecture 
+typically provides an efficient means to connect 10 or more computers. Most client/server 
+networks require a person to serve as a network administrator because of the large size of 
+the network. 
+
+ Peer-to-Peer 
+A peer-to-peer (P2P) network is a simple, inexpensive network architecture that typically 
+connects fewer than 10 computers. Each computer or mobile device, called a peer, has equal 
+responsibilities and capabilities, sharing hardware (such as a printer), data, or information 
+with other computers and mobile devices on the peer-to-peer network.  
+
+A peer-to-peer (P2P) network is a simple, inexpensive network architecture that typically 
+connects fewer than 10 computers. Each computer or mobile device, called a peer, has equal 
+responsibilities and capabilities, sharing hardware (such as a printer), data, or information 
+with other computers and mobile devices on the peer-to-peer network. Peer-to-peer 
+networks allow users to share resources and files located on their computers and to access 
+shared resources found on other computers on the network. Peer-to-peer networks do not 
+have a common file server. Instead, all computers can use any of the resources available on 
+other computers on the network. 
+
+ Communication Software 
+Communications software consists of programs and apps that: 
+(1) Help users establish a connection to another computer, mobile device, or network;  
+(2) Manage the transmission of data, instructions, and information; and  
+(3) Provide an interface for users to communicate with one another.  
+
+The first two often are provided by or included as tools with an operating system or bundled 
+with a communications device. The third is provided by applications such as email, FTP, 
+browser, discussion boards, chat rooms, Internet messaging, videoconferencing, and VoIP. 
+Some routers, for example, contain firmware for various protocols. Other communications 
+devices require separate communications software to ensure proper transmission of data. 
+Communications software works with the network standards and protocols (presented in a 
+later section) to ensure data moves through the network or the Internet correctly. 

@@ -1,12 +1,5 @@
 TEN |PAGE LAYOUT 
  
-LEARNING OUTCOMES 
- 
- Structuring a page 
- Semantic elements 
- Mark page structures with sectioning elements 
- Organize page content with grouping elements 
- 
 10.1 Structuring a page 
  
 General Structure of an HTML5 page 
@@ -28,3 +21,28 @@ Introduction to  Semantic elements that can be used to structure an html page.
  
 Semantic elements are elements with a meaning. They clearly describe their meaning 
 to the browser and the developer. 
+
+The header element     <header> 
+The header element is used to contain the content that appears at the top of every 
+page of your website: the logo, tagline, search prompt, and possibly a navigational 
+menu. The header is commonly placed at the top of a page as it contains the 
+introductory content or navigational aids that are specific to a page or website. 
+However the position of a header is not constrained to the top of the page,  a header 
+can also be used to introduce each section of your content. For example, <div 
+id="header"> 
+ 
+The section Element   <section> 
+The section element represents a generic section of a document or application. The 
+<section> element is used to group standalone sections within a webpage containing 
+logically connected content (news block, contact information, etc). A section, in this 
+context, is a thematic grouping of content, typically with a heading. A section is used as 
+a generic container and not for styling and scripting purposes. 
+Some examples of acceptable uses for section elements include: 
+
+ individual sections of a tabbed interface 
+ segments of an “About” page; for example, a company’s “About” page might 
+include sections on the company’s history, its mission statement, and its 
+team 
+ different parts of a lengthy “terms of service” page 
+ various sections of an online news site; for example, articles could be 
+grouped into sections covering sports, world affairs, and economic news. 

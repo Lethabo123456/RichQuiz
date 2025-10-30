@@ -1,26 +1,45 @@
-an email address. We want to check if the email 
-address contains an @ sign. indexOf is used like this: 
-var at_sign = email.indexOf('@'); 
+Now delete the @ sign from the email address on the first line of the code. Run the 
+script again and you should find a value of -1 is written to the page. 
  
-Again, you start on the right of an equal sign, and with the variable you want to check. 
-After a dot, you type IndexOf. In between the round brackets of indexOf you need to 
-type the character or characters you are checking for. The character or characters 
-need to go between quotation marks. (You can check for more than one character, 
-.com, for example. In which case the number returned will be for the first character of 
-your string.) 
+You can use this information in an IF Statement. Like this: 
+if ( at_sign == -1 )  
+{ 
+document.write( "no @ sign in email address" ); 
+} 
+else 
+{ 
+document.write("email address contains @ sign"); 
+} 
  
- 
-Research 
- 
-Why would you use the indexOf 
-method? 
+The code above just checks the at_sign variable for a value of -1 and takes action 
+accordingly. Add it to your own code and test it out. Put the @ sign back in and rerun 
+your code. 
 
+In the previous section, you used indexOf to get the position of one string of text 
+inside another. But if you want the character returned rather than its position number 
+then you can use the JavaScript string method charAt. Like this: 
+
+if ( at_sign == -1 )  
+{ 
+document.write( "no @ sign in email address" ); 
+} 
+else  
+{ 
+var character = email.charAt( at_sign ); 
+document.write( character ); 
+} 
  
-81 
+The first line of the else part of the IF Statement is now this: 
+var character = email.charAt( at_sign ); 
  
-FIVE | JAVASCRIPT STRING MANIPULATION 
-If you run the script above, you will find that JavaScript returns a value of 4. You might 
-think that the @ sign in our email address is at position 5. However, JavaScript starts 
-the count from 0, which is why the answer is 4. 
+After the email variable we have chartAt. In between its round brackets you need a 
+number. The number is the position in the string you want to grab. Our at_sign 
+variable contains the number 4, which is where the @ sign is in the email address. This 
+character will then be stored in the variable we have called character. 
  
-Now delete the @ sign from the email address on the first line of the code. R
+If you want the keyboard code of the character you have just grabbed then you can 
+use charCodeAt instead of charAt: 
+var character = email.charCodeAt( at_sign ); 
+
+The character variable will now contain the keyboard code 64 on a UK keyboard. 
+ 

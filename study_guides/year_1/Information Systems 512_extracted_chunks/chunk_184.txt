@@ -1,19 +1,47 @@
-tion 
- 
-The main purpose of the preliminary investigation, sometimes called the feasibility study, is 
-to determine the exact nature of the problem or improvement and decide whether it is worth 
-pursuing. Should the organization continue to assign resources to this project? To answer this 
-question, the systems analyst conducts a general study of the project. 
-
-Page 112 of 117 
- 
-The first task in the preliminary investigation is to interview the user who submitted the 
-project request. Depending on the nature of the request, project team members may inter- 
-view other users, too. In addition to interviewing, members of the project team may use other 
-data gathering techniques, such as reviewing existing documentation. Often, the preliminary 
-investigation is completed in just a few days. 
-Upon completion of the preliminary investigation, the systems analyst writes the feasibility 
-report. This report presents the team’s findings to the steering committee. 
  Detailed Analysis 
  
-Detai
+Detailed analysis involves three major activities:  
+(1) Study how the current system works,  
+(2) Determine the users’ wants, needs, and requirements, and  
+(3) Recommend a solution.  
+Detailed analysis sometimes is called logical design because the systems analysts develop the 
+proposed solution without regard to any specific hardware or software. That is, they make no 
+attempt to identify the procedures that should be automated and those that should be 
+manual. 
+While studying the current system and identifying user requirements, the systems analyst 
+collects a great deal of data and information. A major task for the systems analyst is to 
+document these findings in a way that can be understood by everyone. Systems analysts use 
+diagrams to describe the processes that transform inputs into outputs and diagrams that 
+graphically show the flow of data in the system. Both users and IT professionals refer to this 
+documentation. 
+ 
+ The System Proposal  
+After the systems analyst has studied the current system and determined all user 
+requirements, the next step is to communicate possible solutions for the project in a system 
+proposal. The purpose of the system proposal is to assess the feasibility of each alternative 
+solution and then recommend the most feasible solution for the project, which often 
+involves modifying or expanding the current system. The systems analyst presents the 
+system proposal to the steering committee. If the steering committee approves a solution, 
+the project enters the design phase. 
+
+ Design Phase 
+The design phase consists of two major activities:  
+(1)  If necessary, acquire hardware and software and  
+(2)  Develop all of the details of the new or modified information system. The systems 
+analyst often performs these two activities at the same time instead of sequentially. 
+When the steering committee approves a solution, the systems analyst begins the activity of 
+obtaining additional hardware or software or evaluating cloud providers that offer the 
+computing services to meet the organization’s needs.  
+The systems analyst may skip this activity if the approved solution does not require new 
+hardware or software. If this activity is required, it consists of four major tasks:  
+(1)  Identify technical specifications,  
+(2)  Solicit vendor proposals,  
+(3)  Test and evaluate vendor proposals, and 
+(4)  Make a decision. 
+The systems analyst can use three basic types of documents for this purpose:  
+ A request for quotation (RFQ) identifies the required product(s). With an RFQ, the 
+vendor quotes a price for the listed product(s). 
+ With a request for proposal (RFP), the vendor selects the product(s) that meets 
+specified requirements and then quotes the price(s). 
+ A request for information (RFI) is a less formal method that uses a standard form to 
+request information about a product or service. 

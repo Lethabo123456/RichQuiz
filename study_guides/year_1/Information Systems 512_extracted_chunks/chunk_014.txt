@@ -1,17 +1,54 @@
-form calculations on the data. These columns and rows collectively are called a 
-worksheet.  
-Most spreadsheet software has basic features to help users create, edit, and format 
-worksheets. A spreadsheet file also is known as a workbook because it can contain thousands 
-of related individual worksheets. Data is organized vertically in columns and horizontally in 
-rows on each worksheet.  
-Each worksheet usually can have thousands of columns and rows. One or more letters identify 
-each column, and a number identifies each row. A cell is the intersection of a column and row. 
-The spreadsheet software identifies cells by the column and row in which they are located.  
-A function is a predefined formula that performs common calculations, such as adding the 
-values in a group of cells or generating a value such as the time or date. For example, the 
-function =SUM(B9:B16) instructs the spreadsheet application to add all of the numbers in the 
-range of cells B9 through B16. 
- 
- 
+ Database  
+A database is a collection of data organized in a manner that allows access, retrieval, and use 
+of that data. Database software is an application that allows users to create, access, and 
+manage a database. Using database software, you can add, change, and delete data in a 
+database; sort and retrieve data from the database; and create forms and reports using the 
+data in the database.  
+With most personal computer database programs, a database consists of a collection of 
+tables, organized in rows and columns. Each row, called a record, contains data about a given 
+item in the database, which is often a person, product, object, or event. Each column, called 
+a field, contains a specific category of data within a record.  
+The Publishing database consists of two tables: a Customer table and a Book Rep table. The 
+Customer table contains 15 records (rows), each storing data about one customer. The 
+customer data is grouped into 10 fields (columns): CU # (customer number), Customer Name, 
+Street, City, State, Postal Code, Amount Paid, Current Due, Returns, and BR # (book rep 
+number). The Current Due field, for instance, contains the amount of money the customer 
+owes the publisher. The Customer and Book Rep tables relate to each other through a 
+common field, BR # (book rep number). 
 
-Page 10 of
+ Note Taking Software 
+Note taking software is an application that enables users to enter typed text, handwritten 
+comments, drawings, sketches, photos, and links anywhere on a page and then save the 
+page as part of a notebook. Users also can include audio recordings as part of their notes. 
+ Calendar and Contact Management 
+Calendar and contact management software is an application that helps you organize your 
+calendar, keep track of contacts, and share this information with other users, who can view it 
+on their computers and mobile devices. This software provides a way for individuals and 
+workgroups to organize, find, view, and share appointment and contact information easily. 
+Although sometimes available separately, calendar and contact management software often 
+exists as a unit in a single program. 
+ Software Suite 
+A software suite is a collection of individual related applications available together as a unit. 
+Productivity software suites typically include, at a minimum, word processing, presentation, 
+spreadsheet, and email applications. 
+ Project Management 
+Project management software is an application that allows a user to plan, schedule, track, 
+and analyze the events, resources, and costs of a project. Project management software helps 
+calendar, keep track of contacts, and share this information with other users, who can view it 
+on their computers and mobile devices. This software provides a way for individuals and 
+workgroups to organize, find, view, and share appointment and contact information easily. 
+Although sometimes available separately, calendar and contact management software often 
+exists as a unit in a single program.
+
+ Accounting Software 
+Accounting software is an application that helps businesses of all sizes record and report their financial 
+transactions. With accounting software, business users perform accounting activities related 
+to the general ledger, accounts receivable, accounts payable, purchasing, invoicing, and 
+payroll functions.  
+Accounting software also enables business users to write and print checks, track checking 
+account activity, and update and reconcile balances on demand. Most accounting software 
+supports online credit checks, bill payment, direct deposit, and payroll services. Some offer 
+more complex features, such as job costing and estimating, time tracking, multiple company 
+reporting, foreign currency reporting, and forecasting the amount of raw materials needed 
+for products.  
+ 

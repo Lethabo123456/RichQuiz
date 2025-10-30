@@ -1,27 +1,59 @@
-osure and prototypes. Just remember to take care 
-when declaring variables inside of functions - they cannot be seen outside of that 
-function if you declare them with the var keyword. 
- 
-To end this section, let us have a look at some code that uses functions in a real 
-setting. The HTML in the BODY section below sets up a text box and a button. (We 
-have missed out FORM tags just to keep things simple. But you will learn about 
-JavaScript and FORMS in a later chapter.) We want users to fill in this box. If it is 
-empty when the button is clicked we will display an error message just above the text 
-box. Here is the code: 
-
- 
-74 
- 
-FOUR | ARRAYS AND FUNCTIONS 
- 
-Figure 4.8 – Simple Form Validation 
- 
 The BODY of the HTML has this code: 
+
 <P ID="message">First Name</P> 
 <INPUT TYPE ="text" SIZE="25" VALUE="" ID="Name"> 
 <INPUT TYPE ="button" value =" SUBMIT " onClick = 
 "validate()"> 
  
-The first line is just two paragraph tags with the 
-text "First Name" between them. The P tag also 
-h
+The first line is just two paragraph tags with the text "First Name" between them. The P tag also 
+has an ID. We will use this ID in our JavaScript. 
+
+The next two lines are the tags for a text box and a button. The Text box also has an ID. When the 
+button is clicked, it calls the validate function between the two SCRIPT tags in the HEAD section: 
+
+onClick = "validate()" 
+ 
+The first line of code for the validate function is 
+this: 
+var textbox_value = document.getElementById("Name").value; 
+ 
+We are setting up a variable called textbox_value here. Into this variable we want to 
+store the value from the text box. This is done via the getElementById property of the 
+document object (you will learn about getElementById in later section). Between its 
+round brackets we have the ID from the text box. After a dot, we have value. This is 
+enough to get the VALUE attribute from the text box. 
+ 
+We want to test what is in this text box so have set up an IF … ELSE statement. The IF 
+part is this: 
+
+if (textbox_value == "")  
+{ 
+var error = "<span STYLE=color:red>Required</span>"; 
+document.getElementById("message").innerHTML = error; 
+} 
+ 
+The variable called error just stores some HTML and CSS: 
+"<span STYLE=color:red>Required</span>"; 
+ 
+This is a SPAN tag with a style applied. It will cause the test "Required" to be coloured 
+red. Next is this line: 
+
+document.getElementById("message").innerHTML = error; 
+ 
+This is setting some text in the HTML. That paragraph tag we set up had an ID of 
+message. We can use this with document.getElementById. Notice the innerHTML part 
+after the dot. This allows you to set text in your HTML. The inner HTML is the parts 
+between the two P tags: 
+
+<P ID="message">First Name</P> 
+ 
+The inner HTML is "First Name". This will be erased and replaced with the new text. 
+The new text goes after an equal sign. For us, this is whatever is in the variable called 
+error. 
+ 
+The else statement sets the innerHTML back to "First Name". We do not really need 
+this, but it is there for testing purposes.  
+ 
+The return false line is also not needed in this simple piece of code. But in reality, you 
+would add it if you were going to send your form data somewhere. Adding return 
+false cancels the sending so that the user can try again. 

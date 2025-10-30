@@ -1,20 +1,37 @@
-capital "L", by the way – we 
-have done it like this for readability's sake). This is 
-followed by the name of the function we created, 
-the one we want to call. The name of the function 
-is best placed between double or single quotes 
-because some browsers won't work without 
-quotes surrounding your function name. As well 
-as the function name, you need the round 
-brackets. 
- 
-Save your changes and refresh the page in your browser. You should find that the 
-alert box now displays - the function has been called into action! 
-  
 4.2.1 Functions calling other functions 
  
 One function can also call another into action. You do not want one giant function 
 that does everything, so the standard practice is to have lots of smaller ones doing 
 specific things. Suppose you had a function that gets values from a form when a 
 button is clicked, you may then want to set up other functions that check things like 
-an email text box to see if the address is valid, or to see if a check box has been t
+an email text box to see if the address is valid, or to see if a check box has been ticked. 
+The point is that breaking your code down into separate segments that do specific 
+jobs (functions) makes life easier for you as a coder. 
+
+As a simple example of one function that calls another, take a look at the following 
+code: 
+ 
+Figure 4.3 – Calling a function from another function 
+So we have added a second function to the code we had before. This is the function we 
+have added: 
+
+function secondFunction()  
+{ 
+alert("My Second Function"); 
+} 
+ 
+The code between the curly brackets of the function is just an alert box. Now have a 
+look at the first function: 
+function myFunction()  
+{ 
+secondFunction(); 
+} 
+We no longer have the alert box inside the first function. What we have is this: 
+secondFunction(); 
+ 
+To call a function into action, then, all you need to do is to type the function name, and 
+its round brackets, ending the line with a semicolon. 
+ 
+Try it out for yourself. When you load the page in a browser, the BODY onLoad call is 
+the first thing to happen. This activates myFunction. When myFunction gets executed, 
+it calls secondFunction into action. 

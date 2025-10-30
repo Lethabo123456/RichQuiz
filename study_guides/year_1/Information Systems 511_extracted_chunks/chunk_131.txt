@@ -1,16 +1,24 @@
-omputer or mobile device is off, press a power button to turn it on. The process of 
-starting or restarting a computer is called booting. There are two types of booting, Cold boot and 
-Warm boot. Cold boot means turning on the computer that has been powered off completely. 
-Warm boot means using the operating systems to restart the computer. An operating system 
-includes various shut down options. Sleep mode saves any open documents and running programs 
-or apps to memory , turns off all uneeded functions and then places the computer in a low-power 
-state. Hibernate mode, by contrast, saves any open documents and running programs or apps to 
-an internal harddrive before removing power from the computer or devices.   A boot drive is the 
-drive from which your personal computer starts, which typically is an internal hard drive, such as 
-a hard disk or SSD. 
-  
+5.2.4.2. Command Line interface 
+In a command line interface, a user types commands represented by short keywords or 
+abbreviations (such as dir to view a list of files) or presses special keys on the board ( such as 
+functions keys or key combinations) to enter data and instructions. is a means of interacting with 
+a computer program where the user (or client) issues commands to the program in the form of 
+successive lines of text (command lines). 
  
+Some consider command-line interface difficult to use because they require exact spelling, form, 
+and punctuation. When working with a command- line interface, the set of commands used to 
+control actions is called the command language. 
+
+5.2.5  MANAGING PROGRAMS 
+How operating systems handles programs directly affects your productivity. An operating systems 
+can be single tasking or multitasking: 
+ A single tasking operating system allows only one program or app to run at a time.  
+Operating systems on embedded computers and some mobile devices use a single tasking 
+operating system. 
+ A multitasking operating systems allows two or more programs or apps to reside in memory  
+at the same time. Networks, servers, and supercomputers allow hundreds to housands 
+ofusers to connect at thesame time and, use a multiuser operating systems 
  
- 
-5.2.4 PROVIDING USER INTERFACE 
-In computer science and human-computer interaction, the user interface (of a computer progr
+When a computer is running multiple programs concurrently, one program is in the foreground 
+and the others are in the background. The one in the foreground is the active program, that is the 
+one you currently are using.The other programs running but not in use are in the background. 

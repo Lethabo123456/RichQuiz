@@ -1,18 +1,8 @@
-nd brackets. 
-If it is true, the code for its pair of curly brackets will get executed. If it's false then 
-JavaScript will jump to the else part. The code for the curly brackets of else will then 
-get executed. 
- 
 3.4.3 IF … ELSE IF 
 You can add another condition to test. This is done with ELSE IF. The syntax is this: 
+
 if ( first_condition_to_test )  
 { 
-
- 
-45 
- 
-THREE | JAVASCRIPT PROGRAMMING BASICS 
- 
 //code to be executed if the first condition is true  
 } 
 else if ( second_condition_to_test )  
@@ -32,4 +22,17 @@ if ( first_condition_to_test )
 } 
 else if ( second_condition_to_test )  
 { 
-/*executes only if first condition is f
+/*executes only if first condition is false and second 
+condition is true.*/ 
+} 
+else if ( third_condition_to_test )  
+{ 
+/* executes only if first condition is false, second 
+condition is true and third condition is true */. 
+} 
+
+Each condition you add will be evaluated to true or false. If JavaScript finds a true value 
+then it will execute any code between the curly brackets that go with it. After that, it 
+will exit the IF statements altogether. So if the second else if above is true then its code 
+gets executed. The third else if will be skipped and your programme will continue on its 
+way. 

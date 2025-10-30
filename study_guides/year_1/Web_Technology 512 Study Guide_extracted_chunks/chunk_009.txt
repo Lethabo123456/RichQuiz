@@ -1,36 +1,32 @@
-ething. 
- 
-Increased interactivity: You can create interfaces that react when the user 
-hovers over them with a mouse or activates them 
-via the keyboard. 
- 
-Richer interfaces: You can use JavaScript to 
-include such items as drag-and-drop components 
-and sliders to give a Rich Interface to your site 
-visitors. 
+1.4 JAVASCRIPT DEVELOPMENT TOOLS 
  
-Limitations with JavaScript: 
-We cannot treat JavaScript as a full-fledged 
-programming language. It lacks the following 
-important features: 
- 
-Client-side JavaScript does not allow the reading or writing of files. This has 
-been kept for security reason. 
- 
-JavaScript cannot be used for networking applications because there is no such 
-support available. 
- 
-JavaScript does not have any multithreading or multi-process capabilities. 
+One of JavaScript's strengths is that expensive development tools are not usually required. You 
+can start with a simple text editor such as Notepad. 
+Since it is an interpreted language inside the context of a web browser, you do not 
+even need to buy a compiler. 
  
-THINK POINT 
- 
-JavaScript is used for client side 
-applications, why? 
+To make our life simpler, various vendors have come up with very nice JavaScript 
+editing tools. Few of them are listed here: 
 
+ Microsoft FrontPage: Microsoft has developed a popular HTML editor called 
+FrontPage. FrontPage also provides web developers with a number of JavaScript tools 
+to assist in the creation of an interactive web site. 
+ Macromedia Dreamweaver MX: Macromedia Dreamweaver MX is a very 
+popular HTML and JavaScript editor in the professional web development crowd. It 
+provides several handy prebuilt JavaScript components, integrates well with 
+databases, and conforms to new standards such as XHTML and XML. 
+ Macromedia HomeSite 5: This provided a well-liked HTML and JavaScript 
+editor, which will manage their personal web site just fine. 
+ Bluefish: This is a free and open source advanced text editor with a variety of 
+tools for programming in general and the development of dynamic websites. It supports 
+development in (among others) 
+
+HTML, XHTML, CSS, XML, PHP, C, C++, JavaScript, Java, Google 
+Go, Vala, Ada, D, SQL, Perl, ColdFusion, JSP, 
+Python, Ruby and shell.
+
+1.5 ERROR CHECKING AND DEBUGGING 
  
-9 
- 
-ONE | INTRODUCTION TO JAVASCRIPT 
- 
-Once again, JavaScript is a lightweight, interpreted programming language that allows 
-you to build interactivity into other
+There is no doubt that JavaScript can be a fiddly, messy language to get to grips with. 
+Unfortunately, there is no easy way to see where you went wrong without some form 
+of debugging software or plug-in.  

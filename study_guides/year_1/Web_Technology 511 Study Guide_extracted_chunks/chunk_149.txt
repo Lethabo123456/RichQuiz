@@ -14,4 +14,32 @@ use the following code:
 <OPTION>Green Cardamom 
 </SELECT> 
 
-Exhibit 0-16: The Order page with the list box dropped down 
+Exhibit 0-16: The Order page with the list box dropped down
+
+Multiple option list boxes 
+
+You might want users to be able to select more than one of the items in a list box. 
+Users can select multiple items from a list box if they want to buy more than one 
+product. You use the MULTIPLE attribute of the SELECT tag to create a multiple option 
+list box. Users can then use the control or shift keys, depending on the position of 
+items, to select multiple items from the list box. 
+
+Here’s how                        Here’s why 
+-------------------------------------------------------------------------------------
+Open the source code
+-------------------------------------------------------------------------------------
+Edit the SELECT tag to read       The MULTIPLE attribute indicates that users can  
+                                  select more than one item from the list box. 
+<SELECT       NAME=”Spices”       
+MULTIPLE>
+-------------------------------------------------------------------------------------
+Update and close the source code
+-------------------------------------------------------------------------------------
+Refresh and observe the page      The list appears and displays all the items. Users
+                                  can now order more than one item.
+-------------------------------------------------------------------------------------  
+From the list, select Cumin
+-------------------------------------------------------------------------------------
+Press c and select                “Cumin” and “Green cardamom” are selected.
+Green cardamom 
+------------------------------------------------------------------------------------- 

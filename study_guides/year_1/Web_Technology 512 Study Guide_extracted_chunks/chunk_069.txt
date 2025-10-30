@@ -1,4 +1,9 @@
-ition is true. 
+You can also add an else right at the end, to catch anything you have not checked for 
+as follows: 
+
+if ( first_condition_to_test )  
+{ 
+ //executes only if first condition is true. 
 } 
 else if ( second_condition_to_test )  
 { 
@@ -10,22 +15,33 @@ else if ( third_condition_to_test )
 /* executes only if first condition is false, second 
 condition is true and third condition is true */. 
 } 
- 
-Each condition you add will be evaluated to true or false. If JavaScript finds a true value 
-then it will execute any code between the curly brackets that go with it. After that, it 
-will exit the IF statements altogether. So if the second else if above is true then its code 
-gets executed. The third else if will be skipped and your programme will continue on its 
-way. 
- 
-You can also add an else right at the end, to catch anything you have not checked for 
-as follows: 
-if ( first_condition_to_test )  
+else 
 { 
- //executes only if first condition is true. 
+//executes if all the above conditions are false 
 } 
-else if ( second_condition_to_test )  
+
+And here is an example of else if for you to try out: 
+ 
+Figure 3.6 – If …else if statements 
+ 
+The first line now assigns a value of "Jenny" to the first_name variable. You should be 
+able to guess what gets executed.  
+
+3.4.4 Nested If Statements 
+You can nest one or more IF statements. Supposing you wanted to test a variable to 
+see what value it holds. But you also want to do further tests on it. You can do this kind 
+of thing: 
+if ( x > 1)  
 { 
-/*executes only if first condition is false and second 
-condition is true.*/ 
+ 
+if ( x == 2)  
+{ 
 } 
-else if ( third_conditio
+else if (x == 3 )  
+{ 
+} 
+} 
+In the code above, we have first testing if the variable x is greater than 1. But we want 
+to narrow it down even further. If it is indeed greater than 1 then a nested if … else 
+statement gets executed. This further scrutinises the x variable.
+ 

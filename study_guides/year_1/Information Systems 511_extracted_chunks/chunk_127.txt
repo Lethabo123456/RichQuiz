@@ -1,19 +1,44 @@
-it increases the amount of data that can be held in memory at one 
-time. When the memory chips get full, some of the data is paged 
-out to the hard disk. This is called swapping.  
-Windows uses a swap file for this purpose.   
-Input and output  
-Flow control is also part of the operating system's responsibilities. 
-The operating system must manage all requests to read data from 
-disks or tape and all writes to these and to printers.    
-To speed up the output to printers, most operating systems now 
-allow for print spooling, where the data to be printed is first put 
-in a file. This frees up the processor for other work in between the 
-times data is going to the printer. A printer can only handle so 
-much data at a time. Without print spooling you'd have to wait for 
-a print job to finish before you can do anything else. With it you 
-can request several print jobs and go on working. The print spool 
-will hold all the orders and process them in turn. 
-
+5.2.2 MONITORING SYSTEM ACTIVITIES  
  
- 5.2.2 MONITORING SYSTEM ACTIV
+Time  
+Time in the CPU is divided into time slices which are measured in milliseconds. 
+Each task the CPU does is assigned a certain number of time slices. When time 
+expires, another task gets a turn. The first task must wait until it has another turn. 
+Since time slices are so small, you usually can't tell that any sharing is going on. 
+Tasks can be assigned priorities so that high priority (foreground) tasks get more 
+time slices than low priority (background) tasks.   
+  
+Memory  
+Memory must be managed also by the operating system. All those rotating turns 
+of CPU use leave data waiting around in buffers. Care must be taken not to lose 
+data!! One way to help out the traffic jam is to use virtual memory. This includes 
+disk space as part of main memory. While it is slower to put data on a hard disk, 
+it increases the amount of data that can be held in memory at one time. When 
+the memory chips get full, some of the data is paged out to the hard disk. This is 
+called swapping. Windows uses a swap file for this purpose. 
+
+Input output  and  
+Flow control is also part of the operating system's responsibilities. The operating 
+system must manage all requests to read data from disks or tape and all writes to 
+these and to printers.    
+
+To speed up the output to printers, most operating systems now allow for print 
+spooling, where the data to be printed is first put in a file. This frees up the 
+processor for other work in between the times data is going to the printer. A 
+printer can only handle so much data at a time. Without print spooling you'd 
+have to wait for a print job to finish before you can do anything else. With it you 
+can request several print jobs and go on working. The print spool will hold all the 
+orders and process them in turn.
+
+System performance  
+A user or administrator can check to see whether the computer or network is 
+getting overloaded. Changes could be made to the way tasks are allocated or 
+maybe a shopping trip is in order! System performance would include response 
+time (how long it takes for the computer to respond when data is entered) and 
+CPU utilization (comparing the time the CPU is working to the time it is idle.) 
+
+System security  
+Some system security is part of the operating system, though additional software 
+can add more security functions. For multiple users who are not all allowed access 
+to everything, there must be a logon or login procedure where the user supplies 
+a user ID and a secret password. An administrator     

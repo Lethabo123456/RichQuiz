@@ -1,24 +1,3 @@
-etween the two SCRIPT tags, add the following: 
-document.write( window.screen.height ); 
- 
-(Notice the semicolon at the end of the line. We will use them to separate each line of 
-code from now on.) 
- 
-Your new HTML page and JavaScript code should look like Figure 2.17 below: 
- 
-Figure 2.17 – The write method 
-Save your work and open up the web page in a browser. You should see this: 
- 
- 
-WEB RESOURCE 
- 
-http://www.w3schools.com/js
-/js_htmldom.asp 
-
- 
-28 
- 
-TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
 Figure 2.18 
  
 Instead of an alert box, we are now writing the screen height directly to the web page. 
@@ -27,7 +6,30 @@ Instead of an alert box, we are now writing the screen height directly to the we
 Now cut the JavaScript from the BODY section and paste it into the HEAD section of 
 the HTML. Save your work and refresh the page in your browser. You should see this: 
  
- 
 Figure 2.19 
 The reason the screen height is now at the top is that the code in the HEAD section 
-gets executed first. But the browser does not wait until the whole page loa
+gets executed first. But the browser does not wait until the whole page loads - it 
+executes 
+the JavaScript in the HEAD section first. This contained the 
+document.write method. Because the write method writes to the page then this 
+happens before any HTML is displayed. 
+ 
+Put the JavaScript code back into the BODY section. Amend your code to this: 
+document.write("Screen Height=" + window.screen.height); 
+ 
+What we have done here is something called concatenation. This just means joining 
+strings of text together. We have added some direct text between quotation marks. 
+After a plus symbol ( + ) we then have the screen height code. The plus symbol when 
+used like this means "join together". You can use it as many times as you want. For 
+example: 
+document.write(“SH=” + window.screen.height + “ SW=” + 
+window.screen.width); 
+ 
+The SH and SW above obviously mean Screen Height and Screen Width. But note 
+where all the plus symbols, commas and spaces are. Get your plus symbols and/or 
+commas wrong and your code won't work. 
+ 
+You can use HTML tags with concatenation. For example, if you want to spread things 
+over two lines, you can use the BR tag. Like this: 
+document.write("SH="+window.screen.height+"<BR>"+"SW="+ 
+window.screen.width); 

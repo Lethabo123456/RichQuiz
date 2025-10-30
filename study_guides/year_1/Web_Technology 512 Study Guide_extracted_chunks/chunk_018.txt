@@ -1,40 +1,44 @@
-2.1.4 JavaScript Comments  
-JavaScript supports both C-style and C++-style 
-comments, thus: 
- 
- Any text between a // and the end of a line 
-is treated as a comment and is ignored by 
-JavaScript. 
- Any text between the characters /* and */ 
-is treated as a comment. This may span multiple 
-lines. 
- JavaScript also recognizes the HTML 
-comment opening sequence <!--. JavaScript treats 
-this as a single-line comment, just as it does the // comment. 
- The HTML comment closing sequence --> is not recognized by JavaScript so it 
-should be written as //-->. 
- 
-Example: 
- 
- 
- 
-IDEA 
- 
-To avoid error, proper 
-capitalisation is required when 
-using keywords, method names 
-and variable names. 
-
- 
-15 
- 
-TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
 2.2 A FIRST JAVASCRIPT 
 You can use any text editor you are comfortable with. We are going to be using 
 Notepad on a Windows machine throughout this module. Add the simple HTML as 
 shown in Figure 2.1 below: 
  
- 
 Figure 2.1 - Basic HTML document 
  
-Figu
+Figure 2.1 above has the HEAD and BODY tags of a HTML page, along with a TITLE area at the top. 
+Save your text file with the name first_script.html. If you are using Notepad then 
+you need to change the Save As Type area at the bottom to All Files as indicated in Figure 2.2 
+below, otherwise you will end up with a text file rather than a HTML page that you can load into a 
+browser. (You do not need to do this if you are using TextEdit on a Mac. Just type 
+first_script.html in the Save As box.) 
+
+Figure 2.2 - Change the Save As Type to All Files 
+ 
+We now need to add some JavaScript tags. In between the two BODY tags, then, add 
+the following: 
+ 
+Figure 2.3 – JavaScript tags  
+ 
+The lines you are adding are these: 
+<SCRIPT LANGUAGE = "Javascript"> 
+alert("Hello World") 
+</SCRIPT>
+ 
+Programming scripts are added between two <SCRIPT> tags, an opening one and a 
+closing one. An attribute to the SCRIPT tag is LANGUAGE. This tells the browser which 
+scripting language is being used. For us, this is JavaScript. This goes after an equal sign ( 
+= ). Notice that we have surrounded the word JavaScript with double quote marks. But 
+you don't have to. In fact, you can miss out the LANGUAGE attribute altogether and 
+just have this: 
+
+<SCRIPT> 
+alert("Hello World") 
+</SCRIPT> 
+ 
+Any JavaScript you want to add needs to go between the two SCRIPT tags. Careful of 
+the forward slash for the end SCRIPT tag - miss this out and your code won't work. Like 
+all HTML tags, though, the two SCRIPT tags can be lowercase, if you prefer: 
+
+<script> 
+alert("Hello World") 
+</script> 

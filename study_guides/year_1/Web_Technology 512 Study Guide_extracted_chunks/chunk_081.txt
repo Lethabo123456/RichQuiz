@@ -1,19 +1,43 @@
-qual sign the NOT operator flips the value. Once 
-JavaScript has flipped the true or false value it puts the answer into the variable on the 
-left. This is the same variable as the one the right hand side. So bool_value will be the 
-opposite of what it was before. In other words, if the variable bool_value was true 
-before this line then it will be false after it. Likewise, if it was false before then it will 
-be true after. Test it out with this code: 
-var bool_value = true; 
-document.write( bool_value + "<BR>" ); 
-bool_value = !bool_value; 
-document.write( bool_value ); 
- 
-You should find that it writes true the first time and false the second time. Change the 
-first line from true to false. Now rerun your script. It should be the other way round 
-this time: it writes false the first time and true the second time. 
-  
 3.9 JAVASCRIPT SWITCH STATEMENTS 
  
 Sometimes, you will have more than one value to check for your variables. You can do 
-the checking with a lot of if ... else stateme
+the checking with a lot of if ... else statements. Or you can use something called a 
+switch statement. Here is an example: 
+ 
+var age = 17; 
+switch (age)  
+{ 
+case 17: 
+document.write("under 18"); 
+break; 
+case 24: 
+document.write("over 18"); 
+break; 
+default:  
+document.write("can't tell"); 
+break; 
+} 
+ 
+In this example, we have set up a variable called age. We have then stored a value of 
+17 in the age variable. The switch statement examines what this value is. If it is the 
+case that age hold a value of 17 then its code gets executed. The break keyword is for 
+escaping the switch statement. If you miss it out JavaScript will continue downwards 
+and assume all your other cases are true, thus executing the rest of the case code. If 
+none of your cases apply, a default value can be added. 
+ 
+But note the syntax for the switch statement. The word switch is lowercase. After this, 
+you have a pair of round brackets. Inside the round brackets you type a variable name 
+or add a condition to test. This will be evaluated to either true or false, depending on 
+which case matches. JavaScript will look at your list of cases and try to find a match. If 
+it finds one, it executes that code. If it does not find one then the default option is 
+executed. Take note where all the curly brackets and colons are. You have a pair of 
+
+curly brackets for the entire switch statement. You have a colon after each case. 
+ 
+However, switch statements in JavaScript are not very useful as they do not allow you 
+to test a range of values very easily, or at all. If you were checking for age ranges you 
+want to check things like 18 to 30, 31 to 50, etc. JavaScript switch statements do not 
+allow you to do this, so you would have to have one case for each age - a lot of cases, 
+in other words. They can be useful in limited situations, though, so they are worth 
+knowing about. 
+ 

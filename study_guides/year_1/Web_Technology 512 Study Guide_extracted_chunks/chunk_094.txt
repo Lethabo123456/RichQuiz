@@ -1,9 +1,3 @@
-1 to 20. 
- 
-Exercise 3.10 
-Use a while loop to print out the even number from 1 to 20. (You will need Modulus 
-for this. And an IF Statement.) 
- 
 3.10.4 The do...while Loop 
  
 The do...while loop is similar to the while loop except that the condition check 
@@ -19,18 +13,45 @@ Note the semicolon used at the end of the do...while loop.
  
 Take this code as an example: 
  
- 
- 
 3.10.5 The for … in Loop 
  
 There is one more loop supported by JavaScript. It is called for...in loop. This loop is 
 used to loop through an object's properties. 
  
 Because we have not discussed Objects yet, so you may not feel comfortable with this 
-loop. But once you will have understanding on JavaScript objects then you will find 
+loop. But once you will have understanding on JavaScript objects then you will find  
+this loop very useful.
 
+Syntax: 
+for (variablename in object) 
+{ 
  
-59 
+statement or block to execute 
+} 
  
-THREE | JAVASCRIPT PROGRAMMING BASIC 
-this loop very useful
+In each iteration one property from object is assigned to variablename and this loop 
+continues till all the properties of the object are exhausted. 
+ 
+Example: 
+Here is the following example that prints out the properties of a Web browser's 
+Navigator object: 
+ 
+This will produce following result: 
+ 
+Navigator Object Properties 
+appCodeName 
+appName 
+appMinorVersion 
+cpuClass 
+platform 
+plugins 
+opsProfile 
+userProfile 
+systemLanguage 
+userLanguage 
+appVersion 
+userAgent 
+onLine 
+cookieEnabled 
+mimeTypes 
+Exiting from the loop! 

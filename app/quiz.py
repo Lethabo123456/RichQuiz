@@ -1,9 +1,33 @@
+import os
 import random
+import joblib
 from flask import Blueprint, render_template, request, redirect, url_for, session, abort
 from time import time
 from . import mysql
 
 quiz_bp = Blueprint('quiz', __name__)
+
+# ---------------------- LOAD ML MODEL ---------------------- #
+model_path = os.path.join(os.path.dirname(__file__), "../ml/quiz_predictor.pkl")
+try:
+    quiz_model = joblib.load(model_path)
+    print("✅ Quiz prediction model loaded successfully!")
+except Exception as e:
+    print("❌ Failed to load quiz model:", e)
+    quiz_model = None
+
+def predict_correct(difficulty, time_taken):
+    """Predict if the user will answer correctly and return probability."""
+    if quiz_model is None:
+        return None, None
+    difficulty_map = {"Easy": 1, "Medium": 2, "Hard": 3}
+    diff_numeric = difficulty_map.get(difficulty, 1)
+    import pandas as pd
+    df = pd.DataFrame({"difficulty": [diff_numeric], "time_taken": [time_taken]})
+    pred = quiz_model.predict(df)[0]
+    prob = quiz_model.predict_proba(df)[0][1]
+    # Convert to native Python types
+    return int(pred), float(prob)
 
 # ---------------------- START QUIZ ---------------------- #
 @quiz_bp.route('/start/<int:module_id>')
@@ -19,7 +43,7 @@ def start_quiz(module_id):
         module_name, module_code = module_info
 
         session['quiz'] = {
-            'module_id': module_id,
+            'module_id': int(module_id),
             'module_name': module_name,
             'module_code': module_code,
             'current_index': 0,
@@ -30,7 +54,6 @@ def start_quiz(module_id):
             'question_start_time': time()
         }
         session['quiz_start_time'] = time()
-
         return redirect(url_for('quiz.quiz_question'))
 
     except Exception as e:
@@ -48,7 +71,6 @@ def get_next_question(module_id, difficulty, used_ids):
         """, (module_id, difficulty, used_ids_tuple))
         available = [row[0] for row in cursor.fetchall()]
         cursor.close()
-
         return random.choice(available) if available else None
     except Exception as e:
         print("❌ Error in adaptive question selection:", e)
@@ -83,12 +105,19 @@ def quiz_question():
 
         correct_option = question[6]
         is_correct = selected_option == correct_option
-        new_difficulty = adjust_difficulty(quiz['previous_difficulty'], is_correct)
         time_taken = int(time() - quiz.get('question_start_time', time()))
 
+        # Predict correctness using ML model
+        pred, confidence = predict_correct(quiz['previous_difficulty'], time_taken)
+        print(f"Predicted correctness: {pred}, confidence: {confidence:.2f}" if pred is not None else "ML prediction unavailable")
+
+        # Adjust difficulty using ML confidence
+        new_difficulty = adjust_difficulty(quiz['previous_difficulty'], is_correct, ml_confidence=confidence)
+
+        # Store answers, ensuring all values are native Python types
         quiz['answers'].append({
-            'question_id': question[0],
-            'text': question[1],  # changed key name to 'text' for consistency
+            'question_id': int(question[0]),
+            'text': question[1],
             'options': {
                 'A': question[2],
                 'B': question[3],
@@ -99,8 +128,10 @@ def quiz_question():
             'correct_option': correct_option,
             'reasoning': question[7] or "",
             'difficulty': question[8] or "Easy",
-            'is_correct': is_correct,
-            'time_taken': time_taken
+            'is_correct': bool(is_correct),
+            'time_taken': int(time_taken),
+            'ml_prediction': int(pred) if pred is not None else None,
+            'ml_confidence': float(confidence) if confidence is not None else None
         })
 
         if is_correct:
@@ -136,7 +167,7 @@ def quiz_question():
         current_index=quiz['current_index'] + 1,
         total=10,
         error=None,
-        show_explanations=False  # ✅ never show in quiz phase
+        show_explanations=False
     )
 
 # ---------------------- SHOW RESULTS ---------------------- #
@@ -161,12 +192,12 @@ def quiz_results():
                         difficulty, is_correct, time_taken, attempted_at
                     ) VALUES (%s, %s, %s, %s, %s, %s, NOW())
                 """, (
-                    user_id,
-                    quiz['module_id'],
-                    answer['question_id'],
+                    int(user_id),
+                    int(quiz['module_id']),
+                    int(answer['question_id']),
                     answer['difficulty'],
-                    answer['is_correct'],
-                    answer['time_taken']
+                    bool(answer['is_correct']),
+                    int(answer['time_taken'])
                 ))
             mysql.connection.commit()
             cursor.close()
@@ -174,13 +205,12 @@ def quiz_results():
             print("❌ Failed to save performance:", e)
             mysql.connection.rollback()
 
-    correct_count = quiz['score']
+    correct_count = int(quiz['score'])
     total = len(quiz['answers'])
     score_percentage = round((correct_count / total) * 100, 2)
     passed = correct_count / total >= 0.5
     user_answers = [a['selected_option'] for a in quiz['answers']]
 
-    # ✅ Difficulty Stats
     difficulty_stats = {
         'Easy': {'correct': 0, 'total': 0, 'total_time': 0},
         'Medium': {'correct': 0, 'total': 0, 'total_time': 0},
@@ -196,7 +226,6 @@ def quiz_results():
         if answer.get('is_correct'):
             difficulty_stats[diff]['correct'] += 1
 
-    # ✅ Smart Feedback
     feedback = []
     for diff, stats in difficulty_stats.items():
         if stats['total'] == 0:
@@ -228,17 +257,26 @@ def quiz_results():
         time_taken=total_time_taken,
         difficulty_stats=difficulty_stats,
         ai_feedback=feedback,
-        show_explanations=True  # 👈 Add this line
+        show_explanations=True
     )
 
 # ---------------------- UTILS ---------------------- #
-def adjust_difficulty(current, is_correct):
+def adjust_difficulty(current, is_correct, ml_confidence=None):
+    """Adjust difficulty based on correctness and optional ML prediction confidence."""
     levels = ['Easy', 'Medium', 'Hard']
     idx = levels.index(current)
+
+    if ml_confidence is not None:
+        if ml_confidence >= 0.8 and idx < 2:
+            return levels[idx + 1]
+        elif ml_confidence <= 0.3 and idx > 0:
+            return levels[idx - 1]
+
     if is_correct and idx < 2:
         return levels[idx + 1]
     elif not is_correct and idx > 0:
         return levels[idx - 1]
+
     return current
 
 def get_question_by_id(qid):
@@ -254,8 +292,8 @@ def get_question_by_id(qid):
 
 def build_question_dict(row):
     return {
-        'id': row[0],
-        'text': row[1],   # <-- Changed key here to 'text'
+        'id': int(row[0]),
+        'text': row[1],
         'options': {
             'A': row[2],
             'B': row[3],

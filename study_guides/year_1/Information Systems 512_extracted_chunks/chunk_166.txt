@@ -1,16 +1,51 @@
-database exists in many separate locations throughout a network or the 
-Internet. Although the data is accessible through a single server, the physical location of the 
-server on which it is stored is transparent and often unknown, to the user. 
+6.3 DATABASE MANAGEMENT SYSTEMS 
+A database management system (DBMS), or database program, is software that allows you 
+to create, access, and manage a database. Managing a company’s databases requires a 
+great deal of coordination. The database administrator (DBA) is the person in the 
+organization who is responsible for managing and coordinating all database activities, 
+including development, maintenance, and permissions. DBMSs are available for many sizes 
+and types of computers. Whether designed for a small or large computer, most DBMSs 
+perform common functions.  
+
+FUNCTIONS OF DBMS 
+ Data Dictionary 
+A data dictionary, sometimes called a repository, contains data about each file in the 
+database and each field in those files. A DBMS uses the data dictionary to perform 
+validation checks to maintain the integrity of the data. When users enter data, the data 
+dictionary verifies that the entered data matches the field’s data type. The data dictionary 
+also can limit the type of data that can be entered, often allowing a user to select from a list.  
+
+ File Retrieval and Maintenance 
+A DBMS provides several tools that allow users and programs to retrieve and maintain data 
+in the database. To retrieve or select data in a database, you query it. A query is a request 
+for specific data from the database. Users can instruct the DBMS to return or store the 
+results of a query. The four more commonly used are query languages, query by example, 
+forms, and report writers. Another method is by importing data.  
+Read How To 11-1 for instructions about importing spreadsheet data into a database 
+and vice versa. 
+A DBMS provides several tools that allow users and programs to retrieve and maintain data 
+in the database. 
+
+ Query language 
+A query language consists of simple, English-like statements that allow users to specify the 
+data they want to display, print, store, update, or delete. Each query language has its own 
+formats and vocabulary. 
+Structured Query Language (SQL pronounced S-Q-L or sequel) is a popular query language 
+that allows users to manage, update, and retrieve data. SQL has special keywords and rules 
+that users include in SQL statements.  
+
+ Query by Example 
+Most DBMSs include query by example (QBE), a feature that has a graphical user interface 
+to assist users with retrieving data.  
+
+ Form 
  
- Big Data 
-Recent technology trends have resulted in activities that generate large quantities of data. 
-These trends include the following: 
-• Growth of online commerce, social, and government applications  
-• Increased use of mobile devices  
-• Emergence of the Internet of Things  
-• Development of cloud computing 
-• Availability of Internet connectivity through wired and wireless networks 
-Big Data refers to large-scale data sets that require advanced technologies beyond the 
-capabilities of typical database soft- ware to gather, store, process, retrieve, or analyze. 
-Online business transactions, posts on social networks, government agencies, media and text 
-messages from tablets and smartphones, and automated sensors produce data that
+A form, sometimes called a data entry form, is a window on the screen that provides areas for 
+entering or modifying data in a database. 
+ 
+ Report Writer  
+A report writer, also called a report generator, allows users to design a report on the 
+screen, retrieve data into the report design, and then dis- play or print the report. Unlike a 
+form, you use a report writer only to retrieve data. Report writers usually allow you to 
+format page numbers and dates; titles and column headings; subtotals and totals; and fonts, 
+font sizes, color, and shading; and to include images. 

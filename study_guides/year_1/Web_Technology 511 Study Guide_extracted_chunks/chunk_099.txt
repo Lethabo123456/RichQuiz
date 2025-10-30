@@ -1,7 +1,6 @@
 6.8 Working with the audio Element 
 Audio clips are embedded within a web page using the following audio element. 
- 
- 
+  
 Where url specifies the source of the audio file and attributes define how the audio clip should 
 be handled by the browser. Figure 8-2 describes some of the attributes associated with HTML 
 audio and video elements. 
@@ -19,3 +18,17 @@ the beginning when the clip is finished:
 Adding background sounds to a web page is generally discouraged 
  
 Audio formats in HTML 
+
+Browser support for audio formats 
+ 
+Playing Web Audio 
+The following is an HTML code for a web page on which you will be able to play 
+audio files on the browser. 
+ 
+The following is the desired output of the HTML code snippet above. 
+ 
+HTML <audio> Autoplay 
+To start an audio file automatically, use the autoplay attribute: 
+ 
+HTML <audio> Autoplay muted 
+Add muted after autoplay to let the audio file start playing automatically (but muted) 

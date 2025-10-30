@@ -2,12 +2,12 @@ import json
 import os
 
 # Paths
-json_path = os.path.join("questions", "Programming_621-622_questions_for_db.json")
+json_path = os.path.join("questions", "Networks_511-512_questions_for_db.json")
 sql_output = os.path.join("questions", "questions_import.sql")
 
 # Set the module ID to 19 Software_Science_700_questions_for_db
 
-MODULE_ID = 8
+MODULE_ID = 4
 
 # Load JSON (unwrap if needed)
 with open(json_path, "r", encoding="utf-8") as f:

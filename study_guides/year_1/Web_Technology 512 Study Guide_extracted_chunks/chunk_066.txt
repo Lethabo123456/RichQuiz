@@ -1,28 +1,9 @@
-)  
-{ 
- 
-Save your changes and run the code again. This time, you'll see the following: 
-First Name is Lungelo Lenny 
-Even though we assigned a value of "Kenny" to the variable in the first line (var 
-first_name = "Kenny") JavaScript has changed it to "Lenny". This is because we 
-changed the double equal signs to a single equal sign in the IF statement. This assigns 
-a new value to the variable.  
- 
-So be careful when typing out your conditions between the round brackets of an IF 
-statement: two equal signs checks (compare) values and one equal sign assigns a value 
-to a variable. 
- 
 3.4.2 JavaScript IF ... ELSE 
 You can also add an else part to your IF statements. This is for when you want to say 
-
- 
-44 
- 
-THREE | JAVASCRIPT PROGRAMMING BASICS 
 what should happen if your IF Statement evaluates to false. The syntax is this: 
+
 if ( condition_to_test)  
 {  
- 
  
 //code to be executed comes here. 
 } 
@@ -31,4 +12,35 @@ else
 //code to be executed if condition tests to false. 
 } 
  
-As an example, change you
+As an example, change your code to this: 
+
+var first_name = "Benny"; 
+if ( first_name == "Kenny" )  
+{ 
+document.write("First Name is " + first_name); 
+} 
+else 
+{ 
+document.write("First Name is " + first_name); 
+} 
+ 
+The first line of the code has changed "Kenny" into "Benny". Between the curly 
+brackets we now have: 
+document.write("First Name is " + first_name); 
+ 
+Look at the else part we have added, though: 
+else 
+{ 
+document.write("First Name is " + first_name); 
+} 
+
+If you add an else part, it needs its own pair of curly brackets. Miss one out and your 
+code will not work. Between the curly brackets is where you type your code. 
+ 
+Save your changes and run your code. You should see this written to your browser: 
+First Name is Benny 
+ 
+So the first part of the IF Statement checks the condition between the round brackets. 
+If it is true, the code for its pair of curly brackets will get executed. If it's false then 
+JavaScript will jump to the else part. The code for the curly brackets of else will then 
+get executed. 

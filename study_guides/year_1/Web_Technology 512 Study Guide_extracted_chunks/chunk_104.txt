@@ -1,30 +1,41 @@
-2], etc, 
-we have replaced the index number with the variable name counter. We can do this 
-because counter changes each time round the loop. Javascript knows what is in the 
-counter variable and uses this as the index. After the equal sign, we are assigning 
-whatever is in the counter variable (plus 1) to each position in the array. (Can you see 
-why we would need to add 1?) 
- 
-4.2 JAVASCRIPT FUNCTIONS 
+You do not need to spread your functions out over multiple lines, however. This is 
+perfectly valid: 
 
+function myFunction()  
+{  
+alert("My Function");  
+} 
  
-66 
+But your code will be easier to read if your functions are not all on one line. 
  
-FOUR | ARRAYS AND FUNCTIONS 
- 
-The scripts we have at the moment are set to run 
-as soon as the page loads in the browser. But they 
-do not have to. A better way is to put the code 
-inside something called a function. A function is 
-just a separate code segment that you call into 
-action. In fact, they do not do anything unless you 
-do call them into action. Let's see how they work. 
- 
- 
-Function syntax: 
+To test functions out, create a new web page. In between two SCRIPT tags, add the 
+following:
+
 function myFunction()  
 { 
- //code to be executed comes here. 
+alert( "My Function" ); 
 } 
-You start with the word function (lowercase "f"). After a space you type a name for 
-your function. Function
+ 
+Your web page code should look like the one in Figure 4.2 below: 
+ 
+Figure 4.2 –JavaScript Functions 
+
+Now load your web page into a browser. You should find that nothing happens: the 
+alert between the two curly brackets of the function does not display. 
+ 
+The reason the alert does not display is because the function has not been called into 
+action. There are lots of ways to call a function. One way is via the onLoad event of 
+the browser window. So add this to the BODY section of you HTML: 
+
+<BODY onLoad = "myFunction()"> 
+ 
+After the word onLoad we have an equal sign (it does not have to be capital "L", by the way – we 
+have done it like this for readability's sake). This is 
+followed by the name of the function we created, the one we want to call. The name of the function 
+is best placed between double or single quotes because some browsers won't work without 
+quotes surrounding your function name. As well as the function name, you need the round 
+brackets. 
+ 
+Save your changes and refresh the page in your browser. You should find that the 
+alert box now displays - the function has been called into action! 
+  

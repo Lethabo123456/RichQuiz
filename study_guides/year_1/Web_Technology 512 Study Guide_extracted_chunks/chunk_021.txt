@@ -4,11 +4,6 @@ box with the words "Hello World". Try it out. Save your work. Now use Windows
 Explorer or Finder on a Mac to navigate to where you saved the HTML file. Double click 
 to run your script in a browser. You should see the following in Firefox: 
 
- 
-17 
- 
-TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
- 
 Figure 2.4 – Output on Firefox 
 Or this in Internet Explorer: 
  
@@ -21,4 +16,35 @@ The word alert now has a capital "A". Save your work and reload the page in your
 browser. You should find that the alert box no longer displays. Change it back to a 
 lowercase "a", save and reload. The alert box will come back. 
 Alert Boxes are used to display information to your users. In between a pair of round 
-brackets, you type the text you w
+brackets, you type the text you want people to see. This text goes between quote 
+marks (single or double quotes, but not a mixture of the two). 
+
+2.2.1 Confirm and Prompt 
+As well as an alert box, you can have confirm and prompt boxes. Using a confirm box will get you 
+two buttons, OK and Cancel. They are normally used with an IF Statements to detect which of the 
+two buttons was clicked. You will learn about IF Statements in a later section, but the code for a 
+Confirm box is just this: 
+
+confirm("OK or Cancel?") 
+ 
+Again, the text you want to display goes between quote marks. In a browser, the 
+confirm box looks like this: 
+ 
+Multimedia Resource 
+
+Figure 2.6 – Confirm Box 
+A prompt box is used when you want some input from the user. The code for a Prompt 
+box is this: 
+prompt("Favourite Colour?", "Red") 
+ 
+The prompt box has two parts between the round brackets. The first part is the 
+heading, while the second part is some default text. Figure 2.7 below shows what they 
+look like in a browser: 
+ 
+Figure 2.7 – Prompt box 
+
+A user can enter some text in the text box. When the OK button is clicked you can get 
+at the text the user entered and do something with it. You will see how to do this in 
+the IF Statements section. 
+ 
+For both confirm and prompt boxes lowercase letters are used.

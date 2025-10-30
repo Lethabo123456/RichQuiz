@@ -17,4 +17,50 @@ CHECKED      Indicates that the check box is checked by default.
  
 Exhibit 0-18: The check boxes on the Order page 
  
-Here’s
+Here’s how                     Here’s why 
+--------------------------------------------------------------------------------
+Open the source code           You’ll add check boxes to the page so that the
+                               users can select the Outlander Spices’ outlets 
+                               that they have visited. 
+--------------------------------------------------------------------------------
+Place the insertion point as   <!-- Checkboxes -->
+shown 
+--------------------------------------------------------------------------------
+Enter the code 
+--------------------------------------------------------------------------------
+Enter the code                 The value “checkbox” assigned to the TYPE 
+<P>Which of our outlets have   attribute indicates that the field is a check box. 
+you visited?                   Check boxes are grouped based on the value 
+<BR>                           assigned to the NAME attribute of the INPUT tags 
+<INPUT     TYPE=“checkbox”     of all the check boxes. Here, “Outlets” is the 
+NAME=“Outlets”                 name of the group of check boxes. The VALUE
+VALUE=“Outlet1”>               attribute specifies that the value “Outlet1” will 
+      Shopper’s Paradise       be submitted to the database if this check box is 
+                               checked.
+---------------------------------------------------------------------------------
+Update and close the source code
+---------------------------------------------------------------------------------
+Refresh and observe the page   A check box appears under the text “Which of
+                               our outlets in Seattle have you visited?” 
+                               “Shopper’s Paradise” is the label of this check
+                               box. 
+---------------------------------------------------------------------------------
+Check Shopper’s Paradise 
+---------------------------------------------------------------------------------
+Open the source code 
+---------------------------------------------------------------------------------
+Create two check boxes as      <BR>
+shown                          <INPUT TYPE="checkbox" NAME="outlets"
+                               VALUE="outlet2"> Port Plaza
+                               <BR>
+                               <INPUT TYPE="checkbox" NAME="outlets"
+                               VALUE="outlet3'> Stop 'n' Shop
+
+                               The value assigned to the NAME attribute of the 
+                               INPUT tags indicates that these check boxes
+                               belong to the “Outlets” group.               
+--------------------------------------------------------------------------------
+Update and close the source code 
+--------------------------------------------------------------------------------
+Refresh and observe the page   Two options are checked. Users can select more  
+                               than one option from a group of check boxes. 

@@ -126,7 +126,7 @@
     </div>
 
     <div class="summary">
-      <h3>Answer Summary</h3>
+      <h3>Answer Summary (with ML Predictions)</h3>
       {% for i in range(total) %}
         {% set question = questions[i] %}
         {% set options = question.get('options', {}) %}
@@ -134,6 +134,8 @@
         {% set correct_text = options.get(correct_label, '') %}
         {% set user_label = user_answers[i] if i < user_answers|length else 'No Answer' %}
         {% set user_text = options.get(user_label, 'No Answer') %}
+        {% set ml_pred = question.get('ml_prediction', 'N/A') %}
+        {% set ml_conf = question.get('ml_confidence', 'N/A') %}
 
         <div class="qa {% if user_label != correct_label %}incorrect{% else %}correct{% endif %}">
           <p><strong>Q{{ i + 1 }}:</strong></p>
@@ -151,6 +153,9 @@
           {% if user_label != correct_label %}
             <p><strong>Correct Answer:</strong> {{ correct_label }} - {{ correct_text|safe }}</p>
           {% endif %}
+
+          <p><strong>ML Prediction:</strong> {{ 'Correct' if ml_pred else 'Incorrect' }} 
+             (Confidence: {{ ml_conf | round(2) if ml_conf != 'N/A' else 'N/A' }})</p>
 
           {% if show_explanations and question.get('reasoning') %}
             <div class="reasoning">

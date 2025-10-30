@@ -1,24 +1,38 @@
-cise 3.2 
-Change the minus symbol into the symbol for multiplication, an asterisk symbol (*). 
-Save your change and refresh the page in your browser. What total do you get now? 
- 
-Exercise 3.3 
-Change the plus symbol into the symbol for division. Save your change and refresh the 
-page in your browser. What is the new total? 
- 
-You can use normal numbers with the mathematical operators. In the code below, we 
-are adding up two numbers and storing the result in a variable: 
-var result;  
-result = 12 + 24; 
-document.write( result ); 
- 
-JavaScript will add up the numbers on the right of the equal sign. When it has finished 
-adding, it will store the result in the variable on the left of the equal sign. 
- 
 3.2.1 Storing JavaScript Objects in Variables 
 In the previous section we used an alert message and document.write with the 
 various objects. For example: 
 alert ( window.innerWidth ); 
  
 But you can store these values in variables as well. If you want to store the innerWidth 
-value, for
+value, for example, you can do it like this: 
+var width = window.innerWidth; 
+ 
+Once you have the value stored in a variable you can do other things with it later: 
+
+alert( width ); 
+
+3.3 OPERATOR PRECEDENCE 
+ 
+You can have more than two numbers for your math, of course. You can even mix 
+variables and actual numbers. Change the total line of your code to this: 
+total = number1 + number2 / 2; 
+ 
+This time, we have a division symbol and a 2 at the end. What do you think will happen 
+when you run this code? You may think that JavaScript adds up the two values in our 
+variables first and then divides by 2. But it does not. 
+ 
+To clarify what it is you want to do, you can use round brackets. If you want to do the 
+addition first then the division, surround the addition with round brackets. Like this: 
+total = ( number1 + number2 ) / 2; 
+ 
+Now JavaScript will do the sums between the round brackets first and then divide by 2. 
+ 
+If you wanted to divide the second number by 2 then add that to the first number you 
+just rearrange the round brackets: 
+total = number1 + ( number2 / 2) ; 
+ 
+The reason you need to do this is because of something called Operator Precedence. 
+This just means which mathematical symbols get taken care of first. Take the following 
+code: 
+
+var result = 5 + 3 * 8 

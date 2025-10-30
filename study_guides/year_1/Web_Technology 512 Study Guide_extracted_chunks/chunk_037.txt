@@ -1,42 +1,31 @@
-t. 
-  
-2.5.1 Window Events 
-When we opened a new window above, we did so from a hyperlink between the two 
-BODY tags. The hyperlink text was this: 
-<a href="#" onClick="eAdd()">Link Text Here</A> 
+2.6 DOCUMENT OBJECT MODEL - THE DOM 
  
-The onClick part is something called an event. Lots of other objects between the 
-two BODY tags can use the onClick event. For example, a button on a form, check 
-boxes, drop-down lists, images - in fact, just about anything between the BODY tags. 
-But the idea is to call some JavaScript code into action when the event takes place. 
+The Document is another Window object you can manipulate. It is quite a powerful 
+object as it refers to just about all the elements you can have on a web page (forms, 
+links, images, text, HTML code, etc). This means that you can use JavaScript to get at 
+HTML elements, amend them, and add new ones.  
  
-There are lots of window events you can use. You can probably guess what most of 
-them are used for. 
- onChange 
- onClose 
- onKeydown 
- onKeypress 
- onKeyup 
- onLoad 
- onMousedown 
- onMousemove 
- onMouseout 
- onMouseover 
- onMouseup 
- onScroll 
- onSelect 
- onSubmit 
- onUnload 
+One really useful document method is write. We will take a look at that now. 
  
- 
-IDEA 
- 
-Windows events can be used to 
-activate JavaScript whenever the 
-user is ready. 
+2.6.1 document.write 
+The document's write method can be used to insert text onto your web page (this text can actually be 
+HTML elements). Try this as an example: 
 
+ Create a new HTML web page from your template 
+ Save it with the name write_method.html 
+ Add the following H1 heading to the HTML: 
+<H1>The document.write method</H1> 
+
+ Put two SCRIPT tags in the BODY section of the HTML 
+ Between the two SCRIPT tags, add the following: 
+document.write( window.screen.height ); 
  
-27 
+(Notice the semicolon at the end of the line. We will use them to separate each line of 
+code from now on.) 
  
-TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
-2.6 DOCUMENT OBJECT MODEL -
+Your new HTML page and JavaScript code should look like Figure 2.17 below: 
+ 
+Figure 2.17 – The write method 
+Save your work and open up the web page in a browser. You should see this: 
+ 
+ 

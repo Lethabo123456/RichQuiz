@@ -1,7 +1,3 @@
-So you get more precision with the treble equal sign than you do with the double. Try 
-not to worry too much about it, though: we will use the double equal sign unless we 
-really need the treble one. 
-  
 3.6 THE TERNARY OPERATORS 
  
 If you want a quick IF statement then you can use something called a ternary 
@@ -20,4 +16,42 @@ If it's false the text after the colon will be placed in the variable.
 3.7 JAVASCRIPT LOGICAL OPERATORS 
  
 Operators you will want to use with your IF Statements are the logical ones. The 
-logical operators give you more options for you
+logical operators give you more options for your IF statements. There are only three to 
+get the hang of: 
+&& Two ampersands mean AND 
+|| Two pipe characters mean OR 
+! One exclamation mark/point means NOT 
+ 
+As an example, create the following code for a web page:  
+ 
+Figure 3.7 – Logical operators 
+
+So we start out by setting up two Boolean variables: 
+
+var cookies_enabled = true; 
+var javascript_enabled = false; 
+ 
+We then want to check what is in these two variables. The IF statement does this with 
+the aid of the two ampersands ( && ) between the round brackets: 
+
+if ( cookies_enabled && javascript_enabled )  
+{ 
+ 
+Notice the shorthand way to check Boolean variables: 
+cookies_enabled && javascript_enabled 
+ 
+We could have done this: 
+cookies_enabled == true && javascript_enabled == true 
+ 
+But if you are checking Boolean variables you can miss out the == true. JavaScript will 
+then think you are checking for a true value, which you are. So the whole line reads "IF 
+cookies_enabled equals true AND javascript_enabled equals true".  
+ 
+If both are indeed true then the whole statement between the round brackets 
+becomes true. In which case, the first document.write will get executed. However, if 
+just one of these turns out to be false then the whole statement becomes false. In 
+which case, the else part will be executed. 
+ 
+Once you have finished typing the script, try it out. Now change javascript_enabled = 
+false to javascript_enabled = true. Save the changes and refresh the web page in your 
+browser. You should find that the first document.write will be printed. 

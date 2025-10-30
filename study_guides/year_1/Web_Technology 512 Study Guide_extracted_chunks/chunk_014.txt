@@ -1,55 +1,41 @@
-ftware) capable of accepting 
-requests from the client and giving responses accordingly. 
-7. 
-What is jQuery? 
-a. 
-JavaScript web page 
-b. 
-A small web page that is made using JavaScript. 
-c. 
-A fast, small, and feature-rich JavaScript library. 
-d. 
-A programming language used by web browsers. 
-
- 
-12 
- 
- ONE | REVIEW QUESTIONS 
- 
-8. 
-JavaScript is interpreted by __________ 
-a. Client 
-b. Server 
-c. Object 
-d. None of the above 
-9. 
-Which of the following best describes JavaScript? 
-a. A low-level programming language. 
-b. A scripting language precompiled in the browser. 
-c. A compiled scripting language. 
-d. An object-oriented scripting language. 
-10. 
-What is the correct JavaScript syntax to write "Hello World"? 
-a. (“Hello World”) 
-b. Response.write(“Hello World”) 
-c. document.write(“Hello World”) 
-d. “Hello World” 
- 
- 
- 
- 
- 
- 
-
- 
-13 
- 
 TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
-TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
+
+
+2.1 JAVASCRIPT SYNTAX 
+A JavaScript consists of JavaScript statements that are placed within the <script>... 
+</script> HTML tags in a web page. You can place the SCRIPT tags containing your 
+JavaScript anywhere within you web page but it is preferred way to keep it within the 
+HEAD tags. The SCRIPT tags inform the browser program to begin interpreting all the 
+text between these tags as a script. The simple syntax of JavaScript will be as follows: 
  
-LEARNING OUTCOMES 
+JavaScript Syntax 
  
-1. 
-Understand the JavaScript syntax  
-2. 
-W
+<script ...> 
+  JavaScript code 
+</script> 
+ 
+The script tag takes two important attributes: 
+ language: This attribute specifies what scripting language you are using. Typically, its 
+value will be javascript. Although recent versions of HTML (and XHTML, its successor) have phased 
+out the use of this attribute. 
+ type: This attribute is what is now recommended to indicate the scripting 
+language in use and its value should be set to "text/javascript". 
+ 
+So your JavaScript segment will look like: 
+<script language="javascript" type="text/javascript"> 
+ 
+JavaScript code 
+</script> 
+ 
+OR 
+
+<script language="javascript"> 
+ 
+JavaScript code 
+</script> 
+ 
+OR 
+<script type="text/javascript"> 
+ 
+JavaScript code 
+</script> 

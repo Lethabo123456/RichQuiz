@@ -1,30 +1,32 @@
-rray satisfies the 
-provided testing function. 
-toSource() 
-Represents the source code of an object 
-sort() 
-Sorts the elements of an array. 
-splice() 
-Adds and/or removes elements from an array. 
-toString() 
-Returns a string representing the array and its elements.  
-unshift()  
-Adds one or more elements to the front of an array and returns 
-the new length of the array. 
-Table 6.9 – The Array Object Methods 
- 
-
- 
-99 
- 
-SIX | JAVASCRIPT OBJECTS 
 6.2.5 The Date Object 
 JavaScript has a lot of inbuilt methods you can use to get the date and time. Create a 
 new web page and try out the code for the dates and times used in this section. 
 (However, all the valuescome from your computer. If your clock has the wrong time or 
 date then JavaScript would not correct it.) 
  
-The first thing you need to do is to create a new Date object: 
+The first thing you need to do is to create a new Date object:
+ 
 var the_date = new Date(); 
+
 Note the use of the keyword new. After a space you type the word Date (capital "D"). 
-This is followed by a pair of round brackets. T
+This is followed by a pair of round brackets. This is enough to create a new date object, 
+which we haveassign to a variable called the_date. To see what this prints out, add the 
+following line: 
+
+document.write( the_date + "<BR>"); 
+ 
+You should find that it prints out quite a lot of information: the day of the week, the 
+month, the day of the month, and then the time. You will also find that the Date object 
+prints out information to do with GMT (or UTC as it is now known). It will tell you how 
+far ahead or behind the Greenwich Meridian you are. 
+ 
+You can, however, add arguments between the round brackets of Date. The full list of 
+arguments is: 
+Date( year, month, day [, hour, minute, second, 
+millisecond ] ) 
+ 
+Only the first three arguments are required. Try your birthday between the round 
+brackets of Date: 
+var birthday = (1990, 10, 25); 
+ 
+For the month value, January is 0 and December is 11. Hour values are from 0 to 23.

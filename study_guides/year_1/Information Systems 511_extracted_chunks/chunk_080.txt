@@ -1,20 +1,33 @@
-al cooling: 
- Heat sink is a small ceramic or metal component with fins on its surface that 
-absorbs and disperses heat produced by electrical components, such as processor. 
-
-61  
- Liquid cooling technology uses continuous flow of fluid(s), such as water and glycol, 
-in a process that transfers the heated fluid away from the processor to a radiator-
-type grill, which cools the liquid, and then returns the cooled fluid to the processor. 
- Cooling pads rests below a laptop and protects the computer from overheating and 
-also the user’s lap from excessive heat. 
- 
-3.4 
-DATA REPRESENTATION 
+3.4 DATA REPRESENTATION 
 To understand how a computer processes data, you should know how a computer represents 
 data. Most computers are digital. They recognise only two discrete states ON and OFF. This is 
 because computers are electronic devices powered by electicity, which also has only two states: 
 ON and OFF.  
  
-Fig 3.18 
-The binary system is a number system that has just two uniquedigits, 0 and 1 called bits. A bit
+The binary system is a number system that has just two uniquedigits, 0 and 1 called bits. A bit 
+(short for binary digit) is a smallest unit of data the computer can process. When 8 Bits are 
+grouped together as a unit, they form a byte. A byte provides enough different combinations of 
+0s and 1s to represent 256 different charecters.  
+ 
+Fig 3.19 
+ 
+3.5 MEMORY 
+Memory consists of electronic components that store instructions waiting to be executed by the 
+processor, data needed by those instructions, and the results of processing the data. 
+Memory stores three basic catergories of items: 
+ The operating system and other programs that control or maintain the computer and its 
+devices 
+ Applications that carry out specific task, such as word processing 
+ The data being processed by the applications and the resulting information 
+ 
+Memory size commonly is measured in gigabytes (GB) or terabytes (TB).  
+Types of Memory 
+ Volatile memory looses its content when the computer’s power is turned off. 
+ Nonvolatile memory, by contrast, does not lose its contents when power is removed from 
+the computer. Thus, volatile memory is temporary and non-volatile is permanent . 
+ 
+3.6 RAM 
+Random Access Memory (RAM) also called main memory. When the computer is powered on, 
+certain operating system files are loaded from storage devices onto RAM. These files remain in 
+RAM as long as the computer is running. The files remain in RAM as long as the computer or mobile 
+device has continuous power.

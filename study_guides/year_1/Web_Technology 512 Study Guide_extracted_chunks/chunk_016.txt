@@ -1,41 +1,32 @@
-you are using. Typically, its 
-value will be javascript. Although recent versions 
-of HTML (and XHTML, its successor) have phased 
-out the use of this attribute. 
- 
-type: This attribute is what is now recommended to indicate the scripting 
-language in use and its value should be set to "text/javascript". 
- 
-So your JavaScript segment will look like: 
-<script language="javascript" type="text/javascript"> 
- 
-JavaScript code 
-</script> 
- 
-OR 
-<script language="javascript"> 
- 
-JavaScript code 
-</script> 
- 
-OR 
-<script type="text/javascript"> 
- 
-JavaScript code 
-</script> 
 2.1.1 Whitespace and Line Breaks 
  
-Research 
- 
-What is a syntax? What do you 
-call an error caused by the 
-syntax is wrong? 
-After reading this Section of the guide, the learner should be able to: 
-
- 
-14 
- 
-TWO | JAVASCRIPT SYNTAX AND THE BROWSER 
 JavaScript ignores spaces, tabs, and newlines that appear in JavaScript code. Because 
 you can use spaces, tabs, and newlines freely in your program so you are free to 
-format
+format and indent your programs in a neat and consistent way that makes the code 
+easy to read and understand. 
+ 
+2.1.2 Semicolons 
+Simple statements in JavaScript are generally followed by a semicolon character, just 
+as they are in C, C++, and Java. JavaScript, however, allows you to omit this semicolon 
+if your statements are each placed on a separate line. It is a good programming 
+practice to use semicolons.
+
+2.1.3 Case Sensitivity 
+JavaScript is a case-sensitive language. This means that language keywords, variables, 
+function names, and any other identifiers must always be typed with a consistent 
+capitalization of letters. So identifiers Time, TIme and TIME will have different 
+meanings in JavaScript. Care should be taken while writing your variable and function 
+names in JavaScript. 
+ 
+2.1.4 JavaScript Comments  
+JavaScript supports both C-style and C++-style 
+comments, thus: 
+ 
+ Any text between a // and the end of a line is treated as a comment and is ignored by 
+JavaScript. 
+ Any text between the characters /* and */ is treated as a comment. This may span multiple 
+lines. 
+ JavaScript also recognizes the HTML comment opening sequence <!--. JavaScript treats 
+this as a single-line comment, just as it does the // comment. 
+ The HTML comment closing sequence --> is not recognized by JavaScript so it 
+should be written as //-->. 

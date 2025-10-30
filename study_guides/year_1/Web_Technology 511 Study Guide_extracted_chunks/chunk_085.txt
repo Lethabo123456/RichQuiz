@@ -2,16 +2,6 @@ SIX | ENHANCING A WEBSITE WITH MULTIMEDIA
 
 (Working with images, Sound, and Video) 
  
-LEARNING OUTCOMES 
- 
-1. Add images to a Web page and align text around images 
-2. Add background colors and images to a Web page 
-3. Understand audio and video formats  
-4. Insert an HTML audio clip 
-5. Support multiple audio formats 
-6. Insert an HTML video clip 
- 
- 
 6.1 ADDING IMAGES 
 You use the <img> tag to add an image to a page. The src attribute specifies the path 
 and filename of the image file. You can specify the absolute path or the relative path 
@@ -37,3 +27,28 @@ height          pixels        Specifies the height of an image
 width           pixels        Specifies the width of an image 
 ------------------------------------------------------------------------
 Other attributes are not supported in HTML5 
+
+Adding an image to a Web page 
+ 
+Here’s how                                  Here’s why 
+-------------------------------------------------------------------------------------------------
+In the browser, open About us               (From the current unit folder.) You’ll add the logo
+                                            of PC training logo to this page. 
+-------------------------------------------------------------------------------------------------
+Open the source code of the page
+-------------------------------------------------------------------------------------------------
+Place the insertion point as                <body>
+shown                          
+                                                <h1>The Internet</h1>
+-------------------------------------------------------------------------------------------------
+Enter the following code:                   To add the image Logo.gif to the page. The ALIGN                 
+<IMG           SRC="Logo.gif"               attribute of the P tag aligns the image to the center
+alt=”PCTBC” align=”center”>                 of the page. The SRC attribute of the IMG tag 
+                                            specifies the path of the image file on the computer.
+                                            The alt attribute represents alternative text which
+                                            will be displayed if an image is not found. 
+-------------------------------------------------------------------------------------------------
+Update and close the source code
+-------------------------------------------------------------------------------------------------
+Refresh and observe the page                The logo appears on the page and is centred.
+-------------------------------------------------------------------------------------------------

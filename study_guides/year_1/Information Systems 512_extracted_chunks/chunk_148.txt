@@ -1,55 +1,39 @@
-aving Bluetooth enabled 
-(turned on) even when you are not using it? 
-3. What types of files might you want to transfer between 
-your computer and mobile device using Bluetooth?  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-Page 92 of 117 
- 
 TOPIC 5: DATA, DATABASE SYSTEMS AND PROGRAM/APP DEVELOPMENTS 
  
-  
-Learning Outcomes  
-  
-After completing this chapter, you will be able to: 
-1. Differentiate among a character, field, record, and data file and describe validation 
-techniques 
-2. Differentiate between file processing systems and the database approach 
-3. Describe uses of web databases, types of databases, and Big Data 
-4. Discuss functions common to most database management systems: data dictionary, file 
-retrieval and maintenance, data security, and backup and recovery 
-5. Define system development, list the system development phases, and identify the guidelines 
-for system development 
-6. Discuss the importance of project management, feasibility assessment
+DATABASES, DATA, AND INFORMATION 
+A database is a collection of data organized in a manner that allows access, retrieval, and use 
+of that data. Computers process data in a database to generate information for users. A 
+database at a school, for example, contains data about its students and classes. When 
+students are accepted to a school, they typically complete an online admission form that is 
+displayed as a form in a browser.  
+With database software, often called a database management system (DBMS), users create 
+a computerized database; add, modify, and delete data in the database; sort and retrieve data 
+from the database; and create forms and reports from the data in the database. 
+ 
+ The Hierarchy of data 
+Data is organized in levels. Information technology (IT) professionals classify data in a hierarchy. Each 
+higher level of data consists of one or more items from the lower level. Depending on the application 
+and the user, different terms describe the various levels of the hierarchy. 
+ Characters 
+A bit is the smallest unit of data the computer can process. Eight bits grouped together in 
+a unit constitute a byte. In the ASCII coding scheme, each byte represents a single 
+character, which can be a number (4), letter (R), blank space (spacebar), punctuation mark 
+(?), or other symbol (&). 
+
+ Fields 
+
+A field is a combination of one or more related characters or bytes and is the smallest unit 
+of data a user accesses. A field name uniquely identifies each field. When searching for 
+data in a database, you often specify the field name. For example, field names for the data 
+in the Instructor file are Instructor ID, First Name, Last Name, Extension, Office, and Email 
+Address. The data type specifies the kind of data a field can contain and how the field is 
+used. 
+ 
+ Records 
+A record is a group of related fields. For example, a student record includes a set of fields 
+about one student. A primary key is a field that uniquely identifies each record in a file. The 
+data in a primary key is unique to a specific record. For example, the Student ID field uniquely 
+identifies each student because no two students can have the same student ID. In some files, 
+the primary key consists of multiple fields, called a composite key. For example, the primary 
+key for the Schedule of Classes file could consist of the fields Semester Code, Class Code, and 
+Class Section, which together would uniquely identify each class listed in a schedule. 

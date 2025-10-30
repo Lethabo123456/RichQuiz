@@ -1,24 +1,35 @@
-are query languages, query by example, 
-forms, and report writers. Another method is by importing data.  
-Read How To 11-1 for instructions about importing spreadsheet data into a database 
-and vice versa. 
-A DBMS provides several tools that allow users and programs to retrieve and maintain data 
-in the database. 
- Query language 
-A query language consists of simple, English-like statements that allow users to specify the 
-data they want to display, print, store, update, or delete. Each query language has its own 
-formats and vocabulary. 
-Structured Query Language (SQL pronounced S-Q-L or sequel) is a popular query language 
-that allows users to manage, update, and retrieve data. SQL has special keywords and rules 
-that users include in SQL statements.  
- Query by Example 
- 
-Most DBMSs include query by example (QBE), a feature that has a graphical user interface 
-to assist users with retrieving data.  
-
-Page 104 of 117 
- 
- 
- Form 
- 
-A form, sometimes called a data entry form, is a w
+ Data Security 
+Most organizations and people realize that data is one of their more valuable assets. To 
+ensure that data is accessible on demand, an organization must manage and protect its data 
+just as it would any other resource. Thus, it is vital that the data is kept secure.  
+A DBMS provides means to ensure that only authorized users can access data. In addition, 
+most DBMSs allow different levels of access privileges to be identified for each field in the 
+data- base. Access privileges define the actions that a specific user or group of users can 
+perform on the data. 
+A DMBS provides a variety of techniques to restore the database to a usable form in case it is 
+damaged or destroyed 
+ Backup and Recovery 
+Occasionally, a database is damaged or destroyed because of hardware failure, a problem 
+with the software, human error, or a catastrophe, such as fire or flood. A DBMS provides a 
+variety of techniques to restore the database to a usable form in case it is damaged or 
+destroyed. 
+ A backup, or copy, of the entire database should be made on a regular basis. Some 
+DBMSs have their own built-in backup tools. Others require users to purchase a 
+separate backup program, or use one included with the operating system. 
+ More complex DBMSs maintain a log, which is a listing of activities that modify the 
+contents of the database. If a registration department specialist modifies a student’s 
+address, for example, the change appears in the log. 
+ A DBMS recovery utility uses logs and/or backups, and either a rollforward or a 
+rollback technique, to restore a database when it becomes damaged or destroyed. In 
+a roll forward, also called forward recovery, the DBMS uses the log to re enter changes 
+made to the database since the last save or backup. In a rollback, also called backward 
+recovery, the DBMS uses the log to undo any changes made to the database during a 
+certain period. The rollback restores the database to its condition prior to the failure. 
+Depending on the type of failure, the DBMS determines which type of recovery 
+technique to use. 
+ Continuous backup is a backup plan in which changes are backed up as they are made. 
+This backup technique can cost more than other backup strategies but is growing in 
+popularity for businesses whose data must be available at all times, because it 
+provides recovery of damaged data in a matter of seconds. Organizations such as 
+hospitals, communications companies, and financial institutions often use continuous 
+backup. 

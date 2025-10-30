@@ -1,20 +1,38 @@
-s on the network. 
- 
- 
- Communication Software 
-Communications software consists of programs and apps that: 
-(1)  
-Help users establish a connection to another computer, mobile device, or network;  
-(2)  
-Manage the transmission of data, instructions, and information; and  
-(3)  
-Provide an interface for users to communicate with one another.  
-The first two often are provided by or included as tools with an operating system or bundled 
-with a communications device. The third is provided by applications such as email, FTP, 
-browser, discussion boards, chat rooms, Internet messaging, videoconferencing, and VoIP. 
-Some routers, for example, contain firmware for various protocols. Other communications 
-devices require separate communications software to ensure proper transmission of data. 
-Communications software works with the network standards and protocols (presented in a 
-later section) to ensure data moves through the network or the Internet correctly. 
-4.2 
-NETWORK COMMUNICATION ST
+4.2 NETWORK COMMUNICATION STANDARDS AND PROTOCOLS 
+For the different devices on various types of networks to be able to communicate, the 
+network must use similar techniques of moving data through the network from one 
+application to another.  
+To alleviate the problems of incompatibility and ensure that hardware and software 
+components can be integrated into any network, various organizations such as ANSI 
+(American National Standards Institute) and IEEE (Institute of Electrical and Electronics 
+Engineers) propose, develop, and approve network standards. A network standard defines 
+guidelines that specify the way computers access the medium to which they are connected, 
+the type(s) of medium used, the speeds used on different types of networks, and the type(s). 
+A standard that outlines characteristics of how two devices communicate on a network is 
+called a protocol. Specifically, a proto- col may define data format, coding schemes, error 
+handling, and the sequence in which data transfers over a network. 
+
+ Ethernet  
+Ethernet is a network standard that specifies no central computer or device on the network 
+(nodes) should control when data can be transmitted. That is, each node attempts to transmit 
+data when it determines the network is available to receive communications.  
+If two computers or devices on an Ethernet network attempt to send data at the same time, 
+a collision will occur. When this happens, the computers or devices resend their messages 
+until data transfer is successful. 
+The Ethernet standard defines guidelines for the physical configuration of a network. Ethernet 
+currently is the most popular network standard for LANs because it is relatively inexpensive 
+and easy to install and maintain. Depending on the transmission media used, Ethernet 
+networks have data transfer rates that range from 10 Mbps for home/small office users to 
+100 Gbps for enterprise users. 
+
+ Token Ring 
+The token ring standard specifies that computers and devices on the network share or pass a 
+special signal, called a token, in a unidirectional manner and in a preset order. A token is a 
+special series of bits that functions like a ticket. The device with the token can transmit data 
+over the network. Only one token exists per network. This ensures that only one computer 
+transmits data at a time. 
+The token ring standard specifies that computers and devices on the network share or pass a 
+special signal, called a token, in a unidirectional manner and in a preset order. A token is a 
+special series of bits that functions like a ticket. The device with the token can transmit data 
+over the network. Only one token exists per network. This ensures that only one computer 
+transmits data at a time. 

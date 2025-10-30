@@ -12,8 +12,27 @@ video format is to test the video ﬁle on that browser.
 
 Using the HTML5 video Element 
 Videos are embedded into a web page using the following video element 
- 
+
 <video attributes>
 <source src="ur11" type="mime-type" />
 <source src="ur12" type="mime-type" />
-</video> 
+</video>
+
+Video clip embedded in the web page 
+
+The following is an HTML code snippet that will display a webpage which displays video ﬁles 
+on the browser. 
+
+The following is the output of the above HTML code when you use the video element to 
+display vide ﬁles on the web page. 
+
+<h2>Zebra Facts</h2>
+<p>Zebra are African equines with..................
+</p>
+<video controls Autoplay width="600" height="300">
+  <source src="zebra.mp4" type="video/mp4">
+  <source src="zebra.ogg" type="video/ogg">
+  </video>
+
+Code output 
+ 

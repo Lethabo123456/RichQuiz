@@ -22,3 +22,19 @@ Scroll up to the beginning of         Notice that now only the text scrolls and 
 the page                              background image remains fixed. 
 ----------------------------------------------------------------------------------------
 
+6.6 Working with Playing Web Audio 
+Code snippet overview  
+ 
+<img src="KOEL.jpg "width="450" height="300">
+<h1>ASIAN KOEL</h1>
+<p><b>......</b>.....</p>
+<p><i><b>Press to play to hear the sound of The Asian Koel biid.</i></i></b>
+<audio controls autoplay>
+   <source src="Koel-sound.ogg" type="audio/ogg">
+   <source src="Koel-sound.mp3" type="audio/mp3">
+
+</audio> 
+ 
+ 
+Code output::
+ 

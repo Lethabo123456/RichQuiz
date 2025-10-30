@@ -1,29 +1,47 @@
-tion, even if the 
-number is in the range in which JavaScript normally uses 
-standard notation. 
-toFixed() 
-Formats a number with a specific number of digits to the right of 
-the decimal. 
-toLocaleString()  Returns a string value version of the current number in a format 
-that may vary according to a browser's locale settings. 
-toPrecision()  
-Defines how many total digits (including digits to the left and 
-right of the decimal) to display of a number. 
-toString() 
-Returns the string representation of the number's value. 
-valueOf() 
-Returns the number's value. 
-Table 6.2 – The Number Object Methods 
- 
-6.2.2 The Boolean Object 
-The Boolean object represents two values either "true" or "false". 
- 
+6.2.2.2 Boolean Methods 
+
+Here is a list of each method and its description. 
+Property                        Description 
+------------------------------------------------------------------------------------------------------------
+constructor                     Returns a reference to the Boolean function that created the 
+                                object. 
+------------------------------------------------------------------------------------------------------------ 
+prototype                       The prototype property allows you to add properties and  
+                                methods to an object. 
+------------------------------------------------------------------------------------------------------------
+toSource()                      Returns a string containing the source of the Boolean object; you can 
+                                use this string to create an equivalent object. 
+------------------------------------------------------------------------------------------------------------
+toString()                      Returns a string of either "true" or "false" depending upon the value of 
+                                the object. 
+------------------------------------------------------------------------------------------------------------
+valueOf()                       Returns the primitive value of the Boolean object. 
+------------------------------------------------------------------------------------------------------------
+Table 6.4 – The Boolean Object Methods 
+
+6.2.3 The String Object 
+The String object lets you work with a series of characters and wraps JavaScript’s 
+string primitive data type with a number of helper methods.Because JavaScript 
+automatically converts between string primitives and String objects, you can call any 
+of the helper methods of the String object on a string primitive. 
+
 Syntax: 
-Creating a boolean object: 
-var val = new Boolean(value); 
+Creating a String object: 
+var val = new String(string); 
  
-If value parameter is omitted or is 0, -0, null, false, NaN, undefined, or the empty 
-string (""), the object has an initial value of false. 
+The string parameter is series of characters that has been properly encoded. 
  
-6.2.2.1 Boolean Properties 
-Here is a list of each property and their description
+6.2.3.1 String Properties 
+Here is a list of each property and their description. 
+
+Property                       Description 
+-----------------------------------------------------------------------------------------------------
+constructor                    Returns a reference to the String function that created the object.
+-----------------------------------------------------------------------------------------------------  
+length                         Returns the length of the string.  
+-----------------------------------------------------------------------------------------------------
+prototype                      The prototype property allows you to add properties and methods 
+-----------------------------------------------------------------------------------------------------
+                               to an object. 
+
+Table 6.5 – The String Object Properties 

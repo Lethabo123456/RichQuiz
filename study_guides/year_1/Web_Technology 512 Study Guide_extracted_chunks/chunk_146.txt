@@ -1,44 +1,35 @@
-t possible value a number in JavaScript can have 
-1.7976931348623157E+308 
-MIN_VALUE  
-The smallest possible value a number in JavaScript can have 
-5E-324 
-NaN 
-Equal to a value that is not a number. 
-NEGATIVE_INFINITY  
-A value that is less than MIN_VALUE. 
-POSITIVE_INFINITY  
-A value that is greater than MAX_VALUE 
-prototype 
-A static property of the Number object. Use the prototype 
-property to assign new properties and methods to the 
-Number object in the current document 
-Table 6.1 – The Number Object Properties 
- 
 6.2.1.2 Number Methods 
 The Number object contains only the default methods that are part of every object's 
 definition. 
  
- 
- 
- 
- 
- 
- 
+Method                          Description 
+constructor()                   Returns the function that created this object's instance. By 
+                                default this is the Number object. 
+toExponential()                 Forces a number to display in exponential notation, even if the 
+                                number is in the range in which JavaScript normally uses 
+                                standard notation. 
+toFixed()                       Formats a number with a specific number of digits to the right of 
+                                the decimal. 
+toLocaleString()                Returns a string value version of the current number in a format 
+                                that may vary according to a browser's locale settings. 
+toPrecision()                   Defines how many total digits (including digits to the left and 
+                                right of the decimal) to display of a number. 
+toString()                      Returns the string representation of the number's value. 
+valueOf()                        Returns the number's value. 
 
+Table 6.2 – The Number Object Methods 
+
+6.2.2 The Boolean Object 
+The Boolean object represents two values either "true" or "false". 
  
-93 
+Syntax: 
+Creating a boolean object: 
+var val = new Boolean(value); 
  
-SIX | JAVASCRIPT OBJECTS 
+If value parameter is omitted or is 0, -0, null, false, NaN, undefined, or the empty 
+string (""), the object has an initial value of false. 
+
+6.2.2.1 Boolean Properties 
+Here is a list of each property and their description. 
+Table 6.3 – The Boolean Object Properties 
  
- 
-Method 
-Description 
-constructor()  
-Returns the function that created this object's instance. By 
-default this is the Number object. 
-toExponential()  
-Forces a number to display in exponential notation, even if the 
-number is in the range in which JavaScript normally uses 
-standard notation. 
-toF

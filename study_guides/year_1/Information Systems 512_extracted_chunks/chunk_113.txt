@@ -1,13 +1,52 @@
-and easy to install and maintain. Depending on the transmission media used, Ethernet 
-networks have data transfer rates that range from 10 Mbps for home/small office users to 
-100 Gbps for enterprise users. 
- Token Ring 
-The token ring standard specifies that computers and devices on the network share or pass a 
-special signal, called a token, in a unidirectional manner and in a preset order. A token is a 
-special series of bits that functions like a ticket. The device with the token can transmit data 
-over the network. Only one token exists per network. This ensures that only one computer 
-transmits data at a time. 
-The token ring standard specifies that computers and devices on the network share or pass a 
-special signal, called a token, in a unidirectional manner and in a preset order. A token is a 
-special series of bits that functions like a ticket. The device with the token can transmit data 
-over the network. Only one token exists per network. This ensures that only one comput
+ TCP/IP 
+Short for Transmission Control Protocol/Internet Protocol, TCP/IP is a network protocol that 
+defines how messages (data) are routed from one end of a network to the other, ensuring the 
+data arrives correctly. TCP/IP describes rules for dividing messages into small pieces, called 
+packets; providing addresses for each packet; checking for and detecting errors; sequencing 
+packets; and regulating the flow of messages along the network. 
+TCP/IP has been adopted as the network standard for Internet communications. When a 
+computer sends data over the Internet, the data is divided into packets. Each packet contains 
+the data, as well as the recipient (destination), the origin (sender), and the sequence 
+information used to reassemble the data at the destination.  
+When a computer sends data over the Internet, the data is divided into packets. Each packet 
+contains the data, as well as the recipient (destination), the origin (sender), and the sequence 
+information used to reassemble the data at the destination. This technique of breaking a 
+message into individual packets, sending the packets along the best route available, and then 
+reassembling the data is called packet switching.  
+
+ Wi-Fi 
+Computers and devices that have the appropriate wireless capability can communicate via 
+radio waves with other computers or devices using Wi-Fi (wireless fidelity), which identifies 
+any network based on the 802.11 standards. Developed by IEEE, 802.11 is a series of net- 
+work standards that specifies how two wireless devices communicate over the air with each 
+other. Common standards include 802.11a, 802.11b, 802.11g, 802.11n, 802.11ac, 802.11ad, 
+and 802. 
+Wi-Fi sometimes is referred to as wireless Ethernet because it uses techniques similar to the 
+Ethernet standard to specify how physically to configure a wireless network. Thus, Wi-Fi net- 
+works easily can be integrated with wired Ethernet networks. When a Wi-Fi network accesses 
+the Internet, it works in conjunction with the TCP/IP network standard. 
+
+ Bluetooth 
+Bluetooth is a network protocol that defines how two Bluetooth devices use short-range radio 
+waves to transmit data. 
+A Bluetooth device contains a small chip that allows it to communicate with other Bluetooth 
+devices. For computers and devices not Bluetooth-enabled, you can purchase a Bluetooth 
+wire- less port adapter that will convert an existing USB port into a Bluetooth port. Most 
+current operating systems have built-in Bluetooth support. When connecting two devices 
+using Bluetooth, the originating device sends a code to the connecting device. The codes must 
+match to establish the connection. Devices that share a Bluetooth connection are said to be 
+paired. 
+
+ Advantages of Bluetooth 
+ 
+Advantages of using Bluetooth technology include the following: 
+o If a device has Bluetooth capability, using Bluetooth technology is free. 
+o Although Bluetooth devices need to be near each other, they do not have to be in the 
+same room, within the same line of sight, or facing each other. 
+o Bluetooth devices typically require low processing power and use little energy, so 
+using Bluetooth technology will not drain a device’s batteries. 
+o Establishing a wireless Bluetooth connection is easy. With most Bluetooth-enabled 
+devices, you simply tap or click a Bluetooth shortcut or icon to enable Bluetooth. Once 
+enabled, the devices usually immediately recognize a connection. (Before initial use, 
+you may need to pair two Bluetooth devices so that they can communicate with each 
+other. 

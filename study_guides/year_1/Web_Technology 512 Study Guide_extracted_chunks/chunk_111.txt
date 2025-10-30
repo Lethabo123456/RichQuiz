@@ -1,33 +1,44 @@
-(); 
-alert( retVal ); 
-} 
- 
-This is the important line: 
-var retVal = secondFunction(); 
- 
-We still have the function call. But this time it is on 
-the right hand side of an equal sign. A single equal 
-sign is the assignment operator, remember. So 
-we're assigning a value to the variable on the left 
-of the equal sign. The value we are assigning is 
-whatever we get back from the function called 
-secondFunction.So bear that in mind: if you want 
-to return a value from a function, assign it to a variable on the left of an equal sign. 
- 
-After we get the value back from the function, we can do other things with it. In our 
-simple example, we are just displaying the value in an alert box. 
- 
 4.2.3 Function Arguments in JavaScript 
  
- 
-WEB RESOURCE 
- 
-http://www.w3schools.com/j
-s/js_functions.asp 
-
- 
-70 
- 
-FOUR | ARRAYS AND FUNCTIONS 
 You can pass values over to your functions. These values are called arguments, and 
-they go between the round brackets of the function. If you have more than
+they go between the round brackets of the function. If you have more than one value 
+to pass over, you separated them with commas. Let us look at an example. 
+ 
+Here is some new code to study that illustrates the use of arguments: 
+ 
+Figure 4.4 –Function with an argument 
+In myFunction, we have set up a variable called cookiesEnabled: 
+var cookiesEnabled = window.navigator.cookieEnabled; 
+ 
+We want to test whether a user has cookies enabled in the browser. The second line 
+of our code is this: 
+var retVal = secondFunction( cookiesEnabled ); 
+
+In between the round brackets of our function call, we have typed the cookiesEnabled 
+variable. This will either be true or false, depending on the user's settings. By typing a 
+variable name between the round brackets of the function call we have set up an 
+argument (you can also type values such as 10, "ten", or true.) The value of the 
+cookiesEnabled variable will then handed over to the secondFunction. But look at how 
+the secondFunction is now laid out:
+ 
+function secondFunction( cookiesEnabled )  
+{ 
+ 
+The second function also has a variable name between its round brackets, the same 
+one as myFunction. But It does not have to be the same name. You can have different 
+names if you like. For example: 
+
+var retVal = secondFunction( cookiesEnabled ); 
+function secondFunction( cookiesEnabled_two )  
+{ 
+ 
+The result is the same: whatever was in the variable from the calling function will be 
+passed over to the function being called. 
+ 
+You could even do this: 
+var retVal = secondFunction( true ); 
+function secondFunction( cookiesEnabled )  
+{ 
+ 
+The function call now has a hard-coded value of true between the round brackets. A 
+value of true will then be placed in the cookiesEnabled variable. 

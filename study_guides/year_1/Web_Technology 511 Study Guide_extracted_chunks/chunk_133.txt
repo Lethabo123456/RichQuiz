@@ -23,3 +23,26 @@ the browser in an external file. Figure 2-22 describes the different web font fi
 their current levels of browser support. The format most universally accepted in almost all 
 current browsers and on almost all devices is the Web Open 
 Font Format (WOFF). 
+
+ The @font-face Rule 
+To access and load a web font, you add the following @font-face rule to the style 
+sheet 
+
+@font-face { 
+font-family: name; 
+src: url('url1') format('text1'), 
+url('url2') format('text2'), 
+…; 
+descriptor1: value1; 
+descriptor2: value2; 
+… 
+} 
+ 
+Setting the Font Size 
+Another important consideration in typography is the text size, which is defined using the 
+following font-size property  
+font-size: size; 
+ 
+Where size is a length in a CSS unit of measurement. Size values for any of these 
+measurements can be whole numbers (0, 1, 2 ...) or decimals (0.5, 1.6, 3.9 ...). Lengths (and 
+widths) in CSS are expressed in either absolute units or relative units.  

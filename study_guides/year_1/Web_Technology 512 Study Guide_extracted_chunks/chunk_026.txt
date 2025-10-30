@@ -1,22 +1,41 @@
-t need any SCRIPT tags in 
-the external file. That is because they are already included in the HTML code. When 
-the browser parsers the HTML it sees the SRC attribute and then includes all your 
-JavaScript at that point. 
- 
-When your code gets too long and unwieldy, placing it in an external file helps you to 
-control it more. Plus, if you need to make changes to the JavaScript you will only need 
-to amend one file, instead of making changes to the HEAD section of lots of HTML 
-files. 
- 
-Exercise 2.1 
-Move your alert message to an external file. Make sure you get the file referencing 
-part right after the SRC attribute, otherwise your code would not run properly. 
- 
 2.4 THE BROWSER OBJECT MODEL  
  
-All browsers are split into different parts (objects) 
-that can be accessed using JavaScript. Collectively, 
-these parts are known as the Browser Object 
-Model, or the BOM. At the very top of this 
-browser hierarchy is the Window object. This 
-represents the entire browser, with its toolbars
+All browsers are split into different parts (objects) that can be accessed using JavaScript. Collectively, 
+these parts are known as the Browser Object Model, or the BOM. At the very top of this 
+browser hierarchy is the Window object. This represents the entire browser, with its toolbars, 
+menus, status bar, the page itself, and a whole lot more besides. Effectively, the Window is the browser. 
+
+Underneath the Window Object there are lots of other objects you can access. These 
+allow you do things like, redirecting the user to a different web page, get the size of 
+the browser window, access all the HTML elements on the page and again a whole lot 
+more besides. Here's an (incomplete) list of Window objects. Notice that the two 
+objects are separated by a dot (full stop/period), with no space between the two. 
+window.document 
+ 
+This allows you to access all your HTML elements. We'll go into more detail about the 
+document object later. 
+window.history 
+ 
+This accesses information about browsing history. This object is of limited use since 
+you can't get at which pages a user has visited, just how many pages are in the 
+browsing history. You can also access the methods history.back, 
+history.forward and history.go. There are not many situations where you 
+want to, though. 
+
+window.innerHeightand window.innerWidth 
+ 
+Gets the height and width of the available space on the page 
+window.screen 
+
+you can't get at which pages a user has visited, just how many pages are in the 
+browsing history. You can also access the methods history.back, 
+history.forward and history.go. There are not many situations where you 
+want to, though. 
+
+window.innerHeightand window.innerWidth 
+ 
+Gets the height and width of the available space on the page 
+window.screen 
+
+Gets information about the browser screen. 
+ 

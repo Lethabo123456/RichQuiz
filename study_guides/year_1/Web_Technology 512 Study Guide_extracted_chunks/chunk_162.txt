@@ -1,30 +1,75 @@
-together through concatenation: 
-document.write( hours +":" + minutes + ":" + seconds + 
-"<BR>"); 
- 
-If you want ordinals at the end of your month day then you will have to write your own 
-function. (An ordinal is the st, nd, rd, or th at the end of the number, like 1st, 2nd 3rd, 
-4th.) The function below returns the ordinal for a month day: 
- 
-
- 
-102 
- 
-SIX | JAVASCRIPT OBJECTS 
- 
-Figure 6.8 
- 
-Here, we have used a switch statement. In English, for the numbers 1 to 31, there are 
-only 7 endings that are not "th". The switch statement tests what is in the variable 
-called day. It returns the ending corresponding to the number, or a default of "th". 
- 
-To call this function you could then do this: 
-document.write( day_of_month + ordinal( day_of_month ) ); 
-  
 6.2.5.2 Date Properties 
+
 Here is a list of each property and their description. 
-Property 
-Description 
-constructor Specifies the function that creates an object's prototype. 
-prototype 
-The prototype property allows you to add pro
+
+Property                     Description 
+-------------------------------------------------------------------------------------------------
+constructor                  Specifies the function that creates an object's prototype.
+------------------------------------------------------------------------------------------------- 
+prototype                    The prototype property allows you to add properties and methods to 
+                             an object. 
+-------------------------------------------------------------------------------------------------
+Table 6.10 – The Date Object Properties 
+
+6.2.5.3 Date Methods 
+Here is a list of each method and its description. 
+
+Method                Description 
+------------------------------------------------------------------------------------------
+Date()                Returns today's date and time 
+------------------------------------------------------------------------------------------
+getDate()             Returns the day of the month for the specified date 
+                      according to local time. 
+------------------------------------------------------------------------------------------
+getDay()              Returns the day of the week for the specified date 
+                      according to local time. 
+------------------------------------------------------------------------------------------
+getFullYear()         Returns the year of the specified date according to local 
+                      time. 
+------------------------------------------------------------------------------------------
+getHours()            Returns the hour in the specified date according to local 
+                      time. 
+------------------------------------------------------------------------------------------
+getMilliseconds()     Returns the milliseconds in the specified date according to 
+                      local time. 
+------------------------------------------------------------------------------------------
+getMinutes()          Returns the minutes in the specified date according to local 
+                      time. 
+------------------------------------------------------------------------------------------
+getMonth()            Returns the month in the specified date according to local 
+                      time. 
+------------------------------------------------------------------------------------------
+getSeconds()          Returns the seconds in the specified date according to local 
+                      time. 
+------------------------------------------------------------------------------------------
+getTime()             Returns the numeric value of the specified date as the 
+                      number of milliseconds since January 1, 1970, 00:00:00 
+                      UTC. 
+------------------------------------------------------------------------------------------
+getTimezoneOffset()   Returns the time-zone offset in minutes for the current 
+                      locale. 
+------------------------------------------------------------------------------------------
+getUTCDate()          Returns the day (date) of the month in the specified date 
+                      according to universal time. 
+------------------------------------------------------------------------------------------
+getUTCDay()           Returns the day of the week in the specified date according 
+                      to universal time. 
+------------------------------------------------------------------------------------------
+getUTCFullYear()      Returns the year in the specified date according to 
+                      universal time. 
+------------------------------------------------------------------------------------------
+getUTCHours()         Returns the hours in the specified date according to 
+                      universal time. 
+------------------------------------------------------------------------------------------
+getUTCMilliseconds()  Returns the milliseconds in the specified date according to 
+                      universal time. 
+------------------------------------------------------------------------------------------
+getUTCMinutes()       Returns the minutes in the specified date according to 
+                      universal time. 
+------------------------------------------------------------------------------------------
+getUTCMonth()         Returns the month in the specified date according to 
+                      universal time. 
+------------------------------------------------------------------------------------------
+getUTCSeconds()       Returns the seconds in the specified date according to 
+                      universal time. 
+------------------------------------------------------------------------------------------
