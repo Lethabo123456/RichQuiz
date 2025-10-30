@@ -155,7 +155,7 @@
           {% endif %}
 
           <p><strong>ML Prediction:</strong> {{ 'Correct' if ml_pred else 'Incorrect' }} 
-             (Confidence: {{ ml_conf | round(2) if ml_conf != 'N/A' else 'N/A' }})</p>
+             (Confidence: {{ ml_conf | round(2) if ml_conf not in [None, 'N/A'] else 'N/A' }})</p>
 
           {% if show_explanations and question.get('reasoning') %}
             <div class="reasoning">
