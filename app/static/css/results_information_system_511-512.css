@@ -2,179 +2,178 @@
 
 /* === Root Theme Variables === */
 :root {
-    --bg-main: radial-gradient(circle at top left, #00111a 10%, #002b36 60%, #001820 100%);
-    --accent-cyan: #00e5ff;
-    --accent-neon: #2ef0a0;
-    --text-light: #e0f7fa;
-    --border-glow: rgba(0, 229, 255, 0.6);
-    --shadow-glow: 0 0 20px rgba(0, 229, 255, 0.4);
-    --font-primary: 'Orbitron', sans-serif;
-    --font-secondary: 'Poppins', sans-serif;
-  }
-  
-  /* === Page Background with Full Frame Border === */
-  body {
-    background: var(--bg-main);
-    color: var(--text-light);
-    font-family: var(--font-secondary);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: auto;
-    position: relative;
-  }
-  
-  /* === Glowing Outer Border Frame === */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    border: 8px solid var(--accent-cyan);
-    box-shadow: 0 0 35px var(--accent-cyan), inset 0 0 25px var(--accent-neon);
-    border-radius: 16px;
-    pointer-events: none;
-    z-index: 0;
-  }
-  
-  /* === Main Quiz Container === */
-  .container {
-    position: relative;
-    background: rgba(0, 20, 30, 0.85);
-    border: 2px solid var(--border-glow);
-    border-radius: 20px;
-    padding: 40px 50px;
-    width: 90%;
-    max-width: 900px;
-    box-shadow: var(--shadow-glow);
-    z-index: 1;
-    backdrop-filter: blur(12px);
-    animation: fadeIn 1.2s ease;
-  }
-  
-  /* === Title === */
-  .container h2 {
-    text-align: center;
-    font-family: var(--font-primary);
-    color: var(--accent-cyan);
-    font-size: 2.2rem;
-    text-shadow: 0 0 20px var(--accent-neon);
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid var(--accent-cyan);
-    padding-bottom: 10px;
-  }
-  
-  /* === Question Text === */
-  .question-container {
-    margin-bottom: 25px;
-    border-left: 4px solid var(--accent-neon);
-    padding-left: 15px;
-    background: rgba(0, 255, 255, 0.05);
-    border-radius: 6px;
-  }
-  
-  /* === Options === */
-  .options-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .option-label {
-    display: flex;
-    align-items: center;
-    background: rgba(0, 30, 40, 0.8);
-    margin: 12px 0;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    transition: all 0.25s ease;
-    padding: 14px 20px;
-    cursor: pointer;
-    font-family: var(--font-secondary);
-    position: relative;
-  }
-  
-  .option-label:hover {
-    border-color: var(--accent-neon);
-    background: rgba(0, 229, 255, 0.12);
-    transform: scale(1.03);
-    box-shadow: 0 0 15px var(--accent-cyan);
-  }
-  
-  /* Radio Buttons (hidden) */
-  .option-label input[type="radio"] {
-    display: none;
-  }
-  
-  .option-label input[type="radio"]:checked + .option-text {
-    color: var(--accent-neon);
-    text-shadow: 0 0 8px var(--accent-neon);
-    font-weight: bold;
-  }
-  
-  .option-text {
-    font-size: 1.1rem;
-    color: var(--text-light);
-  }
-  
-  /* === Submit Button === */
-  .submit-btn {
-    width: 100%;
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-neon));
-    color: #00111a;
-    border: none;
-    border-radius: 30px;
-    padding: 15px;
-    font-family: var(--font-primary);
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 25px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px var(--accent-cyan);
-  }
-  
-  .submit-btn:hover {
-    background: linear-gradient(90deg, var(--accent-neon), var(--accent-cyan));
-    box-shadow: 0 0 30px var(--accent-neon);
-    transform: translateY(-3px);
-  }
-  
-  /* === Back Link === */
-  .back-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--accent-cyan);
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .back-link:hover {
-    color: var(--accent-neon);
-    text-shadow: 0 0 8px var(--accent-neon);
-  }
-  
-  /* === Animations === */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* === Scrollbar Styling === */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent-cyan);
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  
+  --bg-main: radial-gradient(circle at top left, #00111a 10%, #002b36 60%, #001820 100%);
+  --accent-cyan: #00e5ff;
+  --accent-neon: #2ef0a0;
+  --text-light: #e0f7fa;
+  --border-glow: rgba(0, 229, 255, 0.6);
+  --shadow-glow: 0 0 20px rgba(0, 229, 255, 0.4);
+  --font-primary: 'Orbitron', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+/* === Page Background with Full Frame Border === */
+body {
+  background: var(--bg-main);
+  color: var(--text-light);
+  font-family: var(--font-secondary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+/* === Glowing Outer Border Frame === */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  border: 8px solid var(--accent-cyan);
+  box-shadow: 0 0 35px var(--accent-cyan), inset 0 0 25px var(--accent-neon);
+  border-radius: 16px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* === Main Quiz Container === */
+.container {
+  position: relative;
+  background: rgba(0, 20, 30, 0.85);
+  border: 2px solid var(--border-glow);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: var(--shadow-glow);
+  z-index: 1;
+  backdrop-filter: blur(12px);
+  animation: fadeIn 1.2s ease;
+}
+
+/* === Title === */
+.container h2 {
+  text-align: center;
+  font-family: var(--font-primary);
+  color: var(--accent-cyan);
+  font-size: 2.2rem;
+  text-shadow: 0 0 20px var(--accent-neon);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--accent-cyan);
+  padding-bottom: 10px;
+}
+
+/* === Question Text === */
+.question-container {
+  margin-bottom: 25px;
+  border-left: 4px solid var(--accent-neon);
+  padding-left: 15px;
+  background: rgba(0, 255, 255, 0.05);
+  border-radius: 6px;
+}
+
+/* === Options === */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 30, 40, 0.8);
+  margin: 12px 0;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-family: var(--font-secondary);
+  position: relative;
+}
+
+.option-label:hover {
+  border-color: var(--accent-neon);
+  background: rgba(0, 229, 255, 0.12);
+  transform: scale(1.03);
+  box-shadow: 0 0 15px var(--accent-cyan);
+}
+
+/* Radio Buttons (hidden) */
+.option-label input[type="radio"] {
+  display: none;
+}
+
+.option-label input[type="radio"]:checked + .option-text {
+  color: var(--accent-neon);
+  text-shadow: 0 0 8px var(--accent-neon);
+  font-weight: bold;
+}
+
+.option-text {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* === Submit Button === */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-neon));
+  color: #00111a;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px var(--accent-cyan);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, var(--accent-neon), var(--accent-cyan));
+  box-shadow: 0 0 30px var(--accent-neon);
+  transform: translateY(-3px);
+}
+
+/* === Back Link === */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--accent-cyan);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: var(--accent-neon);
+  text-shadow: 0 0 8px var(--accent-neon);
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-cyan);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}

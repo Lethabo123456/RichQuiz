@@ -1,166 +1,273 @@
-/* results_mathematics_themes.css */
+/* ======================================================
+   RESULTS PAGE - MATHEMATICS 511-512
+   Extravagant, elegant, mathematical theme
+   ====================================================== */
 
-/* Base page and container styles, inspired by your math CSS */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Slab', serif;
-    background: #f4f7fb;
-    color: #2c3e50;
-    background-image:
-      linear-gradient(to right, #d0d7e3 1px, transparent 1px),
-      linear-gradient(to bottom, #d0d7e3 1px, transparent 1px);
-    background-size: 30px 30px;
-  }
-  
-  .card {
-    background: #ffffff;
-    border-radius: 16px;
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 50px 40px;
-    box-shadow:
-      0 8px 24px rgba(44, 62, 80, 0.1),
-      inset 0 0 0 1px #dce6f1;
-    position: relative;
-  }
-  
-  /* subtle large math symbols in background */
-  .card::before {
-    content: "∑ ∫ ∞ √ π ∆ ∂ ∇";
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 6rem;
-    color: rgba(44, 62, 80, 0.05);
-    font-weight: 700;
-    user-select: none;
-    pointer-events: none;
-    font-family: 'Fira Code', monospace;
-    line-height: 1;
-  }
-  
-  /* Main heading */
-  .card > h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin-bottom: 35px;
-    color: #34495e;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 8px;
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Themes list container */
-  .summary {
-    margin-top: 20px;
-  }
-  
-  /* Grid layout for theme cards */
-  ul.themes-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
-  
-  /* Individual theme cards */
-  .theme-card {
-    background: #3498db;
-    color: #ecf0f1;
-    padding: 22px 26px;
-    border-radius: 14px;
-    cursor: default;
-    font-weight: 600;
-    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
-    transition: background-color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
-    user-select: text;
-    font-family: 'Roboto Slab', serif;
-  }
-  
-  /* Hover effect */
-  .theme-card:hover {
-    background-color: #2980b9;
-    box-shadow: 0 6px 12px rgba(41, 128, 185, 0.5);
-    transform: translateY(-2px);
-    color: #ecf0f1;
-  }
-  
-  /* Theme title */
-  .theme-card h3 {
-    margin-top: 0;
-    margin-bottom: 14px;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #ecf0f1;
-    text-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
-  }
-  
-  /* Theme description */
-  .theme-card p {
-    font-size: 1.05rem;
-    line-height: 1.5;
-    color: #3c4c92cc;
-    font-weight: 400;
-  }
-  
-  /* Buttons container */
-  .buttons {
-    margin-top: 45px;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  
-  /* Button style */
-  .button {
-    background-color: #2980b9;
-    color: #ecf0f1;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 14px 36px;
-    border-radius: 30px;
-    box-shadow: 0 7px 18px #2980b9aa;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1rem;
-    letter-spacing: 0.03em;
-    user-select: none;
-    cursor: pointer;
-  }
-  
-  /* Button hover */
-  .button:hover {
-    background-color: #1c5980;
-    box-shadow: 0 10px 28px #1c598080;
-  }
-  
-  /* Responsive tweaks */
-  @media (max-width: 600px) {
-    .card {
-      padding: 38px 20px;
-    }
-    .theme-card h3 {
-      font-size: 1.1rem;
-    }
-    .theme-card p {
-      font-size: 1rem;
-    }
-    .buttons {
-      gap: 16px;
-    }
-    .button {
-      padding: 12px 28px;
-      font-size: 0.95rem;
-    }
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: radial-gradient(circle at center, #0b0b28, #000010);
+  color: #f8faff;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Subtle mathematical coordinate grid */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image:
+    linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 70px 70px;
+  opacity: 0.25;
+  z-index: 0;
+  animation: gridDrift 30s linear infinite;
+}
+@keyframes gridDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: 70px 70px; }
+}
+
+/* Floating math symbols for ambience */
+body::after {
+  content: '∑  π  √  ∫  Δ  θ  μ  φ  ∇  Ω  Σ  ≈  ∂  λ  β  α  γ  ψ  η';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  color: rgba(255,255,255,0.05);
+  font-size: 5rem;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  z-index: 0;
+  animation: floatSymbols 80s linear infinite alternate;
+}
+@keyframes floatSymbols {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1deg); }
+}
+
+/* ======================================
+   CARD STRUCTURE
+   ====================================== */
+.card {
+  position: relative;
+  background: rgba(10, 10, 40, 0.9);
+  border-radius: 25px;
+  padding: 40px 50px;
+  max-width: 950px;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 255, 204, 0.2);
+  border: 2px solid transparent;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* Animated border effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #00ffcc, #1a73e8, #ffd700, #00ffcc);
+  background-size: 300% 300%;
+  animation: borderPulse 15s linear infinite;
+  z-index: -1;
+}
+@keyframes borderPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ======================================
+   HEADINGS & TEXT
+   ====================================== */
+h2 {
+  font-family: 'Space Mono', monospace;
+  color: #ffd700;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 0 20px #1a73e8;
+  margin-bottom: 30px;
+}
+
+/* ======================================
+   SCORE & PROGRESS
+   ====================================== */
+.score {
+  font-size: 1.3rem;
+  text-align: center;
+  background: rgba(26,115,232,0.15);
+  border-left: 4px solid #00ffcc;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.progress-container {
+  height: 16px;
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ffcc, #1a73e8, #ffd700);
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* ======================================
+   RESULT STATUS
+   ====================================== */
+.result {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 25px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0,255,204,0.5);
+}
+
+/* ======================================
+   TIME DISPLAY
+   ====================================== */
+.time {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  color: #00ffcc;
+}
+
+/* ======================================
+   ADAPTIVE FEEDBACK
+   ====================================== */
+.adaptive-feedback {
+  background: rgba(255,255,255,0.05);
+  border-left: 5px solid #ffd700;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 35px;
+}
+.adaptive-feedback h3 {
+  color: #ffd700;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 15px;
+}
+.adaptive-feedback ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.adaptive-feedback li {
+  margin: 8px 0;
+  font-family: 'Space Mono', monospace;
+  color: #e0e9ff;
+}
+
+/* ======================================
+   SUMMARY SECTION
+   ====================================== */
+.summary h3 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+.qa {
+  border-radius: 15px;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+.qa.correct {
+  border-left: 4px solid #00ffcc;
+}
+.qa.incorrect {
+  border-left: 4px solid #ff3366;
+}
+.qa:hover {
+  transform: translateX(5px);
+  background: rgba(26,115,232,0.15);
+}
+.reasoning {
+  margin-top: 10px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  padding: 10px;
+  color: #9defff;
+  font-family: 'Space Mono', monospace;
+}
+
+/* ======================================
+   BUTTONS
+   ====================================== */
+.buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+.button {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #ffd700, #00ffcc);
+  color: #000;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  transition: 0.3s;
+}
+.button:hover {
+  background: linear-gradient(135deg, #00ffcc, #ffd700);
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+/* ======================================
+   SCROLLBAR
+   ====================================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ffcc, #ffd700);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+/* ======================================
+   FLOATING ELEMENTS ANIMATION
+   ====================================== */
+.card, .qa, .adaptive-feedback {
+  animation: float 6s ease-in-out infinite alternate;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
