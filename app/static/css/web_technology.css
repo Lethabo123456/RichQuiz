@@ -1,0 +1,207 @@
+/* ==============================
+   WEB TECHNOLOGY THEME
+   ============================== */
+
+/* Fonts & Body */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0f0f1a;
+  min-height: 100vh;
+  margin: 0;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Grid & Web Icons Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 30px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 30px),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><text x="0" y="15" font-size="15" fill="rgba(0,255,255,0.05)">HTML</text><text x="0" y="30" font-size="15" fill="rgba(255,255,0,0.05)">CSS</text><text x="0" y="45" font-size="15" fill="rgba(255,0,0,0.05)">JS</text></svg>');
+  background-size: 30px 30px, 30px 30px, 200px 200px;
+  z-index: 0;
+}
+
+/* Main Container */
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(10,10,25,0.95);
+  border-radius: 25px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+  border: 2px solid #00d4ff;
+}
+
+/* Animated Glow Border */
+.container::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 28px;
+  background: linear-gradient(45deg, #ff3c00, #00d4ff, #ffd600, #ff3c00);
+  background-size: 400% 400%;
+  animation: glow-border 10s ease infinite;
+  z-index: -1;
+}
+@keyframes glow-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Headings */
+h2 {
+  font-family: 'Fira Code', monospace;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #00d4ff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px #00d4ff;
+  margin-bottom: 30px;
+}
+
+/* Questions */
+.question-container {
+  background: rgba(0,0,50,0.5);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 5px solid #ffd600;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+/* Options */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: rgba(0,212,255,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.option-label:hover {
+  background: rgba(0,212,255,0.15);
+  box-shadow: 0 0 12px #00d4ff;
+}
+.option-label input[type="radio"] {
+  accent-color: #ffd600;
+}
+.option-label input[type="radio"]:checked + .option-text {
+  background: #00d4ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  margin: 25px auto 0 auto;
+  padding: 12px 30px;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+  background: linear-gradient(135deg, #ffd600, #ff3c00);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ffd600;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  background: linear-gradient(135deg, #00d4ff, #ffd600);
+  box-shadow: 0 0 25px #00d4ff;
+  transform: translateY(-3px);
+}
+
+/* Back link */
+.back-link {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Code Blocks */
+pre, code {
+  font-family: 'Fira Code', monospace;
+  background: rgba(0,0,0,0.7);
+  color: #ffd600;
+  padding: 8px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff3c00, #ffd600);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Floating Animations */
+.container, .question-container, .options-list li {
+  animation: floaty 5s ease-in-out infinite alternate;
+}
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Error Messages */
+.error-message {
+  color: #ff3366;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Extra Decorations */
+body::after {
+  content: "";
+  position: absolute;
+  width: 200px; height: 200px;
+  top: 10%; right: 10%;
+  background:
+    radial-gradient(circle, #ff3c00 2px, transparent 2px),
+    radial-gradient(circle, #ffd600 2px, transparent 2px),
+    radial-gradient(circle, #00d4ff 2px, transparent 2px);
+  border-radius: 50%;
+  box-shadow: 200px 100px #ff3c00, 300px 300px #ffd600, 150px 400px #00d4ff;
+  opacity: 0.2;
+  z-index: 0;
+}

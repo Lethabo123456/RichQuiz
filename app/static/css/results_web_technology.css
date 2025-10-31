@@ -1,0 +1,196 @@
+/* ==============================
+   WEB TECHNOLOGY THEME - RESULTS
+   ============================== */
+
+/* Import Monospace & Modern Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto+Mono:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #0d0d1a;
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background Grid + Floating Code Icons */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 25px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 25px),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><text x="0" y="15" font-size="15" fill="rgba(0,255,255,0.05)">HTML</text><text x="0" y="35" font-size="15" fill="rgba(255,255,0,0.05)">CSS</text><text x="0" y="55" font-size="15" fill="rgba(255,0,0,0.05)">JS</text></svg>');
+  background-size: 25px 25px, 25px 25px, 250px 250px;
+  z-index: 0;
+}
+
+/* Card Container */
+.card {
+  position: relative;
+  z-index: 1;
+  background: rgba(10,10,25,0.95);
+  border-radius: 25px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
+  border: 2px solid #00d4ff;
+  animation: floaty 6s ease-in-out infinite alternate;
+}
+
+/* Animated Glow Border */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 28px;
+  background: linear-gradient(45deg, #ff3c00, #00d4ff, #ffd600, #ff3c00);
+  background-size: 400% 400%;
+  animation: glow-border 10s ease infinite;
+  z-index: -1;
+}
+@keyframes glow-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Headings */
+h2 {
+  font-family: 'Fira Code', monospace;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #00d4ff;
+  text-shadow: 0 0 15px #00d4ff;
+  margin-bottom: 30px;
+}
+
+/* Score */
+.score {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #ffd600;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ffd600;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  background: rgba(0,0,50,0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 25px;
+  box-shadow: 0 0 10px #00d4ff;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #ffd600, #ff3c00);
+  width: 0%;
+  border-radius: 15px;
+  transition: width 1.5s ease;
+}
+
+/* Result Text */
+#result-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff3c00;
+}
+
+/* Time Display */
+#time-display {
+  text-align: center;
+  font-size: 1rem;
+  color: #00ffd4;
+  margin-bottom: 25px;
+  text-shadow: 0 0 8px #00ffd4;
+}
+
+/* Adaptive Feedback */
+.adaptive-feedback h3 {
+  color: #ff3c00;
+  text-shadow: 0 0 8px #ff3c00;
+}
+.adaptive-feedback ul {
+  list-style: none;
+  padding-left: 0;
+}
+.adaptive-feedback li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: rgba(0,212,255,0.05);
+  border-left: 4px solid #00d4ff;
+  border-radius: 8px;
+}
+
+/* QA Sections */
+.qa {
+  background: rgba(0,0,50,0.5);
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease;
+}
+.qa.correct { border-left: 5px solid #00ff00; }
+.qa.incorrect { border-left: 5px solid #ff3c00; }
+.qa:hover { transform: translateY(-3px); }
+
+.question-text { margin-bottom: 10px; font-family: 'Fira Code', monospace; }
+.reasoning pre {
+  background: rgba(0,0,0,0.7);
+  padding: 8px;
+  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+  color: #ffd600;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+.button {
+  text-decoration: none;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #00d4ff, #ffd600, #ff3c00);
+  color: #000;
+  box-shadow: 0 0 20px #00d4ff;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: linear-gradient(135deg, #ff3c00, #00d4ff, #ffd600);
+  box-shadow: 0 0 25px #ff3c00;
+  transform: translateY(-3px);
+}
+
+/* Floating Animation */
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #ff3c00, #ffd600); border-radius: 5px; }
+::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
