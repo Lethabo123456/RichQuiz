@@ -1,204 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+/* ================================
+   RESULTS PAGE — PROGRAMMING (PYTHON)
+   Extravagant, Coding-Themed Design
+   ================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
   font-family: 'Fira Code', monospace;
-  background-color: #0f111a;
-  color: #e0e0e0;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
+  background: radial-gradient(circle at center, #0d1117, #000000);
+  color: #e6edf3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
 }
 
+/* Subtle animated grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image:
+    linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes gridMove {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 40px 40px, 40px 40px; }
+}
+
+/* Floating mathematical and Python symbols */
+body::after {
+  content: "λ ∑ π def → ∞ while: return print() ≈ ≠ ≥ ≤";
+  position: absolute;
+  top: 10%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgba(255, 235, 59, 0.05);
+  white-space: nowrap;
+  letter-spacing: 10px;
+  animation: floatSymbols 18s linear infinite alternate;
+  z-index: 0;
+}
+
+@keyframes floatSymbols {
+  from { transform: translateX(-50%) translateY(0); }
+  to { transform: translateX(-50%) translateY(20px); }
+}
+
+/* Result card */
 .card {
-  background: #1e1e2f;
-  border-radius: 12px;
-  padding: 40px 30px;
-  width: 95%;
-  max-width: 850px;
-  margin: 60px auto;
-  box-shadow: 0 0 25px rgba(0, 255, 128, 0.15);
-}
-
-h2, h3 {
-  color: #00ff88;
+  background: rgba(25, 25, 25, 0.9);
+  border: 2px solid rgba(255, 213, 79, 0.4);
+  box-shadow: 0 0 40px rgba(100, 181, 246, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease;
 }
 
-.score {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #ffcb05;
-  text-align: center;
-  margin-bottom: 12px;
-  text-shadow: 0 0 6px #ffcb05aa;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.result {
-  font-size: 1.3rem;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 600;
+.card h2 {
+  color: #ffd54f;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.2rem;
+  text-shadow: 0 0 8px rgba(255, 213, 79, 0.6);
+  margin-bottom: 15px;
 }
 
-.time {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  color: #aaa;
-  user-select: none;
-}
-
-/* Progress Bar */
+/* Progress bar */
 .progress-container {
-  background-color: #1a2235;
-  height: 25px;
-  border-radius: 15px;
-  margin: 20px 0;
+  width: 100%;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #2da8f7;
+  margin: 15px 0 30px 0;
 }
 
 .progress-bar {
-  background: linear-gradient(90deg, #00ff88, #00ccff);
   height: 100%;
-  width: 0;
-  transition: width 1s ease-in-out;
-  border-radius: 15px 0 0 15px;
+  background: linear-gradient(90deg, #4db6ac, #00acc1, #81d4fa);
+  box-shadow: 0 0 15px #00acc1;
+  border-radius: 10px;
+  transition: width 1.2s ease;
 }
 
-/* Summary / QA */
+/* Result text */
+.result {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(129, 212, 250, 0.7);
+}
+
+/* Score display */
+.score {
+  font-size: 1.3rem;
+  color: #81d4fa;
+  text-shadow: 0 0 6px rgba(129, 212, 250, 0.6);
+  margin-bottom: 10px;
+}
+
+/* Adaptive feedback section */
+.adaptive-feedback {
+  margin-top: 25px;
+  background: rgba(33, 33, 33, 0.85);
+  border: 1px solid rgba(255, 235, 59, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 213, 79, 0.2);
+}
+
+.adaptive-feedback h3 {
+  color: #ffca28;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(255, 213, 79, 0.6);
+}
+
+.adaptive-feedback p,
+.adaptive-feedback li {
+  color: #b0bec5;
+  line-height: 1.6;
+}
+
+/* Summary of answers */
 .summary {
-  margin-top: 40px;
+  margin-top: 30px;
+  background: rgba(26, 35, 39, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid rgba(144, 202, 249, 0.2);
+}
+
+.summary h3 {
+  color: #4fc3f7;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px rgba(79, 195, 247, 0.6);
 }
 
 .qa {
-  background-color: #12131e;
-  padding: 20px;
-  border-radius: 10px;
+  text-align: left;
   margin-bottom: 25px;
-  border-left: 5px solid #00ff88;
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  border-left: 4px solid #0288d1;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+
+.qa.correct {
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.08);
 }
 
 .qa.incorrect {
-  border-left-color: #ff4c4c;
-}
-
-.question-text {
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
-/* Reasoning / Explanation */
-.reasoning {
-  font-size: 0.85rem;
-  margin-top: 10px;
-  background-color: #0f111a;
-  border-left: 3px solid #00ff88;
-  padding: 10px 14px;
-  border-radius: 6px;
-  color: #ccc;
-  max-height: 240px;
-  overflow-y: auto;
-  max-width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #00ff88 #1e1e2f;
-}
-
-/* Webkit scrollbars */
-.reasoning::-webkit-scrollbar {
-  width: 6px;
-}
-.reasoning::-webkit-scrollbar-track {
-  background: #1e1e2f;
-}
-.reasoning::-webkit-scrollbar-thumb {
-  background-color: #00ff88;
-  border-radius: 10px;
-}
-
-/* Code Styling */
-.code-block pre {
-  font-family: 'Fira Code', monospace;
-  background-color: #12131e;
-  color: #f8f8f2;
-  padding: 1rem;
-  border-radius: 10px;
-  overflow-x: auto;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  border: 1px solid #00ff88;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  margin: 0;
-}
-
-.code-block pre::-webkit-scrollbar {
-  height: 6px;
-}
-.code-block pre::-webkit-scrollbar-thumb {
-  background: #00ff88;
-  border-radius: 10px;
+  border-color: #e53935;
+  background: rgba(229, 57, 53, 0.08);
 }
 
 /* Buttons */
 .buttons {
-  text-align: center;
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .button {
-  background-color: #00ff88;
-  color: #000;
-  border: none;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
   text-decoration: none;
-  margin: 0 10px;
-  display: inline-block;
+  color: #fff;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #1976d2, #00acc1);
+  border-radius: 12px;
   font-weight: bold;
-  transition: background 0.3s ease;
-  user-select: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 172, 193, 0.5);
 }
 
 .button:hover {
-  background-color: #00cc70;
+  background: linear-gradient(90deg, #00acc1, #26c6da);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
 }
 
-/* Feedback Section */
-.feedback {
-  background-color: #12131e;
-  border-left: 5px solid #00bfa5;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 30px 0 40px 0;
-  box-shadow: 0 0 15px rgba(0, 191, 165, 0.15);
-  color: #a0f0d8;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.feedback h3 {
-  color: #00bfa5;
-  margin-bottom: 15px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.feedback ul {
-  list-style: disc inside;
-  padding-left: 0;
-  margin: 0;
-}
-
-.feedback ul li {
-  margin-bottom: 10px;
-  padding-left: 8px;
-  text-shadow: 0 0 3px #00bfa5aa;
+/* Fade-in animations */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
