@@ -1,146 +1,164 @@
-/* Java Themed Quiz CSS (programming_java.css) */
+/* ================================
+   PROGRAMMING (JAVA) THEMED CSS
+   Extravagant, Java-Style Colors & Fonts
+   ================================ */
 
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Fira+Code:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap');
 
 body {
-  font-family: 'Roboto Slab', serif;
-  background: linear-gradient(135deg, #3c2a21, #1a0f0a);
-  color: #f5e6d3;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
+    font-family: 'Source Code Pro', monospace;
+    background: linear-gradient(135deg, #1a1a1a, #3e2723);
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+    overflow-x: hidden;
 }
 
+/* Animated floating coffee icons in the background */
+body::before {
+    content: "☕ ☕ ☕ ☕ ☕ ☕";
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: rgba(255, 193, 7, 0.08);
+    animation: floatCoffee 20s linear infinite alternate;
+    z-index: 0;
+}
+
+@keyframes floatCoffee {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(30px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* Main container card */
 .container {
-  background: #2b1b13;
-  border-radius: 18px;
-  padding: 2rem 2.5rem;
-  width: 100%;
-  max-width: 900px;
-  box-shadow: 0 0 25px rgba(255, 87, 34, 0.7), inset 0 0 20px rgba(255, 255, 255, 0.1);
-  border: 3px solid #ff5722;
-  animation: floatCard 3s ease-in-out infinite alternate;
+    background: rgba(35, 27, 23, 0.95);
+    border: 3px solid #ff9800;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    padding: 40px 30px;
+    box-shadow: 0 0 50px rgba(255, 152, 0, 0.5);
+    position: relative;
+    z-index: 2;
 }
 
-@keyframes floatCard {
-  from { transform: translateY(0px); }
-  to { transform: translateY(-8px); }
-}
-
+/* Heading */
 h2 {
-  font-size: 2.3rem;
-  color: #ff7043;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
-  position: relative;
+    font-size: 2.2rem;
+    color: #ffb74d;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 12px rgba(255, 152, 0, 0.8);
 }
 
-h2::after {
-  content: "☕";
-  position: absolute;
-  right: -2rem;
-  font-size: 2rem;
-  animation: steamRise 2s infinite ease-in-out;
-}
-
-@keyframes steamRise {
-  0% { transform: translateY(0); opacity: 0.6; }
-  50% { transform: translateY(-8px); opacity: 1; }
-  100% { transform: translateY(-15px); opacity: 0; }
-}
-
+/* Question container */
 .question-container {
-  background: #40251b;
-  border: 2px solid #ff7043;
-  border-radius: 12px;
-  padding: 1.2rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.1);
+    background: rgba(50, 33, 27, 0.85);
+    border-left: 5px solid #ff9800;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.2);
 }
 
+/* Question text with subtle glow */
+#question-text {
+    font-size: 1.2rem;
+    color: #fff3e0;
+    text-shadow: 0 0 6px rgba(255, 193, 7, 0.5);
+}
+
+/* Options list */
 .options-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
 .option-label {
-  display: flex;
-  align-items: center;
-  background: #321e14;
-  margin: 0.6rem 0;
-  padding: 0.8rem 1rem;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Fira Code', monospace;
-  font-size: 1rem;
-  color: #eaeaea;
+    display: flex;
+    align-items: center;
+    background: rgba(60, 42, 34, 0.9);
+    border: 2px solid #ffb74d;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .option-label:hover {
-  border-color: #ff7043;
-  background: #4b2f24;
-  box-shadow: 0 0 12px rgba(255, 87, 34, 0.8);
-}
-
-.option-label input[type="radio"] {
-  accent-color: #ff5722;
-  transform: scale(1.3);
-  margin-right: 0.7rem;
+    background: rgba(255, 152, 0, 0.2);
+    border-color: #ffc107;
+    transform: scale(1.03);
 }
 
 .option-text {
-  flex-grow: 1;
+    margin-left: 12px;
+    color: #ffcc80;
+    font-weight: 500;
 }
 
-.error-message {
-  color: #ffab91;
-  font-weight: bold;
-  margin: 1rem 0;
-  text-align: center;
-  text-shadow: 0 0 6px rgba(255, 171, 145, 0.6);
-}
-
+/* Submit button */
 .submit-btn {
-  background: linear-gradient(135deg, #ff5722, #ff7043);
-  border: none;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 0.9rem 2rem;
-  border-radius: 50px;
-  cursor: pointer;
-  width: 100%;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
+    background: linear-gradient(90deg, #ff9800, #ffa726);
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.6);
+    transition: all 0.3s ease;
+    display: block;
+    margin: 25px auto 0;
 }
 
 .submit-btn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #ff8a65, #ff5722);
-  box-shadow: 0 0 25px rgba(255, 87, 34, 1);
+    background: linear-gradient(90deg, #ffa726, #ffb74d);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 193, 7, 0.8);
 }
 
+/* Back link */
 .back-link {
-  display: block;
-  margin-top: 1.5rem;
-  text-align: center;
-  color: #ffab91;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    color: #ffcc80;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .back-link:hover {
-  color: #fff;
-  text-shadow: 0 0 12px #ff7043;
+    color: #fff176;
+}
+
+/* Code blocks (Prism.js) */
+pre[class*="language-"] {
+    background: rgba(44, 33, 27, 0.95) !important;
+    color: #ffe082 !important;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 0.95rem;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+}
+
+/* Fade-in animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container, .question-container, .options-list, .submit-btn {
+    animation: fadeInUp 1s ease forwards;
 }
