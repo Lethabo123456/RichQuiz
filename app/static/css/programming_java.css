@@ -1,171 +1,185 @@
-/* ==============================
-   Programming (JAVA) Themed CSS
-   ============================== */
+/* programming_java.css - Extravagant Java-themed styling */
 
-/* Fonts & Base */
-body.module-style-programming-java {
-    font-family: 'Fira Code', 'Courier New', monospace;
-    background: linear-gradient(120deg, #1b1b1b, #2c2c2c);
-    color: #fff;
-    line-height: 1.6;
+/* ===== Page & Body ===== */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #2b2b2b, #3c2f2f);
+    color: #fff8e1;
+    margin: 0;
+    padding: 0;
 }
 
+/* ===== Container ===== */
 .container {
     max-width: 900px;
     margin: 40px auto;
+    background: linear-gradient(to bottom, #4e342e, #3e2723);
     padding: 30px;
-    background: linear-gradient(145deg, #3e2723, #5d4037);
     border-radius: 20px;
-    box-shadow: 0 0 25px rgba(255, 152, 0, 0.7);
+    box-shadow: 0 0 30px rgba(255, 152, 0, 0.6);
 }
 
-/* Headings */
+/* ===== Header ===== */
 h2 {
     text-align: center;
-    font-size: 2.2em;
+    font-family: 'Lucida Console', monospace;
     color: #ffb74d;
-    text-shadow: 0 0 10px rgba(255, 193, 7, 0.8);
-    margin-bottom: 25px;
+    text-shadow: 0 0 8px #ff9800, 0 0 16px #ffc107;
+    margin-bottom: 30px;
 }
 
-/* Question Container */
+/* ===== Question Container ===== */
 .question-container {
-    background: #4e342e;
-    padding: 20px;
-    border-radius: 15px;
     margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(255, 152, 0, 0.05);
     border-left: 5px solid #ff9800;
+    border-radius: 10px;
 }
 
-.question-container p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-/* Options List */
+/* ===== Options List ===== */
 .options-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
 }
 
 .option-label {
     display: flex;
     align-items: center;
-    background: #3e2723;
+    background: rgba(255, 193, 7, 0.1);
+    border: 2px solid #ffb74d;
     border-radius: 12px;
-    margin-bottom: 12px;
-    padding: 12px 16px;
+    margin-bottom: 15px;
+    padding: 12px 20px;
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    font-weight: 500;
 }
 
-/* Custom radio button indicator */
-.option-label::before {
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border: 2px solid #ffb74d;
-    border-radius: 50%;
-    margin-right: 12px;
-    vertical-align: middle;
-    transition: all 0.3s ease;
+.option-label:hover {
+    background: rgba(255, 193, 7, 0.2);
+    box-shadow: 0 0 12px rgba(255, 152, 0, 0.5);
 }
 
-/* Hide actual radio input */
+/* ===== Custom Radio Button ===== */
 .option-label input[type="radio"] {
     display: none;
 }
 
-/* Style selected option */
+.option-label::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ffb74d;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
 .option-label input[type="radio"]:checked + .option-text::before,
 .option-label input[type="radio"]:checked + .option-text {
-    /* Fill circle indicator */
+    /* Nothing here, handled below */
 }
 
 .option-label input[type="radio"]:checked + .option-text::before {
     background: #ff9800;
     border-color: #ffc107;
-    box-shadow: 0 0 10px rgba(255, 193, 7, 0.7);
+    box-shadow: 0 0 12px rgba(255, 193, 7, 0.8);
 }
 
-/* Highlight the whole option when selected */
 .option-label input[type="radio"]:checked ~ .option-text,
 .option-label input[type="radio"]:checked + .option-text {
     color: #fff176;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255, 193, 7, 0.8);
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.9);
 }
 
-/* Hover effects */
-.option-label:hover {
-    transform: scale(1.02);
-    background: #5d4037;
-    border-color: #ffb74d;
-    box-shadow: 0 0 12px rgba(255, 152, 0, 0.5);
-}
-
-/* Buttons */
-.submit-btn, .back-link {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff9800, #ffb74d);
-    color: #1b1b1b;
-    font-weight: bold;
-    padding: 12px 28px;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+/* ===== Buttons ===== */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
     margin-top: 20px;
+    background: #ff9800;
+    color: #2b2b2b;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
     transition: all 0.3s ease;
 }
 
-.submit-btn:hover, .back-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 15px rgba(255, 193, 7, 0.8);
+.submit-btn:hover {
+    background: #ffc107;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 1);
 }
 
-/* Explanation Box */
-.explanation {
-    background: #3e2723;
-    padding: 15px;
-    border-left: 5px solid #ff9800;
-    border-radius: 12px;
-    margin-top: 15px;
-    color: #fff9c4;
-}
-
-/* Code blocks */
-pre, code {
-    background: #212121;
-    color: #ffab40;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.95em;
-    padding: 10px;
-    border-radius: 10px;
-    overflow-x: auto;
-    box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
-}
-
-/* Error message */
-.error-message {
-    color: #ff5252;
-    font-weight: 700;
-    margin-top: 15px;
-}
-
-/* Misc */
-a.back-link {
+/* ===== Back Link ===== */
+.back-link {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 20px;
     color: #ffb74d;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 0 0 8px #ff9800;
 }
 
-a.back-link:hover {
-    text-shadow: 0 0 10px #ffb74d;
+.back-link:hover {
+    color: #ffc107;
+    text-shadow: 0 0 12px #ffb74d;
+}
+
+/* ===== Code Blocks ===== */
+pre, code {
+    background: #3e2723;
+    color: #ffcc80;
+    padding: 12px;
+    border-radius: 10px;
+    display: block;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+}
+
+/* ===== Explanation ===== */
+.explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 152, 0, 0.1);
+    border-left: 4px solid #ff9800;
+    border-radius: 8px;
+    font-style: italic;
+    color: #fff9c4;
+}
+
+/* ===== Error Message ===== */
+.error-message {
+    color: #ff5252;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .option-label {
+        padding: 10px 15px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 1em;
+    }
 }
