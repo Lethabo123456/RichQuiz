@@ -1,0 +1,137 @@
+/* ===== Second Year College Information System Themed Results Page ===== */
+
+/* General Body */
+body.module-style-results-information-system {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.results-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px 60px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9), 0 0 80px #00ffea;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 3px solid #00ffea;
+    position: relative;
+}
+
+/* Heading */
+.results-container h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00ffea;
+    text-shadow: 2px 2px #000;
+}
+
+/* Flash Messages */
+.flash-messages {
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+}
+
+.flash-success {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+}
+
+.flash-danger, .flash-warning {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, select {
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(0, 255, 234, 0.1);
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    background-color: #00ffea;
+    color: #000;
+    box-shadow: 0 0 15px #00ffea, 0 0 30px #00e0c9;
+}
+
+/* Submit Button */
+button {
+    padding: 16px 0;
+    border: none;
+    border-radius: 30px;
+    background: #00ffea;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00ffea, 0 0 40px #00e0c9;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00e0c9;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ffea, 0 0 60px #00e0c9;
+}
+
+/* Links */
+a {
+    color: #00ffea;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #00e0c9;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .results-container {
+        padding: 30px 25px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    input, select {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 14px 0;
+    }
+}

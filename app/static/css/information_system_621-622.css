@@ -1,0 +1,194 @@
+/* ===== Information System Themed CSS ===== */
+
+/* General Body */
+body.module-style-information-system-511-512 {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), 0 0 60px #00ffea;
+    border: 2px solid #00ffea;
+}
+
+/* Headings */
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    text-align: center;
+    color: #00ffea;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 30px;
+}
+
+/* Question Container */
+.question-container {
+    background: rgba(0, 255, 234, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #00ffea;
+    margin-bottom: 20px;
+}
+
+.question-container p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Question Text */
+#question-text {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #f0f0f0;
+}
+
+/* Options List */
+.options-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 255, 234, 0.1);
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #00ffea;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-label:hover {
+    background: rgba(0, 255, 234, 0.25);
+    transform: scale(1.02);
+}
+
+/* Radio Input */
+input[type="radio"] {
+    margin-right: 15px;
+    accent-color: #00ffea;
+}
+
+/* Option Text */
+.option-text {
+    font-size: 1em;
+    color: #f0f0f0;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+/* ===== Selected Option Styling ===== */
+.option-label input[type="radio"]:checked + .option-text {
+    background: rgba(0, 255, 234, 0.4);
+    color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00ffea, 0 0 30px #00e0c9;
+}
+
+/* Optional: glowing border on the whole label */
+.option-label input[type="radio"]:checked {
+    outline: 2px solid #00ffea;
+    outline-offset: 2px;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background: #00ffea;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffea;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #00e0c9;
+    box-shadow: 0 0 25px #00e0c9, 0 0 50px #00ffea;
+    transform: translateY(-2px);
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #00ffea;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #00e0c9;
+    text-decoration: underline;
+}
+
+/* Explanation Box */
+.explanation {
+    margin-top: 20px;
+    background: rgba(0, 255, 234, 0.05);
+    padding: 15px;
+    border-left: 5px solid #00ffea;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #d0f0f0;
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Prism Code Blocks */
+pre[class*="language-"] {
+    background: #0f1c2e !important;
+    color: #00ffea !important;
+    border-radius: 10px;
+    padding: 15px !important;
+    overflow-x: auto;
+    box-shadow: 0 0 15px #00ffea;
+}
+
+code[class*="language-"] {
+    color: #00ffea;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+    }
+}
