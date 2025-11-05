@@ -1,0 +1,240 @@
+/* ==================================================
+   RESULTS_DATABASE_SYSTEM.CSS
+   Database Systems Neon Query Matrix Results Theme
+   ================================================== */
+
+/* Base background — holographic data grid */
+body {
+  background-color: #060b14;
+  background-image: linear-gradient(90deg, rgba(3, 233, 244, 0.05) 1px, transparent 1px),
+                    linear-gradient(0deg, rgba(3, 233, 244, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  font-family: 'Fira Code', monospace;
+  color: #d9faff;
+  margin: 0;
+  padding: 40px 0;
+  overflow-x: hidden;
+}
+
+/* Holographic shimmer overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(255, 46, 184, 0.07), rgba(3, 233, 244, 0.07));
+  mix-blend-mode: overlay;
+  animation: shimmer 15s linear infinite;
+  pointer-events: none;
+}
+@keyframes shimmer {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-250px); }
+}
+
+/* Main result card container */
+.card {
+  max-width: 950px;
+  margin: 50px auto;
+  background: rgba(9, 18, 35, 0.9);
+  border-radius: 20px;
+  border: 1px solid rgba(3, 233, 244, 0.2);
+  box-shadow: 0 0 25px rgba(3, 233, 244, 0.3), inset 0 0 25px rgba(255, 46, 184, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 45px;
+  position: relative;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Title — Database query dashboard header */
+.card h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #03e9f4;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #03e9f4, 0 0 20px #ff2eb8;
+  border-bottom: 2px solid rgba(3, 233, 244, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+.card h2::after {
+  content: "● QUERY EXECUTED SUCCESSFULLY ●";
+  display: block;
+  color: #ff2eb8;
+  font-size: 0.65em;
+  text-shadow: 0 0 8px #ff2eb8;
+  animation: blink 1.6s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Score display — glowing query result summary */
+.score {
+  background: rgba(3, 233, 244, 0.08);
+  border-left: 5px solid #03e9f4;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  color: #aafaff;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 15px rgba(3, 233, 244, 0.1);
+}
+
+/* Progress bar — data loading visualization */
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background: rgba(3, 233, 244, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px rgba(3, 233, 244, 0.1);
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #03e9f4, #ff2eb8);
+  box-shadow: 0 0 15px rgba(3, 233, 244, 0.4);
+  border-radius: 10px;
+  transition: width 1.2s ease;
+}
+
+/* Result message — holographic alert */
+.result {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 25px;
+  animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.5; }
+}
+
+/* Time display */
+.time {
+  text-align: center;
+  font-weight: bold;
+  color: #00ffa6;
+  margin-bottom: 30px;
+}
+
+/* Adaptive feedback section — data log */
+.adaptive-feedback {
+  background: rgba(3, 233, 244, 0.08);
+  border-left: 4px solid #ff2eb8;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 15px rgba(3, 233, 244, 0.15);
+}
+.adaptive-feedback h3 {
+  color: #03e9f4;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px #03e9f4;
+  margin-bottom: 10px;
+}
+.adaptive-feedback li {
+  list-style: none;
+  padding: 5px 0;
+  color: #b8eaff;
+  font-size: 0.95em;
+}
+.adaptive-feedback p {
+  margin-top: 15px;
+  color: #00ffa6;
+  font-style: italic;
+}
+
+/* Summary section — data record table */
+.summary {
+  background: rgba(3, 233, 244, 0.06);
+  border: 1px solid rgba(3, 233, 244, 0.3);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgba(3, 233, 244, 0.2), inset 0 0 15px rgba(255, 46, 184, 0.1);
+}
+.summary h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #03e9f4;
+  text-shadow: 0 0 10px #03e9f4;
+  border-bottom: 1px dashed rgba(3, 233, 244, 0.4);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* QA entries */
+.qa {
+  margin-bottom: 20px;
+  padding: 18px 22px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 5px solid rgba(3, 233, 244, 0.3);
+  transition: 0.3s;
+}
+.qa.correct {
+  border-left-color: #00ffa6;
+  background: rgba(0, 255, 166, 0.05);
+  box-shadow: 0 0 15px rgba(0, 255, 166, 0.2);
+}
+.qa.incorrect {
+  border-left-color: #ff2eb8;
+  background: rgba(255, 46, 184, 0.05);
+  box-shadow: 0 0 15px rgba(255, 46, 184, 0.2);
+}
+.reasoning {
+  background: rgba(3, 233, 244, 0.07);
+  border-left: 3px solid #03e9f4;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #aafaff;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin-top: 35px;
+}
+.button {
+  display: inline-block;
+  background: linear-gradient(90deg, #03e9f4, #ff2eb8);
+  color: #060b14;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(3, 233, 244, 0.4);
+  transition: all 0.3s ease;
+}
+.button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #00ffa6, #03e9f4);
+  box-shadow: 0 0 40px rgba(0, 255, 166, 0.6);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #03e9f4, #ff2eb8);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(9,18,35,0.3);
+}

@@ -1,0 +1,211 @@
+/* database_system.css — Neon Query Matrix Theme */
+
+/* Base body styling */
+body.module-style-database-systems {
+    background-color: #060b14;
+    background-image: linear-gradient(90deg, rgba(3, 233, 244, 0.05) 1px, transparent 1px),
+                      linear-gradient(0deg, rgba(3, 233, 244, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    font-family: 'Fira Code', monospace;
+    color: #d9faff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Holographic shimmer overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(255, 46, 184, 0.07), rgba(3, 233, 244, 0.07));
+    mix-blend-mode: overlay;
+    animation: shimmer 12s linear infinite;
+    pointer-events: none;
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200px); }
+  }
+  
+  /* Container */
+  .container {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 45px;
+    background: rgba(9, 18, 35, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(3, 233, 244, 0.3), inset 0 0 25px rgba(255, 46, 184, 0.2);
+    border: 1px solid rgba(3, 233, 244, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  
+  /* Heading — like a database panel header */
+  h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #03e9f4;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #03e9f4, 0 0 25px #ff2eb8;
+    border-bottom: 2px solid rgba(3, 233, 244, 0.3);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  h2::after {
+    content: "● DATA MATRIX ACTIVE ●";
+    display: block;
+    font-size: 0.6em;
+    color: #ff2eb8;
+    text-shadow: 0 0 10px #ff2eb8;
+    margin-top: 8px;
+    animation: blink 1.5s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  
+  /* Question container - data card */
+  .question-container {
+    background: rgba(3, 233, 244, 0.05);
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(3, 233, 244, 0.3);
+    border-left: 5px solid #03e9f4;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 15px rgba(3, 233, 244, 0.1);
+  }
+  .question-container:hover {
+    background: rgba(3, 233, 244, 0.1);
+    box-shadow: 0 0 30px rgba(3, 233, 244, 0.3);
+  }
+  
+  /* Question text */
+  .question-container p {
+    color: #b8eaff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-shadow: 0 0 5px rgba(3, 233, 244, 0.4);
+  }
+  
+  /* Options list */
+  .options-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Option label — holographic button */
+  .option-label {
+    display: block;
+    margin: 15px 0;
+    position: relative;
+    padding: 18px 25px 18px 55px;
+    background: rgba(255, 46, 184, 0.05);
+    border: 1px solid rgba(3, 233, 244, 0.2);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .option-label:hover {
+    background: rgba(3, 233, 244, 0.15);
+    box-shadow: 0 0 25px rgba(3, 233, 244, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  /* Radio input */
+  .option-label input[type="radio"] {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    accent-color: #03e9f4;
+    z-index: 2;
+  }
+  
+  /* Selected option — glowing transaction lock */
+  .option-label input[type="radio"]:checked + .option-text {
+    background: linear-gradient(90deg, rgba(3, 233, 244, 0.15), rgba(255, 46, 184, 0.15));
+    border-left: 5px solid #00ffa6;
+    color: #00ffa6;
+    font-weight: bold;
+    box-shadow: 0 0 30px rgba(0, 255, 166, 0.4), inset 0 0 20px rgba(3, 233, 244, 0.2);
+    animation: commitFlash 0.8s ease-in-out;
+  }
+  @keyframes commitFlash {
+    0% { box-shadow: 0 0 10px rgba(0,255,166,0.2); }
+    50% { box-shadow: 0 0 30px rgba(0,255,166,0.6); }
+    100% { box-shadow: 0 0 10px rgba(0,255,166,0.2); }
+  }
+  
+  /* Code block inside option */
+  .option-text pre {
+    background: rgba(3, 233, 244, 0.08);
+    border-left: 3px solid #03e9f4;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #aafaff;
+  }
+  
+  /* Submit button — execute query */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #03e9f4, #ff2eb8);
+    border: none;
+    color: #0a1625;
+    font-size: 1.2em;
+    padding: 16px 0;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(3, 233, 244, 0.4);
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .submit-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #00ffa6, #03e9f4);
+    box-shadow: 0 0 40px rgba(0,255,166,0.6);
+  }
+  
+  /* Explanation box — data log */
+  .explanation {
+    background: rgba(3, 233, 244, 0.08);
+    border-left: 4px solid #ff2eb8;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #c5f5ff;
+    font-size: 0.95em;
+    margin-top: 20px;
+    box-shadow: inset 0 0 10px rgba(255, 46, 184, 0.2);
+  }
+  
+  /* Error message — red transaction error */
+  .error-message {
+    color: #ff5c5c;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff2eb8;
+  }
+  
+  /* Back link */
+  .back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #03e9f4;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 10px #03e9f4;
+    transition: all 0.3s ease;
+  }
+  .back-link:hover {
+    color: #ff2eb8;
+    text-shadow: 0 0 15px #ff2eb8;
+  }
+  
