@@ -1,0 +1,213 @@
+/* ================================
+   Internet Programming (PHP) Themed Results Page
+   Theme: Dynamic | Connected | Backend Logic | Elegant PHP Feel
+================================ */
+
+body {
+    font-family: "Fira Code", "Courier New", monospace;
+    background: linear-gradient(135deg, #0b0c10, #1f2833);
+    color: #e8eaf6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px;
+    overflow-x: hidden;
+  }
+  
+  /* Card Container */
+  .card {
+    background: linear-gradient(145deg, #1b1e24, #232832);
+    box-shadow: 0 0 30px rgba(85, 85, 255, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    width: 90%;
+    max-width: 950px;
+    padding: 30px 40px;
+    animation: fadeIn 0.8s ease-out;
+    border: 1px solid rgba(180, 170, 255, 0.1);
+  }
+  
+  /* Headings */
+  .card h2 {
+    color: #9fa8da;
+    text-shadow: 0 0 10px rgba(110, 120, 255, 0.5);
+    border-bottom: 2px solid rgba(110, 120, 255, 0.4);
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Score Display */
+  .score {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #c5cae9;
+    background: rgba(60, 70, 130, 0.15);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(100, 100, 255, 0.2);
+    box-shadow: inset 0 0 8px rgba(110, 110, 255, 0.2);
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    height: 14px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #6a5acd, #9370db, #8a2be2);
+    width: 0%;
+    transition: width 1.2s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(170, 150, 255, 0.6);
+  }
+  
+  /* Result Text */
+  .result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Time Display */
+  .time {
+    text-align: center;
+    color: #b3b7f3;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Adaptive Feedback Section */
+  .adaptive-feedback {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(150, 150, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .adaptive-feedback h3 {
+    color: #b388ff;
+    border-left: 4px solid #9575cd;
+    padding-left: 10px;
+  }
+  
+  .adaptive-feedback li {
+    margin: 6px 0;
+    color: #cfd8dc;
+    list-style-type: "👉 ";
+  }
+  
+  .adaptive-feedback p {
+    background: rgba(90, 70, 180, 0.2);
+    border-left: 4px solid #7e57c2;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  /* Question and Answer Blocks */
+  .summary h3 {
+    color: #7986cb;
+    border-left: 4px solid #5c6bc0;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .qa {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .qa.correct {
+    border-left: 4px solid #00e676;
+    background: rgba(0, 255, 100, 0.05);
+  }
+  
+  .qa.incorrect {
+    border-left: 4px solid #ff5252;
+    background: rgba(255, 50, 50, 0.07);
+  }
+  
+  .qa:hover {
+    transform: translateX(5px);
+    background: rgba(110, 100, 200, 0.08);
+  }
+  
+  /* Reasoning Box */
+  .reasoning {
+    margin-top: 10px;
+    background: rgba(50, 50, 90, 0.3);
+    border: 1px solid rgba(180, 150, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    color: #d1c4e9;
+  }
+  
+  .code-block pre {
+    white-space: pre-wrap;
+    font-family: "Fira Code", monospace;
+    color: #b39ddb;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .button {
+    background: linear-gradient(135deg, #512da8, #673ab7);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 12px rgba(130, 90, 255, 0.3);
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #673ab7, #7e57c2);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(180, 150, 255, 0.6);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7e57c2, #512da8);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #9575cd, #673ab7);
+  }
+  

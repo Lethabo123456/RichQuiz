@@ -1,0 +1,203 @@
+/* internet_programming_php.css */
+/* Theme: Internet Programming (PHP)
+   A bold, interactive theme inspired by server-side logic, web connectivity, and PHP syntax.
+   Uses glowing gradients, structured layouts, and dynamic highlights to reflect the power of the internet.
+*/
+
+body {
+    font-family: "Fira Code", "Consolas", monospace;
+    background: radial-gradient(circle at top left, #0d0d0d, #1b0033 70%);
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    background: rgba(20, 20, 40, 0.95);
+    border: 2px solid #00b8ff;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 184, 255, 0.4), 0 0 50px rgba(150, 0, 255, 0.3);
+    max-width: 850px;
+    width: 100%;
+    padding: 40px 50px;
+    position: relative;
+    animation: floatIn 1.2s ease-out;
+  }
+  
+  @keyframes floatIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  h2 {
+    text-align: center;
+    color: #00b8ff;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00b8ff, 0 0 20px #9700ff;
+    margin-bottom: 20px;
+  }
+  
+  .question-container {
+    background: linear-gradient(135deg, rgba(0, 184, 255, 0.15), rgba(151, 0, 255, 0.15));
+    border-left: 4px solid #00b8ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0, 184, 255, 0.25);
+  }
+  
+  #question-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  .options-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .option-label {
+    display: flex;
+    align-items: center;
+    background: rgba(30, 30, 60, 0.8);
+    margin: 10px 0;
+    padding: 15px 18px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 184, 255, 0.15);
+  }
+  
+  .option-label:hover {
+    background: rgba(0, 184, 255, 0.1);
+    border-color: #00b8ff;
+    transform: translateY(-2px);
+  }
+  
+  .option-label input[type="radio"] {
+    accent-color: #00b8ff;
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .option-label input[type="radio"]:checked + .option-text {
+    color: #00e6ff;
+    font-weight: bold;
+    text-shadow: 0 0 8px #00e6ff;
+  }
+  
+  .option-text {
+    flex: 1;
+    font-size: 1.05em;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #00b8ff, #9700ff);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 0;
+    margin-top: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 184, 255, 0.3);
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #0099ff, #b200ff);
+    box-shadow: 0 0 25px rgba(0, 184, 255, 0.6);
+  }
+  
+  .error-message {
+    color: #ff5757;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .explanation {
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 4px solid #00b8ff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 0.95em;
+    color: #d4d4d4;
+  }
+  
+  .back-link {
+    display: inline-block;
+    color: #00b8ff;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .back-link:hover {
+    text-shadow: 0 0 8px #00b8ff;
+    transform: translateX(-3px);
+  }
+  
+  pre, code {
+    background: rgba(0, 0, 0, 0.6);
+    color: #00e6ff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.9em;
+    box-shadow: 0 0 10px rgba(0, 184, 255, 0.2);
+  }
+  
+  /* Decorative PHP inspired glow ring */
+  .container::before {
+    content: "<?php ?>";
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    font-family: "Fira Code", monospace;
+    color: rgba(0, 184, 255, 0.15);
+    font-size: 3em;
+    transform: rotate(-10deg);
+    pointer-events: none;
+  }
+  
+  .container::after {
+    content: "</>";
+    position: absolute;
+    bottom: -35px;
+    right: 25px;
+    font-family: "Fira Code", monospace;
+    color: rgba(151, 0, 255, 0.2);
+    font-size: 2.8em;
+    transform: rotate(10deg);
+    pointer-events: none;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .container {
+      padding: 25px;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+    .submit-btn {
+      font-size: 1em;
+    }
+  }
+  
