@@ -1,0 +1,171 @@
+/* =========================
+   Machine Learning 600 Theme - Results Page
+   ========================= */
+
+/* Body & card container */
+body {
+    background: #0d0e12;
+    font-family: 'Roboto Mono', monospace;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.4);
+  }
+  
+  /* Headings */
+  h2, h3 {
+    color: #00f0ff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  }
+  
+  /* Score display */
+  .score {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 14px;
+    background: rgba(0, 255, 255, 0.05);
+    border-left: 5px solid #00f0ff;
+    border-radius: 8px;
+  }
+  
+  /* Progress bar container */
+  .progress-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 24px;
+    box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.2);
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    background: linear-gradient(90deg, #00f0ff, #00bfff);
+    height: 100%;
+    width: 0%;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Result text */
+  .result {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Time taken */
+  .time {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #a0f0ff;
+    text-align: center;
+  }
+  
+  /* Adaptive feedback */
+  .adaptive-feedback {
+    background: rgba(0, 255, 255, 0.05);
+    border-left: 5px solid #00bfff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .adaptive-feedback ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .adaptive-feedback li {
+    margin-bottom: 8px;
+    padding: 6px;
+    background: rgba(0, 255, 255, 0.02);
+    border-radius: 6px;
+  }
+  
+  /* Summary container */
+  .summary {
+    margin-bottom: 24px;
+  }
+  
+  .qa {
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  .qa.correct {
+    background: rgba(0, 255, 0, 0.08);
+    border-left: 5px solid lime;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  }
+  
+  .qa.incorrect {
+    background: rgba(255, 0, 0, 0.08);
+    border-left: 5px solid salmon;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  }
+  
+  /* Question text */
+  .question-text {
+    margin-bottom: 10px;
+    color: #e0ffff;
+    font-weight: 500;
+  }
+  
+  /* Reasoning block */
+  .reasoning {
+    background: rgba(0, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);
+  }
+  
+  /* Code blocks */
+  .code-block pre {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow-x: auto;
+    color: #00f0ff;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  
+  .button {
+    background: linear-gradient(90deg, #00f0ff, #00bfff);
+    color: #0d0e12;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  .button:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+    transform: translateY(-2px);
+  }
+  

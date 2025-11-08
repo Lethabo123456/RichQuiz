@@ -1,0 +1,192 @@
+/* ================================
+   Machine Learning Themed Quiz Page
+   Theme: Neural Networks | Data Flow | Futuristic | 2nd Year College ML
+================================ */
+
+body {
+    font-family: "Roboto Mono", "Courier New", monospace;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+  
+/* Main container */
+.container {
+    background: linear-gradient(145deg, #1c1f33, #273347);
+    border-radius: 18px;
+    padding: 35px 45px;
+    max-width: 900px;
+    width: 95%;
+    box-shadow: 0 0 25px rgba(80, 180, 250, 0.3), inset 0 0 12px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(70, 150, 250, 0.2);
+    animation: fadeIn 1s ease-out;
+}
+  
+/* Heading */
+.container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00d9ff;
+    text-shadow: 0 0 12px rgba(0, 217, 255, 0.5);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+  
+/* Question container */
+.question-container {
+    background: rgba(30, 45, 70, 0.5);
+    padding: 15px 20px;
+    border-left: 6px solid #00f0ff;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 10px rgba(0, 217, 255, 0.2);
+}
+  
+.question-container p {
+    font-size: 1.1rem;
+}
+  
+/* Options list */
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+/* Option styling */
+.option-label {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    background: rgba(0, 210, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.option-label:hover {
+    background: rgba(0, 210, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Custom radio button */
+.option-label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00d9ff;
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option-label input[type="radio"]::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #00f0ff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s;
+}
+
+.option-label input[type="radio"]:checked::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Highlight the option text when selected */
+.option-label input[type="radio"]:checked + .option-text {
+    background: rgba(0, 240, 255, 0.2);
+    border-radius: 8px;
+    padding: 4px 10px;
+    transition: 0.2s;
+}
+
+/* Explanation box */
+.explanation {
+    background: rgba(0, 150, 255, 0.1);
+    border-left: 5px solid #00d9ff;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #cce7ff;
+    font-size: 0.95rem;
+}
+
+/* Submit button */
+.submit-btn {
+    background: linear-gradient(135deg, #00bfff, #00f0ff);
+    color: #0a0a0a;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+}
+
+/* Back link */
+.back-link {
+    color: #00d9ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Code block styling */
+pre {
+    background: rgba(10, 25, 50, 0.7);
+    padding: 12px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: "Fira Code", monospace;
+    color: #00f0ff;
+    font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar custom */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00bfff, #00f0ff);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00d9ff, #00ffff);
+}
